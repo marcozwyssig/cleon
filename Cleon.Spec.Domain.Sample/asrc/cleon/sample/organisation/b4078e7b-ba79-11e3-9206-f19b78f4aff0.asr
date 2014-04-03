@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b4078e7b-ba79-11e3-9206-f19b78f4aff0">
+  <owns predicate="03c3a775-ba79-11e3-9206-f19b78f4aff0">
+    <resource statement-guid="1a60f719-ba7c-11e3-9206-f19b78f4aff0" guid="1a60f716-ba7c-11e3-9206-f19b78f4aff0">
+      <owns predicate="76758f7b-ba76-11e3-9206-f19b78f4aff0">
+        <resource statement-guid="1b4626fd-ba7c-11e3-9206-f19b78f4aff0" guid="1b4626fa-ba7c-11e3-9206-f19b78f4aff0" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b4078e7d-ba79-11e3-9206-f19b78f4aff0" type="resource" guid="a25e5696-ba78-11e3-9206-f19b78f4aff0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b59ea93e-ba79-11e3-9206-f19b78f4aff0" type="literal">Zwyssig Informatik GmbH</object>
+  </predicate>
+  <predicate guid="03c3a775-ba79-11e3-9206-f19b78f4aff0">
+    <object statement-guid="1a60f719-ba7c-11e3-9206-f19b78f4aff0">
+      <resource guid="1a60f716-ba7c-11e3-9206-f19b78f4aff0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1a60f718-ba7c-11e3-9206-f19b78f4aff0" type="resource" guid="fb007daf-ba75-11e3-9206-f19b78f4aff0" />
+        </predicate>
+        <predicate guid="76758f7b-ba76-11e3-9206-f19b78f4aff0">
+          <object statement-guid="1b4626fd-ba7c-11e3-9206-f19b78f4aff0">
+            <resource guid="1b4626fa-ba7c-11e3-9206-f19b78f4aff0">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1b4626fc-ba7c-11e3-9206-f19b78f4aff0" type="resource" guid="0fb27ece-ba76-11e3-9206-f19b78f4aff0" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

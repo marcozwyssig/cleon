@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6d1c6ff3-87fe-11e3-978c-5d19c8557393">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="61a6faef-a9fd-11e3-9b9e-f366ed28ff1f" guid="61a5c263-a9fd-11e3-9b9e-f366ed28ff1f">
+      <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+        <resource statement-guid="61a5c26e-a9fd-11e3-9b9e-f366ed28ff1f" guid="61a5c264-a9fd-11e3-9b9e-f366ed28ff1f" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6d1c6ff5-87fe-11e3-978c-5d19c8557393" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7488015b-87fe-11e3-978c-5d19c8557393" type="resource" guid="a3fbf175-87fd-11e3-978c-5d19c8557393" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="61a6faef-a9fd-11e3-9b9e-f366ed28ff1f">
+      <resource guid="61a5c263-a9fd-11e3-9b9e-f366ed28ff1f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="61a5c26a-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="61a5c269-a9fd-11e3-9b9e-f366ed28ff1f" type="literal">target</object>
+        </predicate>
+        <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="61a5c26e-a9fd-11e3-9b9e-f366ed28ff1f">
+            <resource guid="61a5c264-a9fd-11e3-9b9e-f366ed28ff1f">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="61a5c26d-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+              </predicate>
+              <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="61a5c26c-a9fd-11e3-9b9e-f366ed28ff1f" type="literal">ch.actifsource.core.model.aspects.impl.DecoratorTargetAspect</object>
+              </predicate>
+              <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="61a5c26b-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="9a79b1c5-2231-11db-8fdd-51c8bef05df5" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="61a5c268-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="61a5c267-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="61a5c266-a9fd-11e3-9b9e-f366ed28ff1f" type="literal">Reference to the decorated Resource.</object>
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="64ceac05-a9fe-11e3-9b9e-f366ed28ff1f" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="61a5c265-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="63ff1463-df38-11e2-8912-7db7aa497adb" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="71ac1660-a9fd-11e3-9b9e-f366ed28ff1f" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6d1c6ff6-87fe-11e3-978c-5d19c8557393" type="literal">DomainSystem_Configuration</object>
+  </predicate>
+</resource>
+

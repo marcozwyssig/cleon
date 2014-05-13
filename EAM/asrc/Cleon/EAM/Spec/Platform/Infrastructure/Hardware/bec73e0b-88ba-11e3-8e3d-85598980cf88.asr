@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bec73e0b-88ba-11e3-8e3d-85598980cf88">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="d521717b-88ba-11e3-8e3d-85598980cf88" guid="d5212357-88ba-11e3-8e3d-85598980cf88" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bec7651d-88ba-11e3-8e3d-85598980cf88" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c3055d41-88ba-11e3-8e3d-85598980cf88" type="resource" guid="9e71cf45-88ba-11e3-8e3d-85598980cf88" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d521717b-88ba-11e3-8e3d-85598980cf88">
+      <resource guid="d5212357-88ba-11e3-8e3d-85598980cf88">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d5212359-88ba-11e3-8e3d-85598980cf88" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d5214a6a-88ba-11e3-8e3d-85598980cf88" type="literal">runsOn</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d5220dbc-88ba-11e3-8e3d-85598980cf88" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d5220dbd-88ba-11e3-8e3d-85598980cf88" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="d5225bde-88ba-11e3-8e3d-85598980cf88" type="resource" guid="358be58f-8779-11e3-978c-5d19c8557393" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bec7651e-88ba-11e3-8e3d-85598980cf88" type="literal">VirtualMachine</object>
+  </predicate>
+</resource>
+

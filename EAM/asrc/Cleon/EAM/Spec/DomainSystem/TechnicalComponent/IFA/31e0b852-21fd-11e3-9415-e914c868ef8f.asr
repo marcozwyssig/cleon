@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="31e0b852-21fd-11e3-9415-e914c868ef8f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="d744c949-220f-11e3-9415-e914c868ef8f" guid="d744a235-220f-11e3-9415-e914c868ef8f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="31e0b854-21fd-11e3-9415-e914c868ef8f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="11fe944e-220e-11e3-9415-e914c868ef8f" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="381920b8-21fd-11e3-9415-e914c868ef8f" type="resource" guid="b44dcb82-1f62-11e3-ad85-6b7c5ae0d0cf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="31e0b855-21fd-11e3-9415-e914c868ef8f" type="literal">NuGetPackage</object>
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d744c949-220f-11e3-9415-e914c868ef8f">
+      <resource guid="d744a235-220f-11e3-9415-e914c868ef8f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d744a237-220f-11e3-9415-e914c868ef8f" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d744a238-220f-11e3-9415-e914c868ef8f" type="literal">assemblies</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d745176a-220f-11e3-9415-e914c868ef8f" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d745176b-220f-11e3-9415-e914c868ef8f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="d745176c-220f-11e3-9415-e914c868ef8f" type="resource" guid="c7ed2c5e-220f-11e3-9415-e914c868ef8f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

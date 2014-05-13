@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="42dad980-2200-11e3-9415-e914c868ef8f">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="4d4022b7-2200-11e3-9415-e914c868ef8f" guid="4d4022b4-2200-11e3-9415-e914c868ef8f" />
+    <resource statement-guid="4e948f2c-2200-11e3-9415-e914c868ef8f" guid="4e948f29-2200-11e3-9415-e914c868ef8f" />
+    <resource statement-guid="524cb531-2200-11e3-9415-e914c868ef8f" guid="524cb52e-2200-11e3-9415-e914c868ef8f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42dad982-2200-11e3-9415-e914c868ef8f" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42dad984-2200-11e3-9415-e914c868ef8f" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42dad983-2200-11e3-9415-e914c868ef8f" type="literal">DotNetFramework</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="4d4022b7-2200-11e3-9415-e914c868ef8f">
+      <resource guid="4d4022b4-2200-11e3-9415-e914c868ef8f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4d4022b6-2200-11e3-9415-e914c868ef8f" type="resource" guid="42dad980-2200-11e3-9415-e914c868ef8f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4df038d8-2200-11e3-9415-e914c868ef8f" type="literal">net35</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4e948f2c-2200-11e3-9415-e914c868ef8f">
+      <resource guid="4e948f29-2200-11e3-9415-e914c868ef8f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4e948f2b-2200-11e3-9415-e914c868ef8f" type="resource" guid="42dad980-2200-11e3-9415-e914c868ef8f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5069763d-2200-11e3-9415-e914c868ef8f" type="literal">net40</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="524cb531-2200-11e3-9415-e914c868ef8f">
+      <resource guid="524cb52e-2200-11e3-9415-e914c868ef8f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="524cb530-2200-11e3-9415-e914c868ef8f" type="resource" guid="42dad980-2200-11e3-9415-e914c868ef8f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="52b0a722-2200-11e3-9415-e914c868ef8f" type="literal">net45</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

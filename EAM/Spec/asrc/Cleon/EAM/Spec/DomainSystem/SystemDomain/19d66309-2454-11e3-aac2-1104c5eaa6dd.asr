@@ -3,25 +3,16 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="72e1b4b8-85c6-11e3-926c-e10829e9e6c2" guid="9772021a-df38-11e2-8912-7db7aa497adb" />
   </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19d6630b-2454-11e3-aac2-1104c5eaa6dd" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4dd72c27-85c7-11e3-9330-0fdf489bee27" type="resource" guid="18a510ec-85c1-11e3-be33-79789cf5eae3" />
     <object statement-guid="f442b8d0-85cd-11e3-9330-0fdf489bee27" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
-  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="19d6630b-2454-11e3-aac2-1104c5eaa6dd" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
-  </predicate>
-  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="19d68a1c-2454-11e3-aac2-1104c5eaa6dd" type="literal">SystemDomain</object>
-  </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="72e1b4b8-85c6-11e3-926c-e10829e9e6c2">
       <resource guid="9772021a-df38-11e2-8912-7db7aa497adb">
-        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
-          <object statement-guid="064f2ad5-85d0-11e3-9330-0fdf489bee27" type="resource" guid="25752303-85c2-11e3-926c-e10829e9e6c2" />
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="0584d5f2-85d0-11e3-9330-0fdf489bee27" type="resource" guid="8e7b3d6c-df38-11e2-8912-7db7aa497adb" />
-        </predicate>
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="9772021c-df38-11e2-8912-7db7aa497adb" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
         </predicate>
@@ -34,8 +25,20 @@
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="97720220-df38-11e2-8912-7db7aa497adb" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
         </predicate>
+        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
+          <object statement-guid="edd4bc02-dabe-11e3-8b70-d97bb8721a54" type="literal">SystemComponents</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="0584d5f2-85d0-11e3-9330-0fdf489bee27" type="resource" guid="8e7b3d6c-df38-11e2-8912-7db7aa497adb" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="064f2ad5-85d0-11e3-9330-0fdf489bee27" type="resource" guid="25752303-85c2-11e3-926c-e10829e9e6c2" />
+        </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19d68a1c-2454-11e3-aac2-1104c5eaa6dd" type="literal">SystemDomain</object>
   </predicate>
 </resource>
 

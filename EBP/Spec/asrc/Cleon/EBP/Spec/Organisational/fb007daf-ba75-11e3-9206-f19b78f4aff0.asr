@@ -3,7 +3,6 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="76758f7f-ba76-11e3-9206-f19b78f4aff0" guid="76758f7b-ba76-11e3-9206-f19b78f4aff0" />
     <resource statement-guid="80d8dcc8-ba76-11e3-9206-f19b78f4aff0" guid="80d8dcc4-ba76-11e3-9206-f19b78f4aff0" />
-    <resource statement-guid="333988a9-bb6b-11e3-bf59-6b10d9dd6d36" guid="7fbeb992-bb6a-11e3-bf59-6b10d9dd6d36" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="9c364fbc-ba7d-11e3-9206-f19b78f4aff0" guid="9c364fb8-ba7d-11e3-9206-f19b78f4aff0">
@@ -86,31 +85,9 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="333988a9-bb6b-11e3-bf59-6b10d9dd6d36">
-      <resource guid="7fbeb992-bb6a-11e3-bf59-6b10d9dd6d36">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="7fbee0a4-bb6a-11e3-bf59-6b10d9dd6d36" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="818fa909-bb6a-11e3-bf59-6b10d9dd6d36" type="literal">ressourcen</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="7fc28a26-bb6a-11e3-bf59-6b10d9dd6d36" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="7fc28a27-bb6a-11e3-bf59-6b10d9dd6d36" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="83e9296a-bb6a-11e3-bf59-6b10d9dd6d36" type="resource" guid="9ebfbca0-bb6a-11e3-bf59-6b10d9dd6d36" />
-        </predicate>
-        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
-          <object statement-guid="0b190305-bb6b-11e3-bf59-6b10d9dd6d36" type="resource" guid="b9c1b47a-ba7b-11e3-9206-f19b78f4aff0" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="fb02c7a2-ba75-11e3-9206-f19b78f4aff0" type="literal">Organisation</object>
+    <object statement-guid="fb02c7a2-ba75-11e3-9206-f19b78f4aff0" type="literal">Enterprise</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="9c364fbc-ba7d-11e3-9206-f19b78f4aff0">

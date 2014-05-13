@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1fc91ad5-2120-11e3-a3a2-0f96f9970b9e">
+  <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <resource statement-guid="3f36c263-2120-11e3-a3a2-0f96f9970b9e" guid="3f369b50-2120-11e3-a3a2-0f96f9970b9e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1fc941e7-2120-11e3-a3a2-0f96f9970b9e" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1fc99008-2120-11e3-a3a2-0f96f9970b9e" type="literal">VsSolutionConfig</object>
+  </predicate>
+  <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <object statement-guid="3f36c263-2120-11e3-a3a2-0f96f9970b9e">
+      <resource guid="3f369b50-2120-11e3-a3a2-0f96f9970b9e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3f369b51-2120-11e3-a3a2-0f96f9970b9e" type="resource" guid="11b444f7-dc94-11dd-8de2-bb051d76fa6e" />
+        </predicate>
+        <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
+          <object statement-guid="3f36c262-2120-11e3-a3a2-0f96f9970b9e" type="resource" guid="3f31b87a-2120-11e3-a3a2-0f96f9970b9e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="b8a038d2-9f36-11db-a7cd-c1dd878fc406">
+    <object statement-guid="cfba93e7-8827-11e3-b5be-95287d7cf7c3" type="resource" guid="39a7bf25-9f31-11db-b3fc-93ae9dee83cc" />
+  </predicate>
+</resource>
+

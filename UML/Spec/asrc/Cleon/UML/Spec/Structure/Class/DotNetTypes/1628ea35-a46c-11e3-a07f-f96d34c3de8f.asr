@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1628ea35-a46c-11e3-a07f-f96d34c3de8f">
+  <owns predicate="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <resource statement-guid="1628ea39-a46c-11e3-a07f-f96d34c3de8f" guid="1628ea36-a46c-11e3-a07f-f96d34c3de8f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1628ea3b-a46c-11e3-a07f-f96d34c3de8f" type="resource" guid="743e6460-a3b9-11e3-8095-f11af53ab806" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1628ea3a-a46c-11e3-a07f-f96d34c3de8f" type="literal">System.Func</object>
+  </predicate>
+  <predicate guid="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <object statement-guid="1628ea39-a46c-11e3-a07f-f96d34c3de8f">
+      <resource guid="1628ea36-a46c-11e3-a07f-f96d34c3de8f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1628ea38-a46c-11e3-a07f-f96d34c3de8f" type="resource" guid="50dae04c-a3bb-11e3-8095-f11af53ab806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1628ea37-a46c-11e3-a07f-f96d34c3de8f" type="literal">T1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

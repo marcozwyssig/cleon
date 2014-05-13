@@ -9,6 +9,9 @@
             <resource statement-guid="5e9fb36f-dabf-11e3-8b70-d97bb8721a54" guid="5e9d426c-dabf-11e3-8b70-d97bb8721a54" />
             <resource statement-guid="6d6cea84-dabf-11e3-8b70-d97bb8721a54" guid="6d6cea81-dabf-11e3-8b70-d97bb8721a54" />
           </owns>
+          <owns predicate="c927e5a6-26c3-11e3-a71a-b71d2dda9f8e">
+            <resource statement-guid="dfa49cc2-dac0-11e3-a2f3-ebbd853f6e02" guid="dfa49cbf-dac0-11e3-a2f3-ebbd853f6e02" />
+          </owns>
         </resource>
       </owns>
     </resource>
@@ -74,6 +77,18 @@
                     </predicate>
                     <predicate guid="ba31eb58-5b58-11e3-8333-f75dc1081ad5">
                       <object statement-guid="7e126408-dabf-11e3-8b70-d97bb8721a54" type="resource" guid="5e9d426c-dabf-11e3-8b70-d97bb8721a54" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="c927e5a6-26c3-11e3-a71a-b71d2dda9f8e">
+                <object statement-guid="dfa49cc2-dac0-11e3-a2f3-ebbd853f6e02">
+                  <resource guid="dfa49cbf-dac0-11e3-a2f3-ebbd853f6e02">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="dfa49cc1-dac0-11e3-a2f3-ebbd853f6e02" type="resource" guid="d23456fc-25e9-11e3-af30-61c5782ee2ab" />
+                    </predicate>
+                    <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="04a3e564-dac1-11e3-a2f3-ebbd853f6e02" type="literal">WrongOrder</object>
                     </predicate>
                   </resource>
                 </object>

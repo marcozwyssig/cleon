@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b4e31b24-63aa-11e4-9cdf-d185b3ad1c5b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="2e162cb0-63ab-11e4-9cdf-d185b3ad1c5b" guid="2e15b77c-63ab-11e4-9cdf-d185b3ad1c5b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b4e31b26-63aa-11e4-9cdf-d185b3ad1c5b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b4e34238-63aa-11e4-9cdf-d185b3ad1c5b" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2e162cb0-63ab-11e4-9cdf-d185b3ad1c5b">
+      <resource guid="2e15b77c-63ab-11e4-9cdf-d185b3ad1c5b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2e15b77e-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2e15de8f-63ab-11e4-9cdf-d185b3ad1c5b" type="literal">system</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2e16a1e1-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2e16a1e2-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="2e16f003-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="237ed6b1-63ab-11e4-9cdf-d185b3ad1c5b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b4e34237-63aa-11e4-9cdf-d185b3ad1c5b" type="literal">Context</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="b7f6ea40-63aa-11e4-9cdf-d185b3ad1c5b" type="literal">The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.
+
+Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.</object>
+  </predicate>
+</resource>
+

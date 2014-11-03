@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="490baf1b-63aa-11e4-9cdf-d185b3ad1c5b">
+  <owns predicate="39eb326e-63ab-11e4-9cdf-d185b3ad1c5b">
+    <resource statement-guid="4543dc39-63ab-11e4-9cdf-d185b3ad1c5b" guid="45438e16-63ab-11e4-9cdf-d185b3ad1c5b">
+      <owns predicate="2e15b77c-63ab-11e4-9cdf-d185b3ad1c5b">
+        <resource statement-guid="591f2c5d-63ab-11e4-9cdf-d185b3ad1c5b" guid="591ede3a-63ab-11e4-9cdf-d185b3ad1c5b" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="490bd62d-63aa-11e4-9cdf-d185b3ad1c5b" type="resource" guid="9d8784c1-63a7-11e4-9cdf-d185b3ad1c5b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="490bfd3e-63aa-11e4-9cdf-d185b3ad1c5b" type="literal">MyArchitecture</object>
+  </predicate>
+  <predicate guid="39eb326e-63ab-11e4-9cdf-d185b3ad1c5b">
+    <object statement-guid="4543dc39-63ab-11e4-9cdf-d185b3ad1c5b">
+      <resource guid="45438e16-63ab-11e4-9cdf-d185b3ad1c5b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4543b528-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="b4e31b24-63aa-11e4-9cdf-d185b3ad1c5b" />
+        </predicate>
+        <predicate guid="2e15b77c-63ab-11e4-9cdf-d185b3ad1c5b">
+          <object statement-guid="591f2c5d-63ab-11e4-9cdf-d185b3ad1c5b">
+            <resource guid="591ede3a-63ab-11e4-9cdf-d185b3ad1c5b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="591ede3c-63ab-11e4-9cdf-d185b3ad1c5b" type="resource" guid="237ed6b1-63ab-11e4-9cdf-d185b3ad1c5b" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7a17b99e-63ab-11e4-9cdf-d185b3ad1c5b" type="literal">FSA</object>
+              </predicate>
+              <predicate guid="9aae1403-63a9-11e4-9cdf-d185b3ad1c5b">
+                <object statement-guid="bdb80ac4-63ab-11e4-9cdf-d185b3ad1c5b" type="literal">Liefert alle Informationen</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

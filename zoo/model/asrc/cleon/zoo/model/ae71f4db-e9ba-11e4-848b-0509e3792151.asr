@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ae71f4db-e9ba-11e4-848b-0509e3792151">
+  <owns predicate="361a9c78-e9ba-11e4-848b-0509e3792151">
+    <resource statement-guid="b0882ade-e9ba-11e4-848b-0509e3792151" guid="b0882adb-e9ba-11e4-848b-0509e3792151" />
+    <resource statement-guid="c715059f-e9ba-11e4-848b-0509e3792151" guid="c715059c-e9ba-11e4-848b-0509e3792151">
+      <owns predicate="443302c2-e9ba-11e4-848b-0509e3792151">
+        <resource statement-guid="c9ecb6b4-e9ba-11e4-848b-0509e3792151" guid="c9ecb6b1-e9ba-11e4-848b-0509e3792151" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ae71f4dd-e9ba-11e4-848b-0509e3792151" type="resource" guid="28f43850-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ae71f4de-e9ba-11e4-848b-0509e3792151" type="literal">Cleon</object>
+  </predicate>
+  <predicate guid="361a9c78-e9ba-11e4-848b-0509e3792151">
+    <object statement-guid="b0882ade-e9ba-11e4-848b-0509e3792151">
+      <resource guid="b0882adb-e9ba-11e4-848b-0509e3792151">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b0882add-e9ba-11e4-848b-0509e3792151" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1a6925b-e9ba-11e4-848b-0509e3792151" type="literal">arc42</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c715059f-e9ba-11e4-848b-0509e3792151">
+      <resource guid="c715059c-e9ba-11e4-848b-0509e3792151">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c715059e-e9ba-11e4-848b-0509e3792151" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c8cf11b0-e9ba-11e4-848b-0509e3792151" type="literal">doc</object>
+        </predicate>
+        <predicate guid="443302c2-e9ba-11e4-848b-0509e3792151">
+          <object statement-guid="c9ecb6b4-e9ba-11e4-848b-0509e3792151">
+            <resource guid="c9ecb6b1-e9ba-11e4-848b-0509e3792151">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c9ecb6b3-e9ba-11e4-848b-0509e3792151" type="resource" guid="3e687740-e9ba-11e4-848b-0509e3792151" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ca7a29a5-e9ba-11e4-848b-0509e3792151" type="literal">asciidoc</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

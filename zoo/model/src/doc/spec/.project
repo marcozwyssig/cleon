@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.zoo.template.eclipse</name>
+	<comment></comment>
+	<projects>
+		<project>cleon.doc.spec</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
+
+// Actifsource ID=[b53126a2-e9bf-11e4-848b-0509e3792151,ae71f4db-e9ba-11e4-848b-0509e3792151,c715059c-e9ba-11e4-848b-0509e3792151,wa3uxvuzcW+CfGCyToLEjFIA70U=]

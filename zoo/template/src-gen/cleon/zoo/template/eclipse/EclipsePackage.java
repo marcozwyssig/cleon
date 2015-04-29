@@ -23,4 +23,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.zoo.template.eclipse,UWDiyU8Tw83mKytGSVzBsfuGtpo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.zoo.template.eclipse,G20ZLrPv18wl2HlAxE0Fbi92A0Y=] */

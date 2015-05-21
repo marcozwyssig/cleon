@@ -6,6 +6,7 @@
         <resource statement-guid="c9ecb6b4-e9ba-11e4-848b-0509e3792151" guid="c9ecb6b1-e9ba-11e4-848b-0509e3792151" />
       </owns>
     </resource>
+    <resource statement-guid="d56df5d5-ff99-11e4-ac0a-959b440f987f" guid="d56df5d2-ff99-11e4-ac0a-959b440f987f" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ae71f4dd-e9ba-11e4-848b-0509e3792151" type="resource" guid="28f43850-e9ba-11e4-848b-0509e3792151" />
@@ -22,6 +23,9 @@
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="c8cf11b0-e9ba-11e4-848b-0509e3792151" type="literal">doc</object>
         </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="2af679f6-ff9a-11e4-ac0a-959b440f987f" type="literal">Documentation</object>
+        </predicate>
         <predicate guid="443302c2-e9ba-11e4-848b-0509e3792151">
           <object statement-guid="c9ecb6b4-e9ba-11e4-848b-0509e3792151">
             <resource guid="c9ecb6b1-e9ba-11e4-848b-0509e3792151">
@@ -33,6 +37,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d56df5d5-ff99-11e4-ac0a-959b440f987f">
+      <resource guid="d56df5d2-ff99-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d56df5d4-ff99-11e4-ac0a-959b440f987f" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d628e166-ff99-11e4-ac0a-959b440f987f" type="literal">sdp</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="0d8899c8-ff9a-11e4-ac0a-959b440f987f" type="literal">Software Development Process</object>
         </predicate>
       </resource>
     </object>

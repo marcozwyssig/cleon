@@ -2,7 +2,7 @@ package cleon.zoo.spec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISpecification extends ch.actifsource.core.javamodel.INamedResource {
+public interface ISpecification extends ch.actifsource.core.javamodel.INamedResource, ch.actifsource.core.javamodel.ICommentable {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
   
@@ -12,4 +12,4 @@ public interface ISpecification extends ch.actifsource.core.javamodel.INamedReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,EEHkD9oQDbmC8++EL9Uo5NZXrE8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,wOpTN/sMe0z2wlEqTIqqSUX2z0E=] */

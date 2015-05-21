@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="743e6460-a3b9-11e3-8095-f11af53ab806">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="54865b7c-a3bb-11e3-8095-f11af53ab806" guid="5485e648-a3bb-11e3-8095-f11af53ab806" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="743e8b72-a3b9-11e3-8095-f11af53ab806" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7663dccc-a3b9-11e3-8095-f11af53ab806" type="resource" guid="accc5089-2f5a-11e3-b966-57aab741cf17" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="54865b7c-a3bb-11e3-8095-f11af53ab806">
+      <resource guid="5485e648-a3bb-11e3-8095-f11af53ab806">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5485e64a-a3bb-11e3-8095-f11af53ab806" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="54860d5b-a3bb-11e3-8095-f11af53ab806" type="literal">templateParameters</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5486d0ad-a3bb-11e3-8095-f11af53ab806" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5486d0ae-a3bb-11e3-8095-f11af53ab806" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5486f7bf-a3bb-11e3-8095-f11af53ab806" type="resource" guid="50dae04c-a3bb-11e3-8095-f11af53ab806" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="743ed993-a3b9-11e3-8095-f11af53ab806" type="literal">TemplateClass</object>
+  </predicate>
+</resource>
+

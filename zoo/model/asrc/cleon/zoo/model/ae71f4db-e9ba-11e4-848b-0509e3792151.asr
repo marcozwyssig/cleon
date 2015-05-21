@@ -7,6 +7,8 @@
       </owns>
     </resource>
     <resource statement-guid="d56df5d5-ff99-11e4-ac0a-959b440f987f" guid="d56df5d2-ff99-11e4-ac0a-959b440f987f" />
+    <resource statement-guid="aa30d346-ffb4-11e4-ac0a-959b440f987f" guid="aa308523-ffb4-11e4-ac0a-959b440f987f" />
+    <resource statement-guid="1d0ccca3-ffbc-11e4-ac0a-959b440f987f" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ae71f4dd-e9ba-11e4-848b-0509e3792151" type="resource" guid="28f43850-e9ba-11e4-848b-0509e3792151" />
@@ -50,6 +52,26 @@
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
           <object statement-guid="0d8899c8-ff9a-11e4-ac0a-959b440f987f" type="literal">Software Development Process</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="aa30d346-ffb4-11e4-ac0a-959b440f987f">
+      <resource guid="aa308523-ffb4-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa30ac35-ffb4-11e4-ac0a-959b440f987f" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ae755ac7-ffb4-11e4-ac0a-959b440f987f" type="literal">arc42</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1d0ccca3-ffbc-11e4-ac0a-959b440f987f">
+      <resource guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1d0ca592-ffbc-11e4-ac0a-959b440f987f" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1dee04e4-ffbc-11e4-ac0a-959b440f987f" type="literal">uml</object>
         </predicate>
       </resource>
     </object>

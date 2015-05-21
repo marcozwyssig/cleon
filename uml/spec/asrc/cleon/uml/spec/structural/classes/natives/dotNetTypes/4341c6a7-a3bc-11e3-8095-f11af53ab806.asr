@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4341c6a7-a3bc-11e3-8095-f11af53ab806">
+  <owns predicate="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <resource statement-guid="7e073f4e-a3bc-11e3-8095-f11af53ab806" guid="7e07183b-a3bc-11e3-8095-f11af53ab806" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4341c6a8-a3bc-11e3-8095-f11af53ab806" type="resource" guid="743e6460-a3b9-11e3-8095-f11af53ab806" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4341c6a9-a3bc-11e3-8095-f11af53ab806" type="literal">System.Action</object>
+  </predicate>
+  <predicate guid="2d1dec8d-29d7-11e3-ac34-51079bb270e3">
+    <object statement-guid="17021a44-1700-11e4-b1e5-eb13f1cefb90" type="literal">false</object>
+  </predicate>
+  <predicate guid="a1105a0c-52ad-11e3-9153-f7986e00399b">
+    <object statement-guid="13e77ab4-a873-11e4-b9df-8f3c70106380" type="literal">Kapselt eine Methode, die über einen einzelnen Parameter verfügt und keinen Wert zurückgibt</object>
+  </predicate>
+  <predicate guid="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <object statement-guid="7e073f4e-a3bc-11e3-8095-f11af53ab806">
+      <resource guid="7e07183b-a3bc-11e3-8095-f11af53ab806">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7e07183d-a3bc-11e3-8095-f11af53ab806" type="resource" guid="50dae04c-a3bb-11e3-8095-f11af53ab806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="813f11bf-a3bc-11e3-8095-f11af53ab806" type="literal">T1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

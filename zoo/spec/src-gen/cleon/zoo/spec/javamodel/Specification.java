@@ -51,6 +51,16 @@ public class Specification extends DynamicResource implements ISpecification {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.zoo.spec.javamodel.ISpecification> selectDependsOn() {
+    return _getList(cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn);
+  }
+
+  public Specification setDependsOn(java.util.List<? extends cleon.zoo.spec.javamodel.ISpecification> dependsOn) {
+    _setList(cleon.zoo.spec.SpecPackage.Specification_dependsOn, dependsOn);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.zoo.spec.javamodel.ITemplate> selectTemplates() {
     return _getList(cleon.zoo.spec.javamodel.ITemplate.class, cleon.zoo.spec.SpecPackage.Specification_templates);
   }
@@ -77,6 +87,7 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn, visitor);
     _acceptList(cleon.zoo.spec.javamodel.ITemplate.class, cleon.zoo.spec.SpecPackage.Specification_templates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -87,5 +98,9 @@ public class Specification extends DynamicResource implements ISpecification {
     return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_templates, object.getResource());
   }
   
+  public static cleon.zoo.spec.javamodel.ISpecification selectToMeDependsOn(cleon.zoo.spec.javamodel.ISpecification object) {
+    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,T9s6hh0/y3S/ZZ7btc5FKa+VoWg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,aIrPXZrQj0rNDhkUhvIQEE8aaxU=] */

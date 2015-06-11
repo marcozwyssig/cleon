@@ -52,12 +52,22 @@ public class Arc42 extends DynamicResource implements IArc42 {
   }
     
   @Override
-  public cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView selectRuntimeView() {
-    return _getSingle(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42_runtimeView);
+  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters);
   }
 
-  public Arc42 setRuntimeView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView runtimeView) {
-    _setSingle(cleon.arc42.spec.SpecPackage.arc42_runtimeView, runtimeView);
+  public Arc42 setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
+    _setList(cleon.doc.spec.SpecPackage.Document_chapters, chapters);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
+  }
+
+  public Arc42 setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -78,19 +88,16 @@ public class Arc42 extends DynamicResource implements IArc42 {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, visitor);
-    _acceptSingle(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42_runtimeView, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.arc42.spec.javamodel.IArc42> selectToMeBuildingBlockView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView object) {
-    return _getToMeList(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, object.getResource());
-  }
-  
-  public static java.util.List<cleon.arc42.spec.javamodel.IArc42> selectToMeRuntimeView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView object) {
-    return _getToMeList(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42_runtimeView, object.getResource());
+  public static cleon.arc42.spec.javamodel.IArc42 selectToMeBuildingBlockView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,3wQUZJyOY8hsvzYX7+xUz8UOYyg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,I3o7Dh9y8P61Q72ZSz9VgFUcoTc=] */

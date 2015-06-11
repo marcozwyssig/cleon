@@ -28,17 +28,6 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
     super(resourceRepository, resource, IBuildingBlockView.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -48,6 +37,36 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
 
   public BuildingBlockView setBuildingBlocks(java.util.List<? extends cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlock> buildingBlocks) {
     _setList(cleon.arc42.spec.buildingblockview.BuildingblockviewPackage.BuildingBlockView_buildingBlocks, buildingBlocks);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters);
+  }
+
+  public BuildingBlockView setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
+    _setList(cleon.doc.spec.SpecPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
+  }
+
+  public BuildingBlockView setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes);
+  }
+
+  public BuildingBlockView setParagraphes(java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.SpecPackage.Chapter_paragraphes, paragraphes);
     return this;
   }
     
@@ -64,10 +83,11 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec.buildingblockview.BuildingblockviewPackage.BuildingBlockView_buildingBlocks, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -78,4 +98,4 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,ZEv7iVik/0HRwFutSXLTHgxpmO4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,iql1pXV4XCKUtA69g3kv91QnON0=] */

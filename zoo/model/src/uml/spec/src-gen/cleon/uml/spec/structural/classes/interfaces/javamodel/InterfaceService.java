@@ -40,15 +40,6 @@ public class InterfaceService extends DynamicResource implements IInterfaceServi
   }
 
   @Override
-  public java.lang.String selectComments() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments);
-  }
-    
-  public void setComments(java.lang.String comments) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, comments);
-  }
-
-  @Override
   public java.lang.String selectResponsibility() {
     return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
   }
@@ -134,7 +125,6 @@ public class InterfaceService extends DynamicResource implements IInterfaceServi
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
@@ -153,4 +143,4 @@ public class InterfaceService extends DynamicResource implements IInterfaceServi
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b626174f-26c1-11e3-a71a-b71d2dda9f8e,i/dekN9CHLHae62meQ0BAp5J5CI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b626174f-26c1-11e3-a71a-b71d2dda9f8e,EVaUHMG0z+XuFt03A3lg1PwgcDI=] */

@@ -2,11 +2,9 @@ package cleon.uml.spec.structural.classes.method.parameter.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IParameter extends ch.actifsource.core.javamodel.INamedResource, cleon.uml.spec.structural.classes.javamodel.IDescription {
+public interface IParameter extends ch.actifsource.core.javamodel.INamedResource, ch.actifsource.core.javamodel.ICommentable {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a3776ddf-e3f2-11e2-845f-2b181f80a373");
-  
-  public java.lang.String selectDescription();
   
   // relations
   
@@ -18,4 +16,4 @@ public interface IParameter extends ch.actifsource.core.javamodel.INamedResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3776ddf-e3f2-11e2-845f-2b181f80a373,3jpW2PUCX2fFhSX4HG9ODFl0eO0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3776ddf-e3f2-11e2-845f-2b181f80a373,nVg/IrpGNBm+kPTEUp9vMEqpO+Q=] */

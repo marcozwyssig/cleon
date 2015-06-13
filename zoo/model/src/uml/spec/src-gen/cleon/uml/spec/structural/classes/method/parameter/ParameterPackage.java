@@ -6,7 +6,6 @@ public class ParameterPackage {
   
   public static final Resource Parameter = new Resource("a3776ddf-e3f2-11e2-845f-2b181f80a373");
   public static final Resource Parameter_type = new Resource("d1302471-e3f2-11e2-845f-2b181f80a373");
-  public static final Resource Parameter_description = new Resource("7c67675d-e489-11e2-a881-1f0b1c54f1d5");
   public static final Resource Parameter_constraint = new Resource("3ca951de-1197-11e3-9156-7d5514ad9e83");
   public static final Resource Parameter_parameterAsCollection = new Resource("87950d80-375f-11e3-82cd-1b1e39f83170");
   public static final Resource TemplateParameter = new Resource("d944e6c4-a3bb-11e3-8095-f11af53ab806");
@@ -32,4 +31,4 @@ public class ParameterPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.method.parameter,6xbbdYO1RVJWMOd9BNKz9leux8E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.method.parameter,02b4REhrXyf5Q/MVOYMx5l/cgTE=] */

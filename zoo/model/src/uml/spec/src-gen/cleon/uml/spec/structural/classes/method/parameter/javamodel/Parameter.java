@@ -40,24 +40,6 @@ public class Parameter extends DynamicResource implements IParameter {
   }
 
   @Override
-  public java.lang.String selectComments() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments);
-  }
-    
-  public void setComments(java.lang.String comments) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, comments);
-  }
-
-  @Override
-  public java.lang.String selectDescription() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.method.parameter.ParameterPackage.Parameter_description);
-  }
-    
-  public void setDescription(java.lang.String description) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.method.parameter.ParameterPackage.Parameter_description, description);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -113,8 +95,6 @@ public class Parameter extends DynamicResource implements IParameter {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.method.parameter.ParameterPackage.Parameter_description, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.uml.spec.structural.classes.constraint.javamodel.IConstraint.class, cleon.uml.spec.structural.classes.method.parameter.ParameterPackage.Parameter_constraint, visitor);
@@ -138,4 +118,4 @@ public class Parameter extends DynamicResource implements IParameter {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3776ddf-e3f2-11e2-845f-2b181f80a373,FG4571qc3UaCV03GyhhKWUHcFOE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3776ddf-e3f2-11e2-845f-2b181f80a373,4dG7d1rSsUiziAALbJBArxUVnDU=] */

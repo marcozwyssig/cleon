@@ -40,15 +40,6 @@ public class ClassWithInterface extends DynamicResource implements IClassWithInt
   }
 
   @Override
-  public java.lang.String selectComments() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments);
-  }
-    
-  public void setComments(java.lang.String comments) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, comments);
-  }
-
-  @Override
   public java.lang.Boolean selectIsAbstract() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
@@ -202,7 +193,6 @@ public class ClassWithInterface extends DynamicResource implements IClassWithInt
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
@@ -228,4 +218,4 @@ public class ClassWithInterface extends DynamicResource implements IClassWithInt
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e43f2a0-93bd-11e3-a63e-fb8038f76aec,2sjbfy2jt287WwvEPOkRtqnLxMA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e43f2a0-93bd-11e3-a63e-fb8038f76aec,WYx6IRNs8e+in5weUpD+N0ILh8M=] */

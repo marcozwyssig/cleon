@@ -40,15 +40,6 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   }
 
   @Override
-  public java.lang.String selectComments() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments);
-  }
-    
-  public void setComments(java.lang.String comments) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, comments);
-  }
-
-  @Override
   public java.lang.String selectResponsibility() {
     return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
   }
@@ -113,7 +104,6 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.enums.EnumsPackage.EnumValue_value, visitor);
     // relations
@@ -124,4 +114,4 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,mpHbvqcT6JBLVwuJdJsnp1DnaLc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,CJIAzLyJlr91rG9MfjRen1IntAs=] */

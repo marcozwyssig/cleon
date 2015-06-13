@@ -40,15 +40,6 @@ public class SimpleType extends DynamicResource implements ISimpleType {
   }
 
   @Override
-  public java.lang.String selectComments() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments);
-  }
-    
-  public void setComments(java.lang.String comments) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, comments);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -113,7 +104,6 @@ public class SimpleType extends DynamicResource implements ISimpleType {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.ClassesPackage.Description_comments, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
@@ -124,4 +114,4 @@ public class SimpleType extends DynamicResource implements ISimpleType {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,74f7edbd-52aa-11e3-9bab-1d73174e62c2,cxo0CXIgayOV8SW2f5n9IiZ64eU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,74f7edbd-52aa-11e3-9bab-1d73174e62c2,jJy1T5VXbGE9yIBo6gkK/FqzhVY=] */

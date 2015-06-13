@@ -51,12 +51,32 @@ public class Specification extends DynamicResource implements ISpecification {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.zoo.spec.javamodel.ISpecification> selectDependsOn() {
-    return _getList(cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn);
+  public java.util.List<? extends cleon.zoo.spec.javamodel.IProject> selectDependsOn() {
+    return _getList(cleon.zoo.spec.javamodel.IProject.class, cleon.zoo.spec.SpecPackage.Project_dependsOn);
   }
 
-  public Specification setDependsOn(java.util.List<? extends cleon.zoo.spec.javamodel.ISpecification> dependsOn) {
-    _setList(cleon.zoo.spec.SpecPackage.Specification_dependsOn, dependsOn);
+  public Specification setDependsOn(java.util.List<? extends cleon.zoo.spec.javamodel.IProject> dependsOn) {
+    _setList(cleon.zoo.spec.SpecPackage.Project_dependsOn, dependsOn);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.zoo.spec.javamodel.IModel> selectModel() {
+    return _getList(cleon.zoo.spec.javamodel.IModel.class, cleon.zoo.spec.SpecPackage.Specification_model);
+  }
+
+  public Specification setModel(java.util.List<? extends cleon.zoo.spec.javamodel.IModel> model) {
+    _setList(cleon.zoo.spec.SpecPackage.Specification_model, model);
+    return this;
+  }
+    
+  @Override
+  public cleon.zoo.spec.javamodel.ISample selectSample() {
+    return _getSingle(cleon.zoo.spec.javamodel.ISample.class, cleon.zoo.spec.SpecPackage.Specification_sample);
+  }
+
+  public Specification setSample(cleon.zoo.spec.javamodel.ISample sample) {
+    _setSingle(cleon.zoo.spec.SpecPackage.Specification_sample, sample);
     return this;
   }
     
@@ -87,7 +107,9 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn, visitor);
+    _acceptList(cleon.zoo.spec.javamodel.IProject.class, cleon.zoo.spec.SpecPackage.Project_dependsOn, visitor);
+    _acceptList(cleon.zoo.spec.javamodel.IModel.class, cleon.zoo.spec.SpecPackage.Specification_model, visitor);
+    _acceptSingle(cleon.zoo.spec.javamodel.ISample.class, cleon.zoo.spec.SpecPackage.Specification_sample, visitor);
     _acceptList(cleon.zoo.spec.javamodel.ITemplate.class, cleon.zoo.spec.SpecPackage.Specification_templates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -98,9 +120,13 @@ public class Specification extends DynamicResource implements ISpecification {
     return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_templates, object.getResource());
   }
   
-  public static cleon.zoo.spec.javamodel.ISpecification selectToMeDependsOn(cleon.zoo.spec.javamodel.ISpecification object) {
-    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_dependsOn, object.getResource());
+  public static cleon.zoo.spec.javamodel.ISpecification selectToMeSample(cleon.zoo.spec.javamodel.ISample object) {
+    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_sample, object.getResource());
+  }
+  
+  public static cleon.zoo.spec.javamodel.ISpecification selectToMeModel(cleon.zoo.spec.javamodel.IModel object) {
+    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_model, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,aIrPXZrQj0rNDhkUhvIQEE8aaxU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,scj9E87iUsuQU2yQPcG7Us4EcCw=] */

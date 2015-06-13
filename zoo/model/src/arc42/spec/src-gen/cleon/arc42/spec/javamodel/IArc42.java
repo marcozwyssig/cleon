@@ -8,8 +8,8 @@ public interface IArc42 extends ch.actifsource.core.javamodel.INamedResource, cl
   
   // relations
   
-  public cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView selectBuildingBlockView();
+  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView select__V_5_aE_buildingBlockView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,NzocMBpz7Qb4nSYsuAN2QfbmyLQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,ESpdMo7n+ATO2r3Zw7EtDDWpWx4=] */

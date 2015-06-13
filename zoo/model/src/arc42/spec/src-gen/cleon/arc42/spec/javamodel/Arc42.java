@@ -42,12 +42,12 @@ public class Arc42 extends DynamicResource implements IArc42 {
   // relations
   
   @Override
-  public cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView selectBuildingBlockView() {
-    return _getSingle(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView);
+  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView select__V_5_aE_buildingBlockView() {
+    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView);
   }
 
-  public Arc42 setBuildingBlockView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView buildingBlockView) {
-    _setSingle(cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, buildingBlockView);
+  public Arc42 set__V_5_aE_buildingBlockView(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView __V_5_aE_buildingBlockView) {
+    _setSingle(cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, __V_5_aE_buildingBlockView);
     return this;
   }
     
@@ -87,7 +87,7 @@ public class Arc42 extends DynamicResource implements IArc42 {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, visitor);
+    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, visitor);
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -95,9 +95,9 @@ public class Arc42 extends DynamicResource implements IArc42 {
 
   // toMeRelations
   
-  public static cleon.arc42.spec.javamodel.IArc42 selectToMeBuildingBlockView(cleon.arc42.spec.buildingblockview.javamodel.IBuildingBlockView object) {
-    return _getToMeSingle(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42_buildingBlockView, object.getResource());
+  public static cleon.arc42.spec.javamodel.IArc42 selectToMe__V_5_aE_buildingBlockView(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,I3o7Dh9y8P61Q72ZSz9VgFUcoTc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,RQn4iV3KjJlSm7XqLBANFecYnlY=] */

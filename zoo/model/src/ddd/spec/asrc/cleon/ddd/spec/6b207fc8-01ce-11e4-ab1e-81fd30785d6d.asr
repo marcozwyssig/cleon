@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6b207fc8-01ce-11e4-ab1e-81fd30785d6d">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="93b21643-01ce-11e4-ab1e-81fd30785d6d" guid="6416c3ba-10c2-11e3-b60e-ab478a3e1eca" />
+  </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="be295da1-01ce-11e4-ab1e-81fd30785d6d" guid="be295d9d-01ce-11e4-ab1e-81fd30785d6d">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="c2695083-01ce-11e4-ab1e-81fd30785d6d" guid="c2695080-01ce-11e4-ab1e-81fd30785d6d">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="c269508d-01ce-11e4-ab1e-81fd30785d6d" guid="c2695089-01ce-11e4-ab1e-81fd30785d6d" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6b207fca-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="701c48d6-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="2f4eebfb-92f9-11e3-a63e-fb8038f76aec" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="93b21643-01ce-11e4-ab1e-81fd30785d6d">
+      <resource guid="6416c3ba-10c2-11e3-b60e-ab478a3e1eca">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6416c3bc-10c2-11e3-b60e-ab478a3e1eca" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6416c3bd-10c2-11e3-b60e-ab478a3e1eca" type="literal">repositories</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6416c3bf-10c2-11e3-b60e-ab478a3e1eca" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6416c3c0-10c2-11e3-b60e-ab478a3e1eca" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="2f79ef94-1297-11e5-a69e-755a9ac7f617" type="resource" guid="5e627f84-10c2-11e3-b60e-ab478a3e1eca" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="30febad7-1297-11e5-a69e-755a9ac7f617" type="resource" guid="9cf91f08-7aec-11e4-a6e2-23d949480f96" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6b207fcb-01ce-11e4-ab1e-81fd30785d6d" type="literal">RepositoryPackage</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="be295da1-01ce-11e4-ab1e-81fd30785d6d">
+      <resource guid="be295d9d-01ce-11e4-ab1e-81fd30785d6d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="be295d9f-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="be295da0-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="c2695083-01ce-11e4-ab1e-81fd30785d6d">
+            <resource guid="c2695080-01ce-11e4-ab1e-81fd30785d6d">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c2695082-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="c269508d-01ce-11e4-ab1e-81fd30785d6d">
+                  <resource guid="c2695089-01ce-11e4-ab1e-81fd30785d6d">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="c269508b-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="c269508c-01ce-11e4-ab1e-81fd30785d6d" type="literal">Repository</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

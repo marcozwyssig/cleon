@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d9906e1c-11fc-11e5-848b-017a3a98ae34">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8cb2204d-11fd-11e5-848b-017a3a98ae34" guid="8cb22049-11fd-11e5-848b-017a3a98ae34">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="8d37a401-11fd-11e5-848b-017a3a98ae34" guid="8d37a3fe-11fd-11e5-848b-017a3a98ae34">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="8f943141-11fd-11e5-848b-017a3a98ae34" guid="8f8f762d-11fd-11e5-848b-017a3a98ae34">
+              <owns predicate="6a2968dd-d2ac-11de-87dc-a9aeefa4174b">
+                <resource statement-guid="8f943140-11fd-11e5-848b-017a3a98ae34" guid="8f8f7621-11fd-11e5-848b-017a3a98ae34">
+                  <owns predicate="15a352a6-cd31-11de-9f09-f31fded4c28c">
+                    <resource statement-guid="8f94313f-11fd-11e5-848b-017a3a98ae34" guid="8f8f7622-11fd-11e5-848b-017a3a98ae34">
+                      <owns predicate="51697d1f-cd32-11de-9f09-f31fded4c28c">
+                        <resource statement-guid="8f94313d-11fd-11e5-848b-017a3a98ae34" guid="8f8f7623-11fd-11e5-848b-017a3a98ae34">
+                          <owns predicate="2911adb0-c94e-11de-95d0-4912b8dc029a">
+                            <resource statement-guid="8f94313c-11fd-11e5-848b-017a3a98ae34" guid="8f8f7627-11fd-11e5-848b-017a3a98ae34" />
+                          </owns>
+                          <owns predicate="51697d1f-cd32-11de-9f09-f31fded4c28c">
+                            <resource statement-guid="8f943138-11fd-11e5-848b-017a3a98ae34" guid="8f8f7624-11fd-11e5-848b-017a3a98ae34" />
+                          </owns>
+                        </resource>
+                      </owns>
+                    </resource>
+                  </owns>
+                </resource>
+              </owns>
+            </resource>
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d9906e1e-11fc-11e5-848b-017a3a98ae34" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="77b5f733-11fd-11e5-848b-017a3a98ae34" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d9906e1f-11fc-11e5-848b-017a3a98ae34" type="literal">Requirements</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8cb2204d-11fd-11e5-848b-017a3a98ae34">
+      <resource guid="8cb22049-11fd-11e5-848b-017a3a98ae34">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8cb2204b-11fd-11e5-848b-017a3a98ae34" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="8cb2204c-11fd-11e5-848b-017a3a98ae34" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="8d37a401-11fd-11e5-848b-017a3a98ae34">
+            <resource guid="8d37a3fe-11fd-11e5-848b-017a3a98ae34">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="8d37a400-11fd-11e5-848b-017a3a98ae34" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="8f943141-11fd-11e5-848b-017a3a98ae34">
+                  <resource guid="8f8f762d-11fd-11e5-848b-017a3a98ae34">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="8f91e73e-11fd-11e5-848b-017a3a98ae34" type="resource" guid="ad5986ea-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="6a2968dd-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="8f943140-11fd-11e5-848b-017a3a98ae34">
+                        <resource guid="8f8f7621-11fd-11e5-848b-017a3a98ae34">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="8f91e740-11fd-11e5-848b-017a3a98ae34" type="resource" guid="b8489977-c947-11de-95d0-4912b8dc029a" />
+                          </predicate>
+                          <predicate guid="15a352a6-cd31-11de-9f09-f31fded4c28c">
+                            <object statement-guid="8f94313f-11fd-11e5-848b-017a3a98ae34">
+                              <resource guid="8f8f7622-11fd-11e5-848b-017a3a98ae34">
+                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="8f943132-11fd-11e5-848b-017a3a98ae34" type="resource" guid="82369e5f-cd32-11de-9f09-f31fded4c28c" />
+                                </predicate>
+                                <predicate guid="51697d1f-cd32-11de-9f09-f31fded4c28c">
+                                  <object statement-guid="8f94313d-11fd-11e5-848b-017a3a98ae34">
+                                    <resource guid="8f8f7623-11fd-11e5-848b-017a3a98ae34">
+                                      <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                        <object statement-guid="8f943134-11fd-11e5-848b-017a3a98ae34" type="resource" guid="20042c6a-c94e-11de-95d0-4912b8dc029a" />
+                                      </predicate>
+                                      <predicate guid="2911adb0-c94e-11de-95d0-4912b8dc029a">
+                                        <object statement-guid="8f94313c-11fd-11e5-848b-017a3a98ae34">
+                                          <resource guid="8f8f7627-11fd-11e5-848b-017a3a98ae34">
+                                            <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                              <object statement-guid="8f94313a-11fd-11e5-848b-017a3a98ae34" type="resource" guid="2dfe8a42-cd1f-11de-9f09-f31fded4c28c" />
+                                            </predicate>
+                                            <predicate guid="47da2571-cd2b-11de-9f09-f31fded4c28c">
+                                              <object statement-guid="8f94313b-11fd-11e5-848b-017a3a98ae34" type="resource" guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da" />
+                                            </predicate>
+                                          </resource>
+                                        </object>
+                                      </predicate>
+                                      <predicate guid="51697d1f-cd32-11de-9f09-f31fded4c28c">
+                                        <object statement-guid="8f943138-11fd-11e5-848b-017a3a98ae34">
+                                          <resource guid="8f8f7624-11fd-11e5-848b-017a3a98ae34">
+                                            <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                              <object statement-guid="8f943136-11fd-11e5-848b-017a3a98ae34" type="resource" guid="7fd337b6-cd2b-11de-9f09-f31fded4c28c" />
+                                            </predicate>
+                                            <predicate guid="9ff959d0-cd2b-11de-9f09-f31fded4c28c">
+                                              <object statement-guid="8f943137-11fd-11e5-848b-017a3a98ae34" type="resource" guid="d9906e1c-11fc-11e5-848b-017a3a98ae34" />
+                                            </predicate>
+                                          </resource>
+                                        </object>
+                                      </predicate>
+                                    </resource>
+                                  </object>
+                                </predicate>
+                                <predicate guid="8db71b75-cd32-11de-9f09-f31fded4c28c">
+                                  <object statement-guid="8f94313e-11fd-11e5-848b-017a3a98ae34" type="resource" guid="17b55cb7-9cb5-11e0-9116-692032036e14" />
+                                </predicate>
+                              </resource>
+                            </object>
+                          </predicate>
+                        </resource>
+                      </object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="e74e3136-11fc-11e5-848b-017a3a98ae34" type="literal">Short description of the functional requirements.
+Digest (or abstract) of the requirements documents.
+Reference to complete requirements documents (incl. version identification and location).
+
+Contents
+A compact summary of the functional environment of the system. Answers the following questions (at least approximately):
+
+* What happens in the system’s environment?
+* Why should the system exist? 
+* Why is the system valuable or important? 
+* Which problems does the system solve?
+
+Motivation
+From the point of view of the end users a system is created or modified to improve execution of a business activity.
+This essential architecture driver must not be neglected even though the quality of an architecture is mostly judged by its level of fulfillment of non-functional requirements.
+
+Form
+Short textual description, probably in tabular use-case format.
+The business context should in any case refer to the corresponding requirements documents.
+
+Examples
+Short descriptions of the most important:
+
+* business processes
+* functional requirements
+* non-functional requirements and other constraints (the most important ones must be covered as architecture goals or are listed in the “Constraints” section), and/or
+* quantity structures
+* background information
+
+Here you can reuse parts of the requirements documents – but keep these
+excerpts short and balance readability against avoidance of redundancy.</object>
+  </predicate>
+</resource>
+

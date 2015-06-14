@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6ca8d81a-ddd3-11e4-b0b5-6911fa4e24e5" guid="6ca889f6-ddd3-11e4-b0b5-6911fa4e24e5" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="46daf4f2-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="51d949e9-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="2f4eebfb-92f9-11e3-a63e-fb8038f76aec" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6ca8d81a-ddd3-11e4-b0b5-6911fa4e24e5">
+      <resource guid="6ca889f6-ddd3-11e4-b0b5-6911fa4e24e5">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6ca8b108-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6ca8b109-ddd3-11e4-b0b5-6911fa4e24e5" type="literal">factory</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6ca8ff2b-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6ca8ff2c-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="6ca9263d-ddd3-11e4-b0b5-6911fa4e24e5" type="resource" guid="03b41966-ddd3-11e4-b0b5-6911fa4e24e5" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="46daf4f3-ddd3-11e4-b0b5-6911fa4e24e5" type="literal">FactoryPackage</object>
+  </predicate>
+</resource>
+

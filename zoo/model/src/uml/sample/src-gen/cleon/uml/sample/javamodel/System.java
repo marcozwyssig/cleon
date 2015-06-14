@@ -42,6 +42,16 @@ public class System extends DynamicResource implements ISystem {
   // relations
   
   @Override
+  public cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals select__V_1_aE_introduction_aE_and_aE_goals() {
+    return _getSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals);
+  }
+
+  public System set__V_1_aE_introduction_aE_and_aE_goals(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals __V_1_aE_introduction_aE_and_aE_goals) {
+    _setSingle(cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, __V_1_aE_introduction_aE_and_aE_goals);
+    return this;
+  }
+    
+  @Override
   public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView select__V_5_aE_buildingBlockView() {
     return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView);
   }
@@ -87,6 +97,7 @@ public class System extends DynamicResource implements ISystem {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, visitor);
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
@@ -94,4 +105,4 @@ public class System extends DynamicResource implements ISystem {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,03828ae9-ffce-11e4-ac0a-959b440f987f,3Mr7Q6lDRoXCMZZNMzOCF9IS0j8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,03828ae9-ffce-11e4-ac0a-959b440f987f,gNNBnbpJyR8tEHmabcIk5DEHQfk=] */

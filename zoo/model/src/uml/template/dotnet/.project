@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.uml.template.dotnet</name>
+	<comment/>
+	<projects>
+		<project>cleon.uml.spec</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
+
+<!-- Actifsource ID=[b53126a2-e9bf-11e4-848b-0509e3792151,e089351c-11fb-11e5-848b-017a3a98ae34,kJuRHSCXlh8LQxWEn9/f2CAA7b8=] -->

@@ -42,6 +42,16 @@ public class Arc42 extends DynamicResource implements IArc42 {
   // relations
   
   @Override
+  public cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals select__V_1_aE_introduction_aE_and_aE_goals() {
+    return _getSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals);
+  }
+
+  public Arc42 set__V_1_aE_introduction_aE_and_aE_goals(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals __V_1_aE_introduction_aE_and_aE_goals) {
+    _setSingle(cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, __V_1_aE_introduction_aE_and_aE_goals);
+    return this;
+  }
+    
+  @Override
   public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView select__V_5_aE_buildingBlockView() {
     return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView);
   }
@@ -87,6 +97,7 @@ public class Arc42 extends DynamicResource implements IArc42 {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, visitor);
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
@@ -95,9 +106,13 @@ public class Arc42 extends DynamicResource implements IArc42 {
 
   // toMeRelations
   
+  public static cleon.arc42.spec.javamodel.IArc42 selectToMe__V_1_aE_introduction_aE_and_aE_goals(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, object.getResource());
+  }
+  
   public static cleon.arc42.spec.javamodel.IArc42 selectToMe__V_5_aE_buildingBlockView(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView object) {
     return _getToMeSingle(object.getRepository(), cleon.arc42.spec.javamodel.IArc42.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,RQn4iV3KjJlSm7XqLBANFecYnlY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,7teX+jS0/Pl9NQkD+ZsuLu+bk6I=] */

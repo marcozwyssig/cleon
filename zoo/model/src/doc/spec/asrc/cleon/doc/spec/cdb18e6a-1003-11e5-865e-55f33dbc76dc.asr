@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="cdb18e6a-1003-11e5-865e-55f33dbc76dc">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="630271cd-12a0-11e5-a69e-755a9ac7f617" guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cdb3d85c-1003-11e5-865e-55f33dbc76dc" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cdb3d85e-1003-11e5-865e-55f33dbc76dc" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
     <object statement-guid="d19cd212-1003-11e5-865e-55f33dbc76dc" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="630271cd-12a0-11e5-a69e-755a9ac7f617">
+      <resource guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0c6fc0eb-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0d7941af-d86e-11e4-aa2f-c11242a92b60" type="literal">paragraphes</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0c70ab4d-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0c70ab4e-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="ae6016ab-1002-11e5-865e-55f33dbc76dc" type="resource" guid="4c12c1e8-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="acad377d-1002-11e5-865e-55f33dbc76dc" type="resource" guid="a550fab6-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cdb3d85d-1003-11e5-865e-55f33dbc76dc" type="literal">NamedChapter</object>

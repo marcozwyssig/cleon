@@ -13,9 +13,11 @@ public class ComponentsPackage {
   public static final Resource ComponentCompositionDependency = new Resource("72e79576-ffc4-11e4-ac0a-959b440f987f");
   public static final Resource ComponentComposition_has = new Resource("e8a50863-ffc4-11e4-ac0a-959b440f987f");
   public static final Resource ComponentCompositionDependency_on = new Resource("10e7475f-ffc5-11e4-ac0a-959b440f987f");
-  public static final Resource ComponentDependency_on = new Resource("3858a114-ffc5-11e4-ac0a-959b440f987f");
-  public static final Resource Component_packages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
-  public static final Resource Component_has = new Resource("66c7af38-ffc5-11e4-ac0a-959b440f987f");
+  public static final Resource ComponentDependency_to = new Resource("3858a114-ffc5-11e4-ac0a-959b440f987f");
+  public static final Resource ComponentWithPackage_packages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
+  public static final Resource Component_hasDependency = new Resource("66c7af38-ffc5-11e4-ac0a-959b440f987f");
+  public static final Resource ComponentWithPackage = new Resource("4472ee70-1475-11e5-a016-a15bccd8b132");
+  public static final Resource Component_emptypackages = new Resource("a01f8eb5-1475-11e5-a016-a15bccd8b132");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +38,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,jd0jZuLcDn7vyZJkR0uLPbQTFJU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,xBOwfuuSRY6zd9MMniJADLZ630I=] */

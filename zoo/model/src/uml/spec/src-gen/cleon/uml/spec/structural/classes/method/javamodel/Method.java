@@ -87,42 +87,12 @@ public class Method extends DynamicResource implements IMethod {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters);
-  }
-
-  public Method setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
-  }
-
-  public Method setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
   public cleon.uml.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange selectMep() {
     return _getSingle(cleon.uml.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange.class, cleon.uml.spec.structural.classes.method.MethodPackage.Method_mep);
   }
 
   public Method setMep(cleon.uml.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange mep) {
     _setSingle(cleon.uml.spec.structural.classes.method.MethodPackage.Method_mep, mep);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes);
-  }
-
-  public Method setParagraphes(java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_paragraphes, paragraphes);
     return this;
   }
     
@@ -177,10 +147,7 @@ public class Method extends DynamicResource implements IMethod {
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.method.MethodPackage.Method_returnTypeDescription, visitor);
     // relations
-    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.method.messageExchange.javamodel.IMessageExchange.class, cleon.uml.spec.structural.classes.method.MethodPackage.Method_mep, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes, visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.parameter.javamodel.IParameter.class, cleon.uml.spec.structural.classes.method.MethodPackage.Method_parameters, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.classes.ClassesPackage.ReturnType_returnType, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.uml.spec.structural.classes.method.MethodPackage.Method_returnTypeAsCollection, visitor);
@@ -200,4 +167,4 @@ public class Method extends DynamicResource implements IMethod {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,x1AxbEkX+A4kiVgGRqK+H7MQDq0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,Fh1MXxYlN3LcX+/SJTxLXFLsuhE=] */

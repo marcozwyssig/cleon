@@ -13,9 +13,9 @@ public abstract class Dependency extends DynamicResource implements IDependency 
   
   // toMeRelations
   
-  public static java.util.List<cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> selectToMeOn(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
-    return _getToMeList(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.Dependency_on, object.getResource());
+  public static java.util.List<cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> selectToMeTo(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
+    return _getToMeList(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.Dependency_to, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,+mUDL2Oyv1KbmH2sr4ytfJqYYq4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,4dEJgEeNZngmmGgMjRBvEE8lkzA=] */

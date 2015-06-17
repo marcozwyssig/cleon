@@ -19,8 +19,8 @@ public interface IBuildingBlockView extends ch.actifsource.core.javamodel.IResou
   
   // relations
   
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> selectBuildingBlocks();
+  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> selectBuildingBlocks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,vXVTA9ciT9lbgYCBjM89FjuZ7Ew=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,v+Q5aVEX6ocqLK73nBuV8isJDOg=] */

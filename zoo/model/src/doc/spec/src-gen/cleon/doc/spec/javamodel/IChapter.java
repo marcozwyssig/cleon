@@ -10,8 +10,6 @@ public interface IChapter extends cleon.doc.spec.javamodel.IDocumentElementCompo
   
   public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters();
   
-  public java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> selectParagraphes();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,44b08026-d86d-11e4-aa2f-c11242a92b60,T0PaJQluiAcgb27TlfPfH7ARnU4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,44b08026-d86d-11e4-aa2f-c11242a92b60,wAptBz/cRX39hOm3KHTl0SPnNyw=] */

@@ -28,17 +28,6 @@ public class ComponentCompositionDependency extends DynamicResource implements I
     super(resourceRepository, resource, IComponentCompositionDependency.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -48,6 +37,16 @@ public class ComponentCompositionDependency extends DynamicResource implements I
 
   public ComponentCompositionDependency setOn(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentComposition> on) {
     _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDependency_on, on);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> selectTo() {
+    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.Dependency_to);
+  }
+
+  public ComponentCompositionDependency setTo(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> to) {
+    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.Dependency_to, to);
     return this;
   }
     
@@ -64,10 +63,9 @@ public class ComponentCompositionDependency extends DynamicResource implements I
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentComposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDependency_on, visitor);
+    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.Dependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -78,4 +76,4 @@ public class ComponentCompositionDependency extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,72e79576-ffc4-11e4-ac0a-959b440f987f,0KfxGKMIX2VUGZuzZ2/2CRM/nI8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,72e79576-ffc4-11e4-ac0a-959b440f987f,rL/1Nnedt1gk7d1MjD/ySBOatuk=] */

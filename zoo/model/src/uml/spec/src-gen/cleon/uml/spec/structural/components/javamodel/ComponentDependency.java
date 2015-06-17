@@ -28,26 +28,15 @@ public class ComponentDependency extends DynamicResource implements IComponentDe
     super(resourceRepository, resource, IComponentDependency.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
-  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponent> selectOn() {
-    return _getList(cleon.uml.spec.structural.components.javamodel.IComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_on);
+  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponent> selectTo() {
+    return _getList(cleon.uml.spec.structural.components.javamodel.IComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_to);
   }
 
-  public ComponentDependency setOn(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponent> on) {
-    _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_on, on);
+  public ComponentDependency setTo(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponent> to) {
+    _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_to, to);
     return this;
   }
     
@@ -64,18 +53,16 @@ public class ComponentDependency extends DynamicResource implements IComponentDe
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.uml.spec.structural.components.javamodel.IComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_on, visitor);
+    _acceptList(cleon.uml.spec.structural.components.javamodel.IComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.uml.spec.structural.components.javamodel.IComponentDependency> selectToMeOn(cleon.uml.spec.structural.components.javamodel.IComponent object) {
-    return _getToMeList(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_on, object.getResource());
+  public static java.util.List<cleon.uml.spec.structural.components.javamodel.IComponentDependency> selectToMeTo(cleon.uml.spec.structural.components.javamodel.IComponent object) {
+    return _getToMeList(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_to, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,5P+CFSxbmZ8uWWLNNzG9GoazPGQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,DB+Ke4Uod5i+QnIz7WuiMu9H154=] */

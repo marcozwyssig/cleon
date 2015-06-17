@@ -51,16 +51,6 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes);
-  }
-
-  public IntroductionAndGoals setParagraphes(java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_paragraphes, paragraphes);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.arc42.spec._01_introduction_and_goals.javamodel.IQualityGoals> selectQualityGoals() {
     return _getList(cleon.arc42.spec._01_introduction_and_goals.javamodel.IQualityGoals.class, cleon.arc42.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_qualityGoals);
   }
@@ -96,7 +86,6 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
     // relations
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes, visitor);
     _acceptList(cleon.arc42.spec._01_introduction_and_goals.javamodel.IQualityGoals.class, cleon.arc42.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_qualityGoals, visitor);
     _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IRequirements.class, cleon.arc42.spec._01_introduction_and_goals._01_introduction_and_goalsPackage.IntroductionAndGoals_requirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -113,4 +102,4 @@ public class IntroductionAndGoals extends DynamicResource implements IIntroducti
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,YvQoplkMtSGCRE3vE7sBOKolmk8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,8Y4HhfTpjVFpccMrdF4zK5yZeqY=] */

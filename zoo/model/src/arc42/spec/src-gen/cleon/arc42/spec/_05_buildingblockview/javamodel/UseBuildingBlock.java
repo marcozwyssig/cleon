@@ -13,9 +13,9 @@ public abstract class UseBuildingBlock extends DynamicResource implements IUseBu
   
   // toMeRelations
   
-  public static java.util.List<cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> selectToMeUseDecompositions(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
-    return _getToMeList(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, object.getResource());
+  public static cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock selectToMeUseDecompositions(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,53d51c49-7ad7-11e4-a6e2-23d949480f96,b8iihYAuOxOd6v0tkirf/cFxU1Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,53d51c49-7ad7-11e4-a6e2-23d949480f96,peR6KJanPA0XCMcZwOmQQlVpCK8=] */

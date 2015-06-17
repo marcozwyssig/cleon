@@ -28,7 +28,11 @@
       </owns>
     </resource>
     <resource statement-guid="b2e32f9a-11ee-11e5-b568-55f5f05bd6f6" guid="b2e32f97-11ee-11e5-b568-55f5f05bd6f6" />
-    <resource statement-guid="b5a4e7af-11ee-11e5-b568-55f5f05bd6f6" guid="b5a4e7ac-11ee-11e5-b568-55f5f05bd6f6" />
+    <resource statement-guid="b5a4e7af-11ee-11e5-b568-55f5f05bd6f6" guid="b5a4e7ac-11ee-11e5-b568-55f5f05bd6f6">
+      <owns predicate="d9a220cb-1005-11e5-865e-55f33dbc76dc">
+        <resource statement-guid="24f7fd11-129f-11e5-a69e-755a9ac7f617" guid="24f58c0e-129f-11e5-a69e-755a9ac7f617" />
+      </owns>
+    </resource>
     <resource statement-guid="b8bd4b44-11ee-11e5-b568-55f5f05bd6f6" guid="b8bd4b41-11ee-11e5-b568-55f5f05bd6f6" />
     <resource statement-guid="c6fe47e9-11ee-11e5-b568-55f5f05bd6f6" guid="c6fe47e6-11ee-11e5-b568-55f5f05bd6f6" />
     <resource statement-guid="cc8d50ce-11ee-11e5-b568-55f5f05bd6f6" guid="cc8d50cb-11ee-11e5-b568-55f5f05bd6f6" />
@@ -212,6 +216,20 @@
         </predicate>
         <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
           <object statement-guid="7eb0b695-11f8-11e5-848b-017a3a98ae34" type="resource" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
+          <object statement-guid="1c6be07f-129f-11e5-a69e-755a9ac7f617" type="resource" guid="aa308523-ffb4-11e4-ac0a-959b440f987f" />
+          <object statement-guid="1db29150-129f-11e5-a69e-755a9ac7f617" type="resource" guid="c715059c-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="d9a220cb-1005-11e5-865e-55f33dbc76dc">
+          <object statement-guid="24f7fd11-129f-11e5-a69e-755a9ac7f617">
+            <resource guid="24f58c0e-129f-11e5-a69e-755a9ac7f617">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="24f7fd10-129f-11e5-a69e-755a9ac7f617" type="resource" guid="e8e7952a-1005-11e5-865e-55f33dbc76dc" />
+              </predicate>
+              <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+                <object statement-guid="2670ba6f-129f-11e5-a69e-755a9ac7f617" type="resource" guid="b5a4e7ac-11ee-11e5-b568-55f5f05bd6f6" />
+              </predicate>
+            </resource>
+          </object>
         </predicate>
       </resource>
     </object>

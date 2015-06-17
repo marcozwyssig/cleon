@@ -63,11 +63,11 @@ public class NamedChapter extends DynamicResource implements INamedChapter {
     
   @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes);
+    return _getList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.NamedChapter_paragraphes);
   }
 
   public NamedChapter setParagraphes(java.util.List<? extends cleon.doc.spec.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_paragraphes, paragraphes);
+    _setList(cleon.doc.spec.SpecPackage.NamedChapter_paragraphes, paragraphes);
     return this;
   }
     
@@ -89,9 +89,15 @@ public class NamedChapter extends DynamicResource implements INamedChapter {
     // relations
     _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.Chapter_paragraphes, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IParagraph.class, cleon.doc.spec.SpecPackage.NamedChapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.doc.spec.javamodel.INamedChapter selectToMeParagraphes(cleon.doc.spec.javamodel.IParagraph object) {
+    return _getToMeSingle(object.getRepository(), cleon.doc.spec.javamodel.INamedChapter.class, cleon.doc.spec.SpecPackage.NamedChapter_paragraphes, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdb18e6a-1003-11e5-865e-55f33dbc76dc,ouGuis7YVmu60EH5B+hka77Jw8U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdb18e6a-1003-11e5-865e-55f33dbc76dc,SGio1UEFt4I8FfKAtRb2hvKDspU=] */

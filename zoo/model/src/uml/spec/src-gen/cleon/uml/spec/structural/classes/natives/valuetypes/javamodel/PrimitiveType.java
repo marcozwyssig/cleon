@@ -60,42 +60,12 @@ public class PrimitiveType extends DynamicResource implements IPrimitiveType {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters);
-  }
-
-  public PrimitiveType setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
-  }
-
-  public PrimitiveType setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
   public PrimitiveType setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> selectUseDecompositions() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions);
-  }
-
-  public PrimitiveType setUseDecompositions(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> useDecompositions) {
-    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, useDecompositions);
     return this;
   }
     
@@ -107,11 +77,8 @@ public class PrimitiveType extends DynamicResource implements IPrimitiveType {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
-    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c320e5ee-e3f2-11e2-845f-2b181f80a373,KGumoGK1QhvGB+XeH4y4yt39k7c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c320e5ee-e3f2-11e2-845f-2b181f80a373,QJ3maq3Yp+bW7zgCqVz0hWDEXF0=] */

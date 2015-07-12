@@ -69,52 +69,32 @@ public class ComponentComposition extends DynamicResource implements IComponentC
   // relations
   
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition> selectComponents() {
+    return _getList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components);
   }
 
-  public ComponentComposition setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IAbstractComponent> selectComponents() {
-    return _getList(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components);
-  }
-
-  public ComponentComposition setComponents(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IAbstractComponent> components) {
+  public ComponentComposition setComponents(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition> components) {
     _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components, components);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> selectDecompose() {
+    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public ComponentComposition setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+  public ComponentComposition setDecompose(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> decompose) {
+    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency> selectHas() {
-    return _getList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_has);
+  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency> selectHasDependency() {
+    return _getList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency);
   }
 
-  public ComponentComposition setHas(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency> has) {
-    _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_has, has);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency);
-  }
-
-  public ComponentComposition setHasDependency(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> hasDependency) {
-    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public ComponentComposition setHasDependency(java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency> hasDependency) {
+    _setList(cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency, hasDependency);
     return this;
   }
     
@@ -128,16 +108,6 @@ public class ComponentComposition extends DynamicResource implements IComponentC
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> selectUseDecompositions() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions);
-  }
-
-  public ComponentComposition setUseDecompositions(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> useDecompositions) {
-    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, useDecompositions);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -147,24 +117,21 @@ public class ComponentComposition extends DynamicResource implements IComponentC
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName, visitor);
     // relations
-    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_has, visitor);
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components, visitor);
+    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
+    _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseBuildingBlock_useDecompositions, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.uml.spec.structural.components.javamodel.IComponentComposition selectToMeComponents(cleon.uml.spec.structural.components.javamodel.IAbstractComponent object) {
+  public static cleon.uml.spec.structural.components.javamodel.IComponentComposition selectToMeComponents(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentComposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_components, object.getResource());
   }
   
-  public static cleon.uml.spec.structural.components.javamodel.IComponentComposition selectToMeHas(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency object) {
-    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentComposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_has, object.getResource());
+  public static cleon.uml.spec.structural.components.javamodel.IComponentComposition selectToMeHasDependency(cleon.uml.spec.structural.components.javamodel.IComponentCompositionDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentComposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18a510ec-85c1-11e3-be33-79789cf5eae3,o3IHdr2QwJqhrCR9dQd2In2wUj0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18a510ec-85c1-11e3-be33-79789cf5eae3,Ij9CjR7F7kjyw2ubUj8vBYvY1gs=] */

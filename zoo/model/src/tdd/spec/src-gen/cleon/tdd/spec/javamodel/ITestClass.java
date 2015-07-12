@@ -2,13 +2,11 @@ package cleon.tdd.spec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestClass extends ch.actifsource.core.javamodel.IDecorator, cleon.uml.spec.structural.classes.javamodel.IClassifier, cleon.arc42.spec._05_buildingblockview.javamodel.IOwnBuildingBlock {
+public interface ITestClass extends cleon.uml.spec.structural.classes.method.javamodel.IMethodClass {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c17728d0-df47-11e2-b229-cd1bd4a07953");
   
   // relations
-  
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClasses();
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestMethod> selectTestMethods();
   
@@ -16,4 +14,4 @@ public interface ITestClass extends ch.actifsource.core.javamodel.IDecorator, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,0vT4RnBN0UDaQM7ZS8tnrFNj8y4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,hSEj81u0e+AoiDXvKnMMj/UZSjE=] */

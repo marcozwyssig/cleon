@@ -62,26 +62,6 @@ public class Arc42 extends DynamicResource implements IArc42 {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters);
-  }
-
-  public Arc42 setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.SpecPackage.Document_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
-  }
-
-  public Arc42 setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -99,8 +79,6 @@ public class Arc42 extends DynamicResource implements IArc42 {
     // relations
     _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingBlockView, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Document_chapters, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -115,4 +93,4 @@ public class Arc42 extends DynamicResource implements IArc42 {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,7teX+jS0/Pl9NQkD+ZsuLu+bk6I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,gRXbK12wEH6phdEgLm2DMEm8CZc=] */

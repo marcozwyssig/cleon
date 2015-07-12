@@ -31,12 +31,12 @@ public class Management extends DynamicResource implements IManagement {
   // relations
   
   @Override
-  public cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection selectEnviromentProtection() {
-    return _getSingle(cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_enviromentProtection);
+  public cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection selectEnvironmentProtection() {
+    return _getSingle(cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_environmentProtection);
   }
 
-  public Management setEnviromentProtection(cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection enviromentProtection) {
-    _setSingle(cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_enviromentProtection, enviromentProtection);
+  public Management setEnvironmentProtection(cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection environmentProtection) {
+    _setSingle(cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_environmentProtection, environmentProtection);
     return this;
   }
     
@@ -114,7 +114,7 @@ public class Management extends DynamicResource implements IManagement {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_enviromentProtection, visitor);
+    _acceptSingle(cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_environmentProtection, visitor);
     _acceptSingle(cleon.epm.spec.organisational.unit.management.javamodel.IFinanceAndControlling.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_financeAndControlling, visitor);
     _acceptSingle(cleon.epm.spec.organisational.unit.management.javamodel.IPolticsAndStrategy.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_polticsAndStrategy, visitor);
     _acceptSingle(cleon.epm.spec.organisational.role.javamodel.ILeader.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
@@ -126,8 +126,8 @@ public class Management extends DynamicResource implements IManagement {
 
   // toMeRelations
   
-  public static cleon.epm.spec.organisational.unit.management.javamodel.IManagement selectToMeEnviromentProtection(cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection object) {
-    return _getToMeSingle(object.getRepository(), cleon.epm.spec.organisational.unit.management.javamodel.IManagement.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_enviromentProtection, object.getResource());
+  public static cleon.epm.spec.organisational.unit.management.javamodel.IManagement selectToMeEnvironmentProtection(cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection object) {
+    return _getToMeSingle(object.getRepository(), cleon.epm.spec.organisational.unit.management.javamodel.IManagement.class, cleon.epm.spec.organisational.unit.management.ManagementPackage.Management_environmentProtection, object.getResource());
   }
   
   public static cleon.epm.spec.organisational.unit.management.javamodel.IManagement selectToMePolticsAndStrategy(cleon.epm.spec.organisational.unit.management.javamodel.IPolticsAndStrategy object) {
@@ -143,4 +143,4 @@ public class Management extends DynamicResource implements IManagement {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,vc4xacSeLK1Jo8ikaqueYOUDug4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,uT2YNjkSG+JbRaZPjwCQu5hy3ec=] */

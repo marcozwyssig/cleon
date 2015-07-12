@@ -8,10 +8,10 @@ public interface ITestComponent extends cleon.uml.spec.structural.components.jav
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestPackage> selectTestPackages();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestPackageDecomposition> selectTestPackages();
   
   public cleon.tdd.spec.javamodel.ITestComponentDependency selectComponentUnderTest();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,ERJKJN/sO+H3nqT+PIqviO3sCFo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,T0PK9g381E4QgAaL4oFcCOqruCc=] */

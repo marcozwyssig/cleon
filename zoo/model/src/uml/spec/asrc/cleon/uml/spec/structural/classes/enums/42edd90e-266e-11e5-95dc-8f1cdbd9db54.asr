@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="42edd90e-266e-11e5-95dc-8f1cdbd9db54">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="487715ff-266e-11e5-95dc-8f1cdbd9db54" guid="487715fc-266e-11e5-95dc-8f1cdbd9db54" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42edd910-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42edd912-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="c64a4da0-1757-11e5-9ca7-d1bb57b73459" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="487715ff-266e-11e5-95dc-8f1cdbd9db54">
+      <resource guid="487715fc-266e-11e5-95dc-8f1cdbd9db54">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="487715fe-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="494b55f2-266e-11e5-95dc-8f1cdbd9db54" type="literal">enum</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="48771600-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="48771601-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
+          <object statement-guid="a5d6bda5-266e-11e5-95dc-8f1cdbd9db54" type="literal">enums</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5e7e1f5b-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="73469c3e-b1bd-11e4-a1b5-85bab1cb6ada" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="87eef2a9-266e-11e5-95dc-8f1cdbd9db54" type="resource" guid="c64a4da1-1757-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="42edd911-266e-11e5-95dc-8f1cdbd9db54" type="literal">EnumDekomposition</object>
+  </predicate>
+</resource>
+

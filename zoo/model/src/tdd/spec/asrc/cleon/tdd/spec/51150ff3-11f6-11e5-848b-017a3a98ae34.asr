@@ -16,6 +16,11 @@
         <resource statement-guid="8f1c0234-12a1-11e5-a69e-755a9ac7f617" guid="8f1c0230-12a1-11e5-a69e-755a9ac7f617" />
       </owns>
     </resource>
+    <resource statement-guid="6a1dc872-18fc-11e5-b505-7b16b1341920" guid="6a1dc86f-18fc-11e5-b505-7b16b1341920">
+      <owns predicate="02d4146e-ddf9-11db-870e-7f4642f6066c">
+        <resource statement-guid="6a201268-18fc-11e5-b505-7b16b1341920" guid="6a201264-18fc-11e5-b505-7b16b1341920" />
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="51150ff5-11f6-11e5-848b-017a3a98ae34" type="resource" guid="81c34efc-cc97-11db-9bf0-1bcf67c8b5b0" />
@@ -96,6 +101,31 @@
         </predicate>
         <predicate guid="118e9dc5-1b6c-11dd-af33-07ccc9113053">
           <object statement-guid="8f19b83f-12a1-11e5-a69e-755a9ac7f617" type="resource" guid="8f19b836-12a1-11e5-a69e-755a9ac7f617" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6a1dc872-18fc-11e5-b505-7b16b1341920">
+      <resource guid="6a1dc86f-18fc-11e5-b505-7b16b1341920">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a1dc871-18fc-11e5-b505-7b16b1341920" type="resource" guid="a5dea018-cc97-11db-9bf0-1bcf67c8b5b0" />
+        </predicate>
+        <predicate guid="02d4146e-ddf9-11db-870e-7f4642f6066c">
+          <object statement-guid="6a201268-18fc-11e5-b505-7b16b1341920">
+            <resource guid="6a201264-18fc-11e5-b505-7b16b1341920">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="6a201265-18fc-11e5-b505-7b16b1341920" type="resource" guid="30b8600d-d6f6-11db-bf54-a3ecc4b57825" />
+              </predicate>
+              <predicate guid="63f27657-c33c-11db-919a-e5dd1d4836b8">
+                <object statement-guid="6a201266-18fc-11e5-b505-7b16b1341920" type="literal">107</object>
+              </predicate>
+              <predicate guid="6a794cbd-c33c-11db-919a-e5dd1d4836b8">
+                <object statement-guid="6a201267-18fc-11e5-b505-7b16b1341920" type="literal">351</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="118e9dc5-1b6c-11dd-af33-07ccc9113053">
+          <object statement-guid="6a201263-18fc-11e5-b505-7b16b1341920" type="resource" guid="6a1dc86a-18fc-11e5-b505-7b16b1341920" />
         </predicate>
       </resource>
     </object>

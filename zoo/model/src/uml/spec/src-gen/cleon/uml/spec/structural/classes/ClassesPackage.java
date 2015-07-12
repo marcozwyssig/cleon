@@ -24,8 +24,6 @@ public class ClassesPackage {
   public static final Resource Path_Parameter = new Resource("1114074a-567e-11e3-a79c-0705324013db");
   public static final Resource Path_Class = new Resource("98db5d8f-5c32-11e3-b5c2-4929c5d760c5");
   public static final Resource Path_Association = new Resource("cac5e4e6-6ecb-11e3-b3c1-7d834d89b418");
-  public static final Resource ClassWithInterface = new Resource("5e43f2a0-93bd-11e3-a63e-fb8038f76aec");
-  public static final Resource ClassWithInterface_extends = new Resource("50e521f0-93c9-11e3-a63e-fb8038f76aec");
   public static final Resource Path_Package = new Resource("de9f473a-97d7-11e3-bb9a-e57bbf5647bb");
   public static final Resource IsAbstract = new Resource("eba86911-9a3a-11e3-8bcf-e973a9ae2871");
   public static final Resource Path_TemplateParameter = new Resource("63252f41-a47f-11e3-a07f-f96d34c3de8f");
@@ -57,4 +55,4 @@ public class ClassesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes,AKwz9BERzHmJTy7Y6o6VDLh5mGQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes,AmaTWyr7GhZERWQRFZg88KRLWNI=] */

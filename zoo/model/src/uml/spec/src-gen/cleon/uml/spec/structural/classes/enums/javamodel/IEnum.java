@@ -2,7 +2,7 @@ package cleon.uml.spec.structural.classes.enums.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEnum extends cleon.uml.spec.structural.classes.javamodel.IClassifier, ch.actifsource.core.javamodel.INamedResource, cleon.arc42.spec._05_buildingblockview.javamodel.IOwnBuildingBlock {
+public interface IEnum extends cleon.uml.spec.structural.classes.javamodel.IClassifier, ch.actifsource.core.javamodel.INamedResource, cleon.arc42.spec._05_buildingblockview.javamodel.IDecompositionBuildingBlock {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("73469c3e-b1bd-11e4-a1b5-85bab1cb6ada");
   
@@ -12,4 +12,4 @@ public interface IEnum extends cleon.uml.spec.structural.classes.javamodel.IClas
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73469c3e-b1bd-11e4-a1b5-85bab1cb6ada,e0pDGGsCeybZLFPeG58d1oHI8HY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73469c3e-b1bd-11e4-a1b5-85bab1cb6ada,A+x5ol3r1znweDdBgxbR1h/jXu4=] */

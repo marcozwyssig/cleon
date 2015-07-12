@@ -17,5 +17,9 @@ public abstract class Association extends DynamicResource implements IAssociatio
     return _getToMeList(object.getRepository(), cleon.uml.spec.structural.classes.association.javamodel.IAssociation.class, cleon.uml.spec.structural.classes.association.AssociationPackage.Association_assocationType, object.getResource());
   }
   
+  public static cleon.uml.spec.structural.classes.association.javamodel.IAssociation selectToMeTo(cleon.uml.spec.structural.classes.javamodel.IClassifier object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.classes.association.javamodel.IAssociation.class, cleon.uml.spec.structural.classes.association.AssociationPackage.Association_to, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,vkCqbczp3FdfR8XTih6qFwJIGmI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,c+bXIMIcBJ9wZ0+LM5MKFDVGHeU=] */

@@ -31,32 +31,12 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
   // relations
   
   @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> selectBuildingBlocks() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks);
+  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> selectBuildingBlocks() {
+    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks);
   }
 
-  public BuildingBlockView setBuildingBlocks(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock> buildingBlocks) {
+  public BuildingBlockView setBuildingBlocks(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> buildingBlocks) {
     _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks, buildingBlocks);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters);
-  }
-
-  public BuildingBlockView setChapters(java.util.List<? extends cleon.doc.spec.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.SpecPackage.Chapter_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
-  }
-
-  public BuildingBlockView setDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -74,17 +54,15 @@ public class BuildingBlockView extends DynamicResource implements IBuildingBlock
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IChapter.class, cleon.doc.spec.SpecPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView selectToMeBuildingBlocks(cleon.arc42.spec._05_buildingblockview.javamodel.IUseBuildingBlock object) {
+  public static cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView selectToMeBuildingBlocks(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
     return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlockView.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlockView_buildingBlocks, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,ZHUnyhz4la7ObgaeKUdJdaA74cg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,XL1ik6dtM/WnBni9KgHzh96DU7k=] */

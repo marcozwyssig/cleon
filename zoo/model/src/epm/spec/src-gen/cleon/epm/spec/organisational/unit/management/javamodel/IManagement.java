@@ -8,7 +8,7 @@ public interface IManagement extends cleon.epm.spec.organisational.unit.javamode
   
   // relations
   
-  public cleon.epm.spec.organisational.unit.management.javamodel.IEnviromentProtection selectEnviromentProtection();
+  public cleon.epm.spec.organisational.unit.management.javamodel.IEnvironmentProtection selectEnvironmentProtection();
   
   public cleon.epm.spec.organisational.unit.management.javamodel.IPolticsAndStrategy selectPolticsAndStrategy();
   
@@ -18,4 +18,4 @@ public interface IManagement extends cleon.epm.spec.organisational.unit.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,WUn91bd/2vo+y5xoW1ZmrOikJ3Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,QcMnXzdc2s0HphCzCqkhHFBQEvU=] */

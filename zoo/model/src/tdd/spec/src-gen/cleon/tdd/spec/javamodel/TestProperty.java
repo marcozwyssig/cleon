@@ -32,11 +32,11 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   
   @Override
   public java.lang.String selectGiven() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.Test_given);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given);
   }
     
   public void setGiven(java.lang.String given) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.Test_given, given);
+     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_given, given);
   }
 
   @Override
@@ -50,11 +50,11 @@ public class TestProperty extends DynamicResource implements ITestProperty {
 
   @Override
   public java.lang.String selectThen() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.Test_then);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then);
   }
     
   public void setThen(java.lang.String then) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.Test_then, then);
+     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_then, then);
   }
 
   // relations
@@ -93,9 +93,9 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.Test_given, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.Test_then, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -109,4 +109,4 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,Yix1YCiDwiRmVAnHr9GF67VtwV4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,J75B2KOloIyo47z4OHsVV7AkEDs=] */

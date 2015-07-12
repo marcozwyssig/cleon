@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b62f1413-174c-11e5-9ca7-d1bb57b73459">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="08ae4f7a-174d-11e5-9ca7-d1bb57b73459" guid="08ab1b23-174d-11e5-9ca7-d1bb57b73459" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b62f3b25-174c-11e5-9ca7-d1bb57b73459" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c680ef1a-174c-11e5-9ca7-d1bb57b73459" type="resource" guid="243b1867-7973-11e4-a6e2-23d949480f96" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="08ae4f7a-174d-11e5-9ca7-d1bb57b73459">
+      <resource guid="08ab1b23-174d-11e5-9ca7-d1bb57b73459">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="08ab4239-174d-11e5-9ca7-d1bb57b73459" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="08ab4238-174d-11e5-9ca7-d1bb57b73459" type="literal">decompose</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="08ab4237-174d-11e5-9ca7-d1bb57b73459" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="08ab4236-174d-11e5-9ca7-d1bb57b73459" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="13a29195-174d-11e5-9ca7-d1bb57b73459" type="resource" guid="f9f84a2f-174c-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+        <predicate guid="dd6d701d-e8a9-11e2-b67d-e515e6efcec9">
+          <object statement-guid="08ab4234-174d-11e5-9ca7-d1bb57b73459" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b62f6236-174c-11e5-9ca7-d1bb57b73459" type="literal">DecompositionBuildingBlock</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="ccd23693-174c-11e5-9ca7-d1bb57b73459" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

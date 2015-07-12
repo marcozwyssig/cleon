@@ -11,13 +11,15 @@ public class ComponentsPackage {
   public static final Resource AbstractComponent_shortName = new Resource("86add80a-ce46-11e4-8e43-f3d67d2046f9");
   public static final Resource ComponentDependency = new Resource("6cacbca2-ffc4-11e4-ac0a-959b440f987f");
   public static final Resource ComponentCompositionDependency = new Resource("72e79576-ffc4-11e4-ac0a-959b440f987f");
-  public static final Resource ComponentComposition_has = new Resource("e8a50863-ffc4-11e4-ac0a-959b440f987f");
+  public static final Resource ComponentComposition_hasDependency = new Resource("e8a50863-ffc4-11e4-ac0a-959b440f987f");
   public static final Resource ComponentCompositionDependency_on = new Resource("10e7475f-ffc5-11e4-ac0a-959b440f987f");
   public static final Resource ComponentDependency_to = new Resource("3858a114-ffc5-11e4-ac0a-959b440f987f");
-  public static final Resource ComponentWithPackage_packages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
+  public static final Resource Component_packages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
   public static final Resource Component_hasDependency = new Resource("66c7af38-ffc5-11e4-ac0a-959b440f987f");
-  public static final Resource ComponentWithPackage = new Resource("4472ee70-1475-11e5-a016-a15bccd8b132");
-  public static final Resource Component_emptypackages = new Resource("a01f8eb5-1475-11e5-a016-a15bccd8b132");
+  public static final Resource ComponentCompositionDecomposition = new Resource("096bdd9e-174e-11e5-9ca7-d1bb57b73459");
+  public static final Resource ComponentCompositionDecomposition_decompose = new Resource("3168aea2-174e-11e5-9ca7-d1bb57b73459");
+  public static final Resource ComponentDecomposition = new Resource("d4692e40-1755-11e5-9ca7-d1bb57b73459");
+  public static final Resource ComponentDecomposition_decompose = new Resource("d4695551-1755-11e5-9ca7-d1bb57b73459");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +40,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,xBOwfuuSRY6zd9MMniJADLZ630I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,ZPk4XAXfL05vV25zEJzX1jK+0XE=] */

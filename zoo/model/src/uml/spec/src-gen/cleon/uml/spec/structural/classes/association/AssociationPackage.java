@@ -30,6 +30,7 @@ public class AssociationPackage {
   public static final Resource CollectionType_ObservableCollectionWithView = new Resource("7c38fec5-94dd-11e3-a29a-1540d89948d1");
   public static final Resource CollectionType_ReadOnlyCollection = new Resource("b3ee1219-1725-11e4-b1e5-eb13f1cefb90");
   public static final Resource Association_objectNavigationable = new Resource("9f7b8d36-7bbc-11e4-bb21-ff206e183f22");
+  public static final Resource Association_to = new Resource("cb08980a-18a0-11e5-8f34-a7757900c5ec");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +51,4 @@ public class AssociationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.association,tTwPcGadWPnYYeSzJyO1bcazpP0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.association,fQDaQwGbXsSMs7IdydjRHnn6Q54=] */

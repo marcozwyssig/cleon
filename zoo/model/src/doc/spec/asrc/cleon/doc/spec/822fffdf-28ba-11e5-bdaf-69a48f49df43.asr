@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="822fffdf-28ba-11e5-bdaf-69a48f49df43">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="822fffea-28ba-11e5-bdaf-69a48f49df43" guid="822fffe0-28ba-11e5-bdaf-69a48f49df43" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="822fffe4-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="822fffe3-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="651f921b-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="822fffea-28ba-11e5-bdaf-69a48f49df43">
+      <resource guid="822fffe0-28ba-11e5-bdaf-69a48f49df43">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="822fffe9-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="822fffe8-28ba-11e5-bdaf-69a48f49df43" type="literal">ownDocumentElements</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="822fffe7-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="822fffe6-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="96485902-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="651f921b-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="822fffe2-28ba-11e5-bdaf-69a48f49df43" type="literal">OwnDocumentElementComposite</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="822fffe1-28ba-11e5-bdaf-69a48f49df43" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

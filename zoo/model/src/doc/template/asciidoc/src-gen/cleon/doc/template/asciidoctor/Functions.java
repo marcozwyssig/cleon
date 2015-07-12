@@ -16,13 +16,13 @@ public class Functions {
   /* Begin Protected Region [[4ba84dc4-d872-11e4-aa2f-c11242a92b60]] */
   private static java.lang.String BuildChapterNo( cleon.doc.spec.javamodel.IDocumentElement chapter)
   {
-  	cleon.doc.spec.javamodel.IDocumentElement parent = cleon.doc.spec.javamodel.DocumentElementComposite.selectToMeDocumentElements(chapter);
-  	if( parent == null || !(parent instanceof cleon.doc.spec.javamodel.IDocumentElementComposite))
+  	cleon.doc.spec.javamodel.IDocumentElement parent = cleon.doc.spec.javamodel.UseDocumentElementComposite.selectToMeUseDocumentElements(chapter);
+  	if( parent == null || !(parent instanceof cleon.doc.spec.javamodel.IUseDocumentElementComposite))
   	{
     	return "";	
   	}
-  	cleon.doc.spec.javamodel.IDocumentElementComposite parentCollection = (cleon.doc.spec.javamodel.IDocumentElementComposite)parent;
-  	java.lang.Integer index = parentCollection.selectDocumentElements().indexOf(chapter) + 1;
+  	cleon.doc.spec.javamodel.IUseDocumentElementComposite parentCollection = (cleon.doc.spec.javamodel.IUseDocumentElementComposite)parent;
+  	java.lang.Integer index = parentCollection.selectUseDocumentElements().indexOf(chapter) + 1;
   	java.lang.String indexStr = index.toString();
   	
   	java.lang.String parentIndex = BuildChapterNo(parentCollection);
@@ -77,7 +77,7 @@ public class Functions {
   public static interface IChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("06c933f7-d875-11e4-aa2f-c11242a92b60")
-    public java.lang.String ChapterNo(final cleon.doc.spec.javamodel.IChapter chapter);
+    public java.lang.String ChapterNo(final cleon.doc.spec.chapter.javamodel.IChapter chapter);
 
   }
   
@@ -88,7 +88,7 @@ public class Functions {
     private ChapterFunctionsImpl() {}
 
     @Override
-    public java.lang.String ChapterNo(final cleon.doc.spec.javamodel.IChapter chapter) {
+    public java.lang.String ChapterNo(final cleon.doc.spec.chapter.javamodel.IChapter chapter) {
       /* Begin Protected Region [[06c933f7-d875-11e4-aa2f-c11242a92b60]] */
       	return BuildChapterNo(chapter);
       /* End Protected Region   [[06c933f7-d875-11e4-aa2f-c11242a92b60]] */
@@ -100,7 +100,7 @@ public class Functions {
 
     private ChapterFunctions() {}
 
-    public static java.lang.String ChapterNo(final cleon.doc.spec.javamodel.IChapter chapter) {
+    public static java.lang.String ChapterNo(final cleon.doc.spec.chapter.javamodel.IChapter chapter) {
       return DynamicResourceUtil.invoke(IChapterFunctionsImpl.class, ChapterFunctionsImpl.INSTANCE, chapter).ChapterNo(chapter);
     }
 
@@ -183,4 +183,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,hvRdxNt3MbGfacnvxaBFTLNF1FU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,5eVSyIHN8DTN+2e+e5UCfrSI8j4=] */

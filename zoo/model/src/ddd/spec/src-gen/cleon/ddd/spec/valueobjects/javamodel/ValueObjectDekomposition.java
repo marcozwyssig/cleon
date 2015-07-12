@@ -31,6 +31,16 @@ public class ValueObjectDekomposition extends DynamicResource implements IValueO
   // relations
   
   @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public ValueObjectDekomposition setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
     return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class);
   }
@@ -61,6 +71,16 @@ public class ValueObjectDekomposition extends DynamicResource implements IValueO
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
+    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
+  }
+
+  public ValueObjectDekomposition setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
+    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
+    return this;
+  }
+    
+  @Override
   public cleon.ddd.spec.valueobjects.javamodel.IValueObject selectValueObject() {
     return _getSingle(cleon.ddd.spec.valueobjects.javamodel.IValueObject.class, cleon.ddd.spec.valueobjects.ValueobjectsPackage.ValueObjectDekomposition_valueObject);
   }
@@ -74,9 +94,11 @@ public class ValueObjectDekomposition extends DynamicResource implements IValueO
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
     _acceptSingle(cleon.ddd.spec.valueobjects.javamodel.IValueObject.class, cleon.ddd.spec.valueobjects.ValueobjectsPackage.ValueObjectDekomposition_valueObject, visitor);
   }
 
@@ -87,4 +109,4 @@ public class ValueObjectDekomposition extends DynamicResource implements IValueO
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,172528f4-266d-11e5-95dc-8f1cdbd9db54,kBLJoJAgx6va29sayZcjiG5K8+g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,172528f4-266d-11e5-95dc-8f1cdbd9db54,jP0TaZs16M+Hng/IuoI7j6a2a9A=] */

@@ -43,10 +43,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * Here you can reuse parts of the requirements documents – but keep these
  * excerpts short and balance readability against avoidance of redundancy.
  */
-public interface IRequirements extends cleon.doc.spec.javamodel.IChapter {
+public interface IRequirements extends cleon.doc.spec.chapter.javamodel.IChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d9906e1c-11fc-11e5-848b-017a3a98ae34");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,VaIzRBO2QZx7JMlpSHU9t2DonY0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,3zzgK4h1rfloZhrYEWx5mnkgJW8=] */

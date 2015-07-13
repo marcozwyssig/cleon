@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="db79c858-294d-11e5-b035-b579d7e91534">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="e1054ec9-294d-11e5-b035-b579d7e91534" guid="e10527b6-294d-11e5-b035-b579d7e91534" />
+    <resource statement-guid="e290348e-294d-11e5-b035-b579d7e91534" guid="e28fe66b-294d-11e5-b035-b579d7e91534" />
+    <resource statement-guid="df328a25-294d-11e5-b035-b579d7e91534" guid="df323c02-294d-11e5-b035-b579d7e91534" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a167a-294d-11e5-b035-b579d7e91534" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a3d8c-294d-11e5-b035-b579d7e91534" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a3d8b-294d-11e5-b035-b579d7e91534" type="literal">State</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="e1054ec9-294d-11e5-b035-b579d7e91534">
+      <resource guid="e10527b6-294d-11e5-b035-b579d7e91534">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e10527b8-294d-11e5-b035-b579d7e91534" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e185c96a-294d-11e5-b035-b579d7e91534" type="literal">Open</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e290348e-294d-11e5-b035-b579d7e91534">
+      <resource guid="e28fe66b-294d-11e5-b035-b579d7e91534">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e2900d7d-294d-11e5-b035-b579d7e91534" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e330e15f-294d-11e5-b035-b579d7e91534" type="literal">In Progress</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="df328a25-294d-11e5-b035-b579d7e91534">
+      <resource guid="df323c02-294d-11e5-b035-b579d7e91534">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df326314-294d-11e5-b035-b579d7e91534" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dff42c76-294d-11e5-b035-b579d7e91534" type="literal">Done</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

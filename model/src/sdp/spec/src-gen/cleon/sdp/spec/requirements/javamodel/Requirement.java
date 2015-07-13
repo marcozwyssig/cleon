@@ -42,6 +42,16 @@ public class Requirement extends DynamicResource implements IRequirement {
   // relations
   
   @Override
+  public cleon.sdp.spec.requirements.javamodel.IState selectState() {
+    return _getSingle(cleon.sdp.spec.requirements.javamodel.IState.class, cleon.sdp.spec.requirements.RequirementsPackage.Requirement_state);
+  }
+
+  public Requirement setState(cleon.sdp.spec.requirements.javamodel.IState state) {
+    _setSingle(cleon.sdp.spec.requirements.RequirementsPackage.Requirement_state, state);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -57,8 +67,15 @@ public class Requirement extends DynamicResource implements IRequirement {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.sdp.spec.requirements.javamodel.IState.class, cleon.sdp.spec.requirements.RequirementsPackage.Requirement_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.sdp.spec.requirements.javamodel.IRequirement> selectToMeState(cleon.sdp.spec.requirements.javamodel.IState object) {
+    return _getToMeList(object.getRepository(), cleon.sdp.spec.requirements.javamodel.IRequirement.class, cleon.sdp.spec.requirements.RequirementsPackage.Requirement_state, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,954FSqpmdgp+bgFfjESFBV0YaJo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,YF7x5Ne2jAz0SahYN2FtrZ3Nudg=] */

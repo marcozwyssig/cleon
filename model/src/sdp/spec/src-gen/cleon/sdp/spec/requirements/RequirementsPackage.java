@@ -10,6 +10,11 @@ public class RequirementsPackage {
   public static final Resource AbstractRequirement = new Resource("5f437e30-ff9b-11e4-ac0a-959b440f987f");
   public static final Resource RequirementGroup_requirements = new Resource("6a708494-ff9b-11e4-ac0a-959b440f987f");
   public static final Resource Requirements_root = new Resource("7958bdbe-ff9b-11e4-ac0a-959b440f987f");
+  public static final Resource State = new Resource("db79c858-294d-11e5-b035-b579d7e91534");
+  public static final Resource State_Done = new Resource("df323c02-294d-11e5-b035-b579d7e91534");
+  public static final Resource State_Open = new Resource("e10527b6-294d-11e5-b035-b579d7e91534");
+  public static final Resource State_In__F_Progress = new Resource("e28fe66b-294d-11e5-b035-b579d7e91534");
+  public static final Resource Requirement_state = new Resource("facbf891-294d-11e5-b035-b579d7e91534");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +35,4 @@ public class RequirementsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sdp.spec.requirements,BbG0PZxLuONSSrxRSus9FjcCULg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sdp.spec.requirements,rCQ84zWm/TkGeHsQiLnXewOYeMU=] */

@@ -3,7 +3,7 @@ package cleon.doc.spec.chapter.paragraph.javamodel;
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
-@edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
+
 public abstract class Paragraph extends DynamicResource implements IParagraph {
 
   // abstract implementation, only used for static method calls

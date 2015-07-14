@@ -3,7 +3,7 @@ package cleon.doc.spec.document.javamodel;
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
-@edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
+
 public class NamedDocument extends DynamicResource implements INamedDocument {
 
   public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedDocument> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedDocument>() {

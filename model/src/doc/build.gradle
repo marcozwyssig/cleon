@@ -1,8 +1,8 @@
 buildscript {
   repositories {
     mavenLocal()
-    jcenter()
     maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
+    jcenter()
   }
 
   dependencies {
@@ -12,17 +12,6 @@ buildscript {
 
 repositories {
   mavenLocal()
-  jcenter()
   maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local' }
-}
-
-apply plugin: 'java'
-apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
-apply plugin: 'org.akhikhl.wuff.eclipse-feature'
-
-version = '1.0.1'
-
-
-wuff {
-  filterPluginXml = true
+  jcenter()
 }

@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        core(MavenPublication) {
+          groupId 'eclipse-luna-sr2'
+          artifactId 'ch.actifsource.core'
+          version '6.10.0.201506262000'
+          artifact file('ch.actifsource.core_6.10.0.201506262000.jar')
+        }
+        environment(MavenPublication) {
+          groupId 'eclipse-luna-sr2'
+          artifactId 'ch.actifsource.environment'
+          version '6.10.0.201506262000'
+          artifact file('ch.actifsource.environment_6.10.0.201506262000.jar')
+        }
+        util(MavenPublication) {
+          groupId 'eclipse-luna-sr2'
+          artifactId 'ch.actifsource.util'
+          version '6.10.0.201506262000'
+          artifact file('ch.actifsource.util_6.10.0.201506262000.jar')
+        }
+
+    }
+}

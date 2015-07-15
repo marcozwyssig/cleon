@@ -1,0 +1,32 @@
+apply plugin: 'org.akhikhl.wuff.eclipse-repository'
+apply plugin: 'org.akhikhl.wuff.eclipse-feature'
+
+version = '1.0.0'
+
+configurations {
+  f1 { transitive = false }
+}
+
+dependencies {
+  f1 project(':spec')
+}
+
+wuff {
+  feature('feature') {
+    version = '1.0.1'
+    configuration = 'f1'
+    label = 'my feature'
+    copyright = 'Me. All rights reserved.'
+    licenseText = 'BLA BLA LICENSE. LICENSE TEXT GOES HERE.'
+  }
+  repository('myrepository') {
+    version = '1.2.3'
+    url = 'http://www.example.com'
+    description = 'description of my repository'
+    category('categoryA') {
+      label = 'label of some category'
+      description = 'description of some category'
+      feature 'feature'
+    }
+  }
+}

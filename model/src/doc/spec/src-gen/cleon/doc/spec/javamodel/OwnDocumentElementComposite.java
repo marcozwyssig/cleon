@@ -3,7 +3,7 @@ package cleon.doc.spec.javamodel;
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
-
+@edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
 public abstract class OwnDocumentElementComposite extends DynamicResource implements IOwnDocumentElementComposite {
 
   // abstract implementation, only used for static method calls

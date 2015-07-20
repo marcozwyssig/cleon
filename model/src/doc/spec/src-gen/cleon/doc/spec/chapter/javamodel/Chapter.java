@@ -3,6 +3,7 @@ package cleon.doc.spec.chapter.javamodel;
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
+@edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
 public class Chapter extends DynamicResource implements IChapter {
 
   public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IChapter> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IChapter>() {

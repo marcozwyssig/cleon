@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cleon.ddd.spec.feature"
+      label="cleon.ddd.spec.feature"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="ch.actifsource.core" version="6.10.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="6.10.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="6.10.0" match="greaterOrEqual"/>
+      <import feature="ch.actifsource.enterprise" version="6.10.0.201506262000"/>
+      <import feature="cleon.uml.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.soa.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.arc42.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.doc.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.eda.spec.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="cleon.ddd.spec.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+</feature>
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,b2e32f97-11ee-11e5-b568-55f5f05bd6f6,Hash] -->

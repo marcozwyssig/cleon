@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cleon.arc42.spec.feature"
+      label="cleon.arc42.spec.feature"
+      version="1.0.0.qualifier">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="ch.actifsource.core" version="6.10.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="6.10.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="6.10.0" match="greaterOrEqual"/>
+      <import feature="ch.actifsource.enterprise" version="6.10.0.201506262000"/>
+      <import feature="cleon.doc.spec.feature" version="1.0.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="cleon.arc42.spec.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+</feature>
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,aa308523-ffb4-11e4-ac0a-959b440f987f,Hash] -->

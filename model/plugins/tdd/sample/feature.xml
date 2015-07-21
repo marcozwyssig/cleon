@@ -17,10 +17,9 @@
    </license>
 
    <requires>
-      <import plugin="ch.actifsource.core" version="6.10.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.environment" version="6.10.0" match="greaterOrEqual"/>
-      <import plugin="ch.actifsource.util" version="6.10.0" match="greaterOrEqual"/>
-      <import feature="ch.actifsource.enterprise" version="6.10.0.201506262000"/>
+      <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
       <import feature="cleon.tdd.spec.feature" version="1.0.0.qualifier"/>
    </requires>
 
@@ -32,4 +31,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,24f58c0e-129f-11e5-a69e-755a9ac7f617,Hash] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,24f58c0e-129f-11e5-a69e-755a9ac7f617,d73QlLVDpv8GsYYBaUNy7l5aemo=] -->

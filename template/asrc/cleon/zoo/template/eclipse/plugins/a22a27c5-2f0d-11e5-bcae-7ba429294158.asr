@@ -327,18 +327,6 @@
                         <resource statement-guid="acf4e972-2f0d-11e5-bcae-7ba429294158" guid="ace160c8-2f0d-11e5-bcae-7ba429294158" />
                       </owns>
                     </resource>
-                    <resource statement-guid="acf5acd0-2f0d-11e5-bcae-7ba429294158" guid="ace1aeef-2f0d-11e5-bcae-7ba429294158">
-                      <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                        <resource statement-guid="acf585bc-2f0d-11e5-bcae-7ba429294158" guid="ace187db-2f0d-11e5-bcae-7ba429294158">
-                          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                            <resource statement-guid="acf585bb-2f0d-11e5-bcae-7ba429294158" guid="ace187dc-2f0d-11e5-bcae-7ba429294158" />
-                          </owns>
-                        </resource>
-                      </owns>
-                      <owns predicate="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
-                        <resource statement-guid="acf5accf-2f0d-11e5-bcae-7ba429294158" guid="ace1aef0-2f0d-11e5-bcae-7ba429294158" />
-                      </owns>
-                    </resource>
                     <resource statement-guid="dc0d08ea-2f0d-11e5-bcae-7ba429294158" guid="dc0cbac0-2f0d-11e5-bcae-7ba429294158">
                       <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
                         <resource statement-guid="dc0da437-2f0d-11e5-bcae-7ba429294158" guid="c3784f44-2f0d-11e5-bcae-7ba429294158">
@@ -1478,7 +1466,7 @@
                                               <object statement-guid="acf29f62-2f0d-11e5-bcae-7ba429294158" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                             </predicate>
                                             <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                              <object statement-guid="acf29f63-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.core" version="6.10.0" match="greaterOrEqual"/&gt;</object>
+                                              <object statement-guid="acf29f63-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/&gt;</object>
                                             </predicate>
                                           </resource>
                                         </object>
@@ -1515,7 +1503,7 @@
                                               <object statement-guid="acf29f6f-2f0d-11e5-bcae-7ba429294158" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                             </predicate>
                                             <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                              <object statement-guid="acf29f70-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.environment" version="6.10.0" match="greaterOrEqual"/&gt;</object>
+                                              <object statement-guid="acf29f70-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/&gt;</object>
                                             </predicate>
                                           </resource>
                                         </object>
@@ -1552,7 +1540,7 @@
                                               <object statement-guid="acf29f7c-2f0d-11e5-bcae-7ba429294158" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                             </predicate>
                                             <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                              <object statement-guid="acf29f7d-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.util" version="6.10.0" match="greaterOrEqual"/&gt;</object>
+                                              <object statement-guid="acf29f7d-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/&gt;</object>
                                             </predicate>
                                           </resource>
                                         </object>
@@ -1565,43 +1553,6 @@
                                     <resource guid="ace160c8-2f0d-11e5-bcae-7ba429294158">
                                       <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
                                         <object statement-guid="acf4e971-2f0d-11e5-bcae-7ba429294158" type="resource" guid="4f50d6ca-d347-11de-87dc-a9aeefa4174b" />
-                                      </predicate>
-                                    </resource>
-                                  </object>
-                                </predicate>
-                              </resource>
-                            </object>
-                            <object statement-guid="acf5acd0-2f0d-11e5-bcae-7ba429294158">
-                              <resource guid="ace1aeef-2f0d-11e5-bcae-7ba429294158">
-                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                  <object statement-guid="acf55ea5-2f0d-11e5-bcae-7ba429294158" type="resource" guid="cfc4cfd3-c91d-11de-a722-07fb435e032d" />
-                                </predicate>
-                                <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                                  <object statement-guid="acf585bc-2f0d-11e5-bcae-7ba429294158">
-                                    <resource guid="ace187db-2f0d-11e5-bcae-7ba429294158">
-                                      <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                        <object statement-guid="acf55ea7-2f0d-11e5-bcae-7ba429294158" type="resource" guid="807c58c6-c946-11de-95d0-4912b8dc029a" />
-                                      </predicate>
-                                      <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                                        <object statement-guid="acf585bb-2f0d-11e5-bcae-7ba429294158">
-                                          <resource guid="ace187dc-2f0d-11e5-bcae-7ba429294158">
-                                            <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                              <object statement-guid="acf55ea9-2f0d-11e5-bcae-7ba429294158" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
-                                            </predicate>
-                                            <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                              <object statement-guid="acf585ba-2f0d-11e5-bcae-7ba429294158" type="literal">      &lt;import feature="ch.actifsource.enterprise" version="6.10.0.201506262000"/&gt;</object>
-                                            </predicate>
-                                          </resource>
-                                        </object>
-                                      </predicate>
-                                    </resource>
-                                  </object>
-                                </predicate>
-                                <predicate guid="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="acf5accf-2f0d-11e5-bcae-7ba429294158">
-                                    <resource guid="ace1aef0-2f0d-11e5-bcae-7ba429294158">
-                                      <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                        <object statement-guid="acf585be-2f0d-11e5-bcae-7ba429294158" type="resource" guid="4f50d6ca-d347-11de-87dc-a9aeefa4174b" />
                                       </predicate>
                                     </resource>
                                   </object>

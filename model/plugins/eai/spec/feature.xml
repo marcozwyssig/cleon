@@ -2,7 +2,7 @@
 <feature
       id="cleon.eai.spec.feature"
       label="cleon.eai.spec"
-      version="1.0.0.qualifier">
+      version="0.0.1.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,7 +20,7 @@
       <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
-      <import feature="cleon.uml.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.uml.spec.feature" version="0.0.1.qualifier"/>
    </requires>
 
    <plugin
@@ -31,4 +31,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,eaf87c06-11ee-11e5-b568-55f5f05bd6f6,Ow63gcmR94TaV4yPxAW2Cjbz57s=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,eaf87c06-11ee-11e5-b568-55f5f05bd6f6,QJfS/PMZ4uIyW0AqeJtJW8nnVi0=] -->

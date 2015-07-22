@@ -20,6 +20,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_Template = new Resource("6229e3a6-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Model = new Resource("751073df-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Sample = new Resource("75d7465e-11ea-11e5-b568-55f5f05bd6f6");
+  public static final Resource Project_version = new Resource("4613bc5b-3055-11e5-8cdc-d5b441c8c3df");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +41,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.zoo.spec,RDSyq+0muGqUmGbQTZ1vkuAFNR8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.zoo.spec,lcovujontVdId75Zrn6mFpBBCsk=] */

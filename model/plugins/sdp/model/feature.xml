@@ -2,7 +2,7 @@
 <feature
       id="cleon.sdp.model.feature"
       label="cleon.sdp.model"
-      version="1.0.0.qualifier">
+      version="0.0.1.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,7 +20,7 @@
       <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
-      <import feature="cleon.sdp.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.sdp.spec.feature" version="0.0.1.qualifier"/>
    </requires>
 
    <plugin
@@ -31,4 +31,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,4f6f4984-11ee-11e5-b568-55f5f05bd6f6,RoV5vaveMHRmJxprqwskengh5nw=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,4f6f4984-11ee-11e5-b568-55f5f05bd6f6,V0ViipXRDxDM8SEnko0JWEBwsvs=] -->

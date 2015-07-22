@@ -2,7 +2,7 @@
 <feature
       id="cleon.uml.spec.feature"
       label="cleon.uml.spec"
-      version="1.0.0.qualifier">
+      version="0.0.1.qualifier">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,8 +20,8 @@
       <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
-      <import feature="cleon.arc42.spec.feature" version="1.0.0.qualifier"/>
-      <import feature="cleon.doc.spec.feature" version="1.0.0.qualifier"/>
+      <import feature="cleon.arc42.spec.feature" version="0.0.1.qualifier"/>
+      <import feature="cleon.doc.spec.feature" version="0.0.1.qualifier"/>
    </requires>
 
    <plugin
@@ -32,4 +32,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,1d0ca590-ffbc-11e4-ac0a-959b440f987f,P/+Sx5G8k3EZRROEtNAedLXJZbc=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,1d0ca590-ffbc-11e4-ac0a-959b440f987f,i59hHZdAeCCf/Htmac9E3hw03W0=] -->

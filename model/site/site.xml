@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Zoo Model">
+      ddd
+   </description>
+   <feature url="features/cleon.act.spec.feature_0.0.1.201507221244.jar" id="cleon.act.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.arc42.spec.feature_0.0.1.201507221244.jar" id="cleon.arc42.spec.feature" version="0.0.1.201507221244">
+      <category name="arc"/>
+   </feature>
+   <feature url="features/cleon.cqrs.spec.feature_0.0.1.201507221244.jar" id="cleon.cqrs.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.ddd.spec.feature_0.0.1.201507221244.jar" id="cleon.ddd.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.desktop.spec.feature_0.0.1.201507221244.jar" id="cleon.desktop.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.doc.spec.feature_0.0.1.201507221244.jar" id="cleon.doc.spec.feature" version="0.0.1.201507221244">
+      <category name="doc"/>
+   </feature>
+   <feature url="features/cleon.doc.template.asciidoc.feature_0.0.1.201507221244.jar" id="cleon.doc.template.asciidoc.feature" version="0.0.1.201507221244">
+      <category name="doc"/>
+   </feature>
+   <feature url="features/cleon.eai.spec.feature_0.0.1.201507221244.jar" id="cleon.eai.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.eda.spec.feature_0.0.1.201507221244.jar" id="cleon.eda.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.epm.spec.feature_0.0.1.201507221244.jar" id="cleon.epm.spec.feature" version="0.0.1.201507221244">
+      <category name="ent"/>
+   </feature>
+   <feature url="features/cleon.gof.spec.feature_0.0.1.201507221244.jar" id="cleon.gof.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.microservices.spec.feature_0.0.1.201507221244.jar" id="cleon.microservices.spec.feature" version="0.0.1.201507221244">
+      <category name="arc"/>
+   </feature>
+   <feature url="features/cleon.mobile.spec.feature_0.0.1.201507221244.jar" id="cleon.mobile.spec.feature" version="0.0.1.201507221244">
+      <category name="mobile"/>
+   </feature>
+   <feature url="features/cleon.sdp.spec.feature_0.0.1.201507221244.jar" id="cleon.sdp.spec.feature" version="0.0.1.201507221244">
+      <category name="ent"/>
+   </feature>
+   <feature url="features/cleon.soa.spec.feature_0.0.1.201507221244.jar" id="cleon.soa.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.tdd.spec.feature_0.0.1.201507221244.jar" id="cleon.tdd.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.uml.spec.feature_0.0.1.201507221244.jar" id="cleon.uml.spec.feature" version="0.0.1.201507221244">
+      <category name="arc"/>
+   </feature>
+   <feature url="features/cleon.uml.template.dotnet.feature_0.0.1.201507221244.jar" id="cleon.uml.template.dotnet.feature" version="0.0.1.201507221244">
+      <category name="arc"/>
+   </feature>
+   <feature url="features/cleon.web.spec.feature_0.0.1.201507221244.jar" id="cleon.web.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <feature url="features/cleon.xml.spec.feature_0.0.1.201507221244.jar" id="cleon.xml.spec.feature" version="0.0.1.201507221244">
+      <category name="concepts"/>
+   </feature>
+   <category-def name="concepts" label="Concepts"/>
+   <category-def name="arc" label="Architecture"/>
+   <category-def name="doc" label="Documentation"/>
+   <category-def name="ent" label="Enterprise Process"/>
+   <category-def name="mobile" label="Mobile"/>
+</site>

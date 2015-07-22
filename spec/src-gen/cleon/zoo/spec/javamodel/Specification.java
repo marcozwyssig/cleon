@@ -48,6 +48,15 @@ public class Specification extends DynamicResource implements ISpecification {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.String selectVersion() {
+    return _getSingleAttribute(java.lang.String.class, cleon.zoo.spec.SpecPackage.Project_version);
+  }
+    
+  public void setVersion(java.lang.String version) {
+     _setSingleAttribute(cleon.zoo.spec.SpecPackage.Project_version, version);
+  }
+
   // relations
   
   @Override
@@ -106,6 +115,7 @@ public class Specification extends DynamicResource implements ISpecification {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.zoo.spec.SpecPackage.Project_version, visitor);
     // relations
     _acceptList(cleon.zoo.spec.javamodel.IProject.class, cleon.zoo.spec.SpecPackage.Project_dependsOn, visitor);
     _acceptList(cleon.zoo.spec.javamodel.IModel.class, cleon.zoo.spec.SpecPackage.Specification_model, visitor);
@@ -129,4 +139,4 @@ public class Specification extends DynamicResource implements ISpecification {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,scj9E87iUsuQU2yQPcG7Us4EcCw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,6qdQc1R9lvzjuy8HyeB1S0hWsv4=] */

@@ -39,6 +39,15 @@ public class Model extends DynamicResource implements IModel {
      _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
   }
 
+  @Override
+  public java.lang.String selectVersion() {
+    return _getSingleAttribute(java.lang.String.class, cleon.zoo.spec.SpecPackage.Project_version);
+  }
+    
+  public void setVersion(java.lang.String version) {
+     _setSingleAttribute(cleon.zoo.spec.SpecPackage.Project_version, version);
+  }
+
   // relations
   
   @Override
@@ -66,10 +75,11 @@ public class Model extends DynamicResource implements IModel {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.zoo.spec.SpecPackage.Project_version, visitor);
     // relations
     _acceptList(cleon.zoo.spec.javamodel.IProject.class, cleon.zoo.spec.SpecPackage.Project_dependsOn, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,NUyJUfSAz8hm3me9UHwoxFf5L+8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,1HcTVNIQDLXKF+dpapK5OOMER54=] */

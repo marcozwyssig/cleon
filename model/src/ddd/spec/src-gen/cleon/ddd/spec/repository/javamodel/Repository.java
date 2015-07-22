@@ -121,6 +121,16 @@ public class Repository extends DynamicResource implements IRepository {
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes);
+  }
+
+  public Repository setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.document.DocumentPackage.Document_paragraphes, paragraphes);
+    return this;
+  }
+    
+  @Override
   public cleon.ddd.spec.entities.javamodel.IEntity selectSearch() {
     return _getSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.repository.RepositoryPackage.Repository_search);
   }
@@ -174,6 +184,7 @@ public class Repository extends DynamicResource implements IRepository {
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.ddd.spec.repository.RepositoryPackage.Repository_getBy, visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes, visitor);
     _acceptSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.repository.RepositoryPackage.Repository_search, visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.ddd.spec.repository.RepositoryPackage.Repository_searchBy, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -195,4 +206,4 @@ public class Repository extends DynamicResource implements IRepository {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,m/AAZE1vhBUtbFwjjzJGQrJA1xw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,Pn4s9TPzp/DWTJlUOwGITOblsg0=] */

@@ -130,6 +130,16 @@ public class DomainService extends DynamicResource implements IDomainService {
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes);
+  }
+
+  public DomainService setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.document.DocumentPackage.Document_paragraphes, paragraphes);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -164,9 +174,10 @@ public class DomainService extends DynamicResource implements IDomainService {
     _acceptList(javamodel.IEvent.class, new ch.actifsource.core.Resource("3de09653-a3ba-11e3-8095-f11af53ab806"), visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,ZAmkZQ2HUqvE5es0zgLPQKE2Fpo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,APj5IB05oDGQdxvzbZuwNnnsAdw=] */

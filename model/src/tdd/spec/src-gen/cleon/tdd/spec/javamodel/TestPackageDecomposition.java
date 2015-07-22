@@ -61,12 +61,32 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
+    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
+  }
+
+  public TestPackageDecomposition setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
+    _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
+    return this;
+  }
+    
+  @Override
   public cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition selectPackageUnderTest() {
     return _getSingle(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackageDecomposition_packageUnderTest);
   }
 
   public TestPackageDecomposition setPackageUnderTest(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition packageUnderTest) {
     _setSingle(cleon.tdd.spec.SpecPackage.TestPackageDecomposition_packageUnderTest, packageUnderTest);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes);
+  }
+
+  public TestPackageDecomposition setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, paragraphes);
     return this;
   }
     
@@ -100,16 +120,6 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
-  }
-
-  public TestPackageDecomposition setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
-    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -117,11 +127,12 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, visitor);
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_decomposePackage, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackageDecomposition_packageUnderTest, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.tdd.spec.javamodel.ITestPackage.class, cleon.tdd.spec.SpecPackage.TestPackageDecomposition_testPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
@@ -135,4 +146,4 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,xJC9OZNF9ltHqBJxsHBvI0NGJoQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,klHSG2Jg5ST7IV6Fvx+ws0oq6Kg=] */

@@ -8,6 +8,7 @@ public class DocumentPackage {
   public static final Resource Document = new Resource("fd0b0ad8-28bc-11e5-bdaf-69a48f49df43");
   public static final Resource Document_chapters = new Resource("fd0b0ad9-28bc-11e5-bdaf-69a48f49df43");
   public static final Resource Document_documents = new Resource("fd0b0ada-28bc-11e5-bdaf-69a48f49df43");
+  public static final Resource Document_paragraphes = new Resource("95721317-3086-11e5-8cdc-d5b441c8c3df");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class DocumentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.document,ncvwot3ENod5QjoA5xClUxFGIUM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.document,up8zkvEySIksX7Ic3iNIb/ihbDY=] */

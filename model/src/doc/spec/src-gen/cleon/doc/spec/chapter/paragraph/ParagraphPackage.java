@@ -9,6 +9,11 @@ public class ParagraphPackage {
   public static final Resource TextParagraph_text = new Resource("3485c93b-d86f-11e4-aa2f-c11242a92b60");
   public static final Resource OrderedList = new Resource("1042ee35-d881-11e4-a5d6-b92b0ce88839");
   public static final Resource OrderedList_paragraphs = new Resource("74dd3648-d882-11e4-a5d6-b92b0ce88839");
+  public static final Resource Note = new Resource("3ec11f20-3087-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Role = new Resource("06d20cec-3089-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Role_paragraphs = new Resource("1e891062-3089-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Admonition = new Resource("6e2a6478-308a-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Admonition_pararaphs = new Resource("cf1b6f95-308a-11e5-8cdc-d5b441c8c3df");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +34,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.chapter.paragraph,cjwXeIIIhHbK2xYH770coyCYSfU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.chapter.paragraph,xfaEv5bWxmbp/alz+zygmVESNQ8=] */

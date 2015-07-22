@@ -9,6 +9,7 @@ public class SpecPackage {
   public static final Resource UseDocumentElementComposite_useDocumentElements = new Resource("a550fab6-d86d-11e4-aa2f-c11242a92b60");
   public static final Resource OwnDocumentElementComposite = new Resource("822fffdf-28ba-11e5-bdaf-69a48f49df43");
   public static final Resource OwnDocumentElementComposite_ownDocumentElements = new Resource("822fffe0-28ba-11e5-bdaf-69a48f49df43");
+  public static final Resource DocumentElementComposite = new Resource("b8a12540-307a-11e5-8cdc-d5b441c8c3df");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec,ZOs6XPUcxcsBtd4myPWg7lqHBCw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec,8GaYEIGJe+cE2QJrhn2YHRENYIA=] */

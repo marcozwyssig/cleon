@@ -101,6 +101,16 @@ public class TestClass extends DynamicResource implements ITestClass {
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes);
+  }
+
+  public TestClass setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.document.DocumentPackage.Document_paragraphes, paragraphes);
+    return this;
+  }
+    
+  @Override
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestMethod> selectTestMethods() {
     return _getMultiMap(cleon.tdd.spec.javamodel.ITestMethod.class, cleon.tdd.spec.SpecPackage.TestClass_testMethods);
   }
@@ -152,6 +162,7 @@ public class TestClass extends DynamicResource implements ITestClass {
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes, visitor);
     _acceptMultiMap(cleon.tdd.spec.javamodel.ITestMethod.class, cleon.tdd.spec.SpecPackage.TestClass_testMethods, visitor);
     _acceptMultiMap(cleon.tdd.spec.javamodel.ITestProperty.class, cleon.tdd.spec.SpecPackage.TestClass_testProperties, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -169,4 +180,4 @@ public class TestClass extends DynamicResource implements ITestClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,JyKxzxfhbjjPIDkn4sTIN9yjySg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,wRRyLDPejA9Qz/pXRlELWVl+40s=] */

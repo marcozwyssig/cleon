@@ -32,11 +32,11 @@ public class Document extends DynamicResource implements IDocument {
   
   @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.Document_chapters);
+    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
   }
 
   public Document setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.document.DocumentPackage.Document_chapters, chapters);
+    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
     return this;
   }
     
@@ -62,11 +62,11 @@ public class Document extends DynamicResource implements IDocument {
     
   @Override
   public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes);
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes);
   }
 
   public Document setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.document.DocumentPackage.Document_paragraphes, paragraphes);
+    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, paragraphes);
     return this;
   }
     
@@ -94,27 +94,19 @@ public class Document extends DynamicResource implements IDocument {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.Document_chapters, visitor);
+    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.doc.spec.document.javamodel.IDocument selectToMeParagraphes(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph object) {
-    return _getToMeSingle(object.getRepository(), cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_paragraphes, object.getResource());
-  }
-  
   public static cleon.doc.spec.document.javamodel.IDocument selectToMeDocuments(cleon.doc.spec.document.javamodel.IDocument object) {
     return _getToMeSingle(object.getRepository(), cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, object.getResource());
   }
   
-  public static cleon.doc.spec.document.javamodel.IDocument selectToMeChapters(cleon.doc.spec.chapter.javamodel.IChapter object) {
-    return _getToMeSingle(object.getRepository(), cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_chapters, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,g8vmcxGPdqRAHExkvWVYjjUSqXs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,g8Oz8iO8J2WBU2uNtzWU5kPlTQU=] */

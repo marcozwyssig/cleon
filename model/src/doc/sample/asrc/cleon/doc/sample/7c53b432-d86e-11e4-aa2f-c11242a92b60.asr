@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="7c53b432-d86e-11e4-aa2f-c11242a92b60">
-  <owns predicate="95721317-3086-11e5-8cdc-d5b441c8c3df">
-    <resource statement-guid="46ef1fc2-3088-11e5-8cdc-d5b441c8c3df" guid="46eef8af-3088-11e5-8cdc-d5b441c8c3df" />
+  <owns predicate="0c6f72c9-d86e-11e4-aa2f-c11242a92b60">
+    <resource statement-guid="12751a48-31f9-11e5-bd99-eda9ce254b0b" guid="46eef8af-3088-11e5-8cdc-d5b441c8c3df" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7c540254-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="3e870b86-d86d-11e4-aa2f-c11242a92b60" />
@@ -9,13 +9,8 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7c545075-d86e-11e4-aa2f-c11242a92b60" type="literal">arc42</object>
   </predicate>
-  <predicate guid="fd0b0ada-28bc-11e5-bdaf-69a48f49df43">
-    <object statement-guid="6e0f2576-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="6f09b217-3088-11e5-8cdc-d5b441c8c3df" />
-    <object statement-guid="ae164a3a-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="af0d064b-3088-11e5-8cdc-d5b441c8c3df" />
-    <object statement-guid="b684a5e6-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="b8278077-3088-11e5-8cdc-d5b441c8c3df" />
-  </predicate>
-  <predicate guid="95721317-3086-11e5-8cdc-d5b441c8c3df">
-    <object statement-guid="46ef1fc2-3088-11e5-8cdc-d5b441c8c3df">
+  <predicate guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60">
+    <object statement-guid="12751a48-31f9-11e5-bd99-eda9ce254b0b">
       <resource guid="46eef8af-3088-11e5-8cdc-d5b441c8c3df">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="46eef8b1-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="3ec11f20-3087-11e5-8cdc-d5b441c8c3df" />
@@ -28,6 +23,11 @@ For documentation of your own system you use better the _plain_ version.
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="fd0b0ada-28bc-11e5-bdaf-69a48f49df43">
+    <object statement-guid="6e0f2576-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="6f09b217-3088-11e5-8cdc-d5b441c8c3df" />
+    <object statement-guid="ae164a3a-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="af0d064b-3088-11e5-8cdc-d5b441c8c3df" />
+    <object statement-guid="b684a5e6-3088-11e5-8cdc-d5b441c8c3df" type="resource" guid="b8278077-3088-11e5-8cdc-d5b441c8c3df" />
   </predicate>
 </resource>
 

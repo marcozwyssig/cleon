@@ -13,7 +13,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * This is the most important view, that must be part of each architecture
  * documentation. In building construction this would be the floor plan.
  */
-public interface IBuildingBlockView extends ch.actifsource.core.javamodel.IResource {
+public interface I__V_5_aE_BuildingBlockView extends cleon.arc42.spec.javamodel.IArc42_SubDocument {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("37b55799-ffcc-11e4-ac0a-959b440f987f");
   
@@ -23,4 +23,4 @@ public interface IBuildingBlockView extends ch.actifsource.core.javamodel.IResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,C+auszrQY358oARLVhbV5Ly18H8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,I98VKBopMz4Pk4/q0AHzzLBs+QE=] */

@@ -17,8 +17,8 @@ public class _05_buildingblockviewPackage {
   public static final Resource Inheritance = new Resource("d715af8c-ffba-11e4-ac0a-959b440f987f");
   public static final Resource InheritableBuildingBlock_inherits = new Resource("82591187-ffbb-11e4-ac0a-959b440f987f");
   public static final Resource Inheritance_from = new Resource("a62c360d-ffbb-11e4-ac0a-959b440f987f");
-  public static final Resource BuildingBlockView = new Resource("37b55799-ffcc-11e4-ac0a-959b440f987f");
-  public static final Resource BuildingBlockView_buildingBlocks = new Resource("5891f8a5-ffcc-11e4-ac0a-959b440f987f");
+  public static final Resource __V_5_aE_BuildingBlockView = new Resource("37b55799-ffcc-11e4-ac0a-959b440f987f");
+  public static final Resource __V_5_aE_BuildingBlockView_buildingBlocks = new Resource("5891f8a5-ffcc-11e4-ac0a-959b440f987f");
   public static final Resource BuildingBlock_responsibility = new Resource("3f689f06-1005-11e5-865e-55f33dbc76dc");
   public static final Resource DecompositionBuildingBlock = new Resource("b62f1413-174c-11e5-9ca7-d1bb57b73459");
   public static final Resource Decomposite = new Resource("f9f84a2f-174c-11e5-9ca7-d1bb57b73459");
@@ -44,4 +44,4 @@ public class _05_buildingblockviewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,dor7O5qYgug0XjjhRwTaYTotUl0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,Z1gwfk/InSmKst71N5E5Nzj0J6Q=] */

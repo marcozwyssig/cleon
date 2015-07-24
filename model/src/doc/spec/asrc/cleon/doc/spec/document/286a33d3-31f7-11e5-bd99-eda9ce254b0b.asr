@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="286a33d3-31f7-11e5-bd99-eda9ce254b0b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="286a33de-31f7-11e5-bd99-eda9ce254b0b" guid="286a33d4-31f7-11e5-bd99-eda9ce254b0b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286a33d5-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286a33d7-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="fd0b0ad8-28bc-11e5-bdaf-69a48f49df43" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286a33de-31f7-11e5-bd99-eda9ce254b0b">
+      <resource guid="286a33d4-31f7-11e5-bd99-eda9ce254b0b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="286a33d8-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="286a33db-31f7-11e5-bd99-eda9ce254b0b" type="literal">noParagraphs</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="286a33d9-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="32525058-f554-11e3-a003-43f59716ad55" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="286a33da-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="286a33dd-31f7-11e5-bd99-eda9ce254b0b" type="resource" guid="4c12c1e8-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="738f26e3-31f8-11e5-bd99-eda9ce254b0b" type="resource" guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286a33d6-31f7-11e5-bd99-eda9ce254b0b" type="literal">NoParagraphDocument</object>
+  </predicate>
+</resource>
+

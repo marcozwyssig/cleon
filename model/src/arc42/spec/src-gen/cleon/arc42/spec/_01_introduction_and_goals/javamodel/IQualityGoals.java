@@ -25,10 +25,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * *NEVER* start developing an architecture if these goals have not been put into
  * writing and have not been signed by the major stakeholders.
  */
-public interface IQualityGoals extends ch.actifsource.core.javamodel.INamedResource {
+public interface IQualityGoals extends cleon.arc42.spec.javamodel.IArc42_Section {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f73da048-11fc-11e5-848b-017a3a98ae34");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f73da048-11fc-11e5-848b-017a3a98ae34,1wBENRD4cq1tL3+PdpUourM/tXQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f73da048-11fc-11e5-848b-017a3a98ae34,wijj/jzN9HlviD5wM8+MNwB7BZI=] */

@@ -31,12 +31,22 @@ public class Project extends DynamicResource implements IProject {
   // relations
   
   @Override
-  public cleon.sdp.spec.project.javamodel.IPlanning selectPlanning() {
-    return _getSingle(cleon.sdp.spec.project.javamodel.IPlanning.class, cleon.sdp.spec.project.ProjectPackage.Project_planning);
+  public cleon.sdp.spec.project.backlog.javamodel.IBacklog selectProductPlanning() {
+    return _getSingle(cleon.sdp.spec.project.backlog.javamodel.IBacklog.class, cleon.sdp.spec.project.ProjectPackage.Project_productPlanning);
   }
 
-  public Project setPlanning(cleon.sdp.spec.project.javamodel.IPlanning planning) {
-    _setSingle(cleon.sdp.spec.project.ProjectPackage.Project_planning, planning);
+  public Project setProductPlanning(cleon.sdp.spec.project.backlog.javamodel.IBacklog productPlanning) {
+    _setSingle(cleon.sdp.spec.project.ProjectPackage.Project_productPlanning, productPlanning);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.sdp.spec.project.release.javamodel.IRelease> selectReleasePlanning() {
+    return _getList(cleon.sdp.spec.project.release.javamodel.IRelease.class, cleon.sdp.spec.project.ProjectPackage.Project_releasePlanning);
+  }
+
+  public Project setReleasePlanning(java.util.List<? extends cleon.sdp.spec.project.release.javamodel.IRelease> releasePlanning) {
+    _setList(cleon.sdp.spec.project.ProjectPackage.Project_releasePlanning, releasePlanning);
     return this;
   }
     
@@ -64,20 +74,25 @@ public class Project extends DynamicResource implements IProject {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.sdp.spec.project.javamodel.IPlanning.class, cleon.sdp.spec.project.ProjectPackage.Project_planning, visitor);
+    _acceptSingle(cleon.sdp.spec.project.backlog.javamodel.IBacklog.class, cleon.sdp.spec.project.ProjectPackage.Project_productPlanning, visitor);
+    _acceptList(cleon.sdp.spec.project.release.javamodel.IRelease.class, cleon.sdp.spec.project.ProjectPackage.Project_releasePlanning, visitor);
     _acceptSingle(cleon.sdp.spec.project.javamodel.IResources.class, cleon.sdp.spec.project.ProjectPackage.Project_resources, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.sdp.spec.project.javamodel.IProject selectToMePlanning(cleon.sdp.spec.project.javamodel.IPlanning object) {
-    return _getToMeSingle(object.getRepository(), cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.project.ProjectPackage.Project_planning, object.getResource());
+  public static cleon.sdp.spec.project.javamodel.IProject selectToMeProductPlanning(cleon.sdp.spec.project.backlog.javamodel.IBacklog object) {
+    return _getToMeSingle(object.getRepository(), cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.project.ProjectPackage.Project_productPlanning, object.getResource());
   }
   
   public static cleon.sdp.spec.project.javamodel.IProject selectToMeResources(cleon.sdp.spec.project.javamodel.IResources object) {
     return _getToMeSingle(object.getRepository(), cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.project.ProjectPackage.Project_resources, object.getResource());
   }
   
+  public static java.util.List<cleon.sdp.spec.project.javamodel.IProject> selectToMeReleasePlanning(cleon.sdp.spec.project.release.javamodel.IRelease object) {
+    return _getToMeList(object.getRepository(), cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.project.ProjectPackage.Project_releasePlanning, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be3d7626-ff9b-11e4-ac0a-959b440f987f,uJhabKTBUkWuxM1IOeIbnGAKnxA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be3d7626-ff9b-11e4-ac0a-959b440f987f,LlNx+LLZRAFZf0zSXgAwycYhqX8=] */

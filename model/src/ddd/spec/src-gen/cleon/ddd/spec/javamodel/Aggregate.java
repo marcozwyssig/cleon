@@ -151,16 +151,6 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> selectDocuments() {
-    return _getList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents);
-  }
-
-  public Aggregate setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> documents) {
-    _setList(cleon.doc.spec.document.DocumentPackage.Document_documents, documents);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -200,16 +190,6 @@ public class Aggregate extends DynamicResource implements IAggregate {
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
-  }
-
-  public Aggregate setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
-    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -227,12 +207,10 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptList(cleon.ddd.spec.exceptions.javamodel.IExceptionDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeExceptions, visitor);
     _acceptList(cleon.ddd.spec.repository.javamodel.IRepositoryDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeRepository, visitor);
     _acceptList(cleon.ddd.spec.valueobjects.javamodel.IValueObjectDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeValueObjects, visitor);
-    _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_subPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
@@ -266,4 +244,4 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,ocoePIU8dUUIg6IpKJz652K9zJw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,OF5zSpLdoXB3nl5tINLlwNpabOc=] */

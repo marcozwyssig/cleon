@@ -6,13 +6,19 @@ public class StatemachinePackage {
   
   public static final Resource StateMachine = new Resource("6b3731f0-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource Event = new Resource("7d62879f-b07c-11e4-bca8-71d5b3e72cd6");
-  public static final Resource State = new Resource("7f13ba82-b07c-11e4-bca8-71d5b3e72cd6");
+  public static final Resource SingleState = new Resource("7f13ba82-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource Transition = new Resource("813e6228-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource StateMachine_events = new Resource("90289795-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource StateMachine_states = new Resource("b445e481-b07c-11e4-bca8-71d5b3e72cd6");
-  public static final Resource State_transition = new Resource("bee46609-b07c-11e4-bca8-71d5b3e72cd6");
+  public static final Resource SingleState_transition = new Resource("bee46609-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource Transition_targetState = new Resource("e1424fb2-b07c-11e4-bca8-71d5b3e72cd6");
   public static final Resource Transition_event = new Resource("16530f02-b07d-11e4-bca8-71d5b3e72cd6");
+  public static final Resource StateMachine_subStateMachine = new Resource("f3b63c5c-345c-11e5-909a-4bcced25d7ee");
+  public static final Resource FunctionSpace_StateMachine = new Resource("8bf0dfe6-345d-11e5-909a-4bcced25d7ee");
+  public static final Resource Event_condition = new Resource("dacdf6f7-3474-11e5-909a-4bcced25d7ee");
+  public static final Resource Condition = new Resource("e529a31f-3474-11e5-909a-4bcced25d7ee");
+  public static final Resource State = new Resource("9294aba1-352f-11e5-909a-4bcced25d7ee");
+  public static final Resource StateMachine_start = new Resource("fe5a3963-3536-11e5-909a-4bcced25d7ee");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +39,4 @@ public class StatemachinePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.behavioral.statemachine,cnAX9xA0OwELXe4YqCODBG6DLCo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.behavioral.statemachine,2XGY/oJ7hp6OvmLrlRMea3mrfeg=] */

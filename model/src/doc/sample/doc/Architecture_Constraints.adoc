@@ -1,13 +1,15 @@
+:toc-title: Table of Contents
+:toc:
+:numbered:
 [[section-Architecture_Constraints]]
 == Architecture Constraints
-// Begin Protected Region [[startingCustomAsciiDoctor]]
+// Begin Protected Region [[starting]]
 
-// End Protected Region   [[startingCustomAsciiDoctor]]
+// End Protected Region   [[starting]]
 
+// Begin Protected Region [[ending]]
 
-// Begin Protected Region [[endingCustomAsciiDoctor]]
-
-// End Protected Region   [[endingCustomAsciiDoctor]]
+// End Protected Region   [[ending]]
 // Begin Protected Region [[]]
 
 [role="arc42help"]
@@ -27,7 +29,7 @@ see subsections
 
 .Background information
 In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.
-The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.
+The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term ï¿½global analysisï¿½.
 ****
 
 === Technical Constraints
@@ -35,7 +37,7 @@ The influence of constraints is described by [Hofmeister et al] (Software Archit
 [role="arc42help"]
 ****
 .Contents
-List all technical constraints in this section. This category covers hard- and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, …).
+List all technical constraints in this section. This category covers hard- and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, ï¿½).
 ****
 
 
@@ -110,4 +112,4 @@ Either insert the conventions directly in this document or refer to other docume
 ****
 
 // End Protected Region   [[]]
-// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,af0d064b-3088-11e5-8cdc-d5b441c8c3df,Jh2cB7dEqNzrBSTxHg8+FyGFEfQ=]
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,af0d064b-3088-11e5-8cdc-d5b441c8c3df,fr38pFZg0unbdzOPwmEKKcIFkFg=]

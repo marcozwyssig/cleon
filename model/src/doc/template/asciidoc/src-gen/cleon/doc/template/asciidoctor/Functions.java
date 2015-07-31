@@ -76,6 +76,15 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("6a76a89d-307b-11e5-8cdc-d5b441c8c3df")
     public List<cleon.doc.spec.javamodel.IDocumentElement> SelectSubElements();
 
+    @IDynamicResourceExtension.MethodId("8a722bc2-3528-11e5-909a-4bcced25d7ee")
+    public java.lang.String RenderDocument();
+
+    @IDynamicResourceExtension.MethodId("6b95352e-3529-11e5-909a-4bcced25d7ee")
+    public java.lang.String RenderStart();
+
+    @IDynamicResourceExtension.MethodId("6f22a291-3529-11e5-909a-4bcced25d7ee")
+    public java.lang.String RenderEnd();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -223,6 +232,12 @@ public class Functions {
     public java.lang.String GetIndent(final cleon.doc.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       /* Begin Protected Region [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     	cleon.doc.spec.javamodel.IDocumentElement parent = null;
+    	
+    	if( documentElementComposite instanceof cleon.doc.spec.chapter.javamodel.NoChapters)
+    	{
+    		return "";
+    	}
+    	
     	if( documentElementComposite instanceof cleon.doc.spec.javamodel.IUseDocumentElementComposite )
     	{
     		parent = cleon.doc.spec.javamodel.UseDocumentElementComposite.selectToMeUseDocumentElements((cleon.doc.spec.javamodel.IUseDocumentElementComposite)documentElementComposite);	
@@ -340,4 +355,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,FGSQnYl6o31+IwzrVr/KJOmbV9A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,wOMDE+gYECGwAVOLWkQNg6NBtYk=] */

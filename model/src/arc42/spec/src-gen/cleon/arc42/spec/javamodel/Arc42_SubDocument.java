@@ -52,21 +52,11 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
     
   @Override
   public cleon.doc.spec.document.javamodel.IDocument selectNoDocuments() {
-    return _getSingle(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.NoDocumentsDocument_noDocuments);
+    return _getSingle(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments);
   }
 
   public Arc42_SubDocument setNoDocuments(cleon.doc.spec.document.javamodel.IDocument noDocuments) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoDocumentsDocument_noDocuments, noDocuments);
-    return this;
-  }
-    
-  @Override
-  public cleon.doc.spec.chapter.paragraph.javamodel.IParagraph selectNoParagraphs() {
-    return _getSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs);
-  }
-
-  public Arc42_SubDocument setNoParagraphs(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph noParagraphs) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs, noParagraphs);
+    _setSingle(cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, noDocuments);
     return this;
   }
     
@@ -126,8 +116,7 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
-    _acceptSingle(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.NoDocumentsDocument_noDocuments, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs, visitor);
+    _acceptSingle(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptList(cleon.arc42.spec.javamodel.IArc42_Section.class, cleon.arc42.spec.SpecPackage.arc42_aE_SubDocument_sections, visitor);
@@ -142,4 +131,4 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,717dfe0f-31fc-11e5-bd99-eda9ce254b0b,XjDR3+VphcDz3Mdl5JXKWscKPgw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,717dfe0f-31fc-11e5-bd99-eda9ce254b0b,eEfJ60uOHYLpg4EYfvYhdoE0YzI=] */

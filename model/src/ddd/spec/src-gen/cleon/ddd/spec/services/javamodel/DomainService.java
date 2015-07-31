@@ -90,16 +90,6 @@ public class DomainService extends DynamicResource implements IDomainService {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> selectDocuments() {
-    return _getList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents);
-  }
-
-  public DomainService setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> documents) {
-    _setList(cleon.doc.spec.document.DocumentPackage.Document_documents, documents);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends javamodel.IEvent> selectEvents() {
     return _getList(javamodel.IEvent.class, new ch.actifsource.core.Resource("3de09653-a3ba-11e3-8095-f11af53ab806"));
   }
@@ -149,16 +139,6 @@ public class DomainService extends DynamicResource implements IDomainService {
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
-  }
-
-  public DomainService setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
-    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -170,14 +150,12 @@ public class DomainService extends DynamicResource implements IDomainService {
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.uml.spec.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.uml.spec.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(javamodel.IEvent.class, new ch.actifsource.core.Resource("3de09653-a3ba-11e3-8095-f11af53ab806"), visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,7M9xW6jrrH/gUo0gN1xghVU8EvI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,5ZRyKmnZgwI8i73issm/dhYOAg4=] */

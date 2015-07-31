@@ -126,6 +126,10 @@ public class Specification extends DynamicResource implements ISpecification {
 
   // toMeRelations
   
+  public static cleon.zoo.spec.javamodel.ISpecification selectToMeModel(cleon.zoo.spec.javamodel.IModel object) {
+    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_model, object.getResource());
+  }
+  
   public static cleon.zoo.spec.javamodel.ISpecification selectToMeTemplates(cleon.zoo.spec.javamodel.ITemplate object) {
     return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_templates, object.getResource());
   }
@@ -134,9 +138,5 @@ public class Specification extends DynamicResource implements ISpecification {
     return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_sample, object.getResource());
   }
   
-  public static cleon.zoo.spec.javamodel.ISpecification selectToMeModel(cleon.zoo.spec.javamodel.IModel object) {
-    return _getToMeSingle(object.getRepository(), cleon.zoo.spec.javamodel.ISpecification.class, cleon.zoo.spec.SpecPackage.Specification_model, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,6qdQc1R9lvzjuy8HyeB1S0hWsv4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,Rae1eOJozfuRY8RfvhsMyjtaYdI=] */

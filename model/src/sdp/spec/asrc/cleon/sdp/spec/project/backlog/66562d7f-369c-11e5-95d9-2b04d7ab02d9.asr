@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="66562d7f-369c-11e5-95d9-2b04d7ab02d9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="7078c841-369c-11e5-95d9-2b04d7ab02d9" guid="7078c83d-369c-11e5-95d9-2b04d7ab02d9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="66562d81-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6a36c31a-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="409913e6-369c-11e5-95d9-2b04d7ab02d9" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7078c841-369c-11e5-95d9-2b04d7ab02d9">
+      <resource guid="7078c83d-369c-11e5-95d9-2b04d7ab02d9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7078c83f-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7078c840-369c-11e5-95d9-2b04d7ab02d9" type="literal">subfeatureGroup</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7078c842-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7078c843-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="39c681ba-3775-11e5-95d9-2b04d7ab02d9" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
+          <object statement-guid="feb5fb52-369e-11e5-95d9-2b04d7ab02d9" type="literal">featuregroup</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="7078c844-369c-11e5-95d9-2b04d7ab02d9" type="resource" guid="409913e6-369c-11e5-95d9-2b04d7ab02d9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="66562d82-369c-11e5-95d9-2b04d7ab02d9" type="literal">FeatureGroupComposite</object>
+  </predicate>
+</resource>
+

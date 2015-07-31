@@ -31,6 +31,15 @@ public class StateMachine extends DynamicResource implements IStateMachine {
   // attributes
   
   @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -57,26 +66,6 @@ public class StateMachine extends DynamicResource implements IStateMachine {
 
   public StateMachine setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose);
-  }
-
-  public StateMachine setDecompose(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> decompose) {
-    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, decompose);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition> selectDecomposeClasses() {
-    return _getList(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses);
-  }
-
-  public StateMachine setDecomposeClasses(java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition> decomposeClasses) {
-    _setList(cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, decomposeClasses);
     return this;
   }
     
@@ -121,22 +110,32 @@ public class StateMachine extends DynamicResource implements IStateMachine {
   }
     
   @Override
-  public java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IState> selectStates() {
-    return _getList(cleon.uml.spec.behavioral.statemachine.javamodel.IState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states);
+  public cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState selectStart() {
+    return _getSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_start);
   }
 
-  public StateMachine setStates(java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IState> states) {
+  public StateMachine setStart(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState start) {
+    _setSingle(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_start, start);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState> selectStates() {
+    return _getList(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states);
+  }
+
+  public StateMachine setStates(java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState> states) {
     _setList(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states, states);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition> selectSubPackages() {
-    return _getList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_subPackages);
+  public java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine> selectSubStateMachine() {
+    return _getList(cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_subStateMachine);
   }
 
-  public StateMachine setSubPackages(java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition> subPackages) {
-    _setList(cleon.uml.spec.structural.packages.PackagesPackage.Package_subPackages, subPackages);
+  public StateMachine setSubStateMachine(java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine> subStateMachine) {
+    _setList(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_subStateMachine, subStateMachine);
     return this;
   }
     
@@ -164,31 +163,39 @@ public class StateMachine extends DynamicResource implements IStateMachine {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(cleon.uml.spec.behavioral.statemachine.javamodel.IEvent.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_events, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
-    _acceptList(cleon.uml.spec.behavioral.statemachine.javamodel.IState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states, visitor);
-    _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_subPackages, visitor);
+    _acceptSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_start, visitor);
+    _acceptList(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states, visitor);
+    _acceptList(cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_subStateMachine, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
   
+  public static cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine selectToMeStates(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states, object.getResource());
+  }
+  
   public static cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine selectToMeEvents(cleon.uml.spec.behavioral.statemachine.javamodel.IEvent object) {
     return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_events, object.getResource());
   }
   
-  public static cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine selectToMeStates(cleon.uml.spec.behavioral.statemachine.javamodel.IState object) {
-    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_states, object.getResource());
+  public static cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine selectToMeSubStateMachine(cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_subStateMachine, object.getResource());
+  }
+  
+  public static cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine selectToMeStart(cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IStateMachine.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.StateMachine_start, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,C2ErOxxn79GHhy9Lz8MYVzRTX74=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,bgetmvYBYsUvg+pDVLsx5Az8/Do=] */

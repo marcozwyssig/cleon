@@ -73,21 +73,11 @@ public class Arc42 extends DynamicResource implements IArc42 {
     
   @Override
   public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
-    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.NoChapterDocument_noChapters);
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.NoChaptersInDocument_noChapters);
   }
 
   public Arc42 setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoChapterDocument_noChapters, noChapters);
-    return this;
-  }
-    
-  @Override
-  public cleon.doc.spec.chapter.paragraph.javamodel.IParagraph selectNoParagraphs() {
-    return _getSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs);
-  }
-
-  public Arc42 setNoParagraphs(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph noParagraphs) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs, noParagraphs);
+    _setSingle(cleon.doc.spec.document.DocumentPackage.NoChaptersInDocument_noChapters, noChapters);
     return this;
   }
     
@@ -140,8 +130,7 @@ public class Arc42 extends DynamicResource implements IArc42 {
     _acceptList(cleon.arc42.spec.javamodel.IArc42_SubDocument.class, cleon.arc42.spec.SpecPackage.arc42_arc42_aE_subDocuments, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.NoChapterDocument_noChapters, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.document.DocumentPackage.NoParagraphDocument_noParagraphs, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.document.DocumentPackage.NoChaptersInDocument_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -155,4 +144,4 @@ public class Arc42 extends DynamicResource implements IArc42 {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,SqgAATQNiehmxsVOgdOasqN0wWo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,xmGtz6zvH1mOCAqKbNjwZq0RXzI=] */

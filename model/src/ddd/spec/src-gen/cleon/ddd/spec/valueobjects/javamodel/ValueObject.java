@@ -80,16 +80,6 @@ public class ValueObject extends DynamicResource implements IValueObject {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> selectDocuments() {
-    return _getList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents);
-  }
-
-  public ValueObject setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.IDocument> documents) {
-    _setList(cleon.doc.spec.document.DocumentPackage.Document_documents, documents);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.uml.spec.structural.classes.fields.javamodel.IField> selectFields() {
     return _getList(cleon.uml.spec.structural.classes.fields.javamodel.IField.class, cleon.uml.spec.structural.classes.ClassesPackage.FieldClass_fields);
   }
@@ -129,16 +119,6 @@ public class ValueObject extends DynamicResource implements IValueObject {
     return this;
   }
     
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
-  }
-
-  public ValueObject setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
-    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -149,13 +129,11 @@ public class ValueObject extends DynamicResource implements IValueObject {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
     _acceptList(cleon.uml.spec.structural.classes.fields.javamodel.IField.class, cleon.uml.spec.structural.classes.ClassesPackage.FieldClass_fields, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,qLikPdExstjvGmefvEgGEAUoYqU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,65Tl8SI63hxjZbwadEe2E2QqqcU=] */

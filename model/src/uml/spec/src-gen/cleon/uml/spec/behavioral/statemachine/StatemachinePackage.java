@@ -15,10 +15,13 @@ public class StatemachinePackage {
   public static final Resource Transition_event = new Resource("16530f02-b07d-11e4-bca8-71d5b3e72cd6");
   public static final Resource StateMachine_subStateMachine = new Resource("f3b63c5c-345c-11e5-909a-4bcced25d7ee");
   public static final Resource FunctionSpace_StateMachine = new Resource("8bf0dfe6-345d-11e5-909a-4bcced25d7ee");
-  public static final Resource Event_condition = new Resource("dacdf6f7-3474-11e5-909a-4bcced25d7ee");
+  public static final Resource Transition_condition = new Resource("dacdf6f7-3474-11e5-909a-4bcced25d7ee");
   public static final Resource Condition = new Resource("e529a31f-3474-11e5-909a-4bcced25d7ee");
   public static final Resource State = new Resource("9294aba1-352f-11e5-909a-4bcced25d7ee");
   public static final Resource StateMachine_start = new Resource("fe5a3963-3536-11e5-909a-4bcced25d7ee");
+  public static final Resource StateInheritance = new Resource("2286a3f1-39ae-11e5-ae84-4f300f079f41");
+  public static final Resource StateInheritance_from = new Resource("35f35483-39ae-11e5-ae84-4f300f079f41");
+  public static final Resource SingleState_inherits = new Resource("466b0677-39ae-11e5-ae84-4f300f079f41");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +42,4 @@ public class StatemachinePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.behavioral.statemachine,2XGY/oJ7hp6OvmLrlRMea3mrfeg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.behavioral.statemachine,NLPwCNnqb+4lewZgEilbJdp115Y=] */

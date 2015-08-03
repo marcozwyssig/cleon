@@ -61,16 +61,6 @@ public class Event extends DynamicResource implements IEvent {
   }
     
   @Override
-  public cleon.uml.spec.behavioral.statemachine.javamodel.ICondition selectCondition() {
-    return _getSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Event_condition);
-  }
-
-  public Event setCondition(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition condition) {
-    _setSingle(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Event_condition, condition);
-    return this;
-  }
-    
-  @Override
   public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
     return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
@@ -128,7 +118,6 @@ public class Event extends DynamicResource implements IEvent {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Event_condition, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.NoParagraph_noParagraph, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -136,11 +125,5 @@ public class Event extends DynamicResource implements IEvent {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.uml.spec.behavioral.statemachine.javamodel.IEvent selectToMeCondition(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition object) {
-    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.IEvent.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Event_condition, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,DggOzwTrw3pB2EQ2nwbNNbb95Ko=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,j6+bZj/inxCAbHAQqk0wNK9W3D0=] */

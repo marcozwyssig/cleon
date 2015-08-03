@@ -40,6 +40,15 @@ public class SingleState extends DynamicResource implements ISingleState {
   }
 
   @Override
+  public java.lang.Boolean selectIsAbstract() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract);
+  }
+    
+  public void setIsAbstract(java.lang.Boolean isAbstract) {
+     _setSingleAttribute(cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, isAbstract);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -66,6 +75,16 @@ public class SingleState extends DynamicResource implements ISingleState {
 
   public SingleState setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IStateInheritance> selectInherits() {
+    return _getList(cleon.uml.spec.behavioral.statemachine.javamodel.IStateInheritance.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_inherits);
+  }
+
+  public SingleState setInherits(java.util.List<? extends cleon.uml.spec.behavioral.statemachine.javamodel.IStateInheritance> inherits) {
+    _setList(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_inherits, inherits);
     return this;
   }
     
@@ -114,10 +133,12 @@ public class SingleState extends DynamicResource implements ISingleState {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.uml.spec.behavioral.statemachine.javamodel.IStateInheritance.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_inherits, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptMap(cleon.uml.spec.behavioral.statemachine.javamodel.ITransition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_transition, visitor);
@@ -130,5 +151,9 @@ public class SingleState extends DynamicResource implements ISingleState {
     return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_transition, object.getResource());
   }
   
+  public static cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState selectToMeInherits(cleon.uml.spec.behavioral.statemachine.javamodel.IStateInheritance object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.ISingleState.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.SingleState_inherits, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,hBycht7JeHjXkrSn67GCJzKqsdo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,Bx1G5Cfspl0B/sI/NdRpDwZJpCk=] */

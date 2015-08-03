@@ -52,6 +52,16 @@ public class Transition extends DynamicResource implements ITransition {
   }
     
   @Override
+  public cleon.uml.spec.behavioral.statemachine.javamodel.ICondition selectCondition() {
+    return _getSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_condition);
+  }
+
+  public Transition setCondition(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition condition) {
+    _setSingle(cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_condition, condition);
+    return this;
+  }
+    
+  @Override
   public cleon.uml.spec.behavioral.statemachine.javamodel.IEvent selectEvent() {
     return _getSingle(cleon.uml.spec.behavioral.statemachine.javamodel.IEvent.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_event);
   }
@@ -128,6 +138,7 @@ public class Transition extends DynamicResource implements ITransition {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_condition, visitor);
     _acceptSingle(cleon.uml.spec.behavioral.statemachine.javamodel.IEvent.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_event, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -147,5 +158,9 @@ public class Transition extends DynamicResource implements ITransition {
     return _getToMeList(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.ITransition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_event, object.getResource());
   }
   
+  public static cleon.uml.spec.behavioral.statemachine.javamodel.ITransition selectToMeCondition(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.behavioral.statemachine.javamodel.ITransition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_condition, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,t5dI5F+pIR/fYwgGYMm05dTygKw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,eJtK0Z2SyqiDTJGJkrMGgjkcdZE=] */

@@ -143,6 +143,51 @@ public class FunctionSpace {
 
   }
 
+  public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cfe377c2-39ab-11e5-ae84-4f300f079f41")
+    public java.lang.String sanitizeFileName();
+
+  }
+  
+  public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("cfe377c2-39ab-11e5-ae84-4f300f079f41")
+    public java.lang.String sanitizeFileName(final java.lang.String stringLiteral);
+
+  }
+  
+  public static class StringLiteralFunctionsImpl implements IStringLiteralFunctionsImpl {
+
+    public static final IStringLiteralFunctionsImpl INSTANCE = new StringLiteralFunctionsImpl();
+
+    private StringLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String sanitizeFileName(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
+    	return stringLiteral
+    			.chars()
+    			.mapToObj(i -> (char) i)
+    			.map(c -> Character.isWhitespace(c) ? '_' : c)
+    			.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_')
+    			.map(String::valueOf)
+    			.collect(java.util.stream.Collectors.joining());
+      /* End Protected Region   [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
+    }
+
+  }
+  
+  public static class StringLiteralFunctions {
+
+    private StringLiteralFunctions() {}
+
+    public static java.lang.String sanitizeFileName(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).sanitizeFileName(stringLiteral);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d17ca089-375d-11e5-95d9-2b04d7ab02d9,hbw1m+1IiwrvuDYkm+Mf5uJMSLQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d17ca089-375d-11e5-95d9-2b04d7ab02d9,TqjILQcKVeuV7nlDuop96h15xkQ=] */

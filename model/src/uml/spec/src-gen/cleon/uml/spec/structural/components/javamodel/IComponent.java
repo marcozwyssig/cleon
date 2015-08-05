@@ -2,16 +2,14 @@ package cleon.uml.spec.structural.components.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IComponent extends cleon.uml.spec.structural.components.javamodel.IAbstractComponent {
+public interface IComponent extends cleon.uml.spec.structural.components.javamodel.IComponentWithPackage {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2adc4d98-85c1-11e3-be33-79789cf5eae3");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a3e0c163-3b7b-11e5-bcdd-1b181eee11b0");
   
   // relations
   
-  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentDependency> selectHasDependency();
-  
-  public java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition> selectDecomposePackages();
+  public cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition selectNoPackages();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2adc4d98-85c1-11e3-be33-79789cf5eae3,ZT+6qviRl8rd+PvctGNU9rN5SK0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3e0c163-3b7b-11e5-bcdd-1b181eee11b0,Q3kp3VHQs7JxVHeLHz52RPzbv3A=] */

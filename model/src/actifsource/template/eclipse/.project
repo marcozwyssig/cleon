@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.actifsource.template.eclipse</name>
+	<comment/>
+	<projects>
+		<project>cleon.actifsource.spec</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,7a7f0df6-3b69-11e5-86bc-73aedc28563d,e6qrcE0rJcWlyK7b4YBBtv4SaSU=] -->

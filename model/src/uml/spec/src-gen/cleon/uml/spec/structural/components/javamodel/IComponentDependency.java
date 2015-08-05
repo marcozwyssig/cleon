@@ -8,8 +8,8 @@ public interface IComponentDependency extends cleon.arc42.spec._05_buildingblock
   
   // relations
   
-  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponent> selectTo();
+  public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentWithPackage> selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,d3fPEUp1vEv0CqwYzBQBeBW15IY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,iXdAWqNCyy+VX12HpSbb6b2oSDo=] */

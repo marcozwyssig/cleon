@@ -2,7 +2,7 @@
 <resource format="5.6.0" guid="2adc4d98-85c1-11e3-be33-79789cf5eae3">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="66c90dd7-ffc5-11e4-ac0a-959b440f987f" guid="66c7af38-ffc5-11e4-ac0a-959b440f987f" />
-    <resource statement-guid="78a1f92a-1758-11e5-9ca7-d1bb57b73459" guid="66c7af37-ffc5-11e4-ac0a-959b440f987f" />
+    <resource statement-guid="d22cb67b-3b7b-11e5-bcdd-1b181eee11b0" guid="66c7af37-ffc5-11e4-ac0a-959b440f987f" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2adc4d9a-85c1-11e3-be33-79789cf5eae3" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -33,7 +33,7 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="78a1f92a-1758-11e5-9ca7-d1bb57b73459">
+    <object statement-guid="d22cb67b-3b7b-11e5-bcdd-1b181eee11b0">
       <resource guid="66c7af37-ffc5-11e4-ac0a-959b440f987f">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="66c7af3f-ffc5-11e4-ac0a-959b440f987f" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
@@ -51,13 +51,13 @@
           <object statement-guid="fce1bec4-1755-11e5-9ca7-d1bb57b73459" type="resource" guid="392c77b6-1756-11e5-9ca7-d1bb57b73459" />
         </predicate>
         <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
-          <object statement-guid="ffc46c69-1755-11e5-9ca7-d1bb57b73459" type="resource" guid="08ab1b23-174d-11e5-9ca7-d1bb57b73459" />
+          <object statement-guid="d40658f1-3b7b-11e5-bcdd-1b181eee11b0" type="resource" guid="08ab1b23-174d-11e5-9ca7-d1bb57b73459" />
         </predicate>
       </resource>
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="2adc4d9b-85c1-11e3-be33-79789cf5eae3" type="literal">Component</object>
+    <object statement-guid="2adc4d9b-85c1-11e3-be33-79789cf5eae3" type="literal">ComponentWithPackage</object>
   </predicate>
 </resource>
 

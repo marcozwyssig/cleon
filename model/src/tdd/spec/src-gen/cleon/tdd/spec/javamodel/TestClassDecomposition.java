@@ -42,20 +42,20 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
     
   @Override
   public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class);
+    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
   }
 
   public TestClassDecomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class, class_);
+    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
     return this;
   }
     
   @Override
-  public cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition selectClassUnderTest() {
-    return _getSingle(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest);
+  public cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition selectClassUnderTest() {
+    return _getSingle(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest);
   }
 
-  public TestClassDecomposition setClassUnderTest(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition classUnderTest) {
+  public TestClassDecomposition setClassUnderTest(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition classUnderTest) {
     _setSingle(cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest, classUnderTest);
     return this;
   }
@@ -71,12 +71,12 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectDecompose() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose);
+  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
+    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
   }
 
-  public TestClassDecomposition setDecompose(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock decompose) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, decompose);
+  public TestClassDecomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
+    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
     return this;
   }
     
@@ -125,10 +125,10 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class, visitor);
-    _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest, visitor);
+    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
+    _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest, visitor);
     _acceptSingle(cleon.tdd.spec.javamodel.ITestClass.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classes, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, visitor);
+    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -137,7 +137,7 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
 
   // toMeRelations
   
-  public static java.util.List<cleon.tdd.spec.javamodel.ITestClassDecomposition> selectToMeClassUnderTest(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition object) {
+  public static java.util.List<cleon.tdd.spec.javamodel.ITestClassDecomposition> selectToMeClassUnderTest(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition object) {
     return _getToMeList(object.getRepository(), cleon.tdd.spec.javamodel.ITestClassDecomposition.class, cleon.tdd.spec.SpecPackage.TestClassDecomposition_classUnderTest, object.getResource());
   }
   
@@ -146,4 +146,4 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,/B5PYNrATsPPp1lLhkHck9Msx2I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,uB5vzGhlMi3/A3897wLCv9gwCFo=] */

@@ -2,7 +2,7 @@ package cleon.ddd.spec.entities.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEntityDekomposition extends cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition {
+public interface IEntityDekomposition extends cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("59da4c30-266c-11e5-95dc-8f1cdbd9db54");
   
@@ -12,4 +12,4 @@ public interface IEntityDekomposition extends cleon.uml.spec.structural.packages
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,+T+YSaYldh+7tniuqfVyHUndwKg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,7K+bm7phHTqV3nUcg6OeTA+vJF8=] */

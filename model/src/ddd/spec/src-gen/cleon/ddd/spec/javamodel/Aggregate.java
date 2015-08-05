@@ -71,11 +71,11 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition> selectDecomposeClasses() {
-    return _getList(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses);
+  public java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition> selectDecomposeClasses() {
+    return _getList(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses);
   }
 
-  public Aggregate setDecomposeClasses(java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition> decomposeClasses) {
+  public Aggregate setDecomposeClasses(java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition> decomposeClasses) {
     _setList(cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, decomposeClasses);
     return this;
   }
@@ -199,7 +199,7 @@ public class Aggregate extends DynamicResource implements IAggregate {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.uml.spec.structural.packages.javamodel.IClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
+    _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
     _acceptSingle(cleon.ddd.spec.services.javamodel.IServiceDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeDomainServices, visitor);
     _acceptList(cleon.ddd.spec.entities.javamodel.IEntityDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeEntities, visitor);
     _acceptList(cleon.uml.spec.structural.classes.enums.javamodel.IEnumDekomposition.class, cleon.ddd.spec.SpecPackage.Aggregate_decomposeEnums, visitor);
@@ -244,4 +244,4 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,OF5zSpLdoXB3nl5tINLlwNpabOc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,PKGU7ac3uM5ucFlGuMxMPF/JsgM=] */

@@ -41,22 +41,12 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectDecompose() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose);
+  public cleon.uml.spec.structural.packages.javamodel.IPackage selectInto() {
+    return _getSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_into);
   }
 
-  public TestPackageDecomposition setDecompose(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock decompose) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, decompose);
-    return this;
-  }
-    
-  @Override
-  public cleon.uml.spec.structural.packages.javamodel.IPackage selectDecomposePackage() {
-    return _getSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_decomposePackage);
-  }
-
-  public TestPackageDecomposition setDecomposePackage(cleon.uml.spec.structural.packages.javamodel.IPackage decomposePackage) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_decomposePackage, decomposePackage);
+  public TestPackageDecomposition setInto(cleon.uml.spec.structural.packages.javamodel.IPackage into) {
+    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_into, into);
     return this;
   }
     
@@ -125,8 +115,7 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, visitor);
-    _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_decomposePackage, visitor);
+    _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_into, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackageDecomposition_packageUnderTest, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
@@ -146,4 +135,4 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,klHSG2Jg5ST7IV6Fvx+ws0oq6Kg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,4hJh8wcZ4veVniBkiOEY5mtLrrw=] */

@@ -41,12 +41,12 @@ public class ComponentCompositionDecomposition extends DynamicResource implement
   }
     
   @Override
-  public cleon.uml.spec.structural.components.javamodel.IAbstractComponent selectDecompose() {
-    return _getSingle(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_decompose);
+  public cleon.uml.spec.structural.components.javamodel.IAbstractComponent selectInto() {
+    return _getSingle(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_into);
   }
 
-  public ComponentCompositionDecomposition setDecompose(cleon.uml.spec.structural.components.javamodel.IAbstractComponent decompose) {
-    _setSingle(cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_decompose, decompose);
+  public ComponentCompositionDecomposition setInto(cleon.uml.spec.structural.components.javamodel.IAbstractComponent into) {
+    _setSingle(cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_into, into);
     return this;
   }
     
@@ -85,7 +85,7 @@ public class ComponentCompositionDecomposition extends DynamicResource implement
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_decompose, visitor);
+    _acceptSingle(cleon.uml.spec.structural.components.javamodel.IAbstractComponent.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_into, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -93,9 +93,9 @@ public class ComponentCompositionDecomposition extends DynamicResource implement
 
   // toMeRelations
   
-  public static cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition selectToMeDecompose(cleon.uml.spec.structural.components.javamodel.IAbstractComponent object) {
-    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_decompose, object.getResource());
+  public static cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition selectToMeInto(cleon.uml.spec.structural.components.javamodel.IAbstractComponent object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.components.javamodel.IComponentCompositionDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentCompositionDecomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,096bdd9e-174e-11e5-9ca7-d1bb57b73459,2IQGsMRxkJBfaQAX7z74f5NMUXM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,096bdd9e-174e-11e5-9ca7-d1bb57b73459,mUoc7m86pX62KVeTj2wTJuzH+6U=] */

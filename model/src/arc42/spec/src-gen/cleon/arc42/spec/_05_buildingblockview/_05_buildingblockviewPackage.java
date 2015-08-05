@@ -6,7 +6,7 @@ public class _05_buildingblockviewPackage {
   
   public static final Resource BuildingBlock = new Resource("243b1867-7973-11e4-a6e2-23d949480f96");
   public static final Resource ReferenceOwnDecomposite_ownDecompositions = new Resource("53fa73f7-7973-11e4-a6e2-23d949480f96");
-  public static final Resource UseDecomposite_decompose = new Resource("bad604bb-7a39-11e4-a6e2-23d949480f96");
+  public static final Resource UseDecomposite_into = new Resource("bad604bb-7a39-11e4-a6e2-23d949480f96");
   public static final Resource OwnDecomposite = new Resource("44745a10-7a47-11e4-a6e2-23d949480f96");
   public static final Resource UseDecomposite = new Resource("53d51c49-7ad7-11e4-a6e2-23d949480f96");
   public static final Resource Dependency = new Resource("9416ead6-ffb9-11e4-ac0a-959b440f987f");
@@ -44,4 +44,4 @@ public class _05_buildingblockviewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,Z1gwfk/InSmKst71N5E5Nzj0J6Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,bwiXG3UhKw+HuSIHameEr/aNwnM=] */

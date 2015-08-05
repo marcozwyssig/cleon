@@ -8,8 +8,12 @@ public interface IArc42 extends cleon.doc.spec.document.javamodel.INamedDocument
   
   // relations
   
-  public java.util.List<? extends cleon.arc42.spec.javamodel.IArc42_SubDocument> selectArc42_subDocuments();
+  public cleon.arc42.spec._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals select__V_1_aE_introduction_aE_and_aE_goals();
+  
+  public cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview();
+  
+  public cleon.arc42.spec._07_deployment_view.javamodel.I__V_7_aE_DeploymentView select__V_7_aE_deploymentview();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,agDm7+m1kn1927hT3xqYxDefQic=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,9o2V2pGrKbnBsB5s0fMpZDpEEsk=] */

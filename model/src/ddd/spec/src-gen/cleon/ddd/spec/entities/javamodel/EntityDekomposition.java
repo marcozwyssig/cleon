@@ -42,21 +42,11 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
     
   @Override
   public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class);
+    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
   }
 
   public EntityDekomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class, class_);
-    return this;
-  }
-    
-  @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectDecompose() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose);
-  }
-
-  public EntityDekomposition setDecompose(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock decompose) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, decompose);
+    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
     return this;
   }
     
@@ -67,6 +57,16 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
 
   public EntityDekomposition setEntity(cleon.ddd.spec.entities.javamodel.IEntity entity) {
     _setSingle(cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity, entity);
+    return this;
+  }
+    
+  @Override
+  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
+    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
+  }
+
+  public EntityDekomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
+    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
     return this;
   }
     
@@ -105,9 +105,9 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.ClassifierDecomposition_class, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, visitor);
+    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
     _acceptSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity, visitor);
+    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -120,4 +120,4 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,KvmPLsQ0px1QU0OOR+J0//5tiq8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,9XL/gyfViUWereCSiucdnb3IHiE=] */

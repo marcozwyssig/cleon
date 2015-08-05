@@ -35,6 +35,8 @@ public class ClassesPackage {
   public static final Resource FunctionSpace_FieldClass = new Resource("57f5ce42-c0c3-11e4-b2f2-bbf951b71ec4");
   public static final Resource Path_CustomEvent = new Resource("d2651bc8-d30b-11e4-8b90-c7d981a5f2fd");
   public static final Resource Class_customEvents = new Resource("f3c9d87d-d30b-11e4-8b90-c7d981a5f2fd");
+  public static final Resource ClassierDependency = new Resource("17f56ccf-3b5f-11e5-86bc-73aedc28563d");
+  public static final Resource ClassierDependency_to = new Resource("17f56cd0-3b5f-11e5-86bc-73aedc28563d");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +57,4 @@ public class ClassesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes,AmaTWyr7GhZERWQRFZg88KRLWNI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes,u206i9pIPZrAGSWynXjOgnszM3E=] */

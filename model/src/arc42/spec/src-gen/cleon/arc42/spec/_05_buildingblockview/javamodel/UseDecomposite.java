@@ -13,9 +13,9 @@ public abstract class UseDecomposite extends DynamicResource implements IUseDeco
   
   // toMeRelations
   
-  public static cleon.arc42.spec._05_buildingblockview.javamodel.IUseDecomposite selectToMeDecompose(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
-    return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IUseDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_decompose, object.getResource());
+  public static cleon.arc42.spec._05_buildingblockview.javamodel.IUseDecomposite selectToMeInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.IUseDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,53d51c49-7ad7-11e4-a6e2-23d949480f96,Nyea5eb/ziB0eg8NZr18IDmzVvE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,53d51c49-7ad7-11e4-a6e2-23d949480f96,i2iMiiJb4tfjXHOWg83QzBpdjXU=] */

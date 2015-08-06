@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="568749f0-11f3-11e5-848b-017a3a98ae34">
+  <owns predicate="d9a220cb-1005-11e5-865e-55f33dbc76dc">
+    <resource statement-guid="2c248042-11f4-11e5-848b-017a3a98ae34" guid="2c24803f-11f4-11e5-848b-017a3a98ae34" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="568749f2-11f3-11e5-848b-017a3a98ae34" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5c4bbaf7-11f3-11e5-848b-017a3a98ae34" type="literal">epm</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="5d909715-11f3-11e5-848b-017a3a98ae34" type="literal">Enterprise Process Model</object>
+  </predicate>
+  <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <object statement-guid="8332e3df-11f8-11e5-848b-017a3a98ae34" type="resource" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
+  </predicate>
+  <predicate guid="d9a220cb-1005-11e5-865e-55f33dbc76dc">
+    <object statement-guid="2c248042-11f4-11e5-848b-017a3a98ae34">
+      <resource guid="2c24803f-11f4-11e5-848b-017a3a98ae34">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2c248041-11f4-11e5-848b-017a3a98ae34" type="resource" guid="e8e7952a-1005-11e5-865e-55f33dbc76dc" />
+        </predicate>
+        <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+          <object statement-guid="2cc1f8c5-11f4-11e5-848b-017a3a98ae34" type="resource" guid="568749f0-11f3-11e5-848b-017a3a98ae34" />
+        </predicate>
+        <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
+          <object statement-guid="99dc411c-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
+    <object statement-guid="a1614da5-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
+  </predicate>
+</resource>
+

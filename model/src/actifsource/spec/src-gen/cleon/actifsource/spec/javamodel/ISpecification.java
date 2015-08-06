@@ -2,7 +2,7 @@ package cleon.actifsource.spec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISpecification extends cleon.actifsource.spec.javamodel.IProject, ch.actifsource.core.javamodel.INamedResource {
+public interface ISpecification extends cleon.actifsource.spec.javamodel.IProject, ch.actifsource.core.javamodel.INamedResource, cleon.arc42.spec._05_buildingblockview.javamodel.IReferenceOwnDecomposite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
   
@@ -16,4 +16,4 @@ public interface ISpecification extends cleon.actifsource.spec.javamodel.IProjec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,XGaR14P56eyau7RTvCb5tTxD7Lw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,PseO4dsI5h12c1kZKcPFuvzbGvw=] */

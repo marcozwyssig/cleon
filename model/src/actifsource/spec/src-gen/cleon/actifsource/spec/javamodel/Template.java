@@ -49,6 +49,15 @@ public class Template extends DynamicResource implements ITemplate {
   }
 
   @Override
+  public java.lang.String selectResponsibility() {
+    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
+  }
+    
+  public void setResponsibility(java.lang.String responsibility) {
+     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
+  }
+
+  @Override
   public java.lang.String selectVersion() {
     return _getSingleAttribute(java.lang.String.class, cleon.actifsource.spec.SpecPackage.Project_version);
   }
@@ -85,6 +94,7 @@ public class Template extends DynamicResource implements ITemplate {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.actifsource.spec.SpecPackage.Project_version, visitor);
     // relations
     _acceptList(cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
@@ -92,4 +102,4 @@ public class Template extends DynamicResource implements ITemplate {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e687740-e9ba-11e4-848b-0509e3792151,noqrXDQRSuNwmGFizdDUGPXVWkk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e687740-e9ba-11e4-848b-0509e3792151,DagPLBcGTNUHmTxSyFnkKjXwZ8I=] */

@@ -6,7 +6,7 @@ public class SpecPackage {
   
   public static final Resource Specifications = new Resource("28f43850-e9ba-11e4-848b-0509e3792151");
   public static final Resource Specification = new Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
-  public static final Resource Specifications_specifications = new Resource("361a9c78-e9ba-11e4-848b-0509e3792151");
+  public static final Resource Specifications_decomposeSpecifications = new Resource("361a9c78-e9ba-11e4-848b-0509e3792151");
   public static final Resource Template = new Resource("3e687740-e9ba-11e4-848b-0509e3792151");
   public static final Resource Specification_templates = new Resource("443302c2-e9ba-11e4-848b-0509e3792151");
   public static final Resource Project_dependsOn = new Resource("ee024577-03b8-11e5-b26a-2b178025b98b");
@@ -21,6 +21,8 @@ public class SpecPackage {
   public static final Resource FunctionSpace_Model = new Resource("751073df-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Sample = new Resource("75d7465e-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource Project_version = new Resource("4613bc5b-3055-11e5-8cdc-d5b441c8c3df");
+  public static final Resource SpecificationsUseDecomposite = new Resource("27714b1f-3b8a-11e5-b8db-7513250f5f90");
+  public static final Resource SpecificationsUseDecomposite_into = new Resource("3883b766-3b8a-11e5-b8db-7513250f5f90");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +43,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,KbbKAmp+2StJmhIzLZuqAaSowp8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,iNVwkD8M3xSNADsijI8Q/o/B/sI=] */

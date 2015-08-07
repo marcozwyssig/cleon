@@ -19,7 +19,10 @@ public class EvaluationPackage {
   public static final Resource Evaluation_score = new Resource("e79fbd56-3c1a-11e5-9962-cf3035adb922");
   public static final Resource Result = new Resource("11cf7692-3c2a-11e5-9962-cf3035adb922");
   public static final Resource Evaluations_result = new Resource("1957903b-3c2a-11e5-9962-cf3035adb922");
-  public static final Resource Evaluation_evadescription = new Resource("01132c56-3d06-11e5-871f-6beac6a7c24b");
+  public static final Resource Evaluation_assessment = new Resource("01132c56-3d06-11e5-871f-6beac6a7c24b");
+  public static final Resource Best_best = new Resource("a1917fbb-3d16-11e5-871f-6beac6a7c24b");
+  public static final Resource Best = new Resource("d930ffa1-3d16-11e5-871f-6beac6a7c24b");
+  public static final Resource Result_best = new Resource("e971eb13-3d16-11e5-871f-6beac6a7c24b");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +43,4 @@ public class EvaluationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.analysis.spec.evaluation,fYUKavJW8rd2iBQO7tMLN6WNT8U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.analysis.spec.evaluation,IDo7OVjkuYZrFQgohT9VFoTY0Cw=] */

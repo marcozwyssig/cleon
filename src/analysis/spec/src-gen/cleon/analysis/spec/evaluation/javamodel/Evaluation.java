@@ -31,6 +31,15 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   // attributes
   
   @Override
+  public java.lang.String selectAssessment() {
+    return _getSingleAttribute(java.lang.String.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment);
+  }
+    
+  public void setAssessment(java.lang.String assessment) {
+     _setSingleAttribute(cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, assessment);
+  }
+
+  @Override
   public java.util.List<java.lang.Void> selectColumns() {
     return _getListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns);
   }
@@ -55,15 +64,6 @@ public class Evaluation extends DynamicResource implements IEvaluation {
     
   public void setDescription(java.util.List<java.lang.String> description) {
      _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
-  }
-
-  @Override
-  public java.lang.String selectEvadescription() {
-    return _getSingleAttribute(java.lang.String.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_evadescription);
-  }
-    
-  public void setEvadescription(java.lang.String evadescription) {
-     _setSingleAttribute(cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_evadescription, evadescription);
   }
 
   // relations
@@ -112,10 +112,10 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, visitor);
     _acceptListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_evadescription, visitor);
     // relations
     _acceptSingle(cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_goal, visitor);
     _acceptSingle(cleon.analysis.spec.evaluation.javamodel.IScore.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_score, visitor);
@@ -132,4 +132,4 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,tW3yw6dkd5SHoZOpzc0x2PG4DJ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,ymXFuokr6/xqR+DjZ8Op8J9ehLc=] */

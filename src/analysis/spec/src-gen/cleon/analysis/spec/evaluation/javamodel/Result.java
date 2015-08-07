@@ -51,6 +51,16 @@ public class Result extends DynamicResource implements IResult {
   // relations
   
   @Override
+  public cleon.analysis.spec.evaluation.javamodel.IBest selectBest() {
+    return _getSingle(cleon.analysis.spec.evaluation.javamodel.IBest.class, cleon.analysis.spec.evaluation.EvaluationPackage.Result_best);
+  }
+
+  public Result setBest(cleon.analysis.spec.evaluation.javamodel.IBest best) {
+    _setSingle(cleon.analysis.spec.evaluation.EvaluationPackage.Result_best, best);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
   }
@@ -117,6 +127,7 @@ public class Result extends DynamicResource implements IResult {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
+    _acceptSingle(cleon.analysis.spec.evaluation.javamodel.IBest.class, cleon.analysis.spec.evaluation.EvaluationPackage.Result_best, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.NoParagraph_noParagraph, visitor);
@@ -125,5 +136,11 @@ public class Result extends DynamicResource implements IResult {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.analysis.spec.evaluation.javamodel.IResult selectToMeBest(cleon.analysis.spec.evaluation.javamodel.IBest object) {
+    return _getToMeSingle(object.getRepository(), cleon.analysis.spec.evaluation.javamodel.IResult.class, cleon.analysis.spec.evaluation.EvaluationPackage.Result_best, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,KmQBoQkcVDVYy4VhF9z8KBbg5aY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,XnN/VZmBOqb95UeOVaOL3JShOy4=] */

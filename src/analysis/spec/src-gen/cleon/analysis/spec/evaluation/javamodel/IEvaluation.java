@@ -8,7 +8,7 @@ public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, c
   
   // attributes
   
-  public java.lang.String selectEvadescription();
+  public java.lang.String selectAssessment();
   
   public cleon.analysis.spec.drivers.javamodel.IGoal selectGoal();
   
@@ -16,4 +16,4 @@ public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,BBs93MYjGQKfmy6fJT17XwnMxVI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,qBunt8qsFcq051CttS5tDtvP5Vg=] */

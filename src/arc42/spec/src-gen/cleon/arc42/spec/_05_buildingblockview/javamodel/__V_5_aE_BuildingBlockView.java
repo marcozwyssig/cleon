@@ -28,6 +28,26 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
     super(resourceRepository, resource, I__V_5_aE_BuildingBlockView.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
+  }
+    
+  public void setDescription(java.util.List<java.lang.String> description) {
+     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
+  }
+
   // relations
   
   @Override
@@ -123,6 +143,9 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_buildingBlocks, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
@@ -142,4 +165,4 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,xAzJxaxKG9YfDduqmLfvqTR2pwU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,i9YLPbNH3WSlVLMkPtx0bi24+CA=] */

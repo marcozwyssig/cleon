@@ -40,6 +40,15 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
 
   @Override
+  public java.util.List<java.lang.String> selectDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
+  }
+    
+  public void setDescription(java.util.List<java.lang.String> description) {
+     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -134,6 +143,7 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
@@ -157,4 +167,4 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,fQvhjX4EtyXPjz0PnbqWJPcumFg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,b/BO4XkTwGndaqFbJSMF2EOukmE=] */

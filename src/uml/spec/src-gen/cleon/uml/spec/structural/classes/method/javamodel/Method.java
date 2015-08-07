@@ -40,6 +40,15 @@ public class Method extends DynamicResource implements IMethod {
   }
 
   @Override
+  public java.util.List<java.lang.String> selectDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
+  }
+    
+  public void setDescription(java.util.List<java.lang.String> description) {
+     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
+  }
+
+  @Override
   public java.lang.Boolean selectIsObsolete() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.Obsolete_isObsolete);
   }
@@ -171,6 +180,7 @@ public class Method extends DynamicResource implements IMethod {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.Obsolete_isObsolete, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.Virtual_isVirtual, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -200,4 +210,4 @@ public class Method extends DynamicResource implements IMethod {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,4tlr2RT82BzSsfPI1h3/YmlFP0w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,6iyQWJyjjBrOC1hHWVSYIszkDCU=] */

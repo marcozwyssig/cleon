@@ -15,6 +15,8 @@ public class AsciidoctorPackage {
   public static final Resource Functions_Note = new Resource("48ae9ff9-3087-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_Role = new Resource("258c914a-3089-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_Admonition = new Resource("d9cc4136-308a-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Functions_Table = new Resource("3010cfb0-3c4b-11e5-871f-6beac6a7c24b");
+  public static final Resource Functions_TypedTable = new Resource("b4eab958-3cef-11e5-871f-6beac6a7c24b");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +37,4 @@ public class AsciidoctorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoctor,PDLgA8rdpsYRXiPjCHMdwQipb9c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoctor,zaPWOHhv0gFHnyjpEWKG54BAnVo=] */

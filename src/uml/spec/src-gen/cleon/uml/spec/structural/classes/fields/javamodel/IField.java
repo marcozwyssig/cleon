@@ -10,12 +10,10 @@ public interface IField extends ch.actifsource.core.javamodel.INamedResource, cl
   
   public java.lang.Boolean selectGetter();
   
-  public java.lang.String selectDescription();
-  
   // relations
   
   public cleon.uml.spec.structural.classes.javamodel.IClassifier selectType();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,809747d2-2758-11e3-a600-d180349bca70,spre6WquCXHuEa59b19fLh3WAbU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,809747d2-2758-11e3-a600-d180349bca70,oVtsrokG7m9Lm6ebSrtWX5KMWzs=] */

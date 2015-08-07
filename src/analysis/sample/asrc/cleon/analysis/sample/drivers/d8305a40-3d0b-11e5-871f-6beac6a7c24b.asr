@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d8305a40-3d0b-11e5-871f-6beac6a7c24b">
+  <owns predicate="9f442086-3c15-11e5-9962-cf3035adb922">
+    <resource statement-guid="d90d9a13-3d0b-11e5-871f-6beac6a7c24b" guid="d90d9a10-3d0b-11e5-871f-6beac6a7c24b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d8305a42-3d0b-11e5-871f-6beac6a7c24b" type="resource" guid="877f094b-3c14-11e5-9962-cf3035adb922" />
+  </predicate>
+  <predicate guid="9f442086-3c15-11e5-9962-cf3035adb922">
+    <object statement-guid="d90d9a13-3d0b-11e5-871f-6beac6a7c24b">
+      <resource guid="d90d9a10-3d0b-11e5-871f-6beac6a7c24b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d90d9a12-3d0b-11e5-871f-6beac6a7c24b" type="resource" guid="4fd3c854-3c14-11e5-9962-cf3035adb922" />
+        </predicate>
+        <predicate guid="b24a60fa-3c2a-11e5-9962-cf3035adb922">
+          <object statement-guid="da3c0821-3d0b-11e5-871f-6beac6a7c24b" type="literal">Kontext </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

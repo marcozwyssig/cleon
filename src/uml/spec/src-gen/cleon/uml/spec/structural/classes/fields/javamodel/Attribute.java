@@ -31,12 +31,21 @@ public class Attribute extends DynamicResource implements IAttribute {
   // attributes
   
   @Override
-  public java.lang.String selectDescription() {
-    return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_description);
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
     
-  public void setDescription(java.lang.String description) {
-     _setSingleAttribute(cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_description, description);
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
+  }
+    
+  public void setDescription(java.util.List<java.lang.String> description) {
+     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
   }
 
   @Override
@@ -141,7 +150,8 @@ public class Attribute extends DynamicResource implements IAttribute {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_description, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_getter, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
@@ -156,4 +166,4 @@ public class Attribute extends DynamicResource implements IAttribute {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18d801f4-e48c-11e2-a881-1f0b1c54f1d5,/ovd27TT7dqry7h37kg0UvSG4pY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18d801f4-e48c-11e2-a881-1f0b1c54f1d5,ANS0+XmvJLrs9OkEfH/R4OuXtBI=] */

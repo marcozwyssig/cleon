@@ -9,7 +9,6 @@ public class FieldsPackage {
   public static final Resource Field_type = new Resource("a83f4481-13ba-11e3-bec7-f1e135382475");
   public static final Resource Field_setter = new Resource("b0ae62ea-13ba-11e3-bec7-f1e135382475");
   public static final Resource Field_getter = new Resource("b932b601-13ba-11e3-bec7-f1e135382475");
-  public static final Resource Field_description = new Resource("79e3dc44-148c-11e3-8a81-e70e51b8639b");
   public static final Resource Field = new Resource("809747d2-2758-11e3-a600-d180349bca70");
   public static final Resource Property_asCollection = new Resource("df010df6-2999-11e3-b126-5543aee7ce98");
   
@@ -32,4 +31,4 @@ public class FieldsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.fields,FgVW2mYVuYQPNpihWLSIXVbied4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.classes.fields,g06oPlUrHRsnDdUCMnJsFOzeH2k=] */

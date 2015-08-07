@@ -28,6 +28,26 @@ public class NoParagraph extends DynamicResource implements INoParagraph {
     super(resourceRepository, resource, INoParagraph.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
+  }
+    
+  public void setDescription(java.util.List<java.lang.String> description) {
+     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
+  }
+
   // relations
   
   @Override
@@ -83,6 +103,9 @@ public class NoParagraph extends DynamicResource implements INoParagraph {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.NoParagraph_noParagraph, visitor);
@@ -98,4 +121,4 @@ public class NoParagraph extends DynamicResource implements INoParagraph {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c1b084d9-34f9-11e5-909a-4bcced25d7ee,iXpzF1ymA9XSEEXfiotiRs9PUs8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c1b084d9-34f9-11e5-909a-4bcced25d7ee,P7u8Ivy6O1zP+J7jQKHtJeGNjMA=] */

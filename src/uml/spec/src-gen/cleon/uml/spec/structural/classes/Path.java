@@ -532,7 +532,4 @@ public class Path {
 
 }
 
-      /* Begin Protected Region [[32263084-ffbe-11e4-ac0a-959b440f987f]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[32263084-ffbe-11e4-ac0a-959b440f987f]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,i2FIIDp8lVH8TBSlBy47106F1ss=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a4e3836-0e63-11e3-ba64-7778a0a14717,EnAUphJbcbyfomZkjJz6tGwwgj4=] */

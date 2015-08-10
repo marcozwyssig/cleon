@@ -98,6 +98,16 @@ public class Specification extends DynamicResource implements ISpecification {
   }
     
   @Override
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IDiagram> selectDiagrams() {
+    return _getList(cleon.actifsource.spec.javamodel.IDiagram.class, cleon.actifsource.spec.SpecPackage.Specification_diagrams);
+  }
+
+  public Specification setDiagrams(java.util.List<? extends cleon.actifsource.spec.javamodel.IDiagram> diagrams) {
+    _setList(cleon.actifsource.spec.SpecPackage.Specification_diagrams, diagrams);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.actifsource.spec.javamodel.IModel> selectModel() {
     return _getList(cleon.actifsource.spec.javamodel.IModel.class, cleon.actifsource.spec.SpecPackage.Specification_model);
   }
@@ -179,6 +189,7 @@ public class Specification extends DynamicResource implements ISpecification {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IDiagram.class, cleon.actifsource.spec.SpecPackage.Specification_diagrams, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IModel.class, cleon.actifsource.spec.SpecPackage.Specification_model, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.ReferenceOwnDecomposite_ownDecompositions, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -202,5 +213,9 @@ public class Specification extends DynamicResource implements ISpecification {
     return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.ISpecification.class, cleon.actifsource.spec.SpecPackage.Specification_sample, object.getResource());
   }
   
+  public static cleon.actifsource.spec.javamodel.ISpecification selectToMeDiagrams(cleon.actifsource.spec.javamodel.IDiagram object) {
+    return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.ISpecification.class, cleon.actifsource.spec.SpecPackage.Specification_diagrams, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,kJ9Yh5KMQDJZpBFYxlIeD4RVAO0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,+JfzH2L3+QZjiieN+6i0ZBZIyY0=] */

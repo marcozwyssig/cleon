@@ -31,11 +31,11 @@ public class Goal extends DynamicResource implements IGoal {
   // attributes
   
   @Override
-  public java.util.List<java.lang.Void> selectColumns() {
-    return _getListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns);
+  public java.util.List<java.lang.Object> selectColumns() {
+    return _getListAttribute(java.lang.Object.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns);
   }
     
-  public void setColumns(java.util.List<java.lang.Void> columns) {
+  public void setColumns(java.util.List<java.lang.Object> columns) {
      _setListAttribute(cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, columns);
   }
 
@@ -110,7 +110,7 @@ public class Goal extends DynamicResource implements IGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, visitor);
+    _acceptListAttribute(java.lang.Object.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, visitor);
@@ -126,4 +126,4 @@ public class Goal extends DynamicResource implements IGoal {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,rUk7+SlMle2y7mk11pD+gMnyYPs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,ncgd7Qg8vFObEnEVFMuzjCj/RgQ=] */

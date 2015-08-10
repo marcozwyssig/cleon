@@ -153,7 +153,4 @@ public class Functions {
 
 }
 
-      /* Begin Protected Region [[19e1be16-3d0a-11e5-871f-6beac6a7c24b]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[19e1be16-3d0a-11e5-871f-6beac6a7c24b]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,Uo3lySvcdOkofuMUeymofKmm8VE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,9PGbNQEAF6n+ZGot9uMzD7icGoQ=] */

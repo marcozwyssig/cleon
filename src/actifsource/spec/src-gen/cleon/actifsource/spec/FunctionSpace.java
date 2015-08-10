@@ -161,6 +161,34 @@ public class FunctionSpace {
 
   }
 
+  public static interface IDiagramFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2a125abd-3f8e-11e5-9616-473ab9b9a1f3")
+    public java.lang.String GetPath();
+
+    @IDynamicResourceExtension.MethodId("26a2b039-3f8e-11e5-9616-473ab9b9a1f3")
+    public java.lang.String GetProjectName();
+
+  }
+  
+  public static interface IDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DiagramFunctionsImpl implements IDiagramFunctionsImpl {
+
+    public static final IDiagramFunctionsImpl INSTANCE = new DiagramFunctionsImpl();
+
+    private DiagramFunctionsImpl() {}
+
+  }
+  
+  public static class DiagramFunctions {
+
+    private DiagramFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,XOwpTTCMqevL424zJAWTgtsQzdM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,iYqBQjZtWCvsA1AeYurwEArdkY4=] */

@@ -8,8 +8,8 @@ public interface ITypedTable extends cleon.doc.spec.chapter.javamodel.ISingleRen
   
   // attributes
   
-  public java.util.List<java.lang.Void> selectColumns();
+  public java.util.List<java.lang.Object> selectColumns();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,325e4f86-3cef-11e5-871f-6beac6a7c24b,2TmbkVg+I26qer7jd/VmG1lg6Ak=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,325e4f86-3cef-11e5-871f-6beac6a7c24b,6x23jxbc4nOM2qt8fozvWeTKB7s=] */

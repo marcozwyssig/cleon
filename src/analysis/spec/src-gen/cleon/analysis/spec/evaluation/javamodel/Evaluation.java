@@ -40,11 +40,11 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
 
   @Override
-  public java.util.List<java.lang.Void> selectColumns() {
-    return _getListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns);
+  public java.util.List<java.lang.Object> selectColumns() {
+    return _getListAttribute(java.lang.Object.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns);
   }
     
-  public void setColumns(java.util.List<java.lang.Void> columns) {
+  public void setColumns(java.util.List<java.lang.Object> columns) {
      _setListAttribute(cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, columns);
   }
 
@@ -113,7 +113,7 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, visitor);
-    _acceptListAttribute(java.lang.Void.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, visitor);
+    _acceptListAttribute(java.lang.Object.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columns, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
@@ -132,4 +132,4 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,ymXFuokr6/xqR+DjZ8Op8J9ehLc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,LqDTdD4sOOr89KJbMngO9s6INlQ=] */

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8d8648aa-4074-11e5-b5f0-5b1ce9c3de3e">
+  <owns predicate="443302c2-e9ba-11e4-848b-0509e3792151">
+    <resource statement-guid="95c926dd-4074-11e5-b5f0-5b1ce9c3de3e" guid="95c926da-4074-11e5-b5f0-5b1ce9c3de3e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8d8648ac-4074-11e5-b5f0-5b1ce9c3de3e" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8e215093-4074-11e5-b5f0-5b1ce9c3de3e" type="literal">slides</object>
+  </predicate>
+  <predicate guid="443302c2-e9ba-11e4-848b-0509e3792151">
+    <object statement-guid="95c926dd-4074-11e5-b5f0-5b1ce9c3de3e">
+      <resource guid="95c926da-4074-11e5-b5f0-5b1ce9c3de3e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="95c926dc-4074-11e5-b5f0-5b1ce9c3de3e" type="resource" guid="3e687740-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9b7c809e-4074-11e5-b5f0-5b1ce9c3de3e" type="literal">revealjs</object>
+        </predicate>
+        <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+          <object statement-guid="9ec62d60-4074-11e5-b5f0-5b1ce9c3de3e" type="resource" guid="8d8648aa-4074-11e5-b5f0-5b1ce9c3de3e" />
+        </predicate>
+        <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
+          <object statement-guid="9da3583f-4074-11e5-b5f0-5b1ce9c3de3e" type="literal">0.0.1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
+    <object statement-guid="905b3a89-4074-11e5-b5f0-5b1ce9c3de3e" type="literal">0.0.1</object>
+  </predicate>
+</resource>
+

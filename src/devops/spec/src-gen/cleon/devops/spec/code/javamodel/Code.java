@@ -28,19 +28,18 @@ public class Code extends DynamicResource implements ICode {
     super(resourceRepository, resource, ICode.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
+  @Override
+  public java.util.List<? extends cleon.devops.spec.code.javamodel.ICodeRepository> selectStore() {
+    return _getList(cleon.devops.spec.code.javamodel.ICodeRepository.class, cleon.devops.spec.code.CodePackage.Code_store);
+  }
+
+  public Code setStore(java.util.List<? extends cleon.devops.spec.code.javamodel.ICodeRepository> store) {
+    _setList(cleon.devops.spec.code.CodePackage.Code_store, store);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -54,11 +53,16 @@ public class Code extends DynamicResource implements ICode {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.devops.spec.code.javamodel.ICodeRepository.class, cleon.devops.spec.code.CodePackage.Code_store, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.devops.spec.code.javamodel.ICode selectToMeStore(cleon.devops.spec.code.javamodel.ICodeRepository object) {
+    return _getToMeSingle(object.getRepository(), cleon.devops.spec.code.javamodel.ICode.class, cleon.devops.spec.code.CodePackage.Code_store, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e,JLwZxl3Zen1X/XwIqe56aiwNfzk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e,O35sFrIClgTFAD3rA6SydRDUZIs=] */

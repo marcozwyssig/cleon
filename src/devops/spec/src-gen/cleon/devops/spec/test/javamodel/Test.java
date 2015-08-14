@@ -28,17 +28,6 @@ public class Test extends DynamicResource implements ITest {
     super(resourceRepository, resource, ITest.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -54,11 +43,9 @@ public class Test extends DynamicResource implements ITest {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cebd70c5-406e-11e5-b5f0-5b1ce9c3de3e,9DuG2oTB/pghv7QGD39/Z1wnZnI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cebd70c5-406e-11e5-b5f0-5b1ce9c3de3e,oDPZz689/rpik/lXOpS/oLoifpo=] */

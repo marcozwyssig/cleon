@@ -6,6 +6,10 @@ public interface ICode extends cleon.devops.spec.javamodel.IBuildManagement {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e");
   
+  // relations
+  
+  public java.util.List<? extends cleon.devops.spec.code.javamodel.ICodeRepository> selectStore();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e,qi0Kq8S9zj5lZI5DVeSsq9P8XTs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e,UEHJufWMqBy/O5vmjDduS+5LQYM=] */

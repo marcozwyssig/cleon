@@ -6,6 +6,12 @@ public class CodePackage {
   
   public static final Resource Code = new Resource("c9bd141d-406e-11e5-b5f0-5b1ce9c3de3e");
   public static final Resource CodeRepository = new Resource("2f377098-4072-11e5-b5f0-5b1ce9c3de3e");
+  public static final Resource Code_store = new Resource("1607f986-41b7-11e5-a2b3-edc7f3343844");
+  public static final Resource Classification = new Resource("34dfca0b-41b7-11e5-a2b3-edc7f3343844");
+  public static final Resource CodeRepository_classification = new Resource("3e4b224f-41b7-11e5-a2b3-edc7f3343844");
+  public static final Resource Confidential = new Resource("4fe0527a-41b7-11e5-a2b3-edc7f3343844");
+  public static final Resource Secret = new Resource("56035e7d-41b7-11e5-a2b3-edc7f3343844");
+  public static final Resource Public = new Resource("61de57c9-41b7-11e5-a2b3-edc7f3343844");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +32,4 @@ public class CodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.spec.code,bUyWDNsVD6vnb9m9uvkOf0szo78=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.spec.code,7niJDHMyXQFQ+bh67aslP1JRrS0=] */

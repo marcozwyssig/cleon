@@ -28,17 +28,6 @@ public class BuildManagement extends DynamicResource implements IBuildManagement
     super(resourceRepository, resource, IBuildManagement.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -54,11 +43,9 @@ public class BuildManagement extends DynamicResource implements IBuildManagement
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3929be93-4070-11e5-b5f0-5b1ce9c3de3e,OqxyC1eeXjzios11GP8rjdg44Qc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3929be93-4070-11e5-b5f0-5b1ce9c3de3e,bb8YYU5Hy/QV2DdZ2UXttQM0mpo=] */

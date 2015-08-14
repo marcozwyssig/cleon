@@ -28,17 +28,6 @@ public class DevOps extends DynamicResource implements IDevOps {
     super(resourceRepository, resource, IDevOps.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -114,8 +103,6 @@ public class DevOps extends DynamicResource implements IDevOps {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.devops.spec.build.javamodel.IBuild.class, cleon.devops.spec.SpecPackage.DevOps_build, visitor);
     _acceptSingle(cleon.devops.spec.code.javamodel.ICode.class, cleon.devops.spec.SpecPackage.DevOps_code, visitor);
@@ -153,4 +140,4 @@ public class DevOps extends DynamicResource implements IDevOps {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e,ECGfN5JRdVACi+ZFAjrZwXDdJoo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e,3+ndpdG8SyNHhsEcevtIkd/u4K4=] */

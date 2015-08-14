@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="a574eba1-41b4-11e5-a2b3-edc7f3343844">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ba19584f-41b4-11e5-a2b3-edc7f3343844" guid="ba19584b-41b4-11e5-a2b3-edc7f3343844" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a574eba3-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a574eba5-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="b47acb73-314c-11e5-bd99-eda9ce254b0b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ba19584f-41b4-11e5-a2b3-edc7f3343844">
+      <resource guid="ba19584b-41b4-11e5-a2b3-edc7f3343844">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ba19584d-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ba19584e-41b4-11e5-a2b3-edc7f3343844" type="literal">devOps</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ba195850-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ba195851-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="ba195852-41b4-11e5-a2b3-edc7f3343844" type="resource" guid="c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a574eba4-41b4-11e5-a2b3-edc7f3343844" type="literal">07_DevOpsDeploymentView</object>
+  </predicate>
+</resource>
+

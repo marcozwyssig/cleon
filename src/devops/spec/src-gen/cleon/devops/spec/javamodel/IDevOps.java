@@ -2,7 +2,7 @@ package cleon.devops.spec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDevOps extends ch.actifsource.core.javamodel.INamedResource {
+public interface IDevOps extends ch.actifsource.core.javamodel.IResource {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e");
   
@@ -22,4 +22,4 @@ public interface IDevOps extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e,0gy5u/cOMmIsk3URqR6fBFg1tTE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6c94ef5-406e-11e5-b5f0-5b1ce9c3de3e,7HDeUClj72kxkQ7tlQaSNTfYiwU=] */

@@ -28,19 +28,18 @@ public class CodeRepository extends DynamicResource implements ICodeRepository {
     super(resourceRepository, resource, ICodeRepository.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
+  @Override
+  public cleon.devops.spec.code.javamodel.IClassification selectClassification() {
+    return _getSingle(cleon.devops.spec.code.javamodel.IClassification.class, cleon.devops.spec.code.CodePackage.CodeRepository_classification);
+  }
+
+  public CodeRepository setClassification(cleon.devops.spec.code.javamodel.IClassification classification) {
+    _setSingle(cleon.devops.spec.code.CodePackage.CodeRepository_classification, classification);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -54,11 +53,16 @@ public class CodeRepository extends DynamicResource implements ICodeRepository {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.devops.spec.code.javamodel.IClassification.class, cleon.devops.spec.code.CodePackage.CodeRepository_classification, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.devops.spec.code.javamodel.ICodeRepository> selectToMeClassification(cleon.devops.spec.code.javamodel.IClassification object) {
+    return _getToMeList(object.getRepository(), cleon.devops.spec.code.javamodel.ICodeRepository.class, cleon.devops.spec.code.CodePackage.CodeRepository_classification, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f377098-4072-11e5-b5f0-5b1ce9c3de3e,E81tlOzjLtpc9is8EhAf6MEGo0Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f377098-4072-11e5-b5f0-5b1ce9c3de3e,xb7n+H3uZai7t6vTrJ9da3Zkkow=] */

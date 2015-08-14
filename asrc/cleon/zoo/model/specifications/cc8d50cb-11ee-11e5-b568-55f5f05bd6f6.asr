@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="cc8d50cb-11ee-11e5-b568-55f5f05bd6f6">
+  <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <resource statement-guid="e1bed99b-4261-11e5-8a2d-599443ec8ff4" guid="e1bed998-4261-11e5-8a2d-599443ec8ff4" />
+    <resource statement-guid="e355f46f-4261-11e5-8a2d-599443ec8ff4" guid="e355f46c-4261-11e5-8a2d-599443ec8ff4" />
+    <resource statement-guid="e4fdb00d-4261-11e5-8a2d-599443ec8ff4" guid="e4fdb00a-4261-11e5-8a2d-599443ec8ff4" />
+    <resource statement-guid="e6a08aae-4261-11e5-8a2d-599443ec8ff4" guid="e6a08aab-4261-11e5-8a2d-599443ec8ff4" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cc8d50cd-11ee-11e5-b568-55f5f05bd6f6" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -7,10 +13,46 @@
     <object statement-guid="ce50f9cf-11ee-11e5-b568-55f5f05bd6f6" type="literal">desktop</object>
   </predicate>
   <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <object statement-guid="81e79e82-11f8-11e5-848b-017a3a98ae34" type="resource" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
-    <object statement-guid="51d200f3-3b5e-11e5-86bc-73aedc28563d" type="resource" guid="5683f1e1-1296-11e5-a69e-755a9ac7f617" />
-    <object statement-guid="83e5cc73-3b61-11e5-86bc-73aedc28563d" type="resource" guid="aa308523-ffb4-11e4-ac0a-959b440f987f" />
-    <object statement-guid="92a76b21-3b61-11e5-86bc-73aedc28563d" type="resource" guid="c715059c-e9ba-11e4-848b-0509e3792151" />
+    <object statement-guid="e1bed99b-4261-11e5-8a2d-599443ec8ff4">
+      <resource guid="e1bed998-4261-11e5-8a2d-599443ec8ff4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e1bed99a-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="e2ead68a-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e355f46f-4261-11e5-8a2d-599443ec8ff4">
+      <resource guid="e355f46c-4261-11e5-8a2d-599443ec8ff4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e355f46e-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="e488f538-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="5683f1e1-1296-11e5-a69e-755a9ac7f617" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e4fdb00d-4261-11e5-8a2d-599443ec8ff4">
+      <resource guid="e4fdb00a-4261-11e5-8a2d-599443ec8ff4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e4fdb00c-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="e63c98b8-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="aa308523-ffb4-11e4-ac0a-959b440f987f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e6a08aae-4261-11e5-8a2d-599443ec8ff4">
+      <resource guid="e6a08aab-4261-11e5-8a2d-599443ec8ff4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6a08aad-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="e7d3b38a-4261-11e5-8a2d-599443ec8ff4" type="resource" guid="c715059c-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="9e15cc22-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>

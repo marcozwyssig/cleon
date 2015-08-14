@@ -26,6 +26,8 @@ public class SpecPackage {
   public static final Resource Diagram = new Resource("f1d5fec5-3f8d-11e5-9616-473ab9b9a1f3");
   public static final Resource Specification_diagrams = new Resource("fb2c48ec-3f8d-11e5-9616-473ab9b9a1f3");
   public static final Resource FunctionSpace_Diagram = new Resource("17b016d4-3f8e-11e5-9616-473ab9b9a1f3");
+  public static final Resource ProjectDependency = new Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
+  public static final Resource ProjectDependency_to = new Resource("de9ea266-4260-11e5-8a2d-599443ec8ff4");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +48,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,ZMtg1fetsXos8jXfXS1p471qJ/k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,HH9ngj9/JSWVxxkbntT2Fc1MCpQ=] */

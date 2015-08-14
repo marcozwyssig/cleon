@@ -60,12 +60,22 @@ public class Model extends DynamicResource implements IModel {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.actifsource.spec.javamodel.IProject> selectDependsOn() {
-    return _getList(cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn);
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IProjectDependency> selectDependsOn() {
+    return _getList(cleon.actifsource.spec.javamodel.IProjectDependency.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn);
   }
 
-  public Model setDependsOn(java.util.List<? extends cleon.actifsource.spec.javamodel.IProject> dependsOn) {
+  public Model setDependsOn(java.util.List<? extends cleon.actifsource.spec.javamodel.IProjectDependency> dependsOn) {
     _setList(cleon.actifsource.spec.SpecPackage.Project_dependsOn, dependsOn);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency);
+  }
+
+  public Model setHasDependency(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDependency> hasDependency) {
+    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -87,9 +97,10 @@ public class Model extends DynamicResource implements IModel {
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.actifsource.spec.SpecPackage.Project_version, visitor);
     // relations
-    _acceptList(cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IProjectDependency.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
+    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDependency.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,q7PB9V/gCeCRGDOwLIAgriwl3Mg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,MLFS6RKCkrGOsNkDcPLKV1hKjYU=] */

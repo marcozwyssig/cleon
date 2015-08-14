@@ -13,9 +13,9 @@ public abstract class Project extends DynamicResource implements IProject {
   
   // toMeRelations
   
-  public static java.util.List<cleon.actifsource.spec.javamodel.IProject> selectToMeDependsOn(cleon.actifsource.spec.javamodel.IProject object) {
-    return _getToMeList(object.getRepository(), cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, object.getResource());
+  public static cleon.actifsource.spec.javamodel.IProject selectToMeDependsOn(cleon.actifsource.spec.javamodel.IProjectDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.IProject.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,Sv3ukcq8CQ4c7WTfWr1blohVYb8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,wmhDC/Br0M0sgjFmEVlB80K76SQ=] */

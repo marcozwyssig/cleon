@@ -39,15 +39,6 @@ public class EventForField extends DynamicResource implements IEventForField {
      _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
   }
 
-  @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
   // relations
   
   @Override
@@ -115,7 +106,6 @@ public class EventForField extends DynamicResource implements IEventForField {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
@@ -132,4 +122,4 @@ public class EventForField extends DynamicResource implements IEventForField {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b6f35fa-7fc7-11e4-842a-1924f269f20b,74eNK+CpWu/Cu1b6LwDjQ3re6wg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b6f35fa-7fc7-11e4-842a-1924f269f20b,vkttEcSVU5zrH4j8qKMjZVfPnvc=] */

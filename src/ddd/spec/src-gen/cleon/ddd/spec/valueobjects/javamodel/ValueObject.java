@@ -48,15 +48,6 @@ public class ValueObject extends DynamicResource implements IValueObject {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
-  @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
   // relations
   
   @Override
@@ -135,7 +126,6 @@ public class ValueObject extends DynamicResource implements IValueObject {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
@@ -147,4 +137,4 @@ public class ValueObject extends DynamicResource implements IValueObject {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,cyaghsF+2kVKG3MTGe74CCwjWwY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,srTCQuEVHH3rtLltw9/drg653fM=] */

@@ -31,12 +31,12 @@ public class Sample extends DynamicResource implements ISample {
   // attributes
   
   @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
+  public java.lang.Boolean selectGeneratedJavaModel() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.actifsource.spec.SpecPackage.Project_generatedJavaModel);
   }
     
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
+  public void setGeneratedJavaModel(java.lang.Boolean generatedJavaModel) {
+     _setSingleAttribute(cleon.actifsource.spec.SpecPackage.Project_generatedJavaModel, generatedJavaModel);
   }
 
   @Override
@@ -124,7 +124,7 @@ public class Sample extends DynamicResource implements ISample {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.actifsource.spec.SpecPackage.Project_generatedJavaModel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.actifsource.spec.SpecPackage.Project_version, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
@@ -137,4 +137,4 @@ public class Sample extends DynamicResource implements ISample {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8e7952a-1005-11e5-865e-55f33dbc76dc,ZOnd1vXsxQgWay4A0hxF7CzIpLE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8e7952a-1005-11e5-865e-55f33dbc76dc,KTIDBEKvkrhat2u4A5/jtH753Kk=] */

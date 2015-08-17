@@ -28,6 +28,17 @@ public class CodeRepository extends DynamicResource implements ICodeRepository {
     super(resourceRepository, resource, ICodeRepository.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.devops.spec.code.CodePackage.CodeRepository_path);
+  }
+    
+  public void setPath(java.lang.String path) {
+     _setSingleAttribute(cleon.devops.spec.code.CodePackage.CodeRepository_path, path);
+  }
+
   // relations
   
   @Override
@@ -53,6 +64,8 @@ public class CodeRepository extends DynamicResource implements ICodeRepository {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.devops.spec.code.CodePackage.CodeRepository_path, visitor);
     // relations
     _acceptSingle(cleon.devops.spec.code.javamodel.IClassification.class, cleon.devops.spec.code.CodePackage.CodeRepository_classification, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -65,4 +78,4 @@ public class CodeRepository extends DynamicResource implements ICodeRepository {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f377098-4072-11e5-b5f0-5b1ce9c3de3e,xb7n+H3uZai7t6vTrJ9da3Zkkow=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f377098-4072-11e5-b5f0-5b1ce9c3de3e,LCAJHOE0qYI+MJp4Tp9sm/W/qac=] */

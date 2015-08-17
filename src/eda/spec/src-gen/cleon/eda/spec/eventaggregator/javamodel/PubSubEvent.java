@@ -28,17 +28,6 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
     super(resourceRepository, resource, IPubSubEvent.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
   // relations
   
   @Override
@@ -74,8 +63,6 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptSingle(cleon.uml.spec.structural.classes.events.javamodel.IEvent.class, cleon.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -89,4 +76,4 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,e3AIQyWT1EGU9R7YDrlSQbX+IWM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,r+JofhuuOaB9vCa5C4v+fET3M3Y=] */

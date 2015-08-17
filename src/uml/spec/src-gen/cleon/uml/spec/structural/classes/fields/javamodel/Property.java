@@ -76,15 +76,6 @@ public class Property extends DynamicResource implements IProperty {
   }
 
   @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
-  @Override
   public java.lang.Boolean selectSetter() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_setter);
   }
@@ -184,7 +175,6 @@ public class Property extends DynamicResource implements IProperty {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.Obsolete_isObsolete, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.Virtual_isVirtual, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Field_setter, visitor);
     // relations
     _acceptSingle(cleon.uml.spec.structural.classes.association.javamodel.ICollectionType.class, cleon.uml.spec.structural.classes.fields.FieldsPackage.Property_asCollection, visitor);
@@ -204,4 +194,4 @@ public class Property extends DynamicResource implements IProperty {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,/odd5gE6+x05itrOw9jF0dn0KxM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,/YjQhFAtfZA0/V2HC/ZvHyI+kmk=] */

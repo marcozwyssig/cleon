@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="243b1867-7973-11e4-a6e2-23d949480f96">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="3f6b1009-1005-11e5-865e-55f33dbc76dc" guid="3f689f06-1005-11e5-865e-55f33dbc76dc" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="243b6689-7973-11e4-a6e2-23d949480f96" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="98c4287f-346d-11e5-909a-4bcced25d7ee" type="resource" guid="b8a12540-307a-11e5-8cdc-d5b441c8c3df" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="3f6b1009-1005-11e5-865e-55f33dbc76dc">
-      <resource guid="3f689f06-1005-11e5-865e-55f33dbc76dc">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3f689f08-1005-11e5-865e-55f33dbc76dc" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="4699bf77-1005-11e5-865e-55f33dbc76dc" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3fccb818-1005-11e5-865e-55f33dbc76dc" type="literal">responsibility</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="3f6b100a-1005-11e5-865e-55f33dbc76dc" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="243bb4aa-7973-11e4-a6e2-23d949480f96" type="literal">BuildingBlock</object>

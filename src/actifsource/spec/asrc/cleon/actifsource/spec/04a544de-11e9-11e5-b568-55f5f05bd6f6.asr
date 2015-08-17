@@ -3,6 +3,7 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="796ee143-11e9-11e5-b568-55f5f05bd6f6" guid="ee024577-03b8-11e5-b26a-2b178025b98b" />
     <resource statement-guid="46147fae-3055-11e5-8cdc-d5b441c8c3df" guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df" />
+    <resource statement-guid="1b753051-44cc-11e5-93ef-c50f9659357a" guid="1b75304e-44cc-11e5-93ef-c50f9659357a" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="04a544e0-11e9-11e5-b568-55f5f05bd6f6" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -47,6 +48,25 @@
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="49898232-3055-11e5-8cdc-d5b441c8c3df" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1b753051-44cc-11e5-93ef-c50f9659357a">
+      <resource guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1b753050-44cc-11e5-93ef-c50f9659357a" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1f668de7-44cc-11e5-93ef-c50f9659357a" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1cce56d6-44cc-11e5-93ef-c50f9659357a" type="literal">generatedJavaModel</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="20b88958-44cc-11e5-93ef-c50f9659357a" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1b753052-44cc-11e5-93ef-c50f9659357a" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
       </resource>
     </object>

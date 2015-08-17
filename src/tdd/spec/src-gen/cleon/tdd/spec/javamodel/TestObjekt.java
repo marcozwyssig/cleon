@@ -40,15 +40,6 @@ public class TestObjekt extends DynamicResource implements ITestObjekt {
   }
 
   @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
-  @Override
   public java.lang.String selectThen() {
     return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then);
   }
@@ -84,7 +75,6 @@ public class TestObjekt extends DynamicResource implements ITestObjekt {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -92,4 +82,4 @@ public class TestObjekt extends DynamicResource implements ITestObjekt {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,QF7ct0SHujaTqBqqPqgajv9dFtQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,8jFXSR5fe5bZlY+7vfe0O2n/zWU=] */

@@ -40,15 +40,6 @@ public class NamedComponent extends DynamicResource implements INamedComponent {
   }
 
   @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
-  @Override
   public java.lang.String selectShortName() {
     return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName);
   }
@@ -154,7 +145,6 @@ public class NamedComponent extends DynamicResource implements INamedComponent {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
@@ -169,4 +159,4 @@ public class NamedComponent extends DynamicResource implements INamedComponent {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e84e5d8-41b0-11e5-86f2-816f5628b22b,crmDe1i3+4R+jJ+P+aO3xsJR+u8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e84e5d8-41b0-11e5-86f2-816f5628b22b,Oi17q7xiGtmJ7CnK16ibiBO0/zg=] */

@@ -48,15 +48,6 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
      _setSingleAttribute(cleon.desktop.spec.mvvm.MvvmPackage.ForwardProperty_isReadOnly, isReadOnly);
   }
 
-  @Override
-  public java.lang.String selectResponsibility() {
-    return _getSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility);
-  }
-    
-  public void setResponsibility(java.lang.String responsibility) {
-     _setSingleAttribute(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, responsibility);
-  }
-
   // relations
   
   @Override
@@ -95,7 +86,6 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.desktop.spec.mvvm.MvvmPackage.ForwardProperty_isReadOnly, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
     // relations
     _acceptSingle(cleon.uml.spec.structural.classes.fields.javamodel.IField.class, cleon.desktop.spec.mvvm.MvvmPackage.ForwardProperty_field, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -109,4 +99,4 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,SOCtJedmdDJvggtD7qPK3WHafQs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,Znsy7RX+RUO9wR50mWItiOBlQgU=] */

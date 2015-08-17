@@ -28,26 +28,6 @@ public class Result extends DynamicResource implements IResult {
     super(resourceRepository, resource, IResult.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
-  }
-    
-  public void setDescription(java.util.List<java.lang.String> description) {
-     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
-  }
-
   // relations
   
   @Override
@@ -123,9 +103,6 @@ public class Result extends DynamicResource implements IResult {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
     _acceptSingle(cleon.analysis.spec.evaluation.javamodel.IBest.class, cleon.analysis.spec.evaluation.EvaluationPackage.Result_best, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
@@ -143,4 +120,4 @@ public class Result extends DynamicResource implements IResult {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,XnN/VZmBOqb95UeOVaOL3JShOy4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,X4KM+M6SIM+yDB47uecGTgLMogA=] */

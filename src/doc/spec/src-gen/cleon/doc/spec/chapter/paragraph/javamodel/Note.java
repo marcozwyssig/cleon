@@ -31,12 +31,12 @@ public class Note extends DynamicResource implements INote {
   // attributes
   
   @Override
-  public java.lang.String selectText() {
-    return _getSingleAttribute(java.lang.String.class, cleon.doc.spec.chapter.paragraph.ParagraphPackage.TextParagraph_text);
+  public java.lang.String selectNote() {
+    return _getSingleAttribute(java.lang.String.class, cleon.doc.spec.chapter.paragraph.ParagraphPackage.Note_note);
   }
     
-  public void setText(java.lang.String text) {
-     _setSingleAttribute(cleon.doc.spec.chapter.paragraph.ParagraphPackage.TextParagraph_text, text);
+  public void setNote(java.lang.String note) {
+     _setSingleAttribute(cleon.doc.spec.chapter.paragraph.ParagraphPackage.Note_note, note);
   }
 
   // relations
@@ -55,10 +55,10 @@ public class Note extends DynamicResource implements INote {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.doc.spec.chapter.paragraph.ParagraphPackage.TextParagraph_text, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.doc.spec.chapter.paragraph.ParagraphPackage.Note_note, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ec11f20-3087-11e5-8cdc-d5b441c8c3df,ZJyvKIVAvUSdN9IWNlkx018BzPo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ec11f20-3087-11e5-8cdc-d5b441c8c3df,baEpckFskP6PLaipT/1FKVeMOh0=] */

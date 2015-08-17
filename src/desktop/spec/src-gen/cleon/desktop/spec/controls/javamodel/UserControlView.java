@@ -40,15 +40,6 @@ public class UserControlView extends DynamicResource implements IUserControlView
   }
 
   @Override
-  public java.util.List<java.lang.String> selectDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
-  }
-    
-  public void setDescription(java.util.List<java.lang.String> description) {
-     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
-  }
-
-  @Override
   public java.lang.Boolean selectIsAbstract() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
@@ -114,6 +105,16 @@ public class UserControlView extends DynamicResource implements IUserControlView
 
   public UserControlView setDecompose(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> decompose) {
     _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, decompose);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
+  }
+
+  public UserControlView setDescription(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> description) {
+    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
     return this;
   }
     
@@ -232,7 +233,6 @@ public class UserControlView extends DynamicResource implements IUserControlView
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.BuildingBlock_responsibility, visitor);
@@ -241,6 +241,7 @@ public class UserControlView extends DynamicResource implements IUserControlView
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.uml.spec.structural.classes.events.javamodel.ICustomEvent.class, cleon.uml.spec.structural.classes.ClassesPackage.Class_customEvents, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
     _acceptList(cleon.uml.spec.structural.classes.events.javamodel.IEvent.class, cleon.uml.spec.structural.classes.ClassesPackage.EventClass_events, visitor);
     _acceptSingle(cleon.desktop.spec.mvvm.javamodel.IView.class, cleon.desktop.spec.mvvm.MvvmPackage.View_extends, visitor);
     _acceptMap(cleon.uml.spec.structural.classes.events.javamodel.IEventForField.class, cleon.uml.spec.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
@@ -255,4 +256,4 @@ public class UserControlView extends DynamicResource implements IUserControlView
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4947868f-634e-11e3-9288-bdf1907ca1e3,MA4/drDfjYGvUULFk3r0uwi0sKY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4947868f-634e-11e3-9288-bdf1907ca1e3,5yrPMsV7pESsFOEBqW/b4gwt6kQ=] */

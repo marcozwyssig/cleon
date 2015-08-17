@@ -28,26 +28,6 @@ public class PackageDecomposition extends DynamicResource implements IPackageDec
     super(resourceRepository, resource, IPackageDecomposition.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
-  }
-    
-  public void setDescription(java.util.List<java.lang.String> description) {
-     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
-  }
-
   // relations
   
   @Override
@@ -57,6 +37,16 @@ public class PackageDecomposition extends DynamicResource implements IPackageDec
 
   public PackageDecomposition setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
+    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
+  }
+
+  public PackageDecomposition setDescription(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> description) {
+    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
     return this;
   }
     
@@ -103,11 +93,9 @@ public class PackageDecomposition extends DynamicResource implements IPackageDec
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackage.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageDecomposition_into, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
@@ -121,4 +109,4 @@ public class PackageDecomposition extends DynamicResource implements IPackageDec
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,392c77b6-1756-11e5-9ca7-d1bb57b73459,QbbUxesNfozpHNIJTNJlGMQZUNo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,392c77b6-1756-11e5-9ca7-d1bb57b73459,040+j1yfXyhKIOlzD6PCtcJ0KNs=] */

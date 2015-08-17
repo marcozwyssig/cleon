@@ -28,26 +28,6 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
     super(resourceRepository, resource, IArc42_SubDocument.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description);
-  }
-    
-  public void setDescription(java.util.List<java.lang.String> description) {
-     _setListAttribute(cleon.doc.spec.chapter.ChapterPackage.Description_description, description);
-  }
-
   // relations
   
   @Override
@@ -133,9 +113,6 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.chapter.ChapterPackage.Description_description, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.IDocument.class, cleon.doc.spec.document.DocumentPackage.Document_documents, visitor);
@@ -154,4 +131,4 @@ public class Arc42_SubDocument extends DynamicResource implements IArc42_SubDocu
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,717dfe0f-31fc-11e5-bd99-eda9ce254b0b,EeO9n5QsILIG6pxyrvbq1frB0os=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,717dfe0f-31fc-11e5-bd99-eda9ce254b0b,eEfJ60uOHYLpg4EYfvYhdoE0YzI=] */

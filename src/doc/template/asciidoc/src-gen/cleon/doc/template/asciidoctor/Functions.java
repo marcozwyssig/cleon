@@ -384,7 +384,7 @@ public class Functions {
     public java.lang.String RenderContent();
 
     @IDynamicResourceExtension.MethodId("09740646-3cf9-11e5-871f-6beac6a7c24b")
-    public cleon.doc.spec.chapter.paragraph.typedtable.javamodel.IColumnAttribute SelectColumnAttribute();
+    public cleon.doc.spec.chapter.paragraph.typedtable.javamodel.IColumnRelation SelectColumnRelation();
 
     @IDynamicResourceExtension.MethodId("ed1cfad2-3cfd-11e5-871f-6beac6a7c24b")
     public java.lang.String RenderHeader();
@@ -414,4 +414,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,+U342iCI9vxeW+mKzdbMISnMfxs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,hYi6OyoilnjRRYDNG83qSM3LFUw=] */

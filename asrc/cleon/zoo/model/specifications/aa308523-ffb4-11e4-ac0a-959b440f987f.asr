@@ -11,6 +11,9 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <resource statement-guid="6080ba31-44b0-11e5-99ff-71cc0a5d776b" guid="6080ba2e-44b0-11e5-99ff-71cc0a5d776b" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="aa30ac35-ffb4-11e4-ac0a-959b440f987f" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -66,8 +69,17 @@
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="93c93b26-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
   </predicate>
-  <predicate guid="b24a60fa-3c2a-11e5-9962-cf3035adb922">
-    <object statement-guid="154d1a2e-3c2c-11e5-9962-cf3035adb922" type="literal">arc42 Template </object>
+  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <object statement-guid="6080ba31-44b0-11e5-99ff-71cc0a5d776b">
+      <resource guid="6080ba2e-44b0-11e5-99ff-71cc0a5d776b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6080ba30-44b0-11e5-99ff-71cc0a5d776b" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
+          <object statement-guid="61e10d83-44b0-11e5-99ff-71cc0a5d776b" type="literal">arc42 Template </object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

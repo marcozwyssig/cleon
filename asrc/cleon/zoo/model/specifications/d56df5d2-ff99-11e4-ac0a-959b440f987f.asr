@@ -14,6 +14,9 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <resource statement-guid="ff18e604-44b1-11e5-99ff-71cc0a5d776b" guid="ff18e601-44b1-11e5-99ff-71cc0a5d776b" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d56df5d4-ff99-11e4-ac0a-959b440f987f" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -74,8 +77,17 @@
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="90cd1224-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
   </predicate>
-  <predicate guid="b24a60fa-3c2a-11e5-9962-cf3035adb922">
-    <object statement-guid="28346c93-3c2c-11e5-9962-cf3035adb922" type="literal">Software Development Process</object>
+  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <object statement-guid="ff18e604-44b1-11e5-99ff-71cc0a5d776b">
+      <resource guid="ff18e601-44b1-11e5-99ff-71cc0a5d776b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ff18e603-44b1-11e5-99ff-71cc0a5d776b" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
+          <object statement-guid="00662686-44b2-11e5-99ff-71cc0a5d776b" type="literal">Software Development Process</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

@@ -1,31 +1,31 @@
-package cleon.analysis.spec.drivers.javamodel;
+package cleon.doc.spec.chapter.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Goals extends DynamicResource implements IGoals {
+public class ChapterWithDescription extends DynamicResource implements IChapterWithDescription {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IGoals> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IGoals>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IChapterWithDescription> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IChapterWithDescription>() {
     
     @Override
-    public IGoals create() {
-      return new Goals();
+    public IChapterWithDescription create() {
+      return new ChapterWithDescription();
     }
     
     @Override
-    public IGoals create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Goals(resourceRepository, resource);
+    public IChapterWithDescription create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ChapterWithDescription(resourceRepository, resource);
     }
   
   };
 
-  public Goals() {
-    super(IGoals.TYPE_ID);
+  public ChapterWithDescription() {
+    super(IChapterWithDescription.TYPE_ID);
   }
   
-  public Goals(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IGoals.TYPE_ID);
+  public ChapterWithDescription(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IChapterWithDescription.TYPE_ID);
   }
 
   // relations
@@ -35,7 +35,7 @@ public class Goals extends DynamicResource implements IGoals {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
   }
 
-  public Goals setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
+  public ChapterWithDescription setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
     return this;
   }
@@ -45,18 +45,8 @@ public class Goals extends DynamicResource implements IGoals {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
 
-  public Goals setDescription(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> description) {
+  public ChapterWithDescription setDescription(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> description) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.analysis.spec.drivers.javamodel.IGoal> selectGoals() {
-    return _getList(cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.drivers.DriversPackage.Goals_goals);
-  }
-
-  public Goals setGoals(java.util.List<? extends cleon.analysis.spec.drivers.javamodel.IGoal> goals) {
-    _setList(cleon.analysis.spec.drivers.DriversPackage.Goals_goals, goals);
     return this;
   }
     
@@ -65,7 +55,7 @@ public class Goals extends DynamicResource implements IGoals {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
 
-  public Goals setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
+  public ChapterWithDescription setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
     return this;
   }
@@ -75,7 +65,7 @@ public class Goals extends DynamicResource implements IGoals {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes);
   }
 
-  public Goals setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
+  public ChapterWithDescription setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, paragraphes);
     return this;
   }
@@ -85,7 +75,7 @@ public class Goals extends DynamicResource implements IGoals {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Goals setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ChapterWithDescription setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -96,7 +86,6 @@ public class Goals extends DynamicResource implements IGoals {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptList(cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.drivers.DriversPackage.Goals_goals, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -104,9 +93,9 @@ public class Goals extends DynamicResource implements IGoals {
 
   // toMeRelations
   
-  public static cleon.analysis.spec.drivers.javamodel.IGoals selectToMeGoals(cleon.analysis.spec.drivers.javamodel.IGoal object) {
-    return _getToMeSingle(object.getRepository(), cleon.analysis.spec.drivers.javamodel.IGoals.class, cleon.analysis.spec.drivers.DriversPackage.Goals_goals, object.getResource());
+  public static cleon.doc.spec.chapter.javamodel.IChapterWithDescription selectToMeDescription(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph object) {
+    return _getToMeSingle(object.getRepository(), cleon.doc.spec.chapter.javamodel.IChapterWithDescription.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f6187db1-3c48-11e5-871f-6beac6a7c24b,xVbvxhzL0F3X2xhN3vMOzZrROU4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b7609c2-3cca-11e5-871f-6beac6a7c24b,UdDYxKr5TdYazVgJqaJyPNLWVSw=] */

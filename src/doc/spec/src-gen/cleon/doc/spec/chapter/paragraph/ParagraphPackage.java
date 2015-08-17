@@ -14,6 +14,7 @@ public class ParagraphPackage {
   public static final Resource Role_paragraphs = new Resource("1e891062-3089-11e5-8cdc-d5b441c8c3df");
   public static final Resource Admonition = new Resource("6e2a6478-308a-11e5-8cdc-d5b441c8c3df");
   public static final Resource Admonition_pararaphs = new Resource("cf1b6f95-308a-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Note_note = new Resource("b2fa1eaf-44af-11e5-99ff-71cc0a5d776b");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +35,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.chapter.paragraph,xfaEv5bWxmbp/alz+zygmVESNQ8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.chapter.paragraph,R6xy537yarbBggMXuHrQ4QpSjKE=] */

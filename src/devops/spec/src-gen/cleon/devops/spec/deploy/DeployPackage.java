@@ -11,6 +11,7 @@ public class DeployPackage {
   public static final Resource QAEnvironment = new Resource("b1dfd829-4070-11e5-b5f0-5b1ce9c3de3e");
   public static final Resource DevelopmentEnvironment = new Resource("ce76dfe8-4070-11e5-b5f0-5b1ce9c3de3e");
   public static final Resource LocalDevelopmentEnvironment = new Resource("d3cb2a83-4070-11e5-b5f0-5b1ce9c3de3e");
+  public static final Resource Environment_abbrevation = new Resource("2fa0daf7-44f7-11e5-b1a6-c55612d53cf4");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class DeployPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.spec.deploy,f2UZlbFXXFObqNdQcQ6YE7gRSaI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.spec.deploy,cqKec1RpIp31tSuAGvlzYZnQvmQ=] */

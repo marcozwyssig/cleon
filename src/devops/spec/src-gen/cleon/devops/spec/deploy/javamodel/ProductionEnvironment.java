@@ -31,6 +31,15 @@ public class ProductionEnvironment extends DynamicResource implements IProductio
   // attributes
   
   @Override
+  public java.lang.String selectAbbrevation() {
+    return _getSingleAttribute(java.lang.String.class, cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation);
+  }
+    
+  public void setAbbrevation(java.lang.String abbrevation) {
+     _setSingleAttribute(cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation, abbrevation);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -55,10 +64,11 @@ public class ProductionEnvironment extends DynamicResource implements IProductio
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,abb6d972-4070-11e5-b5f0-5b1ce9c3de3e,LjY0RqDFP2TubHd+0JrtJSeJkP8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,abb6d972-4070-11e5-b5f0-5b1ce9c3de3e,r7Hzgutx9wI/NVw5ejPTwsxVDIc=] */

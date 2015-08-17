@@ -31,6 +31,15 @@ public class DevelopmentEnvironment extends DynamicResource implements IDevelopm
   // attributes
   
   @Override
+  public java.lang.String selectAbbrevation() {
+    return _getSingleAttribute(java.lang.String.class, cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation);
+  }
+    
+  public void setAbbrevation(java.lang.String abbrevation) {
+     _setSingleAttribute(cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation, abbrevation);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -55,10 +64,11 @@ public class DevelopmentEnvironment extends DynamicResource implements IDevelopm
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.devops.spec.deploy.DeployPackage.Environment_abbrevation, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce76dfe8-4070-11e5-b5f0-5b1ce9c3de3e,ND6684G0gNti0k+BefL5PIW9Ck8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce76dfe8-4070-11e5-b5f0-5b1ce9c3de3e,ONiw8bnrLXYe/8uIWG9mXYaFtd8=] */

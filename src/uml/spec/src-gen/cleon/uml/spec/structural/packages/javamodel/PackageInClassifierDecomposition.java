@@ -41,16 +41,6 @@ public class PackageInClassifierDecomposition extends DynamicResource implements
   }
     
   @Override
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
-  }
-
-  public PackageInClassifierDecomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
@@ -61,12 +51,22 @@ public class PackageInClassifierDecomposition extends DynamicResource implements
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
+  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectInto() {
+    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into);
   }
 
-  public PackageInClassifierDecomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
+  public PackageInClassifierDecomposition setInto(cleon.uml.spec.structural.classes.javamodel.IClassifier into) {
+    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, into);
+    return this;
+  }
+    
+  @Override
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public PackageInClassifierDecomposition setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -105,9 +105,9 @@ public class PackageInClassifierDecomposition extends DynamicResource implements
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
+    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -115,9 +115,9 @@ public class PackageInClassifierDecomposition extends DynamicResource implements
 
   // toMeRelations
   
-  public static cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition selectToMeClass(cleon.uml.spec.structural.classes.javamodel.IClassifier object) {
-    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, object.getResource());
+  public static cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition selectToMeInto(cleon.uml.spec.structural.classes.javamodel.IClassifier object) {
+    return _getToMeSingle(object.getRepository(), cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c64a4da0-1757-11e5-9ca7-d1bb57b73459,kxU8Ir1ujthJyCYdlPH36DCFyRo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c64a4da0-1757-11e5-9ca7-d1bb57b73459,9YLUTwszjsGcMFqJOTE54WQcmro=] */

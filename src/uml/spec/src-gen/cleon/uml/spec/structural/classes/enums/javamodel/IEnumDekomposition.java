@@ -8,8 +8,8 @@ public interface IEnumDekomposition extends cleon.uml.spec.structural.packages.j
   
   // relations
   
-  public cleon.uml.spec.structural.classes.enums.javamodel.IEnum selectEnum();
+  public cleon.uml.spec.structural.classes.enums.javamodel.IEnum selectInto();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,OltlJRoBDV0A8YQWYDDwQp1uB6c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,QFWPcwK6K04caVWqb+cWGepaCEU=] */

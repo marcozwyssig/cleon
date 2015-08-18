@@ -22,7 +22,7 @@
           <object statement-guid="de38daab-10c0-11e3-b60e-ab478a3e1eca" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="de38daac-10c0-11e3-b60e-ab478a3e1eca" type="literal">decomposeEntities</object>
+          <object statement-guid="de38daac-10c0-11e3-b60e-ab478a3e1eca" type="literal">entities</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="de38daae-10c0-11e3-b60e-ab478a3e1eca" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
@@ -44,7 +44,7 @@
           <object statement-guid="c927e5a8-26c3-11e3-a71a-b71d2dda9f8e" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c927e5a9-26c3-11e3-a71a-b71d2dda9f8e" type="literal">decomposeExceptions</object>
+          <object statement-guid="c927e5a9-26c3-11e3-a71a-b71d2dda9f8e" type="literal">exceptions</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="c928d00b-26c3-11e3-a71a-b71d2dda9f8e" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
@@ -66,7 +66,7 @@
           <object statement-guid="d835814a-26c3-11e3-a71a-b71d2dda9f8e" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="d835814b-26c3-11e3-a71a-b71d2dda9f8e" type="literal">decomposeValueObjects</object>
+          <object statement-guid="d835814b-26c3-11e3-a71a-b71d2dda9f8e" type="literal">valueObjects</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="d8366bad-26c3-11e3-a71a-b71d2dda9f8e" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
@@ -88,7 +88,7 @@
           <object statement-guid="2f4f6363-01ce-11e4-ab1e-81fd30785d6d" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="30b6bb9a-01ce-11e4-ab1e-81fd30785d6d" type="literal">decomposeRepository</object>
+          <object statement-guid="30b6bb9a-01ce-11e4-ab1e-81fd30785d6d" type="literal">repository</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="c22502a5-01d3-11e4-ab1e-81fd30785d6d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
@@ -110,7 +110,7 @@
           <object statement-guid="067069f8-01e0-11e4-ab1e-81fd30785d6d" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="0784991f-01e0-11e4-ab1e-81fd30785d6d" type="literal">decomposeDomainServices</object>
+          <object statement-guid="0784991f-01e0-11e4-ab1e-81fd30785d6d" type="literal">domainServices</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="067069fa-01e0-11e4-ab1e-81fd30785d6d" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -132,7 +132,7 @@
           <object statement-guid="aeb489a6-b1bd-11e4-a1b5-85bab1cb6ada" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="afb0eb0e-b1bd-11e4-a1b5-85bab1cb6ada" type="literal">decomposeEnums</object>
+          <object statement-guid="afb0eb0e-b1bd-11e4-a1b5-85bab1cb6ada" type="literal">enums</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="aeb489a8-b1bd-11e4-a1b5-85bab1cb6ada" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
@@ -154,7 +154,7 @@
           <object statement-guid="47731108-d22a-11e4-8b90-c7d981a5f2fd" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="47731109-d22a-11e4-8b90-c7d981a5f2fd" type="literal">decomposeEventAggregator</object>
+          <object statement-guid="47731109-d22a-11e4-8b90-c7d981a5f2fd" type="literal">eventAggregator</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="4773381b-d22a-11e4-8b90-c7d981a5f2fd" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />

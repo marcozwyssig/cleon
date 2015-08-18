@@ -9,7 +9,7 @@ public class RepositoryPackage {
   public static final Resource Repository_searchBy = new Resource("0d7959d5-26cb-11e3-a71a-b71d2dda9f8e");
   public static final Resource Repository_getBy = new Resource("208720d2-26cb-11e3-a71a-b71d2dda9f8e");
   public static final Resource RepositoryDekomposition = new Resource("43b7a073-28b4-11e5-8b63-33a353e42346");
-  public static final Resource RepositoryDekomposition_repository = new Resource("43b7a074-28b4-11e5-8b63-33a353e42346");
+  public static final Resource RepositoryDekomposition_into = new Resource("43b7a074-28b4-11e5-8b63-33a353e42346");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +30,4 @@ public class RepositoryPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.ddd.spec.repository,GSTYpWZXM5gRr2oImQ4Y429KJx0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.ddd.spec.repository,jO5rXSOKp8V/W9qcxhVhWd3Ftig=] */

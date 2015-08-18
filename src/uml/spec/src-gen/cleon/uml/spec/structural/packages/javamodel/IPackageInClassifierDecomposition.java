@@ -8,8 +8,8 @@ public interface IPackageInClassifierDecomposition extends cleon.arc42.spec._05_
   
   // relations
   
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass();
+  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectInto();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c64a4da0-1757-11e5-9ca7-d1bb57b73459,2Uk0n9x7t2ahJzeLeFhmmsuoh3A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c64a4da0-1757-11e5-9ca7-d1bb57b73459,ZszVFrh0sjyEK1WQOF1ufvihQ+8=] */

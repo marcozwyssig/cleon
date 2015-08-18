@@ -8,8 +8,8 @@ public interface IExceptionDekomposition extends cleon.uml.spec.structural.packa
   
   // relations
   
-  public cleon.ddd.spec.exceptions.javamodel.IDomainException selectException();
+  public cleon.ddd.spec.exceptions.javamodel.IDomainException selectInto();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,7461Akrd1RLVQUNNDPvCamWD0Q8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,1F8dE5TS0lP5khsSvXcrtPvyYGg=] */

@@ -41,16 +41,6 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
   }
     
   @Override
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
-  }
-
-  public ServiceDekomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
@@ -61,22 +51,22 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
   }
     
   @Override
-  public cleon.ddd.spec.services.javamodel.IDomainService selectDomainService() {
-    return _getSingle(cleon.ddd.spec.services.javamodel.IDomainService.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_domainService);
+  public cleon.ddd.spec.services.javamodel.IDomainService selectInto() {
+    return _getSingle(cleon.ddd.spec.services.javamodel.IDomainService.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_into);
   }
 
-  public ServiceDekomposition setDomainService(cleon.ddd.spec.services.javamodel.IDomainService domainService) {
-    _setSingle(cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_domainService, domainService);
+  public ServiceDekomposition setInto(cleon.ddd.spec.services.javamodel.IDomainService into) {
+    _setSingle(cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_into, into);
     return this;
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public ServiceDekomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
+  public ServiceDekomposition setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -115,10 +105,9 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptSingle(cleon.ddd.spec.services.javamodel.IDomainService.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_domainService, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
+    _acceptSingle(cleon.ddd.spec.services.javamodel.IDomainService.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_into, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -126,9 +115,9 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
 
   // toMeRelations
   
-  public static cleon.ddd.spec.services.javamodel.IServiceDekomposition selectToMeDomainService(cleon.ddd.spec.services.javamodel.IDomainService object) {
-    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.services.javamodel.IServiceDekomposition.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_domainService, object.getResource());
+  public static cleon.ddd.spec.services.javamodel.IServiceDekomposition selectToMeInto(cleon.ddd.spec.services.javamodel.IDomainService object) {
+    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.services.javamodel.IServiceDekomposition.class, cleon.ddd.spec.services.ServicesPackage.ServiceDekomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,tgljHJsg0GmwMsPl80eXjK7kx7E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,5jfZGHZGmQHn37aT/bhM2oae+pE=] */

@@ -11,7 +11,7 @@ public class PackagesPackage {
   public static final Resource PackageDecomposition = new Resource("392c77b6-1756-11e5-9ca7-d1bb57b73459");
   public static final Resource PackageDecomposition_into = new Resource("392c77b7-1756-11e5-9ca7-d1bb57b73459");
   public static final Resource PackageInClassifierDecomposition = new Resource("c64a4da0-1757-11e5-9ca7-d1bb57b73459");
-  public static final Resource PackageInClassifierDecomposition_class = new Resource("c64a4da1-1757-11e5-9ca7-d1bb57b73459");
+  public static final Resource PackageInClassifierDecomposition_into = new Resource("c64a4da1-1757-11e5-9ca7-d1bb57b73459");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +32,4 @@ public class PackagesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.packages,hWvQO6QCaRuvAiFSUXkLjoJTwmQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.packages,ssiG9xA6LZbwEWs6l4qs7tBI6uM=] */

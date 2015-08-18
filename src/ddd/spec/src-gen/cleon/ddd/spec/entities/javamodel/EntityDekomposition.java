@@ -41,16 +41,6 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   }
     
   @Override
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
-  }
-
-  public EntityDekomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
@@ -61,22 +51,22 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   }
     
   @Override
-  public cleon.ddd.spec.entities.javamodel.IEntity selectEntity() {
-    return _getSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity);
+  public cleon.ddd.spec.entities.javamodel.IEntity selectInto() {
+    return _getSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_into);
   }
 
-  public EntityDekomposition setEntity(cleon.ddd.spec.entities.javamodel.IEntity entity) {
-    _setSingle(cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity, entity);
+  public EntityDekomposition setInto(cleon.ddd.spec.entities.javamodel.IEntity into) {
+    _setSingle(cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_into, into);
     return this;
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public EntityDekomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
+  public EntityDekomposition setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -115,10 +105,9 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
+    _acceptSingle(cleon.ddd.spec.entities.javamodel.IEntity.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_into, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -126,9 +115,9 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
 
   // toMeRelations
   
-  public static cleon.ddd.spec.entities.javamodel.IEntityDekomposition selectToMeEntity(cleon.ddd.spec.entities.javamodel.IEntity object) {
-    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.entities.javamodel.IEntityDekomposition.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_entity, object.getResource());
+  public static cleon.ddd.spec.entities.javamodel.IEntityDekomposition selectToMeInto(cleon.ddd.spec.entities.javamodel.IEntity object) {
+    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.entities.javamodel.IEntityDekomposition.class, cleon.ddd.spec.entities.EntitiesPackage.EntityDekomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,q3A2rmURyWEMPA5ZhcBBfqUyT90=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,R1WpybtbqzK1f5fInvU5R8gAuEo=] */

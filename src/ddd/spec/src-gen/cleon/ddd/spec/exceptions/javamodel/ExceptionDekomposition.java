@@ -41,16 +41,6 @@ public class ExceptionDekomposition extends DynamicResource implements IExceptio
   }
     
   @Override
-  public cleon.uml.spec.structural.classes.javamodel.IClassifier selectClass() {
-    return _getSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class);
-  }
-
-  public ExceptionDekomposition setClass(cleon.uml.spec.structural.classes.javamodel.IClassifier class_) {
-    _setSingle(cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, class_);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
     return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
@@ -61,22 +51,22 @@ public class ExceptionDekomposition extends DynamicResource implements IExceptio
   }
     
   @Override
-  public cleon.ddd.spec.exceptions.javamodel.IDomainException selectException() {
-    return _getSingle(cleon.ddd.spec.exceptions.javamodel.IDomainException.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_exception);
+  public cleon.ddd.spec.exceptions.javamodel.IDomainException selectInto() {
+    return _getSingle(cleon.ddd.spec.exceptions.javamodel.IDomainException.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_into);
   }
 
-  public ExceptionDekomposition setException(cleon.ddd.spec.exceptions.javamodel.IDomainException exception) {
-    _setSingle(cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_exception, exception);
+  public ExceptionDekomposition setInto(cleon.ddd.spec.exceptions.javamodel.IDomainException into) {
+    _setSingle(cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_into, into);
     return this;
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock selectInto() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into);
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public ExceptionDekomposition setInto(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock into) {
-    _setSingle(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, into);
+  public ExceptionDekomposition setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -115,10 +105,9 @@ public class ExceptionDekomposition extends DynamicResource implements IExceptio
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.uml.spec.structural.packages.PackagesPackage.PackageInClassifierDecomposition_class, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptSingle(cleon.ddd.spec.exceptions.javamodel.IDomainException.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_exception, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.UseDecomposite_into, visitor);
+    _acceptSingle(cleon.ddd.spec.exceptions.javamodel.IDomainException.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_into, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -126,9 +115,9 @@ public class ExceptionDekomposition extends DynamicResource implements IExceptio
 
   // toMeRelations
   
-  public static cleon.ddd.spec.exceptions.javamodel.IExceptionDekomposition selectToMeException(cleon.ddd.spec.exceptions.javamodel.IDomainException object) {
-    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.exceptions.javamodel.IExceptionDekomposition.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_exception, object.getResource());
+  public static cleon.ddd.spec.exceptions.javamodel.IExceptionDekomposition selectToMeInto(cleon.ddd.spec.exceptions.javamodel.IDomainException object) {
+    return _getToMeSingle(object.getRepository(), cleon.ddd.spec.exceptions.javamodel.IExceptionDekomposition.class, cleon.ddd.spec.exceptions.ExceptionsPackage.ExceptionDekomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,AAOqx/Ki46smomht3HU7eq3CDWE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,LQ9TM7Y/hfcQyoZziO+gCLoN+E0=] */

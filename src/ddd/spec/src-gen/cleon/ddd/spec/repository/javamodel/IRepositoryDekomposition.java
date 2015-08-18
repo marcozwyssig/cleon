@@ -8,8 +8,8 @@ public interface IRepositoryDekomposition extends cleon.uml.spec.structural.pack
   
   // relations
   
-  public cleon.ddd.spec.repository.javamodel.IRepository selectRepository();
+  public cleon.ddd.spec.repository.javamodel.IRepository selectInto();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,43b7a073-28b4-11e5-8b63-33a353e42346,JJ3mTmEki/oWBk44emi0AnmDUNo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,43b7a073-28b4-11e5-8b63-33a353e42346,0sYSU2NnpLhpBa1qxJdYd5B8tNM=] */

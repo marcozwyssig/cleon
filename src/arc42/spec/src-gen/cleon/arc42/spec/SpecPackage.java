@@ -11,6 +11,7 @@ public class SpecPackage {
   public static final Resource arc42___V_1_aE_introduction_aE_and_aE_goals = new Resource("491a2951-3b4d-11e5-86bc-73aedc28563d");
   public static final Resource arc42___V_5_aE_buildingblockview = new Resource("5e653627-3b4d-11e5-86bc-73aedc28563d");
   public static final Resource arc42___V_7_aE_deploymentview = new Resource("6beca6d5-3b4d-11e5-86bc-73aedc28563d");
+  public static final Resource NamedArc42 = new Resource("58270d36-45a6-11e5-be7f-05f703299ead");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec,v+/FKZH6s7sOEa8/T7eGvqxeQuU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec,Ccfp2hO0nCb27zTO6UFnspheGUA=] */

@@ -61,12 +61,12 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
     
   @Override
-  public java.util.List<? extends cleon.analysis.spec.drivers.javamodel.IGoals> selectGoal() {
-    return _getList(cleon.analysis.spec.drivers.javamodel.IGoals.class, cleon.analysis.spec.drivers.DriversPackage.Drivers_goal);
+  public cleon.analysis.spec.drivers.javamodel.IGoals selectGoal() {
+    return _getSingle(cleon.analysis.spec.drivers.javamodel.IGoals.class, cleon.analysis.spec.drivers.DriversPackage.Drivers_goal);
   }
 
-  public Drivers setGoal(java.util.List<? extends cleon.analysis.spec.drivers.javamodel.IGoals> goal) {
-    _setList(cleon.analysis.spec.drivers.DriversPackage.Drivers_goal, goal);
+  public Drivers setGoal(cleon.analysis.spec.drivers.javamodel.IGoals goal) {
+    _setSingle(cleon.analysis.spec.drivers.DriversPackage.Drivers_goal, goal);
     return this;
   }
     
@@ -137,7 +137,7 @@ public class Drivers extends DynamicResource implements IDrivers {
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.analysis.spec.drivers.javamodel.IContext.class, cleon.analysis.spec.drivers.DriversPackage.Drivers_context, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
-    _acceptList(cleon.analysis.spec.drivers.javamodel.IGoals.class, cleon.analysis.spec.drivers.DriversPackage.Drivers_goal, visitor);
+    _acceptSingle(cleon.analysis.spec.drivers.javamodel.IGoals.class, cleon.analysis.spec.drivers.DriversPackage.Drivers_goal, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
@@ -161,4 +161,4 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,Yh+0bkzgGC6ldcpScPZHsquNlno=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,HC4GRAV0dwPP/7o77BRCxK31SJI=] */

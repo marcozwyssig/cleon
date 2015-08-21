@@ -10,10 +10,10 @@ public interface IDrivers extends cleon.doc.spec.document.javamodel.ISubDocument
   
   public cleon.analysis.spec.drivers.javamodel.IContext selectContext();
   
-  public java.util.List<? extends cleon.analysis.spec.drivers.javamodel.IGoals> selectGoal();
+  public cleon.analysis.spec.drivers.javamodel.IGoals selectGoal();
   
   public java.util.List<? extends cleon.analysis.spec.drivers.javamodel.ISource> selectSources();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,giFEeGtJ6L4eouTTw9Zk/J2E5VI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,Zs43nCvDSb9a04uO37+ZV61i/KA=] */

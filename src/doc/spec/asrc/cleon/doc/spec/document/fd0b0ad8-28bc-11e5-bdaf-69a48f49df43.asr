@@ -1,41 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="fd0b0ad8-28bc-11e5-bdaf-69a48f49df43">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="fd0b0aed-28bc-11e5-bdaf-69a48f49df43" guid="fd0b0ada-28bc-11e5-bdaf-69a48f49df43" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fd0b0adf-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="680a162b-31f8-11e5-bd99-eda9ce254b0b" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
-    <object statement-guid="fd0b0adc-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="95c666da-d86d-11e4-aa2f-c11242a92b60" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="fd0b0aed-28bc-11e5-bdaf-69a48f49df43">
-      <resource guid="fd0b0ada-28bc-11e5-bdaf-69a48f49df43">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="fd0b0aec-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="fd0b0ae9-28bc-11e5-bdaf-69a48f49df43" type="literal">documents</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="fd0b0aeb-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="fd0b0aea-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
-          <object statement-guid="fd0b0ae7-28bc-11e5-bdaf-69a48f49df43" type="literal">documents</object>
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="fd0b0ae8-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="fd0b0ad8-28bc-11e5-bdaf-69a48f49df43" />
-        </predicate>
-        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
-          <object statement-guid="6f57e7c2-28bd-11e5-bdaf-69a48f49df43" type="resource" guid="a550fab6-d86d-11e4-aa2f-c11242a92b60" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="71a8a98c-47cb-11e5-9568-fbe9ec4a688c" type="resource" guid="6d2b5eb0-47cb-11e5-9568-fbe9ec4a688c" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fd0b0adb-28bc-11e5-bdaf-69a48f49df43" type="literal">Document</object>

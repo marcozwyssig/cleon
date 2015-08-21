@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="360e7ec0-466c-11e5-ba74-cb2e95044e1c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="433e3262-466c-11e5-ba74-cb2e95044e1c" guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="360e7ec2-466c-11e5-ba74-cb2e95044e1c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="360e7ec4-466c-11e5-ba74-cb2e95044e1c" type="resource" guid="822fffdf-28ba-11e5-bdaf-69a48f49df43" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="433e3262-466c-11e5-ba74-cb2e95044e1c">
+      <resource guid="0c6f72c9-d86e-11e4-aa2f-c11242a92b60">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0c6fc0eb-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0d7941af-d86e-11e4-aa2f-c11242a92b60" type="literal">paragraphes</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0c70ab4d-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0c70ab4e-d86e-11e4-aa2f-c11242a92b60" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="f33ec1e0-3063-11e5-8cdc-d5b441c8c3df" type="resource" guid="4c12c1e8-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="f485c0e1-3063-11e5-8cdc-d5b441c8c3df" type="resource" guid="822fffe0-28ba-11e5-bdaf-69a48f49df43" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="360e7ec3-466c-11e5-ba74-cb2e95044e1c" type="literal">ParagraphOwnDocumentElementComposite</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="5458dbb8-466c-11e5-ba74-cb2e95044e1c" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

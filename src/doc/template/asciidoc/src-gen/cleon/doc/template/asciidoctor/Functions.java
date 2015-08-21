@@ -68,13 +68,10 @@ public class Functions {
 
   }
 
-  public static interface IDocumentFunctions extends IDynamicResourceExtension {
+  public static interface ISubDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("93a73e3b-d872-11e4-aa2f-c11242a92b60")
     public java.lang.String RenderContent();
-
-    @IDynamicResourceExtension.MethodId("6a76a89d-307b-11e5-8cdc-d5b441c8c3df")
-    public List<cleon.doc.spec.javamodel.IDocumentElement> SelectSubElements();
 
     @IDynamicResourceExtension.MethodId("8a722bc2-3528-11e5-909a-4bcced25d7ee")
     public java.lang.String RenderDocument();
@@ -87,21 +84,21 @@ public class Functions {
 
   }
   
-  public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISubDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DocumentFunctionsImpl implements IDocumentFunctionsImpl {
+  public static class SubDocumentFunctionsImpl implements ISubDocumentFunctionsImpl {
 
-    public static final IDocumentFunctionsImpl INSTANCE = new DocumentFunctionsImpl();
+    public static final ISubDocumentFunctionsImpl INSTANCE = new SubDocumentFunctionsImpl();
 
-    private DocumentFunctionsImpl() {}
+    private SubDocumentFunctionsImpl() {}
 
   }
   
-  public static class DocumentFunctions {
+  public static class SubDocumentFunctions {
 
-    private DocumentFunctions() {}
+    private SubDocumentFunctions() {}
 
   }
 
@@ -130,28 +127,28 @@ public class Functions {
 
   }
 
-  public static interface IOrderedListFunctions extends IDynamicResourceExtension {
+  public static interface INumberedListFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("889d84ac-d882-11e4-a5d6-b92b0ce88839")
     public java.lang.String RenderContent();
 
   }
   
-  public static interface IOrderedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INumberedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class OrderedListFunctionsImpl implements IOrderedListFunctionsImpl {
+  public static class NumberedListFunctionsImpl implements INumberedListFunctionsImpl {
 
-    public static final IOrderedListFunctionsImpl INSTANCE = new OrderedListFunctionsImpl();
+    public static final INumberedListFunctionsImpl INSTANCE = new NumberedListFunctionsImpl();
 
-    private OrderedListFunctionsImpl() {}
+    private NumberedListFunctionsImpl() {}
 
   }
   
-  public static class OrderedListFunctions {
+  public static class NumberedListFunctions {
 
-    private OrderedListFunctions() {}
+    private NumberedListFunctions() {}
 
   }
 
@@ -255,14 +252,7 @@ public class Functions {
       	
       	cleon.doc.spec.javamodel.IDocumentElementComposite parentCollection = (cleon.doc.spec.javamodel.IDocumentElementComposite)parent; 	
       	java.lang.String parentIndex = GetIndent(parentCollection);
-      	if( parentIndex != "")
-      	{      	
-      		return "=" + GetIndent(parentCollection);
-      	}
-      	else
-      	{
-      		return "= " + GetIndent(parentCollection);
-      	}
+  		return "=" + GetIndent(parentCollection);
       /* End Protected Region   [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     }
 
@@ -384,7 +374,7 @@ public class Functions {
     public java.lang.String RenderContent();
 
     @IDynamicResourceExtension.MethodId("09740646-3cf9-11e5-871f-6beac6a7c24b")
-    public cleon.doc.spec.chapter.paragraph.typedtable.javamodel.IColumnRelation SelectColumnRelation();
+    public cleon.doc.spec.paragraph.typedtable.javamodel.IColumnRelation SelectColumnRelation();
 
     @IDynamicResourceExtension.MethodId("ed1cfad2-3cfd-11e5-871f-6beac6a7c24b")
     public java.lang.String RenderHeader();
@@ -412,6 +402,212 @@ public class Functions {
 
   }
 
+  public static interface ISourceCodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("809f5cf9-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface ISourceCodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SourceCodeFunctionsImpl implements ISourceCodeFunctionsImpl {
+
+    public static final ISourceCodeFunctionsImpl INSTANCE = new SourceCodeFunctionsImpl();
+
+    private SourceCodeFunctionsImpl() {}
+
+  }
+  
+  public static class SourceCodeFunctions {
+
+    private SourceCodeFunctions() {}
+
+  }
+
+  public static interface IHighlightingSourceCodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("84aef1f2-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IHighlightingSourceCodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class HighlightingSourceCodeFunctionsImpl implements IHighlightingSourceCodeFunctionsImpl {
+
+    public static final IHighlightingSourceCodeFunctionsImpl INSTANCE = new HighlightingSourceCodeFunctionsImpl();
+
+    private HighlightingSourceCodeFunctionsImpl() {}
+
+  }
+  
+  public static class HighlightingSourceCodeFunctions {
+
+    private HighlightingSourceCodeFunctions() {}
+
+  }
+
+  public static interface ITipFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8b19b54c-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface ITipFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TipFunctionsImpl implements ITipFunctionsImpl {
+
+    public static final ITipFunctionsImpl INSTANCE = new TipFunctionsImpl();
+
+    private TipFunctionsImpl() {}
+
+  }
+  
+  public static class TipFunctions {
+
+    private TipFunctions() {}
+
+  }
+
+  public static interface IWarningFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("902d259f-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IWarningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WarningFunctionsImpl implements IWarningFunctionsImpl {
+
+    public static final IWarningFunctionsImpl INSTANCE = new WarningFunctionsImpl();
+
+    private WarningFunctionsImpl() {}
+
+  }
+  
+  public static class WarningFunctions {
+
+    private WarningFunctions() {}
+
+  }
+
+  public static interface ICautionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("944aeb52-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface ICautionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CautionFunctionsImpl implements ICautionFunctionsImpl {
+
+    public static final ICautionFunctionsImpl INSTANCE = new CautionFunctionsImpl();
+
+    private CautionFunctionsImpl() {}
+
+  }
+  
+  public static class CautionFunctions {
+
+    private CautionFunctions() {}
+
+  }
+
+  public static interface IImportantFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9b29a528-466f-11e5-ba74-cb2e95044e1c")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IImportantFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ImportantFunctionsImpl implements IImportantFunctionsImpl {
+
+    public static final IImportantFunctionsImpl INSTANCE = new ImportantFunctionsImpl();
+
+    private ImportantFunctionsImpl() {}
+
+  }
+  
+  public static class ImportantFunctions {
+
+    private ImportantFunctions() {}
+
+  }
+
+  public static interface IDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6482a73c-47cd-11e5-9568-fbe9ec4a688c")
+    public java.lang.String RenderDocument();
+
+    @IDynamicResourceExtension.MethodId("e3b00d61-47d5-11e5-9e30-e198f8ad676a")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DocumentFunctionsImpl implements IDocumentFunctionsImpl {
+
+    public static final IDocumentFunctionsImpl INSTANCE = new DocumentFunctionsImpl();
+
+    private DocumentFunctionsImpl() {}
+
+  }
+  
+  public static class DocumentFunctions {
+
+    private DocumentFunctions() {}
+
+  }
+
+  public static interface IAbstractDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6a76a89d-307b-11e5-8cdc-d5b441c8c3df")
+    public List<cleon.doc.spec.javamodel.IDocumentElement> SelectSubElements();
+
+    @IDynamicResourceExtension.MethodId("54ce2448-47d5-11e5-9e30-e198f8ad676a")
+    public java.lang.String RenderDocument();
+
+  }
+  
+  public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractDocumentFunctionsImpl implements IAbstractDocumentFunctionsImpl {
+
+    public static final IAbstractDocumentFunctionsImpl INSTANCE = new AbstractDocumentFunctionsImpl();
+
+    private AbstractDocumentFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractDocumentFunctions {
+
+    private AbstractDocumentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,hYi6OyoilnjRRYDNG83qSM3LFUw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,WgZCxSTxcdg4PDCDeB7EByAt8UA=] */

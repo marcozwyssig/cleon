@@ -30,4 +30,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.template.eclipse,jQvrWHPrFuH8MOcSrpbgkOvX3SA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.template.eclipse,jVwm01Z+HuvKxdy2tjdwlYsY0MY=] */

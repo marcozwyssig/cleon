@@ -32,50 +32,50 @@ public class Goal extends DynamicResource implements IGoal {
   
   @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
+    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
 
   public Goal setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
+    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectColumnOwns() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
+  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectColumnOwns() {
+    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
   }
 
-  public Goal setColumnOwns(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> columnOwns) {
-    _setList(cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
+  public Goal setColumnOwns(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> columnOwns) {
+    _setList(cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
+  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
+    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
 
-  public Goal setDescription(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph> description) {
+  public Goal setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
     return this;
   }
     
   @Override
-  public cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph selectGoaldescription() {
-    return _getSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription);
+  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectGoaldescription() {
+    return _getSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription);
   }
 
-  public Goal setGoaldescription(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph goaldescription) {
+  public Goal setGoaldescription(cleon.doc.spec.paragraph.javamodel.ITextParagraph goaldescription) {
     _setSingle(cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, goaldescription);
     return this;
   }
     
   @Override
-  public cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph selectGoalname() {
-    return _getSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname);
+  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectGoalname() {
+    return _getSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname);
   }
 
-  public Goal setGoalname(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph goalname) {
+  public Goal setGoalname(cleon.doc.spec.paragraph.javamodel.ITextParagraph goalname) {
     _setSingle(cleon.analysis.spec.drivers.DriversPackage.Goal_goalname, goalname);
     return this;
   }
@@ -101,12 +101,12 @@ public class Goal extends DynamicResource implements IGoal {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes);
+  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
 
-  public Goal setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, paragraphes);
+  public Goal setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
     return this;
   }
     
@@ -124,24 +124,24 @@ public class Goal extends DynamicResource implements IGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname, visitor);
+    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
+    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
+    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
+    _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, visitor);
+    _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname, visitor);
     _acceptSingle(cleon.analysis.spec.drivers.javamodel.IGoalImportance.class, cleon.analysis.spec.drivers.DriversPackage.Goal_importance, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
+    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.analysis.spec.drivers.javamodel.IGoal selectToMeGoalname(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph object) {
+  public static cleon.analysis.spec.drivers.javamodel.IGoal selectToMeGoalname(cleon.doc.spec.paragraph.javamodel.ITextParagraph object) {
     return _getToMeSingle(object.getRepository(), cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname, object.getResource());
   }
   
-  public static cleon.analysis.spec.drivers.javamodel.IGoal selectToMeGoaldescription(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph object) {
+  public static cleon.analysis.spec.drivers.javamodel.IGoal selectToMeGoaldescription(cleon.doc.spec.paragraph.javamodel.ITextParagraph object) {
     return _getToMeSingle(object.getRepository(), cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, object.getResource());
   }
   
@@ -150,4 +150,4 @@ public class Goal extends DynamicResource implements IGoal {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,UDbftKEJMN2XUEvbeAAfRC4yl7Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,AODi3++HTxziGTs687e0wpKTp9Q=] */

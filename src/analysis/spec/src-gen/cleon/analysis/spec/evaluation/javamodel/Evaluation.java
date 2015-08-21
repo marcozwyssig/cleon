@@ -31,32 +31,32 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   // relations
   
   @Override
-  public cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph selectAssessment() {
-    return _getSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment);
+  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectAssessment() {
+    return _getSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment);
   }
 
-  public Evaluation setAssessment(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph assessment) {
+  public Evaluation setAssessment(cleon.doc.spec.paragraph.javamodel.ITextParagraph assessment) {
     _setSingle(cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, assessment);
     return this;
   }
     
   @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters);
+    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
 
   public Evaluation setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, chapters);
+    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectColumnOwns() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
+  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectColumnOwns() {
+    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
   }
 
-  public Evaluation setColumnOwns(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> columnOwns) {
-    _setList(cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
+  public Evaluation setColumnOwns(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> columnOwns) {
+    _setList(cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
     return this;
   }
     
@@ -81,12 +81,12 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
     
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes);
+  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectParagraphes() {
+    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
 
-  public Evaluation setParagraphes(java.util.List<? extends cleon.doc.spec.chapter.paragraph.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, paragraphes);
+  public Evaluation setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
+    _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
     return this;
   }
     
@@ -124,12 +124,12 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, visitor);
-    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_chapters, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
+    _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, visitor);
+    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
+    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
     _acceptSingle(cleon.analysis.spec.drivers.javamodel.IGoal.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_goal, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
-    _acceptList(cleon.doc.spec.chapter.paragraph.javamodel.IParagraph.class, cleon.doc.spec.chapter.ChapterPackage.Chapter_paragraphes, visitor);
+    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.analysis.spec.evaluation.javamodel.IScore.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_score, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -137,7 +137,7 @@ public class Evaluation extends DynamicResource implements IEvaluation {
 
   // toMeRelations
   
-  public static cleon.analysis.spec.evaluation.javamodel.IEvaluation selectToMeAssessment(cleon.doc.spec.chapter.paragraph.javamodel.ITextParagraph object) {
+  public static cleon.analysis.spec.evaluation.javamodel.IEvaluation selectToMeAssessment(cleon.doc.spec.paragraph.javamodel.ITextParagraph object) {
     return _getToMeSingle(object.getRepository(), cleon.analysis.spec.evaluation.javamodel.IEvaluation.class, cleon.analysis.spec.evaluation.EvaluationPackage.Evaluation_assessment, object.getResource());
   }
   
@@ -150,4 +150,4 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,UmJmN2Ip8aHUz47WrqwN9zTL7nA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,U33PSHDiRZ3Z/TWZLCbY3dlC4no=] */

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.cloud.spec</name>
+	<comment/>
+	<projects>
+		<project>cleon.doc.spec</project>
+		<project>cleon.arc42.spec</project>
+		<project>cleon.uml.spec</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,b154065d-4e67-11e5-b1c6-87a5f4c1016f,svhYCv7Hfm+ChMAq9qxdfJow0Ec=] -->

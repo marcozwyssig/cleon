@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="5f4255e5-4e6e-11e5-a091-3f804edda9db">
+  <owns predicate="949c6f66-4e6d-11e5-a091-3f804edda9db">
+    <resource statement-guid="6c296803-4e6e-11e5-a091-3f804edda9db" guid="6c296800-4e6e-11e5-a091-3f804edda9db">
+      <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+        <resource statement-guid="755a28b7-4e6e-11e5-a091-3f804edda9db" guid="755a28b4-4e6e-11e5-a091-3f804edda9db" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5f4255e7-4e6e-11e5-a091-3f804edda9db" type="resource" guid="7f35fd79-4e6b-11e5-b08e-673a0d02fb08" />
+  </predicate>
+  <predicate guid="949c6f66-4e6d-11e5-a091-3f804edda9db">
+    <object statement-guid="6c296803-4e6e-11e5-a091-3f804edda9db">
+      <resource guid="6c296800-4e6e-11e5-a091-3f804edda9db">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6c296802-4e6e-11e5-a091-3f804edda9db" type="resource" guid="b740749f-4e6b-11e5-b08e-673a0d02fb08" />
+        </predicate>
+        <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+          <object statement-guid="755a28b7-4e6e-11e5-a091-3f804edda9db">
+            <resource guid="755a28b4-4e6e-11e5-a091-3f804edda9db">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="755a28b6-4e6e-11e5-a091-3f804edda9db" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
+              </predicate>
+              <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
+                <object statement-guid="75e9224b-4e6e-11e5-a091-3f804edda9db" type="literal">Cleon is a set of specifications for modeling a problem or a solution domain. These specifications allows to define and reuse the domain very well. </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

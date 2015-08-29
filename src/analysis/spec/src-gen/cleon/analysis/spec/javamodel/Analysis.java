@@ -132,6 +132,16 @@ public class Analysis extends DynamicResource implements IAnalysis {
   }
     
   @Override
+  public cleon.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style);
+  }
+
+  public Analysis setStyle(cleon.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.doc.spec.document.DocumentPackage.Document_style, style);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -166,6 +176,7 @@ public class Analysis extends DynamicResource implements IAnalysis {
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.analysis.spec.solutions.javamodel.ISolutions.class, cleon.analysis.spec.SpecPackage.Analysis_solution, visitor);
+    _acceptSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
@@ -185,4 +196,4 @@ public class Analysis extends DynamicResource implements IAnalysis {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,wtHc7cq3usidwipLaTFEu/fIYuU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,zRGejtc6DtqbcsgV7Pl1GoRJeYQ=] */

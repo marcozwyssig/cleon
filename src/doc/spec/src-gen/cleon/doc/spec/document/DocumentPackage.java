@@ -12,6 +12,7 @@ public class DocumentPackage {
   public static final Resource AbstractDocument = new Resource("6d2b5eb0-47cb-11e5-9568-fbe9ec4a688c");
   public static final Resource SubDocument = new Resource("a82183f9-47cb-11e5-9568-fbe9ec4a688c");
   public static final Resource NamedSubDocument = new Resource("d1baedfe-47cb-11e5-9568-fbe9ec4a688c");
+  public static final Resource Document_style = new Resource("79577698-47f6-11e5-a18e-994cfeeeb1be");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class DocumentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.document,HSVf61fQV+19tSfcAFNVVTSVhMY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.document,zwa1F0Jb0HMGR9OzA2t031yzTP4=] */

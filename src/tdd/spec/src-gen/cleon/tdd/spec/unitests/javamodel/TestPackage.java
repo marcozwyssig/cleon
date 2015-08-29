@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -101,22 +101,22 @@ public class TestPackage extends DynamicResource implements ITestPackage {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestClassDecomposition> selectTestClasses() {
-    return _getMap(cleon.tdd.spec.javamodel.ITestClassDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackage_testClasses);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestClassDecomposition> selectTestClasses() {
+    return _getMap(cleon.tdd.spec.unitests.javamodel.ITestClassDecomposition.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testClasses);
   }
 
-  public TestPackage setTestClasses(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestClassDecomposition> testClasses) {
-    _setMap(cleon.tdd.spec.SpecPackage.TestPackage_testClasses, testClasses);
+  public TestPackage setTestClasses(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestClassDecomposition> testClasses) {
+    _setMap(cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testClasses, testClasses);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestPackageDecomposition> selectTestPackages() {
-    return _getMap(cleon.tdd.spec.javamodel.ITestPackageDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackage_testPackages);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestPackageDecomposition> selectTestPackages() {
+    return _getMap(cleon.tdd.spec.unitests.javamodel.ITestPackageDecomposition.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testPackages);
   }
 
-  public TestPackage setTestPackages(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestPackageDecomposition> testPackages) {
-    _setMap(cleon.tdd.spec.SpecPackage.TestPackage_testPackages, testPackages);
+  public TestPackage setTestPackages(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestPackageDecomposition> testPackages) {
+    _setMap(cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testPackages, testPackages);
     return this;
   }
     
@@ -141,20 +141,20 @@ public class TestPackage extends DynamicResource implements ITestPackage {
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_subPackages, visitor);
-    _acceptMap(cleon.tdd.spec.javamodel.ITestClassDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackage_testClasses, visitor);
-    _acceptMap(cleon.tdd.spec.javamodel.ITestPackageDecomposition.class, cleon.tdd.spec.SpecPackage.TestPackage_testPackages, visitor);
+    _acceptMap(cleon.tdd.spec.unitests.javamodel.ITestClassDecomposition.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testClasses, visitor);
+    _acceptMap(cleon.tdd.spec.unitests.javamodel.ITestPackageDecomposition.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.tdd.spec.javamodel.ITestPackage selectToMeTestPackages(cleon.tdd.spec.javamodel.ITestPackageDecomposition object) {
-    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.javamodel.ITestPackage.class, cleon.tdd.spec.SpecPackage.TestPackage_testPackages, object.getResource());
+  public static cleon.tdd.spec.unitests.javamodel.ITestPackage selectToMeTestPackages(cleon.tdd.spec.unitests.javamodel.ITestPackageDecomposition object) {
+    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestPackage.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testPackages, object.getResource());
   }
   
-  public static cleon.tdd.spec.javamodel.ITestPackage selectToMeTestClasses(cleon.tdd.spec.javamodel.ITestClassDecomposition object) {
-    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.javamodel.ITestPackage.class, cleon.tdd.spec.SpecPackage.TestPackage_testClasses, object.getResource());
+  public static cleon.tdd.spec.unitests.javamodel.ITestPackage selectToMeTestClasses(cleon.tdd.spec.unitests.javamodel.ITestClassDecomposition object) {
+    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestPackage.class, cleon.tdd.spec.unitests.UnitestsPackage.TestPackage_testClasses, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8faff353-9a2f-11e3-8bcf-e973a9ae2871,YVlhbtbWbYGZaUj82nUQqYMxYvs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8faff353-9a2f-11e3-8bcf-e973a9ae2871,eQzZX7MEh+DMEN7w8gpMFWt4xxY=] */

@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -32,20 +32,20 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   
   @Override
   public java.lang.String selectGiven() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given);
   }
     
   public void setGiven(java.lang.String given) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_given, given);
+     _setSingleAttribute(cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given, given);
   }
 
   @Override
   public java.lang.String selectThen() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then);
   }
     
   public void setThen(java.lang.String then) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_then, then);
+     _setSingleAttribute(cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then, then);
   }
 
   // relations
@@ -72,11 +72,11 @@ public class TestProperty extends DynamicResource implements ITestProperty {
     
   @Override
   public cleon.uml.spec.structural.classes.fields.javamodel.IProperty selectWhen() {
-    return _getSingle(cleon.uml.spec.structural.classes.fields.javamodel.IProperty.class, cleon.tdd.spec.SpecPackage.TestProperty_when);
+    return _getSingle(cleon.uml.spec.structural.classes.fields.javamodel.IProperty.class, cleon.tdd.spec.unitests.UnitestsPackage.TestProperty_when);
   }
 
   public TestProperty setWhen(cleon.uml.spec.structural.classes.fields.javamodel.IProperty when) {
-    _setSingle(cleon.tdd.spec.SpecPackage.TestProperty_when, when);
+    _setSingle(cleon.tdd.spec.unitests.UnitestsPackage.TestProperty_when, when);
     return this;
   }
     
@@ -84,19 +84,19 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.fields.javamodel.IProperty.class, cleon.tdd.spec.SpecPackage.TestProperty_when, visitor);
+    _acceptSingle(cleon.uml.spec.structural.classes.fields.javamodel.IProperty.class, cleon.tdd.spec.unitests.UnitestsPackage.TestProperty_when, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.tdd.spec.javamodel.ITestProperty> selectToMeWhen(cleon.uml.spec.structural.classes.fields.javamodel.IProperty object) {
-    return _getToMeList(object.getRepository(), cleon.tdd.spec.javamodel.ITestProperty.class, cleon.tdd.spec.SpecPackage.TestProperty_when, object.getResource());
+  public static java.util.List<cleon.tdd.spec.unitests.javamodel.ITestProperty> selectToMeWhen(cleon.uml.spec.structural.classes.fields.javamodel.IProperty object) {
+    return _getToMeList(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestProperty.class, cleon.tdd.spec.unitests.UnitestsPackage.TestProperty_when, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,sLNnumnEkoe4gGKZcXnm1ig3MbE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,GqQJRBr+R9kBy6AqYoE+oqu0Flo=] */

@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface ITestComponentDependency extends cleon.uml.spec.structural.comp
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,f48V8+Hmb9M2mlkBNXsWAPr7otg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,sP3VHVMmx8OetsLNIqBZNEz4b+A=] */

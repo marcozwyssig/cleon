@@ -1,8 +1,8 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestMethod extends cleon.tdd.spec.javamodel.ITestObjekt {
+public interface ITestMethod extends cleon.tdd.spec.unitests.javamodel.ITestObjekt {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ef10e4c2-df47-11e2-b229-cd1bd4a07953");
   
@@ -14,4 +14,4 @@ public interface ITestMethod extends cleon.tdd.spec.javamodel.ITestObjekt {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,Unv+VJQtDPwANz4AELpWdeieeGY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,uESiNoHjrugQerUTKk+Ka05Shsg=] */

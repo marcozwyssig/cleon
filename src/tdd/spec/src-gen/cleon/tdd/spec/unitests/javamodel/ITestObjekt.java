@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -14,4 +14,4 @@ public interface ITestObjekt extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,CUvfMBt79jnhPAjz96fRVUzVQYo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,bBjzEUiW+yETBl1AUKHzMD3Q2xU=] */

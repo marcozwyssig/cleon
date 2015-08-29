@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -32,29 +32,29 @@ public class TestMethod extends DynamicResource implements ITestMethod {
   
   @Override
   public java.lang.String selectGiven() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given);
   }
     
   public void setGiven(java.lang.String given) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_given, given);
+     _setSingleAttribute(cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given, given);
   }
 
   @Override
   public java.lang.Boolean selectIsAsync() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.tdd.spec.SpecPackage.TestMethod_isAsync);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_isAsync);
   }
     
   public void setIsAsync(java.lang.Boolean isAsync) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestMethod_isAsync, isAsync);
+     _setSingleAttribute(cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_isAsync, isAsync);
   }
 
   @Override
   public java.lang.String selectThen() {
-    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then);
+    return _getSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then);
   }
     
   public void setThen(java.lang.String then) {
-     _setSingleAttribute(cleon.tdd.spec.SpecPackage.TestObjekt_then, then);
+     _setSingleAttribute(cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then, then);
   }
 
   // relations
@@ -81,11 +81,11 @@ public class TestMethod extends DynamicResource implements ITestMethod {
     
   @Override
   public cleon.uml.spec.structural.classes.method.javamodel.IMethod selectWhen() {
-    return _getSingle(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.tdd.spec.SpecPackage.TestMethod_when);
+    return _getSingle(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_when);
   }
 
   public TestMethod setWhen(cleon.uml.spec.structural.classes.method.javamodel.IMethod when) {
-    _setSingle(cleon.tdd.spec.SpecPackage.TestMethod_when, when);
+    _setSingle(cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_when, when);
     return this;
   }
     
@@ -93,20 +93,20 @@ public class TestMethod extends DynamicResource implements ITestMethod {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_given, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.tdd.spec.SpecPackage.TestMethod_isAsync, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.SpecPackage.TestObjekt_then, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_given, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_isAsync, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.tdd.spec.unitests.UnitestsPackage.TestObjekt_then, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.tdd.spec.SpecPackage.TestMethod_when, visitor);
+    _acceptSingle(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_when, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.tdd.spec.javamodel.ITestMethod> selectToMeWhen(cleon.uml.spec.structural.classes.method.javamodel.IMethod object) {
-    return _getToMeList(object.getRepository(), cleon.tdd.spec.javamodel.ITestMethod.class, cleon.tdd.spec.SpecPackage.TestMethod_when, object.getResource());
+  public static java.util.List<cleon.tdd.spec.unitests.javamodel.ITestMethod> selectToMeWhen(cleon.uml.spec.structural.classes.method.javamodel.IMethod object) {
+    return _getToMeList(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestMethod.class, cleon.tdd.spec.unitests.UnitestsPackage.TestMethod_when, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,m3SDJHW2wEFJcIREoz8NJTDobwM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,Mt+f8CXlTebi4iWAqQVSIIQ+hGY=] */

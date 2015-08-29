@@ -1,4 +1,4 @@
-package cleon.tdd.spec.javamodel;
+package cleon.tdd.spec.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -102,22 +102,22 @@ public class TestClass extends DynamicResource implements ITestClass {
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestMethod> selectTestMethods() {
-    return _getMultiMap(cleon.tdd.spec.javamodel.ITestMethod.class, cleon.tdd.spec.SpecPackage.TestClass_testMethods);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestMethod> selectTestMethods() {
+    return _getMultiMap(cleon.tdd.spec.unitests.javamodel.ITestMethod.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testMethods);
   }
 
-  public TestClass setTestMethods(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestMethod> testMethods) {
-    _setMultiMap(cleon.tdd.spec.SpecPackage.TestClass_testMethods, testMethods);
+  public TestClass setTestMethods(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestMethod> testMethods) {
+    _setMultiMap(cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testMethods, testMethods);
     return this;
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestProperty> selectTestProperties() {
-    return _getMultiMap(cleon.tdd.spec.javamodel.ITestProperty.class, cleon.tdd.spec.SpecPackage.TestClass_testProperties);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestProperty> selectTestProperties() {
+    return _getMultiMap(cleon.tdd.spec.unitests.javamodel.ITestProperty.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testProperties);
   }
 
-  public TestClass setTestProperties(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.javamodel.ITestProperty> testProperties) {
-    _setMultiMap(cleon.tdd.spec.SpecPackage.TestClass_testProperties, testProperties);
+  public TestClass setTestProperties(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.tdd.spec.unitests.javamodel.ITestProperty> testProperties) {
+    _setMultiMap(cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testProperties, testProperties);
     return this;
   }
     
@@ -143,20 +143,20 @@ public class TestClass extends DynamicResource implements ITestClass {
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptMultiMap(cleon.tdd.spec.javamodel.ITestMethod.class, cleon.tdd.spec.SpecPackage.TestClass_testMethods, visitor);
-    _acceptMultiMap(cleon.tdd.spec.javamodel.ITestProperty.class, cleon.tdd.spec.SpecPackage.TestClass_testProperties, visitor);
+    _acceptMultiMap(cleon.tdd.spec.unitests.javamodel.ITestMethod.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testMethods, visitor);
+    _acceptMultiMap(cleon.tdd.spec.unitests.javamodel.ITestProperty.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testProperties, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.tdd.spec.javamodel.ITestClass selectToMeTestMethods(cleon.tdd.spec.javamodel.ITestMethod object) {
-    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.javamodel.ITestClass.class, cleon.tdd.spec.SpecPackage.TestClass_testMethods, object.getResource());
+  public static cleon.tdd.spec.unitests.javamodel.ITestClass selectToMeTestMethods(cleon.tdd.spec.unitests.javamodel.ITestMethod object) {
+    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestClass.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testMethods, object.getResource());
   }
   
-  public static cleon.tdd.spec.javamodel.ITestClass selectToMeTestProperties(cleon.tdd.spec.javamodel.ITestProperty object) {
-    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.javamodel.ITestClass.class, cleon.tdd.spec.SpecPackage.TestClass_testProperties, object.getResource());
+  public static cleon.tdd.spec.unitests.javamodel.ITestClass selectToMeTestProperties(cleon.tdd.spec.unitests.javamodel.ITestProperty object) {
+    return _getToMeSingle(object.getRepository(), cleon.tdd.spec.unitests.javamodel.ITestClass.class, cleon.tdd.spec.unitests.UnitestsPackage.TestClass_testProperties, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,TjvmFfkBHjQrIS30UV3TAxYFhIM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,BMhByGvZmcCOYzg5ebRaxP5rupE=] */

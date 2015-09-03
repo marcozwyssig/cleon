@@ -150,6 +150,26 @@ public class Model extends DynamicResource implements IModel {
   }
     
   @Override
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IResource> selectResources() {
+    return _getList(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.Project_resources);
+  }
+
+  public Model setResources(java.util.List<? extends cleon.actifsource.spec.javamodel.IResource> resources) {
+    _setList(cleon.actifsource.spec.SpecPackage.Project_resources, resources);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.actifsource.spec.javamodel.ITargetPath> selectTargetPaths() {
+    return _getMap(cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.Project_targetPaths);
+  }
+
+  public Model setTargetPaths(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.actifsource.spec.javamodel.ITargetPath> targetPaths) {
+    _setMap(cleon.actifsource.spec.SpecPackage.Project_targetPaths, targetPaths);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -176,8 +196,10 @@ public class Model extends DynamicResource implements IModel {
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.Project_resources, visitor);
+    _acceptMap(cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.Project_targetPaths, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,UVZCE9J9d3yjSRfeeU1YmTmEzGI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,wJsSFPe6gSmf4dlYIGzGuLIovak=] */

@@ -199,12 +199,32 @@ public class Specification extends DynamicResource implements ISpecification {
   }
     
   @Override
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IResource> selectResources() {
+    return _getList(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.Project_resources);
+  }
+
+  public Specification setResources(java.util.List<? extends cleon.actifsource.spec.javamodel.IResource> resources) {
+    _setList(cleon.actifsource.spec.SpecPackage.Project_resources, resources);
+    return this;
+  }
+    
+  @Override
   public cleon.actifsource.spec.javamodel.ISample selectSample() {
     return _getSingle(cleon.actifsource.spec.javamodel.ISample.class, cleon.actifsource.spec.SpecPackage.Specification_sample);
   }
 
   public Specification setSample(cleon.actifsource.spec.javamodel.ISample sample) {
     _setSingle(cleon.actifsource.spec.SpecPackage.Specification_sample, sample);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.actifsource.spec.javamodel.ITargetPath> selectTargetPaths() {
+    return _getMap(cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.Project_targetPaths);
+  }
+
+  public Specification setTargetPaths(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.actifsource.spec.javamodel.ITargetPath> targetPaths) {
+    _setMap(cleon.actifsource.spec.SpecPackage.Project_targetPaths, targetPaths);
     return this;
   }
     
@@ -250,7 +270,9 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.ReferenceOwnDecomposite_ownDecompositions, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.Project_resources, visitor);
     _acceptSingle(cleon.actifsource.spec.javamodel.ISample.class, cleon.actifsource.spec.SpecPackage.Specification_sample, visitor);
+    _acceptMap(cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.Project_targetPaths, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.ITemplate.class, cleon.actifsource.spec.SpecPackage.Specification_templates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -274,4 +296,4 @@ public class Specification extends DynamicResource implements ISpecification {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,2+fJ5Pm8EjjAibGGwsd8JPVh4rc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,W/zQzo0zf5o7sqVXmGPUiSXxVec=] */

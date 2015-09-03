@@ -23,6 +23,12 @@ public class SpecPackage {
   public static final Resource ProjectDependency = new Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource ProjectDependency_to = new Resource("de9ea266-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource Project_generatedJavaModel = new Resource("1b75304e-44cc-11e5-93ef-c50f9659357a");
+  public static final Resource Resource = new Resource("956ece77-5201-11e5-89ac-35d4069568da");
+  public static final Resource Project_resources = new Resource("e0532bab-5201-11e5-89ac-35d4069568da");
+  public static final Resource TargetPath = new Resource("01463ab3-5202-11e5-89ac-35d4069568da");
+  public static final Resource Project_targetPaths = new Resource("06fbde66-5202-11e5-89ac-35d4069568da");
+  public static final Resource TargetPath_resource = new Resource("105a8cc8-5202-11e5-89ac-35d4069568da");
+  public static final Resource TargetPath_buildConfig = new Resource("5305a8a5-5202-11e5-89ac-35d4069568da");
   
   /* Begin Protected Region [[user]] */
   
@@ -43,4 +49,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,1wTyenhBcDVI1QtIVyMnCpG6tRk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,x6iyuuuyQENHmpGnDfDakLPnqlI=] */

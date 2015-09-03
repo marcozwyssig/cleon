@@ -14,6 +14,10 @@ public interface IProject extends cleon.doc.spec.chapter.javamodel.IChapterWithD
   
   public java.util.List<? extends cleon.actifsource.spec.javamodel.IProjectDependency> selectDependsOn();
   
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IResource> selectResources();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.actifsource.spec.javamodel.ITargetPath> selectTargetPaths();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,rzveYFEdHZh9N1KrlKl5ksirbqw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,v3bsLfAPi9h3RPkNrkAtxKqhriQ=] */

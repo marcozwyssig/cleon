@@ -20,6 +20,7 @@
       <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.generator" version="6.7.0" match="greaterOrEqual"/>
       <import feature="cleon.devops.spec.feature" version="0.0.1.qualifier"/>
    </requires>
 
@@ -31,4 +32,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,b98b9f93-4073-11e5-b5f0-5b1ce9c3de3e,rKPs5ZyTj0Dp/jLyt2C2HrDlqBE=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,b98b9f93-4073-11e5-b5f0-5b1ce9c3de3e,lzCk0+lcl1B4/2hN1PR/SEa/Lso=] -->

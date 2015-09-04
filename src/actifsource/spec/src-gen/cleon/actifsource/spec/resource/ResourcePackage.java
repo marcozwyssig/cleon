@@ -28,4 +28,4 @@ public class ResourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec.resource,kBovt1xTF5TtZuufuZr9xILyU/w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec.resource,4kntmiqxBkuyIzcKfB7meWD261g=] */

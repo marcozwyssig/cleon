@@ -31,12 +31,12 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   // relations
   
   @Override
-  public ch.actifsource.generator.javamodel.IBuildConfig selectBuildConfig() {
-    return _getSingle(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig);
+  public java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> selectBuildConfig() {
+    return _getList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig);
   }
 
-  public TargetPath setBuildConfig(ch.actifsource.generator.javamodel.IBuildConfig buildConfig) {
-    _setSingle(cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, buildConfig);
+  public TargetPath setBuildConfig(java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> buildConfig) {
+    _setList(cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, buildConfig);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, visitor);
+    _acceptList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, visitor);
     _acceptSingle(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.TargetPath_resource, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -91,4 +91,4 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,Jld4AhlyOSGU5ApiiLy+17w93rs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,Dei35ScMLjYsIGqiYOca1XqQjVU=] */

@@ -10,8 +10,8 @@ public interface ITargetPath extends ch.actifsource.core.javamodel.IDecorator {
   
   public cleon.actifsource.spec.javamodel.IResource selectResource();
   
-  public ch.actifsource.generator.javamodel.IBuildConfig selectBuildConfig();
+  public java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> selectBuildConfig();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,G+/E5GFw7SQ+iyp/bo2Jvx27vtM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,iskGAZhbsvj8mIRL0mP1gz7t/CY=] */

@@ -22,6 +22,7 @@
       <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="6.7.0" match="greaterOrEqual"/>
       <import feature="cleon.actifsource.spec.feature" version="0.0.1.qualifier"/>
+      <import feature="cleon.actifsource.template.eclipse.feature" version="0.0.1.qualifier"/>
    </requires>
 
    <plugin
@@ -32,4 +33,4 @@
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,BTK95Z1vy+d2c01KfWEY7Rh9ung=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,4OUzZ5aGy8sZx7Z3A6O99XrfAkY=] -->

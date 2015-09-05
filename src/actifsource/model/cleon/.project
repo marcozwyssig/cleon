@@ -4,6 +4,7 @@
 	<comment/>
 	<projects>
 		<project>cleon.actifsource.spec</project>
+		<project>cleon.actifsource.template.eclipse</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -21,5 +22,17 @@
 		<nature>ch.actifsource.environment.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src</name>
+			<type>2</type>
+			<location>PARENT-3-PROJECT_LOC</location>
+		</link>
+		<link>
+			<name>plugins</name>
+			<type>2</type>
+			<location>PARENT-4-PROJECT_LOC/plugins</location>
+		</link>
+	</linkedResources>
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,foOuPD5mIIc96Gc2kQWra1ppI/M=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,wbG8eGrxsWkpuPZF+bZsEFj4WKQ=] -->

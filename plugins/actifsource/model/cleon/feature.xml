@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cleon.actifsource.model.cleon.feature"
+      label="cleon.actifsource.model.cleon"
+      version="0.0.1.qualifier">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="ch.actifsource.core" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="6.7.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.generator" version="6.7.0" match="greaterOrEqual"/>
+      <import feature="cleon.actifsource.spec.feature" version="0.0.1.qualifier"/>
+   </requires>
+
+   <plugin
+         id="cleon.actifsource.model.cleon.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+</feature>
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,BTK95Z1vy+d2c01KfWEY7Rh9ung=] -->

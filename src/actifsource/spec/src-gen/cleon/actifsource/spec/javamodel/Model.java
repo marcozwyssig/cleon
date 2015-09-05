@@ -40,6 +40,15 @@ public class Model extends DynamicResource implements IModel {
   }
 
   @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
   public java.lang.String selectShortName() {
     return _getSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName);
   }
@@ -184,6 +193,7 @@ public class Model extends DynamicResource implements IModel {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.actifsource.spec.SpecPackage.Project_generatedJavaModel, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.actifsource.spec.SpecPackage.Project_version, visitor);
     // relations
@@ -202,4 +212,4 @@ public class Model extends DynamicResource implements IModel {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,wJsSFPe6gSmf4dlYIGzGuLIovak=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,VZSAyPNTiz+o0rNacDBKmB6nOtk=] */

@@ -7,6 +7,10 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <resource statement-guid="0efa6103-6388-11e5-90cd-0d09bb283bc0" guid="0efa6100-6388-11e5-90cd-0d09bb283bc0" />
+    <resource statement-guid="1148bde0-6388-11e5-90cd-0d09bb283bc0" guid="1148bddd-6388-11e5-90cd-0d09bb283bc0" />
+  </owns>
   <owns predicate="b9ed4ed6-11e8-11e5-b568-55f5f05bd6f6">
     <resource statement-guid="4f71ba87-11ee-11e5-b568-55f5f05bd6f6" guid="4f6f4984-11ee-11e5-b568-55f5f05bd6f6">
       <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
@@ -49,6 +53,28 @@
         </predicate>
         <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
           <object statement-guid="3918e7a5-44de-11e5-bf5a-c100ca74eee4" type="literal">true</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <object statement-guid="0efa6103-6388-11e5-90cd-0d09bb283bc0">
+      <resource guid="0efa6100-6388-11e5-90cd-0d09bb283bc0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0efa6102-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="0fda12a6-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="c715059c-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1148bde0-6388-11e5-90cd-0d09bb283bc0">
+      <resource guid="1148bddd-6388-11e5-90cd-0d09bb283bc0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1148bddf-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="121312c2-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="3fca3779-6387-11e5-90cd-0d09bb283bc0" />
         </predicate>
       </resource>
     </object>

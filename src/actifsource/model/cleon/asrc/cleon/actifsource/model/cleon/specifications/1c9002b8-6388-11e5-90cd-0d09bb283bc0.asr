@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1c9002b8-6388-11e5-90cd-0d09bb283bc0">
+  <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <resource statement-guid="250fc335-6388-11e5-90cd-0d09bb283bc0" guid="250fc332-6388-11e5-90cd-0d09bb283bc0" />
+  </owns>
+  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <resource statement-guid="32b62cbf-6388-11e5-90cd-0d09bb283bc0" guid="32b62cbc-6388-11e5-90cd-0d09bb283bc0" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1c9002ba-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1c9002bb-6388-11e5-90cd-0d09bb283bc0" type="literal">sda</object>
+  </predicate>
+  <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <object statement-guid="250fc335-6388-11e5-90cd-0d09bb283bc0">
+      <resource guid="250fc332-6388-11e5-90cd-0d09bb283bc0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="250fc334-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="d8688469-4260-11e5-8a2d-599443ec8ff4" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="259769c8-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="c715059c-e9ba-11e4-848b-0509e3792151" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
+    <object statement-guid="1ecb740d-6388-11e5-90cd-0d09bb283bc0" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
+    <object statement-guid="32b62cbf-6388-11e5-90cd-0d09bb283bc0">
+      <resource guid="32b62cbc-6388-11e5-90cd-0d09bb283bc0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="32b62cbe-6388-11e5-90cd-0d09bb283bc0" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
+          <object statement-guid="32f66a12-6388-11e5-90cd-0d09bb283bc0" type="literal">Software Development Artefacts</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
+    <object statement-guid="1c9002bc-6388-11e5-90cd-0d09bb283bc0" type="literal">true</object>
+  </predicate>
+</resource>
+

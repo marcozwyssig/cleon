@@ -2,7 +2,7 @@ package cleon.analysis.spec.evaluation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, cleon.doc.spec.chapter.javamodel.IChapter, cleon.doc.spec.paragraph.typedtable.javamodel.ITypedTable {
+public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, cleon.doc.spec.chapter.javamodel.IChapter, cleon.doc.spec.paragraph.typedtable.javamodel.ITypedTable, cleon.doc.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7f4013d4-3c1a-11e5-9962-cf3035adb922");
   
@@ -16,4 +16,4 @@ public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,hMKWNimv5OWNxMdoj+wzqCV1Bd4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,GLRYryZA0yMhAbZqzioDUuds+Dg=] */

@@ -91,6 +91,16 @@ public class Goal extends DynamicResource implements IGoal {
   }
     
   @Override
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public Goal setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -130,6 +140,7 @@ public class Goal extends DynamicResource implements IGoal {
     _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goaldescription, visitor);
     _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.analysis.spec.drivers.DriversPackage.Goal_goalname, visitor);
     _acceptSingle(cleon.analysis.spec.drivers.javamodel.IGoalImportance.class, cleon.analysis.spec.drivers.DriversPackage.Goal_importance, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -150,4 +161,4 @@ public class Goal extends DynamicResource implements IGoal {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,AODi3++HTxziGTs687e0wpKTp9Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,WoauroaqqLJW/P+UplV6+bM0Fyk=] */

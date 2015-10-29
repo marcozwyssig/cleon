@@ -31,7 +31,7 @@ public class Functions {
   public static interface IEvaluationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("52c3bb3b-3d08-11e5-871f-6beac6a7c24b")
-    public java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.IEvaluation evaluation);
+    public java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.IEvaluation evaluation);
 
   }
   
@@ -42,7 +42,7 @@ public class Functions {
     private EvaluationFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.IEvaluation evaluation) {
+    public java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.IEvaluation evaluation) {
       /* Begin Protected Region [[52c3bb3b-3d08-11e5-871f-6beac6a7c24b]] */
       int importance = Integer.parseInt(evaluation.selectGoal().selectImportance().selectName());
       int score = Integer.parseInt(evaluation.selectScore().selectName());
@@ -56,7 +56,7 @@ public class Functions {
 
     private EvaluationFunctions() {}
 
-    public static java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.IEvaluation evaluation) {
+    public static java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.IEvaluation evaluation) {
       return DynamicResourceUtil.invoke(IEvaluationFunctionsImpl.class, EvaluationFunctionsImpl.INSTANCE, evaluation).CalculateScore(evaluation);
     }
 
@@ -97,7 +97,7 @@ public class Functions {
   public static interface ISolutionsEvaluationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4925332e-3d0a-11e5-871f-6beac6a7c24b")
-    public java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation);
+    public java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation);
 
   }
   
@@ -108,7 +108,7 @@ public class Functions {
     private SolutionsEvaluationFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
+    public java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
       /* Begin Protected Region [[4925332e-3d0a-11e5-871f-6beac6a7c24b]] */
     	return solutionsEvaluation.selectEvaluation().values().stream().mapToInt(p -> EvaluationFunctionsImpl.INSTANCE.CalculateScore(p)).sum();
       /* End Protected Region   [[4925332e-3d0a-11e5-871f-6beac6a7c24b]] */
@@ -120,7 +120,7 @@ public class Functions {
 
     private SolutionsEvaluationFunctions() {}
 
-    public static java.lang.Integer CalculateScore(final cleon.analysis.spec.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
+    public static java.lang.Integer CalculateScore(final cleon.analysis.spec.solution.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
       return DynamicResourceUtil.invoke(ISolutionsEvaluationFunctionsImpl.class, SolutionsEvaluationFunctionsImpl.INSTANCE, solutionsEvaluation).CalculateScore(solutionsEvaluation);
     }
 
@@ -153,4 +153,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,9PGbNQEAF6n+ZGot9uMzD7icGoQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,LBbsvGe+yGjZD+HosfK1gPGzcAI=] */

@@ -26,13 +26,55 @@
 		<link>
 			<name>src</name>
 			<type>2</type>
-			<location>PARENT-3-PROJECT_LOC</location>
+			<locationURI>PARENT-3-PROJECT_LOC</locationURI>
 		</link>
 		<link>
 			<name>plugins</name>
 			<type>2</type>
-			<location>PARENT-4-PROJECT_LOC/plugins</location>
+			<locationURI>PARENT-4-PROJECT_LOC/plugins</locationURI>
 		</link>
 	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	<filteredResources>
+	  <filter>
+	    <id>1446134737095</id>
+	    <name>src</name>
+	    <type>21</type>
+	    <matcher>
+	      <id>org.eclipse.ui.ide.orFilterMatcher</id>
+	      <arguments>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-*.properties</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-*.xml</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-*.mf</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-.asproject</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-.project</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-.classpath</arguments>
+	        </matcher>
+	        <matcher>
+	          <id>org.eclipse.ui.ide.multiFilter</id>
+	          <arguments>1.0-name-matches-false-false-*.prefs</arguments>
+	        </matcher>
+	      </arguments>
+	    </matcher>
+	  </filter>
+	</filteredResources>	
+	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,wbG8eGrxsWkpuPZF+bZsEFj4WKQ=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,114ca671-53da-11e5-a1cf-8b5b0b2eed6c,i7ohUzH4rlvWTzr8e7TQ+1e19xU=] -->

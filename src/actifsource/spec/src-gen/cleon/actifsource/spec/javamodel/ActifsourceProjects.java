@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Specifications extends DynamicResource implements ISpecifications {
+public class ActifsourceProjects extends DynamicResource implements IActifsourceProjects {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISpecifications> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISpecifications>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IActifsourceProjects> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IActifsourceProjects>() {
     
     @Override
-    public ISpecifications create() {
-      return new Specifications();
+    public IActifsourceProjects create() {
+      return new ActifsourceProjects();
     }
     
     @Override
-    public ISpecifications create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Specifications(resourceRepository, resource);
+    public IActifsourceProjects create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ActifsourceProjects(resourceRepository, resource);
     }
   
   };
 
-  public Specifications() {
-    super(ISpecifications.TYPE_ID);
+  public ActifsourceProjects() {
+    super(IActifsourceProjects.TYPE_ID);
   }
   
-  public Specifications(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISpecifications.TYPE_ID);
+  public ActifsourceProjects(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IActifsourceProjects.TYPE_ID);
   }
 
   // attributes
@@ -46,28 +46,18 @@ public class Specifications extends DynamicResource implements ISpecifications {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
 
-  public Specifications setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
+  public ActifsourceProjects setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IProjectUseDecomposite> selectDecompose() {
+    return _getList(cleon.actifsource.spec.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec.SpecPackage.ActifsourceProjects_decompose);
   }
 
-  public Specifications setDecompose(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> decompose) {
-    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, decompose);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.actifsource.spec.javamodel.ISpecificationsUseDecomposite> selectDecomposeSpecifications() {
-    return _getList(cleon.actifsource.spec.javamodel.ISpecificationsUseDecomposite.class, cleon.actifsource.spec.SpecPackage.Specifications_decomposeSpecifications);
-  }
-
-  public Specifications setDecomposeSpecifications(java.util.List<? extends cleon.actifsource.spec.javamodel.ISpecificationsUseDecomposite> decomposeSpecifications) {
-    _setList(cleon.actifsource.spec.SpecPackage.Specifications_decomposeSpecifications, decomposeSpecifications);
+  public ActifsourceProjects setDecompose(java.util.List<? extends cleon.actifsource.spec.javamodel.IProjectUseDecomposite> decompose) {
+    _setList(cleon.actifsource.spec.SpecPackage.ActifsourceProjects_decompose, decompose);
     return this;
   }
     
@@ -76,7 +66,7 @@ public class Specifications extends DynamicResource implements ISpecifications {
     return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
   }
 
-  public Specifications setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
+  public ActifsourceProjects setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
     return this;
   }
@@ -86,7 +76,7 @@ public class Specifications extends DynamicResource implements ISpecifications {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
 
-  public Specifications setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
+  public ActifsourceProjects setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
     return this;
   }
@@ -96,7 +86,7 @@ public class Specifications extends DynamicResource implements ISpecifications {
     return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
 
-  public Specifications setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
+  public ActifsourceProjects setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
     _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
     return this;
   }
@@ -106,7 +96,7 @@ public class Specifications extends DynamicResource implements ISpecifications {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Specifications setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ActifsourceProjects setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -118,8 +108,7 @@ public class Specifications extends DynamicResource implements ISpecifications {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
-    _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.actifsource.spec.javamodel.ISpecificationsUseDecomposite.class, cleon.actifsource.spec.SpecPackage.Specifications_decomposeSpecifications, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec.SpecPackage.ActifsourceProjects_decompose, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
@@ -128,9 +117,9 @@ public class Specifications extends DynamicResource implements ISpecifications {
 
   // toMeRelations
   
-  public static cleon.actifsource.spec.javamodel.ISpecifications selectToMeDecomposeSpecifications(cleon.actifsource.spec.javamodel.ISpecificationsUseDecomposite object) {
-    return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.ISpecifications.class, cleon.actifsource.spec.SpecPackage.Specifications_decomposeSpecifications, object.getResource());
+  public static cleon.actifsource.spec.javamodel.IActifsourceProjects selectToMeDecompose(cleon.actifsource.spec.javamodel.IProjectUseDecomposite object) {
+    return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.IActifsourceProjects.class, cleon.actifsource.spec.SpecPackage.ActifsourceProjects_decompose, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28f43850-e9ba-11e4-848b-0509e3792151,AEBtHEGu8EFpOOVy7lt1rIYjce8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28f43850-e9ba-11e4-848b-0509e3792151,6dd97PnlM1tLnsz4FYloR6SzFdo=] */

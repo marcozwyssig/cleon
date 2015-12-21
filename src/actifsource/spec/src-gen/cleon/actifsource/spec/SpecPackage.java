@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class SpecPackage {
   
-  public static final Resource Specifications = new Resource("28f43850-e9ba-11e4-848b-0509e3792151");
+  public static final Resource ActifsourceProjects = new Resource("28f43850-e9ba-11e4-848b-0509e3792151");
   public static final Resource Specification = new Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
-  public static final Resource Specifications_decomposeSpecifications = new Resource("361a9c78-e9ba-11e4-848b-0509e3792151");
+  public static final Resource ActifsourceProjects_decompose = new Resource("361a9c78-e9ba-11e4-848b-0509e3792151");
   public static final Resource Template = new Resource("3e687740-e9ba-11e4-848b-0509e3792151");
   public static final Resource Specification_templates = new Resource("443302c2-e9ba-11e4-848b-0509e3792151");
   public static final Resource Project_dependsOn = new Resource("ee024577-03b8-11e5-b26a-2b178025b98b");
@@ -29,6 +29,9 @@ public class SpecPackage {
   public static final Resource Project_targetPaths = new Resource("06fbde66-5202-11e5-89ac-35d4069568da");
   public static final Resource TargetPath_resource = new Resource("105a8cc8-5202-11e5-89ac-35d4069568da");
   public static final Resource TargetPath_buildConfig = new Resource("5305a8a5-5202-11e5-89ac-35d4069568da");
+  public static final Resource ModelUseDecomposite = new Resource("fe613e64-a7d0-11e5-82dd-3b995d9c840c");
+  public static final Resource ProjectUseDecomposite = new Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
+  public static final Resource ModelUseDecomposite_into = new Resource("38e122d5-a7d1-11e5-82dd-3b995d9c840c");
   
   /* Begin Protected Region [[user]] */
   
@@ -49,4 +52,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,x6iyuuuyQENHmpGnDfDakLPnqlI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,dkToB0vUNqx9L3E9VpPzSIdyWKU=] */

@@ -42,21 +42,21 @@ public class Sdp extends DynamicResource implements ISdp {
   // relations
   
   @Override
-  public cleon.sdp.spec.project.javamodel.IProject selectProject() {
-    return _getSingle(cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.SpecPackage.Sdp_project);
+  public cleon.sdp.spec.projectmanagement.javamodel.IProject selectProject() {
+    return _getSingle(cleon.sdp.spec.projectmanagement.javamodel.IProject.class, cleon.sdp.spec.SpecPackage.Sdp_project);
   }
 
-  public Sdp setProject(cleon.sdp.spec.project.javamodel.IProject project) {
+  public Sdp setProject(cleon.sdp.spec.projectmanagement.javamodel.IProject project) {
     _setSingle(cleon.sdp.spec.SpecPackage.Sdp_project, project);
     return this;
   }
     
   @Override
-  public cleon.sdp.spec.requirements.javamodel.IRequirements selectRequirements() {
-    return _getSingle(cleon.sdp.spec.requirements.javamodel.IRequirements.class, cleon.sdp.spec.SpecPackage.Sdp_requirements);
+  public cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements selectRequirements() {
+    return _getSingle(cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements.class, cleon.sdp.spec.SpecPackage.Sdp_requirements);
   }
 
-  public Sdp setRequirements(cleon.sdp.spec.requirements.javamodel.IRequirements requirements) {
+  public Sdp setRequirements(cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements requirements) {
     _setSingle(cleon.sdp.spec.SpecPackage.Sdp_requirements, requirements);
     return this;
   }
@@ -77,20 +77,20 @@ public class Sdp extends DynamicResource implements ISdp {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.sdp.spec.project.javamodel.IProject.class, cleon.sdp.spec.SpecPackage.Sdp_project, visitor);
-    _acceptSingle(cleon.sdp.spec.requirements.javamodel.IRequirements.class, cleon.sdp.spec.SpecPackage.Sdp_requirements, visitor);
+    _acceptSingle(cleon.sdp.spec.projectmanagement.javamodel.IProject.class, cleon.sdp.spec.SpecPackage.Sdp_project, visitor);
+    _acceptSingle(cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements.class, cleon.sdp.spec.SpecPackage.Sdp_requirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.sdp.spec.javamodel.ISdp selectToMeRequirements(cleon.sdp.spec.requirements.javamodel.IRequirements object) {
+  public static cleon.sdp.spec.javamodel.ISdp selectToMeRequirements(cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements object) {
     return _getToMeSingle(object.getRepository(), cleon.sdp.spec.javamodel.ISdp.class, cleon.sdp.spec.SpecPackage.Sdp_requirements, object.getResource());
   }
   
-  public static cleon.sdp.spec.javamodel.ISdp selectToMeProject(cleon.sdp.spec.project.javamodel.IProject object) {
+  public static cleon.sdp.spec.javamodel.ISdp selectToMeProject(cleon.sdp.spec.projectmanagement.javamodel.IProject object) {
     return _getToMeSingle(object.getRepository(), cleon.sdp.spec.javamodel.ISdp.class, cleon.sdp.spec.SpecPackage.Sdp_project, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,Tqbn1jmHLdSlk7h4H4LYKjAYf48=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,EH/0t7E6PgqjmS19D9wesfEAd2w=] */

@@ -8,10 +8,10 @@ public interface ISdp extends ch.actifsource.core.javamodel.INamedResource {
   
   // relations
   
-  public cleon.sdp.spec.requirements.javamodel.IRequirements selectRequirements();
+  public cleon.sdp.spec.requirementmanagement.requirements.javamodel.IRequirements selectRequirements();
   
-  public cleon.sdp.spec.project.javamodel.IProject selectProject();
+  public cleon.sdp.spec.projectmanagement.javamodel.IProject selectProject();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,bmiQoHFUPygOkZw4x6zjlYeJtQ0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,+hAvbREwmudm01sJatQOWGitI0Y=] */

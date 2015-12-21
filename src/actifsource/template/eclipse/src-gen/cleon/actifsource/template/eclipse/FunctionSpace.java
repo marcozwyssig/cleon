@@ -122,6 +122,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("cd977824-11ef-11e5-b568-55f5f05bd6f6")
     public java.lang.String GetProjectName();
 
+    @IDynamicResourceExtension.MethodId("fbcc508c-a7d2-11e5-82dd-3b995d9c840c")
+    public java.lang.String GetParentDirectoryName();
+
   }
   
   public static interface IModelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -200,4 +203,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,xTNK6xNZmjzGsGM9W5uJwLrNBBc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,jmO0iWSBX2RmrZ+Ph7oyONlv6kc=] */

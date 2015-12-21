@@ -31,12 +31,21 @@ public class Result extends DynamicResource implements IResult {
   // attributes
   
   @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
     
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
   }
 
   // relations
@@ -115,7 +124,8 @@ public class Result extends DynamicResource implements IResult {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.analysis.solution.evaluation.javamodel.IBest.class, cleon.sda.spec.analysis.solution.evaluation.EvaluationPackage.Result_best, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -133,4 +143,4 @@ public class Result extends DynamicResource implements IResult {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,JhWiGlXKOoLcpQZmbrMbVt/SZ58=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,OsTfgAq0GrjrerTfCh/XN2i5G54=] */

@@ -31,12 +31,21 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
   // attributes
   
   @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
     
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
   }
 
   // relations
@@ -68,16 +77,6 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
 
   public FactoryPackage setDecomposeClasses(java.util.List<? extends cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition> decomposeClasses) {
     _setList(cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, decomposeClasses);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description);
-  }
-
-  public FactoryPackage setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, description);
     return this;
   }
     
@@ -135,12 +134,12 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.uml.spec.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, visitor);
     _acceptSingle(creational.factorymethod.javamodel.IFactoryCreator.class, creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
@@ -155,4 +154,4 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,ugfEYC/dZE7HBd0pnyFN12Cffu8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,ciC3DERge2KNqKV7/h2qi0L1ZD4=] */

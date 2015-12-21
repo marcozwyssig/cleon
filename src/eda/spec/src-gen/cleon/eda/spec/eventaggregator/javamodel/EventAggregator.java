@@ -40,21 +40,21 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
 
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
-  }
-    
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
   }
 
   // relations
@@ -76,16 +76,6 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
 
   public EventAggregator setContext(cleon.uml.spec.structural.classes.javamodel.IClassifier context) {
     _setSingle(cleon.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, context);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description);
-  }
-
-  public EventAggregator setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, description);
     return this;
   }
     
@@ -154,12 +144,11 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, visitor);
     _acceptMap(cleon.eda.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.ReferenceOwnDecomposite_ownDecompositions, visitor);
@@ -179,4 +168,4 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,lu1aVLA6pbG+2xTsNRa67SFlPn4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,UFwUwsyfyFyGRjjzWEpqEs6k+Ss=] */

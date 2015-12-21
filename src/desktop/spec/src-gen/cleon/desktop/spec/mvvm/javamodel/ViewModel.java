@@ -40,6 +40,15 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
 
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.Boolean selectGenerateFieldForDisplay() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_generateFieldForDisplay);
   }
@@ -64,15 +73,6 @@ public class ViewModel extends DynamicResource implements IViewModel {
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
-  }
-    
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
   }
 
   // relations
@@ -114,16 +114,6 @@ public class ViewModel extends DynamicResource implements IViewModel {
 
   public ViewModel setDelegateCommands(java.util.List<? extends cleon.desktop.spec.mvvm.javamodel.IDelegateCommand> delegateCommands) {
     _setList(cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_delegateCommands, delegateCommands);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description);
-  }
-
-  public ViewModel setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, description);
     return this;
   }
     
@@ -252,16 +242,15 @@ public class ViewModel extends DynamicResource implements IViewModel {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_generateFieldForDisplay, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.uml.spec.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.uml.spec.structural.classes.events.javamodel.ICustomEvent.class, cleon.uml.spec.structural.classes.ClassesPackage.Class_customEvents, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.desktop.spec.mvvm.javamodel.IDelegateCommand.class, cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_delegateCommands, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, visitor);
     _acceptSingle(cleon.uml.spec.structural.classes.javamodel.IClassifier.class, cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_display, visitor);
     _acceptList(cleon.uml.spec.structural.classes.events.javamodel.IEvent.class, cleon.uml.spec.structural.classes.ClassesPackage.EventClass_events, visitor);
     _acceptSingle(cleon.desktop.spec.mvvm.javamodel.IViewModel.class, cleon.desktop.spec.mvvm.MvvmPackage.ViewModel_extends, visitor);
@@ -295,4 +284,4 @@ public class ViewModel extends DynamicResource implements IViewModel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,jSMmMT+6LxaT0QMZNCMHEnLMspI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,f4odRcENxk+iJnUNvOp5KZgKsQA=] */

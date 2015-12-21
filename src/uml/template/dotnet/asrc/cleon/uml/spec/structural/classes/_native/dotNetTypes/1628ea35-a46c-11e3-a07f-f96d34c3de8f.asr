@@ -3,9 +3,6 @@
   <owns predicate="5485e648-a3bb-11e3-8095-f11af53ab806">
     <resource statement-guid="1628ea39-a46c-11e3-a07f-f96d34c3de8f" guid="1628ea36-a46c-11e3-a07f-f96d34c3de8f" />
   </owns>
-  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <resource statement-guid="a983b0ee-44b4-11e5-9f02-294b6b8118ac" guid="a983b0eb-44b4-11e5-9f02-294b6b8118ac" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1628ea3b-a46c-11e3-a07f-f96d34c3de8f" type="resource" guid="743e6460-a3b9-11e3-8095-f11af53ab806" />
   </predicate>
@@ -27,17 +24,8 @@
       </resource>
     </object>
   </predicate>
-  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <object statement-guid="a983b0ee-44b4-11e5-9f02-294b6b8118ac">
-      <resource guid="a983b0eb-44b4-11e5-9f02-294b6b8118ac">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a983b0ed-44b4-11e5-9f02-294b6b8118ac" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-        </predicate>
-        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
-          <object statement-guid="a9b59661-44b4-11e5-9f02-294b6b8118ac" type="literal">Kapselt eine Methode, die über keine Parameter verfügt ud einen Wert von dem Tpe zückgibt, der vom TResult angegeben wird.</object>
-        </predicate>
-      </resource>
-    </object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="5c8a257c-a7fd-11e5-82dd-3b995d9c840c" type="literal">Kapselt eine Methode, die über keine Parameter verfügt ud einen Wert von dem Tpe zückgibt, der vom TResult angegeben wird.</object>
   </predicate>
 </resource>
 

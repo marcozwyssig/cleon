@@ -40,12 +40,12 @@ public class Transition extends DynamicResource implements ITransition {
   }
 
   @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
   }
     
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
   }
 
   // relations
@@ -145,7 +145,7 @@ public class Transition extends DynamicResource implements ITransition {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.uml.spec.behavioral.statemachine.javamodel.ICondition.class, cleon.uml.spec.behavioral.statemachine.StatemachinePackage.Transition_condition, visitor);
@@ -173,4 +173,4 @@ public class Transition extends DynamicResource implements ITransition {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,+aBW1Yc/vmhTq1XghkMIRj4rg0I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,cFOUoyoWpNcKMHU/dLy0195/9wE=] */

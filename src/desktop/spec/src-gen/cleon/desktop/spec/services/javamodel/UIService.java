@@ -40,21 +40,21 @@ public class UIService extends DynamicResource implements IUIService {
   }
 
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectSimpleDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
-  }
-    
-  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
-     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
   }
 
   // relations
@@ -86,16 +86,6 @@ public class UIService extends DynamicResource implements IUIService {
 
   public UIService setDecompose(java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite> decompose) {
     _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, decompose);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description);
-  }
-
-  public UIService setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, description);
     return this;
   }
     
@@ -154,13 +144,12 @@ public class UIService extends DynamicResource implements IUIService {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.uml.spec.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.uml.spec.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithColumnDescription_description, visitor);
     _acceptList(javamodel.IEvent.class, new ch.actifsource.core.Resource("3de09653-a3ba-11e3-8095-f11af53ab806"), visitor);
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -169,4 +158,4 @@ public class UIService extends DynamicResource implements IUIService {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,w5EUfpMNrftw1QiM9sf66NC5bkg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,5+xQzp+kqCnpptqTpPEPFM+GWe8=] */

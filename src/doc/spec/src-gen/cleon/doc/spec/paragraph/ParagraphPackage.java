@@ -6,8 +6,8 @@ public class ParagraphPackage {
   
   public static final Resource Paragraph = new Resource("4c12c1e8-d86d-11e4-aa2f-c11242a92b60");
   public static final Resource ParagraphOwnDocumentElementComposite_paragraphes = new Resource("0c6f72c9-d86e-11e4-aa2f-c11242a92b60");
-  public static final Resource TextParagraph = new Resource("0e3ff7cb-d86f-11e4-aa2f-c11242a92b60");
-  public static final Resource TextParagraph_text = new Resource("3485c93b-d86f-11e4-aa2f-c11242a92b60");
+  public static final Resource Text = new Resource("0e3ff7cb-d86f-11e4-aa2f-c11242a92b60");
+  public static final Resource Text_text = new Resource("3485c93b-d86f-11e4-aa2f-c11242a92b60");
   public static final Resource NumberedList = new Resource("1042ee35-d881-11e4-a5d6-b92b0ce88839");
   public static final Resource NumberedList_paragraphs = new Resource("74dd3648-d882-11e4-a5d6-b92b0ce88839");
   public static final Resource Note = new Resource("3ec11f20-3087-11e5-8cdc-d5b441c8c3df");
@@ -38,4 +38,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.paragraph,TsBvyEHhZIJADX6MHqhJ8W1xGj0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec.paragraph,OgPnFL2XFKZ6pk5UQD+PyvsVkJ0=] */

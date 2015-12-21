@@ -31,6 +31,24 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   // attributes
   
   @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectGiven() {
     return _getSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_given);
   }
@@ -84,6 +102,8 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_given, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_then, visitor);
     // relations
@@ -99,4 +119,4 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,3vHZXwIF2doaDoZs/ODbJtKKJN0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,6jN8GQ6jYqrNR4vzApqfebOPSPo=] */

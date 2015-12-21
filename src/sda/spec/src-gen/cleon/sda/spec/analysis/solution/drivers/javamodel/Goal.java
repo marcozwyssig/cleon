@@ -28,38 +28,28 @@ public class Goal extends DynamicResource implements IGoal {
     super(resourceRepository, resource, IGoal.TYPE_ID);
   }
 
-  // relations
+  // attributes
   
   @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectColumnOwns() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
-  }
-
-  public Goal setColumnOwns(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> columnOwns) {
-    _setList(cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
-    return this;
+  public java.lang.String selectGoaldescription() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription);
   }
     
+  public void setGoaldescription(java.lang.String goaldescription) {
+     _setSingleAttribute(cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, goaldescription);
+  }
+
   @Override
-  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectGoaldescription() {
-    return _getSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription);
-  }
-
-  public Goal setGoaldescription(cleon.doc.spec.paragraph.javamodel.ITextParagraph goaldescription) {
-    _setSingle(cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, goaldescription);
-    return this;
+  public java.lang.String selectGoalname() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname);
   }
     
-  @Override
-  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectGoalname() {
-    return _getSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname);
+  public void setGoalname(java.lang.String goalname) {
+     _setSingleAttribute(cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, goalname);
   }
 
-  public Goal setGoalname(cleon.doc.spec.paragraph.javamodel.ITextParagraph goalname) {
-    _setSingle(cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, goalname);
-    return this;
-  }
-    
+  // relations
+  
   @Override
   public cleon.sda.spec.analysis.solution.drivers.javamodel.IGoalImportance selectImportance() {
     return _getSingle(cleon.sda.spec.analysis.solution.drivers.javamodel.IGoalImportance.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_importance);
@@ -83,27 +73,17 @@ public class Goal extends DynamicResource implements IGoal {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, visitor);
     // relations
-    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
-    _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, visitor);
-    _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, visitor);
     _acceptSingle(cleon.sda.spec.analysis.solution.drivers.javamodel.IGoalImportance.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_importance, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal selectToMeGoalname(cleon.doc.spec.paragraph.javamodel.ITextParagraph object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, object.getResource());
-  }
-  
-  public static cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal selectToMeGoaldescription(cleon.doc.spec.paragraph.javamodel.ITextParagraph object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, object.getResource());
-  }
-  
   public static java.util.List<cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal> selectToMeImportance(cleon.sda.spec.analysis.solution.drivers.javamodel.IGoalImportance object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_importance, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,0O70cHr7mv7eW9by+AqWHjMa1zQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,IhDgPvF5FJ5mmBZ/87GutB6gN4Y=] */

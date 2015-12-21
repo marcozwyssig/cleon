@@ -10,9 +10,6 @@
       </owns>
     </resource>
   </owns>
-  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <resource statement-guid="54f6990e-6387-11e5-90cd-0d09bb283bc0" guid="54f6990b-6387-11e5-90cd-0d09bb283bc0" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="3fca377b-6387-11e5-90cd-0d09bb283bc0" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -64,20 +61,11 @@
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="4314f600-6387-11e5-90cd-0d09bb283bc0" type="literal">0.0.1</object>
   </predicate>
-  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <object statement-guid="54f6990e-6387-11e5-90cd-0d09bb283bc0">
-      <resource guid="54f6990b-6387-11e5-90cd-0d09bb283bc0">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="54f6990d-6387-11e5-90cd-0d09bb283bc0" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-        </predicate>
-        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
-          <object statement-guid="55856b93-6387-11e5-90cd-0d09bb283bc0" type="literal">Business Process Modeling Notation</object>
-        </predicate>
-      </resource>
-    </object>
-  </predicate>
   <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
     <object statement-guid="3fca377d-6387-11e5-90cd-0d09bb283bc0" type="literal">true</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="c7441df9-a7fe-11e5-82dd-3b995d9c840c" type="literal">Business Process Modeling Notation</object>
   </predicate>
 </resource>
 

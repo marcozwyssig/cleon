@@ -2,13 +2,13 @@ package cleon.sda.spec.analysis.solution.evaluation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, cleon.doc.spec.chapter.javamodel.IChapter, cleon.doc.spec.paragraph.typedtable.javamodel.ITypedTable, cleon.doc.spec.chapter.javamodel.INoChapters {
+public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7f4013d4-3c1a-11e5-9962-cf3035adb922");
   
-  // relations
+  // attributes
   
-  public cleon.doc.spec.paragraph.javamodel.ITextParagraph selectAssessment();
+  public java.lang.String selectAssessment();
   
   public cleon.sda.spec.analysis.solution.drivers.javamodel.IGoal selectGoal();
   
@@ -16,4 +16,4 @@ public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,w5d2CvHKSogBn0eKuF+80pa5Cyw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,gfaUvyX4A9M0kRBB3B6LQaVPalw=] */

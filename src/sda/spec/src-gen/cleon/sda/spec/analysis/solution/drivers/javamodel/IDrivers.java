@@ -2,7 +2,7 @@ package cleon.sda.spec.analysis.solution.drivers.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDrivers extends cleon.doc.spec.document.javamodel.ISubDocument, cleon.doc.spec.document.javamodel.INoSubDocuments {
+public interface IDrivers extends cleon.doc.spec.document.javamodel.ISubDocument, cleon.doc.spec.document.javamodel.INoSubDocuments, cleon.doc.spec.paragraph.javamodel.INoParagraph {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("877f094b-3c14-11e5-9962-cf3035adb922");
   
@@ -16,4 +16,4 @@ public interface IDrivers extends cleon.doc.spec.document.javamodel.ISubDocument
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,ObubzugVVCFJzObBUh2fyY+7W8Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,YMBC3jgBy2qebqMvgIgr6u+C7ZA=] */

@@ -81,6 +81,16 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
     
   @Override
+  public cleon.doc.spec.paragraph.javamodel.IParagraph selectNoParagraph() {
+    return _getSingle(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph);
+  }
+
+  public Drivers setNoParagraph(cleon.doc.spec.paragraph.javamodel.IParagraph noParagraph) {
+    _setSingle(cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph, noParagraph);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -139,6 +149,7 @@ public class Drivers extends DynamicResource implements IDrivers {
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptSingle(cleon.sda.spec.analysis.solution.drivers.javamodel.IGoals.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Drivers_goal, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
+    _acceptSingle(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.sda.spec.analysis.solution.drivers.javamodel.ISource.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Drivers_sources, visitor);
@@ -161,4 +172,4 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,FXQwW7hBqPvqRNCOtQtKgbRwwm4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,VMoOnonBwfGDN6511xSSM7vbg0U=] */

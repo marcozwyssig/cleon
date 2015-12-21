@@ -3,9 +3,6 @@
   <owns predicate="5485e648-a3bb-11e3-8095-f11af53ab806">
     <resource statement-guid="7e073f4e-a3bc-11e3-8095-f11af53ab806" guid="7e07183b-a3bc-11e3-8095-f11af53ab806" />
   </owns>
-  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <resource statement-guid="73ef5e93-44b3-11e5-9f02-294b6b8118ac" guid="73ef5e90-44b3-11e5-9f02-294b6b8118ac" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4341c6a8-a3bc-11e3-8095-f11af53ab806" type="resource" guid="743e6460-a3b9-11e3-8095-f11af53ab806" />
   </predicate>
@@ -27,17 +24,8 @@
       </resource>
     </object>
   </predicate>
-  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <object statement-guid="73ef5e93-44b3-11e5-9f02-294b6b8118ac">
-      <resource guid="73ef5e90-44b3-11e5-9f02-294b6b8118ac">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="73ef5e92-44b3-11e5-9f02-294b6b8118ac" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-        </predicate>
-        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
-          <object statement-guid="75038db8-44b3-11e5-9f02-294b6b8118ac" type="literal">Kapselt eine Methode, die über einen einzelnen Parameter verfügt und keinen Wert zurückgibt</object>
-        </predicate>
-      </resource>
-    </object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="a6739d3e-a7fc-11e5-82dd-3b995d9c840c" type="literal">Kapselt eine Methode, die über einen einzelnen Parameter verfügt und keinen Wert zurückgibt</object>
   </predicate>
 </resource>
 

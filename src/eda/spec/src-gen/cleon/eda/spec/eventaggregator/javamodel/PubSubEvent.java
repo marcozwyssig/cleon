@@ -28,6 +28,26 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
     super(resourceRepository, resource, IPubSubEvent.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
   // relations
   
   @Override
@@ -63,6 +83,9 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.uml.spec.structural.classes.events.javamodel.IEvent.class, cleon.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -76,4 +99,4 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,r+JofhuuOaB9vCa5C4v+fET3M3Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,NhDQfq2sYmlp9ltDZ3XhuqvU3Z8=] */

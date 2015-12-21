@@ -5,9 +5,6 @@
     <resource statement-guid="0be05f51-4262-11e5-8a2d-599443ec8ff4" guid="0be05f4e-4262-11e5-8a2d-599443ec8ff4" />
     <resource statement-guid="0d6ddd2f-4262-11e5-8a2d-599443ec8ff4" guid="0d6ddd2c-4262-11e5-8a2d-599443ec8ff4" />
   </owns>
-  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <resource statement-guid="c9284e1e-44b1-11e5-99ff-71cc0a5d776b" guid="c9284e1b-44b1-11e5-99ff-71cc0a5d776b" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="053b64eb-28b8-11e5-8b63-33a353e42346" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -49,20 +46,11 @@
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="9d726031-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
   </predicate>
-  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <object statement-guid="c9284e1e-44b1-11e5-99ff-71cc0a5d776b">
-      <resource guid="c9284e1b-44b1-11e5-99ff-71cc0a5d776b">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c9284e1d-44b1-11e5-99ff-71cc0a5d776b" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-        </predicate>
-        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
-          <object statement-guid="c9664180-44b1-11e5-99ff-71cc0a5d776b" type="literal">Event Driven Architecture / Reactive Manifesto</object>
-        </predicate>
-      </resource>
-    </object>
-  </predicate>
   <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
     <object statement-guid="3152da75-44de-11e5-bf5a-c100ca74eee4" type="literal">true</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="2b0b664e-a7fd-11e5-82dd-3b995d9c840c" type="literal">Event Driven Architecture / Reactive Manifesto</object>
   </predicate>
 </resource>
 

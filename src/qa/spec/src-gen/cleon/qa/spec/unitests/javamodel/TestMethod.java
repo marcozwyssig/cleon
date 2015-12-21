@@ -31,6 +31,24 @@ public class TestMethod extends DynamicResource implements ITestMethod {
   // attributes
   
   @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectGiven() {
     return _getSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_given);
   }
@@ -93,6 +111,8 @@ public class TestMethod extends DynamicResource implements ITestMethod {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_given, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.qa.spec.unitests.UnitestsPackage.TestMethod_isAsync, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.qa.spec.unitests.UnitestsPackage.TestObjekt_then, visitor);
@@ -109,4 +129,4 @@ public class TestMethod extends DynamicResource implements ITestMethod {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,06JvjuVIduyBcpLecugGkTmlF7k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,xU9jytkcJUwoHwvt8PzAPK+dAGw=] */

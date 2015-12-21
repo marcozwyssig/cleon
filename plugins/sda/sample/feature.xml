@@ -470,6 +470,8 @@ of their respective owners.
       <import plugin="ch.actifsource.generator" version="6.7.0" match="greaterOrEqual"/>
       <import feature="cleon.sda.spec.feature" version="0.0.1.qualifier"/>
       <import feature="cleon.doc.spec.feature" version="0.0.1.qualifier"/>
+      <import feature="cleon.doc.template.asciidoc.feature" version="0.0.1.qualifier"/>
+      <import feature="cleon.sda.template.asciidoc.feature" version="0.0.1.qualifier"/>
    </requires>
 
    <plugin
@@ -480,4 +482,4 @@ of their respective owners.
          unpack="false"/>
          
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,29cd33c4-a22d-11e5-8804-4da212ae945c,r9C/vf/C7cXXH/vJFcuVEy27kFY=] -->
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,29cd33c4-a22d-11e5-8804-4da212ae945c,JWrCwxHZlj9tTqPa65IAdcwFoy8=] -->

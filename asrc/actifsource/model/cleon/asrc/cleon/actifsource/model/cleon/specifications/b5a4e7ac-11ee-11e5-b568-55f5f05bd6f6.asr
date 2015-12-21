@@ -12,9 +12,6 @@
       </owns>
     </resource>
   </owns>
-  <owns predicate="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <resource statement-guid="77079f88-4e70-11e5-a091-3f804edda9db" guid="77079f85-4e70-11e5-a091-3f804edda9db" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b5a4e7ae-11ee-11e5-b568-55f5f05bd6f6" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
@@ -83,20 +80,11 @@
   <predicate guid="4613bc5b-3055-11e5-8cdc-d5b441c8c3df">
     <object statement-guid="8c9275b0-3055-11e5-8cdc-d5b441c8c3df" type="literal">0.0.1</object>
   </predicate>
-  <predicate guid="16c5de9e-44af-11e5-99ff-71cc0a5d776b">
-    <object statement-guid="77079f88-4e70-11e5-a091-3f804edda9db">
-      <resource guid="77079f85-4e70-11e5-a091-3f804edda9db">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="77079f87-4e70-11e5-a091-3f804edda9db" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
-        </predicate>
-        <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
-          <object statement-guid="77c8a59b-4e70-11e5-a091-3f804edda9db" type="literal">quality and assurance</object>
-        </predicate>
-      </resource>
-    </object>
-  </predicate>
   <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
     <object statement-guid="3f079cbf-44de-11e5-bf5a-c100ca74eee4" type="literal">true</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="cbcf24f5-a7fe-11e5-82dd-3b995d9c840c" type="literal">quality and assurance</object>
   </predicate>
 </resource>
 

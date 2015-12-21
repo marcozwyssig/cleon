@@ -105,28 +105,28 @@ public class Functions {
 
   }
 
-  public static interface ITextParagraphFunctions extends IDynamicResourceExtension {
+  public static interface ITextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("944c09bf-d872-11e4-aa2f-c11242a92b60")
     public java.lang.String RenderContent();
 
   }
   
-  public static interface ITextParagraphFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TextParagraphFunctionsImpl implements ITextParagraphFunctionsImpl {
+  public static class TextFunctionsImpl implements ITextFunctionsImpl {
 
-    public static final ITextParagraphFunctionsImpl INSTANCE = new TextParagraphFunctionsImpl();
+    public static final ITextFunctionsImpl INSTANCE = new TextFunctionsImpl();
 
-    private TextParagraphFunctionsImpl() {}
+    private TextFunctionsImpl() {}
 
   }
   
-  public static class TextParagraphFunctions {
+  public static class TextFunctions {
 
-    private TextParagraphFunctions() {}
+    private TextFunctions() {}
 
   }
 
@@ -371,40 +371,6 @@ public class Functions {
 
   }
 
-  public static interface ITypedTableFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b71c8d7c-3cef-11e5-871f-6beac6a7c24b")
-    public java.lang.String RenderContent();
-
-    @IDynamicResourceExtension.MethodId("09740646-3cf9-11e5-871f-6beac6a7c24b")
-    public cleon.doc.spec.paragraph.typedtable.javamodel.IColumnRelation SelectColumnRelation();
-
-    @IDynamicResourceExtension.MethodId("ed1cfad2-3cfd-11e5-871f-6beac6a7c24b")
-    public java.lang.String RenderHeader();
-
-    @IDynamicResourceExtension.MethodId("14f4df3f-3cfe-11e5-871f-6beac6a7c24b")
-    public java.lang.String RenderFooter();
-
-  }
-  
-  public static interface ITypedTableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TypedTableFunctionsImpl implements ITypedTableFunctionsImpl {
-
-    public static final ITypedTableFunctionsImpl INSTANCE = new TypedTableFunctionsImpl();
-
-    private TypedTableFunctionsImpl() {}
-
-  }
-  
-  public static class TypedTableFunctions {
-
-    private TypedTableFunctions() {}
-
-  }
-
   public static interface ISourceCodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("809f5cf9-466f-11e5-ba74-cb2e95044e1c")
@@ -613,4 +579,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cpk9Xjkj33ZJAM4rolCzm5tTRwo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,FHrLS0MhwMY9Et8dD5ySk4E7yRM=] */

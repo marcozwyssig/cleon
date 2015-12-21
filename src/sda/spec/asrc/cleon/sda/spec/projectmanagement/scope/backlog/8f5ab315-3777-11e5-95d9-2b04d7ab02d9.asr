@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8f5ab315-3777-11e5-95d9-2b04d7ab02d9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="02a43fef-3778-11e5-95d9-2b04d7ab02d9" guid="02a1cecc-3778-11e5-95d9-2b04d7ab02d9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f5ab317-3777-11e5-95d9-2b04d7ab02d9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9225e13e-3777-11e5-95d9-2b04d7ab02d9" type="resource" guid="27c5167e-375a-11e5-95d9-2b04d7ab02d9" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="02a43fef-3778-11e5-95d9-2b04d7ab02d9">
+      <resource guid="02a1cecc-3778-11e5-95d9-2b04d7ab02d9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="02a1ced9-3778-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="02a1ced8-3778-11e5-95d9-2b04d7ab02d9" type="literal">constraints</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="02a1ced7-3778-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="02a1ced6-3778-11e5-95d9-2b04d7ab02d9" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="0860e896-3778-11e5-95d9-2b04d7ab02d9" type="resource" guid="d9e271ef-3777-11e5-95d9-2b04d7ab02d9" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="02a1ceee-3778-11e5-95d9-2b04d7ab02d9" type="resource" guid="e156734c-369e-11e5-95d9-2b04d7ab02d9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f5ada28-3777-11e5-95d9-2b04d7ab02d9" type="literal">NonFunctionalFeatureGroup</object>
+  </predicate>
+</resource>
+

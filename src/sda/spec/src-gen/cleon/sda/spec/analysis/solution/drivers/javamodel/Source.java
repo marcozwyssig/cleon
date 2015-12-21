@@ -39,6 +39,15 @@ public class Source extends DynamicResource implements ISource {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.util.List<java.lang.String> selectSimpleDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  }
+    
+  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  }
+
   // relations
   
   @Override
@@ -86,6 +95,7 @@ public class Source extends DynamicResource implements ISource {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -94,4 +104,4 @@ public class Source extends DynamicResource implements ISource {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5a90ca0-3c14-11e5-9962-cf3035adb922,BsQC0BqR1zCHmFXjgQvxTg+RhcU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5a90ca0-3c14-11e5-9962-cf3035adb922,cZDmQ9di6wEn4wWEylNHRxIHozA=] */

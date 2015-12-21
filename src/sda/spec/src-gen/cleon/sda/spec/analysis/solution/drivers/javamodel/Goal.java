@@ -31,32 +31,12 @@ public class Goal extends DynamicResource implements IGoal {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
-  }
-
-  public Goal setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectColumnOwns() {
     return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns);
   }
 
   public Goal setColumnOwns(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> columnOwns) {
     _setList(cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, columnOwns);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> selectDescription() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description);
-  }
-
-  public Goal setDescription(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.ITextParagraph> description) {
-    _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, description);
     return this;
   }
     
@@ -91,36 +71,6 @@ public class Goal extends DynamicResource implements IGoal {
   }
     
   @Override
-  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
-    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
-  }
-
-  public Goal setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
-    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
-    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
-  }
-
-  public Goal setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
-    _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectParagraphes() {
-    return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
-  }
-
-  public Goal setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
-    _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -134,15 +84,10 @@ public class Goal extends DynamicResource implements IGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.typedtable.TypedtablePackage.TypedTable_columnOwns, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.doc.spec.chapter.ChapterPackage.ChapterWithDescription_description, visitor);
     _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goaldescription, visitor);
     _acceptSingle(cleon.doc.spec.paragraph.javamodel.ITextParagraph.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_goalname, visitor);
     _acceptSingle(cleon.sda.spec.analysis.solution.drivers.javamodel.IGoalImportance.class, cleon.sda.spec.analysis.solution.drivers.DriversPackage.Goal_importance, visitor);
-    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
-    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
-    _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -161,4 +106,4 @@ public class Goal extends DynamicResource implements IGoal {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,6RVAXHiasqjYlxWuncBhi+Uog4I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0797167b-3c15-11e5-9962-cf3035adb922,0O70cHr7mv7eW9by+AqWHjMa1zQ=] */

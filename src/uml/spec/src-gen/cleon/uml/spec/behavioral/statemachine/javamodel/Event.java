@@ -48,6 +48,15 @@ public class Event extends DynamicResource implements IEvent {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.util.List<java.lang.String> selectSimpleDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  }
+    
+  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  }
+
   // relations
   
   @Override
@@ -116,6 +125,7 @@ public class Event extends DynamicResource implements IEvent {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
@@ -126,4 +136,4 @@ public class Event extends DynamicResource implements IEvent {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,DpoVCVncH74iqg73phcJMJoR2sg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,3Boz1lIiJieFt3DtcsAFvQb0Wps=] */

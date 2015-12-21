@@ -8,8 +8,8 @@ public interface IStory extends cleon.sda.spec.projectmanagement.scope.backlog.j
   
   // relations
   
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectRequestedBy();
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectRequestedBy();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,X7nPBwmH6Nk/G9uNX+BToNJjEJ4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,upp16IVBlAhhLbQd9+PSHlliOZA=] */

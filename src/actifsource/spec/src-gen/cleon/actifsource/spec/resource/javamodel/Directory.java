@@ -39,15 +39,6 @@ public class Directory extends DynamicResource implements IDirectory {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
-  @Override
-  public java.lang.String selectPath() {
-    return _getSingleAttribute(java.lang.String.class, cleon.actifsource.spec.resource.ResourcePackage.Directory_path);
-  }
-    
-  public void setPath(java.lang.String path) {
-     _setSingleAttribute(cleon.actifsource.spec.resource.ResourcePackage.Directory_path, path);
-  }
-
   // relations
   
   @Override
@@ -65,10 +56,9 @@ public class Directory extends DynamicResource implements IDirectory {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.actifsource.spec.resource.ResourcePackage.Directory_path, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8b68e26-5201-11e5-89ac-35d4069568da,GanE7Qn7PsGOhQK6NS2LhE31OdI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8b68e26-5201-11e5-89ac-35d4069568da,gmpgCKVEbgmNCsHt9AXPxiwbmDs=] */

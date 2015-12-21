@@ -28,6 +28,17 @@ public class Result extends DynamicResource implements IResult {
     super(resourceRepository, resource, IResult.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectSimpleDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  }
+    
+  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  }
+
   // relations
   
   @Override
@@ -103,6 +114,8 @@ public class Result extends DynamicResource implements IResult {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.analysis.solution.evaluation.javamodel.IBest.class, cleon.sda.spec.analysis.solution.evaluation.EvaluationPackage.Result_best, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -120,4 +133,4 @@ public class Result extends DynamicResource implements IResult {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,tgCuA3WJRKZpm2myHtKXQS6OdSo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11cf7692-3c2a-11e5-9962-cf3035adb922,JhWiGlXKOoLcpQZmbrMbVt/SZ58=] */

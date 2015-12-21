@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="c8b68e26-5201-11e5-89ac-35d4069568da">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="cf583f00-5201-11e5-89ac-35d4069568da" guid="cf583efd-5201-11e5-89ac-35d4069568da" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c8b68e28-5201-11e5-89ac-35d4069568da" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ca938b1d-5201-11e5-89ac-35d4069568da" type="resource" guid="956ece77-5201-11e5-89ac-35d4069568da" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="cf583f00-5201-11e5-89ac-35d4069568da">
-      <resource guid="cf583efd-5201-11e5-89ac-35d4069568da">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="cf583eff-5201-11e5-89ac-35d4069568da" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="d1d4d81b-5201-11e5-89ac-35d4069568da" type="resource" guid="b59cd201-da29-11dc-81bc-9174e0198de8" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="d0765932-5201-11e5-89ac-35d4069568da" type="literal">path</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="cf583f01-5201-11e5-89ac-35d4069568da" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c8b68e29-5201-11e5-89ac-35d4069568da" type="literal">Directory</object>

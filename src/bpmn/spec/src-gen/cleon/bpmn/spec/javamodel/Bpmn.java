@@ -28,19 +28,28 @@ public class Bpmn extends DynamicResource implements IBpmn {
     super(resourceRepository, resource, IBpmn.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
+  @Override
+  public cleon.bpmn.spec.organigram.javamodel.IOrganigram selectOrganigram() {
+    return _getSingle(cleon.bpmn.spec.organigram.javamodel.IOrganigram.class, cleon.bpmn.spec.SpecPackage.Bpmn_organigram);
+  }
+
+  public Bpmn setOrganigram(cleon.bpmn.spec.organigram.javamodel.IOrganigram organigram) {
+    _setSingle(cleon.bpmn.spec.SpecPackage.Bpmn_organigram, organigram);
+    return this;
+  }
+    
+  @Override
+  public cleon.bpmn.spec.organisational.javamodel.IOrganisational selectOrganisational() {
+    return _getSingle(cleon.bpmn.spec.organisational.javamodel.IOrganisational.class, cleon.bpmn.spec.SpecPackage.Bpmn_organisational);
+  }
+
+  public Bpmn setOrganisational(cleon.bpmn.spec.organisational.javamodel.IOrganisational organisational) {
+    _setSingle(cleon.bpmn.spec.SpecPackage.Bpmn_organisational, organisational);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -54,11 +63,21 @@ public class Bpmn extends DynamicResource implements IBpmn {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.bpmn.spec.organigram.javamodel.IOrganigram.class, cleon.bpmn.spec.SpecPackage.Bpmn_organigram, visitor);
+    _acceptSingle(cleon.bpmn.spec.organisational.javamodel.IOrganisational.class, cleon.bpmn.spec.SpecPackage.Bpmn_organisational, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.bpmn.spec.javamodel.IBpmn selectToMeOrganisational(cleon.bpmn.spec.organisational.javamodel.IOrganisational object) {
+    return _getToMeSingle(object.getRepository(), cleon.bpmn.spec.javamodel.IBpmn.class, cleon.bpmn.spec.SpecPackage.Bpmn_organisational, object.getResource());
+  }
+  
+  public static cleon.bpmn.spec.javamodel.IBpmn selectToMeOrganigram(cleon.bpmn.spec.organigram.javamodel.IOrganigram object) {
+    return _getToMeSingle(object.getRepository(), cleon.bpmn.spec.javamodel.IBpmn.class, cleon.bpmn.spec.SpecPackage.Bpmn_organigram, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0d96e05-7e49-11e5-85ce-e7c8e0b30f03,/VUFWJVa/VGzaVI40WcoQFSX8Ek=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0d96e05-7e49-11e5-85ce-e7c8e0b30f03,xbNZ/OIDeQ2zj7WY+1WcjVddM2Y=] */

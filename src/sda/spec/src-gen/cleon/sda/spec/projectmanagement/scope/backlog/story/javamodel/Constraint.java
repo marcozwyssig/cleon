@@ -71,21 +71,21 @@ public class Constraint extends DynamicResource implements IConstraint {
   }
     
   @Override
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner);
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner);
   }
 
-  public Constraint setOwner(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson owner) {
+  public Constraint setOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson owner) {
     _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, owner);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectRequestedBy() {
-    return _getSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy);
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectRequestedBy() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy);
   }
 
-  public Constraint setRequestedBy(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson requestedBy) {
+  public Constraint setRequestedBy(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson requestedBy) {
     _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, requestedBy);
     return this;
   }
@@ -119,11 +119,11 @@ public class Constraint extends DynamicResource implements IConstraint {
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_analysis, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_description, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.release.javamodel.ISprint.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_sprint, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9e271ef-3777-11e5-95d9-2b04d7ab02d9,WfxhMLEdQvFHLfKjIySWRuoFKYU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9e271ef-3777-11e5-95d9-2b04d7ab02d9,14ob4BeB3Fmn7a59WcsRKkDQVuI=] */

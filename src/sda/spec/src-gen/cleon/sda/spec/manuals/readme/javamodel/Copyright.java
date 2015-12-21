@@ -28,6 +28,17 @@ public class Copyright extends DynamicResource implements ICopyright {
     super(resourceRepository, resource, ICopyright.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectSimpleDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription);
+  }
+    
+  public void setSimpleDescription(java.util.List<java.lang.String> simpleDescription) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, simpleDescription);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class Copyright extends DynamicResource implements ICopyright {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_simpleDescription, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -81,4 +94,4 @@ public class Copyright extends DynamicResource implements ICopyright {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,494f17e7-4e6d-11e5-a091-3f804edda9db,GOfznMb3E2CYrrIOhqJrb8DSL8E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,494f17e7-4e6d-11e5-a091-3f804edda9db,P+jxmuu/d+eKBBWN+WWZgsqqytw=] */

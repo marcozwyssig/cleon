@@ -14,7 +14,7 @@ public interface IDefect extends ch.actifsource.core.javamodel.INamedResource, c
   
   public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText selectResolution();
   
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectFoundBy();
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectFoundBy();
   
   public cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IClassification selectClassification();
   
@@ -22,4 +22,4 @@ public interface IDefect extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,MtNgCh9yd1RBjy1U96ucperm0SU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,IRUClRLC+iBxMOnDxNNVxOq5VUg=] */

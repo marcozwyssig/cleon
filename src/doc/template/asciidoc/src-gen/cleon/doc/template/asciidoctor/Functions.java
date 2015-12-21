@@ -48,6 +48,9 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("7eb10829-d872-11e4-aa2f-c11242a92b60")
     public java.lang.String RenderContent();
 
+    @IDynamicResourceExtension.MethodId("5e5a2fe4-a7eb-11e5-82dd-3b995d9c840c")
+    public java.lang.String RenderChapterContent();
+
   }
   
   public static interface IChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -610,4 +613,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,WgZCxSTxcdg4PDCDeB7EByAt8UA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cpk9Xjkj33ZJAM4rolCzm5tTRwo=] */

@@ -13,7 +13,7 @@ public abstract class WorkItem extends DynamicResource implements IWorkItem {
   
   // toMeRelations
   
-  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectToMeOwner(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson object) {
+  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectToMeOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, object.getResource());
   }
   
@@ -30,4 +30,4 @@ public abstract class WorkItem extends DynamicResource implements IWorkItem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,TlHMZJ+y2SVFrw7yR+ZNiAtuKrc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,781N/rLLkUsVt5Wl0HhggO5qpJI=] */

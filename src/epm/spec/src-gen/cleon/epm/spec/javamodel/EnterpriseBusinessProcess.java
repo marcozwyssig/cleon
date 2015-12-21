@@ -52,22 +52,22 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
   }
     
   @Override
-  public cleon.epm.spec.organigram.javamodel.IOrganigram selectOrganigram() {
-    return _getSingle(cleon.epm.spec.organigram.javamodel.IOrganigram.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organigram);
+  public cleon.bpmn.spec.organigram.javamodel.IOrganigram selectOrganigram() {
+    return _getSingle(cleon.bpmn.spec.organigram.javamodel.IOrganigram.class, cleon.bpmn.spec.SpecPackage.Bpmn_organigram);
   }
 
-  public EnterpriseBusinessProcess setOrganigram(cleon.epm.spec.organigram.javamodel.IOrganigram organigram) {
-    _setSingle(cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organigram, organigram);
+  public EnterpriseBusinessProcess setOrganigram(cleon.bpmn.spec.organigram.javamodel.IOrganigram organigram) {
+    _setSingle(cleon.bpmn.spec.SpecPackage.Bpmn_organigram, organigram);
     return this;
   }
     
   @Override
-  public cleon.epm.spec.organisational.javamodel.IOrganisational selectOrganisational() {
-    return _getSingle(cleon.epm.spec.organisational.javamodel.IOrganisational.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organisational);
+  public cleon.bpmn.spec.organisational.javamodel.IOrganisational selectOrganisational() {
+    return _getSingle(cleon.bpmn.spec.organisational.javamodel.IOrganisational.class, cleon.bpmn.spec.SpecPackage.Bpmn_organisational);
   }
 
-  public EnterpriseBusinessProcess setOrganisational(cleon.epm.spec.organisational.javamodel.IOrganisational organisational) {
-    _setSingle(cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organisational, organisational);
+  public EnterpriseBusinessProcess setOrganisational(cleon.bpmn.spec.organisational.javamodel.IOrganisational organisational) {
+    _setSingle(cleon.bpmn.spec.SpecPackage.Bpmn_organisational, organisational);
     return this;
   }
     
@@ -88,24 +88,16 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.epm.spec.operational.javamodel.IOperational.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_operational, visitor);
-    _acceptSingle(cleon.epm.spec.organigram.javamodel.IOrganigram.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organigram, visitor);
-    _acceptSingle(cleon.epm.spec.organisational.javamodel.IOrganisational.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organisational, visitor);
+    _acceptSingle(cleon.bpmn.spec.organigram.javamodel.IOrganigram.class, cleon.bpmn.spec.SpecPackage.Bpmn_organigram, visitor);
+    _acceptSingle(cleon.bpmn.spec.organisational.javamodel.IOrganisational.class, cleon.bpmn.spec.SpecPackage.Bpmn_organisational, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.epm.spec.javamodel.IEnterpriseBusinessProcess selectToMeOrganisational(cleon.epm.spec.organisational.javamodel.IOrganisational object) {
-    return _getToMeSingle(object.getRepository(), cleon.epm.spec.javamodel.IEnterpriseBusinessProcess.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organisational, object.getResource());
-  }
-  
   public static cleon.epm.spec.javamodel.IEnterpriseBusinessProcess selectToMeOperational(cleon.epm.spec.operational.javamodel.IOperational object) {
     return _getToMeSingle(object.getRepository(), cleon.epm.spec.javamodel.IEnterpriseBusinessProcess.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_operational, object.getResource());
   }
   
-  public static cleon.epm.spec.javamodel.IEnterpriseBusinessProcess selectToMeOrganigram(cleon.epm.spec.organigram.javamodel.IOrganigram object) {
-    return _getToMeSingle(object.getRepository(), cleon.epm.spec.javamodel.IEnterpriseBusinessProcess.class, cleon.epm.spec.SpecPackage.EnterpriseBusinessProcess_organigram, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,VxA+MCpC9yw8RXE9Nywd+S5cTB0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,vyHAzfdPjrtGW2S4LUET3DatV4M=] */

@@ -90,11 +90,11 @@ public class Defect extends DynamicResource implements IDefect {
   }
     
   @Override
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectFoundBy() {
-    return _getSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy);
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectFoundBy() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy);
   }
 
-  public Defect setFoundBy(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson foundBy) {
+  public Defect setFoundBy(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson foundBy) {
     _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy, foundBy);
     return this;
   }
@@ -110,11 +110,11 @@ public class Defect extends DynamicResource implements IDefect {
   }
     
   @Override
-  public cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner);
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner);
   }
 
-  public Defect setOwner(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson owner) {
+  public Defect setOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson owner) {
     _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, owner);
     return this;
   }
@@ -170,9 +170,9 @@ public class Defect extends DynamicResource implements IDefect {
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_analysis, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IClassification.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_classification, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_description, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IObservation.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_observation, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IReproducibility.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_reproducibility, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_resolution, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.release.javamodel.ISprint.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_sprint, visitor);
@@ -189,7 +189,7 @@ public class Defect extends DynamicResource implements IDefect {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IDefect.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_resolution, object.getResource());
   }
   
-  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IDefect> selectToMeFoundBy(cleon.sda.spec.projectmanagement.ressources.javamodel.IPerson object) {
+  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IDefect> selectToMeFoundBy(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IDefect.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy, object.getResource());
   }
   
@@ -202,4 +202,4 @@ public class Defect extends DynamicResource implements IDefect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,/v2rcw55ls9L0tkPSteAzSUYcbI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,CQ8ykKAuF4RWx28wTZ7VX0+QQgs=] */

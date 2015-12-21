@@ -51,32 +51,32 @@ public class Enterprise extends DynamicResource implements IEnterprise {
   }
     
   @Override
-  public cleon.epm.spec.organisational.role.javamodel.ILeader selectResponsible() {
-    return _getSingle(cleon.epm.spec.organisational.role.javamodel.ILeader.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible);
+  public cleon.bpmn.spec.organisational.role.javamodel.IRole selectResponsible() {
+    return _getSingle(cleon.bpmn.spec.organisational.role.javamodel.IRole.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible);
   }
 
-  public Enterprise setResponsible(cleon.epm.spec.organisational.role.javamodel.ILeader responsible) {
-    _setSingle(cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible, responsible);
+  public Enterprise setResponsible(cleon.bpmn.spec.organisational.role.javamodel.IRole responsible) {
+    _setSingle(cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible, responsible);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.epm.spec.organisational.role.javamodel.IStaff> selectStaff() {
-    return _getList(cleon.epm.spec.organisational.role.javamodel.IStaff.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_staff);
+  public java.util.List<? extends cleon.bpmn.spec.organisational.role.javamodel.IRole> selectStaff() {
+    return _getList(cleon.bpmn.spec.organisational.role.javamodel.IRole.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_staff);
   }
 
-  public Enterprise setStaff(java.util.List<? extends cleon.epm.spec.organisational.role.javamodel.IStaff> staff) {
-    _setList(cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_staff, staff);
+  public Enterprise setStaff(java.util.List<? extends cleon.bpmn.spec.organisational.role.javamodel.IRole> staff) {
+    _setList(cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_staff, staff);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.epm.spec.organisational.unit.javamodel.IOrganisationUnit> selectSubOrganisations() {
-    return _getList(cleon.epm.spec.organisational.unit.javamodel.IOrganisationUnit.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations);
+  public java.util.List<? extends cleon.bpmn.spec.organisational.unit.javamodel.IOrganisationUnit> selectSubOrganisations() {
+    return _getList(cleon.bpmn.spec.organisational.unit.javamodel.IOrganisationUnit.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations);
   }
 
-  public Enterprise setSubOrganisations(java.util.List<? extends cleon.epm.spec.organisational.unit.javamodel.IOrganisationUnit> subOrganisations) {
-    _setList(cleon.epm.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, subOrganisations);
+  public Enterprise setSubOrganisations(java.util.List<? extends cleon.bpmn.spec.organisational.unit.javamodel.IOrganisationUnit> subOrganisations) {
+    _setList(cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, subOrganisations);
     return this;
   }
     
@@ -106,9 +106,9 @@ public class Enterprise extends DynamicResource implements IEnterprise {
     // relations
     _acceptSingle(cleon.epm.spec.organisational.unit.management.javamodel.IManagement.class, cleon.epm.spec.organisational.unit.UnitPackage.Enterprise_management, visitor);
     _acceptSingle(cleon.epm.spec.organisational.unit.keyprocess.javamodel.IKeyProcess.class, cleon.epm.spec.organisational.unit.UnitPackage.Enterprise_realisation, visitor);
-    _acceptSingle(cleon.epm.spec.organisational.role.javamodel.ILeader.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
-    _acceptList(cleon.epm.spec.organisational.role.javamodel.IStaff.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationUnit_staff, visitor);
-    _acceptList(cleon.epm.spec.organisational.unit.javamodel.IOrganisationUnit.class, cleon.epm.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, visitor);
+    _acceptSingle(cleon.bpmn.spec.organisational.role.javamodel.IRole.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
+    _acceptList(cleon.bpmn.spec.organisational.role.javamodel.IRole.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationUnit_staff, visitor);
+    _acceptList(cleon.bpmn.spec.organisational.unit.javamodel.IOrganisationUnit.class, cleon.bpmn.spec.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, visitor);
     _acceptSingle(cleon.epm.spec.organisational.unit.resource.javamodel.IResource.class, cleon.epm.spec.organisational.unit.UnitPackage.Enterprise_support, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -128,4 +128,4 @@ public class Enterprise extends DynamicResource implements IEnterprise {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb007daf-ba75-11e3-9206-f19b78f4aff0,NsLs7sBJSf1Qsk1uFjNJXDZkSYs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb007daf-ba75-11e3-9206-f19b78f4aff0,yiZYRXdhktu0Xk0lxoJ7+PoLyWg=] */

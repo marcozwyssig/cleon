@@ -82,11 +82,11 @@ public class UserStory extends DynamicResource implements IUserStory {
   }
     
   @Override
-  public cleon.sda.spec.requirementmanagement.requirements.javamodel.IRequirement selectRequirement() {
-    return _getSingle(cleon.sda.spec.requirementmanagement.requirements.javamodel.IRequirement.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement selectRequirement() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement);
   }
 
-  public UserStory setRequirement(cleon.sda.spec.requirementmanagement.requirements.javamodel.IRequirement requirement) {
+  public UserStory setRequirement(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement requirement) {
     _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement, requirement);
     return this;
   }
@@ -131,7 +131,7 @@ public class UserStory extends DynamicResource implements IUserStory {
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_description, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, visitor);
-    _acceptSingle(cleon.sda.spec.requirementmanagement.requirements.javamodel.IRequirement.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.release.javamodel.ISprint.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_sprint, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -139,9 +139,9 @@ public class UserStory extends DynamicResource implements IUserStory {
 
   // toMeRelations
   
-  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.story.javamodel.IUserStory> selectToMeRequirement(cleon.sda.spec.requirementmanagement.requirements.javamodel.IRequirement object) {
+  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.story.javamodel.IUserStory> selectToMeRequirement(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.story.javamodel.IUserStory.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.UserStory_requirement, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,693cc9f9-ff9c-11e4-ac0a-959b440f987f,Bh5RjymQNnaEAXAy9Hl46sJVbWA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,693cc9f9-ff9c-11e4-ac0a-959b440f987f,+K2F3qYQ+R4qBh8T7XGIesQwmao=] */

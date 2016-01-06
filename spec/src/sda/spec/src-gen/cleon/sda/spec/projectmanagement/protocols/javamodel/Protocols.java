@@ -28,17 +28,6 @@ public class Protocols extends DynamicResource implements IProtocols {
     super(resourceRepository, resource, IProtocols.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -64,8 +53,6 @@ public class Protocols extends DynamicResource implements IProtocols {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocols_protocols, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -78,4 +65,4 @@ public class Protocols extends DynamicResource implements IProtocols {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,1UGoiyGbQX6ix64odXVAF6/X0mE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,gh/vJJl3dq+Hin5pBcy+X9UQ/IE=] */

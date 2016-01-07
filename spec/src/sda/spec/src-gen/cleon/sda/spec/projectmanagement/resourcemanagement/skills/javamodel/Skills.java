@@ -81,16 +81,6 @@ public class Skills extends DynamicResource implements ISkills {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource> selectResources() {
-    return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources);
-  }
-
-  public Skills setResources(java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource> resources) {
-    _setList(cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources, resources);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkill> selectSkills() {
     return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkill.class, cleon.sda.spec.projectmanagement.resourcemanagement.skills.SkillsPackage.Skills_skills);
   }
@@ -120,7 +110,6 @@ public class Skills extends DynamicResource implements ISkills {
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkill.class, cleon.sda.spec.projectmanagement.resourcemanagement.skills.SkillsPackage.Skills_skills, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -132,4 +121,4 @@ public class Skills extends DynamicResource implements ISkills {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,301e91fc-a7e4-11e5-82dd-3b995d9c840c,ZbgqEHmvhXjwX+jAyiQ0i/GGdfM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,301e91fc-a7e4-11e5-82dd-3b995d9c840c,jZztUtZK1IvlL84lgnGb/NrmoZA=] */

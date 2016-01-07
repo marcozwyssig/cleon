@@ -11,11 +11,5 @@ public abstract class Resources extends DynamicResource implements IResources {
     super(IResources.TYPE_ID);
   }
   
-  // toMeRelations
-  
-  public static cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources selectToMeResources(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,81e4d2c5-ff9e-11e4-ac0a-959b440f987f,cocK4zjDPViQheas++uXh0LZE48=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,81e4d2c5-ff9e-11e4-ac0a-959b440f987f,p84Rk6IzETPEmMi74GH8AzVrd2c=] */

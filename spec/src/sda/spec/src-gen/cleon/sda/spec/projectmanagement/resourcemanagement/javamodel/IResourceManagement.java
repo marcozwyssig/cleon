@@ -8,8 +8,10 @@ public interface IResourceManagement extends cleon.doc.spec.document.javamodel.I
   
   // relations
   
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources> selectResources();
+  public cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills selectSkills();
+  
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons selectPersons();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,nJkNRZ/0gu1sJmSscHit6un84xI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,72fRNGvmIb6fUL91V8wImivS5MY=] */

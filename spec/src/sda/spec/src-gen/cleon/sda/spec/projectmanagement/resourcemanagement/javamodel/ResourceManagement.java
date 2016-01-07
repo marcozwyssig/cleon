@@ -71,12 +71,22 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources> selectResources() {
-    return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_resources);
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons selectPersons() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_persons);
   }
 
-  public ResourceManagement setResources(java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources> resources) {
-    _setList(cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_resources, resources);
+  public ResourceManagement setPersons(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons persons) {
+    _setSingle(cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_persons, persons);
+    return this;
+  }
+    
+  @Override
+  public cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills selectSkills() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_skills);
+  }
+
+  public ResourceManagement setSkills(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills skills) {
+    _setSingle(cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_skills, skills);
     return this;
   }
     
@@ -108,16 +118,21 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_resources, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_persons, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_skills, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement selectToMeResources(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResources object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_resources, object.getResource());
+  public static cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement selectToMeSkills(cleon.sda.spec.projectmanagement.resourcemanagement.skills.javamodel.ISkills object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_skills, object.getResource());
+  }
+  
+  public static cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement selectToMePersons(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResourceManagement.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_persons, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,07u/iJ7O/b74+HpsdPMQ4TuZYcQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,p0/MP53ZZIXMA0q/Be4za9D9T9Y=] */

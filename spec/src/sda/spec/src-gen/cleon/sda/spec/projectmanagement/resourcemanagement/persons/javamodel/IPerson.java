@@ -2,7 +2,7 @@ package cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPerson extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource {
+public interface IPerson extends cleon.doc.spec.chapter.javamodel.INamedChapter, cleon.doc.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("9bfc0d2c-ff9e-11e4-ac0a-959b440f987f");
   
@@ -14,6 +14,8 @@ public interface IPerson extends cleon.sda.spec.projectmanagement.resourcemanage
   
   public java.lang.String selectShortname();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IExperience> selectExperience();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,dteo17ZJ0M+1X8HqB6THqcrYeo8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,J49dM/i3pCI1lRX6hrQe3sW4rxs=] */

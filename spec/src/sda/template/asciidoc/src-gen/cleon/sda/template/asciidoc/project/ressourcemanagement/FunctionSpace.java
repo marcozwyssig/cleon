@@ -43,6 +43,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IPersonFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0367b039-b50c-11e5-aa95-235930e9af3d")
+    public java.lang.String RenderChapterContent();
+
+  }
+  
+  public static interface IPersonFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PersonFunctionsImpl implements IPersonFunctionsImpl {
+
+    public static final IPersonFunctionsImpl INSTANCE = new PersonFunctionsImpl();
+
+    private PersonFunctionsImpl() {}
+
+  }
+  
+  public static class PersonFunctions {
+
+    private PersonFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,358e3a10-a7e9-11e5-82dd-3b995d9c840c,q++DSNEBBB3rJKU3nahYzZ0uEZo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,358e3a10-a7e9-11e5-82dd-3b995d9c840c,vJWtC2DGTl5z7fd466M1OxAD6xM=] */

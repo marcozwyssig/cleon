@@ -91,16 +91,6 @@ public class Persons extends DynamicResource implements IPersons {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource> selectResources() {
-    return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources);
-  }
-
-  public Persons setResources(java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource> resources) {
-    _setList(cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources, resources);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -121,7 +111,6 @@ public class Persons extends DynamicResource implements IPersons {
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Persons_persons, visitor);
-    _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.javamodel.IResource.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.Resources_resources, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -132,4 +121,4 @@ public class Persons extends DynamicResource implements IPersons {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68e1ab2e-a7e4-11e5-82dd-3b995d9c840c,5Rc6vFe1yibnURuSq8UPSTCTI8s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68e1ab2e-a7e4-11e5-82dd-3b995d9c840c,wEiMDTEF2wzZJ1jN9eb8TqwKLgI=] */

@@ -51,6 +51,16 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
   }
     
   @Override
+  public cleon.doc.spec.document.javamodel.ISubDocument selectNoDocuments() {
+    return _getSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments);
+  }
+
+  public ResourceManagement setNoDocuments(cleon.doc.spec.document.javamodel.ISubDocument noDocuments) {
+    _setSingle(cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, noDocuments);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -116,6 +126,7 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
+    _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPersons.class, cleon.sda.spec.projectmanagement.resourcemanagement.ResourcemanagementPackage.ResourceManagement_persons, visitor);
@@ -135,4 +146,4 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,p0/MP53ZZIXMA0q/Be4za9D9T9Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,8AHyulFlF1EbU6o6D292rOs448w=] */

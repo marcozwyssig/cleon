@@ -46,6 +46,7 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="75b8265f-a7e5-11e5-82dd-3b995d9c840c" type="resource" guid="fd0b0ad8-28bc-11e5-bdaf-69a48f49df43" />
+    <object statement-guid="5ac17b78-b53d-11e5-bc0c-f35b68c3609a" type="resource" guid="eaf1f7df-31f6-11e5-bd99-eda9ce254b0b" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1c6682a5-a7d9-11e5-82dd-3b995d9c840c">
@@ -62,8 +63,17 @@
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="1c66f7d7-a7d9-11e5-82dd-3b995d9c840c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="6b30a25f-b53d-11e5-bc0c-f35b68c3609a" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
+          <object statement-guid="6f211670-b53d-11e5-bc0c-f35b68c3609a" type="literal">scope</object>
+        </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="1c671ee8-a7d9-11e5-82dd-3b995d9c840c" type="resource" guid="fef60a9b-a7d8-11e5-82dd-3b995d9c840c" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="64af4a4a-b53d-11e5-bc0c-f35b68c3609a" type="resource" guid="fd0b0ada-28bc-11e5-bdaf-69a48f49df43" />
         </predicate>
       </resource>
     </object>

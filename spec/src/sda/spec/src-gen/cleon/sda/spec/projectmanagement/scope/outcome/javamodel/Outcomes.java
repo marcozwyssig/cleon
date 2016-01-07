@@ -1,31 +1,31 @@
-package cleon.sda.spec.projectmanagement.scope.backlog.javamodel;
+package cleon.sda.spec.projectmanagement.scope.outcome.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Backlog extends DynamicResource implements IBacklog {
+public class Outcomes extends DynamicResource implements IOutcomes {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IBacklog> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IBacklog>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOutcomes> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOutcomes>() {
     
     @Override
-    public IBacklog create() {
-      return new Backlog();
+    public IOutcomes create() {
+      return new Outcomes();
     }
     
     @Override
-    public IBacklog create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Backlog(resourceRepository, resource);
+    public IOutcomes create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Outcomes(resourceRepository, resource);
     }
   
   };
 
-  public Backlog() {
-    super(IBacklog.TYPE_ID);
+  public Outcomes() {
+    super(IOutcomes.TYPE_ID);
   }
   
-  public Backlog(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IBacklog.TYPE_ID);
+  public Outcomes(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IOutcomes.TYPE_ID);
   }
 
   // relations
@@ -35,7 +35,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
 
-  public Backlog setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
+  public Outcomes setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
     return this;
   }
@@ -45,18 +45,18 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents);
   }
 
-  public Backlog setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> documents) {
+  public Outcomes setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> documents) {
     _setList(cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, documents);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IFeatureGroup> selectFeatureGroups() {
-    return _getList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IFeatureGroup.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups);
+  public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome> selectOutcomes() {
+    return _getList(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes);
   }
 
-  public Backlog setFeatureGroups(java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IFeatureGroup> featureGroups) {
-    _setList(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups, featureGroups);
+  public Outcomes setOutcomes(java.util.List<? extends cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome> outcomes) {
+    _setList(cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, outcomes);
     return this;
   }
     
@@ -65,7 +65,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
 
-  public Backlog setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
+  public Outcomes setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
 
-  public Backlog setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
+  public Outcomes setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
     _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
     return this;
   }
@@ -85,7 +85,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Backlog setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Outcomes setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -95,7 +95,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
   }
 
-  public Backlog setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
+  public Outcomes setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
     return this;
   }
@@ -106,7 +106,7 @@ public class Backlog extends DynamicResource implements IBacklog {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
-    _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IFeatureGroup.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups, visitor);
+    _acceptList(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -115,9 +115,9 @@ public class Backlog extends DynamicResource implements IBacklog {
 
   // toMeRelations
   
-  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog> selectToMeFeatureGroups(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IFeatureGroup object) {
-    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups, object.getResource());
+  public static cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes selectToMeOutcomes(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,7GeoKDzx2BqqSQ7b+c4d/zaU8to=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,qRrVxd+wHxA7bssRk43LpNFpdMU=] */

@@ -32,6 +32,9 @@ public class SpecPackage {
   public static final Resource ModelUseDecomposite = new Resource("fe613e64-a7d0-11e5-82dd-3b995d9c840c");
   public static final Resource ProjectUseDecomposite = new Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
   public static final Resource ModelUseDecomposite_into = new Resource("38e122d5-a7d1-11e5-82dd-3b995d9c840c");
+  public static final Resource Package = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
+  public static final Resource Project_exportPackage = new Resource("4ac67c8e-b87e-11e5-a463-ff45aa361315");
+  public static final Resource Package_subPackage = new Resource("c1a1d31a-b884-11e5-a463-ff45aa361315");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +55,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,dkToB0vUNqx9L3E9VpPzSIdyWKU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,IvfHTjA+TDU6ldfl9kQLywjFQJM=] */

@@ -137,6 +137,16 @@ public class Specification extends DynamicResource implements ISpecification {
   }
     
   @Override
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IPackage> selectExportPackage() {
+    return _getList(cleon.actifsource.spec.javamodel.IPackage.class, cleon.actifsource.spec.SpecPackage.Project_exportPackage);
+  }
+
+  public Specification setExportPackage(java.util.List<? extends cleon.actifsource.spec.javamodel.IPackage> exportPackage) {
+    _setList(cleon.actifsource.spec.SpecPackage.Project_exportPackage, exportPackage);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentDependency> selectHasDependency() {
     return _getList(cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency);
   }
@@ -272,6 +282,7 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IProjectDependency.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IDiagram.class, cleon.actifsource.spec.SpecPackage.Specification_diagrams, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IPackage.class, cleon.actifsource.spec.SpecPackage.Project_exportPackage, visitor);
     _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IModel.class, cleon.actifsource.spec.SpecPackage.Specification_model, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
@@ -305,4 +316,4 @@ public class Specification extends DynamicResource implements ISpecification {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,nV42NeMKkjfvY46qTweirPaKb3Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,s7R9w9aLzhqFcRPFaWqtiU1st5U=] */

@@ -35,6 +35,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("2b13843d-44ca-11e5-93ef-c50f9659357a")
     public java.lang.String RenderPluginDependencies();
 
+    @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
+    public cleon.actifsource.spec.javamodel.IPackage GetPackages();
+
   }
   
   public static interface IProjectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -201,6 +204,34 @@ public class FunctionSpace {
 
   }
 
+  public static interface IPackageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0b35945e-b885-11e5-a463-ff45aa361315")
+    public cleon.actifsource.spec.javamodel.IPackage GetPackages();
+
+    @IDynamicResourceExtension.MethodId("3bee1cdd-b885-11e5-a463-ff45aa361315")
+    public java.lang.String GetPackageName(final cleon.actifsource.spec.javamodel.IProject project);
+
+  }
+  
+  public static interface IPackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PackageFunctionsImpl implements IPackageFunctionsImpl {
+
+    public static final IPackageFunctionsImpl INSTANCE = new PackageFunctionsImpl();
+
+    private PackageFunctionsImpl() {}
+
+  }
+  
+  public static class PackageFunctions {
+
+    private PackageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,jmO0iWSBX2RmrZ+Ph7oyONlv6kc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,Xk7aEbrD9LKhPCiQL0HSJE2SDXk=] */

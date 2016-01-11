@@ -127,6 +127,16 @@ public class Model extends DynamicResource implements IModel {
   }
     
   @Override
+  public java.util.List<? extends cleon.actifsource.spec.javamodel.IPackage> selectExportPackage() {
+    return _getList(cleon.actifsource.spec.javamodel.IPackage.class, cleon.actifsource.spec.SpecPackage.Project_exportPackage);
+  }
+
+  public Model setExportPackage(java.util.List<? extends cleon.actifsource.spec.javamodel.IPackage> exportPackage) {
+    _setList(cleon.actifsource.spec.SpecPackage.Project_exportPackage, exportPackage);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.uml.spec.structural.components.javamodel.IComponentDependency> selectHasDependency() {
     return _getList(cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency);
   }
@@ -211,6 +221,7 @@ public class Model extends DynamicResource implements IModel {
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.actifsource.spec.javamodel.IProjectDependency.class, cleon.actifsource.spec.SpecPackage.Project_dependsOn, visitor);
+    _acceptList(cleon.actifsource.spec.javamodel.IPackage.class, cleon.actifsource.spec.SpecPackage.Project_exportPackage, visitor);
     _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptSingle(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -221,4 +232,4 @@ public class Model extends DynamicResource implements IModel {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,jGsMeqVel4hf5UK+ygjt60oCrKo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,cq3F9XUevYtjXggar47nmR8tIs0=] */

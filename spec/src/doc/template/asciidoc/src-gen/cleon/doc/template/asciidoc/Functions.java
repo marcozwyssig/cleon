@@ -1,4 +1,4 @@
-package cleon.doc.template.asciidoctor;
+package cleon.doc.template.asciidoc;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -579,4 +579,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,FHrLS0MhwMY9Et8dD5ySk4E7yRM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Qp4P/jY4/nzoMqXSJunIvs3/ZP0=] */

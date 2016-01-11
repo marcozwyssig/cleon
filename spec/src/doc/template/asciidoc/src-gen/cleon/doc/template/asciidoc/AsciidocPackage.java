@@ -1,8 +1,8 @@
-package cleon.doc.template.asciidoctor;
+package cleon.doc.template.asciidoc;
 
 import ch.actifsource.core.Resource;
 
-public class AsciidoctorPackage {
+public class AsciidocPackage {
   
   public static final Resource Functions_DocumentElement = new Resource("4d98ac18-d872-11e4-aa2f-c11242a92b60");
   public static final Resource Functions_Chapter = new Resource("794f02b4-d872-11e4-aa2f-c11242a92b60");
@@ -29,7 +29,7 @@ public class AsciidoctorPackage {
   
   /* End Protected Region   [[user]] */
   
-  private AsciidoctorPackage() {}
+  private AsciidocPackage() {}
   
   public static final String getScopeName() {
     return "cleon.doc.template.asciidoc";
@@ -40,8 +40,8 @@ public class AsciidoctorPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.doc.template.asciidoctor";
+    return "cleon.doc.template.asciidoc";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoctor,cIezArD9gbtIKG8kv/SM/m8pvOU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoc,6El8CWareWLm+E1RGSaDKTPqCcg=] */

@@ -5,6 +5,8 @@ import ch.actifsource.core.Resource;
 public class ScopePackage {
   
   public static final Resource FunctionSpace_Outcome = new Resource("e599bbcd-b540-11e5-bc0c-f35b68c3609a");
+  public static final Resource FunctionSpace_Backlog = new Resource("818591c8-ba81-11e5-b56d-4f524d402f4b");
+  public static final Resource FunctionSpace_FeatureGroup = new Resource("2ce025c8-ba82-11e5-b56d-4f524d402f4b");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +27,4 @@ public class ScopePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.project.scope,cex0Z+VgSTakIEhNd/9VfU99Lnk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.project.scope,VZTsRqpmrriuSHSkqjXJUsnz3Fo=] */

@@ -1,31 +1,31 @@
-package cleon.sda.spec.projectmanagement.scope.outcome.javamodel;
+package cleon.sda.spec.projectmanagement.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Outcomes extends DynamicResource implements IOutcomes {
+public class ProjectDocument extends DynamicResource implements IProjectDocument {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOutcomes> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IOutcomes>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IProjectDocument> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IProjectDocument>() {
     
     @Override
-    public IOutcomes create() {
-      return new Outcomes();
+    public IProjectDocument create() {
+      return new ProjectDocument();
     }
     
     @Override
-    public IOutcomes create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Outcomes(resourceRepository, resource);
+    public IProjectDocument create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ProjectDocument(resourceRepository, resource);
     }
   
   };
 
-  public Outcomes() {
-    super(IOutcomes.TYPE_ID);
+  public ProjectDocument() {
+    super(IProjectDocument.TYPE_ID);
   }
   
-  public Outcomes(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IOutcomes.TYPE_ID);
+  public ProjectDocument(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IProjectDocument.TYPE_ID);
   }
 
   // relations
@@ -35,7 +35,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
 
-  public Outcomes setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
+  public ProjectDocument setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
     return this;
   }
@@ -45,28 +45,8 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents);
   }
 
-  public Outcomes setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> documents) {
+  public ProjectDocument setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> documents) {
     _setList(cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, documents);
-    return this;
-  }
-    
-  @Override
-  public cleon.doc.spec.document.javamodel.ISubDocument selectNoDocuments() {
-    return _getSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments);
-  }
-
-  public Outcomes setNoDocuments(cleon.doc.spec.document.javamodel.ISubDocument noDocuments) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, noDocuments);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome> selectOutcomes() {
-    return _getList(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes);
-  }
-
-  public Outcomes setOutcomes(java.util.List<? extends cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome> outcomes) {
-    _setList(cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, outcomes);
     return this;
   }
     
@@ -75,7 +55,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
 
-  public Outcomes setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
+  public ProjectDocument setOwnDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> ownDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, ownDocumentElements);
     return this;
   }
@@ -85,7 +65,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
 
-  public Outcomes setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
+  public ProjectDocument setParagraphes(java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> paragraphes) {
     _setList(cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, paragraphes);
     return this;
   }
@@ -95,7 +75,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Outcomes setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ProjectDocument setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -105,7 +85,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
   }
 
-  public Outcomes setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
+  public ProjectDocument setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
     _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
     return this;
   }
@@ -116,19 +96,11 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
-    _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
-    _acceptList(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes selectToMeOutcomes(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcomes_outcomes, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,rIy6XIh2kVwuzzjly2ciiwPkYDo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7212c4ba-ba84-11e5-b56d-4f524d402f4b,M5Ou2Nthap7OHrGyuE42LH0wXCM=] */

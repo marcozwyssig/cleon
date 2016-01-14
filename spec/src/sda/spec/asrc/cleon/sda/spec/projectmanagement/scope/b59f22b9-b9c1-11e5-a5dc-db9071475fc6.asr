@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b59f22b9-b9c1-11e5-a5dc-db9071475fc6">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="d22a43c2-b9c1-11e5-a5dc-db9071475fc6" guid="d22a43c0-b9c1-11e5-a5dc-db9071475fc6" />
+    <resource statement-guid="f2c37321-b9c1-11e5-a5dc-db9071475fc6" guid="2d4a91ae-ff9c-11e4-ac0a-959b440f987f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b59f22bb-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b59f22bd-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+    <object statement-guid="e5c78b3e-ba83-11e5-b56d-4f524d402f4b" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+    <object statement-guid="0b1bf16b-b9c3-11e5-a5dc-db9071475fc6" type="resource" guid="eaf1f7df-31f6-11e5-bd99-eda9ce254b0b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d22a43c2-b9c1-11e5-a5dc-db9071475fc6">
+      <resource guid="d22a43c0-b9c1-11e5-a5dc-db9071475fc6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d22a43c1-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d22c8db5-b9c1-11e5-a5dc-db9071475fc6" type="literal">outcome</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d22c8db6-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="d22c8db7-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="d22c8db4-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="d22a43c3-b9c1-11e5-a5dc-db9071475fc6" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f2c37321-b9c1-11e5-a5dc-db9071475fc6">
+      <resource guid="2d4a91ae-ff9c-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2d4ab8c0-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2d4adfd1-ff9c-11e4-ac0a-959b440f987f" type="literal">backlog</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2d4b5503-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2d4b5504-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="b314fff7-2994-11de-96d1-759bbfe8d454">
+          <object statement-guid="8113bbfd-ff9d-11e4-ac0a-959b440f987f" type="literal">backlog</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="2d4b7c15-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="28af8502-ff9c-11e4-ac0a-959b440f987f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b59f22bc-b9c1-11e5-a5dc-db9071475fc6" type="literal">BacklogForOutcome</object>
+  </predicate>
+</resource>
+

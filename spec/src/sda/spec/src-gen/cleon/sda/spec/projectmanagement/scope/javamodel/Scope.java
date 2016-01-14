@@ -31,12 +31,12 @@ public class Scope extends DynamicResource implements IScope {
   // relations
   
   @Override
-  public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog selectBacklog() {
-    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlog);
+  public cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs selectBacklogs() {
+    return _getSingle(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs);
   }
 
-  public Scope setBacklog(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog) {
-    _setSingle(cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlog, backlog);
+  public Scope setBacklogs(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs backlogs) {
+    _setSingle(cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs, backlogs);
     return this;
   }
     
@@ -124,7 +124,7 @@ public class Scope extends DynamicResource implements IScope {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlog, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
@@ -137,13 +137,13 @@ public class Scope extends DynamicResource implements IScope {
 
   // toMeRelations
   
-  public static cleon.sda.spec.projectmanagement.scope.javamodel.IScope selectToMeBacklog(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.javamodel.IScope.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlog, object.getResource());
-  }
-  
   public static cleon.sda.spec.projectmanagement.scope.javamodel.IScope selectToMeOutcome(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes object) {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.javamodel.IScope.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_outcome, object.getResource());
   }
   
+  public static cleon.sda.spec.projectmanagement.scope.javamodel.IScope selectToMeBacklogs(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.javamodel.IScope.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,KaWcE0IWODO80tMF2+LOC3ycFzg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,lK8GPHHGUlkFC+hQIYzBK6Swego=] */

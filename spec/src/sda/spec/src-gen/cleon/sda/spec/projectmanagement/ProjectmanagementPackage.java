@@ -13,6 +13,7 @@ public class ProjectmanagementPackage {
   public static final Resource Project_process = new Resource("7e5cb01b-a7de-11e5-82dd-3b995d9c840c");
   public static final Resource Project_risks = new Resource("8b766b2f-a7de-11e5-82dd-3b995d9c840c");
   public static final Resource Project_budget = new Resource("10c290b8-a7df-11e5-82dd-3b995d9c840c");
+  public static final Resource ProjectDocument = new Resource("7212c4ba-ba84-11e5-b56d-4f524d402f4b");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class ProjectmanagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement,LJ6IVzDg4P5AC3mP+0s755W93tc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement,BKdW9q9E/rY1gVAZAKl44U9jf+Y=] */

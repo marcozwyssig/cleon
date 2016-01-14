@@ -2,7 +2,7 @@ package cleon.sda.spec.projectmanagement.scope.outcome.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IOutcomes extends cleon.doc.spec.document.javamodel.ISubDocument {
+public interface IOutcomes extends cleon.doc.spec.document.javamodel.ISubDocument, cleon.doc.spec.document.javamodel.INoSubDocuments, cleon.sda.spec.projectmanagement.javamodel.IProjectDocument {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fdf40175-b53c-11e5-bc0c-f35b68c3609a");
   
@@ -12,4 +12,4 @@ public interface IOutcomes extends cleon.doc.spec.document.javamodel.ISubDocumen
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,w+jSHIpQCLInQYsD5d5MB8NTLbo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,gG9E32bTUjeCzr9kDTf49MuWSic=] */

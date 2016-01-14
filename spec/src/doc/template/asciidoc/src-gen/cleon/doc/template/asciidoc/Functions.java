@@ -557,6 +557,9 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("54ce2448-47d5-11e5-9e30-e198f8ad676a")
     public java.lang.String RenderDocument();
 
+    @IDynamicResourceExtension.MethodId("de5cc4d4-ba80-11e5-b56d-4f524d402f4b")
+    public java.lang.String GetDocumentPath();
+
   }
   
   public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -579,4 +582,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Qp4P/jY4/nzoMqXSJunIvs3/ZP0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,8BzQ14NxSGwTGVoZDfOEDKkPIAU=] */

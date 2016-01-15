@@ -8,8 +8,8 @@ public interface IChapterOwnDocumentElementComposite extends cleon.doc.spec.java
   
   // relations
   
-  public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapter> selectChapters();
+  public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> selectChapters();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dddb0a30-466c-11e5-ba74-cb2e95044e1c,hxSrnkCSZ2GIQaEFEI9jBE2yWcE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dddb0a30-466c-11e5-ba74-cb2e95044e1c,/B+4VAKGPkmFuER1hXLHPuPYZgM=] */

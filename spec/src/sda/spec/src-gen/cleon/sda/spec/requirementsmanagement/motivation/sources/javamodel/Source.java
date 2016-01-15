@@ -11,5 +11,11 @@ public abstract class Source extends DynamicResource implements ISource {
     super(ISource.TYPE_ID);
   }
   
+  // toMeRelations
+  
+  public static cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource selectToMeComposite(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composite, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b2b59c5-a951-11e5-bda2-a7fc3bd7c783,7gfBJwU2d6q4KWi3uQ8NF29vVpw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b2b59c5-a951-11e5-bda2-a7fc3bd7c783,XARq99ADzQvDukOK0F3yC90mhGo=] */

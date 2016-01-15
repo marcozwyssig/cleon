@@ -13,9 +13,9 @@ public abstract class ChapterOwnDocumentElementComposite extends DynamicResource
   
   // toMeRelations
   
-  public static cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite selectToMeChapters(cleon.doc.spec.chapter.javamodel.IChapter object) {
+  public static cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite selectToMeChapters(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite object) {
     return _getToMeSingle(object.getRepository(), cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dddb0a30-466c-11e5-ba74-cb2e95044e1c,dDdsshRdEM5gsjOo+5FgThL08Ao=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dddb0a30-466c-11e5-ba74-cb2e95044e1c,DpPiFopI4Z4D9v5bomUJxMGWjQM=] */

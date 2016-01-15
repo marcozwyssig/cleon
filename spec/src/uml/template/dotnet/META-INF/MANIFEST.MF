@@ -3,10 +3,10 @@ Bundle-ManifestVersion: 2
 Bundle-Name: cleon.uml.template.dotnet
 Bundle-SymbolicName: cleon.uml.template.dotnet.builtin;singleton:=true
 Bundle-Version: 0.0.1.qualifier
-Require-Bundle: ch.actifsource.core;bundle-version="6.12.0",
- ch.actifsource.environment;bundle-version="6.12.0",
- ch.actifsource.util;bundle-version="6.12.0",
+Require-Bundle: ch.actifsource.core;bundle-version="6.13.0",
+ ch.actifsource.environment;bundle-version="6.13.0",
+ ch.actifsource.util;bundle-version="6.13.0",
  cleon.uml.spec.builtin;bundle-version="0.0.1",
- ch.actifsource.generator;bundle-version="6.12.0"
+ ch.actifsource.generator;bundle-version="6.13.0"
 Export-Package: cleon.uml.template.dotnet,cleon.uml.template.dotnet.javamodel
  

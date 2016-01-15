@@ -2,7 +2,7 @@ package cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IFeatureGroup extends cleon.doc.spec.document.javamodel.INamedSubDocument, cleon.doc.spec.document.javamodel.INoSubDocuments {
+public interface IFeatureGroup extends cleon.doc.spec.chapter.javamodel.INamedChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("409913e6-369c-11e5-95d9-2b04d7ab02d9");
   
@@ -16,4 +16,4 @@ public interface IFeatureGroup extends cleon.doc.spec.document.javamodel.INamedS
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,eXIc2UsN46j/vAeHzXtdnxHLWjg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,j2JfwkjHFkP4VEURdPUUYOHGy/I=] */

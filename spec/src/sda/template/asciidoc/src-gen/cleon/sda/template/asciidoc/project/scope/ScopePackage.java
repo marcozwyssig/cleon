@@ -6,7 +6,7 @@ public class ScopePackage {
   
   public static final Resource FunctionSpace_Outcome = new Resource("e599bbcd-b540-11e5-bc0c-f35b68c3609a");
   public static final Resource FunctionSpace_Backlog = new Resource("818591c8-ba81-11e5-b56d-4f524d402f4b");
-  public static final Resource FunctionSpace_FeatureGroup = new Resource("2ce025c8-ba82-11e5-b56d-4f524d402f4b");
+  public static final Resource FunctionSpace_WorkItem = new Resource("ef8a4b18-ba91-11e5-92ed-2d7ef7ca3831");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +27,4 @@ public class ScopePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.project.scope,VZTsRqpmrriuSHSkqjXJUsnz3Fo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.project.scope,9bwkfy0Bw+0cDXSacIL/38WK2RI=] */

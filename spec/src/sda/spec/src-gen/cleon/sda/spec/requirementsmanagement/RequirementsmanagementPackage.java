@@ -9,6 +9,7 @@ public class RequirementsmanagementPackage {
   public static final Resource RequirementsManagement_requirements = new Resource("03e0dda7-a959-11e5-bda2-a7fc3bd7c783");
   public static final Resource Notes = new Resource("fb4ba841-bb82-11e5-b2f7-f515c847fa35");
   public static final Resource Notes_notes = new Resource("fe8c2d2e-bb82-11e5-b2f7-f515c847fa35");
+  public static final Resource RequirementsManagement_issues = new Resource("4a8f0b60-bdef-11e5-965a-07bc81ea9ca9");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class RequirementsmanagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement,kpylTft4anuE+U2H701m4AFIFu4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement,3LKzgJdIDv1TTUM1QroOdxAIVR8=] */

@@ -9,11 +9,6 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
@@ -21,6 +16,5 @@
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 </projectDescription>

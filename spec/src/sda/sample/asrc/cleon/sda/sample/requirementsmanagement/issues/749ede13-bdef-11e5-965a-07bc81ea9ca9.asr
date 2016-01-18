@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="749ede13-bdef-11e5-965a-07bc81ea9ca9">
+  <owns predicate="d70cbb52-bdee-11e5-965a-07bc81ea9ca9">
+    <resource statement-guid="a15391dd-bdef-11e5-965a-07bc81ea9ca9" guid="a15391da-bdef-11e5-965a-07bc81ea9ca9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="749ede15-bdef-11e5-965a-07bc81ea9ca9" type="resource" guid="9fb6a044-bdee-11e5-965a-07bc81ea9ca9" />
+  </predicate>
+  <predicate guid="d70cbb52-bdee-11e5-965a-07bc81ea9ca9">
+    <object statement-guid="a15391dd-bdef-11e5-965a-07bc81ea9ca9">
+      <resource guid="a15391da-bdef-11e5-965a-07bc81ea9ca9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a15391dc-bdef-11e5-965a-07bc81ea9ca9" type="resource" guid="d0da468c-bdee-11e5-965a-07bc81ea9ca9" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1cd2eae-bdef-11e5-965a-07bc81ea9ca9" type="literal">ddd</object>
+        </predicate>
+        <predicate guid="2be4b435-bdef-11e5-965a-07bc81ea9ca9">
+          <object statement-guid="a2c7943f-bdef-11e5-965a-07bc81ea9ca9" type="resource" guid="57838399-bb81-11e5-b2f7-f515c847fa35" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

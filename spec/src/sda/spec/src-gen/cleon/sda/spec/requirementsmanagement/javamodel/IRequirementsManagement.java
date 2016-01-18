@@ -12,6 +12,8 @@ public interface IRequirementsManagement extends cleon.doc.spec.chapter.javamode
   
   public cleon.sda.spec.requirementsmanagement.requirements.javamodel.IRequirements selectRequirements();
   
+  public cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues selectIssues();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,b1+V7GUtSWY/xg65U9KGpDD4yyY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,5gUZ6OSIuTyc3J/yARtLMrufqX0=] */

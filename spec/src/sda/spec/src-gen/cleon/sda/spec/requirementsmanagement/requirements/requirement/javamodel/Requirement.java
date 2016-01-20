@@ -29,5 +29,13 @@ public abstract class Requirement extends DynamicResource implements IRequiremen
     return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_originatesFrom, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement> selectToMeAchieves(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, object.getResource());
+  }
+  
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement> selectToMeConflicts(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_conflicts, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,o4MflbuCPV6+9kUGNwuYvanImQs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,8OE7tqBXGlL+5kgQ3Lp4GNF/gps=] */

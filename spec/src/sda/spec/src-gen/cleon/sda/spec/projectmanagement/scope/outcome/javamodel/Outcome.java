@@ -49,21 +49,21 @@ public class Outcome extends DynamicResource implements IOutcome {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
-  public java.lang.String selectNo() {
-    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcome_no);
-  }
-    
-  public void setNo(java.lang.String no) {
-     _setSingleAttribute(cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcome_no, no);
   }
 
   // relations
@@ -124,8 +124,8 @@ public class Outcome extends DynamicResource implements IOutcome {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcome_no, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
@@ -134,9 +134,11 @@ public class Outcome extends DynamicResource implements IOutcome {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
   public static cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome selectToMeRequiredSkills(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IRequiredSkills object) {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcome.class, cleon.sda.spec.projectmanagement.scope.outcome.OutcomePackage.Outcome_requiredSkills, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,c2VE+X/WwNpCT4cVjTegInN3Leo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,BncIPh/GKYN9jshHw6Uz/awqreM=] */

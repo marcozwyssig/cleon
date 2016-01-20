@@ -11,6 +11,8 @@ public class DriversPackage {
   public static final Resource Chance = new Resource("0d2aaed7-a95a-11e5-bda2-a7fc3bd7c783");
   public static final Resource Lack = new Resource("340631a2-a95a-11e5-bda2-a7fc3bd7c783");
   public static final Resource Guideline = new Resource("50b8143d-a95a-11e5-bda2-a7fc3bd7c783");
+  public static final Resource Driver_originatesFromPrinciple = new Resource("a41f28ac-bf5c-11e5-a56a-35b34376b412");
+  public static final Resource Driver_originatesFromSource = new Resource("cf87ad57-bf5c-11e5-a56a-35b34376b412");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +33,4 @@ public class DriversPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.drivers,qQG30a9lPASM70BrNaIle8vxRvY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.drivers,XslkmL+aqBETtskCimLSjj/bXAY=] */

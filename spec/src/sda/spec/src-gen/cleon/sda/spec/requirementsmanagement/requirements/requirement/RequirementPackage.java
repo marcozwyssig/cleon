@@ -23,6 +23,8 @@ public class RequirementPackage {
   public static final Resource FormalFunctionalRequirement = new Resource("7244f943-a962-11e5-bda2-a7fc3bd7c783");
   public static final Resource SimpleFunctionalRequirement = new Resource("87710c27-a962-11e5-bda2-a7fc3bd7c783");
   public static final Resource Requirement_originatesFrom = new Resource("2e043b42-bb82-11e5-b2f7-f515c847fa35");
+  public static final Resource Requirement_achieves = new Resource("7cc335f5-bf5d-11e5-a56a-35b34376b412");
+  public static final Resource Requirement_conflicts = new Resource("87ff08d7-bf5d-11e5-a56a-35b34376b412");
   
   /* Begin Protected Region [[user]] */
   
@@ -43,4 +45,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,qnt8vo8ils1iVOT+fYz+D/AdRJ4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,a8zQNkGxegIe5UcTtdd1A76H6w4=] */

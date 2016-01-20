@@ -6,6 +6,9 @@
     <resource statement-guid="88a7518c-377b-11e5-95d9-2b04d7ab02d9" guid="71877d17-36a0-11e5-95d9-2b04d7ab02d9" />
     <resource statement-guid="03034fe0-b9c6-11e5-a5dc-db9071475fc6" guid="03034fdd-b9c6-11e5-a5dc-db9071475fc6" />
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="4a700122-be0b-11e5-ad6f-979cbb78853e" guid="4a6d901e-be0b-11e5-ad6f-979cbb78853e" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4330f375-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -13,6 +16,7 @@
     <object statement-guid="5af931ed-b9c3-11e5-a5dc-db9071475fc6" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
     <object statement-guid="946d23e8-b9c3-11e5-a5dc-db9071475fc6" type="resource" guid="eaf1f7df-31f6-11e5-bd99-eda9ce254b0b" />
     <object statement-guid="ffe7ca3f-b9c3-11e5-a5dc-db9071475fc6" type="resource" guid="c1b084d9-34f9-11e5-909a-4bcced25d7ee" />
+    <object statement-guid="3d7b8134-be0b-11e5-ad6f-979cbb78853e" type="resource" guid="133424cf-be0b-11e5-ad6f-979cbb78853e" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c7e77e2f-ff9e-11e4-ac0a-959b440f987f">
@@ -81,7 +85,7 @@
           <object statement-guid="04b96454-b9c6-11e5-a5dc-db9071475fc6" type="literal">estimate</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="03034fe1-b9c6-11e5-a5dc-db9071475fc6" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+          <object statement-guid="03034fe1-b9c6-11e5-a5dc-db9071475fc6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
           <object statement-guid="0c9d32a6-b9c6-11e5-a5dc-db9071475fc6" type="literal">hours</object>
@@ -91,6 +95,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="43311a86-ff9c-11e4-ac0a-959b440f987f" type="literal">WorkItem</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4a700122-be0b-11e5-ad6f-979cbb78853e">
+      <resource guid="4a6d901e-be0b-11e5-ad6f-979cbb78853e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4a700120-be0b-11e5-ad6f-979cbb78853e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4b15de17-be0b-11e5-ad6f-979cbb78853e" type="literal">cleon.sda.spec.projectmanagement.scope.backlog.javamodel.WorkItemInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4a700121-be0b-11e5-ad6f-979cbb78853e" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="7404f333-ff9c-11e4-ac0a-959b440f987f" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

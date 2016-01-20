@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="025b3194-bdfb-11e5-bc2e-0b46afe7c3c9">
+  <owns predicate="435d04d2-b53d-11e5-bc0c-f35b68c3609a">
+    <resource statement-guid="049395cb-bdfb-11e5-bc2e-0b46afe7c3c9" guid="0492f988-bdfb-11e5-bc2e-0b46afe7c3c9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="025b58a6-bdfb-11e5-bc2e-0b46afe7c3c9" type="resource" guid="fdf40175-b53c-11e5-bc0c-f35b68c3609a" />
+  </predicate>
+  <predicate guid="435d04d2-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="049395cb-bdfb-11e5-bc2e-0b46afe7c3c9">
+      <resource guid="0492f988-bdfb-11e5-bc2e-0b46afe7c3c9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0493209a-bdfb-11e5-bc2e-0b46afe7c3c9" type="resource" guid="ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="05413af4-bdfb-11e5-bc2e-0b46afe7c3c9" type="literal">Systemarchitektur</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="094c14e5-bdfb-11e5-bc2e-0b46afe7c3c9" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

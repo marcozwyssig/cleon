@@ -79,6 +79,16 @@ public class Issue extends DynamicResource implements IIssue {
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectOriginatesFromSource() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_originatesFromSource);
+  }
+
+  public Issue setOriginatesFromSource(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> originatesFromSource) {
+    _setList(cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_originatesFromSource, originatesFromSource);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -98,6 +108,7 @@ public class Issue extends DynamicResource implements IIssue {
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_concerns, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_originatesFromSource, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -107,5 +118,9 @@ public class Issue extends DynamicResource implements IIssue {
     return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_concerns, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue> selectToMeOriginatesFromSource(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_originatesFromSource, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,VAGzA+cC9g4EGpyHZYmSuWG0FVY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,VXt7yjw7lNZTkyqQMjNwOnWOm14=] */

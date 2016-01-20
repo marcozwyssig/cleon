@@ -71,6 +71,16 @@ public class Motivation extends DynamicResource implements IMotivation {
   }
     
   @Override
+  public cleon.doc.spec.chapter.javamodel.IChapter selectNoChapters() {
+    return _getSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public Motivation setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
+    _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -138,6 +148,7 @@ public class Motivation extends DynamicResource implements IMotivation {
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.motivation.drivers.javamodel.IDrivers.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_drivers, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoals.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_goals, visitor);
+    _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciples.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_principles, visitor);
@@ -165,4 +176,4 @@ public class Motivation extends DynamicResource implements IMotivation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,ia8sz4NmF+WvjqH6Lb1SAYn2wPQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,cMxyd3zl+t2miCv4IUwGkYUG4Qg=] */

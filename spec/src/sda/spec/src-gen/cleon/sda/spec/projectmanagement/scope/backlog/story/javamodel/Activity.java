@@ -58,6 +58,15 @@ public class Activity extends DynamicResource implements IActivity {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -174,6 +183,7 @@ public class Activity extends DynamicResource implements IActivity {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_reference, visitor);
     // relations
@@ -189,4 +199,4 @@ public class Activity extends DynamicResource implements IActivity {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,ncx5rdYnrGKs3vwpEyByeEJWiTI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,5QAndmTDdKQaqsySR5x0AJx9Pfk=] */

@@ -10,6 +10,8 @@ public interface IIssue extends ch.actifsource.core.javamodel.INamedResource, cl
   
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement> selectConcerns();
   
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectOriginatesFromSource();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,QjWC/I9aBFQTLoidcvd+vTsYeIs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,1piILoWV8jTRLGmC2PtHuXu7v7g=] */

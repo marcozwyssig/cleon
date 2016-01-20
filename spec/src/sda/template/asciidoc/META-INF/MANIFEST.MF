@@ -11,4 +11,6 @@ Require-Bundle: ch.actifsource.core;bundle-version="6.13.0",
  cleon.doc.template.asciidoc.builtin;bundle-version="0.0.1",
  ch.actifsource.generator;bundle-version="6.13.0"
 Export-Package: cleon.sda.template.asciidoc,cleon.sda.template.asciidoc.javamodel
+ ,cleon.sda.template.asciidoc.cleon.sda.template.asciidoc.project.scope,cleon.sda.template.asciidoc.cleon.sda.template.asciidoc.project.scope.javamodel,
+ cleon.sda.template.asciidoc.cleon.sda.template.asciidoc.project.scope.backlog,cleon.sda.template.asciidoc.cleon.sda.template.asciidoc.project.scope.backlog.javamodel
  

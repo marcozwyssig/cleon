@@ -102,6 +102,56 @@ public class FunctionSpace {
 
   }
 
+  public static interface IReleaseFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f0113260-c030-11e5-b927-b1b055d0575f")
+    public java.lang.String RenderChapterContent();
+
+  }
+  
+  public static interface IReleaseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ReleaseFunctionsImpl implements IReleaseFunctionsImpl {
+
+    public static final IReleaseFunctionsImpl INSTANCE = new ReleaseFunctionsImpl();
+
+    private ReleaseFunctionsImpl() {}
+
+  }
+  
+  public static class ReleaseFunctions {
+
+    private ReleaseFunctions() {}
+
+  }
+
+  public static interface ISprintFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f5995d93-c030-11e5-b927-b1b055d0575f")
+    public java.lang.String RenderChapterContent();
+
+  }
+  
+  public static interface ISprintFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SprintFunctionsImpl implements ISprintFunctionsImpl {
+
+    public static final ISprintFunctionsImpl INSTANCE = new SprintFunctionsImpl();
+
+    private SprintFunctionsImpl() {}
+
+  }
+  
+  public static class SprintFunctions {
+
+    private SprintFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,dqoCEzNq9WnNovck7LIeYP/bmkM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,IayCe4Yqx9Mginnuy+1EU4XjyJM=] */

@@ -8,6 +8,7 @@ public class SolutionPackage {
   public static final Resource SolutionAnalysis_drivers = new Resource("378f834b-3c15-11e5-9962-cf3035adb922");
   public static final Resource SolutionAnalysis_solution = new Resource("1db30b36-3c19-11e5-9962-cf3035adb922");
   public static final Resource SolutionAnalysis_evaluation = new Resource("e813f8f0-3c19-11e5-9962-cf3035adb922");
+  public static final Resource AnalysisDocument = new Resource("0d22ecc1-c02a-11e5-b927-b1b055d0575f");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class SolutionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.analysis.solution,DKV0Rx78Fj/e00p/TLSvmRIh/8I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.analysis.solution,PGyMu+FxsSIYZSWA0XRwq6BpS+0=] */

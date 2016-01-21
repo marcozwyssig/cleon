@@ -151,6 +151,31 @@ public class Functions {
 
   }
 
+  public static interface IAnalysisDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1f166999-c02a-11e5-b927-b1b055d0575f")
+    public java.lang.String GetDocumentPath();
+
+  }
+  
+  public static interface IAnalysisDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AnalysisDocumentFunctionsImpl implements IAnalysisDocumentFunctionsImpl {
+
+    public static final IAnalysisDocumentFunctionsImpl INSTANCE = new AnalysisDocumentFunctionsImpl();
+
+    private AnalysisDocumentFunctionsImpl() {}
+
+  }
+  
+  public static class AnalysisDocumentFunctions {
+
+    private AnalysisDocumentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,tAsa666hQyalDP23Oy221SU2hGk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,Y70jPW2AjlIdSyI1lEmAHfnxRu8=] */

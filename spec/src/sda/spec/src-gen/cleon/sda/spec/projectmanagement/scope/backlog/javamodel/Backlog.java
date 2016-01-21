@@ -28,6 +28,17 @@ public class Backlog extends DynamicResource implements IBacklog {
     super(resourceRepository, resource, IBacklog.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Integer selectPlannedEstimate() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_plannedEstimate);
+  }
+    
+  public void setPlannedEstimate(java.lang.Integer plannedEstimate) {
+     _setSingleAttribute(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_plannedEstimate, plannedEstimate);
+  }
+
   // relations
   
   @Override
@@ -123,6 +134,8 @@ public class Backlog extends DynamicResource implements IBacklog {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_plannedEstimate, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
@@ -142,4 +155,4 @@ public class Backlog extends DynamicResource implements IBacklog {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,UWS8N9Rje98GZoFCoQ/CYH9kSlw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,68d08HMZmmdtNy19HFRyNmyp5Gc=] */

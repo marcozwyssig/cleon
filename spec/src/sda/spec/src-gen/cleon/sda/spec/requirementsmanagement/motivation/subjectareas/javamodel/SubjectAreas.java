@@ -71,6 +71,16 @@ public class SubjectAreas extends DynamicResource implements ISubjectAreas {
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> selectDocuments() {
+    return _getList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents);
+  }
+
+  public SubjectAreas setDocuments(java.util.List<? extends cleon.doc.spec.document.javamodel.ISubDocument> documents) {
+    _setList(cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, documents);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -110,6 +120,16 @@ public class SubjectAreas extends DynamicResource implements ISubjectAreas {
     return this;
   }
     
+  @Override
+  public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectUseDocumentElements() {
+    return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements);
+  }
+
+  public SubjectAreas setUseDocumentElements(java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> useDocumentElements) {
+    _setList(cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, useDocumentElements);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -119,10 +139,12 @@ public class SubjectAreas extends DynamicResource implements ISubjectAreas {
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.subjectareas.javamodel.ISubjectAreas.class, cleon.sda.spec.requirementsmanagement.motivation.subjectareas.SubjectareasPackage.SubjectAreas_aggregation, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
+    _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.subjectareas.javamodel.ISubjectArea.class, cleon.sda.spec.requirementsmanagement.motivation.subjectareas.SubjectareasPackage.SubjectAreas_subjectAreas, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
@@ -136,4 +158,4 @@ public class SubjectAreas extends DynamicResource implements ISubjectAreas {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0ef3a1-bf5c-11e5-a56a-35b34376b412,13TbBGr5nzpwlRXjq0mdr541wNA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0ef3a1-bf5c-11e5-a56a-35b34376b412,uhrM3ZC+31qbvQiLsecLD1uq7xA=] */

@@ -1,4 +1,4 @@
-package cleon.sda.spec.projectmanagement.planning.release.javamodel;
+package cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class TimePlan extends DynamicResource implements ITimePlan {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,HPddQTwNbGX3Mii43CEuxyMtAuA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,olOuAYeSgFTw/1/Ru1FLYdRmwFo=] */

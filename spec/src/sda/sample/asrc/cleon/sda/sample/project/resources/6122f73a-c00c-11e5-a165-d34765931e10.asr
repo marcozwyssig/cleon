@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6122f73a-c00c-11e5-a165-d34765931e10">
+  <owns predicate="c1e02202-b50a-11e5-aa95-235930e9af3d">
+    <resource statement-guid="63ba1c6c-c00c-11e5-a165-d34765931e10" guid="63b7d279-c00c-11e5-a165-d34765931e10">
+      <owns predicate="6d022fb8-a7e4-11e5-82dd-3b995d9c840c">
+        <resource statement-guid="64a62a24-c00c-11e5-a165-d34765931e10" guid="64a62a21-c00c-11e5-a165-d34765931e10" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6122f73c-c00c-11e5-a165-d34765931e10" type="resource" guid="a143e996-a7e5-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="c1e02202-b50a-11e5-aa95-235930e9af3d">
+    <object statement-guid="63ba1c6c-c00c-11e5-a165-d34765931e10">
+      <resource guid="63b7d279-c00c-11e5-a165-d34765931e10">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="63ba1c6b-c00c-11e5-a165-d34765931e10" type="resource" guid="68e1ab2e-a7e4-11e5-82dd-3b995d9c840c" />
+        </predicate>
+        <predicate guid="6d022fb8-a7e4-11e5-82dd-3b995d9c840c">
+          <object statement-guid="64a62a24-c00c-11e5-a165-d34765931e10">
+            <resource guid="64a62a21-c00c-11e5-a165-d34765931e10">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="64a62a23-c00c-11e5-a165-d34765931e10" type="resource" guid="9bfc0d2c-ff9e-11e4-ac0a-959b440f987f" />
+              </predicate>
+              <predicate guid="067b63cf-ff9f-11e4-ac0a-959b440f987f">
+                <object statement-guid="6afd177f-c00c-11e5-a165-d34765931e10" type="literal">Meier</object>
+              </predicate>
+              <predicate guid="09d7d545-ff9f-11e4-ac0a-959b440f987f">
+                <object statement-guid="66e01524-c00c-11e5-a165-d34765931e10" type="literal">Pascal</object>
+              </predicate>
+              <predicate guid="0dc49fdb-ff9f-11e4-ac0a-959b440f987f">
+                <object statement-guid="65c6b5e1-c00c-11e5-a165-d34765931e10" type="literal">test</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

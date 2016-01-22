@@ -13,6 +13,7 @@ public class FeaturegroupPackage {
   public static final Resource ActivityFeatureGroup = new Resource("98e4deb9-b9c5-11e5-a5dc-db9071475fc6");
   public static final Resource ActivityFeatureGroup_activities = new Resource("b4a86a9a-b9c5-11e5-a5dc-db9071475fc6");
   public static final Resource FeatureGroup_plannedEstimate = new Resource("ea0dd8f2-b9c5-11e5-a5dc-db9071475fc6");
+  public static final Resource FeatureGroup_preconditions = new Resource("23138d49-c126-11e5-bfd0-47571a06cb62");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class FeaturegroupPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.featuregroup,HHid4VIBidv35t+t40/wVdv82ro=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.featuregroup,nVi3OJh8+kaAffaDSWj4WWDIMgI=] */

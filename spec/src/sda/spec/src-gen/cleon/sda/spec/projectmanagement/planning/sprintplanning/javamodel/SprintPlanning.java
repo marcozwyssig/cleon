@@ -111,6 +111,16 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintGoals selectSprintGoals() {
+    return _getSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintGoals.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals);
+  }
+
+  public SprintPlanning setSprintGoals(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintGoals sprintGoals) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals, sprintGoals);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -143,6 +153,7 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ISprint.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintBacklog, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintCapacity.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintCapacity, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintGoals.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -151,6 +162,10 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   
   public static java.util.List<cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlanning> selectToMeSprint(cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ISprint object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlanning.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, object.getResource());
+  }
+  
+  public static cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlanning selectToMeSprintGoals(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintGoals object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlanning.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals, object.getResource());
   }
   
   public static cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlanning selectToMeSprintCapacity(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintCapacity object) {
@@ -162,4 +177,4 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,+vONIHjNFnp9u2OgQvmELUywNuo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,20KIxriwslYTqainknezM/PNFhU=] */

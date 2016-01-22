@@ -196,6 +196,16 @@ public class Defect extends DynamicResource implements IDefect {
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectPreconditions() {
+    return _getList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions);
+  }
+
+  public Defect setPreconditions(java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> preconditions) {
+    _setList(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, preconditions);
+    return this;
+  }
+    
+  @Override
   public cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IReproducibility selectReproducibility() {
     return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IReproducibility.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_reproducibility);
   }
@@ -247,6 +257,7 @@ public class Defect extends DynamicResource implements IDefect {
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
+    _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IReproducibility.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_reproducibility, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_resolution, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -275,4 +286,4 @@ public class Defect extends DynamicResource implements IDefect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,r1/yUYWnxn4Es2yDt2Q4Kqpo1DQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,ujg6nwEpHMtL21lqFpLt8SKIesQ=] */

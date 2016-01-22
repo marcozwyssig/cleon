@@ -14,6 +14,8 @@ public interface IFeatureGroup extends cleon.doc.spec.chapter.javamodel.INamedCh
   
   public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup> selectSubfeatureGroup();
   
+  public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup> selectPreconditions();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,j2JfwkjHFkP4VEURdPUUYOHGy/I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,6KB8foixV88jR51pSPpef9m8mqg=] */

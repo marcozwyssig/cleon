@@ -28,6 +28,17 @@ public class Document extends DynamicResource implements IDocument {
     super(resourceRepository, resource, IDocument.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -103,6 +114,8 @@ public class Document extends DynamicResource implements IDocument {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
@@ -120,4 +133,4 @@ public class Document extends DynamicResource implements IDocument {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,kUQhy01BglhkuRdOU4/VfspDdkA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,YFFZ07SusdlNkYMMM5ZBigmDhaA=] */

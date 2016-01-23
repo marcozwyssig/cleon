@@ -28,6 +28,17 @@ public class Project extends DynamicResource implements IProject {
     super(resourceRepository, resource, IProject.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -193,6 +204,8 @@ public class Project extends DynamicResource implements IProject {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.budget.javamodel.IBudget.class, cleon.sda.spec.projectmanagement.ProjectmanagementPackage.Project_budget, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -247,4 +260,4 @@ public class Project extends DynamicResource implements IProject {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be3d7626-ff9b-11e4-ac0a-959b440f987f,tE5xtMFK3ediSfFcjgq02B0Eo+g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be3d7626-ff9b-11e4-ac0a-959b440f987f,7f5i0fxymuNwl99ZeaxQflLZTjY=] */

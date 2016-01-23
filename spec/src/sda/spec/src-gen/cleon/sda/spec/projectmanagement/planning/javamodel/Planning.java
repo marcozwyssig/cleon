@@ -101,6 +101,16 @@ public class Planning extends DynamicResource implements IPlanning {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates selectTargetDates() {
+    return _getSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates);
+  }
+
+  public Planning setTargetDates(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates targetDates) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates, targetDates);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -131,6 +141,7 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.IReleasePlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_releasePlanning, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlannings.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_sprintPlanning, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
@@ -145,5 +156,9 @@ public class Planning extends DynamicResource implements IPlanning {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_sprintPlanning, object.getResource());
   }
   
+  public static cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning selectToMeTargetDates(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,gUU1YPFE09+D9Nmec7bVzLvBQl8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,qkVvmU3ISf/sRhpFVIxQVD3ZwJM=] */

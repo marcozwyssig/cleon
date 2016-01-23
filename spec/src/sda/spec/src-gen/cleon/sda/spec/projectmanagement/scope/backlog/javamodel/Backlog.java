@@ -39,6 +39,15 @@ public class Backlog extends DynamicResource implements IBacklog {
      _setSingleAttribute(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_plannedEstimate, plannedEstimate);
   }
 
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -92,6 +101,16 @@ public class Backlog extends DynamicResource implements IBacklog {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_owner);
+  }
+
+  public Backlog setOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_owner, owner);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.paragraph.javamodel.IParagraph> selectParagraphes() {
     return _getList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes);
   }
@@ -136,12 +155,14 @@ public class Backlog extends DynamicResource implements IBacklog {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_plannedEstimate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_owner, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -154,5 +175,9 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_featureGroups, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog> selectToMeOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.Backlog_owner, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,68d08HMZmmdtNy19HFRyNmyp5Gc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,OTWlaspsJ9ppTbQ/Qa1ixj0pxs0=] */

@@ -39,6 +39,15 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -156,6 +165,7 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
@@ -185,4 +195,4 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,XfbLDZtqTR19pisx7Pc8CzFZV2w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,AduXkFdjYbs3KKflCRNmWgz8DBU=] */

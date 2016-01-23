@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="fd0b0ad8-28bc-11e5-bdaf-69a48f49df43">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="7957769b-47f6-11e5-a18e-994cfeeeb1be" guid="79577698-47f6-11e5-a18e-994cfeeeb1be" />
+    <resource statement-guid="da7bd2e4-c1d9-11e5-bbf3-bdd12a9e2b3d" guid="da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fd0b0adf-28bc-11e5-bdaf-69a48f49df43" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -29,6 +30,25 @@
         </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="7e972661-47f6-11e5-a18e-994cfeeeb1be" type="resource" guid="4fd40595-47f6-11e5-a18e-994cfeeeb1be" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="da7bd2e4-c1d9-11e5-bbf3-bdd12a9e2b3d">
+      <resource guid="da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="da7bd2e3-c1d9-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e12a7cb0-c1d9-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="db2ea837-c1d9-11e5-bbf3-bdd12a9e2b3d" type="literal">withToC</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="e2da0171-c1d9-11e5-bbf3-bdd12a9e2b3d" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="da7bd2e5-c1d9-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
       </resource>
     </object>

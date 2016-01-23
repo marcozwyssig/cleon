@@ -31,15 +31,6 @@ public class Task extends DynamicResource implements ITask {
   // attributes
   
   @Override
-  public java.lang.String selectDeadline() {
-    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline);
-  }
-    
-  public void setDeadline(java.lang.String deadline) {
-     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline, deadline);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -50,6 +41,16 @@ public class Task extends DynamicResource implements ITask {
 
   // relations
   
+  @Override
+  public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate selectDeadline() {
+    return _getSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline);
+  }
+
+  public Task setDeadline(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate deadline) {
+    _setSingle(cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline, deadline);
+    return this;
+  }
+    
   @Override
   public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> selectResponsibles() {
     return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles);
@@ -74,12 +75,18 @@ public class Task extends DynamicResource implements ITask {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> selectToMeDeadline(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask.class, cleon.sda.spec.projectmanagement.protocols.protocolsitems.ProtocolsitemsPackage.Task_deadline, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,8ljyOIkaDgB+E2fSNf2YZJXn0OA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,PMIodcNkCp5NSIbhBhyKVxJzvYQ=] */

@@ -28,6 +28,17 @@ public class Readme extends DynamicResource implements IReadme {
     super(resourceRepository, resource, IReadme.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -143,6 +154,8 @@ public class Readme extends DynamicResource implements IReadme {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.sda.spec.manuals.readme.javamodel.ICopyright.class, cleon.sda.spec.manuals.readme.ReadmePackage.Readme_copyright, visitor);
@@ -176,4 +189,4 @@ public class Readme extends DynamicResource implements IReadme {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,e8aBBeYDAOynsv5dDi9JtfeqxXA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,iXO2e+74HnEQeo8WKXz1JYNiq7E=] */

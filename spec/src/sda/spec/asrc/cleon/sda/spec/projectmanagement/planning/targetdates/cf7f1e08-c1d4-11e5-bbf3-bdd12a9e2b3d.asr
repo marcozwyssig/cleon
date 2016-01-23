@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="cf7f1e08-c1d4-11e5-bbf3-bdd12a9e2b3d">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ddbc22b9-c1d4-11e5-bbf3-bdd12a9e2b3d" guid="ddbc22b5-c1d4-11e5-bbf3-bdd12a9e2b3d" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cf7f1e0a-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="eb2d73f8-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ddbc22b9-c1d4-11e5-bbf3-bdd12a9e2b3d">
+      <resource guid="ddbc22b5-c1d4-11e5-bbf3-bdd12a9e2b3d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ddbc22b7-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ddbc22b8-c1d4-11e5-bbf3-bdd12a9e2b3d" type="literal">targetDates</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ddbe6caa-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ddbe6cab-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="ddbe6cac-c1d4-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="bdf7db5a-a7d8-11e5-82dd-3b995d9c840c" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cf7f1e0b-c1d4-11e5-bbf3-bdd12a9e2b3d" type="literal">TargetDates</object>
+  </predicate>
+</resource>
+

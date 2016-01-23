@@ -1,4 +1,4 @@
-package cleon.sda.spec.projectmanagement.planning.javamodel;
+package cleon.sda.spec.projectmanagement.planning.targetdates.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -42,6 +42,16 @@ public class TargetDate extends DynamicResource implements ITargetDate {
   // relations
   
   @Override
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner);
+  }
+
+  public TargetDate setOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, owner);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -57,8 +67,15 @@ public class TargetDate extends DynamicResource implements ITargetDate {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate> selectToMeOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdf7db5a-a7d8-11e5-82dd-3b995d9c840c,klbu0J6HiaaI6sEafBwIUZdmtro=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdf7db5a-a7d8-11e5-82dd-3b995d9c840c,/2jcmAZa7UoYEUyf9z1YzaO6U0Q=] */

@@ -54,6 +54,15 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("62951c04-bdfe-11e5-bc2e-0b46afe7c3c9")
     public java.lang.String RenderChapter();
 
+    @IDynamicResourceExtension.MethodId("9fad75ec-c1d8-11e5-bbf3-bdd12a9e2b3d")
+    public java.lang.String RenderDescriptions();
+
+    @IDynamicResourceExtension.MethodId("df606084-c1d8-11e5-bbf3-bdd12a9e2b3d")
+    public java.lang.String RenderParagraph();
+
+    @IDynamicResourceExtension.MethodId("e3cede53-c1d8-11e5-bbf3-bdd12a9e2b3d")
+    public java.lang.String RenderDocumentComposite();
+
   }
   
   public static interface IChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -588,4 +597,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Q92u+BNyHfi/Loe/fbYvX7A/itA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,D6dzU9ybxBa1ZCZJNfhylHNPvlk=] */

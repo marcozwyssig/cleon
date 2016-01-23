@@ -57,6 +57,15 @@ public class Protocol extends DynamicResource implements IProtocol {
      _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_startdate, startdate);
   }
 
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -176,6 +185,7 @@ public class Protocol extends DynamicResource implements IProtocol {
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_enddate, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_startdate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.protocols.javamodel.IAgenda.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_agenda, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -203,4 +213,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,TTHy/3lKLqQlMhmfPsDhRsK8uf0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,/wmnrdzFZVmYtuzKU8P7LUGOd5Y=] */

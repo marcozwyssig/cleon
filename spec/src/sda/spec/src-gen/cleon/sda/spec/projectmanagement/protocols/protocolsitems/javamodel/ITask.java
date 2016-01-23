@@ -6,10 +6,10 @@ public interface ITask extends cleon.sda.spec.projectmanagement.protocols.javamo
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("55988936-b463-11e5-a3f4-497fd75158dc");
   
-  // attributes
+  // relations
   
-  public java.lang.String selectDeadline();
+  public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate selectDeadline();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,IwoY+57qVkrnlJBNOA+/zOExVAE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,X/KuKmYWJlJuwmJu3D9ZnXQBEmU=] */

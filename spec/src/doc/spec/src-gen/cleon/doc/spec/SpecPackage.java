@@ -10,7 +10,6 @@ public class SpecPackage {
   public static final Resource OwnDocumentElementComposite = new Resource("822fffdf-28ba-11e5-bdaf-69a48f49df43");
   public static final Resource OwnDocumentElementComposite_ownDocumentElements = new Resource("822fffe0-28ba-11e5-bdaf-69a48f49df43");
   public static final Resource DocumentElementComposite = new Resource("b8a12540-307a-11e5-8cdc-d5b441c8c3df");
-  public static final Resource SingleRenderer = new Resource("32fc03ac-3cd7-11e5-871f-6beac6a7c24b");
   public static final Resource SimpleDescription_descriptions = new Resource("d63ca21b-a7e7-11e5-82dd-3b995d9c840c");
   public static final Resource SimpleDescription = new Resource("8c0ea786-a7e8-11e5-82dd-3b995d9c840c");
   
@@ -33,4 +32,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec,DcCvbyN/cMgLkhRUcWOmdN28X+8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.spec,MI9nxf81Dg/XWnsdhdCS140aXPY=] */

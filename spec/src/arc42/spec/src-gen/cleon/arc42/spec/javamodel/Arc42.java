@@ -28,6 +28,17 @@ public class Arc42 extends DynamicResource implements IArc42 {
     super(resourceRepository, resource, IArc42.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -153,6 +164,8 @@ public class Arc42 extends DynamicResource implements IArc42 {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.arc42.spec.SpecPackage.arc42___V_5_aE_buildingblockview, visitor);
@@ -183,4 +196,4 @@ public class Arc42 extends DynamicResource implements IArc42 {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,qUBhFefvgNAfiMFdpgoaDZHoS8M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,/3EpP6NrGwKk4sTqrHItmEqPAaM=] */

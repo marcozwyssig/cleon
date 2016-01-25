@@ -28,7 +28,7 @@ public class SpecPackage {
   public static final Resource TargetPath = new Resource("01463ab3-5202-11e5-89ac-35d4069568da");
   public static final Resource Project_targetPaths = new Resource("06fbde66-5202-11e5-89ac-35d4069568da");
   public static final Resource TargetPath_resource = new Resource("105a8cc8-5202-11e5-89ac-35d4069568da");
-  public static final Resource TargetPath_buildConfig = new Resource("5305a8a5-5202-11e5-89ac-35d4069568da");
+  public static final Resource TargetPath_buildConfigs = new Resource("5305a8a5-5202-11e5-89ac-35d4069568da");
   public static final Resource ModelUseDecomposite = new Resource("fe613e64-a7d0-11e5-82dd-3b995d9c840c");
   public static final Resource ProjectUseDecomposite = new Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
   public static final Resource ModelUseDecomposite_into = new Resource("38e122d5-a7d1-11e5-82dd-3b995d9c840c");
@@ -55,4 +55,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,IvfHTjA+TDU6ldfl9kQLywjFQJM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.spec,SmQTV0DYEHYUdXX/q3MYK+UGqe8=] */

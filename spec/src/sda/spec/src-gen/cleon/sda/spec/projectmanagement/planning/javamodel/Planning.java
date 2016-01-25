@@ -28,6 +28,17 @@ public class Planning extends DynamicResource implements IPlanning {
     super(resourceRepository, resource, IPlanning.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -101,6 +112,16 @@ public class Planning extends DynamicResource implements IPlanning {
   }
     
   @Override
+  public cleon.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style);
+  }
+
+  public Planning setStyle(cleon.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.doc.spec.document.DocumentPackage.Document_style, style);
+    return this;
+  }
+    
+  @Override
   public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates selectTargetDates() {
     return _getSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates);
   }
@@ -133,6 +154,8 @@ public class Planning extends DynamicResource implements IPlanning {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
@@ -141,6 +164,7 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.IReleasePlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_releasePlanning, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintPlannings.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_sprintPlanning, visitor);
+    _acceptSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
@@ -161,4 +185,4 @@ public class Planning extends DynamicResource implements IPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,qkVvmU3ISf/sRhpFVIxQVD3ZwJM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,/O0gc9htYq4kiDIHE2D7dFO1gb8=] */

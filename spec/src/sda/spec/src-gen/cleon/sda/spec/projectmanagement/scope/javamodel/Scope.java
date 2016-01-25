@@ -28,6 +28,17 @@ public class Scope extends DynamicResource implements IScope {
     super(resourceRepository, resource, IScope.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.doc.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
   @Override
@@ -101,6 +112,16 @@ public class Scope extends DynamicResource implements IScope {
   }
     
   @Override
+  public cleon.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style);
+  }
+
+  public Scope setStyle(cleon.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.doc.spec.document.DocumentPackage.Document_style, style);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -123,6 +144,8 @@ public class Scope extends DynamicResource implements IScope {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -131,6 +154,7 @@ public class Scope extends DynamicResource implements IScope {
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.outcome.javamodel.IOutcomes.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_outcome, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
+    _acceptSingle(cleon.doc.spec.document.style.javamodel.IStyle.class, cleon.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
@@ -146,4 +170,4 @@ public class Scope extends DynamicResource implements IScope {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,D6DV70pVOx0nBng6Olzg3hM69vo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,osU2HwFClqHA46IAmazGJoLkHVI=] */

@@ -31,12 +31,12 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   // relations
   
   @Override
-  public java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> selectBuildConfig() {
-    return _getList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig);
+  public java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> selectBuildConfigs() {
+    return _getList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfigs);
   }
 
-  public TargetPath setBuildConfig(java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> buildConfig) {
-    _setList(cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, buildConfig);
+  public TargetPath setBuildConfigs(java.util.List<? extends ch.actifsource.generator.javamodel.IBuildConfig> buildConfigs) {
+    _setList(cleon.actifsource.spec.SpecPackage.TargetPath_buildConfigs, buildConfigs);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, visitor);
+    _acceptList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfigs, visitor);
     _acceptSingle(cleon.actifsource.spec.javamodel.IResource.class, cleon.actifsource.spec.SpecPackage.TargetPath_resource, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -86,9 +86,9 @@ public class TargetPath extends DynamicResource implements ITargetPath {
     return _getToMeList(object.getRepository(), cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.TargetPath_resource, object.getResource());
   }
   
-  public static java.util.List<cleon.actifsource.spec.javamodel.ITargetPath> selectToMeBuildConfig(ch.actifsource.generator.javamodel.IBuildConfig object) {
-    return _getToMeList(object.getRepository(), cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfig, object.getResource());
+  public static java.util.List<cleon.actifsource.spec.javamodel.ITargetPath> selectToMeBuildConfigs(ch.actifsource.generator.javamodel.IBuildConfig object) {
+    return _getToMeList(object.getRepository(), cleon.actifsource.spec.javamodel.ITargetPath.class, cleon.actifsource.spec.SpecPackage.TargetPath_buildConfigs, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,Dei35ScMLjYsIGqiYOca1XqQjVU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,7+evswaj6TQRWksfSvAZqLOl0Ns=] */

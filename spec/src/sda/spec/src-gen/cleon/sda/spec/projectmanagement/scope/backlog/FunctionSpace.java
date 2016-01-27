@@ -24,7 +24,7 @@ public class FunctionSpace {
     public java.lang.Double SumEstimate();
 
     @IDynamicResourceExtension.MethodId("2e5b3405-c4e2-11e5-b41d-5d67443850a2")
-    public java.lang.Integer SumPlannedEstimate();
+    public java.lang.Double SumPlannedEstimate();
 
   }
   
@@ -34,7 +34,7 @@ public class FunctionSpace {
     public java.lang.Double SumEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog);
 
     @IDynamicResourceExtension.MethodId("2e5b3405-c4e2-11e5-b41d-5d67443850a2")
-    public java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog);
+    public java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog);
 
   }
   
@@ -52,9 +52,9 @@ public class FunctionSpace {
     }
 
     @Override
-    public java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog) {
+    public java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog) {
       /* Begin Protected Region [[2e5b3405-c4e2-11e5-b41d-5d67443850a2]] */
-    	return backlog.selectFeatureGroups().stream().mapToInt(p -> FeatureGroupFunctionsImpl.INSTANCE.SumPlannedEstimate(p)).sum();  
+    	return backlog.selectFeatureGroups().stream().mapToDouble(p -> FeatureGroupFunctionsImpl.INSTANCE.SumPlannedEstimate(p)).sum();  
       /* End Protected Region   [[2e5b3405-c4e2-11e5-b41d-5d67443850a2]] */
     }
 
@@ -68,7 +68,7 @@ public class FunctionSpace {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).SumEstimate(backlog);
     }
 
-    public static java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog) {
+    public static java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IBacklog backlog) {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).SumPlannedEstimate(backlog);
     }
 
@@ -80,7 +80,7 @@ public class FunctionSpace {
     public java.lang.Double SumEstimate();
 
     @IDynamicResourceExtension.MethodId("2e5b81bc-c4e2-11e5-b41d-5d67443850a2")
-    public java.lang.Integer SumPlannedEstimate();
+    public java.lang.Double SumPlannedEstimate();
 
   }
   
@@ -90,7 +90,7 @@ public class FunctionSpace {
     public java.lang.Double SumEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup);
 
     @IDynamicResourceExtension.MethodId("2e5b81bc-c4e2-11e5-b41d-5d67443850a2")
-    public java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup);
+    public java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup);
 
   }
   
@@ -113,9 +113,9 @@ public class FunctionSpace {
     }
 
     @Override
-    public java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup) {
+    public java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup) {
       /* Begin Protected Region [[2e5b81bc-c4e2-11e5-b41d-5d67443850a2]] */
-    	int sum = featureGroup.selectSubfeatureGroup().stream().mapToInt(p -> SumPlannedEstimate(p)).sum();
+    	double sum = featureGroup.selectSubfeatureGroup().stream().mapToDouble(p -> SumPlannedEstimate(p)).sum();
     	Integer plannedEstimate = featureGroup.selectPlannedEstimate();
     	if (plannedEstimate != null)
     	{
@@ -135,7 +135,7 @@ public class FunctionSpace {
       return DynamicResourceUtil.invoke(IFeatureGroupFunctionsImpl.class, FeatureGroupFunctionsImpl.INSTANCE, featureGroup).SumEstimate(featureGroup);
     }
 
-    public static java.lang.Integer SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup) {
+    public static java.lang.Double SumPlannedEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup) {
       return DynamicResourceUtil.invoke(IFeatureGroupFunctionsImpl.class, FeatureGroupFunctionsImpl.INSTANCE, featureGroup).SumPlannedEstimate(featureGroup);
     }
 
@@ -143,4 +143,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,cCe5xlQtMZVRe8ZM549hmDlFi9c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,2nmlrtlqsqMWPQHvudcYE47ZsWc=] */

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="62f553aa-c4f3-11e5-b41d-5d67443850a2" guid="62f46947-c4f3-11e5-b41d-5d67443850a2" />
+  </owns>
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="4addb9b7-c4f3-11e5-b41d-5d67443850a2" guid="4add4484-c4f3-11e5-b41d-5d67443850a2" />
+    <resource statement-guid="563d19e9-c4f3-11e5-b41d-5d67443850a2" guid="563cf2d6-c4f3-11e5-b41d-5d67443850a2" />
+    <resource statement-guid="73341c3a-c4f3-11e5-b41d-5d67443850a2" guid="7333ce17-c4f3-11e5-b41d-5d67443850a2" />
+    <resource statement-guid="787182b0-c4f3-11e5-b41d-5d67443850a2" guid="7871348d-c4f3-11e5-b41d-5d67443850a2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="43a964fc-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="43a9b31e-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="850ee17e-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="d2e41148-feae-11de-b623-05edcc99ed4a" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="62f553aa-c4f3-11e5-b41d-5d67443850a2">
+      <resource guid="62f46947-c4f3-11e5-b41d-5d67443850a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="62f4b769-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="65f37893-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="64446902-c4f3-11e5-b41d-5d67443850a2" type="literal">number</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="62f5efeb-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="43a98c0d-c4f3-11e5-b41d-5d67443850a2" type="literal">Priority</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="4addb9b7-c4f3-11e5-b41d-5d67443850a2">
+      <resource guid="4add4484-c4f3-11e5-b41d-5d67443850a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4add92a6-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5411ae52-c4f3-11e5-b41d-5d67443850a2" type="literal">Must have</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="8a5484c0-c4f3-11e5-b41d-5d67443850a2" type="literal">Requirements labeled as MUST are critical to the current delivery timebox in order for it to be a success. If even one MUST requirement is not included, the project delivery should be considered a failure (note: requirements can be downgraded from MUST, by agreement with all relevant stakeholders; for example, when new requirements are deemed more important). MUST can also be considered a backronym for the Minimum Usable SubseT.</object>
+        </predicate>
+        <predicate guid="62f46947-c4f3-11e5-b41d-5d67443850a2">
+          <object statement-guid="6b210084-c4f3-11e5-b41d-5d67443850a2" type="literal">3</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="563d19e9-c4f3-11e5-b41d-5d67443850a2">
+      <resource guid="563cf2d6-c4f3-11e5-b41d-5d67443850a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="563d19e8-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71e18485-c4f3-11e5-b41d-5d67443850a2" type="literal">Should have</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="8e6ca577-c4f3-11e5-b41d-5d67443850a2" type="literal">Requirements labeled as SHOULD are important but not necessary for delivery in the current delivery timebox. While SHOULD requirements can be as important as MUST, they are often not as time-critical or there may be another way to satisfy the requirement, so that it can be held back until a future delivery timebox.</object>
+        </predicate>
+        <predicate guid="62f46947-c4f3-11e5-b41d-5d67443850a2">
+          <object statement-guid="72a26386-c4f3-11e5-b41d-5d67443850a2" type="literal">2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="73341c3a-c4f3-11e5-b41d-5d67443850a2">
+      <resource guid="7333ce17-c4f3-11e5-b41d-5d67443850a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7333f529-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7687db1b-c4f3-11e5-b41d-5d67443850a2" type="literal">Could have</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="92a9b310-c4f3-11e5-b41d-5d67443850a2" type="literal">Requirements labeled as COULD are desirable but not necessary, and could improve user experience or customer satisfaction for little development cost. These will typically be included if time and resources permit.</object>
+        </predicate>
+        <predicate guid="62f46947-c4f3-11e5-b41d-5d67443850a2">
+          <object statement-guid="77a4208c-c4f3-11e5-b41d-5d67443850a2" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="787182b0-c4f3-11e5-b41d-5d67443850a2">
+      <resource guid="7871348d-c4f3-11e5-b41d-5d67443850a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="78715b9f-c4f3-11e5-b41d-5d67443850a2" type="resource" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7de366a3-c4f3-11e5-b41d-5d67443850a2" type="literal">Won't have</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="9640bc81-c4f3-11e5-b41d-5d67443850a2" type="literal">Requirements labeled as WON'T have been agreed by stakeholders as the least-critical, lowest-payback items, or not appropriate at that time. As a result, WON'T requirements are not planned into the schedule for the delivery timebox. WON'T requirements are either dropped or reconsidered for inclusion in later timeboxes. (Note: occasionally the term Would like is substituted, to give a clearer understanding of this choice).</object>
+        </predicate>
+        <predicate guid="62f46947-c4f3-11e5-b41d-5d67443850a2">
+          <object statement-guid="7cac1f22-c4f3-11e5-b41d-5d67443850a2" type="literal">0</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

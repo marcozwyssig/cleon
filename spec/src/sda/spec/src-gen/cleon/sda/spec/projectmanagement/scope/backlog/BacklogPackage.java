@@ -32,6 +32,13 @@ public class BacklogPackage {
   public static final Resource WorkItem_estimate = new Resource("7fd39c45-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource FunctionSpace_Backlog = new Resource("2e5b33c6-c4e2-11e5-b41d-5d67443850a2");
   public static final Resource FunctionSpace_FeatureGroup = new Resource("2e5b3406-c4e2-11e5-b41d-5d67443850a2");
+  public static final Resource Priority = new Resource("43a964fa-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource Priority_Must__F_have = new Resource("4add4484-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource Priority_Should__F_have = new Resource("563cf2d6-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource Priority_number = new Resource("62f46947-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource Priority_Could__F_have = new Resource("7333ce17-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource Priority_Won__M_t__F_have = new Resource("7871348d-c4f3-11e5-b41d-5d67443850a2");
+  public static final Resource WorkItem_priority = new Resource("9d70f242-c4f3-11e5-b41d-5d67443850a2");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +59,4 @@ public class BacklogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,ULtOStmQeOw6JTeMkn7FI32KCaI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,H7b4pqN/WuQjibU3zB9OBn8tPII=] */

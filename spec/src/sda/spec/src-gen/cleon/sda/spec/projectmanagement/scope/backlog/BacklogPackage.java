@@ -30,6 +30,8 @@ public class BacklogPackage {
   public static final Resource Effort___Z_0 = new Resource("6ab80482-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource Effort___W_00 = new Resource("6ba26439-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource WorkItem_estimate = new Resource("7fd39c45-c4d9-11e5-b41d-5d67443850a2");
+  public static final Resource FunctionSpace_Backlog = new Resource("2e5b33c6-c4e2-11e5-b41d-5d67443850a2");
+  public static final Resource FunctionSpace_FeatureGroup = new Resource("2e5b3406-c4e2-11e5-b41d-5d67443850a2");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +52,4 @@ public class BacklogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,+ZUYysksO+2soqC57kus/15dyQ8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,ULtOStmQeOw6JTeMkn7FI32KCaI=] */

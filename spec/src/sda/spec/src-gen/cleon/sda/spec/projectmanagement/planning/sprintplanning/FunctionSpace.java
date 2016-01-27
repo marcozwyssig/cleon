@@ -21,14 +21,14 @@ public class FunctionSpace {
   public static interface ISprintBacklogFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bedae007-c02b-11e5-b927-b1b055d0575f")
-    public java.lang.Integer SumEffort();
+    public java.lang.Double SumEffort();
 
   }
   
   public static interface ISprintBacklogFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("bedae007-c02b-11e5-b927-b1b055d0575f")
-    public java.lang.Integer SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog);
+    public java.lang.Double SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog);
 
   }
   
@@ -39,9 +39,9 @@ public class FunctionSpace {
     private SprintBacklogFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog) {
+    public java.lang.Double SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog) {
       /* Begin Protected Region [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
-      return sprintBacklog.selectWorkItems().stream().filter(x -> x.selectEstimate() != null).mapToInt(p -> Integer.parseInt(p.selectEstimate().selectName())).sum();   
+      return sprintBacklog.selectWorkItems().stream().filter(x -> x.selectEstimate() != null).mapToDouble(p -> Double.parseDouble(p.selectEstimate().selectName())).sum();   
       /* End Protected Region   [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
     }
 
@@ -51,7 +51,7 @@ public class FunctionSpace {
 
     private SprintBacklogFunctions() {}
 
-    public static java.lang.Integer SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog) {
+    public static java.lang.Double SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog) {
       return DynamicResourceUtil.invoke(ISprintBacklogFunctionsImpl.class, SprintBacklogFunctionsImpl.INSTANCE, sprintBacklog).SumEffort(sprintBacklog);
     }
 
@@ -137,4 +137,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,7Ax2AwF/dxbohcX/YOQYA4Yrj7E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,8BDvu0K+DX6a0Ri0ASJxxb6/soY=] */

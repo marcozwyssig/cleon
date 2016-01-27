@@ -31,12 +31,12 @@ public class Protocol extends DynamicResource implements IProtocol {
   // attributes
   
   @Override
-  public java.lang.String selectEnddate() {
-    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_enddate);
+  public java.lang.String selectEndtime() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_endtime);
   }
     
-  public void setEnddate(java.lang.String enddate) {
-     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_enddate, enddate);
+  public void setEndtime(java.lang.String endtime) {
+     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_endtime, endtime);
   }
 
   @Override
@@ -49,12 +49,12 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
 
   @Override
-  public java.lang.String selectStartdate() {
-    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_startdate);
+  public java.lang.String selectStarttime() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_starttime);
   }
     
-  public void setStartdate(java.lang.String startdate) {
-     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_startdate, startdate);
+  public void setStarttime(java.lang.String starttime) {
+     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_starttime, starttime);
   }
 
   @Override
@@ -85,6 +85,16 @@ public class Protocol extends DynamicResource implements IProtocol {
 
   public Protocol setChapters(java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> chapters) {
     _setList(cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, chapters);
+    return this;
+  }
+    
+  @Override
+  public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay selectDate() {
+    return _getSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date);
+  }
+
+  public Protocol setDate(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay date) {
+    _setSingle(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, date);
     return this;
   }
     
@@ -182,13 +192,14 @@ public class Protocol extends DynamicResource implements IProtocol {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_enddate, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_endtime, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_startdate, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_starttime, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.protocols.javamodel.IAgenda.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_agenda, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
@@ -200,6 +211,12 @@ public class Protocol extends DynamicResource implements IProtocol {
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeDate(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, object.getResource());
+  }
+  
   public static cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol selectToMeMembers(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, object.getResource());
   }
@@ -213,4 +230,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,/wmnrdzFZVmYtuzKU8P7LUGOd5Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,Nd5DKAM1u1Vo6m7XDJa18MVbt3w=] */

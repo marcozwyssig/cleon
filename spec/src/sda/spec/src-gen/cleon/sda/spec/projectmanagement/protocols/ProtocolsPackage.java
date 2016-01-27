@@ -7,8 +7,7 @@ public class ProtocolsPackage {
   public static final Resource Protocols = new Resource("d9251a72-a7d8-11e5-82dd-3b995d9c840c");
   public static final Resource Protocol = new Resource("2140b619-b45f-11e5-b1fb-4fb16b224b5b");
   public static final Resource Protocols_protocols = new Resource("279e5a59-b45f-11e5-b1fb-4fb16b224b5b");
-  public static final Resource Protocol_startdate = new Resource("09275ce3-b461-11e5-a3f4-497fd75158dc");
-  public static final Resource Protocol_enddate = new Resource("307d186d-b461-11e5-a3f4-497fd75158dc");
+  public static final Resource Protocol_date = new Resource("09275ce3-b461-11e5-a3f4-497fd75158dc");
   public static final Resource Protocol_members = new Resource("37d7443c-b461-11e5-a3f4-497fd75158dc");
   public static final Resource Protocol_agenda = new Resource("6341011b-b461-11e5-a3f4-497fd75158dc");
   public static final Resource Agenda = new Resource("6f5a3bc3-b461-11e5-a3f4-497fd75158dc");
@@ -22,6 +21,8 @@ public class ProtocolsPackage {
   public static final Resource ProtocolItems_agendaItem = new Resource("02524c8c-b466-11e5-a3f4-497fd75158dc");
   public static final Resource ProtocolItems_protocols = new Resource("65f1898f-b466-11e5-a3f4-497fd75158dc");
   public static final Resource ProtocolItem_responsibles = new Resource("bf39d430-b466-11e5-a3f4-497fd75158dc");
+  public static final Resource Protocol_starttime = new Resource("6006f2f4-c4de-11e5-b41d-5d67443850a2");
+  public static final Resource Protocol_endtime = new Resource("6a36860e-c4de-11e5-b41d-5d67443850a2");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class ProtocolsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.protocols,2Y/EEpS/Niu9jG1G9pM5elcUAcM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.protocols,Kcz9qcXawodpKXOM68CtGMJv9V8=] */

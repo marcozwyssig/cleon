@@ -41,7 +41,7 @@ public class FunctionSpace {
     @Override
     public java.lang.Integer SumEffort(final cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ISprintBacklog sprintBacklog) {
       /* Begin Protected Region [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
-      return sprintBacklog.selectWorkItems().stream().mapToInt(p -> Integer.parseInt(p.selectEstimate().selectName())).sum();   
+      return sprintBacklog.selectWorkItems().stream().filter(x -> x.selectEstimate() != null).mapToInt(p -> Integer.parseInt(p.selectEstimate().selectName())).sum();   
       /* End Protected Region   [[bedae007-c02b-11e5-b927-b1b055d0575f]] */
     }
 

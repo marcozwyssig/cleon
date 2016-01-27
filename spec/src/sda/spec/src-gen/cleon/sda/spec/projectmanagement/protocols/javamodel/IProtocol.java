@@ -6,11 +6,13 @@ public interface IProtocol extends cleon.doc.spec.document.javamodel.INamedDocum
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2140b619-b45f-11e5-b1fb-4fb16b224b5b");
   
-  // attributes
+  public java.lang.String selectStarttime();
   
-  public java.lang.String selectStartdate();
+  public java.lang.String selectEndtime();
   
-  public java.lang.String selectEnddate();
+  // relations
+  
+  public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay selectDate();
   
   public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> selectMembers();
   
@@ -20,4 +22,4 @@ public interface IProtocol extends cleon.doc.spec.document.javamodel.INamedDocum
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,51zT/OQx5w0zNk0agRx8oslG6c4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,Srv2FhwOrT2vAuwz8vRr1pZ7Lf8=] */

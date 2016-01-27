@@ -11,5 +11,15 @@ public abstract class TimePlan extends DynamicResource implements ITimePlan {
     super(ITimePlan.TYPE_ID);
   }
   
+  // toMeRelations
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ITimePlan> selectToMeStart(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ITimePlan.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_start, object.getResource());
+  }
+  
+  public static cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ITimePlan selectToMeEnd(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ITimePlan.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_end, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,olOuAYeSgFTw/1/Ru1FLYdRmwFo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,o9olMfNgecDc25pzm3polCilh08=] */

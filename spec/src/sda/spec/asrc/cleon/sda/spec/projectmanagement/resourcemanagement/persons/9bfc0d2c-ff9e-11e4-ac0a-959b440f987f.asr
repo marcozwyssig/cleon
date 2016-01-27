@@ -35,6 +35,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="987aeed5-c4c6-11e5-8558-4b8affb7767c" guid="987aeed1-c4c6-11e5-8558-4b8affb7767c" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="9bfc0d2e-ff9e-11e4-ac0a-959b440f987f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -214,6 +215,25 @@
         </predicate>
         <predicate guid="1c50fde7-6197-11df-bb0f-0fe3854fdf0b">
           <object statement-guid="34488926-b509-11e5-aa95-235930e9af3d" type="resource" guid="2ba27c0a-b509-11e5-aa95-235930e9af3d" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="987aeed5-c4c6-11e5-8558-4b8affb7767c">
+      <resource guid="987aeed1-c4c6-11e5-8558-4b8affb7767c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="987aeed3-c4c6-11e5-8558-4b8affb7767c" type="resource" guid="ec497705-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="987aeed4-c4c6-11e5-8558-4b8affb7767c" type="literal">absences</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="987d38c6-c4c6-11e5-8558-4b8affb7767c" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="987d38c7-c4c6-11e5-8558-4b8affb7767c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="987d38c8-c4c6-11e5-8558-4b8affb7767c" type="resource" guid="8e22ec09-c4c6-11e5-8558-4b8affb7767c" />
         </predicate>
       </resource>
     </object>

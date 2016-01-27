@@ -87,6 +87,16 @@ public class Person extends DynamicResource implements IPerson {
   // relations
   
   @Override
+  public cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences selectAbsences() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_absences);
+  }
+
+  public Person setAbsences(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences absences) {
+    _setSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_absences, absences);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> selectChapters() {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
@@ -157,6 +167,7 @@ public class Person extends DynamicResource implements IPerson {
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_shortname, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_surname, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_absences, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IExperience.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_experience, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
@@ -169,5 +180,9 @@ public class Person extends DynamicResource implements IPerson {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_experience, object.getResource());
   }
   
+  public static cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectToMeAbsences(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_absences, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,mbVFHx8ifIReEzpKElSQCWo0iUE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,aUPxFEw8rjMHbz/3tCErjTKAJL0=] */

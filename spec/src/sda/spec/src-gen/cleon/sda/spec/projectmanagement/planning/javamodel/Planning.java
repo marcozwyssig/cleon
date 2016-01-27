@@ -42,6 +42,16 @@ public class Planning extends DynamicResource implements IPlanning {
   // relations
   
   @Override
+  public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar selectCalendar() {
+    return _getSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_calendar);
+  }
+
+  public Planning setCalendar(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar calendar) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_calendar, calendar);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> selectChapters() {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
@@ -157,6 +167,7 @@ public class Planning extends DynamicResource implements IPlanning {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_calendar, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
@@ -184,5 +195,9 @@ public class Planning extends DynamicResource implements IPlanning {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_targetDates, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning> selectToMeCalendar(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.sda.spec.projectmanagement.planning.PlanningPackage.Planning_calendar, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,/O0gc9htYq4kiDIHE2D7dFO1gb8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,70Mk/NPBIcrz7jUoBny8AjyOjsA=] */

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="796baba6-bb82-11e5-b2f7-f515c847fa35">
+  <owns predicate="4106ca15-bb80-11e5-b2f7-f515c847fa35">
+    <resource statement-guid="74a03a6f-c4c4-11e5-8558-4b8affb7767c" guid="99d8bc13-bb94-11e5-8fec-d3c858d30c6c" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="796baba8-bb82-11e5-b2f7-f515c847fa35" type="resource" guid="0322fa0c-bb80-11e5-b2f7-f515c847fa35" />
   </predicate>
@@ -7,7 +10,16 @@
     <object statement-guid="79e7b979-bb82-11e5-b2f7-f515c847fa35" type="literal">dddd</object>
   </predicate>
   <predicate guid="4106ca15-bb80-11e5-b2f7-f515c847fa35">
-    <object statement-guid="b693a017-bb94-11e5-8fec-d3c858d30c6c" type="resource" guid="99d8bc13-bb94-11e5-8fec-d3c858d30c6c" />
+    <object statement-guid="74a03a6f-c4c4-11e5-8558-4b8affb7767c">
+      <resource guid="99d8bc13-bb94-11e5-8fec-d3c858d30c6c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99d8bc15-bb94-11e5-8fec-d3c858d30c6c" type="resource" guid="1165cb74-bb80-11e5-b2f7-f515c847fa35" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9a5bcefe-bb94-11e5-8fec-d3c858d30c6c" type="literal">sadfasdfs</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

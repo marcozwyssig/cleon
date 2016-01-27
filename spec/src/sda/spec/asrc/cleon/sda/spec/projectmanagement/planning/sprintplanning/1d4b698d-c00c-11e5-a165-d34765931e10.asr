@@ -2,7 +2,11 @@
 <resource format="5.6.0" guid="1d4b698d-c00c-11e5-a165-d34765931e10">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="41d448d4-c00c-11e5-a165-d34765931e10" guid="41d448d2-c00c-11e5-a165-d34765931e10" />
-    <resource statement-guid="2c66c129-c026-11e5-b927-b1b055d0575f" guid="2c645026-c026-11e5-b927-b1b055d0575f" />
+    <resource statement-guid="bd423af6-c38c-11e5-a9c9-53d676410f3e" guid="bd423af2-c38c-11e5-a9c9-53d676410f3e">
+      <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+        <resource statement-guid="9bdaf04d-c38d-11e5-a9c9-53d676410f3e" guid="9bd87f49-c38d-11e5-a9c9-53d676410f3e" />
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1d4b698f-c00c-11e5-a165-d34765931e10" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -36,19 +40,37 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="2c66c129-c026-11e5-b927-b1b055d0575f">
-      <resource guid="2c645026-c026-11e5-b927-b1b055d0575f">
+    <object statement-guid="bd423af6-c38c-11e5-a9c9-53d676410f3e">
+      <resource guid="bd423af2-c38c-11e5-a9c9-53d676410f3e">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="2c645028-c026-11e5-b927-b1b055d0575f" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="31ab7a9f-c026-11e5-b927-b1b055d0575f" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+          <object statement-guid="bd423af4-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="f762cc39-6196-11df-bb0f-0fe3854fdf0b" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="2ccf951d-c026-11e5-b927-b1b055d0575f" type="literal">capacity</object>
+          <object statement-guid="bd423af5-c38c-11e5-a9c9-53d676410f3e" type="literal">capacityPerDay</object>
+        </predicate>
+        <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9bdaf04d-c38d-11e5-a9c9-53d676410f3e">
+            <resource guid="9bd87f49-c38d-11e5-a9c9-53d676410f3e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9bdaf04b-c38d-11e5-a9c9-53d676410f3e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+              </predicate>
+              <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="3317d3df-c38e-11e5-a9c9-53d676410f3e" type="literal">cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.SelectDateForCapacityDecorator</object>
+              </predicate>
+              <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9bdaf04c-c38d-11e5-a9c9-53d676410f3e" type="resource" guid="c5da2f7f-7577-11db-8807-fd999b238722" />
+              </predicate>
+            </resource>
+          </object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="2c66c12a-c026-11e5-b927-b1b055d0575f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+          <object statement-guid="bd423af7-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="bd423af8-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="1c50fde7-6197-11df-bb0f-0fe3854fdf0b">
+          <object statement-guid="bd423af9-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="cd28fab0-c0d5-11e5-8f91-3dfd9b379121" />
         </predicate>
       </resource>
     </object>

@@ -8,8 +8,6 @@ public interface IWorkItem extends cleon.doc.spec.chapter.javamodel.IChapter, cl
   
   public java.lang.String selectReference();
   
-  public java.lang.Integer selectEstimate();
-  
   // relations
   
   public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> selectOwner();
@@ -18,6 +16,8 @@ public interface IWorkItem extends cleon.doc.spec.chapter.javamodel.IChapter, cl
   
   public java.util.List<? extends cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectPreconditions();
   
+  public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort selectEstimate();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,SuP1pTulPIveCx2piKzjsYXl5o0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,OPV6R/2igcKFMSuNN7lhpaXR+Zw=] */

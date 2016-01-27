@@ -14,6 +14,8 @@ public interface IPlanning extends cleon.sda.spec.projectmanagement.javamodel.IP
   
   public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDates selectTargetDates();
   
+  public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.ICalendar selectCalendar();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,LkPxN1Np46ojyUAxyK46KFFPBAQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,TDyQIlubVUkJpkFF0CIDUiJbNo4=] */

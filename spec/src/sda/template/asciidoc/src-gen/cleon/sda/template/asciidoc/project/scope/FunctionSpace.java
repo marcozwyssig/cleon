@@ -139,7 +139,7 @@ public class FunctionSpace {
     public java.lang.Integer SumEstimate(final cleon.sda.spec.projectmanagement.scope.backlog.featuregroup.javamodel.IFeatureGroup featureGroup) {
       /* Begin Protected Region [[68513a1f-bdfc-11e5-bc2e-0b46afe7c3c9]] */
     	int sum = featureGroup.selectSubfeatureGroup().stream().mapToInt(p -> SumEstimate(p)).sum();
-    	return sum + featureGroup.selectWorkItems().stream().mapToInt(p -> p.selectEstimate()).sum();
+    	return sum + featureGroup.selectWorkItems().stream().mapToInt(p -> Integer.parseInt(p.selectEstimate().selectName())).sum();
       /* End Protected Region   [[68513a1f-bdfc-11e5-bc2e-0b46afe7c3c9]] */
     }
 

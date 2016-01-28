@@ -41,7 +41,7 @@ public class FunctionSpace {
     @Override
     public java.lang.String GetId(final cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement requirement) {
       /* Begin Protected Region [[b82ce62e-c4f5-11e5-b41d-5d67443850a2]] */
-      return String.format("R-%03d", requirement.selectIdentifier());
+      return String.format("RQ-%03d", requirement.selectIdentifier());
       /* End Protected Region   [[b82ce62e-c4f5-11e5-b41d-5d67443850a2]] */
     }
 

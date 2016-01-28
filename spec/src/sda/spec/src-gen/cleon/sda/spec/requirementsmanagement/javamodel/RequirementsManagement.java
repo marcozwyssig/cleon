@@ -51,6 +51,16 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   // relations
   
   @Override
+  public java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> selectAutors() {
+    return _getList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors);
+  }
+
+  public RequirementsManagement setAutors(java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> autors) {
+    _setList(cleon.doc.spec.autor.AutorPackage.Autors_autors, autors);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> selectChapters() {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
@@ -167,6 +177,7 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
+    _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.RequirementsManagement_issues, visitor);
@@ -195,4 +206,4 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,AduXkFdjYbs3KKflCRNmWgz8DBU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,p+2hKKVYpthdRpECsz/KZZMAg+c=] */

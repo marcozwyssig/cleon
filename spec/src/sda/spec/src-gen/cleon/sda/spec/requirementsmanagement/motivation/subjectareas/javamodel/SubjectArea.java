@@ -49,6 +49,15 @@ public class SubjectArea extends DynamicResource implements ISubjectArea {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -89,6 +98,16 @@ public class SubjectArea extends DynamicResource implements ISubjectArea {
   }
     
   @Override
+  public java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> selectAutors() {
+    return _getList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors);
+  }
+
+  public SubjectArea setAutors(java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> autors) {
+    _setList(cleon.doc.spec.autor.AutorPackage.Autors_autors, autors);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -104,11 +123,13 @@ public class SubjectArea extends DynamicResource implements ISubjectArea {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.drivers.javamodel.IDriver.class, cleon.sda.spec.requirementsmanagement.motivation.subjectareas.SubjectareasPackage.SubjectArea_adresses, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.motivation.subjectareas.SubjectareasPackage.SubjectArea_appliesTo, visitor);
+    _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -123,4 +144,4 @@ public class SubjectArea extends DynamicResource implements ISubjectArea {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,010e5bac-bf5d-11e5-a56a-35b34376b412,6aFKlOEjdr2b2tGG7V1SGvyJ2S8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,010e5bac-bf5d-11e5-a56a-35b34376b412,DZ+pqNF2eFY8IJ8B4fcpv91DLag=] */

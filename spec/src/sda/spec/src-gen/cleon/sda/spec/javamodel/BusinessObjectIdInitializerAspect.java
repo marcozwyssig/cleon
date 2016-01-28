@@ -2,6 +2,7 @@ package cleon.sda.spec.javamodel;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.OptionalInt;
 
 import cleon.sda.spec.SpecPackage;
 import cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem;
@@ -35,7 +36,12 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IBusinessObjec
 		try
 		{
 			List<T> resources = resourceRepository.getAllResources(_classInstance);		
-			Integer max = resources.stream().filter(y -> y.selectIdentifier() != null).mapToInt(x -> x.selectIdentifier()).max().getAsInt();
+			OptionalInt maxOptional = resources.stream().filter(y -> y.selectIdentifier() != null).mapToInt(x -> x.selectIdentifier()).max();
+			Integer max = 0;
+			if( maxOptional.isPresent())
+			{
+				max = maxOptional.getAsInt();
+			}
 					
 			Update.createStatement(modifiable, pkg, newInstance, SpecPackage.BusinessObjectId_identifier, LiteralUtil.create(max + 1));			
 		}

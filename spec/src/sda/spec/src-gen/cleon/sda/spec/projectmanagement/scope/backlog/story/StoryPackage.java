@@ -10,6 +10,7 @@ public class StoryPackage {
   public static final Resource Constraint = new Resource("d9e271ef-3777-11e5-95d9-2b04d7ab02d9");
   public static final Resource Activity = new Resource("e19c230e-3777-11e5-95d9-2b04d7ab02d9");
   public static final Resource Story_requestedBy = new Resource("579a6789-377b-11e5-95d9-2b04d7ab02d9");
+  public static final Resource FunctionSpace_Story = new Resource("d6ee3761-c58b-11e5-aeea-1db9268c0ee9");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class StoryPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.story,5RZruMtJFfRDr/Qk7Xh40PRtqlc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.story,ciuyY2wMA43in7sOJ0o/ZFCWdiw=] */

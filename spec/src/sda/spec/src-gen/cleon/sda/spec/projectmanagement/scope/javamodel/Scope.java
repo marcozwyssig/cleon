@@ -42,6 +42,16 @@ public class Scope extends DynamicResource implements IScope {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> selectAutors() {
+    return _getList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors);
+  }
+
+  public Scope setAutors(java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> autors) {
+    _setList(cleon.doc.spec.autor.AutorPackage.Autors_autors, autors);
+    return this;
+  }
+    
+  @Override
   public cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs selectBacklogs() {
     return _getSingle(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs);
   }
@@ -147,6 +157,7 @@ public class Scope extends DynamicResource implements IScope {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
+    _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.javamodel.IBacklogs.class, cleon.sda.spec.projectmanagement.scope.ScopePackage.Scope_backlogs, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
@@ -170,4 +181,4 @@ public class Scope extends DynamicResource implements IScope {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,osU2HwFClqHA46IAmazGJoLkHVI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fef60a9b-a7d8-11e5-82dd-3b995d9c840c,2IyRTbFljGsWDMxf8mNPDlkch0Q=] */

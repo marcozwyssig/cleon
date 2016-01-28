@@ -11,6 +11,7 @@ public class GoalsPackage {
   public static final Resource Goal_addresses = new Resource("aff25ec3-a951-11e5-bda2-a7fc3bd7c783");
   public static final Resource Goal_originatesFromPrinciple = new Resource("cac5be0d-a951-11e5-bda2-a7fc3bd7c783");
   public static final Resource Goal_originatesFromSource = new Resource("dc21dcca-a951-11e5-bda2-a7fc3bd7c783");
+  public static final Resource FunctionSpace_Goal = new Resource("4877cebf-c58d-11e5-aeea-1db9268c0ee9");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class GoalsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.goals,lnVxa7hA4m62/hUGeH1PmAFMnhc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.goals,iY4xBCoz00uYaXFEIXP1LXVEvto=] */

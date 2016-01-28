@@ -10,6 +10,7 @@ public class SubjectareasPackage {
   public static final Resource SubjectAreas_aggregation = new Resource("421abb23-bf5d-11e5-a56a-35b34376b412");
   public static final Resource SubjectArea_appliesTo = new Resource("5ad636a3-bf5d-11e5-a56a-35b34376b412");
   public static final Resource SubjectArea_adresses = new Resource("9a569f21-bf5d-11e5-a56a-35b34376b412");
+  public static final Resource FunctionSpace_SubjectArea = new Resource("4c9ff492-c58d-11e5-aeea-1db9268c0ee9");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class SubjectareasPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.subjectareas,bNQaMzR34cDXxmMnax5Or+bXOIM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.subjectareas,hT2VeWuR5CSBIDQc6OmqE0RR6Kk=] */

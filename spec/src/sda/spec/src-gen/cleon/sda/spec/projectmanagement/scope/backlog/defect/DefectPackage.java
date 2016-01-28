@@ -21,6 +21,7 @@ public class DefectPackage {
   public static final Resource Classification___Y___F___N_kritischer__F_Fehler__O_ = new Resource("eb97648c-3765-11e5-95d9-2b04d7ab02d9");
   public static final Resource Defect_classification = new Resource("f6c7ecf5-3765-11e5-95d9-2b04d7ab02d9");
   public static final Resource Defect_observation = new Resource("1b0089ec-3766-11e5-95d9-2b04d7ab02d9");
+  public static final Resource FunctionSpace_Defect = new Resource("b56acee3-c58b-11e5-aeea-1db9268c0ee9");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +42,4 @@ public class DefectPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.defect,9vbiIORPPGuyvDxxoAFsi5iDv24=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog.defect,l1lb1LuoHdJkENKQr2QHKPfQgds=] */

@@ -5,3 +5,4 @@ cmd /c asciidoctor project/Leistungsumfang.adoc
 cmd /c asciidoctor project/scope/LO-1_Systemarchitektur/LO-1_Systemarchitektur_Backlog.adoc
 cmd /c asciidoctor project/Planung.adoc
 cmd /c asciidoctor project/Ressourcen.adoc
+cmd /c asciidoctor project/protocols/2016-01-01_Fr_Test_Protokoll.adoc

@@ -8,8 +8,8 @@ public interface ITask extends cleon.sda.spec.projectmanagement.protocols.javamo
   
   // relations
   
-  public cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate selectDeadline();
+  public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay selectDeadline();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,X/KuKmYWJlJuwmJu3D9ZnXQBEmU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,55988936-b463-11e5-a3f4-497fd75158dc,sqZFNZgG3ZNSPtmW2Fg5f8TeXGU=] */

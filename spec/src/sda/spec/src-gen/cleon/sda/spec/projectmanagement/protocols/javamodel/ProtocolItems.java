@@ -81,6 +81,16 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   }
     
   @Override
+  public cleon.doc.spec.paragraph.javamodel.IParagraph selectNoParagraph() {
+    return _getSingle(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph);
+  }
+
+  public ProtocolItems setNoParagraph(cleon.doc.spec.paragraph.javamodel.IParagraph noParagraph) {
+    _setSingle(cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph, noParagraph);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.javamodel.IDocumentElement> selectOwnDocumentElements() {
     return _getList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements);
   }
@@ -150,6 +160,7 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
     _acceptSingle(cleon.sda.spec.projectmanagement.protocols.javamodel.IAgendaItem.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_agendaItem, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
+    _acceptSingle(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.NoParagraph_noParagraph, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocolItem.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_protocols, visitor);
@@ -173,4 +184,4 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,vc5xftfPQRG3ob90IWKNn1xO/kg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,SHDXusXNPbYJQXRhgzb7ZveHJU8=] */

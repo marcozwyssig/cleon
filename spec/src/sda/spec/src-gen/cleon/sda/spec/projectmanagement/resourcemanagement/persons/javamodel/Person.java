@@ -58,15 +58,6 @@ public class Person extends DynamicResource implements IPerson {
   }
 
   @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
-  @Override
   public java.lang.String selectShortname() {
     return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_shortname);
   }
@@ -163,7 +154,6 @@ public class Person extends DynamicResource implements IPerson {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_firstname, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_shortname, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.PersonsPackage.Person_surname, visitor);
     // relations
@@ -185,4 +175,4 @@ public class Person extends DynamicResource implements IPerson {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,aUPxFEw8rjMHbz/3tCErjTKAJL0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,c35Apg2uzjtzmK8kpBuJPWhn3xU=] */

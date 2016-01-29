@@ -32,11 +32,11 @@ public class Decision extends DynamicResource implements IDecision {
   
   @Override
   public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_name);
   }
     
   public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+     _setSingleAttribute(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_name, name);
   }
 
   // relations
@@ -65,11 +65,11 @@ public class Decision extends DynamicResource implements IDecision {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_name, visitor);
     // relations
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fb5e22c-b463-11e5-a3f4-497fd75158dc,h+UnhjXso1aFRTJImbJO8s3fBW4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fb5e22c-b463-11e5-a3f4-497fd75158dc,JpRQFU/RNv6o2SFRediaaN6ig/8=] */

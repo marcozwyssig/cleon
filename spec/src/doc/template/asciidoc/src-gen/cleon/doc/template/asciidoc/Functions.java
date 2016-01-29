@@ -97,6 +97,9 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("6f22a291-3529-11e5-909a-4bcced25d7ee")
     public java.lang.String RenderEnd();
 
+    @IDynamicResourceExtension.MethodId("aef7c82d-c5d8-11e5-9a6b-0bd3546aceff")
+    public java.lang.String RenderDocumentContent();
+
   }
   
   public static interface ISubDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -600,4 +603,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Jy7xaLbId1JxI2OXGaZcZZrWhKU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,KdztqVp2v2HLTnfe1g8ntEg3uqw=] */

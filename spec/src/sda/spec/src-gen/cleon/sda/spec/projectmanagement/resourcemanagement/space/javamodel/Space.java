@@ -28,17 +28,6 @@ public class Space extends DynamicResource implements ISpace {
     super(resourceRepository, resource, ISpace.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -54,11 +43,9 @@ public class Space extends DynamicResource implements ISpace {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2a87973-a7d8-11e5-82dd-3b995d9c840c,MDmPdDTAlvno659vL8RkwPL/Kq4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2a87973-a7d8-11e5-82dd-3b995d9c840c,pHUUqSo24mVhw7GSTZe78KOVtsM=] */

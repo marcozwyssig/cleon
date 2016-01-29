@@ -43,6 +43,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IIssuesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5b24f52d-c5d6-11e5-9a6b-0bd3546aceff")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IIssuesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IssuesFunctionsImpl implements IIssuesFunctionsImpl {
+
+    public static final IIssuesFunctionsImpl INSTANCE = new IssuesFunctionsImpl();
+
+    private IssuesFunctionsImpl() {}
+
+  }
+  
+  public static class IssuesFunctions {
+
+    private IssuesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,76NPUOt5DZ6z4Tj+b9X71GQjSe0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,NTlf94RABwoBhYz7xxpzlmu1xFk=] */

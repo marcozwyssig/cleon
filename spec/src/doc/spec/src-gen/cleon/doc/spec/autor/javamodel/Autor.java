@@ -28,17 +28,6 @@ public class Autor extends DynamicResource implements IAutor {
     super(resourceRepository, resource, IAutor.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -54,11 +43,9 @@ public class Autor extends DynamicResource implements IAutor {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7869d054-c589-11e5-aeea-1db9268c0ee9,5UWuHVREmbROp6oZB4KdpSpQMDc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7869d054-c589-11e5-aeea-1db9268c0ee9,Ncgchi4sywi4hgXZj6kCXb0h6wQ=] */

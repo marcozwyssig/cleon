@@ -43,6 +43,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IProtocolFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("942a546a-c6aa-11e5-a68d-835c1648a4d8")
+    public java.lang.String GetDocumentPath();
+
+  }
+  
+  public static interface IProtocolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProtocolFunctionsImpl implements IProtocolFunctionsImpl {
+
+    public static final IProtocolFunctionsImpl INSTANCE = new ProtocolFunctionsImpl();
+
+    private ProtocolFunctionsImpl() {}
+
+  }
+  
+  public static class ProtocolFunctions {
+
+    private ProtocolFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,uAJL5UN5vp5J+73wIY0qmdlmoeA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,8i/YoRmhQjmRYi6j0vqUwbjE1BA=] */

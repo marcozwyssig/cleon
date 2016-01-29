@@ -2,7 +2,7 @@ package cleon.sda.spec.projectmanagement.protocols.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IProtocolItems extends cleon.doc.spec.chapter.javamodel.IChapter, ch.actifsource.core.javamodel.IDecorator, cleon.doc.spec.chapter.javamodel.INoChapters {
+public interface IProtocolItems extends cleon.doc.spec.chapter.javamodel.IChapter, ch.actifsource.core.javamodel.IDecorator, cleon.doc.spec.chapter.javamodel.INoChapters, cleon.doc.spec.paragraph.javamodel.INoParagraph {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("35502e39-b462-11e5-a3f4-497fd75158dc");
   
@@ -16,4 +16,4 @@ public interface IProtocolItems extends cleon.doc.spec.chapter.javamodel.IChapte
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,nnljhTN9MDIsFqdEYpqlSfbvPOA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,V7kPcqfYoWrCSCYwGorDoRvqrws=] */

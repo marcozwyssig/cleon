@@ -29,6 +29,7 @@
         <resource statement-guid="41c69580-b886-11e5-a463-ff45aa361315" guid="41c6957d-b886-11e5-a463-ff45aa361315" />
       </owns>
     </resource>
+    <resource statement-guid="8610c783-c59a-11e5-bf18-eff7e773d2ba" guid="860e5680-c59a-11e5-bf18-eff7e773d2ba" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c715059e-e9ba-11e4-848b-0509e3792151" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
@@ -187,6 +188,16 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8610c783-c59a-11e5-bf18-eff7e773d2ba">
+      <resource guid="860e5680-c59a-11e5-bf18-eff7e773d2ba">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="860e5682-c59a-11e5-bf18-eff7e773d2ba" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8696c065-c59a-11e5-bf18-eff7e773d2ba" type="literal">autor</object>
         </predicate>
       </resource>
     </object>

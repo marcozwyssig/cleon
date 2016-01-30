@@ -18,6 +18,8 @@ public interface IPerson extends cleon.doc.spec.chapter.javamodel.IChapter, cleo
   
   public cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsences selectAbsences();
   
+  public cleon.sda.spec.projectmanagement.resourcemanagement.organisations.javamodel.IOrganisation selectOrganisation();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,WqdPAUsQf/wiMRUJKXmC9rZPX1Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,YlRg+8oJwycLol44zKtoTA9wwGk=] */

@@ -79,6 +79,16 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
     
   @Override
+  public cleon.doc.spec.autor.javamodel.IAutor selectAutor() {
+    return _getSingle(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_autor);
+  }
+
+  public Protocol setAutor(cleon.doc.spec.autor.javamodel.IAutor autor) {
+    _setSingle(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_autor, autor);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> selectAutors() {
     return _getList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors);
   }
@@ -119,12 +129,32 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.resourcemanagement.locations.javamodel.ILocation selectLocation() {
+    return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.locations.javamodel.ILocation.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location);
+  }
+
+  public Protocol setLocation(cleon.sda.spec.projectmanagement.resourcemanagement.locations.javamodel.ILocation location) {
+    _setSingle(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, location);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> selectMembers() {
     return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members);
   }
 
   public Protocol setMembers(java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> members) {
     _setList(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, members);
+    return this;
+  }
+    
+  @Override
+  public cleon.doc.spec.autor.javamodel.IAutor selectModerator() {
+    return _getSingle(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator);
+  }
+
+  public Protocol setModerator(cleon.doc.spec.autor.javamodel.IAutor moderator) {
+    _setSingle(cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, moderator);
     return this;
   }
     
@@ -208,11 +238,14 @@ public class Protocol extends DynamicResource implements IProtocol {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.protocols.javamodel.IAgenda.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_agenda, visitor);
+    _acceptSingle(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_autor, visitor);
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.locations.javamodel.ILocation.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
+    _acceptSingle(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, visitor);
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
@@ -240,5 +273,17 @@ public class Protocol extends DynamicResource implements IProtocol {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_protocol, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeAutor(cleon.doc.spec.autor.javamodel.IAutor object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_autor, object.getResource());
+  }
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeModerator(cleon.doc.spec.autor.javamodel.IAutor object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, object.getResource());
+  }
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeLocation(cleon.sda.spec.projectmanagement.resourcemanagement.locations.javamodel.ILocation object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,XpiXyzK6Tj8X1c42lSURsihpmMY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,B0SgB6mVDlvJdLYGMjAJl6BOW6A=] */

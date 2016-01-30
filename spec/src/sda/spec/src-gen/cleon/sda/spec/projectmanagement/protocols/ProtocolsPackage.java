@@ -24,6 +24,9 @@ public class ProtocolsPackage {
   public static final Resource Protocol_starttime = new Resource("6006f2f4-c4de-11e5-b41d-5d67443850a2");
   public static final Resource Protocol_endtime = new Resource("6a36860e-c4de-11e5-b41d-5d67443850a2");
   public static final Resource ProtocolItem_name = new Resource("f4bc45b7-c6a9-11e5-a68d-835c1648a4d8");
+  public static final Resource Protocol_autor = new Resource("21854d3d-c760-11e5-b3f9-43c5a0896ea1");
+  public static final Resource Protocol_moderator = new Resource("9d4d84bf-c767-11e5-b3f9-43c5a0896ea1");
+  public static final Resource Protocol_location = new Resource("5f80ad6c-c769-11e5-b3f9-43c5a0896ea1");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +47,4 @@ public class ProtocolsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.protocols,qEISDljARPhfD0Mw0TNc8/riWu8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.protocols,/fDE/MKHUwRW7xFE5cBYQ8XAmMM=] */

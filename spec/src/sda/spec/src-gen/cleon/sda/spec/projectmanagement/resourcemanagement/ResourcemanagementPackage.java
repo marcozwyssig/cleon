@@ -9,6 +9,9 @@ public class ResourcemanagementPackage {
   public static final Resource ResourceManagement = new Resource("a143e996-a7e5-11e5-82dd-3b995d9c840c");
   public static final Resource ResourceManagement_skills = new Resource("ab2b29d4-a7e5-11e5-82dd-3b995d9c840c");
   public static final Resource ResourceManagement_persons = new Resource("c1e02202-b50a-11e5-aa95-235930e9af3d");
+  public static final Resource ResourceManagement_organisations = new Resource("f2009aa4-c768-11e5-b3f9-43c5a0896ea1");
+  public static final Resource ResourceManagement_locations = new Resource("f953e7ed-c768-11e5-b3f9-43c5a0896ea1");
+  public static final Resource ResourceManagement_tools = new Resource("03e4fc16-c769-11e5-b3f9-43c5a0896ea1");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +32,4 @@ public class ResourcemanagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement,bfLd+icAj4dBf6wKk+hafM5VAcQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement,Lj40MN3HDZiJjORs7aJ+Sh1yopk=] */

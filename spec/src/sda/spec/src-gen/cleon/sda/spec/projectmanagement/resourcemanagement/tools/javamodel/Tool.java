@@ -1,4 +1,4 @@
-package cleon.sda.spec.projectmanagement.resourcemanagement.tool.javamodel;
+package cleon.sda.spec.projectmanagement.resourcemanagement.tools.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -48,4 +48,4 @@ public class Tool extends DynamicResource implements ITool {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,052b13bf-a7e0-11e5-82dd-3b995d9c840c,aEoRrbzSsy8KYSG+AIY+4IU68+s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,052b13bf-a7e0-11e5-82dd-3b995d9c840c,M2PFNSgiLLlDbw/iDWa2iS5n4sE=] */

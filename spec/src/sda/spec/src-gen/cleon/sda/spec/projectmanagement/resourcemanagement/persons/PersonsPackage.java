@@ -19,6 +19,7 @@ public class PersonsPackage {
   public static final Resource Maturity___Y___F___S___F_Professional = new Resource("c9cb38c3-b509-11e5-aa95-235930e9af3d");
   public static final Resource Maturity___W___F___S___F_Junior = new Resource("cadd6c18-b509-11e5-aa95-235930e9af3d");
   public static final Resource Person_absences = new Resource("987aeed1-c4c6-11e5-8558-4b8affb7767c");
+  public static final Resource Person_organisation = new Resource("e591c58c-c768-11e5-b3f9-43c5a0896ea1");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +40,4 @@ public class PersonsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement.persons,6CuZ0t0PW3opqmlVyyyubv9y3uc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement.persons,TigVbB1emjIH6NtUs5vxWUewJ+4=] */

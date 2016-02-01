@@ -68,6 +68,56 @@ public class FunctionSpace {
 
   }
 
+  public static interface IRequirementsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5e1a67ab-c90b-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementsFunctionsImpl implements IRequirementsFunctionsImpl {
+
+    public static final IRequirementsFunctionsImpl INSTANCE = new RequirementsFunctionsImpl();
+
+    private RequirementsFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementsFunctions {
+
+    private RequirementsFunctions() {}
+
+  }
+
+  public static interface IRequirementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f70a0f00-c90c-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
+
+    public static final IRequirementFunctionsImpl INSTANCE = new RequirementFunctionsImpl();
+
+    private RequirementFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementFunctions {
+
+    private RequirementFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,NTlf94RABwoBhYz7xxpzlmu1xFk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,AHdqMCuTy3RrfpISk3q4TeEVMMw=] */

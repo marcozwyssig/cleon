@@ -311,28 +311,28 @@ public class Functions {
 
   }
 
-  public static interface IRoleFunctions extends IDynamicResourceExtension {
+  public static interface ISidebarFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2b45694f-3089-11e5-8cdc-d5b441c8c3df")
     public java.lang.String RenderContent();
 
   }
   
-  public static interface IRoleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISidebarFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RoleFunctionsImpl implements IRoleFunctionsImpl {
+  public static class SidebarFunctionsImpl implements ISidebarFunctionsImpl {
 
-    public static final IRoleFunctionsImpl INSTANCE = new RoleFunctionsImpl();
+    public static final ISidebarFunctionsImpl INSTANCE = new SidebarFunctionsImpl();
 
-    private RoleFunctionsImpl() {}
+    private SidebarFunctionsImpl() {}
 
   }
   
-  public static class RoleFunctions {
+  public static class SidebarFunctions {
 
-    private RoleFunctions() {}
+    private SidebarFunctions() {}
 
   }
 
@@ -601,6 +601,81 @@ public class Functions {
 
   }
 
+  public static interface IBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9431ddd9-c90a-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BlockFunctionsImpl implements IBlockFunctionsImpl {
+
+    public static final IBlockFunctionsImpl INSTANCE = new BlockFunctionsImpl();
+
+    private BlockFunctionsImpl() {}
+
+  }
+  
+  public static class BlockFunctions {
+
+    private BlockFunctions() {}
+
+  }
+
+  public static interface IFencedFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9c94042a-c90a-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IFencedFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FencedFunctionsImpl implements IFencedFunctionsImpl {
+
+    public static final IFencedFunctionsImpl INSTANCE = new FencedFunctionsImpl();
+
+    private FencedFunctionsImpl() {}
+
+  }
+  
+  public static class FencedFunctions {
+
+    private FencedFunctions() {}
+
+  }
+
+  public static interface IPassthroughFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a1f60916-c90a-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IPassthroughFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PassthroughFunctionsImpl implements IPassthroughFunctionsImpl {
+
+    public static final IPassthroughFunctionsImpl INSTANCE = new PassthroughFunctionsImpl();
+
+    private PassthroughFunctionsImpl() {}
+
+  }
+  
+  public static class PassthroughFunctions {
+
+    private PassthroughFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,KdztqVp2v2HLTnfe1g8ntEg3uqw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cM+Z8R9+uF4BFiJSrzQlJAKYFHs=] */

@@ -5,19 +5,27 @@
 // End Protected Region   [[starting]]
 
 
+[cols="2,5,2" options="header, footer"]
+|===
+|Nr | Name | Status
+|RQ-004 | Requirements_1 | Identified
+|RQ-007 | Rwar | Identified
+|RQ-005 | Requirements_2 | Identified
+|RQ-006 | Requirements_2.1 | Identified
+|*Total* | 4 |
+|===
+
+<<<<
+// RQ-004_Requirements_1
+include::RQ-004_Requirements_1.adoc[] 
 
 
 <<<<
-// RQ-004_Test_A
-include::RQ-004_Test_A.adoc[] 
-
-
-<<<<
-// RQ-005_Requirements_B
-include::RQ-005_Requirements_B.adoc[] 
+// RQ-005_Requirements_2
+include::RQ-005_Requirements_2.adoc[] 
 
 
 // Begin Protected Region [[ending]]
 
 // End Protected Region   [[ending]]
-// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,504a73fd-bb81-11e5-b2f7-f515c847fa35,je48DPigbsaV1IQ7tHXUmR6B/Co=]
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,504a73fd-bb81-11e5-b2f7-f515c847fa35,u03dz2UiFTHelro6NCFLovi8lFU=]

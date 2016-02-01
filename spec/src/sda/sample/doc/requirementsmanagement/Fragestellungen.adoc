@@ -5,7 +5,15 @@
 // End Protected Region   [[starting]]
 
 
-[cols="2,5,20a" options="header"]
+In diesem Kapitel werden alle Fragen, welche während der Erhebung und Analyse der Anforderungen entstanden, aufgeführt und gepflegt, 
+damit eine möglichst Nachvollziehbarkeit erreicht werden kann.
+
+Bei den Fragen kann ein Status hinterlegt werden, womit die aktuelle Bearbeitszustand definiert werden. Folgende Zustände sind verfübar:
+[qanda]
+Open:: Die Frage ist offen und muss noch geklärt werden.
+Done:: Die Frage ist geklärt und beim Entschluss ist die Antwort verfügbar.
+
+[cols="3,5,20a" options="header"]
 |===
 | *IS-001* 2+| *ddd*
 |
@@ -33,18 +41,17 @@ Notes2
 | _Autoren_
 |
 Pascal Meier
-
 Patrick Müller
 
 |
 | _Quellen_
 |
-SR-001_Dokument_dddd
+<<SR-001_Dokument_dddd>>
 
 |
 | _Anforderungen_
 |
-RQ-004_Test_A
+<<RQ-004_Requirements_1>>
 
 |
 | _Entschluss_
@@ -68,6 +75,7 @@ sdfsdf
 |
 | _Autoren_
 |
+
 |
 | _Quellen_
 |
@@ -82,4 +90,4 @@ sdfsdf
 // Begin Protected Region [[ending]]
 
 // End Protected Region   [[ending]]
-// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,749ede13-bdef-11e5-965a-07bc81ea9ca9,anKUl21RmdvPkxN0QRDoTcKmNUg=]
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,749ede13-bdef-11e5-965a-07bc81ea9ca9,Dtyh7gi3k3yx8cGkZSh3xn0+CtA=]

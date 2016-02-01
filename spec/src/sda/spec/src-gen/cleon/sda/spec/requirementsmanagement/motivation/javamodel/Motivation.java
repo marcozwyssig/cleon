@@ -159,10 +159,6 @@ public class Motivation extends DynamicResource implements IMotivation {
 
   // toMeRelations
   
-  public static cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation selectToMePrinciples(cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciples object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_principles, object.getResource());
-  }
-  
   public static cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation selectToMeSources(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISources object) {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_sources, object.getResource());
   }
@@ -175,5 +171,9 @@ public class Motivation extends DynamicResource implements IMotivation {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_goals, object.getResource());
   }
   
+  public static cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation selectToMePrinciples(cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciples object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.javamodel.IMotivation.class, cleon.sda.spec.requirementsmanagement.motivation.MotivationPackage.Motivation_principles, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,cMxyd3zl+t2miCv4IUwGkYUG4Qg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,6lDaHrpyDRIDOfOn0WHwexzGMv4=] */

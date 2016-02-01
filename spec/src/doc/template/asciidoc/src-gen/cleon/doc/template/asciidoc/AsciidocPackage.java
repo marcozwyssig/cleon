@@ -13,7 +13,7 @@ public class AsciidocPackage {
   public static final Resource Functions_UseDocumentElementComposite = new Resource("82dcedca-3072-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_DocumentElementComposite = new Resource("dad7b129-307a-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_Note = new Resource("48ae9ff9-3087-11e5-8cdc-d5b441c8c3df");
-  public static final Resource Functions_Role = new Resource("258c914a-3089-11e5-8cdc-d5b441c8c3df");
+  public static final Resource Functions_Sidebar = new Resource("258c914a-3089-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_Admonition = new Resource("d9cc4136-308a-11e5-8cdc-d5b441c8c3df");
   public static final Resource Functions_Table = new Resource("3010cfb0-3c4b-11e5-871f-6beac6a7c24b");
   public static final Resource Functions_SourceCode = new Resource("7c3d3b54-466f-11e5-ba74-cb2e95044e1c");
@@ -24,6 +24,9 @@ public class AsciidocPackage {
   public static final Resource Functions_Important = new Resource("9b29a523-466f-11e5-ba74-cb2e95044e1c");
   public static final Resource Functions_Document = new Resource("5f9d72e7-47cd-11e5-9568-fbe9ec4a688c");
   public static final Resource Functions_AbstractDocument = new Resource("c3c4f26b-47cd-11e5-9568-fbe9ec4a688c");
+  public static final Resource Functions_Block = new Resource("8f569494-c90a-11e5-a64e-a5d84d8f1b45");
+  public static final Resource Functions_Fenced = new Resource("9a0f7c25-c90a-11e5-a64e-a5d84d8f1b45");
+  public static final Resource Functions_Passthrough = new Resource("9e23f271-c90a-11e5-a64e-a5d84d8f1b45");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +47,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoc,6El8CWareWLm+E1RGSaDKTPqCcg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.doc.template.asciidoc,oKcrIVjcHI/0GJrt2x8VRO531G8=] */

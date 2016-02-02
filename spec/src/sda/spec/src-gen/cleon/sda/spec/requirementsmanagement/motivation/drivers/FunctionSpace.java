@@ -57,6 +57,28 @@ public class FunctionSpace {
 
   }
 
+  public static interface IDriversFunctions extends IDynamicResourceExtension {
+
+  }
+  
+  public static interface IDriversFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DriversFunctionsImpl implements IDriversFunctionsImpl {
+
+    public static final IDriversFunctionsImpl INSTANCE = new DriversFunctionsImpl();
+
+    private DriversFunctionsImpl() {}
+
+  }
+  
+  public static class DriversFunctions {
+
+    private DriversFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,aFElPNvmm/UBYjc4e4DE55VMYrM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,l+V6Y8KuYQb1Tx9GMw/zqjQNBzo=] */

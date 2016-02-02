@@ -78,6 +78,16 @@ public class Lack extends DynamicResource implements ILack {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> selectAutors() {
+    return _getList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors);
+  }
+
+  public Lack setAutors(java.util.List<? extends cleon.doc.spec.autor.javamodel.IAutor> autors) {
+    _setList(cleon.doc.spec.autor.AutorPackage.Autors_autors, autors);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciple> selectOriginatesFromPrinciple() {
     return _getList(cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciple.class, cleon.sda.spec.requirementsmanagement.motivation.drivers.DriversPackage.Driver_originatesFromPrinciple);
   }
@@ -117,10 +127,11 @@ public class Lack extends DynamicResource implements ILack {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     // relations
+    _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciple.class, cleon.sda.spec.requirementsmanagement.motivation.drivers.DriversPackage.Driver_originatesFromPrinciple, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.drivers.DriversPackage.Driver_originatesFromSource, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,340631a2-a95a-11e5-bda2-a7fc3bd7c783,7vVE+g4L/JNZIMXryc6nq8wlVhI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,340631a2-a95a-11e5-bda2-a7fc3bd7c783,r94rRd0sEuy65yDpt9CPiSS2P7c=] */

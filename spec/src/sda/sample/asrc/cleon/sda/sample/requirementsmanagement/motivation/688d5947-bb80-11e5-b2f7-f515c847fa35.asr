@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="688d5947-bb80-11e5-b2f7-f515c847fa35">
+  <owns predicate="365a49ad-a951-11e5-bda2-a7fc3bd7c783">
+    <resource statement-guid="4acb2523-c997-11e5-b35b-8fb753dd0798" guid="4acb2520-c997-11e5-b35b-8fb753dd0798" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="688d5949-bb80-11e5-b2f7-f515c847fa35" type="resource" guid="18cfe197-a951-11e5-bda2-a7fc3bd7c783" />
+  </predicate>
+  <predicate guid="365a49ad-a951-11e5-bda2-a7fc3bd7c783">
+    <object statement-guid="4acb2523-c997-11e5-b35b-8fb753dd0798">
+      <resource guid="4acb2520-c997-11e5-b35b-8fb753dd0798">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4acb2522-c997-11e5-b35b-8fb753dd0798" type="resource" guid="31468bb8-a951-11e5-bda2-a7fc3bd7c783" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4b57d4cd-c997-11e5-b35b-8fb753dd0798" type="literal">Goal 1</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="4ad49b06-c997-11e5-b35b-8fb753dd0798" type="literal">1</object>
+        </predicate>
+        <predicate guid="ac4f0797-c589-11e5-aeea-1db9268c0ee9">
+          <object statement-guid="a9c06e76-c99c-11e5-b35b-8fb753dd0798" type="resource" guid="64a62a21-c00c-11e5-a165-d34765931e10" />
+          <object statement-guid="ab47358a-c99c-11e5-b35b-8fb753dd0798" type="resource" guid="693ee8b2-c121-11e5-bfd0-47571a06cb62" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

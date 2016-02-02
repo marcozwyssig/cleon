@@ -88,12 +88,12 @@ public class SourcePerson extends DynamicResource implements ISourcePerson {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectComposite() {
-    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composite);
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectComposites() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites);
   }
 
-  public SourcePerson setComposite(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> composite) {
-    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composite, composite);
+  public SourcePerson setComposites(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> composites) {
+    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, composites);
     return this;
   }
     
@@ -118,9 +118,9 @@ public class SourcePerson extends DynamicResource implements ISourcePerson {
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     // relations
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
-    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composite, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d03bc5b-bb80-11e5-b2f7-f515c847fa35,RQL5X3sLyGWWmdyZ0KbqkbMM3Ek=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d03bc5b-bb80-11e5-b2f7-f515c847fa35,dXRUeq7aKPAwGp2sXFpaAzQY3mk=] */

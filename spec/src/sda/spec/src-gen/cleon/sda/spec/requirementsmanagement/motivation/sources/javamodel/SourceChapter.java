@@ -88,12 +88,22 @@ public class SourceChapter extends DynamicResource implements ISourceChapter {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter> selectComposite() {
-    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite);
+  public cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter selectComposite() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite);
   }
 
-  public SourceChapter setComposite(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter> composite) {
-    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite, composite);
+  public SourceChapter setComposite(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter composite) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite, composite);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectComposites() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites);
+  }
+
+  public SourceChapter setComposites(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> composites) {
+    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, composites);
     return this;
   }
     
@@ -118,7 +128,8 @@ public class SourceChapter extends DynamicResource implements ISourceChapter {
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     // relations
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
-    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceChapter_composite, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -129,4 +140,4 @@ public class SourceChapter extends DynamicResource implements ISourceChapter {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1165cb74-bb80-11e5-b2f7-f515c847fa35,XBwyP0+ZmLtTviDAP3/6Ady4jD0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1165cb74-bb80-11e5-b2f7-f515c847fa35,zAojqNJPMfySaIpJXSQTYCp4aig=] */

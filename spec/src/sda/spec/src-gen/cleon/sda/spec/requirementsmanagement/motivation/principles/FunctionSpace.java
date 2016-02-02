@@ -23,6 +23,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("4a0d89e4-c58d-11e5-aeea-1db9268c0ee9")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("f0aadd8a-c9a3-11e5-96e7-e5a5eee26591")
+    public List<cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciple> GetAllPrinciples();
+
   }
   
   public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -57,6 +60,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IPrinciplesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e4536160-c9a3-11e5-96e7-e5a5eee26591")
+    public List<cleon.sda.spec.requirementsmanagement.motivation.principles.javamodel.IPrinciple> GetAllPrinciples();
+
+  }
+  
+  public static interface IPrinciplesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PrinciplesFunctionsImpl implements IPrinciplesFunctionsImpl {
+
+    public static final IPrinciplesFunctionsImpl INSTANCE = new PrinciplesFunctionsImpl();
+
+    private PrinciplesFunctionsImpl() {}
+
+  }
+  
+  public static class PrinciplesFunctions {
+
+    private PrinciplesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,cWd+b+58mn3hkULxwxBBD9cvcns=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,oaEe3IxV5gBb80h6VrG3h1Dn84s=] */

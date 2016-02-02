@@ -2,7 +2,7 @@ package cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IGoal extends ch.actifsource.core.javamodel.INamedResource, cleon.sda.spec.javamodel.IBusinessObjectId, cleon.doc.spec.autor.javamodel.IAutors {
+public interface IGoal extends ch.actifsource.core.javamodel.INamedResource, cleon.sda.spec.javamodel.IBusinessObjectId, cleon.doc.spec.autor.javamodel.IAutors, cleon.doc.spec.javamodel.ISimpleDescription, cleon.sda.spec.requirementsmanagement.javamodel.INotes {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("31468bb8-a951-11e5-bda2-a7fc3bd7c783");
   
@@ -18,4 +18,4 @@ public interface IGoal extends ch.actifsource.core.javamodel.INamedResource, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31468bb8-a951-11e5-bda2-a7fc3bd7c783,2VgMSguHZZMTtVaibOYtnmNFa1w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31468bb8-a951-11e5-bda2-a7fc3bd7c783,7FDIT+L5h96CgFbDD5oXfNpZxHo=] */

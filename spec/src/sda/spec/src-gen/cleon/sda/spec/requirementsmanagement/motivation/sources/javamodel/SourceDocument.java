@@ -98,6 +98,16 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectComposites() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites);
+  }
+
+  public SourceDocument setComposites(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> composites) {
+    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, composites);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -119,6 +129,7 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
     // relations
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceChapter.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceDocument_composite, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -129,4 +140,4 @@ public class SourceDocument extends DynamicResource implements ISourceDocument {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,XELwrqYVg0DyOIYLU0vBdx0D2M0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,ED2yYDTnbU5KnlfHkTuh7oXk27g=] */

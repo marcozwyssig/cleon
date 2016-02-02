@@ -118,6 +118,106 @@ public class FunctionSpace {
 
   }
 
+  public static interface ISourcesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8d704f22-c912-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface ISourcesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SourcesFunctionsImpl implements ISourcesFunctionsImpl {
+
+    public static final ISourcesFunctionsImpl INSTANCE = new SourcesFunctionsImpl();
+
+    private SourcesFunctionsImpl() {}
+
+  }
+  
+  public static class SourcesFunctions {
+
+    private SourcesFunctions() {}
+
+  }
+
+  public static interface IGoalsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b511455d-c912-11e5-a64e-a5d84d8f1b45")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GoalsFunctionsImpl implements IGoalsFunctionsImpl {
+
+    public static final IGoalsFunctionsImpl INSTANCE = new GoalsFunctionsImpl();
+
+    private GoalsFunctionsImpl() {}
+
+  }
+  
+  public static class GoalsFunctions {
+
+    private GoalsFunctions() {}
+
+  }
+
+  public static interface IPrinciplesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("bdefce04-c9a3-11e5-96e7-e5a5eee26591")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IPrinciplesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PrinciplesFunctionsImpl implements IPrinciplesFunctionsImpl {
+
+    public static final IPrinciplesFunctionsImpl INSTANCE = new PrinciplesFunctionsImpl();
+
+    private PrinciplesFunctionsImpl() {}
+
+  }
+  
+  public static class PrinciplesFunctions {
+
+    private PrinciplesFunctions() {}
+
+  }
+
+  public static interface IDriversFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("011d6ab8-c9a5-11e5-96e7-e5a5eee26591")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IDriversFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DriversFunctionsImpl implements IDriversFunctionsImpl {
+
+    public static final IDriversFunctionsImpl INSTANCE = new DriversFunctionsImpl();
+
+    private DriversFunctionsImpl() {}
+
+  }
+  
+  public static class DriversFunctions {
+
+    private DriversFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,AHdqMCuTy3RrfpISk3q4TeEVMMw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,qgyaerbssLWZW4iOex6b59c1ChU=] */

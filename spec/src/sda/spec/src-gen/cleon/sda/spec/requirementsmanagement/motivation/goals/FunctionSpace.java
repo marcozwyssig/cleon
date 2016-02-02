@@ -23,6 +23,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("4877cebe-c58d-11e5-aeea-1db9268c0ee9")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("432b6c6b-c994-11e5-b35b-8fb753dd0798")
+    public List<cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal> GetAllGoals();
+
   }
   
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -57,6 +60,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IGoalsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("39b4c91e-c994-11e5-b35b-8fb753dd0798")
+    public List<cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal> GetAllGoals();
+
+  }
+  
+  public static interface IGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GoalsFunctionsImpl implements IGoalsFunctionsImpl {
+
+    public static final IGoalsFunctionsImpl INSTANCE = new GoalsFunctionsImpl();
+
+    private GoalsFunctionsImpl() {}
+
+  }
+  
+  public static class GoalsFunctions {
+
+    private GoalsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,QELdF4oBAdQXoW4rJZhNrLLBrK0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,ExAyNTP7nxuuxRxPsZU+fxpjiqc=] */

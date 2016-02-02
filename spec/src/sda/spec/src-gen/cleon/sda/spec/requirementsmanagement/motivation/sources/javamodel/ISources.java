@@ -8,8 +8,8 @@ public interface ISources extends cleon.doc.spec.document.javamodel.ISubDocument
   
   // relations
   
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectSource();
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectSources();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,efb0f224-a281-11e5-9332-1b5893de4362,rIeqsNQS+9+iSnvQZuOxC6QBAyw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,efb0f224-a281-11e5-9332-1b5893de4362,bdXUMEZYupX7Y0SvVbPJLFeIFXM=] */

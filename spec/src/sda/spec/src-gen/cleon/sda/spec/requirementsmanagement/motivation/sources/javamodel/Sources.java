@@ -91,12 +91,12 @@ public class Sources extends DynamicResource implements ISources {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectSource() {
-    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_source);
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> selectSources() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_sources);
   }
 
-  public Sources setSource(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> source) {
-    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_source, source);
+  public Sources setSources(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource> sources) {
+    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_sources, sources);
     return this;
   }
     
@@ -130,16 +130,16 @@ public class Sources extends DynamicResource implements ISources {
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_source, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_sources, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISources selectToMeSource(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISources.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_source, object.getResource());
+  public static cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISources selectToMeSources(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISources.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Sources_sources, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efb0f224-a281-11e5-9332-1b5893de4362,b7z6PurVC1LxeAZtQxKUg1f+61E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efb0f224-a281-11e5-9332-1b5893de4362,PDokJLFmWiA6OLYqfBbOZsNiSis=] */

@@ -52,12 +52,32 @@ public class TargetDate extends DynamicResource implements ITargetDate {
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> selectMembers() {
+    return _getList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_members);
+  }
+
+  public TargetDate setMembers(java.util.List<? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson> members) {
+    _setList(cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_members, members);
+    return this;
+  }
+    
+  @Override
   public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectOwner() {
     return _getSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner);
   }
 
   public TargetDate setOwner(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson owner) {
     _setSingle(cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, owner);
+    return this;
+  }
+    
+  @Override
+  public cleon.sda.spec.javamodel.IWorkState selectState() {
+    return _getSingle(cleon.sda.spec.javamodel.IWorkState.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_state);
+  }
+
+  public TargetDate setState(cleon.sda.spec.javamodel.IWorkState state) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_state, state);
     return this;
   }
     
@@ -78,7 +98,9 @@ public class TargetDate extends DynamicResource implements ITargetDate {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_deadline, visitor);
+    _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_members, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, visitor);
+    _acceptSingle(cleon.sda.spec.javamodel.IWorkState.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -88,9 +110,17 @@ public class TargetDate extends DynamicResource implements ITargetDate {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_owner, object.getResource());
   }
   
-  public static cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate selectToMeDeadline(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_deadline, object.getResource());
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate> selectToMeDeadline(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_deadline, object.getResource());
+  }
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate> selectToMeMembers(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_members, object.getResource());
+  }
+  
+  public static java.util.List<cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate> selectToMeState(cleon.sda.spec.javamodel.IWorkState object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.planning.targetdates.javamodel.ITargetDate.class, cleon.sda.spec.projectmanagement.planning.targetdates.TargetdatesPackage.TargetDate_state, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdf7db5a-a7d8-11e5-82dd-3b995d9c840c,HEwhMV5EYe+E7b0+pat83jP+j/I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdf7db5a-a7d8-11e5-82dd-3b995d9c840c,N2DQ78H5V870eAuphVSH4YU2N1M=] */

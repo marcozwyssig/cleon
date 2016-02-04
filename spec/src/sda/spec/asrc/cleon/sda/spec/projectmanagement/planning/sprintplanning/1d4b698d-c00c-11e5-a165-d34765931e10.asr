@@ -7,6 +7,7 @@
         <resource statement-guid="9bdaf04d-c38d-11e5-a9c9-53d676410f3e" guid="9bd87f49-c38d-11e5-a9c9-53d676410f3e" />
       </owns>
     </resource>
+    <resource statement-guid="9c56792b-cb90-11e5-b911-69bd21f5af67" guid="9c5603f8-cb90-11e5-b911-69bd21f5af67" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1d4b698f-c00c-11e5-a165-d34765931e10" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -64,13 +65,32 @@
           </object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="bd423af7-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+          <object statement-guid="bd423af7-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="bd423af8-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="1c50fde7-6197-11df-bb0f-0fe3854fdf0b">
           <object statement-guid="bd423af9-c38c-11e5-a9c9-53d676410f3e" type="resource" guid="cd28fab0-c0d5-11e5-8f91-3dfd9b379121" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9c56792b-cb90-11e5-b911-69bd21f5af67">
+      <resource guid="9c5603f8-cb90-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9c562b0a-cb90-11e5-b911-69bd21f5af67" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a264011c-cb90-11e5-b911-69bd21f5af67" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9ce80b08-cb90-11e5-b911-69bd21f5af67" type="literal">productivity</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="9c578a9c-cb90-11e5-b911-69bd21f5af67" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="c3dcbb0e-cb90-11e5-b911-69bd21f5af67" type="literal">percentace</object>
         </predicate>
       </resource>
     </object>

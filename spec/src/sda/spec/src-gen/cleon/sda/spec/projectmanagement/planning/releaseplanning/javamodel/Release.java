@@ -129,6 +129,16 @@ public class Release extends DynamicResource implements IRelease {
   }
     
   @Override
+  public cleon.sda.spec.javamodel.IWorkState selectState() {
+    return _getSingle(cleon.sda.spec.javamodel.IWorkState.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_state);
+  }
+
+  public Release setState(cleon.sda.spec.javamodel.IWorkState state) {
+    _setSingle(cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_state, state);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -153,6 +163,7 @@ public class Release extends DynamicResource implements IRelease {
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.planning.releaseplanning.javamodel.ISprint.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.Release_sprints, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_start, visitor);
+    _acceptSingle(cleon.sda.spec.javamodel.IWorkState.class, cleon.sda.spec.projectmanagement.planning.releaseplanning.ReleaseplanningPackage.TimePlan_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -163,4 +174,4 @@ public class Release extends DynamicResource implements IRelease {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2755120c-3761-11e5-95d9-2b04d7ab02d9,8ZuKh3Lu/Fx7Q20kUclfSveuCSI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2755120c-3761-11e5-95d9-2b04d7ab02d9,m3ZYP14pL3clE2rwVpA0p4NGA3k=] */

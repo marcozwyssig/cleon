@@ -27,6 +27,8 @@ public class SprintplanningPackage {
   public static final Resource FunctionSpace_SprintBacklog = new Resource("64d1b184-c4ca-11e5-8558-4b8affb7767c");
   public static final Resource FunctionSpace_SprintCapacity = new Resource("7ceca75a-c4ca-11e5-8558-4b8affb7767c");
   public static final Resource FunctionSpace_PersonCapacity = new Resource("8ac3e535-c4ca-11e5-8558-4b8affb7767c");
+  public static final Resource SprintGoal_goalDescriptions = new Resource("37823e37-cb76-11e5-bc87-a1fadf56ded8");
+  public static final Resource PersonCapacity_productivity = new Resource("9c5603f8-cb90-11e5-b911-69bd21f5af67");
   
   /* Begin Protected Region [[user]] */
   
@@ -47,4 +49,4 @@ public class SprintplanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.planning.sprintplanning,q4gkUVyd9tZbooOeQuqk32zKlQ4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.planning.sprintplanning,0v91iDZsLe8ypXTLFqSV3Ra010o=] */

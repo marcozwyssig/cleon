@@ -33,5 +33,9 @@ public abstract class WorkItem extends DynamicResource implements IWorkItem {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_priority, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectToMeState(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,Rjec5u40hUUXXgVC1kBq5NTQQxo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,FJMJ0pEBLQMBgNrgayL+++nifZo=] */

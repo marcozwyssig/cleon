@@ -31,6 +31,33 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   // attributes
   
   @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectGoalDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintGoal_goalDescriptions);
+  }
+    
+  public void setGoalDescriptions(java.util.List<java.lang.String> goalDescriptions) {
+     _setListAttribute(cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintGoal_goalDescriptions, goalDescriptions);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -55,10 +82,13 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.SprintGoal_goalDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,2Oj5iWPXduYxOPQLtoZQLcN7Pks=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,m+vThx8HWwW7ITmyVGnGq7WF9W0=] */

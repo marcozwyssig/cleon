@@ -28,6 +28,17 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
     super(resourceRepository, resource, IPersonCapacity.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Integer selectProductivity() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.PersonCapacity_productivity);
+  }
+    
+  public void setProductivity(java.lang.Integer productivity) {
+     _setSingleAttribute(cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.PersonCapacity_productivity, productivity);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.PersonCapacity_productivity, visitor);
     // relations
     _acceptMap(cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.ICapacityPerDay.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.PersonCapacity_capacityPerDay, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.planning.sprintplanning.SprintplanningPackage.PersonCapacity_person, visitor);
@@ -91,4 +104,4 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,Or79+qznUvAsRNKWKBXwYvyAvCs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,60aWDmDMwxAOpaGOp1wG/wvXZHc=] */

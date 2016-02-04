@@ -23,6 +23,14 @@
 |*Enddatum*|2016-02-03_Mi
 |==============================
 
+==== Sprint 2
+
+[cols="10,20"]
+|==============================
+|*Startdatum*|2016-01-02_Sa
+|*Enddatum*|2016-01-02_Sa
+|==============================
+
 
 
 == Sprint Planung
@@ -39,41 +47,284 @@
 
 ==== Sprint 1 SprintBacklog 
 
-[cols="10,20a,10" options="header"]
+[cols="10,20a,^5,^5" options="header"]
 |==============================
-|Name|Beschreibung|Aufwand [SP]
+|Name|Beschreibung|State|Aufwand [SP]
 |ST-011_Activity1_1_1
 |
 Meine Beschreibung 111
 Meine Beschreibung 1212
+|Input
 |0
 |ST-002_Activity1_1_2
 |
 
+|Input
 |13
 |==============================
 
 ==== Sprint 1 Kapazität
 
+.Zusammenfassung
 [cols="10,20"]
 |==============================
-|*Kapazität [h]*|0
+|*Butto Kapazität [h]*|237
+|*Netto Kapazität [h]*|189
 |*Aufwand [SP]*|13.0
+|*Tempo (Aufwand/Netto Kapazität)*|0.06878306878306878
 |==============================
 
-[cols="10,10" options="header"]
+[cols="10,10,10,10" options="header"]
 |==============================
-|Person|Kapazität [h]
+|Person|Brutto Kapazität [h]|Produktivität|Netto Kapazität [h]
+|Pascal Meier
+|85
+|80%
+|68
 |Patrick Müller
-|0
-|Patrick Müller
-|0
+|80
+|80%
+|64
+|Patrick Meier
+|72
+|80%
+|57
 |==============================
+
+.Kapazität 
+[cols="4,^4,^4,^4" options="header"]
+|===
+|Date
+|Pascal Meier
+|Patrick Müller
+|Patrick Meier
+|
+{set:cellbgcolor:none}
+2016-01-21_Do
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#ff4000}
+0
+|
+{set:cellbgcolor:none}
+2016-01-22_Fr
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-23_Sa
+^|
+{set:cellbgcolor:#ffcc33}
+5
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+|
+{set:cellbgcolor:none}
+2016-01-24_So
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+|
+{set:cellbgcolor:none}
+2016-01-25_Mo
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-26_Di
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-27_Mi
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-28_Do
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-29_Fr
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-01-30_Sa
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+|
+{set:cellbgcolor:none}
+2016-01-31_So
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+^|
+{set:cellbgcolor:#ff4000}
+0
+|
+{set:cellbgcolor:none}
+2016-02-01_Mo
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-02-02_Di
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+|
+{set:cellbgcolor:none}
+2016-02-03_Mi
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+^|
+{set:cellbgcolor:#009933}
+8
+
+|===
+{set:cellbgcolor:none}
 
 ==== Sprint 1 Ziele
 
+[cols="2,10a" options="header"]
+|===
+|Name|Beschreibung
+|ssss  
+| 
+dfsdf
+
+|dsfsdfsdf  
+| 
+asdfasdf
+
+|asdf  
+| 
+asdfasdf
+
+|===
 
 
 
+== Termine
 
-// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,2ad6e389-c00a-11e5-a165-d34765931e10,HvIs9oxXUxlEs2jWNbu3ZB/Gpl8=]
+.Alle offenen Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|2016-02-01_Mo | Sprint Retospektive 2 | Pascal Meier 
+| 
+Patrick Meier
+
+Patrick Meier
+
+Patrick Meier
+
+|2016-01-03_So | Workshop | Patrick Meier 
+| 
+Patrick Meier
+
+Patrick Meier
+
+|===
+
+.Alle erledigten Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|2016-02-01_Mo | Sprint Review 2 | Pascal Meier 
+| 
+Pascal Meier
+
+Patrick Meier
+
+Patrick Meier
+
+|===
+
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,2ad6e389-c00a-11e5-a165-d34765931e10,3GeaL2PTCJGuEMNd1SkBoKtCH1A=]

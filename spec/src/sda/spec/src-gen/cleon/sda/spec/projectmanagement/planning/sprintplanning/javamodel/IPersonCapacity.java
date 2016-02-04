@@ -6,6 +6,8 @@ public interface IPersonCapacity extends ch.actifsource.core.javamodel.IDecorato
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1d4b698d-c00c-11e5-a165-d34765931e10");
   
+  public java.lang.Integer selectProductivity();
+  
   // relations
   
   public cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson selectPerson();
@@ -14,4 +16,4 @@ public interface IPersonCapacity extends ch.actifsource.core.javamodel.IDecorato
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,ttkRR8FgOytSCeoeGFQYwOZaUD0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,/xDdjyCJCLcUumoamM82JSRLgWs=] */

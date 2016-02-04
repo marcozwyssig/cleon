@@ -15,6 +15,7 @@ public class SpecPackage {
   public static final Resource WorkState_Open = new Resource("91e2b288-c58a-11e5-aeea-1db9268c0ee9");
   public static final Resource WorkState_In__F_Progress = new Resource("93136a9c-c58a-11e5-aeea-1db9268c0ee9");
   public static final Resource WorkState_Done = new Resource("94e0b0a7-c58a-11e5-aeea-1db9268c0ee9");
+  public static final Resource FunctionSpace_WorkState = new Resource("1287e9fb-cb74-11e5-bc87-a1fadf56ded8");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +36,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec,iuqDPrFiMMicv6+jFJC5Kae8qw8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec,CLobTuqiSslZZyyPdM17FqxqkCM=] */

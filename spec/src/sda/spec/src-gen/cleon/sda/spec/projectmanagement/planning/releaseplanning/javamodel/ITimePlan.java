@@ -12,6 +12,8 @@ public interface ITimePlan extends cleon.doc.spec.chapter.javamodel.IChapter {
   
   public cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay selectEnd();
   
+  public cleon.sda.spec.javamodel.IWorkState selectState();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,WgbPrftT9AvyO1ds7c7msWIT2Ig=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3c633cfe-3761-11e5-95d9-2b04d7ab02d9,X3nWJnr8xfgEOGabVlgUwOVrp6w=] */

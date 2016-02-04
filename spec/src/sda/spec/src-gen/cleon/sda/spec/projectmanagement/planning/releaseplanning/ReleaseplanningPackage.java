@@ -13,6 +13,7 @@ public class ReleaseplanningPackage {
   public static final Resource TimePlan_start = new Resource("526b27ed-c38c-11e5-a9c9-53d676410f3e");
   public static final Resource TimePlan_end = new Resource("6050490c-c38c-11e5-a9c9-53d676410f3e");
   public static final Resource Release_daysPerSprint = new Resource("94fb41ad-c38c-11e5-a9c9-53d676410f3e");
+  public static final Resource TimePlan_state = new Resource("7a36fdd5-cb73-11e5-bc87-a1fadf56ded8");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class ReleaseplanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.planning.releaseplanning,loPQQ8s3IQ1VrbJrK4mH6aV9N1Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.planning.releaseplanning,7uCabrXM3UkVSDKhcXoCJi4lLVg=] */

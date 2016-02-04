@@ -4,6 +4,9 @@
     <resource statement-guid="d0e0cf67-c38c-11e5-a9c9-53d676410f3e" guid="d0de8575-c38c-11e5-a9c9-53d676410f3e" />
     <resource statement-guid="d8bcaf48-c38c-11e5-a9c9-53d676410f3e" guid="d8bcaf45-c38c-11e5-a9c9-53d676410f3e" />
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5bdb17f7-cb77-11e5-bc87-a1fadf56ded8" guid="5bdb17f3-cb77-11e5-bc87-a1fadf56ded8" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cd28fab2-c0d5-11e5-8f91-3dfd9b379121" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -56,6 +59,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cd2b44a3-c0d5-11e5-8f91-3dfd9b379121" type="literal">CapacityPerDay</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5bdb17f7-cb77-11e5-bc87-a1fadf56ded8">
+      <resource guid="5bdb17f3-cb77-11e5-bc87-a1fadf56ded8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5bdb17f5-cb77-11e5-bc87-a1fadf56ded8" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e6d16f4f-cb77-11e5-bc87-a1fadf56ded8" type="literal">cleon.sda.spec.projectmanagement.planning.sprintplanning.javamodel.CapacityPerDayInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5bdb17f6-cb77-11e5-bc87-a1fadf56ded8" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

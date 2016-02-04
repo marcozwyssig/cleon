@@ -138,6 +138,16 @@ public class Story extends DynamicResource implements IStory {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState selectState() {
+    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state);
+  }
+
+  public Story setState(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState state) {
+    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state, state);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -163,6 +173,7 @@ public class Story extends DynamicResource implements IStory {
     _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IPriority.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_priority, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -173,4 +184,4 @@ public class Story extends DynamicResource implements IStory {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,wQah5OJte0V1A89pzaIMNNs5RpU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,LmYj5yxQlTzR4IezWqntPbeKwZg=] */

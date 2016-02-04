@@ -138,6 +138,16 @@ public class Activity extends DynamicResource implements IActivity {
   }
     
   @Override
+  public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState selectState() {
+    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state);
+  }
+
+  public Activity setState(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState state) {
+    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state, state);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -163,8 +173,9 @@ public class Activity extends DynamicResource implements IActivity {
     _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IPriority.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_priority, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.story.StoryPackage.Story_requestedBy, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItemState.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,egs5Yd5uLKjKomULTywZ8qE1fdI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,dEWE8djygopwYNirN1mP5KebQ3E=] */

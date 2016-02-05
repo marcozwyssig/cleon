@@ -6,6 +6,8 @@
     <resource statement-guid="3cadeb41-cb93-11e5-b911-69bd21f5af67" guid="3cadeb3e-cb93-11e5-b911-69bd21f5af67" />
     <resource statement-guid="44b71be7-cb93-11e5-b911-69bd21f5af67" guid="44b6f4d4-cb93-11e5-b911-69bd21f5af67" />
     <resource statement-guid="4e47d6ed-cb93-11e5-b911-69bd21f5af67" guid="4e47afda-cb93-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="d8c1cc69-cbd5-11e5-be6a-5f91e49e8f24" guid="d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24" />
+    <resource statement-guid="de1d904e-cbd5-11e5-be6a-5f91e49e8f24" guid="de1d904b-cbd5-11e5-be6a-5f91e49e8f24" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b27abc91-cb92-11e5-b911-69bd21f5af67" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -80,6 +82,32 @@
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
           <object statement-guid="50bea34f-cb93-11e5-b911-69bd21f5af67" type="literal">WorkItem ist erledigt</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d8c1cc69-cbd5-11e5-be6a-5f91e49e8f24">
+      <resource guid="d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d8c1cc68-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d947c54a-cbd5-11e5-be6a-5f91e49e8f24" type="literal">ReadyForImplement</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="e2478af0-cbd5-11e5-be6a-5f91e49e8f24" type="literal">Workitem ist bereit für die Implementation</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="de1d904e-cbd5-11e5-be6a-5f91e49e8f24">
+      <resource guid="de1d904b-cbd5-11e5-be6a-5f91e49e8f24">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de1d904d-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="decce31f-cbd5-11e5-be6a-5f91e49e8f24" type="literal">ReadyForConfirm</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="e9d65b71-cbd5-11e5-be6a-5f91e49e8f24" type="literal">WorkItem ist bereit zum Testen</object>
         </predicate>
       </resource>
     </object>

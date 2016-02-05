@@ -18,6 +18,10 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
     
     public void visitDone();
     
+    public void visitReadyForImplement();
+    
+    public void visitReadyForConfirm();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -31,6 +35,10 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
     public R visitConfirm();
     
     public R visitDone();
+    
+    public R visitReadyForImplement();
+    
+    public R visitReadyForConfirm();
     
   }
   
@@ -52,7 +60,11 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
   
   public boolean isDone();
   
+  public boolean isReadyForImplement();
+  
+  public boolean isReadyForConfirm();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,c/0I2IscW3RiWXSpAVvWuc0o9d0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,TPcVKUb5XOIvKJiSNSFE5QFeWTk=] */

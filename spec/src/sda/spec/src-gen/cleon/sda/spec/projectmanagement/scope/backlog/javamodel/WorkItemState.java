@@ -79,6 +79,8 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
     if (isImplement()) return visitor.visitImplement();
     if (isConfirm()) return visitor.visitConfirm();
     if (isDone()) return visitor.visitDone();
+    if (isReadyForImplement()) return visitor.visitReadyForImplement();
+    if (isReadyForConfirm()) return visitor.visitReadyForConfirm();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -102,6 +104,14 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
     }
     if (isDone()) {
       visitor.visitDone();
+      return;
+    }
+    if (isReadyForImplement()) {
+      visitor.visitReadyForImplement();
+      return;
+    }
+    if (isReadyForConfirm()) {
+      visitor.visitReadyForConfirm();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -134,5 +144,15 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
     return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Done);
   }
   
+  @Override
+  public boolean isReadyForImplement() {
+    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_ReadyForImplement);
+  }
+  
+  @Override
+  public boolean isReadyForConfirm() {
+    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_ReadyForConfirm);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,jpywgu0E8FHc37PtrnGy0BX9Bzs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,2vYIGaUx9X6w13pxOmgyJvhXzpo=] */

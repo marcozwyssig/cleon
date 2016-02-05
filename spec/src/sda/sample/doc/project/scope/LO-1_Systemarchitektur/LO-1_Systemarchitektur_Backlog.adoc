@@ -34,21 +34,31 @@ Beschreibung auf Stufe Gruppe 11
 | 
 |==============================
 
-[cols="20,20a,10,10" options="header"]
+[cols="10,20a,10,10,10,10,15a" options="header"]
 |==============================
-|Name|Beschreibung|Priorität|Aufwand [SP]
+|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Sprint|Bedingungen
 |ST-011_Activity1_1_1
 |
 Meine Beschreibung 111
 Meine Beschreibung 1212
-|
-|0
+|Input
+|Could have
 
+|0
+|Sprint 1
+|
 |ST-002_Activity1_1_2
 |
 
-|
+|Input
+|Could have
+
 |13
+|Sprint 1
+|
+Post:
+
+- ST-003_Activity1_2_2
 |==============================
 
 
@@ -80,19 +90,26 @@ Beschreibung auf Stufe Gruppe 11
 | 
 |==============================
 
-[cols="20,20a,10,10" options="header"]
+[cols="10,20a,10,10,10,10,15a" options="header"]
 |==============================
-|Name|Beschreibung|Priorität|Aufwand [SP]
+|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Sprint|Bedingungen
 |ST-004_Activity1_2_1
 |
 Meine Beschreibung 111
 Meine Beschreibung 1212
-|
-|2
+|Input
+|Could have
 
+|2
+|
+|
 |ST-005_Activity1_2_2
 |
 
+|Input
+|Could have
+
+|
 |
 |
 |==============================
@@ -112,23 +129,33 @@ Der Text soll wann hinkommen ActivityGroup2_2
 | 
 |==============================
 
-[cols="20,20a,10,10" options="header"]
+[cols="10,20a,10,10,10,10,15a" options="header"]
 |==============================
-|Name|Beschreibung|Priorität|Aufwand [SP]
+|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Sprint|Bedingungen
 |ST-001_Activity1_2_1
 |
 Meine Beschreibung 111
 Meine Beschreibung 1212
-|
-|100
+|Input
+|Could have
 
+|100
+|
+|
 |ST-003_Activity1_2_2
 |
 
-|
+|Input
+|Could have
+
 |13
+|
+|
+Pre:
+
+- ST-002_Activity1_1_2
 |==============================
 
 
 
-// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,10b3122c-bdfb-11e5-bc2e-0b46afe7c3c9,nO/kKWaxSSundr19JCzkDyqN6lk=]
+// Actifsource ID=[dd9c4f30-d871-11e4-aa2f-c11242a92b60,10b3122c-bdfb-11e5-bc2e-0b46afe7c3c9,FzxC/9lXSJTePmACDilg4u2ibvk=]

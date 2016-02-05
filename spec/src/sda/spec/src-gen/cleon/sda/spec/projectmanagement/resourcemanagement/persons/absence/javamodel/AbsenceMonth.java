@@ -31,12 +31,12 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay> selectAbsenseYear() {
-    return _getMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseYear);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay> selectAbsenseDay() {
+    return _getMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseDay);
   }
 
-  public AbsenceMonth setAbsenseYear(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay> absenseYear) {
-    _setMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseYear, absenseYear);
+  public AbsenceMonth setAbsenseDay(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay> absenseDay) {
+    _setMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseDay, absenseDay);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseYear, visitor);
+    _acceptMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseDay, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_month, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -82,8 +82,8 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
 
   // toMeRelations
   
-  public static cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth selectToMeAbsenseYear(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseYear, object.getResource());
+  public static cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth selectToMeAbsenseDay(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseDay object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenceMonth_absenseDay, object.getResource());
   }
   
   public static java.util.List<cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth> selectToMeMonth(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IMonth object) {
@@ -91,4 +91,4 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce3dada8-c4c8-11e5-8558-4b8affb7767c,2B1lJ7jkfrO6Gcni2o8TFYz2RqY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce3dada8-c4c8-11e5-8558-4b8affb7767c,l4Evn8XkjjRp7gbn9Wapbp3hsuU=] */

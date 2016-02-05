@@ -15,8 +15,8 @@ public class AbsencePackage {
   public static final Resource AbsenseDay_reason = new Resource("d7a7755e-c4c7-11e5-8558-4b8affb7767c");
   public static final Resource AbsenceMonth = new Resource("ce3dada8-c4c8-11e5-8558-4b8affb7767c");
   public static final Resource AbsenseDay = new Resource("d157be88-c4c8-11e5-8558-4b8affb7767c");
-  public static final Resource AbsenseYear_absenseYear = new Resource("0d080c77-c4c9-11e5-8558-4b8affb7767c");
-  public static final Resource AbsenceMonth_absenseYear = new Resource("46a865fb-c4c9-11e5-8558-4b8affb7767c");
+  public static final Resource AbsenseYear_absenseMonth = new Resource("0d080c77-c4c9-11e5-8558-4b8affb7767c");
+  public static final Resource AbsenceMonth_absenseDay = new Resource("46a865fb-c4c9-11e5-8558-4b8affb7767c");
   public static final Resource AbsenceMonth_month = new Resource("5025e7db-c4c9-11e5-8558-4b8affb7767c");
   public static final Resource AbsenseDay_day = new Resource("aa268604-c4c9-11e5-8558-4b8affb7767c");
   
@@ -39,4 +39,4 @@ public class AbsencePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence,uYvufI4TvKPQ4y1BLc009v/eiVc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence,t6QaGS07KJClvV2WOfjCk7GJY34=] */

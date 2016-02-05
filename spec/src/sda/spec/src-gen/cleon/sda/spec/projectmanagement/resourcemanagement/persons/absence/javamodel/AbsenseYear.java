@@ -31,12 +31,12 @@ public class AbsenseYear extends DynamicResource implements IAbsenseYear {
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth> selectAbsenseYear() {
-    return _getMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseYear);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth> selectAbsenseMonth() {
+    return _getMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseMonth);
   }
 
-  public AbsenseYear setAbsenseYear(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth> absenseYear) {
-    _setMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseYear, absenseYear);
+  public AbsenseYear setAbsenseMonth(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth> absenseMonth) {
+    _setMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseMonth, absenseMonth);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class AbsenseYear extends DynamicResource implements IAbsenseYear {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseYear, visitor);
+    _acceptMap(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseMonth, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IYear.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_year, visitor);
@@ -86,9 +86,9 @@ public class AbsenseYear extends DynamicResource implements IAbsenseYear {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseYear.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_year, object.getResource());
   }
   
-  public static cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseYear selectToMeAbsenseYear(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseYear.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseYear, object.getResource());
+  public static cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseYear selectToMeAbsenseMonth(cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenceMonth object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.javamodel.IAbsenseYear.class, cleon.sda.spec.projectmanagement.resourcemanagement.persons.absence.AbsencePackage.AbsenseYear_absenseMonth, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c661b9c8-c4c6-11e5-8558-4b8affb7767c,XJlzZa79rSjpFzQFnaWjar+St3g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c661b9c8-c4c6-11e5-8558-4b8affb7767c,WyoO4Otlq28gXmcYuJAcCqfRFbI=] */

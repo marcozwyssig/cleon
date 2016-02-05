@@ -42,7 +42,7 @@ public class CapacityPerDayInitializerAspect extends AbstractInitializationAspec
 
 	private IAbsenceMonth getAbsenseMonth(IAbsenseYear absenseYear, IMonth month)
 	{
-		Optional<? extends IAbsenceMonth> hasMonth = absenseYear.selectAbsenseYear().values().stream().filter(x -> x.selectMonth() == month).findFirst();
+		Optional<? extends IAbsenceMonth> hasMonth = absenseYear.selectAbsenseMonth().values().stream().filter(x -> x.selectMonth() == month).findFirst();
 		if(hasMonth.isPresent())
 		{
 			return hasMonth.get();
@@ -52,7 +52,7 @@ public class CapacityPerDayInitializerAspect extends AbstractInitializationAspec
 
 	private IAbsenseDay getAbsenseDay(IAbsenceMonth absenseMonth, IDay day)
 	{
-		Optional<? extends IAbsenseDay> hasDay = absenseMonth.selectAbsenseYear().values().stream().filter(x -> x.selectDay() == day).findFirst();
+		Optional<? extends IAbsenseDay> hasDay = absenseMonth.selectAbsenseDay().values().stream().filter(x -> x.selectDay() == day).findFirst();
 		if(hasDay.isPresent())
 		{
 			return hasDay.get();

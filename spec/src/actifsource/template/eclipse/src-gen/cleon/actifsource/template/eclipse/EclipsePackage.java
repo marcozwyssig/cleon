@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class EclipsePackage {
   
-  public static final Resource FunctionSpace_Project = new Resource("32de7fdf-11ea-11e5-b568-55f5f05bd6f6");
+  public static final Resource FunctionSpace_PluginProject = new Resource("32de7fdf-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Specification = new Resource("4c882bf1-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Template = new Resource("6229e3a6-11ea-11e5-b568-55f5f05bd6f6");
   public static final Resource FunctionSpace_Model = new Resource("751073df-11ea-11e5-b568-55f5f05bd6f6");
@@ -31,4 +31,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.template.eclipse,sMYOHgcv+dUGgqQ6Oin0oOGLwt8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.actifsource.template.eclipse,0vBH3BIPF8vwrHXLbEFcNR0aeps=] */

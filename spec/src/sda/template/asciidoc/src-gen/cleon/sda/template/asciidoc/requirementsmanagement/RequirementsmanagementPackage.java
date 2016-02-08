@@ -12,6 +12,7 @@ public class RequirementsmanagementPackage {
   public static final Resource FunctionSpace_Goals = new Resource("b5114414-c912-11e5-a64e-a5d84d8f1b45");
   public static final Resource FunctionSpace_Principles = new Resource("c06b9b4b-c912-11e5-a64e-a5d84d8f1b45");
   public static final Resource FunctionSpace_Drivers = new Resource("c5b3149f-c912-11e5-a64e-a5d84d8f1b45");
+  public static final Resource FunctionSpace_IssueGroup = new Resource("4976e53f-ce67-11e5-8041-092cb74c72f2");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class RequirementsmanagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.requirementsmanagement,/zA7XxL/lcmz8akrWK9WxbE/1Fc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.template.asciidoc.requirementsmanagement,QcEqPxGnSXRqx1MtD7D10s0Rkxo=] */

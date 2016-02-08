@@ -45,7 +45,7 @@ public class FunctionSpace {
 
   public static interface IIssuesFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5b24f52d-c5d6-11e5-9a6b-0bd3546aceff")
+    @IDynamicResourceExtension.MethodId("7e23640e-ce67-11e5-8041-092cb74c72f2")
     public java.lang.String RenderDocumentContent();
 
   }
@@ -218,6 +218,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IIssueGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5b24f52d-c5d6-11e5-9a6b-0bd3546aceff")
+    public java.lang.String RenderDocumentContent();
+
+  }
+  
+  public static interface IIssueGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IssueGroupFunctionsImpl implements IIssueGroupFunctionsImpl {
+
+    public static final IIssueGroupFunctionsImpl INSTANCE = new IssueGroupFunctionsImpl();
+
+    private IssueGroupFunctionsImpl() {}
+
+  }
+  
+  public static class IssueGroupFunctions {
+
+    private IssueGroupFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,qgyaerbssLWZW4iOex6b59c1ChU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,c25nucGGFdpyIOfIrqIOoqSh1uQ=] */

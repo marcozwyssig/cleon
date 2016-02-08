@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: cleon.sda.template.xml
+Bundle-SymbolicName: cleon.sda.template.xml.builtin;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Require-Bundle: ch.actifsource.core;bundle-version="6.13.0",
+ ch.actifsource.environment;bundle-version="6.13.0",
+ ch.actifsource.util;bundle-version="6.13.0",
+ cleon.sda.spec.builtin;bundle-version="0.0.1",
+ cleon.sda.template.asciidoc.builtin;bundle-version="0.0.1",
+ ch.actifsource.generator;bundle-version="6.13.0"
+Export-Package: cleon.sda.template.xml,cleon.sda.template.xml.javamodel
+ 

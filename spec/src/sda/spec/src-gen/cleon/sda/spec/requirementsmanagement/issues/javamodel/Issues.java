@@ -51,12 +51,12 @@ public class Issues extends DynamicResource implements IIssues {
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue> selectIssues() {
-    return _getList(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issues);
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup> selectIssueGroups() {
+    return _getList(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups);
   }
 
-  public Issues setIssues(java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue> issues) {
-    _setList(cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issues, issues);
+  public Issues setIssueGroups(java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup> issueGroups) {
+    _setList(cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups, issueGroups);
     return this;
   }
     
@@ -67,16 +67,6 @@ public class Issues extends DynamicResource implements IIssues {
 
   public Issues setNoChapters(cleon.doc.spec.chapter.javamodel.IChapter noChapters) {
     _setSingle(cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
-    return this;
-  }
-    
-  @Override
-  public cleon.doc.spec.document.javamodel.ISubDocument selectNoDocuments() {
-    return _getSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments);
-  }
-
-  public Issues setNoDocuments(cleon.doc.spec.document.javamodel.ISubDocument noDocuments) {
-    _setSingle(cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, noDocuments);
     return this;
   }
     
@@ -126,9 +116,8 @@ public class Issues extends DynamicResource implements IIssues {
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
-    _acceptList(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issues, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups, visitor);
     _acceptSingle(cleon.doc.spec.chapter.javamodel.IChapter.class, cleon.doc.spec.chapter.ChapterPackage.NoChapters_noChapters, visitor);
-    _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -137,9 +126,9 @@ public class Issues extends DynamicResource implements IIssues {
 
   // toMeRelations
   
-  public static cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues selectToMeIssues(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issues, object.getResource());
+  public static cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues selectToMeIssueGroups(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,xTxviXS6+HCMekP3GOq4jx6O564=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,aRZ6Wtqpj3GrZXRpBpOqXsZHE4s=] */

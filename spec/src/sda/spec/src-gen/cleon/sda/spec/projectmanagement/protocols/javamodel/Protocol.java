@@ -261,8 +261,8 @@ public class Protocol extends DynamicResource implements IProtocol {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, object.getResource());
   }
   
-  public static cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol selectToMeMembers(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
-    return _getToMeSingle(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, object.getResource());
+  public static java.util.List<cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeMembers(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.sda.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, object.getResource());
   }
   
   public static cleon.sda.spec.projectmanagement.protocols.javamodel.IProtocol selectToMeAgenda(cleon.sda.spec.projectmanagement.protocols.javamodel.IAgenda object) {
@@ -286,4 +286,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,B0SgB6mVDlvJdLYGMjAJl6BOW6A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,NmZutP4vqGih/+b2lBDjgoKIpj0=] */

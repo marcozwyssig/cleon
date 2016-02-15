@@ -1,4 +1,4 @@
-package cleon.testing.spec.level.unitests.javamodel;
+package cleon.testing.spec.levels.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -70,12 +70,12 @@ public class TestComponent extends DynamicResource implements ITestComponent {
   }
     
   @Override
-  public cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency selectComponentUnderTest() {
-    return _getSingle(cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_componentUnderTest);
+  public cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency selectComponentUnderTest() {
+    return _getSingle(cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_componentUnderTest);
   }
 
-  public TestComponent setComponentUnderTest(cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency componentUnderTest) {
-    _setSingle(cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_componentUnderTest, componentUnderTest);
+  public TestComponent setComponentUnderTest(cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency componentUnderTest) {
+    _setSingle(cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_componentUnderTest, componentUnderTest);
     return this;
   }
     
@@ -130,12 +130,12 @@ public class TestComponent extends DynamicResource implements ITestComponent {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestPackageDecomposition> selectTestPackages() {
-    return _getMap(cleon.testing.spec.level.unitests.javamodel.ITestPackageDecomposition.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_testPackages);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestPackageDecomposition> selectTestPackages() {
+    return _getMap(cleon.testing.spec.levels.unitests.javamodel.ITestPackageDecomposition.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_testPackages);
   }
 
-  public TestComponent setTestPackages(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestPackageDecomposition> testPackages) {
-    _setMap(cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_testPackages, testPackages);
+  public TestComponent setTestPackages(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestPackageDecomposition> testPackages) {
+    _setMap(cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_testPackages, testPackages);
     return this;
   }
     
@@ -158,25 +158,25 @@ public class TestComponent extends DynamicResource implements ITestComponent {
     _acceptSingleAttribute(java.lang.String.class, cleon.uml.spec.structural.components.ComponentsPackage.AbstractComponent_shortName, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
-    _acceptSingle(cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_componentUnderTest, visitor);
+    _acceptSingle(cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_componentUnderTest, visitor);
     _acceptList(cleon.arc42.spec._05_buildingblockview.javamodel.IDecomposite.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.uml.spec.structural.packages.javamodel.IPackageDecomposition.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentDependency.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptMap(cleon.testing.spec.level.unitests.javamodel.ITestPackageDecomposition.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_testPackages, visitor);
+    _acceptMap(cleon.testing.spec.levels.unitests.javamodel.ITestPackageDecomposition.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_testPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testing.spec.level.unitests.javamodel.ITestComponent selectToMeTestPackages(cleon.testing.spec.level.unitests.javamodel.ITestPackageDecomposition object) {
-    return _getToMeSingle(object.getRepository(), cleon.testing.spec.level.unitests.javamodel.ITestComponent.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_testPackages, object.getResource());
+  public static cleon.testing.spec.levels.unitests.javamodel.ITestComponent selectToMeTestPackages(cleon.testing.spec.levels.unitests.javamodel.ITestPackageDecomposition object) {
+    return _getToMeSingle(object.getRepository(), cleon.testing.spec.levels.unitests.javamodel.ITestComponent.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_testPackages, object.getResource());
   }
   
-  public static cleon.testing.spec.level.unitests.javamodel.ITestComponent selectToMeComponentUnderTest(cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency object) {
-    return _getToMeSingle(object.getRepository(), cleon.testing.spec.level.unitests.javamodel.ITestComponent.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponent_componentUnderTest, object.getResource());
+  public static cleon.testing.spec.levels.unitests.javamodel.ITestComponent selectToMeComponentUnderTest(cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.testing.spec.levels.unitests.javamodel.ITestComponent.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponent_componentUnderTest, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,nRlN5H8QAD81iJFeBemFCZHjU/k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,6EuXU4aPg/fZbMBqaPG3yh1lSIg=] */

@@ -71,6 +71,16 @@ public class SourceOrganisation extends DynamicResource implements ISourceOrgani
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceDocument> selectDocuments() {
+    return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceDocument.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_documents);
+  }
+
+  public SourceOrganisation setDocuments(java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceDocument> documents) {
+    _setList(cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_documents, documents);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourcePerson> selectPersons() {
     return _getList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourcePerson.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_persons);
   }
@@ -99,6 +109,7 @@ public class SourceOrganisation extends DynamicResource implements ISourceOrgani
     // relations
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.Source_composites, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceDocument.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_documents, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourcePerson.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_persons, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -109,5 +120,9 @@ public class SourceOrganisation extends DynamicResource implements ISourceOrgani
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceOrganisation.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_persons, object.getResource());
   }
   
+  public static cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceOrganisation selectToMeDocuments(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceDocument object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISourceOrganisation.class, cleon.sda.spec.requirementsmanagement.motivation.sources.SourcesPackage.SourceOrganisation_documents, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b0ca733-bb80-11e5-b2f7-f515c847fa35,C3yFCoLlLNsDX6oPA8Cmgk4/elE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b0ca733-bb80-11e5-b2f7-f515c847fa35,+kTYHo8XaHKvxT/4u6CUaHrAU5E=] */

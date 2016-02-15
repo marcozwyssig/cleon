@@ -8,6 +8,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="6.13.0",
  ch.actifsource.util;bundle-version="6.13.0",
  cleon.doc.spec.builtin;bundle-version="0.0.1",
  cleon.bpmn.spec.builtin;bundle-version="0.0.1",
+ cleon.testing.spec.builtin;bundle-version="0.0.1",
+ cleon.arc42.spec.builtin;bundle-version="0.0.1",
  ch.actifsource.generator;bundle-version="6.13.0"
 Export-Package: cleon.sda.spec,cleon.sda.spec.javamodel
  ,cleon.sda.spec.requirementsmanagement,cleon.sda.spec.requirementsmanagement.javamodel,

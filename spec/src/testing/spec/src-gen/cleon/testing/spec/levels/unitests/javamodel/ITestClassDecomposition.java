@@ -1,4 +1,4 @@
-package cleon.testing.spec.level.unitests.javamodel;
+package cleon.testing.spec.levels.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -10,8 +10,8 @@ public interface ITestClassDecomposition extends ch.actifsource.core.javamodel.I
   
   public cleon.uml.spec.structural.packages.javamodel.IPackageInClassifierDecomposition selectClassUnderTest();
   
-  public cleon.testing.spec.level.unitests.javamodel.ITestClass selectClasses();
+  public cleon.testing.spec.levels.unitests.javamodel.ITestClass selectClasses();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,vF3BOz7Mhk+dI/QOLMCZ+6Iv5MA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,UWnMkutJKS2MxNEsoA11l9SaitE=] */

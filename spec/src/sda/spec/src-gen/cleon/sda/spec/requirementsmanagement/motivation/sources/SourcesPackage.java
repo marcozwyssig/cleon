@@ -25,6 +25,7 @@ public class SourcesPackage {
   public static final Resource SourceWorkshop_composites = new Resource("8e700220-d3fd-11e5-9dfc-cf0f3e030023");
   public static final Resource SourceOrganisation_persons = new Resource("da6d2d43-d3fe-11e5-9dfc-cf0f3e030023");
   public static final Resource SourcePerson_composites = new Resource("ec511a34-d3fe-11e5-9dfc-cf0f3e030023");
+  public static final Resource SourceOrganisation_documents = new Resource("86d69eea-d407-11e5-8556-8f55ceb91287");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class SourcesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.sources,FExW2wl5l5szdBc3QKDbQrGaAwE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.motivation.sources,gHUfgVSrhmyEDo4pIQkLIW4UlzU=] */

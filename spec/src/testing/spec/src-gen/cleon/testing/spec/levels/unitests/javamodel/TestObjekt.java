@@ -1,4 +1,4 @@
-package cleon.testing.spec.level.unitests.javamodel;
+package cleon.testing.spec.levels.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -50,20 +50,20 @@ public class TestObjekt extends DynamicResource implements ITestObjekt {
 
   @Override
   public java.lang.String selectGiven() {
-    return _getSingleAttribute(java.lang.String.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_given);
+    return _getSingleAttribute(java.lang.String.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_given);
   }
     
   public void setGiven(java.lang.String given) {
-     _setSingleAttribute(cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_given, given);
+     _setSingleAttribute(cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_given, given);
   }
 
   @Override
   public java.lang.String selectThen() {
-    return _getSingleAttribute(java.lang.String.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_then);
+    return _getSingleAttribute(java.lang.String.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_then);
   }
     
   public void setThen(java.lang.String then) {
-     _setSingleAttribute(cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_then, then);
+     _setSingleAttribute(cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_then, then);
   }
 
   // relations
@@ -94,12 +94,12 @@ public class TestObjekt extends DynamicResource implements ITestObjekt {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.doc.spec.SpecPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_given, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestObjekt_then, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_given, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestObjekt_then, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,qjDTyIvfiKNxNDt/BxO8SE15IMM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a0e91c-a398-11e3-9113-ffc7f11b0a42,+BmGn5k3sh3hiO8CG1bMYRsNEqw=] */

@@ -62,12 +62,12 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
     
   @Override
-  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement> selectRequirementManagement() {
-    return _getList(cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement);
+  public cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement selectRequirementManagement() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement);
   }
 
-  public SoftwareDevelopmentArtefacts setRequirementManagement(java.util.List<? extends cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement> requirementManagement) {
-    _setList(cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, requirementManagement);
+  public SoftwareDevelopmentArtefacts setRequirementManagement(cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement requirementManagement) {
+    _setSingle(cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, requirementManagement);
     return this;
   }
     
@@ -78,6 +78,16 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
 
   public SoftwareDevelopmentArtefacts setSolutionAnalysis(java.util.List<? extends cleon.sda.spec.analysis.solution.javamodel.ISolutionAnalysis> solutionAnalysis) {
     _setList(cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, solutionAnalysis);
+    return this;
+  }
+    
+  @Override
+  public cleon.testing.spec.javamodel.ITesting selectTesting() {
+    return _getSingle(cleon.testing.spec.javamodel.ITesting.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_testing);
+  }
+
+  public SoftwareDevelopmentArtefacts setTesting(cleon.testing.spec.javamodel.ITesting testing) {
+    _setSingle(cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_testing, testing);
     return this;
   }
     
@@ -99,8 +109,9 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.javamodel.IProject.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_project, visitor);
     _acceptSingle(cleon.sda.spec.manuals.readme.javamodel.IReadme.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_readme, visitor);
-    _acceptList(cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.javamodel.IRequirementsManagement.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
     _acceptList(cleon.sda.spec.analysis.solution.javamodel.ISolutionAnalysis.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, visitor);
+    _acceptSingle(cleon.testing.spec.javamodel.ITesting.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_testing, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -122,5 +133,9 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     return _getToMeList(object.getRepository(), cleon.sda.spec.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_readme, object.getResource());
   }
   
+  public static cleon.sda.spec.javamodel.ISoftwareDevelopmentArtefacts selectToMeTesting(cleon.testing.spec.javamodel.ITesting object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.sda.spec.SpecPackage.SoftwareDevelopmentArtefacts_testing, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,ed5vmtBONAu3QBcGCyY0fe359NU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,Rw3PpNAY+2Nt3XLTafteRt14dIE=] */

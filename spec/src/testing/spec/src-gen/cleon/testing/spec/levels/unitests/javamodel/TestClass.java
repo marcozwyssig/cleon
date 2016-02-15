@@ -1,4 +1,4 @@
-package cleon.testing.spec.level.unitests.javamodel;
+package cleon.testing.spec.levels.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -101,22 +101,22 @@ public class TestClass extends DynamicResource implements ITestClass {
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestMethod> selectTestMethods() {
-    return _getMultiMap(cleon.testing.spec.level.unitests.javamodel.ITestMethod.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testMethods);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestMethod> selectTestMethods() {
+    return _getMultiMap(cleon.testing.spec.levels.unitests.javamodel.ITestMethod.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testMethods);
   }
 
-  public TestClass setTestMethods(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestMethod> testMethods) {
-    _setMultiMap(cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testMethods, testMethods);
+  public TestClass setTestMethods(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestMethod> testMethods) {
+    _setMultiMap(cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testMethods, testMethods);
     return this;
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestProperty> selectTestProperties() {
-    return _getMultiMap(cleon.testing.spec.level.unitests.javamodel.ITestProperty.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testProperties);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestProperty> selectTestProperties() {
+    return _getMultiMap(cleon.testing.spec.levels.unitests.javamodel.ITestProperty.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testProperties);
   }
 
-  public TestClass setTestProperties(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.level.unitests.javamodel.ITestProperty> testProperties) {
-    _setMultiMap(cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testProperties, testProperties);
+  public TestClass setTestProperties(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testing.spec.levels.unitests.javamodel.ITestProperty> testProperties) {
+    _setMultiMap(cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testProperties, testProperties);
     return this;
   }
     
@@ -142,20 +142,20 @@ public class TestClass extends DynamicResource implements ITestClass {
     _acceptList(cleon.uml.spec.structural.classes.method.javamodel.IMethod.class, cleon.uml.spec.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptMultiMap(cleon.testing.spec.level.unitests.javamodel.ITestMethod.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testMethods, visitor);
-    _acceptMultiMap(cleon.testing.spec.level.unitests.javamodel.ITestProperty.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testProperties, visitor);
+    _acceptMultiMap(cleon.testing.spec.levels.unitests.javamodel.ITestMethod.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testMethods, visitor);
+    _acceptMultiMap(cleon.testing.spec.levels.unitests.javamodel.ITestProperty.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testProperties, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testing.spec.level.unitests.javamodel.ITestClass selectToMeTestMethods(cleon.testing.spec.level.unitests.javamodel.ITestMethod object) {
-    return _getToMeSingle(object.getRepository(), cleon.testing.spec.level.unitests.javamodel.ITestClass.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testMethods, object.getResource());
+  public static cleon.testing.spec.levels.unitests.javamodel.ITestClass selectToMeTestMethods(cleon.testing.spec.levels.unitests.javamodel.ITestMethod object) {
+    return _getToMeSingle(object.getRepository(), cleon.testing.spec.levels.unitests.javamodel.ITestClass.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testMethods, object.getResource());
   }
   
-  public static cleon.testing.spec.level.unitests.javamodel.ITestClass selectToMeTestProperties(cleon.testing.spec.level.unitests.javamodel.ITestProperty object) {
-    return _getToMeSingle(object.getRepository(), cleon.testing.spec.level.unitests.javamodel.ITestClass.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestClass_testProperties, object.getResource());
+  public static cleon.testing.spec.levels.unitests.javamodel.ITestClass selectToMeTestProperties(cleon.testing.spec.levels.unitests.javamodel.ITestProperty object) {
+    return _getToMeSingle(object.getRepository(), cleon.testing.spec.levels.unitests.javamodel.ITestClass.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestClass_testProperties, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,BuBlpIbmyb6pkDym1JaEGYNvhlM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c17728d0-df47-11e2-b229-cd1bd4a07953,s4pnMOD2iQQ4Vg62EJjY6JfJn4s=] */

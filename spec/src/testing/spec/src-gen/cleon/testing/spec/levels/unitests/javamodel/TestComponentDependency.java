@@ -1,4 +1,4 @@
-package cleon.testing.spec.level.unitests.javamodel;
+package cleon.testing.spec.levels.unitests.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -42,11 +42,11 @@ public class TestComponentDependency extends DynamicResource implements ITestCom
     
   @Override
   public cleon.uml.spec.structural.components.javamodel.IComponentWithPackage selectToCmp() {
-    return _getSingle(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponentDependency_toCmp);
+    return _getSingle(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponentDependency_toCmp);
   }
 
   public TestComponentDependency setToCmp(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage toCmp) {
-    _setSingle(cleon.testing.spec.level.unitests.UnitestsPackage.TestComponentDependency_toCmp, toCmp);
+    _setSingle(cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponentDependency_toCmp, toCmp);
     return this;
   }
     
@@ -65,15 +65,15 @@ public class TestComponentDependency extends DynamicResource implements ITestCom
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage.class, cleon.uml.spec.structural.components.ComponentsPackage.ComponentDependency_to, visitor);
-    _acceptSingle(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponentDependency_toCmp, visitor);
+    _acceptSingle(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponentDependency_toCmp, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency> selectToMeToCmp(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage object) {
-    return _getToMeList(object.getRepository(), cleon.testing.spec.level.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.level.unitests.UnitestsPackage.TestComponentDependency_toCmp, object.getResource());
+  public static java.util.List<cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency> selectToMeToCmp(cleon.uml.spec.structural.components.javamodel.IComponentWithPackage object) {
+    return _getToMeList(object.getRepository(), cleon.testing.spec.levels.unitests.javamodel.ITestComponentDependency.class, cleon.testing.spec.levels.unitests.UnitestsPackage.TestComponentDependency_toCmp, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,exZsek3JeE99Ohx6t6Wc/65w+xc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,PKQ38+Ynpv6OPoYPOB9I48drBEo=] */

@@ -63,7 +63,6 @@
         </resource>
       </owns>
     </resource>
-    <resource statement-guid="e35bf2cb-c58e-11e5-aeea-1db9268c0ee9" guid="e35981c7-c58e-11e5-aeea-1db9268c0ee9" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1165cb76-bb80-11e5-b2f7-f515c847fa35" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -287,19 +286,6 @@
               </predicate>
             </resource>
           </object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="e35bf2cb-c58e-11e5-aeea-1db9268c0ee9">
-      <resource guid="e35981c7-c58e-11e5-aeea-1db9268c0ee9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e35981c9-c58e-11e5-aeea-1db9268c0ee9" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e40949cc-c58e-11e5-aeea-1db9268c0ee9" type="literal">cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.SourceInitializerAspect</object>
-        </predicate>
-        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e35bf2ca-c58e-11e5-aeea-1db9268c0ee9" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
         </predicate>
       </resource>
     </object>

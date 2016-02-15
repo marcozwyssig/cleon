@@ -547,6 +547,18 @@ public class Functions {
     @IDynamicResourceExtension.MethodId("4d143120-be09-11e5-ad6f-979cbb78853e")
     public java.lang.String RenderDocumentContent();
 
+    @IDynamicResourceExtension.MethodId("3562a5b3-d3ef-11e5-9dfc-cf0f3e030023")
+    public java.lang.String CallAsciiDoctorHtml();
+
+    @IDynamicResourceExtension.MethodId("56290020-d3ef-11e5-9dfc-cf0f3e030023")
+    public java.lang.String CallAsciiDoctorPdf();
+
+    @IDynamicResourceExtension.MethodId("17a97aa8-d3f1-11e5-9dfc-cf0f3e030023")
+    public java.lang.String CallConfluenceUpdateCommand();
+
+    @IDynamicResourceExtension.MethodId("2a8582e2-d3f1-11e5-9dfc-cf0f3e030023")
+    public java.lang.String CallConfluenceCreateCommand();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -579,6 +591,15 @@ public class Functions {
     public java.lang.String GetDocumentPath();
 
     @IDynamicResourceExtension.MethodId("4807eeed-c369-11e5-9455-d97b1b986284")
+    public java.lang.String GetAdocFullFileName();
+
+    @IDynamicResourceExtension.MethodId("3d579331-d3ec-11e5-9dfc-cf0f3e030023")
+    public java.lang.String GetFullFileName();
+
+    @IDynamicResourceExtension.MethodId("8f719cd4-d3ef-11e5-9dfc-cf0f3e030023")
+    public java.lang.String GetAdocFileName();
+
+    @IDynamicResourceExtension.MethodId("8eea2770-d3f0-11e5-9dfc-cf0f3e030023")
     public java.lang.String GetFileName();
 
   }
@@ -678,4 +699,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,cM+Z8R9+uF4BFiJSrzQlJAKYFHs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,616NxFDbN3lNveQ8PGudqYFCLeY=] */

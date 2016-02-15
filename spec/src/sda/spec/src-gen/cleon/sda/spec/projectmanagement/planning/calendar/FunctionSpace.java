@@ -65,7 +65,7 @@ public class FunctionSpace {
     public java.lang.String FormattedDate(final cleon.sda.spec.projectmanagement.planning.calendar.javamodel.IDay day) {
       /* Begin Protected Region [[8f42ec9d-c4c4-11e5-8558-4b8affb7767c]] */
     	java.util.Date date = GetDate(day);
-    	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd_EEE");
+    	java.text.SimpleDateFormat dateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd_EEE", java.util.Locale.ENGLISH);
     	return dateFormat.format(date);
       // XXX implement template function here   
       /* End Protected Region   [[8f42ec9d-c4c4-11e5-8558-4b8affb7767c]] */

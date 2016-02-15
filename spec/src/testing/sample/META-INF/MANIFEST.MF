@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: cleon.testing.sample
+Bundle-SymbolicName: cleon.testing.sample.builtin;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Require-Bundle: ch.actifsource.core;bundle-version="6.13.0",
+ ch.actifsource.environment;bundle-version="6.13.0",
+ ch.actifsource.util;bundle-version="6.13.0",
+ cleon.testing.spec.builtin;bundle-version="0.0.1",
+ cleon.doc.template.asciidoc.builtin;bundle-version="0.0.1",
+ cleon.testing.template.asciidoc.builtin;bundle-version="0.0.1",
+ ch.actifsource.generator;bundle-version="6.13.0"
+Export-Package: cleon.testing.sample,cleon.testing.sample.javamodel
+ 

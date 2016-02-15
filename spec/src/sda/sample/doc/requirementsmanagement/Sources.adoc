@@ -13,177 +13,84 @@ Quellen sind vorhanden:
 - Organisation
 - Person
 
-[cols="3,5,20a" options="header"]
+[cols="3,3,3a,5a,5a,10a" options="header"]
 |===
-| *SR-001* 2+| *dddd* (Dokument)
-|
-| _Beschreibung_
-|
-|
-| _Notizen_
-|
-|
-| _Autoren_
-|
-|
-| _Anforderungen_
-|
-|
-| _Ableitungen_
-|
-<<SR-001_Dokument_dddd_SR-002_Kapitel_sadfasdfs>>
+| Art | ID | Name | Vollständiger Name | Autor | Anforderungen 
+| Dokument 
+| SR-001 
+| dddd
+| SR-001_Dokument_dddd
+| 
 
-<<SR-001_Dokument_dddd_SR-003_Kapitel_sss>>
+| 
 
-|
-| _Abstammung_
-|
+| Kapitel 
+| SR-002 
+| sadfasdfs
+| SR-001_Dokument_dddd_SR-002_Kapitel_sadfasdfs
+| 
 
-|
-| _Prinzipien_
-|
-<<PR-002_Principle_B>>
+| 
 
-<<PR-003_Principe_C>>
+| Kapitel 
+| SR-003 
+| sss
+| SR-001_Dokument_dddd_SR-003_Kapitel_sss
+| 
 
+| 
 
-|
-| _Treiber_
-|
+| Workshop 
+| SR-004 
+| sss
+| SR-004_sss
+| 
 
-|
-| _Ziele_
-|
+| 
 
-|
-| _Fragen_
-|
-IS-001_ddd
+| Organisation 
+| SR-005 
+| dddd
+| SR-005_dddd
+| 
 
-IS-003_dsafasdfsf
+| 
 
-|===
-[cols="3,5,20a" options="header"]
-|===
-| *SR-002* 2+| *sadfasdfs* (Kapitel)
-|
-| _Beschreibung_
-|
-|
-| _Notizen_
-|
-|
-| _Autoren_
-|
-|
-| _Anforderungen_
-|
-|
-| _Ableitungen_
-|
-|
-| _Abstammung_
-|
-<<SR-001_Dokument_dddd>>
+| Person 
+| SR-006 
+| ddddd
+| SR-006_ddddd
+| 
 
+| 
 
-|
-| _Prinzipien_
-|
+| Dokument 
+| SR-007 
+| dddd
+| SR-007_Dokument_dddd
+| 
+Pascal Meier
 
-|
-| _Treiber_
-|
+| 
 
-|
-| _Ziele_
-|
+| Kapitel 
+| SR-008 
+| ddd
+| SR-007_Dokument_dddd_SR-008_Kapitel_ddd
+| 
+Patrick Meier
 
-|
-| _Fragen_
-|
-|===
-[cols="3,5,20a" options="header"]
-|===
-| *SR-003* 2+| *sss* (Kapitel)
-|
-| _Beschreibung_
-|
-|
-| _Notizen_
-|
-|
-| _Autoren_
-|
-|
-| _Anforderungen_
-|
-|
-| _Ableitungen_
-|
-|
-| _Abstammung_
-|
-<<SR-001_Dokument_dddd>>
+| 
 
+| Kapitel 
+| SR-009 
+| dfsdfsdf
+| SR-007_Dokument_dddd_SR-009_Kapitel_dfsdfsdf
+| 
 
-|
-| _Prinzipien_
-|
-
-|
-| _Treiber_
-|
-
-|
-| _Ziele_
-|
-
-|
-| _Fragen_
-|
-IS-003_dsafasdfsf
+| 
 
 |===
-[cols="3,5,20a" options="header"]
-|===
-| *SR-004* 2+| *sss* (Workshop)
-|
-| _Beschreibung_
-|
-|
-| _Notizen_
-|
-|
-| _Autoren_
-|
-|
-| _Anforderungen_
-|
-|
-| _Ableitungen_
-|
-|
-| _Abstammung_
-|
-
-|
-| _Prinzipien_
-|
-
-|
-| _Treiber_
-|
-
-|
-| _Ziele_
-|
-
-|
-| _Fragen_
-|
-|===
-
 
 // Begin Protected Region [[ending]]
 

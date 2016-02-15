@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cleon.testing.template.asciidoc.feature"
+      label="cleon.testing.template.asciidoc"
+      version="0.0.1.qualifier">
+
+   <description url="http://www.zwyssig.info/description">
+    No description available
+   </description>
+
+   <copyright url="http://www.zwyssig.info/copyright">
+Cleon Software License Agreement
+NOTICE TO USER: PLEASE READ THIS AGREEMENT CAREFULLY. BY COPYING,
+INSTALLING OR USING ALL OR ANY PORTION OF THE SOFTWARE YOU ACCEPT
+ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT, INCLUDING, IN
+PARTICULAR THE PROVISIONS ON: TRANSFERABILITY IN SECTION 4; WARRANTY
+IN SECTIONS 6 AND 7; LIABILITY IN SECTION 8; CONNECTIVITY AND
+PRIVACY IN SECTION 13; AND SPECIFIC PROVISIONS AND EXCEPTIONS
+IN SECTION 14. YOU AGREE THAT THIS AGREEMENT IS LIKE ANY WRITTEN
+NEGOTIATED AGREEMENT SIGNED BY YOU. THIS AGREEMENT IS ENFORCEABLE
+AGAINST YOU AND ANY LEGAL ENTITY THAT OBTAINED THE SOFTWARE AND
+ON WHOSE BEHALF IT IS USED: FOR EXAMPLE, IF APPLICABLE, YOUR
+EMPLOYER. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT,
+DO NOT USE AND/OR BUY THE SOFTWARE.
+Cleon AND ITS SUPPLIERS OWN ALL INTELLECTUAL PROPERTY IN
+THE SOFTWARE. THE SOFTWARE IS LICENSED, NOT SOLD. Cleon
+PERMITS YOU TO COPY, DOWNLOAD, INSTALL, USE, OR OTHERWISE BENEFIT
+FROM THE FUNCTIONALITY OR INTELLECTUAL PROPERTY OF THE SOFTWARE
+ONLY IN ACCORDANCE WITH THE TERMS OF THIS AGREEMENT. USE OF SOME
+Cleon AND SOME THIRD PARTY MATERIALS AND SERVICES INCLUDED
+IN OR ACCESSED THROUGH THE SOFTWARE MAY BE SUBJECT TO OTHER TERMS
+AND CONDITIONS TYPICALLY FOUND IN A SEPARATE LICENSE AGREEMENT,
+TERMS OF USE OR “READ ME” FILE LOCATED WITHIN OR NEAR SUCH MATERIALS
+AND SERVICES OR AT http://www.zwyssig.info.
+THE SOFTWARE MAY CAUSE YOUR COMPUTER TO AUTOMATICALLY CONNECT
+TO THE INTERNET. SEE SECTIONS 13 AND 14 FOR ADDITIONAL INFORMATION.
+THE SOFTWARE MAY INCLUDE PRODUCT ACTIVATION AND OTHER TECHNOLOGY
+DESIGNED TO PREVENT UNAUTHORIZED USE AND COPYING. THIS TECHNOLOGY
+MAY CAUSE YOUR COMPUTER TO AUTOMATICALLY CONNECT TO THE INTERNET
+AS DESCRIBED IN SECTION 13. ADDITIONALLY, ONCE CONNECTED, THE
+SOFTWARE MAY TRANSMIT YOUR SERIAL NUMBER TO Cleon AND IN
+DOING SO MAY PREVENT USES OF THE SOFTWARE THAT ARE NOT PERMITTED.
+VISIT http://www.Cleon.com FOR ADDITIONAL INFORMATION ABOUT
+PRODUCT ACTIVATION.
+1. Definitions.
+“Cleon” means Zwyssig Informatik GmbH, Seebüelstrasse 38, 8185 Winkel, 
+Switzerland.
+“Computer” means a virtual or physical computer device that accepts
+information in digital or similar form and manipulates it for
+a specific result based on a sequence of instructions.
+“Internal Network” means a private, proprietary network resource
+accessible only by employees and individual contractors (i.e.,
+temporary employees) of a specific corporation or similar business
+entity. Internal Network does not include portions of the Internet
+or any other network community open to the public, such as membership
+or subscription driven groups, associations and similar organizations.
+“Output File” means an output file you create with the Software.
+“Permitted Number” means one (1) unless otherwise indicated under
+a valid license (e.g., volume license) granted by Cleon.
+“Software” means (a) all of the information with which this agreement
+is provided, including but not limited to (i) Cleon or
+third party software files and other computer information; (ii)
+sample files bundled with Cleon software or obtained from
+Cleon through a separate service; (iii) related explanatory
+written materials and files (“Documentation”); and (b) any modified
+versions and copies of, and upgrades, updates and additions to,
+such information, provided to you by Cleon at any time,
+to the extent not provided under a separate agreement (collectively,
+“Updates”).
+2. Software License.
+If you obtained the Software and any required serial number(s)
+from Cleon or one of its authorized licensees and as long
+as you comply with the terms of this agreement, Cleon grants
+you a non-exclusive license to install and use the Software in
+a manner consistent with its design and Documentation and as
+further set forth below. See Section 14 for specific provisions
+related to the use of certain products and components.
+2.1 General Use. You may install and use one copy of the Software
+on up to the Permitted Number of your compatible Computers as
+long as, when required by the Software, you present a valid serial
+number for each copy; and
+2.2 Distribution from Server. You may copy an image of the Software
+onto file server(s) within your Internal Network for the purpose
+of downloading and installing the Software onto Computers within
+the same Internal Network for use as permitted by Section 2.1;
+and
+2.3 Server Use. You may install the Software on Computer file
+server(s) within your Internal Network only for use of the Software
+initiated by an individual from a Computer within the same Internal
+Network as permitted by Section 2.1. The total number of users
+(not the concurrent number of users) able to use the Software
+on such Computer file server(s) may not exceed the Permitted
+Number. By way of example, the foregoing does not permit you
+to install or access (either directly or through commands, data
+or instructions) the Software: (i) from or to a Computer not
+part of your Internal Network, (ii) for enabling web hosted workgroups
+or services available to the public, (iii) by any individual
+or entity to use, download, copy or otherwise benefit from the
+functionality of the Software unless licensed to do so by Cleon,
+(iv) as a component of a system, workflow or service accessible
+by more than the Permitted Number of users, or (v) for operations
+not initiated by an individual user (e.g., automated server processing);
+and
+2.4 Backup Copy. You may make a reasonable number of backup copies
+of the Software, provided your backup copies are not installed
+or used for other than archival purposes.
+2.5 Sample Application Code. You may modify the source code form
+of those portions of such software programs that are identified
+as sample code, sample application code, or components (each,
+“Sample Application Code”) in the accompanying Documentation
+solely for the purposes of designing, developing and testing
+applications developed using Cleon software programs; provided,
+however, you are permitted to copy and distribute the Sample
+Application Code (modified or unmodified) only if all of the
+following conditions are met: (1) you distribute the compiled
+object Sample Application Code with your application; (2) you
+do not include the Sample Application Code in any product or
+application designed for software development; and (3) you do
+not use the Cleon name, logos or other Cleon trademarks
+to market your application. You agree to indemnify, hold harmless
+and defend Cleon from and against any loss, damage, claims
+or lawsuits, including attorney’s fees, that arise or result
+from the use or distribution of your application. You may be
+granted additional rights to modify or distribute Cleon
+software code within documentation relating to such code and/or
+the Software or in a separate agreement between you and Cleon.
+2.6 Tryout Software. The Software, or portions of the Software,
+may be configured to allow trial or tryout for a limited period
+of time or for a limited number of launches. You are not permitted
+to use the Software in a manner inconsistent with its design
+or Documentation. For example, you may not use the Software after
+its tryout period has ended unless you input a valid serial number.
+ACCESS TO ANY OUTPUT FILES CREATED WITH THE SOFTWARE USED ON
+A TRYOUT OR TRIAL BASIS IS ENTIRELY AT YOUR OWN RISK.
+3. Intellectual Property Ownership.
+The Software and any authorized copies that you make are the
+intellectual property of and are owned by Cleon and its
+suppliers. The structure, organization and code of the Software
+are the valuable trade secrets and confidential information of
+Cleon and its suppliers. The Software is protected by law,
+including but not limited to the copyright laws of the Switzerland
+and other countries, and by international treaty provisions.
+Except as expressly stated herein, this agreement does not grant
+you any intellectual property rights in the Software and all
+rights not expressly granted are reserved by Cleon and
+its suppliers.
+4. Restrictions and Requirements.
+4.1 Notices. Any permitted copy of the Software that you make
+must contain the same copyright and other proprietary notices
+that appear on or in the Software.
+4.2 Use Obligations. You agree that you will not use the Software
+other than as permitted by this agreement and that you will not
+use the Software in a manner inconsistent with its design or
+Documentation.
+4.3 No Modifications. Except as permitted in Section 14, you
+may not modify, adapt or translate the Software.
+4.4 No Reverse Engineering. You will not reverse engineer, decompile,
+disassemble or otherwise attempt to discover the source code
+of the Software except to the extent you may be expressly permitted
+under applicable law to decompile only in order to achieve interoperability
+with the Software.
+4.5 No Unbundling. The Software may include various applications,
+utilities and components, may support multiple platforms and
+languages and may be provided to you on multiple media or in
+multiple copies. Nonetheless, the Software is designed and provided
+to you as a single product to be used as a single product on
+Computers as permitted by Sections 2 and 14. You are not required
+to install all component parts of the Software, but you may not
+unbundle the component parts of the Software for use on different
+Computers. You may not unbundle or repackage the Software for
+distribution, transfer or resale. See Section 14 for specific
+exceptions to this Section 4.5.
+4.6 No Transfer. YOU WILL NOT RENT, LEASE, SELL, SUBLICENSE,
+ASSIGN OR TRANSFER YOUR RIGHTS IN THE SOFTWARE, OR AUTHORIZE
+ANY PORTION OF THE SOFTWARE TO BE COPIED ONTO ANOTHER INDIVIDUAL
+OR LEGAL ENTITY’S COMPUTER EXCEPT AS MAY BE EXPRESSLY PERMITTED
+HEREIN. You may, however, permanently transfer all your rights
+to use the Software to another individual or legal entity provided
+that: (a) you also transfer (i) this agreement, (ii) the serial
+number(s), the Software affixed to media provided by Cleon
+or its authorized distributor, and all other software or hardware
+bundled, packaged or pre-installed with the Software, including
+all copies, upgrades, updates and prior versions, to such individual
+or entity; (b) you retain no upgrades, updates or copies, including
+backups and copies stored on a Computer; and (c) the receiving
+party accepts the terms and conditions of this agreement and
+any other terms and conditions under which you purchased a valid
+license to the Software. NOTWITHSTANDING THE FOREGOING, YOU MAY
+NOT TRANSFER EDUCATION, PRERELEASE,
+OR NOT FOR RESALE COPIES OF THE SOFTWARE. Prior to a transfer
+Cleon may require that you and the receiving party confirm
+in writing your compliance with this agreement, provide Cleon
+with information about yourselves, and register as end-users
+of the Software. Allow 4-6 weeks to
+transfer. Please visit http://www.Cleon.com or contact
+Cleon for more information.
+4.7 No Service Bureau. You will not use or offer the Software
+on a service bureau basis. By way of example, you are not allowed
+to offer the Software as a service (SaaS).
+5. Updates.
+If the Software is an upgrade or update to a previous version
+of Cleon software, you must possess a valid license to
+such previous version in order to use such upgrade or update.
+After you install such update or upgrade, you may continue to
+use any such previous version in accordance with its end-user
+license agreement only if (a) the upgrade or update and all previous
+versions are installed on the same Computer, (b) the previous
+versions or copies thereof are not transferred to another party
+or device unless all copies of the update or upgrade are also
+transferred to such party or device and (c) you acknowledge that
+any obligation Cleon may have to support the previous version(s)
+may end upon the availability of the upgrade or update. No other
+use of the previous version(s) is permitted after installation
+of an update or upgrade. Upgrades and updates may be licensed
+to you by Cleon with additional or different terms.
+6. LIMITED WARRANTY.
+Cleon warrants to the individual or entity that first purchases
+a license for the Software for use pursuant to the terms of this
+agreement that the Software will perform substantially in accordance
+with the Documentation for the ninety (90) day period following
+receipt of the Software when used on the recommended operating
+system and hardware configuration. Non-substantial variation
+of performance from the Documentation does not establish a warranty
+right. This limited warranty does not apply to the following,
+which are made available AS-IS and without warranty from Cleon:
+patches, pre-release (beta), trial, starter, evaluation, product
+sampler, and not for resale (NFR) copies of the Software; websites,
+Cleon Online Services; Third Party Online Services; and
+any software made available by Cleon for free via web download
+from an Cleon website. All warranty claims must be made,
+along with proof of purchase, to Cleon within such ninety
+(90) day period. Visit the Cleon website at http://www.Cleon.com
+for more information about warranty claims. If the Software does
+not perform substantially in accordance with the Documentation,
+the entire liability of Cleon and its affiliates and your
+exclusive remedy will be limited to either, at Cleon’s
+option, replacement of the Software or refund of the license
+fee you paid for the Software. THE LIMITED WARRANTY SET FORTH
+IN THIS SECTION GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY HAVE
+ADDITIONAL RIGHTS UNDER LAW WHICH VARY FROM JURISDICTION TO JURISDICTION.
+Cleon DOES NOT SEEK TO LIMIT YOUR WARRANTY RIGHTS TO ANY
+EXTENT NOT PERMITTED BY LAW. Please see Section 14 for jurisdiction-specific
+provisions or contact Cleon.
+7. DISCLAIMER.
+THE FOREGOING LIMITED WARRANTY IS THE ONLY WARRANTY OFFERED BY
+Cleon AND ITS AFFILIATES AND IT STATES THE SOLE AND EXCLUSIVE
+REMEDIES FOR Cleon’S, ITS AFFILIATES’ OR SUPPLIERS’ BREACH
+OF THAT OFFERED WARRANTY. THE FOREGOING OFFERED WARRANTY AND
+ANY STATUTORY WARRANTY AND REMEDY THAT CANNOT BE EXCLUDED OR
+LIMITED UNDER LAW ARE THE ONLY WARRANTIES APPLICABLE TO THE SOFTWARE.
+OTHER THAN THOSE OFFERED AND STATUTORY WARRANTIES AND REMEDIES,
+Cleon, ITS AFFILIATES, SUPPLIERS AND CERTIFICATE AUTHORITIES
+(DEFINED BELOW) DISCLAIM ALL WARRANTIES, CONDITIONS, REPRESENTATIONS
+AND TERMS, EXPRESS OR IMPLIED, WHETHER BY STATUTE, COMMON LAW,
+CUSTOM, USAGE OR OTHERWISE AS TO ANY MATTER, INCLUDING BUT NOT
+LIMITED TO PERFORMANCE, SECURITY, NON-INFRINGEMENT OF THIRD PARTY
+RIGHTS, INTEGRATION, MERCHANTABILITY, QUIET ENJOYMENT, SATISFACTORY
+QUALITY AND FITNESS FOR ANY PARTICULAR PURPOSE. OTHER THAN SUCH
+OFFERED AND STATUTORY WARRANTIES AND REMEDIES, Cleon AND
+ITS SUPPLIERS PROVIDE THE SOFTWARE AND ACCESS TO ANY WEBSITES,
+Cleon OR THIRD PARTY ONLINE SERVICES AND CERTIFICATE AUTHORITY
+SERVICES AS-IS AND WITH ALL FAULTS. THIS DISCLAIMER OF WARRANTY
+MAY NOT BE VALID IN SOME STATES. YOU MAY HAVE ADDITIONAL WARRANTY
+RIGHTS UNDER LAW WHICH MAY NOT BE WAIVED OR DISCLAIMED. Cleon
+DOES NOT SEEK TO LIMIT YOUR WARRANTY RIGHTS TO ANY EXTENT NOT
+PERMITTED BY LAW. The provisions of Sections 7 and Section 8
+will survive the termination of this agreement, howsoever caused,
+but this will not imply or create any continued right to use
+the Software after termination of this agreement.
+8. LIMITATION OF LIABILITY.
+EXCEPT FOR THE EXCLUSIVE REMEDY OFFERED BY Cleon ABOVE
+AND ANY REMEDIES THAT CANNOT BE EXCLUDED OR LIMITED UNDER LAW,
+Cleon, ITS AFFILIATES, SUPPLIERS, OR CERTIFICATE AUTHORITIES
+WILL NOT BE LIABLE TO YOU FOR ANY LOSS, DAMAGES, CLAIMS OR COSTS
+WHATSOEVER INCLUDING ANY CONSEQUENTIAL, INDIRECT OR INCIDENTAL
+DAMAGES, ANY LOST PROFITS OR LOST SAVINGS, ANY DAMAGES RESULTING
+FROM BUSINESS INTERRUPTION, PERSONAL INJURY OR FAILURE TO MEET
+ANY DUTY OF CARE, OR CLAIMS BY A THIRD PARTY, EVEN IF AN Cleon
+REPRESENTATIVE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH LOSS,
+DAMAGES, CLAIMS OR COSTS. IN ANY EVENT, Cleon’S AGGREGATE
+LIABILITY AND THAT OF ITS AFFILIATES, SUPPLIERS, AND CERTIFICATE
+AUTHORITIES UNDER OR IN CONNECTION WITH THIS AGREEMENT WILL BE
+LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. THIS LIMITATION
+WILL APPLY EVEN IN THE EVENT OF A FUNDAMENTAL OR MATERIAL BREACH
+OR A BREACH OF THE FUNDAMENTAL OR MATERIAL TERMS OF THIS AGREEMENT.
+Nothing contained in this agreement limits Cleon’s liability
+to you in the event of death or personal injury resulting from
+Cleon’s negligence or for the tort of deceit (fraud). Cleon
+is acting on behalf of its affiliates, suppliers, and Certificate
+Authorities for the purpose of disclaiming, excluding and limiting
+obligations, warranties and liability, but in no other respects
+and for no other purpose. For further information, contact Cleon.
+THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT
+PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. THIS LIMITATION
+OF LIABILITY MAY NOT BE VALID IN SOME COUNTRIES. YOU MAY HAVE
+RIGHTS THAT CANNOT BE WAIVED UNDER CONSUMER PROTECTION AND OTHER
+LAWS. Cleon DOES NOT SEEK TO LIMIT YOUR WARRANTY OR REMEDIES
+TO ANY EXTENT NOT PERMITTED BY LAW. SEE SECTION 14 FOR JURISDICTION-SPECIFIC
+STATEMENTS.
+9. Export Rules.
+You agree that the Software will not be shipped, transferred
+or exported into any country or used in any manner prohibited
+by the United States Export Administration Act or any other export
+laws, restrictions or regulations (collectively the “Export Laws”).
+In addition, if the Software is identified as an export controlled
+item under the Export Laws, you represent and warrant that you
+are not a citizen of, or located within, an embargoed or otherwise
+restricted nation  and that you are not otherwise prohibited
+under the Export Laws from receiving the Software. All rights
+to use the Software are granted on condition that such rights
+are forfeited if you fail to comply with the terms of this agreement.
+10. Governing Law.
+If you are a consumer who uses the Software for only personal
+non-business purposes, then this agreement will be governed by
+the laws of the state in which you purchased the license to use
+the Software. If you are not such a consumer, this agreement
+will be governed by and construed in accordance with the substantive
+laws in force in SWITZERLAND. The commercial court of the canton
+of Aargau shall have non-exclusive jurisdiction over all disputes
+relating to this agreement. This agreement will not be governed
+by the conflict of law rules of any jurisdiction or the United
+Nations Convention on Contracts for the International Sale of
+Goods, the application of which is expressly excluded.
+11. General Provisions.
+If any part of this agreement is found void and unenforceable,
+it will not affect the validity of the balance of this agreement,
+which will remain valid and enforceable according to its terms
+This agreement may only be modified in writing, signed by an
+authorized officer of Cleon. This is the entire agreement
+between Cleon and you relating to the Software and it supersedes
+any prior representations, discussions, undertakings, communications
+or advertising relating to the Software.
+12. Compliance with Licenses.
+If you are a business, company, or organization, you agree that,
+no more than once every 12 months, Cleon or its authorized
+representative shall, upon 10 days’ prior notice to you, have
+the right to inspect your records, systems, and facilities to
+verify that your use of any and all Cleon software is in
+conformity with your valid licenses from Cleon. If a verification
+discloses that your use is not in conformity with a valid license,
+you shall immediately obtain valid licenses to bring your use
+into conformity.
+13. Internet Connectivity and Privacy.
+13.1 Automatic Connections to the Internet.
+The Software may cause your Computer to automatically connect
+to the Internet and to communicate with an Cleon website
+for purposes that may include providing you with additional information,
+features and functionality. The following provisions apply to
+all automatic Internet connections by the Software:
+13.1.1 When the Software automatically connects to the Internet,
+an Internet protocol address (“IP Address”) that is associated
+with your current Internet connection is sent to an Cleon
+website;
+13.1.2 When the Software automatically connects to the Internet,
+no personally identifiable information is sent except to the
+extent that IP Addresses may be considered personally identifiable
+in some jurisdictions; and
+13.1.3 Whenever the Software makes an Internet connection and
+communicates with an Cleon website, unless you are provided
+with separate terms of use at that time, the Cleon.com
+Terms of Use (http://www.Cleon.com) shall apply. Please
+note that the Cleon Privacy Policy allows tracking of website
+visits and it addresses in detail the topic of tracking and use
+of cookies, web beacons and similar devices.
+13.1.4 The Software may transmit your serial number and your
+e-mail address you used to register your license to Cleon
+and in doing so may prevent uses of the Software that are not
+permitted.
+13.2 Updating. The Software may cause your Computer to automatically
+connect to the Internet to check for Updates that are available
+for automatic download to your Computer and to let Cleon
+know the Software is successfully installed. Please consult the
+Documentation for information about changing default update settings.
+13.4 Use of Cleon Online Services. The Software may use
+your Computer to automatically connect to the Internet to facilitate
+your access to content and services that are provided to you
+by Cleon. Your Software may automatically update downloadable
+materials from these services so as to provide immediate availability
+of these services even when you are offline. Please consult the
+Documentation for information about changing default update settings.
+13.5 Digital Certificates. The Software uses digital certificates
+to help you identify downloaded files (e.g., applications and
+content) and the publishers of those files. Your Computer may
+connect to the Internet at the time of validation of a digital
+certificate.
+14. Specific Provisions and Exceptions.
+This section sets forth specific provisions related to certain
+products and components of the Software as well as limited exceptions
+to the above terms and conditions. To the extent that any provision
+in this section is in conflict with any other term or condition
+in this agreement, this section will supersede such other term
+or condition.
+14.1 No Prejudice, European Union Provisions.
+14.1.1 This agreement will not prejudice the statutory rights
+of any party, including those dealing as consumers. For example,
+for consumers in New Zealand who obtain the Software for personal,
+domestic or household use (not business purposes), this agreement
+is subject to the Consumer Guarantees Act.
+14.1.2 If you obtained the Software in the European Union (EU),
+you usually reside in the EU and you are a consumer (that is
+you use the Software for personal, non-business related purposes),
+then Section 6 does not apply to your purchase and use of the
+Software. Instead, Cleon warrants for a period of 2 years
+from purchase that the Software provides the functionalities
+set forth in the Documentation (the “agreed upon functionalities”)
+when used on the recommended hardware configuration. Non-substantial
+variation from the agreed upon functionalities will not establish
+any warranty rights. THIS WARRANTY DOES NOT APPLY TO SOFTWARE
+THAT YOU REQUEST TO USE ON A PRE-RELEASE, TRYOUT, STARTER, PRODUCT
+SAMPLER BASIS, OR TO FONT SOFTWARE CONVERTED INTO OTHER FORMATS
+OR TO THE EXTENT THE SOFTWARE FAILS TO PERFORM BECAUSE IT HAS
+BEEN ALTERED BY YOU. To make a warranty claim, you must notify
+Cleon during this 2 year period, providing details of proof
+of purchase of the Software. Cleon will verify with you
+whether there is a defect in the Software or advise you that
+the error arises because you have not installed the Software
+correctly (in which case, Cleon shall assist you). If there
+is a defect in the Software, you may request from Cleon
+either a refund or a repaired/replacement copy of the Software.
+Requests must be accompanied by proof of purchase. In the event
+your warranty details are substantiated, Cleon will meet
+your request for repaired/replacement Software, unless it is
+not reasonable for Cleon to do so, in which case Cleon
+will provide you with a refund. For warranty assistance, please
+contact Cleon.
+Please note that the provisions of Section 8 (Limitation of Liability)
+will continue to apply to any damages claims you make in respect
+of your use of the Software. Nonetheless, Cleon shall be
+liable for direct losses that are reasonably foreseeable in the
+event of a breach by Cleon of this agreement. You are advised
+to take all reasonable measures to avoid and reduce damages,
+in particular by making back-up copies of the Software and your
+computer data.
+This agreement, and in particular, this Section 14.1.2, is intended
+to describe your rights (including your statutory rights) in
+the event there should be problems with your use of the Software.
+If your statutory rights should be greater than this description,
+your statutory rights shall apply.
+14.2 Pre-release Software Additional Terms. If the Software is
+pre-commercial release or beta software (“Pre-release Software”),
+then this section applies. The Pre-release Software is a pre-release
+version, does not represent final product from Cleon, and
+may contain bugs, errors and other problems that could cause
+system or other failures and data loss. Cleon may never
+commercially release the Pre-release Software. If you received
+the Pre-release Software pursuant to a separate written agreement
+your use of the Software is also governed by such agreement.
+You will return or destroy all copies of Pre-release Software
+upon request by Cleon or upon Cleon’s commercial
+release of such Software. YOUR USE OF PRE-RELEASE SOFTWARE IS
+AT YOUR OWN RISK. SEE SECTIONS 7 AND 8 FOR WARRANTY DISCLAIMERS
+AND LIABILITY LIMITATIONS WHICH GOVERN PRE-RELEASE SOFTWARE.
+If you have any questions regarding this agreement or if you
+wish to request any information from Cleon please use the
+address and contact information included with this product to
+contact Cleon.
+Cleon is a registered trademark of Cleon in the Switzerland
+and/or other countries. All other trademarks are the property
+of their respective owners.
+   </copyright>
+
+   <license url="http://www.zwyssig.info/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="ch.actifsource.core" version="6.13.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.environment" version="6.13.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.util" version="6.13.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.generator" version="6.13.0" match="greaterOrEqual"/>
+      <import feature="cleon.testing.spec.feature" version="0.0.1.qualifier"/>
+      <import feature="cleon.doc.template.asciidoc.feature" version="0.0.1.qualifier"/>
+   </requires>
+
+   <plugin
+         id="cleon.testing.template.asciidoc.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+         
+</feature>
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,06d52b03-d400-11e5-9dfc-cf0f3e030023,zI/9y4SnHxFv/SN3Z6q4/T/d0+U=] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ee58151b-12a2-11e5-a69e-755a9ac7f617">
+  <owns predicate="9cf91f08-7aec-11e4-a6e2-23d949480f96">
+    <resource statement-guid="b02b67fa-19f3-11e5-a57b-e324953fb3a6" guid="b02b67f7-19f3-11e5-a57b-e324953fb3a6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ee58151d-12a2-11e5-a69e-755a9ac7f617" type="resource" guid="25dd5ea1-7aed-11e4-a6e2-23d949480f96" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f35d7bd0-12a2-11e5-a69e-755a9ac7f617" type="literal">PackageB</object>
+  </predicate>
+  <predicate guid="9cf91f08-7aec-11e4-a6e2-23d949480f96">
+    <object statement-guid="b02b67fa-19f3-11e5-a57b-e324953fb3a6">
+      <resource guid="b02b67f7-19f3-11e5-a57b-e324953fb3a6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b02b67f9-19f3-11e5-a57b-e324953fb3a6" type="resource" guid="c64a4da0-1757-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+        <predicate guid="c64a4da1-1757-11e5-9ca7-d1bb57b73459">
+          <object statement-guid="b103516c-19f3-11e5-a57b-e324953fb3a6" type="resource" guid="b2cd8a1e-19f3-11e5-a57b-e324953fb3a6" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

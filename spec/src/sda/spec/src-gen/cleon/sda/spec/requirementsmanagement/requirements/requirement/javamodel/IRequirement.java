@@ -6,6 +6,8 @@ public interface IRequirement extends cleon.sda.spec.javamodel.IBusinessObjectId
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("54365cab-ff9b-11e4-ac0a-959b440f987f");
   
+  public java.lang.String selectRejectReason();
+  
   // relations
   
   public cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IState selectState();
@@ -22,4 +24,4 @@ public interface IRequirement extends cleon.sda.spec.javamodel.IBusinessObjectId
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,0t95jvxN615XQZTsv/l9zlg/2Q8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,JAZpEY0YZKBPpbPHbxvzPMeTheA=] */

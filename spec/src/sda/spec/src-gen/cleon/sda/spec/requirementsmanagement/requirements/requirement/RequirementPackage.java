@@ -6,7 +6,7 @@ public class RequirementPackage {
   
   public static final Resource Requirement = new Resource("54365cab-ff9b-11e4-ac0a-959b440f987f");
   public static final Resource State = new Resource("db79c858-294d-11e5-b035-b579d7e91534");
-  public static final Resource State_Rejected = new Resource("df323c02-294d-11e5-b035-b579d7e91534");
+  public static final Resource State_Rejected__F___N_Out__S_Of__S_Scope__O_ = new Resource("df323c02-294d-11e5-b035-b579d7e91534");
   public static final Resource State_Identified = new Resource("e10527b6-294d-11e5-b035-b579d7e91534");
   public static final Resource State_Aligned = new Resource("e28fe66b-294d-11e5-b035-b579d7e91534");
   public static final Resource Requirement_state = new Resource("facbf891-294d-11e5-b035-b579d7e91534");
@@ -26,6 +26,11 @@ public class RequirementPackage {
   public static final Resource Requirement_achieves = new Resource("7cc335f5-bf5d-11e5-a56a-35b34376b412");
   public static final Resource Requirement_conflicts = new Resource("87ff08d7-bf5d-11e5-a56a-35b34376b412");
   public static final Resource FunctionSpace_Requirement = new Resource("b3295469-c4f5-11e5-b41d-5d67443850a2");
+  public static final Resource FormalFunctionalRequirement_template = new Resource("568128f5-d560-11e5-89ea-2d8d86e9ef89");
+  public static final Resource Requirement_rejectReason = new Resource("2d1aa2d0-d56d-11e5-89ea-2d8d86e9ef89");
+  public static final Resource NonFunctionalRequirement_template = new Resource("461047f0-d575-11e5-89ea-2d8d86e9ef89");
+  public static final Resource TechnologyRequirement = new Resource("fb6940e0-d57f-11e5-89ea-2d8d86e9ef89");
+  public static final Resource State_Rejected__F___N_Beistellung__O_ = new Resource("0a8de54f-d58b-11e5-89ea-2d8d86e9ef89");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +51,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,1YhtpeSMk6W8glaLxYshJ62e/Ac=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,+KQiZLVF5VS9kOSAECpVPfEgybw=] */

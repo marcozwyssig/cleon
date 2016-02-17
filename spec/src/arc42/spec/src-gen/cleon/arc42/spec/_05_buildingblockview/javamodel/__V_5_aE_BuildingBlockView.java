@@ -92,11 +92,11 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
     
   @Override
   public java.util.List<? extends cleon.arc42.spec.javamodel.IArc42_Section> selectSections() {
-    return _getList(cleon.arc42.spec.javamodel.IArc42_Section.class, cleon.arc42.spec.SpecPackage.arc42_aE_SubDocument_sections);
+    return _getList(cleon.arc42.spec.javamodel.IArc42_Section.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_sections);
   }
 
   public __V_5_aE_BuildingBlockView setSections(java.util.List<? extends cleon.arc42.spec.javamodel.IArc42_Section> sections) {
-    _setList(cleon.arc42.spec.SpecPackage.arc42_aE_SubDocument_sections, sections);
+    _setList(cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_sections, sections);
     return this;
   }
     
@@ -130,7 +130,7 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
     _acceptSingle(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.NoSubDocuments_noDocuments, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
-    _acceptList(cleon.arc42.spec.javamodel.IArc42_Section.class, cleon.arc42.spec.SpecPackage.arc42_aE_SubDocument_sections, visitor);
+    _acceptList(cleon.arc42.spec.javamodel.IArc42_Section.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_sections, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
@@ -141,5 +141,9 @@ public class __V_5_aE_BuildingBlockView extends DynamicResource implements I__V_
     return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_buildingBlocks, object.getResource());
   }
   
+  public static cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView selectToMeSections(cleon.arc42.spec.javamodel.IArc42_Section object) {
+    return _getToMeSingle(object.getRepository(), cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.arc42.spec._05_buildingblockview._05_buildingblockviewPackage.__V_5_aE_BuildingBlockView_sections, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,DQoTG/17PuOiMsU8KH/dfiens8o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,DhK9YC25s1n/Oi80fwXzNh5cWU8=] */

@@ -31,6 +31,15 @@ public class Actifsource_Reference_Architecture extends DynamicResource implemen
   // attributes
   
   @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
   public java.lang.Boolean selectWithToC() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC);
   }
@@ -52,11 +61,11 @@ public class Actifsource_Reference_Architecture extends DynamicResource implemen
   }
     
   @Override
-  public cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview() {
-    return _getSingle(cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview);
+  public cleon.actifsource.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview() {
+    return _getSingle(cleon.actifsource.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview);
   }
 
-  public Actifsource_Reference_Architecture set__V_5_aE_buildingblockview(cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView __V_5_aE_buildingblockview) {
+  public Actifsource_Reference_Architecture set__V_5_aE_buildingblockview(cleon.actifsource.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView __V_5_aE_buildingblockview) {
     _setSingle(cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
     return this;
   }
@@ -175,10 +184,11 @@ public class Actifsource_Reference_Architecture extends DynamicResource implemen
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.arc42.spec._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.arc42.spec.SpecPackage.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
-    _acceptSingle(cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview, visitor);
+    _acceptSingle(cleon.actifsource.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.arc42.spec._07_deployment_view.javamodel.I__V_7_aE_DeploymentView.class, cleon.arc42.spec.SpecPackage.arc42___V_7_aE_deploymentview, visitor);
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
@@ -194,9 +204,9 @@ public class Actifsource_Reference_Architecture extends DynamicResource implemen
 
   // toMeRelations
   
-  public static cleon.actifsource.spec.javamodel.IActifsource_Reference_Architecture selectToMe__V_5_aE_buildingblockview(cleon.arc42.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView object) {
+  public static cleon.actifsource.spec.javamodel.IActifsource_Reference_Architecture selectToMe__V_5_aE_buildingblockview(cleon.actifsource.spec._05_buildingblockview.javamodel.I__V_5_aE_BuildingBlockView object) {
     return _getToMeSingle(object.getRepository(), cleon.actifsource.spec.javamodel.IActifsource_Reference_Architecture.class, cleon.actifsource.spec.SpecPackage.Actifsource_aE_Reference_aE_Architecture___V_5_aE_buildingblockview, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,CbQxYSWvNzo3bmrsMiOiHVXcswI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,UH987ZrdLTJKTU1q1rLXt+Yze7k=] */

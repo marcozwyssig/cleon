@@ -70,11 +70,11 @@ public class ActifsourceProjects extends DynamicResource implements IActifsource
   }
     
   @Override
-  public java.util.List<? extends cleon.actifsource.spec._05_buildingblockview.javamodel.IProjectUseDecomposite> selectDecompose() {
-    return _getList(cleon.actifsource.spec._05_buildingblockview.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose);
+  public java.util.List<? extends cleon.actifsource.spec._05_buildingblockview.feature.plugin.javamodel.IProjectUseDecomposite> selectDecompose() {
+    return _getList(cleon.actifsource.spec._05_buildingblockview.feature.plugin.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose);
   }
 
-  public ActifsourceProjects setDecompose(java.util.List<? extends cleon.actifsource.spec._05_buildingblockview.javamodel.IProjectUseDecomposite> decompose) {
+  public ActifsourceProjects setDecompose(java.util.List<? extends cleon.actifsource.spec._05_buildingblockview.feature.plugin.javamodel.IProjectUseDecomposite> decompose) {
     _setList(cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose, decompose);
     return this;
   }
@@ -118,7 +118,7 @@ public class ActifsourceProjects extends DynamicResource implements IActifsource
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
-    _acceptList(cleon.actifsource.spec._05_buildingblockview.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose, visitor);
+    _acceptList(cleon.actifsource.spec._05_buildingblockview.feature.plugin.javamodel.IProjectUseDecomposite.class, cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -126,9 +126,9 @@ public class ActifsourceProjects extends DynamicResource implements IActifsource
 
   // toMeRelations
   
-  public static cleon.actifsource.spec._05_buildingblockview.javamodel.IActifsourceProjects selectToMeDecompose(cleon.actifsource.spec._05_buildingblockview.javamodel.IProjectUseDecomposite object) {
+  public static cleon.actifsource.spec._05_buildingblockview.javamodel.IActifsourceProjects selectToMeDecompose(cleon.actifsource.spec._05_buildingblockview.feature.plugin.javamodel.IProjectUseDecomposite object) {
     return _getToMeSingle(object.getRepository(), cleon.actifsource.spec._05_buildingblockview.javamodel.IActifsourceProjects.class, cleon.actifsource.spec._05_buildingblockview._05_buildingblockviewPackage.ActifsourceProjects_decompose, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28f43850-e9ba-11e4-848b-0509e3792151,cioyXbA6o0T69eRPwza8jcizbV0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28f43850-e9ba-11e4-848b-0509e3792151,nbPqzHUkc9dGWJLIBIKYCcifS0w=] */

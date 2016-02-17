@@ -75,6 +75,15 @@ public class UserStory extends DynamicResource implements IUserStory {
      _setListAttribute(cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, notes);
   }
 
+  @Override
+  public java.lang.String selectRejectReason() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason);
+  }
+    
+  public void setRejectReason(java.lang.String rejectReason) {
+     _setSingleAttribute(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, rejectReason);
+  }
+
   // relations
   
   @Override
@@ -226,6 +235,7 @@ public class UserStory extends DynamicResource implements IUserStory {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_aggregates, visitor);
@@ -244,4 +254,4 @@ public class UserStory extends DynamicResource implements IUserStory {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,61541f15-a962-11e5-bda2-a7fc3bd7c783,eT+OMJWgiYac7/cj9u+sfKna0tM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,61541f15-a962-11e5-bda2-a7fc3bd7c783,y4oZBWyZnHkoG/FbZH3OtZZ+IHs=] */

@@ -89,7 +89,8 @@ public class State extends DynamicResource implements IState {
     if (isApproved()) return visitor.visitApproved();
     if (isImplemented()) return visitor.visitImplemented();
     if (isFulfilled()) return visitor.visitFulfilled();
-    if (isRejected()) return visitor.visitRejected();
+    if (isRejected__F___N_Out__S_Of__S_Scope__O_()) return visitor.visitRejected__F___N_Out__S_Of__S_Scope__O_();
+    if (isRejected__F___N_Beistellung__O_()) return visitor.visitRejected__F___N_Beistellung__O_();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -115,8 +116,12 @@ public class State extends DynamicResource implements IState {
       visitor.visitFulfilled();
       return;
     }
-    if (isRejected()) {
-      visitor.visitRejected();
+    if (isRejected__F___N_Out__S_Of__S_Scope__O_()) {
+      visitor.visitRejected__F___N_Out__S_Of__S_Scope__O_();
+      return;
+    }
+    if (isRejected__F___N_Beistellung__O_()) {
+      visitor.visitRejected__F___N_Beistellung__O_();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -150,9 +155,14 @@ public class State extends DynamicResource implements IState {
   }
   
   @Override
-  public boolean isRejected() {
-    return getResource().equals(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.State_Rejected);
+  public boolean isRejected__F___N_Out__S_Of__S_Scope__O_() {
+    return getResource().equals(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.State_Rejected__F___N_Out__S_Of__S_Scope__O_);
+  }
+  
+  @Override
+  public boolean isRejected__F___N_Beistellung__O_() {
+    return getResource().equals(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.State_Rejected__F___N_Beistellung__O_);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,g2awgGHHwQGK203v4WVcI/l4Omg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,rf4rWcns0Tb1mKEsZr8BsGhnRe0=] */

@@ -25,6 +25,7 @@ public class ComponentsPackage {
   public static final Resource NamedComponentComposition = new Resource("17c05c68-41b0-11e5-86f2-816f5628b22b");
   public static final Resource NamedComponentWithPackage = new Resource("46835629-41b0-11e5-86f2-816f5628b22b");
   public static final Resource NamedComponent = new Resource("4e84e5d8-41b0-11e5-86f2-816f5628b22b");
+  public static final Resource ComponentCompositionVersionedDependency = new Resource("966d2038-d40f-11e5-8556-8f55ceb91287");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,kCy1kYBYPA5U4oJHfcnFCtWKJ3s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.uml.spec.structural.components,8Jc5AEXzybb8UkmzGLYjhgxqZ6c=] */

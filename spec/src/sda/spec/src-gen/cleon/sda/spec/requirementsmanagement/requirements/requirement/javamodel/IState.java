@@ -18,7 +18,9 @@ public interface IState extends ch.actifsource.core.javamodel.IEnumValue, cleon.
     
     public void visitFulfilled();
     
-    public void visitRejected();
+    public void visitRejected__F___N_Out__S_Of__S_Scope__O_();
+    
+    public void visitRejected__F___N_Beistellung__O_();
     
   }
   
@@ -34,7 +36,9 @@ public interface IState extends ch.actifsource.core.javamodel.IEnumValue, cleon.
     
     public R visitFulfilled();
     
-    public R visitRejected();
+    public R visitRejected__F___N_Out__S_Of__S_Scope__O_();
+    
+    public R visitRejected__F___N_Beistellung__O_();
     
   }
   
@@ -56,9 +60,11 @@ public interface IState extends ch.actifsource.core.javamodel.IEnumValue, cleon.
   
   public boolean isFulfilled();
   
-  public boolean isRejected();
+  public boolean isRejected__F___N_Out__S_Of__S_Scope__O_();
+  
+  public boolean isRejected__F___N_Beistellung__O_();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,5h5PFBZM6A89FKc7i94hB137978=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,ysoQ9ln4oGSeW3STx5jaSaWgYTE=] */

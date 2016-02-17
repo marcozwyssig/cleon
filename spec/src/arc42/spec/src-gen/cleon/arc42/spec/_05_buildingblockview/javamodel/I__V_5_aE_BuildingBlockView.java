@@ -21,6 +21,8 @@ public interface I__V_5_aE_BuildingBlockView extends cleon.arc42.spec.javamodel.
   
   public java.util.List<? extends cleon.arc42.spec._05_buildingblockview.javamodel.IBuildingBlock> selectBuildingBlocks();
   
+  public java.util.List<? extends cleon.arc42.spec.javamodel.IArc42_Section> selectSections();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,I98VKBopMz4Pk4/q0AHzzLBs+QE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,HLd/0+v516qA9ACNieIt2CJefFg=] */

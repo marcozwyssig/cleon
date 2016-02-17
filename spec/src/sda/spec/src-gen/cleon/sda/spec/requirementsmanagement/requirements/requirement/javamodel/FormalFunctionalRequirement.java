@@ -75,6 +75,15 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
      _setListAttribute(cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, notes);
   }
 
+  @Override
+  public java.lang.String selectRejectReason() {
+    return _getSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason);
+  }
+    
+  public void setRejectReason(java.lang.String rejectReason) {
+     _setSingleAttribute(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, rejectReason);
+  }
+
   // relations
   
   @Override
@@ -198,6 +207,16 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
   }
     
   @Override
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate selectTemplate() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.FormalFunctionalRequirement_template);
+  }
+
+  public FormalFunctionalRequirement setTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate template) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.FormalFunctionalRequirement_template, template);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -226,6 +245,7 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
     _acceptSingleAttribute(java.lang.Integer.class, cleon.sda.spec.SpecPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_aggregates, visitor);
@@ -239,9 +259,16 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IState.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_state, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.FormalFunctionalRequirement_template, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IFormalFunctionalRequirement selectToMeTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IFormalFunctionalRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.FormalFunctionalRequirement_template, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,QIqIMCcvytvm8ePzzABQ0lCIsUQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,V0qAQSsgpMKhg74wz3+lvUSKIMo=] */

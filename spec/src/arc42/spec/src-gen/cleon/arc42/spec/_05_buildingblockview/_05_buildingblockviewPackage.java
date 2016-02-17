@@ -24,6 +24,7 @@ public class _05_buildingblockviewPackage {
   public static final Resource DecompositionBuildingBlock_decompose = new Resource("08ab1b23-174d-11e5-9ca7-d1bb57b73459");
   public static final Resource ReferenceOwnDecomposite = new Resource("10095348-175a-11e5-9ca7-d1bb57b73459");
   public static final Resource FunctionSpace_BuildingBlock = new Resource("3c7ee779-44bf-11e5-93ef-c50f9659357a");
+  public static final Resource __V_5_aE_BuildingBlockView_sections = new Resource("50a804a8-d40d-11e5-8556-8f55ceb91287");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +45,4 @@ public class _05_buildingblockviewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,c9LFyuy3sHwu20zNt3iQk92t6jI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.arc42.spec._05_buildingblockview,SZOdmYjVqFuJxJ4ITukfnxuO8Is=] */

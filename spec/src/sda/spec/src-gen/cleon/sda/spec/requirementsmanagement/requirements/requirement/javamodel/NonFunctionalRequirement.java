@@ -13,9 +13,9 @@ public abstract class NonFunctionalRequirement extends DynamicResource implement
   
   // toMeRelations
   
-  public static cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.INonFunctionalRequirement selectToMeTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate object) {
+  public static cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.INonFunctionalRequirement selectToMeTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate object) {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.INonFunctionalRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f864020-a95d-11e5-bda2-a7fc3bd7c783,DVS1Hn2wI6VUqVaSY08zG7+ih3Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f864020-a95d-11e5-bda2-a7fc3bd7c783,xAJJ+pLLYjyIvvcuAPCvbh16TB0=] */

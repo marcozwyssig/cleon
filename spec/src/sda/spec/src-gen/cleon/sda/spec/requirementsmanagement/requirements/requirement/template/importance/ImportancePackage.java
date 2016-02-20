@@ -5,6 +5,8 @@ import ch.actifsource.core.Resource;
 public class ImportancePackage {
   
   public static final Resource Importance = new Resource("1272b404-d55d-11e5-89ea-2d8d86e9ef89");
+  public static final Resource ImportanceAware_importance = new Resource("db833722-d569-11e5-89ea-2d8d86e9ef89");
+  public static final Resource ImportanceAware = new Resource("eb3e8586-d657-11e5-beff-c5494779b7d9");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +27,4 @@ public class ImportancePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance,XjH9H9UH5IbJ69iEonk25+WmBjw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance,B2ge/kIHXKJRuNeAQ8ViM43qCtY=] */

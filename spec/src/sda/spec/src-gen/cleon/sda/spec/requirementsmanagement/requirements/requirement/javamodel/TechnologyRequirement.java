@@ -207,11 +207,11 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate selectTemplate() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate selectTemplate() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template);
   }
 
-  public TechnologyRequirement setTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate template) {
+  public TechnologyRequirement setTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate template) {
     _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, template);
     return this;
   }
@@ -259,10 +259,10 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IState.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_state, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,A1rWZ3uhA5xFV74gIwU0XsQ1g7E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,uTlX62VkTmbHrOi1x+Eu7cOEl7A=] */

@@ -68,6 +68,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IEnvironmentTemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ab6c0c8d-d654-11e5-beff-c5494779b7d9")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface IEnvironmentTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class EnvironmentTemplateFunctionsImpl implements IEnvironmentTemplateFunctionsImpl {
+
+    public static final IEnvironmentTemplateFunctionsImpl INSTANCE = new EnvironmentTemplateFunctionsImpl();
+
+    private EnvironmentTemplateFunctionsImpl() {}
+
+  }
+  
+  public static class EnvironmentTemplateFunctions {
+
+    private EnvironmentTemplateFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b6e93918-d56c-11e5-89ea-2d8d86e9ef89,X+4Zb5IYbGzFz1oF6Oi2sfPR/Pg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b6e93918-d56c-11e5-89ea-2d8d86e9ef89,BIXIHJu6YM7g57eJoZuChlaXNv4=] */

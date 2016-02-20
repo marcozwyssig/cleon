@@ -4,13 +4,13 @@ import ch.actifsource.core.Resource;
 
 public class TemplatePackage {
   
-  public static final Resource Condition = new Resource("b8272a9f-d55c-11e5-89ea-2d8d86e9ef89");
   public static final Resource TemplatePart = new Resource("5f8785eb-d55d-11e5-89ea-2d8d86e9ef89");
-  public static final Resource Template_system = new Resource("b9642ae3-d569-11e5-89ea-2d8d86e9ef89");
-  public static final Resource Template_importance = new Resource("db833722-d569-11e5-89ea-2d8d86e9ef89");
   public static final Resource FunctionSpace_FunctionTemplate = new Resource("b912a839-d56c-11e5-89ea-2d8d86e9ef89");
   public static final Resource Template = new Resource("1b9992b4-d574-11e5-89ea-2d8d86e9ef89");
   public static final Resource FunctionSpace_PropertyTemplate = new Resource("e9ca099d-d575-11e5-89ea-2d8d86e9ef89");
+  public static final Resource NonFunctionalTemplate = new Resource("fa69c989-d651-11e5-beff-c5494779b7d9");
+  public static final Resource FunctionSpace_EnvironmentTemplate = new Resource("7bec63d8-d652-11e5-beff-c5494779b7d9");
+  public static final Resource Template_condition = new Resource("b39a683e-d6df-11e5-a98f-afca63b52e04");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +31,4 @@ public class TemplatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template,kmarwbGkldwsXhZ0U6G4jLHasOw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template,VNpdbizQ53Q7dRlp/KEZ3jicncs=] */

@@ -207,11 +207,11 @@ public class QualityRequirement extends DynamicResource implements IQualityRequi
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate selectTemplate() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate selectTemplate() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template);
   }
 
-  public QualityRequirement setTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate template) {
+  public QualityRequirement setTemplate(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate template) {
     _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, template);
     return this;
   }
@@ -259,10 +259,10 @@ public class QualityRequirement extends DynamicResource implements IQualityRequi
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.OwnDocumentElementComposite_ownDocumentElements, visitor);
     _acceptList(cleon.doc.spec.paragraph.javamodel.IParagraph.class, cleon.doc.spec.paragraph.ParagraphPackage.ParagraphOwnDocumentElementComposite_paragraphes, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IState.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_state, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.property.javamodel.IPropertyTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.NonFunctionalRequirement_template, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.doc.spec.javamodel.IDocumentElement.class, cleon.doc.spec.SpecPackage.UseDocumentElementComposite_useDocumentElements, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,66cfdfc4-a95d-11e5-bda2-a7fc3bd7c783,63n+oq0sHp+4qW78GEK2USlUCEA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,66cfdfc4-a95d-11e5-bda2-a7fc3bd7c783,582WLnZObNZDyTWlmeZrbV0lSj4=] */

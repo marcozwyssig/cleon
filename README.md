@@ -1,6 +1,5 @@
 Cleon.Spec
 ==========
 
-= Hintergrund
-
-== Motivation
+Hintergrund
+=

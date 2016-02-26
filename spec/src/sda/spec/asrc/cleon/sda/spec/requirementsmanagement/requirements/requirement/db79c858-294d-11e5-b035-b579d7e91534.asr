@@ -8,6 +8,7 @@
     <resource statement-guid="8e6c7a46-a95b-11e5-bda2-a7fc3bd7c783" guid="8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="df328a25-294d-11e5-b035-b579d7e91534" guid="df323c02-294d-11e5-b035-b579d7e91534" />
     <resource statement-guid="0a90f293-d58b-11e5-89ea-2d8d86e9ef89" guid="0a8de54f-d58b-11e5-89ea-2d8d86e9ef89" />
+    <resource statement-guid="14a12850-dba9-11e5-9d7b-75e8191f8054" guid="14a08c0d-dba9-11e5-9d7b-75e8191f8054" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db7a167a-294d-11e5-b035-b579d7e91534" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -110,6 +111,19 @@ dass die Anforderung verständlich formuliert und umsetzbar ist.</object>
         </predicate>
         <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
           <object statement-guid="0a8de550-d58b-11e5-89ea-2d8d86e9ef89" type="literal">Die Anforderung wurde abgelehnt/zurückgewiesen.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="14a12850-dba9-11e5-9d7b-75e8191f8054">
+      <resource guid="14a08c0d-dba9-11e5-9d7b-75e8191f8054">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="14a0b31f-dba9-11e5-9d7b-75e8191f8054" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1589b3b6-dba9-11e5-9d7b-75e8191f8054" type="literal">Rejected (QS)</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="19093dab-dba9-11e5-9d7b-75e8191f8054" type="literal">Anforderungen welche die geforderten Qualitätskriterien nicht erfüllen</object>
         </predicate>
       </resource>
     </object>

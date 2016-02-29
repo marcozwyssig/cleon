@@ -93,6 +93,56 @@ public class FunctionSpace {
 
   }
 
+  public static interface IProcessTemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fe1d8c64-debe-11e5-bf7d-117d548070bb")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface IProcessTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProcessTemplateFunctionsImpl implements IProcessTemplateFunctionsImpl {
+
+    public static final IProcessTemplateFunctionsImpl INSTANCE = new ProcessTemplateFunctionsImpl();
+
+    private ProcessTemplateFunctionsImpl() {}
+
+  }
+  
+  public static class ProcessTemplateFunctions {
+
+    private ProcessTemplateFunctions() {}
+
+  }
+
+  public static interface IFunctionalityTypeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c42d7056-debf-11e5-bf7d-117d548070bb")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface IFunctionalityTypeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FunctionalityTypeFunctionsImpl implements IFunctionalityTypeFunctionsImpl {
+
+    public static final IFunctionalityTypeFunctionsImpl INSTANCE = new FunctionalityTypeFunctionsImpl();
+
+    private FunctionalityTypeFunctionsImpl() {}
+
+  }
+  
+  public static class FunctionalityTypeFunctions {
+
+    private FunctionalityTypeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b6e93918-d56c-11e5-89ea-2d8d86e9ef89,BIXIHJu6YM7g57eJoZuChlaXNv4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b6e93918-d56c-11e5-89ea-2d8d86e9ef89,4pIyiXZt4H4PiGGwj08xy1AkrXk=] */

@@ -31,22 +31,22 @@ public class Template extends DynamicResource implements ITemplate {
   // relations
   
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition selectCondition() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition selectCondition() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition);
   }
 
-  public Template setCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition condition) {
+  public Template setCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition condition) {
     _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, condition);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance selectImportance() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance selectImportance() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance);
   }
 
-  public Template setImportance(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance importance) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance, importance);
+  public Template setImportance(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance importance) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance, importance);
     return this;
   }
     
@@ -64,16 +64,16 @@ public class Template extends DynamicResource implements ITemplate {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.ITemplate> selectToMeCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition object) {
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.ITemplate> selectToMeCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.ITemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b9992b4-d574-11e5-89ea-2d8d86e9ef89,259Ap18w/fgw8sVmDvS1SogmK+E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1b9992b4-d574-11e5-89ea-2d8d86e9ef89,0cGR4Cd/b4WjzbFqFZYwdqb29F0=] */

@@ -31,52 +31,52 @@ public class FunctionTemplate extends DynamicResource implements IFunctionTempla
   // relations
   
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition selectCondition() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition selectCondition() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition);
   }
 
-  public FunctionTemplate setCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition condition) {
+  public FunctionTemplate setCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition condition) {
     _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, condition);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.functionalitytype.javamodel.IFunctionalityType selectFunctionalityType() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.functionalitytype.javamodel.IFunctionalityType.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_functionalityType);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType selectFunctionalityType() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType);
   }
 
-  public FunctionTemplate setFunctionalityType(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.functionalitytype.javamodel.IFunctionalityType functionalityType) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_functionalityType, functionalityType);
+  public FunctionTemplate setFunctionalityType(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType functionalityType) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, functionalityType);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance selectImportance() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance selectImportance() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance);
   }
 
-  public FunctionTemplate setImportance(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance importance) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance, importance);
+  public FunctionTemplate setImportance(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance importance) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance, importance);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IObject selectObject() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IObject.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_object);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObject selectObject() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObject.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object);
   }
 
-  public FunctionTemplate setObject(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IObject object) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_object, object);
+  public FunctionTemplate setObject(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObject object) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, object);
     return this;
   }
     
   @Override
-  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IProcess selectProcess() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IProcess.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_process);
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcess selectProcess() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcess.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process);
   }
 
-  public FunctionTemplate setProcess(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IProcess process) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_process, process);
+  public FunctionTemplate setProcess(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcess process) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process, process);
     return this;
   }
     
@@ -94,27 +94,13 @@ public class FunctionTemplate extends DynamicResource implements IFunctionTempla
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.functionalitytype.javamodel.IFunctionalityType.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_functionalityType, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.importance.ImportancePackage.ImportanceAware_importance, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IObject.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_object, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IProcess.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_process, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObject.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcess.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate> selectToMeFunctionalityType(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.functionalitytype.javamodel.IFunctionalityType object) {
-    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_functionalityType, object.getResource());
-  }
-  
-  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate> selectToMeObject(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IObject object) {
-    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_object, object.getResource());
-  }
-  
-  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate> selectToMeProcess(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IProcess object) {
-    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.function.FunctionPackage.FunctionTemplate_process, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec24b51-d560-11e5-89ea-2d8d86e9ef89,qnJIj2cxlhTqRqEpCDhnRljG9eU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec24b51-d560-11e5-89ea-2d8d86e9ef89,MioPIwGjJGrGDWLDS9wREkceN2E=] */

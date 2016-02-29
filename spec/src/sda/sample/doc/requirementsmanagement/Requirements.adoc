@@ -8,13 +8,14 @@
 [cols="2,5,2" options="header, footer"]
 |===
 |Nr | Name | Status
-|RQ-004 | Requirements_1 | Identified
+|RQ-004 | Requirements_1 | Rejected (QS)
 |RQ-007 | Rwar | Identified
 |RQ-005 | Requirements_2 | Identified
 |RQ-006 | Requirements_2.1 | Identified
 |RQ-008 | sss | Identified
 |RQ-009 | ddd | Identified
-|*Total* | 6 |
+|RQ-010 | Constraint | Identified
+|*Total* | 7 |
 |===
 
 <<<<
@@ -35,6 +36,11 @@ include::RQ-008_sss.adoc[]
 <<<<
 // RQ-009_ddd
 include::RQ-009_ddd.adoc[] 
+
+
+<<<<
+// RQ-010_Constraint
+include::RQ-010_Constraint.adoc[] 
 
 
 // Begin Protected Region [[ending]]

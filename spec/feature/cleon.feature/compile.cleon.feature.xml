@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Compile cleon.feature" default="main">
+	<target name="main">
+		<ant antfile="build.xml" dir="../../src/resources/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/xml/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/doc/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/arc42/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/uml/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/testing/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/doc/template/asciidoc" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/testing/template/asciidoc" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/bpmn/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/sdp/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/uml/template/asciidoc" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/sda/spec" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/sda/template/asciidoc" target="build.jars"/>
+		<ant antfile="build.xml" dir="../../src/sda/template/xml" target="build.jars"/>
+	</target>
+</project>

@@ -22,7 +22,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * System gestellt, sondern muss
  * neben der Entwicklung des Systems vom Auftragnehmer realisiert werden.
  */
-public interface IProcessTemplate extends cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.ITemplate, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityTypeAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObjectAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcessAware {
+public interface IProcessTemplate extends cleon.sda.spec.requirementsmanagement.requirements.requirement.template.javamodel.INonFunctionalTemplate, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityTypeAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportanceAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.IConditionAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObjectAware, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.process.javamodel.IProcessAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("3ba6dcf0-debb-11e5-bf7d-117d548070bb");
   
@@ -30,6 +30,8 @@ public interface IProcessTemplate extends cleon.sda.spec.requirementsmanagement.
   
   public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IActor selectActor();
   
+  public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition selectCondition();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,EDvKhtdzkUlVCVoPsm7a7BqQkFo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,zFEX7hQuCbeCrhVhFCbkAhP3NBA=] */

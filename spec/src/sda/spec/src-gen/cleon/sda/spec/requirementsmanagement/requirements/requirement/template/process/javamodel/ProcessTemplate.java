@@ -42,11 +42,11 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
     
   @Override
   public cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition selectCondition() {
-    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition);
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_condition);
   }
 
   public ProcessTemplate setCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition condition) {
-    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, condition);
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_condition, condition);
     return this;
   }
     
@@ -105,7 +105,7 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IActor.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_actor, visitor);
-    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.TemplatePackage.Template_condition, visitor);
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_condition, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.javamodel.IImportance.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.importance.ImportancePackage.ImportanceAware_importance, visitor);
     _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.javamodel.IObject.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
@@ -119,5 +119,9 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
     return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.javamodel.IProcessTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_actor, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.javamodel.IProcessTemplate> selectToMeCondition(cleon.sda.spec.requirementsmanagement.requirements.requirement.template.templatepart.condition.javamodel.ICondition object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.javamodel.IProcessTemplate.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process.ProcessPackage.ProcessTemplate_condition, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,eEvOM7dwEiVg3SsxSq4Iohk2luI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,G2bGKIGDy7uGfywAVXltLSWM8bU=] */

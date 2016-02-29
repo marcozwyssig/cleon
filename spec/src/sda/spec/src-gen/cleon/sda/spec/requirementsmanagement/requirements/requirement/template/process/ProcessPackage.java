@@ -6,6 +6,7 @@ public class ProcessPackage {
   
   public static final Resource ProcessTemplate = new Resource("3ba6dcf0-debb-11e5-bf7d-117d548070bb");
   public static final Resource ProcessTemplate_actor = new Resource("2b26499a-debe-11e5-bf7d-117d548070bb");
+  public static final Resource ProcessTemplate_condition = new Resource("fa6c863a-ded3-11e5-bcfc-4385ab45a525");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class ProcessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process,Oo6RmHAi7O2k8cH56MO4UllIoBE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template.process,Iak6LRT803k1lCpUuaia5Uguc4M=] */

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6af6e4c2-decf-11e5-bcfc-4385ab45a525">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6e3aecd8-decf-11e5-bcfc-4385ab45a525" guid="6e3aecd4-decf-11e5-bcfc-4385ab45a525" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6af6e4c4-decf-11e5-bcfc-4385ab45a525" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6af6e4c5-decf-11e5-bcfc-4385ab45a525" type="literal">MoveToReqDescriptions</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6e3aecd8-decf-11e5-bcfc-4385ab45a525">
+      <resource guid="6e3aecd4-decf-11e5-bcfc-4385ab45a525">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6e3aecd6-decf-11e5-bcfc-4385ab45a525" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="94a5dd2f-ded0-11e5-bcfc-4385ab45a525" type="literal">cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.MoveToReqDescriptions</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6e3aecd7-decf-11e5-bcfc-4385ab45a525" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

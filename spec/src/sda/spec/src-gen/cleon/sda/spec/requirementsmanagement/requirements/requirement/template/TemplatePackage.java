@@ -12,6 +12,8 @@ public class TemplatePackage {
   public static final Resource Template_condition = new Resource("b39a683e-d6df-11e5-a98f-afca63b52e04");
   public static final Resource FunctionSpace_ProcessTemplate = new Resource("f919fa9f-debe-11e5-bf7d-117d548070bb");
   public static final Resource FunctionSpace_FunctionalityType = new Resource("bfcb9cd1-debf-11e5-bf7d-117d548070bb");
+  public static final Resource FunctionSpace_Actor = new Resource("5b45a9f1-e10b-11e5-a737-47ae39ff8e38");
+  public static final Resource FunctionSpace_Capable = new Resource("8518e82b-e10b-11e5-a737-47ae39ff8e38");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +34,4 @@ public class TemplatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template,xfdtpEu5DsNTWe21L6Sp1u9C+DQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement.template,ky7Ebw+lNzGYapZvpxyBmleQUR0=] */

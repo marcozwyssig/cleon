@@ -84,6 +84,15 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
      _setSingleAttribute(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, rejectReason);
   }
 
+  @Override
+  public java.lang.String selectShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName);
+  }
+    
+  public void setShortName(java.lang.String shortName) {
+     _setSingleAttribute(cleon.resources.spec.naming.NamingPackage.ShortName_shortName, shortName);
+  }
+
   // relations
   
   @Override
@@ -256,6 +265,7 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_aggregates, visitor);
@@ -276,4 +286,4 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,s/SiSyfvgi8EGl5PJGEvgFOxypU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,d1p3/U7RHEMHHqOWHn3bIYVPQco=] */

@@ -84,6 +84,15 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
      _setSingleAttribute(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, rejectReason);
   }
 
+  @Override
+  public java.lang.String selectShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName);
+  }
+    
+  public void setShortName(java.lang.String shortName) {
+     _setSingleAttribute(cleon.resources.spec.naming.NamingPackage.ShortName_shortName, shortName);
+  }
+
   // relations
   
   @Override
@@ -266,6 +275,7 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.RequirementsmanagementPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.QualityAspect_affectedRequirements, visitor);
@@ -293,4 +303,4 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0c78c3a9-dbc1-11e5-8b2d-07cd3ff9eacd,oviiw5tTebP06ucjK3NXicI5mNA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0c78c3a9-dbc1-11e5-8b2d-07cd3ff9eacd,uZH/u5vFyCv+2VRxE87QW1IR4k0=] */

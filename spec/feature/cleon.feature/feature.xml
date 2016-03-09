@@ -23,10 +23,13 @@
       <import plugin="ch.actifsource.generator" version="6.13.0" match="greaterOrEqual"/>
       <import plugin="cleon.doc.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
       <import plugin="cleon.bpmn.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
+      <import plugin="cleon.arc42.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
       <import plugin="cleon.sda.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
       <import plugin="cleon.doc.template.asciidoc.builtin" version="0.0.1" match="greaterOrEqual"/>
-      <import plugin="cleon.arc42.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
       <import plugin="cleon.uml.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
+      <import plugin="cleon.testing.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
+      <import plugin="cleon.resources.spec.builtin" version="0.0.1" match="greaterOrEqual"/>
+      <import plugin="cleon.sda.template.asciidoc.builtin" version="0.0.1" match="greaterOrEqual"/>
    </requires>
 
    <plugin

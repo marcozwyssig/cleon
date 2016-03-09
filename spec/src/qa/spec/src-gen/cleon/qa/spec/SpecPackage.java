@@ -1,14 +1,14 @@
-package cleon.qa.spec.acceptancetests;
+package cleon.qa.spec;
 
 import ch.actifsource.core.Resource;
 
-public class AcceptancetestsPackage {
+public class SpecPackage {
   
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
   
-  private AcceptancetestsPackage() {}
+  private SpecPackage() {}
   
   public static final String getScopeName() {
     return "cleon.qa.spec";
@@ -19,8 +19,8 @@ public class AcceptancetestsPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.qa.spec.acceptancetests";
+    return "cleon.qa.spec";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.qa.spec.acceptancetests,A3xtLQkDTMOOpF9E0j/encPd1Kw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.qa.spec,Fbj9+BJD9TJLcZM/dcME1XybB7g=] */

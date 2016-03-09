@@ -12,7 +12,7 @@ public class RequirementPackage {
   public static final Resource Requirement_state = new Resource("facbf891-294d-11e5-b035-b579d7e91534");
   public static final Resource State_Implemented = new Resource("8c08c0ae-a95b-11e5-bda2-a7fc3bd7c783");
   public static final Resource State_Fulfilled = new Resource("8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783");
-  public static final Resource State_Approved = new Resource("9741d4f7-a95b-11e5-bda2-a7fc3bd7c783");
+  public static final Resource State_Approved__F___N_By__F_Supplier__O_ = new Resource("9741d4f7-a95b-11e5-bda2-a7fc3bd7c783");
   public static final Resource Requirement_concretizes = new Resource("09e9fbec-a95d-11e5-bda2-a7fc3bd7c783");
   public static final Resource Requirement_aggregates = new Resource("12626928-a95d-11e5-bda2-a7fc3bd7c783");
   public static final Resource FunctionalRequirement = new Resource("54db77d4-a95d-11e5-bda2-a7fc3bd7c783");
@@ -35,6 +35,7 @@ public class RequirementPackage {
   public static final Resource QualityAspect = new Resource("0c78c3a9-dbc1-11e5-8b2d-07cd3ff9eacd");
   public static final Resource QualityAspect_affectedRequirements = new Resource("402697a5-dbc1-11e5-8b2d-07cd3ff9eacd");
   public static final Resource Requirement_descriptions = new Resource("a1273723-deca-11e5-bcfc-4385ab45a525");
+  public static final Resource State_Approved = new Resource("de4c4f11-e10f-11e5-a737-47ae39ff8e38");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,e4s3ACKwmoXls3NAlctQQVBZEsQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,OOPDmBNa9F+oLinukI/4Dp/i6bI=] */

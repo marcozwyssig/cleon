@@ -86,6 +86,7 @@ public class State extends DynamicResource implements IState {
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isIdentified()) return visitor.visitIdentified();
     if (isAligned()) return visitor.visitAligned();
+    if (isApproved__F___N_By__F_Supplier__O_()) return visitor.visitApproved__F___N_By__F_Supplier__O_();
     if (isApproved()) return visitor.visitApproved();
     if (isImplemented()) return visitor.visitImplemented();
     if (isFulfilled()) return visitor.visitFulfilled();
@@ -103,6 +104,10 @@ public class State extends DynamicResource implements IState {
     }
     if (isAligned()) {
       visitor.visitAligned();
+      return;
+    }
+    if (isApproved__F___N_By__F_Supplier__O_()) {
+      visitor.visitApproved__F___N_By__F_Supplier__O_();
       return;
     }
     if (isApproved()) {
@@ -145,6 +150,11 @@ public class State extends DynamicResource implements IState {
   }
   
   @Override
+  public boolean isApproved__F___N_By__F_Supplier__O_() {
+    return getResource().equals(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.State_Approved__F___N_By__F_Supplier__O_);
+  }
+  
+  @Override
   public boolean isApproved() {
     return getResource().equals(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.State_Approved);
   }
@@ -175,4 +185,4 @@ public class State extends DynamicResource implements IState {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,5y2oioQhHCCcFTIGbAmVTWLR5Fc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,TVHJjJrVK0AOHXBOqiD5yM7lujI=] */

@@ -40,10 +40,10 @@ public class BacklogPackage {
   public static final Resource Priority_Won__M_t__F_have = new Resource("7871348d-c4f3-11e5-b41d-5d67443850a2");
   public static final Resource WorkItem_priority = new Resource("9d70f242-c4f3-11e5-b41d-5d67443850a2");
   public static final Resource WorkItemState = new Resource("b27abc8f-cb92-11e5-b911-69bd21f5af67");
-  public static final Resource WorkItemState_Understand = new Resource("b94be2de-cb92-11e5-b911-69bd21f5af67");
+  public static final Resource WorkItemState_Understanding = new Resource("b94be2de-cb92-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_Input = new Resource("be397b8b-cb92-11e5-b911-69bd21f5af67");
-  public static final Resource WorkItemState_Implement = new Resource("3cadeb3e-cb93-11e5-b911-69bd21f5af67");
-  public static final Resource WorkItemState_Confirm = new Resource("44b6f4d4-cb93-11e5-b911-69bd21f5af67");
+  public static final Resource WorkItemState_Implementing = new Resource("3cadeb3e-cb93-11e5-b911-69bd21f5af67");
+  public static final Resource WorkItemState_Confirming = new Resource("44b6f4d4-cb93-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_Done = new Resource("4e47afda-cb93-11e5-b911-69bd21f5af67");
   public static final Resource WorkItem_state = new Resource("5b2f84f1-cb93-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_ReadyForImplement = new Resource("d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24");
@@ -68,4 +68,4 @@ public class BacklogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,wQm7yCZfC/e1k7ZjwJ09diwr9ns=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,+HM/L8h/noKhG3+GbNFvREcnRBg=] */

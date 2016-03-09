@@ -10,11 +10,11 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
     
     public void visitInput();
     
-    public void visitUnderstand();
+    public void visitUnderstanding();
     
-    public void visitImplement();
+    public void visitImplementing();
     
-    public void visitConfirm();
+    public void visitConfirming();
     
     public void visitDone();
     
@@ -28,11 +28,11 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
     
     public R visitInput();
     
-    public R visitUnderstand();
+    public R visitUnderstanding();
     
-    public R visitImplement();
+    public R visitImplementing();
     
-    public R visitConfirm();
+    public R visitConfirming();
     
     public R visitDone();
     
@@ -52,11 +52,11 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
   
   public boolean isInput();
   
-  public boolean isUnderstand();
+  public boolean isUnderstanding();
   
-  public boolean isImplement();
+  public boolean isImplementing();
   
-  public boolean isConfirm();
+  public boolean isConfirming();
   
   public boolean isDone();
   
@@ -67,4 +67,4 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,TPcVKUb5XOIvKJiSNSFE5QFeWTk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,z5XaecZSqGwOKNxJhuDsppCY3bY=] */

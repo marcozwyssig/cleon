@@ -4,6 +4,7 @@
     <resource statement-guid="e1054ec9-294d-11e5-b035-b579d7e91534" guid="e10527b6-294d-11e5-b035-b579d7e91534" />
     <resource statement-guid="e290348e-294d-11e5-b035-b579d7e91534" guid="e28fe66b-294d-11e5-b035-b579d7e91534" />
     <resource statement-guid="9741d4fa-a95b-11e5-bda2-a7fc3bd7c783" guid="9741d4f7-a95b-11e5-bda2-a7fc3bd7c783" />
+    <resource statement-guid="de4cc445-e10f-11e5-a737-47ae39ff8e38" guid="de4c4f11-e10f-11e5-a737-47ae39ff8e38" />
     <resource statement-guid="8c08c0b1-a95b-11e5-bda2-a7fc3bd7c783" guid="8c08c0ae-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="8e6c7a46-a95b-11e5-bda2-a7fc3bd7c783" guid="8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="df328a25-294d-11e5-b035-b579d7e91534" guid="df323c02-294d-11e5-b035-b579d7e91534" />
@@ -54,10 +55,23 @@ verknüpft.</object>
           <object statement-guid="9741d4f9-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="97893e3b-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Approved</object>
+          <object statement-guid="97893e3b-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Approved (By Supplier)</object>
         </predicate>
         <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="cb2b51df-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde mit dem Lieferanten vereinbart, d.h. der Lieferant hat bestätigt,
+          <object statement-guid="cb2b51df-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde vom Lieferanten geprüft und ist für die Freigabe des Bedarfträger bereit</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="de4cc445-e10f-11e5-a737-47ae39ff8e38">
+      <resource guid="de4c4f11-e10f-11e5-a737-47ae39ff8e38">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de4c4f14-e10f-11e5-a737-47ae39ff8e38" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de4c4f13-e10f-11e5-a737-47ae39ff8e38" type="literal">Approved</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="de4c4f12-e10f-11e5-a737-47ae39ff8e38" type="literal">Die Anforderung wurde mit dem Lieferanten vereinbart, d.h. der Lieferant hat bestätigt,
 dass die Anforderung verständlich formuliert und umsetzbar ist.</object>
         </predicate>
       </resource>

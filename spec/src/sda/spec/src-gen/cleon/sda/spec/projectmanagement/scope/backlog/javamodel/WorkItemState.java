@@ -75,9 +75,9 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isInput()) return visitor.visitInput();
-    if (isUnderstand()) return visitor.visitUnderstand();
-    if (isImplement()) return visitor.visitImplement();
-    if (isConfirm()) return visitor.visitConfirm();
+    if (isUnderstanding()) return visitor.visitUnderstanding();
+    if (isImplementing()) return visitor.visitImplementing();
+    if (isConfirming()) return visitor.visitConfirming();
     if (isDone()) return visitor.visitDone();
     if (isReadyForImplement()) return visitor.visitReadyForImplement();
     if (isReadyForConfirm()) return visitor.visitReadyForConfirm();
@@ -90,16 +90,16 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
       visitor.visitInput();
       return;
     }
-    if (isUnderstand()) {
-      visitor.visitUnderstand();
+    if (isUnderstanding()) {
+      visitor.visitUnderstanding();
       return;
     }
-    if (isImplement()) {
-      visitor.visitImplement();
+    if (isImplementing()) {
+      visitor.visitImplementing();
       return;
     }
-    if (isConfirm()) {
-      visitor.visitConfirm();
+    if (isConfirming()) {
+      visitor.visitConfirming();
       return;
     }
     if (isDone()) {
@@ -125,18 +125,18 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
   }
   
   @Override
-  public boolean isUnderstand() {
-    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Understand);
+  public boolean isUnderstanding() {
+    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Understanding);
   }
   
   @Override
-  public boolean isImplement() {
-    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Implement);
+  public boolean isImplementing() {
+    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Implementing);
   }
   
   @Override
-  public boolean isConfirm() {
-    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Confirm);
+  public boolean isConfirming() {
+    return getResource().equals(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItemState_Confirming);
   }
   
   @Override
@@ -155,4 +155,4 @@ public class WorkItemState extends DynamicResource implements IWorkItemState {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,2vYIGaUx9X6w13pxOmgyJvhXzpo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,lDa1PlUi3LVTDxR7PN5Kc4Smvao=] */

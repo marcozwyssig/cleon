@@ -16,6 +16,8 @@ public interface IIssue extends cleon.sda.spec.javamodel.IBusinessObjectId, ch.a
   
   public cleon.sda.spec.javamodel.IWorkState selectState();
   
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> selectCategory();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,emZqfvR+XoB6+XsIFw+AaPxi50w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,o5STuDFV8FsMyLFIrY13pDPVGjA=] */

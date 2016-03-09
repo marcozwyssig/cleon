@@ -10,6 +10,8 @@ public interface IIssues extends cleon.doc.spec.document.javamodel.ISubDocument,
   
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup> selectIssueGroups();
   
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> selectCategories();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,Iy6bjz15HnuvA4/yadkDeHeaQFQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,EfmzukAeLvc3dh5vrZEw6L63LaE=] */

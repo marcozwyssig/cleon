@@ -1,31 +1,31 @@
-package cleon.sda.spec.requirementsmanagement.requirements.group.javamodel;
+package cleon.sda.spec.requirementsmanagement.issues.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class RequirementGroup extends DynamicResource implements IRequirementGroup {
+public class Category extends DynamicResource implements ICategory {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRequirementGroup> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRequirementGroup>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICategory> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICategory>() {
     
     @Override
-    public IRequirementGroup create() {
-      return new RequirementGroup();
+    public ICategory create() {
+      return new Category();
     }
     
     @Override
-    public IRequirementGroup create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new RequirementGroup(resourceRepository, resource);
+    public ICategory create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Category(resourceRepository, resource);
     }
   
   };
 
-  public RequirementGroup() {
-    super(IRequirementGroup.TYPE_ID);
+  public Category() {
+    super(ICategory.TYPE_ID);
   }
   
-  public RequirementGroup(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IRequirementGroup.TYPE_ID);
+  public Category(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ICategory.TYPE_ID);
   }
 
   // attributes
@@ -46,7 +46,7 @@ public class RequirementGroup extends DynamicResource implements IRequirementGro
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public RequirementGroup setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Category setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -61,4 +61,4 @@ public class RequirementGroup extends DynamicResource implements IRequirementGro
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3da3b4e2-ff9b-11e4-ac0a-959b440f987f,AYBT/WSit88u54bLgySYC0sTVJ0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b72d6e8b-e609-11e5-950a-cb0c4b71716c,Aecjs779BBHLiJb119uZBaBtRlo=] */

@@ -16,6 +16,9 @@ public class IssuesPackage {
   public static final Resource Issues_issueGroups = new Resource("ed6a225c-ce66-11e5-8041-092cb74c72f2");
   public static final Resource IssueAware = new Resource("92cfec9f-decd-11e5-bcfc-4385ab45a525");
   public static final Resource IssueAware_issues = new Resource("9cdd03ab-decd-11e5-bcfc-4385ab45a525");
+  public static final Resource Category = new Resource("b72d6e8b-e609-11e5-950a-cb0c4b71716c");
+  public static final Resource Issues_categories = new Resource("bec3df38-e609-11e5-950a-cb0c4b71716c");
+  public static final Resource Issue_category = new Resource("c4e93554-e609-11e5-950a-cb0c4b71716c");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +39,4 @@ public class IssuesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.issues,b6Oc0w1aTJH8EBNbl6y/ufABz9s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.issues,9Div0jDOlL+fnLTiHZyNloLrqFw=] */

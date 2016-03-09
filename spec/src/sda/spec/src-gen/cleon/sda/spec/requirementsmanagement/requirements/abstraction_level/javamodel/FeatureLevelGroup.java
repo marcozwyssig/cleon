@@ -1,4 +1,4 @@
-package cleon.sda.spec.requirementsmanagement.requirements.group.javamodel;
+package cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -28,17 +28,6 @@ public class FeatureLevelGroup extends DynamicResource implements IFeatureLevelG
     super(resourceRepository, resource, IFeatureLevelGroup.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -54,11 +43,9 @@ public class FeatureLevelGroup extends DynamicResource implements IFeatureLevelG
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d2d83f3-a95c-11e5-bda2-a7fc3bd7c783,Pz7Cmk7TZZgO/Gac2c/azkKsAvE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d2d83f3-a95c-11e5-bda2-a7fc3bd7c783,r5kUSg4PD4fnRlFAxJdAfwOvKzY=] */

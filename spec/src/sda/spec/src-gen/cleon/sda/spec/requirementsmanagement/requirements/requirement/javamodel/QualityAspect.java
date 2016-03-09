@@ -96,6 +96,16 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
   // relations
   
   @Override
+  public cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel selectAbstractionLevel() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel);
+  }
+
+  public QualityAspect setAbstractionLevel(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel abstractionLevel) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel, abstractionLevel);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal> selectAchieves() {
     return _getList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves);
   }
@@ -277,6 +287,7 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.QualityAspect_affectedRequirements, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_aggregates, visitor);
@@ -303,4 +314,4 @@ public class QualityAspect extends DynamicResource implements IQualityAspect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0c78c3a9-dbc1-11e5-8b2d-07cd3ff9eacd,uZH/u5vFyCv+2VRxE87QW1IR4k0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0c78c3a9-dbc1-11e5-8b2d-07cd3ff9eacd,dQl2FYFnMe7SkohRY+kJ0y5RL/U=] */

@@ -24,6 +24,8 @@ public interface IRequirement extends cleon.sda.spec.javamodel.IBusinessObjectId
   
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement> selectConflicts();
   
+  public cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel selectAbstractionLevel();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,wlB9kSMMrwK0DqblyY5zmHLgx/s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,ShO7t8kYGDSRolSLfweG8B8uaEk=] */

@@ -36,6 +36,7 @@ public class RequirementPackage {
   public static final Resource QualityAspect_affectedRequirements = new Resource("402697a5-dbc1-11e5-8b2d-07cd3ff9eacd");
   public static final Resource Requirement_descriptions = new Resource("a1273723-deca-11e5-bcfc-4385ab45a525");
   public static final Resource State_Approved = new Resource("de4c4f11-e10f-11e5-a737-47ae39ff8e38");
+  public static final Resource Requirement_abstractionLevel = new Resource("75647e2c-e5f0-11e5-950a-cb0c4b71716c");
   
   /* Begin Protected Region [[user]] */
   
@@ -56,4 +57,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,OOPDmBNa9F+oLinukI/4Dp/i6bI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.requirementsmanagement.requirements.requirement,VFwqdrmCSpDHfr2XrsTqnK0iLmI=] */

@@ -96,6 +96,16 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   // relations
   
   @Override
+  public cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel selectAbstractionLevel() {
+    return _getSingle(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel);
+  }
+
+  public TechnologyRequirement setAbstractionLevel(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel abstractionLevel) {
+    _setSingle(cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel, abstractionLevel);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal> selectAchieves() {
     return _getList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves);
   }
@@ -267,6 +277,7 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_rejectReason, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.resources.spec.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
+    _acceptSingle(cleon.sda.spec.requirementsmanagement.requirements.abstraction_level.javamodel.IAbstractionLevel.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_abstractionLevel, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.goals.javamodel.IGoal.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage.Requirement_aggregates, visitor);
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
@@ -286,4 +297,4 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,d1p3/U7RHEMHHqOWHn3bIYVPQco=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,l5phqKwKAalSHC6/fxfp9yCLkAw=] */

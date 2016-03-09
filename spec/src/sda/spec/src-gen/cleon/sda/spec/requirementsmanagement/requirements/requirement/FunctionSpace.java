@@ -23,6 +23,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("4e98d118-e609-11e5-950a-cb0c4b71716c")
+    public java.lang.String GetName();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -59,4 +62,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1aaa471-c4f5-11e5-b41d-5d67443850a2,Dh2K539XwZ01cNCu0GiseDfQaZU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b1aaa471-c4f5-11e5-b41d-5d67443850a2,FoJy6x6acNWi5Z/YjXV5ol4xFZE=] */

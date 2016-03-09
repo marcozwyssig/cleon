@@ -97,6 +97,16 @@ public class Issue extends DynamicResource implements IIssue {
   }
     
   @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> selectCategory() {
+    return _getList(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_category);
+  }
+
+  public Issue setCategory(java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> category) {
+    _setList(cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_category, category);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement> selectConcerns() {
     return _getList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_concerns);
   }
@@ -148,6 +158,7 @@ public class Issue extends DynamicResource implements IIssue {
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_resolution, visitor);
     // relations
     _acceptList(cleon.doc.spec.autor.javamodel.IAutor.class, cleon.doc.spec.autor.AutorPackage.Autors_autors, visitor);
+    _acceptList(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_category, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel.IRequirement.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_concerns, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.motivation.sources.javamodel.ISource.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_originatesFromSource, visitor);
     _acceptSingle(cleon.sda.spec.javamodel.IWorkState.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_state, visitor);
@@ -168,5 +179,9 @@ public class Issue extends DynamicResource implements IIssue {
     return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_state, object.getResource());
   }
   
+  public static java.util.List<cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue> selectToMeCategory(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory object) {
+    return _getToMeList(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssue.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issue_category, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,Wq40hEByzgryKoUmbWaNfjMTMrc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d0da468c-bdee-11e5-965a-07bc81ea9ca9,/GMcLbE8vd2/YLlc3cxN2/errVE=] */

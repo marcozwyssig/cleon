@@ -31,6 +31,16 @@ public class Issues extends DynamicResource implements IIssues {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> selectCategories() {
+    return _getList(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_categories);
+  }
+
+  public Issues setCategories(java.util.List<? extends cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory> categories) {
+    _setList(cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_categories, categories);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite> selectChapters() {
     return _getList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters);
   }
@@ -114,6 +124,7 @@ public class Issues extends DynamicResource implements IIssues {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptList(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_categories, visitor);
     _acceptList(cleon.doc.spec.chapter.javamodel.IChapterOwnDocumentElementComposite.class, cleon.doc.spec.chapter.ChapterPackage.ChapterOwnDocumentElementComposite_chapters, visitor);
     _acceptList(cleon.doc.spec.document.javamodel.ISubDocument.class, cleon.doc.spec.document.DocumentPackage.AbstractDocument_documents, visitor);
     _acceptList(cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssueGroup.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups, visitor);
@@ -130,5 +141,9 @@ public class Issues extends DynamicResource implements IIssues {
     return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_issueGroups, object.getResource());
   }
   
+  public static cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues selectToMeCategories(cleon.sda.spec.requirementsmanagement.issues.javamodel.ICategory object) {
+    return _getToMeSingle(object.getRepository(), cleon.sda.spec.requirementsmanagement.issues.javamodel.IIssues.class, cleon.sda.spec.requirementsmanagement.issues.IssuesPackage.Issues_categories, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,aRZ6Wtqpj3GrZXRpBpOqXsZHE4s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb6a044-bdee-11e5-965a-07bc81ea9ca9,Mhcj7MEO6xCWbZqwdGFxdrlSYUY=] */

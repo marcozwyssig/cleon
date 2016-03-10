@@ -2,23 +2,15 @@ package cleon.sda.spec.requirementsmanagement.requirements.requirement.javamodel
 
 import java.util.List;
 
-import cleon.sda.spec.SpecPackage;
-import cleon.sda.spec.requirementsmanagement.requirements.RequirementsPackage;
 import cleon.sda.spec.requirementsmanagement.requirements.requirement.RequirementPackage;
-import ch.actifsource.core.Statement;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
-import ch.actifsource.core.validation.inconsistency.SingleResourceInconsistency;
-import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
-import ch.actifsource.core.validation.inconsistency.ValidationExceptionInconsistency;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
-import ch.actifsource.core.job.Select;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
 import ch.actifsource.core.selector.typesystem.ITypeSystem;
-import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 
-public class RequirementRejectAspect implements IResourceValidationAspect {
+public class RequirementRejectValidationAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext context,

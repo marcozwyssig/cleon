@@ -25,10 +25,6 @@ public abstract class WorkItem extends DynamicResource implements IWorkItem {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, object.getResource());
   }
   
-  public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectToMeEstimate(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort object) {
-    return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, object.getResource());
-  }
-  
   public static java.util.List<cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem> selectToMePriority(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IPriority object) {
     return _getToMeList(object.getRepository(), cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_priority, object.getResource());
   }
@@ -38,4 +34,4 @@ public abstract class WorkItem extends DynamicResource implements IWorkItem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,FJMJ0pEBLQMBgNrgayL+++nifZo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,smLE7Prm3d1IcabmOQlKuANyHkw=] */

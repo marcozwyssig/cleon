@@ -29,7 +29,7 @@ public class BacklogPackage {
   public static final Resource Effort___X_0 = new Resource("69c73b7e-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource Effort___Z_0 = new Resource("6ab80482-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource Effort___W_00 = new Resource("6ba26439-c4d9-11e5-b41d-5d67443850a2");
-  public static final Resource WorkItem_estimate = new Resource("7fd39c45-c4d9-11e5-b41d-5d67443850a2");
+  public static final Resource EffortAware_estimate = new Resource("7fd39c45-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource FunctionSpace_Backlog = new Resource("2e5b33c6-c4e2-11e5-b41d-5d67443850a2");
   public static final Resource FunctionSpace_FeatureGroup = new Resource("2e5b3406-c4e2-11e5-b41d-5d67443850a2");
   public static final Resource Priority = new Resource("43a964fa-c4f3-11e5-b41d-5d67443850a2");
@@ -48,6 +48,7 @@ public class BacklogPackage {
   public static final Resource WorkItem_state = new Resource("5b2f84f1-cb93-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_ReadyForImplement = new Resource("d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24");
   public static final Resource WorkItemState_ReadyForConfirm = new Resource("de1d904b-cbd5-11e5-be6a-5f91e49e8f24");
+  public static final Resource EffortAware = new Resource("a2ffdac0-e6d4-11e5-a502-93f18d5742dc");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +69,4 @@ public class BacklogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,+HM/L8h/noKhG3+GbNFvREcnRBg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.sda.spec.projectmanagement.scope.backlog,IjiowpwpXET8eMsi9CN4AHkQZVg=] */

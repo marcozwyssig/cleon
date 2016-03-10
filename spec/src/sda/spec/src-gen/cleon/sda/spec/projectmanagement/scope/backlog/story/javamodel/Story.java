@@ -89,11 +89,11 @@ public class Story extends DynamicResource implements IStory {
     
   @Override
   public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort selectEstimate() {
-    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate);
+    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate);
   }
 
   public Story setEstimate(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort estimate) {
-    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, estimate);
+    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate, estimate);
     return this;
   }
     
@@ -168,7 +168,7 @@ public class Story extends DynamicResource implements IStory {
     _acceptSingleAttribute(java.lang.String.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_reference, visitor);
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_analysis, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IWorkItem.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_preconditions, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IPriority.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_priority, visitor);
@@ -184,4 +184,4 @@ public class Story extends DynamicResource implements IStory {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,LmYj5yxQlTzR4IezWqntPbeKwZg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,vnzqiRF9N6u5yTKFUutuN3cdR/E=] */

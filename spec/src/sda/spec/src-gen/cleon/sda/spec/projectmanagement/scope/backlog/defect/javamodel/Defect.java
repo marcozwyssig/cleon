@@ -108,11 +108,11 @@ public class Defect extends DynamicResource implements IDefect {
     
   @Override
   public cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort selectEstimate() {
-    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate);
+    return _getSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate);
   }
 
   public Defect setEstimate(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort estimate) {
-    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, estimate);
+    _setSingle(cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate, estimate);
     return this;
   }
     
@@ -219,7 +219,7 @@ public class Defect extends DynamicResource implements IDefect {
     // relations
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IText.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_analysis, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IClassification.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_classification, visitor);
-    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_estimate, visitor);
+    _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.javamodel.IEffort.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.EffortAware_estimate, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_foundBy, visitor);
     _acceptSingle(cleon.sda.spec.projectmanagement.scope.backlog.defect.javamodel.IObservation.class, cleon.sda.spec.projectmanagement.scope.backlog.defect.DefectPackage.Defect_observation, visitor);
     _acceptList(cleon.sda.spec.projectmanagement.resourcemanagement.persons.javamodel.IPerson.class, cleon.sda.spec.projectmanagement.scope.backlog.BacklogPackage.WorkItem_owner, visitor);
@@ -254,4 +254,4 @@ public class Defect extends DynamicResource implements IDefect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,Y0yCbr3MgxFYbpvldWbPFCHr3H4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,kt3M+RUo41psSgKmxOJT4D+qnxo=] */

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f09246ab-f986-11e5-a7fd-010f93305101">
+  <owns predicate="8026bfb6-d40b-11e5-8556-8f55ceb91287">
+    <resource statement-guid="7f09f619-49e0-11e6-becb-7dbce5dc658c" type="resource" guid="7f0959d6-49e0-11e6-becb-7dbce5dc658c" />
+  </owns>
+  <owns predicate="165c7061-d410-11e5-8556-8f55ceb91287">
+    <resource statement-guid="70782a8f-342f-11e7-9486-85e29952984a" type="resource" guid="7077dc6c-342f-11e7-9486-85e29952984a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f0926dbd-f986-11e5-a7fd-010f93305101" type="resource" guid="7b6b4712-f986-11e5-a7fd-010f93305101" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f369f7a2-f986-11e5-a7fd-010f93305101" type="literal">CleonProject</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="8309fb44-49e0-11e6-becb-7dbce5dc658c" type="literal">The System</object>
+  </predicate>
+  <predicate guid="8026bfb6-d40b-11e5-8556-8f55ceb91287">
+    <object statement-guid="7f09f619-49e0-11e6-becb-7dbce5dc658c">
+      <resource guid="7f0959d6-49e0-11e6-becb-7dbce5dc658c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7f0980e8-49e0-11e6-becb-7dbce5dc658c" type="resource" guid="27c04266-3c6a-11e6-aafa-bd565efc0ead" />
+        </predicate>
+        <predicate guid="27c04267-3c6a-11e6-aafa-bd565efc0ead">
+          <object statement-guid="81ad50c5-49e0-11e6-becb-7dbce5dc658c" type="aggregate" guid="9fd5d66e-3c6a-11e6-aafa-bd565efc0ead" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="165c7061-d410-11e5-8556-8f55ceb91287">
+    <object statement-guid="70782a8f-342f-11e7-9486-85e29952984a">
+      <resource guid="7077dc6c-342f-11e7-9486-85e29952984a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7078037e-342f-11e7-9486-85e29952984a" type="resource" guid="2b7fed0c-d40f-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="36611c40-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="715c4903-342f-11e7-9486-85e29952984a" type="literal">0</object>
+        </predicate>
+        <predicate guid="3ca80378-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="7267777a-342f-11e7-9486-85e29952984a" type="literal">1</object>
+        </predicate>
+        <predicate guid="494a6ba2-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="6a32d80c-5fd1-11e7-b63c-c1fa4c8e799e" type="literal">6</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

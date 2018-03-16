@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1b2adef9-8e58-11e7-859f-5dd1441850fb">
+  <owns predicate="7b995437-ad92-11de-8a95-a3426dd7e181">
+    <resource statement-guid="1b2b0620-8e58-11e7-859f-5dd1441850fb" type="resource" guid="1b2adefb-8e58-11e7-859f-5dd1441850fb">
+      <owns predicate="718c4346-ad9a-11de-8a95-a3426dd7e181">
+        <resource statement-guid="1b2b061f-8e58-11e7-859f-5dd1441850fb" type="resource" guid="1b2adefa-8e58-11e7-859f-5dd1441850fb" />
+      </owns>
+    </resource>
+  </owns>
+  <owns predicate="979c9502-ad94-11de-8a95-a3426dd7e181">
+    <resource statement-guid="1b2b0627-8e58-11e7-859f-5dd1441850fb" type="resource" guid="1b2adefd-8e58-11e7-859f-5dd1441850fb">
+      <owns predicate="718c4346-ad9a-11de-8a95-a3426dd7e181">
+        <resource statement-guid="1b2b0626-8e58-11e7-859f-5dd1441850fb" type="resource" guid="1b2adefc-8e58-11e7-859f-5dd1441850fb" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1b2adf01-8e58-11e7-859f-5dd1441850fb" type="resource" guid="33717f21-ad92-11de-8a95-a3426dd7e181" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1b2adf00-8e58-11e7-859f-5dd1441850fb" type="literal">Cmd</object>
+  </predicate>
+  <predicate guid="7b995437-ad92-11de-8a95-a3426dd7e181">
+    <object statement-guid="1b2b0620-8e58-11e7-859f-5dd1441850fb">
+      <resource guid="1b2adefb-8e58-11e7-859f-5dd1441850fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1b2b061b-8e58-11e7-859f-5dd1441850fb" type="resource" guid="6309d0cf-ad9a-11de-8a95-a3426dd7e181" />
+        </predicate>
+        <predicate guid="a1e84e3b-ad92-11de-8a95-a3426dd7e181">
+          <object statement-guid="1b2adf02-8e58-11e7-859f-5dd1441850fb" type="literal">call</object>
+          <object statement-guid="1b2b0613-8e58-11e7-859f-5dd1441850fb" type="literal">cd</object>
+          <object statement-guid="1b2b0614-8e58-11e7-859f-5dd1441850fb" type="literal">echo</object>
+          <object statement-guid="1b2b0615-8e58-11e7-859f-5dd1441850fb" type="literal">goto</object>
+          <object statement-guid="1b2b0616-8e58-11e7-859f-5dd1441850fb" type="literal">@echo</object>
+          <object statement-guid="1b2b0617-8e58-11e7-859f-5dd1441850fb" type="literal">if</object>
+          <object statement-guid="1b2b0618-8e58-11e7-859f-5dd1441850fb" type="literal">rem</object>
+          <object statement-guid="1b2b0619-8e58-11e7-859f-5dd1441850fb" type="literal">pause</object>
+          <object statement-guid="1b2b061a-8e58-11e7-859f-5dd1441850fb" type="literal">chcp</object>
+        </predicate>
+        <predicate guid="718c4346-ad9a-11de-8a95-a3426dd7e181">
+          <object statement-guid="1b2b061f-8e58-11e7-859f-5dd1441850fb">
+            <resource guid="1b2adefa-8e58-11e7-859f-5dd1441850fb">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1b2b061e-8e58-11e7-859f-5dd1441850fb" type="resource" guid="85cd7b2e-ad92-11de-8a95-a3426dd7e181" />
+              </predicate>
+              <predicate guid="15d9dae4-ad93-11de-8a95-a3426dd7e181">
+                <object statement-guid="1b2b061d-8e58-11e7-859f-5dd1441850fb" type="resource" guid="82871fb1-b50d-11df-90a1-39395ed4e68e" />
+              </predicate>
+              <predicate guid="7d75944e-ad9a-11de-8a95-a3426dd7e181">
+                <object statement-guid="1b2b061c-8e58-11e7-859f-5dd1441850fb" type="resource" guid="8b2dd8fa-ad9a-11de-8a95-a3426dd7e181" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="979c9502-ad94-11de-8a95-a3426dd7e181">
+    <object statement-guid="1b2b0627-8e58-11e7-859f-5dd1441850fb">
+      <resource guid="1b2adefd-8e58-11e7-859f-5dd1441850fb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1b2b0622-8e58-11e7-859f-5dd1441850fb" type="resource" guid="b118050c-ad94-11de-8a95-a3426dd7e181" />
+        </predicate>
+        <predicate guid="9becfc12-ad97-11de-8a95-a3426dd7e181">
+          <object statement-guid="1b2b0621-8e58-11e7-859f-5dd1441850fb" type="literal">REM</object>
+        </predicate>
+        <predicate guid="718c4346-ad9a-11de-8a95-a3426dd7e181">
+          <object statement-guid="1b2b0626-8e58-11e7-859f-5dd1441850fb">
+            <resource guid="1b2adefc-8e58-11e7-859f-5dd1441850fb">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1b2b0625-8e58-11e7-859f-5dd1441850fb" type="resource" guid="85cd7b2e-ad92-11de-8a95-a3426dd7e181" />
+              </predicate>
+              <predicate guid="15d9dae4-ad93-11de-8a95-a3426dd7e181">
+                <object statement-guid="1b2b0624-8e58-11e7-859f-5dd1441850fb" type="resource" guid="fd2ce47d-ad9a-11de-8a95-a3426dd7e181" />
+              </predicate>
+              <predicate guid="7d75944e-ad9a-11de-8a95-a3426dd7e181">
+                <object statement-guid="1b2b0623-8e58-11e7-859f-5dd1441850fb" type="resource" guid="8ed472cf-ad9a-11de-8a95-a3426dd7e181" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="939d1b0b-ae7f-11de-a936-d938a011aec1">
+    <object statement-guid="1b2adefe-8e58-11e7-859f-5dd1441850fb" type="literal">cmd</object>
+    <object statement-guid="1b2adeff-8e58-11e7-859f-5dd1441850fb" type="literal">bat</object>
+  </predicate>
+</resource>
+

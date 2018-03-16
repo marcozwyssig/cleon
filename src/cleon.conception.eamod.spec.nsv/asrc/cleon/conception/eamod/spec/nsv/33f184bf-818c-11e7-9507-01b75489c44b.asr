@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="33f184bf-818c-11e7-9507-01b75489c44b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e931aa52-818c-11e7-9507-01b75489c44b" type="resource" guid="e931833e-818c-11e7-9507-01b75489c44b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33f184c1-818c-11e7-9507-01b75489c44b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33f1abd3-818c-11e7-9507-01b75489c44b" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e931aa52-818c-11e7-9507-01b75489c44b">
+      <resource guid="e931833e-818c-11e7-9507-01b75489c44b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e9318340-818c-11e7-9507-01b75489c44b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e931aa51-818c-11e7-9507-01b75489c44b" type="literal">functionFlow</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e931d163-818c-11e7-9507-01b75489c44b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e931d164-818c-11e7-9507-01b75489c44b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="e931d165-818c-11e7-9507-01b75489c44b" type="resource" guid="33f184bf-818c-11e7-9507-01b75489c44b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="33f1abd2-818c-11e7-9507-01b75489c44b" type="literal">Function</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="39b07690-818c-11e7-9507-01b75489c44b" type="literal">Eine Funktion stellt eine von einer funktionalen Ressource (d. h. «System», «Role» und
+«CapabilityConfiguration») erbrachte Aktivität dar. Über die «FunctionFlow»-Beziehung können
+Funktionen in einer NSV-4 als Funktionsabfolge modelliert werden. Falls eine Funktion dabei
+Datenelemente erzeugt oder verändert, so wird dies über die «FunctionsUpon»-Beziehung
+modelliert. Falls Funktionen können an der Ausführung von operationelle Aktivitäten beteiligt
+sein, so wird dies in der NSV-5 über die «ActivityToFunctionMapping»-Beziehung modelliert.
+Funktionen können weiter auch Anforderungen realisieren. Dies kann unter Verwendung der
+«IsRealizedBy»-Beziehung in einer CHRV-3 modelliert werden.</object>
+  </predicate>
+</resource>
+

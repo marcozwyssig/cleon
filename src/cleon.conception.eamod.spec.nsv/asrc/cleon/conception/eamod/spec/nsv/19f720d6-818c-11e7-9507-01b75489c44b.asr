@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="19f720d6-818c-11e7-9507-01b75489c44b">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f720d8-818c-11e7-9507-01b75489c44b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f747ea-818c-11e7-9507-01b75489c44b" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f747e9-818c-11e7-9507-01b75489c44b" type="literal">CapabilityConfiguration</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="1eaedcae-818c-11e7-9507-01b75489c44b" type="literal">Eine Fähigkeitskonfiguration stellt eine Gruppierung von funktionalen und/oder organisatorischen
+Ressourcen dar, die gemeinsam Fähigkeiten ermöglichen können. Diese funktionalen Ressourcen
+können typischerweise aus Systemen, Rollen und weiteren Fähigkeitskonfigurationen bestehen.
+Eine Fähigkeitskonfiguration kann auch die Realisierung für einen Knoten (aus NOV-2) darstellen.
+In diesen Fall sind Fähigkeitskonfiguration und Knoten über die «NodeRealisation»-Beziehung
+miteinander zu verbinden.</object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f5d2463d-210d-11e8-9bf6-d910b575bad9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="074e49f7-210e-11e8-9bf6-d910b575bad9" type="resource" guid="a1fdcb55-bc87-11e6-b169-a12bde5a1c7c" />
+  </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="76e50787-210e-11e8-9bf6-d910b575bad9" type="resource" guid="76e49253-210e-11e8-9bf6-d910b575bad9">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="78db5962-210e-11e8-9bf6-d910b575bad9" type="resource" guid="78db324f-210e-11e8-9bf6-d910b575bad9">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="78dc91ec-210e-11e8-9bf6-d910b575bad9" type="resource" guid="78dc6ad8-210e-11e8-9bf6-d910b575bad9" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f5d26d4f-210d-11e8-9bf6-d910b575bad9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9e44b8b2-210f-11e8-9bf6-d910b575bad9" type="resource" guid="8d4d4ef7-210f-11e8-9bf6-d910b575bad9" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="074e49f7-210e-11e8-9bf6-d910b575bad9">
+      <resource guid="a1fdcb55-bc87-11e6-b169-a12bde5a1c7c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1fdf267-bc87-11e6-b169-a12bde5a1c7c" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1fdf26a-bc87-11e6-b169-a12bde5a1c7c" type="literal">projectGoals</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a1fe408e-bc87-11e6-b169-a12bde5a1c7c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a1fe679f-bc87-11e6-b169-a12bde5a1c7c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a1feb5c3-bc87-11e6-b169-a12bde5a1c7c" type="resource" guid="e8f93e21-210d-11e8-9bf6-d910b575bad9" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="c5bbdf9b-210f-11e8-9bf6-d910b575bad9" type="resource" guid="b72325be-210f-11e8-9bf6-d910b575bad9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f5d29460-210d-11e8-9bf6-d910b575bad9" type="literal">ProjectGoals</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="76e50787-210e-11e8-9bf6-d910b575bad9">
+      <resource guid="76e49253-210e-11e8-9bf6-d910b575bad9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="76e4b965-210e-11e8-9bf6-d910b575bad9" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="76e4e076-210e-11e8-9bf6-d910b575bad9" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="78db5962-210e-11e8-9bf6-d910b575bad9">
+            <resource guid="78db324f-210e-11e8-9bf6-d910b575bad9">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="78db3251-210e-11e8-9bf6-d910b575bad9" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="78dc91ec-210e-11e8-9bf6-d910b575bad9">
+                  <resource guid="78dc6ad8-210e-11e8-9bf6-d910b575bad9">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="78dc6ada-210e-11e8-9bf6-d910b575bad9" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="78dc91eb-210e-11e8-9bf6-d910b575bad9" type="literal">ProjectZiele</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bfe3e988-2f07-11e6-8bd9-a77b8d2a3a0e">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="c1494694-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="c1491f81-2f07-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="c404202c-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="c403f919-2f07-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="ca3cfe16-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="ca3cd703-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bfe4109a-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bfe437ab-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Quality</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="c1494694-2f07-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="c1491f81-2f07-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c1491f83-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3748ab1-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">QUAL</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="d684e98f-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Qualität</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c404202c-2f07-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="c403f919-2f07-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c403f91b-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c996abf2-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">CUSREL</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="dacd8f70-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Customer Relationship</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="ca3cfe16-2f07-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="ca3cd703-2f07-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ca3cfe15-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb8cfdb7-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">BID</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="e1543e9f-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Bid</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="93ef0a2d-bc84-11e6-b169-a12bde5a1c7c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="b1dceed3-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="b1dc799f-bc84-11e6-b169-a12bde5a1c7c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="93ef313f-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="93ef5851-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b1dceed3-bc84-11e6-b169-a12bde5a1c7c">
+      <resource guid="b1dc799f-bc84-11e6-b169-a12bde5a1c7c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1dc79a1-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1dca0b2-bc84-11e6-b169-a12bde5a1c7c" type="literal">activityMapsToCapability</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="b1dd8b15-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="b1dd8b16-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="b1ddb227-bc84-11e6-b169-a12bde5a1c7c" type="resource" guid="6c58e62c-bc80-11e6-beb6-85da12323ce9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="93ef3140-bc84-11e6-b169-a12bde5a1c7c" type="literal">OperationalActivity</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="9aa3cda1-bc84-11e6-b169-a12bde5a1c7c" type="literal">Stellt eine Tätigkeit oder einen Prozess dar
+welche durch einen oder mehrere Knoten
+ausgeführt wird und bei der Realisierung von
+Fähigkeiten unterstützt.</object>
+  </predicate>
+</resource>
+

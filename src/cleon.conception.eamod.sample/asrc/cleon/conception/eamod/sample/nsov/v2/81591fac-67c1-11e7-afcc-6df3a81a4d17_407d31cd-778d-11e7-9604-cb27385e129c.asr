@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="407d31cd-778d-11e7-9604-cb27385e129c">
+  <owns predicate="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <resource statement-guid="138d2d28-778e-11e7-9604-cb27385e129c" type="resource" guid="138cdf05-778e-11e7-9604-cb27385e129c" />
+    <resource statement-guid="4cd1f93c-778e-11e7-9604-cb27385e129c" type="resource" guid="4cd18409-778e-11e7-9604-cb27385e129c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="407d58df-778d-11e7-9604-cb27385e129c" type="resource" guid="c2b426c5-67bf-11e7-afcc-6df3a81a4d17" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="412e80d3-778d-11e7-9604-cb27385e129c" type="literal">Sub_Group_3</object>
+  </predicate>
+  <predicate guid="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <object statement-guid="138d2d28-778e-11e7-9604-cb27385e129c">
+      <resource guid="138cdf05-778e-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="138d0617-778e-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="141c4dab-778e-11e7-9604-cb27385e129c" type="literal">Sub_Group_3_Varia_1</object>
+        </predicate>
+        <predicate guid="2d06fa62-778f-11e7-9604-cb27385e129c">
+          <object statement-guid="64f4e939-778f-11e7-9604-cb27385e129c" type="resource" guid="336b3f4e-778d-11e7-9604-cb27385e129c" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4cd1f93c-778e-11e7-9604-cb27385e129c">
+      <resource guid="4cd18409-778e-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4cd1840a-778e-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4cd1840b-778e-11e7-9604-cb27385e129c" type="literal">Sub_Group_3_Varia_2</object>
+        </predicate>
+        <predicate guid="2d06fa62-778f-11e7-9604-cb27385e129c">
+          <object statement-guid="7484d32a-778f-11e7-9604-cb27385e129c" type="resource" guid="336b3f4e-778d-11e7-9604-cb27385e129c" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="262dfe2a-689a-11e7-9be5-6dfce969ae4e">
+    <object statement-guid="f2c0dfc4-778d-11e7-9604-cb27385e129c" type="resource" guid="6db59b12-689a-11e7-9be5-6dfce969ae4e" />
+  </predicate>
+</resource>
+

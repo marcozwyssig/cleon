@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bef90829-2d6f-11e6-959f-d1cef44ff5fd">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="c3c73ffe-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="c3c6f1da-2d74-11e6-959f-d1cef44ff5fd">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="c4729b32-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="c472741f-2d74-11e6-959f-d1cef44ff5fd">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="c473facc-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="c473aca8-2d74-11e6-959f-d1cef44ff5fd" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bef9082c-2d6f-11e6-959f-d1cef44ff5fd" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bef9082b-2d6f-11e6-959f-d1cef44ff5fd" type="resource" guid="37b55799-ffcc-11e4-ac0a-959b440f987f" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bef9082a-2d6f-11e6-959f-d1cef44ff5fd" type="literal">05_SolutionBuildingBlockView</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c3c73ffe-2d74-11e6-959f-d1cef44ff5fd">
+      <resource guid="c3c6f1da-2d74-11e6-959f-d1cef44ff5fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3c718ec-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="c3c718ed-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="c4729b32-2d74-11e6-959f-d1cef44ff5fd">
+            <resource guid="c472741f-2d74-11e6-959f-d1cef44ff5fd">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c4727421-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="c473facc-2d74-11e6-959f-d1cef44ff5fd">
+                  <resource guid="c473aca8-2d74-11e6-959f-d1cef44ff5fd">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="c473acaa-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="c473d3bb-2d74-11e6-959f-d1cef44ff5fd" type="literal">Technologiebausteinsicht</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c00c2e44-37b9-11e6-ba0a-8d94de7675ef">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="3b77081f-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="3b75f6ac-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="3ff7d557-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="3ff7ae44-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="447965dd-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="44793eca-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="49dca3d3-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="49dc7cc0-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="50094c49-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="50092536-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="57d39f2f-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="57d3781c-37ba-11e6-ba0a-8d94de7675ef" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c00c2e46-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c00c2e45-37b9-11e6-ba0a-8d94de7675ef" type="literal">Planning</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="3b77081f-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="3b75f6ac-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3b76b9fe-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3d0a7962-37ba-11e6-ba0a-8d94de7675ef" type="literal">PLA</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="3eadf033-37ba-11e6-ba0a-8d94de7675ef" type="literal">Termine</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3ff7d557-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="3ff7ae44-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3ff7d556-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="417b19f8-37ba-11e6-ba0a-8d94de7675ef" type="literal">DLV</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="4233bb99-37ba-11e6-ba0a-8d94de7675ef" type="literal">Deliverables</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="447965dd-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="44793eca-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="447965dc-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4588b2fe-37ba-11e6-ba0a-8d94de7675ef" type="literal">TRANS</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="485196ff-37ba-11e6-ba0a-8d94de7675ef" type="literal">Transition</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="49dca3d3-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="49dc7cc0-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="49dc7cc2-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4b894264-37ba-11e6-ba0a-8d94de7675ef" type="literal">CONTM</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="4d378ea5-37ba-11e6-ba0a-8d94de7675ef" type="literal">Contract Management</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="50094c49-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="50092536-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="50092538-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="514fd60a-37ba-11e6-ba0a-8d94de7675ef" type="literal">DUEDIL</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="537fd56b-37ba-11e6-ba0a-8d94de7675ef" type="literal">Due Diligence</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="57d39f2f-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="57d3781c-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="57d3781e-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="582bf860-37ba-11e6-ba0a-8d94de7675ef" type="literal">ACC</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="59ab4561-37ba-11e6-ba0a-8d94de7675ef" type="literal">Acceptance</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

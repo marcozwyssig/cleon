@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Actifsource_Documentation</title>
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="navigation">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="index.html">Actifsource_Documentation</a>
+                <ul>
+                  <li><a href="03_System_Scope_and_Context.html">03_System_Scope_and_Context</a>
+                      <ul>
+                      </ul></li>
+                  <li><a href="05_BuildingBlockView.html">05_BuildingBlockView</a>
+                      <ul>
+                        <li><a href="buildingblock.html">buildingblock</a>
+                            <ul>
+                            </ul></li>
+                      </ul></li>
+                </ul></li>
+          </ul>
+        </td>
+        <td id="main">
+          <h1>buildingblock</h1>
+          <div>
+            <svg width="8" height="8"
+             viewBox="0.00 0.00 8.00 8.00">
+            <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4)">
+            <title>Design_05_buildingblockview</title>
+            <polygon fill="white" stroke="none" points="-4,4 -4,-4 4,-4 4,4 -4,4"/>
+            <!-- 05 -->
+            <g id="node1" class="node"><title>05</title>
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">05</text>
+            </g>
+            <!-- _BuildingBlockView -->
+            <g id="node2" class="node"><title>_BuildingBlockView</title>
+            <g id="a_node2"><a xlink:href="#05_BuildingBlockView" xlink:title="05_BuildingBlockView">
+            <polygon fill="darkorange" stroke="black" points="-72.5,18 -72.5,-18 72.5,-18 72.5,18 -72.5,18"/>
+            <text text-anchor="middle" x="0" y="3.7">05_BuildingBlockView</text>
+            </a>
+            </g>
+            </g>
+            <!-- Zoo -->
+            <g id="node3" class="node"><title>Zoo</title>
+            <g id="a_node3"><a xlink:href="#Zoo" xlink:title="Zoo">
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">Zoo</text>
+            </a>
+            </g>
+            </g>
+            <!-- CategoryAggregateDecomposite -->
+            <g id="node6" class="node"><title>CategoryAggregateDecomposite</title>
+            <g id="a_node6"><a xlink:href="#CategoryAggregateDecomposite" xlink:title="CategoryAggregateDecomposite">
+            <polygon fill="darkorange" stroke="black" points="-99,18 -99,-18 99,-18 99,18 -99,18"/>
+            <text text-anchor="middle" x="0" y="3.7">CategoryAggregateDecomposite</text>
+            </a>
+            </g>
+            </g>
+            <!-- Zoo&#45;&gt;CategoryAggregateDecomposite -->
+            <g id="edge1" class="edge"><title>Zoo&#45;&gt;CategoryAggregateDecomposite</title>
+            </g>
+            <!-- FeatureAggregateDecomposite -->
+            <g id="node4" class="node"><title>FeatureAggregateDecomposite</title>
+            <g id="a_node4"><a xlink:href="#FeatureAggregateDecomposite" xlink:title="FeatureAggregateDecomposite">
+            <polygon fill="darkorange" stroke="black" points="-94,18 -94,-18 94,-18 94,18 -94,18"/>
+            <text text-anchor="middle" x="0" y="3.7">FeatureAggregateDecomposite</text>
+            </a>
+            </g>
+            </g>
+            <!-- Category -->
+            <g id="node5" class="node"><title>Category</title>
+            <g id="a_node5"><a xlink:href="#Category" xlink:title="Category">
+            <polygon fill="darkorange" stroke="black" points="-34,18 -34,-18 34,-18 34,18 -34,18"/>
+            <text text-anchor="middle" x="0" y="3.7">Category</text>
+            </a>
+            </g>
+            </g>
+            <!-- Category&#45;&gt;FeatureAggregateDecomposite -->
+            <g id="edge2" class="edge"><title>Category&#45;&gt;FeatureAggregateDecomposite</title>
+            </g>
+            <!-- CategoryAggregateDecomposite&#45;&gt;Category -->
+            <g id="edge3" class="edge"><title>CategoryAggregateDecomposite&#45;&gt;Category</title>
+            </g>
+            </g>
+            </svg>
+            
+          </div>
+          <div>
+            <table class="box-table-a">          
+              <tr id="05_BuildingBlockView">
+                <th colspan="2"><pre>class <b>05_BuildingBlockView</b> extends <b>05_BuildingBlockView</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="Zoo">
+                <th colspan="2"><pre>class <b>Zoo</b> extends <b>SoftwareSystem</b>, <b>SemanticVersionAware</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Referring Chapters</b><br>
+                  &bull; <a href="03_System_Scope_and_Context.html">03_System_Scope_and_Context</a><br>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>hasDependency</b> : Dependency[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>version</b> : SemanticVersion[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>categories</b> : <a href="#CategoryAggregateDecomposite">CategoryAggregateDecomposite</a>[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="FeatureAggregateDecomposite">
+                <th colspan="2"><pre>class <b>FeatureAggregateDecomposite</b> extends <b>ComponentCompositionDecomposite</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>into</b> : AbstractComponent[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>into</b> : Feature[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="Category">
+                <th colspan="2"><pre>class <b>Category</b> extends <b>NamedComponentComposition</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>hasDependency</b> : CategoryDependency[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>features</b> : <a href="#FeatureAggregateDecomposite">FeatureAggregateDecomposite</a>[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="CategoryAggregateDecomposite">
+                <th colspan="2"><pre>class <b>CategoryAggregateDecomposite</b> extends <b>ComponentCompositionDecomposite</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>into</b> : AbstractComponent[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>into</b> : <a href="#Category">Category</a>[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Actifsource ID=[095dd504-00ed-11e3-adfe-0f7600b4598f,479ae5c0-5b59-11e7-9702-abdab196c2a1,d700304c-5b59-11e7-9702-abdab196c2a1,PETG6bRoqDLyP9wbMIZVWkYA4jg=] -->

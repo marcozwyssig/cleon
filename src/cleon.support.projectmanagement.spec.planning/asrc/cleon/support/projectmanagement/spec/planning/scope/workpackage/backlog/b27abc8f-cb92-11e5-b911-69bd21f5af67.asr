@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="be397b8e-cb92-11e5-b911-69bd21f5af67" type="resource" guid="be397b8b-cb92-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="b94be2e1-cb92-11e5-b911-69bd21f5af67" type="resource" guid="b94be2de-cb92-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="3cadeb41-cb93-11e5-b911-69bd21f5af67" type="resource" guid="3cadeb3e-cb93-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="44b71be7-cb93-11e5-b911-69bd21f5af67" type="resource" guid="44b6f4d4-cb93-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="4e47d6ed-cb93-11e5-b911-69bd21f5af67" type="resource" guid="4e47afda-cb93-11e5-b911-69bd21f5af67" />
+    <resource statement-guid="d8c1cc69-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24" />
+    <resource statement-guid="de1d904e-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="de1d904b-cbd5-11e5-be6a-5f91e49e8f24" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b27abc91-cb92-11e5-b911-69bd21f5af67" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b27abc93-cb92-11e5-b911-69bd21f5af67" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="2a048b39-cb93-11e5-b911-69bd21f5af67" type="resource" guid="d2e41148-feae-11de-b623-05edcc99ed4a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b27abc92-cb92-11e5-b911-69bd21f5af67" type="literal">WorkItemState</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="be397b8e-cb92-11e5-b911-69bd21f5af67">
+      <resource guid="be397b8b-cb92-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="be397b8d-cb92-11e5-b911-69bd21f5af67" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="211f04bb-cb93-11e5-b911-69bd21f5af67" type="literal">Input</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="2cbc0a4c-cb93-11e5-b911-69bd21f5af67" type="literal">Eingang eines WorkItems</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b94be2e1-cb92-11e5-b911-69bd21f5af67">
+      <resource guid="b94be2de-cb92-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b94be2e0-cb92-11e5-b911-69bd21f5af67" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bb4f7b3e-cb92-11e5-b911-69bd21f5af67" type="literal">Understanding</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="38b1904d-cb93-11e5-b911-69bd21f5af67" type="literal">Analysieren des WorkItems</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3cadeb41-cb93-11e5-b911-69bd21f5af67">
+      <resource guid="3cadeb3e-cb93-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3cadeb40-cb93-11e5-b911-69bd21f5af67" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3fab25b2-cb93-11e5-b911-69bd21f5af67" type="literal">Implementing</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="41d1fd53-cb93-11e5-b911-69bd21f5af67" type="literal">Implementieren des WorkItems</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="44b71be7-cb93-11e5-b911-69bd21f5af67">
+      <resource guid="44b6f4d4-cb93-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="44b6f4d6-cb93-11e5-b911-69bd21f5af67" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="47503d58-cb93-11e5-b911-69bd21f5af67" type="literal">Confirming</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="4830d959-cb93-11e5-b911-69bd21f5af67" type="literal">Verifizieren des WorkItems</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4e47d6ed-cb93-11e5-b911-69bd21f5af67">
+      <resource guid="4e47afda-cb93-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4e47d6ec-cb93-11e5-b911-69bd21f5af67" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4eb083ce-cb93-11e5-b911-69bd21f5af67" type="literal">Done</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="50bea34f-cb93-11e5-b911-69bd21f5af67" type="literal">WorkItem ist erledigt</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d8c1cc69-cbd5-11e5-be6a-5f91e49e8f24">
+      <resource guid="d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d8c1cc68-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d947c54a-cbd5-11e5-be6a-5f91e49e8f24" type="literal">ReadyForImplement</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="e2478af0-cbd5-11e5-be6a-5f91e49e8f24" type="literal">Workitem ist bereit für die Implementation</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="de1d904e-cbd5-11e5-be6a-5f91e49e8f24">
+      <resource guid="de1d904b-cbd5-11e5-be6a-5f91e49e8f24">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de1d904d-cbd5-11e5-be6a-5f91e49e8f24" type="resource" guid="b27abc8f-cb92-11e5-b911-69bd21f5af67" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="decce31f-cbd5-11e5-be6a-5f91e49e8f24" type="literal">ReadyForConfirm</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="e9d65b71-cbd5-11e5-be6a-5f91e49e8f24" type="literal">WorkItem ist bereit zum Testen</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

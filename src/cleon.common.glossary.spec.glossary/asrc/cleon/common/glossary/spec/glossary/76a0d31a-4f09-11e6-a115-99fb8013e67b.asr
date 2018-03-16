@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="76a0d31a-4f09-11e6-a115-99fb8013e67b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8c48a62e-4f09-11e6-a115-99fb8013e67b" type="resource" guid="8c48a62a-4f09-11e6-a115-99fb8013e67b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="76a0d31c-4f09-11e6-a115-99fb8013e67b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="76a0d31e-4f09-11e6-a115-99fb8013e67b" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8c48a62e-4f09-11e6-a115-99fb8013e67b">
+      <resource guid="8c48a62a-4f09-11e6-a115-99fb8013e67b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8c48a62c-4f09-11e6-a115-99fb8013e67b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8c48a62d-4f09-11e6-a115-99fb8013e67b" type="literal">glossary</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8c48a62f-4f09-11e6-a115-99fb8013e67b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8c48a630-4f09-11e6-a115-99fb8013e67b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="8c48a631-4f09-11e6-a115-99fb8013e67b" type="resource" guid="7cdaa198-0c87-11e6-86c5-87a8b520dd59" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="76a0d31d-4f09-11e6-a115-99fb8013e67b" type="literal">GlossaryAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="76a0d31f-4f09-11e6-a115-99fb8013e67b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

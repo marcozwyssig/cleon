@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6437681b-33a2-11e6-94cd-fbf6c8ccd08d">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="64376827-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="6437681c-33a2-11e6-94cd-fbf6c8ccd08d" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64376820-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6437681e-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="096bdd9e-174e-11e5-9ca7-d1bb57b73459" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64376827-33a2-11e6-94cd-fbf6c8ccd08d">
+      <resource guid="6437681c-33a2-11e6-94cd-fbf6c8ccd08d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="64376826-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="64376825-33a2-11e6-94cd-fbf6c8ccd08d" type="literal">into</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="64376824-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="64376823-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="7ae427a2-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="31890305-33a2-11e6-94cd-fbf6c8ccd08d" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="64376821-33a2-11e6-94cd-fbf6c8ccd08d" type="resource" guid="3168aea2-174e-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6437681d-33a2-11e6-94cd-fbf6c8ccd08d" type="literal">SolutionBuildingBlockComponentDecomposite</object>
+  </predicate>
+</resource>
+

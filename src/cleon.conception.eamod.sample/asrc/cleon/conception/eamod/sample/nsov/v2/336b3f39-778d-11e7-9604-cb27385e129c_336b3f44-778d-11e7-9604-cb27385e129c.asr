@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="336b3f44-778d-11e7-9604-cb27385e129c">
+  <owns predicate="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <resource statement-guid="336b66bc-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f41-778d-11e7-9604-cb27385e129c" />
+    <resource statement-guid="336b66c6-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f42-778d-11e7-9604-cb27385e129c" />
+    <resource statement-guid="336b66d3-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f43-778d-11e7-9604-cb27385e129c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="336b66b2-778d-11e7-9604-cb27385e129c" type="resource" guid="c2b426c5-67bf-11e7-afcc-6df3a81a4d17" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="336b66b1-778d-11e7-9604-cb27385e129c" type="literal">Peripherie</object>
+  </predicate>
+  <predicate guid="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <object statement-guid="336b66bc-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f41-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66bb-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66ba-778d-11e7-9604-cb27385e129c" type="literal">TFT-Monitore</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b9-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b8-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b7-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b6-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b5-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b4-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66b3-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="336b66c6-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f42-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66c5-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66c4-778d-11e7-9604-cb27385e129c" type="literal">Flachbettscanner</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c3-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c2-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c1-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c0-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66bf-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66be-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66bd-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="336b66d3-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f43-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66d2-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b66d1-778d-11e7-9604-cb27385e129c" type="literal">Kleinmaterial</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="336b66ce-778d-11e7-9604-cb27385e129c" type="literal">Kabel USB</object>
+          <object statement-guid="336b66cf-778d-11e7-9604-cb27385e129c" type="literal">Maus</object>
+          <object statement-guid="336b66d0-778d-11e7-9604-cb27385e129c" type="literal">Tastatur</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66cd-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66cc-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66cb-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66ca-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c9-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c8-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b66c7-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="262dfe2a-689a-11e7-9be5-6dfce969ae4e">
+    <object statement-guid="336b66b0-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f60-778d-11e7-9604-cb27385e129c" />
+  </predicate>
+</resource>
+

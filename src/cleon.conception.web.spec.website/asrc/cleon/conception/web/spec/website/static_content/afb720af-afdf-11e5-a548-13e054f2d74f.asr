@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="afb720af-afdf-11e5-a548-13e054f2d74f">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="b1dfa56e-afdf-11e5-a548-13e054f2d74f" type="resource" guid="b1df092b-afdf-11e5-a548-13e054f2d74f" />
+    <resource statement-guid="b38a2123-afdf-11e5-a548-13e054f2d74f" type="resource" guid="b38984e0-afdf-11e5-a548-13e054f2d74f" />
+    <resource statement-guid="b5205188-afdf-11e5-a548-13e054f2d74f" type="resource" guid="b5205185-afdf-11e5-a548-13e054f2d74f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="afb720b1-afdf-11e5-a548-13e054f2d74f" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="afb85933-afdf-11e5-a548-13e054f2d74f" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="afb85932-afdf-11e5-a548-13e054f2d74f" type="literal">ImageType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="b1dfa56e-afdf-11e5-a548-13e054f2d74f">
+      <resource guid="b1df092b-afdf-11e5-a548-13e054f2d74f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1dfa56d-afdf-11e5-a548-13e054f2d74f" type="resource" guid="afb720af-afdf-11e5-a548-13e054f2d74f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b2e1850f-afdf-11e5-a548-13e054f2d74f" type="literal">BMP</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b38a2123-afdf-11e5-a548-13e054f2d74f">
+      <resource guid="b38984e0-afdf-11e5-a548-13e054f2d74f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b38a2122-afdf-11e5-a548-13e054f2d74f" type="resource" guid="afb720af-afdf-11e5-a548-13e054f2d74f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b414ade4-afdf-11e5-a548-13e054f2d74f" type="literal">JPG</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b5205188-afdf-11e5-a548-13e054f2d74f">
+      <resource guid="b5205185-afdf-11e5-a548-13e054f2d74f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b5205187-afdf-11e5-a548-13e054f2d74f" type="resource" guid="afb720af-afdf-11e5-a548-13e054f2d74f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b617a9fd-afdf-11e5-a548-13e054f2d74f" type="literal">GIF</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

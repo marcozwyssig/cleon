@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b47acb73-314c-11e5-bd99-eda9ce254b0b">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="3760b29e-27fa-11e6-b263-9db62e053e59" type="resource" guid="3760b29a-27fa-11e6-b263-9db62e053e59">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="38e92762-27fa-11e6-b263-9db62e053e59" type="resource" guid="38e9275f-27fa-11e6-b263-9db62e053e59">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="38eb986c-27fa-11e6-b263-9db62e053e59" type="resource" guid="38eb9868-27fa-11e6-b263-9db62e053e59" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b47acb75-314c-11e5-bd99-eda9ce254b0b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="40846765-118d-11e8-95d7-5d9fd9835602" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b47acb76-314c-11e5-bd99-eda9ce254b0b" type="literal">07_DeploymentView</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3760b29e-27fa-11e6-b263-9db62e053e59">
+      <resource guid="3760b29a-27fa-11e6-b263-9db62e053e59">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3760b29c-27fa-11e6-b263-9db62e053e59" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="3760b29d-27fa-11e6-b263-9db62e053e59" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="38e92762-27fa-11e6-b263-9db62e053e59">
+            <resource guid="38e9275f-27fa-11e6-b263-9db62e053e59">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="38e92761-27fa-11e6-b263-9db62e053e59" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="38eb986c-27fa-11e6-b263-9db62e053e59">
+                  <resource guid="38eb9868-27fa-11e6-b263-9db62e053e59">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="38eb986a-27fa-11e6-b263-9db62e053e59" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="38eb986b-27fa-11e6-b263-9db62e053e59" type="literal">Verteilsicht</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="dc635192-314c-11e5-bd99-eda9ce254b0b" type="literal">Contents
+This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.
+Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.
+
+Motivation
+Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.
+
+Form
+The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)
+Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.</object>
+  </predicate>
+</resource>
+

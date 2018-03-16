@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>AP02 Test1</db:title>
+	
+	
+	<db:chapter>
+		<db:title>Ziele</db:title>
+		<db:para></db:para>
+		
+		<db:para>In der nachfolgenden Tabelle werden die übergeordneten Ziele des Projekts für das Arbeitspaket je nach Relevanz zugeordnet und beschrieben:</db:para> 
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="15%" />
+			<db:col width="15%" />
+			<db:col width="70%" />
+			<db:thead>
+				<db:tr>
+					<db:th>Nummer</db:th>
+					<db:th>Name</db:th>
+					<db:th>Arbeitspaketbeitrag für die Zielerreichung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Z02</db:para>
+					</db:td>
+					<db:td>
+						<db:para>MyGoals 1</db:para>
+					</db:td>
+					<db:td>
+						<db:para>dddsfasdfasdfasdfsadf</db:para>
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
+		
+	</db:chapter>
+	<db:chapter>
+		<db:title>Mittelbedarf</db:title>
+		<db:para></db:para>
+		
+		
+		<db:section>
+			<db:title>Mittelbedarf LE03 Module 1</db:title>
+			<db:para></db:para>
+			
+			<db:section>
+				<db:title>Rollenbedarf</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle Rollen der unterschiedlichen Organisationen aufgelistet, welche für die Abwicklung des Arbeitspakets notwendig sind.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="20%" />
+					<db:col width="20%" />
+					<db:col width="20%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Rolle</db:th>
+							<db:th>Organisation</db:th>
+							<db:th>Bedarfsaufwand [h]</db:th>	
+							<db:th>Beschreibung</db:th>							
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			<db:section>
+				<db:title>Konsumierende Dienste</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle konsumierende Dienste aufgelistet, welche für die Abwicklung des Arbeitspakets vorausgesetzt werden.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Nummer</db:th>
+							<db:th>Name</db:th>
+							<db:th>Verfügbarkeit</db:th>	
+							<db:th>Klassifikationsstufe</db:th>							
+							<db:th>Fähigkeiten</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			
+		</db:section>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,a6152083-c1e6-11e6-84f4-db6ef89bc9ce,Hash] -->

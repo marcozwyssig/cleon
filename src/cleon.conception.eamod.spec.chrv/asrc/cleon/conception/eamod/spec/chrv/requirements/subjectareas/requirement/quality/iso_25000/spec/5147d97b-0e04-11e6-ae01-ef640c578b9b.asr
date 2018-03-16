@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="5147d97b-0e04-11e6-ae01-ef640c578b9b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6f220f6b-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="6f21e857-0e04-11e6-ae01-ef640c578b9b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5147d97d-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5148008f-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="e938074f-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6f220f6b-0e04-11e6-ae01-ef640c578b9b">
+      <resource guid="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6f21e859-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6f21e85a-0e04-11e6-ae01-ef640c578b9b" type="literal">qualities</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6f220f6c-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6f220f6d-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="6f22367e-0e04-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5148008e-0e04-11e6-ae01-ef640c578b9b" type="literal">SoftwareQualityCharacteristic </object>
+  </predicate>
+</resource>
+

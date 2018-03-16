@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="2a9eee51-0e06-11e6-ae01-ef640c578b9b">
+  <owns predicate="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <resource statement-guid="3147567a-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="31472f67-0e06-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="358dd9d0-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="358db2bd-0e06-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="3a4128b6-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="3a4128b3-0e06-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="cae67ab5-1509-11e6-9d8e-c9e0799bbd85" type="resource" guid="54dca364-0e05-11e6-ae01-ef640c578b9b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2a9eee53-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="5147d97b-0e04-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2dc77e85-0e06-11e6-ae01-ef640c578b9b" type="literal">Portability</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="30b92036-0e06-11e6-ae01-ef640c578b9b" type="literal">Degree of effectiveness and efficiency with which a system, product or component can be transferred from one hardware, software or other operational or usage environment to another.</object>
+  </predicate>
+  <predicate guid="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <object statement-guid="3147567a-0e06-11e6-ae01-ef640c578b9b">
+      <resource guid="31472f67-0e06-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="31475679-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="328fdc0b-0e06-11e6-ae01-ef640c578b9b" type="literal">Adaptability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="34db2b9c-0e06-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product or system can effectively and efficiently be adapted for different or evolving hardware, software or other operational or usage environments.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="358dd9d0-0e06-11e6-ae01-ef640c578b9b">
+      <resource guid="358db2bd-0e06-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="358db2bf-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="37a9b4f1-0e06-11e6-ae01-ef640c578b9b" type="literal">Installability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="39c87642-0e06-11e6-ae01-ef640c578b9b" type="literal">Degree of effectiveness and efficiency with which a product or system can be successfully installed and/or uninstalled in a specified environment.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3a4128b6-0e06-11e6-ae01-ef640c578b9b">
+      <resource guid="3a4128b3-0e06-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a4128b5-0e06-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3c47ce27-0e06-11e6-ae01-ef640c578b9b" type="literal">Replaceability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3e48a738-0e06-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product can replace another specified software product for the same purpose in the same environment.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="cae67ab5-1509-11e6-9d8e-c9e0799bbd85">
+      <resource guid="54dca364-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="54dcca76-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="57c62ec8-0e05-11e6-ae01-ef640c578b9b" type="literal">Co-Existence</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="5ac4c8c9-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product can perform its required functions efficiently while sharing a common environment and resources with other products, without detrimental impact on any other product.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="18a510ec-85c1-11e3-be33-79789cf5eae3">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="25752307-85c2-11e3-926c-e10829e9e6c2" type="resource" guid="25752303-85c2-11e3-926c-e10829e9e6c2" />
+    <resource statement-guid="e8a52f76-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="e8a50863-ffc4-11e4-ac0a-959b440f987f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="18a510ee-85c1-11e3-be33-79789cf5eae3" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1a6bc777-85c1-11e3-be33-79789cf5eae3" type="resource" guid="1090955f-85c1-11e3-be33-79789cf5eae3" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="25752307-85c2-11e3-926c-e10829e9e6c2">
+      <resource guid="25752303-85c2-11e3-926c-e10829e9e6c2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="25752305-85c2-11e3-926c-e10829e9e6c2" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="25752306-85c2-11e3-926c-e10829e9e6c2" type="literal">decomposeComponent</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="25752308-85c2-11e3-926c-e10829e9e6c2" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5e01708b-85c9-11e3-9330-0fdf489bee27" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="7469797a-1750-11e5-9ca7-d1bb57b73459" type="resource" guid="096bdd9e-174e-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="7c1fcf2b-1750-11e5-9ca7-d1bb57b73459" type="resource" guid="08ab1b23-174d-11e5-9ca7-d1bb57b73459" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e8a52f76-ffc4-11e4-ac0a-959b440f987f">
+      <resource guid="e8a50863-ffc4-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e8a50865-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eb41fa6a-ffc4-11e4-ac0a-959b440f987f" type="literal">hasDependency</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e8a57d97-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e8a57d98-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="f22ee59b-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="72e79576-ffc4-11e4-ac0a-959b440f987f" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="ea10f479-ffc4-11e4-ac0a-959b440f987f" type="resource" guid="a2e49730-ffb9-11e4-ac0a-959b440f987f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="18a510ef-85c1-11e3-be33-79789cf5eae3" type="literal">ComponentComposition</object>
+  </predicate>
+</resource>
+

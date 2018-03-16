@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="14ee6fc7-4670-11e5-ba74-cb2e95044e1c">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="14ee6fc8-4670-11e5-ba74-cb2e95044e1c" type="resource" guid="45ade837-466e-11e5-ba74-cb2e95044e1c" />
+  </predicate>
+  <predicate guid="4dce2390-466e-11e5-ba74-cb2e95044e1c">
+    <object statement-guid="14ee6fca-4670-11e5-ba74-cb2e95044e1c" type="literal">class Main {
+   void main(String ars[]) {
+       int a = 1;
+   }
+}</object>
+    <object statement-guid="3c21611a-4670-11e5-ba74-cb2e95044e1c" type="literal">class Main {
+   void main(String ars[]) { &lt;1&gt;
+       int a = 1;
+   }
+}</object>
+    <object statement-guid="3fdc6d88-4670-11e5-ba74-cb2e95044e1c" type="literal">class Main {
+   void main(String ars[]) { &lt;1&gt;
+       int a = 1;
+   }
+}</object>
+    <object statement-guid="436ebc09-4670-11e5-ba74-cb2e95044e1c" type="literal">class Main {
+   void main(String ars[]) { &lt;1&gt;
+       int a = 1;
+   }
+}</object>
+  </predicate>
+  <predicate guid="589ae082-466e-11e5-ba74-cb2e95044e1c">
+    <object statement-guid="266b5d8c-4670-11e5-ba74-cb2e95044e1c" type="resource" guid="b85b3931-ad92-11de-8a95-a3426dd7e181" />
+  </predicate>
+</resource>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="052b13bf-a7e0-11e5-82dd-3b995d9c840c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="56452964-5eea-11e6-ab50-915f052afe3b" type="resource" guid="56448d21-5eea-11e6-ab50-915f052afe3b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="052b61e1-a7e0-11e5-82dd-3b995d9c840c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a4b87e4-bbd6-11e6-997f-d73ea5a3671c" type="resource" guid="6ef368b1-bbd6-11e6-997f-d73ea5a3671c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="56452964-5eea-11e6-ab50-915f052afe3b">
+      <resource guid="56448d21-5eea-11e6-ab50-915f052afe3b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5644b433-5eea-11e6-ab50-915f052afe3b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="56bf1457-5eea-11e6-ab50-915f052afe3b" type="literal">purchaseDate</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="56463ad5-5eea-11e6-ab50-915f052afe3b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="564661e6-5eea-11e6-ab50-915f052afe3b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="60ecd240-5eea-11e6-ab50-915f052afe3b" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="59e18a08-5eea-11e6-ab50-915f052afe3b" type="resource" guid="5b27bd7f-c37c-11e5-9455-d97b1b986284" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="052b61e2-a7e0-11e5-82dd-3b995d9c840c" type="literal">Software</object>
+  </predicate>
+</resource>
+

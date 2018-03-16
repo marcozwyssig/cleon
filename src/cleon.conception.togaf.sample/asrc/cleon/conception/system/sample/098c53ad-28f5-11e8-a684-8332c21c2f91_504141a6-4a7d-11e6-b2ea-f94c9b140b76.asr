@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="504141a6-4a7d-11e6-b2ea-f94c9b140b76">
+  <owns predicate="f3bf01a0-4a7c-11e6-b2ea-f94c9b140b76">
+    <resource statement-guid="54a0560f-4a7d-11e6-b2ea-f94c9b140b76" type="resource" guid="54a02efc-4a7d-11e6-b2ea-f94c9b140b76" />
+    <resource statement-guid="5791a9aa-4a7d-11e6-b2ea-f94c9b140b76" type="resource" guid="57915b87-4a7d-11e6-b2ea-f94c9b140b76" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="504168b8-4a7d-11e6-b2ea-f94c9b140b76" type="resource" guid="d6f6d790-4a7c-11e6-b2ea-f94c9b140b76" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5a33f30b-4a7d-11e6-b2ea-f94c9b140b76" type="literal">Technologien</object>
+  </predicate>
+  <predicate guid="f3bf01a0-4a7c-11e6-b2ea-f94c9b140b76">
+    <object statement-guid="54a0560f-4a7d-11e6-b2ea-f94c9b140b76">
+      <resource guid="54a02efc-4a7d-11e6-b2ea-f94c9b140b76">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="54a0560e-4a7d-11e6-b2ea-f94c9b140b76" type="resource" guid="b830d6f8-4372-11e6-a9d7-97cf4f7c398b" />
+        </predicate>
+        <predicate guid="b830d6f9-4372-11e6-a9d7-97cf4f7c398b">
+          <object statement-guid="5633ee64-4a7d-11e6-b2ea-f94c9b140b76" type="aggregate" guid="19962250-2d72-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5791a9aa-4a7d-11e6-b2ea-f94c9b140b76">
+      <resource guid="57915b87-4a7d-11e6-b2ea-f94c9b140b76">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="57918299-4a7d-11e6-b2ea-f94c9b140b76" type="resource" guid="b830d6f8-4372-11e6-a9d7-97cf4f7c398b" />
+        </predicate>
+        <predicate guid="b830d6f9-4372-11e6-a9d7-97cf4f7c398b">
+          <object statement-guid="5854f9ab-4a7d-11e6-b2ea-f94c9b140b76" type="aggregate" guid="db01e774-2d74-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

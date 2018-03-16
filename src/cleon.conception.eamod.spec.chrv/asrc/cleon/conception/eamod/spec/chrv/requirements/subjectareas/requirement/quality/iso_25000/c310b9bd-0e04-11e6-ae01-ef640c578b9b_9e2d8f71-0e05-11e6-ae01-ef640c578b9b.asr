@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="9e2d8f71-0e05-11e6-ae01-ef640c578b9b">
+  <owns predicate="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <resource statement-guid="a63cb314-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="a63c8c01-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="abc468fa-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="abc441e7-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="b0f3c5b0-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="b0f3c5ad-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="b6f195f6-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="b6f16ee3-0e05-11e6-ae01-ef640c578b9b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9e2d8f73-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5147d97b-0e04-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a022812f-0e05-11e6-ae01-ef640c578b9b" type="literal">Reliability</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="a5796310-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a system, product or component performs specified functions under specified conditions for a specified period of time. </object>
+  </predicate>
+  <predicate guid="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <object statement-guid="a63cb314-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="a63c8c01-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a63cb313-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a8760145-0e05-11e6-ae01-ef640c578b9b" type="literal">Maturity</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ab36f606-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a system, product or component meets needs for reliability under normal operation.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="abc468fa-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="abc441e7-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="abc441e9-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ad4ed98b-0e05-11e6-ae01-ef640c578b9b" type="literal">Availability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="aff875bc-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a system, product or component is operational and accessible when required for use.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b0f3c5b0-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="b0f3c5ad-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b0f3c5af-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b4277971-0e05-11e6-ae01-ef640c578b9b" type="literal">Fault tolerance</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="b6607982-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a system, product or component operates as intended despite the presence of hardware or software faults.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b6f195f6-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="b6f16ee3-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b6f16ee5-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b8972fa7-0e05-11e6-ae01-ef640c578b9b" type="literal">Recoverability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="bb02b168-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which, in the event of an interruption or a failure, a product or system can recover the data directly affected and re-establish the desired state of the system.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b9115cb9-ffba-11e4-ac0a-959b440f987f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8259389b-ffbb-11e4-ac0a-959b440f987f" type="resource" guid="82591187-ffbb-11e4-ac0a-959b440f987f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b9115cbb-ffba-11e4-ac0a-959b440f987f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b91183cd-ffba-11e4-ac0a-959b440f987f" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="be40b8c4-ffba-11e4-ac0a-959b440f987f" type="resource" guid="243b1867-7973-11e4-a6e2-23d949480f96" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8259389b-ffbb-11e4-ac0a-959b440f987f">
+      <resource guid="82591187-ffbb-11e4-ac0a-959b440f987f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="82593899-ffbb-11e4-ac0a-959b440f987f" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8259389a-ffbb-11e4-ac0a-959b440f987f" type="literal">inherits</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8259389c-ffbb-11e4-ac0a-959b440f987f" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="82595fad-ffbb-11e4-ac0a-959b440f987f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="82595fae-ffbb-11e4-ac0a-959b440f987f" type="resource" guid="d715af8c-ffba-11e4-ac0a-959b440f987f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b9115cbc-ffba-11e4-ac0a-959b440f987f" type="literal">InheritableBuildingBlock</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="b91183ce-ffba-11e4-ac0a-959b440f987f" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

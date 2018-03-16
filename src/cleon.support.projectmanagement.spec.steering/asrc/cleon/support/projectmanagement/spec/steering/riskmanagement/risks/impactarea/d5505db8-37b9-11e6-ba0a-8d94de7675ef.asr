@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d5505db8-37b9-11e6-ba0a-8d94de7675ef">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="dd8c104b-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="dd8bc228-37b9-11e6-ba0a-8d94de7675ef" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d5505dba-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d5505db9-37b9-11e6-ba0a-8d94de7675ef" type="literal">Environment</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="dd8c104b-37b9-11e6-ba0a-8d94de7675ef">
+      <resource guid="dd8bc228-37b9-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dd8bc22a-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de69ed2f-37b9-11e6-ba0a-8d94de7675ef" type="literal">ENV</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="f46d2660-37b9-11e6-ba0a-8d94de7675ef" type="literal">Projektumfeld</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

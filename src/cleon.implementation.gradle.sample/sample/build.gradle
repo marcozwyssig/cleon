@@ -1,0 +1,47 @@
+plugins {
+	id 'java'
+	id 'groovy'  
+	id 'java-gradle-plugin'    
+	id "com.gradle.plugin-publish" version "0.9.9"
+}
+
+group = artifact_group
+version = '0.0.1'
+
+sourceCompatibility = 8
+targetCompatibility = 8
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+	compileOnly gradleApi()
+	compile gradleApi() 	
+	compile localGroovy()
+	testCompile gradleTestKit()
+}
+
+gradlePlugin {
+    plugins {
+        sample {
+		id = 'cleon.implementation.gradle.sample'
+		implementationClass = 'cleon.implementation.gradle.sample.samplePlugin'
+        }
+    }
+}
+
+pluginBundle {
+	website = 'https://github.com/http-builder-ng/gradle-http-plugin'
+	vcsUrl = 'https://github.com/http-builder-ng/gradle-http-plugin'
+	description = 'Gradle plugin to aid in creating HTTP calls as tasks.'
+	tags = ['gradle', 'groovy']
+	
+	plugins {
+		sample {
+			id = 'cleon.implementation.gradle.sample'
+			displayName = 'Sample'
+		}
+	}
+}
+/* Actifsource ID=[c7a187bd-c0a8-11e7-a130-7198de5ddf3f,ea530f41-c0a8-11e7-a130-7198de5ddf3f,Hash] */

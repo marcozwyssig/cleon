@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ea530f41-c0a8-11e7-a130-7198de5ddf3f">
+  <owns predicate="165c7061-d410-11e5-8556-8f55ceb91287">
+    <resource statement-guid="166ffad3-c0aa-11e7-a130-7198de5ddf3f" type="resource" guid="166fd3c0-c0aa-11e7-a130-7198de5ddf3f" />
+  </owns>
+  <owns predicate="c1359212-c0b0-11e7-9af7-bb81e9802ff6">
+    <resource statement-guid="cb694ef8-c0b1-11e7-9af7-bb81e9802ff6" type="resource" guid="cb6927e5-c0b1-11e7-9af7-bb81e9802ff6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ea533653-c0a8-11e7-a130-7198de5ddf3f" type="resource" guid="8ae372cf-c0a8-11e7-a130-7198de5ddf3f" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ea535d64-c0a8-11e7-a130-7198de5ddf3f" type="literal">sample</object>
+  </predicate>
+  <predicate guid="165c7061-d410-11e5-8556-8f55ceb91287">
+    <object statement-guid="166ffad3-c0aa-11e7-a130-7198de5ddf3f">
+      <resource guid="166fd3c0-c0aa-11e7-a130-7198de5ddf3f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="166fd3c2-c0aa-11e7-a130-7198de5ddf3f" type="resource" guid="2b7fed0c-d40f-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="36611c40-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="172d0868-c0aa-11e7-a130-7198de5ddf3f" type="literal">0</object>
+        </predicate>
+        <predicate guid="3ca80378-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="17d900a0-c0aa-11e7-a130-7198de5ddf3f" type="literal">0</object>
+        </predicate>
+        <predicate guid="494a6ba2-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="184e56e2-c0aa-11e7-a130-7198de5ddf3f" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+    <object statement-guid="a341c8b9-c0aa-11e7-a130-7198de5ddf3f" type="literal">My Plugin Description</object>
+  </predicate>
+  <predicate guid="71a7cc3e-4d0b-11e6-9043-01b29b61e580">
+    <object statement-guid="9136f284-c0aa-11e7-a130-7198de5ddf3f" type="literal">Sample</object>
+  </predicate>
+  <predicate guid="5df15683-c0aa-11e7-a130-7198de5ddf3f">
+    <object statement-guid="66153acb-c0aa-11e7-a130-7198de5ddf3f" type="literal">cleon.implementation.gradle</object>
+  </predicate>
+  <predicate guid="c1359212-c0b0-11e7-9af7-bb81e9802ff6">
+    <object statement-guid="cb694ef8-c0b1-11e7-9af7-bb81e9802ff6">
+      <resource guid="cb6927e5-c0b1-11e7-9af7-bb81e9802ff6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb6927e7-c0b1-11e7-9af7-bb81e9802ff6" type="resource" guid="bc0ee831-c0b0-11e7-9af7-bb81e9802ff6" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cc1a0159-c0b1-11e7-9af7-bb81e9802ff6" type="literal">Hello</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

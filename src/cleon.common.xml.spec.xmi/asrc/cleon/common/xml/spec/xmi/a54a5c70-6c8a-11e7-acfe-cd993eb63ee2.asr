@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="a54a5c70-6c8a-11e7-acfe-cd993eb63ee2">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="b561784b-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="5cdcb0b2-6c80-11e7-acfe-cd993eb63ee2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a54a8382-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a7f57f6a-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b561784b-6c8a-11e7-acfe-cd993eb63ee2">
+      <resource guid="5cdcb0b2-6c80-11e7-acfe-cd993eb63ee2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="907ac128-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5cdcd7c5-6c80-11e7-acfe-cd993eb63ee2" type="literal">aggregates</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5cdd25e7-6c80-11e7-acfe-cd993eb63ee2" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5cdd4cf8-6c80-11e7-acfe-cd993eb63ee2" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5cdd7409-6c80-11e7-acfe-cd993eb63ee2" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+        </predicate>
+        <predicate guid="dd6d701d-e8a9-11e2-b67d-e515e6efcec9">
+          <object statement-guid="9508874f-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a54aaa93-6c8a-11e7-acfe-cd993eb63ee2" type="literal">XmiAggregation</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="ab707596-6c8a-11e7-acfe-cd993eb63ee2" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

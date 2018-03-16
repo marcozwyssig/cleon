@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ddc2c098-a7fa-11e7-9807-4f1f5d43f7c9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8001a5a3-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="80017e90-a7ff-11e7-803e-f5cc2216127b" />
+    <resource statement-guid="8aa41ea5-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="8aa3d082-a7ff-11e7-803e-f5cc2216127b" />
+    <resource statement-guid="a9a6a809-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="a9a34ca2-a7ff-11e7-803e-f5cc2216127b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ddc2c09a-a7fa-11e7-9807-4f1f5d43f7c9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0578ef68-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="19f720d6-818c-11e7-9507-01b75489c44b" />
+    <object statement-guid="37e89dc8-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="6758c792-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="a59c8d77-c589-11e5-aeea-1db9268c0ee9" />
+    <object statement-guid="749d3c13-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="d2e41148-feae-11de-b623-05edcc99ed4a" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8001a5a3-a7ff-11e7-803e-f5cc2216127b">
+      <resource guid="80017e90-a7ff-11e7-803e-f5cc2216127b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8001a5a2-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="823db2f6-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="80986765-a7ff-11e7-803e-f5cc2216127b" type="literal">CheopsNr</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="80021ad4-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8aa41ea5-a7ff-11e7-803e-f5cc2216127b">
+      <resource guid="8aa3d082-a7ff-11e7-803e-f5cc2216127b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8aa3d084-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8b414908-a7ff-11e7-803e-f5cc2216127b" type="literal">Decommission</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8aa53016-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8aa53017-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="9bd1b3a1-a7ff-11e7-803e-f5cc2216127b" type="literal">Vorgesehenes Datum der Ausserdienststellung
+(gemäss CHEOPS). Dies Datum kann sich im
+Laufe der Zeit verändern.</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="8dd0f499-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="5b27bd7f-c37c-11e5-9455-d97b1b986284" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a9a6a809-a7ff-11e7-803e-f5cc2216127b">
+      <resource guid="a9a34ca2-a7ff-11e7-803e-f5cc2216127b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a9a34ca3-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a9a34ca6-a7ff-11e7-803e-f5cc2216127b" type="literal">EndOfLife</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a9a34ca4-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a9a34ca5-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="a9a34ca8-a7ff-11e7-803e-f5cc2216127b" type="literal">Zeitpunkt, ab welchem für eine oder mehrere der in diesem SoS oder dieser Komponente verwendeten Technologien der Herstellersupport abgekündigt wird. Dieses Datum kann sich im Laufe der Zeit verändern (z.B. wenn ein Hersteller den Support für eine bestimmte Produktversion verlängert). Eine der möglichem Konsequenzen davon ist, dass das SoS bzw. die Komponente womöglich noch weiterbetrieben werden könnte, aber die Einhaltung der SLAs nicht mehr gewährleistet werden kann.</object>
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a9a34ca7-a7ff-11e7-803e-f5cc2216127b" type="resource" guid="5b27bd7f-c37c-11e5-9455-d97b1b986284" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ddc2c09b-a7fa-11e7-9807-4f1f5d43f7c9" type="literal">LevelCapConf</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="ddc2c09d-a7fa-11e7-9807-4f1f5d43f7c9" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

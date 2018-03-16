@@ -1,0 +1,180 @@
+= AP01 WorkpackageSample
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+
+===== Ziele
+
+
+
+[cols="2,2,10a" options="header"]
+|===
+|Nummer|Name|Arbeitspaketbeitrag für die Zielerreichung
+|Z01
+|My Goal
+|
+MyGoal 1 ddd
+dfsdffdsfsdf
+sdfsdf
+|===
+
+
+===== Aktivitäten
+
+
+
+
+====== LE01 Module_A Aktivitäten
+
+
+
+[cols="10,20"]
+|==============================
+|*Geplanter Aufwand [SP]*|
+|*Geplanter Total Aufwand [SP]*|0.0
+|*Aufwand [SP]*|13.0
+|==============================
+
+[cols="10,50a,^2,^2,^2,^2,^2,5a" options="header"]
+|==============================
+|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Verw.|Sprint|Bedingungen
+|G001_Group_A
+|
+
+
+|Done
+|Must have
+|13.0
+|
+|
+|
+
+|A010_Activity_A
+|
+
+
+|Done
+|Nice to have
+|13.0
+|pme
+|Sprint 1
+|
+
+|A002_Activity_A
+|
+
+
+|Done
+|Nice to have
+|0.0
+|
+|Sprint 3
+|
+
+|G011_Test
+|
+
+
+|Input
+|Should have
+|0.0
+|
+|
+|
+
+|==============================
+
+
+====== LE02 Module_B Aktivitäten
+
+
+
+[cols="10,20"]
+|==============================
+|*Geplanter Aufwand [SP]*|
+|*Geplanter Total Aufwand [SP]*|0.0
+|*Aufwand [SP]*|13.0
+|==============================
+
+[cols="10,50a,^2,^2,^2,^2,^2,5a" options="header"]
+|==============================
+|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Verw.|Sprint|Bedingungen
+|G005_Group_B
+|
+
+
+|Input
+|Must have
+|13.0
+|
+|
+|
+
+|A003_Activity_A
+|
+
+
+|Done
+|Nice to have
+|13.0
+|
+|
+|
+
+|A004_Activity_A
+|
+
+
+|Done
+|Nice to have
+|0.0
+|
+|
+|
+
+|==============================
+
+
+
+===== Mittelbedarf
+
+
+
+
+====== Mittelbedarf LE01 Module_A
+
+
+
+[cols="10,10,20a" options="header"]
+|==============================
+|Fähigkeit|Wichtigkeit|Personen
+|Skill1
+|3
+|
+Pascal Meier (3 - Professional)
+
+Patrick Müller (3 - Professional)
+
+Patrick Meier (3 - Professional)
+
+|Skill2
+|3
+|
+Pascal Meier (3 - Professional)
+
+Patrick Müller (3 - Professional)
+
+Patrick Meier (3 - Professional)
+
+|==============================
+
+
+
+
+

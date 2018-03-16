@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d6de1d03-27f5-11e6-b263-9db62e053e59">
+  <owns predicate="3a71bf1d-2801-11e6-b263-9db62e053e59">
+    <resource statement-guid="a03c0604-2803-11e6-b263-9db62e053e59" type="resource" guid="a03bdef1-2803-11e6-b263-9db62e053e59" />
+  </owns>
+  <owns predicate="9ebc0878-2801-11e6-b263-9db62e053e59">
+    <resource statement-guid="a7bcf3da-2803-11e6-b263-9db62e053e59" type="resource" guid="a7bca5b6-2803-11e6-b263-9db62e053e59" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d6de1d05-27f5-11e6-b263-9db62e053e59" type="resource" guid="2420a6f8-27cc-11e6-b263-9db62e053e59" />
+  </predicate>
+  <predicate guid="3a71bf1d-2801-11e6-b263-9db62e053e59">
+    <object statement-guid="a03c0604-2803-11e6-b263-9db62e053e59">
+      <resource guid="a03bdef1-2803-11e6-b263-9db62e053e59">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a03bdef3-2803-11e6-b263-9db62e053e59" type="resource" guid="2e0ed149-2801-11e6-b263-9db62e053e59" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1ff60e5-2803-11e6-b263-9db62e053e59" type="literal">FTP</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="2d7a7d36-498c-11e6-8d4d-09f3feb92353" type="literal">dsfasdf</object>
+        </predicate>
+        <predicate guid="54db5ff5-2801-11e6-b263-9db62e053e59">
+          <object statement-guid="ba0a7833-2803-11e6-b263-9db62e053e59" type="literal">SMTP</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="9ebc0878-2801-11e6-b263-9db62e053e59">
+    <object statement-guid="a7bcf3da-2803-11e6-b263-9db62e053e59">
+      <resource guid="a7bca5b6-2803-11e6-b263-9db62e053e59">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a7bcccc8-2803-11e6-b263-9db62e053e59" type="resource" guid="8ca0b7d4-2801-11e6-b263-9db62e053e59" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a8b2776b-2803-11e6-b263-9db62e053e59" type="literal">ssss</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="517c3d07-2806-11e6-b263-9db62e053e59" type="literal">ddd</object>
+        </predicate>
+        <predicate guid="ca424d86-2801-11e6-b263-9db62e053e59">
+          <object statement-guid="aa6864cc-2803-11e6-b263-9db62e053e59" type="resource" guid="a03bdef1-2803-11e6-b263-9db62e053e59" />
+        </predicate>
+        <predicate guid="ca424d87-2801-11e6-b263-9db62e053e59">
+          <object statement-guid="b0d375f9-2803-11e6-b263-9db62e053e59" type="resource" guid="c588357c-2661-11e6-ae54-e50d44645ae7" />
+        </predicate>
+        <predicate guid="fd479ae8-2803-11e6-b263-9db62e053e59">
+          <object statement-guid="50a40576-2806-11e6-b263-9db62e053e59" type="literal">true</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

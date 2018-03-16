@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ef768fbe-2f07-11e6-8bd9-a77b8d2a3a0e">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="ef768fc7-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="ef768fbf-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ef768fc2-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ef768fc3-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Securitiy</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="ef768fc7-2f07-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="ef768fbf-2f07-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef768fc4-2f07-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef768fc5-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">SEC</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="ef768fc6-2f07-11e6-8bd9-a77b8d2a3a0e" type="literal">Sicherheit</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

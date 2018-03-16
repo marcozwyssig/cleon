@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8ff91c96-c10a-11e6-8f58-ad3c6ee7602f">
+  <owns predicate="2578ae03-c768-11e5-b3f9-43c5a0896ea1">
+    <resource statement-guid="8ff9431d-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="8ff91c95-c10a-11e6-8f58-ad3c6ee7602f">
+      <owns predicate="9860b9bc-c768-11e5-b3f9-43c5a0896ea1">
+        <resource statement-guid="8ff9431c-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="8ff91c94-c10a-11e6-8f58-ad3c6ee7602f" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8ff94317-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="0de22a0b-c768-11e5-b3f9-43c5a0896ea1" />
+  </predicate>
+  <predicate guid="2578ae03-c768-11e5-b3f9-43c5a0896ea1">
+    <object statement-guid="8ff9431d-c10a-11e6-8f58-ad3c6ee7602f">
+      <resource guid="8ff91c95-c10a-11e6-8f58-ad3c6ee7602f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ff94319-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="16fa59aa-c768-11e5-b3f9-43c5a0896ea1" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ff94318-c10a-11e6-8f58-ad3c6ee7602f" type="literal">Zürich</object>
+        </predicate>
+        <predicate guid="9860b9bc-c768-11e5-b3f9-43c5a0896ea1">
+          <object statement-guid="8ff9431c-c10a-11e6-8f58-ad3c6ee7602f">
+            <resource guid="8ff91c94-c10a-11e6-8f58-ad3c6ee7602f">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="8ff9431b-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="16fa59aa-c768-11e5-b3f9-43c5a0896ea1" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="8ff9431a-c10a-11e6-8f58-ad3c6ee7602f" type="literal">622</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

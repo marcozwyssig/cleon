@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="5101c25b-5d86-11e7-b3de-5dfb634b4d92">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="f2d4b101-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="f2d462dd-5d88-11e7-b3de-5dfb634b4d92">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="f662b9c5-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="f6626ba2-5d88-11e7-b3de-5dfb634b4d92">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="f709f65e-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="f7098129-5d88-11e7-b3de-5dfb634b4d92" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5101e96d-5d86-11e7-b3de-5dfb634b4d92" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="510285af-5d86-11e7-b3de-5dfb634b4d92" type="resource" guid="b9c39881-baea-11dd-aa8e-75e7a75dc78a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5102378e-5d86-11e7-b3de-5dfb634b4d92" type="literal">AsciiDocBuildTask</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f2d4b101-5d88-11e7-b3de-5dfb634b4d92">
+      <resource guid="f2d462dd-5d88-11e7-b3de-5dfb634b4d92">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f2d489ef-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="f2d4b100-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="f662b9c5-5d88-11e7-b3de-5dfb634b4d92">
+            <resource guid="f6626ba2-5d88-11e7-b3de-5dfb634b4d92">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f66292b4-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="f709f65e-5d88-11e7-b3de-5dfb634b4d92">
+                  <resource guid="f7098129-5d88-11e7-b3de-5dfb634b4d92">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f709cf4c-5d88-11e7-b3de-5dfb634b4d92" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="f709f65d-5d88-11e7-b3de-5dfb634b4d92" type="literal">AsciiDocBuildTask</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

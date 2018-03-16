@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: 
+Bundle-SymbolicName: .builtin;singleton:=true
+Bundle-Version: 0.1.0
+Require-Bundle: ch.actifsource.core;bundle-version="8.1.0",
+ ch.actifsource.environment;bundle-version="8.1.0",
+ ch.actifsource.util;bundle-version="8.1.0",
+ ch.actifsource.generator;bundle-version="8.1.0"
+Export-Package: ,.javamodel
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="cc11ba16-37b9-11e6-ba0a-8d94de7675ef">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="f97b65b7-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="f97b1794-37b9-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="fe336f8f-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="fe33487c-37b9-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="07eaec75-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="07eac562-37ba-11e6-ba0a-8d94de7675ef" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cc11ba18-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cc11ba17-37b9-11e6-ba0a-8d94de7675ef" type="literal">Technologie</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="f97b65b7-37b9-11e6-ba0a-8d94de7675ef">
+      <resource guid="f97b1794-37b9-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f97b3ea6-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f9cbcfaa-37b9-11e6-ba0a-8d94de7675ef" type="literal">TECH</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="fb3b8c4b-37b9-11e6-ba0a-8d94de7675ef" type="literal">Technologue</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fe336f8f-37b9-11e6-ba0a-8d94de7675ef">
+      <resource guid="fe33487c-37b9-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fe336f8e-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="00469820-37ba-11e6-ba0a-8d94de7675ef" type="literal">SOL&amp;ARC</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="027f9831-37ba-11e6-ba0a-8d94de7675ef" type="literal">Solution and Architecture</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="07eaec75-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="07eac562-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="07eac564-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="09ce2b66-37ba-11e6-ba0a-8d94de7675ef" type="literal">T&amp;METH</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="0cc04247-37ba-11e6-ba0a-8d94de7675ef" type="literal">Tools and Methods</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

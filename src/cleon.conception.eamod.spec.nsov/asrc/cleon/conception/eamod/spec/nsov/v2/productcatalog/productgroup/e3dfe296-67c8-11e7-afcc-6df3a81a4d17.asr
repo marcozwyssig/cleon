@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e3dfe296-67c8-11e7-afcc-6df3a81a4d17">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="4ff2350c-67c9-11e7-afcc-6df3a81a4d17" type="resource" guid="bcb344d7-67c6-11e7-afcc-6df3a81a4d17" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e3dfe298-67c8-11e7-afcc-6df3a81a4d17" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e66aabc8-67c8-11e7-afcc-6df3a81a4d17" type="resource" guid="c9c23f77-67c8-11e7-afcc-6df3a81a4d17" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4ff2350c-67c9-11e7-afcc-6df3a81a4d17">
+      <resource guid="bcb344d7-67c6-11e7-afcc-6df3a81a4d17">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bcb344d9-67c6-11e7-afcc-6df3a81a4d17" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bcb36bea-67c6-11e7-afcc-6df3a81a4d17" type="literal">baseProducts</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="bcb392fc-67c6-11e7-afcc-6df3a81a4d17" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="bcb392fd-67c6-11e7-afcc-6df3a81a4d17" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="bcb3ba0e-67c6-11e7-afcc-6df3a81a4d17" type="resource" guid="bf1a3670-67bf-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="5eba0872-6897-11e7-9be5-6dfce969ae4e" type="resource" guid="5c5c9107-6897-11e7-9be5-6dfce969ae4e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e3e009a9-67c8-11e7-afcc-6df3a81a4d17" type="literal">BaseProductGroup</object>
+  </predicate>
+</resource>
+

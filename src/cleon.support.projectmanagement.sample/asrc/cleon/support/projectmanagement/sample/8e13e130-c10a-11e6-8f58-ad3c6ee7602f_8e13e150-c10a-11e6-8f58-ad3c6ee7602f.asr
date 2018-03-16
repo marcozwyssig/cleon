@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8e13e150-c10a-11e6-8f58-ad3c6ee7602f">
+  <owns predicate="056a5019-324e-11e6-ab4d-73a9260c8088">
+    <resource statement-guid="8e13e1cd-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="8e13e14f-c10a-11e6-8f58-ad3c6ee7602f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8e13e1c8-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="be6ee992-3249-11e6-ab4d-73a9260c8088" />
+  </predicate>
+  <predicate guid="da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d">
+    <object statement-guid="8e13e1c7-c10a-11e6-8f58-ad3c6ee7602f" type="literal">true</object>
+  </predicate>
+  <predicate guid="da1cca4d-3249-11e6-ab4d-73a9260c8088">
+    <object statement-guid="8e13e1c6-c10a-11e6-8f58-ad3c6ee7602f" type="aggregate" guid="8e13e14e-c10a-11e6-8f58-ad3c6ee7602f" />
+  </predicate>
+  <predicate guid="93454d73-324a-11e6-ab4d-73a9260c8088">
+    <object statement-guid="8e13e1a6-c10a-11e6-8f58-ad3c6ee7602f" type="aggregate" guid="8e13e14a-c10a-11e6-8f58-ad3c6ee7602f" />
+  </predicate>
+  <predicate guid="056a5019-324e-11e6-ab4d-73a9260c8088">
+    <object statement-guid="8e13e1cd-c10a-11e6-8f58-ad3c6ee7602f">
+      <resource guid="8e13e14f-c10a-11e6-8f58-ad3c6ee7602f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8e13e1cc-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="fe05275e-324d-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="08ce1480-324e-11e6-ab4d-73a9260c8088">
+          <object statement-guid="8e13e1cb-c10a-11e6-8f58-ad3c6ee7602f" type="literal">60</object>
+        </predicate>
+        <predicate guid="1cb9b842-324e-11e6-ab4d-73a9260c8088">
+          <object statement-guid="8e13e1ca-c10a-11e6-8f58-ad3c6ee7602f" type="literal">40</object>
+        </predicate>
+        <predicate guid="27c74f4a-324e-11e6-ab4d-73a9260c8088">
+          <object statement-guid="8e13e1c9-c10a-11e6-8f58-ad3c6ee7602f" type="literal">20</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

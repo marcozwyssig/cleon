@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e77f7342-6c8c-11e7-8bc1-2fb13127901b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e77f734e-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="e77f7343-6c8c-11e7-8bc1-2fb13127901b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e77f7347-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e77f7346-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e77f734e-6c8c-11e7-8bc1-2fb13127901b">
+      <resource guid="e77f7343-6c8c-11e7-8bc1-2fb13127901b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f8fa16dd-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e77f734c-6c8c-11e7-8bc1-2fb13127901b" type="literal">composites</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e77f734b-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="e77f734a-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="e77f7349-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+        </predicate>
+        <predicate guid="dd6d701d-e8a9-11e2-b67d-e515e6efcec9">
+          <object statement-guid="e77f7348-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e77f7345-6c8c-11e7-8bc1-2fb13127901b" type="literal">XmiComposite</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="e77f7344-6c8c-11e7-8bc1-2fb13127901b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

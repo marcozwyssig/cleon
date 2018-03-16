@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="00b8ce16-d872-11e4-aa2f-c11242a92b60">
+  <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <resource statement-guid="00ba2dae-d872-11e4-aa2f-c11242a92b60" type="resource" guid="00b9b87a-d872-11e4-aa2f-c11242a92b60" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="00b8f528-d872-11e4-aa2f-c11242a92b60" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="00b94349-d872-11e4-aa2f-c11242a92b60" type="literal">Asciidoctor</object>
+  </predicate>
+  <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <object statement-guid="00ba2dae-d872-11e4-aa2f-c11242a92b60">
+      <resource guid="00b9b87a-d872-11e4-aa2f-c11242a92b60">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="00b9df8c-d872-11e4-aa2f-c11242a92b60" type="resource" guid="11b444f7-dc94-11dd-8de2-bb051d76fa6e" />
+        </predicate>
+        <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
+          <object statement-guid="00ba7bcf-d872-11e4-aa2f-c11242a92b60" type="resource" guid="dd9941b6-d871-11e4-aa2f-c11242a92b60" />
+        </predicate>
+        <predicate guid="b8afc0be-fc5c-11de-a132-97280c50fe20">
+          <object statement-guid="a52f615f-d3e7-11e5-9dfc-cf0f3e030023" type="literal">true</object>
+        </predicate>
+        <predicate guid="7579c7fe-1b35-11e5-a133-7174798b83c4">
+          <object statement-guid="c65407b0-d3e7-11e5-9dfc-cf0f3e030023" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

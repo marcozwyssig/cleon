@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Actifsource_Documentation</title>
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="navigation">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="index.html">Actifsource_Documentation</a>
+                <ul>
+                  <li><a href="03_System_Scope_and_Context.html">03_System_Scope_and_Context</a>
+                      <ul>
+                      </ul></li>
+                  <li><a href="05_BuildingBlockView.html">05_BuildingBlockView</a>
+                      <ul>
+                        <li><a href="buildingblock.html">buildingblock</a>
+                            <ul>
+                            </ul></li>
+                      </ul></li>
+                </ul></li>
+          </ul>
+        </td>
+        <td id="main">
+          <h1>03_System_Scope_and_Context</h1>
+          <div>
+            <svg width="8" height="8"
+             viewBox="0.00 0.00 8.00 8.00">
+            <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4)">
+            <title>Design_03_System_Scope_and_Context</title>
+            <polygon fill="white" stroke="none" points="-4,4 -4,-4 4,-4 4,4 -4,4"/>
+            <!-- 03 -->
+            <g id="node1" class="node"><title>03</title>
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">03</text>
+            </g>
+            <!-- _System_Scope_and_Context -->
+            <g id="node2" class="node"><title>_System_Scope_and_Context</title>
+            <g id="a_node2"><a xlink:href="#03_System_Scope_and_Context" xlink:title="03_System_Scope_and_Context">
+            <polygon fill="darkorange" stroke="black" points="-101,18 -101,-18 101,-18 101,18 -101,18"/>
+            <text text-anchor="middle" x="0" y="3.7">03_System_Scope_and_Context</text>
+            </a>
+            </g>
+            </g>
+            <!-- System -->
+            <g id="node3" class="node"><title>System</title>
+            <g id="a_node3"><a xlink:href="#System" xlink:title="System">
+            <polygon fill="darkorange" stroke="black" points="-29,18 -29,-18 29,-18 29,18 -29,18"/>
+            <text text-anchor="middle" x="0" y="3.7">System</text>
+            </a>
+            </g>
+            </g>
+            <!-- _System_Scope_and_Context&#45;&gt;System -->
+            <g id="edge2" class="edge"><title>_System_Scope_and_Context&#45;&gt;System</title>
+            </g>
+            <!-- Zoo -->
+            <g id="node4" class="node"><title>Zoo</title>
+            <g id="a_node4"><a xlink:href="#Zoo" xlink:title="Zoo">
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">Zoo</text>
+            </a>
+            </g>
+            </g>
+            <!-- _System_Scope_and_Context&#45;&gt;Zoo -->
+            <g id="edge1" class="edge"><title>_System_Scope_and_Context&#45;&gt;Zoo</title>
+            </g>
+            </g>
+            </svg>
+            
+          </div>
+          <div>
+            <table class="box-table-a">          
+              <tr id="03_System_Scope_and_Context">
+                <th colspan="2"><pre>class <b>03_System_Scope_and_Context</b> extends <b>03_System_Scope_and_Context</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>softwareSystem</b> : SoftwareSystem[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>zoo</b> : <a href="#Zoo">Zoo</a>[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="03_System_Scope_and_Context">
+                <th colspan="2"><pre>class <b>03_System_Scope_and_Context</b> extends <b>Chapter</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Class Description</b><br>
+                  Contents
+                  The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.
+                  Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.
+                  
+                  Motivation
+                  The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.
+                  
+                  Form
+                  
+                  * Various context diagram (see below)
+                  * Lists of neighboring systems and their interfaces.<br>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>system</b> : <a href="#System">System</a>[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>neighboringSystems</b> : NeighboringSystem[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>domainContext</b> : 03_01_DomainContext[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>Identify *all*[^all_neighboring_systems] neighboring systems and specify all logical business data that is exchanged with the system under development. Add data formats and communication protocols with neighboring systems and the general environment if these are not specified in detail with the relevant components.<br><br>[^all_neighboring_systems]: We often tend to a pragmatic approach – but here we **insist** on a list of all (a-l-l) neighboring systems. Too many projects have failed because they were not aware of their neighbors. :-(<br><br>Motivation<br>Understanding the information exchange with neighboring systems (i.e. all input flows and all output flows).<br><br>Form<br>Logical context diagram.<br>In UML this can be simulated e.g. by class diagrams, use case diagrams, communications diagrams – i.e. all diagrams that represent the system as a black box and explain its interfaces to neighboring systems (in varying degrees of detail).<br>If there are many neighboring systems you can substitute the context diagram with a table, including all the neighboring systems, their inputs and their outputs.<br></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>technicalContext</b> : 03_02_TechnicalContext[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>Specification of the communication channels linking your system to neighboring systems and the environment.<br><br>Motivation<br>Understanding of the media used for information exchange with neighboring systems, and the environment.<br><br>Form<br>E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table of logical input and output flows of the logical context diagram (3.1) to the channels.</td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="System">
+                <th colspan="2"><pre>class <b>System</b> extends <b>TechnicalMember</b>, <b>DecompositionBuildingBlock</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>decompose</b> : Decomposite[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>decompose</b> : Decomposite[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="Zoo">
+                <th colspan="2"><pre>class <b>Zoo</b> extends <b>SoftwareSystem</b>, <b>SemanticVersionAware</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Referring Chapters</b><br>
+                  &bull; <a href="buildingblock.html">buildingblock</a><br>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>hasDependency</b> : Dependency[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>version</b> : SemanticVersion[1..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>categories</b> : CategoryAggregateDecomposite[0..N]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Actifsource ID=[095dd504-00ed-11e3-adfe-0f7600b4598f,479ae5c0-5b59-11e7-9702-abdab196c2a1,a98741fb-5b59-11e7-9702-abdab196c2a1,yPgn14C14d9SJL/hLaDtkojrjE4=] -->

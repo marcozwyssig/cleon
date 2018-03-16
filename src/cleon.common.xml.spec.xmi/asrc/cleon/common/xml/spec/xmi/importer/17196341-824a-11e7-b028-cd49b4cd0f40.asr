@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="17196341-824a-11e7-b028-cd49b4cd0f40">
+  <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <resource statement-guid="38fffa91-824a-11e7-b028-cd49b4cd0f40" type="resource" guid="38fffa8e-824a-11e7-b028-cd49b4cd0f40" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="17196343-824a-11e7-b028-cd49b4cd0f40" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="17196344-824a-11e7-b028-cd49b4cd0f40" type="literal">XmiImporter</object>
+  </predicate>
+  <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="18db863b-824a-11e7-b028-cd49b4cd0f40" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="461126a0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="1e3c04fa-824a-11e7-b028-cd49b4cd0f40" type="literal">Zwyssig Informatik GmbH</object>
+  </predicate>
+  <predicate guid="57635ae9-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="25677fcc-824a-11e7-b028-cd49b4cd0f40" type="literal">Imports a XMI as a Actifsource Metamodel</object>
+  </predicate>
+  <predicate guid="60f8f7f0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="2d3e07ad-824a-11e7-b028-cd49b4cd0f40" type="literal">Xmi Importer</object>
+  </predicate>
+  <predicate guid="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="38fffa91-824a-11e7-b028-cd49b4cd0f40">
+      <resource guid="38fffa8e-824a-11e7-b028-cd49b4cd0f40">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="38fffa90-824a-11e7-b028-cd49b4cd0f40" type="resource" guid="00595fb9-0f10-11e7-9a20-dfec81ac21a9" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ff5671f2-0f13-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="22bcab1b-824a-11e7-b028-cd49b4cd0f40" type="literal">xmi</object>
+  </predicate>
+</resource>
+

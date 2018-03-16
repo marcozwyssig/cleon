@@ -1,0 +1,320 @@
+project Sample "Sample" "1.0" 2016-01-01-00:00-+0000 - 2016-10-25-01:00-+0100 {
+  timezone "Europe/Zurich"
+  scenario plan "Plan Scenario" {
+    active yes
+  }
+}
+
+projectids Sample
+
+
+task schedule "Meilensteine" {
+  task MS20 "Meilenstein MS20" {
+    task s1 "Sprint 1" {
+      start 2016-01-21-00:00-+0000
+      end 2016-02-03-00:00-+0000
+      scheduling alap
+      scheduled
+    }
+    task s2 "Sprint 2" {
+      start 2016-01-02-00:00-+0000
+      end 2016-01-02-00:00-+0000
+      scheduling alap
+      scheduled
+    }
+    task s3 "Sprint 3" {
+      start 2016-05-27-00:00-+0100
+      end 2016-06-21-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s4 "Sprint 4" {
+      start 2016-06-22-00:00-+0100
+      end 2016-07-05-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s5 "Sprint 5" {
+      start 2016-07-06-00:00-+0100
+      end 2016-07-19-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s6 "Sprint 6" {
+      start 2016-07-20-00:00-+0100
+      end 2016-08-02-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s7 "Sprint 7" {
+      start 2016-08-03-00:00-+0100
+      end 2016-08-16-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s8 "Sprint 8" {
+      start 2016-08-17-00:00-+0100
+      end 2016-08-30-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s9 "Sprint 9" {
+      start 2016-08-31-00:00-+0100
+      end 2016-09-13-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s10 "Sprint 10" {
+      start 2016-09-14-00:00-+0100
+      end 2016-09-27-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+  }
+  task MS21 "Meilenstein MS21" {
+    task s11 "Sprint 11" {
+      start 2016-09-28-00:00-+0100
+      end 2016-10-11-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+    task s12 "Sprint 12" {
+      start 2016-10-12-00:00-+0100
+      end 2016-10-25-00:00-+0100
+      scheduling alap
+      scheduled
+    }
+  }
+}
+task workpackages "Arbeitspakete" {
+  task wp001 "WP-001 WorkpackageSample" {
+    task _Task_18 "LE-001 Module_A Backlog" {
+      task _Task_19 "Group_A" {
+        task _Task_20 "ST-001_Activity_A" {
+          start 2016-09-27-00:00-+0100
+          milestone
+          scheduled
+        }
+        task _Task_21 "ST-002_Activity_A" {
+          start 2016-09-27-00:00-+0100
+          milestone
+          scheduled
+        }
+      }
+    }
+    task _Task_22 "LE-002 Module_B Backlog" {
+      task _Task_23 "Group_B" {
+        task _Task_24 "ST-003_Activity_A" {
+          start 2016-09-27-00:00-+0100
+          milestone
+          scheduled
+        }
+        task _Task_25 "ST-004_Activity_A" {
+          start 2016-09-27-00:00-+0100
+          milestone
+          scheduled
+        }
+      }
+    }
+  }
+  task wp002 "WP-002 Workpackage B" {
+    depends workpackages.wp001
+    task _Task_27 "LE-003 Module V Backlog" {
+      start 2016-09-27-00:00-+0100
+      milestone
+      scheduled
+    }
+  }
+}
+task deliveries "Lieferobjekte" {
+  task _Task_29 "Simple 1" {
+    depends workpackages.wp001
+    start 2016-09-27-00:00-+0100
+    milestone
+    scheduled
+  }
+}
+task modules "Lieferergebnisse" {
+  task m1 "LE-001 Module_A" {
+    start 2016-01-01-00:00-+0000
+    milestone
+    scheduled
+  }
+  task m2 "LE-002 Module_B" {
+    depends modules.m1
+    start 2016-01-21-00:00-+0000
+    end 2016-09-27-00:00-+0100
+    scheduling asap
+    scheduled
+  }
+  task m3 "LE-003 Module V" {
+    start 2016-01-01-00:00-+0000
+    milestone
+    scheduled
+  }
+}
+supplement task schedule {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s1 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s2 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s3 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s4 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s5 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s6 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s7 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s8 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s9 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS20.s10 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS21 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS21.s11 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task schedule.MS21.s12 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_18 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_18._Task_19 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_18._Task_19._Task_20 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_18._Task_19._Task_21 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_22 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_22._Task_23 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_22._Task_23._Task_24 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp001._Task_22._Task_23._Task_25 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp002 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task workpackages.wp002._Task_27 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task deliveries {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task deliveries._Task_29 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task modules {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task modules.m1 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task modules.m2 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}
+supplement task modules.m3 {
+  complete 100.0
+  priority 500
+  projectid Sample
+}

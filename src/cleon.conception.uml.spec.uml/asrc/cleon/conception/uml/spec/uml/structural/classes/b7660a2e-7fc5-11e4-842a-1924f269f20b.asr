@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b7660a2e-7fc5-11e4-842a-1924f269f20b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="4dd90e1e-7fc6-11e4-842a-1924f269f20b" type="resource" guid="4dd84aca-7fc6-11e4-842a-1924f269f20b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b7663140-7fc5-11e4-842a-1924f269f20b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="badd7d64-7fc5-11e4-842a-1924f269f20b" type="resource" guid="2141695f-1144-11e3-b60e-ab478a3e1eca" />
+    <object statement-guid="f14911c2-7fc5-11e4-842a-1924f269f20b" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4dd90e1e-7fc6-11e4-842a-1924f269f20b">
+      <resource guid="4dd84aca-7fc6-11e4-842a-1924f269f20b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4dd871dc-7fc6-11e4-842a-1924f269f20b" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4dd898ed-7fc6-11e4-842a-1924f269f20b" type="literal">events</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4dd9d16f-7fc6-11e4-842a-1924f269f20b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4dd9f880-7fc6-11e4-842a-1924f269f20b" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="4dda94c1-7fc6-11e4-842a-1924f269f20b" type="resource" guid="42defe66-7fc6-11e4-842a-1924f269f20b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b768f061-7fc5-11e4-842a-1924f269f20b" type="literal">EventClass</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="0d367ffb-d856-11e4-a673-25ef060a52a7" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="f9b7fce6-b461-11e5-a3f4-497fd75158dc" type="resource" guid="f9b7fce3-b461-11e5-a3f4-497fd75158dc" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cf7dbe8c-b461-11e5-a3f4-497fd75158dc" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c701e4bc-b463-11e5-a3f4-497fd75158dc" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f9b7fce6-b461-11e5-a3f4-497fd75158dc">
+      <resource guid="f9b7fce3-b461-11e5-a3f4-497fd75158dc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f9b7fce5-b461-11e5-a3f4-497fd75158dc" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f9fcf529-b461-11e5-a3f4-497fd75158dc" type="literal">subItems</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f9b7fce7-b461-11e5-a3f4-497fd75158dc" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f9b7fce8-b461-11e5-a3f4-497fd75158dc" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="fbfa99ea-b461-11e5-a3f4-497fd75158dc" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cfff4b30-b461-11e5-a3f4-497fd75158dc" type="literal">AgendaItem</object>
+  </predicate>
+</resource>
+

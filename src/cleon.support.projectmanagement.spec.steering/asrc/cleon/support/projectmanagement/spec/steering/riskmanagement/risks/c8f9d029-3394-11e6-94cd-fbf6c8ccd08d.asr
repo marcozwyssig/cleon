@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c8f9d029-3394-11e6-94cd-fbf6c8ccd08d">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="caf997b1-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="caf9498e-3394-11e6-94cd-fbf6c8ccd08d" />
+    <resource statement-guid="cc5afcc6-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="cc5afcc3-3394-11e6-94cd-fbf6c8ccd08d" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8f9f73b-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8fa6c6d-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8fa455c-3394-11e6-94cd-fbf6c8ccd08d" type="literal">RiskType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="caf997b1-3394-11e6-94cd-fbf6c8ccd08d">
+      <resource guid="caf9498e-3394-11e6-94cd-fbf6c8ccd08d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="caf970a0-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="c8f9d029-3394-11e6-94cd-fbf6c8ccd08d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb6551a8-3394-11e6-94cd-fbf6c8ccd08d" type="literal">Risk</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="cc5afcc6-3394-11e6-94cd-fbf6c8ccd08d">
+      <resource guid="cc5afcc3-3394-11e6-94cd-fbf6c8ccd08d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cc5afcc5-3394-11e6-94cd-fbf6c8ccd08d" type="resource" guid="c8f9d029-3394-11e6-94cd-fbf6c8ccd08d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cc9cc0a3-3394-11e6-94cd-fbf6c8ccd08d" type="literal">Chance</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

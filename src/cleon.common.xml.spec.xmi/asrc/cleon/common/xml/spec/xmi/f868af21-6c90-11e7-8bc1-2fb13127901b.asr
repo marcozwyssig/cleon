@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f868af21-6c90-11e7-8bc1-2fb13127901b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0b9bd88a-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="0b9b8a67-6c91-11e7-8bc1-2fb13127901b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f868af23-6c90-11e7-8bc1-2fb13127901b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f868fd45-6c90-11e7-8bc1-2fb13127901b" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="fe9afd79-6c90-11e7-8bc1-2fb13127901b" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0b9bd88a-6c91-11e7-8bc1-2fb13127901b">
+      <resource guid="0b9b8a67-6c91-11e7-8bc1-2fb13127901b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0b9bb179-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="10d1019d-6c91-11e7-8bc1-2fb13127901b" type="literal">associations</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0b9c26ab-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0b9c26ac-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="144b825e-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="305770aa-6c80-11e7-acfe-cd993eb63ee2" />
+        </predicate>
+        <predicate guid="dd6d701d-e8a9-11e2-b67d-e515e6efcec9">
+          <object statement-guid="18f81a3e-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f868d634-6c90-11e7-8bc1-2fb13127901b" type="literal">XmiAssociation</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="03018c05-6c91-11e7-8bc1-2fb13127901b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

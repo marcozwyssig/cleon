@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="0ea15d7c-324f-11e6-ab4d-73a9260c8088" type="resource" guid="0ea15d79-324f-11e6-ab4d-73a9260c8088" />
+    <resource statement-guid="117c69f1-324f-11e6-ab4d-73a9260c8088" type="resource" guid="117c69ee-324f-11e6-ab4d-73a9260c8088" />
+    <resource statement-guid="14d16056-324f-11e6-ab4d-73a9260c8088" type="resource" guid="14d13943-324f-11e6-ab4d-73a9260c8088" />
+    <resource statement-guid="1aa3dadb-324f-11e6-ab4d-73a9260c8088" type="resource" guid="1aa3dad8-324f-11e6-ab4d-73a9260c8088" />
+    <resource statement-guid="361d16b0-324f-11e6-ab4d-73a9260c8088" type="resource" guid="361accbd-324f-11e6-ab4d-73a9260c8088" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f854e5b7-324e-11e6-ab4d-73a9260c8088" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f8572fa9-324e-11e6-ab4d-73a9260c8088" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f8572fa8-324e-11e6-ab4d-73a9260c8088" type="literal">RiskState</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="0ea15d7c-324f-11e6-ab4d-73a9260c8088">
+      <resource guid="0ea15d79-324f-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ea15d7b-324f-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0f3475bd-324f-11e6-ab4d-73a9260c8088" type="literal">In Plan</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="117c69f1-324f-11e6-ab4d-73a9260c8088">
+      <resource guid="117c69ee-324f-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="117c69f0-324f-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="121c0452-324f-11e6-ab4d-73a9260c8088" type="literal">In Watchlist</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="14d16056-324f-11e6-ab4d-73a9260c8088">
+      <resource guid="14d13943-324f-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="14d16055-324f-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="16826bb7-324f-11e6-ab4d-73a9260c8088" type="literal">In Steering</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1aa3dadb-324f-11e6-ab4d-73a9260c8088">
+      <resource guid="1aa3dad8-324f-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1aa3dada-324f-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="30d799ec-324f-11e6-ab4d-73a9260c8088" type="literal">Materialised</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="361d16b0-324f-11e6-ab4d-73a9260c8088">
+      <resource guid="361accbd-324f-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="361d16af-324f-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="37102941-324f-11e6-ab4d-73a9260c8088" type="literal">Closed</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b1bd0458-0e17-11e6-ae01-ef640c578b9b">
+  <owns predicate="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <resource statement-guid="bd050bc4-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="bd04e4b1-0e17-11e6-ae01-ef640c578b9b">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="bf7dd3fe-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="bf7d10a6-0e17-11e6-ae01-ef640c578b9b">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="bf7d10ad-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="bf7d10a7-0e17-11e6-ae01-ef640c578b9b" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b1bd045a-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b1bd2b6b-0e17-11e6-ae01-ef640c578b9b" type="literal">FunctionSpace</object>
+  </predicate>
+  <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <object statement-guid="bd050bc4-0e17-11e6-ae01-ef640c578b9b">
+      <resource guid="bd04e4b1-0e17-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd04e4b3-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="bf7dd3fe-0e17-11e6-ae01-ef640c578b9b">
+            <resource guid="bf7d10a6-0e17-11e6-ae01-ef640c578b9b">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="bf7d10aa-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="bf7d10a9-0e17-11e6-ae01-ef640c578b9b" type="literal">GetId</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="bf7d10ad-0e17-11e6-ae01-ef640c578b9b">
+                  <resource guid="bf7d10a7-0e17-11e6-ae01-ef640c578b9b">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="bf7d10ac-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="bf7d10ab-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="bf7d10a8-0e17-11e6-ae01-ef640c578b9b" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="ebc5b673-1df7-11e7-a5d4-016f0b98725a" type="literal">return String.format("OS%03d", outOfScope.selectIdentifier());</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="bd960125-0e17-11e6-ae01-ef640c578b9b" type="resource" guid="8e42702d-0c7e-11e6-86c5-87a8b520dd59" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="a37593a5-34c5-11e3-a656-57113ce37a6e">
+    <object statement-guid="3f46459a-0e19-11e6-ae01-ef640c578b9b" type="resource" guid="305afff5-0e19-11e6-ae01-ef640c578b9b" />
+  </predicate>
+</resource>
+

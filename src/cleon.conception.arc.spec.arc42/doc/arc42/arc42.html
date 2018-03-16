@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>arc42</title>
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td id="navigation">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="index.html">arc42</a>
+                <ul>
+                  <li><a href="arc42.html">arc42</a>
+                      <ul>
+                        <li><a href="04_Solution_Strategy.html">04_Solution_Strategy</a>
+                            <ul>
+                            </ul></li>
+                        <li><a href="05_BuildingBlock_View.html">05_BuildingBlock_View</a>
+                            <ul>
+                              <li><a href="BuildingBlock.html">BuildingBlock</a>
+                                  <ul>
+                                  </ul></li>
+                            </ul></li>
+                      </ul></li>
+                </ul></li>
+          </ul>
+        </td>
+        <td id="main">
+          <h1>arc42</h1>
+          <div>
+            <svg width="8" height="8"
+             viewBox="0.00 0.00 8.00 8.00">
+            <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 4)">
+            <title>Design_arc42</title>
+            <polygon fill="white" stroke="none" points="-4,4 -4,-4 4,-4 4,4 -4,4"/>
+            <!-- arc42 -->
+            <g id="node1" class="node"><title>arc42</title>
+            <g id="a_node1"><a xlink:href="#arc42" xlink:title="arc42">
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">arc42</text>
+            </a>
+            </g>
+            </g>
+            <!-- 05 -->
+            <g id="node2" class="node"><title>05</title>
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">05</text>
+            </g>
+            <!-- 01 -->
+            <g id="node4" class="node"><title>01</title>
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">01</text>
+            </g>
+            <!-- 07 -->
+            <g id="node6" class="node"><title>07</title>
+            <polygon fill="darkorange" stroke="black" points="-27,18 -27,-18 27,-18 27,18 -27,18"/>
+            <text text-anchor="middle" x="0" y="3.7">07</text>
+            </g>
+            <!-- NamedArc42 -->
+            <g id="node8" class="node"><title>NamedArc42</title>
+            <g id="a_node8"><a xlink:href="#NamedArc42" xlink:title="NamedArc42">
+            <polygon fill="darkorange" stroke="black" points="-45.5,18 -45.5,-18 45.5,-18 45.5,18 -45.5,18"/>
+            <text text-anchor="middle" x="0" y="3.7">NamedArc42</text>
+            </a>
+            </g>
+            </g>
+            <!-- _BuildingBlockView -->
+            <g id="node3" class="node"><title>_BuildingBlockView</title>
+            <g id="a_node3"><a xlink:href="#05_BuildingBlockView" xlink:title="05_buildingblockview &gt; documentElements">
+            <polygon fill="darkorange" stroke="black" points="-65.5,18 -65.5,-18 65.5,-18 65.5,18 -65.5,18"/>
+            <text text-anchor="middle" x="0" y="3.7">_BuildingBlockView</text>
+            </a>
+            </g>
+            </g>
+            <!-- _IntroductionAndGoals -->
+            <g id="node5" class="node"><title>_IntroductionAndGoals</title>
+            <g id="a_node5"><a xlink:href="#01_IntroductionAndGoals" xlink:title="01_introduction_and_goals &gt; documentElements">
+            <polygon fill="darkorange" stroke="black" points="-75,18 -75,-18 75,-18 75,18 -75,18"/>
+            <text text-anchor="middle" x="0" y="3.7">_IntroductionAndGoals</text>
+            </a>
+            </g>
+            </g>
+            <!-- _DeploymentView -->
+            <g id="node7" class="node"><title>_DeploymentView</title>
+            <g id="a_node7"><a xlink:href="#07_DeploymentView" xlink:title="07_deploymentview &gt; documentElements">
+            <polygon fill="darkorange" stroke="black" points="-60,18 -60,-18 60,-18 60,18 -60,18"/>
+            <text text-anchor="middle" x="0" y="3.7">_DeploymentView</text>
+            </a>
+            </g>
+            </g>
+            </g>
+            </svg>
+            
+          </div>
+          <div>
+            <table class="box-table-a">          
+              <tr id="arc42">
+                <th colspan="2"><pre>class <b>arc42</b> extends <b>Document</b>, <b>GlossaryAware</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>style</b> : Style[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>withToC</b> : BooleanLiteral[1..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>A literal where only the two values 'false' and 'true' are accepted.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>imgDir</b> : TextLiteral[0..N]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>A Literal that accepts multiple lines of text.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>properties</b> : Properties[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>glossary</b> : Glossary[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>01_introduction_and_goals</b> : <a href="#01_IntroductionAndGoals">01_IntroductionAndGoals</a>[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.<br>This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.<br><br></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>02_architecture_constraints</b> : 02_Architecture_Constraints[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>Any requirement that constrains software architects in their freedom of design decisions or the development process.<br><br>Motivation<br>Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.<br>Constraints must always be dealt with; they may be negotiable, though.<br><br>Form<br>Informal lists, structured by the sub-sections of this section.<br><br>Background information<br>In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.<br>The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>03_system_scope_and_context</b> : 03_System_Scope_and_Context[1..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.<br>Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.<br><br>Motivation<br>The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.<br><br>Form<br><br>* Various context diagram (see below)<br>* Lists of neighboring systems and their interfaces.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>05_buildingblockview</b> : <a href="#05_BuildingBlockView">05_BuildingBlockView</a>[1..N]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents.<br>Static decomposition of the system into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships thereof.<br><br>Motivation.<br>This is the most important view, that must be part of each architecture documentation. In building construction this would be the floor plan.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>07_deploymentview</b> : <a href="#07_DeploymentView">07_DeploymentView</a>[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.<br>Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.<br><br>Motivation<br>Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.<br><br>Form<br>The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)<br>Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.</td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="05_BuildingBlockView">
+                <th colspan="2"><pre>class <b>05_BuildingBlockView</b> extends <b>Chapter</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Class Description</b><br>
+                  Contents.
+                  Static decomposition of the system into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships thereof.
+                  
+                  Motivation.
+                  This is the most important view, that must be part of each architecture documentation. In building construction this would be the floor plan.<br>
+                  <b>Referring Chapters</b><br>
+                  &bull; <a href="05_BuildingBlock_View.html">05_BuildingBlock_View</a><br>
+                  &bull; <a href="BuildingBlock.html">BuildingBlock</a><br>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>level_1</b> : Level[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>level_2</b> : Level[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>level_3</b> : Level[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>level_4</b> : Level[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>level_5</b> : Level[0..1]</pre></td>
+                <td withd="100%"></td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="01_IntroductionAndGoals">
+                <th colspan="2"><pre>class <b>01_IntroductionAndGoals</b> extends <b>Chapter</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Class Description</b><br>
+                  The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
+                  This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.
+                  
+                  <br>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>qualityGoals</b> : QualityGoals[1..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>The top three (max five) goals for the architecture and/or constraints whose fulfillment is of highest importance to the major stakeholders. Goals that define the architecture’s quality could be:<br><br>* availability<br>* modifiability<br>* performance<br>* security<br>* testability<br>* usability<br><br>Motivation<br>If you as an architect do not know how the quality of your work can be judged …<br><br>Form<br>Simple tabular representation, ordered by priorities<br><br>Background Information<br>*NEVER* start developing an architecture if these goals have not been put into writing and have not been signed by the major stakeholders.</td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="07_DeploymentView">
+                <th colspan="2"><pre>class <b>07_DeploymentView</b> extends <b>Chapter</b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                  <b>Class Description</b><br>
+                  Contents
+                  This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.
+                  Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.
+                  
+                  Motivation
+                  Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.
+                  
+                  Form
+                  The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)
+                  Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.<br>
+                </td>
+              </tr>
+              <tr>
+                <td class="empty" colspan="2"></td>
+              </tr>
+              <tr id="NamedArc42">
+                <th colspan="2"><pre>class <b>NamedArc42</b> extends <b>NamedDocument</b>, <b><a href="#arc42">arc42</a></b></pre></th>
+              </tr>
+              <tr>
+                <td>
+                </td>
+                <td>
+                </td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>01_introduction_and_goals</b> : <a href="#01_IntroductionAndGoals">01_IntroductionAndGoals</a>[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.<br>This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.<br><br></td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>02_architecture_constraints</b> : 02_Architecture_Constraints[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>Any requirement that constrains software architects in their freedom of design decisions or the development process.<br><br>Motivation<br>Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.<br>Constraints must always be dealt with; they may be negotiable, though.<br><br>Form<br>Informal lists, structured by the sub-sections of this section.<br><br>Background information<br>In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.<br>The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>03_system_scope_and_context</b> : 03_System_Scope_and_Context[1..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.<br>Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.<br><br>Motivation<br>The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.<br><br>Form<br><br>* Various context diagram (see below)<br>* Lists of neighboring systems and their interfaces.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>05_buildingblockview</b> : <a href="#05_BuildingBlockView">05_BuildingBlockView</a>[1..N]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents.<br>Static decomposition of the system into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships thereof.<br><br>Motivation.<br>This is the most important view, that must be part of each architecture documentation. In building construction this would be the floor plan.</td>
+              </tr>
+              <tr>
+                <td withd="0%"><pre><b>07_deploymentview</b> : <a href="#07_DeploymentView">07_DeploymentView</a>[0..1]</pre></td>
+                <td withd="100%"><b>Target Description</b><br>Contents<br>This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.<br>Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.<br><br>Motivation<br>Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.<br><br>Form<br>The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)<br>Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.</td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!-- Actifsource ID=[095dd504-00ed-11e3-adfe-0f7600b4598f,0ea283c4-5db3-11e7-abff-d3562f756602,144d2a50-5db3-11e7-abff-d3562f756602,mOxPylNp4fTtdeN4e0L9s2JCjDI=] -->

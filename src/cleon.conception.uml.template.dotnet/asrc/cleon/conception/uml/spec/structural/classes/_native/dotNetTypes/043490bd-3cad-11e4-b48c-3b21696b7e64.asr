@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="043490bd-3cad-11e4-b48c-3b21696b7e64">
+  <owns predicate="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <resource statement-guid="043490c4-3cad-11e4-b48c-3b21696b7e64" type="resource" guid="043490be-3cad-11e4-b48c-3b21696b7e64" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="043490bf-3cad-11e4-b48c-3b21696b7e64" type="resource" guid="743e6460-a3b9-11e3-8095-f11af53ab806" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="043490c0-3cad-11e4-b48c-3b21696b7e64" type="literal">System.Type</object>
+  </predicate>
+  <predicate guid="2d1dec8d-29d7-11e3-ac34-51079bb270e3">
+    <object statement-guid="043490c1-3cad-11e4-b48c-3b21696b7e64" type="literal">false</object>
+  </predicate>
+  <predicate guid="5485e648-a3bb-11e3-8095-f11af53ab806">
+    <object statement-guid="043490c4-3cad-11e4-b48c-3b21696b7e64">
+      <resource guid="043490be-3cad-11e4-b48c-3b21696b7e64">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="043490c2-3cad-11e4-b48c-3b21696b7e64" type="resource" guid="50dae04c-a3bb-11e3-8095-f11af53ab806" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="043490c3-3cad-11e4-b48c-3b21696b7e64" type="literal">T1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d930ffa1-3d16-11e5-871f-6beac6a7c24b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="de612061-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="a1917fbb-3d16-11e5-871f-6beac6a7c24b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d930ffa3-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d930ffa5-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="4c12c1e8-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de612061-3d16-11e5-871f-6beac6a7c24b">
+      <resource guid="a1917fbb-3d16-11e5-871f-6beac6a7c24b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1917fbd-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1917fbe-3d16-11e5-871f-6beac6a7c24b" type="literal">best</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a1917fc0-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a1917fc1-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="b20931db-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a1917fc2-3d16-11e5-871f-6beac6a7c24b" type="resource" guid="38e891b4-3c1a-11e5-9962-cf3035adb922" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d930ffa4-3d16-11e5-871f-6beac6a7c24b" type="literal">Best</object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f25d187d-2f08-11e6-8bd9-a77b8d2a3a0e">
+  <owns predicate="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <resource statement-guid="f3bf19e5-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="f3bef2d2-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="f9a0135b-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="f99fc537-2f08-11e6-8bd9-a77b8d2a3a0e">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="fd9568ec-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="fd9541d9-2f08-11e6-8bd9-a77b8d2a3a0e" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+    <resource statement-guid="4b1098ef-3250-11e6-ab4d-73a9260c8088" type="resource" guid="4b1023bc-3250-11e6-ab4d-73a9260c8088">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="4fb2d0d5-3250-11e6-ab4d-73a9260c8088" type="resource" guid="4fb05fd1-3250-11e6-ab4d-73a9260c8088">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="5e242c4b-3250-11e6-ab4d-73a9260c8088" type="resource" guid="5e21bb48-3250-11e6-ab4d-73a9260c8088" />
+          </owns>
+        </resource>
+        <resource statement-guid="7a907aa8-3250-11e6-ab4d-73a9260c8088" type="resource" guid="7a8e30af-3250-11e6-ab4d-73a9260c8088">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="7a8e30b7-3250-11e6-ab4d-73a9260c8088" type="resource" guid="7a8e30b0-3250-11e6-ab4d-73a9260c8088" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f25d3f8f-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f25d66a0-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">FunctionSpace</object>
+  </predicate>
+  <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <object statement-guid="f3bf19e5-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="f3bef2d2-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f3bf19e4-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="f9a0135b-2f08-11e6-8bd9-a77b8d2a3a0e">
+            <resource guid="f99fc537-2f08-11e6-8bd9-a77b8d2a3a0e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f99fc539-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fa8bf9fc-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">GetId</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="fd9568ec-2f08-11e6-8bd9-a77b8d2a3a0e">
+                  <resource guid="fd9541d9-2f08-11e6-8bd9-a77b8d2a3a0e">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="fd9541db-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="fe1ebd2d-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="f99fec4a-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="0eff4443-2f09-11e6-8bd9-a77b8d2a3a0e" type="literal">return java.lang.String.format("RK-%03d", risk.selectIdentifier());</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="f466a486-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="70f3fadf-2efd-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4b1098ef-3250-11e6-ab4d-73a9260c8088">
+      <resource guid="4b1023bc-3250-11e6-ab4d-73a9260c8088">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4b104ace-3250-11e6-ab4d-73a9260c8088" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="4fb2d0d5-3250-11e6-ab4d-73a9260c8088">
+            <resource guid="4fb05fd1-3250-11e6-ab4d-73a9260c8088">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="4fb05fd3-3250-11e6-ab4d-73a9260c8088" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="507d25b6-3250-11e6-ab4d-73a9260c8088" type="literal">IsOpen</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="5e242c4b-3250-11e6-ab4d-73a9260c8088">
+                  <resource guid="5e21bb48-3250-11e6-ab4d-73a9260c8088">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="5e21bb4a-3250-11e6-ab4d-73a9260c8088" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="5e81406c-3250-11e6-ab4d-73a9260c8088" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="4fb05fd4-3250-11e6-ab4d-73a9260c8088" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="56d264c7-3250-11e6-ab4d-73a9260c8088" type="literal">return !riskState.isClosed();</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="7a907aa8-3250-11e6-ab4d-73a9260c8088">
+            <resource guid="7a8e30af-3250-11e6-ab4d-73a9260c8088">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7a8e30b1-3250-11e6-ab4d-73a9260c8088" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7a8e30b3-3250-11e6-ab4d-73a9260c8088" type="literal">IsClosed</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="7a8e30b7-3250-11e6-ab4d-73a9260c8088">
+                  <resource guid="7a8e30b0-3250-11e6-ab4d-73a9260c8088">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="7a8e30b5-3250-11e6-ab4d-73a9260c8088" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="7a8e30b6-3250-11e6-ab4d-73a9260c8088" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="7a8e30b2-3250-11e6-ab4d-73a9260c8088" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="7a8e30b4-3250-11e6-ab4d-73a9260c8088" type="literal">return riskState.isClosed();</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="4bac63c0-3250-11e6-ab4d-73a9260c8088" type="resource" guid="f854e5b5-324e-11e6-ab4d-73a9260c8088" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

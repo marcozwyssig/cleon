@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="2ed622a1-20ba-11e6-9bb5-2b7a5dccc043">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="64e6ef99-20be-11e6-9bb5-2b7a5dccc043" type="resource" guid="74220389-c1dc-11e5-bbf3-bdd12a9e2b3d" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2ed649b3-20ba-11e6-9bb5-2b7a5dccc043" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e2d85470-20bb-11e6-9bb5-2b7a5dccc043" type="resource" guid="4ae61945-0d05-11e6-be97-7d1235599779" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64e6ef99-20be-11e6-9bb5-2b7a5dccc043">
+      <resource guid="74220389-c1dc-11e5-bbf3-bdd12a9e2b3d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="74222a9b-c1dc-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="74f272ef-c1dc-11e5-bbf3-bdd12a9e2b3d" type="literal">deadline</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="7422eded-c1dc-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="742314fe-c1dc-11e5-bbf3-bdd12a9e2b3d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="33114453-e5e1-11e5-8760-af4ac9220eef" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="54a5cd35-c6aa-11e5-a68d-835c1648a4d8" type="resource" guid="5b27bd7f-c37c-11e5-9455-d97b1b986284" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2ed697d4-20ba-11e6-9bb5-2b7a5dccc043" type="literal">TargetDate</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="2ed6bee6-20ba-11e6-9bb5-2b7a5dccc043" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

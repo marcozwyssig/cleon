@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>AP01 WorkpackageSample</db:title>
+	
+	
+	<db:chapter>
+		<db:title>Ziele</db:title>
+		<db:para></db:para>
+		
+		<db:para>In der nachfolgenden Tabelle werden die übergeordneten Ziele des Projekts für das Arbeitspaket je nach Relevanz zugeordnet und beschrieben:</db:para> 
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="15%" />
+			<db:col width="15%" />
+			<db:col width="70%" />
+			<db:thead>
+				<db:tr>
+					<db:th>Nummer</db:th>
+					<db:th>Name</db:th>
+					<db:th>Arbeitspaketbeitrag für die Zielerreichung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Z01</db:para>
+					</db:td>
+					<db:td>
+						<db:para>My Goal</db:para>
+					</db:td>
+					<db:td>
+						<db:para>MyGoal 1 ddd
+						         dfsdffdsfsdf
+						         sdfsdf</db:para>
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
+		
+	</db:chapter>
+	<db:chapter>
+		<db:title>Aktivit&#228;ten</db:title>
+		<db:para></db:para>
+		
+		
+		<db:section>
+			<db:title>LE01 Module_A Aktivit&#228;ten</db:title>
+			<db:para></db:para>
+			
+			<db:para>In der nachfolgenden Tabelle wird eine Zusammenfassung der Aktivitäten für das Lieferergebnis LE01 Module_A dargestellt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+				
+					<db:tr>
+						<db:td>
+							Geplanter Aufwand [SP]		
+						</db:td>
+						<db:td>
+										
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							Geplanter Total Aufwand [SP]	
+						</db:td>
+						<db:td>
+							0.0			
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							Aufwand [SP]	
+						</db:td>
+						<db:td>
+							13.0			
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			<db:para>In der nachfolgenden Tabelle werden alle Aktivitäten für das Lieferergebnis LE01 Module_A aufgelistet, welche das Arbeitspaket behandelt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="20%" />
+				<db:col width="30%" />
+				<db:col width="10%" />
+				<db:col width="10%" />		
+				<db:col width="7%" />
+				<db:col width="7%" />
+				<db:col width="10%" />
+				<db:col width="10%" />	
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+						<db:th>S</db:th>	
+						<db:th>P</db:th>							
+						<db:th>A [SP]</db:th>
+						<db:th>V</db:th>
+						<db:th>Sprint</db:th>
+						<db:th>Bed.</db:th>		
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>	
+							G001_Group_A
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Done
+						</db:td>
+						<db:td>
+							Must have
+						</db:td>
+						<db:td>
+							13.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>	
+							A010_Activity_A
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Done
+						</db:td>
+						<db:td>
+							Nice to have
+						</db:td>
+						<db:td>
+							13.0
+						</db:td>
+						<db:td>
+							pme
+						</db:td>
+						<db:td>
+							Sprint 1
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>	
+							A002_Activity_A
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Done
+						</db:td>
+						<db:td>
+							Nice to have
+						</db:td>
+						<db:td>
+							0.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Sprint 3
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>	
+							G011_Test
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Input
+						</db:td>
+						<db:td>
+							Should have
+						</db:td>
+						<db:td>
+							0.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+		<db:section>
+			<db:title>LE02 Module_B Aktivit&#228;ten</db:title>
+			<db:para></db:para>
+			
+			<db:para>In der nachfolgenden Tabelle wird eine Zusammenfassung der Aktivitäten für das Lieferergebnis LE02 Module_B dargestellt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+				
+					<db:tr>
+						<db:td>
+							Geplanter Aufwand [SP]		
+						</db:td>
+						<db:td>
+										
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							Geplanter Total Aufwand [SP]	
+						</db:td>
+						<db:td>
+							0.0			
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							Aufwand [SP]	
+						</db:td>
+						<db:td>
+							13.0			
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			<db:para>In der nachfolgenden Tabelle werden alle Aktivitäten für das Lieferergebnis LE02 Module_B aufgelistet, welche das Arbeitspaket behandelt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="20%" />
+				<db:col width="30%" />
+				<db:col width="10%" />
+				<db:col width="10%" />		
+				<db:col width="7%" />
+				<db:col width="7%" />
+				<db:col width="10%" />
+				<db:col width="10%" />	
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+						<db:th>S</db:th>	
+						<db:th>P</db:th>							
+						<db:th>A [SP]</db:th>
+						<db:th>V</db:th>
+						<db:th>Sprint</db:th>
+						<db:th>Bed.</db:th>		
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>	
+							G005_Group_B
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Input
+						</db:td>
+						<db:td>
+							Must have
+						</db:td>
+						<db:td>
+							13.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>	
+							A003_Activity_A
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Done
+						</db:td>
+						<db:td>
+							Nice to have
+						</db:td>
+						<db:td>
+							13.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>	
+							A004_Activity_A
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							Done
+						</db:td>
+						<db:td>
+							Nice to have
+						</db:td>
+						<db:td>
+							0.0
+						</db:td>
+						<db:td>
+							
+						</db:td>
+						<db:td>
+							
+						</db:td>												
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter>
+		<db:title>Mittelbedarf</db:title>
+		<db:para></db:para>
+		
+		
+		<db:section>
+			<db:title>Mittelbedarf LE01 Module_A</db:title>
+			<db:para></db:para>
+			
+			<db:section>
+				<db:title>Rollenbedarf</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle Rollen der unterschiedlichen Organisationen aufgelistet, welche für die Abwicklung des Arbeitspakets notwendig sind.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="20%" />
+					<db:col width="20%" />
+					<db:col width="20%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Rolle</db:th>
+							<db:th>Organisation</db:th>
+							<db:th>Bedarfsaufwand [h]</db:th>	
+							<db:th>Beschreibung</db:th>							
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Betriebsverantwortlicher</db:para>
+							</db:td>
+							<db:td>
+								<db:para>sss</db:para>
+							</db:td>
+							<db:td>
+								<db:para>1111</db:para>
+							</db:td>
+							<db:td>
+								<db:para></db:para>
+							</db:td>									
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			<db:section>
+				<db:title>Konsumierende Dienste</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle konsumierende Dienste aufgelistet, welche für die Abwicklung des Arbeitspakets vorausgesetzt werden.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Nummer</db:th>
+							<db:th>Name</db:th>
+							<db:th>Verfügbarkeit</db:th>	
+							<db:th>Klassifikationsstufe</db:th>							
+							<db:th>Fähigkeiten</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para></db:para>
+							</db:td>
+							<db:td>
+								<db:para>dddd</db:para>
+							</db:td>
+							<db:td>
+								<db:para></db:para>
+							</db:td>
+							<db:td>
+								<db:para></db:para>
+							</db:td>	
+							<db:td>
+								<db:para></db:para>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			
+		</db:section>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,a72acf42-bbc9-11e6-997f-d73ea5a3671c,Hash] -->

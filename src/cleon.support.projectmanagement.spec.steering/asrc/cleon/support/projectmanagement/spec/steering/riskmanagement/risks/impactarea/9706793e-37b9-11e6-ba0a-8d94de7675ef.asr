@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="9706793e-37b9-11e6-ba0a-8d94de7675ef">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="164368ee-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="1642306b-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="19a30eb4-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="19a2e7a1-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="1f45035a-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="1f44b537-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="267d0150-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="267cda3d-37ba-11e6-ba0a-8d94de7675ef" />
+    <resource statement-guid="2eb81766-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="2eb7f053-37ba-11e6-ba0a-8d94de7675ef" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="97067943-37b9-11e6-ba0a-8d94de7675ef" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="97067942-37b9-11e6-ba0a-8d94de7675ef" type="literal">Staff</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="164368ee-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="1642306b-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="16427e8d-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="169113bf-37ba-11e6-ba0a-8d94de7675ef" type="literal">STAFF</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="185c5de0-37ba-11e6-ba0a-8d94de7675ef" type="literal">Ressourcen</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="19a30eb4-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="19a2e7a1-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="19a2e7a3-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1af41fc5-37ba-11e6-ba0a-8d94de7675ef" type="literal">CONTS</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="1c5c6256-37ba-11e6-ba0a-8d94de7675ef" type="literal">Contract Scope</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1f45035a-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="1f44b537-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1f44dc49-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="22e338bb-37ba-11e6-ba0a-8d94de7675ef" type="literal">FR</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="235e833c-37ba-11e6-ba0a-8d94de7675ef" type="literal">Funtional Requirement</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="267d0150-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="267cda3d-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="267d014f-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="292e3ea1-37ba-11e6-ba0a-8d94de7675ef" type="literal">NFR/SLA</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="2bf574f2-37ba-11e6-ba0a-8d94de7675ef" type="literal">NFRS / SLA</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="2eb81766-37ba-11e6-ba0a-8d94de7675ef">
+      <resource guid="2eb7f053-37ba-11e6-ba0a-8d94de7675ef">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2eb7f055-37ba-11e6-ba0a-8d94de7675ef" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2f364817-37ba-11e6-ba0a-8d94de7675ef" type="literal">EST</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="30c80ba8-37ba-11e6-ba0a-8d94de7675ef" type="literal">Estimating</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

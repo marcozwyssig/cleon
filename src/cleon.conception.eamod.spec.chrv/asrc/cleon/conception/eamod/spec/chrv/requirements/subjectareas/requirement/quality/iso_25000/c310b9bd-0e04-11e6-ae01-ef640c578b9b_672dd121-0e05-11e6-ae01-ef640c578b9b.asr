@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="672dd121-0e05-11e6-ae01-ef640c578b9b">
+  <owns predicate="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <resource statement-guid="6f83c2c4-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="6f839bb1-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="7851f11a-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="7851a2f7-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="7d217a90-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="7d21537d-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="82059d76-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="82057663-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="883db79c-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="883d6979-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="9058e9a2-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="9058746f-0e05-11e6-ae01-ef640c578b9b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="672dd123-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5147d97b-0e04-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="672df834-0e05-11e6-ae01-ef640c578b9b" type="literal">Usability</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="6e9a4d20-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product or system can be used by specified users to achieve specified goals with effectiveness, efficiency and satisfaction in a specified context of use</object>
+  </predicate>
+  <predicate guid="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <object statement-guid="6f83c2c4-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="6f839bb1-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6f83c2c3-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7527b335-0e05-11e6-ae01-ef640c578b9b" type="literal">Appropriateness recognizability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="77c1e616-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which users can recognize whether a product or system is appropriate for their needs.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7851f11a-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="7851a2f7-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7851ca09-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7a00b28b-0e05-11e6-ae01-ef640c578b9b" type="literal">Learnability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="7c8d02bc-0e05-11e6-ae01-ef640c578b9b" type="literal">degree to which a product or system can be used by specified users to achieve specified goals of learning to use the product or system with effectiveness, efficiency, freedom from risk and satisfaction in a specified context of use.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7d217a90-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="7d21537d-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7d21537f-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7edee201-0e05-11e6-ae01-ef640c578b9b" type="literal">Operability</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="816d06f2-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product or system has attributes that make it easy to operate and control.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="82059d76-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="82057663-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="82059d75-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="846c8b57-0e05-11e6-ae01-ef640c578b9b" type="literal">User error protection</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="87644788-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a system protects users against making errors.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="883db79c-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="883d6979-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="883d908b-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ac4898d-0e05-11e6-ae01-ef640c578b9b" type="literal">User interface aesthetics</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="8d86419e-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a user interface enables pleasing and satisfying interaction for the user.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9058e9a2-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="9058746f-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9058c291-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="90e1efc3-0e05-11e6-ae01-ef640c578b9b" type="literal">Accessibility</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="9441bc94-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which a product or system can be used by people with the widest range of characteristics and capabilities to achieve a specified goal in a specified context of use</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

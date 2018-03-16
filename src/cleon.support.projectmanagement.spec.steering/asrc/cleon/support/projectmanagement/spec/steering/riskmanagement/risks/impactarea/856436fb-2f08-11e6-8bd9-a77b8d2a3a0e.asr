@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="856436fb-2f08-11e6-8bd9-a77b8d2a3a0e">
+  <owns predicate="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <resource statement-guid="85643704-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="856436fc-2f08-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="85643708-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="856436fd-2f08-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="8564370c-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="856436fe-2f08-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="b620deb1-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="b618ef6d-2f08-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="b6b5cbb6-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="b6b3a8d2-2f08-11e6-8bd9-a77b8d2a3a0e" />
+    <resource statement-guid="b74b06db-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="b7495927-2f08-11e6-8bd9-a77b8d2a3a0e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="856436ff-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="6e1c17e6-2f07-11e6-8bd9-a77b8d2a3a0e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="85643700-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Finance</object>
+  </predicate>
+  <predicate guid="8dbae125-2f07-11e6-8bd9-a77b8d2a3a0e">
+    <object statement-guid="85643704-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="856436fc-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85643701-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85643702-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">FIN</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="85643703-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Finance</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="85643708-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="856436fd-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85643705-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85643706-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">LEG</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="85643707-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Legal</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8564370c-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="856436fe-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85643709-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8564370a-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">DEL</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="8564370b-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Delivery</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b620deb1-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="b618ef6d-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b618ef6e-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b618ef6f-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">C&amp;U</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="b618ef70-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Customer &amp; Users</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b6b5cbb6-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="b6b3a8d2-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b6b3a8d3-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b6b3a8d4-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">SUP/PAR</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="b6b3a8d5-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Suppliers, Partners</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b74b06db-2f08-11e6-8bd9-a77b8d2a3a0e">
+      <resource guid="b7495927-2f08-11e6-8bd9-a77b8d2a3a0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b7495928-2f08-11e6-8bd9-a77b8d2a3a0e" type="resource" guid="7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b7495929-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">ORG</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="b749592a-2f08-11e6-8bd9-a77b8d2a3a0e" type="literal">Organisation</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="facb470c-0de0-11e6-a33d-238391a68770">
+  <owns predicate="d7b0e022-0c87-11e6-86c5-87a8b520dd59">
+    <resource statement-guid="0189ce94-0de1-11e6-a33d-238391a68770" type="resource" guid="0189a781-0de1-11e6-a33d-238391a68770" />
+    <resource statement-guid="1161bfa3-0de1-11e6-a33d-238391a68770" type="resource" guid="1161988c-0de1-11e6-a33d-238391a68770" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="facb470e-0de0-11e6-a33d-238391a68770" type="resource" guid="7cdaa198-0c87-11e6-86c5-87a8b520dd59" />
+  </predicate>
+  <predicate guid="d7b0e022-0c87-11e6-86c5-87a8b520dd59">
+    <object statement-guid="0189ce94-0de1-11e6-a33d-238391a68770">
+      <resource guid="0189a781-0de1-11e6-a33d-238391a68770">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0189a783-0de1-11e6-a33d-238391a68770" type="resource" guid="8781d59d-0c87-11e6-86c5-87a8b520dd59" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="06536547-0de1-11e6-a33d-238391a68770" type="literal">ikt_1</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="0e30f209-0de1-11e6-a33d-238391a68770" type="literal">blababasdasd</object>
+          <object statement-guid="0eff177a-0de1-11e6-a33d-238391a68770" type="literal">asdaSDASDADS</object>
+          <object statement-guid="0f96275b-0de1-11e6-a33d-238391a68770" type="literal">ASDASD</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="1161bfa3-0de1-11e6-a33d-238391a68770">
+      <resource guid="1161988c-0de1-11e6-a33d-238391a68770">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1161988d-0de1-11e6-a33d-238391a68770" type="resource" guid="8781d59d-0c87-11e6-86c5-87a8b520dd59" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1161988e-0de1-11e6-a33d-238391a68770" type="literal">ikt_2</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

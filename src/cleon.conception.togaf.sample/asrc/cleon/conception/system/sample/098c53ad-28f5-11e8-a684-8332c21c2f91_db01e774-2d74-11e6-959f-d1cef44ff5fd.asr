@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="db01e774-2d74-11e6-959f-d1cef44ff5fd">
+  <owns predicate="c26d78c0-2d70-11e6-959f-d1cef44ff5fd">
+    <resource statement-guid="e0ee7918-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="e0ee5205-2d74-11e6-959f-d1cef44ff5fd" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db01e776-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="01fe9fef-2d70-11e6-959f-d1cef44ff5fd" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="dcf775e8-2d74-11e6-959f-d1cef44ff5fd" type="literal">Oracle</object>
+  </predicate>
+  <predicate guid="c26d78c0-2d70-11e6-959f-d1cef44ff5fd">
+    <object statement-guid="e0ee7918-2d74-11e6-959f-d1cef44ff5fd">
+      <resource guid="e0ee5205-2d74-11e6-959f-d1cef44ff5fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e0ee5207-2d74-11e6-959f-d1cef44ff5fd" type="resource" guid="b3803688-2d70-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+        <predicate guid="b3803689-2d70-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="e19df2fd-2d74-11e6-959f-d1cef44ff5fd" type="aggregate" guid="e19dcbea-2d74-11e6-959f-d1cef44ff5fd" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

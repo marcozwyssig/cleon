@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="18dcaeeb-0e05-11e6-ae01-ef640c578b9b">
+  <owns predicate="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <resource statement-guid="30df1358-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="30deec45-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="372fe59e-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="372f977b-0e05-11e6-ae01-ef640c578b9b" />
+    <resource statement-guid="3e5a7614-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="3e5a7611-0e05-11e6-ae01-ef640c578b9b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="18dcd5fd-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5147d97b-0e04-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1af72b09-0e05-11e6-ae01-ef640c578b9b" type="literal">Efficiency</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="1f18731a-0e05-11e6-ae01-ef640c578b9b" type="literal">This characteristic represents the performance relative to the amount of resources used under stated conditions.</object>
+  </predicate>
+  <predicate guid="6f21e857-0e04-11e6-ae01-ef640c578b9b">
+    <object statement-guid="30df1358-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="30deec45-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="30df1357-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="33ce6b19-0e05-11e6-ae01-ef640c578b9b" type="literal">Time behaviour</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3672890a-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which the response and processing times and throughput rates of a product or system, when performing its functions, meet requirements.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="372fe59e-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="372f977b-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="372f977d-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3971712f-0e05-11e6-ae01-ef640c578b9b" type="literal">Resource utilization</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3bc9e020-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which the amounts and types of resources used by a product or system, when performing its functions, meet requirements.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3e5a7614-0e05-11e6-ae01-ef640c578b9b">
+      <resource guid="3e5a7611-0e05-11e6-ae01-ef640c578b9b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3e5a7613-0e05-11e6-ae01-ef640c578b9b" type="resource" guid="5d0697e0-0e04-11e6-ae01-ef640c578b9b" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="42722137-0e05-11e6-ae01-ef640c578b9b" type="literal">Capacity</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3fef1fd6-0e05-11e6-ae01-ef640c578b9b" type="literal">Degree to which the maximum limits of a product or system parameter meet requirements.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

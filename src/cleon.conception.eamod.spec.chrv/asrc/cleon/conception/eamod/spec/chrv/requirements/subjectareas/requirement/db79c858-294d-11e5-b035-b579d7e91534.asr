@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="db79c858-294d-11e5-b035-b579d7e91534">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="e1054ec9-294d-11e5-b035-b579d7e91534" type="resource" guid="e10527b6-294d-11e5-b035-b579d7e91534" />
+    <resource statement-guid="e290348e-294d-11e5-b035-b579d7e91534" type="resource" guid="e28fe66b-294d-11e5-b035-b579d7e91534" />
+    <resource statement-guid="9741d4fa-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="9741d4f7-a95b-11e5-bda2-a7fc3bd7c783" />
+    <resource statement-guid="de4cc445-e10f-11e5-a737-47ae39ff8e38" type="resource" guid="de4c4f11-e10f-11e5-a737-47ae39ff8e38" />
+    <resource statement-guid="8c08c0b1-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="8c08c0ae-a95b-11e5-bda2-a7fc3bd7c783" />
+    <resource statement-guid="8e6c7a46-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783" />
+    <resource statement-guid="14a12850-dba9-11e5-9d7b-75e8191f8054" type="resource" guid="14a08c0d-dba9-11e5-9d7b-75e8191f8054" />
+    <resource statement-guid="774597e6-0f62-11e6-b8b4-eb392db55f48" type="resource" guid="774597e2-0f62-11e6-b8b4-eb392db55f48" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a167a-294d-11e5-b035-b579d7e91534" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a3d8c-294d-11e5-b035-b579d7e91534" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="b30a68c6-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db7a3d8b-294d-11e5-b035-b579d7e91534" type="literal">RequirementState</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="e1054ec9-294d-11e5-b035-b579d7e91534">
+      <resource guid="e10527b6-294d-11e5-b035-b579d7e91534">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e10527b8-294d-11e5-b035-b579d7e91534" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e185c96a-294d-11e5-b035-b579d7e91534" type="literal">Identified</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="c36c97bd-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde als Entwurf in das Modell aufgenommen. Die Quelle wurde
+verknüpft.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e290348e-294d-11e5-b035-b579d7e91534">
+      <resource guid="e28fe66b-294d-11e5-b035-b579d7e91534">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e2900d7d-294d-11e5-b035-b579d7e91534" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71227636-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Aligned</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="c65cb2ce-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde mit den relevanten Stakeholdern geprüft.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9741d4fa-a95b-11e5-bda2-a7fc3bd7c783">
+      <resource guid="9741d4f7-a95b-11e5-bda2-a7fc3bd7c783">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9741d4f9-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="97893e3b-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Approved (By Supplier)</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="cb2b51df-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde vom Lieferanten geprüft und ist für die Freigabe des Bedarfträger bereit</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="de4cc445-e10f-11e5-a737-47ae39ff8e38">
+      <resource guid="de4c4f11-e10f-11e5-a737-47ae39ff8e38">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de4c4f14-e10f-11e5-a737-47ae39ff8e38" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de4c4f13-e10f-11e5-a737-47ae39ff8e38" type="literal">Approved</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="de4c4f12-e10f-11e5-a737-47ae39ff8e38" type="literal">Die Anforderung wurde mit dem Lieferanten vereinbart, d.h. der Lieferant hat bestätigt,
+dass die Anforderung verständlich formuliert und umsetzbar ist.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8c08c0b1-a95b-11e5-bda2-a7fc3bd7c783">
+      <resource guid="8c08c0ae-a95b-11e5-bda2-a7fc3bd7c783">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8c08c0b0-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8c5755e2-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Implemented</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ce4da080-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde vom Lieferanten umgesetzt.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8e6c7a46-a95b-11e5-bda2-a7fc3bd7c783">
+      <resource guid="8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8e6c7a45-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8eb65487-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Fulfilled</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="d16b0d21-a95b-11e5-bda2-a7fc3bd7c783" type="literal">Die Anforderung wurde zufriedenstellend umgesetzt und abgenommen.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="14a12850-dba9-11e5-9d7b-75e8191f8054">
+      <resource guid="14a08c0d-dba9-11e5-9d7b-75e8191f8054">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="14a0b31f-dba9-11e5-9d7b-75e8191f8054" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1589b3b6-dba9-11e5-9d7b-75e8191f8054" type="literal">Rejected (QS)</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="19093dab-dba9-11e5-9d7b-75e8191f8054" type="literal">Anforderungen welche die geforderten Qualitätskriterien nicht erfüllen</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="774597e6-0f62-11e6-b8b4-eb392db55f48">
+      <resource guid="774597e2-0f62-11e6-b8b4-eb392db55f48">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="774597e5-0f62-11e6-b8b4-eb392db55f48" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="774597e4-0f62-11e6-b8b4-eb392db55f48" type="literal">Rejected</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="774597e3-0f62-11e6-b8b4-eb392db55f48" type="literal">Anforderungen welche nicht benötigt bzw. ungültig sind.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="37ee2133-e5f1-11e5-950a-cb0c4b71716c" type="literal">false</object>
+  </predicate>
+</resource>
+

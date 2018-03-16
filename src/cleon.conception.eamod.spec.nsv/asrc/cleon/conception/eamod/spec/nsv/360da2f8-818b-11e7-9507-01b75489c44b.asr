@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="360da2f8-818b-11e7-9507-01b75489c44b">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="360da2fa-818b-11e7-9507-01b75489c44b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b9a7787b-81a0-11e7-953b-0d27a7d546ad" type="resource" guid="b4f5b02e-81a0-11e7-953b-0d27a7d546ad" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="360df11b-818b-11e7-9507-01b75489c44b" type="literal">System</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="625479fa-818b-11e7-9507-01b75489c44b" type="literal">Systeme werden zur Modellierung eines technischen Kontextes eingesetzt und stellen eine
+Gesamtheit von zusammenwirkenden Komponenten dar. Diese Zusammenstellung erfolgt meist
+aufgaben-, sinn- oder zweckgebunden zum Erreichen eines bestimmten Ziels. Ein System kann
+dabei eine oder mehrere Funktionen und/oder Services zur Verfügung stellen. Die «ConformsTo»-
+Beziehung kann verwendet werden, wenn ein System gewisse Standards unterstützt oder
+unterstützen wird.
+Zur Modellierung von Systemschnittstellen wird das Modellierungselement «SystemPort»
+eingesetzt. Diese können über die «SystemPortConnector»-Beziehung miteinander verbunden
+werden. Die von einem «SystemPort» unterstützten Protokolle können über die
+«ImplementsProtocol»-Beziehung spezifiziert werden.
+Anforderungen und Fähigkeiten können durch ein System realisiert werden. Bei der Beschreibung
+einer Soll-Architektur ist es zudem durchaus möglich, mehrere Lösungsvarianten auszuarbeiten.</object>
+  </predicate>
+</resource>
+

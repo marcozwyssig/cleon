@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="336b3f4d-778d-11e7-9604-cb27385e129c">
+  <owns predicate="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <resource statement-guid="336b6709-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f4a-778d-11e7-9604-cb27385e129c" />
+    <resource statement-guid="336b6713-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f4b-778d-11e7-9604-cb27385e129c" />
+    <resource statement-guid="336b671d-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f4c-778d-11e7-9604-cb27385e129c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="336b66fe-778d-11e7-9604-cb27385e129c" type="resource" guid="c2b426c5-67bf-11e7-afcc-6df3a81a4d17" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="336b66fd-778d-11e7-9604-cb27385e129c" type="literal">Database</object>
+  </predicate>
+  <predicate guid="85967e6d-67c5-11e7-afcc-6df3a81a4d17">
+    <object statement-guid="336b6709-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f4a-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b6708-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b6707-778d-11e7-9604-cb27385e129c" type="literal">MSSQL</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6706-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6705-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6704-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6703-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6702-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6701-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6700-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+        <predicate guid="6b5d77eb-6ad7-11e7-ace0-9923baebf8a7">
+          <object statement-guid="336b66ff-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f4e-778d-11e7-9604-cb27385e129c" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="336b6713-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f4b-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b6712-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b6711-778d-11e7-9604-cb27385e129c" type="literal">PostgreSQL</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6710-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670f-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670e-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670d-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670c-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670b-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b670a-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="336b671d-778d-11e7-9604-cb27385e129c">
+      <resource guid="336b3f4c-778d-11e7-9604-cb27385e129c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b671c-778d-11e7-9604-cb27385e129c" type="resource" guid="2b07341a-67c5-11e7-afcc-6df3a81a4d17" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="336b671b-778d-11e7-9604-cb27385e129c" type="literal">MariaDB</object>
+        </predicate>
+        <predicate guid="334a3429-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b671a-778d-11e7-9604-cb27385e129c" type="literal">Person 1</object>
+        </predicate>
+        <predicate guid="44c12e80-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6719-778d-11e7-9604-cb27385e129c" type="literal">Person 2</object>
+        </predicate>
+        <predicate guid="4c3dd696-689b-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6718-778d-11e7-9604-cb27385e129c" type="literal">Person 3</object>
+        </predicate>
+        <predicate guid="2ce01837-689c-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6717-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="2ddc5cad-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6716-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="35f321f3-689d-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6715-778d-11e7-9604-cb27385e129c" type="literal">test1</object>
+        </predicate>
+        <predicate guid="9b29069e-68ac-11e7-9be5-6dfce969ae4e">
+          <object statement-guid="336b6714-778d-11e7-9604-cb27385e129c" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="a72cc606-67cf-11e7-afcc-6df3a81a4d17">
+    <object statement-guid="336b66fc-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f4f-778d-11e7-9604-cb27385e129c" />
+  </predicate>
+  <predicate guid="262dfe2a-689a-11e7-9be5-6dfce969ae4e">
+    <object statement-guid="336b66fb-778d-11e7-9604-cb27385e129c" type="resource" guid="336b3f60-778d-11e7-9604-cb27385e129c" />
+  </predicate>
+</resource>
+

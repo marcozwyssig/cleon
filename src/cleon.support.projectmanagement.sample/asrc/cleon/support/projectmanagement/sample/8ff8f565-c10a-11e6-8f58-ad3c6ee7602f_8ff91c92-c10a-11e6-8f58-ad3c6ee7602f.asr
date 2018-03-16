@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8ff91c92-c10a-11e6-8f58-ad3c6ee7602f">
+  <owns predicate="d457fb3e-c768-11e5-b3f9-43c5a0896ea1">
+    <resource statement-guid="8ff94314-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="8ff91c91-c10a-11e6-8f58-ad3c6ee7602f" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8ff94311-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="cbb98f3c-c768-11e5-b3f9-43c5a0896ea1" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8ff94310-c10a-11e6-8f58-ad3c6ee7602f" type="literal">sss</object>
+  </predicate>
+  <predicate guid="d457fb3e-c768-11e5-b3f9-43c5a0896ea1">
+    <object statement-guid="8ff94314-c10a-11e6-8f58-ad3c6ee7602f">
+      <resource guid="8ff91c91-c10a-11e6-8f58-ad3c6ee7602f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ff94313-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="cbb98f3c-c768-11e5-b3f9-43c5a0896ea1" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ff94312-c10a-11e6-8f58-ad3c6ee7602f" type="literal">aaaa</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

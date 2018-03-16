@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.common.glossary.spec.glossary">
+         <Plugin
+               pluginId="cleon.common.glossary.spec.glossary.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,d24e539c-4f08-11e6-a115-99fb8013e67b,MXq7H6pXqQ4YQXB5efhYW5kOaH8=] -->

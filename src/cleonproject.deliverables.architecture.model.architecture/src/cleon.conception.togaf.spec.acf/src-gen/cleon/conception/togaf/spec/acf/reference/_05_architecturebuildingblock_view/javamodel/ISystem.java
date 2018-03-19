@@ -10,8 +10,8 @@ public interface ISystem extends cleon.conception.arc.spec.arc42._03_system_scop
   
   public java.util.List<? extends cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel.IArchitectureLayerBuildingBlockDecomposite> selectDecompose();
   
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency();
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,HUEp9IqGJiIi4ECiriiwVpI2+UQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,MyQC+fVT4NRXk5H98NRRxCw6pc8=] */

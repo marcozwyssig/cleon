@@ -60,11 +60,11 @@ public class System extends DynamicResource implements ISystem {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
   }
 
-  public System setDecompose(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite> decompose) {
+  public System setDecompose(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> decompose) {
     _setList(cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, decompose);
     return this;
   }
@@ -97,16 +97,16 @@ public class System extends DynamicResource implements ISystem {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.arc.spec.arc42._03_system_scope_and_context.javamodel.ISystem selectToMeDecompose(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite object) {
+  public static cleon.conception.arc.spec.arc42._03_system_scope_and_context.javamodel.ISystem selectToMeDecompose(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.arc.spec.arc42._03_system_scope_and_context.javamodel.ISystem.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,fZ5MDycTiYkDt2n2NAWVVPsKJl8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,mnfFzbA/BSiiMnv8c/ZH+kMOeEI=] */

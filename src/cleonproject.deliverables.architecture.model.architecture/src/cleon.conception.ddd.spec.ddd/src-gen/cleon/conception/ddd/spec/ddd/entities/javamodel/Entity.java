@@ -129,12 +129,12 @@ public class Entity extends DynamicResource implements IEntity {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
   }
 
-  public Entity setHasDependency(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public Entity setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
+    _setList(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -183,7 +183,7 @@ public class Entity extends DynamicResource implements IEntity {
     _acceptSingle(cleon.conception.ddd.spec.ddd.entities.javamodel.IEntity.class, cleon.conception.ddd.spec.ddd.entities.EntitiesPackage.Entity_extends, visitor);
     _acceptMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -196,4 +196,4 @@ public class Entity extends DynamicResource implements IEntity {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8914497d-10c0-11e3-b60e-ab478a3e1eca,wtNmUdMXzT6e4S1ykV+qwa/ovcI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8914497d-10c0-11e3-b60e-ab478a3e1eca,VNn3CPczjNN/mqbB4BJkNdJULOg=] */

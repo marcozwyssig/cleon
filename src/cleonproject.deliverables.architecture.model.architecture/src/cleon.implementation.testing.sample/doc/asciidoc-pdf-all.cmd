@@ -1,2 +1,2 @@
 chcp 65001
-cmd /c bundle exec asciidoctor-pdf My_Testing.adoc
+cmd /c bundle exec asciidoctor-pdf testing/My_Testing.adoc

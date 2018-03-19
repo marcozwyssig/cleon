@@ -1,2 +1,2 @@
 chcp 65001
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri My_Testing.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri testing/My_Testing.adoc

@@ -91,11 +91,11 @@ public class Level extends DynamicResource implements ILevel {
   }
     
   @Override
-  public cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock selectWhitebox() {
-    return _getSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox);
+  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectWhitebox() {
+    return _getSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox);
   }
 
-  public Level setWhitebox(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock whitebox) {
+  public Level setWhitebox(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock whitebox) {
     _setSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox, whitebox);
     return this;
   }
@@ -111,12 +111,12 @@ public class Level extends DynamicResource implements ILevel {
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox, visitor);
+    _acceptSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.arc.spec.arc42._05_buildingblock_view.javamodel.ILevel selectToMeWhitebox(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock object) {
+  public static cleon.conception.arc.spec.arc42._05_buildingblock_view.javamodel.ILevel selectToMeWhitebox(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.arc.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.arc.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_whitebox, object.getResource());
   }
   
@@ -125,4 +125,4 @@ public class Level extends DynamicResource implements ILevel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,+DxZNwiKjlf+CpAIQiJywcpx3V8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,2qkGNbk798Grfra9k+8gmjnktGI=] */

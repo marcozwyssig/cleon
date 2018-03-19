@@ -89,11 +89,11 @@ public class System extends DynamicResource implements ISystem {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency);
   }
 
-  public System setHasDependency(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> hasDependency) {
+  public System setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
     _setList(cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, hasDependency);
     return this;
   }
@@ -119,7 +119,7 @@ public class System extends DynamicResource implements ISystem {
     // relations
     _acceptList(cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel.IArchitectureLayerBuildingBlockDecomposite.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -129,9 +129,9 @@ public class System extends DynamicResource implements ISystem {
     return _getToMeSingle(object.getRepository(), cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.javamodel.ISystem.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_decompose, object.getResource());
   }
   
-  public static cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.javamodel.ISystem selectToMeHasDependency(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency object) {
+  public static cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.javamodel.ISystem selectToMeHasDependency(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.javamodel.ISystem.class, cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,x43jkcyzrYXfyCbYlykNfWhCxT0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,Vd87V2C+A45ZAVjlnl1UR62KY+M=] */

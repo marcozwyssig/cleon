@@ -129,12 +129,12 @@ public class TemplateClass extends DynamicResource implements ITemplateClass {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
   }
 
-  public TemplateClass setHasDependency(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public TemplateClass setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
+    _setList(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -193,7 +193,7 @@ public class TemplateClass extends DynamicResource implements ITemplateClass {
     _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClass.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_extends, visitor);
     _acceptMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.template.javamodel.ITemplateClassParameter.class, cleon.conception.uml.spec.uml.structural.classes.template.TemplatePackage.TemplateClass_templateParameters, visitor);
@@ -207,4 +207,4 @@ public class TemplateClass extends DynamicResource implements ITemplateClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,743e6460-a3b9-11e3-8095-f11af53ab806,XiLCM6aTsEy4CIOMB/bijTGWdlU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,743e6460-a3b9-11e3-8095-f11af53ab806,s662C6hn53VM6hHGjdslV2rb20M=] */

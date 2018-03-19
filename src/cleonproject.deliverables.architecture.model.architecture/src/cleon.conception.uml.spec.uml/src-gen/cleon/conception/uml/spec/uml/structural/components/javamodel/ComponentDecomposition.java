@@ -71,12 +71,12 @@ public class ComponentDecomposition extends DynamicResource implements IComponen
   }
     
   @Override
-  public cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock selectInto() {
-    return _getSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.AggregateDecomposite_into);
+  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectInto() {
+    return _getSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_into);
   }
 
-  public ComponentDecomposition setInto(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock into) {
-    _setSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.AggregateDecomposite_into, into);
+  public ComponentDecomposition setInto(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock into) {
+    _setSingle(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_into, into);
     return this;
   }
     
@@ -99,7 +99,7 @@ public class ComponentDecomposition extends DynamicResource implements IComponen
     // relations
     _acceptSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackage.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDecomposition_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.AggregateDecomposite_into, visitor);
+    _acceptSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_into, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -110,4 +110,4 @@ public class ComponentDecomposition extends DynamicResource implements IComponen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d4692e40-1755-11e5-9ca7-d1bb57b73459,iQvs0YcpQtqCl3ZtrgDuMUuX8Xc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d4692e40-1755-11e5-9ca7-d1bb57b73459,ztn8SWXui013v6oNmQnkFoCyR+o=] */

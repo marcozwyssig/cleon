@@ -8,10 +8,10 @@ public interface ILevel extends cleon.common.doc.spec.doc.chapter.javamodel.ICha
   
   // relations
   
-  public cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock selectWhitebox();
+  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectWhitebox();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.javamodel.IBlackbox> selectBlackboxes();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,GWS5K8aHyS7C1Sg3DOpIGR5wItQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,XKYqUsxJHdzWeDLxRnHG4p6v8oQ=] */

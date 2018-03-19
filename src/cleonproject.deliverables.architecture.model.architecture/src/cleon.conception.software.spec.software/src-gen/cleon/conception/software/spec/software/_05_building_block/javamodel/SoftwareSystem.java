@@ -69,11 +69,11 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
   }
 
-  public SoftwareSystem setDecompose(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite> decompose) {
+  public SoftwareSystem setDecompose(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> decompose) {
     _setList(cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, decompose);
     return this;
   }
@@ -89,11 +89,11 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency);
   }
 
-  public SoftwareSystem setHasDependency(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> hasDependency) {
+  public SoftwareSystem setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
     _setList(cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency, hasDependency);
     return this;
   }
@@ -117,17 +117,17 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.arc.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.software.spec.software._05_building_block.javamodel.ISoftwareSystem selectToMeHasDependency(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency object) {
+  public static cleon.conception.software.spec.software._05_building_block.javamodel.ISoftwareSystem selectToMeHasDependency(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.software.spec.software._05_building_block.javamodel.ISoftwareSystem.class, cleon.conception.software.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,oNksfxxtHBAx7iOOeLtLRkCju+0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,D/sBq9E0/F3kOZRNwWH7Ts1p6k8=] */

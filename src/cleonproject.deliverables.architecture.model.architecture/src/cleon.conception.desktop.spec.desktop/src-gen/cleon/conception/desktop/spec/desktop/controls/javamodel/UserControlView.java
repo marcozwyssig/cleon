@@ -129,12 +129,12 @@ public class UserControlView extends DynamicResource implements IUserControlView
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
+  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
   }
 
-  public UserControlView setHasDependency(java.util.List<? extends cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public UserControlView setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
+    _setList(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -193,7 +193,7 @@ public class UserControlView extends DynamicResource implements IUserControlView
     _acceptSingle(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IView.class, cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.View_extends, visitor);
     _acceptMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IDependency.class, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -201,4 +201,4 @@ public class UserControlView extends DynamicResource implements IUserControlView
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4947868f-634e-11e3-9288-bdf1907ca1e3,bMC52Gf2qM4vkJ852v4ZkU1312E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4947868f-634e-11e3-9288-bdf1907ca1e3,EmLqFuSM7aSPx0sQV7FB5ua0cWE=] */

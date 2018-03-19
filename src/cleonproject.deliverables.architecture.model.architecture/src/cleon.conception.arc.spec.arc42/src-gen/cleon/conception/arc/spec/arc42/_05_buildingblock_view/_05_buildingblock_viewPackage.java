@@ -16,6 +16,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource __V_5_aE_BuildingBlockView_level_aE_3 = new Resource("e9ec386f-285a-11e8-9af4-b7d7a3bbddc1");
   public static final Resource __V_5_aE_BuildingBlockView_level_aE_4 = new Resource("2f39eb64-285b-11e8-9af4-b7d7a3bbddc1");
   public static final Resource __V_5_aE_BuildingBlockView_level_aE_5 = new Resource("42dcc6e0-285b-11e8-9af4-b7d7a3bbddc1");
+  public static final Resource FunctionSpace_BuildingBlock = new Resource("5c98f5cc-2b56-11e8-859c-c3075307fbcf");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +37,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.arc.spec.arc42._05_buildingblock_view,RY05nhv00ijjJvL9/i/3Z1KUBs8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.arc.spec.arc42._05_buildingblock_view,ja5emtfZbqYWeUtUx5IIrwYqUR8=] */

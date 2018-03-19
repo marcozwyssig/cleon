@@ -2,7 +2,7 @@ package cleon.conception.uml.spec.uml.structural.classes.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IReturnType extends ch.actifsource.core.javamodel.IResource, cleon.conception.arc.spec.arc42._05_buildingblock_view.buildingblock.javamodel.IBuildingBlock {
+public interface IReturnType extends ch.actifsource.core.javamodel.IResource, cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c8ffee0f-356d-11e3-974d-d19f8c167114");
   
@@ -12,4 +12,4 @@ public interface IReturnType extends ch.actifsource.core.javamodel.IResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8ffee0f-356d-11e3-974d-d19f8c167114,AnMBmojF/3DDGF9s8psQ9yaRVEM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8ffee0f-356d-11e3-974d-d19f8c167114,2D6XJ9XjLyEPsmG/KU2f3ObeSNk=] */

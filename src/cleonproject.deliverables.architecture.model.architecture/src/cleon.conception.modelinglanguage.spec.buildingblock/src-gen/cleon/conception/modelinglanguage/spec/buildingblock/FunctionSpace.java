@@ -65,9 +65,6 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("b07d4c71-894c-11e6-ad04-d1961316644a")
     public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetAllDependencies();
 
-    @IDynamicResourceExtension.MethodId("88b09502-8958-11e6-ad04-d1961316644a")
-    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> DisjuntedDependencies();
-
     @IDynamicResourceExtension.MethodId("caa2cbf5-8959-11e6-ad04-d1961316644a")
     public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetAllDuplicatedDependencies();
 
@@ -75,9 +72,6 @@ public class FunctionSpace {
   
   public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("88b09502-8958-11e6-ad04-d1961316644a")
-    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> DisjuntedDependencies(final List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> buildingBlockList);
-
   }
   
   public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
@@ -86,20 +80,11 @@ public class FunctionSpace {
 
     private BuildingBlockFunctionsImpl() {}
 
-    @Override
-    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> DisjuntedDependencies(final List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> buildingBlockList) {
-      return buildingBlockList.stream().distinct().collect(java.util.stream.Collectors.toList()); 
-    }
-
   }
   
   public static class BuildingBlockFunctions {
 
     private BuildingBlockFunctions() {}
-
-    public static List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> DisjuntedDependencies(final List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> buildingBlockList) {
-      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).DisjuntedDependencies(buildingBlockList);
-    }
 
   }
 
@@ -241,4 +226,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,lD5Zq5RGgGLPTwM1Vrc+3v45wB0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,IvwAg7na/TZN/GgXCewDVyocib4=] */

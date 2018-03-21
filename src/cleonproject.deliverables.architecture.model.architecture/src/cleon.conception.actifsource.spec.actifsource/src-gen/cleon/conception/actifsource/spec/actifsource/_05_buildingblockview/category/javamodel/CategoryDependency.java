@@ -31,12 +31,12 @@ public class CategoryDependency extends DynamicResource implements ICategoryDepe
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory> selectTo() {
-    return _getList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to);
+  public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory selectTo() {
+    return _getSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to);
   }
 
-  public CategoryDependency setTo(java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory> to) {
-    _setList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to, to);
+  public CategoryDependency setTo(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory to) {
+    _setSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to, to);
     return this;
   }
     
@@ -54,7 +54,7 @@ public class CategoryDependency extends DynamicResource implements ICategoryDepe
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to, visitor);
+    _acceptSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.CategoryPackage.CategoryDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +65,4 @@ public class CategoryDependency extends DynamicResource implements ICategoryDepe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,rq+9I664uSUS0sYYY92hZ2PW3Co=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,U3l2ADrZe/VOgaq+S/NJ214dsVg=] */

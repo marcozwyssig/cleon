@@ -31,12 +31,12 @@ public class ClassierDependency extends DynamicResource implements IClassierDepe
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> selectTo() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to);
+  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectTo() {
+    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to);
   }
 
-  public ClassierDependency setTo(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> to) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to, to);
+  public ClassierDependency setTo(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier to) {
+    _setSingle(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to, to);
     return this;
   }
     
@@ -54,7 +54,7 @@ public class ClassierDependency extends DynamicResource implements IClassierDepe
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.ClassierDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +65,4 @@ public class ClassierDependency extends DynamicResource implements IClassierDepe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17f56ccf-3b5f-11e5-86bc-73aedc28563d,ZGDIAWML3bZs2CtGyH91MpNNK/E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17f56ccf-3b5f-11e5-86bc-73aedc28563d,VanH+t3viJwtFhaFpixVWvmPYxQ=] */

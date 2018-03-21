@@ -8,8 +8,8 @@ public interface IClassierDependency extends cleon.conception.modelinglanguage.s
   
   // relations
   
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> selectTo();
+  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17f56ccf-3b5f-11e5-86bc-73aedc28563d,awwEs7c7XRzHC3KETsuxxPuST80=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17f56ccf-3b5f-11e5-86bc-73aedc28563d,0eUACHDXMpwxSphe4I8E06hP7R8=] */

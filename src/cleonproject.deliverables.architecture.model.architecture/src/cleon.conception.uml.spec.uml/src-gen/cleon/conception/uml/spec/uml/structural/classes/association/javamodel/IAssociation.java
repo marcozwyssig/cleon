@@ -24,8 +24,8 @@ public interface IAssociation extends ch.actifsource.core.javamodel.IResource, c
   
   public cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociationType selectAssocationType();
   
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> selectTo();
+  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,Ltl1FWq9TbmUmD5cm/LZ5410goc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,EhZXlgwXq+PSoI1BGdA4aZK+A2g=] */

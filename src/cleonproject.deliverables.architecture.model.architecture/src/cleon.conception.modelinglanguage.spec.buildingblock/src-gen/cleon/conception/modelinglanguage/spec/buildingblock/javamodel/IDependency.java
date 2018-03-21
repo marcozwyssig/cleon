@@ -8,8 +8,8 @@ public interface IDependency extends ch.actifsource.core.javamodel.IResource {
   
   // relations
   
-  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> selectTo();
+  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,gxKlQZe0YW4wOrt1xjryLZZE8mQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9416ead6-ffb9-11e4-ac0a-959b440f987f,XXeAhKZ0S4aTq2QgwcLxLZwX7rs=] */

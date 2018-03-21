@@ -31,12 +31,12 @@ public class TestComponentDependency extends DynamicResource implements ITestCom
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage> selectTo() {
-    return _getList(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to);
+  public cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage selectTo() {
+    return _getSingle(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to);
   }
 
-  public TestComponentDependency setTo(java.util.List<? extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage> to) {
-    _setList(cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to, to);
+  public TestComponentDependency setTo(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage to) {
+    _setSingle(cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to, to);
     return this;
   }
     
@@ -64,7 +64,7 @@ public class TestComponentDependency extends DynamicResource implements ITestCom
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentDependency_to, visitor);
     _acceptSingle(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestComponentDependency_toCmp, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -76,4 +76,4 @@ public class TestComponentDependency extends DynamicResource implements ITestCom
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,4M4QwKjX+2ENnuac6HFPHpUvEnw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f19b836-12a1-11e5-a69e-755a9ac7f617,rBHyyphWZF+yGwR2O2suyuKwgZY=] */

@@ -31,12 +31,12 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel> selectTo() {
-    return _getList(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel.class, cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to);
+  public cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel selectTo() {
+    return _getSingle(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel.class, cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to);
   }
 
-  public ViewModelDependency setTo(java.util.List<? extends cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel> to) {
-    _setList(cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to, to);
+  public ViewModelDependency setTo(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel to) {
+    _setSingle(cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to, to);
     return this;
   }
     
@@ -54,7 +54,7 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel.class, cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to, visitor);
+    _acceptSingle(cleon.conception.desktop.spec.desktop.mvvm.javamodel.IViewModel.class, cleon.conception.desktop.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +65,4 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,iQve1frjkZ8qbBOoGH39yvHT7Rc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,uuhHVoQhUs9/0FQBKbAEqmuxx+g=] */

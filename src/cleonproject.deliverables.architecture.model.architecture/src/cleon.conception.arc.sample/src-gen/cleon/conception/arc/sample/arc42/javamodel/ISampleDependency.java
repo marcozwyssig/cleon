@@ -8,8 +8,8 @@ public interface ISampleDependency extends cleon.conception.modelinglanguage.spe
   
   // relations
   
-  public java.util.List<? extends cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock> selectTo();
+  public cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,7F5A7p03wa1h5kSv9U1MxCgqPvs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,hcIzj6AaQSoYuJhSPXX1igID+/8=] */

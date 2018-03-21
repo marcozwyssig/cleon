@@ -8,8 +8,8 @@ public interface IArchitectureSolutionBuildingBlockDependency extends cleon.conc
   
   // relations
   
-  public java.util.List<? extends cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock> selectTo();
+  public cleon.conception.togaf.spec.acf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,X0WOmqCbdm65jN/dwe3eZ21vz0g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,JmFU45PNGmH/ez7BYKlOD01l57o=] */

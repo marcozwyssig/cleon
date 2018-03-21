@@ -31,12 +31,12 @@ public class SampleDependency extends DynamicResource implements ISampleDependen
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock> selectTo() {
-    return _getList(cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to);
+  public cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock selectTo() {
+    return _getSingle(cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to);
   }
 
-  public SampleDependency setTo(java.util.List<? extends cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock> to) {
-    _setList(cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to, to);
+  public SampleDependency setTo(cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock to) {
+    _setSingle(cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to, to);
     return this;
   }
     
@@ -54,7 +54,7 @@ public class SampleDependency extends DynamicResource implements ISampleDependen
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to, visitor);
+    _acceptSingle(cleon.conception.arc.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.conception.arc.sample.arc42.Arc42Package.SampleDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +65,4 @@ public class SampleDependency extends DynamicResource implements ISampleDependen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,xafZ4NyQh/002Em8DAEcHN7yvxo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9d179f-c07b-11e6-beed-bb6789615dd5,Krm8JAhdgJxQdcdwZDQKcGm6m1g=] */

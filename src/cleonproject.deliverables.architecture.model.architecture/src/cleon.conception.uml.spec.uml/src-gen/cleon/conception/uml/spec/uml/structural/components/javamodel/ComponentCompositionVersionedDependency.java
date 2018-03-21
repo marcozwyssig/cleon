@@ -31,12 +31,12 @@ public class ComponentCompositionVersionedDependency extends DynamicResource imp
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition> selectTo() {
-    return _getList(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to);
+  public cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition selectTo() {
+    return _getSingle(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to);
   }
 
-  public ComponentCompositionVersionedDependency setTo(java.util.List<? extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition> to) {
-    _setList(cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to, to);
+  public ComponentCompositionVersionedDependency setTo(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition to) {
+    _setSingle(cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to, to);
     return this;
   }
     
@@ -64,10 +64,10 @@ public class ComponentCompositionVersionedDependency extends DynamicResource imp
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,966d2038-d40f-11e5-8556-8f55ceb91287,q9zzlAaekPsTRHZtvJsdIt/g5GE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,966d2038-d40f-11e5-8556-8f55ceb91287,c6Vo+IDxYwnISlSrElHn5XeDZSQ=] */

@@ -31,12 +31,12 @@ public class FeatureDependency extends DynamicResource implements IFeatureDepend
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature> selectTo() {
-    return _getList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to);
+  public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature selectTo() {
+    return _getSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to);
   }
 
-  public FeatureDependency setTo(java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature> to) {
-    _setList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to, to);
+  public FeatureDependency setTo(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature to) {
+    _setSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to, to);
     return this;
   }
     
@@ -54,7 +54,7 @@ public class FeatureDependency extends DynamicResource implements IFeatureDepend
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to, visitor);
+    _acceptSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage.FeatureDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +65,4 @@ public class FeatureDependency extends DynamicResource implements IFeatureDepend
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76b9cee-d40d-11e5-8556-8f55ceb91287,c0u0iDk3e3yfAU7hE1prUhxChZ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76b9cee-d40d-11e5-8556-8f55ceb91287,E2Fzo2lZN+T/r01uj4WRtLyT+88=] */

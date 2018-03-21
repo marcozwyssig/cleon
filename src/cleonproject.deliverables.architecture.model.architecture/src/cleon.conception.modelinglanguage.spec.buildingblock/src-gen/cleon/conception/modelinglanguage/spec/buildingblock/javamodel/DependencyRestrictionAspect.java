@@ -52,7 +52,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 	{
 		IBuildingBlockFunctions dependencyFunctions = currentBuildingBlock.extension(IBuildingBlockFunctions.class);
 //		ch.actifsource.util.log.Logger.instance().logInfo("Current " + Select.simpleName(executor, currentBuildingBlock.getResource()));	
-		List<IBuildingBlock> buildingBlocks = dependencyFunctions.GetDependingBuildingBlocks();
+		List<IBuildingBlock> buildingBlocks = dependencyFunctions.GetDirectDependingBuildingBlocks();
 //		buildingBlocks.forEach(x -> {
 //			ch.actifsource.util.log.Logger.instance().logInfo("Dependent " + Select.simpleName(executor, x.getResource()));			
 //		});

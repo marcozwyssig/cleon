@@ -54,10 +54,10 @@ public class FunctionSpace {
     public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock GetDecomposingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("a032d549-4823-11e6-82f6-0f210765495b")
-    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetDependingBuildingBlocks();
+    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("68a66aec-4910-11e6-be22-874cc08f42ce")
-    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetDependingBuildingBlocksWithinParent();
+    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent();
 
     @IDynamicResourceExtension.MethodId("15cae2bf-4914-11e6-be22-874cc08f42ce")
     public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetDependingBuildingBlocksOutsideParent();
@@ -67,6 +67,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("caa2cbf5-8959-11e6-ad04-d1961316644a")
     public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetAllDuplicatedDependencies();
+
+    @IDynamicResourceExtension.MethodId("24cf8570-2ce6-11e8-a902-afb10318295e")
+    public List<cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock> GetIndirectDependingBuildingBlocks();
 
   }
   
@@ -226,4 +229,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,IvwAg7na/TZN/GgXCewDVyocib4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,UxEbbgmuO6QuzhKl2Nz1L/xWBEI=] */

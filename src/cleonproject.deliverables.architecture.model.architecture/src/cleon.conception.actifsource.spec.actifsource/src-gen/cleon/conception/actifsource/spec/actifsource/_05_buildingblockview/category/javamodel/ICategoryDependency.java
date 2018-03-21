@@ -8,8 +8,8 @@ public interface ICategoryDependency extends cleon.conception.uml.spec.uml.struc
   
   // relations
   
-  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory> selectTo();
+  public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.javamodel.ICategory selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,sNJaSYOylQDzrFUK0/GmxQJRxro=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27c04268-3c6a-11e6-aafa-bd565efc0ead,k+ruRsw/pHDXgdYocTUgs3MxpUg=] */

@@ -115,12 +115,12 @@ public class OneToZeroOrOneAssociation extends DynamicResource implements IOneTo
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> selectTo() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to);
+  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectTo() {
+    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to);
   }
 
-  public OneToZeroOrOneAssociation setTo(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> to) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to, to);
+  public OneToZeroOrOneAssociation setTo(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier to) {
+    _setSingle(cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to, to);
     return this;
   }
     
@@ -148,9 +148,9 @@ public class OneToZeroOrOneAssociation extends DynamicResource implements IOneTo
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_suppressAutoProperty, visitor);
     // relations
     _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociationType.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_assocationType, visitor);
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.classes.association.AssociationPackage.Association_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01df895e-2784-11e3-a466-eda9d7258bca,JdtO36c5TObzjTV0ztoZCH6bAWc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01df895e-2784-11e3-a466-eda9d7258bca,2eSSzc4NHjmvXhpStr3E/2xWys8=] */

@@ -31,12 +31,12 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> selectTo() {
-    return _getList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to);
+  public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin selectTo() {
+    return _getSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to);
   }
 
-  public PluginBuiltinDependency setTo(java.util.List<? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> to) {
-    _setList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to, to);
+  public PluginBuiltinDependency setTo(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin to) {
+    _setSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to, to);
     return this;
   }
     
@@ -54,9 +54,9 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to, visitor);
+    _acceptSingle(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.PluginPackage.PluginDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,/mMD/4JBqVrEmx2oYEfhAj5Y5oA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,aTxtvZ3CvE/DaoNq6uMZnYnYmyc=] */

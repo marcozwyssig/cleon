@@ -1,5 +1,6 @@
 package cleon.conception.modelinglanguage.spec.buildingblock.javamodel;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ch.actifsource.core.INode;
@@ -22,27 +23,37 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 
 	@Override
 	public IFilter<INode> allowedTypeFilter(IReadJobExecutor ireadjobexecutor, INode inode, INode inode1) {
-		return Filter.excludeAll();
+		return Filter.includeAll();
 	}
 
 	@Override
-	public void validate(ValidationContext validationcontext, Statement statement, List<IResourceInconsistency> inconsistencyList) {
+	public void validate(ValidationContext validationcontext, Statement statement,
+			List<IResourceInconsistency> inconsistencyList) {
 		ITypeSystem typeSystem = TypeSystem.create(validationcontext.getReadJobExecutor());
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IDependentBuildingBlock dependentBuildingBlock = resourceRepository.getResource(IDependentBuildingBlock.class,
 				validationcontext.getResource());
-		
+
 		IDependency dependency = resourceRepository.getResource(IDependency.class, statement.object());
 		IBuildingBlock dependencyBuildingBlock = dependency.selectTo();
-		Logger.instance().logInfo("Dependency: " + Select.simpleName(validationcontext.getReadJobExecutor(), dependencyBuildingBlock.getResource()));
-		Logger.instance().logInfo("DependendingBuildingblock: " + Select.simpleName(validationcontext.getReadJobExecutor(), dependentBuildingBlock.getResource()));
-		
-		
+		Logger.instance().logInfo("Dependency: "
+				+ Select.simpleName(validationcontext.getReadJobExecutor(), dependencyBuildingBlock.getResource()));
+		Logger.instance().logInfo("DependendingBuildingblock: "
+				+ Select.simpleName(validationcontext.getReadJobExecutor(), dependentBuildingBlock.getResource()));
+
 		IBuildingBlockFunctions blockFunctions = dependentBuildingBlock.extension(IBuildingBlockFunctions.class);
 		List<IBuildingBlock> indirectBuildingBlocks = blockFunctions.GetIndirectDependingBuildingBlocks();
-		Logger.instance().logInfo(String.valueOf(indirectBuildingBlocks.size()));
 
 		if (indirectBuildingBlocks.contains(dependencyBuildingBlock)) {
+			inconsistencyList.add(new SingleStatementInconsistency(statement, "Dependency is inherited redundant."));
+		}
+
+		List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.GetDirectDependingBuildingBlocks());
+		Logger.instance().logInfo("Count of directbuilingblocks: " + directBuildingBlocks.size());
+
+		directBuildingBlocks.remove(dependencyBuildingBlock);
+
+		if (directBuildingBlocks.contains(dependencyBuildingBlock)) {
 			inconsistencyList.add(new SingleStatementInconsistency(statement, "Dependency is redundant."));
 		}
 	}

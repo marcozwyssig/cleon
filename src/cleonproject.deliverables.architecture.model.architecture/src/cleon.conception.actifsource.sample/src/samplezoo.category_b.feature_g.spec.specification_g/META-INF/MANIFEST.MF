@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-Name: samplezoo.category_b.feature_g.spec.specification_g
+Bundle-SymbolicName: samplezoo.category_b.feature_g.spec.specification_g.builtin;singleton:=true
+Bundle-Version: 0.1.0
+Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
+ ch.actifsource.environment;bundle-version="8.4.0",
+ ch.actifsource.util;bundle-version="8.4.0",
+ ch.actifsource.xml;bundle-version="8.4.0",
+ ch.actifsource.template;bundle-version="8.4.0",
+ ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
+ ch.actifsource.ui.wizard;bundle-version="8.4.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ samplezoo.category_b.feature_k.spec.specification_k_1.builtin;bundle-version="0.1.0",
+ samplezoo.category_b.feature_k.spec.specification_k_2.builtin;bundle-version="0.1.0",
+ samplezoo.category_a.feature_c.spec.specification_c.builtin;bundle-version="0.1.0",
+ samplezoo.category_a.feature_b.spec.specification_b.builtin;bundle-version="0.1.0",
+ samplezoo.category_a.builtin_b.spec.builtin_specification_b.builtin;bundle-version="0.1.0",
+ samplezoo.category_a.feature_a.spec.specification_a.builtin;bundle-version="0.1.0",
+ samplezoo.category_a.builtin_a.spec.specification_builtin_a.builtin;bundle-version="0.1.0",
+ ch.actifsource.generator;bundle-version="8.4.0"
+Export-Package: samplezoo.category_b.feature_g.spec.specification_g,samplezoo.category_b.feature_g.spec.specification_g.javamodel
+

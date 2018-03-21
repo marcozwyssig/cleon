@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="99518842-2cff-11e8-b200-0bc7d3f02413">
+  <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <resource statement-guid="9951884a-2cff-11e8-b200-0bc7d3f02413" type="resource" guid="99518841-2cff-11e8-b200-0bc7d3f02413" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="99518844-2cff-11e8-b200-0bc7d3f02413" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="99518847-2cff-11e8-b200-0bc7d3f02413" type="literal">Specification_K_2</object>
+  </predicate>
+  <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
+    <object statement-guid="9951884a-2cff-11e8-b200-0bc7d3f02413">
+      <resource guid="99518841-2cff-11e8-b200-0bc7d3f02413">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99518848-2cff-11e8-b200-0bc7d3f02413" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
+        </predicate>
+        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
+          <object statement-guid="99518849-2cff-11e8-b200-0bc7d3f02413" type="resource" guid="0ffcf0de-2c0a-11e8-ae64-e3540bdf64a6" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1b75304e-44cc-11e5-93ef-c50f9659357a">
+    <object statement-guid="99518845-2cff-11e8-b200-0bc7d3f02413" type="literal">true</object>
+  </predicate>
+  <predicate guid="270990d0-5a93-11e7-a34c-4176bbc6413e">
+    <object statement-guid="99518846-2cff-11e8-b200-0bc7d3f02413" type="literal">false</object>
+  </predicate>
+</resource>
+

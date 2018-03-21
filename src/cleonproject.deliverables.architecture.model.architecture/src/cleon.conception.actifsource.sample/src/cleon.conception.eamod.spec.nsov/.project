@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.conception.eamod.spec.nsov</name>
+	<comment/>
+	<projects>
+		<project>cleon.conception.eamod.spec.nov</project>
+		<project>cleon.support.projectmanagement.spec.planning</project>
+		<project>cleon.support.projectmanagement.spec.projectmanagement</project>
+		<project>cleon.conception.eamod.spec.ncv</project>
+		<project>cleon.support.projectmanagement.spec.resource</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.conception.eamod.spec.nav</project>
+		<project>cleon.conception.eamod.spec.chav</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>		
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,0b92b3dd-bc83-11e6-beb6-85da12323ce9,A8EYkJisTSW2HmiT4AvqPgRbrXM=] -->

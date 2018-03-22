@@ -884,7 +884,7 @@
                 <object statement-guid="5fac0a19-8983-11e6-9315-e9960ca482c6" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="601ec91e-8983-11e6-9315-e9960ca482c6" type="literal">GetDependingBuildingBlocks</object>
+                <object statement-guid="601ec91e-8983-11e6-9315-e9960ca482c6" type="literal">GetDirectDependingBuildingBlocks</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="64f110f0-8983-11e6-9315-e9960ca482c6">
@@ -1008,7 +1008,7 @@
                 <object statement-guid="40335b64-c10a-11e6-8f58-ad3c6ee7602f" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="411779dc-c10a-11e6-8f58-ad3c6ee7602f" type="literal">GetDependingBuiltinBuildingBlocks</object>
+                <object statement-guid="411779dc-c10a-11e6-8f58-ad3c6ee7602f" type="literal">GetDirectDependingBuiltinBuildingBlocks</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="4d58882b-c10a-11e6-8f58-ad3c6ee7602f">

@@ -15,12 +15,18 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  cleon.common.doc.template.asciidoc.builtin;bundle-version="0.2.7",
  cleon.implementation.plantuml.template.uml.builtin;bundle-version="0.2.7",
  cleon.conception.software.spec.software.builtin;bundle-version="0.2.7",
+ cleon.conception.framework.spec.eamod.builtin;bundle-version="0.2.7",
  cleon.common.doc.spec.doc.builtin;bundle-version="0.2.7",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.2.7",
  cleon.conception.modelinglanguage.spec.uml.builtin;bundle-version="0.2.7",
  cleon.conception.modelinglanguage.spec.buildingblock.builtin;bundle-version="0.2.7",
  cleon.conception.framework.spec.arc42.builtin;bundle-version="0.2.7",
  cleon.common.glossary.spec.glossary.builtin;bundle-version="0.2.7",
+ cleon.common.projectmanagement.spec.planning.builtin;bundle-version="0.2.7",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.2.7",
+ cleon.common.projectmanagement.spec.resource.builtin;bundle-version="0.2.7",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.2.7",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.2.7",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.support.documentation.template.asciidoc,cleon.support.documentation.template.asciidoc.javamodel
 

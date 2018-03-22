@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="f335f9c2-d3ff-11e5-9dfc-cf0f3e030023">
   <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <resource statement-guid="2e871b42-d401-11e5-9dfc-cf0f3e030023" type="resource" guid="2e8630dc-d401-11e5-9dfc-cf0f3e030023" />
     <resource statement-guid="0df714e9-1dfc-11e7-a5d4-016f0b98725a" type="resource" guid="0df6edd6-1dfc-11e7-a5d4-016f0b98725a" />
   </owns>
   <owns predicate="4ac67c8e-b87e-11e5-a463-ff45aa361315">
@@ -25,23 +24,13 @@
     <object statement-guid="f41dc137-d3ff-11e5-9dfc-cf0f3e030023" type="literal">testing</object>
   </predicate>
   <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <object statement-guid="2e871b42-d401-11e5-9dfc-cf0f3e030023">
-      <resource guid="2e8630dc-d401-11e5-9dfc-cf0f3e030023">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="de4b7ff2-0c6c-11e6-86c5-87a8b520dd59" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
-        </predicate>
-        <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
-          <object statement-guid="2e8630de-d401-11e5-9dfc-cf0f3e030023" type="resource" guid="1d0ca590-ffbc-11e4-ac0a-959b440f987f" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="0df714e9-1dfc-11e7-a5d4-016f0b98725a">
       <resource guid="0df6edd6-1dfc-11e7-a5d4-016f0b98725a">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="0df6edd8-1dfc-11e7-a5d4-016f0b98725a" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
         </predicate>
         <predicate guid="de9ea266-4260-11e5-8a2d-599443ec8ff4">
-          <object statement-guid="0e8ac9cb-1dfc-11e7-a5d4-016f0b98725a" type="resource" guid="5ac69ffc-1db2-11e7-9efc-f399b0bc5f8b" />
+          <object statement-guid="0e8ac9cb-1dfc-11e7-a5d4-016f0b98725a" type="resource" guid="1519077a-2b50-11e8-b4c1-97cc468744f4" />
         </predicate>
       </resource>
     </object>

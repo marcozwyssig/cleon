@@ -1,43 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.implementation.testing.sample</name>
-	<comment/>
+	<comment></comment>
 	<projects>
 		<project>cleon.implementation.testing.template.asciidoc</project>
 		<project>cleon.common.resources.sample</project>
-		<project>cleon.conception.eamod.sample</project>
 		<project>cleon.implementation.testing.spec.testing</project>
 		<project>cleon.common.doc.template.asciidoc</project>
 		<project>cleon.conception.modelinglanguage.spec.uml</project>
-		<project>cleon.conception.eamod.spec.chrv</project>
+		<project>cleon.conception.framework.spec.eamod</project>
 		<project>cleon.conception.modelinglanguage.spec.buildingblock</project>
 		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.resources.spec.resources</project>
-		<project>cleon.conception.eamod.spec.nsov</project>
-		<project>cleon.common.glossary.spec.glossary</project>
-		<project>cleon.conception.eamod.spec.nov</project>
-		<project>cleon.common.projectmanagement.spec.planning</project>
-		<project>cleon.common.xml.spec.xmi</project>
-		<project>cleon.common.projectmanagement.spec.projectmanagement</project>
-		<project>cleon.conception.eamod.spec.ncv</project>
-		<project>cleon.common.projectmanagement.spec.resource</project>
-		<project>cleon.common.resources.spec.calendar</project>
-		<project>cleon.conception.eamod.spec.nav</project>
-		<project>cleon.conception.eamod.spec.chav</project>
-		<project>cleon.common.xml.spec.xml</project>
-		<project>cleon.conception.eamod.spec.chsv</project>
-		<project>cleon.common.projectmanagement.sample</project>
-		<project>cleon.conception.eamod.template.docbook</project>
-		<project>cleon.conception.eamod.template.asciidoc</project>
-		<project>cleon.conception.eamod.spec.nsv</project>
-		<project>cleon.common.projectmanagement.template.asciidoc</project>
-		<project>cleon.common.projectmanagement.template.versionone</project>
-		<project>cleon.common.projectmanagement.template.docbook</project>
-		<project>cleon.common.projectmanagement.template.tj3</project>
-		<project>cleon.common.projectmanagement.spec.steering</project>
-		<project>cleon.common.doc.template.docbook</project>
-		<project>cleon.common.glossary.template.docbook</project>
-		<project>cleon.common.glossary.template.asciidoc</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -54,17 +28,11 @@
 			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
 			<arguments>
 			</arguments>
-		</buildCommand>		
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,ff761ce9-d3ff-11e5-9dfc-cf0f3e030023,N3Ih5wW7VckSNhtHLTO76chOwEA=] -->

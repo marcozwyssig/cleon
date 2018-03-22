@@ -3,7 +3,15 @@
 	<name>cleon.support.documentation.template.asciidoc</name>
 	<comment/>
 	<projects>
-		
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.implementation.plantuml.template.uml</project>
+		<project>cleon.conception.software.spec.software</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.conception.modelinglanguage.spec.uml</project>
+		<project>cleon.conception.modelinglanguage.spec.buildingblock</project>
+		<project>cleon.conception.arc.spec.arc42</project>
+		<project>cleon.common.glossary.spec.glossary</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -33,4 +41,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6601019a-2b50-11e8-b4c1-97cc468744f4,2lNhvgT0rA86dO/J4Kbci3f0NLM=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6601019a-2b50-11e8-b4c1-97cc468744f4,FzAQZm/0XrsmDUVMkBwjlN2nq1k=] -->

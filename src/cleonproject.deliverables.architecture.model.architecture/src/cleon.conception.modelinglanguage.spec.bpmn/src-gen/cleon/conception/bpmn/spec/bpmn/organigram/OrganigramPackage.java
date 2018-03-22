@@ -19,7 +19,7 @@ public class OrganigramPackage {
   private OrganigramPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.bpmn.spec.bpmn";
+    return "cleon.conception.modelinglanguage.spec.bpmn";
   }
   
   public static final String getResourceFolderPath() {
@@ -31,4 +31,4 @@ public class OrganigramPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organigram,bqymO4VI9MX/anP+zqYXiaNn/Zk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organigram,bSfzdR4p9CL+odGoNoAgQmaL1w0=] */

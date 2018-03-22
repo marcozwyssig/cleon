@@ -13,7 +13,7 @@ public class RolePackage {
   private RolePackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.bpmn.spec.bpmn";
+    return "cleon.conception.modelinglanguage.spec.bpmn";
   }
   
   public static final String getResourceFolderPath() {
@@ -25,4 +25,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organisational.role,y+30AeR2GaHH16qzi0Em8NqXtQ0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organisational.role,6X+dupm4tW16uwhxxVYc3ITwfAs=] */

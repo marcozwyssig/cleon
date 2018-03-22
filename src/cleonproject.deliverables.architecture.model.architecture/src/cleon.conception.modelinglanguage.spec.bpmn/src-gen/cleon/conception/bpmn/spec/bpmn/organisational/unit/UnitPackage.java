@@ -17,7 +17,7 @@ public class UnitPackage {
   private UnitPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.bpmn.spec.bpmn";
+    return "cleon.conception.modelinglanguage.spec.bpmn";
   }
   
   public static final String getResourceFolderPath() {
@@ -29,4 +29,4 @@ public class UnitPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organisational.unit,mCEIf04wKEeM/VOkJ0Y1VT5pMss=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn.organisational.unit,f0/Xc7Y2TLEsLTPwMr3UpZRbSDk=] */

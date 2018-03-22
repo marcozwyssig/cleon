@@ -49,6 +49,14 @@
 				<arguments>1.0-name-matches-false-false-java</arguments>
 			</matcher>
 		</filter>
+		<filter>
+			<id>1521720909421</id>
+			<name>src/cleon.conception.actifsource.sample/src</name>
+			<type>30</type>
+			<matcher>
+				<id>org.eclipse.ui.ide.multiFilter</id>
+			</matcher>
+		</filter>
 	</filteredResources>	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>

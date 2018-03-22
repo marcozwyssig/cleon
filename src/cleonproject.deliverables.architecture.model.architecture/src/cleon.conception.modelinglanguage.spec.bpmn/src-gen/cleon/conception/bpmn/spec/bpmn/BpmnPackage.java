@@ -15,7 +15,7 @@ public class BpmnPackage {
   private BpmnPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.bpmn.spec.bpmn";
+    return "cleon.conception.modelinglanguage.spec.bpmn";
   }
   
   public static final String getResourceFolderPath() {
@@ -27,4 +27,4 @@ public class BpmnPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn,qDO5m85c0VYtAYnGQUULiMsdofg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.bpmn.spec.bpmn,WC55WD8uijL4bstNoqg8ZS7AETY=] */

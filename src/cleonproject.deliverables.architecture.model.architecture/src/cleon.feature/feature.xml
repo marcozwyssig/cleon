@@ -472,19 +472,9 @@ of their respective owners.
    <plugin id="cleon.conception.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.actifsource.spec.importer.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.actifsource.template.importer.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.microservices.spec.microservices.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.ddd.spec.ddd.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.arc.spec.arc42.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.arc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.soa.spec.soa.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.web.spec.website.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.web.template.docpad.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.cloud.spec.cloud.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.eda.spec.eda.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.patterns.spec.act.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.patterns.spec.eai.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.patterns.spec.cqrs.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.patterns.spec.gof.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.uml.spec.uml.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.uml.template.dotnet.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.uml.template.asciidoc.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
@@ -511,7 +501,14 @@ of their respective owners.
    <plugin id="cleon.conception.framework.spec.togaf.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.framework.spec.arc42.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.framework.spec.eamod.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-      
+   <plugin id="cleon.conception.concepts.spec.microservices.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.ddd.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.soa.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.eda.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.act.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.eai.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.cqrs.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.concepts.spec.gof.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.mobile.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
@@ -535,6 +532,8 @@ of their respective owners.
       
    <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
+   <plugin id="cleon.support.publishing.spec.website.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.support.publishing.template.docpad.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.common.analysis.spec.analysis.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.common.analysis.template.asciidoc.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>

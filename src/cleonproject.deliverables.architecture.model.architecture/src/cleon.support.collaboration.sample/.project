@@ -10,13 +10,18 @@
 		<project>cleon.common.projectmanagement.template.tj3</project>
 		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.resources.spec.resources</project>
-		<project>cleon.conception.modelinglanguage.spec.bpmn</project>
 		<project>cleon.implementation.testing.spec.testing</project>
 		<project>cleon.common.analysis.spec.analysis</project>
 		<project>cleon.conception.framework.spec.togaf</project>
-		<project>cleon.conception.software.spec.software</project>
 		<project>cleon.common.projectmanagement.spec.steering</project>
 		<project>cleon.deployment.chocolatey.template.nuget</project>
+		<project>cleon.conception.actifsource.spec.actifsource</project>
+		<project>cleon.common.knowledge.spec.knowledge</project>
+		<project>cleon.deployment.devops.spec.devops</project>
+		<project>cleon.conception.concepts.spec.ddd</project>
+		<project>cleon.conception.epm.spec.epm</project>
+		<project>cleon.conception.actifsource.template.importer</project>
+		<project>cleon.implementation.gradle.template.gradle</project>
 		<project>cleon.conception.framework.spec.eamod</project>
 		<project>cleon.conception.modelinglanguage.spec.uml</project>
 		<project>cleon.common.glossary.spec.glossary</project>
@@ -29,6 +34,12 @@
 		<project>cleon.conception.framework.spec.arc42</project>
 		<project>cleon.deployment.chocolatey.spec.nuspec</project>
 		<project>cleon.common.projectmanagement.spec.projectmanagement</project>
+		<project>cleon.conception.software.spec.software</project>
+		<project>cleon.conception.concepts.spec.soa</project>
+		<project>cleon.conception.concepts.spec.eda</project>
+		<project>cleon.conception.modelinglanguage.spec.bpmn</project>
+		<project>cleon.conception.actifsource.spec.importer</project>
+		<project>cleon.implementation.gradle.spec.plugin</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -58,4 +69,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,2e41fa77-2de0-11e8-bf2f-091bf46106cb,Qd6fMXbpY2aaWgC0t/ql0l7q/Ls=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,2e41fa77-2de0-11e8-bf2f-091bf46106cb,uuDRl/Tsxt2AfW2TGS53B5UKXXA=] -->

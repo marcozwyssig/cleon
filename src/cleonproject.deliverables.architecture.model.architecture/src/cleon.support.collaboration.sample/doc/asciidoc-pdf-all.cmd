@@ -1,9 +1,13 @@
 chcp 65001
+cmd /c bundle exec asciidoctor-pdf arc42.adoc
 cmd /c bundle exec asciidoctor-pdf Chess.adoc
+cmd /c bundle exec asciidoctor-pdf Sample_Analyse.adoc
+cmd /c bundle exec asciidoctor-pdf ReferenceDocumentWith___.adoc
 cmd /c bundle exec asciidoctor-pdf Readme.adoc
 cmd /c bundle exec asciidoctor-pdf Sample_Requirements_Anforderungen.adoc
 cmd /c bundle exec asciidoctor-pdf Sprint_1.adoc
 cmd /c bundle exec asciidoctor-pdf My_Testing.adoc
+cmd /c bundle exec asciidoctor-pdf Sample.adoc
 cmd /c bundle exec asciidoctor-pdf Analyse_A.adoc
 cmd /c bundle exec asciidoctor-pdf Analyse_B.adoc
 cmd /c bundle exec asciidoctor-pdf TestReferenceArc42.adoc

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="cb5eaf24-229d-11e8-88dc-0db67e3aa1a3">
+  <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <resource statement-guid="e9869044-229d-11e8-88dc-0db67e3aa1a3" type="resource" guid="e9866931-229d-11e8-88dc-0db67e3aa1a3" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cb5efd46-229d-11e8-88dc-0db67e3aa1a3" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cb60aaf7-229d-11e8-88dc-0db67e3aa1a3" type="literal">ImporterSample</object>
+  </predicate>
+  <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="cfa29a68-229d-11e8-88dc-0db67e3aa1a3" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="461126a0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="d2aad159-229d-11e8-88dc-0db67e3aa1a3" type="literal">ffff</object>
+  </predicate>
+  <predicate guid="57635ae9-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="d57981bb-229d-11e8-88dc-0db67e3aa1a3" type="literal">description</object>
+  </predicate>
+  <predicate guid="60f8f7f0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="d6b9f0fc-229d-11e8-88dc-0db67e3aa1a3" type="literal">ddd</object>
+  </predicate>
+  <predicate guid="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="e9869044-229d-11e8-88dc-0db67e3aa1a3">
+      <resource guid="e9866931-229d-11e8-88dc-0db67e3aa1a3">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e9869043-229d-11e8-88dc-0db67e3aa1a3" type="resource" guid="06e1bd57-0f10-11e7-9a20-dfec81ac21a9" />
+        </predicate>
+        <predicate guid="b7e31349-0f28-11e7-9a20-dfec81ac21a9">
+          <object statement-guid="e1bd4964-23a3-11e8-9237-83e9a2871328" type="resource" guid="d96c7dda-23a2-11e8-9237-83e9a2871328" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ff5671f2-0f13-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="d392c05a-229d-11e8-88dc-0db67e3aa1a3" type="literal">xml</object>
+  </predicate>
+</resource>
+

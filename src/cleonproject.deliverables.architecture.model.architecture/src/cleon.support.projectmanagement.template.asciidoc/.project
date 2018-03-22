@@ -3,13 +3,13 @@
 	<name>cleon.support.projectmanagement.template.asciidoc</name>
 	<comment/>
 	<projects>
-		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.doc.template.asciidoc</project>
-		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.support.projectmanagement.spec.projectmanagement</project>
+		<project>cleon.support.projectmanagement.spec.steering</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.support.projectmanagement.spec.resource</project>
 		<project>cleon.common.resources.spec.calendar</project>
-		<project>cleon.support.projectmanagement.spec.steering</project>
 		<project>cleon.support.projectmanagement.spec.planning</project>
 	</projects>
 	<buildSpec>
@@ -40,4 +40,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,7b8a7456-ef88-11e5-b5ac-7fb4e02ebb1c,sTyymbvIIN/VzufV3QWyIhEssw0=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,7b8a7456-ef88-11e5-b5ac-7fb4e02ebb1c,EfGmGKO/EoRcry4435X7Bc7DcLM=] -->

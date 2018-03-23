@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
-Bundle-Name: cleon.conception.software.spec.software
-Bundle-SymbolicName: cleon.conception.software.spec.software.builtin;singleton:=true
+Bundle-Name: cleon.conception.applications.spec.software
+Bundle-SymbolicName: cleon.conception.applications.spec.software.builtin;singleton:=true
 Bundle-Version: 0.2.7
 Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.environment;bundle-version="8.4.0",
@@ -19,6 +19,6 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.2.7",
  cleon.common.glossary.spec.glossary.builtin;bundle-version="0.2.7",
  ch.actifsource.generator;bundle-version="8.4.0"
-Export-Package: cleon.conception.software.spec.software,cleon.conception.software.spec.software.javamodel
- ,cleon.conception.software.spec.software._05_building_block,cleon.conception.software.spec.software._05_building_block.javamodel
+Export-Package: cleon.conception.applications.spec.software,cleon.conception.applications.spec.software.javamodel
+ ,cleon.conception.applications.spec.software._05_building_block,cleon.conception.applications.spec.software._05_building_block.javamodel
 

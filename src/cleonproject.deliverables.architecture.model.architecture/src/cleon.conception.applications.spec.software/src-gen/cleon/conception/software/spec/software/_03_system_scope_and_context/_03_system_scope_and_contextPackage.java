@@ -14,7 +14,7 @@ public class _03_system_scope_and_contextPackage {
   private _03_system_scope_and_contextPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.software.spec.software";
+    return "cleon.conception.applications.spec.software";
   }
   
   public static final String getResourceFolderPath() {
@@ -26,4 +26,4 @@ public class _03_system_scope_and_contextPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software._03_system_scope_and_context,hytyH+KycxVQ9kkAxiq1Xovg5BY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software._03_system_scope_and_context,xuRROXGKncMCBTMHfjXeez8E85A=] */

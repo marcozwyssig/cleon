@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.support.collaboration.sample</name>
-	<comment/>
+	<comment></comment>
 	<projects>
 		<project>cleon.common.doc.template.asciidoc</project>
 		<project>cleon.support.collaboration.spec.sda</project>
@@ -34,7 +34,7 @@
 		<project>cleon.conception.framework.spec.arc42</project>
 		<project>cleon.deployment.chocolatey.spec.nuspec</project>
 		<project>cleon.common.projectmanagement.spec.projectmanagement</project>
-		<project>cleon.conception.software.spec.software</project>
+		<project>cleon.conception.applications.spec.software</project>
 		<project>cleon.conception.concepts.spec.soa</project>
 		<project>cleon.conception.concepts.spec.eda</project>
 		<project>cleon.conception.modelinglanguage.spec.bpmn</project>
@@ -42,6 +42,11 @@
 		<project>cleon.implementation.gradle.spec.plugin</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
@@ -52,21 +57,10 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>		
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,2e41fa77-2de0-11e8-bf2f-091bf46106cb,uuDRl/Tsxt2AfW2TGS53B5UKXXA=] -->

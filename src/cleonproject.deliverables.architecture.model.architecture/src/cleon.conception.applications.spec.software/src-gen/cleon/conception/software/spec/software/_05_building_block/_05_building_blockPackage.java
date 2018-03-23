@@ -15,7 +15,7 @@ public class _05_building_blockPackage {
   private _05_building_blockPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.software.spec.software";
+    return "cleon.conception.applications.spec.software";
   }
   
   public static final String getResourceFolderPath() {
@@ -27,4 +27,4 @@ public class _05_building_blockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software._05_building_block,E0T8sHD5Y7eHOgsewAVbAb9yo9A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software._05_building_block,HfA7HgPMteGkHYVAkmAA5yTibgU=] */

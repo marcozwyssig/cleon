@@ -15,7 +15,7 @@ public class SoftwarePackage {
   private SoftwarePackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.software.spec.software";
+    return "cleon.conception.applications.spec.software";
   }
   
   public static final String getResourceFolderPath() {
@@ -27,4 +27,4 @@ public class SoftwarePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software,2kHrZngh9UN+xdj28zGbcLJHyVc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.software.spec.software,Lq3ujQGjxPlsBXFvxpUJodN7urc=] */

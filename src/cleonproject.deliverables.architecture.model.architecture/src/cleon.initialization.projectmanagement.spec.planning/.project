@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.initialization.projectmanagement.spec.planning</name>
+	<comment/>
+	<projects>
+		<project>cleon.initialization.projectmanagement.spec.resource</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.common.resources.spec.resources</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>		
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6a436a3d-bd13-11e6-bb05-4dd4e27268ef,qzII17ZtF1UVG0A3RsuPE6p0dUo=] -->

@@ -13,7 +13,7 @@ public class OperationalPackage {
   private OperationalPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.epm.spec.epm";
+    return "cleon.conception.framework.spec.epm";
   }
   
   public static final String getResourceFolderPath() {
@@ -25,4 +25,4 @@ public class OperationalPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.operational,/dRtUqnvQ4KCpDz+R/mAqOMQImU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.operational,M4v4yagIFl8RnTdYMVP25/eUVW0=] */

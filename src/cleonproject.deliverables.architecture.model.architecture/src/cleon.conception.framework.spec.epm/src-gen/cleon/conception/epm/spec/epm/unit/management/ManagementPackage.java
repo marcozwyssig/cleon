@@ -21,7 +21,7 @@ public class ManagementPackage {
   private ManagementPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.epm.spec.epm";
+    return "cleon.conception.framework.spec.epm";
   }
   
   public static final String getResourceFolderPath() {
@@ -33,4 +33,4 @@ public class ManagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.management,kAw4DOXtls+K2XoFmTwS3j21EEI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.management,nhikBsWD3gRspOeg2KYdsUrfmnY=] */

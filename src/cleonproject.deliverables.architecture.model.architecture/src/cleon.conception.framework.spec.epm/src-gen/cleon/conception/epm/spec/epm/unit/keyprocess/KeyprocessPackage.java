@@ -18,7 +18,7 @@ public class KeyprocessPackage {
   private KeyprocessPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.epm.spec.epm";
+    return "cleon.conception.framework.spec.epm";
   }
   
   public static final String getResourceFolderPath() {
@@ -30,4 +30,4 @@ public class KeyprocessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.keyprocess,Mhh/CqlksSRxKX2h5lmhU8/PD1M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.keyprocess,exItcTCMy/M3vHTO9cHBGOvcJ9I=] */

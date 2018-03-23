@@ -21,7 +21,7 @@ public class DistributionPackage {
   private DistributionPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.conception.epm.spec.epm";
+    return "cleon.conception.framework.spec.epm";
   }
   
   public static final String getResourceFolderPath() {
@@ -33,4 +33,4 @@ public class DistributionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.keyprocess.distribution,F31knSA4naB+A8UiWXkBUxTS/QE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.epm.spec.epm.unit.keyprocess.distribution,Z1nMoCeu+6HSyYyTXnooKIC4C+o=] */

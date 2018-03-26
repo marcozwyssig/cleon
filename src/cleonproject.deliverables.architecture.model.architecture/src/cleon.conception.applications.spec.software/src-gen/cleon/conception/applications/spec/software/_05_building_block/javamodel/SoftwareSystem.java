@@ -70,11 +70,11 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
   
   @Override
   public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
+    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose);
   }
 
   public SoftwareSystem setDecompose(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> decompose) {
-    _setList(cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, decompose);
+    _setList(cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, decompose);
     return this;
   }
     
@@ -117,7 +117,7 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
-    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
+    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.System_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.applications.spec.software._05_building_block._05_building_blockPackage.SoftwareSystem_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -130,4 +130,4 @@ public class SoftwareSystem extends DynamicResource implements ISoftwareSystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,ev8GIiKk+i4MmU12HNa0ap9BO6w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,ScZppAAcHK/QRe7+9kDROeZgHPM=] */

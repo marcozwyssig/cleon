@@ -61,22 +61,22 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
     
   @Override
-  public cleon.conception.framework.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext selectDomainContext() {
-    return _getSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext);
+  public cleon.conception.architecture.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext selectDomainContext() {
+    return _getSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext);
   }
 
-  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setDomainContext(cleon.conception.framework.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext domainContext) {
-    _setSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, domainContext);
+  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setDomainContext(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext domainContext) {
+    _setSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, domainContext);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.framework.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem> selectNeighboringSystems() {
-    return _getList(cleon.conception.framework.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems);
+  public java.util.List<? extends cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem> selectNeighboringSystems() {
+    return _getList(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems);
   }
 
-  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setNeighboringSystems(java.util.List<? extends cleon.conception.framework.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem> neighboringSystems) {
-    _setList(cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, neighboringSystems);
+  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setNeighboringSystems(java.util.List<? extends cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem> neighboringSystems) {
+    _setList(cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, neighboringSystems);
     return this;
   }
     
@@ -91,12 +91,12 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
     
   @Override
-  public cleon.conception.framework.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext selectTechnicalContext() {
-    return _getSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext);
+  public cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext selectTechnicalContext() {
+    return _getSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext);
   }
 
-  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setTechnicalContext(cleon.conception.framework.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext technicalContext) {
-    _setSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, technicalContext);
+  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setTechnicalContext(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext technicalContext) {
+    _setSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, technicalContext);
     return this;
   }
     
@@ -118,10 +118,10 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, visitor);
-    _acceptList(cleon.conception.framework.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, visitor);
+    _acceptList(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, visitor);
     _acceptSingle(cleon.conception.framework.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.ISystem.class, cleon.conception.framework.spec.togaf.reference._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_system, visitor);
-    _acceptSingle(cleon.conception.framework.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.framework.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -132,4 +132,4 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9488d40-28f1-11e8-a684-8332c21c2f91,y2BhBxzcY6MQ/5Bt4fpCAyq3/LQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9488d40-28f1-11e8-a684-8332c21c2f91,Xqj9R/lz9yv49sgYbDosY58NqdE=] */

@@ -2,7 +2,7 @@ package cleon.conception.framework.spec.togaf.solution.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISolutionArc42 extends cleon.conception.framework.spec.arc42.javamodel.IArc42 {
+public interface ISolutionArc42 extends cleon.conception.architecture.spec.arc42.javamodel.IArc42 {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c90cdcfd-28f2-11e8-a684-8332c21c2f91");
   
@@ -14,4 +14,4 @@ public interface ISolutionArc42 extends cleon.conception.framework.spec.arc42.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90cdcfd-28f2-11e8-a684-8332c21c2f91,s/sb4ilzaZ0WCUvz5w6N/U0pG4s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90cdcfd-28f2-11e8-a684-8332c21c2f91,7NRKXOQ4P4/JkbXOBxodz/RGpqM=] */

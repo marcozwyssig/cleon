@@ -49,7 +49,7 @@ public class FunctionSpace {
     public java.lang.String RenderCapabilities();
 
     @IDynamicResourceExtension.MethodId("9fa6060e-c1e8-11e6-84f4-db6ef89bc9ce")
-    public List<cleon.conception.eamod.spec.ncv.javamodel.ICapability> GetAllUsedCapabilities();
+    public List<cleon.conception.architecture.spec.eamod.ncv.javamodel.ICapability> GetAllUsedCapabilities();
 
   }
   
@@ -73,4 +73,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dc2ae63-c1e5-11e6-84f4-db6ef89bc9ce,Anumuu2d1LjvDpcgjzXrceQ5ttU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dc2ae63-c1e5-11e6-84f4-db6ef89bc9ce,vMHVZak4nscZTJkO3pFIk9VG7HA=] */

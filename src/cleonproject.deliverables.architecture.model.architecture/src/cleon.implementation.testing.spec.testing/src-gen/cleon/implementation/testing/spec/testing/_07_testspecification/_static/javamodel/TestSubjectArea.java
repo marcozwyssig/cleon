@@ -41,11 +41,11 @@ public class TestSubjectArea extends DynamicResource implements ITestSubjectArea
   }
     
   @Override
-  public cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea selectSubjectArea() {
-    return _getSingle(cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea);
+  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea selectSubjectArea() {
+    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea);
   }
 
-  public TestSubjectArea setSubjectArea(cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea subjectArea) {
+  public TestSubjectArea setSubjectArea(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea subjectArea) {
     _setSingle(cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea, subjectArea);
     return this;
   }
@@ -85,7 +85,7 @@ public class TestSubjectArea extends DynamicResource implements ITestSubjectArea
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
-    _acceptSingle(cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptMap(cleon.implementation.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_testRequirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -93,7 +93,7 @@ public class TestSubjectArea extends DynamicResource implements ITestSubjectArea
 
   // toMeRelations
   
-  public static java.util.List<cleon.implementation.testing.spec.testing._07_testspecification._static.javamodel.ITestSubjectArea> selectToMeSubjectArea(cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea object) {
+  public static java.util.List<cleon.implementation.testing.spec.testing._07_testspecification._static.javamodel.ITestSubjectArea> selectToMeSubjectArea(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea object) {
     return _getToMeList(object.getRepository(), cleon.implementation.testing.spec.testing._07_testspecification._static.javamodel.ITestSubjectArea.class, cleon.implementation.testing.spec.testing._07_testspecification._static._staticPackage.TestSubjectArea_subjectArea, object.getResource());
   }
   
@@ -102,4 +102,4 @@ public class TestSubjectArea extends DynamicResource implements ITestSubjectArea
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,8kd/M7nAtBFO/51j7QoDdAzt1l4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,u7KxGWDVrEve5AsqPtFQxoFNmFw=] */

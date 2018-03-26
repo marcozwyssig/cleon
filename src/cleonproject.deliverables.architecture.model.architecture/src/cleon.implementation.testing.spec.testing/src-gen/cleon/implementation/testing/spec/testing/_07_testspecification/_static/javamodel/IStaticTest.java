@@ -8,7 +8,7 @@ public interface IStaticTest extends ch.actifsource.core.javamodel.IDecorator, c
   
   // relations
   
-  public cleon.conception.eamod.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement();
+  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.implementation.testing.spec.testing._09_test_execution.javamodel.ITestResult> selectTestResult();
   
@@ -16,4 +16,4 @@ public interface IStaticTest extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,8fhMpMfpSsxM6S6SaKj+s9Tup5s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,y3YhkAbYORORDDwFTu3MokcE08A=] */

@@ -369,10 +369,10 @@ public class FunctionSpace {
   public static interface IGoalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2697c195-2cae-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderToAggregation(final cleon.conception.eamod.spec.chrv.motivation.goals.javamodel.IGoal goal);
+    public java.lang.String RenderToAggregation(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
 
     @IDynamicResourceExtension.MethodId("2697c1ed-2cae-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderFromAggregation(final cleon.conception.eamod.spec.chrv.motivation.goals.javamodel.IGoal goal);
+    public java.lang.String RenderFromAggregation(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
 
     @IDynamicResourceExtension.MethodId("1e1186ca-2cb0-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String RenderDriverDependency();
@@ -433,4 +433,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,HoCUi9JCkI2B0CieQleC9GwzVO0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,7zZXmr00E5erryyopV6dbafwrlM=] */

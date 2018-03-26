@@ -8,10 +8,10 @@ public interface ITestSubjectArea extends ch.actifsource.core.javamodel.IDecorat
   
   // relations
   
-  public cleon.conception.eamod.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea selectSubjectArea();
+  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea selectSubjectArea();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.implementation.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest> selectTestRequirements();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,AaZol8LUSXk+AnoCDR/eZKK+/vw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,gjB2JysT4szIRN9VYyDfS9pIgF4=] */

@@ -1,4 +1,4 @@
-package cleon.conception.act.spec.act;
+package cleon.conception.applications.spec.act;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class ActPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.act.spec.act";
+    return "cleon.conception.applications.spec.act";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.act.spec.act,T9GeKSYxCZ29pj3sxoBbyUezbVE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.applications.spec.act,/AV+Wi7VUU8txB8mKTyLgsWYKbE=] */

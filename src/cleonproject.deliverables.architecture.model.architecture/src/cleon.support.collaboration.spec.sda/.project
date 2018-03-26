@@ -1,42 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.support.collaboration.spec.sda</name>
-	<comment/>
+	<comment></comment>
 	<projects>
 		<project>cleon.implementation.testing.spec.testing</project>
 		<project>cleon.common.analysis.spec.analysis</project>
-		<project>cleon.conception.framework.spec.togaf</project>
+		<project>cleon.conception.architecture.spec.togaf</project>
 		<project>cleon.initialization.projectmanagement.spec.steering</project>
 		<project>cleon.deployment.chocolatey.template.nuget</project>
 		<project>cleon.conception.actifsource.spec.actifsource</project>
 		<project>cleon.common.knowledge.spec.knowledge</project>
 		<project>cleon.deployment.devops.spec.devops</project>
-		<project>cleon.conception.concepts.spec.ddd</project>
-		<project>cleon.conception.framework.spec.epm</project>
+		<project>cleon.conception.applications.spec.ddd</project>
+		<project>cleon.conception.organisation.spec.epm</project>
 		<project>cleon.conception.actifsource.template.importer</project>
 		<project>cleon.implementation.gradle.template.gradle</project>
-		<project>cleon.conception.framework.spec.eamod</project>
-		<project>cleon.conception.modelinglanguage.spec.uml</project>
+		<project>cleon.conception.architecture.spec.eamod</project>
+		<project>cleon.conception.architecture.spec.uml</project>
 		<project>cleon.common.glossary.spec.glossary</project>
 		<project>cleon.initialization.projectmanagement.spec.planning</project>
 		<project>cleon.common.xml.spec.xmi</project>
-		<project>cleon.conception.modelinglanguage.spec.buildingblock</project>
+		<project>cleon.conception.architecture.spec.buildingblock</project>
 		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.initialization.projectmanagement.spec.resource</project>
 		<project>cleon.common.resources.spec.calendar</project>
 		<project>cleon.common.xml.spec.xml</project>
-		<project>cleon.conception.framework.spec.arc42</project>
+		<project>cleon.conception.architecture.spec.arc42</project>
 		<project>cleon.deployment.chocolatey.spec.nuspec</project>
 		<project>cleon.initialization.projectmanagement.spec.projectmanagement</project>
 		<project>cleon.conception.applications.spec.software</project>
-		<project>cleon.conception.concepts.spec.soa</project>
-		<project>cleon.conception.concepts.spec.eda</project>
+		<project>cleon.conception.architecture.spec.soa</project>
+		<project>cleon.conception.architecture.spec.eda</project>
 		<project>cleon.initialization.processlanguage.spec.bpmn</project>
 		<project>cleon.conception.actifsource.spec.importer</project>
 		<project>cleon.implementation.gradle.spec.plugin</project>
 	</projects>
 	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
@@ -47,21 +52,10 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
-		<buildCommand>
-			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>		
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1c9002b8-6388-11e5-90cd-0d09bb283bc0,FPH5bYAI8g0J41oFiD49IxdLSyg=] -->

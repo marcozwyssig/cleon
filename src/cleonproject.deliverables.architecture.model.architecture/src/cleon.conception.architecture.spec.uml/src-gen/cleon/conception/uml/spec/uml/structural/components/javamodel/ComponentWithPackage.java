@@ -60,12 +60,12 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
+    return _getList(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public ComponentWithPackage setDecompose(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> decompose) {
-    _setList(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
+  public ComponentWithPackage setDecompose(java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite> decompose) {
+    _setList(cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
@@ -117,7 +117,7 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
-    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
+    _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentDependency.class, cleon.conception.uml.spec.uml.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
@@ -135,4 +135,4 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2adc4d98-85c1-11e3-be33-79789cf5eae3,gl2FfpnJO6cF6lrgXiaOsPH2u/o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2adc4d98-85c1-11e3-be33-79789cf5eae3,pcKMxu4H7M3yANdT9qcNI+rDF1U=] */

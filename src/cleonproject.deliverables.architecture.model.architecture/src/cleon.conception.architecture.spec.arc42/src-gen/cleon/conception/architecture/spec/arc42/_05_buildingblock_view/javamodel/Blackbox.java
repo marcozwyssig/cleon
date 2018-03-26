@@ -31,11 +31,11 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   // relations
   
   @Override
-  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectBuildingblock() {
-    return _getSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock);
+  public cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock selectBuildingblock() {
+    return _getSingle(cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock);
   }
 
-  public Blackbox setBuildingblock(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock buildingblock) {
+  public Blackbox setBuildingblock(cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock buildingblock) {
     _setSingle(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock, buildingblock);
     return this;
   }
@@ -64,16 +64,16 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.IBlackbox> selectToMeBuildingblock(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock object) {
+  public static java.util.List<cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.IBlackbox> selectToMeBuildingblock(cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock object) {
     return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.IBlackbox.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,0zNqUpZI58cyMEpnyQa3QYcr9vg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,tbkLQ1PAysV7+a90jornm36z8DA=] */

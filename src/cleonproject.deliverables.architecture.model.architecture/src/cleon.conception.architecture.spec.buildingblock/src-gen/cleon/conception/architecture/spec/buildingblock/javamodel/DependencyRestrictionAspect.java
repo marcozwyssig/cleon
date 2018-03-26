@@ -1,4 +1,4 @@
-package cleon.conception.modelinglanguage.spec.buildingblock.javamodel;
+package cleon.conception.architecture.spec.buildingblock.javamodel;
 
 import java.util.List;
 
@@ -22,8 +22,8 @@ import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency
 import ch.actifsource.util.collection.IOrderedSet;
 import ch.actifsource.util.filter.Filter;
 import ch.actifsource.util.filter.IFilter;
-import cleon.conception.modelinglanguage.spec.buildingblock.FunctionSpace.IBuildingBlockFunctions;
-import cleon.conception.modelinglanguage.spec.buildingblock.FunctionSpace.IDependencyFunctions;
+import cleon.conception.architecture.spec.buildingblock.FunctionSpace.IBuildingBlockFunctions;
+import cleon.conception.architecture.spec.buildingblock.FunctionSpace.IDependencyFunctions;
 
 public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl implements IUseRangeRestrictionAspect {
 

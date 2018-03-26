@@ -8,8 +8,8 @@ public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator {
   
   // relations
   
-  public cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IBuildingBlock selectBuildingblock();
+  public cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock selectBuildingblock();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,TQqMxTdzDUXJDoqGF9axYfGiSpk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,txy4JkjAWfZxRsyQGtTpjslfscI=] */

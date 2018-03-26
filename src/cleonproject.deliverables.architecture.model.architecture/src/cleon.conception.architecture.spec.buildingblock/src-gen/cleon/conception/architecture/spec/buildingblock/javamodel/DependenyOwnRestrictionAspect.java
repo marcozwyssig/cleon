@@ -1,4 +1,4 @@
-package cleon.conception.modelinglanguage.spec.buildingblock.javamodel;
+package cleon.conception.architecture.spec.buildingblock.javamodel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
 import ch.actifsource.util.filter.Filter;
 import ch.actifsource.util.filter.IFilter;
-import cleon.conception.modelinglanguage.spec.buildingblock.FunctionSpace.IBuildingBlockFunctions;
+import cleon.conception.architecture.spec.buildingblock.FunctionSpace.IBuildingBlockFunctions;
 import ch.actifsource.util.log.Logger;
 
 public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect {

@@ -1,4 +1,4 @@
-package cleon.conception.modelinglanguage.spec.buildingblock.javamodel;
+package cleon.conception.architecture.spec.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class Decomposite extends DynamicResource implements IDecomposit
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f9f84a2f-174c-11e5-9ca7-d1bb57b73459,W1glJgxUAMuZmCWc/T16sDq3FSM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f9f84a2f-174c-11e5-9ca7-d1bb57b73459,Bv5W+8rOgbMIg6AQkF6wGlgQCbI=] */

@@ -1,4 +1,4 @@
-package cleon.conception.modelinglanguage.spec.buildingblock.javamodel;
+package cleon.conception.architecture.spec.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class BuildingBlock extends DynamicResource implements IBuilding
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,243b1867-7973-11e4-a6e2-23d949480f96,iukXaUi6+wE4U3SOkVBIRfzOCiE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,243b1867-7973-11e4-a6e2-23d949480f96,c0K5uWIb4ehCJjLu4AqBalrfaog=] */

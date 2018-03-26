@@ -60,11 +60,11 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose);
+  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
+    return _getList(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose);
   }
 
-  public SampleBuildingBlock setDecompose(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public SampleBuildingBlock setDecompose(java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite> decompose) {
     _setList(cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, decompose);
     return this;
   }
@@ -107,7 +107,7 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, visitor);
+    _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.collaboration.sample.arc42.javamodel.ISampleDependency.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -115,7 +115,7 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
 
   // toMeRelations
   
-  public static cleon.collaboration.sample.arc42.javamodel.ISampleBuildingBlock selectToMeDecompose(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDecomposite object) {
+  public static cleon.collaboration.sample.arc42.javamodel.ISampleBuildingBlock selectToMeDecompose(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite object) {
     return _getToMeSingle(object.getRepository(), cleon.collaboration.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.collaboration.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, object.getResource());
   }
   
@@ -124,4 +124,4 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,5Ax3utfwW44niDX4ZSozSH6d1HM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,HL/OC3F4RWq0J96cyZmu+aKnatA=] */

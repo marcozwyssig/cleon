@@ -129,12 +129,12 @@ public class DialogView extends DynamicResource implements IDialogView {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
+  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
   }
 
-  public DialogView setHasDependency(java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public DialogView setHasDependency(java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> hasDependency) {
+    _setList(cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
@@ -193,7 +193,7 @@ public class DialogView extends DynamicResource implements IDialogView {
     _acceptSingle(cleon.conception.applications.spec.desktop.mvvm.javamodel.IView.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.View_extends, visitor);
     _acceptMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency.class, cleon.conception.modelinglanguage.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -201,4 +201,4 @@ public class DialogView extends DynamicResource implements IDialogView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,oxkvxpe6M+gbbpAEtLMSP2Tua6M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,ttay+DX+jnR4AJ84Ndht/lS0c0g=] */

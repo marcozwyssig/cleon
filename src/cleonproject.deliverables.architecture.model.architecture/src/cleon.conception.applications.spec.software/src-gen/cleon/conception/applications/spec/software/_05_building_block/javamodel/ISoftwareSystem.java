@@ -8,8 +8,8 @@ public interface ISoftwareSystem extends cleon.conception.architecture.spec.arc4
   
   // relations
   
-  public java.util.List<? extends cleon.conception.modelinglanguage.spec.buildingblock.javamodel.IDependency> selectHasDependency();
+  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> selectHasDependency();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,ITijBRQLkfYmKmvECcvHnQwJhS4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9237e4d5-4aa3-11e6-9c0f-393d355c5fe3,c37iII6jp6RAMkFph/0x7ktQGFU=] */

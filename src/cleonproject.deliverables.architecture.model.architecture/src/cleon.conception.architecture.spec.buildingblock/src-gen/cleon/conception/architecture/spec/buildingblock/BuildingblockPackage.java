@@ -1,4 +1,4 @@
-package cleon.conception.modelinglanguage.spec.buildingblock;
+package cleon.conception.architecture.spec.buildingblock;
 
 import ch.actifsource.core.Resource;
 
@@ -37,8 +37,8 @@ public class BuildingblockPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.modelinglanguage.spec.buildingblock";
+    return "cleon.conception.architecture.spec.buildingblock";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.modelinglanguage.spec.buildingblock,NSDpqrBfU9yZhrFs8vco/dO3twI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.buildingblock,BNHbIElURyIu5002G62bWsdcUok=] */

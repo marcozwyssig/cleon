@@ -115,13 +115,13 @@ public class FunctionSpace {
   public static interface IModuleLampStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f3b12eb-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsRed(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
 
     @IDynamicResourceExtension.MethodId("9f3b12ed-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsYellow(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
 
     @IDynamicResourceExtension.MethodId("9f3b12ef-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsGreen(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
 
   }
   
@@ -132,17 +132,17 @@ public class FunctionSpace {
     private ModuleLampStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsRed(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return moduleLampState.isRed();
     }
 
     @Override
-    public java.lang.Boolean IsYellow(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return moduleLampState.isYellow();
     }
 
     @Override
-    public java.lang.Boolean IsGreen(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return moduleLampState.isGreen();
     }
 
@@ -152,15 +152,15 @@ public class FunctionSpace {
 
     private ModuleLampStateFunctions() {}
 
-    public static java.lang.Boolean IsRed(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public static java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsRed(moduleLampState);
     }
 
-    public static java.lang.Boolean IsYellow(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public static java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsYellow(moduleLampState);
     }
 
-    public static java.lang.Boolean IsGreen(final cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
+    public static java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
       return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsGreen(moduleLampState);
     }
 
@@ -268,4 +268,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,1N7c1+928MSdVXI225a6Xopfl74=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,RyiJBxlh5UAFQvU19BDCTBYIaRw=] */

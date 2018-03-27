@@ -21,7 +21,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  cleon.common.doc.spec.doc.builtin;bundle-version="0.2.7",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.2.7",
  cleon.initialization.projectmanagement.spec.resource.builtin;bundle-version="0.2.7",
+ cleon.initialization.projectmanagement.model.hermes.builtin;bundle-version="0.2.7",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.2.7",
+ cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.2.7",
  cleon.common.xml.spec.xml.builtin;bundle-version="0.2.7",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.conception.testing.spec.testing,cleon.conception.testing.spec.testing.javamodel

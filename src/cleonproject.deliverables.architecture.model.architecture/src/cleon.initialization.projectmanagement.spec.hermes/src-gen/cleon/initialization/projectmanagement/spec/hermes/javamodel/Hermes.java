@@ -116,13 +116,13 @@ public class Hermes extends DynamicResource implements IHermes {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Hermes_modules, object.getResource());
   }
   
-  public static cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes selectToMeTasks(cleon.initialization.projectmanagement.spec.hermes.javamodel.ITasks object) {
-    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Hermes_tasks, object.getResource());
-  }
-  
   public static cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes selectToMeScenarios(cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenarios object) {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Hermes_scenarios, object.getResource());
   }
   
+  public static cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes selectToMeTasks(cleon.initialization.projectmanagement.spec.hermes.javamodel.ITasks object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.hermes.javamodel.IHermes.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Hermes_tasks, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,G20sKJKM+OruJ1PTVNuV49R0Avc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,52ZcJ8XxkvI75PhHpByPvaoIcPA=] */

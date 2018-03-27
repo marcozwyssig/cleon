@@ -14,10 +14,10 @@ public interface IHermes extends ch.actifsource.core.javamodel.IResource {
   
   public cleon.initialization.projectmanagement.spec.hermes.javamodel.IModules selectModules();
   
-  public cleon.initialization.projectmanagement.spec.hermes.javamodel.ITasks selectTasks();
-  
   public cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenarios selectScenarios();
+  
+  public cleon.initialization.projectmanagement.spec.hermes.javamodel.ITasks selectTasks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,EIziq374Aq8U79nCVV7SMmsa9Qk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,3IWG/mR4JnE8WhfngtAag2fOygM=] */

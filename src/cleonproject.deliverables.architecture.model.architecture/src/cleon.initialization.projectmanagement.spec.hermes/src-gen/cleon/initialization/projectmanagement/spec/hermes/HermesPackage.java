@@ -30,6 +30,7 @@ public class HermesPackage {
   public static final Resource Scenarios = new Resource("c341a2d2-31cf-11e8-8a84-6f139e67278b");
   public static final Resource Hermes_scenarios = new Resource("d1e3843c-31cf-11e8-8a84-6f139e67278b");
   public static final Resource Scenario = new Resource("e33988e3-31cf-11e8-8a84-6f139e67278b");
+  public static final Resource Scenarios_scenarios = new Resource("cab4515e-31d5-11e8-8891-11071a1f2fb6");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +51,4 @@ public class HermesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.hermes,TUfwcAwnk+Ncdg5eleXdwJQwwSk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.hermes,xfvxCy9GvomqRN46clh38QBtyiM=] */

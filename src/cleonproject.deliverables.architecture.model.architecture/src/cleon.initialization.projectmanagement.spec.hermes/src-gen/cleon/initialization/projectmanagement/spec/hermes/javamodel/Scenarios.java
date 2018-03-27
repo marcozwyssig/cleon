@@ -31,6 +31,16 @@ public class Scenarios extends DynamicResource implements IScenarios {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenario> selectScenarios() {
+    return _getList(cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenario.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Scenarios_scenarios);
+  }
+
+  public Scenarios setScenarios(java.util.List<? extends cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenario> scenarios) {
+    _setList(cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Scenarios_scenarios, scenarios);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -44,8 +54,15 @@ public class Scenarios extends DynamicResource implements IScenarios {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptList(cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenario.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Scenarios_scenarios, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenarios selectToMeScenarios(cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenario object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.hermes.javamodel.IScenarios.class, cleon.initialization.projectmanagement.spec.hermes.HermesPackage.Scenarios_scenarios, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c341a2d2-31cf-11e8-8a84-6f139e67278b,xOD3dhflvNACCTWjNpgluQN08Js=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c341a2d2-31cf-11e8-8a84-6f139e67278b,G/NEED2HHqmAXxoIO6d8xNwQqnE=] */

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="277e29a3-31d3-11e8-8891-11071a1f2fb6">
+  <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <resource statement-guid="277e29ae-31d3-11e8-8891-11071a1f2fb6" type="resource" guid="277e29a4-31d3-11e8-8891-11071a1f2fb6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="277e29ab-31d3-11e8-8891-11071a1f2fb6" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="277e29aa-31d3-11e8-8891-11071a1f2fb6" type="literal">Hermes Importer</object>
+  </predicate>
+  <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="277e29a9-31d3-11e8-8891-11071a1f2fb6" type="literal">0.0.1</object>
+  </predicate>
+  <predicate guid="461126a0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="2fe61b6d-31d3-11e8-8891-11071a1f2fb6" type="literal">Marco Zwyssig</object>
+  </predicate>
+  <predicate guid="57635ae9-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="32ca4f9e-31d3-11e8-8891-11071a1f2fb6" type="literal">Importer for Hermes XML</object>
+  </predicate>
+  <predicate guid="60f8f7f0-0f0d-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="39305792-31d3-11e8-8891-11071a1f2fb6" type="literal">Imports a XML into Actifsource</object>
+  </predicate>
+  <predicate guid="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="277e29ae-31d3-11e8-8891-11071a1f2fb6">
+      <resource guid="277e29a4-31d3-11e8-8891-11071a1f2fb6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="277e29ad-31d3-11e8-8891-11071a1f2fb6" type="resource" guid="06e1bd57-0f10-11e7-9a20-dfec81ac21a9" />
+        </predicate>
+        <predicate guid="b7e31349-0f28-11e7-9a20-dfec81ac21a9">
+          <object statement-guid="277e29ac-31d3-11e8-8891-11071a1f2fb6" type="resource" guid="fceba8cc-31c9-11e8-8a84-6f139e67278b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="ff5671f2-0f13-11e7-9a20-dfec81ac21a9">
+    <object statement-guid="277e29a5-31d3-11e8-8891-11071a1f2fb6" type="literal">xml</object>
+  </predicate>
+</resource>
+

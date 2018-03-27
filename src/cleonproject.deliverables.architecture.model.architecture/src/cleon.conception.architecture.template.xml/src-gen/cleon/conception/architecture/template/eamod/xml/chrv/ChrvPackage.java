@@ -1,4 +1,4 @@
-package cleon.conception.eamod.template.xml.chrv;
+package cleon.conception.architecture.template.eamod.xml.chrv;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class ChrvPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.eamod.template.xml.chrv";
+    return "cleon.conception.architecture.template.eamod.xml.chrv";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.eamod.template.xml.chrv,olDotQ6HW6TVXW7dfIho67nLbPY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.template.eamod.xml.chrv,g2pAeSh83HifdOt0gQPfeEeb7QU=] */

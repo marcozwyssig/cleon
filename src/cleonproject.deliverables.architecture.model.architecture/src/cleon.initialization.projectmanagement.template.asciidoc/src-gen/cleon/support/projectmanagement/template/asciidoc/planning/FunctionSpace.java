@@ -187,16 +187,16 @@ public class FunctionSpace {
   public static interface ICapacityPerDayFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("67f7685c-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsAFullDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsAFullDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("a5cc92a3-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsANoDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsANoDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("aca49591-cb8e-11e5-b911-69bd21f5af67")
-    public java.lang.Boolean IsAHalfDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsAHalfDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
 
     @IDynamicResourceExtension.MethodId("f0ba8e2d-0d63-11e6-9f44-9d0000bae4df")
-    public java.lang.Boolean IsWeekend(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
+    public java.lang.Boolean IsWeekend(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay);
 
   }
   
@@ -207,22 +207,22 @@ public class FunctionSpace {
     private CapacityPerDayFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsAFullDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsAFullDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return capacityPerDay.selectCapacity() >= 8;
     }
 
     @Override
-    public java.lang.Boolean IsANoDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsANoDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return capacityPerDay.selectCapacity() == 0 && !DayFunctions.IsWeekend(capacityPerDay.selectDay());
     }
 
     @Override
-    public java.lang.Boolean IsAHalfDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsAHalfDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return capacityPerDay.selectCapacity() > 0 && capacityPerDay.selectCapacity() < 8;
     }
 
     @Override
-    public java.lang.Boolean IsWeekend(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public java.lang.Boolean IsWeekend(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return capacityPerDay.selectCapacity() == 0 && DayFunctions.IsWeekend(capacityPerDay.selectDay());
     }
 
@@ -232,19 +232,19 @@ public class FunctionSpace {
 
     private CapacityPerDayFunctions() {}
 
-    public static java.lang.Boolean IsAFullDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsAFullDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsAFullDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsANoDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsANoDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsANoDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsAHalfDay(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsAHalfDay(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsAHalfDay(capacityPerDay);
     }
 
-    public static java.lang.Boolean IsWeekend(final cleon.support.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
+    public static java.lang.Boolean IsWeekend(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay capacityPerDay) {
       return DynamicResourceUtil.invoke(ICapacityPerDayFunctionsImpl.class, CapacityPerDayFunctionsImpl.INSTANCE, capacityPerDay).IsWeekend(capacityPerDay);
     }
 
@@ -548,4 +548,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,QyTjXjJRctI6+lpG3lGK64ym+Os=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,pau5QkcGPtsrt8NcI0y/8WedJco=] */

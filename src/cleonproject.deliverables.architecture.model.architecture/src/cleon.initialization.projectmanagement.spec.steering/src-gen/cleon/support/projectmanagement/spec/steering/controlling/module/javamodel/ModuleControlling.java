@@ -81,11 +81,11 @@ public class ModuleControlling extends DynamicResource implements IModuleControl
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.planning.scope.module.javamodel.IModule selectModule() {
-    return _getSingle(cleon.support.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module);
+  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule selectModule() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module);
   }
 
-  public ModuleControlling setModule(cleon.support.projectmanagement.spec.planning.scope.module.javamodel.IModule module) {
+  public ModuleControlling setModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module) {
     _setSingle(cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module, module);
     return this;
   }
@@ -150,7 +150,7 @@ public class ModuleControlling extends DynamicResource implements IModuleControl
     _acceptSingle(cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLamp.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_deadline, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleImpediments.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_impediments, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLamp.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_quality, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLamp.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_risk, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleRisks.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_risks, visitor);
@@ -160,7 +160,7 @@ public class ModuleControlling extends DynamicResource implements IModuleControl
 
   // toMeRelations
   
-  public static java.util.List<cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleControlling> selectToMeModule(cleon.support.projectmanagement.spec.planning.scope.module.javamodel.IModule object) {
+  public static java.util.List<cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleControlling> selectToMeModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule object) {
     return _getToMeList(object.getRepository(), cleon.support.projectmanagement.spec.steering.controlling.module.javamodel.IModuleControlling.class, cleon.support.projectmanagement.spec.steering.controlling.module.ModulePackage.ModuleControlling_module, object.getResource());
   }
   
@@ -185,4 +185,4 @@ public class ModuleControlling extends DynamicResource implements IModuleControl
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,Pd08jQPkHsfFKvNC8cYevzVr6EI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,G3oFEAoIlWK6mmwr4oPNxlY78QM=] */

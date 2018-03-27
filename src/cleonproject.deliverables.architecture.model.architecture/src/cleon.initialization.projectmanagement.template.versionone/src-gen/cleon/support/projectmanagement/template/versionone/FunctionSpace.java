@@ -53,7 +53,7 @@ public class FunctionSpace {
   public static interface IReproducibilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2077d5cf-376f-11e5-95d9-2b04d7ab02d9")
-    public List<java.lang.String> RenderContent(final cleon.support.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility);
+    public List<java.lang.String> RenderContent(final cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility);
 
   }
   
@@ -64,7 +64,7 @@ public class FunctionSpace {
     private ReproducibilityFunctionsImpl() {}
 
     @Override
-    public List<java.lang.String> RenderContent(final cleon.support.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility) {
+    public List<java.lang.String> RenderContent(final cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility) {
       /* Begin Protected Region [[2077d5cf-376f-11e5-95d9-2b04d7ab02d9]] */
         List<java.lang.String> result = new java.util.ArrayList<String>();
         List<java.lang.String> input = reproducibility.selectReproduce();
@@ -82,7 +82,7 @@ public class FunctionSpace {
 
     private ReproducibilityFunctions() {}
 
-    public static List<java.lang.String> RenderContent(final cleon.support.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility) {
+    public static List<java.lang.String> RenderContent(final cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IReproducibility reproducibility) {
       return DynamicResourceUtil.invoke(IReproducibilityFunctionsImpl.class, ReproducibilityFunctionsImpl.INSTANCE, reproducibility).RenderContent(reproducibility);
     }
 
@@ -215,4 +215,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d17ca089-375d-11e5-95d9-2b04d7ab02d9,nzI5YdC7Un9Fa4WDgC4HQXISUwA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d17ca089-375d-11e5-95d9-2b04d7ab02d9,2c2cOZ+xbk9PDyDmitY6fTp84Co=] */

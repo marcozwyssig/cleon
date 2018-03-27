@@ -302,10 +302,10 @@ public class FunctionSpace {
     public java.lang.String RenderCapabilities();
 
     @IDynamicResourceExtension.MethodId("80c3049b-c1e3-11e6-8517-1bc2821627a9")
-    public List<cleon.support.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> GetAllDeliverables();
+    public List<cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> GetAllDeliverables();
 
     @IDynamicResourceExtension.MethodId("f5c6615e-2127-11e8-8246-67c1f1659098")
-    public cleon.support.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
+    public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
 
   }
   
@@ -330,7 +330,7 @@ public class FunctionSpace {
   public static interface IProjectGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0edd1bad-2128-11e8-8246-67c1f1659098")
-    public cleon.support.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
+    public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
 
   }
   
@@ -355,7 +355,7 @@ public class FunctionSpace {
   public static interface ISystemGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1b771f26-2128-11e8-8246-67c1f1659098")
-    public cleon.support.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
+    public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoals GetGoals();
 
   }
   
@@ -379,4 +379,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,lWwR1eoP/z9p4/NyoiRAYmvPdsw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,qtbc+ad/E0opO31RCvRC+MjX0X8=] */

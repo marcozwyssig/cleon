@@ -50,11 +50,11 @@ public class FailureClass extends DynamicResource implements IFailureClass {
 
   @Override
   public java.lang.Integer selectIdentifier() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
   }
     
   public void setIdentifier(java.lang.Integer identifier) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier, identifier);
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
   }
 
   @Override
@@ -84,7 +84,7 @@ public class FailureClass extends DynamicResource implements IFailureClass {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -145,4 +145,4 @@ public class FailureClass extends DynamicResource implements IFailureClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,882921f6-1db2-11e6-974b-630b7f5d3b95,82CirQT1zY/ewqy26QsjP7XkGyM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,882921f6-1db2-11e6-974b-630b7f5d3b95,bhtcIuVNe/U+u28tahconta7kLg=] */

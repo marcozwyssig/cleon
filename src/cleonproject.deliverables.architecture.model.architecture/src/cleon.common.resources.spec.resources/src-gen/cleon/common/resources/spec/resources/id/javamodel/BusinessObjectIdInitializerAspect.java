@@ -15,7 +15,7 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.resources.spec.resources.id.IdPackage;
 
-public abstract class BusinessObjectIdInitializerAspect<T extends IBusinessObjectId> extends AbstractInitializationAspect {
+public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusinessObjectId> extends AbstractInitializationAspect {
 
 	private Class<T> _classInstance;
 	protected BusinessObjectIdInitializerAspect(Class<T> classInstance)
@@ -39,7 +39,7 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IBusinessObjec
 				max = maxOptional.getAsInt();
 			}
 					
-			Update.createStatement(modifiable, pkg, newInstance, IdPackage.BusinessObjectId_identifier, LiteralUtil.create(max + 1));			
+			Update.createStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(max + 1));			
 		}
 		catch(Exception e)
 		{

@@ -12,7 +12,7 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.common.resources.spec.resources.id.IdPackage;
 
-public class BusinessObjectIdUniqueValidationAspect<T extends IBusinessObjectId> implements IResourceValidationAspect {
+public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessObjectId> implements IResourceValidationAspect {
 
 	private Class<T> _classInstance;
 
@@ -26,7 +26,7 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IBusinessObjectId>
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
 		List<T> resources = resourceRepository.getAllResources(_classInstance);
-		IBusinessObjectId businessObjectId = resourceRepository.getResource(IBusinessObjectId.class,
+		IIntegerBusinessObjectId businessObjectId = resourceRepository.getResource(IIntegerBusinessObjectId.class,
 				context.getResource());
 
 		List<T> duplicateItems = resources.stream()
@@ -37,7 +37,7 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IBusinessObjectId>
 			String errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
 					businessObjectId.selectIdentifier());
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
-					IdPackage.BusinessObjectId_identifier, errormessage));
+					IdPackage.IntegerBusinessObjectId_identifier, errormessage));
 		}
 
 	}

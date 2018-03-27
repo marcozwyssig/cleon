@@ -50,11 +50,11 @@ public class Module extends DynamicResource implements IModule {
 
   @Override
   public java.lang.Integer selectIdentifier() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
   }
     
   public void setIdentifier(java.lang.Integer identifier) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier, identifier);
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
   }
 
   @Override
@@ -144,7 +144,7 @@ public class Module extends DynamicResource implements IModule {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.planning.schedule.targetdates.javamodel.IDeadline.class, cleon.initialization.projectmanagement.spec.planning.scope.module.ModulePackage.Module_deadlines, visitor);
@@ -175,4 +175,4 @@ public class Module extends DynamicResource implements IModule {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,1oBh9bu8p8QQbnEuhVVFK4UB89o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,E85QyNk9GkOdNNMmrfPW235pk5I=] */

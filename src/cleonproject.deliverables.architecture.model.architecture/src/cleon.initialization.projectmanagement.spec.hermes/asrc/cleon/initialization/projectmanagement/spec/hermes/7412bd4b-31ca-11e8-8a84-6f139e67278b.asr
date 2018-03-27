@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="7412bd4b-31ca-11e8-8a84-6f139e67278b">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="78b62d74-31ca-11e8-8a84-6f139e67278b" type="resource" guid="3721d900-31ca-11e8-8a84-6f139e67278b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7412bd4d-31ca-11e8-8a84-6f139e67278b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e255ab0b-31ca-11e8-8a84-6f139e67278b" type="resource" guid="dd805553-31ca-11e8-8a84-6f139e67278b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="78b62d74-31ca-11e8-8a84-6f139e67278b">
+      <resource guid="3721d900-31ca-11e8-8a84-6f139e67278b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3721d902-31ca-11e8-8a84-6f139e67278b" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3721d903-31ca-11e8-8a84-6f139e67278b" type="literal">phases</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="37224e35-31ca-11e8-8a84-6f139e67278b" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="37227546-31ca-11e8-8a84-6f139e67278b" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="37229c57-31ca-11e8-8a84-6f139e67278b" type="resource" guid="2ed51008-31ca-11e8-8a84-6f139e67278b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7412e45e-31ca-11e8-8a84-6f139e67278b" type="literal">Phases</object>
+  </predicate>
+</resource>
+

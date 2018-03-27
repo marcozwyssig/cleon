@@ -18,7 +18,7 @@ import cleon.conception.testing.spec.testing._07_testspecification._07_testspeci
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
 	public MakeAllIdsUniqueRefactoringAspect() {
-		super("1.0", 2016, 5, 20, "Make all ids in testing unique", IdPackage.BusinessObjectId);
+		super("1.0", 2016, 5, 20, "Make all ids in testing unique", IdPackage.IntegerBusinessObjectId);
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 			++i;
 			try
 			{
-				Update.createOrModifyStatement(executor, paramPackage, node, IdPackage.BusinessObjectId_identifier, LiteralUtil.create(i));
+				Update.createOrModifyStatement(executor, paramPackage, node, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(i));
 			}
 			catch(Exception e)
 			{

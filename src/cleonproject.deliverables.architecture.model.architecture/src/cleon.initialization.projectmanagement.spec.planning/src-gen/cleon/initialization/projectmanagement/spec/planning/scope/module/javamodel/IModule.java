@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.planning.scope.module.javamo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IModule extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.id.javamodel.IBusinessObjectId, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware {
+public interface IModule extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a");
   
@@ -18,4 +18,4 @@ public interface IModule extends cleon.common.doc.spec.doc.chapter.javamodel.INa
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,cuMJDaZci5c9A9RL0b6Sq/O1zMI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,C35JDSNPquaJe00JIViiEs/GhMY=] */

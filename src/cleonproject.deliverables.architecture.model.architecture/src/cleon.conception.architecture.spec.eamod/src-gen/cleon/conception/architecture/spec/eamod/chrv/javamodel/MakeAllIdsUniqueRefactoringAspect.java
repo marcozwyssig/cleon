@@ -21,7 +21,7 @@ import cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.DriversP
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
 	public MakeAllIdsUniqueRefactoringAspect() {
-		super("1.0", 2016, 4, 11, "Make all ids in requirementsmanagement unique", IdPackage.BusinessObjectId);
+		super("1.0", 2016, 4, 11, "Make all ids in requirementsmanagement unique", IdPackage.IntegerBusinessObjectId);
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 			++i;
 			try
 			{
-				Statement idstatement = Select.statementForAttributeOrNull(executor, IdPackage.BusinessObjectId_identifier, node);
+				Statement idstatement = Select.statementForAttributeOrNull(executor, IdPackage.IntegerBusinessObjectId_identifier, node);
 				Update.modify(executor, idstatement, LiteralUtil.create(i));				
 			}
 			catch(Exception e)

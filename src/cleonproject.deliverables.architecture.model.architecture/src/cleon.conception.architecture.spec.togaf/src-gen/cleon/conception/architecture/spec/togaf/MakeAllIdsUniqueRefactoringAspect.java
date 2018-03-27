@@ -19,7 +19,7 @@ import cleon.conception.architecture.spec.togaf.solution._05_solutionbuildingblo
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
 	public MakeAllIdsUniqueRefactoringAspect() {
-		super("1.0", 2016, 7, 5, "Make all ids in system unique", IdPackage.BusinessObjectId);
+		super("1.0", 2016, 7, 5, "Make all ids in system unique", IdPackage.IntegerBusinessObjectId);
 	}
 
 	@Override
@@ -40,7 +40,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 			++i;
 			try
 			{
-				Update.createOrModifyStatement(executor, paramPackage, node, IdPackage.BusinessObjectId_identifier, LiteralUtil.create(i));
+				Update.createOrModifyStatement(executor, paramPackage, node, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(i));
 			}
 			catch(Exception e)
 			{

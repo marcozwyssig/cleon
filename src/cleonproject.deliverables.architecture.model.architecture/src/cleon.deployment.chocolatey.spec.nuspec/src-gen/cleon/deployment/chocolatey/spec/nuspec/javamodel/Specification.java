@@ -57,15 +57,6 @@ public class Specification extends DynamicResource implements ISpecification {
      _setSingleAttribute(cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, requireLicenseAcceptance);
   }
 
-  @Override
-  public java.lang.String selectVersion() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version);
-  }
-    
-  public void setVersion(java.lang.String version) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version, version);
-  }
-
   // relations
   
   @Override
@@ -98,6 +89,16 @@ public class Specification extends DynamicResource implements ISpecification {
     return this;
   }
     
+  @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion selectVersion() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version);
+  }
+
+  public Specification setVersion(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion version) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, version);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -105,12 +106,12 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.DisplayName_displayName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,f5Fpq+Cr9HG3BATKQi7Eas7mq/w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,2507sFgb4XkIcv9HUAa2HgK5PDw=] */

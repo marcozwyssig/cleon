@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.steering.impediments.javamod
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IImpediment extends cleon.common.resources.spec.resources.id.javamodel.IBusinessObjectId, ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.spec.resources.descriptions.javamodel.IMandatoryDescription, cleon.common.resources.spec.resources.workstate.javamodel.IWorkStateAware, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware {
+public interface IImpediment extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.spec.resources.descriptions.javamodel.IMandatoryDescription, cleon.common.resources.spec.resources.workstate.javamodel.IWorkStateAware, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b33bed18-3383-11e6-b251-57783f5929b3");
   
@@ -14,4 +14,4 @@ public interface IImpediment extends cleon.common.resources.spec.resources.id.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,ULEY8Lc6Ki5HxKhNRH5qFWe6yvw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,Q6yxUb89Kl8wpgfCXMNcvPGw2+Q=] */

@@ -5,7 +5,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 /**
  * SolutionBlock (SBB), Produkt, Technologie
  */
-public interface ISolutionBuildingBlock extends cleon.conception.architecture.spec.uml.structural.components.javamodel.INamedComponentComposition, cleon.common.resources.spec.resources.versions.javamodel.IVersion, cleon.common.resources.spec.resources.naming.javamodel.IRequiredShortName, cleon.common.resources.spec.resources.id.javamodel.IBusinessObjectId {
+public interface ISolutionBuildingBlock extends cleon.conception.architecture.spec.uml.structural.components.javamodel.INamedComponentComposition, cleon.common.resources.spec.resources.versions.javamodel.IVersion, cleon.common.resources.spec.resources.naming.javamodel.IRequiredShortName, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("280ce792-2d70-11e6-959f-d1cef44ff5fd");
   
@@ -21,4 +21,4 @@ public interface ISolutionBuildingBlock extends cleon.conception.architecture.sp
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,7dzF2SQCN2kmgaYbVQM8aGPsupw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,LUcpeHtzH7kyw1mfCHEbSgiHhMQ=] */

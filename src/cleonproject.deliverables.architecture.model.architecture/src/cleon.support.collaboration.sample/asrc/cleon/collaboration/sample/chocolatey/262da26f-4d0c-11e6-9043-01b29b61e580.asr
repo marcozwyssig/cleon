@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="262da26f-4d0c-11e6-9043-01b29b61e580">
+  <owns predicate="165c7061-d410-11e5-8556-8f55ceb91287">
+    <resource statement-guid="bb2ae5a0-31cc-11e8-8a84-6f139e67278b" type="resource" guid="bb2abe8d-31cc-11e8-8a84-6f139e67278b" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="262da271-4d0c-11e6-9043-01b29b61e580" type="resource" guid="4652f766-4d0b-11e6-9043-01b29b61e580" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="262dc982-4d0c-11e6-9043-01b29b61e580" type="literal">Packer</object>
   </predicate>
-  <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
-    <object statement-guid="2c9e0ad1-4d0c-11e6-9043-01b29b61e580" type="literal">0.7.5.20150603</object>
+  <predicate guid="165c7061-d410-11e5-8556-8f55ceb91287">
+    <object statement-guid="bb2ae5a0-31cc-11e8-8a84-6f139e67278b">
+      <resource guid="bb2abe8d-31cc-11e8-8a84-6f139e67278b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bb2abe8f-31cc-11e8-8a84-6f139e67278b" type="resource" guid="2b7fed0c-d40f-11e5-8556-8f55ceb91287" />
+        </predicate>
+        <predicate guid="36611c40-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="bd53b920-31cc-11e8-8a84-6f139e67278b" type="literal">0</object>
+        </predicate>
+        <predicate guid="3ca80378-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="bdcb5a2b-31cc-11e8-8a84-6f139e67278b" type="literal">2</object>
+        </predicate>
+        <predicate guid="494a6ba2-d40f-11e5-8556-8f55ceb91287">
+          <object statement-guid="bdf99526-31cc-11e8-8a84-6f139e67278b" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="d5635ef0-2f05-11e6-8bd9-a77b8d2a3a0e">
     <object statement-guid="839087a2-bff1-11e7-9dcc-23cb45d05890" type="resource" guid="8ff91c83-c10a-11e6-8f58-ad3c6ee7602f" />

@@ -27,7 +27,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * Klassifikation von
  * Services angesehen werden.
  */
-public interface IService extends ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.resources.spec.resources.id.javamodel.IBusinessObjectId {
+public interface IService extends ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("df40cec4-bc84-11e6-b169-a12bde5a1c7c");
   
@@ -47,4 +47,4 @@ public interface IService extends ch.actifsource.core.javamodel.INamedResource, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,KL4pEudNiqqTw7V/njVaSMxLyH0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,ixwgbnO3dFix/gMK2IU/IM6629A=] */

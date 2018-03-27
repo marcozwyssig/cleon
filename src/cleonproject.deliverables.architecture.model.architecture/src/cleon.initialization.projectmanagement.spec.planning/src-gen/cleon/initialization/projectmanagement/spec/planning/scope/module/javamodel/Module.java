@@ -109,12 +109,12 @@ public class Module extends DynamicResource implements IModule {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public Module setOwner(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
-    _setSingle(cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+  public Module setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
     
@@ -151,7 +151,7 @@ public class Module extends DynamicResource implements IModule {
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModuleDependency.class, cleon.initialization.projectmanagement.spec.planning.scope.module.ModulePackage.Module_dependsOn, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.module.ModulePackage.Module_outcomes, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModuleState.class, cleon.initialization.projectmanagement.spec.planning.scope.module.ModulePackage.Module_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -175,4 +175,4 @@ public class Module extends DynamicResource implements IModule {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,8gKwmo0SbfOvSBFlIpVaLLqIdyk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,1oBh9bu8p8QQbnEuhVVFK4UB89o=] */

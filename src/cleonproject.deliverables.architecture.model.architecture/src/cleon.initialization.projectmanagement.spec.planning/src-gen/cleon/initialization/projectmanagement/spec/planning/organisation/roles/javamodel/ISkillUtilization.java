@@ -8,10 +8,10 @@ public interface ISkillUtilization extends ch.actifsource.core.javamodel.IDecora
   
   // relations
   
-  public cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill selectSkill();
+  public cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill selectSkill();
   
   public cleon.common.resources.spec.resources.importance.javamodel.IImportance selectImportance();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,f2+8epj19OkxctzRJ0SA5BOp1fU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,9KsLVHOebC3iastftOsOSaluP78=] */

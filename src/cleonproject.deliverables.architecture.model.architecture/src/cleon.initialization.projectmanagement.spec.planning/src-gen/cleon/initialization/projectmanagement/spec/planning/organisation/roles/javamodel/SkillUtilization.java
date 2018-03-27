@@ -41,11 +41,11 @@ public class SkillUtilization extends DynamicResource implements ISkillUtilizati
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill selectSkill() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill);
+  public cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill selectSkill() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill);
   }
 
-  public SkillUtilization setSkill(cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill skill) {
+  public SkillUtilization setSkill(cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill skill) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill, skill);
     return this;
   }
@@ -75,14 +75,14 @@ public class SkillUtilization extends DynamicResource implements ISkillUtilizati
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.importance.javamodel.IImportance.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_importance, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.ISkillUtilization> selectToMeSkill(cleon.support.projectmanagement.spec.resource.skills.javamodel.ISkill object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.ISkillUtilization> selectToMeSkill(cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkill object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.ISkillUtilization.class, cleon.initialization.projectmanagement.spec.planning.organisation.roles.RolesPackage.SkillUtilization_skill, object.getResource());
   }
   
@@ -91,4 +91,4 @@ public class SkillUtilization extends DynamicResource implements ISkillUtilizati
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,zI34LosQ3ODLLLd4S8BJZVL3mjg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,imLml/dXjUfJiITc+4mC+HqUoU0=] */

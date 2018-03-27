@@ -14,7 +14,7 @@ public interface IProtocol extends cleon.common.doc.spec.doc.document.javamodel.
   
   public cleon.common.resources.spec.calendar.javamodel.IDay selectDate();
   
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectMembers();
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectMembers();
   
   public cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IAgenda selectAgenda();
   
@@ -22,10 +22,10 @@ public interface IProtocol extends cleon.common.doc.spec.doc.document.javamodel.
   
   public cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember selectModerator();
   
-  public cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation selectLocation();
+  public cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation selectLocation();
   
   public cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocolProperties selectProperties();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,bPvqHUbNvrufU4MFUggtXRnilV8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,b7pUIYxRr3S+tOU1Ir3Q2LlWP3g=] */

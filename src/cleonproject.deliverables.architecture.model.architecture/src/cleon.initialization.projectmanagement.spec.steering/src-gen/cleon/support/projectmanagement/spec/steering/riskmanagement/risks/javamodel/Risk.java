@@ -98,12 +98,12 @@ public class Risk extends DynamicResource implements IRisk {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public Risk setOwner(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
-    _setSingle(cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+  public Risk setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
     
@@ -149,7 +149,7 @@ public class Risk extends DynamicResource implements IRisk {
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.support.projectmanagement.spec.steering.riskmanagement.risks.RisksPackage.Risk_entryDate, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.riskmanagement.risks.impactarea.javamodel.IImpactType.class, cleon.support.projectmanagement.spec.steering.riskmanagement.risks.RisksPackage.Risk_impactType, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.riskmanagement.risks.javamodel.IRiskState.class, cleon.support.projectmanagement.spec.steering.riskmanagement.risks.RisksPackage.Risk_riskState, visitor);
     _acceptSingle(cleon.support.projectmanagement.spec.steering.riskmanagement.risks.javamodel.IRiskType.class, cleon.support.projectmanagement.spec.steering.riskmanagement.risks.RisksPackage.Risk_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -174,4 +174,4 @@ public class Risk extends DynamicResource implements IRisk {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70f3fadf-2efd-11e6-8bd9-a77b8d2a3a0e,vfVieCW1VZIHeNKqr3wbV0IlcK0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70f3fadf-2efd-11e6-8bd9-a77b8d2a3a0e,U4vdOzzYPbfWDkIHLCSgod6NwWA=] */

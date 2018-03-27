@@ -8,7 +8,7 @@ public interface IWorkItem extends cleon.common.resources.spec.resources.id.java
   
   // relations
   
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners();
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners();
   
   public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem> selectPreconditions();
   
@@ -16,4 +16,4 @@ public interface IWorkItem extends cleon.common.resources.spec.resources.id.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,4pgYdDC87rrYGjKzHYvvx21daXg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,l6ijHlh8gpMe/2PLkUWhIYYK1sE=] */

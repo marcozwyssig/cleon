@@ -16,8 +16,8 @@ public interface ISprintPlanning extends ch.actifsource.core.javamodel.IDecorato
   
   public cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintBacklog selectSprintBacklog();
   
-  public cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam selectTeam();
+  public cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam selectTeam();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,irxVJRvTq6iMl55hS3QR6WJGuOc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,/J0qR7OGq4Qtkd4b4HTAJbnjfes=] */

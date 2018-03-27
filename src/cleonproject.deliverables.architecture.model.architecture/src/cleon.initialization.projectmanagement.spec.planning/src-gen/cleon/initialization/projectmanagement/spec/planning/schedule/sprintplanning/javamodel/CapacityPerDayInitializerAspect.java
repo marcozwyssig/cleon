@@ -20,11 +20,11 @@ import cleon.common.resources.spec.calendar.javamodel.Year;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.PersonCapacity;
-import cleon.support.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenceMonth;
-import cleon.support.projectmanagement.spec.resource.persons.absence.javamodel.IAbsences;
-import cleon.support.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenseDay;
-import cleon.support.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenseYear;
-import cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson;
+import cleon.initialization.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenceMonth;
+import cleon.initialization.projectmanagement.spec.resource.persons.absence.javamodel.IAbsences;
+import cleon.initialization.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenseDay;
+import cleon.initialization.projectmanagement.spec.resource.persons.absence.javamodel.IAbsenseYear;
+import cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson;
 
 public class CapacityPerDayInitializerAspect extends AbstractInitializationAspect {
 

@@ -10,8 +10,8 @@ public interface IProtocolItem extends ch.actifsource.core.javamodel.IResource, 
   
   public java.lang.String selectName();
   
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectResponsibles();
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectResponsibles();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,71fe646f-b462-11e5-a3f4-497fd75158dc,PqKw0QxaivCaCt7+j9OxnTm+Hgc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,71fe646f-b462-11e5-a3f4-497fd75158dc,ASEhfawe0DF5hEOlc12RYwta2yY=] */

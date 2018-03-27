@@ -126,21 +126,21 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation selectLocation() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location);
+  public cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation selectLocation() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location);
   }
 
-  public Protocol setLocation(cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation location) {
+  public Protocol setLocation(cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation location) {
     _setSingle(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, location);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectMembers() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectMembers() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members);
   }
 
-  public Protocol setMembers(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> members) {
+  public Protocol setMembers(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> members) {
     _setList(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, members);
     return this;
   }
@@ -210,8 +210,8 @@ public class Protocol extends DynamicResource implements IProtocol {
     _acceptSingle(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IAgenda.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_agenda, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, visitor);
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocolProperties.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_properties, visitor);
     _acceptMap(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocolItems.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_protocol, visitor);
@@ -225,7 +225,7 @@ public class Protocol extends DynamicResource implements IProtocol {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeMembers(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeMembers(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, object.getResource());
   }
   
@@ -241,7 +241,7 @@ public class Protocol extends DynamicResource implements IProtocol {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeLocation(cleon.support.projectmanagement.spec.resource.locations.javamodel.ILocation object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol> selectToMeLocation(cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, object.getResource());
   }
   
@@ -250,4 +250,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,nkpfmy5n8Hl8VuvckpGGOkJLFhE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,fVVcBiAxcIQvF1N+5UAzS7FVkIk=] */

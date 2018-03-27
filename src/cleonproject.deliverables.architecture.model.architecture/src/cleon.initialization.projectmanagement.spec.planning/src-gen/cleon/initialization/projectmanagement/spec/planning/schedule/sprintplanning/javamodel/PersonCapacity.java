@@ -52,11 +52,11 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectPerson() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectPerson() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person);
   }
 
-  public PersonCapacity setPerson(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson person) {
+  public PersonCapacity setPerson(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson person) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person, person);
     return this;
   }
@@ -88,14 +88,14 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_productivity, visitor);
     // relations
     _acceptMap(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_capacityPerDay, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.IPersonCapacity> selectToMePerson(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.IPersonCapacity> selectToMePerson(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.IPersonCapacity.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.PersonCapacity_person, object.getResource());
   }
   
@@ -104,4 +104,4 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,5K34U4a6NnZk2+tyzvfnlmb7j8U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,SLBhFCxi+o+eajajR8IP5W2r7K8=] */

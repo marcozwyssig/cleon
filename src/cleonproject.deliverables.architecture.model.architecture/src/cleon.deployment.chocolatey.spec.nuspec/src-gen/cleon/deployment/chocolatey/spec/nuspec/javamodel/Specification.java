@@ -69,22 +69,22 @@ public class Specification extends DynamicResource implements ISpecification {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectAuthors() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectAuthors() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors);
   }
 
-  public Specification setAuthors(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> authors) {
-    _setList(cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, authors);
+  public Specification setAuthors(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> authors) {
+    _setList(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, authors);
     return this;
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public Specification setOwner(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
-    _setSingle(cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+  public Specification setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
     
@@ -107,10 +107,10 @@ public class Specification extends DynamicResource implements ISpecification {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version, visitor);
     // relations
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.support.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,i3RstL3M1zn12vUIjtX2SfzVlSI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,f5Fpq+Cr9HG3BATKQi7Eas7mq/w=] */

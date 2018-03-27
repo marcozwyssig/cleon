@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.planning.organisation.roles.
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRoles extends cleon.support.projectmanagement.spec.resource.javamodel.IResources {
+public interface IRoles extends cleon.initialization.projectmanagement.spec.resource.javamodel.IResources {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ed388f5b-bc93-11e6-904c-8bf6f8927ff0");
   
@@ -12,4 +12,4 @@ public interface IRoles extends cleon.support.projectmanagement.spec.resource.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed388f5b-bc93-11e6-904c-8bf6f8927ff0,8hD62wm6zivjMP5rtgrCiqj8Bj8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed388f5b-bc93-11e6-904c-8bf6f8927ff0,SE8ai36sZFV+eg6xrUpnrgSgWWU=] */

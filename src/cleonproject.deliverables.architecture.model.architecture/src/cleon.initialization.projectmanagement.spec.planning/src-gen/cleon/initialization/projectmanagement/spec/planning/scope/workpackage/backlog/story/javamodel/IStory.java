@@ -8,8 +8,8 @@ public interface IStory extends cleon.initialization.projectmanagement.spec.plan
   
   // relations
   
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectRequestedBy();
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectRequestedBy();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,wiKemtPmSQQ/g8oHybAmFiZBB6I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,461882c1-ff9c-11e4-ac0a-959b440f987f,RqxstjC7EkUzWp57SA+pYJ4fcIo=] */

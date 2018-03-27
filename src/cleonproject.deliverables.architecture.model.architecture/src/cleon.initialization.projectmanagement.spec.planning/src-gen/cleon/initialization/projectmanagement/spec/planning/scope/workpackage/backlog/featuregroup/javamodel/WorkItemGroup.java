@@ -88,11 +88,11 @@ public class WorkItemGroup extends DynamicResource implements IWorkItemGroup {
   }
     
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
   }
 
-  public WorkItemGroup setOwners(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
+  public WorkItemGroup setOwners(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
     _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, owners);
     return this;
   }
@@ -148,7 +148,7 @@ public class WorkItemGroup extends DynamicResource implements IWorkItemGroup {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_plannedEstimate, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_items, visitor);
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_preconditions, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItemState.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_state, visitor);
@@ -166,4 +166,4 @@ public class WorkItemGroup extends DynamicResource implements IWorkItemGroup {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,7qIWPinWaz/F82hzjHc1c9sON6s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,409913e6-369c-11e5-95d9-2b04d7ab02d9,KS94Uqp43ZCLRIpt6DBSelR+wUI=] */

@@ -51,11 +51,11 @@ public class Decision extends DynamicResource implements IDecision {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectResponsibles() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectResponsibles() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles);
   }
 
-  public Decision setResponsibles(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> responsibles) {
+  public Decision setResponsibles(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> responsibles) {
     _setList(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles, responsibles);
     return this;
   }
@@ -77,9 +77,9 @@ public class Decision extends DynamicResource implements IDecision {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.BusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_name, visitor);
     // relations
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItem_responsibles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fb5e22c-b463-11e5-a3f4-497fd75158dc,j7KHrxy94GO2sb7H4ryzyaMZ1g0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fb5e22c-b463-11e5-a3f4-497fd75158dc,mSp/wh5D++Daz5sGVA5k31xLHPY=] */

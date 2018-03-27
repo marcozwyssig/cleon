@@ -98,11 +98,11 @@ public class Constraint extends DynamicResource implements IConstraint {
   }
     
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
   }
 
-  public Constraint setOwners(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
+  public Constraint setOwners(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
     _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, owners);
     return this;
   }
@@ -128,11 +128,11 @@ public class Constraint extends DynamicResource implements IConstraint {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectRequestedBy() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.story.StoryPackage.Story_requestedBy);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectRequestedBy() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.story.StoryPackage.Story_requestedBy);
   }
 
-  public Constraint setRequestedBy(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson requestedBy) {
+  public Constraint setRequestedBy(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson requestedBy) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.story.StoryPackage.Story_requestedBy, requestedBy);
     return this;
   }
@@ -169,13 +169,13 @@ public class Constraint extends DynamicResource implements IConstraint {
     // relations
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IText.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItemBase_analysis, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IEffort.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.EffortAware_estimate, visitor);
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_preconditions, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.story.StoryPackage.Story_requestedBy, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.story.StoryPackage.Story_requestedBy, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItemState.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9e271ef-3777-11e5-95d9-2b04d7ab02d9,7qHjEVZeEAqQD7aJqHFWQ+KxWE4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9e271ef-3777-11e5-95d9-2b04d7ab02d9,0bX1i98pEaJ5p0D00FdSWt4XJTw=] */

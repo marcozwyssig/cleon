@@ -10,10 +10,10 @@ public interface IPersonCapacity extends ch.actifsource.core.javamodel.IDecorato
   
   // relations
   
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectPerson();
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectPerson();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ICapacityPerDay> selectCapacityPerDay();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,fNeC3hlAENevELY5Yog/vXF7Tv0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,WAn3R6LIJROpRgZ07QXvlWcD1vs=] */

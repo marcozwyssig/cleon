@@ -98,11 +98,11 @@ public class DefectFeatureGroup extends DynamicResource implements IDefectFeatur
   }
     
   @Override
-  public java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
-    return _getList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> selectOwners() {
+    return _getList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners);
   }
 
-  public DefectFeatureGroup setOwners(java.util.List<? extends cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
+  public DefectFeatureGroup setOwners(java.util.List<? extends cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson> owners) {
     _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, owners);
     return this;
   }
@@ -159,7 +159,7 @@ public class DefectFeatureGroup extends DynamicResource implements IDefectFeatur
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IDefect.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.DefectFeatureGroup_defects, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_items, visitor);
-    _acceptList(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_preconditions, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItemState.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_state, visitor);
@@ -173,4 +173,4 @@ public class DefectFeatureGroup extends DynamicResource implements IDefectFeatur
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d243a7a6-369e-11e5-95d9-2b04d7ab02d9,s7i24C1x++MpLpi2kvMp5CWPyqA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d243a7a6-369e-11e5-95d9-2b04d7ab02d9,LHQQeFM+3Kzm9P5AW2GAjx0D9EE=] */

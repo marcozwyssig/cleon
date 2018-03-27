@@ -149,11 +149,11 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam selectTeam() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team);
+  public cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam selectTeam() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team);
   }
 
-  public SprintPlanning setTeam(cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam team) {
+  public SprintPlanning setTeam(cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam team) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team, team);
     return this;
   }
@@ -185,7 +185,7 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintGoals.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -207,9 +207,9 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprintBacklog, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning> selectToMeTeam(cleon.support.projectmanagement.spec.resource.teams.javamodel.ITeam object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning> selectToMeTeam(cleon.initialization.projectmanagement.spec.resource.teams.javamodel.ITeam object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_team, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,m2RpmpICDOGSOUSRyDF/4NoHKnk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,wFiZjovUEjVU32RmOqe4/Xicdss=] */

@@ -12,8 +12,8 @@ public interface IText extends ch.actifsource.core.javamodel.IResource {
   
   // relations
   
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectWriter();
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectWriter();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,vDHcMAM+KKCd/CtfxGBN9uZcyXc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,yGPRI8aI2eAlG+CtDaO4pfubNS4=] */

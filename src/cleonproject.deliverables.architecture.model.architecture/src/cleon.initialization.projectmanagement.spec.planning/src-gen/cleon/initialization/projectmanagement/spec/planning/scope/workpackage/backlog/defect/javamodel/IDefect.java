@@ -14,7 +14,7 @@ public interface IDefect extends cleon.initialization.projectmanagement.spec.pla
   
   public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IText selectResolution();
   
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectFoundBy();
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectFoundBy();
   
   public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.defect.javamodel.IClassification selectClassification();
   
@@ -22,4 +22,4 @@ public interface IDefect extends cleon.initialization.projectmanagement.spec.pla
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,vE7CDf0GAcZ2vph3M2C4kH/oqAg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,U7qJTY0UK2ImpZbBCe2R3xf0/6A=] */

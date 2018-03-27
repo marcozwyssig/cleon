@@ -61,11 +61,11 @@ public class Text extends DynamicResource implements IText {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson selectWriter() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer);
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectWriter() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer);
   }
 
-  public Text setWriter(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson writer) {
+  public Text setWriter(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson writer) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer, writer);
     return this;
   }
@@ -78,14 +78,14 @@ public class Text extends DynamicResource implements IText {
     _acceptSingleAttribute(java.lang.String.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_text, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IText> selectToMeWriter(cleon.support.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IText> selectToMeWriter(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IText.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Text_writer, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,T0LFcIjE2OXn47h4eIUtJDXTo/k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,9nxupU0B/pxpQ7uCqcX8m2RclEk=] */

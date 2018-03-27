@@ -138,11 +138,11 @@ public class Planning extends DynamicResource implements IPlanning {
   }
     
   @Override
-  public cleon.support.projectmanagement.spec.resource.javamodel.IResourceManagement selectResourceManagement() {
-    return _getSingle(cleon.support.projectmanagement.spec.resource.javamodel.IResourceManagement.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement);
+  public cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement selectResourceManagement() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement);
   }
 
-  public Planning setResourceManagement(cleon.support.projectmanagement.spec.resource.javamodel.IResourceManagement resourceManagement) {
+  public Planning setResourceManagement(cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement resourceManagement) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement, resourceManagement);
     return this;
   }
@@ -203,7 +203,7 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.initialposition.javamodel.IInitialposition.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_initialposition, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.organisation.javamodel.IOrganisation.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_organisation, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.support.projectmanagement.spec.resource.javamodel.IResourceManagement.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.ISchedule.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_schedule, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_scope, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
@@ -236,9 +236,9 @@ public class Planning extends DynamicResource implements IPlanning {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_organisation, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning> selectToMeResourceManagement(cleon.support.projectmanagement.spec.resource.javamodel.IResourceManagement object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning> selectToMeResourceManagement(cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_resourceManagement, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,7WuUw4raHrT6PWj1CaH4x7Z+JcI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,ev1ZVpUsic74+PUq6+D6MqGQJOU=] */

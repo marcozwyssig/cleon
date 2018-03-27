@@ -1,4 +1,4 @@
-package cleon.conception.soa.spec.soa;
+package cleon.conception.architecture.spec.soa;
 
 import ch.actifsource.core.Resource;
 
@@ -25,8 +25,8 @@ public class SoaPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.soa.spec.soa";
+    return "cleon.conception.architecture.spec.soa";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.soa.spec.soa,NaaOE8xqtSNMVemyid9VuMaCtss=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.soa,VG9Vmlcg2p3uUVzBrwpwDhgwSlA=] */

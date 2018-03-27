@@ -80,12 +80,12 @@ public class UIService extends DynamicResource implements IUIService {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.soa.spec.soa.javamodel.IEvent> selectEvents() {
-    return _getList(cleon.conception.soa.spec.soa.javamodel.IEvent.class, cleon.conception.soa.spec.soa.SoaPackage.DataService_events);
+  public java.util.List<? extends cleon.conception.architecture.spec.soa.javamodel.IEvent> selectEvents() {
+    return _getList(cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.DataService_events);
   }
 
-  public UIService setEvents(java.util.List<? extends cleon.conception.soa.spec.soa.javamodel.IEvent> events) {
-    _setList(cleon.conception.soa.spec.soa.SoaPackage.DataService_events, events);
+  public UIService setEvents(java.util.List<? extends cleon.conception.architecture.spec.soa.javamodel.IEvent> events) {
+    _setList(cleon.conception.architecture.spec.soa.SoaPackage.DataService_events, events);
     return this;
   }
     
@@ -119,10 +119,10 @@ public class UIService extends DynamicResource implements IUIService {
     // relations
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.conception.uml.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.conception.soa.spec.soa.javamodel.IEvent.class, cleon.conception.soa.spec.soa.SoaPackage.DataService_events, visitor);
+    _acceptList(cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.DataService_events, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,pjZZVBY8F2V/k6JOu1hiKDYpeYI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,mvoAyWqTK9Zr+QsDVnSC71GsKS4=] */

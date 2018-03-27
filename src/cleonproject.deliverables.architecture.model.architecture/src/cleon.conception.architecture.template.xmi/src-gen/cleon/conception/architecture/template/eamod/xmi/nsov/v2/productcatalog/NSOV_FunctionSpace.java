@@ -1,4 +1,4 @@
-package cleon.conception.eamod.template.xmi.nsov.v2.productcatalog;
+package cleon.conception.architecture.template.eamod.xmi.nsov.v2.productcatalog;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[6597f854-67d6-11e7-afcc-6df3a81a4d17,imports]] */
 
-public class FunctionSpace {
+public class NSOV_FunctionSpace {
 
   /* Begin Protected Region [[6597f854-67d6-11e7-afcc-6df3a81a4d17]] */
   
@@ -294,4 +294,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6597f854-67d6-11e7-afcc-6df3a81a4d17,sl1j+CxwWXGkKKjYZZHGeRVlfP8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6597f854-67d6-11e7-afcc-6df3a81a4d17,JAnBVP6n3PkrcMzoV+G0gvK6R3A=] */

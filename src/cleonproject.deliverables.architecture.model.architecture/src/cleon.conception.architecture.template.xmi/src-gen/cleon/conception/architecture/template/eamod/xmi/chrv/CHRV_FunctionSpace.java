@@ -1,4 +1,4 @@
-package cleon.conception.eamod.template.xmi.chrv;
+package cleon.conception.architecture.template.eamod.xmi.chrv;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,imports]] */
 
-public class FunctionSpace {
+public class CHRV_FunctionSpace {
 
   /* Begin Protected Region [[7a85e1e6-2991-11e6-bcff-d1d3ee74e69a]] */
   
@@ -433,4 +433,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,7zZXmr00E5erryyopV6dbafwrlM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,XFbD4ENmf9rvo8sTIFKrJZcKkzM=] */

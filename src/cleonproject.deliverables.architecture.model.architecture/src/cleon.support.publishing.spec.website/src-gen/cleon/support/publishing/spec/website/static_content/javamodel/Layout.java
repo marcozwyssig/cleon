@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website.static_content.javamodel;
+package cleon.support.publishing.spec.website.static_content.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -61,4 +61,4 @@ public class Layout extends DynamicResource implements ILayout {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22c31230-afe1-11e5-a548-13e054f2d74f,rV+EmYwg3mDm176fcqYHBdL26QY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22c31230-afe1-11e5-a548-13e054f2d74f,8YaaPQ7NJDZJQ3F8rkTDJVDMBVA=] */

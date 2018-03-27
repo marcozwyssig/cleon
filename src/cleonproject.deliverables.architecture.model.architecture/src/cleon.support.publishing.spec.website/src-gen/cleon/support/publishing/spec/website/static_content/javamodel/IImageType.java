@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website.static_content.javamodel;
+package cleon.support.publishing.spec.website.static_content.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -43,4 +43,4 @@ public interface IImageType extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,HuYSxxLPlrxFU5Bh67al1Npd1+0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,tJVkuXtZjCsZX4xtrAib674fhzc=] */

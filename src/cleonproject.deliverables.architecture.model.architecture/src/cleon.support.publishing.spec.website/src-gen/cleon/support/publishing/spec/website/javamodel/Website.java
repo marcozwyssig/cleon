@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website.javamodel;
+package cleon.support.publishing.spec.website.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -78,12 +78,12 @@ public class Website extends DynamicResource implements IWebsite {
   // relations
   
   @Override
-  public cleon.conception.web.spec.website.static_content.javamodel.IImage selectCover() {
-    return _getSingle(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_cover);
+  public cleon.support.publishing.spec.website.static_content.javamodel.IImage selectCover() {
+    return _getSingle(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_cover);
   }
 
-  public Website setCover(cleon.conception.web.spec.website.static_content.javamodel.IImage cover) {
-    _setSingle(cleon.conception.web.spec.website.WebsitePackage.Website_cover, cover);
+  public Website setCover(cleon.support.publishing.spec.website.static_content.javamodel.IImage cover) {
+    _setSingle(cleon.support.publishing.spec.website.WebsitePackage.Website_cover, cover);
     return this;
   }
     
@@ -98,32 +98,32 @@ public class Website extends DynamicResource implements IWebsite {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.web.spec.website.static_content.javamodel.IImage> selectImages() {
-    return _getList(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_images);
+  public java.util.List<? extends cleon.support.publishing.spec.website.static_content.javamodel.IImage> selectImages() {
+    return _getList(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_images);
   }
 
-  public Website setImages(java.util.List<? extends cleon.conception.web.spec.website.static_content.javamodel.IImage> images) {
-    _setList(cleon.conception.web.spec.website.WebsitePackage.Website_images, images);
+  public Website setImages(java.util.List<? extends cleon.support.publishing.spec.website.static_content.javamodel.IImage> images) {
+    _setList(cleon.support.publishing.spec.website.WebsitePackage.Website_images, images);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.web.spec.website.static_content.javamodel.ILayout> selectLayouts() {
-    return _getList(cleon.conception.web.spec.website.static_content.javamodel.ILayout.class, cleon.conception.web.spec.website.WebsitePackage.Website_layouts);
+  public java.util.List<? extends cleon.support.publishing.spec.website.static_content.javamodel.ILayout> selectLayouts() {
+    return _getList(cleon.support.publishing.spec.website.static_content.javamodel.ILayout.class, cleon.support.publishing.spec.website.WebsitePackage.Website_layouts);
   }
 
-  public Website setLayouts(java.util.List<? extends cleon.conception.web.spec.website.static_content.javamodel.ILayout> layouts) {
-    _setList(cleon.conception.web.spec.website.WebsitePackage.Website_layouts, layouts);
+  public Website setLayouts(java.util.List<? extends cleon.support.publishing.spec.website.static_content.javamodel.ILayout> layouts) {
+    _setList(cleon.support.publishing.spec.website.WebsitePackage.Website_layouts, layouts);
     return this;
   }
     
   @Override
-  public cleon.conception.web.spec.website.static_content.javamodel.IImage selectLogo() {
-    return _getSingle(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_logo);
+  public cleon.support.publishing.spec.website.static_content.javamodel.IImage selectLogo() {
+    return _getSingle(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_logo);
   }
 
-  public Website setLogo(cleon.conception.web.spec.website.static_content.javamodel.IImage logo) {
-    _setSingle(cleon.conception.web.spec.website.WebsitePackage.Website_logo, logo);
+  public Website setLogo(cleon.support.publishing.spec.website.static_content.javamodel.IImage logo) {
+    _setSingle(cleon.support.publishing.spec.website.WebsitePackage.Website_logo, logo);
     return this;
   }
     
@@ -167,11 +167,11 @@ public class Website extends DynamicResource implements IWebsite {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptSingle(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_cover, visitor);
+    _acceptSingle(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_cover, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
-    _acceptList(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_images, visitor);
-    _acceptList(cleon.conception.web.spec.website.static_content.javamodel.ILayout.class, cleon.conception.web.spec.website.WebsitePackage.Website_layouts, visitor);
-    _acceptSingle(cleon.conception.web.spec.website.static_content.javamodel.IImage.class, cleon.conception.web.spec.website.WebsitePackage.Website_logo, visitor);
+    _acceptList(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_images, visitor);
+    _acceptList(cleon.support.publishing.spec.website.static_content.javamodel.ILayout.class, cleon.support.publishing.spec.website.WebsitePackage.Website_layouts, visitor);
+    _acceptSingle(cleon.support.publishing.spec.website.static_content.javamodel.IImage.class, cleon.support.publishing.spec.website.WebsitePackage.Website_logo, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -179,21 +179,21 @@ public class Website extends DynamicResource implements IWebsite {
 
   // toMeRelations
   
-  public static cleon.conception.web.spec.website.javamodel.IWebsite selectToMeImages(cleon.conception.web.spec.website.static_content.javamodel.IImage object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.web.spec.website.javamodel.IWebsite.class, cleon.conception.web.spec.website.WebsitePackage.Website_images, object.getResource());
+  public static cleon.support.publishing.spec.website.javamodel.IWebsite selectToMeImages(cleon.support.publishing.spec.website.static_content.javamodel.IImage object) {
+    return _getToMeSingle(object.getRepository(), cleon.support.publishing.spec.website.javamodel.IWebsite.class, cleon.support.publishing.spec.website.WebsitePackage.Website_images, object.getResource());
   }
   
-  public static java.util.List<cleon.conception.web.spec.website.javamodel.IWebsite> selectToMeLogo(cleon.conception.web.spec.website.static_content.javamodel.IImage object) {
-    return _getToMeList(object.getRepository(), cleon.conception.web.spec.website.javamodel.IWebsite.class, cleon.conception.web.spec.website.WebsitePackage.Website_logo, object.getResource());
+  public static java.util.List<cleon.support.publishing.spec.website.javamodel.IWebsite> selectToMeLogo(cleon.support.publishing.spec.website.static_content.javamodel.IImage object) {
+    return _getToMeList(object.getRepository(), cleon.support.publishing.spec.website.javamodel.IWebsite.class, cleon.support.publishing.spec.website.WebsitePackage.Website_logo, object.getResource());
   }
   
-  public static java.util.List<cleon.conception.web.spec.website.javamodel.IWebsite> selectToMeCover(cleon.conception.web.spec.website.static_content.javamodel.IImage object) {
-    return _getToMeList(object.getRepository(), cleon.conception.web.spec.website.javamodel.IWebsite.class, cleon.conception.web.spec.website.WebsitePackage.Website_cover, object.getResource());
+  public static java.util.List<cleon.support.publishing.spec.website.javamodel.IWebsite> selectToMeCover(cleon.support.publishing.spec.website.static_content.javamodel.IImage object) {
+    return _getToMeList(object.getRepository(), cleon.support.publishing.spec.website.javamodel.IWebsite.class, cleon.support.publishing.spec.website.WebsitePackage.Website_cover, object.getResource());
   }
   
-  public static cleon.conception.web.spec.website.javamodel.IWebsite selectToMeLayouts(cleon.conception.web.spec.website.static_content.javamodel.ILayout object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.web.spec.website.javamodel.IWebsite.class, cleon.conception.web.spec.website.WebsitePackage.Website_layouts, object.getResource());
+  public static cleon.support.publishing.spec.website.javamodel.IWebsite selectToMeLayouts(cleon.support.publishing.spec.website.static_content.javamodel.ILayout object) {
+    return _getToMeSingle(object.getRepository(), cleon.support.publishing.spec.website.javamodel.IWebsite.class, cleon.support.publishing.spec.website.WebsitePackage.Website_layouts, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,nWwP51xrRhpbM6vDkYGnvrM5zvE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,1yxShq2+fN24N90PRgSyb28GcpQ=] */

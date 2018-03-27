@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website;
+package cleon.support.publishing.spec.website;
 
 import ch.actifsource.core.Resource;
 
@@ -25,8 +25,8 @@ public class WebsitePackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.web.spec.website";
+    return "cleon.support.publishing.spec.website";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.web.spec.website,Wy15/lx4Bhxk6pc6dsWgx9y3lQ4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.publishing.spec.website,VhaV2XQuJ1bm3GVITgAmkhwuQgc=] */

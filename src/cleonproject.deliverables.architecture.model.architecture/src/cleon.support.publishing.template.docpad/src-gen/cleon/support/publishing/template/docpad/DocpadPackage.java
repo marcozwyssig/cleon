@@ -1,4 +1,4 @@
-package cleon.conception.web.template.docpad;
+package cleon.support.publishing.template.docpad;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class DocpadPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.web.template.docpad";
+    return "cleon.support.publishing.template.docpad";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.web.template.docpad,6jbucL4DiinaDxU3BpQmiG0a5Ac=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.publishing.template.docpad,6BhVo2ACuc2OVwOjCmtaai8fN0k=] */

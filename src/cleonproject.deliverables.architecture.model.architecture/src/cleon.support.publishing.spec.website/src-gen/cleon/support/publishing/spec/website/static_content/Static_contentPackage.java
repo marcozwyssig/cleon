@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website.static_content;
+package cleon.support.publishing.spec.website.static_content;
 
 import ch.actifsource.core.Resource;
 
@@ -28,8 +28,8 @@ public class Static_contentPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.web.spec.website.static_content";
+    return "cleon.support.publishing.spec.website.static_content";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.web.spec.website.static_content,FJEjN6g5jJ0Ig0EGZVI8KLzDC8w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.publishing.spec.website.static_content,lmkx1hAXlykvXXEqajx43OCPjbQ=] */

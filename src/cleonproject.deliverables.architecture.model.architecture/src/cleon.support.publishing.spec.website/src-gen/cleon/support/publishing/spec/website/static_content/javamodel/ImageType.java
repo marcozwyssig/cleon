@@ -1,4 +1,4 @@
-package cleon.conception.web.spec.website.static_content.javamodel;
+package cleon.support.publishing.spec.website.static_content.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -91,18 +91,18 @@ public class ImageType extends DynamicResource implements IImageType {
     
   @Override
   public boolean isBMP() {
-    return getResource().equals(cleon.conception.web.spec.website.static_content.Static_contentPackage.ImageType_BMP);
+    return getResource().equals(cleon.support.publishing.spec.website.static_content.Static_contentPackage.ImageType_BMP);
   }
   
   @Override
   public boolean isJPG() {
-    return getResource().equals(cleon.conception.web.spec.website.static_content.Static_contentPackage.ImageType_JPG);
+    return getResource().equals(cleon.support.publishing.spec.website.static_content.Static_contentPackage.ImageType_JPG);
   }
   
   @Override
   public boolean isGIF() {
-    return getResource().equals(cleon.conception.web.spec.website.static_content.Static_contentPackage.ImageType_GIF);
+    return getResource().equals(cleon.support.publishing.spec.website.static_content.Static_contentPackage.ImageType_GIF);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,T0OOhy08QeSyYVSNDBz+iTD8/GA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,SoShmHgXpWUrldU79m6n4FX2iWk=] */

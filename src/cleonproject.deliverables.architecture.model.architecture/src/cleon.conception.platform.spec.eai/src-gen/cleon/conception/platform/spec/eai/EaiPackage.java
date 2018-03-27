@@ -1,4 +1,4 @@
-package cleon.conception.eai.spec.eai;
+package cleon.conception.platform.spec.eai;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class EaiPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.eai.spec.eai";
+    return "cleon.conception.platform.spec.eai";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.eai.spec.eai,BqvVcJFxjzPyOa0dc8Av/dU37Mg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.platform.spec.eai,0iKIFD45A0t1LPFPFA085nvHnuQ=] */

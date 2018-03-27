@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.projectmanagement;
+package cleon.support.documentation.template.asciidoc.projectmanagement.projectmanagement;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -187,7 +187,6 @@ public class FunctionSpace {
 		});
 		
 		return taskSortedList;
-
       /* End Protected Region   [[343f5f25-20d5-11e6-9368-9172b77c2cff]] */
     }
 
@@ -283,4 +282,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,vYDSFMCJSQrqxJVjyGDVeAdtrg4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,0R7SZtzix2qeU3pnnRjKlGsyehY=] */

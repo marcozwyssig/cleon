@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.ressourcemanagement;
+package cleon.support.documentation.template.asciidoc.projectmanagement.ressourcemanagement;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -145,4 +145,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,358e3a10-a7e9-11e5-82dd-3b995d9c840c,iyiUv/RforZVktxui7DCYF+TPSU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,358e3a10-a7e9-11e5-82dd-3b995d9c840c,G0/M6+ZaQjVlb2PZx8lPZvCfWVU=] */

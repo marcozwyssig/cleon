@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.planning;
+package cleon.support.documentation.template.asciidoc.projectmanagement.planning;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -298,14 +298,14 @@ public class FunctionSpace {
     @Override
     public java.lang.String renderMissingSeparator(final cleon.common.resources.spec.calendar.javamodel.IMonth month) {
       /* Begin Protected Region [[03fc3482-0f71-11e6-8304-d77c15116091]] */
-      int max = month.selectDays().stream().mapToInt(x -> x.selectIdentifier()).max().getAsInt();
-      int mod = 5 - Math.floorMod(max, 5);
-      String result = "";
-      for(int i = 0; i<mod; ++i)
-      {
-    	  result += "|";
-      }
-      return result;
+        int max = month.selectDays().stream().mapToInt(x -> x.selectIdentifier()).max().getAsInt();
+        int mod = 5 - Math.floorMod(max, 5);
+        String result = "";
+        for(int i = 0; i<mod; ++i)
+        {
+      	  result += "|";
+        }
+        return result;   
       /* End Protected Region   [[03fc3482-0f71-11e6-8304-d77c15116091]] */
     }
 
@@ -548,4 +548,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,pau5QkcGPtsrt8NcI0y/8WedJco=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,ZYbJ+XQxQSL7VMo+6ovf1kW6PBM=] */

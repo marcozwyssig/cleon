@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.steering;
+package cleon.support.documentation.template.asciidoc.projectmanagement.steering;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -268,4 +268,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,RyiJBxlh5UAFQvU19BDCTBYIaRw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,X27QGnvN3f9p36uSejH70yGoFag=] */

@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.steering;
+package cleon.support.documentation.template.asciidoc.projectmanagement.steering;
 
 import ch.actifsource.core.Resource;
 
@@ -20,7 +20,7 @@ public class SteeringPackage {
   private SteeringPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.initialization.projectmanagement.template.asciidoc";
+    return "cleon.support.documentation.template.asciidoc";
   }
   
   public static final String getResourceFolderPath() {
@@ -28,8 +28,8 @@ public class SteeringPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.support.projectmanagement.template.asciidoc.steering";
+    return "cleon.support.documentation.template.asciidoc.projectmanagement.steering";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.projectmanagement.template.asciidoc.steering,kFmNSrAVH/2Jl2fyrU3A5shw9PA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.steering,Jz76LpBB4Lpzm/8kr5G5zT7TvEA=] */

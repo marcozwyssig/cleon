@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.planning;
+package cleon.support.documentation.template.asciidoc.projectmanagement.planning;
 
 import ch.actifsource.core.Resource;
 
@@ -30,7 +30,7 @@ public class PlanningPackage {
   private PlanningPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.initialization.projectmanagement.template.asciidoc";
+    return "cleon.support.documentation.template.asciidoc";
   }
   
   public static final String getResourceFolderPath() {
@@ -38,8 +38,8 @@ public class PlanningPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.support.projectmanagement.template.asciidoc.planning";
+    return "cleon.support.documentation.template.asciidoc.projectmanagement.planning";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.projectmanagement.template.asciidoc.planning,ek/68wdV8bpPJjEaVhOENxRqydo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,pm9Kqf2myGVs0TSzy4w76ZgscZk=] */

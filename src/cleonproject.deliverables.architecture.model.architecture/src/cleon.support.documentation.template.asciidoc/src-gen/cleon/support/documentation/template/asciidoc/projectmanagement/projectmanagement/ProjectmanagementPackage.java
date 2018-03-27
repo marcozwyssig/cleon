@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.asciidoc.projectmanagement;
+package cleon.support.documentation.template.asciidoc.projectmanagement.projectmanagement;
 
 import ch.actifsource.core.Resource;
 
@@ -21,7 +21,7 @@ public class ProjectmanagementPackage {
   private ProjectmanagementPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.initialization.projectmanagement.template.asciidoc";
+    return "cleon.support.documentation.template.asciidoc";
   }
   
   public static final String getResourceFolderPath() {
@@ -29,8 +29,8 @@ public class ProjectmanagementPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.support.projectmanagement.template.asciidoc.projectmanagement";
+    return "cleon.support.documentation.template.asciidoc.projectmanagement.projectmanagement";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.projectmanagement.template.asciidoc.projectmanagement,2T5Fgjpqrchi4lQkDBw5SVyZ30U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.projectmanagement,mOTEMIWc31DOTqV0nG7EJccokSg=] */

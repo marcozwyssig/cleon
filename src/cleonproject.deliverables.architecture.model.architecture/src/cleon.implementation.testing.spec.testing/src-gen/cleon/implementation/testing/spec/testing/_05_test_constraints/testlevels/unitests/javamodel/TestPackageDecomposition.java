@@ -61,21 +61,21 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
     
   @Override
-  public cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackage selectInto() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackage.class, cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into);
+  public cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackage selectInto() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackage.class, cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into);
   }
 
-  public TestPackageDecomposition setInto(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackage into) {
-    _setSingle(cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into, into);
+  public TestPackageDecomposition setInto(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackage into) {
+    _setSingle(cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into, into);
     return this;
   }
     
   @Override
-  public cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition selectPackageUnderTest() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest);
+  public cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageDecomposition selectPackageUnderTest() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest);
   }
 
-  public TestPackageDecomposition setPackageUnderTest(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition packageUnderTest) {
+  public TestPackageDecomposition setPackageUnderTest(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageDecomposition packageUnderTest) {
     _setSingle(cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest, packageUnderTest);
     return this;
   }
@@ -118,8 +118,8 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackage.class, cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackage.class, cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageDecomposition_into, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestPackage.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_testPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -127,7 +127,7 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
 
   // toMeRelations
   
-  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestPackageDecomposition> selectToMePackageUnderTest(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition object) {
+  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestPackageDecomposition> selectToMePackageUnderTest(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageDecomposition object) {
     return _getToMeList(object.getRepository(), cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestPackageDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestPackageDecomposition_packageUnderTest, object.getResource());
   }
   
@@ -136,4 +136,4 @@ public class TestPackageDecomposition extends DynamicResource implements ITestPa
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,Qy2BzyNuW54d0IxRYt10fDVipGY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6a1dc86a-18fc-11e5-b505-7b16b1341920,4fUmNQWp+s/uf42NAap/kEgVyVs=] */

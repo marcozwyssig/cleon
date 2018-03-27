@@ -2,7 +2,7 @@ package cleon.implementation.testing.spec.testing._05_test_constraints.testlevel
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestComponent extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentWithPackage {
+public interface ITestComponent extends cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentWithPackage {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a5ae6ce6-df47-11e2-b229-cd1bd4a07953");
   
@@ -14,4 +14,4 @@ public interface ITestComponent extends cleon.conception.uml.spec.uml.structural
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,M21aVWg/t992fkscMQSpg+Ca2z0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a5ae6ce6-df47-11e2-b229-cd1bd4a07953,RhkyDMydNLizb0wtohYuvOXXeM4=] */

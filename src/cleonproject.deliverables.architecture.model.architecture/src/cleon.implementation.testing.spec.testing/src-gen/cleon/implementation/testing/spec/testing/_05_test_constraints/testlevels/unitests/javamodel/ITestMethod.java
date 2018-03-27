@@ -10,8 +10,8 @@ public interface ITestMethod extends cleon.implementation.testing.spec.testing._
   
   // relations
   
-  public cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod selectWhen();
+  public cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod selectWhen();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,r8pmBZ7xLQ8jXBX9rVlHz8/zblE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ef10e4c2-df47-11e2-b229-cd1bd4a07953,Jc9uO38q68ETYRR+quw1sL2Wj4E=] */

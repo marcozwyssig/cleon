@@ -8,10 +8,10 @@ public interface IFactoryMethod extends ch.actifsource.core.javamodel.IDecorator
   
   // relations
   
-  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectClassifier();
+  public cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier selectClassifier();
   
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.method.parameter.javamodel.IParameter> selectCtorArgs();
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter> selectCtorArgs();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,wUVnDOdVKppyQHd5xKFG/ZudO9E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,Bc4j6MCwoNAIV/GPir6IgoXymuE=] */

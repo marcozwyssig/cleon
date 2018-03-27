@@ -8,8 +8,8 @@ public interface IPubSubEvent extends ch.actifsource.core.javamodel.IDecorator, 
   
   // relations
   
-  public cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent selectEvent();
+  public cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent selectEvent();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,9ZHtE82xnJ+5wBqQeaTK6Qyj2b8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,awpTSEOlELhFlbZXgZ9xGhNF7yU=] */

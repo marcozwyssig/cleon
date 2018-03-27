@@ -99,11 +99,11 @@ public class TestProperty extends DynamicResource implements ITestProperty {
   }
     
   @Override
-  public cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IProperty selectWhen() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IProperty.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when);
+  public cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IProperty selectWhen() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IProperty.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when);
   }
 
-  public TestProperty setWhen(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IProperty when) {
+  public TestProperty setWhen(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IProperty when) {
     _setSingle(cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when, when);
     return this;
   }
@@ -120,14 +120,14 @@ public class TestProperty extends DynamicResource implements ITestProperty {
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IProperty.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IProperty.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestProperty> selectToMeWhen(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IProperty object) {
+  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestProperty> selectToMeWhen(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IProperty object) {
     return _getToMeList(object.getRepository(), cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestProperty.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestProperty_when, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,+0IM7yYh2ca0N2PsqMwZarRootU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aec482bc-a397-11e3-9113-ffc7f11b0a42,bgl/etpliP0jXU+hCWSt2zkdl1I=] */

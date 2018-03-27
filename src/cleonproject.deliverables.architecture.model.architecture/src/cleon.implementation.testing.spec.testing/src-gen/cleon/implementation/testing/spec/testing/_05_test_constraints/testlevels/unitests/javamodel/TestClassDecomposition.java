@@ -51,11 +51,11 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   // relations
   
   @Override
-  public cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition selectClassUnderTest() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest);
+  public cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition selectClassUnderTest() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest);
   }
 
-  public TestClassDecomposition setClassUnderTest(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition classUnderTest) {
+  public TestClassDecomposition setClassUnderTest(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition classUnderTest) {
     _setSingle(cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest, classUnderTest);
     return this;
   }
@@ -81,12 +81,12 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   }
     
   @Override
-  public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectInto() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into);
+  public cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier selectInto() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into);
   }
 
-  public TestClassDecomposition setInto(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier into) {
-    _setSingle(cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, into);
+  public TestClassDecomposition setInto(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier into) {
+    _setSingle(cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, into);
     return this;
   }
     
@@ -117,17 +117,17 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest, visitor);
     _acceptSingle(cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestClass.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classes, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.uml.structural.packages.PackagesPackage.PackageInClassifierDecomposition_into, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestClassDecomposition> selectToMeClassUnderTest(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition object) {
+  public static java.util.List<cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestClassDecomposition> selectToMeClassUnderTest(cleon.conception.architecture.spec.uml.structural.packages.javamodel.IPackageInClassifierDecomposition object) {
     return _getToMeList(object.getRepository(), cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestClassDecomposition.class, cleon.implementation.testing.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest, object.getResource());
   }
   
@@ -136,4 +136,4 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,Wk3aUfGp4Hu4SxCa20f4I6UmHQ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,mb3wtepIFxHGUmHdsZ4WU2yeupE=] */

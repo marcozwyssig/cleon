@@ -8,8 +8,8 @@ public interface IEvent extends ch.actifsource.core.javamodel.INamedResource {
   
   // relations
   
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier> selectEventType();
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier> selectEventType();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,jjT4HgU57bkFNl5pNCrYQefcLtY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,r+7409O66a3D7rzMOr+0ovl4L8c=] */

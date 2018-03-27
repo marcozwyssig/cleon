@@ -2,7 +2,7 @@ package cleon.conception.actifsource.spec.actifsource._05_buildingblockview.cate
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPluginDependency extends cleon.conception.uml.spec.uml.structural.components.javamodel.IComponentDependency {
+public interface IPluginDependency extends cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentDependency {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
   
@@ -12,4 +12,4 @@ public interface IPluginDependency extends cleon.conception.uml.spec.uml.structu
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d8688469-4260-11e5-8a2d-599443ec8ff4,pj/rX/o6Dnyycb4Wh1BNNZKA2Ug=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d8688469-4260-11e5-8a2d-599443ec8ff4,Adf4761wFfe8jJ9JS1URnqT3jic=] */

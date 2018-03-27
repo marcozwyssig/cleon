@@ -50,11 +50,11 @@ public class Entity extends DynamicResource implements IEntity {
 
   @Override
   public java.lang.Boolean selectIsAbstract() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
     
   public void setIsAbstract(java.lang.Boolean isAbstract) {
-     _setSingleAttribute(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, isAbstract);
+     _setSingleAttribute(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, isAbstract);
   }
 
   @Override
@@ -69,12 +69,12 @@ public class Entity extends DynamicResource implements IEntity {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.ICustomEvent> selectCustomEvents() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_customEvents);
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent> selectCustomEvents() {
+    return _getList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents);
   }
 
-  public Entity setCustomEvents(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.ICustomEvent> customEvents) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_customEvents, customEvents);
+  public Entity setCustomEvents(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent> customEvents) {
+    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents, customEvents);
     return this;
   }
     
@@ -89,12 +89,12 @@ public class Entity extends DynamicResource implements IEntity {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent> selectEvents() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.EventClass_events);
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent> selectEvents() {
+    return _getList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events);
   }
 
-  public Entity setEvents(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent> events) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.EventClass_events, events);
+  public Entity setEvents(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent> events) {
+    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events, events);
     return this;
   }
     
@@ -109,22 +109,22 @@ public class Entity extends DynamicResource implements IEntity {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField> selectFieldEvents() {
-    return _getMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField> selectFieldEvents() {
+    return _getMap(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents);
   }
 
-  public Entity setFieldEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField> fieldEvents) {
-    _setMap(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, fieldEvents);
+  public Entity setFieldEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField> fieldEvents) {
+    _setMap(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, fieldEvents);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField> selectFields() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields);
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField> selectFields() {
+    return _getList(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields);
   }
 
-  public Entity setFields(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField> fields) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, fields);
+  public Entity setFields(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField> fields) {
+    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, fields);
     return this;
   }
     
@@ -139,22 +139,22 @@ public class Entity extends DynamicResource implements IEntity {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod> selectMethods() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods);
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectMethods() {
+    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods);
   }
 
-  public Entity setMethods(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod> methods) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, methods);
+  public Entity setMethods(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> methods) {
+    _setList(cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, methods);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation> selectRelations() {
-    return _getList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations);
+  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation> selectRelations() {
+    return _getList(cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations);
   }
 
-  public Entity setRelations(java.util.List<? extends cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation> relations) {
-    _setList(cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, relations);
+  public Entity setRelations(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation> relations) {
+    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, relations);
     return this;
   }
     
@@ -174,18 +174,18 @@ public class Entity extends DynamicResource implements IEntity {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_customEvents, visitor);
+    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.EventClass_events, visitor);
+    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events, visitor);
     _acceptSingle(cleon.conception.applications.spec.ddd.entities.javamodel.IEntity.class, cleon.conception.applications.spec.ddd.entities.EntitiesPackage.Entity_extends, visitor);
-    _acceptMap(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
+    _acceptMap(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
+    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
     _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.uml.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
-    _acceptList(cleon.conception.uml.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.uml.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
+    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
+    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -196,4 +196,4 @@ public class Entity extends DynamicResource implements IEntity {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8914497d-10c0-11e3-b60e-ab478a3e1eca,Y4GC5TiyO9Ih8BWkNw4A+5pFZgc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8914497d-10c0-11e3-b60e-ab478a3e1eca,CpWrW8PXFBhlhebNfjUgxoejqWU=] */

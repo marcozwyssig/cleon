@@ -70,11 +70,11 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
   }
     
   @Override
-  public cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField selectField() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field);
+  public cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField selectField() {
+    return _getSingle(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field);
   }
 
-  public ForwardProperty setField(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField field) {
+  public ForwardProperty setField(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField field) {
     _setSingle(cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field, field);
     return this;
   }
@@ -108,16 +108,16 @@ public class ForwardProperty extends DynamicResource implements IForwardProperty
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_isReadOnly, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.applications.spec.desktop.mvvm.javamodel.IForwardProperty> selectToMeField(cleon.conception.uml.spec.uml.structural.classes.fields.javamodel.IField object) {
+  public static java.util.List<cleon.conception.applications.spec.desktop.mvvm.javamodel.IForwardProperty> selectToMeField(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField object) {
     return _getToMeList(object.getRepository(), cleon.conception.applications.spec.desktop.mvvm.javamodel.IForwardProperty.class, cleon.conception.applications.spec.desktop.mvvm.MvvmPackage.ForwardProperty_field, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,PB/QZL4IZpv87MSWo0ZnmEOTKqg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,VvY5igRYxt4CTd6eUEiVo/v27sE=] */

@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.docbook.planning;
+package cleon.support.documentation.template.docbook.projectmanagement.planning;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -379,4 +379,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,qtbc+ad/E0opO31RCvRC+MjX0X8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,dcM//FReEzTerRiIl04wojayUcw=] */

@@ -2,7 +2,7 @@ package cleon.conception.organisation.spec.epm.unit.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEnterprise extends cleon.conception.bpmn.spec.bpmn.organisational.unit.javamodel.IOrganisationGroup {
+public interface IEnterprise extends cleon.initialization.processlanguage.spec.bpmn.organisational.unit.javamodel.IOrganisationGroup {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fb007daf-ba75-11e3-9206-f19b78f4aff0");
   
@@ -16,4 +16,4 @@ public interface IEnterprise extends cleon.conception.bpmn.spec.bpmn.organisatio
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb007daf-ba75-11e3-9206-f19b78f4aff0,emxIYO8gW+Utrs8ISAsJbVfhd+4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb007daf-ba75-11e3-9206-f19b78f4aff0,w8a2dP5NRtuN3UtyJ8eK9NAkZRo=] */

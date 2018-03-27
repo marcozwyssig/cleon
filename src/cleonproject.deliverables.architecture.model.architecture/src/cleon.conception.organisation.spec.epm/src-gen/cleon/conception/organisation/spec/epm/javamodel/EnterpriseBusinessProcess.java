@@ -52,22 +52,22 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
   }
     
   @Override
-  public cleon.conception.bpmn.spec.bpmn.organigram.javamodel.IOrganigram selectOrganigram() {
-    return _getSingle(cleon.conception.bpmn.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organigram);
+  public cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram selectOrganigram() {
+    return _getSingle(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram);
   }
 
-  public EnterpriseBusinessProcess setOrganigram(cleon.conception.bpmn.spec.bpmn.organigram.javamodel.IOrganigram organigram) {
-    _setSingle(cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organigram, organigram);
+  public EnterpriseBusinessProcess setOrganigram(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram organigram) {
+    _setSingle(cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram, organigram);
     return this;
   }
     
   @Override
-  public cleon.conception.bpmn.spec.bpmn.organisational.javamodel.IOrganisational selectOrganisational() {
-    return _getSingle(cleon.conception.bpmn.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organisational);
+  public cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational selectOrganisational() {
+    return _getSingle(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational);
   }
 
-  public EnterpriseBusinessProcess setOrganisational(cleon.conception.bpmn.spec.bpmn.organisational.javamodel.IOrganisational organisational) {
-    _setSingle(cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organisational, organisational);
+  public EnterpriseBusinessProcess setOrganisational(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational organisational) {
+    _setSingle(cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational, organisational);
     return this;
   }
     
@@ -88,8 +88,8 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.conception.organisation.spec.epm.operational.javamodel.IOperational.class, cleon.conception.organisation.spec.epm.EpmPackage.EnterpriseBusinessProcess_operational, visitor);
-    _acceptSingle(cleon.conception.bpmn.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organigram, visitor);
-    _acceptSingle(cleon.conception.bpmn.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.conception.bpmn.spec.bpmn.BpmnPackage.Bpmn_organisational, visitor);
+    _acceptSingle(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram, visitor);
+    _acceptSingle(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -100,4 +100,4 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,pZWRf3fZEnbqFdB3185QOSoV0Ac=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,MUCrezImooRDGEN41urNh3T0F0k=] */

@@ -1,4 +1,4 @@
-package cleon.support.projectmanagement.template.tj3;
+package cleon.initialization.projectmanagement.template.tj3;
 
 import ch.actifsource.core.Resource;
 
@@ -22,8 +22,8 @@ public class Tj3Package {
   }
   
   public static final String getPackageName() {
-    return "cleon.support.projectmanagement.template.tj3";
+    return "cleon.initialization.projectmanagement.template.tj3";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.projectmanagement.template.tj3,8IEd7z6kbYsDJTM9IVf68pLPSaI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.template.tj3,rUTqHDag3bb9pO3lCBM+OVRfbEA=] */

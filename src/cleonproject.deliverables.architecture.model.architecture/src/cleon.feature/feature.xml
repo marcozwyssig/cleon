@@ -503,7 +503,8 @@ of their respective owners.
    <plugin id="cleon.conception.architecture.spec.soa.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.architecture.spec.eda.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.architecture.spec.buildingblock.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.uml.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
+   <plugin id="cleon.conception.architecture.spec.uml.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.devops.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.organisation.spec.epm.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
@@ -513,17 +514,17 @@ of their respective owners.
    <plugin id="cleon.conception.applications.spec.gof.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.microservices.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.act.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.cqrs.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.conception.platform.spec.eai.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
+   <plugin id="cleon.conception.applications.spec.cqrs.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.eai.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
       
-   <plugin id="cleon.implementation.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
-   <plugin id="cleon.implementation.testing.template.asciidoc.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
+      
+   <plugin id="cleon.conception.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.implementation.gradle.spec.plugin.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.implementation.gradle.template.gradle.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
+   <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
       
    <plugin id="cleon.implementation.plantuml.template.uml.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
-   <plugin id="cleon.deployment.devops.spec.devops.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
    <plugin id="cleon.deployment.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>
    <plugin id="cleon.deployment.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.2.7" unpack="false"/>   
       

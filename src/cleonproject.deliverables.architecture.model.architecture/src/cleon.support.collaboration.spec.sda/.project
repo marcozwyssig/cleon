@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.support.collaboration.spec.sda</name>
-	<comment></comment>
+	<comment/>
 	<projects>
-		<project>cleon.implementation.testing.spec.testing</project>
+		<project>cleon.conception.testing.spec.testing</project>
 		<project>cleon.common.analysis.spec.analysis</project>
 		<project>cleon.conception.architecture.spec.togaf</project>
 		<project>cleon.initialization.projectmanagement.spec.steering</project>
 		<project>cleon.deployment.chocolatey.template.nuget</project>
 		<project>cleon.conception.actifsource.spec.actifsource</project>
 		<project>cleon.common.knowledge.spec.knowledge</project>
-		<project>cleon.deployment.devops.spec.devops</project>
+		<project>cleon.conception.architecture.spec.devops</project>
 		<project>cleon.conception.applications.spec.ddd</project>
 		<project>cleon.conception.organisation.spec.epm</project>
 		<project>cleon.conception.actifsource.template.importer</project>
@@ -38,11 +38,6 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
@@ -52,10 +47,21 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>		
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1c9002b8-6388-11e5-90cd-0d09bb283bc0,hgWkBqkxNEIT29AcWePQdfKaRqc=] -->

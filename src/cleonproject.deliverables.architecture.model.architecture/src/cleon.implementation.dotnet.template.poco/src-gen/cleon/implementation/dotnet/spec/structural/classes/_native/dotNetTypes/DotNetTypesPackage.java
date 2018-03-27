@@ -1,4 +1,4 @@
-package cleon.conception.uml.spec.structural.classes._native.dotNetTypes;
+package cleon.implementation.dotnet.spec.structural.classes._native.dotNetTypes;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class DotNetTypesPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.uml.spec.structural.classes._native.dotNetTypes";
+    return "cleon.implementation.dotnet.spec.structural.classes._native.dotNetTypes";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.uml.spec.structural.classes._native.dotNetTypes,cJYvhUJWqmYxIfK8Ex/Xm4t/dU8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.implementation.dotnet.spec.structural.classes._native.dotNetTypes,2Sm/o/btIrMmYY3a8NVnXJRZPGs=] */

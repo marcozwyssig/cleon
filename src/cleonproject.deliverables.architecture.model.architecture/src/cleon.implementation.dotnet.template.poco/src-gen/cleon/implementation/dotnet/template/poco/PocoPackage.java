@@ -1,14 +1,14 @@
-package cleon.conception.uml.template.dotnet;
+package cleon.implementation.dotnet.template.poco;
 
 import ch.actifsource.core.Resource;
 
-public class DotnetPackage {
+public class PocoPackage {
   
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
   
-  private DotnetPackage() {}
+  private PocoPackage() {}
   
   public static final String getScopeName() {
     return "cleon.implementation.dotnet.template.poco";
@@ -19,8 +19,8 @@ public class DotnetPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.uml.template.dotnet";
+    return "cleon.implementation.dotnet.template.poco";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.uml.template.dotnet,Y/YSHTLANWo+7oXJoSfatlC7k5A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.implementation.dotnet.template.poco,mBn9u0oSC0BYbDsuZxwxioRC6uY=] */

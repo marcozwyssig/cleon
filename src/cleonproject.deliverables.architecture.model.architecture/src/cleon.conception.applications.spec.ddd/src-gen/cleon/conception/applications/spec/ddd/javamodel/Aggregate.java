@@ -120,11 +120,11 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator> selectEventAggregator() {
-    return _getList(cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator);
+  public java.util.List<? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator() {
+    return _getList(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator);
   }
 
-  public Aggregate setEventAggregator(java.util.List<? extends cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator> eventAggregator) {
+  public Aggregate setEventAggregator(java.util.List<? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> eventAggregator) {
     _setList(cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator, eventAggregator);
     return this;
   }
@@ -193,7 +193,7 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptSingle(cleon.conception.applications.spec.ddd.services.javamodel.IServiceDekomposition.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_domainServices, visitor);
     _acceptList(cleon.conception.applications.spec.ddd.entities.javamodel.IEntityDekomposition.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_entities, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.classes.enums.javamodel.IEnumDekomposition.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_enums, visitor);
-    _acceptList(cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator, visitor);
+    _acceptList(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator, visitor);
     _acceptList(cleon.conception.applications.spec.ddd.exceptions.javamodel.IExceptionDekomposition.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_exceptions, visitor);
     _acceptList(cleon.conception.applications.spec.ddd.repository.javamodel.IRepositoryDekomposition.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_repository, visitor);
     _acceptList(cleon.conception.uml.spec.uml.structural.packages.javamodel.IPackageDecomposition.class, cleon.conception.uml.spec.uml.structural.packages.PackagesPackage.Package_subPackages, visitor);
@@ -227,9 +227,9 @@ public class Aggregate extends DynamicResource implements IAggregate {
     return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.ddd.javamodel.IAggregate.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_enums, object.getResource());
   }
   
-  public static cleon.conception.applications.spec.ddd.javamodel.IAggregate selectToMeEventAggregator(cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator object) {
+  public static cleon.conception.applications.spec.ddd.javamodel.IAggregate selectToMeEventAggregator(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.ddd.javamodel.IAggregate.class, cleon.conception.applications.spec.ddd.DddPackage.Aggregate_eventAggregator, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,3S+VIaZiNKIx4+TM1yRK1RmYOP8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,Ou3F54YNMfOBj+RYawtLjrMLqH4=] */

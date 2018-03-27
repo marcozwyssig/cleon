@@ -1,4 +1,4 @@
-package cleon.conception.eda.spec.eventaggregator;
+package cleon.conception.architecture.spec.eda.eventaggregator;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -48,4 +48,4 @@ public class Functions {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3fe557b9-d232-11e4-8b90-c7d981a5f2fd,Q7JrWH4cRkiZ143zSvk4L7TYTzg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3fe557b9-d232-11e4-8b90-c7d981a5f2fd,0sKp9RbL7hfibxJ9ykcKvxiMlg4=] */

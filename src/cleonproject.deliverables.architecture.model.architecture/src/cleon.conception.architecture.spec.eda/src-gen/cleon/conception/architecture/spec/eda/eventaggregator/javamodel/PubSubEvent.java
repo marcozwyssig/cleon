@@ -1,4 +1,4 @@
-package cleon.conception.eda.spec.eventaggregator.javamodel;
+package cleon.conception.architecture.spec.eda.eventaggregator.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -62,11 +62,11 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
     
   @Override
   public cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent selectEvent() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event);
+    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.PubSubEvent_event);
   }
 
   public PubSubEvent setEvent(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent event) {
-    _setSingle(cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event, event);
+    _setSingle(cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.PubSubEvent_event, event);
     return this;
   }
     
@@ -98,16 +98,16 @@ public class PubSubEvent extends DynamicResource implements IPubSubEvent {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.PubSubEvent_event, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent> selectToMeEvent(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent object) {
-    return _getToMeList(object.getRepository(), cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.PubSubEvent_event, object.getResource());
+  public static java.util.List<cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent> selectToMeEvent(cleon.conception.uml.spec.uml.structural.classes.events.javamodel.IEvent object) {
+    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.PubSubEvent_event, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,zlhCms58zaCvoufDH2AzKACIwAs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98ea7936-d22a-11e4-8b90-c7d981a5f2fd,RItoILCHciaehxLMoz7rxiOKOK0=] */

@@ -1,4 +1,4 @@
-package cleon.conception.eda.spec.eventaggregator.javamodel;
+package cleon.conception.architecture.spec.eda.eventaggregator.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -61,11 +61,11 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   
   @Override
   public cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier selectContext() {
-    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context);
+    return _getSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_context);
   }
 
   public EventAggregator setContext(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier context) {
-    _setSingle(cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, context);
+    _setSingle(cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_context, context);
     return this;
   }
     
@@ -80,12 +80,12 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent> selectEvents() {
-    return _getMap(cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent> selectEvents() {
+    return _getMap(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events);
   }
 
-  public EventAggregator setEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent> events) {
-    _setMap(cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events, events);
+  public EventAggregator setEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent> events) {
+    _setMap(cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events, events);
     return this;
   }
     
@@ -107,21 +107,21 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, visitor);
+    _acceptSingle(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_context, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMap(cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events, visitor);
+    _acceptMap(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator selectToMeEvents(cleon.conception.eda.spec.eventaggregator.javamodel.IPubSubEvent object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_events, object.getResource());
+  public static cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator selectToMeEvents(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent object) {
+    return _getToMeSingle(object.getRepository(), cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events, object.getResource());
   }
   
-  public static java.util.List<cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator> selectToMeContext(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier object) {
-    return _getToMeList(object.getRepository(), cleon.conception.eda.spec.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.eda.spec.eventaggregator.EventaggregatorPackage.EventAggregator_context, object.getResource());
+  public static java.util.List<cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> selectToMeContext(cleon.conception.uml.spec.uml.structural.classes.javamodel.IClassifier object) {
+    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_context, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,2as3AmZNDm6nkLQUBb+OsYwuxTc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,jRA1hha5JHReC9o02C67PgdOGwg=] */

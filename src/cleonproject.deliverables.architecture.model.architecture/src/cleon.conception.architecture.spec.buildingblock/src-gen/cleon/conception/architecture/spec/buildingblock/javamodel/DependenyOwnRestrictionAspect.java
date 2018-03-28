@@ -36,10 +36,6 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 
 		IDependency dependency = resourceRepository.getResource(IDependency.class, statement.object());
 		IBuildingBlock dependencyBuildingBlock = dependency.selectTo();
-		Logger.instance().logInfo("Dependency: "
-				+ Select.simpleName(validationcontext.getReadJobExecutor(), dependencyBuildingBlock.getResource()));
-		Logger.instance().logInfo("DependendingBuildingblock: "
-				+ Select.simpleName(validationcontext.getReadJobExecutor(), dependentBuildingBlock.getResource()));
 
 		IBuildingBlockFunctions blockFunctions = dependentBuildingBlock.extension(IBuildingBlockFunctions.class);
 		List<IBuildingBlock> indirectBuildingBlocks = blockFunctions.GetIndirectDependingBuildingBlocks();
@@ -49,7 +45,6 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 		}
 
 		List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.GetDirectDependingBuildingBlocks());
-		Logger.instance().logInfo("Count of directbuilingblocks: " + directBuildingBlocks.size());
 
 		directBuildingBlocks.remove(dependencyBuildingBlock);
 

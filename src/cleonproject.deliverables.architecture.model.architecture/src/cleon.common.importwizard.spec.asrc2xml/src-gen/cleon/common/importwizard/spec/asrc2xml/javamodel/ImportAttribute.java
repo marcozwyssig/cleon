@@ -28,15 +28,26 @@ public class ImportAttribute extends DynamicResource implements IImportAttribute
     super(resourceRepository, resource, IImportAttribute.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectXml__S_name() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_xml__S_name);
+  }
+    
+  public void setXml__S_name(java.lang.String xml__S_name) {
+     _setSingleAttribute(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_xml__S_name, xml__S_name);
+  }
+
   // relations
   
   @Override
   public ch.actifsource.core.javamodel.IAttribute selectAttribute() {
-    return _getSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportAttribute_attribute);
+    return _getSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_attribute);
   }
 
   public ImportAttribute setAttribute(ch.actifsource.core.javamodel.IAttribute attribute) {
-    _setSingle(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportAttribute_attribute, attribute);
+    _setSingle(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_attribute, attribute);
     return this;
   }
     
@@ -63,17 +74,13 @@ public class ImportAttribute extends DynamicResource implements IImportAttribute
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_xml__S_name, visitor);
     // relations
-    _acceptSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportAttribute_attribute, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_attribute, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute> selectToMeAttribute(ch.actifsource.core.javamodel.IAttribute object) {
-    return _getToMeList(object.getRepository(), cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportAttribute_attribute, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dbb8e1fa-221e-11e8-8749-cb7f4d6924d3,gM9gMBPtMtna6jZxrabs5aFn1oo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,47c2c24d-3292-11e8-925e-0378e2266aa0,k5wWPu5yIX0F3NzdvqI5VNMPgTQ=] */

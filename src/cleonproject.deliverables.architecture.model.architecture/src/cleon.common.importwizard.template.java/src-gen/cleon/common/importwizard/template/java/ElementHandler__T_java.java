@@ -18,28 +18,31 @@ public class ElementHandler__T_java {
   /* End Protected Region   [[38d2fc01-237f-11e8-85f4-376150ff5cc0]] */
 
 
-  public static interface IImportClassFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractImportClassFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("731c3fd9-237f-11e8-85f4-376150ff5cc0")
     public java.lang.String ClassName();
 
+    @IDynamicResourceExtension.MethodId("edb1917c-3280-11e8-925e-0378e2266aa0")
+    public java.lang.String ClassNameToAllLower();
+
   }
   
-  public static interface IImportClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractImportClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ImportClassFunctionsImpl implements IImportClassFunctionsImpl {
+  public static class AbstractImportClassFunctionsImpl implements IAbstractImportClassFunctionsImpl {
 
-    public static final IImportClassFunctionsImpl INSTANCE = new ImportClassFunctionsImpl();
+    public static final IAbstractImportClassFunctionsImpl INSTANCE = new AbstractImportClassFunctionsImpl();
 
-    private ImportClassFunctionsImpl() {}
+    private AbstractImportClassFunctionsImpl() {}
 
   }
   
-  public static class ImportClassFunctions {
+  public static class AbstractImportClassFunctions {
 
-    private ImportClassFunctions() {}
+    private AbstractImportClassFunctions() {}
 
   }
 
@@ -68,7 +71,7 @@ public class ElementHandler__T_java {
 
   }
 
-  public static interface IImportAttributeFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractImportAttributeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("12fa5603-25ee-11e8-afb5-83603a67326a")
     public java.lang.String TypeName();
@@ -81,21 +84,21 @@ public class ElementHandler__T_java {
 
   }
   
-  public static interface IImportAttributeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractImportAttributeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ImportAttributeFunctionsImpl implements IImportAttributeFunctionsImpl {
+  public static class AbstractImportAttributeFunctionsImpl implements IAbstractImportAttributeFunctionsImpl {
 
-    public static final IImportAttributeFunctionsImpl INSTANCE = new ImportAttributeFunctionsImpl();
+    public static final IAbstractImportAttributeFunctionsImpl INSTANCE = new AbstractImportAttributeFunctionsImpl();
 
-    private ImportAttributeFunctionsImpl() {}
+    private AbstractImportAttributeFunctionsImpl() {}
 
   }
   
-  public static class ImportAttributeFunctions {
+  public static class AbstractImportAttributeFunctions {
 
-    private ImportAttributeFunctions() {}
+    private AbstractImportAttributeFunctions() {}
 
   }
 
@@ -127,6 +130,31 @@ public class ElementHandler__T_java {
 
   }
 
+  public static interface IAbstractOwnImportRelationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5bb288fe-25dc-11e8-afb5-83603a67326a")
+    public java.lang.String CreateElementHandler();
+
+  }
+  
+  public static interface IAbstractOwnImportRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractOwnImportRelationFunctionsImpl implements IAbstractOwnImportRelationFunctionsImpl {
+
+    public static final IAbstractOwnImportRelationFunctionsImpl INSTANCE = new AbstractOwnImportRelationFunctionsImpl();
+
+    private AbstractOwnImportRelationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractOwnImportRelationFunctions {
+
+    private AbstractOwnImportRelationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,38d2fc01-237f-11e8-85f4-376150ff5cc0,QYzT9lUVQ6zQSERF8yUEC6P2WjM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,38d2fc01-237f-11e8-85f4-376150ff5cc0,sxWBdlWUCrWVriAVsc5kr16h5kQ=] */

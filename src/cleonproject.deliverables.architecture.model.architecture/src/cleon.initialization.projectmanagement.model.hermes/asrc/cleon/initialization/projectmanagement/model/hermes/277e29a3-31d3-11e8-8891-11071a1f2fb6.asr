@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="277e29a3-31d3-11e8-8891-11071a1f2fb6">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="f7893914-3283-11e8-925e-0378e2266aa0" type="resource" guid="f7893910-3283-11e8-925e-0378e2266aa0" />
+  </owns>
   <owns predicate="1a00c1c0-0f10-11e7-9a20-dfec81ac21a9">
     <resource statement-guid="277e29ae-31d3-11e8-8891-11071a1f2fb6" type="resource" guid="277e29a4-31d3-11e8-8891-11071a1f2fb6" />
   </owns>
@@ -8,6 +11,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="277e29aa-31d3-11e8-8891-11071a1f2fb6" type="literal">Hermes Importer</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f7893914-3283-11e8-925e-0378e2266aa0">
+      <resource guid="f7893910-3283-11e8-925e-0378e2266aa0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f7893912-3283-11e8-925e-0378e2266aa0" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fff26405-3283-11e8-925e-0378e2266aa0" type="literal">cleon.initialization.projectmanagement.model.hermes.HermesImportWizardAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f7893913-3283-11e8-925e-0378e2266aa0" type="resource" guid="521f1dd5-0e46-11e7-bc08-e928dcbbca14" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="26751bdf-0f0d-11e7-9a20-dfec81ac21a9">
     <object statement-guid="277e29a9-31d3-11e8-8891-11071a1f2fb6" type="literal">0.0.1</object>

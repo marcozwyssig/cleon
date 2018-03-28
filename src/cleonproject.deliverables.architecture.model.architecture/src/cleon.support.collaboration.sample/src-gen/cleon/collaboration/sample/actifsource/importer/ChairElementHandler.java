@@ -16,6 +16,20 @@ public class ChairElementHandler extends AbstractXMLElementHandler {
 	private String _discriminator;
 	private Resource _cls;
 	private Resource _rel;
+
+	public ChairElementHandler(Resource cls)
+	{
+		_discriminator = null;
+		_cls = cls;
+		_rel = null;
+	}
+	
+	public ChairElementHandler(Resource cls, Resource rel)
+	{
+		_discriminator = null;
+		_cls = cls;
+		_rel = rel;
+	}	
 	
 	public ChairElementHandler(String discriminator, Resource cls, Resource rel)
 	{
@@ -31,8 +45,10 @@ public class ChairElementHandler extends AbstractXMLElementHandler {
 		if( name.equalsIgnoreCase("chair"))
 		{		
 			context.getImportContext().putInfo("creating chair resource with name '" + name + "' and discriminator '" + _discriminator + "'");
-			String discriminatorProperty = context.getMandatoryAttributeStringValue(_discriminator, attributes);
-			return context.getOrCreateResourceByName(discriminatorProperty, context.getParentResourceNotNull(), _rel, _cls);
+			String discriminatorAttribute = null;
+			if( _discriminator != null )
+				discriminatorAttribute = context.getMandatoryAttributeStringValue(_discriminator, attributes);
+			return context.getOrCreateResourceByName(discriminatorAttribute, context.getParentResourceNotNull(), _rel, _cls);
 		}
 		
 		context.getImportContext().putError("name doenst not equals chair");
@@ -44,6 +60,13 @@ public class ChairElementHandler extends AbstractXMLElementHandler {
 	{
 	
 	}		
-	
+
+	@Override
+	public IXMLElementHandler createSubElementHandler(IXMLElementContext context, String name) throws SAXException 
+	{	
+		
+				
+		throw context.createException("Create nested element '" + name + "' is not supported.");
+	}
 }
-/* Actifsource ID=[38dbaecb-237f-11e8-85f4-376150ff5cc0,2d3013ef-26bd-11e8-a805-991f3ff583b7,bcPkP4RBbvzhGERV8EhKlFZneGM=] */
+/* Actifsource ID=[38dbaecb-237f-11e8-85f4-376150ff5cc0,c88f77bf-3283-11e8-925e-0378e2266aa0,WkKnY3Jxdqacd3qL75uaRq8rhtk=] */

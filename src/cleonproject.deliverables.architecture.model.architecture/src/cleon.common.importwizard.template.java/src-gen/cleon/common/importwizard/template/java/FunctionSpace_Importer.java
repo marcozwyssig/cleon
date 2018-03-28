@@ -11,37 +11,12 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[51f602fc-25dc-11e8-afb5-83603a67326a,imports]] */
 
-public class ImporterFunctionSpace {
+public class FunctionSpace_Importer {
 
   /* Begin Protected Region [[51f602fc-25dc-11e8-afb5-83603a67326a]] */
   
   /* End Protected Region   [[51f602fc-25dc-11e8-afb5-83603a67326a]] */
 
-
-  public static interface IAbstractOwnImportRelationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5bb288fe-25dc-11e8-afb5-83603a67326a")
-    public java.lang.String CreateElementHandler();
-
-  }
-  
-  public static interface IAbstractOwnImportRelationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractOwnImportRelationFunctionsImpl implements IAbstractOwnImportRelationFunctionsImpl {
-
-    public static final IAbstractOwnImportRelationFunctionsImpl INSTANCE = new AbstractOwnImportRelationFunctionsImpl();
-
-    private AbstractOwnImportRelationFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractOwnImportRelationFunctions {
-
-    private AbstractOwnImportRelationFunctions() {}
-
-  }
 
   public static interface ILiteralFunctions extends IDynamicResourceExtension {
 
@@ -85,4 +60,4 @@ public class ImporterFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51f602fc-25dc-11e8-afb5-83603a67326a,a7d5bIlwtfspQsaknW1cTe5nFg8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51f602fc-25dc-11e8-afb5-83603a67326a,W4FGI+f4re2E4P+5GG+cPr7wjws=] */

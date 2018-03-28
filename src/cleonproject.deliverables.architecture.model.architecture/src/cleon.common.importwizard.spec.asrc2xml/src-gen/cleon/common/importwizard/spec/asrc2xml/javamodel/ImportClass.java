@@ -42,31 +42,31 @@ public class ImportClass extends DynamicResource implements IImportClass {
     
   @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation> selectMapAssoc() {
-    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAssoc);
+    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapAssoc);
   }
 
   public ImportClass setMapAssoc(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation> mapAssoc) {
-    _setMap(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAssoc, mapAssoc);
+    _setMap(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapAssoc, mapAssoc);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute> selectMapAttr() {
-    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IAbstractImportAttribute> selectMapAttr() {
+    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IAbstractImportAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr);
   }
 
-  public ImportClass setMapAttr(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute> mapAttr) {
+  public ImportClass setMapAttr(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IAbstractImportAttribute> mapAttr) {
     _setMap(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr, mapAttr);
     return this;
   }
     
   @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation> selectMapOwnRel() {
-    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapOwnRel);
+    return _getMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapOwnRel);
   }
 
   public ImportClass setMapOwnRel(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation> mapOwnRel) {
-    _setMap(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapOwnRel, mapOwnRel);
+    _setMap(cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapOwnRel, mapOwnRel);
     return this;
   }
     
@@ -95,9 +95,9 @@ public class ImportClass extends DynamicResource implements IImportClass {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_class, visitor);
-    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAssoc, visitor);
-    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr, visitor);
-    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapOwnRel, visitor);
+    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapAssoc, visitor);
+    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IAbstractImportAttribute.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr, visitor);
+    _acceptMap(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapOwnRel, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -108,17 +108,9 @@ public class ImportClass extends DynamicResource implements IImportClass {
     return _getToMeList(object.getRepository(), cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_class, object.getResource());
   }
   
-  public static cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass selectToMeMapAttr(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAttribute object) {
+  public static cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass selectToMeMapAttr(cleon.common.importwizard.spec.asrc2xml.javamodel.IAbstractImportAttribute object) {
     return _getToMeSingle(object.getRepository(), cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr, object.getResource());
   }
   
-  public static cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass selectToMeMapOwnRel(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportOwnRelation object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapOwnRel, object.getResource());
-  }
-  
-  public static cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass selectToMeMapAssoc(cleon.common.importwizard.spec.asrc2xml.javamodel.IImportAssociation object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.importwizard.spec.asrc2xml.javamodel.IImportClass.class, cleon.common.importwizard.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAssoc, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,+M8uPmoCvSt5ipwgAJgs7ZlqMXk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,RIW0K6UwJ7+CBpDW+w4UhYwCgPM=] */

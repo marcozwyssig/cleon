@@ -1,6 +1,6 @@
 /* See the file "LICENSE" for the full license governing this code. */
 
-package cleon.collaboration.sample.projectmanagement.hermes;
+package cleon.initialization.projectmanagement.model.hermes;
 
 import ch.actifsource.ui.wizard.importer.IImportContext;
 import ch.actifsource.xml.importer.util.*;

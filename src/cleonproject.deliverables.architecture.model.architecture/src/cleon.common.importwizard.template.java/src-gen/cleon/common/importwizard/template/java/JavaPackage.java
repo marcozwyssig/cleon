@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class JavaPackage {
   
   public static final Resource ElementHandler__T_java_AbstractImportClass = new Resource("731bcaa5-237f-11e8-85f4-376150ff5cc0");
-  public static final Resource ImportAspect__T_java_MappingConfiguration = new Resource("269d29b6-2380-11e8-85f4-376150ff5cc0");
+  public static final Resource ImportAspect__T_java_Xml2Asrc = new Resource("269d29b6-2380-11e8-85f4-376150ff5cc0");
   public static final Resource ElementHandler__T_java_ImportOwnRelation = new Resource("a6a899a0-2390-11e8-85f4-376150ff5cc0");
   public static final Resource ElementHandler__T_java_AbstractOwnImportRelation = new Resource("5bb1296a-25dc-11e8-afb5-83603a67326a");
   public static final Resource FunctionSpace_aE_Importer_Literal = new Resource("7a2cdce8-25ec-11e8-afb5-83603a67326a");
@@ -32,4 +32,4 @@ public class JavaPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.importwizard.template.java,tICDCIGxpAlDHWWFf7Eyeyi+kJM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.importwizard.template.java,2Okg5Y5VdiK0z3wB69sYNHXLsBo=] */

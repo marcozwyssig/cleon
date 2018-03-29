@@ -22,7 +22,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.2.7",
  cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.2.7",
  cleon.common.importwizard.template.java.builtin;bundle-version="0.2.7",
- cleon.common.importwizard.spec.asrc2xml.builtin;bundle-version="0.2.7",
+ cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.2.7",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.initialization.projectmanagement.template.tj3,cleon.initialization.projectmanagement.template.tj3.javamodel
 

@@ -3,6 +3,9 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="e27afab0-335f-11e8-a9fe-87ba35d8f5c4" type="resource" guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4" />
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="75eef4d7-3368-11e8-a9c3-6dbf8eca786d" type="resource" guid="75ede363-3368-11e8-a9c3-6dbf8eca786d" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d03edb4b-335f-11e8-a9fe-87ba35d8f5c4" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -36,6 +39,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d03f025c-335f-11e8-a9fe-87ba35d8f5c4" type="literal">LanguageDescription</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="75eef4d7-3368-11e8-a9c3-6dbf8eca786d">
+      <resource guid="75ede363-3368-11e8-a9c3-6dbf8eca786d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="75ee5895-3368-11e8-a9c3-6dbf8eca786d" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="83e4a65a-336a-11e8-a9c3-6dbf8eca786d" type="literal">cleon.common.resources.spec.language.javamodel.DescriptionInitializationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="75eea6b6-3368-11e8-a9c3-6dbf8eca786d" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

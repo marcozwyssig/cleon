@@ -6,9 +6,9 @@
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="04da04dc-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="04d9ddc8-365f-11e8-a8f4-eb71f249f68a" />
     <resource statement-guid="0956da77-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="0956b363-365f-11e8-a8f4-eb71f249f68a" />
-    <resource statement-guid="0cbd3704-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="0cbd0ff0-365f-11e8-a8f4-eb71f249f68a" />
     <resource statement-guid="0fb82791-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="0fb8007d-365f-11e8-a8f4-eb71f249f68a" />
-    <resource statement-guid="b3e77c6e-3661-11e8-a8f4-eb71f249f68a" type="resource" guid="b3e7555a-3661-11e8-a8f4-eb71f249f68a" />
+    <resource statement-guid="2cf08d47-374a-11e8-88ad-114c6ffe4a0c" type="resource" guid="2cf03f23-374a-11e8-88ad-114c6ffe4a0c" />
+    <resource statement-guid="7cdfe502-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="7cdfbdee-374c-11e8-88ad-114c6ffe4a0c" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ee0b43e7-3361-11e8-a9fe-87ba35d8f5c4" type="resource" guid="a9e3052c-335e-11e8-a9fe-87ba35d8f5c4" />
@@ -59,20 +59,6 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="0cbd3704-365f-11e8-a8f4-eb71f249f68a">
-      <resource guid="0cbd0ff0-365f-11e8-a8f4-eb71f249f68a">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="0cbd0ff2-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
-        </predicate>
-        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="0d323ff5-365f-11e8-a8f4-eb71f249f68a" type="literal">La foresta è sopra la montagna.</object>
-          <object statement-guid="0db85fe6-365f-11e8-a8f4-eb71f249f68a" type="literal">Ci sono solo alcuni miracoli.</object>
-        </predicate>
-        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
-          <object statement-guid="0cbd0ff3-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="dd7c8dda-3339-11e8-a9fe-87ba35d8f5c4" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="0fb82791-365f-11e8-a8f4-eb71f249f68a">
       <resource guid="0fb8007d-365f-11e8-a8f4-eb71f249f68a">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -87,18 +73,33 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="b3e77c6e-3661-11e8-a8f4-eb71f249f68a">
-      <resource guid="b3e7555a-3661-11e8-a8f4-eb71f249f68a">
+    <object statement-guid="2cf08d47-374a-11e8-88ad-114c6ffe4a0c">
+      <resource guid="2cf03f23-374a-11e8-88ad-114c6ffe4a0c">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="b3e7555c-3661-11e8-a8f4-eb71f249f68a" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="2cf03f25-374a-11e8-88ad-114c6ffe4a0c" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
         </predicate>
         <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="b465fb3f-3661-11e8-a8f4-eb71f249f68a" type="literal">The forest is over the mountain.</object>
-          <object statement-guid="b4b812e0-3661-11e8-a8f4-eb71f249f68a" type="literal">There are only a few miracles.</object>
-          <object statement-guid="b52c0a61-3661-11e8-a8f4-eb71f249f68a" type="literal">Important people are present in the media</object>
+          <object statement-guid="2e097758-374a-11e8-88ad-114c6ffe4a0c" type="literal">La foresta è sopra la montagna.</object>
+          <object statement-guid="2eb28899-374a-11e8-88ad-114c6ffe4a0c" type="literal">Ci sono solo alcuni miracoli.</object>
+          <object statement-guid="2f51399a-374a-11e8-88ad-114c6ffe4a0c" type="literal">Persone importanti sono presenti nei media</object>
         </predicate>
         <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
-          <object statement-guid="b3e77c6d-3661-11e8-a8f4-eb71f249f68a" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
+          <object statement-guid="2cf06636-374a-11e8-88ad-114c6ffe4a0c" type="resource" guid="dd7c8dda-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7cdfe502-374c-11e8-88ad-114c6ffe4a0c">
+      <resource guid="7cdfbdee-374c-11e8-88ad-114c6ffe4a0c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7cdfbdf0-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="7dd67a03-374c-11e8-88ad-114c6ffe4a0c" type="literal">The forest is over the mountain.</object>
+          <object statement-guid="7e55e334-374c-11e8-88ad-114c6ffe4a0c" type="literal">There are only a few miracles.</object>
+          <object statement-guid="7ef0eab5-374c-11e8-88ad-114c6ffe4a0c" type="literal">Important people are present in the media</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="7cdfe501-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="dd79cee8-3339-11e8-a9fe-87ba35d8f5c4" />
         </predicate>
       </resource>
     </object>

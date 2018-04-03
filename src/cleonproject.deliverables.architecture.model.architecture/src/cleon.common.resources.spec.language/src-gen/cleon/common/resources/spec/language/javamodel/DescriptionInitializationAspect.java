@@ -1,7 +1,12 @@
 package cleon.common.resources.spec.language.javamodel;
 
 import ch.actifsource.core.INode;
+import ch.actifsource.core.Literal;
+import ch.actifsource.core.Package;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
+import ch.actifsource.core.job.Update;
+import ch.actifsource.core.update.IModifiable;
+import cleon.common.resources.spec.resources.descriptions.DescriptionsPackage;
 
 public class DescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
 	@Override
@@ -29,4 +34,16 @@ public class DescriptionInitializationAspect extends AbstractMultiLanguageInitia
 		ILanguageDescription defaultDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
 		return defaultDescription.selectDescriptions();
 	}
+
+	@Override
+	protected void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal) {
+		Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions, literal);									
+	}
+	
+	@Override
+	protected boolean isDefault(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
+		ILanguageDescription description = getDefaultDescription(dynamicResourceRepository, newInstance);
+		return MultilingualDescription.selectToMeDefaultDescription(description) == null;
+	}
+	
 }

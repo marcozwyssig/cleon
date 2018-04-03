@@ -3,11 +3,14 @@ package cleon.common.resources.spec.language.javamodel;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 
 import ch.actifsource.core.INode;
+import ch.actifsource.core.Literal;
 import ch.actifsource.core.Package;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.Update;
@@ -38,9 +41,11 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 		}
 	}
 	
+	protected abstract boolean isDefault(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract Iterable<String> getSourceText(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
+	protected abstract void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal);
 
 	public void initialize(IModifiable modifiable, INode clazz, Package pkg, INode newInstance) {
 
@@ -48,6 +53,9 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 			ITypeSystem typeSystem = TypeSystem.create(modifiable);
 			IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
+			if( isDefault(resourceRepository, newInstance))
+				return;
+			
 			String targetLanguage = getTargetLanguage(resourceRepository, newInstance);
 			String sourceLanguage = getSourceLanguage(resourceRepository, newInstance);
 			
@@ -56,14 +64,20 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 				try {
 					targetText = translate(sourceLanguage, targetLanguage, sourceText);
 					ch.actifsource.util.log.Logger.instance().logInfo(String.format("Source Language: %s; Target Language: %s; Source Text: %s; Target Text: %s;", sourceLanguage, targetLanguage, sourceText, targetText));
-					Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions,
-							LiteralUtil.create(targetText));									
+					setTargetText(modifiable, pkg, newInstance, LiteralUtil.create(targetText));				
 				} catch (IOException e) {
 					throw new RuntimeException(e);
 				}
 			});
 		} catch (Exception e) {
-			ch.actifsource.util.log.Logger.instance().logError(e.toString());
+			if( e != null)
+			{
+				StringWriter sw = new StringWriter();
+				PrintWriter pw = new PrintWriter(sw);
+				e.printStackTrace(pw);			
+				ch.actifsource.util.log.Logger.instance().logError("Exception: " + e.getMessage() + " StackTrace: " + sw);				
+			}
+
 		}
 	}
 }

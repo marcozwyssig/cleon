@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.conception.organisation.spec.epm
 Bundle-SymbolicName: cleon.conception.organisation.spec.epm.builtin;singleton:=true
-Bundle-Version: 0.3.0
+Bundle-Version: 0.3.1
 Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.environment;bundle-version="8.4.0",
  ch.actifsource.util;bundle-version="8.4.0",
@@ -12,9 +12,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
  ch.actifsource.ui.wizard;bundle-version="8.4.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.initialization.processlanguage.spec.bpmn.builtin;bundle-version="0.3.0",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.0",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.0",
+ cleon.initialization.processlanguage.spec.bpmn.builtin;bundle-version="0.3.1",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.1",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.1",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.conception.organisation.spec.epm,cleon.conception.organisation.spec.epm.javamodel
 

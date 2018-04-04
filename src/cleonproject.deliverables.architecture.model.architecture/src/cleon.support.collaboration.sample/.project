@@ -3,14 +3,12 @@
 	<name>cleon.support.collaboration.sample</name>
 	<comment/>
 	<projects>
-		<project>cleon.common.doc.template.asciidoc</project>
 		<project>cleon.support.collaboration.spec.sda</project>
-		<project>cleon.common.doc.template.docbook</project>
 		<project>cleon.initialization.projectmanagement.template.versionone</project>
 		<project>cleon.initialization.projectmanagement.template.tj3</project>
 		<project>cleon.common.resources.spec.language</project>
-		<project>cleon.common.doc.spec.doc</project>
-		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.support.documentation.template.asciidoc</project>
+		<project>cleon.support.documentation.template.docbook</project>
 		<project>cleon.conception.testing.spec.testing</project>
 		<project>cleon.common.analysis.spec.analysis</project>
 		<project>cleon.conception.architecture.spec.togaf</project>
@@ -28,6 +26,8 @@
 		<project>cleon.initialization.projectmanagement.spec.planning</project>
 		<project>cleon.common.xml.spec.xmi</project>
 		<project>cleon.conception.architecture.spec.buildingblock</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.initialization.projectmanagement.spec.resource</project>
 		<project>cleon.initialization.projectmanagement.model.hermes</project>
 		<project>cleon.common.resources.spec.calendar</project>
@@ -43,6 +43,9 @@
 		<project>cleon.conception.architecture.spec.eda</project>
 		<project>cleon.initialization.processlanguage.spec.bpmn</project>
 		<project>cleon.implementation.gradle.spec.plugin</project>
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.implementation.plantuml.template.uml</project>
+		<project>cleon.common.doc.template.docbook</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -72,4 +75,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,2e41fa77-2de0-11e8-bf2f-091bf46106cb,anb1kqpanJ05NO33nlobln54oEI=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,2e41fa77-2de0-11e8-bf2f-091bf46106cb,6vSS2Tw0RE3xVzH7/KtDrGXVl50=] -->

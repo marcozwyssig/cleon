@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src-gen"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.template.asciidoc"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.support.collaboration.spec.sda"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.template.docbook"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.projectmanagement.template.versionone"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.projectmanagement.template.tj3"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.resources.spec.language"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.spec.doc"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.resources.spec.resources"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.support.documentation.template.asciidoc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.support.documentation.template.docbook"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.testing.spec.testing"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.analysis.spec.analysis"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.architecture.spec.togaf"/>
@@ -26,6 +24,8 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.projectmanagement.spec.planning"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.xml.spec.xmi"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.architecture.spec.buildingblock"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.spec.doc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.resources.spec.resources"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.projectmanagement.spec.resource"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.projectmanagement.model.hermes"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.resources.spec.calendar"/>
@@ -41,6 +41,9 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.architecture.spec.eda"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.initialization.processlanguage.spec.bpmn"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.implementation.gradle.spec.plugin"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.template.asciidoc"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.implementation.plantuml.template.uml"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.template.docbook"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>	
@@ -49,4 +52,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </classpath>
-<!-- Actifsource ID=[054b70e2-e9c0-11e4-848b-0509e3792151,2e41fa77-2de0-11e8-bf2f-091bf46106cb,xFc1zI4IsQqNjuBqliSCbOgivOg=] -->
+<!-- Actifsource ID=[054b70e2-e9c0-11e4-848b-0509e3792151,2e41fa77-2de0-11e8-bf2f-091bf46106cb,WcLWzzYx1urV/+yU/TKyvkRDJzE=] -->

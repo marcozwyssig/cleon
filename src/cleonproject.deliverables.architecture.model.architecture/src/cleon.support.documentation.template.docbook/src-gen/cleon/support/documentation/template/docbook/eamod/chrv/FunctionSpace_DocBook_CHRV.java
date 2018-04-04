@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_DocBook_CHRV {
 
   /* Begin Protected Region [[58aa1a04-3e05-11e6-9bf8-29c5fda07fa3]] */
   
@@ -54,10 +54,22 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("a59ef479-3e12-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderElementName();
 
+    @IDynamicResourceExtension.MethodId("8a8cb15a-3808-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions();
+
+    @IDynamicResourceExtension.MethodId("1b2b8c37-3809-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderRequirement();
+
+    @IDynamicResourceExtension.MethodId("11d12729-380d-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("8a8cb15a-3808-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement);
+
   }
   
   public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
@@ -66,11 +78,20 @@ public class FunctionSpace {
 
     private RequirementFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
+      return null;
+    }
+
   }
   
   public static class RequirementFunctions {
 
     private RequirementFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirement).RenderDescriptions(requirement);
+    }
 
   }
 
@@ -191,10 +212,16 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("4c5a2cdd-3f6a-11e6-85d8-3328a679e82b")
     public java.lang.String RenderAttributes();
 
+    @IDynamicResourceExtension.MethodId("c6be5c8a-380b-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions();
+
   }
   
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("c6be5c8a-380b-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
+
   }
   
   public static class GoalFunctionsImpl implements IGoalFunctionsImpl {
@@ -203,11 +230,20 @@ public class FunctionSpace {
 
     private GoalFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+      return null;
+    }
+
   }
   
   public static class GoalFunctions {
 
     private GoalFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+      return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).RenderDescriptions(goal);
+    }
 
   }
 
@@ -275,10 +311,16 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("6eef5750-3f6e-11e6-85d8-3328a679e82b")
     public java.lang.String RenderAttributes();
 
+    @IDynamicResourceExtension.MethodId("caedd5b9-380b-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions();
+
   }
   
   public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("caedd5b9-380b-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle);
+
   }
   
   public static class PrincipleFunctionsImpl implements IPrincipleFunctionsImpl {
@@ -287,11 +329,20 @@ public class FunctionSpace {
 
     private PrincipleFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+      return null;
+    }
+
   }
   
   public static class PrincipleFunctions {
 
     private PrincipleFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+      return DynamicResourceUtil.invoke(IPrincipleFunctionsImpl.class, PrincipleFunctionsImpl.INSTANCE, principle).RenderDescriptions(principle);
+    }
 
   }
 
@@ -302,6 +353,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("12ac7c84-3f7b-11e6-85d8-3328a679e82b")
     public java.lang.String RenderElementName();
+
+    @IDynamicResourceExtension.MethodId("16220df4-3811-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderSubjectArea();
 
   }
   
@@ -351,6 +405,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IProjectSubjectAreaFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("392b9613-3810-11e8-a088-c32925c50d0b")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IProjectSubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProjectSubjectAreaFunctionsImpl implements IProjectSubjectAreaFunctionsImpl {
+
+    public static final IProjectSubjectAreaFunctionsImpl INSTANCE = new ProjectSubjectAreaFunctionsImpl();
+
+    private ProjectSubjectAreaFunctionsImpl() {}
+
+  }
+  
+  public static class ProjectSubjectAreaFunctions {
+
+    private ProjectSubjectAreaFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,1b2JwMOKh1p2Q4m2/aNjhcEkvmg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,2ZXsWpQGBjdYc7eSNlJ35lkhMhM=] */

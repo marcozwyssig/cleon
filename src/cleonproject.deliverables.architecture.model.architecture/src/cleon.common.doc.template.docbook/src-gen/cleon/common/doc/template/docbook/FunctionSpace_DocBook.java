@@ -15,7 +15,7 @@ import cleon.common.doc.spec.doc.javamodel.DocumentElementComposite;
 import cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite;
 /* End Protected Region   [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_DocBook {
 
   /* Begin Protected Region [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3]] */
   
@@ -626,4 +626,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,2NRRKrsVedbcQVHTAAAY36rLxiY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,bjzhGEY5Zo2RVAz8BSc+qTuiljQ=] */

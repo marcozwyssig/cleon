@@ -40,6 +40,7 @@
       </owns>
     </resource>
     <resource statement-guid="16f1f90d-c58f-11e5-aeea-1db9268c0ee9" type="resource" guid="16f1f909-c58f-11e5-aeea-1db9268c0ee9" />
+    <resource statement-guid="be9bb8f1-38e6-11e8-8c35-85f8e4a22f42" type="resource" guid="be9af59d-38e6-11e8-8c35-85f8e4a22f42" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f1c30a01-a281-11e5-9332-1b5893de4362" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -186,6 +187,19 @@
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="16f1f90c-c58f-11e5-aeea-1db9268c0ee9" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="be9bb8f1-38e6-11e8-8c35-85f8e4a22f42">
+      <resource guid="be9af59d-38e6-11e8-8c35-85f8e4a22f42">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="be9b1caf-38e6-11e8-8c35-85f8e4a22f42" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bfb4f124-38e6-11e8-8c35-85f8e4a22f42" type="literal">cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.DriverIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="be9b1cb0-38e6-11e8-8c35-85f8e4a22f42" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

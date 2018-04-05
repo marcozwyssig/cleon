@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="7180a4c9-38f1-11e8-821b-95b2faee7f22">
+  <owns predicate="4106ca15-bb80-11e5-b2f7-f515c847fa35">
+    <resource statement-guid="75016774-38f1-11e8-821b-95b2faee7f22" type="resource" guid="75011951-38f1-11e8-821b-95b2faee7f22" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7181410b-38f1-11e8-821b-95b2faee7f22" type="resource" guid="0322fa0c-bb80-11e5-b2f7-f515c847fa35" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7291518a-38f1-11e8-821b-95b2faee7f22" type="literal">MyDocument</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="718eae8d-38f1-11e8-821b-95b2faee7f22" type="literal">12</object>
+  </predicate>
+  <predicate guid="4106ca15-bb80-11e5-b2f7-f515c847fa35">
+    <object statement-guid="75016774-38f1-11e8-821b-95b2faee7f22">
+      <resource guid="75011951-38f1-11e8-821b-95b2faee7f22">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="75011953-38f1-11e8-821b-95b2faee7f22" type="resource" guid="1165cb74-bb80-11e5-b2f7-f515c847fa35" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="762e9cf1-38f1-11e8-821b-95b2faee7f22" type="literal">MyChapter</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="750474b8-38f1-11e8-821b-95b2faee7f22" type="literal">13</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -21,14 +21,23 @@ public class SourceIsUsedValidationAspect implements IResourceValidationAspect
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
 		ISource source = resourceRepository.getResource(ISource.class, context.getResource());
-		List<ISourceAware> sourceAwares = source.extension(ISourceFunctions.class).GetAllUsedSourceAware();
-		if (sourceAwares.isEmpty()) {
+		if (!validate(source)) {
 			String name = Select.simpleName(context.getReadJobExecutor(), context.getResource());
 			String errormessage = String.format("Resource %1$s with id %2$d is not used in any other objects (like requirements, driver, etc.)", name,
 					source.selectIdentifier());
 			inconsistencyList.add(new SingleResourceInconsistency(context.getPackage(), context.getResource(), NodeRole.Subject, errormessage));
 		}
-
+	}
+	
+	private boolean validate(ISource source)
+	{
+		List<ISourceAware> sourceAwares = source.extension(ISourceFunctions.class).GetAllUsedSourceAware();
+		if( sourceAwares.isEmpty() )
+		{
+			return source.selectComposites().stream().anyMatch(x -> validate(x));
+		}
+		return true;
+		
 	}
 	
 }

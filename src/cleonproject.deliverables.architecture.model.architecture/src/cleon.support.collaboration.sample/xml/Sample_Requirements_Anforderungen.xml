@@ -290,6 +290,28 @@
 						<db:para>Q011_Workshop_dfsfsfsf</db:para>
 					</db:td>
 				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Dokument</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Q012</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Q012_Dokument_MyDocument</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Kapitel</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Q013</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Q013_Dokument_MyDocument_Kapitel_MyChapter</db:para>
+					</db:td>
+				</db:tr>
 			</db:tbody>
 		</db:informaltable>
 		
@@ -2270,7 +2292,7 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q005</db:para>
+								<db:para>Q005, Q013</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>

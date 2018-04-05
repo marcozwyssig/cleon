@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[4b8d7402-c58d-11e5-aeea-1db9268c0ee9,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Source {
 
   /* Begin Protected Region [[4b8d7402-c58d-11e5-aeea-1db9268c0ee9]] */
   
@@ -31,6 +31,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("b217619b-7c0b-11e6-a6f8-61123cfa9fd9")
     public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("769bc163-38e7-11e8-8c35-85f8e4a22f42")
+    public List<cleon.conception.architecture.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware> GetAllUsedSourceAware();
 
   }
   
@@ -241,4 +244,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,slRVR5gCNrV2KGIX+hCxnJATOL4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,fIdWQ11n7I/eiRAJvA2ih7IHrb4=] */

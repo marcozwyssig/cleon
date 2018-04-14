@@ -70,16 +70,6 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
-  }
-
-  public EventAggregator setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent> selectEvents() {
     return _getMap(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events);
   }
@@ -108,7 +98,6 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_context, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IPubSubEvent.class, cleon.conception.architecture.spec.eda.eventaggregator.EventaggregatorPackage.EventAggregator_events, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -124,4 +113,4 @@ public class EventAggregator extends DynamicResource implements IEventAggregator
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,b5rIUXCELthsXpzW6QPIsYPAqdE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a134cb4-d22a-11e4-8b90-c7d981a5f2fd,AMSFQF2mwV+vWRjmloEMnFJOe6M=] */

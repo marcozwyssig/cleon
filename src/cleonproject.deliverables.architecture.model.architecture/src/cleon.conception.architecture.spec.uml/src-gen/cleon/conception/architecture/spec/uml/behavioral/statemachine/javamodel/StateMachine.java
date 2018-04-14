@@ -60,16 +60,6 @@ public class StateMachine extends DynamicResource implements IStateMachine {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
-  }
-
-  public StateMachine setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.conception.architecture.spec.uml.behavioral.statemachine.javamodel.IEvent> selectEvents() {
     return _getList(cleon.conception.architecture.spec.uml.behavioral.statemachine.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.behavioral.statemachine.StatemachinePackage.StateMachine_events);
   }
@@ -127,7 +117,6 @@ public class StateMachine extends DynamicResource implements IStateMachine {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.conception.architecture.spec.uml.behavioral.statemachine.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.behavioral.statemachine.StatemachinePackage.StateMachine_events, visitor);
     _acceptSingle(cleon.conception.architecture.spec.uml.behavioral.statemachine.javamodel.ISingleState.class, cleon.conception.architecture.spec.uml.behavioral.statemachine.StatemachinePackage.StateMachine_start, visitor);
     _acceptList(cleon.conception.architecture.spec.uml.behavioral.statemachine.javamodel.ISingleState.class, cleon.conception.architecture.spec.uml.behavioral.statemachine.StatemachinePackage.StateMachine_states, visitor);
@@ -154,4 +143,4 @@ public class StateMachine extends DynamicResource implements IStateMachine {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,vCUzzagbfcBxkIe9p7atX5Esios=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,1jYvtwKvgvi6FzD5D5e1yYmLKlo=] */

@@ -1,18 +1,18 @@
 chcp 65001
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri arc42.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Chess.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Chess_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Analyse.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ReferenceDocumentWith___.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Readme.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Requirements_Anforderungen.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sprint_1.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri testing/My_Testing.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Analyse_A.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Analyse_B.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestReferenceArc42.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestReferenceArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sprint_3.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri SampleArchitecture.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri SampleArchitecture_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri AP01_WorkpackageSample.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Hindernisse.adoc
@@ -21,4 +21,4 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Ressour
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ProjectSample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri F_higkeiten.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestSolutionArc42.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestSolutionArc42_Architecture.adoc

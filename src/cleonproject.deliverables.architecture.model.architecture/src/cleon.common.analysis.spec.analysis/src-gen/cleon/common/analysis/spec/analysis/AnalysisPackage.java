@@ -4,6 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class AnalysisPackage {
   
+  public static final Resource AnalysisDocument = new Resource("0d22ecc1-c02a-11e5-b927-b1b055d0575f");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +25,4 @@ public class AnalysisPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.analysis.spec.analysis,e3D8+AzhHiWTtCHdFvn2syOXXZA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.analysis.spec.analysis,ORzZb9JXMfAqJ3jK8Xvqkh7x3cA=] */

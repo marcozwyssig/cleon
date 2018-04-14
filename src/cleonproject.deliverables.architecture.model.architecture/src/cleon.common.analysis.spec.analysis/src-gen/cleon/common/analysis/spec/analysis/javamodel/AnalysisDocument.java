@@ -1,4 +1,4 @@
-package cleon.common.analysis.spec.analysis.solution.javamodel;
+package cleon.common.analysis.spec.analysis.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class AnalysisDocument extends DynamicResource implements IAnaly
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d22ecc1-c02a-11e5-b927-b1b055d0575f,opXxHh0ka8MJBSiF2ctNony4JMc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0d22ecc1-c02a-11e5-b927-b1b055d0575f,+JdQ5PfPgm8FCuUSYD9LvchW0r0=] */

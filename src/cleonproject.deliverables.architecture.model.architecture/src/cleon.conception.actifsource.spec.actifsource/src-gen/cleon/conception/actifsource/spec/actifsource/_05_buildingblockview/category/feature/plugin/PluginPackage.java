@@ -10,9 +10,6 @@ public class PluginPackage {
   public static final Resource PluginDependency_to = new Resource("de9ea266-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource Resource = new Resource("956ece77-5201-11e5-89ac-35d4069568da");
   public static final Resource Plugin_resources = new Resource("e0532bab-5201-11e5-89ac-35d4069568da");
-  public static final Resource TargetPath = new Resource("01463ab3-5202-11e5-89ac-35d4069568da");
-  public static final Resource TargetPath_resource = new Resource("105a8cc8-5202-11e5-89ac-35d4069568da");
-  public static final Resource TargetPath_buildConfigs = new Resource("5305a8a5-5202-11e5-89ac-35d4069568da");
   public static final Resource PluginAggregateDecomposite = new Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
   public static final Resource Package = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
   public static final Resource Plugin_exportPackage = new Resource("4ac67c8e-b87e-11e5-a463-ff45aa361315");
@@ -26,6 +23,9 @@ public class PluginPackage {
   public static final Resource FunctionSpace_Diagram = new Resource("f6381a35-3c79-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_Plugin = new Resource("5c7bb185-8983-11e6-9315-e9960ca482c6");
   public static final Resource Plugin_actifsource = new Resource("37b032e2-3fd8-11e8-bd50-b94594551673");
+  public static final Resource Plugin_java = new Resource("6106c404-41a6-11e8-81d0-774e4d9334dd");
+  public static final Resource Plugin_gradle = new Resource("6237f12f-41a6-11e8-81d0-774e4d9334dd");
+  public static final Resource Plugin_plugin = new Resource("e3f988f8-41a9-11e8-81d0-774e4d9334dd");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +46,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin,7n6chjEtJt9qU2LC5i4b49pMLAc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin,L5tOTstn+qBuhyGRIicWObCekgQ=] */

@@ -1,4 +1,4 @@
-package cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel;
+package cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -16,8 +16,8 @@ public interface IActifsource extends cleon.conception.actifsource.spec.actifsou
   
   public java.lang.String selectBuildFactoryClassName();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.ITargetPath> selectTargetPaths();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.ITargetPath> selectTargetPaths();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cc2363fe-3fd7-11e8-bd50-b94594551673,SsvkcMAnAO5OMwJNsjPFx+5EQyI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cc2363fe-3fd7-11e8-bd50-b94594551673,wGPoV9o+qd8MKwV9lbFTm0BhdyA=] */

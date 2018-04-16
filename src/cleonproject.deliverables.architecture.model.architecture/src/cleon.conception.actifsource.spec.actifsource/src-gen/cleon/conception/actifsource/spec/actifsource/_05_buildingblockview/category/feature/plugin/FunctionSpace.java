@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7106baaa-3c77-11e6-aafa-bd565efc0ead,imports]] */
-import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IActifsource;
+import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.IActifsource;
 /* End Protected Region   [[7106baaa-3c77-11e6-aafa-bd565efc0ead,imports]] */
 
 public class FunctionSpace {
@@ -138,6 +138,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("22956d62-5b57-11e7-9702-abdab196c2a1")
     public java.lang.Boolean UseSimpleName();
 
+    @IDynamicResourceExtension.MethodId("18ec0402-41a5-11e8-81d0-774e4d9334dd")
+    public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.INature> ListNatures();
+
   }
   
   public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -184,4 +187,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,sbHKC/eHE79yqTWIMYDnI9QvLyM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,y8dXwbcqRttBLDRQ68f5exhc9Us=] */

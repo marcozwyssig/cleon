@@ -148,6 +148,185 @@ public class FunctionSpace {
 
   }
 
+  public static interface INatureFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("52c5bcfd-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName();
+
+    @IDynamicResourceExtension.MethodId("def557c4-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand();
+
+    @IDynamicResourceExtension.MethodId("973787c9-41a8-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderClassPathEntry();
+
+  }
+  
+  public static interface INatureFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NatureFunctionsImpl implements INatureFunctionsImpl {
+
+    public static final INatureFunctionsImpl INSTANCE = new NatureFunctionsImpl();
+
+    private NatureFunctionsImpl() {}
+
+  }
+  
+  public static class NatureFunctions {
+
+    private NatureFunctions() {}
+
+  }
+
+  public static interface IJavaFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("89d7a384-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName();
+
+    @IDynamicResourceExtension.MethodId("e668fec4-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand();
+
+    @IDynamicResourceExtension.MethodId("a78b862e-41a8-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderClassPathEntry();
+
+  }
+  
+  public static interface IJavaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class JavaFunctionsImpl implements IJavaFunctionsImpl {
+
+    public static final IJavaFunctionsImpl INSTANCE = new JavaFunctionsImpl();
+
+    private JavaFunctionsImpl() {}
+
+  }
+  
+  public static class JavaFunctions {
+
+    private JavaFunctions() {}
+
+  }
+
+  public static interface IGradleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b1f8ecf8-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName();
+
+    @IDynamicResourceExtension.MethodId("e8776c70-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand();
+
+    @IDynamicResourceExtension.MethodId("aaabb1fa-41a8-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderClassPathEntry();
+
+  }
+  
+  public static interface IGradleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GradleFunctionsImpl implements IGradleFunctionsImpl {
+
+    public static final IGradleFunctionsImpl INSTANCE = new GradleFunctionsImpl();
+
+    private GradleFunctionsImpl() {}
+
+  }
+  
+  public static class GradleFunctions {
+
+    private GradleFunctions() {}
+
+  }
+
+  public static interface IActifsourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b8a6ab6f-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName();
+
+    @IDynamicResourceExtension.MethodId("ea0a688c-41a5-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand();
+
+    @IDynamicResourceExtension.MethodId("acaa4126-41a8-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderClassPathEntry();
+
+  }
+  
+  public static interface IActifsourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActifsourceFunctionsImpl implements IActifsourceFunctionsImpl {
+
+    public static final IActifsourceFunctionsImpl INSTANCE = new ActifsourceFunctionsImpl();
+
+    private ActifsourceFunctionsImpl() {}
+
+  }
+  
+  public static class ActifsourceFunctions {
+
+    private ActifsourceFunctions() {}
+
+  }
+
+  public static interface IPlugin_NatureFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0121d453-41aa-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName();
+
+    @IDynamicResourceExtension.MethodId("45bf98ac-41aa-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand();
+
+    @IDynamicResourceExtension.MethodId("51bbd476-41aa-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderClassPathEntry();
+
+  }
+  
+  public static interface IPlugin_NatureFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("0121d453-41aa-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
+
+    @IDynamicResourceExtension.MethodId("45bf98ac-41aa-11e8-81d0-774e4d9334dd")
+    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
+
+  }
+  
+  public static class Plugin_NatureFunctionsImpl implements IPlugin_NatureFunctionsImpl {
+
+    public static final IPlugin_NatureFunctionsImpl INSTANCE = new Plugin_NatureFunctionsImpl();
+
+    private Plugin_NatureFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+      return null;
+    }
+
+    @Override
+    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+      return null;
+    }
+
+  }
+  
+  public static class Plugin_NatureFunctions {
+
+    private Plugin_NatureFunctions() {}
+
+    public static java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+      return DynamicResourceUtil.invoke(IPlugin_NatureFunctionsImpl.class, Plugin_NatureFunctionsImpl.INSTANCE, plugin_Nature).RenderNatureName(plugin_Nature);
+    }
+
+    public static java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+      return DynamicResourceUtil.invoke(IPlugin_NatureFunctionsImpl.class, Plugin_NatureFunctionsImpl.INSTANCE, plugin_Nature).RenderBuildCommand(plugin_Nature);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,iJCWf0nbXthUocIsTBXYAVGbCZg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,4DIjRZc804XguWnPyDEs3twt8S8=] */

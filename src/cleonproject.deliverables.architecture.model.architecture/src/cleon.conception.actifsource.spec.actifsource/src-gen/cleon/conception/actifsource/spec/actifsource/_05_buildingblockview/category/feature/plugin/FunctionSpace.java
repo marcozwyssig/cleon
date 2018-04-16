@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7106baaa-3c77-11e6-aafa-bd565efc0ead,imports]] */
-
+import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IActifsource;
 /* End Protected Region   [[7106baaa-3c77-11e6-aafa-bd565efc0ead,imports]] */
 
 public class FunctionSpace {
@@ -156,7 +156,12 @@ public class FunctionSpace {
     @Override
     public java.lang.Boolean UseSimpleName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin plugin) {
       /* Begin Protected Region [[22956d62-5b57-11e7-9702-abdab196c2a1]] */
-    	Boolean useSimpleName = plugin.selectUseSimpleNameForBinding();
+    	IActifsource actifsource = plugin.selectActifsource();
+    	if( actifsource == null)
+    	{
+    		return false;
+    	}
+    	Boolean useSimpleName = actifsource.selectUseSimpleNameForBinding();
     	if( useSimpleName == null)
     	{
     		return false;

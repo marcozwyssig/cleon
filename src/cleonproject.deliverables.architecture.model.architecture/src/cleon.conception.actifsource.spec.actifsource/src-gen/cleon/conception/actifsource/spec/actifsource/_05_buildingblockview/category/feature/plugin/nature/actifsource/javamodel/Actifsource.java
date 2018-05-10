@@ -40,15 +40,6 @@ public class Actifsource extends DynamicResource implements IActifsource {
   }
 
   @Override
-  public java.lang.Boolean selectGeneratedJavaModel() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_generatedJavaModel);
-  }
-    
-  public void setGeneratedJavaModel(java.lang.Boolean generatedJavaModel) {
-     _setSingleAttribute(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_generatedJavaModel, generatedJavaModel);
-  }
-
-  @Override
   public java.lang.String selectPluginActivationClassName() {
     return _getSingleAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_pluginActivationClassName);
   }
@@ -93,7 +84,6 @@ public class Actifsource extends DynamicResource implements IActifsource {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_buildFactoryClassName, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_generatedJavaModel, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_pluginActivationClassName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_useSimpleNameForBinding, visitor);
     // relations
@@ -101,9 +91,11 @@ public class Actifsource extends DynamicResource implements IActifsource {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
   public static cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.IActifsource selectToMeTargetPaths(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.ITargetPath object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.IActifsource.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.ActifsourcePackage.Actifsource_targetPaths, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cc2363fe-3fd7-11e8-bd50-b94594551673,tcqjbAcfEDoxMlvLWSq7dg+CxqE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cc2363fe-3fd7-11e8-bd50-b94594551673,JOGDgirJgpmzYj1WmSv30pUVuV0=] */

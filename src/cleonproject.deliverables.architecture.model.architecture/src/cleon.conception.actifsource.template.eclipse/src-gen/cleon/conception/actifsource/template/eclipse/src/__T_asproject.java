@@ -1,14 +1,11 @@
 package cleon.conception.actifsource.template.eclipse.src;
 
-import ch.actifsource.util.Assert;
-import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
-import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
-
 /* Begin Protected Region [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6,imports]] */
 import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.IActifsource;
+import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IJava;
 /* End Protected Region   [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6,imports]] */
 
 public class __T_asproject {
@@ -44,14 +41,15 @@ public class __T_asproject {
     	IActifsource actifsource = plugin.selectActifsource();
     	if( actifsource == null)
     	{
-    		return true;
+    		return false;
     	}
-    	Boolean generatedJavaModel = actifsource.selectGeneratedJavaModel();
-    	if (generatedJavaModel == null)
+    	
+    	IJava java = plugin.selectJava();
+    	if( java == null)
     	{
-    		return true;
+    		return false;
     	}
-    	return generatedJavaModel.booleanValue();
+		return true;
       /* End Protected Region   [[88e4db85-41a1-11e8-81d0-774e4d9334dd]] */
     }
 

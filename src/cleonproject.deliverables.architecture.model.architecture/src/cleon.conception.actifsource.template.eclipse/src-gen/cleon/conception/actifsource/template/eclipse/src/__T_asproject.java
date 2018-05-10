@@ -1,8 +1,12 @@
 package cleon.conception.actifsource.template.eclipse.src;
 
+import ch.actifsource.util.Assert;
+import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
+import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
+
 /* Begin Protected Region [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6,imports]] */
 import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.actifsource.javamodel.IActifsource;
 import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IJava;

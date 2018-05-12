@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.common.importwizard.template.java
 Bundle-SymbolicName: cleon.common.importwizard.template.java.builtin;singleton:=true
-Bundle-Version: 0.3.5
+Bundle-Version: 0.3.6
 Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.environment;bundle-version="8.4.0",
  ch.actifsource.util;bundle-version="8.4.0",
@@ -12,8 +12,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
  ch.actifsource.ui.wizard;bundle-version="8.4.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.5",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.5",
+ cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.6",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.6",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.common.importwizard.template.java,cleon.common.importwizard.template.java.javamodel
 

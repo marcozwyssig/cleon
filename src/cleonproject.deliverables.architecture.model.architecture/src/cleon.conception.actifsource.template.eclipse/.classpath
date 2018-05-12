@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.actifsource.spec.actifsource"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.applications.spec.software"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.conception.architecture.spec.uml"/>
@@ -9,12 +8,12 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.doc.spec.doc"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.resources.spec.resources"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/cleon.common.glossary.spec.glossary"/>
-	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src-gen"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>	
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="output" path="bin"/>
 	<!-- Begin Protected Region [[custom]] -->
 	
 	<!-- End Protected Region   [[custom]] -->
 </classpath>
-<!-- Actifsource ID=[054b70e2-e9c0-11e4-848b-0509e3792151,7a7f0df6-3b69-11e5-86bc-73aedc28563d,VnQwqpuOswWCvrlrArLY0//hRxc=] -->
+<!-- Actifsource ID=[054b70e2-e9c0-11e4-848b-0509e3792151,7a7f0df6-3b69-11e5-86bc-73aedc28563d,1mmocONJXbklCeBvm3NfFdEB+tk=] -->

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.conception.architecture.template.xmi
 Bundle-SymbolicName: cleon.conception.architecture.template.xmi.builtin;singleton:=true
-Bundle-Version: 0.3.6
+Bundle-Version: 0.3.7
 Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.environment;bundle-version="8.4.0",
  ch.actifsource.util;bundle-version="8.4.0",
@@ -12,21 +12,21 @@ Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
  ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
  ch.actifsource.ui.wizard;bundle-version="8.4.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.conception.architecture.spec.eamod.builtin;bundle-version="0.3.6",
- cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.6",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.3.6",
- cleon.initialization.projectmanagement.spec.planning.builtin;bundle-version="0.3.6",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.3.6",
- cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.6",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.6",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.6",
- cleon.initialization.projectmanagement.spec.resource.builtin;bundle-version="0.3.6",
- cleon.initialization.projectmanagement.model.hermes.builtin;bundle-version="0.3.6",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.3.6",
- cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.3.6",
- cleon.common.importwizard.template.java.builtin;bundle-version="0.3.6",
- cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.6",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.3.6",
+ cleon.conception.architecture.spec.eamod.builtin;bundle-version="0.3.7",
+ cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.7",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.3.7",
+ cleon.initialization.projectmanagement.spec.planning.builtin;bundle-version="0.3.7",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.3.7",
+ cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.7",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.7",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.7",
+ cleon.initialization.projectmanagement.spec.resource.builtin;bundle-version="0.3.7",
+ cleon.initialization.projectmanagement.model.hermes.builtin;bundle-version="0.3.7",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.3.7",
+ cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.3.7",
+ cleon.common.importwizard.template.java.builtin;bundle-version="0.3.7",
+ cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.7",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.3.7",
  ch.actifsource.generator;bundle-version="8.4.0"
 Export-Package: cleon.conception.architecture.template.xmi,cleon.conception.architecture.template.xmi.javamodel
 

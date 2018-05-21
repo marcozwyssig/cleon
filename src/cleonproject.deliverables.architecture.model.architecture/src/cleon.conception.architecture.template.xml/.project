@@ -21,24 +21,18 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
-			<arguments>
-			</arguments>
-		</buildCommand>
-		<buildCommand>
 			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
-		</buildCommand>		
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
-		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>		
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 	<linkedResources>
@@ -47,4 +41,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,828198e6-ef88-11e5-b5ac-7fb4e02ebb1c,dG5zpG8XnIhYxoMGQ7FlGFzpLjI=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,828198e6-ef88-11e5-b5ac-7fb4e02ebb1c,2OsZTfXUek+nyr39g8p/THnpAIg=] -->

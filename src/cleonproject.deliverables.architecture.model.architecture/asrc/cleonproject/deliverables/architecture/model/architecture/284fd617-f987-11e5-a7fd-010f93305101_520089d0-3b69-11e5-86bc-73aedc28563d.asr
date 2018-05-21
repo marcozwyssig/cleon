@@ -13,6 +13,7 @@
                 <resource statement-guid="283b7e59-1cd8-11e6-8e4f-e37ebca0f18f" type="resource" guid="283b3036-1cd8-11e6-8e4f-e37ebca0f18f">
                   <owns predicate="c1a1d31a-b884-11e5-a463-ff45aa361315">
                     <resource statement-guid="d407269c-1cdc-11e6-8e4f-e37ebca0f18f" type="resource" guid="d406ff89-1cdc-11e6-8e4f-e37ebca0f18f" />
+                    <resource statement-guid="cec16767-5cfe-11e8-a32e-7ba1b741dee8" type="resource" guid="cebecf54-5cfe-11e8-a32e-7ba1b741dee8" />
                   </owns>
                 </resource>
               </owns>
@@ -93,6 +94,16 @@
                                 </predicate>
                                 <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                                   <object statement-guid="d4861a9d-1cdc-11e6-8e4f-e37ebca0f18f" type="literal">model</object>
+                                </predicate>
+                              </resource>
+                            </object>
+                            <object statement-guid="cec16767-5cfe-11e8-a32e-7ba1b741dee8">
+                              <resource guid="cebecf54-5cfe-11e8-a32e-7ba1b741dee8">
+                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="cebf4486-5cfe-11e8-a32e-7ba1b741dee8" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                                </predicate>
+                                <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="cf608d98-5cfe-11e8-a32e-7ba1b741dee8" type="literal">nature</object>
                                 </predicate>
                               </resource>
                             </object>

@@ -1,4 +1,4 @@
-package cleon.conception.actifsource.template.eclipse.src;
+package cleon.conception.actifsource.template.eclipse.src.as;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -71,4 +71,4 @@ public class __T_asproject {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,woKMnJ87RiiJSftlNvLHY3lZfmE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,oK9dVI8kTfnnkrCrNmPfXn0YoaQ=] */

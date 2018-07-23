@@ -4,14 +4,14 @@ Bundle-ActivationPolicy: lazy
 Bundle-Name: sample.category_a.builtin_b.spec.builtin_specification_b
 Bundle-SymbolicName: sample.category_a.builtin_b.spec.builtin_specification_b.builtin;singleton:=true
 Bundle-Version: 0.1.0
-Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
- ch.actifsource.environment;bundle-version="8.4.0",
- ch.actifsource.util;bundle-version="8.4.0",
- ch.actifsource.xml;bundle-version="8.4.0",
- ch.actifsource.template;bundle-version="8.4.0",
- ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
- ch.actifsource.ui.wizard;bundle-version="8.4.0",
+Require-Bundle: ch.actifsource.core;bundle-version="",
+ ch.actifsource.environment;bundle-version="",
+ ch.actifsource.util;bundle-version="",
+ ch.actifsource.xml;bundle-version="",
+ ch.actifsource.template;bundle-version="",
+ ch.actifsource.ui.wizard.generic;bundle-version="",
+ ch.actifsource.ui.wizard;bundle-version="",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- ch.actifsource.generator;bundle-version="8.4.0"
+ ch.actifsource.generator;bundle-version=""
 Export-Package: sample.category_a.builtin_b.spec.builtin_specification_b,sample.category_a.builtin_b.spec.builtin_specification_b.javamodel
 

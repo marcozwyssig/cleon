@@ -41,6 +41,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("1cd5a723-434f-11e6-a9d7-97cf4f7c398b")
     public java.lang.String GetVersion();
 
+    @IDynamicResourceExtension.MethodId("88c4e02e-8e7d-11e8-bdd7-2510a77680f5")
+    public java.lang.String GetAcitfSourceVersion();
+
   }
   
   public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -127,6 +130,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("09628c70-3936-11e7-bdc0-a3f58cf12b73")
     public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("04cab634-8e7d-11e8-bdd7-2510a77680f5")
+    public java.lang.String GetAcitfSourceVersion();
 
   }
   
@@ -329,4 +335,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,4DIjRZc804XguWnPyDEs3twt8S8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,K+0zeAquR2eTauNMSy8OZ0UrviM=] */

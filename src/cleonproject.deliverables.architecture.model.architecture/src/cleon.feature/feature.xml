@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon" label="cleon" version="0.3.8">
+<feature id="cleon" label="cleon" version="0.3.9">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -467,71 +467,71 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="8.4.0" match="greaterOrEqual"/>
       
    </requires>
-   <plugin id="cleon.common.analysis.spec.analysis.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.analysis.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.resources.spec.calendar.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.resources.spec.language.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.xml.spec.xml.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.xml.spec.xmi.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.glossary.spec.glossary.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.knowledge.spec.knowledge.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.knowledge.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.common.importwizard.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.common.importwizard.template.java.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.initialization.processlanguage.spec.bpmn.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.initialization.projectmanagement.spec.resource.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.projectmanagement.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.planning.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.steering.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.template.versionone.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.template.tj3.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.hermes.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.model.hermes.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.conception.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.conception.architecture.spec.eamod.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.arc42.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.togaf.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.template.xml.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.template.xmi.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.soa.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.eda.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.buildingblock.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.uml.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.devops.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.conception.organisation.spec.epm.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.mobile.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.software.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.ddd.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.gof.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.microservices.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.act.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.cqrs.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.conception.applications.spec.eai.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
+   <plugin id="cleon.common.analysis.spec.analysis.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.analysis.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.resources.spec.calendar.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.resources.spec.language.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.xml.spec.xml.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.xml.spec.xmi.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.glossary.spec.glossary.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.knowledge.spec.knowledge.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.knowledge.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.common.importwizard.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.common.importwizard.template.java.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.initialization.processlanguage.spec.bpmn.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.initialization.projectmanagement.spec.resource.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.spec.projectmanagement.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.spec.planning.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.spec.steering.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.template.versionone.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.template.tj3.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.spec.hermes.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.initialization.projectmanagement.model.hermes.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.conception.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.conception.architecture.spec.eamod.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.arc42.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.togaf.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.template.xml.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.template.xmi.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.soa.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.eda.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.buildingblock.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.uml.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.devops.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.conception.organisation.spec.epm.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.mobile.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.software.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.ddd.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.gof.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.microservices.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.act.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.cqrs.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.conception.applications.spec.eai.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
       
       
-   <plugin id="cleon.conception.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.implementation.gradle.spec.plugin.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.implementation.gradle.template.gradle.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
+   <plugin id="cleon.conception.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.implementation.gradle.spec.plugin.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.implementation.gradle.template.gradle.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
       
-   <plugin id="cleon.implementation.plantuml.template.uml.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.deployment.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.deployment.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
+   <plugin id="cleon.implementation.plantuml.template.uml.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.deployment.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.deployment.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
       
-   <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.support.publishing.spec.website.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>
-   <plugin id="cleon.support.publishing.template.docpad.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
-   <plugin id="cleon.support.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.3.8" unpack="false"/>   
+   <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.support.publishing.spec.website.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>
+   <plugin id="cleon.support.publishing.template.docpad.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
+   <plugin id="cleon.support.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.3.9" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,284fd617-f987-11e5-a7fd-010f93305101,Hash] -->

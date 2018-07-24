@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/cleon_0.3.8.jar" id="cleon" version="0.3.8">
+      <category name="cleon-stable"/>
+   </feature>
+   <feature url="features/cleonproject_0.2.0.jar" id="cleonproject" version="0.2.0">
+      <category name="cleon-stable"/>
+   </feature>
+   <category-def name="cleon-stable" label="Stable Cleon"/>
+</site>

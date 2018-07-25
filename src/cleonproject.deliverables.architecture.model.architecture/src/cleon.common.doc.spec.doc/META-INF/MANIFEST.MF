@@ -3,17 +3,17 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.common.doc.spec.doc
 Bundle-SymbolicName: cleon.common.doc.spec.doc.builtin;singleton:=true
-Bundle-Version: 0.3.9
-Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
- ch.actifsource.environment;bundle-version="8.4.0",
- ch.actifsource.util;bundle-version="8.4.0",
- ch.actifsource.xml;bundle-version="8.4.0",
- ch.actifsource.template;bundle-version="8.4.0",
- ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
- ch.actifsource.ui.wizard;bundle-version="8.4.0",
+Bundle-Version: 0.3.10
+Require-Bundle: ch.actifsource.core;bundle-version="",
+ ch.actifsource.environment;bundle-version="",
+ ch.actifsource.util;bundle-version="",
+ ch.actifsource.xml;bundle-version="",
+ ch.actifsource.template;bundle-version="",
+ ch.actifsource.ui.wizard.generic;bundle-version="",
+ ch.actifsource.ui.wizard;bundle-version="",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.9",
- ch.actifsource.generator;bundle-version="8.4.0"
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.10",
+ ch.actifsource.generator;bundle-version=""
 Export-Package: cleon.common.doc.spec.doc,cleon.common.doc.spec.doc.javamodel
  ,cleon.common.doc.spec.doc.chapter,cleon.common.doc.spec.doc.chapter.javamodel,
  cleon.common.doc.spec.doc.document,cleon.common.doc.spec.doc.document.javamodel,

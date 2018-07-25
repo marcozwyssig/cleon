@@ -3,16 +3,16 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.common.resources.spec.resources
 Bundle-SymbolicName: cleon.common.resources.spec.resources.builtin;singleton:=true
-Bundle-Version: 0.3.9
-Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
- ch.actifsource.environment;bundle-version="8.4.0",
- ch.actifsource.util;bundle-version="8.4.0",
- ch.actifsource.xml;bundle-version="8.4.0",
- ch.actifsource.template;bundle-version="8.4.0",
- ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
- ch.actifsource.ui.wizard;bundle-version="8.4.0",
+Bundle-Version: 0.3.10
+Require-Bundle: ch.actifsource.core;bundle-version="",
+ ch.actifsource.environment;bundle-version="",
+ ch.actifsource.util;bundle-version="",
+ ch.actifsource.xml;bundle-version="",
+ ch.actifsource.template;bundle-version="",
+ ch.actifsource.ui.wizard.generic;bundle-version="",
+ ch.actifsource.ui.wizard;bundle-version="",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- ch.actifsource.generator;bundle-version="8.4.0"
+ ch.actifsource.generator;bundle-version=""
 Export-Package: cleon.common.resources.spec.resources,cleon.common.resources.spec.resources.javamodel
  ,cleon.common.resources.spec.resources.naming,cleon.common.resources.spec.resources.naming.javamodel,
  cleon.common.resources.spec.resources.id,cleon.common.resources.spec.resources.id.javamodel,
@@ -25,5 +25,6 @@ Export-Package: cleon.common.resources.spec.resources,cleon.common.resources.spe
  cleon.common.resources.spec.resources.descriptions,cleon.common.resources.spec.resources.descriptions.javamodel,
  cleon.common.resources.spec.resources.availability,cleon.common.resources.spec.resources.availability.javamodel,
  cleon.common.resources.spec.resources.confidentiality,cleon.common.resources.spec.resources.confidentiality.javamodel,
- cleon.common.resources.spec.resources.cardinality,cleon.common.resources.spec.resources.cardinality.javamodel
+ cleon.common.resources.spec.resources.cardinality,cleon.common.resources.spec.resources.cardinality.javamodel,
+ cleon.common.resources.spec.resources.complexity,cleon.common.resources.spec.resources.complexity.javamodel
 

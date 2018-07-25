@@ -13,6 +13,7 @@
     <resource statement-guid="e6836e2e-bf19-11e7-9dcc-23cb45d05890" type="resource" guid="e682d1eb-bf19-11e7-9dcc-23cb45d05890" />
     <resource statement-guid="edba0c14-bf19-11e7-9dcc-23cb45d05890" type="resource" guid="edb9e501-bf19-11e7-9dcc-23cb45d05890" />
     <resource statement-guid="5636a02e-26b0-11e8-a805-991f3ff583b7" type="resource" guid="5636791b-26b0-11e8-a805-991f3ff583b7" />
+    <resource statement-guid="beae5ca0-8fe9-11e8-8dbd-374e37cba062" type="resource" guid="beacd5fd-8fe9-11e8-8dbd-374e37cba062" />
   </owns>
   <owns predicate="37b032e2-3fd8-11e8-bd50-b94594551673">
     <resource statement-guid="83da210c-5444-11e8-a7d7-8f17ff9a62b8" type="resource" guid="83d9f9f8-5444-11e8-a7d7-8f17ff9a62b8" />
@@ -147,6 +148,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="578eb575-26b0-11e8-a805-991f3ff583b7" type="literal">cardinality</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="beae5ca0-8fe9-11e8-8dbd-374e37cba062">
+      <resource guid="beacd5fd-8fe9-11e8-8dbd-374e37cba062">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bead4b2f-8fe9-11e8-8dbd-374e37cba062" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bf29ce31-8fe9-11e8-8dbd-374e37cba062" type="literal">complexity</object>
         </predicate>
       </resource>
     </object>

@@ -3,19 +3,19 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.common.knowledge.template.asciidoc
 Bundle-SymbolicName: cleon.common.knowledge.template.asciidoc.builtin;singleton:=true
-Bundle-Version: 0.3.9
-Require-Bundle: ch.actifsource.core;bundle-version="8.4.0",
- ch.actifsource.environment;bundle-version="8.4.0",
- ch.actifsource.util;bundle-version="8.4.0",
- ch.actifsource.xml;bundle-version="8.4.0",
- ch.actifsource.template;bundle-version="8.4.0",
- ch.actifsource.ui.wizard.generic;bundle-version="8.4.0",
- ch.actifsource.ui.wizard;bundle-version="8.4.0",
+Bundle-Version: 0.3.10
+Require-Bundle: ch.actifsource.core;bundle-version="",
+ ch.actifsource.environment;bundle-version="",
+ ch.actifsource.util;bundle-version="",
+ ch.actifsource.xml;bundle-version="",
+ ch.actifsource.template;bundle-version="",
+ ch.actifsource.ui.wizard.generic;bundle-version="",
+ ch.actifsource.ui.wizard;bundle-version="",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.doc.template.asciidoc.builtin;bundle-version="0.3.9",
- cleon.common.knowledge.spec.knowledge.builtin;bundle-version="0.3.9",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.9",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.9",
- ch.actifsource.generator;bundle-version="8.4.0"
+ cleon.common.doc.template.asciidoc.builtin;bundle-version="0.3.10",
+ cleon.common.knowledge.spec.knowledge.builtin;bundle-version="0.3.10",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.10",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.10",
+ ch.actifsource.generator;bundle-version=""
 Export-Package: cleon.common.knowledge.template.asciidoc,cleon.common.knowledge.template.asciidoc.javamodel
 

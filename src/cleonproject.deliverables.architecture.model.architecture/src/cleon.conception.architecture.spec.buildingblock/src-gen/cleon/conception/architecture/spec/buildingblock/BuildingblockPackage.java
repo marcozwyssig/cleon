@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class BuildingblockPackage {
   
   public static final Resource BuildingBlock = new Resource("243b1867-7973-11e4-a6e2-23d949480f96");
-  public static final Resource AggregateDecomposite_into = new Resource("bad604bb-7a39-11e4-a6e2-23d949480f96");
+  public static final Resource AggregateDecomposite_intoBuildingBlock = new Resource("bad604bb-7a39-11e4-a6e2-23d949480f96");
   public static final Resource AggregateDecomposite = new Resource("53d51c49-7ad7-11e4-a6e2-23d949480f96");
   public static final Resource Dependency = new Resource("9416ead6-ffb9-11e4-ac0a-959b440f987f");
   public static final Resource DependentBuildingBlock_hasDependency = new Resource("a2e49730-ffb9-11e4-ac0a-959b440f987f");
@@ -41,4 +41,4 @@ public class BuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.buildingblock,BNHbIElURyIu5002G62bWsdcUok=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.buildingblock,kzkYOytwbiXP0S5tgyD/OtQeIQw=] */

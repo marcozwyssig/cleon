@@ -16,9 +16,9 @@ public class ComponentsPackage {
   public static final Resource ComponentWithPackage_decomposePackages = new Resource("66c7af37-ffc5-11e4-ac0a-959b440f987f");
   public static final Resource ComponentWithPackage_hasDependency = new Resource("66c7af38-ffc5-11e4-ac0a-959b440f987f");
   public static final Resource ComponentCompositionDecomposite = new Resource("096bdd9e-174e-11e5-9ca7-d1bb57b73459");
-  public static final Resource ComponentCompositionDecomposite_into = new Resource("3168aea2-174e-11e5-9ca7-d1bb57b73459");
+  public static final Resource ComponentCompositionDecomposite_intoComponent = new Resource("3168aea2-174e-11e5-9ca7-d1bb57b73459");
   public static final Resource ComponentDecomposition = new Resource("d4692e40-1755-11e5-9ca7-d1bb57b73459");
-  public static final Resource ComponentDecomposition_decompose = new Resource("d4695551-1755-11e5-9ca7-d1bb57b73459");
+  public static final Resource ComponentDecomposition_intoPackage = new Resource("d4695551-1755-11e5-9ca7-d1bb57b73459");
   public static final Resource Component = new Resource("a3e0c163-3b7b-11e5-bcdd-1b181eee11b0");
   public static final Resource Component_noPackages = new Resource("f88eeb26-3b7b-11e5-bcdd-1b181eee11b0");
   public static final Resource NamedComponentComposition = new Resource("17c05c68-41b0-11e5-86f2-816f5628b22b");
@@ -45,4 +45,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.uml.structural.components,T1VxW56Gx+Hb1sLoLn8ixG6zV84=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.uml.structural.components,XZNWx9NQ1UBCWYLJhRwJsKqKaq8=] */

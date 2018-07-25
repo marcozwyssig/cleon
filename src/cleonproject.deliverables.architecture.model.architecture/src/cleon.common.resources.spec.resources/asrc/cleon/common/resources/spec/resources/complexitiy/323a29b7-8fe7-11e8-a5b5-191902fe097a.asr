@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="323a29b7-8fe7-11e8-a5b5-191902fe097a">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="323a50d4-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="323a29b8-8fe7-11e8-a5b5-191902fe097a" />
+  </owns>
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="90cef6e3-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="90cea8c0-8fe7-11e8-a5b5-191902fe097a" />
+    <resource statement-guid="948966cc-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="94893fb9-8fe7-11e8-a5b5-191902fe097a" />
+    <resource statement-guid="98ad6df4-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="98ad46e1-8fe7-11e8-a5b5-191902fe097a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="323a50cd-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="323a50ce-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="323a50cf-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="d2e41148-feae-11de-b623-05edcc99ed4a" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="323a50d4-8fe7-11e8-a5b5-191902fe097a">
+      <resource guid="323a29b8-8fe7-11e8-a5b5-191902fe097a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="323a50d0-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="323a50d1-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="323a50d2-8fe7-11e8-a5b5-191902fe097a" type="literal">number</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="323a50d3-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="323a50d5-8fe7-11e8-a5b5-191902fe097a" type="literal">Complexity</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="90cef6e3-8fe7-11e8-a5b5-191902fe097a">
+      <resource guid="90cea8c0-8fe7-11e8-a5b5-191902fe097a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="90cecfd2-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="323a29b7-8fe7-11e8-a5b5-191902fe097a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="91e19ebb-8fe7-11e8-a5b5-191902fe097a" type="literal">Low</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="9e0931d7-8fe7-11e8-a5b5-191902fe097a" type="literal">• simple schedule with
+no dependencies
+• low total cost
+• tested technology,
+techniques, and
+procedures
+• impacts single
+department
+• staffing involves
+single department
+• minimal
+vendor/consulting
+activity </object>
+        </predicate>
+        <predicate guid="323a29b8-8fe7-11e8-a5b5-191902fe097a">
+          <object statement-guid="93c0719e-8fe7-11e8-a5b5-191902fe097a" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="948966cc-8fe7-11e8-a5b5-191902fe097a">
+      <resource guid="94893fb9-8fe7-11e8-a5b5-191902fe097a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="94893fbb-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="323a29b7-8fe7-11e8-a5b5-191902fe097a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="958e2cdb-8fe7-11e8-a5b5-191902fe097a" type="literal">Medium</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="a91baad8-8fe7-11e8-a5b5-191902fe097a" type="literal">• schedule has few
+dependencies
+• intermediate total cost
+• impacts more than one
+department or unit
+• involves staff from
+more than one
+department
+• intermediate
+vendor/consulting
+activity </object>
+        </predicate>
+        <predicate guid="323a29b8-8fe7-11e8-a5b5-191902fe097a">
+          <object statement-guid="980212c0-8fe7-11e8-a5b5-191902fe097a" type="literal">2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="98ad6df4-8fe7-11e8-a5b5-191902fe097a">
+      <resource guid="98ad46e1-8fe7-11e8-a5b5-191902fe097a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="98ad6df3-8fe7-11e8-a5b5-191902fe097a" type="resource" guid="323a29b7-8fe7-11e8-a5b5-191902fe097a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99997ba5-8fe7-11e8-a5b5-191902fe097a" type="literal">High</object>
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="b1839d49-8fe7-11e8-a5b5-191902fe097a" type="literal">• complex schedule
+with many
+dependencies
+• high total cost
+• untested technology,
+techniques or
+processes
+• extensive crossdepartmental
+impact
+• involves staff from
+many departments or
+units
+• extensive
+vendor/consulting
+activity</object>
+        </predicate>
+        <predicate guid="323a29b8-8fe7-11e8-a5b5-191902fe097a">
+          <object statement-guid="9aceee66-8fe7-11e8-a5b5-191902fe097a" type="literal">3</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

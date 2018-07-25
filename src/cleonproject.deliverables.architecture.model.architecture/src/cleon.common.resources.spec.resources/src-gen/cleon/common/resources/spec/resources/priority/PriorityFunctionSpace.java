@@ -29,6 +29,12 @@ public class PriorityFunctionSpace {
     @IDynamicResourceExtension.MethodId("c7e8226f-10a4-11e8-ab55-75346738d444")
     public java.lang.Boolean IsMust();
 
+    @IDynamicResourceExtension.MethodId("e2be9c10-8fe7-11e8-a5b5-191902fe097a")
+    public java.lang.Boolean IsUrgent();
+
+    @IDynamicResourceExtension.MethodId("ef006d66-8fe7-11e8-a5b5-191902fe097a")
+    public java.lang.Boolean IsImportant();
+
   }
   
   public static interface IPriorityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -41,6 +47,12 @@ public class PriorityFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("c7e8226f-10a4-11e8-ab55-75346738d444")
     public java.lang.Boolean IsMust(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority);
+
+    @IDynamicResourceExtension.MethodId("e2be9c10-8fe7-11e8-a5b5-191902fe097a")
+    public java.lang.Boolean IsUrgent(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority);
+
+    @IDynamicResourceExtension.MethodId("ef006d66-8fe7-11e8-a5b5-191902fe097a")
+    public java.lang.Boolean IsImportant(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority);
 
   }
   
@@ -65,6 +77,16 @@ public class PriorityFunctionSpace {
       return priority.isMust__F_have();
     }
 
+    @Override
+    public java.lang.Boolean IsUrgent(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return priority.isMust__F_have() || priority.isNice__F_to__F_have();
+    }
+
+    @Override
+    public java.lang.Boolean IsImportant(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return priority.isMust__F_have() || priority.isShould__F_have();
+    }
+
   }
   
   public static class PriorityFunctions {
@@ -83,8 +105,16 @@ public class PriorityFunctionSpace {
       return DynamicResourceUtil.invoke(IPriorityFunctionsImpl.class, PriorityFunctionsImpl.INSTANCE, priority).IsMust(priority);
     }
 
+    public static java.lang.Boolean IsUrgent(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return DynamicResourceUtil.invoke(IPriorityFunctionsImpl.class, PriorityFunctionsImpl.INSTANCE, priority).IsUrgent(priority);
+    }
+
+    public static java.lang.Boolean IsImportant(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return DynamicResourceUtil.invoke(IPriorityFunctionsImpl.class, PriorityFunctionsImpl.INSTANCE, priority).IsImportant(priority);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,QON2mh/vMxkYK4+JHnDPwddJ+k8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,SX0OCq9FaBWaOFQEh/AeiBje8wU=] */

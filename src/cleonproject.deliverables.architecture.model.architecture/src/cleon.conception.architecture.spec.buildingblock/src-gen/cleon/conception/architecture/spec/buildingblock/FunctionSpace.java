@@ -194,7 +194,7 @@ public class FunctionSpace {
     			continue;
     		}
     		IAggregateDecomposite aggregateDecomposite = (IAggregateDecomposite) block;
-    		IBuildingBlock nestedBlock = aggregateDecomposite.selectInto();
+    		IBuildingBlock nestedBlock = aggregateDecomposite.selectIntoBuildingBlock();
     		if( nestedBlock == null)
     		{
     			continue;

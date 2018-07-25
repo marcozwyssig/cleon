@@ -154,6 +154,16 @@ public class SecurityRequirement extends DynamicResource implements ISecurityReq
   }
     
   @Override
+  public cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity selectComplexity() {
+    return _getSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity);
+  }
+
+  public SecurityRequirement setComplexity(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity complexity) {
+    _setSingle(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, complexity);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectConcretizes() {
     return _getList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_concretizes);
   }
@@ -291,6 +301,7 @@ public class SecurityRequirement extends DynamicResource implements ISecurityReq
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_aggregates, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_concretizes, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_conflicts, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.quality.iso_25000.spec.javamodel.ISoftwareQuality.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.quality.QualityPackage.QualityRequirement_coverageQualities, visitor);
@@ -306,4 +317,4 @@ public class SecurityRequirement extends DynamicResource implements ISecurityReq
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f44a06a-a95d-11e5-bda2-a7fc3bd7c783,sdZhNJZrAltqbvm8hStgs15kYP0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f44a06a-a95d-11e5-bda2-a7fc3bd7c783,GWjomaJHF4uLKstcIqNHY1WGUEo=] */

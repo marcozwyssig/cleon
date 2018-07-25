@@ -154,12 +154,12 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
   }
     
   @Override
-  public cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity selectComplexity() {
-    return _getSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity);
+  public cleon.common.resources.spec.resources.complexity.javamodel.IComplexity selectComplexity() {
+    return _getSingle(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity);
   }
 
-  public FormalFunctionalRequirement setComplexity(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity complexity) {
-    _setSingle(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, complexity);
+  public FormalFunctionalRequirement setComplexity(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity complexity) {
+    _setSingle(cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity, complexity);
     return this;
   }
     
@@ -291,7 +291,7 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_aggregates, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_concretizes, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_conflicts, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -312,4 +312,4 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,+goU33HAGE+O6fWuHSGPyd2Livk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,LMI+Wfs+0wuJ4qKXjw3O/2J39+0=] */

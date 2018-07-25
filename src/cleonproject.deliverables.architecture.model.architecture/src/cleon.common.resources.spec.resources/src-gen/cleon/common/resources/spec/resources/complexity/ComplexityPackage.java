@@ -1,8 +1,8 @@
-package cleon.common.resources.spec.resources.complexitiy;
+package cleon.common.resources.spec.resources.complexity;
 
 import ch.actifsource.core.Resource;
 
-public class ComplexitiyPackage {
+public class ComplexityPackage {
   
   public static final Resource Complexity = new Resource("323a29b7-8fe7-11e8-a5b5-191902fe097a");
   public static final Resource Complexity_number = new Resource("323a29b8-8fe7-11e8-a5b5-191902fe097a");
@@ -16,7 +16,7 @@ public class ComplexitiyPackage {
   
   /* End Protected Region   [[user]] */
   
-  private ComplexitiyPackage() {}
+  private ComplexityPackage() {}
   
   public static final String getScopeName() {
     return "cleon.common.resources.spec.resources";
@@ -27,8 +27,8 @@ public class ComplexitiyPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.common.resources.spec.resources.complexitiy";
+    return "cleon.common.resources.spec.resources.complexity";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.complexitiy,sPo2i7ho7fV9Yg8gw3W2HKylvpo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.complexity,Vo29p+zj5ZsIqJK4Ghpl4boINE0=] */

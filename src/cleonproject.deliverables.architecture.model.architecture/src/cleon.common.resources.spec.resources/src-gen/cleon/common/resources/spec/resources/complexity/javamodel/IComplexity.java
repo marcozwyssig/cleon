@@ -1,4 +1,4 @@
-package cleon.common.resources.spec.resources.complexitiy.javamodel;
+package cleon.common.resources.spec.resources.complexity.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -47,4 +47,4 @@ public interface IComplexity extends ch.actifsource.core.javamodel.IEnumValue, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,323a29b7-8fe7-11e8-a5b5-191902fe097a,3cY/RRpBsGEbnBM/V00kXdoDstM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,323a29b7-8fe7-11e8-a5b5-191902fe097a,PhLBlE2X17khCi+YXhR3TZCNSJY=] */

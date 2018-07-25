@@ -45,9 +45,6 @@ public class FunctionSpace {
 
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("604b9cb7-2b56-11e8-859c-c3075307fbcf")
-    public cleon.common.doc.spec.doc.chapter.javamodel.IChapter GetBuildingBlockView();
-
     @IDynamicResourceExtension.MethodId("604b9cc2-2b56-11e8-859c-c3075307fbcf")
     public cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.ISystem GetSystem();
 
@@ -73,4 +70,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,pIzfiKgtyplCt3QCeLI2J30/RZc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,GcwEvEapRfm/AZ+OaAWGTlJS1To=] */

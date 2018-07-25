@@ -1,4 +1,4 @@
-package cleon.common.resources.spec.resources.complexitiy.javamodel;
+package cleon.common.resources.spec.resources.complexity.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -50,11 +50,11 @@ public class Complexity extends DynamicResource implements IComplexity {
 
   @Override
   public java.lang.Integer selectNumber() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_number);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_number);
   }
     
   public void setNumber(java.lang.Integer number) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_number, number);
+     _setSingleAttribute(cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_number, number);
   }
 
   // relations
@@ -75,7 +75,7 @@ public class Complexity extends DynamicResource implements IComplexity {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_number, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_number, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -111,18 +111,18 @@ public class Complexity extends DynamicResource implements IComplexity {
     
   @Override
   public boolean isLow() {
-    return getResource().equals(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_Low);
+    return getResource().equals(cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_Low);
   }
   
   @Override
   public boolean isMedium() {
-    return getResource().equals(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_Medium);
+    return getResource().equals(cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_Medium);
   }
   
   @Override
   public boolean isHigh() {
-    return getResource().equals(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.Complexity_High);
+    return getResource().equals(cleon.common.resources.spec.resources.complexity.ComplexityPackage.Complexity_High);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,323a29b7-8fe7-11e8-a5b5-191902fe097a,Slk5uUCXsTHTJWFf9AmEqyb62qw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,323a29b7-8fe7-11e8-a5b5-191902fe097a,f5/zs4Ho6cli88CYVY6IzukoCgc=] */

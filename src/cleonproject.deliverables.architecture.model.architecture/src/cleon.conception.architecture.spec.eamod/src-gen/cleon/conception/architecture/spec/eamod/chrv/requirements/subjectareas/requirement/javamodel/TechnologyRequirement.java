@@ -154,12 +154,12 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
     
   @Override
-  public cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity selectComplexity() {
-    return _getSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity);
+  public cleon.common.resources.spec.resources.complexity.javamodel.IComplexity selectComplexity() {
+    return _getSingle(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity);
   }
 
-  public TechnologyRequirement setComplexity(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity complexity) {
-    _setSingle(cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, complexity);
+  public TechnologyRequirement setComplexity(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity complexity) {
+    _setSingle(cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity, complexity);
     return this;
   }
     
@@ -291,7 +291,7 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_aggregates, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptSingle(cleon.common.resources.spec.resources.complexitiy.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexitiy.ComplexitiyPackage.ComplexityAware_complexity, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.complexity.javamodel.IComplexity.class, cleon.common.resources.spec.resources.complexity.ComplexityPackage.ComplexityAware_complexity, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_concretizes, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_conflicts, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -306,4 +306,4 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,2xA4Mw9qdxmCD1iq6idJVukV258=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,kuAKb5VRbGfN4ATcpwfK5xrpuDk=] */

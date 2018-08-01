@@ -28,6 +28,17 @@ public class Plugin_Nature extends DynamicResource implements IPlugin_Nature {
     super(resourceRepository, resource, IPlugin_Nature.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectAccessrules() {
+    return _getListAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_accessrules);
+  }
+    
+  public void setAccessrules(java.util.List<java.lang.String> accessrules) {
+     _setListAttribute(cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_accessrules, accessrules);
+  }
+
   // relations
   
   @Override
@@ -43,9 +54,11 @@ public class Plugin_Nature extends DynamicResource implements IPlugin_Nature {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_accessrules, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,g4hGRbNlXFlvtEGxAi70bXDLphQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,fqTkkbgdTf7Ose2HgeOp/qWyKE8=] */

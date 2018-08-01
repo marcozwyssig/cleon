@@ -121,7 +121,7 @@ public class FunctionSpace {
   public static interface IPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5fac0a17-8983-11e6-9315-e9960ca482c6")
-    public List<cleon.conception.architecture.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocks();
+    public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetDirectDependingProjectBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("40333452-c10a-11e6-8f58-ad3c6ee7602f")
     public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetDirectDependingBuiltinBuildingBlocks();
@@ -129,8 +129,14 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("bd765b2f-c10b-11e6-8f58-ad3c6ee7602f")
     public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetAllDuplicatedBuiltinDependencies();
 
+    @IDynamicResourceExtension.MethodId("3e804d3f-95a8-11e8-8990-bba75387a1ab")
+    public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetAllDuplicatedProjectDependencies();
+
     @IDynamicResourceExtension.MethodId("1e20244f-c10c-11e6-8f58-ad3c6ee7602f")
     public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetAllBuiltinDependencies();
+
+    @IDynamicResourceExtension.MethodId("32cb0426-95a8-11e8-8990-bba75387a1ab")
+    public List<cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin> GetAllProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("3e2a64a5-5b56-11e7-9702-abdab196c2a1")
     public java.lang.String GetFullBuildingBlockName();
@@ -187,4 +193,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,y8dXwbcqRttBLDRQ68f5exhc9Us=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,kIA1T+d8wwr8QftVje+GjNQHrz8=] */

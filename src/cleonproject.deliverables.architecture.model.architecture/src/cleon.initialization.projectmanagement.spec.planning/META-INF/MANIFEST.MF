@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.initialization.projectmanagement.spec.planning
 Bundle-SymbolicName: cleon.initialization.projectmanagement.spec.planning.builtin;singleton:=true
-Bundle-Version: 0.3.10
+Bundle-Version: 0.3.11
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,14 +12,14 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.initialization.projectmanagement.spec.resource.builtin;bundle-version="0.3.10",
- cleon.initialization.projectmanagement.model.hermes.builtin;bundle-version="0.3.10",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.10",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.3.10",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.10",
- cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.3.10",
- cleon.common.importwizard.template.java.builtin;bundle-version="0.3.10",
- cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.10",
+ cleon.initialization.projectmanagement.spec.resource.builtin;bundle-version="0.3.11",
+ cleon.initialization.projectmanagement.model.hermes.builtin;bundle-version="0.3.11",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.11",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.3.11",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.11",
+ cleon.initialization.projectmanagement.spec.hermes.builtin;bundle-version="0.3.11",
+ cleon.common.importwizard.template.java.builtin;bundle-version="0.3.11",
+ cleon.common.importwizard.spec.xml2asrc.builtin;bundle-version="0.3.11",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.initialization.projectmanagement.spec.planning,cleon.initialization.projectmanagement.spec.planning.javamodel
  ,cleon.initialization.projectmanagement.spec.planning.schedule,cleon.initialization.projectmanagement.spec.planning.schedule.javamodel,

@@ -35,6 +35,18 @@ public interface I__V_7_aE_DeploymentView extends cleon.common.doc.spec.doc.chap
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b47acb73-314c-11e5-bd99-eda9ce254b0b");
   
+  // relations
+  
+  public cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.IBuildView selectBuildView();
+  
+  public cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.IPackageView selectPackageView();
+  
+  public cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.ITestView selectTestView();
+  
+  public cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.IDeployView selectDeployView();
+  
+  public cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.IMonitorView selectMonitorView();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,e801UoViPCxrk59gb98mxKdQTbU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,Cvs3f15ojMBB6lkF32/gxnbPZQk=] */

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="64fa2d04-9984-11e8-b187-17b9138759f6">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="64faca0b-9984-11e8-b187-17b9138759f6" type="resource" guid="64fa7b56-9984-11e8-b187-17b9138759f6">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="64faca0a-9984-11e8-b187-17b9138759f6" type="resource" guid="64fa7b55-9984-11e8-b187-17b9138759f6">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="64faca09-9984-11e8-b187-17b9138759f6" type="resource" guid="64fa7b54-9984-11e8-b187-17b9138759f6" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64fa7b57-9984-11e8-b187-17b9138759f6" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64fa7b58-9984-11e8-b187-17b9138759f6" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64faca03-9984-11e8-b187-17b9138759f6" type="literal">06_RuntimeView</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="64faca0b-9984-11e8-b187-17b9138759f6">
+      <resource guid="64fa7b56-9984-11e8-b187-17b9138759f6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="64faca04-9984-11e8-b187-17b9138759f6" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="64faca05-9984-11e8-b187-17b9138759f6" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="64faca0a-9984-11e8-b187-17b9138759f6">
+            <resource guid="64fa7b55-9984-11e8-b187-17b9138759f6">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="64faca06-9984-11e8-b187-17b9138759f6" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="64faca09-9984-11e8-b187-17b9138759f6">
+                  <resource guid="64fa7b54-9984-11e8-b187-17b9138759f6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="64faca07-9984-11e8-b187-17b9138759f6" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="64faca08-9984-11e8-b187-17b9138759f6" type="literal">Laufzeitsicht</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="64faca0c-9984-11e8-b187-17b9138759f6" type="literal">Contents.
+alternative terms:
+• Dynamic view
+• Process view
+• Workflow view
+
+This view describes the behavior and interaction of the system’s building blocks as runtime elements (processes, tasks, activities, threads, …).
+Select interesting runtime scenarios such as:
+• How are the most important use cases executed by the architectural building blocks?
+• Which instances of architectural building blocks are created at runtime and how are they started, controlled, and stopped.
+• How do the system’s components co-operate with external and pre-existing components?
+• How is the system started (covering e.g. required start scripts, dependencies on external systems, databases, communications systems, etc.)?
+
+Note
+The main criterion for the choice of possible scenarios (sequences, workflows) is their architectural relevancy. It is not important to describe a large number of scenarios. You should rather document a representative selection.
+Candidates are:
+1. The top 3 – 5 use cases
+2. System startup
+3. The system’s behavior on its most important external interfaces
+4. The system’s behavior in the most important error situations 
+
+Motivation.
+Especially for object-oriented architectures it is not sufficient to specify the building blocks with their interfaces, but also how instances of building blocks interact during runtime.
+
+Form.
+Document the chosen scenarios using UML sequence, activity or communications diagrams. Enumerated lists are sometimes feasible.
+Using object diagrams you can depict snapshots of existing runtime objects as well as instantiated relationships. The UML allows to distinguish between active and passive objects.</object>
+  </predicate>
+</resource>
+

@@ -2,7 +2,7 @@ package cleon.conception.actifsource.spec.actifsource._03_system_scope_and_conte
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IZoo extends cleon.conception.applications.spec.software._05_building_block.javamodel.ISoftwareSystem, cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersionAware {
+public interface IZoo extends cleon.conception.applications.spec.architecture.javamodel.ISoftwareSystem, cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersionAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7b6b4712-f986-11e5-a7fd-010f93305101");
   
@@ -12,4 +12,4 @@ public interface IZoo extends cleon.conception.applications.spec.software._05_bu
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,G/Gey7lYJXixDJJmTtIwvAVtNyI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,TSy6Gx9OH429ilGaeFjIy6sm6Cg=] */

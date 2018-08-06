@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[4f929d97-26a8-11e8-a805-991f3ff583b7,imports]] */
-import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
+
 /* End Protected Region   [[4f929d97-26a8-11e8-a805-991f3ff583b7,imports]] */
 
 public class CardinalityFunctionSpace {

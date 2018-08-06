@@ -9,7 +9,6 @@ import ch.actifsource.core.Statement;
 import ch.actifsource.core.aspect.NullAllowed;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.IReadJobExecutor;
-import ch.actifsource.core.job.Select;
 import ch.actifsource.core.model.aspects.IResourcePlacement;
 import ch.actifsource.core.model.aspects.IUseRangeRestrictionAspect;
 import ch.actifsource.core.model.aspects.impl.AbstractStatelessAspectImpl;
@@ -51,11 +50,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 	private void validate( IReadJobExecutor executor, IBuildingBlock currentBuildingBlock, IBuildingBlock toValidate, Statement statement, List<IResourceInconsistency> inconsistencyList)
 	{
 		IBuildingBlockFunctions dependencyFunctions = currentBuildingBlock.extension(IBuildingBlockFunctions.class);
-//		ch.actifsource.util.log.Logger.instance().logInfo("Current " + Select.simpleName(executor, currentBuildingBlock.getResource()));	
 		List<IBuildingBlock> buildingBlocks = dependencyFunctions.GetDirectDependingBuildingBlocks();
-//		buildingBlocks.forEach(x -> {
-//			ch.actifsource.util.log.Logger.instance().logInfo("Dependent " + Select.simpleName(executor, x.getResource()));			
-//		});
 		
 		if (buildingBlocks.contains(toValidate))
 		{

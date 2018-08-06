@@ -48,7 +48,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.implementation.gradle.spec.plugin.builtin;bundle-version="0.3.12",
  cleon.conception.actifsource.template.eclipse.builtin;bundle-version="0.3.12",
  cleon.conception.actifsource.spec.actifsource.builtin;bundle-version="0.3.12",
- cleon.conception.applications.spec.software.builtin;bundle-version="0.3.12",
+ cleon.conception.applications.spec.architecture.builtin;bundle-version="0.3.12",
+ cleon.conception.platform.spec.architecture.builtin;bundle-version="0.3.12",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleonproject.deliverables.release_1.model.project,cleonproject.deliverables.release_1.model.project.javamodel
 

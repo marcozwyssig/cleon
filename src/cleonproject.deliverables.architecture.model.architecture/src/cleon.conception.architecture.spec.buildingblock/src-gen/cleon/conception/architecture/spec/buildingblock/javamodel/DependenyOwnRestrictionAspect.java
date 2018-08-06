@@ -7,7 +7,6 @@ import ch.actifsource.core.INode;
 import ch.actifsource.core.Statement;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.IReadJobExecutor;
-import ch.actifsource.core.job.Select;
 import ch.actifsource.core.model.aspects.IOwnRangeRestrictionAspect;
 import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
@@ -17,7 +16,6 @@ import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency
 import ch.actifsource.util.filter.Filter;
 import ch.actifsource.util.filter.IFilter;
 import cleon.conception.architecture.spec.buildingblock.FunctionSpace.IBuildingBlockFunctions;
-import ch.actifsource.util.log.Logger;
 
 public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect {
 

@@ -108,12 +108,12 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView> select__V_5_aE_buildingblockview() {
-    return _getList(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview);
+  public cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview() {
+    return _getSingle(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview);
   }
 
-  public NamedSolutionArc42 set__V_5_aE_buildingblockview(java.util.List<? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView> __V_5_aE_buildingblockview) {
-    _setList(cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
+  public NamedSolutionArc42 set__V_5_aE_buildingblockview(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView __V_5_aE_buildingblockview) {
+    _setSingle(cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
     return this;
   }
     
@@ -200,7 +200,7 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
     _acceptSingle(cleon.conception.architecture.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.conception.architecture.spec.togaf.solution._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.conception.architecture.spec.togaf.solution.SolutionPackage.SolutionArc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
-    _acceptList(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.conception.architecture.spec.togaf.solution._05_solutionbuildingblock_view.javamodel.I__V_5_aE_SolutionBuildingBlockView.class, cleon.conception.architecture.spec.togaf.solution.SolutionPackage.SolutionArc42___V_5_aE_solutionbuildingblockview, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_7_aE_deploymentview, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
@@ -211,4 +211,4 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,siH892izTHXs9O7Wd27w6TpdFtY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,+0hIZ/20XDIyvd3/DdMOjicmfEk=] */

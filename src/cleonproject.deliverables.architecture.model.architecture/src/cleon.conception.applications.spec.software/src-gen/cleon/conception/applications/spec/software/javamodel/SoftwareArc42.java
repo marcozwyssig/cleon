@@ -108,12 +108,12 @@ public class SoftwareArc42 extends DynamicResource implements ISoftwareArc42 {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView> select__V_5_aE_buildingblockview() {
-    return _getList(cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview);
+  public cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview() {
+    return _getSingle(cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview);
   }
 
-  public SoftwareArc42 set__V_5_aE_buildingblockview(java.util.List<? extends cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView> __V_5_aE_buildingblockview) {
-    _setList(cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
+  public SoftwareArc42 set__V_5_aE_buildingblockview(cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView __V_5_aE_buildingblockview) {
+    _setSingle(cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
     return this;
   }
     
@@ -190,7 +190,7 @@ public class SoftwareArc42 extends DynamicResource implements ISoftwareArc42 {
     _acceptSingle(cleon.conception.architecture.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.conception.applications.spec.software._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
-    _acceptList(cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview, visitor);
+    _acceptSingle(cleon.conception.applications.spec.software._05_building_block.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.conception.applications.spec.software.SoftwarePackage.SoftwareArc42___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView.class, cleon.conception.architecture.spec.arc42.Arc42Package.arc42___V_7_aE_deploymentview, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
@@ -210,4 +210,4 @@ public class SoftwareArc42 extends DynamicResource implements ISoftwareArc42 {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f90dd59b-2d6c-11e6-959f-d1cef44ff5fd,rd8y2Nd+Yd+eOvU6YAMcm0u51vE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f90dd59b-2d6c-11e6-959f-d1cef44ff5fd,ObPflKv3JGRddUqPKbD+Uv/XvL8=] */

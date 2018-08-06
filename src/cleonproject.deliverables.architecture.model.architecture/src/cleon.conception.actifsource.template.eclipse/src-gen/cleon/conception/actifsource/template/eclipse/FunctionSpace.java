@@ -30,10 +30,10 @@ public class FunctionSpace {
     public java.lang.String RenderJavaDependencies();
 
     @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
-    public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPackage GetPackages();
+    public cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage GetPackages();
 
     @IDynamicResourceExtension.MethodId("712a859b-f8d6-11e5-bc92-c963417b9cea")
-    public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.javamodel.IFeature GetFeature();
+    public cleon.conception.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature GetFeature();
 
     @IDynamicResourceExtension.MethodId("6db5f69b-0bfa-11e6-92b5-27c7a314300c")
     public java.lang.String RenderBuiltinDependencies();
@@ -67,10 +67,10 @@ public class FunctionSpace {
   public static interface IPackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0b35945e-b885-11e5-a463-ff45aa361315")
-    public cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPackage GetPackages();
+    public cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage GetPackages();
 
     @IDynamicResourceExtension.MethodId("3bee1cdd-b885-11e5-a463-ff45aa361315")
-    public java.lang.String GetPackageName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.javamodel.IPlugin project);
+    public java.lang.String GetPackageName(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin project);
 
   }
   
@@ -294,10 +294,10 @@ public class FunctionSpace {
   public static interface IPlugin_NatureFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0121d453-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
+    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
 
     @IDynamicResourceExtension.MethodId("45bf98ac-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
+    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature);
 
   }
   
@@ -308,12 +308,12 @@ public class FunctionSpace {
     private Plugin_NatureFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+    public java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
       return null;
     }
 
     @Override
-    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+    public java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
       return null;
     }
 
@@ -323,11 +323,11 @@ public class FunctionSpace {
 
     private Plugin_NatureFunctions() {}
 
-    public static java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+    public static java.lang.String RenderNatureName(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
       return DynamicResourceUtil.invoke(IPlugin_NatureFunctionsImpl.class, Plugin_NatureFunctionsImpl.INSTANCE, plugin_Nature).RenderNatureName(plugin_Nature);
     }
 
-    public static java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
+    public static java.lang.String RenderBuildCommand(final cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature plugin_Nature) {
       return DynamicResourceUtil.invoke(IPlugin_NatureFunctionsImpl.class, Plugin_NatureFunctionsImpl.INSTANCE, plugin_Nature).RenderBuildCommand(plugin_Nature);
     }
 
@@ -335,4 +335,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,K+0zeAquR2eTauNMSy8OZ0UrviM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,u6mN6kyCGHqhdssIUPAKtTd3BFQ=] */

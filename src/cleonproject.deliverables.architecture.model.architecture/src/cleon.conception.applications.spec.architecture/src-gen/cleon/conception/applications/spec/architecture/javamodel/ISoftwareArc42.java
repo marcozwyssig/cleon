@@ -2,16 +2,10 @@ package cleon.conception.applications.spec.architecture.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISoftwareArc42 extends cleon.conception.architecture.spec.arc42.javamodel.INamedArc42 {
+public interface ISoftwareArc42 extends cleon.conception.architecture.spec.arc42.javamodel.IArc42 {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f90dd59b-2d6c-11e6-959f-d1cef44ff5fd");
-  
-  // relations
-  
-  public cleon.conception.applications.spec.architecture._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context select__V_3_aE_system_aE_scope_aE_and_aE_context();
-  
-  public cleon.conception.applications.spec.architecture._05_building_block.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview();
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("25c3a666-99a6-11e8-8f58-219af2c5d6d9");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f90dd59b-2d6c-11e6-959f-d1cef44ff5fd,Af3K3ZtBRjN5Xvx4MK0tIuJIA8A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,25c3a666-99a6-11e8-8f58-219af2c5d6d9,Pns5eV73o4yRWCcCvY1QYwxV83k=] */

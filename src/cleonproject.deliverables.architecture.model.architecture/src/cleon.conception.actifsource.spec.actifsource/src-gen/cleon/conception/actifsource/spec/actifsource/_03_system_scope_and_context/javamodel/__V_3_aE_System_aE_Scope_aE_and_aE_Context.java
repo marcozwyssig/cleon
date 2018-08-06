@@ -121,11 +121,11 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
     
   @Override
-  public cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo selectZoo() {
-    return _getSingle(cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo.class, cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo);
+  public cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo selectZoo() {
+    return _getSingle(cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo.class, cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo);
   }
 
-  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setZoo(cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo zoo) {
+  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setZoo(cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo zoo) {
     _setSingle(cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo, zoo);
     return this;
   }
@@ -144,14 +144,14 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
     _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.ISystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_system, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo.class, cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo, visitor);
+    _acceptSingle(cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo.class, cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context selectToMeZoo(cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo object) {
+  public static cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context selectToMeZoo(cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_zoo, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,1lVYfKjmQ9Ev97HG076jIz0MQtU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,W+CFd7kZncSYB3MaNI0XYh2gWQQ=] */

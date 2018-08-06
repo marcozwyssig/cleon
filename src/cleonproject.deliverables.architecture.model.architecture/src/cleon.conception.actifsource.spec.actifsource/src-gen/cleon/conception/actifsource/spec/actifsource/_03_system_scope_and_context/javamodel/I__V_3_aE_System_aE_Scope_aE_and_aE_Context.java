@@ -8,8 +8,8 @@ public interface I__V_3_aE_System_aE_Scope_aE_and_aE_Context extends cleon.conce
   
   // relations
   
-  public cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo selectZoo();
+  public cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo selectZoo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,8PpRn06oEeARMxFpP7meBpmOLsc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,FTlmgJEPIwx4EsPdqaF2mhNIhQU=] */

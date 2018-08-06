@@ -11,8 +11,8 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.resources.spec.resources.versions.VersionsPackage;
 import cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion;
-import cleon.conception.actifsource.spec.actifsource._03_system_scope_and_context.javamodel.IZoo;
-import cleon.conception.actifsource.spec.actifsource._05_buildingblockview.category.feature.FeaturePackage;
+import cleon.conception.actifsource.spec.actifsource.system.category.feature.FeaturePackage;
+import cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo;
 
 public class IncreaseAllMinorVersionsRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 

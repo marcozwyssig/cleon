@@ -22,5 +22,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.3.12",
  cleon.common.glossary.spec.glossary.builtin;bundle-version="0.3.12",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.conception.actifsource.template.eclipse,cleon.conception.actifsource.template.eclipse.javamodel
+Export-Package: cleon.conception.actifsource.template.eclipse,
+ cleon.conception.actifsource.template.eclipse.feature,
+ cleon.conception.actifsource.template.eclipse.javamodel
 

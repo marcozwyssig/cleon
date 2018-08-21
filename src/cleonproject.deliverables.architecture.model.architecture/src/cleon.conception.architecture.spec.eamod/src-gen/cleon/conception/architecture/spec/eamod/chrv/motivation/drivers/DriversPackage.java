@@ -12,8 +12,8 @@ public class DriversPackage {
   public static final Resource Chance = new Resource("0d2aaed7-a95a-11e5-bda2-a7fc3bd7c783");
   public static final Resource Lack = new Resource("340631a2-a95a-11e5-bda2-a7fc3bd7c783");
   public static final Resource Guideline = new Resource("50b8143d-a95a-11e5-bda2-a7fc3bd7c783");
-  public static final Resource FunctionSpace_Driver = new Resource("3b7ce690-c58d-11e5-aeea-1db9268c0ee9");
-  public static final Resource FunctionSpace_Drivers = new Resource("d0f22e48-c9a4-11e5-96e7-e5a5eee26591");
+  public static final Resource FunctionSpace_aE_Driver_Driver = new Resource("3b7ce690-c58d-11e5-aeea-1db9268c0ee9");
+  public static final Resource FunctionSpace_aE_Driver_Drivers = new Resource("d0f22e48-c9a4-11e5-96e7-e5a5eee26591");
   public static final Resource DriverAware = new Resource("20cfa824-0abf-11e6-85a2-61e22bb4d1e3");
   
   /* Begin Protected Region [[user]] */
@@ -35,4 +35,4 @@ public class DriversPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.motivation.drivers,ao3xo8c3PN2FhdDx5AYsA4s+YqA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.motivation.drivers,9Ul46lvBbY7S3vMEJ3X0HhRwLn4=] */

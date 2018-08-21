@@ -7,10 +7,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * Grundlage beziehungsweise Auslöser für ein
  * Vorhaben dienen
  */
-public interface IDriver extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.conception.architecture.spec.eamod.chrv.javamodel.INotes, cleon.common.doc.spec.doc.document.properties.member.javamodel.IAuthors, cleon.conception.architecture.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware {
+public interface IDriver extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.conception.architecture.spec.eamod.chrv.javamodel.INotes, cleon.common.doc.spec.doc.document.properties.member.javamodel.IAuthors, cleon.conception.architecture.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware, cleon.common.doc.spec.doc.javamodel.INoDocumentElementComposite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("f1c309ff-a281-11e5-9332-1b5893de4362");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1c309ff-a281-11e5-9332-1b5893de4362,lXsnXOZs/q53h5W7zKm5zWydVII=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1c309ff-a281-11e5-9332-1b5893de4362,aIY7Jgn/4P7ODHDh15G8liJcuao=] */

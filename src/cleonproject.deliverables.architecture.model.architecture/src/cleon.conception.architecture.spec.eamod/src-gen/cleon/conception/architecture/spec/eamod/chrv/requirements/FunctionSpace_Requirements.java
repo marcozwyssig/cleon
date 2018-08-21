@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Requirements {
 
   /* Begin Protected Region [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45]] */
   
@@ -54,10 +54,37 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("87f5fade-decb-11e5-bcfc-4385ab45a525")
     public java.lang.String GetTemplate();
 
+    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
+    public java.lang.String GetId();
+
+    @IDynamicResourceExtension.MethodId("4e98d118-e609-11e5-950a-cb0c4b71716c")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("f5702103-e61b-11e5-8630-f311cd9d9999")
+    public java.lang.String GetUniqueName();
+
+    @IDynamicResourceExtension.MethodId("b2f750bb-0e00-11e6-ae01-ef640c578b9b")
+    public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement GetParent();
+
+    @IDynamicResourceExtension.MethodId("e0f79703-0e00-11e6-ae01-ef640c578b9b")
+    public List<cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal> GetGoals();
+
+    @IDynamicResourceExtension.MethodId("52c50b22-0e01-11e6-ae01-ef640c578b9b")
+    public List<cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal> GetAllGoals();
+
+    @IDynamicResourceExtension.MethodId("30e9c967-2cb1-11e6-8dd6-23b9a87b3ebd")
+    public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea GetSubjectArea();
+
+    @IDynamicResourceExtension.MethodId("45609ac6-10a4-11e8-ab55-75346738d444")
+    public java.lang.String GetPriorityName();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
+    public java.lang.String GetId(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement);
+
   }
   
   public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
@@ -66,11 +93,20 @@ public class FunctionSpace {
 
     private RequirementFunctionsImpl() {}
 
+    @Override
+    public java.lang.String GetId(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
+      return String.format("AF%03d", requirement.selectIdentifier());
+    }
+
   }
   
   public static class RequirementFunctions {
 
     private RequirementFunctions() {}
+
+    public static java.lang.String GetId(final cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirement).GetId(requirement);
+    }
 
   }
 
@@ -334,4 +370,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,JSvm/WDg99TZmsyY4KjWWc1i/gE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,3siAWDvlPvR/FhEbt6AxGIO2zfA=] */

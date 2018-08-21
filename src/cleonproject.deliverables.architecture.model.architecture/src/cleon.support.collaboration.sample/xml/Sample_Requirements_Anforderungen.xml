@@ -375,7 +375,6 @@
 		<db:section xml:id="ea.f733c33e-0d78-11e6-9f44-9d0000bae4df">
 			<db:title>DR001_Driver_1</db:title>
 			
-			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
 				<db:col width="60%" />
@@ -393,7 +392,7 @@
 							<db:para>Beschreibung</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para></db:para>
+							<db:para>my Driver my Driver</db:para>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -418,7 +417,6 @@
 		</db:section>
 		<db:section xml:id="ea.fd3fc46b-0d78-11e6-9f44-9d0000bae4df">
 			<db:title>DR002_Driver_2</db:title>
-			
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
@@ -484,7 +482,7 @@
 						<db:para>Z002</db:para>
 					</db:td>
 					<db:td>
-						<db:para>Goal 1</db:para>
+						<db:para>Goal_1</db:para>
 					</db:td>
 					<db:td>
 						<db:para>
@@ -573,7 +571,7 @@
 		</db:informaltable>
 		
 		<db:section xml:id="ea.4acb2520-c997-11e5-b35b-8fb753dd0798">
-			<db:title>Z002_Goal 1</db:title>
+			<db:title>Z002_Goal_1</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
@@ -582,7 +580,7 @@
 					<db:thead>
 						<db:tr>
 							<db:th>Z002</db:th>
-							<db:th>Goal 1</db:th>
+							<db:th>Goal_1</db:th>
 							<db:th>Aligned</db:th>
 						</db:tr>
 					</db:thead>
@@ -592,7 +590,7 @@
 							<db:para>Definition</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Goal 1</db:para>
+							<db:para>Goal_1</db:para>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -929,7 +927,7 @@
 						<db:para>P004</db:para>
 					</db:td>
 					<db:td>
-						<db:para>Principle_A</db:para>
+						<db:para>A</db:para>
 					</db:td>
 					<db:td>
 						<db:para>
@@ -964,7 +962,7 @@
 		</db:informaltable>
 		
 		<db:section xml:id="ea.0a316ec1-bf87-11e5-a56a-35b34376b412">
-			<db:title>P004_Principle_A</db:title>
+			<db:title>P004_A</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
@@ -973,7 +971,7 @@
 					<db:thead>
 						<db:tr>
 							<db:th>P004</db:th>
-							<db:th>Principle_A</db:th>
+							<db:th>A</db:th>
 							<db:th>Aligned</db:th>
 						</db:tr>
 					</db:thead>
@@ -983,7 +981,7 @@
 							<db:para>Definition</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Principle_A</db:para>
+							<db:para>A</db:para>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -1288,7 +1286,7 @@
 							<db:para>AF100_sss (FEA)</db:para>
 						</db:td>
 						<db:td>
-							<db:para>Must have</db:para>
+							<db:para>Should have</db:para>
 						</db:td>				
 						<db:td>
 							<db:para>
@@ -1845,7 +1843,7 @@
 												<db:para>Formale Definition</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Das System muss fähig sein Rezepte zu auszudrucken</db:para>
+												<db:para>Das System sollte fähig sein Rezepte zu auszudrucken</db:para>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -1853,7 +1851,7 @@
 												<db:para>Priorität</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Must have</db:para>
+												<db:para>Should have</db:para>
 											</db:td>
 										</db:tr>
 										<db:tr>

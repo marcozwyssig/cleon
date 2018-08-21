@@ -8,7 +8,7 @@ public class IssuesPackage {
   public static final Resource Issue = new Resource("d0da468c-bdee-11e5-965a-07bc81ea9ca9");
   public static final Resource IssueGroup_issues = new Resource("d70cbb52-bdee-11e5-965a-07bc81ea9ca9");
   public static final Resource Issue_concerns = new Resource("2be4b435-bdef-11e5-965a-07bc81ea9ca9");
-  public static final Resource FunctionSpace_Issue = new Resource("bac4db20-c58a-11e5-aeea-1db9268c0ee9");
+  public static final Resource FunctionSpace_aE_Issues_Issue = new Resource("bac4db20-c58a-11e5-aeea-1db9268c0ee9");
   public static final Resource Issue_resolution = new Resource("38d69192-c58b-11e5-aeea-1db9268c0ee9");
   public static final Resource IssueGroup = new Resource("e33649ff-ce66-11e5-8041-092cb74c72f2");
   public static final Resource Issues_issueGroups = new Resource("ed6a225c-ce66-11e5-8041-092cb74c72f2");
@@ -37,4 +37,4 @@ public class IssuesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.issues,H/UwtS1pSEpxyqGHznQSPgAR4lA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.issues,o8tMyha6nnlIg+/n0saBoaD/mvk=] */

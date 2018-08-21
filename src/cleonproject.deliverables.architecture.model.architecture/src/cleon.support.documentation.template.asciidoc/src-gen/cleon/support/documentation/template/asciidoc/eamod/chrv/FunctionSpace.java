@@ -93,6 +93,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IRequirementsManagementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("57c59381-1d89-11e6-b329-f50056ef90a6")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IRequirementsManagementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementsManagementFunctionsImpl implements IRequirementsManagementFunctionsImpl {
+
+    public static final IRequirementsManagementFunctionsImpl INSTANCE = new RequirementsManagementFunctionsImpl();
+
+    private RequirementsManagementFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementsManagementFunctions {
+
+    private RequirementsManagementFunctions() {}
+
+  }
+
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f70a0f00-c90c-11e5-a64e-a5d84d8f1b45")
@@ -103,6 +128,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("6ae2843d-1230-11e8-b381-115accdaedda")
     public java.lang.String RenderChapter();
+
+    @IDynamicResourceExtension.MethodId("010d8d29-a542-11e8-8163-815a23011093")
+    public java.lang.String RenderRequirement();
 
   }
   
@@ -174,6 +202,46 @@ public class FunctionSpace {
 
   }
 
+  public static interface IGoalFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5a40bdab-15f2-11e6-be5f-0b820f273d17")
+    public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("f3911f89-a524-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions();
+
+  }
+  
+  public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("f3911f89-a524-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
+
+  }
+  
+  public static class GoalFunctionsImpl implements IGoalFunctionsImpl {
+
+    public static final IGoalFunctionsImpl INSTANCE = new GoalFunctionsImpl();
+
+    private GoalFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+      return null;
+    }
+
+  }
+  
+  public static class GoalFunctions {
+
+    private GoalFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+      return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).RenderDescriptions(goal);
+    }
+
+  }
+
   public static interface IPrinciplesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bdefce04-c9a3-11e5-96e7-e5a5eee26591")
@@ -199,6 +267,46 @@ public class FunctionSpace {
 
   }
 
+  public static interface IPrincipleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ab295548-15f2-11e6-be5f-0b820f273d17")
+    public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("e90c40b8-a524-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions();
+
+  }
+  
+  public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("e90c40b8-a524-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle);
+
+  }
+  
+  public static class PrincipleFunctionsImpl implements IPrincipleFunctionsImpl {
+
+    public static final IPrincipleFunctionsImpl INSTANCE = new PrincipleFunctionsImpl();
+
+    private PrincipleFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+      return null;
+    }
+
+  }
+  
+  public static class PrincipleFunctions {
+
+    private PrincipleFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+      return DynamicResourceUtil.invoke(IPrincipleFunctionsImpl.class, PrincipleFunctionsImpl.INSTANCE, principle).RenderDescriptions(principle);
+    }
+
+  }
+
   public static interface IDriversFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("011d6ab8-c9a5-11e5-96e7-e5a5eee26591")
@@ -221,6 +329,46 @@ public class FunctionSpace {
   public static class DriversFunctions {
 
     private DriversFunctions() {}
+
+  }
+
+  public static interface IDriverFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a42bf84f-a528-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("a2c0c721-a536-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions();
+
+  }
+  
+  public static interface IDriverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("a2c0c721-a536-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver);
+
+  }
+  
+  public static class DriverFunctionsImpl implements IDriverFunctionsImpl {
+
+    public static final IDriverFunctionsImpl INSTANCE = new DriverFunctionsImpl();
+
+    private DriverFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+      return null;
+    }
+
+  }
+  
+  public static class DriverFunctions {
+
+    private DriverFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+      return DynamicResourceUtil.invoke(IDriverFunctionsImpl.class, DriverFunctionsImpl.INSTANCE, driver).RenderDescriptions(driver);
+    }
 
   }
 
@@ -324,81 +472,31 @@ public class FunctionSpace {
 
   }
 
-  public static interface IRequirementsManagementFunctions extends IDynamicResourceExtension {
+  public static interface IMotivationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("57c59381-1d89-11e6-b329-f50056ef90a6")
+    @IDynamicResourceExtension.MethodId("2aced436-a529-11e8-a2c4-7500fc0b7ba9")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface IRequirementsManagementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMotivationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsManagementFunctionsImpl implements IRequirementsManagementFunctionsImpl {
+  public static class MotivationFunctionsImpl implements IMotivationFunctionsImpl {
 
-    public static final IRequirementsManagementFunctionsImpl INSTANCE = new RequirementsManagementFunctionsImpl();
+    public static final IMotivationFunctionsImpl INSTANCE = new MotivationFunctionsImpl();
 
-    private RequirementsManagementFunctionsImpl() {}
-
-  }
-  
-  public static class RequirementsManagementFunctions {
-
-    private RequirementsManagementFunctions() {}
-
-  }
-
-  public static interface IGoalFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5a40bdab-15f2-11e6-be5f-0b820f273d17")
-    public java.lang.String RenderContentElement();
+    private MotivationFunctionsImpl() {}
 
   }
   
-  public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class GoalFunctionsImpl implements IGoalFunctionsImpl {
+  public static class MotivationFunctions {
 
-    public static final IGoalFunctionsImpl INSTANCE = new GoalFunctionsImpl();
-
-    private GoalFunctionsImpl() {}
-
-  }
-  
-  public static class GoalFunctions {
-
-    private GoalFunctions() {}
-
-  }
-
-  public static interface IPrincipleFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ab295548-15f2-11e6-be5f-0b820f273d17")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class PrincipleFunctionsImpl implements IPrincipleFunctionsImpl {
-
-    public static final IPrincipleFunctionsImpl INSTANCE = new PrincipleFunctionsImpl();
-
-    private PrincipleFunctionsImpl() {}
-
-  }
-  
-  public static class PrincipleFunctions {
-
-    private PrincipleFunctions() {}
+    private MotivationFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,N1G5oMUojYWsNrQSx3S81/PDqYs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,ARiZ63olYVmYfYLbb0ABxknk0zY=] */

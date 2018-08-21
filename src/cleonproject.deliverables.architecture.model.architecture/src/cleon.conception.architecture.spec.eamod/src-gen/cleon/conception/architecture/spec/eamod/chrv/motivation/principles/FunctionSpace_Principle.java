@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Principle {
 
   /* Begin Protected Region [[4a0d89e2-c58d-11e5-aeea-1db9268c0ee9]] */
   
@@ -85,4 +85,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,lgH/7XwJQsj3Xgcy+TGBiHqEWys=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,Whvv/airFzX74IRV4iW6ie0XDXg=] */

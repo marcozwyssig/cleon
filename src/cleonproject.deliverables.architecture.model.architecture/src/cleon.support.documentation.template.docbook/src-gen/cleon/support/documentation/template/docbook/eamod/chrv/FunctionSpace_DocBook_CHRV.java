@@ -128,10 +128,16 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("6334a805-3f69-11e6-85d8-3328a679e82b")
     public java.lang.String RenderAttributes();
 
+    @IDynamicResourceExtension.MethodId("59275c16-a523-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions();
+
   }
   
   public static interface IDriverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("59275c16-a523-11e8-a2c4-7500fc0b7ba9")
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver);
+
   }
   
   public static class DriverFunctionsImpl implements IDriverFunctionsImpl {
@@ -140,11 +146,20 @@ public class FunctionSpace_DocBook_CHRV {
 
     private DriverFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+      return null;
+    }
+
   }
   
   public static class DriverFunctions {
 
     private DriverFunctions() {}
+
+    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+      return DynamicResourceUtil.invoke(IDriverFunctionsImpl.class, DriverFunctionsImpl.INSTANCE, driver).RenderDescriptions(driver);
+    }
 
   }
 
@@ -432,4 +447,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,2ZXsWpQGBjdYc7eSNlJ35lkhMhM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,Yn/j7cTagI/zKu0In2akYaDUsw0=] */

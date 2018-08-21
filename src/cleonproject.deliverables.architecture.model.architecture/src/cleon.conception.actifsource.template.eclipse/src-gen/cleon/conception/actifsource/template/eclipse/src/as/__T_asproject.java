@@ -1,7 +1,6 @@
 package cleon.conception.actifsource.template.eclipse.src.as;
 
 import ch.actifsource.util.Assert;
-
 import java.util.List;
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;

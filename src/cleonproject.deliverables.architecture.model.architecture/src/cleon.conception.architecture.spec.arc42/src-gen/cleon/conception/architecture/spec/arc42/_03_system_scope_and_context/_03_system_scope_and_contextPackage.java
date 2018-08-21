@@ -17,7 +17,6 @@ public class _03_system_scope_and_contextPackage {
   public static final Resource Flow_from = new Resource("fd479ae6-2803-11e6-b263-9db62e053e59");
   public static final Resource Flow_to = new Resource("fd479ae7-2803-11e6-b263-9db62e053e59");
   public static final Resource Flow_directionTo = new Resource("fd479ae8-2803-11e6-b263-9db62e053e59");
-  public static final Resource System_decompose = new Resource("1de8cf6f-498a-11e6-8d4d-09f3feb92353");
   public static final Resource __V_3_aE_System_aE_Scope_aE_and_aE_Context_system = new Resource("57fece11-498a-11e6-8d4d-09f3feb92353");
   public static final Resource FunctionSpace___V_3_aE_System_aE_Scope_aE_and_aE_Context = new Resource("bdee0003-4a71-11e6-b2ea-f94c9b140b76");
   
@@ -40,4 +39,4 @@ public class _03_system_scope_and_contextPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.arc42._03_system_scope_and_context,8/rvHW0MBqRoapAfB8M8QKIuQbM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.arc42._03_system_scope_and_context,VuofW+SULzfkgdfRZhHbM3V0QS4=] */

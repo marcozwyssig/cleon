@@ -22,3 +22,4 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ProjectSample_
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri F_higkeiten.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestSolutionArc42_Architecture.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri MyPlattform_Architecture.adoc

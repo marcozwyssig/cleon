@@ -117,11 +117,11 @@ public class Protocol extends DynamicResource implements IProtocol {
     
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public Protocol setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -209,7 +209,7 @@ public class Protocol extends DynamicResource implements IProtocol {
     // relations
     _acceptSingle(cleon.initialization.projectmanagement.spec.projectmanagement.protocols.javamodel.IAgenda.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_agenda, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocation.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.initialization.projectmanagement.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, visitor);
@@ -250,4 +250,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,fVVcBiAxcIQvF1N+5UAzS7FVkIk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,YyNCHFX5c631LMkSGg6mdeT+QBY=] */

@@ -32,11 +32,11 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public TestInfrastructures setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -64,7 +64,7 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.conception.testing.spec.testing._06_test_infrastructure.javamodel.ITester.class, cleon.conception.testing.spec.testing._06_test_infrastructure._06_test_infrastructurePackage.TestInfrastructures_testers, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -76,4 +76,4 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,BQC1EXEM1p7fCW3+1gkpCqPntm4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,riRJ2xNDsGTDptrZ2OvDlpIFaqA=] */

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="02e39a6b-a6fc-11e8-9c81-8bd68c62e435">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="1cbae62a-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="1cbabf18-a6fc-11e8-9c81-8bd68c62e435" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="02e39a6d-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="02e3c17f-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+    <object statement-guid="7e01da77-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="650d26b7-a6fc-11e8-9c81-8bd68c62e435" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1cbae62a-a6fc-11e8-9c81-8bd68c62e435">
+      <resource guid="1cbabf18-a6fc-11e8-9c81-8bd68c62e435">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1cbae629-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1cbb826d-a6fc-11e8-9c81-8bd68c62e435" type="literal">priority</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1cbba97e-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1cbba97f-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="1cbb826c-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="43a964fa-c4f3-11e5-b41d-5d67443850a2" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="1cbb0d3b-a6fc-11e8-9c81-8bd68c62e435" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="02e3c17e-a6fc-11e8-9c81-8bd68c62e435" type="literal">PriorityWeighting</object>
+  </predicate>
+</resource>
+

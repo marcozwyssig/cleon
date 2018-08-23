@@ -89,11 +89,11 @@ public class Planning extends DynamicResource implements IPlanning {
     
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public Planning setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -198,7 +198,7 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.constraints.javamodel.IConstraints.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_constraints, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoals.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_goals, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.initialposition.javamodel.IInitialposition.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_initialposition, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.organisation.javamodel.IOrganisation.class, cleon.initialization.projectmanagement.spec.planning.PlanningPackage.Planning_organisation, visitor);
@@ -241,4 +241,4 @@ public class Planning extends DynamicResource implements IPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,ev1ZVpUsic74+PUq6+D6MqGQJOU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,jG7G6nhENh+jYFWog7mtrYhn190=] */

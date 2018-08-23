@@ -28,6 +28,26 @@ public class Drivers extends DynamicResource implements IDrivers {
     super(resourceRepository, resource, IDrivers.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
   // relations
   
   @Override
@@ -41,22 +61,22 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+  public cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriterias selectCriterias() {
+    return _getSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriterias.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_criterias);
   }
 
-  public Drivers setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+  public Drivers setCriterias(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriterias criterias) {
+    _setSingle(cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_criterias, criterias);
     return this;
   }
     
   @Override
-  public cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoals selectGoal() {
-    return _getSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoals.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_goal);
+  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public Drivers setGoal(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoals goal) {
-    _setSingle(cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_goal, goal);
+  public Drivers setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -83,10 +103,13 @@ public class Drivers extends DynamicResource implements IDrivers {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IContext.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_context, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
-    _acceptSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoals.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_goal, visitor);
+    _acceptSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriterias.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_criterias, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ISource.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_sources, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -97,8 +120,8 @@ public class Drivers extends DynamicResource implements IDrivers {
     return _getToMeSingle(object.getRepository(), cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_context, object.getResource());
   }
   
-  public static cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers selectToMeGoal(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoals object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_goal, object.getResource());
+  public static cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers selectToMeCriterias(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriterias object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.Drivers_criterias, object.getResource());
   }
   
   public static cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IDrivers selectToMeSources(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ISource object) {
@@ -106,4 +129,4 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,JXlK1sNuxqeWet9WrnKnPQQ/AKk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,KatZpVuGHXx3XUJB45rtZEqbGcg=] */

@@ -1,7 +1,7 @@
 chcp 65001
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri arc42.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Chess_Architecture.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Analyse.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Simple_Analyse.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ReferenceDocumentWith___.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Readme.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Requirements_Anforderungen.adoc
@@ -23,3 +23,4 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri AP02_Workpacka
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri F_higkeiten.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestSolutionArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri MyPlattform_Architecture.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Requirements_Analyse.adoc

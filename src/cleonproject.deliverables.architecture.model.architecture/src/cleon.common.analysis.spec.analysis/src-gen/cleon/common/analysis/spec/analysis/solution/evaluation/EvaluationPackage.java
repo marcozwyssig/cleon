@@ -10,7 +10,7 @@ public class EvaluationPackage {
   public static final Resource SolutionsEvaluation_solution = new Resource("493a1f0f-3c1a-11e5-9962-cf3035adb922");
   public static final Resource Evaluation = new Resource("7f4013d4-3c1a-11e5-9962-cf3035adb922");
   public static final Resource SolutionsEvaluation_evaluation = new Resource("84beefd5-3c1a-11e5-9962-cf3035adb922");
-  public static final Resource Evaluation_goal = new Resource("91668800-3c1a-11e5-9962-cf3035adb922");
+  public static final Resource Evaluation_criteria = new Resource("91668800-3c1a-11e5-9962-cf3035adb922");
   public static final Resource Score = new Resource("b606e74b-3c1a-11e5-9962-cf3035adb922");
   public static final Resource Score___V_ = new Resource("b998e789-3c1a-11e5-9962-cf3035adb922");
   public static final Resource Score___X_ = new Resource("bc03cd0e-3c1a-11e5-9962-cf3035adb922");
@@ -43,4 +43,4 @@ public class EvaluationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.analysis.spec.analysis.solution.evaluation,v5NBAYZYkgPFYRAK5U5e6T9+3tU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.analysis.spec.analysis.solution.evaluation,uYQ6nuhC+sLZ2ubLI/sBwkzf9Tg=] */

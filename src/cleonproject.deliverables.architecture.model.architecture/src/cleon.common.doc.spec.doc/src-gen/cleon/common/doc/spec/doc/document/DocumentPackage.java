@@ -12,7 +12,6 @@ public class DocumentPackage {
   public static final Resource Document_imgDir = new Resource("72f80609-15f0-11e6-be5f-0b820f273d17");
   public static final Resource Document_properties = new Resource("9a8dc259-47f5-11e6-b388-8539f6ff7310");
   public static final Resource FunctionSpace_aE_Doc_AbstractDocument = new Resource("c87e760e-d984-11e6-b0a8-c7d78a5235d4");
-  public static final Resource AbstractDocument_documentElements = new Resource("9a4bf91f-1156-11e8-b31f-f740c5a551c0");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +32,4 @@ public class DocumentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.document,1EsfHRbsVu9wOqrOwBeUqYDPz8k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.document,1HwpyGSJy3i9XB1llXhZUw1r6Xs=] */

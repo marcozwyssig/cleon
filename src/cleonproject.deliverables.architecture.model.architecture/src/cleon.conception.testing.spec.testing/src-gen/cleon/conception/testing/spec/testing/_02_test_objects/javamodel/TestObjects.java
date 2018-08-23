@@ -32,11 +32,11 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public TestObjects setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -84,7 +84,7 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.conception.testing.spec.testing._02_test_objects.javamodel.ITestObject.class, cleon.conception.testing.spec.testing._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects, visitor);
     _acceptList(cleon.common.resources.spec.resources.outcomes.javamodel.IOutcomes.class, cleon.conception.testing.spec.testing._02_test_objects._02_test_objectsPackage.TestObjects_outcomes, visitor);
     _acceptMap(cleon.conception.testing.spec.testing._02_test_objects.javamodel.ITestObject.class, cleon.conception.testing.spec.testing._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects, visitor);
@@ -106,4 +106,4 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,Rk7aDvZzcypRPcxw9KmxNe3szcM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,eF4kuZ9+XxzWn1NCJahNZRq+DIo=] */

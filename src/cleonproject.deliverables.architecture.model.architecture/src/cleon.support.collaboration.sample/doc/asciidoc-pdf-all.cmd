@@ -1,7 +1,7 @@
 chcp 65001
 cmd /c bundle exec asciidoctor-pdf arc42.adoc
 cmd /c bundle exec asciidoctor-pdf Chess_Architecture.adoc
-cmd /c bundle exec asciidoctor-pdf Sample_Analyse.adoc
+cmd /c bundle exec asciidoctor-pdf Sample_Simple_Analyse.adoc
 cmd /c bundle exec asciidoctor-pdf ReferenceDocumentWith___.adoc
 cmd /c bundle exec asciidoctor-pdf Readme.adoc
 cmd /c bundle exec asciidoctor-pdf Sample_Requirements_Anforderungen.adoc
@@ -23,3 +23,4 @@ cmd /c bundle exec asciidoctor-pdf AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor-pdf F_higkeiten.adoc
 cmd /c bundle exec asciidoctor-pdf TestSolutionArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor-pdf MyPlattform_Architecture.adoc
+cmd /c bundle exec asciidoctor-pdf Sample_Requirements_Analyse.adoc

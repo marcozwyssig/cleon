@@ -80,11 +80,11 @@ public class RiskManagement extends DynamicResource implements IRiskManagement {
     
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public RiskManagement setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -148,7 +148,7 @@ public class RiskManagement extends DynamicResource implements IRiskManagement {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.steering.riskmanagement.assessments.javamodel.IAssessments.class, cleon.initialization.projectmanagement.spec.steering.riskmanagement.RiskmanagementPackage.RiskManagement_assessments, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskClassification.class, cleon.initialization.projectmanagement.spec.steering.riskmanagement.RiskmanagementPackage.RiskManagement_riskClassification, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.risks.javamodel.IRisks.class, cleon.initialization.projectmanagement.spec.steering.riskmanagement.RiskmanagementPackage.RiskManagement_risks, visitor);
@@ -171,4 +171,4 @@ public class RiskManagement extends DynamicResource implements IRiskManagement {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,1l8n+E/eMMxVa1kTof9HtF0r2r0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,Gr3LlAVNq3yyxAvkDTQneEZ9bGw=] */

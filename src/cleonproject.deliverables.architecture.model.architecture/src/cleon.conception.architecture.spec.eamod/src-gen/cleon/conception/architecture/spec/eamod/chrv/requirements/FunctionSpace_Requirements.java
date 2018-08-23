@@ -18,31 +18,6 @@ public class FunctionSpace_Requirements {
   /* End Protected Region   [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45]] */
 
 
-  public static interface IProjectSubjectAreaFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("775831cb-c90b-11e5-a64e-a5d84d8f1b45")
-    public List<cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetAllRequirements();
-
-  }
-  
-  public static interface IProjectSubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ProjectSubjectAreaFunctionsImpl implements IProjectSubjectAreaFunctionsImpl {
-
-    public static final IProjectSubjectAreaFunctionsImpl INSTANCE = new ProjectSubjectAreaFunctionsImpl();
-
-    private ProjectSubjectAreaFunctionsImpl() {}
-
-  }
-  
-  public static class ProjectSubjectAreaFunctions {
-
-    private ProjectSubjectAreaFunctions() {}
-
-  }
-
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9a0b681e-c90b-11e5-a64e-a5d84d8f1b45")
@@ -370,4 +345,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,3siAWDvlPvR/FhEbt6AxGIO2zfA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,KfRfFQ438g2bS6FzLQ64ylTa+DQ=] */

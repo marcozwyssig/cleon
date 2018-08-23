@@ -32,11 +32,11 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
   
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public TestExecutions setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -64,7 +64,7 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.conception.testing.spec.testing._09_test_execution._static.javamodel.IStaticTestExecution.class, cleon.conception.testing.spec.testing._09_test_execution._09_test_executionPackage.TestExecutions_staticTestExecutions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -76,4 +76,4 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,YPbJxAl/9x8JHsz+gvrfd1CJzok=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,EQnO4NdydA3KbIpEZK9XOglSyBk=] */

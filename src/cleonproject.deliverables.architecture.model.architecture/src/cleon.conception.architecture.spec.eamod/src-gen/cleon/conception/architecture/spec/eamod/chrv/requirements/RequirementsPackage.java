@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class RequirementsPackage {
   
   public static final Resource ProjectSubjectArea = new Resource("f92279cc-ff9a-11e4-ac0a-959b440f987f");
-  public static final Resource FunctionSpace_aE_Requirements_ProjectSubjectArea = new Resource("70ce7536-c90b-11e5-a64e-a5d84d8f1b45");
   public static final Resource FunctionSpace_aE_Requirements_Requirement = new Resource("93ec5439-c90b-11e5-a64e-a5d84d8f1b45");
   public static final Resource ProjectSubjectArea_subjectareas = new Resource("a75b4ed7-0c73-11e6-86c5-87a8b520dd59");
   public static final Resource FunctionSpace_aE_Requirements_FormalFunctionalRequirement = new Resource("3b9168d0-0dd1-11e6-a33d-238391a68770");
@@ -37,4 +36,4 @@ public class RequirementsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements,kIEyzDxn29FfXSv8zUHH+nJOldo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements,6unf6Hf9jbxfqr02dRFNoNz5cEo=] */

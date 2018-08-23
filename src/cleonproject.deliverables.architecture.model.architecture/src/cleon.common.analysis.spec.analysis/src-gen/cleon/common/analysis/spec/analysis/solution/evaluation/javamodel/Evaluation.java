@@ -42,12 +42,12 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   // relations
   
   @Override
-  public cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoal selectGoal() {
-    return _getSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoal.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_goal);
+  public cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteria selectCriteria() {
+    return _getSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteria.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_criteria);
   }
 
-  public Evaluation setGoal(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoal goal) {
-    _setSingle(cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_goal, goal);
+  public Evaluation setCriteria(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteria criteria) {
+    _setSingle(cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_criteria, criteria);
     return this;
   }
     
@@ -87,14 +87,14 @@ public class Evaluation extends DynamicResource implements IEvaluation {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_assessment, visitor);
     // relations
-    _acceptSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoal.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_goal, visitor);
+    _acceptSingle(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteria.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_criteria, visitor);
     _acceptSingle(cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IScore.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_score, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  public static java.util.List<cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation> selectToMeGoal(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IGoal object) {
-    return _getToMeList(object.getRepository(), cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_goal, object.getResource());
+  public static java.util.List<cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation> selectToMeCriteria(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteria object) {
+    return _getToMeList(object.getRepository(), cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation.class, cleon.common.analysis.spec.analysis.solution.evaluation.EvaluationPackage.Evaluation_criteria, object.getResource());
   }
   
   public static java.util.List<cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation> selectToMeScore(cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IScore object) {
@@ -102,4 +102,4 @@ public class Evaluation extends DynamicResource implements IEvaluation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,nmcVvounSphO4Nyqlv1J/BFQxCk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,Q60grQgJO6SRQP8oyAj6HOFAclQ=] */

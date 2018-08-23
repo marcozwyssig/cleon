@@ -32,11 +32,11 @@ public class StaticTestSpecification extends DynamicResource implements IStaticT
   
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
   public StaticTestSpecification setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -94,7 +94,7 @@ public class StaticTestSpecification extends DynamicResource implements IStaticT
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.document.DocumentPackage.AbstractDocument_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.conception.testing.spec.testing._02_test_objects.javamodel.ITestObject.class, cleon.conception.testing.spec.testing._07_testspecification._07_testspecificationPackage.TestSpecification_testObject, visitor);
     _acceptSingle(cleon.conception.testing.spec.testing._07_testspecification._static.javamodel.ITestQualityCriterias.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTestSpecification_testQualityCriteria, visitor);
@@ -113,4 +113,4 @@ public class StaticTestSpecification extends DynamicResource implements IStaticT
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fa8377ef-1cef-11e6-aaba-9db7fdc64d7e,UCzhq5p7z8yAFySzDWPD2tHGqgE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fa8377ef-1cef-11e6-aaba-9db7fdc64d7e,u5kXBmGZK4L+UoELw+KCqLg6SYE=] */

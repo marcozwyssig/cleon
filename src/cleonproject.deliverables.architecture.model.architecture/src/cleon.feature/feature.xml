@@ -467,8 +467,7 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       
    </requires>
-   <plugin id="cleon.common.analysis.spec.analysis.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
-   <plugin id="cleon.common.analysis.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
+   <plugin id="cleon.common.analysis.spec.analysis.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
    <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.common.resources.spec.calendar.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.common.resources.spec.language.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
@@ -492,6 +491,8 @@ of their respective owners.
    <plugin id="cleon.initialization.projectmanagement.template.tj3.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.initialization.projectmanagement.spec.hermes.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.initialization.projectmanagement.model.hermes.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
+   <plugin id="cleon.initialization.hermes.spec.projectfoundation.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
+   <plugin id="cleon.initialization.hermes.spec.projectmanagement.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
    <plugin id="cleon.conception.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.conception.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.conception.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
@@ -504,7 +505,8 @@ of their respective owners.
    <plugin id="cleon.conception.architecture.spec.eda.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.conception.architecture.spec.buildingblock.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.conception.architecture.spec.uml.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
-   <plugin id="cleon.conception.architecture.spec.devops.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
+   <plugin id="cleon.conception.architecture.spec.devops.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
+   <plugin id="cleon.conception.architecture.spec.analysis.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
    <plugin id="cleon.conception.organisation.spec.epm.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>   
    <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.3.12" unpack="false"/>

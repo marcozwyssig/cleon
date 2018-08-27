@@ -47,15 +47,15 @@ public class FunctionSpace_Analysis {
     @Override
     public java.lang.Double CalculateScore(final cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
       /* Begin Protected Region [[4925332e-3d0a-11e5-871f-6beac6a7c24b]] */
-      return solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> EvaluationFunctionsImpl.INSTANCE.CalculateScore(p)).sum();
+      return solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> p.extension(IEvaluationFunctions.class).CalculateScore()).sum();
       /* End Protected Region   [[4925332e-3d0a-11e5-871f-6beac6a7c24b]] */
     }
 
     @Override
     public java.lang.Double CalculateRelativeScore(final cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
       /* Begin Protected Region [[981f3e73-0547-11e6-adf9-af3c4dc80bc3]] */
-       	double max = solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> EvaluationFunctionsImpl.INSTANCE.CalculateMaxScore(p)).sum();
-       	double actual = solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> EvaluationFunctionsImpl.INSTANCE.CalculateScore(p)).sum();
+       	double max = solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> p.extension(IEvaluationFunctions.class).CalculateMaxScore()).sum();
+       	double actual = solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> p.extension(IEvaluationFunctions.class).CalculateScore()).sum();
        	return (actual * 100) / max;  
       /* End Protected Region   [[981f3e73-0547-11e6-adf9-af3c4dc80bc3]] */
     }
@@ -105,7 +105,7 @@ public class FunctionSpace_Analysis {
     @Override
     public java.lang.Double CalculateScore(final cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation evaluation) {
       /* Begin Protected Region [[52c3bb3b-3d08-11e5-871f-6beac6a7c24b]] */
-		double weighting = evaluation.selectCriteria().extension(ICriteriaAggregateFunctions.class).GetWeighting();
+		double weighting = evaluation.selectCriteria().extension(IAbstractCriteriaFunctions.class).GetWeighting();
 		double score = Double.parseDouble(evaluation.selectScore().selectName());
 		return (weighting / 100) * score; 
       /* End Protected Region   [[52c3bb3b-3d08-11e5-871f-6beac6a7c24b]] */
@@ -114,7 +114,7 @@ public class FunctionSpace_Analysis {
     @Override
     public java.lang.Double CalculateMaxScore(final cleon.common.analysis.spec.analysis.solution.evaluation.javamodel.IEvaluation evaluation) {
       /* Begin Protected Region [[da1f4d11-0547-11e6-adf9-af3c4dc80bc3]] */
-		double weighting = evaluation.selectCriteria().extension(ICriteriaAggregateFunctions.class).GetWeighting();
+		double weighting = evaluation.selectCriteria().extension(IAbstractCriteriaFunctions.class).GetWeighting();
 		return (weighting / 100) * 5;  
       /* End Protected Region   [[da1f4d11-0547-11e6-adf9-af3c4dc80bc3]] */
     }
@@ -161,7 +161,7 @@ public class FunctionSpace_Analysis {
     @Override
     public java.lang.Integer GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
       /* Begin Protected Region [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
-      return criteriaAggregate.selectCriterias().stream().mapToInt(x -> x.extension(ICriteriaAggregateFunctions.class).GetWeighting()).sum();
+      return criteriaAggregate.selectCriterias().stream().mapToInt(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
       /* End Protected Region   [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
     }
 

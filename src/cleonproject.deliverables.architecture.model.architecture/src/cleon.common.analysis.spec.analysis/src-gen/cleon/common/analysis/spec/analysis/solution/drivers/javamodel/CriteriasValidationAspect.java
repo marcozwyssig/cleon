@@ -8,6 +8,7 @@ import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
+import cleon.common.analysis.spec.analysis.solution.FunctionSpace_Analysis.IAbstractCriteriaFunctions;
 import cleon.common.analysis.spec.analysis.solution.FunctionSpace_Analysis.ICriteriaAggregateFunctions;
 import cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage;
 
@@ -28,7 +29,7 @@ public class CriteriasValidationAspect implements IResourceValidationAspect {
 				return;
 			}
 			
-			int sum = criteriaComposite.selectCriterias().stream().mapToInt(x -> x.extension(ICriteriaAggregateFunctions.class).GetWeighting()).sum();
+			int sum = criteriaComposite.selectCriterias().stream().mapToInt(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
 			if( sum != 100)
 			{
 				String errormessage = String.format("The sum of weighting must be 100%% over all goals (actual sum is %1$d%%)", sum);

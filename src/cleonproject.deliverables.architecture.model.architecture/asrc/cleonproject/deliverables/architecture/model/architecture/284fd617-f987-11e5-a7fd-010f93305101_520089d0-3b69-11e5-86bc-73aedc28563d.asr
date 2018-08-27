@@ -14,6 +14,7 @@
                   <owns predicate="c1a1d31a-b884-11e5-a463-ff45aa361315">
                     <resource statement-guid="d407269c-1cdc-11e6-8e4f-e37ebca0f18f" type="resource" guid="d406ff89-1cdc-11e6-8e4f-e37ebca0f18f" />
                     <resource statement-guid="cec16767-5cfe-11e8-a32e-7ba1b741dee8" type="resource" guid="cebecf54-5cfe-11e8-a32e-7ba1b741dee8" />
+                    <resource statement-guid="0c0ad6e1-a9e2-11e8-a2bd-c9a0552e6a09" type="resource" guid="0c099e5e-a9e2-11e8-a2bd-c9a0552e6a09" />
                   </owns>
                 </resource>
               </owns>
@@ -57,7 +58,7 @@
           <object statement-guid="2403ef1d-1cd8-11e6-8e4f-e37ebca0f18f" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="248ddfa0-1cd8-11e6-8e4f-e37ebca0f18f" type="literal">_05_buildingblockview</object>
+          <object statement-guid="248ddfa0-1cd8-11e6-8e4f-e37ebca0f18f" type="literal">system</object>
         </predicate>
         <predicate guid="c1a1d31a-b884-11e5-a463-ff45aa361315">
           <object statement-guid="6b7b71df-3c6e-11e6-aafa-bd565efc0ead">
@@ -104,6 +105,16 @@
                                 </predicate>
                                 <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                                   <object statement-guid="cf608d98-5cfe-11e8-a32e-7ba1b741dee8" type="literal">nature</object>
+                                </predicate>
+                              </resource>
+                            </object>
+                            <object statement-guid="0c0ad6e1-a9e2-11e8-a2bd-c9a0552e6a09">
+                              <resource guid="0c099e5e-a9e2-11e8-a2bd-c9a0552e6a09">
+                                <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="0c09ec80-a9e2-11e8-a2bd-c9a0552e6a09" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                                </predicate>
+                                <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                                  <object statement-guid="0c7b24e2-a9e2-11e8-a2bd-c9a0552e6a09" type="literal">diagram</object>
                                 </predicate>
                               </resource>
                             </object>

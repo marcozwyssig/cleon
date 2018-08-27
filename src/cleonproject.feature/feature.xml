@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleonproject" label="cleonproject" version="0.2.0">
+<feature id="cleonproject" label="cleonproject" version="0.2.1">
    <description url="http://www.zwyssig.info/description">
     The System 
    </description>
@@ -467,7 +467,7 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       
    </requires>
-   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.2.0" unpack="false"/>   
-   <plugin id="cleonproject.deliverables.release_1.model.project.builtin" download-size="0" install-size="0" version="0.2.0" unpack="false"/>   
+   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.2.1" unpack="false"/>   
+   <plugin id="cleonproject.deliverables.release_1.model.project.builtin" download-size="0" install-size="0" version="0.2.1" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,f09246ab-f986-11e5-a7fd-010f93305101,Hash] -->

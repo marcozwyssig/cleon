@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.planning.scope.workpackage.b
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IWorkItem extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.resources.spec.resources.priority.javamodel.IPriorityAware, ch.actifsource.core.javamodel.INamedResource {
+public interface IWorkItem extends ch.actifsource.core.javamodel.INamedResource, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.resources.spec.resources.priority.javamodel.IPriorityAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4330cc63-ff9c-11e4-ac0a-959b440f987f");
   
@@ -16,4 +16,4 @@ public interface IWorkItem extends cleon.common.resources.spec.resources.id.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,RzuLy6uKLZZg6JvksDkAaIgamLg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,bjuvbpI4DJm84AOd8C06Wapc81I=] */

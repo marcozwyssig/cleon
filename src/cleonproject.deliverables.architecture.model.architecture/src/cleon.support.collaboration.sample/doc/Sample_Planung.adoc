@@ -78,7 +78,13 @@
 
 
 
-
+[cols="5,5,10", options="header"]
+|===
+|Name|Abkürzung|Beschreibung
+|Simple 1
+|short 
+|
+|===
 
 
 === Lieferergebnisse
@@ -96,6 +102,13 @@
 |Verantwortlicher|Patrick Müller
 |===
 
+[cols="5,10a" options="header"]
+.Lieferobjekt Abhängigkeiten
+|==============================
+|Abhängigkeit|Begründung
+|LE02 Module_B
+|
+|==============================
 
 
 ==== LE02 Module_B
@@ -2132,7 +2145,9 @@ Sprint 12 (Ende)
 
 === Meilensteine
 
-4.9E-324
+
+
+Berechnete Velocity (alle Sprints): 0.0
 
 ==== Konzeptphase
 

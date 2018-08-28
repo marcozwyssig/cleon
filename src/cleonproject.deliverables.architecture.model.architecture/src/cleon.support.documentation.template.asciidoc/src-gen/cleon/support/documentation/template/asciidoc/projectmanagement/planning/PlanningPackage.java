@@ -21,6 +21,7 @@ public class PlanningPackage {
   public static final Resource FunctionSpace_aE_Planning_Workpackage = new Resource("ee9540ef-1e08-11e7-882a-cdd93aa926f8");
   public static final Resource FunctionSpace_aE_Planning_WorkspaceGoals = new Resource("07ecae62-1e09-11e7-882a-cdd93aa926f8");
   public static final Resource FunctionSpace_aE_Planning_Scope = new Resource("8810d889-3eb4-11e7-a89c-83d57940f0e3");
+  public static final Resource FunctionSpace_aE_Planning_Deliverables = new Resource("f2c32ea0-aaaa-11e8-b25a-7dd9f85a27ad");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +42,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,H/k+3Kuz55bqnPkAf4pAOp0dNIA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,wGrN5JGdQHmYwbE+ODCn+/7E4qY=] */

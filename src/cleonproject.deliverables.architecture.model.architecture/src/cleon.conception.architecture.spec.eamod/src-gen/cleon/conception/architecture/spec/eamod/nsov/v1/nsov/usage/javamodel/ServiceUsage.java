@@ -28,6 +28,17 @@ public class ServiceUsage extends DynamicResource implements IServiceUsage {
     super(resourceRepository, resource, IServiceUsage.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName);
+  }
+    
+  public void setShortName(java.lang.String shortName) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, shortName);
+  }
+
   // relations
   
   @Override
@@ -83,6 +94,8 @@ public class ServiceUsage extends DynamicResource implements IServiceUsage {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.availability.javamodel.IAvailabilityClassification.class, cleon.conception.architecture.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceUsage_availabilityClassification, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IConfidentialityClassification.class, cleon.conception.architecture.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceUsage_confidentialityClassification, visitor);
@@ -106,4 +119,4 @@ public class ServiceUsage extends DynamicResource implements IServiceUsage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,bl6t+dGy3n3fBSVw67b9YuiTrxc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,fMZZs0YDdNE7oEaBF0YKOKusxYM=] */

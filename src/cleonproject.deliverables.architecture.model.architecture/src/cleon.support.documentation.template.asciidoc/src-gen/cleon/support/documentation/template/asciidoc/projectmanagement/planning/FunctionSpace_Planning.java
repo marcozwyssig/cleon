@@ -464,6 +464,31 @@ public class FunctionSpace_Planning {
 
   }
 
+  public static interface IDeliverablesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fbe151b5-aaaa-11e8-b25a-7dd9f85a27ad")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDeliverablesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeliverablesFunctionsImpl implements IDeliverablesFunctionsImpl {
+
+    public static final IDeliverablesFunctionsImpl INSTANCE = new DeliverablesFunctionsImpl();
+
+    private DeliverablesFunctionsImpl() {}
+
+  }
+  
+  public static class DeliverablesFunctions {
+
+    private DeliverablesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,vpbxS1+5B8XTE2EKY7VXjBhK8XQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,y3hi6Nzr1nu16g55Wzc4/NL9ptI=] */

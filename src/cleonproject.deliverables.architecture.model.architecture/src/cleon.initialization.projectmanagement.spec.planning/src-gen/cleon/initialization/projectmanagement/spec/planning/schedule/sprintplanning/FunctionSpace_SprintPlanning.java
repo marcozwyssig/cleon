@@ -275,7 +275,7 @@ public class FunctionSpace_SprintPlanning {
         }
         if( sprintCount == 0)
         {
-        	return Double.MIN_VALUE;
+        	return 0.0;
         }
  
         

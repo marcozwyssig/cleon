@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.7.1">
-<title>My Testing</title>
+<title>Chess_Architecture</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -430,16 +430,240 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
-<h1>My Testing</h1>
+<h1>Chess_Architecture</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Inhaltsverzeichnis</div>
+<ul class="sectlevel1">
+<li><a href="#_einführung_und_ziele">1. Einführung und Ziele</a>
+<ul class="sectlevel2">
+<li><a href="#_qualitygoals">1.1. QualityGoals</a></li>
+</ul>
+</li>
+<li><a href="#_bausteinsicht">2. Bausteinsicht</a>
+<ul class="sectlevel2">
+<li><a href="#_chess">2.1. Chess</a></li>
+</ul>
+</li>
+<li><a href="#_verteilsicht">3. Verteilsicht</a></li>
+<li><a href="#_randbedingungen">4. Randbedingungen</a></li>
+<li><a href="#_kontextabgrenzung">5. Kontextabgrenzung</a>
+<ul class="sectlevel2">
+<li><a href="#_fachlicher_kontext">5.1. Fachlicher Kontext</a></li>
+<li><a href="#_technischer_kontext">5.2. Technischer Kontext</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="_einführung_und_ziele">1. Einführung und Ziele</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_qualitygoals">1.1. QualityGoals</h3>
 
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bausteinsicht">2. Bausteinsicht</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_chess">2.1. Chess</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verteilsicht">3. Verteilsicht</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_randbedingungen">4. Randbedingungen</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kontextabgrenzung">5. Kontextabgrenzung</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.</p>
+</div>
+<div class="paragraph">
+<p>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Table</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>World</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="_fachlicher_kontext">5.1. Fachlicher Kontext</h3>
+<div class="paragraph">
+<p>In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="png" width="207" height="218">
+</div>
+</div>
+<div class="paragraph">
+<p>Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Player A</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Gugeli</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 33.3336%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Von</th>
+<th class="tableblock halign-left valign-top">Zu</th>
+<th class="tableblock halign-left valign-top">Interaktion</th>
+<th class="tableblock halign-left valign-top">Richtung</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Player A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chess</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">definiert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8592;-</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>asdfadf</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Player A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FTP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ruft</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&#8592;-</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ddd</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_technischer_kontext">5.2. Technischer Kontext</h3>
+<div class="paragraph">
+<p>In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="data:image/png;base64,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" alt="png" width="161" height="171">
+</div>
+</div>
+<div class="paragraph">
+<p>Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FTP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>dsfasdf</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 33.3336%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Von</th>
+<th class="tableblock halign-left valign-top">Zu</th>
+<th class="tableblock halign-left valign-top">Interaktion</th>
+<th class="tableblock halign-left valign-top">Richtung</th>
+<th class="tableblock halign-left valign-top">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FTP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Chess</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ssss</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-&#8594;</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>ddd</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-28 17:07:21 W. Europe Daylight Time
+Last updated 2018-08-28 17:07:20 W. Europe Daylight Time
 </div>
 </div>
 </body>

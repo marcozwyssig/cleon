@@ -257,6 +257,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("c877351c-346b-11e7-a759-67451fcdb3cc")
     public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint GetSprint();
 
+    @IDynamicResourceExtension.MethodId("4d13ad79-aace-11e8-b25a-7dd9f85a27ad")
+    public List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem> GetAllWorkItems();
+
   }
   
   public static interface IWorkItemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -474,6 +477,9 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("287482dd-3433-11e7-9486-85e29952984a")
     public java.lang.Double SumOpenEstimates();
 
+    @IDynamicResourceExtension.MethodId("667fb415-aace-11e8-b25a-7dd9f85a27ad")
+    public List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IWorkItem> GetAllWorkItems();
+
   }
   
   public static interface IWorkItemBaseFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -570,4 +576,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,NZg3qK2dluyHGOGA4pu5AQMgYX8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,VPD+Shp+EFZnA9+wCSYYUkX3xZk=] */

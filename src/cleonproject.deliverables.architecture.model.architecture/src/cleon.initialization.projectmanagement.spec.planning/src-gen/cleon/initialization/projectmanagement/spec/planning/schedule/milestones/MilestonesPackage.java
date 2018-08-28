@@ -15,16 +15,16 @@ public class MilestonesPackage {
   public static final Resource Releases_daysPerSprint = new Resource("94fb41ad-c38c-11e5-a9c9-53d676410f3e");
   public static final Resource SprintPlanningAware_plannedStartSprint = new Resource("31169152-217d-11e6-be87-0569601bbb52");
   public static final Resource SprintPlanningAware_plannedEndSprint = new Resource("39460f5b-217d-11e6-be87-0569601bbb52");
-  public static final Resource FunctionSpace_Releases = new Resource("47d9a8fa-2f1e-11e6-8bd9-a77b8d2a3a0e");
-  public static final Resource FunctionSpace_Sprint = new Resource("7cede79a-349b-11e6-8839-1f6631cc77ac");
+  public static final Resource FunctionSpace_aE_Milestones_Releases = new Resource("47d9a8fa-2f1e-11e6-8bd9-a77b8d2a3a0e");
+  public static final Resource FunctionSpace_aE_Milestones_Sprint = new Resource("7cede79a-349b-11e6-8839-1f6631cc77ac");
   public static final Resource SprintPlanningAware = new Resource("6578c5b7-c110-11e6-8f58-ad3c6ee7602f");
   public static final Resource Release_plannedEndWorkpackages = new Resource("f9f2cceb-c762-11e6-9515-3d3c9e104ed6");
-  public static final Resource FunctionSpace_Release = new Resource("5c1b5afb-d66b-11e6-ad1f-c967b4caaf09");
+  public static final Resource FunctionSpace_aE_Milestones_Release = new Resource("5c1b5afb-d66b-11e6-ad1f-c967b4caaf09");
   public static final Resource Release_plannedStartWorkpackages = new Resource("1820b7d5-d66f-11e6-ad1f-c967b4caaf09");
   public static final Resource Phase = new Resource("bcd1f820-d719-11e6-a422-8b5491da3f30");
   public static final Resource Phase_releases = new Resource("d42138c2-d719-11e6-a422-8b5491da3f30");
-  public static final Resource FunctionSpace_Phase = new Resource("f3727ea1-d719-11e6-a422-8b5491da3f30");
-  public static final Resource FunctionSpace_SprintPlanningAware = new Resource("5761a8a3-3fc3-11e7-9016-2b91d722d429");
+  public static final Resource FunctionSpace_aE_Milestones_Phase = new Resource("f3727ea1-d719-11e6-a422-8b5491da3f30");
+  public static final Resource FunctionSpace_aE_Milestones_SprintPlanningAware = new Resource("5761a8a3-3fc3-11e7-9016-2b91d722d429");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +45,4 @@ public class MilestonesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule.milestones,fvepyZ22IJmLF1JhV77vX7de/e8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule.milestones,mYiC7UTczbTnDQBcwmWaPkuta6o=] */

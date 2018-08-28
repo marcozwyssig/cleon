@@ -12,7 +12,7 @@ import java.util.*;
 import cleon.common.resources.spec.calendar.FunctionSpace.DayFunctions;
 /* End Protected Region   [[2143ad53-b468-11e5-a3f4-497fd75158dc,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_ProjectManagement {
 
   /* Begin Protected Region [[2143ad53-b468-11e5-a3f4-497fd75158dc]] */
   
@@ -282,4 +282,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,0R7SZtzix2qeU3pnnRjKlGsyehY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,6G/guPRM4s2puwm8OjdJTBQ8dtk=] */

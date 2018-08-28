@@ -24,13 +24,14 @@ public class SprintplanningPackage {
   public static final Resource PersonCapacity_capacityPerDay = new Resource("bd423af2-c38c-11e5-a9c9-53d676410f3e");
   public static final Resource CapacityPerDay_day = new Resource("d0de8575-c38c-11e5-a9c9-53d676410f3e");
   public static final Resource CapacityPerDay_capacity = new Resource("d8bcaf45-c38c-11e5-a9c9-53d676410f3e");
-  public static final Resource FunctionSpace_SprintBacklog = new Resource("64d1b184-c4ca-11e5-8558-4b8affb7767c");
-  public static final Resource FunctionSpace_SprintCapacity = new Resource("7ceca75a-c4ca-11e5-8558-4b8affb7767c");
-  public static final Resource FunctionSpace_PersonCapacity = new Resource("8ac3e535-c4ca-11e5-8558-4b8affb7767c");
+  public static final Resource FunctionSpace_aE_SprintPlanning_SprintBacklog = new Resource("64d1b184-c4ca-11e5-8558-4b8affb7767c");
+  public static final Resource FunctionSpace_aE_SprintPlanning_SprintCapacity = new Resource("7ceca75a-c4ca-11e5-8558-4b8affb7767c");
+  public static final Resource FunctionSpace_aE_SprintPlanning_PersonCapacity = new Resource("8ac3e535-c4ca-11e5-8558-4b8affb7767c");
   public static final Resource SprintGoal_goalDescriptions = new Resource("37823e37-cb76-11e5-bc87-a1fadf56ded8");
+  public static final Resource FunctionSpace_aE_SprintPlanning_CapacityPerDay = new Resource("6494b557-cb8e-11e5-b911-69bd21f5af67");
   public static final Resource PersonCapacity_productivity = new Resource("9c5603f8-cb90-11e5-b911-69bd21f5af67");
   public static final Resource SprintPlanning_team = new Resource("c05660e8-2eea-11e6-8bd9-a77b8d2a3a0e");
-  public static final Resource FunctionSpace_SprintPlannings = new Resource("042af25b-33b1-11e6-94cd-fbf6c8ccd08d");
+  public static final Resource FunctionSpace_aE_SprintPlanning_SprintPlannings = new Resource("042af25b-33b1-11e6-94cd-fbf6c8ccd08d");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +52,4 @@ public class SprintplanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning,NjEsZcrBSNxHVs/XPBjeobyUTkQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning,0RKZQ+zNNPh/PH/afLTyR3v+AS4=] */

@@ -12,7 +12,7 @@ import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.
 import cleon.common.resources.spec.calendar.FunctionSpace.DayFunctionsImpl;
 /* End Protected Region   [[7833baaa-349b-11e6-8839-1f6631cc77ac,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Milestones {
 
   /* Begin Protected Region [[7833baaa-349b-11e6-8839-1f6631cc77ac]] */
   
@@ -106,6 +106,9 @@ public class FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("6986f5c4-d71b-11e6-a422-8b5491da3f30")
     public List<cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IRelease> GetMilestoneList();
+
+    @IDynamicResourceExtension.MethodId("b2800c16-aaa2-11e8-b25a-7dd9f85a27ad")
+    public java.lang.String GetVelocity();
 
   }
   
@@ -286,4 +289,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,f3oAahIh5AwSCvzgVw1Cb/wcqI0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,Fh6Z0vyGmgSAagMpu5MJsN73ZZU=] */

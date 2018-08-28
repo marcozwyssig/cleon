@@ -10,7 +10,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[f1ec1850-bc86-11e6-b169-a12bde5a1c7c,imports]] */
 import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.*;
 import java.util.ArrayList;
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.FunctionSpace.IReleasesFunctions;
+import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.FunctionSpace_Milestones.IReleasesFunctions;
 /* End Protected Region   [[f1ec1850-bc86-11e6-b169-a12bde5a1c7c,imports]] */
 
 public class FunctionSpace {

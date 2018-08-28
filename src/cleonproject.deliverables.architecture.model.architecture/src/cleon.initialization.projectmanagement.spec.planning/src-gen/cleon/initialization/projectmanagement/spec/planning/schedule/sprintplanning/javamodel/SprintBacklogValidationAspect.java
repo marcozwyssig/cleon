@@ -10,7 +10,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint;
-import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.FunctionSpace.ISprintBacklogFunctions;
+import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.FunctionSpace_SprintPlanning.ISprintBacklogFunctions;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage;
 
 public class SprintBacklogValidationAspect implements IResourceValidationAspect {

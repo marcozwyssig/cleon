@@ -4,6 +4,132 @@
 	
 	
 	<db:chapter>
+		<db:title>Ziele</db:title>
+		
+		
+		
+		<db:section>
+			<db:title>Projektziele</db:title>
+			
+			
+			<db:para>In der nachfolgenden Tabelle werden die Ziele des Projekts aufgeführt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nummer</db:th>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+				</db:tbody>
+			</db:informaltable>
+			<db:section>
+				<db:title>Fähigkeiten</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle Fähigkeiten aufgeführt, welche durch das Projekt produziert werden. Die Produktion der Fähigkeiten hat unterschiedliche Ausprägungen. Eine Fähigkeit kann entweder konzipiert, realisiert oder eingeführt werden.</db:para> 
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Name</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			<db:section>
+				<db:title>Lieferobjekte</db:title>
+				<db:para>In der nachfolgenden Tabelle werden die Lieferobjekte aufgelistet, welche durch das Projekt konzipiert, realisiert oder eingeführt werden. Die Lieferobjekte können bestehende Funktionalitäten in der bestehenden Systemlandschaft erweitern oder es werden neue
+				Funktionalitäten eingeführt.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Nummer</db:th>
+							<db:th>Name</db:th>
+							<db:th>Verfügbarkeit</db:th>	
+							<db:th>Klassifikationsstufe</db:th>							
+							<db:th>Fähigkeiten</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+				
+			</db:section>
+			
+		</db:section>
+		<db:section>
+			<db:title>Systemziele</db:title>
+			
+			
+			<db:para>In der nachfolgenden Tabelle werden die Ziele des Projekts aufgeführt.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nummer</db:th>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+				</db:tbody>
+			</db:informaltable>
+			<db:section>
+				<db:title>Fähigkeiten</db:title>
+				<db:para>In der nachfolgenden Tabelle werden alle Fähigkeiten aufgeführt, welche durch das Projekt produziert werden. Die Produktion der Fähigkeiten hat unterschiedliche Ausprägungen. Eine Fähigkeit kann entweder konzipiert, realisiert oder eingeführt werden.</db:para> 
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Name</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			<db:section>
+				<db:title>Lieferobjekte</db:title>
+				<db:para>In der nachfolgenden Tabelle werden die Lieferobjekte aufgelistet, welche durch das Projekt konzipiert, realisiert oder eingeführt werden. Die Lieferobjekte können bestehende Funktionalitäten in der bestehenden Systemlandschaft erweitern oder es werden neue
+				Funktionalitäten eingeführt.</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />		
+					<db:col width="40%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Nummer</db:th>
+							<db:th>Name</db:th>
+							<db:th>Verfügbarkeit</db:th>	
+							<db:th>Klassifikationsstufe</db:th>							
+							<db:th>Fähigkeiten</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+					</db:tbody>
+				</db:informaltable>	
+				
+			</db:section>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter>
 		<db:title>Zeitplan</db:title>
 		
 		

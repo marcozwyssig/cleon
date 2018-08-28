@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.7.1">
-<title>Sample_Architecture</title>
+<title>arc42</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -430,40 +430,88 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 </head>
-<body class="article toc2 toc-left">
+<body class="article">
 <div id="header">
-<h1>Sample_Architecture</h1>
-<div id="toc" class="toc2">
-<div id="toctitle">Inhaltsverzeichnis</div>
-<ul class="sectlevel1">
-<li><a href="#_bausteinsicht">1. Bausteinsicht</a>
-<ul class="sectlevel2">
-<li><a href="#_sample">1.1. Sample</a></li>
-</ul>
-</li>
-<li><a href="#_kontextabgrenzung">2. Kontextabgrenzung</a></li>
-</ul>
-</div>
+<h1>arc42</h1>
 </div>
 <div id="content">
-<div class="sect1">
-<h2 id="_bausteinsicht">1. Bausteinsicht</h2>
+<div id="preamble">
 <div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This version of the template contains some help and explanations.
+It is used for familiarization with arc42 and the understanding of the concepts.
+For documentation of your own system you use better the <em>plain</em> version.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction_and_goals">1. Introduction and Goals</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
+This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</p>
+</div>
 <div class="sect2">
-<h3 id="_sample">1.1. Sample</h3>
+<h3 id="_test">1.1. Test</h3>
 
 </div>
+<div class="sect2">
+<h3 id="_requirements_overview">1.2. Requirements Overview</h3>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">arc42help</div>
+<div class="paragraph">
+<p>Short description of the functional requirements.
+Digest (or abstract) of the requirements documents.
+Reference to complete requirements documents (incl. version identification and location).
+.Contents
+A compact summary of the functional environment of the system. Answers the following questions (at least approximately):</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What happens in the systems environment?</p>
+</li>
+<li>
+<p>Why should the system exist?</p>
+</li>
+<li>
+<p>Why is the system valuable or important?</p>
+</li>
+<li>
+<p>Which problems does the system solve?</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Motivation</div>
+<p>From the point of view of the end users a system is created or modified to improve execution of a business activity.
+This essential architecture driver must not be neglected even though the quality of an architecture is mostly judged by its level of fulfillment of non-functional requirements.
+.Form
+Short textual description, probably in tabular use-case format.
+The business context should in any case refer to the corresponding requirements documents.
+.Examples
+Short descriptions of the most important:</p>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_kontextabgrenzung">2. Kontextabgrenzung</h2>
+<h2 id="_architecture_constraints">2. Architecture Constraints</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>In diesem Kapitel wird der Kontext betrachteten Systems (Sample) aufgeführt.</p>
-</div>
-<div class="paragraph">
-<p>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 33.3333%;">
@@ -472,16 +520,49 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Beschreibung</th>
+<th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Urs
+ Meister</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Beschreibung für Urs</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"></div></td>
+</tr>
+</tbody>
 </table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Text 1</p>
+</li>
+<li>
+<p>Text 2</p>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-28 11:20:23 W. Europe Daylight Time
+Last updated 2018-08-28 11:20:22 W. Europe Daylight Time
 </div>
 </div>
 </body>

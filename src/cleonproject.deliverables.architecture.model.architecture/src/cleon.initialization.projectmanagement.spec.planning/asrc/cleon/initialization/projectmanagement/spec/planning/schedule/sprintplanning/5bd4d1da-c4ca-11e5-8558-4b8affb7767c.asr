@@ -199,12 +199,36 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="c0c0306f-aaa0-11e8-b25a-7dd9f85a27ad" type="resource" guid="6494b557-cb8e-11e5-b911-69bd21f5af67">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="67f76860-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="67f7685c-cb8e-11e5-b911-69bd21f5af67">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="7138cae5-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="7138cae2-cb8e-11e5-b911-69bd21f5af67" />
+          </owns>
+        </resource>
+        <resource statement-guid="a5cf03ac-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="a5cc92a3-cb8e-11e5-b911-69bd21f5af67">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="a5cc92aa-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="a5cc92a4-cb8e-11e5-b911-69bd21f5af67" />
+          </owns>
+        </resource>
+        <resource statement-guid="aca4959a-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="aca49591-cb8e-11e5-b911-69bd21f5af67">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="aca49598-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="aca49592-cb8e-11e5-b911-69bd21f5af67" />
+          </owns>
+        </resource>
+        <resource statement-guid="f0bb2a76-0d63-11e6-9f44-9d0000bae4df" type="resource" guid="f0ba8e2d-0d63-11e6-9f44-9d0000bae4df">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="f0ba8e35-0d63-11e6-9f44-9d0000bae4df" type="resource" guid="f0ba8e2e-0d63-11e6-9f44-9d0000bae4df" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="5bd4d1dc-c4ca-11e5-8558-4b8affb7767c" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="5bd742dd-c4ca-11e5-8558-4b8affb7767c" type="literal">FunctionSpace</object>
+    <object statement-guid="5bd742dd-c4ca-11e5-8558-4b8affb7767c" type="literal">FunctionSpace_SprintPlanning</object>
   </predicate>
   <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
     <object statement-guid="64d1b187-c4ca-11e5-8558-4b8affb7767c">
@@ -916,6 +940,130 @@
         </predicate>
         <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
           <object statement-guid="048f597f-33b1-11e6-94cd-fbf6c8ccd08d" type="resource" guid="b643c029-c009-11e5-a165-d34765931e10" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c0c0306f-aaa0-11e8-b25a-7dd9f85a27ad">
+      <resource guid="6494b557-cb8e-11e5-b911-69bd21f5af67">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6494b559-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="67f76860-cb8e-11e5-b911-69bd21f5af67">
+            <resource guid="67f7685c-cb8e-11e5-b911-69bd21f5af67">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="67f7685e-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="68f131b1-cb8e-11e5-b911-69bd21f5af67" type="literal">IsAFullDay</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="7138cae5-cb8e-11e5-b911-69bd21f5af67">
+                  <resource guid="7138cae2-cb8e-11e5-b911-69bd21f5af67">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="7138cae4-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="71b2b5d6-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="67f7685f-cb8e-11e5-b911-69bd21f5af67" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="a1f7bc9d-cb8e-11e5-b911-69bd21f5af67" type="literal">return capacityPerDay.selectCapacity() &gt;= 8;</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="a5cf03ac-cb8e-11e5-b911-69bd21f5af67">
+            <resource guid="a5cc92a3-cb8e-11e5-b911-69bd21f5af67">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a5cc92a5-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a5cc92a7-cb8e-11e5-b911-69bd21f5af67" type="literal">IsANoDay</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="a5cc92aa-cb8e-11e5-b911-69bd21f5af67">
+                  <resource guid="a5cc92a4-cb8e-11e5-b911-69bd21f5af67">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="a5cc92a8-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="a5cc92a9-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="a5cc92a6-cb8e-11e5-b911-69bd21f5af67" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="a5cc92ab-cb8e-11e5-b911-69bd21f5af67" type="literal">return capacityPerDay.selectCapacity() == 0 &amp;&amp; !DayFunctions.IsWeekend(capacityPerDay.selectDay());</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="aca4959a-cb8e-11e5-b911-69bd21f5af67">
+            <resource guid="aca49591-cb8e-11e5-b911-69bd21f5af67">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="aca49593-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="aca49595-cb8e-11e5-b911-69bd21f5af67" type="literal">IsAHalfDay</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="aca49598-cb8e-11e5-b911-69bd21f5af67">
+                  <resource guid="aca49592-cb8e-11e5-b911-69bd21f5af67">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="aca49596-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="aca49597-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="aca49594-cb8e-11e5-b911-69bd21f5af67" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="aca49599-cb8e-11e5-b911-69bd21f5af67" type="literal">return capacityPerDay.selectCapacity() &gt; 0 &amp;&amp; capacityPerDay.selectCapacity() &lt; 8;</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="f0bb2a76-0d63-11e6-9f44-9d0000bae4df">
+            <resource guid="f0ba8e2d-0d63-11e6-9f44-9d0000bae4df">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f0ba8e32-0d63-11e6-9f44-9d0000bae4df" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f0ba8e31-0d63-11e6-9f44-9d0000bae4df" type="literal">IsWeekend</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="f0ba8e35-0d63-11e6-9f44-9d0000bae4df">
+                  <resource guid="f0ba8e2e-0d63-11e6-9f44-9d0000bae4df">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f0ba8e34-0d63-11e6-9f44-9d0000bae4df" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="f0ba8e33-0d63-11e6-9f44-9d0000bae4df" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="f0ba8e30-0d63-11e6-9f44-9d0000bae4df" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="f0ba8e2f-0d63-11e6-9f44-9d0000bae4df" type="literal">return capacityPerDay.selectCapacity() == 0 &amp;&amp; DayFunctions.IsWeekend(capacityPerDay.selectDay());</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="65c08b2b-cb8e-11e5-b911-69bd21f5af67" type="resource" guid="cd28fab0-c0d5-11e5-8f91-3dfd9b379121" />
         </predicate>
       </resource>
     </object>

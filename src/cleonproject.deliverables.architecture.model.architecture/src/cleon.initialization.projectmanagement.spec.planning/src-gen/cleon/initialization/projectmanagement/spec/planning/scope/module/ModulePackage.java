@@ -12,7 +12,7 @@ public class ModulePackage {
   public static final Resource ModuleDependency_to = new Resource("27d2544a-07d6-11e6-a579-8304ec3aa032");
   public static final Resource ModuleDependency_reason = new Resource("815fe539-07d6-11e6-a579-8304ec3aa032");
   public static final Resource Module_outcomes = new Resource("e8381df1-1cec-11e6-aaba-9db7fdc64d7e");
-  public static final Resource FunctionSpace_Module = new Resource("db63da8f-349e-11e6-8839-1f6631cc77ac");
+  public static final Resource FunctionSpace_aE_Module_Module = new Resource("db63da8f-349e-11e6-8839-1f6631cc77ac");
   public static final Resource Module_deadlines = new Resource("5188fa77-c763-11e6-9515-3d3c9e104ed6");
   public static final Resource ModuleState = new Resource("5b3641a5-c767-11e6-9515-3d3c9e104ed6");
   public static final Resource ModuleState_OnHold = new Resource("65173fcf-c767-11e6-9515-3d3c9e104ed6");
@@ -40,4 +40,4 @@ public class ModulePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.module,AL734CQLqXR69CRkvmfXy+aKS9E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.module,pEIcuYyD6CcHR9mGPc7x+K2vdaM=] */

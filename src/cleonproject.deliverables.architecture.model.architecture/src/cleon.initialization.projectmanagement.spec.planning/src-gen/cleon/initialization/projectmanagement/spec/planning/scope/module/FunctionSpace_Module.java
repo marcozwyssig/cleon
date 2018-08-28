@@ -15,7 +15,7 @@ import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.ba
 
 /* End Protected Region   [[afa77083-349b-11e6-8839-1f6631cc77ac,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Module {
 
   /* Begin Protected Region [[afa77083-349b-11e6-8839-1f6631cc77ac]] */
   
@@ -198,4 +198,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,2ynU0c/XN0yGUZoKdL3UbYsIvB0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,skalvaJU5hpiwOj6GGHih5TmWaU=] */

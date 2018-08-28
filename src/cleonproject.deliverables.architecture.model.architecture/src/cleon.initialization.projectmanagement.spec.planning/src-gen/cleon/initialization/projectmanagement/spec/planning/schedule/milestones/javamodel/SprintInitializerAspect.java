@@ -13,7 +13,7 @@ import cleon.common.resources.spec.calendar.FunctionSpace.IDayFunctions;
 import cleon.common.resources.spec.calendar.javamodel.IDay;
 import cleon.common.resources.spec.resources.id.javamodel.BusinessObjectIdInitializerAspect;
 import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.*;
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.FunctionSpace.ISprintFunctions;
+import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.FunctionSpace_Milestones.ISprintFunctions;
 
 public class SprintInitializerAspect extends BusinessObjectIdInitializerAspect<ISprint>  {
 	

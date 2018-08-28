@@ -18,7 +18,7 @@ cmd /c bundle exec asciidoctor-pdf Sample_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf Hindernisse.adoc
 cmd /c bundle exec asciidoctor-pdf Risikomanagement.adoc
 cmd /c bundle exec asciidoctor-pdf Sample_Ressourcen.adoc
-cmd /c bundle exec asciidoctor-pdf ProjectSample_Planung.adoc
+cmd /c bundle exec asciidoctor-pdf ConstraintProject_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor-pdf F_higkeiten.adoc
 cmd /c bundle exec asciidoctor-pdf TestSolutionArc42_Architecture.adoc

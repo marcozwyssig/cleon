@@ -9,7 +9,8 @@ public class SchedulePackage {
   public static final Resource Schedule_sprintPlanning = new Resource("f9ffaf1d-c009-11e5-a165-d34765931e10");
   public static final Resource Schedule_targetDates = new Resource("d4e71673-c1d4-11e5-bbf3-bdd12a9e2b3d");
   public static final Resource Schedule_calendar = new Resource("4818ea74-c38f-11e5-a9c9-53d676410f3e");
-  public static final Resource FunctionSpace_TargetDate = new Resource("afaea3bd-20c6-11e6-9bb5-2b7a5dccc043");
+  public static final Resource FunctionSpace_aE_Schedule_TargetDate = new Resource("afaea3bd-20c6-11e6-9bb5-2b7a5dccc043");
+  public static final Resource FunctionSpace_aE_Schedule_Schedule = new Resource("51b8845c-aaa6-11e8-b25a-7dd9f85a27ad");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class SchedulePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule,mlPocBmMbouZD5bmAt0HOnufJes=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.schedule,znmHrX3d3zP4kkV6DBOKkVyuzAM=] */

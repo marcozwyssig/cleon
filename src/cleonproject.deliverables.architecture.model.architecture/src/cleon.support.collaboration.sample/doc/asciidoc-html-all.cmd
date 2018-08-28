@@ -18,7 +18,7 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Planung
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Hindernisse.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Risikomanagement.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri Sample_Ressourcen.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ProjectSample_Planung.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri ConstraintProject_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri F_higkeiten.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri TestSolutionArc42_Architecture.adoc

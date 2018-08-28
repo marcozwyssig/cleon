@@ -26,6 +26,9 @@ public class FunctionSpace_Steering {
     @IDynamicResourceExtension.MethodId("9f3aeaa3-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.String RenderChapters();
 
+    @IDynamicResourceExtension.MethodId("42b23768-aaad-11e8-b25a-7dd9f85a27ad")
+    public java.lang.String RenderDescriptions();
+
   }
   
   public static interface IModuleControllingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -268,4 +271,4 @@ public class FunctionSpace_Steering {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,8tL8CetX8ES4aBsDBDXFtoU5uZI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,772nkp4xv4yEENR29Yrcg/GC3ro=] */

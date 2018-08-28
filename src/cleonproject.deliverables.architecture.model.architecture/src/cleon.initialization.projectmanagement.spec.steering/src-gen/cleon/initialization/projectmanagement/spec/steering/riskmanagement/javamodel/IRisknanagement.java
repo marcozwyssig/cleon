@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.steering.riskmanagement.java
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRiskManagement extends cleon.common.doc.spec.doc.document.javamodel.IDocument {
+public interface IRisknanagement extends cleon.common.doc.spec.doc.document.javamodel.IDocument {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("be6ee992-3249-11e6-ab4d-73a9260c8088");
   
@@ -16,4 +16,4 @@ public interface IRiskManagement extends cleon.common.doc.spec.doc.document.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,YU5u8rXd/1LA7/XNaIfQHkUPmYY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,Nlx3HIzThTCU67fmheFTSpF597E=] */

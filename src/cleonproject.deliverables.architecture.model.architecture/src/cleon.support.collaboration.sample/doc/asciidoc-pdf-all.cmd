@@ -15,8 +15,9 @@ cmd /c bundle exec asciidoctor-pdf Sprint_3.adoc
 cmd /c bundle exec asciidoctor-pdf SampleArchitecture_Architecture.adoc
 cmd /c bundle exec asciidoctor-pdf AP01_WorkpackageSample.adoc
 cmd /c bundle exec asciidoctor-pdf Sample_Planung.adoc
-cmd /c bundle exec asciidoctor-pdf Hindernisse.adoc
-cmd /c bundle exec asciidoctor-pdf Risikomanagement.adoc
+cmd /c bundle exec asciidoctor-pdf Kontrolle_Sample_Planung.adoc
+cmd /c bundle exec asciidoctor-pdf Hindernisse_Sample_Planung.adoc
+cmd /c bundle exec asciidoctor-pdf Risikomanagement_Sample_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf Sample_Ressourcen.adoc
 cmd /c bundle exec asciidoctor-pdf ConstraintProject_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf AP02_Workpackage_B.adoc

@@ -72,11 +72,11 @@ public class Steering extends DynamicResource implements ISteering {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskManagement selectRisks() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskManagement.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks);
+  public cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRisknanagement selectRisks() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRisknanagement.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks);
   }
 
-  public Steering setRisks(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskManagement risks) {
+  public Steering setRisks(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRisknanagement risks) {
     _setSingle(cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks, risks);
     return this;
   }
@@ -100,13 +100,13 @@ public class Steering extends DynamicResource implements ISteering {
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.javamodel.IControlling.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_controlling, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.impediments.javamodel.IImpediments.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_impediments, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_planning, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskManagement.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRisknanagement.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.initialization.projectmanagement.spec.steering.javamodel.ISteering selectToMeRisks(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRiskManagement object) {
+  public static cleon.initialization.projectmanagement.spec.steering.javamodel.ISteering selectToMeRisks(cleon.initialization.projectmanagement.spec.steering.riskmanagement.javamodel.IRisknanagement object) {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.steering.javamodel.ISteering.class, cleon.initialization.projectmanagement.spec.steering.SteeringPackage.Steering_risks, object.getResource());
   }
   
@@ -123,4 +123,4 @@ public class Steering extends DynamicResource implements ISteering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,jbbtw4G262O3KmL5U9MOhZJmA4w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,Y4mnaEXcd2InRPTH7afcn7ep5Hw=] */

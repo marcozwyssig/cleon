@@ -1,0 +1,192 @@
+= Kontrolle Sample Planung
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+
+== Fortschrittskontrolle
+
+
+
+
+=== LE01 Module_A
+
+
+
+[cols="5,10"]
+|===
+|Status|Open
+|Verantwortlicher|Patrick Müller
+|Qualität
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Qualität-Erläuterung
+|
+
+|Termin
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Termin-Erläuterung
+|
+
+|Risiko
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Risiko-Erläuterung
+|
+
+|===
+
+[cols="5,10"]
+|===
+|Soll Start-Sprint|Sprint 1 (2016-01-21_Thu)
+|Soll End-Sprint|Sprint 3 (2016-06-21_Tue)
+|Letztes im Sprint geplantes WorkItem|Sprint 3 (2016-06-21_Tue) 
+|Total Aufwand|13.0
+|Rest Aufwand|0.0
+|Erledigter Aufwand|13.0
+|Fertigstellungsgrad(Offen/Erledigt)|0.00/100.00%
+|Ist Start-Sprint
+| 
+Sprint 1 (2016-01-21_Thu)
+|Ist End-Sprint
+| 
+|Geschwindigkeit
+|
+0.0
+|===
+
+.Alle offenen Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|===
+
+.Alle erledigten Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|===
+
+
+
+==== Risiken
+
+
+
+[cols="3,5,1,5,5,5,5a" options="header"]
+|===
+|Nr|Risiko|Klasse|Eintrittsdatum|Verantwortlicher|Status|Beschreibung
+|RK-001
+|Irreparabler Schaden an PC
+|Chance
+|2016-01-01_Fri
+|Pascal Meier
+|In Steering
+| 
+asdfasdfasdf
+|===
+
+
+==== Hindernisse
+
+
+
+[cols="3,5,1,5,5,5a" options="header"]
+|===
+|Nr|Hindernis|Eintrittsdatum|Verantwortlicher|Status|Beschreibung
+|IM-001
+|sfsfsf
+|2016-01-02_Sat
+|Pascal Meier
+|Open
+|
+1111
+
+|===
+
+
+
+
+=== LE02 Module_B
+
+
+
+[cols="5,10"]
+|===
+|Status|Done
+|Verantwortlicher|Pascal Meier
+|Qualität
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Qualität-Erläuterung
+|
+
+|Termin
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Termin-Erläuterung
+|
+
+|Risiko
+|
+{set:cellbgcolor:#009933}
+|
+{set:cellbgcolor:none}
+Risiko-Erläuterung
+|
+
+|===
+
+[cols="5,10"]
+|===
+|Soll Start-Sprint|
+|Soll End-Sprint|
+|Letztes im Sprint geplantes WorkItem|
+|Total Aufwand|13.0
+|Rest Aufwand|0.0
+|Erledigter Aufwand|13.0
+|Fertigstellungsgrad(Offen/Erledigt)|0.00/100.00%
+|Ist Start-Sprint
+| 
+|Ist End-Sprint
+| 
+|Geschwindigkeit
+|
+0.0
+|===
+
+.Alle offenen Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|===
+
+.Alle erledigten Termine
+[cols="5,10a,7a,7a" options="header"]
+|===
+|Datum|Name|Verantwortlicher|Teilnehmer
+|===
+
+
+
+
+
+
+
+

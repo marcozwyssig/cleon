@@ -4,7 +4,7 @@ Bundle-ActivationPolicy: lazy
 Bundle-Activator: ch.actifsource.template.Activator
 Bundle-Name: cleon.implementation.plantuml.template.uml
 Bundle-SymbolicName: cleon.implementation.plantuml.template.uml.builtin;singleton:=true
-Bundle-Version: 0.3.15
+Bundle-Version: 0.3.16
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -13,10 +13,10 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.15",
- cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.15",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.15",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.15",
+ cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.16",
+ cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.16",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.16",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.16",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.implementation.plantuml.template.uml,cleon.implementation.plantuml.template.uml.javamodel
  ,cleon.implementation.plantuml.template.uml.structural,cleon.implementation.plantuml.template.uml.structural.javamodel,

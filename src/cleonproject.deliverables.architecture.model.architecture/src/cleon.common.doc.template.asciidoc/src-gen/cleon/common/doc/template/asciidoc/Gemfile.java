@@ -7,7 +7,6 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
-
 /* Begin Protected Region [[128d1794-0d06-11e6-be97-7d1235599779,imports]] */
 import java.util.ArrayList;
 /* End Protected Region   [[128d1794-0d06-11e6-be97-7d1235599779,imports]] */

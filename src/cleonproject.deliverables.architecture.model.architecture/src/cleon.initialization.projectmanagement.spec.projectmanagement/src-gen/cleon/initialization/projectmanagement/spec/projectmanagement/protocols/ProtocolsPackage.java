@@ -27,9 +27,9 @@ public class ProtocolsPackage {
   public static final Resource ProtocolProperties_autor = new Resource("21854d3d-c760-11e5-b3f9-43c5a0896ea1");
   public static final Resource Protocol_moderator = new Resource("9d4d84bf-c767-11e5-b3f9-43c5a0896ea1");
   public static final Resource Protocol_location = new Resource("5f80ad6c-c769-11e5-b3f9-43c5a0896ea1");
-  public static final Resource FunctionSpace_Protocol = new Resource("e98e91af-20b6-11e6-9bb5-2b7a5dccc043");
-  public static final Resource FunctionSpace_ProtocolItems = new Resource("2a65141d-20b7-11e6-9bb5-2b7a5dccc043");
-  public static final Resource FunctionSpace_ProtocolItem = new Resource("8cddf099-2ef1-11e6-8bd9-a77b8d2a3a0e");
+  public static final Resource FunctionSpace_aE_Protocols_Protocol = new Resource("e98e91af-20b6-11e6-9bb5-2b7a5dccc043");
+  public static final Resource FunctionSpace_aE_Protocols_ProtocolItems = new Resource("2a65141d-20b7-11e6-9bb5-2b7a5dccc043");
+  public static final Resource FunctionSpace_aE_Protocols_ProtocolItem = new Resource("8cddf099-2ef1-11e6-8bd9-a77b8d2a3a0e");
   public static final Resource ProtocolProperties = new Resource("9d8d5f17-47fb-11e6-b388-8539f6ff7310");
   public static final Resource Protocol_properties = new Resource("b0faab33-47fb-11e6-b388-8539f6ff7310");
   
@@ -52,4 +52,4 @@ public class ProtocolsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.projectmanagement.protocols,dogoCrQ0FQELh0C/Gyz7DICxvis=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.projectmanagement.protocols,kgjr4dRLK5kW1LX3/5nEjW6yg7I=] */

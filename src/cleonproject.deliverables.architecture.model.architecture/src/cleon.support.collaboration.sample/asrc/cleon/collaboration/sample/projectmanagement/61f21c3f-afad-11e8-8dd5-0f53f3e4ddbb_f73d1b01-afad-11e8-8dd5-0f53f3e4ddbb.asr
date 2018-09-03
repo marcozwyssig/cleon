@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f73d1b01-afad-11e8-8dd5-0f53f3e4ddbb">
+  <owns predicate="65f1898f-b466-11e5-a3f4-497fd75158dc">
+    <resource statement-guid="f9ffe48e-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="f9ff6f5b-afad-11e8-8dd5-0f53f3e4ddbb" />
+    <resource statement-guid="5167fdc7-afae-11e8-9110-5720a5f5ac3f" type="resource" guid="51665014-afae-11e8-9110-5720a5f5ac3f" />
+    <resource statement-guid="bb2a0179-afaf-11e8-974a-5976201d2f13" type="resource" guid="bb1b5b75-afaf-11e8-974a-5976201d2f13" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f73d6923-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="35502e39-b462-11e5-a3f4-497fd75158dc" />
+  </predicate>
+  <predicate guid="02524c8c-b466-11e5-a3f4-497fd75158dc">
+    <object statement-guid="f73d9034-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="86a5b66d-afad-11e8-8dd5-0f53f3e4ddbb" />
+  </predicate>
+  <predicate guid="65f1898f-b466-11e5-a3f4-497fd75158dc">
+    <object statement-guid="f9ffe48e-afad-11e8-8dd5-0f53f3e4ddbb">
+      <resource guid="f9ff6f5b-afad-11e8-8dd5-0f53f3e4ddbb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f9ff966d-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="4fb5e22c-b463-11e5-a3f4-497fd75158dc" />
+        </predicate>
+        <predicate guid="bf39d430-b466-11e5-a3f4-497fd75158dc">
+          <object statement-guid="4e188464-afae-11e8-9110-5720a5f5ac3f" type="resource" guid="8ff91c83-c10a-11e6-8f58-ad3c6ee7602f" />
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="fa12d051-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">1</object>
+        </predicate>
+        <predicate guid="f4bc45b7-c6a9-11e5-a68d-835c1648a4d8">
+          <object statement-guid="fb4b9e7a-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">Decision 1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5167fdc7-afae-11e8-9110-5720a5f5ac3f">
+      <resource guid="51665014-afae-11e8-9110-5720a5f5ac3f">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5166c546-afae-11e8-9110-5720a5f5ac3f" type="resource" guid="53d1f9cb-b463-11e5-a3f4-497fd75158dc" />
+        </predicate>
+        <predicate guid="bf39d430-b466-11e5-a3f4-497fd75158dc">
+          <object statement-guid="5737927d-afae-11e8-9110-5720a5f5ac3f" type="resource" guid="8ff91c87-c10a-11e6-8f58-ad3c6ee7602f" />
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="b899937c-afaf-11e8-974a-5976201d2f13" type="literal">2</object>
+        </predicate>
+        <predicate guid="f4bc45b7-c6a9-11e5-a68d-835c1648a4d8">
+          <object statement-guid="53216db6-afae-11e8-9110-5720a5f5ac3f" type="literal">Info 2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="bb2a0179-afaf-11e8-974a-5976201d2f13">
+      <resource guid="bb1b5b75-afaf-11e8-974a-5976201d2f13">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bb28f007-afaf-11e8-974a-5976201d2f13" type="resource" guid="55988936-b463-11e5-a3f4-497fd75158dc" />
+        </predicate>
+        <predicate guid="bf39d430-b466-11e5-a3f4-497fd75158dc">
+          <object statement-guid="be8b7c5e-afaf-11e8-974a-5976201d2f13" type="resource" guid="8ff91c8f-c10a-11e6-8f58-ad3c6ee7602f" />
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="bbbc566d-afaf-11e8-974a-5976201d2f13" type="literal">3</object>
+        </predicate>
+        <predicate guid="74220389-c1dc-11e5-bbf3-bdd12a9e2b3d">
+          <object statement-guid="c175f271-afaf-11e8-974a-5976201d2f13" type="resource" guid="b4ffdfb2-c769-11e6-9515-3d3c9e104ed6" />
+        </predicate>
+        <predicate guid="ac925cb2-c58a-11e5-aeea-1db9268c0ee9">
+          <object statement-guid="bb29b358-afaf-11e8-974a-5976201d2f13" type="resource" guid="91e2b288-c58a-11e5-aeea-1db9268c0ee9" />
+        </predicate>
+        <predicate guid="f4bc45b7-c6a9-11e5-a68d-835c1648a4d8">
+          <object statement-guid="bd5bd5dd-afaf-11e8-974a-5976201d2f13" type="literal">Task 3</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

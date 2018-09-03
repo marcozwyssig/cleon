@@ -18,31 +18,6 @@ public class FunctionSpace {
   /* End Protected Region   [[e4562fb5-d400-11e5-9dfc-cf0f3e030023]] */
 
 
-  public static interface ITestingDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("1ec27a77-1db0-11e6-974b-630b7f5d3b95")
-    public java.lang.String GetDocumentPath();
-
-  }
-  
-  public static interface ITestingDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestingDocumentFunctionsImpl implements ITestingDocumentFunctionsImpl {
-
-    public static final ITestingDocumentFunctionsImpl INSTANCE = new TestingDocumentFunctionsImpl();
-
-    private TestingDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class TestingDocumentFunctions {
-
-    private TestingDocumentFunctions() {}
-
-  }
-
   public static interface IStaticTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9d5ba40d-1dba-11e6-974b-630b7f5d3b95")
@@ -198,4 +173,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4562fb5-d400-11e5-9dfc-cf0f3e030023,FSbY9GjR+6x9uAb06ZHsMLurC/8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4562fb5-d400-11e5-9dfc-cf0f3e030023,DX33epqDDFI1td/TagdMer51CeE=] */

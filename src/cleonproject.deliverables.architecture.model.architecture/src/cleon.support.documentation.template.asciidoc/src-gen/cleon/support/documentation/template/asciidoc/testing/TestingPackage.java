@@ -4,7 +4,6 @@ import ch.actifsource.core.Resource;
 
 public class TestingPackage {
   
-  public static final Resource FunctionSpace_TestingDocument = new Resource("1a36fee2-1db0-11e6-974b-630b7f5d3b95");
   public static final Resource FunctionSpace_StaticTest = new Resource("8bb1d9d6-1dba-11e6-974b-630b7f5d3b95");
   public static final Resource FunctionSpace_StaticTestExecution = new Resource("e44b1a79-2264-11e6-bcc1-f96f0d74dcad");
   public static final Resource FunctionSpace_TestResult = new Resource("1a3c6a21-226f-11e6-bcc1-f96f0d74dcad");
@@ -31,4 +30,4 @@ public class TestingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.testing,Nr834cl1vswBGUOUzPu5GY3rIG4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.testing,CIX6FxKloqgWcS8BqFr6zVSCpOI=] */

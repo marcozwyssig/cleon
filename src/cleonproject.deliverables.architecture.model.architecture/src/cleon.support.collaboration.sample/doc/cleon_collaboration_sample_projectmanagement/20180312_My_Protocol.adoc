@@ -1,0 +1,116 @@
+= 20180312_My Protocol
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+
+== Agenda
+
+
+
+[role]
+. Agenda 1
+.. SubAgenda 1.1
+... SubAgenda 1.1.1
+.. Sub Agenda 1.2
+. Agenda 2
+
+
+
+== Agenda 1
+
+
+
+NOTE: Keine Protokolle zum Thema "Agenda 1" vorhanden
+=== SubAgenda 1.1
+
+
+
+[cols="5,20a,^5,^5,^5", options="header"]
+|===
+|ID|Protokoll|V|T|K
+|PO-0005
+|
+Info 6
+| 
+PME
+| 
+| I
+|PO-0006
+|
+Task 2
+| 
+TEST3
+| 2017-06-02_Fri
+| P
+|PO-0007
+|
+Decision 2
+| 
+PME
+| 
+| E
+|===
+V = Verantwortlich, T = Termin, K = Klassifizierung (I = Info, E = Entscheid, P = Pendenz)
+==== SubAgenda 1.1.1
+
+
+
+[cols="5,20a,^5,^5,^5", options="header"]
+|===
+|ID|Protokoll|V|T|K
+|PO-0004
+|
+Info 1
+| 
+PME
+| 
+| I
+|===
+V = Verantwortlich, T = Termin, K = Klassifizierung (I = Info, E = Entscheid, P = Pendenz)
+
+
+
+
+
+== Agenda 2
+
+
+
+[cols="5,20a,^5,^5,^5", options="header"]
+|===
+|ID|Protokoll|V|T|K
+|PO-0001
+|
+Decision 1
+| 
+PME
+| 
+| E
+|PO-0002
+|
+Info 2
+| 
+TEST2
+| 
+| I
+|PO-0003
+|
+Task 3
+| 
+TEST3
+| 2018-06-12_Tue
+| P
+|===
+V = Verantwortlich, T = Termin, K = Klassifizierung (I = Info, E = Entscheid, P = Pendenz)
+
+
+
+++++
+<p /><ac:macro ac:name="attachments"><ac:parameter ac:name="upload">true</ac:parameter></ac:macro>
+++++

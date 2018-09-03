@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="717e371d-afad-11e8-8dd5-0f53f3e4ddbb">
+  <owns predicate="994289cf-b461-11e5-a3f4-497fd75158dc">
+    <resource statement-guid="745bb49b-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="745b3f68-afad-11e8-8dd5-0f53f3e4ddbb">
+      <owns predicate="f9b7fce3-b461-11e5-a3f4-497fd75158dc">
+        <resource statement-guid="766455e1-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="766455de-afad-11e8-8dd5-0f53f3e4ddbb">
+          <owns predicate="f9b7fce3-b461-11e5-a3f4-497fd75158dc">
+            <resource statement-guid="7ad321b6-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="7ad2d393-afad-11e8-8dd5-0f53f3e4ddbb" />
+          </owns>
+        </resource>
+        <resource statement-guid="812a358b-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="8129e768-afad-11e8-8dd5-0f53f3e4ddbb" />
+      </owns>
+    </resource>
+    <resource statement-guid="86a5dd80-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="86a5b66d-afad-11e8-8dd5-0f53f3e4ddbb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="717e5e2f-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="6f5a3bc3-b461-11e5-a3f4-497fd75158dc" />
+  </predicate>
+  <predicate guid="994289cf-b461-11e5-a3f4-497fd75158dc">
+    <object statement-guid="745bb49b-afad-11e8-8dd5-0f53f3e4ddbb">
+      <resource guid="745b3f68-afad-11e8-8dd5-0f53f3e4ddbb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="745b667a-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="74f2012d-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">Agenda 1</object>
+        </predicate>
+        <predicate guid="f9b7fce3-b461-11e5-a3f4-497fd75158dc">
+          <object statement-guid="766455e1-afad-11e8-8dd5-0f53f3e4ddbb">
+            <resource guid="766455de-afad-11e8-8dd5-0f53f3e4ddbb">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="766455e0-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="76c8e412-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">SubAgenda 1.1</object>
+              </predicate>
+              <predicate guid="f9b7fce3-b461-11e5-a3f4-497fd75158dc">
+                <object statement-guid="7ad321b6-afad-11e8-8dd5-0f53f3e4ddbb">
+                  <resource guid="7ad2d393-afad-11e8-8dd5-0f53f3e4ddbb">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="7ad2faa5-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+                    </predicate>
+                    <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="7b2f4b77-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">SubAgenda 1.1.1</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="812a358b-afad-11e8-8dd5-0f53f3e4ddbb">
+            <resource guid="8129e768-afad-11e8-8dd5-0f53f3e4ddbb">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="812a0e7a-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="81dfc9ec-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">Sub Agenda 1.2</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="86a5dd80-afad-11e8-8dd5-0f53f3e4ddbb">
+      <resource guid="86a5b66d-afad-11e8-8dd5-0f53f3e4ddbb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="86a5b66f-afad-11e8-8dd5-0f53f3e4ddbb" type="resource" guid="cf7dbe8a-b461-11e5-a3f4-497fd75158dc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="87282ce2-afad-11e8-8dd5-0f53f3e4ddbb" type="literal">Agenda 2</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

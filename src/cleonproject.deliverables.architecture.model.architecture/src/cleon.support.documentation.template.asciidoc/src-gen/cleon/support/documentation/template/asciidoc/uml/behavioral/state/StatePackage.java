@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class StatePackage {
   
-  public static final Resource FunctionSpace_StateMachine = new Resource("97816684-3525-11e5-909a-4bcced25d7ee");
+  public static final Resource FunctionSpace_aE_Behavioral_StateMachine = new Resource("97816684-3525-11e5-909a-4bcced25d7ee");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class StatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.uml.behavioral.state,H8LXEOLeHFowhK+T/IOf9OX0qdA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.uml.behavioral.state,Pazm5xk0LxgJp/BZTcygb8mMUEs=] */

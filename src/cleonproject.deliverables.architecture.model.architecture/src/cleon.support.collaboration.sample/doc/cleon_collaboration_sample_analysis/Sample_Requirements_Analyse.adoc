@@ -32,28 +32,12 @@ s
 |OPEX
 |
 
-|40%
-|CAPEX
-|
-
-|20%
-|OPEX
-|
-
-|40%
-|CAPEX
-|
-
-|20%
+|60%
 |Termin
 |
 
 |10%
-|Kriterien zu My Project
-|
-
-|20%
-|AF006_Requirements_1 (FEA)
+|AF006_Requirements_1 (FEA) (Must have)
 |
 sfasdfsadf asdfadsfasdf asdf asdf adfa dfad sfasdfa
 asdfasdfadfasdfa
@@ -61,56 +45,19 @@ dsfa
 dfasdfadfadfadf
 sadfasdfsdafsdaf
 sadf
-|12%
-|AF004_Requirements_2_1 (CAP)
+|6%
+|AF004_Requirements_2_1 (CAP) (Nice to have)
 |
 Description
-|12%
-|AF007_sss (FEA)
+|2%
+|AF007_sss (FEA) (Must have)
 |
 Description
-|12%
-|AF003_Requirements_2_(ssss) (CAP)
+|6%
+|AF102_sss (FEA) (Must have)
 |
 Description
-|12%
-|AF001_ddd (CAP)
-|
-Description
-|12%
-|AF002_Constraint (CAP)
-|
-Description
-|12%
-|AF006_Requirements_1 (FEA)
-|
-sfasdfsadf asdfadsfasdf asdf asdf adfa dfad sfasdfa
-asdfasdfadfasdfa
-dsfa
-dfasdfadfadfadf
-sadfasdfsdafsdaf
-sadf
-|12%
-|AF004_Requirements_2_1 (CAP)
-|
-Description
-|12%
-|AF007_sss (FEA)
-|
-Description
-|12%
-|AF003_Requirements_2_(ssss) (CAP)
-|
-Description
-|12%
-|AF001_ddd (CAP)
-|
-Description
-|12%
-|AF002_Constraint (CAP)
-|
-Description
-|12%
+|6%
 |MyNamedCriteria
 |
 
@@ -156,6 +103,16 @@ sdfasdfasdfasdf
 
 
 
+[cols="1a,1a,1a" options="header"]
+|===
+|Lösung|Auswertung|Auswertung [%]
+|Solution 1
+|2.06
+|41.20%
+|Solution 2
+|2.00
+|40.00%
+|===
 
 === Solution 1
 
@@ -165,42 +122,30 @@ asdfasdf
 [cols="1a,1a,4a,1a" options="header"]
 |===
 |Kriterium|Bewertung|Beschreibung|Auswertung
-|OPEX (40%)
+|OPEX (60%)
 |2
 |
-|0.80 von 2.00
-|CAPEX (20%)
-|2
-|
-|0.40 von 1.00
+|1.20 von 3.00
 |Termin (10%)
 |2
 |fasdfasdf 
 |0.20 von 0.50
-|AF006_Requirements_1 (FEA) (12%)
+|AF006_Requirements_1 (FEA) (Must have) (6%)
 |2
 |
-|0.24 von 0.60
-|AF004_Requirements_2_1 (CAP) (12%)
-|2
-|
-|0.24 von 0.60
-|AF007_sss (FEA) (12%)
-|2
-|
-|0.24 von 0.60
-|AF003_Requirements_2_(ssss) (CAP) (12%)
-|2
-|
-|0.24 von 0.60
-|AF001_ddd (CAP) (12%)
-|2
-|
-|0.24 von 0.60
-|AF002_Constraint (CAP) (12%)
+|0.12 von 0.30
+|AF004_Requirements_2_1 (CAP) (Nice to have) (2%)
 |5
 |
-|0.60 von 0.60
+|0.10 von 0.10
+|AF007_sss (FEA) (Must have) (6%)
+|2
+|
+|0.12 von 0.30
+|AF102_sss (FEA) (Must have) (6%)
+|2
+|
+|0.12 von 0.30
 |MyNamedCriteria (10%)
 |2
 |
@@ -209,8 +154,8 @@ asdfasdf
 |
 |
 |
-*3.40*
-(*44.74*%)
+*2.06*
+(*41.20*%)
 |===
 
 
@@ -222,42 +167,30 @@ dsafasdf
 [cols="1a,1a,4a,1a" options="header"]
 |===
 |Kriterium|Bewertung|Beschreibung|Auswertung
-|OPEX (40%)
+|OPEX (60%)
 |2
 |
-|0.80 von 2.00
-|CAPEX (20%)
-|2
-|
-|0.40 von 1.00
+|1.20 von 3.00
 |Termin (10%)
 |2
 |dsfasdfasdf 
 |0.20 von 0.50
-|AF006_Requirements_1 (FEA) (12%)
+|AF006_Requirements_1 (FEA) (Must have) (6%)
 |2
 |
-|0.24 von 0.60
-|AF004_Requirements_2_1 (CAP) (12%)
+|0.12 von 0.30
+|AF004_Requirements_2_1 (CAP) (Nice to have) (2%)
 |2
 |
-|0.24 von 0.60
-|AF007_sss (FEA) (12%)
-|3
-|
-|0.36 von 0.60
-|AF003_Requirements_2_(ssss) (CAP) (12%)
+|0.04 von 0.10
+|AF007_sss (FEA) (Must have) (6%)
 |2
 |
-|0.24 von 0.60
-|AF001_ddd (CAP) (12%)
+|0.12 von 0.30
+|AF102_sss (FEA) (Must have) (6%)
 |2
 |
-|0.24 von 0.60
-|AF002_Constraint (CAP) (12%)
-|2
-|
-|0.24 von 0.60
+|0.12 von 0.30
 |MyNamedCriteria (10%)
 |2
 |
@@ -266,8 +199,8 @@ dsafasdf
 |
 |
 |
-*3.16*
-(*41.58*%)
+*2.00*
+(*40.00*%)
 |===
 
 

@@ -124,7 +124,7 @@ public class FunctionSpace_Analysis {
     public java.lang.String GetContext();
 
     @IDynamicResourceExtension.MethodId("c469cb47-0557-11e6-adf9-af3c4dc80bc3")
-    public java.lang.String RenderDocumentContent();
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -173,4 +173,4 @@ public class FunctionSpace_Analysis {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,h/imW4ZvmAfY0pSTSNwPs6LTAws=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,B8fp82OSFQYivyXbH6RmPdBbejs=] */

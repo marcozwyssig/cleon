@@ -92,8 +92,8 @@ public class FunctionSpace_DetailedStudy {
        	IRequirementsAggregate aggregate = RequirementsAggregate.selectToMeRequirementCriterias(requirementCriteria);
     	IPriority selectPriority = requirementCriteria.selectRequirement().selectPriority();
 		IPriorityWeighting priorityWeighting = aggregate.selectPriorityWeighting().values().stream().filter(x -> x.selectPriority().selectNumber().equals(selectPriority.selectNumber())).findFirst().get();
-    	
-		return priorityWeighting.selectWeighting();
+		Long requirements = aggregate.selectRequirementCriterias().values().stream().filter( x -> x.selectRequirement().selectPriority().equals(selectPriority)).count();
+		return priorityWeighting.selectWeighting() / requirements.intValue();
       /* End Protected Region   [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
     }
 

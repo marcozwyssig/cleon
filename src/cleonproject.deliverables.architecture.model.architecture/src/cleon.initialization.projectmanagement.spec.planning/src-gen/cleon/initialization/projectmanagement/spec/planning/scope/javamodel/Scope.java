@@ -71,12 +71,12 @@ public class Scope extends DynamicResource implements IScope {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules selectModules() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_modules);
+  public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectOutcomes() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_outcomes);
   }
 
-  public Scope setModules(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules modules) {
-    _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_modules, modules);
+  public Scope setOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes outcomes) {
+    _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_outcomes, outcomes);
     return this;
   }
     
@@ -109,7 +109,7 @@ public class Scope extends DynamicResource implements IScope {
     // relations
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverables.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_deliverables, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_modules, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_outcomes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackages.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_workpackages, visitor);
   }
@@ -120,8 +120,8 @@ public class Scope extends DynamicResource implements IScope {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_deliverables, object.getResource());
   }
   
-  public static cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope selectToMeModules(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules object) {
-    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_modules, object.getResource());
+  public static cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope selectToMeOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.Scope_outcomes, object.getResource());
   }
   
   public static cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope selectToMeWorkpackages(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackages object) {
@@ -129,4 +129,4 @@ public class Scope extends DynamicResource implements IScope {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,ycLTXvvCRVBYLFaDHUqWWZiao60=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,Dd+/O73v3Y7kYp3kugk4OgMGlvM=] */

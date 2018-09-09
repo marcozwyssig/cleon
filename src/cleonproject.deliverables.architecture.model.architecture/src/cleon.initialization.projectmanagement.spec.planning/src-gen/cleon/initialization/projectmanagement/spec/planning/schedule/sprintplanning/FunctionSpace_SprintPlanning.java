@@ -8,16 +8,16 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5bd4d1da-c4ca-11e5-8558-4b8affb7767c,imports]] */
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.FunctionSpace_Milestones.IReleasesFunctions;
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases;
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint;
+import cleon.initialization.projectmanagement.spec.planning.schedule.releases.FunctionSpace_Releases.IReleasesFunctions;
+import cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases;
+import cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintBacklog;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning;
 import cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.SprintPlanning;
-import cleon.initialization.projectmanagement.spec.planning.scope.module.FunctionSpace_Module.IModuleFunctions;
-import cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule;
-import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.FunctionSpace.IBacklogFunctions;
-import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.FunctionSpace.IWorkItemFunctions;
+import cleon.initialization.projectmanagement.spec.planning.scope.outcomes.FunctionSpace_Outcome.IOutcomeFunctions;
+import cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome;
+import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.FunctionSpace_Backlog.IBacklogFunctions;
+import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.FunctionSpace_Backlog.IWorkItemFunctions;
 import cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog;
 import cleon.common.resources.spec.calendar.FunctionSpace.DayFunctions;
 /* End Protected Region   [[5bd4d1da-c4ca-11e5-8558-4b8affb7767c,imports]] */
@@ -35,7 +35,7 @@ public class FunctionSpace_SprintPlanning {
     public java.lang.Double SumEffort();
 
     @IDynamicResourceExtension.MethodId("ea25b46f-8974-11e6-9315-e9960ca482c6")
-    public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint GetSprint();
+    public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint GetSprint();
 
   }
   
@@ -109,14 +109,14 @@ public class FunctionSpace_SprintPlanning {
     @Override
     public java.lang.Integer SumBruttoCapacity(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintCapacity sprintCapacity) {
       /* Begin Protected Region [[935a66c2-c02b-11e5-b927-b1b055d0575f]] */
-        return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> PersonCapacityFunctionsImpl.INSTANCE.SumBruttoCapacity(p)).sum();     
+        return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> p.extension(IPersonCapacityFunctions.class).SumBruttoCapacity()).sum();     
       /* End Protected Region   [[935a66c2-c02b-11e5-b927-b1b055d0575f]] */
     }
 
     @Override
     public java.lang.Integer SumNettoCapacity(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintCapacity sprintCapacity) {
       /* Begin Protected Region [[fb93c4d2-cb91-11e5-b911-69bd21f5af67]] */
-    	return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> PersonCapacityFunctionsImpl.INSTANCE.SumNettoCapacity(p)).sum();    
+    	return sprintCapacity.selectPersonCapacity().values().stream().mapToInt(p -> p.extension(IPersonCapacityFunctions.class).SumNettoCapacity()).sum();    
       /* End Protected Region   [[fb93c4d2-cb91-11e5-b911-69bd21f5af67]] */
     }
 
@@ -124,7 +124,7 @@ public class FunctionSpace_SprintPlanning {
     public java.lang.Double CalculatePace(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintCapacity sprintCapacity) {
       /* Begin Protected Region [[3bb4378c-cb95-11e5-b911-69bd21f5af67]] */
     	ISprintBacklog backlog = SprintPlanning.selectToMeSprintCapacity(sprintCapacity).selectSprintBacklog();
-    	double effort = SprintBacklogFunctionsImpl.INSTANCE.SumEffort(backlog);
+    	double effort = backlog.extension(ISprintBacklogFunctions.class).SumEffort();
     	return effort / SumNettoCapacity(sprintCapacity); 
       /* End Protected Region   [[3bb4378c-cb95-11e5-b911-69bd21f5af67]] */
     }
@@ -214,16 +214,16 @@ public class FunctionSpace_SprintPlanning {
     public java.lang.Double CalculateVelocity();
 
     @IDynamicResourceExtension.MethodId("d139e02f-33bf-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module);
+    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome);
 
     @IDynamicResourceExtension.MethodId("80511a71-349c-11e6-8839-1f6631cc77ac")
-    public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module);
+    public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome);
 
     @IDynamicResourceExtension.MethodId("aeb46814-349c-11e6-8839-1f6631cc77ac")
-    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module);
+    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome);
 
     @IDynamicResourceExtension.MethodId("92cde438-349f-11e6-8839-1f6631cc77ac")
-    public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases GetReleasePlanning();
+    public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases GetReleasePlanning();
 
   }
   
@@ -233,13 +233,13 @@ public class FunctionSpace_SprintPlanning {
     public java.lang.Double CalculateVelocity(final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
 
     @IDynamicResourceExtension.MethodId("d139e02f-33bf-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
+    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
 
     @IDynamicResourceExtension.MethodId("80511a71-349c-11e6-8839-1f6631cc77ac")
-    public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
+    public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
 
     @IDynamicResourceExtension.MethodId("aeb46814-349c-11e6-8839-1f6631cc77ac")
-    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
+    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings);
 
   }
   
@@ -284,16 +284,16 @@ public class FunctionSpace_SprintPlanning {
     }
 
     @Override
-    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+    public java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
       /* Begin Protected Region [[d139e02f-33bf-11e6-94cd-fbf6c8ccd08d]] */
         int sprintCount = 0;
         double sprintDoneWork = 0;
                 
-        ISprint actualSprint = ActualSprintForModule(module, sprintPlannings);
+        ISprint actualSprint = ActualSprintForModule(outcome, sprintPlannings);
         if( actualSprint == null)
         	return new Integer(0).doubleValue();
         
-        IReleases releasePlanning = module.extension(IModuleFunctions.class).GetReleasePlanning();
+        IReleases releasePlanning = outcome.extension(IOutcomeFunctions.class).GetReleasePlanning();
         IReleasesFunctions planningFunctions = releasePlanning.extension(IReleasesFunctions.class);
         ISprint currentSprint = planningFunctions.CurrentSprint();
         if( currentSprint == null)
@@ -320,8 +320,8 @@ public class FunctionSpace_SprintPlanning {
         				return 0;
         			
         			IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
-        			IModule workItemModule = backlog.extension(IBacklogFunctions.class).GetModule();
-        			if( workItemModule.equals(module))
+        			IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
+        			if( workItemModule.equals(outcome))
         			{
             			return Double.parseDouble(x.selectEstimate().selectName());        				
         			}
@@ -336,7 +336,7 @@ public class FunctionSpace_SprintPlanning {
     }
 
     @Override
-    public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+    public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
       /* Begin Protected Region [[80511a71-349c-11e6-8839-1f6631cc77ac]] */
         ISprint lastSprint = null;
         for( ISprintPlanning planning : sprintPlannings.selectSprintplannings().values())
@@ -346,8 +346,8 @@ public class FunctionSpace_SprintPlanning {
         	{
         		boolean hasWorkItem = sprintBacklog.selectWorkItems().stream().anyMatch(x -> {
          			IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
-        			IModule workItemModule = backlog.extension(IBacklogFunctions.class).GetModule();
-        			return workItemModule.equals(module);
+        			IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
+        			return workItemModule.equals(outcome);
         		});
         		
         		if( !hasWorkItem)
@@ -375,10 +375,10 @@ public class FunctionSpace_SprintPlanning {
     }
 
     @Override
-    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+    public java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
       /* Begin Protected Region [[aeb46814-349c-11e6-8839-1f6631cc77ac]] */
-        double velocity = CalculateVelocityForModule(module, sprintPlannings);
-        IBacklog backlog = module.extension(IModuleFunctions.class).GetBacklog();
+        double velocity = CalculateVelocityForModule(outcome, sprintPlannings);
+        IBacklog backlog = outcome.extension(IOutcomeFunctions.class).GetBacklog();
         if( backlog == null)
         	return null;
 
@@ -403,16 +403,16 @@ public class FunctionSpace_SprintPlanning {
       return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).CalculateVelocity(sprintPlannings);
     }
 
-    public static java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
-      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).CalculateVelocityForModule(module, sprintPlannings);
+    public static java.lang.Double CalculateVelocityForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).CalculateVelocityForModule(outcome, sprintPlannings);
     }
 
-    public static cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
-      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).ActualSprintForModule(module, sprintPlannings);
+    public static cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint ActualSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).ActualSprintForModule(outcome, sprintPlannings);
     }
 
-    public static java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
-      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).LastSprintForModule(module, sprintPlannings);
+    public static java.lang.Integer LastSprintForModule(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlannings) {
+      return DynamicResourceUtil.invoke(ISprintPlanningsFunctionsImpl.class, SprintPlanningsFunctionsImpl.INSTANCE, sprintPlannings).LastSprintForModule(outcome, sprintPlannings);
     }
 
   }
@@ -501,4 +501,4 @@ public class FunctionSpace_SprintPlanning {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,iesBs39rouTDNmWdnJrU+oDpQrI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,kJ4qF0/IGPDPwYlQ2wnZ6J6PI3g=] */

@@ -23,10 +23,16 @@ public class FunctionSpace_Deliverable {
     @IDynamicResourceExtension.MethodId("b711da1f-aaab-11e8-b25a-7dd9f85a27ad")
     public java.lang.String RenderDescription();
 
+    @IDynamicResourceExtension.MethodId("15832023-b46d-11e8-bb21-172cc8e5f7cd")
+    public java.lang.String GetId();
+
   }
   
   public static interface IDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("15832023-b46d-11e8-bb21-172cc8e5f7cd")
+    public java.lang.String GetId(final cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable);
+
   }
   
   public static class DeliverableFunctionsImpl implements IDeliverableFunctionsImpl {
@@ -35,39 +41,48 @@ public class FunctionSpace_Deliverable {
 
     private DeliverableFunctionsImpl() {}
 
+    @Override
+    public java.lang.String GetId(final cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+      return String.format("LE%02d", deliverable.selectIdentifier());
+    }
+
   }
   
   public static class DeliverableFunctions {
 
     private DeliverableFunctions() {}
 
+    public static java.lang.String GetId(final cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+      return DynamicResourceUtil.invoke(IDeliverableFunctionsImpl.class, DeliverableFunctionsImpl.INSTANCE, deliverable).GetId(deliverable);
+    }
+
   }
 
-  public static interface ISimpleDeliverableFunctions extends IDynamicResourceExtension {
+  public static interface INamedDeliverableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c4ae807f-aaab-11e8-b25a-7dd9f85a27ad")
     public java.lang.String RenderDescription();
 
   }
   
-  public static interface ISimpleDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SimpleDeliverableFunctionsImpl implements ISimpleDeliverableFunctionsImpl {
+  public static class NamedDeliverableFunctionsImpl implements INamedDeliverableFunctionsImpl {
 
-    public static final ISimpleDeliverableFunctionsImpl INSTANCE = new SimpleDeliverableFunctionsImpl();
+    public static final INamedDeliverableFunctionsImpl INSTANCE = new NamedDeliverableFunctionsImpl();
 
-    private SimpleDeliverableFunctionsImpl() {}
+    private NamedDeliverableFunctionsImpl() {}
 
   }
   
-  public static class SimpleDeliverableFunctions {
+  public static class NamedDeliverableFunctions {
 
-    private SimpleDeliverableFunctions() {}
+    private NamedDeliverableFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,BCUWhZy1j2UxURphUea3CffwoXc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,tpuAw9ZiE8lCmtqbjiQpHZ3N/Gs=] */

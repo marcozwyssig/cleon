@@ -80,26 +80,6 @@ public class Backlog extends DynamicResource implements IBacklog {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule selectModule() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_module);
-  }
-
-  public Backlog setModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module) {
-    _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_module, module);
-    return this;
-  }
-    
-  @Override
-  public ch.actifsource.core.javamodel.IResource selectTarget() {
-    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
-  }
-
-  public Backlog setTarget(ch.actifsource.core.javamodel.IResource target) {
-    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -119,8 +99,6 @@ public class Backlog extends DynamicResource implements IBacklog {
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_groups, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_module, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -130,9 +108,5 @@ public class Backlog extends DynamicResource implements IBacklog {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_groups, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog> selectToMeModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule object) {
-    return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.Backlog_module, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,Sjq6Sgh8WJdIA5eToM/H4/HY6c8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28af8502-ff9c-11e4-ac0a-959b440f987f,bwA8ugYKXr4Ks2hlBB9RGqjSw60=] */

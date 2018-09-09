@@ -71,11 +71,11 @@ public class Schedule extends DynamicResource implements ISchedule {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases selectReleases() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases);
+  public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases selectReleases() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases);
   }
 
-  public Schedule setReleases(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases releases) {
+  public Schedule setReleases(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases releases) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases, releases);
     return this;
   }
@@ -119,7 +119,7 @@ public class Schedule extends DynamicResource implements ISchedule {
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.ICalendar.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_calendar, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlannings.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_sprintPlanning, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.targetdates.javamodel.IDeadlines.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_targetDates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -127,7 +127,7 @@ public class Schedule extends DynamicResource implements ISchedule {
 
   // toMeRelations
   
-  public static cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.ISchedule selectToMeReleases(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases object) {
+  public static cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.ISchedule selectToMeReleases(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases object) {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.ISchedule.class, cleon.initialization.projectmanagement.spec.planning.schedule.SchedulePackage.Schedule_releases, object.getResource());
   }
   
@@ -144,4 +144,4 @@ public class Schedule extends DynamicResource implements ISchedule {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,DuaZxFfN+M2XmPFaBL88B8Cr2Ss=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,YgcUkFdvO4ZBuLjz+eIaezyEMyY=] */

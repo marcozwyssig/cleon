@@ -71,11 +71,11 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule selectModule() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module);
+  public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome selectModule() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module);
   }
 
-  public ModuleUtilization setModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule module) {
+  public ModuleUtilization setModule(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome module) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module, module);
     return this;
   }
@@ -119,7 +119,7 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_achiviesDeliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module, visitor);
     _acceptMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_roleUtilizations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -127,7 +127,7 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization> selectToMeModule(cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization> selectToMeModule(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module, object.getResource());
   }
   
@@ -140,4 +140,4 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,QNvCNDET8YEP0GSj8X9mG6VFdZs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,j/kQuFF+JwWjB4w8p0LsZdtp+2w=] */

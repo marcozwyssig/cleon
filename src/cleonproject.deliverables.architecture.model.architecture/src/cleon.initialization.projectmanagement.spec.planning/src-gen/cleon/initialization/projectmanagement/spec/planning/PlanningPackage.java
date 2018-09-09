@@ -11,7 +11,6 @@ public class PlanningPackage {
   public static final Resource Planning_initialposition = new Resource("f0d6b9d0-c1c9-11e6-bd27-4740c1c9b441");
   public static final Resource Planning_constraints = new Resource("d4cfba71-d434-11e6-8a1d-7fdd5d29730e");
   public static final Resource Planning_scope = new Resource("68beebbb-3eb3-11e7-a89c-83d57940f0e3");
-  public static final Resource Planning_organisation = new Resource("c2a4583b-210a-11e8-9bf6-d910b575bad9");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +31,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning,kaZ2LUZRHIMcN8mDxJcfqQ0sEXs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning,0b+WiKK+M9nEHHnTRXlXQ8YrnBw=] */

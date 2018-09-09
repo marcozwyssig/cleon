@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="3d2d0b71-bbd1-11e6-997f-d73ea5a3671c">
   <owns predicate="ef35ed3c-bbcc-11e6-997f-d73ea5a3671c">
     <resource statement-guid="38d6e7b8-c6bf-11e6-8242-2f0ed6756d77" type="resource" guid="38d476b5-c6bf-11e6-8242-2f0ed6756d77" />
+    <resource statement-guid="7b2682cf-b468-11e8-bb21-172cc8e5f7cd" type="resource" guid="7b2682cc-b468-11e8-bb21-172cc8e5f7cd" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="3d2d0b73-bbd1-11e6-997f-d73ea5a3671c" type="resource" guid="53cc7703-bbcc-11e6-997f-d73ea5a3671c" />
@@ -10,13 +11,29 @@
     <object statement-guid="38d6e7b8-c6bf-11e6-8242-2f0ed6756d77">
       <resource guid="38d476b5-c6bf-11e6-8242-2f0ed6756d77">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="38d476b7-c6bf-11e6-8242-2f0ed6756d77" type="resource" guid="bd486ba5-bc89-11e6-b169-a12bde5a1c7c" />
+          <object statement-guid="38d476b7-c6bf-11e6-8242-2f0ed6756d77" type="resource" guid="134c7952-b467-11e8-bb21-172cc8e5f7cd" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="399d6c6f-c6bf-11e6-8242-2f0ed6756d77" type="literal">Simple 1</object>
+          <object statement-guid="399d6c6f-c6bf-11e6-8242-2f0ed6756d77" type="literal">Document 1</object>
         </predicate>
         <predicate guid="86add80a-ce46-11e4-8e43-f3d67d2046f9">
           <object statement-guid="cbd6bca7-aaaa-11e8-b25a-7dd9f85a27ad" type="literal">short </object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="76223c33-b46d-11e8-bb21-172cc8e5f7cd" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7b2682cf-b468-11e8-bb21-172cc8e5f7cd">
+      <resource guid="7b2682cc-b468-11e8-bb21-172cc8e5f7cd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7b2682ce-b468-11e8-bb21-172cc8e5f7cd" type="resource" guid="471bb7a7-b467-11e8-bb21-172cc8e5f7cd" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85d1d629-b468-11e8-bb21-172cc8e5f7cd" type="literal">System 1</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="7742c764-b46d-11e8-bb21-172cc8e5f7cd" type="literal">2</object>
         </predicate>
       </resource>
     </object>

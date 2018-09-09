@@ -13,14 +13,12 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collabor
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_togaf/TestReferenceArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Sprint_3.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_software/SampleArchitecture_Architecture.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/AP01_WorkpackageSample.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Kontrolle_Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Hindernisse_Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Risikomanagement_Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Sample_Ressourcen.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/ConstraintProject_Planung.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/AP02_Workpackage_B.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_eamod_ncv/F_higkeiten.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_togaf/TestSolutionArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_plattform/MyPlattform_Architecture.adoc

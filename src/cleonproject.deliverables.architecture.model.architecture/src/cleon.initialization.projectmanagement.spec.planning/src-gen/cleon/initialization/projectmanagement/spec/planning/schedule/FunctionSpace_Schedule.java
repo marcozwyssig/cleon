@@ -11,13 +11,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import java.util.ArrayList;
 import java.time.LocalDate;
 import cleon.common.resources.spec.calendar.FunctionSpace.DayFunctions;
-import cleon.common.resources.spec.calendar.javamodel.ICalendar;
-import cleon.common.resources.spec.calendar.javamodel.IDay;
-import cleon.common.resources.spec.calendar.javamodel.IMonth;
-import cleon.common.resources.spec.calendar.javamodel.IYear;
-import cleon.common.resources.spec.calendar.javamodel.Month;
-import cleon.common.resources.spec.calendar.javamodel.Year;
-import cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.IReleases;
+import cleon.common.resources.spec.calendar.javamodel.*;
+import cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.IReleases;
 /* End Protected Region   [[acb90998-20c6-11e6-9bb5-2b7a5dccc043,imports]] */
 
 public class FunctionSpace_Schedule {

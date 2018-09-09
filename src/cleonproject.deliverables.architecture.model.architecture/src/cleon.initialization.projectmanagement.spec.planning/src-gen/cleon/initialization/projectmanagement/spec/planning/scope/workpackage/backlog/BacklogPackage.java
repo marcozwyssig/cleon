@@ -14,8 +14,6 @@ public class BacklogPackage {
   public static final Resource Text_writer = new Resource("eb51648f-36ad-11e5-95d9-2b04d7ab02d9");
   public static final Resource Text_date = new Resource("f31e7697-36ad-11e5-95d9-2b04d7ab02d9");
   public static final Resource WorkItemBase_reference = new Resource("6ea684ff-377b-11e5-95d9-2b04d7ab02d9");
-  public static final Resource Backlogs_backlog = new Resource("c2e2acff-b9c1-11e5-a5dc-db9071475fc6");
-  public static final Resource Backlogs = new Resource("451dafb7-b9c4-11e5-a5dc-db9071475fc6");
   public static final Resource Backlog_plannedEstimate = new Resource("603f809e-c027-11e5-b927-b1b055d0575f");
   public static final Resource WorkItem_preconditions = new Resource("49b2a392-c126-11e5-bfd0-47571a06cb62");
   public static final Resource Effort = new Resource("604db26f-c4d9-11e5-b41d-5d67443850a2");
@@ -31,8 +29,8 @@ public class BacklogPackage {
   public static final Resource Effort___Z_0 = new Resource("6ab80482-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource Effort___W_00 = new Resource("6ba26439-c4d9-11e5-b41d-5d67443850a2");
   public static final Resource EffortAware_estimate = new Resource("7fd39c45-c4d9-11e5-b41d-5d67443850a2");
-  public static final Resource FunctionSpace_Backlog = new Resource("2e5b33c6-c4e2-11e5-b41d-5d67443850a2");
-  public static final Resource FunctionSpace_WorkItemGroup = new Resource("2e5b3406-c4e2-11e5-b41d-5d67443850a2");
+  public static final Resource FunctionSpace_aE_Backlog_Backlog = new Resource("2e5b33c6-c4e2-11e5-b41d-5d67443850a2");
+  public static final Resource FunctionSpace_aE_Backlog_WorkItemGroup = new Resource("2e5b3406-c4e2-11e5-b41d-5d67443850a2");
   public static final Resource WorkItemState = new Resource("b27abc8f-cb92-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_Understanding = new Resource("b94be2de-cb92-11e5-b911-69bd21f5af67");
   public static final Resource WorkItemState_Input = new Resource("be397b8b-cb92-11e5-b911-69bd21f5af67");
@@ -43,10 +41,9 @@ public class BacklogPackage {
   public static final Resource WorkItemState_ReadyForImplement = new Resource("d8c1cc66-cbd5-11e5-be6a-5f91e49e8f24");
   public static final Resource WorkItemState_ReadyForConfirm = new Resource("de1d904b-cbd5-11e5-be6a-5f91e49e8f24");
   public static final Resource EffortAware = new Resource("a2ffdac0-e6d4-11e5-a502-93f18d5742dc");
-  public static final Resource FunctionSpace_WorkItem = new Resource("769ebaa9-f2be-11e5-8010-7b34e2b59618");
-  public static final Resource Backlog_module = new Resource("54e7bd0f-bbca-11e6-997f-d73ea5a3671c");
+  public static final Resource FunctionSpace_aE_Backlog_WorkItem = new Resource("769ebaa9-f2be-11e5-8010-7b34e2b59618");
   public static final Resource WorkItemBase = new Resource("d52dddaa-28af-11e7-b0c5-5d730025d0c2");
-  public static final Resource FunctionSpace_WorkItemBase = new Resource("59b48063-3432-11e7-9486-85e29952984a");
+  public static final Resource FunctionSpace_aE_Backlog_WorkItemBase = new Resource("59b48063-3432-11e7-9486-85e29952984a");
   
   /* Begin Protected Region [[user]] */
   
@@ -67,4 +64,4 @@ public class BacklogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog,oP/6U/6fM9KnxcFUKxfF5dgJ1vY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog,0Zpn1XTS1AA3ehmlslxLB0Ln1wg=] */

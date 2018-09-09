@@ -8,7 +8,7 @@ public interface IModuleUtilization extends ch.actifsource.core.javamodel.IDecor
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModule selectModule();
+  public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome selectModule();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> selectRoleUtilizations();
   
@@ -16,4 +16,4 @@ public interface IModuleUtilization extends ch.actifsource.core.javamodel.IDecor
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,3xPMqubhbim9jAajs23+FvX6V3c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,o8d6sEON6aRUlHdUQzcjHAPuDpc=] */

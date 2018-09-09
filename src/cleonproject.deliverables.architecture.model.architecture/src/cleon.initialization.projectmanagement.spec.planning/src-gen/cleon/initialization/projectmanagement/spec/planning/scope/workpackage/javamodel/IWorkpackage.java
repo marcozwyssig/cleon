@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.planning.scope.workpackage.j
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IWorkpackage extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.doc.spec.doc.document.javamodel.INamedDocument {
+public interface IWorkpackage extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.common.doc.spec.doc.chapter.javamodel.IChapter, ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ca090201-bbc8-11e6-997f-d73ea5a3671c");
   
@@ -10,12 +10,12 @@ public interface IWorkpackage extends cleon.common.resources.spec.resources.id.j
   
   public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.javamodel.IWorkspaceGoals selectGoals();
   
-  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackageDependency> selectDependsOn();
-  
-  public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklogs selectBacklogs();
+  public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog selectBacklog();
   
   public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization selectUtilization();
   
+  public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome selectOutcome();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ca090201-bbc8-11e6-997f-d73ea5a3671c,YLkQWXu15MnaDIat1E9lOpQesiI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ca090201-bbc8-11e6-997f-d73ea5a3671c,FgvoP8FWpUEt01VfaV6etGOV+Ns=] */

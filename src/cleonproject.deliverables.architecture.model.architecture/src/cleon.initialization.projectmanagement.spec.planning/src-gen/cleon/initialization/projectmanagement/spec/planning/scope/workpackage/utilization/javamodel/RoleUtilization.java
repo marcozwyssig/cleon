@@ -60,11 +60,11 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
   // relations
   
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole selectRole() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role);
+  public cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole selectRole() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role);
   }
 
-  public RoleUtilization setRole(cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole role) {
+  public RoleUtilization setRole(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole role) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role, role);
     return this;
   }
@@ -97,16 +97,16 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> selectToMeRole(cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> selectToMeRole(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,J1ZfZcajnfOj6jaiLp55IJs9P6c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,DifsDmpZMjwL/winzEED9eIYbRw=] */

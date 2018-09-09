@@ -15,6 +15,7 @@ public class ResourcePackage {
   public static final Resource ResourceManagement_infrastructure = new Resource("03e4fc16-c769-11e5-b3f9-43c5a0896ea1");
   public static final Resource TargetDate = new Resource("2ed622a1-20ba-11e6-9bb5-2b7a5dccc043");
   public static final Resource ResourceManagement_teams = new Resource("eb2a1fa7-2eea-11e6-8bd9-a77b8d2a3a0e");
+  public static final Resource ResourceManagement_roles = new Resource("f79d3c86-bc93-11e6-904c-8bf6f8927ff0");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +36,4 @@ public class ResourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.resource,JugsLmU0sYnsHOE50TK5dX+T/uQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.resource,NvSUKbi5G7IDGVJPeeW4SEzpZbQ=] */

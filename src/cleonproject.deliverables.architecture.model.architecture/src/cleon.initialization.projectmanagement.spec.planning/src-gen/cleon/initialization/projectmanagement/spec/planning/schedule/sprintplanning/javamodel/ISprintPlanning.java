@@ -8,7 +8,7 @@ public interface ISprintPlanning extends ch.actifsource.core.javamodel.IDecorato
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint selectSprint();
+  public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint selectSprint();
   
   public cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintGoals selectSprintGoals();
   
@@ -20,4 +20,4 @@ public interface ISprintPlanning extends ch.actifsource.core.javamodel.IDecorato
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,/J0qR7OGq4Qtkd4b4HTAJbnjfes=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,uasonxWrqxYnwpyodWyoA793x3g=] */

@@ -71,12 +71,12 @@ public class Workpackages extends DynamicResource implements IWorkpackages {
   }
     
   @Override
-  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage> selectWorkpackages() {
-    return _getList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage> selectWorkpackages() {
+    return _getMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages);
   }
 
-  public Workpackages setWorkpackages(java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage> workpackages) {
-    _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages, workpackages);
+  public Workpackages setWorkpackages(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage> workpackages) {
+    _setMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages, workpackages);
     return this;
   }
     
@@ -89,7 +89,7 @@ public class Workpackages extends DynamicResource implements IWorkpackages {
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages, visitor);
+    _acceptMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackages_workpackages, visitor);
   }
 
   // toMeRelations
@@ -99,4 +99,4 @@ public class Workpackages extends DynamicResource implements IWorkpackages {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdbd85be-1e1b-11e8-8938-5f8feacc30f1,jqNhcjslLjsGokkaBEHGaTGX/zw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdbd85be-1e1b-11e8-8938-5f8feacc30f1,9Id54j2mgbgkEtP2SydXXCVyAD4=] */

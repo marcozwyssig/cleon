@@ -14,6 +14,8 @@ public interface IResourceManagement extends cleon.common.doc.spec.doc.document.
   
   public cleon.initialization.projectmanagement.spec.resource.skills.javamodel.ISkills selectSkills();
   
+  public cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRoles selectRoles();
+  
   public cleon.initialization.projectmanagement.spec.resource.infrastructure.javamodel.IInfrastructure selectInfrastructure();
   
   public cleon.initialization.projectmanagement.spec.resource.locations.javamodel.ILocations selectLocations();
@@ -22,4 +24,4 @@ public interface IResourceManagement extends cleon.common.doc.spec.doc.document.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,88+5uD+tyy5tC7rdLOXZ/qN1t+Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,jJeN73Aj7TZkaZNaJ8bgQuNww2c=] */

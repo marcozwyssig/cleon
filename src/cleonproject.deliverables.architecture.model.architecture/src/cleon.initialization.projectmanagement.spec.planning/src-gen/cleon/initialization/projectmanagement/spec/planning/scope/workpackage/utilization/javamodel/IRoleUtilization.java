@@ -10,8 +10,8 @@ public interface IRoleUtilization extends ch.actifsource.core.javamodel.IDecorat
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.planning.organisation.roles.javamodel.IRole selectRole();
+  public cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole selectRole();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,5+91Byv4M6fYFVEL7A1hIP9wH6o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,7TFrtz5OjS/g2lgfvRIkks5sGFQ=] */

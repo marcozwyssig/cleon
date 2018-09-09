@@ -89,11 +89,11 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint selectSprint() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint);
+  public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint selectSprint() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint);
   }
 
-  public SprintPlanning setSprint(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint sprint) {
+  public SprintPlanning setSprint(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint sprint) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, sprint);
     return this;
   }
@@ -179,7 +179,7 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintBacklog.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprintBacklog, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintCapacity.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprintCapacity, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintGoals.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprintGoals, visitor);
@@ -191,7 +191,7 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning> selectToMeSprint(cleon.initialization.projectmanagement.spec.planning.schedule.milestones.javamodel.ISprint object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning> selectToMeSprint(cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.javamodel.ISprintPlanning.class, cleon.initialization.projectmanagement.spec.planning.schedule.sprintplanning.SprintplanningPackage.SprintPlanning_sprint, object.getResource());
   }
   
@@ -212,4 +212,4 @@ public class SprintPlanning extends DynamicResource implements ISprintPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,ONQbAW/+1sq04r7fq1Kkl+UNu+A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db3c786a-c009-11e5-a165-d34765931e10,V9AftePPkB2vvks7xWfCT5apb2c=] */

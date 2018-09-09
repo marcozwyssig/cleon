@@ -10,10 +10,10 @@ public interface IScope extends cleon.common.doc.spec.doc.chapter.javamodel.ICha
   
   public cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverables selectDeliverables();
   
-  public cleon.initialization.projectmanagement.spec.planning.scope.module.javamodel.IModules selectModules();
+  public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectOutcomes();
   
   public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackages selectWorkpackages();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,hk/DuKdhBpMAyPMi81aGwmW9Jr0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,n4kD1xPlhdbt1NtERARcxK11PJ8=] */

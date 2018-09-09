@@ -93,28 +93,28 @@ public class FunctionSpace_DocBook_Planning {
 
   }
 
-  public static interface ISimpleDeliverableFunctions extends IDynamicResourceExtension {
+  public static interface INamedDeliverableFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7cfff75c-c1e5-11e6-84f4-db6ef89bc9ce")
     public java.lang.String RenderDeliverableContent();
 
   }
   
-  public static interface ISimpleDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SimpleDeliverableFunctionsImpl implements ISimpleDeliverableFunctionsImpl {
+  public static class NamedDeliverableFunctionsImpl implements INamedDeliverableFunctionsImpl {
 
-    public static final ISimpleDeliverableFunctionsImpl INSTANCE = new SimpleDeliverableFunctionsImpl();
+    public static final INamedDeliverableFunctionsImpl INSTANCE = new NamedDeliverableFunctionsImpl();
 
-    private SimpleDeliverableFunctionsImpl() {}
+    private NamedDeliverableFunctionsImpl() {}
 
   }
   
-  public static class SimpleDeliverableFunctions {
+  public static class NamedDeliverableFunctions {
 
-    private SimpleDeliverableFunctions() {}
+    private NamedDeliverableFunctions() {}
 
   }
 
@@ -168,28 +168,28 @@ public class FunctionSpace_DocBook_Planning {
 
   }
 
-  public static interface IModuleFunctions extends IDynamicResourceExtension {
+  public static interface IOutcomeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cff76242-c205-11e6-84f4-db6ef89bc9ce")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IModuleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IOutcomeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleFunctionsImpl implements IModuleFunctionsImpl {
+  public static class OutcomeFunctionsImpl implements IOutcomeFunctionsImpl {
 
-    public static final IModuleFunctionsImpl INSTANCE = new ModuleFunctionsImpl();
+    public static final IOutcomeFunctionsImpl INSTANCE = new OutcomeFunctionsImpl();
 
-    private ModuleFunctionsImpl() {}
+    private OutcomeFunctionsImpl() {}
 
   }
   
-  public static class ModuleFunctions {
+  public static class OutcomeFunctions {
 
-    private ModuleFunctions() {}
+    private OutcomeFunctions() {}
 
   }
 
@@ -379,4 +379,4 @@ public class FunctionSpace_DocBook_Planning {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,jTjad93y+7++SfrWXcq8ODFJlv0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,3mdkwgrZ1hO6bWnt0Qo3UbW7mOE=] */

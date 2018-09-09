@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class PlanningPackage {
   
-  public static final Resource FunctionSpace_aE_Planning_Module = new Resource("e599bbcd-b540-11e5-bc0c-f35b68c3609a");
+  public static final Resource FunctionSpace_aE_Planning_Outcome = new Resource("e599bbcd-b540-11e5-bc0c-f35b68c3609a");
   public static final Resource FunctionSpace_aE_Planning_Backlog = new Resource("818591c8-ba81-11e5-b56d-4f524d402f4b");
   public static final Resource FunctionSpace_aE_Planning_SprintBacklog = new Resource("6c14f3ac-c02a-11e5-b927-b1b055d0575f");
   public static final Resource FunctionSpace_aE_Planning_SprintCapacity = new Resource("510a636b-c02b-11e5-b927-b1b055d0575f");
@@ -42,4 +42,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,wGrN5JGdQHmYwbE+ODCn+/7E4qY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,cRhfutVCMdNXXPt8x86/71HWzGo=] */

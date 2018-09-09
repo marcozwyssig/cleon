@@ -18,10 +18,8 @@ public interface IPlanning extends cleon.common.doc.spec.doc.document.javamodel.
   
   public cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.ISchedule selectSchedule();
   
-  public cleon.initialization.projectmanagement.spec.planning.organisation.javamodel.IOrganisation selectOrganisation();
-  
   public cleon.initialization.projectmanagement.spec.resource.javamodel.IResourceManagement selectResourceManagement();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,NihXC75O20yGmUrLAesMfHs5ySc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,k4iU6N/KgWweaX6l4NZKSOka930=] */

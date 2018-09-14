@@ -2,7 +2,7 @@
 <?artifactRepository version='1.1.0'?>
 <repository name='Update Site' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
   <properties size='2'>
-    <property name='p2.timestamp' value='1536011511358'/>
+    <property name='p2.timestamp' value='1536940262302'/>
     <property name='p2.compressed' value='false'/>
   </properties>
   <mappings size='3'>
@@ -10,7 +10,7 @@
     <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
     <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
   </mappings>
-  <artifacts size='632'>
+  <artifacts size='721'>
     <artifact classifier='osgi.bundle' id='cleon.conception.organisation.spec.epm.builtin' version='0.3.10'>
       <properties size='3'>
         <property name='artifact.size' value='120341'/>
@@ -87,6 +87,13 @@
         <property name='download.size' value='10464024'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.support.documentation.template.asciidoc.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='800772'/>
+        <property name='download.size' value='800772'/>
+        <property name='download.md5' value='78e64268f52175c8d4bdf68353a3ad9f'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.knowledge.spec.knowledge.builtin' version='0.3.16'>
       <properties size='3'>
         <property name='artifact.size' value='20642'/>
@@ -153,6 +160,13 @@
         <property name='download.md5' value='4d36f705e0e89cd4c73c7ca1cd1375d3'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.importwizard.spec.xml2asrc.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='62669'/>
+        <property name='download.size' value='62669'/>
+        <property name='download.md5' value='f5986c47af2e72d8ed447d783c294f04'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.buildingblock.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='61726'/>
@@ -165,6 +179,13 @@
         <property name='artifact.size' value='30499'/>
         <property name='download.size' value='30499'/>
         <property name='download.md5' value='ecdb21755b75bfa251288709328e5bfc'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.support.collaboration.spec.sda.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='44523'/>
+        <property name='download.size' value='44523'/>
+        <property name='download.md5' value='b71d6a636ebcb31d907a3d0fad889da2'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.gef' version='3.11.0.201606061308'>
@@ -228,6 +249,13 @@
         <property name='download.md5' value='c75f291b1e189dff7fe6c5b8baf04b70'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.resource.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='186573'/>
+        <property name='download.size' value='186573'/>
+        <property name='download.md5' value='7af48ed91eb0e77ae373a0567c395737'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.analysis.spec.analysis.builtin' version='0.3.17'>
       <properties size='3'>
         <property name='artifact.size' value='130339'/>
@@ -240,6 +268,11 @@
         <property name='artifact.size' value='3933'/>
         <property name='download.size' value='3933'/>
         <property name='download.md5' value='e710b6c67e5fd4ce07fa51b6a820c434'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.environment.resourcescope' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='171085'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.devops.builtin' version='0.3.14'>
@@ -298,6 +331,11 @@
         <property name='download.md5' value='87adc6ab3f772c05aea3556a31439b48'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.builder' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='571841'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.processlanguage.spec.bpmn.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='50110'/>
@@ -310,6 +348,13 @@
         <property name='artifact.size' value='35518'/>
         <property name='download.size' value='35518'/>
         <property name='download.md5' value='44d7a3fe00371daed83c42483b0d032f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.implementation.gradle.template.gradle.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='48985'/>
+        <property name='download.size' value='48985'/>
+        <property name='download.md5' value='3b42cdce9b99a3778417a646353ffc0d'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.core' version='9.0.2.201808211645'>
@@ -389,6 +434,13 @@
         <property name='download.md5' value='e61656d479f8185157b8160d25cf4e47'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.testing.spec.testing.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='278760'/>
+        <property name='download.size' value='278760'/>
+        <property name='download.md5' value='f0f3037fa15d3a655ea89f73fb507f30'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.frameworkadmin.equinox' version='1.0.800.v20170524-1345'>
       <properties size='1'>
         <property name='download.size' value='64644'/>
@@ -404,6 +456,11 @@
     <artifact classifier='osgi.bundle' id='org.objectweb.asm' version='6.0.0.v20180116-1719'>
       <properties size='1'>
         <property name='download.size' value='114201'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.transientresource' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='69305'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.microservices.builtin' version='0.3.15'>
@@ -453,6 +510,13 @@
         <property name='artifact.size' value='3741'/>
         <property name='download.size' value='3741'/>
         <property name='download.md5' value='06da627251aca95c18e810d3e91dc782'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.arc42.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='201689'/>
+        <property name='download.size' value='201689'/>
+        <property name='download.md5' value='c13a5116c8a7917a5ef6331dc0770bc6'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.gof.builtin' version='0.3.17'>
@@ -533,6 +597,11 @@
         <property name='download.size' value='35137'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.templateeditor' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='1065452'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.browser' version='3.6.100.v20170418-1342'>
       <properties size='1'>
         <property name='download.size' value='206409'/>
@@ -564,9 +633,22 @@
         <property name='download.md5' value='7685fcba5d41efeec0d6520bac873733'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.resources.spec.calendar.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='613723'/>
+        <property name='download.size' value='613723'/>
+        <property name='download.md5' value='7eb2fecd5a4224a16b23e8578fc16860'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.core.contexts' version='1.6.0.v20170322-1144'>
       <properties size='1'>
         <property name='download.size' value='48411'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='cleon' version='0.3.18'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='11159'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.template.eclipse.builtin' version='0.3.16'>
@@ -574,6 +656,13 @@
         <property name='artifact.size' value='225936'/>
         <property name='download.size' value='225936'/>
         <property name='download.md5' value='34bd599109d59dcd3aeb8b5517e75f58'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.buildingblock.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='61696'/>
+        <property name='download.size' value='61696'/>
+        <property name='download.md5' value='c542fe23f007e80e789c1600aea14aad'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.hermes.builtin' version='0.3.10'>
@@ -598,6 +687,13 @@
         <property name='artifact.size' value='17273'/>
         <property name='download.size' value='17273'/>
         <property name='download.md5' value='6b403b6accb4fff6195194f67d51e914'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.resources.spec.language.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='159024'/>
+        <property name='download.size' value='159024'/>
+        <property name='download.md5' value='236619ed9db074a33ce6ff5ea506dc33'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.resources.spec.resources.builtin' version='0.3.10'>
@@ -641,6 +737,13 @@
     <artifact classifier='osgi.bundle' id='ch.actifsource.util' version='9.0.2.201808211645'>
       <properties size='1'>
         <property name='download.size' value='987707'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.glossary.spec.glossary.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='15096'/>
+        <property name='download.size' value='15096'/>
+        <property name='download.md5' value='f182c1db9ad8eadbdc3a1bb716eb1f4c'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.cqrs.builtin' version='0.3.14'>
@@ -702,6 +805,13 @@
         <property name='artifact.size' value='21089'/>
         <property name='download.size' value='21089'/>
         <property name='download.md5' value='d8b592e63fdf25cabd97f13a6b738b0a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.platform.spec.arc42.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='40378'/>
+        <property name='download.size' value='40378'/>
+        <property name='download.md5' value='7740fc83eba9c72ec6e71200ef9af6ac'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.arc42.builtin' version='0.3.13'>
@@ -842,9 +952,21 @@
         <property name='download.size' value='11985594'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.wizard.generic' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='489360'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.osgi.services' version='3.6.0.v20170228-1906'>
       <properties size='1'>
         <property name='download.size' value='121220'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.planning.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='624708'/>
+        <property name='download.size' value='624708'/>
+        <property name='download.md5' value='351b247243709eacd009759cad4136e7'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.eamod.builtin' version='0.3.14'>
@@ -986,6 +1108,11 @@
         <property name='download.size' value='66137'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.widget' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='1287063'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.testing.spec.testing.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='278819'/>
@@ -1053,9 +1180,21 @@
         <property name='download.size' value='40363'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.doc.template.docbook.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='132887'/>
+        <property name='download.size' value='132887'/>
+        <property name='download.md5' value='7c5e9c3281e9422e34641382693cdc36'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.pde.build' version='3.9.300.v20170515-0912'>
       <properties size='1'>
         <property name='download.size' value='491455'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.eclipse.util' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='13140'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.uml.builtin' version='0.3.13'>
@@ -1101,6 +1240,13 @@
         <property name='artifact.size' value='230083'/>
         <property name='download.size' value='230083'/>
         <property name='download.md5' value='fe6eaa55c3032318dda1f4a4e55e9921'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.doc.template.asciidoc.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='149177'/>
+        <property name='download.size' value='149177'/>
+        <property name='download.md5' value='faa2ee6b91da395a52dd3c67d53f112b'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.doc.spec.doc.builtin' version='0.3.13'>
@@ -1211,6 +1357,13 @@
         <property name='download.md5' value='9d0860f38be96e2057c9d88cede1efb9'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.implementation.gradle.spec.plugin.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='17273'/>
+        <property name='download.size' value='17273'/>
+        <property name='download.md5' value='ee7a1cd5641ad570a57c33af21ca588c'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.support.collaboration.spec.sda.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='44523'/>
@@ -1301,6 +1454,13 @@
         <property name='download.size' value='230576'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.gof.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='21938'/>
+        <property name='download.size' value='21938'/>
+        <property name='download.md5' value='d0dddf5e68561d21125d6aee66ae94a9'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.template.tj3.builtin' version='0.3.15'>
       <properties size='3'>
         <property name='artifact.size' value='86923'/>
@@ -1360,6 +1520,11 @@
         <property name='download.md5' value='d727c59f8a1f0d8fde9758fb8174e971'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.generator' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='269056'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.implementation.gradle.template.gradle.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='48985'/>
@@ -1413,6 +1578,13 @@
         <property name='download.size' value='11159'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.spec.actifsource.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='206686'/>
+        <property name='download.size' value='206686'/>
+        <property name='download.md5' value='4540f8fbe1988e2481f11103f5a1b8b1'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.navigator' version='3.7.0.v20170418-1342'>
       <properties size='1'>
         <property name='download.size' value='445338'/>
@@ -1430,6 +1602,13 @@
         <property name='artifact.size' value='43826'/>
         <property name='download.size' value='43826'/>
         <property name='download.md5' value='3243b5fadeb0f64bc2b4e7b91844cde0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.desktop.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='75105'/>
+        <property name='download.size' value='75105'/>
+        <property name='download.md5' value='2eb032b7d51a19dbe9718f7f441082dc'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.support.publishing.spec.website.builtin' version='0.3.10'>
@@ -1500,11 +1679,25 @@
         <property name='download.md5' value='a5a6bfdf4907a84f6c71e1767557f29d'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.support.documentation.template.docbook.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='428119'/>
+        <property name='download.size' value='428119'/>
+        <property name='download.md5' value='8b197c487c99efaf0f5f471a98afa420'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.web.builtin' version='0.3.16'>
       <properties size='3'>
         <property name='artifact.size' value='3810'/>
         <property name='download.size' value='3810'/>
         <property name='download.md5' value='caea0459ec13821471a82b9a6fbc9f62'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.steering.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='229390'/>
+        <property name='download.size' value='229390'/>
+        <property name='download.md5' value='318ca2bb3be920f483d6e9557dc3094c'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.devops.builtin' version='0.3.13'>
@@ -1531,6 +1724,11 @@
         <property name='artifact.size' value='77467'/>
         <property name='download.size' value='77467'/>
         <property name='download.md5' value='7fe5c7027deb7dee2defc4c1e3d7bd7a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.diagram.classes' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='561101'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.organisation.spec.epm.builtin' version='0.3.16'>
@@ -1561,11 +1759,25 @@
         <property name='download.md5' value='77cb8abf609c230c942decd0a401915e'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.xml.spec.xml.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='12140'/>
+        <property name='download.size' value='12140'/>
+        <property name='download.md5' value='458c943534a20c78ddcd24fc5cbad220'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.processlanguage.spec.bpmn.builtin' version='0.3.17'>
       <properties size='3'>
         <property name='artifact.size' value='50110'/>
         <property name='download.size' value='50110'/>
         <property name='download.md5' value='4465073c910fc8dcb1435d96712a496c'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.analysis.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='35566'/>
+        <property name='download.size' value='35566'/>
+        <property name='download.md5' value='e7ec6d1b57b48cb454d9f7af491f2539'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.pde' version='3.13.4.v20180330-0640'>
@@ -1729,11 +1941,28 @@
         <property name='download.md5' value='1c03f7c871f119a911856b2185d17304'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.libs_external' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='10464007'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.knowledge.template.asciidoc.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='3728'/>
         <property name='download.size' value='3728'/>
         <property name='download.md5' value='823466fbdd6d2afd59f39ff698dd8426'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.elementtexteditor' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='969611'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.cqrs.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='7644'/>
+        <property name='download.size' value='7644'/>
+        <property name='download.md5' value='dc88332fd7129b1782e6fcf9c8a7d973'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.model.plugins.builtin' version='0.3.12'>
@@ -1769,6 +1998,13 @@
         <property name='artifact.size' value='3933'/>
         <property name='download.size' value='3933'/>
         <property name='download.md5' value='cc871e0a6adcdceea83e2206bbfdde2f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.eda.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='21089'/>
+        <property name='download.size' value='21089'/>
+        <property name='download.md5' value='1f7fd0c1d35521ed7d68601931141c56'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench' version='1.5.1.v20170815-1446'>
@@ -1873,6 +2109,13 @@
         <property name='download.size' value='207916'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.mobile.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3841'/>
+        <property name='download.size' value='3841'/>
+        <property name='download.md5' value='3f850d2dfa9497369a9aba1ce1343ee3'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.transientresource' version='9.0.2.201808211645'>
       <properties size='1'>
         <property name='download.size' value='69300'/>
@@ -1958,6 +2201,13 @@
         <property name='download.md5' value='ebf355450bf36c5408dfbd7911790fc6'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.doc.template.markdown.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3609'/>
+        <property name='download.size' value='3609'/>
+        <property name='download.md5' value='35dd63bbf70192b2abca188ad2c98f4d'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleonproject.deliverables.architecture.model.architecture.builtin' version='0.2.0'>
       <properties size='1'>
         <property name='download.size' value='117842'/>
@@ -2022,6 +2272,13 @@
         <property name='download.md5' value='50342ad733f92e9f97f3b5f24bcb2450'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.analysis.spec.analysis.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='130321'/>
+        <property name='download.size' value='130321'/>
+        <property name='download.md5' value='eee6140f8c743d625fdc08965476ae6c'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.doc.template.docbook.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='132887'/>
@@ -2050,6 +2307,13 @@
         <property name='download.md5' value='b6b8b74f40a7c48ad79f5b62ba40bc78'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.implementation.dotnet.template.poco.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='5594'/>
+        <property name='download.size' value='5594'/>
+        <property name='download.md5' value='a212fba97e6fed6a6361f5cdc7f62934'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.arc42.builtin' version='0.3.15'>
       <properties size='3'>
         <property name='artifact.size' value='27805'/>
@@ -2057,9 +2321,23 @@
         <property name='download.md5' value='2b1330eccadb09b40b7fe8a4d905c6c1'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.organisation.spec.epm.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='120341'/>
+        <property name='download.size' value='120341'/>
+        <property name='download.md5' value='b1852abcad0cb266013704d0f019ee2b'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.services' version='1.3.0.v20170307-2032'>
       <properties size='1'>
         <property name='download.size' value='25795'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.template.xmi.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='229657'/>
+        <property name='download.size' value='229657'/>
+        <property name='download.md5' value='2e63ca57142b33b0288ab09ab58f5f83'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.xml.spec.xml.builtin' version='0.3.16'>
@@ -2067,6 +2345,13 @@
         <property name='artifact.size' value='12141'/>
         <property name='download.size' value='12141'/>
         <property name='download.md5' value='66d3521a8db32656119f31b87cf5d734'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.soa.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='15813'/>
+        <property name='download.size' value='15813'/>
+        <property name='download.md5' value='345a058bec060bbca22efc01d60e7201'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.simpleconfigurator.manipulator' version='2.0.300.v20170515-0721'>
@@ -2128,6 +2413,13 @@
         <property name='download.size' value='553528'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.template.eclipse.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='225936'/>
+        <property name='download.size' value='225936'/>
+        <property name='download.md5' value='be5a90e8a6f926eaf4365d70d0065279'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.ui.diagram.classes' version='9.0.0.201807191210'>
       <properties size='1'>
         <property name='download.size' value='560923'/>
@@ -2180,6 +2472,13 @@
         <property name='download.md5' value='170cba2eb3311882acf4b38208e5986d'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.knowledge.template.asciidoc.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3729'/>
+        <property name='download.size' value='3729'/>
+        <property name='download.md5' value='2809003bc6471340b91fd8b7238bdbd9'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.cqrs.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='7643'/>
@@ -2202,6 +2501,13 @@
         <property name='artifact.size' value='26743'/>
         <property name='download.size' value='26743'/>
         <property name='download.md5' value='f8827370af9e2b64323de625b52de70f'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.model.plugins.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='10122'/>
+        <property name='download.size' value='10122'/>
+        <property name='download.md5' value='f11019430b9762424339e4e8508d3cdc'/>
       </properties>
     </artifact>
     <artifact classifier='org.eclipse.update.feature' id='cleonproject' version='0.2.0'>
@@ -2229,11 +2535,23 @@
         <property name='download.md5' value='a4affc1e51fc81b22a614ac38acf7999'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.microservices.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3934'/>
+        <property name='download.size' value='3934'/>
+        <property name='download.md5' value='4e3e1c32908f0478052ec3cc41bc148f'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.web.builtin' version='0.3.17'>
       <properties size='3'>
         <property name='artifact.size' value='3810'/>
         <property name='download.size' value='3810'/>
         <property name='download.md5' value='095c1c8aa30c86a42097ab11d14c1d91'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.template' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='1415764'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.resource.builtin' version='0.3.10'>
@@ -2366,6 +2684,20 @@
         <property name='download.md5' value='0d6def38d48458fe66a2ff027b414970'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.resources.spec.resources.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='162261'/>
+        <property name='download.size' value='162261'/>
+        <property name='download.md5' value='5a5c6d65566e0d7b9ca8cfc2820f9422'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.template.versionone.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='50045'/>
+        <property name='download.size' value='50045'/>
+        <property name='download.md5' value='e1dc1764283703ad57b2e9912d3e778d'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.ui.component' version='9.0.0.201807191210'>
       <properties size='1'>
         <property name='download.size' value='428368'/>
@@ -2407,6 +2739,20 @@
         <property name='artifact.size' value='1213860'/>
         <property name='download.size' value='1213860'/>
         <property name='download.md5' value='3bd08a48dd1765091c8e371181de693a'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.network.spec.arc42.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3750'/>
+        <property name='download.size' value='3750'/>
+        <property name='download.md5' value='3463554c1686b593030f625b47505c55'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.projectmanagement.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='86073'/>
+        <property name='download.size' value='86073'/>
+        <property name='download.md5' value='35dafb6d734c5505913aa43935c94317'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.template.xml.builtin' version='0.3.16'>
@@ -2469,6 +2815,13 @@
         <property name='download.size' value='10947'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.importwizard.template.java.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='110652'/>
+        <property name='download.size' value='110652'/>
+        <property name='download.md5' value='a02b8e1c7852d4f36aa7b4d458e07d82'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.eai.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='3756'/>
@@ -2502,6 +2855,11 @@
         <property name='artifact.size' value='12694'/>
         <property name='download.size' value='12694'/>
         <property name='download.md5' value='1ada781d1cf613b339e0b739d93ae1b1'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.refactoring' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='142522'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.ide' version='3.13.1.v20170822-1526'>
@@ -2587,6 +2945,13 @@
         <property name='download.md5' value='fc31cb2f49db553ab79d1522871b7660'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.act.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3742'/>
+        <property name='download.size' value='3742'/>
+        <property name='download.md5' value='260b3abf6447824d3ee942f40f6922fe'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.swt.win32.win32.x86_64' version='3.106.3.v20180329-0507'>
       <properties size='1'>
         <property name='download.size' value='2784242'/>
@@ -2614,6 +2979,13 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.equinox.p2.director' version='2.3.300.v20160504-1450'>
       <properties size='1'>
         <property name='download.size' value='104577'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.template.tj3.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='86923'/>
+        <property name='download.size' value='86923'/>
+        <property name='download.md5' value='a63a370943230cc6d0a442822ce5c6ef'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.core.filesystem' version='1.7.0.v20170406-1337'>
@@ -2666,10 +3038,29 @@
         <property name='download.md5' value='78986c3292b0a7d04926fd77ff6bc3f9'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.knowledge.spec.knowledge.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='20641'/>
+        <property name='download.size' value='20641'/>
+        <property name='download.md5' value='c2e2e2843edd6da31f6eb60fc7409cea'/>
+      </properties>
+    </artifact>
     <artifact classifier='org.eclipse.update.feature' id='cleon' version='0.3.10'>
       <properties size='2'>
         <property name='download.contentType' value='application/zip'/>
         <property name='download.size' value='11146'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.wizard' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='555359'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.implementation.plantuml.template.uml.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='34405'/>
+        <property name='download.size' value='34405'/>
+        <property name='download.md5' value='2df9c06d14a493baab642fe82f732077'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.resources.spec.calendar.builtin' version='0.3.10'>
@@ -2792,6 +3183,13 @@
         <property name='download.md5' value='d4952ef7735eca066961e1e105f2c351'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.hermes.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='54824'/>
+        <property name='download.size' value='54824'/>
+        <property name='download.md5' value='7b06ea4b33b3ec8f41bd0cdaff6f65e5'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.testing.spec.testing.builtin' version='0.3.15'>
       <properties size='3'>
         <property name='artifact.size' value='278760'/>
@@ -2804,6 +3202,13 @@
         <property name='artifact.size' value='15095'/>
         <property name='download.size' value='15095'/>
         <property name='download.md5' value='2d3c257b217ec905004b0f904979c922'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.support.publishing.template.docpad.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='26745'/>
+        <property name='download.size' value='26745'/>
+        <property name='download.md5' value='afc1cf444e3352be85dbfea28dcc5a6a'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.template' version='9.0.0.201807191210'>
@@ -2824,6 +3229,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.jdt.debug' version='3.11.50.v20170920-1717'>
       <properties size='1'>
         <property name='download.size' value='934905'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.core' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='3707082'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.devops.builtin' version='0.3.16'>
@@ -2868,6 +3278,11 @@
         <property name='download.md5' value='fc9daf804013bb52179dbd8633716ae8'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.validator' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='169423'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.arc42.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='27805'/>
@@ -2897,6 +3312,13 @@
         <property name='artifact.size' value='50110'/>
         <property name='download.size' value='50110'/>
         <property name='download.md5' value='17639a5855ae437f674563e5d5912aa3'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.togaf.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='230084'/>
+        <property name='download.size' value='230084'/>
+        <property name='download.md5' value='f65e5f898dfa0d178819d6c477854e2b'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='javax.inject' version='1.0.0.v20091030'>
@@ -2970,9 +3392,30 @@
         <property name='download.md5' value='ae4e812b8d9f4be62f0fe6fe8e0f9713'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.model.hermes.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='43827'/>
+        <property name='download.size' value='43827'/>
+        <property name='download.md5' value='4ac596e7bed134b0bed06207ea4dc9c2'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.draw2d' version='3.10.100.201606061308'>
       <properties size='1'>
         <property name='download.size' value='616652'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.deployment.chocolatey.spec.nuspec.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='9096'/>
+        <property name='download.size' value='9096'/>
+        <property name='download.md5' value='6fc71b324b2544747e4651843b8c34c2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.deployment.chocolatey.template.nuget.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='12697'/>
+        <property name='download.size' value='12697'/>
+        <property name='download.md5' value='02e2a408e1b3c5ddbc872179ba961a8d'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.e4.ui.workbench.swt' version='0.14.101.v20170710-1119'>
@@ -3025,6 +3468,13 @@
         <property name='download.md5' value='3080201712bda60bcd03c15fc4ccd933'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.web.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3810'/>
+        <property name='download.size' value='3810'/>
+        <property name='download.md5' value='3a5af73fdd261bcf4bb53757391ba2e7'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.resource.builtin' version='0.3.15'>
       <properties size='3'>
         <property name='artifact.size' value='186573'/>
@@ -3075,6 +3525,13 @@
         <property name='artifact.size' value='120341'/>
         <property name='download.size' value='120341'/>
         <property name='download.md5' value='5a1ee73b0376701cc5725004c2647351'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.ddd.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='77467'/>
+        <property name='download.size' value='77467'/>
+        <property name='download.md5' value='bff3fcaaf9201a5e023dbc5980444af5'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.contenttype' version='9.0.2.201808211645'>
@@ -3194,6 +3651,11 @@
         <property name='download.md5' value='0cc2eb2c4aacbee226b3b2c05ad0dec0'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.component' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='600013'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.implementation.gradle.spec.plugin.builtin' version='0.3.10'>
       <properties size='3'>
         <property name='artifact.size' value='17272'/>
@@ -3232,6 +3694,11 @@
         <property name='artifact.size' value='3757'/>
         <property name='download.size' value='3757'/>
         <property name='download.md5' value='275fc16a31d9ff9876d02e7656092ae8'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.xml' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='66136'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.knowledge.template.asciidoc.builtin' version='0.3.14'>
@@ -3307,6 +3774,13 @@
         <property name='download.md5' value='03209c751a7bc5c9213fea2e67ad32c8'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.devops.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='122801'/>
+        <property name='download.size' value='122801'/>
+        <property name='download.md5' value='59ba43d9ebc47c92e897227bbb01d40a'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.analysis.spec.analysis.builtin' version='0.3.13'>
       <properties size='3'>
         <property name='artifact.size' value='130880'/>
@@ -3317,6 +3791,18 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.debug.ui' version='3.12.50.v20170920-1329'>
       <properties size='1'>
         <property name='download.size' value='3106113'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.ui.generator' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='184242'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.uml.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='456338'/>
+        <property name='download.size' value='456338'/>
+        <property name='download.md5' value='62d499df21adefef7cd9dfd976dc1e07'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.actifsource.spec.actifsource.builtin' version='0.3.10'>
@@ -3352,11 +3838,32 @@
         <property name='download.md5' value='362e4e2176e7ad47c23d2704bf907d4d'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.initialization.processlanguage.spec.bpmn.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='50110'/>
+        <property name='download.size' value='50110'/>
+        <property name='download.md5' value='4bf467014be8fe6a1a8e5a5a07449cf1'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.analysis.builtin' version='0.3.13'>
       <properties size='3'>
         <property name='artifact.size' value='33928'/>
         <property name='download.size' value='33928'/>
         <property name='download.md5' value='a56895f9abea5a7a5fa060703e1a3546'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.implementation.dotnet.spec.framework.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='6196'/>
+        <property name='download.size' value='6196'/>
+        <property name='download.md5' value='3a0cf3a6c1fe9e219ce9cee75c2c5e61'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.doc.spec.doc.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='260138'/>
+        <property name='download.size' value='260138'/>
+        <property name='download.md5' value='288b4a7dff11c7d94480ff3111136248'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='ch.actifsource.eclipse.util' version='9.0.2.201808211645'>
@@ -3457,6 +3964,25 @@
         <property name='artifact.size' value='30985'/>
         <property name='download.size' value='30985'/>
         <property name='download.md5' value='9c103733b72cbd13bfd6afc79ef6c3b0'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.support.publishing.spec.website.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='30499'/>
+        <property name='download.size' value='30499'/>
+        <property name='download.md5' value='adc99827a902c588467b9c08c030e804'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.javamodel' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='99985'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.eai.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='3756'/>
+        <property name='download.size' value='3756'/>
+        <property name='download.md5' value='f3b5b1cf31c39aade727dfedf099bab3'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.osgi' version='3.12.100.v20180210-1608'>
@@ -3651,6 +4177,18 @@
         <property name='download.md5' value='2e982993b1e10b87576d1b9496131788'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.platform' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='269704'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.common.xml.spec.xmi.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='14880'/>
+        <property name='download.size' value='14880'/>
+        <property name='download.md5' value='b9261cb49c0637f531035a870f6905f2'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.common.knowledge.spec.knowledge.builtin' version='0.3.14'>
       <properties size='3'>
         <property name='artifact.size' value='20641'/>
@@ -3713,6 +4251,11 @@
     <artifact classifier='osgi.bundle' id='org.eclipse.ui.editors' version='3.11.0.v20170202-1823'>
       <properties size='1'>
         <property name='download.size' value='638547'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.util' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='1001664'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.support.collaboration.spec.sda.builtin' version='0.3.12'>
@@ -3795,6 +4338,11 @@
         <property name='download.md5' value='455e7fdf9a861f621d55c1c33167ada5'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.environment' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='1291047'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.uml.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='456336'/>
@@ -3819,6 +4367,13 @@
         <property name='artifact.size' value='5595'/>
         <property name='download.size' value='5595'/>
         <property name='download.md5' value='837eb11c376b2111a619758345353de2'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.applications.spec.arc42.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='27805'/>
+        <property name='download.size' value='27805'/>
+        <property name='download.md5' value='778092c84fb5ac646416239583a2056d'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.template.tj3.builtin' version='0.3.17'>
@@ -3895,6 +4450,11 @@
         <property name='download.size' value='45205'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='ch.actifsource.contenttype' version='10.0.0.201809041415'>
+      <properties size='1'>
+        <property name='download.size' value='14334'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.template.versionone.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='50044'/>
@@ -3928,6 +4488,13 @@
         <property name='download.md5' value='ca6f5bd9c6dd6accd6c3d8508caac8f0'/>
       </properties>
     </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.spec.eamod.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='1213859'/>
+        <property name='download.size' value='1213859'/>
+        <property name='download.md5' value='39ed1ec450e2692f8688b021665cdb9c'/>
+      </properties>
+    </artifact>
     <artifact classifier='osgi.bundle' id='cleon.initialization.projectmanagement.spec.projectmanagement.builtin' version='0.3.12'>
       <properties size='3'>
         <property name='artifact.size' value='84999'/>
@@ -3945,6 +4512,13 @@
         <property name='artifact.size' value='30484'/>
         <property name='download.size' value='30484'/>
         <property name='download.md5' value='8966175d8c7c52a43ab0576bc138fe91'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='cleon.conception.architecture.template.xml.builtin' version='0.3.18'>
+      <properties size='3'>
+        <property name='artifact.size' value='22840'/>
+        <property name='download.size' value='22840'/>
+        <property name='download.md5' value='5e34377a08dc128b32e22880a8caaaec'/>
       </properties>
     </artifact>
     <artifact classifier='osgi.bundle' id='org.eclipse.ui' version='3.109.0.v20170411-1742'>

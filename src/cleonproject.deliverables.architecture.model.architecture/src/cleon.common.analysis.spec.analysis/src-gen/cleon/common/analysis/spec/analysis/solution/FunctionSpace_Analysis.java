@@ -138,7 +138,7 @@ public class FunctionSpace_Analysis {
   public static interface ICriteriaAggregateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("417d9e46-a6f5-11e8-9c81-8bd68c62e435")
-    public java.lang.Integer GetWeighting();
+    public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("2ea10c6a-a6e8-11e8-9c81-8bd68c62e435")
     public List<cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria> AllCriterials();
@@ -148,7 +148,7 @@ public class FunctionSpace_Analysis {
   public static interface ICriteriaAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("417d9e46-a6f5-11e8-9c81-8bd68c62e435")
-    public java.lang.Integer GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate);
+    public java.lang.Double GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate);
 
   }
   
@@ -159,9 +159,9 @@ public class FunctionSpace_Analysis {
     private CriteriaAggregateFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
+    public java.lang.Double GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
       /* Begin Protected Region [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
-      return criteriaAggregate.selectCriterias().stream().mapToInt(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
+      return criteriaAggregate.selectCriterias().stream().mapToDouble(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
       /* End Protected Region   [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
     }
 
@@ -171,7 +171,7 @@ public class FunctionSpace_Analysis {
 
     private CriteriaAggregateFunctions() {}
 
-    public static java.lang.Integer GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
+    public static java.lang.Double GetWeighting(final cleon.common.analysis.spec.analysis.solution.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
       return DynamicResourceUtil.invoke(ICriteriaAggregateFunctionsImpl.class, CriteriaAggregateFunctionsImpl.INSTANCE, criteriaAggregate).GetWeighting(criteriaAggregate);
     }
 
@@ -208,7 +208,7 @@ public class FunctionSpace_Analysis {
     public List<cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria> AllCriterials();
 
     @IDynamicResourceExtension.MethodId("56b0cd40-a780-11e8-8660-2f457072b676")
-    public java.lang.Integer GetWeighting();
+    public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("5029b3dc-a781-11e8-8660-2f457072b676")
     public java.lang.String GetDescription();
@@ -236,7 +236,7 @@ public class FunctionSpace_Analysis {
   public static interface INamedCriteriaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("56f33e35-a6f5-11e8-9c81-8bd68c62e435")
-    public java.lang.Integer GetWeighting();
+    public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("fe95627a-a782-11e8-8660-2f457072b676")
     public java.lang.String GetDescription();
@@ -288,4 +288,4 @@ public class FunctionSpace_Analysis {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,xHSkDIYqWybTwyWyxi9aAH26oPY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,+ilMBIdxryaOPAiqRdFgMtyLj5g=] */

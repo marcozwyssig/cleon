@@ -29,7 +29,7 @@ public class CriteriasValidationAspect implements IResourceValidationAspect {
 				return;
 			}
 			
-			int sum = criteriaComposite.selectCriterias().stream().mapToInt(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
+			double sum = criteriaComposite.selectCriterias().stream().mapToDouble(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
 			if( sum != 100)
 			{
 				String errormessage = String.format("The sum of weighting must be 100%% over all goals (actual sum is %1$d%%)", sum);

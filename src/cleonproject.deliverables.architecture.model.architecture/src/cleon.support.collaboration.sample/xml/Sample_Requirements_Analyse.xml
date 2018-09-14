@@ -34,7 +34,60 @@
 			         asdfasdf
 			         s</db:para>
 			
-			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="40%" />	
+				<db:col width="20%" />
+				<db:thead>
+				    <db:tr>
+				        <db:th>Kriterium</db:th>
+				        <db:th>Beschreibung</db:th>
+				        <db:th>Wichtigkeit</db:th>	        
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>OPEX</db:td>
+						<db:td></db:td>
+						<db:td>60%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Termin</db:td>
+						<db:td></db:td>
+						<db:td>10%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF006_Requirements_1 (FEA) (Must have)</db:td>
+						<db:td>sfasdfsadf asdfadsfasdf asdf asdf adfa dfad sfasdfa
+						       asdfasdfadfasdfa
+						       dsfa
+						       dfasdfadfadfadf
+						       sadfasdfsdafsdaf
+						       sadf</db:td>
+						<db:td>6.0%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have)</db:td>
+						<db:td>Description</db:td>
+						<db:td>2.0%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF007_sss (FEA) (Must have)</db:td>
+						<db:td>Description</db:td>
+						<db:td>6.0%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF102_sss (FEA) (Must have)</db:td>
+						<db:td>Description</db:td>
+						<db:td>6.0%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>MyNamedCriteria</db:td>
+						<db:td></db:td>
+						<db:td>10%</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 		<db:section>
@@ -93,7 +146,30 @@
 		<db:title>Auswertung</db:title>
 		
 		
-		
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="30%" />
+			<db:col width="30%" />	
+			<db:col width="40%" />	
+			<db:thead>
+			    <db:tr>
+			        <db:th>Lösung</db:th>
+			        <db:th>Auswertung</db:th>
+			        <db:th>Auswertung [%]</db:th>
+			    </db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>Solution 1</db:td>
+					<db:td>2.06</db:td>
+					<db:td>41.20%</db:td>
+				</db:tr>			
+				<db:tr>
+					<db:td>Solution 2</db:td>
+					<db:td>2.00</db:td>
+					<db:td>40.00%</db:td>
+				</db:tr>			
+			</db:tbody>
+		</db:informaltable>
 		<db:section>
 			<db:title>Solution 1</db:title>
 			<db:para>asdfasdf
@@ -101,7 +177,64 @@
 			<db:para>asdfasdf
 			         asdfasdf</db:para>
 			
-			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="20%" />
+				<db:col width="20%" />	
+				<db:col width="40%" />
+				<db:col width="20%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>Kriterium</db:th>
+				        <db:th>Bewertung</db:th>
+				        <db:th>Beschreibung</db:th>	        
+				        <db:th>Auswertung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>OPEX (60%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>1.20 von 3.00</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Termin (10%)</db:td>
+						<db:td>2</db:td>
+						<db:td>fasdfasdf </db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (2.0%)</db:td>
+						<db:td>5</db:td>
+						<db:td></db:td>
+						<db:td>0.10 von 0.10</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF007_sss (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF102_sss (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>MyNamedCriteria (10%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 		<db:section>
@@ -111,13 +244,70 @@
 			<db:para>dfasdf
 			         dsafasdf</db:para>
 			
-			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="20%" />
+				<db:col width="20%" />	
+				<db:col width="40%" />
+				<db:col width="20%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>Kriterium</db:th>
+				        <db:th>Bewertung</db:th>
+				        <db:th>Beschreibung</db:th>	        
+				        <db:th>Auswertung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>OPEX (60%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>1.20 von 3.00</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Termin (10%)</db:td>
+						<db:td>2</db:td>
+						<db:td>dsfasdfasdf </db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (2.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.04 von 0.10</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF007_sss (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF102_sss (FEA) (Must have) (6.0%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>MyNamedCriteria (10%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 		<db:section>
 			<db:title>Fazit</db:title>
 			
-			
+			<db:para>Das Fazit der Auswertung ist, dass der Lösungsvorschlag *"Solution 1"* zu bevorzugen ist.</db:para>
 			
 			
 		</db:section>

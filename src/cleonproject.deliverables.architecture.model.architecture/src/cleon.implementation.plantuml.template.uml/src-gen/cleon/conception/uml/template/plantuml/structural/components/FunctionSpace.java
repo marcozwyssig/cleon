@@ -66,7 +66,7 @@ public class FunctionSpace {
     @Override
     public java.lang.String convertToValidCmpName(final java.lang.String textLiteral) {
       /* Begin Protected Region [[44b42008-4d01-11e6-b371-a567a75dac1c]] */
-      return textLiteral.replaceAll("[^ÃƒÆ’Ã‚Â¤ÃƒÆ’Ã‚Â¼ÃƒÆ’Ã‚Â¶ÃƒÆ’Ã¢â‚¬Å¾ÃƒÆ’Ã…â€œÃƒÆ’Ã¢â‚¬â€œa-zA-Z0-9_]", "_");
+      return textLiteral.replaceAll("[^ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¶ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã†â€™Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“a-zA-Z0-9_]", "_");
       /* End Protected Region   [[44b42008-4d01-11e6-b371-a567a75dac1c]] */
     }
 

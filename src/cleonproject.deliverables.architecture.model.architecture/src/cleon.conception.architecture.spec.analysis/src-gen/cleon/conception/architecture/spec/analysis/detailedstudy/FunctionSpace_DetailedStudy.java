@@ -24,7 +24,7 @@ public class FunctionSpace_DetailedStudy {
   public static interface IRequirementsAggregateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d7a738b2-a6fc-11e8-9c81-8bd68c62e435")
-    public java.lang.Integer GetWeighting();
+    public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("020efbf1-a9d3-11e8-8fa3-5142962ae020")
     public java.lang.String GetDescription();
@@ -34,7 +34,7 @@ public class FunctionSpace_DetailedStudy {
   public static interface IRequirementsAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d7a738b2-a6fc-11e8-9c81-8bd68c62e435")
-    public java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate);
+    public java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate);
 
   }
   
@@ -45,9 +45,9 @@ public class FunctionSpace_DetailedStudy {
     private RequirementsAggregateFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate) {
+    public java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate) {
       /* Begin Protected Region [[d7a738b2-a6fc-11e8-9c81-8bd68c62e435]] */
-    	return requirementsAggregate.selectPriorityWeighting().values().stream().mapToInt(x -> x.selectWeighting()).sum();
+    	return requirementsAggregate.selectPriorityWeighting().values().stream().mapToDouble(x -> x.selectWeighting()).sum();
       /* End Protected Region   [[d7a738b2-a6fc-11e8-9c81-8bd68c62e435]] */
     }
 
@@ -57,7 +57,7 @@ public class FunctionSpace_DetailedStudy {
 
     private RequirementsAggregateFunctions() {}
 
-    public static java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate) {
+    public static java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementsAggregate requirementsAggregate) {
       return DynamicResourceUtil.invoke(IRequirementsAggregateFunctionsImpl.class, RequirementsAggregateFunctionsImpl.INSTANCE, requirementsAggregate).GetWeighting(requirementsAggregate);
     }
 
@@ -69,14 +69,14 @@ public class FunctionSpace_DetailedStudy {
     public java.lang.String GetDescription();
 
     @IDynamicResourceExtension.MethodId("eb7f44d0-a9d3-11e8-8fa3-5142962ae020")
-    public java.lang.Integer GetWeighting();
+    public java.lang.Double GetWeighting();
 
   }
   
   public static interface IRequirementCriteriaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("eb7f44d0-a9d3-11e8-8fa3-5142962ae020")
-    public java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria);
+    public java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria);
 
   }
   
@@ -87,13 +87,13 @@ public class FunctionSpace_DetailedStudy {
     private RequirementCriteriaFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria) {
+    public java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria) {
       /* Begin Protected Region [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
        	IRequirementsAggregate aggregate = RequirementsAggregate.selectToMeRequirementCriterias(requirementCriteria);
     	IPriority selectPriority = requirementCriteria.selectRequirement().selectPriority();
 		IPriorityWeighting priorityWeighting = aggregate.selectPriorityWeighting().values().stream().filter(x -> x.selectPriority().selectNumber().equals(selectPriority.selectNumber())).findFirst().get();
 		Long requirements = aggregate.selectRequirementCriterias().values().stream().filter( x -> x.selectRequirement().selectPriority().equals(selectPriority)).count();
-		return priorityWeighting.selectWeighting() / requirements.intValue();
+		return priorityWeighting.selectWeighting() / requirements.doubleValue();
       /* End Protected Region   [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
     }
 
@@ -103,7 +103,7 @@ public class FunctionSpace_DetailedStudy {
 
     private RequirementCriteriaFunctions() {}
 
-    public static java.lang.Integer GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria) {
+    public static java.lang.Double GetWeighting(final cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria requirementCriteria) {
       return DynamicResourceUtil.invoke(IRequirementCriteriaFunctionsImpl.class, RequirementCriteriaFunctionsImpl.INSTANCE, requirementCriteria).GetWeighting(requirementCriteria);
     }
 
@@ -111,4 +111,4 @@ public class FunctionSpace_DetailedStudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,tn0xSppRpT8oIjpJA9919Fp/sNE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,io6GknvYC/w34nnqsF6sfMHux2I=] */

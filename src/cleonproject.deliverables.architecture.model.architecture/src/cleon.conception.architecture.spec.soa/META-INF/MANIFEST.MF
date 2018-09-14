@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.conception.architecture.spec.soa
 Bundle-SymbolicName: cleon.conception.architecture.spec.soa.builtin;singleton:=true
-Bundle-Version: 0.3.18
+Bundle-Version: 0.3.19
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,10 +12,10 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.18",
- cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.18",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.18",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.18",
+ cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.19",
+ cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.19",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.19",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.19",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.conception.architecture.spec.soa,cleon.conception.architecture.spec.soa.javamodel
 

@@ -81,10 +81,10 @@
 [cols="5,5,10", options="header"]
 |===
 |Name|Abkürzung|Beschreibung
-|LE01_Document 1
+|LO01_Document 1
 |short 
 |
-|LE02_System 1
+|LO02_System 1
 |
 |
 |===
@@ -95,7 +95,7 @@
 
 
 
-==== LO01 Module_A
+==== LE01 Module_A
 
 
 
@@ -109,12 +109,12 @@
 .Lieferergebnis Abhängigkeiten
 |===
 |Abhängigkeit|Begründung
-|LO02 Module_B
+|LE02 Module_B
 |
 |===
 
 
-==== LO02 Module_B
+==== LE02 Module_B
 
 
 
@@ -128,12 +128,12 @@
 .Lieferergebnis Abhängigkeiten
 |===
 |Abhängigkeit|Begründung
-|LO01 Module_A
+|LE01 Module_A
 |Aufbau- und Ablauforganisation
 |===
 
 
-==== LO03 Module C
+==== LE03 Module C
 
 
 

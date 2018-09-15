@@ -654,7 +654,7 @@
                 <object statement-guid="b7a93687-c13b-11e6-8f58-ad3c6ee7602f" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="ba90c672-c13b-11e6-8f58-ad3c6ee7602f" type="literal">return String.format("LO%02d", outcome.selectIdentifier());</object>
+                <object statement-guid="ba90c672-c13b-11e6-8f58-ad3c6ee7602f" type="literal">return String.format("LE%02d", outcome.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

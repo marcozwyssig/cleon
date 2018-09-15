@@ -106,7 +106,7 @@
                 <object statement-guid="15832026-b46d-11e8-bb21-172cc8e5f7cd" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="15832025-b46d-11e8-bb21-172cc8e5f7cd" type="literal">return String.format("LE%02d", deliverable.selectIdentifier());</object>
+                <object statement-guid="15832025-b46d-11e8-bb21-172cc8e5f7cd" type="literal">return String.format("LO%02d", deliverable.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

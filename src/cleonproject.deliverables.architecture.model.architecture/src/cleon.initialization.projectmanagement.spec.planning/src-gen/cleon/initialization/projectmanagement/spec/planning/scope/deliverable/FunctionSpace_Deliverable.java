@@ -43,7 +43,7 @@ public class FunctionSpace_Deliverable {
 
     @Override
     public java.lang.String GetId(final cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
-      return String.format("LE%02d", deliverable.selectIdentifier());
+      return String.format("LO%02d", deliverable.selectIdentifier());
     }
 
   }
@@ -85,4 +85,4 @@ public class FunctionSpace_Deliverable {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,tpuAw9ZiE8lCmtqbjiQpHZ3N/Gs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,QRINhPUKKcCS4pjmT+o3A5H7+UM=] */

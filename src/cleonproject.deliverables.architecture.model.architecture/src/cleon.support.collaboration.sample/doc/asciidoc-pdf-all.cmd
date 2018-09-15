@@ -13,6 +13,7 @@ cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_sda/Analyse_B.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_togaf/TestReferenceArc42_Architecture.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Sprint_3.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_software/SampleArchitecture_Architecture.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/AP01_Module_B.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Sample_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Kontrolle_Sample_Planung.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Hindernisse_Sample_Planung.adoc
@@ -25,3 +26,4 @@ cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_plattform/MyPlattf
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_analysis/Sample_Requirements_Analyse.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Protokolle.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/20180312_My_Protocol.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/AP02_Module_A.adoc

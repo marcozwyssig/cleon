@@ -77,7 +77,7 @@ public class FunctionSpace_Outcome {
 
     @Override
     public java.lang.String GetId(final cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome outcome) {
-      return String.format("LO%02d", outcome.selectIdentifier());
+      return String.format("LE%02d", outcome.selectIdentifier());
     }
 
     @Override
@@ -126,4 +126,4 @@ public class FunctionSpace_Outcome {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,RhhhNoZS9vvDLu7y7CK+6i60YzU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,yXUFGmEjvxDkSuDCp6oJ0rnGEXA=] */

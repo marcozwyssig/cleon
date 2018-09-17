@@ -2,10 +2,10 @@ package cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.
 
 import cleon.common.resources.spec.resources.id.javamodel.BusinessObjectIdInitializerAspect;
 
-public class RequirementInitializerAspect extends BusinessObjectIdInitializerAspect<IRequirement> 
+public class AbstractRequirementInitializerAspect extends BusinessObjectIdInitializerAspect<IAbstractRequirement> 
 {
-	public RequirementInitializerAspect()
+	public AbstractRequirementInitializerAspect()
 	{
-		super(IRequirement.class);
+		super(IAbstractRequirement.class);
 	}
 }

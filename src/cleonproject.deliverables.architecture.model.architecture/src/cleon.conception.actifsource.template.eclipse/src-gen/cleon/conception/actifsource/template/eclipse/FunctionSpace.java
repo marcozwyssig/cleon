@@ -333,6 +333,34 @@ public class FunctionSpace {
 
   }
 
+  public static interface ICategoryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("688f8934-b8c7-11e8-b88f-bd952c44e997")
+    public java.lang.String GetFeatureName();
+
+    @IDynamicResourceExtension.MethodId("ed9ea5ed-b8c7-11e8-b88f-bd952c44e997")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface ICategoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class CategoryFunctionsImpl implements ICategoryFunctionsImpl {
+
+    public static final ICategoryFunctionsImpl INSTANCE = new CategoryFunctionsImpl();
+
+    private CategoryFunctionsImpl() {}
+
+  }
+  
+  public static class CategoryFunctions {
+
+    private CategoryFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,u6mN6kyCGHqhdssIUPAKtTd3BFQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,pQCilWYkMIcoRhUVaIbaar8ye8A=] */

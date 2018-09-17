@@ -13,6 +13,7 @@ public class EclipsePackage {
   public static final Resource FunctionSpace_Gradle = new Resource("abf26a23-41a5-11e8-81d0-774e4d9334dd");
   public static final Resource FunctionSpace_Actifsource = new Resource("b8a6ab6c-41a5-11e8-81d0-774e4d9334dd");
   public static final Resource FunctionSpace_Plugin_aE_Nature = new Resource("20a48a9d-41aa-11e8-81d0-774e4d9334dd");
+  public static final Resource FunctionSpace_Category = new Resource("1d7d496d-b8c8-11e8-b88f-bd952c44e997");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.template.eclipse,zZBy4BpGughLte2v2lHN4gaEGgU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.template.eclipse,GrnWsCJkuKQa/LP3oXTMkcMNLyw=] */

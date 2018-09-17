@@ -438,7 +438,7 @@ public class FunctionSpace_Asciidoc {
     public java.lang.String RenderContent();
 
     @IDynamicResourceExtension.MethodId("4d143120-be09-11e5-ad6f-979cbb78853e")
-    public java.lang.String RenderElement();
+    public java.lang.String RenderContentElement();
 
     @IDynamicResourceExtension.MethodId("3562a5b3-d3ef-11e5-9dfc-cf0f3e030023")
     public java.lang.String CallAsciiDoctorHtml();
@@ -636,4 +636,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,/a5b7KA/+a5KA1RFcf/mEbuam8o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,kI1Sm5lZ9sCMsYsuvezWLdOok/I=] */

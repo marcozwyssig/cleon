@@ -61,12 +61,12 @@ public class Outcomes extends DynamicResource implements IOutcomes {
   }
     
   @Override
-  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> selectOutcomes() {
-    return _getList(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> selectOutcomes() {
+    return _getMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes);
   }
 
-  public Outcomes setOutcomes(java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> outcomes) {
-    _setList(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, outcomes);
+  public Outcomes setOutcomes(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> outcomes) {
+    _setMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, outcomes);
     return this;
   }
     
@@ -88,7 +88,7 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, visitor);
+    _acceptMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -99,4 +99,4 @@ public class Outcomes extends DynamicResource implements IOutcomes {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,zj7UvBDONvehIaZfrO3UxNfmBYg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,jIfbnNDK2cQ0cUza3d3KUw8f4Pc=] */

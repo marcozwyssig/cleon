@@ -12,7 +12,6 @@ public class UtilizationPackage {
   public static final Resource RoleUtilization_role = new Resource("afdea7fa-c291-11e6-ba8e-05f5391bcda8");
   public static final Resource RoleUtilization_allocation = new Resource("e05cc077-c291-11e6-ba8e-05f5391bcda8");
   public static final Resource ModuleUtilization_module = new Resource("aef7576f-c6be-11e6-8242-2f0ed6756d77");
-  public static final Resource ModuleUtilization_achiviesDeliverable = new Resource("222d830d-c6bf-11e6-8242-2f0ed6756d77");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +32,4 @@ public class UtilizationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization,ROHennPqn9+sINVmi9rx3PI8rZ8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization,m4jLQVVu/T3oWHJC3xVHjxRVpKw=] */

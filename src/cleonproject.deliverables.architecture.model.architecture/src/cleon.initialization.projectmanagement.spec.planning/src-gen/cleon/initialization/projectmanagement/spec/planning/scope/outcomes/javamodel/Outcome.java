@@ -88,6 +88,16 @@ public class Outcome extends DynamicResource implements IOutcome {
   }
     
   @Override
+  public cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_deliverable);
+  }
+
+  public Outcome setDeliverable(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+    _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_deliverable, deliverable);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomeDependency> selectDependsOn() {
     return _getList(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomeDependency.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_dependsOn);
   }
@@ -128,6 +138,16 @@ public class Outcome extends DynamicResource implements IOutcome {
   }
     
   @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public Outcome setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -148,10 +168,12 @@ public class Outcome extends DynamicResource implements IOutcome {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_timeLag, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.planning.schedule.targetdates.javamodel.IDeadline.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_deadlines, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_deliverable, visitor);
     _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomeDependency.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_dependsOn, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomeState.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_state, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -169,5 +191,9 @@ public class Outcome extends DynamicResource implements IOutcome {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_state, object.getResource());
   }
   
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> selectToMeDeliverable(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable object) {
+    return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcome_deliverable, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,uNOQ4CX+Hhdwjxk1B+QuJc1WXi8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,l6dgJ+o9efkYLg4+DT/wVJEQk+w=] */

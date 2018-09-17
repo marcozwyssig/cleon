@@ -51,16 +51,6 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
   // relations
   
   @Override
-  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> selectAchiviesDeliverable() {
-    return _getList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_achiviesDeliverable);
-  }
-
-  public ModuleUtilization setAchiviesDeliverable(java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> achiviesDeliverable) {
-    _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_achiviesDeliverable, achiviesDeliverable);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -117,7 +107,6 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_achiviesDeliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_module, visitor);
     _acceptMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_roleUtilizations, visitor);
@@ -135,9 +124,5 @@ public class ModuleUtilization extends DynamicResource implements IModuleUtiliza
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_roleUtilizations, object.getResource());
   }
   
-  public static cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization selectToMeAchiviesDeliverable(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable object) {
-    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ModuleUtilization_achiviesDeliverable, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,j/kQuFF+JwWjB4w8p0LsZdtp+2w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27e45355-c291-11e6-ba8e-05f5391bcda8,Uf7mjtwnSvumhnBm7lK/a8TIStY=] */

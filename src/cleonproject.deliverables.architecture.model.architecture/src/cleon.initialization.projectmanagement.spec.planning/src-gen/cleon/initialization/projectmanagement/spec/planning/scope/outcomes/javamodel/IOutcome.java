@@ -2,7 +2,7 @@ package cleon.initialization.projectmanagement.spec.planning.scope.outcomes.java
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware {
+public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IOwnerAware, ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a");
   
@@ -16,6 +16,8 @@ public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.IN
   
   public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomeState selectState();
   
+  public cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,TOU72zN/HOaFfZ9/r0T3Q70qC4o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,MUvvMXrZM6w/z99OwfjWz2yGRA8=] */

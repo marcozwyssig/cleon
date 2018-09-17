@@ -20,9 +20,6 @@ public class FunctionSpace_Deliverable {
 
   public static interface IDeliverableFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("b711da1f-aaab-11e8-b25a-7dd9f85a27ad")
-    public java.lang.String RenderDescription();
-
     @IDynamicResourceExtension.MethodId("15832023-b46d-11e8-bb21-172cc8e5f7cd")
     public java.lang.String GetId();
 
@@ -85,4 +82,4 @@ public class FunctionSpace_Deliverable {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,QRINhPUKKcCS4pjmT+o3A5H7+UM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,K602SSItHVxOKB9XzXjK/7r1N6I=] */

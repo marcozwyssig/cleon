@@ -13,7 +13,6 @@ public class DeliverablePackage {
   public static final Resource NamedDeliverable = new Resource("2afb8d45-b467-11e8-bb21-172cc8e5f7cd");
   public static final Resource System = new Resource("471bb7a7-b467-11e8-bb21-172cc8e5f7cd");
   public static final Resource Management = new Resource("584072fc-b467-11e8-bb21-172cc8e5f7cd");
-  public static final Resource ServiceDeliverable = new Resource("6878f9cf-b467-11e8-bb21-172cc8e5f7cd");
   public static final Resource MaterialDeliverable = new Resource("755a66f9-b467-11e8-bb21-172cc8e5f7cd");
   
   /* Begin Protected Region [[user]] */
@@ -35,4 +34,4 @@ public class DeliverablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.deliverable,fj2RqUs80RxIzziXnUv+IiBiv4E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.deliverable,lwjzn43yt/1pq7m7bbX9Nh9jBsQ=] */

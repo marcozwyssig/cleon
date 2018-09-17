@@ -10,8 +10,6 @@ public class UsagePackage {
   public static final Resource ServiceProducers_services = new Resource("8e1b9251-c69f-11e6-8242-2f0ed6756d77");
   public static final Resource ServiceUsage_confidentialityClassification = new Resource("fecfce3a-c69f-11e6-8242-2f0ed6756d77");
   public static final Resource ServiceUsage_availabilityClassification = new Resource("0b33cd91-c6a0-11e6-8242-2f0ed6756d77");
-  public static final Resource ModuleUtilizationWithService = new Resource("2f11960a-c6c4-11e6-8242-2f0ed6756d77");
-  public static final Resource ModuleUtilizationWithService_requiredDeliverable = new Resource("39a67ab4-c6c4-11e6-8242-2f0ed6756d77");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +30,4 @@ public class UsagePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.nsov.v1.nsov.usage,Yt2vLWdAxyj7FQzpNaFPp6XLDRM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.nsov.v1.nsov.usage,748JpQqBb+yUjXcwF4kiS5vd5ZQ=] */

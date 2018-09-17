@@ -26,4 +26,4 @@ cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_plattform/MyPlattf
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_analysis/Sample_Requirements_Analyse.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/Protokolle.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/20180312_My_Protocol.adoc
-cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/AP02_Module_A.adoc
+cmd /c bundle exec asciidoctor-pdf cleon_collaboration_sample_projectmanagement/AP02_Module_C.adoc

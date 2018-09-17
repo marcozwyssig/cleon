@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="Cleon">
+   <description name="Cleon" url="https://sos-ch-dk-2.exo.io/cleon/">
       Cleon Update Site
    </description>
-   <feature url="features/cleon_0.3.19.jar" id="cleon" version="0.3.19">
+   <feature url="features/cleon_0.3.20.jar" id="cleon" version="0.3.20">
       <category name="cleon-stable"/>
    </feature>
    <category-def name="cleon-stable" label="Stable Cleon"/>

@@ -61,6 +61,16 @@ public class ResourceUtilization extends DynamicResource implements IResourceUti
   }
     
   @Override
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization> selectPersonUtilization() {
+    return _getList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_personUtilization);
+  }
+
+  public ResourceUtilization setPersonUtilization(java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization> personUtilization) {
+    _setList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_personUtilization, personUtilization);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -71,11 +81,11 @@ public class ResourceUtilization extends DynamicResource implements IResourceUti
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization> selectUtilizateRoles() {
-    return _getMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> selectUtilizateRoles() {
+    return _getMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles);
   }
 
-  public ResourceUtilization setUtilizateRoles(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization> utilizateRoles) {
+  public ResourceUtilization setUtilizateRoles(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> utilizateRoles) {
     _setMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles, utilizateRoles);
     return this;
   }
@@ -88,15 +98,20 @@ public class ResourceUtilization extends DynamicResource implements IResourceUti
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_personUtilization, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles, visitor);
+    _acceptMap(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization selectToMeUtilizateRoles(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization object) {
+  public static cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization selectToMeUtilizateRoles(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization object) {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_utilizateRoles, object.getResource());
   }
   
+  public static cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization selectToMePersonUtilization(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IResourceUtilization.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.ResourceUtilization_personUtilization, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8db4bffd-bbd5-11e6-997f-d73ea5a3671c,F2DlHkYhKK3B/L0gUTK0kAiFPZo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8db4bffd-bbd5-11e6-997f-d73ea5a3671c,CLV3obheGSXO3jK1UKWP6iBEMUo=] */

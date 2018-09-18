@@ -118,6 +118,16 @@ public class Person extends DynamicResource implements IPerson {
   }
     
   @Override
+  public cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles selectRoles() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_roles);
+  }
+
+  public Person setRoles(cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles roles) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_roles, roles);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -141,6 +151,7 @@ public class Person extends DynamicResource implements IPerson {
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.experience.javamodel.IExperiences.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_experiences, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.organisations.javamodel.IOrganisation.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_organisation, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_roles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -156,5 +167,9 @@ public class Person extends DynamicResource implements IPerson {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_experiences, object.getResource());
   }
   
+  public static cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectToMeRoles(cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.Person_roles, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,QOpHSbeXy57vkgkM9X4HKJxmUtE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,u6rAwD5mHYVWGKlqvldxrsyJHfo=] */

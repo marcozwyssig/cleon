@@ -17,6 +17,7 @@ public class PersonsPackage {
   public static final Resource OwnerAware = new Resource("dd829c7f-3385-11e6-b251-57783f5929b3");
   public static final Resource AuthorsAware = new Resource("bce16132-bff1-11e7-9dcc-23cb45d05890");
   public static final Resource AuthorsAware_authors = new Resource("bce16133-bff1-11e7-9dcc-23cb45d05890");
+  public static final Resource Person_roles = new Resource("6bf7cfe0-bb5f-11e8-921b-c1cf01226512");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +38,4 @@ public class PersonsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.resource.persons,8cvH9PPxMwrDHpkHOH77adiWtRY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.resource.persons,0RVlJYr9QQy2Cs4AUF2LfdX3Tj8=] */

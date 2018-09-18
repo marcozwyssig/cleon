@@ -18,7 +18,7 @@ public class FunctionSpace_Steering {
   /* End Protected Region   [[9cea9132-be09-11e6-a3f0-c7681ee45a3f]] */
 
 
-  public static interface IModuleControllingFunctions extends IDynamicResourceExtension {
+  public static interface IDeliverableControllingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f3aea6a-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.String RenderContentElement();
@@ -31,50 +31,50 @@ public class FunctionSpace_Steering {
 
   }
   
-  public static interface IModuleControllingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeliverableControllingFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleControllingFunctionsImpl implements IModuleControllingFunctionsImpl {
+  public static class DeliverableControllingFunctionsImpl implements IDeliverableControllingFunctionsImpl {
 
-    public static final IModuleControllingFunctionsImpl INSTANCE = new ModuleControllingFunctionsImpl();
+    public static final IDeliverableControllingFunctionsImpl INSTANCE = new DeliverableControllingFunctionsImpl();
 
-    private ModuleControllingFunctionsImpl() {}
+    private DeliverableControllingFunctionsImpl() {}
 
   }
   
-  public static class ModuleControllingFunctions {
+  public static class DeliverableControllingFunctions {
 
-    private ModuleControllingFunctions() {}
+    private DeliverableControllingFunctions() {}
 
   }
 
-  public static interface IModuleRisksFunctions extends IDynamicResourceExtension {
+  public static interface IDeliverableRisksFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f3b12b4-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IModuleRisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeliverableRisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleRisksFunctionsImpl implements IModuleRisksFunctionsImpl {
+  public static class DeliverableRisksFunctionsImpl implements IDeliverableRisksFunctionsImpl {
 
-    public static final IModuleRisksFunctionsImpl INSTANCE = new ModuleRisksFunctionsImpl();
+    public static final IDeliverableRisksFunctionsImpl INSTANCE = new DeliverableRisksFunctionsImpl();
 
-    private ModuleRisksFunctionsImpl() {}
+    private DeliverableRisksFunctionsImpl() {}
 
   }
   
-  public static class ModuleRisksFunctions {
+  public static class DeliverableRisksFunctions {
 
-    private ModuleRisksFunctions() {}
+    private DeliverableRisksFunctions() {}
 
   }
 
-  public static interface IModuleLampFunctions extends IDynamicResourceExtension {
+  public static interface IDeliverableLampFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f3b12da-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.String RenderState();
@@ -84,25 +84,25 @@ public class FunctionSpace_Steering {
 
   }
   
-  public static interface IModuleLampFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeliverableLampFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleLampFunctionsImpl implements IModuleLampFunctionsImpl {
+  public static class DeliverableLampFunctionsImpl implements IDeliverableLampFunctionsImpl {
 
-    public static final IModuleLampFunctionsImpl INSTANCE = new ModuleLampFunctionsImpl();
+    public static final IDeliverableLampFunctionsImpl INSTANCE = new DeliverableLampFunctionsImpl();
 
-    private ModuleLampFunctionsImpl() {}
+    private DeliverableLampFunctionsImpl() {}
 
   }
   
-  public static class ModuleLampFunctions {
+  public static class DeliverableLampFunctions {
 
-    private ModuleLampFunctions() {}
+    private DeliverableLampFunctions() {}
 
   }
 
-  public static interface IModuleLampStateFunctions extends IDynamicResourceExtension {
+  public static interface IDeliverableLampStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f3b12eb-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.Boolean IsRed();
@@ -115,82 +115,82 @@ public class FunctionSpace_Steering {
 
   }
   
-  public static interface IModuleLampStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeliverableLampStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f3b12eb-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
     @IDynamicResourceExtension.MethodId("9f3b12ed-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
     @IDynamicResourceExtension.MethodId("9f3b12ef-be09-11e6-a3f0-c7681ee45a3f")
-    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState);
+    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
   }
   
-  public static class ModuleLampStateFunctionsImpl implements IModuleLampStateFunctionsImpl {
+  public static class DeliverableLampStateFunctionsImpl implements IDeliverableLampStateFunctionsImpl {
 
-    public static final IModuleLampStateFunctionsImpl INSTANCE = new ModuleLampStateFunctionsImpl();
+    public static final IDeliverableLampStateFunctionsImpl INSTANCE = new DeliverableLampStateFunctionsImpl();
 
-    private ModuleLampStateFunctionsImpl() {}
+    private DeliverableLampStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return moduleLampState.isRed();
+    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return deliverableLampState.isRed();
     }
 
     @Override
-    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return moduleLampState.isYellow();
+    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return deliverableLampState.isYellow();
     }
 
     @Override
-    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return moduleLampState.isGreen();
+    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return deliverableLampState.isGreen();
     }
 
   }
   
-  public static class ModuleLampStateFunctions {
+  public static class DeliverableLampStateFunctions {
 
-    private ModuleLampStateFunctions() {}
+    private DeliverableLampStateFunctions() {}
 
-    public static java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsRed(moduleLampState);
+    public static java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsRed(deliverableLampState);
     }
 
-    public static java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsYellow(moduleLampState);
+    public static java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsYellow(deliverableLampState);
     }
 
-    public static java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModuleLampState moduleLampState) {
-      return DynamicResourceUtil.invoke(IModuleLampStateFunctionsImpl.class, ModuleLampStateFunctionsImpl.INSTANCE, moduleLampState).IsGreen(moduleLampState);
+    public static java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+      return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsGreen(deliverableLampState);
     }
 
   }
 
-  public static interface IModuleImpedimentsFunctions extends IDynamicResourceExtension {
+  public static interface IDeliverableImpedimentsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f3b39b0-be09-11e6-a3f0-c7681ee45a3f")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IModuleImpedimentsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeliverableImpedimentsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleImpedimentsFunctionsImpl implements IModuleImpedimentsFunctionsImpl {
+  public static class DeliverableImpedimentsFunctionsImpl implements IDeliverableImpedimentsFunctionsImpl {
 
-    public static final IModuleImpedimentsFunctionsImpl INSTANCE = new ModuleImpedimentsFunctionsImpl();
+    public static final IDeliverableImpedimentsFunctionsImpl INSTANCE = new DeliverableImpedimentsFunctionsImpl();
 
-    private ModuleImpedimentsFunctionsImpl() {}
+    private DeliverableImpedimentsFunctionsImpl() {}
 
   }
   
-  public static class ModuleImpedimentsFunctions {
+  public static class DeliverableImpedimentsFunctions {
 
-    private ModuleImpedimentsFunctions() {}
+    private DeliverableImpedimentsFunctions() {}
 
   }
 
@@ -271,4 +271,4 @@ public class FunctionSpace_Steering {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,772nkp4xv4yEENR29Yrcg/GC3ro=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9cea9132-be09-11e6-a3f0-c7681ee45a3f,udResD40wuYFll7ON299LI+N5o0=] */

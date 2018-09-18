@@ -364,28 +364,28 @@ public class FunctionSpace_Planning {
 
   }
 
-  public static interface IModuleUtilizationFunctions extends IDynamicResourceExtension {
+  public static interface IResourceUtilizationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bf1fd1c3-c6c1-11e6-8242-2f0ed6756d77")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IModuleUtilizationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IResourceUtilizationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ModuleUtilizationFunctionsImpl implements IModuleUtilizationFunctionsImpl {
+  public static class ResourceUtilizationFunctionsImpl implements IResourceUtilizationFunctionsImpl {
 
-    public static final IModuleUtilizationFunctionsImpl INSTANCE = new ModuleUtilizationFunctionsImpl();
+    public static final IResourceUtilizationFunctionsImpl INSTANCE = new ResourceUtilizationFunctionsImpl();
 
-    private ModuleUtilizationFunctionsImpl() {}
+    private ResourceUtilizationFunctionsImpl() {}
 
   }
   
-  public static class ModuleUtilizationFunctions {
+  public static class ResourceUtilizationFunctions {
 
-    private ModuleUtilizationFunctions() {}
+    private ResourceUtilizationFunctions() {}
 
   }
 
@@ -491,4 +491,4 @@ public class FunctionSpace_Planning {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,7J/BpUdLVtGL9d2PRPXFa3sgLl8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,67eddf6e-c02a-11e5-b927-b1b055d0575f,qjP+NMYIzshmTaik1CFNwUXesE8=] */

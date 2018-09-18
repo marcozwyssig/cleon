@@ -9,6 +9,7 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="afde59d9-c291-11e6-ba8e-05f5391bcda8" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+    <object statement-guid="f470a3c1-bb5f-11e8-921b-c1cf01226512" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
     <object statement-guid="f40fee44-c291-11e6-ba8e-05f5391bcda8" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
@@ -43,13 +44,13 @@
           <object statement-guid="eb853187-c291-11e6-ba8e-05f5391bcda8" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e2c90495-c291-11e6-ba8e-05f5391bcda8" type="literal">allocation</object>
+          <object statement-guid="e2c90495-c291-11e6-ba8e-05f5391bcda8" type="literal">fte</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="e05d5cbb-c291-11e6-ba8e-05f5391bcda8" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-          <object statement-guid="e76f3416-c291-11e6-ba8e-05f5391bcda8" type="literal">Bedarf in Stunden</object>
+          <object statement-guid="e76f3416-c291-11e6-ba8e-05f5391bcda8" type="literal">Bedarf in Tage</object>
         </predicate>
       </resource>
     </object>

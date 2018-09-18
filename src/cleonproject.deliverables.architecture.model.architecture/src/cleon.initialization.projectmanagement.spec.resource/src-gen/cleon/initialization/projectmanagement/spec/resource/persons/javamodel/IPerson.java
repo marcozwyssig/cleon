@@ -20,6 +20,8 @@ public interface IPerson extends cleon.initialization.projectmanagement.spec.res
   
   public cleon.initialization.projectmanagement.spec.resource.persons.experience.javamodel.IExperiences selectExperiences();
   
+  public cleon.initialization.projectmanagement.spec.resource.persons.roles.javamodel.IRoles selectRoles();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,gcKuAvDZPxUVnat5qYZRc7b3cHA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,jZYKQqseJFmvqSGkeyDbZpGHXac=] */

@@ -31,15 +31,6 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
   // attributes
   
   @Override
-  public java.lang.Integer selectAllocation() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_allocation);
-  }
-    
-  public void setAllocation(java.lang.Integer allocation) {
-     _setSingleAttribute(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_allocation, allocation);
-  }
-
-  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -57,8 +48,27 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
      _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Integer selectFte() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_fte);
+  }
+    
+  public void setFte(java.lang.Integer fte) {
+     _setSingleAttribute(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_fte, fte);
+  }
+
   // relations
   
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+  }
+
+  public RoleUtilization setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
   @Override
   public cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole selectRole() {
     return _getSingle(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role);
@@ -93,10 +103,11 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_allocation, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_fte, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.roles.javamodel.IRole.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.UtilizationPackage.RoleUtilization_role, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -109,4 +120,4 @@ public class RoleUtilization extends DynamicResource implements IRoleUtilization
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,DifsDmpZMjwL/winzEED9eIYbRw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,6ujteJmhRu34tkaq4lx2zje2QFM=] */

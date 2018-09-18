@@ -69,6 +69,16 @@ public class SystemGoal extends DynamicResource implements ISystemGoal {
   // relations
   
   @Override
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  }
+
+  public SystemGoal setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -87,8 +97,9 @@ public class SystemGoal extends DynamicResource implements ISystemGoal {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e0533144-210d-11e8-9bf6-d910b575bad9,uRCWo47Of5BchpTg/xS8OZpMO9o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e0533144-210d-11e8-9bf6-d910b575bad9,kga6YyVpdW+sQNxc2kOBE1beN+Q=] */

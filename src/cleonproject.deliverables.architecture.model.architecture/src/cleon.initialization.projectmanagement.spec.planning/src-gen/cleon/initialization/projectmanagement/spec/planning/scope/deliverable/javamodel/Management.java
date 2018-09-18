@@ -78,6 +78,26 @@ public class Management extends DynamicResource implements IManagement {
   // relations
   
   @Override
+  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  }
+
+  public Management setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+    return this;
+  }
+    
+  @Override
+  public cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState selectState() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state);
+  }
+
+  public Management setState(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState state) {
+    _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state, state);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -97,8 +117,10 @@ public class Management extends DynamicResource implements IManagement {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
+    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,584072fc-b467-11e8-bb21-172cc8e5f7cd,nPfCI4FW3abk17A0ehPa+jY16fU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,584072fc-b467-11e8-bb21-172cc8e5f7cd,dM6femdKlZINPYXLgMR+Wak/XsM=] */

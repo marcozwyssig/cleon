@@ -2,11 +2,11 @@ package cleon.initialization.projectmanagement.spec.planning.scope.workpackage.u
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRoleUtilization extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription {
+public interface IRoleUtilization extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.spec.doc.chapter.javamodel.IChapter, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("75e4e41e-c291-11e6-ba8e-05f5391bcda8");
   
-  public java.lang.Integer selectAllocation();
+  public java.lang.Integer selectFte();
   
   // relations
   
@@ -14,4 +14,4 @@ public interface IRoleUtilization extends ch.actifsource.core.javamodel.IDecorat
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,7TFrtz5OjS/g2lgfvRIkks5sGFQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,75e4e41e-c291-11e6-ba8e-05f5391bcda8,+RkcZHnAsm7SAOLmWZRe4wVZzFo=] */

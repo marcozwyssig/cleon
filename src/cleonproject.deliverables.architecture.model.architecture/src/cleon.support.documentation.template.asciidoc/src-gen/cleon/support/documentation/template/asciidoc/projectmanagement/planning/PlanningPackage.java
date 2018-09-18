@@ -17,7 +17,7 @@ public class PlanningPackage {
   public static final Resource FunctionSpace_aE_Planning_SprintPlanning = new Resource("14f2346e-312f-11e6-b049-b7e2a4d7c48e");
   public static final Resource FunctionSpace_aE_Planning_Releases = new Resource("4f8d0038-33b0-11e6-94cd-fbf6c8ccd08d");
   public static final Resource FunctionSpace_aE_Planning_Planning = new Resource("16e07006-c1ce-11e6-bd27-4740c1c9b441");
-  public static final Resource FunctionSpace_aE_Planning_ModuleUtilization = new Resource("b84f481b-c6c1-11e6-8242-2f0ed6756d77");
+  public static final Resource FunctionSpace_aE_Planning_ResourceUtilization = new Resource("b84f481b-c6c1-11e6-8242-2f0ed6756d77");
   public static final Resource FunctionSpace_aE_Planning_Workpackage = new Resource("ee9540ef-1e08-11e7-882a-cdd93aa926f8");
   public static final Resource FunctionSpace_aE_Planning_WorkspaceGoals = new Resource("07ecae62-1e09-11e7-882a-cdd93aa926f8");
   public static final Resource FunctionSpace_aE_Planning_Scope = new Resource("8810d889-3eb4-11e7-a89c-83d57940f0e3");
@@ -42,4 +42,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,cRhfutVCMdNXXPt8x86/71HWzGo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.support.documentation.template.asciidoc.projectmanagement.planning,PXMb0fUgHzbUH7bkp4QrMjuRssw=] */

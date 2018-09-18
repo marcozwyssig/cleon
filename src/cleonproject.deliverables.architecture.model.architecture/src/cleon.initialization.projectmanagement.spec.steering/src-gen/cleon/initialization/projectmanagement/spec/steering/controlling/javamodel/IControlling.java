@@ -8,8 +8,8 @@ public interface IControlling extends cleon.common.doc.spec.doc.document.javamod
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling selectModuleControlling();
+  public cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling selectModuleControlling();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d404ffdb-a7d8-11e5-82dd-3b995d9c840c,ob65DikJxjr9DrYsyjahqd4E6KM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d404ffdb-a7d8-11e5-82dd-3b995d9c840c,HgdZ4OPn4v9FnMkPOFmkKrxJAUA=] */

@@ -79,11 +79,11 @@ public class Controlling extends DynamicResource implements IControlling {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling selectModuleControlling() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling);
+  public cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling selectModuleControlling() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling);
   }
 
-  public Controlling setModuleControlling(cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling moduleControlling) {
+  public Controlling setModuleControlling(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling moduleControlling) {
     _setSingle(cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling, moduleControlling);
     return this;
   }
@@ -128,7 +128,7 @@ public class Controlling extends DynamicResource implements IControlling {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -136,9 +136,9 @@ public class Controlling extends DynamicResource implements IControlling {
 
   // toMeRelations
   
-  public static cleon.initialization.projectmanagement.spec.steering.controlling.javamodel.IControlling selectToMeModuleControlling(cleon.initialization.projectmanagement.spec.steering.controlling.module.javamodel.IModulesControlling object) {
+  public static cleon.initialization.projectmanagement.spec.steering.controlling.javamodel.IControlling selectToMeModuleControlling(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverablesControlling object) {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.steering.controlling.javamodel.IControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.ControllingPackage.Controlling_moduleControlling, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d404ffdb-a7d8-11e5-82dd-3b995d9c840c,SnsV0zl/j6LCJhJpkdLYqlqrD3k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d404ffdb-a7d8-11e5-82dd-3b995d9c840c,hb36+DRYTQvXOxujM85H7gD/vIw=] */

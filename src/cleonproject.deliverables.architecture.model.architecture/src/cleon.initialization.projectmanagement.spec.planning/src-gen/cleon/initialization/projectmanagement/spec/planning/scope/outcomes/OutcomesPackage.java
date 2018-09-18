@@ -13,12 +13,6 @@ public class OutcomesPackage {
   public static final Resource OutcomeDependency_reason = new Resource("815fe539-07d6-11e6-a579-8304ec3aa032");
   public static final Resource FunctionSpace_aE_Outcome_Outcome = new Resource("db63da8f-349e-11e6-8839-1f6631cc77ac");
   public static final Resource Outcome_deadlines = new Resource("5188fa77-c763-11e6-9515-3d3c9e104ed6");
-  public static final Resource OutcomeState = new Resource("5b3641a5-c767-11e6-9515-3d3c9e104ed6");
-  public static final Resource OutcomeState_OnHold = new Resource("65173fcf-c767-11e6-9515-3d3c9e104ed6");
-  public static final Resource OutcomeState_Open = new Resource("85d66dae-c767-11e6-9515-3d3c9e104ed6");
-  public static final Resource OutcomeState_In__F_Progress = new Resource("85d66daf-c767-11e6-9515-3d3c9e104ed6");
-  public static final Resource OutcomeState_Done = new Resource("85d66db0-c767-11e6-9515-3d3c9e104ed6");
-  public static final Resource Outcome_state = new Resource("a5fb7da8-c767-11e6-9515-3d3c9e104ed6");
   public static final Resource Outcome_timeLag = new Resource("7148b395-b485-11e8-8f7e-e5c7a2aaa874");
   public static final Resource Outcome_deliverable = new Resource("7c159fda-babc-11e8-b88f-bd952c44e997");
   
@@ -41,4 +35,4 @@ public class OutcomesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.outcomes,c6aom3mPXZwV0yMMvwi+ZE1LOl8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.spec.planning.scope.outcomes,Ki92tUwjZPJSXw6DVbR3eSHQSXQ=] */

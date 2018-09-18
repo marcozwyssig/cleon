@@ -48,9 +48,6 @@ public class FunctionSpace_DocBook_NSOV {
     @IDynamicResourceExtension.MethodId("78240a51-c1e8-11e6-84f4-db6ef89bc9ce")
     public java.lang.String RenderCapabilities();
 
-    @IDynamicResourceExtension.MethodId("9fa6060e-c1e8-11e6-84f4-db6ef89bc9ce")
-    public List<cleon.conception.architecture.spec.eamod.ncv.javamodel.ICapability> GetAllUsedCapabilities();
-
   }
   
   public static interface IAbstractGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -73,4 +70,4 @@ public class FunctionSpace_DocBook_NSOV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dc2ae63-c1e5-11e6-84f4-db6ef89bc9ce,qxOP3vaf7y3uq3wK+YzVVnXuYu0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5dc2ae63-c1e5-11e6-84f4-db6ef89bc9ce,CxnIDrsRf9xUMWsqcnwlQ1hUXG0=] */

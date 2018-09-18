@@ -8,8 +8,10 @@ public interface IResourceUtilization extends cleon.common.doc.spec.doc.chapter.
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IModuleUtilization> selectUtilizateRoles();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IRoleUtilization> selectUtilizateRoles();
+  
+  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.workpackage.utilization.javamodel.IPersonUtilization> selectPersonUtilization();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8db4bffd-bbd5-11e6-997f-d73ea5a3671c,pa8qeCzGLi7rlWuBg/iEH4a91hc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8db4bffd-bbd5-11e6-997f-d73ea5a3671c,Cf3ugiSwPTWAmboj/ur+1gFLDOM=] */

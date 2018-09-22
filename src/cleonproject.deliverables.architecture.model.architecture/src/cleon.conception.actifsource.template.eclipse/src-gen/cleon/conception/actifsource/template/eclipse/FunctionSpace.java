@@ -100,6 +100,21 @@ public class FunctionSpace {
     @IDynamicResourceExtension.MethodId("fe333144-7e75-11e6-95c9-39c2ade57f78")
     public java.lang.String GetPath();
 
+    @IDynamicResourceExtension.MethodId("3492c658-be77-11e8-a165-65b4bbad9291")
+    public java.lang.String GetFeatureName();
+
+    @IDynamicResourceExtension.MethodId("3b4ede36-be77-11e8-a165-65b4bbad9291")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("ffa885b5-be77-11e8-a165-65b4bbad9291")
+    public cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion GetVersion();
+
+    @IDynamicResourceExtension.MethodId("b1d8ac24-be78-11e8-a165-65b4bbad9291")
+    public cleon.conception.actifsource.spec.actifsource.system.javamodel.IZoo GetZoo();
+
+    @IDynamicResourceExtension.MethodId("5cc7d343-be79-11e8-a165-65b4bbad9291")
+    public java.lang.String RenderFeatureDependencies();
+
   }
   
   public static interface IFeatureFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -123,10 +138,7 @@ public class FunctionSpace {
   public static interface IZooFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aa3daa49-342d-11e7-9486-85e29952984a")
-    public java.lang.String GetFeatureName();
-
-    @IDynamicResourceExtension.MethodId("2b13843d-44ca-11e5-93ef-c50f9659357a")
-    public java.lang.String RenderRequiredZooDependencies();
+    public java.lang.String GetSiteName();
 
     @IDynamicResourceExtension.MethodId("09628c70-3936-11e7-bdc0-a3f58cf12b73")
     public java.lang.String GetName();
@@ -363,4 +375,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,pQCilWYkMIcoRhUVaIbaar8ye8A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,YiyZdiXIk4zif0OKpoH5trT/z1A=] */

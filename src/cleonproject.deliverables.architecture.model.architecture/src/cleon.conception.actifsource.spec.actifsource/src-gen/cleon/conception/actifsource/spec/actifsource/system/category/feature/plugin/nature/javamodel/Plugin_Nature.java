@@ -42,6 +42,16 @@ public class Plugin_Nature extends DynamicResource implements IPlugin_Nature {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage> selectExportPackage() {
+    return _getList(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_exportPackage);
+  }
+
+  public Plugin_Nature setExportPackage(java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage> exportPackage) {
+    _setList(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_exportPackage, exportPackage);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -57,8 +67,15 @@ public class Plugin_Nature extends DynamicResource implements IPlugin_Nature {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_accessrules, visitor);
     // relations
+    _acceptList(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_exportPackage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature selectToMeExportPackage(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage object) {
+    return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.NaturePackage.Plugin_aE_Nature_exportPackage, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,HKl979yU/mTfrSmjqYQX3Ar1qS0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,WD/92IPA2Ty8gbcb5ITguB8a8Eo=] */

@@ -18,46 +18,43 @@ import cleon.common.resources.spec.calendar.javamodel.ICalendar;
 import cleon.common.resources.spec.calendar.javamodel.IDay;
 import cleon.initialization.projectmanagement.spec.planning.schedule.javamodel.Schedule;
 
-public class SelectDateForCapacityDecorator extends
-		AspectImplementationDecorator {
+public class SelectDateForCapacityDecorator extends AspectImplementationDecorator {
 
-	public static List<IDay> getDays(IPersonCapacity capacity)
-	{
+	public static List<IDay> getDays(IPersonCapacity capacity) {
 		ISprintPlanning sprintPlanning = SprintPlanning
-				.selectToMeSprintCapacity(SprintCapacity
-						.selectToMePersonCapacity(capacity));
-		
-		ICalendar calender = Schedule.selectToMeSprintPlanning(SprintPlannings.selectToMeSprintplannings(
-				sprintPlanning)).selectCalendar();
+				.selectToMeSprintCapacity(SprintCapacity.selectToMePersonCapacity(capacity));
+
+		ICalendar calender = Schedule
+				.selectToMeSprintPlanning(SprintPlannings.selectToMeSprintplannings(sprintPlanning)).selectCalendar();
 
 		IDay start = sprintPlanning.selectSprint().selectStart();
 		java.util.Date startDate = DayFunctionsImpl.INSTANCE.GetDate(start);
 
 		IDay end = sprintPlanning.selectSprint().selectEnd();
 		java.util.Date endDate = DayFunctionsImpl.INSTANCE.GetDate(end);
-		
-		java.time.LocalDate startLocalDate = startDate.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
+
+		java.time.LocalDate startLocalDate = startDate.toInstant().atZone(java.time.ZoneId.systemDefault())
+				.toLocalDate();
 		java.time.LocalDate endLocalDate = endDate.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate();
 
 		List<IDay> days = new ArrayList<IDay>();
-		for (java.time.LocalDate date = startLocalDate; date.isBefore(endLocalDate.plusDays(1)); date = date.plusDays(1)) {
-			java.util.Date utilDate = java.util.Date.from(date.atStartOfDay(java.time.ZoneId.systemDefault()).toInstant());
+		for (java.time.LocalDate date = startLocalDate; date
+				.isBefore(endLocalDate.plusDays(1)); date = date.plusDays(1)) {
+			java.util.Date utilDate = java.util.Date
+					.from(date.atStartOfDay(java.time.ZoneId.systemDefault()).toInstant());
 			IDay dayObj = calender.extension(ICalendarFunctions.class).GetDay(utilDate);
-			days.add(dayObj);					
+			days.add(dayObj);
 		}
 		return days;
-		
-	}
-	
-	public INodeSet getDecoratableNodes(IReadJobExecutor executor,
-			INode subject, INode decoratingRelation) {
-		ITypeSystem typeSystem = TypeSystem.create(executor);
-		IDynamicResourceRepository resourceRepository = typeSystem
-				.getResourceRepository();
 
-		IPersonCapacity capacity = resourceRepository.getResource(
-				IPersonCapacity.class, subject);
-		
+	}
+
+	public INodeSet getDecoratableNodes(IReadJobExecutor executor, INode subject, INode decoratingRelation) {
+		ITypeSystem typeSystem = TypeSystem.create(executor);
+		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+
+		IPersonCapacity capacity = resourceRepository.getResource(IPersonCapacity.class, subject);
+
 		List<IDay> days = getDays(capacity);
 		NodeSet dayNodeSet = new NodeSet();
 		days.stream().forEach(x -> dayNodeSet.add(x.getResource()));

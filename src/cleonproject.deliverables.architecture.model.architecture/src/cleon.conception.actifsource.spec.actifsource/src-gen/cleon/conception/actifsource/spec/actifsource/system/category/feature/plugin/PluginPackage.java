@@ -12,7 +12,6 @@ public class PluginPackage {
   public static final Resource Plugin_resources = new Resource("e0532bab-5201-11e5-89ac-35d4069568da");
   public static final Resource PluginAggregateDecomposite = new Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
   public static final Resource Package = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
-  public static final Resource Plugin_exportPackage = new Resource("4ac67c8e-b87e-11e5-a463-ff45aa361315");
   public static final Resource Package_subPackage = new Resource("c1a1d31a-b884-11e5-a463-ff45aa361315");
   public static final Resource PluginAggregateDecomposite_into = new Resource("c4c26124-f8cf-11e5-bc92-c963417b9cea");
   public static final Resource PluginBuiltinDependency = new Resource("dc98b25c-0c6a-11e6-86c5-87a8b520dd59");
@@ -46,4 +45,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin,Fb0AoUzA61hyaajHeafjHtiT1GY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin,ExIVuuHvrHxEM6enMDeBNxSazHA=] */

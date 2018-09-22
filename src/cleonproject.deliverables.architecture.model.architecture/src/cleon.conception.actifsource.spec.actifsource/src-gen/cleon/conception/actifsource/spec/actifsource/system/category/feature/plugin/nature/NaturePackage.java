@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class NaturePackage {
   
+  public static final Resource Plugin_aE_Nature_exportPackage = new Resource("4ac67c8e-b87e-11e5-a463-ff45aa361315");
   public static final Resource Nature = new Resource("c6ee893a-3fd7-11e8-bd50-b94594551673");
   public static final Resource Java = new Resource("e9f92d4a-3fd7-11e8-bd50-b94594551673");
   public static final Resource Gradle = new Resource("f150252c-3fd7-11e8-bd50-b94594551673");
@@ -29,4 +30,4 @@ public class NaturePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature,19Bsapoq4ZHWIq/Q9iIiUMwQh6Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature,V186xPD2f+tV9rXOekaFc31Y5RU=] */

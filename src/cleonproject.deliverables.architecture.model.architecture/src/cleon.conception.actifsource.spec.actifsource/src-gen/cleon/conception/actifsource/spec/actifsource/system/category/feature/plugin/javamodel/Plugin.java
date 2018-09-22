@@ -21,10 +21,6 @@ public abstract class Plugin extends DynamicResource implements IPlugin {
     return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_resources, object.getResource());
   }
   
-  public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeExportPackage(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_exportPackage, object.getResource());
-  }
-  
   public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeActifsource(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.nature.actifsource.javamodel.IActifsource object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_actifsource, object.getResource());
   }
@@ -42,4 +38,4 @@ public abstract class Plugin extends DynamicResource implements IPlugin {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,t/x3FncKiZzKf+F7wrJ3P4G07JU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,LpbHdg6mhjkn0SxNO+wuUjfW5DE=] */

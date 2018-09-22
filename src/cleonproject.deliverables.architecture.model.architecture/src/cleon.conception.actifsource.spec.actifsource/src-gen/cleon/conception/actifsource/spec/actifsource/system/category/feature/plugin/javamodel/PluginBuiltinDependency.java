@@ -32,11 +32,11 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   
   @Override
   public cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectTo() {
-    return _getSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginDependency_to);
+    return _getSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginBuiltinDependency_to);
   }
 
   public PluginBuiltinDependency setTo(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin to) {
-    _setSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginDependency_to, to);
+    _setSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginBuiltinDependency_to, to);
     return this;
   }
     
@@ -54,9 +54,15 @@ public class PluginBuiltinDependency extends DynamicResource implements IPluginB
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginDependency_to, visitor);
+    _acceptSingle(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginBuiltinDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginBuiltinDependency> selectToMeTo(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin object) {
+    return _getToMeList(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginBuiltinDependency.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginBuiltinDependency_to, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,Y/Y53yFTJxI0ZgV0S0YAPp6DNbI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,QHt1SYEgbpqfPFGd7lKzYKpjROY=] */

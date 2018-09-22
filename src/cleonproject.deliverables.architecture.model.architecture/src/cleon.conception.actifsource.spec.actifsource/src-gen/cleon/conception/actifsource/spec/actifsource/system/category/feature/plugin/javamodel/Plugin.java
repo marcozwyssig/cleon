@@ -13,8 +13,12 @@ public abstract class Plugin extends DynamicResource implements IPlugin {
   
   // toMeRelations
   
-  public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeDependsOn(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginDependency object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_dependsOn, object.getResource());
+  public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeDependsOnPlugin(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_dependsOnPlugin, object.getResource());
+  }
+  
+  public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeDependsOnBuiltin(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginBuiltinDependency object) {
+    return _getToMeSingle(object.getRepository(), cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.Plugin_dependsOnBuiltin, object.getResource());
   }
   
   public static cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectToMeResources(cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IResource object) {
@@ -38,4 +42,4 @@ public abstract class Plugin extends DynamicResource implements IPlugin {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,LpbHdg6mhjkn0SxNO+wuUjfW5DE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,oo01LcwsdSFZTRfrGMedm1nWw2E=] */

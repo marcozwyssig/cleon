@@ -8,7 +8,9 @@ public interface IPlugin extends cleon.conception.architecture.spec.uml.structur
   
   // relations
   
-  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginDependency> selectDependsOn();
+  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency> selectDependsOnPlugin();
+  
+  public java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginBuiltinDependency> selectDependsOnBuiltin();
   
   public java.util.List<? extends cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IResource> selectResources();
   
@@ -22,4 +24,4 @@ public interface IPlugin extends cleon.conception.architecture.spec.uml.structur
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,c1wnAcQhp/7bKZraP0OgibOky+E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,voYuqcB4jVL0o44kmMa1mzDbQRM=] */

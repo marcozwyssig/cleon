@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class PluginPackage {
   
-  public static final Resource Plugin_dependsOn = new Resource("ee024577-03b8-11e5-b26a-2b178025b98b");
+  public static final Resource Plugin_dependsOnPlugin = new Resource("ee024577-03b8-11e5-b26a-2b178025b98b");
   public static final Resource Plugin = new Resource("04a544de-11e9-11e5-b568-55f5f05bd6f6");
   public static final Resource PluginDependency = new Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource PluginDependency_to = new Resource("de9ea266-4260-11e5-8a2d-599443ec8ff4");
@@ -25,6 +25,9 @@ public class PluginPackage {
   public static final Resource Plugin_java = new Resource("6106c404-41a6-11e8-81d0-774e4d9334dd");
   public static final Resource Plugin_gradle = new Resource("6237f12f-41a6-11e8-81d0-774e4d9334dd");
   public static final Resource Plugin_plugin = new Resource("e3f988f8-41a9-11e8-81d0-774e4d9334dd");
+  public static final Resource Plugin_dependsOnBuiltin = new Resource("e3484de3-beb3-11e8-972c-a1feaa7cfc48");
+  public static final Resource PluginProjectDependency_to = new Resource("069b6d5b-beb4-11e8-972c-a1feaa7cfc48");
+  public static final Resource PluginBuiltinDependency_to = new Resource("54b52ba9-beb4-11e8-972c-a1feaa7cfc48");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +48,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin,ExIVuuHvrHxEM6enMDeBNxSazHA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.actifsource.spec.actifsource.system.category.feature.plugin,SzyjtbAwtYtFrSnB0woillo/oJ4=] */

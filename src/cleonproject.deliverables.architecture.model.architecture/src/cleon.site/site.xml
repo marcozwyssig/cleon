@@ -1,100 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/cleon.common.analysis_0.3.25.jar" id="cleon.common.analysis" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.resources_0.3.25.jar" id="cleon.common.resources" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.doc_0.3.25.jar" id="cleon.common.doc" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.xml_0.3.25.jar" id="cleon.common.xml" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.glossary_0.3.25.jar" id="cleon.common.glossary" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.knowledge_0.3.25.jar" id="cleon.common.knowledge" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.common.importwizard_0.3.25.jar" id="cleon.common.importwizard" version="0.3.25">
-      <category name="common"/>
-   </feature>
-   <feature url="features/cleon.initialization.processlanguage_0.3.25.jar" id="cleon.initialization.processlanguage" version="0.3.25">
-      <category name="initialization"/>
-   </feature>
-   <feature url="features/cleon.initialization.projectmanagement_0.3.25.jar" id="cleon.initialization.projectmanagement" version="0.3.25">
-      <category name="initialization"/>
-   </feature>
-   <feature url="features/cleon.conception.actifsource_0.3.25.jar" id="cleon.conception.actifsource" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.architecture_0.3.25.jar" id="cleon.conception.architecture" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.organisation_0.3.25.jar" id="cleon.conception.organisation" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.applications_0.3.25.jar" id="cleon.conception.applications" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.platform_0.3.25.jar" id="cleon.conception.platform" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.network_0.3.25.jar" id="cleon.conception.network" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.conception.testing_0.3.25.jar" id="cleon.conception.testing" version="0.3.25">
-      <category name="conception"/>
-   </feature>
-   <feature url="features/cleon.implementation.gradle_0.3.25.jar" id="cleon.implementation.gradle" version="0.3.25">
-      <category name="implementation"/>
-   </feature>
-   <feature url="features/cleon.implementation.dotnet_0.3.25.jar" id="cleon.implementation.dotnet" version="0.3.25">
-      <category name="implementation"/>
-   </feature>
-   <feature url="features/cleon.implementation.java_0.3.25.jar" id="cleon.implementation.java" version="0.3.25">
-      <category name="implementation"/>
-   </feature>
-   <feature url="features/cleon.implementation.plantuml_0.3.25.jar" id="cleon.implementation.plantuml" version="0.3.25">
-      <category name="implementation"/>
-   </feature>
-   <feature url="features/cleon.deployment.chocolatey_0.3.25.jar" id="cleon.deployment.chocolatey" version="0.3.25">
-      <category name="deployment"/>
-   </feature>
-   <feature url="features/cleon.support.building_0.3.25.jar" id="cleon.support.building" version="0.3.25">
-      <category name="support"/>
-   </feature>
-   <feature url="features/cleon.support.documentation_0.3.25.jar" id="cleon.support.documentation" version="0.3.25">
-      <category name="support"/>
-   </feature>
-   <feature url="features/cleon.support.publishing_0.3.25.jar" id="cleon.support.publishing" version="0.3.25">
-      <category name="support"/>
-   </feature>
-   <feature url="features/cleon.support.collaboration_0.3.25.jar" id="cleon.support.collaboration" version="0.3.25">
-      <category name="support"/>
-   </feature>
-   <feature url="features/cleon.methods.itarc42_0.3.25.jar" id="cleon.methods.itarc42" version="0.3.25">
-      <category name="methods"/>
-   </feature>
-   <feature url="features/cleon.modelinglanguages.bpmn_0.3.25.jar" id="cleon.modelinglanguages.bpmn" version="0.3.25">
-      <category name="modeling languages"/>
-   </feature>
-   <feature url="features/cleon.devops.chocolatey_0.3.25.jar" id="cleon.devops.chocolatey" version="0.3.25">
-      <category name="devops"/>
-   </feature>
-   <category-def name="common" label="Common"/>
-   <category-def name="initialization" label="Initialization"/>
-   <category-def name="conception" label="Conception"/>
-   <category-def name="implementation" label="Implementation"/>
-   <category-def name="deployment" label="Deployment"/>
-   <category-def name="support" label="Support"/>
-   <category-def name="documentation" label="Documentation"/>
-   <category-def name="methods" label="Methods"/>
-   <category-def name="modeling languages" label="Modeling Languages"/>
-   <category-def name="programming languages" label="Programming Languages"/>
-   <category-def name="devops" label="DevOps"/>
-   <category-def name="publishing" label="Publishing"/>
-   <category-def name="building" label="Building"/>
+	<feature url="features/cleon.common.analysis_0.3.26.jar" id="cleon.common.analysis" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.resources_0.3.26.jar" id="cleon.common.resources" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.doc_0.3.26.jar" id="cleon.common.doc" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.xml_0.3.26.jar" id="cleon.common.xml" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.glossary_0.3.26.jar" id="cleon.common.glossary" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.knowledge_0.3.26.jar" id="cleon.common.knowledge" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.common.importwizard_0.3.26.jar" id="cleon.common.importwizard" version="0.3.26">
+		<category name="common"/>
+	</feature>
+	<feature url="features/cleon.initialization.processlanguage_0.3.26.jar" id="cleon.initialization.processlanguage" version="0.3.26">
+		<category name="initialization"/>
+	</feature>
+	<feature url="features/cleon.initialization.projectmanagement_0.3.26.jar" id="cleon.initialization.projectmanagement" version="0.3.26">
+		<category name="initialization"/>
+	</feature>
+	<feature url="features/cleon.conception.actifsource_0.3.26.jar" id="cleon.conception.actifsource" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.architecture_0.3.26.jar" id="cleon.conception.architecture" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.organisation_0.3.26.jar" id="cleon.conception.organisation" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.applications_0.3.26.jar" id="cleon.conception.applications" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.platform_0.3.26.jar" id="cleon.conception.platform" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.network_0.3.26.jar" id="cleon.conception.network" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.conception.testing_0.3.26.jar" id="cleon.conception.testing" version="0.3.26">
+		<category name="conception"/>
+	</feature>
+	<feature url="features/cleon.implementation.gradle_0.3.26.jar" id="cleon.implementation.gradle" version="0.3.26">
+		<category name="implementation"/>
+	</feature>
+	<feature url="features/cleon.implementation.dotnet_0.3.26.jar" id="cleon.implementation.dotnet" version="0.3.26">
+		<category name="implementation"/>
+	</feature>
+	<feature url="features/cleon.implementation.java_0.3.26.jar" id="cleon.implementation.java" version="0.3.26">
+		<category name="implementation"/>
+	</feature>
+	<feature url="features/cleon.implementation.plantuml_0.3.26.jar" id="cleon.implementation.plantuml" version="0.3.26">
+		<category name="implementation"/>
+	</feature>
+	<feature url="features/cleon.deployment.chocolatey_0.3.26.jar" id="cleon.deployment.chocolatey" version="0.3.26">
+		<category name="deployment"/>
+	</feature>
+	<feature url="features/cleon.support.building_0.3.26.jar" id="cleon.support.building" version="0.3.26">
+		<category name="support"/>
+	</feature>
+	<feature url="features/cleon.support.documentation_0.3.26.jar" id="cleon.support.documentation" version="0.3.26">
+		<category name="support"/>
+	</feature>
+	<feature url="features/cleon.support.publishing_0.3.26.jar" id="cleon.support.publishing" version="0.3.26">
+		<category name="support"/>
+	</feature>
+	<feature url="features/cleon.support.collaboration_0.3.26.jar" id="cleon.support.collaboration" version="0.3.26">
+		<category name="support"/>
+	</feature>
+	<feature url="features/cleon.methods.itarc42_0.3.26.jar" id="cleon.methods.itarc42" version="0.3.26">
+		<category name="methods"/>
+	</feature>
+	<feature url="features/cleon.modelinglanguages.bpmn_0.3.26.jar" id="cleon.modelinglanguages.bpmn" version="0.3.26">
+		<category name="modeling languages"/>
+	</feature>
+	<feature url="features/cleon.devops.chocolatey_0.3.26.jar" id="cleon.devops.chocolatey" version="0.3.26">
+		<category name="devops"/>
+	</feature>
+	<category-def name="common" label="Common"/>
+	<category-def name="initialization" label="Initialization"/>
+	<category-def name="conception" label="Conception"/>
+	<category-def name="implementation" label="Implementation"/>
+	<category-def name="deployment" label="Deployment"/>
+	<category-def name="support" label="Support"/>
+	<category-def name="documentation" label="Documentation"/>
+	<category-def name="methods" label="Methods"/>
+	<category-def name="modeling languages" label="Modeling Languages"/>
+	<category-def name="programming languages" label="Programming Languages"/>
+	<category-def name="devops" label="DevOps"/>
+	<category-def name="publishing" label="Publishing"/>
+	<category-def name="building" label="Building"/>
 </site>
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,3BfsnVC6+LEUOAodC6k5IdtaARE=] -->

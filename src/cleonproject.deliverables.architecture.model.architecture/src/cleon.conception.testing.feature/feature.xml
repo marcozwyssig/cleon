@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.conception.testing" label="cleon.conception.testing" version="0.3.25">
+<feature id="cleon.conception.testing" label="cleon.conception.testing" version="0.3.26">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -455,27 +455,25 @@ contact cleon.conception.testing.
 cleon.conception.testing is a registered trademark of cleon.conception.testing in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   <includes id="cleon.conception.architecture" version="0.3.25" name="cleon.conception.architecture"/>
-   <includes id="cleon.common.glossary" version="0.3.25" name="cleon.common.glossary"/>
-   <includes id="cleon.initialization.projectmanagement" version="0.3.25" name="cleon.initialization.projectmanagement"/>
-   <includes id="cleon.common.analysis" version="0.3.25" name="cleon.common.analysis"/>
-   <includes id="cleon.common.doc" version="0.3.25" name="cleon.common.doc"/>
-   <includes id="cleon.common.resources" version="0.3.25" name="cleon.common.resources"/>
-   <includes id="cleon.common.xml" version="0.3.25" name="cleon.common.xml"/>
-   <includes id="cleon.initialization.processlanguage" version="0.3.25" name="cleon.initialization.processlanguage"/>
-   <includes id="cleon.common.importwizard" version="0.3.25" name="cleon.common.importwizard"/>
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.glossary" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.analysis" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.26" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.conception.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
+   <plugin id="cleon.conception.testing.spec.testing.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,f00fda87-d3ff-11e5-9dfc-cf0f3e030023,Hash] -->

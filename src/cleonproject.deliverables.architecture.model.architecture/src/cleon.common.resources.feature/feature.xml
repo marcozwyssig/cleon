@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.resources" label="cleon.common.resources" version="0.3.25">
+<feature id="cleon.common.resources" label="cleon.common.resources" version="0.3.26">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -455,21 +455,19 @@ contact cleon.common.resources.
 cleon.common.resources is a registered trademark of cleon.common.resources in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      
    </requires>
-   <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>
-   <plugin id="cleon.common.resources.spec.calendar.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>
-   <plugin id="cleon.common.resources.spec.language.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
+   <plugin id="cleon.common.resources.spec.resources.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
+   <plugin id="cleon.common.resources.spec.calendar.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
+   <plugin id="cleon.common.resources.spec.language.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,957e3ae3-d409-11e5-8556-8f55ceb91287,Hash] -->

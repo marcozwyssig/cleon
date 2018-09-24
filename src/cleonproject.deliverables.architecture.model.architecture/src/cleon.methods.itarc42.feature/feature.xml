@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.methods.itarc42" label="cleon.methods.itarc42" version="0.3.25">
+<feature id="cleon.methods.itarc42" label="cleon.methods.itarc42" version="0.3.26">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -455,18 +455,16 @@ contact cleon.methods.itarc42.
 cleon.methods.itarc42 is a registered trademark of cleon.methods.itarc42 in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      
    </requires>
       
 </feature>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.support.documentation" label="cleon.support.documentation" version="0.3.25">
+<feature id="cleon.support.documentation" label="cleon.support.documentation" version="0.3.26">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -455,33 +455,31 @@ contact cleon.support.documentation.
 cleon.support.documentation is a registered trademark of cleon.support.documentation in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   <includes id="cleon.implementation.plantuml" version="0.3.25" name="cleon.implementation.plantuml"/>
-   <includes id="cleon.conception.applications" version="0.3.25" name="cleon.conception.applications"/>
-   <includes id="cleon.conception.testing" version="0.3.25" name="cleon.conception.testing"/>
-   <includes id="cleon.conception.architecture" version="0.3.25" name="cleon.conception.architecture"/>
-   <includes id="cleon.common.glossary" version="0.3.25" name="cleon.common.glossary"/>
-   <includes id="cleon.initialization.projectmanagement" version="0.3.25" name="cleon.initialization.projectmanagement"/>
-   <includes id="cleon.common.analysis" version="0.3.25" name="cleon.common.analysis"/>
-   <includes id="cleon.common.doc" version="0.3.25" name="cleon.common.doc"/>
-   <includes id="cleon.common.resources" version="0.3.25" name="cleon.common.resources"/>
-   <includes id="cleon.common.xml" version="0.3.25" name="cleon.common.xml"/>
-   <includes id="cleon.initialization.processlanguage" version="0.3.25" name="cleon.initialization.processlanguage"/>
-   <includes id="cleon.common.importwizard" version="0.3.25" name="cleon.common.importwizard"/>
-   <includes id="cleon.conception.platform" version="0.3.25" name="cleon.conception.platform"/>
-   <includes id="cleon.conception.network" version="0.3.25" name="cleon.conception.network"/>
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      <import feature="cleon.implementation.plantuml" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.conception.applications" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.conception.testing" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.glossary" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.analysis" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.conception.platform" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.conception.network" version="0.3.26" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>
-   <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
+   <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
+   <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,eb63c364-2b4d-11e8-b4c1-97cc468744f4,Hash] -->

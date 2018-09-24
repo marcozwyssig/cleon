@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.importwizard" label="cleon.common.importwizard" version="0.3.24">
+<feature id="cleon.common.importwizard" label="cleon.common.importwizard" version="0.3.25">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -457,7 +457,7 @@ and/or other countries. All other trademarks are the property
 of their respective owners.
    </license>
 
-   <includes id="cleon.common.resources" version="0.3.24" name="cleon.common.resources"/>
+   <includes id="cleon.common.resources" version="0.3.25" name="cleon.common.resources"/>
    
    <requires>
       <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
@@ -468,7 +468,7 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.common.importwizard.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.3.24" unpack="false"/>
-   <plugin id="cleon.common.importwizard.template.java.builtin" download-size="0" install-size="0" version="0.3.24" unpack="false"/>   
+   <plugin id="cleon.common.importwizard.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>
+   <plugin id="cleon.common.importwizard.template.java.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,06be6e51-3261-11e8-b938-4d2e69ddf214,Hash] -->

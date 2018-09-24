@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.implementation.plantuml" label="cleon.implementation.plantuml" version="0.3.24">
+<feature id="cleon.implementation.plantuml" label="cleon.implementation.plantuml" version="0.3.25">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -457,15 +457,15 @@ and/or other countries. All other trademarks are the property
 of their respective owners.
    </license>
 
-   <includes id="cleon.conception.architecture" version="0.3.24" name="cleon.conception.architecture"/>
-   <includes id="cleon.common.glossary" version="0.3.24" name="cleon.common.glossary"/>
-   <includes id="cleon.initialization.projectmanagement" version="0.3.24" name="cleon.initialization.projectmanagement"/>
-   <includes id="cleon.common.analysis" version="0.3.24" name="cleon.common.analysis"/>
-   <includes id="cleon.common.doc" version="0.3.24" name="cleon.common.doc"/>
-   <includes id="cleon.common.resources" version="0.3.24" name="cleon.common.resources"/>
-   <includes id="cleon.common.xml" version="0.3.24" name="cleon.common.xml"/>
-   <includes id="cleon.initialization.processlanguage" version="0.3.24" name="cleon.initialization.processlanguage"/>
-   <includes id="cleon.common.importwizard" version="0.3.24" name="cleon.common.importwizard"/>
+   <includes id="cleon.conception.architecture" version="0.3.25" name="cleon.conception.architecture"/>
+   <includes id="cleon.common.glossary" version="0.3.25" name="cleon.common.glossary"/>
+   <includes id="cleon.initialization.projectmanagement" version="0.3.25" name="cleon.initialization.projectmanagement"/>
+   <includes id="cleon.common.analysis" version="0.3.25" name="cleon.common.analysis"/>
+   <includes id="cleon.common.doc" version="0.3.25" name="cleon.common.doc"/>
+   <includes id="cleon.common.resources" version="0.3.25" name="cleon.common.resources"/>
+   <includes id="cleon.common.xml" version="0.3.25" name="cleon.common.xml"/>
+   <includes id="cleon.initialization.processlanguage" version="0.3.25" name="cleon.initialization.processlanguage"/>
+   <includes id="cleon.common.importwizard" version="0.3.25" name="cleon.common.importwizard"/>
    
    <requires>
       <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
@@ -476,6 +476,6 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.implementation.plantuml.template.uml.builtin" download-size="0" install-size="0" version="0.3.24" unpack="false"/>   
+   <plugin id="cleon.implementation.plantuml.template.uml.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,46fc32d7-2dd4-11e8-bf2f-091bf46106cb,Hash] -->

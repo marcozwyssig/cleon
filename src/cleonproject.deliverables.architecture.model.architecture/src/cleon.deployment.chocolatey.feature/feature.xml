@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.deployment.chocolatey" label="cleon.deployment.chocolatey" version="0.3.24">
+<feature id="cleon.deployment.chocolatey" label="cleon.deployment.chocolatey" version="0.3.25">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -457,12 +457,12 @@ and/or other countries. All other trademarks are the property
 of their respective owners.
    </license>
 
-   <includes id="cleon.initialization.projectmanagement" version="0.3.24" name="cleon.initialization.projectmanagement"/>
-   <includes id="cleon.initialization.processlanguage" version="0.3.24" name="cleon.initialization.processlanguage"/>
-   <includes id="cleon.common.importwizard" version="0.3.24" name="cleon.common.importwizard"/>
-   <includes id="cleon.common.doc" version="0.3.24" name="cleon.common.doc"/>
-   <includes id="cleon.common.resources" version="0.3.24" name="cleon.common.resources"/>
-   <includes id="cleon.common.xml" version="0.3.24" name="cleon.common.xml"/>
+   <includes id="cleon.initialization.projectmanagement" version="0.3.25" name="cleon.initialization.projectmanagement"/>
+   <includes id="cleon.initialization.processlanguage" version="0.3.25" name="cleon.initialization.processlanguage"/>
+   <includes id="cleon.common.importwizard" version="0.3.25" name="cleon.common.importwizard"/>
+   <includes id="cleon.common.doc" version="0.3.25" name="cleon.common.doc"/>
+   <includes id="cleon.common.resources" version="0.3.25" name="cleon.common.resources"/>
+   <includes id="cleon.common.xml" version="0.3.25" name="cleon.common.xml"/>
    
    <requires>
       <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
@@ -473,7 +473,7 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.deployment.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.3.24" unpack="false"/>
-   <plugin id="cleon.deployment.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.3.24" unpack="false"/>   
+   <plugin id="cleon.deployment.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>
+   <plugin id="cleon.deployment.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.3.25" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,65a8030d-4d0a-11e6-9043-01b29b61e580,Hash] -->

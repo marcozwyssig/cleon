@@ -455,23 +455,21 @@ contact sample.category_b.feature_g.
 sample.category_b.feature_g is a registered trademark of sample.category_b.feature_g in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   <includes id="sample.category_b.feature_k" version="0.1.0" name="sample.category_b.feature_k"/>
-   <includes id="sample.category_a.feature_c" version="0.1.0" name="sample.category_a.feature_c"/>
-   <includes id="sample.category_a.feature_b" version="0.1.0" name="sample.category_a.feature_b"/>
-   <includes id="sample.category_a.builtin_b" version="0.1.0" name="sample.category_a.builtin_b"/>
-   <includes id="sample.category_a.feature_a" version="0.1.0" name="sample.category_a.feature_a"/>
-   <includes id="sample.category_a.builtin_a" version="0.1.0" name="sample.category_a.builtin_a"/>
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      <import feature="sample.category_b.feature_k" version="0.1.0" name="sample.category_b.feature_k" match="greaterOrEqual"/>
+      <import feature="sample.category_a.feature_c" version="0.1.0" name="sample.category_a.feature_c" match="greaterOrEqual"/>
+      <import feature="sample.category_a.feature_b" version="0.1.0" name="sample.category_a.feature_b" match="greaterOrEqual"/>
+      <import feature="sample.category_a.builtin_b" version="0.1.0" name="sample.category_a.builtin_b" match="greaterOrEqual"/>
+      <import feature="sample.category_a.feature_a" version="0.1.0" name="sample.category_a.feature_a" match="greaterOrEqual"/>
+      <import feature="sample.category_a.builtin_a" version="0.1.0" name="sample.category_a.builtin_a" match="greaterOrEqual"/>
    </requires>
    <plugin id="sample.category_b.feature_g.spec.specification_g.builtin" download-size="0" install-size="0" version="0.1.0" unpack="false"/>   
 </feature>

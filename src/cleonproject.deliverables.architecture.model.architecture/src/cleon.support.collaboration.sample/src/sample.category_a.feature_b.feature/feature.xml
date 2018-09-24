@@ -455,18 +455,16 @@ contact sample.category_a.feature_b.
 sample.category_a.feature_b is a registered trademark of sample.category_a.feature_b in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>
-
-   <includes id="sample.category_a.feature_a" version="0.1.0" name="sample.category_a.feature_a"/>
-   
+   </license>   
    <requires>
-      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      <import feature="sample.category_a.feature_a" version="0.1.0" name="sample.category_a.feature_a" match="greaterOrEqual"/>
    </requires>
    <plugin id="sample.category_a.feature_b.spec.specification_b.builtin" download-size="0" install-size="0" version="0.1.0" unpack="false"/>   
 </feature>

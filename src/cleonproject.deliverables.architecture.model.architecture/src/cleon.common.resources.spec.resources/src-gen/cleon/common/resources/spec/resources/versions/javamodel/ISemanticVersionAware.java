@@ -10,6 +10,8 @@ public interface ISemanticVersionAware extends ch.actifsource.core.javamodel.IRe
   
   public cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion selectVersion();
   
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e6fee9d-d410-11e5-8556-8f55ceb91287,t8XHvtlkMueJIgp5IHkCxWlsPcU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e6fee9d-d410-11e5-8556-8f55ceb91287,BxqhvtDA9gk/e6YuwpjgKTFQ5kc=] */

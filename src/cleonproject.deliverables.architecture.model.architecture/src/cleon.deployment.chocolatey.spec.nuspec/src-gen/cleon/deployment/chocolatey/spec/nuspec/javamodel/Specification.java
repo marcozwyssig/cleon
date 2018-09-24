@@ -80,6 +80,16 @@ public class Specification extends DynamicResource implements ISpecification {
   }
     
   @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage);
+  }
+
+  public Specification setSystemStage(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage systemStage) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, systemStage);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -109,9 +119,10 @@ public class Specification extends DynamicResource implements ISpecification {
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,2507sFgb4XkIcv9HUAa2HgK5PDw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,qEKcWlFU9QfaJr9l9OtZuQUdJGk=] */

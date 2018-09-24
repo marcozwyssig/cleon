@@ -51,11 +51,11 @@ public class WorkspaceGoal extends DynamicResource implements IWorkspaceGoal {
   // relations
   
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal selectGoal() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal);
+  public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal selectGoal() {
+    return _getSingle(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal);
   }
 
-  public WorkspaceGoal setGoal(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal goal) {
+  public WorkspaceGoal setGoal(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal goal) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal, goal);
     return this;
   }
@@ -87,16 +87,16 @@ public class WorkspaceGoal extends DynamicResource implements IWorkspaceGoal {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal, visitor);
+    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.javamodel.IWorkspaceGoal> selectToMeGoal(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.javamodel.IWorkspaceGoal> selectToMeGoal(cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.javamodel.IWorkspaceGoal.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.goals.GoalsPackage.WorkspaceGoal_goal, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,538b2189-bc93-11e6-904c-8bf6f8927ff0,w6i8xbOIm64ZktMZ04xRKO4aT9M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,538b2189-bc93-11e6-904c-8bf6f8927ff0,RLqvDnfOOUoFTpbs8jqh6sVVA2I=] */

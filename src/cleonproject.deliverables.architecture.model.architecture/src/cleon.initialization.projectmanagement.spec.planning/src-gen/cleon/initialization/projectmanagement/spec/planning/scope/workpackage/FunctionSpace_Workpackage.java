@@ -37,6 +37,9 @@ public class FunctionSpace_Workpackage {
     @IDynamicResourceExtension.MethodId("aa8f9a90-3eb5-11e7-a89c-83d57940f0e3")
     public List<cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> GetModules();
 
+    @IDynamicResourceExtension.MethodId("ff97575a-bfee-11e8-a3d0-5394fd9291a1")
+    public cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IScope GetScope();
+
   }
   
   public static interface IWorkpackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -122,4 +125,4 @@ public class FunctionSpace_Workpackage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,PHlvi89QD98C9NdS5VsD9F7vWNg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,qNrrPWZ9qmCRCQrQwNe2ZhkyjhQ=] */

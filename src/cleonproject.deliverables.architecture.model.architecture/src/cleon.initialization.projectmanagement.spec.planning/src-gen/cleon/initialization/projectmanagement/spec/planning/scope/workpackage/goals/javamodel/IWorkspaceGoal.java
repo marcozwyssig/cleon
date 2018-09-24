@@ -8,8 +8,8 @@ public interface IWorkspaceGoal extends ch.actifsource.core.javamodel.IResource,
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IProjectGoal selectGoal();
+  public cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal selectGoal();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,538b2189-bc93-11e6-904c-8bf6f8927ff0,UzDpEzcGlEt4Eb4FKk8Z18+KWkQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,538b2189-bc93-11e6-904c-8bf6f8927ff0,YBvHZkdZ9jWpubYZTOIrj5083uU=] */

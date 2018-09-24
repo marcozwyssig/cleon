@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Document extends DynamicResource implements IDocument {
+public class ManagementDeliverable extends DynamicResource implements IManagementDeliverable {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDocument> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDocument>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IManagementDeliverable> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IManagementDeliverable>() {
     
     @Override
-    public IDocument create() {
-      return new Document();
+    public IManagementDeliverable create() {
+      return new ManagementDeliverable();
     }
     
     @Override
-    public IDocument create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Document(resourceRepository, resource);
+    public IManagementDeliverable create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ManagementDeliverable(resourceRepository, resource);
     }
   
   };
 
-  public Document() {
-    super(IDocument.TYPE_ID);
+  public ManagementDeliverable() {
+    super(IManagementDeliverable.TYPE_ID);
   }
   
-  public Document(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IDocument.TYPE_ID);
+  public ManagementDeliverable(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IManagementDeliverable.TYPE_ID);
   }
 
   // attributes
@@ -82,7 +82,7 @@ public class Document extends DynamicResource implements IDocument {
     return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public Document setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+  public ManagementDeliverable setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
     _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
@@ -92,7 +92,7 @@ public class Document extends DynamicResource implements IDocument {
     return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state);
   }
 
-  public Document setState(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState state) {
+  public ManagementDeliverable setState(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState state) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state, state);
     return this;
   }
@@ -102,7 +102,7 @@ public class Document extends DynamicResource implements IDocument {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Document setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ManagementDeliverable setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -123,4 +123,4 @@ public class Document extends DynamicResource implements IDocument {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,134c7952-b467-11e8-bb21-172cc8e5f7cd,DBcKnV/qDAw4pyKuqsGyHQZ8vlE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,584072fc-b467-11e8-bb21-172cc8e5f7cd,dVgckdYOzownqkID+OmSZX8/coI=] */

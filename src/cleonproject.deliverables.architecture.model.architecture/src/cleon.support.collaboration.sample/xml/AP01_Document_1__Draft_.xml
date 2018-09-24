@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
-	<db:title>AP02_LE03_System 1</db:title>
+	<db:title>AP01_Document 1_[Draft]</db:title>
 	
 	
 	<db:chapter>
@@ -20,6 +20,30 @@
 				</db:tr>
 			</db:thead>
 			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Z01</db:para>
+					</db:td>
+					<db:td>
+						<db:para>My Goal</db:para>
+					</db:td>
+					<db:td>
+						<db:para>MyGoal 1 ddd
+						         dfsdffdsfsdf
+						         sdfsdf</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Z02</db:para>
+					</db:td>
+					<db:td>
+						<db:para>TestGoals</db:para>
+					</db:td>
+					<db:td>
+						<db:para></db:para>
+					</db:td>
+				</db:tr>
 			</db:tbody>
 		</db:informaltable>
 		
@@ -28,7 +52,7 @@
 		<db:title>Backlog</db:title>
 		
 		
-		<db:para>In der nachfolgenden Tabelle wird eine Zusammenfassung der Aktivitäten für das Lieferergebnis LE03_System 1 dargestellt.</db:para>
+		<db:para>In der nachfolgenden Tabelle wird eine Zusammenfassung der Aktivitäten für das Lieferergebnis Document 1_[Draft] dargestellt.</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="40%" />
 			<db:col width="70%" />
@@ -45,7 +69,7 @@
 						Geplanter Aufwand [SP]		
 					</db:td>
 					<db:td>
-									
+						80			
 					</db:td>
 				</db:tr>
 				<db:tr>
@@ -53,7 +77,7 @@
 						Geplanter Total Aufwand [SP]	
 					</db:td>
 					<db:td>
-						0.0			
+						10.0			
 					</db:td>
 				</db:tr>
 				<db:tr>
@@ -62,6 +86,56 @@
 					</db:td>
 					<db:td>
 						0.0			
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
+		<db:para>In der nachfolgenden Tabelle werden alle Aktivitäten für das Lieferergebnis Document 1_[Draft] aufgelistet, welche das Arbeitspaket behandelt.</db:para>
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="20%" />
+			<db:col width="30%" />
+			<db:col width="10%" />
+			<db:col width="10%" />		
+			<db:col width="7%" />
+			<db:col width="7%" />
+			<db:col width="10%" />
+			<db:col width="10%" />	
+			<db:thead>
+				<db:tr>
+					<db:th>Name</db:th>
+					<db:th>Beschreibung</db:th>
+					<db:th>S</db:th>	
+					<db:th>P</db:th>							
+					<db:th>A [SP]</db:th>
+					<db:th>V</db:th>
+					<db:th>Sprint</db:th>
+					<db:th>Bed.</db:th>		
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>	
+						G001_11
+					</db:td>
+					<db:td>
+						
+					</db:td>
+					<db:td>
+						Input
+					</db:td>
+					<db:td>
+						Should have
+					</db:td>
+					<db:td>
+						0.0
+					</db:td>
+					<db:td>
+						
+					</db:td>
+					<db:td>
+						
+					</db:td>												
+					<db:td>
 					</db:td>
 				</db:tr>
 			</db:tbody>
@@ -89,6 +163,20 @@
 					</db:tr>
 				</db:thead>
 				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>ICT-Architect</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sss</db:para>
+						</db:td>
+						<db:td>
+							<db:para>10</db:para>
+						</db:td>
+						<db:td>
+							<db:para></db:para>
+						</db:td>									
+					</db:tr>
 				</db:tbody>
 			</db:informaltable>	
 		</db:section>
@@ -116,7 +204,7 @@
 							<db:para></db:para>
 						</db:td>
 						<db:td>
-							<db:para>System 1</db:para>
+							<db:para>Document 1</db:para>
 						</db:td>
 						<db:td>
 							<db:para></db:para>
@@ -131,7 +219,13 @@
 				</db:tbody>
 			</db:informaltable>	
 		</db:section>
-		
+		<db:section>
+			<db:title>sss ICT-Architect</db:title>
+			
+			
+			
+			
+		</db:section>
 	</db:chapter>
 </db:book>
-<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,cb347b49-b469-11e8-bb21-172cc8e5f7cd,Hash] -->
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,a72acf42-bbc9-11e6-997f-d73ea5a3671c,Hash] -->

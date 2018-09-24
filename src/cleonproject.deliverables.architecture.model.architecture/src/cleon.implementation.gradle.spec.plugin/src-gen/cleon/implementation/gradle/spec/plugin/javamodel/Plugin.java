@@ -87,6 +87,16 @@ public class Plugin extends DynamicResource implements IPlugin {
   // relations
   
   @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage);
+  }
+
+  public Plugin setSystemStage(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage systemStage) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, systemStage);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.implementation.gradle.spec.plugin.javamodel.ITask> selectTasks() {
     return _getList(cleon.implementation.gradle.spec.plugin.javamodel.ITask.class, cleon.implementation.gradle.spec.plugin.PluginPackage.Plugin_tasks);
   }
@@ -127,6 +137,7 @@ public class Plugin extends DynamicResource implements IPlugin {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.implementation.gradle.spec.plugin.PluginPackage.Plugin_namespace, visitor);
     // relations
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptList(cleon.implementation.gradle.spec.plugin.javamodel.ITask.class, cleon.implementation.gradle.spec.plugin.PluginPackage.Plugin_tasks, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
@@ -137,4 +148,4 @@ public class Plugin extends DynamicResource implements IPlugin {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,KwjwDZfFPOs608WIYw2DOrelSpM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,NwNLPgJt8YXcAs8P0k97p+zm1M0=] */

@@ -31,6 +31,16 @@ public class ComponentCompositionVersionedDependency extends DynamicResource imp
   // relations
   
   @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage);
+  }
+
+  public ComponentCompositionVersionedDependency setSystemStage(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage systemStage) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, systemStage);
+    return this;
+  }
+    
+  @Override
   public cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentComposition selectTo() {
     return _getSingle(cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.architecture.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to);
   }
@@ -64,10 +74,11 @@ public class ComponentCompositionVersionedDependency extends DynamicResource imp
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentComposition.class, cleon.conception.architecture.spec.uml.structural.components.ComponentsPackage.ComponentCompositionDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,966d2038-d40f-11e5-8556-8f55ceb91287,YuC3GVV0qsKZD8HTRx+mhUqnJEk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,966d2038-d40f-11e5-8556-8f55ceb91287,OOx5z+bs8h8VCOhiajqhMrO2Lig=] */

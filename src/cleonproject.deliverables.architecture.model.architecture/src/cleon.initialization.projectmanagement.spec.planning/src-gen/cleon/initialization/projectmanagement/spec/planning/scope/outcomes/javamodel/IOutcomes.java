@@ -8,8 +8,12 @@ public interface IOutcomes extends cleon.common.doc.spec.doc.chapter.javamodel.I
   
   // relations
   
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> selectOutcomes();
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome> selectSystemOutcomes();
+  
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome> selectDocumentOutcomes();
+  
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome> selectManagementOutcomes();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,Slrn5dOalr7Vw+HaxL6SwkOjX6E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,/WxtrOd554FNMJalh9P/SFzPLso=] */

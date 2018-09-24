@@ -202,9 +202,9 @@ public class Workpackage extends DynamicResource implements IWorkpackage {
     return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackage_utilization, object.getResource());
   }
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage> selectToMeOutcome(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome object) {
-    return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackage_outcome, object.getResource());
+  public static cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage selectToMeOutcome(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.workpackage.javamodel.IWorkpackage.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.WorkpackagePackage.Workpackage_outcome, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ca090201-bbc8-11e6-997f-d73ea5a3671c,pISRssLLkGujGzHY3VP5G6/WmfE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ca090201-bbc8-11e6-997f-d73ea5a3671c,4sNf0/8xLpqF9kdWargG/O3/X3E=] */

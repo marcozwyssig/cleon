@@ -54,6 +54,9 @@ public class FunctionSpace_Outcome {
     @IDynamicResourceExtension.MethodId("fde15e4d-3fc2-11e7-9016-2b91d722d429")
     public cleon.initialization.projectmanagement.spec.planning.schedule.releases.javamodel.ISprint GetEndSprint();
 
+    @IDynamicResourceExtension.MethodId("bed73809-bfed-11e8-a3d0-5394fd9291a1")
+    public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes GetOutcomes();
+
   }
   
   public static interface IOutcomeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -124,6 +127,106 @@ public class FunctionSpace_Outcome {
 
   }
 
+  public static interface IOutcomesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ad94feed-bfec-11e8-a3d0-5394fd9291a1")
+    public List<cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> GetAllOutcomes();
+
+  }
+  
+  public static interface IOutcomesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OutcomesFunctionsImpl implements IOutcomesFunctionsImpl {
+
+    public static final IOutcomesFunctionsImpl INSTANCE = new OutcomesFunctionsImpl();
+
+    private OutcomesFunctionsImpl() {}
+
+  }
+  
+  public static class OutcomesFunctions {
+
+    private OutcomesFunctions() {}
+
+  }
+
+  public static interface ISystemOutcomeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d1531f5a-bfed-11e8-a3d0-5394fd9291a1")
+    public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes GetOutcomes();
+
+  }
+  
+  public static interface ISystemOutcomeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemOutcomeFunctionsImpl implements ISystemOutcomeFunctionsImpl {
+
+    public static final ISystemOutcomeFunctionsImpl INSTANCE = new SystemOutcomeFunctionsImpl();
+
+    private SystemOutcomeFunctionsImpl() {}
+
+  }
+  
+  public static class SystemOutcomeFunctions {
+
+    private SystemOutcomeFunctions() {}
+
+  }
+
+  public static interface IDocumentOutcomeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e2d58b5e-bfed-11e8-a3d0-5394fd9291a1")
+    public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes GetOutcomes();
+
+  }
+  
+  public static interface IDocumentOutcomeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DocumentOutcomeFunctionsImpl implements IDocumentOutcomeFunctionsImpl {
+
+    public static final IDocumentOutcomeFunctionsImpl INSTANCE = new DocumentOutcomeFunctionsImpl();
+
+    private DocumentOutcomeFunctionsImpl() {}
+
+  }
+  
+  public static class DocumentOutcomeFunctions {
+
+    private DocumentOutcomeFunctions() {}
+
+  }
+
+  public static interface IManagementOutcomeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f2bd3280-bfed-11e8-a3d0-5394fd9291a1")
+    public cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes GetOutcomes();
+
+  }
+  
+  public static interface IManagementOutcomeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ManagementOutcomeFunctionsImpl implements IManagementOutcomeFunctionsImpl {
+
+    public static final IManagementOutcomeFunctionsImpl INSTANCE = new ManagementOutcomeFunctionsImpl();
+
+    private ManagementOutcomeFunctionsImpl() {}
+
+  }
+  
+  public static class ManagementOutcomeFunctions {
+
+    private ManagementOutcomeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,yXUFGmEjvxDkSuDCp6oJ0rnGEXA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afa77083-349b-11e6-8839-1f6631cc77ac,E/g2uCSndvxtFDeX1f3ggtCq58c=] */

@@ -61,12 +61,32 @@ public class Outcomes extends DynamicResource implements IOutcomes {
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> selectOutcomes() {
-    return _getMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes);
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome> selectDocumentOutcomes() {
+    return _getMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_documentOutcomes);
   }
 
-  public Outcomes setOutcomes(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome> outcomes) {
-    _setMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, outcomes);
+  public Outcomes setDocumentOutcomes(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome> documentOutcomes) {
+    _setMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_documentOutcomes, documentOutcomes);
+    return this;
+  }
+    
+  @Override
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome> selectManagementOutcomes() {
+    return _getMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_managementOutcomes);
+  }
+
+  public Outcomes setManagementOutcomes(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome> managementOutcomes) {
+    _setMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_managementOutcomes, managementOutcomes);
+    return this;
+  }
+    
+  @Override
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome> selectSystemOutcomes() {
+    return _getMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_systemOutcomes);
+  }
+
+  public Outcomes setSystemOutcomes(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome> systemOutcomes) {
+    _setMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_systemOutcomes, systemOutcomes);
     return this;
   }
     
@@ -88,15 +108,25 @@ public class Outcomes extends DynamicResource implements IOutcomes {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, visitor);
+    _acceptMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_documentOutcomes, visitor);
+    _acceptMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_managementOutcomes, visitor);
+    _acceptMultiMap(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_systemOutcomes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectToMeOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcome object) {
-    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_outcomes, object.getResource());
+  public static cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectToMeSystemOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.ISystemOutcome object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_systemOutcomes, object.getResource());
+  }
+  
+  public static cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectToMeDocumentOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IDocumentOutcome object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_documentOutcomes, object.getResource());
+  }
+  
+  public static cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes selectToMeManagementOutcomes(cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IManagementOutcome object) {
+    return _getToMeSingle(object.getRepository(), cleon.initialization.projectmanagement.spec.planning.scope.outcomes.javamodel.IOutcomes.class, cleon.initialization.projectmanagement.spec.planning.scope.outcomes.OutcomesPackage.Outcomes_managementOutcomes, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,jIfbnNDK2cQ0cUza3d3KUw8f4Pc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fdf40175-b53c-11e5-bc0c-f35b68c3609a,8aKnmChLZMqX//2fbR4ctPskkmU=] */

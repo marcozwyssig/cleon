@@ -99,6 +99,16 @@ public class Zoo extends DynamicResource implements IZoo {
   }
     
   @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage);
+  }
+
+  public Zoo setSystemStage(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage systemStage) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, systemStage);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -130,6 +140,7 @@ public class Zoo extends DynamicResource implements IZoo {
     _acceptList(cleon.conception.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite.class, cleon.conception.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, visitor);
     _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDecomposite.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.applications.spec.arc42.Arc42Package.SoftwareSystem_hasDependency, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
@@ -141,4 +152,4 @@ public class Zoo extends DynamicResource implements IZoo {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,2haD92S9LlN/WZKn56ppazeHAX8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,5/jHGGvegbdp3FazhNCfVejge/Q=] */

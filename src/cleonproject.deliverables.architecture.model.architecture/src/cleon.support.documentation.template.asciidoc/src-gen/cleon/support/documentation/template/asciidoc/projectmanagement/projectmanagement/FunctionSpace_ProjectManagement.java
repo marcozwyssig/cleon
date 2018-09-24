@@ -27,6 +27,9 @@ public class FunctionSpace_ProjectManagement {
     @IDynamicResourceExtension.MethodId("1481e209-4e5d-11e6-a89e-4beefb17234f")
     public java.lang.String RenderEnd();
 
+    @IDynamicResourceExtension.MethodId("15dd6ccd-bfc7-11e8-a3d0-5394fd9291a1")
+    public java.lang.String GetDocumentPath();
+
   }
   
   public static interface IProtocolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -279,4 +282,4 @@ public class FunctionSpace_ProjectManagement {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,+bsjalhy6jHGe5WKw4iWR5ac0aA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2143ad53-b468-11e5-a3f4-497fd75158dc,wqB9v0hGKqpq85YsPEcGyTQZcBg=] */

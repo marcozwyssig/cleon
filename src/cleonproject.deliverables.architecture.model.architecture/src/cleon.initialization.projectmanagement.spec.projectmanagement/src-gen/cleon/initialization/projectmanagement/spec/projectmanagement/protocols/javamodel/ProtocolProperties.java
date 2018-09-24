@@ -122,6 +122,16 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
     
   @Override
+  public cleon.common.resources.spec.resources.versions.javamodel.ISystemStage selectSystemStage() {
+    return _getSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage);
+  }
+
+  public ProtocolProperties setSystemStage(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage systemStage) {
+    _setSingle(cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, systemStage);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -155,6 +165,7 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProject.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Reviewers_reviewers, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.workstate.javamodel.IWorkState.class, cleon.common.resources.spec.resources.workstate.WorkstatePackage.WorkStateAware_state, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
@@ -166,4 +177,4 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,wbPo3ScjdbHQ4FzhZpTI9WCv4JE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,kuCB0zY8ycnfNu2jyA99YaTVLos=] */

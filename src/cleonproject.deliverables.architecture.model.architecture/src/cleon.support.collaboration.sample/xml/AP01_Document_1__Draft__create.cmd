@@ -6,7 +6,7 @@ cd %~dp0
 
 REM make sure no previous results are misinterpretted
 echo purge previous files
-del "AP02_LE03_System_1.docx" > nul 2>&1
+del "AP01_Document_1__Draft_.docx" > nul 2>&1
 
 
 REM goto exit
@@ -16,14 +16,14 @@ echo successfully
 REM render
 :render
 echo now rendering
-"%ProgramFiles(x86)%\DocumentGenerator\bin\render.exe" -z -t template.docx -L 2 -P -l=de-CH -f "AP02_LE03_System_1.xml" ^
--D=Title:"AP02_LE03_System 1" ^
+"%ProgramFiles(x86)%\DocumentGenerator\bin\render.exe" -z -t template.docx -L 2 -P -l=de-CH -f "AP01_Document_1__Draft_.xml" ^
+-D=Title:"AP01_Document 1_[Draft]" ^
 -D=EAMod_Reviewers:""
 echo rendering maybe done
 
 if errorlevel 1 goto render_failed
 echo rendering failed
-call "AP02_LE03_System_1.docx"
+call "AP01_Document_1__Draft_.docx"
 goto exit
 
 :missing_parameter
@@ -50,4 +50,4 @@ pause
 
 :exit
 
-REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,cb347b49-b469-11e8-bb21-172cc8e5f7cd,Ib2cWlliNRMCo2OE6vDONkLsOxI=]
+REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,a72acf42-bbc9-11e6-997f-d73ea5a3671c,55Lj/0YXNTxC9udhTHn7ClAMD8E=]

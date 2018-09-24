@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[98d71cef-bc87-11e6-b169-a12bde5a1c7c,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Goals {
 
   /* Begin Protected Region [[98d71cef-bc87-11e6-b169-a12bde5a1c7c]] */
   
@@ -55,6 +55,31 @@ public class FunctionSpace {
 
   }
 
+  public static interface IGoalsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("35ce6d9b-bfef-11e8-a3d0-5394fd9291a1")
+    public List<cleon.initialization.projectmanagement.spec.planning.goals.javamodel.IGoal> GetAllGoals();
+
+  }
+  
+  public static interface IGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GoalsFunctionsImpl implements IGoalsFunctionsImpl {
+
+    public static final IGoalsFunctionsImpl INSTANCE = new GoalsFunctionsImpl();
+
+    private GoalsFunctionsImpl() {}
+
+  }
+  
+  public static class GoalsFunctions {
+
+    private GoalsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,98d71cef-bc87-11e6-b169-a12bde5a1c7c,sUfa5nLePUqGG5keDv88PNGW1NA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,98d71cef-bc87-11e6-b169-a12bde5a1c7c,PH8ypS7FrUUec/f3f6LljRsolfs=] */

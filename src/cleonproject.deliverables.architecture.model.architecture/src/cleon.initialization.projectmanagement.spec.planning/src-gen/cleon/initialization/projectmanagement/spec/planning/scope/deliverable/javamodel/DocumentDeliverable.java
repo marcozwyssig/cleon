@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class System extends DynamicResource implements ISystem {
+public class DocumentDeliverable extends DynamicResource implements IDocumentDeliverable {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystem> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISystem>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDocumentDeliverable> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDocumentDeliverable>() {
     
     @Override
-    public ISystem create() {
-      return new System();
+    public IDocumentDeliverable create() {
+      return new DocumentDeliverable();
     }
     
     @Override
-    public ISystem create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new System(resourceRepository, resource);
+    public IDocumentDeliverable create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new DocumentDeliverable(resourceRepository, resource);
     }
   
   };
 
-  public System() {
-    super(ISystem.TYPE_ID);
+  public DocumentDeliverable() {
+    super(IDocumentDeliverable.TYPE_ID);
   }
   
-  public System(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISystem.TYPE_ID);
+  public DocumentDeliverable(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IDocumentDeliverable.TYPE_ID);
   }
 
   // attributes
@@ -82,7 +82,7 @@ public class System extends DynamicResource implements ISystem {
     return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public System setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
+  public DocumentDeliverable setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
     _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
@@ -92,7 +92,7 @@ public class System extends DynamicResource implements ISystem {
     return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState.class, cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state);
   }
 
-  public System setState(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState state) {
+  public DocumentDeliverable setState(cleon.initialization.projectmanagement.spec.planning.scope.javamodel.IState state) {
     _setSingle(cleon.initialization.projectmanagement.spec.planning.scope.ScopePackage.StateAware_state, state);
     return this;
   }
@@ -102,7 +102,7 @@ public class System extends DynamicResource implements ISystem {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public System setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public DocumentDeliverable setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -123,4 +123,4 @@ public class System extends DynamicResource implements ISystem {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,471bb7a7-b467-11e8-bb21-172cc8e5f7cd,dXfgoCC2GffaLtW7LXq++1BcjiI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,134c7952-b467-11e8-bb21-172cc8e5f7cd,/oFw61srcyuYt9WR01gOaO38g+o=] */

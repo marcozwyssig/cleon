@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.publishing.staticwebsite.template.docpad">
+         <Plugin
+               pluginId="cleon.publishing.staticwebsite.template.docpad.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,caa26407-f9a8-11e5-b9a7-6569351d3892,a5de03c9-5444-11e8-a7d7-8f17ff9a62b8,xakI4zGl3sb/9omSs9wIPsZfjwk=] -->

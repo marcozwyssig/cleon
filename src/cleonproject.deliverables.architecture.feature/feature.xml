@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleonproject.deliverables.architecture" label="cleonproject.deliverables.architecture" version="0.2.1">
+<feature id="cleonproject.deliverables.architecture" label="cleonproject.deliverables.architecture" version="0.2.2">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -464,25 +464,25 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.deployment.chocolatey" version="0.3.25" name="cleon.deployment.chocolatey" match="greaterOrEqual"/>
-      <import feature="cleon.implementation.gradle" version="0.3.25" name="cleon.implementation.gradle" match="greaterOrEqual"/>
-      <import feature="cleon.support.documentation" version="0.3.25" name="cleon.support.documentation" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.projectmanagement" version="0.3.25" name="cleon.initialization.projectmanagement" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.processlanguage" version="0.3.25" name="cleon.initialization.processlanguage" match="greaterOrEqual"/>
-      <import feature="cleon.common.importwizard" version="0.3.25" name="cleon.common.importwizard" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.25" name="cleon.common.doc" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.25" name="cleon.common.resources" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.25" name="cleon.common.xml" match="greaterOrEqual"/>
-      <import feature="cleon.conception.actifsource" version="0.3.25" name="cleon.conception.actifsource" match="greaterOrEqual"/>
-      <import feature="cleon.conception.applications" version="0.3.25" name="cleon.conception.applications" match="greaterOrEqual"/>
-      <import feature="cleon.conception.platform" version="0.3.25" name="cleon.conception.platform" match="greaterOrEqual"/>
-      <import feature="cleon.conception.network" version="0.3.25" name="cleon.conception.network" match="greaterOrEqual"/>
-      <import feature="cleon.conception.architecture" version="0.3.25" name="cleon.conception.architecture" match="greaterOrEqual"/>
-      <import feature="cleon.common.glossary" version="0.3.25" name="cleon.common.glossary" match="greaterOrEqual"/>
-      <import feature="cleon.common.analysis" version="0.3.25" name="cleon.common.analysis" match="greaterOrEqual"/>
-      <import feature="cleon.implementation.plantuml" version="0.3.25" name="cleon.implementation.plantuml" match="greaterOrEqual"/>
-      <import feature="cleon.conception.testing" version="0.3.25" name="cleon.conception.testing" match="greaterOrEqual"/>
+      <import feature="cleon.deployment.chocolatey" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.implementation.gradle" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.support.documentation" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.actifsource" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.applications" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.platform" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.network" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.glossary" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.analysis" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.implementation.plantuml" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.testing" version="0.3.27" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.2.1" unpack="false"/>   
+   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.2.2" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,d419534b-f8d5-11e5-bc92-c963417b9cea,Hash] -->

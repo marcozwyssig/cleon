@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.doc" label="cleon.common.doc" version="0.3.26">
+<feature id="cleon.common.doc" label="cleon.common.doc" version="0.3.27">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -464,12 +464,12 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.26" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.26" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.27" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
-   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
-   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>
-   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.3.26" unpack="false"/>   
+   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
+   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
+   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
+   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,d2caf4fc-3b8a-11e5-b8db-7513250f5f90,Hash] -->

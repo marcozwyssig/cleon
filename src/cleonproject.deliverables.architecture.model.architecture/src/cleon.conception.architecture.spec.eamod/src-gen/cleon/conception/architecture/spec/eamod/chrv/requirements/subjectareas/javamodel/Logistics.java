@@ -99,6 +99,16 @@ public class Logistics extends DynamicResource implements ILogistics {
   }
     
   @Override
+  public java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> selectOwners() {
+    return _getList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners);
+  }
+
+  public Logistics setOwners(java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> owners) {
+    _setList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, owners);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectRequirements() {
     return _getList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.SubjectareasPackage.SubSubjectArea_requirements);
   }
@@ -130,9 +140,10 @@ public class Logistics extends DynamicResource implements ILogistics {
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal.class, cleon.conception.architecture.spec.eamod.chrv.motivation.goals.GoalsPackage.GoalAware_achieves, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.SubjectareasPackage.SubSubjectArea_requirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f6f36819-0c76-11e6-86c5-87a8b520dd59,bsTQpcD7kNNWRurqtCd+mlWfLbA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f6f36819-0c76-11e6-86c5-87a8b520dd59,AW87FnW3l1AyhDGetURcWCflv+I=] */

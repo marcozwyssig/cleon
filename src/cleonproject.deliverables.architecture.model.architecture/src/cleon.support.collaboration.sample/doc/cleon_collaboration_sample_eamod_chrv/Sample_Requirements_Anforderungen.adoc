@@ -438,6 +438,16 @@ anchor:S01[]
 S01
 | Stakeholder_A
 |
+| 
+anchor:S02[]
+S02
+| Stakeholder_B
+|
+| 
+anchor:S03[]
+S03
+| Stakeholder_C
+|
 |===
 
 
@@ -691,6 +701,7 @@ Ja
 | _Stakeholder_
 3+|
 . xref:S01[S01_Stakeholder_A]
+. xref:S02[S02_Stakeholder_B]
 |
 | _Schablone_
 3+|
@@ -1228,6 +1239,7 @@ Ja
 | _Stakeholder_
 3+|
 . xref:S01[S01_Stakeholder_A]
+. xref:S03[S03_Stakeholder_C]
 |
 | _Schablone_
 3+|

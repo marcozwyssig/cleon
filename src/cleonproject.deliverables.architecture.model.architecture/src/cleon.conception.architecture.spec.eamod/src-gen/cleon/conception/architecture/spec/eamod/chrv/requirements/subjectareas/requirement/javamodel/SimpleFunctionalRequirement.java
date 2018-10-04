@@ -245,11 +245,11 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
     
   @Override
   public java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> selectOwners() {
-    return _getList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners);
+    return _getList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_owners);
   }
 
   public SimpleFunctionalRequirement setOwners(java.util.List<? extends cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> owners) {
-    _setList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, owners);
+    _setList(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_owners, owners);
     return this;
   }
     
@@ -310,11 +310,11 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
     _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IEffort.class, cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.BacklogPackage.EffortAware_estimate, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.issues.javamodel.IIssue.class, cleon.conception.architecture.spec.eamod.chrv.issues.IssuesPackage.IssueAware_issues, visitor);
     _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.conception.architecture.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceAware_originatesFromSource, visitor);
-    _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, visitor);
+    _acceptList(cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_owners, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirementState.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,lKwn9bIpiiYG1DHY2zE/EJsMWd0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,WjU14ORRolLqDAZDrSakCKnFeno=] */

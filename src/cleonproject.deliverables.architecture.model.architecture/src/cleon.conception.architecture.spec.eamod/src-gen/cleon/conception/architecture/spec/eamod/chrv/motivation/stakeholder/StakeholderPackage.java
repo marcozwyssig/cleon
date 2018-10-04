@@ -9,7 +9,7 @@ public class StakeholderPackage {
   public static final Resource Stakeholder = new Resource("27a09805-06d7-11e6-8d3e-13e5be4bd43b");
   public static final Resource Stakeholders_stakeholders = new Resource("5a95ca24-06d7-11e6-8d3e-13e5be4bd43b");
   public static final Resource StakeholderAware = new Resource("33ff7368-0d07-11e6-be97-7d1235599779");
-  public static final Resource FunctionSpace_Stakeholder = new Resource("14547d6d-0de2-11e6-a33d-238391a68770");
+  public static final Resource FunctionSpace_aE_Stakeholder_Stakeholder = new Resource("14547d6d-0de2-11e6-a33d-238391a68770");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +30,4 @@ public class StakeholderPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder,O5fZM0Nwp4uBHDlyy5044jlw8IM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder,FbxPHZp5clqyCnzDyhsqqm34MVc=] */

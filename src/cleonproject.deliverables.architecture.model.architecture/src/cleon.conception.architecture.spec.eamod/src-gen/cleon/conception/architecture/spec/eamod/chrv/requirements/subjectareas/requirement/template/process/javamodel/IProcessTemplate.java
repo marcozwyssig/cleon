@@ -22,16 +22,10 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * System gestellt, sondern muss
  * neben der Entwicklung des Systems vom Auftragnehmer realisiert werden.
  */
-public interface IProcessTemplate extends cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.javamodel.INonFunctionalTemplate, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityTypeAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.IConditionAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObjectAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcessAware {
+public interface IProcessTemplate extends cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.javamodel.INonFunctionalTemplate, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.IConditionAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IActorAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObjectAware, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcessAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("3ba6dcf0-debb-11e5-bf7d-117d548070bb");
   
-  // relations
-  
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IActor selectActor();
-  
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.ICondition selectCondition();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,/Bp4uOhZNKQM8yIWC5WC8RtSuNw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,0FYCpVjsHT4+xv2e/DC0vkOUbGw=] */

@@ -4,9 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class ValuePackage {
   
-  public static final Resource Value = new Resource("8a1850ed-d574-11e5-89ea-2d8d86e9ef89");
-  public static final Resource ValueAware_value = new Resource("f7498031-d574-11e5-89ea-2d8d86e9ef89");
   public static final Resource ValueAware = new Resource("4e869654-d657-11e5-beff-c5494779b7d9");
+  public static final Resource ValueAware_value = new Resource("68a65c0b-c828-11e8-add3-695b26858127");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +26,4 @@ public class ValuePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value,HKFY89b+QSscDJXsDVm3zMKO8hk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value,6c5au4hT28JFP3wRMKq8PllrLJQ=] */

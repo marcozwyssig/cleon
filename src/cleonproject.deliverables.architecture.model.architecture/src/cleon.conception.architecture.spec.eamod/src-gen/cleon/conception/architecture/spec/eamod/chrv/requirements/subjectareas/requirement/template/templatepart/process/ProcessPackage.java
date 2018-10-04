@@ -4,9 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class ProcessPackage {
   
-  public static final Resource Process = new Resource("41f1f97e-d55d-11e5-89ea-2d8d86e9ef89");
-  public static final Resource ProcessAware_process = new Resource("b29dc867-d56b-11e5-89ea-2d8d86e9ef89");
   public static final Resource ProcessAware = new Resource("d47439c4-debd-11e5-bf7d-117d548070bb");
+  public static final Resource ProcessAware_process = new Resource("acb94c9d-c825-11e8-add3-695b26858127");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +26,4 @@ public class ProcessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process,xRawIjVdxnYe2RAlWQeau6RkIro=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process,WoO6YM3/L1IRZRYJSfnMgG4mkm0=] */

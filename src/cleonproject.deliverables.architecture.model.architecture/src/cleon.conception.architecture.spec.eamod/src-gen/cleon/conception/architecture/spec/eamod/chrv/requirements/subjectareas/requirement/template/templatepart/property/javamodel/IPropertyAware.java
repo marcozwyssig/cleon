@@ -6,10 +6,10 @@ public interface IPropertyAware extends ch.actifsource.core.javamodel.IResource 
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("09db64ff-d657-11e5-beff-c5494779b7d9");
   
-  // relations
+  // attributes
   
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.property.javamodel.IProperty selectProperty();
+  public java.lang.String selectProperty();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09db64ff-d657-11e5-beff-c5494779b7d9,thWCTZ8UaU/RL09zzydS60+fQxQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,09db64ff-d657-11e5-beff-c5494779b7d9,YMS/hRTMLgFFQeKHBKDhRXLBiwo=] */

@@ -28,6 +28,17 @@ public class ValueAware extends DynamicResource implements IValueAware {
     super(resourceRepository, resource, IValueAware.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectValue() {
+    return _getSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value);
+  }
+    
+  public void setValue(java.lang.String value) {
+     _setSingleAttribute(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, value);
+  }
+
   // relations
   
   @Override
@@ -40,29 +51,14 @@ public class ValueAware extends DynamicResource implements IValueAware {
     return this;
   }
     
-  @Override
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValue selectValue() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValue.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value);
-  }
-
-  public ValueAware setValue(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValue value) {
-    _setSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, value);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValue.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValueAware> selectToMeValue(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValue object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.javamodel.IValueAware.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e869654-d657-11e5-beff-c5494779b7d9,XcxP9nTUq/5WDzIGCr+ovbPKCfY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e869654-d657-11e5-beff-c5494779b7d9,IAyES9iZVxurT7Lua48rJAC+8Og=] */

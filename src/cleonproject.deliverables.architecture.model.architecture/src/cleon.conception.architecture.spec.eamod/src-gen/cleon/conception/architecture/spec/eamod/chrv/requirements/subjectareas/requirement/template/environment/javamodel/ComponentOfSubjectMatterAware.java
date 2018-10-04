@@ -11,11 +11,5 @@ public abstract class ComponentOfSubjectMatterAware extends DynamicResource impl
     super(IComponentOfSubjectMatterAware.TYPE_ID);
   }
   
-  // toMeRelations
-  
-  public static java.util.List<cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.environment.javamodel.IComponentOfSubjectMatterAware> selectToMeComponentOfSubjectMatter(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.environment.javamodel.IComponentOfSubjectMatter object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.environment.javamodel.IComponentOfSubjectMatterAware.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.environment.EnvironmentPackage.ComponentOfSubjectMatterAware_componentOfSubjectMatter, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,55acb122-d6df-11e5-a98f-afca63b52e04,Go0aU1PYBSkK/0Z2k+NtLR/q0DE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,55acb122-d6df-11e5-a98f-afca63b52e04,V9a1CqtAuIx0uGkCRDVkm3xJguY=] */

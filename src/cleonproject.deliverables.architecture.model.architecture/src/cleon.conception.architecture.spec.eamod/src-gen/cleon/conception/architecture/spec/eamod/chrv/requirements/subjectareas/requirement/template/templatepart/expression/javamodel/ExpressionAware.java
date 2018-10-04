@@ -11,11 +11,5 @@ public abstract class ExpressionAware extends DynamicResource implements IExpres
     super(IExpressionAware.TYPE_ID);
   }
   
-  // toMeRelations
-  
-  public static java.util.List<cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression.javamodel.IExpressionAware> selectToMeExpression(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression.javamodel.IExpression object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression.javamodel.IExpressionAware.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression.ExpressionPackage.ExpressionAware_expression, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2fb52edc-d657-11e5-beff-c5494779b7d9,QuaXxvT9wgPo9ei8Nk3u5UupA6A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2fb52edc-d657-11e5-beff-c5494779b7d9,CifX3lgcrXIcyEdFX40MJpl7iqA=] */

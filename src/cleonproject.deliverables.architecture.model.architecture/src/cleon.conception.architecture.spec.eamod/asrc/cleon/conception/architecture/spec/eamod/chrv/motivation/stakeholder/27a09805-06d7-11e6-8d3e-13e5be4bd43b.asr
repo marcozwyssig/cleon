@@ -39,6 +39,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="aa85cdef-c829-11e8-add3-695b26858127" type="resource" guid="aa83f92b-c829-11e8-add3-695b26858127" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="27a09807-06d7-11e6-8d3e-13e5be4bd43b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -169,6 +170,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="aa85cdef-c829-11e8-add3-695b26858127">
+      <resource guid="aa83f92b-c829-11e8-add3-695b26858127">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa83f92c-c829-11e8-add3-695b26858127" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa83f92d-c829-11e8-add3-695b26858127" type="literal">cleon.conception.architecture.spec.eamod.chrv.motivation.stakeholder.javamodel.StakeholderInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aa83f92e-c829-11e8-add3-695b26858127" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
         </predicate>
       </resource>
     </object>

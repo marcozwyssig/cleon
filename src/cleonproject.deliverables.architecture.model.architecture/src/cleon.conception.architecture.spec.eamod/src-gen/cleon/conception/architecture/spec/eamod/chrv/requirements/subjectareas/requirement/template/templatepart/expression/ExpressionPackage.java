@@ -4,9 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class ExpressionPackage {
   
-  public static final Resource Expression = new Resource("7f0c4021-d574-11e5-89ea-2d8d86e9ef89");
-  public static final Resource ExpressionAware_expression = new Resource("ca3965db-d574-11e5-89ea-2d8d86e9ef89");
   public static final Resource ExpressionAware = new Resource("2fb52edc-d657-11e5-beff-c5494779b7d9");
+  public static final Resource ExpressionAware_expression = new Resource("d51c46ce-c827-11e8-add3-695b26858127");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +26,4 @@ public class ExpressionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression,kPnPWRiMkMQdAo+SmJGFvCQ0WNE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.expression,ECSEMgTA7Tx4sNq6oNj4dYOznvc=] */

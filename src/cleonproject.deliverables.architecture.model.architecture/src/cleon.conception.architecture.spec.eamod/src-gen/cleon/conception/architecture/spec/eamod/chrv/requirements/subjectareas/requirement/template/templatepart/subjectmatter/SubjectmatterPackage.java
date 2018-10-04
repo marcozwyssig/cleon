@@ -4,9 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class SubjectmatterPackage {
   
-  public static final Resource SubjectMatter = new Resource("73f1fecf-d574-11e5-89ea-2d8d86e9ef89");
-  public static final Resource SubjectMatterAware_subjectMatter = new Resource("ca3965da-d574-11e5-89ea-2d8d86e9ef89");
   public static final Resource SubjectMatterAware = new Resource("ed1a8e0c-d656-11e5-beff-c5494779b7d9");
+  public static final Resource SubjectMatterAware_subjectMatter = new Resource("494be336-c827-11e8-add3-695b26858127");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +26,4 @@ public class SubjectmatterPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.subjectmatter,On5qIXNLn2pI3YmyshOvnYvmAvQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.subjectmatter,MJXBaVISV+ZIc1HJ+1OG9hYJmkA=] */

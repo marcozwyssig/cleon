@@ -28,6 +28,17 @@ public class FunctionTemplate extends DynamicResource implements IFunctionTempla
     super(resourceRepository, resource, IFunctionTemplate.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectObject() {
+    return _getSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object);
+  }
+    
+  public void setObject(java.lang.String object) {
+     _setSingleAttribute(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, object);
+  }
+
   // relations
   
   @Override
@@ -47,16 +58,6 @@ public class FunctionTemplate extends DynamicResource implements IFunctionTempla
 
   public FunctionTemplate setFunctionalityType(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType functionalityType) {
     _setSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, functionalityType);
-    return this;
-  }
-    
-  @Override
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject selectObject() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object);
-  }
-
-  public FunctionTemplate setObject(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject object) {
-    _setSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, object);
     return this;
   }
     
@@ -83,13 +84,14 @@ public class FunctionTemplate extends DynamicResource implements IFunctionTempla
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
     // relations
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.TemplatePackage.Template_condition, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcess.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec24b51-d560-11e5-89ea-2d8d86e9ef89,6nGzLUq+KOROqOhZVnpIyvDjenQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ec24b51-d560-11e5-89ea-2d8d86e9ef89,MxbTrX/HFPXa0qNGjxN8+NUn+nE=] */

@@ -28,6 +28,17 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
     super(resourceRepository, resource, IProcessTemplate.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectObject() {
+    return _getSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object);
+  }
+    
+  public void setObject(java.lang.String object) {
+     _setSingleAttribute(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, object);
+  }
+
   // relations
   
   @Override
@@ -61,16 +72,6 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
   }
     
   @Override
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject selectObject() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object);
-  }
-
-  public ProcessTemplate setObject(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject object) {
-    _setSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, object);
-    return this;
-  }
-    
-  @Override
   public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcess selectProcess() {
     return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcess.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process);
   }
@@ -93,11 +94,12 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
     // relations
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IActor.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.process.ProcessPackage.ProcessTemplate_actor, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.process.ProcessPackage.ProcessTemplate_condition, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.javamodel.IFunctionalityType.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype.FunctionalitytypePackage.FunctionalityTypeAware_functionalityType, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.javamodel.IObject.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.object.ObjectPackage.ObjectAware_object, visitor);
     _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.javamodel.IProcess.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.template.templatepart.process.ProcessPackage.ProcessAware_process, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -113,4 +115,4 @@ public class ProcessTemplate extends DynamicResource implements IProcessTemplate
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,9J3Rgp3PocOmi4EYTT6gtzZjwG4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3ba6dcf0-debb-11e5-bf7d-117d548070bb,tD4WqawqBne/x9fuBnHxA79TyuE=] */

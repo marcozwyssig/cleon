@@ -464,9 +464,9 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.29" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.resources" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.xml" version="0.3.29" match="equivalent"/>
    </requires>
    <plugin id="cleon.common.knowledge.spec.knowledge.builtin" download-size="0" install-size="0" version="0.3.29" unpack="false"/>
    <plugin id="cleon.common.knowledge.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.29" unpack="false"/>   

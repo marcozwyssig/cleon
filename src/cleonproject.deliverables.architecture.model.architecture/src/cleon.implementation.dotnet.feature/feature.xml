@@ -464,15 +464,15 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.conception.architecture" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.glossary" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.projectmanagement" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.analysis" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.processlanguage" version="0.3.29" match="greaterOrEqual"/>
-      <import feature="cleon.common.importwizard" version="0.3.29" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.glossary" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.analysis" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.doc" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.resources" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.xml" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.29" match="equivalent"/>
+      <import feature="cleon.common.importwizard" version="0.3.29" match="equivalent"/>
    </requires>
    <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.3.29" unpack="false"/>
    <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.3.29" unpack="false"/>   

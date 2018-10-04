@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.support.collaboration" label="cleon.support.collaboration" version="0.3.27">
+<feature id="cleon.support.collaboration" label="cleon.support.collaboration" version="0.3.28">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -464,27 +464,27 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.support.documentation" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.deployment.chocolatey" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.knowledge" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.implementation.gradle" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.organisation" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.implementation.plantuml" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.applications" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.testing" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.architecture" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.glossary" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.projectmanagement" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.analysis" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.processlanguage" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.importwizard" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.platform" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.network" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.conception.actifsource" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.support.documentation" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.deployment.chocolatey" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.knowledge" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.implementation.gradle" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.organisation" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.implementation.plantuml" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.applications" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.testing" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.glossary" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.analysis" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.platform" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.network" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.conception.actifsource" version="0.3.28" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.support.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>   
+   <plugin id="cleon.support.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.3.28" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,2574dd48-2de0-11e8-bf2f-091bf46106cb,Hash] -->

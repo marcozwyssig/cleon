@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.implementation.dotnet" label="cleon.implementation.dotnet" version="0.3.27">
+<feature id="cleon.implementation.dotnet" label="cleon.implementation.dotnet" version="0.3.28">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -464,17 +464,17 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.conception.architecture" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.glossary" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.projectmanagement" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.analysis" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.processlanguage" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.importwizard" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.conception.architecture" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.glossary" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.projectmanagement" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.analysis" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.resources" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.28" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>   
+   <plugin id="cleon.implementation.dotnet.spec.framework.builtin" download-size="0" install-size="0" version="0.3.28" unpack="false"/>
+   <plugin id="cleon.implementation.dotnet.template.poco.builtin" download-size="0" install-size="0" version="0.3.28" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,54252b32-2b50-11e8-b4c1-97cc468744f4,Hash] -->

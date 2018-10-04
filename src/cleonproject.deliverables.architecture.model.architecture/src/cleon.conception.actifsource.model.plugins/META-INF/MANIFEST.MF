@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.conception.actifsource.model.plugins
 Bundle-SymbolicName: cleon.conception.actifsource.model.plugins.builtin;singleton:=true
-Bundle-Version: 0.3.27
+Bundle-Version: 0.3.28
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,15 +12,15 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.conception.actifsource.spec.actifsource.builtin;bundle-version="0.3.27",
- cleon.conception.applications.spec.arc42.builtin;bundle-version="0.3.27",
- cleon.conception.platform.spec.arc42.builtin;bundle-version="0.3.27",
- cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.27",
- cleon.conception.architecture.spec.arc42.builtin;bundle-version="0.3.27",
- cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.27",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.3.27",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.3.27",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.3.27",
+ cleon.conception.actifsource.spec.actifsource.builtin;bundle-version="0.3.28",
+ cleon.conception.applications.spec.arc42.builtin;bundle-version="0.3.28",
+ cleon.conception.platform.spec.arc42.builtin;bundle-version="0.3.28",
+ cleon.conception.architecture.spec.uml.builtin;bundle-version="0.3.28",
+ cleon.conception.architecture.spec.arc42.builtin;bundle-version="0.3.28",
+ cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.28",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.28",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.28",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.3.28",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.conception.actifsource.model.plugins,cleon.conception.actifsource.model.plugins.javamodel
 

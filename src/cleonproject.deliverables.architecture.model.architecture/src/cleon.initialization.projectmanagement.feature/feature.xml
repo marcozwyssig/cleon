@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.initialization.projectmanagement" label="cleon.initialization.projectmanagement" version="0.3.27">
+<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,644d9c4a-d409-11e5-8556-8f55ceb91287,Hash] -->
+<feature
+      id="cleon.initialization.projectmanagement"
+      label="cleon.initialization.projectmanagement"
+      version="0.3.28">
+
    <description url="http://www.zwyssig.info/description">
-    No description available
+      No description available
    </description>
+
    <copyright url="http://www.zwyssig.info/copyright">
-   Zwyssig Informatik GmbH
+      Zwyssig Informatik GmbH
    </copyright>
+
    <license url="http://www.zwyssig.info/license">
-cleon.initialization.projectmanagement Software License Agreement
+      cleon.initialization.projectmanagement Software License Agreement
 NOTICE TO USER: PLEASE READ THIS AGREEMENT CAREFULLY. BY COPYING,
 INSTALLING OR USING ALL OR ANY PORTION OF THE SOFTWARE YOU ACCEPT
 ALL THE TERMS AND CONDITIONS OF THIS AGREEMENT, INCLUDING, IN
@@ -455,28 +462,77 @@ contact cleon.initialization.projectmanagement.
 cleon.initialization.projectmanagement is a registered trademark of cleon.initialization.projectmanagement in the Switzerland
 and/or other countries. All other trademarks are the property
 of their respective owners.
-   </license>   
+   </license>
+
    <requires>
-   <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
+      <import plugin="ch.actifsource.core" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.environment" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.util" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.generator" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.initialization.processlanguage" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.importwizard" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.resources" version="0.3.27" match="greaterOrEqual"/>
-      <import feature="cleon.common.xml" version="0.3.27" match="greaterOrEqual"/>
+      <import feature="cleon.initialization.processlanguage" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.importwizard" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.doc" version="0.3.28" match="equivalent"/>
+      <import feature="cleon.common.resources" version="0.3.28" match="greaterOrEqual"/>
+      <import feature="cleon.common.xml" version="0.3.28" match="greaterOrEqual"/>
    </requires>
-   <plugin id="cleon.initialization.projectmanagement.spec.resource.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.projectmanagement.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.planning.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.steering.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.template.versionone.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.template.tj3.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.spec.hermes.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>
-   <plugin id="cleon.initialization.projectmanagement.model.hermes.builtin" download-size="0" install-size="0" version="0.3.27" unpack="false"/>   
+
+   <plugin
+         id="cleon.initialization.projectmanagement.spec.resource.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.spec.projectmanagement.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.spec.planning.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.spec.steering.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.template.versionone.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.template.tj3.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.spec.hermes.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
+   <plugin
+         id="cleon.initialization.projectmanagement.model.hermes.builtin"
+         download-size="0"
+         install-size="0"
+         version="0.3.28"
+         unpack="false"/>
+
 </feature>
-<!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,644d9c4a-d409-11e5-8556-8f55ceb91287,Hash] -->

@@ -58,15 +58,6 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
   }
 
   @Override
-  public java.util.List<java.lang.String> selectMandatoryDescriptions() {
-    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions);
-  }
-    
-  public void setMandatoryDescriptions(java.util.List<java.lang.String> mandatoryDescriptions) {
-     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, mandatoryDescriptions);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -290,7 +281,6 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_reasonBenefitRationale, visitor);
@@ -317,4 +307,4 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,WjU14ORRolLqDAZDrSakCKnFeno=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,dfLAPImqnBm/lghostL5ON/GiSE=] */

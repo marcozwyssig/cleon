@@ -58,15 +58,6 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
 
   @Override
-  public java.util.List<java.lang.String> selectMandatoryDescriptions() {
-    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions);
-  }
-    
-  public void setMandatoryDescriptions(java.util.List<java.lang.String> mandatoryDescriptions) {
-     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, mandatoryDescriptions);
-  }
-
-  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -300,7 +291,6 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_reasonBenefitRationale, visitor);
@@ -328,4 +318,4 @@ public class TechnologyRequirement extends DynamicResource implements ITechnolog
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,1zSTdDwLNqP21D/KNg13gOG7P3A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb6940e0-d57f-11e5-89ea-2d8d86e9ef89,/nV7zTmRJwA9iH1A3jU5GzBiPL0=] */

@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="67798314-c822-11e8-a7aa-5b5f32fac625">
+  <owns predicate="27c04264-3c6a-11e6-aafa-bd565efc0ead">
+    <resource statement-guid="66f7c992-ca1c-11e8-8211-6d1eda477610" type="resource" guid="59a95f3d-ca1b-11e8-8211-6d1eda477610" />
+  </owns>
+  <owns predicate="27c04265-3c6a-11e6-aafa-bd565efc0ead">
+    <resource statement-guid="49c011e3-ca18-11e8-8211-6d1eda477610" type="resource" guid="49bda0e0-ca18-11e8-8211-6d1eda477610" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="6779aa26-c822-11e8-a7aa-5b5f32fac625" type="resource" guid="27c04263-3c6a-11e6-aafa-bd565efc0ead" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="690a5c58-c822-11e8-a7aa-5b5f32fac625" type="literal">ProjectMethods</object>
+    <object statement-guid="690a5c58-c822-11e8-a7aa-5b5f32fac625" type="literal">Project Methods</object>
+  </predicate>
+  <predicate guid="27c04264-3c6a-11e6-aafa-bd565efc0ead">
+    <object statement-guid="66f7c992-ca1c-11e8-8211-6d1eda477610">
+      <resource guid="59a95f3d-ca1b-11e8-8211-6d1eda477610">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59a95f3f-ca1b-11e8-8211-6d1eda477610" type="resource" guid="27c04268-3c6a-11e6-aafa-bd565efc0ead" />
+        </predicate>
+        <predicate guid="27c04277-3c6a-11e6-aafa-bd565efc0ead">
+          <object statement-guid="5a524942-ca1b-11e8-8211-6d1eda477610" type="resource" guid="92098d3c-bab0-11e8-87b8-7b667ffd46b4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="27c04265-3c6a-11e6-aafa-bd565efc0ead">
+    <object statement-guid="49c011e3-ca18-11e8-8211-6d1eda477610">
+      <resource guid="49bda0e0-ca18-11e8-8211-6d1eda477610">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="49c011e2-ca18-11e8-8211-6d1eda477610" type="resource" guid="8d2a9526-f986-11e5-a7fd-010f93305101" />
+        </predicate>
+        <predicate guid="abca3dfb-f986-11e5-a7fd-010f93305101">
+          <object statement-guid="4a6bbb38-ca18-11e8-8211-6d1eda477610" type="aggregate" guid="4a6bbb35-ca18-11e8-8211-6d1eda477610" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

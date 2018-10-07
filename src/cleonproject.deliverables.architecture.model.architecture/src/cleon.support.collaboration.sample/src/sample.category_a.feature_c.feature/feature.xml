@@ -464,10 +464,10 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="sample.category_a.feature_b" version="0.1.0" match="equivalent"/>
-      <import feature="sample.category_a.builtin_b" version="0.1.0" match="equivalent"/>
-      <import feature="sample.category_a.feature_a" version="0.1.0" match="equivalent"/>
-      <import feature="sample.category_a.builtin_a" version="0.1.0" match="equivalent"/>
+      <import feature="sample.category_a.feature_b"/>
+      <import feature="sample.category_a.builtin_b"/>
+      <import feature="sample.category_a.feature_a"/>
+      <import feature="sample.category_a.builtin_a"/>
    </requires>
    <plugin id="sample.category_a.feature_c.spec.specification_c.builtin" download-size="0" install-size="0" version="0.1.0" unpack="false"/>   
 </feature>

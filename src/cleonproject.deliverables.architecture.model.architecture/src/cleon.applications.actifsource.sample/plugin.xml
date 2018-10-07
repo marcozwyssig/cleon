@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.applications.actifsource.sample">
+         <Plugin
+               pluginId="cleon.applications.actifsource.sample.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,424f6a5b-ca2d-11e8-a7f6-af071215645c,563fa5ae-ca31-11e8-bb1d-0da5e2c3fe20,5xMX4j8xzYUCaaBZJujrutxfr8U=] -->

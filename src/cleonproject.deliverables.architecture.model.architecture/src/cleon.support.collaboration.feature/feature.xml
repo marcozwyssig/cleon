@@ -467,9 +467,7 @@ of their respective owners.
       <import feature="cleon.support.documentation" version="0.3.30" match="equivalent"/>
       <import feature="cleon.deployment.chocolatey" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.knowledge" version="0.3.30" match="equivalent"/>
-      <import feature="cleon.implementation.gradle" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.organisation" version="0.3.30" match="equivalent"/>
-      <import feature="cleon.common.importwizard" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.applications" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.testing" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.platform" version="0.3.30" match="equivalent"/>
@@ -483,7 +481,6 @@ of their respective owners.
       <import feature="cleon.common.resources" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.xml" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.modularity" version="0.3.30" match="equivalent"/>
-      <import feature="cleon.conception.actifsource" version="0.3.30" match="equivalent"/>
       <import feature="cleon.modelinglanguages.bpmn" version="0.3.30" match="equivalent"/>
    </requires>
    <plugin id="cleon.support.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>   

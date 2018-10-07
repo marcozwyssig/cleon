@@ -18,14 +18,8 @@
 	<feature url="features/cleon.common.knowledge_0.3.30.jar" id="cleon.common.knowledge" version="0.3.30">
 		<category name="common"/>
 	</feature>
-	<feature url="features/cleon.common.importwizard_0.3.30.jar" id="cleon.common.importwizard" version="0.3.30">
-		<category name="common"/>
-	</feature>
 	<feature url="features/cleon.common.modularity_0.3.30.jar" id="cleon.common.modularity" version="0.3.30">
 		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.conception.actifsource_0.3.30.jar" id="cleon.conception.actifsource" version="0.3.30">
-		<category name="conception"/>
 	</feature>
 	<feature url="features/cleon.conception.architecture_0.3.30.jar" id="cleon.conception.architecture" version="0.3.30">
 		<category name="conception"/>
@@ -45,15 +39,6 @@
 	<feature url="features/cleon.conception.testing_0.3.30.jar" id="cleon.conception.testing" version="0.3.30">
 		<category name="conception"/>
 	</feature>
-	<feature url="features/cleon.implementation.gradle_0.3.30.jar" id="cleon.implementation.gradle" version="0.3.30">
-		<category name="implementation"/>
-	</feature>
-	<feature url="features/cleon.implementation.dotnet_0.3.30.jar" id="cleon.implementation.dotnet" version="0.3.30">
-		<category name="implementation"/>
-	</feature>
-	<feature url="features/cleon.implementation.java_0.3.30.jar" id="cleon.implementation.java" version="0.3.30">
-		<category name="implementation"/>
-	</feature>
 	<feature url="features/cleon.deployment.chocolatey_0.3.30.jar" id="cleon.deployment.chocolatey" version="0.3.30">
 		<category name="deployment"/>
 	</feature>
@@ -64,7 +49,7 @@
 		<category name="support"/>
 	</feature>
 	<feature url="features/cleon.architecturemethods.itarc42_0.3.30.jar" id="cleon.architecturemethods.itarc42" version="0.3.30">
-		<category name="architecturemethods"/>
+		<category name="architecture methods"/>
 	</feature>
 	<feature url="features/cleon.projectmethods.hermes_0.3.30.jar" id="cleon.projectmethods.hermes" version="0.3.30">
 		<category name="project methods"/>
@@ -81,18 +66,27 @@
 	<feature url="features/cleon.publishing.staticwebsite_0.3.30.jar" id="cleon.publishing.staticwebsite" version="0.3.30">
 		<category name="publishing"/>
 	</feature>
+	<feature url="features/cleon.building.gradle_0.3.30.jar" id="cleon.building.gradle" version="0.3.30">
+		<category name="building"/>
+	</feature>
+	<feature url="features/cleon.applications.actifsource_0.3.30.jar" id="cleon.applications.actifsource" version="0.3.30">
+		<category name="applications"/>
+	</feature>
+	<feature url="features/cleon.testing.tmap_0.3.30.jar" id="cleon.testing.tmap" version="0.3.30">
+		<category name="testing"/>
+	</feature>
 	<category-def name="common" label="Common"/>
 	<category-def name="conception" label="Conception"/>
-	<category-def name="implementation" label="Implementation"/>
 	<category-def name="deployment" label="Deployment"/>
 	<category-def name="support" label="Support"/>
-	<category-def name="documentation" label="Documentation"/>
-	<category-def name="architecturemethods" label="ArchitectureMethods"/>
+	<category-def name="architecture methods" label="Architecture Methods"/>
 	<category-def name="project methods" label="Project Methods"/>
 	<category-def name="modeling languages" label="Modeling Languages"/>
 	<category-def name="programming languages" label="Programming Languages"/>
 	<category-def name="devops" label="DevOps"/>
 	<category-def name="publishing" label="Publishing"/>
 	<category-def name="building" label="Building"/>
+	<category-def name="applications" label="Applications"/>
+	<category-def name="testing" label="Testing"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,EZx6M0/ZWKmrnkUgWCROHN9JUTM=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,iaYdcgLGp61JKOHNVyR7Z3Cp1e0=] -->

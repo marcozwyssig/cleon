@@ -7,7 +7,6 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collabor
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_eamod_chrv/Sample_Requirements_Anforderungen.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Sprint_1.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_testing/My_Testing.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_actifsource_actifsource_simple/Sample_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_sda/Analyse_A.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_sda/Analyse_B.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_togaf/TestReferenceArc42_Architecture.adoc
@@ -25,5 +24,5 @@ cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collabor
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_plattform/MyPlattform_Architecture.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_analysis/Sample_Requirements_Analyse.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/Protokolle.adoc
-cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/20180312_My_Protocol/20180312_My_Protocol.adoc
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/20180312_My_Protocol.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_collaboration_sample_projectmanagement/AP02_LE03_System_1__B_.adoc

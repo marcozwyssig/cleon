@@ -464,9 +464,10 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.implementation.plantuml" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.applications" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.testing" version="0.3.30" match="equivalent"/>
+      <import feature="cleon.conception.platform" version="0.3.30" match="equivalent"/>
+      <import feature="cleon.conception.network" version="0.3.30" match="equivalent"/>
       <import feature="cleon.conception.architecture" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.glossary" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.analysis" version="0.3.30" match="equivalent"/>
@@ -476,8 +477,6 @@ of their respective owners.
       <import feature="cleon.common.resources" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.xml" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.modularity" version="0.3.30" match="equivalent"/>
-      <import feature="cleon.conception.platform" version="0.3.30" match="equivalent"/>
-      <import feature="cleon.conception.network" version="0.3.30" match="equivalent"/>
    </requires>
    <plugin id="cleon.support.documentation.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>
    <plugin id="cleon.support.documentation.template.docbook.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>   

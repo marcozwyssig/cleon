@@ -469,6 +469,8 @@ of their respective owners.
       <import feature="cleon.common.resources" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.xml" version="0.3.30" match="equivalent"/>
    </requires>
-   <plugin id="cleon.modelinglanguages.uml.spec.uml2.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>   
+   <plugin id="cleon.modelinglanguages.uml.spec.uml2.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>
+   <plugin id="cleon.modelinglanguages.uml.template.plantuml.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>
+   <plugin id="cleon.modelinglanguages.uml.template.asciidoc.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,1da070f0-ca23-11e8-9418-61f1df21967c,Hash] -->

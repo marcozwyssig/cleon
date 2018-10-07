@@ -470,9 +470,11 @@ of their respective owners.
       <import feature="cleon.common.glossary" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.analysis" version="0.3.30" match="equivalent"/>
       <import feature="cleon.projectmethods.hermes" version="0.3.30" match="equivalent"/>
+      <import feature="cleon.modelinglanguages.uml" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.doc" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.resources" version="0.3.30" match="equivalent"/>
       <import feature="cleon.common.xml" version="0.3.30" match="equivalent"/>
+      <import feature="cleon.common.modularity" version="0.3.30" match="equivalent"/>
    </requires>
    <plugin id="cleon.conception.applications.spec.desktop.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>
    <plugin id="cleon.conception.applications.spec.web.builtin" download-size="0" install-size="0" version="0.3.30" unpack="false"/>

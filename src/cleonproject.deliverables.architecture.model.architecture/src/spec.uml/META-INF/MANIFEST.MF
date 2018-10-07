@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-Name: spec.uml
+Bundle-SymbolicName: spec.uml.builtin;singleton:=true
+Bundle-Version: 
+Require-Bundle: ch.actifsource.core;bundle-version="",
+ ch.actifsource.environment;bundle-version="",
+ ch.actifsource.util;bundle-version="",
+ ch.actifsource.xml;bundle-version="",
+ ch.actifsource.template;bundle-version="",
+ ch.actifsource.ui.wizard.generic;bundle-version="",
+ ch.actifsource.ui.wizard;bundle-version="",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ cleon.conception.architecture.spec.buildingblock.builtin;bundle-version="0.3.30",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.3.30",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.3.30",
+ ch.actifsource.generator;bundle-version=""
+Export-Package: spec.uml,spec.uml.javamodel
+ ,spec.uml.structural,spec.uml.structural.javamodel,
+ spec.uml.structural.components,spec.uml.structural.components.javamodel,
+ spec.uml.structural.classes,spec.uml.structural.classes.javamodel,
+ spec.uml.structural.packages,spec.uml.structural.packages.javamodel
+

@@ -50,11 +50,11 @@ public class DomainException extends DynamicResource implements IDomainException
 
   @Override
   public java.lang.Boolean selectIsAbstract() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract);
   }
     
   public void setIsAbstract(java.lang.Boolean isAbstract) {
-     _setSingleAttribute(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, isAbstract);
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract, isAbstract);
   }
 
   @Override
@@ -69,82 +69,82 @@ public class DomainException extends DynamicResource implements IDomainException
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent> selectCustomEvents() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.ICustomEvent> selectCustomEvents() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.ICustomEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_customEvents);
   }
 
-  public DomainException setCustomEvents(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent> customEvents) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents, customEvents);
+  public DomainException setCustomEvents(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.ICustomEvent> customEvents) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_customEvents, customEvents);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent> selectEvents() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEvent> selectEvents() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.EventClass_events);
   }
 
-  public DomainException setEvents(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent> events) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events, events);
+  public DomainException setEvents(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEvent> events) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.EventClass_events, events);
     return this;
   }
     
   @Override
-  public cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClass selectExtends() {
-    return _getSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClass.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_extends);
+  public cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClass selectExtends() {
+    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClass.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_extends);
   }
 
-  public DomainException setExtends(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClass extends_) {
-    _setSingle(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_extends, extends_);
+  public DomainException setExtends(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClass extends_) {
+    _setSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_extends, extends_);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField> selectFieldEvents() {
-    return _getMap(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEventForField> selectFieldEvents() {
+    return _getMap(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEventForField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_fieldEvents);
   }
 
-  public DomainException setFieldEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField> fieldEvents) {
-    _setMap(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, fieldEvents);
+  public DomainException setFieldEvents(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEventForField> fieldEvents) {
+    _setMap(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_fieldEvents, fieldEvents);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField> selectFields() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.javamodel.IField> selectFields() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.javamodel.IField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.FieldClass_fields);
   }
 
-  public DomainException setFields(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField> fields) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, fields);
+  public DomainException setFields(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.javamodel.IField> fields) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.FieldClass_fields, fields);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency);
   }
 
-  public DomainException setHasDependency(java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
+  public DomainException setHasDependency(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> hasDependency) {
+    _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, hasDependency);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectMethods() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> selectMethods() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods);
   }
 
-  public DomainException setMethods(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> methods) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, methods);
+  public DomainException setMethods(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> methods) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, methods);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation> selectRelations() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.IAssociation> selectRelations() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.IAssociation.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.AssociationClass_relations);
   }
 
-  public DomainException setRelations(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation> relations) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, relations);
+  public DomainException setRelations(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.IAssociation> relations) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.AssociationClass_relations, relations);
     return this;
   }
     
@@ -164,19 +164,19 @@ public class DomainException extends DynamicResource implements IDomainException
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.ICustomEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_customEvents, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEvent.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.EventClass_events, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClass.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_extends, visitor);
-    _acceptMap(cleon.conception.architecture.spec.uml.structural.classes.events.javamodel.IEventForField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.fields.javamodel.IField.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.association.javamodel.IAssociation.class, cleon.conception.architecture.spec.uml.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.ICustomEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_customEvents, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.EventClass_events, visitor);
+    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClass.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_extends, visitor);
+    _acceptMap(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEventForField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.javamodel.IField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.FieldClass_fields, visitor);
+    _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.IAssociation.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d23456fc-25e9-11e3-af30-61c5782ee2ab,O2Bk2qHTyhKmOvLI5Bzi8065PdI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d23456fc-25e9-11e3-af30-61c5782ee2ab,jPa2XdJYyzbfGJsLloCE8k0j5bU=] */

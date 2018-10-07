@@ -2,7 +2,7 @@ package cleon.conception.actifsource.spec.actifsource.system.category.feature.pl
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPluginDependency extends cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentDependency {
+public interface IPluginDependency extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentDependency {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
   
@@ -12,4 +12,4 @@ public interface IPluginDependency extends cleon.conception.architecture.spec.um
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d8688469-4260-11e5-8a2d-599443ec8ff4,Rvbrdvu6mrxOsjb5mPISZvPhh4c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d8688469-4260-11e5-8a2d-599443ec8ff4,3FJ4HVj++elLxcca+5w6FdgH2W8=] */

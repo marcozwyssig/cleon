@@ -79,11 +79,11 @@ public class System extends DynamicResource implements ISystem {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency);
   }
 
-  public System setHasDependency(java.util.List<? extends cleon.conception.architecture.spec.buildingblock.javamodel.IDependency> hasDependency) {
+  public System setHasDependency(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> hasDependency) {
     _setList(cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, hasDependency);
     return this;
   }
@@ -108,7 +108,7 @@ public class System extends DynamicResource implements ISystem {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel.IArchitectureLayerBuildingBlockDecomposite.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_decompose, visitor);
-    _acceptList(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, visitor);
+    _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -118,9 +118,9 @@ public class System extends DynamicResource implements ISystem {
     return _getToMeSingle(object.getRepository(), cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.ISystem.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_decompose, object.getResource());
   }
   
-  public static cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.ISystem selectToMeHasDependency(cleon.conception.architecture.spec.buildingblock.javamodel.IDependency object) {
+  public static cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.ISystem selectToMeHasDependency(cleon.common.modularity.spec.buildingblock.javamodel.IDependency object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.ISystem.class, cleon.conception.architecture.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,TFOS9ht0ZFBQzwdteuYud/lcAn4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,N8rPXaAuN7tO+eWXveR5bN/hNFw=] */

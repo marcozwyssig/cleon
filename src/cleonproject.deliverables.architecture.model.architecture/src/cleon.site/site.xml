@@ -21,6 +21,9 @@
 	<feature url="features/cleon.common.importwizard_0.3.30.jar" id="cleon.common.importwizard" version="0.3.30">
 		<category name="common"/>
 	</feature>
+	<feature url="features/cleon.common.modularity_0.3.30.jar" id="cleon.common.modularity" version="0.3.30">
+		<category name="common"/>
+	</feature>
 	<feature url="features/cleon.conception.actifsource_0.3.30.jar" id="cleon.conception.actifsource" version="0.3.30">
 		<category name="conception"/>
 	</feature>
@@ -72,6 +75,9 @@
 	<feature url="features/cleon.modelinglanguages.bpmn_0.3.30.jar" id="cleon.modelinglanguages.bpmn" version="0.3.30">
 		<category name="modeling languages"/>
 	</feature>
+	<feature url="features/cleon.modelinglanguages.uml_0.3.30.jar" id="cleon.modelinglanguages.uml" version="0.3.30">
+		<category name="modeling languages"/>
+	</feature>
 	<feature url="features/cleon.devops.chocolatey_0.3.30.jar" id="cleon.devops.chocolatey" version="0.3.30">
 		<category name="devops"/>
 	</feature>
@@ -92,4 +98,4 @@
 	<category-def name="publishing" label="Publishing"/>
 	<category-def name="building" label="Building"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,BYbZLYDyb3OMXO1Tewr1Q1M3Yzk=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,eIzqLYFoGkyS9O2XY/FsEGIFl34=] -->

@@ -2,7 +2,7 @@ package cleon.conception.architecture.spec.togaf.reference._05_architecturebuild
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IArchitectureLayerBuildingBlockDecomposite extends cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentCompositionDecomposite {
+public interface IArchitectureLayerBuildingBlockDecomposite extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("23097760-3a01-11e6-a354-253097f89a49");
   
@@ -12,4 +12,4 @@ public interface IArchitectureLayerBuildingBlockDecomposite extends cleon.concep
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,23097760-3a01-11e6-a354-253097f89a49,DpA85gmEcMf42ysBvJiYVvZwb7k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,23097760-3a01-11e6-a354-253097f89a49,rUwxGgaMCTH1Bg5ZOF7wKhFRP6Q=] */

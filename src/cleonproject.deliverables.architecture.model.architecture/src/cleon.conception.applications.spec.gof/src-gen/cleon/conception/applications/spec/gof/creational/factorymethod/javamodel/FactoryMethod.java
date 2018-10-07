@@ -31,21 +31,21 @@ public class FactoryMethod extends DynamicResource implements IFactoryMethod {
   // relations
   
   @Override
-  public cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier selectClassifier() {
-    return _getSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier);
+  public cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier selectClassifier() {
+    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier);
   }
 
-  public FactoryMethod setClassifier(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier classifier) {
+  public FactoryMethod setClassifier(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier classifier) {
     _setSingle(cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier, classifier);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter> selectCtorArgs() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter> selectCtorArgs() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs);
   }
 
-  public FactoryMethod setCtorArgs(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter> ctorArgs) {
+  public FactoryMethod setCtorArgs(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter> ctorArgs) {
     _setList(cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs, ctorArgs);
     return this;
   }
@@ -74,21 +74,21 @@ public class FactoryMethod extends DynamicResource implements IFactoryMethod {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs, visitor);
+    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod> selectToMeClassifier(cleon.conception.architecture.spec.uml.structural.classes.javamodel.IClassifier object) {
+  public static java.util.List<cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod> selectToMeClassifier(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier object) {
     return _getToMeList(object.getRepository(), cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier, object.getResource());
   }
   
-  public static cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod selectToMeCtorArgs(cleon.conception.architecture.spec.uml.structural.classes.method.parameter.javamodel.IParameter object) {
+  public static cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod selectToMeCtorArgs(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryMethod.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,uYU8hy9v1yY0InOIVyePFLcgtt0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,sqmNW9WHBhufA4nStJJSZL2h7U8=] */

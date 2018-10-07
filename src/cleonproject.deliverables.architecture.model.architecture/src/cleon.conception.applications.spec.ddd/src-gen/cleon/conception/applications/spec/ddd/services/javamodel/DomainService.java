@@ -60,12 +60,12 @@ public class DomainService extends DynamicResource implements IDomainService {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData> selectData() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData> selectData() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data);
   }
 
-  public DomainService setData(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData> data) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, data);
+  public DomainService setData(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData> data) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, data);
     return this;
   }
     
@@ -80,12 +80,12 @@ public class DomainService extends DynamicResource implements IDomainService {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectMethods() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> selectMethods() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods);
   }
 
-  public DomainService setMethods(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> methods) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, methods);
+  public DomainService setMethods(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> methods) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, methods);
     return this;
   }
     
@@ -107,11 +107,11 @@ public class DomainService extends DynamicResource implements IDomainService {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
     _acceptList(cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.DataService_events, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,lNHmC1ZKFWJyQszO0tx6tKOS94s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d00b1dd-a37b-11e3-9113-ffc7f11b0a42,VIC8IT7DsUQ4/E2cwAu6ephFZbA=] */

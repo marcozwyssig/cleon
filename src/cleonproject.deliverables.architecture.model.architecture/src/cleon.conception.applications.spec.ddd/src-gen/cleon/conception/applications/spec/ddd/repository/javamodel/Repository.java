@@ -51,32 +51,32 @@ public class Repository extends DynamicResource implements IRepository {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData> selectData() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData> selectData() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data);
   }
 
-  public Repository setData(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData> data) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, data);
+  public Repository setData(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData> data) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, data);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectGetBy() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> selectGetBy() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy);
   }
 
-  public Repository setGetBy(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> getBy) {
+  public Repository setGetBy(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> getBy) {
     _setList(cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy, getBy);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectMethods() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> selectMethods() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods);
   }
 
-  public Repository setMethods(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> methods) {
-    _setList(cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, methods);
+  public Repository setMethods(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> methods) {
+    _setList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, methods);
     return this;
   }
     
@@ -91,11 +91,11 @@ public class Repository extends DynamicResource implements IRepository {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> selectSearchBy() {
-    return _getList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> selectSearchBy() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy);
   }
 
-  public Repository setSearchBy(java.util.List<? extends cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod> searchBy) {
+  public Repository setSearchBy(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod> searchBy) {
     _setList(cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy, searchBy);
     return this;
   }
@@ -117,11 +117,11 @@ public class Repository extends DynamicResource implements IRepository {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.conception.architecture.spec.uml.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.architecture.spec.uml.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(cleon.conception.applications.spec.ddd.entities.javamodel.IEntity.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_search, visitor);
-    _acceptList(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -131,13 +131,13 @@ public class Repository extends DynamicResource implements IRepository {
     return _getToMeList(object.getRepository(), cleon.conception.applications.spec.ddd.repository.javamodel.IRepository.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_search, object.getResource());
   }
   
-  public static cleon.conception.applications.spec.ddd.repository.javamodel.IRepository selectToMeSearchBy(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod object) {
+  public static cleon.conception.applications.spec.ddd.repository.javamodel.IRepository selectToMeSearchBy(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.ddd.repository.javamodel.IRepository.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_searchBy, object.getResource());
   }
   
-  public static cleon.conception.applications.spec.ddd.repository.javamodel.IRepository selectToMeGetBy(cleon.conception.architecture.spec.uml.structural.classes.method.javamodel.IMethod object) {
+  public static cleon.conception.applications.spec.ddd.repository.javamodel.IRepository selectToMeGetBy(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod object) {
     return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.ddd.repository.javamodel.IRepository.class, cleon.conception.applications.spec.ddd.repository.RepositoryPackage.Repository_getBy, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,2ARAYDtKm59wA/fsgeM1sdzmmso=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,WsQBsFy1hF8ncRSVSMcpx/oji8o=] */

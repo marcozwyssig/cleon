@@ -2,7 +2,7 @@ package cleon.conception.actifsource.spec.actifsource.system.category.feature.pl
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPluginAggregateDecomposite extends cleon.conception.architecture.spec.uml.structural.components.javamodel.IComponentCompositionDecomposite {
+public interface IPluginAggregateDecomposite extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("17a9b7ab-a7d1-11e5-82dd-3b995d9c840c");
   
@@ -12,4 +12,4 @@ public interface IPluginAggregateDecomposite extends cleon.conception.architectu
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,iwbOHzp0TGITFTd6sU9Xfc1325I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,1T2Ap41YLFZqpfJXn++PB/MdHqM=] */

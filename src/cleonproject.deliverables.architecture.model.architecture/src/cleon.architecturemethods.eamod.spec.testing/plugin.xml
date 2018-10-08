@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.architecturemethods.eamod.spec.testing">
+         <Plugin
+               pluginId="cleon.architecturemethods.eamod.spec.testing.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,0332895d-ca53-11e8-9e9d-8dc67753571a,55c9eb60-ca54-11e8-9e9d-8dc67753571a,4dIfK9J2PbDcbrERAzdMDk6jZkA=] -->

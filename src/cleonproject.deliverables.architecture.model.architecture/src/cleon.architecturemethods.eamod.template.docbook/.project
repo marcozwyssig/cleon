@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.architecturemethods.eamod.template.docbook</name>
+	<comment/>
+	<projects>
+		<project>cleon.architecturemethods.eamod.spec.analysis</project>
+		<project>cleon.architecturemethods.eamod.spec.testing</project>
+		<project>cleon.common.glossary.template.docbook</project>
+		<project>cleon.architecturemethods.eamod.spec.eamod</project>
+		<project>cleon.common.analysis.spec.analysis</project>
+		<project>cleon.modelinglanguages.uml.spec.uml2</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.common.xml.spec.xmi</project>
+		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.xml.spec.xml</project>
+		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.common.doc.template.docbook</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,8276ec99-ca56-11e8-9e9d-8dc67753571a,Vbd0VKyMd3z56dSr3h16+ZQig+Q=] -->

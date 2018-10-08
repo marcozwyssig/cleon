@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.architecturemethods.eamod.template.xmi">
+         <Plugin
+               pluginId="cleon.architecturemethods.eamod.template.xmi.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,ea25a8aa-2659-11e6-ae54-e50d44645ae7,57d8909c-5444-11e8-a7d7-8f17ff9a62b8,ANON/sxLCVcTmaKVtIW/0EcJM6c=] -->

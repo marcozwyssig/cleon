@@ -3,30 +3,28 @@
 	<name>cleon.support.collaboration.spec.sda</name>
 	<comment/>
 	<projects>
-		<project>cleon.conception.testing.spec.testing</project>
 		<project>cleon.common.analysis.spec.analysis</project>
 		<project>cleon.conception.architecture.spec.togaf</project>
 		<project>cleon.projectmethods.hermes.spec.projectsteering</project>
-		<project>cleon.deployment.chocolatey.template.nuget</project>
 		<project>cleon.common.knowledge.spec.knowledge</project>
 		<project>cleon.conception.architecture.spec.devops</project>
 		<project>cleon.conception.applications.spec.ddd</project>
 		<project>cleon.conception.organisation.spec.epm</project>
-		<project>cleon.conception.architecture.spec.eamod</project>
-		<project>cleon.modelinglanguages.uml.spec.uml2</project>
-		<project>cleon.common.glossary.spec.glossary</project>
-		<project>cleon.common.xml.spec.xmi</project>
-		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
-		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.architecturemethods.eamod.spec.testing</project>
 		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.resources.spec.resources</project>
-		<project>cleon.common.xml.spec.xml</project>
-		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.modelinglanguages.uml.spec.uml2</project>
 		<project>cleon.conception.architecture.spec.arc42</project>
-		<project>cleon.deployment.chocolatey.spec.nuspec</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
+		<project>cleon.common.resources.spec.calendar</project>
 		<project>cleon.conception.architecture.spec.soa</project>
 		<project>cleon.conception.architecture.spec.eda</project>
 		<project>cleon.modelinglanguages.bpmn.spec.bpmn2</project>
+		<project>cleon.architecturemethods.eamod.spec.eamod</project>
+		<project>cleon.common.xml.spec.xmi</project>
+		<project>cleon.common.xml.spec.xml</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -50,4 +48,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1c9002b8-6388-11e5-90cd-0d09bb283bc0,FTLqEg3QeE5LccAx2gp9bri3v4I=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1c9002b8-6388-11e5-90cd-0d09bb283bc0,CHnOjNdMYhbSQ1Pat4PntfHAC7g=] -->

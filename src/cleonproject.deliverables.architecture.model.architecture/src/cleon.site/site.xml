@@ -36,12 +36,6 @@
 	<feature url="features/cleon.conception.network_0.3.30.jar" id="cleon.conception.network" version="0.3.30">
 		<category name="conception"/>
 	</feature>
-	<feature url="features/cleon.conception.testing_0.3.30.jar" id="cleon.conception.testing" version="0.3.30">
-		<category name="conception"/>
-	</feature>
-	<feature url="features/cleon.deployment.chocolatey_0.3.30.jar" id="cleon.deployment.chocolatey" version="0.3.30">
-		<category name="deployment"/>
-	</feature>
 	<feature url="features/cleon.support.documentation_0.3.30.jar" id="cleon.support.documentation" version="0.3.30">
 		<category name="support"/>
 	</feature>
@@ -49,6 +43,9 @@
 		<category name="support"/>
 	</feature>
 	<feature url="features/cleon.architecturemethods.itarc42_0.3.30.jar" id="cleon.architecturemethods.itarc42" version="0.3.30">
+		<category name="architecture methods"/>
+	</feature>
+	<feature url="features/cleon.architecturemethods.eamod_0.3.30.jar" id="cleon.architecturemethods.eamod" version="0.3.30">
 		<category name="architecture methods"/>
 	</feature>
 	<feature url="features/cleon.projectmethods.hermes_0.3.30.jar" id="cleon.projectmethods.hermes" version="0.3.30">
@@ -72,8 +69,8 @@
 	<feature url="features/cleon.applications.actifsource_0.3.30.jar" id="cleon.applications.actifsource" version="0.3.30">
 		<category name="applications"/>
 	</feature>
-	<feature url="features/cleon.testing.tmap_0.3.30.jar" id="cleon.testing.tmap" version="0.3.30">
-		<category name="testing"/>
+	<feature url="features/cleon.testingmethods.tmap_0.3.30.jar" id="cleon.testingmethods.tmap" version="0.3.30">
+		<category name="testing methods"/>
 	</feature>
 	<category-def name="common" label="Common"/>
 	<category-def name="conception" label="Conception"/>
@@ -87,6 +84,6 @@
 	<category-def name="publishing" label="Publishing"/>
 	<category-def name="building" label="Building"/>
 	<category-def name="applications" label="Applications"/>
-	<category-def name="testing" label="Testing"/>
+	<category-def name="testing methods" label="Testing Methods"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,iaYdcgLGp61JKOHNVyR7Z3Cp1e0=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,tz+8EjomiS0BXYAjwIU9naTn4Bc=] -->

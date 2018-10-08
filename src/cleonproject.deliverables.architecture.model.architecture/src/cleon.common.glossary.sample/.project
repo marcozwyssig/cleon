@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.common.glossary.sample</name>
+	<comment/>
+	<projects>
+		<project>cleon.common.glossary.template.asciidoc</project>
+		<project>cleon.common.glossary.template.docbook</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.doc.template.docbook</project>
+		<project>cleon.common.xml.spec.xml</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6ec6a81d-cb38-11e8-9fc7-cb7241efa62e,Rg/0elOQH0zvxXgkq2WwXa5kDkY=] -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.publishing.collaboration.sample</name>
+	<comment/>
+	<projects>
+		<project>cleon.publishing.collaboration.spec.sda</project>
+		<project>cleon.architecturemethods.eamod.sample</project>
+		<project>cleon.common.resources.sample</project>
+		<project>cleon.architecturemethods.eamod.spec.testing</project>
+		<project>cleon.architecturemethods.eamod.spec.analysis</project>
+		<project>cleon.architecturemethods.eamod.spec.eamod</project>
+		<project>cleon.modelinglanguages.uml.spec.uml2</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.common.xml.spec.xmi</project>
+		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.xml.spec.xml</project>
+		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.common.analysis.spec.analysis</project>
+		<project>cleon.architecturemethods.eamod.template.xmi</project>
+		<project>cleon.architecturemethods.eamod.template.xml</project>
+		<project>cleon.architecturemethods.eamod.template.asciidoc</project>
+		<project>cleon.projectmethods.hermes.sample</project>
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.common.glossary.template.asciidoc</project>
+		<project>cleon.projectmethods.hermes.spec.projectsteering</project>
+		<project>cleon.common.resources.spec.language</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6fe31ecf-cb39-11e8-9fc7-cb7241efa62e,gO9yi+boavBDPpuSErZQ44MTuTc=] -->

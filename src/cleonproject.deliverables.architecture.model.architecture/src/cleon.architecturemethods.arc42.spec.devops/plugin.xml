@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.architecturemethods.arc42.spec.devops">
+         <Plugin
+               pluginId="cleon.architecturemethods.arc42.spec.devops.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,69901af3-406e-11e5-b5f0-5b1ce9c3de3e,80ccb9e8-5444-11e8-a7d7-8f17ff9a62b8,6IeRTZU9UYhmxDInatC3CQN9niU=] -->

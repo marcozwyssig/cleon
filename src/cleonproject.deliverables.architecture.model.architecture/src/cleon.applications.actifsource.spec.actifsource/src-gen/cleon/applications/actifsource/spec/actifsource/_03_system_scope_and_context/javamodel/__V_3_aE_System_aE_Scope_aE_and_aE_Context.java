@@ -81,12 +81,12 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
     
   @Override
-  public cleon.conception.applications.spec.arc42.javamodel.ISoftwareSystem selectSoftwareSystem() {
-    return _getSingle(cleon.conception.applications.spec.arc42.javamodel.ISoftwareSystem.class, cleon.conception.applications.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_softwareSystem);
+  public cleon.conception.architecture.spec.arc42.javamodel.ISoftwareSystem selectSoftwareSystem() {
+    return _getSingle(cleon.conception.architecture.spec.arc42.javamodel.ISoftwareSystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_aE_Software_softwareSystem);
   }
 
-  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setSoftwareSystem(cleon.conception.applications.spec.arc42.javamodel.ISoftwareSystem softwareSystem) {
-    _setSingle(cleon.conception.applications.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_softwareSystem, softwareSystem);
+  public __V_3_aE_System_aE_Scope_aE_and_aE_Context setSoftwareSystem(cleon.conception.architecture.spec.arc42.javamodel.ISoftwareSystem softwareSystem) {
+    _setSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_aE_Software_softwareSystem, softwareSystem);
     return this;
   }
     
@@ -140,7 +140,7 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, visitor);
     _acceptList(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, visitor);
-    _acceptSingle(cleon.conception.applications.spec.arc42.javamodel.ISoftwareSystem.class, cleon.conception.applications.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_softwareSystem, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.arc42.javamodel.ISoftwareSystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_aE_Software_softwareSystem, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.javamodel.ISystem.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_system, visitor);
     _acceptSingle(cleon.conception.architecture.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.conception.architecture.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -154,4 +154,4 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,CwwScl+ta++DNSGOzaFNEVxPns4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a904739-3a02-11e6-a354-253097f89a49,TAC2Z+CDRxfiNuWwTJ86oZdnpoQ=] */

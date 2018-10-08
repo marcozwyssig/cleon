@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.architecturemethods.arc42.sample</name>
+	<comment/>
+	<projects>
+		<project>cleon.architecturemethods.arc42.template.asciidoc</project>
+		<project>cleon.architecturemethods.arc42.spec.devops</project>
+		<project>cleon.architecturemethods.arc42.spec.ddd</project>
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.architecturemethods.arc42.spec.arc42</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.modelinglanguages.uml.spec.uml2</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.architecturestylesandpatterns.eda.spec.eda</project>
+		<project>cleon.architecturestylesandpatterns.soa.spec.soa</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,e517ec08-cb37-11e8-9fc7-cb7241efa62e,m9/1Nt3m+1hJkSxQFIzRO2RcVzc=] -->

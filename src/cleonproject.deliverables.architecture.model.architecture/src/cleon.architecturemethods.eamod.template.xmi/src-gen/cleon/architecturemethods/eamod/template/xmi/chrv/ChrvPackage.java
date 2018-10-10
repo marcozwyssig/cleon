@@ -1,4 +1,4 @@
-package cleon.conception.architecture.template.eamod.xmi.chrv;
+package cleon.architecturemethods.eamod.template.xmi.chrv;
 
 import ch.actifsource.core.Resource;
 
@@ -34,8 +34,8 @@ public class ChrvPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.architecture.template.eamod.xmi.chrv";
+    return "cleon.architecturemethods.eamod.template.xmi.chrv";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.template.eamod.xmi.chrv,tntwKvB8zJe7rr5rwcw/5k7Ah0I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.xmi.chrv,Xmgmi3M4O1l+zGR+B+bBLiRNZwM=] */

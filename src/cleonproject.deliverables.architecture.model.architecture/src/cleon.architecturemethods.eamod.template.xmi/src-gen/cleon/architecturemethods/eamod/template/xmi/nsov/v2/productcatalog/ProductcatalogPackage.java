@@ -1,4 +1,4 @@
-package cleon.conception.architecture.template.eamod.xmi.nsov.v2.productcatalog;
+package cleon.architecturemethods.eamod.template.xmi.nsov.v2.productcatalog;
 
 import ch.actifsource.core.Resource;
 
@@ -30,8 +30,8 @@ public class ProductcatalogPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.architecture.template.eamod.xmi.nsov.v2.productcatalog";
+    return "cleon.architecturemethods.eamod.template.xmi.nsov.v2.productcatalog";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.template.eamod.xmi.nsov.v2.productcatalog,MpNUHUyVY/JEMfc5O8tUpfyUSu0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.xmi.nsov.v2.productcatalog,tXjTTp0oMTsa+HEYTjRJS/VISSs=] */

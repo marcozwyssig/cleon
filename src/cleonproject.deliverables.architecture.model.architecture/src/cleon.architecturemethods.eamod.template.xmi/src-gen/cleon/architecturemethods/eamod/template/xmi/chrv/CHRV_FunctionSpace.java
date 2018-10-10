@@ -1,4 +1,4 @@
-package cleon.conception.architecture.template.eamod.xmi.chrv;
+package cleon.architecturemethods.eamod.template.xmi.chrv;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -433,4 +433,4 @@ public class CHRV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,eJsjuMpP46wOzAGhKpeIWyaHEjE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,Nhd4aWd+ATE4OVnqCQTuAKeoWJ4=] */

@@ -61,52 +61,52 @@ public class __V_5_aE_SolutionBuildingBlockView extends DynamicResource implemen
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_1() {
-    return _getMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_1() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1);
   }
 
-  public __V_5_aE_SolutionBuildingBlockView setLevel_1(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_1) {
-    _setMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1, level_1);
+  public __V_5_aE_SolutionBuildingBlockView setLevel_1(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_1) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1, level_1);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_2() {
-    return _getMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_2() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2);
   }
 
-  public __V_5_aE_SolutionBuildingBlockView setLevel_2(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_2) {
-    _setMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2, level_2);
+  public __V_5_aE_SolutionBuildingBlockView setLevel_2(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_2) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2, level_2);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_3() {
-    return _getMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_3() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3);
   }
 
-  public __V_5_aE_SolutionBuildingBlockView setLevel_3(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_3) {
-    _setMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3, level_3);
+  public __V_5_aE_SolutionBuildingBlockView setLevel_3(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_3) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3, level_3);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_4() {
-    return _getMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_4() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4);
   }
 
-  public __V_5_aE_SolutionBuildingBlockView setLevel_4(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_4) {
-    _setMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4, level_4);
+  public __V_5_aE_SolutionBuildingBlockView setLevel_4(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_4) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4, level_4);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_5() {
-    return _getMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_5() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5);
   }
 
-  public __V_5_aE_SolutionBuildingBlockView setLevel_5(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_5) {
-    _setMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5, level_5);
+  public __V_5_aE_SolutionBuildingBlockView setLevel_5(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> level_5) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5, level_5);
     return this;
   }
     
@@ -128,13 +128,13 @@ public class __V_5_aE_SolutionBuildingBlockView extends DynamicResource implemen
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1, visitor);
-    _acceptMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2, visitor);
-    _acceptMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3, visitor);
-    _acceptMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4, visitor);
-    _acceptMap(cleon.conception.architecture.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.conception.architecture.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_1, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_2, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_3, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_4, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.__V_5_aE_BuildingBlockView_level_aE_5, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bef90829-2d6f-11e6-959f-d1cef44ff5fd,CekDp0PAEGZEjolEQedbKR1kEuo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bef90829-2d6f-11e6-959f-d1cef44ff5fd,xqfJ5vggf91S+nmoPu2MwD8k1N4=] */

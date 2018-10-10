@@ -90,11 +90,11 @@ public class Zoo extends DynamicResource implements IZoo {
     
   @Override
   public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> selectHasDependency() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.arc42.Arc42Package.SoftwareSystem_hasDependency);
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.SoftwareSystem_hasDependency);
   }
 
   public Zoo setHasDependency(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDependency> hasDependency) {
-    _setList(cleon.conception.architecture.spec.arc42.Arc42Package.SoftwareSystem_hasDependency, hasDependency);
+    _setList(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.SoftwareSystem_hasDependency, hasDependency);
     return this;
   }
     
@@ -139,7 +139,7 @@ public class Zoo extends DynamicResource implements IZoo {
     // relations
     _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
-    _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.conception.architecture.spec.arc42.Arc42Package.SoftwareSystem_hasDependency, visitor);
+    _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.SoftwareSystem_hasDependency, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
@@ -152,4 +152,4 @@ public class Zoo extends DynamicResource implements IZoo {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,WEt896dqsHFvfZBgiVIYgwb+2Ws=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,WkJVkaypwydNJc3BQga/qPrsPXE=] */

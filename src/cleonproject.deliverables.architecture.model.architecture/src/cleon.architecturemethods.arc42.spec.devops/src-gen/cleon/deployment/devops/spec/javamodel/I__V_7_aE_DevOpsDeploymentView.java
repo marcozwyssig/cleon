@@ -2,7 +2,7 @@ package cleon.deployment.devops.spec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface I__V_7_aE_DevOpsDeploymentView extends cleon.conception.architecture.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView {
+public interface I__V_7_aE_DevOpsDeploymentView extends cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a574eba1-41b4-11e5-a2b3-edc7f3343844");
   
@@ -22,4 +22,4 @@ public interface I__V_7_aE_DevOpsDeploymentView extends cleon.conception.archite
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,KmJN/cS1sV5bb9PTturD62tI2C4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,qGBrcJtJOaxYN7u0T17yERX6fgA=] */

@@ -2,7 +2,7 @@ package cleon.conception.testing.spec.testing._07_testspecification._static.java
 
 import java.util.List;
 
-import cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage;
+import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage;
 import cleon.conception.testing.spec.testing._07_testspecification._static.FunctionSpace.StaticTestFunctions;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;

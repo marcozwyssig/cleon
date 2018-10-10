@@ -8,8 +8,8 @@ public interface IRequirementCriteria extends ch.actifsource.core.javamodel.IDec
   
   // relations
   
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement();
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,5Dhzgax4/x/TAfT8g/kbtqdZLT8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,lyDGQyQakJt9y5Pl+sPutSfivjI=] */

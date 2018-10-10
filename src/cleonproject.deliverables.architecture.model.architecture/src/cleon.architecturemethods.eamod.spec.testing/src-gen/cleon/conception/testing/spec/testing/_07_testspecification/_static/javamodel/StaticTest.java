@@ -52,11 +52,11 @@ public class StaticTest extends DynamicResource implements IStaticTest {
   }
     
   @Override
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement);
   }
 
-  public StaticTest setRequirement(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
+  public StaticTest setRequirement(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
     _setSingle(cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement, requirement);
     return this;
   }
@@ -108,7 +108,7 @@ public class StaticTest extends DynamicResource implements IStaticTest {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptMap(cleon.conception.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_testRequirements, visitor);
     _acceptMap(cleon.conception.testing.spec.testing._09_test_execution.javamodel.ITestResult.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_testResult, visitor);
@@ -117,7 +117,7 @@ public class StaticTest extends DynamicResource implements IStaticTest {
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest> selectToMeRequirement(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement object) {
+  public static java.util.List<cleon.conception.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest> selectToMeRequirement(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement object) {
     return _getToMeList(object.getRepository(), cleon.conception.testing.spec.testing._07_testspecification._static.javamodel.IStaticTest.class, cleon.conception.testing.spec.testing._07_testspecification._static._staticPackage.StaticTest_requirement, object.getResource());
   }
   
@@ -130,4 +130,4 @@ public class StaticTest extends DynamicResource implements IStaticTest {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,GmxfDYOVrQWPNELfUM4TukYIk5U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,c0a/Nf2AJ5C66dXZWYz7Ji98ysk=] */

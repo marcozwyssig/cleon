@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="cf85ff30-ffef-11e5-bd7b-8b0acf27d441">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e1cc7e96-ffef-11e5-bd7b-8b0acf27d441" type="resource" guid="e1cc5782-ffef-11e5-bd7b-8b0acf27d441" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cf85ff32-ffef-11e5-bd7b-8b0acf27d441" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="cf862643-ffef-11e5-bd7b-8b0acf27d441" type="literal">UniqueIdRefactoring</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e1cc7e96-ffef-11e5-bd7b-8b0acf27d441">
+      <resource guid="e1cc5782-ffef-11e5-bd7b-8b0acf27d441">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e1cc7e94-ffef-11e5-bd7b-8b0acf27d441" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d94a5aa5-fff4-11e5-bd7b-8b0acf27d441" type="literal">cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.MakeAllIdsUniqueRefactoringAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e1cc7e95-ffef-11e5-bd7b-8b0acf27d441" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

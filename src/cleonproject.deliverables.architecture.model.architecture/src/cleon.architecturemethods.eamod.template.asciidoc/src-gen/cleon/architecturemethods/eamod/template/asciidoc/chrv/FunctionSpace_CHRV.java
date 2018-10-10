@@ -215,7 +215,7 @@ public class FunctionSpace_CHRV {
   public static interface IGoalFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f3911f89-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal);
 
   }
   
@@ -226,7 +226,7 @@ public class FunctionSpace_CHRV {
     private GoalFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
       return null;
     }
 
@@ -236,7 +236,7 @@ public class FunctionSpace_CHRV {
 
     private GoalFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
+    public static java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoal goal) {
       return DynamicResourceUtil.invoke(IGoalFunctionsImpl.class, GoalFunctionsImpl.INSTANCE, goal).RenderDescriptions(goal);
     }
 
@@ -280,7 +280,7 @@ public class FunctionSpace_CHRV {
   public static interface IPrincipleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e90c40b8-a524-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle);
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle);
 
   }
   
@@ -291,7 +291,7 @@ public class FunctionSpace_CHRV {
     private PrincipleFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
       return null;
     }
 
@@ -301,7 +301,7 @@ public class FunctionSpace_CHRV {
 
     private PrincipleFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
+    public static java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.principles.javamodel.IPrinciple principle) {
       return DynamicResourceUtil.invoke(IPrincipleFunctionsImpl.class, PrincipleFunctionsImpl.INSTANCE, principle).RenderDescriptions(principle);
     }
 
@@ -345,7 +345,7 @@ public class FunctionSpace_CHRV {
   public static interface IDriverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a2c0c721-a536-11e8-a2c4-7500fc0b7ba9")
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver);
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver);
 
   }
   
@@ -356,7 +356,7 @@ public class FunctionSpace_CHRV {
     private DriverFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+    public java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
       return null;
     }
 
@@ -366,7 +366,7 @@ public class FunctionSpace_CHRV {
 
     private DriverFunctions() {}
 
-    public static java.lang.String RenderDescriptions(final cleon.conception.architecture.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
+    public static java.lang.String RenderDescriptions(final cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDriver driver) {
       return DynamicResourceUtil.invoke(IDriverFunctionsImpl.class, DriverFunctionsImpl.INSTANCE, driver).RenderDescriptions(driver);
     }
 
@@ -499,4 +499,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,xPAeetPqXeHve50hjcMbMJaZwdQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,H4Avc8qfx35WVqg8ZCCNDsivHpQ=] */

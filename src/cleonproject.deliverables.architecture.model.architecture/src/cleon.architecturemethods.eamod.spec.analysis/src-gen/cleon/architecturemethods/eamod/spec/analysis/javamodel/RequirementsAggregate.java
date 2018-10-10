@@ -61,11 +61,11 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
   }
     
   @Override
-  public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea selectSubjectArea() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea selectSubjectArea() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea);
   }
 
-  public RequirementsAggregate setSubjectArea(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
+  public RequirementsAggregate setSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
     _setSingle(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea, subjectArea);
     return this;
   }
@@ -87,7 +87,7 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
     _acceptList(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.CriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_priorityWeighting, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_requirementCriterias, visitor);
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -97,7 +97,7 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_priorityWeighting, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate> selectToMeSubjectArea(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea object) {
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate> selectToMeSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea, object.getResource());
   }
   
@@ -106,4 +106,4 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,WG6IEoiNnnFYjQumILgsdNwwra0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,sgbPxUxH3N4eOVTd1gw2e/LGaRc=] */

@@ -1,4 +1,4 @@
-package cleon.conception.applications.spec.gof.creational.factorymethod.javamodel;
+package cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -71,12 +71,12 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
   }
     
   @Override
-  public cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryCreator selectFactory() {
-    return _getSingle(cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryCreator.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory);
+  public cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryCreator selectFactory() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory);
   }
 
-  public FactoryPackage setFactory(cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryCreator factory) {
-    _setSingle(cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, factory);
+  public FactoryPackage setFactory(cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryCreator factory) {
+    _setSingle(cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, factory);
     return this;
   }
     
@@ -109,16 +109,16 @@ public class FactoryPackage extends DynamicResource implements IFactoryPackage {
     // relations
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
-    _acceptSingle(cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryCreator.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryCreator.class, cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.packages.PackagesPackage.Package_subPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryPackage selectToMeFactory(cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryCreator object) {
-    return _getToMeSingle(object.getRepository(), cleon.conception.applications.spec.gof.creational.factorymethod.javamodel.IFactoryPackage.class, cleon.conception.applications.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, object.getResource());
+  public static cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryPackage selectToMeFactory(cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryCreator object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.javamodel.IFactoryPackage.class, cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryPackage_factory, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,4Yui9Ji52Qy7CGDRxg+PppGyYU4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46daf4f0-ddd3-11e4-b0b5-6911fa4e24e5,1Bo8RjYvwlVxeVDCBKQk3z+PueM=] */

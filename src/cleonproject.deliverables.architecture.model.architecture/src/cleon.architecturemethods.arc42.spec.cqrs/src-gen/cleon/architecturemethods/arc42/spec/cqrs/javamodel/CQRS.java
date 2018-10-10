@@ -1,4 +1,4 @@
-package cleon.conception.applications.spec.cqrs.javamodel;
+package cleon.architecturemethods.arc42.spec.cqrs.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -61,4 +61,4 @@ public class CQRS extends DynamicResource implements ICQRS {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ebb6e640-11f5-11e5-848b-017a3a98ae34,w2jBVHaIwJ0F5maKkyGIVpO1sKU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ebb6e640-11f5-11e5-848b-017a3a98ae34,rtjg5XCjjaoa1W4EhcUI/Rh9Trg=] */

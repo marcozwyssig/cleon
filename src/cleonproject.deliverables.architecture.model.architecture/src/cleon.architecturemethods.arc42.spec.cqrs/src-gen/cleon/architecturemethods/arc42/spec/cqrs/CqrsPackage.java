@@ -1,4 +1,4 @@
-package cleon.conception.applications.spec.cqrs;
+package cleon.architecturemethods.arc42.spec.cqrs;
 
 import ch.actifsource.core.Resource;
 
@@ -21,8 +21,8 @@ public class CqrsPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.applications.spec.cqrs";
+    return "cleon.architecturemethods.arc42.spec.cqrs";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.applications.spec.cqrs,cfOO/VGieNcWsmDVm5NiyvX4pfo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.cqrs,ty/wOXT2DEwsRLTLnjUDnexGATU=] */

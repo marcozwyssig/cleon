@@ -1,4 +1,4 @@
-package cleon.conception.applications.spec.web;
+package cleon.architecturemethods.arc42.spec.web;
 
 import ch.actifsource.core.Resource;
 
@@ -19,8 +19,8 @@ public class WebPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.applications.spec.web";
+    return "cleon.architecturemethods.arc42.spec.web";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.applications.spec.web,8VniBQk5tytlH+Nqiz0ZPhAZbcs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.web,gG3W0HZF+nLCoeYdW6nP8+exjZU=] */

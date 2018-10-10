@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.analysis.detailedstudy.javamodel;
+package cleon.architecturemethods.eamod.spec.analysis.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface IRequirementCriteria extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,T8g1cLSxhJpG9loKxrzKGi5v3Mk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,5Dhzgax4/x/TAfT8g/kbtqdZLT8=] */

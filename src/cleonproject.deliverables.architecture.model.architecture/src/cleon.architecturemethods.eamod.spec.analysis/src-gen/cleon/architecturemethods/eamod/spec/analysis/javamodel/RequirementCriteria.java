@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.analysis.detailedstudy.javamodel;
+package cleon.architecturemethods.eamod.spec.analysis.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -32,11 +32,11 @@ public class RequirementCriteria extends DynamicResource implements IRequirement
   
   @Override
   public cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement() {
-    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.RequirementCriteria_requirement);
+    return _getSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementCriteria_requirement);
   }
 
   public RequirementCriteria setRequirement(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
-    _setSingle(cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.RequirementCriteria_requirement, requirement);
+    _setSingle(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementCriteria_requirement, requirement);
     return this;
   }
     
@@ -64,16 +64,16 @@ public class RequirementCriteria extends DynamicResource implements IRequirement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.RequirementCriteria_requirement, visitor);
+    _acceptSingle(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementCriteria_requirement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria> selectToMeRequirement(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IRequirementCriteria.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.RequirementCriteria_requirement, object.getResource());
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria> selectToMeRequirement(cleon.conception.architecture.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementCriteria_requirement, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,Kri6U3LCyANGCuYfhAkiMZYNt1o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,E/Pe6xBA7QpEymgeZ3zDXHpPPZY=] */

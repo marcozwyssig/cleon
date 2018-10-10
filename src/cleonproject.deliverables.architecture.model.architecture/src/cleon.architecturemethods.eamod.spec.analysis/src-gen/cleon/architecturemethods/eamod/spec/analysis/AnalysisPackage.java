@@ -1,8 +1,8 @@
-package cleon.conception.architecture.spec.analysis.detailedstudy;
+package cleon.architecturemethods.eamod.spec.analysis;
 
 import ch.actifsource.core.Resource;
 
-public class DetailedstudyPackage {
+public class AnalysisPackage {
   
   public static final Resource RequirementsAggregate = new Resource("1e2f32b0-a6f8-11e8-9c81-8bd68c62e435");
   public static final Resource RequirementsAggregate_subjectArea = new Resource("4f4d82d1-a6f8-11e8-9c81-8bd68c62e435");
@@ -19,7 +19,7 @@ public class DetailedstudyPackage {
   
   /* End Protected Region   [[user]] */
   
-  private DetailedstudyPackage() {}
+  private AnalysisPackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.eamod.spec.analysis";
@@ -30,8 +30,8 @@ public class DetailedstudyPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.architecture.spec.analysis.detailedstudy";
+    return "cleon.architecturemethods.eamod.spec.analysis";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.analysis.detailedstudy,juRuBxFwkLsDQyagS3Sr8qG+b4s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.analysis,FTIHK5UZYvdUF1GClEh5UQNCHrY=] */

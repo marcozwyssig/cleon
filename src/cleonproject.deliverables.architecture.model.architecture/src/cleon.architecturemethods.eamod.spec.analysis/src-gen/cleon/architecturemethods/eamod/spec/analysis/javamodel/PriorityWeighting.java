@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.analysis.detailedstudy.javamodel;
+package cleon.architecturemethods.eamod.spec.analysis.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -43,11 +43,11 @@ public class PriorityWeighting extends DynamicResource implements IPriorityWeigh
   
   @Override
   public cleon.common.resources.spec.resources.priority.javamodel.IPriority selectPriority() {
-    return _getSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.PriorityWeighting_priority);
+    return _getSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.PriorityWeighting_priority);
   }
 
   public PriorityWeighting setPriority(cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
-    _setSingle(cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.PriorityWeighting_priority, priority);
+    _setSingle(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.PriorityWeighting_priority, priority);
     return this;
   }
     
@@ -77,16 +77,16 @@ public class PriorityWeighting extends DynamicResource implements IPriorityWeigh
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.WeightingAware_weighting, visitor);
     // relations
-    _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.PriorityWeighting_priority, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.PriorityWeighting_priority, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IPriorityWeighting> selectToMePriority(cleon.common.resources.spec.resources.priority.javamodel.IPriority object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.analysis.detailedstudy.javamodel.IPriorityWeighting.class, cleon.conception.architecture.spec.analysis.detailedstudy.DetailedstudyPackage.PriorityWeighting_priority, object.getResource());
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting> selectToMePriority(cleon.common.resources.spec.resources.priority.javamodel.IPriority object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.PriorityWeighting_priority, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,KVfy7l9C8oF2z41ubFsg/RrMnCQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,sMO4mZh2zX8mxbFDzKZUHeRuGoo=] */

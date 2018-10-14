@@ -52,22 +52,22 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
   }
     
   @Override
-  public cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram selectOrganigram() {
-    return _getSingle(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram);
+  public cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganigram selectOrganigram() {
+    return _getSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganigram.class, cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organigram);
   }
 
-  public EnterpriseBusinessProcess setOrganigram(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram organigram) {
-    _setSingle(cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram, organigram);
+  public EnterpriseBusinessProcess setOrganigram(cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganigram organigram) {
+    _setSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organigram, organigram);
     return this;
   }
     
   @Override
-  public cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational selectOrganisational() {
-    return _getSingle(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational);
+  public cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.javamodel.IOrganisational selectOrganisational() {
+    return _getSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.javamodel.IOrganisational.class, cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organisational);
   }
 
-  public EnterpriseBusinessProcess setOrganisational(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational organisational) {
-    _setSingle(cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational, organisational);
+  public EnterpriseBusinessProcess setOrganisational(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.javamodel.IOrganisational organisational) {
+    _setSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organisational, organisational);
     return this;
   }
     
@@ -88,8 +88,8 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.operational.javamodel.IOperational.class, cleon.architecturemethods.org42.spec.epm.EpmPackage.EnterpriseBusinessProcess_operational, visitor);
-    _acceptSingle(cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganigram.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organigram, visitor);
-    _acceptSingle(cleon.initialization.processlanguage.spec.bpmn.organisational.javamodel.IOrganisational.class, cleon.initialization.processlanguage.spec.bpmn.BpmnPackage.Bpmn_organisational, visitor);
+    _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganigram.class, cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organigram, visitor);
+    _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.javamodel.IOrganisational.class, cleon.modelinglanguages.bpmn.spec.bpmn2.Bpmn2Package.Bpmn_organisational, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -100,4 +100,4 @@ public class EnterpriseBusinessProcess extends DynamicResource implements IEnter
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,8aTTTHTemXkwLZ5WzHxQloaXEhM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,IVtx7BtaNTIXOk/7lzL/hFQZr4s=] */

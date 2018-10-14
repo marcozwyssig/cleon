@@ -2,7 +2,7 @@ package cleon.architecturemethods.org42.spec.epm.unit.management.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IManagement extends cleon.initialization.processlanguage.spec.bpmn.organisational.unit.javamodel.IOrganisationGroup {
+public interface IManagement extends cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.javamodel.IOrganisationGroup {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0fb27ece-ba76-11e3-9206-f19b78f4aff0");
   
@@ -18,4 +18,4 @@ public interface IManagement extends cleon.initialization.processlanguage.spec.b
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,9UYVdCk9iK+0/X5xWMj/Gr5GxKg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,+ReuS5N8kPr+wYBvjwFbSK/V2Ow=] */

@@ -10,8 +10,8 @@ public interface IEnterpriseOrganigram extends ch.actifsource.core.javamodel.IDe
   
   public cleon.architecturemethods.org42.spec.epm.unit.javamodel.IEnterprise selectEnterprise();
   
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.initialization.processlanguage.spec.bpmn.organigram.javamodel.IOrganisation> selectOrganisation();
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganisation> selectOrganisation();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,fvPtjl2LocaWQNrsWincGynJSbc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,oSFG0aT9YLg4QHCdbDNk6fgsphQ=] */

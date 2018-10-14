@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bc26f3ee-42b2-11e6-a9d7-97cf4f7c398b">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="bc271b05-42b2-11e6-a9d7-97cf4f7c398b" type="resource" guid="bc26f3ef-42b2-11e6-a9d7-97cf4f7c398b" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bc271b01-42b2-11e6-a9d7-97cf4f7c398b" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bc271b00-42b2-11e6-a9d7-97cf4f7c398b" type="literal">UniqueIdRefactoring</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bc271b05-42b2-11e6-a9d7-97cf4f7c398b">
+      <resource guid="bc26f3ef-42b2-11e6-a9d7-97cf4f7c398b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bc271b04-42b2-11e6-a9d7-97cf4f7c398b" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3b224668-42b3-11e6-a9d7-97cf4f7c398b" type="literal">cleon.architecturemethods.togaf.spec.togaf.MakeAllIdsUniqueRefactoringAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bc271b02-42b2-11e6-a9d7-97cf4f7c398b" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -118,13 +118,13 @@ public class FunctionSpace_Steering {
   public static interface IDeliverableLampStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f9075be-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
+    public java.lang.Boolean IsRed(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
     @IDynamicResourceExtension.MethodId("9f9075c0-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
+    public java.lang.Boolean IsYellow(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
     @IDynamicResourceExtension.MethodId("9f9075c2-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
+    public java.lang.Boolean IsGreen(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState);
 
   }
   
@@ -135,17 +135,17 @@ public class FunctionSpace_Steering {
     private DeliverableLampStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public java.lang.Boolean IsRed(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return deliverableLampState.isRed();
     }
 
     @Override
-    public java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public java.lang.Boolean IsYellow(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return deliverableLampState.isYellow();
     }
 
     @Override
-    public java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public java.lang.Boolean IsGreen(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return deliverableLampState.isGreen();
     }
 
@@ -155,15 +155,15 @@ public class FunctionSpace_Steering {
 
     private DeliverableLampStateFunctions() {}
 
-    public static java.lang.Boolean IsRed(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public static java.lang.Boolean IsRed(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsRed(deliverableLampState);
     }
 
-    public static java.lang.Boolean IsYellow(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public static java.lang.Boolean IsYellow(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsYellow(deliverableLampState);
     }
 
-    public static java.lang.Boolean IsGreen(final cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
+    public static java.lang.Boolean IsGreen(final cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState deliverableLampState) {
       return DynamicResourceUtil.invoke(IDeliverableLampStateFunctionsImpl.class, DeliverableLampStateFunctionsImpl.INSTANCE, deliverableLampState).IsGreen(deliverableLampState);
     }
 
@@ -271,4 +271,4 @@ public class FunctionSpace_Steering {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f8bc1-ca32-11e8-82ac-e1eb952f770a,JrbqMkJV+CmIr1Nl16CU5BfwCnI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f8bc1-ca32-11e8-82ac-e1eb952f770a,06UDu8jHfm4jlqG/zjJkLzcuM/w=] */

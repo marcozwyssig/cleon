@@ -4,7 +4,7 @@ Bundle-ActivationPolicy: lazy
 Bundle-Activator: ch.actifsource.template.Activator
 Bundle-Name: cleon.common.doc.template.asciidoc
 Bundle-SymbolicName: cleon.common.doc.template.asciidoc.builtin;singleton:=true
-Bundle-Version: 0.4.0
+Bundle-Version: 0.4.1
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -13,8 +13,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.0",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.0",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.1",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.1",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.common.doc.template.asciidoc,cleon.common.doc.template.asciidoc.javamodel
 

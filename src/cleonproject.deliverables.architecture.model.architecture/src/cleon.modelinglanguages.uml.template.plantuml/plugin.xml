@@ -4,7 +4,7 @@
    <extension
          point="ch.actifsource.generator.BuildTaskFactory">
       <BuildTaskFactory
-            class="cleon.conception.uml.template.plantuml.PlantUmlBuildTaskFactory">
+            class="cleon.modelinglanguages.uml.template.plantuml.PlantUmlBuildTaskFactory">
       </BuildTaskFactory>
    </extension>
    <extension
@@ -25,4 +25,4 @@
       </Builtin>
    </extension>
 </plugin>
-<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,8fb06afc-3ecd-11e6-8637-4b18ad8188f9,b8bd5d27-5443-11e8-a7d7-8f17ff9a62b8,DRLs8yPH6wal/MCaa4RaIco7lKk=] -->
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,8fb06afc-3ecd-11e6-8637-4b18ad8188f9,b8bd5d27-5443-11e8-a7d7-8f17ff9a62b8,mzRja7Wq3eIMwabg2x6vIHFSihU=] -->

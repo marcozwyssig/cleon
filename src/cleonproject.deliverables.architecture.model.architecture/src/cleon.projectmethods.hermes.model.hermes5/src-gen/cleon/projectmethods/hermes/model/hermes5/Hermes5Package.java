@@ -1,14 +1,14 @@
-package cleon.initialization.projectmanagement.model.hermes;
+package cleon.projectmethods.hermes.model.hermes5;
 
 import ch.actifsource.core.Resource;
 
-public class HermesPackage {
+public class Hermes5Package {
   
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
   
-  private HermesPackage() {}
+  private Hermes5Package() {}
   
   public static final String getScopeName() {
     return "cleon.projectmethods.hermes.model.hermes5";
@@ -19,8 +19,8 @@ public class HermesPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.initialization.projectmanagement.model.hermes";
+    return "cleon.projectmethods.hermes.model.hermes5";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.model.hermes,S2YpsBnxoaZs0pUhG6HKbSFtBbw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.model.hermes5,XCS9fC5/b6CGm2jOhlXBbeMwjd8=] */

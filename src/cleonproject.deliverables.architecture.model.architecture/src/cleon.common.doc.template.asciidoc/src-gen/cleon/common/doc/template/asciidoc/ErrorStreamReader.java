@@ -15,7 +15,7 @@ public class ErrorStreamReader implements Runnable {
 
 	public ErrorStreamReader(Process process, IGeneratorConsole console, ICancelStatus cancelStatus) {
 		fProcess = process;
-		fBuf = new byte['È'];
+		fBuf = new byte[0];
 		fConsole = console;
 		fCancelStatus = cancelStatus;
 	}

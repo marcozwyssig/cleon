@@ -5,10 +5,26 @@
 	<projects>
 		
 	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
 	<linkedResources>
 	</linkedResources>
 	<!-- Begin Protected Region [[custom]] -->
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,c761c547-ca39-11e8-9e9d-8dc67753571a,0fwc+MhAUFBxwhA3GX0QXVE0ek4=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,c761c547-ca39-11e8-9e9d-8dc67753571a,VyrSuwTdHO/i82W0Fi7GZpf4XsA=] -->

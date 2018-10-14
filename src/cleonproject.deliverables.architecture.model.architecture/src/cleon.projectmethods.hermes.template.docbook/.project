@@ -17,9 +17,15 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
 	<linkedResources>
 	</linkedResources>
@@ -27,4 +33,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1425ea0d-ca55-11e8-9e9d-8dc67753571a,MyGP0k+AGDBo4sI0NSdjwVSxN4M=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,1425ea0d-ca55-11e8-9e9d-8dc67753571a,uK/oUZRj0DBL0VXcdvy+JZhY+6Y=] -->

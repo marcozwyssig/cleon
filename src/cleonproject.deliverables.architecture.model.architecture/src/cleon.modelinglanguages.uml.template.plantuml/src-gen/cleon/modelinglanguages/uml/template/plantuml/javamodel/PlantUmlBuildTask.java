@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml.javamodel;
+package cleon.modelinglanguages.uml.template.plantuml.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -48,4 +48,4 @@ public class PlantUmlBuildTask extends DynamicResource implements IPlantUmlBuild
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54616975-8e4f-11e7-859f-5dd1441850fb,Iz4hRV5rHa8q9leioGvpx0xOxME=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54616975-8e4f-11e7-859f-5dd1441850fb,N4mQbIQypPU9kSXvD41fB9rwnBs=] */

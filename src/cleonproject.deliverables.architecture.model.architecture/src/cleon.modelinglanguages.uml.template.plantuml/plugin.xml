@@ -4,7 +4,7 @@
    <extension
          point="ch.actifsource.generator.BuildTaskFactory">
       <BuildTaskFactory
-            class="cleon.conception.uml.template.plantuml.PlantUmlBuildTaskFactory">
+            class="cleon.modelinglanguages.uml.template.plantuml.PlantUmlBuildTaskFactory">
       </BuildTaskFactory>
    </extension>
    <extension

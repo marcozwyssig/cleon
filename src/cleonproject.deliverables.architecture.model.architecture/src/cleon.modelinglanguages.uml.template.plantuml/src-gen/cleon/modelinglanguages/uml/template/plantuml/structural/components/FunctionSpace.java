@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml.structural.components;
+package cleon.modelinglanguages.uml.template.plantuml.structural.components;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -84,4 +84,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,eCcojTXQYHo64dUZgMabmVBRhEI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,7JwF1FZAAuRHwniRhZLbarGZ2qE=] */

@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml;
+package cleon.modelinglanguages.uml.template.plantuml;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.generator.IBuildTask;

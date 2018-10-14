@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml.structural.components;
+package cleon.modelinglanguages.uml.template.plantuml.structural.components;
 
 import ch.actifsource.core.Resource;
 
@@ -22,8 +22,8 @@ public class ComponentsPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.uml.template.plantuml.structural.components";
+    return "cleon.modelinglanguages.uml.template.plantuml.structural.components";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.uml.template.plantuml.structural.components,XF1q8PBEVHR6LGkFFqbOZ4B7OrY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.plantuml.structural.components,55+BpgHqzNjB9RoDLHsPSDGPbRs=] */

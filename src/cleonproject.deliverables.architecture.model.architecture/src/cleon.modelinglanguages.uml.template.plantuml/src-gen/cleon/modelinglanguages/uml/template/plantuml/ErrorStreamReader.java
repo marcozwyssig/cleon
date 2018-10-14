@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml;
+package cleon.modelinglanguages.uml.template.plantuml;
 
 import java.io.IOException;
 

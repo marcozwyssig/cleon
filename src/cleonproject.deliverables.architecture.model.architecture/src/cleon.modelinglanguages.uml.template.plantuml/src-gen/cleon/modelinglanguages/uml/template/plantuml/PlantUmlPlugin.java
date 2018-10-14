@@ -1,4 +1,4 @@
-package cleon.conception.uml.template.plantuml;
+package cleon.modelinglanguages.uml.template.plantuml;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;

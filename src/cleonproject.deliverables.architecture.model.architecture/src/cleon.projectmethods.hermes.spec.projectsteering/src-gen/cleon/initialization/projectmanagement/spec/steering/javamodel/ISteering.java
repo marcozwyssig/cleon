@@ -14,8 +14,8 @@ public interface ISteering extends ch.actifsource.core.javamodel.INamedResource 
   
   public cleon.initialization.projectmanagement.spec.steering.impediments.javamodel.IImpediments selectImpediments();
   
-  public cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning selectPlanning();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning selectPlanning();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,TP5dR7UkcgUdO8jto1EyEVB/r+I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,czoZC/yOvfQCGfbTn2+KmLZeFe4=] */

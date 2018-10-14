@@ -97,12 +97,12 @@ public class Impediment extends DynamicResource implements IImpediment {
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson selectOwner() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner);
+  public cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson selectOwner() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.OwnerAware_owner);
   }
 
-  public Impediment setOwner(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson owner) {
-    _setSingle(cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, owner);
+  public Impediment setOwner(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson owner) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.OwnerAware_owner, owner);
     return this;
   }
     
@@ -138,7 +138,7 @@ public class Impediment extends DynamicResource implements IImpediment {
     _acceptListAttribute(java.lang.String.class, cleon.initialization.projectmanagement.spec.steering.impediments.ImpedimentsPackage.Impediment_resolutionsDetails, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.initialization.projectmanagement.spec.steering.impediments.ImpedimentsPackage.Impediment_entryDate, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.workstate.javamodel.IWorkState.class, cleon.common.resources.spec.resources.workstate.WorkstatePackage.WorkStateAware_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -150,4 +150,4 @@ public class Impediment extends DynamicResource implements IImpediment {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,Oo72H7hdUxYtyuKufzEewPTyph8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,UNzqJ6LJRUvmZGgopkxIoHA+zDQ=] */

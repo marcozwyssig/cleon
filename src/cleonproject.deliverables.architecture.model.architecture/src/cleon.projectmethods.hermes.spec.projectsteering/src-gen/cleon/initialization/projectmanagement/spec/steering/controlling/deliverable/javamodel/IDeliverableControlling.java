@@ -8,7 +8,7 @@ public interface IDeliverableControlling extends ch.actifsource.core.javamodel.I
   
   // relations
   
-  public cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable();
   
   public cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableRisks selectRisks();
   
@@ -22,4 +22,4 @@ public interface IDeliverableControlling extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,c+TUTKokvZZaA1nuQ1jb9an2D2s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,Ykgv6IkffWv78iB7K0WiH/1BD5g=] */

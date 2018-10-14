@@ -156,14 +156,14 @@ public class FunctionSpace_ProjectManagement {
     public java.lang.String GetType();
 
     @IDynamicResourceExtension.MethodId("9f8f3dd0-ca32-11e8-82ac-e1eb952f770a")
-    public <T extends cleon.initialization.projectmanagement.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate();
+    public <T extends cleon.projectmethods.hermes.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate();
 
   }
   
   public static interface ITaskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f8f3dd0-ca32-11e8-82ac-e1eb952f770a")
-    public <T extends cleon.initialization.projectmanagement.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList);
+    public <T extends cleon.projectmethods.hermes.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList);
 
   }
   
@@ -174,7 +174,7 @@ public class FunctionSpace_ProjectManagement {
     private TaskFunctionsImpl() {}
 
     @Override
-    public <T extends cleon.initialization.projectmanagement.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList) {
+    public <T extends cleon.projectmethods.hermes.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList) {
       /* Begin Protected Region [[9f8f3dd0-ca32-11e8-82ac-e1eb952f770a]] */
 		ArrayList<T> taskSortedList = new ArrayList<>(taskList);
 		Collections.sort(taskSortedList, new java.util.Comparator<T>() {
@@ -196,7 +196,7 @@ public class FunctionSpace_ProjectManagement {
 
     private TaskFunctions() {}
 
-    public static <T extends cleon.initialization.projectmanagement.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList) {
+    public static <T extends cleon.projectmethods.hermes.spec.projectmanagement.protocols.protocolsitems.javamodel.ITask> List<T> SortByDate(final List<T> taskList) {
       return DynamicResourceUtil.invoke(ITaskFunctionsImpl.class, TaskFunctionsImpl.INSTANCE, taskList).SortByDate(taskList);
     }
 
@@ -856,4 +856,4 @@ public class FunctionSpace_ProjectManagement {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,2TxZY3MPngjmBW7kN6LxkquhwmM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,XJnSbKpZLThMnFjGghU/4X05Y0c=] */

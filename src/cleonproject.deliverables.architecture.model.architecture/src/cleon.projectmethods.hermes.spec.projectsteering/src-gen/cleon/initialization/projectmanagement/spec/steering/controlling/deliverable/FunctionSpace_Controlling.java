@@ -21,7 +21,7 @@ public class FunctionSpace_Controlling {
   public static interface IDeliverableControllingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0bf0e40b-be0c-11e6-a3f0-c7681ee45a3f")
-    public cleon.initialization.projectmanagement.spec.planning.scope.workpackage.backlog.javamodel.IBacklog GetBacklog();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog GetBacklog();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Controlling {
   public static interface IDeliverablesControllingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e9b1fa92-3eb4-11e7-a89c-83d57940f0e3")
-    public cleon.initialization.projectmanagement.spec.planning.javamodel.IPlanning GetPlanning();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning GetPlanning();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Controlling {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afaee166-be00-11e6-a3f0-c7681ee45a3f,hXjlc5b0KzThHc0OJb9pACsr7S0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afaee166-be00-11e6-a3f0-c7681ee45a3f,h4+gh1UM3cbQkHnhjflaKcjxDCU=] */

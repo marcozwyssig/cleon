@@ -51,12 +51,12 @@ public class ServiceProducers extends DynamicResource implements IServiceProduce
   // relations
   
   @Override
-  public java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> selectDeliverables() {
-    return _getList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables);
+  public java.util.List<? extends cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable> selectDeliverables() {
+    return _getList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables);
   }
 
-  public ServiceProducers setDeliverables(java.util.List<? extends cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable> deliverables) {
-    _setList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables, deliverables);
+  public ServiceProducers setDeliverables(java.util.List<? extends cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable> deliverables) {
+    _setList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables, deliverables);
     return this;
   }
     
@@ -97,7 +97,7 @@ public class ServiceProducers extends DynamicResource implements IServiceProduce
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables, visitor);
+    _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.Deliverables_deliverables, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.usage.javamodel.IServiceUsage.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceProducers_services, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -110,4 +110,4 @@ public class ServiceProducers extends DynamicResource implements IServiceProduce
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e164d2a6-c690-11e6-8242-2f0ed6756d77,J9S8X06BkRyH/n//uKKdFkqkRL0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e164d2a6-c690-11e6-8242-2f0ed6756d77,RQMNFD6xA2NDc0ZUgRxEkJD1A10=] */

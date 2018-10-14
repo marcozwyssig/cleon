@@ -61,11 +61,11 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   }
     
   @Override
-  public cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
-    return _getSingle(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable);
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable);
   }
 
-  public DeliverableControlling setDeliverable(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+  public DeliverableControlling setDeliverable(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
     _setSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, deliverable);
     return this;
   }
@@ -148,7 +148,7 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deadline, visitor);
-    _acceptSingle(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableImpediments.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_impediments, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_quality, visitor);
@@ -160,7 +160,7 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
 
   // toMeRelations
   
-  public static java.util.List<cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableControlling> selectToMeDeliverable(cleon.initialization.projectmanagement.spec.planning.scope.deliverable.javamodel.IDeliverable object) {
+  public static java.util.List<cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableControlling> selectToMeDeliverable(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable object) {
     return _getToMeList(object.getRepository(), cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.javamodel.IDeliverableControlling.class, cleon.initialization.projectmanagement.spec.steering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, object.getResource());
   }
   
@@ -185,4 +185,4 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,eodc4BjN68mmvjNbshpOQk/A50o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,0xZLo/0EvEPckWf0eVyoP5sdMkM=] */

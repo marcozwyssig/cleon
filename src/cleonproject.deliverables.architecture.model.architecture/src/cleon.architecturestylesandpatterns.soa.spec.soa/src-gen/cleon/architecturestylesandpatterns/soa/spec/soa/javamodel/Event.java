@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.soa.javamodel;
+package cleon.architecturestylesandpatterns.soa.spec.soa.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -43,11 +43,11 @@ public class Event extends DynamicResource implements IEvent {
   
   @Override
   public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier> selectEventType() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.soa.SoaPackage.Event_eventType);
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.Event_eventType);
   }
 
   public Event setEventType(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier> eventType) {
-    _setList(cleon.conception.architecture.spec.soa.SoaPackage.Event_eventType, eventType);
+    _setList(cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.Event_eventType, eventType);
     return this;
   }
     
@@ -67,15 +67,15 @@ public class Event extends DynamicResource implements IEvent {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.conception.architecture.spec.soa.SoaPackage.Event_eventType, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.Event_eventType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.conception.architecture.spec.soa.javamodel.IEvent> selectToMeEventType(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier object) {
-    return _getToMeList(object.getRepository(), cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.Event_eventType, object.getResource());
+  public static java.util.List<cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent> selectToMeEventType(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier object) {
+    return _getToMeList(object.getRepository(), cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent.class, cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.Event_eventType, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,KixFmTpLoMwIIOwQMpE0Q4Zy7/k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,ArVkpkPG3r3JDI0zVH4aBfZz4Nc=] */

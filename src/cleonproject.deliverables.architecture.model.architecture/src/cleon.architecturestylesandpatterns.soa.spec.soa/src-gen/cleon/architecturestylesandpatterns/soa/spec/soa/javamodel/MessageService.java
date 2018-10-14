@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.soa.javamodel;
+package cleon.architecturestylesandpatterns.soa.spec.soa.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -103,4 +103,4 @@ public class MessageService extends DynamicResource implements IMessageService {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a41f99a-a436-11e3-a07f-f96d34c3de8f,CkrJK/KwF3UqGBfisYVjjASbvUM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a41f99a-a436-11e3-a07f-f96d34c3de8f,6l2/OwT4pRRPHnWjI0E+TcugTrQ=] */

@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.soa.javamodel;
+package cleon.architecturestylesandpatterns.soa.spec.soa.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IMessageService extends ch.actifsource.core.javamodel.INamedRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a41f99a-a436-11e3-a07f-f96d34c3de8f,5LRESP049VFGjyglK+9FvFyRBwA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a41f99a-a436-11e3-a07f-f96d34c3de8f,JO33RGlZmz7GMw79adiEtgtG9Ew=] */

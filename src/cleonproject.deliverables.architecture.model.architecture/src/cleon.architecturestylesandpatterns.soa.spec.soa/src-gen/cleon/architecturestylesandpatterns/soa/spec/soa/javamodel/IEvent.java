@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.soa.javamodel;
+package cleon.architecturestylesandpatterns.soa.spec.soa.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface IEvent extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,7so6NUvBCyBGAU+glb7MpgZ/Wdc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3789a935-a3ba-11e3-8095-f11af53ab806,82qMmYmkht1S5mw8CdjbUKQsYE4=] */

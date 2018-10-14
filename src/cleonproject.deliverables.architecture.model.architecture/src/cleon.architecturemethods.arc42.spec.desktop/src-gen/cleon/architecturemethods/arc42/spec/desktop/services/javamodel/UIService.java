@@ -70,12 +70,12 @@ public class UIService extends DynamicResource implements IUIService {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.soa.javamodel.IEvent> selectEvents() {
-    return _getList(cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.DataService_events);
+  public java.util.List<? extends cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent> selectEvents() {
+    return _getList(cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent.class, cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.DataService_events);
   }
 
-  public UIService setEvents(java.util.List<? extends cleon.conception.architecture.spec.soa.javamodel.IEvent> events) {
-    _setList(cleon.conception.architecture.spec.soa.SoaPackage.DataService_events, events);
+  public UIService setEvents(java.util.List<? extends cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent> events) {
+    _setList(cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.DataService_events, events);
     return this;
   }
     
@@ -108,10 +108,10 @@ public class UIService extends DynamicResource implements IUIService {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.InterfaceService_data, visitor);
-    _acceptList(cleon.conception.architecture.spec.soa.javamodel.IEvent.class, cleon.conception.architecture.spec.soa.SoaPackage.DataService_events, visitor);
+    _acceptList(cleon.architecturestylesandpatterns.soa.spec.soa.javamodel.IEvent.class, cleon.architecturestylesandpatterns.soa.spec.soa.SoaPackage.DataService_events, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,8ia5hRunPiEP6iVn1vc5iW8ypSU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,9lDFAvfs+GPHqXK1qNCL21Mbsqo=] */

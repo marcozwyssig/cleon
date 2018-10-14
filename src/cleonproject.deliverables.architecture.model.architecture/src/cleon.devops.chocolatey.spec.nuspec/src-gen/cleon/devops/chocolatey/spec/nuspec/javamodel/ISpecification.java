@@ -1,4 +1,4 @@
-package cleon.deployment.chocolatey.spec.nuspec.javamodel;
+package cleon.devops.chocolatey.spec.nuspec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface ISpecification extends ch.actifsource.core.javamodel.INamedReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,V3WHn32B/B+Ud8syoxWzS3DbE+8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,A/jNVMSyiR9NCkBLaCcvrHyjOyU=] */

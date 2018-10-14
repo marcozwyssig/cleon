@@ -1,4 +1,4 @@
-package cleon.deployment.chocolatey.spec.nuspec.javamodel;
+package cleon.devops.chocolatey.spec.nuspec.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -50,11 +50,11 @@ public class Specification extends DynamicResource implements ISpecification {
 
   @Override
   public java.lang.Boolean selectRequireLicenseAcceptance() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.devops.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance);
   }
     
   public void setRequireLicenseAcceptance(java.lang.Boolean requireLicenseAcceptance) {
-     _setSingleAttribute(cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, requireLicenseAcceptance);
+     _setSingleAttribute(cleon.devops.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, requireLicenseAcceptance);
   }
 
   // relations
@@ -115,7 +115,7 @@ public class Specification extends DynamicResource implements ISpecification {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.DisplayName_displayName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.deployment.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.devops.chocolatey.spec.nuspec.NuspecPackage.Specification_requireLicenseAcceptance, visitor);
     // relations
     _acceptList(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.AuthorsAware_authors, visitor);
     _acceptSingle(cleon.initialization.projectmanagement.spec.resource.persons.javamodel.IPerson.class, cleon.initialization.projectmanagement.spec.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
@@ -125,4 +125,4 @@ public class Specification extends DynamicResource implements ISpecification {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,qEKcWlFU9QfaJr9l9OtZuQUdJGk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4652f766-4d0b-11e6-9043-01b29b61e580,oB7Jk8U+XW65jbwB8v2iV4rn/U4=] */

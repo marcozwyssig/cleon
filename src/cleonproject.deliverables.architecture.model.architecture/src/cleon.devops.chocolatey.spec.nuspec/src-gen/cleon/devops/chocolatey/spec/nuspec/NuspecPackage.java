@@ -1,4 +1,4 @@
-package cleon.deployment.chocolatey.spec.nuspec;
+package cleon.devops.chocolatey.spec.nuspec;
 
 import ch.actifsource.core.Resource;
 
@@ -22,8 +22,8 @@ public class NuspecPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.deployment.chocolatey.spec.nuspec";
+    return "cleon.devops.chocolatey.spec.nuspec";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.deployment.chocolatey.spec.nuspec,CDUoDnzBK+OtYYyTvXtO/+pQpX8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.chocolatey.spec.nuspec,oWAWO8Nw5OID5p1G9PYLwZDqR4o=] */

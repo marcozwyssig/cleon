@@ -8,6 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6,imports]] */
+import cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.actifsource.javamodel.IActifsource;
+import cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IJava;
 
 /* End Protected Region   [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6,imports]] */
 
@@ -41,7 +43,18 @@ public class __T_asproject {
     @Override
     public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin) {
       /* Begin Protected Region [[88e4db85-41a1-11e8-81d0-774e4d9334dd]] */
-      // XXX implement template function here   
+    	IActifsource actifsource = plugin.selectActifsource();
+    	if( actifsource == null)
+    	{
+    		return false;
+    	}
+    	
+    	IJava java = plugin.selectJava();
+    	if( java == null)
+    	{
+    		return false;
+    	}
+		return true;
       /* End Protected Region   [[88e4db85-41a1-11e8-81d0-774e4d9334dd]] */
     }
 

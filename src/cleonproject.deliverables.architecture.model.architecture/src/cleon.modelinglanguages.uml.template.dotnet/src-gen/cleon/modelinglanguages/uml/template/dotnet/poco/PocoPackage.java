@@ -1,14 +1,14 @@
-package cleon.implementation.dotnet.spec.framework;
+package cleon.modelinglanguages.uml.template.dotnet.poco;
 
 import ch.actifsource.core.Resource;
 
-public class FrameworkPackage {
+public class PocoPackage {
   
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
   
-  private FrameworkPackage() {}
+  private PocoPackage() {}
   
   public static final String getScopeName() {
     return "cleon.modelinglanguages.uml.template.dotnet";
@@ -19,8 +19,8 @@ public class FrameworkPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.implementation.dotnet.spec.framework";
+    return "cleon.modelinglanguages.uml.template.dotnet.poco";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.implementation.dotnet.spec.framework,WjLLjA7b96xQWWq3CZYn3oTpye0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.dotnet.poco,vaQAfc5Srn24iliGD9Qs+/808aQ=] */

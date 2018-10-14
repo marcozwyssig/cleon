@@ -1,4 +1,4 @@
-package cleon.initialization.projectmanagement.template.versionone;
+package cleon.projectmethods.hermes.template.versionone;
 
 import ch.actifsource.core.Resource;
 
@@ -27,8 +27,8 @@ public class VersiononePackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.initialization.projectmanagement.template.versionone";
+    return "cleon.projectmethods.hermes.template.versionone";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.initialization.projectmanagement.template.versionone,ljeD0q2LSdNIt2gAu8hX2PeqPu0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.template.versionone,2eF+rNRFhKlPoyjiN1qewHlIJzI=] */

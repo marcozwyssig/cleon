@@ -110,11 +110,11 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator() {
-    return _getList(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator);
+  public java.util.List<? extends cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator() {
+    return _getList(cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator);
   }
 
-  public Aggregate setEventAggregator(java.util.List<? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> eventAggregator) {
+  public Aggregate setEventAggregator(java.util.List<? extends cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator> eventAggregator) {
     _setList(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator, eventAggregator);
     return this;
   }
@@ -182,7 +182,7 @@ public class Aggregate extends DynamicResource implements IAggregate {
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnumDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_enums, visitor);
-    _acceptList(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator, visitor);
+    _acceptList(cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.packages.PackagesPackage.Package_subPackages, visitor);
@@ -216,9 +216,9 @@ public class Aggregate extends DynamicResource implements IAggregate {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_enums, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeEventAggregator(cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeEventAggregator(cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,Oz0HukMh9XlgMu+IV8sULNtLCS0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,biJ9E99MopD8wDRz/CgO6r8Jaew=] */

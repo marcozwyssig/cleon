@@ -1,4 +1,4 @@
-package cleon.conception.architecture.spec.eda.eventaggregator;
+package cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator;
 
 import ch.actifsource.core.Resource;
 
@@ -26,8 +26,8 @@ public class EventaggregatorPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.conception.architecture.spec.eda.eventaggregator";
+    return "cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.conception.architecture.spec.eda.eventaggregator,BIilJIQfYMA+zH5Gu3MB3Q3T1Yk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator,ENciR68ygc7NNGDmQgYdxKBd0Rc=] */

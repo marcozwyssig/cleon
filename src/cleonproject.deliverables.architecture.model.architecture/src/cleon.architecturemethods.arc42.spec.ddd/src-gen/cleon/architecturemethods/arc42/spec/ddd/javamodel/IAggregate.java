@@ -20,8 +20,8 @@ public interface IAggregate extends cleon.modelinglanguages.uml.spec.uml2.struct
   
   public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnumDekomposition> selectEnums();
   
-  public java.util.List<? extends cleon.conception.architecture.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator();
+  public java.util.List<? extends cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,WOWHYA59eO5EjEEDnR1n5TZ2kEY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,ViI/MzlvyutzC5zByqx6428HNlo=] */

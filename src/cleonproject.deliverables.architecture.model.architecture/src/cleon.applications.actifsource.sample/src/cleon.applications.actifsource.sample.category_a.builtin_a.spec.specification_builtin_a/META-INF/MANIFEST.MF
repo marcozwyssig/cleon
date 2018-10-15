@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-Name: cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a
+Bundle-SymbolicName: cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a.builtin;singleton:=true
+Bundle-Version: 0.1.0
+Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
+ ch.actifsource.environment;bundle-version="9.0.0",
+ ch.actifsource.util;bundle-version="9.0.0",
+ ch.actifsource.xml;bundle-version="9.0.0",
+ ch.actifsource.template;bundle-version="9.0.0",
+ ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
+ ch.actifsource.ui.wizard;bundle-version="9.0.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ ch.actifsource.generator;bundle-version="9.0.0"
+Export-Package: cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a,cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a.javamodel
+ ,cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a.ddddd,cleon.applications.actifsource.sample.category_a.builtin_a.spec.specification_builtin_a.ddddd.javamodel
+

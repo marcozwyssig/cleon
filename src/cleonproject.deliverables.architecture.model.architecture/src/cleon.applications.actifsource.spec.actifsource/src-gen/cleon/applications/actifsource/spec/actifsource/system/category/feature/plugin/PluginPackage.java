@@ -16,11 +16,11 @@ public class PluginPackage {
   public static final Resource PluginAggregateDecomposite_into = new Resource("c4c26124-f8cf-11e5-bc92-c963417b9cea");
   public static final Resource PluginBuiltinDependency = new Resource("dc98b25c-0c6a-11e6-86c5-87a8b520dd59");
   public static final Resource PluginProjectDependency = new Resource("eb57b8c2-0c6a-11e6-86c5-87a8b520dd59");
-  public static final Resource FunctionSpace_Model = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
-  public static final Resource FunctionSpace_Template = new Resource("96d10a18-3c79-11e6-aafa-bd565efc0ead");
-  public static final Resource FunctionSpace_Specification = new Resource("d0ee34ab-3c79-11e6-aafa-bd565efc0ead");
-  public static final Resource FunctionSpace_Diagram = new Resource("f6381a35-3c79-11e6-aafa-bd565efc0ead");
-  public static final Resource FunctionSpace_Plugin = new Resource("5c7bb185-8983-11e6-9315-e9960ca482c6");
+  public static final Resource FunctionSpace_aE_Plugin_Model = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Plugin_Template = new Resource("96d10a18-3c79-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Plugin_Specification = new Resource("d0ee34ab-3c79-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Plugin_Diagram = new Resource("f6381a35-3c79-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Plugin_Plugin = new Resource("5c7bb185-8983-11e6-9315-e9960ca482c6");
   public static final Resource Plugin_actifsource = new Resource("37b032e2-3fd8-11e8-bd50-b94594551673");
   public static final Resource Plugin_java = new Resource("6106c404-41a6-11e8-81d0-774e4d9334dd");
   public static final Resource Plugin_gradle = new Resource("6237f12f-41a6-11e8-81d0-774e4d9334dd");
@@ -48,4 +48,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin,D7/0HoBq7YBbhxgn2TilosjrRIk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin,Hv2zN0I9zz/hOK/EBDbqvm9KFXY=] */

@@ -128,6 +128,46 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
     
   @Override
+  public cleon.architecturemethods.arc42.spec.arc42._08_concepts.javamodel.I__V_8_aE_Concepts select__V_8_aE_concepts() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._08_concepts.javamodel.I__V_8_aE_Concepts.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_8_aE_concepts);
+  }
+
+  public Actifsource_Arc set__V_8_aE_concepts(cleon.architecturemethods.arc42.spec.arc42._08_concepts.javamodel.I__V_8_aE_Concepts __V_8_aE_concepts) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_8_aE_concepts, __V_8_aE_concepts);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision select__V_9_aE_designdecision() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_9_aE_designdecision);
+  }
+
+  public Actifsource_Arc set__V_9_aE_designdecision(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision __V_9_aE_designdecision) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_9_aE_designdecision, __V_9_aE_designdecision);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios select__W_0_aE_quality_aE_scenarios() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_0_aE_quality_aE_scenarios);
+  }
+
+  public Actifsource_Arc set__W_0_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios __W_0_aE_quality_aE_scenarios) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_0_aE_quality_aE_scenarios, __W_0_aE_quality_aE_scenarios);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks select__W_1_aE_technical_aE_risks() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks);
+  }
+
+  public Actifsource_Arc set__W_1_aE_technical_aE_risks(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks __W_1_aE_technical_aE_risks) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks, __W_1_aE_technical_aE_risks);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -192,6 +232,10 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_7_aE_deploymentview, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._08_concepts.javamodel.I__V_8_aE_Concepts.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_8_aE_concepts, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_9_aE_designdecision, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_0_aE_quality_aE_scenarios, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
@@ -200,4 +244,4 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,Nce6/5C5Iio+KWJ4hywAtwn9b3o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,cJ843QhDj4ul+LZ17LPMceBGE3k=] */

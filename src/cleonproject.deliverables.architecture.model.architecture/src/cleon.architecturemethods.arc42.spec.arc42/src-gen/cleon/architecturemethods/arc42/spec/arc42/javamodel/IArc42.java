@@ -18,6 +18,14 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
   public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView select__V_7_aE_deploymentview();
   
+  public cleon.architecturemethods.arc42.spec.arc42._08_concepts.javamodel.I__V_8_aE_Concepts select__V_8_aE_concepts();
+  
+  public cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision select__V_9_aE_designdecision();
+  
+  public cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios select__W_0_aE_quality_aE_scenarios();
+  
+  public cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks select__W_1_aE_technical_aE_risks();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,dH7eMmYqzgEfTX8ewCV9BErxa0M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,/xlFSqLz8jn44R5vjT4k4RstOiY=] */

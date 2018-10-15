@@ -91,11 +91,11 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IDeployView selectDeployView() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_deployView);
+  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView selectDeployView() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_deployView);
   }
 
-  public __V_7_aE_DevOpsDeploymentView setDeployView(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IDeployView deployView) {
+  public __V_7_aE_DevOpsDeploymentView setDeployView(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView deployView) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_deployView, deployView);
     return this;
   }
@@ -191,7 +191,7 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IBuildView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_buildView, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.code.javamodel.ICode.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_code, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.deploy.javamodel.IDeploy.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_deploy, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_deployView, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_deployView, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IMonitorView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.__V_7_aE_DeploymentView_monitorView, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.operate.javamodel.IOperate.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_operates, visitor);
@@ -229,4 +229,4 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,AJ3LFG2BQmoKwfpQgLYlt2Xr6Gc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,TZ1wgUhLWRnD5DrjnDdDC+7MNlI=] */

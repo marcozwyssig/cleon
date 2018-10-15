@@ -41,12 +41,12 @@ public interface I__V_7_aE_DeploymentView extends cleon.common.doc.spec.doc.chap
   
   public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IPackageView selectPackageView();
   
-  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.ITestView selectTestView();
+  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView selectDeployView();
   
-  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IDeployView selectDeployView();
+  public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.ITestView selectTestView();
   
   public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IMonitorView selectMonitorView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,qe+ysS2wbST13ei+lOZv14wZseg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,E8JKcFjOKEIL+jzcICBwk2ylpo8=] */

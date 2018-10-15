@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.applications.actifsource" label="cleon.applications.actifsource" version="0.4.1">
+<feature id="cleon.applications.actifsource" label="cleon.applications.actifsource" version="0.4.2">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -474,10 +474,10 @@ of their respective owners.
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
    </requires>
-   <plugin id="cleon.applications.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.4.1" unpack="false"/>
-   <plugin id="cleon.applications.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.4.1" unpack="false"/>
-   <plugin id="cleon.applications.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.4.1" unpack="false"/>
-   <plugin id="cleon.applications.actifsource.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.4.1" unpack="false"/>
-   <plugin id="cleon.applications.actifsource.template.java.builtin" download-size="0" install-size="0" version="0.4.1" unpack="false"/>   
+   <plugin id="cleon.applications.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.4.2" unpack="false"/>
+   <plugin id="cleon.applications.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.4.2" unpack="false"/>
+   <plugin id="cleon.applications.actifsource.model.plugins.builtin" download-size="0" install-size="0" version="0.4.2" unpack="false"/>
+   <plugin id="cleon.applications.actifsource.spec.xml2asrc.builtin" download-size="0" install-size="0" version="0.4.2" unpack="false"/>
+   <plugin id="cleon.applications.actifsource.template.java.builtin" download-size="0" install-size="0" version="0.4.2" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,c47b7953-3b8a-11e5-b8db-7513250f5f90,Hash] -->

@@ -9,10 +9,11 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[28bf0b25-c4e2-11e5-b41d-5d67443850a2,imports]] */
 import cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.*;
-import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.*;
+import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.*;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.stream.Collectors;
 /* End Protected Region   [[28bf0b25-c4e2-11e5-b41d-5d67443850a2,imports]] */
 
 public class FunctionSpace_Backlog {
@@ -37,10 +38,10 @@ public class FunctionSpace_Backlog {
     public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.javamodel.IOutcome GetOutcome();
 
     @IDynamicResourceExtension.MethodId("8d95f53c-34a2-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastPlannedSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastPlannedSprint();
 
     @IDynamicResourceExtension.MethodId("6bdb7163-3fc5-11e7-9016-2b91d722d429")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint FirstPlannedSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint FirstPlannedSprint();
 
     @IDynamicResourceExtension.MethodId("6ebe51af-36ac-11e6-ba0a-8d94de7675ef")
     public java.lang.Double SumDoneEstimates();
@@ -49,10 +50,16 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumOpenEstimates();
 
     @IDynamicResourceExtension.MethodId("39d6b304-36ae-11e6-ba0a-8d94de7675ef")
-    public java.lang.String CalculateCompletness();
+    public java.lang.String CalculateCompleteness();
 
     @IDynamicResourceExtension.MethodId("663b3ce0-346c-11e7-a759-67451fcdb3cc")
     public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IWorkItemBase> GetAllWorkItemsBase();
+
+    @IDynamicResourceExtension.MethodId("d79d38d6-d164-11e8-882b-c9297140cb78")
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints();
+
+    @IDynamicResourceExtension.MethodId("0aebd601-d165-11e8-882b-c9297140cb78")
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> CalculateSprints();
 
   }
   
@@ -65,10 +72,10 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumPlannedEstimate(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
 
     @IDynamicResourceExtension.MethodId("8d95f53c-34a2-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
 
     @IDynamicResourceExtension.MethodId("6bdb7163-3fc5-11e7-9016-2b91d722d429")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
 
     @IDynamicResourceExtension.MethodId("6ebe51af-36ac-11e6-ba0a-8d94de7675ef")
     public java.lang.Double SumDoneEstimates(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
@@ -77,7 +84,10 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumOpenEstimates(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
 
     @IDynamicResourceExtension.MethodId("39d6b304-36ae-11e6-ba0a-8d94de7675ef")
-    public java.lang.String CalculateCompletness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
+    public java.lang.String CalculateCompleteness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
+
+    @IDynamicResourceExtension.MethodId("d79d38d6-d164-11e8-882b-c9297140cb78")
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog);
 
   }
   
@@ -102,7 +112,7 @@ public class FunctionSpace_Backlog {
     }
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
       /* Begin Protected Region [[8d95f53c-34a2-11e6-8839-1f6631cc77ac]] */
       List<IWorkItemBase> workItems = backlog.extension(IBacklogFunctions.class).GetAllWorkItemsBase();
       ISprint latestPlannedSprint = null;
@@ -131,7 +141,7 @@ public class FunctionSpace_Backlog {
     }
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
       /* Begin Protected Region [[6bdb7163-3fc5-11e7-9016-2b91d722d429]] */
         List<IWorkItemBase> workItems = backlog.extension(IBacklogFunctions.class).GetAllWorkItemsBase();
         ISprint latestPlannedSprint = null;
@@ -174,7 +184,7 @@ public class FunctionSpace_Backlog {
     }
 
     @Override
-    public java.lang.String CalculateCompletness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+    public java.lang.String CalculateCompleteness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
       /* Begin Protected Region [[39d6b304-36ae-11e6-ba0a-8d94de7675ef]] */
     	double openEstimate = SumOpenEstimates(backlog);
     	double doneEstimate = SumDoneEstimates(backlog);
@@ -193,6 +203,17 @@ public class FunctionSpace_Backlog {
       /* End Protected Region   [[39d6b304-36ae-11e6-ba0a-8d94de7675ef]] */
     }
 
+    @Override
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+      /* Begin Protected Region [[d79d38d6-d164-11e8-882b-c9297140cb78]] */
+      List<ISprint> sprints = backlog.extension(IBacklogFunctions.class).CalculateSprints();
+      return sprints.stream()
+    		    .sorted((p1, p2) -> p1.selectIdentifier().compareTo(p2.selectIdentifier()))
+    		    .distinct()
+    		    .collect(Collectors.toList());
+      /* End Protected Region   [[d79d38d6-d164-11e8-882b-c9297140cb78]] */
+    }
+
   }
   
   public static class BacklogFunctions {
@@ -207,11 +228,11 @@ public class FunctionSpace_Backlog {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).SumPlannedEstimate(backlog);
     }
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint LastPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).LastPlannedSprint(backlog);
     }
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint FirstPlannedSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).FirstPlannedSprint(backlog);
     }
 
@@ -223,8 +244,12 @@ public class FunctionSpace_Backlog {
       return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).SumOpenEstimates(backlog);
     }
 
-    public static java.lang.String CalculateCompletness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
-      return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).CalculateCompletness(backlog);
+    public static java.lang.String CalculateCompleteness(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+      return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).CalculateCompleteness(backlog);
+    }
+
+    public static List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IBacklog backlog) {
+      return DynamicResourceUtil.invoke(IBacklogFunctionsImpl.class, BacklogFunctionsImpl.INSTANCE, backlog).GetAllSprints(backlog);
     }
 
   }
@@ -256,7 +281,7 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumOpenEstimates();
 
     @IDynamicResourceExtension.MethodId("c877351c-346b-11e7-a759-67451fcdb3cc")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint();
 
     @IDynamicResourceExtension.MethodId("4d13ad79-aace-11e8-b25a-7dd9f85a27ad")
     public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IWorkItem> GetAllWorkItems();
@@ -330,7 +355,7 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumOpenEstimates();
 
     @IDynamicResourceExtension.MethodId("d8f9e4cd-346b-11e7-a759-67451fcdb3cc")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint();
 
   }
   
@@ -352,7 +377,7 @@ public class FunctionSpace_Backlog {
     public java.lang.Double SumOpenEstimates(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup);
 
     @IDynamicResourceExtension.MethodId("d8f9e4cd-346b-11e7-a759-67451fcdb3cc")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup);
 
   }
   
@@ -419,7 +444,7 @@ public class FunctionSpace_Backlog {
     }
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup) {
       return null;
     }
 
@@ -449,7 +474,7 @@ public class FunctionSpace_Backlog {
       return DynamicResourceUtil.invoke(IWorkItemGroupFunctionsImpl.class, WorkItemGroupFunctionsImpl.INSTANCE, workItemGroup).SumOpenEstimates(workItemGroup);
     }
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup workItemGroup) {
       return DynamicResourceUtil.invoke(IWorkItemGroupFunctionsImpl.class, WorkItemGroupFunctionsImpl.INSTANCE, workItemGroup).GetSprint(workItemGroup);
     }
 
@@ -464,7 +489,7 @@ public class FunctionSpace_Backlog {
     public java.lang.String GetReleaseName();
 
     @IDynamicResourceExtension.MethodId("2b24e360-34a3-11e6-8839-1f6631cc77ac")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint();
 
     @IDynamicResourceExtension.MethodId("287482d7-3433-11e7-9486-85e29952984a")
     public java.lang.Double SumEstimate();
@@ -577,4 +602,4 @@ public class FunctionSpace_Backlog {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,nnCifpoA5vpeufxjd1/5wdq/2sE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,28bf0b25-c4e2-11e5-b41d-5d67443850a2,U/Fobzj/rfK6qN3d5ieseuqUrUg=] */

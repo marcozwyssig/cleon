@@ -363,6 +363,9 @@ public class FunctionSpace_ProjectManagement {
     @IDynamicResourceExtension.MethodId("9f8d41ca-ca32-11e8-82ac-e1eb952f770a")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("9f8dde14-ca32-11e8-82ac-e1eb952f770a")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface ISprintFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -476,31 +479,6 @@ public class FunctionSpace_ProjectManagement {
     public static java.lang.String renderMissingSeparator(final cleon.common.resources.spec.calendar.javamodel.IMonth month) {
       return DynamicResourceUtil.invoke(IMonthFunctionsImpl.class, MonthFunctionsImpl.INSTANCE, month).renderMissingSeparator(month);
     }
-
-  }
-
-  public static interface ISprintPlanningFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("9f8dde14-ca32-11e8-82ac-e1eb952f770a")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface ISprintPlanningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SprintPlanningFunctionsImpl implements ISprintPlanningFunctionsImpl {
-
-    public static final ISprintPlanningFunctionsImpl INSTANCE = new SprintPlanningFunctionsImpl();
-
-    private SprintPlanningFunctionsImpl() {}
-
-  }
-  
-  public static class SprintPlanningFunctions {
-
-    private SprintPlanningFunctions() {}
 
   }
 
@@ -856,4 +834,4 @@ public class FunctionSpace_ProjectManagement {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,XJnSbKpZLThMnFjGghU/4X05Y0c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,J/rXXoAva3hD1BzEbPHFWoN60rw=] */

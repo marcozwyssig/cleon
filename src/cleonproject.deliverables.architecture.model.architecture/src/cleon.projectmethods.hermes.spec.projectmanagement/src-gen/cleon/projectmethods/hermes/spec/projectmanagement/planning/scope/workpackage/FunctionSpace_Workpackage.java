@@ -8,9 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f1ec1850-bc86-11e6-b169-a12bde5a1c7c,imports]] */
-import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.*;
-import java.util.ArrayList;
-import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.FunctionSpace_Releases.IReleasesFunctions;
+
 /* End Protected Region   [[f1ec1850-bc86-11e6-b169-a12bde5a1c7c,imports]] */
 
 public class FunctionSpace_Workpackage {
@@ -26,7 +24,7 @@ public class FunctionSpace_Workpackage {
     public java.lang.String GetId();
 
     @IDynamicResourceExtension.MethodId("74637dd8-d66f-11e6-ad1f-c967b4caaf09")
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint> GetSprintsBetweenStartAndEndMilestone();
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetRequiredSprints();
 
     @IDynamicResourceExtension.MethodId("87d08efa-d6ac-11e6-a1b8-05a222dbc1bd")
     public java.lang.String GetSimpleId();
@@ -47,9 +45,6 @@ public class FunctionSpace_Workpackage {
     @IDynamicResourceExtension.MethodId("f1ec1852-bc86-11e6-b169-a12bde5a1c7c")
     public java.lang.String GetId(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage);
 
-    @IDynamicResourceExtension.MethodId("74637dd8-d66f-11e6-ad1f-c967b4caaf09")
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint> GetSprintsBetweenStartAndEndMilestone(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage);
-
     @IDynamicResourceExtension.MethodId("87d08efa-d6ac-11e6-a1b8-05a222dbc1bd")
     public java.lang.String GetSimpleId(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage);
 
@@ -67,38 +62,6 @@ public class FunctionSpace_Workpackage {
     }
 
     @Override
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint> GetSprintsBetweenStartAndEndMilestone(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
-      /* Begin Protected Region [[74637dd8-d66f-11e6-ad1f-c967b4caaf09]] */
-		IRelease startMileStone = Release.selectToMePlannedWorkpackages(workpackage);
-		IRelease endMileStone = Release.selectToMePlannedWorkpackages(workpackage);
-
-		if (startMileStone == null || endMileStone == null) {
-			return new ArrayList<ISprint>();
-		}
-
-		IReleases milestones = Releases.selectToMePhases(Phase.selectToMeReleases(startMileStone));
-		List<ISprint> sprints = new ArrayList<ISprint>();
-		boolean add = false;
-		List<IRelease> milestoneList = milestones.extension(IReleasesFunctions.class).GetMilestoneList();
-		for (IRelease milestone : milestoneList) {
-			if (milestone == startMileStone) {
-				add = true;
-			}
-
-			if (add) {
-				sprints.addAll(milestone.selectSprints());
-			}
-
-			if (milestone == endMileStone) {
-				add = false;
-			}
-		}
-
-		return sprints;
-      /* End Protected Region   [[74637dd8-d66f-11e6-ad1f-c967b4caaf09]] */
-    }
-
-    @Override
     public java.lang.String GetSimpleId(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return String.format("wp%03d", workpackage.selectIdentifier());
     }
@@ -113,10 +76,6 @@ public class FunctionSpace_Workpackage {
       return DynamicResourceUtil.invoke(IWorkpackageFunctionsImpl.class, WorkpackageFunctionsImpl.INSTANCE, workpackage).GetId(workpackage);
     }
 
-    public static List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint> GetSprintsBetweenStartAndEndMilestone(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
-      return DynamicResourceUtil.invoke(IWorkpackageFunctionsImpl.class, WorkpackageFunctionsImpl.INSTANCE, workpackage).GetSprintsBetweenStartAndEndMilestone(workpackage);
-    }
-
     public static java.lang.String GetSimpleId(final cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.javamodel.IWorkpackage workpackage) {
       return DynamicResourceUtil.invoke(IWorkpackageFunctionsImpl.class, WorkpackageFunctionsImpl.INSTANCE, workpackage).GetSimpleId(workpackage);
     }
@@ -125,4 +84,4 @@ public class FunctionSpace_Workpackage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,uQrCOfr6XBwgQC1lcOg4at+C8Qw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1ec1850-bc86-11e6-b169-a12bde5a1c7c,qjBNZzWJ/DB7qWQgRsBppvw2nsk=] */

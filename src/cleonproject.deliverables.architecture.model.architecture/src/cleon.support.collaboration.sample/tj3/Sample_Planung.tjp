@@ -1,0 +1,387 @@
+project Sample "Sample" 2016-01-01 - 2016-10-25 {
+	# Set the default time zone for the project. If not specified, UTC
+	# is used.
+	timezone "Europe/Zurich"
+	# Hide the clock time. Only show the date.
+	timeformat "%Y-%m-%d"
+	# Use US format for numbers
+	numberformat "-" "" "," "." 1
+	# Use US financial format for currency values. Don't show cents.
+	currencyformat "(" ")" "," "." 0
+	# Pick a day during the project that will be reported as 'today' in
+	# the project reports. If not specified, the current day will be
+	# used, but this will likely be outside of the project range, so it
+	# can't be seen in the reports.
+	now 2018-09-14
+	# The currency for all money values is the Euro.
+	currency "CHF"
+}
+
+# Meilensteine und Sprints
+task schedule "Meilensteine"
+{
+	task Konzept "Konzeptphase" {	
+		task MS20 "Release MS20" {
+			task s1 "Sprint 1"
+			{
+	    			start 2016-01-21
+	    			end 2016-02-03	
+			}		
+			task s2 "Sprint 2"
+			{
+	    			start 2016-01-02
+	    			end 2016-01-02	
+			}		
+			task s3 "Sprint 3"
+			{
+	    			start 2016-05-27
+	    			end 2016-06-21	
+			}		
+			task s4 "Sprint 4"
+			{
+	    			start 2016-06-22
+	    			end 2016-07-05	
+			}		
+			task s5 "Sprint 5"
+			{
+	    			start 2016-07-06
+	    			end 2016-07-19	
+			}		
+			task s6 "Sprint 6"
+			{
+	    			start 2016-07-20
+	    			end 2016-08-02	
+			}		
+			task s7 "Sprint 7"
+			{
+	    			start 2016-08-03
+	    			end 2016-08-16	
+			}		
+			task s8 "Sprint 8"
+			{
+	    			start 2016-08-17
+	    			end 2016-08-30	
+			}		
+			task s9 "Sprint 9"
+			{
+	    			start 2016-08-31
+	    			end 2016-09-13	
+			}		
+			task s10 "Sprint 10"
+			{
+	    			start 2016-09-14
+	    			end 2016-09-27	
+			}		
+		}
+		task MS21 "Release MS21" {
+			task s11 "Sprint 11"
+			{
+	    			start 2016-09-28
+	    			end 2016-10-11	
+			}		
+			task s12 "Sprint 12"
+			{
+	    			start 2016-10-12
+	    			end 2016-10-25	
+			}		
+		}
+	}
+}
+
+# Workpackages
+task workpackages "Arbeitspakete"  {
+	task wp001 "AP01 WorkpackageSample" {
+    		start 2016-01-21
+    		
+		task "LE01 Module_A Aktivitäten"
+		{
+			task "G001_Group_A"
+			{	
+				task "A010_Activity_A"
+				{	
+				
+				}	
+				task "A002_Activity_A"
+				{	
+				
+				}	
+				task "G011_Test"
+				{	
+				}	
+			}
+		}
+		task "LE02 Module_B Aktivitäten"
+		{
+			task "G005_Group_B"
+			{	
+				task "A003_Activity_A"
+				{	
+				
+				}	
+				task "A004_Activity_A"
+				{	
+				
+				}	
+			}
+		}
+	}
+	task wp002 "AP02 Workpackage B" {
+    		end 2016-09-27
+    		depends !wp001
+    		
+		task "LE03 Module C Aktivitäten"
+		{
+		}
+	}
+}
+
+# Lieferobjekte
+task deliveries "Lieferobjekte" {
+	task "Simple 1" {
+	}
+}
+
+# Lieferergebnisse
+task modules "Lieferergebnisse" {
+	task me1 "LE01 Module_A" {
+    		start 2016-01-21
+    		end 2016-06-21
+		depends !me2
+		
+	}
+	task me2 "LE02 Module_B" {
+    		start 
+    		end 
+		depends !me1
+		
+	}
+	task me3 "LE03 Module C" {
+    		start 
+    		end 
+		
+	}
+}
+ 
+navigator navbar {
+  hidereport 0
+}
+
+macro TaskTip [
+  tooltip istask() -8<-
+    '''Start: ''' <-query attribute='start'->
+    '''End: ''' <-query attribute='end'->
+    ----
+    '''Resources:'''
+
+    <-query attribute='resources'->
+    ----
+    '''Precursors: '''
+
+    <-query attribute='precursors'->
+    ----
+    '''Followers: '''
+
+    <-query attribute='followers'->
+    ->8-
+]
+
+textreport frame "" {
+  header -8<-
+    == TaskJuggler Project Template ==
+    <[navigator id="navbar"]>
+  ->8-
+  footer "----"
+  textreport index "Overview" {
+    formats html
+    center '<[report id="overview"]>'
+  }
+
+  textreport "Status" {
+    formats html
+    center -8<-
+      <[report id="status.dashboard"]>
+      ----
+      <[report id="status.completed"]>
+      ----
+      <[report id="status.ongoing"]>
+      ----
+      <[report id="status.future"]>
+    ->8-
+  }
+
+  textreport "Meilensteine" {
+    formats html
+    center '<[report id="schedule"]>'
+  }
+
+  textreport wps "Work packages" {
+    textreport wp001 "AP01 WorkpackageSample" {
+      formats html
+      center '<[report id="wp001"]>'
+    }
+    textreport wp002 "AP02 Workpackage B" {
+      formats html
+      center '<[report id="wp002"]>'
+    }
+  }
+
+  textreport "Lieferobjekte" {
+    formats html
+    center '<[report id="deliveries"]>'
+  }
+  
+  textreport "Lieferergebnisse" {
+    formats html
+    center '<[report id="modules"]>'
+  }  
+
+  textreport "ResourceGraph" {
+    formats html
+    title "Resource Graph"
+    center '<[report id="resourceGraph"]>'
+  }
+}
+
+# A traditional Gantt chart with a project overview.
+taskreport overview "" {
+  header -8<-
+    === Project Overview ===
+
+    The project is structured into a72acf42-bbc9-11e6-997f-d73ea5a3671c
+                                   860da5be-d6b3-11e6-a1b8-05a222dbc1bd work package(s).
+
+    === Original Project Plan ===
+  ->8-
+  columns bsi { title 'WBS' },
+          name, start, end, effort, duration,
+           chart { ${TaskTip} }
+  # For this report we like to have the abbreviated weekday in front
+  # of the date. %a is the tag for this.
+  timeformat "%a %Y-%m-%d"
+  loadunit days
+  hideresource 1
+  caption 'All effort values are in man days.'
+
+  footer -8<-
+    === Staffing ===
+    All project phases are properly staffed. See [[ResourceGraph]] for
+    detailed resource allocations.    
+  ->8-
+}
+
+# Macro to set the background color of a cell according to the alert
+# level of the task.
+macro AlertColor [
+  cellcolor plan.alert = 0 "#00D000" # green
+  cellcolor plan.alert = 1 "#D0D000" # yellow
+  cellcolor plan.alert = 2 "#D00000" # red
+]
+
+taskreport status "" {
+  columns bsi { width 50 title 'WBS' }, name { width 150 },
+          start { width 100 }, end { width 100 },
+          effort { width 100 },
+          alert { tooltip plan.journal
+                          != '' "<-query attribute='journal'->" width 150 },
+          status { width 150 }
+
+  taskreport dashboard "" {
+    headline "Project Dashboard (<-query attribute='now'->)"
+    columns name { title "Task" ${AlertColor} width 200},
+            resources { width 200 ${AlertColor}
+                        listtype bullets
+                        listitem "<-query attribute='name'->"
+                        start ${projectstart} end ${projectend} },
+            alerttrend { title "Trend" ${AlertColor} width 50 },
+            journal { width 350 ${AlertColor} }
+    journalmode status_up
+    journalattributes headline, author, date, summary, details
+    hidetask ~hasalert(0)
+    sorttasks alert.down, plan.end.up
+    period %{${now} - 1w} +1w
+  }
+  taskreport completed "" {
+    headline "Already completed tasks"
+    hidetask ~(plan.end <= ${now})
+  }
+  taskreport ongoing "" {
+    headline "Ongoing tasks"
+    hidetask ~((plan.start <= ${now}) & (plan.end > ${now}))
+  }
+  taskreport future "" {
+    headline "Future tasks"
+    hidetask ~(plan.start > ${now})
+  }
+}
+# A list of all tasks with the percentage completed for each task
+taskreport schedule "" {
+  headline "Meilensteine"
+  columns bsi { title 'WBS' }, name, start, end, note { width 150 }, complete,
+          chart { ${TaskTip} }
+  taskroot schedule
+  hideresource 1
+}
+
+# A list of tasks showing the resources assigned to each task.
+taskreport wp001 "" {
+  headline "AP01 WorkpackageSample"
+  columns bsi { title 'WBS' }, name, start, end, effort { title "Work" },
+          duration, chart { ${TaskTip} scale day width 500 }
+  timeformat "%Y-%m-%d"
+  hideresource ~(isleaf() & isleaf_())
+  sortresources name.up
+  taskroot workpackages.wp001
+}
+# A list of tasks showing the resources assigned to each task.
+taskreport wp002 "" {
+  headline "AP02 Workpackage B"
+  columns bsi { title 'WBS' }, name, start, end, effort { title "Work" },
+          duration, chart { ${TaskTip} scale day width 500 }
+  timeformat "%Y-%m-%d"
+  hideresource ~(isleaf() & isleaf_())
+  sortresources name.up
+  taskroot workpackages.wp002
+}
+
+# A list of all tasks with the percentage completed for each task
+taskreport deliveries "" {
+  headline "Lieferobjekte"
+  columns bsi { title 'WBS' }, name, start, end, note { width 150 }, complete,
+          chart { ${TaskTip} }
+  taskroot deliveries
+  hideresource 1
+}
+
+# A list of all tasks with the percentage completed for each task
+taskreport modules "" {
+  headline "Lieferergebnisse"
+  columns bsi { title 'WBS' }, name, start, end, note { width 150 }, complete,
+          chart { ${TaskTip} }
+  taskroot modules
+  hideresource 1
+}
+
+# A graph showing resource allocation. It identifies whether each
+# resource is under- or over-allocated for.
+resourcereport resourceGraph "" {
+  headline "Resource Allocation Graph"
+  columns no, name, effort, rate, weekly { ${TaskTip} }
+  loadunit shortauto
+  # We only like to show leaf tasks for leaf resources.
+  hidetask ~(isleaf() & isleaf_())
+  sorttasks plan.start.up
+}
+
+# Export the project as fully scheduled project.
+export "FullProject" {
+  definitions *
+  taskattributes *
+  hideresource 0
+}
+
+# Export the scheduled project as Microsoft Project XML format.
+export "MS-Project" {
+  formats mspxml
+  loadunit quarters
+}
+// Actifsource ID=[10e25693-d6a7-11e6-a1b8-05a222dbc1bd,c060c97d-bdfe-11e6-a3f0-c7681ee45a3f,Hash]

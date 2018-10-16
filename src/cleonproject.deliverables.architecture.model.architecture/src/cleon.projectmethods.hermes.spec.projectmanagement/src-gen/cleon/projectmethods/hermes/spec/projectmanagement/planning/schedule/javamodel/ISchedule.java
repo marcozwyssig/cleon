@@ -10,7 +10,7 @@ public interface ISchedule extends ch.actifsource.core.javamodel.IResource, cleo
   
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases selectReleases();
   
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings selectSprintPlanning();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints selectSprints();
   
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadlines selectTargetDates();
   
@@ -18,4 +18,4 @@ public interface ISchedule extends ch.actifsource.core.javamodel.IResource, cleo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,GD/W3fx3v8jt8d42coP145kfKZ8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,iLXF2/m54WUtuQ0ZvXu7yZdfiaY=] */

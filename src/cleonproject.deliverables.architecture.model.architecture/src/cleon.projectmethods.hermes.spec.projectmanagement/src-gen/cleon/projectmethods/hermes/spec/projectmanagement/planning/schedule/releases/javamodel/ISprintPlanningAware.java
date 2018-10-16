@@ -8,10 +8,10 @@ public interface ISprintPlanningAware extends ch.actifsource.core.javamodel.IRes
   
   // relations
   
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint selectPlannedStartSprint();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint selectPlannedStartSprint();
   
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint selectPlannedEndSprint();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint selectPlannedEndSprint();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6578c5b7-c110-11e6-8f58-ad3c6ee7602f,ZFhkYz9WGyax3yqyy6I/w7K+Uos=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6578c5b7-c110-11e6-8f58-ad3c6ee7602f,ax1jB7Khc6Q01KukzijzmK22FgE=] */

@@ -9,7 +9,10 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[7833baaa-349b-11e6-8839-1f6631cc77ac,imports]] */
 import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.*;
+import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.*;
+import cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.Schedule;
 import cleon.common.resources.spec.calendar.FunctionSpace.DayFunctionsImpl;
+import cleon.common.resources.spec.calendar.FunctionSpace.IDayFunctions;
 /* End Protected Region   [[7833baaa-349b-11e6-8839-1f6631cc77ac,imports]] */
 
 public class FunctionSpace_Releases {
@@ -19,90 +22,19 @@ public class FunctionSpace_Releases {
   /* End Protected Region   [[7833baaa-349b-11e6-8839-1f6631cc77ac]] */
 
 
-  public static interface ISprintFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("8077838f-349b-11e6-8839-1f6631cc77ac")
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IWorkItem> GetWorkItems();
-
-    @IDynamicResourceExtension.MethodId("da3e9b8e-8a0e-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases GetRelasePlanning();
-
-    @IDynamicResourceExtension.MethodId("4f0e534b-8a0f-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastSprint();
-
-    @IDynamicResourceExtension.MethodId("031358b3-8a13-11e6-8085-d9bdba2de943")
-    public cleon.common.resources.spec.calendar.javamodel.ICalendar GetCalendar();
-
-    @IDynamicResourceExtension.MethodId("8c24f837-8a18-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IRelease GetMilestone();
-
-    @IDynamicResourceExtension.MethodId("f6a0163b-d66b-11e6-ad1f-c967b4caaf09")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases GetMilestones();
-
-    @IDynamicResourceExtension.MethodId("455700f4-d71a-11e6-a422-8b5491da3f30")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IPhase GetPhase();
-
-    @IDynamicResourceExtension.MethodId("0e3853a4-d71b-11e6-a422-8b5491da3f30")
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IRelease> GetMilestoneList();
-
-  }
-  
-  public static interface ISprintFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("4f0e534b-8a0f-11e6-8085-d9bdba2de943")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint sprint);
-
-  }
-  
-  public static class SprintFunctionsImpl implements ISprintFunctionsImpl {
-
-    public static final ISprintFunctionsImpl INSTANCE = new SprintFunctionsImpl();
-
-    private SprintFunctionsImpl() {}
-
-    @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint sprint) {
-      /* Begin Protected Region [[4f0e534b-8a0f-11e6-8085-d9bdba2de943]] */
-		List<IRelease> milestones = sprint.extension(ISprintFunctions.class).GetMilestoneList();
-		
-		int lastSprint = sprint.selectIdentifier() - 1;
-		for (IRelease releasePlanning1 : milestones) {
-			for (ISprint iterSprint : releasePlanning1.selectSprints()) {
-				if (iterSprint.selectIdentifier() == lastSprint) {
-					return iterSprint;
-				}
-			}
-		}
-		
-		return null;
-      /* End Protected Region   [[4f0e534b-8a0f-11e6-8085-d9bdba2de943]] */
-    }
-
-  }
-  
-  public static class SprintFunctions {
-
-    private SprintFunctions() {}
-
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint LastSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint sprint) {
-      return DynamicResourceUtil.invoke(ISprintFunctionsImpl.class, SprintFunctionsImpl.INSTANCE, sprint).LastSprint(sprint);
-    }
-
-  }
-
   public static interface IReleasesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint CurrentSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint();
 
     @IDynamicResourceExtension.MethodId("9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint BeforeCurrentSprint();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint();
 
     @IDynamicResourceExtension.MethodId("59a78067-34a0-11e6-8839-1f6631cc77ac")
-    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint> GetAllSprints();
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetAllSprints();
 
     @IDynamicResourceExtension.MethodId("80ddb44e-36c1-11e6-ba0a-8d94de7675ef")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final java.lang.Integer sprintId);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId);
 
     @IDynamicResourceExtension.MethodId("6986f5c4-d71b-11e6-a422-8b5491da3f30")
     public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IRelease> GetMilestoneList();
@@ -115,13 +47,13 @@ public class FunctionSpace_Releases {
   public static interface IReleasesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
 
     @IDynamicResourceExtension.MethodId("9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
 
     @IDynamicResourceExtension.MethodId("80ddb44e-36c1-11e6-ba0a-8d94de7675ef")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases);
 
   }
   
@@ -132,29 +64,25 @@ public class FunctionSpace_Releases {
     private ReleasesFunctionsImpl() {}
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       /* Begin Protected Region [[9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e]] */
-        java.util.Date now = new java.util.Date();
-        List<IRelease> milestonesList = releases.extension(IReleasesFunctions.class).GetMilestoneList();
-        
-        for( IRelease releasePlanning1 : milestonesList)
-        {
-      	  for( ISprint sprint : releasePlanning1.selectSprints())
-      	  {
-          	  java.util.Date startDateOfSprint = DayFunctionsImpl.INSTANCE.GetDate(sprint.selectStart());
-          	  java.util.Date endDateOfSprint = DayFunctionsImpl.INSTANCE.GetDate(sprint.selectEnd());
-          	  if( startDateOfSprint.before(now) && endDateOfSprint.after(now))
-          	  {
-          		  return sprint;
-          	  }    		  
-      	  }
-        }
-        return null;
+    	java.util.Date now = new java.util.Date();
+   
+    	for( ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
+    	{
+		  	java.util.Date startDateOfSprint = sprint.selectStart().extension(IDayFunctions.class).GetDate();
+		  	java.util.Date endDateOfSprint = sprint.selectEnd().extension(IDayFunctions.class).GetDate();
+		  	if( startDateOfSprint.before(now) && endDateOfSprint.after(now))
+		  	{
+		  		return sprint;
+		  	}    		  
+  		}
+  		return null;
       /* End Protected Region   [[9f89e48d-2f1d-11e6-8bd9-a77b8d2a3a0e]] */
     }
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       /* Begin Protected Region [[9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e]] */
         ISprint currentSprint = CurrentSprint(releases);
         if(currentSprint == null)
@@ -163,26 +91,22 @@ public class FunctionSpace_Releases {
         }
         
         int lastSprint = currentSprint.selectIdentifier() - 1;
-        List<IRelease> milestonesList = releases.extension(IReleasesFunctions.class).GetMilestoneList();
-        for( IRelease releasePlanning1 : milestonesList)
+        for( ISprint sprint : Schedule.selectToMeReleases(releases).selectSprints().selectSprints())
         {
-      	  for( ISprint sprint : releasePlanning1.selectSprints())
-      	  {
-      		  if( sprint.selectIdentifier() == lastSprint)
-      		  {
-          		  return sprint;
-          	  }    		  
-      	  }
-        } 
-        return null;
+        	if( sprint.selectIdentifier() == lastSprint)
+        	{
+        		return sprint;
+        	}    		  
+  	  	}
+
+  	  	return null;
       /* End Protected Region   [[9cc04b4c-2f22-11e6-8bd9-a77b8d2a3a0e]] */
     }
 
     @Override
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       /* Begin Protected Region [[80ddb44e-36c1-11e6-ba0a-8d94de7675ef]] */
-      List<IRelease> milestonesList = releases.extension(IReleasesFunctions.class).GetMilestoneList();
-      return milestonesList.stream().flatMap(x -> x.selectSprints().stream()).filter(x -> x.selectIdentifier() == sprintId).findFirst().orElse(null);
+      return Schedule.selectToMeReleases(releases).selectSprints().selectSprints().stream().filter(x -> x.selectIdentifier() == sprintId).findFirst().orElse(null);
       /* End Protected Region   [[80ddb44e-36c1-11e6-ba0a-8d94de7675ef]] */
     }
 
@@ -192,15 +116,15 @@ public class FunctionSpace_Releases {
 
     private ReleasesFunctions() {}
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint CurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).CurrentSprint(releases);
     }
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint BeforeCurrentSprint(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).BeforeCurrentSprint(releases);
     }
 
-    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
+    public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint GetSprint(final java.lang.Integer sprintId, final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases releases) {
       return DynamicResourceUtil.invoke(IReleasesFunctionsImpl.class, ReleasesFunctionsImpl.INSTANCE, releases).GetSprint(sprintId, releases);
     }
 
@@ -213,6 +137,9 @@ public class FunctionSpace_Releases {
 
     @IDynamicResourceExtension.MethodId("8078e4d7-d66b-11e6-ad1f-c967b4caaf09")
     public cleon.common.resources.spec.calendar.javamodel.IDay EndDate();
+
+    @IDynamicResourceExtension.MethodId("261a4a3f-d13c-11e8-882b-c9297140cb78")
+    public List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint> GetSprints();
 
   }
   
@@ -289,4 +216,4 @@ public class FunctionSpace_Releases {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,14XnBmfY7KRmLfcP/LtDfzWUnuI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7833baaa-349b-11e6-8839-1f6631cc77ac,gW6HqE17Wq6K7iOLEIRMUPqyjzM=] */

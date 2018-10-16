@@ -13,13 +13,13 @@ public abstract class SprintPlanningAware extends DynamicResource implements ISp
   
   // toMeRelations
   
-  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware> selectToMePlannedStartSprint(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint object) {
+  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware> selectToMePlannedStartSprint(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint object) {
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.ReleasesPackage.SprintPlanningAware_plannedStartSprint, object.getResource());
   }
   
-  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware> selectToMePlannedEndSprint(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprint object) {
+  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware> selectToMePlannedEndSprint(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprint object) {
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ISprintPlanningAware.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.ReleasesPackage.SprintPlanningAware_plannedEndSprint, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6578c5b7-c110-11e6-8f58-ad3c6ee7602f,+I5/9Mhl6dMkdqwkzf291ERD1OI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6578c5b7-c110-11e6-8f58-ad3c6ee7602f,Gmz71dFfcAfYKubqBRLQLf+vRg4=] */

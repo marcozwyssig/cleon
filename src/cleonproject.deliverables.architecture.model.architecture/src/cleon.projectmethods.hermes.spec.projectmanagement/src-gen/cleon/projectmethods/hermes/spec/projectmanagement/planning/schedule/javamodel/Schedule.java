@@ -81,12 +81,12 @@ public class Schedule extends DynamicResource implements ISchedule {
   }
     
   @Override
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings selectSprintPlanning() {
-    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprintPlanning);
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints selectSprints() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprints);
   }
 
-  public Schedule setSprintPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings sprintPlanning) {
-    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprintPlanning, sprintPlanning);
+  public Schedule setSprints(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprints, sprints);
     return this;
   }
     
@@ -120,7 +120,7 @@ public class Schedule extends DynamicResource implements ISchedule {
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.ICalendar.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_calendar, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.IReleases.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_releases, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprintPlanning, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprints, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadlines.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_targetDates, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -131,8 +131,8 @@ public class Schedule extends DynamicResource implements ISchedule {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_releases, object.getResource());
   }
   
-  public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule selectToMeSprintPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprintplanning.javamodel.ISprintPlannings object) {
-    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprintPlanning, object.getResource());
+  public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule selectToMeSprints(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprints object) {
+    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.SchedulePackage.Schedule_sprints, object.getResource());
   }
   
   public static cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule selectToMeTargetDates(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadlines object) {
@@ -144,4 +144,4 @@ public class Schedule extends DynamicResource implements ISchedule {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,nY4JjFA7WRVdEvZHC4Y5fdnmu0o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f541a84-a7d8-11e5-82dd-3b995d9c840c,TnivHEuGBAL0iFO/boSpMkhlmOg=] */

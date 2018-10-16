@@ -40,15 +40,6 @@ public class Releases extends DynamicResource implements IReleases {
   }
 
   @Override
-  public java.lang.Integer selectDaysPerSprint() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.ReleasesPackage.Releases_daysPerSprint);
-  }
-    
-  public void setDaysPerSprint(java.lang.Integer daysPerSprint) {
-     _setSingleAttribute(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.ReleasesPackage.Releases_daysPerSprint, daysPerSprint);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -124,7 +115,6 @@ public class Releases extends DynamicResource implements IReleases {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.ReleasesPackage.Releases_daysPerSprint, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -142,4 +132,4 @@ public class Releases extends DynamicResource implements IReleases {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3161251a-a7d9-11e5-82dd-3b995d9c840c,qIcONfP7Wf+xm0mtk0MOyXfXL2Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3161251a-a7d9-11e5-82dd-3b995d9c840c,bTuvWvTp78SFomez1ao50fRtd4w=] */

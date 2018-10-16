@@ -1,8 +1,8 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView;
+package cleon.architecturemethods.itarc42.spec.itarc42._12_productView;
 
 import ch.actifsource.core.Resource;
 
-public class _12_ProductViewPackage {
+public class _12_productViewPackage {
   
   public static final Resource Manufactors = new Resource("2371f6a6-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource Product = new Resource("352e36c6-d0b1-11e8-b005-f7630e4c29c0");
@@ -14,7 +14,7 @@ public class _12_ProductViewPackage {
   
   /* End Protected Region   [[user]] */
   
-  private _12_ProductViewPackage() {}
+  private _12_productViewPackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.itarc42.spec.itarc42";
@@ -25,8 +25,8 @@ public class _12_ProductViewPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView";
+    return "cleon.architecturemethods.itarc42.spec.itarc42._12_productView";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView,B2UVOlixh5TxndmsfePqV7dWYws=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._12_productView,sIAAnCLRScd2/nPDNtXh5dv1xHg=] */

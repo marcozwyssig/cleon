@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.knowledge" label="cleon.common.knowledge" version="0.4.3">
+<feature id="cleon.common.knowledge" label="cleon.common.knowledge" version="0.4.4">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -468,7 +468,7 @@ of their respective owners.
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.common.knowledge.spec.knowledge.builtin" download-size="0" install-size="0" version="0.4.3" unpack="false"/>
-   <plugin id="cleon.common.knowledge.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.3" unpack="false"/>   
+   <plugin id="cleon.common.knowledge.spec.knowledge.builtin" download-size="0" install-size="0" version="0.4.4" unpack="false"/>
+   <plugin id="cleon.common.knowledge.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.4" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,a6b27739-b796-11e6-85e2-39e149963066,Hash] -->

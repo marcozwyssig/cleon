@@ -109,11 +109,11 @@ public class OperatingSystem extends DynamicResource implements IOperatingSystem
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct selectProduct() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product);
+  public cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct selectProduct() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product);
   }
 
-  public OperatingSystem setProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct product) {
+  public OperatingSystem setProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct product) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, product);
     return this;
   }
@@ -141,9 +141,9 @@ public class OperatingSystem extends DynamicResource implements IOperatingSystem
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afd3ab65-d0b6-11e8-b005-f7630e4c29c0,uiZqhKx2pX8LzxpidEG81MfoJ0E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afd3ab65-d0b6-11e8-b005-f7630e4c29c0,P1/d2oBC3RhC+NxjUMr4JeQ7PuE=] */

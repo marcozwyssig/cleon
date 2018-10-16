@@ -159,12 +159,22 @@ public class ItArc42 extends DynamicResource implements IItArc42 {
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.I__W_2_aE_ProductView select__W_2_aE_productview() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.I__W_2_aE_ProductView.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview);
+  public cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.I__W_2_aE_ProductView select__W_2_aE_productview() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.I__W_2_aE_ProductView.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview);
   }
 
-  public ItArc42 set__W_2_aE_productview(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.I__W_2_aE_ProductView __W_2_aE_productview) {
+  public ItArc42 set__W_2_aE_productview(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.I__W_2_aE_ProductView __W_2_aE_productview) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview, __W_2_aE_productview);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage select__W_3_aE_requirements_aE_coverage() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_3_aE_requirements_aE_coverage);
+  }
+
+  public ItArc42 set__W_3_aE_requirements_aE_coverage(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage __W_3_aE_requirements_aE_coverage) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_3_aE_requirements_aE_coverage, __W_3_aE_requirements_aE_coverage);
     return this;
   }
     
@@ -236,7 +246,8 @@ public class ItArc42 extends DynamicResource implements IItArc42 {
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.I__V_9_aE_DesignDecision.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_9_aE_designdecision, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.I__W_0_aE_Quality_aE_Scenarios.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_0_aE_quality_aE_scenarios, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.I__W_1_aE_Technical_aE_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.I__W_2_aE_ProductView.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.I__W_2_aE_ProductView.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_3_aE_requirements_aE_coverage, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
@@ -246,9 +257,13 @@ public class ItArc42 extends DynamicResource implements IItArc42 {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.javamodel.IItArc42 selectToMe__W_2_aE_productview(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.I__W_2_aE_ProductView object) {
+  public static cleon.architecturemethods.itarc42.spec.itarc42.javamodel.IItArc42 selectToMe__W_2_aE_productview(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.I__W_2_aE_ProductView object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.javamodel.IItArc42.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_2_aE_productview, object.getResource());
   }
   
+  public static cleon.architecturemethods.itarc42.spec.itarc42.javamodel.IItArc42 selectToMe__W_3_aE_requirements_aE_coverage(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.javamodel.IItArc42.class, cleon.architecturemethods.itarc42.spec.itarc42.Itarc42Package.ItArc42___W_3_aE_requirements_aE_coverage, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,9cE0K2Z+D2FnPH5rCY8N9TBAd7I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59b25bca-d0b1-11e8-b005-f7630e4c29c0,5hEPk7hRK3YilOEiBAC5qoLpXmc=] */

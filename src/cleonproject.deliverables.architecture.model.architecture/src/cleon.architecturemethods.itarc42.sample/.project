@@ -3,13 +3,20 @@
 	<name>cleon.architecturemethods.itarc42.sample</name>
 	<comment/>
 	<projects>
+		<project>cleon.architecturemethods.itarc42.template.asciidoc</project>
+		<project>cleon.architecturemethods.itarc42.template.docbook</project>
 		<project>cleon.architecturemethods.itarc42.spec.itarc42</project>
+		<project>cleon.architecturemethods.arc42.template.asciidoc</project>
 		<project>cleon.architecturemethods.arc42.spec.arc42</project>
 		<project>cleon.common.glossary.spec.glossary</project>
 		<project>cleon.modelinglanguages.uml.spec.uml2</project>
 		<project>cleon.common.doc.spec.doc</project>
 		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.architecturemethods.arc42.template.docbook</project>
+		<project>cleon.common.doc.template.docbook</project>
+		<project>cleon.common.xml.spec.xml</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -27,4 +34,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,b697353a-cb38-11e8-9fc7-cb7241efa62e,5/k5YmmH+rkuIu349uBYl10PktY=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,b697353a-cb38-11e8-9fc7-cb7241efa62e,1/p3WLZCxxW3iwe21ReZQL51OpU=] -->

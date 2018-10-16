@@ -118,56 +118,6 @@ public class FunctionSpace_arc42 {
 
   }
 
-  public static interface IDecompositionBuildingBlockFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("09aa9b31-4371-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String RenderTitle();
-
-  }
-  
-  public static interface IDecompositionBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DecompositionBuildingBlockFunctionsImpl implements IDecompositionBuildingBlockFunctionsImpl {
-
-    public static final IDecompositionBuildingBlockFunctionsImpl INSTANCE = new DecompositionBuildingBlockFunctionsImpl();
-
-    private DecompositionBuildingBlockFunctionsImpl() {}
-
-  }
-  
-  public static class DecompositionBuildingBlockFunctions {
-
-    private DecompositionBuildingBlockFunctions() {}
-
-  }
-
-  public static interface IDecompositeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("2cda4ce1-4374-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String RenderTitle();
-
-  }
-  
-  public static interface IDecompositeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DecompositeFunctionsImpl implements IDecompositeFunctionsImpl {
-
-    public static final IDecompositeFunctionsImpl INSTANCE = new DecompositeFunctionsImpl();
-
-    private DecompositeFunctionsImpl() {}
-
-  }
-  
-  public static class DecompositeFunctions {
-
-    private DecompositeFunctions() {}
-
-  }
-
   public static interface I__V_7_aE_DeploymentViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a2119f01-d181-11e8-b18f-df1540bb7a5c")
@@ -193,6 +143,31 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface I__V_5_aE_BuildingBlockViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("839b799d-d185-11e8-b18f-df1540bb7a5c")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface I__V_5_aE_BuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class __V_5_aE_BuildingBlockViewFunctionsImpl implements I__V_5_aE_BuildingBlockViewFunctionsImpl {
+
+    public static final I__V_5_aE_BuildingBlockViewFunctionsImpl INSTANCE = new __V_5_aE_BuildingBlockViewFunctionsImpl();
+
+    private __V_5_aE_BuildingBlockViewFunctionsImpl() {}
+
+  }
+  
+  public static class __V_5_aE_BuildingBlockViewFunctions {
+
+    private __V_5_aE_BuildingBlockViewFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,6Ill3RDBuUKK97j3WchpYQLOpvY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,FZBeUo2W0s3KHyOA5NHQ0X6fIJk=] */

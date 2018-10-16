@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ILevel extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter, ch.actifsource.core.javamodel.IDecorator {
+public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1551fb66-2857-11e8-9af4-b7d7a3bbddc1");
   
@@ -14,4 +14,4 @@ public interface ILevel extends cleon.common.doc.spec.doc.chapter.javamodel.ICha
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,CVShHMjCzEGVGkIyCCSBz5QAq44=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,tCtKQdWVJSSo/v8W4J0bgzO7I4M=] */

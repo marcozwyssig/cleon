@@ -109,11 +109,11 @@ public class PlattformComponent extends DynamicResource implements IPlattformCom
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct selectProduct() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product);
+  public cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct selectProduct() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product);
   }
 
-  public PlattformComponent setProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct product) {
+  public PlattformComponent setProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct product) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, product);
     return this;
   }
@@ -141,15 +141,15 @@ public class PlattformComponent extends DynamicResource implements IPlattformCom
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.IPlattformComponent> selectToMeProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_ProductView.javamodel.IProduct object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.IPlattformComponent> selectToMeProduct(cleon.architecturemethods.itarc42.spec.itarc42._12_productView.javamodel.IProduct object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.IPlattformComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.PlattformComponent_product, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c0436bff-d0b2-11e8-b005-f7630e4c29c0,5VBQXr60/NyVer0u2I8XYiKIJ9s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c0436bff-d0b2-11e8-b005-f7630e4c29c0,QfKqdeJZC6xLAipe+smnE2zAh5c=] */

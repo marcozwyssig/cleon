@@ -18922,7 +18922,7 @@
                                   <object statement-guid="9f915fa6-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f915fa7-ca32-11e8-82ac-e1eb952f770a" type="literal">|Name|Beschreibung|State|Verantwortlich(e)|Lieferergbnis|Aufwand [SP]</object>
+                                  <object statement-guid="9f915fa7-ca32-11e8-82ac-e1eb952f770a" type="literal">|Name|Beschreibung|State|Verantwortlich(e)|Lieferergbnis|Aufwand [PT]</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -20155,7 +20155,7 @@
                                   <object statement-guid="9f9160d2-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f9160d3-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Aufwand [SP]*|</object>
+                                  <object statement-guid="9f9160d3-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Aufwand [PT]*|</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -20232,7 +20232,7 @@
                                   <object statement-guid="9f9185f5-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f9185f6-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Druck (Aufwand/Netto Kapazität)*|</object>
+                                  <object statement-guid="9f9185f6-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Leistung (Aufwand/Netto Kapazität)*|</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -24815,7 +24815,7 @@
                                   <object statement-guid="9f91fc18-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f91fc19-ca32-11e8-82ac-e1eb952f770a" type="literal">.Alle offenen Termine</object>
+                                  <object statement-guid="9f91fc19-ca32-11e8-82ac-e1eb952f770a" type="literal">.Alle erledigten Termine</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -28233,7 +28233,7 @@
                                   <object statement-guid="9f92bf1b-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f92bf1c-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Geplanter Aufwand [SP]*|</object>
+                                  <object statement-guid="9f92bf1c-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Geplanter Aufwand [PT]*|</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -28397,7 +28397,7 @@
                                   <object statement-guid="9f92bf42-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f92bf43-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Geplanter Total Aufwand [SP]*|</object>
+                                  <object statement-guid="9f92bf43-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Geplanter Total Aufwand [PT]*|</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -28474,7 +28474,7 @@
                                   <object statement-guid="9f92bf55-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9f92bf56-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Aufwand [SP]*|</object>
+                                  <object statement-guid="9f92bf56-ca32-11e8-82ac-e1eb952f770a" type="literal">|*Aufwand [PT]*|</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -28717,7 +28717,7 @@
                                         <object statement-guid="9f92bf91-ca32-11e8-82ac-e1eb952f770a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                       </predicate>
                                       <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                        <object statement-guid="9f92bf92-ca32-11e8-82ac-e1eb952f770a" type="literal">|Name|Beschreibung|Status|Priorität|Aufwand [SP]|Verw.|Sprint|Bedingungen</object>
+                                        <object statement-guid="9f92bf92-ca32-11e8-82ac-e1eb952f770a" type="literal">|Name|Beschreibung|Status|Priorität|Aufwand [PT]|Verw.|Sprint|Bedingungen</object>
                                       </predicate>
                                     </resource>
                                   </object>

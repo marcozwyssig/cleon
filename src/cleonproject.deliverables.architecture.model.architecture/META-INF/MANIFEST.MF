@@ -17,6 +17,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.applications.actifsource.template.eclipse.builtin;bundle-version="0.4.3",
  cleon.modelinglanguages.uml.template.plantuml.builtin;bundle-version="0.4.3",
  cleon.common.doc.template.asciidoc.builtin;bundle-version="0.4.3",
+ cleon.projectmethods.hermes.template.tj3.builtin;bundle-version="0.4.3",
+ cleon.common.doc.template.docbook.builtin;bundle-version="0.4.3",
  cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.3",
  cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.3",
  cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.3",
@@ -29,6 +31,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.3",
  cleon.applications.actifsource.spec.actifsource.builtin;bundle-version="0.4.3",
  cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.3",
+ cleon.projectmethods.hermes.spec.projectsteering.builtin;bundle-version="0.4.3",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleonproject.deliverables.architecture.model.architecture,cleonproject.deliverables.architecture.model.architecture.javamodel
 

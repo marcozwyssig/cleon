@@ -80,7 +80,7 @@ public class FunctionSpace_Sprints {
     public java.lang.Integer SumNettoCapacity();
 
     @IDynamicResourceExtension.MethodId("3bb4378c-cb95-11e5-b911-69bd21f5af67")
-    public java.lang.Double CalculatePace();
+    public java.lang.Double CalculatePower();
 
     @IDynamicResourceExtension.MethodId("6418a382-cb95-11e5-b911-69bd21f5af67")
     public java.lang.String SumEffort();
@@ -96,7 +96,7 @@ public class FunctionSpace_Sprints {
     public java.lang.Integer SumNettoCapacity(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
 
     @IDynamicResourceExtension.MethodId("3bb4378c-cb95-11e5-b911-69bd21f5af67")
-    public java.lang.Double CalculatePace(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
+    public java.lang.Double CalculatePower(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity);
 
   }
   
@@ -121,7 +121,7 @@ public class FunctionSpace_Sprints {
     }
 
     @Override
-    public java.lang.Double CalculatePace(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+    public java.lang.Double CalculatePower(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
       /* Begin Protected Region [[3bb4378c-cb95-11e5-b911-69bd21f5af67]] */
     	ISprintBacklog backlog = Sprint.selectToMeSprintCapacity(sprintCapacity).selectSprintBacklog();
     	double effort = backlog.extension(ISprintBacklogFunctions.class).SumEffort();
@@ -143,8 +143,8 @@ public class FunctionSpace_Sprints {
       return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).SumNettoCapacity(sprintCapacity);
     }
 
-    public static java.lang.Double CalculatePace(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
-      return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).CalculatePace(sprintCapacity);
+    public static java.lang.Double CalculatePower(final cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ISprintCapacity sprintCapacity) {
+      return DynamicResourceUtil.invoke(ISprintCapacityFunctionsImpl.class, SprintCapacityFunctionsImpl.INSTANCE, sprintCapacity).CalculatePower(sprintCapacity);
     }
 
   }
@@ -568,4 +568,4 @@ public class FunctionSpace_Sprints {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,HbXZZ0XANBYIzan0C0Ukhy543xw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5bd4d1da-c4ca-11e5-8558-4b8affb7767c,Hmm5Uril32LpGpGR+Gr9nfUcMfA=] */

@@ -59,22 +59,27 @@
 					<db:tr>
 						<db:td>AF006_Requirements_1 (FEA) (Must have)</db:td>
 						<db:td></db:td>
-						<db:td>6.00%</db:td>
+						<db:td>20.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have)</db:td>
 						<db:td></db:td>
-						<db:td>2.00%</db:td>
+						<db:td>30.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF007_sss (FEA) (Must have)</db:td>
 						<db:td></db:td>
-						<db:td>6.00%</db:td>
+						<db:td>20.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF100_sss (FEA) (Should have)</db:td>
+						<db:td></db:td>
+						<db:td>10.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF102_sss (FEA) (Must have)</db:td>
 						<db:td></db:td>
-						<db:td>6.00%</db:td>
+						<db:td>20.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria</db:td>
@@ -155,12 +160,12 @@
 			<db:tbody>
 				<db:tr>
 					<db:td>Solution 1</db:td>
-					<db:td>2.06</db:td>
-					<db:td>41.20%</db:td>
+					<db:td>4.50</db:td>
+					<db:td>50.00%</db:td>
 				</db:tr>			
 				<db:tr>
 					<db:td>Solution 2</db:td>
-					<db:td>2.00</db:td>
+					<db:td>3.60</db:td>
 					<db:td>40.00%</db:td>
 				</db:tr>			
 			</db:tbody>
@@ -199,28 +204,34 @@
 						<db:td>0.20 von 0.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (20.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (2.00%)</db:td>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (30.00%)</db:td>
 						<db:td>5</db:td>
 						<db:td></db:td>
-						<db:td>0.10 von 0.10</db:td>
+						<db:td>1.50 von 1.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF007_sss (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF007_sss (FEA) (Must have) (20.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF102_sss (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF100_sss (FEA) (Should have) (10.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF102_sss (FEA) (Must have) (20.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria (10.00%)</db:td>
@@ -266,28 +277,34 @@
 						<db:td>0.20 von 0.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (20.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (2.00%)</db:td>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (30.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.04 von 0.10</db:td>
+						<db:td>0.60 von 1.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF007_sss (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF007_sss (FEA) (Must have) (20.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF102_sss (FEA) (Must have) (6.00%)</db:td>
+						<db:td>AF100_sss (FEA) (Should have) (10.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.12 von 0.30</db:td>
+						<db:td>0.20 von 0.50</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF102_sss (FEA) (Must have) (20.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria (10.00%)</db:td>

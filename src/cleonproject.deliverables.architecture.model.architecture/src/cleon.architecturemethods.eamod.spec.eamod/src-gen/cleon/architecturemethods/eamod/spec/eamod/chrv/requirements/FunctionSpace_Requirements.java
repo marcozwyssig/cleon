@@ -47,9 +47,6 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("30e9c967-2cb1-11e6-8dd6-23b9a87b3ebd")
     public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea GetSubjectArea();
 
-    @IDynamicResourceExtension.MethodId("45609ac6-10a4-11e8-ab55-75346738d444")
-    public java.lang.String GetPriorityName();
-
     @IDynamicResourceExtension.MethodId("2ae79964-c82b-11e8-add3-695b26858127")
     public List<cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> GetAllStakeholders();
 
@@ -60,7 +57,7 @@ public class FunctionSpace_Requirements {
     public java.lang.String GetAbstractionLevel();
 
     @IDynamicResourceExtension.MethodId("e2eee980-d243-11e8-98f7-fd7700abae04")
-    public java.lang.String GetPriority();
+    public cleon.common.resources.spec.resources.priority.javamodel.IPriority GetPriority();
 
   }
   
@@ -348,6 +345,9 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("d43d29ee-d243-11e8-98f7-fd7700abae04")
     public cleon.common.resources.spec.resources.priority.javamodel.IPriority GetPriority();
 
+    @IDynamicResourceExtension.MethodId("66df8035-e0f6-11e8-8499-a3b0fb3cad90")
+    public java.lang.String GetName();
+
   }
   
   public static interface IAbstractRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -386,7 +386,7 @@ public class FunctionSpace_Requirements {
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("efaf87c7-d243-11e8-98f7-fd7700abae04")
-    public java.lang.String GetPriority();
+    public cleon.common.resources.spec.resources.priority.javamodel.IPriority GetPriority();
 
   }
   
@@ -410,4 +410,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,pauE9Tt3rYKYutiXj2DXhwS0wfE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,Kk4UMesMsJyFL7Nn3AFa6mB+6Z0=] */

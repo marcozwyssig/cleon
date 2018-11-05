@@ -35,6 +35,9 @@ public class PriorityFunctionSpace {
     @IDynamicResourceExtension.MethodId("ef006d66-8fe7-11e8-a5b5-191902fe097a")
     public java.lang.Boolean IsImportant();
 
+    @IDynamicResourceExtension.MethodId("45609ac6-10a4-11e8-ab55-75346738d444")
+    public java.lang.String GetName();
+
   }
   
   public static interface IPriorityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -117,4 +120,4 @@ public class PriorityFunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,SX0OCq9FaBWaOFQEh/AeiBje8wU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,6ij1WxA2xepc4pK2KY7ICnFk7xQ=] */

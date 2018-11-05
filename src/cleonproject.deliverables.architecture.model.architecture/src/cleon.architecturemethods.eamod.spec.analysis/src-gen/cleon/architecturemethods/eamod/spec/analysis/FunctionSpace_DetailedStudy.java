@@ -30,6 +30,12 @@ public class FunctionSpace_DetailedStudy {
     @IDynamicResourceExtension.MethodId("020efbf1-a9d3-11e8-8fa3-5142962ae020")
     public java.lang.String GetDescription();
 
+    @IDynamicResourceExtension.MethodId("a9c349b3-e0f4-11e8-8499-a3b0fb3cad90")
+    public List<cleon.common.resources.spec.resources.priority.javamodel.IPriority> GetPriorities();
+
+    @IDynamicResourceExtension.MethodId("dcf18da9-e0f4-11e8-8499-a3b0fb3cad90")
+    public List<cleon.common.resources.spec.resources.priority.javamodel.IPriority> GetPrioritiesDistinct();
+
   }
   
   public static interface IRequirementsAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -112,4 +118,4 @@ public class FunctionSpace_DetailedStudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,NFPLN6QWAFZAH2HaGNJzbZOqd7o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c51aafe9-a6fc-11e8-9c81-8bd68c62e435,S8+fA+BVF0q5LJ1arxRGXheGQY8=] */

@@ -11,6 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting;
 import cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate;
 import cleon.architecturemethods.eamod.spec.analysis.javamodel.RequirementsAggregate;
+import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.FunctionSpace_Requirements.IAbstractRequirementFunctions;
 import cleon.common.resources.spec.resources.priority.javamodel.IPriority;
 /* End Protected Region   [[c51aafe9-a6fc-11e8-9c81-8bd68c62e435,imports]] */
 
@@ -90,9 +91,9 @@ public class FunctionSpace_DetailedStudy {
     public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria requirementCriteria) {
       /* Begin Protected Region [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
        	IRequirementsAggregate aggregate = RequirementsAggregate.selectToMeRequirementCriterias(requirementCriteria);
-    	IPriority selectPriority = requirementCriteria.selectRequirement().selectPriority();
+    	IPriority selectPriority = requirementCriteria.selectRequirement().extension(IAbstractRequirementFunctions.class).GetPriority();
 		IPriorityWeighting priorityWeighting = aggregate.selectPriorityWeighting().values().stream().filter(x -> x.selectPriority().selectNumber().equals(selectPriority.selectNumber())).findFirst().get();
-		Long requirements = aggregate.selectRequirementCriterias().values().stream().filter( x -> x.selectRequirement().selectPriority().equals(selectPriority)).count();
+		Long requirements = aggregate.selectRequirementCriterias().values().stream().filter( x -> x.selectRequirement().extension(IAbstractRequirementFunctions.class).GetPriority().equals(selectPriority)).count();
 		return priorityWeighting.selectWeighting() / requirements.doubleValue();
       /* End Protected Region   [[eb7f44d0-a9d3-11e8-8fa3-5142962ae020]] */
     }

@@ -29,9 +29,6 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("87f5fade-decb-11e5-bcfc-4385ab45a525")
     public java.lang.String GetTemplate();
 
-    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
-    public java.lang.String GetId();
-
     @IDynamicResourceExtension.MethodId("4e98d118-e609-11e5-950a-cb0c4b71716c")
     public java.lang.String GetName();
 
@@ -59,13 +56,16 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("416d48c7-c82b-11e8-add3-695b26858127")
     public List<cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder> GetStakeholders();
 
+    @IDynamicResourceExtension.MethodId("3d85c9e2-d243-11e8-98f7-fd7700abae04")
+    public java.lang.String GetAbstractionLevel();
+
+    @IDynamicResourceExtension.MethodId("e2eee980-d243-11e8-98f7-fd7700abae04")
+    public java.lang.String GetPriority();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement);
-
   }
   
   public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
@@ -74,20 +74,11 @@ public class FunctionSpace_Requirements {
 
     private RequirementFunctionsImpl() {}
 
-    @Override
-    public java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
-      return String.format("AF%03d", requirement.selectIdentifier());
-    }
-
   }
   
   public static class RequirementFunctions {
 
     private RequirementFunctions() {}
-
-    public static java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement requirement) {
-      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirement).GetId(requirement);
-    }
 
   }
 
@@ -349,6 +340,74 @@ public class FunctionSpace_Requirements {
 
   }
 
+  public static interface IAbstractRequirementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
+    public java.lang.String GetId();
+
+    @IDynamicResourceExtension.MethodId("d43d29ee-d243-11e8-98f7-fd7700abae04")
+    public cleon.common.resources.spec.resources.priority.javamodel.IPriority GetPriority();
+
+  }
+  
+  public static interface IAbstractRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("b82ce62e-c4f5-11e5-b41d-5d67443850a2")
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement abstractRequirement);
+
+  }
+  
+  public static class AbstractRequirementFunctionsImpl implements IAbstractRequirementFunctionsImpl {
+
+    public static final IAbstractRequirementFunctionsImpl INSTANCE = new AbstractRequirementFunctionsImpl();
+
+    private AbstractRequirementFunctionsImpl() {}
+
+    @Override
+    public java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement abstractRequirement) {
+      return String.format("AF%03d", abstractRequirement.selectIdentifier());
+    }
+
+  }
+  
+  public static class AbstractRequirementFunctions {
+
+    private AbstractRequirementFunctions() {}
+
+    public static java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement abstractRequirement) {
+      return DynamicResourceUtil.invoke(IAbstractRequirementFunctionsImpl.class, AbstractRequirementFunctionsImpl.INSTANCE, abstractRequirement).GetId(abstractRequirement);
+    }
+
+  }
+
+  public static interface IRequirementAspectFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5aa95ad5-d243-11e8-98f7-fd7700abae04")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("efaf87c7-d243-11e8-98f7-fd7700abae04")
+    public java.lang.String GetPriority();
+
+  }
+  
+  public static interface IRequirementAspectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementAspectFunctionsImpl implements IRequirementAspectFunctionsImpl {
+
+    public static final IRequirementAspectFunctionsImpl INSTANCE = new RequirementAspectFunctionsImpl();
+
+    private RequirementAspectFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementAspectFunctions {
+
+    private RequirementAspectFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,xMk+DdVmRAESUo0dGbEaC+zwYN8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,pauE9Tt3rYKYutiXj2DXhwS0wfE=] */

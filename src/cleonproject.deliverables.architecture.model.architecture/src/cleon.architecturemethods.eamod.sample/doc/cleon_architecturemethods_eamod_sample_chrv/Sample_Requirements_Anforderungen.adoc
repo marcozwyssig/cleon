@@ -1,0 +1,1410 @@
+= Sample Requirements Anforderungen
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+
+== Einleitung
+
+
+My TEst
+
+
+=== Copy of A New Chapter
+
+
+
+
+
+
+
+== Motivation
+
+
+
+
+=== Quellen
+
+
+
+In der nachfolgenden Tabelle werden alle Quellen, welche für die Erhebung der Anforderungen verwendet wurden, aufgelistet. Folgende Arten von 
+Quellen sind vorhanden:
+
+- Dokument
+- Kapitel
+- Organisation
+- Person
+
+[cols="5,5,5a,15,15a" options="header"]
+|===
+| Art | ID | Aggregat | Vollständiger Name | Verwendet bei 
+| Dokument 
+| 
+anchor:Q009[]
+Q009 
+| 
+| Q009_Dokument_aaaa
+| 
+. xref:IS002[IS002_ddd]
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+. xref:P002[P002_Principle_B]
+. xref:P001[P001_Principe_C]
+. xref:P003[P003_sss]
+. xref:IS004[IS004_dsafasdfsf]
+
+| Kapitel 
+| 
+anchor:Q002[]
+Q002 
+| 
+xref:Q009[Q009]
+| Q002_Dokument_aaaa_Kapitel_sadfasdfs
+| 
+. xref:AF002[AF002_Constraint (CAP)]
+. xref:DR001[DR001_Driver_1]
+. xref:DR002[DR002_Driver_2]
+. xref:AF104[AF104_Aggregated (FEA)]
+
+| Referenz 
+| 
+anchor:Q010[]
+Q010 
+| 
+xref:Q002[Q002]
+| Q010_Dokument_aaaa_Kapitel_sadfasdfs_Referenz_xxx
+| 
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+| Organisation 
+| 
+anchor:Q007[]
+Q007 
+| 
+| Q007_Organisation_ar
+| 
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+| Person 
+| 
+anchor:Q005[]
+Q005 
+| 
+xref:Q007[Q007]
+| Q005_Person_Peter Müller
+| 
+. xref:IS001[IS001_1]
+. xref:Z002[Z002_Goal_1]
+. xref:AF001[AF001_ddd (CAP)]
+. xref:Z003[Z003_Goal 1.2]
+. xref:OS001[OS001_dsfsdf]
+. xref:Z006[Z006_Goal 1.3]
+
+| Dokument 
+| 
+anchor:Q008[]
+Q008 
+| 
+| Q008_Dokument_cccc
+| 
+. xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
+. xref:P004[P004_A]
+. xref:SP002[SP002_adfasdf]
+
+| Kapitel 
+| 
+anchor:Q001[]
+Q001 
+| 
+xref:Q008[Q008]
+| Q001_Dokument_cccc_Kapitel_ddd
+| 
+. xref:IS003[IS003_sssss]
+. xref:AF007[AF007_sss (FEA)]
+. xref:Z004[Z004_Goal 2]
+. xref:Z005[Z005_Goal 2.1]
+. xref:AF100[AF100_sss (FEA)]
+. xref:AF101[AF101_sss (FEA)]
+. xref:AF102[AF102_sss (FEA)]
+. xref:AF103[AF103_sss (FEA)]
+
+| Workshop 
+| 
+anchor:Q011[]
+Q011 
+| 
+| Q011_Workshop_dfsfsfsf
+| 
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+| Dokument 
+| 
+anchor:Q012[]
+Q012 
+| 
+| Q012_Dokument_MyDocument
+| 
+
+| Kapitel 
+| 
+anchor:Q013[]
+Q013 
+| 
+xref:Q012[Q012]
+| Q013_Dokument_MyDocument_Kapitel_MyChapter
+| 
+. xref:AF001[AF001_ddd (CAP)]
+
+|===
+
+
+=== Treiber
+
+
+
+Mit den Treiber werden die Motive für die Ziele explizit erläutert, um die Nachvollziehbarkeit der Ziele und den Anforderungen zu gewährleisten.
+
+[cols="2,5,2" options="header, footer"]
+|===
+|Nr | Name | Art
+|xref:DR001[DR001]
+|Driver_1 
+|Risk
+|xref:DR002[DR002]
+|Driver_2 
+|Chance
+|Total 2+| 2
+|===
+
+==== DR001_Driver_1
+
+
+[cols="3,5,20a,5" options="header"]
+|===
+| anchor:DR001[] *DR001* 2+| *Driver_1* | Risk
+
+|
+| _Beschreibung_
+2+|
+my Driver my Driver
+
+|
+| _Quellen_
+2+|
+. xref:Q002[Q002_Dokument_aaaa_Kapitel_sadfasdfs]
+
+|
+| _Ziele_
+2+|
+. xref:Z002[Z002_Goal_1]
+
+. xref:Z003[Z003_Goal 1.2]
+
+. xref:Z004[Z004_Goal 2]
+
+. xref:Z005[Z005_Goal 2.1]
+
+. xref:Z006[Z006_Goal 1.3]
+
+|===
+
+
+
+==== DR002_Driver_2
+
+
+[cols="3,5,20a,5" options="header"]
+|===
+| anchor:DR002[] *DR002* 2+| *Driver_2* | Chance
+
+|
+| _Quellen_
+2+|
+. xref:Q002[Q002_Dokument_aaaa_Kapitel_sadfasdfs]
+
+|===
+
+
+
+
+=== Ziele
+
+
+
+In der nachfolgenden Tabelle werden alle Ziele, welche mit dem System erfüllt werden sollen, aufgelistet.
+
+[cols="2,5" options="header, footer"]
+|===
+|Nr | Name
+|xref:Z002[Z002]
+|Goal_1 
+|xref:Z003[Z003]
+|Goal 1.2 
+|xref:Z006[Z006]
+|Goal 1.3 
+|xref:Z004[Z004]
+|Goal 2 
+|xref:Z005[Z005]
+|Goal 2.1 
+|===
+
+==== Z002_Goal_1
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:Z002[] *Z002* 2+| *Goal_1*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Autoren_
+|
+. Pascal Meier
+
+|
+| _Anforderungen_
+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+. xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
+
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+
+. xref:AF007[AF007_sss (FEA)]
+
+. xref:AF001[AF001_ddd (CAP)]
+
+. xref:AF002[AF002_Constraint (CAP)]
+
+. xref:AF100[AF100_sss (FEA)]
+
+. xref:AF101[AF101_sss (FEA)]
+
+. xref:AF102[AF102_sss (FEA)]
+
+. xref:AF103[AF103_sss (FEA)]
+
+. xref:AF104[AF104_Aggregated (FEA)]
+
+|
+| _Ableitungen_
+|
+. xref:Z003[Z003_Goal 1.2]
+
+. xref:Z006[Z006_Goal 1.3]
+
+|
+| _Prinzipien_
+|
+. xref:P004[P004_A]
+
+. xref:P002[P002_Principle_B]
+
+. xref:P001[P001_Principe_C]
+
+. xref:P003[P003_sss]
+
+|
+| _Treiber_
+|
+. xref:DR001[DR001_Driver_1]
+
+|
+| _Quellen_
+|
+. xref:Q005[Q005_Person_Peter Müller]
+
+|===
+===== Z003_Goal 1.2
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:Z003[] *Z003* 2+| *Goal 1.2*
+|
+| _Anforderungen_
+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+
+|
+| _Abstammung_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Treiber_
+|
+. xref:DR001[DR001_Driver_1]
+
+|
+| _Quellen_
+|
+. xref:Q005[Q005_Person_Peter Müller]
+
+|===
+
+
+===== Z006_Goal 1.3
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:Z006[] *Z006* 2+| *Goal 1.3*
+|
+| _Abstammung_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Treiber_
+|
+. xref:DR001[DR001_Driver_1]
+
+|
+| _Quellen_
+|
+. xref:Q005[Q005_Person_Peter Müller]
+
+|===
+
+
+
+==== Z004_Goal 2
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:Z004[] *Z004* 2+| *Goal 2*
+|
+| _Ableitungen_
+|
+. xref:Z005[Z005_Goal 2.1]
+
+|
+| _Treiber_
+|
+. xref:DR001[DR001_Driver_1]
+
+|
+| _Quellen_
+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|===
+===== Z005_Goal 2.1
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:Z005[] *Z005* 2+| *Goal 2.1*
+|
+| _Abstammung_
+|
+. xref:Z004[Z004_Goal 2]
+
+|
+| _Treiber_
+|
+. xref:DR001[DR001_Driver_1]
+
+|
+| _Quellen_
+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|===
+
+
+
+
+=== Stakeholders
+
+
+
+[cols="2,5,5a" options="header"]
+|===
+| ID | Name | Beschreibung 
+| 
+anchor:S01[]
+S01
+| Stakeholder_A
+|
+| 
+anchor:S02[]
+S02
+| Stakeholder_B
+|
+| 
+anchor:S03[]
+S03
+| Stakeholder_C
+|
+|===
+
+
+
+=== Prinzipien
+
+
+
+Die nachfolgende Tabelle dient der Beschreibung von Architekturprinzipien, die als
+generischer Ausgangspunkt für nichtfunktionale Anforderungen und Randbedingungen
+dienen.
+
+[cols="2,5" options="header, footer"]
+|===
+|Nr | Name
+|xref:P004[P004]
+|A
+|xref:P003[P003]
+|sss
+|xref:P002[P002]
+|Principle_B
+|xref:P001[P001]
+|Principe_C
+|Total | 4
+|===
+
+==== P004_A
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:P004[] *P004* 2+| *A*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Ableitungen_
+|
+. xref:P003[P003_sss]
+
+|
+| _Ziele_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Quellen_
+|
+. xref:Q008[Q008_Dokument_cccc]
+
+|===
+===== P003_sss
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:P003[] *P003* 2+| *sss*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Abstammung_
+|
+. xref:P004[P004_A]
+
+|
+| _Ziele_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Quellen_
+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|===
+
+
+
+==== P002_Principle_B
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:P002[] *P002* 2+| *Principle_B*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Ableitungen_
+|
+. xref:P001[P001_Principe_C]
+
+|
+| _Ziele_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Quellen_
+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|===
+===== P001_Principe_C
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:P001[] *P001* 2+| *Principe_C*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Abstammung_
+|
+. xref:P002[P002_Principle_B]
+
+|
+| _Ziele_
+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Quellen_
+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|===
+
+
+
+
+
+== Detaillierte Anforderungen des Projektbetrachtungsraum SU03_My Project
+
+
+
+[cols="2,5,2" options="header, footer"]
+|===
+|Nr | Name | Status
+| xref:AF006_Requirements_1 (FEA)[AF006] | Requirements_1 | Identified
+| xref:AF004_Requirements_2_1 (CAP)[AF004] | Requirements_2_1 | Identified
+| xref:AF007_sss (FEA)[AF007] | sss | Rejected (QS)
+| xref:AF100_sss (FEA)[AF100] | sss | Rejected (QS)
+| xref:AF101_sss (FEA)[AF101] | sss | Rejected (QS)
+| xref:AF102_sss (FEA)[AF102] | sss | Rejected (QS)
+| xref:AF103_sss (FEA)[AF103] | sss | Rejected (QS)
+| xref:AF104_Aggregated (FEA)[AF104] | Aggregated | Identified
+| xref:AF003_Requirements_2_(ssss) (CAP)[AF003] | Requirements_2_(ssss) | Identified
+| xref:AF006_Requirements_1 (FEA)[AF006] | Requirements_1 | Identified
+| xref:AF007_sss (FEA)[AF007] | sss | Rejected (QS)
+| xref:AF001_ddd (CAP)[AF001] | ddd | Identified
+| xref:AF001_ddd (CAP)[AF001] | ddd | Identified
+| xref:AF003_Requirements_2_(ssss) (CAP)[AF003] | Requirements_2_(ssss) | Identified
+| xref:AF002_Constraint (CAP)[AF002] | Constraint | Approved
+|*Total* | 15 |
+|===
+=== SU01_Funktionalität
+
+
+
+Funktionale Anforderungen an das zu
+realisierende / zu beschaffenden
+System / Produkt. Dieser
+Betrachtungsraum ist in der Regel sehr
+umfangreich und adressiert
+Anforderungen an die erwartete
+Funktionalität.
+
+==== AF006_Requirements_1 (FEA)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF006[] *AF006* 2+| *Requirements_1* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Identified
+|
+| _Schätzung_
+3+|
+13
+|
+| _Autoren_
+3+|
+. Pascal Meier
+
+|
+| _Quellen_
+3+|
+. xref:Q007[Q007_Organisation_ar]
+
+. xref:Q011[Q011_Workshop_dfsfsfsf]
+
+. xref:Q010[Q010_Dokument_aaaa_Kapitel_sadfasdfs_Referenz_xxx]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+. xref:Z003[Z003_Goal 1.2]
+
+|
+| _Ableitungen_
+3+|
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+
+. xref:AF007[AF007_sss (FEA)]
+
+|
+| _Aggregiert_
+3+|
+. xref:AF104[AF104_Aggregated (FEA)]
+
+|
+| _Konflikte_
+3+|
+. xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+. xref:S02[S02_Stakeholder_B]
+|
+| _Schablone_
+3+|
+Das System muss fähig sein Rezepte drucken
+|
+| _Fragen_
+3+|
+. xref:IS004[IS004_dsafasdfsf]
+
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+|===
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF104[] *AF104* 2+| *Aggregated* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Identified
+|
+| _Quellen_
+3+|
+. xref:Q002[Q002_Dokument_aaaa_Kapitel_sadfasdfs]
+
+|
+| _Priorität_
+3+|
+Should have
+|
+| _Dringend_
+3+|
+Nein
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Aggregat_
+3+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF104[AF104_Aggregated (FEA)]
+|===
+
+===== AF004_Requirements_2_1 (CAP)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF004[] *AF004* 2+| *Requirements_2_1* | CAP | SecurityRequirement
+
+|
+| _Status_
+3+| Identified
+|
+| _Quellen_
+3+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|
+| _Priorität_
+3+|
+Nice to have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Nein
+|
+| _Komplexität_
+3+|
+Low
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+. xref:Z003[Z003_Goal 1.2]
+
+|
+| _Abstammung_
+3+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+
+|
+| _Qualitätsmerkmale (ISO 25000)_
+3+|
+. Functionality.Suitability
+. Security.Non-repudiation
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+|===
+
+
+
+
+===== AF007_sss (FEA)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF007[] *AF007* 2+| *sss* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Rejected (QS)
+|
+| _Quellen_
+3+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Abstammung_
+3+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+|
+| _Aggregiert_
+3+|
+. xref:AF100[AF100_sss (FEA)]
+
+. xref:AF101[AF101_sss (FEA)]
+
+. xref:AF102[AF102_sss (FEA)]
+
+. xref:AF103[AF103_sss (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das System muss fähig sein Rezepte auszudrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF007[AF007_sss (FEA)]
+|===
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF100[] *AF100* 2+| *sss* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Rejected (QS)
+|
+| _Quellen_
+3+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|
+| _Priorität_
+3+|
+Should have
+|
+| _Dringend_
+3+|
+Nein
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Komplexität_
+3+|
+High
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Aggregat_
+3+|
+. xref:AF007[AF007_sss (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das System sollte fähig sein Rezepte auszudrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF100[AF100_sss (FEA)]
+|===
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF101[] *AF101* 2+| *sss* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Rejected (QS)
+|
+| _Quellen_
+3+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Aggregat_
+3+|
+. xref:AF007[AF007_sss (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das System muss fähig sein Rezepte auszudrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF101[AF101_sss (FEA)]
+|===
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF102[] *AF102* 2+| *sss* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Rejected (QS)
+|
+| _Quellen_
+3+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Aggregat_
+3+|
+. xref:AF007[AF007_sss (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das System muss fähig sein Rezepte auszudrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF102[AF102_sss (FEA)]
+|===
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF103[] *AF103* 2+| *sss* | FEA | FunctionalRequirement
+
+|
+| _Status_
+3+| Rejected (QS)
+|
+| _Quellen_
+3+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Aggregat_
+3+|
+. xref:AF007[AF007_sss (FEA)]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das System muss fähig sein Rezepte ausdrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF103[AF103_sss (FEA)]
+|===
+
+
+
+
+==== AF003_Requirements_2_(ssss) (CAP)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF003[] *AF003* 2+| *Requirements_2_(ssss)* | CAP | SecurityRequirement
+
+|
+| _Status_
+3+| Identified
+|
+| _Quellen_
+3+|
+. xref:Q008[Q008_Dokument_cccc]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Das Gewicht des Smartphone muss kleiner gleich 100g sein
+|
+| _Qualitätsmerkmale (ISO 25000)_
+3+|
+. Functionality.Compliance
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
+|===
+
+
+
+
+
+=== SU02_Normen, Standards und Praktiken
+
+
+
+Konkrete Anforderungen bezüglich
+anzuwendender Normen und
+Standards. Dies können beispielsweise
+Bundesstandards des ISB, Normen
+nach ISO oder branchenübliche
+Praktiken sein.
+Hinweis: Die Normen, Standards und
+Praktiken selbst repräsentieren Quellen,
+aus welchen Anforderungen an das
+System / Produkt abgeleitet werden
+können.
+
+==== AF001_ddd (CAP)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF001[] *AF001* 2+| *ddd* | CAP | Requirement
+
+|
+| _Status_
+3+| Identified
+|
+| _Quellen_
+3+|
+. xref:Q005[Q005_Person_Peter Müller]
+
+. xref:Q013[Q013_Dokument_MyDocument_Kapitel_MyChapter]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+. xref:S03[S03_Stakeholder_C]
+|
+| _Schablone_
+3+|
+Die Aussenhülle des Smartphones muss so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20°C bis 60°C betrieben werden kann    
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF001[AF001_ddd (CAP)]
+|===
+
+
+
+
+==== AF002_Constraint (CAP)
+
+
+[cols="5,5,20a,5,10" options="header"]
+|===
+| anchor:AF002[] *AF002* 2+| *Constraint* | CAP | ConstraintRequirement
+
+|
+| _Status_
+3+| Approved
+|
+| _Quellen_
+3+|
+. xref:Q002[Q002_Dokument_aaaa_Kapitel_sadfasdfs]
+
+|
+| _Priorität_
+3+|
+Must have
+|
+| _Dringend_
+3+|
+Ja
+|
+| _Wichtig_
+3+|
+Ja
+|
+| _Ziele_
+3+|
+. xref:Z002[Z002_Goal_1]
+
+|
+| _Stakeholder_
+3+|
+. xref:S01[S01_Stakeholder_A]
+|
+| _Schablone_
+3+|
+Der Auftragnehmer muss ein Betriebshandbuch für den MP3-Player auszudrucken
+|
+| _Betroffene Anforderungen_
+3+|
+. xref:AF002[AF002_Constraint (CAP)]
+|===
+
+
+
+
+
+
+== Abgrenzung
+
+
+
+
+=== Ausserhalb des Geltungsbereich
+
+
+
+
+
+
+=== Beistellungen
+
+
+
+
+
+
+
+== Fragestellungen
+
+
+
+In diesem Kapitel werden alle Fragen, welche während der Erhebung und Analyse der Anforderungen entstanden, aufgeführt und gepflegt, 
+damit eine möglichst Nachvollziehbarkeit erreicht werden kann.
+
+Bei den Fragen kann ein Status hinterlegt werden, womit die aktuelle Bearbeitszustand definiert werden. Folgende Zustände sind verfübar:
+[qanda]
+Open:: Die Frage ist offen und muss noch geklärt werden.
+Done:: Die Frage ist geklärt und beim Entschluss ist die Antwort verfügbar.
+=== Test1
+
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:IS002[] *IS002* 2+| *ddd*
+|
+| _Beschreibung_
+|
+Description1
+
+Description2
+
+|
+| _Status_
+| In Progress
+|
+| _Autoren_
+|
+. Pascal Meier
+
+|
+| _Quellen_
+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|
+| _Entschluss_
+|
+dfsdfsdfsdf
+sdfsdfsdf
+sdf
+sdf
+sdfsdf
+
+|===
+
+
+=== Test 2
+
+
+
+[cols="3,5,20a" options="header"]
+|===
+| anchor:IS001[] *IS001* 2+| *1*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Status_
+| Open
+|
+| _Quellen_
+|
+. xref:Q005[Q005_Person_Peter Müller]
+
+|===
+[cols="3,5,20a" options="header"]
+|===
+| anchor:IS003[] *IS003* 2+| *sssss*
+|
+| _Beschreibung_
+|
+Description
+
+|
+| _Status_
+| Open
+|
+| _Quellen_
+|
+. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
+
+|===
+[cols="3,5,20a" options="header"]
+|===
+| anchor:IS004[] *IS004* 2+| *dsafasdfsf*
+|
+| _Beschreibung_
+|
+dsfsdfadfasdf
+
+|
+| _Status_
+| Open
+|
+| _Autoren_
+|
+. Pascal Meier
+
+|
+| _Quellen_
+|
+. xref:Q009[Q009_Dokument_aaaa]
+
+|
+| _Anforderungen_
+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
+
+|
+| _Entschluss_
+|
+sssss
+
+|===
+
+
+
+= Glossar
+
+
+
+ikt_1:: 
+	blababasdasd
+	asdaSDASDADS
+	ASDASD
+
+ikt_2:: 
+
+
+
+

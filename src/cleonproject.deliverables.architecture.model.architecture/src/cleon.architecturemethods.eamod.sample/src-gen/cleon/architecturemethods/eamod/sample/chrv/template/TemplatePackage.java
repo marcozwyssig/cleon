@@ -1,14 +1,14 @@
-package cleon.architecturemethods.eamod.sample.chrv.requirements;
+package cleon.architecturemethods.eamod.sample.chrv.template;
 
 import ch.actifsource.core.Resource;
 
-public class RequirementsPackage {
+public class TemplatePackage {
   
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
   
-  private RequirementsPackage() {}
+  private TemplatePackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.eamod.sample";
@@ -19,8 +19,8 @@ public class RequirementsPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.eamod.sample.chrv.requirements";
+    return "cleon.architecturemethods.eamod.sample.chrv.template";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.sample.chrv.requirements,RIBIj+bpEHSiSMRHpCEgSYIPcfA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.sample.chrv.template,ErQK9bxgKgfAzJzUYxdxIL5H5VQ=] */

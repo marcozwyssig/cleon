@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/cleonproject.deliverables.architecture_0.3.2.jar" id="cleonproject.deliverables.architecture" version="0.3.2">
-      <category name="deliverables"/>
-   </feature>
-   <feature url="features/cleonproject.deliverables.release_1_0.3.2.jar" id="cleonproject.deliverables.release_1" version="0.3.2">
-      <category name="deliverables"/>
-   </feature>
-   <category-def name="deliverables" label="Deliverables"/>
+	<feature url="features/cleonproject.deliverables.architecture_0.3.2.jar" id="cleonproject.deliverables.architecture" version="0.3.2">
+		<category name="deliverables"/>
+	</feature>
+	<feature url="features/cleonproject.deliverables.release_1_0.3.2.jar" id="cleonproject.deliverables.release_1" version="0.3.2">
+		<category name="deliverables"/>
+	</feature>
+	<category-def name="deliverables" label="Deliverables"/>
 </site>
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,f09246ab-f986-11e5-a7fd-010f93305101,dNM/4mmqY6K93seE5oXqsz/49D8=] -->

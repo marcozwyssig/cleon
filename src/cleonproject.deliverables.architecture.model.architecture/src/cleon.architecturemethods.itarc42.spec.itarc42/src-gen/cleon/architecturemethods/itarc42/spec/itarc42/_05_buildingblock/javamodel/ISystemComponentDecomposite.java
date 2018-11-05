@@ -8,8 +8,8 @@ public interface ISystemComponentDecomposite extends cleon.modelinglanguages.uml
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent selectIntoSytemComponent();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent selectIntoSystemComponent();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0,KeORfbufwACfNc66hf9f3f2dBNo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0,fJ7zxir8UOwX3j56VWV9bin2390=] */

@@ -1,0 +1,190 @@
+= IKT Systemarchitektur
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+
+== Einführung und Ziele
+
+
+
+
+=== Qualitätsziele
+
+
+
+
+
+
+=== Aufgabenstellung
+
+
+
+
+
+
+
+== Randbedingungen
+
+
+
+
+
+
+== Kontextabgrenzung
+
+
+
+In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|====
+
+
+== Bausteinsicht
+
+
+
+
+=== IKT
+
+
+
+
+
+ 
+=== Plattform
+
+
+
+
+
+
+=== Windows 2016
+
+
+
+
+
+
+=== Windows Server Standard Virtual
+
+
+
+
+
+
+=== Windows Server 2016 BareMetal
+
+
+
+
+
+
+
+== Verteilsicht
+
+
+
+
+=== Bauen
+
+
+
+
+
+
+=== Paketierung
+
+
+
+
+
+
+=== Verteilung
+
+
+
+
+==== QA
+
+
+
+
+
+
+==== Produktion
+
+
+
+
+
+
+
+=== Test
+
+
+
+
+
+
+=== Überwachung
+
+
+
+
+
+
+
+== Konzepte
+
+
+
+
+
+
+== Entwurfsentscheidungen
+
+
+
+
+
+
+== Qualitätsszenarios
+
+
+
+
+
+
+== Risiken und technische Schulden
+
+
+
+
+
+
+== Produktesicht
+
+
+
+
+
+
+== Anforderungsabdeckung
+
+
+
+
+
+
+

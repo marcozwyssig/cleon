@@ -8,8 +8,8 @@ public interface I__V_3_aE_System_aE_Scope_aE_and_aE_Context extends cleon.archi
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.IPlattform selectPlattform();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem selectPlattform();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,mBk1UDQwhhtJ67RuWjr3VyKq0MI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,6hapOKaKFJ9T1Dm7RmbyVN26d+U=] */

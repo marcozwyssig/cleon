@@ -468,11 +468,14 @@ of their respective owners.
       <import feature="cleon.common.glossary"/>
       <import feature="cleon.architecturestylesandpatterns.eda"/>
       <import feature="cleon.architecturestylesandpatterns.soa"/>
+      <import feature="cleon.architecturemethods.eamod"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
+      <import feature="cleon.projectmethods.hermes"/>
+      <import feature="cleon.common.analysis"/>
    </requires>
    <plugin id="cleon.applications.actifsource.spec.actifsource.builtin" download-size="0" install-size="0" version="0.4.4" unpack="false"/>
    <plugin id="cleon.applications.actifsource.template.eclipse.builtin" download-size="0" install-size="0" version="0.4.4" unpack="false"/>

@@ -61,6 +61,16 @@ public class __W_3_aE_Requirements_aE_Coverage extends DynamicResource implement
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.ISystemComponentRequirementCoverage> selectSystemComponentRequirementCoverage() {
+    return _getMap(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.ISystemComponentRequirementCoverage.class, cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.__W_3_aE_Requirements_aE_Coverage_systemComponentRequirementCoverage);
+  }
+
+  public __W_3_aE_Requirements_aE_Coverage setSystemComponentRequirementCoverage(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.ISystemComponentRequirementCoverage> systemComponentRequirementCoverage) {
+    _setMap(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.__W_3_aE_Requirements_aE_Coverage_systemComponentRequirementCoverage, systemComponentRequirementCoverage);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -78,8 +88,15 @@ public class __W_3_aE_Requirements_aE_Coverage extends DynamicResource implement
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.ISystemComponentRequirementCoverage.class, cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.__W_3_aE_Requirements_aE_Coverage_systemComponentRequirementCoverage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage selectToMeSystemComponentRequirementCoverage(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.ISystemComponentRequirementCoverage object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage.javamodel.I__W_3_aE_Requirements_aE_Coverage.class, cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.__W_3_aE_Requirements_aE_Coverage_systemComponentRequirementCoverage, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,875d278c-d183-11e8-b18f-df1540bb7a5c,9buso/qcDyhrxQoO3slZhFGZ91Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,875d278c-d183-11e8-b18f-df1540bb7a5c,pPyZs5grulf8q68f8T1oSzQw9HQ=] */

@@ -17,8 +17,10 @@ public interface I__V_1_aE_IntroductionAndGoals extends cleon.common.doc.spec.do
   
   // relations
   
+  public cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements selectRequirementsOverview();
+  
   public cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IQualityGoals selectQualityGoals();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,Mghkcb70JxJ5fLaEwEIVd7LjMAY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,Uh0khsNcwMd/9kDLQD8n/kSk8wo=] */

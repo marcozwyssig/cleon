@@ -26,6 +26,12 @@ public interface I__V_2_aE_Architecture_aE_Constraints extends cleon.common.doc.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b06163b8-ffc9-11e5-bd7b-8b0acf27d441");
   
+  // relations
+  
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints selectTechnicalConstraints();
+  
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints selectOrganizationalConstraints();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,b5oFA9e0yWprNoqoNxUxg/QGlf0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,5ylISu2GHCwsBbq3iOxXJehUIK8=] */

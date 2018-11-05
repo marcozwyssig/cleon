@@ -71,6 +71,16 @@ public class __V_1_aE_IntroductionAndGoals extends DynamicResource implements I_
   }
     
   @Override
+  public cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements selectRequirementsOverview() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_requirementsOverview);
+  }
+
+  public __V_1_aE_IntroductionAndGoals setRequirementsOverview(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements requirementsOverview) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_requirementsOverview, requirementsOverview);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -89,14 +99,19 @@ public class __V_1_aE_IntroductionAndGoals extends DynamicResource implements I_
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IQualityGoals.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_qualityGoals, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_requirementsOverview, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
+  
+  public static cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals selectToMeRequirementsOverview(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_requirementsOverview, object.getResource());
+  }
   
   public static cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals selectToMeQualityGoals(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IQualityGoals object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.I__V_1_aE_IntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.__V_1_aE_IntroductionAndGoals_qualityGoals, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,CH/7Y2aVazLJPBTSTIbufbKIDO4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,Ask9jD1aUGkxGW4ofsKLinZqajM=] */

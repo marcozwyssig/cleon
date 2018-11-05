@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="b06163b8-ffc9-11e5-bd7b-8b0acf27d441">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="30b86d7b-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="30b78318-e101-11e8-8499-a3b0fb3cad90" />
+    <resource statement-guid="5110c388-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="510fd920-e101-11e8-8499-a3b0fb3cad90" />
+  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="d6fc3666-27d1-11e6-b263-9db62e053e59" type="resource" guid="d6fc3662-27d1-11e6-b263-9db62e053e59">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -16,6 +20,52 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4f129a06-118d-11e8-95d7-5d9fd9835602" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="30b86d7b-e101-11e8-8499-a3b0fb3cad90">
+      <resource guid="30b78318-e101-11e8-8499-a3b0fb3cad90">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="30b7aa2a-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="352404fe-e101-11e8-8499-a3b0fb3cad90" type="literal">technicalConstraints</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="30b97eec-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="30b9a5fd-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="39f8e5c1-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="ef433a64-e100-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="38aa1e7f-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="a550fab6-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5110c388-e101-11e8-8499-a3b0fb3cad90">
+      <resource guid="510fd920-e101-11e8-8499-a3b0fb3cad90">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="510fd921-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="510fd924-e101-11e8-8499-a3b0fb3cad90" type="literal">organizationalConstraints</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="510fd922-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="510fd923-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5d962d35-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="f7b7d6ee-e100-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="510fd925-e101-11e8-8499-a3b0fb3cad90" type="resource" guid="a550fab6-d86d-11e4-aa2f-c11242a92b60" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b06163ba-ffc9-11e5-bd7b-8b0acf27d441" type="literal">02_Architecture_Constraints</object>

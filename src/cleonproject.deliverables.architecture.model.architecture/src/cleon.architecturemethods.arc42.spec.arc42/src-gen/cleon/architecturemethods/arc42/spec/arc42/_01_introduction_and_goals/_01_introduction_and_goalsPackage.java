@@ -10,6 +10,8 @@ public class _01_introduction_and_goalsPackage {
   public static final Resource __V_1_aE_IntroductionAndGoals_qualityGoals = new Resource("e654112e-4819-11e6-82f6-0f210765495b");
   public static final Resource QualityGoal = new Resource("1689d4f9-481a-11e6-82f6-0f210765495b");
   public static final Resource QualityGoals_qualityGoals = new Resource("1c351904-481a-11e6-82f6-0f210765495b");
+  public static final Resource __V_1_aE_IntroductionAndGoals_requirementsOverview = new Resource("8979fd0a-e101-11e8-8499-a3b0fb3cad90");
+  public static final Resource Requirements_requirementsManagement = new Resource("00e7b76d-e102-11e8-8499-a3b0fb3cad90");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +32,4 @@ public class _01_introduction_and_goalsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals,MP6cShhYgrn2695I8Jn8XpEwJKo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals,GogtbXWK26wLMtK9COlX/yJJzU4=] */

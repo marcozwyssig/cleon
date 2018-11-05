@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="5ffed290-cb39-11e8-9fc7-cb7241efa62e">
   <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <resource statement-guid="495714e4-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="495714e1-cb3c-11e8-9fc7-cb7241efa62e" />
     <resource statement-guid="643e224b-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="643e2248-cb3c-11e8-9fc7-cb7241efa62e" />
   </owns>
   <owns predicate="7d4069b9-f8cf-11e5-bc92-c963417b9cea">
@@ -15,16 +14,6 @@
     <object statement-guid="60a5e816-cb39-11e8-9fc7-cb7241efa62e" type="literal">Collaboration</object>
   </predicate>
   <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <object statement-guid="495714e4-cb3c-11e8-9fc7-cb7241efa62e">
-      <resource guid="495714e1-cb3c-11e8-9fc7-cb7241efa62e">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="495714e3-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
-        </predicate>
-        <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
-          <object statement-guid="49d7ddbc-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="0158669e-ca38-11e8-bb1d-0da5e2c3fe20" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="643e224b-cb3c-11e8-9fc7-cb7241efa62e">
       <resource guid="643e2248-cb3c-11e8-9fc7-cb7241efa62e">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

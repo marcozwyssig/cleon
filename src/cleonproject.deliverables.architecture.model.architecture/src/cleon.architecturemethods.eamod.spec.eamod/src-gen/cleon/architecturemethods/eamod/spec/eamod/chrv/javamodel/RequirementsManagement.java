@@ -158,6 +158,16 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
     
   @Override
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources selectSources() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_sources);
+  }
+
+  public RequirementsManagement setSources(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources sources) {
+    _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_sources, sources);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.spec.doc.document.style.javamodel.IStyle selectStyle() {
     return _getSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style);
   }
@@ -195,6 +205,7 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_motivation, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.javamodel.IProjectSubjectArea.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_requirements, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_sources, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -217,9 +228,13 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_destinctions, object.getResource());
   }
   
+  public static cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectToMeSources(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_sources, object.getResource());
+  }
+  
   public static cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectToMeIssues(cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel.IIssues object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_issues, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,0Ra/YwHRN86Ht3wBx+ffKUmBWcY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,8XVpki/cYEocjknOi3T/G9rrjnA=] */

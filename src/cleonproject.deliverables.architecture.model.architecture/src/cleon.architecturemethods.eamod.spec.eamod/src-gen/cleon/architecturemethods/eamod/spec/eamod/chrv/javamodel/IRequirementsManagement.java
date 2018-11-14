@@ -16,8 +16,10 @@ public interface IRequirementsManagement extends cleon.common.doc.spec.doc.docum
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.javamodel.IDistinctions selectDestinctions();
   
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources selectSources();
+  
   public cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel.IIssues selectIssues();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,SzYSM3tDWit7qXHnB4NMcG29uXU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,34gRBrtvbifCL2SbxD69j+QzYGk=] */

@@ -91,16 +91,6 @@ public class Motivation extends DynamicResource implements IMotivation {
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources selectSources() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_sources);
-  }
-
-  public Motivation setSources(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources sources) {
-    _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_sources, sources);
-    return this;
-  }
-    
-  @Override
   public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholders selectStakeholders() {
     return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholders.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_stakeholders);
   }
@@ -131,16 +121,11 @@ public class Motivation extends DynamicResource implements IMotivation {
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDrivers.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_drivers, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoals.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_goals, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.principles.javamodel.IPrinciples.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_principles, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_sources, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholders.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_stakeholders, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
-  
-  public static cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation selectToMeSources(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_sources, object.getResource());
-  }
   
   public static cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation selectToMeDrivers(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDrivers object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_drivers, object.getResource());
@@ -159,4 +144,4 @@ public class Motivation extends DynamicResource implements IMotivation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,pmAIq1nrtkP7EFSxjIkRII6Qhh0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,Nnmw+e3S5i4KYj844Nxejh4G27Q=] */

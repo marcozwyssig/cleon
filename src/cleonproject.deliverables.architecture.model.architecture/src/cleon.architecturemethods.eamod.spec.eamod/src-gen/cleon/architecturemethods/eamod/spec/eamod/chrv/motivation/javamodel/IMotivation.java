@@ -8,8 +8,6 @@ public interface IMotivation extends cleon.architecturemethods.eamod.spec.eamod.
   
   // relations
   
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources selectSources();
-  
   public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDrivers selectDrivers();
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoals selectGoals();
@@ -20,4 +18,4 @@ public interface IMotivation extends cleon.architecturemethods.eamod.spec.eamod.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,NL/updJaFquVXWyPXcY0GsEz0zQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,n7UcMjFb90+wYyeIRYEC2SeO1lA=] */

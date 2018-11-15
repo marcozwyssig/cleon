@@ -369,8 +369,8 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("12ac7c84-3f7b-11e6-85d8-3328a679e82b")
     public java.lang.String RenderElementName();
 
-    @IDynamicResourceExtension.MethodId("16220df4-3811-11e8-a088-c32925c50d0b")
-    public java.lang.String RenderSubjectArea();
+    @IDynamicResourceExtension.MethodId("5a4ea86b-e8e1-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderAttributes();
 
   }
   
@@ -422,8 +422,8 @@ public class FunctionSpace_DocBook_CHRV {
 
   public static interface IProjectSubjectAreaFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("392b9613-3810-11e8-a088-c32925c50d0b")
-    public java.lang.String RenderContent();
+    @IDynamicResourceExtension.MethodId("ad245de1-e8e0-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -445,6 +445,62 @@ public class FunctionSpace_DocBook_CHRV {
 
   }
 
+  public static interface IGlossaryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("24049f94-e8d9-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderElementName();
+
+  }
+  
+  public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GlossaryFunctionsImpl implements IGlossaryFunctionsImpl {
+
+    public static final IGlossaryFunctionsImpl INSTANCE = new GlossaryFunctionsImpl();
+
+    private GlossaryFunctionsImpl() {}
+
+  }
+  
+  public static class GlossaryFunctions {
+
+    private GlossaryFunctions() {}
+
+  }
+
+  public static interface IAboutFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7a49167a-e8f2-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderContentElement();
+
+    @IDynamicResourceExtension.MethodId("97a06109-e8f2-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderChapters();
+
+    @IDynamicResourceExtension.MethodId("ad99d68b-e8f2-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderMethod();
+
+  }
+  
+  public static interface IAboutFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AboutFunctionsImpl implements IAboutFunctionsImpl {
+
+    public static final IAboutFunctionsImpl INSTANCE = new AboutFunctionsImpl();
+
+    private AboutFunctionsImpl() {}
+
+  }
+  
+  public static class AboutFunctions {
+
+    private AboutFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,x2fipG/DsTlvqI5mpgVi9kIRtaQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,8CdWTAEjVt/i0pIWq31mj8Fcg9w=] */

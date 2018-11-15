@@ -5,6 +5,7 @@ import ch.actifsource.core.Resource;
 public class IntroductionPackage {
   
   public static final Resource Introduction = new Resource("a1c92948-1ccc-11e6-a935-d7e02aa7a126");
+  public static final Resource About = new Resource("22d7874b-e8f2-11e8-b810-cdb2b421fd42");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +26,4 @@ public class IntroductionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.introduction,nAUiFXVW2wWSBgUYGNdVIBfbl0M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.introduction,Y5+oHLH4vUR/PngmGiubb3jn3Jo=] */

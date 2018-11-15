@@ -634,6 +634,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IItemizedListFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("39b91640-e8f6-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ItemizedListFunctionsImpl implements IItemizedListFunctionsImpl {
+
+    public static final IItemizedListFunctionsImpl INSTANCE = new ItemizedListFunctionsImpl();
+
+    private ItemizedListFunctionsImpl() {}
+
+  }
+  
+  public static class ItemizedListFunctions {
+
+    private ItemizedListFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,kI1Sm5lZ9sCMsYsuvezWLdOok/I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,IFzjkVh+TkpNpP0ThY3DgoyTn3Y=] */

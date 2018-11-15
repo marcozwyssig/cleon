@@ -3,16 +3,35 @@
 	<db:title>Sample Requirements Anforderungen</db:title>
 	
 	
-	<db:chapter xmlns:db="http://docbook.org/ns/docbook" version="5.0">
-	    <db:title>Einführung</db:title>
-	    <db:para>Das vorliegende Dokument wird über die Projektmeilensteine hinweg gepflegt. Es beinhaltet alle verwendeten Quellen, die Treiber, die Ziele, die Prinzipien, die Stakeholder und die Anforderungen</db:para>
-	    <db:section>
-	    	<db:title>Methode RE-V</db:title> 
-		    <db:para>Die Anforderungen werden nach der Methode RE-V <db:emphasis role="italic">(Requirements
+	<db:chapter >
+		<db:title>Einleitung</db:title>
+		
+		
+		<db:para>Das vorliegende Dokument wird über die Projektmeilensteine hinweg gepflegt. Es beinhaltet alle verwendeten Quellen, die Treiber, die Ziele, die Prinzipien, die Stakeholder und die Anforderungen</db:para>
+		<db:section >
+			<db:title>Leserkreis</db:title>
+			
+			<db:itemizedlist>
+				<db:listitem override="bullet">
+					<db:para>Test 1</db:para>
+				</db:listitem>
+				<db:listitem override="bullet">
+					<db:para>Test 2</db:para>
+				</db:listitem>
+				<db:listitem override="bullet">
+					<db:para>Test</db:para>
+				</db:listitem>
+			</db:itemizedlist>
+			
+			
+		</db:section>
+		<db:section>
+			<db:title>Methode RE-V</db:title> 
+		    	<db:para>Die Anforderungen werden nach der Methode RE-V <db:emphasis role="italic">(Requirements
 		            Engineering im Bereich Verteidigung)</db:emphasis> erhoben, strukturiert und gepflegt. Die Methode ist im Referenzhandbuch EA-Mod in der Hauptsicht 'CHRV' normativ festgelegt.</db:para>
-		    <db:para>Nach RE-V werden Anforderungen modellbasiert in einem Anforderungsbaum verwaltet. Die
-		        Baumstruktur widerspiegelt dabei die Abstraktionsebenen der einzelnen Anforderungen. </db:para>
-		    <db:para>In dieser Baumstruktur sind die nachfolgenden Elementtypen zu finden:</db:para>
+			<db:para>Nach RE-V werden Anforderungen modellbasiert in einem Anforderungsbaum verwaltet. Die
+		        	Baumstruktur widerspiegelt dabei die Abstraktionsebenen der einzelnen Anforderungen. </db:para>
+		    	<db:para>In dieser Baumstruktur sind die nachfolgenden Elementtypen zu finden:</db:para>
 		    <db:para>
 		        <db:informaltable style="EAMod Requirement">
 		            <db:col width="35%" />
@@ -33,8 +52,7 @@
 		                        unter einem selbständigen Blickwinkel betrachtet werden, z.B. aus der Sicht
 		                        eines Teilprojekts, einer Gruppe von Stakeholdern oder eines
 		                        querschnittlichen Aspekts. Ein Betrachtungsraum kann in weitere
-		                        Betrachtungsräume dekomponiert werden. RE-V definiert 20 Standard
-		                        Betrachtungsräume, welche sich aus dem IKT-Ablauf und RABL ableiten.</db:td>
+		                        Betrachtungsräume dekomponiert werden. </db:td>
 		                </db:tr>
 		                <db:tr>
 		                    <db:td>
@@ -59,8 +77,7 @@
 		                        <db:para>QualityRequirement</db:para>
 		                        <db:para>(Qualitätsanforderung)</db:para>
 		                    </db:td>
-		                    <db:td>Qualitätsanforderungen beschreiben Erwartungen an qualitative Aspekte, die
-		                        das zu liefernde System zu erfüllen hat.</db:td>
+		                    <db:td>Qualitätsanforderungen beschreiben Erwartungen an qualitative Aspekte, die das zu liefernde System zu erfüllen hat.</db:td>
 		                </db:tr>
 		                <db:tr>
 		                    <db:td>
@@ -83,100 +100,102 @@
 		                        zu berücksichtigen sind. Sie können von den Projektbeteiligten nicht
 		                        beeinflusst werden.</db:td>
 		                </db:tr>
+		                <db:tr>
+		                    <db:td>
+		                        <db:para>TechnologyRequirement</db:para>
+		                        <db:para>(Rahmenbedingung)</db:para>
+		                    </db:td>
+		                    <db:td>Ein Technologie Requirement ist eine Spezialisierung einer ConstraintsRequirements und legt den Einsatz einer spezifischen Technologie fest.</db:td>
+		                </db:tr>                
 		            </db:tbody>
 		        </db:informaltable>
-		    </db:para>
-	    </db:section>
-	    <db:section>
-	        <db:title>Übersicht der Anforderungen</db:title>
-	        <db:para>Das Kapitel "Übersicht der Anforderungen" dient als Inhaltsverzeichnis der
-	            Anforderungen, wobei pro Betrachtungsraum ein Unterkapitel erstellt wird. Darin sind ID
-	            und Name aller Anforderung sowie Kapitel und Seitenzahl der detaillierten
-	            Anforderungstabelle ausgewiesen. Die nachfolgende Tabelle zeigt das Beispiel einer
-	            solchen Tabelle.</db:para>
-	        <db:informaltable style="EAMod Requirement">
-	            <db:col width="20%" />
-	            <db:col width="54%" />
-	            <db:col width="14%" />
-	            <db:col width="12%" />
-	            <db:thead>
-	                <db:tr>
-	                    <db:th>ID</db:th>
-	                    <db:th>Name</db:th>
-	                    <db:th>Kapitel</db:th>
-	                    <db:th>Seite</db:th>
-	                </db:tr>
-	            </db:thead>
-	            <db:tbody>
-	                <db:tr>
-	                    <db:td>REV-R-001</db:td>
-	                    <db:td>
-	                        <db:para>Verfügbarkeit</db:para>
-	                    </db:td>
-	                    <db:td>
-	                        <db:para>2.1.1</db:para>
-	                    </db:td>
-	                    <db:td>
-	                        <db:para> 5</db:para>
-	                    </db:td>
-	                </db:tr>
-	            </db:tbody>
-	        </db:informaltable>
-	    </db:section>
-	    <db:section>
-	        <db:title>Detaillierte Anforderungen</db:title>
-	        <db:para>Pro Betrachtungsraum wird ein Kapitel mit allen Anforderungen des jeweiligen
-	            Betrachtungsraums erstellt. Jede Anforderung wird durch eine Anforderungstabelle, mit
-	            allen erfassten Attributen, beschrieben. Die nachfolgende Tabelle zeigt ein
-	            entsprechendes Beispiel.</db:para>
-	        <db:informaltable style="EAMod Requirement">
-	            <db:col width="13%" />
-	            <db:col width="18%" />
-	            <db:col width="51%" />
-	            <db:col width="18%" />
-	            <db:thead>
-	                <db:tr>
-	                    <db:th>FEA <db:emphasis role="italic">(1)</db:emphasis></db:th>
-	                    <db:th>REV-R-001 <db:emphasis role="italic">(2)</db:emphasis></db:th>
-	                    <db:th>99 % <db:emphasis role="italic">(3)</db:emphasis></db:th>
-	                    <db:th>Identified <db:emphasis role="italic">(4)</db:emphasis></db:th>
-	                </db:tr>
-	            </db:thead>
-	            <db:tbody>
-	                <db:tr>
-	                    <db:td colspan="2">Formale Definition <db:emphasis role="italic">(5)</db:emphasis></db:td>
-	                    <db:td colspan="2">
-	                        <db:para>Das System muss zu 99 % vollumfänglich produktiv zur Verfügung stehen.
-	                                <db:emphasis role="italic">(6)</db:emphasis></db:para>
-	                    </db:td>
-	                </db:tr>
-	                <db:tr>
-	                    <db:td colspan="2">
-	                        <db:para>Beschreibung <db:emphasis role="italic">(5)</db:emphasis></db:para>
-	                    </db:td>
-	                    <db:td colspan="2">
-	                        <db:para>Verfügbarkeit = (Gesamtzeit - Gesamtausfallzeit) / Gesamtzeit</db:para>
-	                        <db:para>Messperiode: monatlich <db:emphasis role="italic">(6)</db:emphasis></db:para>
-	                    </db:td>
-	                </db:tr>
-	            </db:tbody>
-	        </db:informaltable>
-	        <db:para><db:emphasis role="bold">Legende:</db:emphasis>
-	            <db:emphasis role="italic">(1)</db:emphasis> Abstraktionsebene (<db:emphasis role="underline">CAP</db:emphasis>ability, <db:emphasis role="underline">FEA</db:emphasis>ture, <db:emphasis role="underline">FUN</db:emphasis>ction, <db:emphasis role="underline">COM</db:emphasis>ponent) <db:emphasis role="italic">(2)</db:emphasis> ID <db:emphasis role="italic">(3)</db:emphasis> Name <db:emphasis role="italic">(4)</db:emphasis> Status <db:emphasis role="italic">(5)</db:emphasis> Attribute <db:emphasis role="italic">(6)</db:emphasis> Wert
-	            der Attribute</db:para>  
-		<db:sidebar>
-			<db:para>Weiterführende Informationen zur Methode RE-V bietet das Handbuch zu RE-V. Das
-		            Handbuch RE-V und weitere Informationen zu EAMod sind auf dem SharePoint der
-		            IKT-Fachführung zu finden.</db:para>  	    
-		</db:sidebar>
-	  </db:section>
+		        </db:para>            
+			<db:section>
+			    <db:title>Anforderungen</db:title>
+			    <db:para>Das Kapitel "Anforderungen" dient als Inhaltsverzeichnis der
+			        Anforderungen, wobei pro Betrachtungsraum ein Unterkapitel erstellt wird. Darin sind ID
+			        und Name aller Anforderung sowie Kapitel und Seitenzahl der detaillierten
+			        Anforderungstabelle ausgewiesen. Die nachfolgende Tabelle zeigt das Beispiel einer
+			        solchen Tabelle.</db:para>
+			    <db:informaltable style="EAMod Requirement">
+			        <db:col width="20%" />
+			        <db:col width="54%" />
+			        <db:col width="14%" />
+			        <db:col width="12%" />
+			        <db:thead>
+			            <db:tr>
+			                <db:th>ID</db:th>
+			                <db:th>Name</db:th>
+			                <db:th>Kapitel</db:th>
+			                <db:th>Seite</db:th>
+			            </db:tr>
+			        </db:thead>
+			        <db:tbody>
+			            <db:tr>
+			                <db:td>REV-R-001</db:td>
+			                <db:td>
+			                    <db:para>Verfügbarkeit</db:para>
+			                </db:td>
+			                <db:td>
+			                    <db:para>2.1.1</db:para>
+			                </db:td>
+			                <db:td>
+			                    <db:para> 5</db:para>
+			                </db:td>
+			            </db:tr>
+			        </db:tbody>
+			    </db:informaltable>
+			</db:section>
+			<db:section>
+			    <db:title>Detaillierte Anforderungen</db:title>
+			    <db:para>Pro Betrachtungsraum wird ein Kapitel mit allen Anforderungen des jeweiligen
+			        Betrachtungsraums erstellt. Jede Anforderung wird durch eine Anforderungstabelle, mit
+			        allen erfassten Attributen, beschrieben. Die nachfolgende Tabelle zeigt ein
+			        entsprechendes Beispiel.</db:para>
+			    <db:informaltable style="EAMod Requirement">
+			        <db:col width="13%" />
+			        <db:col width="18%" />
+			        <db:col width="51%" />
+			        <db:col width="18%" />
+			        <db:thead>
+			            <db:tr>
+			                <db:th>FEA <db:emphasis role="italic">(1)</db:emphasis></db:th>
+			                <db:th>REV-R-001 <db:emphasis role="italic">(2)</db:emphasis></db:th>
+			                <db:th>99 % <db:emphasis role="italic">(3)</db:emphasis></db:th>
+			                <db:th>Identified <db:emphasis role="italic">(4)</db:emphasis></db:th>
+			            </db:tr>
+			        </db:thead>
+			        <db:tbody>
+			            <db:tr>
+			                <db:td colspan="2">Formale Definition <db:emphasis role="italic">(5)</db:emphasis></db:td>
+			                <db:td colspan="2">
+			                    <db:para>Das System muss zu 99 % vollumfänglich produktiv zur Verfügung stehen.
+			                            <db:emphasis role="italic">(6)</db:emphasis></db:para>
+			                </db:td>
+			            </db:tr>
+			            <db:tr>
+			                <db:td colspan="2">
+			                    <db:para>Beschreibung <db:emphasis role="italic">(5)</db:emphasis></db:para>
+			                </db:td>
+			                <db:td colspan="2">
+			                    <db:para>Verfügbarkeit = (Gesamtzeit - Gesamtausfallzeit) / Gesamtzeit</db:para>
+			                    <db:para>Messperiode: monatlich <db:emphasis role="italic">(6)</db:emphasis></db:para>
+			                </db:td>
+			            </db:tr>
+			        </db:tbody>
+			    </db:informaltable>
+			    <db:para><db:emphasis role="bold">Legende:</db:emphasis>
+			        <db:emphasis role="italic">(1)</db:emphasis> Abstraktionsebene (<db:emphasis role="underline">CAP</db:emphasis>ability, <db:emphasis role="underline">FEA</db:emphasis>ture, <db:emphasis role="underline">FUN</db:emphasis>ction, <db:emphasis role="underline">COM</db:emphasis>ponent) <db:emphasis role="italic">(2)</db:emphasis> ID <db:emphasis role="italic">(3)</db:emphasis> Name <db:emphasis role="italic">(4)</db:emphasis> Status <db:emphasis role="italic">(5)</db:emphasis> Attribute <db:emphasis role="italic">(6)</db:emphasis> Wert
+			        der Attribute</db:para>  
+		    </db:section>
+		</db:section>
 	</db:chapter>
-	<db:chapter>
-		<db:title>Einleitung</db:title>
+	<db:chapter >
+		<db:title>Einf&#252;hrung</db:title>
 		
 		<db:para>My TEst</db:para>
 		
-		<db:section>
+		<db:section >
 			<db:title>Copy of A New Chapter</db:title>
 			
 			
@@ -184,10 +203,14 @@
 			
 		</db:section>
 	</db:chapter>
-	<db:chapter>
+	<db:chapter >
 		<db:title>Treiber</db:title>
 		
 		
+		<db:para>Mit den Treibern wird die Motivation für die in diesem Dokument festlegten Anforderungen zwecks die Nachvollziehbarkeit aufgeführt.</db:para>
+		<db:para>Jeder Treiber kann einer Quelle zugeordnet werden. Die Quelle stellt den Ursprung respektive die Herkunft des entsprechenden Treibers dar. 
+		Als Quellenarten kommen die Arten "Organisation", "Person", "Dokument", "Kapitel" oder "Referenz" in Frage.</db:para>
+		<db:para>In der nachfolgenden Tabelle werden alle festgelegte Treiber aufgeführt:</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="18%" />
 			<db:col width="60%" />
@@ -248,7 +271,7 @@
 				</db:tr>
 			</db:tbody>
 		</db:informaltable>
-		<db:section xml:id="ea.f733c33e-0d78-11e6-9f44-9d0000bae4df">
+		<db:section  xml:id="ea.f733c33e-0d78-11e6-9f44-9d0000bae4df">
 			<db:title>DR001_Driver_1</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -291,7 +314,7 @@
 			</db:informaltable>
 			
 		</db:section>
-		<db:section xml:id="ea.fd3fc46b-0d78-11e6-9f44-9d0000bae4df">
+		<db:section  xml:id="ea.fd3fc46b-0d78-11e6-9f44-9d0000bae4df">
 			<db:title>DR002_Driver_2</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -335,10 +358,12 @@
 			
 		</db:section>
 	</db:chapter>
-	<db:chapter>
+	<db:chapter >
 		<db:title>Ziele</db:title>
 		
 		
+		<db:para>Ziele sind in der Regel Unternehmensziele. Jedes Ziel kann an einer Quelle zugeordnet werden. Jedes Ziel adressiert im Minimum einen Treiber.</db:para>
+		<db:para>In der nachfolgenden Tabelle werden alle Ziele, welche mit dem System erfüllt werden sollen, aufgelistet.</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="18%" />
 			<db:col width="60%" />
@@ -453,7 +478,7 @@
 				</db:tr>
 			</db:tbody>
 		</db:informaltable>
-		<db:section xml:id="ea.4acb2520-c997-11e5-b35b-8fb753dd0798">
+		<db:section  xml:id="ea.4acb2520-c997-11e5-b35b-8fb753dd0798">
 			<db:title>Z002_Goal_1</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -518,7 +543,7 @@
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>
-			<db:section xml:id="ea.a2146300-0e01-11e6-ae01-ef640c578b9b">
+			<db:section  xml:id="ea.a2146300-0e01-11e6-ae01-ef640c578b9b">
 				<db:title>Z003_Goal 1.2</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -585,7 +610,7 @@
 				</db:informaltable>
 				
 			</db:section>
-			<db:section xml:id="ea.31fee7ef-2cc4-11e6-8dd6-23b9a87b3ebd">
+			<db:section  xml:id="ea.31fee7ef-2cc4-11e6-8dd6-23b9a87b3ebd">
 				<db:title>Z006_Goal 1.3</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -653,7 +678,7 @@
 				
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.ddcb1a0e-0e01-11e6-ae01-ef640c578b9b">
+		<db:section  xml:id="ea.ddcb1a0e-0e01-11e6-ae01-ef640c578b9b">
 			<db:title>Z004_Goal 2</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -718,7 +743,7 @@
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>
-			<db:section xml:id="ea.e38578c3-0e01-11e6-ae01-ef640c578b9b">
+			<db:section  xml:id="ea.e38578c3-0e01-11e6-ae01-ef640c578b9b">
 				<db:title>Z005_Goal 2.1</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -787,10 +812,12 @@
 			</db:section>
 		</db:section>
 	</db:chapter>
-	<db:chapter>
+	<db:chapter >
 		<db:title>Prinzipien</db:title>
 		
 		
+		<db:para>Mit den Prinzipien werden die übergeordneten Gesetzmässigkeiten für das Vorhaben addressiert. Die Prinzipien können aus untergeordneten Prinzipien bestehen.</db:para>
+		<db:para>In der nachfolgenden Tabelle werden alle Prinzipien aufgeführt:</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="18%" />
 			<db:col width="60%" />
@@ -846,14 +873,12 @@
 						<db:para>Total</db:para>
 					</db:td>
 					<db:td colspan="3">
-						<db:para>2
-						         2</db:para>
+						<db:para>4</db:para>
 					</db:td>
 				</db:tr>
 			</db:tbody>
 		</db:informaltable>
-		
-		<db:section xml:id="ea.0a316ec1-bf87-11e5-a56a-35b34376b412">
+		<db:section  xml:id="ea.0a316ec1-bf87-11e5-a56a-35b34376b412">
 			<db:title>P004_A</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -902,7 +927,7 @@
 					</db:tr>		
 				</db:tbody>
 			</db:informaltable>
-			<db:section xml:id="ea.61a55bb8-c58f-11e5-aeea-1db9268c0ee9">
+			<db:section  xml:id="ea.61a55bb8-c58f-11e5-aeea-1db9268c0ee9">
 				<db:title>P003_sss</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -954,7 +979,7 @@
 				
 			</db:section>
 		</db:section>
-		<db:section xml:id="ea.0e1addf6-bf87-11e5-a56a-35b34376b412">
+		<db:section  xml:id="ea.0e1addf6-bf87-11e5-a56a-35b34376b412">
 			<db:title>P002_Principle_B</db:title>
 			
 			<db:informaltable style="EAMod Requirement">
@@ -1003,7 +1028,7 @@
 					</db:tr>		
 				</db:tbody>
 			</db:informaltable>
-			<db:section xml:id="ea.176f532c-bf87-11e5-a56a-35b34376b412">
+			<db:section  xml:id="ea.176f532c-bf87-11e5-a56a-35b34376b412">
 				<db:title>P001_Principe_C</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -1056,19 +1081,23 @@
 			</db:section>
 		</db:section>
 	</db:chapter>
-	<db:chapter>
-		<db:title>Stakeholders</db:title>
+	<db:chapter >
+		<db:title>Interessengruppen</db:title>
 		
 		
+		<db:para>Mit den Interessengruppen werden die Nutzer von Anforderungen abgebildet. Eine Interessengruppe kann ein technisches System und/oder eine Organisation sein.</db:para> 
+		<db:para>In der nachfolgenden Tabelle werden die Interessengruppen aufgeführt:</db:para>
 		<db:informaltable style="EAMod Requirement">
-			<db:col width="20%" />
 			<db:col width="10%" />
-			<db:col width="70%" />
+			<db:col width="20%" />
+			<db:col width="35%" />
+			<db:col width="35%" />
 			<db:thead>
 				<db:tr>
 					<db:th>ID</db:th>
 					<db:th>Name</db:th>
 					<db:th>Beschreibung</db:th>
+					<db:th>Betroffene Anforderung</db:th>
 				</db:tr>
 			</db:thead>
 			<db:tbody>
@@ -1082,6 +1111,9 @@
 					<db:td>
 						<db:para></db:para>
 					</db:td>
+					<db:td>
+						<db:para>AF006, AF003, AF004, AF007, AF001, AF002, AF100, AF101, AF102, AF103, AF104 </db:para>
+					</db:td>
 				</db:tr>
 				<db:tr>
 					<db:td>
@@ -1092,6 +1124,9 @@
 					</db:td>
 					<db:td>
 						<db:para></db:para>
+					</db:td>
+					<db:td>
+						<db:para>AF006 </db:para>
 					</db:td>
 				</db:tr>
 				<db:tr>
@@ -1104,15 +1139,99 @@
 					<db:td>
 						<db:para></db:para>
 					</db:td>
+					<db:td>
+						<db:para>AF001 </db:para>
+					</db:td>
 				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Total</db:para>
+					</db:td>
+					<db:td colspan="3">
+						<db:para>3</db:para>
+					</db:td>
+				</db:tr>	
 			</db:tbody>
 		</db:informaltable>
 		
 	</db:chapter>
-	<db:chapter>
-		<db:title>Übersicht der Anforderungen</db:title>
-		<db:section>
+	<db:chapter >
+		<db:title>Anforderungen SU03_My Project</db:title>
+		
+		
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="20%" />
+			<db:col width="40%" />
+			<db:col width="20%" />
+			<db:col width="20%" />
+			<db:thead>
+				<db:tr>
+					<db:th>ID</db:th>
+					<db:th>Name</db:th>
+					<db:th>Kapitel</db:th>
+					<db:th>Seite</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>SU01</db:para>
+					</db:td>
+					<db:td>
+						<db:para>SU01_Funktionalität</db:para>
+					</db:td>
+					<db:td>
+						<db:para>
+						<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.59fb9f5f-0c78-11e6-86c5-87a8b520dd59" />
+						</db:para>
+					</db:td>
+					<db:td>
+						<db:para>
+						<db:xref xrefstyle="custom-format:%p" xlink:href="#ea.59fb9f5f-0c78-11e6-86c5-87a8b520dd59" />
+						</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>SU02</db:para>
+					</db:td>
+					<db:td>
+						<db:para>SU02_Normen, Standards und Praktiken</db:para>
+					</db:td>
+					<db:td>
+						<db:para>
+						<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.7d31bfd9-0c78-11e6-86c5-87a8b520dd59" />
+						</db:para>
+					</db:td>
+					<db:td>
+						<db:para>
+						<db:xref xrefstyle="custom-format:%p" xlink:href="#ea.7d31bfd9-0c78-11e6-86c5-87a8b520dd59" />
+						</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td colspan="2">
+						<db:para>Total Betrachtungsräume</db:para>
+					</db:td>
+					<db:td colspan="2">
+						<db:para>2</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td colspan="2">
+						<db:para>Total Anforderungen</db:para>
+					</db:td>
+					<db:td colspan="2">
+						<db:para>11</db:para>
+					</db:td>
+				</db:tr>		
+			</db:tbody>
+		</db:informaltable>
+		
+		<db:section xml:id="ea.59fb9f5f-0c78-11e6-86c5-87a8b520dd59">
 			<db:title>SU01_Funktionalit&#228;t</db:title>
+			
+			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="15%" />
 				<db:col width="39%" />
@@ -1318,11 +1437,792 @@
 							</db:para>
 						</db:td>
 					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Total</db:para>
+						</db:td>
+						<db:td colspan="4">
+							<db:para>9</db:para>
+						</db:td>
+					</db:tr>
 				</db:tbody>
-			</db:informaltable>	
+			</db:informaltable>
+			<db:section  xml:id="ea.57838399-bb81-11e5-b2f7-f515c847fa35">
+				<db:title>AF006_Requirements_1 (FEA)</db:title>
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="10%" />
+					<db:col width="15%" />
+					<db:col width="60%" />
+					<db:col width="15%" />
+					<db:thead>
+						<db:tr>
+							<db:th>FEA</db:th>
+							<db:th>AF006</db:th>
+							<db:th>Requirements_1</db:th>
+							<db:th>Identified</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Anforderungstyp</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>FunctionalRequirement</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Formale Definition</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Das System muss fähig sein Rezepte drucken</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Priorität</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Must have</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Dringend</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Wichtig</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Komplexität der Realisierung</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>13</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Ziele</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Z002, Z003</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Interessengruppen</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>S01_Stakeholder_A, S02_Stakeholder_B</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Quelle(n)</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Q007, Q011, Q010</db:para>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Aggregierte Anforderungen (1)</db:title>
+					<db:section xml:id="ea.175d7b8d-380e-11e8-a088-c32925c50d0b">
+						<db:title>AF104_Aggregated (FEA)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="10%" />
+							<db:col width="15%" />
+							<db:col width="60%" />
+							<db:col width="15%" />
+							<db:thead>
+								<db:tr>
+									<db:th>FEA</db:th>
+									<db:th>AF104</db:th>
+									<db:th>Aggregated</db:th>
+									<db:th>Identified</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Anforderungstyp</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>FunctionalRequirement</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Priorität</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Should have</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Dringend</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Nein</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Wichtig</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Ja</db:para>
+									</db:td>
+								</db:tr>			
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Ziele</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Z002</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Interessengruppen</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Quelle(n)</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Q002</db:para>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+					</db:section>
+				</db:section>
+				<db:section>
+					<db:title>Spezialisierte Anforderungen (2)</db:title>
+					<db:section  xml:id="ea.2769003c-bf5b-11e5-a56a-35b34376b412">
+						<db:title>AF004_Requirements_2_1 (CAP)</db:title>
+						
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="10%" />
+							<db:col width="15%" />
+							<db:col width="60%" />
+							<db:col width="15%" />
+							<db:thead>
+								<db:tr>
+									<db:th>CAP</db:th>
+									<db:th>AF004</db:th>
+									<db:th>Requirements_2_1</db:th>
+									<db:th>Identified</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Anforderungstyp</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>SecurityRequirement</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Priorität</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Nice to have</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Dringend</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Ja</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Wichtig</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Nein</db:para>
+									</db:td>
+								</db:tr>			
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Ziele</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Z002, Z003</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Interessengruppen</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Quelle(n)</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Q009</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Functionality.Suitability, Security.Non-repudiation</db:para>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+						
+					</db:section>
+					<db:section  xml:id="ea.ad463858-d56d-11e5-89ea-2d8d86e9ef89">
+						<db:title>AF007_sss (FEA)</db:title>
+						
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="10%" />
+							<db:col width="15%" />
+							<db:col width="60%" />
+							<db:col width="15%" />
+							<db:thead>
+								<db:tr>
+									<db:th>FEA</db:th>
+									<db:th>AF007</db:th>
+									<db:th>sss</db:th>
+									<db:th>Rejected</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Anforderungstyp</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>FunctionalRequirement</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Formale Definition</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Priorität</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Must have</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Dringend</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Ja</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Wichtig</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Ja</db:para>
+									</db:td>
+								</db:tr>			
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Ziele</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Z002</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Interessengruppen</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td colspan="2">
+										<db:para>Quelle(n)</db:para>
+									</db:td>
+									<db:td colspan="2">
+										<db:para>Q001</db:para>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+						<db:section>
+							<db:title>Aggregierte Anforderungen (4)</db:title>
+							<db:section xml:id="ea.c96c0018-2cc0-11e6-8dd6-23b9a87b3ebd">
+								<db:title>AF100_sss (FEA)</db:title>
+								<db:informaltable style="EAMod Requirement">
+									<db:col width="10%" />
+									<db:col width="15%" />
+									<db:col width="60%" />
+									<db:col width="15%" />
+									<db:thead>
+										<db:tr>
+											<db:th>FEA</db:th>
+											<db:th>AF100</db:th>
+											<db:th>sss</db:th>
+											<db:th>Rejected</db:th>
+										</db:tr>
+									</db:thead>
+									<db:tbody>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Anforderungstyp</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>FunctionalRequirement</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Formale Definition</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Das System sollte fähig sein Rezepte auszudrucken</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Priorität</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Should have</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Dringend</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Nein</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Wichtig</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>			
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Ziele</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Z002</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Interessengruppen</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Quelle(n)</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Q001</db:para>
+											</db:td>
+										</db:tr>
+									</db:tbody>
+								</db:informaltable>
+							</db:section>
+							<db:section xml:id="ea.ccf2dd4d-2cc0-11e6-8dd6-23b9a87b3ebd">
+								<db:title>AF101_sss (FEA)</db:title>
+								<db:informaltable style="EAMod Requirement">
+									<db:col width="10%" />
+									<db:col width="15%" />
+									<db:col width="60%" />
+									<db:col width="15%" />
+									<db:thead>
+										<db:tr>
+											<db:th>FEA</db:th>
+											<db:th>AF101</db:th>
+											<db:th>sss</db:th>
+											<db:th>Rejected</db:th>
+										</db:tr>
+									</db:thead>
+									<db:tbody>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Anforderungstyp</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>FunctionalRequirement</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Formale Definition</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Priorität</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Must have</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Dringend</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Wichtig</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>			
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Ziele</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Z002</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Interessengruppen</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Quelle(n)</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Q001</db:para>
+											</db:td>
+										</db:tr>
+									</db:tbody>
+								</db:informaltable>
+							</db:section>
+							<db:section xml:id="ea.cd844710-2cc0-11e6-8dd6-23b9a87b3ebd">
+								<db:title>AF102_sss (FEA)</db:title>
+								<db:informaltable style="EAMod Requirement">
+									<db:col width="10%" />
+									<db:col width="15%" />
+									<db:col width="60%" />
+									<db:col width="15%" />
+									<db:thead>
+										<db:tr>
+											<db:th>FEA</db:th>
+											<db:th>AF102</db:th>
+											<db:th>sss</db:th>
+											<db:th>Rejected</db:th>
+										</db:tr>
+									</db:thead>
+									<db:tbody>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Anforderungstyp</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>FunctionalRequirement</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Formale Definition</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Priorität</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Must have</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Dringend</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Wichtig</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>			
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Ziele</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Z002</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Interessengruppen</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Quelle(n)</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Q001</db:para>
+											</db:td>
+										</db:tr>
+									</db:tbody>
+								</db:informaltable>
+							</db:section>
+							<db:section xml:id="ea.ce368043-2cc0-11e6-8dd6-23b9a87b3ebd">
+								<db:title>AF103_sss (FEA)</db:title>
+								<db:informaltable style="EAMod Requirement">
+									<db:col width="10%" />
+									<db:col width="15%" />
+									<db:col width="60%" />
+									<db:col width="15%" />
+									<db:thead>
+										<db:tr>
+											<db:th>FEA</db:th>
+											<db:th>AF103</db:th>
+											<db:th>sss</db:th>
+											<db:th>Rejected</db:th>
+										</db:tr>
+									</db:thead>
+									<db:tbody>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Anforderungstyp</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>FunctionalRequirement</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Formale Definition</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Das System muss fähig sein Rezepte ausdrucken</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Priorität</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Must have</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Dringend</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Wichtig</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Ja</db:para>
+											</db:td>
+										</db:tr>			
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Ziele</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Z002</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Interessengruppen</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:td>
+										</db:tr>
+										<db:tr>
+											<db:td colspan="2">
+												<db:para>Quelle(n)</db:para>
+											</db:td>
+											<db:td colspan="2">
+												<db:para>Q001</db:para>
+											</db:td>
+										</db:tr>
+									</db:tbody>
+								</db:informaltable>
+							</db:section>
+						</db:section>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section  xml:id="ea.23f6e412-bf5b-11e5-a56a-35b34376b412">
+				<db:title>AF003_Requirements_2_(ssss) (CAP)</db:title>
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="10%" />
+					<db:col width="15%" />
+					<db:col width="60%" />
+					<db:col width="15%" />
+					<db:thead>
+						<db:tr>
+							<db:th>CAP</db:th>
+							<db:th>AF003</db:th>
+							<db:th>Requirements_2_(ssss)</db:th>
+							<db:th>Identified</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Anforderungstyp</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>SecurityRequirement</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Formale Definition</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Priorität</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Must have</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Dringend</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Wichtig</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Ziele</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Z002</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Interessengruppen</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>S01_Stakeholder_A</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Quelle(n)</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Q008</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Functionality.Compliance</db:para>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				
+			</db:section>
 		</db:section>
-		<db:section>
+		<db:section xml:id="ea.7d31bfd9-0c78-11e6-86c5-87a8b520dd59">
 			<db:title>SU02_Normen, Standards und Praktiken</db:title>
+			
+			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="15%" />
 				<db:col width="39%" />
@@ -1381,755 +2281,17 @@
 							</db:para>
 						</db:td>
 					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Total</db:para>
+						</db:td>
+						<db:td colspan="4">
+							<db:para>2</db:para>
+						</db:td>
+					</db:tr>
 				</db:tbody>
-			</db:informaltable>	
-		</db:section>
-	</db:chapter>
-	<db:chapter>
-		<db:title>Detaillierte Anforderungen des Projektbetrachtungsraum SU03_My Project</db:title>
-		<db:section>
-			<db:title>SU01_Funktionalit&#228;t</db:title>
-			
-			
-			<db:para>Funktionale Anforderungen an das zu
-			         realisierende / zu beschaffenden
-			         System / Produkt. Dieser
-			         Betrachtungsraum ist in der Regel sehr
-			         umfangreich und adressiert
-			         Anforderungen an die erwartete
-			         Funktionalit&#228;t.</db:para>
-			<db:section xml:id="ea.57838399-bb81-11e5-b2f7-f515c847fa35">
-				<db:title>AF006_Requirements_1 (FEA)</db:title>
-				
-				<db:informaltable style="EAMod Requirement">
-					<db:col width="10%" />
-					<db:col width="15%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>FEA</db:th>
-							<db:th>AF006</db:th>
-							<db:th>Schnittstellen</db:th>
-							<db:th>Identified</db:th>
-						</db:tr>
-					</db:thead>
-					<db:tbody>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Anforderungstyp</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>FunctionalRequirement</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Formale Definition</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Das System muss fähig sein Rezepte drucken</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Priorität</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Must have</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Komplexität der Realisierung</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>13</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Begründung &amp; Nutzen</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para></db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Ziele</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Z002, Z003</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Interessengruppen</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>S01, S02</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Quelle(n)</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Q007, Q011, Q010</db:para>
-							</db:td>
-						</db:tr>
-					</db:tbody>
-				</db:informaltable>
-				<db:section>
-					<db:title>Aggregierte Anforderungen (1)</db:title>
-					<db:section xml:id="ea.175d7b8d-380e-11e8-a088-c32925c50d0b">
-						<db:title>AF104_Aggregated (FEA)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="10%" />
-							<db:col width="15%" />
-							<db:col width="60%" />
-							<db:col width="15%" />
-							<db:thead>
-								<db:tr>
-									<db:th>FEA</db:th>
-									<db:th>AF104</db:th>
-									<db:th>Schnittstellen</db:th>
-									<db:th>Identified</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Anforderungstyp</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>FunctionalRequirement</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Formale Definition</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para></db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Priorität</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Should have</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Begründung &amp; Nutzen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para></db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Ziele</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Z002</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Interessengruppen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>S01</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Quelle(n)</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Q002</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-					</db:section>
-				</db:section>
-				<db:section>
-					<db:title>Spezialisierte Anforderungen (2)</db:title>
-					<db:section xml:id="ea.2769003c-bf5b-11e5-a56a-35b34376b412">
-						<db:title>AF004_Requirements_2_1 (CAP)</db:title>
-						
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="10%" />
-							<db:col width="15%" />
-							<db:col width="60%" />
-							<db:col width="15%" />
-							<db:thead>
-								<db:tr>
-									<db:th>CAP</db:th>
-									<db:th>AF004</db:th>
-									<db:th>Schnittstellen</db:th>
-									<db:th>Identified</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Anforderungstyp</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>SecurityRequirement</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Formale Definition</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para></db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Priorität</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Nice to have</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Begründung &amp; Nutzen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para></db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Ziele</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Z002, Z003</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Interessengruppen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>S01</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Quelle(n)</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Q009</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Functionality.Suitability, Security.Non-repudiation</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.ad463858-d56d-11e5-89ea-2d8d86e9ef89">
-						<db:title>AF007_sss (FEA)</db:title>
-						
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="10%" />
-							<db:col width="15%" />
-							<db:col width="60%" />
-							<db:col width="15%" />
-							<db:thead>
-								<db:tr>
-									<db:th>FEA</db:th>
-									<db:th>AF007</db:th>
-									<db:th>Schnittstellen</db:th>
-									<db:th>Rejected</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Anforderungstyp</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>FunctionalRequirement</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Formale Definition</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Priorität</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Must have</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Begründung &amp; Nutzen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para></db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Ziele</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Z002</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Interessengruppen</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>S01</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td colspan="2">
-										<db:para>Quelle(n)</db:para>
-									</db:td>
-									<db:td colspan="2">
-										<db:para>Q001</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						<db:section>
-							<db:title>Aggregierte Anforderungen (4)</db:title>
-							<db:section xml:id="ea.c96c0018-2cc0-11e6-8dd6-23b9a87b3ebd">
-								<db:title>AF100_sss (FEA)</db:title>
-								<db:informaltable style="EAMod Requirement">
-									<db:col width="10%" />
-									<db:col width="15%" />
-									<db:col width="60%" />
-									<db:col width="15%" />
-									<db:thead>
-										<db:tr>
-											<db:th>FEA</db:th>
-											<db:th>AF100</db:th>
-											<db:th>Schnittstellen</db:th>
-											<db:th>Rejected</db:th>
-										</db:tr>
-									</db:thead>
-									<db:tbody>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Anforderungstyp</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>FunctionalRequirement</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Formale Definition</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Das System sollte fähig sein Rezepte auszudrucken</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Priorität</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Should have</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Begründung &amp; Nutzen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para></db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Ziele</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Z002</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Interessengruppen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>S01</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Quelle(n)</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Q001</db:para>
-											</db:td>
-										</db:tr>
-									</db:tbody>
-								</db:informaltable>
-							</db:section>
-							<db:section xml:id="ea.ccf2dd4d-2cc0-11e6-8dd6-23b9a87b3ebd">
-								<db:title>AF101_sss (FEA)</db:title>
-								<db:informaltable style="EAMod Requirement">
-									<db:col width="10%" />
-									<db:col width="15%" />
-									<db:col width="60%" />
-									<db:col width="15%" />
-									<db:thead>
-										<db:tr>
-											<db:th>FEA</db:th>
-											<db:th>AF101</db:th>
-											<db:th>Schnittstellen</db:th>
-											<db:th>Rejected</db:th>
-										</db:tr>
-									</db:thead>
-									<db:tbody>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Anforderungstyp</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>FunctionalRequirement</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Formale Definition</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Priorität</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Must have</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Begründung &amp; Nutzen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para></db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Ziele</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Z002</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Interessengruppen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>S01</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Quelle(n)</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Q001</db:para>
-											</db:td>
-										</db:tr>
-									</db:tbody>
-								</db:informaltable>
-							</db:section>
-							<db:section xml:id="ea.cd844710-2cc0-11e6-8dd6-23b9a87b3ebd">
-								<db:title>AF102_sss (FEA)</db:title>
-								<db:informaltable style="EAMod Requirement">
-									<db:col width="10%" />
-									<db:col width="15%" />
-									<db:col width="60%" />
-									<db:col width="15%" />
-									<db:thead>
-										<db:tr>
-											<db:th>FEA</db:th>
-											<db:th>AF102</db:th>
-											<db:th>Schnittstellen</db:th>
-											<db:th>Rejected</db:th>
-										</db:tr>
-									</db:thead>
-									<db:tbody>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Anforderungstyp</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>FunctionalRequirement</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Formale Definition</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Das System muss fähig sein Rezepte auszudrucken</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Priorität</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Must have</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Begründung &amp; Nutzen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para></db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Ziele</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Z002</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Interessengruppen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>S01</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Quelle(n)</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Q001</db:para>
-											</db:td>
-										</db:tr>
-									</db:tbody>
-								</db:informaltable>
-							</db:section>
-							<db:section xml:id="ea.ce368043-2cc0-11e6-8dd6-23b9a87b3ebd">
-								<db:title>AF103_sss (FEA)</db:title>
-								<db:informaltable style="EAMod Requirement">
-									<db:col width="10%" />
-									<db:col width="15%" />
-									<db:col width="60%" />
-									<db:col width="15%" />
-									<db:thead>
-										<db:tr>
-											<db:th>FEA</db:th>
-											<db:th>AF103</db:th>
-											<db:th>Schnittstellen</db:th>
-											<db:th>Rejected</db:th>
-										</db:tr>
-									</db:thead>
-									<db:tbody>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Anforderungstyp</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>FunctionalRequirement</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Formale Definition</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Das System muss fähig sein Rezepte ausdrucken</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Priorität</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Must have</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Begründung &amp; Nutzen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para></db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Ziele</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Z002</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Interessengruppen</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>S01</db:para>
-											</db:td>
-										</db:tr>
-										<db:tr>
-											<db:td colspan="2">
-												<db:para>Quelle(n)</db:para>
-											</db:td>
-											<db:td colspan="2">
-												<db:para>Q001</db:para>
-											</db:td>
-										</db:tr>
-									</db:tbody>
-								</db:informaltable>
-							</db:section>
-						</db:section>
-						
-					</db:section>
-				</db:section>
-			</db:section>
-			<db:section xml:id="ea.23f6e412-bf5b-11e5-a56a-35b34376b412">
-				<db:title>AF003_Requirements_2_(ssss) (CAP)</db:title>
-				
-				<db:informaltable style="EAMod Requirement">
-					<db:col width="10%" />
-					<db:col width="15%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>CAP</db:th>
-							<db:th>AF003</db:th>
-							<db:th>Schnittstellen</db:th>
-							<db:th>Identified</db:th>
-						</db:tr>
-					</db:thead>
-					<db:tbody>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Anforderungstyp</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>SecurityRequirement</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Formale Definition</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Priorität</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Must have</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Begründung &amp; Nutzen</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para></db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Ziele</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Z002</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Interessengruppen</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>S01</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Quelle(n)</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Q008</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td colspan="2">
-								<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
-							</db:td>
-							<db:td colspan="2">
-								<db:para>Functionality.Compliance</db:para>
-							</db:td>
-						</db:tr>
-					</db:tbody>
-				</db:informaltable>
-				
-			</db:section>
-		</db:section>
-		<db:section>
-			<db:title>SU02_Normen, Standards und Praktiken</db:title>
-			
-			
-			<db:para>Konkrete Anforderungen bez&#252;glich
-			         anzuwendender Normen und
-			         Standards. Dies k&#246;nnen beispielsweise
-			         Bundesstandards des ISB, Normen
-			         nach ISO oder branchen&#252;bliche
-			         Praktiken sein.
-			         Hinweis: Die Normen, Standards und
-			         Praktiken selbst repr&#228;sentieren Quellen,
-			         aus welchen Anforderungen an das
-			         System / Produkt abgeleitet werden
-			         k&#246;nnen.</db:para>
-			<db:section xml:id="ea.4f2b2d26-d652-11e5-beff-c5494779b7d9">
+			</db:informaltable>
+			<db:section  xml:id="ea.4f2b2d26-d652-11e5-beff-c5494779b7d9">
 				<db:title>AF001_ddd (CAP)</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -2141,7 +2303,7 @@
 						<db:tr>
 							<db:th>CAP</db:th>
 							<db:th>AF001</db:th>
-							<db:th>Schnittstellen</db:th>
+							<db:th>ddd</db:th>
 							<db:th>Identified</db:th>
 						</db:tr>
 					</db:thead>
@@ -2172,12 +2334,20 @@
 						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Begründung &amp; Nutzen</db:para>
+								<db:para>Dringend</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
+								<db:para>Ja</db:para>
 							</db:td>
 						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Wichtig</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>			
 						<db:tr>
 							<db:td colspan="2">
 								<db:para>Ziele</db:para>
@@ -2191,7 +2361,7 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01, S03</db:para>
+								<db:para>S01_Stakeholder_A, S03_Stakeholder_C</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2206,7 +2376,7 @@
 				</db:informaltable>
 				
 			</db:section>
-			<db:section xml:id="ea.429176da-debe-11e5-bf7d-117d548070bb">
+			<db:section  xml:id="ea.429176da-debe-11e5-bf7d-117d548070bb">
 				<db:title>AF002_Constraint (CAP)</db:title>
 				
 				<db:informaltable style="EAMod Requirement">
@@ -2218,7 +2388,7 @@
 						<db:tr>
 							<db:th>CAP</db:th>
 							<db:th>AF002</db:th>
-							<db:th>Schnittstellen</db:th>
+							<db:th>Constraint</db:th>
 							<db:th>Approved</db:th>
 						</db:tr>
 					</db:thead>
@@ -2249,12 +2419,20 @@
 						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Begründung &amp; Nutzen</db:para>
+								<db:para>Dringend</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
+								<db:para>Ja</db:para>
 							</db:td>
 						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Wichtig</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:para>Ja</db:para>
+							</db:td>
+						</db:tr>			
 						<db:tr>
 							<db:td colspan="2">
 								<db:para>Ziele</db:para>
@@ -2268,7 +2446,7 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01</db:para>
+								<db:para>S01_Stakeholder_A</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2285,10 +2463,29 @@
 			</db:section>
 		</db:section>
 	</db:chapter>
-	<db:chapter>
+	<db:chapter >
 		<db:title>Quellen</db:title>
 		
 		
+		<db:para>In der nachfolgenden Tabelle werden alle Quellen, welche für die Erhebung der Anforderungen verwendet wurden, aufgelistet. Folgende Arten von Quellen sind vorgegeben:</db:para>
+		<db:itemizedlist>
+			<db:listitem>
+				<db:para>Organisation</db:para>
+			</db:listitem>
+			<db:listitem>
+				<db:para>Person</db:para>
+			</db:listitem>
+			<db:listitem>
+				<db:para>Dokument</db:para>
+			</db:listitem>
+			<db:listitem>
+				<db:para>Kapitel</db:para>
+			</db:listitem>
+			<db:listitem>
+				<db:para>Referenz</db:para>
+			</db:listitem>	
+		</db:itemizedlist>
+		<db:para>In der nachfolgenden Tabelle werden alle Quellen, welche in diesem Dokument verwendet wurden, aufgeführt:</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="20%" />
 			<db:col width="20%" />
@@ -2425,7 +2622,7 @@
 		</db:informaltable>
 		
 	</db:chapter>
-	<db:section>
+	<db:chapter >
 		<db:title>Glossar</db:title>
 		
 		
@@ -2460,6 +2657,6 @@
 			</db:tbody>
 		</db:informaltable>		
 		
-	</db:section>
+	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,60d359ef-bb80-11e5-b2f7-f515c847fa35,Hash] -->

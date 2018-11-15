@@ -59,6 +59,9 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("e2eee980-d243-11e8-98f7-fd7700abae04")
     public cleon.common.resources.spec.resources.priority.javamodel.IPriority GetPriority();
 
+    @IDynamicResourceExtension.MethodId("b5b4c5e5-e8e8-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -84,10 +87,16 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("40854325-0dd1-11e6-a33d-238391a68770")
     public java.lang.String GetRequirementType();
 
+    @IDynamicResourceExtension.MethodId("555eef5e-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate();
+
   }
   
   public static interface IFormalFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("555eef5e-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IFormalFunctionalRequirement formalFunctionalRequirement);
+
   }
   
   public static class FormalFunctionalRequirementFunctionsImpl implements IFormalFunctionalRequirementFunctionsImpl {
@@ -96,11 +105,20 @@ public class FunctionSpace_Requirements {
 
     private FormalFunctionalRequirementFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IFormalFunctionalRequirement formalFunctionalRequirement) {
+      return formalFunctionalRequirement.selectTemplate() != null;
+    }
+
   }
   
   public static class FormalFunctionalRequirementFunctions {
 
     private FormalFunctionalRequirementFunctions() {}
+
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IFormalFunctionalRequirement formalFunctionalRequirement) {
+      return DynamicResourceUtil.invoke(IFormalFunctionalRequirementFunctionsImpl.class, FormalFunctionalRequirementFunctionsImpl.INSTANCE, formalFunctionalRequirement).HasTemplate(formalFunctionalRequirement);
+    }
 
   }
 
@@ -109,10 +127,16 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("64d252c1-0dd1-11e6-a33d-238391a68770")
     public java.lang.String GetRequirementType();
 
+    @IDynamicResourceExtension.MethodId("c52744a7-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate();
+
   }
   
   public static interface IUserStoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("c52744a7-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IUserStory userStory);
+
   }
   
   public static class UserStoryFunctionsImpl implements IUserStoryFunctionsImpl {
@@ -121,11 +145,20 @@ public class FunctionSpace_Requirements {
 
     private UserStoryFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IUserStory userStory) {
+      return false;
+    }
+
   }
   
   public static class UserStoryFunctions {
 
     private UserStoryFunctions() {}
+
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IUserStory userStory) {
+      return DynamicResourceUtil.invoke(IUserStoryFunctionsImpl.class, UserStoryFunctionsImpl.INSTANCE, userStory).HasTemplate(userStory);
+    }
 
   }
 
@@ -134,10 +167,16 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("6d6aa41a-0dd1-11e6-a33d-238391a68770")
     public java.lang.String GetRequirementType();
 
+    @IDynamicResourceExtension.MethodId("d9d17644-e8e8-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate();
+
   }
   
   public static interface ISimpleFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("d9d17644-e8e8-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.ISimpleFunctionalRequirement simpleFunctionalRequirement);
+
   }
   
   public static class SimpleFunctionalRequirementFunctionsImpl implements ISimpleFunctionalRequirementFunctionsImpl {
@@ -146,11 +185,20 @@ public class FunctionSpace_Requirements {
 
     private SimpleFunctionalRequirementFunctionsImpl() {}
 
+    @Override
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.ISimpleFunctionalRequirement simpleFunctionalRequirement) {
+      return false;
+    }
+
   }
   
   public static class SimpleFunctionalRequirementFunctions {
 
     private SimpleFunctionalRequirementFunctions() {}
+
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.ISimpleFunctionalRequirement simpleFunctionalRequirement) {
+      return DynamicResourceUtil.invoke(ISimpleFunctionalRequirementFunctionsImpl.class, SimpleFunctionalRequirementFunctionsImpl.INSTANCE, simpleFunctionalRequirement).HasTemplate(simpleFunctionalRequirement);
+    }
 
   }
 
@@ -408,6 +456,43 @@ public class FunctionSpace_Requirements {
 
   }
 
+  public static interface INonFunctionalRequirementFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("97329637-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate();
+
+  }
+  
+  public static interface INonFunctionalRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("97329637-e8f0-11e8-b810-cdb2b421fd42")
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.INonFunctionalRequirement nonFunctionalRequirement);
+
+  }
+  
+  public static class NonFunctionalRequirementFunctionsImpl implements INonFunctionalRequirementFunctionsImpl {
+
+    public static final INonFunctionalRequirementFunctionsImpl INSTANCE = new NonFunctionalRequirementFunctionsImpl();
+
+    private NonFunctionalRequirementFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.INonFunctionalRequirement nonFunctionalRequirement) {
+      return nonFunctionalRequirement.selectTemplate() != null;
+    }
+
+  }
+  
+  public static class NonFunctionalRequirementFunctions {
+
+    private NonFunctionalRequirementFunctions() {}
+
+    public static java.lang.Boolean HasTemplate(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.INonFunctionalRequirement nonFunctionalRequirement) {
+      return DynamicResourceUtil.invoke(INonFunctionalRequirementFunctionsImpl.class, NonFunctionalRequirementFunctionsImpl.INSTANCE, nonFunctionalRequirement).HasTemplate(nonFunctionalRequirement);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,Kk4UMesMsJyFL7Nn3AFa6mB+6Z0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,P/g490Vs5y56ylDeVsKq+EGUn0A=] */

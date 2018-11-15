@@ -624,6 +624,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IItemizedListFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0000c7ff-e8f6-11e8-b810-cdb2b421fd42")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ItemizedListFunctionsImpl implements IItemizedListFunctionsImpl {
+
+    public static final IItemizedListFunctionsImpl INSTANCE = new ItemizedListFunctionsImpl();
+
+    private ItemizedListFunctionsImpl() {}
+
+  }
+  
+  public static class ItemizedListFunctions {
+
+    private ItemizedListFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,bjzhGEY5Zo2RVAz8BSc+qTuiljQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,jTgb/zMjQ8vIQXHvcXAgM/PoshI=] */

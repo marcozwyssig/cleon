@@ -14,6 +14,7 @@ public class ChrvPackage {
   public static final Resource RequirementDocument = new Resource("cd2639d2-c027-11e5-b927-b1b055d0575f");
   public static final Resource RequirementsManagement_destinctions = new Resource("8b9ae9b3-0e1b-11e6-ae01-ef640c578b9b");
   public static final Resource RequirementsManagement_introduction = new Resource("b0f9dd15-1ccc-11e6-a935-d7e02aa7a126");
+  public static final Resource RequirementsManagement_about = new Resource("41ebc473-e8f2-11e8-b810-cdb2b421fd42");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +35,4 @@ public class ChrvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv,Q9WvCO+HSNYUGj3TQGSkCx4C6K8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv,vWf1u6oZOlj5Q8OldL0HJMezLOg=] */

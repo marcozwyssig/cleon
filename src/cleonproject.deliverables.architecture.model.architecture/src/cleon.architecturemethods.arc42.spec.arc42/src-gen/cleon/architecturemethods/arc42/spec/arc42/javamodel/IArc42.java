@@ -14,6 +14,8 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
   public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context select__V_3_aE_system_aE_scope_aE_and_aE_context();
   
+  public cleon.architecturemethods.arc42.spec.arc42._04_solution_strategy.javamodel.I__V_4_aE_Solution_aE_Strategy select__V_4_aE_solutuion_aE_strategy();
+  
   public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.I__V_5_aE_BuildingBlockView select__V_5_aE_buildingblockview();
   
   public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.I__V_7_aE_DeploymentView select__V_7_aE_deploymentview();
@@ -28,4 +30,4 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,/xlFSqLz8jn44R5vjT4k4RstOiY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,FLP1OUQiMEbbu/Nx9m/vIPjMC3c=] */

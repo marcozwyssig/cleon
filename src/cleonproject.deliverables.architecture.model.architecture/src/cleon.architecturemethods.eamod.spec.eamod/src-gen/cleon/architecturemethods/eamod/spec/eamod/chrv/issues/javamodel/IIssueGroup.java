@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IIssueGroup extends ch.actifsource.core.javamodel.INamedResource, cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementDocument, cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter {
+public interface IIssueGroup extends ch.actifsource.core.javamodel.INamedResource, cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementDocument, cleon.common.doc.spec.doc.chapter.javamodel.IAbstractNamedChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e33649ff-ce66-11e5-8041-092cb74c72f2");
   
@@ -12,4 +12,4 @@ public interface IIssueGroup extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33649ff-ce66-11e5-8041-092cb74c72f2,HmtOqo16mfIz6xtsqL6TW00T580=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33649ff-ce66-11e5-8041-092cb74c72f2,aags7tyN5sta/awOfsSx9pfe5NY=] */

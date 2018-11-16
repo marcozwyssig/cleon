@@ -5,7 +5,8 @@ import ch.actifsource.core.Resource;
 public class ChapterPackage {
   
   public static final Resource Chapter = new Resource("44b08026-d86d-11e4-aa2f-c11242a92b60");
-  public static final Resource NamedChapter = new Resource("cdb18e6a-1003-11e5-865e-55f33dbc76dc");
+  public static final Resource AbstractNamedChapter = new Resource("cdb18e6a-1003-11e5-865e-55f33dbc76dc");
+  public static final Resource NamedChapter = new Resource("5df8cdae-e98c-11e8-af5c-a5aa9dc47205");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class ChapterPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter,9oR1k/FHR4G6+VU0fmxPii0L9zg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter,nfwrJOFtnP0pAkX3UAPaoC+nzyk=] */

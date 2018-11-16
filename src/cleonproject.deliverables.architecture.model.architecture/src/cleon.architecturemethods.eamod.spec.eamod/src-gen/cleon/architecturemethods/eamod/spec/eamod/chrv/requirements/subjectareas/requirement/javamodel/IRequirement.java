@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectarea
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRequirement extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.doc.spec.doc.document.properties.member.javamodel.IAuthors, cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.INotes, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement, cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel.IIssueAware, ch.actifsource.core.javamodel.ICommentable, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoalAware, cleon.common.resources.spec.resources.priority.javamodel.IPriorityAware, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholderAware {
+public interface IRequirement extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractNamedChapter, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription, cleon.common.doc.spec.doc.document.properties.member.javamodel.IAuthors, cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.INotes, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement, cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel.IIssueAware, ch.actifsource.core.javamodel.ICommentable, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoalAware, cleon.common.resources.spec.resources.priority.javamodel.IPriorityAware, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholderAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("54365cab-ff9b-11e4-ac0a-959b440f987f");
   
@@ -34,4 +34,4 @@ public interface IRequirement extends cleon.common.doc.spec.doc.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,pfKRhFIO0BSP2d+L14jC22uOyaA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,MUTbkpjTTRmVu/pdIeUpnRdJIPc=] */

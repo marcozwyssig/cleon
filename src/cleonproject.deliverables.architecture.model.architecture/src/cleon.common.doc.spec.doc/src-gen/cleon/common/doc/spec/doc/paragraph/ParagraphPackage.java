@@ -11,6 +11,7 @@ public class ParagraphPackage {
   public static final Resource Note = new Resource("3ec11f20-3087-11e5-8cdc-d5b441c8c3df");
   public static final Resource Admonition = new Resource("6e2a6478-308a-11e5-8cdc-d5b441c8c3df");
   public static final Resource ItemizedList = new Resource("f18903b6-e8f5-11e8-b810-cdb2b421fd42");
+  public static final Resource StandardParagraph = new Resource("f5a1c130-e989-11e8-af5c-a5aa9dc47205");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.paragraph,g0FCz7Vaqh96zImvCx4QrVK92cE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.paragraph,XBwdxMT2E1C2RgE++U0kEUsOBVI=] */

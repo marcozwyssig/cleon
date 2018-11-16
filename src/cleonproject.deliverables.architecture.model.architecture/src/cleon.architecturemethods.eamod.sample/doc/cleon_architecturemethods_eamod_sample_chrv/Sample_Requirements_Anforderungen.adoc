@@ -9,6 +9,24 @@
 
 
 
+== Einleitung
+
+
+
+
+=== Leserkreis
+
+
+
+* Test 1
+* Test 2
+* Test
+
+
+
+
+
+
 == Einführung
 
 
@@ -32,7 +50,10 @@ My TEst
 
 
 
-Mit den Treiber werden die Motive für die Ziele explizit erläutert, um die Nachvollziehbarkeit der Ziele und den Anforderungen zu gewährleisten.
+Mit den Treibern wird die Motivation für die in diesem Dokument festlegten Anforderungen zwecks die Nachvollziehbarkeit aufgeführt.
+Jeder Treiber kann einer Quelle zugeordnet werden. Die Quelle stellt den Ursprung respektive die Herkunft des entsprechenden Treibers dar. 
+Als Quellenarten kommen die Arten "Organisation", "Person", "Dokument", "Kapitel" oder "Referenz" in Frage.</db:para>
+In der nachfolgenden Tabelle werden alle festgelegten Treiber aufgeführt:
 
 [cols="2,5,2" options="header, footer"]
 |===
@@ -101,6 +122,7 @@ my Driver my Driver
 
 
 
+Ziele sind in der Regel Unternehmensziele. Jedes Ziel kann an einer Quelle zugeordnet wer-den. Jedes Ziel adressiert im Minimum einen Treiber.
 In der nachfolgenden Tabelle werden alle Ziele, welche mit dem System erfüllt werden sollen, aufgelistet.
 
 [cols="2,5" options="header, footer"]
@@ -322,9 +344,8 @@ S03
 
 
 
-Die nachfolgende Tabelle dient der Beschreibung von Architekturprinzipien, die als
-generischer Ausgangspunkt für nichtfunktionale Anforderungen und Randbedingungen
-dienen.
+Mit den Prinzipien werden die übergeordneten Gesetzmässigkeiten für das Vorhaben adressiert. Die Prinzipien können aus untergeordneten Prinzipien bestehen.
+In der nachfolgenden Tabelle werden alle Prinzipien aufgeführt:
 
 [cols="2,5" options="header, footer"]
 |===
@@ -557,7 +578,7 @@ Ja
 . xref:S01[S01_Stakeholder_A]
 . xref:S02[S02_Stakeholder_B]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System muss fähig sein Rezepte drucken
 |
@@ -610,10 +631,6 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
-3+|
-
-|
 | _Betroffene Anforderungen_
 3+|
 . xref:AF104[AF104_Aggregated (FEA)]
@@ -665,10 +682,6 @@ Low
 | _Stakeholder_
 3+|
 . xref:S01[S01_Stakeholder_A]
-|
-| _Schablone_
-3+|
-
 |
 | _Qualitätsmerkmale (ISO 25000)_
 3+|
@@ -735,7 +748,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System muss fähig sein Rezepte auszudrucken
 |
@@ -787,7 +800,7 @@ High
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System sollte fähig sein Rezepte auszudrucken
 |
@@ -834,7 +847,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System muss fähig sein Rezepte auszudrucken
 |
@@ -881,7 +894,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System muss fähig sein Rezepte auszudrucken
 |
@@ -928,7 +941,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das System muss fähig sein Rezepte ausdrucken
 |
@@ -977,7 +990,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Das Gewicht des Smartphone muss kleiner gleich 100g sein
 |
@@ -1050,7 +1063,7 @@ Ja
 . xref:S01[S01_Stakeholder_A]
 . xref:S03[S03_Stakeholder_C]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Die Aussenhülle des Smartphones muss so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20°C bis 60°C betrieben werden kann    
 |
@@ -1099,7 +1112,7 @@ Ja
 3+|
 . xref:S01[S01_Stakeholder_A]
 |
-| _Schablone_
+| _Formale Definition_
 3+|
 Der Auftragnehmer muss ein Betriebshandbuch für den MP3-Player auszudrucken
 |

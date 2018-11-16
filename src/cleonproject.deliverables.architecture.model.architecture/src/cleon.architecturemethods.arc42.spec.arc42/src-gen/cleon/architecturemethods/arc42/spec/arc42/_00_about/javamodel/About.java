@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.spec.arc42._04_solution_strategy.javamodel;
+package cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class __V_4_aE_Solution_aE_Strategy extends DynamicResource implements I__V_4_aE_Solution_aE_Strategy {
+public class About extends DynamicResource implements IAbout {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<I__V_4_aE_Solution_aE_Strategy> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<I__V_4_aE_Solution_aE_Strategy>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbout> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbout>() {
     
     @Override
-    public I__V_4_aE_Solution_aE_Strategy create() {
-      return new __V_4_aE_Solution_aE_Strategy();
+    public IAbout create() {
+      return new About();
     }
     
     @Override
-    public I__V_4_aE_Solution_aE_Strategy create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new __V_4_aE_Solution_aE_Strategy(resourceRepository, resource);
+    public IAbout create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new About(resourceRepository, resource);
     }
   
   };
 
-  public __V_4_aE_Solution_aE_Strategy() {
-    super(I__V_4_aE_Solution_aE_Strategy.TYPE_ID);
+  public About() {
+    super(IAbout.TYPE_ID);
   }
   
-  public __V_4_aE_Solution_aE_Strategy(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, I__V_4_aE_Solution_aE_Strategy.TYPE_ID);
+  public About(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IAbout.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class __V_4_aE_Solution_aE_Strategy extends DynamicResource implements I_
     return _getList(cleon.common.doc.spec.doc.javamodel.IStandardDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardDocumentElementComposite_documentElements);
   }
 
-  public __V_4_aE_Solution_aE_Strategy setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IStandardDocumentElement> documentElements) {
+  public About setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IStandardDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardDocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -65,7 +65,7 @@ public class __V_4_aE_Solution_aE_Strategy extends DynamicResource implements I_
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public __V_4_aE_Solution_aE_Strategy setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public About setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -82,4 +82,4 @@ public class __V_4_aE_Solution_aE_Strategy extends DynamicResource implements I_
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,VWkwXd3gzGP9zXk0YvY/1dTji8A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d84d5863-e990-11e8-af5c-a5aa9dc47205,CfXFmxJg74ngsN+M77rq6vlMAlI=] */

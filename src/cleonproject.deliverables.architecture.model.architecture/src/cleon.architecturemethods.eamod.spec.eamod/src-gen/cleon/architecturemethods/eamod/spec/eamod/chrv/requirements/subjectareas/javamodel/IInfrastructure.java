@@ -3,10 +3,10 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectarea
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
 /**
- * Anforderungen an die Infrastruktur. Dies
- * können beispielsweise Anforderungen
- * an Räumlichkeiten und deren
- * Ausstattung oder an die erforderliche ITAusstattung sein.
+ * Anforderungen an die Infrastruktur. Dies können beispielsweise Anforderungen
+ * an Räumlichkeiten und deren Ausstattung oder an die erforderliche ITAusstattung
+ * sein.
+ * 
  */
 public interface IInfrastructure extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea {
 
@@ -14,4 +14,4 @@ public interface IInfrastructure extends cleon.architecturemethods.eamod.spec.ea
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3ea6313-0c76-11e6-86c5-87a8b520dd59,Yzej/Xr5ELdmvoy6leR4/edStks=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3ea6313-0c76-11e6-86c5-87a8b520dd59,RhEa9wWvZKIU+gBEr4iRiYg3nCo=] */

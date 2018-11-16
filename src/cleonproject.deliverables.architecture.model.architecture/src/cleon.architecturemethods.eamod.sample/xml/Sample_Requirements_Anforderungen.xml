@@ -299,7 +299,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q002</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -307,7 +311,23 @@
 							<db:para>Ziel(e)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Z002, Z003, Z004, Z005, Z006</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Z002_Goal_1</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Z003_Goal 1.2</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Z004_Goal 2</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Z005_Goal 2.1</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Z006_Goal 1.3</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -342,7 +362,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q002</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -350,7 +374,6 @@
 							<db:para>Ziel(e)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para></db:para>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -514,7 +537,11 @@
 							<db:para>Treiber</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>DR001_Driver_1</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>DR001_Driver_1</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>		
 					<db:tr>
@@ -522,7 +549,20 @@
 							<db:para>Prinzip(ien)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>P004, P002, P001, P003</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>P004_A</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>P002_Principle_B</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>P001_Principe_C</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>P003_sss</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>		
 					<db:tr>
@@ -530,7 +570,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q005</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q005_Person_Peter M&#252;ller</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -538,7 +582,41 @@
 							<db:para>Anforderungen</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>AF006, AF003, AF004, AF007, AF001, AF002, AF100, AF101, AF102, AF103, AF104</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>AF006_Requirements_1 (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF003_Requirements_2_(ssss) (CAP)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF004_Requirements_2_1 (CAP)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF007_sss (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF001_ddd (CAP)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF002_Constraint (CAP)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF100_sss (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF101_sss (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF102_sss (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF103_sss (FEA)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>AF104_Aggregated (FEA)</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -579,7 +657,11 @@
 								<db:para>Treiber</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>DR001_Driver_1</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>DR001_Driver_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -587,7 +669,6 @@
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -595,7 +676,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q005</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q005_Person_Peter M&#252;ller</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -603,7 +688,14 @@
 								<db:para>Anforderungen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>AF006, AF004</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>AF006_Requirements_1 (FEA)</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>AF004_Requirements_2_1 (CAP)</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -646,7 +738,11 @@
 								<db:para>Treiber</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>DR001_Driver_1</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>DR001_Driver_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -654,7 +750,6 @@
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -662,7 +757,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q005</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q005_Person_Peter M&#252;ller</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -670,7 +769,6 @@
 								<db:para>Anforderungen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -714,7 +812,11 @@
 							<db:para>Treiber</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>DR001_Driver_1</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>DR001_Driver_1</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>		
 					<db:tr>
@@ -722,7 +824,6 @@
 							<db:para>Prinzip(ien)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para></db:para>
 						</db:td>
 					</db:tr>		
 					<db:tr>
@@ -730,7 +831,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q001</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -738,7 +843,6 @@
 							<db:para>Anforderungen</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para></db:para>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -779,7 +883,11 @@
 								<db:para>Treiber</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>DR001_Driver_1</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>DR001_Driver_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -787,7 +895,6 @@
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
 							</db:td>
 						</db:tr>		
 						<db:tr>
@@ -795,7 +902,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q001</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -803,7 +914,6 @@
 								<db:para>Anforderungen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para></db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -914,7 +1024,11 @@
 							<db:para>Ziele</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Z002</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Z002_Goal_1</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -922,7 +1036,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q008</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q008_Dokument_cccc</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>		
 				</db:tbody>
@@ -963,7 +1081,11 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -971,7 +1093,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q009</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q009_Dokument_aaaa</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>		
 					</db:tbody>
@@ -1015,7 +1141,11 @@
 							<db:para>Ziele</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Z002</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Z002_Goal_1</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -1023,7 +1153,11 @@
 							<db:para>Quelle(n)</db:para>
 						</db:td>
 						<db:td colspan="2">
-							<db:para>Q009</db:para>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Q009_Dokument_aaaa</db:para>
+								</db:listitem>
+							</db:itemizedlist>
 						</db:td>
 					</db:tr>		
 				</db:tbody>
@@ -1064,7 +1198,11 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1072,7 +1210,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q009</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q009_Dokument_aaaa</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>		
 					</db:tbody>
@@ -1527,7 +1669,14 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002, Z003</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>Z003_Goal 1.2</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1535,7 +1684,14 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01_Stakeholder_A, S02_Stakeholder_B</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>S02_Stakeholder_B</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1543,7 +1699,17 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q007, Q011, Q010</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q007_Organisation_ar</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>Q011_Workshop_dfsfsfsf</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>Q010_Dokument_aaaa_Kapitel_sadfasdfs_Referenz_xxx</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -1603,7 +1769,11 @@
 										<db:para>Ziele</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Z002</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Z002_Goal_1</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1611,7 +1781,11 @@
 										<db:para>Interessengruppen</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>S01_Stakeholder_A</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1619,7 +1793,11 @@
 										<db:para>Quelle(n)</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Q002</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -1682,7 +1860,14 @@
 										<db:para>Ziele</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Z002, Z003</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Z002_Goal_1</db:para>
+											</db:listitem>
+											<db:listitem>
+												<db:para>Z003_Goal 1.2</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1690,7 +1875,11 @@
 										<db:para>Interessengruppen</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>S01_Stakeholder_A</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1698,7 +1887,11 @@
 										<db:para>Quelle(n)</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Q009</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Q009_Dokument_aaaa</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1706,7 +1899,14 @@
 										<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Functionality.Suitability, Security.Non-repudiation</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Functionality.Suitability</db:para>
+											</db:listitem>
+											<db:listitem>
+												<db:para>Security.Non-repudiation</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -1775,7 +1975,11 @@
 										<db:para>Ziele</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Z002</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Z002_Goal_1</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1783,7 +1987,11 @@
 										<db:para>Interessengruppen</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>S01_Stakeholder_A</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>S01_Stakeholder_A</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 								<db:tr>
@@ -1791,7 +1999,11 @@
 										<db:para>Quelle(n)</db:para>
 									</db:td>
 									<db:td colspan="2">
-										<db:para>Q001</db:para>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -1859,7 +2071,11 @@
 												<db:para>Ziele</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Z002</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Z002_Goal_1</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -1867,7 +2083,11 @@
 												<db:para>Interessengruppen</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>S01_Stakeholder_A</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>S01_Stakeholder_A</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -1875,7 +2095,11 @@
 												<db:para>Quelle(n)</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Q001</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 									</db:tbody>
@@ -1942,7 +2166,11 @@
 												<db:para>Ziele</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Z002</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Z002_Goal_1</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -1950,7 +2178,11 @@
 												<db:para>Interessengruppen</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>S01_Stakeholder_A</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>S01_Stakeholder_A</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -1958,7 +2190,11 @@
 												<db:para>Quelle(n)</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Q001</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 									</db:tbody>
@@ -2025,7 +2261,11 @@
 												<db:para>Ziele</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Z002</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Z002_Goal_1</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -2033,7 +2273,11 @@
 												<db:para>Interessengruppen</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>S01_Stakeholder_A</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>S01_Stakeholder_A</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -2041,7 +2285,11 @@
 												<db:para>Quelle(n)</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Q001</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 									</db:tbody>
@@ -2108,7 +2356,11 @@
 												<db:para>Ziele</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Z002</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Z002_Goal_1</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -2116,7 +2368,11 @@
 												<db:para>Interessengruppen</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>S01_Stakeholder_A</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>S01_Stakeholder_A</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 										<db:tr>
@@ -2124,7 +2380,11 @@
 												<db:para>Quelle(n)</db:para>
 											</db:td>
 											<db:td colspan="2">
-												<db:para>Q001</db:para>
+												<db:itemizedlist>
+													<db:listitem>
+														<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
+													</db:listitem>
+												</db:itemizedlist>
 											</db:td>
 										</db:tr>
 									</db:tbody>
@@ -2197,7 +2457,11 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2205,7 +2469,11 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01_Stakeholder_A</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2213,7 +2481,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q008</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q008_Dokument_cccc</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2221,7 +2493,11 @@
 								<db:para>Qualitätsmerkmale (ISO 25000)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Functionality.Compliance</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Functionality.Compliance</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2363,7 +2639,11 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2371,7 +2651,14 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01_Stakeholder_A, S03_Stakeholder_C</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>S03_Stakeholder_C</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2379,7 +2666,14 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q005, Q013</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q005_Person_Peter M&#252;ller</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>Q013_Dokument_MyDocument_Kapitel_MyChapter</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2448,7 +2742,11 @@
 								<db:para>Ziele</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Z002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Z002_Goal_1</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2456,7 +2754,11 @@
 								<db:para>Interessengruppen</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>S01_Stakeholder_A</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>S01_Stakeholder_A</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2464,7 +2766,11 @@
 								<db:para>Quelle(n)</db:para>
 							</db:td>
 							<db:td colspan="2">
-								<db:para>Q002</db:para>
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
+									</db:listitem>
+								</db:itemizedlist>
 							</db:td>
 						</db:tr>
 					</db:tbody>

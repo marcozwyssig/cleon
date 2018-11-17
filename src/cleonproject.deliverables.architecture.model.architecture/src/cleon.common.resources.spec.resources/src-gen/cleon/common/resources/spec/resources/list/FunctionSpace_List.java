@@ -2,8 +2,6 @@ package cleon.common.resources.spec.resources.list;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
-
-
 import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
@@ -110,7 +108,7 @@ public class FunctionSpace_List {
         		.skip(80)
                 .limit(20)
                 .collect(Collectors.toList());      
-        /* End Protected Region   [[9b3002aa-ea53-11e8-9dfb-85981d867b8c]] */
+      /* End Protected Region   [[9b3002aa-ea53-11e8-9dfb-85981d867b8c]] */
     }
 
   }

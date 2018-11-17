@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.architecturemethods.eamod.template.docbook</name>
-	<comment></comment>
+	<comment/>
 	<projects>
 		<project>cleon.architecturemethods.eamod.spec.analysis</project>
 		<project>cleon.architecturemethods.eamod.spec.testing</project>
@@ -21,12 +21,12 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
+			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>ch.actifsource.environment.builder</name>
+			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
@@ -35,4 +35,10 @@
 		<nature>ch.actifsource.environment.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,8276ec99-ca56-11e8-9e9d-8dc67753571a,u2MxNjUtad1u/XjlpFJNoD7j7qQ=] -->

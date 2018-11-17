@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.common.resources.spec.resources
 Bundle-SymbolicName: cleon.common.resources.spec.resources.builtin;singleton:=true
-Bundle-Version: 0.4.11
+Bundle-Version: 0.4.12
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -26,5 +26,6 @@ Export-Package: cleon.common.resources.spec.resources,cleon.common.resources.spe
  cleon.common.resources.spec.resources.availability,cleon.common.resources.spec.resources.availability.javamodel,
  cleon.common.resources.spec.resources.confidentiality,cleon.common.resources.spec.resources.confidentiality.javamodel,
  cleon.common.resources.spec.resources.cardinality,cleon.common.resources.spec.resources.cardinality.javamodel,
- cleon.common.resources.spec.resources.complexity,cleon.common.resources.spec.resources.complexity.javamodel
+ cleon.common.resources.spec.resources.complexity,cleon.common.resources.spec.resources.complexity.javamodel,
+ cleon.common.resources.spec.resources.list,cleon.common.resources.spec.resources.list.javamodel
 

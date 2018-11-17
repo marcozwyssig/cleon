@@ -464,19 +464,19 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.architecturemethods.eamod"/>
       <import feature="cleon.applications.actifsource"/>
-      <import feature="cleon.common.glossary"/>
-      <import feature="cleon.projectmethods.hermes"/>
-      <import feature="cleon.common.analysis"/>
-      <import feature="cleon.common.doc"/>
-      <import feature="cleon.common.resources"/>
-      <import feature="cleon.common.xml"/>
-      <import feature="cleon.modelinglanguages.uml"/>
-      <import feature="cleon.common.modularity"/>
       <import feature="cleon.architecturemethods.arc42"/>
       <import feature="cleon.architecturestylesandpatterns.eda"/>
       <import feature="cleon.architecturestylesandpatterns.soa"/>
+      <import feature="cleon.architecturemethods.eamod"/>
+      <import feature="cleon.modelinglanguages.uml"/>
+      <import feature="cleon.common.modularity"/>
+      <import feature="cleon.common.doc"/>
+      <import feature="cleon.common.resources"/>
+      <import feature="cleon.common.xml"/>
+      <import feature="cleon.common.glossary"/>
+      <import feature="cleon.projectmethods.hermes"/>
+      <import feature="cleon.common.analysis"/>
    </requires>
    <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.3.2" unpack="false"/>   
 </feature>

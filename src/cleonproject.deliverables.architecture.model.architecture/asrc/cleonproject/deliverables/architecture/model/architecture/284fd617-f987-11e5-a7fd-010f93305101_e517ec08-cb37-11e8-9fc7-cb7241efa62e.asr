@@ -10,6 +10,7 @@
   <owns predicate="e0532bab-5201-11e5-89ac-35d4069568da">
     <resource statement-guid="da3f23c6-d180-11e8-a09c-8fbeab9d7daa" type="resource" guid="da3efcb3-d180-11e8-a09c-8fbeab9d7daa" />
     <resource statement-guid="dc60a441-d180-11e8-a09c-8fbeab9d7daa" type="resource" guid="dc607d2e-d180-11e8-a09c-8fbeab9d7daa" />
+    <resource statement-guid="fca618bf-eaaf-11e8-98cb-4d5808941776" type="resource" guid="fca5f1ac-eaaf-11e8-98cb-4d5808941776" />
   </owns>
   <owns predicate="37b032e2-3fd8-11e8-bd50-b94594551673">
     <resource statement-guid="e695d91e-cb37-11e8-9fc7-cb7241efa62e" type="resource" guid="e69563ea-cb37-11e8-9fc7-cb7241efa62e">
@@ -95,6 +96,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="dcaf8798-d180-11e8-a09c-8fbeab9d7daa" type="literal">xml</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fca618bf-eaaf-11e8-98cb-4d5808941776">
+      <resource guid="fca5f1ac-eaaf-11e8-98cb-4d5808941776">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fca618be-eaaf-11e8-98cb-4d5808941776" type="resource" guid="c8b68e26-5201-11e5-89ac-35d4069568da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fd7fd5f7-eaaf-11e8-98cb-4d5808941776" type="literal">plantuml</object>
         </predicate>
       </resource>
     </object>

@@ -447,31 +447,6 @@ public class FunctionSpace_CHRV {
 
   }
 
-  public static interface ISubjectAreaFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("48643e07-15e2-11e6-b588-912e2ce0f2b0")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface ISubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SubjectAreaFunctionsImpl implements ISubjectAreaFunctionsImpl {
-
-    public static final ISubjectAreaFunctionsImpl INSTANCE = new SubjectAreaFunctionsImpl();
-
-    private SubjectAreaFunctionsImpl() {}
-
-  }
-  
-  public static class SubjectAreaFunctions {
-
-    private SubjectAreaFunctions() {}
-
-  }
-
   public static interface IMotivationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2aced436-a529-11e8-a2c4-7500fc0b7ba9")
@@ -499,4 +474,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,H4Avc8qfx35WVqg8ZCCNDsivHpQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,0QW4Mid3IVgbp3lJgy2KzYrO64c=] */

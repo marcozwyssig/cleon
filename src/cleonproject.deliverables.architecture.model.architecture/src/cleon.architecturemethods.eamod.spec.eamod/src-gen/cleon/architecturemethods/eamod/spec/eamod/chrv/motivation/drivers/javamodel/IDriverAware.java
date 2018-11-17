@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDriverAware extends ch.actifsource.core.javamodel.IResource {
+public interface IDriverAware extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("20cfa824-0abf-11e6-85a2-61e22bb4d1e3");
   
@@ -12,4 +12,4 @@ public interface IDriverAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,20cfa824-0abf-11e6-85a2-61e22bb4d1e3,RfHvQK6fCXGcmvkt6l630N26i54=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,20cfa824-0abf-11e6-85a2-61e22bb4d1e3,VPJFj8aSkrFxaKdzDw0mSKA/qVI=] */

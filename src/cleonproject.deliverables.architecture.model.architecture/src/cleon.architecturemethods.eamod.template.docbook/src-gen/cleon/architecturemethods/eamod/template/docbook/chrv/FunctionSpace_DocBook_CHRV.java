@@ -97,9 +97,6 @@ public class FunctionSpace_DocBook_CHRV {
 
   public static interface ISubjectAreaFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("f99b0ba5-3e12-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderContentElement();
-
   }
   
   public static interface ISubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -503,4 +500,7 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,8CdWTAEjVt/i0pIWq31mj8Fcg9w=] */
+      /* Begin Protected Region [[486b1761-e9f4-11e8-9dfb-85981d867b8c]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[486b1761-e9f4-11e8-9dfb-85981d867b8c]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,yVd8RHhQTX7YlUo5zUGVbipsJ8o=] */

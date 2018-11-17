@@ -28,10 +28,10 @@ public interface I__V_2_aE_Architecture_aE_Constraints extends cleon.common.doc.
   
   // relations
   
-  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints selectTechnicalConstraints();
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints selectTechnicalConstraints();
   
-  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints selectOrganizationalConstraints();
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints selectOrganizationalConstraints();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,5ylISu2GHCwsBbq3iOxXJehUIK8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,fgZ9YKgGx5TEQXM3tt09QyLIsuU=] */

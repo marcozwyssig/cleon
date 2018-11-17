@@ -25,6 +25,13 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.14",
  cleon.common.xml.spec.xml.builtin;bundle-version="0.4.14",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.14",
+ cleon.architecturemethods.arc42.template.plantuml.builtin;bundle-version="0.4.14",
+ cleon.architecturemethods.eamod.template.docbook.builtin;bundle-version="0.4.14",
+ cleon.modelinglanguages.uml.template.plantuml.builtin;bundle-version="0.4.14",
+ cleon.architecturemethods.eamod.spec.analysis.builtin;bundle-version="0.4.14",
+ cleon.architecturemethods.eamod.spec.testing.builtin;bundle-version="0.4.14",
+ cleon.common.glossary.template.docbook.builtin;bundle-version="0.4.14",
+ cleon.common.analysis.spec.analysis.builtin;bundle-version="0.4.14",
  cleon.common.doc.template.docbook.builtin;bundle-version="0.4.14",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.itarc42.template.docbook,cleon.architecturemethods.itarc42.template.docbook.javamodel

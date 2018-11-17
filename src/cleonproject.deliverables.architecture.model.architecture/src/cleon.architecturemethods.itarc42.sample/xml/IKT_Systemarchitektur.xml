@@ -9,17 +9,54 @@
 		
 		
 		<db:section >
-			<db:title>Qualit&#228;tsziele</db:title>
+			<db:title>Aufgabenstellung</db:title>
 			
 			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="30%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>SU01_Funktionalit&#228;t</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
 			
 			
 		</db:section>
 		<db:section >
-			<db:title>Aufgabenstellung</db:title>
+			<db:title>Qualit&#228;tsziele</db:title>
 			
 			
-			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="30%" />
+				<db:col width="70%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>sss</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 	</db:chapter>

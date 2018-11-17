@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Technical__F_Constraints extends DynamicResource implements ITechnical__F_Constraints {
+public class TechnicalConstraint extends DynamicResource implements ITechnicalConstraint {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnical__F_Constraints> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnical__F_Constraints>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnicalConstraint> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITechnicalConstraint>() {
     
     @Override
-    public ITechnical__F_Constraints create() {
-      return new Technical__F_Constraints();
+    public ITechnicalConstraint create() {
+      return new TechnicalConstraint();
     }
     
     @Override
-    public ITechnical__F_Constraints create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Technical__F_Constraints(resourceRepository, resource);
+    public ITechnicalConstraint create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new TechnicalConstraint(resourceRepository, resource);
     }
   
   };
 
-  public Technical__F_Constraints() {
-    super(ITechnical__F_Constraints.TYPE_ID);
+  public TechnicalConstraint() {
+    super(ITechnicalConstraint.TYPE_ID);
   }
   
-  public Technical__F_Constraints(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITechnical__F_Constraints.TYPE_ID);
+  public TechnicalConstraint(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ITechnicalConstraint.TYPE_ID);
   }
 
   // attributes
@@ -48,24 +48,23 @@ public class Technical__F_Constraints extends DynamicResource implements ITechni
      _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
-  // relations
-  
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
-  }
-
-  public Technical__F_Constraints setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  // relations
+  
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Technical__F_Constraints setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public TechnicalConstraint setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -76,10 +75,10 @@ public class Technical__F_Constraints extends DynamicResource implements ITechni
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ef433a64-e100-11e8-8499-a3b0fb3cad90,p6a0Bl7xnMM6U6jd/filRKtdkWU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ddbebc49-eaa8-11e8-88d3-bfc6b992bdec,XR8ZB9l2QFXp98rIo9xZt/p1eiw=] */

@@ -71,6 +71,16 @@ public class Requirements extends DynamicResource implements IRequirements {
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea> selectSubjectAreas() {
+    return _getList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_subjectAreas);
+  }
+
+  public Requirements setSubjectAreas(java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea> subjectAreas) {
+    _setList(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_subjectAreas, subjectAreas);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -89,6 +99,7 @@ public class Requirements extends DynamicResource implements IRequirements {
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_requirementsManagement, visitor);
+    _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_subjectAreas, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -98,5 +109,9 @@ public class Requirements extends DynamicResource implements IRequirements {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_requirementsManagement, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements> selectToMeSubjectAreas(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IRequirements.class, cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals._01_introduction_and_goalsPackage.Requirements_subjectAreas, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,DrjT4BznA0YUUo/22ilzTbuKfMQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,0bL7EM+TBRsXUHL4AV4EVjDmWlU=] */

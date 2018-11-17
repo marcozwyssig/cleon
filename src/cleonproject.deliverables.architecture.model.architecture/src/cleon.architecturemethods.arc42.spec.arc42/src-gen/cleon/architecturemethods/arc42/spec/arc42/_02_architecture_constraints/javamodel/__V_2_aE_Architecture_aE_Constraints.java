@@ -61,21 +61,21 @@ public class __V_2_aE_Architecture_aE_Constraints extends DynamicResource implem
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints selectOrganizationalConstraints() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints);
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints selectOrganizationalConstraints() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints);
   }
 
-  public __V_2_aE_Architecture_aE_Constraints setOrganizationalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints organizationalConstraints) {
+  public __V_2_aE_Architecture_aE_Constraints setOrganizationalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints organizationalConstraints) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints, organizationalConstraints);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints selectTechnicalConstraints() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints);
+  public cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints selectTechnicalConstraints() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints);
   }
 
-  public __V_2_aE_Architecture_aE_Constraints setTechnicalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints technicalConstraints) {
+  public __V_2_aE_Architecture_aE_Constraints setTechnicalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints technicalConstraints) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints, technicalConstraints);
     return this;
   }
@@ -98,20 +98,20 @@ public class __V_2_aE_Architecture_aE_Constraints extends DynamicResource implem
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints selectToMeTechnicalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnical__F_Constraints object) {
+  public static cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints selectToMeTechnicalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_technicalConstraints, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints selectToMeOrganizationalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizational__F_Constraints object) {
+  public static cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints selectToMeOrganizationalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.I__V_2_aE_Architecture_aE_Constraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.__V_2_aE_Architecture_aE_Constraints_organizationalConstraints, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,WBI/JJjE3j7a+e5EhPOxM8idepA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,YoZuM9TprzDzLyqLLgwLCFiWgcg=] */

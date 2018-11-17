@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="aac56e28-eaac-11e8-88d3-bfc6b992bdec">
+  <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <resource statement-guid="dc5d3377-eaac-11e8-88d3-bfc6b992bdec" type="resource" guid="dc5d0c64-eaac-11e8-88d3-bfc6b992bdec" />
+    <resource statement-guid="7697e5ef-eab0-11e8-88d3-bfc6b992bdec" type="resource" guid="7697bedc-eab0-11e8-88d3-bfc6b992bdec" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="aac56e2a-eaac-11e8-88d3-bfc6b992bdec" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="aac56e2b-eaac-11e8-88d3-bfc6b992bdec" type="literal">PlantUmlBuildConfig</object>
+  </predicate>
+  <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <object statement-guid="dc5d3377-eaac-11e8-88d3-bfc6b992bdec">
+      <resource guid="dc5d0c64-eaac-11e8-88d3-bfc6b992bdec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dc5d0c65-eaac-11e8-88d3-bfc6b992bdec" type="resource" guid="11b444f7-dc94-11dd-8de2-bb051d76fa6e" />
+        </predicate>
+        <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
+          <object statement-guid="dc5d0c66-eaac-11e8-88d3-bfc6b992bdec" type="resource" guid="dc593b73-eaac-11e8-88d3-bfc6b992bdec" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7697e5ef-eab0-11e8-88d3-bfc6b992bdec">
+      <resource guid="7697bedc-eab0-11e8-88d3-bfc6b992bdec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7697e5ee-eab0-11e8-88d3-bfc6b992bdec" type="resource" guid="54616975-8e4f-11e7-859f-5dd1441850fb" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

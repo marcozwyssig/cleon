@@ -193,6 +193,131 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface I__V_1_aE_IntroductionAndGoalsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b31330c7-eaa6-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface I__V_1_aE_IntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class __V_1_aE_IntroductionAndGoalsFunctionsImpl implements I__V_1_aE_IntroductionAndGoalsFunctionsImpl {
+
+    public static final I__V_1_aE_IntroductionAndGoalsFunctionsImpl INSTANCE = new __V_1_aE_IntroductionAndGoalsFunctionsImpl();
+
+    private __V_1_aE_IntroductionAndGoalsFunctionsImpl() {}
+
+  }
+  
+  public static class __V_1_aE_IntroductionAndGoalsFunctions {
+
+    private __V_1_aE_IntroductionAndGoalsFunctions() {}
+
+  }
+
+  public static interface IQualityGoalsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("004722f8-eaa7-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IQualityGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QualityGoalsFunctionsImpl implements IQualityGoalsFunctionsImpl {
+
+    public static final IQualityGoalsFunctionsImpl INSTANCE = new QualityGoalsFunctionsImpl();
+
+    private QualityGoalsFunctionsImpl() {}
+
+  }
+  
+  public static class QualityGoalsFunctions {
+
+    private QualityGoalsFunctions() {}
+
+  }
+
+  public static interface IRequirementsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("20923ca8-eaa8-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementsFunctionsImpl implements IRequirementsFunctionsImpl {
+
+    public static final IRequirementsFunctionsImpl INSTANCE = new RequirementsFunctionsImpl();
+
+    private RequirementsFunctionsImpl() {}
+
+  }
+  
+  public static class RequirementsFunctions {
+
+    private RequirementsFunctions() {}
+
+  }
+
+  public static interface ITechnicalConstraintsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0d8199df-eaa9-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ITechnicalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TechnicalConstraintsFunctionsImpl implements ITechnicalConstraintsFunctionsImpl {
+
+    public static final ITechnicalConstraintsFunctionsImpl INSTANCE = new TechnicalConstraintsFunctionsImpl();
+
+    private TechnicalConstraintsFunctionsImpl() {}
+
+  }
+  
+  public static class TechnicalConstraintsFunctions {
+
+    private TechnicalConstraintsFunctions() {}
+
+  }
+
+  public static interface IOrganizationalConstraintsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("13aff001-eaa9-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IOrganizationalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OrganizationalConstraintsFunctionsImpl implements IOrganizationalConstraintsFunctionsImpl {
+
+    public static final IOrganizationalConstraintsFunctionsImpl INSTANCE = new OrganizationalConstraintsFunctionsImpl();
+
+    private OrganizationalConstraintsFunctionsImpl() {}
+
+  }
+  
+  public static class OrganizationalConstraintsFunctions {
+
+    private OrganizationalConstraintsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,IDqnjf72v8IEkLhWxmIIl3AczLA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,dEt5Yruc69n6q+Mp9yQI33xh4N0=] */

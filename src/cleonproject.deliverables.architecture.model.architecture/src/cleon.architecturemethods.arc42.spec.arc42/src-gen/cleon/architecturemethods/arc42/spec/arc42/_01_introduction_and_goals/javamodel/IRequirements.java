@@ -51,6 +51,8 @@ public interface IRequirements extends cleon.common.doc.spec.doc.chapter.javamod
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectRequirementsManagement();
   
+  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea> selectSubjectAreas();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,HCjKzLJqZpDGrYbx+AKdsEIDGwk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9906e1c-11fc-11e5-848b-017a3a98ae34,qvEHhx8xLblv6IxYNxF8y96Od5Q=] */

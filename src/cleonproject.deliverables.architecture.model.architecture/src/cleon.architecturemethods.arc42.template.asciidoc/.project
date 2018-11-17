@@ -3,18 +3,25 @@
 	<name>cleon.architecturemethods.arc42.template.asciidoc</name>
 	<comment/>
 	<projects>
-		<project>cleon.common.doc.template.asciidoc</project>
+		<project>cleon.architecturemethods.arc42.template.plantuml</project>
+		<project>cleon.architecturemethods.eamod.template.asciidoc</project>
 		<project>cleon.architecturemethods.arc42.spec.arc42</project>
-		<project>cleon.common.doc.spec.doc</project>
-		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.modelinglanguages.uml.template.plantuml</project>
 		<project>cleon.architecturemethods.eamod.spec.eamod</project>
 		<project>cleon.modelinglanguages.uml.spec.uml2</project>
 		<project>cleon.common.glossary.spec.glossary</project>
 		<project>cleon.common.xml.spec.xmi</project>
 		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
 		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
 		<project>cleon.common.xml.spec.xml</project>
 		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.architecturemethods.eamod.spec.analysis</project>
+		<project>cleon.architecturemethods.eamod.spec.testing</project>
+		<project>cleon.common.glossary.template.asciidoc</project>
+		<project>cleon.common.analysis.spec.analysis</project>
+		<project>cleon.common.doc.template.asciidoc</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -38,4 +45,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,b2d51987-cb37-11e8-9fc7-cb7241efa62e,VDUddNj2DIutTitfMfTN5JKTYFE=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,b2d51987-cb37-11e8-9fc7-cb7241efa62e,gNc3cUzh8WjXBZ7VhcioTqm3+gU=] -->

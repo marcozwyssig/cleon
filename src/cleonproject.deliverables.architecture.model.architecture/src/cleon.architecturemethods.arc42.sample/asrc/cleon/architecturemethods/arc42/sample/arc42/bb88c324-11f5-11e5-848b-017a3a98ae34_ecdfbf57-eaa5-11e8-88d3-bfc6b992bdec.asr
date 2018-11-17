@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec">
+  <owns predicate="edef05a3-eaa8-11e8-88d3-bfc6b992bdec">
+    <resource statement-guid="67379ad7-eaa9-11e8-88d3-bfc6b992bdec" type="resource" guid="67379ad4-eaa9-11e8-88d3-bfc6b992bdec" />
+    <resource statement-guid="73ade9a3-eaa9-11e8-88d3-bfc6b992bdec" type="resource" guid="73ade99d-eaa9-11e8-88d3-bfc6b992bdec" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ecdfbf59-eaa5-11e8-88d3-bfc6b992bdec" type="resource" guid="ef433a64-e100-11e8-8499-a3b0fb3cad90" />
+  </predicate>
+  <predicate guid="edef05a3-eaa8-11e8-88d3-bfc6b992bdec">
+    <object statement-guid="67379ad7-eaa9-11e8-88d3-bfc6b992bdec">
+      <resource guid="67379ad4-eaa9-11e8-88d3-bfc6b992bdec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="67379ad6-eaa9-11e8-88d3-bfc6b992bdec" type="resource" guid="ddbebc49-eaa8-11e8-88d3-bfc6b992bdec" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a940c49-eaa9-11e8-88d3-bfc6b992bdec" type="literal">Randbedingung 1</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="706b41ba-eaa9-11e8-88d3-bfc6b992bdec" type="literal">sdfasdfadsfaf</object>
+          <object statement-guid="717fbefb-eaa9-11e8-88d3-bfc6b992bdec" type="literal">sdfadfasdf</object>
+          <object statement-guid="720828dc-eaa9-11e8-88d3-bfc6b992bdec" type="literal">asdfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="73ade9a3-eaa9-11e8-88d3-bfc6b992bdec">
+      <resource guid="73ade99d-eaa9-11e8-88d3-bfc6b992bdec">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="73ade99e-eaa9-11e8-88d3-bfc6b992bdec" type="resource" guid="ddbebc49-eaa8-11e8-88d3-bfc6b992bdec" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="73ade99f-eaa9-11e8-88d3-bfc6b992bdec" type="literal">Randbedingung 2</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="73ade9a0-eaa9-11e8-88d3-bfc6b992bdec" type="literal">sdfasdfadsfaf</object>
+          <object statement-guid="73ade9a1-eaa9-11e8-88d3-bfc6b992bdec" type="literal">sdfadfasdf</object>
+          <object statement-guid="73ade9a2-eaa9-11e8-88d3-bfc6b992bdec" type="literal">asdfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

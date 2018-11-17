@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISourceDocument extends cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource {
+public interface ISourceDocument extends cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceReferenceAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0322fa0c-bb80-11e5-b2f7-f515c847fa35");
   
@@ -14,4 +14,4 @@ public interface ISourceDocument extends cleon.architecturemethods.eamod.spec.ea
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,NG8qffft3ZyK6fSzN4ZSIFFNrLM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0322fa0c-bb80-11e5-b2f7-f515c847fa35,rq6FvCIapGcMdk5JQrLvq7wjhrM=] */

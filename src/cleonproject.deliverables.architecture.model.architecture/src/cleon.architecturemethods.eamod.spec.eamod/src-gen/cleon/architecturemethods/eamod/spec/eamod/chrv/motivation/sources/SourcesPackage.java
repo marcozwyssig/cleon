@@ -14,7 +14,7 @@ public class SourcesPackage {
   public static final Resource SourceWorkshop = new Resource("2054bb55-bb80-11e5-b2f7-f515c847fa35");
   public static final Resource Source_composites = new Resource("2f29e1b3-bb80-11e5-b2f7-f515c847fa35");
   public static final Resource SourceDocument_chapters = new Resource("4106ca15-bb80-11e5-b2f7-f515c847fa35");
-  public static final Resource SourceChapter_references = new Resource("2f826d14-bb81-11e5-b2f7-f515c847fa35");
+  public static final Resource SourceReferenceAware_references = new Resource("2f826d14-bb81-11e5-b2f7-f515c847fa35");
   public static final Resource SourceAware_originatesFromSource = new Resource("2e043b42-bb82-11e5-b2f7-f515c847fa35");
   public static final Resource FunctionSpace_aE_Source_Source = new Resource("4b8d7405-c58d-11e5-aeea-1db9268c0ee9");
   public static final Resource FunctionSpace_aE_Source_Sources = new Resource("29504eba-c97a-11e5-a64e-a5d84d8f1b45");
@@ -33,6 +33,7 @@ public class SourcesPackage {
   public static final Resource SourceDocument_url = new Resource("44097cfc-011a-11e8-a04c-8580a18663fd");
   public static final Resource SourcePerson_documents = new Resource("4e388555-0c1a-11e8-a610-d16349f454ef");
   public static final Resource SourceOrganization_workshop = new Resource("576e4e9a-0c1a-11e8-a610-d16349f454ef");
+  public static final Resource SourceReferenceAware = new Resource("51e1e58c-ea67-11e8-8092-1f65b9544bbd");
   
   /* Begin Protected Region [[user]] */
   
@@ -53,4 +54,4 @@ public class SourcesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources,G4v2x3p6ePgUi+Nm0CO+mATOHqs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources,k7lQvrA9m3mUtDWqokLMrZAzXsE=] */

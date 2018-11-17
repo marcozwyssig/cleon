@@ -35,6 +35,9 @@ public class FunctionSpace_Source {
     @IDynamicResourceExtension.MethodId("769bc163-38e7-11e8-8c35-85f8e4a22f42")
     public List<cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceAware> GetAllUsedSourceAware();
 
+    @IDynamicResourceExtension.MethodId("0e17d013-ea68-11e8-8092-1f65b9544bbd")
+    public java.lang.String GetCascadingName();
+
   }
   
   public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -250,4 +253,4 @@ public class FunctionSpace_Source {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,C15wKK6Ct3HgVUxw21pAgbRIW+o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b8d7402-c58d-11e5-aeea-1db9268c0ee9,e49iciAQx01b7gXkYjG6+e7yhV0=] */

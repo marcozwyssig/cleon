@@ -8,8 +8,8 @@ public interface ISourceReference extends cleon.architecturemethods.eamod.spec.e
   
   // relations
   
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter selectComposite();
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource selectComposite();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,eeCgV3SKC+hrmAS2tUkdp/HVTjk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,b+mu5exYFb85lWwxXR2HSs5Q+S8=] */

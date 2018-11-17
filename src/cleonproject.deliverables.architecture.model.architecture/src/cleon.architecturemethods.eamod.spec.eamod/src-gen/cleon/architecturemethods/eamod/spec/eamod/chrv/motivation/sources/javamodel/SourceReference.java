@@ -61,11 +61,11 @@ public class SourceReference extends DynamicResource implements ISourceReference
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter selectComposite() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource selectComposite() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite);
   }
 
-  public SourceReference setComposite(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter composite) {
+  public SourceReference setComposite(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource composite) {
     _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite, composite);
     return this;
   }
@@ -98,16 +98,16 @@ public class SourceReference extends DynamicResource implements ISourceReference
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.Source_composites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceReference selectToMeComposite(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceChapter object) {
+  public static cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceReference selectToMeComposite(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceReference.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceReference_composite, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,UgaPTWbfTgy89RR+GMMef+uvWFk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,BmAXiDtVPxB0Z1WKQLPduxAVoiw=] */

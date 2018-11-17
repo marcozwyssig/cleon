@@ -318,24 +318,40 @@ Description
 
 
 
-[cols="2,5,5a" options="header"]
+[cols="2,2,5a,5a" options="header"]
 |===
-| ID | Name | Beschreibung 
+| ID | Name | Beschreibung | Betroffene Anforderung 
 | 
 anchor:S01[]
 S01
 | Stakeholder_A
 |
+|
+. xref:AF001[AF001_ddd (CAP)]
+. xref:AF002[AF002_Constraint (CAP)]
+. xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
+. xref:AF004[AF004_Requirements_2_1 (CAP)]
+. xref:AF006[AF006_Requirements_1 (FEA)]
+. xref:AF007[AF007_sss (FEA)]
+. xref:AF100[AF100_sss (FEA)]
+. xref:AF101[AF101_sss (FEA)]
+. xref:AF102[AF102_sss (FEA)]
+. xref:AF103[AF103_sss (FEA)]
+. xref:AF104[AF104_Aggregated (FEA)]
 | 
 anchor:S02[]
 S02
 | Stakeholder_B
 |
+|
+. xref:AF006[AF006_Requirements_1 (FEA)]
 | 
 anchor:S03[]
 S03
 | Stakeholder_C
 |
+|
+. xref:AF001[AF001_ddd (CAP)]
 |===
 
 

@@ -207,7 +207,7 @@
 		<db:title>Treiber</db:title>
 		
 		
-		<db:para>Mit den Treibern wird die Motivation für die in diesem Dokument festlegten Anforderungen zwecks die Nachvollziehbarkeit aufgeführt.</db:para>
+		<db:para>Mit den Treibern wird die Motivation für die in diesem Dokument festlegten Anforderungen zwecks Nachvollziehbarkeit aufgeführt.</db:para>
 		<db:para>Jeder Treiber kann einer Quelle zugeordnet werden. Die Quelle stellt den Ursprung respektive die Herkunft des entsprechenden Treibers dar. 
 		Als Quellenarten kommen die Arten "Organisation", "Person", "Dokument", "Kapitel" oder "Referenz" in Frage.</db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle festgelegten Treiber aufgeführt:</db:para>
@@ -276,13 +276,11 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
+				<db:col width="75%" />
 					<db:thead>
 						<db:tr>
 							<db:th>DR001</db:th>
 							<db:th>Driver_1 (Risk)</db:th>
-							<db:th>Aligned</db:th>
 						</db:tr>
 					</db:thead>
 				<db:tbody>
@@ -290,7 +288,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>my Driver my Driver</db:para>
 						</db:td>
 					</db:tr>
@@ -298,7 +296,7 @@
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
@@ -310,7 +308,7 @@
 						<db:td>
 							<db:para>Ziel(e)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Z002_Goal_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4acb2520-c997-11e5-b35b-8fb753dd0798"/>]</db:para>
@@ -339,13 +337,11 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
+				<db:col width="75%" />
 					<db:thead>
 						<db:tr>
 							<db:th>DR002</db:th>
 							<db:th>Driver_2 (Chance)</db:th>
-							<db:th>Aligned</db:th>
 						</db:tr>
 					</db:thead>
 				<db:tbody>
@@ -353,7 +349,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para></db:para>
 						</db:td>
 					</db:tr>
@@ -361,7 +357,7 @@
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q002_Dokument_aaaa_Kapitel_sadfasdfs</db:para>
@@ -373,7 +369,7 @@
 						<db:td>
 							<db:para>Ziel(e)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 						</db:td>
 					</db:tr>
 				</db:tbody>

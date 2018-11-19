@@ -385,7 +385,7 @@
 		<db:title>Ziele</db:title>
 		
 		
-		<db:para>Ziele sind in der Regel Unternehmensziele. Jedes Ziel kann an einer Quelle zugeordnet werden. Jedes Ziel adressiert im Minimum einen Treiber.</db:para>
+		<db:para>Ziele sind in der Regel Unternehmensziele. Jedes Ziel kann einer Quelle zugeordnet werden. Jedes Ziel adressiert im Minimum einen Treiber.</db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle Ziele, welche mit dem System erfüllt werden sollen, aufgelistet.</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="18%" />
@@ -506,21 +506,19 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>Z002</db:th>
-							<db:th>Goal_1</db:th>
-							<db:th>Aligned</db:th>
-						</db:tr>
-					</db:thead>
+				<db:col width="75%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Z002</db:th>
+						<db:th>Goal_1</db:th>
+					</db:tr>
+				</db:thead>
 				<db:tbody>
 					<db:tr>
 						<db:td>
 							<db:para>Definition</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Goal_1</db:para>
 						</db:td>
 					</db:tr>
@@ -528,7 +526,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Description</db:para>
 						</db:td>
 					</db:tr>
@@ -536,7 +534,7 @@
 						<db:td>
 							<db:para>Treiber</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>DR001_Driver_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f733c33e-0d78-11e6-9f44-9d0000bae4df"/>]</db:para>
@@ -548,7 +546,7 @@
 						<db:td>
 							<db:para>Prinzip(ien)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>P001_Principe_C [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.176f532c-bf87-11e5-a56a-35b34376b412"/>]</db:para>
@@ -569,7 +567,7 @@
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q005_Organisation_ar_Person_Peter M&#252;ller</db:para>
@@ -579,9 +577,9 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>Anforderungen (1-20)</db:para>
+							<db:para>Anforderungen</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>AF001_ddd (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4f2b2d26-d652-11e5-beff-c5494779b7d9"/>]</db:para>
@@ -627,21 +625,19 @@
 				
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="25%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Z003</db:th>
-								<db:th>Goal 1.2</db:th>
-								<db:th>Aligned</db:th>
-							</db:tr>
-						</db:thead>
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Z003</db:th>
+							<db:th>Goal 1.2</db:th>
+						</db:tr>
+					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
 								<db:para>Definition</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Goal 1.2</db:para>
 							</db:td>
 						</db:tr>
@@ -649,7 +645,7 @@
 							<db:td>
 								<db:para>Beschreibung</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para></db:para>
 							</db:td>
 						</db:tr>
@@ -657,7 +653,7 @@
 							<db:td>
 								<db:para>Treiber</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>DR001_Driver_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f733c33e-0d78-11e6-9f44-9d0000bae4df"/>]</db:para>
@@ -669,14 +665,14 @@
 							<db:td>
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 							</db:td>
 						</db:tr>		
 						<db:tr>
 							<db:td>
 								<db:para>Quelle(n)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Q005_Organisation_ar_Person_Peter M&#252;ller</db:para>
@@ -686,9 +682,9 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Anforderungen (1-20)</db:para>
+								<db:para>Anforderungen</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>AF004_Requirements_2_1 (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2769003c-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
@@ -709,21 +705,19 @@
 				
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="25%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Z006</db:th>
-								<db:th>Goal 1.3</db:th>
-								<db:th>Aligned</db:th>
-							</db:tr>
-						</db:thead>
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Z006</db:th>
+							<db:th>Goal 1.3</db:th>
+						</db:tr>
+					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
 								<db:para>Definition</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Goal 1.3</db:para>
 							</db:td>
 						</db:tr>
@@ -731,7 +725,7 @@
 							<db:td>
 								<db:para>Beschreibung</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para></db:para>
 							</db:td>
 						</db:tr>
@@ -739,7 +733,7 @@
 							<db:td>
 								<db:para>Treiber</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>DR001_Driver_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f733c33e-0d78-11e6-9f44-9d0000bae4df"/>]</db:para>
@@ -751,14 +745,14 @@
 							<db:td>
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 							</db:td>
 						</db:tr>		
 						<db:tr>
 							<db:td>
 								<db:para>Quelle(n)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Q005_Organisation_ar_Person_Peter M&#252;ller</db:para>
@@ -777,21 +771,19 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>Z004</db:th>
-							<db:th>Goal 2</db:th>
-							<db:th>Aligned</db:th>
-						</db:tr>
-					</db:thead>
+				<db:col width="75%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Z004</db:th>
+						<db:th>Goal 2</db:th>
+					</db:tr>
+				</db:thead>
 				<db:tbody>
 					<db:tr>
 						<db:td>
 							<db:para>Definition</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Goal 2</db:para>
 						</db:td>
 					</db:tr>
@@ -799,7 +791,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para></db:para>
 						</db:td>
 					</db:tr>
@@ -807,7 +799,7 @@
 						<db:td>
 							<db:para>Treiber</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>DR001_Driver_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f733c33e-0d78-11e6-9f44-9d0000bae4df"/>]</db:para>
@@ -819,14 +811,14 @@
 						<db:td>
 							<db:para>Prinzip(ien)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 						</db:td>
 					</db:tr>		
 					<db:tr>
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
@@ -842,21 +834,19 @@
 				
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="25%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Z005</db:th>
-								<db:th>Goal 2.1</db:th>
-								<db:th>Aligned</db:th>
-							</db:tr>
-						</db:thead>
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Z005</db:th>
+							<db:th>Goal 2.1</db:th>
+						</db:tr>
+					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
 								<db:para>Definition</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Goal 2.1</db:para>
 							</db:td>
 						</db:tr>
@@ -864,7 +854,7 @@
 							<db:td>
 								<db:para>Beschreibung</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para></db:para>
 							</db:td>
 						</db:tr>
@@ -872,7 +862,7 @@
 							<db:td>
 								<db:para>Treiber</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>DR001_Driver_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f733c33e-0d78-11e6-9f44-9d0000bae4df"/>]</db:para>
@@ -884,14 +874,14 @@
 							<db:td>
 								<db:para>Prinzip(ien)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 							</db:td>
 						</db:tr>		
 						<db:tr>
 							<db:td>
 								<db:para>Quelle(n)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Q001_Dokument_cccc_Kapitel_ddd</db:para>
@@ -977,21 +967,19 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>P004</db:th>
-							<db:th>A</db:th>
-							<db:th>Aligned</db:th>
-						</db:tr>
-					</db:thead>
+				<db:col width="75%" />
+				<db:thead>
+					<db:tr>
+						<db:th>P004</db:th>
+						<db:th>A</db:th>
+					</db:tr>
+				</db:thead>
 				<db:tbody>
 					<db:tr>
 						<db:td>
 							<db:para>Definition</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>A</db:para>
 						</db:td>
 					</db:tr>
@@ -999,7 +987,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Description</db:para>
 						</db:td>
 					</db:tr>
@@ -1007,7 +995,7 @@
 						<db:td>
 							<db:para>Ziele</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Z002_Goal_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4acb2520-c997-11e5-b35b-8fb753dd0798"/>]</db:para>
@@ -1019,7 +1007,7 @@
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q008_Dokument_cccc</db:para>
@@ -1034,21 +1022,19 @@
 				
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="25%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-						<db:thead>
-							<db:tr>
-								<db:th>P003</db:th>
-								<db:th>sss</db:th>
-								<db:th>Aligned</db:th>
-							</db:tr>
-						</db:thead>
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>P003</db:th>
+							<db:th>sss</db:th>
+						</db:tr>
+					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
 								<db:para>Definition</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>sss</db:para>
 							</db:td>
 						</db:tr>
@@ -1056,7 +1042,7 @@
 							<db:td>
 								<db:para>Beschreibung</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Description</db:para>
 							</db:td>
 						</db:tr>
@@ -1064,7 +1050,7 @@
 							<db:td>
 								<db:para>Ziele</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Z002_Goal_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4acb2520-c997-11e5-b35b-8fb753dd0798"/>]</db:para>
@@ -1076,7 +1062,7 @@
 							<db:td>
 								<db:para>Quelle(n)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Q009_Dokument_aaaa</db:para>
@@ -1094,21 +1080,19 @@
 			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
-				<db:col width="60%" />
-				<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>P002</db:th>
-							<db:th>Principle_B</db:th>
-							<db:th>Aligned</db:th>
-						</db:tr>
-					</db:thead>
+				<db:col width="75%" />
+				<db:thead>
+					<db:tr>
+						<db:th>P002</db:th>
+						<db:th>Principle_B</db:th>
+					</db:tr>
+				</db:thead>
 				<db:tbody>
 					<db:tr>
 						<db:td>
 							<db:para>Definition</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Principle_B</db:para>
 						</db:td>
 					</db:tr>
@@ -1116,7 +1100,7 @@
 						<db:td>
 							<db:para>Beschreibung</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:para>Description</db:para>
 						</db:td>
 					</db:tr>
@@ -1124,7 +1108,7 @@
 						<db:td>
 							<db:para>Ziele</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Z002_Goal_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4acb2520-c997-11e5-b35b-8fb753dd0798"/>]</db:para>
@@ -1136,7 +1120,7 @@
 						<db:td>
 							<db:para>Quelle(n)</db:para>
 						</db:td>
-						<db:td colspan="2">
+						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
 									<db:para>Q009_Dokument_aaaa</db:para>
@@ -1151,21 +1135,19 @@
 				
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="25%" />
-					<db:col width="60%" />
-					<db:col width="15%" />
-						<db:thead>
-							<db:tr>
-								<db:th>P001</db:th>
-								<db:th>Principe_C</db:th>
-								<db:th>Aligned</db:th>
-							</db:tr>
-						</db:thead>
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>P001</db:th>
+							<db:th>Principe_C</db:th>
+						</db:tr>
+					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
 								<db:para>Definition</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Principe_C</db:para>
 							</db:td>
 						</db:tr>
@@ -1173,7 +1155,7 @@
 							<db:td>
 								<db:para>Beschreibung</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:para>Description</db:para>
 							</db:td>
 						</db:tr>
@@ -1181,7 +1163,7 @@
 							<db:td>
 								<db:para>Ziele</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Z002_Goal_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4acb2520-c997-11e5-b35b-8fb753dd0798"/>]</db:para>
@@ -1193,7 +1175,7 @@
 							<db:td>
 								<db:para>Quelle(n)</db:para>
 							</db:td>
-							<db:td colspan="2">
+							<db:td>
 								<db:itemizedlist>
 									<db:listitem>
 										<db:para>Q009_Dokument_aaaa</db:para>

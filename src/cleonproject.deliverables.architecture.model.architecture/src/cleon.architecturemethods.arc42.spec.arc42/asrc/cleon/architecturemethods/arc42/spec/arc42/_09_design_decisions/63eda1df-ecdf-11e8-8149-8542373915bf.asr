@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="63eda1df-ecdf-11e8-8149-8542373915bf">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="2d1c50e4-ece0-11e8-8149-8542373915bf" type="resource" guid="2d1bdbb0-ece0-11e8-8149-8542373915bf">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="2e53bf78-ece0-11e8-8149-8542373915bf" type="resource" guid="2e539865-ece0-11e8-8149-8542373915bf">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="2ebc4561-ece0-11e8-8149-8542373915bf" type="resource" guid="2ebc1e4c-ece0-11e8-8149-8542373915bf" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="63edf002-ecdf-11e8-8149-8542373915bf" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="88cedb29-ecdf-11e8-8149-8542373915bf" type="resource" guid="7d2a5b34-ecdf-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="63ee1713-ecdf-11e8-8149-8542373915bf" type="literal">Decision</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2d1c50e4-ece0-11e8-8149-8542373915bf">
+      <resource guid="2d1bdbb0-ece0-11e8-8149-8542373915bf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2d1c02c2-ece0-11e8-8149-8542373915bf" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="2d1c29d3-ece0-11e8-8149-8542373915bf" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="2e53bf78-ece0-11e8-8149-8542373915bf">
+            <resource guid="2e539865-ece0-11e8-8149-8542373915bf">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="2e53bf77-ece0-11e8-8149-8542373915bf" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="2ebc4561-ece0-11e8-8149-8542373915bf">
+                  <resource guid="2ebc1e4c-ece0-11e8-8149-8542373915bf">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="2ebc1e4f-ece0-11e8-8149-8542373915bf" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="2ebc4560-ece0-11e8-8149-8542373915bf" type="literal">Entscheidung</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="fd36a8e9-ecdf-11e8-8149-8542373915bf" type="literal">* Who (if not you) has decided?
+* How has the decision been justified?
+* When did you decide?</object>
+  </predicate>
+</resource>
+

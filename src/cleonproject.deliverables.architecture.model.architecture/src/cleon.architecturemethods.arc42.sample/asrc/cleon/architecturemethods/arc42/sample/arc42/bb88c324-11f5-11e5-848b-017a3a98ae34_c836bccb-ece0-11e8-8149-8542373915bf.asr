@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c836bccb-ece0-11e8-8149-8542373915bf">
+  <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="cb37a0cb-ece0-11e8-8149-8542373915bf" type="resource" guid="cb37a0c8-ece0-11e8-8149-8542373915bf" />
+  </owns>
+  <owns predicate="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="cd08b750-ece0-11e8-8149-8542373915bf" type="resource" guid="cd08b74d-ece0-11e8-8149-8542373915bf" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c836bccd-ece0-11e8-8149-8542373915bf" type="resource" guid="ab88bc9d-ecde-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8e79640-ece0-11e8-8149-8542373915bf" type="literal">dsfsdf</object>
+  </predicate>
+  <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="cb37a0cb-ece0-11e8-8149-8542373915bf">
+      <resource guid="cb37a0c8-ece0-11e8-8149-8542373915bf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb37a0ca-ece0-11e8-8149-8542373915bf" type="resource" guid="ec50c041-ecde-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="cb91f5cc-ece0-11e8-8149-8542373915bf" type="literal">sdfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="cd08b750-ece0-11e8-8149-8542373915bf">
+      <resource guid="cd08b74d-ece0-11e8-8149-8542373915bf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cd08b74f-ece0-11e8-8149-8542373915bf" type="resource" guid="63eda1df-ecdf-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="cd6bbee1-ece0-11e8-8149-8542373915bf" type="literal">adfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="388aa5bd-ece0-11e8-8149-8542373915bf">
+  <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="a64ddbf7-ece0-11e8-8149-8542373915bf" type="resource" guid="a64db4e4-ece0-11e8-8149-8542373915bf" />
+  </owns>
+  <owns predicate="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="c57b6e1d-ece0-11e8-8149-8542373915bf" type="resource" guid="c57b470a-ece0-11e8-8149-8542373915bf" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="388aa5bf-ece0-11e8-8149-8542373915bf" type="resource" guid="ab88bc9d-ecde-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3c43b662-ece0-11e8-8149-8542373915bf" type="literal">Einsatz von PAM in AD</object>
+  </predicate>
+  <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="a64ddbf7-ece0-11e8-8149-8542373915bf">
+      <resource guid="a64db4e4-ece0-11e8-8149-8542373915bf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a64db4e6-ece0-11e8-8149-8542373915bf" type="resource" guid="ec50c041-ecde-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="a700b138-ece0-11e8-8149-8542373915bf" type="literal">dsfasdfadsf</object>
+          <object statement-guid="a77d3439-ece0-11e8-8149-8542373915bf" type="literal">adsfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="c57b6e1d-ece0-11e8-8149-8542373915bf">
+      <resource guid="c57b470a-ece0-11e8-8149-8542373915bf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c57b470c-ece0-11e8-8149-8542373915bf" type="resource" guid="63eda1df-ecdf-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="c6609e0c-ece0-11e8-8149-8542373915bf" type="literal">dfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

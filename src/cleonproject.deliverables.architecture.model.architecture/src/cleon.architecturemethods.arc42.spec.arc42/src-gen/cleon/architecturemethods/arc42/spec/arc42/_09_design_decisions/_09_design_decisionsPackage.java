@@ -5,6 +5,19 @@ import ch.actifsource.core.Resource;
 public class _09_design_decisionsPackage {
   
   public static final Resource __V_9_aE_DesignDecision = new Resource("6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0");
+  public static final Resource DecisionTopic = new Resource("ab88bc9d-ecde-11e8-8149-8542373915bf");
+  public static final Resource __V_9_aE_DesignDecision_decisions = new Resource("cc0f4e74-ecde-11e8-8149-8542373915bf");
+  public static final Resource Problem = new Resource("ec50c041-ecde-11e8-8149-8542373915bf");
+  public static final Resource Constraints = new Resource("f0410d33-ecde-11e8-8149-8542373915bf");
+  public static final Resource Assumptions = new Resource("f477d914-ecde-11e8-8149-8542373915bf");
+  public static final Resource ConsideredAlternatives = new Resource("ffd8e808-ecde-11e8-8149-8542373915bf");
+  public static final Resource Decision = new Resource("63eda1df-ecdf-11e8-8149-8542373915bf");
+  public static final Resource AbstractDecision = new Resource("7d2a5b34-ecdf-11e8-8149-8542373915bf");
+  public static final Resource DecisionTopic_problem = new Resource("a4ff8028-ecdf-11e8-8149-8542373915bf");
+  public static final Resource DecisionTopic_constraints = new Resource("a7dd2499-ecdf-11e8-8149-8542373915bf");
+  public static final Resource DecisionTopic_assumptions = new Resource("aa48cd69-ecdf-11e8-8149-8542373915bf");
+  public static final Resource DecisionTopic_consideredAlternatives = new Resource("ad6ca216-ecdf-11e8-8149-8542373915bf");
+  public static final Resource DecisionTopic_decision = new Resource("c3d8aff4-ecdf-11e8-8149-8542373915bf");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +38,4 @@ public class _09_design_decisionsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._09_design_decisions,U1tvrSFG1/FcSdz7E+S8KqkD4KE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._09_design_decisions,6BmSO6lw2CAUP2TmXg/PbEQfO6s=] */

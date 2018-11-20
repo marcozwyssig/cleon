@@ -69,16 +69,6 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement> selectCoveres() {
-    return _getList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement.class, cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.RequirementCoverageAware_coveres);
-  }
-
-  public SystemConfiguration setCoveres(java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement> coveres) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.RequirementCoverageAware_coveres, coveres);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
     return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
@@ -137,7 +127,6 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement.class, cleon.architecturemethods.itarc42.spec.itarc42._13_requirements_coverage._13_requirements_coveragePackage.RequirementCoverageAware_coveres, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
@@ -146,4 +135,4 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,hgqHO/oGDfStfnh1nX3g9lWkFoU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,NEJ8VaDiMoLgIg0YF3SytlUBbvQ=] */

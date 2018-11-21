@@ -1,8 +1,8 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context;
+package cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context;
 
 import ch.actifsource.core.Resource;
 
-public class _03_System_Scope_and_ContextPackage {
+public class _03_system_scope_and_contextPackage {
   
   public static final Resource __V_3_aE_System_aE_Scope_aE_and_aE_Context = new Resource("979ed992-99aa-11e8-8f58-219af2c5d6d9");
   public static final Resource __V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform = new Resource("e8885a17-99aa-11e8-8f58-219af2c5d6d9");
@@ -11,7 +11,7 @@ public class _03_System_Scope_and_ContextPackage {
   
   /* End Protected Region   [[user]] */
   
-  private _03_System_Scope_and_ContextPackage() {}
+  private _03_system_scope_and_contextPackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.itarc42.spec.itarc42";
@@ -22,8 +22,8 @@ public class _03_System_Scope_and_ContextPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context";
+    return "cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context,XALfIJHdiXVJQFvgJr8hmIZ51cg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context,XWgNcKnhJhUIASO4VsO6Zck2RN8=] */

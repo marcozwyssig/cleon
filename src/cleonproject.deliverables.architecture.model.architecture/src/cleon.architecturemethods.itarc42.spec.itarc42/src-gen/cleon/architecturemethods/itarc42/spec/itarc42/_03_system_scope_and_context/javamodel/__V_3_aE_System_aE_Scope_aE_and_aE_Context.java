@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context.javamodel;
+package cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -82,11 +82,11 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
     
   @Override
   public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem selectPlattform() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context._03_System_Scope_and_ContextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform);
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform);
   }
 
   public __V_3_aE_System_aE_Scope_aE_and_aE_Context setPlattform(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem plattform) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context._03_System_Scope_and_ContextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, plattform);
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, plattform);
     return this;
   }
     
@@ -130,7 +130,7 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.I__V_3_aE_01_aE_DomainContext.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_domainContext, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.INeighboringSystem.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_neighboringSystems, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context._03_System_Scope_and_ContextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_system, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.I__V_3_aE_02_aE_TechnicalContext.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -138,9 +138,9 @@ public class __V_3_aE_System_aE_Scope_aE_and_aE_Context extends DynamicResource 
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context selectToMePlattform(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.itarc42.spec.itarc42._03_System_Scope_and_Context._03_System_Scope_and_ContextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, object.getResource());
+  public static cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context selectToMePlattform(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context._03_system_scope_and_contextPackage.__V_3_aE_System_aE_Scope_aE_and_aE_Context_plattform, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,h0Jwa9Kt2yvRBS8bME6eO7cZYLY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,kFe8E7FkgCxE3ufF29qc3N0dOPU=] */

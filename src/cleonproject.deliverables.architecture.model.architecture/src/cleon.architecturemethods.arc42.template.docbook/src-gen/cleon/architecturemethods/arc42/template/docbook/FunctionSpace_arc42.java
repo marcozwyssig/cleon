@@ -318,6 +318,31 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface IDecisionTopicFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0cc8ae11-ed68-11e8-8628-792e8e0b10f3")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDecisionTopicFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DecisionTopicFunctionsImpl implements IDecisionTopicFunctionsImpl {
+
+    public static final IDecisionTopicFunctionsImpl INSTANCE = new DecisionTopicFunctionsImpl();
+
+    private DecisionTopicFunctionsImpl() {}
+
+  }
+  
+  public static class DecisionTopicFunctions {
+
+    private DecisionTopicFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,dEt5Yruc69n6q+Mp9yQI33xh4N0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,fveLwx+cDdR5gEvhpqux3SFdLPU=] */

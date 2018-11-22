@@ -373,6 +373,9 @@ public class FunctionSpace_arc42 {
     @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("fb74cf9f-ee54-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderChapter();
+
   }
   
   public static interface ILevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -420,4 +423,4 @@ public class FunctionSpace_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,OPiu5u442I8cMiRa9tHYAhwoTS0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,ZG/cjJz01W7wUne99doyX5sZSMs=] */

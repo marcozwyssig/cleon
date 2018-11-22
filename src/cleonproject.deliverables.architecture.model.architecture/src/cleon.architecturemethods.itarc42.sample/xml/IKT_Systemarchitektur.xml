@@ -85,92 +85,94 @@
 				<db:title>Ebene 1: IKT &lt;System&gt; (Whitebox)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
-					<db:col width="25%" />
-					<db:col width="75%" />
-					<db:thead>
-						<db:tr>
-							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
-						</db:tr>
-					</db:thead>
-					<db:tbody>
-						<db:tr>
-							<db:td>
-								<db:para>Plattform</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Infrastruktur</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-					</db:tbody>
-				</db:informaltable>
+				
 				<db:section>
-					<db:title>Plattform  &lt;SystemLayer&gt; (Blackbox)</db:title>
+					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
 					<db:informaltable style="EAMod Requirement">
 						<db:col width="30%" />
 						<db:col width="70%" />
 						<db:thead>
 							<db:tr>
-								<db:th>Name</db:th>
+								<db:th>Baustein</db:th>
 								<db:th>Beschreibung</db:th>
 							</db:tr>
 						</db:thead>
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
+									<db:para>Plattform</db:para>
 								</db:td>
 								<db:td>
 								</db:td>
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
+									<db:para>Infrastruktur</db:para>
 								</db:td>
 								<db:td>
 								</db:td>
-							</db:tr>			
+							</db:tr>
 						</db:tbody>
-					</db:informaltable>	
+					</db:informaltable>
+					<db:section>
+						<db:title>Plattform  &lt;SystemLayer&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
+					<db:section>
+						<db:title>Infrastruktur  &lt;SystemLayer&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
 				</db:section>
-				<db:section>
-					<db:title>Infrastruktur  &lt;SystemLayer&gt; (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Name</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>			
-						</db:tbody>
-					</db:informaltable>	
-				</db:section>
-				
-				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -179,102 +181,104 @@
 				<db:title>Ebene 2: Plattform &lt;SystemLayer&gt; (Whitebox)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
-					<db:col width="25%" />
-					<db:col width="75%" />
-					<db:thead>
-						<db:tr>
-							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
-						</db:tr>
-					</db:thead>
-					<db:tbody>
-						<db:tr>
-							<db:td>
-								<db:para>Windows 2016</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Linux</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-					</db:tbody>
-				</db:informaltable>
+				
 				<db:section>
-					<db:title>Windows 2016  &lt;SystemComponent&gt; (Blackbox)</db:title>
+					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
 					<db:informaltable style="EAMod Requirement">
 						<db:col width="30%" />
 						<db:col width="70%" />
 						<db:thead>
 							<db:tr>
-								<db:th>Name</db:th>
+								<db:th>Baustein</db:th>
 								<db:th>Beschreibung</db:th>
 							</db:tr>
 						</db:thead>
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
+									<db:para>Windows 2016</db:para>
 								</db:td>
 								<db:td>
 								</db:td>
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
+									<db:para>Linux</db:para>
 								</db:td>
 								<db:td>
-									<db:itemizedlist>
-										<db:listitem>
-											<db:para>AF006_Requirements_1 (FEA)</db:para>
-										</db:listitem>
-									</db:itemizedlist>
 								</db:td>
-							</db:tr>			
+							</db:tr>
 						</db:tbody>
-					</db:informaltable>	
+					</db:informaltable>
+					<db:section>
+						<db:title>Windows 2016  &lt;SystemComponent&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>AF006_Requirements_1 (FEA)</db:para>
+											</db:listitem>
+										</db:itemizedlist>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
+					<db:section>
+						<db:title>Linux  &lt;SystemComponent&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>AF006_Requirements_1 (FEA)</db:para>
+											</db:listitem>
+										</db:itemizedlist>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
 				</db:section>
-				<db:section>
-					<db:title>Linux  &lt;SystemComponent&gt; (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Name</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
-								</db:td>
-								<db:td>
-									<db:itemizedlist>
-										<db:listitem>
-											<db:para>AF006_Requirements_1 (FEA)</db:para>
-										</db:listitem>
-									</db:itemizedlist>
-								</db:td>
-							</db:tr>			
-						</db:tbody>
-					</db:informaltable>	
-				</db:section>
-				
-				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -283,92 +287,94 @@
 				<db:title>Ebene 3: Windows 2016 &lt;SystemComponent&gt; (Whitebox)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
-					<db:col width="25%" />
-					<db:col width="75%" />
-					<db:thead>
-						<db:tr>
-							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
-						</db:tr>
-					</db:thead>
-					<db:tbody>
-						<db:tr>
-							<db:td>
-								<db:para>Windows Server Standard Virtual</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows Server 2016 BareMetal</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>
-					</db:tbody>
-				</db:informaltable>
+				
 				<db:section>
-					<db:title>Windows Server Standard Virtual  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
 					<db:informaltable style="EAMod Requirement">
 						<db:col width="30%" />
 						<db:col width="70%" />
 						<db:thead>
 							<db:tr>
-								<db:th>Name</db:th>
+								<db:th>Baustein</db:th>
 								<db:th>Beschreibung</db:th>
 							</db:tr>
 						</db:thead>
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
+									<db:para>Windows Server Standard Virtual</db:para>
 								</db:td>
 								<db:td>
 								</db:td>
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
+									<db:para>Windows Server 2016 BareMetal</db:para>
 								</db:td>
 								<db:td>
 								</db:td>
-							</db:tr>			
+							</db:tr>
 						</db:tbody>
-					</db:informaltable>	
+					</db:informaltable>
+					<db:section>
+						<db:title>Windows Server Standard Virtual  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
+					<db:section>
+						<db:title>Windows Server 2016 BareMetal  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="30%" />
+							<db:col width="70%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Name</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>Zweck/Verantwortung</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Erfüllte Anforderungen</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>			
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
 				</db:section>
-				<db:section>
-					<db:title>Windows Server 2016 BareMetal  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Name</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Zweck/Verantwortung</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>Erfüllte Anforderungen</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>			
-						</db:tbody>
-					</db:informaltable>	
-				</db:section>
-				
-				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -378,14 +384,18 @@
 				
 				
 				
-				
+				<db:section>
+					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
+				</db:section>
 			</db:section>
 			<db:section >
 				<db:title>Ebene 4: Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Whitebox)</db:title>
 				
 				
 				
-				
+				<db:section>
+					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
+				</db:section>
 			</db:section>
 		</db:section>
 	</db:chapter>

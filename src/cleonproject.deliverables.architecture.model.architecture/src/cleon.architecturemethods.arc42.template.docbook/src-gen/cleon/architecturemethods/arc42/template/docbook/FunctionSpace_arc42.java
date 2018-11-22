@@ -18,28 +18,28 @@ public class FunctionSpace_arc42 {
   /* End Protected Region   [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
 
 
-  public static interface I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions extends IDynamicResourceExtension {
+  public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de7c9bfc-d17f-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl implements I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl {
+  public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
 
-    public static final I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl INSTANCE = new __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl();
+    public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
 
-    private __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl() {}
+    private System_Scope_and_ContextFunctionsImpl() {}
 
   }
   
-  public static class __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions {
+  public static class System_Scope_and_ContextFunctions {
 
-    private __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions() {}
+    private System_Scope_and_ContextFunctions() {}
 
   }
 
@@ -168,53 +168,53 @@ public class FunctionSpace_arc42 {
 
   }
 
-  public static interface I__V_7_aE_DeploymentViewFunctions extends IDynamicResourceExtension {
+  public static interface IDeploymentViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4da38b16-d181-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface I__V_7_aE_DeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_7_aE_DeploymentViewFunctionsImpl implements I__V_7_aE_DeploymentViewFunctionsImpl {
+  public static class DeploymentViewFunctionsImpl implements IDeploymentViewFunctionsImpl {
 
-    public static final I__V_7_aE_DeploymentViewFunctionsImpl INSTANCE = new __V_7_aE_DeploymentViewFunctionsImpl();
+    public static final IDeploymentViewFunctionsImpl INSTANCE = new DeploymentViewFunctionsImpl();
 
-    private __V_7_aE_DeploymentViewFunctionsImpl() {}
+    private DeploymentViewFunctionsImpl() {}
 
   }
   
-  public static class __V_7_aE_DeploymentViewFunctions {
+  public static class DeploymentViewFunctions {
 
-    private __V_7_aE_DeploymentViewFunctions() {}
+    private DeploymentViewFunctions() {}
 
   }
 
-  public static interface I__V_1_aE_IntroductionAndGoalsFunctions extends IDynamicResourceExtension {
+  public static interface IIntroductionAndGoalsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b31330c7-eaa6-11e8-88d3-bfc6b992bdec")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface I__V_1_aE_IntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IIntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_1_aE_IntroductionAndGoalsFunctionsImpl implements I__V_1_aE_IntroductionAndGoalsFunctionsImpl {
+  public static class IntroductionAndGoalsFunctionsImpl implements IIntroductionAndGoalsFunctionsImpl {
 
-    public static final I__V_1_aE_IntroductionAndGoalsFunctionsImpl INSTANCE = new __V_1_aE_IntroductionAndGoalsFunctionsImpl();
+    public static final IIntroductionAndGoalsFunctionsImpl INSTANCE = new IntroductionAndGoalsFunctionsImpl();
 
-    private __V_1_aE_IntroductionAndGoalsFunctionsImpl() {}
+    private IntroductionAndGoalsFunctionsImpl() {}
 
   }
   
-  public static class __V_1_aE_IntroductionAndGoalsFunctions {
+  public static class IntroductionAndGoalsFunctions {
 
-    private __V_1_aE_IntroductionAndGoalsFunctions() {}
+    private IntroductionAndGoalsFunctions() {}
 
   }
 
@@ -343,6 +343,81 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4074b6cf-ee38-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockViewFunctionsImpl implements IBuildingBlockViewFunctionsImpl {
+
+    public static final IBuildingBlockViewFunctionsImpl INSTANCE = new BuildingBlockViewFunctionsImpl();
+
+    private BuildingBlockViewFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockViewFunctions {
+
+    private BuildingBlockViewFunctions() {}
+
+  }
+
+  public static interface ILevelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ILevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class LevelFunctionsImpl implements ILevelFunctionsImpl {
+
+    public static final ILevelFunctionsImpl INSTANCE = new LevelFunctionsImpl();
+
+    private LevelFunctionsImpl() {}
+
+  }
+  
+  public static class LevelFunctions {
+
+    private LevelFunctions() {}
+
+  }
+
+  public static interface ISubjectAreaCoverageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("203a109f-ee3a-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ISubjectAreaCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SubjectAreaCoverageFunctionsImpl implements ISubjectAreaCoverageFunctionsImpl {
+
+    public static final ISubjectAreaCoverageFunctionsImpl INSTANCE = new SubjectAreaCoverageFunctionsImpl();
+
+    private SubjectAreaCoverageFunctionsImpl() {}
+
+  }
+  
+  public static class SubjectAreaCoverageFunctions {
+
+    private SubjectAreaCoverageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,fveLwx+cDdR5gEvhpqux3SFdLPU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,OPiu5u442I8cMiRa9tHYAhwoTS0=] */

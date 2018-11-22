@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
-import cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.__V_5_aE_BuildingBlockView;
+import cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.BuildingBlockView;;
 /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
 
 public class FunctionSpace_Buildingblock_View {
@@ -18,28 +18,28 @@ public class FunctionSpace_Buildingblock_View {
   /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b]] */
 
 
-  public static interface I__V_5_aE_BuildingBlockViewFunctions extends IDynamicResourceExtension {
+  public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fc6a39f7-437a-11e6-a9d7-97cf4f7c398b")
     public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem GetSystem();
 
   }
   
-  public static interface I__V_5_aE_BuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_5_aE_BuildingBlockViewFunctionsImpl implements I__V_5_aE_BuildingBlockViewFunctionsImpl {
+  public static class BuildingBlockViewFunctionsImpl implements IBuildingBlockViewFunctionsImpl {
 
-    public static final I__V_5_aE_BuildingBlockViewFunctionsImpl INSTANCE = new __V_5_aE_BuildingBlockViewFunctionsImpl();
+    public static final IBuildingBlockViewFunctionsImpl INSTANCE = new BuildingBlockViewFunctionsImpl();
 
-    private __V_5_aE_BuildingBlockViewFunctionsImpl() {}
+    private BuildingBlockViewFunctionsImpl() {}
 
   }
   
-  public static class __V_5_aE_BuildingBlockViewFunctions {
+  public static class BuildingBlockViewFunctions {
 
-    private __V_5_aE_BuildingBlockViewFunctions() {}
+    private BuildingBlockViewFunctions() {}
 
   }
 
@@ -73,6 +73,9 @@ public class FunctionSpace_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("e945b5c3-d187-11e8-b18f-df1540bb7a5c")
     public java.lang.String GetLevelNr();
 
+    @IDynamicResourceExtension.MethodId("043e0c3c-ee36-11e8-9756-27a593be2ffb")
+    public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBuildingBlockView GetBuildingBlockView();
+
   }
   
   public static interface ILevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -91,19 +94,22 @@ public class FunctionSpace_Buildingblock_View {
     @Override
     public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel level) {
       /* Begin Protected Region [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
-    	if( __V_5_aE_BuildingBlockView.selectToMeLevel_1(level) != null)
+    	if( level == null)
+    		return "";
+    	
+    	if( BuildingBlockView.selectToMeLevel_1(level) != null)
     		return "1";
 
-    	if( __V_5_aE_BuildingBlockView.selectToMeLevel_2(level) != null)
+    	if( BuildingBlockView.selectToMeLevel_2(level) != null)
     		return "2";
 
-    	if( __V_5_aE_BuildingBlockView.selectToMeLevel_3(level) != null)
+    	if( BuildingBlockView.selectToMeLevel_3(level) != null)
     		return "3";
 
-    	if( __V_5_aE_BuildingBlockView.selectToMeLevel_4(level) != null)
+    	if( BuildingBlockView.selectToMeLevel_4(level) != null)
     		return "4";
 
-    	if( __V_5_aE_BuildingBlockView.selectToMeLevel_5(level) != null)
+    	if( BuildingBlockView.selectToMeLevel_5(level) != null)
     		return "5";
     	
     	return "";
@@ -124,4 +130,4 @@ public class FunctionSpace_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,za/wO9gSXmAfApa+m7QehyUvQwI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,NaOlwQjoF5vbrofyZ2KAN0J8hC0=] */

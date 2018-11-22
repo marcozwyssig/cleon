@@ -207,68 +207,443 @@
 		
 		
 		
-		<db:section >
-			<db:title>Chess</db:title>
-			
-			
-			
-			
+		<db:section>
+			<db:title>Ebene 1</db:title>
+			<db:section >
+				<db:title>Ebene 1: Chess &lt;SoftwareSystem&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test3</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				<db:section>
+					<db:title>Test2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				<db:section>
+					<db:title>Test3  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
 		</db:section>
-		<db:section >
-			<db:title>Test1</db:title>
-			
-			
-			
-			
+		<db:section>
+			<db:title>Ebene 2</db:title>
+			<db:section >
+				<db:title>Ebene 2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test1_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
+			<db:section >
+				<db:title>Ebene 2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test2_2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test2_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
+			<db:section >
+				<db:title>Ebene 2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test3_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test3_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
 		</db:section>
-		<db:section >
-			<db:title>Test2</db:title>
-			
-			
-			
-			
+		<db:section>
+			<db:title>Ebene 3</db:title>
+			<db:section >
+				<db:title>Ebene 3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test1_2_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
+			<db:section >
+				<db:title>Ebene 3: Test2_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				
+			</db:section>
+			<db:section >
+				<db:title>Ebene 3: Test3_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				
+			</db:section>
 		</db:section>
-		<db:section >
-			<db:title>Test3</db:title>
-			
-			
-			
-			
+		<db:section>
+			<db:title>Ebene 4</db:title>
+			<db:section >
+				<db:title>Ebene 4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="25%" />
+					<db:col width="75%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section>
+					<db:title>Test1_2_1_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="30%" />
+						<db:col width="70%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Beschreibung</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Zweck/Verantwortung</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>Erfüllte Anforderungen</db:para>
+								</db:td>
+								<db:td>
+								</db:td>
+							</db:tr>			
+						</db:tbody>
+					</db:informaltable>	
+				</db:section>
+				
+				
+			</db:section>
 		</db:section>
-		<db:section >
-			<db:title>Test1_2</db:title>
-			
-			
-			
-			
-		</db:section>
-		<db:section >
-			<db:title>Test2_2</db:title>
-			
-			
-			
-			
-		</db:section>
-		<db:section >
-			<db:title>Test3_1</db:title>
-			
-			
-			
-			
-		</db:section>
-		<db:section >
-			<db:title>Test1_2_1</db:title>
-			
-			
-			
-			
-		</db:section>
-		<db:section >
-			<db:title>Test1_2_1_1</db:title>
-			
-			
-			
-			
+		<db:section>
+			<db:title>Ebene 5</db:title>
+			<db:section >
+				<db:title>Ebene 5: Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				
+			</db:section>
 		</db:section>
 	</db:chapter>
 	<db:chapter >

@@ -18,28 +18,28 @@ public class FunctionSpace_arc42 {
   /* End Protected Region   [[65a357a1-2663-11e6-ae54-e50d44645ae7]] */
 
 
-  public static interface I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions extends IDynamicResourceExtension {
+  public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9321cf35-2806-11e6-b263-9db62e053e59")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl implements I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl {
+  public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
 
-    public static final I__V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl INSTANCE = new __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl();
+    public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
 
-    private __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctionsImpl() {}
+    private System_Scope_and_ContextFunctionsImpl() {}
 
   }
   
-  public static class __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions {
+  public static class System_Scope_and_ContextFunctions {
 
-    private __V_3_aE_System_aE_Scope_aE_and_aE_ContextFunctions() {}
+    private System_Scope_and_ContextFunctions() {}
 
   }
 
@@ -118,56 +118,56 @@ public class FunctionSpace_arc42 {
 
   }
 
-  public static interface I__V_7_aE_DeploymentViewFunctions extends IDynamicResourceExtension {
+  public static interface IDeploymentViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a2119f01-d181-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface I__V_7_aE_DeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_7_aE_DeploymentViewFunctionsImpl implements I__V_7_aE_DeploymentViewFunctionsImpl {
+  public static class DeploymentViewFunctionsImpl implements IDeploymentViewFunctionsImpl {
 
-    public static final I__V_7_aE_DeploymentViewFunctionsImpl INSTANCE = new __V_7_aE_DeploymentViewFunctionsImpl();
+    public static final IDeploymentViewFunctionsImpl INSTANCE = new DeploymentViewFunctionsImpl();
 
-    private __V_7_aE_DeploymentViewFunctionsImpl() {}
+    private DeploymentViewFunctionsImpl() {}
 
   }
   
-  public static class __V_7_aE_DeploymentViewFunctions {
+  public static class DeploymentViewFunctions {
 
-    private __V_7_aE_DeploymentViewFunctions() {}
+    private DeploymentViewFunctions() {}
 
   }
 
-  public static interface I__V_5_aE_BuildingBlockViewFunctions extends IDynamicResourceExtension {
+  public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("839b799d-d185-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface I__V_5_aE_BuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_5_aE_BuildingBlockViewFunctionsImpl implements I__V_5_aE_BuildingBlockViewFunctionsImpl {
+  public static class BuildingBlockViewFunctionsImpl implements IBuildingBlockViewFunctionsImpl {
 
-    public static final I__V_5_aE_BuildingBlockViewFunctionsImpl INSTANCE = new __V_5_aE_BuildingBlockViewFunctionsImpl();
+    public static final IBuildingBlockViewFunctionsImpl INSTANCE = new BuildingBlockViewFunctionsImpl();
 
-    private __V_5_aE_BuildingBlockViewFunctionsImpl() {}
+    private BuildingBlockViewFunctionsImpl() {}
 
   }
   
-  public static class __V_5_aE_BuildingBlockViewFunctions {
+  public static class BuildingBlockViewFunctions {
 
-    private __V_5_aE_BuildingBlockViewFunctions() {}
+    private BuildingBlockViewFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,FZBeUo2W0s3KHyOA5NHQ0X6fIJk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,1hxd/2FR7REwN8amEn4LQm6iRoo=] */

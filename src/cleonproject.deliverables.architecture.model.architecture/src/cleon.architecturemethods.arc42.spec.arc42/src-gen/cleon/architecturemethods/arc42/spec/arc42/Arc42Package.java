@@ -17,7 +17,8 @@ public class Arc42Package {
   public static final Resource arc42___V_9_aE_designdecision = new Resource("285eceb5-d0b5-11e8-b005-f7630e4c29c0");
   public static final Resource arc42___W_0_aE_quality_aE_scenarios = new Resource("4b4e2311-d0b5-11e8-b005-f7630e4c29c0");
   public static final Resource arc42___W_1_aE_technical_aE_risks = new Resource("5e720a0b-d0b5-11e8-b005-f7630e4c29c0");
-  public static final Resource arc42___V_4_aE_solutuion_aE_strategy = new Resource("19261f3f-e989-11e8-af5c-a5aa9dc47205");
+  public static final Resource arc42___W_2_aE_requirements_aE_coverage = new Resource("d02b754e-d183-11e8-b18f-df1540bb7a5c");
+  public static final Resource arc42___V_4_aE_solution_aE_strategy = new Resource("19261f3f-e989-11e8-af5c-a5aa9dc47205");
   public static final Resource arc42___V_0_aE_about = new Resource("4694648b-e991-11e8-af5c-a5aa9dc47205");
   
   /* Begin Protected Region [[user]] */
@@ -39,4 +40,4 @@ public class Arc42Package {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42,53E9bzZ6wKMAlTvXrbsa2eBbvWQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42,Yi7JJXFzAnyvgWhIX6oHDgeOaTc=] */

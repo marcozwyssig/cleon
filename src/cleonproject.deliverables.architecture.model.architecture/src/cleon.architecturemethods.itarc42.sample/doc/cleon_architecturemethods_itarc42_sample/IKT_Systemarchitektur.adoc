@@ -55,35 +55,35 @@ Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System
 
 
 
-=== IKT
+=== Ebene 1: IKT <System> (Whitebox)
 
 
 
 
 
  
-=== Plattform
+=== Ebene 2: Plattform <SystemLayer> (Whitebox)
 
 
 
 
 
 
-=== Windows 2016
+=== Ebene 3: Windows 2016 <SystemComponent> (Whitebox)
 
 
 
 
 
 
-=== Windows Server Standard Virtual
+=== Ebene 4: Windows Server Standard Virtual <SystemConfiguration> (Whitebox)
 
 
 
 
 
 
-=== Windows Server 2016 BareMetal
+=== Ebene 4: Windows Server 2016 BareMetal <SystemConfiguration> (Whitebox)
 
 
 

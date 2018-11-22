@@ -24,7 +24,12 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.17",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.arc42.spec.arc42,cleon.architecturemethods.arc42.spec.arc42.javamodel
- ,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel,
+ ,cleon.architecturemethods.arc42.spec.arc42._00_about,cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel,
+ cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals,cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel,
+ cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints,cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel,
+ cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel,
+ cleon.architecturemethods.arc42.spec.arc42._04_solution_strategy,cleon.architecturemethods.arc42.spec.arc42._04_solution_strategy.javamodel,
  cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel,
- cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.buildingblock,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.buildingblock.javamodel
+ cleon.architecturemethods.arc42.spec.arc42._06_runtime_view,cleon.architecturemethods.arc42.spec.arc42._06_runtime_view.javamodel,
+ cleon.architecturemethods.arc42.spec.arc42._07_deployment_view,cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel
 

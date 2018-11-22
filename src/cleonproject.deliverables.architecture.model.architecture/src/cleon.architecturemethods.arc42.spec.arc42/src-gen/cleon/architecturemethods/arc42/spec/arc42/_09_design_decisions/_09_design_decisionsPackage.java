@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class _09_design_decisionsPackage {
   
-  public static final Resource __V_9_aE_DesignDecision = new Resource("6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0");
+  public static final Resource DesignDecision = new Resource("6e3c0d1c-d0b4-11e8-b005-f7630e4c29c0");
   public static final Resource DecisionTopic = new Resource("ab88bc9d-ecde-11e8-8149-8542373915bf");
-  public static final Resource __V_9_aE_DesignDecision_decisions = new Resource("cc0f4e74-ecde-11e8-8149-8542373915bf");
+  public static final Resource DesignDecision_decisions = new Resource("cc0f4e74-ecde-11e8-8149-8542373915bf");
   public static final Resource Problem = new Resource("ec50c041-ecde-11e8-8149-8542373915bf");
   public static final Resource Constraints = new Resource("f0410d33-ecde-11e8-8149-8542373915bf");
   public static final Resource Assumptions = new Resource("f477d914-ecde-11e8-8149-8542373915bf");
@@ -38,4 +38,4 @@ public class _09_design_decisionsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._09_design_decisions,6BmSO6lw2CAUP2TmXg/PbEQfO6s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._09_design_decisions,CRfLglMKANisGMGZEI6NzYFgVoY=] */

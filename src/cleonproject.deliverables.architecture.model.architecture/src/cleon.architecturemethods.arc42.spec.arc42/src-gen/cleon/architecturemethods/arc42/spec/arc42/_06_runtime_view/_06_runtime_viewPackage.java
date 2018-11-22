@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class _06_runtime_viewPackage {
   
-  public static final Resource __V_6_aE_RuntimeView = new Resource("64fa2d04-9984-11e8-b187-17b9138759f6");
+  public static final Resource RuntimeView = new Resource("64fa2d04-9984-11e8-b187-17b9138759f6");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class _06_runtime_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._06_runtime_view,AOr+yi1OKD9OWItcmyaNJJOJW+Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._06_runtime_view,VkVm+HtUeC+s+8e1suXnRicm1r4=] */

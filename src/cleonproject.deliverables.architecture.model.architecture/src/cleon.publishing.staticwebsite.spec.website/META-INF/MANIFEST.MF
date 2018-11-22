@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.publishing.staticwebsite.spec.website
 Bundle-SymbolicName: cleon.publishing.staticwebsite.spec.website.builtin;singleton:=true
-Bundle-Version: 0.4.16
+Bundle-Version: 0.4.17
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,8 +12,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.16",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.16",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.17",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.17",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.publishing.staticwebsite.spec.website,cleon.publishing.staticwebsite.spec.website.javamodel
 

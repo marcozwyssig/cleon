@@ -66,15 +66,6 @@ public class IPv4 extends DynamicResource implements IIPv4 {
      _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d, d);
   }
 
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -95,10 +86,9 @@ public class IPv4 extends DynamicResource implements IIPv4 {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68345145-eab1-11e8-88d3-bfc6b992bdec,WndclPRNNEbzhbGdxlSadD+ZTcI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68345145-eab1-11e8-88d3-bfc6b992bdec,QA9Athg3mQRkR78Gg+H+Io9JdFE=] */

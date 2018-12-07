@@ -13,6 +13,8 @@ public class TechnicalPackage {
   public static final Resource TechnicalContext_flows = new Resource("9ebc0878-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalFlow_from = new Resource("ca424d86-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalFlow_to = new Resource("ca424d87-2801-11e6-b263-9db62e053e59");
+  public static final Resource TechnicalContextDiagram = new Resource("0f023427-fa45-11e8-af47-e5bdd8100025");
+  public static final Resource TechnicalContextDiagram_technicalContext = new Resource("0f023428-fa45-11e8-af47-e5bdd8100025");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +35,4 @@ public class TechnicalPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,aFDMJw13AidldH0tMlyQgiPuZ/k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,EkNQjKy6Rl9jARR4e4GUZI3PZgc=] */

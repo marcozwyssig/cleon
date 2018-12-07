@@ -18,56 +18,56 @@ public class FunctionSpace_PlantUml {
   /* End Protected Region   [[99b9ae90-eaab-11e8-88d3-bfc6b992bdec]] */
 
 
-  public static interface IDomainContextFunctions extends IDynamicResourceExtension {
+  public static interface IDomainContextDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a584a19f-eaab-11e8-88d3-bfc6b992bdec")
     public java.lang.String RenderUmlElement();
 
   }
   
-  public static interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDomainContextDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DomainContextFunctionsImpl implements IDomainContextFunctionsImpl {
+  public static class DomainContextDiagramFunctionsImpl implements IDomainContextDiagramFunctionsImpl {
 
-    public static final IDomainContextFunctionsImpl INSTANCE = new DomainContextFunctionsImpl();
+    public static final IDomainContextDiagramFunctionsImpl INSTANCE = new DomainContextDiagramFunctionsImpl();
 
-    private DomainContextFunctionsImpl() {}
+    private DomainContextDiagramFunctionsImpl() {}
 
   }
   
-  public static class DomainContextFunctions {
+  public static class DomainContextDiagramFunctions {
 
-    private DomainContextFunctions() {}
+    private DomainContextDiagramFunctions() {}
 
   }
 
-  public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
+  public static interface ITechnicalContextDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("728bf04e-eaaf-11e8-88d3-bfc6b992bdec")
     public java.lang.String RenderUmlElement();
 
   }
   
-  public static interface ITechnicalContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITechnicalContextDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TechnicalContextFunctionsImpl implements ITechnicalContextFunctionsImpl {
+  public static class TechnicalContextDiagramFunctionsImpl implements ITechnicalContextDiagramFunctionsImpl {
 
-    public static final ITechnicalContextFunctionsImpl INSTANCE = new TechnicalContextFunctionsImpl();
+    public static final ITechnicalContextDiagramFunctionsImpl INSTANCE = new TechnicalContextDiagramFunctionsImpl();
 
-    private TechnicalContextFunctionsImpl() {}
+    private TechnicalContextDiagramFunctionsImpl() {}
 
   }
   
-  public static class TechnicalContextFunctions {
+  public static class TechnicalContextDiagramFunctions {
 
-    private TechnicalContextFunctions() {}
+    private TechnicalContextDiagramFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,99b9ae90-eaab-11e8-88d3-bfc6b992bdec,i9sbrbzIO3pF8bHrz/C3kZQYMO0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,99b9ae90-eaab-11e8-88d3-bfc6b992bdec,GqbYFYUkHTu8mtFIVjvmTEQSiQo=] */

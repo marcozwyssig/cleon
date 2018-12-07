@@ -67,7 +67,6 @@ World
 === Fachlicher Kontext
 
 
-
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
 
 [plantuml, png]
@@ -78,7 +77,6 @@ actor "Player A"
 component "Table"
 (Player A) <-- (Chess) : definiert
 (Player A) <-- (FTP) : ruft
-
 ....
 
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
@@ -114,9 +112,6 @@ ddd
 === Technischer Kontext
 
 
-
-In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
-
 [plantuml, png]
 ....
 skinparam monochrome true
@@ -124,8 +119,9 @@ component "Chess" #grey
 component "FTP"
 component "Table"
 (FTP) --> (Chess) : ssss
+...
 
-....
+In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
 
 Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
 

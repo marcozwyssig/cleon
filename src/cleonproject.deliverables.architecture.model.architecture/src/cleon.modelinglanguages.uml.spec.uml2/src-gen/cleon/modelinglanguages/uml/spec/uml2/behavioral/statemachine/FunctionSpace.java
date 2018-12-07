@@ -18,31 +18,31 @@ public class FunctionSpace {
   /* End Protected Region   [[8a042bd0-345d-11e5-909a-4bcced25d7ee]] */
 
 
-  public static interface IStateMachineFunctions extends IDynamicResourceExtension {
+  public static interface IStateMachineDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9215e73b-345d-11e5-909a-4bcced25d7ee")
     public List<cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.IState> GetStates();
 
   }
   
-  public static interface IStateMachineFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IStateMachineDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class StateMachineFunctionsImpl implements IStateMachineFunctionsImpl {
+  public static class StateMachineDiagramFunctionsImpl implements IStateMachineDiagramFunctionsImpl {
 
-    public static final IStateMachineFunctionsImpl INSTANCE = new StateMachineFunctionsImpl();
+    public static final IStateMachineDiagramFunctionsImpl INSTANCE = new StateMachineDiagramFunctionsImpl();
 
-    private StateMachineFunctionsImpl() {}
+    private StateMachineDiagramFunctionsImpl() {}
 
   }
   
-  public static class StateMachineFunctions {
+  public static class StateMachineDiagramFunctions {
 
-    private StateMachineFunctions() {}
+    private StateMachineDiagramFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a042bd0-345d-11e5-909a-4bcced25d7ee,AFgzsbpTgSM2MrapDg0VUEanbvY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8a042bd0-345d-11e5-909a-4bcced25d7ee,Yync4FOuFtoaA6qHWa8luecX8CQ=] */

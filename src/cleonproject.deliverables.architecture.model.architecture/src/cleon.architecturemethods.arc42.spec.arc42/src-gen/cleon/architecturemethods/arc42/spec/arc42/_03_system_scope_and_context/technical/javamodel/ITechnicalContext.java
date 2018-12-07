@@ -16,7 +16,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * with a mapping table of logical input and output flows of the logical context
  * diagram (3.1) to the channels.
  */
-public interface ITechnicalContext extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter, cleon.modelinglanguages.uml.spec.uml2.javamodel.IUmlDiagram {
+public interface ITechnicalContext extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2420a6f8-27cc-11e6-b263-9db62e053e59");
   
@@ -28,4 +28,4 @@ public interface ITechnicalContext extends cleon.common.doc.spec.doc.chapter.jav
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,ZWhhQ6EcugB708WF515ohyUUnHM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,xClyUb3nYdvqgollYxxEMNSt3Rs=] */

@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[a71fceea-3f72-11e6-a833-6352f3897082,imports]] */
 
-public class FunctionSpace_PlantUml {
+public class FunctionSpace_Components {
 
   /* Begin Protected Region [[a71fceea-3f72-11e6-a833-6352f3897082]] */
   
@@ -82,37 +82,6 @@ public class FunctionSpace_PlantUml {
 
   }
 
-  public static interface IUmlDiagramFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("fcfaf5ee-eaac-11e8-88d3-bfc6b992bdec")
-    public java.lang.String RenderUmlElement();
-
-    @IDynamicResourceExtension.MethodId("0d089c4a-eaad-11e8-88d3-bfc6b992bdec")
-    public java.lang.String RenderUmlDiagram();
-
-    @IDynamicResourceExtension.MethodId("d2dedc91-eaae-11e8-88d3-bfc6b992bdec")
-    public java.lang.String RenderUml();
-
-  }
-  
-  public static interface IUmlDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class UmlDiagramFunctionsImpl implements IUmlDiagramFunctionsImpl {
-
-    public static final IUmlDiagramFunctionsImpl INSTANCE = new UmlDiagramFunctionsImpl();
-
-    private UmlDiagramFunctionsImpl() {}
-
-  }
-  
-  public static class UmlDiagramFunctions {
-
-    private UmlDiagramFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,dviDCoTg352c0hg4aV3/Gg1OdsM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a71fceea-3f72-11e6-a833-6352f3897082,E210fhiY7W5thzlku3rfwxI+W+A=] */

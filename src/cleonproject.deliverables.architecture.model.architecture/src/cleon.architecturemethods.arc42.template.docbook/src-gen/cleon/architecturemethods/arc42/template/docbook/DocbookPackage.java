@@ -5,8 +5,8 @@ import ch.actifsource.core.Resource;
 public class DocbookPackage {
   
   public static final Resource FunctionSpace_aE_arc42_System_aE_Scope_aE_and_aE_Context = new Resource("de7c9bfd-d17f-11e8-b18f-df1540bb7a5c");
-  public static final Resource FunctionSpace_aE_arc42___V_3_aE_01_aE_DomainContext = new Resource("de7cc312-d17f-11e8-b18f-df1540bb7a5c");
-  public static final Resource FunctionSpace_aE_arc42___V_3_aE_02_aE_TechnicalContext = new Resource("de7cc417-d17f-11e8-b18f-df1540bb7a5c");
+  public static final Resource FunctionSpace_aE_arc42_DomainContext = new Resource("de7cc312-d17f-11e8-b18f-df1540bb7a5c");
+  public static final Resource FunctionSpace_aE_arc42_TechnicalContext = new Resource("de7cc417-d17f-11e8-b18f-df1540bb7a5c");
   public static final Resource FunctionSpace_aE_arc42_arc42 = new Resource("de7cc45f-d17f-11e8-b18f-df1540bb7a5c");
   public static final Resource FunctionSpace_aE_arc42_DecompositionBuildingBlock = new Resource("de7cc46e-d17f-11e8-b18f-df1540bb7a5c");
   public static final Resource FunctionSpace_aE_arc42_Decomposite = new Resource("de7cc479-d17f-11e8-b18f-df1540bb7a5c");
@@ -40,4 +40,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.template.docbook,rFXVFlhHGZWCvxvOpC1xVh/WjeU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.template.docbook,1iiRazJqL2r8rEwXfFPokvRmUPo=] */

@@ -43,53 +43,53 @@ public class FunctionSpace_arc42 {
 
   }
 
-  public static interface I__V_3_aE_01_aE_DomainContextFunctions extends IDynamicResourceExtension {
+  public static interface IDomainContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de7cc311-d17f-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface I__V_3_aE_01_aE_DomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_3_aE_01_aE_DomainContextFunctionsImpl implements I__V_3_aE_01_aE_DomainContextFunctionsImpl {
+  public static class DomainContextFunctionsImpl implements IDomainContextFunctionsImpl {
 
-    public static final I__V_3_aE_01_aE_DomainContextFunctionsImpl INSTANCE = new __V_3_aE_01_aE_DomainContextFunctionsImpl();
+    public static final IDomainContextFunctionsImpl INSTANCE = new DomainContextFunctionsImpl();
 
-    private __V_3_aE_01_aE_DomainContextFunctionsImpl() {}
+    private DomainContextFunctionsImpl() {}
 
   }
   
-  public static class __V_3_aE_01_aE_DomainContextFunctions {
+  public static class DomainContextFunctions {
 
-    private __V_3_aE_01_aE_DomainContextFunctions() {}
+    private DomainContextFunctions() {}
 
   }
 
-  public static interface I__V_3_aE_02_aE_TechnicalContextFunctions extends IDynamicResourceExtension {
+  public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de7cc416-d17f-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface I__V_3_aE_02_aE_TechnicalContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITechnicalContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class __V_3_aE_02_aE_TechnicalContextFunctionsImpl implements I__V_3_aE_02_aE_TechnicalContextFunctionsImpl {
+  public static class TechnicalContextFunctionsImpl implements ITechnicalContextFunctionsImpl {
 
-    public static final I__V_3_aE_02_aE_TechnicalContextFunctionsImpl INSTANCE = new __V_3_aE_02_aE_TechnicalContextFunctionsImpl();
+    public static final ITechnicalContextFunctionsImpl INSTANCE = new TechnicalContextFunctionsImpl();
 
-    private __V_3_aE_02_aE_TechnicalContextFunctionsImpl() {}
+    private TechnicalContextFunctionsImpl() {}
 
   }
   
-  public static class __V_3_aE_02_aE_TechnicalContextFunctions {
+  public static class TechnicalContextFunctions {
 
-    private __V_3_aE_02_aE_TechnicalContextFunctions() {}
+    private TechnicalContextFunctions() {}
 
   }
 
@@ -423,4 +423,4 @@ public class FunctionSpace_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,ZG/cjJz01W7wUne99doyX5sZSMs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,RnA6m51kQEOfrshydtG5eT49NBc=] */

@@ -1,0 +1,9 @@
+@startuml
+UmlDiagram.Re
+component "Chess" #grey
+component "FTP"
+component "Table"
+(FTP) --> (Chess) : ssss
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,d6de1d03-27f5-11e6-b263-9db62e053e59,Hash]

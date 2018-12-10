@@ -62,6 +62,12 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("b5b4c5e5-e8e8-11e8-b810-cdb2b421fd42")
     public java.lang.Boolean HasTemplate();
 
+    @IDynamicResourceExtension.MethodId("c26aab39-fc4a-11e8-af47-e5bdd8100025")
+    public java.lang.String RenderNamespace();
+
+    @IDynamicResourceExtension.MethodId("516e09e9-fc4c-11e8-af47-e5bdd8100025")
+    public List<ch.actifsource.core.javamodel.IResource> GetNamespaces();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -495,4 +501,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,P/g490Vs5y56ylDeVsKq+EGUn0A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,ue8Wbtz9LHx+Kkx68NWO4YKbavk=] */

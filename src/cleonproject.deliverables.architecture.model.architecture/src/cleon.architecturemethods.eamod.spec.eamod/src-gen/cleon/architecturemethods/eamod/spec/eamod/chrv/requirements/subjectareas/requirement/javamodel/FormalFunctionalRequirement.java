@@ -255,6 +255,16 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
   }
     
   @Override
+  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectSupplement() {
+    return _getList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_supplement);
+  }
+
+  public FormalFunctionalRequirement setSupplement(java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> supplement) {
+    _setList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_supplement, supplement);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.template.function.javamodel.IFunctionTemplate selectTemplate() {
     return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.FormalFunctionalRequirement_template);
   }
@@ -302,6 +312,7 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_owners, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirementState.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_state, visitor);
+    _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_supplement, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.template.function.javamodel.IFunctionTemplate.class, cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage.FormalFunctionalRequirement_template, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -313,4 +324,4 @@ public class FormalFunctionalRequirement extends DynamicResource implements IFor
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,BQbfb/yhgyMu3ive2ZWHdwMRXgA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7244f943-a962-11e5-bda2-a7fc3bd7c783,kEi4qt8tvsua8IuvZRHvyzZEgAA=] */

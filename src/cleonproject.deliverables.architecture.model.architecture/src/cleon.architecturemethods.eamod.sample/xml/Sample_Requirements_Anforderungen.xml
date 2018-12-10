@@ -1516,7 +1516,34 @@
 							<db:td colspan="2">
 								<db:para>Ja</db:para>
 							</db:td>
-						</db:tr>			
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Anforderung(en) im Konflikt</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>AF003_Requirements_2_(ssss) (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.23f6e412-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
+									</db:listitem>
+								</db:itemizedlist>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td colspan="2">
+								<db:para>Ergänzende Anforderung(en)</db:para>
+							</db:td>
+							<db:td colspan="2">
+								<db:itemizedlist>
+									<db:listitem>
+										<db:para>AF002_Constraint (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.429176da-debe-11e5-bf7d-117d548070bb"/>]</db:para>
+									</db:listitem>
+									<db:listitem>
+										<db:para>AF003_Requirements_2_(ssss) (CAP) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.23f6e412-bf5b-11e5-a56a-35b34376b412"/>]</db:para>
+									</db:listitem>
+								</db:itemizedlist>
+							</db:td>
+						</db:tr>		
 						<db:tr>
 							<db:td colspan="2">
 								<db:para>Komplexität der Realisierung</db:para>
@@ -1527,7 +1554,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Ziele</db:para>
+								<db:para>Ziel(e)</db:para>
 							</db:td>
 							<db:td colspan="2">
 								<db:itemizedlist>
@@ -1641,10 +1668,10 @@
 								<db:td colspan="2">
 									<db:para>Nein</db:para>
 								</db:td>
-							</db:tr>			
+							</db:tr>
 							<db:tr>
 								<db:td colspan="2">
-									<db:para>Ziele</db:para>
+									<db:para>Ziel(e)</db:para>
 								</db:td>
 								<db:td colspan="2">
 									<db:itemizedlist>
@@ -1774,10 +1801,10 @@
 								<db:td colspan="2">
 									<db:para>Ja</db:para>
 								</db:td>
-							</db:tr>			
+							</db:tr>
 							<db:tr>
 								<db:td colspan="2">
-									<db:para>Ziele</db:para>
+									<db:para>Ziel(e)</db:para>
 								</db:td>
 								<db:td colspan="2">
 									<db:itemizedlist>
@@ -1887,10 +1914,10 @@
 							<db:td colspan="2">
 								<db:para>Ja</db:para>
 							</db:td>
-						</db:tr>			
+						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Ziele</db:para>
+								<db:para>Ziel(e)</db:para>
 							</db:td>
 							<db:td colspan="2">
 								<db:itemizedlist>
@@ -2084,10 +2111,10 @@
 							<db:td colspan="2">
 								<db:para>Ja</db:para>
 							</db:td>
-						</db:tr>			
+						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Ziele</db:para>
+								<db:para>Ziel(e)</db:para>
 							</db:td>
 							<db:td colspan="2">
 								<db:itemizedlist>
@@ -2205,10 +2232,10 @@
 							<db:td colspan="2">
 								<db:para>Ja</db:para>
 							</db:td>
-						</db:tr>			
+						</db:tr>
 						<db:tr>
 							<db:td colspan="2">
-								<db:para>Ziele</db:para>
+								<db:para>Ziel(e)</db:para>
 							</db:td>
 							<db:td colspan="2">
 								<db:itemizedlist>

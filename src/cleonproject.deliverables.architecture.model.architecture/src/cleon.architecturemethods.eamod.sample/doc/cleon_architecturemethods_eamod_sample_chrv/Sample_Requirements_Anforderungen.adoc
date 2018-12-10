@@ -171,16 +171,6 @@ Description
 
 . xref:AF002[AF002_Constraint (CAP)]
 
-. xref:AF100[AF100_sss (FEA)]
-
-. xref:AF101[AF101_sss (FEA)]
-
-. xref:AF102[AF102_sss (FEA)]
-
-. xref:AF103[AF103_sss (FEA)]
-
-. xref:AF104[AF104_Aggregated (FEA)]
-
 |
 | _Ableitungen_
 |
@@ -333,11 +323,6 @@ S01
 . xref:AF004[AF004_Requirements_2_1 (CAP)]
 . xref:AF006[AF006_Requirements_1 (FEA)]
 . xref:AF007[AF007_sss (FEA)]
-. xref:AF100[AF100_sss (FEA)]
-. xref:AF101[AF101_sss (FEA)]
-. xref:AF102[AF102_sss (FEA)]
-. xref:AF103[AF103_sss (FEA)]
-. xref:AF104[AF104_Aggregated (FEA)]
 | 
 anchor:S02[]
 S02
@@ -503,15 +488,10 @@ Description
 | xref:AF006_Requirements_1 (FEA)[AF006] | Requirements_1 | Identified
 | xref:AF004_Requirements_2_1 (CAP)[AF004] | Requirements_2_1 | Identified
 | xref:AF007_sss (FEA)[AF007] | sss | Rejected (QS)
-| xref:AF100_sss (FEA)[AF100] | sss | Rejected (QS)
-| xref:AF101_sss (FEA)[AF101] | sss | Rejected (QS)
-| xref:AF102_sss (FEA)[AF102] | sss | Rejected (QS)
-| xref:AF103_sss (FEA)[AF103] | sss | Rejected (QS)
-| xref:AF104_Aggregated (FEA)[AF104] | Aggregated | Identified
 | xref:AF003_Requirements_2_(ssss) (CAP)[AF003] | Requirements_2_(ssss) | Identified
 | xref:AF001_ddd (CAP)[AF001] | ddd | Identified
 | xref:AF002_Constraint (CAP)[AF002] | Constraint | Approved
-|*Total* | 11 |
+|*Total* | 6 |
 |===
 === SU01_Funktionalität
 
@@ -582,11 +562,6 @@ Ja
 . xref:AF007[AF007_sss (FEA)]
 
 |
-| _Aggregiert_
-3+|
-. xref:AF104[AF104_Aggregated (FEA)]
-
-|
 | _Konflikte_
 3+|
 . xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
@@ -608,50 +583,6 @@ Das System muss fähig sein Rezepte drucken
 | _Betroffene Anforderungen_
 3+|
 . xref:AF006[AF006_Requirements_1 (FEA)]
-|===
-
-[cols="5,5,20a,5,10" options="header"]
-|===
-| anchor:AF104[] *AF104* 2+| *Aggregated* | FEA | FunctionalRequirement
-
-|
-| _Status_
-3+| Identified
-|
-| _Quellen_
-3+|
-. xref:Q002[Q002_Dokument_aaaa_Kapitel_sadfasdfs]
-
-|
-| _Priorität_
-3+|
-Should have
-|
-| _Dringend_
-3+|
-Nein
-|
-| _Wichtig_
-3+|
-Ja
-|
-| _Ziele_
-3+|
-. xref:Z002[Z002_Goal_1]
-
-|
-| _Aggregat_
-3+|
-. xref:AF006[AF006_Requirements_1 (FEA)]
-
-|
-| _Stakeholder_
-3+|
-. xref:S01[S01_Stakeholder_A]
-|
-| _Betroffene Anforderungen_
-3+|
-. xref:AF104[AF104_Aggregated (FEA)]
 |===
 
 ===== AF004_Requirements_2_1 (CAP)
@@ -713,7 +644,6 @@ Low
 
 
 
-
 ===== AF007_sss (FEA)
 
 
@@ -751,17 +681,6 @@ Ja
 3+|
 . xref:AF006[AF006_Requirements_1 (FEA)]
 |
-| _Aggregiert_
-3+|
-. xref:AF100[AF100_sss (FEA)]
-
-. xref:AF101[AF101_sss (FEA)]
-
-. xref:AF102[AF102_sss (FEA)]
-
-. xref:AF103[AF103_sss (FEA)]
-
-|
 | _Stakeholder_
 3+|
 . xref:S01[S01_Stakeholder_A]
@@ -773,199 +692,6 @@ Das System muss fähig sein Rezepte auszudrucken
 | _Betroffene Anforderungen_
 3+|
 . xref:AF007[AF007_sss (FEA)]
-|===
-
-[cols="5,5,20a,5,10" options="header"]
-|===
-| anchor:AF100[] *AF100* 2+| *sss* | FEA | FunctionalRequirement
-
-|
-| _Status_
-3+| Rejected (QS)
-|
-| _Quellen_
-3+|
-. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
-
-|
-| _Priorität_
-3+|
-Should have
-|
-| _Dringend_
-3+|
-Nein
-|
-| _Wichtig_
-3+|
-Ja
-|
-| _Komplexität_
-3+|
-High
-|
-| _Ziele_
-3+|
-. xref:Z002[Z002_Goal_1]
-
-|
-| _Aggregat_
-3+|
-. xref:AF007[AF007_sss (FEA)]
-
-|
-| _Stakeholder_
-3+|
-. xref:S01[S01_Stakeholder_A]
-|
-| _Formale Definition_
-3+|
-Das System sollte fähig sein Rezepte auszudrucken
-|
-| _Betroffene Anforderungen_
-3+|
-. xref:AF100[AF100_sss (FEA)]
-|===
-[cols="5,5,20a,5,10" options="header"]
-|===
-| anchor:AF101[] *AF101* 2+| *sss* | FEA | FunctionalRequirement
-
-|
-| _Status_
-3+| Rejected (QS)
-|
-| _Quellen_
-3+|
-. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
-
-|
-| _Priorität_
-3+|
-Must have
-|
-| _Dringend_
-3+|
-Ja
-|
-| _Wichtig_
-3+|
-Ja
-|
-| _Ziele_
-3+|
-. xref:Z002[Z002_Goal_1]
-
-|
-| _Aggregat_
-3+|
-. xref:AF007[AF007_sss (FEA)]
-
-|
-| _Stakeholder_
-3+|
-. xref:S01[S01_Stakeholder_A]
-|
-| _Formale Definition_
-3+|
-Das System muss fähig sein Rezepte auszudrucken
-|
-| _Betroffene Anforderungen_
-3+|
-. xref:AF101[AF101_sss (FEA)]
-|===
-[cols="5,5,20a,5,10" options="header"]
-|===
-| anchor:AF102[] *AF102* 2+| *sss* | FEA | FunctionalRequirement
-
-|
-| _Status_
-3+| Rejected (QS)
-|
-| _Quellen_
-3+|
-. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
-
-|
-| _Priorität_
-3+|
-Must have
-|
-| _Dringend_
-3+|
-Ja
-|
-| _Wichtig_
-3+|
-Ja
-|
-| _Ziele_
-3+|
-. xref:Z002[Z002_Goal_1]
-
-|
-| _Aggregat_
-3+|
-. xref:AF007[AF007_sss (FEA)]
-
-|
-| _Stakeholder_
-3+|
-. xref:S01[S01_Stakeholder_A]
-|
-| _Formale Definition_
-3+|
-Das System muss fähig sein Rezepte auszudrucken
-|
-| _Betroffene Anforderungen_
-3+|
-. xref:AF102[AF102_sss (FEA)]
-|===
-[cols="5,5,20a,5,10" options="header"]
-|===
-| anchor:AF103[] *AF103* 2+| *sss* | FEA | FunctionalRequirement
-
-|
-| _Status_
-3+| Rejected (QS)
-|
-| _Quellen_
-3+|
-. xref:Q001[Q001_Dokument_cccc_Kapitel_ddd]
-
-|
-| _Priorität_
-3+|
-Must have
-|
-| _Dringend_
-3+|
-Ja
-|
-| _Wichtig_
-3+|
-Ja
-|
-| _Ziele_
-3+|
-. xref:Z002[Z002_Goal_1]
-
-|
-| _Aggregat_
-3+|
-. xref:AF007[AF007_sss (FEA)]
-
-|
-| _Stakeholder_
-3+|
-. xref:S01[S01_Stakeholder_A]
-|
-| _Formale Definition_
-3+|
-Das System muss fähig sein Rezepte ausdrucken
-|
-| _Betroffene Anforderungen_
-3+|
-. xref:AF103[AF103_sss (FEA)]
 |===
 
 
@@ -1020,7 +746,6 @@ Das Gewicht des Smartphone muss kleiner gleich 100g sein
 3+|
 . xref:AF003[AF003_Requirements_2_(ssss) (CAP)]
 |===
-
 
 
 
@@ -1083,7 +808,6 @@ Die Aussenhülle des Smartphones muss so gestaltet sein, dass das Smartphone bei
 
 
 
-
 ==== AF002_Constraint (CAP)
 
 
@@ -1129,7 +853,6 @@ Der Auftragnehmer muss ein Betriebshandbuch für den MP3-Player auszudrucken
 3+|
 . xref:AF002[AF002_Constraint (CAP)]
 |===
-
 
 
 
@@ -1195,7 +918,6 @@ xref:Q009[Q009]
 . xref:AF002[AF002_Constraint (CAP)]
 . xref:DR001[DR001_Driver_1]
 . xref:DR002[DR002_Driver_2]
-. xref:AF104[AF104_Aggregated (FEA)]
 
 | Referenz 
 | 
@@ -1264,10 +986,6 @@ xref:Q008[Q008]
 . xref:AF007[AF007_sss (FEA)]
 . xref:Z004[Z004_Goal 2]
 . xref:Z005[Z005_Goal 2.1]
-. xref:AF100[AF100_sss (FEA)]
-. xref:AF101[AF101_sss (FEA)]
-. xref:AF102[AF102_sss (FEA)]
-. xref:AF103[AF103_sss (FEA)]
 
 | Workshop 
 | 

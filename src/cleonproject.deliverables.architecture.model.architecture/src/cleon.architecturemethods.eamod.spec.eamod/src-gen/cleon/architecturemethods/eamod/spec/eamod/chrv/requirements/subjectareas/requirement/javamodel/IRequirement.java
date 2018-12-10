@@ -18,8 +18,6 @@ public interface IRequirement extends cleon.common.doc.spec.doc.chapter.javamode
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirementState selectState();
   
-  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectAggregates();
-  
   public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectConcretizes();
   
   public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectConflicts();
@@ -34,4 +32,4 @@ public interface IRequirement extends cleon.common.doc.spec.doc.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,MUTbkpjTTRmVu/pdIeUpnRdJIPc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,ukyhmr+2GSSmbMH+VCWxOwd96RU=] */

@@ -151,12 +151,6 @@ public class CHRV_FunctionSpace {
 
   public static interface IRequirementFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("18d50689-2c92-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderToAggregation();
-
-    @IDynamicResourceExtension.MethodId("aa38f500-2c94-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderFromAggregation();
-
     @IDynamicResourceExtension.MethodId("5d000f9f-2cb0-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String RenderGoalDependency();
 
@@ -168,9 +162,6 @@ public class CHRV_FunctionSpace {
 
     @IDynamicResourceExtension.MethodId("2c28cc3e-2cb6-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String RenderSubjectAreaDependencyCHMM();
-
-    @IDynamicResourceExtension.MethodId("891362c8-2cc4-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderToAggregationCHMM();
 
     @IDynamicResourceExtension.MethodId("c0b83b03-2cc4-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String RenderAbstrationCHMM();
@@ -433,4 +424,4 @@ public class CHRV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,Nhd4aWd+ATE4OVnqCQTuAKeoWJ4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,EtS3eit+S/UjQZZ73e0Ys5ZwTBg=] */

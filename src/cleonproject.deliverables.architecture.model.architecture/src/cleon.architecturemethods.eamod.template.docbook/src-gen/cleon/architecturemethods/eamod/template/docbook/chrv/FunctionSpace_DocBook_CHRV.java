@@ -57,12 +57,6 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("8a8cb15a-3808-11e8-a088-c32925c50d0b")
     public java.lang.String RenderDescriptions();
 
-    @IDynamicResourceExtension.MethodId("1b2b8c37-3809-11e8-a088-c32925c50d0b")
-    public java.lang.String RenderRequirement();
-
-    @IDynamicResourceExtension.MethodId("11d12729-380d-11e8-a088-c32925c50d0b")
-    public java.lang.String RenderChapters();
-
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -500,4 +494,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,KarsPmTyh4JmWMuKdgYVnCOe0fg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,Dw7QqKimdOR4Jw3WWE+XdjoztSU=] */

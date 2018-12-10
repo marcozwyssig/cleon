@@ -13,7 +13,6 @@ public class RequirementPackage {
   public static final Resource RequirementState_Fulfilled = new Resource("8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783");
   public static final Resource RequirementState_Approved__F___N_By__F_Supplier__O_ = new Resource("9741d4f7-a95b-11e5-bda2-a7fc3bd7c783");
   public static final Resource Requirement_concretizes = new Resource("09e9fbec-a95d-11e5-bda2-a7fc3bd7c783");
-  public static final Resource Requirement_aggregates = new Resource("12626928-a95d-11e5-bda2-a7fc3bd7c783");
   public static final Resource FunctionalRequirement = new Resource("54db77d4-a95d-11e5-bda2-a7fc3bd7c783");
   public static final Resource NonFunctionalRequirement = new Resource("6f864020-a95d-11e5-bda2-a7fc3bd7c783");
   public static final Resource ConstraintRequirement = new Resource("a994ec69-a95d-11e5-bda2-a7fc3bd7c783");
@@ -58,4 +57,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement,1i6TaYsZT5OU3qf4gRwBUnoZx40=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement,9kFFLZsb5nqxyJUG9jea779CqhQ=] */

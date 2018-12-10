@@ -129,9 +129,6 @@ public class FunctionSpace_CHRV {
     @IDynamicResourceExtension.MethodId("6ae2843d-1230-11e8-b381-115accdaedda")
     public java.lang.String RenderChapter();
 
-    @IDynamicResourceExtension.MethodId("010d8d29-a542-11e8-8163-815a23011093")
-    public java.lang.String RenderRequirement();
-
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -474,4 +471,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,0QW4Mid3IVgbp3lJgy2KzYrO64c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,EgEipYT+Pt/LPLB9Xm87TyUVEZQ=] */

@@ -51,6 +51,16 @@ public class Architecture_Constraints extends DynamicResource implements IArchit
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public Architecture_Constraints setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -67,6 +77,16 @@ public class Architecture_Constraints extends DynamicResource implements IArchit
 
   public Architecture_Constraints setOrganizationalConstraints(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints organizationalConstraints) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.Architecture_aE_Constraints_organizationalConstraints, organizationalConstraints);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public Architecture_Constraints setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -97,8 +117,10 @@ public class Architecture_Constraints extends DynamicResource implements IArchit
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IOrganizationalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.Architecture_aE_Constraints_organizationalConstraints, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.ITechnicalConstraints.class, cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints._02_architecture_constraintsPackage.Architecture_aE_Constraints_technicalConstraints, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -114,4 +136,4 @@ public class Architecture_Constraints extends DynamicResource implements IArchit
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,nWMNhjqy94YLltM8P4icJDW+9KQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,JaqsAGBbCNxaC94ducOl7pDvIQk=] */

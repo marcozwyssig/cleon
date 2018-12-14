@@ -1,5 +1,5 @@
 @startuml
-UmlDiagram.Re
+skinparam monochrome true
 component "Chess" #grey
 actor "Player A"
 component "Table"

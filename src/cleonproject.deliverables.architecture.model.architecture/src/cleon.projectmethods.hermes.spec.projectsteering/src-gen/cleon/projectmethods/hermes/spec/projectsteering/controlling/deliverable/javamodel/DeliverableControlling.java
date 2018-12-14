@@ -51,6 +51,16 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public DeliverableControlling setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp selectDeadline() {
     return _getSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deadline);
   }
@@ -87,6 +97,16 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
 
   public DeliverableControlling setImpediments(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableImpediments impediments) {
     _setSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_impediments, impediments);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public DeliverableControlling setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -147,10 +167,12 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deadline, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_deliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableImpediments.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_impediments, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_quality, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLamp.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_risk, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableRisks.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableControlling_risks, visitor);
@@ -185,4 +207,4 @@ public class DeliverableControlling extends DynamicResource implements IDelivera
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,KJA1JqijzznydMkeSd7rIFLXQnA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,Usrx8iMQu7/M5/eCcFvEFD18eUw=] */

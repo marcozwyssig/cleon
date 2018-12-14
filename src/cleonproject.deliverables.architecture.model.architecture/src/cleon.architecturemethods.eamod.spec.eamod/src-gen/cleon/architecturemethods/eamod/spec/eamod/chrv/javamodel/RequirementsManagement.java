@@ -88,6 +88,16 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public RequirementsManagement setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.javamodel.IDistinctions selectDestinctions() {
     return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.javamodel.IDistinctions.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_destinctions);
   }
@@ -144,6 +154,16 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
 
   public RequirementsManagement setMotivation(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation motivation) {
     _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_motivation, motivation);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public RequirementsManagement setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -208,12 +228,14 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.introduction.javamodel.IAbout.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_about, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.javamodel.IDistinctions.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_destinctions, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.introduction.javamodel.IIntroduction.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_introduction, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.issues.javamodel.IIssues.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_issues, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_motivation, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.javamodel.IProjectSubjectArea.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_requirements, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_sources, visitor);
@@ -252,4 +274,4 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,P2wTMImXNstjA2nwTcU2e+2fjG0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,H8tUXh1/r5msigP6UlbfYk3CdlE=] */

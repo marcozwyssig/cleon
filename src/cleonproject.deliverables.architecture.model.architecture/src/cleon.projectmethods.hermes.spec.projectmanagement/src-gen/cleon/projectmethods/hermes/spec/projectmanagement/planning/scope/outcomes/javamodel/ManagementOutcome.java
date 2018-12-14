@@ -69,6 +69,16 @@ public class ManagementOutcome extends DynamicResource implements IManagementOut
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public ManagementOutcome setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadline> selectDeadlines() {
     return _getList(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadline.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.OutcomesPackage.Outcome_deadlines);
   }
@@ -119,6 +129,16 @@ public class ManagementOutcome extends DynamicResource implements IManagementOut
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public ManagementOutcome setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IState selectState() {
     return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IState.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.ScopePackage.StateAware_state);
   }
@@ -157,15 +177,17 @@ public class ManagementOutcome extends DynamicResource implements IManagementOut
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.OutcomesPackage.Outcome_timeLag, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.targetdates.javamodel.IDeadline.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.OutcomesPackage.Outcome_deadlines, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.OutcomesPackage.Outcome_deliverable, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.javamodel.IOutcomeDependency.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcomes.OutcomesPackage.Outcome_dependsOn, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.OwnerAware_owner, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IState.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.ScopePackage.StateAware_state, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cc207995-bfeb-11e8-a3d0-5394fd9291a1,gXn9dJyur0fUaQxp3BKK9OUS91Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cc207995-bfeb-11e8-a3d0-5394fd9291a1,CfmhKEMqmSjlWJFJdNFeAh2NDIo=] */

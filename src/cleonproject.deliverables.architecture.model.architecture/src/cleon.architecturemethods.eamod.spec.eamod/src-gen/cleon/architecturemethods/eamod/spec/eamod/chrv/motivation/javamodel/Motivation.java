@@ -51,6 +51,16 @@ public class Motivation extends DynamicResource implements IMotivation {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public Motivation setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -77,6 +87,16 @@ public class Motivation extends DynamicResource implements IMotivation {
 
   public Motivation setGoals(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoals goals) {
     _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_goals, goals);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public Motivation setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -117,9 +137,11 @@ public class Motivation extends DynamicResource implements IMotivation {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javamodel.IDrivers.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_drivers, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.goals.javamodel.IGoals.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_goals, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.principles.javamodel.IPrinciples.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_principles, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.javamodel.IStakeholders.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.MotivationPackage.Motivation_stakeholders, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -144,4 +166,4 @@ public class Motivation extends DynamicResource implements IMotivation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,Nnmw+e3S5i4KYj844Nxejh4G27Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,nCsg7SGRuzu8ni3z+0Ell6+Jr1U=] */

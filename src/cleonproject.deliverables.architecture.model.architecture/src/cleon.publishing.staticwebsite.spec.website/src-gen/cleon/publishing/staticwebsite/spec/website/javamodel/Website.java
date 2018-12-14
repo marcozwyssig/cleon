@@ -78,6 +78,16 @@ public class Website extends DynamicResource implements IWebsite {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public Website setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage selectCover() {
     return _getSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_cover);
   }
@@ -128,6 +138,16 @@ public class Website extends DynamicResource implements IWebsite {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public Website setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties() {
     return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties);
   }
@@ -167,11 +187,13 @@ public class Website extends DynamicResource implements IWebsite {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_cover, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_images, visitor);
     _acceptList(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.ILayout.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_layouts, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_logo, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -196,4 +218,4 @@ public class Website extends DynamicResource implements IWebsite {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,WffrFSrVshC+1ppHED2EO48Ixo0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,lE3gIUj2IOK7GiQcUloOQNolm0s=] */

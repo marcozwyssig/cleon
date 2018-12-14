@@ -48,6 +48,57 @@ Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System
 |====
 |Name | Beschreibung
 |====
+=== Fachlicher Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+component "IKT" #grey
+
+...
+
+In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+=== Technischer Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+component "IKT" #grey
+
+...
+
+In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
 
 
 == Bausteinsicht

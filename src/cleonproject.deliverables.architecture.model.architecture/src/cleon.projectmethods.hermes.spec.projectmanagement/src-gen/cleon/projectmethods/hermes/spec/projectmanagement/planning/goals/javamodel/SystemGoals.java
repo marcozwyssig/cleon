@@ -51,6 +51,16 @@ public class SystemGoals extends DynamicResource implements ISystemGoals {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public SystemGoals setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -67,6 +77,16 @@ public class SystemGoals extends DynamicResource implements ISystemGoals {
 
   public SystemGoals setGoals(java.util.List<? extends cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoal> goals) {
     _setList(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.GoalsPackage.AbstractGoals_goals, goals);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public SystemGoals setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -97,8 +117,10 @@ public class SystemGoals extends DynamicResource implements ISystemGoals {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoal.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.GoalsPackage.AbstractGoals_goals, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.ISystemGoal.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.GoalsPackage.SystemGoals_systemGoals, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -110,4 +132,4 @@ public class SystemGoals extends DynamicResource implements ISystemGoals {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1fabee5e-210e-11e8-9bf6-d910b575bad9,sJJ24pn8vGKRDzEdVJpwXcRxxuw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1fabee5e-210e-11e8-9bf6-d910b575bad9,pmc7mFJvUz/MSZ5TriS6Ire4EA0=] */

@@ -51,6 +51,16 @@ public class Transition extends DynamicResource implements ITransition {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public Transition setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.ICondition selectCondition() {
     return _getSingle(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.ICondition.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.Transition_condition);
   }
@@ -77,6 +87,16 @@ public class Transition extends DynamicResource implements ITransition {
 
   public Transition setEvent(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.IEvent event) {
     _setSingle(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.Transition_event, event);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public Transition setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -117,9 +137,11 @@ public class Transition extends DynamicResource implements ITransition {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.ICondition.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.Transition_condition, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.IEvent.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.Transition_event, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.IState.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.Transition_targetState, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -140,4 +162,4 @@ public class Transition extends DynamicResource implements ITransition {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,l2vsMR/qVCyxqrMY9w9jjW8MvAw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,xFkJk/pFMoMFdMKrPHn9uVAnv4U=] */

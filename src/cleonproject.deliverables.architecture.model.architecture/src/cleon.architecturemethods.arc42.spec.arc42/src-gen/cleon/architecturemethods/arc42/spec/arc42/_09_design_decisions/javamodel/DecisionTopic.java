@@ -70,6 +70,16 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public DecisionTopic setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConsideredAlternatives selectConsideredAlternatives() {
     return _getSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConsideredAlternatives.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_consideredAlternatives);
   }
@@ -110,6 +120,16 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public DecisionTopic setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IProblem selectProblem() {
     return _getSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IProblem.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_problem);
   }
@@ -138,10 +158,12 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IAssumptions.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_assumptions, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConsideredAlternatives.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_consideredAlternatives, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConstraints.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IDecision.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_decision, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IProblem.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_problem, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -169,4 +191,4 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,GYkOuLDHX9nuO2daP8gpMmo4qf8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,re9hEb2ymCbk6DMYfgLwU2A1kF4=] */

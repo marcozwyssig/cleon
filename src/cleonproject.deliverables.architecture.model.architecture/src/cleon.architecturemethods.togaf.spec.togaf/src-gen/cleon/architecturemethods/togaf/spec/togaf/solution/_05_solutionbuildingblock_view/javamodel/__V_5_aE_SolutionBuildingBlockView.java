@@ -51,6 +51,16 @@ public class __V_5_aE_SolutionBuildingBlockView extends DynamicResource implemen
   // relations
   
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  }
+
+  public __V_5_aE_SolutionBuildingBlockView setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -111,6 +121,16 @@ public class __V_5_aE_SolutionBuildingBlockView extends DynamicResource implemen
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+  }
+
+  public __V_5_aE_SolutionBuildingBlockView setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -127,14 +147,16 @@ public class __V_5_aE_SolutionBuildingBlockView extends DynamicResource implemen
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.BuildingBlockView_level_aE_1, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.BuildingBlockView_level_aE_2, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.BuildingBlockView_level_aE_3, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.BuildingBlockView_level_aE_4, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.BuildingBlockView_level_aE_5, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bef90829-2d6f-11e6-959f-d1cef44ff5fd,w2Kg5QpuNsEAf9VDZOn/lqstGak=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bef90829-2d6f-11e6-959f-d1cef44ff5fd,G/goYS09kk7rTyuKKfEPdAtpdbo=] */

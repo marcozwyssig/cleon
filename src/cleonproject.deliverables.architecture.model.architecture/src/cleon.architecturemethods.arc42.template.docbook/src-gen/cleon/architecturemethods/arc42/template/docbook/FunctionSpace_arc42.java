@@ -421,6 +421,40 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface IBlackboxFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderRequirements();
+
+    @IDynamicResourceExtension.MethodId("d07cc379-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderPurpose();
+
+    @IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderDependencies();
+
+    @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> HasDependencies();
+
+  }
+  
+  public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BlackboxFunctionsImpl implements IBlackboxFunctionsImpl {
+
+    public static final IBlackboxFunctionsImpl INSTANCE = new BlackboxFunctionsImpl();
+
+    private BlackboxFunctionsImpl() {}
+
+  }
+  
+  public static class BlackboxFunctions {
+
+    private BlackboxFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,kv6rcEf6R4Wa16bBkhKtOc/kwlc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Fi9jG1//YxGu7XcxPk931ZcJHsk=] */

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.architecturemethods.arc42.template.docbook</name>
-	<comment/>
+	<comment></comment>
 	<projects>
 		<project>cleon.architecturemethods.arc42.template.plantuml</project>
 		<project>cleon.modelinglanguages.uml.template.docbook</project>
@@ -21,12 +21,12 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>ch.actifsource.environment.builder</name>
+			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
+			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
@@ -35,10 +35,4 @@
 		<nature>ch.actifsource.environment.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,5fa7e2e5-d17f-11e8-a09c-8fbeab9d7daa,PbKWSXAU8sVyvq3j1GNoPQ0LKTg=] -->

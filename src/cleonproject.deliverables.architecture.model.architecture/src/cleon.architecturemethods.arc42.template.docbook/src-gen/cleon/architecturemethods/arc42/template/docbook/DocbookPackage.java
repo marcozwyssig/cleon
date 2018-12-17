@@ -20,6 +20,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_arc42_BuildingBlockView = new Resource("3c7834a8-ee38-11e8-9756-27a593be2ffb");
   public static final Resource FunctionSpace_aE_arc42_SubjectAreaCoverage = new Resource("1d174cca-ee3a-11e8-9756-27a593be2ffb");
   public static final Resource FunctionSpace_aE_arc42_Level = new Resource("506046d6-ee3e-11e8-9756-27a593be2ffb");
+  public static final Resource FunctionSpace_aE_arc42_Blackbox = new Resource("3f8ba84c-0205-11e9-9c9d-8d52d6745026");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +41,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.template.docbook,1iiRazJqL2r8rEwXfFPokvRmUPo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.template.docbook,Dp6nOQaB0/Nt8rl+xL7d4UWW8TY=] */

@@ -265,6 +265,9 @@
 											<db:listitem>
 												<db:para>AF006_Requirements_1 (FEA)</db:para>
 											</db:listitem>
+											<db:listitem>
+												<db:para>AF007_sss (FEA)</db:para>
+											</db:listitem>
 										</db:itemizedlist>
 									</db:td>
 								</db:tr>			
@@ -367,6 +370,11 @@
 										<db:para>Erfüllte Anforderungen</db:para>
 									</db:td>
 									<db:td>
+										<db:itemizedlist>
+											<db:listitem>
+												<db:para>AF004_Requirements_2_1 (CAP)</db:para>
+											</db:listitem>
+										</db:itemizedlist>
 									</db:td>
 								</db:tr>			
 							</db:tbody>
@@ -580,6 +588,22 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
+							<db:para>AF004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Windows Server Standard Virtual &lt;NamedSystemConfiguration&gt;</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
 							<db:para>AF007</db:para>
 						</db:td>
 						<db:td>
@@ -589,6 +613,30 @@
 									<db:itemizedlist>
 										<db:listitem>
 											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Windows 2016 &lt;NamedSystemComponent&gt;</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
 										</db:listitem>
 									</db:itemizedlist>
 								</db:listitem>																			

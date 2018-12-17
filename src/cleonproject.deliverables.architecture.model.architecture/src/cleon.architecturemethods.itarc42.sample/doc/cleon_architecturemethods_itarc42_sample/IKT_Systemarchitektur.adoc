@@ -54,6 +54,7 @@ Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System
 [plantuml, png]
 ....
 skinparam monochrome true
+skinparam componentStyle uml2
 component "IKT" #grey
 
 ...
@@ -80,6 +81,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 [plantuml, png]
 ....
 skinparam monochrome true
+skinparam componentStyle uml2
 component "IKT" #grey
 
 ...

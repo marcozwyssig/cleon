@@ -1,5 +1,6 @@
 @startuml
 skinparam monochrome true
+skinparam componentStyle uml2
 component "Chess" #grey
 actor "Player A"
 component "Table"

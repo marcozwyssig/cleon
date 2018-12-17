@@ -70,6 +70,7 @@ World
 [plantuml, png]
 ....
 skinparam monochrome true
+skinparam componentStyle uml2
 component "Chess" #grey
 actor "Player A"
 component "Table"
@@ -116,6 +117,7 @@ ddd
 [plantuml, png]
 ....
 skinparam monochrome true
+skinparam componentStyle uml2
 component "Chess" #grey
 component "FTP"
 component "Table"

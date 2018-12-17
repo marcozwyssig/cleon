@@ -28,6 +28,17 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
     super(resourceRepository, resource, IServiceDekomposition.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -63,6 +74,8 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IDomainService.class, cleon.architecturemethods.arc42.spec.ddd.services.ServicesPackage.ServiceDekomposition_into, visitor);
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
@@ -76,4 +89,4 @@ public class ServiceDekomposition extends DynamicResource implements IServiceDek
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,3u35pNMD886bBo0hi3Q4rHFmnPg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,fmsJxZiexp+dmIN7s322ntBIMPs=] */

@@ -28,6 +28,17 @@ public class ArchitectureBuildingBlockDecomposite extends DynamicResource implem
     super(resourceRepository, resource, IArchitectureBuildingBlockDecomposite.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class ArchitectureBuildingBlockDecomposite extends DynamicResource implem
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel.IArchitectureBuildingBlock.class, cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.ArchitecturebuildingblockPackage.ArchitectureBuildingBlockDecomposite_into, visitor);
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
@@ -87,4 +100,4 @@ public class ArchitectureBuildingBlockDecomposite extends DynamicResource implem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1a0f6f95-3a07-11e6-a354-253097f89a49,LoF7dwpXcvzttL23tO8d3HqHfcU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1a0f6f95-3a07-11e6-a354-253097f89a49,6HzshzhV/XAmQz9RMhaDYdsHXJA=] */

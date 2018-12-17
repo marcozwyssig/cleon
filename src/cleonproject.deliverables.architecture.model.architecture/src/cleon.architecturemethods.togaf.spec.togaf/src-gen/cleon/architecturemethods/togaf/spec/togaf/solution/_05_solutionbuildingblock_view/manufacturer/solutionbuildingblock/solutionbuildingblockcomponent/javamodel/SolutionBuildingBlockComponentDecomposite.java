@@ -28,6 +28,17 @@ public class SolutionBuildingBlockComponentDecomposite extends DynamicResource i
     super(resourceRepository, resource, ISolutionBuildingBlockComponentDecomposite.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class SolutionBuildingBlockComponentDecomposite extends DynamicResource i
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel.ISolutionBuildingBlockComponent.class, cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.SolutionbuildingblockcomponentPackage.SolutionBuildingBlockComponentDecomposite_into, visitor);
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
@@ -87,4 +100,4 @@ public class SolutionBuildingBlockComponentDecomposite extends DynamicResource i
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6437681b-33a2-11e6-94cd-fbf6c8ccd08d,z/kmyeorhCenjoRzMKhCRsczOnc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6437681b-33a2-11e6-94cd-fbf6c8ccd08d,vGmu5i71dU6a/w/Xk0OuwJUTKh0=] */

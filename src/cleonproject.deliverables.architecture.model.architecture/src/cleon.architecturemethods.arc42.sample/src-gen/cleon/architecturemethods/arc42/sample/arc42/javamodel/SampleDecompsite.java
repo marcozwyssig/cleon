@@ -28,6 +28,17 @@ public class SampleDecompsite extends DynamicResource implements ISampleDecompsi
     super(resourceRepository, resource, ISampleDecompsite.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class SampleDecompsite extends DynamicResource implements ISampleDecompsi
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentCompositionDecomposite_intoComponent, visitor);
@@ -87,4 +100,4 @@ public class SampleDecompsite extends DynamicResource implements ISampleDecompsi
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd37274c-4376-11e6-a9d7-97cf4f7c398b,8bKWR/TwS0c8rjBSJGr/SfivxpY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd37274c-4376-11e6-a9d7-97cf4f7c398b,rf/akQ5RtEKx09u2rWVa7GZMDQU=] */

@@ -28,6 +28,17 @@ public class RepositoryDekomposition extends DynamicResource implements IReposit
     super(resourceRepository, resource, IRepositoryDekomposition.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -63,6 +74,8 @@ public class RepositoryDekomposition extends DynamicResource implements IReposit
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepository.class, cleon.architecturemethods.arc42.spec.ddd.repository.RepositoryPackage.RepositoryDekomposition_into, visitor);
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
@@ -76,4 +89,4 @@ public class RepositoryDekomposition extends DynamicResource implements IReposit
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,43b7a073-28b4-11e5-8b63-33a353e42346,se8J+2UK2QfK0RiBd7EmCZZ3jao=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,43b7a073-28b4-11e5-8b63-33a353e42346,wNXHi0nuyTfJI3vm3rvI6/jN9hk=] */

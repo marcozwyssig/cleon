@@ -28,17 +28,6 @@ public class Blackbox extends DynamicResource implements IBlackbox {
     super(resourceRepository, resource, IBlackbox.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.util.List<java.lang.String> selectPurpose() {
-    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_purpose);
-  }
-    
-  public void setPurpose(java.util.List<java.lang.String> purpose) {
-     _setListAttribute(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_purpose, purpose);
-  }
-
   // relations
   
   @Override
@@ -74,8 +63,6 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_purpose, visitor);
     // relations
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_buildingblock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -89,4 +76,4 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,bpOVg1EMpMdOZbCwJrWhYQlq4fY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,1oPRU4QJlT12vquRpm5BUZqgE3o=] */

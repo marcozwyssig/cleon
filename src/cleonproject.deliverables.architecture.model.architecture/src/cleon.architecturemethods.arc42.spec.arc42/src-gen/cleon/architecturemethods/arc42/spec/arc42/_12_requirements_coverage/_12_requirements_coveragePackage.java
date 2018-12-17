@@ -13,6 +13,9 @@ public class _12_requirements_coveragePackage {
   public static final Resource RequirementCoverage_requirement = new Resource("db2ce77e-ece1-11e8-8149-8542373915bf");
   public static final Resource BuildingBlockRequirementCoverage = new Resource("a79cb77d-ed67-11e8-8628-792e8e0b10f3");
   public static final Resource RequirementCoverage_componentRequirementCoverages = new Resource("ae150e64-ed67-11e8-8628-792e8e0b10f3");
+  public static final Resource RequirementCoverageDescription = new Resource("0562087c-01e5-11e9-9c9d-8d52d6745026");
+  public static final Resource BuildingBlockRequirementCoverage_requirementCoverageDescription = new Resource("0dde4602-01e5-11e9-9c9d-8d52d6745026");
+  public static final Resource RequirementCoverageDescription_requirement = new Resource("283dd43b-01e5-11e9-9c9d-8d52d6745026");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +36,4 @@ public class _12_requirements_coveragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage,Wh+K8WctILRoblUBSUENpWNy89g=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage,tixkJRc2ACqbd/NFYZMFQydcIvU=] */

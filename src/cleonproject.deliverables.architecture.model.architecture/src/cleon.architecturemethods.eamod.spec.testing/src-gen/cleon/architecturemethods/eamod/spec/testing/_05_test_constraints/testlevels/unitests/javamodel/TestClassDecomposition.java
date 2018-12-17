@@ -28,6 +28,17 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
     super(resourceRepository, resource, ITestClassDecomposition.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.util.List<java.lang.String> selectPurpose() {
+    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
+  }
+    
+  public void setPurpose(java.util.List<java.lang.String> purpose) {
+     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
+  }
+
   // relations
   
   @Override
@@ -93,6 +104,8 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.architecturemethods.eamod.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classUnderTest, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.testing._05_test_constraints.testlevels.unitests.javamodel.ITestClass.class, cleon.architecturemethods.eamod.spec.testing._05_test_constraints.testlevels.unitests.UnitestsPackage.TestClassDecomposition_classes, visitor);
@@ -113,4 +126,4 @@ public class TestClassDecomposition extends DynamicResource implements ITestClas
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,nx6emOh/wX/SYKQUjL8buN/QJA8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e43712cd-19f3-11e5-a57b-e324953fb3a6,xQw7iptR+VoRec7S2S7MBqhOfgg=] */

@@ -9,14 +9,17 @@
 		
 		
 		
+		
 	</db:chapter>
 	<db:chapter >
 		<db:title>Einf&#252;hrung und Ziele</db:title>
 		
 		
 		
+		
 		<db:section >
 			<db:title>Aufgabenstellung</db:title>
+			
 			
 			
 			<db:informaltable style="EAMod Requirement">
@@ -43,6 +46,7 @@
 		</db:section>
 		<db:section >
 			<db:title>Qualit&#228;tsziele</db:title>
+			
 			
 			
 			<db:informaltable style="EAMod Requirement">
@@ -93,8 +97,10 @@
 		
 		
 		
+		
 		<db:section >
 			<db:title>Technische Randbedingungen</db:title>
+			
 			
 			
 			<db:informaltable style="EAMod Requirement">
@@ -133,6 +139,7 @@
 		</db:section>
 		<db:section >
 			<db:title>Organisatorische Randbedingungen</db:title>
+			
 			
 			
 			<db:informaltable style="EAMod Requirement">
@@ -180,8 +187,10 @@
 		
 		
 		
+		
 		<db:section >
 			<db:title>Fachlicher Kontext</db:title>
+			<db:para>In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems aufgeführt.</db:para>
 			
 			<db:mediaobject>
 				<db:imageobject>
@@ -191,11 +200,12 @@
 			    		<db:para>Fachlicher Kontext Diagramm</db:para>
 			  	</db:caption>	
 			</db:mediaobject>
-			<db:para>In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems aufgeführt.</db:para>
+			
 			
 		</db:section>
 		<db:section >
 			<db:title>Technischer Kontext</db:title>
+			
 			
 			<db:mediaobject>
 				<db:imageobject>
@@ -215,9 +225,11 @@
 		
 		
 		
+		
 	</db:chapter>
 	<db:chapter >
 		<db:title>Bausteinsicht</db:title>
+		
 		
 		
 		
@@ -228,128 +240,65 @@
 				
 				
 				
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Chess tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1</db:para>
+							</db:td>
+							<db:td>
+								<db:para>dfasdfasdfasdf</db:para>
+								<db:para>sdfgsdfgsdfg</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test3</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test1</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>Test2</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>Test3</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
+					<db:title>Test1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
 					<db:section>
-						<db:title>Test1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
+						<db:title>Zweck/Verantwortung</db:title>
+						<db:para>asdfasdfasdfasdf</db:para>
+						<db:para>asdfasdfasdf</db:para>
+						<db:para>asdfasdf</db:para>
 					</db:section>
-					<db:section>
-						<db:title>Test2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
-					</db:section>
-					<db:section>
-						<db:title>Test3  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
-					</db:section>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
+				</db:section>
+				<db:section>
+					<db:title>Test2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
+				</db:section>
+				<db:section>
+					<db:title>Test3  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
 				</db:section>
 			</db:section>
 		</db:section>
@@ -360,61 +309,57 @@
 				
 				
 				
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1 tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test1_2</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
+					<db:title>Test1_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
 					<db:section>
-						<db:title>Test1_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+						<db:title>Zweck/Verantwortung</db:title>
+						<db:para>asdfasdfasdf</db:para>
+					</db:section>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
+					<db:section>
+						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="30%" />
 							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
-									<db:th>Name</db:th>
+									<db:th>Anforderung</db:th>
 									<db:th>Beschreibung</db:th>
 								</db:tr>
 							</db:thead>
-							<db:tbody>
+							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
+										<db:para>AF006_Requirements_1 (FEA)</db:para>
 									</db:td>
 									<db:td>
 									</db:td>
 								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>AF006_Requirements_1 (FEA)</db:para>
-											</db:listitem>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>			
 							</db:tbody>
 						</db:informaltable>	
-					</db:section>
+					</db:section>				
 				</db:section>
 			</db:section>
 			<db:section >
@@ -422,56 +367,31 @@
 				
 				
 				
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test2 tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test2_2</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test2_2</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
-					<db:section>
-						<db:title>Test2_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
-					</db:section>
+					<db:title>Test2_2  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
 				</db:section>
 			</db:section>
 			<db:section >
@@ -479,56 +399,31 @@
 				
 				
 				
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test3 tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test3_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test3_1</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
-					<db:section>
-						<db:title>Test3_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
-					</db:section>
+					<db:title>Test3_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
 				</db:section>
 			</db:section>
 		</db:section>
@@ -545,58 +440,33 @@
 					
 					
 					
+					
 				</db:section>
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1_2 tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test1_2_1</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
-					<db:section>
-						<db:title>Test1_2_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Name</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
-									</db:td>
-									<db:td>
-										<db:para>fasdfsf</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>			
-							</db:tbody>
-						</db:informaltable>	
-					</db:section>
+					<db:title>Test1_2_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
 				</db:section>
 			</db:section>
 			<db:section >
@@ -604,18 +474,14 @@
 				
 				
 				
-				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-				</db:section>
+				
 			</db:section>
 			<db:section >
 				<db:title>Ebene 3: Test3_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
 				
 				
 				
-				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-				</db:section>
+				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -625,61 +491,55 @@
 				
 				
 				
+				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1_2_1 tabelarisch aufgelistet:</db:para>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Beschreibung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1_1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
 				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-					<db:informaltable style="EAMod Requirement">
-						<db:col width="30%" />
-						<db:col width="70%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Baustein</db:th>
-								<db:th>Beschreibung</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Test1_2_1_1</db:para>
-								</db:td>
-								<db:td>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
+					<db:title>Test1_2_1_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					<!-- <db:section>
+						<db:title>Schnittstellen</db:title>
+					</db:section>-->	
 					<db:section>
-						<db:title>Test1_2_1_1  &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="30%" />
 							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
-									<db:th>Name</db:th>
+									<db:th>Anforderung</db:th>
 									<db:th>Beschreibung</db:th>
 								</db:tr>
 							</db:thead>
-							<db:tbody>
+							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Zweck/Verantwortung</db:para>
+										<db:para>AF006_Requirements_1 (FEA)</db:para>
 									</db:td>
 									<db:td>
+										<db:para>asdfasdfasdfa</db:para>
+										<db:para>asdfasdfasdf</db:para>
 									</db:td>
 								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Erfüllte Anforderungen</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>AF006_Requirements_1 (FEA)</db:para>
-											</db:listitem>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>			
 							</db:tbody>
 						</db:informaltable>	
-					</db:section>
+					</db:section>				
 				</db:section>
 			</db:section>
 		</db:section>
@@ -690,9 +550,7 @@
 				
 				
 				
-				<db:section>
-					<db:title>Enthaltene Bausteine (Blackbox)</db:title>
-				</db:section>
+				
 			</db:section>
 		</db:section>
 	</db:chapter>
@@ -701,8 +559,10 @@
 		
 		
 		
+		
 		<db:section >
 			<db:title>Bauen</db:title>
+			
 			
 			
 			
@@ -714,9 +574,11 @@
 			
 			
 			
+			
 		</db:section>
 		<db:section >
 			<db:title>Verteilung</db:title>
+			
 			
 			
 			
@@ -728,9 +590,11 @@
 			
 			
 			
+			
 		</db:section>
 		<db:section >
 			<db:title>&#220;berwachung</db:title>
+			
 			
 			
 			
@@ -743,14 +607,17 @@
 		
 		
 		
+		
 	</db:chapter>
 	<db:chapter >
 		<db:title>Entwurfsentscheidungen</db:title>
 		
 		
 		
+		
 		<db:section >
 			<db:title>Entwurfsentscheidung Einsatz von PAM in AD </db:title>
+			
 			
 			
 			<db:informaltable style="EAMod Requirement">
@@ -800,6 +667,7 @@
 			<db:title>Entwurfsentscheidung dsfsdf </db:title>
 			
 			
+			
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="25%" />
 				<db:col width="75%" />
@@ -847,6 +715,7 @@
 		
 		
 		
+		
 	</db:chapter>
 	<db:chapter >
 		<db:title>Risiken und technische Schulden</db:title>
@@ -854,6 +723,126 @@
 		
 		
 		
+		
+	</db:chapter>
+	<db:chapter >
+		<db:title>Anforderungsabdeckung</db:title>
+		
+		
+		
+		
+		<db:section >
+			<db:title>SU01_Funktionalit&#228;t</db:title>
+			
+			
+			
+			<db:para>In der nachfolgenden Tabelle wird die Abdeckung der Anforderungen auf die einzelnen Bausteine aufgezeigt:</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="10%" />
+				<db:col width="50%" />
+				<db:col width="40%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nr</db:th>
+						<db:th>Beschreibung / Formale Definition</db:th>
+						<db:th>Baustein(e)</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>AF006</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Beschreibung</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Desc 1</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 2</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 3</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt;</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Test1_2 &lt;SampleBuildingBlock&gt;</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF007</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
 	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,bb88c324-11f5-11e5-848b-017a3a98ae34,Hash] -->

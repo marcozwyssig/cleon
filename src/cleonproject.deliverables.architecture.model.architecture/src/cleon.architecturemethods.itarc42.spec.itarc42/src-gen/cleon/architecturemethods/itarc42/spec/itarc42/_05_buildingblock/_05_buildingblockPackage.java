@@ -18,6 +18,17 @@ public class _05_buildingblockPackage {
   public static final Resource SystemConfigurationDecomposite_intoSytemConfiguration = new Resource("c90907ab-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemLayer_decomposeSystemComponent = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemComponent_decomposeSystemConfiguration = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
+  public static final Resource NamedSystemComponent = new Resource("3b794e8f-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource NamedSystemConfiguration = new Resource("58022544-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemLayer_hasDependency = new Resource("c5658855-01d8-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemComponentDependency = new Resource("37c35592-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemComponentDependency_to = new Resource("37c3559b-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfigurationDependency = new Resource("4134540e-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfigurationDependency_to = new Resource("41345417-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemComponent_hasDependency = new Resource("4ff1859f-01d9-11e9-9c9d-8d52d6745026");
+  public static final Resource SystemConfiguration_hasDependency = new Resource("886c9874-01d9-11e9-9c9d-8d52d6745026");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +49,4 @@ public class _05_buildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,RjIs+Q6ai/y5JAJdZLg5Nh2uaaQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,p046m5uotzQbaURWiiR2asxD9Xc=] */

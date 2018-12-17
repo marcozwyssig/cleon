@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="2a6fe24f-eaac-11e8-88d3-bfc6b992bdec">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="7829cb37-01d4-11e9-9c9d-8d52d6745026" type="resource" guid="78292ef4-01d4-11e9-9c9d-8d52d6745026" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2a6fe251-eaac-11e8-88d3-bfc6b992bdec" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="9dedaf3d-fa44-11e8-af47-e5bdd8100025" type="resource" guid="f5a1c130-e989-11e8-af5c-a5aa9dc47205" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7829cb37-01d4-11e9-9c9d-8d52d6745026">
+      <resource guid="78292ef4-01d4-11e9-9c9d-8d52d6745026">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="78292ef6-01d4-11e9-9c9d-8d52d6745026" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7a6aba00-01d4-11e9-9c9d-8d52d6745026" type="resource" guid="8d683d40-608e-11e6-9338-fbca24976e1d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="790647ff-01d4-11e9-9c9d-8d52d6745026" type="literal">path</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="782ab598-01d4-11e9-9c9d-8d52d6745026" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2a722c42-eaac-11e8-88d3-bfc6b992bdec" type="literal">UmlDiagram</object>

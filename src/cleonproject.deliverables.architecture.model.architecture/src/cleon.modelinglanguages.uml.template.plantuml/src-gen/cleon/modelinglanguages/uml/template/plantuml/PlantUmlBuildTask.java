@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import ch.actifsource.core.job.Select;
 import ch.actifsource.generator.AbstractBuildTaskSingleThread;
 import ch.actifsource.generator.console.IGeneratorConsole;
 import ch.actifsource.generator.target.ISingleThreadBuildTargetInfo;
@@ -25,16 +26,19 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	public PlantUmlBuildTask(ch.actifsource.core.INode buildTask, ICancelStatus status) {
 		super(buildTask, status);
 		
+
 		_commands.add("java");
 		_commands.add("-jar");
 		_commands.add("\"C:\\ProgramData\\chocolatey\\lib\\plantuml\\tools\\plantuml.jar\"");
-		_commands.add("-tsvg");
+		_commands.add("-keepfiles");
+		_commands.add("-duration");		
 		_commands.add("-progress");
 	}
 
 	protected ch.actifsource.core.dependency.IDependency internalGenerate(ISingleThreadBuildTargetInfo targetInfo)
 			throws ch.actifsource.generator.GenerationException {
 
+	
 		IAsFolder targetFolder = targetInfo.getOutputScope().getFolder(targetInfo.getOutputPath());
 		try {
 			processFolder(targetFolder, targetInfo.getBuildContext().console());
@@ -47,6 +51,7 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	private void processFolder(IAsFolder folder, IGeneratorConsole generatorConsole) throws IOException {
 		if(folder == null)
 			return;
+		
 		
 		for (IAsFile plantAsUmlFile : folder.getFiles()) {
 			if (plantAsUmlFile.getName().endsWith(".puml")) {

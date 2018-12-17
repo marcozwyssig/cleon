@@ -28,6 +28,17 @@ public class DomainContextDiagram extends DynamicResource implements IDomainCont
     super(resourceRepository, resource, IDomainContextDiagram.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectPath() {
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path);
+  }
+    
+  public void setPath(java.lang.String path) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, path);
+  }
+
   // relations
   
   @Override
@@ -63,6 +74,8 @@ public class DomainContextDiagram extends DynamicResource implements IDomainCont
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IDomainContext.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.DomainPackage.DomainContextDiagram_domainContext, visitor);
@@ -76,4 +89,4 @@ public class DomainContextDiagram extends DynamicResource implements IDomainCont
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19b3a56f-fa3e-11e8-af47-e5bdd8100025,hTPiYWMjUzwzgu0RcvOT9xjY47s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19b3a56f-fa3e-11e8-af47-e5bdd8100025,b86yjkE7UIHNn+k+k4qKADMJRyU=] */

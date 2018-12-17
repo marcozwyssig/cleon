@@ -57,15 +57,6 @@ public class System extends DynamicResource implements ISystem {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
-  @Override
-  public java.lang.String selectShortName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName);
-  }
-    
-  public void setShortName(java.lang.String shortName) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, shortName);
-  }
-
   // relations
   
   @Override
@@ -105,7 +96,6 @@ public class System extends DynamicResource implements ISystem {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel.IArchitectureLayerBuildingBlockDecomposite.class, cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_decompose, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view._05_architecturebuildingblock_viewPackage.System_hasDependency, visitor);
@@ -123,4 +113,4 @@ public class System extends DynamicResource implements ISystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,pcmi7Ot04vT/tJFjMBQuEeQj1fs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0854a116-4a7d-11e6-b2ea-f94c9b140b76,9IexNEEtWYqwbXx1Veb8eLwXsr4=] */

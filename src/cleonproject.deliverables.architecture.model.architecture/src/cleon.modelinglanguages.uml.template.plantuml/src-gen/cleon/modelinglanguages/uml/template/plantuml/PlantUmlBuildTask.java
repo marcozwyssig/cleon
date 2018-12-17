@@ -30,7 +30,7 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 		_commands.add("java");
 		_commands.add("-jar");
 		_commands.add("\"C:\\ProgramData\\chocolatey\\lib\\plantuml\\tools\\plantuml.jar\"");
-		_commands.add("-keepfiles");
+		_commands.add("-debugsvek");
 		_commands.add("-duration");		
 		_commands.add("-progress");
 	}

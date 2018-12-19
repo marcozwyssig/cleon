@@ -100,11 +100,11 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
     
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
-    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs);
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
   public Risknanagement setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, paragraphs);
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
@@ -170,7 +170,7 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
     _acceptList(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.javamodel.IAssessments.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_assessments, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_paragraphs, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.javamodel.IRiskClassification.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_riskClassification, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.risks.javamodel.IRisks.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_risks, visitor);
@@ -193,4 +193,4 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,sFUN0KUtt9O9lMVE/VUey5XaMfg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,Bgb3zsnCcFW/zBMP5NHxv/OFMxM=] */

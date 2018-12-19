@@ -25,4 +25,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.26",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.itarc42.spec.itarc42,cleon.architecturemethods.itarc42.spec.itarc42.javamodel
+ ,cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context,cleon.architecturemethods.itarc42.spec.itarc42._03_system_scope_and_context.javamodel,
+ cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel,
+ cleon.architecturemethods.itarc42.spec.itarc42._13_productview,cleon.architecturemethods.itarc42.spec.itarc42._13_productview.javamodel
 

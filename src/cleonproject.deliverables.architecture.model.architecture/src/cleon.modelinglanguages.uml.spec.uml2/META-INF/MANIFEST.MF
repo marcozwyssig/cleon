@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.modelinglanguages.uml.spec.uml2
 Bundle-SymbolicName: cleon.modelinglanguages.uml.spec.uml2.builtin;singleton:=true
-Bundle-Version: 0.4.25
+Bundle-Version: 0.4.26
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,9 +12,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.25",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.25",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.25",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.26",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.26",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.26",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.modelinglanguages.uml.spec.uml2,cleon.modelinglanguages.uml.spec.uml2.javamodel
  ,cleon.modelinglanguages.uml.spec.uml2.structural,cleon.modelinglanguages.uml.spec.uml2.structural.javamodel,

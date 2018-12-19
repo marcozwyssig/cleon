@@ -10,7 +10,13 @@
     <resource statement-guid="02a19c50-d0af-11e8-8ff3-97e0ae6691b9" type="resource" guid="029f525d-d0af-11e8-8ff3-97e0ae6691b9" />
   </owns>
   <owns predicate="e3f988f8-41a9-11e8-81d0-774e4d9334dd">
-    <resource statement-guid="0356e29a-d0af-11e8-8ff3-97e0ae6691b9" type="resource" guid="0356e297-d0af-11e8-8ff3-97e0ae6691b9" />
+    <resource statement-guid="0356e29a-d0af-11e8-8ff3-97e0ae6691b9" type="resource" guid="0356e297-d0af-11e8-8ff3-97e0ae6691b9">
+      <owns predicate="4ac67c8e-b87e-11e5-a463-ff45aa361315">
+        <resource statement-guid="f4bbc897-0368-11e9-aa42-3fed16c09691" type="resource" guid="f4bba184-0368-11e9-aa42-3fed16c09691" />
+        <resource statement-guid="ed957de2-0368-11e9-aa42-3fed16c09691" type="resource" guid="ed94455f-0368-11e9-aa42-3fed16c09691" />
+        <resource statement-guid="fa9f5a1c-0368-11e9-aa42-3fed16c09691" type="resource" guid="fa9f3309-0368-11e9-aa42-3fed16c09691" />
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f429ffec-d0ae-11e8-8ff3-97e0ae6691b9" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
@@ -57,8 +63,40 @@
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="0356e299-d0af-11e8-8ff3-97e0ae6691b9" type="resource" guid="d5d42a4f-41a9-11e8-81d0-774e4d9334dd" />
         </predicate>
+        <predicate guid="4ac67c8e-b87e-11e5-a463-ff45aa361315">
+          <object statement-guid="f4bbc897-0368-11e9-aa42-3fed16c09691">
+            <resource guid="f4bba184-0368-11e9-aa42-3fed16c09691">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f4bba186-0368-11e9-aa42-3fed16c09691" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f4f04618-0368-11e9-aa42-3fed16c09691" type="literal">_03_system_scope_and_context</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="ed957de2-0368-11e9-aa42-3fed16c09691">
+            <resource guid="ed94455f-0368-11e9-aa42-3fed16c09691">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ed94e1a1-0368-11e9-aa42-3fed16c09691" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ee216a33-0368-11e9-aa42-3fed16c09691" type="literal">_05_buildingblock</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="fa9f5a1c-0368-11e9-aa42-3fed16c09691">
+            <resource guid="fa9f3309-0368-11e9-aa42-3fed16c09691">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fa9f330b-0368-11e9-aa42-3fed16c09691" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fad13f8d-0368-11e9-aa42-3fed16c09691" type="literal">_13_productView</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
         <predicate guid="9581630c-95af-11e8-8990-bba75387a1ab">
-          <object statement-guid="b70279d7-035f-11e9-aa42-3fed16c09691" type="literal">**</object>
+          <object statement-guid="b70279d7-035f-11e9-aa42-3fed16c09691" type="literal">cleon/**</object>
         </predicate>
       </resource>
     </object>

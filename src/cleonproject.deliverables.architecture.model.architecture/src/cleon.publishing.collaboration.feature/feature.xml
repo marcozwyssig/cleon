@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.publishing.collaboration" label="cleon.publishing.collaboration" version="0.4.28">
+<feature id="cleon.publishing.collaboration" label="cleon.publishing.collaboration" version="0.4.29">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -477,6 +477,6 @@ of their respective owners.
       <import feature="cleon.projectmethods.hermes"/>
       <import feature="cleon.common.analysis"/>
    </requires>
-   <plugin id="cleon.publishing.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.4.28" unpack="false"/>   
+   <plugin id="cleon.publishing.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.4.29" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,5ffed290-cb39-11e8-9fc7-cb7241efa62e,Hash] -->

@@ -293,8 +293,8 @@
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
+							<db:col width="30%" />
+							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Abhängigkeit</db:th>
@@ -359,8 +359,8 @@
 					<db:section>
 						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
+							<db:col width="30%" />
+							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Anforderung</db:th>
@@ -486,8 +486,8 @@
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
+							<db:col width="30%" />
+							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Abhängigkeit</db:th>
@@ -497,7 +497,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Test1_2_1 -> Test2</db:para>
+										<db:para>Test2 -> Test1_2_1</db:para>
 									</db:td>
 									<db:td>
 									</db:td>
@@ -557,8 +557,8 @@
 					<db:section>
 						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
+							<db:col width="30%" />
+							<db:col width="70%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Anforderung</db:th>

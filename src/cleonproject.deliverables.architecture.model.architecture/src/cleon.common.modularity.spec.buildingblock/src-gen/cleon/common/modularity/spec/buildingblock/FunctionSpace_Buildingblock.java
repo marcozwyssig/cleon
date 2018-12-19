@@ -71,6 +71,12 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("24cf8570-2ce6-11e8-a902-afb10318295e")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetIndirectDependingBuildingBlocks();
 
+    @IDynamicResourceExtension.MethodId("54d20256-035a-11e9-a251-e3767b78f69f")
+    public java.lang.String GetTypeName();
+
+    @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
+    public java.lang.String GetStereotypeName();
+
   }
   
   public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -229,4 +235,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,eOrOrMyNGtU6lUuJG3p3cPdH9DY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,rZohOoDqqg9M+zFSo0uqLU0snWw=] */

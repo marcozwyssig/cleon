@@ -81,11 +81,11 @@ public class TechnicalContext extends DynamicResource implements ITechnicalConte
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IInterface> selectInterfaces() {
-    return _getList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IInterface.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem> selectInterfaces() {
+    return _getList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces);
   }
 
-  public TechnicalContext setInterfaces(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IInterface> interfaces) {
+  public TechnicalContext setInterfaces(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem> interfaces) {
     _setList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces, interfaces);
     return this;
   }
@@ -120,14 +120,14 @@ public class TechnicalContext extends DynamicResource implements ITechnicalConte
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalFlow.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_flows, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IInterface.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectToMeInterfaces(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IInterface object) {
+  public static cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectToMeInterfaces(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalContext.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_interfaces, object.getResource());
   }
   
@@ -136,4 +136,4 @@ public class TechnicalContext extends DynamicResource implements ITechnicalConte
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,kn1uq2bRBcgJiSKpFGi7NZjLqTE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,N4Vo43bRt8HvgBpKc/aMyuZGlq8=] */

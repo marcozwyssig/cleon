@@ -23,8 +23,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="70%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Name</db:th>
@@ -50,8 +50,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="70%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Name</db:th>
@@ -104,8 +104,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="70%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Name</db:th>
@@ -143,8 +143,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="70%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Name</db:th>
@@ -190,7 +190,7 @@
 		
 		<db:section >
 			<db:title>Fachlicher Kontext</db:title>
-			<db:para>In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems aufgeführt.</db:para>
+			<db:para>In diesem Kapitel werden die Aktoren (Actor) des betrachteten Systems (Chess) aufgeführt.</db:para>
 			
 			<db:mediaobject>
 				<db:imageobject>
@@ -200,12 +200,87 @@
 			    		<db:para>Fachlicher Kontext Diagramm</db:para>
 			  	</db:caption>	
 			</db:mediaobject>
-			
+			<db:para>Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Aktor</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Gugeli</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>	
+			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="40%" />			
+				<db:thead>
+					<db:tr>
+						<db:th>Von</db:th>
+						<db:th>Zu</db:th>
+						<db:th>Interaktion</db:th>
+						<db:th>Richtung</db:th>
+						<db:th>Beschreibung</db:th>									
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>definiert</db:para>
+						</db:td>
+						<db:td>
+							<db:para>&lt;--</db:para>
+						</db:td>
+						
+						<db:td>
+							<db:para>asdfadf</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>FTP</db:para>
+						</db:td>
+						<db:td>
+							<db:para>ruft</db:para>
+						</db:td>
+						<db:td>
+							<db:para>&lt;--</db:para>
+						</db:td>
+						
+						<db:td>
+							<db:para>ddd</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 		<db:section >
 			<db:title>Technischer Kontext</db:title>
-			
+			<db:para>In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme des betrachteten Systems (Chess) aufgeführt.</db:para>
 			
 			<db:mediaobject>
 				<db:imageobject>
@@ -215,7 +290,64 @@
 			    		<db:para>Technischer Kontext Diagramm</db:para>
 			  	</db:caption>	
 			</db:mediaobject>
-			
+			<db:para>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nachbarsystem</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>FTP</db:para>
+						</db:td>
+						<db:td>
+							<db:para>dsfasdf</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>	
+			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen den Systemen:</db:para>
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="40%" />			
+				<db:thead>
+					<db:tr>
+						<db:th>Von</db:th>
+						<db:th>Zu</db:th>
+						<db:th>Interaktion</db:th>
+						<db:th>Richtung</db:th>
+						<db:th>Beschreibung</db:th>									
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>FTP</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>ssss</db:para>
+						</db:td>
+						<db:td>
+							<db:para>--&gt;</db:para>
+						</db:td>
+						
+						<db:td>
+							<db:para>ddd</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 	</db:chapter>
@@ -242,7 +374,7 @@
 				
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Chess tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -293,8 +425,8 @@
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
+							<db:col width="40%" />
+							<db:col width="60%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Abhängigkeit</db:th>
@@ -331,7 +463,7 @@
 				
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1 tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -359,8 +491,8 @@
 					<db:section>
 						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
+							<db:col width="40%" />
+							<db:col width="60%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Anforderung</db:th>
@@ -387,7 +519,7 @@
 				
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test2 tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -419,7 +551,7 @@
 				
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test3 tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -462,7 +594,7 @@
 				</db:section>
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1_2 tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -486,8 +618,8 @@
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
+							<db:col width="40%" />
+							<db:col width="60%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Abhängigkeit</db:th>
@@ -532,7 +664,7 @@
 				
 				<db:para>Nachfolgend werden die enthaltenen Bausteinen des Bausteins Test1_2_1 tabelarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
-					<db:col width="30%" />
+					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
@@ -557,8 +689,8 @@
 					<db:section>
 						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
-							<db:col width="30%" />
-							<db:col width="70%" />
+							<db:col width="40%" />
+							<db:col width="60%" />
 							<db:thead>
 								<db:tr>
 									<db:th>Anforderung</db:th>
@@ -659,8 +791,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="25%" />
-				<db:col width="75%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Thema</db:th>
@@ -707,8 +839,8 @@
 			
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="25%" />
-				<db:col width="75%" />
+				<db:col width="40%" />
+				<db:col width="60%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Thema</db:th>

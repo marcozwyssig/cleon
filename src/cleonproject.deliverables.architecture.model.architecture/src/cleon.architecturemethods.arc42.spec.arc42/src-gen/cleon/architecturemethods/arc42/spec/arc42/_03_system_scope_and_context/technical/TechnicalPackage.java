@@ -5,10 +5,10 @@ import ch.actifsource.core.Resource;
 public class TechnicalPackage {
   
   public static final Resource TechnicalContext = new Resource("2420a6f8-27cc-11e6-b263-9db62e053e59");
-  public static final Resource Interface = new Resource("2e0ed149-2801-11e6-b263-9db62e053e59");
+  public static final Resource ExternalSystem = new Resource("2e0ed149-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalContext_interfaces = new Resource("3a71bf1d-2801-11e6-b263-9db62e053e59");
-  public static final Resource Interface_protocol = new Resource("54db5ff5-2801-11e6-b263-9db62e053e59");
-  public static final Resource Interface_format = new Resource("6b58f893-2801-11e6-b263-9db62e053e59");
+  public static final Resource ExternalSystem_protocol = new Resource("54db5ff5-2801-11e6-b263-9db62e053e59");
+  public static final Resource ExternalSystem_format = new Resource("6b58f893-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalFlow = new Resource("8ca0b7d4-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalContext_flows = new Resource("9ebc0878-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalFlow_from = new Resource("ca424d86-2801-11e6-b263-9db62e053e59");
@@ -35,4 +35,4 @@ public class TechnicalPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,EkNQjKy6Rl9jARR4e4GUZI3PZgc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,rX0C7dwLsZRPZcPbFgsw0LN16bE=] */

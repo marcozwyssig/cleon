@@ -48,6 +48,9 @@ public class FunctionSpace_arc42 {
     @IDynamicResourceExtension.MethodId("0b0d2cb2-01e2-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderStandardDescription();
 
+    @IDynamicResourceExtension.MethodId("3665f130-043c-11e9-bb22-3f676e869eaa")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -72,6 +75,9 @@ public class FunctionSpace_arc42 {
 
     @IDynamicResourceExtension.MethodId("de7cc416-d17f-11e8-b18f-df1540bb7a5c")
     public java.lang.String RenderStandardDescription();
+
+    @IDynamicResourceExtension.MethodId("519056bd-0441-11e9-bb22-3f676e869eaa")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -457,4 +463,4 @@ public class FunctionSpace_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Fi9jG1//YxGu7XcxPk931ZcJHsk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,my2TrDZlMOp/U8047fKkt23ZXxw=] */

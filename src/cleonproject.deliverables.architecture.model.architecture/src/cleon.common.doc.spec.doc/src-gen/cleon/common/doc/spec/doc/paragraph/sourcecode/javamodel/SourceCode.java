@@ -43,11 +43,11 @@ public class SourceCode extends DynamicResource implements ISourceCode {
   
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
   }
 
   public SourceCode setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -67,9 +67,9 @@ public class SourceCode extends DynamicResource implements ISourceCode {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.paragraph.sourcecode.SourcecodePackage.SourceCode_code, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,GrDTl1fpdXj8WFlJibSs83IPRUQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3d1cea5a-466e-11e5-ba74-cb2e95044e1c,1xitBNgYGM/Ku8hiKhfTAigVWso=] */

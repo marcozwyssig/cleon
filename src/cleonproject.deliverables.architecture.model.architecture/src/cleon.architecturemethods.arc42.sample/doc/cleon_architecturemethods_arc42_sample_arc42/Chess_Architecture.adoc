@@ -53,17 +53,7 @@
 
 
 
-In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt. 
-
-Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.
-
-[cols="5,10a" options="header"]
-|====
-|Name | Beschreibung
-|Table
-|
-World
-|====
+In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
 === Fachlicher Kontext
 
 
@@ -71,12 +61,14 @@ World
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-component "Chess" #grey
-actor "Player A"
-component "Table"
-(Player A) <-- (Chess) : definiert
-(Player A) <-- (FTP) : ruft
-
+actor Player_A as "Player A"
+actor Player_B as "Player B"
+component Chess as "Chess"
+Chess -> Player_A : gets
+Player_A -> Chess : interacts
+Player_A -> Chess : interaces
+Player_B -> Chess : interacts
+Player_B -> Chess : interaces
 ...
 
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
@@ -88,7 +80,9 @@ Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
 |Name | Beschreibung
 |Player A
 |
-Gugeli
+|====
+|Player B
+|
 |====
 
 Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
@@ -96,18 +90,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 [cols="5,5,5,5,10a" options="header"]
 |====
 |Von | Zu | Interaktion | Richtung | Beschreibung
-|Player A
-|Chess
-|definiert
-|<--
-|
-asdfadf
-|Player A
-|FTP
-|ruft
-|<--
-|
-ddd
 |====
 
 
@@ -118,11 +100,15 @@ ddd
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-component "Chess" #grey
-component "FTP"
-component "Table"
-(FTP) --> (Chess) : ssss
-
+component Chess as "Chess"
+interface Chess_aE_1__F_Port as "Chess_1 Port"
+Chess -up Chess_aE_1__F_Port 
+Chess --> FTP_aE_1__F_Port : "FTP_1"
+Chess --> FTP_aE_1__F_Port : "FTP_1"
+component FTP as "FTP"
+interface FTP_aE_1__F_Port as "FTP_1 Port"
+FTP -up FTP_aE_1__F_Port 
+FTP --> Chess_aE_1__F_Port : "FTP_2"
 ...
 
 In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
@@ -142,12 +128,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 [cols="5,5,5,5,10a" options="header"]
 |====
 |Von | Zu | Interaktion | Richtung | Beschreibung
-|FTP
-|Chess
-|ssss
-|-->
-|
-ddd
 |====
 
 

@@ -31,6 +31,15 @@ public class ArchitectureSolutionBuildingBlockDependency extends DynamicResource
   // attributes
   
   @Override
+  public java.lang.Boolean selectAllowRecursiveDependency() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency);
+  }
+    
+  public void setAllowRecursiveDependency(java.lang.Boolean allowRecursiveDependency) {
+     _setSingleAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, allowRecursiveDependency);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -74,6 +83,7 @@ public class ArchitectureSolutionBuildingBlockDependency extends DynamicResource
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
@@ -88,4 +98,4 @@ public class ArchitectureSolutionBuildingBlockDependency extends DynamicResource
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,PjCAlrCJF+dlP3ewMc2ATNltX/k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,+7iyG8hvBMxdidEPNtS/9E+zhAI=] */

@@ -31,6 +31,15 @@ public class SystemConfigurationDependency extends DynamicResource implements IS
   // attributes
   
   @Override
+  public java.lang.Boolean selectAllowRecursiveDependency() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency);
+  }
+    
+  public void setAllowRecursiveDependency(java.lang.Boolean allowRecursiveDependency) {
+     _setSingleAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, allowRecursiveDependency);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -74,6 +83,7 @@ public class SystemConfigurationDependency extends DynamicResource implements IS
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
@@ -88,4 +98,4 @@ public class SystemConfigurationDependency extends DynamicResource implements IS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4134540e-01d9-11e9-9c9d-8d52d6745026,pT/IJAmUvFk6wHS04KiCjLNIO9E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4134540e-01d9-11e9-9c9d-8d52d6745026,kwNjG7IpymSdQYAK9dwz+dfThxw=] */

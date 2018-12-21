@@ -31,6 +31,15 @@ public class OneToManyAssociation extends DynamicResource implements IOneToManyA
   // attributes
   
   @Override
+  public java.lang.Boolean selectAllowRecursiveDependency() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency);
+  }
+    
+  public void setAllowRecursiveDependency(java.lang.Boolean allowRecursiveDependency) {
+     _setSingleAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, allowRecursiveDependency);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -166,6 +175,7 @@ public class OneToManyAssociation extends DynamicResource implements IOneToManyA
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.AssociationPackage.Association_description, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
@@ -184,4 +194,4 @@ public class OneToManyAssociation extends DynamicResource implements IOneToManyA
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e11893b8-2783-11e3-a466-eda9d7258bca,jyCd6L/cmDVvVcd1hRl+PqXF3pg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e11893b8-2783-11e3-a466-eda9d7258bca,ogQp1pXoJ00oUyQO7W2a0eMvSvU=] */

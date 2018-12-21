@@ -11,5 +11,15 @@ public abstract class AbstractComponent extends DynamicResource implements IAbst
     super(IAbstractComponent.TYPE_ID);
   }
   
+  // toMeRelations
+  
+  public static cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent selectToMePorts_Out(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, object.getResource());
+  }
+  
+  public static cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent selectToMePorts_In(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,spOOyoinkkDXOqNLz3OjatRtJe0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1090955f-85c1-11e3-be33-79789cf5eae3,0TiFOEACqxHw7ZZHcC1TW3jwVYI=] */

@@ -1,11 +1,13 @@
 @startuml
 skinparam monochrome true
 skinparam componentStyle uml2
-component "Chess" #grey
-actor "Player A"
-component "Table"
-(Player A) <-- (Chess) : definiert
-(Player A) <-- (FTP) : ruft
-
+actor Player_A as "Player A"
+actor Player_B as "Player B"
+component Chess as "Chess"
+Chess -> Player_A : gets
+Player_A -> Chess : interacts
+Player_A -> Chess : interaces
+Player_B -> Chess : interacts
+Player_B -> Chess : interaces
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,73695871-fa3e-11e8-af47-e5bdd8100025,Hash]

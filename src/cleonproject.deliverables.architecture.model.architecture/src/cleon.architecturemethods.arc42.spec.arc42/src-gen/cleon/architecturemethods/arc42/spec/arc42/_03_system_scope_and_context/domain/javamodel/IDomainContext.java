@@ -37,8 +37,6 @@ public interface IDomainContext extends cleon.common.doc.spec.doc.chapter.javamo
   
   public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IActor> selectActors();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IDomainFlow> selectFlows();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98021cfc-2660-11e6-ae54-e50d44645ae7,CMUn6817L21f9F7shUg1zmxgf8o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98021cfc-2660-11e6-ae54-e50d44645ae7,C3mcg5h9HMR0E3O7P/FHASojDvY=] */

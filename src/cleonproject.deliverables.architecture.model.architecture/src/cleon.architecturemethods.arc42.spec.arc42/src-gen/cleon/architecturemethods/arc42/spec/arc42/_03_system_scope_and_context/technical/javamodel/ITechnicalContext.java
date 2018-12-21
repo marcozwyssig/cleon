@@ -22,10 +22,8 @@ public interface ITechnicalContext extends cleon.common.doc.spec.doc.chapter.jav
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem> selectInterfaces();
-  
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalFlow> selectFlows();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem> selectExternalSystem();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,7xHn+7r21e/JHOlfjWuOQeWQi5U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,Rgcx8fHqms7iD0zQ1P1X/ZxXgkQ=] */

@@ -216,28 +216,32 @@
 							<db:para>Player A</db:para>
 						</db:td>
 						<db:td>
-							<db:para>Gugeli</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
 						</db:td>
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>	
-			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.</db:para>
+			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System.</db:para>
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="15%" />
 				<db:col width="15%" />
-				<db:col width="15%" />
-				<db:col width="15%" />
-				<db:col width="40%" />			
+				<db:col width="20%" />
+				<db:col width="50%" />			
 				<db:thead>
 					<db:tr>
 						<db:th>Von</db:th>
 						<db:th>Zu</db:th>
 						<db:th>Interaktion</db:th>
-						<db:th>Richtung</db:th>
 						<db:th>Beschreibung</db:th>									
 					</db:tr>
 				</db:thead>
-				<db:tbody>			
+				<db:tbody>
 					<db:tr>
 						<db:td>
 							<db:para>Player A</db:para>
@@ -246,32 +250,61 @@
 							<db:para>Chess</db:para>
 						</db:td>
 						<db:td>
-							<db:para>definiert</db:para>
+							<db:para>gets</db:para>
 						</db:td>
 						<db:td>
-							<db:para>&lt;--</db:para>
-						</db:td>
-						
-						<db:td>
-							<db:para>asdfadf</db:para>
 						</db:td>
 					</db:tr>
 					<db:tr>
 						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
 							<db:para>Player A</db:para>
 						</db:td>
 						<db:td>
-							<db:para>FTP</db:para>
+							<db:para>interacts</db:para>
 						</db:td>
 						<db:td>
-							<db:para>ruft</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Chess</db:para>
 						</db:td>
 						<db:td>
-							<db:para>&lt;--</db:para>
+							<db:para>Player A</db:para>
 						</db:td>
-						
 						<db:td>
-							<db:para>ddd</db:para>
+							<db:para>interaces</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interacts</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interaces</db:para>
+						</db:td>
+						<db:td>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -315,15 +348,13 @@
 			<db:informaltable style="EAMod Requirement">
 				<db:col width="15%" />
 				<db:col width="15%" />
-				<db:col width="15%" />
-				<db:col width="15%" />
-				<db:col width="40%" />			
+				<db:col width="20%" />
+				<db:col width="50%" />			
 				<db:thead>
 					<db:tr>
 						<db:th>Von</db:th>
 						<db:th>Zu</db:th>
 						<db:th>Interaktion</db:th>
-						<db:th>Richtung</db:th>
 						<db:th>Beschreibung</db:th>									
 					</db:tr>
 				</db:thead>
@@ -333,17 +364,13 @@
 							<db:para>FTP</db:para>
 						</db:td>
 						<db:td>
-							<db:para>Chess</db:para>
+							<db:para></db:para>
 						</db:td>
 						<db:td>
-							<db:para>ssss</db:para>
-						</db:td>
-						<db:td>
-							<db:para>--&gt;</db:para>
+							<db:para></db:para>
 						</db:td>
 						
 						<db:td>
-							<db:para>ddd</db:para>
 						</db:td>
 					</db:tr>
 				</db:tbody>
@@ -416,7 +443,28 @@
 						<db:para>asdfasdfasdf</db:para>
 						<db:para>asdfasdf</db:para>
 					</db:section>
-					
+					<db:section>
+						<db:title>Abhängigkeiten</db:title>
+						<db:informaltable style="EAMod Requirement">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
+					</db:section>
 					
 				</db:section>
 				<db:section>
@@ -437,6 +485,13 @@
 								<db:tr>
 									<db:td>
 										<db:para>Test2 -> Test1_2_1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1</db:para>
 									</db:td>
 									<db:td>
 									</db:td>

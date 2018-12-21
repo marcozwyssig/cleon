@@ -6,15 +6,13 @@ public class TechnicalPackage {
   
   public static final Resource TechnicalContext = new Resource("2420a6f8-27cc-11e6-b263-9db62e053e59");
   public static final Resource ExternalSystem = new Resource("2e0ed149-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalContext_interfaces = new Resource("3a71bf1d-2801-11e6-b263-9db62e053e59");
-  public static final Resource ExternalSystem_protocol = new Resource("54db5ff5-2801-11e6-b263-9db62e053e59");
-  public static final Resource ExternalSystem_format = new Resource("6b58f893-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalFlow = new Resource("8ca0b7d4-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalContext_flows = new Resource("9ebc0878-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalFlow_from = new Resource("ca424d86-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalFlow_to = new Resource("ca424d87-2801-11e6-b263-9db62e053e59");
+  public static final Resource TechnicalContext_externalSystem = new Resource("3a71bf1d-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalContextDiagram = new Resource("0f023427-fa45-11e8-af47-e5bdd8100025");
   public static final Resource TechnicalContextDiagram_technicalContext = new Resource("0f023428-fa45-11e8-af47-e5bdd8100025");
+  public static final Resource ExternalSystem_NoDecompose = new Resource("586e3df5-0516-11e9-87b8-094c52ae4c98");
+  public static final Resource FunctionSpace_aE_TechnicalContext_TechnicalContext = new Resource("bc58e40d-052d-11e9-95f7-3b0c47908608");
+  public static final Resource FunctionSpace_aE_TechnicalContext_Port_aE_Required = new Resource("f461fc36-052d-11e9-95f7-3b0c47908608");
+  public static final Resource FunctionSpace_aE_TechnicalContext_Port_aE_Provider = new Resource("1c716ab4-052e-11e9-95f7-3b0c47908608");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +33,4 @@ public class TechnicalPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,rX0C7dwLsZRPZcPbFgsw0LN16bE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,LCKCxVeagPg+6e/HXB04wp9Ikkg=] */

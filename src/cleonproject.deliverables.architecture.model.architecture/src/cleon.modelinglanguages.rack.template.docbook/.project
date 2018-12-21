@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.modelinglanguages.rack.template.docbook</name>
+	<comment/>
+	<projects>
+		<project>cleon.common.doc.template.docbook</project>
+		<project>cleon.modelinglanguages.rack.spec.rack</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.xml.spec.xml</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,17e657bc-051e-11e9-b129-6590cd6315e4,HpX+upKKeoJAc26vxL6SuwOOUaQ=] -->

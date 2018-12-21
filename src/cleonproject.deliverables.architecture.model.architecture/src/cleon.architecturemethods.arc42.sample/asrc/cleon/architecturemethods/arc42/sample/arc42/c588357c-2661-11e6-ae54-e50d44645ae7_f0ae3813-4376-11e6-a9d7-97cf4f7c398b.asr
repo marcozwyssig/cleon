@@ -3,6 +3,9 @@
   <owns predicate="ab7ebad8-4376-11e6-a9d7-97cf4f7c398b">
     <resource statement-guid="763f9d0d-4394-11e6-a883-1f8f2b17c061" type="resource" guid="763e8b9a-4394-11e6-a883-1f8f2b17c061" />
   </owns>
+  <owns predicate="84483e25-0520-11e9-95f7-3b0c47908608">
+    <resource statement-guid="8a9df246-0520-11e9-95f7-3b0c47908608" type="resource" guid="6298d9e6-0514-11e9-87b8-094c52ae4c98" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f0ae5f25-4376-11e6-a9d7-97cf4f7c398b" type="resource" guid="a19c100c-4376-11e6-a9d7-97cf4f7c398b" />
   </predicate>
@@ -24,6 +27,27 @@
         </predicate>
         <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
           <object statement-guid="50408efc-01e4-11e9-9c9d-8d52d6745026" type="literal">asdfasdfasdf</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="84483e25-0520-11e9-95f7-3b0c47908608">
+    <object statement-guid="8a9df246-0520-11e9-95f7-3b0c47908608">
+      <resource guid="6298d9e6-0514-11e9-87b8-094c52ae4c98">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="62992808-0514-11e9-87b8-094c52ae4c98" type="resource" guid="a03165a1-0513-11e9-87b8-094c52ae4c98" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85469130-0514-11e9-87b8-094c52ae4c98" type="literal">Web-Server</object>
+        </predicate>
+        <predicate guid="54db5ff5-2801-11e6-b263-9db62e053e59">
+          <object statement-guid="bc012f29-051f-11e9-95f7-3b0c47908608" type="literal">FTP</object>
+        </predicate>
+        <predicate guid="6b58f893-2801-11e6-b263-9db62e053e59">
+          <object statement-guid="bd3d58aa-051f-11e9-95f7-3b0c47908608" type="literal">SMTP</object>
+        </predicate>
+        <predicate guid="02e55700-0514-11e9-87b8-094c52ae4c98">
+          <object statement-guid="d7ec19d5-0514-11e9-87b8-094c52ae4c98" type="resource" guid="2dde4bef-28b6-11e5-8b63-33a353e42346" />
         </predicate>
       </resource>
     </object>

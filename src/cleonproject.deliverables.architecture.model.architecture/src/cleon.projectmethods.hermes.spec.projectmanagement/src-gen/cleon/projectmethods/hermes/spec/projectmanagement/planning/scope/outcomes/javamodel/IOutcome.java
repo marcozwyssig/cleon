@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.outcom
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IOwnerAware, ch.actifsource.core.javamodel.IDecorator, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IStateAware {
+public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter, cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IOwnerAware, ch.actifsource.core.javamodel.IDecorator, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IStateAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a");
   
@@ -18,4 +18,4 @@ public interface IOutcome extends cleon.common.doc.spec.doc.chapter.javamodel.IC
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,rCONsOFSx6QHmBpPgup0LE+LxrQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffbb7b2a-b53c-11e5-bc0c-f35b68c3609a,fRNLd/4Hhm1s/e4CpL9QNCosigA=] */

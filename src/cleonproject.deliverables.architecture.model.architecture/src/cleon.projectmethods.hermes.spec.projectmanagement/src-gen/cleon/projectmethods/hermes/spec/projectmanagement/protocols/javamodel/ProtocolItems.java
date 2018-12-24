@@ -61,12 +61,12 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public ProtocolItems setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public ProtocolItems setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -138,7 +138,7 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IAgendaItem.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_agendaItem, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolItem.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_protocols, visitor);
@@ -162,4 +162,4 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,JKhniajt0fwv5vp5ODzXZqdqyvM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,pfDWq090mH48ro2vemZoN9/om2E=] */

@@ -121,11 +121,11 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProduct> selectProduct() {
-    return _getList(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct> selectProduct() {
+    return _getList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product);
   }
 
-  public SystemConfiguration setProduct(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProduct> product) {
+  public SystemConfiguration setProduct(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct> product) {
     _setList(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product, product);
     return this;
   }
@@ -164,7 +164,7 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product, visitor);
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription.class, cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage._12_requirements_coveragePackage.BuildingBlockRequirementCoverage_requirementCoverageDescription, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -175,9 +175,9 @@ public class SystemConfiguration extends DynamicResource implements ISystemConfi
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_hasDependency, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration> selectToMeProduct(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProduct object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration> selectToMeProduct(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock._05_buildingblockPackage.SystemConfiguration_product, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,L5pJgtL0Yc+1iMMHJFhnzqAqMVQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,HkL5loD/UdAYyMcvDJlEPjttNwg=] */

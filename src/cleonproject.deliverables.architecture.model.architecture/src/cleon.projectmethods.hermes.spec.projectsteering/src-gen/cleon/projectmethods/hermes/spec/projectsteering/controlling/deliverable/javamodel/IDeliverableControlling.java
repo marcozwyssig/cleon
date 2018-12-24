@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDeliverableControlling extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface IDeliverableControlling extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f");
   
@@ -22,4 +22,4 @@ public interface IDeliverableControlling extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,QKKamTfvGZAqjqw7SRaWQJNHiYo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2ad5f88a-bdfd-11e6-a3f0-c7681ee45a3f,kEd3rhjNMbaWsfu3yzaZEyHkUNM=] */

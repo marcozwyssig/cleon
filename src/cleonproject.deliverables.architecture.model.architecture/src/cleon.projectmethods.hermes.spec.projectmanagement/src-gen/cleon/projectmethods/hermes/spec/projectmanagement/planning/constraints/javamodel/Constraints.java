@@ -51,12 +51,12 @@ public class Constraints extends DynamicResource implements IConstraints {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public Constraints setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public Constraints setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -117,7 +117,7 @@ public class Constraints extends DynamicResource implements IConstraints {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.javamodel.IDependencies.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.ConstraintsPackage.Constraints_dependencies, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.javamodel.IDistinctions.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.ConstraintsPackage.Constraints_distinctions, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -136,4 +136,4 @@ public class Constraints extends DynamicResource implements IConstraints {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8f6cf2c-d42d-11e6-8a1d-7fdd5d29730e,7dwNeJOU0faOwr1xRqCMhFQD+2E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8f6cf2c-d42d-11e6-8a1d-7fdd5d29730e,uT3u6r8KE6/CUh5TZ/GMXRBuV4w=] */

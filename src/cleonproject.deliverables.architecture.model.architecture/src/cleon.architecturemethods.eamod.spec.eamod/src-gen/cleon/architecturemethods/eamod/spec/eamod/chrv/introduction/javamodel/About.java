@@ -51,11 +51,11 @@ public class About extends DynamicResource implements IAbout {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters);
   }
 
-  public About setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter> chapters) {
+  public About setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, chapters);
     return this;
   }
@@ -97,11 +97,11 @@ public class About extends DynamicResource implements IAbout {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.INamedChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22d7874b-e8f2-11e8-b810-cdb2b421fd42,ER56PJSWYnYTxngfl4ABn5VAnX0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,22d7874b-e8f2-11e8-b810-cdb2b421fd42,90+MHyYyJnsvl8WNAdtGTl92EzU=] */

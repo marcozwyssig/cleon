@@ -9,7 +9,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * separate sections. Use the following interface template to guide you towards
  * many questions that might be relevant for the interface.
  */
-public interface IExternalInterfaces extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface IExternalInterfaces extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("65e40b4b-27d5-11e6-b263-9db62e053e59");
   
@@ -19,4 +19,4 @@ public interface IExternalInterfaces extends cleon.common.doc.spec.doc.chapter.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,65e40b4b-27d5-11e6-b263-9db62e053e59,CxKPl9VgEqW+NrXD1aZPIWljIPs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,65e40b4b-27d5-11e6-b263-9db62e053e59,WLPIJqp7shR0yhsbEYF/aDcOCok=] */

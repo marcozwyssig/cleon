@@ -99,12 +99,12 @@ public class CISCapability extends DynamicResource implements ICISCapability {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public CISCapability setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public CISCapability setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -150,11 +150,11 @@ public class CISCapability extends DynamicResource implements ICISCapability {
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.spec.eamod.ncv.NcvPackage.Capability_capabilityComposition, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.spec.eamod.ncv.NcvPackage.Capability_capabilityDependency, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.ncv.javamodel.ICapability.class, cleon.architecturemethods.eamod.spec.eamod.ncv.NcvPackage.Capability_capabilitySpecialisation, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70fc7e57-bc80-11e6-beb6-85da12323ce9,WnDzjfc8cwMo54+05SFEKYceCIw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70fc7e57-bc80-11e6-beb6-85da12323ce9,PY66LRlw9CyExukUQbguGIPUQZU=] */

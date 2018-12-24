@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class AsciidocPackage {
   
   public static final Resource FunctionSpace_aE_Asciidoc_DocumentElement = new Resource("4d98ac18-d872-11e4-aa2f-c11242a92b60");
-  public static final Resource FunctionSpace_aE_Asciidoc_Chapter = new Resource("794f02b4-d872-11e4-aa2f-c11242a92b60");
+  public static final Resource FunctionSpace_aE_Asciidoc_AbstractChapter = new Resource("794f02b4-d872-11e4-aa2f-c11242a92b60");
   public static final Resource FunctionSpace_aE_Asciidoc_Text = new Resource("8e93cdf6-d872-11e4-aa2f-c11242a92b60");
   public static final Resource FunctionSpace_aE_Asciidoc_NumberedList = new Resource("841d53b7-d882-11e4-a5d6-b92b0ce88839");
   public static final Resource FunctionSpace_aE_Asciidoc_DocumentElementComposite = new Resource("dad7b129-307a-11e5-8cdc-d5b441c8c3df");
@@ -52,4 +52,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.asciidoc,MEuVw7delIeSvdw0xymGPJipryA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.asciidoc,9Dv+Eo8lhqHFA5Ect1srLk5/t3g=] */

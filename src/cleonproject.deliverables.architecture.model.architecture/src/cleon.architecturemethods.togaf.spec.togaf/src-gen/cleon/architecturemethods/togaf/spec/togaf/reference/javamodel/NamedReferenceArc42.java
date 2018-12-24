@@ -208,22 +208,22 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView select__W_3_aE_productview() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview);
+  public cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView select__W_3_aE_productview() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview);
   }
 
-  public NamedReferenceArc42 set__W_3_aE_productview(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView __W_3_aE_productview) {
+  public NamedReferenceArc42 set__W_3_aE_productview(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView __W_3_aE_productview) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview, __W_3_aE_productview);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public NamedReferenceArc42 setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public NamedReferenceArc42 setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -244,6 +244,16 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
 
   public NamedReferenceArc42 setGlossary(cleon.common.glossary.spec.glossary.javamodel.IGlossary glossary) {
     _setSingle(cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, glossary);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs);
+  }
+
+  public NamedReferenceArc42 setNoParagraphs(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, noParagraphs);
     return this;
   }
     
@@ -310,10 +320,11 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_0_aE_quality_aE_scenarios, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirements_Coverage.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_2_aE_requirements_aE_coverage, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
@@ -321,4 +332,4 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,alWeNEq6GcfWYzRUOMQo7JnpXkw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,MroB516lZ/h4PlEXvcmSeb87H6c=] */

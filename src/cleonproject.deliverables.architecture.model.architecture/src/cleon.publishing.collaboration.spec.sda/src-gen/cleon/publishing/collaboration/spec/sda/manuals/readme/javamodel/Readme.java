@@ -69,12 +69,12 @@ public class Readme extends DynamicResource implements IReadme {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public Readme setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public Readme setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -115,6 +115,16 @@ public class Readme extends DynamicResource implements IReadme {
 
   public Readme setIntroduction(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IIntroduction introduction) {
     _setSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.ReadmePackage.Readme_introduction, introduction);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs);
+  }
+
+  public Readme setNoParagraphs(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, noParagraphs);
     return this;
   }
     
@@ -177,11 +187,12 @@ public class Readme extends DynamicResource implements IReadme {
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.ICopyright.class, cleon.publishing.collaboration.spec.sda.manuals.readme.ReadmePackage.Readme_copyright, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IGettingStarted.class, cleon.publishing.collaboration.spec.sda.manuals.readme.ReadmePackage.Readme_gettingStarted, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IIntroduction.class, cleon.publishing.collaboration.spec.sda.manuals.readme.ReadmePackage.Readme_introduction, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IRequirements.class, cleon.publishing.collaboration.spec.sda.manuals.readme.ReadmePackage.Readme_requirements, visitor);
@@ -208,4 +219,4 @@ public class Readme extends DynamicResource implements IReadme {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,yJY1NALOMuCFdKhANLNXRLQyJII=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f35fd79-4e6b-11e5-b08e-673a0d02fb08,wCZL7R4NRwD79rS4xPJuMUTcbxc=] */

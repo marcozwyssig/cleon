@@ -1,8 +1,8 @@
-package cleon.architecturemethods.arc42.spec.arc42._13_productView;
+package cleon.architecturemethods.arc42.spec.arc42._13_product_view;
 
 import ch.actifsource.core.Resource;
 
-public class _13_productViewPackage {
+public class _13_product_viewPackage {
   
   public static final Resource Manufactors = new Resource("2371f6a6-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource Product = new Resource("352e36c6-d0b1-11e8-b005-f7630e4c29c0");
@@ -14,7 +14,7 @@ public class _13_productViewPackage {
   
   /* End Protected Region   [[user]] */
   
-  private _13_productViewPackage() {}
+  private _13_product_viewPackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.arc42.spec.arc42";
@@ -25,8 +25,8 @@ public class _13_productViewPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.arc42.spec.arc42._13_productView";
+    return "cleon.architecturemethods.arc42.spec.arc42._13_product_view";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._13_productView,wWb6TkKs9vGecniO378pO4pYL1g=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._13_product_view,0f9sskNW4qmx5varwYHAjOVo2Uw=] */

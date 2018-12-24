@@ -50,7 +50,7 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IChapterFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("619f52ea-3df2-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderContent();
@@ -78,23 +78,23 @@ public class FunctionSpace_DocBook {
 
   }
   
-  public static interface IChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7a904f0e-3e12-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IChapter chapter);
+    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
-  public static class ChapterFunctionsImpl implements IChapterFunctionsImpl {
+  public static class AbstractChapterFunctionsImpl implements IAbstractChapterFunctionsImpl {
 
-    public static final IChapterFunctionsImpl INSTANCE = new ChapterFunctionsImpl();
+    public static final IAbstractChapterFunctionsImpl INSTANCE = new AbstractChapterFunctionsImpl();
 
-    private ChapterFunctionsImpl() {}
+    private AbstractChapterFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IChapter chapter) {
+    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter) {
       /* Begin Protected Region [[7a904f0e-3e12-11e6-9bf8-29c5fda07fa3]] */
-    	IDocumentElementComposite composite = DocumentElementComposite.selectToMeDocumentElements(chapter);
+    	IDocumentElementComposite composite = DocumentElementComposite.selectToMeDocumentElements(abstractChapter);
     	if (composite instanceof IDocument)
     	{
     		return "chapter";
@@ -108,12 +108,12 @@ public class FunctionSpace_DocBook {
 
   }
   
-  public static class ChapterFunctions {
+  public static class AbstractChapterFunctions {
 
-    private ChapterFunctions() {}
+    private AbstractChapterFunctions() {}
 
-    public static java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IChapter chapter) {
-      return DynamicResourceUtil.invoke(IChapterFunctionsImpl.class, ChapterFunctionsImpl.INSTANCE, chapter).RenderElementName(chapter);
+    public static java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderElementName(abstractChapter);
     }
 
   }
@@ -646,6 +646,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IReferencesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e49cbbd8-076c-11e9-8a1f-efe3fa2d8b84")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IReferencesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ReferencesFunctionsImpl implements IReferencesFunctionsImpl {
+
+    public static final IReferencesFunctionsImpl INSTANCE = new ReferencesFunctionsImpl();
+
+    private ReferencesFunctionsImpl() {}
+
+  }
+  
+  public static class ReferencesFunctions {
+
+    private ReferencesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,go/1XxgFjLlgMmDvJqEKXGxsZ0E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,IAM+nBG6H7MYtlDyGzVquknIxXE=] */

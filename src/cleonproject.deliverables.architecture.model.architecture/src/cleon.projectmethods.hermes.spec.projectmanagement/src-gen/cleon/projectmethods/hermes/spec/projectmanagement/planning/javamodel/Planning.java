@@ -78,12 +78,12 @@ public class Planning extends DynamicResource implements IPlanning {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public Planning setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public Planning setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -124,6 +124,16 @@ public class Planning extends DynamicResource implements IPlanning {
 
   public Planning setInitialposition(cleon.projectmethods.hermes.spec.projectmanagement.planning.initialposition.javamodel.IInitialposition initialposition) {
     _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_initialposition, initialposition);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs);
+  }
+
+  public Planning setNoParagraphs(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, noParagraphs);
     return this;
   }
     
@@ -207,11 +217,12 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.javamodel.IConstraints.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_constraints, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoals.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_goals, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.initialposition.javamodel.IInitialposition.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_initialposition, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_resourceManagement, visitor);
@@ -248,4 +259,4 @@ public class Planning extends DynamicResource implements IPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,eGfspq6qaw/zAIxD01aDi0+bmzk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,ZlY98cbiwCpl/MdSLWNdLRf3bTs=] */

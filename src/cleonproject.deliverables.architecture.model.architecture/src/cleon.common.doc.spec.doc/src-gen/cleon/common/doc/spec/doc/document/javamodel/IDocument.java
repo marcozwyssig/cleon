@@ -16,6 +16,8 @@ public interface IDocument extends cleon.common.resources.spec.resources.descrip
   
   public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties();
   
+  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,iO3J3VZVsN2Fj9a6MvwnemTeMtA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,94OGHidFjCSwJ0ldePnDP1jUK6Q=] */

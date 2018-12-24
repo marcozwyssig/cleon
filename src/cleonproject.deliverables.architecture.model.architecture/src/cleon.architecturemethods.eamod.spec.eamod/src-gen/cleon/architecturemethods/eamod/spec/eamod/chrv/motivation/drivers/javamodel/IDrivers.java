@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.drivers.javam
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDrivers extends cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementDocument, cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface IDrivers extends cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementDocument, cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e54f10bf-a950-11e5-bda2-a7fc3bd7c783");
   
@@ -12,4 +12,4 @@ public interface IDrivers extends cleon.architecturemethods.eamod.spec.eamod.chr
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e54f10bf-a950-11e5-bda2-a7fc3bd7c783,ECboTa8xTFb46zIstA5WfRCDekY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e54f10bf-a950-11e5-bda2-a7fc3bd7c783,SXSeOZQ/5lkIp+xm54VvCobfNMQ=] */

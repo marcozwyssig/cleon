@@ -88,12 +88,12 @@ public class Person extends DynamicResource implements IPerson {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public Person setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public Person setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -168,7 +168,7 @@ public class Person extends DynamicResource implements IPerson {
     _acceptSingleAttribute(java.lang.String.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.Person_surname, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.javamodel.IAbsences.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.Person_absences, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.javamodel.IExperiences.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.Person_experiences, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.organisations.javamodel.IOrganisation.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.PersonsPackage.Person_organisation, visitor);
@@ -194,4 +194,4 @@ public class Person extends DynamicResource implements IPerson {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,b618JZUUUs2oK7ZF0ZiFrWllpvA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,DVMNpys0FcJULkfu6LTTvCghbL0=] */

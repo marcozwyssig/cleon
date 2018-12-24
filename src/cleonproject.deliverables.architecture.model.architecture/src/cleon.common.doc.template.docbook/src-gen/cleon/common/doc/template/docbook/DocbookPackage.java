@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class DocbookPackage {
   
   public static final Resource FunctionSpace_aE_DocBook_DocumentElement = new Resource("f67564e5-3df1-11e6-9bf8-29c5fda07fa3");
-  public static final Resource FunctionSpace_aE_DocBook_Chapter = new Resource("619f52ce-3df2-11e6-9bf8-29c5fda07fa3");
+  public static final Resource FunctionSpace_aE_DocBook_AbstractChapter = new Resource("619f52ce-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Text = new Resource("619f53ad-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_NumberedList = new Resource("619f53b7-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_DocumentElementComposite = new Resource("619f53d9-3df2-11e6-9bf8-29c5fda07fa3");
@@ -27,6 +27,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_DocBook_Image = new Resource("61a19d08-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Cell = new Resource("076921c7-117b-11e8-854a-3387d66a1f33");
   public static final Resource FunctionSpace_aE_DocBook_ItemizedList = new Resource("0000a0cd-e8f6-11e8-b810-cdb2b421fd42");
+  public static final Resource FunctionSpace_aE_DocBook_References = new Resource("dfa2ee03-076c-11e9-8a1f-efe3fa2d8b84");
   
   /* Begin Protected Region [[user]] */
   
@@ -47,4 +48,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.docbook,SLzdfhivS2gexwuzbpasibQrFPk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.docbook,nThOL8AROUei5alxSa7o1JZifUs=] */

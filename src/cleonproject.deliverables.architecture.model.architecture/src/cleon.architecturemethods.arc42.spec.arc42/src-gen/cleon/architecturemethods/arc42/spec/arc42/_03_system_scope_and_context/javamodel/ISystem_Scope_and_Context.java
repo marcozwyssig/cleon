@@ -21,7 +21,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * * Various context diagram (see below)
  * * Lists of neighboring systems and their interfaces.
  */
-public interface ISystem_Scope_and_Context extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface ISystem_Scope_and_Context extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("04cf294a-ffca-11e5-bd7b-8b0acf27d441");
   
@@ -35,4 +35,4 @@ public interface ISystem_Scope_and_Context extends cleon.common.doc.spec.doc.cha
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,62cRAEEbz2RacijKrw7/O7Nsc+M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,Xl0TtdsUewKKYLxBM05D6hU094w=] */

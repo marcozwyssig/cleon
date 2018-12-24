@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.role
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRoles extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface IRoles extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("5db2666a-bb5f-11e8-921b-c1cf01226512");
   
@@ -12,4 +12,4 @@ public interface IRoles extends cleon.common.doc.spec.doc.chapter.javamodel.ICha
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5db2666a-bb5f-11e8-921b-c1cf01226512,UhXYZnF1yi8uFPlQGShrJ3abqqY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5db2666a-bb5f-11e8-921b-c1cf01226512,EGxL1/bgJtxxCTBtsbJbqR3oKy8=] */

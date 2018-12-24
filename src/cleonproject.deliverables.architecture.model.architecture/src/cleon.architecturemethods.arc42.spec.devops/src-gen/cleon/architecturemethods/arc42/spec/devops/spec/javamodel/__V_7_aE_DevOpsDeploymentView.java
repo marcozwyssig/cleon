@@ -71,12 +71,12 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public __V_7_aE_DevOpsDeploymentView setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, chapters);
+  public __V_7_aE_DevOpsDeploymentView setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -209,7 +209,7 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.build.javamodel.IBuild.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_build, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IBuildView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_buildView, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.code.javamodel.ICode.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_code, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.deploy.javamodel.IDeploy.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_deploy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_deployView, visitor);
@@ -251,4 +251,4 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,YMD2x+UAIAYrlPsl9XTPCNWIPSE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,66ksXUfeQnfKq2R0MCkdrwRMXSU=] */

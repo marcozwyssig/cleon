@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDependencies extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter {
+public interface IDependencies extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a965eaa2-d436-11e6-8a1d-7fdd5d29730e");
   
@@ -12,4 +12,4 @@ public interface IDependencies extends cleon.common.doc.spec.doc.chapter.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a965eaa2-d436-11e6-8a1d-7fdd5d29730e,EE87g26fpPfkd0tX5e22gtur00o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a965eaa2-d436-11e6-8a1d-7fdd5d29730e,0vDCln8rpiw7UkEcQ+BJelRd5Ug=] */

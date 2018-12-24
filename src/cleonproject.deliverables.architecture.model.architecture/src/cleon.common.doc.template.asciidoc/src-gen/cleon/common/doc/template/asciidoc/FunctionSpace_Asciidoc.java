@@ -45,7 +45,7 @@ public class FunctionSpace_Asciidoc {
 
   }
 
-  public static interface IChapterFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7eb10829-d872-11e4-aa2f-c11242a92b60")
     public java.lang.String RenderContent();
@@ -67,21 +67,21 @@ public class FunctionSpace_Asciidoc {
 
   }
   
-  public static interface IChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ChapterFunctionsImpl implements IChapterFunctionsImpl {
+  public static class AbstractChapterFunctionsImpl implements IAbstractChapterFunctionsImpl {
 
-    public static final IChapterFunctionsImpl INSTANCE = new ChapterFunctionsImpl();
+    public static final IAbstractChapterFunctionsImpl INSTANCE = new AbstractChapterFunctionsImpl();
 
-    private ChapterFunctionsImpl() {}
+    private AbstractChapterFunctionsImpl() {}
 
   }
   
-  public static class ChapterFunctions {
+  public static class AbstractChapterFunctions {
 
-    private ChapterFunctions() {}
+    private AbstractChapterFunctions() {}
 
   }
 
@@ -661,4 +661,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,IFzjkVh+TkpNpP0ThY3DgoyTn3Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,GmMez3LmfJ8/fKj31eibe7sBXWM=] */

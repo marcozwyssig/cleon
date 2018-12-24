@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel;
+package cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IProduct extends ch.actifsource.core.javamodel.INamedResource, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,XNjwuLslu0upnD6oUa+GjwXa0w4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,9nqZfRUsH2Nv9Pi+JRJhbRd05es=] */

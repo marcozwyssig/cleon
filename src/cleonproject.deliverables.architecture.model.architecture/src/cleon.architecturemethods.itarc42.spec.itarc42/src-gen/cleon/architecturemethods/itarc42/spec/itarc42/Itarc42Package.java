@@ -6,7 +6,6 @@ public class Itarc42Package {
   
   public static final Resource ItArc42 = new Resource("59b25bca-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource NamedItArc42 = new Resource("600e2b4a-d0b1-11e8-b005-f7630e4c29c0");
-  public static final Resource ItArc42___W_3_aE_productview = new Resource("733853a4-d0b1-11e8-b005-f7630e4c29c0");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +26,4 @@ public class Itarc42Package {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42,XD1iQlwB5Y9Ag9cJuR4Y+40Kor8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42,uOLCNFc3yITQaFo4h07f7SQ0fwA=] */

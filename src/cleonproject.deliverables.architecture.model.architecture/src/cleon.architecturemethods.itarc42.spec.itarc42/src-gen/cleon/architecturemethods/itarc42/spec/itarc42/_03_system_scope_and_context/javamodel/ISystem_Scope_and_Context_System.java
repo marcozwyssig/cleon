@@ -8,8 +8,8 @@ public interface ISystem_Scope_and_Context_System extends cleon.architecturemeth
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem selectPlattform();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem selectSystem();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,5htxxAiM7s/fQ64wFhclUD/5IFI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979ed992-99aa-11e8-8f58-219af2c5d6d9,9t9SDb5Hoxl04ZNkKBjH6tHrDyA=] */

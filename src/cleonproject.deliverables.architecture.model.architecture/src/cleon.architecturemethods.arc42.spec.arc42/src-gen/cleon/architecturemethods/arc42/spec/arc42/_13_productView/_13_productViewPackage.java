@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._13_productView;
+package cleon.architecturemethods.arc42.spec.arc42._13_productView;
 
 import ch.actifsource.core.Resource;
 
@@ -17,7 +17,7 @@ public class _13_productViewPackage {
   private _13_productViewPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.architecturemethods.itarc42.spec.itarc42";
+    return "cleon.architecturemethods.arc42.spec.arc42";
   }
   
   public static final String getResourceFolderPath() {
@@ -25,8 +25,8 @@ public class _13_productViewPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.itarc42.spec.itarc42._13_productView";
+    return "cleon.architecturemethods.arc42.spec.arc42._13_productView";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._13_productView,ohczXl2z8RguFq+bZsq9ITwZK6E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._13_productView,wWb6TkKs9vGecniO378pO4pYL1g=] */

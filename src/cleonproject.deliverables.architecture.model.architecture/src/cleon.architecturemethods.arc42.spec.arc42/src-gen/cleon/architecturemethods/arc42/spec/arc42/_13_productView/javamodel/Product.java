@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel;
+package cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -71,4 +71,4 @@ public class Product extends DynamicResource implements IProduct {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,T8f03u8lYmUFhEAEkdZVsopLMm4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,OMebPZPwfY6sx7Ju5bGUt7bF1LE=] */

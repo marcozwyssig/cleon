@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel;
+package cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -71,12 +71,12 @@ public class ProductView extends DynamicResource implements IProductView {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IManufactors> selectManufactors() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IManufactors.class, cleon.architecturemethods.itarc42.spec.itarc42._13_productView._13_productViewPackage.ProductView_manufactors);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IManufactors> selectManufactors() {
+    return _getList(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IManufactors.class, cleon.architecturemethods.arc42.spec.arc42._13_productView._13_productViewPackage.ProductView_manufactors);
   }
 
-  public ProductView setManufactors(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IManufactors> manufactors) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42._13_productView._13_productViewPackage.ProductView_manufactors, manufactors);
+  public ProductView setManufactors(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IManufactors> manufactors) {
+    _setList(cleon.architecturemethods.arc42.spec.arc42._13_productView._13_productViewPackage.ProductView_manufactors, manufactors);
     return this;
   }
     
@@ -109,16 +109,16 @@ public class ProductView extends DynamicResource implements IProductView {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.Chapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IManufactors.class, cleon.architecturemethods.itarc42.spec.itarc42._13_productView._13_productViewPackage.ProductView_manufactors, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IManufactors.class, cleon.architecturemethods.arc42.spec.arc42._13_productView._13_productViewPackage.ProductView_manufactors, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IProductView selectToMeManufactors(cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IManufactors object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._13_productView.javamodel.IProductView.class, cleon.architecturemethods.itarc42.spec.itarc42._13_productView._13_productViewPackage.ProductView_manufactors, object.getResource());
+  public static cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView selectToMeManufactors(cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IManufactors object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._13_productView.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42._13_productView._13_productViewPackage.ProductView_manufactors, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,jvqwl5UUDnXO1HlCLj8URlV0zI4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,TxbFqZkgY9ajLctO/XVAGRsKHpg=] */

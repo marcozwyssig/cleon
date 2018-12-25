@@ -1,31 +1,31 @@
-package cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel;
+package cleon.common.doc.spec.doc.chapter.about.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class About extends DynamicResource implements IAbout {
+public class Distinction extends DynamicResource implements IDistinction {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbout> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAbout>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDistinction> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDistinction>() {
     
     @Override
-    public IAbout create() {
-      return new About();
+    public IDistinction create() {
+      return new Distinction();
     }
     
     @Override
-    public IAbout create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new About(resourceRepository, resource);
+    public IDistinction create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Distinction(resourceRepository, resource);
     }
   
   };
 
-  public About() {
-    super(IAbout.TYPE_ID);
+  public Distinction() {
+    super(IDistinction.TYPE_ID);
   }
   
-  public About(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IAbout.TYPE_ID);
+  public Distinction(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IDistinction.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class About extends DynamicResource implements IAbout {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters);
   }
 
-  public About setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
+  public Distinction setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class About extends DynamicResource implements IAbout {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public About setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+  public Distinction setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,18 +75,8 @@ public class About extends DynamicResource implements IAbout {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs);
   }
 
-  public About setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> paragraphs) {
+  public Distinction setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.common.doc.spec.doc.chapter.about.javamodel.ITask selectTask() {
-    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.architecturemethods.arc42.spec.arc42._00_about._00_aboutPackage.About_task);
-  }
-
-  public About setTask(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask task) {
-    _setSingle(cleon.architecturemethods.arc42.spec.arc42._00_about._00_aboutPackage.About_task, task);
     return this;
   }
     
@@ -95,7 +85,7 @@ public class About extends DynamicResource implements IAbout {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public About setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Distinction setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -110,15 +100,8 @@ public class About extends DynamicResource implements IAbout {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.architecturemethods.arc42.spec.arc42._00_about._00_aboutPackage.About_task, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout selectToMeTask(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42._00_about._00_aboutPackage.About_task, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d84d5863-e990-11e8-af5c-a5aa9dc47205,+aaBNGh4Wd5CCQyAq3Pbk6LPjxM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8a2f1c8-0784-11e9-99e7-97cc29f85ed6,I0Z3IYe/hwQR0JtIuD7KjwDVM24=] */

@@ -573,7 +573,70 @@
 		
 		
 		
-		
+		<db:informaltable style="EAMod Requirement">
+			<db:col width="25%" />
+			<db:col width="25%" />
+			<db:col width="25%" />
+			<db:col width="25%" />			
+			<db:thead>
+				<db:tr>
+					<db:th>Hersteller</db:th>
+					<db:th>Produkt</db:th>
+					<db:th>Version</db:th>			
+					<db:th>Beschreibung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Microsoft</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Windows Server 2016</db:para>
+					</db:td>
+					<db:td>
+						<db:para>2016</db:para>
+					</db:td>
+					<db:td>
+						<db:para>2016</db:para>
+					</db:td>			
+					<db:td>
+					</db:td>			
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Redhat</db:para>
+					</db:td>
+					<db:td>
+						<db:para>SLES 7.1</db:para>
+					</db:td>
+					<db:td>
+						<db:para>7.1</db:para>
+					</db:td>
+					<db:td>
+						<db:para>7.1</db:para>
+					</db:td>			
+					<db:td>
+					</db:td>			
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>VMware</db:para>
+					</db:td>
+					<db:td>
+						<db:para>ESXi 6.0</db:para>
+					</db:td>
+					<db:td>
+						<db:para>6.0</db:para>
+					</db:td>
+					<db:td>
+						<db:para>6.0</db:para>
+					</db:td>			
+					<db:td>
+					</db:td>			
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
 		
 	</db:chapter>
 	<db:chapter >

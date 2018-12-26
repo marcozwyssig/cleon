@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,imports]] */
 
-public class FunctionSpace_arc42 {
+public class FunctionSpace_arc42_Docbook {
 
   /* Begin Protected Region [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
   
@@ -458,6 +458,31 @@ public class FunctionSpace_arc42 {
 
   }
 
+  public static interface IProductViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3e5368c9-092e-11e9-8c40-11db3668c0c9")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IProductViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProductViewFunctionsImpl implements IProductViewFunctionsImpl {
+
+    public static final IProductViewFunctionsImpl INSTANCE = new ProductViewFunctionsImpl();
+
+    private ProductViewFunctionsImpl() {}
+
+  }
+  
+  public static class ProductViewFunctions {
+
+    private ProductViewFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,ihBzg04mNauW9X3wHFWFNk1wFkg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Uo0abEq9iAB18mtLf0y9jcwxJVA=] */

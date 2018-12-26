@@ -28,8 +28,48 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
     super(resourceRepository, resource, IChapterDescription.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
   // relations
   
+  @Override
+  public cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter selectAbstractChapter() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.ChapterDescription_abstractChapter);
+  }
+
+  public ChapterDescription setAbstractChapter(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.ChapterDescription_abstractChapter, abstractChapter);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public ChapterDescription setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -43,9 +83,20 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.ChapterDescription_abstractChapter, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.common.doc.spec.doc.chapter.about.javamodel.IChapterDescription> selectToMeAbstractChapter(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter object) {
+    return _getToMeList(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IChapterDescription.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.ChapterDescription_abstractChapter, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,ALCuZ1huYxoZGThK8q/bJdBQxb0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,Q+i5pJ8eXuuBtmh53rCsQsK3kyg=] */

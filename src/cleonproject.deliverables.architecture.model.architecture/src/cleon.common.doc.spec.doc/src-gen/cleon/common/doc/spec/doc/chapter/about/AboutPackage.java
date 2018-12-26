@@ -7,7 +7,7 @@ public class AboutPackage {
   public static final Resource About = new Resource("7dee7074-077f-11e9-812a-c3c7ef540adf");
   public static final Resource Task = new Resource("4f75bdc1-0782-11e9-812a-c3c7ef540adf");
   public static final Resource Dependencies = new Resource("7497aa19-0782-11e9-812a-c3c7ef540adf");
-  public static final Resource About_tasks = new Resource("420c18e4-0783-11e9-81ef-15b0f2f43408");
+  public static final Resource About_task = new Resource("420c18e4-0783-11e9-81ef-15b0f2f43408");
   public static final Resource About_dependencies = new Resource("499718aa-0783-11e9-81ef-15b0f2f43408");
   public static final Resource About_references = new Resource("5edc5927-0783-11e9-81ef-15b0f2f43408");
   public static final Resource Purpose = new Resource("6b94c4bb-0784-11e9-99e7-97cc29f85ed6");
@@ -19,6 +19,9 @@ public class AboutPackage {
   public static final Resource Layout = new Resource("858bbbc1-0786-11e9-99e7-97cc29f85ed6");
   public static final Resource ChapterDescription = new Resource("f8fde99d-0787-11e9-96ce-190a492a5193");
   public static final Resource About_layout = new Resource("41bd1f83-078c-11e9-b2b0-0753551b495e");
+  public static final Resource Layout_chapterDescription = new Resource("af1bc503-084c-11e9-9ee8-c54fda7ab431");
+  public static final Resource ChapterDescription_abstractChapter = new Resource("d6ff4c11-084d-11e9-9ee8-c54fda7ab431");
+  public static final Resource FunctionSpace_aE_About_ChapterDescription = new Resource("0ec4910b-08fa-11e9-9ee8-c54fda7ab431");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +42,4 @@ public class AboutPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter.about,mOwqRZtp4Zv4n3MHKQ7QbeH+hJA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter.about,X1+RXQ8+Hjw2lLHOmadJGac9XcE=] */

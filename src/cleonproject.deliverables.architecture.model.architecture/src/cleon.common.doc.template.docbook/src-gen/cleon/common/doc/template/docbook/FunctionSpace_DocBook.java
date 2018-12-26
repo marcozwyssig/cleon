@@ -646,31 +646,6 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IReferencesFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("e49cbbd8-076c-11e9-8a1f-efe3fa2d8b84")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface IReferencesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ReferencesFunctionsImpl implements IReferencesFunctionsImpl {
-
-    public static final IReferencesFunctionsImpl INSTANCE = new ReferencesFunctionsImpl();
-
-    private ReferencesFunctionsImpl() {}
-
-  }
-  
-  public static class ReferencesFunctions {
-
-    private ReferencesFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,IAM+nBG6H7MYtlDyGzVquknIxXE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,p3vRLKDW43cE36S5KpfZFKvq5Tk=] */

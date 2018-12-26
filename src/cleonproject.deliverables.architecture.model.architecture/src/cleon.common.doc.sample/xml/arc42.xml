@@ -4,26 +4,99 @@
 	
 	
 	<db:chapter >
-		<db:title>Introduction and Goals</db:title>
+		<db:title>Einleitung</db:title>
 		
 		
-		<db:para>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
-		         This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</db:para>
+		
 		
 		<db:section >
-			<db:title>Test</db:title>
+			<db:title>Aufgabenstellung</db:title>
 			
-			
+			<db:para>sadfasdfsdf</db:para>
+			<db:para>asdfasdfasdfsadf</db:para>
 			
 			
 			
 		</db:section>
 		<db:section >
-			<db:title>Requirements Overview</db:title>
+			<db:title>Zweck</db:title>
+			
+			<db:para>adfasdfasdf</db:para>
+			<db:para>adsfasdfasdf</db:para>
 			
 			
 			
+		</db:section>
+		<db:section >
+			<db:title>Abgrenzung</db:title>
 			
+			<db:para>asdfasdfas</db:para>
+			<db:para>dfasdfasdfsadf</db:para>
+			<db:para>asdfasdfsadf</db:para>
+			
+			
+			
+		</db:section>
+		<db:section >
+			<db:title>Aufgabenstellung</db:title>
+			
+			<db:para>asdfasdfasd</db:para>
+			<db:para>fasdfasdfasdfdf</db:para>
+			
+			
+			
+		</db:section>
+		<db:section >
+			<db:title>Leserkreis</db:title>
+			
+			<db:para>adsfasdfasdfasdf</db:para>
+			<db:para>asdfasdfasdfa</db:para>
+			<db:para>sdfasdf</db:para>
+			
+			
+			
+		</db:section>
+		<db:section >
+			<db:title>Dokumentaufbau</db:title>
+			
+			
+			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Kapitel</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Einleitung</db:para>
+						</db:td>
+						<db:td>
+							<db:para>fasdfasdf</db:para>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Introduction and Goals</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sadfsadfasdf</db:para>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Architecture Constraints</db:para>
+						</db:td>
+						<db:td>
+							<db:para>asdfasdfasdfasdfsdf</db:para>
+						</db:td>			
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
 			
 		</db:section>
 		<db:section >
@@ -49,7 +122,7 @@
 				<db:tbody>
 					<db:tr>
 						<db:td>
-							<db:para>[1]</db:para>
+							<db:para><db:emphasis role="strong">[1]</db:emphasis></db:para>
 						</db:td>
 						<db:td>			
 							<db:para>Dok 1</db:para>
@@ -69,7 +142,7 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>[2]</db:para>
+							<db:para><db:emphasis role="strong">[2]</db:emphasis></db:para>
 						</db:td>
 						<db:td>			
 							<db:para>dd</db:para>
@@ -88,9 +161,33 @@
 		</db:section>
 	</db:chapter>
 	<db:chapter >
+		<db:title>Introduction and Goals</db:title>
+		
+		
+		<db:para>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
+		         This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</db:para>
+		
+		<db:section >
+			<db:title>Test</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+		<db:section >
+			<db:title>Requirements Overview</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter >
 		<db:title>Architecture Constraints</db:title>
 		
-		
+		<db:para>asdfasdfasdfasdfsdf</db:para>
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="2" />
 			<db:col width="4" />

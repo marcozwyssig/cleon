@@ -61,12 +61,12 @@ public class About extends DynamicResource implements IAbout {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters);
+  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
 
-  public About setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, chapters);
+  public About setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
     return this;
   }
     
@@ -111,12 +111,12 @@ public class About extends DynamicResource implements IAbout {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> selectParagraphs() {
-    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs);
+  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public About setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> paragraphs) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, paragraphs);
+  public About setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
@@ -141,12 +141,12 @@ public class About extends DynamicResource implements IAbout {
   }
     
   @Override
-  public cleon.common.doc.spec.doc.chapter.about.javamodel.ITask selectTasks() {
-    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_tasks);
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.ITask selectTask() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_task);
   }
 
-  public About setTasks(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask tasks) {
-    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_tasks, tasks);
+  public About setTask(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask task) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_task, task);
     return this;
   }
     
@@ -168,30 +168,22 @@ public class About extends DynamicResource implements IAbout {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAudiences.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_audiences, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IDependencies.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_dependencies, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IDistinction.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_distinction, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ILayout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_layout, visitor);
-    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, visitor);
+    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IPurpose.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_purpose, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_references, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_tasks, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_task, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeTasks(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_tasks, object.getResource());
-  }
-  
-  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeDependencies(cleon.common.doc.spec.doc.chapter.about.javamodel.IDependencies object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_dependencies, object.getResource());
-  }
-  
-  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeReferences(cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_references, object.getResource());
+  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeTask(cleon.common.doc.spec.doc.chapter.about.javamodel.ITask object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_task, object.getResource());
   }
   
   public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMePurpose(cleon.common.doc.spec.doc.chapter.about.javamodel.IPurpose object) {
@@ -202,6 +194,10 @@ public class About extends DynamicResource implements IAbout {
     return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_distinction, object.getResource());
   }
   
+  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeDependencies(cleon.common.doc.spec.doc.chapter.about.javamodel.IDependencies object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_dependencies, object.getResource());
+  }
+  
   public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeAudiences(cleon.common.doc.spec.doc.chapter.about.javamodel.IAudiences object) {
     return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_audiences, object.getResource());
   }
@@ -210,5 +206,9 @@ public class About extends DynamicResource implements IAbout {
     return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_layout, object.getResource());
   }
   
+  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeReferences(cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_references, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,ucKBAEm4GKMJjyXG20gZvYoQBAY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,j/b52aAzU/lBRE+6pAkb8BqXNSc=] */

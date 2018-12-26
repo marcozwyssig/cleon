@@ -13,6 +13,7 @@ public class DocPackage {
   public static final Resource StandardDocumentElement = new Resource("a1b0bb10-e98b-11e8-af5c-a5aa9dc47205");
   public static final Resource OnlyStandardElementsChapter_paragraphs = new Resource("35ca8713-ff97-11e8-9d0c-c96c1e9b7b46");
   public static final Resource OnlyStandardElementsChapter_chapters = new Resource("35ca8714-ff97-11e8-9d0c-c96c1e9b7b46");
+  public static final Resource FunctionSpace_aE_Doc_DocumentElement = new Resource("ce8cc81a-084c-11e9-9ee8-c54fda7ab431");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class DocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc,/D8CSaWWZSolFblCTgzvYF3i/Qg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc,gPwGm/lKz9daqlryaCzFc5lVBEk=] */

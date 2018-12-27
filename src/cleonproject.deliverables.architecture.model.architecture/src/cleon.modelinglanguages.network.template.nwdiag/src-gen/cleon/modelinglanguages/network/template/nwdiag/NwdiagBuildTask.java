@@ -63,22 +63,20 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 		if(folder == null)
 			return;
 		
-		
 		for (IAsFile nwdiagAsUmlFile : folder.getFiles()) {
 			if (nwdiagAsUmlFile.getName().endsWith(EXTENSION)) {
 				if (isCanceled())
 					return;
+				
 				String nwdiagFileName = nwdiagAsUmlFile.getName();
 				String nwdiagFilename = nwdiagFileName.substring(0, nwdiagFileName.length() - EXTENSION.length())
 						+ EXTENSION;
-				IAsFile pumlFile = folder.getFile(nwdiagFilename);
+				IAsFile nwDiagFile = folder.getFile(nwdiagFilename);
 
-				generatorConsole.info().print("Processing nwdiag");
-				_commands.forEach(x -> generatorConsole.info().print("Command: " + x));
-				
+				generatorConsole.info().print("Processing nwdiag");			
 				generatorConsole.info().print(nwdiagAsUmlFile, 0, 0, nwdiagFileName);
 				generatorConsole.info().print(" -> ");
-				generatorConsole.info().print(pumlFile, 0, 0, nwdiagFilename);
+				generatorConsole.info().print(nwDiagFile, 0, 0, nwdiagFilename);
 				generatorConsole.info().println();
 
 				List<String> command = new ArrayList<String>(_commands);
@@ -96,7 +94,7 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 					InputStream input = postProcess(process.getInputStream());
 					if (isCanceled())
 						return;
-					pumlFile.write(input);
+					nwDiagFile.write(input);
 				} finally {
 					interruptOnCancel.terminate();
 					try {

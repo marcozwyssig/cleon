@@ -6,7 +6,7 @@ public class TechnicalPackage {
   
   public static final Resource TechnicalContext = new Resource("2420a6f8-27cc-11e6-b263-9db62e053e59");
   public static final Resource ExternalSystem = new Resource("2e0ed149-2801-11e6-b263-9db62e053e59");
-  public static final Resource TechnicalContext_externalSystem = new Resource("3a71bf1d-2801-11e6-b263-9db62e053e59");
+  public static final Resource TechnicalContext_externalSystems = new Resource("3a71bf1d-2801-11e6-b263-9db62e053e59");
   public static final Resource TechnicalContextDiagram = new Resource("0f023427-fa45-11e8-af47-e5bdd8100025");
   public static final Resource TechnicalContextDiagram_technicalContext = new Resource("0f023428-fa45-11e8-af47-e5bdd8100025");
   public static final Resource ExternalSystem_NoDecompose = new Resource("586e3df5-0516-11e9-87b8-094c52ae4c98");
@@ -33,4 +33,4 @@ public class TechnicalPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,LCKCxVeagPg+6e/HXB04wp9Ikkg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical,9foU1pSnLbB5BaOC7xtibAzs2oA=] */

@@ -91,10 +91,8 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 				Thread thread = new Thread(interruptOnCancel);
 				thread.start();
 				try {
-					InputStream input = postProcess(process.getInputStream());
 					if (isCanceled())
 						return;
-					nwDiagFile.write(input);
 				} finally {
 					interruptOnCancel.terminate();
 					try {
@@ -113,22 +111,5 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 		for (IAsFolder subFolder : folder.getSubFolders()) {
 			processFolder(subFolder, generatorConsole);
 		}
-	}
-
-	private InputStream postProcess(InputStream input) throws IOException {
-		BufferedReader reader = new BufferedReader(new java.io.InputStreamReader(input));
-
-		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		PrintWriter writer = new PrintWriter(out);
-		String line;
-		if ((line = reader.readLine()) != null) {
-			writer.println(line);
-		}
-		
-		while ((line = reader.readLine()) != null) {
-			writer.println(line);
-		}
-		writer.flush();
-		return new java.io.ByteArrayInputStream(out.toByteArray());
 	}
 }

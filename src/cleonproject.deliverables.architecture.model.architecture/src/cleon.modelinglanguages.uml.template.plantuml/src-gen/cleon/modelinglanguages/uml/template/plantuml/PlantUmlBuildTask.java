@@ -26,18 +26,21 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	public PlantUmlBuildTask(ch.actifsource.core.INode buildTask, ICancelStatus status) {
 		super(buildTask, status);
 		
-
-		_commands.add("java");
-		_commands.add("-jar");
-		_commands.add("\"C:\\ProgramData\\chocolatey\\lib\\plantuml\\tools\\plantuml.jar\"");
-		_commands.add("-debugsvek");
-		_commands.add("-duration");		
-		_commands.add("-progress");
 	}
 
 	protected ch.actifsource.core.dependency.IDependency internalGenerate(ISingleThreadBuildTargetInfo targetInfo)
 			throws ch.actifsource.generator.GenerationException {
 
+		if(_commands.isEmpty())
+		{
+			_commands.add("java");
+			_commands.add("-jar");
+			_commands.add("\"C:\\ProgramData\\chocolatey\\lib\\plantuml\\tools\\plantuml.jar\"");
+			_commands.add("-tpng");
+			_commands.add("-duration");
+			_commands.add("-progress");
+		}
+			
 	
 		IAsFolder targetFolder = targetInfo.getOutputScope().getFolder(targetInfo.getOutputPath());
 		try {
@@ -57,11 +60,12 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 			if (plantAsUmlFile.getName().endsWith(".puml")) {
 				if (isCanceled())
 					return;
+				
 				String plantUmlFileName = plantAsUmlFile.getName();
 				String pumlFilename = plantUmlFileName.substring(0, plantUmlFileName.length() - ".puml".length())
 						+ ".puml";
+				
 				IAsFile pumlFile = folder.getFile(pumlFilename);
-
 				generatorConsole.info().print("Processing plantuml ");
 				generatorConsole.info().print(plantAsUmlFile, 0, 0, plantUmlFileName);
 				generatorConsole.info().print(" -> ");
@@ -80,21 +84,22 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 				Thread thread = new Thread(interruptOnCancel);
 				thread.start();
 				try {
-					InputStream input = postProcess(process.getInputStream());
 					if (isCanceled())
 						return;
-					pumlFile.write(input);
 				} finally {
 					interruptOnCancel.terminate();
 					try {
 						thread.join();
-					}catch (InterruptedException localInterruptedException1) {
+					}
+					catch (InterruptedException localInterruptedException1) {
+					
 					}
 				}
 				interruptOnCancel.terminate();
 				try {
 					thread.join();
-				} catch (InterruptedException localInterruptedException2) {
+				} 
+				catch (InterruptedException localInterruptedException2) {
 				}
 			}
 		}
@@ -102,27 +107,5 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 		for (IAsFolder subFolder : folder.getSubFolders()) {
 			processFolder(subFolder, generatorConsole);
 		}
-	}
-
-	private InputStream postProcess(InputStream input) throws IOException {
-		BufferedReader reader = new BufferedReader(new java.io.InputStreamReader(input));
-
-		ByteArrayOutputStream out = new ByteArrayOutputStream();
-		PrintWriter writer = new PrintWriter(out);
-		String line;
-		if ((line = reader.readLine()) != null) {
-			writer.println(line);
-			if (fStylesheet != null) {
-				writer.println("<?xml-stylesheet type=\"text/css\" href=\"" + fStylesheet + "\" ?>");
-			}
-		}
-		while ((line = reader.readLine()) != null) {
-			if ((fAdaptSize) && (line.startsWith("<svg"))) {
-				writer.println("<svg width=\"100%\" height=\"100%\"");
-			} else
-				writer.println(line);
-		}
-		writer.flush();
-		return new java.io.ByteArrayInputStream(out.toByteArray());
 	}
 }

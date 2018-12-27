@@ -61,14 +61,14 @@ In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-actor Player_A as "Player A"
-actor Player_B as "Player B"
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
 component Chess as "Chess"
 Chess -> Player_A : gets
-Player_A -> Chess : interacts
-Player_A -> Chess : interaces
-Player_B -> Chess : interacts
-Player_B -> Chess : interaces
+Player__F_A -> Chess : interacts
+Player__F_A -> Chess : interaces
+Player__F_B -> Chess : interacts
+Player__F_B -> Chess : interaces
 ...
 
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.arc42.template.asciidoc
 Bundle-SymbolicName: cleon.architecturemethods.arc42.template.asciidoc.builtin;singleton:=true
-Bundle-Version: 0.4.33
+Bundle-Version: 0.4.34
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,21 +12,21 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.modelinglanguages.uml.template.asciidoc.builtin;bundle-version="0.4.33",
- cleon.architecturemethods.arc42.template.plantuml.builtin;bundle-version="0.4.33",
- cleon.modelinglanguages.uml.template.plantuml.builtin;bundle-version="0.4.33",
- cleon.common.doc.template.asciidoc.builtin;bundle-version="0.4.33",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.33",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.33",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.33",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.33",
- cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.33",
- cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.33",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.33",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.33",
- cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.33",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.4.33",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.33",
+ cleon.modelinglanguages.uml.template.asciidoc.builtin;bundle-version="0.4.34",
+ cleon.architecturemethods.arc42.template.plantuml.builtin;bundle-version="0.4.34",
+ cleon.modelinglanguages.uml.template.plantuml.builtin;bundle-version="0.4.34",
+ cleon.common.doc.template.asciidoc.builtin;bundle-version="0.4.34",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.34",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.34",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.34",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.34",
+ cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.34",
+ cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.34",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.34",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.34",
+ cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.34",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.34",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.34",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.arc42.template.asciidoc,cleon.architecturemethods.arc42.template.asciidoc.javamodel
 

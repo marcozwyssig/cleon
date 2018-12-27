@@ -8,8 +8,8 @@ public interface IImage extends cleon.publishing.staticwebsite.spec.website.stat
   
   // relations
   
-  public cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType selectType();
+  public cleon.common.resources.spec.resources.image.javamodel.IImageType selectType();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,mCmFZgs/ClsK3dZWOAG62nxVgGo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,e25W62v6FJkt8+3uZhxltr7uY5k=] */

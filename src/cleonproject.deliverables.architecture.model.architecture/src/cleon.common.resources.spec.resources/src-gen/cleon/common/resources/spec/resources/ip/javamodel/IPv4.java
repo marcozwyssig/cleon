@@ -31,39 +31,39 @@ public class IPv4 extends DynamicResource implements IIPv4 {
   // attributes
   
   @Override
-  public java.lang.Integer selectA() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a);
+  public java.lang.Integer selectA_class() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a_aE_class);
   }
     
-  public void setA(java.lang.Integer a) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a, a);
+  public void setA_class(java.lang.Integer a_class) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a_aE_class, a_class);
   }
 
   @Override
-  public java.lang.Integer selectB() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b);
+  public java.lang.Integer selectB_class() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b_aE_class);
   }
     
-  public void setB(java.lang.Integer b) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b, b);
+  public void setB_class(java.lang.Integer b_class) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b_aE_class, b_class);
   }
 
   @Override
-  public java.lang.Integer selectC() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c);
+  public java.lang.Integer selectC_class() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c_aE_class);
   }
     
-  public void setC(java.lang.Integer c) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c, c);
+  public void setC_class(java.lang.Integer c_class) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c_aE_class, c_class);
   }
 
   @Override
-  public java.lang.Integer selectD() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d);
+  public java.lang.Integer selectD_class() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d_aE_class);
   }
     
-  public void setD(java.lang.Integer d) {
-     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d, d);
+  public void setD_class(java.lang.Integer d_class) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d_aE_class, d_class);
   }
 
   // relations
@@ -82,13 +82,13 @@ public class IPv4 extends DynamicResource implements IIPv4 {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_a_aE_class, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_b_aE_class, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_c_aE_class, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_d_aE_class, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68345145-eab1-11e8-88d3-bfc6b992bdec,QA9Athg3mQRkR78Gg+H+Io9JdFE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68345145-eab1-11e8-88d3-bfc6b992bdec,O5fLCUTdBw08+nc3y+PgEjAf/9U=] */

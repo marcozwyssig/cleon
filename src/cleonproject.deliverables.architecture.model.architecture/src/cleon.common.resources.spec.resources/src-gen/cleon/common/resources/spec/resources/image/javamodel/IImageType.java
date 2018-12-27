@@ -1,4 +1,4 @@
-package cleon.publishing.staticwebsite.spec.website.static_content.javamodel;
+package cleon.common.resources.spec.resources.image.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,21 +8,29 @@ public interface IImageType extends ch.actifsource.core.javamodel.IEnumValue {
   
   public static interface IValueVoidVisitor {
     
-    public void visitBMP();
+    public void visitGIF();
+    
+    public void visitSVG();
+    
+    public void visitPNG();
     
     public void visitJPG();
     
-    public void visitGIF();
+    public void visitBMP();
     
   }
   
   public static interface IValueVisitor<R> {
     
-    public R visitBMP();
+    public R visitGIF();
+    
+    public R visitSVG();
+    
+    public R visitPNG();
     
     public R visitJPG();
     
-    public R visitGIF();
+    public R visitBMP();
     
   }
   
@@ -34,13 +42,17 @@ public interface IImageType extends ch.actifsource.core.javamodel.IEnumValue {
   
   // isValue-Methods
   
-  public boolean isBMP();
+  public boolean isGIF();
+  
+  public boolean isSVG();
+  
+  public boolean isPNG();
   
   public boolean isJPG();
   
-  public boolean isGIF();
+  public boolean isBMP();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,iEuCqK/WPKSZf8MuCaa1VrBt9DI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,CxWPyO7dHrFIoyjUb651WdQz3yY=] */

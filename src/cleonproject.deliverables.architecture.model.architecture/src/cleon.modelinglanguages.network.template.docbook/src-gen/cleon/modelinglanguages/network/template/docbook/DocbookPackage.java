@@ -4,6 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class DocbookPackage {
   
+  public static final Resource FunctionSpace_aE_Docbook_NetworkDiagram = new Resource("e9558737-092f-11e9-8c40-11db3668c0c9");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +25,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.template.docbook,/suoi0Pu4lv4dg2dDI21vCQ/5gQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.template.docbook,yD85ptqNIvjB7emLV8ou9c1xPKo=] */

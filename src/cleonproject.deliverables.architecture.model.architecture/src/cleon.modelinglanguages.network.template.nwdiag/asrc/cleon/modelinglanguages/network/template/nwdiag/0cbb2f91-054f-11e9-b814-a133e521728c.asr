@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="0cbb2f91-054f-11e9-b814-a133e521728c">
   <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
     <resource statement-guid="2c395288-054f-11e9-b814-a133e521728c" type="resource" guid="2c395285-054f-11e9-b814-a133e521728c" />
+    <resource statement-guid="8a112dc5-09ab-11e9-8c40-11db3668c0c9" type="resource" guid="8a10b88f-09ab-11e9-8c40-11db3668c0c9" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="0cbb2f93-054f-11e9-b814-a133e521728c" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
@@ -17,6 +18,22 @@
         </predicate>
         <predicate guid="f251d91b-d8d4-11de-85c5-f93550bd5ed1">
           <object statement-guid="2c395287-054f-11e9-b814-a133e521728c" type="resource" guid="2c349734-054f-11e9-b814-a133e521728c" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8a112dc5-09ab-11e9-8c40-11db3668c0c9">
+      <resource guid="8a10b88f-09ab-11e9-8c40-11db3668c0c9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8a10dfa1-09ab-11e9-8c40-11db3668c0c9" type="resource" guid="5754eef7-054f-11e9-b814-a133e521728c" />
+        </predicate>
+        <predicate guid="ed1a421c-09a7-11e9-8c40-11db3668c0c9">
+          <object statement-guid="8a1106b2-09ab-11e9-8c40-11db3668c0c9" type="literal">c:\Python37\Scripts\nwdiag.exe</object>
+        </predicate>
+        <predicate guid="7a4fb3a5-09a8-11e9-8c40-11db3668c0c9">
+          <object statement-guid="8a1106b3-09ab-11e9-8c40-11db3668c0c9" type="literal">c:\Windows\Fonts\arial.ttf</object>
+        </predicate>
+        <predicate guid="cae85ef1-09a9-11e9-8c40-11db3668c0c9">
+          <object statement-guid="8a1106b4-09ab-11e9-8c40-11db3668c0c9" type="resource" guid="e197ddbc-09a9-11e9-8c40-11db3668c0c9" />
         </predicate>
       </resource>
     </object>

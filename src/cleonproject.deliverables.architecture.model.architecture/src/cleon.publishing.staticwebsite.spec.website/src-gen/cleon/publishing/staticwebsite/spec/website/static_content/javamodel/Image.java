@@ -42,11 +42,11 @@ public class Image extends DynamicResource implements IImage {
   // relations
   
   @Override
-  public cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType selectType() {
-    return _getSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType.class, cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type);
+  public cleon.common.resources.spec.resources.image.javamodel.IImageType selectType() {
+    return _getSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type);
   }
 
-  public Image setType(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType type) {
+  public Image setType(cleon.common.resources.spec.resources.image.javamodel.IImageType type) {
     _setSingle(cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type, type);
     return this;
   }
@@ -67,15 +67,15 @@ public class Image extends DynamicResource implements IImage {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType.class, cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage> selectToMeType(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImageType object) {
+  public static java.util.List<cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage> selectToMeType(cleon.common.resources.spec.resources.image.javamodel.IImageType object) {
     return _getToMeList(object.getRepository(), cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.Image_type, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,dnyXzTrujX7RbcR6hY4TThEJ02A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,m9qf3zCriyhiYq8ssp7uL75QqKs=] */

@@ -1,4 +1,4 @@
-package cleon.publishing.staticwebsite.spec.website.static_content.javamodel;
+package cleon.common.resources.spec.resources.image.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -64,24 +64,34 @@ public class ImageType extends DynamicResource implements IImageType {
 
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
-    if (isBMP()) return visitor.visitBMP();
-    if (isJPG()) return visitor.visitJPG();
     if (isGIF()) return visitor.visitGIF();
+    if (isSVG()) return visitor.visitSVG();
+    if (isPNG()) return visitor.visitPNG();
+    if (isJPG()) return visitor.visitJPG();
+    if (isBMP()) return visitor.visitBMP();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
   @Override
   public void accept(IValueVoidVisitor visitor) {
-    if (isBMP()) {
-      visitor.visitBMP();
+    if (isGIF()) {
+      visitor.visitGIF();
+      return;
+    }
+    if (isSVG()) {
+      visitor.visitSVG();
+      return;
+    }
+    if (isPNG()) {
+      visitor.visitPNG();
       return;
     }
     if (isJPG()) {
       visitor.visitJPG();
       return;
     }
-    if (isGIF()) {
-      visitor.visitGIF();
+    if (isBMP()) {
+      visitor.visitBMP();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -90,19 +100,29 @@ public class ImageType extends DynamicResource implements IImageType {
   // isValue-Methods
     
   @Override
-  public boolean isBMP() {
-    return getResource().equals(cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.ImageType_BMP);
+  public boolean isGIF() {
+    return getResource().equals(cleon.common.resources.spec.resources.image.ImagePackage.ImageType_GIF);
+  }
+  
+  @Override
+  public boolean isSVG() {
+    return getResource().equals(cleon.common.resources.spec.resources.image.ImagePackage.ImageType_SVG);
+  }
+  
+  @Override
+  public boolean isPNG() {
+    return getResource().equals(cleon.common.resources.spec.resources.image.ImagePackage.ImageType_PNG);
   }
   
   @Override
   public boolean isJPG() {
-    return getResource().equals(cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.ImageType_JPG);
+    return getResource().equals(cleon.common.resources.spec.resources.image.ImagePackage.ImageType_JPG);
   }
   
   @Override
-  public boolean isGIF() {
-    return getResource().equals(cleon.publishing.staticwebsite.spec.website.static_content.Static_contentPackage.ImageType_GIF);
+  public boolean isBMP() {
+    return getResource().equals(cleon.common.resources.spec.resources.image.ImagePackage.ImageType_BMP);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,ng5TZ71nEcKd1tzfbLlQt6i9Xyk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,okEfPFIK7wl7cvUJM6C9zr9BnSw=] */

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>MyDocument</db:title>
+	
+	
+	<db:chapter >
+		<db:title>test</db:title>
+		
+		
+		<db:mediaobject>
+			<db:imageobject>
+				<db:imagedata fileref="..\xml\MyNetworkDiagram.png" format="PNG"/>
+			</db:imageobject>
+		 	<db:caption>
+		    		<db:para>MyNetworkDiagram</db:para>
+		  	</db:caption>	
+		</db:mediaobject>
+		
+		
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,58ae5b43-09ab-11e9-8c40-11db3668c0c9,Hash] -->

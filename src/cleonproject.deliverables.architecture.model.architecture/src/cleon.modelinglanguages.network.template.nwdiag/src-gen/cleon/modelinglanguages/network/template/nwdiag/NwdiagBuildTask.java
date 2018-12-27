@@ -73,7 +73,9 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 						+ EXTENSION;
 				IAsFile pumlFile = folder.getFile(nwdiagFilename);
 
-				generatorConsole.info().print("Processing nwdiag ");
+				generatorConsole.info().print("Processing nwdiag");
+				_commands.forEach(x -> generatorConsole.info().print("Command: " + x));
+				
 				generatorConsole.info().print(nwdiagAsUmlFile, 0, 0, nwdiagFileName);
 				generatorConsole.info().print(" -> ");
 				generatorConsole.info().print(pumlFile, 0, 0, nwdiagFilename);

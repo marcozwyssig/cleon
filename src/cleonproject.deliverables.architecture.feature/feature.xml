@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleonproject.deliverables.architecture" label="cleonproject.deliverables.architecture" version="0.3.4">
+<feature id="cleonproject.deliverables.architecture" label="cleonproject.deliverables.architecture" version="0.3.5">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -480,6 +480,6 @@ of their respective owners.
       <import feature="cleon.projectmethods.hermes"/>
       <import feature="cleon.common.analysis"/>
    </requires>
-   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.3.4" unpack="false"/>   
+   <plugin id="cleonproject.deliverables.architecture.model.architecture.builtin" download-size="0" install-size="0" version="0.3.5" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,d419534b-f8d5-11e5-bc92-c963417b9cea,Hash] -->

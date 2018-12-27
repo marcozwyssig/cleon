@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[c73b6e10-d984-11e6-b0a8-c7d78a5235d4,imports]] */
 
-public class FunctionSpace_Doc {
+public class FunctionSpace_Document {
 
   /* Begin Protected Region [[c73b6e10-d984-11e6-b0a8-c7d78a5235d4]] */
   
@@ -31,6 +31,9 @@ public class FunctionSpace_Doc {
 
     @IDynamicResourceExtension.MethodId("741b9c04-5e36-11e6-a777-551543f10110")
     public java.lang.String GetDocumentName();
+
+    @IDynamicResourceExtension.MethodId("e010b098-09c8-11e9-9915-0d353533f3da")
+    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -54,4 +57,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c73b6e10-d984-11e6-b0a8-c7d78a5235d4,vAlzpfwW8D6EYi3C0aTjYs4ApiI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c73b6e10-d984-11e6-b0a8-c7d78a5235d4,gBmtQURZCyNwRx9Y7WGX0DtcVuQ=] */

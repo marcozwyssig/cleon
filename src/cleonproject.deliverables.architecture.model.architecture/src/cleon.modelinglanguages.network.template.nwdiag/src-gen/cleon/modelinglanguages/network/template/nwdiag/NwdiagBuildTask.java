@@ -40,7 +40,7 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 			INode fontNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_font, this.getBuildTaskNode());
 			String fontPath = LiteralUtil.getStringValue(fontNode);
 			
-			INode imageNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_font, this.getBuildTaskNode());
+			INode imageNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_imageType, this.getBuildTaskNode());
 			String imagePath = LiteralUtil.getStringValue(imageNode);
 			
 			_commands.add(binPath);

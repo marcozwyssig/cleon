@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.devops.chocolatey" label="cleon.devops.chocolatey" version="0.4.35">
+<feature id="cleon.devops.chocolatey" label="cleon.devops.chocolatey" version="0.4.36">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -471,7 +471,7 @@ of their respective owners.
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.devops.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.4.35" unpack="false"/>
-   <plugin id="cleon.devops.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.4.35" unpack="false"/>   
+   <plugin id="cleon.devops.chocolatey.spec.nuspec.builtin" download-size="0" install-size="0" version="0.4.36" unpack="false"/>
+   <plugin id="cleon.devops.chocolatey.template.nuget.builtin" download-size="0" install-size="0" version="0.4.36" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,65a8030d-4d0a-11e6-9043-01b29b61e580,Hash] -->

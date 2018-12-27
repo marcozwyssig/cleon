@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e0dc4096-09d7-11e9-9915-0d353533f3da">
+  <owns predicate="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <resource statement-guid="e0dc40a2-09d7-11e9-9915-0d353533f3da" type="resource" guid="e0dc4098-09d7-11e9-9915-0d353533f3da" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e0dc4099-09d7-11e9-9915-0d353533f3da" type="resource" guid="7b665745-d469-11da-8f5e-0f17beaa2c29" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e0dc409a-09d7-11e9-9915-0d353533f3da" type="literal">BuildConfig_PlantUmlBuildTask</object>
+  </predicate>
+  <predicate guid="2789b8e7-3c32-11db-99ea-73d5aa89e9be">
+    <object statement-guid="e0dc40a2-09d7-11e9-9915-0d353533f3da">
+      <resource guid="e0dc4098-09d7-11e9-9915-0d353533f3da">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e0dc40a1-09d7-11e9-9915-0d353533f3da" type="resource" guid="54616975-8e4f-11e7-859f-5dd1441850fb" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

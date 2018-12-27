@@ -10,6 +10,7 @@ public class ImagePackage {
   public static final Resource ImageType_PNG = new Resource("e197ddbc-09a9-11e9-8c40-11db3668c0c9");
   public static final Resource ImageType_JPG = new Resource("e197ddbd-09a9-11e9-8c40-11db3668c0c9");
   public static final Resource ImageType_BMP = new Resource("e197ddbe-09a9-11e9-8c40-11db3668c0c9");
+  public static final Resource FunctionSpace_aE_Image_Color = new Resource("a101b0cf-09af-11e9-8c40-11db3668c0c9");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class ImagePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.image,5O8klAZtzf16Huivs5nLt8JoXAU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.image,ynRBkk+KZxDNozLIvWfy9qsMCJQ=] */

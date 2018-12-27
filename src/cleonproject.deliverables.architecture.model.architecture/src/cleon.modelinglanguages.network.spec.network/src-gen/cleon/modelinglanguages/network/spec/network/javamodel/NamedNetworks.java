@@ -42,6 +42,16 @@ public class NamedNetworks extends DynamicResource implements INamedNetworks {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectGroups() {
+    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups);
+  }
+
+  public NamedNetworks setGroups(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> groups) {
+    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, groups);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INamedNetwork> selectNetworks() {
     return _getList(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetworks_networks);
   }
@@ -67,6 +77,7 @@ public class NamedNetworks extends DynamicResource implements INamedNetworks {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetworks_networks, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -78,4 +89,4 @@ public class NamedNetworks extends DynamicResource implements INamedNetworks {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1a8c5420-054f-11e9-b814-a133e521728c,TnldHLBV3cpnv4EVoP3KjXcVZnM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1a8c5420-054f-11e9-b814-a133e521728c,APHuQkfmXn8e1herbZsusSDgd1s=] */

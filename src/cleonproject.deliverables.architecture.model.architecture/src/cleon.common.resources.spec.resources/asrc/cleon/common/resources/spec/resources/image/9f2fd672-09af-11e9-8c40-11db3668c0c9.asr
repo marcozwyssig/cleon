@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="9f2fd672-09af-11e9-8c40-11db3668c0c9">
+  <owns predicate="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <resource statement-guid="a1022604-09af-11e9-8c40-11db3668c0c9" type="resource" guid="a101b0cf-09af-11e9-8c40-11db3668c0c9">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="a6b1af3e-09af-11e9-8c40-11db3668c0c9" type="resource" guid="a6b112fa-09af-11e9-8c40-11db3668c0c9">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="ad773c87-09af-11e9-8c40-11db3668c0c9" type="resource" guid="ad76c754-09af-11e9-8c40-11db3668c0c9" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9f2ffd84-09af-11e9-8c40-11db3668c0c9" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9f304ba5-09af-11e9-8c40-11db3668c0c9" type="literal">FunctionSpace_Image</object>
+  </predicate>
+  <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <object statement-guid="a1022604-09af-11e9-8c40-11db3668c0c9">
+      <resource guid="a101b0cf-09af-11e9-8c40-11db3668c0c9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a101d7e1-09af-11e9-8c40-11db3668c0c9" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="a6b1af3e-09af-11e9-8c40-11db3668c0c9">
+            <resource guid="a6b112fa-09af-11e9-8c40-11db3668c0c9">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a6b112fc-09af-11e9-8c40-11db3668c0c9" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a743b5e7-09af-11e9-8c40-11db3668c0c9" type="literal">hex</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="ad773c87-09af-11e9-8c40-11db3668c0c9">
+                  <resource guid="ad76c754-09af-11e9-8c40-11db3668c0c9">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="ad76ee66-09af-11e9-8c40-11db3668c0c9" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="ae5c934e-09af-11e9-8c40-11db3668c0c9" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="a6b1611d-09af-11e9-8c40-11db3668c0c9" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="b4c3d3ea-09af-11e9-8c40-11db3668c0c9" type="literal">return String.format("#%02x%02x%02x", color.selectRed(), color.selectGreen(), color.selectBlue());</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="a1cc7af5-09af-11e9-8c40-11db3668c0c9" type="resource" guid="18b0055b-ad93-11de-8a95-a3426dd7e181" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

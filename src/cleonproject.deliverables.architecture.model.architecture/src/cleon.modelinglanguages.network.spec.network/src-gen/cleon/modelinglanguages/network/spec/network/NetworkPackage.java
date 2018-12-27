@@ -17,6 +17,11 @@ public class NetworkPackage {
   public static final Resource AbstractNetwork_networkNodes = new Resource("e18daff1-0930-11e9-8c40-11db3668c0c9");
   public static final Resource NamedNetworkNode = new Resource("f896998a-0930-11e9-8c40-11db3668c0c9");
   public static final Resource NamedNetwork_networkNodes = new Resource("0ade9f65-0931-11e9-8c40-11db3668c0c9");
+  public static final Resource GroupAware = new Resource("b20f56ff-09ae-11e9-8c40-11db3668c0c9");
+  public static final Resource Group = new Resource("b8a9dce5-09ae-11e9-8c40-11db3668c0c9");
+  public static final Resource GroupAware_groups = new Resource("c7d8bbf5-09ae-11e9-8c40-11db3668c0c9");
+  public static final Resource Group_nodes = new Resource("f02f4565-09ae-11e9-8c40-11db3668c0c9");
+  public static final Resource Group_color = new Resource("42c675d8-09af-11e9-8c40-11db3668c0c9");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +42,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,O185dl9Y4jQNilc5YUp6EtR6C2M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,DVh847zxXFkKaSMsOfePG/ub/7w=] */

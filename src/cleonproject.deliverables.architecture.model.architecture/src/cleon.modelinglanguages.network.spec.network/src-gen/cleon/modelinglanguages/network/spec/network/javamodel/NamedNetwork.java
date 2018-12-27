@@ -42,6 +42,16 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   // relations
   
   @Override
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectGroups() {
+    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups);
+  }
+
+  public NamedNetwork setGroups(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> groups) {
+    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, groups);
+    return this;
+  }
+    
+  @Override
   public cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask selectIPv4_Mask() {
     return _getSingle(cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Mask_aE_Aware_iPv4_aE_Mask);
   }
@@ -77,6 +87,7 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Mask_aE_Aware_iPv4_aE_Mask, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetwork_networkNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -89,4 +100,4 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,5Kj/SOHXHVdFEKv6gg/GjS9EIpA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,GImzGHZPblF5qHlPpViBTsGfTSI=] */

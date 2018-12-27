@@ -1,0 +1,19 @@
+nwdiag {
+
+	network dmz {
+
+  		address = "192.168.10.0/24";
+
+  		web01 [address = "192.168.1.1"];
+  	}
+	network intern {
+		group web {
+			web01;
+		}  
+
+  		address = "192.168.20.1/24";
+
+  		db01 [address = "192.168.20.2","192.168.20.3"];
+  	}
+}
+// Actifsource ID=[2c37086e-054f-11e9-b814-a133e521728c,661599de-09ab-11e9-8c40-11db3668c0c9,MTXM03TdBrglJhF0YwTqZqPN7aA=]

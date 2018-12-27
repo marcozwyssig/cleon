@@ -43,10 +43,11 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 			INode imageNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_font, this.getBuildTaskNode());
 			String imagePath = LiteralUtil.getStringValue(imageNode);
 			
-			
 			_commands.add(binPath);
-			_commands.add("-f ".concat(fontPath));
-			_commands.add("-T ".concat(imagePath));
+			_commands.add("-f");
+			_commands.add(fontPath);
+			_commands.add("-T");
+			_commands.add(imagePath);
 		}
 	
 		IAsFolder targetFolder = targetInfo.getOutputScope().getFolder(targetInfo.getOutputPath());

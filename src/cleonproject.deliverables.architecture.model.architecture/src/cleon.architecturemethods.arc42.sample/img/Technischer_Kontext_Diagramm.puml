@@ -1,14 +1,10 @@
 @startuml
 skinparam monochrome true
 skinparam componentStyle uml2
-component Chess as "Chess"
-interface Chess_aE_1__F_Port as "Chess_1 Port"
-Chess -up Chess_aE_1__F_Port 
-Chess --> FTP_aE_1__F_Port : "FTP_1"
-Chess --> FTP_aE_1__F_Port : "FTP_1"
-component FTP as "FTP"
-interface FTP_aE_1__F_Port as "FTP_1 Port"
-FTP -up FTP_aE_1__F_Port 
-FTP --> Chess_aE_1__F_Port : "FTP_2"
+component Chess as "Chess" <<SoftwareSystem>>
+component FTP as "FTP" <<ExternalSystem>>
+Chess --> FTP : "FTP_1"
+Chess --> FTP : "FTP_2"
+FTP --> Chess : "Chess_1"
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,35964cc6-fa45-11e8-af47-e5bdd8100025,Hash]

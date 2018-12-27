@@ -63,7 +63,7 @@ skinparam monochrome true
 skinparam componentStyle uml2
 actor Player__F_A as "Player A"
 actor Player__F_B as "Player B"
-component Chess as "Chess"
+component Chess as "Chess" <<SoftwareSystem>>
 Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
 Player__F_A -down-> Chess : interaces
@@ -100,15 +100,11 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-component Chess as "Chess"
-interface Chess_aE_1__F_Port as "Chess_1 Port"
-Chess -up Chess_aE_1__F_Port 
-Chess --> FTP_aE_1__F_Port : "FTP_1"
-Chess --> FTP_aE_1__F_Port : "FTP_1"
-component FTP as "FTP"
-interface FTP_aE_1__F_Port as "FTP_1 Port"
-FTP -up FTP_aE_1__F_Port 
-FTP --> Chess_aE_1__F_Port : "FTP_2"
+component Chess as "Chess" <<SoftwareSystem>>
+component FTP as "FTP" <<ExternalSystem>>
+Chess --> FTP : "FTP_1"
+Chess --> FTP : "FTP_2"
+FTP --> Chess : "Chess_1"
 ...
 
 In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 

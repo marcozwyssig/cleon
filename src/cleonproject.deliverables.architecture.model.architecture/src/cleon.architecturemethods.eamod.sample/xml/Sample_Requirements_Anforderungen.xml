@@ -5,10 +5,10 @@
 	
 	<db:chapter >
 		<db:title>Einleitung</db:title>
-		
-		
-		
 		<db:para>Das vorliegende Dokument wird über die Projektmeilensteine hinweg gepflegt. Es beinhaltet alle verwendeten Quellen, die Treiber, die Ziele, die Prinzipien, die Stakeholder und die Anforderungen.</db:para>
+		
+		
+		
 		<db:section >
 			<db:title>Leserkreis</db:title>
 			
@@ -27,126 +27,127 @@
 			
 			
 		</db:section>
-		<db:section>
-			<db:title>Methode RE-V</db:title> 
-		    	<db:para>Die Anforderungen werden nach der Methode RE-V <db:emphasis role="italic">(Requirements
-		            Engineering im Bereich Verteidigung)</db:emphasis> erhoben, strukturiert und gepflegt. Die Methode ist im Referenzhandbuch EA-Mod in der Hauptsicht 'CHRV' normativ festgelegt.</db:para>
+		<db:section >
+			<db:title>Methode / Vorgehensweise</db:title>
+			
+			
+			
+			<db:para>Die Anforderungen werden nach der Methode RE-V <db:emphasis role="italic">(Requirements
+			    Engineering im Bereich Verteidigung)</db:emphasis> erhoben, strukturiert und gepflegt. Die Methode ist im Referenzhandbuch EA-Mod in der Hauptsicht 'CHRV' normativ festgelegt.</db:para>
 			<db:para>Nach RE-V werden Anforderungen modellbasiert in einem Anforderungsbaum verwaltet. Die
-		        	Baumstruktur widerspiegelt dabei die Abstraktionsebenen der einzelnen Anforderungen. </db:para>
-		    	<db:para>In dieser Baumstruktur sind die nachfolgenden Elementtypen zu finden:</db:para>
-		    <db:para>
-		        <db:informaltable style="EAMod Requirement">
-		            <db:col width="35%" />
-		            <db:col width="65%" />
-		            <db:thead>
-		                <db:tr>
-		                    <db:th>Elementtyp</db:th>
-		                    <db:th>Beschreibung</db:th>
-		                </db:tr>
-		            </db:thead>
-		            <db:tbody>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>SubjectArea</db:para>
-		                        <db:para>(Betrachtungsraum)</db:para>
-		                    </db:td>
-		                    <db:td>Ein Betrachtungsraum ist ein Gefäss für eine Menge von Anforderungen, die
-		                        unter einem selbständigen Blickwinkel betrachtet werden, z.B. aus der Sicht
-		                        eines Teilprojekts, einer Gruppe von Stakeholdern oder eines
-		                        querschnittlichen Aspekts. Ein Betrachtungsraum kann in weitere
-		                        Betrachtungsräume dekomponiert werden. </db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>Requirement</db:para>
-		                        <db:para>(Anforderung)</db:para>
-		                    </db:td>
-		                    <db:td>Der Elementtyp Requirement wird für generische bzw. noch nicht näher
-		                        typisierte Anforderungen verwendet.</db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>Functional Requirement</db:para>
-		                        <db:para>(Funktionale Anforderung)</db:para>
-		                    </db:td>
-		                    <db:td>Funktionale Anforderungen beschreiben den fachlichen Nutzen, der vom zu
-		                        liefernden System erwartet wird. Eine funktionale Anforderung ist eine
-		                        Anforderung bezüglich des Ergebnisses eines Verhaltens, das von einer
-		                        Funktion des Systems bereitgestellt werden soll.</db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>QualityRequirement</db:para>
-		                        <db:para>(Qualitätsanforderung)</db:para>
-		                    </db:td>
-		                    <db:td>Qualitätsanforderungen beschreiben Erwartungen an qualitative Aspekte, die das zu liefernde System zu erfüllen hat.</db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>SecurityRequirement</db:para>
-		                        <db:para>(Sicherheitsanforderung)</db:para>
-		                    </db:td>
-		                    <db:td>Sicherheitsanforderungen sind ein Spezialfall von Qualitätsanforderungen.
-		                        Sie beschreiben die Erwartungen an Aspekte der Informations- und
-		                        Datensicherheit, die das zu liefernde System zu erfüllen hat.</db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>ConstraintRequirement</db:para>
-		                        <db:para>(Rahmenbedingung)</db:para>
-		                    </db:td>
-		                    <db:td>Eine Randbedingung ist eine Anforderung, die den Lösungsraum jenseits dessen
-		                        einschränkt, was notwendig ist, um die funktionalen Anforderungen und die
-		                        Qualitätsanforderungen zu erfüllen. Randbedingungen sind regulatorische,
-		                        organisatorische oder technische Einschränkungen, die bei der Lösungsfindung
-		                        zu berücksichtigen sind. Sie können von den Projektbeteiligten nicht
-		                        beeinflusst werden.</db:td>
-		                </db:tr>
-		                <db:tr>
-		                    <db:td>
-		                        <db:para>TechnologyRequirement</db:para>
-		                        <db:para>(Rahmenbedingung)</db:para>
-		                    </db:td>
-		                    <db:td>Ein Technologie Requirement ist eine Spezialisierung einer ConstraintsRequirements und legt den Einsatz einer spezifischen Technologie fest.</db:td>
-		                </db:tr>                
-		            </db:tbody>
-		        </db:informaltable>
-		        </db:para>            
+				Baumstruktur widerspiegelt dabei die Abstraktionsebenen der einzelnen Anforderungen. </db:para>
+			<db:para>In dieser Baumstruktur sind die nachfolgenden Elementtypen zu finden:</db:para>
+			<db:informaltable style="EAMod Requirement">
+			    <db:col width="35%" />
+			    <db:col width="65%" />
+			    <db:thead>
+			        <db:tr>
+			            <db:th>Elementtyp</db:th>
+			            <db:th>Beschreibung</db:th>
+			        </db:tr>
+			    </db:thead>
+			    <db:tbody>
+			        <db:tr>
+			            <db:td>
+			                <db:para>SubjectArea</db:para>
+			                <db:para>(Betrachtungsraum)</db:para>
+			            </db:td>
+			            <db:td>Ein Betrachtungsraum ist ein Gefäss für eine Menge von Anforderungen, die
+			                unter einem selbständigen Blickwinkel betrachtet werden, z.B. aus der Sicht
+			                eines Teilprojekts, einer Gruppe von Stakeholdern oder eines
+			                querschnittlichen Aspekts. Ein Betrachtungsraum kann in weitere
+			                Betrachtungsräume dekomponiert werden. </db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>Requirement</db:para>
+			                <db:para>(Anforderung)</db:para>
+			            </db:td>
+			            <db:td>Der Elementtyp Requirement wird für generische bzw. noch nicht näher
+			                typisierte Anforderungen verwendet.</db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>Functional Requirement</db:para>
+			                <db:para>(Funktionale Anforderung)</db:para>
+			            </db:td>
+			            <db:td>Funktionale Anforderungen beschreiben den fachlichen Nutzen, der vom zu
+			                liefernden System erwartet wird. Eine funktionale Anforderung ist eine
+			                Anforderung bezüglich des Ergebnisses eines Verhaltens, das von einer
+			                Funktion des Systems bereitgestellt werden soll.</db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>QualityRequirement</db:para>
+			                <db:para>(Qualitätsanforderung)</db:para>
+			            </db:td>
+			            <db:td>Qualitätsanforderungen beschreiben Erwartungen an qualitative Aspekte, die das zu liefernde System zu erfüllen hat.</db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>SecurityRequirement</db:para>
+			                <db:para>(Sicherheitsanforderung)</db:para>
+			            </db:td>
+			            <db:td>Sicherheitsanforderungen sind ein Spezialfall von Qualitätsanforderungen.
+			                Sie beschreiben die Erwartungen an Aspekte der Informations- und
+			                Datensicherheit, die das zu liefernde System zu erfüllen hat.</db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>ConstraintRequirement</db:para>
+			                <db:para>(Rahmenbedingung)</db:para>
+			            </db:td>
+			            <db:td>Eine Randbedingung ist eine Anforderung, die den Lösungsraum jenseits dessen
+			                einschränkt, was notwendig ist, um die funktionalen Anforderungen und die
+			                Qualitätsanforderungen zu erfüllen. Randbedingungen sind regulatorische,
+			                organisatorische oder technische Einschränkungen, die bei der Lösungsfindung
+			                zu berücksichtigen sind. Sie können von den Projektbeteiligten nicht
+			                beeinflusst werden.</db:td>
+			        </db:tr>
+			        <db:tr>
+			            <db:td>
+			                <db:para>TechnologyRequirement</db:para>
+			                <db:para>(Rahmenbedingung)</db:para>
+			            </db:td>
+			            <db:td>Ein Technologie Requirement ist eine Spezialisierung einer ConstraintsRequirements und legt den Einsatz einer spezifischen Technologie fest.</db:td>
+			        </db:tr>                
+			    </db:tbody>
+			</db:informaltable>
 			<db:section>
-			    <db:title>Anforderungen</db:title>
-			    <db:para>Das Kapitel "Anforderungen" dient als Inhaltsverzeichnis der
-			        Anforderungen, wobei pro Betrachtungsraum ein Unterkapitel erstellt wird. Darin sind ID
-			        und Name aller Anforderung sowie Kapitel und Seitenzahl der detaillierten
-			        Anforderungstabelle ausgewiesen. Die nachfolgende Tabelle zeigt das Beispiel einer
-			        solchen Tabelle.</db:para>
-			    <db:informaltable style="EAMod Requirement">
-			        <db:col width="20%" />
-			        <db:col width="54%" />
-			        <db:col width="14%" />
-			        <db:col width="12%" />
-			        <db:thead>
-			            <db:tr>
-			                <db:th>ID</db:th>
-			                <db:th>Name</db:th>
-			                <db:th>Kapitel</db:th>
-			                <db:th>Seite</db:th>
-			            </db:tr>
-			        </db:thead>
-			        <db:tbody>
-			            <db:tr>
-			                <db:td>REV-R-001</db:td>
-			                <db:td>
-			                    <db:para>Verfügbarkeit</db:para>
-			                </db:td>
-			                <db:td>
-			                    <db:para>2.1.1</db:para>
-			                </db:td>
-			                <db:td>
-			                    <db:para> 5</db:para>
-			                </db:td>
-			            </db:tr>
-			        </db:tbody>
-			    </db:informaltable>
+			<db:title>Anforderungen</db:title>
+			<db:para>Das Kapitel "Anforderungen" dient als Inhaltsverzeichnis der
+			    Anforderungen, wobei pro Betrachtungsraum ein Unterkapitel erstellt wird. Darin sind ID
+			    und Name aller Anforderung sowie Kapitel und Seitenzahl der detaillierten
+			    Anforderungstabelle ausgewiesen. Die nachfolgende Tabelle zeigt das Beispiel einer
+			    solchen Tabelle.</db:para>
+			<db:informaltable style="EAMod Requirement">
+			    <db:col width="20%" />
+			    <db:col width="54%" />
+			    <db:col width="14%" />
+			    <db:col width="12%" />
+			    <db:thead>
+			        <db:tr>
+			            <db:th>ID</db:th>
+			            <db:th>Name</db:th>
+			            <db:th>Kapitel</db:th>
+			            <db:th>Seite</db:th>
+			        </db:tr>
+			    </db:thead>
+			    <db:tbody>
+			        <db:tr>
+			            <db:td>REV-R-001</db:td>
+			            <db:td>
+			                <db:para>Verfügbarkeit</db:para>
+			            </db:td>
+			            <db:td>
+			                <db:para>2.1.1</db:para>
+			            </db:td>
+			            <db:td>
+			                <db:para> 5</db:para>
+			            </db:td>
+			        </db:tr>
+			    </db:tbody>
+			</db:informaltable>
 			</db:section>
 			<db:section>
 			    <db:title>Detaillierte Anforderungen</db:title>
@@ -189,7 +190,8 @@
 			    <db:para><db:emphasis role="bold">Legende:</db:emphasis>
 			        <db:emphasis role="italic">(1)</db:emphasis> Abstraktionsebene (<db:emphasis role="underline">CAP</db:emphasis>ability, <db:emphasis role="underline">FEA</db:emphasis>ture, <db:emphasis role="underline">FUN</db:emphasis>ction, <db:emphasis role="underline">COM</db:emphasis>ponent) <db:emphasis role="italic">(2)</db:emphasis> ID <db:emphasis role="italic">(3)</db:emphasis> Name <db:emphasis role="italic">(4)</db:emphasis> Status <db:emphasis role="italic">(5)</db:emphasis> Attribute <db:emphasis role="italic">(6)</db:emphasis> Wert
 			        der Attribute</db:para>  
-		    </db:section>
+			</db:section>
+			
 		</db:section>
 	</db:chapter>
 	<db:chapter >

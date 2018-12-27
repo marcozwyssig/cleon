@@ -78,11 +78,11 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout select__V_0_aE_about() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about);
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout select__V_0_aE_about() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about);
   }
 
-  public NamedItArc42 set__V_0_aE_about(cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout __V_0_aE_about) {
+  public NamedItArc42 set__V_0_aE_about(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout __V_0_aE_about) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about, __V_0_aE_about);
     return this;
   }
@@ -297,7 +297,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IArchitecture_Constraints.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
@@ -321,4 +321,4 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,TMClDdIITZFOHaKAfoDrab0yvjo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,gf3JPkhf67bi4/SuwQns9ecPfSk=] */

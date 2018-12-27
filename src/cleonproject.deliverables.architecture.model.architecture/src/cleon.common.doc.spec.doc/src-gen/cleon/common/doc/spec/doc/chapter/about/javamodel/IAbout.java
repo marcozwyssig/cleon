@@ -20,8 +20,10 @@ public interface IAbout extends cleon.common.doc.spec.doc.chapter.javamodel.IAbs
   
   public cleon.common.doc.spec.doc.chapter.about.javamodel.ILayout selectLayout();
   
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod selectMethod();
+  
   public cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences selectReferences();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,PxdMHlz1B7NO37j+P+Awp9a57Ss=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,bbtyuqVQlPTvQZBa4c3iyaIkCOI=] */

@@ -464,13 +464,7 @@ public class FunctionSpace_DocBook_CHRV {
   public static interface IAboutFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7a49167a-e8f2-11e8-b810-cdb2b421fd42")
-    public java.lang.String RenderContentElement();
-
-    @IDynamicResourceExtension.MethodId("97a06109-e8f2-11e8-b810-cdb2b421fd42")
-    public java.lang.String RenderChapters();
-
-    @IDynamicResourceExtension.MethodId("ad99d68b-e8f2-11e8-b810-cdb2b421fd42")
-    public java.lang.String RenderMethod();
+    public java.lang.String RenderStandardDescription();
 
   }
   
@@ -492,6 +486,31 @@ public class FunctionSpace_DocBook_CHRV {
 
   }
 
+  public static interface IMethodFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("29a04aac-09b2-11e9-8c40-11db3668c0c9")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MethodFunctionsImpl implements IMethodFunctionsImpl {
+
+    public static final IMethodFunctionsImpl INSTANCE = new MethodFunctionsImpl();
+
+    private MethodFunctionsImpl() {}
+
+  }
+  
+  public static class MethodFunctions {
+
+    private MethodFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,Dw7QqKimdOR4Jw3WWE+XdjoztSU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,YijGcSBWSvo/8eIozFLucajsDE0=] */

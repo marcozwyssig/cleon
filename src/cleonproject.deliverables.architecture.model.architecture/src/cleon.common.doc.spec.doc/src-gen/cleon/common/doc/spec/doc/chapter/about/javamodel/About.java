@@ -111,6 +111,16 @@ public class About extends DynamicResource implements IAbout {
   }
     
   @Override
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod selectMethod() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_method);
+  }
+
+  public About setMethod(cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod method) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_method, method);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -173,6 +183,7 @@ public class About extends DynamicResource implements IAbout {
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IDistinction.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_distinction, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ILayout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_layout, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_method, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IPurpose.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_purpose, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_references, visitor);
@@ -206,9 +217,13 @@ public class About extends DynamicResource implements IAbout {
     return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_layout, object.getResource());
   }
   
+  public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeMethod(cleon.common.doc.spec.doc.chapter.about.javamodel.IMethod object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_method, object.getResource());
+  }
+  
   public static cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectToMeReferences(cleon.common.doc.spec.doc.chapter.references.javamodel.IReferences object) {
     return _getToMeSingle(object.getRepository(), cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_references, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,j/b52aAzU/lBRE+6pAkb8BqXNSc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7dee7074-077f-11e9-812a-c3c7ef540adf,4D+JKf4hUmAoYY1acVkISqsJOj4=] */

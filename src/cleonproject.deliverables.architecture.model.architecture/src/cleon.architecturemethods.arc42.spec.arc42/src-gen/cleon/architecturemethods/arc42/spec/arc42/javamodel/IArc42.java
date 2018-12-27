@@ -8,7 +8,7 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
   // relations
   
-  public cleon.architecturemethods.arc42.spec.arc42._00_about.javamodel.IAbout select__V_0_aE_about();
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout select__V_0_aE_about();
   
   public cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals select__V_1_aE_introduction_aE_and_aE_goals();
   
@@ -36,4 +36,4 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,HF8E+ISJW9NorFEzXRT8KdA9KhQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,fGJL5lETLc2uc5x6v/0AwLwjezM=] */

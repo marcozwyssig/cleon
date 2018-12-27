@@ -14,7 +14,11 @@
       <owns predicate="4ac67c8e-b87e-11e5-a463-ff45aa361315">
         <resource statement-guid="fbe20924-beb6-11e8-87b7-7985306cbf26" type="resource" guid="bd8e8ef3-240d-11e6-9e31-c3254ea09672">
           <owns predicate="c1a1d31a-b884-11e5-a463-ff45aa361315">
-            <resource statement-guid="ca5dfa9e-240d-11e6-9e31-c3254ea09672" type="resource" guid="ca5d5e5b-240d-11e6-9e31-c3254ea09672" />
+            <resource statement-guid="ca5dfa9e-240d-11e6-9e31-c3254ea09672" type="resource" guid="ca5d5e5b-240d-11e6-9e31-c3254ea09672">
+              <owns predicate="c1a1d31a-b884-11e5-a463-ff45aa361315">
+                <resource statement-guid="21623412-09c2-11e9-a4e1-8978b705641c" type="resource" guid="21620cff-09c2-11e9-a4e1-8978b705641c" />
+              </owns>
+            </resource>
             <resource statement-guid="d5cac807-240d-11e6-9e31-c3254ea09672" type="resource" guid="d5ca52d4-240d-11e6-9e31-c3254ea09672" />
             <resource statement-guid="d72c7aec-240d-11e6-9e31-c3254ea09672" type="resource" guid="d72c53d9-240d-11e6-9e31-c3254ea09672" />
           </owns>
@@ -84,6 +88,18 @@
                     </predicate>
                     <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                       <object statement-guid="cad48a2f-240d-11e6-9e31-c3254ea09672" type="literal">components</object>
+                    </predicate>
+                    <predicate guid="c1a1d31a-b884-11e5-a463-ff45aa361315">
+                      <object statement-guid="21623412-09c2-11e9-a4e1-8978b705641c">
+                        <resource guid="21620cff-09c2-11e9-a4e1-8978b705641c">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="21623411-09c2-11e9-a4e1-8978b705641c" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                          </predicate>
+                          <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="21cda013-09c2-11e9-a4e1-8978b705641c" type="literal">port</object>
+                          </predicate>
+                        </resource>
+                      </object>
                     </predicate>
                   </resource>
                 </object>

@@ -70,7 +70,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		
 		IDependency dependency = resourceRepository.getResource(IDependency.class, context.getResource());
-		if( dependency.selectAllowRecursiveDependency())
+		if( dependency.selectAllowRecursiveDependency() != null && dependency.selectAllowRecursiveDependency().booleanValue())
 		{
 			return;
 		}

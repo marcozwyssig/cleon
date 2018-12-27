@@ -2,6 +2,12 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
+         point="ch.actifsource.generator.BuildTaskFactory">
+      <BuildTaskFactory
+            class="cleon.modelinglanguages.network.template.nwdiag.NwdiagBuildTaskFactory">
+      </BuildTaskFactory>
+   </extension>
+   <extension
          point="ch.actifsource.core.RegisterModel">
       <ResourceFolder
             path="asrc">
@@ -19,4 +25,4 @@
       </Builtin>
    </extension>
 </plugin>
-<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,125c37fe-051b-11e9-b129-6590cd6315e4,18610ca8-051b-11e9-b129-6590cd6315e4,SBLCwhREDi+R7vEeRPuEev4ixcE=] -->
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,125c37fe-051b-11e9-b129-6590cd6315e4,18610ca8-051b-11e9-b129-6590cd6315e4,EWyoBR8dMPDtle0BN33ZhoX1Q9Q=] -->

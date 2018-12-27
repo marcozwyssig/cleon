@@ -4,10 +4,10 @@ skinparam componentStyle uml2
 actor Player__F_A as "Player A"
 actor Player__F_B as "Player B"
 component Chess as "Chess"
-Chess -> Player_A : gets
-Player__F_A -> Chess : interacts
-Player__F_A -> Chess : interaces
-Player__F_B -> Chess : interacts
-Player__F_B -> Chess : interaces
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_A -down-> Chess : interaces
+Player__F_B -down-> Chess : interacts
+Player__F_B -down-> Chess : interaces
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,73695871-fa3e-11e8-af47-e5bdd8100025,Hash]

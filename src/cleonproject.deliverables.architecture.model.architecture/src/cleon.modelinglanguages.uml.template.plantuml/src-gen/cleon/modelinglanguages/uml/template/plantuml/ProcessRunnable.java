@@ -32,6 +32,9 @@ public class ProcessRunnable implements Runnable {
 				{
 					terminate();
 				}
+				try {
+					Thread.sleep(30L);
+				} catch (InterruptedException localInterruptedException) {}
 			}
 			drainErrorStream(process);			
 		} catch (IOException e) {

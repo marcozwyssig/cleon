@@ -483,6 +483,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IProductAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("68ac1faa-0a76-11e9-9915-0d353533f3da")
+    public java.lang.String RenderProduct();
+
+  }
+  
+  public static interface IProductAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProductAwareFunctionsImpl implements IProductAwareFunctionsImpl {
+
+    public static final IProductAwareFunctionsImpl INSTANCE = new ProductAwareFunctionsImpl();
+
+    private ProductAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ProductAwareFunctions {
+
+    private ProductAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Uo0abEq9iAB18mtLf0y9jcwxJVA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,5RmunBTByXRME7f47R/deSIZnes=] */

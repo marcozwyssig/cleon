@@ -12,7 +12,6 @@ public class _05_buildingblockPackage {
   public static final Resource SystemComponentDecomposite_intoSystemComponent = new Resource("0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0");
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemComponent = new Resource("c0436bff-d0b2-11e8-b005-f7630e4c29c0");
-  public static final Resource SystemConfiguration_product = new Resource("0b193aba-d0b9-11e8-b005-f7630e4c29c0");
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemConfigurationDecomposite = new Resource("c90907aa-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemConfigurationDecomposite_intoSytemConfiguration = new Resource("c90907ab-e0fd-11e8-8499-a3b0fb3cad90");
@@ -51,4 +50,4 @@ public class _05_buildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,y9mqgxWZLToxCJ8zBkoOGKGs/w0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,w+XkKqSzxVkYfh83AUZ70T3mRjw=] */

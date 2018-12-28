@@ -5,7 +5,7 @@ import java.io.IOException;
 import ch.actifsource.generator.console.IGeneratorConsole;
 import ch.actifsource.util.ICancelStatus;
 
-public class ErrorStreamReader implements Runnable {
+public class ProcessRunnable implements Runnable {
 	private final ProcessBuilder fProcess;
 	private byte[] fBuf;
 	private volatile boolean fTerminate = false;
@@ -13,7 +13,7 @@ public class ErrorStreamReader implements Runnable {
 	private final IGeneratorConsole fConsole;
 	private final ICancelStatus fCancelStatus;
 
-	public ErrorStreamReader(ProcessBuilder pb, IGeneratorConsole console, ICancelStatus cancelStatus) {
+	public ProcessRunnable(ProcessBuilder pb, IGeneratorConsole console, ICancelStatus cancelStatus) {
 		fProcess = pb;
 		fBuf = new byte[0];
 		fConsole = console;
@@ -28,17 +28,15 @@ public class ErrorStreamReader implements Runnable {
 					interruptProcess(process);
 				}
 				drainErrorStream(process);
-				try {
-					Thread.sleep(10L);
-				} catch (InterruptedException localInterruptedException) {
+				if( !process.isAlive())
+				{
+					terminate();
 				}
 			}
 			drainErrorStream(process);			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-
 	}
 
 	private void drainErrorStream(Process process) {

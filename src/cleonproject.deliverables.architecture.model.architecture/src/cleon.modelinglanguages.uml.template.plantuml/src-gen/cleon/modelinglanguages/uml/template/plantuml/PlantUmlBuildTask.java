@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 import ch.actifsource.generator.AbstractBuildTaskSingleThread;
 import ch.actifsource.generator.console.IGeneratorConsole;
@@ -77,7 +78,7 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 				File adapter = folder.getAdapter(File.class);
 				pb = pb.directory(adapter);
 
-				ErrorStreamReader interruptOnCancel = new ErrorStreamReader(pb, console(), getCancelStatus());
+				ProcessRunnable interruptOnCancel = new ProcessRunnable(pb, console(), getCancelStatus());
 				_executer.submit(interruptOnCancel);
 			}
 		}

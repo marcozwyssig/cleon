@@ -1,15 +1,12 @@
 package cleon.modelinglanguages.uml.template.plantuml;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-import ch.actifsource.core.job.Select;
 import ch.actifsource.generator.AbstractBuildTaskSingleThread;
 import ch.actifsource.generator.console.IGeneratorConsole;
 import ch.actifsource.generator.target.ISingleThreadBuildTargetInfo;
@@ -18,11 +15,12 @@ import ch.actifsource.util.file.IAsFile;
 import ch.actifsource.util.file.IAsFolder;
 
 public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
+	private static final ExecutorService _executer = Executors.newFixedThreadPool(4);
+	
 	private final List<String> _commands = new ArrayList<String>();
-	private boolean fAdaptSize;
 	@javax.annotation.CheckForNull
-	private String fStylesheet;
 
+	
 	public PlantUmlBuildTask(ch.actifsource.core.INode buildTask, ICancelStatus status) {
 		super(buildTask, status);
 		
@@ -79,28 +77,8 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 				File adapter = folder.getAdapter(File.class);
 				pb = pb.directory(adapter);
 
-				Process process = pb.start();
-				ErrorStreamReader interruptOnCancel = new ErrorStreamReader(process, console(), getCancelStatus());
-				Thread thread = new Thread(interruptOnCancel);
-				thread.start();
-				try {
-					if (isCanceled())
-						return;
-				} finally {
-					interruptOnCancel.terminate();
-					try {
-						thread.join();
-					}
-					catch (InterruptedException localInterruptedException1) {
-					
-					}
-				}
-				interruptOnCancel.terminate();
-				try {
-					thread.join();
-				} 
-				catch (InterruptedException localInterruptedException2) {
-				}
+				ErrorStreamReader interruptOnCancel = new ErrorStreamReader(pb.start(), console(), getCancelStatus());
+				_executer.submit(interruptOnCancel);
 			}
 		}
 

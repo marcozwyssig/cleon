@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.architecturemethods.arc42.spec.arc42</name>
-	<comment></comment>
+	<comment/>
 	<projects>
 		<project>cleon.architecturemethods.eamod.spec.eamod</project>
 		<project>cleon.modelinglanguages.uml.spec.uml2</project>
@@ -16,12 +16,12 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
+			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>ch.actifsource.environment.builder</name>
+			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
@@ -30,4 +30,10 @@
 		<nature>ch.actifsource.environment.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,aa308523-ffb4-11e4-ac0a-959b440f987f,2pWcs8oyaT1bSTAUo37D673aJzU=] -->

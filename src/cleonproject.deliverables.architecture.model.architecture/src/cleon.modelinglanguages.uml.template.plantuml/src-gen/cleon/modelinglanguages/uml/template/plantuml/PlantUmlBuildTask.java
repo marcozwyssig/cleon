@@ -77,7 +77,7 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 				File adapter = folder.getAdapter(File.class);
 				pb = pb.directory(adapter);
 
-				ErrorStreamReader interruptOnCancel = new ErrorStreamReader(pb.start(), console(), getCancelStatus());
+				ErrorStreamReader interruptOnCancel = new ErrorStreamReader(pb, console(), getCancelStatus());
 				_executer.submit(interruptOnCancel);
 			}
 		}

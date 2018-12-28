@@ -6,40 +6,47 @@ import ch.actifsource.generator.console.IGeneratorConsole;
 import ch.actifsource.util.ICancelStatus;
 
 public class ErrorStreamReader implements Runnable {
-	private final Process fProcess;
+	private final ProcessBuilder fProcess;
 	private byte[] fBuf;
 	private volatile boolean fTerminate = false;
 
 	private final IGeneratorConsole fConsole;
 	private final ICancelStatus fCancelStatus;
 
-	public ErrorStreamReader(Process process, IGeneratorConsole console, ICancelStatus cancelStatus) {
-		fProcess = process;
+	public ErrorStreamReader(ProcessBuilder pb, IGeneratorConsole console, ICancelStatus cancelStatus) {
+		fProcess = pb;
 		fBuf = new byte[0];
 		fConsole = console;
 		fCancelStatus = cancelStatus;
 	}
 
 	public void run() {
-		while (!fTerminate) {
-			if (fCancelStatus.isCanceled()) {
-				interruptProcess();
+		try {
+			Process process = fProcess.start();
+			while (!fTerminate) {
+				if (fCancelStatus.isCanceled()) {
+					interruptProcess(process);
+				}
+				drainErrorStream(process);
+				try {
+					Thread.sleep(10L);
+				} catch (InterruptedException localInterruptedException) {
+				}
 			}
-			drainErrorStream();
-			try {
-				Thread.sleep(10L);
-			} catch (InterruptedException localInterruptedException) {
-			}
+			drainErrorStream(process);			
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		drainErrorStream();
+		
+
 	}
 
-	private void drainErrorStream() {
+	private void drainErrorStream(Process process) {
 		try {
 			int available;
-			while ((available = fProcess.getErrorStream().available()) > 0) {
+			while ((available = process.getErrorStream().available()) > 0) {
 				byte[] buf = getBuf(available);
-				int size = fProcess.getErrorStream().read(buf, 0, available);
+				int size = process.getErrorStream().read(buf, 0, available);
 				fConsole.warning().print(new String(buf, 0, size));
 			}
 		} catch (IOException localIOException) {
@@ -57,7 +64,7 @@ public class ErrorStreamReader implements Runnable {
 		fTerminate = true;
 	}
 
-	private void interruptProcess() {
-		fProcess.destroy();
+	private void interruptProcess(Process process) {
+		process.destroy();
 	}
 }

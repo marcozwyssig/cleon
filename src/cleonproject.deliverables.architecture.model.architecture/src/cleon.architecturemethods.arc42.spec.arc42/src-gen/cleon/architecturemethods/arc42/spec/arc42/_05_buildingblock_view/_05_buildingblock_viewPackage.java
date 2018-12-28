@@ -18,6 +18,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_level_aE_5 = new Resource("42dcc6e0-285b-11e8-9af4-b7d7a3bbddc1");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_BuildingBlock = new Resource("5c98f5cc-2b56-11e8-859c-c3075307fbcf");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_Level = new Resource("e116ad9e-d187-11e8-b18f-df1540bb7a5c");
+  public static final Resource Level_chapters = new Resource("f1210e22-0a99-11e9-9915-0d353533f3da");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +39,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,UMERBvmeIv0j97JgIpqZPXsInsY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,dU3ZL4iqoAQcezaP7BAI6U1mvN8=] */

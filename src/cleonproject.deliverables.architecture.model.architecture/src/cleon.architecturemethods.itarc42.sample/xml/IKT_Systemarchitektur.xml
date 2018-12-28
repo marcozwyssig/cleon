@@ -301,35 +301,37 @@
 				
 				
 				
-				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins IKT tabellarisch aufgelistet:</db:para>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins IKT tabellarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
 							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
+							<db:th>Zwecks/Verantwortung</db:th>
 						</db:tr>
 					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Plattform</db:para>
+								<db:para>Plattform &lt;SystemLayer&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Infrastruktur</db:para>
+								<db:para>Infrastruktur &lt;SystemLayer&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 					</db:tbody>
 				</db:informaltable>
-				<db:section>
-					<db:title>Plattform  &lt;SystemLayer&gt; (Blackbox)</db:title>
+				<db:section >
+					<db:title>Plattform &lt;SystemLayer&gt; (Blackbox)</db:title>
+					
+					
 					
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
@@ -354,9 +356,12 @@
 						</db:informaltable>	
 					</db:section>
 					
+					
 				</db:section>
-				<db:section>
-					<db:title>Infrastruktur  &lt;SystemLayer&gt; (Blackbox)</db:title>
+				<db:section >
+					<db:title>Infrastruktur &lt;SystemLayer&gt; (Blackbox)</db:title>
+					
+					
 					
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
@@ -381,8 +386,8 @@
 						</db:informaltable>	
 					</db:section>
 					
+					
 				</db:section>
-				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -392,35 +397,37 @@
 				
 				
 				
-				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Plattform tabellarisch aufgelistet:</db:para>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Plattform tabellarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
 							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
+							<db:th>Zwecks/Verantwortung</db:th>
 						</db:tr>
 					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016</db:para>
+								<db:para>Windows 2016 &lt;SystemComponent&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Linux</db:para>
+								<db:para>Linux &lt;SystemComponent&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 					</db:tbody>
 				</db:informaltable>
-				<db:section>
-					<db:title>Windows 2016  &lt;SystemComponent&gt; (Blackbox)</db:title>
+				<db:section >
+					<db:title>Windows 2016 &lt;SystemComponent&gt; (Blackbox)</db:title>
+					
+					
 					
 					
 					<db:section>
@@ -452,9 +459,12 @@
 							</db:tbody>
 						</db:informaltable>	
 					</db:section>
+					
 				</db:section>
-				<db:section>
-					<db:title>Linux  &lt;SystemComponent&gt; (Blackbox)</db:title>
+				<db:section >
+					<db:title>Linux &lt;SystemComponent&gt; (Blackbox)</db:title>
+					
+					
 					
 					<db:section>
 						<db:title>Abhängigkeiten</db:title>
@@ -500,8 +510,8 @@
 							</db:tbody>
 						</db:informaltable>	
 					</db:section>
+					
 				</db:section>
-				
 			</db:section>
 		</db:section>
 		<db:section>
@@ -511,35 +521,38 @@
 				
 				
 				
-				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Windows 2016 tabellarisch aufgelistet:</db:para>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Windows 2016 tabellarisch aufgelistet:</db:para>
 				<db:informaltable style="EAMod Requirement">
 					<db:col width="40%" />
 					<db:col width="70%" />
 					<db:thead>
 						<db:tr>
 							<db:th>Baustein</db:th>
-							<db:th>Beschreibung</db:th>
+							<db:th>Zwecks/Verantwortung</db:th>
 						</db:tr>
 					</db:thead>
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server Standard Virtual</db:para>
+								<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server 2016 BareMetal</db:para>
+								<db:para>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 					</db:tbody>
 				</db:informaltable>
-				<db:section>
-					<db:title>Windows Server Standard Virtual  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+				<db:section >
+					<db:title>Windows Server Standard Virtual &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					
+					
+					
 					
 					<db:section>
 						<db:title>Verwendete Produkte</db:title>
@@ -569,7 +582,6 @@
 							</db:tbody>
 						</db:informaltable>
 					</db:section>
-					
 					<db:section>
 						<db:title>Erfüllte Anforderungen</db:title>
 						<db:informaltable style="EAMod Requirement">
@@ -594,15 +606,18 @@
 							</db:tbody>
 						</db:informaltable>	
 					</db:section>
-				</db:section>
-				<db:section>
-					<db:title>Windows Server 2016 BareMetal  &lt;SystemConfiguration&gt; (Blackbox)</db:title>
-					
-					
-					
 					
 				</db:section>
-				
+				<db:section >
+					<db:title>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					
+					
+					
+					
+					
+					
+					
+				</db:section>
 			</db:section>
 		</db:section>
 		<db:section>

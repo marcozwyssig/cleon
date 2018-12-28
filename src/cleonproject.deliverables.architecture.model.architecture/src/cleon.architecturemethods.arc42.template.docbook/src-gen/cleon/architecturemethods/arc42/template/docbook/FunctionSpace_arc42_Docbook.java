@@ -429,14 +429,14 @@ public class FunctionSpace_arc42_Docbook {
     @IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderRequirements();
 
-    @IDynamicResourceExtension.MethodId("d07cc379-0205-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderPurpose();
+    @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> HasDependencies();
 
     @IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026")
     public java.lang.String RenderDependencies();
 
-    @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> HasDependencies();
+    @IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -510,4 +510,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,5RmunBTByXRME7f47R/deSIZnes=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,S6aoWcy59FXazCO8CcUJFGKUgSE=] */

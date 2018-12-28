@@ -52,6 +52,34 @@ public class FunctionSpace_Plantuml {
 
   }
 
+  public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7227f211-0aa6-11e9-b5db-cdf0b8dad9e4")
+    public java.lang.String GetIncludePath();
+
+    @IDynamicResourceExtension.MethodId("b5703850-0aa6-11e9-b5db-cdf0b8dad9e4")
+    public java.lang.String RenderAllIncludes();
+
+  }
+  
+  public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
+
+    public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
+
+    private BuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockFunctions {
+
+    private BuildingBlockFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,X/6KqS7wQQnTMSazja0O7gcYW4k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,2cVHkzzI/R3EQ0plYbhcXjvpRM0=] */

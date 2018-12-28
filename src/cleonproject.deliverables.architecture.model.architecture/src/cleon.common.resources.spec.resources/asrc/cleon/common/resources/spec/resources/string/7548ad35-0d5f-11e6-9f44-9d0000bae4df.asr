@@ -10,6 +10,15 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="4be65353-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="4be5de20-0aa8-11e9-b5db-cdf0b8dad9e4">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="5099f086-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="50997b52-0aa8-11e9-b5db-cdf0b8dad9e4">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="57ab05bc-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="57aa9089-0aa8-11e9-b5db-cdf0b8dad9e4" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7548d447-0d5f-11e6-9f44-9d0000bae4df" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
@@ -52,6 +61,46 @@
         </predicate>
         <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
           <object statement-guid="77b25952-0d5f-11e6-9f44-9d0000bae4df" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4be65353-0aa8-11e9-b5db-cdf0b8dad9e4">
+      <resource guid="4be5de20-0aa8-11e9-b5db-cdf0b8dad9e4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4be5de22-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="5099f086-0aa8-11e9-b5db-cdf0b8dad9e4">
+            <resource guid="50997b52-0aa8-11e9-b5db-cdf0b8dad9e4">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="50997b54-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="518429a8-0aa8-11e9-b5db-cdf0b8dad9e4" type="literal">distinct</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="57ab05bc-0aa8-11e9-b5db-cdf0b8dad9e4">
+                  <resource guid="57aa9089-0aa8-11e9-b5db-cdf0b8dad9e4">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="57aab79b-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="584d603d-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="5099c975-0aa8-11e9-b5db-cdf0b8dad9e4" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="e4da359c-0aa8-11e9-b5db-cdf0b8dad9e4" type="literal">return textLiteralList.stream().distinct().collect(java.util.stream.Collectors.toList());</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="4ccf2cb4-0aa8-11e9-b5db-cdf0b8dad9e4" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
         </predicate>
       </resource>
     </object>

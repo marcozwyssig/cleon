@@ -5,6 +5,7 @@ import ch.actifsource.core.Resource;
 public class StringPackage {
   
   public static final Resource FunctionSpace_aE_String_StringLiteral = new Resource("77264689-0d5f-11e6-9f44-9d0000bae4df");
+  public static final Resource FunctionSpace_aE_String_TextLiteral = new Resource("4be5de20-0aa8-11e9-b5db-cdf0b8dad9e4");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +26,4 @@ public class StringPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.string,E44IdgtMcikBbRYl/wazU98sPd4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.string,HIXyOPPXOItSXcFX5+YHBUYCaz0=] */

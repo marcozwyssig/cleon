@@ -57,6 +57,43 @@ public class FunctionSpace_String {
 
   }
 
+  public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("50997b52-0aa8-11e9-b5db-cdf0b8dad9e4")
+    public List<java.lang.String> distinct();
+
+  }
+  
+  public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("50997b52-0aa8-11e9-b5db-cdf0b8dad9e4")
+    public List<java.lang.String> distinct(final List<java.lang.String> textLiteralList);
+
+  }
+  
+  public static class TextLiteralFunctionsImpl implements ITextLiteralFunctionsImpl {
+
+    public static final ITextLiteralFunctionsImpl INSTANCE = new TextLiteralFunctionsImpl();
+
+    private TextLiteralFunctionsImpl() {}
+
+    @Override
+    public List<java.lang.String> distinct(final List<java.lang.String> textLiteralList) {
+      return textLiteralList.stream().distinct().collect(java.util.stream.Collectors.toList());
+    }
+
+  }
+  
+  public static class TextLiteralFunctions {
+
+    private TextLiteralFunctions() {}
+
+    public static List<java.lang.String> distinct(final List<java.lang.String> textLiteralList) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteralList).distinct(textLiteralList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,O+AwzqlVE4WxLg5bWd3P1dQYd8Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,sVUJF4VY4DZrR66efSxOqrNfNpA=] */

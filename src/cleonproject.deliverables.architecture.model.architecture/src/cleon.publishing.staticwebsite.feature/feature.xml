@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.publishing.staticwebsite" label="cleon.publishing.staticwebsite" version="0.4.40">
+<feature id="cleon.publishing.staticwebsite" label="cleon.publishing.staticwebsite" version="0.4.41">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -468,7 +468,7 @@ of their respective owners.
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.publishing.staticwebsite.spec.website.builtin" download-size="0" install-size="0" version="0.4.40" unpack="false"/>
-   <plugin id="cleon.publishing.staticwebsite.template.docpad.builtin" download-size="0" install-size="0" version="0.4.40" unpack="false"/>   
+   <plugin id="cleon.publishing.staticwebsite.spec.website.builtin" download-size="0" install-size="0" version="0.4.41" unpack="false"/>
+   <plugin id="cleon.publishing.staticwebsite.template.docpad.builtin" download-size="0" install-size="0" version="0.4.41" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,c9f2623f-c028-11e8-bd75-b9969550de64,Hash] -->

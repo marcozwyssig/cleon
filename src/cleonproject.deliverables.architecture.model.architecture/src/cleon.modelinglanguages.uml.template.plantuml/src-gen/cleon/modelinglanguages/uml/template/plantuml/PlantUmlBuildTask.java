@@ -1,16 +1,11 @@
 package cleon.modelinglanguages.uml.template.plantuml;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.StringBufferInputStream;
-import java.io.StringReader;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -22,18 +17,13 @@ import ch.actifsource.generator.target.ISingleThreadBuildTargetInfo;
 import ch.actifsource.util.ICancelStatus;
 import ch.actifsource.util.file.IAsFile;
 import ch.actifsource.util.file.IAsFolder;
-import ch.actifsource.util.io.ReaderInputStream;
 
 public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	private static final ExecutorService _executer = Executors.newFixedThreadPool(8);
-	
 	private final List<String> _commands = new ArrayList<String>();
-	@javax.annotation.CheckForNull
 
-	
 	public PlantUmlBuildTask(ch.actifsource.core.INode buildTask, ICancelStatus status) {
 		super(buildTask, status);
-		
 	}
 
 	protected ch.actifsource.core.dependency.IDependency internalGenerate(ISingleThreadBuildTargetInfo targetInfo)
@@ -49,7 +39,6 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 			_commands.add("-progress");
 		}
 			
-	
 		IAsFolder targetFolder = targetInfo.getOutputScope().getFolder(targetInfo.getOutputPath());
 		try {
 			processFolder(targetFolder, targetInfo.getBuildContext().console());
@@ -65,6 +54,7 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
         }
     }	
 	
+	
 	private void processFolder(IAsFolder folder, IGeneratorConsole generatorConsole) throws IOException {
 		if(folder == null)
 			return;
@@ -74,52 +64,67 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 			if (plantAsUmlFile.getName().endsWith(".puml")) {
 				if (isCanceled())
 					return;
-				
+								
 				String plantUmlFileName = plantAsUmlFile.getName();
-				String pumlFilename = plantUmlFileName.substring(0, plantUmlFileName.length() - ".puml".length())
-						+ ".puml";
+				IAsFile pumlFile = getFile(folder, generatorConsole, plantAsUmlFile, plantUmlFileName);
 				
-				
-				IAsFile pumlFile = folder.getFile(pumlFilename);				
-				IAsFile hashCodeFile = folder.getFile(pumlFilename + ".hash");
-				generatorConsole.info().print("Processing plantuml ");
-				generatorConsole.info().print(plantAsUmlFile, 0, 0, plantUmlFileName);
-				generatorConsole.info().print(" -> ");
-				generatorConsole.info().print(pumlFile, 0, 0, pumlFilename);
-				generatorConsole.info().print(": Hashcode " + pumlFile.hashCode());
+				if( createOrVerifyHashFile(generatorConsole, folder, pumlFile) ) 
+				{
+					List<String> command = new ArrayList<String>(_commands);
+					command.add(plantUmlFileName);
 
-				String hashCodeofFile = String.valueOf(pumlFile.hashCode());
-				if(hashCodeFile.exists())
-				{
-					String hashCode = read(hashCodeFile.getContents());
-					if(hashCodeofFile.equals(hashCode))
-					{
-						generatorConsole.info().print("skipping");
-						continue;
-					}
-					hashCodeFile.delete();
-				}
-				try( ReaderInputStream inputStream = new ReaderInputStream(new StringReader(hashCodeofFile), Charset.defaultCharset()))
-				{
-					hashCodeFile.write(inputStream);					
+					ProcessBuilder pb = new ProcessBuilder(command);
+					File adapter = folder.getAdapter(File.class);
+					pb = pb.directory(adapter);
+
+					ProcessRunnable interruptOnCancel = new ProcessRunnable(pb, console(), getCancelStatus());
+					_executer.submit(interruptOnCancel);					
 				}
 				
 				generatorConsole.info().println();
-
-				List<String> command = new ArrayList<String>(_commands);
-				command.add(plantUmlFileName);
-
-				ProcessBuilder pb = new ProcessBuilder(command);
-				File adapter = folder.getAdapter(File.class);
-				pb = pb.directory(adapter);
-
-				ProcessRunnable interruptOnCancel = new ProcessRunnable(pb, console(), getCancelStatus());
-				_executer.submit(interruptOnCancel);
 			}
 		}
 
 		for (IAsFolder subFolder : folder.getSubFolders()) {
 			processFolder(subFolder, generatorConsole);
 		}
+	}
+
+	private IAsFile getFile(IAsFolder folder, IGeneratorConsole generatorConsole, IAsFile plantAsUmlFile,
+			String plantUmlFileName) {
+		String pumlFilename = plantUmlFileName.substring(0, plantUmlFileName.length() - ".puml".length())
+				+ ".puml";
+		
+		IAsFile pumlFile = folder.getFile(pumlFilename);				
+
+		generatorConsole.info().print("Processing plantuml ");
+		generatorConsole.info().print(plantAsUmlFile, 0, 0, plantUmlFileName);
+		generatorConsole.info().print(" -> ");
+		generatorConsole.info().print(pumlFile, 0, 0, pumlFilename);
+		generatorConsole.info().print(": Hashcode " + pumlFile.hashCode());
+		return pumlFile;
+	}
+
+	private boolean createOrVerifyHashFile(IGeneratorConsole generatorConsole, IAsFolder folder, IAsFile pumlFile)
+			throws IOException {
+		
+		IAsFile hashCodeFile = folder.getFile(pumlFile.getName().concat(".hash"));
+		String hashCodeofFile = String.valueOf(pumlFile.hashCode());
+		if(hashCodeFile.exists())
+		{
+			String hashCode = read(hashCodeFile.getContents());
+			if(hashCodeofFile.equals(hashCode))
+			{
+				generatorConsole.info().print(" -> skipping (hash)");
+				return false;
+			}
+			hashCodeFile.delete();
+		}
+		
+		try( ByteArrayInputStream inputStream = new ByteArrayInputStream(hashCodeofFile.getBytes()))
+		{
+			hashCodeFile.write(inputStream);					
+		}
+		return true;
 	}
 }

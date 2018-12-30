@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="476ffade-0c87-11e9-8d44-37d40bf2d9d4">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ae49c90f-0c87-11e9-8d44-37d40bf2d9d4" type="resource" guid="ed1a421c-09a7-11e9-8c40-11db3668c0c9" />
+    <resource statement-guid="b5678819-0c87-11e9-8d44-37d40bf2d9d4" type="resource" guid="cae85ef1-09a9-11e9-8c40-11db3668c0c9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="477021f0-0c87-11e9-8d44-37d40bf2d9d4" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="47715a72-0c87-11e9-8d44-37d40bf2d9d4" type="resource" guid="b9c39881-baea-11dd-aa8e-75e7a75dc78a" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ae49c90f-0c87-11e9-8d44-37d40bf2d9d4">
+      <resource guid="ed1a421c-09a7-11e9-8c40-11db3668c0c9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ed1a692e-09a7-11e9-8c40-11db3668c0c9" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f6c84824-09a7-11e9-8c40-11db3668c0c9" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eeb92412-09a7-11e9-8c40-11db3668c0c9" type="literal">bin</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="3c1705e5-09ab-11e9-8c40-11db3668c0c9" type="literal">c:\Python37\Scripts\nwdiag.exe</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ed1b0470-09a7-11e9-8c40-11db3668c0c9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b5678819-0c87-11e9-8d44-37d40bf2d9d4">
+      <resource guid="cae85ef1-09a9-11e9-8c40-11db3668c0c9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cae85ef3-09a9-11e9-8c40-11db3668c0c9" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb947e04-09a9-11e9-8c40-11db3668c0c9" type="literal">imageType</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="cae94955-09a9-11e9-8c40-11db3668c0c9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="cae97066-09a9-11e9-8c40-11db3668c0c9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="f49f14ea-09a9-11e9-8c40-11db3668c0c9" type="resource" guid="e197ddbc-09a9-11e9-8c40-11db3668c0c9" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="d0318573-09a9-11e9-8c40-11db3668c0c9" type="resource" guid="afb720af-afdf-11e5-a548-13e054f2d74f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4770e541-0c87-11e9-8d44-37d40bf2d9d4" type="literal">ExeBuildTask</object>
+  </predicate>
+</resource>
+

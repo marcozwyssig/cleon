@@ -32,11 +32,11 @@ public class NwdiagBuildTask extends DynamicResource implements INwdiagBuildTask
   
   @Override
   public java.lang.String selectBin() {
-    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_bin);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin);
   }
     
   public void setBin(java.lang.String bin) {
-     _setSingleAttribute(cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_bin, bin);
+     _setSingleAttribute(cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin, bin);
   }
 
   @Override
@@ -52,11 +52,11 @@ public class NwdiagBuildTask extends DynamicResource implements INwdiagBuildTask
   
   @Override
   public cleon.common.resources.spec.resources.image.javamodel.IImageType selectImageType() {
-    return _getSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_imageType);
+    return _getSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType);
   }
 
   public NwdiagBuildTask setImageType(cleon.common.resources.spec.resources.image.javamodel.IImageType imageType) {
-    _setSingle(cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_imageType, imageType);
+    _setSingle(cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType, imageType);
     return this;
   }
     
@@ -74,16 +74,12 @@ public class NwdiagBuildTask extends DynamicResource implements INwdiagBuildTask
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_bin, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_font, visitor);
     // relations
-    _acceptSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_imageType, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  public static java.util.List<cleon.modelinglanguages.network.template.nwdiag.javamodel.INwdiagBuildTask> selectToMeImageType(cleon.common.resources.spec.resources.image.javamodel.IImageType object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.template.nwdiag.javamodel.INwdiagBuildTask.class, cleon.modelinglanguages.network.template.nwdiag.NwdiagPackage.NwdiagBuildTask_imageType, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5754eef7-054f-11e9-b814-a133e521728c,LeE2byX0XqHVEEgTsPCQpcaFLJE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5754eef7-054f-11e9-b814-a133e521728c,IJD/SbqJszpA09wJ9LWu4La2B/E=] */

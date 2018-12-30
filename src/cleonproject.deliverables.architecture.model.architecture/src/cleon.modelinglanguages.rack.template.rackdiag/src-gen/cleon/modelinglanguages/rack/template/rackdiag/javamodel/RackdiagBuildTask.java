@@ -28,8 +28,29 @@ public class RackdiagBuildTask extends DynamicResource implements IRackdiagBuild
     super(resourceRepository, resource, IRackdiagBuildTask.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectBin() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin);
+  }
+    
+  public void setBin(java.lang.String bin) {
+     _setSingleAttribute(cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin, bin);
+  }
+
   // relations
   
+  @Override
+  public cleon.common.resources.spec.resources.image.javamodel.IImageType selectImageType() {
+    return _getSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType);
+  }
+
+  public RackdiagBuildTask setImageType(cleon.common.resources.spec.resources.image.javamodel.IImageType imageType) {
+    _setSingle(cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType, imageType);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -43,9 +64,12 @@ public class RackdiagBuildTask extends DynamicResource implements IRackdiagBuild
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_bin, visitor);
     // relations
+    _acceptSingle(cleon.common.resources.spec.resources.image.javamodel.IImageType.class, cleon.common.util.spec.actifsource.generator.GeneratorPackage.ExeBuildTask_imageType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,497c82f6-0550-11e9-b814-a133e521728c,/MEga0P1Opz0s0b4fZAAe29s2mg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,497c82f6-0550-11e9-b814-a133e521728c,wtufhrmkYVGVYFY/0gqdYuJrPIo=] */

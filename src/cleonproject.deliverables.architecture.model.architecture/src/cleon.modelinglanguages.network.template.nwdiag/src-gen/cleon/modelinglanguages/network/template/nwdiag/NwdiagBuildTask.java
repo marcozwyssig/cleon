@@ -18,6 +18,7 @@ import ch.actifsource.generator.target.ISingleThreadBuildTargetInfo;
 import ch.actifsource.util.ICancelStatus;
 import ch.actifsource.util.file.IAsFile;
 import ch.actifsource.util.file.IAsFolder;
+import cleon.common.util.spec.actifsource.generator.GeneratorPackage;
 
 public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 	private final String EXTENSION = ".ndg";
@@ -34,13 +35,13 @@ public class NwdiagBuildTask extends AbstractBuildTaskSingleThread {
 		
 		if( _commands.isEmpty())
 		{
-			INode binNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_bin, this.getBuildTaskNode());
+			INode binNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), GeneratorPackage.ExeBuildTask_bin, this.getBuildTaskNode());
 			String binPath = LiteralUtil.getStringValue(binNode);
 			
 			INode fontNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_font, this.getBuildTaskNode());
 			String fontPath = LiteralUtil.getStringValue(fontNode);
 			
-			INode imageNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), NwdiagPackage.NwdiagBuildTask_imageType, this.getBuildTaskNode());
+			INode imageNode = Select.objectForAttributeOrNull(targetInfo.getTemplateReadJobExecutor(), GeneratorPackage.ExeBuildTask_imageType, this.getBuildTaskNode());
 			String imagePath = LiteralUtil.getStringValue(imageNode);
 			
 			_commands.add(binPath);

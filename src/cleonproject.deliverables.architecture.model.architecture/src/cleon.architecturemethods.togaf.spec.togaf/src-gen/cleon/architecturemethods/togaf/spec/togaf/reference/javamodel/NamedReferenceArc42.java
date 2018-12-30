@@ -78,16 +78,6 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   // relations
   
   @Override
-  public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout select__V_0_aE_about() {
-    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about);
-  }
-
-  public NamedReferenceArc42 set__V_0_aE_about(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout __V_0_aE_about) {
-    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about, __V_0_aE_about);
-    return this;
-  }
-    
-  @Override
   public cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals select__V_1_aE_introduction_aE_and_aE_goals() {
     return _getSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals);
   }
@@ -218,6 +208,16 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   }
     
   @Override
+  public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectAbout() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about);
+  }
+
+  public NamedReferenceArc42 setAbout(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout about) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, about);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
   }
@@ -307,7 +307,6 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_0_aE_about, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IArchitecture_Constraints.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_2_aE_architecture_aE_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.reference._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.togaf.spec.togaf.reference.ReferencePackage.ReferenceArc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
@@ -321,6 +320,7 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_1_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirements_Coverage.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_2_aE_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___W_3_aE_productview, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
@@ -332,4 +332,4 @@ public class NamedReferenceArc42 extends DynamicResource implements INamedRefere
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,ZF6HVS6KlYkhI38AYosB7s4wP5U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a395933-2d71-11e6-959f-d1cef44ff5fd,NBMXTwu6uCFefrMoqOk3nX+mGWQ=] */

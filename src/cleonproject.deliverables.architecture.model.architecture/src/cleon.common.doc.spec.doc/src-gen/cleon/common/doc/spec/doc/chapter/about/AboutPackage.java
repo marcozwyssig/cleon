@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class AboutPackage {
   
+  public static final Resource AboutAware_about = new Resource("4694648b-e991-11e8-af5c-a5aa9dc47205");
   public static final Resource About = new Resource("7dee7074-077f-11e9-812a-c3c7ef540adf");
   public static final Resource Task = new Resource("4f75bdc1-0782-11e9-812a-c3c7ef540adf");
   public static final Resource Dependencies = new Resource("7497aa19-0782-11e9-812a-c3c7ef540adf");
@@ -24,6 +25,7 @@ public class AboutPackage {
   public static final Resource FunctionSpace_aE_About_ChapterDescription = new Resource("0ec4910b-08fa-11e9-9ee8-c54fda7ab431");
   public static final Resource Method = new Resource("ce23e1d1-09b1-11e9-8c40-11db3668c0c9");
   public static final Resource About_method = new Resource("eeab84ab-09b1-11e9-8c40-11db3668c0c9");
+  public static final Resource AboutAware = new Resource("29a8b5ed-0c20-11e9-8a28-597a9a8945ea");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +46,4 @@ public class AboutPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter.about,GfRvQs7mCmjcggKuSP6FpaoU+V0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter.about,QrcHrMbVAYVWCXEU9vkY0it53ro=] */

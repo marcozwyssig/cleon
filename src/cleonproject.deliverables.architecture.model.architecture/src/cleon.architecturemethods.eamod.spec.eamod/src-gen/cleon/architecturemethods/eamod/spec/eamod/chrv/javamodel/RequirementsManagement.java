@@ -79,11 +79,11 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   
   @Override
   public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectAbout() {
-    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_about);
+    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about);
   }
 
   public RequirementsManagement setAbout(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout about) {
-    _setSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_about, about);
+    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, about);
     return this;
   }
     
@@ -237,7 +237,7 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_about, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.javamodel.IDistinctions.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_destinctions, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -255,10 +255,6 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
 
   // toMeRelations
-  
-  public static cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectToMeAbout(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_about, object.getResource());
-  }
   
   public static cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectToMeIntroduction(cleon.architecturemethods.eamod.spec.eamod.chrv.introduction.javamodel.IIntroduction object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.ChrvPackage.RequirementsManagement_introduction, object.getResource());
@@ -285,4 +281,4 @@ public class RequirementsManagement extends DynamicResource implements IRequirem
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,qoZNsofIRzZjoYd3LeGSNWV+ryc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,9PDmD7es+OJINUsEWAY/bhyezHo=] */

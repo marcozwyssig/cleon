@@ -31,12 +31,12 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria> selectCriterias() {
-    return _getList(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.CriteriaAggregateAware_criterias);
+  public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> selectCriterias() {
+    return _getList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias);
   }
 
-  public RequirementsAggregate setCriterias(java.util.List<? extends cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria> criterias) {
-    _setList(cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.CriteriaAggregateAware_criterias, criterias);
+  public RequirementsAggregate setCriterias(java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> criterias) {
+    _setList(cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias, criterias);
     return this;
   }
     
@@ -84,7 +84,7 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.analysis.spec.analysis.solution.drivers.javamodel.IAbstractCriteria.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.CriteriaAggregateAware_criterias, visitor);
+    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_priorityWeighting, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_requirementCriterias, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.RequirementsAggregate_subjectArea, visitor);
@@ -106,4 +106,4 @@ public class RequirementsAggregate extends DynamicResource implements IRequireme
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,sgbPxUxH3N4eOVTd1gw2e/LGaRc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,+fiYB9r/DAtSnhXhU5Zj/v2gVWQ=] */

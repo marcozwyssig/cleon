@@ -32,11 +32,11 @@ public class PriorityWeighting extends DynamicResource implements IPriorityWeigh
   
   @Override
   public java.lang.Integer selectWeighting() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.WeightingAware_weighting);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.WeightingAware_weighting);
   }
     
   public void setWeighting(java.lang.Integer weighting) {
-     _setSingleAttribute(cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.WeightingAware_weighting, weighting);
+     _setSingleAttribute(cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.WeightingAware_weighting, weighting);
   }
 
   // relations
@@ -75,7 +75,7 @@ public class PriorityWeighting extends DynamicResource implements IPriorityWeigh
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.analysis.spec.analysis.solution.drivers.DriversPackage.WeightingAware_weighting, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.WeightingAware_weighting, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.PriorityWeighting_priority, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -89,4 +89,4 @@ public class PriorityWeighting extends DynamicResource implements IPriorityWeigh
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,sMO4mZh2zX8mxbFDzKZUHeRuGoo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,i2QFyBLuRYJMJaz5Ginr04HQIYI=] */

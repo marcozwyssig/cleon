@@ -12,7 +12,7 @@ public interface ISoftwareDevelopmentArtefacts extends ch.actifsource.core.javam
   
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning selectPlanning();
   
-  public java.util.List<? extends cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis> selectSolutionAnalysis();
+  public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy> selectSolutionAnalysis();
   
   public cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IReadme selectReadme();
   
@@ -20,4 +20,4 @@ public interface ISoftwareDevelopmentArtefacts extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,ERTo3Fh4xb7D83EdZgE8WXUJWeU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,j8D68Pv3Hw++20n7S/ApaDsxkw4=] */

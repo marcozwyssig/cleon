@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.spec.arc42.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IArc42 extends cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware, cleon.common.doc.spec.doc.document.javamodel.IDocument, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware {
+public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDocument, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2cbcf671-ffcc-11e4-ac0a-959b440f987f");
   
@@ -34,4 +34,4 @@ public interface IArc42 extends cleon.common.doc.spec.doc.chapter.about.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,ACnjWax8CWqNxmPfh0HE1K0tubg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,FNnVp9OjE5zI9+BKzq2CZBKB+Nw=] */

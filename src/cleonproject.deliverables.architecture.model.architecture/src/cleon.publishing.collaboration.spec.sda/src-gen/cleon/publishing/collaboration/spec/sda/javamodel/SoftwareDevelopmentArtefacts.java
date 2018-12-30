@@ -72,11 +72,11 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
     
   @Override
-  public java.util.List<? extends cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis> selectSolutionAnalysis() {
-    return _getList(cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis);
+  public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy> selectSolutionAnalysis() {
+    return _getList(cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis);
   }
 
-  public SoftwareDevelopmentArtefacts setSolutionAnalysis(java.util.List<? extends cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis> solutionAnalysis) {
+  public SoftwareDevelopmentArtefacts setSolutionAnalysis(java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy> solutionAnalysis) {
     _setList(cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, solutionAnalysis);
     return this;
   }
@@ -110,7 +110,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_planning, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IReadme.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_readme, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
-    _acceptList(cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, visitor);
+    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.testing.javamodel.ITesting.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_testing, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -125,7 +125,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     return _getToMeSingle(object.getRepository(), cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_planning, object.getResource());
   }
   
-  public static cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts selectToMeSolutionAnalysis(cleon.common.analysis.spec.analysis.solution.javamodel.ISolutionAnalysis object) {
+  public static cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts selectToMeSolutionAnalysis(cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy object) {
     return _getToMeSingle(object.getRepository(), cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, object.getResource());
   }
   
@@ -138,4 +138,4 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,V8OqKF9QtwA+uKoFCqvAe8ktkMo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,s5H3BVdQTWTozEPP5E5VSae2jWI=] */

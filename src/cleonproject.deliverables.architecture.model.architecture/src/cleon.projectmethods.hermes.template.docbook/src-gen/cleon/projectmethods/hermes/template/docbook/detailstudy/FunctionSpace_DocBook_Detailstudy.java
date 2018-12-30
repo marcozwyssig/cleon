@@ -1,4 +1,4 @@
-package cleon.architecturemethods.eamod.template.docbook.analysis;
+package cleon.projectmethods.hermes.template.docbook.detailstudy;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,imports]] */
 
-public class FunctionSpace_DocBook_Analysis {
+public class FunctionSpace_DocBook_Detailstudy {
 
   /* Begin Protected Region [[51cd6fe6-a6f0-11e8-9c81-8bd68c62e435]] */
   
@@ -173,4 +173,4 @@ public class FunctionSpace_DocBook_Analysis {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,PRuc1Z3lPYn8fFM8ldcwAUskKRc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,mR2OXsK8ci0lrPEHUpClmszM+lc=] */

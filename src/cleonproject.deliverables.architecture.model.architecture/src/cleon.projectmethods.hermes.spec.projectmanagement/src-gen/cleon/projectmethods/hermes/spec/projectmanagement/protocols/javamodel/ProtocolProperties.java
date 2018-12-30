@@ -62,12 +62,12 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IClassification selectClassification() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification);
+  public cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification selectClassification() {
+    return _getSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification.class, cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification);
   }
 
-  public ProtocolProperties setClassification(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification classification) {
-    _setSingle(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification, classification);
+  public ProtocolProperties setClassification(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification classification) {
+    _setSingle(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification, classification);
     return this;
   }
     
@@ -159,7 +159,7 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
     // relations
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification.class, cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_customer, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Distributers_distributers, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProject.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, visitor);
@@ -177,4 +177,4 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,5Smm6YlDziehVX5Z4fY3Hw40SCY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,Gt+HU7mOnbH6+Cfa1kClVRwWbDo=] */

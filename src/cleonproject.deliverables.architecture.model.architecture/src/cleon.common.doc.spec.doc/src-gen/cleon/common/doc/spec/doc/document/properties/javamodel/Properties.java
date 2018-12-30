@@ -52,12 +52,12 @@ public class Properties extends DynamicResource implements IProperties {
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IClassification selectClassification() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification);
+  public cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification selectClassification() {
+    return _getSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification.class, cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification);
   }
 
-  public Properties setClassification(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification classification) {
-    _setSingle(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification, classification);
+  public Properties setClassification(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification classification) {
+    _setSingle(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification, classification);
     return this;
   }
     
@@ -148,7 +148,7 @@ public class Properties extends DynamicResource implements IProperties {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_documentType, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification, visitor);
+    _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification.class, cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_customer, visitor);
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Distributers_distributers, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProject.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, visitor);
@@ -159,10 +159,6 @@ public class Properties extends DynamicResource implements IProperties {
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISemanticVersion.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_version, visitor);
   }
 
-  public static java.util.List<cleon.common.doc.spec.doc.document.properties.javamodel.IProperties> selectToMeClassification(cleon.common.doc.spec.doc.document.properties.javamodel.IClassification object) {
-    return _getToMeList(object.getRepository(), cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_classification, object.getResource());
-  }
-  
   public static java.util.List<cleon.common.doc.spec.doc.document.properties.javamodel.IProperties> selectToMeProject(cleon.common.doc.spec.doc.document.properties.javamodel.IProject object) {
     return _getToMeList(object.getRepository(), cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, object.getResource());
   }
@@ -172,4 +168,4 @@ public class Properties extends DynamicResource implements IProperties {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a052f72d-47f5-11e6-b388-8539f6ff7310,9afO+zXumn1LZBUZkeov79/qQIw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a052f72d-47f5-11e6-b388-8539f6ff7310,9VoXNZGSZP35N76NTQ3LoSEAXOs=] */

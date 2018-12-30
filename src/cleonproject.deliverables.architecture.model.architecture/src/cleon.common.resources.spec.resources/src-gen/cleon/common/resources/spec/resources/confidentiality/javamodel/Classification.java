@@ -1,4 +1,4 @@
-package cleon.common.doc.spec.doc.document.properties.javamodel;
+package cleon.common.resources.spec.resources.confidentiality.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -64,6 +64,7 @@ public class Classification extends DynamicResource implements IClassification {
 
   @Override
   public <R> R accept(IValueVisitor<R> visitor) {
+    if (isUNKLASSIFIZIERT()) return visitor.visitUNKLASSIFIZIERT();
     if (isINTERN()) return visitor.visitINTERN();
     if (isVERTRAULICH()) return visitor.visitVERTRAULICH();
     if (isGEHEIM()) return visitor.visitGEHEIM();
@@ -72,6 +73,10 @@ public class Classification extends DynamicResource implements IClassification {
   
   @Override
   public void accept(IValueVoidVisitor visitor) {
+    if (isUNKLASSIFIZIERT()) {
+      visitor.visitUNKLASSIFIZIERT();
+      return;
+    }
     if (isINTERN()) {
       visitor.visitINTERN();
       return;
@@ -90,19 +95,24 @@ public class Classification extends DynamicResource implements IClassification {
   // isValue-Methods
     
   @Override
+  public boolean isUNKLASSIFIZIERT() {
+    return getResource().equals(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.Classification_UNKLASSIFIZIERT);
+  }
+  
+  @Override
   public boolean isINTERN() {
-    return getResource().equals(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Classification_INTERN);
+    return getResource().equals(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.Classification_INTERN);
   }
   
   @Override
   public boolean isVERTRAULICH() {
-    return getResource().equals(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Classification_VERTRAULICH);
+    return getResource().equals(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.Classification_VERTRAULICH);
   }
   
   @Override
   public boolean isGEHEIM() {
-    return getResource().equals(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Classification_GEHEIM);
+    return getResource().equals(cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.Classification_GEHEIM);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d92db665-47f5-11e6-b388-8539f6ff7310,IFmLIwbRGoFMhLGCt3FkpfyxQ2Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d92db665-47f5-11e6-b388-8539f6ff7310,ITxD/4qcQN6BGj2J9H9pL84fjBo=] */

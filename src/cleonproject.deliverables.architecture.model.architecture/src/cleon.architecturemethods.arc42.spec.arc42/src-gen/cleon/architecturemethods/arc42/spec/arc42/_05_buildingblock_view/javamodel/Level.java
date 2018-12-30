@@ -31,6 +31,15 @@ public class Level extends DynamicResource implements ILevel {
   // attributes
   
   @Override
+  public java.lang.String selectNoDescriptions() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_NoDescriptions);
+  }
+    
+  public void setNoDescriptions(java.lang.String noDescriptions) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_NoDescriptions, noDescriptions);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -124,6 +133,7 @@ public class Level extends DynamicResource implements ILevel {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Level_NoDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
@@ -151,4 +161,4 @@ public class Level extends DynamicResource implements ILevel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,BuF7MLk74k0cnalvO3505v/9/pA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,w3+oz9rhehFCmUcCzLQ9elqs9TY=] */

@@ -65,19 +65,18 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	private void processFolder(IAsFolder folder, IGeneratorConsole generatorConsole) throws IOException, NoSuchAlgorithmException {
 		if(folder == null)
 			return;
-		
+			
 		for (IAsFile plantAsUmlFile : folder.getFiles()) {
 			if (plantAsUmlFile.getName().endsWith(".puml")) {
 				if (isCanceled())
 					return;
 								
-				String plantUmlFileName = plantAsUmlFile.getName();
-				IAsFile pumlFile = getFile(folder, generatorConsole, plantAsUmlFile, plantUmlFileName);
+				printFileName(folder, generatorConsole, plantAsUmlFile);
 				
-				if( createOrVerifyHashFile(generatorConsole, folder, pumlFile) ) 
+				if( createOrVerifyHashFile(generatorConsole, folder, plantAsUmlFile) ) 
 				{
 					List<String> command = new ArrayList<String>(_commands);
-					command.add(plantUmlFileName);
+					command.add(plantAsUmlFile.getName());
 
 					ProcessBuilder pb = new ProcessBuilder(command);
 					File adapter = folder.getAdapter(File.class);
@@ -96,18 +95,10 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 		}
 	}
 
-	private IAsFile getFile(IAsFolder folder, IGeneratorConsole generatorConsole, IAsFile plantAsUmlFile,
-			String plantUmlFileName) {
-		String pumlFilename = plantUmlFileName.substring(0, plantUmlFileName.length() - ".puml".length())
-				+ ".puml";
-		
-		IAsFile pumlFile = folder.getFile(pumlFilename);				
+	private void printFileName(IAsFolder folder, IGeneratorConsole generatorConsole, IAsFile plantAsUmlFile) {		
 
 		generatorConsole.info().print("Processing plantuml ");
-		generatorConsole.info().print(plantAsUmlFile, 0, 0, plantUmlFileName);
-		generatorConsole.info().print(" -> ");
-		generatorConsole.info().print(pumlFile, 0, 0, pumlFilename);
-		return pumlFile;
+		generatorConsole.info().print(plantAsUmlFile, 0, 0, plantAsUmlFile.getName());
 	}
 
 	private boolean createOrVerifyHashFile(IGeneratorConsole generatorConsole, IAsFolder folder, IAsFile pumlFile)
@@ -139,7 +130,8 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 		try (InputStream is = pumlFile.getContents();
 			DigestInputStream dis = new DigestInputStream(is, md)) 
 		{
-		  /* Read decorated stream (dis) to EOF as normal... */
+			while (dis.read() != -1) ; //empty loop to clear the data
+	        	md = dis.getMessageDigest();
 		}
 		byte[] digest = md.digest();
 	    String hashCodeOfFile = DatatypeConverter.printHexBinary(digest).toUpperCase();

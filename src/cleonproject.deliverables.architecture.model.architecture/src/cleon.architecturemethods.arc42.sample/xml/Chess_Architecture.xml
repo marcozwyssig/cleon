@@ -641,26 +641,13 @@
 					
 					
 					<db:section>
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2 aufgelistet:</db:para>
 						<db:title>Erfüllte Anforderungen</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Anforderung</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>AF006_Requirements_1 (FEA)</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
 					</db:section>
 					
 				</db:section>
@@ -854,28 +841,13 @@
 					
 					
 					<db:section>
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2_1_1 aufgelistet:</db:para>
 						<db:title>Erfüllte Anforderungen</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Anforderung</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>AF006_Requirements_1 (FEA)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>asdfasdfasdfa</db:para>
-										<db:para>asdfasdfasdf</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
 					</db:section>
 					
 				</db:section>

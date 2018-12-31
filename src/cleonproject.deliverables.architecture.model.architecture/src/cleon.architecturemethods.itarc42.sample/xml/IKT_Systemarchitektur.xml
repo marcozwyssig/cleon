@@ -458,33 +458,16 @@
 					
 					
 					<db:section>
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Windows 2016 aufgelistet:</db:para>
 						<db:title>Erfüllte Anforderungen</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Anforderung</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>AF006_Requirements_1 (FEA)</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>AF007_sss (FEA)</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+							<db:listitem>
+								<db:para>AF007_sss (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
 					</db:section>
 					
 				</db:section>
@@ -516,26 +499,13 @@
 						</db:informaltable>	
 					</db:section>
 					<db:section>
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Linux aufgelistet:</db:para>
 						<db:title>Erfüllte Anforderungen</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Anforderung</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>AF006_Requirements_1 (FEA)</db:para>
-									</db:td>
-									<db:td>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
 					</db:section>
 					
 				</db:section>
@@ -582,62 +552,18 @@
 					
 					
 					<db:section>
-						<db:title>Verwendete Produkte</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="40%" />
-							<db:col width="20%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Hersteller</db:th>			
-									<db:th>Produkt</db:th>
-									<db:th>Version</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>Microsoft</db:para>
-									</db:td>			
-									<db:td>
-										<db:para>Windows Server 2016</db:para>
-									</db:td>
-									<db:td>
-										<db:para>2016</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-					</db:section>
-					<db:section>
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Windows Server Standard Virtual aufgelistet:</db:para>
 						<db:title>Erfüllte Anforderungen</db:title>
-						<db:informaltable style="EAMod Requirement">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Anforderung</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>AF004_Requirements_2_1 (CAP)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>asdfasdfsdf</db:para>
-										<db:para>asdfasdf</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF004_Requirements_2_1 (CAP)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
 					</db:section>
 					
 				</db:section>
 				<db:section >
 					<db:title>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:title>
-					
 					
 					
 					
@@ -654,7 +580,34 @@
 				
 				
 				
-				
+				<db:section>
+					<db:title>Verwendete Produkte</db:title>
+					<db:informaltable style="EAMod Requirement">
+						<db:col width="40%" />
+						<db:col width="40%" />
+						<db:col width="20%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Hersteller</db:th>			
+								<db:th>Produkt</db:th>
+								<db:th>Version</db:th>
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>Microsoft</db:para>
+								</db:td>			
+								<db:td>
+									<db:para>Windows Server 2016</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2016</db:para>
+								</db:td>
+							</db:tr>
+						</db:tbody>
+					</db:informaltable>
+				</db:section>
 				
 			</db:section>
 			<db:section >

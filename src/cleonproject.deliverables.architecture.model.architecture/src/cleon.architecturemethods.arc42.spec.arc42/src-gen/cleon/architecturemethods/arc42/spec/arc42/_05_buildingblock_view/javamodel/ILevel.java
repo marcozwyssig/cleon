@@ -6,8 +6,6 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1551fb66-2857-11e8-9af4-b7d7a3bbddc1");
   
-  public java.lang.String selectNoDescriptions();
-  
   // relations
   
   public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock selectWhitebox();
@@ -18,4 +16,4 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,vbrE6TnBC//afsgft1Nxn3/xrCc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,BjGJ49AwNDbvb20kv2+QrPWxWV4=] */

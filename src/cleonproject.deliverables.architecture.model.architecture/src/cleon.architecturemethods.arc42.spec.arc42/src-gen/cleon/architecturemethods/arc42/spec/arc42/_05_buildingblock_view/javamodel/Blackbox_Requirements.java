@@ -81,6 +81,16 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription> selectRequirementCoverageDescription() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_aE_Requirements_requirementCoverageDescription);
+  }
+
+  public Blackbox_Requirements setRequirementCoverageDescription(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription> requirementCoverageDescription) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_aE_Requirements_requirementCoverageDescription, requirementCoverageDescription);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -100,8 +110,15 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_aE_Requirements_requirementCoverageDescription, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Requirements selectToMeRequirementCoverageDescription(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirementCoverageDescription object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Requirements.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_aE_Requirements_requirementCoverageDescription, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,LR4vVMPai4fmsdn9Q5PXiVMhSv4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,YFrUuhYZSFkKu/ENR6hQJRz9igk=] */

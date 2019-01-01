@@ -61,12 +61,12 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies selectBlackbox_Dependencies() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_Dependencies);
+  public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies selectBlackbox_dependencies() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_dependencies);
   }
 
-  public Blackbox setBlackbox_Dependencies(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies blackbox_Dependencies) {
-    _setSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_Dependencies, blackbox_Dependencies);
+  public Blackbox setBlackbox_dependencies(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies blackbox_dependencies) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_dependencies, blackbox_dependencies);
     return this;
   }
     
@@ -138,7 +138,7 @@ public class Blackbox extends DynamicResource implements IBlackbox {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_Dependencies, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_dependencies, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Requirements.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_requirements, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -153,8 +153,8 @@ public class Blackbox extends DynamicResource implements IBlackbox {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox selectToMeBlackbox_Dependencies(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_Dependencies, object.getResource());
+  public static cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox selectToMeBlackbox_dependencies(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Dependencies object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox.class, cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_blackbox_aE_dependencies, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox selectToMeBlackbox_requirements(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBlackbox_Requirements object) {
@@ -162,4 +162,4 @@ public class Blackbox extends DynamicResource implements IBlackbox {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,lvJMdfwFhUu2TyyWEgcur3SX5zQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,V8mN3QbufxRiORQ9ZRA/5d5rVQo=] */

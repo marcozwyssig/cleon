@@ -360,8 +360,20 @@
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Plattform beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Plattform zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -381,17 +393,36 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					
-					
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Plattform erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 				<db:section >
 					<db:title>Infrastruktur &lt;SystemLayer&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Infrastruktur beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Infrastruktur zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -411,9 +442,16 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					
-					
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Infrastruktur erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 		</db:section>
@@ -456,10 +494,29 @@
 					
 					
 					
-					
-					<db:section>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows 2016 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows 2016 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Windows 2016 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
 						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Windows 2016 aufgelistet:</db:para>
-						<db:title>Erfüllte Anforderungen</db:title>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF006_Requirements_1 (FEA)</db:para>
@@ -468,16 +525,28 @@
 								<db:para>AF007_sss (FEA)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
+						
 					</db:section>
-					
 				</db:section>
 				<db:section >
 					<db:title>Linux &lt;SystemComponent&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Linux beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Linux zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -497,17 +566,21 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					<db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
 						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Linux aufgelistet:</db:para>
-						<db:title>Erfüllte Anforderungen</db:title>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF006_Requirements_1 (FEA)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
+						
 					</db:section>
-					
 				</db:section>
 			</db:section>
 		</db:section>
@@ -550,26 +623,67 @@
 					
 					
 					
-					
-					<db:section>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows Server Standard Virtual beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows Server Standard Virtual zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Windows Server Standard Virtual verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
 						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Windows Server Standard Virtual aufgelistet:</db:para>
-						<db:title>Erfüllte Anforderungen</db:title>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF004_Requirements_2_1 (CAP)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
+						
 					</db:section>
-					
 				</db:section>
 				<db:section >
 					<db:title>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					
-					
-					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows Server 2016 BareMetal beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows Server 2016 BareMetal zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Windows Server 2016 BareMetal verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Windows Server 2016 BareMetal erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 		</db:section>

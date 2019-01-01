@@ -429,14 +429,8 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IBlackboxFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderRequirements();
-
     @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> HasDependencies();
-
-    @IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderDependencies();
 
     @IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da")
     public java.lang.String RenderContentElement();
@@ -511,6 +505,56 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IBlackbox_DependenciesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IBlackbox_DependenciesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Blackbox_DependenciesFunctionsImpl implements IBlackbox_DependenciesFunctionsImpl {
+
+    public static final IBlackbox_DependenciesFunctionsImpl INSTANCE = new Blackbox_DependenciesFunctionsImpl();
+
+    private Blackbox_DependenciesFunctionsImpl() {}
+
+  }
+  
+  public static class Blackbox_DependenciesFunctions {
+
+    private Blackbox_DependenciesFunctions() {}
+
+  }
+
+  public static interface IBlackbox_RequirementsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IBlackbox_RequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Blackbox_RequirementsFunctionsImpl implements IBlackbox_RequirementsFunctionsImpl {
+
+    public static final IBlackbox_RequirementsFunctionsImpl INSTANCE = new Blackbox_RequirementsFunctionsImpl();
+
+    private Blackbox_RequirementsFunctionsImpl() {}
+
+  }
+  
+  public static class Blackbox_RequirementsFunctions {
+
+    private Blackbox_RequirementsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,QA4DZhYEO63JBxUGvGCS6CzKuvs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,erVJN5uoPFu4CLO2UGhqKPcaIW4=] */

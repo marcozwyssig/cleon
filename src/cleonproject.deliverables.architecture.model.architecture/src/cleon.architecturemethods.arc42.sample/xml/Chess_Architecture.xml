@@ -530,8 +530,20 @@
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -551,17 +563,36 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					
-					
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 				<db:section >
 					<db:title>Test2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -588,18 +619,47 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					
-					
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 				<db:section >
 					<db:title>Test3 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
 					
 					
 					
-					
-					
-					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 		</db:section>
@@ -639,17 +699,36 @@
 					
 					
 					
-					
-					<db:section>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
 						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2 aufgelistet:</db:para>
-						<db:title>Erfüllte Anforderungen</db:title>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF006_Requirements_1 (FEA)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
+						
 					</db:section>
-					
 				</db:section>
 			</db:section>
 			<db:section >
@@ -682,9 +761,31 @@
 					
 					
 					
-					
-					
-					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2_2 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2_2 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 			<db:section >
@@ -717,9 +818,31 @@
 					
 					
 					
-					
-					
-					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3_1 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3_1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 		</db:section>
@@ -764,8 +887,20 @@
 					
 					
 					
-					<db:section>
-						<db:title>Abhängigkeiten</db:title>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
 						<db:informaltable style="EAMod Requirement">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -785,9 +920,16 @@
 								</db:tr>
 							</db:tbody>
 						</db:informaltable>	
+						
 					</db:section>
-					
-					
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2_1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
 				</db:section>
 			</db:section>
 			<db:section >
@@ -839,17 +981,36 @@
 					
 					
 					
-					
-					<db:section>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section >
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2_1_1 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section >
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
 						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2_1_1 aufgelistet:</db:para>
-						<db:title>Erfüllte Anforderungen</db:title>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF006_Requirements_1 (FEA)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
+						
 					</db:section>
-					
 				</db:section>
 			</db:section>
 		</db:section>

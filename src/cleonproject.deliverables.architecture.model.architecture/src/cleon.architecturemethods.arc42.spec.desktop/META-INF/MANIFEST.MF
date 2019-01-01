@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.arc42.spec.desktop
 Bundle-SymbolicName: cleon.architecturemethods.arc42.spec.desktop.builtin;singleton:=true
-Bundle-Version: 0.4.55
+Bundle-Version: 0.4.56
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,11 +12,11 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.architecturestylesandpatterns.soa.spec.soa.builtin;bundle-version="0.4.55",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.55",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.55",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.55",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.55",
+ cleon.architecturestylesandpatterns.soa.spec.soa.builtin;bundle-version="0.4.56",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.56",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.56",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.56",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.56",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.arc42.spec.desktop,cleon.architecturemethods.arc42.spec.desktop.javamodel
 

@@ -286,6 +286,31 @@ public class FunctionSpace_Detailstudy {
 
   }
 
+  public static interface IDetailstudyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5ab3c7c5-13e9-11e9-a836-9d144e5bc2a5")
+    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface IDetailstudyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DetailstudyFunctionsImpl implements IDetailstudyFunctionsImpl {
+
+    public static final IDetailstudyFunctionsImpl INSTANCE = new DetailstudyFunctionsImpl();
+
+    private DetailstudyFunctionsImpl() {}
+
+  }
+  
+  public static class DetailstudyFunctions {
+
+    private DetailstudyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,IhLAI3QlDx2EJ4KPprz96N8WQwI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,LkMBGaa9dJxFWIPU2uB2Qhc3G9E=] */

@@ -49,6 +49,65 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface IAbstractDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("de5cc4d4-ba80-11e5-b56d-4f524d402f4b")
+    public java.lang.String GetDocumentPath();
+
+    @IDynamicResourceExtension.MethodId("3d579331-d3ec-11e5-9dfc-cf0f3e030023")
+    public java.lang.String GetFullFileName();
+
+    @IDynamicResourceExtension.MethodId("8eea2770-d3f0-11e5-9dfc-cf0f3e030023")
+    public java.lang.String GetFileName();
+
+    @IDynamicResourceExtension.MethodId("741b9c04-5e36-11e6-a777-551543f10110")
+    public java.lang.String GetDocumentName();
+
+  }
+  
+  public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractDocumentFunctionsImpl implements IAbstractDocumentFunctionsImpl {
+
+    public static final IAbstractDocumentFunctionsImpl INSTANCE = new AbstractDocumentFunctionsImpl();
+
+    private AbstractDocumentFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractDocumentFunctions {
+
+    private AbstractDocumentFunctions() {}
+
+  }
+
+  public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e010b098-09c8-11e9-9915-0d353533f3da")
+    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractChapterFunctionsImpl implements IAbstractChapterFunctionsImpl {
+
+    public static final IAbstractChapterFunctionsImpl INSTANCE = new AbstractChapterFunctionsImpl();
+
+    private AbstractChapterFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractChapterFunctions {
+
+    private AbstractChapterFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,/7ZeEEneyrqU8eRwJP3fDubs03s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,p7xnjVVi0QhbxagHBpQml2k6QH4=] */

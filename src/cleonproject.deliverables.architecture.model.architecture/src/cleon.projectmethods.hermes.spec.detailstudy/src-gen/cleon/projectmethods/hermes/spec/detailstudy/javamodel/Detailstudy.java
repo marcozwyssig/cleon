@@ -128,6 +128,16 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
   }
     
   @Override
+  public cleon.common.glossary.spec.glossary.javamodel.IGlossary selectGlossary() {
+    return _getSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary);
+  }
+
+  public Detailstudy setGlossary(cleon.common.glossary.spec.glossary.javamodel.IGlossary glossary) {
+    _setSingle(cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, glossary);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs() {
     return _getSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs);
   }
@@ -202,6 +212,7 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IDrivers.class, cleon.projectmethods.hermes.spec.detailstudy.DetailstudyPackage.Detailstudy_drivers, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluations.class, cleon.projectmethods.hermes.spec.detailstudy.DetailstudyPackage.Detailstudy_evaluation, visitor);
+    _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_noParagraphs, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
@@ -225,4 +236,4 @@ public class Detailstudy extends DynamicResource implements IDetailstudy {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,h60uSKFk4Jme0fIccqhw1YgulvY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,vAg2FgmjhwgNjUQfV7otNcxlsMQ=] */

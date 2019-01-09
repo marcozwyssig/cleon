@@ -21,8 +21,10 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.doc.spec.doc.builtin;bundle-version="0.4.57",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.57",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.57",
- cleon.common.doc.template.docbook.builtin;bundle-version="0.4.57",
  cleon.projectmethods.hermes.spec.detailstudy.builtin;bundle-version="0.4.57",
+ cleon.common.glossary.template.docbook.builtin;bundle-version="0.4.57",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.57",
+ cleon.common.doc.template.docbook.builtin;bundle-version="0.4.57",
  cleon.common.xml.spec.xml.builtin;bundle-version="0.4.57",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.projectmethods.hermes.sample,cleon.projectmethods.hermes.sample.javamodel

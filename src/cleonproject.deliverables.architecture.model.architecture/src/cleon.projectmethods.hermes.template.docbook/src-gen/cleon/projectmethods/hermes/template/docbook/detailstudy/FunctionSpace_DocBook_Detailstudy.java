@@ -171,6 +171,31 @@ public class FunctionSpace_DocBook_Detailstudy {
 
   }
 
+  public static interface IDetailstudyFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("79326986-13eb-11e9-a836-9d144e5bc2a5")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IDetailstudyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DetailstudyFunctionsImpl implements IDetailstudyFunctionsImpl {
+
+    public static final IDetailstudyFunctionsImpl INSTANCE = new DetailstudyFunctionsImpl();
+
+    private DetailstudyFunctionsImpl() {}
+
+  }
+  
+  public static class DetailstudyFunctions {
+
+    private DetailstudyFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,mR2OXsK8ci0lrPEHUpClmszM+lc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,TckiYEnsJ/uC16mPxS1KPOsQ2ls=] */

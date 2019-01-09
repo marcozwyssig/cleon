@@ -1,4 +1,5 @@
 chcp 65001
+cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_projectmethods_hermes_sample_detailstudy/Sample_Simple_Analyse_Detailstudie.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_projectmethods_hermes_sample_projectmanagement/LE02_Document_1__Draft__1_0_0_AP01.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_projectmethods_hermes_sample_projectmanagement/Sample_Planung.adoc
 cmd /c bundle exec asciidoctor -r asciidoctor-diagram -a data-uri cleon_projectmethods_hermes_sample_projectmanagement/Kontrolle_Sample_Planung.adoc

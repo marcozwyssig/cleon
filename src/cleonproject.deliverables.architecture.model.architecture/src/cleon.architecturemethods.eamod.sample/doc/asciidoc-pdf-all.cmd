@@ -1,5 +1,4 @@
 chcp 65001
-cmd /c bundle exec asciidoctor-pdf cleon_architecturemethods_eamod_sample_analysis/Sample_Simple_Analyse_Detailstudie.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_architecturemethods_eamod_sample_chrv/Sample_Requirements_Anforderungen.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_architecturemethods_eamod_sample_testing/My_Testing.adoc
 cmd /c bundle exec asciidoctor-pdf cleon_architecturemethods_eamod_sample_ncv/F_higkeiten.adoc

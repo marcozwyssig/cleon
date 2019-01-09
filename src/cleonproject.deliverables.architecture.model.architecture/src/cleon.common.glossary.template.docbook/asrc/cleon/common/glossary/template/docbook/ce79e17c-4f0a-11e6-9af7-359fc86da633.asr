@@ -474,6 +474,11 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="162b8e80-13f1-11e9-a836-9d144e5bc2a5" type="resource" guid="162af23c-13f1-11e9-a836-9d144e5bc2a5">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="1c6a5f66-13f1-11e9-a836-9d144e5bc2a5" type="resource" guid="1c69ea33-13f1-11e9-a836-9d144e5bc2a5" />
+          </owns>
+        </resource>
       </owns>
     </resource>
   </owns>
@@ -1909,6 +1914,34 @@
               </predicate>
               <predicate guid="c144d2bf-6879-11e1-9ee5-63ac6c762890">
                 <object statement-guid="8a358d28-3e06-11e6-9bf8-29c5fda07fa3" type="resource" guid="f392c0aa-7abe-11df-8d10-15471893e19d" />
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="162b8e80-13f1-11e9-a836-9d144e5bc2a5">
+            <resource guid="162af23c-13f1-11e9-a836-9d144e5bc2a5">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="162b194e-13f1-11e9-a836-9d144e5bc2a5" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="16c2ec81-13f1-11e9-a836-9d144e5bc2a5" type="literal">RenderElementName</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="1c6a5f66-13f1-11e9-a836-9d144e5bc2a5">
+                  <resource guid="1c69ea33-13f1-11e9-a836-9d144e5bc2a5">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="1c6a1145-13f1-11e9-a836-9d144e5bc2a5" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="1d198b27-13f1-11e9-a836-9d144e5bc2a5" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="162b405f-13f1-11e9-a836-9d144e5bc2a5" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="1839fc22-13f1-11e9-a836-9d144e5bc2a5" type="literal">return "chapter";</object>
               </predicate>
             </resource>
           </object>

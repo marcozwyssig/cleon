@@ -51,10 +51,16 @@ public class FunctionSpace_DocBook_Glossary {
     @IDynamicResourceExtension.MethodId("0f687b00-3e06-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("162af23c-13f1-11e9-a836-9d144e5bc2a5")
+    public java.lang.String RenderElementName();
+
   }
   
   public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("162af23c-13f1-11e9-a836-9d144e5bc2a5")
+    public java.lang.String RenderElementName(final cleon.common.glossary.spec.glossary.javamodel.IGlossary glossary);
+
   }
   
   public static class GlossaryFunctionsImpl implements IGlossaryFunctionsImpl {
@@ -63,14 +69,23 @@ public class FunctionSpace_DocBook_Glossary {
 
     private GlossaryFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderElementName(final cleon.common.glossary.spec.glossary.javamodel.IGlossary glossary) {
+      return "chapter";
+    }
+
   }
   
   public static class GlossaryFunctions {
 
     private GlossaryFunctions() {}
 
+    public static java.lang.String RenderElementName(final cleon.common.glossary.spec.glossary.javamodel.IGlossary glossary) {
+      return DynamicResourceUtil.invoke(IGlossaryFunctionsImpl.class, GlossaryFunctionsImpl.INSTANCE, glossary).RenderElementName(glossary);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,hCVgfKf7aY8LqMzCUcbfAE7mQb0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,/TMBDSZiW/QEPoar4aZOlmnqNBs=] */

@@ -8,6 +8,8 @@ public interface IRequirementsManagement extends cleon.common.doc.spec.doc.docum
   
   // relations
   
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.about.javamodel.IEAMod_About selectAbout();
+  
   public cleon.architecturemethods.eamod.spec.eamod.chrv.introduction.javamodel.IIntroduction selectIntroduction();
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel.IMotivation selectMotivation();
@@ -22,4 +24,4 @@ public interface IRequirementsManagement extends cleon.common.doc.spec.doc.docum
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,hpcuPVOZJWZrG5RBSgQpbyrQZh4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,P8rTGGGDYZtnbtZ3Qdgho8nUEwo=] */

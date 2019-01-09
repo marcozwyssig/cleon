@@ -446,31 +446,31 @@ public class FunctionSpace_DocBook_CHRV {
 
   }
 
-  public static interface IMethodFunctions extends IDynamicResourceExtension {
+  public static interface IEAModMethodFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("29a04aac-09b2-11e9-8c40-11db3668c0c9")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IEAModMethodFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class MethodFunctionsImpl implements IMethodFunctionsImpl {
+  public static class EAModMethodFunctionsImpl implements IEAModMethodFunctionsImpl {
 
-    public static final IMethodFunctionsImpl INSTANCE = new MethodFunctionsImpl();
+    public static final IEAModMethodFunctionsImpl INSTANCE = new EAModMethodFunctionsImpl();
 
-    private MethodFunctionsImpl() {}
+    private EAModMethodFunctionsImpl() {}
 
   }
   
-  public static class MethodFunctions {
+  public static class EAModMethodFunctions {
 
-    private MethodFunctions() {}
+    private EAModMethodFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,ClqNj3/TuFEFzc0Xtx9hYhB0JCo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,zfSY4X6P02ORQWyEZqiywMyQxzQ=] */

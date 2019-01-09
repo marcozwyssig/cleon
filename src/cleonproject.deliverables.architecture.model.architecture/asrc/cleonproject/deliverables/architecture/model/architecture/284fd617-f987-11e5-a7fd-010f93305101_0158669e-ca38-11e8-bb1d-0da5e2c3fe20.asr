@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="0158669e-ca38-11e8-bb1d-0da5e2c3fe20">
   <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <resource statement-guid="ffd5c8e3-ca38-11e8-9789-69b8b4c178d7" type="resource" guid="ffd5a1d0-ca38-11e8-9789-69b8b4c178d7" />
     <resource statement-guid="623c0fbb-ca39-11e8-9e9d-8dc67753571a" type="resource" guid="623bc198-ca39-11e8-9e9d-8dc67753571a" />
   </owns>
   <owns predicate="7d4069b9-f8cf-11e5-bc92-c963417b9cea">
@@ -21,16 +20,6 @@
     <object statement-guid="01c27313-ca38-11e8-bb1d-0da5e2c3fe20" type="literal">eamod</object>
   </predicate>
   <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <object statement-guid="ffd5c8e3-ca38-11e8-9789-69b8b4c178d7">
-      <resource guid="ffd5a1d0-ca38-11e8-9789-69b8b4c178d7">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="ffd5c8e2-ca38-11e8-9789-69b8b4c178d7" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
-        </predicate>
-        <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
-          <object statement-guid="001458cf-ca39-11e8-9789-69b8b4c178d7" type="resource" guid="beac8a55-4f08-11e6-a115-99fb8013e67b" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="623c0fbb-ca39-11e8-9e9d-8dc67753571a">
       <resource guid="623bc198-ca39-11e8-9e9d-8dc67753571a">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

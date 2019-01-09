@@ -34,6 +34,9 @@ public class FunctionSpace_DocBook {
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("6c18ef67-3e09-11e6-9bf8-29c5fda07fa3")
+    public java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement);
+
   }
   
   public static class DocumentElementFunctionsImpl implements IDocumentElementFunctionsImpl {
@@ -42,11 +45,20 @@ public class FunctionSpace_DocBook {
 
     private DocumentElementFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement) {
+      return null;
+    }
+
   }
   
   public static class DocumentElementFunctions {
 
     private DocumentElementFunctions() {}
+
+    public static java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement) {
+      return DynamicResourceUtil.invoke(IDocumentElementFunctionsImpl.class, DocumentElementFunctionsImpl.INSTANCE, documentElement).RenderAttributes(documentElement);
+    }
 
   }
 
@@ -651,4 +663,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,dM2jKvIatD14THI8asj0criQLJg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,qiziVhiOF6cEA9fn2UKcK/uRjC8=] */

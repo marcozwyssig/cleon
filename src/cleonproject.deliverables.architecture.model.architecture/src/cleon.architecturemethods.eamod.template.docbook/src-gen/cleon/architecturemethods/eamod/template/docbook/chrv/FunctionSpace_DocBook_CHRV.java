@@ -48,9 +48,6 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("8c34ea43-3e07-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderContentElement();
 
-    @IDynamicResourceExtension.MethodId("a790eef1-3e09-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderAttributes();
-
     @IDynamicResourceExtension.MethodId("a59ef479-3e12-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderElementName();
 
@@ -115,9 +112,6 @@ public class FunctionSpace_DocBook_CHRV {
 
     @IDynamicResourceExtension.MethodId("d0380aa7-3f61-11e6-85d8-3328a679e82b")
     public java.lang.String RenderContentElement();
-
-    @IDynamicResourceExtension.MethodId("6334a805-3f69-11e6-85d8-3328a679e82b")
-    public java.lang.String RenderAttributes();
 
     @IDynamicResourceExtension.MethodId("59275c16-a523-11e8-a2c4-7500fc0b7ba9")
     public java.lang.String RenderDescriptions();
@@ -215,9 +209,6 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("4c5a2c11-3f6a-11e6-85d8-3328a679e82b")
     public java.lang.String RenderContentElement();
 
-    @IDynamicResourceExtension.MethodId("4c5a2cdd-3f6a-11e6-85d8-3328a679e82b")
-    public java.lang.String RenderAttributes();
-
     @IDynamicResourceExtension.MethodId("c6be5c8a-380b-11e8-a088-c32925c50d0b")
     public java.lang.String RenderDescriptions();
 
@@ -314,9 +305,6 @@ public class FunctionSpace_DocBook_CHRV {
     @IDynamicResourceExtension.MethodId("6eef565e-3f6e-11e6-85d8-3328a679e82b")
     public java.lang.String RenderContentElement();
 
-    @IDynamicResourceExtension.MethodId("6eef5750-3f6e-11e6-85d8-3328a679e82b")
-    public java.lang.String RenderAttributes();
-
     @IDynamicResourceExtension.MethodId("caedd5b9-380b-11e8-a088-c32925c50d0b")
     public java.lang.String RenderDescriptions();
 
@@ -359,9 +347,6 @@ public class FunctionSpace_DocBook_CHRV {
 
     @IDynamicResourceExtension.MethodId("12ac7c84-3f7b-11e6-85d8-3328a679e82b")
     public java.lang.String RenderElementName();
-
-    @IDynamicResourceExtension.MethodId("5a4ea86b-e8e1-11e8-b810-cdb2b421fd42")
-    public java.lang.String RenderAttributes();
 
   }
   
@@ -513,4 +498,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,YijGcSBWSvo/8eIozFLucajsDE0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,3qdtjqKaFPw5VJi0VnkRG80ntWo=] */

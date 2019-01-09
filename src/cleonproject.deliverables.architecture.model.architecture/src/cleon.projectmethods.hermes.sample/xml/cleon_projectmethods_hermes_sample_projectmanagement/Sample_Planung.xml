@@ -3,13 +3,13 @@
 	<db:title>Sample Planung</db:title>
 	
 	
-	<db:chapter >
+	<db:chapter xml:id="ea.fc6123a9-c1d8-11e6-8517-1bc2821627a9">
 		<db:title>Ausgangslage</db:title>
 		
 		
 		
 		
-		<db:section >
+		<db:section xml:id="ea.fd4da68d-c1d8-11e6-8517-1bc2821627a9">
 			<db:title>Ausgangslage A</db:title>
 			
 			
@@ -17,7 +17,7 @@
 			
 			
 		</db:section>
-		<db:section >
+		<db:section xml:id="ea.01cc02d9-c1d9-11e6-8517-1bc2821627a9">
 			<db:title>Ausgangslage B</db:title>
 			
 			
@@ -26,13 +26,13 @@
 			
 		</db:section>
 	</db:chapter>
-	<db:chapter >
+	<db:chapter xml:id="ea.abb3cac7-bc93-11e6-904c-8bf6f8927ff0">
 		<db:title>Ziele</db:title>
 		
 		
 		
 		
-		<db:section >
+		<db:section xml:id="ea.b555d586-210e-11e8-9bf6-d910b575bad9">
 			<db:title>Projektziele</db:title>
 			
 			
@@ -126,7 +126,7 @@
 			</db:section>
 			
 		</db:section>
-		<db:section >
+		<db:section xml:id="ea.b7b3e95a-210e-11e8-9bf6-d910b575bad9">
 			<db:title>Systemziele</db:title>
 			
 			
@@ -221,25 +221,25 @@
 			
 		</db:section>
 	</db:chapter>
-	<db:chapter >
+	<db:chapter xml:id="ea.2ad6e389-c00a-11e5-a165-d34765931e10">
 		<db:title>Zeitplan</db:title>
 		
 		
 		
 		
-		<db:section >
+		<db:section xml:id="ea.34b52211-c00a-11e5-a165-d34765931e10">
 			<db:title>Meilensteine</db:title>
 			
 			
 			
 			
-			<db:section >
+			<db:section xml:id="ea.775ec647-d71a-11e6-a422-8b5491da3f30">
 				<db:title>Konzeptphase</db:title>
 				
 				
 				
 				
-				<db:section >
+				<db:section xml:id="ea.5efcf4c0-c00a-11e5-a165-d34765931e10">
 					<db:title>Release MS20</db:title>
 					
 					
@@ -247,7 +247,7 @@
 					
 					
 				</db:section>
-				<db:section >
+				<db:section xml:id="ea.188cb134-d69a-11e6-93e6-6fab9694fc9f">
 					<db:title>Release MS21</db:title>
 					
 					
@@ -257,19 +257,19 @@
 				</db:section>
 			</db:section>
 		</db:section>
-		<db:section >
+		<db:section xml:id="ea.9bacb140-c00a-11e5-a165-d34765931e10">
 			<db:title>Sprints</db:title>
 			
 			
 			
 			
-			<db:section >
+			<db:section xml:id="ea.71072dde-c00a-11e5-a165-d34765931e10">
 				<db:title>Sprint 1</db:title>
 				
 				
 				
 				
-				<db:section >
+				<db:section xml:id="ea.e0b9204f-c00b-11e5-a165-d34765931e10">
 					<db:title>Sprint 1 SprintBacklog </db:title>
 					
 					
@@ -277,7 +277,7 @@
 					
 					
 				</db:section>
-				<db:section >
+				<db:section xml:id="ea.495536ee-c00c-11e5-a165-d34765931e10">
 					<db:title>Sprint 1 Kapazit&#228;t</db:title>
 					
 					
@@ -285,7 +285,7 @@
 					
 					
 				</db:section>
-				<db:section >
+				<db:section xml:id="ea.dfb3f90e-c126-11e5-bfd0-47571a06cb62">
 					<db:title>Sprint 1 Ziele</db:title>
 					
 					
@@ -294,13 +294,13 @@
 					
 				</db:section>
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.c265319f-cb72-11e5-bc87-a1fadf56ded8">
 				<db:title>Sprint 2</db:title>
 				
 				
 				
 				
-				<db:section >
+				<db:section xml:id="ea.2d7c23e1-2f23-11e6-8bd9-a77b8d2a3a0e">
 					<db:title>Sprint 2 SprintBacklog </db:title>
 					
 					
@@ -308,7 +308,7 @@
 					
 					
 				</db:section>
-				<db:section >
+				<db:section xml:id="ea.35e78d2e-d315-11e6-a0d7-73c8de4f72ae">
 					<db:title>Sprint 2 Kapazit&#228;t</db:title>
 					
 					
@@ -316,7 +316,7 @@
 					
 					
 				</db:section>
-				<db:section >
+				<db:section xml:id="ea.29c9a328-2f23-11e6-8bd9-a77b8d2a3a0e">
 					<db:title>Sprint 2 Ziele</db:title>
 					
 					
@@ -325,7 +325,7 @@
 					
 				</db:section>
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.1118421a-2f20-11e6-8bd9-a77b8d2a3a0e">
 				<db:title>Sprint 3</db:title>
 				
 				
@@ -333,7 +333,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.d906fa38-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 4</db:title>
 				
 				
@@ -341,7 +341,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.dafef9b5-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 5</db:title>
 				
 				
@@ -349,7 +349,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.dce211a2-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 6</db:title>
 				
 				
@@ -357,7 +357,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.ddc14e1f-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 7</db:title>
 				
 				
@@ -365,7 +365,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.deb2b30c-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 8</db:title>
 				
 				
@@ -373,7 +373,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.dfe03699-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 9</db:title>
 				
 				
@@ -381,7 +381,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.e09a37d6-8a18-11e6-8085-d9bdba2de943">
 				<db:title>Sprint 10</db:title>
 				
 				
@@ -389,7 +389,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.1ac31945-d69a-11e6-93e6-6fab9694fc9f">
 				<db:title>Sprint 11</db:title>
 				
 				
@@ -397,7 +397,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.1fed6cf5-d69a-11e6-93e6-6fab9694fc9f">
 				<db:title>Sprint 12</db:title>
 				
 				
@@ -405,7 +405,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.dc4be940-d163-11e8-882b-c9297140cb78">
 				<db:title>Sprint 13</db:title>
 				
 				
@@ -413,7 +413,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.ddcb5da4-d163-11e8-882b-c9297140cb78">
 				<db:title>Sprint 14</db:title>
 				
 				
@@ -421,7 +421,7 @@
 				
 				
 			</db:section>
-			<db:section >
+			<db:section xml:id="ea.e17d1b4f-d163-11e8-882b-c9297140cb78">
 				<db:title>Sprint 15</db:title>
 				
 				
@@ -430,7 +430,7 @@
 				
 			</db:section>
 		</db:section>
-		<db:section >
+		<db:section xml:id="ea.f6747ba1-cb71-11e5-bc87-a1fadf56ded8">
 			<db:title>Termine</db:title>
 			
 			

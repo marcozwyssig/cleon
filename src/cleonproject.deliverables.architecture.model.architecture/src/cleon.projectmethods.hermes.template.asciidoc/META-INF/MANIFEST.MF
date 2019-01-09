@@ -14,10 +14,12 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
  cleon.projectmethods.hermes.spec.projectsteering.builtin;bundle-version="0.4.57",
  cleon.common.doc.template.asciidoc.builtin;bundle-version="0.4.57",
+ cleon.projectmethods.hermes.spec.detailstudy.builtin;bundle-version="0.4.57",
  cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.57",
  cleon.common.doc.spec.doc.builtin;bundle-version="0.4.57",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.57",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.57",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.57",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.projectmethods.hermes.template.asciidoc,cleon.projectmethods.hermes.template.asciidoc.javamodel
 

@@ -18,7 +18,6 @@ public class ChrvPackage {
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Stakeholders = new Resource("f93b17ec-3f7d-11e6-85d8-3328a679e82b");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_ProjectSubjectArea = new Resource("2cc8812c-3810-11e8-a088-c32925c50d0b");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Glossary = new Resource("2219233f-e8d9-11e8-b810-cdb2b421fd42");
-  public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_About = new Resource("5d5940ea-e8f2-11e8-b810-cdb2b421fd42");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Method = new Resource("22bd7197-09b2-11e9-8c40-11db3668c0c9");
   
   /* Begin Protected Region [[user]] */
@@ -40,4 +39,4 @@ public class ChrvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.docbook.chrv,wh6IRES+levlWskrMs3SXMmMt7I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.docbook.chrv,QjnLkrfn8THmrHfI0qg0VJeW6nw=] */

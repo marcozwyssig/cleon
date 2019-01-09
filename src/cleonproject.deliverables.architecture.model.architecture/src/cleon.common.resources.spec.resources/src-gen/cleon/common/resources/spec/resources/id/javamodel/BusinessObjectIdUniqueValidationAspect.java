@@ -19,15 +19,25 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 	protected BusinessObjectIdUniqueValidationAspect(Class<T> classInstance) {
 		_classInstance = classInstance;
 	}
+	
+	protected List<T> getResources(IDynamicResourceRepository resourceRepository, ValidationContext context) 
+	{
+		return resourceRepository.getAllResources(_classInstance);
+	}
+	
+	
+	protected T getObject( IDynamicResourceRepository resourceRepository, ValidationContext context)
+	{
+		return resourceRepository.getResource(_classInstance, context.getResource());
+	}
 
 	@Override
 	public void validate(ValidationContext context, List<IResourceInconsistency> inconsistencyList) {
 		ITypeSystem typeSystem = context.getTypeSystem();
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
-		List<T> resources = resourceRepository.getAllResources(_classInstance);
-		IIntegerBusinessObjectId businessObjectId = resourceRepository.getResource(IIntegerBusinessObjectId.class,
-				context.getResource());
+		List<T> resources = getResources(resourceRepository, context);
+		T businessObjectId = getObject(resourceRepository, context);
 
 		List<T> duplicateItems = resources.stream()
 				.filter(x -> x.selectIdentifier().equals(businessObjectId.selectIdentifier()))

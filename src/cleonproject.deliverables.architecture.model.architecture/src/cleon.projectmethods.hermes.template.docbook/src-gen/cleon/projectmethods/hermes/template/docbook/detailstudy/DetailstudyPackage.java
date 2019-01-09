@@ -10,7 +10,6 @@ public class DetailstudyPackage {
   public static final Resource FunctionSpace_aE_DocBook_aE_Detailstudy_Drivers = new Resource("e759f071-b822-11e8-b3ad-4d0f42d6d5c2");
   public static final Resource FunctionSpace_aE_DocBook_aE_Detailstudy_Evaluations = new Resource("e759f07a-b822-11e8-b3ad-4d0f42d6d5c2");
   public static final Resource FunctionSpace_aE_DocBook_aE_Detailstudy_Solutions = new Resource("e759f0bc-b822-11e8-b3ad-4d0f42d6d5c2");
-  public static final Resource FunctionSpace_aE_DocBook_aE_Detailstudy_Detailstudy = new Resource("754a33ad-13eb-11e9-a836-9d144e5bc2a5");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +30,4 @@ public class DetailstudyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.template.docbook.detailstudy,30dhflewxHD/YjqG0j7r29AJXko=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.template.docbook.detailstudy,lAFK2VGIJ6LtLQDvbcqfa9chuqo=] */

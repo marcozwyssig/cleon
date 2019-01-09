@@ -99,31 +99,6 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface Iarc42Functions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("de7cc45e-d17f-11e8-b18f-df1540bb7a5c")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface Iarc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class arc42FunctionsImpl implements Iarc42FunctionsImpl {
-
-    public static final Iarc42FunctionsImpl INSTANCE = new arc42FunctionsImpl();
-
-    private arc42FunctionsImpl() {}
-
-  }
-  
-  public static class arc42Functions {
-
-    private arc42Functions() {}
-
-  }
-
   public static interface IDecompositionBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de7cc46d-d17f-11e8-b18f-df1540bb7a5c")
@@ -557,4 +532,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,erVJN5uoPFu4CLO2UGhqKPcaIW4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,+T4N+vI41PZS5GG4wlWZU2tmTeE=] */

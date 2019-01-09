@@ -23,6 +23,9 @@ public class FunctionSpace_DocBook_Glossary {
     @IDynamicResourceExtension.MethodId("d5dc4ac1-4f0a-11e6-9af7-359fc86da633")
     public java.lang.String RenderGlossary();
 
+    @IDynamicResourceExtension.MethodId("79326986-13eb-11e9-a836-9d144e5bc2a5")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface IGlossaryAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -70,4 +73,4 @@ public class FunctionSpace_DocBook_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,zE5BijYVV7/EH8+m+mcczDUTLGA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ce79e17c-4f0a-11e6-9af7-359fc86da633,hCVgfKf7aY8LqMzCUcbfAE7mQb0=] */

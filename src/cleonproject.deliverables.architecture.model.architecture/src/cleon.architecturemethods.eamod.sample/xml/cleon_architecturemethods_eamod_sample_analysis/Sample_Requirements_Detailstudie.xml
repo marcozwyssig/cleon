@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
-	<db:title>Sample_Requirements_Analyse Detailstudie</db:title>
+	<db:title>Sample_Requirements Detailstudie</db:title>
 	
 	
 	<db:chapter xml:id="ea.af571f0a-a6f9-11e8-9c81-8bd68c62e435">
@@ -33,40 +33,57 @@
 				    <db:tr>
 				        <db:th>Kriterium</db:th>
 				        <db:th>Beschreibung</db:th>
-				        <db:th>Wichtigkeit</db:th>	        
+				        <db:th>Gewichtung</db:th>	        
 				    </db:tr>
 				</db:thead>
 				<db:tbody>
 					<db:tr>
 						<db:td>OPEX</db:td>
-						<db:td></db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
 						<db:td>60.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>Termin</db:td>
-						<db:td></db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
 						<db:td>10.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF006_Requirements_1 (FEA) (Must have)</db:td>
-						<db:td>Desc 1
-						       Desc 2
-						       Desc 3</db:td>
+						<db:td>
+							<db:para>Beschreibung:
+							         Desc 1
+							         Desc 2
+							         Desc 3
+							         Formale Defintion:
+							         Das System muss f&#228;hig sein Rezepte drucken</db:para>		
+						</db:td>
 						<db:td>30.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have)</db:td>
-						<db:td></db:td>
+						<db:td>
+							<db:para>Formale Defintion:
+							         </db:para>		
+						</db:td>
 						<db:td>30.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF007_sss (FEA) (Must have)</db:td>
-						<db:td></db:td>
+						<db:td>
+							<db:para>Formale Defintion:
+							         Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>		
+						</db:td>
 						<db:td>30.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria</db:td>
-						<db:td></db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
 						<db:td>10.00%</db:td>
 					</db:tr>			
 				</db:tbody>
@@ -116,25 +133,25 @@
 		
 		<db:informaltable style="EAMod Requirement">
 			<db:col width="30%" />
-			<db:col width="30%" />	
-			<db:col width="40%" />	
+			<db:col width="50%" />	
+			<db:col width="20%" />	
 			<db:thead>
 			    <db:tr>
 			        <db:th>Lösung</db:th>
-			        <db:th>Auswertung</db:th>
 			        <db:th>Auswertung [%]</db:th>
+			        <db:th>Auswertung</db:th>
 			    </db:tr>
 			</db:thead>
 			<db:tbody>
 				<db:tr>
 					<db:td>Solution 1</db:td>
-					<db:td>4.30</db:td>
 					<db:td>50.59%</db:td>
+					<db:td>4.30 von 8.50</db:td>
 				</db:tr>			
 				<db:tr>
 					<db:td>Solution 2</db:td>
-					<db:td>3.40</db:td>
 					<db:td>40.00%</db:td>
+					<db:td>3.40 von 8.50</db:td>
 				</db:tr>			
 			</db:tbody>
 		</db:informaltable>
@@ -145,15 +162,15 @@
 			<db:para>asdfasdf</db:para>
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="20%" />
-				<db:col width="20%" />	
+				<db:col width="30%" />
+				<db:col width="10%" />	
 				<db:col width="40%" />
 				<db:col width="20%" />	
 				<db:thead>
 				    <db:tr>
 				        <db:th>Kriterium</db:th>
 				        <db:th>Bewertung</db:th>
-				        <db:th>Beschreibung</db:th>	        
+				        <db:th>Einschätzung</db:th>	        
 				        <db:th>Auswertung</db:th>
 				    </db:tr>
 				</db:thead>
@@ -205,15 +222,15 @@
 			<db:para>dsafasdf</db:para>
 			
 			<db:informaltable style="EAMod Requirement">
-				<db:col width="20%" />
-				<db:col width="20%" />	
+				<db:col width="30%" />
+				<db:col width="10%" />	
 				<db:col width="40%" />
 				<db:col width="20%" />	
 				<db:thead>
 				    <db:tr>
 				        <db:th>Kriterium</db:th>
 				        <db:th>Bewertung</db:th>
-				        <db:th>Beschreibung</db:th>	        
+				        <db:th>Einschätzung</db:th>	        
 				        <db:th>Auswertung</db:th>
 				    </db:tr>
 				</db:thead>
@@ -262,7 +279,7 @@
 			<db:title>Fazit</db:title>
 			
 			
-			<db:para>Das Fazit der Auswertung ist, dass der Lösungsvorschlag *"Solution 1"* zu bevorzugen ist.</db:para>
+			<db:para>Das Fazit der Auswertung ist, dass die Lösung "Solution 1" zu bevorzugen ist.</db:para>
 			
 			
 		</db:section>

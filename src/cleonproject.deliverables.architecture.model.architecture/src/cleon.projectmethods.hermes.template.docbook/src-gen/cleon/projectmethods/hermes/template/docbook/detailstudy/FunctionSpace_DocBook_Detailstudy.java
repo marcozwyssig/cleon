@@ -96,7 +96,7 @@ public class FunctionSpace_DocBook_Detailstudy {
   public static interface IDriversFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e759f079-b822-11e8-b3ad-4d0f42d6d5c2")
-    public java.lang.String GetContext();
+    public java.lang.String GetContextName();
 
   }
   
@@ -173,4 +173,4 @@ public class FunctionSpace_DocBook_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,mR2OXsK8ci0lrPEHUpClmszM+lc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,LoXZE0bzZCADV4WnsjIn0G300ig=] */

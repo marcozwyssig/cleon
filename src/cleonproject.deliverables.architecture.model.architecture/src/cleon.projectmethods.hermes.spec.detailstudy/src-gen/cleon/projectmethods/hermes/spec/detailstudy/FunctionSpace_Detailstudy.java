@@ -26,6 +26,9 @@ public class FunctionSpace_Detailstudy {
     @IDynamicResourceExtension.MethodId("981f3e73-0547-11e6-adf9-af3c4dc80bc3")
     public java.lang.Double CalculateRelativeScore();
 
+    @IDynamicResourceExtension.MethodId("dd4a48c8-13fc-11e9-a836-9d144e5bc2a5")
+    public java.lang.Double CalculateMaxScore();
+
   }
   
   public static interface ISolutionsEvaluationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -35,6 +38,9 @@ public class FunctionSpace_Detailstudy {
 
     @IDynamicResourceExtension.MethodId("981f3e73-0547-11e6-adf9-af3c4dc80bc3")
     public java.lang.Double CalculateRelativeScore(final cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation);
+
+    @IDynamicResourceExtension.MethodId("dd4a48c8-13fc-11e9-a836-9d144e5bc2a5")
+    public java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation);
 
   }
   
@@ -60,6 +66,13 @@ public class FunctionSpace_Detailstudy {
       /* End Protected Region   [[981f3e73-0547-11e6-adf9-af3c4dc80bc3]] */
     }
 
+    @Override
+    public java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
+      /* Begin Protected Region [[dd4a48c8-13fc-11e9-a836-9d144e5bc2a5]] */
+        return solutionsEvaluation.selectEvaluation().values().stream().mapToDouble(p -> p.extension(IEvaluationFunctions.class).CalculateMaxScore()).sum();
+      /* End Protected Region   [[dd4a48c8-13fc-11e9-a836-9d144e5bc2a5]] */
+    }
+
   }
   
   public static class SolutionsEvaluationFunctions {
@@ -72,6 +85,10 @@ public class FunctionSpace_Detailstudy {
 
     public static java.lang.Double CalculateRelativeScore(final cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
       return DynamicResourceUtil.invoke(ISolutionsEvaluationFunctionsImpl.class, SolutionsEvaluationFunctionsImpl.INSTANCE, solutionsEvaluation).CalculateRelativeScore(solutionsEvaluation);
+    }
+
+    public static java.lang.Double CalculateMaxScore(final cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation solutionsEvaluation) {
+      return DynamicResourceUtil.invoke(ISolutionsEvaluationFunctionsImpl.class, SolutionsEvaluationFunctionsImpl.INSTANCE, solutionsEvaluation).CalculateMaxScore(solutionsEvaluation);
     }
 
   }
@@ -313,4 +330,4 @@ public class FunctionSpace_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,LkMBGaa9dJxFWIPU2uB2Qhc3G9E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,WIXwkfDetQoFo1ElZc6+Wvt06Wg=] */

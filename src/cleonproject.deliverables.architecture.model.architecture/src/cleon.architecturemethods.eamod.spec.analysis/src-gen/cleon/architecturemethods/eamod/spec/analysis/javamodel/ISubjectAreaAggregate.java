@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.analysis.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRequirementsAggregate extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteriaAggregate {
+public interface ISubjectAreaAggregate extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteriaAggregate {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1e2f32b0-a6f8-11e8-9c81-8bd68c62e435");
   
@@ -16,4 +16,4 @@ public interface IRequirementsAggregate extends cleon.projectmethods.hermes.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,QfdZ4/I4YscEg+PApo9NYPwxZzg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,Y/v+yM5wQDF4V5/2y7Z98TDlGNw=] */

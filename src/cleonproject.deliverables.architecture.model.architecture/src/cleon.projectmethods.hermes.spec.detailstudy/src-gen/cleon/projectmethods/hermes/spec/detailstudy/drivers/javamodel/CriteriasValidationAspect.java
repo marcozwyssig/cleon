@@ -31,7 +31,7 @@ public class CriteriasValidationAspect implements IResourceValidationAspect {
 			double sum = criteriaComposite.selectCriterias().stream().mapToDouble(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
 			if( sum != 100)
 			{
-				String errormessage = String.format("The sum of weighting must be 100%% over all goals (actual sum is %1$d%%)", sum);
+				String errormessage = String.format("The sum of weighting must be 100 over all goals (actual sum is %.2f)", sum);
 				inconsistencyList.add(new PredicateInconsistency(context
 						.getPackage(), context.getResource(),
 						DriversPackage.CriteriaAggregateAware_criterias,

@@ -54,7 +54,12 @@ public class FunctionSpace_Detailstudy {
     @Override
     public java.lang.Double GetWeighting(final cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementsAggregate requirementsAggregate) {
       /* Begin Protected Region [[d7a738b2-a6fc-11e8-9c81-8bd68c62e435]] */
-    	return requirementsAggregate.selectPriorityWeighting().values().stream().mapToDouble(x -> x.selectWeighting()).sum();
+    	return requirementsAggregate.selectPriorityWeighting().values().stream().mapToDouble(x -> {
+    		if( x != null)
+    			return x.selectWeighting();
+    		else
+    			return 0;
+    	}).sum();
       /* End Protected Region   [[d7a738b2-a6fc-11e8-9c81-8bd68c62e435]] */
     }
 

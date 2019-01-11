@@ -168,30 +168,7 @@
 		
 		
 		
-		<db:informaltable style="EAMod Requirement">
-			<db:col width="30%" />
-			<db:col width="50%" />	
-			<db:col width="20%" />	
-			<db:thead>
-			    <db:tr>
-			        <db:th>Lösung</db:th>
-			        <db:th>Auswertung [%]</db:th>
-			        <db:th>Auswertung</db:th>
-			    </db:tr>
-			</db:thead>
-			<db:tbody>
-				<db:tr>
-					<db:td>Solution 1</db:td>
-					<db:td>40.00%</db:td>
-					<db:td>2.00 von 5.00</db:td>
-				</db:tr>			
-				<db:tr>
-					<db:td>Solution 2</db:td>
-					<db:td>40.00%</db:td>
-					<db:td>2.00 von 5.00</db:td>
-				</db:tr>			
-			</db:tbody>
-		</db:informaltable>
+		
 		<db:section xml:id="ea.4b0e860d-a7ff-11e5-82dd-3b995d9c840c">
 			<db:title>Solution 1</db:title>
 			
@@ -292,6 +269,30 @@
 			<db:title>Fazit</db:title>
 			
 			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="30%" />
+				<db:col width="50%" />	
+				<db:col width="20%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>Lösung</db:th>
+				        <db:th>Auswertung [%]</db:th>
+				        <db:th>Auswertung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>Solution 1</db:td>
+						<db:td>40.00%</db:td>
+						<db:td>2.00 von 5.00</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Solution 2</db:td>
+						<db:td>40.00%</db:td>
+						<db:td>2.00 von 5.00</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
 			<db:para>Das Fazit der Auswertung ist, dass die Lösung "Solution 1" zu bevorzugen ist.</db:para>
 			
 			

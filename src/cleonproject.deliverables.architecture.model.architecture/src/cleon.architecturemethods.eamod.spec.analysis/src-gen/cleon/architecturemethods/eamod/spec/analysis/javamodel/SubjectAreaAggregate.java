@@ -41,16 +41,6 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting> selectPriorityWeighting() {
-    return _getMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_priorityWeighting);
-  }
-
-  public SubjectAreaAggregate setPriorityWeighting(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting> priorityWeighting) {
-    _setMap(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_priorityWeighting, priorityWeighting);
-    return this;
-  }
-    
-  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria> selectRequirementCriterias() {
     return _getMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_requirementCriterias);
   }
@@ -61,12 +51,22 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea selectSubjectArea() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subjectArea);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea selectSubSubjectArea() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subSubjectArea);
   }
 
-  public SubjectAreaAggregate setSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
-    _setSingle(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subjectArea, subjectArea);
+  public SubjectAreaAggregate setSubSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea subSubjectArea) {
+    _setSingle(cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subSubjectArea, subSubjectArea);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public SubjectAreaAggregate setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
     
@@ -85,25 +85,21 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias, visitor);
-    _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_priorityWeighting, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_requirementCriterias, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subjectArea, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subSubjectArea, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate selectToMePriorityWeighting(cleon.architecturemethods.eamod.spec.analysis.javamodel.IPriorityWeighting object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_priorityWeighting, object.getResource());
-  }
-  
-  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate> selectToMeSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subjectArea, object.getResource());
-  }
-  
   public static cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate selectToMeRequirementCriterias(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_requirementCriterias, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate> selectToMeSubSubjectArea(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.javamodel.ISubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subSubjectArea, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,VHDz8rKB7lXt4n3AaXW9cA7xvzI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,nR45a4RhFTQtz7TM+X/hwPWiJ18=] */

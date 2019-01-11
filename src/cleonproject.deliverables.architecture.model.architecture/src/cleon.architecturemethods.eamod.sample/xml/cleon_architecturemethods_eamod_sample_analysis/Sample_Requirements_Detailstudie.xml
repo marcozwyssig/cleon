@@ -58,25 +58,54 @@
 							<db:para>Desc 1</db:para>		
 							<db:para>Desc 2</db:para>		
 							<db:para>Desc 3</db:para>		
-							<db:para>Formale Defintion:</db:para>		
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
 							<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>		
 						</db:td>
-						<db:td>10.00%</db:td>
+						<db:td>6.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have)</db:td>
 						<db:td>
 							<db:para></db:para>		
 						</db:td>
-						<db:td>30.00%</db:td>
+						<db:td>20.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>AF007_sss (FEA) (Must have)</db:td>
 						<db:td>
-							<db:para>Formale Defintion:</db:para>		
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
 							<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>		
 						</db:td>
-						<db:td>10.00%</db:td>
+						<db:td>6.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF003_Requirements_2_(ssss) (CAP) (Must have)</db:td>
+						<db:td>
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>		
+						</db:td>
+						<db:td>6.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF001_ddd (CAP) (Must have)</db:td>
+						<db:td>
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Die Aussenh&#252;lle des Smartphones muss so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20&#176;C bis 60&#176;C betrieben werden kann    </db:para>		
+						</db:td>
+						<db:td>6.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF002_Constraint (CAP) (Must have)</db:td>
+						<db:td>
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Der Auftragnehmer muss ein Betriebshandbuch f&#252;r den MP3-Player auszudrucken</db:para>		
+						</db:td>
+						<db:td>6.00%</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria</db:td>
@@ -130,30 +159,7 @@
 		
 		
 		
-		<db:informaltable style="EAMod Requirement">
-			<db:col width="30%" />
-			<db:col width="50%" />	
-			<db:col width="20%" />	
-			<db:thead>
-			    <db:tr>
-			        <db:th>Lösung</db:th>
-			        <db:th>Auswertung [%]</db:th>
-			        <db:th>Auswertung</db:th>
-			    </db:tr>
-			</db:thead>
-			<db:tbody>
-				<db:tr>
-					<db:td>Solution 1</db:td>
-					<db:td>58.00%</db:td>
-					<db:td>2.90 von 5.00</db:td>
-				</db:tr>			
-				<db:tr>
-					<db:td>Solution 2</db:td>
-					<db:td>40.00%</db:td>
-					<db:td>2.00 von 5.00</db:td>
-				</db:tr>			
-			</db:tbody>
-		</db:informaltable>
+		
 		<db:section xml:id="ea.af571f14-a6f9-11e8-9c81-8bd68c62e435">
 			<db:title>Solution 1</db:title>
 			
@@ -187,22 +193,40 @@
 						<db:td>0.20 von 0.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF006_Requirements_1 (FEA) (Must have) (10.00%)</db:td>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.20 von 0.50</db:td>
+						<db:td>0.12 von 0.30</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (30.00%)</db:td>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (20.00%)</db:td>
 						<db:td>5</db:td>
 						<db:td></db:td>
-						<db:td>1.50 von 1.50</db:td>
+						<db:td>1.00 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF007_sss (FEA) (Must have) (10.00%)</db:td>
+						<db:td>AF007_sss (FEA) (Must have) (6.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.20 von 0.50</db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF003_Requirements_2_(ssss) (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF001_ddd (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF002_Constraint (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria (10.00%)</db:td>
@@ -247,22 +271,40 @@
 						<db:td>0.20 von 0.50</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF006_Requirements_1 (FEA) (Must have) (10.00%)</db:td>
+						<db:td>AF006_Requirements_1 (FEA) (Must have) (6.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.20 von 0.50</db:td>
+						<db:td>0.12 von 0.30</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (30.00%)</db:td>
+						<db:td>AF004_Requirements_2_1 (CAP) (Nice to have) (20.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.60 von 1.50</db:td>
+						<db:td>0.40 von 1.00</db:td>
 					</db:tr>			
 					<db:tr>
-						<db:td>AF007_sss (FEA) (Must have) (10.00%)</db:td>
+						<db:td>AF007_sss (FEA) (Must have) (6.00%)</db:td>
 						<db:td>2</db:td>
 						<db:td></db:td>
-						<db:td>0.20 von 0.50</db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF003_Requirements_2_(ssss) (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF001_ddd (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF002_Constraint (CAP) (Must have) (6.00%)</db:td>
+						<db:td>2</db:td>
+						<db:td></db:td>
+						<db:td>0.12 von 0.30</db:td>
 					</db:tr>			
 					<db:tr>
 						<db:td>MyNamedCriteria (10.00%)</db:td>
@@ -278,6 +320,30 @@
 			<db:title>Fazit</db:title>
 			
 			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="30%" />
+				<db:col width="50%" />	
+				<db:col width="20%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>Lösung</db:th>
+				        <db:th>Auswertung [%]</db:th>
+				        <db:th>Auswertung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>Solution 1</db:td>
+						<db:td>52.00%</db:td>
+						<db:td>2.60 von 5.00</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Solution 2</db:td>
+						<db:td>40.00%</db:td>
+						<db:td>2.00 von 5.00</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
 			<db:para>Das Fazit der Auswertung ist, dass die Lösung "Solution 1" zu bevorzugen ist.</db:para>
 			
 			

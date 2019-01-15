@@ -86,28 +86,6 @@ public class FunctionSpace_DocBook_CHRV {
 
   }
 
-  public static interface ISubjectAreaFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface ISubjectAreaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SubjectAreaFunctionsImpl implements ISubjectAreaFunctionsImpl {
-
-    public static final ISubjectAreaFunctionsImpl INSTANCE = new SubjectAreaFunctionsImpl();
-
-    private SubjectAreaFunctionsImpl() {}
-
-  }
-  
-  public static class SubjectAreaFunctions {
-
-    private SubjectAreaFunctions() {}
-
-  }
-
   public static interface IDriverFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d0380aa7-3f61-11e6-85d8-3328a679e82b")
@@ -473,4 +451,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,zfSY4X6P02ORQWyEZqiywMyQxzQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,f26CPk9N/OrjRE/3zULS17MzYJQ=] */

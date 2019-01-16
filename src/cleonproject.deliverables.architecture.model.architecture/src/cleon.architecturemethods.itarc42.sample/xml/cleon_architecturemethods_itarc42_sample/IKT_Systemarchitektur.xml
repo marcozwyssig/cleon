@@ -341,14 +341,14 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Plattform &lt;SystemLayer&gt; (Blackbox)</db:para>
+								<db:para>Plattform &lt;SystemLayer&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e551d3af-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Infrastruktur &lt;SystemLayer&gt; (Blackbox)</db:para>
+								<db:para>Infrastruktur &lt;SystemLayer&gt; (Blackbox) []</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
@@ -477,20 +477,21 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 &lt;SystemComponent&gt; (Blackbox)</db:para>
+								<db:para>Windows 2016 &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e9622b4b-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Linux &lt;SystemComponent&gt; (Blackbox)</db:para>
+								<db:para>Linux &lt;SystemComponent&gt; (Blackbox) []</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 					</db:tbody>
 				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins IKT [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e2625467-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 				<db:section xml:id="ea.e65fe85f-e0fe-11e8-8499-a3b0fb3cad90">
 					<db:title>Windows 2016 &lt;SystemComponent&gt; (Blackbox)</db:title>
 					
@@ -607,20 +608,21 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; (Blackbox)</db:para>
+								<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ebf1b04e-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:para>
+								<db:para>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
 						</db:tr>
 					</db:tbody>
 				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Plattform [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e551d3af-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 				<db:section xml:id="ea.ea53de5c-e0fe-11e8-8499-a3b0fb3cad90">
 					<db:title>Windows Server Standard Virtual &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
@@ -697,6 +699,7 @@
 				
 				
 				
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Windows 2016 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e9622b4b-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 				<db:section>
 					<db:title>Verwendete Produkte</db:title>
 					<db:informaltable style="EAMod Requirement">
@@ -732,6 +735,7 @@
 				
 				
 				
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Windows 2016 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e9622b4b-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 				
 				
 			</db:section>
@@ -963,10 +967,10 @@
 						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
-									<db:para>Windows 2016 &lt;SystemComponent&gt;</db:para>
+									<db:para>Windows 2016 &lt;SystemComponent&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e9622b4b-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 								</db:listitem>
 								<db:listitem>
-									<db:para>Linux &lt;SystemComponent&gt;</db:para>
+									<db:para>Linux &lt;SystemComponent&gt; []</db:para>
 								</db:listitem>
 							</db:itemizedlist>
 						</db:td>			
@@ -982,7 +986,7 @@
 						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
-									<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt;</db:para>
+									<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ebf1b04e-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 								</db:listitem>
 							</db:itemizedlist>
 						</db:td>			
@@ -1006,7 +1010,7 @@
 						<db:td>
 							<db:itemizedlist>
 								<db:listitem>
-									<db:para>Windows 2016 &lt;SystemComponent&gt;</db:para>
+									<db:para>Windows 2016 &lt;SystemComponent&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e9622b4b-e0fe-11e8-8499-a3b0fb3cad90"/>]</db:para>
 								</db:listitem>
 							</db:itemizedlist>
 						</db:td>			

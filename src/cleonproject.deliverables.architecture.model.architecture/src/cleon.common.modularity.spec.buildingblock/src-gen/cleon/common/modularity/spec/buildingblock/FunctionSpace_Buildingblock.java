@@ -39,7 +39,7 @@ public class FunctionSpace_Buildingblock {
     public java.lang.String GetBuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("2d3073fe-4355-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDependingBuildingBlocksFromParent();
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDependenciesFromParent();
 
     @IDynamicResourceExtension.MethodId("2d309b24-4355-11e6-a9d7-97cf4f7c398b")
     public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetDecomposingBuildingBlocksFromParent();
@@ -48,7 +48,7 @@ public class FunctionSpace_Buildingblock {
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllAllowedBuildingBlockFromParent();
 
     @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposeBuildingBlockOfDependingBuildingBlocksFromParent();
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposeBuildingBlockOfAllDependenciesFromParent();
 
     @IDynamicResourceExtension.MethodId("5f8b2abd-4823-11e6-82f6-0f210765495b")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposingBuildingBlocksExceptSelf();
@@ -57,7 +57,7 @@ public class FunctionSpace_Buildingblock {
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDecomposingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("a032d549-4823-11e6-82f6-0f210765495b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocks();
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDependencies();
 
     @IDynamicResourceExtension.MethodId("68a66aec-4910-11e6-be22-874cc08f42ce")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent();
@@ -79,6 +79,9 @@ public class FunctionSpace_Buildingblock {
 
     @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
     public java.lang.String GetStereotypeName();
+
+    @IDynamicResourceExtension.MethodId("f9141268-1b4b-11e9-9171-31a0f985a0be")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetInvertDependencies();
 
   }
   
@@ -241,4 +244,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Wr78TgIMlEh5CoJ5f1dHw/xNE9o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,7ht+88vWZ9POR4zrHqWfGjfC168=] */

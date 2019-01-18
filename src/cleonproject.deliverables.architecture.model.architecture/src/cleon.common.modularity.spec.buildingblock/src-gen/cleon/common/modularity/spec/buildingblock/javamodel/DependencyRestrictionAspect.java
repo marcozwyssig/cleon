@@ -49,7 +49,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 	private void validate( IReadJobExecutor executor, IBuildingBlock currentBuildingBlock, IBuildingBlock toValidate, Statement statement, List<IResourceInconsistency> inconsistencyList)
 	{
 		IBuildingBlockFunctions dependencyFunctions = currentBuildingBlock.extension(IBuildingBlockFunctions.class);
-		List<IBuildingBlock> buildingBlocks = dependencyFunctions.GetDirectDependingBuildingBlocks();
+		List<IBuildingBlock> buildingBlocks = dependencyFunctions.GetDependencies();
 		
 		if (buildingBlocks.contains(toValidate))
 		{

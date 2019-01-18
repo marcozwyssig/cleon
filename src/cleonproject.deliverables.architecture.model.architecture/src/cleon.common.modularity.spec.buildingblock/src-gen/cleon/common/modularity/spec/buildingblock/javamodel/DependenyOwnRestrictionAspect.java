@@ -42,7 +42,7 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 			inconsistencyList.add(new SingleStatementInconsistency(statement, "Dependency is inherited redundant."));
 		}
 
-		List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.GetDirectDependingBuildingBlocks());
+		List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.GetDependencies());
 
 		directBuildingBlocks.remove(dependencyBuildingBlock);
 

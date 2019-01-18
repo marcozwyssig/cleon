@@ -23,6 +23,9 @@ public class FunctionSpace_Reference {
     @IDynamicResourceExtension.MethodId("b8a656bf-1b3b-11e9-8cd4-efe75fb4587a")
     public java.lang.String GetName();
 
+    @IDynamicResourceExtension.MethodId("411777ce-1b3e-11e9-8cd4-efe75fb4587a")
+    public java.lang.String GetSimpleName();
+
   }
   
   public static interface IReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -95,4 +98,4 @@ public class FunctionSpace_Reference {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,nvSrcXes4+WuCxSQsyG/cJqX5hE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,zwAXPhYzNbbaoTl7cC3oUCquSLU=] */

@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.applications.actifsource.sample
 Bundle-SymbolicName: cleon.applications.actifsource.sample.builtin;singleton:=true
-Bundle-Version: 0.4.71
+Bundle-Version: 0.4.72
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,21 +12,21 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.applications.actifsource.template.eclipse.builtin;bundle-version="0.4.71",
- cleon.applications.actifsource.template.java.builtin;bundle-version="0.4.71",
- cleon.applications.actifsource.spec.actifsource.builtin;bundle-version="0.4.71",
- cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.71",
- cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.71",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.71",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.71",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.71",
- cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.71",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.71",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.71",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.71",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.4.71",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.71",
- cleon.applications.actifsource.spec.xml2asrc.builtin;bundle-version="0.4.71",
+ cleon.applications.actifsource.template.eclipse.builtin;bundle-version="0.4.72",
+ cleon.applications.actifsource.template.java.builtin;bundle-version="0.4.72",
+ cleon.applications.actifsource.spec.actifsource.builtin;bundle-version="0.4.72",
+ cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.72",
+ cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.72",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.72",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.72",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.72",
+ cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.72",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.72",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.72",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.72",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.72",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.72",
+ cleon.applications.actifsource.spec.xml2asrc.builtin;bundle-version="0.4.72",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.applications.actifsource.sample,cleon.applications.actifsource.sample.javamodel
 

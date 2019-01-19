@@ -26,6 +26,9 @@ public class FunctionSpace_Reference {
     @IDynamicResourceExtension.MethodId("411777ce-1b3e-11e9-8cd4-efe75fb4587a")
     public java.lang.String GetSimpleName();
 
+    @IDynamicResourceExtension.MethodId("c80a30d4-1bf1-11e9-a649-37e63f24427a")
+    public java.lang.String GetDescription();
+
   }
   
   public static interface IReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -50,6 +53,9 @@ public class FunctionSpace_Reference {
 
     @IDynamicResourceExtension.MethodId("c3187100-1b3b-11e9-8cd4-efe75fb4587a")
     public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("d421e516-1bf1-11e9-a649-37e63f24427a")
+    public java.lang.String GetDescription();
 
   }
   
@@ -98,4 +104,4 @@ public class FunctionSpace_Reference {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,zwAXPhYzNbbaoTl7cC3oUCquSLU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b2eabf6e-1b3b-11e9-8cd4-efe75fb4587a,1zwIBqfz4faOd4NcmO1lqGlMmNw=] */

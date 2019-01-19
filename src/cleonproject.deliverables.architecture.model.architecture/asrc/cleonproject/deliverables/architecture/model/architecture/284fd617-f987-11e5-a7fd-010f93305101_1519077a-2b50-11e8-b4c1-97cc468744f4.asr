@@ -35,6 +35,7 @@
                 </resource>
               </owns>
             </resource>
+            <resource statement-guid="88bf76a3-1bf4-11e9-8fdc-8d84e33a32d6" type="resource" guid="88bf76a0-1bf4-11e9-8fdc-8d84e33a32d6" />
           </owns>
         </resource>
       </owns>
@@ -218,6 +219,16 @@
                           </predicate>
                         </resource>
                       </object>
+                    </predicate>
+                  </resource>
+                </object>
+                <object statement-guid="88bf76a3-1bf4-11e9-8fdc-8d84e33a32d6">
+                  <resource guid="88bf76a0-1bf4-11e9-8fdc-8d84e33a32d6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="88bf76a2-1bf4-11e9-8fdc-8d84e33a32d6" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                    </predicate>
+                    <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="895cef24-1bf4-11e9-8fdc-8d84e33a32d6" type="literal">coverage</object>
                     </predicate>
                   </resource>
                 </object>

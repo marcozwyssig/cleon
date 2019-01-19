@@ -14,9 +14,9 @@ public class CoveragePackage {
   public static final Resource RequirementCoverage_requirementCoverages = new Resource("ae150e64-ed67-11e8-8628-792e8e0b10f3");
   public static final Resource RequirementCoverageDescription = new Resource("0562087c-01e5-11e9-9c9d-8d52d6745026");
   public static final Resource RequirementCoverageDescription_requirementCoverage = new Resource("283dd43b-01e5-11e9-9c9d-8d52d6745026");
-  public static final Resource AbstractRequirementCoverage = new Resource("2c6dbde1-1be9-11e9-a3c2-fd06554474a5");
+  public static final Resource RequirementCover = new Resource("2c6dbde1-1be9-11e9-a3c2-fd06554474a5");
   public static final Resource FunctionSpace_aE_Coverage_RequirementsCoverages = new Resource("3a7f3e95-1bec-11e9-a649-37e63f24427a");
-  public static final Resource FunctionSpace_aE_Coverage_AbstractRequirementCoverage = new Resource("fa332499-1bef-11e9-a649-37e63f24427a");
+  public static final Resource FunctionSpace_aE_Coverage_RequirementCover = new Resource("fa332499-1bef-11e9-a649-37e63f24427a");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +37,4 @@ public class CoveragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.coverage,9qk0V4sMmPHZ6QLS/4VptZoSEXE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.spec.eamod.chrv.coverage,e4tAq+J8890OBSbwtBQ6q1J6CS4=] */

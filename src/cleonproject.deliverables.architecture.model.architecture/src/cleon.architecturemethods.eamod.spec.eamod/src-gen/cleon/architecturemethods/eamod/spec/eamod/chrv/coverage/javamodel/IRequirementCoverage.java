@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRequirementCoverage extends ch.actifsource.core.javamodel.IResource, ch.actifsource.core.javamodel.IDecorator {
+public interface IRequirementCoverage extends ch.actifsource.core.javamodel.IResource, ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.spec.resources.descriptions.javamodel.ISimpleDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c9479b53-ece1-11e8-8149-8542373915bf");
   
@@ -10,8 +10,8 @@ public interface IRequirementCoverage extends ch.actifsource.core.javamodel.IRes
   
   public cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement selectRequirement();
   
-  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IAbstractRequirementCoverage> selectRequirementCoverages();
+  public java.util.List<? extends cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IRequirementCover> selectRequirementCoverages();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,Im6VBy0KSXsVidXHeIVtEOUam4g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,hqsVXxrW6JpvUt+x8pq78+RSzC4=] */

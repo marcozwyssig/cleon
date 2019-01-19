@@ -2,10 +2,10 @@ package cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.jav
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IBuildingBlockRequirementCoverage extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IAbstractRequirementCoverage {
+public interface IBuildingBlockRequirementCoverage extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IRequirementCover {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a79cb77d-ed67-11e8-8628-792e8e0b10f3");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a79cb77d-ed67-11e8-8628-792e8e0b10f3,zB9tvr4umFDB7IcRyXOVpJ5wTyo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a79cb77d-ed67-11e8-8628-792e8e0b10f3,leCq02pWBm1BkTqKfPs0E8DGVhg=] */

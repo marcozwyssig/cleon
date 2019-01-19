@@ -43,31 +43,31 @@ public class FunctionSpace_Coverage {
 
   }
 
-  public static interface IAbstractRequirementCoverageFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementCoverFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fedd4bfe-1bef-11e9-a649-37e63f24427a")
     public java.lang.String RenderCoverageName();
 
   }
   
-  public static interface IAbstractRequirementCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementCoverFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractRequirementCoverageFunctionsImpl implements IAbstractRequirementCoverageFunctionsImpl {
+  public static class RequirementCoverFunctionsImpl implements IRequirementCoverFunctionsImpl {
 
-    public static final IAbstractRequirementCoverageFunctionsImpl INSTANCE = new AbstractRequirementCoverageFunctionsImpl();
+    public static final IRequirementCoverFunctionsImpl INSTANCE = new RequirementCoverFunctionsImpl();
 
-    private AbstractRequirementCoverageFunctionsImpl() {}
+    private RequirementCoverFunctionsImpl() {}
 
   }
   
-  public static class AbstractRequirementCoverageFunctions {
+  public static class RequirementCoverFunctions {
 
-    private AbstractRequirementCoverageFunctions() {}
+    private RequirementCoverFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fa76f2b7-1be9-11e9-a3c2-fd06554474a5,3KSjmQ35pgj+9nj5EO5BNZepXl4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fa76f2b7-1be9-11e9-a3c2-fd06554474a5,b1qRpXg4mZcOJeRJacHvgMh2Yos=] */

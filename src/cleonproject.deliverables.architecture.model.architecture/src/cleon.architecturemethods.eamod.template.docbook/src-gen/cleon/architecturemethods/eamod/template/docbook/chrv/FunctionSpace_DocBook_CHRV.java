@@ -449,6 +449,31 @@ public class FunctionSpace_DocBook_CHRV {
 
   }
 
+  public static interface ISubjectAreaCoverageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("203a109f-ee3a-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ISubjectAreaCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SubjectAreaCoverageFunctionsImpl implements ISubjectAreaCoverageFunctionsImpl {
+
+    public static final ISubjectAreaCoverageFunctionsImpl INSTANCE = new SubjectAreaCoverageFunctionsImpl();
+
+    private SubjectAreaCoverageFunctionsImpl() {}
+
+  }
+  
+  public static class SubjectAreaCoverageFunctions {
+
+    private SubjectAreaCoverageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,f26CPk9N/OrjRE/3zULS17MzYJQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,5sgMwusICG05mHeAQviXVw4zftQ=] */

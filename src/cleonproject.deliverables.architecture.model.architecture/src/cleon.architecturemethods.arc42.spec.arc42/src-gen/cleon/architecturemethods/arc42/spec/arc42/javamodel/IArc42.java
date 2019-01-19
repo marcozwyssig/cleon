@@ -30,8 +30,8 @@ public interface IArc42 extends cleon.common.doc.spec.doc.document.javamodel.IDo
   
   public cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView select__W_2_aE_productview();
   
-  public cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IRequirements_Coverage select__W_3_aE_requirements_aE_coverage();
+  public cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IArc42RequirementCoverages select__W_3_aE_requirements_aE_coverage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,uxwiNxw4ZhYfG5LbFGWFfGHKmwM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,sadLGTPpKzX8W9O71D+YINsjTI8=] */

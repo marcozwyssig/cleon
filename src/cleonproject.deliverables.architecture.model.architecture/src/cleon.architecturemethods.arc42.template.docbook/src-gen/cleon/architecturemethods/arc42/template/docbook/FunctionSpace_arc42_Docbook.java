@@ -377,31 +377,6 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface ISubjectAreaCoverageFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("203a109f-ee3a-11e8-9756-27a593be2ffb")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface ISubjectAreaCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SubjectAreaCoverageFunctionsImpl implements ISubjectAreaCoverageFunctionsImpl {
-
-    public static final ISubjectAreaCoverageFunctionsImpl INSTANCE = new SubjectAreaCoverageFunctionsImpl();
-
-    private SubjectAreaCoverageFunctionsImpl() {}
-
-  }
-  
-  public static class SubjectAreaCoverageFunctions {
-
-    private SubjectAreaCoverageFunctions() {}
-
-  }
-
   public static interface IBlackboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
@@ -530,6 +505,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IBuildingBlockRequirementCoverageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1be1942b-1bf0-11e9-a649-37e63f24427a")
+    public java.lang.String RenderCoverageName();
+
+  }
+  
+  public static interface IBuildingBlockRequirementCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockRequirementCoverageFunctionsImpl implements IBuildingBlockRequirementCoverageFunctionsImpl {
+
+    public static final IBuildingBlockRequirementCoverageFunctionsImpl INSTANCE = new BuildingBlockRequirementCoverageFunctionsImpl();
+
+    private BuildingBlockRequirementCoverageFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockRequirementCoverageFunctions {
+
+    private BuildingBlockRequirementCoverageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,+T4N+vI41PZS5GG4wlWZU2tmTeE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,fyWCOBAPW4f8l+FL1/G23dItouU=] */

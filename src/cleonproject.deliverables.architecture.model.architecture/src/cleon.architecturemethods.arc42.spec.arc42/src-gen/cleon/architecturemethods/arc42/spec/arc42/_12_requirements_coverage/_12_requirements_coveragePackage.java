@@ -4,17 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class _12_requirements_coveragePackage {
   
-  public static final Resource Requirements_aE_Coverage = new Resource("875d278c-d183-11e8-b18f-df1540bb7a5c");
-  public static final Resource SubjectAreaCoverage = new Resource("92347cca-ece1-11e8-8149-8542373915bf");
-  public static final Resource Requirements_aE_Coverage_subjectAreaCoverage = new Resource("994fca7b-ece1-11e8-8149-8542373915bf");
-  public static final Resource SubjectAreaCoverage_subjectArea = new Resource("a6f28b0b-ece1-11e8-8149-8542373915bf");
-  public static final Resource RequirementCoverage = new Resource("c9479b53-ece1-11e8-8149-8542373915bf");
-  public static final Resource SubjectAreaCoverage_requirementCoverage = new Resource("d0647065-ece1-11e8-8149-8542373915bf");
-  public static final Resource RequirementCoverage_requirement = new Resource("db2ce77e-ece1-11e8-8149-8542373915bf");
   public static final Resource BuildingBlockRequirementCoverage = new Resource("a79cb77d-ed67-11e8-8628-792e8e0b10f3");
-  public static final Resource RequirementCoverage_componentRequirementCoverages = new Resource("ae150e64-ed67-11e8-8628-792e8e0b10f3");
-  public static final Resource RequirementCoverageDescription = new Resource("0562087c-01e5-11e9-9c9d-8d52d6745026");
-  public static final Resource RequirementCoverageDescription_requirementCoverage = new Resource("283dd43b-01e5-11e9-9c9d-8d52d6745026");
+  public static final Resource Arc42RequirementCoverages = new Resource("ef7590e5-1be9-11e9-a3c2-fd06554474a5");
+  public static final Resource FunctionSpace_aE_Coverage_Arc42RequirementCoverages = new Resource("956e5408-1bef-11e9-a649-37e63f24427a");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +27,4 @@ public class _12_requirements_coveragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage,HkW9OugTrkGmA2p3qFAxo+yH9bI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage,oTPiLg/sVh+NcFQqKIOy6w18o+Q=] */

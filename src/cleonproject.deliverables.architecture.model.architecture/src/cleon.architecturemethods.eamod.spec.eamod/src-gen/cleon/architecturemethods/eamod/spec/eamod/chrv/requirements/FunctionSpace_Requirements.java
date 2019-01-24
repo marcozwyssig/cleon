@@ -68,10 +68,16 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("516e09e9-fc4c-11e8-af47-e5bdd8100025")
     public List<ch.actifsource.core.javamodel.IResource> GetNamespaces();
 
+    @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetOnlyKORequirements();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetOnlyKORequirements(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+
   }
   
   public static class RequirementFunctionsImpl implements IRequirementFunctionsImpl {
@@ -80,11 +86,22 @@ public class FunctionSpace_Requirements {
 
     private RequirementFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetOnlyKORequirements(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      /* Begin Protected Region [[9ac05816-1f1d-11e9-9b49-9d767b485444]] */
+      return requirementList;   
+      /* End Protected Region   [[9ac05816-1f1d-11e9-9b49-9d767b485444]] */
+    }
+
   }
   
   public static class RequirementFunctions {
 
     private RequirementFunctions() {}
+
+    public static List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> GetOnlyKORequirements(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).GetOnlyKORequirements(requirementList);
+    }
 
   }
 
@@ -501,4 +518,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,ue8Wbtz9LHx+Kkx68NWO4YKbavk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,7YsjxTQ2nCqT7btGCU+G+InUeQk=] */

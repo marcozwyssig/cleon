@@ -31,12 +31,12 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   // relations
   
   @Override
-  public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> selectCriterias() {
-    return _getList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias);
+  public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> selectCriterias() {
+    return _getList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.CriteriaAggregateAware_criterias);
   }
 
-  public SubjectAreaAggregate setCriterias(java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> criterias) {
-    _setList(cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias, criterias);
+  public SubjectAreaAggregate setCriterias(java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> criterias) {
+    _setList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.CriteriaAggregateAware_criterias, criterias);
     return this;
   }
     
@@ -84,7 +84,7 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.CriteriaAggregateAware_criterias, visitor);
+    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.CriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.javamodel.IRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_requirementCriterias, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.AnalysisPackage.SubjectAreaAggregate_subSubjectArea, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -102,4 +102,4 @@ public class SubjectAreaAggregate extends DynamicResource implements ISubjectAre
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,nR45a4RhFTQtz7TM+X/hwPWiJ18=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,CGmvEc6sWeP75hCiEPyg95fKysY=] */

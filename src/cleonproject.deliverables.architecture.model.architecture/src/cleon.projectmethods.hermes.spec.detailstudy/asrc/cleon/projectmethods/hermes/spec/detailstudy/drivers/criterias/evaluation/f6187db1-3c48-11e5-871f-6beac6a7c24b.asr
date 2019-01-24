@@ -20,7 +20,7 @@
     <object statement-guid="8125bf91-a77f-11e8-8660-2f457072b676" type="resource" guid="5f32cd0c-a77f-11e8-8660-2f457072b676" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="f61aeeb4-3c48-11e5-871f-6beac6a7c24b" type="literal">Criterias</object>
+    <object statement-guid="f61aeeb4-3c48-11e5-871f-6beac6a7c24b" type="literal">EvaluationCriterias</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b881789f-3c49-11e5-871f-6beac6a7c24b">
@@ -44,7 +44,7 @@
                       <object statement-guid="b9e8d0e5-3c49-11e5-871f-6beac6a7c24b" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="b9e8d0e6-3c49-11e5-871f-6beac6a7c24b" type="literal">Kriterien</object>
+                      <object statement-guid="b9e8d0e6-3c49-11e5-871f-6beac6a7c24b" type="literal">Bewertungskriterien</object>
                     </predicate>
                   </resource>
                 </object>
@@ -60,7 +60,7 @@
           <object statement-guid="6f49b275-0542-11e6-adf9-af3c4dc80bc3" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="5b5d7d54-0543-11e6-adf9-af3c4dc80bc3" type="literal">cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.CriteriasValidationAspect</object>
+          <object statement-guid="5b5d7d54-0543-11e6-adf9-af3c4dc80bc3" type="literal">cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.CriteriasValidationAspect</object>
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="6f49b276-0542-11e6-adf9-af3c4dc80bc3" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />

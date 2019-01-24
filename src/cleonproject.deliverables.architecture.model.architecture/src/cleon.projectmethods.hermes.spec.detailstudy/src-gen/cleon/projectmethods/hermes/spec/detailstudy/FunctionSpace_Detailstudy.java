@@ -158,14 +158,14 @@ public class FunctionSpace_Detailstudy {
     public java.lang.Double GetWeighting();
 
     @IDynamicResourceExtension.MethodId("2ea10c6a-a6e8-11e8-9c81-8bd68c62e435")
-    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> AllCriterials();
+    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
   public static interface ICriteriaAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("417d9e46-a6f5-11e8-9c81-8bd68c62e435")
-    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteriaAggregate criteriaAggregate);
+    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.ICriteriaAggregate criteriaAggregate);
 
   }
   
@@ -176,7 +176,7 @@ public class FunctionSpace_Detailstudy {
     private CriteriaAggregateFunctionsImpl() {}
 
     @Override
-    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
+    public java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.ICriteriaAggregate criteriaAggregate) {
       /* Begin Protected Region [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
       return criteriaAggregate.selectCriterias().stream().mapToDouble(x -> x.extension(IAbstractCriteriaFunctions.class).GetWeighting()).sum();
       /* End Protected Region   [[417d9e46-a6f5-11e8-9c81-8bd68c62e435]] */
@@ -188,7 +188,7 @@ public class FunctionSpace_Detailstudy {
 
     private CriteriaAggregateFunctions() {}
 
-    public static java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteriaAggregate criteriaAggregate) {
+    public static java.lang.Double GetWeighting(final cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.ICriteriaAggregate criteriaAggregate) {
       return DynamicResourceUtil.invoke(ICriteriaAggregateFunctionsImpl.class, CriteriaAggregateFunctionsImpl.INSTANCE, criteriaAggregate).GetWeighting(criteriaAggregate);
     }
 
@@ -197,7 +197,7 @@ public class FunctionSpace_Detailstudy {
   public static interface ICriteriaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("133ae757-a780-11e8-8660-2f457072b676")
-    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> AllCriterials();
+    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
   }
   
@@ -222,7 +222,7 @@ public class FunctionSpace_Detailstudy {
   public static interface IAbstractCriteriaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("eb9c8a85-a77f-11e8-8660-2f457072b676")
-    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IAbstractCriteria> AllCriterials();
+    public List<cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria> AllCriterials();
 
     @IDynamicResourceExtension.MethodId("56b0cd40-a780-11e8-8660-2f457072b676")
     public java.lang.Double GetWeighting();
@@ -250,7 +250,7 @@ public class FunctionSpace_Detailstudy {
 
   }
 
-  public static interface INamedCriteriaFunctions extends IDynamicResourceExtension {
+  public static interface INamedEvaluationCriteriaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("56f33e35-a6f5-11e8-9c81-8bd68c62e435")
     public java.lang.Double GetWeighting();
@@ -260,46 +260,46 @@ public class FunctionSpace_Detailstudy {
 
   }
   
-  public static interface INamedCriteriaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedEvaluationCriteriaFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NamedCriteriaFunctionsImpl implements INamedCriteriaFunctionsImpl {
+  public static class NamedEvaluationCriteriaFunctionsImpl implements INamedEvaluationCriteriaFunctionsImpl {
 
-    public static final INamedCriteriaFunctionsImpl INSTANCE = new NamedCriteriaFunctionsImpl();
+    public static final INamedEvaluationCriteriaFunctionsImpl INSTANCE = new NamedEvaluationCriteriaFunctionsImpl();
 
-    private NamedCriteriaFunctionsImpl() {}
+    private NamedEvaluationCriteriaFunctionsImpl() {}
 
   }
   
-  public static class NamedCriteriaFunctions {
+  public static class NamedEvaluationCriteriaFunctions {
 
-    private NamedCriteriaFunctions() {}
+    private NamedEvaluationCriteriaFunctions() {}
 
   }
 
-  public static interface INamedCriteriaAggregateFunctions extends IDynamicResourceExtension {
+  public static interface INamedEvaluationAggregateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("1080f0ed-a783-11e8-8660-2f457072b676")
     public java.lang.String GetDescription();
 
   }
   
-  public static interface INamedCriteriaAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedEvaluationAggregateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NamedCriteriaAggregateFunctionsImpl implements INamedCriteriaAggregateFunctionsImpl {
+  public static class NamedEvaluationAggregateFunctionsImpl implements INamedEvaluationAggregateFunctionsImpl {
 
-    public static final INamedCriteriaAggregateFunctionsImpl INSTANCE = new NamedCriteriaAggregateFunctionsImpl();
+    public static final INamedEvaluationAggregateFunctionsImpl INSTANCE = new NamedEvaluationAggregateFunctionsImpl();
 
-    private NamedCriteriaAggregateFunctionsImpl() {}
+    private NamedEvaluationAggregateFunctionsImpl() {}
 
   }
   
-  public static class NamedCriteriaAggregateFunctions {
+  public static class NamedEvaluationAggregateFunctions {
 
-    private NamedCriteriaAggregateFunctions() {}
+    private NamedEvaluationAggregateFunctions() {}
 
   }
 
@@ -330,4 +330,4 @@ public class FunctionSpace_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,WIXwkfDetQoFo1ElZc6+Wvt06Wg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,GNt46a44Hf4GQbk/ySOck45KbeA=] */

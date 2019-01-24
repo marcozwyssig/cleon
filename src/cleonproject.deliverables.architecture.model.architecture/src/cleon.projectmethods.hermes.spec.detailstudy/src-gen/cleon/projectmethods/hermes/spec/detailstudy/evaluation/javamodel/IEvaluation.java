@@ -10,10 +10,10 @@ public interface IEvaluation extends ch.actifsource.core.javamodel.IDecorator {
   
   public java.lang.String selectAssessment();
   
-  public cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriteria selectCriteria();
+  public cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.ICriteria selectCriteria();
   
   public cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IScore selectScore();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,Dy6Sp23KGfuPHvznc6UxQxsu89g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,YZk3KkDfMyMlOttiXZfnuGJBf8c=] */

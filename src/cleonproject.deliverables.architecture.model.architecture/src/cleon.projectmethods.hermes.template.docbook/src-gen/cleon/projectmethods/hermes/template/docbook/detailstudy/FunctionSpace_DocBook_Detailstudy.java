@@ -43,28 +43,28 @@ public class FunctionSpace_DocBook_Detailstudy {
 
   }
 
-  public static interface ICriteriasFunctions extends IDynamicResourceExtension {
+  public static interface IEvaluationCriteriasFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e759c9d8-b822-11e8-b3ad-4d0f42d6d5c2")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface ICriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IEvaluationCriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CriteriasFunctionsImpl implements ICriteriasFunctionsImpl {
+  public static class EvaluationCriteriasFunctionsImpl implements IEvaluationCriteriasFunctionsImpl {
 
-    public static final ICriteriasFunctionsImpl INSTANCE = new CriteriasFunctionsImpl();
+    public static final IEvaluationCriteriasFunctionsImpl INSTANCE = new EvaluationCriteriasFunctionsImpl();
 
-    private CriteriasFunctionsImpl() {}
+    private EvaluationCriteriasFunctionsImpl() {}
 
   }
   
-  public static class CriteriasFunctions {
+  public static class EvaluationCriteriasFunctions {
 
-    private CriteriasFunctions() {}
+    private EvaluationCriteriasFunctions() {}
 
   }
 
@@ -173,4 +173,4 @@ public class FunctionSpace_DocBook_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,LoXZE0bzZCADV4WnsjIn0G300ig=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,031yTzHXZTfFLu/tM6+J4atMWCc=] */

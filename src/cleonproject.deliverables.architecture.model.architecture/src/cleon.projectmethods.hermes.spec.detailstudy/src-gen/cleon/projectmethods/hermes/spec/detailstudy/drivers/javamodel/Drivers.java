@@ -71,11 +71,11 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
     
   @Override
-  public cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriterias selectCriterias() {
-    return _getSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriterias.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias);
+  public cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias selectCriterias() {
+    return _getSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias);
   }
 
-  public Drivers setCriterias(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriterias criterias) {
+  public Drivers setCriterias(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias criterias) {
     _setSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias, criterias);
     return this;
   }
@@ -129,7 +129,7 @@ public class Drivers extends DynamicResource implements IDrivers {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IContext.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_context, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriterias.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ISource.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_sources, visitor);
@@ -142,7 +142,7 @@ public class Drivers extends DynamicResource implements IDrivers {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IDrivers.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_context, object.getResource());
   }
   
-  public static cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IDrivers selectToMeCriterias(cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ICriterias object) {
+  public static cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IDrivers selectToMeCriterias(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias object) {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IDrivers.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage.Drivers_criterias, object.getResource());
   }
   
@@ -151,4 +151,4 @@ public class Drivers extends DynamicResource implements IDrivers {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,h0rXz2yOUbn54dhD9pZVxGc46a4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,h6wYbAVKScJ0JvA6nEkDd5C7mGo=] */

@@ -18,28 +18,28 @@ public class FunctionSpace_Asciidoc_Detailstudy {
   /* End Protected Region   [[de8668e7-3c32-11e5-9962-cf3035adb922]] */
 
 
-  public static interface ICriteriasFunctions extends IDynamicResourceExtension {
+  public static interface IEvaluationCriteriasFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bccc26cd-3cf8-11e5-871f-6beac6a7c24b")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface ICriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IEvaluationCriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CriteriasFunctionsImpl implements ICriteriasFunctionsImpl {
+  public static class EvaluationCriteriasFunctionsImpl implements IEvaluationCriteriasFunctionsImpl {
 
-    public static final ICriteriasFunctionsImpl INSTANCE = new CriteriasFunctionsImpl();
+    public static final IEvaluationCriteriasFunctionsImpl INSTANCE = new EvaluationCriteriasFunctionsImpl();
 
-    private CriteriasFunctionsImpl() {}
+    private EvaluationCriteriasFunctionsImpl() {}
 
   }
   
-  public static class CriteriasFunctions {
+  public static class EvaluationCriteriasFunctions {
 
-    private CriteriasFunctions() {}
+    private EvaluationCriteriasFunctions() {}
 
   }
 
@@ -173,4 +173,4 @@ public class FunctionSpace_Asciidoc_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,HNtw//mBoW6Tqb+JGlMmgaT0GUs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de8668e7-3c32-11e5-9962-cf3035adb922,m/09CwA7TxQrf/9cFeg6hdb4If0=] */

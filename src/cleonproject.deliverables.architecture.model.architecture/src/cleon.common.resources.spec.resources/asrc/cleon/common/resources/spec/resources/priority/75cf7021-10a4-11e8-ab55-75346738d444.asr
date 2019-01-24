@@ -123,6 +123,11 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="b0f2acd2-1f1c-11e9-9b49-9d767b485444" type="resource" guid="b0f089ee-1f1c-11e9-9b49-9d767b485444">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="ba713fe6-1f1c-11e9-9b49-9d767b485444" type="resource" guid="ba70075e-1f1c-11e9-9b49-9d767b485444" />
+          </owns>
+        </resource>
       </owns>
     </resource>
   </owns>
@@ -130,7 +135,7 @@
     <object statement-guid="75cfbe43-10a4-11e8-ab55-75346738d444" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="75d00c64-10a4-11e8-ab55-75346738d444" type="literal">PriorityFunctionSpace</object>
+    <object statement-guid="75d00c64-10a4-11e8-ab55-75346738d444" type="literal">FunctionSpace_Priority</object>
   </predicate>
   <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
     <object statement-guid="778054bc-10a4-11e8-ab55-75346738d444">
@@ -546,6 +551,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="4560e8e9-10a4-11e8-ab55-75346738d444" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="b0f2acd2-1f1c-11e9-9b49-9d767b485444">
+            <resource guid="b0f089ee-1f1c-11e9-9b49-9d767b485444">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="b0f12630-1f1c-11e9-9b49-9d767b485444" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="b1d3e57c-1f1c-11e9-9b49-9d767b485444" type="literal">IsKO</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="ba713fe6-1f1c-11e9-9b49-9d767b485444">
+                  <resource guid="ba70075e-1f1c-11e9-9b49-9d767b485444">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="ba700761-1f1c-11e9-9b49-9d767b485444" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="ba702e72-1f1c-11e9-9b49-9d767b485444" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="b0f21091-1f1c-11e9-9b49-9d767b485444" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="d4dc666c-1f1c-11e9-9b49-9d767b485444" type="literal">return priority.isMust__F_have(); </object>
               </predicate>
             </resource>
           </object>

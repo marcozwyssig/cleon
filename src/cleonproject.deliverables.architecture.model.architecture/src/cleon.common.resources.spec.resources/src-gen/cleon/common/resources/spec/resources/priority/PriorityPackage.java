@@ -12,7 +12,7 @@ public class PriorityPackage {
   public static final Resource Priority_Won__M_t__F_have = new Resource("7871348d-c4f3-11e5-b41d-5d67443850a2");
   public static final Resource PriorityAware_priority = new Resource("9d70f242-c4f3-11e5-b41d-5d67443850a2");
   public static final Resource PriorityAware = new Resource("db7fa68a-06d7-11e6-8d3e-13e5be4bd43b");
-  public static final Resource PriorityFunctionSpace_Priority = new Resource("77802da9-10a4-11e8-ab55-75346738d444");
+  public static final Resource FunctionSpace_aE_Priority_Priority = new Resource("77802da9-10a4-11e8-ab55-75346738d444");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +33,4 @@ public class PriorityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.priority,VAnkLK0HtyxH/URS1y10xxxhmXA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.spec.resources.priority,tP73v0FohlfU2VaUaPrzuTO6WH0=] */

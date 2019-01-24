@@ -1,4 +1,4 @@
-package cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel;
+package cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.projectmethods.hermes.spec.detailstudy.FunctionSpace_Detailstudy.IAbstractCriteriaFunctions;
-import cleon.projectmethods.hermes.spec.detailstudy.drivers.DriversPackage;
+import cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage;
 
 public class CriteriasValidationAspect implements IResourceValidationAspect {
 
@@ -20,8 +20,8 @@ public class CriteriasValidationAspect implements IResourceValidationAspect {
 			IDynamicResourceRepository resourceRepository = typeSystem
 					.getResourceRepository();
 			
-			ICriterias criteriaComposite = resourceRepository.getResource(
-					ICriterias.class, context.getResource());
+			IEvaluationCriterias criteriaComposite = resourceRepository.getResource(
+					IEvaluationCriterias.class, context.getResource());
 			
 			if( criteriaComposite.selectCriterias().size() == 0)
 			{
@@ -34,7 +34,7 @@ public class CriteriasValidationAspect implements IResourceValidationAspect {
 				String errormessage = String.format("The sum of weighting must be 100 over all goals (actual sum is %.2f)", sum);
 				inconsistencyList.add(new PredicateInconsistency(context
 						.getPackage(), context.getResource(),
-						DriversPackage.CriteriaAggregateAware_criterias,
+						CriteriasPackage.CriteriaAggregateAware_criterias,
 						errormessage));			
 			}
 		

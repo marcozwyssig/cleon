@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[75cf7021-10a4-11e8-ab55-75346738d444,imports]] */
 
-public class PriorityFunctionSpace {
+public class FunctionSpace_Priority {
 
   /* Begin Protected Region [[75cf7021-10a4-11e8-ab55-75346738d444]] */
   
@@ -38,6 +38,9 @@ public class PriorityFunctionSpace {
     @IDynamicResourceExtension.MethodId("45609ac6-10a4-11e8-ab55-75346738d444")
     public java.lang.String GetName();
 
+    @IDynamicResourceExtension.MethodId("b0f089ee-1f1c-11e9-9b49-9d767b485444")
+    public java.lang.Boolean IsKO();
+
   }
   
   public static interface IPriorityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -56,6 +59,9 @@ public class PriorityFunctionSpace {
 
     @IDynamicResourceExtension.MethodId("ef006d66-8fe7-11e8-a5b5-191902fe097a")
     public java.lang.Boolean IsImportant(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority);
+
+    @IDynamicResourceExtension.MethodId("b0f089ee-1f1c-11e9-9b49-9d767b485444")
+    public java.lang.Boolean IsKO(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority);
 
   }
   
@@ -90,6 +96,11 @@ public class PriorityFunctionSpace {
       return priority.isMust__F_have() || priority.isShould__F_have();
     }
 
+    @Override
+    public java.lang.Boolean IsKO(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return priority.isMust__F_have(); 
+    }
+
   }
   
   public static class PriorityFunctions {
@@ -116,8 +127,15 @@ public class PriorityFunctionSpace {
       return DynamicResourceUtil.invoke(IPriorityFunctionsImpl.class, PriorityFunctionsImpl.INSTANCE, priority).IsImportant(priority);
     }
 
+    public static java.lang.Boolean IsKO(final cleon.common.resources.spec.resources.priority.javamodel.IPriority priority) {
+      return DynamicResourceUtil.invoke(IPriorityFunctionsImpl.class, PriorityFunctionsImpl.INSTANCE, priority).IsKO(priority);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,6ij1WxA2xepc4pK2KY7ICnFk7xQ=] */
+      /* Begin Protected Region [[b0f089ee-1f1c-11e9-9b49-9d767b485444]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[b0f089ee-1f1c-11e9-9b49-9d767b485444]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,KK9ZKZOMt6opvQlG7DA033gEy7E=] */

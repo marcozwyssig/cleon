@@ -1,4 +1,4 @@
-package cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel;
+package cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class WeightingAware extends DynamicResource implements IWeighti
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650d26b7-a6fc-11e8-9c81-8bd68c62e435,MNL4U+kTGVo2YFSa8w42Yd1IqfU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650d26b7-a6fc-11e8-9c81-8bd68c62e435,AF+ZP3Uspm9BipSIJYK9sx/287w=] */

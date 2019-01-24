@@ -1,4 +1,4 @@
-package cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel;
+package cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class AbstractCriteria extends DynamicResource implements IAbstr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ad0d664-a77e-11e8-8660-2f457072b676,cjE+qQNtXb/c01N7VbwvVl4H3jI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ad0d664-a77e-11e8-8660-2f457072b676,DKNIxrZHeSzpR5i2A/Ad+DM1yVA=] */

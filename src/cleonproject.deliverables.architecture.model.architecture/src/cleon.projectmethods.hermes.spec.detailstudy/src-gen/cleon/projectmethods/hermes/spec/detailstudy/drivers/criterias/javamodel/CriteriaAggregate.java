@@ -1,4 +1,4 @@
-package cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel;
+package cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class CriteriaAggregate extends DynamicResource implements ICrit
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6b2876f-a6f8-11e8-9c81-8bd68c62e435,aEX0MGDLXmhUy1bdhP5qBGMfuzo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6b2876f-a6f8-11e8-9c81-8bd68c62e435,E9kYerspB7d5T7xCpgFURG665F8=] */

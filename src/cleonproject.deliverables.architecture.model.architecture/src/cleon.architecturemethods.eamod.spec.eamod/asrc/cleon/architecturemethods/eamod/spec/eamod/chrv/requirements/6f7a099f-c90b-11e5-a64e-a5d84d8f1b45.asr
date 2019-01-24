@@ -701,6 +701,11 @@
             <resource statement-guid="a5902285-1f1d-11e9-9b49-9d767b485444" type="resource" guid="a58fad52-1f1d-11e9-9b49-9d767b485444" />
           </owns>
         </resource>
+        <resource statement-guid="1a7c9e00-1fa5-11e9-ac4e-716424f48a26" type="resource" guid="1a77e308-1fa5-11e9-ac4e-716424f48a26">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="1a77e30e-1fa5-11e9-ac4e-716424f48a26" type="resource" guid="1a77e309-1fa5-11e9-ac4e-716424f48a26" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="3b91de03-0dd1-11e6-a33d-238391a68770" type="resource" guid="3b9168d0-0dd1-11e6-a33d-238391a68770">
@@ -3138,7 +3143,7 @@
                 <object statement-guid="9ac07f28-1f1d-11e9-9b49-9d767b485444" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="9c408f02-1f1d-11e9-9b49-9d767b485444" type="literal">GetOnlyKORequirements</object>
+                <object statement-guid="9c408f02-1f1d-11e9-9b49-9d767b485444" type="literal">onlyKO</object>
               </predicate>
               <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
                 <object statement-guid="a5902285-1f1d-11e9-9b49-9d767b485444">
@@ -3154,6 +3159,31 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="9ac0cd49-1f1d-11e9-9b49-9d767b485444" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="1a7c9e00-1fa5-11e9-ac4e-716424f48a26">
+            <resource guid="1a77e308-1fa5-11e9-ac4e-716424f48a26">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1a77e30a-1fa5-11e9-ac4e-716424f48a26" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="1a77e30b-1fa5-11e9-ac4e-716424f48a26" type="literal">notKO</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="1a77e30e-1fa5-11e9-ac4e-716424f48a26">
+                  <resource guid="1a77e309-1fa5-11e9-ac4e-716424f48a26">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="1a77e30c-1fa5-11e9-ac4e-716424f48a26" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="1a77e30d-1fa5-11e9-ac4e-716424f48a26" type="resource" guid="54365cab-ff9b-11e4-ac0a-959b440f987f" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="1a77e30f-1fa5-11e9-ac4e-716424f48a26" type="literal">true</object>
               </predicate>
             </resource>
           </object>

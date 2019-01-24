@@ -43,28 +43,28 @@ public class FunctionSpace_DocBook_Detailstudy {
 
   }
 
-  public static interface IEvaluationCriteriasFunctions extends IDynamicResourceExtension {
+  public static interface IWeightingCriteriasFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e759c9d8-b822-11e8-b3ad-4d0f42d6d5c2")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IEvaluationCriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWeightingCriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class EvaluationCriteriasFunctionsImpl implements IEvaluationCriteriasFunctionsImpl {
+  public static class WeightingCriteriasFunctionsImpl implements IWeightingCriteriasFunctionsImpl {
 
-    public static final IEvaluationCriteriasFunctionsImpl INSTANCE = new EvaluationCriteriasFunctionsImpl();
+    public static final IWeightingCriteriasFunctionsImpl INSTANCE = new WeightingCriteriasFunctionsImpl();
 
-    private EvaluationCriteriasFunctionsImpl() {}
+    private WeightingCriteriasFunctionsImpl() {}
 
   }
   
-  public static class EvaluationCriteriasFunctions {
+  public static class WeightingCriteriasFunctions {
 
-    private EvaluationCriteriasFunctions() {}
+    private WeightingCriteriasFunctions() {}
 
   }
 
@@ -123,9 +123,6 @@ public class FunctionSpace_DocBook_Detailstudy {
     @IDynamicResourceExtension.MethodId("e759f082-b822-11e8-b3ad-4d0f42d6d5c2")
     public java.lang.String GetContext();
 
-    @IDynamicResourceExtension.MethodId("e759f0bb-b822-11e8-b3ad-4d0f42d6d5c2")
-    public java.lang.String RenderContentElement();
-
   }
   
   public static interface IEvaluationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -171,6 +168,31 @@ public class FunctionSpace_DocBook_Detailstudy {
 
   }
 
+  public static interface IKnockoutCriteriasFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f3302bbf-2030-11e9-83b3-a16e26b4cc59")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IKnockoutCriteriasFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class KnockoutCriteriasFunctionsImpl implements IKnockoutCriteriasFunctionsImpl {
+
+    public static final IKnockoutCriteriasFunctionsImpl INSTANCE = new KnockoutCriteriasFunctionsImpl();
+
+    private KnockoutCriteriasFunctionsImpl() {}
+
+  }
+  
+  public static class KnockoutCriteriasFunctions {
+
+    private KnockoutCriteriasFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,031yTzHXZTfFLu/tM6+J4atMWCc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,51cd6fe6-a6f0-11e8-9c81-8bd68c62e435,Z5vxhtCr2JWniQCKrudv0Qo7tUI=] */

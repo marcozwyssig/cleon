@@ -75,8 +75,39 @@
 			
 			
 		</db:section>
+		<db:section xml:id="ea.1e686a27-202c-11e9-83b3-a16e26b4cc59">
+			<db:title>KO-Kriterien</db:title>
+			
+			
+			
+			<db:informaltable style="EAMod Requirement">
+				<db:col width="40%" />
+				<db:col width="60%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>KO-Kriterium</db:th>
+				        <db:th>Beschreibung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>Knockout Criteria 1</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Knockout Criteria 2</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
 		<db:section xml:id="ea.29e6f96e-a7ff-11e5-82dd-3b995d9c840c">
-			<db:title>Bewertungskriterien</db:title>
+			<db:title>Gewichtungskriterien</db:title>
 			
 			<db:para>asdfasdfasdf</db:para>
 			<db:para>asdfasdfasdf</db:para>
@@ -89,7 +120,7 @@
 				<db:col width="20%" />
 				<db:thead>
 				    <db:tr>
-				        <db:th>Kriterium</db:th>
+				        <db:th>Gewichtungskriterium</db:th>
 				        <db:th>Beschreibung</db:th>
 				        <db:th>Gewichtung</db:th>	        
 				    </db:tr>
@@ -175,46 +206,76 @@
 			<db:para>asdfasdf</db:para>
 			<db:para>asdfasdf</db:para>
 			
-			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="20%" />	
-				<db:col width="30%" />
-				<db:col width="20%" />	
-				<db:thead>
-				    <db:tr>
-				        <db:th>Kriterium</db:th>
-				        <db:th>Bewertung</db:th>
-				        <db:th>Einschätzung</db:th>	        
-				        <db:th>Auswertung</db:th>
-				    </db:tr>
-				</db:thead>
-				<db:tbody>
-					<db:tr>
-						<db:td>OPEX (40.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.80 von 2.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>CAPEX (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>Termin (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td>fasdfasdf</db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>Test (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-				</db:tbody>
-			</db:informaltable>
+			<db:section>
+				<db:title>Bewertung der KO-Kriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Knockout Criteria 1</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Knockout Criteria 2</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Bewertung der Gewichtungskriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Bewertung</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>OPEX (40.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.80 von 2.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>CAPEX (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Termin (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td>fasdfasdf</db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Test (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
 			
 		</db:section>
 		<db:section xml:id="ea.546bd470-a7ff-11e5-82dd-3b995d9c840c">
@@ -223,76 +284,137 @@
 			<db:para>dfasdf</db:para>
 			<db:para>dsafasdf</db:para>
 			
-			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="20%" />	
-				<db:col width="30%" />
-				<db:col width="20%" />	
-				<db:thead>
-				    <db:tr>
-				        <db:th>Kriterium</db:th>
-				        <db:th>Bewertung</db:th>
-				        <db:th>Einschätzung</db:th>	        
-				        <db:th>Auswertung</db:th>
-				    </db:tr>
-				</db:thead>
-				<db:tbody>
-					<db:tr>
-						<db:td>OPEX (40.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.80 von 2.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>CAPEX (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>Termin (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td>dsfasdfasdf</db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>Test (20.00%)</db:td>
-						<db:td>2</db:td>
-						<db:td></db:td>
-						<db:td>0.40 von 1.00</db:td>
-					</db:tr>			
-				</db:tbody>
-			</db:informaltable>
+			<db:section>
+				<db:title>Bewertung der KO-Kriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Knockout Criteria 1</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Knockout Criteria 2</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Bewertung der Gewichtungskriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Bewertung</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>OPEX (40.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.80 von 2.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>CAPEX (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Termin (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td>dsfasdfasdf</db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Test (20.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.40 von 1.00</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
 			
 		</db:section>
 		<db:section xml:id="ea.5e82d6d2-a7ff-11e5-82dd-3b995d9c840c">
 			<db:title>Fazit</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
-				<db:col width="30%" />
-				<db:col width="50%" />	
-				<db:col width="20%" />	
-				<db:thead>
-				    <db:tr>
-				        <db:th>Lösung</db:th>
-				        <db:th>Auswertung [%]</db:th>
-				        <db:th>Auswertung</db:th>
-				    </db:tr>
-				</db:thead>
-				<db:tbody>
-					<db:tr>
-						<db:td>Solution 1</db:td>
-						<db:td>40.00%</db:td>
-						<db:td>2.00 von 5.00</db:td>
-					</db:tr>			
-					<db:tr>
-						<db:td>Solution 2</db:td>
-						<db:td>40.00%</db:td>
-						<db:td>2.00 von 5.00</db:td>
-					</db:tr>			
-				</db:tbody>
-			</db:informaltable>
+			<db:section>
+				<db:title>Auswertung der KO-Kriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="50%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Lösung</db:th>
+					        <db:th>Erfüllte Kriterien</db:th>		        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Solution 1</db:td>
+							<db:td>2 von 2</db:td>				
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Solution 2</db:td>
+							<db:td>2 von 2</db:td>				
+							<db:td>Ja</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Auswertung der Gewichtungskriterien</db:title>
+				<db:informaltable style="EAMod Requirement">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Lösung</db:th>
+					        <db:th>Auswertung [%]</db:th>
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Solution 1</db:td>
+							<db:td>40.00%</db:td>
+							<db:td>2.00 von 5.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Solution 2</db:td>
+							<db:td>40.00%</db:td>
+							<db:td>2.00 von 5.00</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			
 			<db:para>Das Fazit der Auswertung ist, dass die Lösung "Solution 1" zu bevorzugen ist.</db:para>
 			
 			

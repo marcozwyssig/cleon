@@ -10,10 +10,12 @@ public interface IDrivers extends cleon.common.doc.spec.doc.chapter.javamodel.IA
   
   public cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.IContext selectContext();
   
-  public cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.evaluation.javamodel.IEvaluationCriterias selectCriterias();
+  public cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.javamodel.IKnockoutCriterias selectKnockoutCriterias();
+  
+  public cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriterias selectWeightingCriterias();
   
   public java.util.List<? extends cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel.ISource> selectSources();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,nn+0MJYrewsj11qJmacE9bok7Do=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,877f094b-3c14-11e5-9962-cf3035adb922,ExJ7E/KWpsWSrjdm5K5FAgD6Uyg=] */

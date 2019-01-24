@@ -10,8 +10,10 @@ public interface ISolutionsEvaluation extends ch.actifsource.core.javamodel.IDec
   
   public cleon.projectmethods.hermes.spec.detailstudy.solutions.javamodel.ISolution selectSolution();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation> selectEvaluation();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation> selectKnockoutEvaluation();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation> selectWeightingEvaluation();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,38e891b4-3c1a-11e5-9962-cf3035adb922,iw9bao4EnWUrbLV3cO2MV/HYoz8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,38e891b4-3c1a-11e5-9962-cf3035adb922,zXoFF6AiF/0tF3kaDYTevgXiiaY=] */

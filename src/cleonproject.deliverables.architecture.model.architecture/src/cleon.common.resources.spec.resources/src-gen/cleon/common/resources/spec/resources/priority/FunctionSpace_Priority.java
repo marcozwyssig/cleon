@@ -135,7 +135,4 @@ public class FunctionSpace_Priority {
 
 }
 
-      /* Begin Protected Region [[b0f089ee-1f1c-11e9-9b49-9d767b485444]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[b0f089ee-1f1c-11e9-9b49-9d767b485444]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,KK9ZKZOMt6opvQlG7DA033gEy7E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,75cf7021-10a4-11e8-ab55-75346738d444,EEQuyt7iU+NyWNx7Ua5JZEq4Joc=] */

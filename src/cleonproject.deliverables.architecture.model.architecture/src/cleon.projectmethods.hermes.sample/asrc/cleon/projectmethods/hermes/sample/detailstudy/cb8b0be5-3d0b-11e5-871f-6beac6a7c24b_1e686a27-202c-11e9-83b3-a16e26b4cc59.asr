@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1e686a27-202c-11e9-83b3-a16e26b4cc59">
+  <owns predicate="b9554f69-2027-11e9-83b3-a16e26b4cc59">
+    <resource statement-guid="21fe62fe-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="21fe62fb-202c-11e9-83b3-a16e26b4cc59">
+      <owns predicate="b9554f69-2027-11e9-83b3-a16e26b4cc59">
+        <resource statement-guid="24c04160-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="24c0415d-202c-11e9-83b3-a16e26b4cc59" />
+        <resource statement-guid="2741bc4c-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="2741bc49-202c-11e9-83b3-a16e26b4cc59" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1e686a29-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="b3181496-1ffc-11e9-9447-238f4a8f5bec" />
+  </predicate>
+  <predicate guid="b9554f69-2027-11e9-83b3-a16e26b4cc59">
+    <object statement-guid="21fe62fe-202c-11e9-83b3-a16e26b4cc59">
+      <resource guid="21fe62fb-202c-11e9-83b3-a16e26b4cc59">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="21fe62fd-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="068e7d02-2029-11e9-83b3-a16e26b4cc59" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="22bf8f47-202c-11e9-83b3-a16e26b4cc59" type="literal">Knockout Aggregate</object>
+        </predicate>
+        <predicate guid="b9554f69-2027-11e9-83b3-a16e26b4cc59">
+          <object statement-guid="24c04160-202c-11e9-83b3-a16e26b4cc59">
+            <resource guid="24c0415d-202c-11e9-83b3-a16e26b4cc59">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="24c0415f-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="eafd7342-2028-11e9-83b3-a16e26b4cc59" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="254a8008-202c-11e9-83b3-a16e26b4cc59" type="literal">Knockout Criteria 1</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="2741bc4c-202c-11e9-83b3-a16e26b4cc59">
+            <resource guid="2741bc49-202c-11e9-83b3-a16e26b4cc59">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="2741bc4b-202c-11e9-83b3-a16e26b4cc59" type="resource" guid="eafd7342-2028-11e9-83b3-a16e26b4cc59" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="27861851-202c-11e9-83b3-a16e26b4cc59" type="literal">Knockout Criteria 2</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

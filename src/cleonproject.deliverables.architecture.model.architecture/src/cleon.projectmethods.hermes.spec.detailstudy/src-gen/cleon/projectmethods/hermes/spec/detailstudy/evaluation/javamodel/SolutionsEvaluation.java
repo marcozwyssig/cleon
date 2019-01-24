@@ -71,12 +71,12 @@ public class SolutionsEvaluation extends DynamicResource implements ISolutionsEv
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation> selectEvaluation() {
-    return _getMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_evaluation);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation> selectKnockoutEvaluation() {
+    return _getMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_knockoutEvaluation);
   }
 
-  public SolutionsEvaluation setEvaluation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation> evaluation) {
-    _setMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_evaluation, evaluation);
+  public SolutionsEvaluation setKnockoutEvaluation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation> knockoutEvaluation) {
+    _setMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_knockoutEvaluation, knockoutEvaluation);
     return this;
   }
     
@@ -120,6 +120,16 @@ public class SolutionsEvaluation extends DynamicResource implements ISolutionsEv
     return this;
   }
     
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation> selectWeightingEvaluation() {
+    return _getMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_weightingEvaluation);
+  }
+
+  public SolutionsEvaluation setWeightingEvaluation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation> weightingEvaluation) {
+    _setMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_weightingEvaluation, weightingEvaluation);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -129,11 +139,12 @@ public class SolutionsEvaluation extends DynamicResource implements ISolutionsEv
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_evaluation, visitor);
+    _acceptMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_knockoutEvaluation, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.solutions.javamodel.ISolution.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_solution, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptMap(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_weightingEvaluation, visitor);
   }
 
   // toMeRelations
@@ -142,9 +153,13 @@ public class SolutionsEvaluation extends DynamicResource implements ISolutionsEv
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_solution, object.getResource());
   }
   
-  public static cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation selectToMeEvaluation(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IEvaluation object) {
-    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_evaluation, object.getResource());
+  public static cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation selectToMeKnockoutEvaluation(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IKnockoutEvaluation object) {
+    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_knockoutEvaluation, object.getResource());
+  }
+  
+  public static cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation selectToMeWeightingEvaluation(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IWeightingEvaluation object) {
+    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.ISolutionsEvaluation.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.SolutionsEvaluation_weightingEvaluation, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,38e891b4-3c1a-11e5-9962-cf3035adb922,pHgRUyESksCNbQ2x8ck4M7YuQqg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,38e891b4-3c1a-11e5-9962-cf3035adb922,4TQ4C2vjp0QhVNTF7buzgIF+vaM=] */

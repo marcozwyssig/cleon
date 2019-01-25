@@ -17,7 +17,10 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.77",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.projectmethods.hermes.spec.detailstudy,cleon.projectmethods.hermes.spec.detailstudy.javamodel
- ,cleon.projectmethods.hermes.spec.detailstudy.evaluation,cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel,
- cleon.projectmethods.hermes.spec.detailstudy.drivers,cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel,
- cleon.projectmethods.hermes.spec.detailstudy.solutions,cleon.projectmethods.hermes.spec.detailstudy.solutions.javamodel
+ ,cleon.projectmethods.hermes.spec.detailstudy.drivers,cleon.projectmethods.hermes.spec.detailstudy.drivers.javamodel,
+ cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias,cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel,
+ cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout,cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.javamodel,
+ cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting,cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel,
+ cleon.projectmethods.hermes.spec.detailstudy.solutions,cleon.projectmethods.hermes.spec.detailstudy.solutions.javamodel,
+ cleon.projectmethods.hermes.spec.detailstudy.evaluation,cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel
 

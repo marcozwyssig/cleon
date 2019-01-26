@@ -59,12 +59,6 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("9fad75ec-c1d8-11e5-bbf3-bdd12a9e2b3d")
     public java.lang.String RenderDescriptions();
 
-    @IDynamicResourceExtension.MethodId("df606084-c1d8-11e5-bbf3-bdd12a9e2b3d")
-    public java.lang.String RenderParagraph();
-
-    @IDynamicResourceExtension.MethodId("3b9a5692-33bb-11e6-94cd-fbf6c8ccd08d")
-    public java.lang.String RenderChapters();
-
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -461,12 +455,6 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("8f719cd4-d3ef-11e5-9dfc-cf0f3e030023")
     public java.lang.String GetAdocFileName();
 
-    @IDynamicResourceExtension.MethodId("d7b1cc3c-1d88-11e6-b329-f50056ef90a6")
-    public java.lang.String RenderParagraphs();
-
-    @IDynamicResourceExtension.MethodId("f3426011-1d88-11e6-b329-f50056ef90a6")
-    public java.lang.String RenderChapters();
-
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -637,6 +625,56 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IChapterAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3b9a5692-33bb-11e6-94cd-fbf6c8ccd08d")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IChapterAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ChapterAwareFunctionsImpl implements IChapterAwareFunctionsImpl {
+
+    public static final IChapterAwareFunctionsImpl INSTANCE = new ChapterAwareFunctionsImpl();
+
+    private ChapterAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ChapterAwareFunctions {
+
+    private ChapterAwareFunctions() {}
+
+  }
+
+  public static interface IParagraphAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("df606084-c1d8-11e5-bbf3-bdd12a9e2b3d")
+    public java.lang.String RenderParagraph();
+
+  }
+  
+  public static interface IParagraphAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ParagraphAwareFunctionsImpl implements IParagraphAwareFunctionsImpl {
+
+    public static final IParagraphAwareFunctionsImpl INSTANCE = new ParagraphAwareFunctionsImpl();
+
+    private ParagraphAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ParagraphAwareFunctions {
+
+    private ParagraphAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,hTfHR4r1+YLaItAEjzwwVCWEkNw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,jrscU0GA4dojjx/CeY4lnhjRSgU=] */

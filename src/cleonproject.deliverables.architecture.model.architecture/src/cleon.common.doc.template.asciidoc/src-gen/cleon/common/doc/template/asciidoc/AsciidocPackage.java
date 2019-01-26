@@ -31,6 +31,8 @@ public class AsciidocPackage {
   public static final Resource FunctionSpace_aE_Asciidoc_Cell = new Resource("70f3dee9-117b-11e8-854a-3387d66a1f33");
   public static final Resource Gemfile_Document = new Resource("471b5e9b-aad2-11e8-b25a-7dd9f85a27ad");
   public static final Resource FunctionSpace_aE_Asciidoc_ItemizedList = new Resource("39b91626-e8f6-11e8-b810-cdb2b421fd42");
+  public static final Resource FunctionSpace_aE_Asciidoc_ChapterAware = new Resource("4f9728ea-2174-11e9-a054-db6d80fba790");
+  public static final Resource FunctionSpace_aE_Asciidoc_ParagraphAware = new Resource("5f385195-2174-11e9-a054-db6d80fba790");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +53,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.asciidoc,/1Tt4j+1HoeZPTEMGa2xRyKLWoM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.asciidoc,k6MhKjeojUmrK2okQz0bl+p4HVk=] */

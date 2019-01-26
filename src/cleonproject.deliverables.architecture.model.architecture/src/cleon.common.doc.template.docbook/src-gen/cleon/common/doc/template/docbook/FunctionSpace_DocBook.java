@@ -8,8 +8,6 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
-import cleon.common.doc.spec.doc.document.javamodel.AbstractDocument;
-import cleon.common.doc.spec.doc.document.javamodel.IAbstractDocument;
 import cleon.common.doc.spec.doc.document.javamodel.IDocument;
 import cleon.common.doc.spec.doc.javamodel.DocumentElementComposite;
 import cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite;
@@ -78,9 +76,6 @@ public class FunctionSpace_DocBook {
 
     @IDynamicResourceExtension.MethodId("619f532d-3df2-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderParagraph();
-
-    @IDynamicResourceExtension.MethodId("619f533c-3df2-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderChapters();
 
     @IDynamicResourceExtension.MethodId("7a904f0e-3e12-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderElementName();
@@ -639,6 +634,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IChapterAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("619f533c-3df2-11e6-9bf8-29c5fda07fa3")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IChapterAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ChapterAwareFunctionsImpl implements IChapterAwareFunctionsImpl {
+
+    public static final IChapterAwareFunctionsImpl INSTANCE = new ChapterAwareFunctionsImpl();
+
+    private ChapterAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ChapterAwareFunctions {
+
+    private ChapterAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,fmzUqOjzuGKscEArhOfMU5mZLas=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,fpPpZsvN2vEDLEWdDPZMDXsR/ck=] */

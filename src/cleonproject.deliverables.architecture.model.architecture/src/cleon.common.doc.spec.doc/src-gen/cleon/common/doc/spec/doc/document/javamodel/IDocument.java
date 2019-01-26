@@ -2,7 +2,7 @@ package cleon.common.doc.spec.doc.document.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDocument extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IDocument extends cleon.common.doc.spec.doc.javamodel.IChapterAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fd0b0ad8-28bc-11e5-bdaf-69a48f49df43");
   
@@ -16,8 +16,6 @@ public interface IDocument extends cleon.common.doc.spec.doc.chapter.javamodel.I
   
   public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties();
   
-  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,5tz2riKN1NtBxeYvPNhKDNk6NgY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd0b0ad8-28bc-11e5-bdaf-69a48f49df43,xoiRiKi8E2vyWKfs1sByCrRkqCI=] */

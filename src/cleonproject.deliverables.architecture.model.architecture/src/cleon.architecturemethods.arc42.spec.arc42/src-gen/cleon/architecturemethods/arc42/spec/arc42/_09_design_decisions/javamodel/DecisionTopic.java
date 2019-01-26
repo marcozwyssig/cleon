@@ -71,11 +71,11 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
     
   @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters);
+    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
 
   public DecisionTopic setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, chapters);
+    _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
     return this;
   }
     
@@ -158,7 +158,7 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IAssumptions.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_assumptions, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.AbstractChapter_chapters, visitor);
+    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConsideredAlternatives.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_consideredAlternatives, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConstraints.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IDecision.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_decision, visitor);
@@ -191,4 +191,4 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,YVCRqd0iIRBOCvl+R81k6xTXrcw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,U/mlbnaZwksqLLFdllsQR88lybM=] */

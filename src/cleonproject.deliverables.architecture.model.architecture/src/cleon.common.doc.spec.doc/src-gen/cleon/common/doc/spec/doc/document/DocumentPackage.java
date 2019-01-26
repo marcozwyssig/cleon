@@ -10,7 +10,6 @@ public class DocumentPackage {
   public static final Resource Document_withToC = new Resource("da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d");
   public static final Resource Document_imgDir = new Resource("72f80609-15f0-11e6-be5f-0b820f273d17");
   public static final Resource Document_properties = new Resource("9a8dc259-47f5-11e6-b388-8539f6ff7310");
-  public static final Resource Document_noParagraphs = new Resource("24b73267-0773-11e9-9ce3-b59baf185ea8");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +30,4 @@ public class DocumentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.document,dFxg7IBnIZjheah24hf9pKxQ5aM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.document,bAU8JksBwcvwxXTHQQWh7xPiSAU=] */

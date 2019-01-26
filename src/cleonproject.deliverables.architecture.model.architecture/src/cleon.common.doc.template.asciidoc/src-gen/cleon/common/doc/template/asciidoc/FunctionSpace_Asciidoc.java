@@ -455,6 +455,18 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("fd79bbe5-4e5c-11e6-a89e-4beefb17234f")
     public java.lang.String RenderEnd();
 
+    @IDynamicResourceExtension.MethodId("4807eeed-c369-11e5-9455-d97b1b986284")
+    public java.lang.String GetAdocFullFileName();
+
+    @IDynamicResourceExtension.MethodId("8f719cd4-d3ef-11e5-9dfc-cf0f3e030023")
+    public java.lang.String GetAdocFileName();
+
+    @IDynamicResourceExtension.MethodId("d7b1cc3c-1d88-11e6-b329-f50056ef90a6")
+    public java.lang.String RenderParagraphs();
+
+    @IDynamicResourceExtension.MethodId("f3426011-1d88-11e6-b329-f50056ef90a6")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -472,40 +484,6 @@ public class FunctionSpace_Asciidoc {
   public static class DocumentFunctions {
 
     private DocumentFunctions() {}
-
-  }
-
-  public static interface IAbstractDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4807eeed-c369-11e5-9455-d97b1b986284")
-    public java.lang.String GetAdocFullFileName();
-
-    @IDynamicResourceExtension.MethodId("8f719cd4-d3ef-11e5-9dfc-cf0f3e030023")
-    public java.lang.String GetAdocFileName();
-
-    @IDynamicResourceExtension.MethodId("d7b1cc3c-1d88-11e6-b329-f50056ef90a6")
-    public java.lang.String RenderParagraphs();
-
-    @IDynamicResourceExtension.MethodId("f3426011-1d88-11e6-b329-f50056ef90a6")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractDocumentFunctionsImpl implements IAbstractDocumentFunctionsImpl {
-
-    public static final IAbstractDocumentFunctionsImpl INSTANCE = new AbstractDocumentFunctionsImpl();
-
-    private AbstractDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractDocumentFunctions {
-
-    private AbstractDocumentFunctions() {}
 
   }
 
@@ -661,4 +639,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,GmMez3LmfJ8/fKj31eibe7sBXWM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,hTfHR4r1+YLaItAEjzwwVCWEkNw=] */

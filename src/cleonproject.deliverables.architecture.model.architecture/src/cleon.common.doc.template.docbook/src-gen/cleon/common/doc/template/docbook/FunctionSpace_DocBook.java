@@ -489,31 +489,6 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IAbstractDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("619f554f-3df2-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderDocument();
-
-  }
-  
-  public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractDocumentFunctionsImpl implements IAbstractDocumentFunctionsImpl {
-
-    public static final IAbstractDocumentFunctionsImpl INSTANCE = new AbstractDocumentFunctionsImpl();
-
-    private AbstractDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractDocumentFunctions {
-
-    private AbstractDocumentFunctions() {}
-
-  }
-
   public static interface IBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("61a19cc5-3df2-11e6-9bf8-29c5fda07fa3")
@@ -666,4 +641,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,onl46v9gRgXYLFyUqx/zA/cuS4k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,fmzUqOjzuGKscEArhOfMU5mZLas=] */

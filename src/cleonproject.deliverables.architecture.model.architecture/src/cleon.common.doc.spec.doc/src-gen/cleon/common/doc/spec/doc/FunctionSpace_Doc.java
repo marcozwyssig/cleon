@@ -49,7 +49,7 @@ public class FunctionSpace_Doc {
 
   }
 
-  public static interface IAbstractDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de5cc4d4-ba80-11e5-b56d-4f524d402f4b")
     public java.lang.String GetDocumentPath();
@@ -65,21 +65,21 @@ public class FunctionSpace_Doc {
 
   }
   
-  public static interface IAbstractDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractDocumentFunctionsImpl implements IAbstractDocumentFunctionsImpl {
+  public static class DocumentFunctionsImpl implements IDocumentFunctionsImpl {
 
-    public static final IAbstractDocumentFunctionsImpl INSTANCE = new AbstractDocumentFunctionsImpl();
+    public static final IDocumentFunctionsImpl INSTANCE = new DocumentFunctionsImpl();
 
-    private AbstractDocumentFunctionsImpl() {}
+    private DocumentFunctionsImpl() {}
 
   }
   
-  public static class AbstractDocumentFunctions {
+  public static class DocumentFunctions {
 
-    private AbstractDocumentFunctions() {}
+    private DocumentFunctions() {}
 
   }
 
@@ -110,4 +110,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,p7xnjVVi0QhbxagHBpQml2k6QH4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,gCRNJvTljpY7lKRR2eCuGSrAg+0=] */

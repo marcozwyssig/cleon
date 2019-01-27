@@ -28,6 +28,66 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("6c18ef67-3e09-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderAttributes();
 
+    @IDynamicResourceExtension.MethodId("1072f3e2-2175-11e9-a054-db6d80fba790")
+    public java.lang.String para();
+
+    @IDynamicResourceExtension.MethodId("1a417b34-2175-11e9-a054-db6d80fba790")
+    public java.lang.String para__U_();
+
+    @IDynamicResourceExtension.MethodId("f15b3fb8-2175-11e9-a054-db6d80fba790")
+    public java.lang.String itemizedlist();
+
+    @IDynamicResourceExtension.MethodId("f79443f6-2175-11e9-a054-db6d80fba790")
+    public java.lang.String itemizedlist__U_();
+
+    @IDynamicResourceExtension.MethodId("4223f16d-2176-11e9-a054-db6d80fba790")
+    public java.lang.String listitembullet();
+
+    @IDynamicResourceExtension.MethodId("482a9b72-2176-11e9-a054-db6d80fba790")
+    public java.lang.String listitem__U_();
+
+    @IDynamicResourceExtension.MethodId("43e6931b-2177-11e9-a054-db6d80fba790")
+    public java.lang.String table();
+
+    @IDynamicResourceExtension.MethodId("33f7ca48-2178-11e9-a054-db6d80fba790")
+    public java.lang.String table__U_();
+
+    @IDynamicResourceExtension.MethodId("57226ed2-2177-11e9-a054-db6d80fba790")
+    public java.lang.String colw40();
+
+    @IDynamicResourceExtension.MethodId("09fb58a6-2178-11e9-a054-db6d80fba790")
+    public java.lang.String colw60__9_();
+
+    @IDynamicResourceExtension.MethodId("4a46160c-2178-11e9-a054-db6d80fba790")
+    public java.lang.String thead();
+
+    @IDynamicResourceExtension.MethodId("530f8a02-2178-11e9-a054-db6d80fba790")
+    public java.lang.String thead__U_();
+
+    @IDynamicResourceExtension.MethodId("58fe3e65-2178-11e9-a054-db6d80fba790")
+    public java.lang.String tbody();
+
+    @IDynamicResourceExtension.MethodId("65e2b8e8-2178-11e9-a054-db6d80fba790")
+    public java.lang.String tbody__U_();
+
+    @IDynamicResourceExtension.MethodId("6c25cec6-2178-11e9-a054-db6d80fba790")
+    public java.lang.String tr();
+
+    @IDynamicResourceExtension.MethodId("73eb8e52-2178-11e9-a054-db6d80fba790")
+    public java.lang.String tr__U_();
+
+    @IDynamicResourceExtension.MethodId("7a283c08-2178-11e9-a054-db6d80fba790")
+    public java.lang.String th();
+
+    @IDynamicResourceExtension.MethodId("7a283c0b-2178-11e9-a054-db6d80fba790")
+    public java.lang.String th__U_();
+
+    @IDynamicResourceExtension.MethodId("7544a4e4-2233-11e9-a054-db6d80fba790")
+    public java.lang.String td();
+
+    @IDynamicResourceExtension.MethodId("7544a4e7-2233-11e9-a054-db6d80fba790")
+    public java.lang.String td__U_();
+
   }
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -73,9 +133,6 @@ public class FunctionSpace_DocBook {
 
     @IDynamicResourceExtension.MethodId("619f531a-3df2-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderDescriptions();
-
-    @IDynamicResourceExtension.MethodId("619f532d-3df2-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderParagraph();
 
     @IDynamicResourceExtension.MethodId("7a904f0e-3e12-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderElementName();
@@ -659,6 +716,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IParagraphAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("619f532d-3df2-11e6-9bf8-29c5fda07fa3")
+    public java.lang.String RenderParagraph();
+
+  }
+  
+  public static interface IParagraphAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ParagraphAwareFunctionsImpl implements IParagraphAwareFunctionsImpl {
+
+    public static final IParagraphAwareFunctionsImpl INSTANCE = new ParagraphAwareFunctionsImpl();
+
+    private ParagraphAwareFunctionsImpl() {}
+
+  }
+  
+  public static class ParagraphAwareFunctions {
+
+    private ParagraphAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,fpPpZsvN2vEDLEWdDPZMDXsR/ck=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,JiOQ8J2Djk4pFmNwyHUEnOoXM2w=] */

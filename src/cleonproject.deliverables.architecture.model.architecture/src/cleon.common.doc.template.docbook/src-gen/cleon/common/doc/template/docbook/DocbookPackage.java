@@ -27,6 +27,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_DocBook_Cell = new Resource("076921c7-117b-11e8-854a-3387d66a1f33");
   public static final Resource FunctionSpace_aE_DocBook_ItemizedList = new Resource("0000a0cd-e8f6-11e8-b810-cdb2b421fd42");
   public static final Resource FunctionSpace_aE_DocBook_ChapterAware = new Resource("75c5d471-216a-11e9-a054-db6d80fba790");
+  public static final Resource FunctionSpace_aE_DocBook_ParagraphAware = new Resource("c4f08d91-2175-11e9-a054-db6d80fba790");
   
   /* Begin Protected Region [[user]] */
   
@@ -47,4 +48,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.docbook,jsVBVhgM1U2B7JRJ9DhoDkHybw8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.template.docbook,uN8EP3dkFv+xDQawMGT6yjshq7A=] */

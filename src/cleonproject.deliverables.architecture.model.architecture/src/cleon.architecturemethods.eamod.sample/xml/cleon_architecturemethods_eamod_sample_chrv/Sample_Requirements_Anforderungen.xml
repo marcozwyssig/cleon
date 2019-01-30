@@ -37,7 +37,7 @@
 			<db:para>Nach RE-V werden Anforderungen modellbasiert in einem Anforderungsbaum verwaltet. Die
 				Baumstruktur widerspiegelt dabei die Abstraktionsebenen der einzelnen Anforderungen. </db:para>
 			<db:para>In dieser Baumstruktur sind die nachfolgenden Elementtypen zu finden:</db:para>
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 			    <db:col width="35%" />
 			    <db:col width="65%" />
 			    <db:thead>
@@ -120,7 +120,7 @@
 			    und Name aller Anforderung sowie Kapitel und Seitenzahl der detaillierten
 			    Anforderungstabelle ausgewiesen. Die nachfolgende Tabelle zeigt das Beispiel einer
 			    solchen Tabelle.</db:para>
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 			    <db:col width="20%" />
 			    <db:col width="54%" />
 			    <db:col width="14%" />
@@ -155,7 +155,7 @@
 			        Betrachtungsraums erstellt. Jede Anforderung wird durch eine Anforderungstabelle, mit
 			        allen erfassten Attributen, beschrieben. Die nachfolgende Tabelle zeigt ein
 			        entsprechendes Beispiel.</db:para>
-			    <db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 			        <db:col width="13%" />
 			        <db:col width="18%" />
 			        <db:col width="51%" />
@@ -218,7 +218,7 @@
 		<db:para>Jeder Treiber kann einer Quelle zugeordnet werden. Die Quelle stellt den Ursprung respektive die Herkunft des entsprechenden Treibers dar. 
 		Als Quellenarten kommen die Arten "Organisation", "Person", "Dokument", "Kapitel" oder "Referenz" in Frage.</db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle festgelegten Treiber aufgeführt:</db:para>
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="18%" />
 			<db:col width="60%" />
 			<db:col width="12%" />
@@ -282,7 +282,7 @@
 			<db:title>DR001_Driver_1</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="60%" />
 				<db:col width="15%" />
@@ -346,7 +346,7 @@
 			<db:title>DR002_Driver_2</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="60%" />
 				<db:col width="15%" />
@@ -396,7 +396,7 @@
 		
 		<db:para>Ziele sind in der Regel Unternehmensziele. Jedes Ziel kann einer Quelle zugeordnet werden. Jedes Ziel adressiert im Minimum einen Treiber.</db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle Ziele, welche mit dem System erfüllt werden sollen, aufgelistet.</db:para>
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="18%" />
 			<db:col width="60%" />
 			<db:col width="12%" />
@@ -514,7 +514,7 @@
 			<db:title>Z002_Goal_1</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="75%" />
 				<db:thead>
@@ -619,7 +619,7 @@
 				<db:title>Z003_Goal 1.2</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="25%" />
 					<db:col width="75%" />
 					<db:thead>
@@ -699,7 +699,7 @@
 				<db:title>Z006_Goal 1.3</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="25%" />
 					<db:col width="75%" />
 					<db:thead>
@@ -765,7 +765,7 @@
 			<db:title>Z004_Goal 2</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="75%" />
 				<db:thead>
@@ -828,7 +828,7 @@
 				<db:title>Z005_Goal 2.1</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="25%" />
 					<db:col width="75%" />
 					<db:thead>
@@ -898,7 +898,7 @@
 		
 		<db:para>Mit den Prinzipien werden die übergeordneten Gesetzmässigkeiten für das Vorhaben adressiert. Die Prinzipien können aus untergeordneten Prinzipien bestehen.</db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle Prinzipien aufgeführt:</db:para>
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="18%" />
 			<db:col width="60%" />
 			<db:col width="12%" />
@@ -962,7 +962,7 @@
 			<db:title>P004_A</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="75%" />
 				<db:thead>
@@ -1018,7 +1018,7 @@
 				<db:title>P003_sss</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="25%" />
 					<db:col width="75%" />
 					<db:thead>
@@ -1077,7 +1077,7 @@
 			<db:title>P002_Principle_B</db:title>
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="25%" />
 				<db:col width="75%" />
 				<db:thead>
@@ -1133,7 +1133,7 @@
 				<db:title>P001_Principe_C</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="25%" />
 					<db:col width="75%" />
 					<db:thead>
@@ -1196,7 +1196,7 @@
 		
 		<db:para>Mit den Interessengruppen werden die Nutzer von Anforderungen abgebildet. Eine Interessengruppe kann ein technisches System und/oder eine Organisation sein.</db:para> 
 		<db:para>In der nachfolgenden Tabelle werden die Interessengruppen aufgeführt:</db:para>
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="10%" />
 			<db:col width="20%" />
 			<db:col width="20%" />
@@ -1269,7 +1269,7 @@
 		
 		
 		
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="20%" />
 			<db:col width="40%" />
 			<db:col width="20%" />
@@ -1343,7 +1343,7 @@
 			
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="15%" />
 				<db:col width="39%" />
 				<db:col width="18%" />
@@ -1457,7 +1457,7 @@
 				<db:title>AF006_Requirements_1 (FEA)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="10%" />
 					<db:col width="15%" />
 					<db:col width="60%" />
@@ -1625,7 +1625,7 @@
 					<db:title>AF004_Requirements_2_1 (CAP)</db:title>
 					
 					
-					<db:informaltable style="EAMod Requirement">
+					<db:informaltable style="HERMES 5">
 						<db:col width="10%" />
 						<db:col width="15%" />
 						<db:col width="60%" />
@@ -1751,7 +1751,7 @@
 					<db:title>AF007_sss (FEA)</db:title>
 					
 					
-					<db:informaltable style="EAMod Requirement">
+					<db:informaltable style="HERMES 5">
 						<db:col width="10%" />
 						<db:col width="15%" />
 						<db:col width="60%" />
@@ -1868,7 +1868,7 @@
 				<db:title>AF003_Requirements_2_(ssss) (CAP)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="10%" />
 					<db:col width="15%" />
 					<db:col width="60%" />
@@ -1995,7 +1995,7 @@
 			
 			
 			
-			<db:informaltable style="EAMod Requirement">
+			<db:informaltable style="HERMES 5">
 				<db:col width="15%" />
 				<db:col width="39%" />
 				<db:col width="18%" />
@@ -2067,7 +2067,7 @@
 				<db:title>AF001_ddd (CAP)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="10%" />
 					<db:col width="15%" />
 					<db:col width="60%" />
@@ -2189,7 +2189,7 @@
 				<db:title>AF002_Constraint (CAP)</db:title>
 				
 				
-				<db:informaltable style="EAMod Requirement">
+				<db:informaltable style="HERMES 5">
 					<db:col width="10%" />
 					<db:col width="15%" />
 					<db:col width="60%" />
@@ -2325,7 +2325,7 @@
 		</db:itemizedlist>
 		<db:para></db:para>
 		<db:para>In der nachfolgenden Tabelle werden alle Quellen, welche in diesem Dokument verwendet wurden, aufgeführt:</db:para>
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="15%" />
 			<db:col width="15%" />
 			<db:col width="70%" />
@@ -2587,7 +2587,7 @@
 		
 		
 		
-		<db:informaltable style="EAMod Requirement">
+		<db:informaltable style="HERMES 5">
 			<db:col width="25%"/>
 			<db:col width="75%"/>
 			<db:thead>

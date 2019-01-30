@@ -90,6 +90,16 @@ public class Website extends DynamicResource implements IWebsite {
   }
     
   @Override
+  public java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  }
+
+  public Website setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage> selectImages() {
     return _getList(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_images);
   }
@@ -160,6 +170,7 @@ public class Website extends DynamicResource implements IWebsite {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_cover, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptList(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_images, visitor);
     _acceptList(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.ILayout.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_layouts, visitor);
     _acceptSingle(cleon.publishing.staticwebsite.spec.website.static_content.javamodel.IImage.class, cleon.publishing.staticwebsite.spec.website.WebsitePackage.Website_logo, visitor);
@@ -187,4 +198,4 @@ public class Website extends DynamicResource implements IWebsite {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,A4JEUKxpBmybzk4mlACdNxhN5Ec=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9c0f89d-afd7-11e5-a976-57ed3906441a,wKWELfLuzstu9BX9SwFWq9AzvGc=] */

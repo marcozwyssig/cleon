@@ -675,6 +675,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IAsciidocFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ccfc5d7a-2236-11e9-a054-db6d80fba790")
+    public java.lang.String RenderContent(final cleon.common.doc.spec.doc.paragraph.javamodel.IText text);
+
+  }
+  
+  public static interface IAsciidocFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AsciidocFunctionsImpl implements IAsciidocFunctionsImpl {
+
+    public static final IAsciidocFunctionsImpl INSTANCE = new AsciidocFunctionsImpl();
+
+    private AsciidocFunctionsImpl() {}
+
+  }
+  
+  public static class AsciidocFunctions {
+
+    private AsciidocFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,jrscU0GA4dojjx/CeY4lnhjRSgU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,nAbudT4Sr+YS74pgNJAfVNAiooQ=] */

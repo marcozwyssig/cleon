@@ -29,6 +29,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("1dc27d5b-084d-11e9-9ee8-c54fda7ab431")
     public cleon.common.doc.spec.doc.document.javamodel.IDocument GetDocument();
 
+    @IDynamicResourceExtension.MethodId("14db2ced-2235-11e9-a054-db6d80fba790")
+    public cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage GetRenderLanguage();
+
   }
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -108,6 +111,31 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface ITextFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0504c3c3-2235-11e9-a054-db6d80fba790")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface ITextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TextFunctionsImpl implements ITextFunctionsImpl {
+
+    public static final ITextFunctionsImpl INSTANCE = new TextFunctionsImpl();
+
+    private TextFunctionsImpl() {}
+
+  }
+  
+  public static class TextFunctions {
+
+    private TextFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,i3nX6uEcY9YwULn8j22DOshIH8E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,MG4VY+vrG38NO8w2SDmU8zGJai0=] */

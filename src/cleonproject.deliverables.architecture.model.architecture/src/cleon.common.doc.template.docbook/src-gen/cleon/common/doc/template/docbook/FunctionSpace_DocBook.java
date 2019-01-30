@@ -741,6 +741,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IDocBookFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c0d81b31-2235-11e9-a054-db6d80fba790")
+    public java.lang.String RenderContent(final cleon.common.doc.spec.doc.paragraph.javamodel.IText text);
+
+  }
+  
+  public static interface IDocBookFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DocBookFunctionsImpl implements IDocBookFunctionsImpl {
+
+    public static final IDocBookFunctionsImpl INSTANCE = new DocBookFunctionsImpl();
+
+    private DocBookFunctionsImpl() {}
+
+  }
+  
+  public static class DocBookFunctions {
+
+    private DocBookFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,JiOQ8J2Djk4pFmNwyHUEnOoXM2w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,uhEaHCEpfs47TpNsRxHR3lPfMxw=] */

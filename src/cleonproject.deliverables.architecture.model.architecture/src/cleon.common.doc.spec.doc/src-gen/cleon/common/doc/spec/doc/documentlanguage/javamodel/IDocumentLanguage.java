@@ -1,4 +1,4 @@
-package cleon.common.doc.spec.doc.renderlanguage.javamodel;
+package cleon.common.doc.spec.doc.documentlanguage.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IDocumentLanguage extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,Nrj+nPiMNCXsDKBHiH16IJ5caJQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,uJwdZXwXrmu/N0uFdsfF1fKmaKY=] */

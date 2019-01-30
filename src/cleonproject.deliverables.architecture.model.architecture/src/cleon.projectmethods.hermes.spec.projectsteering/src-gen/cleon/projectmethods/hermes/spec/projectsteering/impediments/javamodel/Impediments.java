@@ -71,11 +71,11 @@ public class Impediments extends DynamicResource implements IImpediments {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Impediments setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+  public Impediments setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
     _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
@@ -129,7 +129,7 @@ public class Impediments extends DynamicResource implements IImpediments {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectsteering.impediments.javamodel.IImpediment.class, cleon.projectmethods.hermes.spec.projectsteering.impediments.ImpedimentsPackage.Impediments_impediments, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
@@ -143,4 +143,4 @@ public class Impediments extends DynamicResource implements IImpediments {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af7dac0a-3383-11e6-b251-57783f5929b3,pl2DjOXdFxLL0boBKPoyvkWFJhs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af7dac0a-3383-11e6-b251-57783f5929b3,JhQAWJDSF/sGrWTu2ndoeRBnPng=] */

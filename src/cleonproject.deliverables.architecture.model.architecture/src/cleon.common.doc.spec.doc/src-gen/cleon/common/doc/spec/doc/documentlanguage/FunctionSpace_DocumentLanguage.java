@@ -1,4 +1,4 @@
-package cleon.common.doc.spec.doc.renderlanguage;
+package cleon.common.doc.spec.doc.documentlanguage;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -48,4 +48,4 @@ public class FunctionSpace_DocumentLanguage {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c84a0ac0-2234-11e9-a054-db6d80fba790,GFFvsPv5QBzOZ6lkfeBOJyYqqow=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c84a0ac0-2234-11e9-a054-db6d80fba790,ZEzLKAQ4nau4f2YMenloWWgW/g8=] */

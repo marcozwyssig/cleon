@@ -90,11 +90,11 @@ public class Planning extends DynamicResource implements IPlanning {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Planning setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+  public Planning setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
     _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
@@ -190,7 +190,7 @@ public class Planning extends DynamicResource implements IPlanning {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.javamodel.IConstraints.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_constraints, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoals.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_goals, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.initialposition.javamodel.IInitialposition.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.Planning_initialposition, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
@@ -228,4 +228,4 @@ public class Planning extends DynamicResource implements IPlanning {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,ox/rff/ailrqOtt88T5crc/hylQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,92ZJIxoIh3w7dzW3N2FilHg3x6s=] */

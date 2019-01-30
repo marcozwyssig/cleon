@@ -80,11 +80,11 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public ResourceManagement setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+  public ResourceManagement setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
     _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
@@ -199,7 +199,7 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.infrastructure.javamodel.IInfrastructure.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.ResourcePackage.ResourceManagement_infrastructure, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.locations.javamodel.ILocations.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.ResourcePackage.ResourceManagement_locations, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.organisations.javamodel.IOrganisations.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.ResourcePackage.ResourceManagement_organisations, visitor);
@@ -243,4 +243,4 @@ public class ResourceManagement extends DynamicResource implements IResourceMana
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,soaaMjMZirxEaGIuFNKMBxiCdgY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a143e996-a7e5-11e5-82dd-3b995d9c840c,6RAROvqHnmQsJRAGDQ/dYiWXEUA=] */

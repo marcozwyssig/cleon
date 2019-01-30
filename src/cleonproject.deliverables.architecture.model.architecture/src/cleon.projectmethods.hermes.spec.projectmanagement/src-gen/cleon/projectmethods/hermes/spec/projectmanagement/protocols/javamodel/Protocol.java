@@ -118,11 +118,11 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Protocol setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+  public Protocol setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
     _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
@@ -211,7 +211,7 @@ public class Protocol extends DynamicResource implements IProtocol {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_date, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.renderlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.locations.javamodel.ILocation.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_location, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_members, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocol_moderator, visitor);
@@ -252,4 +252,4 @@ public class Protocol extends DynamicResource implements IProtocol {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,20N/efxiklPJJBhOT2eyWVOph6g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,OoJ8oJtBFh0LTHsHAbZtiq27FBY=] */

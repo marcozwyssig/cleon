@@ -1,4 +1,4 @@
-package cleon.common.doc.spec.doc.renderlanguage.javamodel;
+package cleon.common.doc.spec.doc.documentlanguage.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class DocumentLanguage extends DynamicResource implements IDocum
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,nthqOAHoKBSynL0hb7sJyruOuiw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,nzNxE2LGawF27TabLyV7JG4f3tA=] */

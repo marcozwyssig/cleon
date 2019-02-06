@@ -30,7 +30,7 @@ public class NetworkPackage {
   private NetworkPackage() {}
   
   public static final String getScopeName() {
-    return "cleon.modelinglanguages.network.spec.network";
+    return "cleon.modelinglanguages.network.spec.subnet";
   }
   
   public static final String getResourceFolderPath() {
@@ -42,4 +42,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,DVh847zxXFkKaSMsOfePG/ub/7w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,Q5+nWFGzo7Lqmtfm1nVO1sb4dio=] */

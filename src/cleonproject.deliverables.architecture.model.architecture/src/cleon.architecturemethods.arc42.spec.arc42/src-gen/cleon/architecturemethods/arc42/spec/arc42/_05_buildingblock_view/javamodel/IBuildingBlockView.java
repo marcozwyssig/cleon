@@ -19,6 +19,8 @@ public interface IBuildingBlockView extends cleon.common.doc.spec.doc.chapter.ja
   
   // relations
   
+  public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ISystem selectSystem();
+  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_1();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ILevel> selectLevel_2();
@@ -31,4 +33,4 @@ public interface IBuildingBlockView extends cleon.common.doc.spec.doc.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,dC0FOEd+ytYwEWXwHQToqAc4Zhc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,GTF2TSNp4dBUXlSVawXWdGbNEJY=] */

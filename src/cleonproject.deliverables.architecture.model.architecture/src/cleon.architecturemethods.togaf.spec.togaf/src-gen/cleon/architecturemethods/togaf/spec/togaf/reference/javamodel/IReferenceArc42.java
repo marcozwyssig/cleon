@@ -8,10 +8,8 @@ public interface IReferenceArc42 extends cleon.architecturemethods.arc42.spec.ar
   
   // relations
   
-  public cleon.architecturemethods.togaf.spec.togaf.reference._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context select__V_3_aE_system_aE_scope_aE_and_aE_context();
-  
   public cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.javamodel.I__V_5_aE_ArchitectureBuildingBlockView select__V_5_aE_architecturebuildingblockview();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,N5B56MgnXzKkKUeg25zyVqPGRZk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0813a879-2d6d-11e6-959f-d1cef44ff5fd,OAa1nJUFGa11PllCiopshIXtAfY=] */

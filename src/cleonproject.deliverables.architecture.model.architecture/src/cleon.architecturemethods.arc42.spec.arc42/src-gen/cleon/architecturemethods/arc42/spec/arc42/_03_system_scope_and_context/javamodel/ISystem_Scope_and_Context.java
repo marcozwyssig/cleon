@@ -27,12 +27,10 @@ public interface ISystem_Scope_and_Context extends cleon.common.doc.spec.doc.cha
   
   // relations
   
-  public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem selectSystem();
-  
   public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IDomainContext selectDomainContext();
   
   public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectTechnicalContext();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,Xl0TtdsUewKKYLxBM05D6hU094w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,wzH2sQUl9lWj21vOKMDKwu8j9Ec=] */

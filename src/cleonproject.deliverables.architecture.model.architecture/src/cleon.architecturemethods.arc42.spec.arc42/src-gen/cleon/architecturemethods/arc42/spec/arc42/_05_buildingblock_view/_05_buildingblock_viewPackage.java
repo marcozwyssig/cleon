@@ -5,7 +5,9 @@ import ch.actifsource.core.Resource;
 public class _05_buildingblock_viewPackage {
   
   public static final Resource BuildingBlockView = new Resource("37b55799-ffcc-11e4-ac0a-959b440f987f");
+  public static final Resource System = new Resource("a3ea83ea-2660-11e6-ae54-e50d44645ae7");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_BuildingBlockView = new Resource("f94c7f5e-437a-11e6-a9d7-97cf4f7c398b");
+  public static final Resource BuildingBlockView_system = new Resource("57fece11-498a-11e6-8d4d-09f3feb92353");
   public static final Resource Level = new Resource("1551fb66-2857-11e8-9af4-b7d7a3bbddc1");
   public static final Resource BuildingBlockView_level_aE_1 = new Resource("bb714aca-2857-11e8-9af4-b7d7a3bbddc1");
   public static final Resource BuildingBlockView_level_aE_2 = new Resource("1b9ce450-2858-11e8-9af4-b7d7a3bbddc1");
@@ -44,4 +46,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,q5pCHlwNOMloKkMnQKcICVGlEsE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,9aGx81wCdISh8wxf7qIwnwZZQOk=] */

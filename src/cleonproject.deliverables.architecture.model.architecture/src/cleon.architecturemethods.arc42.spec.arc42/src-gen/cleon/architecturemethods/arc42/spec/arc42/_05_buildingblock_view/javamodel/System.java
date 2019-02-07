@@ -1,4 +1,4 @@
-package cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel;
+package cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class System extends DynamicResource implements ISystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,qrUuaGkN5Yk1MBXaI1IIoxSS2XI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea83ea-2660-11e6-ae54-e50d44645ae7,jBPrbpd2I3QH0CWwWT4x4OPVODw=] */

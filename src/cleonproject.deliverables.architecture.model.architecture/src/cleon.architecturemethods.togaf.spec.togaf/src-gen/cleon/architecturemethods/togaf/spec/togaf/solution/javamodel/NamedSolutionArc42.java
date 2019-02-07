@@ -98,12 +98,12 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
     
   @Override
-  public cleon.architecturemethods.togaf.spec.togaf.solution._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context select__V_3_aE_system_aE_scope_aE_and_aE_context() {
-    return _getSingle(cleon.architecturemethods.togaf.spec.togaf.solution._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.togaf.spec.togaf.solution.SolutionPackage.SolutionArc42___V_3_aE_system_aE_scope_aE_and_aE_context);
+  public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context select__V_3_aE_system_aE_scope_aE_and_aE_context() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_3_aE_system_aE_scope_aE_and_aE_context);
   }
 
-  public NamedSolutionArc42 set__V_3_aE_system_aE_scope_aE_and_aE_context(cleon.architecturemethods.togaf.spec.togaf.solution._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context __V_3_aE_system_aE_scope_aE_and_aE_context) {
-    _setSingle(cleon.architecturemethods.togaf.spec.togaf.solution.SolutionPackage.SolutionArc42___V_3_aE_system_aE_scope_aE_and_aE_context, __V_3_aE_system_aE_scope_aE_and_aE_context);
+  public NamedSolutionArc42 set__V_3_aE_system_aE_scope_aE_and_aE_context(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context __V_3_aE_system_aE_scope_aE_and_aE_context) {
+    _setSingle(cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_3_aE_system_aE_scope_aE_and_aE_context, __V_3_aE_system_aE_scope_aE_and_aE_context);
     return this;
   }
     
@@ -309,7 +309,7 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IArchitecture_Constraints.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_2_aE_architecture_aE_constraints, visitor);
-    _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.solution._03_system_scope_and_context.javamodel.I__V_3_aE_System_aE_Scope_aE_and_aE_Context.class, cleon.architecturemethods.togaf.spec.togaf.solution.SolutionPackage.SolutionArc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_3_aE_system_aE_scope_aE_and_aE_context, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_4_aE_solution_aE_strategy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42___V_5_aE_buildingblockview, visitor);
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.javamodel.I__V_5_aE_SolutionBuildingBlockView.class, cleon.architecturemethods.togaf.spec.togaf.solution.SolutionPackage.SolutionArc42___V_5_aE_solutionbuildingblockview, visitor);
@@ -332,4 +332,4 @@ public class NamedSolutionArc42 extends DynamicResource implements INamedSolutio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,7xjf/VfkG2LRK56SNTALSeaHkBw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90cdd09-28f2-11e8-a684-8332c21c2f91,7hetvqv/zNG2y+lHXUWQlY+h13M=] */

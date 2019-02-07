@@ -21,7 +21,7 @@ public class FunctionSpace_Buildingblock_View {
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fc6a39f7-437a-11e6-a9d7-97cf4f7c398b")
-    public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem GetSystem();
+    public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ISystem GetSystem();
 
   }
   
@@ -46,7 +46,7 @@ public class FunctionSpace_Buildingblock_View {
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("604b9cc2-2b56-11e8-859c-c3075307fbcf")
-    public cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.javamodel.ISystem GetSystem();
+    public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ISystem GetSystem();
 
   }
   
@@ -130,4 +130,4 @@ public class FunctionSpace_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,NaOlwQjoF5vbrofyZ2KAN0J8hC0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,wWMwfKAcWYetU9luQeREpQ4Y47o=] */

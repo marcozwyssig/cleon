@@ -49,6 +49,15 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   }
 
   @Override
+  public java.lang.String selectItemNumber() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_itemNumber);
+  }
+    
+  public void setItemNumber(java.lang.String itemNumber) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_itemNumber, itemNumber);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -57,24 +66,15 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
-  @Override
-  public java.lang.String selectNo() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_no);
-  }
-    
-  public void setNo(java.lang.String no) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_no, no);
-  }
-
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions> selectProductOptions() {
-    return _getList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productOptions);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions> selectProductVariantOptions() {
+    return _getMap(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions);
   }
 
-  public ProductVariant setProductOptions(java.util.List<? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions> productOptions) {
-    _setList(cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productOptions, productOptions);
+  public ProductVariant setProductVariantOptions(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions> productVariantOptions) {
+    _setMap(cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions, productVariantOptions);
     return this;
   }
     
@@ -94,18 +94,16 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_itemNumber, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_no, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productOptions, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariant> selectToMeProductOptions(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productOptions, object.getResource());
+  public static cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariant selectToMeProductVariantOptions(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,Q7siyTQMIxWrSR5qKlVhDfRfxAI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,xv3gV0Wpm6ojt8/Q07I161yUbHk=] */

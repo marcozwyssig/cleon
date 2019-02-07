@@ -1204,6 +1204,46 @@
 		
 		
 	</db:chapter>
+	<db:chapter xml:id="ea.8d7e385c-2ad9-11e9-b83f-8be423c00623">
+		<db:title>Produktesicht</db:title>
+		
+		
+		
+		<db:informaltable style="HERMES 5">
+			<db:col width="20%" />
+			<db:col width="20%" />
+			<db:col width="10%" />
+			<db:col width="25%" />	
+			<db:col width="25%" />			
+			<db:thead>
+				<db:tr>
+					<db:th>Hersteller</db:th>
+					<db:th>Produkt</db:th>
+					<db:th>Version</db:th>
+					<db:th>Verwendung bei Baustein(e)</db:th>						
+					<db:th>Beschreibung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Microsoft</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Microsoft Windows 2019</db:para>
+					</db:td>
+					<db:td>
+						<db:para>2019</db:para>
+					</db:td>
+					<db:td>
+					</db:td>			
+					<db:td>
+					</db:td>			
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
+		
+	</db:chapter>
 	<db:chapter xml:id="ea.878f2cbb-ee58-11e8-9756-27a593be2ffb">
 		<db:title>Anforderungsabdeckung</db:title>
 		

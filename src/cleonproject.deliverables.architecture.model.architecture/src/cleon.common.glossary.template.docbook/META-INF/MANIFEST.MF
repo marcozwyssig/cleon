@@ -16,6 +16,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.doc.template.docbook.builtin;bundle-version="0.4.81",
  cleon.common.doc.spec.doc.builtin;bundle-version="0.4.81",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.81",
+ cleon.common.xml.template.xml.builtin;bundle-version="0.4.81",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.81",
  cleon.common.xml.spec.xml.builtin;bundle-version="0.4.81",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.common.glossary.template.docbook,cleon.common.glossary.template.docbook.javamodel

@@ -1212,14 +1212,12 @@
 		<db:informaltable style="HERMES 5">
 			<db:col width="20%" />
 			<db:col width="20%" />
-			<db:col width="10%" />
 			<db:col width="25%" />	
-			<db:col width="25%" />			
+			<db:col width="35%" />			
 			<db:thead>
 				<db:tr>
 					<db:th>Hersteller</db:th>
 					<db:th>Produkt</db:th>
-					<db:th>Version</db:th>
 					<db:th>Verwendung bei Baustein(e)</db:th>						
 					<db:th>Beschreibung</db:th>
 				</db:tr>
@@ -1230,10 +1228,7 @@
 						<db:para>Microsoft</db:para>
 					</db:td>
 					<db:td>
-						<db:para>Microsoft Windows 2019</db:para>
-					</db:td>
-					<db:td>
-						<db:para>2019</db:para>
+						<db:para>Microsoft Windows 2016</db:para>
 					</db:td>
 					<db:td>
 					</db:td>			

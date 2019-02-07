@@ -743,14 +743,12 @@
 				<db:section>
 					<db:title>Verwendete Produkte</db:title>
 				<db:informaltable style="HERMES 5">
-						<db:col width="40%" />
-						<db:col width="40%" />
-						<db:col width="20%" />
+						<db:col width="50%" />
+						<db:col width="50%" />
 						<db:thead>
 							<db:tr>
 								<db:th>Hersteller</db:th>			
 								<db:th>Produkt</db:th>
-								<db:th>Version</db:th>
 							</db:tr>
 						</db:thead>
 						<db:tbody>
@@ -759,10 +757,7 @@
 									<db:para>Microsoft</db:para>
 								</db:td>			
 								<db:td>
-									<db:para>Microsoft Windows Server 2016</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2016</db:para>
+									<db:para>Microsoft Windows Server</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -883,14 +878,12 @@
 		<db:informaltable style="HERMES 5">
 			<db:col width="20%" />
 			<db:col width="20%" />
-			<db:col width="10%" />
 			<db:col width="25%" />	
-			<db:col width="25%" />			
+			<db:col width="35%" />			
 			<db:thead>
 				<db:tr>
 					<db:th>Hersteller</db:th>
 					<db:th>Produkt</db:th>
-					<db:th>Version</db:th>
 					<db:th>Verwendung bei Baustein(e)</db:th>						
 					<db:th>Beschreibung</db:th>
 				</db:tr>
@@ -901,10 +894,7 @@
 						<db:para>Microsoft</db:para>
 					</db:td>
 					<db:td>
-						<db:para>Microsoft Windows Server 2016</db:para>
-					</db:td>
-					<db:td>
-						<db:para>2016</db:para>
+						<db:para>Microsoft Windows Server</db:para>
 					</db:td>
 					<db:td>
 						<db:itemizedlist>
@@ -921,10 +911,7 @@
 						<db:para>Redhat</db:para>
 					</db:td>
 					<db:td>
-						<db:para>Redhat SLES 7.1</db:para>
-					</db:td>
-					<db:td>
-						<db:para>7.1</db:para>
+						<db:para>Redhat SLES</db:para>
 					</db:td>
 					<db:td>
 					</db:td>			
@@ -936,10 +923,7 @@
 						<db:para>VMware</db:para>
 					</db:td>
 					<db:td>
-						<db:para>VMware ESXi 6.0</db:para>
-					</db:td>
-					<db:td>
-						<db:para>6.0</db:para>
+						<db:para>VMware ESXi</db:para>
 					</db:td>
 					<db:td>
 					</db:td>			

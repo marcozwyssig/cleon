@@ -66,6 +66,15 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.String selectVersion() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version);
+  }
+    
+  public void setVersion(java.lang.String version) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version, version);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_itemNumber, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.Version_version, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariantOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_productVariantOptions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -106,4 +116,4 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,xv3gV0Wpm6ojt8/Q07I161yUbHk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,DrlK9lBi3Xoordv+0qID0f7YgBw=] */

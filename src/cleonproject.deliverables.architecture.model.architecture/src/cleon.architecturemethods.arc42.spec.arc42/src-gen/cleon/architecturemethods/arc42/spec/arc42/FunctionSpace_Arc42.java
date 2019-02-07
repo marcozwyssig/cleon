@@ -26,6 +26,9 @@ public class FunctionSpace_Arc42 {
     @IDynamicResourceExtension.MethodId("a82f97f3-2ad6-11e9-b83f-8be423c00623")
     public cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view.javamodel.ISystem GetSystem();
 
+    @IDynamicResourceExtension.MethodId("c9c2693d-2ad6-11e9-b83f-8be423c00623")
+    public cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView GetDeployment();
+
   }
   
   public static interface Iarc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -48,4 +51,4 @@ public class FunctionSpace_Arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,Ucxxfb+QHiHjgW+E1MrRQZKz484=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,2arHDO3u7lyvBrftL4mucUBeTBw=] */

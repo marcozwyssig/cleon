@@ -11,6 +11,13 @@ public class _13_product_viewPackage {
   public static final Resource ProductView_manufactors = new Resource("da7660bd-d0b1-11e8-b005-f7630e4c29c0");
   public static final Resource ProductAware_usingProducts = new Resource("0b193aba-d0b9-11e8-b005-f7630e4c29c0");
   public static final Resource ProductAware = new Resource("194287ca-0a76-11e9-9915-0d353533f3da");
+  public static final Resource ProductVariant = new Resource("4026c4e3-2acf-11e9-b83f-8be423c00623");
+  public static final Resource ProductOptions = new Resource("4c37c1df-2acf-11e9-b83f-8be423c00623");
+  public static final Resource Product_productVariants = new Resource("5a22d682-2acf-11e9-b83f-8be423c00623");
+  public static final Resource Product_productOptions = new Resource("688f7667-2acf-11e9-b83f-8be423c00623");
+  public static final Resource ProductVariant_productOptions = new Resource("703db628-2acf-11e9-b83f-8be423c00623");
+  public static final Resource ProductVariantAware = new Resource("3cbcc8fd-2ad0-11e9-b83f-8be423c00623");
+  public static final Resource ProductVariant_no = new Resource("3a9e8793-2ad1-11e9-b83f-8be423c00623");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +38,4 @@ public class _13_product_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._13_product_view,8eUVWrI7z8CxryDxth63BeF1nfw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._13_product_view,IonQ8n24wtCtOZqvsDNqYc31QvI=] */

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.modelinglanguages.graph.sample">
+         <Plugin
+               pluginId="cleon.modelinglanguages.graph.sample.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,40cd2d01-2ac6-11e9-994e-b56db58a4c0f,6ba57f1b-2ac6-11e9-994e-b56db58a4c0f,txN/zNQT+ZvC2pcbFYVE+mlUZfw=] -->

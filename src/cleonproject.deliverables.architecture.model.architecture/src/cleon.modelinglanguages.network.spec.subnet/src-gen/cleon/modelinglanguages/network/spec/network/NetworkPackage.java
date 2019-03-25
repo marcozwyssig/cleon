@@ -13,7 +13,7 @@ public class NetworkPackage {
   public static final Resource NetworkDiagram = new Resource("a6f94ec5-092f-11e9-8c40-11db3668c0c9");
   public static final Resource NetworkDiagram_network = new Resource("bb361f38-092f-11e9-8c40-11db3668c0c9");
   public static final Resource NetworkDiagram_path = new Resource("df0b8e39-092f-11e9-8c40-11db3668c0c9");
-  public static final Resource AbtractNetworkNode = new Resource("d8caf2bc-0930-11e9-8c40-11db3668c0c9");
+  public static final Resource AbstractNetworkNode = new Resource("d8caf2bc-0930-11e9-8c40-11db3668c0c9");
   public static final Resource AbstractNetwork_networkNodes = new Resource("e18daff1-0930-11e9-8c40-11db3668c0c9");
   public static final Resource NamedNetworkNode = new Resource("f896998a-0930-11e9-8c40-11db3668c0c9");
   public static final Resource NamedNetwork_networkNodes = new Resource("0ade9f65-0931-11e9-8c40-11db3668c0c9");
@@ -42,4 +42,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,Q5+nWFGzo7Lqmtfm1nVO1sb4dio=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,E+vZnn2Mkvhl5w58wYmbJUkFySo=] */

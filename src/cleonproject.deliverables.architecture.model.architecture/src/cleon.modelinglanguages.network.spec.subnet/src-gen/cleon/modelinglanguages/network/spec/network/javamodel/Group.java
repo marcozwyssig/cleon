@@ -52,11 +52,11 @@ public class Group extends DynamicResource implements IGroup {
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode> selectNodes() {
-    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> selectNodes() {
+    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes);
   }
 
-  public Group setNodes(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode> nodes) {
+  public Group setNodes(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> nodes) {
     _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes, nodes);
     return this;
   }
@@ -78,13 +78,13 @@ public class Group extends DynamicResource implements IGroup {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IColor.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_color, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectToMeNodes(cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode object) {
+  public static java.util.List<cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectToMeNodes(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode object) {
     return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.Group_nodes, object.getResource());
   }
   
@@ -93,4 +93,4 @@ public class Group extends DynamicResource implements IGroup {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,QKpKtUDnsybuxyhhP33Jk1H3qTE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,njhG/zagO6UugaFgkhpTn19NP48=] */

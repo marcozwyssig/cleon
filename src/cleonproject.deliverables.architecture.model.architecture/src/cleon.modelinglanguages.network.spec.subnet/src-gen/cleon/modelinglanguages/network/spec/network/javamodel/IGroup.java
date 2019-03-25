@@ -8,10 +8,10 @@ public interface IGroup extends ch.actifsource.core.javamodel.INamedResource {
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbtractNetworkNode> selectNodes();
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> selectNodes();
   
   public ch.actifsource.core.javamodel.IColor selectColor();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,BX9wMKr3Fto6rBJ5A7aMQv+NMFE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,QI6dAghiLfMHt6JH1uSbaNL08G8=] */

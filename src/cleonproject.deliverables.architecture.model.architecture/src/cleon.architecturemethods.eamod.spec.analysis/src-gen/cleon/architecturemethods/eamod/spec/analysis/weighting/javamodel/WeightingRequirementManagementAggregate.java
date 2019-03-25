@@ -51,11 +51,11 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectRequirementsManagement() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementsManagement() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement);
   }
 
-  public WeightingRequirementManagementAggregate setRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement requirementsManagement) {
+  public WeightingRequirementManagementAggregate setRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument requirementsManagement) {
     _setSingle(cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement, requirementsManagement);
     return this;
   }
@@ -96,7 +96,7 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.AbstractCriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingPriority.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_priorityWeighting, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingSubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_subjectAreaAggregate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.WeightingPackage.WeightingCriteriaAggregateAware_weightingCriterias, visitor);
@@ -104,7 +104,7 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingRequirementManagementAggregate> selectToMeRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement object) {
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingRequirementManagementAggregate> selectToMeRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingRequirementManagementAggregate.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement, object.getResource());
   }
   
@@ -117,4 +117,4 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,fT0MFGyJrmFXHwH76i3y457WOQc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,SdipfNZBBG0dPDpAWptLmogMd04=] */

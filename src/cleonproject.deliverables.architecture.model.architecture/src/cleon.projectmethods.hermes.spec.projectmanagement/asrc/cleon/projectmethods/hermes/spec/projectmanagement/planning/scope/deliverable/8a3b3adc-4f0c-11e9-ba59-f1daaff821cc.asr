@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8a3b3adc-4f0c-11e9-ba59-f1daaff821cc">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="173f4fb6-4f25-11e9-94cf-1f7bd08ca41e" type="resource" guid="1735b2c2-4f25-11e9-94cf-1f7bd08ca41e" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a3bd71e-4f0c-11e9-ba59-f1daaff821cc" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a3c4c50-4f0c-11e9-ba59-f1daaff821cc" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="173f4fb6-4f25-11e9-94cf-1f7bd08ca41e">
+      <resource guid="1735b2c2-4f25-11e9-94cf-1f7bd08ca41e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="173823c4-4f25-11e9-94cf-1f7bd08ca41e" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="173cdeb5-4f25-11e9-94cf-1f7bd08ca41e" type="literal">alikeDeliverable</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="17440aa7-4f25-11e9-94cf-1f7bd08ca41e" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="17440aa8-4f25-11e9-94cf-1f7bd08ca41e" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="17467ba9-4f25-11e9-94cf-1f7bd08ca41e" type="resource" guid="e7fd530e-bbcc-11e6-997f-d73ea5a3671c" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a3bfe2f-4f0c-11e9-ba59-f1daaff821cc" type="literal">DeliverableAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="8a3c9a71-4f0c-11e9-ba59-f1daaff821cc" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

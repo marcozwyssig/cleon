@@ -8,7 +8,7 @@ public interface IWeightingRequirementManagementAggregate extends cleon.projectm
   
   // relations
   
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectRequirementsManagement();
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementsManagement();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingPriority> selectPriorityWeighting();
   
@@ -16,4 +16,4 @@ public interface IWeightingRequirementManagementAggregate extends cleon.projectm
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,6CMYZNIN7zpcq/lWj4hwrCIIz80=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,6djK8UNwSepTN8tzBxaGs3Fxcug=] */

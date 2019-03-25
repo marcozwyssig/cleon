@@ -62,11 +62,11 @@ public class Steering extends DynamicResource implements ISteering {
   }
     
   @Override
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning selectPlanning() {
-    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning);
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning);
   }
 
-  public Steering setPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning planning) {
+  public Steering setPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument planning) {
     _setSingle(cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning, planning);
     return this;
   }
@@ -99,7 +99,7 @@ public class Steering extends DynamicResource implements ISteering {
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.javamodel.IControlling.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_controlling, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.impediments.javamodel.IImpediments.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_impediments, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.javamodel.IRisknanagement.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_risks, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -118,9 +118,9 @@ public class Steering extends DynamicResource implements ISteering {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectsteering.javamodel.ISteering.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_impediments, object.getResource());
   }
   
-  public static cleon.projectmethods.hermes.spec.projectsteering.javamodel.ISteering selectToMePlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning object) {
+  public static cleon.projectmethods.hermes.spec.projectsteering.javamodel.ISteering selectToMePlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument object) {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectsteering.javamodel.ISteering.class, cleon.projectmethods.hermes.spec.projectsteering.ProjectsteeringPackage.Steering_planning, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,KdQsbcVRWRVS42tD/QuOmpIjFYY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,MbrDE6iD0vQM0E2ZndRwZ3DHIhE=] */

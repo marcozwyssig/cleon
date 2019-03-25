@@ -14,6 +14,8 @@ public class DeliverablePackage {
   public static final Resource SystemDeliverable = new Resource("471bb7a7-b467-11e8-bb21-172cc8e5f7cd");
   public static final Resource ManagementDeliverable = new Resource("584072fc-b467-11e8-bb21-172cc8e5f7cd");
   public static final Resource MaterialDeliverable = new Resource("755a66f9-b467-11e8-bb21-172cc8e5f7cd");
+  public static final Resource DeliverableAware = new Resource("8a3b3adc-4f0c-11e9-ba59-f1daaff821cc");
+  public static final Resource DeliverableAware_alikeDeliverable = new Resource("1735b2c2-4f25-11e9-94cf-1f7bd08ca41e");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +36,4 @@ public class DeliverablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable,HlmbvSe4Qnli67XoFYFOYbYPhuE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable,n3keDSDJCIv0gJ6WXbe+YzWQG0c=] */

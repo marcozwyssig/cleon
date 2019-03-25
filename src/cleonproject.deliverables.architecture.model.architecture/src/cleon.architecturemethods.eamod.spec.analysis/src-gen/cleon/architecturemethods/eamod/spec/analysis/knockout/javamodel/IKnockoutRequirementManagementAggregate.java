@@ -8,10 +8,10 @@ public interface IKnockoutRequirementManagementAggregate extends cleon.projectme
   
   // relations
   
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectRequirementsManagement();
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementsManagement();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutSubjectAreaAggregate> selectSubjectAreaAggregate();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,dLuGG30cSBJKYpvFac4wIj6uo5E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,Tqq2YIuwk+5qLvu2D0zZHLseTnA=] */

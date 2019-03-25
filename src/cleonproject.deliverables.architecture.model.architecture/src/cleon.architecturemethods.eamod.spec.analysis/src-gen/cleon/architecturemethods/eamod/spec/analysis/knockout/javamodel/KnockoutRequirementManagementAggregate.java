@@ -51,11 +51,11 @@ public class KnockoutRequirementManagementAggregate extends DynamicResource impl
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement selectRequirementsManagement() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementsManagement() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement);
   }
 
-  public KnockoutRequirementManagementAggregate setRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement requirementsManagement) {
+  public KnockoutRequirementManagementAggregate setRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument requirementsManagement) {
     _setSingle(cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement, requirementsManagement);
     return this;
   }
@@ -86,14 +86,14 @@ public class KnockoutRequirementManagementAggregate extends DynamicResource impl
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.AbstractCriteriaAggregateAware_criterias, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.javamodel.IKnockoutCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.KnockoutPackage.KnockoutCriteriaAggregateAware_knockoutCriterias, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutSubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_subjectAreaAggregate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutRequirementManagementAggregate> selectToMeRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagement object) {
+  public static java.util.List<cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutRequirementManagementAggregate> selectToMeRequirementsManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutRequirementManagementAggregate.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement, object.getResource());
   }
   
@@ -102,4 +102,4 @@ public class KnockoutRequirementManagementAggregate extends DynamicResource impl
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,98n1bH/63xvl7QBseBxpKqk/GVM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,+Rmx4Vfc8ctNz8mgxKcwJQnC2n8=] */

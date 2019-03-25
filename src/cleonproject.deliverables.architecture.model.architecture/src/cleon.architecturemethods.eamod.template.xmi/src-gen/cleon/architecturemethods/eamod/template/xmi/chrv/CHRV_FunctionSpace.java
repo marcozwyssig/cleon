@@ -93,7 +93,7 @@ public class CHRV_FunctionSpace {
 
   }
 
-  public static interface IRequirementsManagementFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementsManagementDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d837541a-2991-11e6-bcff-d1d3ee74e69a")
     public java.lang.String RenderXmi();
@@ -103,21 +103,21 @@ public class CHRV_FunctionSpace {
 
   }
   
-  public static interface IRequirementsManagementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementsManagementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsManagementFunctionsImpl implements IRequirementsManagementFunctionsImpl {
+  public static class RequirementsManagementDocumentFunctionsImpl implements IRequirementsManagementDocumentFunctionsImpl {
 
-    public static final IRequirementsManagementFunctionsImpl INSTANCE = new RequirementsManagementFunctionsImpl();
+    public static final IRequirementsManagementDocumentFunctionsImpl INSTANCE = new RequirementsManagementDocumentFunctionsImpl();
 
-    private RequirementsManagementFunctionsImpl() {}
+    private RequirementsManagementDocumentFunctionsImpl() {}
 
   }
   
-  public static class RequirementsManagementFunctions {
+  public static class RequirementsManagementDocumentFunctions {
 
-    private RequirementsManagementFunctions() {}
+    private RequirementsManagementDocumentFunctions() {}
 
   }
 
@@ -424,4 +424,4 @@ public class CHRV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,EtS3eit+S/UjQZZ73e0Ys5ZwTBg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,8uqJva48nTQFGnjsgBKpRAXXHOw=] */

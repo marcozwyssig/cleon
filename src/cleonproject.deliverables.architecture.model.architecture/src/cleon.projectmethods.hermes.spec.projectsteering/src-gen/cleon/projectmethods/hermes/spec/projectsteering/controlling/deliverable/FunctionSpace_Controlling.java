@@ -46,7 +46,7 @@ public class FunctionSpace_Controlling {
   public static interface IDeliverablesControllingFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e9b1fa92-3eb4-11e7-a89c-83d57940f0e3")
-    public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanning GetPlanning();
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument GetPlanning();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Controlling {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afaee166-be00-11e6-a3f0-c7681ee45a3f,p8L6D0/gZ/SKe2JE+PHPY9762Xo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,afaee166-be00-11e6-a3f0-c7681ee45a3f,0WARg2+KRMncHxnl+qmus/ONBXs=] */

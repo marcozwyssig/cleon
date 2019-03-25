@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class PlanningPackage {
   
-  public static final Resource FunctionSpace_aE_DocBook_aE_Planning_Planning = new Resource("2cf46811-c1d8-11e6-8517-1bc2821627a9");
+  public static final Resource FunctionSpace_aE_DocBook_aE_Planning_PlanningDocument = new Resource("2cf46811-c1d8-11e6-8517-1bc2821627a9");
   public static final Resource FunctionSpace_aE_DocBook_aE_Planning_Workpackage = new Resource("17ff4d49-c1d9-11e6-8517-1bc2821627a9");
   public static final Resource FunctionSpace_aE_DocBook_aE_Planning_Deliverable = new Resource("68770234-c1e5-11e6-84f4-db6ef89bc9ce");
   public static final Resource FunctionSpace_aE_DocBook_aE_Planning_NamedDeliverable = new Resource("782ec037-c1e5-11e6-84f4-db6ef89bc9ce");
@@ -38,4 +38,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.template.docbook.projectmanagement.planning,vEsT7jlkia8fHCZ07Vv0Y+sz2dw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.template.docbook.projectmanagement.planning,bfvN1rKiRKchXmlDWu3vvZqjnVo=] */

@@ -26,4 +26,13 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.85",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.testingmethods.hermes.spec.hermes5,cleon.testingmethods.hermes.spec.hermes5.javamodel
+ ,cleon.testingmethods.hermes.spec.hermes5._01_concept,cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._01_concept._01_test_goals,cleon.testingmethods.hermes.spec.hermes5._01_concept._01_test_goals.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects,cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._01_concept._03_test_methods,cleon.testingmethods.hermes.spec.hermes5._01_concept._03_test_methods.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._02_specification,cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification,cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._dynamic,cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._dynamic.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static,cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel,
+ cleon.testingmethods.hermes.spec.hermes5._03_execution,cleon.testingmethods.hermes.spec.hermes5._03_execution.javamodel
 

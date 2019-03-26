@@ -16,8 +16,8 @@ public interface ISoftwareDevelopmentArtefacts extends ch.actifsource.core.javam
   
   public cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IReadme selectReadme();
   
-  public cleon.architecturemethods.eamod.spec.test._01_concept.javamodel.ITestConceptDocument selectTesting();
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument selectTesting();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,fN8RBzFAUXgeUCI6zCJcD3opt6g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,tv9Y+1slxe14Wo0mUeTtQNicMz4=] */

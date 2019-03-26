@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.testingmethods.hermes.sample">
+         <Plugin
+               pluginId="cleon.testingmethods.hermes.sample.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,a8fad9f5-4f84-11e9-bb70-f5c712ea0a4b,ac2df0fa-4f84-11e9-bb70-f5c712ea0a4b,0z+66/ueDQn0KtattrWBvr8+tmY=] -->

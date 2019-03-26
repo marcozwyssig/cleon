@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="5ffed290-cb39-11e8-9fc7-cb7241efa62e">
   <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <resource statement-guid="643e224b-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="643e2248-cb3c-11e8-9fc7-cb7241efa62e" />
+    <resource statement-guid="c83b7612-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="c83b00de-4f87-11e9-bb70-f5c712ea0a4b" />
   </owns>
   <owns predicate="7d4069b9-f8cf-11e5-bc92-c963417b9cea">
     <resource statement-guid="633daa0e-cb39-11e8-9fc7-cb7241efa62e" type="resource" guid="633d34db-cb39-11e8-9fc7-cb7241efa62e" />
@@ -14,13 +14,16 @@
     <object statement-guid="60a5e816-cb39-11e8-9fc7-cb7241efa62e" type="literal">Collaboration</object>
   </predicate>
   <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <object statement-guid="643e224b-cb3c-11e8-9fc7-cb7241efa62e">
-      <resource guid="643e2248-cb3c-11e8-9fc7-cb7241efa62e">
+    <object statement-guid="c83b7612-4f87-11e9-bb70-f5c712ea0a4b">
+      <resource guid="c83b00de-4f87-11e9-bb70-f5c712ea0a4b">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="643e224a-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
+          <object statement-guid="c83b4f00-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
         </predicate>
         <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
-          <object statement-guid="6c16a6af-cb3c-11e8-9fc7-cb7241efa62e" type="resource" guid="1cbf910f-cb32-11e8-9e9d-8dc67753571a" />
+          <object statement-guid="c92c8d27-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="124f120e-4f84-11e9-bb70-f5c712ea0a4b" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="c83b4f01-4f87-11e9-bb70-f5c712ea0a4b" type="literal">false</object>
         </predicate>
       </resource>
     </object>

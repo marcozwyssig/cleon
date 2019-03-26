@@ -2,7 +2,7 @@ package cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.IAbstractTestingChapter, cleon.common.resources.spec.resources.outcomes.javamodel.IDocumentation {
+public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.IAbstractTestingChapter, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c050d74c-d400-11e5-9dfc-cf0f3e030023");
   
@@ -20,4 +20,4 @@ public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,9Y2e9aDIwWZ+uSLMn4wOcIz3YMk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,/Zu7n6IfC5HZPceaOmO5dGtb9jI=] */

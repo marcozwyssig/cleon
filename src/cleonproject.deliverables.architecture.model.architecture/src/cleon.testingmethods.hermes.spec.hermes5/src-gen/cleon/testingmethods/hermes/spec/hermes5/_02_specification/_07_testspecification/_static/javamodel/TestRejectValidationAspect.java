@@ -3,7 +3,7 @@ package cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspeci
 import java.util.List;
 
 import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage;
-import cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.FunctionSpace.StaticTestFunctions;
+import cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.FunctionSpace_StaticTests.IStaticTestFunctions;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
@@ -23,7 +23,8 @@ public class TestRejectValidationAspect implements IResourceValidationAspect {
 		IStaticTest staticTest = resourceRepository.getResource(
 				IStaticTest.class, context.getResource());
 		
-		boolean allTestArePassed = StaticTestFunctions.AllTestArePassed(staticTest);
+				
+		boolean allTestArePassed = staticTest.extension(IStaticTestFunctions.class).AllTestArePassed();
 		if(allTestArePassed)
 		{		
 			if( staticTest.selectRequirement().selectState().isRejected__F___N_QS__O_())

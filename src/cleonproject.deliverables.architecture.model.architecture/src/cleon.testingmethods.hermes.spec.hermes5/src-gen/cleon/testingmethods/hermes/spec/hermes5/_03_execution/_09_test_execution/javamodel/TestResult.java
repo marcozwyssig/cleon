@@ -13,7 +13,7 @@ public abstract class TestResult extends DynamicResource implements ITestResult 
   
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestResult> selectToMeTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria object) {
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestResult> selectToMeTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestResult.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, object.getResource());
   }
   
@@ -22,4 +22,4 @@ public abstract class TestResult extends DynamicResource implements ITestResult 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62ca893d-1cf3-11e6-aaba-9db7fdc64d7e,LVvQ/5qNV8D08X+Gs/kr08gvrE8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62ca893d-1cf3-11e6-aaba-9db7fdc64d7e,QDyST/YQ4kLx984V0uiorPB7q2s=] */

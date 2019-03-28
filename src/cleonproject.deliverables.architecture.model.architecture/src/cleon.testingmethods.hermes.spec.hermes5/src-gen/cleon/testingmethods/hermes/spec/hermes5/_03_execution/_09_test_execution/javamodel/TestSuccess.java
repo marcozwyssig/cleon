@@ -41,11 +41,11 @@ public class TestSuccess extends DynamicResource implements ITestSuccess {
   }
     
   @Override
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria selectTestQualityCriteria() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria);
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria selectTestQualityCriteria() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria);
   }
 
-  public TestSuccess setTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria testQualityCriteria) {
+  public TestSuccess setTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria testQualityCriteria) {
     _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, testQualityCriteria);
     return this;
   }
@@ -75,10 +75,10 @@ public class TestSuccess extends DynamicResource implements ITestSuccess {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_tester, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,gnvfaif0NFcshUGYOiBW63AeN78=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,K3YF82AV3Ob90EhPAxZBh87glj0=] */

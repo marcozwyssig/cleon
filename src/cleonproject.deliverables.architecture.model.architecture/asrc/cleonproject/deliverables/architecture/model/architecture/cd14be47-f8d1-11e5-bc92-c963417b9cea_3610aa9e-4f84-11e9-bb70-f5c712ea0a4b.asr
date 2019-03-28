@@ -17,6 +17,7 @@
             <resource statement-guid="9a6cbf96-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="9a6cbf93-4f8a-11e9-bb70-f5c712ea0a4b" />
             <resource statement-guid="9f9c1c4b-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="9f9c1c48-4f8a-11e9-bb70-f5c712ea0a4b" />
             <resource statement-guid="ab27bcf0-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="ab27bced-4f8a-11e9-bb70-f5c712ea0a4b" />
+            <resource statement-guid="e2bbf4d2-516b-11e9-b6b9-692bd545e1c6" type="resource" guid="e2b9aadf-516b-11e9-b6b9-692bd545e1c6" />
           </owns>
         </resource>
         <resource statement-guid="929a565c-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="929a5659-4f8a-11e9-bb70-f5c712ea0a4b">
@@ -27,6 +28,7 @@
                 <resource statement-guid="b9e319bf-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="b9e319bc-4f8a-11e9-bb70-f5c712ea0a4b" />
               </owns>
             </resource>
+            <resource statement-guid="f79c0b8f-516b-11e9-b6b9-692bd545e1c6" type="resource" guid="f7999a8c-516b-11e9-b6b9-692bd545e1c6" />
           </owns>
         </resource>
         <resource statement-guid="993f8a31-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="993f8a2e-4f8a-11e9-bb70-f5c712ea0a4b" />
@@ -117,7 +119,17 @@
                       <object statement-guid="ab27bcef-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
                     </predicate>
                     <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="ab740831-4f8a-11e9-bb70-f5c712ea0a4b" type="literal">_03_test_methods</object>
+                      <object statement-guid="ab740831-4f8a-11e9-bb70-f5c712ea0a4b" type="literal">_03_test_levels</object>
+                    </predicate>
+                  </resource>
+                </object>
+                <object statement-guid="e2bbf4d2-516b-11e9-b6b9-692bd545e1c6">
+                  <resource guid="e2b9aadf-516b-11e9-b6b9-692bd545e1c6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="e2b9aae0-516b-11e9-b6b9-692bd545e1c6" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                    </predicate>
+                    <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="e2b9aae1-516b-11e9-b6b9-692bd545e1c6" type="literal">_04_test_types</object>
                     </predicate>
                   </resource>
                 </object>
@@ -139,7 +151,7 @@
                       <object statement-guid="b48c85f4-4f8a-11e9-bb70-f5c712ea0a4b" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
                     </predicate>
                     <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="b4e4b816-4f8a-11e9-bb70-f5c712ea0a4b" type="literal">_07_testspecification</object>
+                      <object statement-guid="b4e4b816-4f8a-11e9-bb70-f5c712ea0a4b" type="literal">_01_testspecification</object>
                     </predicate>
                     <predicate guid="c1a1d31a-b884-11e5-a463-ff45aa361315">
                       <object statement-guid="b6078d3a-4f8a-11e9-bb70-f5c712ea0a4b">
@@ -162,6 +174,16 @@
                           </predicate>
                         </resource>
                       </object>
+                    </predicate>
+                  </resource>
+                </object>
+                <object statement-guid="f79c0b8f-516b-11e9-b6b9-692bd545e1c6">
+                  <resource guid="f7999a8c-516b-11e9-b6b9-692bd545e1c6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f7999a8e-516b-11e9-b6b9-692bd545e1c6" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+                    </predicate>
+                    <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f87e5540-516b-11e9-b6b9-692bd545e1c6" type="literal">_02_test_coverage</object>
                     </predicate>
                   </resource>
                 </object>

@@ -8,8 +8,8 @@ public interface IStaticTestExecution extends cleon.testingmethods.hermes.spec.h
   
   // relations
   
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.IStaticTestSpecification selectStaticTestSpecification();
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.IStaticTestSpecification selectStaticTestSpecification();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4a969a6c-20d7-11e6-9368-9172b77c2cff,+yeHJi4kdsasSU0mtp0SrPg/DWA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4a969a6c-20d7-11e6-9368-9172b77c2cff,iKCTli/ENfJ3qexsne/LNzf5bzI=] */

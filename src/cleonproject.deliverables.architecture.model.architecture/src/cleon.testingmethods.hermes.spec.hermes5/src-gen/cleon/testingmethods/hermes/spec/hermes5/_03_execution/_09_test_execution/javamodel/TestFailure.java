@@ -62,11 +62,11 @@ public class TestFailure extends DynamicResource implements ITestFailure {
   }
     
   @Override
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria selectTestQualityCriteria() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria);
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria selectTestQualityCriteria() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria);
   }
 
-  public TestFailure setTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria testQualityCriteria) {
+  public TestFailure setTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria testQualityCriteria) {
     _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, testQualityCriteria);
     return this;
   }
@@ -99,7 +99,7 @@ public class TestFailure extends DynamicResource implements ITestFailure {
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept._05_test_constraints._02_failureclass.javamodel.IFailureClass.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestFailure_failureClass, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_testQualityCriteria, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution._09_test_executionPackage.TestResult_tester, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -109,4 +109,4 @@ public class TestFailure extends DynamicResource implements ITestFailure {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,pnOkOnmpcE2+85hjiuvwKGSRrpk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,z0WzvPLuEpxOlZmhUv/KNvPyYIg=] */

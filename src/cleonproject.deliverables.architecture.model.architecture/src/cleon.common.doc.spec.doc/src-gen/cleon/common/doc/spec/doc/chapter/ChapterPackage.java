@@ -10,6 +10,8 @@ public class ChapterPackage {
   public static final Resource ParagraphAware_paragraphs = new Resource("5e8bd61d-ff96-11e8-9d0c-c96c1e9b7b46");
   public static final Resource ParagraphAware = new Resource("f83f65a4-0397-11e9-bcaf-399800b0eeb7");
   public static final Resource Chapter = new Resource("e04abf20-076f-11e9-9ce3-b59baf185ea8");
+  public static final Resource NoChapters = new Resource("18625181-5154-11e9-bb61-971a423d31e9");
+  public static final Resource NoChapters_chapters = new Resource("204a3f29-5154-11e9-bb61-971a423d31e9");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +32,4 @@ public class ChapterPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter,IaIYpzA6tSIQBR+Ke6fkEdnzFQY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.spec.doc.chapter,GwD8ohsHt/NORDybMDmki9m3AM8=] */

@@ -11,7 +11,7 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.resources.spec.resources.id.IdPackage;
 import cleon.testingmethods.hermes.spec.hermes5._01_concept._01_test_goals._01_test_goalsPackage;
-import cleon.testingmethods.hermes.spec.hermes5._02_specification._07_testspecification._07_testspecificationPackage;
+import cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification._01_testspecificationPackage;
 
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
@@ -21,7 +21,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 
 	@Override
 	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
-		makeUnique(executor, paramPackage, _07_testspecificationPackage.Test);	
+		makeUnique(executor, paramPackage, _01_testspecificationPackage.Test);	
 		makeUnique(executor, paramPackage, _01_test_goalsPackage.TestGoal);
 	}
 	

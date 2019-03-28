@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="adf3787f-5162-11e9-bb61-971a423d31e9">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="2ce8f02f-5169-11e9-bb61-971a423d31e9" type="resource" guid="2ce8f013-5169-11e9-bb61-971a423d31e9" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="adf3789d-5162-11e9-bb61-971a423d31e9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="adf3789e-5162-11e9-bb61-971a423d31e9" type="resource" guid="875d278c-d183-11e8-b18f-df1540bb7a5c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2ce8f02f-5169-11e9-bb61-971a423d31e9">
+      <resource guid="2ce8f013-5169-11e9-bb61-971a423d31e9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2ce8f01a-5169-11e9-bb61-971a423d31e9" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2ce8f01b-5169-11e9-bb61-971a423d31e9" type="literal">testSubjectAreaCoverage</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2ce8f02b-5169-11e9-bb61-971a423d31e9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="2ce8f02c-5169-11e9-bb61-971a423d31e9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="2ce8f02d-5169-11e9-bb61-971a423d31e9" type="resource" guid="2498cbe6-5169-11e9-bb61-971a423d31e9" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="2fe73c66-5169-11e9-bb61-971a423d31e9" type="resource" guid="994fca7b-ece1-11e8-8149-8542373915bf" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="adf3789f-5162-11e9-bb61-971a423d31e9" type="literal">TestRequirementCoverages</object>
+  </predicate>
+</resource>
+

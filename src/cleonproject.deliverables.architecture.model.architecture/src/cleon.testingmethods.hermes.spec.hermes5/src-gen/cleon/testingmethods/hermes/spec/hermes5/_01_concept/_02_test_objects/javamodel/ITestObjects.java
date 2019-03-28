@@ -8,10 +8,10 @@ public interface ITestObjects extends cleon.testingmethods.hermes.spec.hermes5._
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> selectStaticTestObjects();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject> selectStaticTestObjects();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> selectDynamicTestObjects();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject> selectDynamicTestObjects();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,181pOtXJIH/BxBs1EhXAIf3/VBU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,NGGMs2oS3mZ138g7Hx6++mhp+b8=] */

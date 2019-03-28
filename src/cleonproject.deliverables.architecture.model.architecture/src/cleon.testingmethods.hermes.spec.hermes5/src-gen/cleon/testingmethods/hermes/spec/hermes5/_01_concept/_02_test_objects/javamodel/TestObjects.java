@@ -71,11 +71,11 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> selectDynamicTestObjects() {
-    return _getMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject> selectDynamicTestObjects() {
+    return _getMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects);
   }
 
-  public TestObjects setDynamicTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> dynamicTestObjects) {
+  public TestObjects setDynamicTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject> dynamicTestObjects) {
     _setMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects, dynamicTestObjects);
     return this;
   }
@@ -91,11 +91,11 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> selectStaticTestObjects() {
-    return _getMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject> selectStaticTestObjects() {
+    return _getMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects);
   }
 
-  public TestObjects setStaticTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject> staticTestObjects) {
+  public TestObjects setStaticTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject> staticTestObjects) {
     _setMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects, staticTestObjects);
     return this;
   }
@@ -119,21 +119,21 @@ public class TestObjects extends DynamicResource implements ITestObjects {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects, visitor);
+    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects, visitor);
+    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects selectToMeStaticTestObjects(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject object) {
+  public static cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects selectToMeStaticTestObjects(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IStaticTestObject object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_staticTestObjects, object.getResource());
   }
   
-  public static cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects selectToMeDynamicTestObjects(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObject object) {
+  public static cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects selectToMeDynamicTestObjects(cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.IDynamicTestObject object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects.javamodel.ITestObjects.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._02_test_objects._02_test_objectsPackage.TestObjects_dynamicTestObjects, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,1AsrCqtJpO1ZcpTEOZRqCvN8eW8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,aaBqoQS+d6pRRUyVw0+AQwIhw0M=] */

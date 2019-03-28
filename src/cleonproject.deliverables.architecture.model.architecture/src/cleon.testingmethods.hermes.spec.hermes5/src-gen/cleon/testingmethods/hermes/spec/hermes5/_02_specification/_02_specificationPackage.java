@@ -8,6 +8,7 @@ public class _02_specificationPackage {
   public static final Resource TestSpecificationDocument = new Resource("88d35210-4f02-11e9-ba59-f1daaff821cc");
   public static final Resource TestSpecificationDocument_testConceptDocument = new Resource("e6acf983-4f04-11e9-ba59-f1daaff821cc");
   public static final Resource TestSpecificationDocument_requirements_aE_coverage = new Resource("ef5f6879-5163-11e9-bb61-971a423d31e9");
+  public static final Resource FunctionSpace_aE_TestSpecificationDocument_TestSpecificationDocument = new Resource("762abdc2-51af-11e9-9ffb-eb7c70212990");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class _02_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification,p+G3RnBAd9T20b8zuYSIJa05IcQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification,KOZXM+IiUkVYkzNuKIHTCWpZvSU=] */

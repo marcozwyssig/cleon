@@ -55,7 +55,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IDependency dependency = resourceRepository.getResource(IDependency.class, context.getResource());
 		IBuildingBlock startBuildingBlock = DependentBuildingBlock.selectToMeHasDependency(dependency);
-	    ch.actifsource.util.log.Logger.instance().logInfo("BuildingBlock: " + Select.simpleName(context.getReadJobExecutor(), startBuildingBlock.getResource()));
+	    //ch.actifsource.util.log.Logger.instance().logInfo("BuildingBlock: " + Select.simpleName(context.getReadJobExecutor(), startBuildingBlock.getResource()));
 		validate(context.getReadJobExecutor(), startBuildingBlock, startBuildingBlock, new ArrayList<IBuildingBlock>(), statement, inconsistencyList );
 	}
 	
@@ -73,7 +73,7 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 		{
 			if((!IsRecursiveDependencyAllowed(dependency)))
 			{
-				ch.actifsource.util.log.Logger.instance().logInfo("Checking dependency " + Select.simpleName(executor, dependency.getResource()) + " for " + Select.simpleName(executor, toValidate.getResource()));
+				//ch.actifsource.util.log.Logger.instance().logInfo("Checking dependency " + Select.simpleName(executor, dependency.getResource()) + " for " + Select.simpleName(executor, toValidate.getResource()));
 				IBuildingBlock nextBuildingBlock = dependency.selectTo();
 				if( nextBuildingBlock.equals(toValidate))
 				{

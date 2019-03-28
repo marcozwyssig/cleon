@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.modelinglanguages.graph" label="cleon.modelinglanguages.graph" version="0.4.89">
+<feature id="cleon.modelinglanguages.graph" label="cleon.modelinglanguages.graph" version="0.4.90">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -468,8 +468,8 @@ of their respective owners.
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.modelinglanguages.graph.spec.graphviz.builtin" download-size="0" install-size="0" version="0.4.89" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.graph.template.graphviz.builtin" download-size="0" install-size="0" version="0.4.89" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.graph.template.docbook.builtin" download-size="0" install-size="0" version="0.4.89" unpack="false"/>   
+   <plugin id="cleon.modelinglanguages.graph.spec.graphviz.builtin" download-size="0" install-size="0" version="0.4.90" unpack="false"/>
+   <plugin id="cleon.modelinglanguages.graph.template.graphviz.builtin" download-size="0" install-size="0" version="0.4.90" unpack="false"/>
+   <plugin id="cleon.modelinglanguages.graph.template.docbook.builtin" download-size="0" install-size="0" version="0.4.90" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,18522b5b-2ac6-11e9-994e-b56db58a4c0f,Hash] -->

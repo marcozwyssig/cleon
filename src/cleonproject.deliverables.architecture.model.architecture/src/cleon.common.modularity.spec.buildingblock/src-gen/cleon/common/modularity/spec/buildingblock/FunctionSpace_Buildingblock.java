@@ -59,6 +59,9 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("a032d549-4823-11e6-82f6-0f210765495b")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDependencies();
 
+    @IDynamicResourceExtension.MethodId("aadf82b1-51a1-11e9-80a8-e19504dc2bb6")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> GetOnlyDependencies();
+
     @IDynamicResourceExtension.MethodId("68a66aec-4910-11e6-be22-874cc08f42ce")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent();
 
@@ -125,6 +128,9 @@ public class FunctionSpace_Buildingblock {
 
     @IDynamicResourceExtension.MethodId("755d5492-c086-11e6-beed-bb6789615dd5")
     public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetBuildingBlock();
+
+    @IDynamicResourceExtension.MethodId("a3ef82a6-518a-11e9-bfac-5bd977bac00a")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IDependency> GetDependencies();
 
   }
   
@@ -244,4 +250,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,7ht+88vWZ9POR4zrHqWfGjfC168=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,v3d6xwXgtpzHMWf8jP6kViqRZow=] */

@@ -148,11 +148,11 @@ public class TestExecutionDocument extends DynamicResource implements ITestExecu
   }
     
   @Override
-  public cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions selectTestExecutions() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions);
+  public cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions selectTestExecutions() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions);
   }
 
-  public TestExecutionDocument setTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions testExecutions) {
+  public TestExecutionDocument setTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions testExecutions) {
     _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions, testExecutions);
     return this;
   }
@@ -194,14 +194,14 @@ public class TestExecutionDocument extends DynamicResource implements ITestExecu
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testSpecificationDocument, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.javamodel.ITestExecutionDocument selectToMeTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions object) {
+  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.javamodel.ITestExecutionDocument selectToMeTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.javamodel.ITestExecutionDocument.class, cleon.testingmethods.hermes.spec.hermes5._03_execution._03_executionPackage.TestExecutionDocument_testExecutions, object.getResource());
   }
   
@@ -210,4 +210,4 @@ public class TestExecutionDocument extends DynamicResource implements ITestExecu
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e85c9091-4f02-11e9-ba59-f1daaff821cc,uhotcvHFINEPfNeo1vj3IYzVSIU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e85c9091-4f02-11e9-ba59-f1daaff821cc,2zMA42jwo1dzzvsW+zyvAb1dMTQ=] */

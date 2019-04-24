@@ -8,10 +8,10 @@ public interface ITestExecutionDocument extends cleon.common.doc.spec.doc.docume
   
   // relations
   
-  public cleon.testingmethods.hermes.spec.hermes5._03_execution._09_test_execution.javamodel.ITestExecutions selectTestExecutions();
+  public cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions selectTestExecutions();
   
   public cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument selectTestSpecificationDocument();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e85c9091-4f02-11e9-ba59-f1daaff821cc,PV5CIM9oF9JaCJhh0JBN+ALU4Wc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e85c9091-4f02-11e9-ba59-f1daaff821cc,tKKFki9DVH34lm1qa70ZseiI6ek=] */

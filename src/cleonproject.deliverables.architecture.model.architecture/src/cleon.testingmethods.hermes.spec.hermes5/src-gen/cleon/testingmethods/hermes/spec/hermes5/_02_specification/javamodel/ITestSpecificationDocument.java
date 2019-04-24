@@ -10,10 +10,10 @@ public interface ITestSpecificationDocument extends cleon.common.doc.spec.doc.do
   
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument selectTestConceptDocument();
   
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification._01_testspecification.javamodel.ITestSpecifications selectTestSpecifications();
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.javamodel.ITestSpecifications selectTestSpecifications();
   
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification._02_test_coverage.javamodel.ITestRequirementCoverages selectRequirements_coverage();
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_coverage.javamodel.ITestRequirementCoverages selectRequirements_coverage();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,9fKKLUEv7jak7ogyo/Bv6UGILi8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,fAVHN7yc0vXNYAQ1daPlWH4ifec=] */

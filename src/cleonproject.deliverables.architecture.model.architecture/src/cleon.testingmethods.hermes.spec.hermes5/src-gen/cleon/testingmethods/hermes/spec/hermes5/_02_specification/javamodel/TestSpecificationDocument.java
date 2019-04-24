@@ -178,6 +178,16 @@ public class TestSpecificationDocument extends DynamicResource implements ITestS
   }
     
   @Override
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditions selectTestPreconditions() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditions.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testPreconditions);
+  }
+
+  public TestSpecificationDocument setTestPreconditions(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditions testPreconditions) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testPreconditions, testPreconditions);
+    return this;
+  }
+    
+  @Override
   public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.javamodel.ITestSpecifications selectTestSpecifications() {
     return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.javamodel.ITestSpecifications.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications);
   }
@@ -217,6 +227,7 @@ public class TestSpecificationDocument extends DynamicResource implements ITestS
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_coverage.javamodel.ITestRequirementCoverages.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_requirements_aE_coverage, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testConceptDocument, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditions.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testPreconditions, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.javamodel.ITestSpecifications.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -225,6 +236,10 @@ public class TestSpecificationDocument extends DynamicResource implements ITestS
   
   public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument> selectToMeTestConceptDocument(cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testConceptDocument, object.getResource());
+  }
+  
+  public static cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument selectToMeTestPreconditions(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditions object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument.class, cleon.testingmethods.hermes.spec.hermes5._02_specification._02_specificationPackage.TestSpecificationDocument_testPreconditions, object.getResource());
   }
   
   public static cleon.testingmethods.hermes.spec.hermes5._02_specification.javamodel.ITestSpecificationDocument selectToMeTestSpecifications(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.javamodel.ITestSpecifications object) {
@@ -236,4 +251,4 @@ public class TestSpecificationDocument extends DynamicResource implements ITestS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,3kNbuqw4d6SkPxB9NIKOs5RMiY4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,NqTZUGMwq9emryLjTK0Qb+Qy+0s=] */

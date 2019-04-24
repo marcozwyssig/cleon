@@ -1,31 +1,31 @@
-package cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel;
+package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
+public class TestGlobalPrecondition extends DynamicResource implements ITestGlobalPrecondition {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestLevelGoals> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestLevelGoals>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestGlobalPrecondition> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestGlobalPrecondition>() {
     
     @Override
-    public ITestLevelGoals create() {
-      return new TestLevelGoals();
+    public ITestGlobalPrecondition create() {
+      return new TestGlobalPrecondition();
     }
     
     @Override
-    public ITestLevelGoals create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new TestLevelGoals(resourceRepository, resource);
+    public ITestGlobalPrecondition create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new TestGlobalPrecondition(resourceRepository, resource);
     }
   
   };
 
-  public TestLevelGoals() {
-    super(ITestLevelGoals.TYPE_ID);
+  public TestGlobalPrecondition() {
+    super(ITestGlobalPrecondition.TYPE_ID);
   }
   
-  public TestLevelGoals(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITestLevelGoals.TYPE_ID);
+  public TestGlobalPrecondition(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ITestGlobalPrecondition.TYPE_ID);
   }
 
   // attributes
@@ -48,6 +48,15 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
      _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
   // relations
   
   @Override
@@ -55,7 +64,7 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
 
-  public TestLevelGoals setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+  public TestGlobalPrecondition setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +74,7 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public TestLevelGoals setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+  public TestGlobalPrecondition setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,8 +84,18 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public TestLevelGoals setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
+  public TestGlobalPrecondition setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoParagraph_noParagraphs);
+  }
+
+  public TestGlobalPrecondition setNoParagraphs(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
     return this;
   }
     
@@ -85,18 +104,8 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public TestLevelGoals setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+  public TestGlobalPrecondition setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoal> selectTestGoals() {
-    return _getList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoal.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelGoals_testGoals);
-  }
-
-  public TestLevelGoals setTestGoals(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoal> testGoals) {
-    _setList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelGoals_testGoals, testGoals);
     return this;
   }
     
@@ -105,7 +114,7 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public TestLevelGoals setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public TestGlobalPrecondition setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -116,20 +125,15 @@ public class TestLevelGoals extends DynamicResource implements ITestLevelGoals {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoParagraph_noParagraphs, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoal.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelGoals_testGoals, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevelGoals> selectToMeTestGoals(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoal object) {
-    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevelGoals.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelGoals_testGoals, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ece42cc0-5154-11e9-bb61-971a423d31e9,iJSPlmcQ3mXboTOizV63b09voiY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f18cbe3-669f-11e9-9ec9-5fbc84faaeb1,ETVzEDDGi7XyMZuw0ENXj8vbWYw=] */

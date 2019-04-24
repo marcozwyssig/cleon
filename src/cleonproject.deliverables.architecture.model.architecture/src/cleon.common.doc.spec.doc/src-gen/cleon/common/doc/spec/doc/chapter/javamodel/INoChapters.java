@@ -8,8 +8,8 @@ public interface INoChapters extends cleon.common.doc.spec.doc.javamodel.IChapte
   
   // relations
   
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters();
+  public cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter selectNoChapters();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,18625181-5154-11e9-bb61-971a423d31e9,sNd1E6A0hYPgx80EcZVjO4q4Q08=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,18625181-5154-11e9-bb61-971a423d31e9,q84WMh4d8hVxFXRCrZWtgu0SDlw=] */

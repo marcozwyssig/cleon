@@ -17,7 +17,6 @@ public class _05_buildingblockPackage {
   public static final Resource SystemConfigurationDecomposite_intoSytemConfiguration = new Resource("c90907ab-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemLayer_decomposeSystemComponent = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemComponent_decomposeSystemConfiguration = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
-  public static final Resource NamedSystemComponent = new Resource("3b794e8f-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource NamedSystemConfiguration = new Resource("58022544-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
@@ -30,6 +29,7 @@ public class _05_buildingblockPackage {
   public static final Resource SystemConfiguration_hasDependency = new Resource("886c9874-01d9-11e9-9c9d-8d52d6745026");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemComponent = new Resource("31cf5855-035b-11e9-a251-e3767b78f69f");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemConfiguration = new Resource("72248a97-035d-11e9-a251-e3767b78f69f");
+  public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +50,4 @@ public class _05_buildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,w+XkKqSzxVkYfh83AUZ70T3mRjw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock,dGBReeINVJEttTkxHjP7xiQ7qCU=] */

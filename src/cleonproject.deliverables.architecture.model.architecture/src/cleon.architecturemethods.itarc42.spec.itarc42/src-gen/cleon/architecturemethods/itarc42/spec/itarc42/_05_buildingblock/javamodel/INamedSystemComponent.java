@@ -2,10 +2,10 @@ package cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamod
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface INamedSystemComponent extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.INamedComponentComposition, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent {
+public interface INamedSystemComponent extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.INamedComponentComposition, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("3b794e8f-01d8-11e9-9c9d-8d52d6745026");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3b794e8f-01d8-11e9-9c9d-8d52d6745026,1zxoa607QiQtANki5ACsB0IOYqg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,91ada0b6-35f7-11e9-9d58-25409887bb2a,TQlUwGqkiOjdOPGX8UR/aMgr92g=] */

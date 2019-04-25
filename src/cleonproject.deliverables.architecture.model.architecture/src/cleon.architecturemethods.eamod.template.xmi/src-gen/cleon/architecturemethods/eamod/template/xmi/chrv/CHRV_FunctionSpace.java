@@ -43,28 +43,6 @@ public class CHRV_FunctionSpace {
 
   }
 
-  public static interface IRequirementDocumentFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface IRequirementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class RequirementDocumentFunctionsImpl implements IRequirementDocumentFunctionsImpl {
-
-    public static final IRequirementDocumentFunctionsImpl INSTANCE = new RequirementDocumentFunctionsImpl();
-
-    private RequirementDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class RequirementDocumentFunctions {
-
-    private RequirementDocumentFunctions() {}
-
-  }
-
   public static interface IMotivationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bfc738d0-2991-11e6-bcff-d1d3ee74e69a")
@@ -93,7 +71,7 @@ public class CHRV_FunctionSpace {
 
   }
 
-  public static interface IRequirementsManagementDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d837541a-2991-11e6-bcff-d1d3ee74e69a")
     public java.lang.String RenderXmi();
@@ -103,21 +81,21 @@ public class CHRV_FunctionSpace {
 
   }
   
-  public static interface IRequirementsManagementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementsDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsManagementDocumentFunctionsImpl implements IRequirementsManagementDocumentFunctionsImpl {
+  public static class RequirementsDocumentFunctionsImpl implements IRequirementsDocumentFunctionsImpl {
 
-    public static final IRequirementsManagementDocumentFunctionsImpl INSTANCE = new RequirementsManagementDocumentFunctionsImpl();
+    public static final IRequirementsDocumentFunctionsImpl INSTANCE = new RequirementsDocumentFunctionsImpl();
 
-    private RequirementsManagementDocumentFunctionsImpl() {}
+    private RequirementsDocumentFunctionsImpl() {}
 
   }
   
-  public static class RequirementsManagementDocumentFunctions {
+  public static class RequirementsDocumentFunctions {
 
-    private RequirementsManagementDocumentFunctions() {}
+    private RequirementsDocumentFunctions() {}
 
   }
 
@@ -424,4 +402,4 @@ public class CHRV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,8uqJva48nTQFGnjsgBKpRAXXHOw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,rQW2pApXYM+uOgZoJwnQGl8QsbM=] */

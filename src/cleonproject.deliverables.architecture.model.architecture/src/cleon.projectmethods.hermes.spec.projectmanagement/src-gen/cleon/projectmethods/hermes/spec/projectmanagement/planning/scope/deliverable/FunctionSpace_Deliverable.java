@@ -23,6 +23,9 @@ public class FunctionSpace_Deliverable {
     @IDynamicResourceExtension.MethodId("15832023-b46d-11e8-bb21-172cc8e5f7cd")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("2547e171-6746-11e9-9ec9-5fbc84faaeb1")
+    public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetDeliverableAware();
+
   }
   
   public static interface IDeliverableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -82,4 +85,4 @@ public class FunctionSpace_Deliverable {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,0ssYu6kZEOHcOcJcfOOaIXkMJ7Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b18da6d4-aaab-11e8-b25a-7dd9f85a27ad,7JaB2Wh/BawNT716ZZc0Cl3noMk=] */

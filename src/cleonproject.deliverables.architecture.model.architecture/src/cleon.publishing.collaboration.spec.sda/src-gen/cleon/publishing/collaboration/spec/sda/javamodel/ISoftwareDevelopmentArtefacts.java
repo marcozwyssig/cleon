@@ -8,7 +8,7 @@ public interface ISoftwareDevelopmentArtefacts extends ch.actifsource.core.javam
   
   // relations
   
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementManagement();
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument selectRequirementManagement();
   
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning();
   
@@ -20,4 +20,4 @@ public interface ISoftwareDevelopmentArtefacts extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,tv9Y+1slxe14Wo0mUeTtQNicMz4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,RcWGZ8FXF5/U+2MqjaWftxG2M6c=] */

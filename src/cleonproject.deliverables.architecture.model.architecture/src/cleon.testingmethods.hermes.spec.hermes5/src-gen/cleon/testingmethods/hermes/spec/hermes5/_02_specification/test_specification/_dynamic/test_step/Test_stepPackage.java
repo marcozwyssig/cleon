@@ -14,6 +14,7 @@ public class Test_stepPackage {
   public static final Resource TestInput_input = new Resource("858b4b80-6725-11e9-9ec9-5fbc84faaeb1");
   public static final Resource FunctionSpace_aE_TestStep_TestStep = new Resource("8dfd76d3-6725-11e9-9ec9-5fbc84faaeb1");
   public static final Resource InputString_value = new Resource("d946d6f2-6725-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource InputData = new Resource("ffc72fa2-6727-11e9-9ec9-5fbc84faaeb1");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +35,4 @@ public class Test_stepPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step,OsSW0aZBBFdcPs4YaDF1uFroOp0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step,ai4xwAqS2ao+9z4YSK+z2yfv7dY=] */

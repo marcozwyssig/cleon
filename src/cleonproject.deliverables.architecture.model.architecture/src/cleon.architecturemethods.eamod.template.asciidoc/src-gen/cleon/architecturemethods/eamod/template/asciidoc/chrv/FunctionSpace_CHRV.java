@@ -18,31 +18,6 @@ public class FunctionSpace_CHRV {
   /* End Protected Region   [[ca3949e8-bb83-11e5-b2f7-f515c847fa35]] */
 
 
-  public static interface IRequirementDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("1e6118a2-c029-11e5-b927-b1b055d0575f")
-    public java.lang.String GetDocumentPath();
-
-  }
-  
-  public static interface IRequirementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class RequirementDocumentFunctionsImpl implements IRequirementDocumentFunctionsImpl {
-
-    public static final IRequirementDocumentFunctionsImpl INSTANCE = new RequirementDocumentFunctionsImpl();
-
-    private RequirementDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class RequirementDocumentFunctions {
-
-    private RequirementDocumentFunctions() {}
-
-  }
-
   public static interface IIssuesFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7e23640e-ce67-11e5-8041-092cb74c72f2")
@@ -93,28 +68,28 @@ public class FunctionSpace_CHRV {
 
   }
 
-  public static interface IRequirementsManagementDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("57c59381-1d89-11e6-b329-f50056ef90a6")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface IRequirementsManagementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementsDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsManagementDocumentFunctionsImpl implements IRequirementsManagementDocumentFunctionsImpl {
+  public static class RequirementsDocumentFunctionsImpl implements IRequirementsDocumentFunctionsImpl {
 
-    public static final IRequirementsManagementDocumentFunctionsImpl INSTANCE = new RequirementsManagementDocumentFunctionsImpl();
+    public static final IRequirementsDocumentFunctionsImpl INSTANCE = new RequirementsDocumentFunctionsImpl();
 
-    private RequirementsManagementDocumentFunctionsImpl() {}
+    private RequirementsDocumentFunctionsImpl() {}
 
   }
   
-  public static class RequirementsManagementDocumentFunctions {
+  public static class RequirementsDocumentFunctions {
 
-    private RequirementsManagementDocumentFunctions() {}
+    private RequirementsDocumentFunctions() {}
 
   }
 
@@ -471,4 +446,4 @@ public class FunctionSpace_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,f9d79Dq+1dcji+b5fB2juQjHyc0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ca3949e8-bb83-11e5-b2f7-f515c847fa35,ZryEwvtF8zsYRSnh1Pc5Y8gLmn8=] */

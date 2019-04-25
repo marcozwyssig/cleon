@@ -8,8 +8,10 @@ public interface IDeliverableAware extends ch.actifsource.core.javamodel.IResour
   
   // relations
   
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectAlikeDeliverable();
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning();
+  
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a3b3adc-4f0c-11e9-ba59-f1daaff821cc,7WWFvMfv8fLREWBc/ix8wNQRqw0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a3b3adc-4f0c-11e9-ba59-f1daaff821cc,oBttOdVj7jRTmlnQZTGyeMa2rc0=] */

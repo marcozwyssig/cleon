@@ -98,6 +98,16 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
   }
     
   @Override
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable);
+  }
+
+  public TestConceptDocument setDeliverable(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, deliverable);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -128,12 +138,12 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
   }
     
   @Override
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanningDocument() {
-    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_planningDocument);
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning);
   }
 
-  public TestConceptDocument setPlanningDocument(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument planningDocument) {
-    _setSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_planningDocument, planningDocument);
+  public TestConceptDocument setPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument planning) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, planning);
     return this;
   }
     
@@ -229,10 +239,11 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
     // relations
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_planningDocument, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_goals.javamodel.ITestGoals.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testGoals, visitor);
@@ -265,9 +276,5 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testInfrastructures, object.getResource());
   }
   
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument> selectToMePlanningDocument(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument object) {
-    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_planningDocument, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,XNkz7ADAEoXkX3CprrLwnwvyjM0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,PRR4PuhIRsPG06rX2/eRD4dOLAk=] */

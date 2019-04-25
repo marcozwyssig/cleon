@@ -80,6 +80,16 @@ public class PlanningDocument extends DynamicResource implements IPlanningDocume
   }
     
   @Override
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable);
+  }
+
+  public PlanningDocument setDeliverable(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, deliverable);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -120,6 +130,16 @@ public class PlanningDocument extends DynamicResource implements IPlanningDocume
   }
     
   @Override
+  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning);
+  }
+
+  public PlanningDocument setPlanning(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument planning) {
+    _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, planning);
+    return this;
+  }
+    
+  @Override
   public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties() {
     return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties);
   }
@@ -130,11 +150,11 @@ public class PlanningDocument extends DynamicResource implements IPlanningDocume
   }
     
   @Override
-  public cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement selectResourceManagement() {
-    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement);
+  public cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagementDocument selectResourceManagement() {
+    return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagementDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement);
   }
 
-  public PlanningDocument setResourceManagement(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement resourceManagement) {
+  public PlanningDocument setResourceManagement(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagementDocument resourceManagement) {
     _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement, resourceManagement);
     return this;
   }
@@ -189,12 +209,14 @@ public class PlanningDocument extends DynamicResource implements IPlanningDocume
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.constraints.javamodel.IConstraints.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_constraints, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoals.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_goals, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.initialposition.javamodel.IInitialposition.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_initialposition, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagementDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.javamodel.ISchedule.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_schedule, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.javamodel.IScope.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_scope, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
@@ -223,9 +245,9 @@ public class PlanningDocument extends DynamicResource implements IPlanningDocume
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_schedule, object.getResource());
   }
   
-  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument> selectToMeResourceManagement(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagement object) {
+  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument> selectToMeResourceManagement(cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResourceManagementDocument object) {
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.PlanningPackage.PlanningDocument_resourceManagement, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,B0YvfcwVd0Z8PyhRo2iijMHv6GU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,BYCACHRX+S25LJM6/IePklIA4cg=] */

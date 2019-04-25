@@ -18,28 +18,28 @@ public class FunctionSpace_DocBook_CHRV {
   /* End Protected Region   [[58aa1a04-3e05-11e6-9bf8-29c5fda07fa3]] */
 
 
-  public static interface IRequirementsManagementDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6a0834b7-3e05-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface IRequirementsManagementDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRequirementsDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RequirementsManagementDocumentFunctionsImpl implements IRequirementsManagementDocumentFunctionsImpl {
+  public static class RequirementsDocumentFunctionsImpl implements IRequirementsDocumentFunctionsImpl {
 
-    public static final IRequirementsManagementDocumentFunctionsImpl INSTANCE = new RequirementsManagementDocumentFunctionsImpl();
+    public static final IRequirementsDocumentFunctionsImpl INSTANCE = new RequirementsDocumentFunctionsImpl();
 
-    private RequirementsManagementDocumentFunctionsImpl() {}
+    private RequirementsDocumentFunctionsImpl() {}
 
   }
   
-  public static class RequirementsManagementDocumentFunctions {
+  public static class RequirementsDocumentFunctions {
 
-    private RequirementsManagementDocumentFunctions() {}
+    private RequirementsDocumentFunctions() {}
 
   }
 
@@ -476,4 +476,4 @@ public class FunctionSpace_DocBook_CHRV {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,YfDBWqBOkfeN9Z+45NO9eFOVZS8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,58aa1a04-3e05-11e6-9bf8-29c5fda07fa3,A+GvIUQCQIBQ9mcBC2SJhHA10co=] */

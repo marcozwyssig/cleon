@@ -2,7 +2,7 @@ package cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.IAbstractTestingChapter, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware {
+public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.IAbstractTestingChapter, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c050d74c-d400-11e5-9dfc-cf0f3e030023");
   
@@ -18,8 +18,6 @@ public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document
   
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures selectTestInfrastructures();
   
-  public cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument selectPlanningDocument();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,VgtP9BiVor+C/OEPPANRWOdWK9s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,QnfncF7sLJTSvSmzcyI6RSIVGjQ=] */

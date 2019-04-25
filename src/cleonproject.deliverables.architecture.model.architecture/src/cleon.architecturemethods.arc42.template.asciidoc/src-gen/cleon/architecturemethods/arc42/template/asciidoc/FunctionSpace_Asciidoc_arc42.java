@@ -93,28 +93,28 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface Iarc42Functions extends IDynamicResourceExtension {
+  public static interface Iarc42DocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5d207eb4-2889-11e6-abf5-2f26b72f34c5")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface Iarc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface Iarc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class arc42FunctionsImpl implements Iarc42FunctionsImpl {
+  public static class arc42DocumentFunctionsImpl implements Iarc42DocumentFunctionsImpl {
 
-    public static final Iarc42FunctionsImpl INSTANCE = new arc42FunctionsImpl();
+    public static final Iarc42DocumentFunctionsImpl INSTANCE = new arc42DocumentFunctionsImpl();
 
-    private arc42FunctionsImpl() {}
+    private arc42DocumentFunctionsImpl() {}
 
   }
   
-  public static class arc42Functions {
+  public static class arc42DocumentFunctions {
 
-    private arc42Functions() {}
+    private arc42DocumentFunctions() {}
 
   }
 
@@ -170,4 +170,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,3QYHo2VK7GyS+zN7iYlpEbRbNEY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,3SWDq7rSpC8lv1glfKqIHfZBI34=] */

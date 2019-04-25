@@ -31,16 +31,6 @@ public class DynamicTestObject extends DynamicResource implements IDynamicTestOb
   // relations
   
   @Override
-  public cleon.architecturemethods.arc42.spec.arc42.javamodel.IArc42 selectArchitecture() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.arc42.javamodel.IArc42.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.DynamicTestObject_architecture);
-  }
-
-  public DynamicTestObject setArchitecture(cleon.architecturemethods.arc42.spec.arc42.javamodel.IArc42 architecture) {
-    _setSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.DynamicTestObject_architecture, architecture);
-    return this;
-  }
-    
-  @Override
   public cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable selectDeliverable() {
     return _getSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObject_deliverable);
   }
@@ -74,17 +64,10 @@ public class DynamicTestObject extends DynamicResource implements IDynamicTestOb
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.spec.arc42.javamodel.IArc42.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.DynamicTestObject_architecture, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObject_deliverable, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.IDynamicTestObject> selectToMeArchitecture(cleon.architecturemethods.arc42.spec.arc42.javamodel.IArc42 object) {
-    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.IDynamicTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.DynamicTestObject_architecture, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76aea0e-5165-11e9-bb61-971a423d31e9,+aWHVhAePk/Dl+ka84ryT9PlKW4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76aea0e-5165-11e9-bb61-971a423d31e9,mtHAiob6JNFYq9SS2kXPlSnh+uc=] */

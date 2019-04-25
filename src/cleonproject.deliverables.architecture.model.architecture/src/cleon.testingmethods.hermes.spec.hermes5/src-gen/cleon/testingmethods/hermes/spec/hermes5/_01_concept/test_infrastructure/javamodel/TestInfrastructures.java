@@ -81,12 +81,12 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   }
     
   @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITester> selectTesters() {
-    return _getList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITester.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testers);
+  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUsers> selectTestUsers() {
+    return _getList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUsers.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testUsers);
   }
 
-  public TestInfrastructures setTesters(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITester> testers) {
-    _setList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testers, testers);
+  public TestInfrastructures setTestUsers(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUsers> testUsers) {
+    _setList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testUsers, testUsers);
     return this;
   }
     
@@ -110,15 +110,15 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITester.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testers, visitor);
+    _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUsers.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testUsers, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures selectToMeTesters(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITester object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testers, object.getResource());
+  public static cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures selectToMeTestUsers(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUsers object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testUsers, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,666WX2lMeSVq8TZMqPx1ua/FV9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,2MN7SLtBaP3gVd+BEhAvLmUsyL0=] */

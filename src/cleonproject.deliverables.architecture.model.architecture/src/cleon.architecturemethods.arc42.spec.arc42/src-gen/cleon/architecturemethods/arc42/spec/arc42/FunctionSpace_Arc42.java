@@ -18,7 +18,7 @@ public class FunctionSpace_Arc42 {
   /* End Protected Region   [[16226571-09c9-11e9-9915-0d353533f3da]] */
 
 
-  public static interface Iarc42Functions extends IDynamicResourceExtension {
+  public static interface Iarc42DocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("271a6bec-09c9-11e9-9915-0d353533f3da")
     public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
@@ -31,24 +31,24 @@ public class FunctionSpace_Arc42 {
 
   }
   
-  public static interface Iarc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface Iarc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class arc42FunctionsImpl implements Iarc42FunctionsImpl {
+  public static class arc42DocumentFunctionsImpl implements Iarc42DocumentFunctionsImpl {
 
-    public static final Iarc42FunctionsImpl INSTANCE = new arc42FunctionsImpl();
+    public static final Iarc42DocumentFunctionsImpl INSTANCE = new arc42DocumentFunctionsImpl();
 
-    private arc42FunctionsImpl() {}
+    private arc42DocumentFunctionsImpl() {}
 
   }
   
-  public static class arc42Functions {
+  public static class arc42DocumentFunctions {
 
-    private arc42Functions() {}
+    private arc42DocumentFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,2arHDO3u7lyvBrftL4mucUBeTBw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,16226571-09c9-11e9-9915-0d353533f3da,MbcMXpoTHjThUqs/0HI2y5xb084=] */

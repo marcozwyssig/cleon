@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="c76aea0e-5165-11e9-bb61-971a423d31e9">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="f4a680cd-5165-11e9-bb61-971a423d31e9" type="resource" guid="feb9361e-4f8b-11e9-ad5d-977b17aab907" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c76aea10-5165-11e9-bb61-971a423d31e9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c76bac62-5165-11e9-bb61-971a423d31e9" type="resource" guid="24f8dba0-eabf-11e5-838a-6dbe7118dd11" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="f4a680cd-5165-11e9-bb61-971a423d31e9">
-      <resource guid="feb9361e-4f8b-11e9-ad5d-977b17aab907">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="feb93620-4f8b-11e9-ad5d-977b17aab907" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="feb93621-4f8b-11e9-ad5d-977b17aab907" type="literal">architecture</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="febb8013-4f8b-11e9-ad5d-977b17aab907" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="febb8014-4f8b-11e9-ad5d-977b17aab907" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="febb8015-4f8b-11e9-ad5d-977b17aab907" type="resource" guid="2cbcf671-ffcc-11e4-ac0a-959b440f987f" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c76aea11-5165-11e9-bb61-971a423d31e9" type="literal">DynamicTestObject</object>

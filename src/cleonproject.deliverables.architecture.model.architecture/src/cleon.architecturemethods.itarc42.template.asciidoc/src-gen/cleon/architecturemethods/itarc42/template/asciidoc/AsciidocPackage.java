@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class AsciidocPackage {
   
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_ItArc42_ItArc42 = new Resource("7cc50440-d182-11e8-b18f-df1540bb7a5c");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_ItArc42_ItArc42Document = new Resource("7cc50440-d182-11e8-b18f-df1540bb7a5c");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.asciidoc,nV0solC9mNqjJbxIxMIeU0av3vA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.asciidoc,DTGrSqIrsZE9ak30ShUP2/fWnPQ=] */

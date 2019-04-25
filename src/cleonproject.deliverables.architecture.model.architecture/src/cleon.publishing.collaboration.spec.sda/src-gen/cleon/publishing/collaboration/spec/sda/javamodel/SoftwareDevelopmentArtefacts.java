@@ -62,11 +62,11 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
     
   @Override
-  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument selectRequirementManagement() {
-    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement);
+  public cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument selectRequirementManagement() {
+    return _getSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement);
   }
 
-  public SoftwareDevelopmentArtefacts setRequirementManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument requirementManagement) {
+  public SoftwareDevelopmentArtefacts setRequirementManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument requirementManagement) {
     _setSingle(cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement, requirementManagement);
     return this;
   }
@@ -109,7 +109,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_planning, visitor);
     _acceptSingle(cleon.publishing.collaboration.spec.sda.manuals.readme.javamodel.IReadme.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_readme, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.detailstudy.javamodel.IDetailstudy.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.javamodel.ITestConceptDocument.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_testing, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -117,7 +117,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
 
   // toMeRelations
   
-  public static cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts selectToMeRequirementManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsManagementDocument object) {
+  public static cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts selectToMeRequirementManagement(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument object) {
     return _getToMeSingle(object.getRepository(), cleon.publishing.collaboration.spec.sda.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.publishing.collaboration.spec.sda.SdaPackage.SoftwareDevelopmentArtefacts_requirementManagement, object.getResource());
   }
   
@@ -138,4 +138,4 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,bPRf1rFsKmGSnRtlhWZkSvccHbI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,yc9w0XJf9F0EyP5vl5ng6J6vTZo=] */

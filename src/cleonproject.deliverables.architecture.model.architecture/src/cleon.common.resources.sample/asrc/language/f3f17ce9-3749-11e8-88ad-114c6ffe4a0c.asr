@@ -9,6 +9,7 @@
     <resource statement-guid="9751e973-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="9751c25f-374c-11e8-88ad-114c6ffe4a0c" />
     <resource statement-guid="998989fe-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="998962ea-374c-11e8-88ad-114c6ffe4a0c" />
     <resource statement-guid="9b018409-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="9b015cf5-374c-11e8-88ad-114c6ffe4a0c" />
+    <resource statement-guid="fb19740e-6729-11e9-9ec9-5fbc84faaeb1" type="resource" guid="fb18feda-6729-11e9-9ec9-5fbc84faaeb1" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f3f1cb0b-3749-11e8-88ad-114c6ffe4a0c" type="resource" guid="1564455b-3360-11e8-a9fe-87ba35d8f5c4" />
@@ -94,6 +95,19 @@
         </predicate>
         <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
           <object statement-guid="9b015cf8-374c-11e8-88ad-114c6ffe4a0c" type="resource" guid="dd7c8dda-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fb19740e-6729-11e9-9ec9-5fbc84faaeb1">
+      <resource guid="fb18feda-6729-11e9-9ec9-5fbc84faaeb1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fb194cfc-6729-11e9-9ec9-5fbc84faaeb1" type="resource" guid="27d0007a-3360-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fb98dd3f-6729-11e9-9ec9-5fbc84faaeb1" type="literal">lignum</object>
+        </predicate>
+        <predicate guid="3dc1adc0-3360-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="fb19740d-6729-11e9-9ec9-5fbc84faaeb1" type="resource" guid="dd7e14f8-3339-11e8-a9fe-87ba35d8f5c4" />
         </predicate>
       </resource>
     </object>

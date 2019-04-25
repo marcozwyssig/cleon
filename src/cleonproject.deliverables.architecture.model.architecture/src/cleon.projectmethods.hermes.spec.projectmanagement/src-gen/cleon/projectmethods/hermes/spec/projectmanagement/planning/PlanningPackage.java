@@ -11,6 +11,7 @@ public class PlanningPackage {
   public static final Resource PlanningDocument_initialposition = new Resource("f0d6b9d0-c1c9-11e6-bd27-4740c1c9b441");
   public static final Resource PlanningDocument_constraints = new Resource("d4cfba71-d434-11e6-8a1d-7fdd5d29730e");
   public static final Resource PlanningDocument_scope = new Resource("68beebbb-3eb3-11e7-a89c-83d57940f0e3");
+  public static final Resource FunctionSpace_aE_PlanningDocument_PlanningDocument = new Resource("75d55e88-6746-11e9-9ec9-5fbc84faaeb1");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class PlanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.spec.projectmanagement.planning,2K8AXIgmYzjsB5oHehkC/uClEKM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.spec.projectmanagement.planning,lCmVunAOLwyBAS9yZoc8xDjvv/o=] */

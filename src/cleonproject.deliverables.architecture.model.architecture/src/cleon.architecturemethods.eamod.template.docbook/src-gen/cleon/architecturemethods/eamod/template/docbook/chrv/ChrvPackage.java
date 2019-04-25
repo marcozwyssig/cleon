@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class ChrvPackage {
   
-  public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_RequirementsManagementDocument = new Resource("6a083462-3e05-11e6-9bf8-29c5fda07fa3");
+  public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_RequirementsDocument = new Resource("6a083462-3e05-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Requirement = new Resource("86265106-3e07-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Driver = new Resource("af16bfb2-3f61-11e6-85d8-3328a679e82b");
   public static final Resource FunctionSpace_aE_DocBook_aE_CHRV_Drivers = new Resource("2b435b88-3f65-11e6-85d8-3328a679e82b");
@@ -39,4 +39,4 @@ public class ChrvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.docbook.chrv,oOggtj6cKMN3Uv2/V23HloK20Lg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.template.docbook.chrv,+GCawGrkgyhI6c2/t9KErRcLhm4=] */

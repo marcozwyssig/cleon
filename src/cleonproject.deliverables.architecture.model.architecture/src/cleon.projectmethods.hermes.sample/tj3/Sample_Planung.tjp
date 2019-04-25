@@ -12,7 +12,7 @@ project Sample "Sample" 2016-01-01 - 2016-10-25 {
 	# the project reports. If not specified, the current day will be
 	# used, but this will likely be outside of the project range, so it
 	# can't be seen in the reports.
-	now 2019-04-24
+	now 2019-04-25
 	# The currency for all money values is the Euro.
 	currency "CHF"
 }
@@ -151,6 +151,12 @@ task deliveries "Lieferobjekte" {
 	task "LO01_Document 1" {
 	}
 	task "LO02_System 1" {
+	}
+	task "LO03_Planning Document 1" {
+	}
+	task "LO04_Testconcept Document 1" {
+	}
+	task "LO05_Testspecification Document 1" {
 	}
 }
 

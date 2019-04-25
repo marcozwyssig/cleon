@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="00c36073-2b6b-11e9-90eb-451204ee9d3c">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="031d2efb-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="031d07e8-2b6b-11e9-90eb-451204ee9d3c" />
+    <resource statement-guid="0448b75b-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="04489048-2b6b-11e9-90eb-451204ee9d3c" />
+    <resource statement-guid="0ee8987a-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="0ee87167-2b6b-11e9-90eb-451204ee9d3c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="00c38785-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="00c694c7-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="00c66db6-2b6b-11e9-90eb-451204ee9d3c" type="literal">DiskType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="031d2efb-2b6b-11e9-90eb-451204ee9d3c">
+      <resource guid="031d07e8-2b6b-11e9-90eb-451204ee9d3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="031d2efa-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="00c36073-2b6b-11e9-90eb-451204ee9d3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="03ac76f7-2b6b-11e9-90eb-451204ee9d3c" type="literal">SDD</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0448b75b-2b6b-11e9-90eb-451204ee9d3c">
+      <resource guid="04489048-2b6b-11e9-90eb-451204ee9d3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0448904a-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="00c36073-2b6b-11e9-90eb-451204ee9d3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="04f1054c-2b6b-11e9-90eb-451204ee9d3c" type="literal">HDD</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0ee8987a-2b6b-11e9-90eb-451204ee9d3c">
+      <resource guid="0ee87167-2b6b-11e9-90eb-451204ee9d3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ee87169-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="00c36073-2b6b-11e9-90eb-451204ee9d3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0f9ef02b-2b6b-11e9-90eb-451204ee9d3c" type="literal">VMDK - Thin Provisioning</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

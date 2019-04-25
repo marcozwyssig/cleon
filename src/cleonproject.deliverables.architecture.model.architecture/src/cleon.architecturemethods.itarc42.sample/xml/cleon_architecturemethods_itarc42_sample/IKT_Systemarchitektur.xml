@@ -803,7 +803,15 @@
 			
 			
 			
-			
+			<db:para>Die Verteilung unterscheidet in die nachfolgenden unterschiedliche Umgebungen:</db:para>
+			<db:itemizedlist>
+				<db:listitem>
+					<db:para>QA [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.fb322843-d0bb-11e8-b005-f7630e4c29c0"/>]</db:para>
+				</db:listitem>	
+				<db:listitem>
+					<db:para>Produktion [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.c2216404-d0bb-11e8-b005-f7630e4c29c0"/>]</db:para>
+				</db:listitem>	
+			</db:itemizedlist>
 			<db:section xml:id="ea.fb322843-d0bb-11e8-b005-f7630e4c29c0">
 				<db:title>QA</db:title>
 				

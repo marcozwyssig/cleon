@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="21408953-1e38-11e9-865e-41ef48a95f70">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="6922a273-1e38-11e9-865e-41ef48a95f70" type="resource" guid="691caf00-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70" type="resource" guid="315c388e-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70" type="resource" guid="63f98721-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="916492f8-1e38-11e9-865e-41ef48a95f70" type="resource" guid="916492f5-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70" type="resource" guid="a2ee790e-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70" type="resource" guid="6cd3005b-1e38-11e9-865e-41ef48a95f70" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="21408955-1e38-11e9-865e-41ef48a95f70" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2140d777-1e38-11e9-865e-41ef48a95f70" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="a5b8789a-1e39-11e9-865e-41ef48a95f70" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2140b066-1e38-11e9-865e-41ef48a95f70" type="literal">AvailabilityConfiguration</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="6922a273-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="691caf00-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="69227b62-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="69c0de46-1e38-11e9-865e-41ef48a95f70" type="literal">None</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="aa5be901-1e39-11e9-865e-41ef48a95f70" type="literal">Keine Verfügbarkeitskonfiguration vorhanden</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="315c388e-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="315c5fa0-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="32ef5c26-1e38-11e9-865e-41ef48a95f70" type="literal">Active-Active</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="bf448a4a-1e39-11e9-865e-41ef48a95f70" type="literal">Der für den ausgefallenen Knoten vorgesehene Verkehr wird entweder an einen vorhandenen Knoten weitergeleitet oder über die verbleibenden Knoten verteilt.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="63f98721-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="63f98722-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="63f98723-1e38-11e9-865e-41ef48a95f70" type="literal">Active-Passive (Failover)</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="d126c98b-1e39-11e9-865e-41ef48a95f70" type="literal">Stellt eine vollständig redundante Instanz jedes Knotens bereit, die nur dann online geschaltet wird, wenn der zugehörige Primärknoten ausfällt. </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="916492f8-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="916492f5-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="916492f7-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="922b8c79-1e38-11e9-865e-41ef48a95f70" type="literal">N+1</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="e19d6adc-1e39-11e9-865e-41ef48a95f70" type="literal">Stellt einen einzelnen zusätzlichen Knoten bereit, der online geschaltet wird, um die Rolle des ausgefallenen Knotens zu übernehmen.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="a2ee790e-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2ee790f-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a2ee7910-1e38-11e9-865e-41ef48a95f70" type="literal">N+M</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="fff24f5e-1e39-11e9-865e-41ef48a95f70" type="literal">In Fällen, in denen ein einzelner Cluster viele Dienste verwaltet, bietet ein dedizierter Failover-Knoten möglicherweise keine ausreichende Redundanz. In solchen Fällen sind mehr als ein (M) Standby-Server enthalten und verfügbar.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70">
+      <resource guid="6cd3005b-1e38-11e9-865e-41ef48a95f70">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6cd3005d-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85f1aa74-1e38-11e9-865e-41ef48a95f70" type="literal">N-to-1 (Fallback)</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="3ca6edd0-1e3a-11e9-865e-41ef48a95f70" type="literal">Der Failover-Standby-Knoten kann vorübergehend zum aktiven Knoten werden, bis der ursprüngliche Knoten wiederhergestellt oder wieder online geschaltet werden kann. </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

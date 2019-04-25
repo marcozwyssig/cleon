@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="fb4a0fa3-0b73-11e9-a136-69d076e48ed1">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6a57c745-0b74-11e9-a136-69d076e48ed1" type="resource" guid="6a57a031-0b74-11e9-a136-69d076e48ed1" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="fb4a0fa5-0b73-11e9-a136-69d076e48ed1" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d004665a-0d1e-11e9-be4f-03130cc057ef" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6a57c745-0b74-11e9-a136-69d076e48ed1">
+      <resource guid="6a57a031-0b74-11e9-a136-69d076e48ed1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a57a033-0b74-11e9-a136-69d076e48ed1" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a57c744-0b74-11e9-a136-69d076e48ed1" type="literal">zones</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6a57c746-0b74-11e9-a136-69d076e48ed1" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f2c43f65-0b74-11e9-a136-69d076e48ed1" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="f1ae146c-0b74-11e9-a136-69d076e48ed1" type="resource" guid="fb4a0fa3-0b73-11e9-a136-69d076e48ed1" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="fb4a36b6-0b73-11e9-a136-69d076e48ed1" type="literal">Zone</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="bf582f4f-0b74-11e9-a136-69d076e48ed1" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

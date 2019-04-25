@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="19f5852a-4b23-11e9-8338-41c203971ecb">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="19f58533-4b23-11e9-8338-41c203971ecb" type="resource" guid="19f5852b-4b23-11e9-8338-41c203971ecb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f5852c-4b23-11e9-8338-41c203971ecb" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f5852d-4b23-11e9-8338-41c203971ecb" type="resource" guid="ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f58533-4b23-11e9-8338-41c203971ecb">
+      <resource guid="19f5852b-4b23-11e9-8338-41c203971ecb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="19f5852e-4b23-11e9-8338-41c203971ecb" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="19f5852f-4b23-11e9-8338-41c203971ecb" type="literal">securityZones</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="19f58530-4b23-11e9-8338-41c203971ecb" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="19f58531-4b23-11e9-8338-41c203971ecb" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="19f58532-4b23-11e9-8338-41c203971ecb" type="resource" guid="32beba1e-0b75-11e9-a136-69d076e48ed1" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="19f58534-4b23-11e9-8338-41c203971ecb" type="literal">SegmentationSystemComponentConcept</object>
+  </predicate>
+</resource>
+

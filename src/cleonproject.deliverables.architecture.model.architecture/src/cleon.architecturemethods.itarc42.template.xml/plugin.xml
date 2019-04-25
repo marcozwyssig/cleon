@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.architecturemethods.itarc42.template.xml">
+         <Plugin
+               pluginId="cleon.architecturemethods.itarc42.template.xml.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,da98aaac-6755-11e9-bd8e-d9bdd70bc753,da98aaaa-6755-11e9-bd8e-d9bdd70bc753,GU8RRmvETovBfyM7gtdGCioww8A=] -->

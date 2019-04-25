@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8a0ef5c9-1bfe-11e9-9896-651e5faa32a4">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="8e9fc8a7-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="8e9fc8a4-1bfe-11e9-9896-651e5faa32a4" />
+    <resource statement-guid="986575b9-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="986575b6-1bfe-11e9-9896-651e5faa32a4" />
+    <resource statement-guid="9dbbe34e-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="9dbbe34b-1bfe-11e9-9896-651e5faa32a4" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a0ef5cb-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a0ef5cd-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="9206e89e-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="9283705a-e5ca-11e5-a77a-1b28b6f2c660" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8a0ef5cc-1bfe-11e9-9896-651e5faa32a4" type="literal">Runtime</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="8e9fc8a7-1bfe-11e9-9896-651e5faa32a4">
+      <resource guid="8e9fc8a4-1bfe-11e9-9896-651e5faa32a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8e9fc8a6-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="8a0ef5c9-1bfe-11e9-9896-651e5faa32a4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="95c8ab00-1bfe-11e9-9896-651e5faa32a4" type="literal">Physical</object>
+        </predicate>
+        <predicate guid="86add80a-ce46-11e4-8e43-f3d67d2046f9">
+          <object statement-guid="975f9ee9-1bfe-11e9-9896-651e5faa32a4" type="literal">PHY</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="986575b9-1bfe-11e9-9896-651e5faa32a4">
+      <resource guid="986575b6-1bfe-11e9-9896-651e5faa32a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="986575b8-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="8a0ef5c9-1bfe-11e9-9896-651e5faa32a4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99b2b678-1bfe-11e9-9896-651e5faa32a4" type="literal">Virtual</object>
+        </predicate>
+        <predicate guid="86add80a-ce46-11e4-8e43-f3d67d2046f9">
+          <object statement-guid="9c995b77-1bfe-11e9-9896-651e5faa32a4" type="literal">VM</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9dbbe34e-1bfe-11e9-9896-651e5faa32a4">
+      <resource guid="9dbbe34b-1bfe-11e9-9896-651e5faa32a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9dbbe34d-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="8a0ef5c9-1bfe-11e9-9896-651e5faa32a4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9ec674ed-1bfe-11e9-9896-651e5faa32a4" type="literal">Container</object>
+        </predicate>
+        <predicate guid="86add80a-ce46-11e4-8e43-f3d67d2046f9">
+          <object statement-guid="a03c2560-1bfe-11e9-9896-651e5faa32a4" type="literal">CON</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

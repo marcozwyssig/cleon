@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.architecturemethods.itarc42.template.xml</name>
+	<comment/>
+	<projects>
+		<project>cleon.architecturemethods.itarc42.spec.itarc42</project>
+		<project>cleon.common.xml.template.xml</project>
+		<project>cleon.architecturemethods.arc42.spec.arc42</project>
+		<project>cleon.modelinglanguages.network.spec.network</project>
+		<project>cleon.architecturemethods.eamod.spec.eamod</project>
+		<project>cleon.modelinglanguages.uml.spec.uml2</project>
+		<project>cleon.common.glossary.spec.glossary</project>
+		<project>cleon.common.xml.spec.xmi</project>
+		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
+		<project>cleon.common.modularity.spec.buildingblock</project>
+		<project>cleon.common.doc.spec.doc</project>
+		<project>cleon.common.resources.spec.resources</project>
+		<project>cleon.common.xml.spec.xml</project>
+		<project>cleon.common.resources.spec.calendar</project>
+		<project>cleon.modelinglanguages.network.spec.segmentation</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,da98aaac-6755-11e9-bd8e-d9bdd70bc753,xg4bfSpgxlgycWb9Y8RcWFaroBM=] -->

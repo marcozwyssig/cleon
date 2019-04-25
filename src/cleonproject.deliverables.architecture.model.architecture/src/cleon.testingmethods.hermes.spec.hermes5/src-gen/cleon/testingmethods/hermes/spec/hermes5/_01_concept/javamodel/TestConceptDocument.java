@@ -208,12 +208,12 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
   }
     
   @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes> selectTestTypes() {
-    return _getList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes);
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes selectTestTypes() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes);
   }
 
-  public TestConceptDocument setTestTypes(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes> testTypes) {
-    _setList(cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes, testTypes);
+  public TestConceptDocument setTestTypes(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes testTypes) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes, testTypes);
     return this;
   }
     
@@ -250,7 +250,7 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testInfrastructures, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevels.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testLevels, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.ITestObjects.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testObjects, visitor);
-    _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes.class, cleon.testingmethods.hermes.spec.hermes5._01_concept._01_conceptPackage.TestConceptDocument_testTypes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -277,4 +277,4 @@ public class TestConceptDocument extends DynamicResource implements ITestConcept
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,PRR4PuhIRsPG06rX2/eRD4dOLAk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,FRxlvK0NXL2tvnDe2R2Hy14WHOo=] */

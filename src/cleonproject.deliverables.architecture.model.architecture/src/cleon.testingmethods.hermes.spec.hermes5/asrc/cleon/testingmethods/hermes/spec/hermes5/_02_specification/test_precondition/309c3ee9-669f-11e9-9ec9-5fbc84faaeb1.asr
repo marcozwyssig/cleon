@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="309c3ee9-669f-11e9-9ec9-5fbc84faaeb1">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ab4fcb40-6762-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ab4d814c-6762-11e9-9ec9-5fbc84faaeb1" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="309c3eeb-669f-11e9-9ec9-5fbc84faaeb1" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="309c3eed-669f-11e9-9ec9-5fbc84faaeb1" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
     <object statement-guid="3a2f1d68-669f-11e9-9ec9-5fbc84faaeb1" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ab4fcb40-6762-11e9-9ec9-5fbc84faaeb1">
+      <resource guid="ab4d814c-6762-11e9-9ec9-5fbc84faaeb1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ab4fcb3e-6762-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ab4fcb3f-6762-11e9-9ec9-5fbc84faaeb1" type="literal">testUsers</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ab4fcb41-6762-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ab4fcb42-6762-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="ab4fcb43-6762-11e9-9ec9-5fbc84faaeb1" type="resource" guid="bb1bba72-6728-11e9-9ec9-5fbc84faaeb1" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="309c3eec-669f-11e9-9ec9-5fbc84faaeb1" type="literal">TestPrecondition</object>

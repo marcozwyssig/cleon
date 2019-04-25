@@ -6,6 +6,10 @@ public interface ITestPrecondition extends ch.actifsource.core.javamodel.INamedR
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("309c3ee9-669f-11e9-9ec9-5fbc84faaeb1");
   
+  // relations
+  
+  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectTestUsers();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,309c3ee9-669f-11e9-9ec9-5fbc84faaeb1,btLxH9qi4XtT9xM3nyys8aI5Cm0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,309c3ee9-669f-11e9-9ec9-5fbc84faaeb1,A1saz5FX2oY2ofzkDfX2WauH8GM=] */

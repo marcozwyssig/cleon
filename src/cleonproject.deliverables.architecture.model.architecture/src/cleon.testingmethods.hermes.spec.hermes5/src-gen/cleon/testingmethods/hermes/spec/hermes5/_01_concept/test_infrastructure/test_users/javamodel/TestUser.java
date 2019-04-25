@@ -28,8 +28,48 @@ public class TestUser extends DynamicResource implements ITestUser {
     super(resourceRepository, resource, ITestUser.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
+  public java.lang.String selectPassword() {
+    return _getSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_password);
+  }
+    
+  public void setPassword(java.lang.String password) {
+     _setSingleAttribute(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_password, password);
+  }
+
   // relations
   
+  @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole selectRole() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role);
+  }
+
+  public TestUser setRole(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole role) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, role);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public TestUser setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
@@ -43,9 +83,20 @@ public class TestUser extends DynamicResource implements ITestUser {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_password, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectToMeRole(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole object) {
+    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,UaQ4Bude/FIp15XFWO7i0vn8Lq0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,U8uiL+Iq/I8rjwG9coNIBYao1ik=] */

@@ -262,6 +262,20 @@
 					</db:tr>
 				</db:thead>
 				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>Role1</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Role2</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
 				</db:tbody>
 			</db:informaltable>	
 			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System.</db:para>
@@ -806,14 +820,15 @@
 			<db:para>Die Verteilung unterscheidet in die nachfolgenden unterschiedliche Umgebungen:</db:para>
 			<db:itemizedlist>
 				<db:listitem>
-					<db:para>QA [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.fb322843-d0bb-11e8-b005-f7630e4c29c0"/>]</db:para>
+					<db:para>QA-Umgebung [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.fb322843-d0bb-11e8-b005-f7630e4c29c0"/>]</db:para>
 				</db:listitem>	
 				<db:listitem>
 					<db:para>Produktion [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.c2216404-d0bb-11e8-b005-f7630e4c29c0"/>]</db:para>
 				</db:listitem>	
 			</db:itemizedlist>
 			<db:section xml:id="ea.fb322843-d0bb-11e8-b005-f7630e4c29c0">
-				<db:title>QA</db:title>
+				<db:title>QA-Umgebung</db:title>
+				
 				
 				
 				
@@ -852,7 +867,268 @@
 		
 		
 		
-		
+		<db:section xml:id="ea.a2a6a3d0-675d-11e9-9ec9-5fbc84faaeb1">
+			<db:title>Sicherheit</db:title>
+			
+			
+			
+			
+			<db:section xml:id="ea.a4796804-675d-11e9-9ec9-5fbc84faaeb1">
+				<db:title>Rollen und Aktivit&#228;ten</db:title>
+				
+				
+				
+				
+				<db:section xml:id="ea.a57fb478-675d-11e9-9ec9-5fbc84faaeb1">
+					<db:title>Aktivit&#228;ten</db:title>
+					
+					
+					
+					<db:para>Die Aktivitäten orientieren sich an den System-Konfigurationen. Pro System-Konfiguration und pro Teilnetz werden die entsprechenden Aktivitäten Gruppen dementsprechend 
+					festgelegt, damit der Zugriff auf das System IKT insgesamt feingranular gesteuert werden kann.</db:para>
+					<db:para>Nachfolgend werden tabellarisch die Aktivitäten Gruppen aufgeführt:</db:para>   
+					<db:informaltable style="HERMES 5">
+						<db:col width="35%" />
+						<db:col width="20%" />
+						<db:col width="35%" />
+						<db:col width="10%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Range</db:th>
+								<db:th>System-Konfiguration</db:th>
+								<db:th>Anzahl Aktivitäten</db:th>			
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>e227a860-675d-11e9-9ec9-5fbc84faaeb1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2-101</db:para>
+								</db:td>
+								<db:td>
+									<db:para>Windows Server Standard Virtual</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+								<db:td>
+									<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+								</db:td>
+								<db:td></db:td>						
+								<db:td></db:td>						
+							</db:tr>
+						</db:tbody>
+					</db:informaltable>
+					<db:section xml:id="ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1">
+						<db:title>e227a860-675d-11e9-9ec9-5fbc84faaeb1</db:title>
+						
+						<db:para>sdfadf</db:para>
+						
+						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows Server Standard Virtual' aufgeführt. Für
+						die Administration der Aktivität ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
+						der Aktivität ist der Aktor 'Role2' verantwortlich.</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="10%" />
+							<db:col width="35%" />
+							<db:col width="20%" />
+							<db:col width="35%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Nr.</db:th>
+									<db:th>Name</db:th>
+									<db:th>Teilnetz</db:th>
+									<db:th>Rollen</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>A3</db:para>
+									</db:td>
+									<db:td>
+										<db:para>grp-act-3-1-e227a860-675d-11e9-9ec9-5fbc84faaeb1</db:para>
+									</db:td>
+									<db:td>
+										<db:para>1</db:para>
+									</db:td>
+									<db:td>
+										<db:itemizedlist>
+										</db:itemizedlist>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+									<db:td>
+										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+									</db:td>
+									<db:td></db:td>						
+									<db:td></db:td>						
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+						
+					</db:section>
+				</db:section>
+				<db:section xml:id="ea.a76febdd-675d-11e9-9ec9-5fbc84faaeb1">
+					<db:title>Rollen</db:title>
+					
+					
+					
+					<db:para>Die Rollen orientieren sich an den Aktoren. Pro Aktor und pro Teilnetz werden die entsprechenden Rollen Gruppen dementsprechend 
+					festgelegt.</db:para>
+					<db:para>Nachfolgend werden tabellarisch die Rollen Gruppen aufgeführt:</db:para>   
+					<db:informaltable style="HERMES 5">
+						<db:col width="35%" />
+						<db:col width="20%" />
+						<db:col width="35%" />
+						<db:col width="10%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Range</db:th>
+								<db:th>Aktor</db:th>
+								<db:th>Anzahl Rollen</db:th>			
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>role1-sdfsdf [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.b5640067-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1-100</db:para>
+								</db:td>
+								<db:td>
+									<db:para>Role1</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>role1-asdfasdf [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ca30dc6b-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2-101</db:para>
+								</db:td>
+								<db:td>
+									<db:para>Role1</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+								<db:td>
+									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+								</db:td>
+								<db:td></db:td>						
+								<db:td></db:td>						
+							</db:tr>
+						</db:tbody>
+					</db:informaltable>
+					<db:section xml:id="ea.b5640067-675d-11e9-9ec9-5fbc84faaeb1">
+						<db:title>role1-sdfsdf</db:title>
+						
+						<db:para>asdfasdf</db:para>
+						
+						<db:para>Nachfolgend werden die Rollen für den Aktor 'Role1' aufgeführt. Für
+						die Administration der Rolle ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
+						der Rolle ist der Aktor 'Role2' verantwortlich.</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="10%" />
+							<db:col width="35%" />
+							<db:col width="20%" />
+							<db:col width="35%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Nr.</db:th>
+									<db:th>Name</db:th>
+									<db:th>Teilnetz</db:th>
+									<db:th>Aktivitäten</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td>
+										<db:para>R33</db:para>
+									</db:td>
+									<db:td>
+										<db:para>TN Domain 1 (1)</db:para>
+									</db:td>
+									<db:td>
+										<db:para>1</db:para>
+									</db:td>
+									<db:td>
+										<db:itemizedlist>
+										</db:itemizedlist>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+									<db:td>
+										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+									</db:td>
+									<db:td></db:td>						
+									<db:td></db:td>						
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+						
+					</db:section>
+					<db:section xml:id="ea.ca30dc6b-675d-11e9-9ec9-5fbc84faaeb1">
+						<db:title>role1-asdfasdf</db:title>
+						
+						<db:para>dsafasdf</db:para>
+						
+						<db:para>Nachfolgend werden die Rollen für den Aktor 'Role1' aufgeführt. Für
+						die Administration der Rolle ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
+						der Rolle ist der Aktor 'Role2' verantwortlich.</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="10%" />
+							<db:col width="35%" />
+							<db:col width="20%" />
+							<db:col width="35%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Nr.</db:th>
+									<db:th>Name</db:th>
+									<db:th>Teilnetz</db:th>
+									<db:th>Aktivitäten</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>
+								<db:tr>
+									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+									<db:td>
+										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+									</db:td>
+									<db:td></db:td>						
+									<db:td></db:td>						
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section xml:id="ea.05850120-675e-11e9-9ec9-5fbc84faaeb1">
+				<db:title>Verzeichnisdienste</db:title>
+				
+				
+				
+				
+				
+			</db:section>
+		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.30a9ff56-d0b7-11e8-b005-f7630e4c29c0">
 		<db:title>Entwurfsentscheidungen</db:title>
@@ -1070,6 +1346,41 @@
 			</db:informaltable>
 			
 		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.bd0b4447-4f0d-11e6-9af7-359fc86da633">
+		<db:title>Glossar</db:title>
+		
+		
+		
+		<db:informaltable style="HERMES 5">
+			<db:col width="25%"/>
+			<db:col width="75%"/>
+			<db:thead>
+				<db:tr>
+					<db:th>Begriff</db:th>
+					<db:th>Erklärung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Term A</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Description A</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>Term B</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Description B</db:para>
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>		
+		
 	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,2feed002-99aa-11e8-8f58-219af2c5d6d9,Hash] -->

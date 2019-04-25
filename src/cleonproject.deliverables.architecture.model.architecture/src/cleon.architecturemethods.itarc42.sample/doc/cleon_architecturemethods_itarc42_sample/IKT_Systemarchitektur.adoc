@@ -47,7 +47,8 @@ In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
+actor Role1 as "Role1"
+actor Role2 as "Role2"
 ...
 
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
@@ -57,6 +58,12 @@ Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
 [cols="5,10a" options="header"]
 |====
 |Name | Beschreibung
+|Role1
+|
+|====
+|Role2
+|
+|====
 
 Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
 
@@ -275,7 +282,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-==== QA
+==== QA-Umgebung
 
 
 
@@ -310,6 +317,57 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
+=== Sicherheit
+
+
+
+
+==== Rollen und Aktivitäten
+
+
+
+
+===== Aktivitäten
+
+
+
+
+====== e227a860-675d-11e9-9ec9-5fbc84faaeb1
+
+sdfadf
+
+
+
+
+
+===== Rollen
+
+
+
+
+====== role1-sdfsdf
+
+asdfasdf
+
+
+
+
+====== role1-asdfasdf
+
+dsafasdf
+
+
+
+
+
+
+==== Verzeichnisdienste
+
+
+
+
+
+
 
 
 == Entwurfsentscheidungen
@@ -330,6 +388,18 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
+
+
+
+= Glossar
+
+
+
+Term A:: 
+	Description A
+
+Term B:: 
+	Description B
 
 
 

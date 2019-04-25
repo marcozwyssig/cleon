@@ -14,10 +14,10 @@ public interface ITestConceptDocument extends cleon.common.doc.spec.doc.document
   
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevels selectTestLevels();
   
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes> selectTestTypes();
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestTypes selectTestTypes();
   
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastructures selectTestInfrastructures();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,QnfncF7sLJTSvSmzcyI6RSIVGjQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c050d74c-d400-11e5-9dfc-cf0f3e030023,XhdZAzfg2Cci6bO4iYhzQQOTbPk=] */

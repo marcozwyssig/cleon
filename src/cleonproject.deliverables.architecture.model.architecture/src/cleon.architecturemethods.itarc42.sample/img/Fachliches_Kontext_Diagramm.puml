@@ -1,7 +1,8 @@
 @startuml
 skinparam monochrome true
 skinparam componentStyle uml2
-
+actor Role1 as "Role1"
+actor Role2 as "Role2"
 
 ' Begin Protected Region [[layouting]]
 

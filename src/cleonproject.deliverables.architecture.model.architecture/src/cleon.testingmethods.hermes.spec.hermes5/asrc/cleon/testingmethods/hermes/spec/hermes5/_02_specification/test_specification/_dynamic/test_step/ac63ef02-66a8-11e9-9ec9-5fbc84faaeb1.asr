@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1">
+  <owns predicate="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <resource statement-guid="8dfd76d6-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="8dfd76d3-6725-11e9-9ec9-5fbc84faaeb1">
+      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+        <resource statement-guid="985c0965-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="985c0961-6725-11e9-9ec9-5fbc84faaeb1">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="a11f142a-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="a11e9ef7-6725-11e9-9ec9-5fbc84faaeb1" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ac63ef04-66a8-11e9-9ec9-5fbc84faaeb1" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ac63ef05-66a8-11e9-9ec9-5fbc84faaeb1" type="literal">FunctionSpace_TestStep</object>
+  </predicate>
+  <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
+    <object statement-guid="8dfd76d6-6725-11e9-9ec9-5fbc84faaeb1">
+      <resource guid="8dfd76d3-6725-11e9-9ec9-5fbc84faaeb1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8dfd76d5-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
+        </predicate>
+        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
+          <object statement-guid="985c0965-6725-11e9-9ec9-5fbc84faaeb1">
+            <resource guid="985c0961-6725-11e9-9ec9-5fbc84faaeb1">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="985c0963-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="991dabb6-6725-11e9-9ec9-5fbc84faaeb1" type="literal">Position</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="a11f142a-6725-11e9-9ec9-5fbc84faaeb1">
+                  <resource guid="a11e9ef7-6725-11e9-9ec9-5fbc84faaeb1">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="a11eed19-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="a1f74bbb-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="985c0964-6725-11e9-9ec9-5fbc84faaeb1" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
+          <object statement-guid="8fa07894-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="8009f040-66a6-11e9-9ec9-5fbc84faaeb1" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

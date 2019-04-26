@@ -19,8 +19,12 @@ public class _dynamicPackage {
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTest = new Resource("7f2250d9-5166-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTest_expectedResult = new Resource("6fb9ee45-516a-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTest_testSteps = new Resource("6e65dae1-516b-11e9-bb61-971a423d31e9");
-  public static final Resource TestLocalPrecondition = new Resource("8e928c1d-516b-11e9-bb61-971a423d31e9");
-  public static final Resource DynamicTest_testPreconditions = new Resource("9b47df59-516b-11e9-bb61-971a423d31e9");
+  public static final Resource UsedTestGlobalPreconditionGroup = new Resource("b32136ac-67e9-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource DynamicTest_testGlobalPrecondition = new Resource("b8092a8f-67e9-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource UsedTestGlobalPreconditionGroup_testGlobalPrecondition = new Resource("043ff893-67ea-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource OverrideTestPrecondition = new Resource("64ed6b39-67ea-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource UsedTestGlobalPreconditionGroup_overrideTestStep = new Resource("70998bf2-67ea-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource OverrideTestPrecondition_testPrecondition = new Resource("f18f33b9-67eb-11e9-9ec9-5fbc84faaeb1");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +45,4 @@ public class _dynamicPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic,rPA3e06tbnb9DsHpQrjM4KG7vJE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic,3nKMimt9CH6COCTx6JjA2wskovs=] */

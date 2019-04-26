@@ -8,8 +8,8 @@ public interface ITestGlobalPreconditions extends cleon.testingmethods.hermes.sp
   
   // relations
   
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPrecondition> selectTestGlobalPrecondition();
+  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup> selectTestPreconditionGroups();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,894f4f5a-669f-11e9-9ec9-5fbc84faaeb1,gQhUH0tpjoCTPtv0ESOF3Qwms50=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,894f4f5a-669f-11e9-9ec9-5fbc84faaeb1,zoahk1aWbog6S0UArZJYeYcWujM=] */

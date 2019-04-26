@@ -13,8 +13,8 @@ public abstract class DynamicTest extends DynamicResource implements IDynamicTes
   
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest selectToMeTestPreconditions(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.ITestLocalPrecondition object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_testPreconditions, object.getResource());
+  public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest selectToMeTestGlobalPrecondition(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_testGlobalPrecondition, object.getResource());
   }
   
   public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest selectToMeTestSteps(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep object) {
@@ -22,4 +22,4 @@ public abstract class DynamicTest extends DynamicResource implements IDynamicTes
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bded44f4-4f8c-11e9-ad5d-977b17aab907,boeneSCItB+clPBOktjaPaMtC70=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bded44f4-4f8c-11e9-ad5d-977b17aab907,mnONIWjFbWgOK+ifvZ19hfOfpMM=] */

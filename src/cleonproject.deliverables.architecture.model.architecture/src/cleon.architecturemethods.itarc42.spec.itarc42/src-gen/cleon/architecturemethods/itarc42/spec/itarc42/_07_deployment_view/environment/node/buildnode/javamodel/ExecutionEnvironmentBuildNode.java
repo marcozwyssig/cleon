@@ -71,16 +71,6 @@ public class ExecutionEnvironmentBuildNode extends DynamicResource implements IE
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer selectCustomer() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer);
-  }
-
-  public ExecutionEnvironmentBuildNode setCustomer(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer customer) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer, customer);
-    return this;
-  }
-    
-  @Override
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectDisk() {
     return _getMultiMap(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_disk);
   }
@@ -169,7 +159,6 @@ public class ExecutionEnvironmentBuildNode extends DynamicResource implements IE
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_buildNodes, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_cpu, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer, visitor);
     _acceptMultiMap(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_disk, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_memory, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.Node_nodes, visitor);
@@ -181,4 +170,4 @@ public class ExecutionEnvironmentBuildNode extends DynamicResource implements IE
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62e7ca85-02d8-11e9-9e58-33d596257b14,C2xcbedxa3Pt4roALG2HIQFbIuM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62e7ca85-02d8-11e9-9e58-33d596257b14,LyRZYCziONf2ImZF+bBPC8Y8zW4=] */

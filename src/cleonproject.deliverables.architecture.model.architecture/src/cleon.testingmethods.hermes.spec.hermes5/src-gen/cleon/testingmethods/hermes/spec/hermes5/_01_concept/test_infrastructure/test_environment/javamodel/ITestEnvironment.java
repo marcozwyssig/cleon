@@ -8,8 +8,8 @@ public interface ITestEnvironment extends cleon.testingmethods.hermes.spec.herme
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.IEnvironmentView selectEnvironmentView();
+  public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.IEnvironment selectEnvironmentView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,uHZzI6JtkzgLw0XtPDtmoiCo6Xw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,rfcSqNfKWV0llLIv6xi/WH3lXK0=] */

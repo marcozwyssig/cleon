@@ -79,16 +79,6 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer selectCustomer() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer);
-  }
-
-  public SupplyLocationNode setCustomer(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer customer) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer, customer);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode> selectNodes() {
     return _getList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.Node_nodes);
   }
@@ -128,11 +118,10 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.RootNode_buildNodes, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.ICustomer.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.CustomerAware_customer, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.Node_nodes, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,DqXtKgGZ8tduTX9lBurzfcHQLe0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,sJ9rwVJm1P2pmLIVaZAEzHUUF2o=] */

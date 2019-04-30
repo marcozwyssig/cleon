@@ -2,7 +2,7 @@ package cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.envir
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEnvironmentView extends cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IEnvironment, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.IRootNode {
+public interface IEnvironment extends cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IEnvironment, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.IRootNode {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7372f8ef-ef40-11e8-be8a-b748ff8f0a75");
   
@@ -28,4 +28,4 @@ public interface IEnvironmentView extends cleon.architecturemethods.arc42.spec.a
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,/4ul0KPIsdEqoanWfyeGPGJ22eI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,nls0o+yc8Z/oVH4E9XRYC2dO/xM=] */

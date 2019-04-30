@@ -2,7 +2,7 @@ package cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.envir
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IBuildNode extends cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.ISupplyAndBuildNodeDecomposite, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.ICustomerAware, ch.actifsource.core.javamodel.IDecorator {
+public interface IBuildNode extends cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.ISupplyAndBuildNodeDecomposite, ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("853a8e37-ef41-11e8-be8a-b748ff8f0a75");
   
@@ -22,4 +22,4 @@ public interface IBuildNode extends cleon.architecturemethods.itarc42.spec.itarc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,LiLKh61xKUPOLrbQFeQCssotiZw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,Fcz2BDms7BC8d4b/F5cK260+Ib8=] */

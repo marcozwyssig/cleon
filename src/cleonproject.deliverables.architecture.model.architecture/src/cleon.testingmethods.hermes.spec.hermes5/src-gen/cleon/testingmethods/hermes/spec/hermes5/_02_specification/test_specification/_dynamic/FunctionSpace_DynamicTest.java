@@ -8,6 +8,13 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition;
+import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestPrecondition;
+import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IOverrideTestPrecondition;
 
 /* End Protected Region   [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
 
@@ -73,6 +80,9 @@ public class FunctionSpace_DynamicTest {
     @IDynamicResourceExtension.MethodId("8af66c32-5166-11e9-bb61-971a423d31e9")
     public java.lang.String GetTestName();
 
+    @IDynamicResourceExtension.MethodId("d8bc7687-6b31-11e9-bd30-87fcf852dea7")
+    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetAllPrecondition();
+
   }
   
   public static interface IDynamicTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -93,6 +103,59 @@ public class FunctionSpace_DynamicTest {
 
   }
 
+  public static interface IUsedTestGlobalPreconditionGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d8cc38d1-6b32-11e9-bd30-87fcf852dea7")
+    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions();
+
+  }
+  
+  public static interface IUsedTestGlobalPreconditionGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("d8cc38d1-6b32-11e9-bd30-87fcf852dea7")
+    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup);
+
+  }
+  
+  public static class UsedTestGlobalPreconditionGroupFunctionsImpl implements IUsedTestGlobalPreconditionGroupFunctionsImpl {
+
+    public static final IUsedTestGlobalPreconditionGroupFunctionsImpl INSTANCE = new UsedTestGlobalPreconditionGroupFunctionsImpl();
+
+    private UsedTestGlobalPreconditionGroupFunctionsImpl() {}
+
+    @Override
+    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
+      /* Begin Protected Region [[d8cc38d1-6b32-11e9-bd30-87fcf852dea7]] */
+    	List<IAbstractTestPrecondition> resultPreconditions = new ArrayList<>();
+    	
+    	for( ITestPrecondition iterPrecondition : usedTestGlobalPreconditionGroup.selectTestGlobalPrecondition().selectTestPreconditions()) 
+    	{    		
+    		if(usedTestGlobalPreconditionGroup.selectTestprecondition().containsKey(iterPrecondition))
+    		{
+    			resultPreconditions.add(usedTestGlobalPreconditionGroup.selectTestprecondition().get(iterPrecondition));
+    		}
+    		else
+    		{
+    			resultPreconditions.add(iterPrecondition);
+    		}    			
+    	}
+    	return resultPreconditions;
+   
+      /* End Protected Region   [[d8cc38d1-6b32-11e9-bd30-87fcf852dea7]] */
+    }
+
+  }
+  
+  public static class UsedTestGlobalPreconditionGroupFunctions {
+
+    private UsedTestGlobalPreconditionGroupFunctions() {}
+
+    public static List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
+      return DynamicResourceUtil.invoke(IUsedTestGlobalPreconditionGroupFunctionsImpl.class, UsedTestGlobalPreconditionGroupFunctionsImpl.INSTANCE, usedTestGlobalPreconditionGroup).GetPreconditions(usedTestGlobalPreconditionGroup);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,eQ1Lthf6fTVtES1fev0MK+juT7Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,xwfwT+l1FnZnDkpg7UBs7Wt76yE=] */

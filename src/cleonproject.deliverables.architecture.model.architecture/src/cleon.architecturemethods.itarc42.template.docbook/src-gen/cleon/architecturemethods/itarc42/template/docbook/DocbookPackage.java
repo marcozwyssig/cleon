@@ -9,7 +9,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Segmentation_aE_Docbook_SegmentationZone = new Resource("382c7b60-0d1e-11e9-be4f-03130cc057ef");
   public static final Resource FunctionSpace_aE_Segmentation_aE_Docbook_SegmentationConcept = new Resource("e6de5277-0e21-11e9-8b4c-f9aec93d8b56");
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeploymentLevel = new Resource("03ff7822-0e2a-11e9-8b4c-f9aec93d8b56");
-  public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_EnvironmentView = new Resource("919a7042-0e9e-11e9-9f19-6d15636f4ecc");
+  public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_Environment = new Resource("919a7042-0e9e-11e9-9f19-6d15636f4ecc");
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeployView = new Resource("c96944a2-1983-11e9-88a0-1f786f12e4c1");
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeploymentDiagram = new Resource("4960a0a6-199d-11e9-9d43-9ddad24f774b");
   public static final Resource FunctionSpace_aE_QoS_QoS_aE_Concept = new Resource("9fea578c-1d8d-11e9-b601-db75aa6f89a4");
@@ -39,4 +39,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.docbook,kBHy+kCtHFnkVY4FNQTVAqf1kdI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.docbook,Rd140KsF3dNhd6agap2YtKjj/AE=] */

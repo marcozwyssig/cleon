@@ -1,34 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="68e85e06-516b-11e9-bb61-971a423d31e9">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="858b99a4-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="858b4b80-6725-11e9-9ec9-5fbc84faaeb1" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="68e85e08-516b-11e9-bb61-971a423d31e9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="83a6ed2f-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="8009f040-66a6-11e9-9ec9-5fbc84faaeb1" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="858b99a4-6725-11e9-9ec9-5fbc84faaeb1">
-      <resource guid="858b4b80-6725-11e9-9ec9-5fbc84faaeb1">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="858b99a2-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="858b99a3-6725-11e9-9ec9-5fbc84faaeb1" type="literal">input</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="858b99a5-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="858b99a6-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="858b99a7-6725-11e9-9ec9-5fbc84faaeb1" type="resource" guid="4118d2a5-6724-11e9-9ec9-5fbc84faaeb1" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="9bbc5067-6b31-11e9-bd30-87fcf852dea7" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="83a6ed2f-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="809ec897-6b31-11e9-bd30-87fcf852dea7" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="68e85e09-516b-11e9-bb61-971a423d31e9" type="literal">TestInput</object>

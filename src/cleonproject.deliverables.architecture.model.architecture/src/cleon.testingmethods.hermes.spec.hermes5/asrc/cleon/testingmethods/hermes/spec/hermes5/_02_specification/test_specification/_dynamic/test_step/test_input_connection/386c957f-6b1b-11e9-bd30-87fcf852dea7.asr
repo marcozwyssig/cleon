@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="386c957f-6b1b-11e9-bd30-87fcf852dea7">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0a175638-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="0a1692e4-6ce6-11e9-a6d3-775c09e81e2d" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="386d0ab1-6b1b-11e9-bd30-87fcf852dea7" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="386dce03-6b1b-11e9-bd30-87fcf852dea7" type="resource" guid="809ec897-6b31-11e9-bd30-87fcf852dea7" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0a175638-6ce6-11e9-a6d3-775c09e81e2d">
+      <resource guid="0a1692e4-6ce6-11e9-a6d3-775c09e81e2d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0a16e106-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0a16e107-6ce6-11e9-a6d3-775c09e81e2d" type="literal">connectionType</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0a177d49-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0a177d4a-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="0e4a2a7c-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="fed541bf-6ce5-11e9-a6d3-775c09e81e2d" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="0a17a45b-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="386d58d2-6b1b-11e9-bd30-87fcf852dea7" type="literal">TestInputConnection</object>
+  </predicate>
+</resource>
+

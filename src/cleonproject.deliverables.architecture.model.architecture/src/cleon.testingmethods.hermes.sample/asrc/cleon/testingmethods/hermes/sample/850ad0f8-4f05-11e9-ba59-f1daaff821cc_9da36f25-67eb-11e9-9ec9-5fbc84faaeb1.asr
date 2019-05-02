@@ -19,6 +19,9 @@
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="b0f51dc6-67eb-11e9-9ec9-5fbc84faaeb1" type="literal">condition 1</object>
         </predicate>
+        <predicate guid="ab4d814c-6762-11e9-9ec9-5fbc84faaeb1">
+          <object statement-guid="b1ed08c7-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="ed18b9ee-6761-11e9-9ec9-5fbc84faaeb1" />
+        </predicate>
       </resource>
     </object>
     <object statement-guid="b2a7d611-67eb-11e9-9ec9-5fbc84faaeb1">
@@ -28,6 +31,9 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="b33c9c02-67eb-11e9-9ec9-5fbc84faaeb1" type="literal">condition 2</object>
+        </predicate>
+        <predicate guid="ab4d814c-6762-11e9-9ec9-5fbc84faaeb1">
+          <object statement-guid="88d9b6d3-6ce9-11e9-a6d3-775c09e81e2d" type="resource" guid="98d0738d-6760-11e9-9ec9-5fbc84faaeb1" />
         </predicate>
       </resource>
     </object>

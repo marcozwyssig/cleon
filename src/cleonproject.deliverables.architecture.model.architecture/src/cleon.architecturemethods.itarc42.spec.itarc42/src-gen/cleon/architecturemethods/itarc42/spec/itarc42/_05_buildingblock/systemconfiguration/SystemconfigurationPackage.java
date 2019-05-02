@@ -72,13 +72,13 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_SpacewalkSatelliteSystemConfiguration = new Resource("2b19a530-0c3d-11e9-83ba-4d57b06560a2");
   public static final Resource WsusSystemConfiguration = new Resource("b239a026-0c3d-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WsusSystemConfiguration = new Resource("bb8c67d5-0c3d-11e9-83ba-4d57b06560a2");
-  public static final Resource OperatingSystemConfiguraiton = new Resource("75800d3e-1bfe-11e9-9896-651e5faa32a4");
+  public static final Resource OperatingSystemConfiguration = new Resource("75800d3e-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource Runtime = new Resource("8a0ef5c9-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource Runtime_Physical = new Resource("8e9fc8a4-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource Runtime_Virtual = new Resource("986575b6-1bfe-11e9-9896-651e5faa32a4");
   public static final Resource Runtime_Container = new Resource("9dbbe34b-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource OperatingSystemConfiguraiton_runtime = new Resource("c03ae927-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_OperatingSystemConfiguraiton = new Resource("ee10dae5-1c89-11e9-9896-651e5faa32a4");
+  public static final Resource OperatingSystemConfiguration_runtime = new Resource("c03ae927-1bfe-11e9-9896-651e5faa32a4");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_OperatingSystemConfiguration = new Resource("ee10dae5-1c89-11e9-9896-651e5faa32a4");
   public static final Resource CentOsSystemConfiguration = new Resource("771f415a-1d8a-11e9-b601-db75aa6f89a4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_CentOsSystemConfiguration = new Resource("82aabb1f-1d8a-11e9-b601-db75aa6f89a4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DeviceSystemConfiguration = new Resource("dbb04b54-2abd-11e9-a3f8-336d9e792e17");
@@ -103,4 +103,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration,0s0TmGss+jj3Rzayqhe/O91gkrQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration,DJXJ8vPyaRtsoEJWQFhOIJfXVkE=] */

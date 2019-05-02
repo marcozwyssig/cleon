@@ -122,11 +122,11 @@ public class WindowsSystemConfiguration extends DynamicResource implements IWind
     
   @Override
   public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime selectRuntime() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguraiton_runtime);
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime);
   }
 
   public WindowsSystemConfiguration setRuntime(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime runtime) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguraiton_runtime, runtime);
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime, runtime);
     return this;
   }
     
@@ -164,10 +164,10 @@ public class WindowsSystemConfiguration extends DynamicResource implements IWind
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguraiton_runtime, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductAware_usingProducts, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0a9a475-021f-11e9-b327-17da2da63a8f,qd2Go+sgynzvXscRzf5xBozc+t4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0a9a475-021f-11e9-b327-17da2da63a8f,ypHeHHIs7Qa6e6Uvwr6D8n4e55c=] */

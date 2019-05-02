@@ -31,12 +31,39 @@ public class TestUser extends DynamicResource implements ITestUser {
   // attributes
   
   @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.Integer selectIdentifier() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
   }
     
   public void setIdentifier(java.lang.Integer identifier) {
      _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
   @Override
@@ -74,7 +101,10 @@ public class TestUser extends DynamicResource implements ITestUser {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_password, visitor);
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, visitor);
@@ -88,4 +118,4 @@ public class TestUser extends DynamicResource implements ITestUser {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,WpdsLnuLXJHXGolhn8wMmiurMX0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,2wTFFqG55uwNOfXlt+6j0J2r67E=] */

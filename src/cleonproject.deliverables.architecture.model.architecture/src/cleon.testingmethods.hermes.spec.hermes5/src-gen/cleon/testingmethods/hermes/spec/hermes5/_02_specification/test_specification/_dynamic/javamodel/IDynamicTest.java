@@ -6,9 +6,9 @@ public interface IDynamicTest extends ch.actifsource.core.javamodel.INamedResour
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("bded44f4-4f8c-11e9-ad5d-977b17aab907");
   
-  public java.lang.String selectExpectedResult();
+  // attributes
   
-  // relations
+  public java.lang.String selectTestGoal();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> selectTestGlobalPrecondition();
   
@@ -16,4 +16,4 @@ public interface IDynamicTest extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bded44f4-4f8c-11e9-ad5d-977b17aab907,8k7+LMWRe3xToiLY88T6GWt+e5k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bded44f4-4f8c-11e9-ad5d-977b17aab907,n3NP3lUQVcIX5SvtgZPU+GGSa8k=] */

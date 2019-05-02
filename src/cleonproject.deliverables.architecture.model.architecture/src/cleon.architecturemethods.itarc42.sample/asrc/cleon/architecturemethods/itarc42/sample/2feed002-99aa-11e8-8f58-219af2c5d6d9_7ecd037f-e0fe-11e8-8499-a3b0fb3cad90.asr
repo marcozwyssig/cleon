@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="7ecd037f-e0fe-11e8-8499-a3b0fb3cad90">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="4c996c3f-6cee-11e9-a6d3-775c09e81e2d" type="resource" guid="30297490-6cee-11e9-a6d3-775c09e81e2d" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7ecd0381-e0fe-11e8-8499-a3b0fb3cad90" type="resource" guid="58022544-01d8-11e9-9c9d-8d52d6745026" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="7fb9d484-e0fe-11e8-8499-a3b0fb3cad90" type="literal">Windows Server 2016 BareMetal</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="4c996c3f-6cee-11e9-a6d3-775c09e81e2d">
+      <resource guid="30297490-6cee-11e9-a6d3-775c09e81e2d">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="30299ba2-6cee-11e9-a6d3-775c09e81e2d" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="30ea539d-6cee-11e9-a6d3-775c09e81e2d" type="resource" guid="86229cf0-675f-11e9-9ec9-5fbc84faaeb1" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="3029c2b3-6cee-11e9-a6d3-775c09e81e2d" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

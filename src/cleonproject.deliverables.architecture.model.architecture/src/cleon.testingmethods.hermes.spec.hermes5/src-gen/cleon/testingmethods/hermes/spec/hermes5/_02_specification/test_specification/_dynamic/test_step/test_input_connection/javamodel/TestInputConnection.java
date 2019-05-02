@@ -1,4 +1,4 @@
-package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.javamodel;
+package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -51,6 +51,16 @@ public class TestInputConnection extends DynamicResource implements ITestInputCo
   // relations
   
   @Override
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.IConnectionType selectConnectionType() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.IConnectionType.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnection_connectionType);
+  }
+
+  public TestInputConnection setConnectionType(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.IConnectionType connectionType) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnection_connectionType, connectionType);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -67,8 +77,15 @@ public class TestInputConnection extends DynamicResource implements ITestInputCo
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.IConnectionType.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnection_connectionType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnection> selectToMeConnectionType(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.IConnectionType object) {
+    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnection.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnection_connectionType, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,386c957f-6b1b-11e9-bd30-87fcf852dea7,vlY0DEcp49BFI2pjrmfVGqE4qm4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,386c957f-6b1b-11e9-bd30-87fcf852dea7,CceBHJcMReVTv6f5Hvhxj7/jw7I=] */

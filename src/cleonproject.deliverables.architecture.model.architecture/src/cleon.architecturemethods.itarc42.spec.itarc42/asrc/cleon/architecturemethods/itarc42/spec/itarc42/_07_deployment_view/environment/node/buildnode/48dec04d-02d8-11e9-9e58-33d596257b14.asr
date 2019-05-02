@@ -205,6 +205,11 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="c2eb88c8-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="c2eb1394-6cef-11e9-a6d3-775c09e81e2d">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="c8a12c0b-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="c8a104f8-6cef-11e9-a6d3-775c09e81e2d" />
+          </owns>
+        </resource>
       </owns>
     </resource>
   </owns>
@@ -854,6 +859,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="8901095f-2abe-11e9-a3f8-336d9e792e17" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="c2eb88c8-6cef-11e9-a6d3-775c09e81e2d">
+            <resource guid="c2eb1394-6cef-11e9-a6d3-775c09e81e2d">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c2eb1396-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="dbe3081d-59e1-11e4-93f7-ebb912dff42a" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="c3970a80-6cef-11e9-a6d3-775c09e81e2d" type="literal">OnlyOs</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="c8a12c0b-6cef-11e9-a6d3-775c09e81e2d">
+                  <resource guid="c8a104f8-6cef-11e9-a6d3-775c09e81e2d">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="c8a12c0a-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="6d7f221e-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="8474d1a9-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="c960f969-6cef-11e9-a6d3-775c09e81e2d" type="resource" guid="853a8e37-ef41-11e8-be8a-b748ff8f0a75" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="c2eb3aa7-6cef-11e9-a6d3-775c09e81e2d" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
               </predicate>
             </resource>
           </object>

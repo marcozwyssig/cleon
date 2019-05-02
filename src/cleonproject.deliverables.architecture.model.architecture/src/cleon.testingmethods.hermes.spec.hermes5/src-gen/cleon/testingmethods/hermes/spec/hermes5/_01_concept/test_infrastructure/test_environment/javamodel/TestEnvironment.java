@@ -51,6 +51,16 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
   }
     
   @Override
+  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection> selectTestConnection() {
+    return _getMultiMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_testConnection);
+  }
+
+  public TestEnvironment setTestConnection(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection> testConnection) {
+    _setMultiMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_testConnection, testConnection);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -66,6 +76,7 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.javamodel.IEnvironment.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
+    _acceptMultiMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_testConnection, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -75,5 +86,9 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, object.getResource());
   }
   
+  public static cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment selectToMeTestConnection(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_testConnection, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,TOiIzE2nVPrjln/2DZt//AqrH/w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,dnQgM7GW5TYrBftOpoY1GSVT6cw=] */

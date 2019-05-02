@@ -1112,7 +1112,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IOperatingSystemConfiguraitonFunctions extends IDynamicResourceExtension {
+  public static interface IOperatingSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f9bc3919-1c89-11e9-9896-651e5faa32a4")
     public java.lang.String GetOsType();
@@ -1128,21 +1128,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IOperatingSystemConfiguraitonFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IOperatingSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class OperatingSystemConfiguraitonFunctionsImpl implements IOperatingSystemConfiguraitonFunctionsImpl {
+  public static class OperatingSystemConfigurationFunctionsImpl implements IOperatingSystemConfigurationFunctionsImpl {
 
-    public static final IOperatingSystemConfiguraitonFunctionsImpl INSTANCE = new OperatingSystemConfiguraitonFunctionsImpl();
+    public static final IOperatingSystemConfigurationFunctionsImpl INSTANCE = new OperatingSystemConfigurationFunctionsImpl();
 
-    private OperatingSystemConfiguraitonFunctionsImpl() {}
+    private OperatingSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class OperatingSystemConfiguraitonFunctions {
+  public static class OperatingSystemConfigurationFunctions {
 
-    private OperatingSystemConfiguraitonFunctions() {}
+    private OperatingSystemConfigurationFunctions() {}
 
   }
 
@@ -1244,4 +1244,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,PuOye/zUZzKhfdoYJxGGVFbdIRs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,9gNLiA+xBH1rhSsn/7++GKkGycc=] */

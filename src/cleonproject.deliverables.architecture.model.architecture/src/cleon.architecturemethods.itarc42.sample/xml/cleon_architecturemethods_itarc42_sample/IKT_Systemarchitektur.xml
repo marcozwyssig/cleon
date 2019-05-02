@@ -565,7 +565,26 @@
 						
 						
 						
-						<db:para>Der Baustein Windows 2016 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows 2016 tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Windows 2016 -> Server</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
 						
 					</db:section>
 					<db:section xml:id="ea.a2955ad6-0df0-11e9-a28e-8b950dcca323">
@@ -732,7 +751,26 @@
 						
 						
 						
-						<db:para>Der Baustein Windows Server 2016 BareMetal verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows Server 2016 BareMetal tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Windows Server 2016 BareMetal -> HPE Server (HPE)</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
 						
 					</db:section>
 					<db:section xml:id="ea.86498d76-0df0-11e9-a28e-8b950dcca323">

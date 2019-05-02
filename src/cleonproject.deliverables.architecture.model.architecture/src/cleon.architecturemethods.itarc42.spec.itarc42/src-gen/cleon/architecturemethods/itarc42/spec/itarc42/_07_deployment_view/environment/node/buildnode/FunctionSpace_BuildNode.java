@@ -91,12 +91,18 @@ public class FunctionSpace_BuildNode {
     @IDynamicResourceExtension.MethodId("8900e24b-2abe-11e9-a3f8-336d9e792e17")
     public java.lang.String GetMaterialTypeName();
 
+    @IDynamicResourceExtension.MethodId("c2eb1394-6cef-11e9-a6d3-775c09e81e2d")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs();
+
   }
   
   public static interface IBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8ea2102d-2aba-11e9-a3f8-336d9e792e17")
     public java.lang.Boolean IsSupplied(final cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode buildNode);
+
+    @IDynamicResourceExtension.MethodId("c2eb1394-6cef-11e9-a6d3-775c09e81e2d")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList);
 
   }
   
@@ -111,6 +117,11 @@ public class FunctionSpace_BuildNode {
       return false;
     }
 
+    @Override
+    public List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      return buildNodeList.stream().filter(x -> x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
+    }
+
   }
   
   public static class BuildNodeFunctions {
@@ -121,8 +132,12 @@ public class FunctionSpace_BuildNode {
       return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNode).IsSupplied(buildNode);
     }
 
+    public static List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
+      return DynamicResourceUtil.invoke(IBuildNodeFunctionsImpl.class, BuildNodeFunctionsImpl.INSTANCE, buildNodeList).OnlyOs(buildNodeList);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,fhViHJfuTKoetOaQu6OZEbrnI/w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,cD5r35uh/+CX4Rk8Bh1rD9IAZMA=] */

@@ -10,6 +10,7 @@ public class Test_infrastructurePackage {
   public static final Resource TestInfrastructures_testUsers = new Resource("e52b3411-20d7-11e6-9368-9172b77c2cff");
   public static final Resource TestInfrastracture = new Resource("52ef47e0-6748-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestInfrastructures_testEnvironments = new Resource("af0e5029-6761-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource TestInfrastructures_testTools = new Resource("4271b479-6ce1-11e9-a6d3-775c09e81e2d");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class Test_infrastructurePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure,Q1tl8xhHLmvMFil660f+BE2eQ+Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure,ber503O0sm6T6RtGvJEoIPnAnng=] */

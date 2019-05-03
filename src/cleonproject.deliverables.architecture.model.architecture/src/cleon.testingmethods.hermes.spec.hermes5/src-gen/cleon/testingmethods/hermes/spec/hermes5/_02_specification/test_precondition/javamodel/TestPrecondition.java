@@ -60,11 +60,11 @@ public class TestPrecondition extends DynamicResource implements ITestPreconditi
   // relations
   
   @Override
-  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture selectTestInfrastructure() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure);
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture selectTestInfrastructure() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure);
   }
 
-  public TestPrecondition setTestInfrastructure(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture testInfrastructure) {
+  public TestPrecondition setTestInfrastructure(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture testInfrastructure) {
     _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, testInfrastructure);
     return this;
   }
@@ -87,9 +87,9 @@ public class TestPrecondition extends DynamicResource implements ITestPreconditi
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8e928c1d-516b-11e9-bb61-971a423d31e9,1r/q3dqRgQpQUoNfpW1dyoeypyU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8e928c1d-516b-11e9-bb61-971a423d31e9,DIR110//5ghMOG+x7s8p4rct56c=] */

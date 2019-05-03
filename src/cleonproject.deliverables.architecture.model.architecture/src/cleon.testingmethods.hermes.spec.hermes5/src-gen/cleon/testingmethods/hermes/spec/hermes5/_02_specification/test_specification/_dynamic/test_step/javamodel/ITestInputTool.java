@@ -6,6 +6,10 @@ public interface ITestInputTool extends cleon.testingmethods.hermes.spec.hermes5
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c024bfff-6a81-11e9-bd30-87fcf852dea7");
   
+  // relations
+  
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_tools.javamodel.ITestTool selectTestTool();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c024bfff-6a81-11e9-bd30-87fcf852dea7,EFZ2Ngl+hgdh/wL0yjI2rsIt6h4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c024bfff-6a81-11e9-bd30-87fcf852dea7,/lRpiTjUoqjb9JKBMVaa1ytXKJA=] */

@@ -14,6 +14,8 @@ public interface ITestInfrastructures extends cleon.testingmethods.hermes.spec.h
   
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_tools.javamodel.ITestTools selectTestTools();
   
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestDatas selectTestDatas();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,eTbfI13ifsjqApPEIp4sIaibmvg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,8RqID9TTcZO3aW40yd7gZ25WafU=] */

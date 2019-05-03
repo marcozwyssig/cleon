@@ -70,11 +70,11 @@ public class OverrideTestPrecondition extends DynamicResource implements IOverri
   }
     
   @Override
-  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture selectTestInfrastructure() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure);
+  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture selectTestInfrastructure() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure);
   }
 
-  public OverrideTestPrecondition setTestInfrastructure(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture testInfrastructure) {
+  public OverrideTestPrecondition setTestInfrastructure(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture testInfrastructure) {
     _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, testInfrastructure);
     return this;
   }
@@ -108,7 +108,7 @@ public class OverrideTestPrecondition extends DynamicResource implements IOverri
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.ITestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.AbstractTestPrecondition_testInfrastructure, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestPrecondition.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.OverrideTestPrecondition_testPrecondition, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -120,4 +120,4 @@ public class OverrideTestPrecondition extends DynamicResource implements IOverri
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,64ed6b39-67ea-11e9-9ec9-5fbc84faaeb1,TDaNS0j7S3XQ5XK1j1zNjrniUoY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,64ed6b39-67ea-11e9-9ec9-5fbc84faaeb1,t075jMfuRTMDMIGdWMHwgnaWiCY=] */

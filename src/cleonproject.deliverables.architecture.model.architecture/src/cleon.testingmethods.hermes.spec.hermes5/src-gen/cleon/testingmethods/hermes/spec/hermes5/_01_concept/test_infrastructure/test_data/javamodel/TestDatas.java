@@ -1,31 +1,31 @@
-package cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel;
+package cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class TestData extends DynamicResource implements ITestData {
+public class TestDatas extends DynamicResource implements ITestDatas {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestData> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestData>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestDatas> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestDatas>() {
     
     @Override
-    public ITestData create() {
-      return new TestData();
+    public ITestDatas create() {
+      return new TestDatas();
     }
     
     @Override
-    public ITestData create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new TestData(resourceRepository, resource);
+    public ITestDatas create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new TestDatas(resourceRepository, resource);
     }
   
   };
 
-  public TestData() {
-    super(ITestData.TYPE_ID);
+  public TestDatas() {
+    super(ITestDatas.TYPE_ID);
   }
   
-  public TestData(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITestData.TYPE_ID);
+  public TestDatas(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ITestDatas.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class TestData extends DynamicResource implements ITestData {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
 
-  public TestData setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+  public TestDatas setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class TestData extends DynamicResource implements ITestData {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public TestData setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+  public TestDatas setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class TestData extends DynamicResource implements ITestData {
     return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public TestData setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
+  public TestDatas setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -85,8 +85,18 @@ public class TestData extends DynamicResource implements ITestData {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public TestData setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+  public TestDatas setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData> selectTestData() {
+    return _getList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.Test_dataPackage.TestDatas_testData);
+  }
+
+  public TestDatas setTestData(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData> testData) {
+    _setList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.Test_dataPackage.TestDatas_testData, testData);
     return this;
   }
     
@@ -95,7 +105,7 @@ public class TestData extends DynamicResource implements ITestData {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public TestData setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public TestDatas setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -111,8 +121,15 @@ public class TestData extends DynamicResource implements ITestData {
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.Test_dataPackage.TestDatas_testData, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestDatas selectToMeTestData(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestDatas.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.Test_dataPackage.TestDatas_testData, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0a539186-eabf-11e5-838a-6dbe7118dd11,5yPWt+rXWk0Ynfel5kIrW5EmHiU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0a539186-eabf-11e5-838a-6dbe7118dd11,GIzIBF5i8hGihmxvxdmMsNR0ngU=] */

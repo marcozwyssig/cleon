@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class EntityDekomposition extends DynamicResource implements IEntityDekomposition {
+public class EntityDecomposition extends DynamicResource implements IEntityDecomposition {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEntityDekomposition> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEntityDekomposition>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEntityDecomposition> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IEntityDecomposition>() {
     
     @Override
-    public IEntityDekomposition create() {
-      return new EntityDekomposition();
+    public IEntityDecomposition create() {
+      return new EntityDecomposition();
     }
     
     @Override
-    public IEntityDekomposition create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new EntityDekomposition(resourceRepository, resource);
+    public IEntityDecomposition create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new EntityDecomposition(resourceRepository, resource);
     }
   
   };
 
-  public EntityDekomposition() {
-    super(IEntityDekomposition.TYPE_ID);
+  public EntityDecomposition() {
+    super(IEntityDecomposition.TYPE_ID);
   }
   
-  public EntityDekomposition(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IEntityDekomposition.TYPE_ID);
+  public EntityDecomposition(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IEntityDecomposition.TYPE_ID);
   }
 
   // attributes
@@ -43,11 +43,11 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
   
   @Override
   public cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity selectInto() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDekomposition_into);
+    return _getSingle(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDecomposition_into);
   }
 
-  public EntityDekomposition setInto(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity into) {
-    _setSingle(cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDekomposition_into, into);
+  public EntityDecomposition setInto(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity into) {
+    _setSingle(cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDecomposition_into, into);
     return this;
   }
     
@@ -56,7 +56,7 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
     return _getSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock);
   }
 
-  public EntityDekomposition setIntoBuildingBlock(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock intoBuildingBlock) {
+  public EntityDecomposition setIntoBuildingBlock(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock intoBuildingBlock) {
     _setSingle(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, intoBuildingBlock);
     return this;
   }
@@ -66,7 +66,7 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public EntityDekomposition setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public EntityDecomposition setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -77,16 +77,16 @@ public class EntityDekomposition extends DynamicResource implements IEntityDekom
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDekomposition_into, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDecomposition_into, visitor);
     _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition selectToMeInto(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDekomposition_into, object.getResource());
+  public static cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition selectToMeInto(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.entities.EntitiesPackage.EntityDecomposition_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,XrTupIQcZbcJJVKDZobkG/qeS3I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59da4c30-266c-11e5-95dc-8f1cdbd9db54,hEFt4CfUaot4epw3cMY7uwHI2Mw=] */

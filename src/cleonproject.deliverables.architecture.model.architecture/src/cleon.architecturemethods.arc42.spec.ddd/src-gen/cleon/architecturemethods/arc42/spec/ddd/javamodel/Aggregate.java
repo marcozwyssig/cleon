@@ -80,21 +80,21 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition selectDomainServices() {
-    return _getSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices);
+  public cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition selectDomainServices() {
+    return _getSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices);
   }
 
-  public Aggregate setDomainServices(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition domainServices) {
+  public Aggregate setDomainServices(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition domainServices) {
     _setSingle(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices, domainServices);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition> selectEntities() {
-    return _getList(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition> selectEntities() {
+    return _getList(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities);
   }
 
-  public Aggregate setEntities(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition> entities) {
+  public Aggregate setEntities(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition> entities) {
     _setList(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities, entities);
     return this;
   }
@@ -120,21 +120,21 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition> selectExceptions() {
-    return _getList(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition> selectExceptions() {
+    return _getList(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions);
   }
 
-  public Aggregate setExceptions(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition> exceptions) {
+  public Aggregate setExceptions(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition> exceptions) {
     _setList(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions, exceptions);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition> selectRepository() {
-    return _getList(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition> selectRepository() {
+    return _getList(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository);
   }
 
-  public Aggregate setRepository(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition> repository) {
+  public Aggregate setRepository(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition> repository) {
     _setList(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository, repository);
     return this;
   }
@@ -160,11 +160,11 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition> selectValueObjects() {
-    return _getList(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects);
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition> selectValueObjects() {
+    return _getList(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects);
   }
 
-  public Aggregate setValueObjects(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition> valueObjects) {
+  public Aggregate setValueObjects(java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition> valueObjects) {
     _setList(cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects, valueObjects);
     return this;
   }
@@ -179,36 +179,36 @@ public class Aggregate extends DynamicResource implements IAggregate {
     // relations
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageInClassifierDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.packages.PackagesPackage.Package_decomposeClasses, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnumDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_enums, visitor);
     _acceptList(cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_eventAggregator, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.packages.PackagesPackage.Package_subPackages, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects, visitor);
+    _acceptList(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeEntities(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeEntities(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_entities, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeExceptions(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeExceptions(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_exceptions, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeValueObjects(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeValueObjects(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_valueObjects, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeRepository(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeRepository(cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_repository, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeDomainServices(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition object) {
+  public static cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate selectToMeDomainServices(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.ddd.javamodel.IAggregate.class, cleon.architecturemethods.arc42.spec.ddd.DddPackage.Aggregate_domainServices, object.getResource());
   }
   
@@ -221,4 +221,4 @@ public class Aggregate extends DynamicResource implements IAggregate {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,biJ9E99MopD8wDRz/CgO6r8Jaew=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,ed34vZ/HG/AHF352/tg+Gz7DkyM=] */

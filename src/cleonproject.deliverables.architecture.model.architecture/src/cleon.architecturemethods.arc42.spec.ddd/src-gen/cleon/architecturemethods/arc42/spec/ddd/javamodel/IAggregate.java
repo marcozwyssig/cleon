@@ -8,15 +8,15 @@ public interface IAggregate extends cleon.modelinglanguages.uml.spec.uml2.struct
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDekomposition> selectEntities();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition> selectEntities();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDekomposition> selectExceptions();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition> selectExceptions();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDekomposition> selectValueObjects();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition> selectValueObjects();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDekomposition> selectRepository();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition> selectRepository();
   
-  public cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDekomposition selectDomainServices();
+  public cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition selectDomainServices();
   
   public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnumDekomposition> selectEnums();
   
@@ -24,4 +24,4 @@ public interface IAggregate extends cleon.modelinglanguages.uml.spec.uml2.struct
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,ViI/MzlvyutzC5zByqx6428HNlo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,a6i1sadYvKQ1X7N7ZsYC5AFoGL4=] */

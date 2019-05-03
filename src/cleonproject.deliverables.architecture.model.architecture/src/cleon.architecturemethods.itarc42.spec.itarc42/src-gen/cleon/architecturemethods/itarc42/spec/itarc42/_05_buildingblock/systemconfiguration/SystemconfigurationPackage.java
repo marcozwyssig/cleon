@@ -4,8 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class SystemconfigurationPackage {
   
-  public static final Resource FunctionSpace_aE_SystemConfiguration_AbstractSystemConfiguration = new Resource("27b9d0bc-020d-11e9-b327-17da2da63a8f");
-  public static final Resource AbstractSystemConfiguration = new Resource("13ab12f8-0218-11e9-b327-17da2da63a8f");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfiguration = new Resource("27b9d0bc-020d-11e9-b327-17da2da63a8f");
   public static final Resource WindowsSystemConfiguration = new Resource("b0a9a475-021f-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WindowsSystemConfiguration = new Resource("bbce4593-021f-11e9-b327-17da2da63a8f");
   public static final Resource ActiveDirectorySystemConfiguration = new Resource("162a98ba-0220-11e9-b327-17da2da63a8f");
@@ -83,6 +82,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_CentOsSystemConfiguration = new Resource("82aabb1f-1d8a-11e9-b601-db75aa6f89a4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DeviceSystemConfiguration = new Resource("dbb04b54-2abd-11e9-a3f8-336d9e792e17");
   public static final Resource PhysicalMachineSystemConfiguration = new Resource("79488947-2afd-11e9-9692-65766bc2daa5");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_NamedSystemConfiguration = new Resource("95ff2d7f-6cf0-11e9-a6d3-775c09e81e2d");
   
   /* Begin Protected Region [[user]] */
   
@@ -103,4 +103,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration,DJXJ8vPyaRtsoEJWQFhOIJfXVkE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration,36bUxmGs/S7XDIt19J7ZKsbsELg=] */

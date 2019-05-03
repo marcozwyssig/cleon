@@ -4,10 +4,7 @@
     <resource statement-guid="4c996c3f-6cee-11e9-a6d3-775c09e81e2d" type="resource" guid="30297490-6cee-11e9-a6d3-775c09e81e2d" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="7ecd0381-e0fe-11e8-8499-a3b0fb3cad90" type="resource" guid="58022544-01d8-11e9-9c9d-8d52d6745026" />
-  </predicate>
-  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="7fb9d484-e0fe-11e8-8499-a3b0fb3cad90" type="literal">Windows Server 2016 BareMetal</object>
+    <object statement-guid="7ecd0381-e0fe-11e8-8499-a3b0fb3cad90" type="resource" guid="b0a9a475-021f-11e9-b327-17da2da63a8f" />
   </predicate>
   <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
     <object statement-guid="4c996c3f-6cee-11e9-a6d3-775c09e81e2d">
@@ -23,6 +20,9 @@
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="c03ae927-1bfe-11e9-9896-651e5faa32a4">
+    <object statement-guid="c9572425-6cf1-11e9-a6d3-775c09e81e2d" type="resource" guid="8e9fc8a4-1bfe-11e9-9896-651e5faa32a4" />
   </predicate>
 </resource>
 

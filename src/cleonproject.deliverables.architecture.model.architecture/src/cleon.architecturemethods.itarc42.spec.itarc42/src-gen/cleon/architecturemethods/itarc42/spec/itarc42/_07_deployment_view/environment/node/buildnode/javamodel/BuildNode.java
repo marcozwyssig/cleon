@@ -13,7 +13,7 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
   
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IAbstractSystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration, object.getResource());
   }
   
@@ -38,4 +38,4 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,2868n2mAtGqGPA+EAOpOLLicCRE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,Dx2O8q4+gWkZ6Kwo5a8rnqeErNA=] */

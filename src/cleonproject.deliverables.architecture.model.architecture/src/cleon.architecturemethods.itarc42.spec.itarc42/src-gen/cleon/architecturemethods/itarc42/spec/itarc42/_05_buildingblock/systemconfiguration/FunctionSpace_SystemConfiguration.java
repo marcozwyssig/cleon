@@ -18,7 +18,7 @@ public class FunctionSpace_SystemConfiguration {
   /* End Protected Region   [[25454e48-020d-11e9-b327-17da2da63a8f]] */
 
 
-  public static interface IAbstractSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("30b54ff7-020d-11e9-b327-17da2da63a8f")
     public java.lang.String GetType();
@@ -40,21 +40,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IAbstractSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractSystemConfigurationFunctionsImpl implements IAbstractSystemConfigurationFunctionsImpl {
+  public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
 
-    public static final IAbstractSystemConfigurationFunctionsImpl INSTANCE = new AbstractSystemConfigurationFunctionsImpl();
+    public static final ISystemConfigurationFunctionsImpl INSTANCE = new SystemConfigurationFunctionsImpl();
 
-    private AbstractSystemConfigurationFunctionsImpl() {}
+    private SystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class AbstractSystemConfigurationFunctions {
+  public static class SystemConfigurationFunctions {
 
-    private AbstractSystemConfigurationFunctions() {}
+    private SystemConfigurationFunctions() {}
 
   }
 
@@ -1242,6 +1242,40 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
+  public static interface INamedSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("abd5ff2b-6cf0-11e9-a6d3-775c09e81e2d")
+    public java.lang.String GetType();
+
+    @IDynamicResourceExtension.MethodId("abd5ff2e-6cf0-11e9-a6d3-775c09e81e2d")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("abd5ff31-6cf0-11e9-a6d3-775c09e81e2d")
+    public java.lang.String GetStereotypeName();
+
+    @IDynamicResourceExtension.MethodId("abd5ff34-6cf0-11e9-a6d3-775c09e81e2d")
+    public java.lang.String GetIncludePath();
+
+  }
+  
+  public static interface INamedSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedSystemConfigurationFunctionsImpl implements INamedSystemConfigurationFunctionsImpl {
+
+    public static final INamedSystemConfigurationFunctionsImpl INSTANCE = new NamedSystemConfigurationFunctionsImpl();
+
+    private NamedSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class NamedSystemConfigurationFunctions {
+
+    private NamedSystemConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,9gNLiA+xBH1rhSsn/7++GKkGycc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,7iWsuv/ylP5v1yY6BRadrVNntZ8=] */

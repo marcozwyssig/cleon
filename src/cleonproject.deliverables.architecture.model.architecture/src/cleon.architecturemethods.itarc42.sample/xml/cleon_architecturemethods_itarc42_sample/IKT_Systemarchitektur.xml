@@ -688,7 +688,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90"/>]</db:para>
+								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
@@ -733,14 +733,14 @@
 					</db:section>
 				</db:section>
 				<db:section xml:id="ea.eadb5dee-e0fe-11e8-8499-a3b0fb3cad90">
-					<db:title>Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows Server 2016 BareMetal beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
 					<db:itemizedlist>
 						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows Server 2016 BareMetal zu anderen Bausteinen (in beide Richtungen)</db:para>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) zu anderen Bausteinen (in beide Richtungen)</db:para>
 						</db:listitem>
 						<db:listitem>
 							<db:para>Erfüllte Anforderungen</db:para>
@@ -751,7 +751,7 @@
 						
 						
 						
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows Server 2016 BareMetal tabellarisch aufgelistet:</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) tabellarisch aufgelistet:</db:para>
 						<db:informaltable style="HERMES 5">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -764,7 +764,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Windows Server 2016 BareMetal -> HPE Server (HPE)</db:para>
+										<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) -> HPE Server (HPE)</db:para>
 									</db:td>
 									<db:td>
 									</db:td>
@@ -778,7 +778,7 @@
 						
 						
 						
-						<db:para>Der Baustein Windows Server 2016 BareMetal erfüllt keine expliziten Anforderungen.</db:para>
+						<db:para>Der Baustein Windows 2016 Standard Physical (WIN-2016-STD-PHY) erfüllt keine expliziten Anforderungen.</db:para>
 						
 					</db:section>
 				</db:section>
@@ -818,7 +818,7 @@
 				
 			</db:section>
 			<db:section xml:id="ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90">
-				<db:title>Ebene 4: Windows Server 2016 BareMetal &lt;SystemConfiguration&gt; (Whitebox)</db:title>
+				<db:title>Ebene 4: Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
 				
 				
 				
@@ -942,7 +942,7 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>e227a860-675d-11e9-9ec9-5fbc84faaeb1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+									<db:para>rsa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2-101</db:para>
@@ -965,7 +965,7 @@
 						</db:tbody>
 					</db:informaltable>
 					<db:section xml:id="ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1">
-						<db:title>e227a860-675d-11e9-9ec9-5fbc84faaeb1</db:title>
+						<db:title>rsa</db:title>
 						
 						<db:para>sdfadf</db:para>
 						
@@ -991,7 +991,7 @@
 										<db:para>A3</db:para>
 									</db:td>
 									<db:td>
-										<db:para>grp-act-3-1-e227a860-675d-11e9-9ec9-5fbc84faaeb1</db:para>
+										<db:para>grp-act-3-1-rsa</db:para>
 									</db:td>
 									<db:td>
 										<db:para>1</db:para>

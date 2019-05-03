@@ -8,8 +8,8 @@ public interface ITestConnection extends ch.actifsource.core.javamodel.IResource
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode selectNode();
+  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode selectNode();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,jOg5Fb8b21orB7t/g7DYiI4YGBU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,VNYHLru2izOCIYqzP3u0G2LrC5A=] */

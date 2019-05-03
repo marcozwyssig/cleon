@@ -1168,6 +1168,60 @@
 				
 			</db:section>
 		</db:section>
+		<db:section xml:id="ea.d2abf2e9-6dd0-11e9-a28a-7b5312a3173e">
+			<db:title>Bandbreitenbedarf und QoS f&#252;r dddd</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="25%" />
+				<db:col width="25%" />
+				<db:col width="25%" />
+				<db:col width="25%" />
+				<db:thead>
+					<db:tr>
+						<db:th>System-Konfiguration</db:th>
+						<db:th>Geschätzte Bandbreitenbedarf [Kbit/s]</db:th>
+						<db:th>Geschätzte Bandbreite Durchschnitt [Kbit/s]</db:th>
+						<db:th>Service-Klasse</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Windows Server Standard Virtual</db:para>
+						</db:td>
+						<db:td>
+							<db:para>1</db:para>
+						</db:td>
+						<db:td>
+							<db:para>1</db:para>
+						</db:td>
+						<db:td>
+							<db:para>AF21 - Low Latency Data</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td></db:td>
+						<db:td>
+							<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+						</db:td>
+						<db:td>
+							<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+						</db:td>				
+						<db:td></db:td>							
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			<db:section xml:id="ea.d4aca55a-6dd0-11e9-a28a-7b5312a3173e">
+				<db:title>Windows Server Standard Virtual</db:title>
+				
+				
+				
+				
+				
+			</db:section>
+		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.30a9ff56-d0b7-11e8-b005-f7630e4c29c0">
 		<db:title>Entwurfsentscheidungen</db:title>

@@ -8,9 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[3aa83cb8-0aa0-11e9-8a91-633e556ac68f,imports]] */
-import cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode;
-import javafx.util.Pair;
-import java.util.ArrayList;
+import cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode;
 /* End Protected Region   [[3aa83cb8-0aa0-11e9-8a91-633e556ac68f,imports]] */
 
 public class FunctionSpace_Deployment_Plantuml {
@@ -26,7 +24,7 @@ public class FunctionSpace_Deployment_Plantuml {
     public java.lang.String RenderUmlElement();
 
     @IDynamicResourceExtension.MethodId("4b8d60da-0aac-11e9-8a91-633e556ac68f")
-    public cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode GetNode();
+    public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode GetNode();
 
     @IDynamicResourceExtension.MethodId("d316009e-0eb3-11e9-9f19-6d15636f4ecc")
     public java.lang.Boolean onlyOneLayer();
@@ -127,7 +125,7 @@ public class FunctionSpace_Deployment_Plantuml {
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("5254da7b-18e9-11e9-84df-097eeec74d2d")
-    public java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode> nodeList);
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode> nodeList);
 
   }
   
@@ -138,7 +136,7 @@ public class FunctionSpace_Deployment_Plantuml {
     private NodeFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+    public java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[5254da7b-18e9-11e9-84df-097eeec74d2d]] */
     	StringBuilder builder = new StringBuilder();
     	INode last = null;
@@ -165,7 +163,7 @@ public class FunctionSpace_Deployment_Plantuml {
 
     private NodeFunctions() {}
 
-    public static java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+    public static java.lang.String RenderHidden(final List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode> nodeList) {
       return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).RenderHidden(nodeList);
     }
 
@@ -198,4 +196,4 @@ public class FunctionSpace_Deployment_Plantuml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aa83cb8-0aa0-11e9-8a91-633e556ac68f,ILYO2880mZCVZU/DzLiybv5hIVM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aa83cb8-0aa0-11e9-8a91-633e556ac68f,HNC+2ljI1bKnFCPjJuxXamn0Xw0=] */

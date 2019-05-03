@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.doc" label="cleon.common.doc" version="0.4.94">
+<feature id="cleon.common.doc" label="cleon.common.doc" version="0.4.95">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -467,9 +467,9 @@ of their respective owners.
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.4.94" unpack="false"/>
-   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.94" unpack="false"/>
-   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.4.94" unpack="false"/>
-   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.4.94" unpack="false"/>   
+   <plugin id="cleon.common.doc.spec.doc.builtin" download-size="0" install-size="0" version="0.4.95" unpack="false"/>
+   <plugin id="cleon.common.doc.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.95" unpack="false"/>
+   <plugin id="cleon.common.doc.template.markdown.builtin" download-size="0" install-size="0" version="0.4.95" unpack="false"/>
+   <plugin id="cleon.common.doc.template.docbook.builtin" download-size="0" install-size="0" version="0.4.95" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,d2caf4fc-3b8a-11e5-b8db-7513250f5f90,Hash] -->

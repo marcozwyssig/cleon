@@ -31,21 +31,21 @@ public class Disk_Configuration extends DynamicResource implements IDisk_Configu
   // relations
   
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IDisk selectDisk() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk selectDisk() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk);
   }
 
-  public Disk_Configuration setDisk(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IDisk disk) {
+  public Disk_Configuration setDisk(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk disk) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, disk);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration selectMachineConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration selectMachineConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration);
   }
 
-  public Disk_Configuration setMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration machineConfiguration) {
+  public Disk_Configuration setMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration machineConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration, machineConfiguration);
     return this;
   }
@@ -74,21 +74,21 @@ public class Disk_Configuration extends DynamicResource implements IDisk_Configu
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectToMeMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectToMeMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_machineConfiguration, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectToMeDisk(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IDisk object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration> selectToMeDisk(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Disk_aE_Configuration_disk, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,7+hYNXxWkUV9RUOSIhsrJgzLpaQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2399830e-2b03-11e9-9692-65766bc2daa5,w103K8tOlBNmPTNZQJcNGTgsYeM=] */

@@ -8,12 +8,12 @@ public interface ICPU_Configuration extends ch.actifsource.core.javamodel.IResou
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration selectMachineConfiguration();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration selectMachineConfiguration();
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.ICPU selectCpu();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU selectCpu();
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.machinesystemconfiguration.javamodel.ICore selectCore();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore selectCore();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,EJkHbu5KT9zRva/sqxLsdt2TJy4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,HE3eth/QIAjT1fqnUIak4/zc5II=] */

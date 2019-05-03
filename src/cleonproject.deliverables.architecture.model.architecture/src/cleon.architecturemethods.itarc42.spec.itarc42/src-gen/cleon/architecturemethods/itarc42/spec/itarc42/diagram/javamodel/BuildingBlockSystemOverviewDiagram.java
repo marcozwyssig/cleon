@@ -52,11 +52,11 @@ public class BuildingBlockSystemOverviewDiagram extends DynamicResource implemen
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem selectSystem() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystem selectSystem() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system);
   }
 
-  public BuildingBlockSystemOverviewDiagram setSystem(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem system) {
+  public BuildingBlockSystemOverviewDiagram setSystem(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystem system) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system, system);
     return this;
   }
@@ -78,15 +78,15 @@ public class BuildingBlockSystemOverviewDiagram extends DynamicResource implemen
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.diagram.javamodel.IBuildingBlockSystemOverviewDiagram> selectToMeSystem(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystem object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.diagram.javamodel.IBuildingBlockSystemOverviewDiagram> selectToMeSystem(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystem object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.diagram.javamodel.IBuildingBlockSystemOverviewDiagram.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,+sqjZuKXOTGCYgB0fOzBtM1oN4k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,se/XzeFNyVaBXDItrgUgrX3pUHg=] */

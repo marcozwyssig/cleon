@@ -81,11 +81,11 @@ public class SystemComponentConcept extends DynamicResource implements ISystemCo
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent selectSystemComponent() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent selectSystemComponent() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent);
   }
 
-  public SystemComponentConcept setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent systemComponent) {
+  public SystemComponentConcept setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent systemComponent) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, systemComponent);
     return this;
   }
@@ -120,16 +120,16 @@ public class SystemComponentConcept extends DynamicResource implements ISystemCo
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.javamodel.ISystemComponentConcept> selectToMeSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.javamodel.ISystemComponentConcept> selectToMeSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,XGOPpJLElLCIgP0/z5yCgDoFgLI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,q5exw+fZbRRR5Zam5r20j+KxCmI=] */

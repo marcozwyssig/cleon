@@ -158,11 +158,11 @@ public class ActivitySecurityGroup extends DynamicResource implements IActivityS
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration selectSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration);
   }
 
-  public ActivitySecurityGroup setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration systemConfiguration) {
+  public ActivitySecurityGroup setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration, systemConfiguration);
     return this;
   }
@@ -205,14 +205,14 @@ public class ActivitySecurityGroup extends DynamicResource implements IActivityS
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IActor.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.SecurityGroups_responsible, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.ISubnetGroup.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.SecurityGroups_subnetGroup, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IActivitySecurityGroup> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IActivitySecurityGroup> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IActivitySecurityGroup.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.ActivitySecurityGroup_systemConfiguration, object.getResource());
   }
   
@@ -221,4 +221,4 @@ public class ActivitySecurityGroup extends DynamicResource implements IActivityS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0ef24c7d-1d9a-11e9-b601-db75aa6f89a4,X3IZVJj7rznO9CimzaPz4QP1kMk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0ef24c7d-1d9a-11e9-b601-db75aa6f89a4,QUrg2x5AHmQEHTif54LNd/xSYJg=] */

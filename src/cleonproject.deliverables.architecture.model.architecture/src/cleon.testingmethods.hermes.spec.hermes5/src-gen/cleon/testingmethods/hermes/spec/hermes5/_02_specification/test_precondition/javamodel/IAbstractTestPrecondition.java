@@ -6,10 +6,6 @@ public interface IAbstractTestPrecondition extends cleon.common.resources.spec.r
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("491bb959-6b2b-11e9-bd30-87fcf852dea7");
   
-  // relations
-  
-  public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture selectTestInfrastructure();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,491bb959-6b2b-11e9-bd30-87fcf852dea7,qLZ7UG4rzLYqSXqe2zdtWx+yZEM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,491bb959-6b2b-11e9-bd30-87fcf852dea7,y4N4vAzTHpJKL1scbDsCPx8TuZo=] */

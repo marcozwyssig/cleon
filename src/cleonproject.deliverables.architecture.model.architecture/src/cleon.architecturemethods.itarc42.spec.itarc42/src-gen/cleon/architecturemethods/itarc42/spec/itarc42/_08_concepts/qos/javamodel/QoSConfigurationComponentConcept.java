@@ -109,11 +109,11 @@ public class QoSConfigurationComponentConcept extends DynamicResource implements
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration selectSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_systemConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_systemConfiguration);
   }
 
-  public QoSConfigurationComponentConcept setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration systemConfiguration) {
+  public QoSConfigurationComponentConcept setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_systemConfiguration, systemConfiguration);
     return this;
   }
@@ -151,7 +151,7 @@ public class QoSConfigurationComponentConcept extends DynamicResource implements
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.qos.javamodel.IServiceClass.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.qos.QosPackage.QoSConfigurationComponentConcept_serviceClass, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_systemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -161,4 +161,4 @@ public class QoSConfigurationComponentConcept extends DynamicResource implements
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,39818d2e-1d88-11e9-b601-db75aa6f89a4,JX6U7yM4KKOsz+tRRwosDDprAUk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,39818d2e-1d88-11e9-b601-db75aa6f89a4,8qpQSRNQABQ7li8jxujZ3yMb6WA=] */

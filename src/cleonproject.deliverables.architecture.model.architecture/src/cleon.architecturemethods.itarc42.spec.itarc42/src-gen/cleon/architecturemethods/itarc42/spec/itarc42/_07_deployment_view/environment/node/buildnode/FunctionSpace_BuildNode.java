@@ -119,7 +119,7 @@ public class FunctionSpace_BuildNode {
 
     @Override
     public List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.itarc42.spec.itarc42._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
-      return buildNodeList.stream().filter(x -> x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
+      return buildNodeList.stream().filter(x -> x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
   }
@@ -140,4 +140,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,cD5r35uh/+CX4Rk8Bh1rD9IAZMA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,xGhjfGijm5brS2R9mqqq4f/919E=] */

@@ -71,11 +71,11 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration selectSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration);
   }
 
-  public BackupSystemConfiguration setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration systemConfiguration) {
+  public BackupSystemConfiguration setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, systemConfiguration);
     return this;
   }
@@ -109,14 +109,14 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_backupConfiguration, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, object.getResource());
   }
   
@@ -129,4 +129,4 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,zYQJX0rlfmG0FCd+VKs0pePPVFQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,berJq5H5XDCjqq25Hv6vvjSocK8=] */

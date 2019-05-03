@@ -8,10 +8,10 @@ public interface IAvailabilitySystemConfiguration extends ch.actifsource.core.ja
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration selectSystemConfiguration();
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration();
   
   public cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.javamodel.IAvailabilityConfiguration selectAvailability();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,lxz+w25dRnx1ALIUep04IISMRsg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,9VuvukOB0buqcTWEIJ9yM/tlcGI=] */

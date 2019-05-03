@@ -41,11 +41,11 @@ public class Role extends DynamicResource implements IRole {
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.INamedSystemComponent selectSystemComponent() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.INamedSystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.INamedSystemComponent selectSystemComponent() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.INamedSystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent);
   }
 
-  public Role setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.INamedSystemComponent systemComponent) {
+  public Role setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.INamedSystemComponent systemComponent) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent, systemComponent);
     return this;
   }
@@ -75,14 +75,14 @@ public class Role extends DynamicResource implements IRole {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IActivity.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_hasActivities, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.INamedSystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.INamedSystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole> selectToMeSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.INamedSystemComponent object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole> selectToMeSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.INamedSystemComponent object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.javamodel.IRole.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.security.rbac.RbacPackage.Role_systemComponent, object.getResource());
   }
   
@@ -91,4 +91,4 @@ public class Role extends DynamicResource implements IRole {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,yXTPoCuHFRqZ9U0mZedHubNliak=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,4C75EorZAaFGQN12e7Xu4GLbQ7k=] */

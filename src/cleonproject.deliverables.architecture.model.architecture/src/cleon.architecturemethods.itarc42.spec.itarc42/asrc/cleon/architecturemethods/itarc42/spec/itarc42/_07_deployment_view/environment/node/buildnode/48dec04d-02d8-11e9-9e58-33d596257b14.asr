@@ -886,7 +886,7 @@
                 <object statement-guid="c2eb3aa7-6cef-11e9-a6d3-775c09e81e2d" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
+                <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectSystemConfiguration() instanceof cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
               </predicate>
             </resource>
           </object>

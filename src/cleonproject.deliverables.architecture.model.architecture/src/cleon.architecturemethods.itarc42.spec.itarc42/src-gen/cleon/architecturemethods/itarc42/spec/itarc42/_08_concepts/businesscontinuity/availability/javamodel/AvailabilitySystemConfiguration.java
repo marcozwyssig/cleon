@@ -61,11 +61,11 @@ public class AvailabilitySystemConfiguration extends DynamicResource implements 
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration selectSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration);
   }
 
-  public AvailabilitySystemConfiguration setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration systemConfiguration) {
+  public AvailabilitySystemConfiguration setSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration, systemConfiguration);
     return this;
   }
@@ -98,14 +98,14 @@ public class AvailabilitySystemConfiguration extends DynamicResource implements 
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.javamodel.IAvailabilityConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_availability, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.javamodel.IAvailabilitySystemConfiguration> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.javamodel.IAvailabilitySystemConfiguration> selectToMeSystemConfiguration(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.javamodel.IAvailabilitySystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration, object.getResource());
   }
   
@@ -114,4 +114,4 @@ public class AvailabilitySystemConfiguration extends DynamicResource implements 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,YE/H5NdVp9u8jdXjeF8dItkjn/E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,fn+JTD0GZQzIWi+R3hsRaXiG7Gw=] */

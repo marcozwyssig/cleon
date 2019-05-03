@@ -91,11 +91,11 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent selectSystemComponent() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent);
+  public cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent selectSystemComponent() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent);
   }
 
-  public SegmentationSystemComponentConcept setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent systemComponent) {
+  public SegmentationSystemComponentConcept setSystemComponent(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent systemComponent) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, systemComponent);
     return this;
   }
@@ -131,7 +131,7 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.segmentation.javamodel.ISecurityZone.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42._05_buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42._08_concepts._08_conceptsPackage.SystemComponentConcept_systemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -143,4 +143,4 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,7INLmIygurfHR5bPveQv8TiKWp8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,kZQExJ9zTp5d3LFIxxihfDYir2w=] */

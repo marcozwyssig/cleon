@@ -1,4 +1,4 @@
-package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.model.javamodel;
+package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IModel extends ch.actifsource.core.javamodel.INamedResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,Bhr9HoC+Vfy8sOWSAk+uzRy7134=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eab1ce0a-1005-11e5-865e-55f33dbc76dc,5Bg4bA2brE7s+X80/F+/zjCI0wQ=] */

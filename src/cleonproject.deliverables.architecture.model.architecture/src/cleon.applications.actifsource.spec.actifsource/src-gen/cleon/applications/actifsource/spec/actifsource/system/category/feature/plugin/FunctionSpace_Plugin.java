@@ -150,6 +150,9 @@ public class FunctionSpace_Plugin {
     @IDynamicResourceExtension.MethodId("6062fd26-d093-11e8-b005-f7630e4c29c0")
     public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetDirectDependingBuildingBlocks();
 
+    @IDynamicResourceExtension.MethodId("1f04e30a-6f63-11e9-ad7a-a97bad6ad10a")
+    public java.lang.String GetBuildingBlockName();
+
   }
   
   public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -196,4 +199,4 @@ public class FunctionSpace_Plugin {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,Vh1alAyKxNkkEgXPE6RFHlsMjEE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,fT91kv/1S0liyUl8+ceOdLL7VDg=] */

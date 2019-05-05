@@ -1,4 +1,4 @@
-package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.specification.javamodel;
+package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -235,4 +235,4 @@ public class Specification extends DynamicResource implements ISpecification {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,yq8O7KfzUHBYQN5IwL158B1rutc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,HlWU3141HE4+0NA2wVYPg08k+yk=] */

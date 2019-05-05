@@ -10,6 +10,10 @@ public interface IUmlDiagram extends cleon.common.doc.spec.doc.paragraph.javamod
   
   public java.lang.String selectPath();
   
+  public java.lang.Boolean selectLeftToRight();
+  
+  public java.lang.String selectScale();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a6fe24f-eaac-11e8-88d3-bfc6b992bdec,seI8ioFtWP7MlpwVnb9h1BGMyJI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a6fe24f-eaac-11e8-88d3-bfc6b992bdec,IU8NkjMULMKgb4OgzFBeC73h3Ck=] */

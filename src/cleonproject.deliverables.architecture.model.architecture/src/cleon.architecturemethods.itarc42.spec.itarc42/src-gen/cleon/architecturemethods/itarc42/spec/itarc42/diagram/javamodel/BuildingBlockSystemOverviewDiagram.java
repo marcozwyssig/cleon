@@ -31,12 +31,30 @@ public class BuildingBlockSystemOverviewDiagram extends DynamicResource implemen
   // attributes
   
   @Override
+  public java.lang.Boolean selectLeftToRight() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight);
+  }
+    
+  public void setLeftToRight(java.lang.Boolean leftToRight) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, leftToRight);
+  }
+
+  @Override
   public java.lang.String selectPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path);
   }
     
   public void setPath(java.lang.String path) {
      _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, path);
+  }
+
+  @Override
+  public java.lang.String selectScale() {
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale);
+  }
+    
+  public void setScale(java.lang.String scale) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, scale);
   }
 
   // relations
@@ -75,7 +93,9 @@ public class BuildingBlockSystemOverviewDiagram extends DynamicResource implemen
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystem.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.BuildingBlockSystemOverviewDiagram_system, visitor);
@@ -89,4 +109,4 @@ public class BuildingBlockSystemOverviewDiagram extends DynamicResource implemen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,ZiWONdZ6wYrPiYjJk7FAzMznup4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,/lVwI3wUP+ruJ2sjHo5OeSQ78p8=] */

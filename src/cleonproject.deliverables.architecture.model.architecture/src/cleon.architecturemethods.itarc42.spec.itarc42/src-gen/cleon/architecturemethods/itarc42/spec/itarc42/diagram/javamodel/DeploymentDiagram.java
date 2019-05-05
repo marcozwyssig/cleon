@@ -32,11 +32,11 @@ public class DeploymentDiagram extends DynamicResource implements IDeploymentDia
   
   @Override
   public java.lang.Boolean selectLeftToRight() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_leftToRight);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight);
   }
     
   public void setLeftToRight(java.lang.Boolean leftToRight) {
-     _setSingleAttribute(cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_leftToRight, leftToRight);
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, leftToRight);
   }
 
   @Override
@@ -68,11 +68,11 @@ public class DeploymentDiagram extends DynamicResource implements IDeploymentDia
 
   @Override
   public java.lang.String selectScale() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_scale);
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale);
   }
     
   public void setScale(java.lang.String scale) {
-     _setSingleAttribute(cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_scale, scale);
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, scale);
   }
 
   // relations
@@ -101,15 +101,15 @@ public class DeploymentDiagram extends DynamicResource implements IDeploymentDia
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_leftToRight, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_onlyOneLayer, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_renderHidden, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.itarc42.spec.itarc42.diagram.DiagramPackage.DeploymentDiagram_scale, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,Hlma1PBLsqjLZYME0/YP1/8JSH8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,yjO9aJzlVd2Tt6sj5jbDBJBx0zg=] */

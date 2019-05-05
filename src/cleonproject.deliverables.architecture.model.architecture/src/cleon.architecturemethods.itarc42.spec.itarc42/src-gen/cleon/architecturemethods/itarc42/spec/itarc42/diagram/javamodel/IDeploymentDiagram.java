@@ -10,12 +10,8 @@ public interface IDeploymentDiagram extends cleon.modelinglanguages.uml.spec.uml
   
   public java.lang.Boolean selectOnlyOneLayer();
   
-  public java.lang.Boolean selectLeftToRight();
-  
-  public java.lang.String selectScale();
-  
   public java.lang.Boolean selectRenderHidden();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,17YdoLvx0GxJsQV/nG8INlNyv4w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,VZptVOvsy33dwZGsZ2GqEqUh9rQ=] */

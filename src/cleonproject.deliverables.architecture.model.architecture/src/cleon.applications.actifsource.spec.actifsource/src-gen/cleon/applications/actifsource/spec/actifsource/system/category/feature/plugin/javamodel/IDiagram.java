@@ -1,4 +1,4 @@
-package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.diagram.javamodel;
+package cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IDiagram extends cleon.applications.actifsource.spec.actifsourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1d5fec5-3f8d-11e5-9616-473ab9b9a1f3,yk3QmOAl+STHqRjGIxk4hGynQgk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1d5fec5-3f8d-11e5-9616-473ab9b9a1f3,4WcuIXq+ncXvvkaUe/oC7gfgvRw=] */

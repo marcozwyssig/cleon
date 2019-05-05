@@ -31,12 +31,30 @@ public class TechnicalContextDiagram extends DynamicResource implements ITechnic
   // attributes
   
   @Override
+  public java.lang.Boolean selectLeftToRight() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight);
+  }
+    
+  public void setLeftToRight(java.lang.Boolean leftToRight) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, leftToRight);
+  }
+
+  @Override
   public java.lang.String selectPath() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path);
   }
     
   public void setPath(java.lang.String path) {
      _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, path);
+  }
+
+  @Override
+  public java.lang.String selectScale() {
+    return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale);
+  }
+    
+  public void setScale(java.lang.String scale) {
+     _setSingleAttribute(cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, scale);
   }
 
   // relations
@@ -75,7 +93,9 @@ public class TechnicalContextDiagram extends DynamicResource implements ITechnic
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_leftToRight, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.ITechnicalContext.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContextDiagram_technicalContext, visitor);
@@ -89,4 +109,4 @@ public class TechnicalContextDiagram extends DynamicResource implements ITechnic
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f023427-fa45-11e8-af47-e5bdd8100025,xqzhRi2BJcux6BI/Z0SDZ0sEI5o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f023427-fa45-11e8-af47-e5bdd8100025,SAHzcRNwoorTBAcDgPkseV7EoeI=] */

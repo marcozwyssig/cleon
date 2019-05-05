@@ -11,8 +11,6 @@ public class DiagramPackage {
   public static final Resource BuildingBlockDependenciesDiagram = new Resource("0091c2c7-0e17-11e9-8b4c-f9aec93d8b56");
   public static final Resource SegmentationDiagram = new Resource("46777a52-0e23-11e9-8b4c-f9aec93d8b56");
   public static final Resource DeploymentDiagram_onlyOneLayer = new Resource("abdc5fe0-0eb0-11e9-9f19-6d15636f4ecc");
-  public static final Resource DeploymentDiagram_leftToRight = new Resource("3a104e30-18cd-11e9-be06-1d0a849a80c4");
-  public static final Resource DeploymentDiagram_scale = new Resource("2160d761-197a-11e9-b3a0-d155f11f9df1");
   public static final Resource DeploymentDiagram_renderHidden = new Resource("3bf1527b-1980-11e9-88a0-1f786f12e4c1");
   
   /* Begin Protected Region [[user]] */
@@ -34,4 +32,4 @@ public class DiagramPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.diagram,SRbO9qxBdXtjuRKS2U70kIHER8U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.diagram,P0PVea4NFGakevJdHf41TyGn25k=] */

@@ -1,0 +1,51 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+rectangle Application as "Application" <<SystemComponent>> {
+}
+rectangle PKI as "PKI" <<SystemComponent>> {
+}
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+}
+rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
+}
+rectangle Backup__F_Management as "Backup Management" <<SystemComponent>> {
+}
+rectangle Deployment as "Deployment" <<SystemComponent>> {
+}
+rectangle Endpoint__F_Protection as "Endpoint Protection" <<SystemComponent>> {
+}
+rectangle Datenablage as "Datenablage" <<SystemComponent>> {
+}
+rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+}
+rectangle Network as "Network" <<SystemComponent>> {
+}
+Operating__F_System -down-> Virtual__F_Compute : verwendet 
+Application -up-> Operating__F_System : verwendet
+PKI -up-> Operating__F_System : verwendet
+Directory__F_Services -up-> Operating__F_System : verwendet
+Jump__F_Host -up-> Operating__F_System : verwendet
+Backup__F_Management -up-> Operating__F_System : verwendet
+Deployment -up-> Operating__F_System : verwendet
+Endpoint__F_Protection -up-> Operating__F_System : verwendet
+Datenablage -up-> Operating__F_System : verwendet
+Monitoring -up-> Operating__F_System : verwendet
+Network -up-> Operating__F_System : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,e7f0f457-0e19-11e9-8b4c-f9aec93d8b56,Hash]

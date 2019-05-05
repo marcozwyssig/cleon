@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b8b3cf11-e66f-11e8-aec7-1bc04863a873">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="baa713b3-e66f-11e8-aec7-1bc04863a873" type="resource" guid="baa713b0-e66f-11e8-aec7-1bc04863a873" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b8b3cf13-e66f-11e8-aec7-1bc04863a873" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b9318a9e-e66f-11e8-aec7-1bc04863a873" type="literal">Storage</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="926ae4ab-0df8-11e9-ac05-81da9d8c018d" type="literal">Die System-Komponente Storage hostet die physischen Datenträger (Disks) als Storage-System und stellt hieraus logische Datenspeicher bereit.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="26aeebbc-35f8-11e9-9d58-25409887bb2a" type="literal">2</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="baa713b3-e66f-11e8-aec7-1bc04863a873">
+      <resource guid="baa713b0-e66f-11e8-aec7-1bc04863a873">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="baa713b2-e66f-11e8-aec7-1bc04863a873" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="bb65a8c8-e66f-11e8-aec7-1bc04863a873" type="aggregate" guid="bb6581b5-e66f-11e8-aec7-1bc04863a873" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="32c1c014-0cf5-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung eines Block Storage.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

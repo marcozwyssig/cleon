@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d71fa1a8-e114-11e8-a832-7553de2b103b">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="85aa5247-ee56-11e8-a148-37a2ab1cda5a" type="resource" guid="85aa2b34-ee56-11e8-a148-37a2ab1cda5a" />
+    <resource statement-guid="860366cd-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="65c11f21-02d7-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d503c944-35f7-11e9-9d58-25409887bb2a" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b52b1dcf-e66f-11e8-aec7-1bc04863a873" type="literal">Physical Compute</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="a4a246f7-0cf5-11e9-be4f-03130cc057ef" type="literal">Die Physical Compute System-Komponente (Server) enthält die physischen Komponenten für die Bereitstellung von Rechenleistung und Hauptspeicher. Die Server enthalten lokale Festplatten.</object>
+    <object statement-guid="3b77e9b7-18a7-11e9-be06-1d0a849a80c4" type="literal">Das Management der Rechner erfolgt über das ILO (OOB), worauf in allen Netzdomänen zugegriffen werden kann. Der Zugriff ist dementsprechend über Active Directory geschützt und die Verbindung auf ILO ist dementsprechend zertifikatsbasiert verschlüsselt.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="27771dbe-35f8-11e9-9d58-25409887bb2a" type="literal">3</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="85aa5247-ee56-11e8-a148-37a2ab1cda5a">
+      <resource guid="85aa2b34-ee56-11e8-a148-37a2ab1cda5a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="85aa5246-ee56-11e8-a148-37a2ab1cda5a" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="867ff1db-ee56-11e8-a148-37a2ab1cda5a" type="aggregate" guid="867fa3b8-ee56-11e8-a148-37a2ab1cda5a" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="4ae3ba95-0cf5-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung des Kontron Servers</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="860366cd-0369-11e9-90c7-5b43fd1c2d66">
+      <resource guid="65c11f21-02d7-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="65c11f23-02d7-11e9-9e58-33d596257b14" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="67e9cb9b-02d7-11e9-9e58-33d596257b14" type="aggregate" guid="67e9a488-02d7-11e9-9e58-33d596257b14" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="5635ad96-0cf5-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung eines HP Servers.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

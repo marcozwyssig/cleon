@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c82d9dd8-e10c-11e8-a973-4fdaaa4aef8e">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="5fb02710-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="5fafb1dd-0369-11e9-90c7-5b43fd1c2d66" />
+    <resource statement-guid="aaa72063-35ab-11e9-9d58-25409887bb2a" type="resource" guid="aaa54b9e-35ab-11e9-9d58-25409887bb2a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2ca72040-0220-11e9-b327-17da2da63a8f" type="resource" guid="df6869b2-09ea-11e9-abef-3d869859c931" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="bfada51d-0e0e-11e9-8b4c-f9aec93d8b56" type="literal">Die Master Active Directory System-Konfiguration wird an den NMS Standorten betrieben und ist für die zentrale sichere Persistierung der AD Daten verantwortlich.</object>
+    <object statement-guid="3e27ba28-0e0f-11e9-8b4c-f9aec93d8b56" type="literal">Zusätzlich agiert die Master Active Directory System-Konfiguration als Lizenz Server für Microsoft Produkte.</object>
+    <object statement-guid="50fd0c1f-0e0f-11e9-8b4c-f9aec93d8b56" type="literal">Die Master Active Directory System-Konfiguration ist auf Basis von Microsoft Windows Server 2016 realisiert.</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="5fb02710-0369-11e9-90c7-5b43fd1c2d66">
+      <resource guid="5fafb1dd-0369-11e9-90c7-5b43fd1c2d66">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5fafd8ef-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1bb02d46-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer physischen Windows Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="60cd7df9-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="4c974acd-f16e-11e8-b3e7-15e2dd8d9b05" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="aaa72063-35ab-11e9-9d58-25409887bb2a">
+      <resource guid="aaa54b9e-35ab-11e9-9d58-25409887bb2a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aaa54b9f-35ab-11e9-9d58-25409887bb2a" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="aaa54ba0-35ab-11e9-9d58-25409887bb2a" type="literal">Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="aaa54ba1-35ab-11e9-9d58-25409887bb2a" type="resource" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="aaa54ba2-35ab-11e9-9d58-25409887bb2a" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

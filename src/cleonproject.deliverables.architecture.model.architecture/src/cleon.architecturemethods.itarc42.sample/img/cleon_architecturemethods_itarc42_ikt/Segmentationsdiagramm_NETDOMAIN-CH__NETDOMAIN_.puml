@@ -1,0 +1,29 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+show stereotype
+
+rectangle SEGMENT__S_DMZ__S_FEDERAL as "SEGMENT-DMZ-FEDERAL" <<segment>> {
+	rectangle ZONE__S_CH__S_SERVICES__S_INFRA as "ZONE-CH-SERVICES-INFRA" <<services>> {
+		
+	}
+	rectangle ZONE__S_CH__S_SERVER__S_BACKUP as "ZONE-CH-SERVER-BACKUP" <<server>> {
+		
+	}
+	rectangle ZONE__S_CH__S_MGMT__S_INFRA as "ZONE-CH-MGMT-INFRA" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_CH__S_MGMT__S_POLYCOM as "ZONE-CH-MGMT-POLYCOM" <<mgmt>> {
+		
+	}
+}
+
+ZONE__S_CH__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_CH__S_MGMT__S_INFRA
+ZONE__S_CH__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_CH__S_MGMT__S_POLYCOM
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,00ff492d-0e25-11e9-8b4c-f9aec93d8b56,Hash]

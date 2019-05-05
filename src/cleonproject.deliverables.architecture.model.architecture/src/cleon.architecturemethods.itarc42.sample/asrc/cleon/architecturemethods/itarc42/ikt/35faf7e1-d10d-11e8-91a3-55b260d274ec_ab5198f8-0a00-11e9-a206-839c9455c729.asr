@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="ab5198f8-0a00-11e9-a206-839c9455c729">
+  <owns predicate="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <resource statement-guid="707512d4-4f96-11e9-9fa4-c5dbdbed76e6" type="resource" guid="7074c4b1-4f96-11e9-9fa4-c5dbdbed76e6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ab51c00a-0a00-11e9-a206-839c9455c729" type="resource" guid="352e36c6-d0b1-11e8-b005-f7630e4c29c0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ac1ead00-0a00-11e9-a206-839c9455c729" type="literal">Foreman</object>
+  </predicate>
+  <predicate guid="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <object statement-guid="707512d4-4f96-11e9-9fa4-c5dbdbed76e6">
+      <resource guid="7074c4b1-4f96-11e9-9fa4-c5dbdbed76e6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7074ebc3-4f96-11e9-9fa4-c5dbdbed76e6" type="resource" guid="4026c4e3-2acf-11e9-b83f-8be423c00623" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="718fd1cc-4f96-11e9-9fa4-c5dbdbed76e6" type="literal">Foreman</object>
+        </predicate>
+        <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="72e85c02-4f96-11e9-9fa4-c5dbdbed76e6" type="literal">1.20.1</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

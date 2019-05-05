@@ -1,0 +1,71 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-906-BABS-00 [EAZS]" <<$virtual_application_server>> {
+	rectangle DFS__S_906__S_BABS__S_00__F___N_VM__O_ as "DFS-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle DFS__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle DFS__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "DFS-906-BABS-00 [EAZS]" <<$file_server>> {
+			
+			}
+		}
+	}
+	rectangle RDC__S_906__S_BABS__S_00__F___N_VM__O_ as "RDC-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle RDC__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "RDC-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle RDC__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "RDC-906-BABS-00 [EAZS]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle SPM__S_906__S_BABS__S_00__F___N_VM__O_ as "SPM-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle SPM__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "SPM-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle SPM__S_906__S_BABS__S_00 as "SPM-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle AM__S_906__S_BABS__S_00__F___N_VM__O_ as "AM-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle AM__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "AM-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle AM__S_906__S_BABS__S_00 as "AM-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle CDF__S_906__S_BABS__S_00__F___N_VM__O_ as "CDF-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle CDF__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "CDF-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle CDF__S_906__S_BABS__S_00 as "CDF-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle JMP__S_906__S_BABS__S_01__F___N_VM__O_ as "JMP-906-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_906__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-906-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_906__S_BABS__S_01__F__aA_EAZS_aC_ as "JMP-906-BABS-01 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,9b8fc0f3-0e9b-11e9-9f19-6d15636f4ecc,Hash]

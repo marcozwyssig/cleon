@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4d141a40-0c2f-11e9-83ba-4d57b06560a2">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="4fc027de-0c2f-11e9-83ba-4d57b06560a2" type="resource" guid="4fc000ca-0c2f-11e9-83ba-4d57b06560a2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4d144152-0c2f-11e9-83ba-4d57b06560a2" type="resource" guid="54ca4f73-0a8a-11e9-a59d-d7a0c53e291c" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="fb5de999-0e02-11e9-ac05-81da9d8c018d" type="literal">Die PRTG System-Konfiguration wertet die Monitoring-Daten aus, präsentiert die Ergebnisse und alarmiert im Bedarfsfall.</object>
+  </predicate>
+  <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
+    <object statement-guid="6e94ce54-0c30-11e9-83ba-4d57b06560a2" type="resource" guid="8fab86d2-0c2f-11e9-83ba-4d57b06560a2" />
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="4fc027de-0c2f-11e9-83ba-4d57b06560a2">
+      <resource guid="4fc000ca-0c2f-11e9-83ba-4d57b06560a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4fc000cc-0c2f-11e9-83ba-4d57b06560a2" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ce198b96-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="6be35eb8-0c2f-11e9-83ba-4d57b06560a2" type="resource" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="4fc027dd-0c2f-11e9-83ba-4d57b06560a2" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

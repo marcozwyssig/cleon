@@ -1,0 +1,21 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
+}
+
+rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+}
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,0110af5f-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

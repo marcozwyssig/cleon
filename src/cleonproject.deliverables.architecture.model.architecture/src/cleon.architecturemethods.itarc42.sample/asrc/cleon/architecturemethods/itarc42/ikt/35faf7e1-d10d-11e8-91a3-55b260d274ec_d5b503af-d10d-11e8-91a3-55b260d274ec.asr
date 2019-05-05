@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d5b503af-d10d-11e8-91a3-55b260d274ec">
+  <owns predicate="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <resource statement-guid="97e7cb74-4f96-11e9-9fa4-c5dbdbed76e6" type="resource" guid="97e77d51-4f96-11e9-9fa4-c5dbdbed76e6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d5b503b1-d10d-11e8-91a3-55b260d274ec" type="resource" guid="352e36c6-d0b1-11e8-b005-f7630e4c29c0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d6d037bd-d10d-11e8-91a3-55b260d274ec" type="literal">Windows Server</object>
+  </predicate>
+  <predicate guid="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <object statement-guid="97e7cb74-4f96-11e9-9fa4-c5dbdbed76e6">
+      <resource guid="97e77d51-4f96-11e9-9fa4-c5dbdbed76e6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="97e7a463-4f96-11e9-9fa4-c5dbdbed76e6" type="resource" guid="4026c4e3-2acf-11e9-b83f-8be423c00623" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="98f6554b-4f96-11e9-9fa4-c5dbdbed76e6" type="literal">Standard</object>
+        </predicate>
+        <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="9a5e97fc-4f96-11e9-9fa4-c5dbdbed76e6" type="literal">2016</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,21 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle PKI as "PKI" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+PKI -down-> Operating__F_System : verwendet 
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,fc680fbe-0e19-11e9-8b4c-f9aec93d8b56,Hash]

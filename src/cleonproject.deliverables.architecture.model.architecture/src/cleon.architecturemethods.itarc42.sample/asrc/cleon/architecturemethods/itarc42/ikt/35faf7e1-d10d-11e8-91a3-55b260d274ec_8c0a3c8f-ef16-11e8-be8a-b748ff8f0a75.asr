@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8c0a3c8f-ef16-11e8-be8a-b748ff8f0a75">
+  <owns predicate="f1ce623b-eaa8-11e8-88d3-bfc6b992bdec">
+    <resource statement-guid="8da0bb10-ef16-11e8-be8a-b748ff8f0a75" type="resource" guid="8da093fd-ef16-11e8-be8a-b748ff8f0a75" />
+    <resource statement-guid="76e2f947-09f3-11e9-abef-3d869859c931" type="resource" guid="76e2d234-09f3-11e9-abef-3d869859c931" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8c0a3c91-ef16-11e8-be8a-b748ff8f0a75" type="resource" guid="f7b7d6ee-e100-11e8-8499-a3b0fb3cad90" />
+  </predicate>
+  <predicate guid="f1ce623b-eaa8-11e8-88d3-bfc6b992bdec">
+    <object statement-guid="8da0bb10-ef16-11e8-be8a-b748ff8f0a75">
+      <resource guid="8da093fd-ef16-11e8-be8a-b748ff8f0a75">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8da0bb0f-ef16-11e8-be8a-b748ff8f0a75" type="resource" guid="e6f2152e-eaa8-11e8-88d3-bfc6b992bdec" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8e35a75e-ef16-11e8-be8a-b748ff8f0a75" type="literal">Termin</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="a1a5164f-ef16-11e8-be8a-b748ff8f0a75" type="literal">Die IKT unterstützt unterschiedliche Systeme mit technischen IKT-Diensten. Für eine reibungslose Projektabwicklung von WEP 2030 muss das System IKT bis Ende April 2019 im Entwicklungszustand Beta vorhanden sein.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="76e2f947-09f3-11e9-abef-3d869859c931">
+      <resource guid="76e2d234-09f3-11e9-abef-3d869859c931">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="76e2f946-09f3-11e9-abef-3d869859c931" type="resource" guid="e6f2152e-eaa8-11e8-88d3-bfc6b992bdec" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="77b73938-09f3-11e9-abef-3d869859c931" type="literal">Namenskonzept</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="89ca9a99-09f3-11e9-abef-3d869859c931" type="literal">Die Vergabe der jeweiligen Instanzen (Knoten) müssen das Namenskonzept [5] verwenden.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

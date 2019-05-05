@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="824540e0-f1a3-11e8-b3e7-15e2dd8d9b05">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="824540e2-f1a3-11e8-b3e7-15e2dd8d9b05" type="resource" guid="0e3ff7cb-d86f-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="3485c93b-d86f-11e4-aa2f-c11242a92b60">
+    <object statement-guid="82eb44e6-f1a3-11e8-b3e7-15e2dd8d9b05" type="literal">Organisationseinheiten stellen hierarchisch die administrative Struktur einer Domäne dar. Jede Organisationseinheit kann Benutzer-, Gruppen- und Computerobjekte aufnehmen. Jedes Objekt kann nur genau einer Organisationseinheit zugewiesen werden. Das Setzen von Berechtigungen wird durch Verschachtelungen von Organisationseinheiten und Zuweisung von Gruppenrichtlinien (GPO) erzeugt. 
+Innerhalb einer jeden Active Directory-Domäne werden Organisationseinheiten angelegt. Die folgende Abbildung gibt einen Überblick, welche Objekte (Computer, Gruppen, Nutzer) welchen Organisationseinheiten zugeordnet werden.</object>
+  </predicate>
+</resource>
+

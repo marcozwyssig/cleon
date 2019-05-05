@@ -43,13 +43,6 @@ In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.
 === Fachlicher Kontext
 
 
-[plantuml, png]
-....
-skinparam monochrome true
-skinparam componentStyle uml2
-actor Role1 as "Role1"
-actor Role2 as "Role2"
-...
 
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
 
@@ -76,12 +69,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 === Technischer Kontext
 
 
-[plantuml, png]
-....
-skinparam monochrome true
-skinparam componentStyle uml2
-component IKT as "IKT" <<System>>
-...
 
 In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
 

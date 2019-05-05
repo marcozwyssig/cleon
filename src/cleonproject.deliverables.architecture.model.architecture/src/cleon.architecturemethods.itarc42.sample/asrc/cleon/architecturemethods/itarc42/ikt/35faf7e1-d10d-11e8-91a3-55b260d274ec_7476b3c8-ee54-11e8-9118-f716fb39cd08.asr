@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="7476b3c8-ee54-11e8-9118-f716fb39cd08">
+  <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="8492640f-ee54-11e8-9118-f716fb39cd08" type="resource" guid="8492640c-ee54-11e8-9118-f716fb39cd08" />
+  </owns>
+  <owns predicate="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="8ee18d14-ee54-11e8-9118-f716fb39cd08" type="resource" guid="8ee18d11-ee54-11e8-9118-f716fb39cd08" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7476dada-ee54-11e8-9118-f716fb39cd08" type="resource" guid="ab88bc9d-ecde-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="753b3c4d-ee54-11e8-9118-f716fb39cd08" type="literal">Verwendung der Standard AD Container</object>
+  </predicate>
+  <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="8492640f-ee54-11e8-9118-f716fb39cd08">
+      <resource guid="8492640c-ee54-11e8-9118-f716fb39cd08">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8492640e-ee54-11e8-9118-f716fb39cd08" type="resource" guid="ec50c041-ecde-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="858db400-ee54-11e8-9118-f716fb39cd08" type="literal">Verwender der Standard AD Container</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="8ee18d14-ee54-11e8-9118-f716fb39cd08">
+      <resource guid="8ee18d11-ee54-11e8-9118-f716fb39cd08">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8ee18d13-ee54-11e8-9118-f716fb39cd08" type="resource" guid="63eda1df-ecdf-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="8f9af205-ee54-11e8-9118-f716fb39cd08" type="literal">Die Standard AD Container (Benutzer, Rechner) werden nicht verwendet.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

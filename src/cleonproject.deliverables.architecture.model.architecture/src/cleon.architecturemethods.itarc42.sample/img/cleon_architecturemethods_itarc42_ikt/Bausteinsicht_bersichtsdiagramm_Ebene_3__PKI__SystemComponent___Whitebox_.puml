@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle PKI as "PKI" <<SystemComponent>> {
+	rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
+	}		
+	rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,512ce707-0a96-11e9-9f72-e5610a9d4cd3,Hash]

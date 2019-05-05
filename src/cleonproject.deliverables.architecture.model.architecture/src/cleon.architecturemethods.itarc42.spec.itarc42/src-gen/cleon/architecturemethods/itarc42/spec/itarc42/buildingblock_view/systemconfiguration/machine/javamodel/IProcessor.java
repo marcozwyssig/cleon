@@ -1,0 +1,15 @@
+package cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel;
+
+import ch.actifsource.util.collection.IMultiMapOrdered;
+
+public interface IProcessor extends ch.actifsource.core.javamodel.IResource {
+
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e21ab957-2aff-11e9-9692-65766bc2daa5");
+  
+  // attributes
+  
+  public java.lang.Integer selectAmount();
+  
+}
+
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e21ab957-2aff-11e9-9692-65766bc2daa5,4mSvTofNL0jfU9J3HJGx6mmpPUI=] */

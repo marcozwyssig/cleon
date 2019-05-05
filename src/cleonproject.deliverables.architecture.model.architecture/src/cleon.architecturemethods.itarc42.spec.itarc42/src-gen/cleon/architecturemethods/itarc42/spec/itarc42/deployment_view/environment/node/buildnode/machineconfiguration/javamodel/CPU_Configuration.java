@@ -31,31 +31,31 @@ public class CPU_Configuration extends DynamicResource implements ICPU_Configura
   // relations
   
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore selectCore() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core);
+  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore selectCore() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core);
   }
 
-  public CPU_Configuration setCore(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore core) {
+  public CPU_Configuration setCore(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore core) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core, core);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU selectCpu() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu);
+  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU selectCpu() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu);
   }
 
-  public CPU_Configuration setCpu(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU cpu) {
+  public CPU_Configuration setCpu(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU cpu) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu, cpu);
     return this;
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration selectMachineConfiguration() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration);
+  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration selectMachineConfiguration() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration);
   }
 
-  public CPU_Configuration setMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration machineConfiguration) {
+  public CPU_Configuration setMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration machineConfiguration) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration, machineConfiguration);
     return this;
   }
@@ -84,26 +84,26 @@ public class CPU_Configuration extends DynamicResource implements ICPU_Configura
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMachineSystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeMachineConfiguration(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeCpu(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeCpu(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeCore(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICore object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration> selectToMeCore(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,iKaCSIPkCSjn94csu0xZQLw8Qcg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,P+NClliu9Bd7Mm6Wy8uRJXA/Z7U=] */

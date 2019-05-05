@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6e86b3da-e66f-11e8-aec7-1bc04863a873">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="1d32d633-02ce-11e9-9e58-33d596257b14" type="resource" guid="1d32af20-02ce-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bd9ae715-02cc-11e9-9e58-33d596257b14" type="resource" guid="9edb59cf-02cc-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
+    <object statement-guid="42103b4c-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="9cca3366-e115-11e8-a832-7553de2b103b" />
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="1d32d633-02ce-11e9-9e58-33d596257b14">
+      <resource guid="1d32af20-02ce-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1d32af22-02ce-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ca2c4146-0df4-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer virtuellen Maschine als "Virtual Appliance" betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="2f16c290-02ce-11e9-9e58-33d596257b14" type="resource" guid="550291de-02c7-11e9-9e58-33d596257b14" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

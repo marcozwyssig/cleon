@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="23149a04-35eb-11e9-9d58-25409887bb2a">
+  <owns predicate="ea84d7ed-1da3-11e9-b601-db75aa6f89a4">
+    <resource statement-guid="a62e8aca-35ed-11e9-9d58-25409887bb2a" type="resource" guid="a62e8ac6-35ed-11e9-9d58-25409887bb2a">
+      <owns predicate="47bd0260-35e6-11e9-9d58-25409887bb2a">
+        <resource statement-guid="a775b0ee-35ed-11e9-9d58-25409887bb2a" type="resource" guid="a775b0ea-35ed-11e9-9d58-25409887bb2a" />
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="23149a06-35eb-11e9-9d58-25409887bb2a" type="resource" guid="88193678-1d9f-11e9-b601-db75aa6f89a4" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2fb9e7d7-35eb-11e9-9d58-25409887bb2a" type="literal">operator</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="2e88babc-35eb-11e9-9d58-25409887bb2a" type="literal">2500</object>
+  </predicate>
+  <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+    <object statement-guid="40131689-35eb-11e9-9d58-25409887bb2a" type="literal">IKT-Zentrale Operator </object>
+  </predicate>
+  <predicate guid="a53bab2f-1d9e-11e9-b601-db75aa6f89a4">
+    <object statement-guid="316eeb0d-35eb-11e9-9d58-25409887bb2a" type="resource" guid="fc856ea7-0cce-11e9-83ba-4d57b06560a2" />
+  </predicate>
+  <predicate guid="1ee8598d-1d9f-11e9-b601-db75aa6f89a4">
+    <object statement-guid="32fd053b-35eb-11e9-9d58-25409887bb2a" type="resource" guid="fc856ea7-0cce-11e9-83ba-4d57b06560a2" />
+  </predicate>
+  <predicate guid="b7b0e66e-1d9f-11e9-b601-db75aa6f89a4">
+    <object statement-guid="2314c117-35eb-11e9-9d58-25409887bb2a" type="resource" guid="8366b755-0437-11e9-bc2b-2f2cf95d8322" />
+  </predicate>
+  <predicate guid="ea84d7ed-1da3-11e9-b601-db75aa6f89a4">
+    <object statement-guid="a62e8aca-35ed-11e9-9d58-25409887bb2a">
+      <resource guid="a62e8ac6-35ed-11e9-9d58-25409887bb2a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a62e8ac8-35ed-11e9-9d58-25409887bb2a" type="resource" guid="94d1c1e5-1da3-11e9-b601-db75aa6f89a4" />
+        </predicate>
+        <predicate guid="6033ea08-1e07-11e9-834d-77c41fccc6bf">
+          <object statement-guid="a62e8ac9-35ed-11e9-9d58-25409887bb2a" type="resource" guid="2bf52004-0aaf-11e9-a8f9-abf1763bbc53" />
+        </predicate>
+        <predicate guid="47bd0260-35e6-11e9-9d58-25409887bb2a">
+          <object statement-guid="a775b0ee-35ed-11e9-9d58-25409887bb2a">
+            <resource guid="a775b0ea-35ed-11e9-9d58-25409887bb2a">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a775b0ec-35ed-11e9-9d58-25409887bb2a" type="resource" guid="e33fb742-35e4-11e9-9d58-25409887bb2a" />
+              </predicate>
+              <predicate guid="5d8925dc-35e6-11e9-9d58-25409887bb2a">
+                <object statement-guid="a775b0ed-35ed-11e9-9d58-25409887bb2a" type="resource" guid="127fad22-e115-11e8-a832-7553de2b103b" />
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="98409691-35f5-11e9-9d58-25409887bb2a">
+    <object statement-guid="bcfc6db4-35f5-11e9-9d58-25409887bb2a" type="literal">die Ausführung</object>
+  </predicate>
+</resource>
+

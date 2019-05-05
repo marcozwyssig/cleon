@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="1b45b9bd-e670-11e8-aec7-1bc04863a873">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="1fe30fce-e670-11e8-aec7-1bc04863a873" type="resource" guid="1fe30fcb-e670-11e8-aec7-1bc04863a873" />
+  </owns>
+  <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="2ead3d40-02cc-11e9-9e58-33d596257b14" type="resource" guid="2ead3d3d-02cc-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="fd73803a-35f7-11e9-9d58-25409887bb2a" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="505881a5-021f-11e9-b327-17da2da63a8f" type="literal">Application</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="b1f9ee03-0cf8-11e9-be4f-03130cc057ef" type="literal">Ein Anwendungsserver sind Laufzeitumgebungen für Software Komponenten. Sie stellen den
+Komponenten eine kontrollierte Umgebung mit wohl definierten Eigenschaften zur
+Verfügung und entlasten die Komponenten entsprechend.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="2e71014f-35f8-11e9-9d58-25409887bb2a" type="literal">6</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="1fe30fce-e670-11e8-aec7-1bc04863a873">
+      <resource guid="1fe30fcb-e670-11e8-aec7-1bc04863a873">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1fe30fcd-e670-11e8-aec7-1bc04863a873" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="207e1753-e670-11e8-aec7-1bc04863a873" type="aggregate" guid="207e1750-e670-11e8-aec7-1bc04863a873" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="52fddec4-0cf9-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung eines Anwendungsservers auf Basis von IIS.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="2ead3d40-02cc-11e9-9e58-33d596257b14">
+      <resource guid="2ead3d3d-02cc-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2ead3d3f-02cc-11e9-9e58-33d596257b14" type="resource" guid="37c35592-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="f4b88546-0ce8-11e9-8fb3-3d281af33bda" type="literal">Der Application Server verwendet für den Betrieb ein Betriebssystem.</object>
+        </predicate>
+        <predicate guid="37c3559b-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="761d8ffd-02d1-11e9-9e58-33d596257b14" type="resource" guid="98b954eb-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

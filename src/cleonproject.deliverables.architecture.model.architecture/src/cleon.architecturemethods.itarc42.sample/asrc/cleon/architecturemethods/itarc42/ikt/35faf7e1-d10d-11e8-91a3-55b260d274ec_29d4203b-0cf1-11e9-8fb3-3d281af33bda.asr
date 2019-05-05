@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="29d4203b-0cf1-11e9-8fb3-3d281af33bda">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="29d4203d-0cf1-11e9-8fb3-3d281af33bda" type="resource" guid="5df8cdae-e98c-11e8-af5c-a5aa9dc47205" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2bc541e4-0cf1-11e9-8fb3-3d281af33bda" type="literal">Geräte</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="33a14805-0cf1-11e9-8fb3-3d281af33bda" type="literal">Geräte beantragen Zertifikate indem sie entweder eine Signier-Anfrage an die Zertifizierungsstelle senden (Autoenrollment), oder dass der Administrator die Signier-Anfrage manuell er-stellt und das so erhaltenen Zertifikat manuell in die Endgeräte einspielt (CSR).</object>
+  </predicate>
+</resource>
+

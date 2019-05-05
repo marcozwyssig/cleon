@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="207e1750-e670-11e8-aec7-1bc04863a873">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="27926419-02cc-11e9-9e58-33d596257b14" type="resource" guid="27926416-02cc-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c78270d8-02c8-11e9-9e58-33d596257b14" type="resource" guid="86e72211-02c8-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="39d1ba58-0ce9-11e9-8fb3-3d281af33bda" type="literal">Diese System-Konfiguration verwendet als konkrete Technologien Microsoft Internet Information Service (IIS). Der IIS ist Bestandteil von Microsoft Windows Server 2016 Standard.</object>
+    <object statement-guid="2b5dacf4-0cf9-11e9-be4f-03130cc057ef" type="literal">Der IIS und alle Application Pools werden unter dem Default „Network Service“ Konto betrieben, wofür es kein korrespondierendes AD Objekt gibt, dem man einen SPN zuordnen könnte.</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="27926419-02cc-11e9-9e58-33d596257b14">
+      <resource guid="27926416-02cc-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="27926418-02cc-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1860db0f-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="7e207edd-02d1-11e9-9e58-33d596257b14" type="resource" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

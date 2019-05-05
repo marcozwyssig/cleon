@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+	rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
+	}		
+	rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,41beb545-0a96-11e9-9f72-e5610a9d4cd3,Hash]

@@ -330,7 +330,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IvCenterSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IVCenterSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("abd4ba7e-02cc-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -346,21 +346,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IvCenterSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IVCenterSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class vCenterSystemConfigurationFunctionsImpl implements IvCenterSystemConfigurationFunctionsImpl {
+  public static class VCenterSystemConfigurationFunctionsImpl implements IVCenterSystemConfigurationFunctionsImpl {
 
-    public static final IvCenterSystemConfigurationFunctionsImpl INSTANCE = new vCenterSystemConfigurationFunctionsImpl();
+    public static final IVCenterSystemConfigurationFunctionsImpl INSTANCE = new VCenterSystemConfigurationFunctionsImpl();
 
-    private vCenterSystemConfigurationFunctionsImpl() {}
+    private VCenterSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class vCenterSystemConfigurationFunctions {
+  public static class VCenterSystemConfigurationFunctions {
 
-    private vCenterSystemConfigurationFunctions() {}
+    private VCenterSystemConfigurationFunctions() {}
 
   }
 
@@ -1278,4 +1278,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,vHNL2FcPOjej/r6HgtNSCteXWzo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,VYv2q2/UAqGXLKaeekckyRFMHF0=] */

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="aba20df9-e670-11e8-aec7-1bc04863a873">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="b5e37b94-e670-11e8-aec7-1bc04863a873" type="resource" guid="b5e37b91-e670-11e8-aec7-1bc04863a873" />
+  </owns>
+  <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="b65b83e3-02ce-11e9-9e58-33d596257b14" type="resource" guid="b65b5cd0-02ce-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0af4fd58-35f8-11e9-9d58-25409887bb2a" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ae931376-e670-11e8-aec7-1bc04863a873" type="literal">Jump Host</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="5631fe6f-0dfb-11e9-ac05-81da9d8c018d" type="literal">Die System-Komponente Jump Host stellt die Fernzugriff Funktionalität bereit. Der Jump Host wird als Terminal Server betrieben, so dass mehrere Benutzer gleichzeitig auf die Umgebung zugreifen können.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="33b2386b-35f8-11e9-9d58-25409887bb2a" type="literal">10</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="b5e37b94-e670-11e8-aec7-1bc04863a873">
+      <resource guid="b5e37b91-e670-11e8-aec7-1bc04863a873">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b5e37b93-e670-11e8-aec7-1bc04863a873" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="bca67099-e670-11e8-aec7-1bc04863a873" type="aggregate" guid="bca64986-e670-11e8-aec7-1bc04863a873" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="b65b83e3-02ce-11e9-9e58-33d596257b14">
+      <resource guid="b65b5cd0-02ce-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b65b5cd2-02ce-11e9-9e58-33d596257b14" type="resource" guid="37c35592-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="74eb5d54-0cfa-11e9-be4f-03130cc057ef" type="literal">Die System-Komponente Jump-Host verwendet für den Betrieb ein Betriebssystem.</object>
+        </predicate>
+        <predicate guid="37c3559b-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="b75aa468-02ce-11e9-9e58-33d596257b14" type="resource" guid="98b954eb-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

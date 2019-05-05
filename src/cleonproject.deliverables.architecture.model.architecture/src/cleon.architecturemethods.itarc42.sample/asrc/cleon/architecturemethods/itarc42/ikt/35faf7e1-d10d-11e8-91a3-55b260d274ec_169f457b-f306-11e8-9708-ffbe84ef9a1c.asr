@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="169f457b-f306-11e8-9708-ffbe84ef9a1c">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="b637fddd-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="b6367739-0c3a-11e9-83ba-4d57b06560a2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="169f457d-f306-11e8-9708-ffbe84ef9a1c" type="resource" guid="a0ea27b6-0c39-11e9-83ba-4d57b06560a2" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="4b2cd39f-09ff-11e9-a206-839c9455c729" type="literal">Das Configuration Management stellt mit Puppet eine Umgebung für die Bereitstellung, Instanziierung und das Management von Ressourcen (Server, Speicher, RZ-Infrastruktur, Middleware, Datenbanken, Applikationen, usw.) zur Verfügung.</object>
+  </predicate>
+  <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
+    <object statement-guid="76911c65-0a00-11e9-a206-839c9455c729" type="resource" guid="66ce3014-09ff-11e9-a206-839c9455c729" />
+    <object statement-guid="c7477f23-0a00-11e9-a206-839c9455c729" type="resource" guid="ab5198f8-0a00-11e9-a206-839c9455c729" />
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="b637fddd-0c3a-11e9-83ba-4d57b06560a2">
+      <resource guid="b6367739-0c3a-11e9-83ba-4d57b06560a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b636773b-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3ca31558-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer virtuellen Redhat Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="b70e60b3-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="6f3ca548-0c3b-11e9-83ba-4d57b06560a2" />
+        </predicate>
+        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
+          <object statement-guid="b637d6cc-0c3a-11e9-83ba-4d57b06560a2" type="literal">false</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

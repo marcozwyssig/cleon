@@ -1,0 +1,26 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+	rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+	}		
+	rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
+	}		
+	rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+	}		
+	rectangle CentOs__F_Virtual__F___N_CNT__S_VM__O_ as "CentOs Virtual (CNT-VM)" <<$linux>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,3c2f36f3-0a96-11e9-9f72-e5610a9d4cd3,Hash]

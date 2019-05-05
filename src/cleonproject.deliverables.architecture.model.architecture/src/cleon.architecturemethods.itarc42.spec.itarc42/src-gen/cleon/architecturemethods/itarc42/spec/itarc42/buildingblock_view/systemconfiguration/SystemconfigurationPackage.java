@@ -23,8 +23,8 @@ public class SystemconfigurationPackage {
   public static final Resource RootCASystemConfiguration = new Resource("ca8bd8df-02cb-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_IssuingCASystemConfiguration = new Resource("d56b0d03-02cb-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RootCASystemConfiguration = new Resource("e4bf4ebd-02cb-11e9-9e58-33d596257b14");
-  public static final Resource vCenterSystemConfiguration = new Resource("9edb59cf-02cc-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_vCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
+  public static final Resource VCenterSystemConfiguration = new Resource("9edb59cf-02cc-11e9-9e58-33d596257b14");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_VCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
   public static final Resource JumpHostSystemConfiguration = new Resource("94069046-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_JumpHostSystemConfiguration = new Resource("abdbca02-02cd-11e9-9e58-33d596257b14");
   public static final Resource DeviceSystemConfiguration = new Resource("7f1b960b-02d3-11e9-9e58-33d596257b14");
@@ -103,4 +103,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,oRq9RZknoQ/GDcjfJThBTvPmeWo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,ls2GWNJ88o3mHrLPoL06d/C2ER0=] */

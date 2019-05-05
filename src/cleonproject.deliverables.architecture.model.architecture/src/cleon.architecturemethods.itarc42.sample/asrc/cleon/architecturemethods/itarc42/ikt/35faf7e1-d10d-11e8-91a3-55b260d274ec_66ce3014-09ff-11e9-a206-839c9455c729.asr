@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="66ce3014-09ff-11e9-a206-839c9455c729">
+  <owns predicate="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <resource statement-guid="592c45ed-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="592c1eda-4fb1-11e9-b9af-8197557ed3ae" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="66ce5726-09ff-11e9-a206-839c9455c729" type="resource" guid="352e36c6-d0b1-11e8-b005-f7630e4c29c0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="99a63d74-09ff-11e9-a206-839c9455c729" type="literal">Puppet</object>
+  </predicate>
+  <predicate guid="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <object statement-guid="592c45ed-4fb1-11e9-b9af-8197557ed3ae">
+      <resource guid="592c1eda-4fb1-11e9-b9af-8197557ed3ae">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="592c45ec-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="4026c4e3-2acf-11e9-b83f-8be423c00623" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59d83cf0-4fb1-11e9-b9af-8197557ed3ae" type="literal">OSS</object>
+        </predicate>
+        <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="5bc4555f-4fb1-11e9-b9af-8197557ed3ae" type="literal">6.x</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

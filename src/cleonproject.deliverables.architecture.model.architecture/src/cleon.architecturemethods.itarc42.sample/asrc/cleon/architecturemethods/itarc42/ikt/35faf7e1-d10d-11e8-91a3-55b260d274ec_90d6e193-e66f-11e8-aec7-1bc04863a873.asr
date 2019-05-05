@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="90d6e193-e66f-11e8-aec7-1bc04863a873">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="9b02f263-e66f-11e8-aec7-1bc04863a873" type="resource" guid="9b02f260-e66f-11e8-aec7-1bc04863a873" />
+    <resource statement-guid="e7a442d8-0cfa-11e9-be4f-03130cc057ef" type="resource" guid="ea716c3a-09f5-11e9-abef-3d869859c931" />
+  </owns>
+  <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="6cff990c-046c-11e9-8d24-f7b469de3423" type="resource" guid="6cff4ae9-046c-11e9-8d24-f7b469de3423" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="087ea5de-35f8-11e9-9d58-25409887bb2a" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="91adb9a0-e66f-11e8-aec7-1bc04863a873" type="literal">Backup Management</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="4e7b64ac-0dfc-11e9-ac05-81da9d8c018d" type="literal">Diese System-Komponente ist für die Datensicherung und -wiederherstellung von Daten in den jeweiligen System-Komponenten verantwortlich.</object>
+    <object statement-guid="6a9685da-0dfc-11e9-ac05-81da9d8c018d" type="literal">Das Backup-Management orchestriert und überwacht die entsprechenden Jobs. Das Backup-Management steht zentral zur Verfügung.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="324dc664-35f8-11e9-9d58-25409887bb2a" type="literal">9</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="9b02f263-e66f-11e8-aec7-1bc04863a873">
+      <resource guid="9b02f260-e66f-11e8-aec7-1bc04863a873">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9b02f262-e66f-11e8-aec7-1bc04863a873" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="9e9540e8-e66f-11e8-aec7-1bc04863a873" type="aggregate" guid="9e9540e5-e66f-11e8-aec7-1bc04863a873" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e7a442d8-0cfa-11e9-be4f-03130cc057ef">
+      <resource guid="ea716c3a-09f5-11e9-abef-3d869859c931">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ea71934c-09f5-11e9-abef-3d869859c931" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="edb0b8c7-09f5-11e9-abef-3d869859c931" type="aggregate" guid="edb06aa4-09f5-11e9-abef-3d869859c931" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="6985b134-0cf9-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Sicherung und Wiederherstellung in einem TN.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="6cff990c-046c-11e9-8d24-f7b469de3423">
+      <resource guid="6cff4ae9-046c-11e9-8d24-f7b469de3423">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6cff4aea-046c-11e9-8d24-f7b469de3423" type="resource" guid="37c35592-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="7dee7edd-0cfa-11e9-be4f-03130cc057ef" type="literal">Die System-Komponente Backup-Management verwendet für den Betrieb ein Betriebssystem.</object>
+        </predicate>
+        <predicate guid="37c3559b-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="6cff4aeb-046c-11e9-8d24-f7b469de3423" type="resource" guid="98b954eb-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="98b954eb-e10c-11e8-a973-4fdaaa4aef8e">
+  <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <resource statement-guid="9ddc2ea0-e10c-11e8-a973-4fdaaa4aef8e" type="resource" guid="9ddc078d-e10c-11e8-a973-4fdaaa4aef8e" />
+    <resource statement-guid="4c9771e3-f16e-11e8-b3e7-15e2dd8d9b05" type="resource" guid="4c974acc-f16e-11e8-b3e7-15e2dd8d9b05" />
+    <resource statement-guid="c3315f84-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="c3313871-0c3a-11e9-83ba-4d57b06560a2" />
+    <resource statement-guid="d7c76f63-34e4-11e9-bf4b-0d828c9b1ad6" type="resource" guid="d7c68500-34e4-11e9-bf4b-0d828c9b1ad6" />
+  </owns>
+  <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="6a843ba8-02ce-11e9-9e58-33d596257b14" type="resource" guid="6a841495-02ce-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d063b3b0-35f7-11e9-9d58-25409887bb2a" type="resource" guid="91ada0b6-35f7-11e9-9d58-25409887bb2a" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="08557294-021f-11e9-b327-17da2da63a8f" type="literal">Operating System</object>
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="8eee352c-043e-11e9-bc2b-2f2cf95d8322" type="literal">Die Betriebssystem System-Komponente wird als abgeschlossene Einheit verstanden. Das Betriebssystem (Operating System) als System-Komponente bildet die Basis der Plattform und stellt Ressourcen für die entsprechenden Laufzeitumgebungen über definierte Schnittstellen zur Verfügung.</object>
+    <object statement-guid="c62fde53-043e-11e9-bc2b-2f2cf95d8322" type="literal">Das System IKT stellt für jeden Betriebssystemtyp (Windows, RHEL) eine Laufzeitumgebung zur Verfügung, wobei die Eigenschaften und Instanzen von den konkreten Betriebssystemen definiert werden.</object>
+    <object statement-guid="021630b4-043f-11e9-bc2b-2f2cf95d8322" type="literal">Die Betriebssysteme können virtualisiert werden, womit die Betriebssysteme von der konkreten Hardware entkoppelt resp. abstrahiert werden.</object>
+  </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="25903521-35f8-11e9-9d58-25409887bb2a" type="literal">1</object>
+  </predicate>
+  <predicate guid="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
+    <object statement-guid="9ddc2ea0-e10c-11e8-a973-4fdaaa4aef8e">
+      <resource guid="9ddc078d-e10c-11e8-a973-4fdaaa4aef8e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9ddc078f-e10c-11e8-a973-4fdaaa4aef8e" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="9e68b735-e10c-11e8-a973-4fdaaa4aef8e" type="aggregate" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="95548b74-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Windows 2016 auf einer virtuellen Maschine.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4c9771e3-f16e-11e8-b3e7-15e2dd8d9b05">
+      <resource guid="4c974acc-f16e-11e8-b3e7-15e2dd8d9b05">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4c974ace-f16e-11e8-b3e7-15e2dd8d9b05" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="4c974ad2-f16e-11e8-b3e7-15e2dd8d9b05" type="aggregate" guid="4c974acd-f16e-11e8-b3e7-15e2dd8d9b05" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="c8e512eb-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Windows 2016 auf einer physischen Kontron Maschine.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c3315f84-0c3a-11e9-83ba-4d57b06560a2">
+      <resource guid="c3313871-0c3a-11e9-83ba-4d57b06560a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3313873-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="6f3ccc5b-0c3b-11e9-83ba-4d57b06560a2" type="aggregate" guid="6f3ca548-0c3b-11e9-83ba-4d57b06560a2" />
+        </predicate>
+        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
+          <object statement-guid="fcade8a2-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Redhat Enterprise Linux.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d7c76f63-34e4-11e9-bf4b-0d828c9b1ad6">
+      <resource guid="d7c68500-34e4-11e9-bf4b-0d828c9b1ad6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d7c74852-34e4-11e9-bf4b-0d828c9b1ad6" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
+        </predicate>
+        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
+          <object statement-guid="da1bbec5-34e4-11e9-bf4b-0d828c9b1ad6" type="aggregate" guid="da1b97b2-34e4-11e9-bf4b-0d828c9b1ad6" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="6a843ba8-02ce-11e9-9e58-33d596257b14">
+      <resource guid="6a841495-02ce-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a841497-02ce-11e9-9e58-33d596257b14" type="resource" guid="37c35592-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="a033675f-0ce8-11e9-8fb3-3d281af33bda" type="literal">Die Betriebssysteme können auf virtuellen Maschinen betrieben werden.</object>
+        </predicate>
+        <predicate guid="37c3559b-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="6b3c8e65-02ce-11e9-9e58-33d596257b14" type="resource" guid="52c54dc9-fee8-11e8-8702-79964eeef2c4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

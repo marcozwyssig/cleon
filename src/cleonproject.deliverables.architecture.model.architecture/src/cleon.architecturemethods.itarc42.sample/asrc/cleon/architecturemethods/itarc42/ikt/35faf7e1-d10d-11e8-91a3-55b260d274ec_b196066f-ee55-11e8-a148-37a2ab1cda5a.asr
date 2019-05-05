@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="b196066f-ee55-11e8-a148-37a2ab1cda5a">
+  <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="b7c60965-ee55-11e8-a148-37a2ab1cda5a" type="resource" guid="b7c60962-ee55-11e8-a148-37a2ab1cda5a" />
+  </owns>
+  <owns predicate="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="c5e5c26a-ee55-11e8-a148-37a2ab1cda5a" type="resource" guid="c5e59b57-ee55-11e8-a148-37a2ab1cda5a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b1962c81-ee55-11e8-a148-37a2ab1cda5a" type="resource" guid="ab88bc9d-ecde-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b37525b5-ee55-11e8-a148-37a2ab1cda5a" type="literal">Anzahl Forest und Domain</object>
+  </predicate>
+  <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="b7c60965-ee55-11e8-a148-37a2ab1cda5a">
+      <resource guid="b7c60962-ee55-11e8-a148-37a2ab1cda5a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b7c60964-ee55-11e8-a148-37a2ab1cda5a" type="resource" guid="ec50c041-ecde-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="b8792cc6-ee55-11e8-a148-37a2ab1cda5a" type="literal">Anzahl Forest und Domains für das IKT System</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="c5e5c26a-ee55-11e8-a148-37a2ab1cda5a">
+      <resource guid="c5e59b57-ee55-11e8-a148-37a2ab1cda5a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c5e59b59-ee55-11e8-a148-37a2ab1cda5a" type="resource" guid="63eda1df-ecdf-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="cb3eee3c-ee55-11e8-a148-37a2ab1cda5a" type="literal">Microsoft empfiehlt den „Single Domain Forest“ Entwurf zu verwenden, um vor allem eine höhere Wartbarkeit und Wirtschaftlichkeit zu gewinnen.</object>
+          <object statement-guid="d04e66dd-ee55-11e8-a148-37a2ab1cda5a" type="literal">Der Entwurfsvorschlag wird übernommen und konfiguriert</object>
+          <object statement-guid="e8f6a85e-ee55-11e8-a148-37a2ab1cda5a" type="literal">Für das System IKT gibt es 1 Forest und ein 1 Domäne</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

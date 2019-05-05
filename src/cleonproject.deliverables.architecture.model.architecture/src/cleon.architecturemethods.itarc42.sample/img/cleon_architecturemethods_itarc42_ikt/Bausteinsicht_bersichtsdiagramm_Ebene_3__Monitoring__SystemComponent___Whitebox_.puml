@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+	rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
+	}		
+	rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,c2925857-0ce7-11e9-8fb3-3d281af33bda,Hash]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="a0e2c613-ee54-11e8-9118-f716fb39cd08">
+  <owns predicate="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="a5c11cab-ee54-11e8-9118-f716fb39cd08" type="resource" guid="a5c11ca8-ee54-11e8-9118-f716fb39cd08" />
+  </owns>
+  <owns predicate="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <resource statement-guid="b0584b30-ee54-11e8-9118-f716fb39cd08" type="resource" guid="b0584b2d-ee54-11e8-9118-f716fb39cd08" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a0e2ed25-ee54-11e8-9118-f716fb39cd08" type="resource" guid="ab88bc9d-ecde-11e8-8149-8542373915bf" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a1e59018-ee54-11e8-9118-f716fb39cd08" type="literal">Vergabe von Rechten an einzelnen Administratoren</object>
+  </predicate>
+  <predicate guid="a4ff8028-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="a5c11cab-ee54-11e8-9118-f716fb39cd08">
+      <resource guid="a5c11ca8-ee54-11e8-9118-f716fb39cd08">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a5c11caa-ee54-11e8-9118-f716fb39cd08" type="resource" guid="ec50c041-ecde-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="a68e30ac-ee54-11e8-9118-f716fb39cd08" type="literal">Vergabe von Rechten an einzelne Administratoren erlauben</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c3d8aff4-ecdf-11e8-8149-8542373915bf">
+    <object statement-guid="b0584b30-ee54-11e8-9118-f716fb39cd08">
+      <resource guid="b0584b2d-ee54-11e8-9118-f716fb39cd08">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b0584b2f-ee54-11e8-9118-f716fb39cd08" type="resource" guid="63eda1df-ecdf-11e8-8149-8542373915bf" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="b1abcd41-ee54-11e8-9118-f716fb39cd08" type="literal">Die Vergabe von Rechten an einzelne Administratoren ist verboten und ist nur über OUs zulässig.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

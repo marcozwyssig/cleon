@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Identity__F_Access__F_Management as "Identity Access Management" <<SystemComponent>> {
+	rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
+	}		
+	rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,7024307a-0a97-11e9-a2c0-1d5f7e333c03,Hash]

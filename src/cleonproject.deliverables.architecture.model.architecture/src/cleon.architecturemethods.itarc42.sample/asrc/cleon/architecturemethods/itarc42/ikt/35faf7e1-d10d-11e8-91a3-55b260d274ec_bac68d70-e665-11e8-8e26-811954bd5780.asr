@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bac68d70-e665-11e8-8e26-811954bd5780">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="a2c927cd-02c7-11e9-9e58-33d596257b14" type="resource" guid="5640d99e-f19d-11e8-b3e7-15e2dd8d9b05" />
+    <resource statement-guid="037e3e4c-0c2c-11e9-83ba-4d57b06560a2" type="resource" guid="037df029-0c2c-11e9-83ba-4d57b06560a2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bac6b482-e665-11e8-8e26-811954bd5780" type="resource" guid="7f075e62-0296-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="7a005c0b-0cf7-11e9-be4f-03130cc057ef" type="literal">Die System-Konfiguration VMH wird mit Hilfe der VMware ESX Infrastruktur realisiert, so dass die virtuellen Maschinen Abhängigkeit von der aktuellen Auslastung auf die verfügbare Hardware verteilt werden kann. Einerseits optimiert diese Virtualisierung Hardware-Auslastung durch das System. Andererseits entkoppelt diese Virtualisierung die Betriebssysteme von der zugehörigen Hardware.</object>
+    <object statement-guid="daf1439b-0e14-11e9-8b4c-f9aec93d8b56" type="literal">Auf dem Hypervisor werden keine Distributed Switches eingesetzt, sondern die jeweiligen lokalen vSwitches. Die Distributed Switches haben eine wesentliche Abhängigkeit zum vCenter. Falls kein Zugriff auf das vCenter besteht, ist der ordentliche Betrieb der Distributed Switches nicht mehr gewährleistet. </object>
+  </predicate>
+  <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
+    <object statement-guid="317792f2-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="8658a8bc-e115-11e8-a832-7553de2b103b" />
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="a2c927cd-02c7-11e9-9e58-33d596257b14">
+      <resource guid="5640d99e-f19d-11e8-b3e7-15e2dd8d9b05">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a4063bb5-02c7-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="cf16938f-0ce8-11e9-8fb3-3d281af33bda" type="literal">Der Hypervisor kann auf einer Kontron Maschine betrieben werden.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="a5646c2d-02c7-11e9-9e58-33d596257b14" type="resource" guid="867fa3b8-ee56-11e8-a148-37a2ab1cda5a" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="037e3e4c-0c2c-11e9-83ba-4d57b06560a2">
+      <resource guid="037df029-0c2c-11e9-83ba-4d57b06560a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="037df02a-0c2c-11e9-83ba-4d57b06560a2" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="dc4bece8-0ce8-11e9-8fb3-3d281af33bda" type="literal">Der Hypervisor kann auf einer HP Maschine betrieben werden.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="04a9c5ad-0c2c-11e9-83ba-4d57b06560a2" type="resource" guid="67e9a488-02d7-11e9-9e58-33d596257b14" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c03ae927-1bfe-11e9-9896-651e5faa32a4">
+    <object statement-guid="ad1b01c2-2abb-11e9-a3f8-336d9e792e17" type="resource" guid="8e9fc8a4-1bfe-11e9-9896-651e5faa32a4" />
+  </predicate>
+</resource>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="2b203cd9-0a82-11e9-a59d-d7a0c53e291c">
+  <owns predicate="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <resource statement-guid="2a855e87-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="2a853774-4fb1-11e9-b9af-8197557ed3ae" />
+    <resource statement-guid="7851c032-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="16a24efd-0c30-11e9-83ba-4d57b06560a2" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2b203cdb-0a82-11e9-a59d-d7a0c53e291c" type="resource" guid="352e36c6-d0b1-11e8-b005-f7630e4c29c0" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2c402bcf-0a82-11e9-a59d-d7a0c53e291c" type="literal">Endpoint</object>
+  </predicate>
+  <predicate guid="5a22d682-2acf-11e9-b83f-8be423c00623">
+    <object statement-guid="2a855e87-4fb1-11e9-b9af-8197557ed3ae">
+      <resource guid="2a853774-4fb1-11e9-b9af-8197557ed3ae">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2a853776-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="4026c4e3-2acf-11e9-b83f-8be423c00623" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2e100c0e-4fb1-11e9-b9af-8197557ed3ae" type="literal">Protection Orchestration (EPO)</object>
+        </predicate>
+        <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="33218086-4fb1-11e9-b9af-8197557ed3ae" type="literal">5.9.x</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7851c032-4fb1-11e9-b9af-8197557ed3ae">
+      <resource guid="16a24efd-0c30-11e9-83ba-4d57b06560a2">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="79b4f9c1-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="4026c4e3-2acf-11e9-b83f-8be423c00623" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="254345f3-0c30-11e9-83ba-4d57b06560a2" type="literal">Threat Protection</object>
+        </predicate>
+        <predicate guid="dc432bb6-2d72-11e6-959f-d1cef44ff5fd">
+          <object statement-guid="3725fa68-0c30-11e9-83ba-4d57b06560a2" type="literal">10.5.x</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

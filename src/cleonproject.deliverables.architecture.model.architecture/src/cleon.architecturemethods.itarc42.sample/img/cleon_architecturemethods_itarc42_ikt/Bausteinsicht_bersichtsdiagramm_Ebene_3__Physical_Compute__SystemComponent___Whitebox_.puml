@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+	rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+	}		
+	rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,2ac227af-0a96-11e9-9f72-e5610a9d4cd3,Hash]

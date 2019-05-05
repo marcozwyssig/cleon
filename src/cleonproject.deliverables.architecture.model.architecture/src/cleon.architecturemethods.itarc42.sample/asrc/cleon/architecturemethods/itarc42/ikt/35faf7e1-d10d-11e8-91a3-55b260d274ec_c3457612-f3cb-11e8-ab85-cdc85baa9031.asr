@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c3457612-f3cb-11e8-ab85-cdc85baa9031">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="cddb9d76-02c7-11e9-9e58-33d596257b14" type="resource" guid="cddb7663-02c7-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bcb7b6f5-02c5-11e9-9e58-33d596257b14" type="resource" guid="90d82cf6-02c5-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="79fad67d-09ea-11e9-abef-3d869859c931" type="literal">Diese System-Konfiguration bildet die Prüfungsinstanz für die Netzwerkrichtlinien, die z. B. für eine Authentisierung an Netzwerkkomponenten via RADIUS benötigt werden.</object>
+    <object statement-guid="ce79bdca-0e09-11e9-ac05-81da9d8c018d" type="literal">Die System-Konfiguration wird auf Basis von Microsoft Windows Server realisiert.</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="cddb9d76-02c7-11e9-9e58-33d596257b14">
+      <resource guid="cddb7663-02c7-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cddb7665-02c7-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="08764d94-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="7629d634-02da-11e9-9e58-33d596257b14" type="resource" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -51,12 +51,12 @@ public class KontronServerSystemConfiguration extends DynamicResource implements
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU> selectCPUs() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_cPUs);
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU> selectCPUs() {
+    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs);
   }
 
-  public KontronServerSystemConfiguration setCPUs(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU> cPUs) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_cPUs, cPUs);
+  public KontronServerSystemConfiguration setCPUs(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU> cPUs) {
+    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs, cPUs);
     return this;
   }
     
@@ -81,12 +81,12 @@ public class KontronServerSystemConfiguration extends DynamicResource implements
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk> selectDisks() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_disks);
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk> selectDisks() {
+    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks);
   }
 
-  public KontronServerSystemConfiguration setDisks(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk> disks) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_disks, disks);
+  public KontronServerSystemConfiguration setDisks(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk> disks) {
+    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks, disks);
     return this;
   }
     
@@ -111,12 +111,12 @@ public class KontronServerSystemConfiguration extends DynamicResource implements
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMemory> selectMemory() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_memory);
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory> selectMemory() {
+    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory);
   }
 
-  public KontronServerSystemConfiguration setMemory(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMemory> memory) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_memory, memory);
+  public KontronServerSystemConfiguration setMemory(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory> memory) {
+    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory, memory);
     return this;
   }
     
@@ -177,13 +177,13 @@ public class KontronServerSystemConfiguration extends DynamicResource implements
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_cPUs, visitor);
+    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_disks, visitor);
+    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IInteraction.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.InteractiveBuildingBlock_interacts, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machinesystemconfiguration.MachinesystemconfigurationPackage.MachineSystemConfiguration_memory, visitor);
+    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -192,4 +192,4 @@ public class KontronServerSystemConfiguration extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69d06b0a-0295-11e9-9e58-33d596257b14,BZuI41DUBxB2ZOyb5VPw5RdjS3A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,69d06b0a-0295-11e9-9e58-33d596257b14,HsbT5idqvXRbKRoylPGjto+ltK4=] */

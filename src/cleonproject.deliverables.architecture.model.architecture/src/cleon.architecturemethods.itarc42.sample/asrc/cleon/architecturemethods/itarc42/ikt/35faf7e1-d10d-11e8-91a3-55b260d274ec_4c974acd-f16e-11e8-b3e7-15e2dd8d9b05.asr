@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4c974acd-f16e-11e8-b3e7-15e2dd8d9b05">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="7de79c91-02ce-11e9-9e58-33d596257b14" type="resource" guid="7de79c8e-02ce-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d044284b-021f-11e9-b327-17da2da63a8f" type="resource" guid="b0a9a475-021f-11e9-b327-17da2da63a8f" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="fea59dfb-f1a3-11e8-b3e7-15e2dd8d9b05" type="literal">Die System-Konfiguration enthält die Bereitstellung von Microsoft Windows 2016 Standard auf einer physischen Kontron Maschinen.</object>
+    <object statement-guid="e1c30a50-0cf4-11e9-be4f-03130cc057ef" type="literal">Die Windows Konfiguration enthält alle notwendigen Hardware-Treiber für den optimalen Betrieb des Betriebssystems.</object>
+    <object statement-guid="4bcb9e68-0e0d-11e9-8b4c-f9aec93d8b56" type="literal">Die Windows Konfiguration ist auf Basis des Atos Image realisiert, so dass die entsprechenden Hardening Konfigurationen (Best Practice) enthalten sind.</object>
+    <object statement-guid="87f8bd2a-0e0d-11e9-8b4c-f9aec93d8b56" type="literal">Die System-Konfiguration enthält die Bereitstellung von Microsoft Windows 2016 Standard auf einer physischen Kontron Maschinen.</object>
+  </predicate>
+  <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
+    <object statement-guid="f3abfb84-0367-11e9-90c7-5b43fd1c2d66" type="resource" guid="d5b503af-d10d-11e8-91a3-55b260d274ec" />
+    <object statement-guid="9769f575-4fb1-11e9-b9af-8197557ed3ae" type="resource" guid="2b203cd9-0a82-11e9-a59d-d7a0c53e291c" />
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="7de79c91-02ce-11e9-9e58-33d596257b14">
+      <resource guid="7de79c8e-02ce-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7de79c90-02ce-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="f435f9f3-0df4-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration kann auf einer Kontron Maschine betrieben werden.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="6e54d0ef-0c2b-11e9-83ba-4d57b06560a2" type="resource" guid="867fa3b8-ee56-11e8-a148-37a2ab1cda5a" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c03ae927-1bfe-11e9-9896-651e5faa32a4">
+    <object statement-guid="cf48ab66-1bfe-11e9-9896-651e5faa32a4" type="resource" guid="8e9fc8a4-1bfe-11e9-9896-651e5faa32a4" />
+  </predicate>
+</resource>
+

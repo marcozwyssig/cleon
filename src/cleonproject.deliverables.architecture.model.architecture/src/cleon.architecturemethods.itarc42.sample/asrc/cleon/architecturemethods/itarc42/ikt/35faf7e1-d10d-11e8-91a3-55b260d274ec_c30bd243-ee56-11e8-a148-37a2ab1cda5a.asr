@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c30bd243-ee56-11e8-a148-37a2ab1cda5a">
+  <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <resource statement-guid="4c5fc759-02cc-11e9-9e58-33d596257b14" type="resource" guid="4c5fc756-02cc-11e9-9e58-33d596257b14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="09a2aa3d-02cc-11e9-9e58-33d596257b14" type="resource" guid="ca8bd8df-02cb-11e9-9e58-33d596257b14" />
+  </predicate>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="d7ad1b31-0ce9-11e9-8fb3-3d281af33bda" type="literal">Als Technologie für die Root CA wird eine handelsübliche Microsoft Standalone Enterprise CA (Windows Server in der Rolle ADCS) verwendet. </object>
+    <object statement-guid="e6390315-0ce9-11e9-8fb3-3d281af33bda" type="literal">Die Schlüssel werden mit Microsoft ADCS Mechanismen erzeugt. So weit wie möglich werden die Standard Einstellungen von Microsoft beibehalten. Der Private Schlüssel der Root CA wird im Privaten KeyStore des Root CA Servers gespeichert. Das Schlüsselpaar der Root CA wird verschlüsselt exportiert und gesondert und geschützt aufbewahrt.</object>
+    <object statement-guid="2d550d66-0cea-11e9-8fb3-3d281af33bda" type="literal">Die Root CA wird offline gehalten und ist nicht aktiv im Betrieb verfügbar.</object>
+  </predicate>
+  <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
+    <object statement-guid="4c5fc759-02cc-11e9-9e58-33d596257b14">
+      <resource guid="4c5fc756-02cc-11e9-9e58-33d596257b14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4c5fc758-02cc-11e9-9e58-33d596257b14" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="ad55defa-0ce9-11e9-8fb3-3d281af33bda" type="literal">Die Root CA verwendet die AD CS Rolle von Microsoft Windows Server 2016.</object>
+        </predicate>
+        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
+          <object statement-guid="cca052a7-02d1-11e9-9e58-33d596257b14" type="resource" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

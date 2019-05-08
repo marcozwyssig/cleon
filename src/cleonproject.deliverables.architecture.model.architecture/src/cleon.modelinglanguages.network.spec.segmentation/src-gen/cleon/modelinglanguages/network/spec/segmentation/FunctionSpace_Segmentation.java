@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation;
+package cleon.modelinglanguages.network.spec.segmentation;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -21,16 +21,16 @@ public class FunctionSpace_Segmentation {
   public static interface IZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("518b1b93-0b79-11e9-a136-69d076e48ed1")
-    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> GetAllParents();
+    public List<cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> GetAllParents();
 
     @IDynamicResourceExtension.MethodId("72a38c28-0b79-11e9-a136-69d076e48ed1")
-    public cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.INetDomain GetNetDomainZone();
+    public cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain GetNetDomainZone();
 
     @IDynamicResourceExtension.MethodId("93024aa3-0b79-11e9-a136-69d076e48ed1")
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("a38fa265-0d1e-11e9-be4f-03130cc057ef")
-    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> GetAllChildrenZone();
+    public List<cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> GetAllChildrenZone();
 
     @IDynamicResourceExtension.MethodId("efab4698-0d1e-11e9-be4f-03130cc057ef")
     public List<cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification> GetAllClassifications();
@@ -255,9 +255,7 @@ public class FunctionSpace_Segmentation {
 
     @Override
     public <T> List<T> asList(final T any) {
-      /* Begin Protected Region [[e9acffb2-0dc8-11e9-be4f-03130cc057ef]] */
-    	return java.util.Arrays.asList(any);
-      /* End Protected Region   [[e9acffb2-0dc8-11e9-be4f-03130cc057ef]] */
+      return java.util.Arrays.asList(any);
     }
 
   }
@@ -274,4 +272,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,UWuL0/f5fn88+sA7LH7+M95nozo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,xg/AEmS139826DsgFag526hYuUE=] */

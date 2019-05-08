@@ -8,8 +8,8 @@ public interface ISegmentationSystemComponentConcept extends cleon.architecturem
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone> selectSecurityZones();
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> selectSecurityZones();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,lvZqRD2tUv9Asjgq5Nug70rgsXM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,5d2wpQOup9pxNjXeXSBL1GxukpE=] */

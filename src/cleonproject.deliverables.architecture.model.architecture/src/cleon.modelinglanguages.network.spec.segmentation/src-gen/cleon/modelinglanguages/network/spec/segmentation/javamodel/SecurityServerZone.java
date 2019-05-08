@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel;
+package cleon.modelinglanguages.network.spec.segmentation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -60,12 +60,12 @@ public class SecurityServerZone extends DynamicResource implements ISecurityServ
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone> selectSecuritySubZones() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SecurityZone_securitySubZones);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone> selectSecuritySubZones() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones);
   }
 
-  public SecurityServerZone setSecuritySubZones(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone> securitySubZones) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SecurityZone_securitySubZones, securitySubZones);
+  public SecurityServerZone setSecuritySubZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone> securitySubZones) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones, securitySubZones);
     return this;
   }
     
@@ -80,12 +80,12 @@ public class SecurityServerZone extends DynamicResource implements ISecurityServ
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> selectZones() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> selectZones() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones);
   }
 
-  public SecurityServerZone setZones(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> zones) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones, zones);
+  public SecurityServerZone setZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> zones) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, zones);
     return this;
   }
     
@@ -97,10 +97,10 @@ public class SecurityServerZone extends DynamicResource implements ISecurityServ
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SecurityZone_securitySubZones, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3af87037-0b75-11e9-a136-69d076e48ed1,UBVqQZfLjJOX2gXun87CXiqTzHY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3af87037-0b75-11e9-a136-69d076e48ed1,cs/3Fghfy+73jW42u0svME5oLZk=] */

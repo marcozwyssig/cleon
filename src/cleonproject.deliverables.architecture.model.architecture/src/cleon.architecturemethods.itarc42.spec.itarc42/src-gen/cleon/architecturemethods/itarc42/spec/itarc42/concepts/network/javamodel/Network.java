@@ -150,11 +150,11 @@ public class Network extends DynamicResource implements INetwork {
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone selectSecuritySubZone() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone);
+  public cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone selectSecuritySubZone() {
+    return _getSingle(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone);
   }
 
-  public Network setSecuritySubZone(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone securitySubZone) {
+  public Network setSecuritySubZone(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone securitySubZone) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone, securitySubZone);
     return this;
   }
@@ -196,14 +196,14 @@ public class Network extends DynamicResource implements INetwork {
     _acceptSingle(cleon.common.resources.spec.resources.ip.javamodel.IIPv4.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_network, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_networkNodes, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork> selectToMeSecuritySubZone(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork> selectToMeSecuritySubZone(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.Network_securitySubZone, object.getResource());
   }
   
@@ -220,4 +220,4 @@ public class Network extends DynamicResource implements INetwork {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,2udztrENlJWiJJOyktUF1zNvJ0Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,S4o8OmlBzLxjVDeON/VDh5fz1to=] */

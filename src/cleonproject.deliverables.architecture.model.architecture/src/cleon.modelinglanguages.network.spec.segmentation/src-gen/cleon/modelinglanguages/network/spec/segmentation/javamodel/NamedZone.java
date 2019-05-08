@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel;
+package cleon.modelinglanguages.network.spec.segmentation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class NamedZone extends DynamicResource implements INamedZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0325c007-0b77-11e9-a136-69d076e48ed1,sOLbquigfVsj+NOW7MP2S62n/TU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0325c007-0b77-11e9-a136-69d076e48ed1,aDASpNcMtQCe55lw3PbHJrdxNF4=] */

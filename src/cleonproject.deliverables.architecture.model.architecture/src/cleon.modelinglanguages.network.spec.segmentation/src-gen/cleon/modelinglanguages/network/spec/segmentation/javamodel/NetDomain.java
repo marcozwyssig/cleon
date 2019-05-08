@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel;
+package cleon.modelinglanguages.network.spec.segmentation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -60,12 +60,12 @@ public class NetDomain extends DynamicResource implements INetDomain {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegment> selectSegments() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.NetDomain_segments);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> selectSegments() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments);
   }
 
-  public NetDomain setSegments(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegment> segments) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.NetDomain_segments, segments);
+  public NetDomain setSegments(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> segments) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, segments);
     return this;
   }
     
@@ -80,12 +80,12 @@ public class NetDomain extends DynamicResource implements INetDomain {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> selectZones() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> selectZones() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones);
   }
 
-  public NetDomain setZones(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone> zones) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones, zones);
+  public NetDomain setZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> zones) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, zones);
     return this;
   }
     
@@ -97,16 +97,16 @@ public class NetDomain extends DynamicResource implements INetDomain {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.NetDomain_segments, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.Zone_zones, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.INetDomain selectToMeSegments(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegment object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.INetDomain.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.NetDomain_segments, object.getResource());
+  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain selectToMeSegments(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,gqTQS03L9K5UOFAVN0Pk/IPiqFI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,9Hd9BJaLRuNbQaUT2viwRg5bPKc=] */

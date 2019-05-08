@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel;
+package cleon.modelinglanguages.network.spec.segmentation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -91,12 +91,12 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone selectZone() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationZone_zone);
+  public cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone selectZone() {
+    return _getSingle(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentationZone_zone);
   }
 
-  public SegmentationZone setZone(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone zone) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationZone_zone, zone);
+  public SegmentationZone setZone(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone zone) {
+    _setSingle(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentationZone_zone, zone);
     return this;
   }
     
@@ -111,14 +111,14 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationZone_zone, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentationZone_zone, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegmentationZone selectToMeZone(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.IZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegmentationZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationZone_zone, object.getResource());
+  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentationZone selectToMeZone(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentationZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentationZone_zone, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ccaeef49-0d1d-11e9-be4f-03130cc057ef,ALJZKo+QrveM2VF5Rtu4Vt4wuR0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ccaeef49-0d1d-11e9-be4f-03130cc057ef,XacAg7nGMWvAOFrUPF7/JtZoJyI=] */

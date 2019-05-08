@@ -1308,6 +1308,9 @@
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="e9acffb9-0dc8-11e9-be4f-03130cc057ef" type="literal">false</object>
               </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="2eb3e603-7198-11e9-98e0-2719d32d2629" type="literal">return java.util.Arrays.asList(any);</object>
+              </predicate>
             </resource>
           </object>
         </predicate>

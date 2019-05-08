@@ -10,7 +10,7 @@ public interface INetwork extends cleon.modelinglanguages.network.spec.network.j
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecuritySubZone selectSecuritySubZone();
+  public cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone selectSecuritySubZone();
   
   public cleon.common.resources.spec.resources.ip.javamodel.IIPv4 selectNetwork();
   
@@ -20,4 +20,4 @@ public interface INetwork extends cleon.modelinglanguages.network.spec.network.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,Fb4iCwGXCdJPEm9tYrOXR5+ehXw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,1aNOaw1IA1zdhsng4GJyX6EMRN8=] */

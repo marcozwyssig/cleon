@@ -81,11 +81,11 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone> selectSecurityZones() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> selectSecurityZones() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones);
   }
 
-  public SegmentationSystemComponentConcept setSecurityZones(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone> securityZones) {
+  public SegmentationSystemComponentConcept setSecurityZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> securityZones) {
     _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, securityZones);
     return this;
   }
@@ -130,7 +130,7 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.ConceptsPackage.SystemComponentConcept_systemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -138,9 +138,9 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectToMeSecurityZones(cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISecurityZone object) {
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectToMeSecurityZones(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,csihUrKXf0oiUWomCqv06q0ls+E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,ER2z4P6GVngEOVGY5adaMQIl4Hc=] */

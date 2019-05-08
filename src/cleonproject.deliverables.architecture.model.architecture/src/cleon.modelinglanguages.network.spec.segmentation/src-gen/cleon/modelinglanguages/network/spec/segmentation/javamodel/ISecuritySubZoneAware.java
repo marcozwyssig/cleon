@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.segmentation.javamodel;
+package cleon.modelinglanguages.network.spec.segmentation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface ISecuritySubZoneAware extends ch.actifsource.core.javamodel.IRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,02abe8e7-0b84-11e9-a136-69d076e48ed1,LId2Z9rDJS+l4U6BiwaDpFMj59Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,02abe8e7-0b84-11e9-a136-69d076e48ed1,Wi/3NHufT05n796R71ZdXVKoZ8E=] */

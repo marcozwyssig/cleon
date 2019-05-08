@@ -20,8 +20,8 @@ public class FunctionSpace_Test_Input_Connection {
 
   public static interface ITestInputConnectionFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("0cb43ed4-6d6e-11e9-b84d-d319514e887f")
-    public java.lang.String GetName();
+    @IDynamicResourceExtension.MethodId("0ee214a0-718f-11e9-98e0-2719d32d2629")
+    public java.lang.String SimpleName();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Test_Input_Connection {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,fR4LUE9ZyC1uM85K1zcnK5iFxds=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,RFvZroLQ8jPeYYiSG//4rqjqtfA=] */

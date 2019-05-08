@@ -70,6 +70,81 @@ public class FunctionSpace_TestStep {
 
   }
 
+  public static interface ITestUserAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9dfe0c68-7182-11e9-98e0-2719d32d2629")
+    public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+
+  }
+  
+  public static interface ITestUserAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestUserAwareFunctionsImpl implements ITestUserAwareFunctionsImpl {
+
+    public static final ITestUserAwareFunctionsImpl INSTANCE = new TestUserAwareFunctionsImpl();
+
+    private TestUserAwareFunctionsImpl() {}
+
+  }
+  
+  public static class TestUserAwareFunctions {
+
+    private TestUserAwareFunctions() {}
+
+  }
+
+  public static interface ITestInputUserFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("bdcc234f-7182-11e9-98e0-2719d32d2629")
+    public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+
+  }
+  
+  public static interface ITestInputUserFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputUserFunctionsImpl implements ITestInputUserFunctionsImpl {
+
+    public static final ITestInputUserFunctionsImpl INSTANCE = new TestInputUserFunctionsImpl();
+
+    private TestInputUserFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputUserFunctions {
+
+    private TestInputUserFunctions() {}
+
+  }
+
+  public static interface ITestInputConnectionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c4c3e442-7182-11e9-98e0-2719d32d2629")
+    public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+
+  }
+  
+  public static interface ITestInputConnectionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputConnectionFunctionsImpl implements ITestInputConnectionFunctionsImpl {
+
+    public static final ITestInputConnectionFunctionsImpl INSTANCE = new TestInputConnectionFunctionsImpl();
+
+    private TestInputConnectionFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputConnectionFunctions {
+
+    private TestInputConnectionFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,PKQ7ladQxvDYPmrvQho9yt43VHk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,mIFYAZaMnODGJ0/tVcNpV1IDj20=] */

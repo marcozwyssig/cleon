@@ -17,6 +17,8 @@ public class Test_preconditionPackage {
   public static final Resource InfrastractureTestPrecondition = new Resource("261a417f-6d8a-11e9-b84d-d319514e887f");
   public static final Resource TestInfrastractureAware = new Resource("413fdf28-6d8a-11e9-b84d-d319514e887f");
   public static final Resource InfrastractureOverrideTestPrecondition = new Resource("689dfed3-6d8a-11e9-b84d-d319514e887f");
+  public static final Resource DynamicTestDependencyPrecondition = new Resource("4c622a80-7168-11e9-98e0-2719d32d2629");
+  public static final Resource DynamicTestDependencyPrecondition_dependsOn = new Resource("48b11f02-718f-11e9-98e0-2719d32d2629");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +39,4 @@ public class Test_preconditionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition,L/wZCcORLVOxLgE+U0Rn7JdZWKU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition,q5JhFBYEyL9r+yCbAqDAzyq2B+4=] */

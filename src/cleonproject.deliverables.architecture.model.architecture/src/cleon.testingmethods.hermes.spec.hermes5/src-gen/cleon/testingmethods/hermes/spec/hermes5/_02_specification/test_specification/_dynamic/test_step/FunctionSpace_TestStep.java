@@ -100,6 +100,9 @@ public class FunctionSpace_TestStep {
     @IDynamicResourceExtension.MethodId("bdcc234f-7182-11e9-98e0-2719d32d2629")
     public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
 
+    @IDynamicResourceExtension.MethodId("936782dd-7199-11e9-98e0-2719d32d2629")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface ITestInputUserFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -145,6 +148,34 @@ public class FunctionSpace_TestStep {
 
   }
 
+  public static interface ITestInputToolFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("55cc2dc0-7199-11e9-98e0-2719d32d2629")
+    public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+
+    @IDynamicResourceExtension.MethodId("f10a9c7d-7199-11e9-98e0-2719d32d2629")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface ITestInputToolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputToolFunctionsImpl implements ITestInputToolFunctionsImpl {
+
+    public static final ITestInputToolFunctionsImpl INSTANCE = new TestInputToolFunctionsImpl();
+
+    private TestInputToolFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputToolFunctions {
+
+    private TestInputToolFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,mIFYAZaMnODGJ0/tVcNpV1IDj20=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,ULto5j6uLrTGiLaL//O0jIIqKFA=] */

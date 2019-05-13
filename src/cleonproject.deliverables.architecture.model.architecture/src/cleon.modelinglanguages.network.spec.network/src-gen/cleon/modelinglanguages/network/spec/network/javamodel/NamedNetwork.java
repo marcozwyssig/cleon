@@ -31,6 +31,15 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   // attributes
   
   @Override
+  public java.lang.Integer selectVLAN() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN);
+  }
+    
+  public void setVLAN(java.lang.Integer vLAN) {
+     _setSingleAttribute(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN, vLAN);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -70,6 +79,16 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   }
     
   @Override
+  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask selectCidr() {
+    return _getSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr);
+  }
+
+  public NamedNetwork setCidr(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask cidr) {
+    _setSingle(cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, cidr);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
@@ -90,22 +109,22 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   }
     
   @Override
-  public cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask selectIPv4_Mask() {
-    return _getSingle(cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Mask_aE_Aware_iPv4_aE_Mask);
+  public cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public NamedNetwork setIPv4_Mask(cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask iPv4_Mask) {
-    _setSingle(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Mask_aE_Aware_iPv4_aE_Mask, iPv4_Mask);
+  public NamedNetwork setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode> selectNetworkNodes() {
-    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetwork_networkNodes);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> selectNode() {
+    return _getMap(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node);
   }
 
-  public NamedNetwork setNetworkNodes(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode> networkNodes) {
-    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetwork_networkNodes, networkNodes);
+  public NamedNetwork setNode(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> node) {
+    _setMap(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node, node);
     return this;
   }
     
@@ -133,24 +152,20 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
-    _acceptSingle(cleon.common.resources.spec.resources.ip.javamodel.IIPv4_Mask.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Mask_aE_Aware_iPv4_aE_Mask, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetwork_networkNodes, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
+    _acceptMap(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // toMeRelations
-  
-  public static cleon.modelinglanguages.network.spec.network.javamodel.INamedNetwork selectToMeNetworkNodes(cleon.modelinglanguages.network.spec.network.javamodel.INamedNetworkNode object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.network.javamodel.INamedNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NamedNetwork_networkNodes, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,G8jvxVAm2Ow9zKx8dZK70jpuEFk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,EwN0Zr77N992ru6AJmYo7M4GJHU=] */

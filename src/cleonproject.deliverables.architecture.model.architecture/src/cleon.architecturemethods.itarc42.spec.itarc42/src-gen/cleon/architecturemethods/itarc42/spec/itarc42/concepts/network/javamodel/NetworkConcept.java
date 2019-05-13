@@ -81,11 +81,11 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork> selectNetworks() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INetwork> selectNetworks() {
+    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks);
   }
 
-  public NetworkConcept setNetworks(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork> networks) {
+  public NetworkConcept setNetworks(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INetwork> networks) {
     _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, networks);
     return this;
   }
@@ -120,16 +120,16 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept selectToMeNetworks(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork object) {
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept selectToMeNetworks(cleon.modelinglanguages.network.spec.network.javamodel.INetwork object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,qFhey4m6u6RS9x5T542oITpkAZI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,W5VPg+fmmUUvtWXhc3qVYbPgLgA=] */

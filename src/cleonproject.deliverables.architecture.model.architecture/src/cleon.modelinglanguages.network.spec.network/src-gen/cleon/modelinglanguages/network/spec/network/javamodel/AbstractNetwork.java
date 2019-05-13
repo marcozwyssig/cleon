@@ -11,11 +11,9 @@ public abstract class AbstractNetwork extends DynamicResource implements IAbstra
     super(IAbstractNetwork.TYPE_ID);
   }
   
-  // toMeRelations
-  
-  public static cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork selectToMeNetworkNodes(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_networkNodes, object.getResource());
+  public static cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork selectToMeNode(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,74d72409-092f-11e9-8c40-11db3668c0c9,DJfiwdCuBpDGcoc1XK+1SxiR7Ms=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,74d72409-092f-11e9-8c40-11db3668c0c9,v6qPsBrv/R8EJpdfbLr7Yxx3xB4=] */

@@ -42,12 +42,22 @@ public class NamedNetworkNode extends DynamicResource implements INamedNetworkNo
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.resources.spec.resources.ip.javamodel.IIPv4> selectIPv4s() {
-    return _getList(cleon.common.resources.spec.resources.ip.javamodel.IIPv4.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Addresses_aE_Aware_iPv4s);
+  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D selectIPv4_D() {
+    return _getSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkNode_iPv4_aE_D);
   }
 
-  public NamedNetworkNode setIPv4s(java.util.List<? extends cleon.common.resources.spec.resources.ip.javamodel.IIPv4> iPv4s) {
-    _setList(cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Addresses_aE_Aware_iPv4s, iPv4s);
+  public NamedNetworkNode setIPv4_D(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D iPv4_D) {
+    _setSingle(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkNode_iPv4_aE_D, iPv4_D);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public NamedNetworkNode setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
     
@@ -67,9 +77,10 @@ public class NamedNetworkNode extends DynamicResource implements INamedNetworkNo
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.resources.spec.resources.ip.javamodel.IIPv4.class, cleon.common.resources.spec.resources.ip.IpPackage.IPv4_aE_Addresses_aE_Aware_iPv4s, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
+    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f896998a-0930-11e9-8c40-11db3668c0c9,0c5pbknSh5ukyF7LJiF2DDNOj90=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4e6496f-7403-11e9-8765-0925552fc2b7,cjIzBlTapXKptlbRKDGOKjksHDY=] */

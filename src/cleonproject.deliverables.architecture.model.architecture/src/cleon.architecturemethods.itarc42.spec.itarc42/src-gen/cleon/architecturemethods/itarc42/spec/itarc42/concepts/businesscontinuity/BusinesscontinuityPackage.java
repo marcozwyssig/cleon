@@ -4,10 +4,10 @@ import ch.actifsource.core.Resource;
 
 public class BusinesscontinuityPackage {
   
-  public static final Resource BusinessContinuity = new Resource("e2395fff-0eae-11e9-9f19-6d15636f4ecc");
-  public static final Resource BusinessContinuityConcept = new Resource("40e8c0a9-1d52-11e9-8222-13cd25917917");
-  public static final Resource BusinessContinuity_availability = new Resource("e0be6b3a-1d52-11e9-8222-13cd25917917");
-  public static final Resource BusinessContinuity_backup = new Resource("e4e076a2-1d52-11e9-8222-13cd25917917");
+  public static final Resource BusinessContinuityConcept = new Resource("e2395fff-0eae-11e9-9f19-6d15636f4ecc");
+  public static final Resource AbstractBusinessContinuityConcept = new Resource("40e8c0a9-1d52-11e9-8222-13cd25917917");
+  public static final Resource BusinessContinuityConcept_availability = new Resource("e0be6b3a-1d52-11e9-8222-13cd25917917");
+  public static final Resource BusinessContinuityConcept_backup = new Resource("e4e076a2-1d52-11e9-8222-13cd25917917");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +28,4 @@ public class BusinesscontinuityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity,mWKqp/38UfykQ4R2kN00fgl9cds=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity,YUl6h+mR4fYbQLOafg3KHx0QhhE=] */

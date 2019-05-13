@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="68345145-eab1-11e8-88d3-bfc6b992bdec">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="358ab678-71ab-11e9-98e0-2719d32d2629" type="resource" guid="358956e4-71ab-11e9-98e0-2719d32d2629" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="68347857-eab1-11e8-88d3-bfc6b992bdec" type="resource" guid="cf0752a5-0785-11db-af79-437b1ec5a51d" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6834c67e-eab1-11e8-88d3-bfc6b992bdec" type="literal">IPv4</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="358ab678-71ab-11e9-98e0-2719d32d2629">
+      <resource guid="358956e4-71ab-11e9-98e0-2719d32d2629">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="358956e5-71ab-11e9-98e0-2719d32d2629" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="358956e6-71ab-11e9-98e0-2719d32d2629" type="literal">ch.actifsource.core.model.aspects.impl.StringLiteralAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="358956e7-71ab-11e9-98e0-2719d32d2629" type="resource" guid="cf0752a4-0785-11db-af79-437b1ec5a51d" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="c0cc10c6-44d1-11e4-ae59-0560f6197c88">
+    <object statement-guid="b89e4578-71aa-11e9-98e0-2719d32d2629" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+</resource>
+

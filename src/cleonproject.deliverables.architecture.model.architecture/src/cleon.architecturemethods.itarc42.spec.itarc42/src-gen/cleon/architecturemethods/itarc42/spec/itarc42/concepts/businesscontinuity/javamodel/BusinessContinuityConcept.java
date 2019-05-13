@@ -51,6 +51,26 @@ public class BusinessContinuityConcept extends DynamicResource implements IBusin
   // relations
   
   @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailability selectAvailability() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailability.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_availability);
+  }
+
+  public BusinessContinuityConcept setAvailability(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailability availability) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_availability, availability);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackup selectBackup() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup);
+  }
+
+  public BusinessContinuityConcept setBackup(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackup backup) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup, backup);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
@@ -97,11 +117,23 @@ public class BusinessContinuityConcept extends DynamicResource implements IBusin
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailability.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_availability, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept selectToMeAvailability(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailability object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_availability, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept selectToMeBackup(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackup object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.BusinesscontinuityPackage.BusinessContinuityConcept_backup, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,40e8c0a9-1d52-11e9-8222-13cd25917917,Tl5u1muke+zDQTvBKU/rS35CjIo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2395fff-0eae-11e9-9f19-6d15636f4ecc,r/EpPN5nht7HdjlWRyHBJG5hWw0=] */

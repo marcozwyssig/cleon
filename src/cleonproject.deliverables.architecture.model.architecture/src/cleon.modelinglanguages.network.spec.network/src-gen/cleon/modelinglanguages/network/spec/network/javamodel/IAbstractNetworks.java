@@ -8,8 +8,10 @@ public interface IAbstractNetworks extends cleon.modelinglanguages.network.spec.
   
   // relations
   
+  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange selectRange();
+  
   public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork> selectNetworks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,66edbc85-092f-11e9-8c40-11db3668c0c9,wN8tfwZE0W3w3iNEI3ky1pT9hwo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,66edbc85-092f-11e9-8c40-11db3668c0c9,o3wXmqQqNUOudTljUaUsxbgmV4s=] */

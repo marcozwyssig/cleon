@@ -8,8 +8,8 @@ public interface INetworkConcept extends cleon.architecturemethods.itarc42.spec.
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetwork> selectNetworks();
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INetwork> selectNetworks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,keGwU1hto/E02VtxlbH3FMJoKlg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,iWlkYZHLLMZMEftejZ/rgjNRQng=] */

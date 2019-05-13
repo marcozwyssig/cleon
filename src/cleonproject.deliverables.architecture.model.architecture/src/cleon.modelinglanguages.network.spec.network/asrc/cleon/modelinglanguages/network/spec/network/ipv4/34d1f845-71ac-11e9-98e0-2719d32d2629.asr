@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="34d1f845-71ac-11e9-98e0-2719d32d2629">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="51f5d6a3-71ac-11e9-98e0-2719d32d2629" type="resource" guid="51f5616d-71ac-11e9-98e0-2719d32d2629" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="34d21f57-71ac-11e9-98e0-2719d32d2629" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="389d30c8-71ac-11e9-98e0-2719d32d2629" type="resource" guid="22c1cb63-71ac-11e9-98e0-2719d32d2629" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="51f5d6a3-71ac-11e9-98e0-2719d32d2629">
+      <resource guid="51f5616d-71ac-11e9-98e0-2719d32d2629">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="68793477-73d6-11e9-8fab-1148e9d80792" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="51f5af91-71ac-11e9-98e0-2719d32d2629" type="literal">iPv4_B</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="51f5fdb4-71ac-11e9-98e0-2719d32d2629" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="51f624cf-71ac-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="51f6c118-71ac-11e9-98e0-2719d32d2629" type="resource" guid="3f5e9f75-71ac-11e9-98e0-2719d32d2629" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="34d29488-71ac-11e9-98e0-2719d32d2629" type="literal">IPv4_A</object>
+  </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="a3689ac3-73e4-11e9-9cd4-8d88045ca5f3" type="literal">false</object>
+  </predicate>
+</resource>
+

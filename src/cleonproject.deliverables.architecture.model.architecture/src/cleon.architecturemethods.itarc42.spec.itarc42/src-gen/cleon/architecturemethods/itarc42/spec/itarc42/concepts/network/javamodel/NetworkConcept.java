@@ -101,6 +101,16 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
   }
     
   @Override
+  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange selectRange() {
+    return _getSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range);
+  }
+
+  public NetworkConcept setRange(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange range) {
+    _setSingle(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range, range);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -122,6 +132,7 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -132,4 +143,4 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,W5VPg+fmmUUvtWXhc3qVYbPgLgA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,sKtZvynfeb98RfDramFVDoRtFrA=] */

@@ -8,7 +8,47 @@
 		
 		
 		
-		
+		<db:section xml:id="ea.dcee3945-754a-11e9-8ca5-a73df0698911">
+			<db:title>Referenzen</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="10%" />
+				<db:col width="20%" />
+				<db:col width="30%" />
+				<db:col width="20%" />
+				<db:col width="20%" />		
+				<db:thead>
+					<db:tr>
+						<db:th>Nr.</db:th>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+						<db:th>Version</db:th>
+						<db:th>Quelle</db:th>										
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para><db:emphasis role="strong">[7]</db:emphasis></db:para>
+						</db:td>
+						<db:td>			
+							<db:para>111</db:para>
+						</db:td>
+						<db:td>			
+							<db:para></db:para>
+						</db:td>			
+						<db:td>
+							<db:para>11</db:para>
+						</db:td>			
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>	
+			</db:informaltable>
+			
+		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.4f75a0ad-66a0-11e9-9ec9-5fbc84faaeb1">
 		<db:title>Testvoraussetzungen</db:title>
@@ -73,6 +113,14 @@
 					
 					<db:section xml:id="ea.3a6e6f87-516a-11e9-bb61-971a423d31e9">
 						<db:title>TS-003_sss_sdfsdf_FunctionalTest</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+					<db:section xml:id="ea.686c0559-754a-11e9-8ca5-a73df0698911">
+						<db:title>TS-004_sss_11_Reference</db:title>
 						
 						
 						

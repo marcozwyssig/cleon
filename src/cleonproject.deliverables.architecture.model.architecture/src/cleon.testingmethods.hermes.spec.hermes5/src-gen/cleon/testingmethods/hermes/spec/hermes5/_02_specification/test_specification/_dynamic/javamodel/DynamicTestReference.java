@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class DynamicTestGroup extends DynamicResource implements IDynamicTestGroup {
+public class DynamicTestReference extends DynamicResource implements IDynamicTestReference {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDynamicTestGroup> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDynamicTestGroup>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDynamicTestReference> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IDynamicTestReference>() {
     
     @Override
-    public IDynamicTestGroup create() {
-      return new DynamicTestGroup();
+    public IDynamicTestReference create() {
+      return new DynamicTestReference();
     }
     
     @Override
-    public IDynamicTestGroup create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new DynamicTestGroup(resourceRepository, resource);
+    public IDynamicTestReference create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new DynamicTestReference(resourceRepository, resource);
     }
   
   };
 
-  public DynamicTestGroup() {
-    super(IDynamicTestGroup.TYPE_ID);
+  public DynamicTestReference() {
+    super(IDynamicTestReference.TYPE_ID);
   }
   
-  public DynamicTestGroup(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IDynamicTestGroup.TYPE_ID);
+  public DynamicTestReference(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IDynamicTestReference.TYPE_ID);
   }
 
   // attributes
@@ -49,6 +49,15 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -64,7 +73,7 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
 
-  public DynamicTestGroup setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+  public DynamicTestReference setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -74,18 +83,18 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public DynamicTestGroup setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+  public DynamicTestReference setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest> selectDynamicTest() {
-    return _getList(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestGroup_dynamicTest);
+  public cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public DynamicTestGroup setDynamicTest(java.util.List<? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest> dynamicTest) {
-    _setList(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestGroup_dynamicTest, dynamicTest);
+  public DynamicTestReference setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
@@ -94,8 +103,18 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public DynamicTestGroup setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+  public DynamicTestReference setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.spec.doc.chapter.references.javamodel.IReference selectReference() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestReference_reference);
+  }
+
+  public DynamicTestReference setReference(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference reference) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestReference_reference, reference);
     return this;
   }
     
@@ -104,7 +123,7 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public DynamicTestGroup setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public DynamicTestReference setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -115,20 +134,22 @@ public class DynamicTestGroup extends DynamicResource implements IDynamicTestGro
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestGroup_dynamicTest, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestReference_reference, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup selectToMeDynamicTest(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestGroup_dynamicTest, object.getResource());
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestReference> selectToMeReference(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference object) {
+    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestReference.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTestReference_reference, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,810c4022-4f8c-11e9-ad5d-977b17aab907,0QqkOOAVe/rDv7fTkrnEH0wFCsQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd532372-7544-11e9-8ca5-a73df0698911,zpZrWlNOo08QeQNYiSrWIF8GSlg=] */

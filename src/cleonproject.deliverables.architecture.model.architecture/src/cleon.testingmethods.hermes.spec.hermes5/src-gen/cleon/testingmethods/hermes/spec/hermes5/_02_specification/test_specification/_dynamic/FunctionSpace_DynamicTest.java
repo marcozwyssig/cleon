@@ -77,9 +77,6 @@ public class FunctionSpace_DynamicTest {
 
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("8af66c32-5166-11e9-bb61-971a423d31e9")
-    public java.lang.String GetTestName();
-
     @IDynamicResourceExtension.MethodId("d8bc7687-6b31-11e9-bd30-87fcf852dea7")
     public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestInfrastractureAware> GetAllPrecondition();
 
@@ -184,6 +181,56 @@ public class FunctionSpace_DynamicTest {
 
   }
 
+  public static interface IAbstractDynamicTestFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8af66c32-5166-11e9-bb61-971a423d31e9")
+    public java.lang.String GetTestName();
+
+  }
+  
+  public static interface IAbstractDynamicTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractDynamicTestFunctionsImpl implements IAbstractDynamicTestFunctionsImpl {
+
+    public static final IAbstractDynamicTestFunctionsImpl INSTANCE = new AbstractDynamicTestFunctionsImpl();
+
+    private AbstractDynamicTestFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractDynamicTestFunctions {
+
+    private AbstractDynamicTestFunctions() {}
+
+  }
+
+  public static interface IDynamicTestReferenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2b021254-7545-11e9-8ca5-a73df0698911")
+    public java.lang.String GetName();
+
+  }
+  
+  public static interface IDynamicTestReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DynamicTestReferenceFunctionsImpl implements IDynamicTestReferenceFunctionsImpl {
+
+    public static final IDynamicTestReferenceFunctionsImpl INSTANCE = new DynamicTestReferenceFunctionsImpl();
+
+    private DynamicTestReferenceFunctionsImpl() {}
+
+  }
+  
+  public static class DynamicTestReferenceFunctions {
+
+    private DynamicTestReferenceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,KVYHWBCuie6QHQcfIHfFmbiaXBk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,nUN9pj21o4hCirvFsR4ZhltScI0=] */

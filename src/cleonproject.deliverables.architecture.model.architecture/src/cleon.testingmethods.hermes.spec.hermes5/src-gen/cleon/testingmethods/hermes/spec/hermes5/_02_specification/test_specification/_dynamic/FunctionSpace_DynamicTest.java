@@ -78,7 +78,7 @@ public class FunctionSpace_DynamicTest {
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d8bc7687-6b31-11e9-bd30-87fcf852dea7")
-    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestInfrastractureAware> GetAllPrecondition();
+    public List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetAllPrecondition();
 
     @IDynamicResourceExtension.MethodId("2f38f888-7191-11e9-98e0-2719d32d2629")
     public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup GetGlobalPreconditionGroup();
@@ -233,4 +233,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,nUN9pj21o4hCirvFsR4ZhltScI0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,PQ1VT3HVhvlJjG+Y+sqEiXlWsr4=] */

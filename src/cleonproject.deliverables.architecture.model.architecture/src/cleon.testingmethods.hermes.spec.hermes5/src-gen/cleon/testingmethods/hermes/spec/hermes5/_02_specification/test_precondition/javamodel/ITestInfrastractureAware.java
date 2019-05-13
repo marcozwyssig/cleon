@@ -2,7 +2,7 @@ package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ITestInfrastractureAware extends ch.actifsource.core.javamodel.IResource {
+public interface ITestInfrastractureAware extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("413fdf28-6d8a-11e9-b84d-d319514e887f");
   
@@ -12,4 +12,4 @@ public interface ITestInfrastractureAware extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,413fdf28-6d8a-11e9-b84d-d319514e887f,rhBvb0j30o17ndYI8FKd3N63FOo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,413fdf28-6d8a-11e9-b84d-d319514e887f,2b/iPwEDfA104MFTL/styn7we7o=] */

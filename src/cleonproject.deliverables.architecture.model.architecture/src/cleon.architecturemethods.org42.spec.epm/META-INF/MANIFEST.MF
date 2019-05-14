@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.org42.spec.epm
 Bundle-SymbolicName: cleon.architecturemethods.org42.spec.epm.builtin;singleton:=true
-Bundle-Version: 0.4.109
+Bundle-Version: 0.4.110
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,9 +12,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.modelinglanguages.bpmn.spec.bpmn2.builtin;bundle-version="0.4.109",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.109",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.109",
+ cleon.modelinglanguages.bpmn.spec.bpmn2.builtin;bundle-version="0.4.110",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.110",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.110",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.org42.spec.epm,
  cleon.architecturemethods.org42.spec.epm.javamodel

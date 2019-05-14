@@ -14,6 +14,7 @@ import java.util.List;
 
 import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.IAbstractTestPrecondition;
 import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestPrecondition;
+import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup;
 import cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IOverrideTestPrecondition;
 
 /* End Protected Region   [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
@@ -231,6 +232,70 @@ public class FunctionSpace_DynamicTest {
 
   }
 
+  public static interface IDynamicTestLevelsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
+    public java.lang.Integer Count();
+
+  }
+  
+  public static interface IDynamicTestLevelsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels dynamicTestLevels);
+
+  }
+  
+  public static class DynamicTestLevelsFunctionsImpl implements IDynamicTestLevelsFunctionsImpl {
+
+    public static final IDynamicTestLevelsFunctionsImpl INSTANCE = new DynamicTestLevelsFunctionsImpl();
+
+    private DynamicTestLevelsFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels dynamicTestLevels) {
+      /* Begin Protected Region [[076da764-7618-11e9-bd98-2b827cfec50e]] */
+    	return dynamicTestLevels.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
+      /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
+    }
+
+  }
+  
+  public static class DynamicTestLevelsFunctions {
+
+    private DynamicTestLevelsFunctions() {}
+
+    public static java.lang.Integer Count(final cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels dynamicTestLevels) {
+      return DynamicResourceUtil.invoke(IDynamicTestLevelsFunctionsImpl.class, DynamicTestLevelsFunctionsImpl.INSTANCE, dynamicTestLevels).Count(dynamicTestLevels);
+    }
+
+  }
+
+  public static interface IDynamicTestGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("41634817-761f-11e9-bd98-2b827cfec50e")
+    public java.lang.Integer Count();
+
+  }
+  
+  public static interface IDynamicTestGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DynamicTestGroupFunctionsImpl implements IDynamicTestGroupFunctionsImpl {
+
+    public static final IDynamicTestGroupFunctionsImpl INSTANCE = new DynamicTestGroupFunctionsImpl();
+
+    private DynamicTestGroupFunctionsImpl() {}
+
+  }
+  
+  public static class DynamicTestGroupFunctions {
+
+    private DynamicTestGroupFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,PQ1VT3HVhvlJjG+Y+sqEiXlWsr4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,8BTJrvl56igXU+fkxjDzgc5wdJk=] */

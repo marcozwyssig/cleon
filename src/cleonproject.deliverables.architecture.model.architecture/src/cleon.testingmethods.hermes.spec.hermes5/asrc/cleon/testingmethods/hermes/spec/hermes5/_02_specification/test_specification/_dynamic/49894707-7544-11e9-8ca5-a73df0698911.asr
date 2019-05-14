@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="49894707-7544-11e9-8ca5-a73df0698911">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="18dff1e3-7633-11e9-bd98-2b827cfec50e" type="resource" guid="6fb9ee45-516a-11e9-bb61-971a423d31e9" />
+  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="bc23cfba-7544-11e9-8ca5-a73df0698911" type="resource" guid="bc235a86-7544-11e9-8ca5-a73df0698911">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -29,6 +32,24 @@
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="9e2a513a-7544-11e9-8ca5-a73df0698911" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
     <object statement-guid="4b26a3d3-7544-11e9-8ca5-a73df0698911" type="resource" guid="a13160f5-1db6-11e6-974b-630b7f5d3b95" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="18dff1e3-7633-11e9-bd98-2b827cfec50e">
+      <resource guid="6fb9ee45-516a-11e9-bb61-971a423d31e9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6fb9ee47-516a-11e9-bb61-971a423d31e9" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="79b21db7-516a-11e9-bb61-971a423d31e9" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="70f9e85d-516a-11e9-bb61-971a423d31e9" type="literal">testGoals</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6fb9ee49-516a-11e9-bb61-971a423d31e9" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="49896e1a-7544-11e9-8ca5-a73df0698911" type="literal">AbstractDynamicTest</object>

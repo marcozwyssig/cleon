@@ -17,7 +17,7 @@ public class _dynamicPackage {
   public static final Resource DynamicTestSpecification_dynamicTestLevels = new Resource("77dc472b-5157-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTestLevels_testLevelForDynamicObject = new Resource("d3ca35de-5157-11e9-bb61-971a423d31e9");
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTest = new Resource("7f2250d9-5166-11e9-bb61-971a423d31e9");
-  public static final Resource DynamicTest_testGoal = new Resource("6fb9ee45-516a-11e9-bb61-971a423d31e9");
+  public static final Resource AbstractDynamicTest_testGoals = new Resource("6fb9ee45-516a-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTest_testSteps = new Resource("6e65dae1-516b-11e9-bb61-971a423d31e9");
   public static final Resource UsedTestGlobalPreconditionGroup = new Resource("b32136ac-67e9-11e9-9ec9-5fbc84faaeb1");
   public static final Resource GlobalPreconditionsAware_testGlobalPrecondition = new Resource("b8092a8f-67e9-11e9-9ec9-5fbc84faaeb1");
@@ -56,4 +56,4 @@ public class _dynamicPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic,5sOqNuFt1l31XZbZeoBF3U4js7w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic,Q4YTGFaUNJ8tTwYMC/QHnERxoCo=] */

@@ -237,6 +237,9 @@ public class FunctionSpace_DynamicTest {
     @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
     public java.lang.Integer Count();
 
+    @IDynamicResourceExtension.MethodId("5c131579-7626-11e9-bd98-2b827cfec50e")
+    public cleon.common.doc.spec.doc.chapter.references.javamodel.IReference SelectAllReferences();
+
   }
   
   public static interface IDynamicTestLevelsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -298,4 +301,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,8BTJrvl56igXU+fkxjDzgc5wdJk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,dSaHp71eT9SzykbuY5uYWp7ApmI=] */

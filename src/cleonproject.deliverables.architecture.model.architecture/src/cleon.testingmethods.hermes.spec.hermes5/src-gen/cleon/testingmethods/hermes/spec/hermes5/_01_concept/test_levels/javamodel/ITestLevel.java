@@ -14,7 +14,7 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
     
     public void visitSystemtest();
     
-    public void visitSystemintegrationtest();
+    public void visitSystemintegrationstest();
     
     public void visitFAT();
     
@@ -30,7 +30,7 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
     
     public R visitSystemtest();
     
-    public R visitSystemintegrationtest();
+    public R visitSystemintegrationstest();
     
     public R visitFAT();
     
@@ -52,7 +52,7 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
   
   public boolean isSystemtest();
   
-  public boolean isSystemintegrationtest();
+  public boolean isSystemintegrationstest();
   
   public boolean isFAT();
   
@@ -61,4 +61,4 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,50UYI03UT0O41AWIjtof6JBy+VY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,lFVf0hZYcdJf42yAzxuvTYrqAFk=] */

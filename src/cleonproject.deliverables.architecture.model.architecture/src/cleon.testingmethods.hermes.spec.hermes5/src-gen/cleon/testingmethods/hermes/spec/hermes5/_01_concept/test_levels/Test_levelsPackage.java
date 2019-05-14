@@ -11,7 +11,7 @@ public class Test_levelsPackage {
   public static final Resource TestLevel_Unittest = new Resource("4deaf58d-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevel_Unitintegrationtest = new Resource("52f20968-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevel_Systemtest = new Resource("683686a6-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Systemintegrationtest = new Resource("6e5e74cd-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Systemintegrationstest = new Resource("6e5e74cd-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevel_FAT = new Resource("7320b74f-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevel_SAT = new Resource("752c65e2-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevelUsage_testLevel = new Resource("d5f4b41f-5153-11e9-bb61-971a423d31e9");
@@ -47,4 +47,4 @@ public class Test_levelsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels,mWfIQq7ZvCPxJ0OJ+xg2yApAZQQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels,HOizRWwFdgUcKKJ479a6KZy+MZ4=] */

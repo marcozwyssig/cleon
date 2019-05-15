@@ -1317,10 +1317,45 @@
 					<db:tr>
 						<db:th>Nr.</db:th>
 						<db:th>Anforderung</db:th>
-						<db:th>Lösung</db:th>
+						<db:th>Abdeckung</db:th>
 					</db:tr>
 				</db:thead>
 				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>AF003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.950b521c-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
 					<db:tr>
 						<db:td>
 							<db:para>AF006</db:para>
@@ -1364,22 +1399,6 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>AF004</db:para>
-						</db:td>
-						<db:td>
-							<db:itemizedlist>
-							</db:itemizedlist>
-						</db:td>
-						<db:td>
-							<db:itemizedlist>
-								<db:listitem>
-									<db:para>Windows Server Standard Virtual &lt;SystemConfiguration&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.950b521c-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
-								</db:listitem>
-							</db:itemizedlist>
-						</db:td>			
-					</db:tr>
-					<db:tr>
-						<db:td>
 							<db:para>AF007</db:para>
 						</db:td>
 						<db:td>
@@ -1400,25 +1419,6 @@
 									<db:para>Windows 2016 &lt;SystemComponent&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a2955ad6-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
 								</db:listitem>
 							</db:itemizedlist>
-						</db:td>			
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>AF003</db:para>
-						</db:td>
-						<db:td>
-							<db:itemizedlist>
-								<db:listitem>
-									<db:para>Formale Definition</db:para>
-									<db:itemizedlist>
-										<db:listitem>
-											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
-										</db:listitem>
-									</db:itemizedlist>
-								</db:listitem>																			
-							</db:itemizedlist>
-						</db:td>
-						<db:td>
 						</db:td>			
 					</db:tr>
 				</db:tbody>

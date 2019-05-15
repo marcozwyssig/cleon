@@ -188,10 +188,40 @@
 					<db:tr>
 						<db:th>Nr.</db:th>
 						<db:th>Anforderung</db:th>
-						<db:th>Lösung</db:th>
+						<db:th>Abdeckung</db:th>
 					</db:tr>
 				</db:thead>
 				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>AF003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
 					<db:tr>
 						<db:td>
 							<db:para>AF006</db:para>
@@ -235,17 +265,6 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>AF004</db:para>
-						</db:td>
-						<db:td>
-							<db:itemizedlist>
-							</db:itemizedlist>
-						</db:td>
-						<db:td>
-						</db:td>			
-					</db:tr>
-					<db:tr>
-						<db:td>
 							<db:para>AF007</db:para>
 						</db:td>
 						<db:td>
@@ -255,25 +274,6 @@
 									<db:itemizedlist>
 										<db:listitem>
 											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
-										</db:listitem>
-									</db:itemizedlist>
-								</db:listitem>																			
-							</db:itemizedlist>
-						</db:td>
-						<db:td>
-						</db:td>			
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>AF003</db:para>
-						</db:td>
-						<db:td>
-							<db:itemizedlist>
-								<db:listitem>
-									<db:para>Formale Definition</db:para>
-									<db:itemizedlist>
-										<db:listitem>
-											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
 										</db:listitem>
 									</db:itemizedlist>
 								</db:listitem>																			

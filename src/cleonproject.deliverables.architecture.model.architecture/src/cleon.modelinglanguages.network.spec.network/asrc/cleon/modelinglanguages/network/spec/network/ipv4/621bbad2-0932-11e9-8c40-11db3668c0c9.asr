@@ -45,7 +45,7 @@
         </resource>
       </owns>
     </resource>
-    <resource statement-guid="11a3efee-749b-11e9-8765-0925552fc2b7" type="resource" guid="dfd271f9-7405-11e9-8765-0925552fc2b7" />
+    <resource statement-guid="b45c7866-77d1-11e9-8094-13b915a38efa" type="resource" guid="b45c2a42-77d1-11e9-8094-13b915a38efa" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="621be1e4-0932-11e9-8c40-11db3668c0c9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -205,16 +205,16 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="11a3efee-749b-11e9-8765-0925552fc2b7">
-      <resource guid="dfd271f9-7405-11e9-8765-0925552fc2b7">
+    <object statement-guid="b45c7866-77d1-11e9-8094-13b915a38efa">
+      <resource guid="b45c2a42-77d1-11e9-8094-13b915a38efa">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dfd2990b-7405-11e9-8765-0925552fc2b7" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+          <object statement-guid="b45c2a44-77d1-11e9-8094-13b915a38efa" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e07604ff-7405-11e9-8765-0925552fc2b7" type="literal">cleon.modelinglanguages.network.spec.network.ipv4.javamodel.CIDR_InitializerAspect</object>
+          <object statement-guid="ede182b9-77d1-11e9-8094-13b915a38efa" type="literal">cleon.modelinglanguages.network.spec.network.ipv4.javamodel.CIDR_ValidationAspect</object>
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dfd3354c-7405-11e9-8765-0925552fc2b7" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+          <object statement-guid="b45c5155-77d1-11e9-8094-13b915a38efa" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

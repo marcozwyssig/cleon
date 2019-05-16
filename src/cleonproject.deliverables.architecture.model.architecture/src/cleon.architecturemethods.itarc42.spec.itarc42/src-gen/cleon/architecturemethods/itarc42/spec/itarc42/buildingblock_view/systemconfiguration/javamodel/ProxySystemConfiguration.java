@@ -51,16 +51,6 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU> selectCPUs() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs);
-  }
-
-  public ProxySystemConfiguration setCPUs(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU> cPUs) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs, cPUs);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
     return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
@@ -81,16 +71,6 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk> selectDisks() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks);
-  }
-
-  public ProxySystemConfiguration setDisks(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk> disks) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks, disks);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDependency> selectHasDependency() {
     return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency);
   }
@@ -107,16 +87,6 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
 
   public ProxySystemConfiguration setInteracts(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IInteraction> interacts) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.InteractiveBuildingBlock_interacts, interacts);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory> selectMemory() {
-    return _getList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory);
-  }
-
-  public ProxySystemConfiguration setMemory(java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory> memory) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory, memory);
     return this;
   }
     
@@ -177,13 +147,10 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_cPUs, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IDisk.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_disks, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IInteraction.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.InteractiveBuildingBlock_interacts, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.MachinePackage.MachineSystemConfiguration_memory, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -192,4 +159,4 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,ry+NYsy5CroUox81ilL0seCNKLo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,PvZ82IbN9CiQkSOhXk+qKlFIfpY=] */

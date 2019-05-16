@@ -16061,7 +16061,7 @@
 						<db:para>Keine Verf&#252;gbarkeitskonfiguration vorhanden</db:para>
 					</db:listitem>	
 					<db:listitem>
-						<db:para>N-to-1 (Fallback)</db:para>
+						<db:para>N-to-1</db:para>
 						<db:para>Der Failover-Standby-Knoten kann vor&#252;bergehend zum aktiven Knoten werden, bis der urspr&#252;ngliche Knoten wiederhergestellt oder wieder online geschaltet werden kann. </db:para>
 					</db:listitem>	
 					<db:listitem>
@@ -16071,6 +16071,10 @@
 					<db:listitem>
 						<db:para>N+M</db:para>
 						<db:para>In F&#228;llen, in denen ein einzelner Cluster viele Dienste verwaltet, bietet ein dedizierter Failover-Knoten m&#246;glicherweise keine ausreichende Redundanz. In solchen F&#228;llen sind mehr als ein (M) Standby-Server enthalten und verf&#252;gbar.</db:para>
+					</db:listitem>	
+					<db:listitem>
+						<db:para>Fallback</db:para>
+						<db:para>Wenn der Knoten ausf&#228;llt, wird aus dem Backup der Knoten wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</db:para>
 					</db:listitem>	
 				</db:itemizedlist>
 				<db:informaltable style="HERMES 5">
@@ -16087,30 +16091,40 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+								<db:para>2FA (RSA)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
+								<db:para>Active-Passive (Failover)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Redhat Virtual (RHT-VM)</db:para>
+								<db:para>Active Directory Management (ADM)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>None</db:para>
+								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Application Server (APP)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Block Storage Service (BSS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Active</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -16127,7 +16141,67 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Block Storage Service (BSS)</db:para>
+								<db:para>Configuration Management (CMG)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Passive (Failover)</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Distributed File System (DFS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>ESX Physical (VMH)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>N-to-1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>HPE Server (HPE)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Issuing CA (MCS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Jump Host (JMP)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>Active-Active</db:para>
@@ -16147,40 +16221,10 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>HPE Server (HPE)</db:para>
+								<db:para>Master Active Directory (MDC)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Virtual Machine (VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>ESX Physical (VMH)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Pulse Secure Appliance (PSA)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Passive (Failover)</db:para>
+								<db:para>N+M</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -16191,106 +16235,6 @@
 							</db:td>
 							<db:td>
 								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Proxy (PRX)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Passive (Failover)</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Application Server (APP)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Distributed File System (DFS)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>vCenter (VCE)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N-to-1 (Fallback)</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Veeam Backup Management (VBM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N-to-1 (Fallback)</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Veeam Backup Proxy (VBP)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Jump Host (JMP)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Configuration Management (CMG)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Passive (Failover)</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Redhat Satellite (RHS)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N-to-1 (Fallback)</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows Server Update Services (WUS)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N-to-1 (Fallback)</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -16317,37 +16261,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Master Active Directory (MDC)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N+M</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Slave Active Directory (RDC)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>N+M</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Active Directory Management (ADM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active-Active</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>2FA (RSA)</db:para>
+								<db:para>Proxy (PRX)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>Active-Passive (Failover)</db:para>
@@ -16357,10 +16271,30 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Issuing CA (MCS)</db:para>
+								<db:para>Pulse Secure Appliance (PSA)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Active-Active</db:para>
+								<db:para>Active-Passive (Failover)</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Redhat Satellite (RHS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>N-to-1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Redhat Virtual (RHT-VM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -16377,10 +16311,80 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
+								<db:para>Slave Active Directory (RDC)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>N-to-1 (Fallback)</db:para>
+								<db:para>N+M</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Veeam Backup Management (VBM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>N-to-1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Veeam Backup Proxy (VBP)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Virtual Machine (VM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows Server Update Services (WUS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>N-to-1</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>vCenter (VCE)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>N-to-1</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -16437,7 +16441,7 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+								<db:para>2FA (RSA)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16449,20 +16453,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Windows</db:para>
-							</db:td>		
-							<db:td>
-								<db:para>Daily</db:para>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Redhat Virtual (RHT-VM)</db:para>
+								<db:para>Active Directory Management (ADM)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16474,7 +16465,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>CentOs Virtual (CNT-VM)</db:para>
+								<db:para>Application Server (APP)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16498,7 +16489,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Kontron Server (KON)</db:para>
+								<db:para>CentOs Virtual (CNT-VM)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16510,80 +16501,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>HPE Server (HPE)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Virtual Machine (VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>VM</db:para>
-							</db:td>		
-							<db:td>
-								<db:para>Daily</db:para>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>ESX Physical (VMH)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Pulse Secure Appliance (PSA)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Network Policy Service (NPS)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Proxy (PRX)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Application Server (APP)</db:para>
+								<db:para>Configuration Management (CMG)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16608,7 +16526,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>vCenter (VCE)</db:para>
+								<db:para>ESX Physical (VMH)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16620,7 +16538,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Veeam Backup Management (VBM)</db:para>
+								<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16632,7 +16550,19 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Veeam Backup Proxy (VBP)</db:para>
+								<db:para>HPE Server (HPE)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Issuing CA (MCS)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16656,7 +16586,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Configuration Management (CMG)</db:para>
+								<db:para>Kontron Server (KON)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16668,19 +16598,20 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Redhat Satellite (RHS)</db:para>
+								<db:para>Master Active Directory (MDC)</db:para>
 							</db:td>
 							<db:td>
-								<db:para>None</db:para>
+								<db:para>Active Directory</db:para>
 							</db:td>		
 							<db:td>
+								<db:para>Daily</db:para>
 							</db:td>
 							<db:td>
 							</db:td>						
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows Server Update Services (WUS)</db:para>
+								<db:para>Network Policy Service (NPS)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16716,20 +16647,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Master Active Directory (MDC)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Active Directory</db:para>
-							</db:td>		
-							<db:td>
-								<db:para>Daily</db:para>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Slave Active Directory (RDC)</db:para>
+								<db:para>Proxy (PRX)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16741,7 +16659,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Active Directory Management (ADM)</db:para>
+								<db:para>Pulse Secure Appliance (PSA)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16753,7 +16671,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>2FA (RSA)</db:para>
+								<db:para>Redhat Satellite (RHS)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16765,7 +16683,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Issuing CA (MCS)</db:para>
+								<db:para>Redhat Virtual (RHT-VM)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -16789,7 +16707,93 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
+								<db:para>Slave Active Directory (RDC)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Veeam Backup Management (VBM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Veeam Backup Proxy (VBP)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Virtual Machine (VM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>VM</db:para>
+							</db:td>		
+							<db:td>
+								<db:para>Daily</db:para>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Windows</db:para>
+							</db:td>		
+							<db:td>
+								<db:para>Daily</db:para>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Windows Server Update Services (WUS)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>vCenter (VCE)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>

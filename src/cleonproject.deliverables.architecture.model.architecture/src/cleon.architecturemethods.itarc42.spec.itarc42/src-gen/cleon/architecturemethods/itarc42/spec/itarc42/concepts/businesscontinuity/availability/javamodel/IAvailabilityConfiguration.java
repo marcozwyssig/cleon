@@ -18,7 +18,9 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitN__Q_M();
     
-    public void visitN__S_to__S_1__F___N_Fallback__O_();
+    public void visitN__S_to__S_1();
+    
+    public void visitFallback();
     
   }
   
@@ -34,7 +36,9 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitN__Q_M();
     
-    public R visitN__S_to__S_1__F___N_Fallback__O_();
+    public R visitN__S_to__S_1();
+    
+    public R visitFallback();
     
   }
   
@@ -56,9 +60,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isN__Q_M();
   
-  public boolean isN__S_to__S_1__F___N_Fallback__O_();
+  public boolean isN__S_to__S_1();
+  
+  public boolean isFallback();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,x5SLssIbk+nYN7p0zh/PlAJFUbE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,VJhFp9FxPJkt8Nd1Y+hX+jw0NCw=] */

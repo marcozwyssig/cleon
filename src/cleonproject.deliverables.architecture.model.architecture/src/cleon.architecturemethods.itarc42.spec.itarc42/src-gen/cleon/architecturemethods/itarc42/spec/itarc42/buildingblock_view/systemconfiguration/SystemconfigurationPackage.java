@@ -83,6 +83,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_DeviceSystemConfiguration = new Resource("dbb04b54-2abd-11e9-a3f8-336d9e792e17");
   public static final Resource PhysicalMachineSystemConfiguration = new Resource("79488947-2afd-11e9-9692-65766bc2daa5");
   public static final Resource FunctionSpace_aE_SystemConfiguration_NamedSystemConfiguration = new Resource("95ff2d7f-6cf0-11e9-a6d3-775c09e81e2d");
+  public static final Resource VirtualAppliance = new Resource("c0dc14c1-77b7-11e9-8094-13b915a38efa");
   
   /* Begin Protected Region [[user]] */
   
@@ -103,4 +104,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,ls2GWNJ88o3mHrLPoL06d/C2ER0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,8xJTyi1R+zP+nHyGgCHVGHgmVPU=] */

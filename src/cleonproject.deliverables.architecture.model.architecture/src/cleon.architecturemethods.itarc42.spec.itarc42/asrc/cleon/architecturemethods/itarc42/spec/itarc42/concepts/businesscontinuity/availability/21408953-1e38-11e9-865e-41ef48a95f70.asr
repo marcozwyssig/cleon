@@ -7,6 +7,7 @@
     <resource statement-guid="916492f8-1e38-11e9-865e-41ef48a95f70" type="resource" guid="916492f5-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70" type="resource" guid="a2ee790e-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70" type="resource" guid="6cd3005b-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa" type="resource" guid="c2ced2f5-77b9-11e9-8094-13b915a38efa" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="21408955-1e38-11e9-865e-41ef48a95f70" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -90,10 +91,23 @@
           <object statement-guid="6cd3005d-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="85f1aa74-1e38-11e9-865e-41ef48a95f70" type="literal">N-to-1 (Fallback)</object>
+          <object statement-guid="85f1aa74-1e38-11e9-865e-41ef48a95f70" type="literal">N-to-1</object>
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="3ca6edd0-1e3a-11e9-865e-41ef48a95f70" type="literal">Der Failover-Standby-Knoten kann vorübergehend zum aktiven Knoten werden, bis der ursprüngliche Knoten wiederhergestellt oder wieder online geschaltet werden kann. </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa">
+      <resource guid="c2ced2f5-77b9-11e9-8094-13b915a38efa">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c2cefa07-77b9-11e9-8094-13b915a38efa" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3540889-77b9-11e9-8094-13b915a38efa" type="literal">Fallback</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="c5cc347a-77b9-11e9-8094-13b915a38efa" type="literal">Wenn der Knoten ausfällt, wird aus dem Backup der Knoten wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</object>
         </predicate>
       </resource>
     </object>

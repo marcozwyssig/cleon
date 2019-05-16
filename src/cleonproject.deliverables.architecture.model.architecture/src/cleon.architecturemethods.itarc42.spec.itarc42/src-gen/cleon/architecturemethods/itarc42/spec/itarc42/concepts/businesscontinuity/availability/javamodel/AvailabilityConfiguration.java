@@ -99,7 +99,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
     if (isN__Q_1()) return visitor.visitN__Q_1();
     if (isN__Q_M()) return visitor.visitN__Q_M();
-    if (isN__S_to__S_1__F___N_Fallback__O_()) return visitor.visitN__S_to__S_1__F___N_Fallback__O_();
+    if (isN__S_to__S_1()) return visitor.visitN__S_to__S_1();
+    if (isFallback()) return visitor.visitFallback();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -125,8 +126,12 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitN__Q_M();
       return;
     }
-    if (isN__S_to__S_1__F___N_Fallback__O_()) {
-      visitor.visitN__S_to__S_1__F___N_Fallback__O_();
+    if (isN__S_to__S_1()) {
+      visitor.visitN__S_to__S_1();
+      return;
+    }
+    if (isFallback()) {
+      visitor.visitFallback();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -160,9 +165,14 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isN__S_to__S_1__F___N_Fallback__O_() {
-    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_N__S_to__S_1__F___N_Fallback__O_);
+  public boolean isN__S_to__S_1() {
+    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_N__S_to__S_1);
+  }
+  
+  @Override
+  public boolean isFallback() {
+    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Fallback);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,f8fZrJj/9zCeo9dLGVSAjtuKXhU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,MTXA3KegVNBvfHpIAmcFQghFdpw=] */

@@ -164,7 +164,7 @@ public class FunctionSpace_Buildingblock {
     public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetDecomposeBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("29cb5be2-0aa7-11e9-b5db-cdf0b8dad9e4")
-    public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetAllDecomposeBuildingBlocks();
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDecomposeBuildingBlocks();
 
   }
   
@@ -250,4 +250,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,v3d6xwXgtpzHMWf8jP6kViqRZow=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Zxi6jLTPBt+soUNsYidWZVJb1rE=] */

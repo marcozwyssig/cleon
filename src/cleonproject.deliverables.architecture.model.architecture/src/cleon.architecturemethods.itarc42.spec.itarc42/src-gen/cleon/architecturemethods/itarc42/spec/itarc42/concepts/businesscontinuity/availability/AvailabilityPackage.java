@@ -13,9 +13,10 @@ public class AvailabilityPackage {
   public static final Resource AvailabilityConfiguration_Active__S_Active = new Resource("315c388e-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_Active__S_Passive__F___N_Failover__O_ = new Resource("63f98721-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_None = new Resource("691caf00-1e38-11e9-865e-41ef48a95f70");
-  public static final Resource AvailabilityConfiguration_N__S_to__S_1__F___N_Fallback__O_ = new Resource("6cd3005b-1e38-11e9-865e-41ef48a95f70");
+  public static final Resource AvailabilityConfiguration_N__S_to__S_1 = new Resource("6cd3005b-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_N__Q_1 = new Resource("916492f5-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_N__Q_M = new Resource("a2ee790e-1e38-11e9-865e-41ef48a95f70");
+  public static final Resource AvailabilityConfiguration_Fallback = new Resource("c2ced2f5-77b9-11e9-8094-13b915a38efa");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +37,4 @@ public class AvailabilityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability,clrMrOjsF7WkHbba0UR57RZh2zA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability,O3PLWnrxsQNeIRNlenkovt1K1k8=] */

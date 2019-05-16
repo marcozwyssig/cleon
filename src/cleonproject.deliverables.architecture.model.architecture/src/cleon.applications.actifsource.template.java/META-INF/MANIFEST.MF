@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.applications.actifsource.template.java
 Bundle-SymbolicName: cleon.applications.actifsource.template.java.builtin;singleton:=true
-Bundle-Version: 0.4.112
+Bundle-Version: 0.4.113
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,8 +12,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.applications.actifsource.spec.xml2asrc.builtin;bundle-version="0.4.112",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.112",
+ cleon.applications.actifsource.spec.xml2asrc.builtin;bundle-version="0.4.113",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.113",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.applications.actifsource.template.java,
  cleon.applications.actifsource.template.java.javamodel

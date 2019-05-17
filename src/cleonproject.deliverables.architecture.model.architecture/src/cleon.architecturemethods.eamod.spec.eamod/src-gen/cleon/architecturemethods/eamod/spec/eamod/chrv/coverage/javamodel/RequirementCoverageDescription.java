@@ -28,6 +28,26 @@ public class RequirementCoverageDescription extends DynamicResource implements I
     super(resourceRepository, resource, IRequirementCoverageDescription.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
   // relations
   
   @Override
@@ -63,6 +83,9 @@ public class RequirementCoverageDescription extends DynamicResource implements I
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IRequirementCoverage.class, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.CoveragePackage.RequirementCoverageDescription_requirementCoverage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
@@ -76,4 +99,4 @@ public class RequirementCoverageDescription extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0562087c-01e5-11e9-9c9d-8d52d6745026,EFSQWfWQ3yXgHOQ5FeTER7zkQyM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0562087c-01e5-11e9-9c9d-8d52d6745026,j1XwJlcky8YIqjaGqDbyH00wZzk=] */

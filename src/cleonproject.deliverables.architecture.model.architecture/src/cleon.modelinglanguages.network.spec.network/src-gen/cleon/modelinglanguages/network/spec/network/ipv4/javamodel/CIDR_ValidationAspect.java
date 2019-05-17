@@ -8,6 +8,7 @@ import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
 import ch.actifsource.core.Resource;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
+import ch.actifsource.core.javamodel.Statement;
 import ch.actifsource.core.job.IWriteJobExecutor;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.job.Update;
@@ -32,16 +33,23 @@ import cleon.modelinglanguages.network.spec.network.javamodel.AbstractNetworks;
 public class CIDR_ValidationAspect implements IResourceValidationAspect {
 
 	@Override
-	public void validate(ValidationContext validationContext, List<IResourceInconsistency> var2) {
+	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
 		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IIPv4_Mask cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
+		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		
 		SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-		for( String ip : subnet.getInfo().getAllAddresses())
+	    ch.actifsource.core.Statement cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IPv4_Mask_Aware.selectToMeCidr(cidr).getResource());
+	    
+	    for( String ip : subnet.getInfo().getAllAddresses())
 		{
-			IIPv4_D sss = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
+			IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
+			if(ipv4 == null)
+			{		      
+				validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip)));
+			}
 			
 		}		
 	}

@@ -23,6 +23,7 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
 import ch.actifsource.environment.EnvironmentPlugin;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IAbstractIPv4Functions;
+import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IIPRangeFunctions;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
 import cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package;
 import cleon.modelinglanguages.network.spec.network.javamodel.AbstractNetwork;
@@ -35,10 +36,12 @@ public class CIDR_ValidationAspect implements IResourceValidationAspect {
 		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IIPv4_Mask cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
+		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		
 		SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
 		for( String ip : subnet.getInfo().getAllAddresses())
 		{
+			IIPv4_D sss = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
 			
 		}		
 	}

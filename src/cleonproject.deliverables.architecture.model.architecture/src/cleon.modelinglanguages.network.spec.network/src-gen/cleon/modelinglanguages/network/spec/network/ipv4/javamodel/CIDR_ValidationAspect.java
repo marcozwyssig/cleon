@@ -22,6 +22,7 @@ import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
+import ch.actifsource.core.validation.quickfix.IInconsistencyEnablement;
 import ch.actifsource.environment.EnvironmentPlugin;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IAbstractIPv4Functions;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IIPRangeFunctions;
@@ -36,8 +37,7 @@ public class CIDR_ValidationAspect implements IResourceValidationAspect {
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
 		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IIPv4_Mask cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());
-		
+		IIPv4_Mask cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		
 		SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
@@ -47,8 +47,16 @@ public class CIDR_ValidationAspect implements IResourceValidationAspect {
 		{
 			IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
 			if(ipv4 == null)
-			{		      
-				validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip)));
+			{		
+				// Add quick fix
+				FixMissingIPQuickfix fixMissingIP = new FixMissingIPQuickfix(subnet, range, new IInconsistencyEnablement() {
+					@Override
+				    public boolean isEnabled() {
+				      return true;
+				    }
+				});				
+				
+				validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip), fixMissingIP));
 			}
 			
 		}		

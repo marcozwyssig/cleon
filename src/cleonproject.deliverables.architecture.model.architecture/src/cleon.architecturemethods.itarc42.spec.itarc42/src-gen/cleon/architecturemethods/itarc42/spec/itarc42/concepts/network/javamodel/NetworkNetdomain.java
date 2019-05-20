@@ -71,6 +71,16 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
   }
     
   @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectNetDomainNode() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_netDomainNode);
+  }
+
+  public NetworkNetdomain setNetDomainNode(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode netDomainNode) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_netDomainNode, netDomainNode);
+    return this;
+  }
+    
+  @Override
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkSubZone> selectNetworkSubZone() {
     return _getMultiMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkSubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_networkSubZone);
   }
@@ -107,16 +117,6 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
 
   public NetworkNetdomain setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectSupplyNetDomainNode() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_supplyNetDomainNode);
-  }
-
-  public NetworkNetdomain setSupplyNetDomainNode(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode supplyNetDomainNode) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_supplyNetDomainNode, supplyNetDomainNode);
     return this;
   }
     
@@ -159,11 +159,11 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_netDomainNode, visitor);
     _acceptMultiMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkSubZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_networkSubZone, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkAware_networks, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_supplyNetDomainNode, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_zone, visitor);
@@ -171,8 +171,8 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain> selectToMeSupplyNetDomainNode(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_supplyNetDomainNode, object.getResource());
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain> selectToMeNetDomainNode(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNetdomain_netDomainNode, object.getResource());
   }
   
   public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain selectToMeNetworkSubZone(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkSubZone object) {
@@ -184,4 +184,4 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,Ze+AA60Nx1J4nhycU96puXBIjQo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,lQvAB95V5NtBYrR22Gz8N0du90g=] */

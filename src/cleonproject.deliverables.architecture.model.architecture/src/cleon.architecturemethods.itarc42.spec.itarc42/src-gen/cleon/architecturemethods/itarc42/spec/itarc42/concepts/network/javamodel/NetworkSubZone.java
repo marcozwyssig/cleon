@@ -66,15 +66,6 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
      _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
-  @Override
-  public java.lang.String selectFunctionId() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkSubZone_functionId);
-  }
-    
-  public void setFunctionId(java.lang.String functionId) {
-     _setSingleAttribute(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkSubZone_functionId, functionId);
-  }
-
   // relations
   
   @Override
@@ -185,7 +176,6 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkSubZone_VLAN_aE_No, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkSubZone_functionId, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
@@ -204,4 +194,4 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,5Cwj2x69yTlS5i77xxROlxCQCsY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,b2n5jgp5mWKW2eiTp0KYnlXn/co=] */

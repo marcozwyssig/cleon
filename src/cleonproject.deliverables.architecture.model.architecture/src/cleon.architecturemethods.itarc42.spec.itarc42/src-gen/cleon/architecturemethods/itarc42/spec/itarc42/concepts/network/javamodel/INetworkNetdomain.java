@@ -8,7 +8,7 @@ public interface INetworkNetdomain extends cleon.modelinglanguages.network.spec.
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectSupplyNetDomainNode();
+  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectNetDomainNode();
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkSubZone> selectNetworkSubZone();
   
@@ -16,4 +16,4 @@ public interface INetworkNetdomain extends cleon.modelinglanguages.network.spec.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,t2kTBIFmFK2XxOLpH4IKSU4inLU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,tGsX/KTkduOGmrK3swNYcVy8wDo=] */

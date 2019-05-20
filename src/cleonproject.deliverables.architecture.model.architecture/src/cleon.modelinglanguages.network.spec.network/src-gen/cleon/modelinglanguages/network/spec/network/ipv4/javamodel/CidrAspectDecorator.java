@@ -22,17 +22,22 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 		IAbstractNetwork network = resourceRepository.getResource(IAbstractNetwork.class, subject); 
 		IIPv4_Mask cidr = network.selectCidr();		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
-		SubnetUtils subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
-		
-		NodeSet ipNodeSet = new NodeSet();
-		for( String ip : subnet.getInfo().getAllAddresses())
-		{
-			IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
-			if( ipv4 != null) {
-				ipNodeSet.add(ipv4.getResource());
+		try {
+			SubnetUtils subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
+			
+			NodeSet ipNodeSet = new NodeSet();
+			for( String ip : subnet.getInfo().getAllAddresses())
+			{
+				IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
+				if( ipv4 != null) {
+					ipNodeSet.add(ipv4.getResource());
+				}
 			}
+
+			return ipNodeSet;
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
 		}
-	
-		return ipNodeSet;
+		return null;
 	}
 }

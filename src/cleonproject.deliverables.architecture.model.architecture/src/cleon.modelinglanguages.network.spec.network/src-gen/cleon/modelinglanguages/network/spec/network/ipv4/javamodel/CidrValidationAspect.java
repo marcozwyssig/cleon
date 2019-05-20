@@ -40,25 +40,30 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 		IIPv4_Mask cidr = resourceRepository.getResource(IIPv4_Mask.class, validationContext.getResource());		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		
-		SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-	    ch.actifsource.core.Statement cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IPv4_Mask_Aware.selectToMeCidr(cidr).getResource());
-	    
-	    for( String ip : subnet.getInfo().getAllAddresses())
-		{
-			IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
-			if(ipv4 == null)
-			{		
-				// Add quick fix
-				FixMissingIPQuickfix fixMissingIP = new FixMissingIPQuickfix(subnet, range, new IInconsistencyEnablement() {
-					@Override
-				    public boolean isEnabled() {
-				      return true;
-				    }
-				});				
-				
-				validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip), fixMissingIP));
-			}
+		try {
+			SubnetUtils subnet = new SubnetUtils(Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
+			ch.actifsource.core.Statement cidrStatement = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IPv4_Mask_Aware.selectToMeCidr(cidr).getResource());
 			
+			for( String ip : subnet.getInfo().getAllAddresses())
+			{
+				IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);	
+				if(ipv4 == null)
+				{		
+					// Add quick fix
+					FixMissingIPQuickfix fixMissingIP = new FixMissingIPQuickfix(subnet, range, new IInconsistencyEnablement() {
+						@Override
+					    public boolean isEnabled() {
+					      return true;
+					    }
+					});				
+					
+					validationList.add(new SingleStatementInconsistency(cidrStatement, String.format("IP address %s not in IP range", ip), fixMissingIP));
+				}
+				
+			}
+		} catch (IllegalArgumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}		
 	}
 }

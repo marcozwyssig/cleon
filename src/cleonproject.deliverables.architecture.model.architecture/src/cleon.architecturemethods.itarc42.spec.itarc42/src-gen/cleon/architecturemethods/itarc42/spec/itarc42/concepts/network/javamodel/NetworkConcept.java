@@ -71,22 +71,12 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectGroups() {
-    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkEnvironment> selectNetworkNetdomain() {
+    return _getMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain);
   }
 
-  public NetworkConcept setGroups(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> groups) {
-    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, groups);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INetwork> selectNetworks() {
-    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks);
-  }
-
-  public NetworkConcept setNetworks(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.INetwork> networks) {
-    _setList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, networks);
+  public NetworkConcept setNetworkNetdomain(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkEnvironment> networkNetdomain) {
+    _setMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain, networkNetdomain);
     return this;
   }
     
@@ -97,16 +87,6 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
 
   public NetworkConcept setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange selectRange() {
-    return _getSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range);
-  }
-
-  public NetworkConcept setRange(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange range) {
-    _setSingle(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range, range);
     return this;
   }
     
@@ -129,18 +109,16 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.INetwork.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, visitor);
+    _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept selectToMeNetworks(cleon.modelinglanguages.network.spec.network.javamodel.INetwork object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networks, object.getResource());
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept selectToMeNetworkNetdomain(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkEnvironment object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,sKtZvynfeb98RfDramFVDoRtFrA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,74EcP1rx31Kp8DB7/011TmqNAz8=] */

@@ -62,6 +62,9 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("9e96171b-6d92-11e9-b84d-d319514e887f")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.javamodel.IBuildNode> GetAllNestedBuildNodes();
 
+    @IDynamicResourceExtension.MethodId("b402dc7d-7ae0-11e9-a70f-4dc03941a024")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllNestedNetDomain();
+
   }
   
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -84,4 +87,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,5ImwagdiSrB+7OHOB2XeJuZy2zg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,Wy1U7g6ahD0rSCZj10Ui1FiuzDU=] */

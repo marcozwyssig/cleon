@@ -19,8 +19,6 @@ public class NetworkPackage {
   public static final Resource GroupAware_groups = new Resource("c7d8bbf5-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group_nodes = new Resource("f02f4565-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group_color = new Resource("42c675d8-09af-11e9-8c40-11db3668c0c9");
-  public static final Resource Network = new Resource("1f0c1a61-4b29-11e9-8338-41c203971ecb");
-  public static final Resource Network_securitySubZone = new Resource("b97893c6-4b29-11e9-8338-41c203971ecb");
   public static final Resource AbstractPhysicalNetwork_VLAN = new Resource("a9aae692-4b2a-11e9-8338-41c203971ecb");
   public static final Resource NamedNetworkNode = new Resource("a4e6496f-7403-11e9-8765-0925552fc2b7");
   public static final Resource AbstractNetworks_range = new Resource("f9f6687c-7403-11e9-8765-0925552fc2b7");
@@ -54,4 +52,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,GZBFbLnqc40wKM+ybLSF5YEHwjE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,3PkiNxDSEdrl1w45akCc5tXdRJo=] */

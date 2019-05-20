@@ -23,6 +23,10 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 		IAbstractPhysicalNetwork network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject); 
 		IIPv4_Mask cidr = network.selectCidr();		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
+		if( range == null) {			
+			return null;
+		}
+		
 		try {
 			SubnetUtils subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
 			

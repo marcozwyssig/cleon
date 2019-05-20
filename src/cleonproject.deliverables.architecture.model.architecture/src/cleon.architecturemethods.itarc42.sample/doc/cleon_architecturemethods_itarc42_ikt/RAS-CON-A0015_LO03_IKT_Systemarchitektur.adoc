@@ -6454,7 +6454,39 @@ In der Schätzung der Bandbreite wurde das Übertragen von Virensignaturen berü
 
 
 
-==== SUBZONE-NMS-PEZ-DMZ-EXTERNAL-TRANSIT
+==== Test-Umgebung
+
+
+
+
+===== TN NMS (NMS)
+
+
+
+
+====== 10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services
+
+
+
+
+
+
+====== 10.25.90.3/24 - VLAN-222 subzone-nms-mgmt-infra-jumphost_mgmt
+
+
+
+
+
+
+
+===== TN RA1 (984)
+
+
+
+
+====== 10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services
+
+
 
 
 

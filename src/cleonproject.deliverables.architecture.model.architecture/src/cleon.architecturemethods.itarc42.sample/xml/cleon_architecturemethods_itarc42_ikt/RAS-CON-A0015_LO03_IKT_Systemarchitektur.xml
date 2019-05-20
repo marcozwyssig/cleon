@@ -10532,6 +10532,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -10581,6 +10590,24 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -10777,6 +10804,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.25.90.3/24 - VLAN-222 subzone-nms-mgmt-infra-jumphost_mgmt</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -10982,6 +11018,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -11031,6 +11076,24 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -11072,6 +11135,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -11113,6 +11185,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -11154,6 +11235,15 @@
 							</db:tr>
 						</db:thead>
 						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:para>
+								</db:td>
+								<db:td>
+									<db:itemizedlist>
+									</db:itemizedlist>
+								</db:td>
+							</db:tr>
 						</db:tbody>	
 					</db:informaltable>
 					
@@ -11723,13 +11813,50 @@
 			
 			
 			
-			<db:section xml:id="ea.387e1f48-4b2a-11e9-8338-41c203971ecb">
-				<db:title>SUBZONE-NMS-PEZ-DMZ-EXTERNAL-TRANSIT</db:title>
+			<db:section xml:id="ea.f8defeae-7adf-11e9-a70f-4dc03941a024">
+				<db:title>Test-Umgebung</db:title>
 				
 				
 				
 				
-				
+				<db:section xml:id="ea.f6c0ee52-7ae1-11e9-a70f-4dc03941a024">
+					<db:title>TN NMS (NMS)</db:title>
+					
+					
+					
+					
+					<db:section xml:id="ea.36497790-7ae3-11e9-a70f-4dc03941a024">
+						<db:title>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+					<db:section xml:id="ea.a8227ce3-7ae6-11e9-a70f-4dc03941a024">
+						<db:title>10.25.90.3/24 - VLAN-222 subzone-nms-mgmt-infra-jumphost_mgmt</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+				</db:section>
+				<db:section xml:id="ea.b60cd64f-7ae3-11e9-a70f-4dc03941a024">
+					<db:title>TN RA1 (984)</db:title>
+					
+					
+					
+					
+					<db:section xml:id="ea.bca02fca-7ae3-11e9-a70f-4dc03941a024">
+						<db:title>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+				</db:section>
 			</db:section>
 		</db:section>
 		<db:section xml:id="ea.1e4d03da-0eaf-11e9-9f19-6d15636f4ecc">

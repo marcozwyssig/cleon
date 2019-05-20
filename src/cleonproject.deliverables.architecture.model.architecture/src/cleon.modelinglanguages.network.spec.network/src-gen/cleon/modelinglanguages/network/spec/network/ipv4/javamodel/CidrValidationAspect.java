@@ -31,7 +31,7 @@ import cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package;
 import cleon.modelinglanguages.network.spec.network.javamodel.AbstractNetwork;
 import cleon.modelinglanguages.network.spec.network.javamodel.AbstractNetworks;
 
-public class CIDR_ValidationAspect implements IResourceValidationAspect {
+public class CidrValidationAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="59e23ee4-7acb-11e9-a70f-4dc03941a024">
+  <owns predicate="8d46e8aa-0932-11e9-8c40-11db3668c0c9">
+    <resource statement-guid="5bb1599d-7acb-11e9-a70f-4dc03941a024" type="resource" guid="5bb13289-7acb-11e9-a70f-4dc03941a024" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="59e2b416-7acb-11e9-a70f-4dc03941a024" type="resource" guid="b7c5323f-054f-11e9-b814-a133e521728c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5a8fbcf8-7acb-11e9-a70f-4dc03941a024" type="literal">dfsfsf</object>
+  </predicate>
+  <predicate guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
+    <object statement-guid="bd4e2ed3-7ace-11e9-a70f-4dc03941a024" type="aggregate" guid="bd4e07bf-7ace-11e9-a70f-4dc03941a024" />
+  </predicate>
+  <predicate guid="8d46e8aa-0932-11e9-8c40-11db3668c0c9">
+    <object statement-guid="5bb1599d-7acb-11e9-a70f-4dc03941a024">
+      <resource guid="5bb13289-7acb-11e9-a70f-4dc03941a024">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5bb1328b-7acb-11e9-a70f-4dc03941a024" type="resource" guid="621bbad2-0932-11e9-8c40-11db3668c0c9" />
+        </predicate>
+        <predicate guid="ca05677e-0931-11e9-8c40-11db3668c0c9">
+          <object statement-guid="5cb18b95-7acb-11e9-a70f-4dc03941a024" type="literal">10.200.22.0</object>
+        </predicate>
+        <predicate guid="774d25ed-0932-11e9-8c40-11db3668c0c9">
+          <object statement-guid="5bb1599c-7acb-11e9-a70f-4dc03941a024" type="literal">24</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

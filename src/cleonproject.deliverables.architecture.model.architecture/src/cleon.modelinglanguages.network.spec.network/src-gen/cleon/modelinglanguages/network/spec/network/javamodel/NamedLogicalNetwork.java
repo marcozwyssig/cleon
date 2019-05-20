@@ -4,41 +4,32 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NamedNetwork extends DynamicResource implements INamedNetwork {
+public class NamedLogicalNetwork extends DynamicResource implements INamedLogicalNetwork {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedNetwork> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedNetwork>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedLogicalNetwork> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedLogicalNetwork>() {
     
     @Override
-    public INamedNetwork create() {
-      return new NamedNetwork();
+    public INamedLogicalNetwork create() {
+      return new NamedLogicalNetwork();
     }
     
     @Override
-    public INamedNetwork create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NamedNetwork(resourceRepository, resource);
+    public INamedLogicalNetwork create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedLogicalNetwork(resourceRepository, resource);
     }
   
   };
 
-  public NamedNetwork() {
-    super(INamedNetwork.TYPE_ID);
+  public NamedLogicalNetwork() {
+    super(INamedLogicalNetwork.TYPE_ID);
   }
   
-  public NamedNetwork(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INamedNetwork.TYPE_ID);
+  public NamedLogicalNetwork(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedLogicalNetwork.TYPE_ID);
   }
 
   // attributes
   
-  @Override
-  public java.lang.Integer selectVLAN() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN);
-  }
-    
-  public void setVLAN(java.lang.Integer vLAN) {
-     _setSingleAttribute(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN, vLAN);
-  }
-
   @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
@@ -73,18 +64,8 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
   }
 
-  public NamedNetwork setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
+  public NamedLogicalNetwork setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask selectCidr() {
-    return _getSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr);
-  }
-
-  public NamedNetwork setCidr(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask cidr) {
-    _setSingle(cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, cidr);
     return this;
   }
     
@@ -93,18 +74,18 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
   }
 
-  public NamedNetwork setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
+  public NamedLogicalNetwork setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> selectGroups() {
-    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork> selectNetworks() {
+    return _getList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkAware_networks);
   }
 
-  public NamedNetwork setGroups(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IGroup> groups) {
-    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, groups);
+  public NamedLogicalNetwork setNetworks(java.util.List<? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork> networks) {
+    _setList(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkAware_networks, networks);
     return this;
   }
     
@@ -113,18 +94,8 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     return _getSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public NamedNetwork setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
+  public NamedLogicalNetwork setNoChapters(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> selectNode() {
-    return _getMap(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node);
-  }
-
-  public NamedNetwork setNode(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode> node) {
-    _setMap(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node, node);
     return this;
   }
     
@@ -133,7 +104,7 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public NamedNetwork setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
+  public NamedLogicalNetwork setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -143,7 +114,7 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NamedNetwork setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedLogicalNetwork setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -152,20 +123,17 @@ public class NamedNetwork extends DynamicResource implements INamedNetwork {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_VLAN, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkAware_networks, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
-    _acceptMap(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetwork_node, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,EwN0Zr77N992ru6AJmYo7M4GJHU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fe550db0-7aca-11e9-a70f-4dc03941a024,JV8uq6JRzomFThKrrIIKk5fYWMM=] */

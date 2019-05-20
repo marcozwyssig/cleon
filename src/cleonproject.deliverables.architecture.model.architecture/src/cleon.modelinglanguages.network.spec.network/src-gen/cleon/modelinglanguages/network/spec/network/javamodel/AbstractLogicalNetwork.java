@@ -4,12 +4,12 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public abstract class AbstractNetwork extends DynamicResource implements IAbstractNetwork {
+public abstract class AbstractLogicalNetwork extends DynamicResource implements IAbstractLogicalNetwork {
 
   // abstract implementation, only used for static method calls
-  private AbstractNetwork() {
-    super(IAbstractNetwork.TYPE_ID);
+  private AbstractLogicalNetwork() {
+    super(IAbstractLogicalNetwork.TYPE_ID);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,74d72409-092f-11e9-8c40-11db3668c0c9,5nmALHxvUac1tmA4RF7578pw8HE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,89c5d6c2-7ac9-11e9-a70f-4dc03941a024,+zFQUVoTzsBVjbiZ1nHvTCyJzxg=] */

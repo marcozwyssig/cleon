@@ -1,73 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="74d72409-092f-11e9-8c40-11db3668c0c9">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="81bf2c79-71a6-11e9-98e0-2719d32d2629" type="resource" guid="a9aae692-4b2a-11e9-8338-41c203971ecb" />
-    <resource statement-guid="e18dfe15-0930-11e9-8c40-11db3668c0c9" type="resource" guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
-      <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
-        <resource statement-guid="d3c544c7-7ac4-11e9-bed6-9b9c84f51549" type="resource" guid="d3c45a63-7ac4-11e9-bed6-9b9c84f51549" />
-      </owns>
-    </resource>
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="74d7240b-092f-11e9-8c40-11db3668c0c9" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ce5d2b95-4b2b-11e9-9848-3f3cecaa2b36" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
     <object statement-guid="ca741b86-71a5-11e9-98e0-2719d32d2629" type="resource" guid="18625181-5154-11e9-bb61-971a423d31e9" />
-    <object statement-guid="e9be6852-09ae-11e9-8c40-11db3668c0c9" type="resource" guid="b20f56ff-09ae-11e9-8c40-11db3668c0c9" />
-    <object statement-guid="0e41aaa3-0932-11e9-8c40-11db3668c0c9" type="resource" guid="8d46e8a9-0932-11e9-8c40-11db3668c0c9" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="81bf2c79-71a6-11e9-98e0-2719d32d2629">
-      <resource guid="a9aae692-4b2a-11e9-8338-41c203971ecb">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a9aae694-4b2a-11e9-8338-41c203971ecb" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="acce1fa4-4b2a-11e9-8338-41c203971ecb" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="aa8bf7d3-4b2a-11e9-8338-41c203971ecb" type="literal">VLAN</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a9abf806-4b2a-11e9-8338-41c203971ecb" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="e18dfe15-0930-11e9-8c40-11db3668c0c9">
-      <resource guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e18daff3-0930-11e9-8c40-11db3668c0c9" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e18daff4-0930-11e9-8c40-11db3668c0c9" type="literal">node</object>
-        </predicate>
-        <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="d3c544c7-7ac4-11e9-bed6-9b9c84f51549">
-            <resource guid="d3c45a63-7ac4-11e9-bed6-9b9c84f51549">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="d3c4a885-7ac4-11e9-bed6-9b9c84f51549" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
-              </predicate>
-              <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="d4b8cc88-7ac4-11e9-bed6-9b9c84f51549" type="literal">cleon.modelinglanguages.network.spec.network.ipv4.javamodel.CidrAspectDecorator</object>
-              </predicate>
-              <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="d3c51db6-7ac4-11e9-bed6-9b9c84f51549" type="resource" guid="c5da2f7f-7577-11db-8807-fd999b238722" />
-              </predicate>
-            </resource>
-          </object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="e18e9a56-0930-11e9-8c40-11db3668c0c9" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="e18ec167-0930-11e9-8c40-11db3668c0c9" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="e18ee878-0930-11e9-8c40-11db3668c0c9" type="resource" guid="d8caf2bc-0930-11e9-8c40-11db3668c0c9" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="74d74b1c-092f-11e9-8c40-11db3668c0c9" type="literal">AbstractNetwork</object>

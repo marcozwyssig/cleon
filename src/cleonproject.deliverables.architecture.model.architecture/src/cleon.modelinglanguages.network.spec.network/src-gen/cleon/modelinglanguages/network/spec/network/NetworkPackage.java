@@ -5,16 +5,15 @@ import ch.actifsource.core.Resource;
 public class NetworkPackage {
   
   public static final Resource NamedNetworks = new Resource("1a8c5420-054f-11e9-b814-a133e521728c");
-  public static final Resource NamedNetwork = new Resource("b7c5323f-054f-11e9-b814-a133e521728c");
-  public static final Resource NamedNetworks_networks = new Resource("bcae1069-054f-11e9-b814-a133e521728c");
+  public static final Resource NamedPhysicalNetwork = new Resource("b7c5323f-054f-11e9-b814-a133e521728c");
   public static final Resource AbstractNetworks = new Resource("66edbc85-092f-11e9-8c40-11db3668c0c9");
   public static final Resource AbstractNetwork = new Resource("74d72409-092f-11e9-8c40-11db3668c0c9");
-  public static final Resource AbstractNetworks_networks = new Resource("7e0a07c7-092f-11e9-8c40-11db3668c0c9");
+  public static final Resource AbstractNetworkAware_networks = new Resource("7e0a07c7-092f-11e9-8c40-11db3668c0c9");
   public static final Resource NetworkDiagram = new Resource("a6f94ec5-092f-11e9-8c40-11db3668c0c9");
   public static final Resource NetworkDiagram_network = new Resource("bb361f38-092f-11e9-8c40-11db3668c0c9");
   public static final Resource NetworkDiagram_path = new Resource("df0b8e39-092f-11e9-8c40-11db3668c0c9");
   public static final Resource AbstractNetworkNode = new Resource("d8caf2bc-0930-11e9-8c40-11db3668c0c9");
-  public static final Resource AbstractNetwork_node = new Resource("e18daff1-0930-11e9-8c40-11db3668c0c9");
+  public static final Resource AbstractPhysicalNetwork_node = new Resource("e18daff1-0930-11e9-8c40-11db3668c0c9");
   public static final Resource GroupAware = new Resource("b20f56ff-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource Group = new Resource("b8a9dce5-09ae-11e9-8c40-11db3668c0c9");
   public static final Resource GroupAware_groups = new Resource("c7d8bbf5-09ae-11e9-8c40-11db3668c0c9");
@@ -22,10 +21,19 @@ public class NetworkPackage {
   public static final Resource Group_color = new Resource("42c675d8-09af-11e9-8c40-11db3668c0c9");
   public static final Resource Network = new Resource("1f0c1a61-4b29-11e9-8338-41c203971ecb");
   public static final Resource Network_securitySubZone = new Resource("b97893c6-4b29-11e9-8338-41c203971ecb");
-  public static final Resource AbstractNetwork_VLAN = new Resource("a9aae692-4b2a-11e9-8338-41c203971ecb");
+  public static final Resource AbstractPhysicalNetwork_VLAN = new Resource("a9aae692-4b2a-11e9-8338-41c203971ecb");
   public static final Resource NamedNetworkNode = new Resource("a4e6496f-7403-11e9-8765-0925552fc2b7");
   public static final Resource AbstractNetworks_range = new Resource("f9f6687c-7403-11e9-8765-0925552fc2b7");
   public static final Resource AbstractNetworkNode_iPv4_aE_D = new Resource("09a79db2-740c-11e9-8765-0925552fc2b7");
+  public static final Resource AbstractPhysicalNetwork = new Resource("679da3a6-7ac9-11e9-a70f-4dc03941a024");
+  public static final Resource AbstractLogicalNetwork = new Resource("89c5d6c2-7ac9-11e9-a70f-4dc03941a024");
+  public static final Resource AbstractNetworkAware = new Resource("dba046bb-7ac9-11e9-a70f-4dc03941a024");
+  public static final Resource FunctionSpace_aE_Network_AbstractNetwork = new Resource("303ac139-7aca-11e9-a70f-4dc03941a024");
+  public static final Resource NamedLogicalNetwork = new Resource("fe550db0-7aca-11e9-a70f-4dc03941a024");
+  public static final Resource FunctionSpace_aE_Network_AbstractPhysicalNetwork = new Resource("9ccdc9f3-7acc-11e9-a70f-4dc03941a024");
+  public static final Resource FunctionSpace_aE_Network_AbstractNetworkAware = new Resource("d9a113e4-7acc-11e9-a70f-4dc03941a024");
+  public static final Resource FunctionSpace_aE_Network_AbstractLogicalNetwork = new Resource("d164d02f-7acd-11e9-a70f-4dc03941a024");
+  public static final Resource FunctionSpace_aE_Network_AbstractNetworks = new Resource("e84bd910-7acd-11e9-a70f-4dc03941a024");
   
   /* Begin Protected Region [[user]] */
   
@@ -46,4 +54,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,qNBxoSl/S5squyxMzTUWmk13KWw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,GZBFbLnqc40wKM+ybLSF5YEHwjE=] */

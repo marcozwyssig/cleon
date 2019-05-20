@@ -12,6 +12,7 @@ import ch.actifsource.core.set.NodeSet;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IIPRangeFunctions;
 import cleon.modelinglanguages.network.spec.network.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
 import cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork;
+import cleon.modelinglanguages.network.spec.network.javamodel.IAbstractPhysicalNetwork;
 
 public class CidrAspectDecorator extends AspectImplementationDecorator {
 
@@ -19,7 +20,7 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 		ITypeSystem typeSystem = TypeSystem.create(executor);
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
-		IAbstractNetwork network = resourceRepository.getResource(IAbstractNetwork.class, subject); 
+		IAbstractPhysicalNetwork network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject); 
 		IIPv4_Mask cidr = network.selectCidr();		
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		try {

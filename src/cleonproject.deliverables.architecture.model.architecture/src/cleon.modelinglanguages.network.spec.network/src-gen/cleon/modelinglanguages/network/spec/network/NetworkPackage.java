@@ -32,6 +32,10 @@ public class NetworkPackage {
   public static final Resource FunctionSpace_aE_Network_AbstractNetworkAware = new Resource("d9a113e4-7acc-11e9-a70f-4dc03941a024");
   public static final Resource FunctionSpace_aE_Network_AbstractLogicalNetwork = new Resource("d164d02f-7acd-11e9-a70f-4dc03941a024");
   public static final Resource FunctionSpace_aE_Network_AbstractNetworks = new Resource("e84bd910-7acd-11e9-a70f-4dc03941a024");
+  public static final Resource AbstractGatewayNode = new Resource("de1fdb49-7b84-11e9-94aa-f1ea7ea33f46");
+  public static final Resource DefaultGatewayNode = new Resource("f2da8f90-7b84-11e9-94aa-f1ea7ea33f46");
+  public static final Resource GatewayNode = new Resource("7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46");
+  public static final Resource GatewayNode_nodeNo = new Resource("7f70bac5-7b8d-11e9-94aa-f1ea7ea33f46");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +56,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,3PkiNxDSEdrl1w45akCc5tXdRJo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.network,Li2HgMuvLq+cugH+bpRZb1MSErM=] */

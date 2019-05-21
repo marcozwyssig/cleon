@@ -62,6 +62,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
+    @IDynamicResourceExtension.MethodId("02e6dbac-7b98-11e9-94aa-f1ea7ea33f46")
+    public cleon.modelinglanguages.network.spec.network.javamodel.IDefaultGatewayNode DefaultGateway();
+
   }
   
   public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -205,6 +208,40 @@ public class FunctionSpace_Network {
 
   }
 
+  public static interface IAbstractNetworkNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c9e02962-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String SubnetMask();
+
+    @IDynamicResourceExtension.MethodId("c9e05074-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String Broadcast();
+
+    @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String NetworkAddress();
+
+    @IDynamicResourceExtension.MethodId("1a5ba639-7b98-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String DefaultGateway();
+
+  }
+  
+  public static interface IAbstractNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractNetworkNodeFunctionsImpl implements IAbstractNetworkNodeFunctionsImpl {
+
+    public static final IAbstractNetworkNodeFunctionsImpl INSTANCE = new AbstractNetworkNodeFunctionsImpl();
+
+    private AbstractNetworkNodeFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractNetworkNodeFunctions {
+
+    private AbstractNetworkNodeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,KKBrMaRAjkFbfEL2NfU76k7e1vg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,GhR33nrAiRh0vbYSiolCQ3p9cMA=] */

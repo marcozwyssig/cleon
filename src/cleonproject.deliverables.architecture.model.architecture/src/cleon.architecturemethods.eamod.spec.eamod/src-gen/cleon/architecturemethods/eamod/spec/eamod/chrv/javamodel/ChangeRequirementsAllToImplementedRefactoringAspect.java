@@ -11,10 +11,10 @@ import ch.actifsource.core.update.IModifiable;
 import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage;
 import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement;
 
-public class ChangeRequirementsAllToAlignedRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
+public class ChangeRequirementsAllToImplementedRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
-	public ChangeRequirementsAllToAlignedRefactoringAspect() {
-		super("1.0", 2018, 11, 15, "Change all to 'approved'", RequirementPackage.Requirement);
+	public ChangeRequirementsAllToImplementedRefactoringAspect() {
+		super("1.0", 2018, 11, 15, "Change all to 'aligned'", RequirementPackage.Requirement);
 	}
 
 	@Override
@@ -24,9 +24,9 @@ public class ChangeRequirementsAllToAlignedRefactoringAspect extends AbstractAll
 
 		IRequirement requirement = resourceRepository.getResource(IRequirement.class, paramINode);
 
-		if (requirement.selectState().isIdentified()) {
+		if (requirement.selectState().isApproved()) {
 			Update.createOrModifyStatement(executor, paramPackage, paramINode,
-					RequirementPackage.Requirement_state, RequirementPackage.RequirementState_Aligned);
+					RequirementPackage.Requirement_state, RequirementPackage.RequirementState_Approved);
 		}
 	}
 }

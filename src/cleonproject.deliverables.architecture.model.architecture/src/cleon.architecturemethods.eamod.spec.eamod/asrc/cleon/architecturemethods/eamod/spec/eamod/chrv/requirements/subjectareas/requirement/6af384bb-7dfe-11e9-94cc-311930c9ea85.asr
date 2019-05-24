@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6af384bb-7dfe-11e9-94cc-311930c9ea85">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6af384c2-7dfe-11e9-94cc-311930c9ea85" type="resource" guid="6af384bc-7dfe-11e9-94cc-311930c9ea85" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6af384bd-7dfe-11e9-94cc-311930c9ea85" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6af384be-7dfe-11e9-94cc-311930c9ea85" type="literal">ChangeRequirementsToImplementedRefactoring</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6af384c2-7dfe-11e9-94cc-311930c9ea85">
+      <resource guid="6af384bc-7dfe-11e9-94cc-311930c9ea85">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6af384bf-7dfe-11e9-94cc-311930c9ea85" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6af384c0-7dfe-11e9-94cc-311930c9ea85" type="literal">cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.ChangeRequirementsAllToImplementedRefactoringAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6af384c1-7dfe-11e9-94cc-311930c9ea85" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

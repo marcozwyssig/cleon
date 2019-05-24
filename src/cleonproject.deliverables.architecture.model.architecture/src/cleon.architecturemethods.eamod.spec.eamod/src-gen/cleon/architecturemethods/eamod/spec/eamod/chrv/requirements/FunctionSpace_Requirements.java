@@ -10,6 +10,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,imports]] */
 import cleon.common.resources.spec.resources.priority.javamodel.IPriority;
 import java.util.stream.Collectors;
+import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirementState;
 /* End Protected Region   [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,imports]] */
 
 public class FunctionSpace_Requirements {
@@ -75,6 +76,9 @@ public class FunctionSpace_Requirements {
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
     public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO();
 
+    @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApproved();
+
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -84,6 +88,9 @@ public class FunctionSpace_Requirements {
 
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
     public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+
+    @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApproved(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
   }
   
@@ -127,6 +134,16 @@ public class FunctionSpace_Requirements {
       /* End Protected Region   [[1a77e308-1fa5-11e9-ac4e-716424f48a26]] */
     }
 
+    @Override
+    public List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApproved(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      /* Begin Protected Region [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
+        return requirementList.stream().filter(x -> {
+        	IRequirementState state = x.selectState();
+        	return state.isApproved() || state.isApproved__F___N_By__F_Supplier__O_() || state.isFulfilled() || state.isImplemented();
+          }).collect(Collectors.toList());   
+      /* End Protected Region   [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
+    }
+
   }
   
   public static class RequirementFunctions {
@@ -139,6 +156,10 @@ public class FunctionSpace_Requirements {
 
     public static List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).notKO(requirementList);
+    }
+
+    public static List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApproved(final List<cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).onlyApproved(requirementList);
     }
 
   }
@@ -556,4 +577,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,UnshXD1QNlX6xt4vSgQQx6mtJOA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,+T30GmR3HxdOI7kdZ3KrgvJIeJc=] */

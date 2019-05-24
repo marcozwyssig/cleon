@@ -14,7 +14,7 @@ import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas
 public class ChangeRequirementsAllToImplementedRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
 	public ChangeRequirementsAllToImplementedRefactoringAspect() {
-		super("1.0", 2018, 11, 15, "Change all to 'aligned'", RequirementPackage.Requirement);
+		super("1.0", 2019, 5, 24, "Change all to 'implemented'", RequirementPackage.Requirement);
 	}
 
 	@Override

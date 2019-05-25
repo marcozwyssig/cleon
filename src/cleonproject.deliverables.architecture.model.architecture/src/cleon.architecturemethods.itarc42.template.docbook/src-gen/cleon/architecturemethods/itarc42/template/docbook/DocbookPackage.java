@@ -13,10 +13,10 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeployView = new Resource("c96944a2-1983-11e9-88a0-1f786f12e4c1");
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeploymentDiagram = new Resource("4960a0a6-199d-11e9-9d43-9ddad24f774b");
   public static final Resource FunctionSpace_aE_QoS_QoS_aE_Concept = new Resource("9fea578c-1d8d-11e9-b601-db75aa6f89a4");
-  public static final Resource FunctionSpace_aE_Security_ActivitySecurityGroup = new Resource("918a31c9-1e0a-11e9-834d-77c41fccc6bf");
-  public static final Resource FunctionSpace_aE_Security_ActivityGroups = new Resource("8fcdfa50-1e18-11e9-865e-41ef48a95f70");
-  public static final Resource FunctionSpace_aE_Security_RoleSecurityGroup = new Resource("fa35c9ef-1e1b-11e9-865e-41ef48a95f70");
-  public static final Resource FunctionSpace_aE_Security_RoleGroups = new Resource("009394bc-1e1c-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Security_ActivitySystemConfiguration = new Resource("918a31c9-1e0a-11e9-834d-77c41fccc6bf");
+  public static final Resource FunctionSpace_aE_Security_ActivityRootGroups = new Resource("8fcdfa50-1e18-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Security_RoleActorGroup = new Resource("fa35c9ef-1e1b-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Security_RoleRootGroups = new Resource("009394bc-1e1c-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_BusinessContinuity_Availability = new Resource("5c9780f7-1e3a-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_BusinessContinuity_Backup = new Resource("8b0b0947-1e3f-11e9-865e-41ef48a95f70");
   
@@ -39,4 +39,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.docbook,Rd140KsF3dNhd6agap2YtKjj/AE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.template.docbook,GHHdSgo96PrFFMINXKLv5DWbaJE=] */

@@ -11,6 +11,9 @@
     <object statement-guid="7a005c0b-0cf7-11e9-be4f-03130cc057ef" type="literal">Die System-Konfiguration VMH wird mit Hilfe der VMware ESX Infrastruktur realisiert, so dass die virtuellen Maschinen Abhängigkeit von der aktuellen Auslastung auf die verfügbare Hardware verteilt werden kann. Einerseits optimiert diese Virtualisierung Hardware-Auslastung durch das System. Andererseits entkoppelt diese Virtualisierung die Betriebssysteme von der zugehörigen Hardware.</object>
     <object statement-guid="daf1439b-0e14-11e9-8b4c-f9aec93d8b56" type="literal">Auf dem Hypervisor werden keine Distributed Switches eingesetzt, sondern die jeweiligen lokalen vSwitches. Die Distributed Switches haben eine wesentliche Abhängigkeit zum vCenter. Falls kein Zugriff auf das vCenter besteht, ist der ordentliche Betrieb der Distributed Switches nicht mehr gewährleistet. </object>
   </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="3b5209c6-804d-11e9-8989-93a2e754e0ab" type="literal">27</object>
+  </predicate>
   <predicate guid="0b193aba-d0b9-11e8-b005-f7630e4c29c0">
     <object statement-guid="317792f2-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="8658a8bc-e115-11e8-a832-7553de2b103b" />
   </predicate>

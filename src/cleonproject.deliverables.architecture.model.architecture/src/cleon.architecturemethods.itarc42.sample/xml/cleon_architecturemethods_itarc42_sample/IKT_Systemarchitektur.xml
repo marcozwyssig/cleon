@@ -975,23 +975,23 @@
 							<db:tr>
 								<db:th>Name</db:th>
 								<db:th>Range</db:th>
-								<db:th>System-Konfiguration</db:th>
+								<db:th>Netzdomäne</db:th>
 								<db:th>Anzahl Aktivitäten</db:th>			
 							</db:tr>
 						</db:thead>
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>rsa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+									<db:para>TN Domain 1 (1) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f6fd4cd2-675f-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>2-101</db:para>
+									<db:para>2100-2199</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Windows Server Standard Virtual</db:para>
+									<db:para>TN Domain 1 (1)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>2</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -1004,54 +1004,193 @@
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
-					<db:section xml:id="ea.e227a860-675d-11e9-9ec9-5fbc84faaeb1">
-						<db:title>rsa</db:title>
+					<db:section xml:id="ea.f6fd4cd2-675f-11e9-9ec9-5fbc84faaeb1">
+						<db:title>TN Domain 1 (1) Aktivit&#228;ten</db:title>
 						
-						<db:para>sdfadf</db:para>
 						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows Server Standard Virtual' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Role2' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3-1-rsa</db:para>
-									</db:td>
-									<db:td>
-										<db:para>1</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
 						
+						
+						<db:section xml:id="ea.82c7015b-7f1d-11e9-9a52-07d4b074defc">
+							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2118</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2118-1-hpe_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN Domain 1 (1)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2119</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2119-1-hpe_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN Domain 1 (1)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.5c6cce14-7f26-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2118-1-hpe_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.81fd3d22-7f27-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2119-1-hpe_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.050ec472-7f17-11e9-9a52-07d4b074defc">
+							<db:title>Windows 2016 Standard Physical (WIN-2016-STD-PHY) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows 2016 Standard Physical (WIN-2016-STD-PHY)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2152</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2152-1-win-2016-std-phy_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN Domain 1 (1)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2153</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2153-1-win-2016-std-phy_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN Domain 1 (1)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2154</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2154-1-win-2016-std-phy_admin</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN Domain 1 (1)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">3/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.f2c6cb40-7f26-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2152-1-win-2016-std-phy_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.f7f7d5df-7f26-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2153-1-win-2016-std-phy_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.664ef263-7f28-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2154-1-win-2016-std-phy_admin</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
 					</db:section>
 				</db:section>
 				<db:section xml:id="ea.a76febdd-675d-11e9-9ec9-5fbc84faaeb1">
@@ -1078,27 +1217,13 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>role1-sdfsdf [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.b5640067-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
+									<db:para>TN Domain 1 (1) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.de42650f-7f13-11e9-9a52-07d4b074defc"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1-100</db:para>
+									<db:para>2100-2199</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Role1</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>role1-asdfasdf [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ca30dc6b-675d-11e9-9ec9-5fbc84faaeb1"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2-101</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Role1</db:para>
+									<db:para>TN Domain 1 (1)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>1</db:para>
@@ -1107,95 +1232,75 @@
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
-					<db:section xml:id="ea.b5640067-675d-11e9-9ec9-5fbc84faaeb1">
-						<db:title>role1-sdfsdf</db:title>
+					<db:section xml:id="ea.de42650f-7f13-11e9-9a52-07d4b074defc">
+						<db:title>TN Domain 1 (1) Rollen</db:title>
 						
-						<db:para>asdfasdf</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'Role1' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Role2' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R33</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN Domain 1 (1)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>1</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
 						
-					</db:section>
-					<db:section xml:id="ea.ca30dc6b-675d-11e9-9ec9-5fbc84faaeb1">
-						<db:title>role1-asdfasdf</db:title>
 						
-						<db:para>dsafasdf</db:para>
-						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'Role1' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Role2' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
+						<db:section xml:id="ea.48f9ba91-7f14-11e9-9a52-07d4b074defc">
+							<db:title>role1-lll</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Role1' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>R1</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.f1a33821-7f14-11e9-9a52-07d4b074defc">
+								<db:title>grp-rol-1</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
 					</db:section>
 				</db:section>
 			</db:section>

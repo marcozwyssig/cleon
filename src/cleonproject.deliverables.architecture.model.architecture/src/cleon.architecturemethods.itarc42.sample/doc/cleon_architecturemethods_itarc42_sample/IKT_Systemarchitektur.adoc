@@ -332,9 +332,55 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-====== rsa
+====== TN Domain 1 (1) Aktivitäten
 
-sdfadf
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2118-1-hpe_guest
+
+
+
+
+
+
+======== grp-act-2119-1-hpe_operator
+
+
+
+
+
+
+
+======= Windows 2016 Standard Physical (WIN-2016-STD-PHY) Aktivitäten
+
+
+
+
+======== grp-act-2152-1-win-2016-std-phy_guest
+
+
+
+
+
+
+======== grp-act-2153-1-win-2016-std-phy_operator
+
+
+
+
+
+
+======== grp-act-2154-1-win-2016-std-phy_admin
+
+
+
+
 
 
 
@@ -345,16 +391,21 @@ sdfadf
 
 
 
-====== role1-sdfsdf
-
-asdfasdf
+====== TN Domain 1 (1) Rollen
 
 
 
 
-====== role1-asdfasdf
+======= role1-lll
 
-dsafasdf
+
+
+
+======== grp-rol-1
+
+
+
+
 
 
 

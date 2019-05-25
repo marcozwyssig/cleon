@@ -18,106 +18,106 @@ public class FunctionSpace_Security {
   /* End Protected Region   [[8db33913-1e0a-11e9-834d-77c41fccc6bf]] */
 
 
-  public static interface IActivitySecurityGroupFunctions extends IDynamicResourceExtension {
+  public static interface IActivitySystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ffcbe63a-1e15-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IActivitySecurityGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ActivitySecurityGroupFunctionsImpl implements IActivitySecurityGroupFunctionsImpl {
+  public static class ActivitySystemConfigurationFunctionsImpl implements IActivitySystemConfigurationFunctionsImpl {
 
-    public static final IActivitySecurityGroupFunctionsImpl INSTANCE = new ActivitySecurityGroupFunctionsImpl();
+    public static final IActivitySystemConfigurationFunctionsImpl INSTANCE = new ActivitySystemConfigurationFunctionsImpl();
 
-    private ActivitySecurityGroupFunctionsImpl() {}
+    private ActivitySystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class ActivitySecurityGroupFunctions {
+  public static class ActivitySystemConfigurationFunctions {
 
-    private ActivitySecurityGroupFunctions() {}
+    private ActivitySystemConfigurationFunctions() {}
 
   }
 
-  public static interface IActivityGroupsFunctions extends IDynamicResourceExtension {
+  public static interface IActivityRootGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8fcdfb48-1e18-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IActivityGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IActivityRootGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ActivityGroupsFunctionsImpl implements IActivityGroupsFunctionsImpl {
+  public static class ActivityRootGroupsFunctionsImpl implements IActivityRootGroupsFunctionsImpl {
 
-    public static final IActivityGroupsFunctionsImpl INSTANCE = new ActivityGroupsFunctionsImpl();
+    public static final IActivityRootGroupsFunctionsImpl INSTANCE = new ActivityRootGroupsFunctionsImpl();
 
-    private ActivityGroupsFunctionsImpl() {}
+    private ActivityRootGroupsFunctionsImpl() {}
 
   }
   
-  public static class ActivityGroupsFunctions {
+  public static class ActivityRootGroupsFunctions {
 
-    private ActivityGroupsFunctions() {}
+    private ActivityRootGroupsFunctions() {}
 
   }
 
-  public static interface IRoleSecurityGroupFunctions extends IDynamicResourceExtension {
+  public static interface IRoleActorGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fa35cae7-1e1b-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IRoleSecurityGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRoleActorGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RoleSecurityGroupFunctionsImpl implements IRoleSecurityGroupFunctionsImpl {
+  public static class RoleActorGroupFunctionsImpl implements IRoleActorGroupFunctionsImpl {
 
-    public static final IRoleSecurityGroupFunctionsImpl INSTANCE = new RoleSecurityGroupFunctionsImpl();
+    public static final IRoleActorGroupFunctionsImpl INSTANCE = new RoleActorGroupFunctionsImpl();
 
-    private RoleSecurityGroupFunctionsImpl() {}
+    private RoleActorGroupFunctionsImpl() {}
 
   }
   
-  public static class RoleSecurityGroupFunctions {
+  public static class RoleActorGroupFunctions {
 
-    private RoleSecurityGroupFunctions() {}
+    private RoleActorGroupFunctions() {}
 
   }
 
-  public static interface IRoleGroupsFunctions extends IDynamicResourceExtension {
+  public static interface IRoleRootGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0093bca4-1e1c-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IRoleGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRoleRootGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RoleGroupsFunctionsImpl implements IRoleGroupsFunctionsImpl {
+  public static class RoleRootGroupsFunctionsImpl implements IRoleRootGroupsFunctionsImpl {
 
-    public static final IRoleGroupsFunctionsImpl INSTANCE = new RoleGroupsFunctionsImpl();
+    public static final IRoleRootGroupsFunctionsImpl INSTANCE = new RoleRootGroupsFunctionsImpl();
 
-    private RoleGroupsFunctionsImpl() {}
+    private RoleRootGroupsFunctionsImpl() {}
 
   }
   
-  public static class RoleGroupsFunctions {
+  public static class RoleRootGroupsFunctions {
 
-    private RoleGroupsFunctions() {}
+    private RoleRootGroupsFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8db33913-1e0a-11e9-834d-77c41fccc6bf,v96EyA5i0zrP3SWJpMaYphobe1I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8db33913-1e0a-11e9-834d-77c41fccc6bf,GnlAdRklcjcGT66pAUlN+2FR2IA=] */

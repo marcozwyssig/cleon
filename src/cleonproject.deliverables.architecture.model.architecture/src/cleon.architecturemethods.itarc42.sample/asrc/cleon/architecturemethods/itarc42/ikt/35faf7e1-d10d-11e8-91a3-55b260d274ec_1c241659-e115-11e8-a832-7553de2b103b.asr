@@ -13,6 +13,9 @@
     <object statement-guid="7a8646f4-0cf2-11e9-be4f-03130cc057ef" type="literal">Das Revozieren von Zertifikaten ist im Funktionsumfang des AD CS enthalten. Sobald ein Zertifikat revoziert wurde, wird auf dem APP Server publiziert.</object>
     <object statement-guid="7a87a685-0cf2-11e9-be4f-03130cc057ef" type="literal">Das Publizieren der CRL ist über einen Windows Scheduler Task sichergestellt. Der Windows Task wird täglich ausgeführt.</object>
   </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="3b386731-804d-11e9-8989-93a2e754e0ab" type="literal">11</object>
+  </predicate>
   <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
     <object statement-guid="464cc119-02cc-11e9-9e58-33d596257b14">
       <resource guid="464c9a06-02cc-11e9-9e58-33d596257b14">

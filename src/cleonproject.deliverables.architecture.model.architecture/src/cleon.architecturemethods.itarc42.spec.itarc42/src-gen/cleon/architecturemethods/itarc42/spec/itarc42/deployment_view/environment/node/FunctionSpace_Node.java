@@ -42,7 +42,7 @@ public class FunctionSpace_Node {
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("29a7694e-1da4-11e9-b601-db75aa6f89a4")
-    public List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllNestedSubnetNodes();
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllNestedNetdomainNodes();
 
     @IDynamicResourceExtension.MethodId("58f6e61c-2aba-11e9-a3f8-336d9e792e17")
     public java.lang.Boolean IsSupplied();
@@ -68,6 +68,12 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("d9a8e4f8-7ba7-11e9-94aa-f1ea7ea33f46")
     public cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworkNode GetNetworkNode();
 
+    @IDynamicResourceExtension.MethodId("b5680fde-7f14-11e9-9a52-07d4b074defc")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponent> GetAllUsedSystemComponent();
+
+    @IDynamicResourceExtension.MethodId("f7c1ba46-7f15-11e9-9a52-07d4b074defc")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration> GetAllUsedSystemConfiguration();
+
   }
   
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -90,4 +96,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,jI5U1RTaW/C6dBD+6J3zVEwvlCE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,OKiiyugQ5Kb2cUxykA5YFGDXbvQ=] */

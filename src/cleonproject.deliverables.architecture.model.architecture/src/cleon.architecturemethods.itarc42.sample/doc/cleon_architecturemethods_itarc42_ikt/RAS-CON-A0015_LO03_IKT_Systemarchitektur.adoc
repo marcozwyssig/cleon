@@ -6493,184 +6493,141 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-====== rht-vm
+====== TN NMS (NMS) Aktivitäten
 
-Erlaubt den Zugriff
 
 
 
+======= Block Storage Service (BSS) Aktivitäten
 
-====== bss
 
-Erlaubt die Verwaltung
 
 
+======== grp-act-2014-nms-bss_guest
 
 
-====== kon
 
-Erlaubt die Verwaltung
 
 
 
+======== grp-act-2015-nms-bss_operator
 
-====== hpe
 
-Erlaubt die Verwaltung
 
 
 
 
-====== psa
 
-Erlaubt den Zugriff
+======= Kontron Server (KON) Aktivitäten
 
 
 
 
-====== psa
+======== grp-act-2022-nms-kon_guest
 
-Erlaubt die Verwaltung
 
 
 
 
-====== vce
 
-Erlaubt den Lesezugriff
+======== grp-act-2023-nms-kon_operator
 
 
 
 
-====== vce
 
-Erlaubt der Verwaltung
 
 
+======= ESX Physical (VMH) Aktivitäten
 
 
-====== vbm
 
-Erlaubt den Lesezugriff
 
+======== grp-act-2058-nms-vmh_guest
 
 
 
-====== vbm
 
-Erlaubt der Verwaltung
 
 
+======== grp-act-2059-nms-vmh_operator
 
 
-====== jmp
 
-Erlaubt den Zugriff
 
 
 
 
-====== cmg
 
-Erlaubt den Zugriff
+====== TN EAZS (906) Aktivitäten
 
 
 
 
-====== cmg
+======= HPE Server (HPE) Aktivitäten
 
-Erlaubt den Schreibzugriff ohne Installation
 
 
 
+======== grp-act-2120-906-hpe_guest
 
-====== cmg
 
-Erlaubt die Installation / Verteilung der Konfiguration
 
 
 
 
-====== prt
+======== grp-act-2121-906-hpe_operator
 
-Erlaubt den Lesezugriff
 
 
 
 
-====== prt
 
-Erlaubt die Verwaltung
 
 
+====== TN EAZS (907) Aktivitäten
 
 
-====== mdc
 
-Wird zur Authentifizierung benötigt
 
+======= HPE Server (HPE) Aktivitäten
 
 
 
-====== mdc
 
-Erlaubt die Verwaltung der Domäne
+======== grp-act-2221-907-hpe_operator
 
 
 
 
-====== adm
 
-Erlaubt den Lesezugriff
 
 
 
+====== TN RA1 (984) Aktivitäten
 
-====== adm
 
-Erlaubt die Verwaltung
 
 
 
 
-====== rsa
+====== TN RA2 (986) Aktivitäten
 
-Erlaubt den Lesezugriff
 
 
 
 
-====== rsa
 
-Erlaubt die Verwaltung
+====== TN IA1 (981) Aktivitäten
 
 
 
 
-====== mcs
 
-Erlaubt die Nutzung der PKI (Enroll Zertifikate, Revoke, etc.)
 
+====== TN IA2 (982) Aktivitäten
 
 
-
-====== mcs
-
-Erlaubt die Verwaltung
-
-
-
-
-====== epo
-
-Erlaubt den Lesezugriff
-
-
-
-
-====== epo
-
-Erlaubt die Verwaltung
 
 
 
@@ -6681,44 +6638,63 @@ Erlaubt die Verwaltung
 
 
 
-====== ikt_zentrale-admin
-
-Verantwortlich für den Betrieb des System-Komponenten
+====== TN NMS (NMS) Rollen
 
 
 
 
-====== ikt_zentrale-operator
-
-IKT-Zentrale Operator 
 
 
-
-
-====== ikt_tn-betreiber-operator
-
-Verantwortlich für den Betrieb der Kantonskomponenten oder Veratnwortlich für die Integration bei Standorten mit reduzierten Zutritten
+====== TN EAZS (906) Rollen
 
 
 
 
-====== system-integrator-integrator
-
-Verantwortlich für die Integration von neuen oder erweiterten Komponenten
 
 
-
-
-====== service_desk-operator
-
-Verantwortlich für den Service Desk des System IKT
+====== TN EAZS (907) Rollen
 
 
 
 
-====== sicherheitsverantwortlicher-auditor
 
-Verantwortlich für die Sicherheit in der System-Schicht Security
+
+====== TN RA1 (984) Rollen
+
+
+
+
+
+
+====== TN RA2 (986) Rollen
+
+
+
+
+======= ikt_zentrale-adfasdf
+
+
+
+
+======== grp-rol-1
+
+
+
+
+
+
+
+
+====== TN IA1 (981) Rollen
+
+
+
+
+
+
+====== TN IA2 (982) Rollen
+
+
 
 
 

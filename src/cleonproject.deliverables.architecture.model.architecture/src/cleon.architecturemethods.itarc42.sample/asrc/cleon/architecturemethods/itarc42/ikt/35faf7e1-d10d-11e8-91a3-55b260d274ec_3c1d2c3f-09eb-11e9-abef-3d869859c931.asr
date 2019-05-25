@@ -11,6 +11,9 @@
     <object statement-guid="1ba0c163-0e0b-11e9-ac05-81da9d8c018d" type="literal">Der Einsatz von Read-Only Domain Controller ist an Standorten sinnvoll, wo der Objektschutz nicht immer gewährleistet werden kann. Bei einem Verlust der Active Directory Instanz besteht ein geringeres Risiko eines Sicherheitsvorfalls.</object>
     <object statement-guid="4b1be454-0e12-11e9-8b4c-f9aec93d8b56" type="literal">Bei einem Ausfall der Verbindung zum NMS übernimmt die Slave Active Directory System-Konfiguration die TN-Autonomie.</object>
   </predicate>
+  <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+    <object statement-guid="3b564f8a-804d-11e9-8989-93a2e754e0ab" type="literal">31</object>
+  </predicate>
   <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
     <object statement-guid="7394c78b-0e0b-11e9-ac05-81da9d8c018d">
       <resource guid="7394a077-0e0b-11e9-ac05-81da9d8c018d">

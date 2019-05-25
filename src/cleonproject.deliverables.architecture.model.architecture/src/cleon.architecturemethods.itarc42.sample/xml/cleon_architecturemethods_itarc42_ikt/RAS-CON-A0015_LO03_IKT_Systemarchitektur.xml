@@ -11888,146 +11888,34 @@
 							<db:tr>
 								<db:th>Name</db:th>
 								<db:th>Range</db:th>
-								<db:th>System-Konfiguration</db:th>
+								<db:th>Netzdomäne</db:th>
 								<db:th>Anzahl Aktivitäten</db:th>			
 							</db:tr>
 						</db:thead>
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>rht-vm [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5ba7d528-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1200-1299</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Redhat Virtual (RHT-VM)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>7</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>bss [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.882c50dc-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1300-1399</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Block Storage Service (BSS)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>kon [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.b8d3adaf-1d9a-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1400-1499</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Kontron Server (KON)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>7</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>hpe [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.22253234-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1500-1599</db:para>
-								</db:td>
-								<db:td>
-									<db:para>HPE Server (HPE)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>6</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>psa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3362fe16-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1600-1699</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Pulse Secure Appliance (PSA)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>psa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ef14d230-1da1-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1700-1799</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Pulse Secure Appliance (PSA)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>vce [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e66cb135-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1800-1899</db:para>
-								</db:td>
-								<db:td>
-									<db:para>vCenter (VCE)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>7</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>vce [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ec8fe44f-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1900-1999</db:para>
-								</db:td>
-								<db:td>
-									<db:para>vCenter (VCE)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>7</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>vbm [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f30fb523-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN NMS (NMS) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd6-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2000-2099</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Veeam Backup Management (VBM)</db:para>
+									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>3</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>vbm [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ff535b7b-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN EAZS (906) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2100-2199</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Veeam Backup Management (VBM)</db:para>
+									<db:para>TN EAZS (906)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>1</db:para>
@@ -12035,27 +11923,13 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>jmp [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.27f0162d-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN EAZS (907) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2200-2299</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Jump Host (JMP)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>7</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>cmg [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a873412e-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2300-2399</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Configuration Management (CMG)</db:para>
+									<db:para>TN EAZS (907)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>1</db:para>
@@ -12063,2013 +11937,496 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>cmg [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.aec23f06-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2400-2499</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Configuration Management (CMG)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>cmg [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.b8ae871b-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2500-2599</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Configuration Management (CMG)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>prt [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.72d5c7f0-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN RA1 (984) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5ec8e3ef-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2600-2699</db:para>
 								</db:td>
 								<db:td>
-									<db:para>PRTG (PRT)</db:para>
+									<db:para>TN RA1 (984)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>prt [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.b70ab76d-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN RA2 (986) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5ec8e3f0-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2700-2799</db:para>
 								</db:td>
 								<db:td>
-									<db:para>PRTG (PRT)</db:para>
+									<db:para>TN RA2 (986)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>mdc [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3d607a76-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN IA1 (981) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5ec8e3f1-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2800-2899</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Master Active Directory (MDC)</db:para>
+									<db:para>TN IA1 (981)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>mdc [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.45b3fa13-1d9b-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN IA2 (982) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5ec8e3f2-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2900-2999</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Master Active Directory (MDC)</db:para>
+									<db:para>TN IA2 (982)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>adm [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e13f0d0e-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3200-3299</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Active Directory Management (ADM)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>adm [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.0b560b13-1d9d-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3100-3199</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Active Directory Management (ADM)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>rsa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.11e8055a-1d9d-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3200-3299</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2FA (RSA)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>rsa [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.142858c2-1d9d-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3300-3399</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2FA (RSA)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>mcs [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1050b957-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3400-3499</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Issuing CA (MCS)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>mcs [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.18e9cd71-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3500-3599</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Issuing CA (MCS)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>epo [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d9696ee4-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3600-3699</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>epo [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.dd90aab9-1d9c-11e9-b601-db75aa6f89a4"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>3700-3799</db:para>
-								</db:td>
-								<db:td>
-									<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">26</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
-					<db:section xml:id="ea.5ba7d528-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>rht-vm</db:title>
+					<db:section xml:id="ea.53b83fd6-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN NMS (NMS) Aktivit&#228;ten</db:title>
 						
-						<db:para>Erlaubt den Zugriff</db:para>
 						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Redhat Virtual (RHT-VM)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1200</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1200-nms-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1201</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1201-906-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1202</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1202-907-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1206</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1206-984-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1207</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1207-986-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1208</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1208-981-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1209</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1209-982-rht-vm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
+						<db:section xml:id="ea.6f94ad64-7f1b-11e9-9a52-07d4b074defc">
+							<db:title>Block Storage Service (BSS) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Block Storage Service (BSS)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2014</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2014-nms-bss_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+												<db:listitem>
+													<db:para>grp-rol-1</db:para>
+												</db:listitem>	
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2015</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2015-nms-bss_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.73389cfc-7f28-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2014-nms-bss_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.77058351-7f28-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2015-nms-bss_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.a1d536cc-804e-11e9-8989-93a2e754e0ab">
+							<db:title>Kontron Server (KON) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Kontron Server (KON)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2022</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2022-nms-kon_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2023</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2023-nms-kon_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.a6f74c62-804e-11e9-8989-93a2e754e0ab">
+								<db:title>grp-act-2022-nms-kon_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.a87bc985-804e-11e9-8989-93a2e754e0ab">
+								<db:title>grp-act-2023-nms-kon_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.eacc698e-804e-11e9-8989-93a2e754e0ab">
+							<db:title>ESX Physical (VMH) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESX Physical (VMH)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2058</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2058-nms-vmh_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2059</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2059-nms-vmh_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.f2cc4b37-804e-11e9-8989-93a2e754e0ab">
+								<db:title>grp-act-2058-nms-vmh_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.fa20f92f-804e-11e9-8989-93a2e754e0ab">
+								<db:title>grp-act-2059-nms-vmh_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+					<db:section xml:id="ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (906) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.89636970-7f22-11e9-9a52-07d4b074defc">
+							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2120</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2120-906-hpe_guest</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2121</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2121-906-hpe_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.46314e55-7f23-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2120-906-hpe_guest</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.58cd67c4-7f23-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2121-906-hpe_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+					<db:section xml:id="ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (907) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.88253580-7f28-11e9-9a52-07d4b074defc">
+							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2221</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2221-907-hpe_operator</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (907)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.971cb14d-7f28-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2221-907-hpe_operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+					<db:section xml:id="ea.5ec8e3ef-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN RA1 (984) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.882c50dc-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>bss</db:title>
+					<db:section xml:id="ea.5ec8e3f0-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN RA2 (986) Aktivit&#228;ten</db:title>
 						
-						<db:para>Erlaubt die Verwaltung</db:para>
 						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Block Storage Service (BSS)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1300</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1300-nms-bss</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>grp-rol-3502-sicherheitsverantwortlicher-nms-storage-auditor</db:para>
-											</db:listitem>	
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.b8d3adaf-1d9a-11e9-b601-db75aa6f89a4">
-						<db:title>kon</db:title>
+					<db:section xml:id="ea.5ec8e3f1-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN IA1 (981) Aktivit&#228;ten</db:title>
 						
-						<db:para>Erlaubt die Verwaltung</db:para>
 						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Kontron Server (KON)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1400</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1400-nms-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1401</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1401-906-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1402</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1402-907-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1406</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1406-984-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1407</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1407-986-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1408</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1408-981-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1409</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1409-982-kon</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.22253234-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>hpe</db:title>
+					<db:section xml:id="ea.5ec8e3f2-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN IA2 (982) Aktivit&#228;ten</db:title>
 						
-						<db:para>Erlaubt die Verwaltung</db:para>
 						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1501</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1501-906-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1502</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1502-907-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1506</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1506-984-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1507</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1507-986-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1508</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1508-981-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1509</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1509-982-hpe</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">6</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
 						
-					</db:section>
-					<db:section xml:id="ea.3362fe16-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>psa</db:title>
 						
-						<db:para>Erlaubt den Zugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Pulse Secure Appliance (PSA)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1600</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1600-nms-psa</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.ef14d230-1da1-11e9-b601-db75aa6f89a4">
-						<db:title>psa</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Pulse Secure Appliance (PSA)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1700</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1700-nms-psa</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>grp-rol-2005-ikt zentrale-nms-network-admin</db:para>
-											</db:listitem>	
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.e66cb135-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>vce</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'vCenter (VCE)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1800</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1800-nms-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1801</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1801-906-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1802</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1802-907-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1806</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1806-984-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1807</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1807-986-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1808</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1808-981-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1809</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1809-982-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.ec8fe44f-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>vce</db:title>
-						
-						<db:para>Erlaubt der Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'vCenter (VCE)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A1900</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1900-nms-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1901</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1901-906-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1902</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1902-907-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1906</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1906-984-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1907</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1907-986-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1908</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1908-981-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A1909</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-1909-982-vce</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.f30fb523-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>vbm</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Veeam Backup Management (VBM)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2000</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2000-nms-vbm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.ff535b7b-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>vbm</db:title>
-						
-						<db:para>Erlaubt der Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Veeam Backup Management (VBM)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2100</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2100-nms-vbm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.27f0162d-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>jmp</db:title>
-						
-						<db:para>Erlaubt den Zugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Jump Host (JMP)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2200</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2200-nms-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2201</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2201-906-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2202</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2202-907-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2206</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2206-984-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2207</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2207-986-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2208</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2208-981-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>A2209</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2209-982-jmp</db:para>
-									</db:td>
-									<db:td>
-										<db:para>982</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.a873412e-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>cmg</db:title>
-						
-						<db:para>Erlaubt den Zugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Configuration Management (CMG)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2300</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2300-nms-cmg</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.aec23f06-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>cmg</db:title>
-						
-						<db:para>Erlaubt den Schreibzugriff ohne Installation</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Configuration Management (CMG)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2400</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2400-nms-cmg</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.b8ae871b-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>cmg</db:title>
-						
-						<db:para>Erlaubt die Installation / Verteilung der Konfiguration</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Configuration Management (CMG)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2500</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2500-nms-cmg</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.72d5c7f0-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>prt</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'PRTG (PRT)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2600</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2600-nms-prt</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.b70ab76d-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>prt</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'PRTG (PRT)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2700</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2700-nms-prt</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.3d607a76-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>mdc</db:title>
-						
-						<db:para>Wird zur Authentifizierung ben&#246;tigt</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Master Active Directory (MDC)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2800</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2800-nms-mdc</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.45b3fa13-1d9b-11e9-b601-db75aa6f89a4">
-						<db:title>mdc</db:title>
-						
-						<db:para>Erlaubt die Verwaltung der Dom&#228;ne</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Master Active Directory (MDC)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A2900</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-2900-nms-mdc</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.e13f0d0e-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>adm</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Active Directory Management (ADM)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3200</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3200-nms-adm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.0b560b13-1d9d-11e9-b601-db75aa6f89a4">
-						<db:title>adm</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Active Directory Management (ADM)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3100</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3100-nms-adm</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.11e8055a-1d9d-11e9-b601-db75aa6f89a4">
-						<db:title>rsa</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration '2FA (RSA)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3200</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3200-nms-rsa</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.142858c2-1d9d-11e9-b601-db75aa6f89a4">
-						<db:title>rsa</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration '2FA (RSA)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3300</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3300-nms-rsa</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.1050b957-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>mcs</db:title>
-						
-						<db:para>Erlaubt die Nutzung der PKI (Enroll Zertifikate, Revoke, etc.)</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Issuing CA (MCS)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3400</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3400-nms-mcs</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.18e9cd71-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>mcs</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Issuing CA (MCS)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3500</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3500-nms-mcs</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.d9696ee4-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>epo</db:title>
-						
-						<db:para>Erlaubt den Lesezugriff</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Endpoint Protection Orchestrator (EPO)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3600</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3600-nms-epo</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
-						
-					</db:section>
-					<db:section xml:id="ea.dd90aab9-1d9c-11e9-b601-db75aa6f89a4">
-						<db:title>epo</db:title>
-						
-						<db:para>Erlaubt die Verwaltung</db:para>
-						
-						<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Endpoint Protection Orchestrator (EPO)' aufgeführt. Für
-						die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Aktivität ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Rollen</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>A3700</db:para>
-									</db:td>
-									<db:td>
-										<db:para>grp-act-3700-nms-epo</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
 						
 					</db:section>
 				</db:section>
@@ -14097,55 +12454,69 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>ikt_zentrale-admin [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53e5e931-1da0-11e9-b601-db75aa6f89a4"/>]</db:para>
+									<db:para>TN NMS (NMS) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6d332d77-1e09-11e9-834d-77c41fccc6bf"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2000-2099</db:para>
 								</db:td>
 								<db:td>
-									<db:para>IKT Zentrale</db:para>
+									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>7</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>ikt_zentrale-operator [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.23149a04-35eb-11e9-9d58-25409887bb2a"/>]</db:para>
+									<db:para>TN EAZS (906) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>2500-2599</db:para>
+									<db:para>2100-2199</db:para>
 								</db:td>
 								<db:td>
-									<db:para>IKT Zentrale</db:para>
+									<db:para>TN EAZS (906)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>ikt_tn-betreiber-operator [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3fa26cda-1e10-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN EAZS (907) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2200-2299</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN EAZS (907)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>0</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>TN RA1 (984) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2600-2699</db:para>
 								</db:td>
 								<db:td>
-									<db:para>IKT TN-Betreiber</db:para>
+									<db:para>TN RA1 (984)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>8</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>system-integrator-integrator [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.7f3c7036-1e13-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN RA2 (986) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>3000-3099</db:para>
+									<db:para>2700-2799</db:para>
 								</db:td>
 								<db:td>
-									<db:para>System-Integrator</db:para>
+									<db:para>TN RA2 (986)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>1</db:para>
@@ -14153,1915 +12524,154 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>service_desk-operator [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d119ed84-1e13-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN IA1 (981) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3b-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>3100-3199</db:para>
+									<db:para>2800-2899</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Service Desk</db:para>
+									<db:para>TN IA1 (981)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>sicherheitsverantwortlicher-auditor [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.39061582-1e14-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN IA2 (982) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3c-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>3500-3599</db:para>
+									<db:para>2900-2999</db:para>
 								</db:td>
 								<db:td>
-									<db:para>Sicherheitsverantwortlicher</db:para>
+									<db:para>TN IA2 (982)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>6</db:para>
+									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">6</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
-					<db:section xml:id="ea.53e5e931-1da0-11e9-b601-db75aa6f89a4">
-						<db:title>ikt_zentrale-admin</db:title>
+					<db:section xml:id="ea.6d332d77-1e09-11e9-834d-77c41fccc6bf">
+						<db:title>TN NMS (NMS) Rollen</db:title>
 						
-						<db:para>Verantwortlich f&#252;r den Betrieb des System-Komponenten</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'IKT Zentrale' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R2002</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2003</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2004</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2001</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2012</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2005</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>grp-act-1700-nms-psa</db:para>
-											</db:listitem>	
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2010</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2015</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2006</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2008</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2009</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2016</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2011</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2007</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2013</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2033</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2034</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2031</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2037</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2043</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2040</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2063</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2064</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2061</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2067</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2073</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2070</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2183</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2184</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2181</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2187</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2193</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2190</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2213</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2214</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2211</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2217</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2223</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2220</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2243</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2244</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2241</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2247</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2253</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2250</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2249</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.23149a04-35eb-11e9-9d58-25409887bb2a">
-						<db:title>ikt_zentrale-operator</db:title>
+					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (906) Rollen</db:title>
 						
-						<db:para>IKT-Zentrale Operator </db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'IKT Zentrale' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R2515</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.3fa26cda-1e10-11e9-865e-41ef48a95f70">
-						<db:title>ikt_tn-betreiber-operator</db:title>
+					<db:section xml:id="ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (907) Rollen</db:title>
 						
-						<db:para>Verantwortlich f&#252;r den Betrieb der Kantonskomponenten oder Veratnwortlich f&#252;r die Integration bei Standorten mit reduzierten Zutritten</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'IKT TN-Betreiber' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R2602</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2603</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2601</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2605</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2610</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2633</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2634</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2631</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2637</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2643</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2640</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2663</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2664</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2661</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2667</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2673</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2670</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2903</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2904</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2901</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2907</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2913</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2910</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN FUB (50X)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>50X</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2783</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2784</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2781</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2787</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2793</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2790</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2813</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2814</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2811</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2817</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2823</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2820</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2843</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2844</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2841</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2847</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2853</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2850</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R2849</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">8</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.7f3c7036-1e13-11e9-865e-41ef48a95f70">
-						<db:title>system-integrator-integrator</db:title>
+					<db:section xml:id="ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN RA1 (984) Rollen</db:title>
 						
-						<db:para>Verantwortlich f&#252;r die Integration von neuen oder erweiterten Komponenten</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'System-Integrator' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R3011</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.d119ed84-1e13-11e9-865e-41ef48a95f70">
-						<db:title>service_desk-operator</db:title>
+					<db:section xml:id="ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN RA2 (986) Rollen</db:title>
 						
-						<db:para>Verantwortlich f&#252;r den Service Desk des System IKT</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'Service Desk' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R3112</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
+						<db:section xml:id="ea.4a498eda-7f1b-11e9-9a52-07d4b074defc">
+							<db:title>ikt_zentrale-adfasdf</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'IKT Zentrale' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT Zentrale' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>R1</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+												<db:listitem>
+													<db:para></db:para>
+												</db:listitem>	
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.5270cf7f-7f1b-11e9-9a52-07d4b074defc">
+								<db:title>grp-rol-1</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+					<db:section xml:id="ea.a9f85b3b-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN IA1 (981) Rollen</db:title>
+						
+						
+						
+						
 						
 					</db:section>
-					<db:section xml:id="ea.39061582-1e14-11e9-865e-41ef48a95f70">
-						<db:title>sicherheitsverantwortlicher-auditor</db:title>
+					<db:section xml:id="ea.a9f85b3c-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN IA2 (982) Rollen</db:title>
 						
-						<db:para>Verantwortlich f&#252;r die Sicherheit in der System-Schicht Security</db:para>
 						
-						<db:para>Nachfolgend werden die Rollen für den Aktor 'Sicherheitsverantwortlicher' aufgeführt. Für
-						die Administration der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich. Für die Vergabe / Freigabe
-						der Rolle ist der Aktor 'Sicherheitsverantwortlicher' verantwortlich.</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="10%" />
-							<db:col width="35%" />
-							<db:col width="20%" />
-							<db:col width="35%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Nr.</db:th>
-									<db:th>Name</db:th>
-									<db:th>Teilnetz</db:th>
-									<db:th>Aktivitäten</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>
-								<db:tr>
-									<db:td>
-										<db:para>R3502</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-											<db:listitem>
-												<db:para>grp-act-1300-nms-bss</db:para>
-											</db:listitem>	
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3501</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3512</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3505</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3508</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3509</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3516</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3511</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN NMS (NMS)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>NMS</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3533</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3531</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (906)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>906</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3563</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3561</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN EAZS (907)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>907</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3683</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3681</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3690</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA1 (984)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>984</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3713</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3711</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3720</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN RA2 (986)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>986</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3743</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>R3741</db:para>
-									</db:td>
-									<db:td>
-										<db:para>TN IA1 (981)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>981</db:para>
-									</db:td>
-									<db:td>
-										<db:itemizedlist>
-										</db:itemizedlist>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-									<db:td>
-										<db:para><db:emphasis role="strong">6</db:emphasis></db:para>
-									</db:td>
-									<db:td></db:td>						
-									<db:td></db:td>						
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>
+						
+						
 						
 					</db:section>
 				</db:section>

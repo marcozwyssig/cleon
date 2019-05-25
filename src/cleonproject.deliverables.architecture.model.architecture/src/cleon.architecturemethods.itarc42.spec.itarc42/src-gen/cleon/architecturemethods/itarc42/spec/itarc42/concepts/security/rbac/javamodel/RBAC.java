@@ -51,11 +51,11 @@ public class RBAC extends DynamicResource implements IRBAC {
   // relations
   
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IActivityGroups selectActivities() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IActivityGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities);
+  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups selectActivities() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities);
   }
 
-  public RBAC setActivities(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IActivityGroups activities) {
+  public RBAC setActivities(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups activities) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, activities);
     return this;
   }
@@ -91,11 +91,11 @@ public class RBAC extends DynamicResource implements IRBAC {
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRoleGroups selectRoles() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRoleGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles);
+  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups selectRoles() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles);
   }
 
-  public RBAC setRoles(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRoleGroups roles) {
+  public RBAC setRoles(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups roles) {
     _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles, roles);
     return this;
   }
@@ -117,23 +117,23 @@ public class RBAC extends DynamicResource implements IRBAC {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IActivityGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRoleGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC selectToMeActivities(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IActivityGroups object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC selectToMeRoles(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRoleGroups object) {
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC selectToMeRoles(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles, object.getResource());
   }
   
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC selectToMeActivities(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,tTtROmdrxxon0VJumVkv4HUFXf4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,OuTjfPadMe/xQXVhGAu6EMA3Gnc=] */

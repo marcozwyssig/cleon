@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel;
+package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -14,4 +14,4 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,pm1csV3qtogUCEx3D5xcwxadkyk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,8PMuwMC/863/6pOY/74GrHM8pWg=] */

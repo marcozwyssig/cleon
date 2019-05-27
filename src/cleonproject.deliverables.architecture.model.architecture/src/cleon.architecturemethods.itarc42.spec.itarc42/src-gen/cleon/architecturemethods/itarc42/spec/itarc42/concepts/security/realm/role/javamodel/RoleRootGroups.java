@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel;
+package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -81,12 +81,12 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup> selectNetDomainGroups() {
-    return _getMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.RolePackage.RoleRootGroups_netDomainGroups);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleNetDomainGroup> selectNetDomainGroups() {
+    return _getMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleNetDomainGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.RolePackage.RoleRootGroups_netDomainGroups);
   }
 
-  public RoleRootGroups setNetDomainGroups(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup> netDomainGroups) {
-    _setMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.RolePackage.RoleRootGroups_netDomainGroups, netDomainGroups);
+  public RoleRootGroups setNetDomainGroups(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleNetDomainGroup> netDomainGroups) {
+    _setMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.RolePackage.RoleRootGroups_netDomainGroups, netDomainGroups);
     return this;
   }
     
@@ -120,16 +120,16 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.AbstractGroups_groups, visitor);
-    _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.RolePackage.RoleRootGroups_netDomainGroups, visitor);
+    _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleNetDomainGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.RolePackage.RoleRootGroups_netDomainGroups, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups selectToMeNetDomainGroups(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.RolePackage.RoleRootGroups_netDomainGroups, object.getResource());
+  public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleRootGroups selectToMeNetDomainGroups(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleNetDomainGroup object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.RolePackage.RoleRootGroups_netDomainGroups, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,DUIT8yI0oZJ8Vr5MhcWSGCI0A7c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,DD/zUFe1SIHVSgeFPLa2/TWC/Vc=] */

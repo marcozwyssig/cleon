@@ -97,6 +97,37 @@ public class FunctionSpace_Activity {
 
   }
 
+  public static interface IPermissionsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6715a024-809a-11e9-8e65-f3f639e40a34")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions> AllPermissions();
+
+    @IDynamicResourceExtension.MethodId("84f4910e-809a-11e9-8e65-f3f639e40a34")
+    public java.lang.Integer CountAllPermission();
+
+    @IDynamicResourceExtension.MethodId("a9b5bf5c-809a-11e9-8e65-f3f639e40a34")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermission> AllPermission();
+
+  }
+  
+  public static interface IPermissionsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class PermissionsFunctionsImpl implements IPermissionsFunctionsImpl {
+
+    public static final IPermissionsFunctionsImpl INSTANCE = new PermissionsFunctionsImpl();
+
+    private PermissionsFunctionsImpl() {}
+
+  }
+  
+  public static class PermissionsFunctions {
+
+    private PermissionsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,DD2ZrMWCTwunDo7ECn9vEIzhBM0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,Ea+4qdCHnUOQw9HNxNFxtk8CNuo=] */

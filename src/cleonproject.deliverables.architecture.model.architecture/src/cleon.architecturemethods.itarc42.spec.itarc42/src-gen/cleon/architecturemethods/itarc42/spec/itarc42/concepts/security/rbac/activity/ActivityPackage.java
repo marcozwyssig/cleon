@@ -12,13 +12,15 @@ public class ActivityPackage {
   public static final Resource ActivityNetdomainGroup_activities = new Resource("aeadc960-1e07-11e9-834d-77c41fccc6bf");
   public static final Resource FunctionSpace_aE_Activity_ActivityPermission = new Resource("17cd0a41-35ef-11e9-9d58-25409887bb2a");
   public static final Resource Permission = new Resource("ffd8187a-7f1a-11e9-9a52-07d4b074defc");
-  public static final Resource Permission_guest = new Resource("02ce9bce-7f1b-11e9-9a52-07d4b074defc");
-  public static final Resource Permission_operator = new Resource("0701971f-7f1b-11e9-9a52-07d4b074defc");
-  public static final Resource Permission_admin = new Resource("093cba74-7f1b-11e9-9a52-07d4b074defc");
   public static final Resource ActivityPermission = new Resource("b898fc57-7f22-11e9-9a52-07d4b074defc");
   public static final Resource ActivitySystemConfiguration_permissions = new Resource("db919f16-7f22-11e9-9a52-07d4b074defc");
   public static final Resource ActivityPermission_permission = new Resource("3db2c649-7f23-11e9-9a52-07d4b074defc");
   public static final Resource FunctionSpace_aE_Activity_Permission = new Resource("a94f0138-7f27-11e9-9a52-07d4b074defc");
+  public static final Resource Permissions = new Resource("a1b6bd66-8099-11e9-8e65-f3f639e40a34");
+  public static final Resource Permissions_permissions = new Resource("d8635225-8099-11e9-8e65-f3f639e40a34");
+  public static final Resource Permissions_basedOn = new Resource("15598d90-809a-11e9-8e65-f3f639e40a34");
+  public static final Resource ActivityRootGroups_uses = new Resource("4de346f2-809a-11e9-8e65-f3f639e40a34");
+  public static final Resource FunctionSpace_aE_Activity_Permissions = new Resource("61daaa84-809a-11e9-8e65-f3f639e40a34");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +41,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity,CDBBlf4hmx06FVDk8YBUJoUyI00=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity,Vzc8XrynidDNbl4nAui6dx66JXc=] */

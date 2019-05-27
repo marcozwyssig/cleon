@@ -90,49 +90,5 @@ public class Permission extends DynamicResource implements IPermission {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // accept enum value visitors
-
-  @Override
-  public <R> R accept(IValueVisitor<R> visitor) {
-    if (isGuest()) return visitor.visitGuest();
-    if (isOperator()) return visitor.visitOperator();
-    if (isAdmin()) return visitor.visitAdmin();
-    throw new IllegalStateException("unknown enumvalue: " + fResource);
-  }
-  
-  @Override
-  public void accept(IValueVoidVisitor visitor) {
-    if (isGuest()) {
-      visitor.visitGuest();
-      return;
-    }
-    if (isOperator()) {
-      visitor.visitOperator();
-      return;
-    }
-    if (isAdmin()) {
-      visitor.visitAdmin();
-      return;
-    }
-    throw new IllegalStateException("unknown enumvalue: " + fResource);
-  }
-  
-  // isValue-Methods
-    
-  @Override
-  public boolean isGuest() {
-    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.Permission_guest);
-  }
-  
-  @Override
-  public boolean isOperator() {
-    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.Permission_operator);
-  }
-  
-  @Override
-  public boolean isAdmin() {
-    return getResource().equals(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.Permission_admin);
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,uI0HDlIEiXEOGjlXerMeW3bxCqE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,40ExQdzxRoFa6hS7n3W5gpfa1IY=] */

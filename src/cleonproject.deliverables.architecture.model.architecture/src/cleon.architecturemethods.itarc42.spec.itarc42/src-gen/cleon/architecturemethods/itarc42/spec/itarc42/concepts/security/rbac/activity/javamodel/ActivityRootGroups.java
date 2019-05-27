@@ -120,6 +120,16 @@ public class ActivityRootGroups extends DynamicResource implements IActivityRoot
     return this;
   }
     
+  @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions selectUses() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.ActivityRootGroups_uses);
+  }
+
+  public ActivityRootGroups setUses(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions uses) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.ActivityRootGroups_uses, uses);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -134,13 +144,18 @@ public class ActivityRootGroups extends DynamicResource implements IActivityRoot
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.AbstractRootGroups_netDomainGroups, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.ActivityRootGroups_uses, visitor);
   }
 
   // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups> selectToMeUses(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IPermissions object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.ActivityRootGroups_uses, object.getResource());
+  }
   
   public static cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups selectToMeActivities(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityNetdomainGroup object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.ActivityPackage.ActivityRootGroups_activities, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c451877-1d99-11e9-b601-db75aa6f89a4,xGbePUiUzkAXZBrOjOwpSB0Wy44=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c451877-1d99-11e9-b601-db75aa6f89a4,M8UL9fA+30EEZWSJPYCj+xV1iTg=] */

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="d139d333-8099-11e9-8e65-f3f639e40a34">
+  <owns predicate="d8635225-8099-11e9-8e65-f3f639e40a34">
+    <resource statement-guid="e373f67b-8099-11e9-8e65-f3f639e40a34" type="resource" guid="02ce9bce-7f1b-11e9-9a52-07d4b074defc" />
+    <resource statement-guid="e3757d20-8099-11e9-8e65-f3f639e40a34" type="resource" guid="0701971f-7f1b-11e9-9a52-07d4b074defc" />
+    <resource statement-guid="e375cb43-8099-11e9-8e65-f3f639e40a34" type="resource" guid="093cba74-7f1b-11e9-9a52-07d4b074defc" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="d139d335-8099-11e9-8e65-f3f639e40a34" type="resource" guid="a1b6bd66-8099-11e9-8e65-f3f639e40a34" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="fff41b28-8099-11e9-8e65-f3f639e40a34" type="literal">Standard</object>
+  </predicate>
+  <predicate guid="d8635225-8099-11e9-8e65-f3f639e40a34">
+    <object statement-guid="e373f67b-8099-11e9-8e65-f3f639e40a34">
+      <resource guid="02ce9bce-7f1b-11e9-9a52-07d4b074defc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="02cec2e0-7f1b-11e9-9a52-07d4b074defc" type="resource" guid="ffd8187a-7f1a-11e9-9a52-07d4b074defc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="04327165-7f1b-11e9-9a52-07d4b074defc" type="literal">guest</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="1407f12e-7f1b-11e9-9a52-07d4b074defc" type="literal">Erlaubt den Gastzugriff (mit Leseberechtigungen)</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="fa216237-7f25-11e9-9a52-07d4b074defc" type="literal">1</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e3757d20-8099-11e9-8e65-f3f639e40a34">
+      <resource guid="0701971f-7f1b-11e9-9a52-07d4b074defc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="07019721-7f1b-11e9-9a52-07d4b074defc" type="resource" guid="ffd8187a-7f1a-11e9-9a52-07d4b074defc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="08215f0c-7f1b-11e9-9a52-07d4b074defc" type="literal">operator</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="2012863b-7f1b-11e9-9a52-07d4b074defc" type="literal">Erlaubt den betrieblichen Zugriff</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="fc1ac17d-7f25-11e9-9a52-07d4b074defc" type="literal">2</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="e375cb43-8099-11e9-8e65-f3f639e40a34">
+      <resource guid="093cba74-7f1b-11e9-9a52-07d4b074defc">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="093cba76-7f1b-11e9-9a52-07d4b074defc" type="resource" guid="ffd8187a-7f1a-11e9-9a52-07d4b074defc" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0a2d0e33-7f1b-11e9-9a52-07d4b074defc" type="literal">admin</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="2760ca90-7f1b-11e9-9a52-07d4b074defc" type="literal">Erlaubt den administrativen Zugriff</object>
+        </predicate>
+        <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
+          <object statement-guid="fd8b68b6-7f25-11e9-9a52-07d4b074defc" type="literal">3</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

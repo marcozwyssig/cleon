@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role;
+package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -34,7 +34,7 @@ public class FunctionSpace_Role {
   public static interface IRoleSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("0410dad8-35ef-11e9-9d58-25409887bb2a")
-    public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent);
+    public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleSystemComponent roleSystemComponent);
 
   }
   
@@ -45,7 +45,7 @@ public class FunctionSpace_Role {
     private RoleSystemComponentFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
+    public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       /* Begin Protected Region [[0410dad8-35ef-11e9-9d58-25409887bb2a]] */
     	return 1;
       /* End Protected Region   [[0410dad8-35ef-11e9-9d58-25409887bb2a]] */
@@ -57,7 +57,7 @@ public class FunctionSpace_Role {
 
     private RoleSystemComponentFunctions() {}
 
-    public static java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
+    public static java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponent).GetId(roleSystemComponent);
     }
 
@@ -65,4 +65,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,oxQQh/hM6n0IRidllDUBvxzkpr0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,tX0a1i84wYlLLuaPrPoIsPhS2bA=] */

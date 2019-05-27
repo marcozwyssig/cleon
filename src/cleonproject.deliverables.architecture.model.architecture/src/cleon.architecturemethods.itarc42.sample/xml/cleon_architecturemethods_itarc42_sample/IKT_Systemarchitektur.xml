@@ -1246,7 +1246,7 @@
 						
 						
 						<db:section xml:id="ea.48f9ba91-7f14-11e9-9a52-07d4b074defc">
-							<db:title>role1-lll</db:title>
+							<db:title>Role1 Rollen</db:title>
 							
 							
 							
@@ -1269,7 +1269,7 @@
 								<db:tbody>
 									<db:tr>
 										<db:td>
-											<db:para>R1</db:para>
+											<db:para>R0</db:para>
 										</db:td>
 										<db:td>
 											<db:para></db:para>
@@ -1279,26 +1279,36 @@
 										</db:td>
 										<db:td>
 											<db:itemizedlist>
+												<db:listitem>
+													<db:para></db:para>
+												</db:listitem>	
 											</db:itemizedlist>
 										</db:td>
 									</db:tr>
 									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
 									</db:tr>
 								</db:tbody>
 							</db:informaltable>
-							<db:section xml:id="ea.f1a33821-7f14-11e9-9a52-07d4b074defc">
-								<db:title>grp-rol-1</db:title>
+							<db:section xml:id="ea.f5086743-809d-11e9-8e65-f3f639e40a34">
+								<db:title>Admin Verantwortlichkeiten</db:title>
 								
 								
 								
 								
-								
+								<db:section xml:id="ea.52ef8e31-809e-11e9-8e65-f3f639e40a34">
+									<db:title>grp-rol-0-server_admin</db:title>
+									
+									
+									
+									
+									
+								</db:section>
 							</db:section>
 						</db:section>
 					</db:section>

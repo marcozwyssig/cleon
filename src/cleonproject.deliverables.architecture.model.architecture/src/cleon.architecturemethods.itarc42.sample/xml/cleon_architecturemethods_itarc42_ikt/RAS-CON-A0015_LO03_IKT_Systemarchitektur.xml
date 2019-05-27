@@ -12041,9 +12041,6 @@
 										</db:td>
 										<db:td>
 											<db:itemizedlist>
-												<db:listitem>
-													<db:para>grp-rol-1</db:para>
-												</db:listitem>	
 											</db:itemizedlist>
 										</db:td>
 									</db:tr>
@@ -12059,6 +12056,9 @@
 										</db:td>
 										<db:td>
 											<db:itemizedlist>
+												<db:listitem>
+													<db:para>grp-rol-0-server_admin</db:para>
+												</db:listitem>	
 											</db:itemizedlist>
 										</db:td>
 									</db:tr>
@@ -12505,7 +12505,7 @@
 									<db:para>TN RA1 (984)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>0</db:para>
+									<db:para>1</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12590,7 +12590,40 @@
 						
 						
 						
-						
+						<db:section xml:id="ea.3d52f0cb-809c-11e9-8e65-f3f639e40a34">
+							<db:title>IKT Zentrale Rollen</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'IKT Zentrale' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">0/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							
+						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70">
 						<db:title>TN RA2 (986) Rollen</db:title>
@@ -12599,7 +12632,7 @@
 						
 						
 						<db:section xml:id="ea.4a498eda-7f1b-11e9-9a52-07d4b074defc">
-							<db:title>ikt_zentrale-adfasdf</db:title>
+							<db:title>IKT Zentrale Rollen</db:title>
 							
 							
 							
@@ -12621,35 +12654,17 @@
 								</db:thead>
 								<db:tbody>
 									<db:tr>
-										<db:td>
-											<db:para>R1</db:para>
-										</db:td>
-										<db:td>
-											<db:para></db:para>
-										</db:td>
-										<db:td>
-											<db:para></db:para>
-										</db:td>
-										<db:td>
-											<db:itemizedlist>
-												<db:listitem>
-													<db:para></db:para>
-												</db:listitem>	
-											</db:itemizedlist>
-										</db:td>
-									</db:tr>
-									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">1</db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
 									</db:tr>
 								</db:tbody>
 							</db:informaltable>
-							<db:section xml:id="ea.5270cf7f-7f1b-11e9-9a52-07d4b074defc">
-								<db:title>grp-rol-1</db:title>
+							<db:section xml:id="ea.0e1d73b7-809e-11e9-8e65-f3f639e40a34">
+								<db:title>Admin Verantwortlichkeiten</db:title>
 								
 								
 								

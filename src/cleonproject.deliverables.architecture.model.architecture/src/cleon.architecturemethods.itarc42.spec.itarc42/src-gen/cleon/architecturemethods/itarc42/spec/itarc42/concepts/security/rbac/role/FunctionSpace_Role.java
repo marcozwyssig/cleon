@@ -8,7 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
-
+import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
+import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
 /* End Protected Region   [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 
 public class FunctionSpace_Role {
@@ -47,7 +48,7 @@ public class FunctionSpace_Role {
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       /* Begin Protected Region [[0410dad8-35ef-11e9-9d58-25409887bb2a]] */
-    	return 1;
+    		return 0;
       /* End Protected Region   [[0410dad8-35ef-11e9-9d58-25409887bb2a]] */
     }
 
@@ -63,6 +64,37 @@ public class FunctionSpace_Role {
 
   }
 
+  public static interface IResponsibilitiesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("bbd34741-809c-11e9-8e65-f3f639e40a34")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IResponsibilities> AllResponsibilities();
+
+    @IDynamicResourceExtension.MethodId("d89b4a54-809c-11e9-8e65-f3f639e40a34")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IResponsibility> AllResponsibility();
+
+    @IDynamicResourceExtension.MethodId("ee0f14dc-809c-11e9-8e65-f3f639e40a34")
+    public java.lang.Integer AllCountResponsibility();
+
+  }
+  
+  public static interface IResponsibilitiesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResponsibilitiesFunctionsImpl implements IResponsibilitiesFunctionsImpl {
+
+    public static final IResponsibilitiesFunctionsImpl INSTANCE = new ResponsibilitiesFunctionsImpl();
+
+    private ResponsibilitiesFunctionsImpl() {}
+
+  }
+  
+  public static class ResponsibilitiesFunctions {
+
+    private ResponsibilitiesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,oxQQh/hM6n0IRidllDUBvxzkpr0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,m/2CLKZgn/LG19QyK+kr6YsIYqE=] */

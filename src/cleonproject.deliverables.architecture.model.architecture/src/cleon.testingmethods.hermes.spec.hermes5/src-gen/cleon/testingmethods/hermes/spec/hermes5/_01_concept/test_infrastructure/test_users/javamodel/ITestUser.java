@@ -10,8 +10,8 @@ public interface ITestUser extends ch.actifsource.core.javamodel.INamedResource,
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRole> selectRole();
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> selectRole();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,YBHp3eGX6xsyp/OC72ReVlJ0Msw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,xugxxiYsPgFE9BWPxu3rMB7YPpc=] */

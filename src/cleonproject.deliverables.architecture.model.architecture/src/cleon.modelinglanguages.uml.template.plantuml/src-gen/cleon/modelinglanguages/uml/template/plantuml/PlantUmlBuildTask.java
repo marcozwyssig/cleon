@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import javax.xml.bind.DatatypeConverter;
 
 import ch.actifsource.generator.AbstractBuildTaskSingleThread;
 import ch.actifsource.generator.console.IGeneratorConsole;
@@ -134,7 +133,15 @@ public class PlantUmlBuildTask extends AbstractBuildTaskSingleThread {
 	        	md = dis.getMessageDigest();
 		}
 		byte[] digest = md.digest();
-	    String hashCodeOfFile = DatatypeConverter.printHexBinary(digest).toUpperCase();
+		
+	    String hashCodeOfFile = byteArrayToHex(digest).toUpperCase();
 		return hashCodeOfFile;
 	}
+	
+	private static String byteArrayToHex(byte[] a) {
+		   StringBuilder sb = new StringBuilder(a.length * 2);
+		   for(byte b: a)
+		      sb.append(String.format("%02x", b));
+		   return sb.toString();
+		}	
 }

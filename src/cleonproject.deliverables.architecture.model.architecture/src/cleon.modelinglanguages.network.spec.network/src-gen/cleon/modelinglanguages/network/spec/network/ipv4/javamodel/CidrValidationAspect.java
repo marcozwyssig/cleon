@@ -62,7 +62,6 @@ public class CidrValidationAspect implements IResourceValidationAspect {
 				
 			}
 		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}		
 	}

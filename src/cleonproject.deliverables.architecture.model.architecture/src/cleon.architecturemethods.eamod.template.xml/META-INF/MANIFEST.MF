@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.eamod.template.xml
 Bundle-SymbolicName: cleon.architecturemethods.eamod.template.xml.builtin;singleton:=true
-Bundle-Version: 0.4.122
+Bundle-Version: 0.4.123
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,16 +12,16 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.122",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.122",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.122",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.122",
- cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.122",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.122",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.122",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.122",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.4.122",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.122",
+ cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.123",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.123",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.123",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.123",
+ cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.123",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.123",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.123",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.123",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.123",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.123",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.eamod.template.xml,
  cleon.architecturemethods.eamod.template.xml.javamodel

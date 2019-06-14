@@ -6,12 +6,6 @@ public interface IDynamicTestReference extends cleon.testingmethods.hermes.spec.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("dd532372-7544-11e9-8ca5-a73df0698911");
   
-  // attributes
-  
-  public java.lang.String selectExternalReferenceId();
-  
-  public cleon.common.doc.spec.doc.chapter.references.javamodel.IReference selectReference();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd532372-7544-11e9-8ca5-a73df0698911,H8CqOwkxj/PVGHUF0muZS1PyRDo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd532372-7544-11e9-8ca5-a73df0698911,ygZgVz4z5cUU/BacDPRYTh89WuI=] */

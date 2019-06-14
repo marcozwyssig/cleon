@@ -10,6 +10,10 @@ public interface IAbstractDynamicTest extends ch.actifsource.core.javamodel.INam
   
   public java.util.List<java.lang.String> selectTestGoals();
   
+  public java.lang.String selectExternalReferenceId();
+  
+  public cleon.common.doc.spec.doc.chapter.references.javamodel.IReference selectReference();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,CvOjX7EWA56vzTpZq4G4cFHwxB4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,UT/xvdofSyoh9C2J0/AHHT3DPgE=] */

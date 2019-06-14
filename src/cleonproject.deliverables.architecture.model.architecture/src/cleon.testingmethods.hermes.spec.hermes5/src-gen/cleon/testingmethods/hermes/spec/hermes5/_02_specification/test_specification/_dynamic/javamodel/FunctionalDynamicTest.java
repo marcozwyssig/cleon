@@ -49,6 +49,15 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
   }
 
   @Override
+  public java.lang.String selectExternalReferenceId() {
+    return _getSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_externalReferenceId);
+  }
+    
+  public void setExternalReferenceId(java.lang.String externalReferenceId) {
+     _setSingleAttribute(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_externalReferenceId, externalReferenceId);
+  }
+
+  @Override
   public java.lang.Integer selectIdentifier() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
   }
@@ -118,6 +127,16 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
   }
     
   @Override
+  public cleon.common.doc.spec.doc.chapter.references.javamodel.IReference selectReference() {
+    return _getSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference);
+  }
+
+  public FunctionalDynamicTest setReference(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference reference) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference, reference);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> selectTestGlobalPrecondition() {
     return _getMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.GlobalPreconditionsAware_testGlobalPrecondition);
   }
@@ -163,6 +182,7 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_externalReferenceId, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_testGoals, visitor);
@@ -171,6 +191,7 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.GlobalPreconditionsAware_testGlobalPrecondition, visitor);
     _acceptList(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestPrecondition.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testPreconditions, visitor);
     _acceptList(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_testSteps, visitor);
@@ -178,4 +199,4 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dae35cb5-4f8c-11e9-ad5d-977b17aab907,i+JDdywsqIO8Y2InEWGYS6C8rRg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dae35cb5-4f8c-11e9-ad5d-977b17aab907,TtwYHtCADFc7KoxMi6WDIEpVFK0=] */

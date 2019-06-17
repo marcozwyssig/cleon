@@ -10,6 +10,8 @@ public interface ITestExecutions extends cleon.testingmethods.hermes.spec.hermes
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution> selectStaticTestExecutions();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution> selectDynamicTestExecutions();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,QfGUlweqQH2Dt2BXMLLnhIor+PE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,oskCVgHUgqsgDTRTS1fPtaQzTQk=] */

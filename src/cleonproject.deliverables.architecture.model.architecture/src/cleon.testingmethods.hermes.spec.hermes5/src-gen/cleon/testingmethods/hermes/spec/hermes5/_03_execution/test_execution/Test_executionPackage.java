@@ -15,6 +15,7 @@ public class Test_executionPackage {
   public static final Resource TestExecutions = new Resource("624c64dc-20d7-11e6-9368-9172b77c2cff");
   public static final Resource TestExecutions_staticTestExecutions = new Resource("7d7c156d-20d7-11e6-9368-9172b77c2cff");
   public static final Resource FunctionSpace_TestResult = new Resource("c11c2d37-20d9-11e6-9368-9172b77c2cff");
+  public static final Resource TestExecutions_dynamicTestExecutions = new Resource("faf7d29d-90e0-11e9-b8c5-7968e3120b73");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +36,4 @@ public class Test_executionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution,tLoEJ2qUSeswfTOZM2ix+jDb1z4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution,bo5AA0JtF+2Thpip4pyXMZYO+co=] */

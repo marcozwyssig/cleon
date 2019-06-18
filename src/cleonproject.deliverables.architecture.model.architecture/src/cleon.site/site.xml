@@ -1,95 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-	<feature url="features/cleon.common.resources_0.4.124.jar" id="cleon.common.resources" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.doc_0.4.124.jar" id="cleon.common.doc" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.xml_0.4.124.jar" id="cleon.common.xml" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.glossary_0.4.124.jar" id="cleon.common.glossary" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.knowledge_0.4.124.jar" id="cleon.common.knowledge" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.modularity_0.4.124.jar" id="cleon.common.modularity" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.common.util_0.4.124.jar" id="cleon.common.util" version="0.4.124">
-		<category name="common"/>
-	</feature>
-	<feature url="features/cleon.architecturemethods.eamod_0.4.124.jar" id="cleon.architecturemethods.eamod" version="0.4.124">
-		<category name="architecturemethods"/>
-	</feature>
-	<feature url="features/cleon.architecturemethods.arc42_0.4.124.jar" id="cleon.architecturemethods.arc42" version="0.4.124">
-		<category name="architecturemethods"/>
-	</feature>
-	<feature url="features/cleon.architecturemethods.itarc42_0.4.124.jar" id="cleon.architecturemethods.itarc42" version="0.4.124">
-		<category name="architecturemethods"/>
-	</feature>
-	<feature url="features/cleon.architecturemethods.togaf_0.4.124.jar" id="cleon.architecturemethods.togaf" version="0.4.124">
-		<category name="architecturemethods"/>
-	</feature>
-	<feature url="features/cleon.architecturemethods.org42_0.4.124.jar" id="cleon.architecturemethods.org42" version="0.4.124">
-		<category name="architecturemethods"/>
-	</feature>
-	<feature url="features/cleon.architecturestylesandpatterns.soa_0.4.124.jar" id="cleon.architecturestylesandpatterns.soa" version="0.4.124">
-		<category name="architecturestylesandpatterns"/>
-	</feature>
-	<feature url="features/cleon.architecturestylesandpatterns.eda_0.4.124.jar" id="cleon.architecturestylesandpatterns.eda" version="0.4.124">
-		<category name="architecturestylesandpatterns"/>
-	</feature>
-	<feature url="features/cleon.architecturestylesandpatterns.eai_0.4.124.jar" id="cleon.architecturestylesandpatterns.eai" version="0.4.124">
-		<category name="architecturestylesandpatterns"/>
-	</feature>
-	<feature url="features/cleon.projectmethods.hermes_0.4.124.jar" id="cleon.projectmethods.hermes" version="0.4.124">
-		<category name="projectmethods"/>
-	</feature>
-	<feature url="features/cleon.modelinglanguages.bpmn_0.4.124.jar" id="cleon.modelinglanguages.bpmn" version="0.4.124">
-		<category name="modelinglanguages"/>
-	</feature>
-	<feature url="features/cleon.modelinglanguages.uml_0.4.124.jar" id="cleon.modelinglanguages.uml" version="0.4.124">
-		<category name="modelinglanguages"/>
-	</feature>
-	<feature url="features/cleon.modelinglanguages.network_0.4.124.jar" id="cleon.modelinglanguages.network" version="0.4.124">
-		<category name="modelinglanguages"/>
-	</feature>
-	<feature url="features/cleon.modelinglanguages.rack_0.4.124.jar" id="cleon.modelinglanguages.rack" version="0.4.124">
-		<category name="modelinglanguages"/>
-	</feature>
-	<feature url="features/cleon.modelinglanguages.graph_0.4.124.jar" id="cleon.modelinglanguages.graph" version="0.4.124">
-		<category name="modelinglanguages"/>
-	</feature>
-	<feature url="features/cleon.devops.chocolatey_0.4.124.jar" id="cleon.devops.chocolatey" version="0.4.124">
-		<category name="devops"/>
-	</feature>
-	<feature url="features/cleon.publishing.staticwebsite_0.4.124.jar" id="cleon.publishing.staticwebsite" version="0.4.124">
-		<category name="publishing"/>
-	</feature>
-	<feature url="features/cleon.publishing.collaboration_0.4.124.jar" id="cleon.publishing.collaboration" version="0.4.124">
-		<category name="publishing"/>
-	</feature>
-	<feature url="features/cleon.building.gradle_0.4.124.jar" id="cleon.building.gradle" version="0.4.124">
-		<category name="building"/>
-	</feature>
-	<feature url="features/cleon.applications.actifsource_0.4.124.jar" id="cleon.applications.actifsource" version="0.4.124">
-		<category name="applications"/>
-	</feature>
-	<feature url="features/cleon.testingmethods.hermes_0.4.124.jar" id="cleon.testingmethods.hermes" version="0.4.124">
-		<category name="testingmethods"/>
-	</feature>
-	<category-def name="common" label="Common"/>
-	<category-def name="architecturemethods" label="Architecture Methods"/>
-	<category-def name="architecturestylesandpatterns" label="Architecture Styles and Patterns"/>
-	<category-def name="projectmethods" label="Project Methods"/>
-	<category-def name="modelinglanguages" label="Modeling Languages"/>
-	<category-def name="devops" label="DevOps"/>
-	<category-def name="publishing" label="Publishing"/>
-	<category-def name="building" label="Building"/>
-	<category-def name="applications" label="Applications"/>
-	<category-def name="testingmethods" label="Testing Methods"/>
+   <feature url="features/cleon.common.resources_0.4.125.jar" id="cleon.common.resources" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.doc_0.4.125.jar" id="cleon.common.doc" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.xml_0.4.125.jar" id="cleon.common.xml" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.glossary_0.4.125.jar" id="cleon.common.glossary" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.knowledge_0.4.125.jar" id="cleon.common.knowledge" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.modularity_0.4.125.jar" id="cleon.common.modularity" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.common.util_0.4.125.jar" id="cleon.common.util" version="0.4.125">
+      <category name="common"/>
+   </feature>
+   <feature url="features/cleon.architecturemethods.eamod_0.4.125.jar" id="cleon.architecturemethods.eamod" version="0.4.125">
+      <category name="architecturemethods"/>
+   </feature>
+   <feature url="features/cleon.architecturemethods.arc42_0.4.125.jar" id="cleon.architecturemethods.arc42" version="0.4.125">
+      <category name="architecturemethods"/>
+   </feature>
+   <feature url="features/cleon.architecturemethods.itarc42_0.4.125.jar" id="cleon.architecturemethods.itarc42" version="0.4.125">
+      <category name="architecturemethods"/>
+   </feature>
+   <feature url="features/cleon.architecturemethods.togaf_0.4.125.jar" id="cleon.architecturemethods.togaf" version="0.4.125">
+      <category name="architecturemethods"/>
+   </feature>
+   <feature url="features/cleon.architecturemethods.org42_0.4.125.jar" id="cleon.architecturemethods.org42" version="0.4.125">
+      <category name="architecturemethods"/>
+   </feature>
+   <feature url="features/cleon.architecturestylesandpatterns.soa_0.4.125.jar" id="cleon.architecturestylesandpatterns.soa" version="0.4.125">
+      <category name="architecturestylesandpatterns"/>
+   </feature>
+   <feature url="features/cleon.architecturestylesandpatterns.eda_0.4.125.jar" id="cleon.architecturestylesandpatterns.eda" version="0.4.125">
+      <category name="architecturestylesandpatterns"/>
+   </feature>
+   <feature url="features/cleon.architecturestylesandpatterns.eai_0.4.125.jar" id="cleon.architecturestylesandpatterns.eai" version="0.4.125">
+      <category name="architecturestylesandpatterns"/>
+   </feature>
+   <feature url="features/cleon.projectmethods.hermes_0.4.125.jar" id="cleon.projectmethods.hermes" version="0.4.125">
+      <category name="projectmethods"/>
+   </feature>
+   <feature url="features/cleon.modelinglanguages.bpmn_0.4.125.jar" id="cleon.modelinglanguages.bpmn" version="0.4.125">
+      <category name="modelinglanguages"/>
+   </feature>
+   <feature url="features/cleon.modelinglanguages.uml_0.4.125.jar" id="cleon.modelinglanguages.uml" version="0.4.125">
+      <category name="modelinglanguages"/>
+   </feature>
+   <feature url="features/cleon.modelinglanguages.network_0.4.125.jar" id="cleon.modelinglanguages.network" version="0.4.125">
+      <category name="modelinglanguages"/>
+   </feature>
+   <feature url="features/cleon.modelinglanguages.rack_0.4.125.jar" id="cleon.modelinglanguages.rack" version="0.4.125">
+      <category name="modelinglanguages"/>
+   </feature>
+   <feature url="features/cleon.modelinglanguages.graph_0.4.125.jar" id="cleon.modelinglanguages.graph" version="0.4.125">
+      <category name="modelinglanguages"/>
+   </feature>
+   <feature url="features/cleon.devops.chocolatey_0.4.125.jar" id="cleon.devops.chocolatey" version="0.4.125">
+      <category name="devops"/>
+   </feature>
+   <feature url="features/cleon.publishing.staticwebsite_0.4.125.jar" id="cleon.publishing.staticwebsite" version="0.4.125">
+      <category name="publishing"/>
+   </feature>
+   <feature url="features/cleon.publishing.collaboration_0.4.125.jar" id="cleon.publishing.collaboration" version="0.4.125">
+      <category name="publishing"/>
+   </feature>
+   <feature url="features/cleon.building.gradle_0.4.125.jar" id="cleon.building.gradle" version="0.4.125">
+      <category name="building"/>
+   </feature>
+   <feature url="features/cleon.applications.actifsource_0.4.125.jar" id="cleon.applications.actifsource" version="0.4.125">
+      <category name="applications"/>
+   </feature>
+   <feature url="features/cleon.testingmethods.hermes_0.4.125.jar" id="cleon.testingmethods.hermes" version="0.4.125">
+      <category name="testingmethods"/>
+   </feature>
+   <category-def name="common" label="Common"/>
+   <category-def name="architecturemethods" label="Architecture Methods"/>
+   <category-def name="architecturestylesandpatterns" label="Architecture Styles and Patterns"/>
+   <category-def name="projectmethods" label="Project Methods"/>
+   <category-def name="modelinglanguages" label="Modeling Languages"/>
+   <category-def name="devops" label="DevOps"/>
+   <category-def name="publishing" label="Publishing"/>
+   <category-def name="building" label="Building"/>
+   <category-def name="applications" label="Applications"/>
+   <category-def name="testingmethods" label="Testing Methods"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,uoAct0/oxSZiuKZHLBELwQKVbTw=] -->

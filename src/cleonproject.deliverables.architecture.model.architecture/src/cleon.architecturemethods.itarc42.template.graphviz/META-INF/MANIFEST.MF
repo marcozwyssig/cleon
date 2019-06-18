@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.itarc42.template.graphviz
 Bundle-SymbolicName: cleon.architecturemethods.itarc42.template.graphviz.builtin;singleton:=true
-Bundle-Version: 0.4.124
+Bundle-Version: 0.4.125
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,20 +12,20 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.architecturemethods.itarc42.spec.itarc42.builtin;bundle-version="0.4.124",
- cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.124",
- cleon.modelinglanguages.network.spec.network.builtin;bundle-version="0.4.124",
- cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.124",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.124",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.124",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.124",
- cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.124",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.124",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.124",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.124",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.4.124",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.124",
- cleon.modelinglanguages.network.spec.segmentation.builtin;bundle-version="0.4.124",
+ cleon.architecturemethods.itarc42.spec.itarc42.builtin;bundle-version="0.4.125",
+ cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.125",
+ cleon.modelinglanguages.network.spec.network.builtin;bundle-version="0.4.125",
+ cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.125",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.125",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.125",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.125",
+ cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.125",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.125",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.125",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.125",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.125",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.125",
+ cleon.modelinglanguages.network.spec.segmentation.builtin;bundle-version="0.4.125",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.itarc42.template.graphviz,
  cleon.architecturemethods.itarc42.template.graphviz.javamodel

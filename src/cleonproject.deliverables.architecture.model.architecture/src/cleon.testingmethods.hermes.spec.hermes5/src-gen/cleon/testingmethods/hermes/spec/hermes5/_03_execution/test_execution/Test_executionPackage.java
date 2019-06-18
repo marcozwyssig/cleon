@@ -14,6 +14,7 @@ public class Test_executionPackage {
   public static final Resource FunctionSpace_aE_Test_aE_Execution_TestResult = new Resource("c11c2d37-20d9-11e6-9368-9172b77c2cff");
   public static final Resource TestExecutions_dynamicTestExecutions = new Resource("faf7d29d-90e0-11e9-b8c5-7968e3120b73");
   public static final Resource TestFailure_ticketId = new Resource("84885da2-9193-11e9-85e6-a377d9035ee3");
+  public static final Resource TestSkip = new Resource("0c45a4c3-91a6-11e9-81d0-77e569e4aa61");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +35,4 @@ public class Test_executionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution,ryzTynVB/mBNOTgXr9taMzFzzfU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution,GxvZ3p4y2+p0uvc32fR43VU7dOk=] */

@@ -146,6 +146,31 @@ public class FunctionSpace_Testing {
 
   }
 
+  public static interface ITestSkipFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("31215f14-91a6-11e9-81d0-77e569e4aa61")
+    public java.lang.String RenderResult();
+
+  }
+  
+  public static interface ITestSkipFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestSkipFunctionsImpl implements ITestSkipFunctionsImpl {
+
+    public static final ITestSkipFunctionsImpl INSTANCE = new TestSkipFunctionsImpl();
+
+    private TestSkipFunctionsImpl() {}
+
+  }
+  
+  public static class TestSkipFunctions {
+
+    private TestSkipFunctions() {}
+
+  }
+
   public static interface ITestObjectsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("11f89b1b-2272-11e6-bcc1-f96f0d74dcad")
@@ -173,4 +198,4 @@ public class FunctionSpace_Testing {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4562fb5-d400-11e5-9dfc-cf0f3e030023,1KKTcM1KtMIQrAtDOghdDBKQbs8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4562fb5-d400-11e5-9dfc-cf0f3e030023,AEkp7hZzAtNwSTdJ042hX2Aex80=] */

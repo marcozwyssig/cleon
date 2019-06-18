@@ -10,8 +10,10 @@ public interface ITestFailure extends cleon.testingmethods.hermes.spec.hermes5._
   
   public java.lang.String selectFailureReason();
   
+  public java.lang.String selectTicketId();
+  
   public cleon.testingmethods.hermes.spec.hermes5._01_concept.test_constraints.failureclass.javamodel.IFailureClass selectFailureClass();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,j63y64Xn0OP2bx87L0tWkgtGoSU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,fuOIBHJmp74GRUuXhnNzcrhB9Y4=] */

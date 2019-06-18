@@ -4,8 +4,15 @@ import ch.actifsource.core.Resource;
 
 public class _dynamicPackage {
   
-  public static final Resource DynamicTestExecution = new Resource("25396337-90e1-11e9-b8c5-7968e3120b73");
-  public static final Resource DynamicTestExecution_staticTestSpecification = new Resource("25396338-90e1-11e9-b8c5-7968e3120b73");
+  public static final Resource DynamicTestExecutionList = new Resource("25396337-90e1-11e9-b8c5-7968e3120b73");
+  public static final Resource DynamicTestExecutionList_tester = new Resource("50a5da87-9192-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestExecution = new Resource("db5a1fe6-9192-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestExecutionList_dynamicTestExecution = new Resource("e51ebb8f-9192-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestExecution_abstractDynamicTest = new Resource("f52228ed-9192-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestStepExecution = new Resource("1eed511e-9193-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestExecution_testStep = new Resource("2dd45195-9193-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestStepExecution_testStep = new Resource("402187d7-9193-11e9-85e6-a377d9035ee3");
+  public static final Resource DynamicTestStepExecution_testResult = new Resource("ac855532-9193-11e9-85e6-a377d9035ee3");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +33,4 @@ public class _dynamicPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic,7Bmb42vryB1Ox/Em2DcSd3WsJcI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic,uOuoJ6GAdlkyRx83AOYaR1rTZGQ=] */

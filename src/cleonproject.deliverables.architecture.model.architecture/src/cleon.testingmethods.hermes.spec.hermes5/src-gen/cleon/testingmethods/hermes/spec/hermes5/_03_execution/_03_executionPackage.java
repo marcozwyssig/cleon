@@ -6,7 +6,7 @@ public class _03_executionPackage {
   
   public static final Resource TestExecutionDocument_testExecutions = new Resource("4c66ac89-2264-11e6-bcc1-f96f0d74dcad");
   public static final Resource TestExecutionDocument = new Resource("e85c9091-4f02-11e9-ba59-f1daaff821cc");
-  public static final Resource TestExecutionDocument_testSpecificationDocument = new Resource("4fd0b7f1-4f05-11e9-ba59-f1daaff821cc");
+  public static final Resource TestExecutionDocument_testPlan = new Resource("be89c6d3-918c-11e9-85e6-a377d9035ee3");
   
   /* Begin Protected Region [[user]] */
   
@@ -27,4 +27,4 @@ public class _03_executionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution,ERJxuPR7O+rkNPXF52i+mZye1os=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution,sJR+O4iz4WRkt5leA/Z+7EHSe2Y=] */

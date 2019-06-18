@@ -31,36 +31,6 @@ public class TestSuccess extends DynamicResource implements ITestSuccess {
   // relations
   
   @Override
-  public ch.actifsource.core.javamodel.IResource selectTarget() {
-    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
-  }
-
-  public TestSuccess setTarget(ch.actifsource.core.javamodel.IResource target) {
-    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
-    return this;
-  }
-    
-  @Override
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestQualityCriteria selectTestQualityCriteria() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_testQualityCriteria);
-  }
-
-  public TestSuccess setTestQualityCriteria(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestQualityCriteria testQualityCriteria) {
-    _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_testQualityCriteria, testQualityCriteria);
-    return this;
-  }
-    
-  @Override
-  public cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember selectTester() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_tester);
-  }
-
-  public TestSuccess setTester(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember tester) {
-    _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_tester, tester);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -74,11 +44,8 @@ public class TestSuccess extends DynamicResource implements ITestSuccess {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestQualityCriteria.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_testQualityCriteria, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestResult_tester, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,6geBsyG9mU7FXixT9JJqZDLiVow=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,vHMrOYbS3BEw1xwJu2KG/Q9LUKg=] */

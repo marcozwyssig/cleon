@@ -130,16 +130,6 @@ public class StaticTest extends DynamicResource implements IStaticTest {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult> selectTestResult() {
-    return _getMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testResult);
-  }
-
-  public StaticTest setTestResult(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult> testResult) {
-    _setMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testResult, testResult);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -164,7 +154,6 @@ public class StaticTest extends DynamicResource implements IStaticTest {
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_requirement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testRequirements, visitor);
-    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testResult, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -174,13 +163,9 @@ public class StaticTest extends DynamicResource implements IStaticTest {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_requirement, object.getResource());
   }
   
-  public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest selectToMeTestResult(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testResult, object.getResource());
-  }
-  
   public static cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest selectToMeTestRequirements(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTest_testRequirements, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,wbX/nQKW9o4j1fCh6igUBc0HDLU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,rmyrWXaNgOCAszsf8/JrlQcSqdw=] */

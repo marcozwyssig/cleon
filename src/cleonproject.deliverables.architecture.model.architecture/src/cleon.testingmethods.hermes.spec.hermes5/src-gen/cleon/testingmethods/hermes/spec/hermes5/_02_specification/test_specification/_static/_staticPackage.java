@@ -15,7 +15,6 @@ public class _staticPackage {
   public static final Resource StaticTestSpecification_testQualityCriteria = new Resource("c4f649f8-1cf1-11e6-aaba-9db7fdc64d7e");
   public static final Resource TestQualityCriteria = new Resource("db6082a4-1cf1-11e6-aaba-9db7fdc64d7e");
   public static final Resource TestQualityCriterias_testQualityCriterias = new Resource("deb4b747-1cf1-11e6-aaba-9db7fdc64d7e");
-  public static final Resource StaticTest_testResult = new Resource("709062e4-1cf3-11e6-aaba-9db7fdc64d7e");
   public static final Resource StaticTest_testRequirements = new Resource("2b3d639d-1cf4-11e6-aaba-9db7fdc64d7e");
   public static final Resource FunctionSpace_aE_StaticTests_StaticTest = new Resource("634ac09d-1cf4-11e6-aaba-9db7fdc64d7e");
   public static final Resource FunctionSpace_aE_StaticTests_TestSubjectArea = new Resource("550178b4-2270-11e6-bcc1-f96f0d74dcad");
@@ -39,4 +38,4 @@ public class _staticPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static,MGpwNbXnPCgh3P7N3d0XHXb27uU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static,KWUyWeiq9fzvHOC+XIkwsWQpeZY=] */

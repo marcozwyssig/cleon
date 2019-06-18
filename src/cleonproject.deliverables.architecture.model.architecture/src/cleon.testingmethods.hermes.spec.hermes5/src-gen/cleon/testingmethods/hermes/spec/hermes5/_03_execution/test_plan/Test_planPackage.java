@@ -5,6 +5,8 @@ import ch.actifsource.core.Resource;
 public class Test_planPackage {
   
   public static final Resource TestPlan = new Resource("8bf93951-eabe-11e5-838a-6dbe7118dd11");
+  public static final Resource TestPlan_testScope = new Resource("9804c872-918c-11e9-85e6-a377d9035ee3");
+  public static final Resource TestPlan_testScheduling = new Resource("a057facc-918c-11e9-85e6-a377d9035ee3");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +27,4 @@ public class Test_planPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan,pdzY7Dvf7IqkQ/FdSMf+NbutwFU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan,/QcobY+wNNAZXEtEWAF0MPB8C68=] */

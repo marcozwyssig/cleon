@@ -71,11 +71,11 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution> selectDynamicTestExecutions() {
-    return _getMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecutionList> selectDynamicTestExecutions() {
+    return _getMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecutionList.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions);
   }
 
-  public TestExecutions setDynamicTestExecutions(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution> dynamicTestExecutions) {
+  public TestExecutions setDynamicTestExecutions(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecutionList> dynamicTestExecutions) {
     _setMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions, dynamicTestExecutions);
     return this;
   }
@@ -87,16 +87,6 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
 
   public TestExecutions setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution> selectStaticTestExecutions() {
-    return _getMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_staticTestExecutions);
-  }
-
-  public TestExecutions setStaticTestExecutions(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution> staticTestExecutions) {
-    _setMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_staticTestExecutions, staticTestExecutions);
     return this;
   }
     
@@ -119,21 +109,16 @@ public class TestExecutions extends DynamicResource implements ITestExecutions {
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions, visitor);
+    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecutionList.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_staticTestExecutions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions selectToMeStaticTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._static.javamodel.IStaticTestExecution object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_staticTestExecutions, object.getResource());
-  }
-  
-  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions selectToMeDynamicTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution object) {
+  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions selectToMeDynamicTestExecutions(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecutionList object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestExecutions.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestExecutions_dynamicTestExecutions, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,ZVZS7WVOPw7Zvgok+5Vrhbh0ILA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,624c64dc-20d7-11e6-9368-9172b77c2cff,OFsO6h8TfhYJSavS6W2lcQ6GFpc=] */

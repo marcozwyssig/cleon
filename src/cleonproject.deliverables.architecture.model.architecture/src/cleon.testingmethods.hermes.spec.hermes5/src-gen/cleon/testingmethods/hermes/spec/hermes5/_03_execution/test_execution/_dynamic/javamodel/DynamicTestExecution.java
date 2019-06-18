@@ -28,65 +28,15 @@ public class DynamicTestExecution extends DynamicResource implements IDynamicTes
     super(resourceRepository, resource, IDynamicTestExecution.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
-  public java.util.List<java.lang.String> selectDescriptions() {
-    return _getListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
-  }
-    
-  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
-     _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
-  }
-
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
+  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest selectAbstractDynamicTest() {
+    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_abstractDynamicTest);
   }
 
-  public DynamicTestExecution setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
-  }
-
-  public DynamicTestExecution setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
-    return this;
-  }
-    
-  @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
-    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
-  }
-
-  public DynamicTestExecution setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
-    return this;
-  }
-    
-  @Override
-  public cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTestSpecification selectStaticTestSpecification() {
-    return _getSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTestSpecification.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_staticTestSpecification);
-  }
-
-  public DynamicTestExecution setStaticTestSpecification(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTestSpecification staticTestSpecification) {
-    _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_staticTestSpecification, staticTestSpecification);
+  public DynamicTestExecution setAbstractDynamicTest(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest abstractDynamicTest) {
+    _setSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_abstractDynamicTest, abstractDynamicTest);
     return this;
   }
     
@@ -97,6 +47,16 @@ public class DynamicTestExecution extends DynamicResource implements IDynamicTes
 
   public DynamicTestExecution setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestStepExecution> selectTestStep() {
+    return _getMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestStepExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_testStep);
+  }
+
+  public DynamicTestExecution setTestStep(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestStepExecution> testStep) {
+    _setMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_testStep, testStep);
     return this;
   }
     
@@ -113,23 +73,22 @@ public class DynamicTestExecution extends DynamicResource implements IDynamicTes
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTestSpecification.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_staticTestSpecification, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_abstractDynamicTest, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
+    _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestStepExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_testStep, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution> selectToMeStaticTestSpecification(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.IStaticTestSpecification object) {
-    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_staticTestSpecification, object.getResource());
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution> selectToMeAbstractDynamicTest(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest object) {
+    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_abstractDynamicTest, object.getResource());
+  }
+  
+  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution selectToMeTestStep(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestStepExecution object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecution_testStep, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25396337-90e1-11e9-b8c5-7968e3120b73,3p5OOUr0gf9fvHpBI7aSQfgi+DA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db5a1fe6-9192-11e9-85e6-a377d9035ee3,fNF60Ubi9OTmXyoJs9m7+/VgMec=] */

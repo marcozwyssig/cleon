@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NetDomain extends DynamicResource implements INetDomain {
+public class NetDomainZone extends DynamicResource implements INetDomainZone {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomain> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomain>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomainZone> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetDomainZone>() {
     
     @Override
-    public INetDomain create() {
-      return new NetDomain();
+    public INetDomainZone create() {
+      return new NetDomainZone();
     }
     
     @Override
-    public INetDomain create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NetDomain(resourceRepository, resource);
+    public INetDomainZone create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NetDomainZone(resourceRepository, resource);
     }
   
   };
 
-  public NetDomain() {
-    super(INetDomain.TYPE_ID);
+  public NetDomainZone() {
+    super(INetDomainZone.TYPE_ID);
   }
   
-  public NetDomain(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INetDomain.TYPE_ID);
+  public NetDomainZone(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INetDomainZone.TYPE_ID);
   }
 
   // attributes
@@ -61,11 +61,11 @@ public class NetDomain extends DynamicResource implements INetDomain {
   
   @Override
   public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> selectSegments() {
-    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments);
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments);
   }
 
-  public NetDomain setSegments(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> segments) {
-    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, segments);
+  public NetDomainZone setSegments(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> segments) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, segments);
     return this;
   }
     
@@ -74,7 +74,7 @@ public class NetDomain extends DynamicResource implements INetDomain {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NetDomain setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NetDomainZone setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -84,7 +84,7 @@ public class NetDomain extends DynamicResource implements INetDomain {
     return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones);
   }
 
-  public NetDomain setZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> zones) {
+  public NetDomainZone setZones(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> zones) {
     _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, zones);
     return this;
   }
@@ -97,16 +97,16 @@ public class NetDomain extends DynamicResource implements INetDomain {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain selectToMeSegments(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomain_segments, object.getResource());
+  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone selectToMeSegments(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,9Hd9BJaLRuNbQaUT2viwRg5bPKc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,tA383WnqLg117S03jzi0YAON6vE=] */

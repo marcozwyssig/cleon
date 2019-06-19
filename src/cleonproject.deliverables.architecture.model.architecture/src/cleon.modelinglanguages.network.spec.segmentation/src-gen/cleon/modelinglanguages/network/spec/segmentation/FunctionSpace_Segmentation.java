@@ -24,7 +24,7 @@ public class FunctionSpace_Segmentation {
     public List<cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> GetAllParents();
 
     @IDynamicResourceExtension.MethodId("72a38c28-0b79-11e9-a136-69d076e48ed1")
-    public cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomain GetNetDomainZone();
+    public cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone GetNetDomainZone();
 
     @IDynamicResourceExtension.MethodId("93024aa3-0b79-11e9-a136-69d076e48ed1")
     public java.lang.String GetTypeName();
@@ -272,4 +272,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,xg/AEmS139826DsgFag526hYuUE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,EdOnYM5RTTruWXXOxyiM/Yc0Q7Y=] */

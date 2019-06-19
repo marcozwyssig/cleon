@@ -31,15 +31,6 @@ public class NamedPhysicalNetwork extends DynamicResource implements INamedPhysi
   // attributes
   
   @Override
-  public java.lang.Integer selectVLAN() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN);
-  }
-    
-  public void setVLAN(java.lang.Integer vLAN) {
-     _setSingleAttribute(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN, vLAN);
-  }
-
-  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -152,7 +143,6 @@ public class NamedPhysicalNetwork extends DynamicResource implements INamedPhysi
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -168,4 +158,4 @@ public class NamedPhysicalNetwork extends DynamicResource implements INamedPhysi
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,lUJFgNbyEQF/CR7GFxjrdTdumqE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b7c5323f-054f-11e9-b814-a133e521728c,Z1E2Lc1PG6f9I39+0/Qb1C4TTeE=] */

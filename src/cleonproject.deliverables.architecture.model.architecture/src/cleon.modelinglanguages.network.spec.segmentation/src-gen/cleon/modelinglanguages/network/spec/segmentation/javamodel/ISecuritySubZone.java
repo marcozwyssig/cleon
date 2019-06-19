@@ -6,10 +6,12 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.network.spec.s
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7f40c131-0b75-11e9-a136-69d076e48ed1");
   
+  public java.lang.Integer selectVLAN_No();
+  
   // relations
   
   public cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone selectNoZones();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,+NcMv/zUKekNrKQWu6qecv5hkaw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,oOOR20UsU3fyn6Fq4IPfvc9IHe0=] */

@@ -1660,7 +1660,7 @@
 		<memory>8 GB Memory</memory>
 		<disk>120 GB Disk (VMDK - Thin Provisioning)</disk>
 		<vmh>VMH-NMS-BABS-01 [Vevey]</vmh>
-		<subnet>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</subnet>
+		<subnet>10.90.25.0/29 - VLAN-2000 subzone-nms-services-infra-services</subnet>
 		<dg></dg>
 		<mask>255.255.255.248</mask>				
 		<ip>10.90.25.4</ip>
@@ -1915,7 +1915,7 @@
 		<memory>8 GB Memory</memory>
 		<disk>120 GB Disk (VMDK - Thin Provisioning)</disk>
 		<vmh>VMH-NMS-BABS-11 [Vevey]</vmh>
-		<subnet>10.90.25.0/29 - VLAN-2452 subzone-nms-services-infra-services</subnet>
+		<subnet>10.90.25.0/29 - VLAN-2000 subzone-nms-services-infra-services</subnet>
 		<dg></dg>
 		<mask>255.255.255.248</mask>				
 		<ip>10.90.25.5</ip>
@@ -1930,7 +1930,7 @@
 		<memory>4 GB Memory</memory>
 		<disk>120 GB Disk (VMDK - Thin Provisioning),500 GB Disk (VMDK - Thin Provisioning)</disk>
 		<vmh>VMH-984-POOL-00 [Vevey]</vmh>
-		<subnet>10.124.1.0/29 - VLAN-2333 subzone-ch-services-infra-services</subnet>
+		<subnet>10.124.1.0/29 - VLAN-2000 subzone-ch-services-infra-services</subnet>
 		<dg></dg>
 		<mask>255.255.255.248</mask>				
 		<ip>10.124.1.1</ip>

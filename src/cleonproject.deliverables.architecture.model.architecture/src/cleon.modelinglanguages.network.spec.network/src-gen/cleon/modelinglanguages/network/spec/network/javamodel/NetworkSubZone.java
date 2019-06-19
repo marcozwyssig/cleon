@@ -31,24 +31,6 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   // attributes
   
   @Override
-  public java.lang.Integer selectVLAN() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN);
-  }
-    
-  public void setVLAN(java.lang.Integer vLAN) {
-     _setSingleAttribute(cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN, vLAN);
-  }
-
-  @Override
-  public java.lang.Integer selectVLAN_No() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkSubZone_VLAN_aE_No);
-  }
-    
-  public void setVLAN_No(java.lang.Integer vLAN_No) {
-     _setSingleAttribute(cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkSubZone_VLAN_aE_No, vLAN_No);
-  }
-
-  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -172,8 +154,6 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractPhysicalNetwork_VLAN, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkSubZone_VLAN_aE_No, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
@@ -189,9 +169,11 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
   public static java.util.List<cleon.modelinglanguages.network.spec.network.javamodel.INetworkSubZone> selectToMeSecuritySubZone(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone object) {
     return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.spec.network.javamodel.INetworkSubZone.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkSubZone_securitySubZone, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,wHAR3IeBk0wICe0UDWuGXlMsxgY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,MQ/nsZIoRdQGTCiDWICrpKQD8+g=] */

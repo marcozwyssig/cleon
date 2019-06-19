@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="679da3a6-7ac9-11e9-a70f-4dc03941a024">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="3fda1f52-7acb-11e9-a70f-4dc03941a024" type="resource" guid="a9aae692-4b2a-11e9-8338-41c203971ecb" />
     <resource statement-guid="6fc88cd1-7ac9-11e9-a70f-4dc03941a024" type="resource" guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
       <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
         <resource statement-guid="d3c544c7-7ac4-11e9-bed6-9b9c84f51549" type="resource" guid="d3c45a63-7ac4-11e9-bed6-9b9c84f51549" />
@@ -17,22 +16,6 @@
     <object statement-guid="4d9a2ca3-7acb-11e9-a70f-4dc03941a024" type="resource" guid="8d46e8a9-0932-11e9-8c40-11db3668c0c9" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="3fda1f52-7acb-11e9-a70f-4dc03941a024">
-      <resource guid="a9aae692-4b2a-11e9-8338-41c203971ecb">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a9aae694-4b2a-11e9-8338-41c203971ecb" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="acce1fa4-4b2a-11e9-8338-41c203971ecb" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="aa8bf7d3-4b2a-11e9-8338-41c203971ecb" type="literal">VLAN</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a9abf806-4b2a-11e9-8338-41c203971ecb" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="6fc88cd1-7ac9-11e9-a70f-4dc03941a024">
       <resource guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

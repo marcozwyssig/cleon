@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel;
+package cleon.modelinglanguages.network.spec.network.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -14,4 +14,4 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.spec.ne
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,f2kzqwvQjjINMPr/4qPsImoGxJc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,FFGDiU5cMRUIN5Pwt2vgu+V5tUU=] */

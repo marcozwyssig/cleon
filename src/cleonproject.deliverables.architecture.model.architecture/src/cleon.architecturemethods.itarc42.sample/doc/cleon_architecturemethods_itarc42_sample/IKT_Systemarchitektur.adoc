@@ -342,14 +342,14 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== grp-act-2900-1-hpe_guest
+======== grp-act-2900-1-hpe_deploy
 
 
 
 
 
 
-======== grp-act-2901-1-hpe_operator
+======== grp-act-2901-1-hpe_read
 
 
 
@@ -362,21 +362,21 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== grp-act-2902-1-win-2016-std-phy_guest
+======== grp-act-2902-1-win-2016-std-phy_deploy
 
 
 
 
 
 
-======== grp-act-2903-1-win-2016-std-phy_operator
+======== grp-act-2903-1-win-2016-std-phy_read
 
 
 
 
 
 
-======== grp-act-2904-1-win-2016-std-phy_admin
+======== grp-act-2904-1-win-2016-std-phy_write
 
 
 
@@ -395,21 +395,21 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== grp-act-12000-2-hpe_guest
+======== grp-act-12000-2-hpe_deploy
 
 
 
 
 
 
-======== grp-act-12001-2-hpe_operator
+======== grp-act-12001-2-hpe_read
 
 
 
 
 
 
-======== grp-act-12002-2-hpe_admin
+======== grp-act-12002-2-hpe_write
 
 
 
@@ -474,26 +474,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== Auditor Verantwortlichkeiten
-
-
-
-
-========= grp-rol-2104-server_auditor
-
-
-
-
-
-
-========= grp-rol-2105-windows 2016_auditor
-
-
-
-
-
-
-
 
 ======= Role2 Rollen
 
@@ -540,26 +520,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== Auditor Verantwortlichkeiten
-
-
-
-
-========= grp-rol-2110-server_auditor
-
-
-
-
-
-
-========= grp-rol-2111-windows 2016_auditor
-
-
-
-
-
-
-
 
 
 ====== TN Domain B (2) Rollen
@@ -568,25 +528,6 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 ======= Role1 Rollen
-
-
-
-
-======== Auditor Verantwortlichkeiten
-
-
-
-
-========= grp-rol-2200-server_auditor
-
-
-
-
-
-
-========= grp-rol-2201-windows 2016_auditor
-
-
 
 
 

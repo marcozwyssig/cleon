@@ -38,8 +38,8 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 			{
 				max = maxOptional.getAsInt();
 			}
-					
-			Update.createStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(max + 1));			
+			
+			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(max + 1));
 		}
 		catch(Exception e)
 		{

@@ -6,7 +6,18 @@
 		<description></description>
 		<environment>QA-Umgebung</environment>
 		<location></location>
-		<subnetnode>TN Domain 1 (1)</subnetnode>
+		<subnetnode>TN Domain A (1)</subnetnode>
+		<cpu>1 CPU</cpu>			
+		<memory>11 GB Memory</memory>
+		<disk>1 GB Disk (SDD)</disk>
+	</machine>
+	<machine>
+		<name>
+		      </name>
+		<description></description>
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain B (2)</subnetnode>
 		<cpu>1 CPU</cpu>			
 		<memory>11 GB Memory</memory>
 		<disk>1 GB Disk (SDD)</disk>

@@ -35,6 +35,9 @@ public class FunctionSpace_List {
     @IDynamicResourceExtension.MethodId("9b3002aa-ea53-11e8-9dfb-85981d867b8c")
     public <T> List<T> truncate81To100();
 
+    @IDynamicResourceExtension.MethodId("e9acffb2-0dc8-11e9-be4f-03130cc057ef")
+    public <T> List<T> asList();
+
   }
   
   public static interface IAnyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -53,6 +56,9 @@ public class FunctionSpace_List {
 
     @IDynamicResourceExtension.MethodId("9b3002aa-ea53-11e8-9dfb-85981d867b8c")
     public <T> List<T> truncate81To100(final List<T> anyList);
+
+    @IDynamicResourceExtension.MethodId("e9acffb2-0dc8-11e9-be4f-03130cc057ef")
+    public <T> List<T> asList(final T any);
 
   }
   
@@ -111,6 +117,11 @@ public class FunctionSpace_List {
       /* End Protected Region   [[9b3002aa-ea53-11e8-9dfb-85981d867b8c]] */
     }
 
+    @Override
+    public <T> List<T> asList(final T any) {
+      return java.util.Arrays.asList(any);
+    }
+
   }
   
   public static class AnyFunctions {
@@ -137,8 +148,12 @@ public class FunctionSpace_List {
       return DynamicResourceUtil.invoke(IAnyFunctionsImpl.class, AnyFunctionsImpl.INSTANCE, anyList).truncate81To100(anyList);
     }
 
+    public static <T> List<T> asList(final T any) {
+      return DynamicResourceUtil.invoke(IAnyFunctionsImpl.class, AnyFunctionsImpl.INSTANCE, any).asList(any);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4890b651-e9f6-11e8-9dfb-85981d867b8c,Ovnt/ueSZP2SKM86JO2gq5s8Yi0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4890b651-e9f6-11e8-9dfb-85981d867b8c,Syd0UPQu98TV7t6CvUrp2hThE08=] */

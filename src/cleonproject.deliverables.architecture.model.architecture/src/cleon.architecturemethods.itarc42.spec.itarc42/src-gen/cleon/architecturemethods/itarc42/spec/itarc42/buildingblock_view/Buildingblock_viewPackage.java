@@ -30,6 +30,7 @@ public class Buildingblock_viewPackage {
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemComponent = new Resource("31cf5855-035b-11e9-a251-e3767b78f69f");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemConfiguration = new Resource("72248a97-035d-11e9-a251-e3767b78f69f");
   public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
+  public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_System = new Resource("69e12c79-9c97-11e9-9b32-35cf2fd07621");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +51,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view,koN2Pjt8KSukFGidTgF0MJYpmIY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view,4f5r4AAPHlephxTpE5FS8/avqdM=] */

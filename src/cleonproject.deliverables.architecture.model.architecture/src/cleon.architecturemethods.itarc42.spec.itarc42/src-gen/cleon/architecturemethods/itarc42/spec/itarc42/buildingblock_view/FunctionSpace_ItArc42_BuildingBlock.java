@@ -68,6 +68,34 @@ public class FunctionSpace_ItArc42_BuildingBlock {
 
   }
 
+  public static interface ISystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
+
+    @IDynamicResourceExtension.MethodId("85e60694-9c97-11e9-9b32-35cf2fd07621")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
+
+  }
+  
+  public static interface ISystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemFunctionsImpl implements ISystemFunctionsImpl {
+
+    public static final ISystemFunctionsImpl INSTANCE = new SystemFunctionsImpl();
+
+    private SystemFunctionsImpl() {}
+
+  }
+  
+  public static class SystemFunctions {
+
+    private SystemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,Daub8V/91pcZq/SJSecHr0QkxTo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,2rFsZ+n7cyoIxkFtwTT1zmjiGGc=] */

@@ -17,7 +17,6 @@ public class RbacPackage {
   public static final Resource FunctionSpace_aE_RBAC_RBAC = new Resource("2cd8f13c-1e07-11e9-834d-77c41fccc6bf");
   public static final Resource AbstractNetdomainGroup_netdomain = new Resource("6033ea08-1e07-11e9-834d-77c41fccc6bf");
   public static final Resource FunctionSpace_aE_RBAC_AbstractNetdomainGroup = new Resource("8fe81300-1e0d-11e9-865e-41ef48a95f70");
-  public static final Resource FunctionSpace_aE_RBAC_AbstractSecurityGroups = new Resource("0df05ddf-1e1a-11e9-865e-41ef48a95f70");
   public static final Resource AbstractGroup = new Resource("bf5ba1ee-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource AbstractGroups = new Resource("cc875e00-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource Group = new Resource("d2272f28-7f08-11e9-98a3-b1bd805f0a31");
@@ -43,4 +42,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac,BXeONWhI8iWUHYs9sWk2NZvzNiA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac,YjCju8HlODh7dwFc7v1y0N7soNs=] */

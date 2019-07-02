@@ -332,7 +332,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-====== TN Domain 1 (1) Aktivitäten
+====== TN Domain A (1) Aktivitäten
 
 
 
@@ -342,14 +342,14 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== grp-act-2118-1-hpe_guest
+======== grp-act-2900-1-hpe_guest
 
 
 
 
 
 
-======== grp-act-2119-1-hpe_operator
+======== grp-act-2901-1-hpe_operator
 
 
 
@@ -362,21 +362,54 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======== grp-act-2152-1-win-2016-std-phy_guest
+======== grp-act-2902-1-win-2016-std-phy_guest
 
 
 
 
 
 
-======== grp-act-2153-1-win-2016-std-phy_operator
+======== grp-act-2903-1-win-2016-std-phy_operator
 
 
 
 
 
 
-======== grp-act-2154-1-win-2016-std-phy_admin
+======== grp-act-2904-1-win-2016-std-phy_admin
+
+
+
+
+
+
+
+
+====== TN Domain B (2) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-12000-2-hpe_guest
+
+
+
+
+
+
+======== grp-act-12001-2-hpe_operator
+
+
+
+
+
+
+======== grp-act-12002-2-hpe_admin
 
 
 
@@ -391,7 +424,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-====== TN Domain 1 (1) Rollen
+====== TN Domain A (1) Rollen
 
 
 
@@ -406,7 +439,152 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-========= grp-rol-0-server_admin
+========= grp-rol-2100-server_admin
+
+
+
+
+
+
+========= grp-rol-2101-windows 2016_admin
+
+
+
+
+
+
+
+======== Operator Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2102-server_operator
+
+
+
+
+
+
+========= grp-rol-2103-windows 2016_operator
+
+
+
+
+
+
+
+======== Auditor Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2104-server_auditor
+
+
+
+
+
+
+========= grp-rol-2105-windows 2016_auditor
+
+
+
+
+
+
+
+
+======= Role2 Rollen
+
+
+
+
+======== Admin Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2106-server_admin
+
+
+
+
+
+
+========= grp-rol-2107-windows 2016_admin
+
+
+
+
+
+
+
+======== Operator Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2108-server_operator
+
+
+
+
+
+
+========= grp-rol-2109-windows 2016_operator
+
+
+
+
+
+
+
+======== Auditor Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2110-server_auditor
+
+
+
+
+
+
+========= grp-rol-2111-windows 2016_auditor
+
+
+
+
+
+
+
+
+
+====== TN Domain B (2) Rollen
+
+
+
+
+======= Role1 Rollen
+
+
+
+
+======== Auditor Verantwortlichkeiten
+
+
+
+
+========= grp-rol-2200-server_auditor
+
+
+
+
+
+
+========= grp-rol-2201-windows 2016_auditor
 
 
 

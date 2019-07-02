@@ -8,10 +8,10 @@ public interface IRoleRootGroups extends cleon.architecturemethods.itarc42.spec.
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup> selectNetDomainGroups();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup> selectRoleForNetdomains();
   
   public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IResponsibilities selectUses();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,/mvTsMsDFEDExpVp1FfNywsA/Mo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,6Oo5YBY42O4VrZAk4gMWRFYSV9E=] */

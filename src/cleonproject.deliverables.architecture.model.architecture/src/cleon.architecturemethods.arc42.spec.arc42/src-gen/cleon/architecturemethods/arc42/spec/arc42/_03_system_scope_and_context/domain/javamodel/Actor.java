@@ -49,6 +49,15 @@ public class Actor extends DynamicResource implements IActor {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -95,6 +104,7 @@ public class Actor extends DynamicResource implements IActor {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptMultiMap(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.javamodel.IDomainFlow_In.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.DomainPackage.Actor_domainFlow_aE_In, visitor);
@@ -113,4 +123,4 @@ public class Actor extends DynamicResource implements IActor {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a037dbde-2660-11e6-ae54-e50d44645ae7,vh2vCKTRMk/zm21lttirb3WVz98=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a037dbde-2660-11e6-ae54-e50d44645ae7,Jd7gqt1I2jmWkWGNIIEK9+7Nd1E=] */

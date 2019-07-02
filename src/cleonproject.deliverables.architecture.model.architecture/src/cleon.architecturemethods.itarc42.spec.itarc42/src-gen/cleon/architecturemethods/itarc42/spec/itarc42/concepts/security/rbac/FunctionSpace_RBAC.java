@@ -51,6 +51,12 @@ public class FunctionSpace_RBAC {
     @IDynamicResourceExtension.MethodId("893ebfeb-7f21-11e9-9a52-07d4b074defc")
     public java.lang.Integer GetId();
 
+    @IDynamicResourceExtension.MethodId("63f0e9b9-9c8f-11e9-9b32-35cf2fd07621")
+    public java.lang.Integer Max();
+
+    @IDynamicResourceExtension.MethodId("8f1d7786-9c8f-11e9-9b32-35cf2fd07621")
+    public java.lang.Integer MaxRounded();
+
   }
   
   public static interface IAbstractNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -60,6 +66,9 @@ public class FunctionSpace_RBAC {
 
     @IDynamicResourceExtension.MethodId("893ebfeb-7f21-11e9-9a52-07d4b074defc")
     public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup);
+
+    @IDynamicResourceExtension.MethodId("8f1d7786-9c8f-11e9-9b32-35cf2fd07621")
+    public java.lang.Integer MaxRounded(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup);
 
   }
   
@@ -72,15 +81,23 @@ public class FunctionSpace_RBAC {
     @Override
     public java.lang.Integer GetRange(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
       /* Begin Protected Region [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
-        return GetId(abstractNetdomainGroup) + 99;   
+        return GetId(abstractNetdomainGroup) + MaxRounded(abstractNetdomainGroup) - 1;   
       /* End Protected Region   [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
     }
 
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
       /* Begin Protected Region [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
-      return (abstractNetdomainGroup.selectNetdomain().selectGroupId() * 100) + 2000;    		  
+    	return (abstractNetdomainGroup.selectNetdomain().selectGroupId() * MaxRounded(abstractNetdomainGroup)) + 2000;    		  
       /* End Protected Region   [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
+    }
+
+    @Override
+    public java.lang.Integer MaxRounded(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
+      /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
+    	IAbstractNetdomainGroupFunctions functions = abstractNetdomainGroup.extension(IAbstractNetdomainGroupFunctions.class);
+    	return ((functions.Max() + 99) / 100 ) * 100;
+      /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }
 
   }
@@ -97,27 +114,9 @@ public class FunctionSpace_RBAC {
       return DynamicResourceUtil.invoke(IAbstractNetdomainGroupFunctionsImpl.class, AbstractNetdomainGroupFunctionsImpl.INSTANCE, abstractNetdomainGroup).GetId(abstractNetdomainGroup);
     }
 
-  }
-
-  public static interface IAbstractSecurityGroupsFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface IAbstractSecurityGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class AbstractSecurityGroupsFunctionsImpl implements IAbstractSecurityGroupsFunctionsImpl {
-
-    public static final IAbstractSecurityGroupsFunctionsImpl INSTANCE = new AbstractSecurityGroupsFunctionsImpl();
-
-    private AbstractSecurityGroupsFunctionsImpl() {}
-
-  }
-  
-  public static class AbstractSecurityGroupsFunctions {
-
-    private AbstractSecurityGroupsFunctions() {}
+    public static java.lang.Integer MaxRounded(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
+      return DynamicResourceUtil.invoke(IAbstractNetdomainGroupFunctionsImpl.class, AbstractNetdomainGroupFunctionsImpl.INSTANCE, abstractNetdomainGroup).MaxRounded(abstractNetdomainGroup);
+    }
 
   }
 
@@ -166,4 +165,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,Ei2GJqBDUSKzUGRrl53U4xX2W6Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,6gBX66jlk71Zoqa1mtoTUcuhe04=] */

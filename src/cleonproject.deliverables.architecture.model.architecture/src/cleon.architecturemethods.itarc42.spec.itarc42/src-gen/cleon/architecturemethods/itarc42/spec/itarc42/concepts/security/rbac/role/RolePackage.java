@@ -6,13 +6,13 @@ public class RolePackage {
   
   public static final Resource RoleRootGroups = new Resource("3e5a557a-1d99-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorGroup = new Resource("88193678-1d9f-11e9-b601-db75aa6f89a4");
-  public static final Resource RoleRootGroups_netDomainGroups = new Resource("9025263c-1d9f-11e9-b601-db75aa6f89a4");
+  public static final Resource RoleRootGroups_roleForNetdomains = new Resource("9025263c-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorGroup_actor = new Resource("b7b0e66e-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent_hasActivities = new Resource("ac4ce013-1da1-11e9-b601-db75aa6f89a4");
   public static final Resource RoleNetDomainGroup = new Resource("94d1c1e5-1da3-11e9-b601-db75aa6f89a4");
-  public static final Resource RoleActorResponsibility_roles = new Resource("ea84d7ed-1da3-11e9-b601-db75aa6f89a4");
+  public static final Resource RoleActorResponsibility_rolesForSystemComponents = new Resource("ea84d7ed-1da3-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent = new Resource("e33fb742-35e4-11e9-9d58-25409887bb2a");
-  public static final Resource RoleNetDomainGroup_roles = new Resource("47bd0260-35e6-11e9-9d58-25409887bb2a");
+  public static final Resource RoleNetDomainGroup_roleforActors = new Resource("47bd0260-35e6-11e9-9d58-25409887bb2a");
   public static final Resource RoleSystemComponent_systemComponent = new Resource("5d8925dc-35e6-11e9-9d58-25409887bb2a");
   public static final Resource FunctionSpace_aE_Role_RoleSystemComponent = new Resource("f1878623-35ee-11e9-9d58-25409887bb2a");
   public static final Resource RoleActorGroup_roleDescription = new Resource("98409691-35f5-11e9-9d58-25409887bb2a");
@@ -25,6 +25,8 @@ public class RolePackage {
   public static final Resource FunctionSpace_aE_Role_Responsibilities = new Resource("b4b672f6-809c-11e9-8e65-f3f639e40a34");
   public static final Resource Responsibilities_basedOn = new Resource("c8dcaf0f-809c-11e9-8e65-f3f639e40a34");
   public static final Resource RoleActorResponsibility_responsibility = new Resource("15721725-809d-11e9-8e65-f3f639e40a34");
+  public static final Resource FunctionSpace_aE_Role_RoleRootGroups = new Resource("2b014e5e-9c16-11e9-9470-2178b598e9a4");
+  public static final Resource FunctionSpace_aE_Role_RoleNetDomainGroup = new Resource("be3d9b6d-9c17-11e9-9470-2178b598e9a4");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +47,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role,r0a5weklsDNchs/FQXmZkFG85CA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role,heMZLt9gsiscReUzVCwHDX8rMGE=] */

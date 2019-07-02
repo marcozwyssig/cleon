@@ -294,15 +294,6 @@
         </resource>
       </owns>
     </resource>
-    <resource statement-guid="26c19fce-0dc6-11e9-be4f-03130cc057ef" type="resource" guid="26c178bb-0dc6-11e9-be4f-03130cc057ef">
-      <owns predicate="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
-        <resource statement-guid="e9ad4dda-0dc8-11e9-be4f-03130cc057ef" type="resource" guid="e9acffb2-0dc8-11e9-be4f-03130cc057ef">
-          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
-            <resource statement-guid="64900e57-0dcd-11e9-be4f-03130cc057ef" type="resource" guid="648fe744-0dcd-11e9-be4f-03130cc057ef" />
-          </owns>
-        </resource>
-      </owns>
-    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="49bf1ac1-0b79-11e9-a136-69d076e48ed1" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
@@ -1279,43 +1270,6 @@
         </predicate>
         <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
           <object statement-guid="45e3bfe8-0b7a-11e9-a136-69d076e48ed1" type="resource" guid="0e3a9edc-0b76-11e9-a136-69d076e48ed1" />
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="26c19fce-0dc6-11e9-be4f-03130cc057ef">
-      <resource guid="26c178bb-0dc6-11e9-be4f-03130cc057ef">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="26c19fcd-0dc6-11e9-be4f-03130cc057ef" type="resource" guid="e116e593-db55-11dd-b397-2dd4c5d32cb3" />
-        </predicate>
-        <predicate guid="0614d93a-db57-11dd-b397-2dd4c5d32cb3">
-          <object statement-guid="e9ad4dda-0dc8-11e9-be4f-03130cc057ef">
-            <resource guid="e9acffb2-0dc8-11e9-be4f-03130cc057ef">
-              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="e9acffb4-0dc8-11e9-be4f-03130cc057ef" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
-              </predicate>
-              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="e9acffb5-0dc8-11e9-be4f-03130cc057ef" type="literal">asList</object>
-              </predicate>
-              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
-                <object statement-guid="64900e57-0dcd-11e9-be4f-03130cc057ef">
-                  <resource guid="648fe744-0dcd-11e9-be4f-03130cc057ef">
-                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="648fe746-0dcd-11e9-be4f-03130cc057ef" type="resource" guid="27552634-8510-11e4-be04-618e8da9f46b" />
-                    </predicate>
-                  </resource>
-                </object>
-              </predicate>
-              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
-                <object statement-guid="e9acffb9-0dc8-11e9-be4f-03130cc057ef" type="literal">false</object>
-              </predicate>
-              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="2eb3e603-7198-11e9-98e0-2719d32d2629" type="literal">return java.util.Arrays.asList(any);</object>
-              </predicate>
-            </resource>
-          </object>
-        </predicate>
-        <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
-          <object statement-guid="470de3c9-0dcd-11e9-be4f-03130cc057ef" type="resource" guid="8f43d675-9d8b-11e4-9f4f-f92df88355e2" />
         </predicate>
       </resource>
     </object>

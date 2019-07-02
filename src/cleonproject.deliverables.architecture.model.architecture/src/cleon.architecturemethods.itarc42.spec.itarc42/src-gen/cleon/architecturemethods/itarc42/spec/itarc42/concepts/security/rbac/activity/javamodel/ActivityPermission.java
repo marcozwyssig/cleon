@@ -48,6 +48,15 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
      _setListAttribute(cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
   // relations
   
   @Override
@@ -126,6 +135,7 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
@@ -143,4 +153,4 @@ public class ActivityPermission extends DynamicResource implements IActivityPerm
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,emIWlhDG93pvq3wuYYydr4zfeeM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b898fc57-7f22-11e9-9a52-07d4b074defc,7dUACsqI+P/QjN8Y2JftwR3xOG4=] */

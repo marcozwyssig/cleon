@@ -233,43 +233,6 @@ public class FunctionSpace_Segmentation {
 
   }
 
-  public static interface IAnyFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("e9acffb2-0dc8-11e9-be4f-03130cc057ef")
-    public <T> List<T> asList();
-
-  }
-  
-  public static interface IAnyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("e9acffb2-0dc8-11e9-be4f-03130cc057ef")
-    public <T> List<T> asList(final T any);
-
-  }
-  
-  public static class AnyFunctionsImpl implements IAnyFunctionsImpl {
-
-    public static final IAnyFunctionsImpl INSTANCE = new AnyFunctionsImpl();
-
-    private AnyFunctionsImpl() {}
-
-    @Override
-    public <T> List<T> asList(final T any) {
-      return java.util.Arrays.asList(any);
-    }
-
-  }
-  
-  public static class AnyFunctions {
-
-    private AnyFunctions() {}
-
-    public static <T> List<T> asList(final T any) {
-      return DynamicResourceUtil.invoke(IAnyFunctionsImpl.class, AnyFunctionsImpl.INSTANCE, any).asList(any);
-    }
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,EdOnYM5RTTruWXXOxyiM/Yc0Q7Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,ZamxZQnsjtA3t5iOtPgrAncZcko=] */

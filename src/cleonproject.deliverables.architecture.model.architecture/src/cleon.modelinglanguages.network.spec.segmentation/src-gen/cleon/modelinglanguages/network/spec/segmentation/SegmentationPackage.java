@@ -31,7 +31,6 @@ public class SegmentationPackage {
   public static final Resource FunctionSpace_aE_Segmentation_SecurityServicesZone = new Resource("45e3bfda-0b7a-11e9-a136-69d076e48ed1");
   public static final Resource SecuritySubZoneAware = new Resource("02abe8e7-0b84-11e9-a136-69d076e48ed1");
   public static final Resource SegmentationZone = new Resource("ccaeef49-0d1d-11e9-be4f-03130cc057ef");
-  public static final Resource FunctionSpace_aE_Segmentation_Any = new Resource("26c178bb-0dc6-11e9-be4f-03130cc057ef");
   public static final Resource SecuritySubZone_VLAN_aE_No = new Resource("cd3bbd8b-7ae3-11e9-a70f-4dc03941a024");
   
   /* Begin Protected Region [[user]] */
@@ -53,4 +52,4 @@ public class SegmentationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.segmentation,Cv8aN9SbmhJdrX8eGGB+aEo+MzY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.segmentation,pKc0iBFiyYNyMiRDASpXySmXMUI=] */

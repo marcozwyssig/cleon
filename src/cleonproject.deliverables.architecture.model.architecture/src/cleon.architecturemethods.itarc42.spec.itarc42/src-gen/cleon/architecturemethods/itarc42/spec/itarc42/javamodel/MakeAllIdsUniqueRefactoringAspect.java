@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel;
+package cleon.architecturemethods.itarc42.spec.itarc42.javamodel;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
@@ -10,6 +10,7 @@ import ch.actifsource.core.model.aspects.impl.AbstractAllInstancesRefactorerAspe
 import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
+import cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.DomainPackage;
 import cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.RequirementPackage;
 import cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage;
 import cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.SystemconfigurationPackage;
@@ -26,6 +27,7 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
 		makeUnique(executor, paramPackage, Buildingblock_viewPackage.SystemConfiguration);
 		makeUnique(executor, paramPackage, Buildingblock_viewPackage.SystemComponent);
+		makeUnique(executor, paramPackage, DomainPackage.Actor);
 	}
 
 	private void makeUnique(IModifiable executor, Package paramPackage, Resource resource) {

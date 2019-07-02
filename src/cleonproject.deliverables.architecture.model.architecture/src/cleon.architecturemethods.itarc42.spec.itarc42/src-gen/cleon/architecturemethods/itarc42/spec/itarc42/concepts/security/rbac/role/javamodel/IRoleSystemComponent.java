@@ -2,7 +2,7 @@ package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.ro
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IGroup {
+public interface IRoleSystemComponent extends cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId, ch.actifsource.core.javamodel.IDecorator, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IGroup {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e33fb742-35e4-11e9-9d58-25409887bb2a");
   
@@ -14,4 +14,4 @@ public interface IRoleSystemComponent extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,8PMuwMC/863/6pOY/74GrHM8pWg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,7eRrYTtWXJzvyu0J/OdcRucz0ZA=] */

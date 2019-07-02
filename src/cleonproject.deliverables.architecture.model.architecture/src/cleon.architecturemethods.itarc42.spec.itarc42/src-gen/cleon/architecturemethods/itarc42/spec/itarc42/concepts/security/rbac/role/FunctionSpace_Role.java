@@ -37,6 +37,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("b7460617-9c10-11e9-9470-2178b598e9a4")
     public java.lang.Integer ResponsibilityNo();
 
+    @IDynamicResourceExtension.MethodId("9eddbb3a-9cd1-11e9-9b32-35cf2fd07621")
+    public java.lang.String GetName();
+
   }
   
   public static interface IRoleSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -169,4 +172,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,mRk66d3N3jj4ozg9HbX7WXOsGM0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,y66TgBJDxRr/mhIP8J3B3NmySEU=] */

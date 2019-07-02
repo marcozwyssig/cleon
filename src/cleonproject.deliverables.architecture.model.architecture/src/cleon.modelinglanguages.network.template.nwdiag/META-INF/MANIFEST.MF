@@ -4,7 +4,7 @@ Bundle-ActivationPolicy: lazy
 Bundle-Activator: ch.actifsource.template.Activator
 Bundle-Name: cleon.modelinglanguages.network.template.nwdiag
 Bundle-SymbolicName: cleon.modelinglanguages.network.template.nwdiag.builtin;singleton:=true
-Bundle-Version: 0.4.129
+Bundle-Version: 0.4.130
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -13,13 +13,13 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.modelinglanguages.network.spec.network.builtin;bundle-version="0.4.129",
- cleon.common.util.spec.actifsource.builtin;bundle-version="0.4.129",
- cleon.modelinglanguages.network.spec.segmentation.builtin;bundle-version="0.4.129",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.129",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.129",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.129",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.129",
+ cleon.modelinglanguages.network.spec.network.builtin;bundle-version="0.4.130",
+ cleon.common.util.spec.actifsource.builtin;bundle-version="0.4.130",
+ cleon.modelinglanguages.network.spec.segmentation.builtin;bundle-version="0.4.130",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.130",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.130",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.130",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.130",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.modelinglanguages.network.template.nwdiag,
  cleon.modelinglanguages.network.template.nwdiag.javamodel

@@ -8,8 +8,8 @@ public interface ISystemConfigurationDecomposite extends cleon.modelinglanguages
   
   // relations
   
-  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration selectIntoSytemConfiguration();
+  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration selectIntoSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,VHQrvHwMCWscSMc+2v/OCxnrQik=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,RRNu+L2Y49NqxgGq2LFfSUffnr0=] */

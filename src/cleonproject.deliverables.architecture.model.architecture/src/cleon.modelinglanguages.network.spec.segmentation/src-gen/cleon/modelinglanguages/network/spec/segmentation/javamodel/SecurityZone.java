@@ -17,5 +17,9 @@ public abstract class SecurityZone extends DynamicResource implements ISecurityZ
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones, object.getResource());
   }
   
+  public static java.util.List<cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> selectToMeAllowed(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_allowed, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,9VXbIUmyDsGtH5uEi4rGYd9M2OA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,pAyukUMF28OZ2XGVhdlEKQ9Uqeo=] */

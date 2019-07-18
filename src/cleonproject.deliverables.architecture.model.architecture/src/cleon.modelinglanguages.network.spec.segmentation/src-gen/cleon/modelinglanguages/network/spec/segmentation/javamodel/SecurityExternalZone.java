@@ -60,6 +60,16 @@ public class SecurityExternalZone extends DynamicResource implements ISecurityEx
   // relations
   
   @Override
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> selectAllowed() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_allowed);
+  }
+
+  public SecurityExternalZone setAllowed(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> allowed) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_allowed, allowed);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone> selectSecuritySubZones() {
     return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones);
   }
@@ -97,10 +107,11 @@ public class SecurityExternalZone extends DynamicResource implements ISecurityEx
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_allowed, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SecurityZone_securitySubZones, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ae271ab1-0b78-11e9-a136-69d076e48ed1,81LvhKvlESFG3yM4wcSaq7jsDHo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ae271ab1-0b78-11e9-a136-69d076e48ed1,Kl2Pe8UYU/msetUbawxNB5QwCwE=] */

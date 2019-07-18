@@ -83,28 +83,28 @@ public class FunctionSpace_Segmentation {
 
   }
 
-  public static interface ISegmentFunctions extends IDynamicResourceExtension {
+  public static interface ISegmentZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b7e001fa-0b79-11e9-a136-69d076e48ed1")
     public java.lang.String GetTypeName();
 
   }
   
-  public static interface ISegmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISegmentZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SegmentFunctionsImpl implements ISegmentFunctionsImpl {
+  public static class SegmentZoneFunctionsImpl implements ISegmentZoneFunctionsImpl {
 
-    public static final ISegmentFunctionsImpl INSTANCE = new SegmentFunctionsImpl();
+    public static final ISegmentZoneFunctionsImpl INSTANCE = new SegmentZoneFunctionsImpl();
 
-    private SegmentFunctionsImpl() {}
+    private SegmentZoneFunctionsImpl() {}
 
   }
   
-  public static class SegmentFunctions {
+  public static class SegmentZoneFunctions {
 
-    private SegmentFunctions() {}
+    private SegmentZoneFunctions() {}
 
   }
 
@@ -235,4 +235,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,ZamxZQnsjtA3t5iOtPgrAncZcko=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,08D4tSMAJAo67t8kZKYcchXaeBI=] */

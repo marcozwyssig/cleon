@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="646bd819-a939-11e9-b094-b12ff339b432">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="646bd81c-a939-11e9-b094-b12ff339b432" type="resource" guid="44286d9e-0b75-11e9-a136-69d076e48ed1" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="646bd81d-a939-11e9-b094-b12ff339b432" type="literal">Test2</object>
+  </predicate>
+  <predicate guid="84990280-0b75-11e9-a136-69d076e48ed1">
+    <object statement-guid="646bd822-a939-11e9-b094-b12ff339b432" type="aggregate" guid="646bd81a-a939-11e9-b094-b12ff339b432" />
+    <object statement-guid="646bd828-a939-11e9-b094-b12ff339b432" type="aggregate" guid="646bd81b-a939-11e9-b094-b12ff339b432" />
+  </predicate>
+  <predicate guid="ad7e2a2b-a938-11e9-b094-b12ff339b432">
+    <object statement-guid="646bd829-a939-11e9-b094-b12ff339b432" type="resource" guid="646bd819-a939-11e9-b094-b12ff339b432" />
+  </predicate>
+</resource>
+

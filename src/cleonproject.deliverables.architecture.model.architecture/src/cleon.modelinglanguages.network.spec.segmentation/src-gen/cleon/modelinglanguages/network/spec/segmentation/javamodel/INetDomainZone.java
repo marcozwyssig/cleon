@@ -8,8 +8,10 @@ public interface INetDomainZone extends cleon.modelinglanguages.network.spec.seg
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> selectSegments();
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone> selectSegments();
+  
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone> selectAllowed();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,Xlro/vdGFfw3cNzsO41PmaYyMEY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,/wbwGACkzeuhScLifd6y7DlO5aQ=] */

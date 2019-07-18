@@ -17,5 +17,9 @@ public abstract class Zone extends DynamicResource implements IZone {
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, object.getResource());
   }
   
+  public static java.util.List<cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone> selectToMeAllowed(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_allowed, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb4a0fa3-0b73-11e9-a136-69d076e48ed1,broM0Ul72Fkbsth3kXd6t+RQ8XU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fb4a0fa3-0b73-11e9-a136-69d076e48ed1,Barh6x53auA3xg4vbiMw+RlqzMU=] */

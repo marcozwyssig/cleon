@@ -10,6 +10,8 @@ public interface ISecurityZone extends cleon.modelinglanguages.network.spec.segm
   
   public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecuritySubZone> selectSecuritySubZones();
   
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone> selectAllowed();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,tRGIzRbV2DITn7fmPOj5EdpZV4E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,by3IqTvDyxmtnhoNKw+EjheA6GE=] */

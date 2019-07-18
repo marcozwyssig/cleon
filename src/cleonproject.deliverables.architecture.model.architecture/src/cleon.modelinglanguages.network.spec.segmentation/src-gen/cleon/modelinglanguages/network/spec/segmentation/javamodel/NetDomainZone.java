@@ -60,11 +60,21 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> selectSegments() {
-    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments);
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone> selectAllowed() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_allowed);
   }
 
-  public NetDomainZone setSegments(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment> segments) {
+  public NetDomainZone setAllowed(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone> allowed) {
+    _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_allowed, allowed);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone> selectSegments() {
+    return _getList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments);
+  }
+
+  public NetDomainZone setSegments(java.util.List<? extends cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone> segments) {
     _setList(cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, segments);
     return this;
   }
@@ -97,16 +107,21 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_allowed, visitor);
+    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone selectToMeSegments(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegment object) {
+  public static cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone selectToMeSegments(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone object) {
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_segments, object.getResource());
   }
   
+  public static java.util.List<cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone> selectToMeAllowed(cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.spec.segmentation.javamodel.INetDomainZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.NetDomainZone_allowed, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,tA383WnqLg117S03jzi0YAON6vE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,QzoIqroWbFznY77SE/0y+mlYipc=] */

@@ -17,15 +17,8 @@ public class IPAddressRangeDecorator extends AspectImplementationDecorator {
 
 
 	public INodeSet getDecoratableNodes(IReadJobExecutor executor, INode subject, INode decoratingRelation) {
-		ITypeSystem typeSystem = TypeSystem.create(executor);
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-
-		IAbstractNetwork abstractNetwork = resourceRepository.getResource(IAbstractNetwork.class, subject);
-		
-		
 		NodeSet ipNodeSet = new NodeSet();
 		ipNodeSet.add(LiteralUtil.create(1));
-
 		return ipNodeSet;
 	}
 }

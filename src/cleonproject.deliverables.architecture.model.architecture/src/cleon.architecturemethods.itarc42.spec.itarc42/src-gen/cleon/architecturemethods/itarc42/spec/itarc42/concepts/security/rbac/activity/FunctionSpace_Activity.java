@@ -30,6 +30,9 @@ public class FunctionSpace_Activity {
     @IDynamicResourceExtension.MethodId("cd8a84f5-7f27-11e9-9a52-07d4b074defc")
     public java.lang.Integer PermissionCount();
 
+    @IDynamicResourceExtension.MethodId("f259b386-c56e-11e9-9daa-cf9f9f7341e8")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllActivityPermissionInDomain();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -193,4 +196,4 @@ public class FunctionSpace_Activity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,/pGBtxSyMOeX0qyPELRTQdO7lds=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,6ElyDDCH5eM5tSCbVmAxKI/dZsg=] */

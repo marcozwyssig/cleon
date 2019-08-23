@@ -1,0 +1,29 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+
+rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+}
+rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
+}
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Virtual__F_Compute -down-> Physical__F_Compute : verwendet 
+Hypervisor__F_Management -up-> Virtual__F_Compute : verwendet
+Operating__F_System -up-> Virtual__F_Compute : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,12e3acb7-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

@@ -1,0 +1,23 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Management (CMG)" <<$central_management_service>> {
+}
+
+rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+}
+Configuration__F_Management__F___N_CMG__O_ -down-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet 
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,0b167391-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

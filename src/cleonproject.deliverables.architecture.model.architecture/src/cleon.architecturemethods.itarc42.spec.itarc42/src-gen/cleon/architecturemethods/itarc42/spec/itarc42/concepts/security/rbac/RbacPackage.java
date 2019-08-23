@@ -22,6 +22,7 @@ public class RbacPackage {
   public static final Resource Group = new Resource("d2272f28-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource AbstractGroups_groups = new Resource("df943a6b-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource FunctionSpace_aE_RBAC_AbstractGroup = new Resource("b9b92765-7f24-11e9-9a52-07d4b074defc");
+  public static final Resource FunctionSpace_aE_RBAC_AbstractGroups = new Resource("68ae8473-c56f-11e9-9daa-cf9f9f7341e8");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac,YjCju8HlODh7dwFc7v1y0N7soNs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac,jx8C56frcGimnrVPjHy+7QM6pI4=] */

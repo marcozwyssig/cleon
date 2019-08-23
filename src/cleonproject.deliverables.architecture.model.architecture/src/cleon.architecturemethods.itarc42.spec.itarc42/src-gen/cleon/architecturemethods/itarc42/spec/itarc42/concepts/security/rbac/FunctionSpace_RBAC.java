@@ -143,6 +143,9 @@ public class FunctionSpace_RBAC {
     @IDynamicResourceExtension.MethodId("94ef12db-809c-11e9-8e65-f3f639e40a34")
     public cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups GetRootRoleGroup();
 
+    @IDynamicResourceExtension.MethodId("34e81fa9-c56f-11e9-9daa-cf9f9f7341e8")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractGroup> GetAllChildren();
+
   }
   
   public static interface IAbstractGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -163,6 +166,31 @@ public class FunctionSpace_RBAC {
 
   }
 
+  public static interface IAbstractGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("792154d6-c56f-11e9-9daa-cf9f9f7341e8")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractGroup> GetAllChildren();
+
+  }
+  
+  public static interface IAbstractGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractGroupsFunctionsImpl implements IAbstractGroupsFunctionsImpl {
+
+    public static final IAbstractGroupsFunctionsImpl INSTANCE = new AbstractGroupsFunctionsImpl();
+
+    private AbstractGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractGroupsFunctions {
+
+    private AbstractGroupsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,6gBX66jlk71Zoqa1mtoTUcuhe04=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,jXb+M0CWpqy/NFvUDtvwHgGmKII=] */

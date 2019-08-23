@@ -1,0 +1,64 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-00 [NMS - Stao A]" <<$virtual_application_server>> {
+	rectangle VCPR__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPR-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPR__S_NMS__S_BABS__S_00 as "VCPR-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle PRP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle PRP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle PRP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRP-NMS-BABS-00 [NMS - Stao A]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle VCPM__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPM-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPM__S_NMS__S_BABS__S_00 as "VCPM-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle VCPL__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPL-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPL__S_NMS__S_BABS__S_00 as "VCPL-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle NPS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "NPS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle NPS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "NPS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle NPS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "NPS-NMS-BABS-00 [NMS - Stao A]" <<$credentials>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-01 [NMS - Stao A]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,8549e840-0e95-11e9-9f19-6d15636f4ecc,Hash]

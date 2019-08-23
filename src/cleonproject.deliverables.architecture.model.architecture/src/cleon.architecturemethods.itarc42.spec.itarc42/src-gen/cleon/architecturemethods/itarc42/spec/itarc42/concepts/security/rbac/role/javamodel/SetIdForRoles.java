@@ -41,10 +41,16 @@ public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 						
 					int i = 0;
 					for( IRoleSystemComponent roleSystemComponent : netDomainGroupFunctions.AllRoleSystemComponents()) {
-						Integer id = abstractGroupFunctions.GetNetdomainId() + i;
-						Update.createOrModifyStatement(executor, roleSystemComponent.getPackage(), roleSystemComponent.getResource(),
-								IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
-						++i;
+						if( roleSystemComponent.selectIdentifier() == null || roleSystemComponent.selectIdentifier().intValue() == 0) {
+							Integer id = abstractGroupFunctions.GetNetdomainId() + i;
+							Update.createOrModifyStatement(executor, roleSystemComponent.getPackage(), roleSystemComponent.getResource(),
+									IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
+							++i;
+						} else {
+							if ( i < roleSystemComponent.selectIdentifier() ) {
+								i = roleSystemComponent.selectIdentifier();
+							}
+						}
 					}
 				}
 			}

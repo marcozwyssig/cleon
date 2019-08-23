@@ -1,0 +1,89 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_11__F__aA_EAZS_aC_ as "VMH-NMS-BABS-11 [EAZS]" <<$virtual_application_server>> {
+	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle MCS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MCS-NMS-BABS-10 [EAZS]" <<$certificate_authority>> {
+			
+			}
+		}
+	}
+	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle APP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "APP-NMS-BABS-10 [EAZS]" <<$web_server>> {
+			
+			}
+		}
+	}
+	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle PRT__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "PRT-NMS-BABS-10 [EAZS]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "JMP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "JMP-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle CMG__S_NMS__S_BABS__S_10__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-10 (RHT-VM)" <<$linux>> {
+			rectangle CMG__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "CMG-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle DFS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "DFS-NMS-BABS-10 [EAZS]" <<$file_server>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-12 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_12__F__aA_EAZS_aC_ as "JMP-NMS-BABS-12 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,a1b9d187-0e9b-11e9-9f19-6d15636f4ecc,Hash]

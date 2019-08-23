@@ -41,12 +41,17 @@ public class SetIdForActivities extends AbstractAllInstancesRefactorerAspect {
 						
 					int i = 0;
 					for( IActivityPermission activityPermission : netDomainGroupFunctions.AllActivityPermissions() ) {
-						Integer id = abstractGroupFunctions.GetNetdomainId() + i;
-						ch.actifsource.util.log.Logger.instance().logInfo("Domain " + abstractGroupFunctions.GetNetdomainId());
-						
-						Update.createOrModifyStatement(executor, activityPermission.getPackage(), activityPermission.getResource(),
-								IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
-						++i;
+						if( activityPermission.selectIdentifier() == null || activityPermission.selectIdentifier().intValue() == 0) {
+							Integer id = abstractGroupFunctions.GetNetdomainId() + i;
+							
+							Update.createOrModifyStatement(executor, activityPermission.getPackage(), activityPermission.getResource(),
+									IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
+							++i;
+						} else {
+							if ( i < activityPermission.selectIdentifier() ) {
+								i = activityPermission.selectIdentifier();
+							}
+						}
 					}
 				}
 			}

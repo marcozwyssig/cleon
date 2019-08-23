@@ -1,0 +1,29 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Plattform as "Plattform" <<SystemLayer>> {
+}
+
+rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
+}
+rectangle Management as "Management" <<SystemLayer>> {
+}
+rectangle Security as "Security" <<SystemLayer>> {
+}
+Plattform -down-> Infrastruktur : verwendet 
+Management -up-> Plattform : verwendet
+Security -up-> Plattform : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,f34bb64c-0e18-11e9-8b4c-f9aec93d8b56,Hash]

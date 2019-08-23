@@ -62,6 +62,8 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="df6c51af-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="df6bdc7b-c5ae-11e9-9daa-cf9f9f7341e8" />
+    <resource statement-guid="eef97ddb-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="eef97dd7-c5ae-11e9-9daa-cf9f9f7341e8" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="e33fb744-35e4-11e9-9d58-25409887bb2a" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -278,6 +280,32 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="df6c51af-c5ae-11e9-9daa-cf9f9f7341e8">
+      <resource guid="df6bdc7b-c5ae-11e9-9daa-cf9f9f7341e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df6bdc7c-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df6bdc7d-c5ae-11e9-9daa-cf9f9f7341e8" type="literal">cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.RoleSystemComponentIdInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df6c038e-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="eef97ddb-c5ae-11e9-9daa-cf9f9f7341e8">
+      <resource guid="eef97dd7-c5ae-11e9-9daa-cf9f9f7341e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eef97dd9-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="efa378f3-c5ae-11e9-9daa-cf9f9f7341e8" type="literal">cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.RoleSystemComponentIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="eef97dda-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

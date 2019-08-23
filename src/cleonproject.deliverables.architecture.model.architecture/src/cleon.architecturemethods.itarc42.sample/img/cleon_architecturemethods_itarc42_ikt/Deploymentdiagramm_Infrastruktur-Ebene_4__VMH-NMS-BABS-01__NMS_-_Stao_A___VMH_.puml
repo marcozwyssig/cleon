@@ -1,0 +1,126 @@
+@startuml
+
+
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-01 [NMS - Stao A]" <<$virtual_application_server>> {
+	rectangle MCS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle MCS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MCS-NMS-BABS-00 [NMS - Stao A]" <<$certificate_authority>> {
+			
+			}
+		}
+	}
+	rectangle APP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "APP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle APP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle APP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "APP-NMS-BABS-00 [NMS - Stao A]" <<$web_server>> {
+			
+			}
+		}
+	}
+	rectangle PRT__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRT-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle PRT__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRT-NMS-BABS-00 [NMS - Stao A]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "JMP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-00 [NMS - Stao A]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle VCE__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCE-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCE__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VCE-NMS-BABS-00 [NMS - Stao A]" <<$server_farm>> {
+		
+		}
+	}
+	rectangle VBM__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VBM-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VBM__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "VBM-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle VBM__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VBM-NMS-BABS-00 [NMS - Stao A]" <<$backup_local>> {
+			
+			}
+		}
+	}
+	rectangle MCR__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCR-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle MCR__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCR-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle MCR__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MCR-NMS-BABS-00 [NMS - Stao A]" <<$certificate_authority>> {
+			
+			}
+		}
+	}
+	rectangle EPO__S_NMS__S_BABS__S_00__F___N_VM__O_ as "EPO-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle EPO__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "EPO-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle EPO__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "EPO-NMS-BABS-00 [NMS - Stao A]" <<$lock_with_key_security>> {
+			
+			}
+		}
+	}
+	rectangle CMG__S_NMS__S_BABS__S_00__F___N_VM__O_ as "CMG-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle CMG__S_NMS__S_BABS__S_00__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-00 (RHT-VM)" <<$linux>> {
+			rectangle CMG__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "CMG-NMS-BABS-00 [NMS - Stao A]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle DFS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "DFS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle DFS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "DFS-NMS-BABS-00 [NMS - Stao A]" <<$file_server>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_02__F___N_VM__O_ as "JMP-NMS-BABS-02 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_02__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-02 (WIN-2016-STD-VM)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-02 [NMS - Stao A]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,8a6aed4d-0e95-11e9-9f19-6d15636f4ecc,Hash]

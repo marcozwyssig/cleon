@@ -11904,7 +11904,7 @@
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>3</db:para>
+									<db:para>4</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12244,6 +12244,85 @@
 								
 							</db:section>
 						</db:section>
+						<db:section xml:id="ea.72e3def1-c581-11e9-9daa-cf9f9f7341e8">
+							<db:title>Virtual Machine (VM) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Virtual Machine (VM)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2006</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2006-nms-vm_write</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2007</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2007-nms-vm_audit</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.78af541d-c581-11e9-9daa-cf9f9f7341e8">
+								<db:title>grp-act-2006-nms-vm_write</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.7de7d903-c581-11e9-9daa-cf9f9f7341e8">
+								<db:title>grp-act-2007-nms-vm_audit</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
 					</db:section>
 					<db:section xml:id="ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70">
 						<db:title>TN EAZS (906) Aktivit&#228;ten</db:title>
@@ -12304,9 +12383,24 @@
 										</db:td>
 									</db:tr>
 									<db:tr>
+										<db:td>
+											<db:para>2102</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2102-906-hpe_write</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">3/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
@@ -12323,6 +12417,14 @@
 							</db:section>
 							<db:section xml:id="ea.58cd67c4-7f23-11e9-9a52-07d4b074defc">
 								<db:title>grp-act-2101-906-hpe_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.1a615ed8-c582-11e9-9daa-cf9f9f7341e8">
+								<db:title>grp-act-2102-906-hpe_write</db:title>
 								
 								
 								

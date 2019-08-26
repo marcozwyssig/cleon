@@ -2,9 +2,9 @@ package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specific
 
 import cleon.common.resources.spec.resources.id.javamodel.BusinessObjectIdInitializerAspect;
 
-public class TestInitializerAspect extends BusinessObjectIdInitializerAspect<ITest> 
+public class TestIdInitializerAspect extends BusinessObjectIdInitializerAspect<ITest> 
 {
-	public TestInitializerAspect()
+	public TestIdInitializerAspect()
 	{
 		super(ITest.class);
 	}

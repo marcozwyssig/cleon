@@ -149,8 +149,8 @@ public class Tester extends DynamicResource implements ITester {
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester selectToMeTests(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.Test_schedulingPackage.Tester_tests, object.getResource());
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester> selectToMeTests(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest object) {
+    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.Test_schedulingPackage.Tester_tests, object.getResource());
   }
   
   public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester> selectToMePerson(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson object) {
@@ -158,4 +158,4 @@ public class Tester extends DynamicResource implements ITester {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3edf4b87-9190-11e9-85e6-a377d9035ee3,IKCh79/BaDNvSFpLb+0NdPOiIkM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3edf4b87-9190-11e9-85e6-a377d9035ee3,zpI9flFsOioRkBqjB9KRw7M3dHI=] */

@@ -6,7 +6,7 @@ cd %~dp0
 
 REM make sure no previous results are misinterpretted
 echo purge previous files
-del "My_Testing_Testdurchf_hrung.docx" > nul 2>&1
+del "My_Testing_1_Testdurchf_hrung.docx" > nul 2>&1
 
 
 REM goto exit
@@ -16,14 +16,14 @@ echo successfully
 REM render
 :render
 echo now rendering
-"%ProgramFiles(x86)%\DocumentGenerator\bin\render.exe" -z -t template.docx -L 2 -P -l=de-CH -f "My_Testing_Testdurchf_hrung.xml" ^
--D=Title:"My Testing_Testdurchführung" ^
+"%ProgramFiles(x86)%\DocumentGenerator\bin\render.exe" -z -t template.docx -L 2 -P -l=de-CH -f "My_Testing_1_Testdurchf_hrung.xml" ^
+-D=Title:"My Testing 1_Testdurchführung" ^
 -D=EAMod_Reviewers:""
 echo rendering maybe done
 
 if errorlevel 1 goto render_failed
 echo rendering failed
-call "My_Testing_Testdurchf_hrung.docx"
+call "My_Testing_1_Testdurchf_hrung.docx"
 goto exit
 
 :missing_parameter
@@ -50,4 +50,4 @@ pause
 
 :exit
 
-REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,bfae69fc-4f05-11e9-ba59-f1daaff821cc,zxp0WP2XxgByqEcLVpsf+OcjSB0=]
+REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,bfae69fc-4f05-11e9-ba59-f1daaff821cc,xAYtzS5wpO8AEqJg5qZdERdfLVQ=]

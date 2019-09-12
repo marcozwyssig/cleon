@@ -495,7 +495,7 @@ public class FunctionSpace_Requirements {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement abstractRequirement) {
-      return String.format("AF%03d", abstractRequirement.selectIdentifier());
+      return String.format("AF-%03d", abstractRequirement.selectIdentifier());
     }
 
   }
@@ -577,4 +577,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,+T30GmR3HxdOI7kdZ3KrgvJIeJc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,dm2L8W3fFMHVV9pM0IdJM4Ag/kk=] */

@@ -3727,7 +3727,7 @@
                 <object statement-guid="b82ce631-c4f5-11e5-b41d-5d67443850a2" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="086ddfe5-1df9-11e7-a5d4-016f0b98725a" type="literal">return String.format("AF%03d", abstractRequirement.selectIdentifier());</object>
+                <object statement-guid="086ddfe5-1df9-11e7-a5d4-016f0b98725a" type="literal">return String.format("AF-%03d", abstractRequirement.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

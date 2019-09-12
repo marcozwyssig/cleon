@@ -25,6 +25,8 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="a16ffb12-d549-11e9-859b-1ff3f8d095ca" type="resource" guid="a16f85de-d549-11e9-859b-1ff3f8d095ca" />
+    <resource statement-guid="0065d326-d54a-11e9-859b-1ff3f8d095ca" type="resource" guid="00658502-d54a-11e9-859b-1ff3f8d095ca" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="4e0a6f87-e0fb-11e8-8499-a3b0fb3cad90" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -121,6 +123,32 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a16ffb12-d549-11e9-859b-1ff3f8d095ca">
+      <resource guid="a16f85de-d549-11e9-859b-1ff3f8d095ca">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a16facf0-d549-11e9-859b-1ff3f8d095ca" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fbd3eece-d549-11e9-859b-1ff3f8d095ca" type="literal">cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.SystemConfigurationIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a16fd401-d549-11e9-859b-1ff3f8d095ca" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0065d326-d54a-11e9-859b-1ff3f8d095ca">
+      <resource guid="00658502-d54a-11e9-859b-1ff3f8d095ca">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0065ac14-d54a-11e9-859b-1ff3f8d095ca" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="012fb32b-d54a-11e9-859b-1ff3f8d095ca" type="literal">cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.SystemConfigurationIdInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0065d325-d54a-11e9-859b-1ff3f8d095ca" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
         </predicate>
       </resource>
     </object>

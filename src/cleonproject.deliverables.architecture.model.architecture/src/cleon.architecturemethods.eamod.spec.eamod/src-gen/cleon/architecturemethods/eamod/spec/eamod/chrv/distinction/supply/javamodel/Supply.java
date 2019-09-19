@@ -139,8 +139,6 @@ public class Supply extends DynamicResource implements ISupply {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -154,4 +152,4 @@ public class Supply extends DynamicResource implements ISupply {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d823f2f-0c7e-11e6-86c5-87a8b520dd59,uWCIutA5Kx9vyVnDAiL7l1we8Jw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d823f2f-0c7e-11e6-86c5-87a8b520dd59,Du7Rk0IgiqKuDNZ4Ma30L6uN4oM=] */

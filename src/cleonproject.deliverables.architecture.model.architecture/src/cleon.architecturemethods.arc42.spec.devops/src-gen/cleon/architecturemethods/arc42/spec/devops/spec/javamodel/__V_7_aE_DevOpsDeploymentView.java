@@ -204,16 +204,13 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.build.javamodel.IBuild.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_build, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IBuildView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_buildView, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.code.javamodel.ICode.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_code, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.deploy.javamodel.IDeploy.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_deploy, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IDeployView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_deployView, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IMonitorView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_monitorView, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.operate.javamodel.IOperate.class, cleon.architecturemethods.arc42.spec.devops.spec.SpecPackage.__V_7_aE_DevOpsDeploymentView_operates, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.javamodel.IPackageView.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view._07_deployment_viewPackage.DeploymentView_packageView, visitor);
@@ -251,4 +248,4 @@ public class __V_7_aE_DevOpsDeploymentView extends DynamicResource implements I_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,5UuVXTD+CL9aH9QGrOuZtbRoJZU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a574eba1-41b4-11e5-a2b3-edc7f3343844,IwMx3p+g7fb6bda1PBCA8rufEUU=] */

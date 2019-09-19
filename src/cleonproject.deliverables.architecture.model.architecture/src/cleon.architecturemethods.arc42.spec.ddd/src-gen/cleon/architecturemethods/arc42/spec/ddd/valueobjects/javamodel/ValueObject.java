@@ -83,7 +83,6 @@ public class ValueObject extends DynamicResource implements IValueObject {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -92,4 +91,4 @@ public class ValueObject extends DynamicResource implements IValueObject {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,lXkUqur77AP7Zy4HCQ+Ax1oc9ks=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,4dR8d9my7LJgcQ4HStZQKeci3DU=] */

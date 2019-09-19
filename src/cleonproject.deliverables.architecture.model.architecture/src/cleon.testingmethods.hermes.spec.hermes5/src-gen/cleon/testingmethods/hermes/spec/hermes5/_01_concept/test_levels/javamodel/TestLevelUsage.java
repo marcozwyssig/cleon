@@ -144,14 +144,9 @@ public class TestLevelUsage extends DynamicResource implements ITestLevelUsage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriterias.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelUsage_testCriterias, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevel.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelUsage_testLevel, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestLevelGoals.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestLevelUsage_testLevelGoals, visitor);
@@ -173,4 +168,4 @@ public class TestLevelUsage extends DynamicResource implements ITestLevelUsage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a0ed7d6a-264b-11e6-ae54-e50d44645ae7,1BN9wwLSxvgzz0jakSfq7nIkb/k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a0ed7d6a-264b-11e6-ae54-e50d44645ae7,/EHa4PtdYYmAJOlJlc31TxmYlcA=] */

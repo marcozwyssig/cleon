@@ -142,7 +142,6 @@ public class Service extends DynamicResource implements IService {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -183,4 +182,4 @@ public class Service extends DynamicResource implements IService {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,q3NQ4xvO7anPXHBd79KvL5EC3i4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,M3qv9bM4sgAxgEXg8TfiMMX0wDQ=] */

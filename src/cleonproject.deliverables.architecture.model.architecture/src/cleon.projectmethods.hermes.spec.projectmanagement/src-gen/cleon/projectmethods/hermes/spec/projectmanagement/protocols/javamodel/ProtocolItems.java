@@ -134,16 +134,12 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IAgendaItem.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_agendaItem, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolItem.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_protocols, visitor);
     _acceptMap(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolItems.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolItems_protocolsAgenda, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -162,4 +158,4 @@ public class ProtocolItems extends DynamicResource implements IProtocolItems {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,KyOYxU2iYuQY00WwDebmgGLpPOA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35502e39-b462-11e5-a3f4-497fd75158dc,DrgujWK2k2hCc03iFM1dCVm2F6E=] */

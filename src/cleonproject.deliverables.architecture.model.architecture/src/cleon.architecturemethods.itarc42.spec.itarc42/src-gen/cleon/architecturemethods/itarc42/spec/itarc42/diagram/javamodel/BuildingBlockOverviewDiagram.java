@@ -87,9 +87,8 @@ public class BuildingBlockOverviewDiagram extends DynamicResource implements IBu
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_path, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.spec.uml2.Uml2Package.UmlDiagram_scale, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5cf9b709-0a93-11e9-9f72-e5610a9d4cd3,p/UOiSwuvEenSV7mMxAIcMuVtxw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5cf9b709-0a93-11e9-9f72-e5610a9d4cd3,y+sFbJLYcrSAdTjQ51T7zoGQnTE=] */

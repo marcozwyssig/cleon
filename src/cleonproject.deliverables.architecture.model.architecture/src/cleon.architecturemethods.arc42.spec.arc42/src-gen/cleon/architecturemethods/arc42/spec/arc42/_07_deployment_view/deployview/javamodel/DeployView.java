@@ -104,11 +104,8 @@ public class DeployView extends DynamicResource implements IDeployView {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.spec.arc42._07_deployment_view.deployview.DeployviewPackage.DeployView_environments, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -121,4 +118,4 @@ public class DeployView extends DynamicResource implements IDeployView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,69KeRZ6UdYgG73XPuOEHrjrRmEA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,6Lu7HIoUTzLGeP764SXO8Aa9tTk=] */

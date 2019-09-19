@@ -65,7 +65,6 @@ public class WeightingRequirementCriteria extends DynamicResource implements IWe
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementCriteria_requirement, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -76,4 +75,4 @@ public class WeightingRequirementCriteria extends DynamicResource implements IWe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,eIycvnzplAXpMBjkF69k3vFVUgM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,pNAPIxyCvviTtr8o9X1Ctrlhuug=] */

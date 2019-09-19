@@ -76,7 +76,6 @@ public class AvailabilityLifetime extends DynamicResource implements IAvailabili
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.availability.javamodel.IAvailabilityClassification.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.LifetimePackage.AvailabilityLifetime_availabilityClassification, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.javamodel.IConfidentialityClassification.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.LifetimePackage.AvailabilityLifetime_confidentialityLifetime, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class AvailabilityLifetime extends DynamicResource implements IAvailabili
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fffa277-c6cb-11e6-8242-2f0ed6756d77,gWUBKpEUmMQTu6MPc1zMxzrirm0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fffa277-c6cb-11e6-8242-2f0ed6756d77,5dpJ5/n2IbpJhjazIuOux7xTPJE=] */

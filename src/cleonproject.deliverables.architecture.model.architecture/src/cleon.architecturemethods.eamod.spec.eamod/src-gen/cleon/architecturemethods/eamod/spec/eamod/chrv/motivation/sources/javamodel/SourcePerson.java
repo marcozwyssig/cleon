@@ -98,7 +98,6 @@ public class SourcePerson extends DynamicResource implements ISourcePerson {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.Source_composites, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISourceDocument.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourcePerson_documents, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -110,4 +109,4 @@ public class SourcePerson extends DynamicResource implements ISourcePerson {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d03bc5b-bb80-11e5-b2f7-f515c847fa35,dpgiJFVzhXuN0sQZJPmoa878IDE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d03bc5b-bb80-11e5-b2f7-f515c847fa35,G4sgZR259SmU3yXkzuRxlJlSgbQ=] */

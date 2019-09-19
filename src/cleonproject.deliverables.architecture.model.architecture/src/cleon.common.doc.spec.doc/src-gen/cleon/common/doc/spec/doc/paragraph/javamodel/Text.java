@@ -67,9 +67,8 @@ public class Text extends DynamicResource implements IText {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.spec.doc.paragraph.ParagraphPackage.Text_text, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,IavGnm+zuHbUgg/JBkjlaa9aa9I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,ZSXAkXeUekJWYR86I2jM1S3qWPc=] */

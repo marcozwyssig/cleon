@@ -78,7 +78,6 @@ public class ExceptionDecomposition extends DynamicResource implements IExceptio
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IDomainException.class, cleon.architecturemethods.arc42.spec.ddd.exceptions.ExceptionsPackage.ExceptionDecomposition_into, visitor);
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class ExceptionDecomposition extends DynamicResource implements IExceptio
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,RPUpYii+cTEo5mW0wqM7+SottiE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,510327f6-266d-11e5-95dc-8f1cdbd9db54,M12VupEit3eXO5ATbC6MNs5beJU=] */

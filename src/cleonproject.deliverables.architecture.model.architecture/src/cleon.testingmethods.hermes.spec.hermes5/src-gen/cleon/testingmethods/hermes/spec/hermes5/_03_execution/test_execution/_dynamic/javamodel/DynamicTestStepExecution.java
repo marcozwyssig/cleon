@@ -74,7 +74,6 @@ public class DynamicTestStepExecution extends DynamicResource implements IDynami
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.javamodel.ITestResult.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestStepExecution_testResult, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestStepExecution_testStep, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -91,4 +90,4 @@ public class DynamicTestStepExecution extends DynamicResource implements IDynami
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1eed511e-9193-11e9-85e6-a377d9035ee3,pYBXx4JbPRBr78blUGb6HR6KBrI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1eed511e-9193-11e9-85e6-a377d9035ee3,cedrOiFmbYSbay+yGJ9u5bFZQxA=] */

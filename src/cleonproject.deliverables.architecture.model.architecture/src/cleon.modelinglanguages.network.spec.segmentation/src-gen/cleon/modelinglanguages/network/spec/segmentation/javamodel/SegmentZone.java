@@ -103,14 +103,12 @@ public class SegmentZone extends DynamicResource implements ISegmentZone {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISegmentZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentZone_allowed, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.ISecurityZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.SegmentZone_securityZones, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone.class, cleon.modelinglanguages.network.spec.segmentation.SegmentationPackage.Zone_zones, visitor);
   }
 
   // toMeRelations
@@ -124,4 +122,4 @@ public class SegmentZone extends DynamicResource implements ISegmentZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e820f880-0b73-11e9-a136-69d076e48ed1,83e8/rZh/C/NHoclbZ55OJlnLo8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e820f880-0b73-11e9-a136-69d076e48ed1,UU5JB5y7l9COBJWLHI9hDapMBjo=] */

@@ -100,7 +100,6 @@ public class ImportAssociation extends DynamicResource implements IImportAssocia
     _acceptSingle(ch.actifsource.core.javamodel.IAssociation.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.ImportAssociation_assocation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IResource.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.ImportAssociation_object, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IRelation.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.ImportAssociation_select, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -119,4 +118,4 @@ public class ImportAssociation extends DynamicResource implements IImportAssocia
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5bd29123-26c1-11e8-a805-991f3ff583b7,fGiJP0NT3jaZzggY/zRbq4xsHbM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5bd29123-26c1-11e8-a805-991f3ff583b7,GGS/WdlEnws38JNTO2AjPcmgyls=] */

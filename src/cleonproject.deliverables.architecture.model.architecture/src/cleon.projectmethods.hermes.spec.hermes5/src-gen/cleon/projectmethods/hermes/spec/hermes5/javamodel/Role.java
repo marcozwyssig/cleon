@@ -119,7 +119,6 @@ public class Role extends DynamicResource implements IRole {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.projectmethods.hermes.spec.hermes5.Hermes5Package.Role_authority, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.DisplayName_displayName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.id.IdPackage.StringBusinessObjectId_identifier, visitor);
@@ -131,4 +130,4 @@ public class Role extends DynamicResource implements IRole {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92f47870-31ca-11e8-8a84-6f139e67278b,VKofq21Ff1NkRiuoRpgV1N9Q1ZM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,92f47870-31ca-11e8-8a84-6f139e67278b,5u1FFPdZGokkhaHMUkW2MMUXwGs=] */

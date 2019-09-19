@@ -174,14 +174,11 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAudiences.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_audiences, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IDependencies.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_dependencies, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IDistinction.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_distinction, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.ILayout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.About_layout, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.about.javamodel.IEAModMethod.class, cleon.architecturemethods.eamod.spec.eamod.chrv.about.AboutPackage.EAMod_aE_About_method, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -198,4 +195,4 @@ public class EAMod_About extends DynamicResource implements IEAMod_About {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,v0FV1s/20SZIdx3kyxoQgrHT8/o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06d0ff23-1406-11e9-a836-9d144e5bc2a5,+ZJy+xW8Nm0hwhJWRb/5RE1PYrc=] */

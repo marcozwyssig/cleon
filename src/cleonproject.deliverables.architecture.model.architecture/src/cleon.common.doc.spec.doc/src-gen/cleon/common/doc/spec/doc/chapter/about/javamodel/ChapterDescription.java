@@ -84,11 +84,9 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.ChapterDescription_abstractChapter, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -99,4 +97,4 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,Q+i5pJ8eXuuBtmh53rCsQsK3kyg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,LhkKAS4Vow/wmxLa5scpcS5aLC4=] */

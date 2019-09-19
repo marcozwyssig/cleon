@@ -73,7 +73,6 @@ public class Customer extends DynamicResource implements ICustomer {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class Customer extends DynamicResource implements ICustomer {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b8bd70d8-0221-11e9-b327-17da2da63a8f,C6xBU8s4QH63weTx+UyOOumDdKw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b8bd70d8-0221-11e9-b327-17da2da63a8f,NmeOH3SEUKMl1pTrMCJoAeLx5yY=] */

@@ -64,11 +64,10 @@ public class TestSuccess extends DynamicResource implements ITestSuccess {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,c69z0AKYK4rqqiDrVuCXI1PhD1c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c05894b0-1cf3-11e6-aaba-9db7fdc64d7e,yqIs+tqDj3AFcCNaD/1s8MSpAoQ=] */

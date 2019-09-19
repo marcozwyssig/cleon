@@ -123,13 +123,10 @@ public class InfrastructureProduct extends DynamicResource implements IInfrastru
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAssociation_associations, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.javamodel.ICluster.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.InfrastructureProduct_cluster, visitor);
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiComposite_composites, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IInfrastructureProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.InfrastructureProduct_dependsOn, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.javamodel.IInfrastractureProductVariety.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.InfrastructureProduct_varieties, visitor);
@@ -150,4 +147,4 @@ public class InfrastructureProduct extends DynamicResource implements IInfrastru
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c2b426c5-67bf-11e7-afcc-6df3a81a4d17,Oky7amiOX92aBExjCZcSUhjOI2I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c2b426c5-67bf-11e7-afcc-6df3a81a4d17,FljjMnN5F/W6xt0l3oybH3MQGWA=] */

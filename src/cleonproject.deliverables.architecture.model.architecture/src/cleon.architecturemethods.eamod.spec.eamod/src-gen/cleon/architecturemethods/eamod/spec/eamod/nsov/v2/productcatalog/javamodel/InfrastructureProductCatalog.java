@@ -74,9 +74,7 @@ public class InfrastructureProductCatalog extends DynamicResource implements IIn
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAggregation_aggregates, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.javamodel.IInfrastructureProductGroup.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.InfrastructureProductCatalog_infrastructureProductGroups, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.javamodel.IProductGroup.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.Catalog_productGroups, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -87,4 +85,4 @@ public class InfrastructureProductCatalog extends DynamicResource implements IIn
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,8aMQcUrQtnbmrQgG+HHG9Hvtlnw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,mGpADBNz6rK2pRhVVQi9iSE5hRg=] */

@@ -153,7 +153,6 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -162,7 +161,6 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConsideredAlternatives.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_consideredAlternatives, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IConstraints.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_constraints, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IDecision.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_decision, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamodel.IProblem.class, cleon.architecturemethods.arc42.spec.arc42._09_design_decisions._09_design_decisionsPackage.DecisionTopic_problem, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -191,4 +189,4 @@ public class DecisionTopic extends DynamicResource implements IDecisionTopic {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,U/mlbnaZwksqLLFdllsQR88lybM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,986AqZsj35VqXWFj+Tq4Bl/zd7Y=] */

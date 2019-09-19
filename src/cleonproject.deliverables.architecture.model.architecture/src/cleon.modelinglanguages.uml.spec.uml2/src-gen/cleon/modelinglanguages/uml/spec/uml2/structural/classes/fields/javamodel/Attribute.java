@@ -111,16 +111,14 @@ public class Attribute extends DynamicResource implements IAttribute {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_getter, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_setter, visitor);
     // relations
-    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.ReturnType_returnType, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18d801f4-e48c-11e2-a881-1f0b1c54f1d5,Lxf2WDuYwOJpiEWDFdEE1/h0YDo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,18d801f4-e48c-11e2-a881-1f0b1c54f1d5,U9NbHC5+2TLGu7RJsoYU/5EF7fA=] */

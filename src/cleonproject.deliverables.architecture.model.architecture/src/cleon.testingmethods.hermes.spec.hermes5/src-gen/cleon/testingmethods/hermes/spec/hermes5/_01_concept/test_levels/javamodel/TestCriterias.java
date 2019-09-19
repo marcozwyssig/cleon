@@ -154,13 +154,11 @@ public class TestCriterias extends DynamicResource implements ITestCriterias {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriteria.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestCriterias_acceptance, visitor);
     _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriteria.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestCriterias_cancelation, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriteria.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestCriterias_execution, visitor);
     _acceptList(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriteria.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestCriterias_finishing, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.javamodel.ITestCriteria.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_levels.Test_levelsPackage.TestCriterias_inputCriteria, visitor);
@@ -196,4 +194,4 @@ public class TestCriterias extends DynamicResource implements ITestCriterias {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3bda8f69-5155-11e9-bb61-971a423d31e9,4L0ugr46QLnD9/HZUlLfO95gQ8w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3bda8f69-5155-11e9-bb61-971a423d31e9,BkrIplusxcvB0WcGJ8N+gw5BE8U=] */

@@ -76,7 +76,6 @@ public class TargetPath extends DynamicResource implements ITargetPath {
     // relations
     _acceptList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.actifsource.ActifsourcePackage.TargetPath_buildConfigs, visitor);
     _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IResource.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.actifsource.ActifsourcePackage.TargetPath_resource, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,bhJuJ2qXlEawmAcCQroGokEBvQQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,t/QEUXWXKHGZTa+Zkox/RmHb3ec=] */

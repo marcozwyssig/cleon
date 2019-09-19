@@ -88,7 +88,6 @@ public class SourceWorkshop extends DynamicResource implements ISourceWorkshop {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.sources.SourcesPackage.SourceWorkshop_composites, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -99,4 +98,4 @@ public class SourceWorkshop extends DynamicResource implements ISourceWorkshop {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2054bb55-bb80-11e5-b2f7-f515c847fa35,6kXtlcdrg2zxN1+cv8sWGfUDCdc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2054bb55-bb80-11e5-b2f7-f515c847fa35,vUz2IASmtN4OKY1FHC07hgMb3ec=] */

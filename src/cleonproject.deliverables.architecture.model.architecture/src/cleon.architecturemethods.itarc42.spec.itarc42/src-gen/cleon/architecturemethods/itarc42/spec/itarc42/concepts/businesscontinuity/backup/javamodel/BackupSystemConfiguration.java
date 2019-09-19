@@ -104,13 +104,11 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_backupConfiguration, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -129,4 +127,4 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,ANMN6WEmc09OeFQVNnIhh6f0a+E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,5xzKR5dGNxIKJ9ldhZRJtGW7KNY=] */

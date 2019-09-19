@@ -78,7 +78,6 @@ public class EnumDekomposition extends DynamicResource implements IEnumDekomposi
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnum.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.EnumsPackage.EnumDekomposition_into, visitor);
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class EnumDekomposition extends DynamicResource implements IEnumDekomposi
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,jcmUE7J0GoOWAYW6ah3ZE/JF9bw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,5e+yUgwC7Ovggo84Wd1/zxECHuU=] */

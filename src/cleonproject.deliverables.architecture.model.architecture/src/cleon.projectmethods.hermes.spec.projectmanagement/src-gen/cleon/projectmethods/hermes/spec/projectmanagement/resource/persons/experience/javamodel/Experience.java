@@ -76,7 +76,6 @@ public class Experience extends DynamicResource implements IExperience {
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.javamodel.IMaturity.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.ExperiencePackage.Experience_maturity, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.skills.javamodel.ISkill.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.ExperiencePackage.Experience_skill, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class Experience extends DynamicResource implements IExperience {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ba27c0a-b509-11e5-aa95-235930e9af3d,marx6mSqnAoxnTgmGX0iVBbx5Mk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2ba27c0a-b509-11e5-aa95-235930e9af3d,joljvV83HpXY/HBFUUffKoQ3lo4=] */

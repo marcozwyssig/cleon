@@ -76,7 +76,6 @@ public class DisplayName extends DynamicResource implements IDisplayName {
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.naming.NamingPackage.DisplayName_class, visitor);
     _acceptSingle(ch.actifsource.core.selector.element.javamodel.ILinkSelector.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.naming.NamingPackage.DisplayName_selector, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class DisplayName extends DynamicResource implements IDisplayName {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4adca1c-11b2-11e9-9a7b-590a6369b499,KXhpeKqwY/csYCOO6JlwmNQh4Pw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4adca1c-11b2-11e9-9a7b-590a6369b499,TEsQIX1/EpJ9aqhTLOeHtv1zxL4=] */

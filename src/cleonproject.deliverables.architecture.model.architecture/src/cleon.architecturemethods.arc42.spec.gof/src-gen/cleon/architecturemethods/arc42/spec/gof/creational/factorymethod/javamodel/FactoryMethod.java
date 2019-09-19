@@ -76,7 +76,6 @@ public class FactoryMethod extends DynamicResource implements IFactoryMethod {
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_classifier, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.parameter.javamodel.IParameter.class, cleon.architecturemethods.arc42.spec.gof.creational.factorymethod.FactorymethodPackage.FactoryMethod_ctorArgs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class FactoryMethod extends DynamicResource implements IFactoryMethod {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,fcmoq1lCvwI0+MF7UlQaH17y+ko=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,5Oiy71V7k9rFeBU9enFepJebueM=] */

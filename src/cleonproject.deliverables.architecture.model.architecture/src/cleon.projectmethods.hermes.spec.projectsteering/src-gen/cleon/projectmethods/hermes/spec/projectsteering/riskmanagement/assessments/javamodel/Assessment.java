@@ -87,7 +87,6 @@ public class Assessment extends DynamicResource implements IAssessment {
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.action.javamodel.IAction.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.AssessmentsPackage.Assessment_actions, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.analysis.javamodel.IRiskAnalysis.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.AssessmentsPackage.Assessment_analysis, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.risks.javamodel.IRisk.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.AssessmentsPackage.Assessment_risk, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -106,4 +105,4 @@ public class Assessment extends DynamicResource implements IAssessment {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b557b98-324a-11e6-ab4d-73a9260c8088,kKc3O59EBqOaCwuTR4M1/lJrSQI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b557b98-324a-11e6-ab4d-73a9260c8088,dl3chxq1ydomSBfTd4r9wD6jewM=] */

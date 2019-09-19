@@ -87,7 +87,6 @@ public class ServiceUsage extends DynamicResource implements IServiceUsage {
     _acceptSingle(cleon.common.resources.spec.resources.availability.javamodel.IAvailabilityClassification.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceUsage_availabilityClassification, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IConfidentialityClassification.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceUsage_confidentialityClassification, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.javamodel.IService.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.nsov.usage.UsagePackage.ServiceUsage_service, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -106,4 +105,4 @@ public class ServiceUsage extends DynamicResource implements IServiceUsage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,ApvsMq8IYw0R6nTTbzrUMds2jUM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,R1no9nNGR165E1zy9ZxeI8cGqjo=] */

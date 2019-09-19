@@ -101,7 +101,6 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariant_itemNumber, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -116,4 +115,4 @@ public class ProductVariant extends DynamicResource implements IProductVariant {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,DrlK9lBi3Xoordv+0qID0f7YgBw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,bNPdCGZ1eyrejWFWaEZZQTayKQg=] */

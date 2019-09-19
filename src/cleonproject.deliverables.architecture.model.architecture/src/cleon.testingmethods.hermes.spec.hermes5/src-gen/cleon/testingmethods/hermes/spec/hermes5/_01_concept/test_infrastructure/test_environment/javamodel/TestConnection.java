@@ -65,7 +65,6 @@ public class TestConnection extends DynamicResource implements ITestConnection {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -76,4 +75,4 @@ public class TestConnection extends DynamicResource implements ITestConnection {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,C6iVVMLMrJOHOQ9QUxN+I5/KztQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,oLiyywVY/2ukX09hJBBA1Ab7fi4=] */

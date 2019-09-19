@@ -114,11 +114,8 @@ public class TestPlan extends DynamicResource implements ITestPlan {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITestScheduling.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.Test_planPackage.TestPlan_testScheduling, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scope.javamodel.ITestScope.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.Test_planPackage.TestPlan_testScope, visitor);
@@ -136,4 +133,4 @@ public class TestPlan extends DynamicResource implements ITestPlan {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bf93951-eabe-11e5-838a-6dbe7118dd11,o8I4EP+9jQZzbWIpOvFcBfrPVkQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bf93951-eabe-11e5-838a-6dbe7118dd11,4HJOR1GeIYnEPy/lVUYkLuzYV54=] */

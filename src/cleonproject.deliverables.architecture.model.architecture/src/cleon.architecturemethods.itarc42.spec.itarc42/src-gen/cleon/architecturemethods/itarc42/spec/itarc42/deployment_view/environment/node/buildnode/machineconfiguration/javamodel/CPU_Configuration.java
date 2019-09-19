@@ -87,7 +87,6 @@ public class CPU_Configuration extends DynamicResource implements ICPU_Configura
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICore.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_core, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.ICPU.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_cpu, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.CPU_aE_Configuration_machineConfiguration, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -106,4 +105,4 @@ public class CPU_Configuration extends DynamicResource implements ICPU_Configura
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,P+NClliu9Bd7Mm6Wy8uRJXA/Z7U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,fyMZflPXPCClqjFKtXjjogRe4I8=] */

@@ -130,8 +130,6 @@ public class Plugin extends DynamicResource implements IPlugin {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.DisplayName_displayName, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -148,4 +146,4 @@ public class Plugin extends DynamicResource implements IPlugin {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,mGMLz/hl4xs4itC15CPSpHrxB9g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,4bue+HEmeSl2+/8ut5ONlKGhQT4=] */

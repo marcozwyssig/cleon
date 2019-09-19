@@ -89,7 +89,6 @@ public class WeightingEvaluation extends DynamicResource implements IWeightingEv
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.WeightingEvaluation_criteria, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.evaluation.javamodel.IScore.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.WeightingEvaluation_score, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -104,4 +103,4 @@ public class WeightingEvaluation extends DynamicResource implements IWeightingEv
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,bkGlxnFfONrfFmH0YgjaYTVKTms=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f4013d4-3c1a-11e5-9962-cf3035adb922,KDhdGNKB0ulUtli++mEdlwGqSBI=] */

@@ -94,12 +94,10 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.AbstractCriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingPriority.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_priorityWeighting, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_requirementsManagement, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingSubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingRequirementManagementAggregate_subjectAreaAggregate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.WeightingPackage.WeightingCriteriaAggregateAware_weightingCriterias, visitor);
   }
 
   // toMeRelations
@@ -117,4 +115,4 @@ public class WeightingRequirementManagementAggregate extends DynamicResource imp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,zeFXOwHmwTU4Vv00hsSfbpQ2xR8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,410eee3c-14be-11e9-8da6-cf576bcae0a4,K2xbWcvVr/eGreuWYIfmbVqFew8=] */

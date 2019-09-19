@@ -78,9 +78,8 @@ public class ImportElement extends DynamicResource implements IImportElement {
     _acceptSingleAttribute(java.lang.String.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_xml__S_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_attribute, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5ef37ed7-3292-11e8-925e-0378e2266aa0,kcCzRqV6qNOgf6ZaUw/8lNDnxnQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5ef37ed7-3292-11e8-925e-0378e2266aa0,JyCFp901eqhTmyi+g4wVXyYVbds=] */

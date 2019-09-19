@@ -73,7 +73,6 @@ public class DelegateCommand extends DynamicResource implements IDelegateCommand
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class DelegateCommand extends DynamicResource implements IDelegateCommand
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,34Q1ZVPU8plhenwC4yDk9p2uvr8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,LWZtpNWxkrhPABh5+SvRuukKrOs=] */

@@ -82,8 +82,6 @@ public class ExternalInterface extends DynamicResource implements IExternalInter
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -91,4 +89,4 @@ public class ExternalInterface extends DynamicResource implements IExternalInter
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,48ea3d92-2662-11e6-ae54-e50d44645ae7,if+QRiOals73koUOqioOE0Hlv9w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,48ea3d92-2662-11e6-ae54-e50d44645ae7,tfYC0/K29eJrcwC6vlf028rlxps=] */

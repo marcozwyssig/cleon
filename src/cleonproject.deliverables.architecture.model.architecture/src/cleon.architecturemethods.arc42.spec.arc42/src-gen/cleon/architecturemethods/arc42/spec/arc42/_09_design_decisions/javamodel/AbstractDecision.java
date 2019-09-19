@@ -64,11 +64,10 @@ public class AbstractDecision extends DynamicResource implements IAbstractDecisi
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d2a5b34-ecdf-11e8-8149-8542373915bf,OorDXDF2wBpZQlulKXV0kPTBSSo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d2a5b34-ecdf-11e8-8149-8542373915bf,XGXi3UXduOFHofnMquaUD3hC78s=] */

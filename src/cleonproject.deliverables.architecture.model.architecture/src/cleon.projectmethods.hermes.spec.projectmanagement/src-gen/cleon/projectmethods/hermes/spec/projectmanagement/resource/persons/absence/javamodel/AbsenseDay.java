@@ -76,7 +76,6 @@ public class AbsenseDay extends DynamicResource implements IAbsenseDay {
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenseDay_day, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.javamodel.IAbsenseReason.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenseDay_reason, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class AbsenseDay extends DynamicResource implements IAbsenseDay {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d157be88-c4c8-11e5-8558-4b8affb7767c,3NqBSVz+oIGHu9Tc70vl8ikF0ow=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d157be88-c4c8-11e5-8558-4b8affb7767c,0Yo+/wwgUVqfh08xisAEpQ5Gnco=] */

@@ -73,7 +73,6 @@ public class ProductOptions extends DynamicResource implements IProductOptions {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class ProductOptions extends DynamicResource implements IProductOptions {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,EtXYsF2tld938teXyh29NcqagMk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,tsHfQSnL3Q2mEGUX3cvHKr1K5ME=] */

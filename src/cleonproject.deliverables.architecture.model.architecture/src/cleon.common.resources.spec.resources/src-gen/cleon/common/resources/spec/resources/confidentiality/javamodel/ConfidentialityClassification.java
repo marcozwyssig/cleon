@@ -73,7 +73,6 @@ public class ConfidentialityClassification extends DynamicResource implements IC
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -135,4 +134,4 @@ public class ConfidentialityClassification extends DynamicResource implements IC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,58a88265-c10e-11e6-8f58-ad3c6ee7602f,Jfqd+jf6ddA02FNR3Ixmv7pdkuU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,58a88265-c10e-11e6-8f58-ad3c6ee7602f,nlawPliZume9ObYcQ3CRoz0d2/Y=] */

@@ -84,7 +84,6 @@ public class ComponentDependency extends DynamicResource implements IComponentDe
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentWithPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentDependency_to, visitor);
@@ -98,4 +97,4 @@ public class ComponentDependency extends DynamicResource implements IComponentDe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,2rvAGXOxPAsQ1QKJ783iMFQ0DqE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cacbca2-ffc4-11e4-ac0a-959b440f987f,EuyEYLEEQ3pAC96P58HomW0Fa+0=] */

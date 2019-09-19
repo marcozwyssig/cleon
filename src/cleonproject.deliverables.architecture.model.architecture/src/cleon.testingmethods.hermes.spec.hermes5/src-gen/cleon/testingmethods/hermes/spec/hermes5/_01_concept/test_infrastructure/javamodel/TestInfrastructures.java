@@ -134,11 +134,8 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestDatas.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testDatas, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironments.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.Test_infrastructurePackage.TestInfrastructures_testEnvironments, visitor);
@@ -166,4 +163,4 @@ public class TestInfrastructures extends DynamicResource implements ITestInfrast
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,mLGQKv3XSbeprA5uEj9bCFSzJRw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b2de291a-20d7-11e6-9368-9172b77c2cff,q+uG9LOrCxY5h/Awf8hLShbqXnU=] */

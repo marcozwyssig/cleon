@@ -87,9 +87,8 @@ public class ImportOwnRelation extends DynamicResource implements IImportOwnRela
     _acceptSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractOwnImportRelation_discriminator, visitor);
     _acceptMap(cleon.applications.actifsource.spec.asrc2xml.javamodel.IImportClass.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractOwnImportRelation_mapCls, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IOwnRelation.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractOwnImportRelation_relation, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fb64e63-221f-11e8-8749-cb7f4d6924d3,4a/09/87nsM+5EyKPbu5Iq8y8fM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fb64e63-221f-11e8-8749-cb7f4d6924d3,Wa9tvppoz03xY5IRjQ2+QwrbENQ=] */

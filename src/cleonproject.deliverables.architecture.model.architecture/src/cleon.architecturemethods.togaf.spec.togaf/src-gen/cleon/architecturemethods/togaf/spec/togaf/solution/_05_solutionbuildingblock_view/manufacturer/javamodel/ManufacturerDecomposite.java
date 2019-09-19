@@ -88,8 +88,6 @@ public class ManufacturerDecomposite extends DynamicResource implements IManufac
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.javamodel.IManufacturer.class, cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.ManufacturerPackage.ManufacturerDecomposite_into, visitor);
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
-    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentCompositionDecomposite_intoComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -100,4 +98,4 @@ public class ManufacturerDecomposite extends DynamicResource implements IManufac
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b830d6f8-4372-11e6-a9d7-97cf4f7c398b,NwtzdpGwR2T4mslSRWGQNQ6l1Gs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b830d6f8-4372-11e6-a9d7-97cf4f7c398b,0AvaquMua6GrLKD6GIby7a5xR8Q=] */

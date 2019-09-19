@@ -89,7 +89,6 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
     // relations
     _acceptMap(cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.javamodel.ICapacityPerDay.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.SprintsPackage.PersonCapacity_capacityPerDay, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.SprintsPackage.PersonCapacity_person, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -104,4 +103,4 @@ public class PersonCapacity extends DynamicResource implements IPersonCapacity {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,YYfcM8VnES/YbD2aG7GwijVAXXs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,cxX8mcQ8B0Hlb1OLym76T13i6yo=] */

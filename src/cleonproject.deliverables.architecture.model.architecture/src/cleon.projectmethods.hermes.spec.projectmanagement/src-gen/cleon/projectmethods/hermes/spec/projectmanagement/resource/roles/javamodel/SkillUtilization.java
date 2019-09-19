@@ -76,7 +76,6 @@ public class SkillUtilization extends DynamicResource implements ISkillUtilizati
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.importance.javamodel.IImportance.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.roles.RolesPackage.SkillUtilization_importance, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.skills.javamodel.ISkill.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.roles.RolesPackage.SkillUtilization_skill, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class SkillUtilization extends DynamicResource implements ISkillUtilizati
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,Q1otKEtwV4YYxKWY/5mxqdXBxsc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d6b26118-b54a-11e5-bc0c-f35b68c3609a,NS8sNW5xwzA5iU3ZSuVbrFA83K0=] */

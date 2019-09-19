@@ -78,7 +78,6 @@ public class ServiceDecomposition extends DynamicResource implements IServiceDec
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IDomainService.class, cleon.architecturemethods.arc42.spec.ddd.services.ServicesPackage.ServiceDecomposition_into, visitor);
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class ServiceDecomposition extends DynamicResource implements IServiceDec
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,Ydx5oSq79tQ0oyJcuvHrgjzWeek=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f97926d2-266f-11e5-95dc-8f1cdbd9db54,Wf7fTL3nLA1LwBqO2APlYCc1pDg=] */

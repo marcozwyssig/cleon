@@ -78,7 +78,6 @@ public class ProductVariantOptions extends DynamicResource implements IProductVa
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariantOptions_amount, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductOptions.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductVariantOptions_productOptions, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class ProductVariantOptions extends DynamicResource implements IProductVa
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,400c0491-2ad9-11e9-b83f-8be423c00623,nBalc2N/dkW0vRmRfLPoo1J1cyo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,400c0491-2ad9-11e9-b83f-8be423c00623,U8GgHFzWPpF9C7Zpa6EMv6wmhMU=] */

@@ -128,7 +128,6 @@ public class Protocols extends DynamicResource implements IProtocols {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocols_protocols, visitor);
@@ -143,4 +142,4 @@ public class Protocols extends DynamicResource implements IProtocols {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,HCvLkFO3huu38Vm8Lloy5IV9i3A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,LotIkACwm4cuF1WfBLXmXP0DYeg=] */

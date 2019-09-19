@@ -172,17 +172,14 @@ public class DialogView extends DynamicResource implements IDialogView {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.ICustomEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_customEvents, visitor);
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEvent.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.EventClass_events, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.desktop.mvvm.javamodel.IView.class, cleon.architecturemethods.arc42.spec.desktop.mvvm.MvvmPackage.View_extends, visitor);
     _acceptMap(cleon.modelinglanguages.uml.spec.uml2.structural.classes.events.javamodel.IEventForField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.Class_fieldEvents, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.javamodel.IField.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.FieldClass_fields, visitor);
-    _acceptList(cleon.common.modularity.spec.buildingblock.javamodel.IDependency.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DependentBuildingBlock_hasDependency, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.IAssociation.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.AssociationClass_relations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -190,4 +187,4 @@ public class DialogView extends DynamicResource implements IDialogView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,BP0GaeQJCupWIuaf49bZ3fdVTC8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21e73f08-92f6-11e3-a63e-fb8038f76aec,a+bC20Zaac1JiAkV2YtMpJGY8rM=] */

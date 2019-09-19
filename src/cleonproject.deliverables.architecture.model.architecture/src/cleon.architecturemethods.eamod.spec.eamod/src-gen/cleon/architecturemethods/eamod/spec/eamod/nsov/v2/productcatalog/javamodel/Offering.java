@@ -107,7 +107,6 @@ public class Offering extends DynamicResource implements IOffering {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAggregation_aggregates, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.javamodel.IBaseProductCatalog.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.Offering_baseProductCatalog, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.javamodel.ICluster.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.Offering_clusters, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.javamodel.IInfrastructureProductCatalog.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.Offering_infrastructureProductCatalog, visitor);
@@ -134,4 +133,4 @@ public class Offering extends DynamicResource implements IOffering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,Nh/pMz6DmoLnpnM79yhMED/nu9o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,GKLEOkFAysvt5bDT32jx/dbC0wk=] */

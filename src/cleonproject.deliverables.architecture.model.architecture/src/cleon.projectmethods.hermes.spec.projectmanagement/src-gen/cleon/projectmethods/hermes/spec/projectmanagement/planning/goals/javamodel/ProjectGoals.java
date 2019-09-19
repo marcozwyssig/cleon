@@ -114,12 +114,9 @@ public class ProjectGoals extends DynamicResource implements IProjectGoals {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
-    _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IGoal.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.GoalsPackage.AbstractGoals_goals, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.javamodel.IProjectGoal.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.goals.GoalsPackage.ProjectGoals_projectGoals, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -132,4 +129,4 @@ public class ProjectGoals extends DynamicResource implements IProjectGoals {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f5d2463d-210d-11e8-9bf6-d910b575bad9,yrp6P5n/ddJ+XOZWJTSXnLkvvs4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f5d2463d-210d-11e8-9bf6-d910b575bad9,cnbTjV0L/wDgZ+NveMelTz+hayE=] */

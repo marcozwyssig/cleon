@@ -151,14 +151,12 @@ public class DefectFeatureGroup extends DynamicResource implements IDefectFeatur
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_plannedEstimate, visitor);
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.defect.javamodel.IDefect.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.DefectFeatureGroup_defects, visitor);
-    _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.javamodel.IWorkItem.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_items, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.javamodel.IPerson.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.BacklogPackage.WorkItem_owners, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.javamodel.IWorkItemGroup.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.featuregroup.FeaturegroupPackage.WorkItemGroup_preconditions, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.common.resources.spec.resources.priority.PriorityPackage.PriorityAware_priority, visitor);
@@ -173,4 +171,4 @@ public class DefectFeatureGroup extends DynamicResource implements IDefectFeatur
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d243a7a6-369e-11e5-95d9-2b04d7ab02d9,F4Ddt3VDY703yQTqtRv4KWwMPfg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d243a7a6-369e-11e5-95d9-2b04d7ab02d9,Fkftnb9OCXf0ZqhUMTz/kBuiw+8=] */

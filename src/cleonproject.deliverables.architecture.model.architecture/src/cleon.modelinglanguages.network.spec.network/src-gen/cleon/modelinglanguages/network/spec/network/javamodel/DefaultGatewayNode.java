@@ -84,13 +84,11 @@ public class DefaultGatewayNode extends DynamicResource implements IDefaultGatew
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2da8f90-7b84-11e9-94aa-f1ea7ea33f46,IR2o10dTQqEjd8QIPBkUl5jng5Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2da8f90-7b84-11e9-94aa-f1ea7ea33f46,VleM2uCDyWTu7pqlsLtDPf9PHyI=] */

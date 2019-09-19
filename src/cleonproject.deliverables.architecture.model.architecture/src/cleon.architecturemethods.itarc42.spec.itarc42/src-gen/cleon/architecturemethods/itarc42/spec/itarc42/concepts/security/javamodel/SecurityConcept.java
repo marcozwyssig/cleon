@@ -114,11 +114,8 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.SecurityPackage.SecurityConcept_rbac, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.realm.javamodel.IDirectoryService.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.SecurityPackage.SecurityConcept_realm, visitor);
@@ -136,4 +133,4 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,4QQZ6SFKbaZlAvJ/qQnc8WP0GJ0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,07qRso5Q26nh6lUhGib/Y1zLq0g=] */

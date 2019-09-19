@@ -73,7 +73,6 @@ public class NamedKnockoutCriteria extends DynamicResource implements INamedKnoc
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class NamedKnockoutCriteria extends DynamicResource implements INamedKnoc
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eafd7342-2028-11e9-83b3-a16e26b4cc59,OB548B0bxUaHS+WJYHyiIWuOHb0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eafd7342-2028-11e9-83b3-a16e26b4cc59,5jKfeQfg8bVY9Nx5AdqM7/V+D4M=] */

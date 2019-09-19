@@ -73,7 +73,6 @@ public class AvailabilityClassification extends DynamicResource implements IAvai
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -135,4 +134,4 @@ public class AvailabilityClassification extends DynamicResource implements IAvai
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,tdeqGw0YyZKip96Ub60Yifw8q+M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,We7I3D96e+qMWiIP0xFCfmjTOo0=] */

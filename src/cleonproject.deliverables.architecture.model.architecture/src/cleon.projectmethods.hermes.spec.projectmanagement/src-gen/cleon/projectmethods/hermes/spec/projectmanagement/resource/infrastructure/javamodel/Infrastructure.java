@@ -104,15 +104,13 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.resource.infrastructure.javamodel.IAsset.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.infrastructure.InfrastructurePackage.HasAssets_assets, visitor);
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5dd75f3f-c768-11e5-b3f9-43c5a0896ea1,n/5JBMccYfSRO7rmKaw27WVMhB4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5dd75f3f-c768-11e5-b3f9-43c5a0896ea1,YXMH+mUmZal2PVB6NrI6+YipBGw=] */

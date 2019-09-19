@@ -78,7 +78,6 @@ public class Year extends DynamicResource implements IYear {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.calendar.CalendarPackage.CalendarItem_identifier, visitor);
     // relations
     _acceptList(cleon.common.resources.spec.calendar.javamodel.IMonth.class, cleon.common.resources.spec.calendar.CalendarPackage.Year_months, visitor);
-    _acceptList(cleon.common.resources.spec.calendar.javamodel.ICalendarItem.class, cleon.common.resources.spec.calendar.CalendarPackage.CalendarItem_subCalendarItems, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class Year extends DynamicResource implements IYear {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56e29973-c37c-11e5-9455-d97b1b986284,JnqdemnB68SUXoMs7dCMR5cm10U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,56e29973-c37c-11e5-9455-d97b1b986284,33MuYdpw0Lhul1NWoNh/gGUnlPM=] */

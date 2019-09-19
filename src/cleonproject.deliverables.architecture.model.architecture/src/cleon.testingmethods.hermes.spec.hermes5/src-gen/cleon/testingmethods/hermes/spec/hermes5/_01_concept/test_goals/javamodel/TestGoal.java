@@ -82,7 +82,6 @@ public class TestGoal extends DynamicResource implements ITestGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -91,4 +90,4 @@ public class TestGoal extends DynamicResource implements ITestGoal {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fac27e3-1db4-11e6-974b-630b7f5d3b95,qf0nij5hpEYKJoBgyjIlE808gbw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fac27e3-1db4-11e6-974b-630b7f5d3b95,kKronvoZErEEQvICpExbOMPJOYc=] */

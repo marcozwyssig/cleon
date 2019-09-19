@@ -74,9 +74,7 @@ public class BaseProductCatalog extends DynamicResource implements IBaseProductC
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAggregation_aggregates, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.javamodel.IBaseProductGroup.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.BaseProductCatalog_baseProductGroups, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.javamodel.IProductGroup.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.ProductcatalogPackage.Catalog_productGroups, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -87,4 +85,4 @@ public class BaseProductCatalog extends DynamicResource implements IBaseProductC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,84ac0122-67c6-11e7-afcc-6df3a81a4d17,M34ojMKRz/u4PFpqNxDJOYu/K2o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,84ac0122-67c6-11e7-afcc-6df3a81a4d17,5ICSrYptIcjlmbaxr26b8jGX9TA=] */

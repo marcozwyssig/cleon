@@ -87,8 +87,6 @@ public class SystemConfigurationDecomposite extends DynamicResource implements I
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
-    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentCompositionDecomposite_intoComponent, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfigurationDecomposite_intoSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -100,4 +98,4 @@ public class SystemConfigurationDecomposite extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,Oxum07GQJp5BQLcbCZiIYlf5vTs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,NZ2f4TOItf+R6cPEI9UUk3K0h/U=] */

@@ -82,7 +82,6 @@ public class Stakeholder extends DynamicResource implements IStakeholder {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -91,4 +90,4 @@ public class Stakeholder extends DynamicResource implements IStakeholder {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a09805-06d7-11e6-8d3e-13e5be4bd43b,IMSt/RpcMQGmdWG8qsM4zRaE1H0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27a09805-06d7-11e6-8d3e-13e5be4bd43b,SEgsNKZm4MT9cbg9dtRf/H+RF5A=] */

@@ -88,7 +88,6 @@ public class KnockoutEvaluation extends DynamicResource implements IKnockoutEval
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.KnockoutEvaluation_fulfiils, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.javamodel.IKnockoutCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.evaluation.EvaluationPackage.KnockoutEvaluation_criteria, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -97,4 +96,4 @@ public class KnockoutEvaluation extends DynamicResource implements IKnockoutEval
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2344ed45-1fa7-11e9-ac4e-716424f48a26,QrdalGxZon3D0EAdGxuquuAbySo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2344ed45-1fa7-11e9-ac4e-716424f48a26,LgmBfDwQsvaETdKL3NGx0Khg3Wg=] */

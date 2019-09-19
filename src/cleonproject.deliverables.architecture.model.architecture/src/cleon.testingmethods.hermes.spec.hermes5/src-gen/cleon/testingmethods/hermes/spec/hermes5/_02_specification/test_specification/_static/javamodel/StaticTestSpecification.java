@@ -134,13 +134,9 @@ public class StaticTestSpecification extends DynamicResource implements IStaticT
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification.Test_specificationPackage.TestSpecification_testObject, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestQualityCriterias.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTestSpecification_testQualityCriteria, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static.javamodel.ITestSubjectArea.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._static._staticPackage.StaticTestSpecification_testSubjectAreas, visitor);
@@ -158,4 +154,4 @@ public class StaticTestSpecification extends DynamicResource implements IStaticT
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fa8377ef-1cef-11e6-aaba-9db7fdc64d7e,KCtLP8R7mdV9gT0lmBn0g5hL0VI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fa8377ef-1cef-11e6-aaba-9db7fdc64d7e,N6MfgZFc54dACpplqslaQS09Bf4=] */

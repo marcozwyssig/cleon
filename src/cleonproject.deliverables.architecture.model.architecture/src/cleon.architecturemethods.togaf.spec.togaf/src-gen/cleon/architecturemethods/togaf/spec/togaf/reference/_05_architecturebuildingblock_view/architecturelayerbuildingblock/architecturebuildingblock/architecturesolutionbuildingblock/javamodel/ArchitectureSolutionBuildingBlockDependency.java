@@ -84,7 +84,6 @@ public class ArchitectureSolutionBuildingBlockDependency extends DynamicResource
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock.class, cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.ArchitecturesolutionbuildingblockPackage.ArchitectureSolutionBuildingBlockDependency_to, visitor);
@@ -98,4 +97,4 @@ public class ArchitectureSolutionBuildingBlockDependency extends DynamicResource
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,+7iyG8hvBMxdidEPNtS/9E+zhAI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960874-3a07-11e6-a354-253097f89a49,8mCaakrMkFftCIwosS46kgUMWV4=] */

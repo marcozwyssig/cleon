@@ -65,9 +65,8 @@ public class StaticTestObject extends DynamicResource implements IStaticTestObje
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObject_deliverable, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cf5dabee-5165-11e9-bb61-971a423d31e9,oy7ZDRYdvR+O9Z3k30uof16Axy8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cf5dabee-5165-11e9-bb61-971a423d31e9,dPcNdG/7ssYyz8TqRuaT83sioZc=] */

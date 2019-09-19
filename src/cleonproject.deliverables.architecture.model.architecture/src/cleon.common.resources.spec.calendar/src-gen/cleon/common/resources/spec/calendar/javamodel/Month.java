@@ -78,7 +78,6 @@ public class Month extends DynamicResource implements IMonth {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.calendar.CalendarPackage.CalendarItem_identifier, visitor);
     // relations
     _acceptList(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.common.resources.spec.calendar.CalendarPackage.Month_days, visitor);
-    _acceptList(cleon.common.resources.spec.calendar.javamodel.ICalendarItem.class, cleon.common.resources.spec.calendar.CalendarPackage.CalendarItem_subCalendarItems, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class Month extends DynamicResource implements IMonth {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59aa44e4-c37c-11e5-9455-d97b1b986284,yaDMpP0vgWbZUgcZXc0N5a4pxxc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,59aa44e4-c37c-11e5-9455-d97b1b986284,fVN1X1EStNAOjHlmrYx8zpKHyBk=] */

@@ -82,7 +82,6 @@ public class TestTool extends DynamicResource implements ITestTool {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -91,4 +90,4 @@ public class TestTool extends DynamicResource implements ITestTool {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a6df05b-6762-11e9-9ec9-5fbc84faaeb1,TCLfggWZD71Ymymb0sPOfjeQC/M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3a6df05b-6762-11e9-9ec9-5fbc84faaeb1,msfNOYfA+WRh849FF9frKLsvO60=] */

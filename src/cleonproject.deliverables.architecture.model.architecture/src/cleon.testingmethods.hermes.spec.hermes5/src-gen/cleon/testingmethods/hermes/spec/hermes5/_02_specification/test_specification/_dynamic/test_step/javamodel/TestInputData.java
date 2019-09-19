@@ -74,7 +74,6 @@ public class TestInputData extends DynamicResource implements ITestInputData {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_data.javamodel.ITestData.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.Test_stepPackage.TestInputData_testData, visitor);
@@ -88,4 +87,4 @@ public class TestInputData extends DynamicResource implements ITestInputData {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffc72fa2-6727-11e9-9ec9-5fbc84faaeb1,VskDcNadwrwiA2vpvmWAJczgNT4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffc72fa2-6727-11e9-9ec9-5fbc84faaeb1,1rwVI1oFL6jbQI3Oz1H7UZ+CzJw=] */

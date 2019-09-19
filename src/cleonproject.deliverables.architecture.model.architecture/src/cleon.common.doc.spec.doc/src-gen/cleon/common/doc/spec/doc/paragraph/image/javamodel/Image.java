@@ -77,9 +77,8 @@ public class Image extends DynamicResource implements IImage {
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.spec.doc.paragraph.image.ImagePackage.Image_img, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,UQXMjYadsezw88cF/0TgapIsUqc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,0OX5znI2Yza6H3snxYe3VS7B0XY=] */

@@ -73,12 +73,10 @@ public class ActionAcceptance extends DynamicResource implements IActionAcceptan
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9b04662a-2f04-11e6-8bd9-a77b8d2a3a0e,/weS0LbFfo+KPRUsFUta8X/0nTU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9b04662a-2f04-11e6-8bd9-a77b8d2a3a0e,6OWg0gyUAGxJwW3oIdY9zQkyiCA=] */

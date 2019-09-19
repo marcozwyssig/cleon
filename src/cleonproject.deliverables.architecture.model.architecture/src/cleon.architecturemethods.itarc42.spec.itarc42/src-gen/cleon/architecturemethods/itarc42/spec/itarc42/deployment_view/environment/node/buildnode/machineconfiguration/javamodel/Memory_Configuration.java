@@ -76,7 +76,6 @@ public class Memory_Configuration extends DynamicResource implements IMemory_Con
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMachineSystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Memory_aE_Configuration_machineConfiguration, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.machine.javamodel.IMemory.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.MachineconfigurationPackage.Memory_aE_Configuration_memory, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class Memory_Configuration extends DynamicResource implements IMemory_Con
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b0d2a12-2b02-11e9-9692-65766bc2daa5,G7OtFURWlHowoHmaKmt9M6DdqLA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b0d2a12-2b02-11e9-9692-65766bc2daa5,V/HYSkl2hrGtVy/QY/IIajsW9ok=] */

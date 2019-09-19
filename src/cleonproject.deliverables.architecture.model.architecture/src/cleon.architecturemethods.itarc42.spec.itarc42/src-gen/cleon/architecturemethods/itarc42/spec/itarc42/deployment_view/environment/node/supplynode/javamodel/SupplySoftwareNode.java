@@ -121,17 +121,15 @@ public class SupplySoftwareNode extends DynamicResource implements ISupplySoftwa
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.SupplynodePackage.SupplySoftwareNode_type, visitor);
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.RootNode_buildNodes, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.Node_nodes, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11345063-0c32-11e9-83ba-4d57b06560a2,TM3yGPOiCHU8x35OPlaUJzSEJL0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,11345063-0c32-11e9-83ba-4d57b06560a2,bBzm7fV4so3M39VAiTqUz9I6iFs=] */

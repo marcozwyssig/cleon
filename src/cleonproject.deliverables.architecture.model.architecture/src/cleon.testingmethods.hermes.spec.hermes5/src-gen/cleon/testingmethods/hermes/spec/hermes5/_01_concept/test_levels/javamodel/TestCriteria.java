@@ -73,7 +73,6 @@ public class TestCriteria extends DynamicResource implements ITestCriteria {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class TestCriteria extends DynamicResource implements ITestCriteria {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4da4da41-5155-11e9-bb61-971a423d31e9,zP3MILFgQxWE/tB/9J5HPOqFFlM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4da4da41-5155-11e9-bb61-971a423d31e9,JqbGsbg8jigeYL3AVP5/sgQpRdQ=] */

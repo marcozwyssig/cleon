@@ -104,11 +104,9 @@ public class Experiences extends DynamicResource implements IExperiences {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.javamodel.IExperience.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.experience.ExperiencePackage.Experiences_experience, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -121,4 +119,4 @@ public class Experiences extends DynamicResource implements IExperiences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,mrKCWISR4czowHEbe/QdIBU4OXY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,sDbK9ExOz02mf1h9KFqLz6bSr4M=] */

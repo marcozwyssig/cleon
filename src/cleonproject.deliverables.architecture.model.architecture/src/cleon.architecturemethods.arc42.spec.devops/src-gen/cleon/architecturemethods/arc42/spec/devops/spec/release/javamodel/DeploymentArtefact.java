@@ -98,7 +98,6 @@ public class DeploymentArtefact extends DynamicResource implements IDeploymentAr
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.release.javamodel.IDeploymentArtefact.class, cleon.architecturemethods.arc42.spec.devops.spec.release.ReleasePackage.DeploymentArtefact_includes, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.release.javamodel.IPackageRepository.class, cleon.architecturemethods.arc42.spec.devops.spec.release.ReleasePackage.DeploymentArtefact_publishTo, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.devops.spec.release.javamodel.IDeploymentArtefact.class, cleon.architecturemethods.arc42.spec.devops.spec.release.ReleasePackage.DeploymentArtefact_references, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -121,4 +120,4 @@ public class DeploymentArtefact extends DynamicResource implements IDeploymentAr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15cb1207-4071-11e5-b5f0-5b1ce9c3de3e,7dJ4/hzf8xewMMIrxbCWQ2zevJc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15cb1207-4071-11e5-b5f0-5b1ce9c3de3e,PSXAReab+tPPRIUQKz014QgHia0=] */

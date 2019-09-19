@@ -148,7 +148,6 @@ public class Property extends DynamicResource implements IProperty {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_getter, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
@@ -158,7 +157,6 @@ public class Property extends DynamicResource implements IProperty {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_setter, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.association.javamodel.ICollectionType.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Property_asCollection, visitor);
-    _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.ReturnType_returnType, visitor);
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.fields.FieldsPackage.Field_type, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -170,4 +168,4 @@ public class Property extends DynamicResource implements IProperty {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,cU/yGcVpla8PoslO1WZyF+Blziw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,123c8e93-13ba-11e3-bec7-f1e135382475,E6cJH/ho1ddERA7Pag9WWa1GN/A=] */

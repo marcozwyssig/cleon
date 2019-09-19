@@ -92,8 +92,6 @@ public class ServiceClass extends DynamicResource implements IServiceClass {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.qos.QosPackage.ServiceClass_DSCP, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -245,4 +243,4 @@ public class ServiceClass extends DynamicResource implements IServiceClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af43badb-1d88-11e9-b601-db75aa6f89a4,bRqa1KX6P/BmdbsWhdhbOPqF0ds=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af43badb-1d88-11e9-b601-db75aa6f89a4,a02en9/FYK7yMcsVKFdP4MjfZBk=] */

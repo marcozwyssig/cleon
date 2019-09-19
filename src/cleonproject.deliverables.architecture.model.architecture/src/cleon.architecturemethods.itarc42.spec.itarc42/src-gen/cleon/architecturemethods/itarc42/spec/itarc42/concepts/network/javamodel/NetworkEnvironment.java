@@ -154,18 +154,13 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkEnvironment_environment, visitor);
     _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IGroup.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.GroupAware_groups, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkNetdomain.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkEnvironment_networkNetdomain, visitor);
-    _acceptList(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkAware_networks, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworks_range, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -180,4 +175,4 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,LoLw1ecgqSGsB0pe/zuFIDN+lt4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,BynUvWCyooiKZTJ8U117FDdGdO8=] */

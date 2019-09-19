@@ -87,7 +87,6 @@ public class NetworkDiagram extends DynamicResource implements INetworkDiagram {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkDiagram_path, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.modelinglanguages.network.spec.network.javamodel.IAbstractNetworks.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.NetworkDiagram_network, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -99,4 +98,4 @@ public class NetworkDiagram extends DynamicResource implements INetworkDiagram {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a6f94ec5-092f-11e9-8c40-11db3668c0c9,uRq3yZrxUePXU77OYrq2dOsVVd4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a6f94ec5-092f-11e9-8c40-11db3668c0c9,H0w1LONXaTBALA8FVhTlJjMBaXo=] */

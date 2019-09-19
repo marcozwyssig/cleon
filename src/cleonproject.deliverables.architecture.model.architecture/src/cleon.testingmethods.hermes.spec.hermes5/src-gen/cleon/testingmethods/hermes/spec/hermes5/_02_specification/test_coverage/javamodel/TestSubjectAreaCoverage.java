@@ -124,15 +124,12 @@ public class TestSubjectAreaCoverage extends DynamicResource implements ITestSub
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_coverage.javamodel.ITestRequirementCoverage.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_coverage.Test_coveragePackage.TestSubjectAreaCoverage_requirementCoverage, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.CoveragePackage.SubjectAreaCoverage_subjectArea, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -143,4 +140,4 @@ public class TestSubjectAreaCoverage extends DynamicResource implements ITestSub
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2498cbe6-5169-11e9-bb61-971a423d31e9,IyxX80NFw0iID7tlfMkYIDqM9Vs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2498cbe6-5169-11e9-bb61-971a423d31e9,N59Arn8Gi9qwTri8tyfqAaemVvQ=] */

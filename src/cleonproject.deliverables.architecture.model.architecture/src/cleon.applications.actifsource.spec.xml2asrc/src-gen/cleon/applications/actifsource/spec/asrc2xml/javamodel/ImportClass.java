@@ -98,7 +98,6 @@ public class ImportClass extends DynamicResource implements IImportClass {
     _acceptMap(cleon.applications.actifsource.spec.asrc2xml.javamodel.IImportAssociation.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapAssoc, visitor);
     _acceptMap(cleon.applications.actifsource.spec.asrc2xml.javamodel.IAbstractImportAttribute.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.ImportClass_mapAttr, visitor);
     _acceptMap(cleon.applications.actifsource.spec.asrc2xml.javamodel.IImportOwnRelation.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportClass_mapOwnRel, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -113,4 +112,4 @@ public class ImportClass extends DynamicResource implements IImportClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,+o8/EpKrFBK3aBYVoBmbfNb4byg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,UW0chjzZXGJHrfCJyIQf40SNDVM=] */

@@ -109,7 +109,6 @@ public class KeyProcess extends DynamicResource implements IKeyProcess {
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.unit.keyprocess.javamodel.IProductDevelopment.class, cleon.architecturemethods.org42.spec.epm.unit.keyprocess.KeyprocessPackage.KeyProcess_productDevelopment, visitor);
     _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
     _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_staff, visitor);
-    _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.javamodel.IOrganisationUnit.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -128,4 +127,4 @@ public class KeyProcess extends DynamicResource implements IKeyProcess {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bb7ed60-ba7c-11e3-9206-f19b78f4aff0,jh9UqBObe3R+AZ6Ala8AeJIQcXQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9bb7ed60-ba7c-11e3-9206-f19b78f4aff0,PoK90FDI/ySStCJfj+fY6RDS9dY=] */

@@ -93,12 +93,10 @@ public class DomainFlow_Out extends DynamicResource implements IDomainFlow_Out {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.domain.DomainPackage.DomainFlow_aE_Out_port_aE_Provider, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -109,4 +107,4 @@ public class DomainFlow_Out extends DynamicResource implements IDomainFlow_Out {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ac0190f-0523-11e9-95f7-3b0c47908608,T7xdW6hGw6//dVWrLlT2zBaX894=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ac0190f-0523-11e9-95f7-3b0c47908608,LSzcM8xqFRs2gdLT9ZxDA9Ys8w8=] */

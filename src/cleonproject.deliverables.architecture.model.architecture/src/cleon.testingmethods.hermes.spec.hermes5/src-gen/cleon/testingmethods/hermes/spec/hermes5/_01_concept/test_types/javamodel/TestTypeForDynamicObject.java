@@ -124,13 +124,9 @@ public class TestTypeForDynamicObject extends DynamicResource implements ITestTy
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.javamodel.ITestLevelForDynamicObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.Test_typesPackage.TestTypeForDynamicObject_testLevelForDynamicObject, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.ITestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_types.Test_typesPackage.TestTypeForDynamicObject_testObject, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -147,4 +143,4 @@ public class TestTypeForDynamicObject extends DynamicResource implements ITestTy
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90ed9e98-4fd9-11e9-96a9-f9ba7cff2393,AZMvreTd3YTmcHzvX+GSaJxvzNE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90ed9e98-4fd9-11e9-96a9-f9ba7cff2393,JmzPyDp4sy9Jtdbp0l6Y1zO/E5U=] */

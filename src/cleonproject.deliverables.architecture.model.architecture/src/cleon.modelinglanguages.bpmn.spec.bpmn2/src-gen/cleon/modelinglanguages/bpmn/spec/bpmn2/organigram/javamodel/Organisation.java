@@ -76,7 +76,6 @@ public class Organisation extends DynamicResource implements IOrganisation {
     // relations
     _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.javamodel.IOrganisationUnit.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.OrganigramPackage.Organisation_organisationUnit, visitor);
     _acceptMultiMap(cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganisation.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.OrganigramPackage.Organisation_subOrganisation, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class Organisation extends DynamicResource implements IOrganisation {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8700f148-daad-11e3-ae07-89aa80d5ec3d,Gw0ArTh9ly+jdTksrz6/VX1c6rs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8700f148-daad-11e3-ae07-89aa80d5ec3d,PffygHE7VzheiW04h0h1hE4x9Ok=] */

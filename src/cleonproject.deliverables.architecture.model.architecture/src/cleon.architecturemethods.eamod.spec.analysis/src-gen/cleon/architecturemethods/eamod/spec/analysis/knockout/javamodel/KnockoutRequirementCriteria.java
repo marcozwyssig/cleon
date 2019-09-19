@@ -65,7 +65,6 @@ public class KnockoutRequirementCriteria extends DynamicResource implements IKno
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementCriteria_requirement, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -76,4 +75,4 @@ public class KnockoutRequirementCriteria extends DynamicResource implements IKno
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda751-202f-11e9-83b3-a16e26b4cc59,ZQjJUK4V5rdcUAWnHE7rYI+NASM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda751-202f-11e9-83b3-a16e26b4cc59,gQS0lfU0/5pHg56dzCCefnX9zGQ=] */

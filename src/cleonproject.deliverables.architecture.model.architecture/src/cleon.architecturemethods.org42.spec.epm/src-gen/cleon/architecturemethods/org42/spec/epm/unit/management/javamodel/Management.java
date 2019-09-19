@@ -119,7 +119,6 @@ public class Management extends DynamicResource implements IManagement {
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.unit.management.javamodel.IPolticsAndStrategy.class, cleon.architecturemethods.org42.spec.epm.unit.management.ManagementPackage.Management_polticsAndStrategy, visitor);
     _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
     _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_staff, visitor);
-    _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.javamodel.IOrganisationUnit.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.unit.management.javamodel.IValuesAndCorperateGovernance.class, cleon.architecturemethods.org42.spec.epm.unit.management.ManagementPackage.Management_valuesAndCorperateGovernance, visitor);
   }
@@ -143,4 +142,4 @@ public class Management extends DynamicResource implements IManagement {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,ln+DFVwyN2Sf3rS4iF6OIBSQDeI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,ZhE96O38TT9sFvUPV6X/A8fmZjY=] */

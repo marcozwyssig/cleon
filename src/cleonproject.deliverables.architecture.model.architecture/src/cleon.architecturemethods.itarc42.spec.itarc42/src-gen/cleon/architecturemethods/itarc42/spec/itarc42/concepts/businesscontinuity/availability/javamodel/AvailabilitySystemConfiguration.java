@@ -94,12 +94,10 @@ public class AvailabilitySystemConfiguration extends DynamicResource implements 
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.javamodel.IAvailabilityConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_availability, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.availability.AvailabilityPackage.AvailabilitySystemConfiguration_systemConfiguration, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -114,4 +112,4 @@ public class AvailabilitySystemConfiguration extends DynamicResource implements 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,9I4CYPDxVWRBJUIfT67/RAhBl0o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,uwLxBWoieR6oUMMThFoaA0JeM/4=] */

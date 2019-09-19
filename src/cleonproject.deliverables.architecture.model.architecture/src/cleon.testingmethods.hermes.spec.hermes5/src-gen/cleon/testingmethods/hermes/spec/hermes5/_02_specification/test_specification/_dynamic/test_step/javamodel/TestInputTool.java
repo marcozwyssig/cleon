@@ -84,7 +84,6 @@ public class TestInputTool extends DynamicResource implements ITestInputTool {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_tools.javamodel.ITestTool.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.Test_stepPackage.TestInputTool_testTool, visitor);
@@ -99,4 +98,4 @@ public class TestInputTool extends DynamicResource implements ITestInputTool {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c024bfff-6a81-11e9-bd30-87fcf852dea7,RQpoRgJgt74uEwpxKDO1hZQfnSs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c024bfff-6a81-11e9-bd30-87fcf852dea7,p7Ca5YzmnqxwPbdRev1yi+mF1m0=] */

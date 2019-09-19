@@ -65,9 +65,8 @@ public class DynamicTestObject extends DynamicResource implements IDynamicTestOb
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObject_deliverable, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76aea0e-5165-11e9-bb61-971a423d31e9,mtHAiob6JNFYq9SS2kXPlSnh+uc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c76aea0e-5165-11e9-bb61-971a423d31e9,i9GxSx3EZg9kcBSLRJTosQyzegw=] */

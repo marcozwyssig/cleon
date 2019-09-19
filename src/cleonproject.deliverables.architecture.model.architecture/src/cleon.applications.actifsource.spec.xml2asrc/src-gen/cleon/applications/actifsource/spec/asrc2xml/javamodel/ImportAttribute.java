@@ -78,9 +78,8 @@ public class ImportAttribute extends DynamicResource implements IImportAttribute
     _acceptSingleAttribute(java.lang.String.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_xml__S_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IAttribute.class, cleon.applications.actifsource.spec.asrc2xml.Asrc2xmlPackage.AbstractImportAttribute_attribute, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,47c2c24d-3292-11e8-925e-0378e2266aa0,kM+hc9Pj5uvzB0hI+/lM+wy64YM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,47c2c24d-3292-11e8-925e-0378e2266aa0,A3Tm/Du9cGS/ZSXaWtHGM8Gam5I=] */

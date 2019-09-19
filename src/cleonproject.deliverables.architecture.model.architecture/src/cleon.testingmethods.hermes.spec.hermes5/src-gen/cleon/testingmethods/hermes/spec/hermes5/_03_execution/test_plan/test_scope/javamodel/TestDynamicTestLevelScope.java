@@ -75,7 +75,6 @@ public class TestDynamicTestLevelScope extends DynamicResource implements ITestD
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scope.javamodel.ITestDynamicGroup.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_testDynamicGroup, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -91,4 +90,4 @@ public class TestDynamicTestLevelScope extends DynamicResource implements ITestD
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b35d2498-918e-11e9-85e6-a377d9035ee3,S7NgA0hv4M7o0Ol0/jbY7Mz8J/M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b35d2498-918e-11e9-85e6-a377d9035ee3,oe6YMjyEosW+nIen0rIGt9P1L9A=] */

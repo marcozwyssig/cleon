@@ -82,8 +82,6 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.SprintsPackage.SprintGoal_goalDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -91,4 +89,4 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,/Rfk0U1+QVFVYylVfHNTIClgy+8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,X5jfE1425rfnPIcTFOtyP2djvec=] */

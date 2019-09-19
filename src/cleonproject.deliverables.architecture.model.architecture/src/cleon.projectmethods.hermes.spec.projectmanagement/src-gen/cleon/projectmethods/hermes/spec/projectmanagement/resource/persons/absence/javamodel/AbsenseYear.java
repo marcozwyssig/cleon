@@ -75,7 +75,6 @@ public class AbsenseYear extends DynamicResource implements IAbsenseYear {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptMap(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.javamodel.IAbsenceMonth.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenseYear_absenseMonth, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IYear.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenseYear_year, visitor);
   }
@@ -91,4 +90,4 @@ public class AbsenseYear extends DynamicResource implements IAbsenseYear {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c661b9c8-c4c6-11e5-8558-4b8affb7767c,AqiBgmHB77Nk7xSB8UwAwDvwcJY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c661b9c8-c4c6-11e5-8558-4b8affb7767c,xrLC3zvJC6TQA0HVFOPx3Kqe+GI=] */

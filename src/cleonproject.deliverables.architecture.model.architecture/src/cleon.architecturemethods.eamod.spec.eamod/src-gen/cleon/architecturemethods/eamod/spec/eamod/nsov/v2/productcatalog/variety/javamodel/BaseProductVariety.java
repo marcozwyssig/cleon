@@ -78,7 +78,6 @@ public class BaseProductVariety extends DynamicResource implements IBaseProductV
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.VarietyPackage.Variety_key, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.javamodel.IInfrastractureProductVariety.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.VarietyPackage.BaseProductVariety_infrastractureProductVariety, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class BaseProductVariety extends DynamicResource implements IBaseProductV
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,26bbf5b0-67c5-11e7-afcc-6df3a81a4d17,8veQBQMz1L6xgfD0boCyW0iJGEY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,26bbf5b0-67c5-11e7-afcc-6df3a81a4d17,7omfL3OSR4HIuKMWJ9sYOIE+PLo=] */

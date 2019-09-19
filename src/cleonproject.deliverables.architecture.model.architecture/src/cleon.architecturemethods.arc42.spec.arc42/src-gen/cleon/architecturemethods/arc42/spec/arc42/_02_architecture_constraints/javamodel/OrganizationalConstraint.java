@@ -73,7 +73,6 @@ public class OrganizationalConstraint extends DynamicResource implements IOrgani
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -81,4 +80,4 @@ public class OrganizationalConstraint extends DynamicResource implements IOrgani
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6f2152e-eaa8-11e8-88d3-bfc6b992bdec,k10O3/PuqMpmrSKFVDo1pnjCfWU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e6f2152e-eaa8-11e8-88d3-bfc6b992bdec,HfPut4xeJezjeFGxLraKAjmhMHw=] */

@@ -91,10 +91,8 @@ public class SystemStage extends DynamicResource implements ISystemStage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.ShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SystemStage_shortSystemName, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -185,4 +183,4 @@ public class SystemStage extends DynamicResource implements ISystemStage {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21bbfa64-bfea-11e8-a3d0-5394fd9291a1,gliftU0hA84qDE400ib4/Dlmir0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21bbfa64-bfea-11e8-a3d0-5394fd9291a1,9UFPCkRbAHUmY+y8bOMLlCU+iNU=] */

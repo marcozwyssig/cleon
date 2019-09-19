@@ -134,15 +134,10 @@ public class DynamicTestExecutionList extends DynamicResource implements IDynami
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic.javamodel.IDynamicTestExecution.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecutionList_dynamicTestExecution, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._03_execution.test_plan.test_scheduling.javamodel.ITester.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution._dynamic._dynamicPackage.DynamicTestExecutionList_tester, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -158,4 +153,4 @@ public class DynamicTestExecutionList extends DynamicResource implements IDynami
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25396337-90e1-11e9-b8c5-7968e3120b73,KzbxJtXAL3nYCmyTU+yQfzfjHu4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25396337-90e1-11e9-b8c5-7968e3120b73,086pKc1kdxR+X4KZOOTNNfh40lA=] */

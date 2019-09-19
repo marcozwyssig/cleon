@@ -73,12 +73,10 @@ public class ActionReduction extends DynamicResource implements IActionReduction
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,84762adb-2f04-11e6-8bd9-a77b8d2a3a0e,YqZOVf7MP0n6HoxSglAYPPPQRwk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,84762adb-2f04-11e6-8bd9-a77b8d2a3a0e,q/OL8JItEKpRemqcSjFPF+hLSDc=] */

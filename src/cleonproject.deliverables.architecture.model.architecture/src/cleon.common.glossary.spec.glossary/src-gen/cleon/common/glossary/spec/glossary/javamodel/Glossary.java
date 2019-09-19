@@ -104,11 +104,9 @@ public class Glossary extends DynamicResource implements IGlossary {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.common.glossary.spec.glossary.javamodel.ITerm.class, cleon.common.glossary.spec.glossary.GlossaryPackage.Glossary_terms, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -121,4 +119,4 @@ public class Glossary extends DynamicResource implements IGlossary {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cdaa198-0c87-11e6-86c5-87a8b520dd59,2uyIBVs2eLZw5JjA2jz7Xo2+UPo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7cdaa198-0c87-11e6-86c5-87a8b520dd59,7z45jeXET7EBETt8eL14I5cRLUg=] */

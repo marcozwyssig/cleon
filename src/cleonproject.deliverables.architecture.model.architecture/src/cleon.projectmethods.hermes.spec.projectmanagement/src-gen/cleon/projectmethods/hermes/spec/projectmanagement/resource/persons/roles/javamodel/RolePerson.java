@@ -65,7 +65,6 @@ public class RolePerson extends DynamicResource implements IRolePerson {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.resource.roles.javamodel.IRole.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.roles.RolesPackage.RolePerson_role, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -76,4 +75,4 @@ public class RolePerson extends DynamicResource implements IRolePerson {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,464eda4e-bb5f-11e8-921b-c1cf01226512,xzOMn6+kteyS8GP0v6X5aQOb+Qg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,464eda4e-bb5f-11e8-921b-c1cf01226512,K2FOGTsGfJHlQXBbHTaFtBPZndM=] */

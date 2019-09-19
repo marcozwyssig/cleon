@@ -94,12 +94,10 @@ public class NetworkNode extends DynamicResource implements INetworkNode {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.spec.network.NetworkPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.NetworkPackage.NetworkNode_node, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -110,4 +108,4 @@ public class NetworkNode extends DynamicResource implements INetworkNode {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb84db3b-7ae6-11e9-a70f-4dc03941a024,yv6B9jDFtUOvLSHB6ZcdTbgvwOM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb84db3b-7ae6-11e9-a70f-4dc03941a024,c+zGnv09OTh5dKGLhp7clt+KEKI=] */

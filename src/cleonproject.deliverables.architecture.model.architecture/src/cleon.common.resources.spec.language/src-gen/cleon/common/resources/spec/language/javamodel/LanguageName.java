@@ -78,7 +78,6 @@ public class LanguageName extends DynamicResource implements ILanguageName {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.language.javamodel.ILanguage.class, cleon.common.resources.spec.language.LanguagePackage.LanguageName_language, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class LanguageName extends DynamicResource implements ILanguageName {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,qj+wXOP3SFGJq6LRht0ouXIoGLI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,jc0hqpIo7ytNU3jzYqjaG3n8oUE=] */

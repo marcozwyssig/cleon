@@ -114,12 +114,9 @@ public class Repository extends DynamicResource implements IRepository {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.javamodel.IInterfaceData.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.interfaces.InterfacesPackage.AbstractInterface_data, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.architecturemethods.arc42.spec.ddd.repository.RepositoryPackage.Repository_getBy, visitor);
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.MethodPackage.MethodClass_methods, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity.class, cleon.architecturemethods.arc42.spec.ddd.repository.RepositoryPackage.Repository_search, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.classes.method.javamodel.IMethod.class, cleon.architecturemethods.arc42.spec.ddd.repository.RepositoryPackage.Repository_searchBy, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -140,4 +137,4 @@ public class Repository extends DynamicResource implements IRepository {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,gyZr0OQbKmq6nJry3aPsjTQnlQo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e627f84-10c2-11e3-b60e-ab478a3e1eca,3GcnN8LrDq3QqjPmiMjwn/QJiqQ=] */

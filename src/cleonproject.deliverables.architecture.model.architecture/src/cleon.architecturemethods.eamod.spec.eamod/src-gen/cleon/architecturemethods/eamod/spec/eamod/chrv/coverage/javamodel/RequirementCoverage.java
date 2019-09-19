@@ -94,12 +94,10 @@ public class RequirementCoverage extends DynamicResource implements IRequirement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.CoveragePackage.RequirementCoverage_requirement, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.javamodel.IRequirementCover.class, cleon.architecturemethods.eamod.spec.eamod.chrv.coverage.CoveragePackage.RequirementCoverage_requirementCoverages, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -114,4 +112,4 @@ public class RequirementCoverage extends DynamicResource implements IRequirement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,tQE8JOealL8UqiumMyJDZoQ7Qk8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,CFiCqA2DvNE1TTv+1CBvf4Xq+eI=] */

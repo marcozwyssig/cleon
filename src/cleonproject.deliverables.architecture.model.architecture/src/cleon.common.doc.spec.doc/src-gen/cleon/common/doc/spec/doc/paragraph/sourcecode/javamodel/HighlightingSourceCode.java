@@ -77,7 +77,6 @@ public class HighlightingSourceCode extends DynamicResource implements IHighligh
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.paragraph.sourcecode.SourcecodePackage.SourceCode_code, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, visitor);
     _acceptSingle(ch.actifsource.core.selector.language.javamodel.ILanguage.class, cleon.common.doc.spec.doc.paragraph.sourcecode.SourcecodePackage.HighlightingSourceCode_language, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -89,4 +88,4 @@ public class HighlightingSourceCode extends DynamicResource implements IHighligh
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,45ade837-466e-11e5-ba74-cb2e95044e1c,4iU/Y3xjrMUfNfH8If69K2OMAIE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,45ade837-466e-11e5-ba74-cb2e95044e1c,y4JT9OL9edJ0cgRZin22pLpAiSc=] */

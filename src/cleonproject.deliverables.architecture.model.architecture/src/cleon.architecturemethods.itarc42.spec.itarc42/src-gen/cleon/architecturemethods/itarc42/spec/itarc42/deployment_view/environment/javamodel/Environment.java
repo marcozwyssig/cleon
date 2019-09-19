@@ -223,14 +223,11 @@ public class Environment extends DynamicResource implements IEnvironment {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.RootNode_buildNodes, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.naming.javamodel.IDisplayNameStrategy.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_displayStrategy, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_1, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_2, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_3, visitor);
@@ -239,7 +236,6 @@ public class Environment extends DynamicResource implements IEnvironment {
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_6, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_7, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.EnvironmentPackage.Environment_level_aE_8, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.Node_nodes, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -284,4 +280,4 @@ public class Environment extends DynamicResource implements IEnvironment {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,bz6ot9HwQTgsI8k4V6gp3dlkNMk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,+kubxDn6EDtLKG5ikW2P9PERYcE=] */

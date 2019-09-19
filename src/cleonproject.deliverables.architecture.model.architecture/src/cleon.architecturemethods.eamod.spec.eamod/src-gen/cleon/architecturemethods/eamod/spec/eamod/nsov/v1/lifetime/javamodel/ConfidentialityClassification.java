@@ -76,7 +76,6 @@ public class ConfidentialityClassification extends DynamicResource implements IC
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IConfidentialityClassification.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.LifetimePackage.ConfidentialityClassification_confidentialityClassification, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.javamodel.IServiceLifetime.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v1.lifetime.LifetimePackage.LifetimeAware_lifetime, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -87,4 +86,4 @@ public class ConfidentialityClassification extends DynamicResource implements IC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ca23724e-c6cb-11e6-8242-2f0ed6756d77,NiNQyLdt5Dw7qzaO93bRiLNkdcM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ca23724e-c6cb-11e6-8242-2f0ed6756d77,C+Y930Xhf1fyiU4VLWeZYzQorhA=] */

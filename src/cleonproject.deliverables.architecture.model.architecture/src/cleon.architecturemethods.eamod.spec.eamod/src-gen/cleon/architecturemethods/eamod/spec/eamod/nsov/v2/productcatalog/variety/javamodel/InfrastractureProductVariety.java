@@ -157,7 +157,6 @@ public class InfrastractureProductVariety extends DynamicResource implements IIn
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.VarietyPackage.InfrastractureProductVariety_availability, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.VarietyPackage.InfrastractureProductVariety_confidentiality, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.VarietyPackage.InfrastractureProductVariety_costmanager, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
@@ -183,4 +182,4 @@ public class InfrastractureProductVariety extends DynamicResource implements IIn
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,nGynTwXNHB9dH0b6utNLHCmE8YM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,+ywyI7qmo7yjquJcMAHJCjBOnmk=] */

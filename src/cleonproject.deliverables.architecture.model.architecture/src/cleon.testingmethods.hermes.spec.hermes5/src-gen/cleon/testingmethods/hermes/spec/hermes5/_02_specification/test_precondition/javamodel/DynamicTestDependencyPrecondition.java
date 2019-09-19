@@ -74,7 +74,6 @@ public class DynamicTestDependencyPrecondition extends DynamicResource implement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.DynamicTestDependencyPrecondition_dependsOn, visitor);
@@ -88,4 +87,4 @@ public class DynamicTestDependencyPrecondition extends DynamicResource implement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c622a80-7168-11e9-98e0-2719d32d2629,N6fc4bRfLVS2SwHHHUqZ7ygGGSQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c622a80-7168-11e9-98e0-2719d32d2629,xs9xfNfog0xklGsFy1eHa65XMUI=] */

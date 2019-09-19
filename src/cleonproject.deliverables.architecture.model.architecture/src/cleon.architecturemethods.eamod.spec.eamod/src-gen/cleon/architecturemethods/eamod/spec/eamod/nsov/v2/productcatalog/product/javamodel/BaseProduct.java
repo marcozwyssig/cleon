@@ -103,11 +103,9 @@ public class BaseProduct extends DynamicResource implements IBaseProduct {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_composites, visitor);
     _acceptMultiMap(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IInfrastructureProductUsage.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_infrastructureProductUsage, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.BaseProduct_options, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -128,4 +126,4 @@ public class BaseProduct extends DynamicResource implements IBaseProduct {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,g6gFD/jfyMS7GPN1T3trIwxRBkQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf1a3670-67bf-11e7-afcc-6df3a81a4d17,Kl7dL3cWTX/vgJH0AtegB//wkxs=] */

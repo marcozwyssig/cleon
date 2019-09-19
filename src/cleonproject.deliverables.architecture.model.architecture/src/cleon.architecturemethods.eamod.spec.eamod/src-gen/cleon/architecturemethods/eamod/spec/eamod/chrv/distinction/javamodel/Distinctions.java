@@ -114,11 +114,8 @@ public class Distinctions extends DynamicResource implements IDistinctions {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.outofscope.javamodel.IOutOfScopes.class, cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.DistinctionPackage.Distinctions_outofscope, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.supply.javamodel.ISupplies.class, cleon.architecturemethods.eamod.spec.eamod.chrv.distinction.DistinctionPackage.Distinctions_supply, visitor);
@@ -136,4 +133,4 @@ public class Distinctions extends DynamicResource implements IDistinctions {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e94265a9-0e1a-11e6-ae01-ef640c578b9b,NE0wTflqH3PmZtMvWXylm8qlkt0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e94265a9-0e1a-11e6-ae01-ef640c578b9b,8DGBXdtySU9NohGo0rXHS8Hqas0=] */

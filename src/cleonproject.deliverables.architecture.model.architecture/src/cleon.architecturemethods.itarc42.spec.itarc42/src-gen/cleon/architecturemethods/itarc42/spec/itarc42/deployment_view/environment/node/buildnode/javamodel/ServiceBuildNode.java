@@ -163,7 +163,6 @@ public class ServiceBuildNode extends DynamicResource implements IServiceBuildNo
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -171,13 +170,11 @@ public class ServiceBuildNode extends DynamicResource implements IServiceBuildNo
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_cpu, visitor);
     _acceptMultiMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_disk, visitor);
     _acceptMap(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_memory, visitor);
-    _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.Node_nodes, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_productVariants, visitor);
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,DqAUUTeYiRmeZRl/S7rvBTrdWpo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,QLwP7XamJG5pzgjcp1tRCuVEwx8=] */

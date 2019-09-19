@@ -54,7 +54,6 @@ public class XmlAttribute extends DynamicResource implements IXmlAttribute {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.common.xml.spec.xml.javamodel.IXmlNode.class, cleon.common.xml.spec.xml.XmlPackage.XmlAttribute_nodes, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -65,4 +64,4 @@ public class XmlAttribute extends DynamicResource implements IXmlAttribute {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ac013f5d-2a25-11e9-b49d-072e4afacfc7,pNhOyg4DqFexilLXPPNYmPIIAEw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ac013f5d-2a25-11e9-b49d-072e4afacfc7,g0+zW8t+gBvxUC1r25b7bY5e1C0=] */

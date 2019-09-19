@@ -76,7 +76,6 @@ public class EnvironmentAwareDeploymentArtefact extends DynamicResource implemen
     // relations
     _acceptMultiMap(cleon.architecturemethods.arc42.spec.devops.spec.release.javamodel.IDeploymentArtefact.class, cleon.architecturemethods.arc42.spec.devops.spec.release.ReleasePackage.HasDeploymentArtefact_deploymentArtefacts, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.devops.spec.deploy.javamodel.IEnvironment.class, cleon.architecturemethods.arc42.spec.devops.spec.release.ReleasePackage.EnvironmentAwareDeploymentArtefact_environment, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -87,4 +86,4 @@ public class EnvironmentAwareDeploymentArtefact extends DynamicResource implemen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35611355-4507-11e5-84bb-b76bc2368798,kKTfAXkaIAsf8awonZ2swNmlh9A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,35611355-4507-11e5-84bb-b76bc2368798,IDwwwcbnT/WiJuKzuoBuRB58xKM=] */

@@ -131,7 +131,6 @@ public class Resource extends DynamicResource implements IResource {
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.unit.resource.javamodel.IQualityManagement.class, cleon.architecturemethods.org42.spec.epm.unit.resource.ResourcePackage.Resource_qualityManagement, visitor);
     _acceptSingle(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_responsible, visitor);
     _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.role.javamodel.IRole.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationUnit_staff, visitor);
-    _acceptList(cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.javamodel.IOrganisationUnit.class, cleon.modelinglanguages.bpmn.spec.bpmn2.organisational.unit.UnitPackage.OrganisationGroup_subOrganisations, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -158,4 +157,4 @@ public class Resource extends DynamicResource implements IResource {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9ebfbca0-bb6a-11e3-bf59-6b10d9dd6d36,0EUytutpZ4gSymt84UyMG3Fynzk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9ebfbca0-bb6a-11e3-bf59-6b10d9dd6d36,r5s4ytmpo6TedaE8NhGTT85F2OQ=] */

@@ -92,7 +92,6 @@ public class TestFailure extends DynamicResource implements ITestFailure {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestFailure_failureReason, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.spec.hermes5._03_execution.test_execution.Test_executionPackage.TestFailure_ticketId, visitor);
@@ -106,4 +105,4 @@ public class TestFailure extends DynamicResource implements ITestFailure {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,w6R5lqDQL1E1i/rKlNhmxj/dxFw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c78ee45d-1cf3-11e6-aaba-9db7fdc64d7e,Wecu9pQ0bLlG18IBIi228m5seqA=] */

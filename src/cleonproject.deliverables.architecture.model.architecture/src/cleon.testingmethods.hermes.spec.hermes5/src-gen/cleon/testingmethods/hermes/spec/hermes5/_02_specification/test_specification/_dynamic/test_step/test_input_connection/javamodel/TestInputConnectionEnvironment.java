@@ -74,7 +74,6 @@ public class TestInputConnectionEnvironment extends DynamicResource implements I
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_testEnvironment, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_useConnection, visitor);
@@ -91,4 +90,4 @@ public class TestInputConnectionEnvironment extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f47fb47-6d6d-11e9-b84d-d319514e887f,9yIvLBM8lLWP4y0lWQ37QcwkP64=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f47fb47-6d6d-11e9-b84d-d319514e887f,eEhg3sXCczA0Xr3x5CqdcL9zaxA=] */

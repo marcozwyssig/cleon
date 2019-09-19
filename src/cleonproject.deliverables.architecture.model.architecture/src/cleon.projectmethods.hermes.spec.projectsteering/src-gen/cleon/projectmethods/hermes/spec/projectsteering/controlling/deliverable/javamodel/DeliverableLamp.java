@@ -74,7 +74,6 @@ public class DeliverableLamp extends DynamicResource implements IDeliverableLamp
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.javamodel.IDeliverableLampState.class, cleon.projectmethods.hermes.spec.projectsteering.controlling.deliverable.DeliverablePackage.DeliverableLamp_state, visitor);
@@ -88,4 +87,4 @@ public class DeliverableLamp extends DynamicResource implements IDeliverableLamp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,779caf13-3386-11e6-b251-57783f5929b3,V7V/ih+qO290arfo2UsLBxOHUSc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,779caf13-3386-11e6-b251-57783f5929b3,SJ77+7Yoz1NkbsZsPsoYM+c9xZs=] */

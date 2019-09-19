@@ -82,8 +82,6 @@ public class ImpactType extends DynamicResource implements IImpactType {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -91,4 +89,4 @@ public class ImpactType extends DynamicResource implements IImpactType {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e,+YH1ABsT54C5tUxz9WetExkdzSw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e,HQpCjjxK7dJlqsU5zSQhovrmXJs=] */

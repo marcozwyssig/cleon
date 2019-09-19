@@ -94,12 +94,9 @@ public class WeightingSubjectAreaAggregate extends DynamicResource implements IW
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.AbstractCriteriaAggregateAware_criterias, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.weighting.javamodel.IWeightingRequirementCriteria.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingSubjectAreaAggregate_requirementCriterias, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.requirements.subjectareas.javamodel.ISubSubjectArea.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingSubjectAreaAggregate_subSubjectArea, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.javamodel.IWeightingCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.WeightingPackage.WeightingCriteriaAggregateAware_weightingCriterias, visitor);
   }
 
   // toMeRelations
@@ -113,4 +110,4 @@ public class WeightingSubjectAreaAggregate extends DynamicResource implements IW
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,087/QL4fraA0Rc/qoX6UMK4fnas=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e2f32b0-a6f8-11e8-9c81-8bd68c62e435,UNS4fw3zDAk4ul+F4VF6AbqiYfI=] */

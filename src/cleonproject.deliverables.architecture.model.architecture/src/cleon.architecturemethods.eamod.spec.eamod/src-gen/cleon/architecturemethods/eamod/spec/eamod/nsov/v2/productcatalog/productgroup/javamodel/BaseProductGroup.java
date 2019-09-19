@@ -87,9 +87,7 @@ public class BaseProductGroup extends DynamicResource implements IBaseProductGro
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAggregation_aggregates, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IBaseProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.ProductgroupPackage.BaseProductGroup_baseProducts, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.ProductgroupPackage.ProductGroup_products, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -100,4 +98,4 @@ public class BaseProductGroup extends DynamicResource implements IBaseProductGro
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3dfe296-67c8-11e7-afcc-6df3a81a4d17,SuyurQyogdfyZCHb0lDwM3kcVuM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3dfe296-67c8-11e7-afcc-6df3a81a4d17,PUGrULGHebXctYQTxHs2B0jUSNg=] */

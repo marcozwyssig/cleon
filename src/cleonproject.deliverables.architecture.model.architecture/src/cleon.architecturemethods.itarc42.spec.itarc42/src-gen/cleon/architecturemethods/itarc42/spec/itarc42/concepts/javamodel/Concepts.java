@@ -144,12 +144,9 @@ public class Concepts extends DynamicResource implements IConcepts {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.ConceptsPackage.Concepts_businessContinuity, visitor);
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.ConceptsPackage.Concepts_network, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.qos.javamodel.IQoS_Concept.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.ConceptsPackage.Concepts_qos, visitor);
@@ -181,4 +178,4 @@ public class Concepts extends DynamicResource implements IConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,mVX9ZdOtenBOWVBnv3IJ2UrzaRY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,F9nwj/WaFHZirNwz5Rvr2mZpH8k=] */

@@ -78,7 +78,6 @@ public class CapacityPerDay extends DynamicResource implements ICapacityPerDay {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.SprintsPackage.CapacityPerDay_capacity, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.sprints.SprintsPackage.CapacityPerDay_day, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class CapacityPerDay extends DynamicResource implements ICapacityPerDay {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cd28fab0-c0d5-11e5-8f91-3dfd9b379121,5hEluHKpaZ09Eaask9KWT6IWHwg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cd28fab0-c0d5-11e5-8f91-3dfd9b379121,5KNmYuh18RewioLwVDivmU6RwJY=] */

@@ -85,9 +85,7 @@ public class Cell extends DynamicResource implements ICell {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.common.doc.spec.doc.paragraph.table.javamodel.IColumn.class, cleon.common.doc.spec.doc.paragraph.table.TablePackage.Cell_column, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -98,4 +96,4 @@ public class Cell extends DynamicResource implements ICell {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37a450a4-3c4a-11e5-871f-6beac6a7c24b,1p2KRB3d9ae5l1XdtEebOft+btE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,37a450a4-3c4a-11e5-871f-6beac6a7c24b,qiXEWm0NKl7GYqGWqwBXL8B3USk=] */

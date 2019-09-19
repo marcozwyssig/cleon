@@ -91,7 +91,6 @@ public class Module extends DynamicResource implements IModule {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.naming.NamingPackage.DisplayName_displayName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.spec.resources.id.IdPackage.StringBusinessObjectId_identifier, visitor);
@@ -101,4 +100,4 @@ public class Module extends DynamicResource implements IModule {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8a7442a-31ca-11e8-8a84-6f139e67278b,EYCRZC+3Kul2bBGfXDNjyTlpDNU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c8a7442a-31ca-11e8-8a84-6f139e67278b,Ba6/tRFdQ4ZLe6MXThXQ3iE3W6M=] */

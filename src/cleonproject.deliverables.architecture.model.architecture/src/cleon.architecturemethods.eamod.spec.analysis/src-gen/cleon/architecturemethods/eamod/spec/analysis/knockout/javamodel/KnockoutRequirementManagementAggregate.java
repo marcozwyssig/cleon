@@ -84,8 +84,6 @@ public class KnockoutRequirementManagementAggregate extends DynamicResource impl
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.javamodel.IAbstractCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.CriteriasPackage.AbstractCriteriaAggregateAware_criterias, visitor);
-    _acceptList(cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.javamodel.IKnockoutCriteria.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.knockout.KnockoutPackage.KnockoutCriteriaAggregateAware_knockoutCriterias, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_requirementsManagement, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.analysis.knockout.javamodel.IKnockoutSubjectAreaAggregate.class, cleon.architecturemethods.eamod.spec.analysis.knockout.KnockoutPackage.KnockoutRequirementManagementAggregate_subjectAreaAggregate, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -102,4 +100,4 @@ public class KnockoutRequirementManagementAggregate extends DynamicResource impl
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,Nq661SaYohVT+a2Cnoun0lujimI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3abda764-202f-11e9-83b3-a16e26b4cc59,t0TAPm9Raz6+rl5gfwtbRYEX+VY=] */

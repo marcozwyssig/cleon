@@ -76,7 +76,6 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
     // relations
     _acceptMap(cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.javamodel.IAbsenseDay.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenceMonth_absenseDay, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IMonth.class, cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.absence.AbsencePackage.AbsenceMonth_month, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class AbsenceMonth extends DynamicResource implements IAbsenceMonth {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce3dada8-c4c8-11e5-8558-4b8affb7767c,Req037/Ww01yJ+zAoUvxI7vXLNQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce3dada8-c4c8-11e5-8558-4b8affb7767c,EPVc75xBbIBUGIXAWqO+Knjm0BA=] */

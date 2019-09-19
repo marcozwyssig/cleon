@@ -84,11 +84,9 @@ public class LanguageDescription extends DynamicResource implements ILanguageDes
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.language.javamodel.ILanguage.class, cleon.common.resources.spec.language.LanguagePackage.LanguageDescription_language, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -99,4 +97,4 @@ public class LanguageDescription extends DynamicResource implements ILanguageDes
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d03edb49-335f-11e8-a9fe-87ba35d8f5c4,284Dd1B9R50/zgpYFN22dhJh9Qc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d03edb49-335f-11e8-a9fe-87ba35d8f5c4,k+mxMJbNVExQX5NG7Al7l6a4uJk=] */

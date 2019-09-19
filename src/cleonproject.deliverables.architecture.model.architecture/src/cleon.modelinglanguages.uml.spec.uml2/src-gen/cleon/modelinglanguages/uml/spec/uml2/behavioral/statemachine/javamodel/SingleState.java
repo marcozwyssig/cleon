@@ -132,13 +132,11 @@ public class SingleState extends DynamicResource implements ISingleState {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.ClassesPackage.IsAbstract_isAbstract, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.IStateInheritance.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.SingleState_inherits, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.javamodel.ITransition.class, cleon.modelinglanguages.uml.spec.uml2.behavioral.statemachine.StatemachinePackage.SingleState_transition, visitor);
@@ -156,4 +154,4 @@ public class SingleState extends DynamicResource implements ISingleState {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,DfgIJw/reoM5eWtJ2XvTGjJBGfY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,SAxVO71r/tbytZDwmCXn4NkiDew=] */

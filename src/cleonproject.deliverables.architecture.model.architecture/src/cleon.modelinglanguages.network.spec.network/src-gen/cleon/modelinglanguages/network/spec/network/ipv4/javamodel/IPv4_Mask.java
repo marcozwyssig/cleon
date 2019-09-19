@@ -74,11 +74,10 @@ public class IPv4_Mask extends DynamicResource implements IIPv4_Mask {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Address_aE_Aware_iPv4, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Addresses_aE_Aware_iPv4s, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.spec.network.ipv4.Ipv4Package.IPv4_aE_Mask_mask, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,621bbad2-0932-11e9-8c40-11db3668c0c9,Rvx29trA58o7SOWaBsfwAUnM5Zo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,621bbad2-0932-11e9-8c40-11db3668c0c9,wRkPv8avwAw33m9z/0eVIz+CbUY=] */

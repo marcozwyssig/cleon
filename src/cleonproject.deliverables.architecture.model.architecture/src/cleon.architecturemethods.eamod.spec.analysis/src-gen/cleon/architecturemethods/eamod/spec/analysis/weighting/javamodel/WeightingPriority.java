@@ -78,7 +78,6 @@ public class WeightingPriority extends DynamicResource implements IWeightingPrio
     _acceptSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.spec.detailstudy.drivers.criterias.weighting.WeightingPackage.WeightingAware_weighting, visitor);
     // relations
     _acceptSingle(cleon.common.resources.spec.resources.priority.javamodel.IPriority.class, cleon.architecturemethods.eamod.spec.analysis.weighting.WeightingPackage.WeightingPriority_priority, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class WeightingPriority extends DynamicResource implements IWeightingPrio
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,5Ujcvb00XdRCiSHzM8GvSRfZIKk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,j/EIGa18EpT9L7nWxatW1QXRBDc=] */

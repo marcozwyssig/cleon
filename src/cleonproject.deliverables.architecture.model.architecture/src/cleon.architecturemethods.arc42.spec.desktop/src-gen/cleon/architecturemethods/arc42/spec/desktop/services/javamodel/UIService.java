@@ -103,7 +103,6 @@ public class UIService extends DynamicResource implements IUIService {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -114,4 +113,4 @@ public class UIService extends DynamicResource implements IUIService {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,jiCn5PT0vJR+DIH8rNgT/7MuBXU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f4fb9566-a37b-11e3-9113-ffc7f11b0a42,XZNg86A6TFqhdK7ZS73wJ3j5P1Y=] */

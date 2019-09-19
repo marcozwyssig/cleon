@@ -97,10 +97,8 @@ public class InfrastructureProductGroup extends DynamicResource implements IInfr
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.xml.spec.xmi.javamodel.IXmiClass.class, cleon.common.xml.spec.xmi.XmiPackage.XmiAggregation_aggregates, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.javamodel.IInfrastructureProductGroup.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.ProductgroupPackage.InfrastructureProductGroup_dependsOn, visitor);
     _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IInfrastructureProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.ProductgroupPackage.InfrastructureProductGroup_infrastructureProducts, visitor);
-    _acceptList(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.productgroup.ProductgroupPackage.ProductGroup_products, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -115,4 +113,4 @@ public class InfrastructureProductGroup extends DynamicResource implements IInfr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,761e31cd-6897-11e7-9be5-6dfce969ae4e,P5uchIWmFl6zw0zg5KEmzSX1Suo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,761e31cd-6897-11e7-9be5-6dfce969ae4e,CuFtbXtoZC9aZy++qxVhDyP9Q64=] */

@@ -84,7 +84,6 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.desktop.mvvm.javamodel.IViewModel.class, cleon.architecturemethods.arc42.spec.desktop.mvvm.MvvmPackage.ViewModelDependency_to, visitor);
@@ -98,4 +97,4 @@ public class ViewModelDependency extends DynamicResource implements IViewModelDe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,aOuF4NLpCcaxKWy/S62yzel8EwI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,oEJ3tums4Z79GD+6D9kM/qlm03k=] */

@@ -210,7 +210,6 @@ public class Defect extends DynamicResource implements IDefect {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.workpackage.backlog.defect.DefectPackage.Defect_environment, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
@@ -254,4 +253,4 @@ public class Defect extends DynamicResource implements IDefect {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,s41zF2dMX7nUaBFXxhDckTrHbEE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,484dda11-ff9c-11e4-ac0a-959b440f987f,xzls2Z4zWZrY3SvYLoRUn5ZheuQ=] */

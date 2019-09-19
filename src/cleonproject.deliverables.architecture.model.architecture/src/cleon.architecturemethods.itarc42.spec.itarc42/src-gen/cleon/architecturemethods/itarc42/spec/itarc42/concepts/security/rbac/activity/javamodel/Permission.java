@@ -82,7 +82,6 @@ public class Permission extends DynamicResource implements IPermission {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -91,4 +90,4 @@ public class Permission extends DynamicResource implements IPermission {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,40ExQdzxRoFa6hS7n3W5gpfa1IY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,FO7ESTJXHRGAE/I69zN6/mack/g=] */

@@ -76,7 +76,6 @@ public class EnterpriseOrganigram extends DynamicResource implements IEnterprise
     // relations
     _acceptSingle(cleon.architecturemethods.org42.spec.epm.unit.javamodel.IEnterprise.class, cleon.architecturemethods.org42.spec.epm.organigram.OrganigramPackage.EnterpriseOrganigram_enterprise, visitor);
     _acceptMultiMap(cleon.modelinglanguages.bpmn.spec.bpmn2.organigram.javamodel.IOrganisation.class, cleon.architecturemethods.org42.spec.epm.organigram.OrganigramPackage.EnterpriseOrganigram_organisation, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -91,4 +90,4 @@ public class EnterpriseOrganigram extends DynamicResource implements IEnterprise
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,PkMPebpJt2Zo43HFEDW9D4ZGZjQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,8DYevRfyy3bKxoY6g4sMYiZU720=] */

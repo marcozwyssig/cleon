@@ -83,7 +83,6 @@ public class SoftwareQualityCharacteristic__F_ extends DynamicResource implement
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -98,4 +97,4 @@ public class SoftwareQualityCharacteristic__F_ extends DynamicResource implement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5147d97b-0e04-11e6-ae01-ef640c578b9b,/CeXpbBFMLkSxfxcrZkPhVDy4zc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5147d97b-0e04-11e6-ae01-ef640c578b9b,mrVmVrK/aX/59IsDODxm8Zd6QKM=] */

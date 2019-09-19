@@ -75,7 +75,6 @@ public class InfrastructureProductUsage extends DynamicResource implements IInfr
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.javamodel.IInfrastructureProduct.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.InfrastructureProductUsage_infrastructureProduct, visitor);
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptMap(cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.variety.javamodel.IBaseProductVariety.class, cleon.architecturemethods.eamod.spec.eamod.nsov.v2.productcatalog.product.ProductPackage.InfrastructureProductUsage_varieties, visitor);
   }
@@ -91,4 +90,4 @@ public class InfrastructureProductUsage extends DynamicResource implements IInfr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bd36f21c-67d1-11e7-afcc-6df3a81a4d17,E3VTgtLttx6rsBrWjEd6ziB8k2k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bd36f21c-67d1-11e7-afcc-6df3a81a4d17,ZWpxbm2YrKAcnlzrwvj5KlgknNA=] */

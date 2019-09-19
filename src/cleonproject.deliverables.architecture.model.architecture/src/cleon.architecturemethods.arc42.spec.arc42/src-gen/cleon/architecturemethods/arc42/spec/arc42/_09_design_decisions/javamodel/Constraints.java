@@ -64,11 +64,10 @@ public class Constraints extends DynamicResource implements IConstraints {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f0410d33-ecde-11e8-8149-8542373915bf,YPf3IMGxxCpjmU5w6hZP6trhFRw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f0410d33-ecde-11e8-8149-8542373915bf,P0iKVlQPhim7dQ17VdNIHFC5USM=] */

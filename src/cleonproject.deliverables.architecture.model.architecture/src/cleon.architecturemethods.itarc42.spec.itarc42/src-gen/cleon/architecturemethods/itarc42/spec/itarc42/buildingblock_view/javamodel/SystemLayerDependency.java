@@ -84,7 +84,6 @@ public class SystemLayerDependency extends DynamicResource implements ISystemLay
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemLayer.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemLayerDependency_to, visitor);
@@ -98,4 +97,4 @@ public class SystemLayerDependency extends DynamicResource implements ISystemLay
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a670e1bd-01d8-11e9-9c9d-8d52d6745026,J/I9hon2Y5gnb55O+cl0Q3N9Yc8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a670e1bd-01d8-11e9-9c9d-8d52d6745026,ito1qPY9Fz21iRPWhv0ncL8gu0M=] */

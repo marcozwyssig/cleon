@@ -100,7 +100,6 @@ public class NamedReference extends DynamicResource implements INamedReference {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -111,4 +110,4 @@ public class NamedReference extends DynamicResource implements INamedReference {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13280843-0766-11e9-9896-ef29067b4914,yyMB6wyr7MwuOZRlI9QHyilQU7c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13280843-0766-11e9-9896-ef29067b4914,BqujEw4B7i58RDr6hgDLbSV8a2Q=] */

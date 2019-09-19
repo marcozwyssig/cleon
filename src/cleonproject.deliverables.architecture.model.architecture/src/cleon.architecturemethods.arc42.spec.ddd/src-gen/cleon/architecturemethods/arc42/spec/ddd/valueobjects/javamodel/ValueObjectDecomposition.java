@@ -78,7 +78,6 @@ public class ValueObjectDecomposition extends DynamicResource implements IValueO
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObject.class, cleon.architecturemethods.arc42.spec.ddd.valueobjects.ValueobjectsPackage.ValueObjectDecomposition_into, visitor);
-    _acceptSingle(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.AggregateDecomposite_intoBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -89,4 +88,4 @@ public class ValueObjectDecomposition extends DynamicResource implements IValueO
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,172528f4-266d-11e5-95dc-8f1cdbd9db54,TiFAIlfvNZoPYG3r+V7Apz0bQQc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,172528f4-266d-11e5-95dc-8f1cdbd9db54,XiHWpck7JZ/xa7LgXbCuWgRmfao=] */

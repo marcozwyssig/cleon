@@ -82,7 +82,6 @@ public class FailureClass extends DynamicResource implements IFailureClass {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.spec.resources.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -145,4 +144,4 @@ public class FailureClass extends DynamicResource implements IFailureClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,882921f6-1db2-11e6-974b-630b7f5d3b95,YEWeh5PG5324qsWdo6r+S1UtKf8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,882921f6-1db2-11e6-974b-630b7f5d3b95,tUHs5axPyiAD0d1NsQFiOhjY6Kg=] */

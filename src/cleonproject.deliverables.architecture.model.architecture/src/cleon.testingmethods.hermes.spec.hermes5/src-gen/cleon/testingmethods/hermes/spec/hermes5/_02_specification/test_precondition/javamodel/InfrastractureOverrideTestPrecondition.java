@@ -94,14 +94,12 @@ public class InfrastractureOverrideTestPrecondition extends DynamicResource impl
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.Test_preconditionPackage.TestInfrastractureAware_testInfrastructure, visitor);
     _acceptSingle(cleon.testingmethods.hermes.spec.hermes5._02_specification.test_precondition.javamodel.ITestPrecondition.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.OverrideTestPrecondition_testPrecondition, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,689dfed3-6d8a-11e9-b84d-d319514e887f,YpQvLM/cCAWG2oZXcsrJP68PCTg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,689dfed3-6d8a-11e9-b84d-d319514e887f,BZWL28ldwvJpEUfbC8LF6b5fEJM=] */

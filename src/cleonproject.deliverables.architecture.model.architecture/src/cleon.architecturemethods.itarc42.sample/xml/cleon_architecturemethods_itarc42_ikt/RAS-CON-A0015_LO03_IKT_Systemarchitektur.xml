@@ -12562,7 +12562,7 @@
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>0</db:para>
+									<db:para>1</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12665,7 +12665,69 @@
 						
 						
 						
-						
+						<db:section xml:id="ea.7034bbe8-d853-11e9-8923-0d6897579abc">
+							<db:title>Sicherheitsverantwortlicher Rollen</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Sicherheitsverantwortlicher' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>R2000</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.748f14ee-d853-11e9-8923-0d6897579abc">
+								<db:title>Operator Verantwortlichkeiten</db:title>
+								
+								
+								
+								
+								<db:section xml:id="ea.7615dc36-d853-11e9-8923-0d6897579abc">
+									<db:title>grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator</db:title>
+									
+									
+									
+									
+									
+								</db:section>
+							</db:section>
+						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
 						<db:title>TN EAZS (906) Rollen</db:title>

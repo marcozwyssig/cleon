@@ -124,13 +124,9 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.IDynamicTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObjects_dynamicTestObjects, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.NoChapters_noChapters, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.javamodel.IStaticTestObject.class, cleon.testingmethods.hermes.spec.hermes5._01_concept.test_objects.Test_objectsPackage.TestObjects_staticTestObjects, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -147,4 +143,4 @@ public class TestObjects extends DynamicResource implements ITestObjects {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,m0XmiI41LUs7rkzW/e1AegoBA/c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcd96549-1519-11e6-a185-8f02bf3f95ba,sEjxE5q7aEOMz9yPO9v6B//UzDg=] */

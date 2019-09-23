@@ -35,6 +35,9 @@ public class FunctionSpace_Deployment_Plantuml {
     @IDynamicResourceExtension.MethodId("5104adea-1980-11e9-88a0-1f786f12e4c1")
     public java.lang.Boolean renderHidden();
 
+    @IDynamicResourceExtension.MethodId("f5cdae91-ddd9-11e9-bb03-150413ca6880")
+    public java.lang.String FileName();
+
   }
   
   public static interface IDeploymentDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -196,4 +199,4 @@ public class FunctionSpace_Deployment_Plantuml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aa83cb8-0aa0-11e9-8a91-633e556ac68f,HNC+2ljI1bKnFCPjJuxXamn0Xw0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aa83cb8-0aa0-11e9-8a91-633e556ac68f,j8cmxKvTuZg3acJu8IlJSBHgmA8=] */

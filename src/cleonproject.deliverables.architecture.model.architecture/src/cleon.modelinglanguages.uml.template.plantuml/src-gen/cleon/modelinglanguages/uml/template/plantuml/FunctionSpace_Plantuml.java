@@ -32,6 +32,12 @@ public class FunctionSpace_Plantuml {
     @IDynamicResourceExtension.MethodId("dba73b0a-ff95-11e8-9d0c-c96c1e9b7b46")
     public java.lang.String RenderUmlOptions();
 
+    @IDynamicResourceExtension.MethodId("b0c7655c-ddd9-11e9-bb03-150413ca6880")
+    public java.lang.String FullFileName();
+
+    @IDynamicResourceExtension.MethodId("ce9f2a3b-ddd9-11e9-bb03-150413ca6880")
+    public java.lang.String FileName();
+
   }
   
   public static interface IUmlDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -88,4 +94,4 @@ public class FunctionSpace_Plantuml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,8zV1apiq69iZO7FiHyRAhfV/SL4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,haXBBCULKKz08iQgtUcZLEV2Fq0=] */

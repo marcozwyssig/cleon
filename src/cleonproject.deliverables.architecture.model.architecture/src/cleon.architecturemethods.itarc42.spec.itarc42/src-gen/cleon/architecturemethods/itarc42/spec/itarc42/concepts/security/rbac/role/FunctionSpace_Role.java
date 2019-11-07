@@ -46,10 +46,16 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("40c5b1a6-c5ae-11e9-9daa-cf9f9f7341e8")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllRoleSystemComponentInDomain();
 
+    @IDynamicResourceExtension.MethodId("7f5f2902-016c-11ea-8b45-335c84231cb6")
+    public java.lang.String GetId();
+
   }
   
   public static interface IRoleSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("7f5f2902-016c-11ea-8b45-335c84231cb6")
+    public java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent);
+
   }
   
   public static class RoleSystemComponentFunctionsImpl implements IRoleSystemComponentFunctionsImpl {
@@ -58,11 +64,20 @@ public class FunctionSpace_Role {
 
     private RoleSystemComponentFunctionsImpl() {}
 
+    @Override
+    public java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
+      return String.format("R%04d", roleSystemComponent.selectIdentifier());
+    }
+
   }
   
   public static class RoleSystemComponentFunctions {
 
     private RoleSystemComponentFunctions() {}
+
+    public static java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
+      return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponent).GetId(roleSystemComponent);
+    }
 
   }
 
@@ -178,4 +193,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,FvNBR+4uClk9YS6OnbnqVrBwdSU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,oLrosnl9EWz6arrgslBl8ZS1m1Q=] */

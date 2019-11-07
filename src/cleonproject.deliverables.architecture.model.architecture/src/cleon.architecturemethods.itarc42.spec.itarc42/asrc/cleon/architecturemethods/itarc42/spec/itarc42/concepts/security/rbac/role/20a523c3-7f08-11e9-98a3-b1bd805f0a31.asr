@@ -429,6 +429,11 @@
             <resource statement-guid="530b4697-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="530b4694-c5ae-11e9-9daa-cf9f9f7341e8" />
           </owns>
         </resource>
+        <resource statement-guid="7f5fec5b-016c-11ea-8b45-335c84231cb6" type="resource" guid="7f5f2902-016c-11ea-8b45-335c84231cb6">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="7f5f290a-016c-11ea-8b45-335c84231cb6" type="resource" guid="7f5f2903-016c-11ea-8b45-335c84231cb6" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="b4b69a09-809c-11e9-8e65-f3f639e40a34" type="resource" guid="b4b672f6-809c-11e9-8e65-f3f639e40a34">
@@ -2191,6 +2196,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="40c674f9-c5ae-11e9-9daa-cf9f9f7341e8" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="7f5fec5b-016c-11ea-8b45-335c84231cb6">
+            <resource guid="7f5f2902-016c-11ea-8b45-335c84231cb6">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7f5f2904-016c-11ea-8b45-335c84231cb6" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7f5f2906-016c-11ea-8b45-335c84231cb6" type="literal">GetId</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="7f5f290a-016c-11ea-8b45-335c84231cb6">
+                  <resource guid="7f5f2903-016c-11ea-8b45-335c84231cb6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="7f5f2908-016c-11ea-8b45-335c84231cb6" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="7f5f2909-016c-11ea-8b45-335c84231cb6" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="7f5f2905-016c-11ea-8b45-335c84231cb6" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="7f5f2907-016c-11ea-8b45-335c84231cb6" type="literal">return String.format("R%04d", roleSystemComponent.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

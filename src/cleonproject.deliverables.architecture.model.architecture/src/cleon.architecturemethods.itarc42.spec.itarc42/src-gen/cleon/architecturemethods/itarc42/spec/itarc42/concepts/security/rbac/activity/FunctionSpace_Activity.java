@@ -33,10 +33,16 @@ public class FunctionSpace_Activity {
     @IDynamicResourceExtension.MethodId("f259b386-c56e-11e9-9daa-cf9f9f7341e8")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllActivityPermissionInDomain();
 
+    @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
+    public java.lang.String GetId();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
+    public java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission);
+
   }
   
   public static class ActivityPermissionFunctionsImpl implements IActivityPermissionFunctionsImpl {
@@ -45,11 +51,20 @@ public class FunctionSpace_Activity {
 
     private ActivityPermissionFunctionsImpl() {}
 
+    @Override
+    public java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission) {
+      return String.format("A%04d", activityPermission.selectIdentifier());
+    }
+
   }
   
   public static class ActivityPermissionFunctions {
 
     private ActivityPermissionFunctions() {}
+
+    public static java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).GetId(activityPermission);
+    }
 
   }
 
@@ -196,4 +211,4 @@ public class FunctionSpace_Activity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,6ElyDDCH5eM5tSCbVmAxKI/dZsg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,woj6QcFdIwBQQ7dA9boE/bJrAww=] */

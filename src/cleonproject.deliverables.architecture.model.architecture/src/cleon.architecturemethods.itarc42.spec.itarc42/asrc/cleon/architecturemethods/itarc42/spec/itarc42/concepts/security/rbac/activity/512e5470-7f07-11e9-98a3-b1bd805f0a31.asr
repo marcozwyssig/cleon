@@ -133,6 +133,11 @@
             <resource statement-guid="08b7419f-c56f-11e9-9daa-cf9f9f7341e8" type="resource" guid="08b71a8c-c56f-11e9-9daa-cf9f9f7341e8" />
           </owns>
         </resource>
+        <resource statement-guid="f97c69a0-016b-11ea-8b45-335c84231cb6" type="resource" guid="f97abbec-016b-11ea-8b45-335c84231cb6">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="4bcdb692-016c-11ea-8b45-335c84231cb6" type="resource" guid="4bcd696f-016c-11ea-8b45-335c84231cb6" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="a94f284b-7f27-11e9-9a52-07d4b074defc" type="resource" guid="a94f0138-7f27-11e9-9a52-07d4b074defc">
@@ -872,6 +877,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="f25a76d9-c56e-11e9-9daa-cf9f9f7341e8" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="f97c69a0-016b-11ea-8b45-335c84231cb6">
+            <resource guid="f97abbec-016b-11ea-8b45-335c84231cb6">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="f97ae2fe-016b-11ea-8b45-335c84231cb6" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="fad7175c-016b-11ea-8b45-335c84231cb6" type="literal">GetId</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="4bcdb692-016c-11ea-8b45-335c84231cb6">
+                  <resource guid="4bcd696f-016c-11ea-8b45-335c84231cb6">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="4bcd8f81-016c-11ea-8b45-335c84231cb6" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="4c352af3-016c-11ea-8b45-335c84231cb6" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="f97bf46f-016b-11ea-8b45-335c84231cb6" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="4a0b1ffe-016c-11ea-8b45-335c84231cb6" type="literal">return String.format("A%04d", activityPermission.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

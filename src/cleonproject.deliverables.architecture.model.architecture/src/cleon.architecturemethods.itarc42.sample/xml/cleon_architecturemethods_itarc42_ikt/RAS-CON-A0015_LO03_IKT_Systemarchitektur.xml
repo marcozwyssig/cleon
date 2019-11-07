@@ -11895,6 +11895,20 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
+									<db:para>TN NMS (NMS) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4b825f33-0183-11ea-bfef-fb6a3149ec30"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2000-2099</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN NMS (NMS)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>4</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
 									<db:para>TN EAZS (906) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
@@ -11924,13 +11938,336 @@
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">3</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
+					<db:section xml:id="ea.4b825f33-0183-11ea-bfef-fb6a3149ec30">
+						<db:title>TN NMS (NMS) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.4b825f36-0183-11ea-bfef-fb6a3149ec30">
+							<db:title>Block Storage Service (BSS) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Block Storage Service (BSS)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2000</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2000-nms-bss_deploy</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2001</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2001-nms-bss_read</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.4b825f34-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2000-nms-bss_deploy</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.4b825f35-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2001-nms-bss_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.4b825f39-0183-11ea-bfef-fb6a3149ec30">
+							<db:title>Kontron Server (KON) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Kontron Server (KON)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2002</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2002-nms-kon_deploy</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2003</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2003-nms-kon_read</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.4b825f37-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2002-nms-kon_deploy</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.4b825f38-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2003-nms-kon_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.4b825f3c-0183-11ea-bfef-fb6a3149ec30">
+							<db:title>ESX Physical (VMH) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESX Physical (VMH)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2004</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2004-nms-vmh_deploy</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2005</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2005-nms-vmh_read</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.4b825f3a-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2004-nms-vmh_deploy</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.4b825f3b-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2005-nms-vmh_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.4b825f3f-0183-11ea-bfef-fb6a3149ec30">
+							<db:title>Virtual Machine (VM) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Virtual Machine (VM)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2006</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2006-nms-vm_write</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2007</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2007-nms-vm_audit</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN NMS (NMS)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.4b825f3d-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2006-nms-vm_write</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.4b825f3e-0183-11ea-bfef-fb6a3149ec30">
+								<db:title>grp-act-2007-nms-vm_audit</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
 					<db:section xml:id="ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70">
 						<db:title>TN EAZS (906) Aktivit&#228;ten</db:title>
 						
@@ -12128,6 +12465,20 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
+									<db:para>TN NMS (NMS) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.35cf261b-0179-11ea-bfef-fb6a3149ec30"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2000-2099</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN NMS (NMS)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
 									<db:para>TN EAZS (906) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
@@ -12157,13 +12508,83 @@
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">3</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
 							</db:tr>
 						</db:tbody>
 					</db:informaltable>
+					<db:section xml:id="ea.35cf261b-0179-11ea-bfef-fb6a3149ec30">
+						<db:title>TN NMS (NMS) Rollen</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.35cf261e-0179-11ea-bfef-fb6a3149ec30">
+							<db:title>Sicherheitsverantwortlicher Rollen</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Sicherheitsverantwortlicher' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>R2000</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.35cf261d-0179-11ea-bfef-fb6a3149ec30">
+								<db:title>Operator Verantwortlichkeiten</db:title>
+								
+								
+								
+								
+								<db:section xml:id="ea.35cf261c-0179-11ea-bfef-fb6a3149ec30">
+									<db:title>grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator</db:title>
+									
+									
+									
+									
+									
+								</db:section>
+							</db:section>
+						</db:section>
+					</db:section>
 					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
 						<db:title>TN EAZS (906) Rollen</db:title>
 						

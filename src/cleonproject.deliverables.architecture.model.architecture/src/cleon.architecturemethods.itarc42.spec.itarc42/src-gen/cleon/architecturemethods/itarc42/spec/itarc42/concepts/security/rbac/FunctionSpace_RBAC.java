@@ -191,6 +191,31 @@ public class FunctionSpace_RBAC {
 
   }
 
+  public static interface IAbstractRootGroupsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("488c86a7-0172-11ea-83fa-05ea5175f4aa")
+    public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment GetEnvironment();
+
+  }
+  
+  public static interface IAbstractRootGroupsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractRootGroupsFunctionsImpl implements IAbstractRootGroupsFunctionsImpl {
+
+    public static final IAbstractRootGroupsFunctionsImpl INSTANCE = new AbstractRootGroupsFunctionsImpl();
+
+    private AbstractRootGroupsFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractRootGroupsFunctions {
+
+    private AbstractRootGroupsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,jXb+M0CWpqy/NFvUDtvwHgGmKII=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,Z6IW8vmVXl7QMRMdBoXzk9xLdVY=] */

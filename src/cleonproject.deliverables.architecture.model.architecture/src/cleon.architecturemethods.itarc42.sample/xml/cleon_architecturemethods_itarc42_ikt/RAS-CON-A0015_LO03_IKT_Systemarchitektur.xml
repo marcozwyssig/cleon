@@ -11865,6 +11865,323 @@
 			<db:para>Die Beschreibung des Kapitels ist noch offen und wird mit der n&#228;chsten Version nachgeliefert.</db:para>
 			
 			
+			<db:section xml:id="ea.fc5fba0e-0173-11ea-83fa-05ea5175f4aa">
+				<db:title>Rollen und Aktivit&#228;ten f&#252;r Produktions-Umgebung</db:title>
+				
+				
+				
+				
+				<db:section xml:id="ea.1cb63a29-0174-11ea-83fa-05ea5175f4aa">
+					<db:title>Aktivit&#228;ten</db:title>
+					
+					
+					
+					<db:para>Die Aktivitäten orientieren sich an den System-Konfigurationen. Pro System-Konfiguration und pro Teilnetz werden die entsprechenden Aktivitäten Gruppen dementsprechend 
+					festgelegt, damit der Zugriff auf das System IKT insgesamt feingranular gesteuert werden kann.</db:para>
+					<db:para>Nachfolgend werden tabellarisch die Aktivitäten Gruppen aufgeführt:</db:para>   
+					<db:informaltable style="HERMES 5">
+						<db:col width="35%" />
+						<db:col width="20%" />
+						<db:col width="35%" />
+						<db:col width="10%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Range</db:th>
+								<db:th>Netzdomäne</db:th>
+								<db:th>Anzahl Aktivitäten</db:th>			
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>TN EAZS (906) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2100-2199</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN EAZS (906)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>TN EAZS (907) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2200-2299</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN EAZS (907)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>1</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+								<db:td>
+									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+								</db:td>
+								<db:td></db:td>						
+								<db:td></db:td>						
+							</db:tr>
+						</db:tbody>
+					</db:informaltable>
+					<db:section xml:id="ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (906) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.89636970-7f22-11e9-9a52-07d4b074defc">
+							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2100</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2100-906-hpe_deploy</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2101</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2101-906-hpe_read</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>2102</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2102-906-hpe_write</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (906)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">3/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.46314e55-7f23-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2100-906-hpe_deploy</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.58cd67c4-7f23-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2101-906-hpe_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.1a615ed8-c582-11e9-9daa-cf9f9f7341e8">
+								<db:title>grp-act-2102-906-hpe_write</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+					<db:section xml:id="ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (907) Aktivit&#228;ten</db:title>
+						
+						
+						
+						
+						<db:section xml:id="ea.88253580-7f28-11e9-9a52-07d4b074defc">
+							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2200</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2200-907-hpe_read</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN EAZS (907)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.971cb14d-7f28-11e9-9a52-07d4b074defc">
+								<db:title>grp-act-2200-907-hpe_read</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+					</db:section>
+				</db:section>
+				<db:section xml:id="ea.ff337298-0173-11ea-83fa-05ea5175f4aa">
+					<db:title>Rollen</db:title>
+					
+					
+					
+					<db:para>Die Rollen orientieren sich an den Aktoren. Pro Aktor und pro Teilnetz werden die entsprechenden Rollen Gruppen dementsprechend 
+					festgelegt.</db:para>
+					<db:para>Nachfolgend werden tabellarisch die Rollen Gruppen aufgeführt:</db:para>   
+					<db:informaltable style="HERMES 5">
+						<db:col width="35%" />
+						<db:col width="20%" />
+						<db:col width="35%" />
+						<db:col width="10%" />
+						<db:thead>
+							<db:tr>
+								<db:th>Name</db:th>
+								<db:th>Range</db:th>
+								<db:th>Aktor</db:th>
+								<db:th>Anzahl Rollen</db:th>			
+							</db:tr>
+						</db:thead>
+						<db:tbody>
+							<db:tr>
+								<db:td>
+									<db:para>TN EAZS (906) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2100-2199</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN EAZS (906)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>0</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td>
+									<db:para>TN EAZS (907) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+								</db:td>
+								<db:td>
+									<db:para>2200-2299</db:para>
+								</db:td>
+								<db:td>
+									<db:para>TN EAZS (907)</db:para>
+								</db:td>
+								<db:td>
+									<db:para>0</db:para>
+								</db:td>			
+							</db:tr>
+							<db:tr>
+								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+								<db:td>
+									<db:para><db:emphasis role="strong">2</db:emphasis></db:para>
+								</db:td>
+								<db:td></db:td>						
+								<db:td></db:td>						
+							</db:tr>
+						</db:tbody>
+					</db:informaltable>
+					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (906) Rollen</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+					<db:section xml:id="ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70">
+						<db:title>TN EAZS (907) Rollen</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+				</db:section>
+			</db:section>
 			<db:section xml:id="ea.8fdf1c40-0eaf-11e9-9f19-6d15636f4ecc">
 				<db:title>Rollen und Aktivit&#228;ten f&#252;r Test-Umgebung</db:title>
 				
@@ -11898,41 +12215,13 @@
 									<db:para>TN NMS (NMS) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd6-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>2000-2099</db:para>
+									<db:para>2500-2599</db:para>
 								</db:td>
 								<db:td>
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>4</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>TN EAZS (906) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2100-2199</db:para>
-								</db:td>
-								<db:td>
-									<db:para>TN EAZS (906)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>TN EAZS (907) Aktivitäten [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2200-2299</db:para>
-								</db:td>
-								<db:td>
-									<db:para>TN EAZS (907)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>1</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -11994,7 +12283,7 @@
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">5</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
@@ -12324,178 +12613,6 @@
 							</db:section>
 						</db:section>
 					</db:section>
-					<db:section xml:id="ea.53b83fd7-1e0e-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (906) Aktivit&#228;ten</db:title>
-						
-						
-						
-						
-						<db:section xml:id="ea.89636970-7f22-11e9-9a52-07d4b074defc">
-							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
-							
-							
-							
-							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
-							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
-							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
-							<db:informaltable style="HERMES 5">
-								<db:col width="10%" />
-								<db:col width="35%" />
-								<db:col width="20%" />
-								<db:col width="35%" />
-								<db:thead>
-									<db:tr>
-										<db:th>Nr.</db:th>
-										<db:th>Name</db:th>
-										<db:th>Teilnetz</db:th>
-										<db:th>Rollen</db:th>
-									</db:tr>
-								</db:thead>
-								<db:tbody>
-									<db:tr>
-										<db:td>
-											<db:para>2100</db:para>
-										</db:td>
-										<db:td>
-											<db:para>grp-act-2100-906-hpe_deploy</db:para>
-										</db:td>
-										<db:td>
-											<db:para>TN EAZS (906)</db:para>
-										</db:td>
-										<db:td>
-											<db:itemizedlist>
-											</db:itemizedlist>
-										</db:td>
-									</db:tr>
-									<db:tr>
-										<db:td>
-											<db:para>2101</db:para>
-										</db:td>
-										<db:td>
-											<db:para>grp-act-2101-906-hpe_read</db:para>
-										</db:td>
-										<db:td>
-											<db:para>TN EAZS (906)</db:para>
-										</db:td>
-										<db:td>
-											<db:itemizedlist>
-											</db:itemizedlist>
-										</db:td>
-									</db:tr>
-									<db:tr>
-										<db:td>
-											<db:para>2102</db:para>
-										</db:td>
-										<db:td>
-											<db:para>grp-act-2102-906-hpe_write</db:para>
-										</db:td>
-										<db:td>
-											<db:para>TN EAZS (906)</db:para>
-										</db:td>
-										<db:td>
-											<db:itemizedlist>
-											</db:itemizedlist>
-										</db:td>
-									</db:tr>
-									<db:tr>
-										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-										<db:td>
-											<db:para><db:emphasis role="strong">3/db:emphasis></db:para>
-										</db:td>
-										<db:td></db:td>						
-										<db:td></db:td>						
-									</db:tr>
-								</db:tbody>
-							</db:informaltable>
-							<db:section xml:id="ea.46314e55-7f23-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2100-906-hpe_deploy</db:title>
-								
-								
-								
-								
-								
-							</db:section>
-							<db:section xml:id="ea.58cd67c4-7f23-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2101-906-hpe_read</db:title>
-								
-								
-								
-								
-								
-							</db:section>
-							<db:section xml:id="ea.1a615ed8-c582-11e9-9daa-cf9f9f7341e8">
-								<db:title>grp-act-2102-906-hpe_write</db:title>
-								
-								
-								
-								
-								
-							</db:section>
-						</db:section>
-					</db:section>
-					<db:section xml:id="ea.53b83fd8-1e0e-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (907) Aktivit&#228;ten</db:title>
-						
-						
-						
-						
-						<db:section xml:id="ea.88253580-7f28-11e9-9a52-07d4b074defc">
-							<db:title>HPE Server (HPE) Aktivit&#228;ten</db:title>
-							
-							
-							
-							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'HPE Server (HPE)' aufgeführt. Für
-							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
-							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
-							<db:informaltable style="HERMES 5">
-								<db:col width="10%" />
-								<db:col width="35%" />
-								<db:col width="20%" />
-								<db:col width="35%" />
-								<db:thead>
-									<db:tr>
-										<db:th>Nr.</db:th>
-										<db:th>Name</db:th>
-										<db:th>Teilnetz</db:th>
-										<db:th>Rollen</db:th>
-									</db:tr>
-								</db:thead>
-								<db:tbody>
-									<db:tr>
-										<db:td>
-											<db:para>2200</db:para>
-										</db:td>
-										<db:td>
-											<db:para>grp-act-2200-907-hpe_read</db:para>
-										</db:td>
-										<db:td>
-											<db:para>TN EAZS (907)</db:para>
-										</db:td>
-										<db:td>
-											<db:itemizedlist>
-											</db:itemizedlist>
-										</db:td>
-									</db:tr>
-									<db:tr>
-										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
-										<db:td>
-											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
-										</db:td>
-										<db:td></db:td>						
-										<db:td></db:td>						
-									</db:tr>
-								</db:tbody>
-							</db:informaltable>
-							<db:section xml:id="ea.971cb14d-7f28-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2200-907-hpe_read</db:title>
-								
-								
-								
-								
-								
-							</db:section>
-						</db:section>
-					</db:section>
 					<db:section xml:id="ea.5ec8e3ef-1e0e-11e9-865e-41ef48a95f70">
 						<db:title>TN RA1 (984) Aktivit&#228;ten</db:title>
 						
@@ -12556,41 +12673,13 @@
 									<db:para>TN NMS (NMS) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6d332d77-1e09-11e9-834d-77c41fccc6bf"/>]</db:para>
 								</db:td>
 								<db:td>
-									<db:para>2000-2099</db:para>
+									<db:para>2500-2599</db:para>
 								</db:td>
 								<db:td>
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
 									<db:para>1</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>TN EAZS (906) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2100-2199</db:para>
-								</db:td>
-								<db:td>
-									<db:para>TN EAZS (906)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>0</db:para>
-								</db:td>			
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>TN EAZS (907) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
-								</db:td>
-								<db:td>
-									<db:para>2200-2299</db:para>
-								</db:td>
-								<db:td>
-									<db:para>TN EAZS (907)</db:para>
-								</db:td>
-								<db:td>
-									<db:para>0</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12652,7 +12741,7 @@
 							<db:tr>
 								<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 								<db:td>
-									<db:para><db:emphasis role="strong">7</db:emphasis></db:para>
+									<db:para><db:emphasis role="strong">5</db:emphasis></db:para>
 								</db:td>
 								<db:td></db:td>						
 								<db:td></db:td>						
@@ -12728,22 +12817,6 @@
 								</db:section>
 							</db:section>
 						</db:section>
-					</db:section>
-					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (906) Rollen</db:title>
-						
-						
-						
-						
-						
-					</db:section>
-					<db:section xml:id="ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (907) Rollen</db:title>
-						
-						
-						
-						
-						
 					</db:section>
 					<db:section xml:id="ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70">
 						<db:title>TN RA1 (984) Rollen</db:title>

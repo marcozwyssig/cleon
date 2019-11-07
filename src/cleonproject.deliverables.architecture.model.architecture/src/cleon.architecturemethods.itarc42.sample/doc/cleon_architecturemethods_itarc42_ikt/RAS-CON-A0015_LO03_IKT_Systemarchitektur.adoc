@@ -6483,6 +6483,90 @@ In der Schätzung der Bandbreite wurde das Übertragen von Virensignaturen berü
 Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version nachgeliefert.
 
 
+==== Rollen und Aktivitäten für Produktions-Umgebung
+
+
+
+
+===== Aktivitäten
+
+
+
+
+====== TN EAZS (906) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2100-906-hpe_deploy
+
+
+
+
+
+
+======== grp-act-2101-906-hpe_read
+
+
+
+
+
+
+======== grp-act-2102-906-hpe_write
+
+
+
+
+
+
+
+
+====== TN EAZS (907) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2200-907-hpe_read
+
+
+
+
+
+
+
+
+
+===== Rollen
+
+
+
+
+====== TN EAZS (906) Rollen
+
+
+
+
+
+
+====== TN EAZS (907) Rollen
+
+
+
+
+
+
+
+
 ==== Rollen und Aktivitäten für Test-Umgebung
 
 In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschrieben.
@@ -6579,58 +6663,6 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-====== TN EAZS (906) Aktivitäten
-
-
-
-
-======= HPE Server (HPE) Aktivitäten
-
-
-
-
-======== grp-act-2100-906-hpe_deploy
-
-
-
-
-
-
-======== grp-act-2101-906-hpe_read
-
-
-
-
-
-
-======== grp-act-2102-906-hpe_write
-
-
-
-
-
-
-
-
-====== TN EAZS (907) Aktivitäten
-
-
-
-
-======= HPE Server (HPE) Aktivitäten
-
-
-
-
-======== grp-act-2200-907-hpe_read
-
-
-
-
-
-
-
-
 ====== TN RA1 (984) Aktivitäten
 
 
@@ -6684,20 +6716,6 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-
-
-
-
-
-
-====== TN EAZS (906) Rollen
-
-
-
-
-
-
-====== TN EAZS (907) Rollen
 
 
 

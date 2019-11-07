@@ -8,6 +8,8 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.network.spec.s
   
   public java.lang.Integer selectVLAN_No();
   
+  public java.lang.Integer selectRange();
+  
   // relations
   
   public cleon.modelinglanguages.network.spec.segmentation.javamodel.IZone selectNoZones();
@@ -16,4 +18,4 @@ public interface ISecuritySubZone extends cleon.modelinglanguages.network.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,vk/gRf788AOnMhhOizXNpz/WM5w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,1LF2/F2aqrvHB6jdBwcfst6xPQY=] */

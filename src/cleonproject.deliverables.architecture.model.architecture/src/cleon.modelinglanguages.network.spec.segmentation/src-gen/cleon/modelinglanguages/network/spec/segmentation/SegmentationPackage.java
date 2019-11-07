@@ -37,6 +37,7 @@ public class SegmentationPackage {
   public static final Resource SegmentZone_allowed = new Resource("7037d269-a938-11e9-b094-b12ff339b432");
   public static final Resource SecurityZone_allowed = new Resource("ad7e2a2b-a938-11e9-b094-b12ff339b432");
   public static final Resource SecuritySubZone_allowed = new Resource("fd840116-a938-11e9-b094-b12ff339b432");
+  public static final Resource SecuritySubZone_range = new Resource("556d25a3-f625-11e9-882b-7b3dd7e5bc17");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +58,4 @@ public class SegmentationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.segmentation,C3gXr/OjJJuBNcH8CqUZ5fT0dns=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.spec.segmentation,nsWssXcpb5tkF8DbPnnjmSuXo9k=] */

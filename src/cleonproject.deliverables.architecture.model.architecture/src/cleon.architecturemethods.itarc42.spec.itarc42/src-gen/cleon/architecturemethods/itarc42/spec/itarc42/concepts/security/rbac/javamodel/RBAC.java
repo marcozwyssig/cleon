@@ -81,6 +81,16 @@ public class RBAC extends DynamicResource implements IRBAC {
   }
     
   @Override
+  public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment selectEnvironment() {
+    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_environment);
+  }
+
+  public RBAC setEnvironment(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment environment) {
+    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_environment, environment);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -101,6 +111,16 @@ public class RBAC extends DynamicResource implements IRBAC {
   }
     
   @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public RBAC setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -117,6 +137,7 @@ public class RBAC extends DynamicResource implements IRBAC {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, visitor);
+    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_environment, visitor);
     _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_roles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -132,5 +153,9 @@ public class RBAC extends DynamicResource implements IRBAC {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_activities, object.getResource());
   }
   
+  public static java.util.List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC> selectToMeEnvironment(cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.javamodel.IEnvironment object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.RbacPackage.RBAC_environment, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,ayQSpxpkUSe40BO0S7i/3i4Xb80=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,N99ig4ji/CMqDjkAAc8mYtrE5KQ=] */

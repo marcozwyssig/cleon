@@ -255,28 +255,28 @@ public class FunctionSpace_IP {
 
   }
 
-  public static interface IAbstractPhysicalNetworkFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6b37432f-749a-11e9-8765-0925552fc2b7")
     public cleon.modelinglanguages.network.spec.network.ipv4.javamodel.IIPRange SelectIPRange();
 
   }
   
-  public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractPhysicalNetworkFunctionsImpl implements IAbstractPhysicalNetworkFunctionsImpl {
+  public static class AbstractNetworkFunctionsImpl implements IAbstractNetworkFunctionsImpl {
 
-    public static final IAbstractPhysicalNetworkFunctionsImpl INSTANCE = new AbstractPhysicalNetworkFunctionsImpl();
+    public static final IAbstractNetworkFunctionsImpl INSTANCE = new AbstractNetworkFunctionsImpl();
 
-    private AbstractPhysicalNetworkFunctionsImpl() {}
+    private AbstractNetworkFunctionsImpl() {}
 
   }
   
-  public static class AbstractPhysicalNetworkFunctions {
+  public static class AbstractNetworkFunctions {
 
-    private AbstractPhysicalNetworkFunctions() {}
+    private AbstractNetworkFunctions() {}
 
   }
 
@@ -389,4 +389,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,Haka9eWJFbI/OmfS0TS+UDVX3u4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,6q8OHjrcUhY7Ruu2Mwl+9bcEJAM=] */

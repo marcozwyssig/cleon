@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.architecturemethods.togaf.spec.togaf
 Bundle-SymbolicName: cleon.architecturemethods.togaf.spec.togaf.builtin;singleton:=true
-Bundle-Version: 0.4.136
+Bundle-Version: 0.4.137
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,17 +12,17 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.136",
- cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.136",
- cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.136",
- cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.136",
- cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.136",
- cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.136",
- cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.136",
- cleon.common.doc.spec.doc.builtin;bundle-version="0.4.136",
- cleon.common.resources.spec.resources.builtin;bundle-version="0.4.136",
- cleon.common.xml.spec.xml.builtin;bundle-version="0.4.136",
- cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.136",
+ cleon.architecturemethods.arc42.spec.arc42.builtin;bundle-version="0.4.137",
+ cleon.architecturemethods.eamod.spec.eamod.builtin;bundle-version="0.4.137",
+ cleon.modelinglanguages.uml.spec.uml2.builtin;bundle-version="0.4.137",
+ cleon.common.glossary.spec.glossary.builtin;bundle-version="0.4.137",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.137",
+ cleon.projectmethods.hermes.spec.projectmanagement.builtin;bundle-version="0.4.137",
+ cleon.common.modularity.spec.buildingblock.builtin;bundle-version="0.4.137",
+ cleon.common.doc.spec.doc.builtin;bundle-version="0.4.137",
+ cleon.common.resources.spec.resources.builtin;bundle-version="0.4.137",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.137",
+ cleon.common.resources.spec.calendar.builtin;bundle-version="0.4.137",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.togaf.spec.togaf,
  cleon.architecturemethods.togaf.spec.togaf.javamodel,

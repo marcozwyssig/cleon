@@ -2,8 +2,6 @@
 <resource format="5.6.0" guid="98b954eb-e10c-11e8-a973-4fdaaa4aef8e">
   <owns predicate="2a480ce4-e0fe-11e8-8499-a3b0fb3cad90">
     <resource statement-guid="9ddc2ea0-e10c-11e8-a973-4fdaaa4aef8e" type="resource" guid="9ddc078d-e10c-11e8-a973-4fdaaa4aef8e" />
-    <resource statement-guid="4c9771e3-f16e-11e8-b3e7-15e2dd8d9b05" type="resource" guid="4c974acc-f16e-11e8-b3e7-15e2dd8d9b05" />
-    <resource statement-guid="c3315f84-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="c3313871-0c3a-11e9-83ba-4d57b06560a2" />
     <resource statement-guid="d7c76f63-34e4-11e9-bf4b-0d828c9b1ad6" type="resource" guid="d7c68500-34e4-11e9-bf4b-0d828c9b1ad6" />
   </owns>
   <owns predicate="4ff1859f-01d9-11e9-9c9d-8d52d6745026">
@@ -33,33 +31,7 @@
           <object statement-guid="9e68b735-e10c-11e8-a973-4fdaaa4aef8e" type="aggregate" guid="9e689022-e10c-11e8-a973-4fdaaa4aef8e" />
         </predicate>
         <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="95548b74-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Windows 2016 auf einer virtuellen Maschine.</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="4c9771e3-f16e-11e8-b3e7-15e2dd8d9b05">
-      <resource guid="4c974acc-f16e-11e8-b3e7-15e2dd8d9b05">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="4c974ace-f16e-11e8-b3e7-15e2dd8d9b05" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
-        </predicate>
-        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
-          <object statement-guid="4c974ad2-f16e-11e8-b3e7-15e2dd8d9b05" type="aggregate" guid="4c974acd-f16e-11e8-b3e7-15e2dd8d9b05" />
-        </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="c8e512eb-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Windows 2016 auf einer physischen Kontron Maschine.</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="c3315f84-0c3a-11e9-83ba-4d57b06560a2">
-      <resource guid="c3313871-0c3a-11e9-83ba-4d57b06560a2">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c3313873-0c3a-11e9-83ba-4d57b06560a2" type="resource" guid="c90907aa-e0fd-11e8-8499-a3b0fb3cad90" />
-        </predicate>
-        <predicate guid="c90907ab-e0fd-11e8-8499-a3b0fb3cad90">
-          <object statement-guid="6f3ccc5b-0c3b-11e9-83ba-4d57b06560a2" type="aggregate" guid="6f3ca548-0c3b-11e9-83ba-4d57b06560a2" />
-        </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="fcade8a2-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Redhat Enterprise Linux.</object>
+          <object statement-guid="95548b74-0cf4-11e9-be4f-03130cc057ef" type="literal">Verantwortlich für die Bereitstellung von Windows 2016</object>
         </predicate>
       </resource>
     </object>

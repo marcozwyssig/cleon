@@ -8,7 +8,7 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle __1_f3ca548__S_0c3b__S_11e9__S_83ba__S_4d57b06560a2 as "6f3ca548-0c3b-11e9-83ba-4d57b06560a2" <<$linux>> {
 }
 
 rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
@@ -17,9 +17,9 @@ rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Managemen
 }
 rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
 }
-Redhat__F_Virtual__F___N_RHT__S_VM__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
-Configuration__F_Management__F___N_CMG__O_ -up-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet
-Redhat__F_Satellite__F___N_RHS__O_ -up-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet
+__1_f3ca548__S_0c3b__S_11e9__S_83ba__S_4d57b06560a2 -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+Configuration__F_Management__F___N_CMG__O_ -up-> __1_f3ca548__S_0c3b__S_11e9__S_83ba__S_4d57b06560a2 : verwendet
+Redhat__F_Satellite__F___N_RHS__O_ -up-> __1_f3ca548__S_0c3b__S_11e9__S_83ba__S_4d57b06560a2 : verwendet
 
 ' Begin Protected Region [[layouting]]
 

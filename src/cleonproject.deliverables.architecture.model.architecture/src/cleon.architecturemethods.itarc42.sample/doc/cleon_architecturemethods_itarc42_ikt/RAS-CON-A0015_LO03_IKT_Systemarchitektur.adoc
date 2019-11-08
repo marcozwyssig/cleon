@@ -1244,20 +1244,16 @@ skinparam componentStyle uml2
 show stereotype
 
 rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
-	rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+	rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 	}		
-	rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
-	}		
-	rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
-	}		
-	rectangle CentOs__F_Virtual__F___N_CNT__S_VM__O_ as "CentOs Virtual (CNT-VM)" <<$linux>> {
+	rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 	}		
 
 }
 ...
 
 
-==== Windows 2016 Standard Virtual (WIN-2016-STD-VM) <SystemConfiguration> (Blackbox)
+==== Windows (WIN) <SystemConfiguration> (Blackbox)
 
 
 
@@ -1276,9 +1272,11 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
 
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
 rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 }
 rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
@@ -1313,23 +1311,24 @@ rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory
 }
 rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
 }
-Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
-Network__F_Policy__F_Service__F___N_NPS__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Application__F_Server__F___N_APP__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Issuing__F_CA__F___N_MCS__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Root__F_CA__F___N_MCR__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Jump__F_Host__F___N_JMP__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Active__F_Directory__F_Management__F___N_ADM__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Proxy__F___N_PRX__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Distributed__F_File__F_System__F___N_DFS__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-PRTG__F___N_PRT__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-PRTG__F_Probe__F___N_PRP__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Veeam__F_Backup__F_Management__F___N_VBM__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Slave__F_Active__F_Directory__F___N_RDC__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
-Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet
+Windows__F___N_WIN__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+Windows__F___N_WIN__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+Network__F_Policy__F_Service__F___N_NPS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Application__F_Server__F___N_APP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Issuing__F_CA__F___N_MCS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Root__F_CA__F___N_MCR__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Jump__F_Host__F___N_JMP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Active__F_Directory__F_Management__F___N_ADM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Proxy__F___N_PRX__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Distributed__F_File__F_System__F___N_DFS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F___N_PRT__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F_Probe__F___N_PRP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Management__F___N_VBM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Slave__F_Active__F_Directory__F___N_RDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
 ...
 
 
@@ -1343,92 +1342,7 @@ Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F_2016__F_Standard__
 
 
 
-==== Windows 2016 Standard Physical (WIN-2016-STD-PHY) <SystemConfiguration> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
-
-[plantuml, png]
-....
-skinparam monochrome true
-skinparam componentStyle uml2
-
-
-
-show stereotype
-
-rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
-}
-
-rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
-}
-rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
-}
-Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
-Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ : verwendet
-...
-
-
-
-
-===== Erfüllte Anforderungen
-
-
-
-
-
-
-
-==== Redhat Virtual (RHT-VM) <SystemConfiguration> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
-
-[plantuml, png]
-....
-skinparam monochrome true
-skinparam componentStyle uml2
-
-
-
-show stereotype
-
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
-}
-
-rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
-}
-rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Management (CMG)" <<$central_management_service>> {
-}
-rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
-}
-Redhat__F_Virtual__F___N_RHT__S_VM__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
-Configuration__F_Management__F___N_CMG__O_ -up-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet
-Redhat__F_Satellite__F___N_RHS__O_ -up-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet
-...
-
-
-
-
-===== Erfüllte Anforderungen
-
-
-
-
-
-
-
-==== CentOs Virtual (CNT-VM) <SystemConfiguration> (Blackbox)
+==== Linux (LIN) <SystemConfiguration> (Blackbox)
 
 
 
@@ -1553,12 +1467,12 @@ show stereotype
 rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
 }
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
-rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-ESX__F_Physical__F___N_VMH__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
-Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+ESXi__F___N_VMH__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
 ...
 
 
@@ -1594,9 +1508,9 @@ show stereotype
 rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
 }
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
-ESX__F_Physical__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
+ESXi__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
 ...
 
 
@@ -1628,7 +1542,7 @@ show stereotype
 rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
 	rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 	}		
-	rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+	rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 	}		
 
 }
@@ -1657,21 +1571,21 @@ show stereotype
 rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 }
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
 rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
 }
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
-}
 rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
 }
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 }
-Virtual__F_Machine__F___N_VM__O_ -down-> ESX__F_Physical__F___N_VMH__O_ : verwendet 
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Virtual__F_Machine__F___N_VM__O_ -down-> ESXi__F___N_VMH__O_ : verwendet 
 vCenter__F___N_VCE__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
-Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
 __X_FA__F___N_RSA__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
-Redhat__F_Virtual__F___N_RHT__S_VM__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Linux__F___N_LIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
 ...
 
 
@@ -1685,7 +1599,7 @@ Redhat__F_Virtual__F___N_RHT__S_VM__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : 
 
 
 
-==== ESX Physical (VMH) <SystemConfiguration> (Blackbox)
+==== ESXi (VMH) <SystemConfiguration> (Blackbox)
 
 
 
@@ -1704,7 +1618,7 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
 
 rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
@@ -1713,9 +1627,9 @@ rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_b
 }
 rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 }
-ESX__F_Physical__F___N_VMH__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
-ESX__F_Physical__F___N_VMH__O_ -down-> HPE__F_Server__F___N_HPE__O_ : verwendet 
-Virtual__F_Machine__F___N_VM__O_ -up-> ESX__F_Physical__F___N_VMH__O_ : verwendet
+ESXi__F___N_VMH__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+ESXi__F___N_VMH__O_ -down-> HPE__F_Server__F___N_HPE__O_ : verwendet 
+Virtual__F_Machine__F___N_VM__O_ -up-> ESXi__F___N_VMH__O_ : verwendet
 ...
 
 
@@ -1813,9 +1727,9 @@ show stereotype
 rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Network__F_Policy__F_Service__F___N_NPS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Network__F_Policy__F_Service__F___N_NPS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -1851,9 +1765,9 @@ show stereotype
 rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Proxy__F___N_PRX__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Proxy__F___N_PRX__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -1912,9 +1826,9 @@ show stereotype
 rectangle Application__F_Server__F___N_APP__O_ as "Application Server (APP)" <<$web_server>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Application__F_Server__F___N_APP__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Application__F_Server__F___N_APP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -1973,9 +1887,9 @@ show stereotype
 rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Distributed__F_File__F_System__F___N_DFS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Distributed__F_File__F_System__F___N_DFS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2097,9 +2011,9 @@ show stereotype
 rectangle Veeam__F_Backup__F_Management__F___N_VBM__O_ as "Veeam Backup Management (VBM)" <<$backup_local>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Veeam__F_Backup__F_Management__F___N_VBM__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Veeam__F_Backup__F_Management__F___N_VBM__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2135,9 +2049,9 @@ show stereotype
 rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2196,9 +2110,9 @@ show stereotype
 rectangle Jump__F_Host__F___N_JMP__O_ as "Jump Host (JMP)" <<$central_management_service>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Jump__F_Host__F___N_JMP__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Jump__F_Host__F___N_JMP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2261,9 +2175,9 @@ show stereotype
 rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Management (CMG)" <<$central_management_service>> {
 }
 
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 }
-Configuration__F_Management__F___N_CMG__O_ -down-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet 
+Configuration__F_Management__F___N_CMG__O_ -down-> Linux__F___N_LIN__O_ : verwendet 
 ...
 
 
@@ -2299,9 +2213,9 @@ show stereotype
 rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
 }
 
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 }
-Redhat__F_Satellite__F___N_RHS__O_ -down-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet 
+Redhat__F_Satellite__F___N_RHS__O_ -down-> Linux__F___N_LIN__O_ : verwendet 
 ...
 
 
@@ -2337,9 +2251,9 @@ show stereotype
 rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2400,9 +2314,9 @@ show stereotype
 rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-PRTG__F___N_PRT__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+PRTG__F___N_PRT__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2438,9 +2352,9 @@ show stereotype
 rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-PRTG__F_Probe__F___N_PRP__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+PRTG__F_Probe__F___N_PRP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2501,12 +2415,9 @@ show stereotype
 rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
-}
-Master__F_Active__F_Directory__F___N_MDC__O_ -down-> Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ : verwendet 
-Master__F_Active__F_Directory__F___N_MDC__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Master__F_Active__F_Directory__F___N_MDC__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2542,9 +2453,9 @@ show stereotype
 rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Slave__F_Active__F_Directory__F___N_RDC__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Slave__F_Active__F_Directory__F___N_RDC__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2605,9 +2516,9 @@ show stereotype
 rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Active__F_Directory__F_Management__F___N_ADM__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Active__F_Directory__F_Management__F___N_ADM__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2716,9 +2627,9 @@ show stereotype
 rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Issuing__F_CA__F___N_MCS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Issuing__F_CA__F___N_MCS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2754,9 +2665,9 @@ show stereotype
 rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Root__F_CA__F___N_MCR__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Root__F_CA__F___N_MCR__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2845,9 +2756,9 @@ show stereotype
 rectangle Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ as "Endpoint Protection Orchestrator (EPO)" <<$lock_with_key_security>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 ...
 
 
@@ -2862,21 +2773,7 @@ Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -down-> Windows__F_2016__F
 
 
 
-=== Ebene 4: Windows 2016 Standard Virtual (WIN-2016-STD-VM) <SystemConfiguration> (Whitebox)
-
-
-
-
-
-
-=== Ebene 4: Windows 2016 Standard Physical (WIN-2016-STD-PHY) <SystemConfiguration> (Whitebox)
-
-
-
-
-
-
-=== Ebene 4: Redhat Virtual (RHT-VM) <SystemConfiguration> (Whitebox)
+=== Ebene 4: Windows (WIN) <SystemConfiguration> (Whitebox)
 
 
 
@@ -2911,7 +2808,7 @@ Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -down-> Windows__F_2016__F
 
 
 
-=== Ebene 4: ESX Physical (VMH) <SystemConfiguration> (Whitebox)
+=== Ebene 4: ESXi (VMH) <SystemConfiguration> (Whitebox)
 
 
 
@@ -3634,7 +3531,7 @@ rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
 			}
 		}
 		rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
-			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-00 (WIN-2016-STD-PHY)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
 				rectangle MDC__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MDC-NMS-BABS-00 [NMS - Stao A]" <<$domain_controller>> {
 				
 				}
@@ -3664,7 +3561,7 @@ rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
 			}
 		}
 		rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
-			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-10 (WIN-2016-STD-PHY)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
 				rectangle MDC__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MDC-NMS-BABS-10 [NMS - Stao B]" <<$domain_controller>> {
 				
 				}
@@ -3895,7 +3792,7 @@ rectangle EAZS as "EAZS" <<Standort>> {
 			}
 		}
 		rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
-			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-00 (WIN-2016-STD-PHY)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
 				rectangle MDC__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "MDC-NMS-BABS-00 [EAZS]" <<$domain_controller>> {
 				
 				}
@@ -3912,7 +3809,7 @@ rectangle EAZS as "EAZS" <<Standort>> {
 			}
 		}
 		rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
-			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-10 (WIN-2016-STD-PHY)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
 				rectangle MDC__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MDC-NMS-BABS-10 [EAZS]" <<$domain_controller>> {
 				
 				}
@@ -4026,7 +3923,7 @@ rectangle NMS__F___S___F_Stao__F_A as "NMS - Stao A" <<Standort>> {
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-00 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MDC-NMS-BABS-00 [NMS - Stao A]" <<$domain_controller>> {
 			
 			}
@@ -4128,7 +4025,7 @@ rectangle NMS__F___S___F_Stao__F_B as "NMS - Stao B" <<Standort>> {
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-10 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MDC-NMS-BABS-10 [NMS - Stao B]" <<$domain_controller>> {
 			
 			}
@@ -4387,7 +4284,7 @@ rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-00 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "MDC-NMS-BABS-00 [EAZS]" <<$domain_controller>> {
 			
 			}
@@ -4404,7 +4301,7 @@ rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-10 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MDC-NMS-BABS-10 [EAZS]" <<$domain_controller>> {
 			
 			}
@@ -4554,7 +4451,7 @@ rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-N
 		}
 	}
 	rectangle PRP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRP-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle PRP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRP__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRP-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle PRP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRP-NMS-BABS-00 [NMS - Stao A]" <<$monitoring_store>> {
 			
 			}
@@ -4569,14 +4466,14 @@ rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-N
 		}
 	}
 	rectangle NPS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "NPS-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle NPS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "NPS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle NPS__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "NPS-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle NPS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "NPS-NMS-BABS-00 [NMS - Stao A]" <<$credentials>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "JMP-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-01 [NMS - Stao A]" <<$central_management_service>> {
 			
 			}
@@ -4634,28 +4531,28 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-01 [NMS - Stao A]" <<$virtual_application_server>> {
 	rectangle MCS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCS-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle MCS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MCS-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle MCS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MCS-NMS-BABS-00 [NMS - Stao A]" <<$certificate_authority>> {
 			
 			}
 		}
 	}
 	rectangle APP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "APP-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle APP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle APP__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "APP-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle APP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "APP-NMS-BABS-00 [NMS - Stao A]" <<$web_server>> {
 			
 			}
 		}
 	}
 	rectangle PRT__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRT-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle PRT__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRT-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle PRT__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRT-NMS-BABS-00 [NMS - Stao A]" <<$monitoring_store>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "JMP-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "JMP-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-00 [NMS - Stao A]" <<$central_management_service>> {
 			
 			}
@@ -4667,42 +4564,42 @@ rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-N
 		}
 	}
 	rectangle VBM__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VBM-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle VBM__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "VBM-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle VBM__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "VBM-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle VBM__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VBM-NMS-BABS-00 [NMS - Stao A]" <<$backup_local>> {
 			
 			}
 		}
 	}
 	rectangle MCR__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCR-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle MCR__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCR-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle MCR__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MCR-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle MCR__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MCR-NMS-BABS-00 [NMS - Stao A]" <<$certificate_authority>> {
 			
 			}
 		}
 	}
 	rectangle EPO__S_NMS__S_BABS__S_00__F___N_VM__O_ as "EPO-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle EPO__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "EPO-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle EPO__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "EPO-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle EPO__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "EPO-NMS-BABS-00 [NMS - Stao A]" <<$lock_with_key_security>> {
 			
 			}
 		}
 	}
 	rectangle CMG__S_NMS__S_BABS__S_00__F___N_VM__O_ as "CMG-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle CMG__S_NMS__S_BABS__S_00__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-00 (RHT-VM)" <<$linux>> {
+		rectangle CMG__S_NMS__S_BABS__S_00__F___N_LIN__O_ as "CMG-NMS-BABS-00 (LIN)" <<$linux>> {
 			rectangle CMG__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "CMG-NMS-BABS-00 [NMS - Stao A]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle DFS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "DFS-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle DFS__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "DFS-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle DFS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "DFS-NMS-BABS-00 [NMS - Stao A]" <<$file_server>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_02__F___N_VM__O_ as "JMP-NMS-BABS-02 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_02__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-02 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_02__F___N_WIN__O_ as "JMP-NMS-BABS-02 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-02 [NMS - Stao A]" <<$central_management_service>> {
 			
 			}
@@ -4740,28 +4637,28 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-02 [NMS - Stao A]" <<$virtual_application_server>> {
 	rectangle PRX__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRX-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle PRX__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRX-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRX__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRX-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle PRX__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRX-NMS-BABS-00 [NMS - Stao A]" <<$reverse_proxy>> {
 			
 			}
 		}
 	}
 	rectangle VBP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "VBP-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle VBP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "VBP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle VBP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "VBP-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle VBP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VBP-NMS-BABS-01 [NMS - Stao A]" <<$backup_local>> {
 			
 			}
 		}
 	}
 	rectangle WUS__S_NMS__S_BABS__S_01__F___N_VM__O_ as "WUS-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle WUS__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "WUS-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle WUS__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "WUS-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle WUS__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "WUS-NMS-BABS-01 [NMS - Stao A]" <<$install>> {
 			
 			}
 		}
 	}
 	rectangle RHS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "RHS-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle RHS__S_NMS__S_BABS__S_00__F___N_RHT__S_VM__O_ as "RHS-NMS-BABS-00 (RHT-VM)" <<$linux>> {
+		rectangle RHS__S_NMS__S_BABS__S_00__F___N_LIN__O_ as "RHS-NMS-BABS-00 (LIN)" <<$linux>> {
 			rectangle RHS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "RHS-NMS-BABS-00 [NMS - Stao A]" <<$install>> {
 			
 			}
@@ -4803,7 +4700,7 @@ rectangle VMH__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-N
 		}
 	}
 	rectangle PRP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle PRP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle PRP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRP-NMS-BABS-10 [NMS - Stao B]" <<$monitoring_store>> {
 			
 			}
@@ -4818,14 +4715,14 @@ rectangle VMH__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-N
 		}
 	}
 	rectangle NPS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "NPS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle NPS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "NPS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle NPS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "NPS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle NPS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "NPS-NMS-BABS-10 [NMS - Stao B]" <<$credentials>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "JMP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "JMP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-10 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
@@ -4872,49 +4769,49 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-11 [NMS - Stao B]" <<$virtual_application_server>> {
 	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MCS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MCS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MCS-NMS-BABS-10 [NMS - Stao B]" <<$certificate_authority>> {
 			
 			}
 		}
 	}
 	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "APP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle APP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "APP-NMS-BABS-10 [NMS - Stao B]" <<$web_server>> {
 			
 			}
 		}
 	}
 	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRT-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle PRT__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRT-NMS-BABS-10 [NMS - Stao B]" <<$monitoring_store>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "JMP-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-01 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle CMG__S_NMS__S_BABS__S_10__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-10 (RHT-VM)" <<$linux>> {
+		rectangle CMG__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "CMG-NMS-BABS-10 (LIN)" <<$linux>> {
 			rectangle CMG__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "CMG-NMS-BABS-10 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "DFS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle DFS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "DFS-NMS-BABS-10 [NMS - Stao B]" <<$file_server>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-12 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__O_ as "JMP-NMS-BABS-12 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-12 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
@@ -4952,28 +4849,28 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-12 [NMS - Stao B]" <<$virtual_application_server>> {
 	rectangle PRX__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRX-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle PRX__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRX-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRX__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRX-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle PRX__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRX-NMS-BABS-10 [NMS - Stao B]" <<$reverse_proxy>> {
 			
 			}
 		}
 	}
 	rectangle VBP__S_NMS__S_BABS__S_11__F___N_VM__O_ as "VBP-NMS-BABS-11 (VM)" <<$virtual_server>> {
-		rectangle VBP__S_NMS__S_BABS__S_11__F___N_WIN__S_2016__S_STD__S_VM__O_ as "VBP-NMS-BABS-11 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle VBP__S_NMS__S_BABS__S_11__F___N_WIN__O_ as "VBP-NMS-BABS-11 (WIN)" <<$windows_server>> {
 			rectangle VBP__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VBP-NMS-BABS-11 [NMS - Stao B]" <<$backup_local>> {
 			
 			}
 		}
 	}
 	rectangle WUS__S_NMS__S_BABS__S_11__F___N_VM__O_ as "WUS-NMS-BABS-11 (VM)" <<$virtual_server>> {
-		rectangle WUS__S_NMS__S_BABS__S_11__F___N_WIN__S_2016__S_STD__S_VM__O_ as "WUS-NMS-BABS-11 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle WUS__S_NMS__S_BABS__S_11__F___N_WIN__O_ as "WUS-NMS-BABS-11 (WIN)" <<$windows_server>> {
 			rectangle WUS__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "WUS-NMS-BABS-11 [NMS - Stao B]" <<$install>> {
 			
 			}
 		}
 	}
 	rectangle RHS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "RHS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle RHS__S_NMS__S_BABS__S_10__F___N_RHT__S_VM__O_ as "RHS-NMS-BABS-10 (RHT-VM)" <<$linux>> {
+		rectangle RHS__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "RHS-NMS-BABS-10 (LIN)" <<$linux>> {
 			rectangle RHS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "RHS-NMS-BABS-10 [NMS - Stao B]" <<$install>> {
 			
 			}
@@ -5014,39 +4911,39 @@ show stereotype
 
 rectangle VMH__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-906-BABS-00 [EAZS]" <<$virtual_application_server>> {
 	rectangle DFS__S_906__S_BABS__S_00__F___N_VM__O_ as "DFS-906-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle DFS__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle DFS__S_906__S_BABS__S_00__F___N_WIN__O_ as "DFS-906-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle DFS__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "DFS-906-BABS-00 [EAZS]" <<$file_server>> {
 			
 			}
 		}
 	}
 	rectangle RDC__S_906__S_BABS__S_00__F___N_VM__O_ as "RDC-906-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle RDC__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "RDC-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle RDC__S_906__S_BABS__S_00__F___N_WIN__O_ as "RDC-906-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle RDC__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "RDC-906-BABS-00 [EAZS]" <<$domain_controller>> {
 			
 			}
 		}
 	}
 	rectangle SPM__S_906__S_BABS__S_00__F___N_VM__O_ as "SPM-906-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle SPM__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "SPM-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle SPM__S_906__S_BABS__S_00__F___N_WIN__O_ as "SPM-906-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle SPM__S_906__S_BABS__S_00 as "SPM-906-BABS-00" <<Applikation>> {
 			}
 		}
 	}
 	rectangle AM__S_906__S_BABS__S_00__F___N_VM__O_ as "AM-906-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle AM__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "AM-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle AM__S_906__S_BABS__S_00__F___N_WIN__O_ as "AM-906-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle AM__S_906__S_BABS__S_00 as "AM-906-BABS-00" <<Applikation>> {
 			}
 		}
 	}
 	rectangle CDF__S_906__S_BABS__S_00__F___N_VM__O_ as "CDF-906-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle CDF__S_906__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "CDF-906-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle CDF__S_906__S_BABS__S_00__F___N_WIN__O_ as "CDF-906-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle CDF__S_906__S_BABS__S_00 as "CDF-906-BABS-00" <<Applikation>> {
 			}
 		}
 	}
 	rectangle JMP__S_906__S_BABS__S_01__F___N_VM__O_ as "JMP-906-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_906__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-906-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_906__S_BABS__S_01__F___N_WIN__O_ as "JMP-906-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_906__S_BABS__S_01__F__aA_EAZS_aC_ as "JMP-906-BABS-01 [EAZS]" <<$central_management_service>> {
 			
 			}
@@ -5093,49 +4990,49 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_11__F__aA_EAZS_aC_ as "VMH-NMS-BABS-11 [EAZS]" <<$virtual_application_server>> {
 	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MCS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MCS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MCS-NMS-BABS-10 [EAZS]" <<$certificate_authority>> {
 			
 			}
 		}
 	}
 	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "APP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle APP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "APP-NMS-BABS-10 [EAZS]" <<$web_server>> {
 			
 			}
 		}
 	}
 	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRT-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle PRT__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "PRT-NMS-BABS-10 [EAZS]" <<$monitoring_store>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "JMP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "JMP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "JMP-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle CMG__S_NMS__S_BABS__S_10__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-10 (RHT-VM)" <<$linux>> {
+		rectangle CMG__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "CMG-NMS-BABS-10 (LIN)" <<$linux>> {
 			rectangle CMG__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "CMG-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "DFS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle DFS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "DFS-NMS-BABS-10 [EAZS]" <<$file_server>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-12 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__O_ as "JMP-NMS-BABS-12 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_12__F__aA_EAZS_aC_ as "JMP-NMS-BABS-12 [EAZS]" <<$central_management_service>> {
 			
 			}
@@ -6042,7 +5939,7 @@ Eine Zone wird in eine Subzone weiter zerlegt, wobei eine Subzone einem jeweilig
 
 
 
-==== ESX Physical (VMH)
+==== ESXi (VMH)
 
 
 
@@ -6278,16 +6175,9 @@ ZONE__S_CH__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_CH__S_MGMT__S_POLYCOM
 In diesem Kapitel wird die Schätzung des Bandbreitenbedarfs pro System-Konfiguration aufgeführt. Bei der Schätzung des Bandbreitenbedarfs wird der Bedarf und der Durchschnitt angegeben, wobei zu beachten ist, dass gewisse System-Konfigurationen über L3B kommunzieren und somit die Gesamtmenge die Schätzung des bidirektionalen Verkehrs beinhaltet.
 
 
-==== Windows 2016 Standard Virtual (WIN-2016-STD-VM)
+==== Windows (WIN)
 
 In der Schätzung der Bandbreite wurde der RDP Zugriff und das Einspielen von Windows Patches (WSUS) berücksichtigt.
-
-
-
-
-==== Redhat Virtual (RHT-VM)
-
-In der Schätzung der Bandbreite wurde der SSH Zugriff und das Einspielen von Patches (Redhat Satellite) berücksichtigt.
 
 
 
@@ -6306,7 +6196,7 @@ In der Schätzung der Bandbreite wurde der IPMI Zugriff (ILO) berücksichtigt.
 
 
 
-==== ESX Physical (VMH)
+==== ESXi (VMH)
 
 In der Schätzung der Bandbreite wurde die Aktualisierung des Hypervisors und der Managementzugriff berücksichtigt.
 
@@ -6538,7 +6428,7 @@ Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version 
 
 
 
-======= ESX Physical (VMH) Aktivitäten
+======= ESXi (VMH) Aktivitäten
 
 
 
@@ -6733,7 +6623,7 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-======= ESX Physical (VMH) Aktivitäten
+======= ESXi (VMH) Aktivitäten
 
 
 

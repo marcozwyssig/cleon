@@ -2996,31 +2996,15 @@
 					<db:tbody>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.00cb6c3a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
+								<db:para>Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.00cb6c3a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von Windows 2016 auf einer virtuellen Maschine.</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.02966803-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von Windows 2016 auf einer physischen Kontron Maschine.</db:para>
+								<db:para>Verantwortlich f&#252;r die Bereitstellung von Windows 2016</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Redhat Virtual (RHT-VM) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.0ba96716-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von Redhat Enterprise Linux.</db:para>
-							</db:td>
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>CentOs Virtual (CNT-VM) &lt;SystemConfiguration&gt; (Blackbox) []</db:para>
+								<db:para>Linux (LIN) &lt;SystemConfiguration&gt; (Blackbox) []</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
@@ -3029,14 +3013,14 @@
 				</db:informaltable>
 				<db:para>Dieser Baustein ist Bestandteil des Bausteins Infrastruktur [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9b28681e-eccc-11e8-b4c8-834dd6818408"/>]</db:para>
 				<db:section xml:id="ea.db8dcae9-ee4f-11e8-9841-e9df8f3366fd">
-					<db:title>Windows 2016 Standard Virtual (WIN-2016-STD-VM) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows 2016 Standard Virtual (WIN-2016-STD-VM) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows (WIN) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
 					<db:itemizedlist>
 						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows 2016 Standard Virtual (WIN-2016-STD-VM) zu anderen Bausteinen (in beide Richtungen)</db:para>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows (WIN) zu anderen Bausteinen (in beide Richtungen)</db:para>
 						</db:listitem>
 						<db:listitem>
 							<db:para>Erfüllte Anforderungen</db:para>
@@ -3049,13 +3033,13 @@
 						<db:para>Nachfolgend werden die Abh&#228;ngigkeiten des Bausteins in einer Abbildung dargestellt:</db:para>
 						<db:mediaobject>
 							<db:imageobject>
-								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_Windows_2016_Standard_Virtual__WIN-2016-STD-VM___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
+								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_Windows__WIN___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
 							</db:imageobject>
 						 	<db:caption>
-						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm Windows 2016 Standard Virtual (WIN-2016-STD-VM) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
+						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
 						  	</db:caption>	
 						</db:mediaobject>
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows 2016 Standard Virtual (WIN-2016-STD-VM) tabellarisch aufgelistet:</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows (WIN) tabellarisch aufgelistet:</db:para>
 						<db:informaltable style="HERMES 5">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -3068,15 +3052,21 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM) -> Virtual Machine (VM)</db:para>
+										<db:para>Windows (WIN) -> Kontron Server (KON)</db:para>
 									</db:td>
 									<db:td>
-										<db:para>Die Windows System-Konfiguration wird in einer virtuellen Maschine betrieben.</db:para>
 									</db:td>
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Network Policy Service (NPS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Windows (WIN) -> Virtual Machine (VM)</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Network Policy Service (NPS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3084,7 +3074,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Application Server (APP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Application Server (APP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3092,7 +3082,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Issuing CA (MCS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Issuing CA (MCS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3100,7 +3090,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Root CA (MCR) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Root CA (MCR) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die Root CA verwendet die AD CS Rolle von Microsoft Windows Server 2016.</db:para>
@@ -3108,7 +3098,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Jump Host (JMP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Jump Host (JMP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3116,7 +3106,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Active Directory Management (ADM) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Active Directory Management (ADM) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3124,7 +3114,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Endpoint Protection Orchestrator (EPO) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Endpoint Protection Orchestrator (EPO) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3132,7 +3122,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Proxy (PRX) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Proxy (PRX) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3140,7 +3130,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Distributed File System (DFS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Distributed File System (DFS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3148,7 +3138,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>PRTG (PRT) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>PRTG (PRT) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3156,7 +3146,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>PRTG Probe (PRP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>PRTG Probe (PRP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3164,7 +3154,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Veeam Backup Management (VBM) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Veeam Backup Management (VBM) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3172,7 +3162,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Windows Server Update Services (WUS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Windows Server Update Services (WUS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3180,7 +3170,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Veeam Backup Proxy (VBP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Veeam Backup Proxy (VBP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3188,7 +3178,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Slave Active Directory (RDC) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Slave Active Directory (RDC) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3196,7 +3186,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Master Active Directory (MDC) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Master Active Directory (MDC) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -3211,161 +3201,19 @@
 						
 						
 						
-						<db:para>Der Baustein Windows 2016 Standard Virtual (WIN-2016-STD-VM) erfüllt keine expliziten Anforderungen.</db:para>
-						
-					</db:section>
-				</db:section>
-				<db:section xml:id="ea.9e72c29b-09f1-11e9-abef-3d869859c931">
-					<db:title>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
-					
-					
-					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
-					<db:section xml:id="ea.984b36a4-0df7-11e9-ac05-81da9d8c018d">
-						<db:title>Abh&#228;ngigkeiten</db:title>
-						
-						
-						<db:para>Nachfolgend werden die Abh&#228;ngigkeiten des Bausteins in einer Abbildung dargestellt:</db:para>
-						<db:mediaobject>
-							<db:imageobject>
-								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_Windows_2016_Standard_Physical__WIN-2016-STD-PHY___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
-							</db:imageobject>
-						 	<db:caption>
-						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
-						  	</db:caption>	
-						</db:mediaobject>
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) tabellarisch aufgelistet:</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Abhängigkeit</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) -> Kontron Server (KON)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration kann auf einer Kontron Maschine betrieben werden.</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Master Active Directory (MDC) -> Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration wird in einer physischen Windows Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
-						
-					</db:section>
-					<db:section xml:id="ea.6fe0d6e2-0df7-11e9-ac05-81da9d8c018d">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
-						
-						
-						
-						<db:para>Der Baustein Windows 2016 Standard Physical (WIN-2016-STD-PHY) erfüllt keine expliziten Anforderungen.</db:para>
-						
-					</db:section>
-				</db:section>
-				<db:section xml:id="ea.fdd96fbf-0c3b-11e9-83ba-4d57b06560a2">
-					<db:title>Redhat Virtual (RHT-VM) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
-					
-					
-					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Redhat Virtual (RHT-VM) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Redhat Virtual (RHT-VM) zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
-					<db:section xml:id="ea.961ac30a-0df7-11e9-ac05-81da9d8c018d">
-						<db:title>Abh&#228;ngigkeiten</db:title>
-						
-						
-						<db:para>Nachfolgend werden die Abh&#228;ngigkeiten des Bausteins in einer Abbildung dargestellt:</db:para>
-						<db:mediaobject>
-							<db:imageobject>
-								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_Redhat_Virtual__RHT-VM___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
-							</db:imageobject>
-						 	<db:caption>
-						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm Redhat Virtual (RHT-VM) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
-						  	</db:caption>	
-						</db:mediaobject>
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Redhat Virtual (RHT-VM) tabellarisch aufgelistet:</db:para>
-						<db:informaltable style="HERMES 5">
-							<db:col width="40%" />
-							<db:col width="60%" />
-							<db:thead>
-								<db:tr>
-									<db:th>Abhängigkeit</db:th>
-									<db:th>Beschreibung</db:th>
-								</db:tr>
-							</db:thead>
-							<db:tbody>			
-								<db:tr>
-									<db:td>
-										<db:para>Redhat Virtual (RHT-VM) -> Virtual Machine (VM)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration wird in einer virtuellen Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Configuration Management (CMG) -> Redhat Virtual (RHT-VM)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration wird in einer virtuellen Redhat Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Redhat Satellite (RHS) -> Redhat Virtual (RHT-VM)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-							</db:tbody>
-						</db:informaltable>	
-						
-					</db:section>
-					<db:section xml:id="ea.8f3fd917-0df7-11e9-ac05-81da9d8c018d">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
-						
-						
-						
-						<db:para>Der Baustein Redhat Virtual (RHT-VM) erfüllt keine expliziten Anforderungen.</db:para>
+						<db:para>Der Baustein Windows (WIN) erfüllt keine expliziten Anforderungen.</db:para>
 						
 					</db:section>
 				</db:section>
 				<db:section xml:id="ea.f81e47f8-35a9-11e9-9d58-25409887bb2a">
-					<db:title>CentOs Virtual (CNT-VM) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>Linux (LIN) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins CentOs Virtual (CNT-VM) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Linux (LIN) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
 					<db:itemizedlist>
 						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins CentOs Virtual (CNT-VM) zu anderen Bausteinen (in beide Richtungen)</db:para>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Linux (LIN) zu anderen Bausteinen (in beide Richtungen)</db:para>
 						</db:listitem>
 						<db:listitem>
 							<db:para>Erfüllte Anforderungen</db:para>
@@ -3376,7 +3224,42 @@
 						
 						
 						
-						<db:para>Der Baustein CentOs Virtual (CNT-VM) verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Linux (LIN) tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Linux (LIN) -> Virtual Machine (VM)</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Configuration Management (CMG) -> Linux (LIN)</db:para>
+									</db:td>
+									<db:td>
+										<db:para>Die System-Konfiguration wird in einer virtuellen Linux Maschine betrieben.</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Redhat Satellite (RHS) -> Linux (LIN)</db:para>
+									</db:td>
+									<db:td>
+										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
 						
 					</db:section>
 					<db:section xml:id="ea.fcfc02e8-35a9-11e9-9d58-25409887bb2a">
@@ -3384,7 +3267,7 @@
 						
 						
 						
-						<db:para>Der Baustein CentOs Virtual (CNT-VM) erfüllt keine expliziten Anforderungen.</db:para>
+						<db:para>Der Baustein Linux (LIN) erfüllt keine expliziten Anforderungen.</db:para>
 						
 					</db:section>
 				</db:section>
@@ -3552,7 +3435,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>ESX Physical (VMH) -> Kontron Server (KON)</db:para>
+										<db:para>ESXi (VMH) -> Kontron Server (KON)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Der Hypervisor kann auf einer Kontron Maschine betrieben werden.</db:para>
@@ -3560,10 +3443,9 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) -> Kontron Server (KON)</db:para>
+										<db:para>Windows (WIN) -> Kontron Server (KON)</db:para>
 									</db:td>
 									<db:td>
-										<db:para>Die System-Konfiguration kann auf einer Kontron Maschine betrieben werden.</db:para>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -3619,7 +3501,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>ESX Physical (VMH) -> HPE Server (HPE)</db:para>
+										<db:para>ESXi (VMH) -> HPE Server (HPE)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Der Hypervisor kann auf einer HP Maschine betrieben werden.</db:para>
@@ -3675,7 +3557,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>ESX Physical (VMH) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.21860669-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
+								<db:para>ESXi (VMH) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.21860669-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
 								<db:para>Verantwortlich f&#252;r die Bereitstellung eines Hypervisors.</db:para>
@@ -3724,7 +3606,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Virtual Machine (VM) -> ESX Physical (VMH)</db:para>
+										<db:para>Virtual Machine (VM) -> ESXi (VMH)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die VMs werden auf dem jeweiligen Hypervisor betrieben.</db:para>
@@ -3740,14 +3622,6 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM) -> Virtual Machine (VM)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die Windows System-Konfiguration wird in einer virtuellen Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
 										<db:para>2FA (RSA) -> Virtual Machine (VM)</db:para>
 									</db:td>
 									<db:td>
@@ -3756,10 +3630,16 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Redhat Virtual (RHT-VM) -> Virtual Machine (VM)</db:para>
+										<db:para>Linux (LIN) -> Virtual Machine (VM)</db:para>
 									</db:td>
 									<db:td>
-										<db:para>Die System-Konfiguration wird in einer virtuellen Maschine betrieben.</db:para>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Windows (WIN) -> Virtual Machine (VM)</db:para>
+									</db:td>
+									<db:td>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -3776,14 +3656,14 @@
 					</db:section>
 				</db:section>
 				<db:section xml:id="ea.bbafb299-0cf7-11e9-be4f-03130cc057ef">
-					<db:title>ESX Physical (VMH) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>ESXi (VMH) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins ESX Physical (VMH) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins ESXi (VMH) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
 					<db:itemizedlist>
 						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins ESX Physical (VMH) zu anderen Bausteinen (in beide Richtungen)</db:para>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins ESXi (VMH) zu anderen Bausteinen (in beide Richtungen)</db:para>
 						</db:listitem>
 						<db:listitem>
 							<db:para>Erfüllte Anforderungen</db:para>
@@ -3796,13 +3676,13 @@
 						<db:para>Nachfolgend werden die Abh&#228;ngigkeiten des Bausteins in einer Abbildung dargestellt:</db:para>
 						<db:mediaobject>
 							<db:imageobject>
-								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_ESX_Physical__VMH___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
+								<db:imagedata fileref="..\..\img\cleon_architecturemethods_itarc42_ikt/Bausteinabh_ngigkeitsdiagramm_ESXi__VMH___SystemConfiguration___Blackbox_.puml.png" format="PNG"/>
 							</db:imageobject>
 						 	<db:caption>
-						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm ESX Physical (VMH) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
+						    		<db:para>Bausteinabh&#228;ngigkeitsdiagramm ESXi (VMH) &lt;SystemConfiguration&gt; (Blackbox)</db:para>
 						  	</db:caption>	
 						</db:mediaobject>
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins ESX Physical (VMH) tabellarisch aufgelistet:</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins ESXi (VMH) tabellarisch aufgelistet:</db:para>
 						<db:informaltable style="HERMES 5">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -3815,7 +3695,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>ESX Physical (VMH) -> Kontron Server (KON)</db:para>
+										<db:para>ESXi (VMH) -> Kontron Server (KON)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Der Hypervisor kann auf einer Kontron Maschine betrieben werden.</db:para>
@@ -3823,7 +3703,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>ESX Physical (VMH) -> HPE Server (HPE)</db:para>
+										<db:para>ESXi (VMH) -> HPE Server (HPE)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Der Hypervisor kann auf einer HP Maschine betrieben werden.</db:para>
@@ -3831,7 +3711,7 @@
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Virtual Machine (VM) -> ESX Physical (VMH)</db:para>
+										<db:para>Virtual Machine (VM) -> ESXi (VMH)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die VMs werden auf dem jeweiligen Hypervisor betrieben.</db:para>
@@ -3846,7 +3726,7 @@
 						
 						
 						
-						<db:para>Der Baustein ESX Physical (VMH) erfüllt keine expliziten Anforderungen.</db:para>
+						<db:para>Der Baustein ESXi (VMH) erfüllt keine expliziten Anforderungen.</db:para>
 						
 					</db:section>
 				</db:section>
@@ -3983,7 +3863,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Network Policy Service (NPS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Network Policy Service (NPS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4042,7 +3922,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Proxy (PRX) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Proxy (PRX) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4141,7 +4021,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Application Server (APP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Application Server (APP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4239,7 +4119,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Distributed File System (DFS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Distributed File System (DFS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4440,7 +4320,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Veeam Backup Management (VBM) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Veeam Backup Management (VBM) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4499,7 +4379,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Veeam Backup Proxy (VBP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Veeam Backup Proxy (VBP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4595,7 +4475,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Jump Host (JMP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Jump Host (JMP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4710,10 +4590,10 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Configuration Management (CMG) -> Redhat Virtual (RHT-VM)</db:para>
+										<db:para>Configuration Management (CMG) -> Linux (LIN)</db:para>
 									</db:td>
 									<db:td>
-										<db:para>Die System-Konfiguration wird in einer virtuellen Redhat Maschine betrieben.</db:para>
+										<db:para>Die System-Konfiguration wird in einer virtuellen Linux Maschine betrieben.</db:para>
 									</db:td>
 								</db:tr>
 							</db:tbody>
@@ -4769,7 +4649,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Redhat Satellite (RHS) -> Redhat Virtual (RHT-VM)</db:para>
+										<db:para>Redhat Satellite (RHS) -> Linux (LIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4828,7 +4708,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Windows Server Update Services (WUS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Windows Server Update Services (WUS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4938,7 +4818,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>PRTG (PRT) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>PRTG (PRT) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -4997,7 +4877,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>PRTG Probe (PRP) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>PRTG Probe (PRP) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5103,15 +4983,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Master Active Directory (MDC) -> Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-									</db:td>
-									<db:td>
-										<db:para>Die System-Konfiguration wird in einer physischen Windows Maschine betrieben.</db:para>
-									</db:td>
-								</db:tr>
-								<db:tr>
-									<db:td>
-										<db:para>Master Active Directory (MDC) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Master Active Directory (MDC) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5170,7 +5042,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Slave Active Directory (RDC) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Slave Active Directory (RDC) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5275,7 +5147,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Active Directory Management (ADM) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Active Directory Management (ADM) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5495,7 +5367,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Issuing CA (MCS) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Issuing CA (MCS) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5554,7 +5426,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Root CA (MCR) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Root CA (MCR) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die Root CA verwendet die AD CS Rolle von Microsoft Windows Server 2016.</db:para>
@@ -5650,7 +5522,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Endpoint Protection Orchestrator (EPO) -> Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+										<db:para>Endpoint Protection Orchestrator (EPO) -> Windows (WIN)</db:para>
 									</db:td>
 									<db:td>
 										<db:para>Die System-Konfiguration wird in einer virtuellen Windows Maschine betrieben.</db:para>
@@ -5674,7 +5546,7 @@
 		<db:section>
 			<db:title>Ebene 4</db:title>
 			<db:section xml:id="ea.00cb6c3a-0ceb-11e9-8fb3-3d281af33bda">
-				<db:title>Ebene 4: Windows 2016 Standard Virtual (WIN-2016-STD-VM) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
+				<db:title>Ebene 4: Windows (WIN) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
 				
 				
 				
@@ -5709,83 +5581,6 @@
 								</db:td>			
 								<db:td>
 									<db:para>McAfee Endpoint</db:para>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
-				</db:section>
-				
-			</db:section>
-			<db:section xml:id="ea.02966803-0ceb-11e9-8fb3-3d281af33bda">
-				<db:title>Ebene 4: Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
-				
-				
-				
-				<db:para><db:emphasis role="strong">Beschreibung</db:emphasis></db:para>
-				<db:para>Die System-Konfiguration enth&#228;lt die Bereitstellung von Microsoft Windows 2016 Standard auf einer physischen Kontron Maschinen.</db:para>
-				<db:para>Die Windows Konfiguration enth&#228;lt alle notwendigen Hardware-Treiber f&#252;r den optimalen Betrieb des Betriebssystems.</db:para>
-				<db:para>Die Windows Konfiguration ist auf Basis des Atos Image realisiert, so dass die entsprechenden Hardening Konfigurationen (Best Practice) enthalten sind.</db:para>
-				<db:para>Die System-Konfiguration enth&#228;lt die Bereitstellung von Microsoft Windows 2016 Standard auf einer physischen Kontron Maschinen.</db:para>
-				<db:para>Dieser Baustein ist Bestandteil des Bausteins Operating System [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da97ab45-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
-				<db:section>
-					<db:title>Verwendete Produkte</db:title>
-				<db:informaltable style="HERMES 5">
-						<db:col width="50%" />
-						<db:col width="50%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Hersteller</db:th>			
-								<db:th>Produkt</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Microsoft</db:para>
-								</db:td>			
-								<db:td>
-									<db:para>Microsoft Windows Server</db:para>
-								</db:td>
-							</db:tr>
-							<db:tr>
-								<db:td>
-									<db:para>McAfee</db:para>
-								</db:td>			
-								<db:td>
-									<db:para>McAfee Endpoint</db:para>
-								</db:td>
-							</db:tr>
-						</db:tbody>
-					</db:informaltable>
-				</db:section>
-				
-			</db:section>
-			<db:section xml:id="ea.0ba96716-0ceb-11e9-8fb3-3d281af33bda">
-				<db:title>Ebene 4: Redhat Virtual (RHT-VM) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
-				
-				
-				
-				<db:para><db:emphasis role="strong">Beschreibung</db:emphasis></db:para>
-				<db:para>Die System-Konfiguration enth&#228;lt die Bereitstellung von Redhat Enterprise Linux auf virtuellen Maschinen.</db:para>
-				<db:para>Dieser Baustein ist Bestandteil des Bausteins Operating System [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da97ab45-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
-				<db:section>
-					<db:title>Verwendete Produkte</db:title>
-				<db:informaltable style="HERMES 5">
-						<db:col width="50%" />
-						<db:col width="50%" />
-						<db:thead>
-							<db:tr>
-								<db:th>Hersteller</db:th>			
-								<db:th>Produkt</db:th>
-							</db:tr>
-						</db:thead>
-						<db:tbody>
-							<db:tr>
-								<db:td>
-									<db:para>Redhat</db:para>
-								</db:td>			
-								<db:td>
-									<db:para>Redhat Redhat Enterprise Linux</db:para>
 								</db:td>
 							</db:tr>
 						</db:tbody>
@@ -5906,7 +5701,7 @@
 				
 			</db:section>
 			<db:section xml:id="ea.21860669-0ceb-11e9-8fb3-3d281af33bda">
-				<db:title>Ebene 4: ESX Physical (VMH) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
+				<db:title>Ebene 4: ESXi (VMH) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
 				
 				
 				
@@ -7455,7 +7250,7 @@
 									<db:td>
 										<db:itemizedlist>
 											<db:listitem>
-												<db:para>MDC-NMS-BABS-00 (WIN-2016-STD-PHY) </db:para>
+												<db:para>MDC-NMS-BABS-00 (WIN) </db:para>
 											</db:listitem>	
 										</db:itemizedlist>
 									</db:td>			
@@ -7833,7 +7628,7 @@
 									<db:td>
 										<db:itemizedlist>
 											<db:listitem>
-												<db:para>MDC-NMS-BABS-10 (WIN-2016-STD-PHY) </db:para>
+												<db:para>MDC-NMS-BABS-10 (WIN) </db:para>
 											</db:listitem>	
 										</db:itemizedlist>
 									</db:td>			
@@ -10316,7 +10111,7 @@
 					
 				</db:section>
 				<db:section xml:id="ea.4cd035fd-0c3e-11e9-83ba-4d57b06560a2">
-					<db:title>ESX Physical (VMH)</db:title>
+					<db:title>ESXi (VMH)</db:title>
 					
 					
 					
@@ -11312,7 +11107,7 @@
 				<db:tbody>
 					<db:tr>
 						<db:td>
-							<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+							<db:para>Windows (WIN)</db:para>
 						</db:td>
 						<db:td>
 							<db:para>5000</db:para>
@@ -11322,20 +11117,6 @@
 						</db:td>
 						<db:td>
 							<db:para>DF - Standard</db:para>
-						</db:td>
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>Redhat Virtual (RHT-VM)</db:para>
-						</db:td>
-						<db:td>
-							<db:para>5000</db:para>
-						</db:td>
-						<db:td>
-							<db:para>0</db:para>
-						</db:td>
-						<db:td>
-							<db:para>CS2 - OAM (Operation, Administration, Maintenance)</db:para>
 						</db:td>
 					</db:tr>
 					<db:tr>
@@ -11368,7 +11149,7 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>ESX Physical (VMH)</db:para>
+							<db:para>ESXi (VMH)</db:para>
 						</db:td>
 						<db:td>
 							<db:para>500</db:para>
@@ -11621,7 +11402,7 @@
 					<db:tr>
 						<db:td></db:td>
 						<db:td>
-							<db:para><db:emphasis role="strong">84200</db:emphasis></db:para>
+							<db:para><db:emphasis role="strong">79200</db:emphasis></db:para>
 						</db:td>
 						<db:td>
 							<db:para><db:emphasis role="strong">10000</db:emphasis></db:para>
@@ -11631,17 +11412,9 @@
 				</db:tbody>
 			</db:informaltable>
 			<db:section xml:id="ea.49d8ad62-1d8a-11e9-b601-db75aa6f89a4">
-				<db:title>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:title>
+				<db:title>Windows (WIN)</db:title>
 				
 				<db:para>In der Sch&#228;tzung der Bandbreite wurde der RDP Zugriff und das Einspielen von Windows Patches (WSUS) ber&#252;cksichtigt.</db:para>
-				
-				
-				
-			</db:section>
-			<db:section xml:id="ea.9fcac84d-1d8a-11e9-b601-db75aa6f89a4">
-				<db:title>Redhat Virtual (RHT-VM)</db:title>
-				
-				<db:para>In der Sch&#228;tzung der Bandbreite wurde der SSH Zugriff und das Einspielen von Patches (Redhat Satellite) ber&#252;cksichtigt.</db:para>
 				
 				
 				
@@ -11663,7 +11436,7 @@
 				
 			</db:section>
 			<db:section xml:id="ea.bdeed93e-1d8a-11e9-b601-db75aa6f89a4">
-				<db:title>ESX Physical (VMH)</db:title>
+				<db:title>ESXi (VMH)</db:title>
 				
 				<db:para>In der Sch&#228;tzung der Bandbreite wurde die Aktualisierung des Hypervisors und der Managementzugriff ber&#252;cksichtigt.</db:para>
 				
@@ -12110,11 +11883,11 @@
 							</db:section>
 						</db:section>
 						<db:section xml:id="ea.4b825f3c-0183-11ea-bfef-fb6a3149ec30">
-							<db:title>ESX Physical (VMH) Aktivit&#228;ten</db:title>
+							<db:title>ESXi (VMH) Aktivit&#228;ten</db:title>
 							
 							
 							
-							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESX Physical (VMH)' aufgeführt. Für
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESXi (VMH)' aufgeführt. Für
 							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
 							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
 							<db:informaltable style="HERMES 5">
@@ -12876,11 +12649,11 @@
 							</db:section>
 						</db:section>
 						<db:section xml:id="ea.eacc698e-804e-11e9-8989-93a2e754e0ab">
-							<db:title>ESX Physical (VMH) Aktivit&#228;ten</db:title>
+							<db:title>ESXi (VMH) Aktivit&#228;ten</db:title>
 							
 							
 							
-							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESX Physical (VMH)' aufgeführt. Für
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'ESXi (VMH)' aufgeführt. Für
 							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
 							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
 							<db:informaltable style="HERMES 5">
@@ -13538,16 +13311,6 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>CentOs Virtual (CNT-VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
 								<db:para>Configuration Management (CMG)</db:para>
 							</db:td>
 							<db:td>
@@ -13568,7 +13331,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>ESX Physical (VMH)</db:para>
+								<db:para>ESXi (VMH)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -13622,6 +13385,16 @@
 							</db:td>
 							<db:td>
 								<db:para>Active-Active</db:para>
+							</db:td>
+							<db:td>
+							</db:td>			
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Linux (LIN)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
 							</db:td>
 							<db:td>
 							</db:td>			
@@ -13698,16 +13471,6 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Redhat Virtual (RHT-VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
 								<db:para>Root CA (MCR)</db:para>
 							</db:td>
 							<db:td>
@@ -13758,17 +13521,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>
-							<db:td>
-							</db:td>			
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+								<db:para>Windows (WIN)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -13896,18 +13649,6 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>CentOs Virtual (CNT-VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
 								<db:para>Configuration Management (CMG)</db:para>
 							</db:td>
 							<db:td>
@@ -13933,7 +13674,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>ESX Physical (VMH)</db:para>
+								<db:para>ESXi (VMH)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -13994,6 +13735,18 @@
 						<db:tr>
 							<db:td>
 								<db:para>Kontron Server (KON)</db:para>
+							</db:td>
+							<db:td>
+								<db:para>None</db:para>
+							</db:td>		
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>						
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Linux (LIN)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -14090,18 +13843,6 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Redhat Virtual (RHT-VM)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>None</db:para>
-							</db:td>		
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
 								<db:para>Root CA (MCR)</db:para>
 							</db:td>
 							<db:td>
@@ -14163,20 +13904,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Windows</db:para>
-							</db:td>		
-							<db:td>
-								<db:para>Daily</db:para>
-							</db:td>
-							<db:td>
-							</db:td>						
-						</db:tr>
-						<db:tr>
-							<db:td>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
+								<db:para>Windows (WIN)</db:para>
 							</db:td>
 							<db:td>
 								<db:para>None</db:para>
@@ -14583,10 +14311,7 @@
 					<db:td>
 						<db:itemizedlist>
 							<db:listitem>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
-							</db:listitem>
-							<db:listitem>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
+								<db:para>Windows (WIN)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
 					</db:td>			
@@ -14686,7 +14411,7 @@
 					<db:td>
 						<db:itemizedlist>
 							<db:listitem>
-								<db:para>ESX Physical (VMH)</db:para>
+								<db:para>ESXi (VMH)</db:para>
 							</db:listitem>
 						</db:itemizedlist>
 					</db:td>			
@@ -14737,10 +14462,7 @@
 					<db:td>
 						<db:itemizedlist>
 							<db:listitem>
-								<db:para>Windows 2016 Standard Virtual (WIN-2016-STD-VM)</db:para>
-							</db:listitem>
-							<db:listitem>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY)</db:para>
+								<db:para>Windows (WIN)</db:para>
 							</db:listitem>
 							<db:listitem>
 								<db:para>Endpoint Protection Orchestrator (EPO)</db:para>
@@ -14796,11 +14518,6 @@
 						<db:para>Redhat Redhat Enterprise Linux</db:para>
 					</db:td>
 					<db:td>
-						<db:itemizedlist>
-							<db:listitem>
-								<db:para>Redhat Virtual (RHT-VM)</db:para>
-							</db:listitem>
-						</db:itemizedlist>
 					</db:td>			
 					<db:td>
 					</db:td>			

@@ -11,9 +11,9 @@ show stereotype
 rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Slave__F_Active__F_Directory__F___N_RDC__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Slave__F_Active__F_Directory__F___N_RDC__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 
 ' Begin Protected Region [[layouting]]
 

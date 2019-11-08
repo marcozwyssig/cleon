@@ -674,7 +674,7 @@
 						</db:tr>
 						<db:tr>
 							<db:td>
-								<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90"/>]</db:para>
+								<db:para>Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90"/>]</db:para>
 							</db:td>
 							<db:td>
 							</db:td>
@@ -719,14 +719,14 @@
 					</db:section>
 				</db:section>
 				<db:section xml:id="ea.eadb5dee-e0fe-11e8-8499-a3b0fb3cad90">
-					<db:title>Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
+					<db:title>Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox)</db:title>
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Windows (WIN) beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
 					<db:itemizedlist>
 						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) zu anderen Bausteinen (in beide Richtungen)</db:para>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Windows (WIN) zu anderen Bausteinen (in beide Richtungen)</db:para>
 						</db:listitem>
 						<db:listitem>
 							<db:para>Erfüllte Anforderungen</db:para>
@@ -737,7 +737,7 @@
 						
 						
 						
-						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows 2016 Standard Physical (WIN-2016-STD-PHY) tabellarisch aufgelistet:</db:para>
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Windows (WIN) tabellarisch aufgelistet:</db:para>
 						<db:informaltable style="HERMES 5">
 							<db:col width="40%" />
 							<db:col width="60%" />
@@ -750,7 +750,7 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Windows 2016 Standard Physical (WIN-2016-STD-PHY) -> HPE Server (HPE)</db:para>
+										<db:para>Windows (WIN) -> HPE Server (HPE)</db:para>
 									</db:td>
 									<db:td>
 									</db:td>
@@ -764,7 +764,7 @@
 						
 						
 						
-						<db:para>Der Baustein Windows 2016 Standard Physical (WIN-2016-STD-PHY) erfüllt keine expliziten Anforderungen.</db:para>
+						<db:para>Der Baustein Windows (WIN) erfüllt keine expliziten Anforderungen.</db:para>
 						
 					</db:section>
 				</db:section>
@@ -804,7 +804,7 @@
 				
 			</db:section>
 			<db:section xml:id="ea.1e9566a9-e0ff-11e8-8499-a3b0fb3cad90">
-				<db:title>Ebene 4: Windows 2016 Standard Physical (WIN-2016-STD-PHY) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
+				<db:title>Ebene 4: Windows (WIN) &lt;SystemConfiguration&gt; (Whitebox)</db:title>
 				
 				
 				
@@ -1107,11 +1107,11 @@
 							</db:section>
 						</db:section>
 						<db:section xml:id="ea.050ec472-7f17-11e9-9a52-07d4b074defc">
-							<db:title>Windows 2016 Standard Physical (WIN-2016-STD-PHY) Aktivit&#228;ten</db:title>
+							<db:title>Windows (WIN) Aktivit&#228;ten</db:title>
 							
 							
 							
-							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows 2016 Standard Physical (WIN-2016-STD-PHY)' aufgeführt. Für
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows (WIN)' aufgeführt. Für
 							die Administration der Aktivität ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
 							der Aktivität ist der Aktor 'IKT TN-Betreiber' verantwortlich.</db:para>
 							<db:informaltable style="HERMES 5">
@@ -1133,7 +1133,7 @@
 											<db:para>2902</db:para>
 										</db:td>
 										<db:td>
-											<db:para>grp-act-2902-1-win-2016-std-phy_deploy</db:para>
+											<db:para>grp-act-2902-1-win_deploy</db:para>
 										</db:td>
 										<db:td>
 											<db:para>TN Domain A (1)</db:para>
@@ -1148,7 +1148,7 @@
 											<db:para>2903</db:para>
 										</db:td>
 										<db:td>
-											<db:para>grp-act-2903-1-win-2016-std-phy_read</db:para>
+											<db:para>grp-act-2903-1-win_read</db:para>
 										</db:td>
 										<db:td>
 											<db:para>TN Domain A (1)</db:para>
@@ -1163,7 +1163,7 @@
 											<db:para>2904</db:para>
 										</db:td>
 										<db:td>
-											<db:para>grp-act-2904-1-win-2016-std-phy_write</db:para>
+											<db:para>grp-act-2904-1-win_write</db:para>
 										</db:td>
 										<db:td>
 											<db:para>TN Domain A (1)</db:para>
@@ -1184,7 +1184,7 @@
 								</db:tbody>
 							</db:informaltable>
 							<db:section xml:id="ea.f2c6cb40-7f26-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2902-1-win-2016-std-phy_deploy</db:title>
+								<db:title>grp-act-2902-1-win_deploy</db:title>
 								
 								
 								
@@ -1192,7 +1192,7 @@
 								
 							</db:section>
 							<db:section xml:id="ea.f7f7d5df-7f26-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2903-1-win-2016-std-phy_read</db:title>
+								<db:title>grp-act-2903-1-win_read</db:title>
 								
 								
 								
@@ -1200,7 +1200,7 @@
 								
 							</db:section>
 							<db:section xml:id="ea.664ef263-7f28-11e9-9a52-07d4b074defc">
-								<db:title>grp-act-2904-1-win-2016-std-phy_write</db:title>
+								<db:title>grp-act-2904-1-win_write</db:title>
 								
 								
 								

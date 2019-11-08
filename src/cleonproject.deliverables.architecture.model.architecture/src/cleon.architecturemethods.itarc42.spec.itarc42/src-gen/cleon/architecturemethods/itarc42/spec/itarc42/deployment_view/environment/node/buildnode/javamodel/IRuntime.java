@@ -1,4 +1,4 @@
-package cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.javamodel;
+package cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.buildnode.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -43,4 +43,4 @@ public interface IRuntime extends ch.actifsource.core.javamodel.IEnumValue, cleo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a0ef5c9-1bfe-11e9-9896-651e5faa32a4,8IQrEBfJO+1iPinhUcMJsQdpfWY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a0ef5c9-1bfe-11e9-9896-651e5faa32a4,jmOyy/FsyydcdRIwdZ7BMgcfLWM=] */

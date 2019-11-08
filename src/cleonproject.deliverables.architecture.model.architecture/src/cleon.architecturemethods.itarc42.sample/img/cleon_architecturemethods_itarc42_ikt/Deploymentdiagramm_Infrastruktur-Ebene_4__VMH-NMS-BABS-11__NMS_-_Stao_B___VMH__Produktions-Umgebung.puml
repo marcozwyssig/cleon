@@ -30,49 +30,49 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-11 [NMS - Stao B]" <<$virtual_application_server>> {
 	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "MCS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MCS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MCS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MCS-NMS-BABS-10 [NMS - Stao B]" <<$certificate_authority>> {
 			
 			}
 		}
 	}
 	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "APP-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "APP-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle APP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "APP-NMS-BABS-10 [NMS - Stao B]" <<$web_server>> {
 			
 			}
 		}
 	}
 	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRT-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRT-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle PRT__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRT-NMS-BABS-10 [NMS - Stao B]" <<$monitoring_store>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "JMP-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-01 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle CMG__S_NMS__S_BABS__S_10__F___N_RHT__S_VM__O_ as "CMG-NMS-BABS-10 (RHT-VM)" <<$linux>> {
+		rectangle CMG__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "CMG-NMS-BABS-10 (LIN)" <<$linux>> {
 			rectangle CMG__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "CMG-NMS-BABS-10 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}
 		}
 	}
 	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
-		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_VM__O_ as "DFS-NMS-BABS-10 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "DFS-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle DFS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "DFS-NMS-BABS-10 [NMS - Stao B]" <<$file_server>> {
 			
 			}
 		}
 	}
 	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
-		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__S_2016__S_STD__S_VM__O_ as "JMP-NMS-BABS-12 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__O_ as "JMP-NMS-BABS-12 (WIN)" <<$windows_server>> {
 			rectangle JMP__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-12 [NMS - Stao B]" <<$central_management_service>> {
 			
 			}

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="c82d9dd8-e10c-11e8-a973-4fdaaa4aef8e">
   <owns predicate="886c9874-01d9-11e9-9c9d-8d52d6745026">
-    <resource statement-guid="5fb02710-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="5fafb1dd-0369-11e9-90c7-5b43fd1c2d66" />
     <resource statement-guid="aaa72063-35ab-11e9-9d58-25409887bb2a" type="resource" guid="aaa54b9e-35ab-11e9-9d58-25409887bb2a" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -16,19 +15,6 @@
     <object statement-guid="3b5739eb-804d-11e9-8989-93a2e754e0ab" type="literal">12</object>
   </predicate>
   <predicate guid="886c9874-01d9-11e9-9c9d-8d52d6745026">
-    <object statement-guid="5fb02710-0369-11e9-90c7-5b43fd1c2d66">
-      <resource guid="5fafb1dd-0369-11e9-90c7-5b43fd1c2d66">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="5fafd8ef-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="4134540e-01d9-11e9-9c9d-8d52d6745026" />
-        </predicate>
-        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="1bb02d46-0df5-11e9-9a34-d3e8106d51a2" type="literal">Die System-Konfiguration wird in einer physischen Windows Maschine betrieben.</object>
-        </predicate>
-        <predicate guid="41345417-01d9-11e9-9c9d-8d52d6745026">
-          <object statement-guid="60cd7df9-0369-11e9-90c7-5b43fd1c2d66" type="resource" guid="4c974acd-f16e-11e8-b3e7-15e2dd8d9b05" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="aaa72063-35ab-11e9-9d58-25409887bb2a">
       <resource guid="aaa54b9e-35ab-11e9-9d58-25409887bb2a">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

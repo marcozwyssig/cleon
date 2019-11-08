@@ -11,9 +11,9 @@ show stereotype
 rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Distributed__F_File__F_System__F___N_DFS__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Distributed__F_File__F_System__F___N_DFS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 
 ' Begin Protected Region [[layouting]]
 

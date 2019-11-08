@@ -130,16 +130,6 @@ public class VirtualMachineHostSystemConfiguration extends DynamicResource imple
   }
     
   @Override
-  public cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.javamodel.IRuntime selectRuntime() {
-    return _getSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime);
-  }
-
-  public VirtualMachineHostSystemConfiguration setRuntime(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.javamodel.IRuntime runtime) {
-    _setSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime, runtime);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -169,10 +159,9 @@ public class VirtualMachineHostSystemConfiguration extends DynamicResource imple
     _acceptList(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
-    _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.javamodel.IRuntime.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration.SystemconfigurationPackage.OperatingSystemConfiguration_runtime, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptList(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.spec.arc42._13_product_view._13_product_viewPackage.ProductAware_usingProducts, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f075e62-0296-11e9-9e58-33d596257b14,WhassM5u4bFAds0d2N8eTAKM80M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f075e62-0296-11e9-9e58-33d596257b14,ZFfnoQ9P4Jx25pZgybCXDn3nIG4=] */

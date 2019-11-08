@@ -21,28 +21,28 @@ show stereotype
 
 rectangle VMH__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-02 [NMS - Stao A]" <<$virtual_application_server>> {
 	rectangle PRX__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRX-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle PRX__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_VM__O_ as "PRX-NMS-BABS-00 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle PRX__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRX-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle PRX__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRX-NMS-BABS-00 [NMS - Stao A]" <<$reverse_proxy>> {
 			
 			}
 		}
 	}
 	rectangle VBP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "VBP-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle VBP__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "VBP-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle VBP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "VBP-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle VBP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VBP-NMS-BABS-01 [NMS - Stao A]" <<$backup_local>> {
 			
 			}
 		}
 	}
 	rectangle WUS__S_NMS__S_BABS__S_01__F___N_VM__O_ as "WUS-NMS-BABS-01 (VM)" <<$virtual_server>> {
-		rectangle WUS__S_NMS__S_BABS__S_01__F___N_WIN__S_2016__S_STD__S_VM__O_ as "WUS-NMS-BABS-01 (WIN-2016-STD-VM)" <<$windows_server>> {
+		rectangle WUS__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "WUS-NMS-BABS-01 (WIN)" <<$windows_server>> {
 			rectangle WUS__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "WUS-NMS-BABS-01 [NMS - Stao A]" <<$install>> {
 			
 			}
 		}
 	}
 	rectangle RHS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "RHS-NMS-BABS-00 (VM)" <<$virtual_server>> {
-		rectangle RHS__S_NMS__S_BABS__S_00__F___N_RHT__S_VM__O_ as "RHS-NMS-BABS-00 (RHT-VM)" <<$linux>> {
+		rectangle RHS__S_NMS__S_BABS__S_00__F___N_LIN__O_ as "RHS-NMS-BABS-00 (LIN)" <<$linux>> {
 			rectangle RHS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "RHS-NMS-BABS-00 [NMS - Stao A]" <<$install>> {
 			
 			}

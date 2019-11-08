@@ -115,7 +115,7 @@ rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-00 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "MDC-NMS-BABS-00 [EAZS]" <<$domain_controller>> {
 			
 			}
@@ -132,7 +132,7 @@ rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<
 		}
 	}
 	rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
-		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "MDC-NMS-BABS-10 (WIN-2016-STD-PHY)" <<$windows_server>> {
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
 			rectangle MDC__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MDC-NMS-BABS-10 [EAZS]" <<$domain_controller>> {
 			
 			}

@@ -11,9 +11,9 @@ show stereotype
 rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
 }
 
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
 }
-Root__F_CA__F___N_MCR__O_ -down-> Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ : verwendet 
+Root__F_CA__F___N_MCR__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
 
 ' Begin Protected Region [[layouting]]
 

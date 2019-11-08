@@ -11,7 +11,7 @@ show stereotype
 rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
 	rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 	}		
-	rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+	rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 	}		
 
 }

@@ -11,21 +11,21 @@ show stereotype
 rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
 }
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
 rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
 }
-rectangle Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ as "Windows 2016 Standard Virtual (WIN-2016-STD-VM)" <<$windows_server>> {
-}
 rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
 }
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 }
-Virtual__F_Machine__F___N_VM__O_ -down-> ESX__F_Physical__F___N_VMH__O_ : verwendet 
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Virtual__F_Machine__F___N_VM__O_ -down-> ESXi__F___N_VMH__O_ : verwendet 
 vCenter__F___N_VCE__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
-Windows__F_2016__F_Standard__F_Virtual__F___N_WIN__S_2016__S_STD__S_VM__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
 __X_FA__F___N_RSA__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
-Redhat__F_Virtual__F___N_RHT__S_VM__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Linux__F___N_LIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
 
 ' Begin Protected Region [[layouting]]
 

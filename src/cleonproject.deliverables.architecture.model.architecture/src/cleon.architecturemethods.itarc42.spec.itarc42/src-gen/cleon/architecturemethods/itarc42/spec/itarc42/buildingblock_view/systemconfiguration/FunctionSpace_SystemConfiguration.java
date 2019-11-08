@@ -61,10 +61,10 @@ public class FunctionSpace_SystemConfiguration {
   public static interface IWindowsSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bbce4596-021f-11e9-b327-17da2da63a8f")
-    public java.lang.String GetOsType();
+    public java.lang.String GetType();
 
     @IDynamicResourceExtension.MethodId("bbce4599-021f-11e9-b327-17da2da63a8f")
-    public java.lang.String GetOsName();
+    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("862a2d8a-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -976,40 +976,6 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IRedhatSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("e98dedc3-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetOsType();
-
-    @IDynamicResourceExtension.MethodId("e98dedc6-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetOsName();
-
-    @IDynamicResourceExtension.MethodId("e98dedc9-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("e98dedcc-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface IRedhatSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class RedhatSystemConfigurationFunctionsImpl implements IRedhatSystemConfigurationFunctionsImpl {
-
-    public static final IRedhatSystemConfigurationFunctionsImpl INSTANCE = new RedhatSystemConfigurationFunctionsImpl();
-
-    private RedhatSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class RedhatSystemConfigurationFunctions {
-
-    private RedhatSystemConfigurationFunctions() {}
-
-  }
-
   public static interface IRedhatSatelliteSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f5bc9b12-0c3c-11e9-83ba-4d57b06560a2")
@@ -1112,47 +1078,13 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IOperatingSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("f9bc3919-1c89-11e9-9896-651e5faa32a4")
-    public java.lang.String GetOsType();
-
-    @IDynamicResourceExtension.MethodId("f797407e-1c8a-11e9-9896-651e5faa32a4")
-    public java.lang.String GetOsName();
-
-    @IDynamicResourceExtension.MethodId("99ebc26b-1c8a-11e9-9896-651e5faa32a4")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("0086d978-1c8b-11e9-9896-651e5faa32a4")
-    public java.lang.String GetName();
-
-  }
-  
-  public static interface IOperatingSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class OperatingSystemConfigurationFunctionsImpl implements IOperatingSystemConfigurationFunctionsImpl {
-
-    public static final IOperatingSystemConfigurationFunctionsImpl INSTANCE = new OperatingSystemConfigurationFunctionsImpl();
-
-    private OperatingSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class OperatingSystemConfigurationFunctions {
-
-    private OperatingSystemConfigurationFunctions() {}
-
-  }
-
-  public static interface ICentOsSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface ILinuxSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("82aabb22-1d8a-11e9-b601-db75aa6f89a4")
-    public java.lang.String GetOsType();
+    public java.lang.String GetType();
 
     @IDynamicResourceExtension.MethodId("82aabb25-1d8a-11e9-b601-db75aa6f89a4")
-    public java.lang.String GetOsName();
+    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("82aabb28-1d8a-11e9-b601-db75aa6f89a4")
     public java.lang.String GetStereotypeName();
@@ -1162,40 +1094,37 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface ICentOsSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ILinuxSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CentOsSystemConfigurationFunctionsImpl implements ICentOsSystemConfigurationFunctionsImpl {
+  public static class LinuxSystemConfigurationFunctionsImpl implements ILinuxSystemConfigurationFunctionsImpl {
 
-    public static final ICentOsSystemConfigurationFunctionsImpl INSTANCE = new CentOsSystemConfigurationFunctionsImpl();
+    public static final ILinuxSystemConfigurationFunctionsImpl INSTANCE = new LinuxSystemConfigurationFunctionsImpl();
 
-    private CentOsSystemConfigurationFunctionsImpl() {}
+    private LinuxSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class CentOsSystemConfigurationFunctions {
+  public static class LinuxSystemConfigurationFunctions {
 
-    private CentOsSystemConfigurationFunctions() {}
+    private LinuxSystemConfigurationFunctions() {}
 
   }
 
   public static interface IVirtualMachineHostSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0184c8b4-02bb-11e9-9e58-33d596257b14")
-    public java.lang.String GetOsType();
+    public java.lang.String GetType();
 
     @IDynamicResourceExtension.MethodId("0184c8b7-02bb-11e9-9e58-33d596257b14")
-    public java.lang.String GetOsName();
+    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("10d2b9cc-0ab3-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("10d2b9cf-0ab3-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
-
-    @IDynamicResourceExtension.MethodId("6cd1fca2-2abc-11e9-a3f8-336d9e792e17")
-    public java.lang.String GetType();
 
   }
   
@@ -1278,4 +1207,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,VYv2q2/UAqGXLKaeekckyRFMHF0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,t7ZTTwKOi6qeENEm7v/jJZtHooA=] */

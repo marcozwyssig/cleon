@@ -63,8 +63,6 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_ConfigurationManagementSystemConfiguration = new Resource("ae187c3a-0c39-11e9-83ba-4d57b06560a2");
   public static final Resource RepositorySystemConfiguration = new Resource("233a9919-0c3a-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RepositorySystemConfiguration = new Resource("2f23ea81-0c3a-11e9-83ba-4d57b06560a2");
-  public static final Resource RedhatSystemConfiguration = new Resource("d29cf9f6-0c3a-11e9-83ba-4d57b06560a2");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_RedhatSystemConfiguration = new Resource("e98dedc0-0c3a-11e9-83ba-4d57b06560a2");
   public static final Resource RedhatSatelliteSystemConfiguration = new Resource("dd53d2f6-0c3c-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RedhatSatelliteSystemConfiguration = new Resource("f5bc9b0f-0c3c-11e9-83ba-4d57b06560a2");
   public static final Resource SpacewalkSatelliteSystemConfiguration = new Resource("22ad944f-0c3d-11e9-83ba-4d57b06560a2");
@@ -72,14 +70,8 @@ public class SystemconfigurationPackage {
   public static final Resource WsusSystemConfiguration = new Resource("b239a026-0c3d-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WsusSystemConfiguration = new Resource("bb8c67d5-0c3d-11e9-83ba-4d57b06560a2");
   public static final Resource OperatingSystemConfiguration = new Resource("75800d3e-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime = new Resource("8a0ef5c9-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Physical = new Resource("8e9fc8a4-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Virtual = new Resource("986575b6-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource Runtime_Container = new Resource("9dbbe34b-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource OperatingSystemConfiguration_runtime = new Resource("c03ae927-1bfe-11e9-9896-651e5faa32a4");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_OperatingSystemConfiguration = new Resource("ee10dae5-1c89-11e9-9896-651e5faa32a4");
-  public static final Resource CentOsSystemConfiguration = new Resource("771f415a-1d8a-11e9-b601-db75aa6f89a4");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_CentOsSystemConfiguration = new Resource("82aabb1f-1d8a-11e9-b601-db75aa6f89a4");
+  public static final Resource LinuxSystemConfiguration = new Resource("771f415a-1d8a-11e9-b601-db75aa6f89a4");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_LinuxSystemConfiguration = new Resource("82aabb1f-1d8a-11e9-b601-db75aa6f89a4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DeviceSystemConfiguration = new Resource("dbb04b54-2abd-11e9-a3f8-336d9e792e17");
   public static final Resource PhysicalMachineSystemConfiguration = new Resource("79488947-2afd-11e9-9692-65766bc2daa5");
   public static final Resource FunctionSpace_aE_SystemConfiguration_NamedSystemConfiguration = new Resource("95ff2d7f-6cf0-11e9-a6d3-775c09e81e2d");
@@ -104,4 +96,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,8xJTyi1R+zP+nHyGgCHVGHgmVPU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.systemconfiguration,ZxowAX0oLoPC2hjKvEhjHMNChb0=] */

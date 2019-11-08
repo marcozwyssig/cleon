@@ -11,9 +11,9 @@ show stereotype
 rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
 }
 
-rectangle Redhat__F_Virtual__F___N_RHT__S_VM__O_ as "Redhat Virtual (RHT-VM)" <<$linux>> {
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
 }
-Redhat__F_Satellite__F___N_RHS__O_ -down-> Redhat__F_Virtual__F___N_RHT__S_VM__O_ : verwendet 
+Redhat__F_Satellite__F___N_RHS__O_ -down-> Linux__F___N_LIN__O_ : verwendet 
 
 ' Begin Protected Region [[layouting]]
 

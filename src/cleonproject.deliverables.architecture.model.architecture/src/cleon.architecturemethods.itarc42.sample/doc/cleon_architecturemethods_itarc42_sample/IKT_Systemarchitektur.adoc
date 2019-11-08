@@ -209,7 +209,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-==== Windows 2016 Standard Physical (WIN-2016-STD-PHY) <SystemConfiguration> (Blackbox)
+==== Windows (WIN) <SystemConfiguration> (Blackbox)
 
 
 
@@ -237,7 +237,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-=== Ebene 4: Windows 2016 Standard Physical (WIN-2016-STD-PHY) <SystemConfiguration> (Whitebox)
+=== Ebene 4: Windows (WIN) <SystemConfiguration> (Whitebox)
 
 
 
@@ -357,26 +357,26 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 
 
 
-======= Windows 2016 Standard Physical (WIN-2016-STD-PHY) Aktivitäten
+======= Windows (WIN) Aktivitäten
 
 
 
 
-======== grp-act-2902-1-win-2016-std-phy_deploy
-
-
-
-
-
-
-======== grp-act-2903-1-win-2016-std-phy_read
+======== grp-act-2902-1-win_deploy
 
 
 
 
 
 
-======== grp-act-2904-1-win-2016-std-phy_write
+======== grp-act-2903-1-win_read
+
+
+
+
+
+
+======== grp-act-2904-1-win_write
 
 
 

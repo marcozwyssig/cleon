@@ -11,9 +11,9 @@ show stereotype
 rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
 }
 
-rectangle ESX__F_Physical__F___N_VMH__O_ as "ESX Physical (VMH)" <<$virtual_application_server>> {
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
 }
-ESX__F_Physical__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
+ESXi__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
 
 ' Begin Protected Region [[layouting]]
 

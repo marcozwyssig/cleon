@@ -8,15 +8,15 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ as "Windows 2016 Standard Physical (WIN-2016-STD-PHY)" <<$windows_server>> {
+rectangle __Z_c974acd__S_f16e__S_11e8__S_b3e7__S_15e2dd8d9b05 as "4c974acd-f16e-11e8-b3e7-15e2dd8d9b05" <<$windows_server>> {
 }
 
 rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
 }
 rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
 }
-Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
-Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F_2016__F_Standard__F_Physical__F___N_WIN__S_2016__S_STD__S_PHY__O_ : verwendet
+__Z_c974acd__S_f16e__S_11e8__S_b3e7__S_15e2dd8d9b05 -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+Master__F_Active__F_Directory__F___N_MDC__O_ -up-> __Z_c974acd__S_f16e__S_11e8__S_b3e7__S_15e2dd8d9b05 : verwendet
 
 ' Begin Protected Region [[layouting]]
 

@@ -6534,17 +6534,24 @@ Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version 
 
 
 
-====== TN NMS (NMS) Rollen
+====== TN NMS (NMS) TN Rollen-Gruppen
 
 
 
 
-======= Sicherheitsverantwortlicher Rollen
+======= Sicherheitsverantwortlicher Aktor-Rollen
 
 
 
 
-======== Operator Verantwortlichkeiten
+======== grp-rog-2001-nms-sicherheitsverantwortlicher-admin
+
+
+
+
+
+
+======== grp-rog-2000-nms-sicherheitsverantwortlicher-operator
 
 
 
@@ -6559,14 +6566,14 @@ Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version 
 
 
 
-====== TN EAZS (906) Rollen
+====== TN EAZS (906) TN Rollen-Gruppen
 
 
 
 
 
 
-====== TN EAZS (907) Rollen
+====== TN EAZS (907) TN Rollen-Gruppen
 
 
 
@@ -6705,17 +6712,37 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-====== TN NMS (NMS) Rollen
+====== TN NMS (NMS) TN Rollen-Gruppen
 
 
 
 
-======= Sicherheitsverantwortlicher Rollen
+======= Service Desk Aktor-Rollen
 
 
 
 
-======== Operator Verantwortlichkeiten
+======== grp-rog-2002-nms-service desk-operator
+
+
+
+
+
+
+
+======= Sicherheitsverantwortlicher Aktor-Rollen
+
+
+
+
+======== grp-rog-2001-nms-sicherheitsverantwortlicher-admin
+
+
+
+
+
+
+======== grp-rog-2000-nms-sicherheitsverantwortlicher-operator
 
 
 
@@ -6730,30 +6757,24 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-====== TN RA1 (984) Rollen
+====== TN RA1 (984) TN Rollen-Gruppen
 
 
 
 
-======= IKT Zentrale Rollen
+======= IKT Zentrale Aktor-Rollen
+
+
+
+
+======== grp-rog-2600-984-ikt zentrale-admin
 
 
 
 
 
 
-
-====== TN RA2 (986) Rollen
-
-
-
-
-======= IKT Zentrale Rollen
-
-
-
-
-======== Admin Verantwortlichkeiten
+======== grp-rog-2601-984-ikt zentrale-operator
 
 
 
@@ -6761,15 +6782,54 @@ In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschri
 
 
 
-
-====== TN IA1 (981) Rollen
-
+======= Service Desk Aktor-Rollen
 
 
 
 
+======== grp-rog-2602-984-service desk-admin
 
-====== TN IA2 (982) Rollen
+
+
+
+
+
+======== grp-rog-2603-984-service desk-operator
+
+
+
+
+
+
+
+
+====== TN RA2 (986) TN Rollen-Gruppen
+
+
+
+
+======= IKT Zentrale Aktor-Rollen
+
+
+
+
+======== grp-rog-2700-986-ikt zentrale-admin
+
+
+
+
+
+
+
+
+====== TN IA1 (981) TN Rollen-Gruppen
+
+
+
+
+
+
+====== TN IA2 (982) TN Rollen-Gruppen
 
 
 

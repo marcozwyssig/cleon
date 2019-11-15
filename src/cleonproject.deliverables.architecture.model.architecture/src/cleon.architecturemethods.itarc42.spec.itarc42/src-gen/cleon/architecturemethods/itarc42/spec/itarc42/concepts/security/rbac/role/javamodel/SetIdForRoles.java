@@ -1,8 +1,11 @@
 package cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel;
 
+import java.util.List;
+
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
+import ch.actifsource.core.javamodel.IResource;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.model.aspects.impl.AbstractAllInstancesRefactorerAspect;
@@ -11,11 +14,15 @@ import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
+import ch.actifsource.util.collection.ICollection;
+import ch.actifsource.util.collection.IList;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.FunctionSpace_Role.IRoleNetDomainGroupFunctions;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.FunctionSpace_Role.IRoleRootGroupsFunctions;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.RolePackage;
 import cleon.common.resources.spec.resources.id.IdPackage;
+import cleon.common.resources.spec.resources.id.javamodel.IIntegerBusinessObjectId;
+import cleon.common.resources.spec.resources.id.javamodel.IntegerBusinessObjectId;
 
 public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 
@@ -39,24 +46,29 @@ public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 					IRoleNetDomainGroupFunctions netDomainGroupFunctions = domainGroup.extension(IRoleNetDomainGroupFunctions.class);
 					IAbstractGroupFunctions abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
 						
-					int i = 0;
-					for( IRoleSystemComponent roleSystemComponent : netDomainGroupFunctions.AllRoleSystemComponents()) {
-						if( roleSystemComponent.selectIdentifier() == null || roleSystemComponent.selectIdentifier().intValue() == 0) {
-							Integer id = abstractGroupFunctions.GetNetdomainId() + i;
-							Update.createOrModifyStatement(executor, roleSystemComponent.getPackage(), roleSystemComponent.getResource(),
-									IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
-							++i;
-						} else {
-							if ( i < roleSystemComponent.selectIdentifier() ) {
-								i = roleSystemComponent.selectIdentifier();
-							}
-						}
-					}
+					verifyAndSetId(executor, netDomainGroupFunctions.AllRoleSystemComponents(), abstractGroupFunctions);
+					verifyAndSetId(executor, netDomainGroupFunctions.AllRoleActorResponsiblities(), abstractGroupFunctions);					
 				}
 			}
 		}
 		catch(Exception e) {
 			ch.actifsource.util.log.Logger.instance().logError(e.toString());				
+		}
+	}
+
+	private void verifyAndSetId(IModifiable executor, java.util.List<? extends IIntegerBusinessObjectId> objects, IAbstractGroupFunctions abstractGroupFunctions) {
+		int i = 0;
+		for( IIntegerBusinessObjectId identifier : objects) {
+			if( identifier.selectIdentifier() == null || identifier.selectIdentifier().intValue() == 0) {
+				Integer id = abstractGroupFunctions.GetNetdomainId() + i;
+				Update.createOrModifyStatement(executor, identifier.getPackage(), identifier.getResource(),
+						IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
+				++i;
+			} else {
+				if ( i <= identifier.selectIdentifier() ) {
+					i = identifier.selectIdentifier();
+				}
+			}
 		}
 	}
 }

@@ -12261,7 +12261,7 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>TN NMS (NMS) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.35cf261b-0179-11ea-bfef-fb6a3149ec30"/>]</db:para>
+									<db:para>TN NMS (NMS) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.35cf261b-0179-11ea-bfef-fb6a3149ec30"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2000-2099</db:para>
@@ -12275,7 +12275,7 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN EAZS (906) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN EAZS (906) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2100-2199</db:para>
@@ -12289,7 +12289,7 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN EAZS (907) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN EAZS (907) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2200-2299</db:para>
@@ -12312,13 +12312,13 @@
 						</db:tbody>
 					</db:informaltable>
 					<db:section xml:id="ea.35cf261b-0179-11ea-bfef-fb6a3149ec30">
-						<db:title>TN NMS (NMS) Rollen</db:title>
+						<db:title>TN NMS (NMS) TN Rollen-Gruppen</db:title>
 						
 						
 						
 						
 						<db:section xml:id="ea.35cf261e-0179-11ea-bfef-fb6a3149ec30">
-							<db:title>Sicherheitsverantwortlicher Rollen</db:title>
+							<db:title>Sicherheitsverantwortlicher Aktor-Rollen</db:title>
 							
 							
 							
@@ -12357,15 +12357,23 @@
 									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
 									</db:tr>
 								</db:tbody>
 							</db:informaltable>
+							<db:section xml:id="ea.494a6230-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2001-nms-sicherheitsverantwortlicher-admin</db:title>
+								
+								
+								
+								
+								
+							</db:section>
 							<db:section xml:id="ea.35cf261d-0179-11ea-bfef-fb6a3149ec30">
-								<db:title>Operator Verantwortlichkeiten</db:title>
+								<db:title>grp-rog-2000-nms-sicherheitsverantwortlicher-operator</db:title>
 								
 								
 								
@@ -12382,7 +12390,7 @@
 						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b34-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (906) Rollen</db:title>
+						<db:title>TN EAZS (906) TN Rollen-Gruppen</db:title>
 						
 						
 						
@@ -12390,7 +12398,7 @@
 						
 					</db:section>
 					<db:section xml:id="ea.a9f85b35-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN EAZS (907) Rollen</db:title>
+						<db:title>TN EAZS (907) TN Rollen-Gruppen</db:title>
 						
 						
 						
@@ -12887,7 +12895,7 @@
 						<db:tbody>
 							<db:tr>
 								<db:td>
-									<db:para>TN NMS (NMS) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6d332d77-1e09-11e9-834d-77c41fccc6bf"/>]</db:para>
+									<db:para>TN NMS (NMS) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.6d332d77-1e09-11e9-834d-77c41fccc6bf"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2500-2599</db:para>
@@ -12896,12 +12904,12 @@
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>2</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN RA1 (984) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN RA1 (984) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2600-2699</db:para>
@@ -12910,12 +12918,12 @@
 									<db:para>TN RA1 (984)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>2</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN RA2 (986) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN RA2 (986) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2700-2799</db:para>
@@ -12929,7 +12937,7 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN IA1 (981) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3b-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN IA1 (981) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3b-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2800-2899</db:para>
@@ -12943,7 +12951,7 @@
 							</db:tr>
 							<db:tr>
 								<db:td>
-									<db:para>TN IA2 (982) Rollen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3c-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
+									<db:para>TN IA2 (982) TN Rollen-Gruppen [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a9f85b3c-1e0b-11e9-865e-41ef48a95f70"/>]</db:para>
 								</db:td>
 								<db:td>
 									<db:para>2900-2999</db:para>
@@ -12966,13 +12974,54 @@
 						</db:tbody>
 					</db:informaltable>
 					<db:section xml:id="ea.6d332d77-1e09-11e9-834d-77c41fccc6bf">
-						<db:title>TN NMS (NMS) Rollen</db:title>
+						<db:title>TN NMS (NMS) TN Rollen-Gruppen</db:title>
 						
 						
 						
 						
+						<db:section xml:id="ea.a1750817-07c3-11ea-980e-578ab3bc55dc">
+							<db:title>Service Desk Aktor-Rollen</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Service Desk' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.a6c7f1f3-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2002-nms-service desk-operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
 						<db:section xml:id="ea.7034bbe8-d853-11e9-8923-0d6897579abc">
-							<db:title>Sicherheitsverantwortlicher Rollen</db:title>
+							<db:title>Sicherheitsverantwortlicher Aktor-Rollen</db:title>
 							
 							
 							
@@ -13011,15 +13060,23 @@
 									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
 									</db:tr>
 								</db:tbody>
 							</db:informaltable>
+							<db:section xml:id="ea.8c7757c7-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2001-nms-sicherheitsverantwortlicher-admin</db:title>
+								
+								
+								
+								
+								
+							</db:section>
 							<db:section xml:id="ea.748f14ee-d853-11e9-8923-0d6897579abc">
-								<db:title>Operator Verantwortlichkeiten</db:title>
+								<db:title>grp-rog-2000-nms-sicherheitsverantwortlicher-operator</db:title>
 								
 								
 								
@@ -13036,13 +13093,13 @@
 						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b39-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN RA1 (984) Rollen</db:title>
+						<db:title>TN RA1 (984) TN Rollen-Gruppen</db:title>
 						
 						
 						
 						
 						<db:section xml:id="ea.3d52f0cb-809c-11e9-8e65-f3f639e40a34">
-							<db:title>IKT Zentrale Rollen</db:title>
+							<db:title>IKT Zentrale Aktor-Rollen</db:title>
 							
 							
 							
@@ -13066,24 +13123,88 @@
 									<db:tr>
 										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
 										<db:td>
-											<db:para><db:emphasis role="strong">0/db:emphasis></db:para>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
 										</db:td>
 										<db:td></db:td>						
 										<db:td></db:td>						
 									</db:tr>
 								</db:tbody>
 							</db:informaltable>
+							<db:section xml:id="ea.91056b12-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2600-984-ikt zentrale-admin</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.8f0e0879-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2601-984-ikt zentrale-operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.ab728ea9-07c3-11ea-980e-578ab3bc55dc">
+							<db:title>Service Desk Aktor-Rollen</db:title>
 							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Service Desk' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'IKT TN-Betreiber' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'IKT Zentrale' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.ba222b61-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2602-984-service desk-admin</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+							<db:section xml:id="ea.be7bc164-07c3-11ea-980e-578ab3bc55dc">
+								<db:title>grp-rog-2603-984-service desk-operator</db:title>
+								
+								
+								
+								
+								
+							</db:section>
 						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b3a-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN RA2 (986) Rollen</db:title>
+						<db:title>TN RA2 (986) TN Rollen-Gruppen</db:title>
 						
 						
 						
 						
 						<db:section xml:id="ea.4a498eda-7f1b-11e9-9a52-07d4b074defc">
-							<db:title>IKT Zentrale Rollen</db:title>
+							<db:title>IKT Zentrale Aktor-Rollen</db:title>
 							
 							
 							
@@ -13115,7 +13236,7 @@
 								</db:tbody>
 							</db:informaltable>
 							<db:section xml:id="ea.0e1d73b7-809e-11e9-8e65-f3f639e40a34">
-								<db:title>Admin Verantwortlichkeiten</db:title>
+								<db:title>grp-rog-2700-986-ikt zentrale-admin</db:title>
 								
 								
 								
@@ -13125,7 +13246,7 @@
 						</db:section>
 					</db:section>
 					<db:section xml:id="ea.a9f85b3b-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN IA1 (981) Rollen</db:title>
+						<db:title>TN IA1 (981) TN Rollen-Gruppen</db:title>
 						
 						
 						
@@ -13133,7 +13254,7 @@
 						
 					</db:section>
 					<db:section xml:id="ea.a9f85b3c-1e0b-11e9-865e-41ef48a95f70">
-						<db:title>TN IA2 (982) Rollen</db:title>
+						<db:title>TN IA2 (982) TN Rollen-Gruppen</db:title>
 						
 						
 						

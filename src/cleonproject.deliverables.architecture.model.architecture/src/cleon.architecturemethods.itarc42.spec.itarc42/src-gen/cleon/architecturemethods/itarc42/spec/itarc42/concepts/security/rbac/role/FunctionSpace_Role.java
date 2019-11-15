@@ -151,6 +151,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("cb248677-9c17-11e9-9470-2178b598e9a4")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllRoleSystemComponents();
 
+    @IDynamicResourceExtension.MethodId("274c8b92-07be-11ea-980e-578ab3bc55dc")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleActorResponsibility> AllRoleActorResponsiblities();
+
     @IDynamicResourceExtension.MethodId("79ca7b0b-9c8f-11e9-9b32-35cf2fd07621")
     public java.lang.Integer Max();
 
@@ -191,6 +194,34 @@ public class FunctionSpace_Role {
 
   }
 
+  public static interface IRoleActorResponsibilityFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8e03ecd1-07b8-11ea-980e-578ab3bc55dc")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("f974edc3-07bb-11ea-980e-578ab3bc55dc")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleActorResponsibility> AllRoleActorResponsibilityInDomain();
+
+  }
+  
+  public static interface IRoleActorResponsibilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RoleActorResponsibilityFunctionsImpl implements IRoleActorResponsibilityFunctionsImpl {
+
+    public static final IRoleActorResponsibilityFunctionsImpl INSTANCE = new RoleActorResponsibilityFunctionsImpl();
+
+    private RoleActorResponsibilityFunctionsImpl() {}
+
+  }
+  
+  public static class RoleActorResponsibilityFunctions {
+
+    private RoleActorResponsibilityFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,oLrosnl9EWz6arrgslBl8ZS1m1Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,5xZ1Xo8sZWm6UJBt3Yj/a6FHapo=] */

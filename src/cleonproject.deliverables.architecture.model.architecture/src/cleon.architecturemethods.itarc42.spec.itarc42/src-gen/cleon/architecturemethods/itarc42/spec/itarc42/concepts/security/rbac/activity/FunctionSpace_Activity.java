@@ -132,6 +132,9 @@ public class FunctionSpace_Activity {
     @IDynamicResourceExtension.MethodId("a5682b11-9c98-11e9-9b32-35cf2fd07621")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllActivityPermissions();
 
+    @IDynamicResourceExtension.MethodId("40656397-0d2c-11ea-b914-3dd9896c252a")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllAvailableActivityPermissions();
+
   }
   
   public static interface IActivityNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -211,4 +214,4 @@ public class FunctionSpace_Activity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,woj6QcFdIwBQQ7dA9boE/bJrAww=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,YFtxAXqdNH6ToCl5rFpH/x2VD/Y=] */

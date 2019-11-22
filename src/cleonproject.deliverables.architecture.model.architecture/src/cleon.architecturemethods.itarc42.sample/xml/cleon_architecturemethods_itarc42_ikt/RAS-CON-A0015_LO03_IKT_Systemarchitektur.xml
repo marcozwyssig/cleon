@@ -12460,7 +12460,7 @@
 									<db:para>TN RA1 (984)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>0</db:para>
+									<db:para>1</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12844,7 +12844,65 @@
 						
 						
 						
-						
+						<db:section xml:id="ea.51734694-0d2d-11ea-b914-3dd9896c252a">
+							<db:title>Windows (WIN) Aktivit&#228;ten</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Aktivitäten für die System-Konfiguration 'Windows (WIN)' aufgeführt. Für
+							die Administration der Aktivität ist der Aktor 'Role1' verantwortlich. Für die Vergabe / Freigabe
+							der Aktivität ist der Aktor 'Service Desk' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Rollen</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>2600</db:para>
+										</db:td>
+										<db:td>
+											<db:para>grp-act-2600-984-win_write</db:para>
+										</db:td>
+										<db:td>
+											<db:para>TN RA1 (984)</db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+												<db:listitem>
+													<db:para>grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator</db:para>
+												</db:listitem>	
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">1/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.54cea716-0d2d-11ea-b914-3dd9896c252a">
+								<db:title>grp-act-2600-984-win_write</db:title>
+								
+								
+								
+								
+								
+							</db:section>
+						</db:section>
 					</db:section>
 					<db:section xml:id="ea.5ec8e3f0-1e0e-11e9-865e-41ef48a95f70">
 						<db:title>TN RA2 (986) Aktivit&#228;ten</db:title>
@@ -13054,6 +13112,9 @@
 										</db:td>
 										<db:td>
 											<db:itemizedlist>
+												<db:listitem>
+													<db:para></db:para>
+												</db:listitem>	
 											</db:itemizedlist>
 										</db:td>
 									</db:tr>

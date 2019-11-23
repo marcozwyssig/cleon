@@ -11,6 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
 import cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleRootGroups;
+import java.util.stream.Collectors;
 /* End Protected Region   [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 
 public class FunctionSpace_Role {
@@ -49,12 +50,36 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("7f5f2902-016c-11ea-8b45-335c84231cb6")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("fecbaa1a-0dea-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllRoleSystemComponentForBasedOn();
+
+    @IDynamicResourceExtension.MethodId("e6a1f2c3-0deb-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent rolSysCmp);
+
+    @IDynamicResourceExtension.MethodId("c9c3bdeb-0ded-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllBaseOn();
+
+    @IDynamicResourceExtension.MethodId("e79cc584-0dee-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllActivities();
+
+    @IDynamicResourceExtension.MethodId("1f3413fb-0df0-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllBasedOn();
+
+    @IDynamicResourceExtension.MethodId("6478ecf0-0df0-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission src);
+
   }
   
   public static interface IRoleSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7f5f2902-016c-11ea-8b45-335c84231cb6")
     public java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent);
+
+    @IDynamicResourceExtension.MethodId("e6a1f2c3-0deb-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList);
+
+    @IDynamicResourceExtension.MethodId("6478ecf0-0df0-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList);
 
   }
   
@@ -69,6 +94,20 @@ public class FunctionSpace_Role {
       return String.format("R%04d", roleSystemComponent.selectIdentifier());
     }
 
+    @Override
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+      /* Begin Protected Region [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
+    	return roleSystemComponentList.stream().filter(x -> x.selectSystemComponent().equals(rolSysCmp.selectSystemComponent())).collect(Collectors.toList());
+      /* End Protected Region   [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+      /* Begin Protected Region [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
+    	return roleSystemComponentList.stream().filter(x -> x.extension(IRoleSystemComponentFunctions.class).AllActivities().contains(src)).collect(Collectors.toList());
+      /* End Protected Region   [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
+    }
+
   }
   
   public static class RoleSystemComponentFunctions {
@@ -77,6 +116,14 @@ public class FunctionSpace_Role {
 
     public static java.lang.String GetId(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent roleSystemComponent) {
       return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponent).GetId(roleSystemComponent);
+    }
+
+    public static List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+      return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponentList).OnlySameSystemComponent(rolSysCmp, roleSystemComponentList);
+    }
+
+    public static List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission src, final List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
+      return DynamicResourceUtil.invoke(IRoleSystemComponentFunctionsImpl.class, RoleSystemComponentFunctionsImpl.INSTANCE, roleSystemComponentList).OnlyWithActivityPermission(src, roleSystemComponentList);
     }
 
   }
@@ -224,4 +271,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,5xZ1Xo8sZWm6UJBt3Yj/a6FHapo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,lF02xiTEllto9VR917UTzSzfxII=] */

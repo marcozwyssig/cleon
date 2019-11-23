@@ -12270,7 +12270,7 @@
 									<db:para>TN NMS (NMS)</db:para>
 								</db:td>
 								<db:td>
-									<db:para>1</db:para>
+									<db:para>2</db:para>
 								</db:td>			
 							</db:tr>
 							<db:tr>
@@ -12380,6 +12380,99 @@
 								
 								<db:section xml:id="ea.35cf261c-0179-11ea-bfef-fb6a3149ec30">
 									<db:title>grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator</db:title>
+									
+									
+									
+									
+									
+								</db:section>
+							</db:section>
+						</db:section>
+						<db:section xml:id="ea.c6e6645c-0de9-11ea-91d3-b3e983305cb0">
+							<db:title>Betriebsmanagement Aktor-Rollen</db:title>
+							
+							
+							
+							<db:para>Nachfolgend werden die Rollen für den Aktor 'Betriebsmanagement' aufgeführt. Für
+							die Administration der Rolle ist der Aktor 'IKT Zentrale' verantwortlich. Für die Vergabe / Freigabe
+							der Rolle ist der Aktor 'Betriebsmanagement' verantwortlich.</db:para>
+							<db:informaltable style="HERMES 5">
+								<db:col width="10%" />
+								<db:col width="35%" />
+								<db:col width="20%" />
+								<db:col width="35%" />
+								<db:thead>
+									<db:tr>
+										<db:th>Nr.</db:th>
+										<db:th>Name</db:th>
+										<db:th>Teilnetz</db:th>
+										<db:th>Aktivitäten</db:th>
+									</db:tr>
+								</db:thead>
+								<db:tbody>
+									<db:tr>
+										<db:td>
+											<db:para>R2001</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td>
+											<db:para>R2002</db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:para></db:para>
+										</db:td>
+										<db:td>
+											<db:itemizedlist>
+											</db:itemizedlist>
+										</db:td>
+									</db:tr>
+									<db:tr>
+										<db:td><db:emphasis role="strong">Total</db:emphasis></db:td>
+										<db:td>
+											<db:para><db:emphasis role="strong">2/db:emphasis></db:para>
+										</db:td>
+										<db:td></db:td>						
+										<db:td></db:td>						
+									</db:tr>
+								</db:tbody>
+							</db:informaltable>
+							<db:section xml:id="ea.ccf2654f-0de9-11ea-91d3-b3e983305cb0">
+								<db:title>grp-rog-2002-nms-betriebsmanagement-admin</db:title>
+								
+								
+								
+								
+								<db:section xml:id="ea.d3e28478-0de9-11ea-91d3-b3e983305cb0">
+									<db:title>grp-rol-2001-nms-betriebsmanagement-storage_admin</db:title>
+									
+									
+									
+									
+									
+								</db:section>
+							</db:section>
+							<db:section xml:id="ea.8ba09b45-0ded-11ea-91d3-b3e983305cb0">
+								<db:title>grp-rog-2003-nms-betriebsmanagement-operator</db:title>
+								
+								
+								
+								
+								<db:section xml:id="ea.8d5a31b5-0ded-11ea-91d3-b3e983305cb0">
+									<db:title>grp-rol-2002-nms-betriebsmanagement-storage_operator</db:title>
 									
 									
 									

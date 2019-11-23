@@ -146,6 +146,9 @@ public class FunctionSpace_RBAC {
     @IDynamicResourceExtension.MethodId("34e81fa9-c56f-11e9-9daa-cf9f9f7341e8")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.javamodel.IAbstractGroup> GetAllChildren();
 
+    @IDynamicResourceExtension.MethodId("b4566d55-0deb-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> GetAllRoleSystemComponents();
+
   }
   
   public static interface IAbstractGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -218,4 +221,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,Z6IW8vmVXl7QMRMdBoXzk9xLdVY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,9vEt7GZEQf83+rTdDn30RFwYI7I=] */

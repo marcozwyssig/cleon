@@ -36,6 +36,9 @@ public class FunctionSpace_Activity {
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
     public java.lang.String GetId();
 
+    @IDynamicResourceExtension.MethodId("a4552697-0def-11ea-91d3-b3e983305cb0")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponent();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -214,4 +217,8 @@ public class FunctionSpace_Activity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,YFtxAXqdNH6ToCl5rFpH/x2VD/Y=] */
+      /* Begin Protected Region [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
+    	
+      // XXX implement template function here   
+      /* End Protected Region   [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,MQuvLN0yRMg04dUyUeyVSIJQGEI=] */

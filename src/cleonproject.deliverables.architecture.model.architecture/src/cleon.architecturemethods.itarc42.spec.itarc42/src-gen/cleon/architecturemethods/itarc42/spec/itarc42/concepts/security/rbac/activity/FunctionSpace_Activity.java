@@ -217,8 +217,4 @@ public class FunctionSpace_Activity {
 
 }
 
-      /* Begin Protected Region [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
-    	
-      // XXX implement template function here   
-      /* End Protected Region   [[6478ecf0-0df0-11ea-91d3-b3e983305cb0]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,MQuvLN0yRMg04dUyUeyVSIJQGEI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,/vAoltwJLzckxB9rUkXIWX3LLRk=] */

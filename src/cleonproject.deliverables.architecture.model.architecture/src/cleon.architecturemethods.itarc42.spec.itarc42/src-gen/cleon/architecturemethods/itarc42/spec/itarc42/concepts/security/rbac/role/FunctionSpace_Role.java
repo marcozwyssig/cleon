@@ -57,7 +57,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent rolSysCmp);
 
     @IDynamicResourceExtension.MethodId("c9c3bdeb-0ded-11ea-91d3-b3e983305cb0")
-    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllBaseOn();
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.role.javamodel.IRoleSystemComponent> AllBasedOnReverse();
 
     @IDynamicResourceExtension.MethodId("e79cc584-0dee-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllActivities();
@@ -271,4 +271,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,lF02xiTEllto9VR917UTzSzfxII=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,13lG4QVadW94qj/u5DAiF2u4y3k=] */

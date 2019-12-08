@@ -10,6 +10,8 @@ public interface ISupplyNetDomainNode extends cleon.architecturemethods.itarc42.
   
   public java.lang.Integer selectGroupId();
   
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> selectAllowedToManage();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,gIY/ulK5IZOCm7k06eoYrAwAnAk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,bSmmcJ8QsLXkCoXYuJUBOfb9fpQ=] */

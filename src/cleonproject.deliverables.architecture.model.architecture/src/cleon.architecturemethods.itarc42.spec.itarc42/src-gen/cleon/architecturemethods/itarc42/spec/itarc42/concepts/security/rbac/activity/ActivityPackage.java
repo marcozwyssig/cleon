@@ -23,7 +23,6 @@ public class ActivityPackage {
   public static final Resource FunctionSpace_aE_Activity_Permissions = new Resource("61daaa84-809a-11e9-8e65-f3f639e40a34");
   public static final Resource FunctionSpace_aE_Activity_ActivityNetdomainGroup = new Resource("a3033209-9c90-11e9-9b32-35cf2fd07621");
   public static final Resource FunctionSpace_aE_Activity_ActivityRootGroups = new Resource("0a95c871-9c91-11e9-9b32-35cf2fd07621");
-  public static final Resource ActivityNetdomainGroup_allowed = new Resource("ca761643-0d2c-11ea-b914-3dd9896c252a");
   
   /* Begin Protected Region [[user]] */
   
@@ -44,4 +43,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity,sxMUQ0uQqr4Gq1EWl1WoxT1Km+M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity,56wpcvYnIwRzOdbusl5Um9ZP0V4=] */

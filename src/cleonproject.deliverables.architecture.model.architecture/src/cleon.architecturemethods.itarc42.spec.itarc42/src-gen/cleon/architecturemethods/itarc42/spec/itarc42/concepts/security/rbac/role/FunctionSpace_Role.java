@@ -204,6 +204,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("79ca7b0b-9c8f-11e9-9b32-35cf2fd07621")
     public java.lang.Integer Max();
 
+    @IDynamicResourceExtension.MethodId("c8a57032-19bd-11ea-bc72-af84f3c76c84")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.concepts.security.rbac.activity.javamodel.IActivityPermission> AllAvailalableActivityPermissions();
+
   }
   
   public static interface IRoleNetDomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -271,4 +274,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,13lG4QVadW94qj/u5DAiF2u4y3k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,KADeSaRdMwbwjZFJD66b2u8avIs=] */

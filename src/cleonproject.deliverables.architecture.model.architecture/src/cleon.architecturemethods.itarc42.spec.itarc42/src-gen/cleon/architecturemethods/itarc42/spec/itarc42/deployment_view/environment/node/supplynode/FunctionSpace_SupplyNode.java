@@ -54,6 +54,9 @@ public class FunctionSpace_SupplyNode {
     @IDynamicResourceExtension.MethodId("56fd4b1c-2ab8-11e9-a3f8-336d9e792e17")
     public cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetSubnetNode();
 
+    @IDynamicResourceExtension.MethodId("0b8efbbd-19bb-11ea-bc72-af84f3c76c84")
+    public List<cleon.architecturemethods.itarc42.spec.itarc42.deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllAllowedManage();
+
   }
   
   public static interface ISupplyNetDomainNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -147,4 +150,4 @@ public class FunctionSpace_SupplyNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,GS2Y28Ptb/sC1NbtpyqTDIvsBWI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,YGL+DKIfCEZnWpjJoZYp3azv/Hw=] */

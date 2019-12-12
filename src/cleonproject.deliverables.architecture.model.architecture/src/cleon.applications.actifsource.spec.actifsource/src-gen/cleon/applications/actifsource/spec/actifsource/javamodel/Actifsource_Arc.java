@@ -50,11 +50,11 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
 
   @Override
   public java.util.List<java.lang.String> selectImgDir() {
-    return _getListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir);
+    return _getListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir);
   }
     
   public void setImgDir(java.util.List<java.lang.String> imgDir) {
-     _setListAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, imgDir);
+     _setListAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, imgDir);
   }
 
   @Override
@@ -68,11 +68,11 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
 
   @Override
   public java.lang.Boolean selectWithToC() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC);
   }
     
   public void setWithToC(java.lang.Boolean withToC) {
-     _setSingleAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, withToC);
+     _setSingleAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, withToC);
   }
 
   // relations
@@ -198,22 +198,22 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
     
   @Override
-  public cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout selectAbout() {
-    return _getSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about);
+  public cleon.common.doc.doc.spec.chapter.about.javamodel.IAbout selectAbout() {
+    return _getSingle(cleon.common.doc.doc.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.doc.spec.chapter.about.AboutPackage.AboutAware_about);
   }
 
-  public Actifsource_Arc setAbout(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout about) {
-    _setSingle(cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, about);
+  public Actifsource_Arc setAbout(cleon.common.doc.doc.spec.chapter.about.javamodel.IAbout about) {
+    _setSingle(cleon.common.doc.doc.spec.chapter.about.AboutPackage.AboutAware_about, about);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
+  public java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Actifsource_Arc setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
+  public Actifsource_Arc setChapters(java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
     
@@ -228,22 +228,22 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Actifsource_Arc setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+  public Actifsource_Arc setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Actifsource_Arc setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
+  public Actifsource_Arc setDocumentLanguage(java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+    _setList(cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
     
@@ -258,12 +258,12 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> selectParagraphs() {
-    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs);
+  public java.util.List<? extends cleon.common.doc.doc.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.doc.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.doc.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Actifsource_Arc setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph> paragraphs) {
-    _setList(cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+  public Actifsource_Arc setParagraphs(java.util.List<? extends cleon.common.doc.doc.spec.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.doc.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
@@ -278,22 +278,22 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties);
+  public cleon.common.doc.doc.spec.document.properties.javamodel.IProperties selectProperties() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties);
   }
 
-  public Actifsource_Arc setProperties(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties properties) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, properties);
+  public Actifsource_Arc setProperties(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties properties) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, properties);
     return this;
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.style.javamodel.IStyle selectStyle() {
-    return _getSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style);
+  public cleon.common.doc.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style);
   }
 
-  public Actifsource_Arc setStyle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle style) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, style);
+  public Actifsource_Arc setStyle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, style);
     return this;
   }
     
@@ -312,9 +312,9 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42Document___V_1_aE_introduction_aE_and_aE_goals, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._02_architecture_constraints.javamodel.IArchitecture_Constraints.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42Document___V_2_aE_architecture_aE_constraints, visitor);
@@ -328,16 +328,16 @@ public class Actifsource_Arc extends DynamicResource implements IActifsource_Arc
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42Document___W_1_aE_technical_aE_risks, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42Document___W_2_aE_productview, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.spec.arc42._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.spec.arc42.Arc42Package.arc42Document___W_3_aE_requirements_aE_coverage, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.chapter.about.javamodel.IAbout.class, cleon.common.doc.spec.doc.chapter.about.AboutPackage.AboutAware_about, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.doc.spec.chapter.about.AboutPackage.AboutAware_about, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
-    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.common.glossary.spec.glossary.javamodel.IGlossary.class, cleon.common.glossary.spec.glossary.GlossaryPackage.GlossaryAware_glossary, visitor);
-    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IParagraph.class, cleon.common.doc.spec.doc.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptList(cleon.common.doc.doc.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.doc.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,S78zFKdup9/uLdzAkDwy9httiUg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d16b593e-ce8a-11e5-b193-7398541c035e,1v5Wrhrl8aAbw7/gU9z+NEtjG6o=] */

@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.spec.arc42._09_design_decisions.javamode
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDecisionTopic extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractNamedChapter, cleon.common.doc.spec.doc.javamodel.INoDocumentElementComposite {
+public interface IDecisionTopic extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractNamedChapter, cleon.common.doc.doc.spec.javamodel.INoDocumentElementComposite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ab88bc9d-ecde-11e8-8149-8542373915bf");
   
@@ -20,4 +20,4 @@ public interface IDecisionTopic extends cleon.common.doc.spec.doc.chapter.javamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,RnanoCMiU92B+8t+p3l65osuNl0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ab88bc9d-ecde-11e8-8149-8542373915bf,Jg40s8JRHP0B1l+4NLJTRuPtfGU=] */

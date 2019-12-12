@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.detailstudy.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDetailstudy extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware {
+public interface IDetailstudy extends cleon.common.doc.doc.spec.document.javamodel.INamedDocument, cleon.common.doc.doc.spec.chapter.about.javamodel.IAboutAware, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c647eff4-3c0e-11e5-9962-cf3035adb922");
   
@@ -16,4 +16,4 @@ public interface IDetailstudy extends cleon.common.doc.spec.doc.document.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,sYJjiZazuiPFA7OyiMyqbNL72eM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,7Z9+ixfl5TZRr+DBWknAa2sK/0g=] */

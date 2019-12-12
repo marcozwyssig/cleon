@@ -80,12 +80,12 @@ public class Level1CapConf extends DynamicResource implements ILevel1CapConf {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors);
+  public java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> selectAuthors() {
+    return _getList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public Level1CapConf setAuthors(java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, authors);
+  public Level1CapConf setAuthors(java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> authors) {
+    _setList(cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -109,9 +109,9 @@ public class Level1CapConf extends DynamicResource implements ILevel1CapConf {
     // relations
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.architecturemethods.eamod.spec.eamod.chsv.ChsvPackage.LevelCapConf_Decommission, visitor);
     _acceptSingle(cleon.common.resources.spec.calendar.javamodel.IDay.class, cleon.architecturemethods.eamod.spec.eamod.chsv.ChsvPackage.LevelCapConf_EndOfLife, visitor);
-    _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c2e28c8-a7fa-11e7-9807-4f1f5d43f7c9,BFRJMWbNuvxHai/Le+NcCyBTmxo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3c2e28c8-a7fa-11e7-9807-4f1f5d43f7c9,sPgze3oHf0J6Tx77SZSotZ55b0A=] */

@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.planning.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPlanningDocument extends cleon.common.doc.spec.doc.document.javamodel.INamedDocument, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware {
+public interface IPlanningDocument extends cleon.common.doc.doc.spec.document.javamodel.INamedDocument, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17");
   
@@ -22,4 +22,4 @@ public interface IPlanningDocument extends cleon.common.doc.spec.doc.document.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,pmKDTA3wdy+UF5FxAtejpZH1anU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6b25ecc-bd15-11e6-ba29-0d3a53b7fc17,Qrfuqf/grq6WGdU8lanpkYI1XqY=] */

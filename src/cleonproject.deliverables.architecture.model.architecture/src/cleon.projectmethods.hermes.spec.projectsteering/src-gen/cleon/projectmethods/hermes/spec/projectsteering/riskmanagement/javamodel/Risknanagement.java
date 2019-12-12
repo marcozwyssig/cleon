@@ -32,20 +32,20 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   
   @Override
   public java.util.List<java.lang.String> selectImgDir() {
-    return _getListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir);
+    return _getListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir);
   }
     
   public void setImgDir(java.util.List<java.lang.String> imgDir) {
-     _setListAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, imgDir);
+     _setListAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, imgDir);
   }
 
   @Override
   public java.lang.Boolean selectWithToC() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC);
   }
     
   public void setWithToC(java.lang.Boolean withToC) {
-     _setSingleAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, withToC);
+     _setSingleAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, withToC);
   }
 
   // relations
@@ -61,42 +61,42 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
+  public java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Risknanagement setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
+  public Risknanagement setChapters(java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Risknanagement setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+  public Risknanagement setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Risknanagement setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
+  public Risknanagement setDocumentLanguage(java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+    _setList(cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties);
+  public cleon.common.doc.doc.spec.document.properties.javamodel.IProperties selectProperties() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties);
   }
 
-  public Risknanagement setProperties(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties properties) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, properties);
+  public Risknanagement setProperties(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties properties) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, properties);
     return this;
   }
     
@@ -121,12 +121,12 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.style.javamodel.IStyle selectStyle() {
-    return _getSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style);
+  public cleon.common.doc.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style);
   }
 
-  public Risknanagement setStyle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle style) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, style);
+  public Risknanagement setStyle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, style);
     return this;
   }
     
@@ -144,15 +144,15 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptList(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessments.javamodel.IAssessments.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_assessments, visitor);
-    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
+    _acceptList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.javamodel.IRiskClassification.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_riskClassification, visitor);
     _acceptSingle(cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.risks.javamodel.IRisks.class, cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.RiskmanagementPackage.Risknanagement_risks, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -171,4 +171,4 @@ public class Risknanagement extends DynamicResource implements IRisknanagement {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,HXw73ibgjedjl43d+dLATQu8LNQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be6ee992-3249-11e6-ab4d-73a9260c8088,V6a5DWFSQLQUHgddANbQ/2kYjmc=] */

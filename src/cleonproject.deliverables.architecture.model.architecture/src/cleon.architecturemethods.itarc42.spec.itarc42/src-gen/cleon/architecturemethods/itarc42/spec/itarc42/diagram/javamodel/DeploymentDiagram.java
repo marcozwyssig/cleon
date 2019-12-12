@@ -78,12 +78,12 @@ public class DeploymentDiagram extends DynamicResource implements IDeploymentDia
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public DeploymentDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
+  public DeploymentDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -111,4 +111,4 @@ public class DeploymentDiagram extends DynamicResource implements IDeploymentDia
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,aZJggkrGfQqNADHAL5REubOUOGY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1cf628c3-0aa0-11e9-8a91-633e556ac68f,0yZwo4nztmx5nGlT1rHREDsuugE=] */

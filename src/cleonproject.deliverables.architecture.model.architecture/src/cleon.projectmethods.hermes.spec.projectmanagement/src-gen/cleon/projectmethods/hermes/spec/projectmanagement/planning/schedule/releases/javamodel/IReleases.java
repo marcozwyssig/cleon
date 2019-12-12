@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.rel
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IReleases extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ITimePlan {
+public interface IReleases extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter, cleon.projectmethods.hermes.spec.projectmanagement.planning.schedule.releases.javamodel.ITimePlan {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("3161251a-a7d9-11e5-82dd-3b995d9c840c");
   
@@ -12,4 +12,4 @@ public interface IReleases extends cleon.common.doc.spec.doc.chapter.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3161251a-a7d9-11e5-82dd-3b995d9c840c,xbkrGIiWyrEfdGiU65ZxRkgtDa0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3161251a-a7d9-11e5-82dd-3b995d9c840c,xvSuZcCk5Z5VcCxtYD8C3jfOKBI=] */

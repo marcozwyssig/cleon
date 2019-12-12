@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.stakeholder.j
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IStakeholders extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IStakeholders extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("256574f0-06d7-11e6-8d3e-13e5be4bd43b");
   
@@ -12,4 +12,4 @@ public interface IStakeholders extends cleon.common.doc.spec.doc.chapter.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,256574f0-06d7-11e6-8d3e-13e5be4bd43b,eTn6xH6Xdi/BreSBxpr1YsGlWkA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,256574f0-06d7-11e6-8d3e-13e5be4bd43b,prYU/kt5CidGkFRnds/Hhyf1wPw=] */

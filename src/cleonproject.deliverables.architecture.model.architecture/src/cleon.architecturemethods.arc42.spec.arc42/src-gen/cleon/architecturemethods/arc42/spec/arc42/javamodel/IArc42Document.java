@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.spec.arc42.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IArc42Document extends cleon.common.doc.spec.doc.document.javamodel.IDocument, cleon.common.doc.spec.doc.chapter.about.javamodel.IAboutAware, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware {
+public interface IArc42Document extends cleon.common.doc.doc.spec.document.javamodel.IDocument, cleon.common.doc.doc.spec.chapter.about.javamodel.IAboutAware, cleon.common.glossary.spec.glossary.javamodel.IGlossaryAware, cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("2cbcf671-ffcc-11e4-ac0a-959b440f987f");
   
@@ -34,4 +34,4 @@ public interface IArc42Document extends cleon.common.doc.spec.doc.document.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,TwJISG9bmiVC9cvDlUu9LBhprHU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cbcf671-ffcc-11e4-ac0a-959b440f987f,GTDee/F9TlPnPf4Mkh2vfzQI6UE=] */

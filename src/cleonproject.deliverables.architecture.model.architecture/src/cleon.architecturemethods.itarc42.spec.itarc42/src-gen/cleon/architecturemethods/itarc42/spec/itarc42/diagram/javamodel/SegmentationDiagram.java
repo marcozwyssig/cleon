@@ -60,12 +60,12 @@ public class SegmentationDiagram extends DynamicResource implements ISegmentatio
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public SegmentationDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
+  public SegmentationDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -91,4 +91,4 @@ public class SegmentationDiagram extends DynamicResource implements ISegmentatio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46777a52-0e23-11e9-8b4c-f9aec93d8b56,wx4XCTEB4MJlEy2Y1xAQ3rVj0MM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46777a52-0e23-11e9-8b4c-f9aec93d8b56,g8J4qgPo1Lkoeg6VhdVkhJ8pueA=] */

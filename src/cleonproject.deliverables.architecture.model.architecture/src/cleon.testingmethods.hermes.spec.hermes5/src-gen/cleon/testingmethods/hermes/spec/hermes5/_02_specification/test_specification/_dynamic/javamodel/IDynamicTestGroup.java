@@ -2,7 +2,7 @@ package cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specific
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDynamicTestGroup extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractNamedChapter {
+public interface IDynamicTestGroup extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractNamedChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("810c4022-4f8c-11e9-ad5d-977b17aab907");
   
@@ -12,4 +12,4 @@ public interface IDynamicTestGroup extends cleon.common.doc.spec.doc.chapter.jav
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,810c4022-4f8c-11e9-ad5d-977b17aab907,xwbqT0/OGWnKiz6gbnRJS50ePFA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,810c4022-4f8c-11e9-ad5d-977b17aab907,264i2Od1/9v86x4uh+6SGzwkgyg=] */

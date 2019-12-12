@@ -32,61 +32,61 @@ public class Protocols extends DynamicResource implements IProtocols {
   
   @Override
   public java.util.List<java.lang.String> selectImgDir() {
-    return _getListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir);
+    return _getListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir);
   }
     
   public void setImgDir(java.util.List<java.lang.String> imgDir) {
-     _setListAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, imgDir);
+     _setListAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, imgDir);
   }
 
   @Override
   public java.lang.Boolean selectWithToC() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC);
   }
     
   public void setWithToC(java.lang.Boolean withToC) {
-     _setSingleAttribute(cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, withToC);
+     _setSingleAttribute(cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, withToC);
   }
 
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters);
+  public java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Protocols setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, chapters);
+  public Protocols setChapters(java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Protocols setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+  public Protocols setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage);
+  public java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public Protocols setDocumentLanguage(java.util.List<? extends cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
-    _setList(cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, documentLanguage);
+  public Protocols setDocumentLanguage(java.util.List<? extends cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+    _setList(cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IProperties selectProperties() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties);
+  public cleon.common.doc.doc.spec.document.properties.javamodel.IProperties selectProperties() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties);
   }
 
-  public Protocols setProperties(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties properties) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, properties);
+  public Protocols setProperties(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties properties) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, properties);
     return this;
   }
     
@@ -101,12 +101,12 @@ public class Protocols extends DynamicResource implements IProtocols {
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.style.javamodel.IStyle selectStyle() {
-    return _getSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style);
+  public cleon.common.doc.doc.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style);
   }
 
-  public Protocols setStyle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle style) {
-    _setSingle(cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, style);
+  public Protocols setStyle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, style);
     return this;
   }
     
@@ -124,14 +124,14 @@ public class Protocols extends DynamicResource implements IProtocols {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_imgDir, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_withToC, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_imgDir, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.spec.doc.DocPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_documentLanguage, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProperties.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_properties, visitor);
+    _acceptList(cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.doc.spec.SpecPackage.ChapterAware_chapters, visitor);
+    _acceptList(cleon.common.doc.doc.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptList(cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocol.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.Protocols_protocols, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.style.javamodel.IStyle.class, cleon.common.doc.spec.doc.document.DocumentPackage.Document_style, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.style.javamodel.IStyle.class, cleon.common.doc.doc.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -142,4 +142,4 @@ public class Protocols extends DynamicResource implements IProtocols {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,LotIkACwm4cuF1WfBLXmXP0DYeg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,Bf6QNNVGQzKNzssVDb5raEi/vuo=] */

@@ -28,7 +28,7 @@ public class Gemfile {
   public static interface IDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("471bacbf-aad2-11e8-b25a-7dd9f85a27ad")
-    public List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.spec.doc.document.javamodel.IDocument> documentList);
+    public List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.doc.spec.document.javamodel.IDocument> documentList);
 
   }
   
@@ -39,10 +39,10 @@ public class Gemfile {
     private DocumentFunctionsImpl() {}
 
     @Override
-    public List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.spec.doc.document.javamodel.IDocument> documentList) {
+    public List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.doc.spec.document.javamodel.IDocument> documentList) {
       /* Begin Protected Region [[471bacbf-aad2-11e8-b25a-7dd9f85a27ad]] */
     	List<String> packages = new ArrayList<>();
-    	for( cleon.common.doc.spec.doc.document.javamodel.IDocument document : documentList)
+    	for( cleon.common.doc.doc.spec.document.javamodel.IDocument document : documentList)
     	{
     		String packageName = document.extension(ch.actifsource.template.BuiltIn.IResourceFunctions.class).package_();
     		if(!packages.contains(packageName))
@@ -60,7 +60,7 @@ public class Gemfile {
 
     private DocumentFunctions() {}
 
-    public static List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.spec.doc.document.javamodel.IDocument> documentList) {
+    public static List<java.lang.String> removeDuplicatePackages(final List<cleon.common.doc.doc.spec.document.javamodel.IDocument> documentList) {
       return DynamicResourceUtil.invoke(IDocumentFunctionsImpl.class, DocumentFunctionsImpl.INSTANCE, documentList).removeDuplicatePackages(documentList);
     }
 
@@ -68,4 +68,4 @@ public class Gemfile {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,128d1794-0d06-11e6-be97-7d1235599779,1T/iQNei7bgdtY7ovZJLEvaUo/o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,128d1794-0d06-11e6-be97-7d1235599779,jk6MUmCbp2ZtiYFiQ290DE5R5/8=] */

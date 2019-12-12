@@ -8,9 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
-import cleon.common.doc.spec.doc.document.javamodel.IDocument;
-import cleon.common.doc.spec.doc.javamodel.DocumentElementComposite;
-import cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite;
+import cleon.common.doc.doc.spec.document.javamodel.IDocument;
+import cleon.common.doc.doc.spec.javamodel.DocumentElementComposite;
+import cleon.common.doc.doc.spec.javamodel.IDocumentElementComposite;
 /* End Protected Region   [[536edc4e-3de8-11e6-9bf8-29c5fda07fa3,imports]] */
 
 public class FunctionSpace_DocBook {
@@ -93,7 +93,7 @@ public class FunctionSpace_DocBook {
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6c18ef67-3e09-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement);
+    public java.lang.String RenderAttributes(final cleon.common.doc.doc.spec.javamodel.IDocumentElement documentElement);
 
   }
   
@@ -104,7 +104,7 @@ public class FunctionSpace_DocBook {
     private DocumentElementFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement) {
+    public java.lang.String RenderAttributes(final cleon.common.doc.doc.spec.javamodel.IDocumentElement documentElement) {
       return null;
     }
 
@@ -114,7 +114,7 @@ public class FunctionSpace_DocBook {
 
     private DocumentElementFunctions() {}
 
-    public static java.lang.String RenderAttributes(final cleon.common.doc.spec.doc.javamodel.IDocumentElement documentElement) {
+    public static java.lang.String RenderAttributes(final cleon.common.doc.doc.spec.javamodel.IDocumentElement documentElement) {
       return DynamicResourceUtil.invoke(IDocumentElementFunctionsImpl.class, DocumentElementFunctionsImpl.INSTANCE, documentElement).RenderAttributes(documentElement);
     }
 
@@ -151,7 +151,7 @@ public class FunctionSpace_DocBook {
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7a904f0e-3e12-11e6-9bf8-29c5fda07fa3")
-    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter);
+    public java.lang.String RenderElementName(final cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter abstractChapter);
 
   }
   
@@ -162,7 +162,7 @@ public class FunctionSpace_DocBook {
     private AbstractChapterFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter) {
+    public java.lang.String RenderElementName(final cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       /* Begin Protected Region [[7a904f0e-3e12-11e6-9bf8-29c5fda07fa3]] */
     	IDocumentElementComposite composite = DocumentElementComposite.selectToMeDocumentElements(abstractChapter);
     	if (composite instanceof IDocument)
@@ -182,7 +182,7 @@ public class FunctionSpace_DocBook {
 
     private AbstractChapterFunctions() {}
 
-    public static java.lang.String RenderElementName(final cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter abstractChapter) {
+    public static java.lang.String RenderElementName(final cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
       return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderElementName(abstractChapter);
     }
 
@@ -744,7 +744,7 @@ public class FunctionSpace_DocBook {
   public static interface IDocBookFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c0d81b31-2235-11e9-a054-db6d80fba790")
-    public java.lang.String RenderContent(final cleon.common.doc.spec.doc.paragraph.javamodel.IText text);
+    public java.lang.String RenderContent(final cleon.common.doc.doc.spec.paragraph.javamodel.IText text);
 
   }
   
@@ -768,4 +768,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,dsk4w3BR5DVDs1b/YtemYP5UTBE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,Ey0DdGDz4noAkIou/z6KrIORS78=] */

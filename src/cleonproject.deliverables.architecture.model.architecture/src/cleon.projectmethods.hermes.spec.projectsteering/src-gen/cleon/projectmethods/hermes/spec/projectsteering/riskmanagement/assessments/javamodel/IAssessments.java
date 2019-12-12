@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectsteering.riskmanagement.assessme
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAssessments extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IAssessments extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("24a6f9b1-324a-11e6-ab4d-73a9260c8088");
   
@@ -14,4 +14,4 @@ public interface IAssessments extends cleon.common.doc.spec.doc.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,N2vy/SdbvptlPVrxBgJ5X/4ZDrk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,MEFO25DHINIPuiSWX1Pbx0ndIpQ=] */

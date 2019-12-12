@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.planning.scope.delive
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDeliverables extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IDeliverables extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("53cc7703-bbcc-11e6-997f-d73ea5a3671c");
   
@@ -12,4 +12,4 @@ public interface IDeliverables extends cleon.common.doc.spec.doc.chapter.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,53cc7703-bbcc-11e6-997f-d73ea5a3671c,UtYhfTRzfeIy87oApefFj073OTA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,53cc7703-bbcc-11e6-997f-d73ea5a3671c,M1PyzlNgPGzVXeehjA3NDiR8tjQ=] */

@@ -32,31 +32,31 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   
   @Override
   public java.lang.String selectDocumentType() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_documentType);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_documentType);
   }
     
   public void setDocumentType(java.lang.String documentType) {
-     _setSingleAttribute(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_documentType, documentType);
+     _setSingleAttribute(cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_documentType, documentType);
   }
 
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors);
+  public java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> selectAuthors() {
+    return _getList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public ProtocolProperties setAuthors(java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Authors_authors, authors);
+  public ProtocolProperties setAuthors(java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> authors) {
+    _setList(cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember selectAutor() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor);
+  public cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember selectAutor() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor);
   }
 
-  public ProtocolProperties setAutor(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember autor) {
+  public ProtocolProperties setAutor(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember autor) {
     _setSingle(cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor, autor);
     return this;
   }
@@ -72,42 +72,42 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer selectCustomer() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_customer);
+  public cleon.common.doc.doc.spec.document.properties.javamodel.ICustomer selectCustomer() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.javamodel.ICustomer.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_customer);
   }
 
-  public ProtocolProperties setCustomer(cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer customer) {
-    _setSingle(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_customer, customer);
+  public ProtocolProperties setCustomer(cleon.common.doc.doc.spec.document.properties.javamodel.ICustomer customer) {
+    _setSingle(cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_customer, customer);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> selectDistributers() {
-    return _getList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Distributers_distributers);
+  public java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> selectDistributers() {
+    return _getList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Distributers_distributers);
   }
 
-  public ProtocolProperties setDistributers(java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> distributers) {
-    _setList(cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Distributers_distributers, distributers);
+  public ProtocolProperties setDistributers(java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> distributers) {
+    _setList(cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Distributers_distributers, distributers);
     return this;
   }
     
   @Override
-  public cleon.common.doc.spec.doc.document.properties.javamodel.IProject selectProject() {
-    return _getSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProject.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project);
+  public cleon.common.doc.doc.spec.document.properties.javamodel.IProject selectProject() {
+    return _getSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProject.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_project);
   }
 
-  public ProtocolProperties setProject(cleon.common.doc.spec.doc.document.properties.javamodel.IProject project) {
-    _setSingle(cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, project);
+  public ProtocolProperties setProject(cleon.common.doc.doc.spec.document.properties.javamodel.IProject project) {
+    _setSingle(cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_project, project);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> selectReviewers() {
-    return _getList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Reviewers_reviewers);
+  public java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> selectReviewers() {
+    return _getList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Reviewers_reviewers);
   }
 
-  public ProtocolProperties setReviewers(java.util.List<? extends cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember> reviewers) {
-    _setList(cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Reviewers_reviewers, reviewers);
+  public ProtocolProperties setReviewers(java.util.List<? extends cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember> reviewers) {
+    _setList(cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Reviewers_reviewers, reviewers);
     return this;
   }
     
@@ -155,14 +155,14 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_documentType, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_documentType, visitor);
     // relations
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.confidentiality.javamodel.IClassification.class, cleon.common.resources.spec.resources.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.ICustomer.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_customer, visitor);
-    _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Distributers_distributers, visitor);
-    _acceptSingle(cleon.common.doc.spec.doc.document.properties.javamodel.IProject.class, cleon.common.doc.spec.doc.document.properties.PropertiesPackage.Properties_project, visitor);
-    _acceptList(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember.class, cleon.common.doc.spec.doc.document.properties.member.MemberPackage.Reviewers_reviewers, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.javamodel.ICustomer.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_customer, visitor);
+    _acceptList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Distributers_distributers, visitor);
+    _acceptSingle(cleon.common.doc.doc.spec.document.properties.javamodel.IProject.class, cleon.common.doc.doc.spec.document.properties.PropertiesPackage.Properties_project, visitor);
+    _acceptList(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.doc.spec.document.properties.member.MemberPackage.Reviewers_reviewers, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.workstate.javamodel.IWorkState.class, cleon.common.resources.spec.resources.workstate.WorkstatePackage.WorkStateAware_state, visitor);
     _acceptSingle(cleon.common.resources.spec.resources.versions.javamodel.ISystemStage.class, cleon.common.resources.spec.resources.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -171,9 +171,9 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
 
   // toMeRelations
   
-  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolProperties> selectToMeAutor(cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember object) {
+  public static java.util.List<cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolProperties> selectToMeAutor(cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember object) {
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.spec.projectmanagement.protocols.javamodel.IProtocolProperties.class, cleon.projectmethods.hermes.spec.projectmanagement.protocols.ProtocolsPackage.ProtocolProperties_autor, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,GgUuuZScbykMqRyLO6FW7IdLm+s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,Vg1lsi5Zf4QyZcL8tjAo90w4d+c=] */

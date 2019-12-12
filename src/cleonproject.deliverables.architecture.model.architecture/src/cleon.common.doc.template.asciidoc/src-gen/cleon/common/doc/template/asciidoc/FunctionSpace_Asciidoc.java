@@ -8,9 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
-import cleon.common.doc.spec.doc.chapter.javamodel.*;
-import cleon.common.doc.spec.doc.document.javamodel.*;
-import cleon.common.doc.spec.doc.javamodel.*;
+import cleon.common.doc.doc.spec.chapter.javamodel.*;
+import cleon.common.doc.doc.spec.document.javamodel.*;
+import cleon.common.doc.doc.spec.javamodel.*;
 /* End Protected Region   [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
 
 public class FunctionSpace_Asciidoc {
@@ -139,7 +139,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IDocumentElementCompositeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4f21c7c9-307c-11e5-8cdc-d5b441c8c3df")
-    public java.lang.String GetIndent(final cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite documentElementComposite);
+    public java.lang.String GetIndent(final cleon.common.doc.doc.spec.javamodel.IDocumentElementComposite documentElementComposite);
 
   }
   
@@ -150,7 +150,7 @@ public class FunctionSpace_Asciidoc {
     private DocumentElementCompositeFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetIndent(final cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite documentElementComposite) {
+    public java.lang.String GetIndent(final cleon.common.doc.doc.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       /* Begin Protected Region [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     	IDocumentElementComposite parent = DocumentElementComposite.selectToMeDocumentElements(documentElementComposite);
     	   	
@@ -170,7 +170,7 @@ public class FunctionSpace_Asciidoc {
 
     private DocumentElementCompositeFunctions() {}
 
-    public static java.lang.String GetIndent(final cleon.common.doc.spec.doc.javamodel.IDocumentElementComposite documentElementComposite) {
+    public static java.lang.String GetIndent(final cleon.common.doc.doc.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       return DynamicResourceUtil.invoke(IDocumentElementCompositeFunctionsImpl.class, DocumentElementCompositeFunctionsImpl.INSTANCE, documentElementComposite).GetIndent(documentElementComposite);
     }
 
@@ -678,7 +678,7 @@ public class FunctionSpace_Asciidoc {
   public static interface IAsciidocFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ccfc5d7a-2236-11e9-a054-db6d80fba790")
-    public java.lang.String RenderContent(final cleon.common.doc.spec.doc.paragraph.javamodel.IText text);
+    public java.lang.String RenderContent(final cleon.common.doc.doc.spec.paragraph.javamodel.IText text);
 
   }
   
@@ -702,4 +702,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,nAbudT4Sr+YS74pgNJAfVNAiooQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,x55z60vI5pfGUscbuvg6vrYve6k=] */

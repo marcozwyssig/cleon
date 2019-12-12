@@ -11,9 +11,9 @@ public abstract class AbstractDynamicTest extends DynamicResource implements IAb
     super(IAbstractDynamicTest.TYPE_ID);
   }
   
-  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest> selectToMeReference(cleon.common.doc.spec.doc.chapter.references.javamodel.IReference object) {
+  public static java.util.List<cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest> selectToMeReference(cleon.common.doc.doc.spec.chapter.references.javamodel.IReference object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest.class, cleon.testingmethods.hermes.spec.hermes5._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,Xq5nwRxTTAIy7nHyGd8yRN4ByXI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,qCXrpO1kTqEJSy6MPX7gcITKU2Y=] */

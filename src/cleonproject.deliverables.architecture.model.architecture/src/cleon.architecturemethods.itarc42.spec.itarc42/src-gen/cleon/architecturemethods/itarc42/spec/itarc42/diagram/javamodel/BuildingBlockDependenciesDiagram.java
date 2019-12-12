@@ -60,12 +60,12 @@ public class BuildingBlockDependenciesDiagram extends DynamicResource implements
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public BuildingBlockDependenciesDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
+  public BuildingBlockDependenciesDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -91,4 +91,4 @@ public class BuildingBlockDependenciesDiagram extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0091c2c7-0e17-11e9-8b4c-f9aec93d8b56,H29C9yUNcam5PWdr8f7nAPDdMfc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0091c2c7-0e17-11e9-8b4c-f9aec93d8b56,yPTuxO1tRf5HnODeOtwsOl41mYE=] */

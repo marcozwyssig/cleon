@@ -60,12 +60,12 @@ public class TechnicalContextDiagram extends DynamicResource implements ITechnic
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public TechnicalContextDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
+  public TechnicalContextDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -108,4 +108,4 @@ public class TechnicalContextDiagram extends DynamicResource implements ITechnic
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f023427-fa45-11e8-af47-e5bdd8100025,NTz4aI1Ry91qjwEapTbJgE/+zXk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0f023427-fa45-11e8-af47-e5bdd8100025,cw0STpDIbc+OqzybEXYLdsCIBKw=] */

@@ -51,32 +51,32 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> selectChapters() {
-    return _getList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters);
+  public java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IChapter> selectChapters() {
+    return _getList(cleon.common.doc.doc.spec.chapter.javamodel.IChapter.class, cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_chapters);
   }
 
-  public Solution_Strategy setChapters(java.util.List<? extends cleon.common.doc.spec.doc.chapter.javamodel.IChapter> chapters) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, chapters);
+  public Solution_Strategy setChapters(java.util.List<? extends cleon.common.doc.doc.spec.chapter.javamodel.IChapter> chapters) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_chapters, chapters);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Solution_Strategy setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.DocumentElementComposite_documentElements, documentElements);
+  public Solution_Strategy setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> selectParagraphs() {
-    return _getList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs);
+  public java.util.List<? extends cleon.common.doc.doc.spec.paragraph.javamodel.IStandardParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.doc.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_paragraphs);
   }
 
-  public Solution_Strategy setParagraphs(java.util.List<? extends cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph> paragraphs) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, paragraphs);
+  public Solution_Strategy setParagraphs(java.util.List<? extends cleon.common.doc.doc.spec.paragraph.javamodel.IStandardParagraph> paragraphs) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_paragraphs, paragraphs);
     return this;
   }
     
@@ -96,10 +96,10 @@ public class Solution_Strategy extends DynamicResource implements ISolution_Stra
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.spec.doc.chapter.javamodel.IChapter.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_chapters, visitor);
-    _acceptList(cleon.common.doc.spec.doc.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.spec.doc.DocPackage.OnlyStandardElementsChapter_paragraphs, visitor);
+    _acceptList(cleon.common.doc.doc.spec.chapter.javamodel.IChapter.class, cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_chapters, visitor);
+    _acceptList(cleon.common.doc.doc.spec.paragraph.javamodel.IStandardParagraph.class, cleon.common.doc.doc.spec.SpecPackage.OnlyStandardElementsChapter_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,t/5q5jMD6FbwiwhLzM83ERgN58s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,650ddeb2-e985-11e8-af5c-a5aa9dc47205,vKds98TefGKunEQZGBNlcSpJO2k=] */

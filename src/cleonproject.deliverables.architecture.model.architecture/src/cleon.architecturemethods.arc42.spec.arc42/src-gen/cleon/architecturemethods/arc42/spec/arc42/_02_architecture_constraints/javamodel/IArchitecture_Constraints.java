@@ -22,7 +22,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global
  * analysis”.
  */
-public interface IArchitecture_Constraints extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IArchitecture_Constraints extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b06163b8-ffc9-11e5-bd7b-8b0acf27d441");
   
@@ -34,4 +34,4 @@ public interface IArchitecture_Constraints extends cleon.common.doc.spec.doc.cha
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,HiDkc9087BWwX1PDGq4PTE3gnQ4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b06163b8-ffc9-11e5-bd7b-8b0acf27d441,Be6UNZ+3giAr2UtFGJT/NRRLG7Y=] */

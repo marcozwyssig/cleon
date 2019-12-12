@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.spec.eamod.chrv.motivation.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IMotivation extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IMotivation extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("c7277d8d-a950-11e5-bda2-a7fc3bd7c783");
   
@@ -18,4 +18,4 @@ public interface IMotivation extends cleon.common.doc.spec.doc.chapter.javamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,3Csb8+m7mfl6nCQ82Rds2mni0pw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c7277d8d-a950-11e5-bda2-a7fc3bd7c783,dJpLLeAr5fLiu2F3Sh9IjFHIiSY=] */

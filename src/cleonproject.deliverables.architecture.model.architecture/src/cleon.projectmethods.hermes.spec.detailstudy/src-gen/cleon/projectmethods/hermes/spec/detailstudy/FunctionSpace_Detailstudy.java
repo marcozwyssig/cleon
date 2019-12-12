@@ -158,7 +158,7 @@ public class FunctionSpace_Detailstudy {
   public static interface IDetailstudyFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5ab3c7c5-13e9-11e9-a836-9d144e5bc2a5")
-    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -208,7 +208,7 @@ public class FunctionSpace_Detailstudy {
   public static interface IDriversFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cb605dad-2030-11e9-83b3-a16e26b4cc59")
-    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -232,4 +232,4 @@ public class FunctionSpace_Detailstudy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,NwLXBnCly+bWgTNdz2M/DG29+DY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,106e2f5e-a6e8-11e8-9c81-8bd68c62e435,2vPFFJHeAA7X8kuJ/2RVn3saZz8=] */

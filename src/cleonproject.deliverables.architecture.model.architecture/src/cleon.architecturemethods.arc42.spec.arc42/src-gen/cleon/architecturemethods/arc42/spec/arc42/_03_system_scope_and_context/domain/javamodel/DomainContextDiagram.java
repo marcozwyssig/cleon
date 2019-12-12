@@ -60,12 +60,12 @@ public class DomainContextDiagram extends DynamicResource implements IDomainCont
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.spec.doc.javamodel.IDocumentElement.class, cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements);
+  public java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.doc.spec.javamodel.IDocumentElement.class, cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
-  public DomainContextDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.spec.doc.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.spec.doc.DocPackage.NoDocumentElementComposite_documentElements, documentElements);
+  public DomainContextDiagram setDocumentElements(java.util.List<? extends cleon.common.doc.doc.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.doc.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -108,4 +108,4 @@ public class DomainContextDiagram extends DynamicResource implements IDomainCont
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19b3a56f-fa3e-11e8-af47-e5bdd8100025,mSb4HvNJ62c/fJNqmOoBrbRAXkM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19b3a56f-fa3e-11e8-af47-e5bdd8100025,ywShX2SZztGtylkr2WzOqCXPnX8=] */

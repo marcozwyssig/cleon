@@ -11,7 +11,7 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
  * 
  * 
  */
-public interface IIntroductionAndGoals extends cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IIntroductionAndGoals extends cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b1708484-11fc-11e5-848b-017a3a98ae34");
   
@@ -23,4 +23,4 @@ public interface IIntroductionAndGoals extends cleon.common.doc.spec.doc.chapter
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,KwRYNLhQvXCkI7KD06PoypjT8g8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1708484-11fc-11e5-848b-017a3a98ae34,kW836LB0t0doEQxbPiHEojLupa8=] */

@@ -2,7 +2,7 @@ package cleon.common.glossary.spec.glossary.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IGlossaryAware extends cleon.common.doc.spec.doc.document.javamodel.IDocument {
+public interface IGlossaryAware extends cleon.common.doc.doc.spec.document.javamodel.IDocument {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("76a0d31a-4f09-11e6-a115-99fb8013e67b");
   
@@ -12,4 +12,4 @@ public interface IGlossaryAware extends cleon.common.doc.spec.doc.document.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,76a0d31a-4f09-11e6-a115-99fb8013e67b,mJkvnLGTgmkaWpssf7eAOPvaIzQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,76a0d31a-4f09-11e6-a115-99fb8013e67b,PDWuDtgMRvqsX5JhGHA2t2ZliYs=] */

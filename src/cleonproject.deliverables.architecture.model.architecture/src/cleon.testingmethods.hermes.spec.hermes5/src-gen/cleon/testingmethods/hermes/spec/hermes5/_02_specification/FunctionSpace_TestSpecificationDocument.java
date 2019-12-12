@@ -21,7 +21,7 @@ public class FunctionSpace_TestSpecificationDocument {
   public static interface ITestSpecificationDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("80c68059-51af-11e9-9ffb-eb7c70212990")
-    public List<cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_TestSpecificationDocument {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,q6vH8SpKZYL34pjfpfAH3JViEVQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,L5UvvRpHTrEXl5FX3fvpKL/ib9A=] */

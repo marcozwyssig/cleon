@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.spec.projectmanagement.resource.persons.java
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPerson extends cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResource, cleon.common.doc.spec.doc.document.properties.member.javamodel.IMember, cleon.common.doc.spec.doc.chapter.javamodel.IAbstractChapter {
+public interface IPerson extends cleon.projectmethods.hermes.spec.projectmanagement.resource.javamodel.IResource, cleon.common.doc.doc.spec.document.properties.member.javamodel.IMember, cleon.common.doc.doc.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("9bfc0d2c-ff9e-11e4-ac0a-959b440f987f");
   
@@ -24,4 +24,4 @@ public interface IPerson extends cleon.projectmethods.hermes.spec.projectmanagem
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,gqSKukEJCzrS0gc4RT+Aw8ELGAs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9bfc0d2c-ff9e-11e4-ac0a-959b440f987f,uzM9DShhUkKQVKL5N9Q9bk59Soo=] */

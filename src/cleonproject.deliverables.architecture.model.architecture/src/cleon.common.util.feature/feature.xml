@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.common.util" label="cleon.common.util" version="0.4.144">
+<feature id="cleon.common.util" label="cleon.common.util" version="0.4.145">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -466,6 +466,6 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       <import feature="cleon.common.resources"/>
    </requires>
-   <plugin id="cleon.common.util.spec.actifsource.builtin" download-size="0" install-size="0" version="0.4.144" unpack="false"/>   
+   <plugin id="cleon.common.util.spec.actifsource.builtin" download-size="0" install-size="0" version="0.4.145" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,832b893f-0c86-11e9-b134-a7cd19ab9268,Hash] -->

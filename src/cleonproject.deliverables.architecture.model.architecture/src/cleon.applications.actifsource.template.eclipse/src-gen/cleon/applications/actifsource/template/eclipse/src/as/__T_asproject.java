@@ -20,36 +20,36 @@ public class __T_asproject {
   /* End Protected Region   [[a9f07baf-11e9-11e5-b568-55f5f05bd6f6]] */
 
 
-  public static interface IPluginFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("88e4db85-41a1-11e8-81d0-774e4d9334dd")
     public java.lang.Boolean GenerateJavaModel();
 
   }
   
-  public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("88e4db85-41a1-11e8-81d0-774e4d9334dd")
-    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin);
+    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin);
 
   }
   
-  public static class PluginFunctionsImpl implements IPluginFunctionsImpl {
+  public static class AbstractPluginFunctionsImpl implements IAbstractPluginFunctionsImpl {
 
-    public static final IPluginFunctionsImpl INSTANCE = new PluginFunctionsImpl();
+    public static final IAbstractPluginFunctionsImpl INSTANCE = new AbstractPluginFunctionsImpl();
 
-    private PluginFunctionsImpl() {}
+    private AbstractPluginFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin) {
+    public java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin) {
       /* Begin Protected Region [[88e4db85-41a1-11e8-81d0-774e4d9334dd]] */
-    	IActifsource actifsource = plugin.selectActifsource();
+    	IActifsource actifsource = abstractPlugin.selectActifsource();
     	if( actifsource == null)
     	{
     		return false;
     	}
     	
-    	IJava java = plugin.selectJava();
+    	IJava java = abstractPlugin.selectJava();
     	if( java == null)
     	{
     		return false;
@@ -60,16 +60,16 @@ public class __T_asproject {
 
   }
   
-  public static class PluginFunctions {
+  public static class AbstractPluginFunctions {
 
-    private PluginFunctions() {}
+    private AbstractPluginFunctions() {}
 
-    public static java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin) {
-      return DynamicResourceUtil.invoke(IPluginFunctionsImpl.class, PluginFunctionsImpl.INSTANCE, plugin).GenerateJavaModel(plugin);
+    public static java.lang.Boolean GenerateJavaModel(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin) {
+      return DynamicResourceUtil.invoke(IAbstractPluginFunctionsImpl.class, AbstractPluginFunctionsImpl.INSTANCE, abstractPlugin).GenerateJavaModel(abstractPlugin);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,GJx9xtWkpbnozATf61wW6w7FUFo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a9f07baf-11e9-11e5-b568-55f5f05bd6f6,xLH7twpCTkTrXDNsbNrIpt4hmvU=] */

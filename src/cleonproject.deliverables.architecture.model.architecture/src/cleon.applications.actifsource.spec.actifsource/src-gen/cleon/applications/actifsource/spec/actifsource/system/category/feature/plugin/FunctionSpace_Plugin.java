@@ -118,25 +118,25 @@ public class FunctionSpace_Plugin {
 
   }
 
-  public static interface IPluginFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5fac0a17-8983-11e6-9315-e9960ca482c6")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetDirectDependingProjectBuildingBlocks();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetDirectDependingProjectBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("40333452-c10a-11e6-8f58-ad3c6ee7602f")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetDirectDependingBuiltinBuildingBlocks();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetDirectDependingBuiltinBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("bd765b2f-c10b-11e6-8f58-ad3c6ee7602f")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetAllDuplicatedBuiltinDependencies();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetAllDuplicatedBuiltinDependencies();
 
     @IDynamicResourceExtension.MethodId("3e804d3f-95a8-11e8-8990-bba75387a1ab")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetAllDuplicatedProjectDependencies();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetAllDuplicatedProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("1e20244f-c10c-11e6-8f58-ad3c6ee7602f")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetAllBuiltinDependencies();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetAllBuiltinDependencies();
 
     @IDynamicResourceExtension.MethodId("32cb0426-95a8-11e8-8990-bba75387a1ab")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetAllProjectDependencies();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetAllProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("3e2a64a5-5b56-11e7-9702-abdab196c2a1")
     public java.lang.String GetFullBuildingBlockName();
@@ -148,30 +148,30 @@ public class FunctionSpace_Plugin {
     public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.INature> ListNatures();
 
     @IDynamicResourceExtension.MethodId("6062fd26-d093-11e8-b005-f7630e4c29c0")
-    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin> GetDirectDependingBuildingBlocks();
+    public List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> GetDirectDependingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("1f04e30a-6f63-11e9-ad7a-a97bad6ad10a")
     public java.lang.String GetBuildingBlockName();
 
   }
   
-  public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("22956d62-5b57-11e7-9702-abdab196c2a1")
-    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin);
+    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin);
 
   }
   
-  public static class PluginFunctionsImpl implements IPluginFunctionsImpl {
+  public static class AbstractPluginFunctionsImpl implements IAbstractPluginFunctionsImpl {
 
-    public static final IPluginFunctionsImpl INSTANCE = new PluginFunctionsImpl();
+    public static final IAbstractPluginFunctionsImpl INSTANCE = new AbstractPluginFunctionsImpl();
 
-    private PluginFunctionsImpl() {}
+    private AbstractPluginFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin) {
+    public java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin) {
       /* Begin Protected Region [[22956d62-5b57-11e7-9702-abdab196c2a1]] */
-    	IActifsource actifsource = plugin.selectActifsource();
+    	IActifsource actifsource = abstractPlugin.selectActifsource();
     	if( actifsource == null)
     	{
     		return false;
@@ -187,16 +187,16 @@ public class FunctionSpace_Plugin {
 
   }
   
-  public static class PluginFunctions {
+  public static class AbstractPluginFunctions {
 
-    private PluginFunctions() {}
+    private AbstractPluginFunctions() {}
 
-    public static java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin plugin) {
-      return DynamicResourceUtil.invoke(IPluginFunctionsImpl.class, PluginFunctionsImpl.INSTANCE, plugin).UseSimpleName(plugin);
+    public static java.lang.Boolean UseSimpleName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin abstractPlugin) {
+      return DynamicResourceUtil.invoke(IAbstractPluginFunctionsImpl.class, AbstractPluginFunctionsImpl.INSTANCE, abstractPlugin).UseSimpleName(abstractPlugin);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,fT91kv/1S0liyUl8+ceOdLL7VDg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,S/M6HDV1nJ37ESnSv9TACfPxLrw=] */

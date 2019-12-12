@@ -18,7 +18,7 @@ public class FunctionSpace {
   /* End Protected Region   [[30ec7375-11ea-11e5-b568-55f5f05bd6f6]] */
 
 
-  public static interface IPluginFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3c4f08b4-11ea-11e5-b568-55f5f05bd6f6")
     public java.lang.String GetPath();
@@ -46,21 +46,21 @@ public class FunctionSpace {
 
   }
   
-  public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class PluginFunctionsImpl implements IPluginFunctionsImpl {
+  public static class AbstractPluginFunctionsImpl implements IAbstractPluginFunctionsImpl {
 
-    public static final IPluginFunctionsImpl INSTANCE = new PluginFunctionsImpl();
+    public static final IAbstractPluginFunctionsImpl INSTANCE = new AbstractPluginFunctionsImpl();
 
-    private PluginFunctionsImpl() {}
+    private AbstractPluginFunctionsImpl() {}
 
   }
   
-  public static class PluginFunctions {
+  public static class AbstractPluginFunctions {
 
-    private PluginFunctions() {}
+    private AbstractPluginFunctions() {}
 
   }
 
@@ -70,7 +70,7 @@ public class FunctionSpace {
     public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPackage GetPackages();
 
     @IDynamicResourceExtension.MethodId("3bee1cdd-b885-11e5-a463-ff45aa361315")
-    public java.lang.String GetPackageName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin project);
+    public java.lang.String GetPackageName(final cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin project);
 
   }
   
@@ -375,4 +375,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,T4av8yUe9dkjsQXIuozyYtq/FqE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,SdDsx461IkwdMwjuS/CGag025Y8=] */

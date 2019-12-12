@@ -42,11 +42,11 @@ public class PluginAggregateDecomposite extends DynamicResource implements IPlug
   // relations
   
   @Override
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectInto() {
-    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into);
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin selectInto() {
+    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into);
   }
 
-  public PluginAggregateDecomposite setInto(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin into) {
+  public PluginAggregateDecomposite setInto(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin into) {
     _setSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into, into);
     return this;
   }
@@ -87,15 +87,15 @@ public class PluginAggregateDecomposite extends DynamicResource implements IPlug
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
-    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into, visitor);
+    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginAggregateDecomposite selectToMeInto(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin object) {
+  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginAggregateDecomposite selectToMeInto(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin object) {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginAggregateDecomposite_into, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,ZlJz4BDT9CKx8wlMe8vXSaPStbw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,YGzRnp2SwgN1HVeOzYxwoKDfAqA=] */

@@ -2,26 +2,10 @@ package cleon.applications.actifsource.spec.actifsource.system.category.feature.
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IPlugin extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponent {
+public interface IPlugin extends ch.actifsource.core.javamodel.INamedResource, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("04a544de-11e9-11e5-b568-55f5f05bd6f6");
-  
-  // relations
-  
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency> selectDependsOnPlugin();
-  
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginBuiltinDependency> selectDependsOnBuiltin();
-  
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IResource> selectResources();
-  
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.actifsource.javamodel.IActifsource selectActifsource();
-  
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IJava selectJava();
-  
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IGradle selectGradle();
-  
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature selectPlugin();
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,us4yglCFRw965MjMzBC/WgFwngo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576,1D6pd9Fx5+iDd4AztufqFcBOX6k=] */

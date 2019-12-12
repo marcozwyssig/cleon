@@ -60,11 +60,11 @@ public class PluginProjectDependency extends DynamicResource implements IPluginP
   // relations
   
   @Override
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectTo() {
-    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to);
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin selectTo() {
+    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to);
   }
 
-  public PluginProjectDependency setTo(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin to) {
+  public PluginProjectDependency setTo(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin to) {
     _setSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to, to);
     return this;
   }
@@ -86,15 +86,15 @@ public class PluginProjectDependency extends DynamicResource implements IPluginP
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Dependency_allowRecursiveDependency, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to, visitor);
+    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency> selectToMeTo(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin object) {
+  public static java.util.List<cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency> selectToMeTo(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin object) {
     return _getToMeList(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPluginProjectDependency.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.PluginPackage.PluginProjectDependency_to, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb57b8c2-0c6a-11e6-86c5-87a8b520dd59,A/RItKuiQ55Ale6qEhxgg8B3Yqk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb57b8c2-0c6a-11e6-86c5-87a8b520dd59,ybZVhwgy27u61raT92rzMwfuIhE=] */

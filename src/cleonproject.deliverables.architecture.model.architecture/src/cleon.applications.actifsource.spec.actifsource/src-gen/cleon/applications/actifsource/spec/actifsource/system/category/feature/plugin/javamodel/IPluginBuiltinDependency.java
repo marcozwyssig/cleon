@@ -8,8 +8,8 @@ public interface IPluginBuiltinDependency extends cleon.applications.actifsource
   
   // relations
   
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectTo();
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin selectTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,+oRlnouUCcQcUrHr9N+K5hwi6ok=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dc98b25c-0c6a-11e6-86c5-87a8b520dd59,QfzsbqKOv/ZTVytFsu08ohbFgVQ=] */

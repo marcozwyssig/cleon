@@ -8,8 +8,8 @@ public interface IPluginAggregateDecomposite extends cleon.modelinglanguages.uml
   
   // relations
   
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IPlugin selectInto();
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin selectInto();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,IJmoVJM+L/1UEwtvwBG/D8rOUEQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17a9b7ab-a7d1-11e5-82dd-3b995d9c840c,1GcOnGqhk476gsGnrEK/1h/EQ3I=] */

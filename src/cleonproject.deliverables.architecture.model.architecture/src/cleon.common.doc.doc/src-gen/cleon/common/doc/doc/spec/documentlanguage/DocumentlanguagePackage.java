@@ -4,7 +4,6 @@ import ch.actifsource.core.Resource;
 
 public class DocumentlanguagePackage {
   
-  public static final Resource FunctionSpace_aE_DocumentLanguage_DocumentLanguage = new Resource("cbdb4741-2234-11e9-a054-db6d80fba790");
   public static final Resource DocumentLanguage = new Resource("e106709e-2234-11e9-a054-db6d80fba790");
   
   /* Begin Protected Region [[user]] */
@@ -26,4 +25,4 @@ public class DocumentlanguagePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.doc.spec.documentlanguage,NXDQC3PcjVLLuNvurSpK0C0VHyY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.doc.spec.documentlanguage,qcQNA0kspUW2XBiBQ6UROD/3CQw=] */

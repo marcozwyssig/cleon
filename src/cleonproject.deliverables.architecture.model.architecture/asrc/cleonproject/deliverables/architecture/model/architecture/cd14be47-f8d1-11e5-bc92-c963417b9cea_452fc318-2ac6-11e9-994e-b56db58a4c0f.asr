@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="452fc318-2ac6-11e9-994e-b56db58a4c0f">
   <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <resource statement-guid="52e6f633-2ac6-11e9-994e-b56db58a4c0f" type="resource" guid="52e6d01f-2ac6-11e9-994e-b56db58a4c0f" />
     <resource statement-guid="58383364-2ac6-11e9-994e-b56db58a4c0f" type="resource" guid="58380c50-2ac6-11e9-994e-b56db58a4c0f" />
   </owns>
   <owns predicate="37b032e2-3fd8-11e8-bd50-b94594551673">
@@ -20,19 +19,6 @@
     <object statement-guid="452fc31b-2ac6-11e9-994e-b56db58a4c0f" type="literal">docbook</object>
   </predicate>
   <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <object statement-guid="52e6f633-2ac6-11e9-994e-b56db58a4c0f">
-      <resource guid="52e6d01f-2ac6-11e9-994e-b56db58a4c0f">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="52e6d021-2ac6-11e9-994e-b56db58a4c0f" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
-        </predicate>
-        <predicate guid="069b6d5b-beb4-11e8-972c-a1feaa7cfc48">
-          <object statement-guid="53710dcb-2ac6-11e9-994e-b56db58a4c0f" type="resource" guid="e3d18eed-3de7-11e6-9bf8-29c5fda07fa3" />
-        </predicate>
-        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
-          <object statement-guid="52e6d022-2ac6-11e9-994e-b56db58a4c0f" type="literal">false</object>
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="58383364-2ac6-11e9-994e-b56db58a4c0f">
       <resource guid="58380c50-2ac6-11e9-994e-b56db58a4c0f">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

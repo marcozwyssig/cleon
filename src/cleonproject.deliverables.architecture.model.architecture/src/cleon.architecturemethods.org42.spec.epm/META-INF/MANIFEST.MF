@@ -15,6 +15,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.bpmn.spec.bpmn2.builtin;bundle-version="0.4.145",
  cleon.common.doc.doc.builtin;bundle-version="0.4.145",
  cleon.common.resources.spec.resources.builtin;bundle-version="0.4.145",
+ cleon.common.xml.template.xml.builtin;bundle-version="0.4.145",
+ cleon.common.xml.spec.xmi.builtin;bundle-version="0.4.145",
+ cleon.common.xml.spec.xml.builtin;bundle-version="0.4.145",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.org42.spec.epm,
  cleon.architecturemethods.org42.spec.epm.javamodel

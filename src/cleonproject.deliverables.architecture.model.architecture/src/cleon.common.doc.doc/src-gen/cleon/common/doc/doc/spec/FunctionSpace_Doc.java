@@ -136,6 +136,34 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface IDocumentLanguageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e6e08bab-2234-11e9-a054-db6d80fba790")
+    public java.lang.String RenderTextContent(final cleon.common.doc.doc.spec.paragraph.javamodel.IText text);
+
+    @IDynamicResourceExtension.MethodId("8c68084f-2240-11e9-a054-db6d80fba790")
+    public java.lang.String RenderDocumentContent(final cleon.common.doc.doc.spec.document.javamodel.IDocument document);
+
+  }
+  
+  public static interface IDocumentLanguageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DocumentLanguageFunctionsImpl implements IDocumentLanguageFunctionsImpl {
+
+    public static final IDocumentLanguageFunctionsImpl INSTANCE = new DocumentLanguageFunctionsImpl();
+
+    private DocumentLanguageFunctionsImpl() {}
+
+  }
+  
+  public static class DocumentLanguageFunctions {
+
+    private DocumentLanguageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,IY/iMQC6UlPK+r7zk68yvFbemOU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,ToxSi1DBVWX7skjijb63mkj3Dc8=] */

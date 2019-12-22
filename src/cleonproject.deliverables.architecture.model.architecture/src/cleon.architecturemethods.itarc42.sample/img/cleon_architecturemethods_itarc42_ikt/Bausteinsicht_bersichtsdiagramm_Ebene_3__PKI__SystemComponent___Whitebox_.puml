@@ -1,8 +1,9 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
+
+
 
 
 
@@ -19,6 +20,5 @@ rectangle PKI as "PKI" <<SystemComponent>> {
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,512ce707-0a96-11e9-9f72-e5610a9d4cd3,Hash]

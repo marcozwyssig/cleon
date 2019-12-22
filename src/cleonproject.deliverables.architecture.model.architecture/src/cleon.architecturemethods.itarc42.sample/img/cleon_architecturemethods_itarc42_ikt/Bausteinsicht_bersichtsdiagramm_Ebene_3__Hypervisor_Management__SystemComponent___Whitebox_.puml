@@ -1,8 +1,8 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
+
 
 
 
@@ -17,6 +17,5 @@ rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,676eba17-0a97-11e9-a2c0-1d5f7e333c03,Hash]

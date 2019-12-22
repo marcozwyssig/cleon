@@ -1,8 +1,9 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
+
+
 
 
 
@@ -18,6 +19,5 @@ Deployment -down-> Operating__F_System : verwendet
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,09a24a16-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

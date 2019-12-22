@@ -1,8 +1,9 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
+
+
 
 
 
@@ -19,6 +20,5 @@ rectangle Monitoring as "Monitoring" <<SystemComponent>> {
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,c2925857-0ce7-11e9-8fb3-3d281af33bda,Hash]

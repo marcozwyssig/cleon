@@ -1,9 +1,7 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 show stereotype
@@ -18,6 +16,5 @@ Veeam__F_Backup__F_Management__F___N_VBM__O_ -down-> Windows__F___N_WIN__O_ : ve
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,472b4fd0-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

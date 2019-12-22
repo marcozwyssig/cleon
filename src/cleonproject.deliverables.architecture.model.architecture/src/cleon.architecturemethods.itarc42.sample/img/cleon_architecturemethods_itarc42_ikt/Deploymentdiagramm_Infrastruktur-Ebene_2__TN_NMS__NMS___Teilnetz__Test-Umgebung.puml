@@ -1,6 +1,5 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
 !include <office/databases/database>
@@ -134,6 +133,5 @@ rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,ea56ade3-0eb1-11e9-9f19-6d15636f4ecc,Hash]

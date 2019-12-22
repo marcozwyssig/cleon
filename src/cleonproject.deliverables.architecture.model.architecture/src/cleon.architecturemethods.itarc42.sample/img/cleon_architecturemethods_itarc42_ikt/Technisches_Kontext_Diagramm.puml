@@ -1,6 +1,5 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
 component Tactilon as "Tactilon" <<ExternalSystem>>
@@ -30,6 +29,5 @@ IKT --> IP2__T_0 : "networking"
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,ca171327-ef1d-11e8-be8a-b748ff8f0a75,Hash]

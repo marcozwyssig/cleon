@@ -1,6 +1,5 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
 show stereotype
@@ -48,6 +47,5 @@ ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_POLYCOM
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,5bbc76f1-0e24-11e9-8b4c-f9aec93d8b56,Hash]

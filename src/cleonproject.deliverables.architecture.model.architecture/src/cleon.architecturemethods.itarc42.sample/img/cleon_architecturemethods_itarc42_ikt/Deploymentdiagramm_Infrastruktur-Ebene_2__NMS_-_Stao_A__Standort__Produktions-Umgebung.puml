@@ -1,6 +1,5 @@
 @startuml
 
-
 skinparam monochrome true
 skinparam componentStyle uml2
 !include <office/databases/database>
@@ -108,6 +107,5 @@ rectangle NMS__F___S___F_Stao__F_A as "NMS - Stao A" <<Standort>> {
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]
-
 @enduml
 ' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,3a4a0f9c-0b72-11e9-a136-69d076e48ed1,Hash]

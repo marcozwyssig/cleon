@@ -384,7 +384,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle IKT as "IKT" <<System>> {
@@ -581,7 +580,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -861,7 +859,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Plattform as "Plattform" <<SystemLayer>> {
@@ -958,7 +955,6 @@ Datenablage -down-> Operating__F_System : verwendet
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -1365,7 +1361,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
@@ -1499,7 +1494,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Storage as "Storage" <<SystemComponent>> {
@@ -1554,7 +1548,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -1658,7 +1651,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -1777,7 +1769,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -1918,7 +1909,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Application as "Application" <<SystemComponent>> {
@@ -1976,7 +1966,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -2040,7 +2029,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
@@ -2098,7 +2086,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -2202,7 +2189,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
@@ -2260,7 +2246,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -2405,7 +2390,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Monitoring as "Monitoring" <<SystemComponent>> {
@@ -2502,7 +2486,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -2607,7 +2590,6 @@ skinparam componentStyle uml2
 
 
 
-
 show stereotype
 
 rectangle Identity__F_Access__F_Management as "Identity Access Management" <<SystemComponent>> {
@@ -2704,7 +2686,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 
@@ -2845,7 +2826,6 @@ Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer A
 ....
 skinparam monochrome true
 skinparam componentStyle uml2
-
 
 
 

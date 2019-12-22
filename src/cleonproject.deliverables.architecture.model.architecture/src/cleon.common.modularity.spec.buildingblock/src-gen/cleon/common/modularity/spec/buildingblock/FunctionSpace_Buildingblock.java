@@ -38,23 +38,26 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("281c80c3-3c77-11e6-aafa-bd565efc0ead")
     public java.lang.String GetBuildingBlockName();
 
-    @IDynamicResourceExtension.MethodId("2d3073fe-4355-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDependenciesFromParent();
+    @IDynamicResourceExtension.MethodId("feec2b18-0aa6-11e9-b5db-cdf0b8dad9e4")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDecomposingBuildingBlocks();
 
-    @IDynamicResourceExtension.MethodId("2d309b24-4355-11e6-a9d7-97cf4f7c398b")
-    public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetDecomposingBuildingBlocksFromParent();
-
-    @IDynamicResourceExtension.MethodId("2d309b3b-4355-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllAllowedBuildingBlockFromParent();
-
-    @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposeBuildingBlockOfAllDependenciesFromParent();
+    @IDynamicResourceExtension.MethodId("b34d757f-24c0-11ea-9904-7d41f80113d4")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("5f8b2abd-4823-11e6-82f6-0f210765495b")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposingBuildingBlocksExceptSelf();
 
-    @IDynamicResourceExtension.MethodId("feec2b18-0aa6-11e9-b5db-cdf0b8dad9e4")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDecomposingBuildingBlocks();
+    @IDynamicResourceExtension.MethodId("2d309b24-4355-11e6-a9d7-97cf4f7c398b")
+    public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetDecomposingBuildingBlocksFromParent();
+
+    @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposeBuildingBlockOfAllDependenciesFromParent();
+
+    @IDynamicResourceExtension.MethodId("2d309b3b-4355-11e6-a9d7-97cf4f7c398b")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllAllowedBuildingBlockFromParent();
+
+    @IDynamicResourceExtension.MethodId("2d3073fe-4355-11e6-a9d7-97cf4f7c398b")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDependenciesFromParent();
 
     @IDynamicResourceExtension.MethodId("a032d549-4823-11e6-82f6-0f210765495b")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDependencies();
@@ -77,14 +80,14 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("24cf8570-2ce6-11e8-a902-afb10318295e")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetIndirectDependingBuildingBlocks();
 
+    @IDynamicResourceExtension.MethodId("f9141268-1b4b-11e9-9171-31a0f985a0be")
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetInvertDependencies();
+
     @IDynamicResourceExtension.MethodId("54d20256-035a-11e9-a251-e3767b78f69f")
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
     public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("f9141268-1b4b-11e9-9171-31a0f985a0be")
-    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetInvertDependencies();
 
   }
   
@@ -250,4 +253,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Zxi6jLTPBt+soUNsYidWZVJb1rE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,OcDIlWryPvlkF/hlbBgPyp3Mnds=] */

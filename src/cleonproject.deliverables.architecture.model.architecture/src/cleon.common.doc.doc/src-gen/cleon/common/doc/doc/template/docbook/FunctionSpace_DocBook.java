@@ -746,9 +746,6 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("c0d81b31-2235-11e9-a054-db6d80fba790")
     public java.lang.String RenderContent(final cleon.common.doc.doc.spec.paragraph.javamodel.IText text);
 
-    @IDynamicResourceExtension.MethodId("2fa0c3bb-1e85-11ea-862b-25dce7587113")
-    public java.lang.String RenderTextContent(final cleon.common.doc.doc.spec.paragraph.javamodel.IText text);
-
     @IDynamicResourceExtension.MethodId("2fa0c3bf-1e85-11ea-862b-25dce7587113")
     public java.lang.String RenderDocumentContent(final cleon.common.doc.doc.spec.document.javamodel.IDocument document);
 
@@ -849,4 +846,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,nizUp4SAOkEBE1ZFETQJoAY877w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,wA9PqwApby5srli/DTsyck25anM=] */

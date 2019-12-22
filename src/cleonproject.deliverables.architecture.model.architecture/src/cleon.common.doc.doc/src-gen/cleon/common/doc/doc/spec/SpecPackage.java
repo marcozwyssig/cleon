@@ -19,7 +19,6 @@ public class SpecPackage {
   public static final Resource ChapterAware = new Resource("a97ec1a8-2169-11e9-a054-db6d80fba790");
   public static final Resource FunctionSpace_aE_Doc_ChapterAware = new Resource("1d613325-216a-11e9-a054-db6d80fba790");
   public static final Resource FunctionSpace_aE_Doc_DocumentLanguage = new Resource("cbdb4741-2234-11e9-a054-db6d80fba790");
-  public static final Resource FunctionSpace_aE_Doc_Text = new Resource("fe1da48f-2234-11e9-a054-db6d80fba790");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +39,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.doc.spec,2CZCyyWY7m//aJBL7T03Ini/gQw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.doc.spec,39QyLFSfvLPCFj+PaxY8/MFRi/I=] */

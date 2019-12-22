@@ -1419,7 +1419,6 @@
 								<db:para>Infrastruktur &lt;SystemLayer&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9b28681e-eccc-11e8-b4c8-834dd6818408"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Die Infrastruktur Schicht beinhaltet die Hardware Bausteine, welche als Fundament f&#252;r das System IKT agieren.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1427,7 +1426,6 @@
 								<db:para>Plattform &lt;SystemLayer&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.94cebc42-eccc-11e8-b4c8-834dd6818408"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Die Plattform Schicht unterst&#252;tzt die Fachapplikationen mit technischen Diensten (z.B. Directory Services, Betriebssysteme).</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1435,7 +1433,6 @@
 								<db:para>Management &lt;SystemLayer&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.59e7bc6b-eccd-11e8-b4c8-834dd6818408"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Die Management Schicht beinhaltet alle Management- und Monitoring Funktionen f&#252;r den Betrieb der Infrastruktur und der Plattform Schicht.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1443,7 +1440,6 @@
 								<db:para>Security &lt;SystemLayer&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.14d56cb9-1e0d-11e9-865e-41ef48a95f70"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Sicherheit im System IKT (Protect).</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -1729,7 +1725,6 @@
 								<db:para>Operating System &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da97ab45-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Betriebssystem-Funktionalit&#228;t als Laufzeitumgebung.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1737,7 +1732,6 @@
 								<db:para>Storage &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.9e346f62-eccc-11e8-b4c8-834dd6818408"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die zentrale Datenablage am NMStao</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1745,7 +1739,6 @@
 								<db:para>Physical Compute &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.5e916db0-eccd-11e8-b4c8-834dd6818408"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von physischer Rechenleistung (Server).</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1753,7 +1746,6 @@
 								<db:para>Virtual Compute &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1918c801-09f6-11e9-abef-3d869859c931"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von virtueller Rechenleistung (VM)</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -1761,7 +1753,6 @@
 								<db:para>Network &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.e14f0119-0a85-11e9-a59d-d7a0c53e291c"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die sichere &#220;bertragung von Daten &#252;ber das Netzwerk, welche in der Verantwortung des Systems IKT sind.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2170,7 +2161,6 @@
 								<db:para>Application &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d82cef00-f16e-11e8-b3e7-15e2dd8d9b05"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von Daten &#252;ber HTTP/HTTPS.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2178,7 +2168,6 @@
 								<db:para>Datenablage &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.902b9a5e-0a87-11e9-a59d-d7a0c53e291c"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung einer Datenablage.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2333,7 +2322,6 @@
 								<db:para>Hypervisor Management &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ca8809aa-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Verwaltung der virtuellen Maschinen.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2341,7 +2329,6 @@
 								<db:para>Backup Management &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ce69890f-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Orchestrierung und Verwaltung von Sicherungen und Wiederherstellungen.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2349,7 +2336,6 @@
 								<db:para>Jump Host &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d05098e5-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung einer sicheren Konsole zwecks Administrierung.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2357,7 +2343,6 @@
 								<db:para>Deployment &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.238e1761-09f6-11e9-abef-3d869859c931"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Verteilung von Patches, Konfi-gurationen und Artefakte/Pakete.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2365,7 +2350,6 @@
 								<db:para>Monitoring &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.be6b7c1f-0ce5-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die &#220;berwachung des Systems</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2688,7 +2672,6 @@
 								<db:para>Directory Services &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.dcefcc32-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die sichere Aufbewahrung von Identit&#228;ten und sensiblen Informationen und stellt &#252;ber standardisierte Schnittstellen (z.B. LDAP) den automatischen Zugriff sicher.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2696,7 +2679,6 @@
 								<db:para>Identity Access Management &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.0f7ee512-09f6-11e9-abef-3d869859c931"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Erfassung, Authentisierung und Speicherung der Nutzerkonten inklusive der dazugeh&#246;rigen Attribute sowie der Erm&#228;chtigungen.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2704,7 +2686,6 @@
 								<db:para>PKI &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.debd39b0-ee4f-11e8-9841-e9df8f3366fd"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Zertifikatsverwaltung</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -2712,7 +2693,6 @@
 								<db:para>Endpoint Protection &lt;SystemComponent&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.0b7b10e7-09f6-11e9-abef-3d869859c931"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Erkennung und Beseitigung von sch&#228;dlicher Software (Viren, Trojaner, ...).</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -2999,7 +2979,6 @@
 								<db:para>Windows (WIN) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.00cb6c3a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung von Windows 2016</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -3303,7 +3282,6 @@
 								<db:para>Block Storage Service (BSS) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.126e7f5a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung eines Block Storage.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -3381,7 +3359,6 @@
 								<db:para>Kontron Server (KON) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.15c3c4f8-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung des Kontron Servers</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -3389,7 +3366,6 @@
 								<db:para>HPE Server (HPE) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1a9ac839-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung eines HP Servers.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -3552,7 +3528,6 @@
 								<db:para>Virtual Machine (VM) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.1e0124f6-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung einer konfigurierbaren Virtual Machine.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -3560,7 +3535,6 @@
 								<db:para>ESXi (VMH) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.21860669-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung eines Hypervisors.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -3762,7 +3736,6 @@
 								<db:para>Pulse Secure Appliance (PSA) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2ae3a324-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r den Fernzugriff auf die Systeme &#252;ber entsprechende Protokolle</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -3770,7 +3743,6 @@
 								<db:para>Network Policy Service (NPS) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2bdcd023-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Authentisierung mit konfigurierbaren Regeln von Ger&#228;ten, die sich mit dem Netzwerk verbinden m&#246;chten. Erst wenn die Pr&#252;fung anhand dieser Regeln erfolgreich war, wird der Zugriff auf das Netzwerk erm&#246;glicht.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -3778,7 +3750,6 @@
 								<db:para>Proxy (PRX) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2e9930e3-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r den sicheren Zugriff auf nicht vertrauensw&#252;rdige Zonen.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -3975,7 +3946,6 @@
 								<db:para>Application Server (APP) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.2ffedb59-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung eines Anwendungsservers auf Basis von IIS.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -4073,7 +4043,6 @@
 								<db:para>Distributed File System (DFS) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.343c0fb6-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Bereitstellung einer Datenablage (SMB).</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -4274,7 +4243,6 @@
 								<db:para>Veeam Backup Proxy (VBP) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.31c01347-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Sicherung und Wiederherstellung in einem TN.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -4544,7 +4512,6 @@
 								<db:para>Windows Server Update Services (WUS) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3f667dfa-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r das Patchen von Windows</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -4764,7 +4731,6 @@
 								<db:para>PRTG (PRT) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4560cb80-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die zentrale &#220;berwachung des Systems</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -4772,7 +4738,6 @@
 								<db:para>PRTG Probe (PRP) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.46745e4a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Sammlung von Sensor-Daten in einer gesch&#252;tzten Zone</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -4928,8 +4893,6 @@
 								<db:para>Master Active Directory (MDC) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3567222a-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Master Domain Controller</db:para>
-								<db:para>Verantwortlich f&#252;r den zentralen Verzeichnisdienst.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -4937,7 +4900,6 @@
 								<db:para>Slave Active Directory (RDC) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.36713f4f-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r den dezentralen Verzeichnisdienst und Verantwortlich f&#252;r die Vergabe von dynamische IP-Adressen.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -5278,7 +5240,6 @@
 								<db:para>Issuing CA (MCS) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.477728d8-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Issuing CA.</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -5286,7 +5247,6 @@
 								<db:para>Root CA (MCR) &lt;SystemConfiguration&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.4895b828-0ceb-11e9-8fb3-3d281af33bda"/>]</db:para>
 							</db:td>
 							<db:td>
-								<db:para>Verantwortlich f&#252;r die Verwaltung der Root CA.</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>

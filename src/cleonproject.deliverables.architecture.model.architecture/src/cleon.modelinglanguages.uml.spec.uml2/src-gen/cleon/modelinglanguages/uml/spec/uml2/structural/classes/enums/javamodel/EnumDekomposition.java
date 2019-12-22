@@ -28,17 +28,6 @@ public class EnumDekomposition extends DynamicResource implements IEnumDekomposi
     super(resourceRepository, resource, IEnumDekomposition.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.util.List<java.lang.String> selectPurpose() {
-    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
-  }
-    
-  public void setPurpose(java.util.List<java.lang.String> purpose) {
-     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
-  }
-
   // relations
   
   @Override
@@ -74,8 +63,6 @@ public class EnumDekomposition extends DynamicResource implements IEnumDekomposi
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnum.class, cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.EnumsPackage.EnumDekomposition_into, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -88,4 +75,4 @@ public class EnumDekomposition extends DynamicResource implements IEnumDekomposi
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,5e+yUgwC7Ovggo84Wd1/zxECHuU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,42edd90e-266e-11e5-95dc-8f1cdbd9db54,1eIkDmZteY4VQazOvi+fY8WPDdo=] */

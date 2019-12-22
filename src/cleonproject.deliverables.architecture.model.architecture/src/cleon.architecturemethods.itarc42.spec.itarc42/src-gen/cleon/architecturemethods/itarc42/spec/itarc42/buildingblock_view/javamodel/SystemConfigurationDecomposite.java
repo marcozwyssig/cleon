@@ -28,17 +28,6 @@ public class SystemConfigurationDecomposite extends DynamicResource implements I
     super(resourceRepository, resource, ISystemConfigurationDecomposite.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.util.List<java.lang.String> selectPurpose() {
-    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
-  }
-    
-  public void setPurpose(java.util.List<java.lang.String> purpose) {
-     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
-  }
-
   // relations
   
   @Override
@@ -84,8 +73,6 @@ public class SystemConfigurationDecomposite extends DynamicResource implements I
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemConfigurationDecomposite_intoSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -98,4 +85,4 @@ public class SystemConfigurationDecomposite extends DynamicResource implements I
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,NZ2f4TOItf+R6cPEI9UUk3K0h/U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90907aa-e0fd-11e8-8499-a3b0fb3cad90,Xo8Bwxmi/bltUEXjbKhkBZYLdw4=] */

@@ -24,9 +24,6 @@
         <predicate guid="0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0">
           <object statement-guid="bf751b3c-e10c-11e8-a973-4fdaaa4aef8e" type="aggregate" guid="bf74f429-e10c-11e8-a973-4fdaaa4aef8e" />
         </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="6fefd854-09e9-11e9-abef-3d869859c931" type="literal">Verantwortlich für die sichere Aufbewahrung von Identitäten und sensiblen Informationen und stellt über standardisierte Schnittstellen (z.B. LDAP) den automatischen Zugriff sicher.</object>
-        </predicate>
       </resource>
     </object>
     <object statement-guid="fe81f053-1e0c-11e9-865e-41ef48a95f70">
@@ -36,9 +33,6 @@
         </predicate>
         <predicate guid="0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0">
           <object statement-guid="efe59e48-09ee-11e9-abef-3d869859c931" type="aggregate" guid="efe59e45-09ee-11e9-abef-3d869859c931" />
-        </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="59249859-0c2e-11e9-83ba-4d57b06560a2" type="literal">Verantwortlich für die Erfassung, Authentisierung und Speicherung der Nutzerkonten inklusive der dazugehörigen Attribute sowie der Ermächtigungen.</object>
         </predicate>
       </resource>
     </object>
@@ -50,9 +44,6 @@
         <predicate guid="0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0">
           <object statement-guid="127fd435-e115-11e8-a832-7553de2b103b" type="aggregate" guid="127fad22-e115-11e8-a832-7553de2b103b" />
         </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="a09fadcc-09e9-11e9-abef-3d869859c931" type="literal">Verantwortlich für die Zertifikatsverwaltung</object>
-        </predicate>
       </resource>
     </object>
     <object statement-guid="0a87f0c0-1e0d-11e9-865e-41ef48a95f70">
@@ -62,9 +53,6 @@
         </predicate>
         <predicate guid="0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0">
           <object statement-guid="9899d65d-043f-11e9-bc2b-2f2cf95d8322" type="aggregate" guid="9899af4a-043f-11e9-bc2b-2f2cf95d8322" />
-        </predicate>
-        <predicate guid="3ae972ff-ee42-11e8-9756-27a593be2ffb">
-          <object statement-guid="0059e132-0c2e-11e9-83ba-4d57b06560a2" type="literal">Verantwortlich für die Erkennung und Beseitigung von schädlicher Software (Viren, Trojaner, ...).</object>
         </predicate>
       </resource>
     </object>

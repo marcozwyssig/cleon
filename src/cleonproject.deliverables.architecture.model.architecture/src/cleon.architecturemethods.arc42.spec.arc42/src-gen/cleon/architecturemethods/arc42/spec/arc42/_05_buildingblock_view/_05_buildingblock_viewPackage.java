@@ -20,6 +20,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource BuildingBlockView_level_aE_5 = new Resource("42dcc6e0-285b-11e8-9af4-b7d7a3bbddc1");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_BuildingBlock = new Resource("5c98f5cc-2b56-11e8-859c-c3075307fbcf");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_Level = new Resource("e116ad9e-d187-11e8-b18f-df1540bb7a5c");
+  public static final Resource Blackbox_purpose = new Resource("3ae972ff-ee42-11e8-9756-27a593be2ffb");
   public static final Resource Blackbox_aE_Requirements_requirementCoverageDescription = new Resource("0dde4602-01e5-11e9-9c9d-8d52d6745026");
   public static final Resource Level_chapters = new Resource("f1210e22-0a99-11e9-9915-0d353533f3da");
   public static final Resource Blackbox_aE_Dependencies = new Resource("22633574-0df0-11e9-a28e-8b950dcca323");
@@ -46,4 +47,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,9aGx81wCdISh8wxf7qIwnwZZQOk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.spec.arc42._05_buildingblock_view,VmCOKzOdIR1+F1l6dFpy5endiwQ=] */

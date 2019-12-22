@@ -28,17 +28,6 @@ public class SystemComponentDecomposite extends DynamicResource implements ISyst
     super(resourceRepository, resource, ISystemComponentDecomposite.TYPE_ID);
   }
 
-  // attributes
-  
-  @Override
-  public java.util.List<java.lang.String> selectPurpose() {
-    return _getListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose);
-  }
-    
-  public void setPurpose(java.util.List<java.lang.String> purpose) {
-     _setListAttribute(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, purpose);
-  }
-
   // relations
   
   @Override
@@ -84,8 +73,6 @@ public class SystemComponentDecomposite extends DynamicResource implements ISyst
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
-    // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.Decomposite_purpose, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.Buildingblock_viewPackage.SystemComponentDecomposite_intoSystemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -98,4 +85,4 @@ public class SystemComponentDecomposite extends DynamicResource implements ISyst
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0,Xm/+ljd8S1OVwA7R2lQC2odbwmw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0,SMrKhmqdJ6YUzs5dakwqNa09zmM=] */

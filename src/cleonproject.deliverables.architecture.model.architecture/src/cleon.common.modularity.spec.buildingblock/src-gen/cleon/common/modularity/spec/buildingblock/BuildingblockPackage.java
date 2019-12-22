@@ -21,7 +21,6 @@ public class BuildingblockPackage {
   public static final Resource FunctionSpace_aE_Buildingblock_BuildingBlock = new Resource("3c7ee779-44bf-11e5-93ef-c50f9659357a");
   public static final Resource FunctionSpace_aE_Buildingblock_Dependency = new Resource("dedb1f19-3c6e-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Buildingblock_DecompositionBuildingBlock = new Resource("f6899f02-4408-11e6-8b31-7f0d71e4cb42");
-  public static final Resource Decomposite_purpose = new Resource("3ae972ff-ee42-11e8-9756-27a593be2ffb");
   public static final Resource InteractiveBuildingBlock = new Resource("4a80d1f2-0511-11e9-87b8-094c52ae4c98");
   public static final Resource Interaction = new Resource("8f0ac037-0511-11e9-87b8-094c52ae4c98");
   public static final Resource InteractiveBuildingBlock_interacts = new Resource("972c0c35-0511-11e9-87b8-094c52ae4c98");
@@ -46,4 +45,4 @@ public class BuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.spec.buildingblock,APU8IBMQGHp1AmiyvDGEGblNlVE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.spec.buildingblock,mTxaBCTmzx8xy9gm9xMPtQS0fKM=] */

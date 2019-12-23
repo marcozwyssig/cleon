@@ -8,10 +8,10 @@ public interface ISampleBuildingBlock extends cleon.modelinglanguages.uml.spec.u
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecompose();
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecompose();
   
   public java.util.List<? extends cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleDependency> selectHasSampleDependency();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,1AU79CJoWfkYw0SLJ3zXhmg/fzk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,rI8uwPCyZYk7b/cqgTmxlG2YXW0=] */

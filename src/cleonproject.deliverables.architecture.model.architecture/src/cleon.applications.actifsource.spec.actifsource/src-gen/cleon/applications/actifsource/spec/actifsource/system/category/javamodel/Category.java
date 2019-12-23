@@ -60,31 +60,31 @@ public class Category extends DynamicResource implements ICategory {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public Category setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public Category setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecomposeComponent() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecomposeComponent() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
   }
 
-  public Category setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> decomposeComponent) {
+  public Category setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, decomposeComponent);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite> selectFeatures() {
-    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features);
+  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature> selectFeatures() {
+    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features);
   }
 
-  public Category setFeatures(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite> features) {
+  public Category setFeatures(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature> features) {
     _setList(cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features, features);
     return this;
   }
@@ -146,7 +146,7 @@ public class Category extends DynamicResource implements ICategory {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features, visitor);
+    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features, visitor);
     _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryDependency.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -159,9 +159,9 @@ public class Category extends DynamicResource implements ICategory {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_hasDependency, object.getResource());
   }
   
-  public static cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory selectToMeFeatures(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite object) {
+  public static cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory selectToMeFeatures(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature object) {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory.class, cleon.applications.actifsource.spec.actifsource.system.category.CategoryPackage.Category_features, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,VhfCO21jcpdh5q4wo3Gn5MWR5gw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,M5I19Qvox50omw/2Nz4S0BfHYFw=] */

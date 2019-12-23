@@ -51,21 +51,21 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public ComponentWithPackage setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public ComponentWithPackage setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition> selectDecomposePackages() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage> selectDecomposePackages() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
   }
 
-  public ComponentWithPackage setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition> decomposePackages) {
+  public ComponentWithPackage setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage> decomposePackages) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, decomposePackages);
     return this;
   }
@@ -126,7 +126,7 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -139,9 +139,9 @@ public class ComponentWithPackage extends DynamicResource implements IComponentW
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentWithPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_hasDependency, object.getResource());
   }
   
-  public static cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentWithPackage selectToMeDecomposePackages(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition object) {
+  public static cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentWithPackage selectToMeDecomposePackages(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage object) {
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentWithPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2adc4d98-85c1-11e3-be33-79789cf5eae3,SvBOlCHdm72fiVAA1hGrqSq2wxg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2adc4d98-85c1-11e3-be33-79789cf5eae3,WbJXa+RWHa/wW8UGbLDM91bwL7M=] */

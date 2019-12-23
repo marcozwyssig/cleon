@@ -60,21 +60,21 @@ public class EndpointProtectionOrchestrationSystemConfiguration extends DynamicR
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public EndpointProtectionOrchestrationSystemConfiguration setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public EndpointProtectionOrchestrationSystemConfiguration setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition> selectDecomposePackages() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage> selectDecomposePackages() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
   }
 
-  public EndpointProtectionOrchestrationSystemConfiguration setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition> decomposePackages) {
+  public EndpointProtectionOrchestrationSystemConfiguration setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage> decomposePackages) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, decomposePackages);
     return this;
   }
@@ -100,11 +100,11 @@ public class EndpointProtectionOrchestrationSystemConfiguration extends DynamicR
   }
     
   @Override
-  public cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition selectNoPackages() {
-    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages);
+  public cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage selectNoPackages() {
+    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages);
   }
 
-  public EndpointProtectionOrchestrationSystemConfiguration setNoPackages(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition noPackages) {
+  public EndpointProtectionOrchestrationSystemConfiguration setNoPackages(cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage noPackages) {
     _setSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.Component_noPackages, noPackages);
     return this;
   }
@@ -164,4 +164,4 @@ public class EndpointProtectionOrchestrationSystemConfiguration extends DynamicR
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ec3a6e2a-0a7e-11e9-a59d-d7a0c53e291c,Gbdm1ySccaFvL5TxM9PL6wcFzak=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ec3a6e2a-0a7e-11e9-a59d-d7a0c53e291c,TghVyTsQIcR+yJaUJpB4aHcWQE4=] */

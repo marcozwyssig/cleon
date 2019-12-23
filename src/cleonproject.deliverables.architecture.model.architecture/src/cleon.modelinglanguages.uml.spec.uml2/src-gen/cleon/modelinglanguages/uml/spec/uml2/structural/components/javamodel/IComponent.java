@@ -8,8 +8,8 @@ public interface IComponent extends cleon.modelinglanguages.uml.spec.uml2.struct
   
   // relations
   
-  public cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition selectNoPackages();
+  public cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage selectNoPackages();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3e0c163-3b7b-11e5-bcdd-1b181eee11b0,KnN9pASKBC1ABy8KPvclrm6NaZ0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3e0c163-3b7b-11e5-bcdd-1b181eee11b0,ljU2aIidVmfmvwH8ujXb7htGJ8Y=] */

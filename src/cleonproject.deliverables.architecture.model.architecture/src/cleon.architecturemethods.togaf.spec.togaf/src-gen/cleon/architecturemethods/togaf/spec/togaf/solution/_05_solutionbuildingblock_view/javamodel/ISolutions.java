@@ -8,8 +8,8 @@ public interface ISolutions extends cleon.architecturemethods.arc42.spec.arc42._
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.javamodel.IManufacturerDecomposite> selectDecompose();
+  public java.util.List<? extends cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.javamodel.IManufacturer> selectDecompose();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6d790-4a7c-11e6-b2ea-f94c9b140b76,13eX/6GUUkXBsYV2wCJN+ZxHqkE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6d790-4a7c-11e6-b2ea-f94c9b140b76,vQJhmfUtGvAf3qBn1mjpE70Im1M=] */

@@ -13,9 +13,9 @@ public abstract class DecompositionBuildingBlock extends DynamicResource impleme
   
   // toMeRelations
   
-  public static cleon.common.modularity.spec.buildingblock.javamodel.IDecompositionBuildingBlock selectToMeDecompose(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite object) {
+  public static cleon.common.modularity.spec.buildingblock.javamodel.IDecompositionBuildingBlock selectToMeDecompose(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock object) {
     return _getToMeSingle(object.getRepository(), cleon.common.modularity.spec.buildingblock.javamodel.IDecompositionBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b62f1413-174c-11e5-9ca7-d1bb57b73459,BpdfwzUVcNBeh2P1gpieiIWpLBg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b62f1413-174c-11e5-9ca7-d1bb57b73459,m+YVmhfNhFi/gYGXJO6GQjeRLuM=] */

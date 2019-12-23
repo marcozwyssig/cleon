@@ -10,8 +10,8 @@ public interface ICategory extends cleon.modelinglanguages.uml.spec.uml2.structu
   
   public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryDependency> selectHasDependency();
   
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureAggregateDecomposite> selectFeatures();
+  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature> selectFeatures();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,/vzG5nWEf3dAxp60CjJnlJIufLM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27c04263-3c6a-11e6-aafa-bd565efc0ead,mnzgbLOG/Jk4zj3RUQLzGSQ39mo=] */

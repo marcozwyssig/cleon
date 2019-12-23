@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="d933d88b-3f61-11e6-a833-6352f3897082">
-  <owns predicate="25752303-85c2-11e3-926c-e10829e9e6c2">
-    <resource statement-guid="aaef26e8-0521-11e9-95f7-3b0c47908608" type="resource" guid="616273c7-49e1-11e6-becb-7dbce5dc658c" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f27fdfc1-4aa3-11e6-9c0f-393d355c5fe3" type="resource" guid="9237e4d5-4aa3-11e6-9c0f-393d355c5fe3" />
   </predicate>
@@ -10,16 +7,7 @@
     <object statement-guid="d9a7a8ff-3f61-11e6-a833-6352f3897082" type="literal">MySampleSoftware</object>
   </predicate>
   <predicate guid="25752303-85c2-11e3-926c-e10829e9e6c2">
-    <object statement-guid="aaef26e8-0521-11e9-95f7-3b0c47908608">
-      <resource guid="616273c7-49e1-11e6-becb-7dbce5dc658c">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="61629ad9-49e1-11e6-becb-7dbce5dc658c" type="resource" guid="096bdd9e-174e-11e5-9ca7-d1bb57b73459" />
-        </predicate>
-        <predicate guid="3168aea2-174e-11e5-9ca7-d1bb57b73459">
-          <object statement-guid="755850c2-49e1-11e6-becb-7dbce5dc658c" type="aggregate" guid="6f81ea1b-436d-11e6-a9d7-97cf4f7c398b" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="bd67a416-2562-11ea-aad9-8f2499c63758" type="aggregate" guid="6f81ea1b-436d-11e6-a9d7-97cf4f7c398b" />
   </predicate>
   <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
     <object statement-guid="6602fdfe-49e1-11e6-becb-7dbce5dc658c" type="literal">ddfdf</object>

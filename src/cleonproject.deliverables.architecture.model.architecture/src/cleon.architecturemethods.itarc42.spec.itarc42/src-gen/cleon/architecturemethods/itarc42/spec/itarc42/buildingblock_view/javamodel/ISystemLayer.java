@@ -8,10 +8,10 @@ public interface ISystemLayer extends cleon.modelinglanguages.uml.spec.uml2.stru
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponentDecomposite> selectDecomposeSystemComponent();
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponent> selectSystemComponents();
   
   public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemLayerDependency> selectHasDependency();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b894901a-d0b2-11e8-b005-f7630e4c29c0,lmc4Q/OuU9xdpgwoOmN1UIjs2Tg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b894901a-d0b2-11e8-b005-f7630e4c29c0,C1M4qFoP7mEBShT3e6CUPlcEsXc=] */

@@ -8,8 +8,8 @@ public interface IArchitectureBuildingBlock extends cleon.modelinglanguages.uml.
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlockDecomposite> selectArchitecturesolutionbuildingblocks();
+  public java.util.List<? extends cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel.IArchitectureSolutionBuildingBlock> selectArchitecturesolutionbuildingblocks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1a0f6f94-3a07-11e6-a354-253097f89a49,H2gHbu9H7M9ymcbiZBJIMCut/lg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1a0f6f94-3a07-11e6-a354-253097f89a49,y5Q6PZ59t2ANcEJJ+C8DlJN6J78=] */

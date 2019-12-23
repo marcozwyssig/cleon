@@ -6,9 +6,7 @@ public class ManufacturerPackage {
   
   public static final Resource Manufacturer = new Resource("01fe9fef-2d70-11e6-959f-d1cef44ff5fd");
   public static final Resource Manufacturer_hasDependency = new Resource("c26d78bf-2d70-11e6-959f-d1cef44ff5fd");
-  public static final Resource Manufacturer_decompose = new Resource("c26d78c0-2d70-11e6-959f-d1cef44ff5fd");
-  public static final Resource ManufacturerDecomposite = new Resource("b830d6f8-4372-11e6-a9d7-97cf4f7c398b");
-  public static final Resource ManufacturerDecomposite_into = new Resource("b830d6f9-4372-11e6-a9d7-97cf4f7c398b");
+  public static final Resource Manufacturer_decomposeSolutions = new Resource("c26d78c0-2d70-11e6-959f-d1cef44ff5fd");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +27,4 @@ public class ManufacturerPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer,DBHK7LpiCPvZY5YPqmkkXF7lYXA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer,J0SkejRYTiq9JH8zGWIXjr0bJSY=] */

@@ -5,8 +5,6 @@ import ch.actifsource.core.Resource;
 public class ArchitecturebuildingblockPackage {
   
   public static final Resource ArchitectureBuildingBlock = new Resource("1a0f6f94-3a07-11e6-a354-253097f89a49");
-  public static final Resource ArchitectureBuildingBlockDecomposite = new Resource("1a0f6f95-3a07-11e6-a354-253097f89a49");
-  public static final Resource ArchitectureBuildingBlockDecomposite_into = new Resource("1a0f6f96-3a07-11e6-a354-253097f89a49");
   public static final Resource ArchitectureBuildingBlockDependency = new Resource("1a0f6f97-3a07-11e6-a354-253097f89a49");
   public static final Resource ArchitectureBuildingBlockDependency_to = new Resource("1a0f6f98-3a07-11e6-a354-253097f89a49");
   public static final Resource ArchitectureBuildingBlock_architecturesolutionbuildingblocks = new Resource("ff63049c-3a07-11e6-a354-253097f89a49");
@@ -31,4 +29,4 @@ public class ArchitecturebuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock,B+B6pdCj9Uvtu9yyija/q1YcCO0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock,AsI74j3VtcPlOHemAyNt8CJXSXY=] */

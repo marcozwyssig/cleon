@@ -124,31 +124,6 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface IDecompositeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("de7cc478-d17f-11e8-b18f-df1540bb7a5c")
-    public java.lang.String RenderTitle();
-
-  }
-  
-  public static interface IDecompositeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DecompositeFunctionsImpl implements IDecompositeFunctionsImpl {
-
-    public static final IDecompositeFunctionsImpl INSTANCE = new DecompositeFunctionsImpl();
-
-    private DecompositeFunctionsImpl() {}
-
-  }
-  
-  public static class DecompositeFunctions {
-
-    private DecompositeFunctions() {}
-
-  }
-
   public static interface IDeploymentViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4da38b16-d181-11e8-b18f-df1540bb7a5c")
@@ -532,4 +507,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,fyWCOBAPW4f8l+FL1/G23dItouU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,TqAq9DYHotQV7ydf9wSkHDrMq5o=] */

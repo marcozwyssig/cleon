@@ -60,31 +60,31 @@ public class Zoo extends DynamicResource implements IZoo {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite> selectCategories() {
-    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories);
+  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory> selectCategories() {
+    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories);
   }
 
-  public Zoo setCategories(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite> categories) {
+  public Zoo setCategories(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory> categories) {
     _setList(cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, categories);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public Zoo setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public Zoo setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecomposeComponent() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecomposeComponent() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
   }
 
-  public Zoo setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> decomposeComponent) {
+  public Zoo setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, decomposeComponent);
     return this;
   }
@@ -166,7 +166,7 @@ public class Zoo extends DynamicResource implements IZoo {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, visitor);
+    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
@@ -177,9 +177,9 @@ public class Zoo extends DynamicResource implements IZoo {
 
   // toMeRelations
   
-  public static cleon.applications.actifsource.spec.actifsource.system.javamodel.IZoo selectToMeCategories(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategoryAggregateDecomposite object) {
+  public static cleon.applications.actifsource.spec.actifsource.system.javamodel.IZoo selectToMeCategories(cleon.applications.actifsource.spec.actifsource.system.category.javamodel.ICategory object) {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.javamodel.IZoo.class, cleon.applications.actifsource.spec.actifsource.system.SystemPackage.Zoo_categories, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,bpJ3gtaRtV2oljdVXtRQTdVLUE4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,Jr15sxct6mTOJO+baPXCeXqa1yg=] */

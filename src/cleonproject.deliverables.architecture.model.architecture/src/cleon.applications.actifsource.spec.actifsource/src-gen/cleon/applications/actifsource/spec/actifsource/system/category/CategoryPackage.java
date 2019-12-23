@@ -7,8 +7,6 @@ public class CategoryPackage {
   public static final Resource Category = new Resource("27c04263-3c6a-11e6-aafa-bd565efc0ead");
   public static final Resource Category_hasDependency = new Resource("27c04264-3c6a-11e6-aafa-bd565efc0ead");
   public static final Resource Category_features = new Resource("27c04265-3c6a-11e6-aafa-bd565efc0ead");
-  public static final Resource CategoryAggregateDecomposite = new Resource("27c04266-3c6a-11e6-aafa-bd565efc0ead");
-  public static final Resource CategoryAggregateDecomposite_into = new Resource("27c04267-3c6a-11e6-aafa-bd565efc0ead");
   public static final Resource CategoryDependency = new Resource("27c04268-3c6a-11e6-aafa-bd565efc0ead");
   public static final Resource CategoryDependency_to = new Resource("27c04277-3c6a-11e6-aafa-bd565efc0ead");
   
@@ -31,4 +29,4 @@ public class CategoryPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category,ukJzj0ntobnt8CXOdgkFoaVAsFA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category,NkhX2e+oYk+PBgQt+UPnyOPXrsE=] */

@@ -5,8 +5,6 @@ import ch.actifsource.core.Resource;
 public class SolutionbuildingblockPackage {
   
   public static final Resource SolutionBuildingBlock = new Resource("280ce792-2d70-11e6-959f-d1cef44ff5fd");
-  public static final Resource SolutionBuildingBlockDecomposite = new Resource("b3803688-2d70-11e6-959f-d1cef44ff5fd");
-  public static final Resource SolutionBuildingBlockDecomposite_into = new Resource("b3803689-2d70-11e6-959f-d1cef44ff5fd");
   public static final Resource CpuArchitecture = new Resource("0bba3407-2d73-11e6-959f-d1cef44ff5fd");
   public static final Resource CpuArchitecture_x86_aE_32bit = new Resource("0f616a68-2d73-11e6-959f-d1cef44ff5fd");
   public static final Resource CpuArchitecture_x86_aE_64bit = new Resource("1cb21384-2d73-11e6-959f-d1cef44ff5fd");
@@ -48,4 +46,4 @@ public class SolutionbuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock,WimuiM6dQEkiowMMSqSrje1IkVo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.spec.togaf.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock,Nbe2WdqnjBUCy4cqL6HPFFfZVJU=] */

@@ -8,10 +8,10 @@ public interface ISystemComponent extends cleon.common.resources.spec.resources.
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfigurationDecomposite> selectDecomposeSystemConfiguration();
+  public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemConfiguration> selectSystemConfigurations();
   
   public java.util.List<? extends cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view.javamodel.ISystemComponentDependency> selectHasDependency();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c0436bff-d0b2-11e8-b005-f7630e4c29c0,v0okZhbM7cXHhDSdAgwXyIeUJUU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c0436bff-d0b2-11e8-b005-f7630e4c29c0,hSNBHH0q72QJweEp5jIo/Ykh1HI=] */

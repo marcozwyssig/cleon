@@ -8,8 +8,8 @@ public interface IDecompositionBuildingBlock extends cleon.common.modularity.spe
   
   // relations
   
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose();
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b62f1413-174c-11e5-9ca7-d1bb57b73459,HHzogHCX4kjcQQGM9zAr7RQExNk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b62f1413-174c-11e5-9ca7-d1bb57b73459,/iUeMiwkVBLwVeAAqFvhPOj4ARQ=] */

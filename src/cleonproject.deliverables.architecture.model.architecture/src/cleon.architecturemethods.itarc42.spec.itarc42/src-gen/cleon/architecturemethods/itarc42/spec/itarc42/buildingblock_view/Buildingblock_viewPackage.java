@@ -5,18 +5,12 @@ import ch.actifsource.core.Resource;
 public class Buildingblock_viewPackage {
   
   public static final Resource System = new Resource("d6859a6c-99aa-11e8-8f58-219af2c5d6d9");
-  public static final Resource System_decomposeLayer = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
-  public static final Resource LayerDecomposite = new Resource("0bcbb0b5-d0b0-11e8-b005-f7630e4c29c0");
-  public static final Resource LayerDecomposite_intoLayer = new Resource("0bcbb0b6-d0b0-11e8-b005-f7630e4c29c0");
-  public static final Resource SystemComponentDecomposite = new Resource("0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0");
-  public static final Resource SystemComponentDecomposite_intoSystemComponent = new Resource("0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0");
+  public static final Resource System_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemComponent = new Resource("c0436bff-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemConfigurationDecomposite = new Resource("c90907aa-e0fd-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemConfigurationDecomposite_intoSystemConfiguration = new Resource("c90907ab-e0fd-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemLayer_decomposeSystemComponent = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemComponent_decomposeSystemConfiguration = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemLayer_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemComponent_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
   public static final Resource NamedSystemConfiguration = new Resource("58022544-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
@@ -51,4 +45,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view,HSOcsxDgJwRVtWYJROf7secZGB0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.itarc42.spec.itarc42.buildingblock_view,MZtwxHAKy1QR+hLn/Qz7Kj2nhaw=] */

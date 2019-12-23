@@ -8,10 +8,10 @@ public interface IPackage extends cleon.common.modularity.spec.buildingblock.jav
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageDecomposition> selectSubPackages();
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackage> selectSubPackages();
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.packages.javamodel.IPackageInClassifierDecomposition> selectDecomposeClasses();
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.javamodel.IClassifier> selectDecomposeClasses();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2f4eebfb-92f9-11e3-a63e-fb8038f76aec,a/6C8vpqqMuSGklKKIdAzjfQglI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2f4eebfb-92f9-11e3-a63e-fb8038f76aec,FLEfdy04rxcAUSohFe/YYWB7iE4=] */

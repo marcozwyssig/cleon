@@ -60,21 +60,21 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecompose() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecompose() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose);
   }
 
-  public SampleBuildingBlock setDecompose(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> decompose) {
+  public SampleBuildingBlock setDecompose(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> decompose) {
     _setList(cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecomposeComponent() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecomposeComponent() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
   }
 
-  public SampleBuildingBlock setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> decomposeComponent) {
+  public SampleBuildingBlock setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, decomposeComponent);
     return this;
   }
@@ -146,7 +146,7 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, visitor);
+    _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDependency.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_hasDependency, visitor);
     _acceptList(cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleDependency.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_hasSampleDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
@@ -156,7 +156,7 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleBuildingBlock selectToMeDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite object) {
+  public static cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleBuildingBlock selectToMeDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.sample.arc42.javamodel.ISampleBuildingBlock.class, cleon.architecturemethods.arc42.sample.arc42.Arc42Package.SampleBuildingBlock_decompose, object.getResource());
   }
   
@@ -165,4 +165,4 @@ public class SampleBuildingBlock extends DynamicResource implements ISampleBuild
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,Radrsp3ao8gFX9TgmQn6ik2gDnM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a19c100c-4376-11e6-a9d7-97cf4f7c398b,RT4sdfXrDRV52sm4wjArPt2swBQ=] */

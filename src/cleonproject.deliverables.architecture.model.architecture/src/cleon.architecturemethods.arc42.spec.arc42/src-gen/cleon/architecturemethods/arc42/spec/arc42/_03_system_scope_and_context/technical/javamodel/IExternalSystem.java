@@ -8,8 +8,8 @@ public interface IExternalSystem extends cleon.modelinglanguages.uml.spec.uml2.s
   
   // relations
   
-  public cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite selectNoDecompose();
+  public cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent selectNoDecompose();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2e0ed149-2801-11e6-b263-9db62e053e59,oWlzZiAPuIzmA+vyoqlOorEe0Hs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2e0ed149-2801-11e6-b263-9db62e053e59,KWWEL7XlqGl/wSlvVZFm5iiRKG4=] */

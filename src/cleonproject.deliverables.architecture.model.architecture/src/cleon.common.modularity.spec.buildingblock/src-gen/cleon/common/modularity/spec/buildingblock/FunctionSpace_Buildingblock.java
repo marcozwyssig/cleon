@@ -164,7 +164,7 @@ public class FunctionSpace_Buildingblock {
     public java.lang.Integer GetLevelNr(final java.lang.Integer level, final cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock parent);
 
     @IDynamicResourceExtension.MethodId("49a6b322-894c-11e6-ad04-d1961316644a")
-    public cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock GetDecomposeBuildingBlocks();
+    public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetDecomposeBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("29cb5be2-0aa7-11e9-b5db-cdf0b8dad9e4")
     public List<cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> GetAllDecomposeBuildingBlocks();
@@ -211,19 +211,8 @@ public class FunctionSpace_Buildingblock {
 
 
     	IDecompositionBuildingBlock decomposeParentBlock = (IDecompositionBuildingBlock) parent;
-    	for(IDecomposite block : decomposeParentBlock.selectDecompose())
-    	{
-    		if(!(block instanceof IAggregateDecomposite))
-    		{
-    			continue;
-    		}
-    		IAggregateDecomposite aggregateDecomposite = (IAggregateDecomposite) block;
-    		IBuildingBlock nestedBlock = aggregateDecomposite.selectIntoBuildingBlock();
-    		if( nestedBlock == null)
-    		{
-    			continue;
-    		}	
-    		
+    	for(IBuildingBlock nestedBlock : decomposeParentBlock.selectDecompose())
+    	{   		
     		int childLevel = GetLevelNr(level+1, nestedBlock, decompositionBuildingBlock);
     		if( childLevel != 0)
     		{
@@ -253,4 +242,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,OcDIlWryPvlkF/hlbBgPyp3Mnds=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,VLpEi5bmJhfT9g/8rC08+eZy1lg=] */

@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="c4543d6b-e0fe-11e8-8499-a3b0fb3cad90">
-  <owns predicate="e4d17571-e0fd-11e8-8499-a3b0fb3cad90">
-    <resource statement-guid="8e42037a-01da-11e9-9c9d-8d52d6745026" type="resource" guid="8e41dc67-01da-11e9-9c9d-8d52d6745026" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c4543d6d-e0fe-11e8-8499-a3b0fb3cad90" type="resource" guid="b894901a-d0b2-11e8-b005-f7630e4c29c0" />
   </predicate>
@@ -10,16 +7,7 @@
     <object statement-guid="c4d924ea-e0fe-11e8-8499-a3b0fb3cad90" type="literal">Infrastruktur</object>
   </predicate>
   <predicate guid="e4d17571-e0fd-11e8-8499-a3b0fb3cad90">
-    <object statement-guid="8e42037a-01da-11e9-9c9d-8d52d6745026">
-      <resource guid="8e41dc67-01da-11e9-9c9d-8d52d6745026">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="8e420379-01da-11e9-9c9d-8d52d6745026" type="resource" guid="0bcbb0d0-d0b0-11e8-b005-f7630e4c29c0" />
-        </predicate>
-        <predicate guid="0bcbb0d1-d0b0-11e8-b005-f7630e4c29c0">
-          <object statement-guid="906afdff-01da-11e9-9c9d-8d52d6745026" type="aggregate" guid="906aafdc-01da-11e9-9c9d-8d52d6745026" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="b2b16092-257d-11ea-aad9-8f2499c63758" type="aggregate" guid="906aafdc-01da-11e9-9c9d-8d52d6745026" />
   </predicate>
 </resource>
 

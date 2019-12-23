@@ -8,20 +8,20 @@ public interface IAggregate extends cleon.modelinglanguages.uml.spec.uml2.struct
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntityDecomposition> selectEntities();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.entities.javamodel.IEntity> selectEntities();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IExceptionDecomposition> selectExceptions();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.exceptions.javamodel.IDomainException> selectExceptions();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObjectDecomposition> selectValueObjects();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.valueobjects.javamodel.IValueObject> selectValueObjects();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepositoryDecomposition> selectRepository();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.repository.javamodel.IRepository> selectRepository();
   
-  public cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IServiceDecomposition selectDomainServices();
+  public java.util.List<? extends cleon.architecturemethods.arc42.spec.ddd.services.javamodel.IDomainService> selectDomainServices();
   
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnumDekomposition> selectEnums();
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.classes.enums.javamodel.IEnum> selectEnums();
   
   public java.util.List<? extends cleon.architecturestylesandpatterns.eda.spec.eda.eventaggregator.javamodel.IEventAggregator> selectEventAggregator();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,a6i1sadYvKQ1X7N7ZsYC5AFoGL4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,83c13817-10c0-11e3-b60e-ab478a3e1eca,EOqsSNeygmW2ua3Ji1kbVWZka+8=] */

@@ -60,31 +60,31 @@ public class ExternalSystem extends DynamicResource implements IExternalSystem {
   // relations
   
   @Override
-  public cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite selectNoDecompose() {
-    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.ExternalSystem_NoDecompose);
+  public cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent selectNoDecompose() {
+    return _getSingle(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.ExternalSystem_NoDecompose);
   }
 
-  public ExternalSystem setNoDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite noDecompose) {
+  public ExternalSystem setNoDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent noDecompose) {
     _setSingle(cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.ExternalSystem_NoDecompose, noDecompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> selectDecompose() {
-    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
+  public java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> selectDecompose() {
+    return _getList(cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock.class, cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public ExternalSystem setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IDecomposite> decompose) {
+  public ExternalSystem setDecompose(java.util.List<? extends cleon.common.modularity.spec.buildingblock.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.spec.buildingblock.BuildingblockPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> selectDecomposeComponent() {
-    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
+  public java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> selectDecomposeComponent() {
+    return _getList(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent);
   }
 
-  public ExternalSystem setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite> decomposeComponent) {
+  public ExternalSystem setDecomposeComponent(java.util.List<? extends cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent> decomposeComponent) {
     _setList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.ComponentComposition_decomposeComponent, decomposeComponent);
     return this;
   }
@@ -154,9 +154,9 @@ public class ExternalSystem extends DynamicResource implements IExternalSystem {
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem selectToMeNoDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IComponentCompositionDecomposite object) {
+  public static cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem selectToMeNoDecompose(cleon.modelinglanguages.uml.spec.uml2.structural.components.javamodel.IAbstractComponent object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.javamodel.IExternalSystem.class, cleon.architecturemethods.arc42.spec.arc42._03_system_scope_and_context.technical.TechnicalPackage.ExternalSystem_NoDecompose, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2e0ed149-2801-11e6-b263-9db62e053e59,sfoImSpXcZs80kc0R80vxSss5dQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2e0ed149-2801-11e6-b263-9db62e053e59,zoHlweMKEyQDJnFY2Sj7dvLyKl0=] */

@@ -15,7 +15,9 @@ import ch.actifsource.core.patch.IStatementPosition;
 import ch.actifsource.core.set.INodeList;
 import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.set.IStatementSet;
+import ch.actifsource.core.update.FixOwnership;
 import ch.actifsource.core.update.IModifiable;
+import ch.actifsource.util.log.Logger;
 
 public class RefactorDecomposeBuildingBlock extends AbstractAllInstancesRefactorerAspect {
 	
@@ -27,20 +29,44 @@ public class RefactorDecomposeBuildingBlock extends AbstractAllInstancesRefactor
 
 	@Override
 	protected void refactor(IModifiable executor, Package _package, INode buildingBlock) {	
+		refactorRelationShip(executor, buildingBlock);
+		refactorBuildingBlock(executor, buildingBlock);				
+	}
+
+	private void refactorBuildingBlock(IModifiable executor, INode buildingBlock) {
 		IStatementSet nodes = Select.statementsForRelation(executor, BuildingblockPackage.DecompositionBuildingBlock_decompose, buildingBlock);
-		
-		for( ch.actifsource.core.Statement nested : nodes ) {
+		for( ch.actifsource.core.Statement nested : nodes ) {			
 			if(Select.isTypeOf(executor, nested.object(), BuildingblockPackage.BuildingBlock) ) {
 				continue;
 			}
-						
-			ch.actifsource.core.Statement currentBuildingBlock = Select.statementForRelationOrNull(executor, AggregateDecomposite_intoBuildingBlock, nested.object());		
+			
+			Logger.instance().logInfo("invalid type found on subject " + Select.simpleName(executor, nested.subject()));						
+			ch.actifsource.core.Statement currentBuildingBlock = Select.statementForRelationOrNull(executor, AggregateDecomposite_intoBuildingBlock, nested.object());
+			if(currentBuildingBlock == null ) {
+				continue;
+			}
+			
 			ch.actifsource.core.Statement newBuildingBlock = currentBuildingBlock.replaceNode(currentBuildingBlock.subject(), buildingBlock);						
 			newBuildingBlock = newBuildingBlock.replaceNode(currentBuildingBlock.predicate(), BuildingblockPackage.DecompositionBuildingBlock_decompose);						
 			executor.remove(currentBuildingBlock);
 			executor.add(newBuildingBlock, IStatementPosition.AT_END);			
 			Update.disposeStatement(executor, nested);			
-		}				
+		}
 	}
 
+	private void refactorRelationShip(IModifiable executor, INode buildingBlock) {
+		IStatementSet nodes = Select.statementsForRelation(executor, BuildingblockPackage.DecompositionBuildingBlock_decompose, buildingBlock);
+		
+		for( ch.actifsource.core.Statement nested : nodes ) {
+			Logger.instance().logInfo("verify relationship statement " + nested.toString() + " on subject " + Select.simpleName(executor, nested.subject()));
+			if( nested.isComposition() ) {
+				try {
+					executor.modify(nested, nested.createModificationStatement(Relationship.ASSOCIATION));
+					Update.modify(executor, nested, Relationship.AGGREGATION);
+				} catch( Exception e) {
+					Logger.instance().logWarning("modify statement " + nested.toString() + " failed with exception " + e.getMessage());
+				}
+			}		
+		}		
+	}
 }

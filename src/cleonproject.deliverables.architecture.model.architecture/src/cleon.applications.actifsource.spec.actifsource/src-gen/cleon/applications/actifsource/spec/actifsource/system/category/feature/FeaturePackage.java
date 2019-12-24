@@ -13,6 +13,7 @@ public class FeaturePackage {
   public static final Resource Feature_models = new Resource("0c650379-2635-11ea-8c59-871562e3b5c4");
   public static final Resource Feature_metamodel = new Resource("7dcc13e3-2635-11ea-8c59-871562e3b5c4");
   public static final Resource Feature_diagram = new Resource("a74a54d5-2635-11ea-8c59-871562e3b5c4");
+  public static final Resource Feature_templates = new Resource("a3df3332-2659-11ea-8c59-871562e3b5c4");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class FeaturePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature,hh8CdHBUFmZoXMAZCt63+HrV2vQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature,7NlPmHkMyACH3OULWHZOkYOdzo8=] */

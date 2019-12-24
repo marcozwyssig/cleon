@@ -14,6 +14,7 @@ import ch.actifsource.core.model.aspects.impl.AbstractAllInstancesRefactorerAspe
 import ch.actifsource.core.patch.IStatementPosition;
 import ch.actifsource.core.set.INodeList;
 import ch.actifsource.core.set.INodeSet;
+import ch.actifsource.core.set.IPackageSet;
 import ch.actifsource.core.set.IStatementSet;
 import ch.actifsource.core.update.FixOwnership;
 import ch.actifsource.core.update.IModifiable;
@@ -43,8 +44,21 @@ public class RefactorDecomposeBuildingBlock extends AbstractAllInstancesRefactor
 			Logger.instance().logInfo("invalid type found on subject " + Select.simpleName(executor, nested.subject()));						
 			ch.actifsource.core.Statement currentBuildingBlock = Select.statementForRelationOrNull(executor, AggregateDecomposite_intoBuildingBlock, nested.object());
 			if(currentBuildingBlock == null ) {
+				Logger.instance().logInfo("statement for " + Select.simpleName(executor, nested.subject()) + " not found. Searching for possible statements...");
+				IPackageSet packageSet = Select.statements(executor, nested.object());
+				for( ch.actifsource.core.Statement findStatement : packageSet) {
+					if( Select.isTypeOf(executor, findStatement.object(), BuildingblockPackage.BuildingBlock) ) {
+						currentBuildingBlock = findStatement;
+						break;
+					}					
+				}				
+			}
+			
+			if( currentBuildingBlock == null) {
+				Logger.instance().logInfo("statement for " + Select.simpleName(executor, nested.subject()) + " not found. Continues.");
 				continue;
 			}
+			
 			
 			ch.actifsource.core.Statement newBuildingBlock = currentBuildingBlock.replaceNode(currentBuildingBlock.subject(), buildingBlock);						
 			newBuildingBlock = newBuildingBlock.replaceNode(currentBuildingBlock.predicate(), BuildingblockPackage.DecompositionBuildingBlock_decompose);						

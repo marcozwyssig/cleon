@@ -10,8 +10,14 @@ public interface IFeature extends cleon.modelinglanguages.uml.spec.uml2.structur
   
   public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureDependency> selectHasDependency();
   
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> selectPlugins();
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel selectMetamodel();
+  
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram selectDiagram();
+  
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample selectSample();
+  
+  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel> selectModels();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,hzix06hhOueB1jQ4LHgGeFmeMV0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,8TWEBweqTtB7pD1VoVqwfseyNww=] */

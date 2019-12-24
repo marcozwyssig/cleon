@@ -18,106 +18,6 @@ public class FunctionSpace_Plugin {
   /* End Protected Region   [[7106baaa-3c77-11e6-aafa-bd565efc0ead]] */
 
 
-  public static interface IModelFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("7d9d3c83-3c77-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
-
-  }
-  
-  public static interface IModelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ModelFunctionsImpl implements IModelFunctionsImpl {
-
-    public static final IModelFunctionsImpl INSTANCE = new ModelFunctionsImpl();
-
-    private ModelFunctionsImpl() {}
-
-  }
-  
-  public static class ModelFunctions {
-
-    private ModelFunctions() {}
-
-  }
-
-  public static interface ITemplateFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("96d10a22-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
-
-  }
-  
-  public static interface ITemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TemplateFunctionsImpl implements ITemplateFunctionsImpl {
-
-    public static final ITemplateFunctionsImpl INSTANCE = new TemplateFunctionsImpl();
-
-    private TemplateFunctionsImpl() {}
-
-  }
-  
-  public static class TemplateFunctions {
-
-    private TemplateFunctions() {}
-
-  }
-
-  public static interface ISpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("d0ee34b5-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
-
-  }
-  
-  public static interface ISpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SpecificationFunctionsImpl implements ISpecificationFunctionsImpl {
-
-    public static final ISpecificationFunctionsImpl INSTANCE = new SpecificationFunctionsImpl();
-
-    private SpecificationFunctionsImpl() {}
-
-  }
-  
-  public static class SpecificationFunctions {
-
-    private SpecificationFunctions() {}
-
-  }
-
-  public static interface IDiagramFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("f6381a3f-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
-
-  }
-  
-  public static interface IDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DiagramFunctionsImpl implements IDiagramFunctionsImpl {
-
-    public static final IDiagramFunctionsImpl INSTANCE = new DiagramFunctionsImpl();
-
-    private DiagramFunctionsImpl() {}
-
-  }
-  
-  public static class DiagramFunctions {
-
-    private DiagramFunctions() {}
-
-  }
-
   public static interface IAbstractPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5fac0a17-8983-11e6-9315-e9960ca482c6")
@@ -197,6 +97,131 @@ public class FunctionSpace_Plugin {
 
   }
 
+  public static interface IModelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7d9d3c83-3c77-11e6-aafa-bd565efc0ead")
+    public java.lang.String GetBuildingBlockName();
+
+  }
+  
+  public static interface IModelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ModelFunctionsImpl implements IModelFunctionsImpl {
+
+    public static final IModelFunctionsImpl INSTANCE = new ModelFunctionsImpl();
+
+    private ModelFunctionsImpl() {}
+
+  }
+  
+  public static class ModelFunctions {
+
+    private ModelFunctions() {}
+
+  }
+
+  public static interface ITemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("96d10a22-3c79-11e6-aafa-bd565efc0ead")
+    public java.lang.String GetBuildingBlockName();
+
+  }
+  
+  public static interface ITemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TemplateFunctionsImpl implements ITemplateFunctionsImpl {
+
+    public static final ITemplateFunctionsImpl INSTANCE = new TemplateFunctionsImpl();
+
+    private TemplateFunctionsImpl() {}
+
+  }
+  
+  public static class TemplateFunctions {
+
+    private TemplateFunctions() {}
+
+  }
+
+  public static interface IMetaModelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d0ee34b5-3c79-11e6-aafa-bd565efc0ead")
+    public java.lang.String GetBuildingBlockName();
+
+  }
+  
+  public static interface IMetaModelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MetaModelFunctionsImpl implements IMetaModelFunctionsImpl {
+
+    public static final IMetaModelFunctionsImpl INSTANCE = new MetaModelFunctionsImpl();
+
+    private MetaModelFunctionsImpl() {}
+
+  }
+  
+  public static class MetaModelFunctions {
+
+    private MetaModelFunctions() {}
+
+  }
+
+  public static interface IDiagramFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f6381a3f-3c79-11e6-aafa-bd565efc0ead")
+    public java.lang.String GetBuildingBlockName();
+
+  }
+  
+  public static interface IDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DiagramFunctionsImpl implements IDiagramFunctionsImpl {
+
+    public static final IDiagramFunctionsImpl INSTANCE = new DiagramFunctionsImpl();
+
+    private DiagramFunctionsImpl() {}
+
+  }
+  
+  public static class DiagramFunctions {
+
+    private DiagramFunctions() {}
+
+  }
+
+  public static interface ISampleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7bd8212a-2637-11ea-8c59-871562e3b5c4")
+    public java.lang.String GetBuildingBlockName();
+
+  }
+  
+  public static interface ISampleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SampleFunctionsImpl implements ISampleFunctionsImpl {
+
+    public static final ISampleFunctionsImpl INSTANCE = new SampleFunctionsImpl();
+
+    private SampleFunctionsImpl() {}
+
+  }
+  
+  public static class SampleFunctions {
+
+    private SampleFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,S/M6HDV1nJ37ESnSv9TACfPxLrw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,mU0G7KwTOnIavnBnYjzf9FXW5Xs=] */

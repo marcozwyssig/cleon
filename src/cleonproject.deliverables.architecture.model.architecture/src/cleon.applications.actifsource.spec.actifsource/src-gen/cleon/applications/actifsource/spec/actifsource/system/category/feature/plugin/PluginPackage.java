@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class PluginPackage {
   
-  public static final Resource Specification = new Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
+  public static final Resource MetaModel = new Resource("2cdf0732-e9ba-11e4-848b-0509e3792151");
   public static final Resource Template = new Resource("3e687740-e9ba-11e4-848b-0509e3792151");
   public static final Resource AbstractPlugin_dependsOnPlugin = new Resource("ee024577-03b8-11e5-b26a-2b178025b98b");
   public static final Resource Model = new Resource("eab1ce0a-1005-11e5-865e-55f33dbc76dc");
@@ -20,7 +20,7 @@ public class PluginPackage {
   public static final Resource PluginProjectDependency = new Resource("eb57b8c2-0c6a-11e6-86c5-87a8b520dd59");
   public static final Resource FunctionSpace_aE_Plugin_Model = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Plugin_Template = new Resource("96d10a18-3c79-11e6-aafa-bd565efc0ead");
-  public static final Resource FunctionSpace_aE_Plugin_Specification = new Resource("d0ee34ab-3c79-11e6-aafa-bd565efc0ead");
+  public static final Resource FunctionSpace_aE_Plugin_MetaModel = new Resource("d0ee34ab-3c79-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Plugin_Diagram = new Resource("f6381a35-3c79-11e6-aafa-bd565efc0ead");
   public static final Resource FunctionSpace_aE_Plugin_AbstractPlugin = new Resource("5c7bb185-8983-11e6-9315-e9960ca482c6");
   public static final Resource AbstractPlugin_actifsource = new Resource("37b032e2-3fd8-11e8-bd50-b94594551673");
@@ -30,7 +30,8 @@ public class PluginPackage {
   public static final Resource AbstractPlugin_dependsOnBuiltin = new Resource("e3484de3-beb3-11e8-972c-a1feaa7cfc48");
   public static final Resource PluginProjectDependency_to = new Resource("069b6d5b-beb4-11e8-972c-a1feaa7cfc48");
   public static final Resource PluginBuiltinDependency_to = new Resource("54b52ba9-beb4-11e8-972c-a1feaa7cfc48");
-  public static final Resource Plugin = new Resource("b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576");
+  public static final Resource NamedAbstractPlugin = new Resource("b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576");
+  public static final Resource FunctionSpace_aE_Plugin_Sample = new Resource("7bd82120-2637-11ea-8c59-871562e3b5c4");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +52,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin,XSKnbrUbz8g6T3UrdbttCIL+gHw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin,ZdqNpMcBvUfM9DBQC9RuPLSX3N8=] */

@@ -80,6 +80,16 @@ public class Feature extends DynamicResource implements IFeature {
   }
     
   @Override
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram selectDiagram() {
+    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_diagram);
+  }
+
+  public Feature setDiagram(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram diagram) {
+    _setSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_diagram, diagram);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureDependency> selectHasDependency() {
     return _getList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureDependency.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_hasDependency);
   }
@@ -100,12 +110,22 @@ public class Feature extends DynamicResource implements IFeature {
   }
     
   @Override
-  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> selectPlugins() {
-    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_plugins);
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel selectMetamodel() {
+    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_metamodel);
   }
 
-  public Feature setPlugins(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin> plugins) {
-    _setList(cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_plugins, plugins);
+  public Feature setMetamodel(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel metamodel) {
+    _setSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_metamodel, metamodel);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel> selectModels() {
+    return _getList(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_models);
+  }
+
+  public Feature setModels(java.util.List<? extends cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel> models) {
+    _setList(cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_models, models);
     return this;
   }
     
@@ -130,6 +150,16 @@ public class Feature extends DynamicResource implements IFeature {
   }
     
   @Override
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample selectSample() {
+    return _getSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_sample);
+  }
+
+  public Feature setSample(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample sample) {
+    _setSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_sample, sample);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -146,10 +176,13 @@ public class Feature extends DynamicResource implements IFeature {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.spec.resources.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_diagram, visitor);
     _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeatureDependency.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_hasDependency, visitor);
-    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_plugins, visitor);
+    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_metamodel, visitor);
+    _acceptList(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_models, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.spec.uml2.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.spec.uml2.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
+    _acceptSingle(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_sample, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -159,9 +192,21 @@ public class Feature extends DynamicResource implements IFeature {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_hasDependency, object.getResource());
   }
   
-  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature selectToMePlugins(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IAbstractPlugin object) {
-    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_plugins, object.getResource());
+  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature selectToMeMetamodel(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IMetaModel object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_metamodel, object.getResource());
+  }
+  
+  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature selectToMeDiagram(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IDiagram object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_diagram, object.getResource());
+  }
+  
+  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature selectToMeSample(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.sample.javamodel.ISample object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_sample, object.getResource());
+  }
+  
+  public static cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature selectToMeModels(cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.javamodel.IModel object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.spec.actifsource.system.category.feature.javamodel.IFeature.class, cleon.applications.actifsource.spec.actifsource.system.category.feature.FeaturePackage.Feature_models, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,ce8f8WbsxDpIyI8Q00gs0QlCGHs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,k5K4Q9fuT2D9apMI0gCw7GBAM54=] */

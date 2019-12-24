@@ -20,8 +20,8 @@ public interface IAbstractPlugin extends cleon.modelinglanguages.uml.spec.uml2.s
   
   public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IGradle selectGradle();
   
-  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin_Nature selectPlugin();
+  public cleon.applications.actifsource.spec.actifsource.system.category.feature.plugin.nature.javamodel.IPlugin selectPlugin();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,F44ri48/E3R2N3abFfSI9TPY1+Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,FCHxZMGZtnY9r2i1XBcXbCgybSY=] */

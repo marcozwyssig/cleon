@@ -464,17 +464,14 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
+      <import feature="cleon.modelinglanguages.segmentation"/>
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.util"/>
+      <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.modelinglanguages.network.spec.network.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.network.spec.segmentation.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.network.template.docbook.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.network.template.nwdiag.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.network.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
+   <plugin id="cleon.modelinglanguages.network.metamodel.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,e1295a2d-0510-11e9-b129-6590cd6315e4,Hash] -->

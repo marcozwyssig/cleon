@@ -472,18 +472,15 @@ of their respective owners.
       <import feature="cleon.modelinglanguages.rack"/>
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.util"/>
+      <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
       <import feature="cleon.projectmethods.hermes"/>
       <import feature="cleon.common.glossary"/>
+      <import feature="cleon.common.calendar"/>
+      <import feature="cleon.modelinglanguages.segmentation"/>
    </requires>
-   <plugin id="cleon.architecturemethods.itarc42.spec.itarc42.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.architecturemethods.itarc42.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.architecturemethods.itarc42.template.docbook.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.architecturemethods.itarc42.template.plantuml.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.architecturemethods.itarc42.template.graphviz.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.architecturemethods.itarc42.template.xml.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
+   <plugin id="cleon.architecturemethods.itarc42.metamodel.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,a75abf70-bab1-11e8-87b8-7b667ffd46b4,Hash] -->

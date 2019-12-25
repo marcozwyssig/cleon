@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="6501c840-cb39-11e8-9fc7-cb7241efa62e">
   <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <resource statement-guid="2f71fb4d-cb3e-11e8-9fc7-cb7241efa62e" type="resource" guid="2f71fb4a-cb3e-11e8-9fc7-cb7241efa62e" />
     <resource statement-guid="ecec776f-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="ecec505b-4f87-11e9-bb70-f5c712ea0a4b" />
   </owns>
   <owns predicate="37b032e2-3fd8-11e8-bd50-b94594551673">
@@ -16,20 +15,7 @@
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="6501ef52-cb39-11e8-9fc7-cb7241efa62e" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
   </predicate>
-  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="65cbf5ad-cb39-11e8-9fc7-cb7241efa62e" type="literal">SDA</object>
-  </predicate>
   <predicate guid="ee024577-03b8-11e5-b26a-2b178025b98b">
-    <object statement-guid="2f71fb4d-cb3e-11e8-9fc7-cb7241efa62e">
-      <resource guid="2f71fb4a-cb3e-11e8-9fc7-cb7241efa62e">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="2f71fb4c-cb3e-11e8-9fc7-cb7241efa62e" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
-        </predicate>
-        <predicate guid="069b6d5b-beb4-11e8-972c-a1feaa7cfc48">
-          <object statement-guid="2ffc6117-cb3e-11e8-9fc7-cb7241efa62e" type="resource" guid="5110c76c-a6dc-11e8-abda-1728d247182a" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="ecec776f-4f87-11e9-bb70-f5c712ea0a4b">
       <resource guid="ecec505b-4f87-11e9-bb70-f5c712ea0a4b">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

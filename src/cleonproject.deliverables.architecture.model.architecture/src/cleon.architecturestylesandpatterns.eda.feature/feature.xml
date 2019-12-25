@@ -466,11 +466,11 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.util"/>
+      <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.architecturestylesandpatterns.eda.spec.eda.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
+   <plugin id="cleon.architecturestylesandpatterns.eda.metamodel.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,2d007595-cb35-11e8-9fc7-cb7241efa62e,Hash] -->

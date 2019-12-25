@@ -465,15 +465,11 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.util"/>
+      <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
    </requires>
-   <plugin id="cleon.modelinglanguages.uml.spec.uml2.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.uml.template.plantuml.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.uml.template.asciidoc.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.uml.template.dotnet.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>
-   <plugin id="cleon.modelinglanguages.uml.template.docbook.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
+   <plugin id="cleon.modelinglanguages.uml.metamodel.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,1da070f0-ca23-11e8-9418-61f1df21967c,Hash] -->

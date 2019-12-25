@@ -3,62 +3,30 @@
 	<name>cleon.publishing.collaboration.sample</name>
 	<comment/>
 	<projects>
-		<project>cleon.publishing.collaboration.spec.sda</project>
+		<project>cleon.publishing.collaboration.metamodel</project>
 		<project>cleon.common.resources.sample</project>
 		<project>cleon.testingmethods.hermes.sample</project>
-		<project>cleon.architecturemethods.eamod.spec.analysis</project>
-		<project>cleon.testingmethods.hermes.spec.hermes5</project>
-		<project>cleon.architecturemethods.eamod.spec.eamod</project>
-		<project>cleon.projectmethods.hermes.spec.detailstudy</project>
-		<project>cleon.modelinglanguages.uml.spec.uml2</project>
-		<project>cleon.common.glossary.spec.glossary</project>
-		<project>cleon.common.xml.spec.xmi</project>
-		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
-		<project>cleon.common.modularity.spec.buildingblock</project>
-		<project>cleon.common.doc.doc</project>
-		<project>cleon.common.resources.spec.resources</project>
-		<project>cleon.common.xml.template.xml</project>
-		<project>cleon.common.xml.spec.xml</project>
-		<project>cleon.common.resources.spec.calendar</project>
-		<project>cleon.architecturemethods.itarc42.spec.itarc42</project>
-		<project>cleon.architecturemethods.arc42.spec.arc42</project>
-		<project>cleon.modelinglanguages.network.spec.network</project>
-		<project>cleon.modelinglanguages.network.spec.segmentation</project>
-		<project>cleon.common.resources.spec.language</project>
-		<project>cleon.testingmethods.hermes.template.docbook</project>
-		<project>cleon.testingmethods.hermes.template.asciidoc</project>
+		<project>cleon.testingmethods.hermes.metamodel</project>
+		<project>cleon.architecturemethods.itarc42.metamodel</project>
+		<project>cleon.architecturemethods.arc42.metamodel</project>
+		<project>cleon.modelinglanguages.network.metamodel</project>
+		<project>cleon.architecturemethods.eamod.metamodel</project>
+		<project>cleon.architecturestylesandpatterns.soa.metamodel</project>
+		<project>cleon.architecturestylesandpatterns.eda.metamodel</project>
+		<project>cleon.modelinglanguages.uml.metamodel</project>
+		<project>cleon.common.glossary.metamodel</project>
+		<project>cleon.common.xml.metamodel</project>
+		<project>cleon.projectmethods.hermes.metamodel</project>
+		<project>cleon.common.modularity.metamodel</project>
+		<project>cleon.common.actifsource.metamodel</project>
+		<project>cleon.common.doc.metamodel</project>
+		<project>cleon.common.resources.metamodel</project>
+		<project>cleon.common.calendar.metamodel</project>
+		<project>cleon.modelinglanguages.segmentation.metamodel</project>
 		<project>cleon.architecturemethods.itarc42.sample</project>
-		<project>cleon.architecturemethods.itarc42.template.docbook</project>
-		<project>cleon.architecturemethods.arc42.template.docbook</project>
-		<project>cleon.architecturemethods.arc42.template.plantuml</project>
-		<project>cleon.modelinglanguages.uml.template.docbook</project>
-		<project>cleon.modelinglanguages.network.template.docbook</project>
-		<project>cleon.modelinglanguages.rack.template.docbook</project>
-		<project>cleon.common.glossary.template.docbook</project>
-		<project>cleon.modelinglanguages.uml.template.plantuml</project>
-		<project>cleon.common.util.spec.actifsource</project>
-		<project>cleon.modelinglanguages.rack.spec.rack</project>
-		<project>cleon.architecturemethods.itarc42.template.asciidoc</project>
-		<project>cleon.architecturemethods.arc42.template.asciidoc</project>
-		<project>cleon.modelinglanguages.network.template.asciidoc</project>
-		<project>cleon.modelinglanguages.rack.template.asciidoc</project>
-		<project>cleon.modelinglanguages.uml.template.asciidoc</project>
-		<project>cleon.modelinglanguages.network.template.nwdiag</project>
-		<project>cleon.modelinglanguages.rack.template.rackdiag</project>
-		<project>cleon.architecturemethods.eamod.sample</project>
-		<project>cleon.architecturemethods.itarc42.template.plantuml</project>
-		<project>cleon.architecturemethods.itarc42.template.xml</project>
-		<project>cleon.architecturemethods.eamod.template.xmi</project>
-		<project>cleon.architecturemethods.eamod.template.xml</project>
-		<project>cleon.architecturemethods.eamod.template.asciidoc</project>
-		<project>cleon.projectmethods.hermes.sample</project>
-		<project>cleon.architecturemethods.eamod.template.docbook</project>
-		<project>cleon.common.glossary.template.asciidoc</project>
-		<project>cleon.projectmethods.hermes.template.asciidoc</project>
-		<project>cleon.projectmethods.hermes.template.docbook</project>
-		<project>cleon.projectmethods.hermes.template.tj3</project>
 		<project>cleon.common.glossary.sample</project>
-		<project>cleon.projectmethods.hermes.spec.projectsteering</project>	
+		<project>cleon.architecturemethods.eamod.sample</project>
+		<project>cleon.projectmethods.hermes.sample</project>	
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -76,4 +44,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6fe31ecf-cb39-11e8-9fc7-cb7241efa62e,JMj7E0HUqNTQD39BdndqGEEPdew=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,6fe31ecf-cb39-11e8-9fc7-cb7241efa62e,vg5hw1EJyUxkUOhMTIHsjQs4W/I=] -->

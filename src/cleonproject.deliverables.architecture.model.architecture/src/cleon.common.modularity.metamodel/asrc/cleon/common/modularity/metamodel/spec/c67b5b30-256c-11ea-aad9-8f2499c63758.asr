@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c67b5b30-256c-11ea-aad9-8f2499c63758">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="c97dec60-256c-11ea-aad9-8f2499c63758" type="resource" guid="c975fd1c-256c-11ea-aad9-8f2499c63758" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c67b8242-256c-11ea-aad9-8f2499c63758" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c67bd063-256c-11ea-aad9-8f2499c63758" type="literal">RefactorDecomposeBuildingBlock</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c97dec60-256c-11ea-aad9-8f2499c63758">
+      <resource guid="c975fd1c-256c-11ea-aad9-8f2499c63758">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c977359e-256c-11ea-aad9-8f2499c63758" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ca9f3b3d-256c-11ea-aad9-8f2499c63758" type="literal">cleon.common.modularity.metamodel.spec.RefactorDecomposeBuildingBlock</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c979316f-256c-11ea-aad9-8f2499c63758" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

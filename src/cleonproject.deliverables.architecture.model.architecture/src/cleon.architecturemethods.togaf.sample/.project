@@ -3,19 +3,20 @@
 	<name>cleon.architecturemethods.togaf.sample</name>
 	<comment/>
 	<projects>
-		<project>cleon.architecturemethods.togaf.spec.togaf</project>
-		<project>cleon.architecturemethods.arc42.spec.arc42</project>
-		<project>cleon.architecturemethods.eamod.spec.eamod</project>
-		<project>cleon.modelinglanguages.uml.spec.uml2</project>
-		<project>cleon.common.glossary.spec.glossary</project>
-		<project>cleon.common.xml.spec.xmi</project>
-		<project>cleon.projectmethods.hermes.spec.projectmanagement</project>
-		<project>cleon.common.modularity.spec.buildingblock</project>
-		<project>cleon.common.doc.doc</project>
-		<project>cleon.common.resources.spec.resources</project>
-		<project>cleon.common.xml.template.xml</project>
-		<project>cleon.common.xml.spec.xml</project>
-		<project>cleon.common.resources.spec.calendar</project>	
+		<project>cleon.architecturemethods.togaf.metamodel</project>
+		<project>cleon.architecturemethods.arc42.metamodel</project>
+		<project>cleon.architecturemethods.eamod.metamodel</project>
+		<project>cleon.architecturestylesandpatterns.soa.metamodel</project>
+		<project>cleon.architecturestylesandpatterns.eda.metamodel</project>
+		<project>cleon.modelinglanguages.uml.metamodel</project>
+		<project>cleon.common.glossary.metamodel</project>
+		<project>cleon.common.xml.metamodel</project>
+		<project>cleon.projectmethods.hermes.metamodel</project>
+		<project>cleon.common.modularity.metamodel</project>
+		<project>cleon.common.actifsource.metamodel</project>
+		<project>cleon.common.doc.metamodel</project>
+		<project>cleon.common.resources.metamodel</project>
+		<project>cleon.common.calendar.metamodel</project>	
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -33,4 +34,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,3668c455-cb39-11e8-9fc7-cb7241efa62e,dVCLw6xVj/9scCr5qwZjuZBI/ao=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,3668c455-cb39-11e8-9fc7-cb7241efa62e,qLdUWgOVCJKxYkoEQf+7CjAYPKU=] -->

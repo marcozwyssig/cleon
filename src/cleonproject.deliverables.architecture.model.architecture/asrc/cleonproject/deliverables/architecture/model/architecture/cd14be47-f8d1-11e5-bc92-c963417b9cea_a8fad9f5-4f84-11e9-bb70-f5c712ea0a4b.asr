@@ -2,7 +2,6 @@
 <resource format="5.6.0" guid="a8fad9f5-4f84-11e9-bb70-f5c712ea0a4b">
   <owns predicate="ee024577-03b8-11e5-b26a-2b178025b98b">
     <resource statement-guid="bb09ce37-4f84-11e9-bb70-f5c712ea0a4b" type="resource" guid="bb09a723-4f84-11e9-bb70-f5c712ea0a4b" />
-    <resource statement-guid="3f040cdf-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="3f03e5cb-4f87-11e9-bb70-f5c712ea0a4b" />
     <resource statement-guid="0d70e983-4f8c-11e9-bb70-f5c712ea0a4b" type="resource" guid="0d70e97f-4f8c-11e9-bb70-f5c712ea0a4b" />
   </owns>
   <owns predicate="e0532bab-5201-11e5-89ac-35d4069568da">
@@ -31,23 +30,10 @@
           <object statement-guid="bb09a725-4f84-11e9-bb70-f5c712ea0a4b" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
         </predicate>
         <predicate guid="069b6d5b-beb4-11e8-972c-a1feaa7cfc48">
-          <object statement-guid="bba8582c-4f84-11e9-bb70-f5c712ea0a4b" type="resource" guid="85b2b6ea-4f84-11e9-bb70-f5c712ea0a4b" />
+          <object statement-guid="bba8582c-4f84-11e9-bb70-f5c712ea0a4b" type="resource" guid="3610aa9e-4f84-11e9-bb70-f5c712ea0a4b" />
         </predicate>
         <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
           <object statement-guid="bb09ce36-4f84-11e9-bb70-f5c712ea0a4b" type="literal">false</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="3f040cdf-4f87-11e9-bb70-f5c712ea0a4b">
-      <resource guid="3f03e5cb-4f87-11e9-bb70-f5c712ea0a4b">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3f03e5cd-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="eb57b8c2-0c6a-11e6-86c5-87a8b520dd59" />
-        </predicate>
-        <predicate guid="069b6d5b-beb4-11e8-972c-a1feaa7cfc48">
-          <object statement-guid="3fcd777b-4f87-11e9-bb70-f5c712ea0a4b" type="resource" guid="57849744-4f86-11e9-bb70-f5c712ea0a4b" />
-        </predicate>
-        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
-          <object statement-guid="3f040cde-4f87-11e9-bb70-f5c712ea0a4b" type="literal">false</object>
         </predicate>
       </resource>
     </object>

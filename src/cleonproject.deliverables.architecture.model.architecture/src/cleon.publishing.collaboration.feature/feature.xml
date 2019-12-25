@@ -474,13 +474,15 @@ of their respective owners.
       <import feature="cleon.modelinglanguages.rack"/>
       <import feature="cleon.modelinglanguages.uml"/>
       <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.util"/>
+      <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
       <import feature="cleon.common.xml"/>
       <import feature="cleon.projectmethods.hermes"/>
       <import feature="cleon.common.glossary"/>
+      <import feature="cleon.common.calendar"/>
+      <import feature="cleon.modelinglanguages.segmentation"/>
    </requires>
-   <plugin id="cleon.publishing.collaboration.spec.sda.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
+   <plugin id="cleon.publishing.collaboration.metamodel.builtin" download-size="0" install-size="0" version="0.4.146" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,5ffed290-cb39-11e8-9fc7-cb7241efa62e,Hash] -->

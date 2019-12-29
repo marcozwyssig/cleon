@@ -22,6 +22,6 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.modelinglanguages.network.metamodel,
  cleon.modelinglanguages.network.metamodel.javamodel,
- cleon.modelinglanguages.network.metamodel.ipv4,
- cleon.modelinglanguages.network.metamodel.ipv4.javamodel
+ cleon.modelinglanguages.network.metamodel.spec.ipv4,
+ cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel
 

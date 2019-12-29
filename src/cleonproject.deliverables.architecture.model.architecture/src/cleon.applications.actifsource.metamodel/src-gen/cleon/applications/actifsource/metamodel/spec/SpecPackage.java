@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class SpecPackage {
   
-  public static final Resource Actifsource_aE_Arc = new Resource("d16b593e-ce8a-11e5-b193-7398541c035e");
+  public static final Resource ActifsourceArc42 = new Resource("d16b593e-ce8a-11e5-b193-7398541c035e");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec,uHwJ8ya/dEE8RGVa48RYaLCOya4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec,N7iimL6NNY51tVWnGWvt+lxk1IA=] */

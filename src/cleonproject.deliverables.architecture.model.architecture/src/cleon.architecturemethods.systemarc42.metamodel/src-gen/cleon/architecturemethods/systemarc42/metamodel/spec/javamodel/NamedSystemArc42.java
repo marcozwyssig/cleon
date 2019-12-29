@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
+public class NamedSystemArc42 extends DynamicResource implements INamedSystemArc42 {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedItArc42> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedItArc42>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSystemArc42> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedSystemArc42>() {
     
     @Override
-    public INamedItArc42 create() {
-      return new NamedItArc42();
+    public INamedSystemArc42 create() {
+      return new NamedSystemArc42();
     }
     
     @Override
-    public INamedItArc42 create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NamedItArc42(resourceRepository, resource);
+    public INamedSystemArc42 create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedSystemArc42(resourceRepository, resource);
     }
   
   };
 
-  public NamedItArc42() {
-    super(INamedItArc42.TYPE_ID);
+  public NamedSystemArc42() {
+    super(INamedSystemArc42.TYPE_ID);
   }
   
-  public NamedItArc42(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INamedItArc42.TYPE_ID);
+  public NamedSystemArc42(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedSystemArc42.TYPE_ID);
   }
 
   // attributes
@@ -82,7 +82,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_1_aE_introduction_aE_and_aE_goals);
   }
 
-  public NamedItArc42 set__V_1_aE_introduction_aE_and_aE_goals(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals __V_1_aE_introduction_aE_and_aE_goals) {
+  public NamedSystemArc42 set__V_1_aE_introduction_aE_and_aE_goals(cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel.IIntroductionAndGoals __V_1_aE_introduction_aE_and_aE_goals) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_1_aE_introduction_aE_and_aE_goals, __V_1_aE_introduction_aE_and_aE_goals);
     return this;
   }
@@ -92,7 +92,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints.javamodel.IArchitecture_Constraints.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_2_aE_architecture_aE_constraints);
   }
 
-  public NamedItArc42 set__V_2_aE_architecture_aE_constraints(cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints.javamodel.IArchitecture_Constraints __V_2_aE_architecture_aE_constraints) {
+  public NamedSystemArc42 set__V_2_aE_architecture_aE_constraints(cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints.javamodel.IArchitecture_Constraints __V_2_aE_architecture_aE_constraints) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_2_aE_architecture_aE_constraints, __V_2_aE_architecture_aE_constraints);
     return this;
   }
@@ -102,7 +102,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_3_aE_system_aE_scope_aE_and_aE_context);
   }
 
-  public NamedItArc42 set__V_3_aE_system_aE_scope_aE_and_aE_context(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context __V_3_aE_system_aE_scope_aE_and_aE_context) {
+  public NamedSystemArc42 set__V_3_aE_system_aE_scope_aE_and_aE_context(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context __V_3_aE_system_aE_scope_aE_and_aE_context) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_3_aE_system_aE_scope_aE_and_aE_context, __V_3_aE_system_aE_scope_aE_and_aE_context);
     return this;
   }
@@ -112,7 +112,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy);
   }
 
-  public NamedItArc42 set__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy __V_4_aE_solution_aE_strategy) {
+  public NamedSystemArc42 set__V_4_aE_solution_aE_strategy(cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy.javamodel.ISolution_Strategy __V_4_aE_solution_aE_strategy) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_4_aE_solution_aE_strategy, __V_4_aE_solution_aE_strategy);
     return this;
   }
@@ -122,7 +122,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_5_aE_buildingblockview);
   }
 
-  public NamedItArc42 set__V_5_aE_buildingblockview(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView __V_5_aE_buildingblockview) {
+  public NamedSystemArc42 set__V_5_aE_buildingblockview(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView __V_5_aE_buildingblockview) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_5_aE_buildingblockview, __V_5_aE_buildingblockview);
     return this;
   }
@@ -132,7 +132,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_deploymentview);
   }
 
-  public NamedItArc42 set__V_7_aE_deploymentview(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView __V_7_aE_deploymentview) {
+  public NamedSystemArc42 set__V_7_aE_deploymentview(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IDeploymentView __V_7_aE_deploymentview) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_7_aE_deploymentview, __V_7_aE_deploymentview);
     return this;
   }
@@ -142,7 +142,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_concepts);
   }
 
-  public NamedItArc42 set__V_8_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts __V_8_aE_concepts) {
+  public NamedSystemArc42 set__V_8_aE_concepts(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.javamodel.IConcepts __V_8_aE_concepts) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_8_aE_concepts, __V_8_aE_concepts);
     return this;
   }
@@ -152,7 +152,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_designdecision);
   }
 
-  public NamedItArc42 set__V_9_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision __V_9_aE_designdecision) {
+  public NamedSystemArc42 set__V_9_aE_designdecision(cleon.architecturemethods.arc42.metamodel.spec._09_design_decisions.javamodel.IDesignDecision __V_9_aE_designdecision) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___V_9_aE_designdecision, __V_9_aE_designdecision);
     return this;
   }
@@ -162,7 +162,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_quality_aE_scenarios);
   }
 
-  public NamedItArc42 set__W_0_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios __W_0_aE_quality_aE_scenarios) {
+  public NamedSystemArc42 set__W_0_aE_quality_aE_scenarios(cleon.architecturemethods.arc42.metamodel.spec._10_quality_scenarios.javamodel.IQuality_Scenarios __W_0_aE_quality_aE_scenarios) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_0_aE_quality_aE_scenarios, __W_0_aE_quality_aE_scenarios);
     return this;
   }
@@ -172,7 +172,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_technical_aE_risks);
   }
 
-  public NamedItArc42 set__W_1_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks __W_1_aE_technical_aE_risks) {
+  public NamedSystemArc42 set__W_1_aE_technical_aE_risks(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks __W_1_aE_technical_aE_risks) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_1_aE_technical_aE_risks, __W_1_aE_technical_aE_risks);
     return this;
   }
@@ -182,7 +182,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_productview);
   }
 
-  public NamedItArc42 set__W_2_aE_productview(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView __W_2_aE_productview) {
+  public NamedSystemArc42 set__W_2_aE_productview(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductView __W_2_aE_productview) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_2_aE_productview, __W_2_aE_productview);
     return this;
   }
@@ -192,7 +192,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages.class, cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_requirements_aE_coverage);
   }
 
-  public NamedItArc42 set__W_3_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages __W_3_aE_requirements_aE_coverage) {
+  public NamedSystemArc42 set__W_3_aE_requirements_aE_coverage(cleon.architecturemethods.arc42.metamodel.spec._12_requirements_coverage.javamodel.IArc42RequirementCoverages __W_3_aE_requirements_aE_coverage) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec.SpecPackage.arc42Document___W_3_aE_requirements_aE_coverage, __W_3_aE_requirements_aE_coverage);
     return this;
   }
@@ -202,7 +202,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout.class, cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about);
   }
 
-  public NamedItArc42 setAbout(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout about) {
+  public NamedSystemArc42 setAbout(cleon.common.doc.metamodel.spec.chapter.about.javamodel.IAbout about) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.about.AboutPackage.AboutAware_about, about);
     return this;
   }
@@ -212,7 +212,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public NamedItArc42 setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public NamedSystemArc42 setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -222,7 +222,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable);
   }
 
-  public NamedItArc42 setDeliverable(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
+  public NamedSystemArc42 setDeliverable(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable deliverable) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, deliverable);
     return this;
   }
@@ -232,7 +232,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public NamedItArc42 setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NamedSystemArc42 setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -242,7 +242,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage);
   }
 
-  public NamedItArc42 setDocumentLanguage(java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+  public NamedSystemArc42 setDocumentLanguage(java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
     _setList(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
@@ -252,7 +252,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary);
   }
 
-  public NamedItArc42 setGlossary(cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
+  public NamedSystemArc42 setGlossary(cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
     _setSingle(cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, glossary);
     return this;
   }
@@ -262,7 +262,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public NamedItArc42 setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NamedSystemArc42 setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -272,7 +272,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning);
   }
 
-  public NamedItArc42 setPlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument planning) {
+  public NamedSystemArc42 setPlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument planning) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, planning);
     return this;
   }
@@ -282,7 +282,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties);
   }
 
-  public NamedItArc42 setProperties(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties properties) {
+  public NamedSystemArc42 setProperties(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties properties) {
     _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, properties);
     return this;
   }
@@ -292,7 +292,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style);
   }
 
-  public NamedItArc42 setStyle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle style) {
+  public NamedSystemArc42 setStyle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle style) {
     _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, style);
     return this;
   }
@@ -302,7 +302,7 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NamedItArc42 setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedSystemArc42 setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -340,4 +340,4 @@ public class NamedItArc42 extends DynamicResource implements INamedItArc42 {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,l8PrCv5S9LIRUJE8JpZcJupix5w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,600e2b4a-d0b1-11e8-b005-f7630e4c29c0,XyV1UTMH2vzh+9BRVRBPv+YmzkA=] */

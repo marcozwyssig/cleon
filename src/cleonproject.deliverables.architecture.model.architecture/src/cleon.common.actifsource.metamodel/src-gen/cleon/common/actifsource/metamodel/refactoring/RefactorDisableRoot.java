@@ -26,14 +26,15 @@ import ch.actifsource.util.log.Logger;
 public class RefactorDisableRoot extends AbstractAllInstancesRefactorerAspect {
 
 	public RefactorDisableRoot() {
-		super("1.0", 2019, 11, 28, "Disable root resource", CorePackage.Class);
+		super("1.0", 2019, 11, 29, "Disable root resource", CorePackage.Class);
 	}
 
 	@Override
 	protected void refactor(IModifiable executor, Package _package, INode clazz) {
 		INode modifier = Select.objectForRelationOrNull(executor, CorePackage.Class_modifier, clazz);
 		if (modifier != null) {
-			if (modifier == CorePackage.InheritanceModifier_Abstract) {
+			INode modifierValue = Select.objectForRelationOrNull(executor, CorePackage.Enum_value, modifier);
+			if (CorePackage.InheritanceModifier_Abstract.equals(modifierValue)) {
 				return;
 			}
 		}

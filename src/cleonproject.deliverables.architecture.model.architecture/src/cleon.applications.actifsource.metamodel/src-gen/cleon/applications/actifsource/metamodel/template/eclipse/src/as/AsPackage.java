@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class AsPackage {
   
-  public static final Resource __T_asproject_AbstractPlugin = new Resource("88e26a81-41a1-11e8-81d0-774e4d9334dd");
+  public static final Resource __T_asproject_AbstractProject = new Resource("88e26a81-41a1-11e8-81d0-774e4d9334dd");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class AsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.as,F61f0lhJ7rWjDlVwsTknQTnZCvI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.as,t9vlUXBSEp5TVSmOLOGSnSwnOLs=] */

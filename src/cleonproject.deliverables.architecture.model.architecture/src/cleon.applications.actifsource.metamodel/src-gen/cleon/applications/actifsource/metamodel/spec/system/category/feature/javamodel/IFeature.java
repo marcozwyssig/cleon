@@ -10,16 +10,16 @@ public interface IFeature extends cleon.modelinglanguages.uml.metamodel.spec.str
   
   public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.javamodel.IFeatureDependency> selectHasDependency();
   
-  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IMetaModel> selectMetamodel();
+  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IMetaModel> selectMetamodel();
   
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IDiagram selectDiagram();
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IDiagram selectDiagram();
   
-  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.ITemplate> selectTemplates();
+  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.ITemplate> selectTemplates();
   
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.sample.javamodel.ISample selectSample();
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.sample.javamodel.ISample selectSample();
   
-  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IModel> selectModels();
+  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IModel> selectModels();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,75/n/g7vUTPEa8LonPve9q2eGSI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98431561-d40b-11e5-8556-8f55ceb91287,LjMX1LrZzFmdJpJOQXa3WRZEcWs=] */

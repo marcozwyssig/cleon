@@ -24,7 +24,7 @@ public class FunctionSpace_Feature {
     public java.lang.String GetBuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("ee48be41-2638-11ea-8c59-871562e3b5c4")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IAbstractPlugin> GetAllProjects();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllProjects();
 
   }
   
@@ -48,4 +48,4 @@ public class FunctionSpace_Feature {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9a3756e7-7e75-11e6-95c9-39c2ade57f78,43jSvQ8heubmIu2rrDG0/+sugOM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9a3756e7-7e75-11e6-95c9-39c2ade57f78,1zAC9w6D5fY9X06leT5YZeFU+MA=] */

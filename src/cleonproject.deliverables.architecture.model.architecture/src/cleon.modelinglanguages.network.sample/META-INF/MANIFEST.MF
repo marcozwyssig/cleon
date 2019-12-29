@@ -22,5 +22,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.modelinglanguages.network.sample,
+ cleon.modelinglanguages.network.sample.spec,
+ cleon.modelinglanguages.network.sample.spec.javamodel,
  cleon.modelinglanguages.network.sample.javamodel
 

@@ -27,6 +27,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.calendar.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.applications.actifsource.metamodel,
+ cleon.applications.actifsource.metamodel.spec,
+ cleon.applications.actifsource.metamodel.spec.javamodel,
  cleon.applications.actifsource.metamodel.javamodel,
  cleon.applications.actifsource.metamodel.spec.system,
  cleon.applications.actifsource.metamodel.spec.system.javamodel,

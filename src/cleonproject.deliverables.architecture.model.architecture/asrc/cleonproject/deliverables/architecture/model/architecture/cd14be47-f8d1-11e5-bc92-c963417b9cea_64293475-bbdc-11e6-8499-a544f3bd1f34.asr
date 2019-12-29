@@ -10,7 +10,11 @@
     <resource statement-guid="6eaf46e2-5444-11e8-a7d7-8f17ff9a62b8" type="resource" guid="6eaf1fcf-5444-11e8-a7d7-8f17ff9a62b8" />
   </owns>
   <owns predicate="e3f988f8-41a9-11e8-81d0-774e4d9334dd">
-    <resource statement-guid="6f87576d-5444-11e8-a7d7-8f17ff9a62b8" type="resource" guid="6f87305a-5444-11e8-a7d7-8f17ff9a62b8" />
+    <resource statement-guid="6f87576d-5444-11e8-a7d7-8f17ff9a62b8" type="resource" guid="6f87305a-5444-11e8-a7d7-8f17ff9a62b8">
+      <owns predicate="4ac67c8e-b87e-11e5-a463-ff45aa361315">
+        <resource statement-guid="e0cc6169-2a67-11ea-825d-f7ca5e5684e4" type="resource" guid="e0cb7706-2a67-11ea-825d-f7ca5e5684e4" />
+      </owns>
+    </resource>
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="8248fd81-2706-11ea-93b7-e5d50475dcf1" type="resource" guid="2cdf0732-e9ba-11e4-848b-0509e3792151" />
@@ -53,6 +57,18 @@
       <resource guid="6f87305a-5444-11e8-a7d7-8f17ff9a62b8">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="6f87576c-5444-11e8-a7d7-8f17ff9a62b8" type="resource" guid="d5d42a4f-41a9-11e8-81d0-774e4d9334dd" />
+        </predicate>
+        <predicate guid="4ac67c8e-b87e-11e5-a463-ff45aa361315">
+          <object statement-guid="e0cc6169-2a67-11ea-825d-f7ca5e5684e4">
+            <resource guid="e0cb7706-2a67-11ea-825d-f7ca5e5684e4">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e0cbc528-2a67-11ea-825d-f7ca5e5684e4" type="resource" guid="437b1d5a-b87e-11e5-a463-ff45aa361315" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e36b4f3a-2a67-11ea-825d-f7ca5e5684e4" type="literal">gregorian</object>
+              </predicate>
+            </resource>
+          </object>
         </predicate>
       </resource>
     </object>

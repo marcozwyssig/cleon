@@ -35,5 +35,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.projectmethods.hermes.sample.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.testingmethods.hermes.sample,
+ cleon.testingmethods.hermes.sample.spec,
+ cleon.testingmethods.hermes.sample.spec.javamodel,
  cleon.testingmethods.hermes.sample.javamodel
 

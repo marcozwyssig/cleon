@@ -26,6 +26,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.calendar.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.arc42.metamodel,
+ cleon.architecturemethods.arc42.metamodel.spec,
+ cleon.architecturemethods.arc42.metamodel.spec.javamodel,
  cleon.architecturemethods.arc42.metamodel.javamodel,
  cleon.architecturemethods.arc42.metamodel.spec._00_about,
  cleon.architecturemethods.arc42.metamodel.spec._00_about.javamodel,

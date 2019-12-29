@@ -29,6 +29,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.segmentation.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.systemarc42.metamodel,
+ cleon.architecturemethods.systemarc42.metamodel.spec,
+ cleon.architecturemethods.systemarc42.metamodel.spec.javamodel,
  cleon.architecturemethods.systemarc42.metamodel.javamodel,
  cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,
  cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel,

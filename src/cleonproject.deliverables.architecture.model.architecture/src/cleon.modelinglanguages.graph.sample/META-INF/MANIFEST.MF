@@ -15,5 +15,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.graph.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.modelinglanguages.graph.sample,
+ cleon.modelinglanguages.graph.sample.spec,
+ cleon.modelinglanguages.graph.sample.spec.javamodel,
  cleon.modelinglanguages.graph.sample.javamodel
 

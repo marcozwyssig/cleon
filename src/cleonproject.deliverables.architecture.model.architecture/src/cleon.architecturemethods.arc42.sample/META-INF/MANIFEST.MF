@@ -30,5 +30,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.glossary.sample.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.architecturemethods.arc42.sample,
+ cleon.architecturemethods.arc42.sample.spec,
+ cleon.architecturemethods.arc42.sample.spec.javamodel,
  cleon.architecturemethods.arc42.sample.javamodel
 

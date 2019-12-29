@@ -30,6 +30,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.segmentation.metamodel.builtin;bundle-version="0.4.147",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.testingmethods.hermes.metamodel,
+ cleon.testingmethods.hermes.metamodel.spec,
+ cleon.testingmethods.hermes.metamodel.spec.javamodel,
  cleon.testingmethods.hermes.metamodel.javamodel,
  cleon.testingmethods.hermes.metamodel.spec._01_concept,
  cleon.testingmethods.hermes.metamodel.spec._01_concept.javamodel,

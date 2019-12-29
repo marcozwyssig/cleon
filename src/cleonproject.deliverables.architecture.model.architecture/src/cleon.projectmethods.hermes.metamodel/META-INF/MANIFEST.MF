@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleon.projectmethods.hermes.metamodel
 Bundle-SymbolicName: cleon.projectmethods.hermes.metamodel.builtin;singleton:=true
-Bundle-Version: 0.4.147
+Bundle-Version: 0.4.148
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,11 +12,11 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.common.calendar.metamodel.builtin;bundle-version="0.4.147",
- cleon.common.glossary.metamodel.builtin;bundle-version="0.4.147",
- cleon.common.xml.metamodel.builtin;bundle-version="0.4.147",
- cleon.common.resources.metamodel.builtin;bundle-version="0.4.147",
- cleon.common.doc.metamodel.builtin;bundle-version="0.4.147",
+ cleon.common.calendar.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.glossary.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.xml.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.resources.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.doc.metamodel.builtin;bundle-version="0.4.148",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleon.projectmethods.hermes.metamodel,
  cleon.projectmethods.hermes.metamodel.spec,

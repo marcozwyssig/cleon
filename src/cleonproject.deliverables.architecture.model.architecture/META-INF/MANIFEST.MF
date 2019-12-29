@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
 Bundle-Name: cleonproject.deliverables.architecture.model.architecture
 Bundle-SymbolicName: cleonproject.deliverables.architecture.model.architecture.builtin;singleton:=true
-Bundle-Version: 0.3.10
+Bundle-Version: 0.3.11
 Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.environment;bundle-version="9.0.0",
  ch.actifsource.util;bundle-version="9.0.0",
@@ -12,12 +12,27 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard.generic;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
- cleon.applications.actifsource.model.plugins.builtin;bundle-version="0.4.136",
- ch.actifsource.generator;bundle-version="9.0.0",
- cleon.applications.actifsource.metamodel.builtin;bundle-version="0.4.147",
- cleon.common.modularity.metamodel.builtin;bundle-version="0.4.147",
- cleon.architecturemethods.arc42.metamodel.builtin;bundle-version="0.4.147",
- cleon.architecturemethods.systemarc42.metamodel.builtin;bundle-version="0.4.147"
+ cleon.applications.actifsource.model.plugins.builtin;bundle-version="0.4.148",
+ cleon.applications.actifsource.metamodel.builtin;bundle-version="0.4.148",
+ cleon.architecturemethods.systemarc42.metamodel.builtin;bundle-version="0.4.148",
+ cleon.architecturemethods.arc42.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.actifsource.metamodel.builtin;bundle-version="0.4.148",
+ cleon.architecturemethods.eamod.metamodel.builtin;bundle-version="0.4.148",
+ cleon.architecturestylesandpatterns.soa.metamodel.builtin;bundle-version="0.4.148",
+ cleon.architecturestylesandpatterns.eda.metamodel.builtin;bundle-version="0.4.148",
+ cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.glossary.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.xml.metamodel.builtin;bundle-version="0.4.148",
+ cleon.projectmethods.hermes.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.modularity.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.doc.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.resources.metamodel.builtin;bundle-version="0.4.148",
+ cleon.common.calendar.metamodel.builtin;bundle-version="0.4.148",
+ cleon.modelinglanguages.network.metamodel.builtin;bundle-version="0.4.148",
+ cleon.modelinglanguages.segmentation.metamodel.builtin;bundle-version="0.4.148",
+ ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: cleonproject.deliverables.architecture.model.architecture,
+ cleonproject.deliverables.architecture.model.architecture.spec,
+ cleonproject.deliverables.architecture.model.architecture.spec.javamodel,
  cleonproject.deliverables.architecture.model.architecture.javamodel
 

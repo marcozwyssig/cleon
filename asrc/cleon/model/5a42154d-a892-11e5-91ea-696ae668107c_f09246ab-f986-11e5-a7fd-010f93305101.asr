@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="f09246ab-f986-11e5-a7fd-010f93305101">
-  <owns predicate="8026bfb6-d40b-11e5-8556-8f55ceb91287">
-    <resource statement-guid="7f09f619-49e0-11e6-becb-7dbce5dc658c" type="resource" guid="7f0959d6-49e0-11e6-becb-7dbce5dc658c" />
-  </owns>
   <owns predicate="165c7061-d410-11e5-8556-8f55ceb91287">
     <resource statement-guid="70782a8f-342f-11e7-9486-85e29952984a" type="resource" guid="7077dc6c-342f-11e7-9486-85e29952984a" />
   </owns>
@@ -16,16 +13,7 @@
     <object statement-guid="8309fb44-49e0-11e6-becb-7dbce5dc658c" type="literal">The System</object>
   </predicate>
   <predicate guid="8026bfb6-d40b-11e5-8556-8f55ceb91287">
-    <object statement-guid="7f09f619-49e0-11e6-becb-7dbce5dc658c">
-      <resource guid="7f0959d6-49e0-11e6-becb-7dbce5dc658c">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="7f0980e8-49e0-11e6-becb-7dbce5dc658c" type="resource" guid="27c04266-3c6a-11e6-aafa-bd565efc0ead" />
-        </predicate>
-        <predicate guid="27c04267-3c6a-11e6-aafa-bd565efc0ead">
-          <object statement-guid="81ad50c5-49e0-11e6-becb-7dbce5dc658c" type="aggregate" guid="9fd5d66e-3c6a-11e6-aafa-bd565efc0ead" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="5c5714b6-2a81-11ea-8727-89a169c94892" type="aggregate" guid="9fd5d66e-3c6a-11e6-aafa-bd565efc0ead" />
   </predicate>
   <predicate guid="165c7061-d410-11e5-8556-8f55ceb91287">
     <object statement-guid="70782a8f-342f-11e7-9486-85e29952984a">
@@ -40,7 +28,7 @@
           <object statement-guid="7267777a-342f-11e7-9486-85e29952984a" type="literal">3</object>
         </predicate>
         <predicate guid="494a6ba2-d40f-11e5-8556-8f55ceb91287">
-          <object statement-guid="10081c30-ff9f-11e8-8424-7ddaf9b4bf27" type="literal">10</object>
+          <object statement-guid="10081c30-ff9f-11e8-8424-7ddaf9b4bf27" type="literal">11</object>
         </predicate>
       </resource>
     </object>

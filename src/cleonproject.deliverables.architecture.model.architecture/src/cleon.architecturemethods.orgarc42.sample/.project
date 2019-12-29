@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>cleon.architecturemethods.orgarc42.sample</name>
+	<comment/>
+	<projects>
+		<project>cleon.architecturemethods.orgarc42.metamodel</project>
+		<project>cleon.modelinglanguages.bpmn.metamodel</project>
+		<project>cleon.common.doc.metamodel</project>
+		<project>cleon.common.resources.metamodel</project>
+		<project>cleon.common.xml.metamodel</project>	
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>ch.actifsource.environment.builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>ch.actifsource.environment.nature</nature>
+	</natures>
+	<linkedResources>
+	</linkedResources>
+	<!-- Begin Protected Region [[custom]] -->
+	
+	<!-- End Protected Region   [[custom]] -->
+</projectDescription>
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,4bde800d-cb38-11e8-9fc7-cb7241efa62e,nAYCC/4/RROyXOO4jrtFZDo2Djs=] -->

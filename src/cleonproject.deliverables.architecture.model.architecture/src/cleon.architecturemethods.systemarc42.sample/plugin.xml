@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="ch.actifsource.core.RegisterModel">
+      <ResourceFolder
+            path="asrc">
+      </ResourceFolder>
+   </extension>
+   <extension
+         point="ch.actifsource.environment.RegisterBuiltin">
+      <Builtin
+            defaultBuiltin="false"
+            isExtendable="true"
+            name="cleon.architecturemethods.systemarc42.sample">
+         <Plugin
+               pluginId="cleon.architecturemethods.systemarc42.sample.builtin">
+         </Plugin>
+      </Builtin>
+   </extension>
+</plugin>
+<!-- Actifsource ID=[e7b07ed1-2d5d-11e5-a80e-a94c0ceb2081,b697353a-cb38-11e8-9fc7-cb7241efa62e,9ddaef79-6d6b-11e9-81d1-0b2a6faf9536,3+uy+2nO8ftjgOLyRcnsYQLw9Rs=] -->

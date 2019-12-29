@@ -1,0 +1,7036 @@
+= RAS-CON-A0015_LO03_IKT Systemarchitektur
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+== Einführung und Ziele
+
+In diesem Kapitel werden die wesentlichen Anforderungen und treibenden Kräfte, die das Architektenteam berücksichtigt, beschrieben.
+
+
+=== Qualitätsziele
+
+Nachfolgend werden die Qualitätsziele für die vorliegende Systemarchitektur IKT aufgeführt, welche für die Erfüllung oder Einhaltung der massgeblichen Stakeholder besonders wichtig sind. 
+Die Qualitätsziele stehen in einer Reihenfolge, womit demzufolge eine Priorität vorgegeben wird. Diese Priorität ist bei der Entscheidungsfindung relevant, wobei beachtet werden muss, dass diese nicht als absolut zu betrachten ist, sondern immer verhältnismässig im entsprechenden Kontext anzuwenden ist.
+
+
+
+
+=== Aufgabenstellung
+
+
+Das System IKT besteht aus einer Menge von Komponenten (z.B. Hypervisor, Betriebssysteme, Web Server, Repository, usw.). Diese Komponenten stellen die IKT-Dienste zur Verfügung, welche von anderen Systemen (z.B. Tactilon, MGW, usw.) verwendet werden können.
+
+In der nachfolgenden Abbildung werden die IKT-Dienste aufgezeigt, welche von anderen Systemen (z.B. PIC, MGW, usw.) verwendet werden können.
+
+Die IKT-Dienste auf dem IKT System werden an den Nationalen Management Standorten (NMStao) sowie an den "Teilnetz Standorten" bereitgestellt. Die Einbettung des IKT Systems in den Standorten wird in unterschiedlichen Versionen etappiert. Die Version 1.0 des IKT Systems stellt die Einbettung am NMStao sicher. Mit der Version 2.0 wird die Einbettung des nationalen IKT Systems bei den TN-Betreibern sichergestellt sowie auch die Erweiterung des IKT Systems am NMStao für den Betrieb der nationalen IKT-Plattform bei den TN-Betreibern.
+
+Die nachfolgende Abbildung zeigt die Einbettung des IKT-Systems in den jeweiligen Standorten sowie auch die unterschiedlichen Versionen.
+
+Das IKT-System 1.0 für die Nationalen Management Services (NMS) wird über die beiden Nationalen Management Standorte A und B betrieben, um die Anforderungen an die Verfügbarkeit zu erfüllen. Zudem wird das IKT-System 1.0 in den Nationalschränken eingebaut und betrieben.
+
+Bei den TN-Betreibern wird das IKT-System 2.0 für die nationalen Bundeskomponenten in zwei Bundesschränken und im RN-IP-DMZ Federal (ICD160) betrieben. Mit dem IKT-System 2.0 wird die Fähigkeit des zentralen nationalen Managements auf die Bundeskomponenten bei den TN-Betreibern etabliert.
+
+Das IKT-System 2.0 basiert auf den Komponenten des IKT-Systems 1.0.
+
+In der nachfolgenden Tabelle werden die relevanten technischen Betrachtungsräume des Anforderungsdokuments [3] aufgeführt:
+
+
+
+
+
+== Randbedingungen
+
+Beim Entwerfen der vorliegenden Systemarchitektur müssen Randbedingungen im Sinne von Leitplanken berücksichtigt werden. Diese Randbedingungen umfassen die organisatorischen und technischen Randbedingungen, welche den Entwurfsprozess massgebend beeinflussen und bestimmen können.
+
+
+=== Technische Randbedingungen
+
+
+
+
+
+
+=== Organisatorische Randbedingungen
+
+
+
+
+
+
+
+== Kontextabgrenzung
+
+Mit diesem Kapitel wird das System von allen Kommunikationspartnern (Nachbarsystemen und Benutzerrollen) abgegrenzt und legt die externen Schnittstellen fest.
+
+In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.
+=== Fachlicher Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+actor IKT__F_Zentrale as "IKT Zentrale"
+actor IKT__F_TN__S_Betreiber as "IKT TN-Betreiber"
+actor System__S_Integrator as "System-Integrator"
+actor Service__F_Desk as "Service Desk"
+actor Sicherheitsverantwortlicher as "Sicherheitsverantwortlicher"
+actor Betriebsmanagement as "Betriebsmanagement"
+component IKT as "IKT" <<System>>
+IKT__F_Zentrale -down-> IKT : operates
+IKT__F_Zentrale -down-> IKT : monitors
+IKT__F_Zentrale -down-> IKT : makeChanges
+IKT__F_Zentrale -down-> IKT : adding
+IKT__F_TN__S_Betreiber -down-> IKT : operates
+IKT__F_TN__S_Betreiber -down-> IKT : monitors
+System__S_Integrator -down-> IKT : develops
+System__S_Integrator -down-> IKT : adding
+Service__F_Desk -down-> IKT : monitors
+Sicherheitsverantwortlicher -down-> IKT : secures
+Sicherheitsverantwortlicher -down-> IKT : verifies
+...
+
+Die Betreiber Support-Organisation IKT-Betreiber integrieren sich gemäss dem IKT Betriebskonzept [6] in den Service Provider IP2.0 Netz Service.
+
+In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|IKT Zentrale
+|
+Der zentrale IKT-Betreiber (2nd und 3rd Level Support) ist für den Betrieb des NMS und der Bundeskomponenten in den TNs verantwortlich. 
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+Der zentrale IKT-Betreiber (2nd und 3rd Level Support) ist für den Betrieb des NMS und der Bundeskomponenten in den TNs verantwortlich. 
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+|====
+|IKT TN-Betreiber
+|
+Der IKT TN-Betreiber ist für den Betrieb der kantonalen Komponenten zuständig. Der IKT Netzbetreiber hat prinzipiell Lesezugriff auf die Bundeskomponenten, damit bei Störungen eine wirtschaftliche Fehlerdiagnose sichergestellt wird.
+|====
+|System-Integrator
+|
+Der System-Integrator ist für die Erweiterung, Integration und Entwicklung von Konfigurationen und Komponenten verantwortlich.
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+Der System-Integrator ist für die Erweiterung, Integration und Entwicklung von Konfigurationen und Komponenten verantwortlich.
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+|====
+|Service Desk
+|
+Aufbau und Betrieb einer Support-Organisation auf dem Support-Level 1 (1st Level Support), welche einen 24/7/365 Bereitschaftsdienst bietet. Der Support wird durch einen Service Desk abgedeckt (mit Namen "Service Desk IP2.0").
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+Aufbau und Betrieb einer Support-Organisation auf dem Support-Level 1 (1st Level Support), welche einen 24/7/365 Bereitschaftsdienst bietet. Der Support wird durch einen Service Desk abgedeckt (mit Namen "Service Desk IP2.0").
+Zum aktuellen Zeitpunkt ist die Firma Atos AG für diese Rolle verantwortlich.
+|====
+|Sicherheitsverantwortlicher
+|
+Zuständig und verantwortlich für die Sicherheit. Alle sicherheitsrelevanten Themen, z.B. Autorisierung für Zugriffe usw., müssen durch den Sicherheitsverantwortlichen beurteilt und genehmigt werden.
+Er kann Einsicht in die Protokolle zur Nachvollziehbarkeit (Nichtabstreitbarkeit, Auditing) verlangen und bei kritischen Komponenten agiert er im Vier-Augen Prinzip (Segregation of Duty).
+Das BABS ist für diese Rolle verantwortlich.
+Zuständig und verantwortlich für die Sicherheit. Alle sicherheitsrelevanten Themen, z.B. Autorisierung für Zugriffe usw., müssen durch den Sicherheitsverantwortlichen beurteilt und genehmigt werden.
+Er kann Einsicht in die Protokolle zur Nachvollziehbarkeit (Nichtabstreitbarkeit, Auditing) verlangen und bei kritischen Komponenten agiert er im Vier-Augen Prinzip (Segregation of Duty).
+Das BABS ist für diese Rolle verantwortlich.
+Zuständig und verantwortlich für die Sicherheit. Alle sicherheitsrelevanten Themen, z.B. Autorisierung für Zugriffe usw., müssen durch den Sicherheitsverantwortlichen beurteilt und genehmigt werden.
+Er kann Einsicht in die Protokolle zur Nachvollziehbarkeit (Nichtabstreitbarkeit, Auditing) verlangen und bei kritischen Komponenten agiert er im Vier-Augen Prinzip (Segregation of Duty).
+Das BABS ist für diese Rolle verantwortlich.
+|====
+|Betriebsmanagement
+|
+Der Bund ist der Projektsponsor und die Schnittstelle zu den kantonalen und zu anderen nationalen Organisationen.
+Das BABS ist für diese Rolle verantwortlich.
+Der Bund ist der Projektsponsor und die Schnittstelle zu den kantonalen und zu anderen nationalen Organisationen.
+Das BABS ist für diese Rolle verantwortlich.
+|====
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+=== Technischer Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+component Tactilon as "Tactilon" <<ExternalSystem>>
+component IP2__T_0 as "IP2.0" <<ExternalSystem>>
+component PIC as "PIC" <<ExternalSystem>>
+component MGW as "MGW" <<ExternalSystem>>
+component Bundesschrank__F___N_BS__O_ as "Bundesschrank (BS)" <<ExternalSystem>>
+component Nationalschrank__F___N_NS__O_ as "Nationalschrank (NS)" <<ExternalSystem>>
+component IKT as "IKT" <<System>>
+Tactilon --> IKT : "csr"
+IP2__T_0 --> IKT : "csr"
+IP2__T_0 --> IKT : "auth"
+IP2__T_0 --> IKT : "radius"
+PIC --> IKT : "cm"
+PIC --> IKT : "repo"
+PIC --> IKT : "certificate"
+PIC --> IKT : "auth"
+PIC --> IKT : "backup"
+MGW --> IKT : "cm"
+MGW --> IKT : "repo"
+MGW --> IKT : "csr"
+MGW --> IKT : "backup"
+IKT --> Bundesschrank__F___N_BS__O_ : "space"
+IKT --> Nationalschrank__F___N_NS__O_ : "space"
+IKT --> IP2__T_0 : "networking"
+...
+
+In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|Tactilon
+|
+Zentrales taktisches Management der Funkteilnehmer
+|====
+|IP2.0
+|
+Netzwerkübertragung mit dezentraler Sicherheit
+|====
+|PIC
+|
+Polycom Interface Components
+|====
+|MGW
+|
+Media Gateway
+|====
+|Bundesschrank (BS)
+|
+Der Bundesschrank ist  ist ein Netzwerk- / Serverschrank, welcher für die Unterbringung der "nationalen Komponenten mit dezentraler Ausprägung" in den Teilnetzen verantwortlich ist.
+Insgesamt sind für das Polycom IP 54 Bundesschränke vorgesehen, welche jeweils ein Bundeschrank in den Teilnetz-Standorten aufgebaut wird.
+Der Bundesschrank ist  ist ein Netzwerk- / Serverschrank, welcher für die Unterbringung der "nationalen Komponenten mit dezentraler Ausprägung" in den Teilnetzen verantwortlich ist.
+Insgesamt sind für das Polycom IP 54 Bundesschränke vorgesehen, welche jeweils ein Bundeschrank in den Teilnetz-Standorten aufgebaut wird.
+|====
+|Nationalschrank (NS)
+|
+Der Nationalschrank ist  ist ein Netzwerk- / Serverschrank, welcher für die Unterbringung der "nationalen Komponenten mit zentraler Ausprägung" am Nationalen Management Standort verantwortlich ist.
+|====
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+
+== Bausteinsicht
+
+
+Mit Hilfe der Bausteinsicht wird die statische Zerlegung des Systems IKT in Bausteine zerlegt, welche sich nach der Blackbox- und Whitebox  Betrachtungsweise orientiert. Bei der Zerlegung des Systems wurden unterschiedliche Typen in der Hierarchie (Ebene) festgelegt:
+
+[cols="20a,80a" options="header"]
+|===========================
+|Ebene|Typ
+|1
+|System
+|2
+|SystemLayer / System-Schicht
+|3
+|SystemComponent / System-Komponente
+|4
+|SystemConfiguration / System-Konfiguration
+
+|===========================
+
+Dieser Zerlegungspfad bildet einen fundamentalen Ordnungsrahmen, welcher weitgehend in den nachfolgenden Kapiteln und in der IKT Detailspezifikation [4] wiederverwendet wird.
+
+Die Menge der "System Komponenten" und "System Konfigurationen" ist abhängig von den konkreten Anforderungen an das IKT System und kann über die Zeit variieren.
+
+Die nachfolgende Abbildung zeigt die Zerlegung der Bausteine bis und mit der Ebene 3:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+left to right direction
+
+!include <tupadr3/common>
+!include <office/Servers/database_server>
+!include <office/Servers/application_server>
+!include <office/Security/domain>
+!include <office/Servers/domain_controller>
+!include <office/Servers/physical_host_solid_blue>
+
+show stereotype
+
+rectangle IKT as "IKT (Ebene 1)" <<System>> {
+	rectangle Infrastruktur as "Infrastruktur (Ebene 2)" <<SystemLayer>> {
+		rectangle Operating_System as "Operating System (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Storage as "Storage (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Physical_Compute as "Physical Compute (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Virtual_Compute as "Virtual Compute (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Network as "Network (Ebene 3)" <<SystemComponent>> {
+		}
+	}		
+	rectangle Plattform as "Plattform (Ebene 2)" <<SystemLayer>> {
+		rectangle Application as "Application (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Datenablage as "Datenablage (Ebene 3)" <<SystemComponent>> {
+		}
+	}		
+	rectangle Management as "Management (Ebene 2)" <<SystemLayer>> {
+		rectangle Hypervisor_Management as "Hypervisor Management (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Backup_Management as "Backup Management (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Jump_Host as "Jump Host (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Deployment as "Deployment (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Monitoring as "Monitoring (Ebene 3)" <<SystemComponent>> {
+		}
+	}		
+	rectangle Security as "Security (Ebene 2)" <<SystemLayer>> {
+		rectangle Directory_Services as "Directory Services (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Identity_Access_Management as "Identity Access Management (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle PKI as "PKI (Ebene 3)" <<SystemComponent>> {
+		}
+		rectangle Endpoint_Protection as "Endpoint Protection (Ebene 3)" <<SystemComponent>> {
+		}
+	}		
+
+	Plattform --> Infrastruktur : "verwendet"
+	Management --> Plattform : "verwendet"
+	Security --> Plattform : "verwendet"
+
+
+}
+...
+
+Die Beschreibung der einzelnen Bausteine folgt in den nachfolgenden Kapiteln.
+
+
+=== Ebene 1: IKT <System> (Whitebox)
+
+Der Baustein IKT beinhaltet die Whitebox-Beschreibung des Gesamtsystems mit den Blackbox- Beschreibungen der Ebene "SystemLayer".
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show stereotype
+
+rectangle IKT as "IKT" <<System>> {
+	rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
+	}		
+	rectangle Plattform as "Plattform" <<SystemLayer>> {
+	}		
+	rectangle Management as "Management" <<SystemLayer>> {
+	}		
+	rectangle Security as "Security" <<SystemLayer>> {
+	}		
+
+}
+...
+
+
+==== Infrastruktur <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show stereotype
+
+rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
+}
+
+rectangle Plattform as "Plattform" <<SystemLayer>> {
+}
+Plattform -up-> Infrastruktur : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Plattform <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+show stereotype
+
+rectangle Plattform as "Plattform" <<SystemLayer>> {
+}
+
+rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
+}
+rectangle Management as "Management" <<SystemLayer>> {
+}
+rectangle Security as "Security" <<SystemLayer>> {
+}
+Plattform -down-> Infrastruktur : verwendet 
+Management -up-> Plattform : verwendet
+Security -up-> Plattform : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Management <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show stereotype
+
+rectangle Management as "Management" <<SystemLayer>> {
+}
+
+rectangle Plattform as "Plattform" <<SystemLayer>> {
+}
+Management -down-> Plattform : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Security <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+ 
+=== Ebene 2: Infrastruktur <SystemLayer> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show stereotype
+
+rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
+	rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+	}		
+	rectangle Storage as "Storage" <<SystemComponent>> {
+	}		
+	rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+	}		
+	rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+	}		
+	rectangle Network as "Network" <<SystemComponent>> {
+	}		
+
+}
+...
+
+
+==== Operating System <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+rectangle Application as "Application" <<SystemComponent>> {
+}
+rectangle PKI as "PKI" <<SystemComponent>> {
+}
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+}
+rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
+}
+rectangle Backup__F_Management as "Backup Management" <<SystemComponent>> {
+}
+rectangle Deployment as "Deployment" <<SystemComponent>> {
+}
+rectangle Endpoint__F_Protection as "Endpoint Protection" <<SystemComponent>> {
+}
+rectangle Datenablage as "Datenablage" <<SystemComponent>> {
+}
+rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+}
+rectangle Network as "Network" <<SystemComponent>> {
+}
+Operating__F_System -down-> Virtual__F_Compute : verwendet 
+Application -up-> Operating__F_System : verwendet
+PKI -up-> Operating__F_System : verwendet
+Directory__F_Services -up-> Operating__F_System : verwendet
+Jump__F_Host -up-> Operating__F_System : verwendet
+Backup__F_Management -up-> Operating__F_System : verwendet
+Deployment -up-> Operating__F_System : verwendet
+Endpoint__F_Protection -up-> Operating__F_System : verwendet
+Datenablage -up-> Operating__F_System : verwendet
+Monitoring -up-> Operating__F_System : verwendet
+Network -up-> Operating__F_System : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Storage <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Storage as "Storage" <<SystemComponent>> {
+}
+
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Physical Compute <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+}
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+Virtual__F_Compute -up-> Physical__F_Compute : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Virtual Compute <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+
+rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+}
+rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
+}
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Virtual__F_Compute -down-> Physical__F_Compute : verwendet 
+Hypervisor__F_Management -up-> Virtual__F_Compute : verwendet
+Operating__F_System -up-> Virtual__F_Compute : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Network <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+show stereotype
+
+rectangle Network as "Network" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Network -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 2: Plattform <SystemLayer> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+show stereotype
+
+rectangle Plattform as "Plattform" <<SystemLayer>> {
+	rectangle Application as "Application" <<SystemComponent>> {
+	}		
+	rectangle Datenablage as "Datenablage" <<SystemComponent>> {
+	}		
+
+}
+...
+
+
+==== Application <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Application as "Application" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Application -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Datenablage <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Datenablage as "Datenablage" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Datenablage -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 2: Management <SystemLayer> (Whitebox)
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+show stereotype
+
+rectangle Management as "Management" <<SystemLayer>> {
+	rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
+	}		
+	rectangle Backup__F_Management as "Backup Management" <<SystemComponent>> {
+	}		
+	rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
+	}		
+	rectangle Deployment as "Deployment" <<SystemComponent>> {
+	}		
+	rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+	}		
+
+}
+...
+
+
+==== Hypervisor Management <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
+}
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+}
+Hypervisor__F_Management -down-> Virtual__F_Compute : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Backup Management <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Backup__F_Management as "Backup Management" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Backup__F_Management -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Jump Host <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Jump__F_Host -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Deployment <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+show stereotype
+
+rectangle Deployment as "Deployment" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Deployment -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Monitoring <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Monitoring -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 2: Security <SystemLayer> (Whitebox)
+
+
+
+
+==== Directory Services <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+rectangle Identity__F_Access__F_Management as "Identity Access Management" <<SystemComponent>> {
+}
+Directory__F_Services -down-> Operating__F_System : verwendet 
+Identity__F_Access__F_Management -up-> Directory__F_Services : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Identity Access Management <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Identity__F_Access__F_Management as "Identity Access Management" <<SystemComponent>> {
+}
+
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+}
+Identity__F_Access__F_Management -down-> Directory__F_Services : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== PKI <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle PKI as "PKI" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+PKI -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Endpoint Protection <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Endpoint__F_Protection as "Endpoint Protection" <<SystemComponent>> {
+}
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+}
+Endpoint__F_Protection -down-> Operating__F_System : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Operating System <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Operating__F_System as "Operating System" <<SystemComponent>> {
+	rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+	}		
+	rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
+	}		
+
+}
+...
+
+
+==== Windows (WIN) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
+}
+rectangle Application__F_Server__F___N_APP__O_ as "Application Server (APP)" <<$web_server>> {
+}
+rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
+}
+rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
+}
+rectangle Jump__F_Host__F___N_JMP__O_ as "Jump Host (JMP)" <<$central_management_service>> {
+}
+rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
+}
+rectangle Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ as "Endpoint Protection Orchestrator (EPO)" <<$lock_with_key_security>> {
+}
+rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
+}
+rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
+}
+rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
+}
+rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
+}
+rectangle Veeam__F_Backup__F_Management__F___N_VBM__O_ as "Veeam Backup Management (VBM)" <<$backup_local>> {
+}
+rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
+}
+rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
+}
+rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
+}
+rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
+}
+Windows__F___N_WIN__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+Windows__F___N_WIN__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+Network__F_Policy__F_Service__F___N_NPS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Application__F_Server__F___N_APP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Issuing__F_CA__F___N_MCS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Root__F_CA__F___N_MCR__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Jump__F_Host__F___N_JMP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Active__F_Directory__F_Management__F___N_ADM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Proxy__F___N_PRX__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Distributed__F_File__F_System__F___N_DFS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F___N_PRT__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F_Probe__F___N_PRP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Management__F___N_VBM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Slave__F_Active__F_Directory__F___N_RDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Linux (LIN) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Storage <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Storage as "Storage" <<SystemComponent>> {
+	rectangle Block__F_Storage__F_Service__F___N_BSS__O_ as "Block Storage Service (BSS)" <<$database>> {
+	}		
+
+}
+...
+
+
+==== Block Storage Service (BSS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Block__F_Storage__F_Service__F___N_BSS__O_ as "Block Storage Service (BSS)" <<$database>> {
+}
+
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Physical Compute <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Physical__F_Compute as "Physical Compute" <<SystemComponent>> {
+	rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+	}		
+	rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
+	}		
+
+}
+...
+
+
+==== Kontron Server (KON) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+ESXi__F___N_VMH__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== HPE Server (HPE) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+ESXi__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Virtual Compute <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+	rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+	}		
+	rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+	}		
+
+}
+...
+
+
+==== Virtual Machine (VM) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
+}
+rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
+}
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
+}
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Virtual__F_Machine__F___N_VM__O_ -down-> ESXi__F___N_VMH__O_ : verwendet 
+vCenter__F___N_VCE__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+__X_FA__F___N_RSA__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Linux__F___N_LIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== ESXi (VMH) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
+rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
+}
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+ESXi__F___N_VMH__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+ESXi__F___N_VMH__O_ -down-> HPE__F_Server__F___N_HPE__O_ : verwendet 
+Virtual__F_Machine__F___N_VM__O_ -up-> ESXi__F___N_VMH__O_ : verwendet
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Network <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+show stereotype
+
+rectangle Network as "Network" <<SystemComponent>> {
+	rectangle Pulse__F_Secure__F_Appliance__F___N_PSA__O_ as "Pulse Secure Appliance (PSA)" <<$lock_with_key_security_blue>> {
+	}		
+	rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
+	}		
+	rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
+	}		
+
+}
+...
+
+
+==== Pulse Secure Appliance (PSA) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Pulse__F_Secure__F_Appliance__F___N_PSA__O_ as "Pulse Secure Appliance (PSA)" <<$lock_with_key_security_blue>> {
+}
+
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Network Policy Service (NPS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Network__F_Policy__F_Service__F___N_NPS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Proxy (PRX) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Proxy__F___N_PRX__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Application <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Application as "Application" <<SystemComponent>> {
+	rectangle Application__F_Server__F___N_APP__O_ as "Application Server (APP)" <<$web_server>> {
+	}		
+
+}
+...
+
+
+==== Application Server (APP) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Application__F_Server__F___N_APP__O_ as "Application Server (APP)" <<$web_server>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Application__F_Server__F___N_APP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Datenablage <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Datenablage as "Datenablage" <<SystemComponent>> {
+	rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
+	}		
+
+}
+...
+
+
+==== Distributed File System (DFS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Distributed__F_File__F_System__F___N_DFS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Hypervisor Management <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Hypervisor__F_Management as "Hypervisor Management" <<SystemComponent>> {
+	rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
+	}		
+
+}
+...
+
+
+==== vCenter (VCE) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
+}
+
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+vCenter__F___N_VCE__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Backup Management <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Backup__F_Management as "Backup Management" <<SystemComponent>> {
+	rectangle Veeam__F_Backup__F_Management__F___N_VBM__O_ as "Veeam Backup Management (VBM)" <<$backup_local>> {
+	}		
+	rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
+	}		
+
+}
+...
+
+
+==== Veeam Backup Management (VBM) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Veeam__F_Backup__F_Management__F___N_VBM__O_ as "Veeam Backup Management (VBM)" <<$backup_local>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Veeam__F_Backup__F_Management__F___N_VBM__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Veeam Backup Proxy (VBP) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Jump Host <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Jump__F_Host as "Jump Host" <<SystemComponent>> {
+	rectangle Jump__F_Host__F___N_JMP__O_ as "Jump Host (JMP)" <<$central_management_service>> {
+	}		
+
+}
+...
+
+
+==== Jump Host (JMP) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Jump__F_Host__F___N_JMP__O_ as "Jump Host (JMP)" <<$central_management_service>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Jump__F_Host__F___N_JMP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Deployment <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+show stereotype
+
+rectangle Deployment as "Deployment" <<SystemComponent>> {
+	rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Management (CMG)" <<$central_management_service>> {
+	}		
+	rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
+	}		
+	rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
+	}		
+
+}
+...
+
+
+==== Configuration Management (CMG) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Configuration__F_Management__F___N_CMG__O_ as "Configuration Management (CMG)" <<$central_management_service>> {
+}
+
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
+}
+Configuration__F_Management__F___N_CMG__O_ -down-> Linux__F___N_LIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Redhat Satellite (RHS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Redhat__F_Satellite__F___N_RHS__O_ as "Redhat Satellite (RHS)" <<$install>> {
+}
+
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
+}
+Redhat__F_Satellite__F___N_RHS__O_ -down-> Linux__F___N_LIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Windows Server Update Services (WUS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Monitoring <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Monitoring as "Monitoring" <<SystemComponent>> {
+	rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
+	}		
+	rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
+	}		
+
+}
+...
+
+
+==== PRTG (PRT) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+PRTG__F___N_PRT__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== PRTG Probe (PRP) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+PRTG__F_Probe__F___N_PRP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Directory Services <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Directory__F_Services as "Directory Services" <<SystemComponent>> {
+	rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
+	}		
+	rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
+	}		
+
+}
+...
+
+
+==== Master Active Directory (MDC) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Master__F_Active__F_Directory__F___N_MDC__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Slave Active Directory (RDC) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Slave__F_Active__F_Directory__F___N_RDC__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Identity Access Management <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Identity__F_Access__F_Management as "Identity Access Management" <<SystemComponent>> {
+	rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
+	}		
+	rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
+	}		
+
+}
+...
+
+
+==== Active Directory Management (ADM) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Active__F_Directory__F_Management__F___N_ADM__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== 2FA (RSA) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
+}
+
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+__X_FA__F___N_RSA__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: PKI <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle PKI as "PKI" <<SystemComponent>> {
+	rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
+	}		
+	rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
+	}		
+
+}
+...
+
+Die PKI System-Komponente hat die folgenden Leistungsmerkmale:
+
+
+* Ausstellen von Zertifikaten für  Geräte, Benutzer, Zertifizierungsstellen
+* Revozierung der erstellen Zertifikate
+* Erstellung der CRL
+* Publikation der CRL
+* Publikation der öffentlichen Schlüssel innerhalb des Systems
+
+
+
+==== Issuing CA (MCS) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Issuing__F_CA__F___N_MCS__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Root CA (MCR) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Root__F_CA__F___N_MCR__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Geräte
+
+Geräte beantragen Zertifikate indem sie entweder eine Signier-Anfrage an die Zertifizierungsstelle senden (Autoenrollment), oder dass der Administrator die Signier-Anfrage manuell er-stellt und das so erhaltenen Zertifikat manuell in die Endgeräte einspielt (CSR).
+
+
+
+
+==== Benutzer
+
+Benutzer werden die folgenden Zertifikate per Autoenrollment erhalten.
+Das Zertifikat und der private Schlüssel befinden sich persönlichen Zertifikats und Schlüssel Speicher des Benutzers im Active Directory Account.
+
+
+
+
+==== Schutzbedarf
+
+
+Es wird auf erweiterte hardwarebasierten Schutzmechanismen verzichtet:
+
+
+* SmartCard
+* Hardware Security Module (HSM)
+
+
+Die Plattform ist nicht aus öffentlichen Bereichen zugängig und daher als abgeschottet zu betrachten.
+
+
+
+
+
+=== Ebene 3: Endpoint Protection <SystemComponent> (Whitebox)
+
+
+Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+show stereotype
+
+rectangle Endpoint__F_Protection as "Endpoint Protection" <<SystemComponent>> {
+	rectangle Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ as "Endpoint Protection Orchestrator (EPO)" <<$lock_with_key_security>> {
+	}		
+
+}
+...
+
+
+==== Endpoint Protection Orchestrator (EPO) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+Nachfolgend werden die Abhängigkeiten des Bausteins in einer Abbildung dargestellt:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ as "Endpoint Protection Orchestrator (EPO)" <<$lock_with_key_security>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+...
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 4: Windows (WIN) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Block Storage Service (BSS) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Kontron Server (KON) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: HPE Server (HPE) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Virtual Machine (VM) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: ESXi (VMH) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Pulse Secure Appliance (PSA) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Network Policy Service (NPS) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Proxy (PRX) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Application Server (APP) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Distributed File System (DFS) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: vCenter (VCE) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Veeam Backup Management (VBM) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Veeam Backup Proxy (VBP) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Jump Host (JMP) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Configuration Management (CMG) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Redhat Satellite (RHS) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Windows Server Update Services (WUS) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: PRTG (PRT) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: PRTG Probe (PRP) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Master Active Directory (MDC) <SystemConfiguration> (Whitebox)
+
+
+Das Entwerfen einer logischen AD DS Struktur beinhaltet die Definition und die Beziehungen zwischen den „Forests“, „Domain Tree“, „Domain“ und „Organizational Units“. Bei der Bereitstellung des Forests werden folgende Aspekte im Verhältnis zu den Qualitätszielen berücksichtigt:
+
+
+* Einfache gemeinsame Nutzung von Ressourcen
+* Einfache Verwaltung der Windows-Objekte, wie Benutzer, Rechner und Gruppen
+* Angemessene Möglichkeit, um die administrative Kontrolle über die Ressourcen zu delegieren
+
+
+Beide Domain Controller agieren am NMS als Global Catalog.
+
+Die beiden Domain Controller werden im NMS Segment in der Zone "subzone-nms-services-services" betrieben.
+
+
+
+
+=== Ebene 4: Slave Active Directory (RDC) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Active Directory Management (ADM) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: 2FA (RSA) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Issuing CA (MCS) <SystemConfiguration> (Whitebox)
+
+
+Die Zertifizierungsstelle hat folgenden Aufgaben:
+
+
+* Erstellung von Zertifikaten für Benutzer und Geräte
+* Signierung von Zertifikaten für Benutzer und Geräte
+* Widerrufen von Zertifikaten für Benutzer und Geräte
+* Erstellung der CRL
+
+
+Die Publikation der CRL wird mit Hilfe des Application Server bewerkstelligt.
+
+Der Verzeichnisdienst registriert folgende Daten:
+
+
+* Zertifikate
+* CRL
+* AIA
+
+
+
+
+
+=== Ebene 4: Root CA (MCR) <SystemConfiguration> (Whitebox)
+
+
+Die Zertifizierungsstelle hat die folgenden Aufgaben:
+
+
+* Erstellung des Stamm Zertifikates (Root Certificate)
+* Signierung von Zertifizierungsstellen
+* Widerrufen von Zertifizierungsstellen (Revocation)
+* Erstellung der CRL’s für Zertifizierungsstellen
+
+
+Die Basis für dies Arbeiten ist das Stamm-Schlüsselpaar (Root Key), mit welchem sowohl das Stamm-Zertifikat (Root Certificate) als auch die CRL signiert werden.
+
+Des Stamm-Zertifikat wird an den folgenden Stellen innerhalb des Verbundes publiziert:
+
+
+* Active Directory Services
+* Ablage auf dem Application Server
+
+
+Die Stamm-Zertifizierungsstelle wird als “Offline Root CA” in einer virtuellen Maschine auf der Basis eines Microsoft Windows Server in der Server Rolle “Active Directory Certificate Services” (ADCS) realisiert.
+
+Während Zeiten, in denen Stamm Zertifizierungsstelle keine Funktion ausführt, ist sie vor physischen und logischen Zugriff stark zu schützen durch einen Tresor.
+
+
+
+
+=== Ebene 4: Endpoint Protection Orchestrator (EPO) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+
+== Verteilsicht
+
+In diesem Kapitel wird die Verteilung der Bausteine in die entsprechenden Standorte, Umgebungen, Zonen, usw. beschrieben.
+
+
+=== Bauen
+
+Das Bauen (eng. Build) von Komponenten hat für das IKT keine Relevanz, da keine Quelltext- oder Programmlistings kompiliert werden müssen.
+Demzufolge ist keine explizite Infrastruktur notwendig.
+
+
+
+
+=== Verteilung
+
+
+Mit der Verteilung werden alle unterschiedlichen Knonten des Systems IKT festgelegt. Die Knoten unterscheiden sich folgendermassen:
+
+[cols="2a,2a" options="header"]
+|===========================
+|Konten-Typ|Beschreibung
+|SupplyNode
+|Unter SupplyNode werden die Knoten verstanden, welche nicht in den Verantwortungsberech des Systems IKT gehören, aber als Voraussetzung für den erfolgreichen Betrieb des System IKt notwendig sind (z.B. Standorte, Racks, usw.)
+|Build-Node
+|Die Knoten des Typs Build-Node baiseren auf den Bausteinen / Komponenten des Systems IKTs und erfüllen die festgelegten Anforderungen und entsprechenden Konzepte.
+
+|===========================
+
+
+==== Vorproduktion-Umgebung
+
+
+
+
+
+
+==== Produktions-Umgebung
+
+Die Produktions-Umgebung bildet die Produktion des System IKT resp. des Systems POLYCOM IP ab. 
+Die nachfolgende Abbildung zeigt die Standorte und Teilnetze auf oberster Ebene:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/databases/database>
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+
+show stereotype
+
+rectangle Produktions__S_Umgebung as "Produktions-Umgebung" <<Environment>> {
+	rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
+	}		
+	rectangle EAZS as "EAZS" <<Standort>> {
+	}		
+	rectangle TN__F_FUB__F___N_50X__O_ as "TN FUB (50X)" <<Teilnetz>> {
+	}		
+}
+
+...
+
+Das Verteilung des Systems wird in Teilnetze und Standorte zerlegt, welche die unterschiedlichen Knoten des System dementsprechend beinhalten.
+
+Die Beschreibung der Verteilung beschränkt sich auf den NMS, EAZS und das TN Aargau. Die weiteren Teilnetze werden im Rahmen des Rollouts dementsprechend laufend erweitert.
+
+
+===== Infrastruktur-Ebene 1: TN NMS (NMS) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
+	rectangle NMS__F___S___F_Stao__F_A as "NMS - Stao A" <<Standort>> {
+		rectangle BSS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "BSS-NMS-BABS-00 [NMS - Stao A]" <<$database>> {
+		
+		}
+		rectangle VMH__S_NMS__S_BABS__S_00__F___N_KON__O_ as "VMH-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-00 [NMS - Stao A]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_01__F___N_KON__O_ as "VMH-NMS-BABS-01 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-01 [NMS - Stao A]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_02__F___N_KON__O_ as "VMH-NMS-BABS-02 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-02 [NMS - Stao A]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
+				rectangle MDC__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MDC-NMS-BABS-00 [NMS - Stao A]" <<$domain_controller>> {
+				
+				}
+			}
+		}
+		rectangle PSA__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PSA-NMS-BABS-00 [NMS - Stao A]" <<$lock_with_key_security_blue>> {
+		
+		}
+	}
+	rectangle NMS__F___S___F_Stao__F_B as "NMS - Stao B" <<Standort>> {
+		rectangle BSS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "BSS-NMS-BABS-10 [NMS - Stao B]" <<$database>> {
+		
+		}
+		rectangle VMH__S_NMS__S_BABS__S_10__F___N_KON__O_ as "VMH-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-10 [NMS - Stao B]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_11__F___N_KON__O_ as "VMH-NMS-BABS-11 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-11 [NMS - Stao B]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_12__F___N_KON__O_ as "VMH-NMS-BABS-12 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-12 [NMS - Stao B]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
+				rectangle MDC__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MDC-NMS-BABS-10 [NMS - Stao B]" <<$domain_controller>> {
+				
+				}
+			}
+		}
+		rectangle PSA__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PSA-NMS-BABS-10 [NMS - Stao B]" <<$lock_with_key_security_blue>> {
+		
+		}
+	}
+}
+
+NMS__F___S___F_Stao__F_A -[hidden]- NMS__F___S___F_Stao__F_B
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 1: EAZS <Standort>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/databases/database>
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle EAZS as "EAZS" <<Standort>> {
+	rectangle TN__F_EAZS__F___N_906__O_ as "TN EAZS (906)" <<Teilnetz>> {
+		rectangle VMH__S_906__S_BABS__S_00__F___N_HPE__O_ as "VMH-906-BABS-00 (HPE)" <<$server_generic_blue>> {
+			rectangle VMH__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-906-BABS-00 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_906__S_BABS__S_10__F___N_HPE__O_ as "VMH-906-BABS-10 (HPE)" <<$server_generic_blue>> {
+			rectangle VMH__S_906__S_BABS__S_10__F__aA_EAZS_aC_ as "VMH-906-BABS-10 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+	}
+	rectangle TN__F_EAZS__F___N_907__O_ as "TN EAZS (907)" <<Teilnetz>> {
+		rectangle VMH__S_907__S_BABS__S_00__F___N_HPE__O_ as "VMH-907-BABS-00 (HPE)" <<$server_generic_blue>> {
+			rectangle VMH__S_907__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-907-BABS-00 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_907__S_BABS__S_10__F___N_HPE__O_ as "VMH-907-BABS-10 (HPE)" <<$server_generic_blue>> {
+			rectangle VMH__S_907__S_BABS__S_10__F__aA_EAZS_aC_ as "VMH-907-BABS-10 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+	}
+	rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<Teilnetz>> {
+		rectangle BSS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "BSS-NMS-BABS-10 [EAZS]" <<$database>> {
+		
+		}
+		rectangle BSS__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "BSS-NMS-BABS-00 [EAZS]" <<$database>> {
+		
+		}
+		rectangle VMH__S_NMS__S_BABS__S_01__F___N_KON__O_ as "VMH-NMS-BABS-01 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_01__F__aA_EAZS_aC_ as "VMH-NMS-BABS-01 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_02__F___N_KON__O_ as "VMH-NMS-BABS-02 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_02__F__aA_EAZS_aC_ as "VMH-NMS-BABS-02 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
+				rectangle MDC__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "MDC-NMS-BABS-00 [EAZS]" <<$domain_controller>> {
+				
+				}
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_11__F___N_KON__O_ as "VMH-NMS-BABS-11 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_11__F__aA_EAZS_aC_ as "VMH-NMS-BABS-11 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle VMH__S_NMS__S_BABS__S_12__F___N_KON__O_ as "VMH-NMS-BABS-12 (KON)" <<$server_generic_green>> {
+			rectangle VMH__S_NMS__S_BABS__S_12__F__aA_EAZS_aC_ as "VMH-NMS-BABS-12 [EAZS]" <<$virtual_application_server>> {
+			
+			}
+		}
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
+				rectangle MDC__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MDC-NMS-BABS-10 [EAZS]" <<$domain_controller>> {
+				
+				}
+			}
+		}
+		rectangle PSA__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "PSA-NMS-BABS-00 [EAZS]" <<$lock_with_key_security_blue>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: NMS - Stao A <Standort>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle NMS__F___S___F_Stao__F_A as "NMS - Stao A" <<Standort>> {
+	rectangle BSS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "BSS-NMS-BABS-00 [NMS - Stao A]" <<$database>> {
+	
+	}
+	rectangle VMH__S_NMS__S_BABS__S_00__F___N_KON__O_ as "VMH-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-00 [NMS - Stao A]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_01__F___N_KON__O_ as "VMH-NMS-BABS-01 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-01 [NMS - Stao A]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_02__F___N_KON__O_ as "VMH-NMS-BABS-02 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-02 [NMS - Stao A]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "MDC-NMS-BABS-00 [NMS - Stao A]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle PSA__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PSA-NMS-BABS-00 [NMS - Stao A]" <<$lock_with_key_security_blue>> {
+	
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: NMS - Stao B <Standort>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle NMS__F___S___F_Stao__F_B as "NMS - Stao B" <<Standort>> {
+	rectangle BSS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "BSS-NMS-BABS-10 [NMS - Stao B]" <<$database>> {
+	
+	}
+	rectangle VMH__S_NMS__S_BABS__S_10__F___N_KON__O_ as "VMH-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-10 [NMS - Stao B]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_11__F___N_KON__O_ as "VMH-NMS-BABS-11 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-11 [NMS - Stao B]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_12__F___N_KON__O_ as "VMH-NMS-BABS-12 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-12 [NMS - Stao B]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "MDC-NMS-BABS-10 [NMS - Stao B]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle PSA__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PSA-NMS-BABS-10 [NMS - Stao B]" <<$lock_with_key_security_blue>> {
+	
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN EAZS (906) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle TN__F_EAZS__F___N_906__O_ as "TN EAZS (906)" <<Teilnetz>> {
+	rectangle VMH__S_906__S_BABS__S_00__F___N_HPE__O_ as "VMH-906-BABS-00 (HPE)" <<$server_generic_blue>> {
+		rectangle VMH__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-906-BABS-00 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_906__S_BABS__S_10__F___N_HPE__O_ as "VMH-906-BABS-10 (HPE)" <<$server_generic_blue>> {
+		rectangle VMH__S_906__S_BABS__S_10__F__aA_EAZS_aC_ as "VMH-906-BABS-10 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN EAZS (907) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_blue>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle TN__F_EAZS__F___N_907__O_ as "TN EAZS (907)" <<Teilnetz>> {
+	rectangle VMH__S_907__S_BABS__S_00__F___N_HPE__O_ as "VMH-907-BABS-00 (HPE)" <<$server_generic_blue>> {
+		rectangle VMH__S_907__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-907-BABS-00 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_907__S_BABS__S_10__F___N_HPE__O_ as "VMH-907-BABS-10 (HPE)" <<$server_generic_blue>> {
+		rectangle VMH__S_907__S_BABS__S_10__F__aA_EAZS_aC_ as "VMH-907-BABS-10 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN Simulation NMS (NMS) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle TN__F_Simulation__F_NMS__F___N_NMS__O_ as "TN Simulation NMS (NMS)" <<Teilnetz>> {
+	rectangle BSS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "BSS-NMS-BABS-10 [EAZS]" <<$database>> {
+	
+	}
+	rectangle BSS__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "BSS-NMS-BABS-00 [EAZS]" <<$database>> {
+	
+	}
+	rectangle VMH__S_NMS__S_BABS__S_01__F___N_KON__O_ as "VMH-NMS-BABS-01 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_01__F__aA_EAZS_aC_ as "VMH-NMS-BABS-01 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_02__F___N_KON__O_ as "VMH-NMS-BABS-02 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_02__F__aA_EAZS_aC_ as "VMH-NMS-BABS-02 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle MDC__S_NMS__S_BABS__S_00__F___N_KON__O_ as "MDC-NMS-BABS-00 (KON)" <<$server_generic_green>> {
+		rectangle MDC__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "MDC-NMS-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "MDC-NMS-BABS-00 [EAZS]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_11__F___N_KON__O_ as "VMH-NMS-BABS-11 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_11__F__aA_EAZS_aC_ as "VMH-NMS-BABS-11 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_12__F___N_KON__O_ as "VMH-NMS-BABS-12 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_12__F__aA_EAZS_aC_ as "VMH-NMS-BABS-12 [EAZS]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle MDC__S_NMS__S_BABS__S_10__F___N_KON__O_ as "MDC-NMS-BABS-10 (KON)" <<$server_generic_green>> {
+		rectangle MDC__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MDC-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle MDC__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MDC-NMS-BABS-10 [EAZS]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle PSA__S_NMS__S_BABS__S_00__F__aA_EAZS_aC_ as "PSA-NMS-BABS-00 [EAZS]" <<$lock_with_key_security_blue>> {
+	
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 3: BSS-NMS-BABS-00 [NMS - Stao A] <BSS>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-00 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-01 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-02 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: MDC-NMS-BABS-00 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: PSA-NMS-BABS-00 [NMS - Stao A] <PSA>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: BSS-NMS-BABS-10 [NMS - Stao B] <BSS>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-10 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-11 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-12 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: MDC-NMS-BABS-10 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: PSA-NMS-BABS-10 [NMS - Stao B] <PSA>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-906-BABS-00 (HPE) <HPE>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: BSS-NMS-BABS-10 [EAZS] <BSS>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 3: VMH-NMS-BABS-11 (KON) <KON>
+
+
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-00 [NMS - Stao A] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-00 [NMS - Stao A]" <<$virtual_application_server>> {
+	rectangle VCPR__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPR-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPR__S_NMS__S_BABS__S_00 as "VCPR-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle PRP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle PRP__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRP-NMS-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle PRP__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRP-NMS-BABS-00 [NMS - Stao A]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle VCPM__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPM-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPM__S_NMS__S_BABS__S_00 as "VCPM-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle VCPL__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCPL-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle VCPL__S_NMS__S_BABS__S_00 as "VCPL-NMS-BABS-00" <<Applikation>> {
+		}
+	}
+	rectangle NPS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "NPS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle NPS__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "NPS-NMS-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle NPS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "NPS-NMS-BABS-00 [NMS - Stao A]" <<$credentials>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "JMP-NMS-BABS-01 (WIN)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "JMP-NMS-BABS-01 [NMS - Stao A]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-01 [NMS - Stao A] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-01 [NMS - Stao A]" <<$virtual_application_server>> {
+	rectangle MCS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle APP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "APP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle PRT__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRT-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle JMP__S_NMS__S_BABS__S_00__F___N_VM__O_ as "JMP-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle VCE__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VCE-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle VBM__S_NMS__S_BABS__S_00__F___N_VM__O_ as "VBM-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle MCR__S_NMS__S_BABS__S_00__F___N_VM__O_ as "MCR-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle EPO__S_NMS__S_BABS__S_00__F___N_VM__O_ as "EPO-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle CMG__S_NMS__S_BABS__S_00__F___N_VM__O_ as "CMG-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle DFS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "DFS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+	}		
+	rectangle JMP__S_NMS__S_BABS__S_02__F___N_VM__O_ as "JMP-NMS-BABS-02 (VM)" <<$virtual_server>> {
+	}		
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-02 [NMS - Stao A] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_02__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VMH-NMS-BABS-02 [NMS - Stao A]" <<$virtual_application_server>> {
+	rectangle PRX__S_NMS__S_BABS__S_00__F___N_VM__O_ as "PRX-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle PRX__S_NMS__S_BABS__S_00__F___N_WIN__O_ as "PRX-NMS-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle PRX__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "PRX-NMS-BABS-00 [NMS - Stao A]" <<$reverse_proxy>> {
+			
+			}
+		}
+	}
+	rectangle VBP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "VBP-NMS-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle VBP__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "VBP-NMS-BABS-01 (WIN)" <<$windows_server>> {
+			rectangle VBP__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "VBP-NMS-BABS-01 [NMS - Stao A]" <<$backup_local>> {
+			
+			}
+		}
+	}
+	rectangle WUS__S_NMS__S_BABS__S_01__F___N_VM__O_ as "WUS-NMS-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle WUS__S_NMS__S_BABS__S_01__F___N_WIN__O_ as "WUS-NMS-BABS-01 (WIN)" <<$windows_server>> {
+			rectangle WUS__S_NMS__S_BABS__S_01__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "WUS-NMS-BABS-01 [NMS - Stao A]" <<$install>> {
+			
+			}
+		}
+	}
+	rectangle RHS__S_NMS__S_BABS__S_00__F___N_VM__O_ as "RHS-NMS-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle RHS__S_NMS__S_BABS__S_00__F___N_LIN__O_ as "RHS-NMS-BABS-00 (LIN)" <<$linux>> {
+			rectangle RHS__S_NMS__S_BABS__S_00__F__aA_NMS__F___S___F_Stao__F_A_aC_ as "RHS-NMS-BABS-00 [NMS - Stao A]" <<$install>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-10 [NMS - Stao B] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-10 [NMS - Stao B]" <<$virtual_application_server>> {
+	rectangle VCPR__S_NMS__S_BABS__S_10__F___N_VM__O_ as "VCPR-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle VCPR__S_NMS__S_BABS__S_10 as "VCPR-NMS-BABS-10" <<Applikation>> {
+		}
+	}
+	rectangle PRP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle PRP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRP-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle PRP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRP-NMS-BABS-10 [NMS - Stao B]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle VCPM__S_NMS__S_BABS__S_10__F___N_VM__O_ as "VCPM-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle VCPM__S_NMS__S_BABS__S_10 as "VCPM-NMS-BABS-10" <<Applikation>> {
+		}
+	}
+	rectangle VCPL__S_NMS__S_BABS__S_10__F___N_VM__O_ as "VCPL-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle VCPL__S_NMS__S_BABS__S_10 as "VCPL-NMS-BABS-10" <<Applikation>> {
+		}
+	}
+	rectangle NPS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "NPS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle NPS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "NPS-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle NPS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "NPS-NMS-BABS-10 [NMS - Stao B]" <<$credentials>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "JMP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "JMP-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "JMP-NMS-BABS-10 [NMS - Stao B]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-11 [NMS - Stao B] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-11 [NMS - Stao B]" <<$virtual_application_server>> {
+	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+	}		
+	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+	}		
+	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
+	}		
+	rectangle JMP__S_NMS__S_BABS__S_01__F___N_VM__O_ as "JMP-NMS-BABS-01 (VM)" <<$virtual_server>> {
+	}		
+	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
+	}		
+	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+	}		
+	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
+	}		
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-12 [NMS - Stao B] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_12__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VMH-NMS-BABS-12 [NMS - Stao B]" <<$virtual_application_server>> {
+	rectangle PRX__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRX-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle PRX__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRX-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle PRX__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "PRX-NMS-BABS-10 [NMS - Stao B]" <<$reverse_proxy>> {
+			
+			}
+		}
+	}
+	rectangle VBP__S_NMS__S_BABS__S_11__F___N_VM__O_ as "VBP-NMS-BABS-11 (VM)" <<$virtual_server>> {
+		rectangle VBP__S_NMS__S_BABS__S_11__F___N_WIN__O_ as "VBP-NMS-BABS-11 (WIN)" <<$windows_server>> {
+			rectangle VBP__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "VBP-NMS-BABS-11 [NMS - Stao B]" <<$backup_local>> {
+			
+			}
+		}
+	}
+	rectangle WUS__S_NMS__S_BABS__S_11__F___N_VM__O_ as "WUS-NMS-BABS-11 (VM)" <<$virtual_server>> {
+		rectangle WUS__S_NMS__S_BABS__S_11__F___N_WIN__O_ as "WUS-NMS-BABS-11 (WIN)" <<$windows_server>> {
+			rectangle WUS__S_NMS__S_BABS__S_11__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "WUS-NMS-BABS-11 [NMS - Stao B]" <<$install>> {
+			
+			}
+		}
+	}
+	rectangle RHS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "RHS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle RHS__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "RHS-NMS-BABS-10 (LIN)" <<$linux>> {
+			rectangle RHS__S_NMS__S_BABS__S_10__F__aA_NMS__F___S___F_Stao__F_B_aC_ as "RHS-NMS-BABS-10 [NMS - Stao B]" <<$install>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-906-BABS-00 [EAZS] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "VMH-906-BABS-00 [EAZS]" <<$virtual_application_server>> {
+	rectangle DFS__S_906__S_BABS__S_00__F___N_VM__O_ as "DFS-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle DFS__S_906__S_BABS__S_00__F___N_WIN__O_ as "DFS-906-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle DFS__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "DFS-906-BABS-00 [EAZS]" <<$file_server>> {
+			
+			}
+		}
+	}
+	rectangle RDC__S_906__S_BABS__S_00__F___N_VM__O_ as "RDC-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle RDC__S_906__S_BABS__S_00__F___N_WIN__O_ as "RDC-906-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle RDC__S_906__S_BABS__S_00__F__aA_EAZS_aC_ as "RDC-906-BABS-00 [EAZS]" <<$domain_controller>> {
+			
+			}
+		}
+	}
+	rectangle SPM__S_906__S_BABS__S_00__F___N_VM__O_ as "SPM-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle SPM__S_906__S_BABS__S_00__F___N_WIN__O_ as "SPM-906-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle SPM__S_906__S_BABS__S_00 as "SPM-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle AM__S_906__S_BABS__S_00__F___N_VM__O_ as "AM-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle AM__S_906__S_BABS__S_00__F___N_WIN__O_ as "AM-906-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle AM__S_906__S_BABS__S_00 as "AM-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle CDF__S_906__S_BABS__S_00__F___N_VM__O_ as "CDF-906-BABS-00 (VM)" <<$virtual_server>> {
+		rectangle CDF__S_906__S_BABS__S_00__F___N_WIN__O_ as "CDF-906-BABS-00 (WIN)" <<$windows_server>> {
+			rectangle CDF__S_906__S_BABS__S_00 as "CDF-906-BABS-00" <<Applikation>> {
+			}
+		}
+	}
+	rectangle JMP__S_906__S_BABS__S_01__F___N_VM__O_ as "JMP-906-BABS-01 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_906__S_BABS__S_01__F___N_WIN__O_ as "JMP-906-BABS-01 (WIN)" <<$windows_server>> {
+			rectangle JMP__S_906__S_BABS__S_01__F__aA_EAZS_aC_ as "JMP-906-BABS-01 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 4: VMH-NMS-BABS-11 [EAZS] <VMH>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle VMH__S_NMS__S_BABS__S_11__F__aA_EAZS_aC_ as "VMH-NMS-BABS-11 [EAZS]" <<$virtual_application_server>> {
+	rectangle MCS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "MCS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle MCS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "MCS-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle MCS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "MCS-NMS-BABS-10 [EAZS]" <<$certificate_authority>> {
+			
+			}
+		}
+	}
+	rectangle APP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "APP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle APP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "APP-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle APP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "APP-NMS-BABS-10 [EAZS]" <<$web_server>> {
+			
+			}
+		}
+	}
+	rectangle PRT__S_NMS__S_BABS__S_10__F___N_VM__O_ as "PRT-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle PRT__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "PRT-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle PRT__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "PRT-NMS-BABS-10 [EAZS]" <<$monitoring_store>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_10__F___N_VM__O_ as "JMP-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "JMP-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "JMP-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle CMG__S_NMS__S_BABS__S_10__F___N_VM__O_ as "CMG-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle CMG__S_NMS__S_BABS__S_10__F___N_LIN__O_ as "CMG-NMS-BABS-10 (LIN)" <<$linux>> {
+			rectangle CMG__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "CMG-NMS-BABS-10 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+	rectangle DFS__S_NMS__S_BABS__S_10__F___N_VM__O_ as "DFS-NMS-BABS-10 (VM)" <<$virtual_server>> {
+		rectangle DFS__S_NMS__S_BABS__S_10__F___N_WIN__O_ as "DFS-NMS-BABS-10 (WIN)" <<$windows_server>> {
+			rectangle DFS__S_NMS__S_BABS__S_10__F__aA_EAZS_aC_ as "DFS-NMS-BABS-10 [EAZS]" <<$file_server>> {
+			
+			}
+		}
+	}
+	rectangle JMP__S_NMS__S_BABS__S_12__F___N_VM__O_ as "JMP-NMS-BABS-12 (VM)" <<$virtual_server>> {
+		rectangle JMP__S_NMS__S_BABS__S_12__F___N_WIN__O_ as "JMP-NMS-BABS-12 (WIN)" <<$windows_server>> {
+			rectangle JMP__S_NMS__S_BABS__S_12__F__aA_EAZS_aC_ as "JMP-NMS-BABS-12 [EAZS]" <<$central_management_service>> {
+			
+			}
+		}
+	}
+}
+
+...
+
+
+
+
+
+==== Test-Umgebung
+
+Die Testumgebung (Testbed) wird als Referenz- und Integrationsanalage verwendet, womit alle betrieblichen Aktivitäten sichergestellt werden können.
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+
+show stereotype
+
+rectangle Test__S_Umgebung as "Test-Umgebung" <<Environment>> {
+	rectangle Vevey as "Vevey" <<Standort>> {
+	}		
+}
+
+...
+
+Mit dem Testbed muss der Betrieb von Polycom IP sichergestellt werden. Folgende Fäigkeiten muss das Testbed erfüllen:
+
+
+* Staging
+* 
+  * Neue Software und Konfigurationen (Pflegestände) müssen getestet werden können, bevor sie in die Produktion ausgerollt werden
+  * Provisionieren und Commissioning von neuen Servern für den Rollout in der Phase II (Migrationsvorbereitung).
+  
+* Migrationsvorbereitung
+* 
+  * Konfiguration Migration von TDM nach IP
+  
+* Support
+* 
+  * Fehlerdiagnose
+  * Reproduktion von Fehler aus der Produktion
+  * Fehleranalyse
+  * Fehlerbehebung
+  
+
+
+
+===== Infrastruktur-Ebene 1: Vevey <Standort>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+
+show stereotype
+
+rectangle Vevey as "Vevey" <<Standort>> {
+	rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
+	}		
+	rectangle TN__F_RA1__F___N_984__O_ as "TN RA1 (984)" <<Teilnetz>> {
+	}		
+	rectangle TN__F_RA2__F___N_986__O_ as "TN RA2 (986)" <<Teilnetz>> {
+	}		
+	rectangle TN__F_IA1__F___N_981__O_ as "TN IA1 (981)" <<Teilnetz>> {
+	}		
+	rectangle TN__F_IA2__F___N_982__O_ as "TN IA2 (982)" <<Teilnetz>> {
+	}		
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN NMS (NMS) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/databases/database>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/server_farm>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Security/lock_with_key_security>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/install>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/concepts/install>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/reverse_proxy>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/certificate_authority>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/servers/web_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <cloudinsight/linux>
+!include <office/communications/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/databases/monitoring_store>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/security/credentials>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/security/lock_with_key_security_blue>
+
+show stereotype
+
+rectangle TN__F_NMS__F___N_NMS__O_ as "TN NMS (NMS)" <<Teilnetz>> {
+	rectangle BSS__S_NMS__S_BABS__S_00__F__aA_Vevey_aC_ as "BSS-NMS-BABS-00 [Vevey]" <<$database>> {
+	
+	}
+	rectangle VMH__S_NMS__S_BABS__S_01__F___N_KON__O_ as "VMH-NMS-BABS-01 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_01__F__aA_Vevey_aC_ as "VMH-NMS-BABS-01 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_02__F___N_KON__O_ as "VMH-NMS-BABS-02 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_02__F__aA_Vevey_aC_ as "VMH-NMS-BABS-02 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_NMS__S_BABS__S_11__F___N_KON__O_ as "VMH-NMS-BABS-11 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_NMS__S_BABS__S_11__F__aA_Vevey_aC_ as "VMH-NMS-BABS-11 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle PSA__S_NMS__S_BABS__S_00__F__aA_Vevey_aC_ as "PSA-NMS-BABS-00 [Vevey]" <<$lock_with_key_security_blue>> {
+	
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN RA1 (984) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle TN__F_RA1__F___N_984__O_ as "TN RA1 (984)" <<Teilnetz>> {
+	rectangle VMH__S_984__S_POOL__S_00__F___N_KON__O_ as "VMH-984-POOL-00 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_984__S_POOL__S_00__F__aA_Vevey_aC_ as "VMH-984-POOL-00 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_984__S_POOL__S_10__F___N_KON__O_ as "VMH-984-POOL-10 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_984__S_POOL__S_10__F__aA_Vevey_aC_ as "VMH-984-POOL-10 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN RA2 (986) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle TN__F_RA2__F___N_986__O_ as "TN RA2 (986)" <<Teilnetz>> {
+	rectangle VMH__S_986__S_POOL__S_00__F___N_KON__O_ as "VMH-986-POOL-00 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_986__S_POOL__S_00__F__aA_Vevey_aC_ as "VMH-986-POOL-00 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN IA1 (981) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/concepts/backup_local>
+
+show stereotype
+
+rectangle TN__F_IA1__F___N_981__O_ as "TN IA1 (981)" <<Teilnetz>> {
+	rectangle VMH__S_981__S_POOL__S_00__F___N_KON__O_ as "VMH-981-POOL-00 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_981__S_POOL__S_00__F__aA_Vevey_aC_ as "VMH-981-POOL-00 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+...
+
+
+
+
+===== Infrastruktur-Ebene 2: TN IA2 (982) <Teilnetz>
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+
+show stereotype
+
+rectangle TN__F_IA2__F___N_982__O_ as "TN IA2 (982)" <<Teilnetz>> {
+}
+
+...
+
+
+
+
+
+
+=== Test
+
+Für die Verifikation der Funktionalität des Systems IKT ist keine Durchführung von automatischen Tests vorgesehen.
+Demzufolge ist keine explizite Infrastruktur notwendig.
+
+
+
+
+
+== Konzepte
+
+Dieser Abschnitt beschreibt übergreifende, prinzipielle Regelungen und Lösungsansätze, die für mehrere Bausteine relevant sind.
+
+
+=== Segmentierung
+
+
+Grundsätzlich orientiert sich die Segmentierung an den angewandten Polycom Begriffen. Das System Polycom wird auf der obersten Ebene in Netzdomänen zerlegt. Mit einer Netzdomäne werden die Nationalen Management Services  oder die TN für z.B. Kantone abgebildet. Die Nationalen Management Services haben keine spezifische Polycom Funktionalität, sondern sind reine IP-basierte Netzdomänen. Diese Netzdomänen werden mit dem Begriff "ND-IP" zusammengefasst. Die Teilnetze in den Kantonen stellen die notwendige Polycom Funktionalität zur Verfügung und werden mit dem Begriff "ND-TN" zusammengefasst. Neben den LAN Netzdomänen gelten die WAN oder MAN Netze auch zu den Netzdomänen, wie z.B. der nationale Backbone L3B. Der kantonale Backbone wird auch als "ND-BB" zusammengefasst.
+
+Die Netzdomäne ND-IP wird in ein Segment zerlegt. Das Segment bildet innerhalb der Netzdomäne einen schützenswerten Bereich ab und wird dementsprechend mit den notwendigen Schutzmassnahmen gesichert (z.B. FFW). Zudem kann das Segment von unterschiedlichen Organisationen betrieben werden (z.B. TN-Betreiber, BABS). Das Segment wird in die unterschiedlichen Zonen zerlegt.
+
+Mit einer Zone wird ein logischer Verbund von System-Komponenten mit ähnlichen funktionalen- und Sicherheits-Anforderungen zusammengefasst.
+
+Eine Zone wird einer Klassifikationsstufe zugeordnet, womit das Sicherheitsniveau der jeweiligen Zonen festgelegt wird. Für Polycom gibt es zwei Klassifikationsstufen:
+
+
+* INTERN
+* UNKLASSIFIZIERT - Eine unklassifizierte Zone entspricht einer nicht vertrauenswürdigen Zone (z.B. Internet)
+
+
+Die Segmentierung der Komponenten kann auf physischer oder logischer Ebene erfolgen. Eine physische Segmentierung ist nur bei unterschiedlichen Klassifikationsstufen notwendig. Im Umkehrschluss können unterschiedlichen Zonen der gleichen Klassifikationsstufen logisch segmentiert werden.
+
+Es werden die folgenden Zonentypen, gemäss IKT-Grundschutz Bund, unterschieden:
+
+[cols="20a,20a,60a" options="header"]
+|===========================
+|Zone|Zonen-Typ|Beschreibung
+|Internet
+|internet
+|Externe Zone, welche keinen der Kriterien für die übrigen Zonen entspricht und an welche keine (Sicherheits-) Anforderungen gestellt werden können.
+|Externe Spezialzone
+|extspez
+|Externe Zone, deren Richtlinien fremdbestimmt sind und nicht vollständig von einer Verwaltungseinheit der Bundesverwaltung spezifiziert sein kann.
+|Policy Enforcement Zone (PEZ)
+|pez
+|Interne Zone für PEPs, die zur Durchsetzung der Regeln für die externe Kommunikation anderer Zonen erforderlich sind.
+|Service Zone
+|services
+|Interne Zone für Server-Systeme, die für die Erbringung von Infrastrukturdiensten erforderlich sind (z.B. DNS- und Zeitserver).
+|Server Zone
+|server
+|Interne Zone für Server-Systeme, die über Internet-Konnektivität verfügen dürfen, und auf denen Fachanwendungen ohne erhöhten Schutzbedarf betrieben werden.
+|Management Zone
+|mgmt
+|Interne und spezielle Zone für IKT-Systeme, die ausschliesslich für die Verwaltung und Administration von IKT-Systemen in anderen Zonen verwendet wird.
+
+|===========================
+
+Eine Zone wird in eine Subzone weiter zerlegt, wobei eine Subzone einem jeweiligen Subnetz entspricht.
+
+
+==== Storage
+
+
+
+
+
+
+==== Physical Compute
+
+
+
+
+
+
+==== Virtual Compute
+
+
+
+
+
+
+==== Network
+
+
+
+
+
+
+==== Application
+
+
+
+
+
+
+==== Datenablage
+
+
+
+
+
+
+==== Hypervisor Management
+
+
+
+
+
+
+==== Backup Management
+
+
+
+
+
+
+==== Jump Host
+
+
+
+
+
+
+==== Deployment
+
+
+
+
+
+
+==== Monitoring
+
+
+
+
+
+
+==== Directory Services
+
+
+
+
+
+
+==== PKI
+
+
+
+
+
+
+==== Endpoint Protection
+
+
+
+
+
+
+==== Block Storage Service (BSS)
+
+
+
+
+
+
+==== Kontron Server (KON)
+
+
+
+
+
+
+==== HPE Server (HPE)
+
+
+
+
+
+
+==== ESXi (VMH)
+
+
+
+
+
+
+==== Pulse Secure Appliance (PSA)
+
+
+
+
+
+
+==== Network Policy Service (NPS)
+
+
+
+
+
+
+==== Proxy (PRX)
+
+
+
+
+
+
+==== Application Server (APP)
+
+
+
+
+
+
+==== Distributed File System (DFS)
+
+
+
+
+
+
+==== vCenter (VCE)
+
+
+
+
+
+
+==== Veeam Backup Management (VBM)
+
+
+
+
+
+
+==== Veeam Backup Proxy (VBP)
+
+
+
+
+
+
+==== Jump Host (JMP)
+
+
+
+
+
+
+==== Configuration Management (CMG)
+
+
+
+
+
+
+==== Redhat Satellite (RHS)
+
+
+
+
+
+
+==== Windows Server Update Services (WUS)
+
+
+
+
+
+
+==== PRTG (PRT)
+
+
+
+
+
+
+==== PRTG Probe (PRP)
+
+
+
+
+
+
+==== Master Active Directory (MDC)
+
+
+
+
+
+
+==== Slave Active Directory (RDC)
+
+
+
+
+
+
+==== Issuing CA (MCS)
+
+
+
+
+
+
+==== Root CA (MCR)
+
+
+
+
+
+
+==== Endpoint Protection Orchestrator (EPO)
+
+
+
+
+
+
+==== NETDOMAIN-NMS (NETDOMAIN)
+
+
+Mit der Netzdomäne NMS wird das zentrale Management für alle Bundes-Komponenten der Netz-, IKT- sowie Polycom Infrastruktur bewerkstelligt. Die Komponenten bei den Teilnetz-Betreibern (z.B. SPC-Slave, SPS) können je nach Bedarf auch vom zentralen Management verwaltetet werden.
+
+Nachfolgend eine grafische Übersicht der Zonen:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+show stereotype
+
+rectangle SEGMENT__S_NMS as "SEGMENT-NMS" <<segment>> {
+	rectangle ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL as "ZONE-NMS-PEZ-DMZ-EXTERNAL" <<pez>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL as "ZONE-NMS-PEZ-DMZ-INTERNAL" <<pez>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVICES__S_INFRA as "ZONE-NMS-SERVICES-INFRA" <<services>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVER__S_POLYCOM as "ZONE-NMS-SERVER-POLYCOM" <<server>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVER__S_BACKUP as "ZONE-NMS-SERVER-BACKUP" <<server>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_INFRA as "ZONE-NMS-MGMT-INFRA" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_NETWORK as "ZONE-NMS-MGMT-NETWORK" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_POLYCOM as "ZONE-NMS-MGMT-POLYCOM" <<mgmt>> {
+		
+	}
+}
+
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_POLYCOM
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_BACKUP
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_POLYCOM
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_BACKUP
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVICES__S_INFRA
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVICES__S_INFRA
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_INFRA
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_NETWORK
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_POLYCOM
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_INFRA
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_NETWORK
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_POLYCOM
+...
+
+
+
+
+==== NETDOMAIN-CH (NETDOMAIN)
+
+
+Nachfolgend eine grafische Übersicht der Zonen:
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+show stereotype
+
+rectangle SEGMENT__S_DMZ__S_FEDERAL as "SEGMENT-DMZ-FEDERAL" <<segment>> {
+	rectangle ZONE__S_CH__S_SERVICES__S_INFRA as "ZONE-CH-SERVICES-INFRA" <<services>> {
+		
+	}
+	rectangle ZONE__S_CH__S_SERVER__S_BACKUP as "ZONE-CH-SERVER-BACKUP" <<server>> {
+		
+	}
+	rectangle ZONE__S_CH__S_MGMT__S_INFRA as "ZONE-CH-MGMT-INFRA" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_CH__S_MGMT__S_POLYCOM as "ZONE-CH-MGMT-POLYCOM" <<mgmt>> {
+		
+	}
+}
+
+ZONE__S_CH__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_CH__S_MGMT__S_INFRA
+ZONE__S_CH__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_CH__S_MGMT__S_POLYCOM
+...
+
+
+
+
+
+=== Bandbreitenbedarf und QoS für L3B
+
+In diesem Kapitel wird die Schätzung des Bandbreitenbedarfs pro System-Konfiguration aufgeführt. Bei der Schätzung des Bandbreitenbedarfs wird der Bedarf und der Durchschnitt angegeben, wobei zu beachten ist, dass gewisse System-Konfigurationen über L3B kommunzieren und somit die Gesamtmenge die Schätzung des bidirektionalen Verkehrs beinhaltet.
+
+
+==== Windows (WIN)
+
+In der Schätzung der Bandbreite wurde der RDP Zugriff und das Einspielen von Windows Patches (WSUS) berücksichtigt.
+
+
+
+
+==== Kontron Server (KON)
+
+In der Schätzung der Bandbreite wurde der IPMI Zugriff berücksichtigt.
+
+
+
+
+==== HPE Server (HPE)
+
+In der Schätzung der Bandbreite wurde der IPMI Zugriff (ILO) berücksichtigt.
+
+
+
+
+==== ESXi (VMH)
+
+In der Schätzung der Bandbreite wurde die Aktualisierung des Hypervisors und der Managementzugriff berücksichtigt.
+
+
+
+
+==== Pulse Secure Appliance (PSA)
+
+In der Schätzung der Bandbreite wurde der Zugriff auf die jeweiligen JumpHost zum NMS und in die TNs mit jeweils 4 Benutzer und die Übertragung von Daten über den Transfer berücksichtigt.
+
+
+
+
+==== Network Policy Service (NPS)
+
+In der Schätzung der Bandbreite wurde der Zugriff auf den RADIUS Server von den TNs berücksichtigt.
+
+
+
+
+==== Application Server (APP)
+
+In der Schätzung der Bandbreite wurde die Prüfung der CRL berücksichtigt.
+
+
+
+
+==== vCenter (VCE)
+
+In der Schätzung der Bandbreite wurde der Zugriff vom vCenter auf die VMH berücksichtigt.
+
+
+
+
+==== Veeam Backup Management (VBM)
+
+In der Schätzung der Bandbreite wurde die Verwaltung der Backup-Jobs auf die Proxy in den TNs berücksichtigt.
+
+
+
+
+==== Veeam Backup Proxy (VBP)
+
+In der Schätzung der Bandbreite wurde die Übertragung der Sicherungsdaten von TNs an den NMStao berücksichtigt.
+
+
+
+
+==== Jump Host (JMP)
+
+In der Schätzung der Bandbreite wurde der Zugriff auf die jeweiligen JumpHost zum NMS und in die TNs mit jeweils 4 Benutzer berücksichtigt.
+
+
+
+
+==== Configuration Management (CMG)
+
+In der Schätzung der Bandbreite wurde die Übertragung der Konfigurationen auf die TNs berücksichtigt.
+
+
+
+
+==== Redhat Satellite (RHS)
+
+In der Schätzung der Bandbreite wurde das Übertragen von Patches berücksichtigt.
+
+
+
+
+==== Windows Server Update Services (WUS)
+
+In der Schätzung der Bandbreite wurde das Übertragen von Windows Patches (WSUS) berücksichtigt.
+
+
+
+
+==== PRTG (PRT)
+
+In der Schätzung der Bandbreite wurde die Anzeige der Sensordaten berücksichtigt.
+
+
+
+
+==== PRTG Probe (PRP)
+
+In der Schätzung der Bandbreite wurde die Anzeige der Sensordaten berücksichtigt.
+
+
+
+
+==== Master Active Directory (MDC)
+
+In der Schätzung der Bandbreite wurde die Synchronisation der DCs und der Zugriff von den Knoten auf den DC berücksichtigt.
+
+
+
+
+==== Slave Active Directory (RDC)
+
+In der Schätzung der Bandbreite wurde die Synchronisation der DCs und der Zugriff von den Knoten auf den DC berücksichtigt.
+
+
+
+
+==== Active Directory Management (ADM)
+
+In der Schätzung der Bandbreite wurde der Zugriff auf die Weboberfläche berücksichtigt.
+
+
+
+
+==== Issuing CA (MCS)
+
+In der Schätzung der Bandbreite wurde die Übertragung von Zertifikate berücksichtigt.
+
+
+
+
+==== Endpoint Protection Orchestrator (EPO)
+
+In der Schätzung der Bandbreite wurde das Übertragen von Virensignaturen berücksichtigt.
+
+
+
+
+
+=== Netzwerk
+
+
+
+
+==== Test-Umgebung
+
+
+
+
+===== TN NMS (NMS)
+
+
+
+
+====== 10.90.25.0/29 - VLAN-2000 subzone-nms-services-infra-services
+
+
+
+
+
+
+====== 10.25.90.3/24 - VLAN-2000 subzone-nms-mgmt-infra-jumphost_mgmt
+
+
+
+
+
+
+
+===== TN RA1 (984)
+
+
+
+
+====== 10.124.1.0/29 - VLAN-2000 subzone-ch-services-infra-services
+
+
+
+
+
+
+
+
+
+=== Sicherheit
+
+Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version nachgeliefert.
+
+
+==== Rollen und Aktivitäten für Produktions-Umgebung
+
+
+
+
+===== Aktivitäten
+
+
+
+
+====== TN NMS (NMS) Aktivitäten
+
+
+
+
+======= Block Storage Service (BSS) Aktivitäten
+
+
+
+
+======== grp-act-2000-nms-bss_deploy
+
+
+
+
+
+
+======== grp-act-2001-nms-bss_read
+
+
+
+
+
+
+======== grp-act-2008-nms-bss_write
+
+
+
+
+
+
+
+======= Kontron Server (KON) Aktivitäten
+
+
+
+
+======== grp-act-2002-nms-kon_deploy
+
+
+
+
+
+
+======== grp-act-2003-nms-kon_read
+
+
+
+
+
+
+
+======= ESXi (VMH) Aktivitäten
+
+
+
+
+======== grp-act-2004-nms-vmh_deploy
+
+
+
+
+
+
+======== grp-act-2005-nms-vmh_read
+
+
+
+
+
+
+
+======= Virtual Machine (VM) Aktivitäten
+
+
+
+
+======== grp-act-2006-nms-vm_write
+
+
+
+
+
+
+======== grp-act-2007-nms-vm_audit
+
+
+
+
+
+
+
+
+====== TN EAZS (906) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2100-906-hpe_deploy
+
+
+
+
+
+
+======== grp-act-2101-906-hpe_read
+
+
+
+
+
+
+======== grp-act-2102-906-hpe_write
+
+
+
+
+
+
+
+
+====== TN EAZS (907) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2200-907-hpe_read
+
+
+
+
+
+
+
+
+
+===== Rollen
+
+
+
+
+====== TN NMS (NMS) TN Rollen-Gruppen
+
+
+
+
+======= Sicherheitsverantwortlicher Aktor-Rollen
+
+
+
+
+======== grp-rog-2001-nms-sicherheitsverantwortlicher-admin
+
+
+
+
+
+
+======== grp-rog-2000-nms-sicherheitsverantwortlicher-operator
+
+
+
+
+========= grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator
+
+
+
+
+
+
+
+
+======= Betriebsmanagement Aktor-Rollen
+
+
+
+
+======== grp-rog-2002-nms-betriebsmanagement-admin
+
+
+
+
+========= grp-rol-2001-nms-betriebsmanagement-storage_admin
+
+
+
+
+
+
+
+======== grp-rog-2003-nms-betriebsmanagement-operator
+
+
+
+
+========= grp-rol-2002-nms-betriebsmanagement-storage_operator
+
+
+
+
+
+
+
+
+
+====== TN EAZS (906) TN Rollen-Gruppen
+
+
+
+
+
+
+====== TN EAZS (907) TN Rollen-Gruppen
+
+
+
+
+
+
+
+
+==== Rollen und Aktivitäten für Test-Umgebung
+
+In diesem Kapitel werden die Aktivitäten und Rollen für das System IKT beschrieben.
+
+
+===== Aktivitäten
+
+
+
+
+====== TN NMS (NMS) Aktivitäten
+
+
+
+
+======= Block Storage Service (BSS) Aktivitäten
+
+
+
+
+======== grp-act-2000-nms-bss_deploy
+
+
+
+
+
+
+======== grp-act-2001-nms-bss_read
+
+
+
+
+
+
+
+======= Kontron Server (KON) Aktivitäten
+
+
+
+
+======== grp-act-2002-nms-kon_deploy
+
+
+
+
+
+
+======== grp-act-2003-nms-kon_read
+
+
+
+
+
+
+
+======= ESXi (VMH) Aktivitäten
+
+
+
+
+======== grp-act-2004-nms-vmh_deploy
+
+
+
+
+
+
+======== grp-act-2005-nms-vmh_read
+
+
+
+
+
+
+
+======= Virtual Machine (VM) Aktivitäten
+
+
+
+
+======== grp-act-2006-nms-vm_write
+
+
+
+
+
+
+======== grp-act-2007-nms-vm_audit
+
+
+
+
+
+
+
+
+====== TN RA1 (984) Aktivitäten
+
+
+
+
+======= Windows (WIN) Aktivitäten
+
+
+
+
+======== grp-act-2600-984-win_write
+
+
+
+
+
+
+
+
+====== TN RA2 (986) Aktivitäten
+
+
+
+
+
+
+====== TN IA1 (981) Aktivitäten
+
+
+
+
+
+
+====== TN IA2 (982) Aktivitäten
+
+
+
+
+
+
+
+===== Rollen
+
+
+
+
+====== TN NMS (NMS) TN Rollen-Gruppen
+
+
+
+
+======= Service Desk Aktor-Rollen
+
+
+
+
+======== grp-rog-2002-nms-service desk-operator
+
+
+
+
+
+
+
+======= Sicherheitsverantwortlicher Aktor-Rollen
+
+
+
+
+======== grp-rog-2001-nms-sicherheitsverantwortlicher-admin
+
+
+
+
+
+
+======== grp-rog-2000-nms-sicherheitsverantwortlicher-operator
+
+
+
+
+========= grp-rol-2000-nms-sicherheitsverantwortlicher-storage_operator
+
+
+
+
+
+
+
+
+
+====== TN RA1 (984) TN Rollen-Gruppen
+
+
+
+
+======= IKT Zentrale Aktor-Rollen
+
+
+
+
+======== grp-rog-2600-984-ikt zentrale-admin
+
+
+
+
+
+
+======== grp-rog-2601-984-ikt zentrale-operator
+
+
+
+
+
+
+
+======= Service Desk Aktor-Rollen
+
+
+
+
+======== grp-rog-2602-984-service desk-admin
+
+
+
+
+
+
+======== grp-rog-2603-984-service desk-operator
+
+
+
+
+
+
+
+
+====== TN RA2 (986) TN Rollen-Gruppen
+
+
+
+
+======= IKT Zentrale Aktor-Rollen
+
+
+
+
+======== grp-rog-2700-986-ikt zentrale-admin
+
+
+
+
+
+
+
+
+====== TN IA1 (981) TN Rollen-Gruppen
+
+
+
+
+
+
+====== TN IA2 (982) TN Rollen-Gruppen
+
+
+
+
+
+
+
+
+==== Verzeichnisdienste
+
+
+
+
+===== Forest, Domain Tree und Domain
+
+
+Grundsätzlich sind Parent-Child Trust Beziehungen mit Microsoft Active Directory schwierig und aufwendig zu warten, weil sie über das Management ungenügend inventarisiert werden können. Daher wird die Anzahl Trust Beziehungen möglichst reduziert. Microsoft empfiehlt daher auch den „Single Domain Forest“ Entwurf zu verwenden, um vor allem eine höhere Wartbarkeit und Wirtschaftlichkeit zu gewinnen.
+
+
+
+
+===== Active Directory Trust
+
+Es besteht kein Bedarf, dass umgebende Active Directory Forest und/oder Domänen integriert werden müssen.
+
+
+
+
+===== Organisationseinheit (OU)
+
+
+Organisationseinheiten stellen hierarchisch die administrative Struktur einer Domäne dar. Jede Organisationseinheit kann Benutzer-, Gruppen- und Computerobjekte aufnehmen. Jedes Objekt kann nur genau einer Organisationseinheit zugewiesen werden. Das Setzen von Berechtigungen wird durch Verschachtelungen von Organisationseinheiten und Zuweisung von Gruppenrichtlinien (GPO) erzeugt. 
+Innerhalb einer jeden Active Directory-Domäne werden Organisationseinheiten angelegt. Die folgende Abbildung gibt einen Überblick, welche Objekte (Computer, Gruppen, Nutzer) welchen Organisationseinheiten zugeordnet werden.
+
+In der nachfolgenden Tabelle wird die OU Struktur festgelegt:
+
+[cols="2a,2a,2a" options="header"]
+|===========================
+|Netzdomäne (OU Stufe 1)|Interaktion (OU Stufe 2)|Funktion (OU Stufe 3)
+|NMS
+|User
+|
+ * Network Admin
+ * Infra Admin
+ * Service Accounts
+ 
+|NMS
+|Computer
+|
+ * PKI
+ * AD
+ * BC
+ * EP
+ 
+
+|===========================
+
+
+
+
+
+
+=== Business Continuity
+
+
+
+
+==== Verfügbarkeit
+
+Die Beschreibung des Kapitels ist noch offen und wird mit der nächsten Version nachgeliefert.
+
+
+
+
+==== Sicherung und Wiederherstellung
+
+
+
+
+
+
+
+
+== Entwurfsentscheidungen
+
+In diesem Kapitel werden die Architektur- oder Entwurfsentscheidungen inklusive der jeweiligen Begründungen beschrieben.
+
+
+=== Entwurfsentscheidung Einsatz von PAM (Privileged Access Management)  
+
+
+
+
+
+
+=== Entwurfsentscheidung Anzahl der Hierarchiestufe der OUs 
+
+
+
+
+
+
+=== Entwurfsentscheidung Verwendung der Standard AD Container 
+
+
+
+
+
+
+=== Entwurfsentscheidung Vergabe von Rechten an einzelnen Administratoren 
+
+
+
+
+
+
+=== Entwurfsentscheidung Anzahl Forest und Domain 
+
+
+
+
+
+
+
+== Qualitätsszenarios
+
+
+
+
+
+
+= Glossar
+
+
+
+Term A:: 
+	Description A
+
+Term B:: 
+	Description B
+
+
+
+

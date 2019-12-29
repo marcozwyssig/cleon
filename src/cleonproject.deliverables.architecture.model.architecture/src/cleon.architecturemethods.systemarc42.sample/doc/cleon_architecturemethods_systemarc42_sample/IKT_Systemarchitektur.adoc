@@ -1,0 +1,582 @@
+= IKT Systemarchitektur
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+== Einführung und Ziele
+
+
+
+
+=== Qualitätsziele
+
+
+
+
+
+
+=== Aufgabenstellung
+
+
+
+
+
+
+
+== Randbedingungen
+
+
+
+
+
+
+== Kontextabgrenzung
+
+
+
+In diesem Kapitel wird der Kontext betrachteten Systems (IKT) aufgeführt.
+=== Fachlicher Kontext
+
+
+
+In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|Role1
+|
+|====
+|Role2
+|
+|====
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+=== Technischer Kontext
+
+
+
+In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (IKT) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+
+== Bausteinsicht
+
+
+
+
+=== Ebene 1: IKT <System> (Whitebox)
+
+
+
+
+==== Plattform <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Infrastruktur <SystemLayer> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+ 
+=== Ebene 2: Plattform <SystemLayer> (Whitebox)
+
+
+
+
+==== Windows 2016 <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Linux <SystemComponent> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Windows 2016 <SystemComponent> (Whitebox)
+
+
+
+
+==== Windows Server Standard Virtual <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Windows (WIN) <SystemConfiguration> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 4: Windows Server Standard Virtual <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Windows (WIN) <SystemConfiguration> (Whitebox)
+
+
+
+
+
+
+
+== Verteilsicht
+
+
+
+
+=== Bauen
+
+
+
+
+
+
+=== Paketierung
+
+
+
+
+
+
+=== Verteilung
+
+
+
+
+==== QA-Umgebung
+
+
+
+
+
+
+==== Produktion-Umgebung
+
+
+
+
+
+
+
+=== Test
+
+
+
+
+
+
+=== Überwachung
+
+
+
+
+
+
+
+== Konzepte
+
+
+
+
+=== Bandbreitenbedarf und QoS für dddd
+
+
+
+
+==== Windows Server Standard Virtual
+
+
+
+
+
+
+
+=== Sicherheit
+
+
+
+
+==== Rollen und Aktivitäten für QA-Umgebung
+
+
+
+
+===== Aktivitäten
+
+
+
+
+====== TN Domain A (1) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-2900-1-hpe_deploy
+
+
+
+
+
+
+======== grp-act-2901-1-hpe_read
+
+
+
+
+
+
+
+======= Windows (WIN) Aktivitäten
+
+
+
+
+======== grp-act-2902-1-win_deploy
+
+
+
+
+
+
+======== grp-act-2903-1-win_read
+
+
+
+
+
+
+======== grp-act-2904-1-win_write
+
+
+
+
+
+
+
+
+====== TN Domain B (2) Aktivitäten
+
+
+
+
+======= HPE Server (HPE) Aktivitäten
+
+
+
+
+======== grp-act-12000-2-hpe_deploy
+
+
+
+
+
+
+======== grp-act-12001-2-hpe_read
+
+
+
+
+
+
+======== grp-act-12002-2-hpe_write
+
+
+
+
+
+
+
+
+
+===== Rollen
+
+
+
+
+====== TN Domain A (1) TN Rollen-Gruppen
+
+
+
+
+======= Role1 Aktor-Rollen
+
+
+
+
+======== grp-rog-2200-1-role1-admin
+
+
+
+
+========= grp-rol-2100-1-role1-server_admin
+
+
+
+
+
+
+========= grp-rol-2101-1-role1-windows_2016_admin
+
+
+
+
+
+
+
+======== grp-rog-2201-1-role1-operator
+
+
+
+
+========= grp-rol-2102-1-role1-server_operator
+
+
+
+
+
+
+========= grp-rol-2103-1-role1-windows_2016_operator
+
+
+
+
+
+
+
+
+======= Role2 Aktor-Rollen
+
+
+
+
+======== grp-rog-2202-1-role2-admin
+
+
+
+
+========= grp-rol-2106-1-role2-server_admin
+
+
+
+
+
+
+========= grp-rol-2107-1-role2-windows_2016_admin
+
+
+
+
+
+
+
+======== grp-rog-2-1-role2-operator
+
+
+
+
+========= grp-rol-2108-1-role2-server_operator
+
+
+
+
+
+
+========= grp-rol-2109-1-role2-windows_2016_operator
+
+
+
+
+
+
+
+
+
+====== TN Domain B (2) TN Rollen-Gruppen
+
+
+
+
+======= Role1 Aktor-Rollen
+
+
+
+
+
+
+
+
+
+==== Verzeichnisdienste
+
+
+
+
+
+
+
+
+== Entwurfsentscheidungen
+
+
+
+
+
+
+== Qualitätsszenarios
+
+
+
+
+
+
+== Risiken und technische Schulden
+
+
+
+
+
+
+= Glossar
+
+
+
+Term A:: 
+	Description A
+
+Term B:: 
+	Description B
+
+
+
+

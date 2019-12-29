@@ -31,11 +31,11 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
   // relations
   
   @Override
-  public cleon.architecturemethods.itarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironmentView() {
-    return _getSingle(cleon.architecturemethods.itarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironmentView() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView);
   }
 
-  public TestEnvironment setEnvironmentView(cleon.architecturemethods.itarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment environmentView) {
+  public TestEnvironment setEnvironmentView(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment environmentView) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, environmentView);
     return this;
   }
@@ -74,14 +74,14 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.itarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, visitor);
     _acceptMap(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_testConnection, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment> selectToMeEnvironmentView(cleon.architecturemethods.itarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment object) {
+  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment> selectToMeEnvironmentView(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestEnvironment_environmentView, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class TestEnvironment extends DynamicResource implements ITestEnvironment
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,fdOsnVhk/J0xvLmiObB+vsXG53U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8dd0a331-6761-11e9-9ec9-5fbc84faaeb1,S3hkiDkKg9+YZq5wofGXC2e55Jc=] */

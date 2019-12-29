@@ -30,7 +30,7 @@
 	<feature url="features/cleon.modelinglanguages.bpmn_0.4.147.jar" id="cleon.modelinglanguages.bpmn" version="0.4.147">
 		<category name="modelinglanguages"/>
 	</feature>
-	<feature url="features/cleon.modelinglanguages.uml_0.4.147.jar" id="cleon.modelinglanguages.uml" version="0.4.147">
+	<feature url="features/cleon.modelinglanguages.graph_0.4.147.jar" id="cleon.modelinglanguages.graph" version="0.4.147">
 		<category name="modelinglanguages"/>
 	</feature>
 	<feature url="features/cleon.modelinglanguages.network_0.4.147.jar" id="cleon.modelinglanguages.network" version="0.4.147">
@@ -39,19 +39,19 @@
 	<feature url="features/cleon.modelinglanguages.rack_0.4.147.jar" id="cleon.modelinglanguages.rack" version="0.4.147">
 		<category name="modelinglanguages"/>
 	</feature>
-	<feature url="features/cleon.modelinglanguages.graph_0.4.147.jar" id="cleon.modelinglanguages.graph" version="0.4.147">
-		<category name="modelinglanguages"/>
-	</feature>
 	<feature url="features/cleon.modelinglanguages.segmentation_0.4.147.jar" id="cleon.modelinglanguages.segmentation" version="0.4.147">
 		<category name="modelinglanguages"/>
 	</feature>
-	<feature url="features/cleon.architecturestylesandpatterns.soa_0.4.147.jar" id="cleon.architecturestylesandpatterns.soa" version="0.4.147">
+	<feature url="features/cleon.modelinglanguages.uml_0.4.147.jar" id="cleon.modelinglanguages.uml" version="0.4.147">
+		<category name="modelinglanguages"/>
+	</feature>
+	<feature url="features/cleon.architecturestylesandpatterns.eai_0.4.147.jar" id="cleon.architecturestylesandpatterns.eai" version="0.4.147">
 		<category name="architecturestylesandpatterns"/>
 	</feature>
 	<feature url="features/cleon.architecturestylesandpatterns.eda_0.4.147.jar" id="cleon.architecturestylesandpatterns.eda" version="0.4.147">
 		<category name="architecturestylesandpatterns"/>
 	</feature>
-	<feature url="features/cleon.architecturestylesandpatterns.eai_0.4.147.jar" id="cleon.architecturestylesandpatterns.eai" version="0.4.147">
+	<feature url="features/cleon.architecturestylesandpatterns.soa_0.4.147.jar" id="cleon.architecturestylesandpatterns.soa" version="0.4.147">
 		<category name="architecturestylesandpatterns"/>
 	</feature>
 	<feature url="features/cleon.projectmethods.hermes_0.4.147.jar" id="cleon.projectmethods.hermes" version="0.4.147">
@@ -101,4 +101,4 @@
 	<category-def name="building" label="Building"/>
 	<category-def name="publishing" label="Publishing"/>
 </site>
-<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,oZIbISZ0eE3hxrGLiorbpEiDIiM=] -->
+<!-- Actifsource ID=[d6e8b5ab-be7b-11e8-a165-65b4bbad9291,284fd617-f987-11e5-a7fd-010f93305101,Kf/41WWesbYn/hw+P1yhmG6A17k=] -->

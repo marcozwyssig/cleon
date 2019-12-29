@@ -21,5 +21,11 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
 Export-Package: cleon.modelinglanguages.rack.metamodel,
  cleon.modelinglanguages.rack.metamodel.spec,
  cleon.modelinglanguages.rack.metamodel.spec.javamodel,
- cleon.modelinglanguages.rack.metamodel.javamodel
+ cleon.modelinglanguages.rack.metamodel.javamodel,
+ cleon.modelinglanguages.rack.metamodel.template.docbook,
+ cleon.modelinglanguages.rack.metamodel.template.docbook.javamodel,
+ cleon.modelinglanguages.rack.metamodel.template.asciidoc,
+ cleon.modelinglanguages.rack.metamodel.template.asciidoc.javamodel,
+ cleon.modelinglanguages.rack.metamodel.template.rackdiag,
+ cleon.modelinglanguages.rack.metamodel.template.rackdiag.javamodel
 

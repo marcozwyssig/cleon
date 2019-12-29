@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.javamodel.IActifsource;
 /* End Protected Region   [[7106baaa-3c77-11e6-aafa-bd565efc0ead,imports]] */
 
-public class FunctionSpace_Plugin {
+public class FunctionSpace_Project {
 
   /* Begin Protected Region [[7106baaa-3c77-11e6-aafa-bd565efc0ead]] */
   
@@ -249,4 +249,4 @@ public class FunctionSpace_Plugin {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,/Yf9KvwiNZpe21kpYDDTmsGHrWY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,grbhwEaZGNm2c1XmB7aZ7M5gDpg=] */

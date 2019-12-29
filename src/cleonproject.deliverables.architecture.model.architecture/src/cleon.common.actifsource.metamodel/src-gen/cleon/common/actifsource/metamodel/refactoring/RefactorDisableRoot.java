@@ -33,8 +33,8 @@ public class RefactorDisableRoot extends AbstractAllInstancesRefactorerAspect {
 	protected void refactor(IModifiable executor, Package _package, INode clazz) {
 		INode modifier = Select.objectForRelationOrNull(executor, CorePackage.Class_modifier, clazz);
 		if (modifier != null) {
-			INode modifierValue = Select.objectForRelationOrNull(executor, CorePackage.Enum_value, modifier);
-			if (CorePackage.InheritanceModifier_Abstract.equals(modifierValue)) {
+			Logger.instance().logInfo("modifier guid " + modifier.toString());
+			if (CorePackage.InheritanceModifier_Abstract.equals(modifier)) {
 				return;
 			}
 		}

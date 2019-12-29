@@ -30,7 +30,13 @@ public class FunctionSpace_Eclipse {
     public java.lang.String RenderJavaDependencies();
 
     @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
-    public cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage GetPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage> GetSpecPackages();
+
+    @IDynamicResourceExtension.MethodId("02281f8a-2a52-11ea-86bd-67705d589838")
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage> GetTemplatePackages();
+
+    @IDynamicResourceExtension.MethodId("9e4443b8-2a52-11ea-86bd-67705d589838")
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage> GetCustomPackages();
 
     @IDynamicResourceExtension.MethodId("6db5f69b-0bfa-11e6-92b5-27c7a314300c")
     public java.lang.String RenderBuiltinDependencies();
@@ -64,10 +70,19 @@ public class FunctionSpace_Eclipse {
   public static interface IPackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0b35945e-b885-11e5-a463-ff45aa361315")
-    public cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage GetPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IPackage> GetPackages();
 
     @IDynamicResourceExtension.MethodId("3bee1cdd-b885-11e5-a463-ff45aa361315")
     public java.lang.String GetPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IAbstractPlugin project);
+
+    @IDynamicResourceExtension.MethodId("eb83eaf8-2a51-11ea-86bd-67705d589838")
+    public java.lang.String GetSpecPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IAbstractPlugin project);
+
+    @IDynamicResourceExtension.MethodId("cf676a3c-2a51-11ea-86bd-67705d589838")
+    public java.lang.String GetTemplatePackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IAbstractPlugin project);
+
+    @IDynamicResourceExtension.MethodId("e9c5a3f5-2a52-11ea-86bd-67705d589838")
+    public java.lang.String GetCustomPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.plugin.javamodel.IAbstractPlugin project);
 
   }
   
@@ -372,4 +387,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,0ERWz8aEYnH6Hf/4teWqG81Dq9E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,Q/SxI4KyI+mzq9Pbdv0k9V9dzvE=] */

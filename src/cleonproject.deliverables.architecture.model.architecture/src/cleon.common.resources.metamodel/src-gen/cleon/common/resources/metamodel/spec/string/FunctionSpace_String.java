@@ -23,12 +23,18 @@ public class FunctionSpace_String {
     @IDynamicResourceExtension.MethodId("7be8d784-0d5f-11e6-9f44-9d0000bae4df")
     public java.lang.String convertToValidFileName();
 
+    @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
+    public java.lang.String convertDotToSlash();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7be8d784-0d5f-11e6-9f44-9d0000bae4df")
     public java.lang.String convertToValidFileName(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
+    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral);
 
   }
   
@@ -45,6 +51,13 @@ public class FunctionSpace_String {
       /* End Protected Region   [[7be8d784-0d5f-11e6-9f44-9d0000bae4df]] */
     }
 
+    @Override
+    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
+    	return stringLiteral.replace(".", "/");   
+      /* End Protected Region   [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -53,6 +66,10 @@ public class FunctionSpace_String {
 
     public static java.lang.String convertToValidFileName(final java.lang.String stringLiteral) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertToValidFileName(stringLiteral);
+    }
+
+    public static java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertDotToSlash(stringLiteral);
     }
 
   }
@@ -96,4 +113,4 @@ public class FunctionSpace_String {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,A0jYrMsOiYijofUaRukyK9GDHD0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,krPZ8VnNn0tSan6eZTG1GPusOaM=] */

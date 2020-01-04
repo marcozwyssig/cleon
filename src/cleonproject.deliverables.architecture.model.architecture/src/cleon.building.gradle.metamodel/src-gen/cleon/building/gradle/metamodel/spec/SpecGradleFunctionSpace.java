@@ -21,14 +21,14 @@ public class SpecGradleFunctionSpace {
   public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
-    public java.lang.String convertToDir();
+    public java.lang.String convertDotToSlash();
 
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
-    public java.lang.String convertToDir(final java.lang.String stringLiteral);
+    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral);
 
   }
   
@@ -39,7 +39,7 @@ public class SpecGradleFunctionSpace {
     private StringLiteralFunctionsImpl() {}
 
     @Override
-    public java.lang.String convertToDir(final java.lang.String stringLiteral) {
+    public java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
       return stringLiteral.replace(".", "/");
       /* End Protected Region   [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
@@ -51,12 +51,12 @@ public class SpecGradleFunctionSpace {
 
     private StringLiteralFunctions() {}
 
-    public static java.lang.String convertToDir(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertToDir(stringLiteral);
+    public static java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertDotToSlash(stringLiteral);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6c993fd9-c0ac-11e7-a130-7198de5ddf3f,8W661s2DVGrpacWA7xhH93hg5QA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6c993fd9-c0ac-11e7-a130-7198de5ddf3f,hIOMHzpnwlfu+nApVZCodq6N2CI=] */

@@ -6,7 +6,6 @@ public class SpecPackage {
   
   public static final Resource Plugin = new Resource("8ae372cf-c0a8-11e7-a130-7198de5ddf3f");
   public static final Resource Plugin_namespace = new Resource("5df15683-c0aa-11e7-a130-7198de5ddf3f");
-  public static final Resource SpecGradleFunctionSpace_StringLiteral = new Resource("6ec63294-c0ac-11e7-a130-7198de5ddf3f");
   public static final Resource Task = new Resource("bc0ee831-c0b0-11e7-9af7-bb81e9802ff6");
   public static final Resource Plugin_tasks = new Resource("c1359212-c0b0-11e7-9af7-bb81e9802ff6");
   
@@ -29,4 +28,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.building.gradle.metamodel.spec,JLAGvuQ3abHsP0+qsrBlauAOYig=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.building.gradle.metamodel.spec,MGt7TRy14q0qOV/VcNWiehAJ+/M=] */

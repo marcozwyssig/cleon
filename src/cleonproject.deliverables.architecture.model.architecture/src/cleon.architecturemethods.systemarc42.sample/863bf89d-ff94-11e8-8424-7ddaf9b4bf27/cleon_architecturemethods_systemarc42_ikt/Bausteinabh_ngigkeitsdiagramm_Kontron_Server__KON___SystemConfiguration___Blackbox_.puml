@@ -1,0 +1,23 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+ESXi__F___N_VMH__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Kontron__F_Server__F___N_KON__O_ : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,2f0472c1-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

@@ -1,0 +1,18 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
+component Chess as "Chess" <<SoftwareSystem>>
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_A -down-> Chess : interaces
+Player__F_B -down-> Chess : interacts
+Player__F_B -down-> Chess : interaces
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,73695871-fa3e-11e8-af47-e5bdd8100025,Hash]

@@ -1,0 +1,32 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+rectangle vCenter__F___N_VCE__O_ as "vCenter (VCE)" <<$server_farm>> {
+}
+rectangle __X_FA__F___N_RSA__O_ as "2FA (RSA)" <<$token_service>> {
+}
+rectangle Linux__F___N_LIN__O_ as "Linux (LIN)" <<$linux>> {
+}
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Virtual__F_Machine__F___N_VM__O_ -down-> ESXi__F___N_VMH__O_ : verwendet 
+vCenter__F___N_VCE__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+__X_FA__F___N_RSA__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Linux__F___N_LIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+Windows__F___N_WIN__O_ -up-> Virtual__F_Machine__F___N_VM__O_ : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,067f1100-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

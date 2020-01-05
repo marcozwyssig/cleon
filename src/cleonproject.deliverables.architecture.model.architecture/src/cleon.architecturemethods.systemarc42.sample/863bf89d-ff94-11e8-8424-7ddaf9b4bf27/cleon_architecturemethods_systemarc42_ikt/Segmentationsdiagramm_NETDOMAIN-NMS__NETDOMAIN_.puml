@@ -1,0 +1,51 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+show stereotype
+
+rectangle SEGMENT__S_NMS as "SEGMENT-NMS" <<segment>> {
+	rectangle ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL as "ZONE-NMS-PEZ-DMZ-EXTERNAL" <<pez>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL as "ZONE-NMS-PEZ-DMZ-INTERNAL" <<pez>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVICES__S_INFRA as "ZONE-NMS-SERVICES-INFRA" <<services>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVER__S_POLYCOM as "ZONE-NMS-SERVER-POLYCOM" <<server>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_SERVER__S_BACKUP as "ZONE-NMS-SERVER-BACKUP" <<server>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_INFRA as "ZONE-NMS-MGMT-INFRA" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_NETWORK as "ZONE-NMS-MGMT-NETWORK" <<mgmt>> {
+		
+	}
+	rectangle ZONE__S_NMS__S_MGMT__S_POLYCOM as "ZONE-NMS-MGMT-POLYCOM" <<mgmt>> {
+		
+	}
+}
+
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_POLYCOM
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_BACKUP
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_POLYCOM
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVER__S_BACKUP
+ZONE__S_NMS__S_PEZ__S_DMZ__S_EXTERNAL -[hidden]down- ZONE__S_NMS__S_SERVICES__S_INFRA
+ZONE__S_NMS__S_PEZ__S_DMZ__S_INTERNAL -[hidden]down- ZONE__S_NMS__S_SERVICES__S_INFRA
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_INFRA
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_NETWORK
+ZONE__S_NMS__S_SERVER__S_POLYCOM -[hidden]down- ZONE__S_NMS__S_MGMT__S_POLYCOM
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_INFRA
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_NETWORK
+ZONE__S_NMS__S_SERVER__S_BACKUP -[hidden]down- ZONE__S_NMS__S_MGMT__S_POLYCOM
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,5bbc76f1-0e24-11e9-8b4c-f9aec93d8b56,Hash]

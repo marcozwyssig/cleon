@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>My_System_Testspezifikation</db:title>
+	
+	<db:chapter xml:id="ea.d7563d97-669e-11e9-9ec9-5fbc84faaeb1">
+		<db:title>Einleitung</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.dcee3945-754a-11e9-8ca5-a73df0698911">
+			<db:title>Referenzen</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="10%" />
+				<db:col width="20%" />
+				<db:col width="30%" />
+				<db:col width="20%" />
+				<db:col width="20%" />		
+				<db:thead>
+					<db:tr>
+						<db:th>Nr.</db:th>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+						<db:th>Version</db:th>
+						<db:th>Quelle</db:th>										
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para><db:emphasis role="strong">[7]</db:emphasis></db:para>
+						</db:td>
+						<db:td>			
+							<db:para>111</db:para>
+						</db:td>
+						<db:td>			
+							<db:para></db:para>
+						</db:td>			
+						<db:td>
+							<db:para>11</db:para>
+						</db:td>			
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>	
+			</db:informaltable>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.4f75a0ad-66a0-11e9-9ec9-5fbc84faaeb1">
+		<db:title>Testvoraussetzungen</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.9da36f25-67eb-11e9-9ec9-5fbc84faaeb1">
+			<db:title>NMS Testvoraussetzungsgruppe</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.5dcb4be9-1db1-11e6-974b-630b7f5d3b95">
+		<db:title>Testspezifikationen</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.d70142d0-4f07-11e9-ba59-f1daaff821cc">
+			<db:title>Testspezifikation: LO01_Document 1</db:title>
+			
+			
+			
+			
+			<db:section xml:id="ea.eb978711-4f8d-11e9-ad5d-977b17aab907">
+				<db:title>Testfallgruppe SU01_Funktionalit&#228;t</db:title>
+				
+				
+				
+				
+				<db:section xml:id="ea.eccfb912-4f8d-11e9-ad5d-977b17aab907">
+					<db:title>TS-002_Requirements_1 (AF-006)</db:title>
+					
+					
+					
+					
+					
+				</db:section>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.061fc789-516a-11e9-bb61-971a423d31e9">
+			<db:title>Testspezifikation: LO01_Document 1</db:title>
+			
+			
+			
+			
+			<db:section xml:id="ea.2cee529e-516a-11e9-bb61-971a423d31e9">
+				<db:title>Systemtest</db:title>
+				
+				
+				
+				
+				<db:section xml:id="ea.2e4cd13a-516a-11e9-bb61-971a423d31e9">
+					<db:title>sss</db:title>
+					
+					
+					
+					
+					<db:section xml:id="ea.3a6e6f87-516a-11e9-bb61-971a423d31e9">
+						<db:title>TS-003_sss_sdfsdf_FunctionalTest</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+					<db:section xml:id="ea.686c0559-754a-11e9-8ca5-a73df0698911">
+						<db:title>TS-004_sss_df_11_Reference</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+				</db:section>
+			</db:section>
+		</db:section>
+		<db:section xml:id="ea.2ae19eed-4f83-11e9-ad5d-977b17aab907">
+			<db:title>Testspezifikation: LO02_System 1</db:title>
+			
+			
+			
+			
+			<db:section xml:id="ea.d7a04446-5157-11e9-bb61-971a423d31e9">
+				<db:title>Systemtest</db:title>
+				
+				
+				
+				
+				<db:section xml:id="ea.ff7eb3ea-4f8c-11e9-ad5d-977b17aab907">
+					<db:title>First Test Group</db:title>
+					
+					
+					
+					
+					<db:section xml:id="ea.084e8ff1-4f8d-11e9-ad5d-977b17aab907">
+						<db:title>TS-001_First Test Group_My Test_FunctionalTest</db:title>
+						
+						
+						
+						
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section xml:id="ea.d8f992ca-5157-11e9-bb61-971a423d31e9">
+				<db:title>Systemintegrationstest</db:title>
+				
+				
+				
+				
+				
+			</db:section>
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.01bcf1b6-5164-11e9-bb61-971a423d31e9">
+		<db:title>Anforderungsabdeckung</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.c7f35684-5169-11e9-bb61-971a423d31e9">
+			<db:title>SU01_Funktionalit&#228;t</db:title>
+			
+			
+			
+			<db:para>In der nachfolgenden Tabelle wird die Abdeckung der Anforderungen auf die einzelnen Bausteine aufgezeigt:</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="10%" />
+				<db:col width="50%" />
+				<db:col width="40%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nr.</db:th>
+						<db:th>Anforderung</db:th>
+						<db:th>Abdeckung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>AF-003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Nice to have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-006</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Beschreibung</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Desc 1</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 2</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 3</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>TS-002_Requirements_1 (AF-006)</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>TS-001_First Test Group_My Test_FunctionalTest</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-007</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.facb470c-0de0-11e6-a33d-238391a68770">
+		<db:title>Glossar</db:title>
+		
+		
+		
+		<db:informaltable style="HERMES 5">
+			<db:col width="25%"/>
+			<db:col width="75%"/>
+			<db:thead>
+				<db:tr>
+					<db:th>Begriff</db:th>
+					<db:th>Erklärung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>ikt_1</db:para>
+					</db:td>
+					<db:td>
+						<db:para>blababasdasd
+						         asdaSDASDADS
+						         ASDASD</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>ikt_2</db:para>
+					</db:td>
+					<db:td>
+						<db:para></db:para>
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>		
+		
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,850ad0f8-4f05-11e9-ba59-f1daaff821cc,Hash] -->

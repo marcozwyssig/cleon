@@ -1,0 +1,26 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+
+show stereotype
+
+rectangle Network as "Network" <<SystemComponent>> {
+	rectangle Pulse__F_Secure__F_Appliance__F___N_PSA__O_ as "Pulse Secure Appliance (PSA)" <<$lock_with_key_security_blue>> {
+	}		
+	rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
+	}		
+	rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,3753ed72-0a96-11e9-9f72-e5610a9d4cd3,Hash]

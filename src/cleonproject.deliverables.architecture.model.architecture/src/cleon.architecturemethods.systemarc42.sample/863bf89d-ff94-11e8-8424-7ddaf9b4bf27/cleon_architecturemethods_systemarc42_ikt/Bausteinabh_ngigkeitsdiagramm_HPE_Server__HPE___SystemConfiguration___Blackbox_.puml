@@ -1,0 +1,20 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle HPE__F_Server__F___N_HPE__O_ as "HPE Server (HPE)" <<$server_generic_blue>> {
+}
+
+rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+}
+ESXi__F___N_VMH__O_ -up-> HPE__F_Server__F___N_HPE__O_ : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,fac18ba3-0e19-11e9-8b4c-f9aec93d8b56,Hash]

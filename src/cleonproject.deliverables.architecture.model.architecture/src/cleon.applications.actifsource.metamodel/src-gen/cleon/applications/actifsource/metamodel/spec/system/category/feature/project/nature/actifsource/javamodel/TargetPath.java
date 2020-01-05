@@ -41,11 +41,11 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   }
     
   @Override
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IResource selectResource() {
-    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IResource.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource);
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource selectResource() {
+    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource);
   }
 
-  public TargetPath setResource(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IResource resource) {
+  public TargetPath setResource(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource resource) {
     _setSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource, resource);
     return this;
   }
@@ -75,13 +75,13 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(ch.actifsource.generator.javamodel.IBuildConfig.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_buildConfigs, visitor);
-    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IResource.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource, visitor);
+    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.javamodel.ITargetPath> selectToMeResource(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IResource object) {
+  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.javamodel.ITargetPath> selectToMeResource(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource.javamodel.IResource object) {
     return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.javamodel.ITargetPath.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource.ActifsourcePackage.TargetPath_resource, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class TargetPath extends DynamicResource implements ITargetPath {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,+GwRx0LKona2aKqWHgJB1icSgFA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,01463ab3-5202-11e5-89ac-35d4069568da,i/5717HOaPlIcOcxdM381rn5zVU=] */

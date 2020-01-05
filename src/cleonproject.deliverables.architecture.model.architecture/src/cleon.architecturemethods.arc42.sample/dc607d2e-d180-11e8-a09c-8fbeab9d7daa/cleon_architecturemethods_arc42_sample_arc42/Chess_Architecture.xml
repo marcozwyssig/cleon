@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>Chess_Architecture</db:title>
+	
+	<db:chapter xml:id="ea.cba854f5-eaa5-11e8-88d3-bfc6b992bdec">
+		<db:title>Einleitung</db:title>
+		
+		
+		
+		
+		
+	</db:chapter>
+	<db:chapter xml:id="ea.4d676de1-11fd-11e5-848b-017a3a98ae34">
+		<db:title>Einf&#252;hrung und Ziele</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.b5bb072c-e101-11e8-8499-a3b0fb3cad90">
+			<db:title>Aufgabenstellung</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>SU01_Funktionalit&#228;t</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+			
+		</db:section>
+		<db:section xml:id="ea.f30baebc-4819-11e6-82f6-0f210765495b">
+			<db:title>Qualit&#228;tsziele</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>dddd</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>ddd</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>ssss</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>ddd</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.55399595-99a9-11e8-8f58-219af2c5d6d9">
+		<db:title>Randbedingungen</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.ecdfbf57-eaa5-11e8-88d3-bfc6b992bdec">
+			<db:title>Technische Randbedingungen</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Randbedingung 1</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sdfasdfadsfaf</db:para>
+							<db:para>sdfadfasdf</db:para>
+							<db:para>asdfasdf</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Randbedingung 2</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sdfasdfadsfaf</db:para>
+							<db:para>sdfadfasdf</db:para>
+							<db:para>asdfasdf</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+		<db:section xml:id="ea.ee9fe5ca-eaa5-11e8-88d3-bfc6b992bdec">
+			<db:title>Organisatorische Randbedingungen</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Name</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Randbedinung 1</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sdfadfa</db:para>
+							<db:para>dfasdfa</db:para>
+							<db:para>sdfasdf</db:para>
+							<db:para>adf</db:para>
+							<db:para>asdfa</db:para>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Randbedinung 2</db:para>
+						</db:td>
+						<db:td>
+							<db:para>sdfadfa</db:para>
+							<db:para>dfasdfa</db:para>
+							<db:para>sdfasdf</db:para>
+							<db:para>adf</db:para>
+							<db:para>asdfa</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.bfc8585e-2661-11e6-ae54-e50d44645ae7">
+		<db:title>Kontextabgrenzung</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.cb488719-2661-11e6-ae54-e50d44645ae7">
+			<db:title>Fachlicher Kontext</db:title>
+			<db:para>In diesem Kapitel werden die Aktoren (Actor) des betrachteten Systems (Chess) aufgeführt.</db:para>
+			
+			<db:mediaobject>
+				<db:imageobject>
+					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Fachliches_Kontext_Diagramm.puml.png" format="PNG"/>
+				</db:imageobject>
+			 	<db:caption>
+			    		<db:para>Fachliches Kontext Diagramm</db:para>
+			  	</db:caption>	
+			</db:mediaobject>
+			<db:para>Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Aktor</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>	
+			<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System.</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="15%" />
+				<db:col width="15%" />
+				<db:col width="20%" />
+				<db:col width="50%" />			
+				<db:thead>
+					<db:tr>
+						<db:th>Von</db:th>
+						<db:th>Zu</db:th>
+						<db:th>Interaktion</db:th>
+						<db:th>Beschreibung</db:th>									
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>gets</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interacts</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player A</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interaces</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interacts</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Player B</db:para>
+						</db:td>
+						<db:td>
+							<db:para>Chess</db:para>
+						</db:td>
+						<db:td>
+							<db:para>interaces</db:para>
+						</db:td>
+						<db:td>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+		<db:section xml:id="ea.d6de1d03-27f5-11e6-b263-9db62e053e59">
+			<db:title>Technischer Kontext</db:title>
+			<db:para>In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme des betrachteten Systems (Chess) aufgeführt.</db:para>
+			
+			<db:mediaobject>
+				<db:imageobject>
+					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Technisches_Kontext_Diagramm.puml.png" format="PNG"/>
+				</db:imageobject>
+			 	<db:caption>
+			    		<db:para>Technisches Kontext Diagramm</db:para>
+			  	</db:caption>	
+			</db:mediaobject>
+			<db:para>Die nachfolgende Tabelle beschreibt die Nachbarsysteme an das betrachtete System.</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nachbarsystem</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>			
+					<db:tr>
+						<db:td>
+							<db:para>FTP</db:para>
+						</db:td>
+						<db:td>
+							<db:para>dsfasdf</db:para>
+						</db:td>
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			<db:section>
+				<db:title>Schnittstellen</db:title>	
+				<db:para>Die nachfolgende Tabelle beschreibt die Schnittstellen des Systems und der Nachbarsysteme:</db:para>
+			<db:informaltable style="HERMES 5">
+					<db:col width="20%" />
+					<db:col width="20%" />
+					<db:col width="30%" />
+					<db:col width="15%" />		
+					<db:col width="15%" />
+					<db:thead>
+						<db:tr>
+							<db:th>System</db:th>
+							<db:th>Schnittstelle (Port-Provider)</db:th>
+							<db:th>Beschreibung</db:th>
+							<db:th>Format</db:th>
+							<db:th>Protokoll</db:th>				
+						</db:tr>
+					</db:thead>
+					<db:tbody>			
+						<db:tr>
+							<db:td>
+								<db:para>FTP</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP_1 Port</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>	
+						<db:tr>
+							<db:td>
+								<db:para>Chess</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Chess_1 Port</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>	
+					</db:tbody>
+				</db:informaltable>	
+			</db:section>
+			<db:section>
+				<db:title>Kommunikationsflüsse</db:title>	
+				<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen den Systemen:</db:para>
+			<db:informaltable style="HERMES 5">
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />
+					<db:col width="15%" />		
+					<db:col width="40%" />			
+					<db:thead>
+						<db:tr>
+							<db:th>Von</db:th>
+							<db:th>Zu</db:th>
+							<db:th>Interaktion</db:th>
+							<db:th>Schnittstelle</db:th>				
+							<db:th>Beschreibung</db:th>									
+						</db:tr>
+					</db:thead>
+					<db:tbody>			
+						<db:tr>
+							<db:td>
+								<db:para>Chess</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP_1</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP_1 Port</db:para>
+							</db:td>				
+							<db:td>
+							</db:td>
+						</db:tr>	
+						<db:tr>
+							<db:td>
+								<db:para>Chess</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP_2</db:para>
+							</db:td>
+							<db:td>
+								<db:para>FTP_1 Port</db:para>
+							</db:td>				
+							<db:td>
+							</db:td>
+						</db:tr>	
+						<db:tr>
+							<db:td>
+								<db:para>FTP</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Chess</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Chess_1</db:para>
+							</db:td>
+							<db:td>
+								<db:para>Chess_1 Port</db:para>
+							</db:td>				
+							<db:td>
+							</db:td>
+						</db:tr>	
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.38080160-e989-11e8-af5c-a5aa9dc47205">
+		<db:title>L&#246;sungsstrategie</db:title>
+		
+		
+		
+		
+		
+	</db:chapter>
+	<db:chapter xml:id="ea.95b4d64f-1dc8-11e6-98be-b1fca84f9ccf">
+		<db:title>Bausteinsicht</db:title>
+		
+		
+		
+		
+		<db:section>
+			<db:title>Ebene 1</db:title>
+			<db:section xml:id="ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 1: Chess &lt;SoftwareSystem&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Chess tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d4d497dd-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d81b37a9-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test3 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da8d9684-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:section xml:id="ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.9241f9dd-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Test1 tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
+						
+					</db:section>
+					<db:section xml:id="ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+				<db:section xml:id="ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.68787e68-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Test2 tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1_2_1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
+						
+					</db:section>
+					<db:section xml:id="ea.6a82cd52-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+				<db:section xml:id="ea.af9f7205-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test3 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.75df20cf-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section xml:id="ea.7516799a-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+		</db:section>
+		<db:section>
+			<db:title>Ebene 2</db:title>
+			<db:section xml:id="ea.d4d497dd-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 2: Test1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para><db:emphasis role="strong">Beschreibung</db:emphasis></db:para>
+				<db:para>dfasdfasdfasdf</db:para>
+				<db:para>sdfgsdfgsdfg</db:para>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Test1 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f6d7de63-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Chess [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				<db:section xml:id="ea.d690edea-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test1_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.932ec9e2-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section xml:id="ea.7f903547-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2 aufgelistet:</db:para>
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF-006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section xml:id="ea.d81b37a9-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 2: Test2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Test2 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test2_2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f94905b4-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Chess [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				<db:section xml:id="ea.d98d3e46-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test2_2 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.a5226e60-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2_2 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section xml:id="ea.79a7737e-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test2_2 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section xml:id="ea.da8d9684-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 2: Test3 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Test3 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test3_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.fb3ebb7f-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Chess [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				<db:section xml:id="ea.db77f691-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test3_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.849d8b1c-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3_1 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section xml:id="ea.8ddcf1f4-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test3_1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+		</db:section>
+		<db:section>
+			<db:title>Ebene 3</db:title>
+			<db:section xml:id="ea.f6d7de63-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 3: Test1_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				<db:para>Test</db:para>
+				<db:para>asdfasdfsadf</db:para>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Test1_2 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3d9526f9-285b-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d4d497dd-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				<db:section xml:id="ea.cce1e8c1-ee58-11e8-9756-27a593be2ffb">
+					<db:title>MyChapter</db:title>
+					
+					
+					
+					
+					
+				</db:section>
+				<db:section xml:id="ea.f7dd4082-285a-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test1_2_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.815c69d1-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Nachfolgend werden die Abhängigkeiten des Bausteins Test1_2_1 tabellarisch aufgelistet:</db:para>
+						<db:informaltable style="HERMES 5">
+							<db:col width="40%" />
+							<db:col width="60%" />
+							<db:thead>
+								<db:tr>
+									<db:th>Abhängigkeit</db:th>
+									<db:th>Beschreibung</db:th>
+								</db:tr>
+							</db:thead>
+							<db:tbody>			
+								<db:tr>
+									<db:td>
+										<db:para>Test2 -> Test1_2_1</db:para>
+									</db:td>
+									<db:td>
+									</db:td>
+								</db:tr>
+							</db:tbody>
+						</db:informaltable>	
+						
+					</db:section>
+					<db:section xml:id="ea.805c37dc-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2_1 erfüllt keine expliziten Anforderungen.</db:para>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+			<db:section xml:id="ea.f94905b4-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 3: Test2_2 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d81b37a9-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				
+			</db:section>
+			<db:section xml:id="ea.fb3ebb7f-285a-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 3: Test3_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Test3 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da8d9684-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				
+			</db:section>
+		</db:section>
+		<db:section>
+			<db:title>Ebene 4</db:title>
+			<db:section xml:id="ea.3d9526f9-285b-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 4: Test1_2_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Nachfolgend werden die enthaltenen Bausteine (Blackbox) des Bausteins Test1_2_1 tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.52fa4b14-285b-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Test1_2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f6d7de63-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				<db:section xml:id="ea.3ec76574-285b-11e8-9af4-b7d7a3bbddc1">
+					<db:title>Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
+					
+					
+					
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
+					<db:itemizedlist>
+						<db:listitem>
+							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
+						</db:listitem>
+						<db:listitem>
+							<db:para>Erfüllte Anforderungen</db:para>
+						</db:listitem>
+					</db:itemizedlist>
+					<db:section xml:id="ea.a8b420b4-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Abh&#228;ngigkeiten</db:title>
+						
+						
+						
+						<db:para>Der Baustein Test1_2_1_1 verfügt über keine Abhängigkeiten zu anderen Bausteinen.</db:para>
+						
+					</db:section>
+					<db:section xml:id="ea.a5f7e6d5-0df0-11e9-a28e-8b950dcca323">
+						<db:title>Erf&#252;llte Anforderungen</db:title>
+						
+						
+						
+						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2_1_1 aufgelistet:</db:para>
+						<db:itemizedlist>
+							<db:listitem>
+								<db:para>AF-006_Requirements_1 (FEA)</db:para>
+							</db:listitem>
+						</db:itemizedlist>
+						
+					</db:section>
+				</db:section>
+			</db:section>
+		</db:section>
+		<db:section>
+			<db:title>Ebene 5</db:title>
+			<db:section xml:id="ea.52fa4b14-285b-11e8-9af4-b7d7a3bbddc1">
+				<db:title>Ebene 5: Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Whitebox)</db:title>
+				
+				
+				
+				<db:para>Dieser Baustein ist Bestandteil des Bausteins Test1_2_1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3d9526f9-285b-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+				
+			</db:section>
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.86e7e102-31f5-11e5-bd99-eda9ce254b0b">
+		<db:title>Verteilsicht</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.31cbdba9-d181-11e8-b18f-df1540bb7a5c">
+			<db:title>Bauen</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.3005c135-d181-11e8-b18f-df1540bb7a5c">
+			<db:title>Paketierung</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.2e214a51-d181-11e8-b18f-df1540bb7a5c">
+			<db:title>Verteilung</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.2b9bd77d-d181-11e8-b18f-df1540bb7a5c">
+			<db:title>Test</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.3422764d-d181-11e8-b18f-df1540bb7a5c">
+			<db:title>&#220;berwachung</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.d004d0f6-eaa5-11e8-88d3-bfc6b992bdec">
+		<db:title>Entwurfsentscheidungen</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.388aa5bd-ece0-11e8-8149-8542373915bf">
+			<db:title>Entwurfsentscheidung Einsatz von PAM in AD </db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Thema</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Fragestellung</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>dsfasdfadsf</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>adsfasdf</db:para>
+								</db:listitem>
+							</db:itemizedlist>					
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Entscheidung</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>dfasdf</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>
+					</db:tr>
+			
+				</db:tbody>
+			</db:informaltable>
+			
+			
+		</db:section>
+		<db:section xml:id="ea.c836bccb-ece0-11e8-8149-8542373915bf">
+			<db:title>Entwurfsentscheidung dsfsdf </db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Thema</db:th>
+						<db:th>Beschreibung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>Fragestellung</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>sdfasdf</db:para>
+								</db:listitem>
+							</db:itemizedlist>					
+						</db:td>
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>Entscheidung</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>adfasdf</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>
+					</db:tr>
+			
+				</db:tbody>
+			</db:informaltable>
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.d178d3ad-eaa5-11e8-88d3-bfc6b992bdec">
+		<db:title>Qualit&#228;tsszenarios</db:title>
+		
+		
+		
+		
+		
+	</db:chapter>
+	<db:chapter xml:id="ea.d2d99c23-eaa5-11e8-88d3-bfc6b992bdec">
+		<db:title>Risiken und technische Schulden</db:title>
+		
+		
+		
+		
+		
+	</db:chapter>
+	<db:chapter xml:id="ea.8d7e385c-2ad9-11e9-b83f-8be423c00623">
+		<db:title>Produktesicht</db:title>
+		
+		
+		
+		<db:informaltable style="HERMES 5">
+			<db:col width="20%" />
+			<db:col width="20%" />
+			<db:col width="25%" />	
+			<db:col width="35%" />			
+			<db:thead>
+				<db:tr>
+					<db:th>Hersteller</db:th>
+					<db:th>Produkt</db:th>
+					<db:th>Verwendung bei Baustein(e)</db:th>						
+					<db:th>Beschreibung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>Microsoft</db:para>
+					</db:td>
+					<db:td>
+						<db:para>Microsoft Windows 2016</db:para>
+					</db:td>
+					<db:td>
+					</db:td>			
+					<db:td>
+					</db:td>			
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>
+		
+	</db:chapter>
+	<db:chapter xml:id="ea.878f2cbb-ee58-11e8-9756-27a593be2ffb">
+		<db:title>Anforderungsabdeckung</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.886baa13-ee58-11e8-9756-27a593be2ffb">
+			<db:title>SU01_Funktionalit&#228;t</db:title>
+			
+			
+			
+			<db:para>In der nachfolgenden Tabelle wird die Abdeckung der Anforderungen auf die einzelnen Bausteine aufgezeigt:</db:para>
+			<db:informaltable style="HERMES 5">
+				<db:col width="10%" />
+				<db:col width="50%" />
+				<db:col width="40%" />
+				<db:thead>
+					<db:tr>
+						<db:th>Nr.</db:th>
+						<db:th>Anforderung</db:th>
+						<db:th>Abdeckung</db:th>
+					</db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>
+							<db:para>AF-003</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-004</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Nice to have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-006</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Beschreibung</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Desc 1</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 2</db:para>													
+										</db:listitem>
+										<db:listitem>
+											<db:para>Desc 3</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.a5f7e6d5-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
+								</db:listitem>
+								<db:listitem>
+									<db:para>Test1_2 &lt;SampleBuildingBlock&gt; [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.7f903547-0df0-11e9-a28e-8b950dcca323"/>]</db:para>
+								</db:listitem>
+							</db:itemizedlist>
+						</db:td>			
+					</db:tr>
+					<db:tr>
+						<db:td>
+							<db:para>AF-007</db:para>
+						</db:td>
+						<db:td>
+							<db:itemizedlist>
+								<db:listitem>
+									<db:para>Formale Definition</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																			
+								<db:listitem>
+									<db:para>Priorität</db:para>
+									<db:itemizedlist>
+										<db:listitem>
+											<db:para>Must have</db:para>													
+										</db:listitem>
+									</db:itemizedlist>
+								</db:listitem>																						
+							</db:itemizedlist>
+						</db:td>
+						<db:td>
+						</db:td>			
+					</db:tr>
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.facb470c-0de0-11e6-a33d-238391a68770">
+		<db:title>Glossar</db:title>
+		
+		
+		
+		<db:informaltable style="HERMES 5">
+			<db:col width="25%"/>
+			<db:col width="75%"/>
+			<db:thead>
+				<db:tr>
+					<db:th>Begriff</db:th>
+					<db:th>Erklärung</db:th>
+				</db:tr>
+			</db:thead>
+			<db:tbody>
+				<db:tr>
+					<db:td>
+						<db:para>ikt_1</db:para>
+					</db:td>
+					<db:td>
+						<db:para>blababasdasd
+						         asdaSDASDADS
+						         ASDASD</db:para>
+					</db:td>
+				</db:tr>
+				<db:tr>
+					<db:td>
+						<db:para>ikt_2</db:para>
+					</db:td>
+					<db:td>
+						<db:para></db:para>
+					</db:td>
+				</db:tr>
+			</db:tbody>
+		</db:informaltable>		
+		
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,bb88c324-11f5-11e5-848b-017a3a98ae34,Hash] -->

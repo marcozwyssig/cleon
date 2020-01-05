@@ -3,7 +3,9 @@
 	<name>cleon.applications.actifsource.sample.category_b.feature_g.metamodel</name>
 	<comment/>
 	<projects>
-			
+		<!-- Begin Protected Region [[customProjects]] -->
+		
+		<!-- End Protected Region   [[customProjects]] -->
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -11,9 +13,21 @@
 			<arguments>
 			</arguments>
 		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.eclipse.buildship.core.gradleprojectbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>ch.actifsource.environment.nature</nature>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>
 	<linkedResources>
 	</linkedResources>
@@ -21,4 +35,4 @@
 	
 	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,ea697a45-2cf9-11e8-b200-0bc7d3f02413,Bjwa03eJ2dcOfnEyP/0tjXrMY2A=] -->
+<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,ea697a45-2cf9-11e8-b200-0bc7d3f02413,s0HVJlB08C2qvuPLuW3/Z3UVBA0=] -->

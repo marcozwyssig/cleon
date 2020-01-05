@@ -22,35 +22,14 @@ public class FunctionSpace_Eclipse {
 
   public static interface IAbstractProjectFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("3c4f08b4-11ea-11e5-b568-55f5f05bd6f6")
-    public java.lang.String GetPath();
-
     @IDynamicResourceExtension.MethodId("20ee793e-44ca-11e5-93ef-c50f9659357a")
     public java.lang.String RenderEclipseDependencies();
 
     @IDynamicResourceExtension.MethodId("2649a006-44ca-11e5-93ef-c50f9659357a")
     public java.lang.String RenderJavaDependencies();
 
-    @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetSpecPackages();
-
-    @IDynamicResourceExtension.MethodId("02281f8a-2a52-11ea-86bd-67705d589838")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetTemplatePackages();
-
-    @IDynamicResourceExtension.MethodId("9e4443b8-2a52-11ea-86bd-67705d589838")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetCustomPackages();
-
     @IDynamicResourceExtension.MethodId("6db5f69b-0bfa-11e6-92b5-27c7a314300c")
     public java.lang.String RenderBuiltinDependencies();
-
-    @IDynamicResourceExtension.MethodId("1cd5a723-434f-11e6-a9d7-97cf4f7c398b")
-    public java.lang.String GetVersion();
-
-    @IDynamicResourceExtension.MethodId("88c4e02e-8e7d-11e8-bdd7-2510a77680f5")
-    public java.lang.String GetAcitfSourceVersion();
-
-    @IDynamicResourceExtension.MethodId("ff154cad-2a69-11ea-825d-f7ca5e5684e4")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetAllPackages();
 
   }
   
@@ -426,4 +405,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,eHSqOJInvQfHvJJSbhFO/Xqk+3Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,vv5u323dC0vE2K9vqp2EclJzsV0=] */

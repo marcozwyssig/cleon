@@ -1,0 +1,451 @@
+= Chess_Architecture
+:toc-title: Inhaltsverzeichnis
+:toc: left
+:numbered:
+:imagesdir: ..
+:imagesdir: ./img
+:imagesoutdir: ./img
+
+
+
+== Einführung und Ziele
+
+
+
+
+=== Qualitätsziele
+
+
+
+
+
+
+=== Aufgabenstellung
+
+
+
+
+
+
+
+== Randbedingungen
+
+
+
+
+=== Technische Randbedingungen
+
+
+
+
+
+
+=== Organisatorische Randbedingungen
+
+
+
+
+
+
+
+== Kontextabgrenzung
+
+
+
+In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
+=== Fachlicher Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+actor Player__F_A as "Player A"
+actor Player__F_B as "Player B"
+component Chess as "Chess" <<SoftwareSystem>>
+Chess -up-> Player__F_A : gets
+Player__F_A -down-> Chess : interacts
+Player__F_A -down-> Chess : interaces
+Player__F_B -down-> Chess : interacts
+Player__F_B -down-> Chess : interaces
+...
+
+In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|Player A
+|
+|====
+|Player B
+|
+|====
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+=== Technischer Kontext
+
+
+[plantuml, png]
+....
+skinparam monochrome true
+skinparam componentStyle uml2
+component FTP as "FTP" <<ExternalSystem>>
+component Chess as "Chess" <<SoftwareSystem>>
+FTP --> Chess : "Chess_1"
+Chess --> FTP : "FTP_1"
+Chess --> FTP : "FTP_2"
+...
+
+In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
+
+Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
+
+[cols="5,10a" options="header"]
+|====
+|Name | Beschreibung
+|FTP
+|
+dsfasdf
+|====
+
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
+
+[cols="5,5,5,5,10a" options="header"]
+|====
+|Von | Zu | Interaktion | Richtung | Beschreibung
+|====
+
+
+
+== Bausteinsicht
+
+
+
+
+=== Ebene 1: Chess <SoftwareSystem> (Whitebox)
+
+
+
+
+==== Test1 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Test2 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== Test3 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+ 
+=== Ebene 2: Test1 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+==== Test1_2 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 2: Test2 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+==== Test2_2 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 2: Test3 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+==== Test3_1 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 3: Test1_2 <SampleBuildingBlock> (Whitebox)
+
+
+Test
+
+asdfasdfsadf
+
+
+==== Test1_2_1 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+==== MyChapter
+
+
+
+
+
+
+
+=== Ebene 3: Test2_2 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+
+
+=== Ebene 3: Test3_1 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+
+
+=== Ebene 4: Test1_2_1 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+==== Test1_2_1_1 <SampleBuildingBlock> (Blackbox)
+
+
+
+
+===== Abhängigkeiten
+
+
+
+
+
+
+===== Erfüllte Anforderungen
+
+
+
+
+
+
+
+
+=== Ebene 5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)
+
+
+
+
+
+
+
+== Verteilsicht
+
+
+
+
+=== Bauen
+
+
+
+
+
+
+=== Paketierung
+
+
+
+
+
+
+=== Verteilung
+
+
+
+
+
+
+=== Test
+
+
+
+
+
+
+=== Überwachung
+
+
+
+
+
+
+
+== Entwurfsentscheidungen
+
+
+
+
+=== Entwurfsentscheidung Einsatz von PAM in AD 
+
+
+
+
+
+
+=== Entwurfsentscheidung dsfsdf 
+
+
+
+
+
+
+
+== Qualitätsszenarios
+
+
+
+
+
+
+== Risiken und technische Schulden
+
+
+
+
+
+
+= Glossar
+
+
+
+ikt_1:: 
+	blababasdasd
+	asdaSDASDADS
+	ASDASD
+
+ikt_2:: 
+
+
+
+

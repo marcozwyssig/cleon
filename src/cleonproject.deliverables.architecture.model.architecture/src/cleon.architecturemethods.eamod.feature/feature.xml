@@ -471,8 +471,9 @@ of their respective owners.
       <import feature="cleon.common.modularity"/>
       <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
-      <import feature="cleon.common.resources"/>
+      <import feature="cleon.common.building"/>
       <import feature="cleon.common.xml"/>
+      <import feature="cleon.common.resources"/>
    </requires>
    <plugin id="cleon.architecturemethods.eamod.metamodel.builtin" download-size="0" install-size="0" version="0.4.148" unpack="false"/>   
 </feature>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
+	<db:title>Sample_Requirements Detailstudie</db:title>
+	
+	<db:chapter xml:id="ea.af571f0a-a6f9-11e8-9c81-8bd68c62e435">
+		<db:title>Treiber</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.af571f01-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Kontext</db:title>
+			
+			<db:para>Kontext </db:para>
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.b8339a50-202c-11e9-83b3-a16e26b4cc59">
+			<db:title>KO-Kriterien</db:title>
+			
+			
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="60%" />	
+				<db:thead>
+				    <db:tr>
+				        <db:th>KO-Kriterium</db:th>
+				        <db:th>Beschreibung</db:th>
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>adsfasdf</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-006_Requirements_1 (FEA) (Must have)</db:td>
+						<db:td>
+							<db:para>Beschreibung:</db:para>		
+							<db:para>Desc 1</db:para>		
+							<db:para>Desc 2</db:para>		
+							<db:para>Desc 3</db:para>		
+							<db:para></db:para>		
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>		
+						</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-007_sss (FEA) (Must have)</db:td>
+						<db:td>
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>		
+						</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-003_Requirements_2_(ssss) (CAP) (Must have)</db:td>
+						<db:td>
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Das Gewicht des Smartphone muss kleiner gleich 100g sein</db:para>		
+						</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-002_Constraint (CAP) (Must have)</db:td>
+						<db:td>
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Der Auftragnehmer muss ein Betriebshandbuch f&#252;r den MP3-Player auszudrucken</db:para>		
+						</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+		<db:section xml:id="ea.af571f08-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Gewichtungskriterien</db:title>
+			
+			<db:para>asdfasdfasdf</db:para>
+			<db:para>asdfasdfasdf</db:para>
+			<db:para>asdfasdf</db:para>
+			<db:para>s</db:para>
+			
+			<db:informaltable style="HERMES 5">
+				<db:col width="40%" />
+				<db:col width="40%" />	
+				<db:col width="20%" />
+				<db:thead>
+				    <db:tr>
+				        <db:th>Gewichtungskriterium</db:th>
+				        <db:th>Beschreibung</db:th>
+				        <db:th>Gewichtung</db:th>	        
+				    </db:tr>
+				</db:thead>
+				<db:tbody>
+					<db:tr>
+						<db:td>OPEX</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+						<db:td>30.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>Termin</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+						<db:td>10.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-004_Requirements_2_1 (CAP) (Nice to have)</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+						<db:td>25.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>AF-001_ddd (CAP) (Nice to have)</db:td>
+						<db:td>
+							<db:para>Formale Definition:</db:para>		
+							<db:para>Die Aussenh&#252;lle des Smartphones kann so gestaltet sein, dass das Smartphone bei einer Umgebungstemperatur von -20&#176;C bis 60&#176;C betrieben werden kann    </db:para>		
+						</db:td>
+						<db:td>25.00%</db:td>
+					</db:tr>			
+					<db:tr>
+						<db:td>MyNamedCriteria</db:td>
+						<db:td>
+							<db:para></db:para>		
+						</db:td>
+						<db:td>10.00%</db:td>
+					</db:tr>			
+				</db:tbody>
+			</db:informaltable>
+			
+		</db:section>
+		<db:section xml:id="ea.af571f09-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>sss</db:title>
+			
+			
+			
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.af571f0d-a6f9-11e8-9c81-8bd68c62e435">
+		<db:title>L&#246;sungen</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.af571f0b-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Solution 1</db:title>
+			
+			<db:para>sdfsdf</db:para>
+			<db:para>dfsdfas</db:para>
+			<db:para>asdfasdfasd</db:para>
+			<db:para>fasdfasdf</db:para>
+			<db:para>asdfasdf</db:para>
+			
+			
+			
+		</db:section>
+		<db:section xml:id="ea.af571f0c-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Solution 2</db:title>
+			
+			<db:para>sdfasdfasdfasdf</db:para>
+			
+			
+			
+		</db:section>
+	</db:chapter>
+	<db:chapter xml:id="ea.af571f1e-a6f9-11e8-9c81-8bd68c62e435">
+		<db:title>Auswertung</db:title>
+		
+		
+		
+		
+		<db:section xml:id="ea.af571f14-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Solution 1</db:title>
+			
+			<db:para>asdfasdf</db:para>
+			<db:para>asdfasdf</db:para>
+			
+			<db:section>
+				<db:title>Bewertung der KO-Kriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>adsfasdf</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-006_Requirements_1 (FEA) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-007_sss (FEA) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-003_Requirements_2_(ssss) (CAP) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-002_Constraint (CAP) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Bewertung der Gewichtungskriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Bewertung</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>OPEX (30.00%)</db:td>
+							<db:td>5</db:td>
+							<db:td></db:td>
+							<db:td>1.50 von 1.50</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Termin (10.00%)</db:td>
+							<db:td>5</db:td>
+							<db:td>fasdfasdf</db:td>
+							<db:td>0.50 von 0.50</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-004_Requirements_2_1 (CAP) (Nice to have) (25.00%)</db:td>
+							<db:td>5</db:td>
+							<db:td></db:td>
+							<db:td>1.25 von 1.25</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-001_ddd (CAP) (Nice to have) (25.00%)</db:td>
+							<db:td>5</db:td>
+							<db:td></db:td>
+							<db:td>1.25 von 1.25</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>MyNamedCriteria (10.00%)</db:td>
+							<db:td>5</db:td>
+							<db:td></db:td>
+							<db:td>0.50 von 0.50</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			
+		</db:section>
+		<db:section xml:id="ea.af571f1b-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Solution 2</db:title>
+			
+			<db:para>dfasdf</db:para>
+			<db:para>dsafasdf</db:para>
+			
+			<db:section>
+				<db:title>Bewertung der KO-Kriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>adsfasdf</db:td>
+							<db:td></db:td>
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-006_Requirements_1 (FEA) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Nein</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-007_sss (FEA) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Nein</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-003_Requirements_2_(ssss) (CAP) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Nein</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-002_Constraint (CAP) (Must have)</db:td>
+							<db:td></db:td>
+							<db:td>Nein</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Bewertung der Gewichtungskriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:col width="30%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Kriterium</db:th>
+					        <db:th>Bewertung</db:th>
+					        <db:th>Einschätzung</db:th>	        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>OPEX (30.00%)</db:td>
+							<db:td>0</db:td>
+							<db:td></db:td>
+							<db:td>0.00 von 1.50</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Termin (10.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td>dsfasdfasdf</db:td>
+							<db:td>0.20 von 0.50</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-004_Requirements_2_1 (CAP) (Nice to have) (25.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.50 von 1.25</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>AF-001_ddd (CAP) (Nice to have) (25.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.50 von 1.25</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>MyNamedCriteria (10.00%)</db:td>
+							<db:td>2</db:td>
+							<db:td></db:td>
+							<db:td>0.20 von 0.50</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			
+		</db:section>
+		<db:section xml:id="ea.af571f1d-a6f9-11e8-9c81-8bd68c62e435">
+			<db:title>Fazit</db:title>
+			
+			
+			<db:section>
+				<db:title>Auswertung der KO-Kriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="50%" />
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Lösung</db:th>
+					        <db:th>Erfüllte Kriterien</db:th>		        
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Solution 1</db:td>
+							<db:td>5 von 5</db:td>				
+							<db:td>Ja</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Solution 2</db:td>
+							<db:td>1 von 5</db:td>				
+							<db:td>Nein</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			<db:section>
+				<db:title>Auswertung der Gewichtungskriterien</db:title>
+			<db:informaltable style="HERMES 5">
+					<db:col width="30%" />
+					<db:col width="50%" />	
+					<db:col width="20%" />	
+					<db:thead>
+					    <db:tr>
+					        <db:th>Lösung</db:th>
+					        <db:th>Auswertung [%]</db:th>
+					        <db:th>Auswertung</db:th>
+					    </db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>Solution 1</db:td>
+							<db:td>100.00%</db:td>
+							<db:td>5.00 von 5.00</db:td>
+						</db:tr>			
+						<db:tr>
+							<db:td>Solution 2</db:td>
+							<db:td>28.00%</db:td>
+							<db:td>1.40 von 5.00</db:td>
+						</db:tr>			
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
+			
+			<db:para>Das Fazit der Auswertung ist, dass die Lösung "Solution 1" zu bevorzugen ist.</db:para>
+			
+			
+		</db:section>
+	</db:chapter>
+</db:book>
+<!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,af571f00-a6f9-11e8-9c81-8bd68c62e435,Hash] -->

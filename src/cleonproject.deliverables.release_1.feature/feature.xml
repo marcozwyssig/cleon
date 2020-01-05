@@ -471,8 +471,9 @@ of their respective owners.
       <import feature="cleon.common.modularity"/>
       <import feature="cleon.common.actifsource"/>
       <import feature="cleon.common.doc"/>
-      <import feature="cleon.common.resources"/>
+      <import feature="cleon.common.building"/>
       <import feature="cleon.common.xml"/>
+      <import feature="cleon.common.resources"/>
    </requires>
    <plugin id="cleonproject.deliverables.release_1.model.project.builtin" download-size="0" install-size="0" version="0.3.11" unpack="false"/>   
 </feature>

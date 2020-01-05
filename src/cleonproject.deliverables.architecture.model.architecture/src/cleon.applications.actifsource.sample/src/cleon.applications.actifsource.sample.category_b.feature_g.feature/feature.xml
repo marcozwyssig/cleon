@@ -465,10 +465,14 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       <import feature="cleon.applications.actifsource.sample.category_b.feature_k"/>
+      <import feature="cleon.common.doc"/>
       <import feature="cleon.applications.actifsource.sample.category_a.feature_c"/>
       <import feature="cleon.applications.actifsource.sample.category_a.feature_b"/>
       <import feature="cleon.applications.actifsource.sample.category_a.builtin_a"/>
       <import feature="cleon.applications.actifsource.sample.category_a.builtin_b"/>
+      <import feature="cleon.common.building"/>
+      <import feature="cleon.common.xml"/>
+      <import feature="cleon.common.resources"/>
    </requires>
    <plugin id="cleon.applications.actifsource.sample.category_b.feature_g.metamodel.builtin" download-size="0" install-size="0" version="0.1.0" unpack="false"/>   
 </feature>

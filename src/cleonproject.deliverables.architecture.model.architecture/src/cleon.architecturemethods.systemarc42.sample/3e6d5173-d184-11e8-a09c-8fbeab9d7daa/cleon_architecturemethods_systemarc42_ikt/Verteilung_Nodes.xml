@@ -1,0 +1,6195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<nodes>
+	<node>
+		<name>Vorproduktion</name>
+		<description></description>
+		<container></container>    
+		<environment>Vorproduktion-Umgebung</environment>
+		<location></location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Environment</type>
+	</node>
+	<node>
+		<name>Produktions</name>
+		<description>Die Produktions-Umgebung bildet die Produktion des System IKT resp. des Systems POLYCOM IP ab. </description>
+		<container></container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Environment</type>
+	</node>
+	<node>
+		<name>TN NMS (NMS)</name>
+		<description></description>
+		<container>Produktions</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>NMS - Stao A</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Standort</type>
+	</node>
+	<node>
+		<name>BSS-NMS-BABS-00</name>
+		<description></description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>BSS</type>
+		<product>Hewlett Packard Store Once</product>
+		<product_variant>Hewlett Packard Store Once 3540 24TB Drive Bundle  </product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-00</name>
+		<description>VMH f&#252;r Netzwerkmanagement</description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Network CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPR-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>PRP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>PRP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRP</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPM-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPL-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>NPS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>NPS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>NPS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description>VMH f&#252;r IKT Management</description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VCE-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VCE</type>
+		<product>VMware vCenter</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBM</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>MCR-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>MCR-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCR</type>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>EPO</type>
+		<product>Microsoft SQL Express</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description></description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH PEZ CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRX</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VBP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VBP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBP</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>WUS-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>WUS-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WUS</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RHS</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server MDC CG2300</product_variant>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>PSA-NMS-BABS-00</name>
+		<description></description>
+		<container>NMS - Stao A</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao A</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>PSA</type>
+		<product>PulseSecure Pulse Secure Appliance</product>
+		<product_variant>PulseSecure Pulse Secure Appliance PSA3000-NFR 3000</product_variant>
+	</node>
+	<node>
+		<name>NMS - Stao B</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Standort</type>
+	</node>
+	<node>
+		<name>BSS-NMS-BABS-10</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>BSS</type>
+		<product>Hewlett Packard Store Once</product>
+		<product_variant>Hewlett Packard Store Once 3540 24TB Drive Bundle  </product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-10</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Network CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPR-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>PRP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>PRP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRP</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPM-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPL-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>NPS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>NPS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>NPS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-12</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH PEZ CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-12</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>PRX-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>PRX-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRX</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-11</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-11</name>
+		<description></description>
+		<container>VBP-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-11</name>
+		<description></description>
+		<container>VBP-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBP</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-11</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-11</name>
+		<description></description>
+		<container>WUS-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-11</name>
+		<description></description>
+		<container>WUS-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WUS</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>RHS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>RHS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RHS</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server MDC CG2300</product_variant>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>PSA-NMS-BABS-10</name>
+		<description></description>
+		<container>NMS - Stao B</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>NMS - Stao B</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>PSA</type>
+		<product>PulseSecure Pulse Secure Appliance</product>
+		<product_variant>PulseSecure Pulse Secure Appliance PSA3000-NFR 3000</product_variant>
+	</node>
+	<node>
+		<name>EAZS</name>
+		<description></description>
+		<container>Produktions</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Standort</type>
+	</node>
+	<node>
+		<name>TN EAZS (906)</name>
+		<description></description>
+		<container>EAZS</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-906-BABS-00</name>
+		<description></description>
+		<container>TN EAZS (906)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>VMH-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-906-BABS-00</name>
+		<description></description>
+		<container>DFS-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-906-BABS-00</name>
+		<description></description>
+		<container>DFS-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-906-BABS-00</name>
+		<description></description>
+		<container>RDC-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-906-BABS-00</name>
+		<description></description>
+		<container>RDC-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-906-BABS-00</name>
+		<description></description>
+		<container>SPM-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-906-BABS-00</name>
+		<description></description>
+		<container>SPM-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-906-BABS-00</name>
+		<description></description>
+		<container>AM-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-906-BABS-00</name>
+		<description></description>
+		<container>AM-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-906-BABS-00</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-906-BABS-00</name>
+		<description></description>
+		<container>CDF-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-906-BABS-00</name>
+		<description></description>
+		<container>CDF-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>VMH-906-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>JMP-906-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>JMP-906-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-906-BABS-10</name>
+		<description></description>
+		<container>TN EAZS (906)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>VMH-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-906-BABS-10</name>
+		<description></description>
+		<container>DFS-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-906-BABS-10</name>
+		<description></description>
+		<container>DFS-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-906-BABS-10</name>
+		<description></description>
+		<container>RDC-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-906-BABS-10</name>
+		<description></description>
+		<container>RDC-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-906-BABS-10</name>
+		<description></description>
+		<container>SPM-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-906-BABS-10</name>
+		<description></description>
+		<container>SPM-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-906-BABS-10</name>
+		<description></description>
+		<container>AM-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-906-BABS-10</name>
+		<description></description>
+		<container>AM-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-906-BABS-10</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-906-BABS-10</name>
+		<description></description>
+		<container>CDF-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-906-BABS-10</name>
+		<description></description>
+		<container>CDF-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>VMH-906-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>JMP-906-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-906-BABS-01</name>
+		<description></description>
+		<container>JMP-906-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (906)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>TN EAZS (907)</name>
+		<description></description>
+		<container>EAZS</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-907-BABS-00</name>
+		<description></description>
+		<container>TN EAZS (907)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>VMH-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-907-BABS-00</name>
+		<description></description>
+		<container>DFS-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-907-BABS-00</name>
+		<description></description>
+		<container>DFS-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-907-BABS-00</name>
+		<description></description>
+		<container>RDC-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-907-BABS-00</name>
+		<description></description>
+		<container>RDC-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-907-BABS-00</name>
+		<description></description>
+		<container>SPM-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-907-BABS-00</name>
+		<description></description>
+		<container>SPM-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-907-BABS-00</name>
+		<description></description>
+		<container>AM-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-907-BABS-00</name>
+		<description></description>
+		<container>AM-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-907-BABS-00</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-907-BABS-00</name>
+		<description></description>
+		<container>CDF-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-907-BABS-00</name>
+		<description></description>
+		<container>CDF-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>VMH-907-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>JMP-907-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>JMP-907-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-907-BABS-10</name>
+		<description></description>
+		<container>TN EAZS (907)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>VMH-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-907-BABS-10</name>
+		<description></description>
+		<container>DFS-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-907-BABS-10</name>
+		<description></description>
+		<container>DFS-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-907-BABS-10</name>
+		<description></description>
+		<container>RDC-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-907-BABS-10</name>
+		<description></description>
+		<container>RDC-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-907-BABS-10</name>
+		<description></description>
+		<container>SPM-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-907-BABS-10</name>
+		<description></description>
+		<container>SPM-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-907-BABS-10</name>
+		<description></description>
+		<container>AM-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-907-BABS-10</name>
+		<description></description>
+		<container>AM-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-907-BABS-10</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-907-BABS-10</name>
+		<description></description>
+		<container>CDF-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-907-BABS-10</name>
+		<description></description>
+		<container>CDF-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>VMH-907-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>JMP-907-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-907-BABS-01</name>
+		<description></description>
+		<container>JMP-907-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN EAZS (907)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>TN Simulation NMS (NMS)</name>
+		<description></description>
+		<container>EAZS</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>BSS-NMS-BABS-10</name>
+		<description></description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>BSS</type>
+		<product>Hewlett Packard Store Once</product>
+		<product_variant>Hewlett Packard Store Once 3520 12TB Drive Bundle  </product_variant>
+	</node>
+	<node>
+		<name>BSS-NMS-BABS-00</name>
+		<description></description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>BSS</type>
+		<product>Hewlett Packard Store Once</product>
+		<product_variant>Hewlett Packard Store Once 3520 12TB Drive Bundle  </product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description>VMH f&#252;r IKT Management</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VCE-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VCE</type>
+		<product>VMware vCenter</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBM</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>EPO</type>
+		<product>Microsoft SQL Express</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description>VMH f&#252;r PEZ</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH PEZ CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRX</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VBP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-01</name>
+		<description></description>
+		<container>VBP-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBP</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>WUS-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-01</name>
+		<description></description>
+		<container>WUS-NMS-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WUS</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RHS</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description>Kontron Server f&#252;r MDC</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server MDC CG2300</product_variant>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description>VMH f&#252;r IKT Management</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-12</name>
+		<description>VMH f&#252;r PEZ</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH PEZ CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-12</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>PRX-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-10</name>
+		<description></description>
+		<container>PRX-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRX</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-10</name>
+		<description></description>
+		<container>VBP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBP-NMS-BABS-10</name>
+		<description></description>
+		<container>VBP-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBP</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-10</name>
+		<description></description>
+		<container>WUS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-10</name>
+		<description></description>
+		<container>WUS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WUS</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-12</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>RHS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-10</name>
+		<description></description>
+		<container>RHS-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RHS</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description>Kontron Server f&#252;r MDC</description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server MDC CG2300</product_variant>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>PSA-NMS-BABS-00</name>
+		<description></description>
+		<container>TN Simulation NMS (NMS)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location>EAZS</location>
+		<subnetnode>TN Simulation NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>PSA</type>
+		<product>PulseSecure Pulse Secure Appliance</product>
+		<product_variant>PulseSecure Pulse Secure Appliance PSA3000-NFR 3000</product_variant>
+	</node>
+	<node>
+		<name>TN FUB (50X)</name>
+		<description></description>
+		<container>Produktions</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-50X-BABS-00</name>
+		<description></description>
+		<container>TN FUB (50X)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>VMH-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-50X-BABS-00</name>
+		<description></description>
+		<container>DFS-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-50X-BABS-00</name>
+		<description></description>
+		<container>DFS-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-50X-BABS-00</name>
+		<description></description>
+		<container>RDC-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-50X-BABS-00</name>
+		<description></description>
+		<container>RDC-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-50X-BABS-00</name>
+		<description></description>
+		<container>SPM-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-50X-BABS-00</name>
+		<description></description>
+		<container>SPM-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-50X-BABS-00</name>
+		<description></description>
+		<container>AM-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-50X-BABS-00</name>
+		<description></description>
+		<container>AM-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-50X-BABS-00</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-50X-BABS-00</name>
+		<description></description>
+		<container>CDF-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-50X-BABS-00</name>
+		<description></description>
+		<container>CDF-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-50X-BABS-01</name>
+		<description></description>
+		<container>VMH-50X-BABS-00</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-50X-BABS-01</name>
+		<description></description>
+		<container>JMP-50X-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-50X-BABS-01</name>
+		<description></description>
+		<container>JMP-50X-BABS-01</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name></name>
+		<description></description>
+		<container>TN FUB (50X)</container>    
+		<environment>Produktions-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN FUB (50X)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+		<product>Hewlett Packard Proliant DL360</product>
+		<product_variant>Hewlett Packard Proliant DL360 VMH Gen10</product_variant>
+	</node>
+	<node>
+		<name>Test</name>
+		<description>Die Testumgebung (Testbed) wird als Referenz- und Integrationsanalage verwendet, womit alle betrieblichen Aktivit&#228;ten sichergestellt werden k&#246;nnen.</description>
+		<container></container>    
+		<environment>Test-Umgebung</environment>
+		<location></location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Environment</type>
+	</node>
+	<node>
+		<name>Vevey</name>
+		<description></description>
+		<container>Test</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Standort</type>
+	</node>
+	<node>
+		<name>TN NMS (NMS)</name>
+		<description></description>
+		<container>Vevey</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>BSS-NMS-BABS-00</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>BSS</type>
+		<product>Hewlett Packard Store Once</product>
+		<product_variant>Hewlett Packard Store Once 3520 12TB Drive Bundle  </product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description>VMH f&#252;r IKT Management</description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-00</name>
+		<description></description>
+		<container>MCS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-00</name>
+		<description></description>
+		<container>APP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-00</name>
+		<description></description>
+		<container>PRT-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-00</name>
+		<description></description>
+		<container>JMP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCE-NMS-BABS-00</name>
+		<description></description>
+		<container>VCE-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VCE</type>
+		<product>VMware vCenter</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBM-NMS-BABS-00</name>
+		<description></description>
+		<container>VBM-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBM</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>MCR-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCR-NMS-BABS-00</name>
+		<description></description>
+		<container>MCR-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCR</type>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>EPO-NMS-BABS-00</name>
+		<description></description>
+		<container>EPO-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>EPO</type>
+		<product>Microsoft SQL Express</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-00</name>
+		<description></description>
+		<container>CMG-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-00</name>
+		<description></description>
+		<container>DFS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPR-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>PRP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-00</name>
+		<description></description>
+		<container>PRP-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRP</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPM-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-00</name>
+		<description></description>
+		<container>VCPL-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>NPS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-00</name>
+		<description></description>
+		<container>NPS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>NPS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-02</name>
+		<description></description>
+		<container>JMP-NMS-BABS-02</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-00</name>
+		<description></description>
+		<container>MDC-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-00</name>
+		<description></description>
+		<container>WUS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>WUS-NMS-BABS-00</name>
+		<description></description>
+		<container>WUS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WUS</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>RHS-NMS-BABS-00</name>
+		<description></description>
+		<container>RHS-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RHS</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH PEZ CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-02</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>VMH-NMS-BABS-02</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRX-NMS-BABS-00</name>
+		<description></description>
+		<container>PRX-NMS-BABS-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRX</type>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-NMS-BABS-11</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MCS-NMS-BABS-10</name>
+		<description></description>
+		<container>MCS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MCS</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>APP-NMS-BABS-10</name>
+		<description></description>
+		<container>APP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>APP</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRT-NMS-BABS-10</name>
+		<description></description>
+		<container>PRT-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRT</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-01</name>
+		<description></description>
+		<container>JMP-NMS-BABS-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>LIN</type>
+	</node>
+	<node>
+		<name>CMG-NMS-BABS-10</name>
+		<description></description>
+		<container>CMG-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>CMG</type>
+		<product>Puppet Labs Puppet</product>
+		<product>Foreman Foreman</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-NMS-BABS-10</name>
+		<description></description>
+		<container>DFS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPR-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPR-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>PRP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>PRP-NMS-BABS-10</name>
+		<description></description>
+		<container>PRP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>PRP</type>
+		<product>Paessler PRTG</product>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPM-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPM-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VCPL-NMS-BABS-10</name>
+		<description></description>
+		<container>VCPL-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>NPS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>NPS-NMS-BABS-10</name>
+		<description></description>
+		<container>NPS-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>NPS</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-10</name>
+		<description></description>
+		<container>JMP-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-NMS-BABS-12</name>
+		<description></description>
+		<container>JMP-NMS-BABS-12</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>VMH-NMS-BABS-11</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>MDC-NMS-BABS-10</name>
+		<description></description>
+		<container>MDC-NMS-BABS-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>MDC</type>
+	</node>
+	<node>
+		<name>PSA-NMS-BABS-00</name>
+		<description></description>
+		<container>TN NMS (NMS)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN NMS (NMS)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>PSA</type>
+		<product>PulseSecure Pulse Secure Appliance</product>
+		<product_variant>PulseSecure Pulse Secure Appliance PSA3000-NFR 3000</product_variant>
+	</node>
+	<node>
+		<name>TN RA1 (984)</name>
+		<description></description>
+		<container>Vevey</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-984-POOL-00</name>
+		<description></description>
+		<container>TN RA1 (984)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-984-POOL-00</name>
+		<description></description>
+		<container>DFS-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-984-POOL-00</name>
+		<description></description>
+		<container>DFS-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-984-POOL-00</name>
+		<description></description>
+		<container>RDC-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-984-POOL-00</name>
+		<description></description>
+		<container>RDC-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-984-POOL-00</name>
+		<description></description>
+		<container>SPM-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-984-POOL-00</name>
+		<description></description>
+		<container>SPM-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-984-POOL-00</name>
+		<description></description>
+		<container>AM-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-984-POOL-00</name>
+		<description></description>
+		<container>AM-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-984-POOL-00</name>
+		<description></description>
+		<container>CDF-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-984-POOL-00</name>
+		<description></description>
+		<container>CDF-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-984-POOL-00</name>
+		<description></description>
+		<container>VMH-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-984-POOL-00</name>
+		<description></description>
+		<container>JMP-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-984-POOL-00</name>
+		<description></description>
+		<container>JMP-984-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VMH-984-POOL-10</name>
+		<description></description>
+		<container>TN RA1 (984)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+	</node>
+	<node>
+		<name>VMH-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-984-POOL-10</name>
+		<description></description>
+		<container>DFS-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-984-POOL-10</name>
+		<description></description>
+		<container>DFS-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-984-POOL-10</name>
+		<description></description>
+		<container>RDC-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-984-POOL-10</name>
+		<description></description>
+		<container>RDC-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-984-POOL-10</name>
+		<description></description>
+		<container>SPM-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-984-POOL-10</name>
+		<description></description>
+		<container>SPM-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-984-POOL-10</name>
+		<description></description>
+		<container>AM-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-984-POOL-10</name>
+		<description></description>
+		<container>AM-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-984-POOL-10</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-984-POOL-10</name>
+		<description></description>
+		<container>CDF-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-984-POOL-10</name>
+		<description></description>
+		<container>CDF-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-984-POOL-01</name>
+		<description></description>
+		<container>VMH-984-POOL-10</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-984-POOL-01</name>
+		<description></description>
+		<container>JMP-984-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-984-POOL-01</name>
+		<description></description>
+		<container>JMP-984-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA1 (984)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>TN RA2 (986)</name>
+		<description></description>
+		<container>Vevey</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-986-POOL-00</name>
+		<description></description>
+		<container>TN RA2 (986)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-986-POOL-00</name>
+		<description></description>
+		<container>DFS-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-986-POOL-00</name>
+		<description></description>
+		<container>DFS-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-986-POOL-00</name>
+		<description></description>
+		<container>RDC-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-986-POOL-00</name>
+		<description></description>
+		<container>RDC-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-986-POOL-00</name>
+		<description></description>
+		<container>SPM-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-986-POOL-00</name>
+		<description></description>
+		<container>SPM-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-986-POOL-00</name>
+		<description></description>
+		<container>AM-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-986-POOL-00</name>
+		<description></description>
+		<container>AM-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-986-POOL-00</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-986-POOL-00</name>
+		<description></description>
+		<container>CDF-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-986-POOL-00</name>
+		<description></description>
+		<container>CDF-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-986-POOL-01</name>
+		<description></description>
+		<container>VMH-986-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-986-POOL-01</name>
+		<description></description>
+		<container>JMP-986-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-986-POOL-01</name>
+		<description></description>
+		<container>JMP-986-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN RA2 (986)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>TN IA1 (981)</name>
+		<description></description>
+		<container>Vevey</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>VMH-981-POOL-00</name>
+		<description></description>
+		<container>TN IA1 (981)</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>KON</type>
+		<product>Arrows Kontron Server</product>
+		<product_variant>Arrows Kontron Server VMH Infra CG2300</product_variant>
+	</node>
+	<node>
+		<name>VMH-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VMH</type>
+		<product>VMware ESXi</product>
+	</node>
+	<node>
+		<name>DFS-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>DFS-981-POOL-00</name>
+		<description></description>
+		<container>DFS-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>DFS-981-POOL-00</name>
+		<description></description>
+		<container>DFS-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>DFS</type>
+	</node>
+	<node>
+		<name>RDC-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>RDC-981-POOL-00</name>
+		<description></description>
+		<container>RDC-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>RDC-981-POOL-00</name>
+		<description></description>
+		<container>RDC-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>RDC</type>
+	</node>
+	<node>
+		<name>SPM-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>SPM-981-POOL-00</name>
+		<description></description>
+		<container>SPM-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>SPM-981-POOL-00</name>
+		<description></description>
+		<container>SPM-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>AM-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>AM-981-POOL-00</name>
+		<description></description>
+		<container>AM-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>AM-981-POOL-00</name>
+		<description></description>
+		<container>AM-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>CDF-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>CDF-981-POOL-00</name>
+		<description></description>
+		<container>CDF-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>CDF-981-POOL-00</name>
+		<description></description>
+		<container>CDF-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Applikation</type>
+	</node>
+	<node>
+		<name>JMP-981-POOL-01</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>JMP-981-POOL-01</name>
+		<description></description>
+		<container>JMP-981-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>JMP-981-POOL-01</name>
+		<description></description>
+		<container>JMP-981-POOL-01</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>JMP</type>
+	</node>
+	<node>
+		<name>VBP-981-POOL-00</name>
+		<description></description>
+		<container>VMH-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VM</type>
+	</node>
+	<node>
+		<name>VBP-981-POOL-00</name>
+		<description></description>
+		<container>VBP-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+		<product>Microsoft Windows Server</product>
+		<product>McAfee Endpoint</product>
+	</node>
+	<node>
+		<name>VBP-981-POOL-00</name>
+		<description></description>
+		<container>VBP-981-POOL-00</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA1 (981)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>VBP</type>
+		<product>Veeam Veeam  </product>
+	</node>
+	<node>
+		<name>TN IA2 (982)</name>
+		<description></description>
+		<container>Vevey</container>    
+		<environment>Test-Umgebung</environment>
+		<location>Vevey</location>
+		<subnetnode>TN IA2 (982)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+</nodes>
+<!-- Actifsource ID=[65441468-2aad-11e9-a3f8-336d9e792e17,d020f1af-d10d-11e8-91a3-55b260d274ec,bd0f0925-ef19-11e8-be8a-b748ff8f0a75,EmGL/pg1lruttuUui4j1fsd/GEc=] -->

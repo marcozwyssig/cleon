@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<nodes>
+	<node>
+		<name>QA</name>
+		<description></description>
+		<container></container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Environment</type>
+	</node>
+	<node>
+		<name>TN Domain A (1)</name>
+		<description></description>
+		<container>QA</container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain A (1)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>
+		      </name>
+		<description></description>
+		<container>TN Domain A (1)</container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain A (1)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+	</node>
+	<node>
+		<name></name>
+		<description></description>
+		<container>
+		           </container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain A (1)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+	</node>
+	<node>
+		<name></name>
+		<description></description>
+		<container>
+		           </container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain A (1)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+	</node>
+	<node>
+		<name>TN Domain B (2)</name>
+		<description></description>
+		<container>QA</container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain B (2)</subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Teilnetz</type>
+	</node>
+	<node>
+		<name>
+		      </name>
+		<description></description>
+		<container>TN Domain B (2)</container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain B (2)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>HW</materialtype>
+		<type>HPE</type>
+	</node>
+	<node>
+		<name></name>
+		<description></description>
+		<container>
+		           </container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain B (2)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+	</node>
+	<node>
+		<name></name>
+		<description></description>
+		<container>
+		           </container>    
+		<environment>QA-Umgebung</environment>
+		<location></location>
+		<subnetnode>TN Domain B (2)</subnetnode>
+		<supplied>false</supplied>
+		<materialtype>SW</materialtype>
+		<type>WIN</type>
+	</node>
+	<node>
+		<name>Produktion</name>
+		<description></description>
+		<container></container>    
+		<environment>Produktion-Umgebung</environment>
+		<location></location>
+		<subnetnode></subnetnode>
+		<supplied>true</supplied>
+		<materialtype>n/a</materialtype>
+		<type>Environment</type>
+	</node>
+</nodes>
+<!-- Actifsource ID=[65441468-2aad-11e9-a3f8-336d9e792e17,7800a67d-d0b0-11e8-b005-f7630e4c29c0,4f1de15f-d0bb-11e8-b005-f7630e4c29c0,dnH+FyAGq23KW211Q5b9ESgm8aQ=] -->

@@ -4,6 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class GradlePackage {
   
+  public static final Resource FunctionSpace_aE_Gradle_Gradle = new Resource("5d935750-2fb3-11ea-a393-0bc3b1f5682f");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +25,4 @@ public class GradlePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.gradle,WnJHpxCsryDVVZM9XzqjdD3ensY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.gradle,OISIBp9g7BRUffTBrgTifmWztuQ=] */

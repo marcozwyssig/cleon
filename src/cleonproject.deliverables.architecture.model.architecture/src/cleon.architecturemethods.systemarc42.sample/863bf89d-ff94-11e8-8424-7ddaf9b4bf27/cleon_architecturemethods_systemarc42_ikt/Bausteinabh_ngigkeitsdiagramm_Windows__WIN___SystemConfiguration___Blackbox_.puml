@@ -1,0 +1,71 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+
+rectangle Kontron__F_Server__F___N_KON__O_ as "Kontron Server (KON)" <<$server_generic_green>> {
+}
+rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+}
+rectangle Network__F_Policy__F_Service__F___N_NPS__O_ as "Network Policy Service (NPS)" <<$credentials>> {
+}
+rectangle Application__F_Server__F___N_APP__O_ as "Application Server (APP)" <<$web_server>> {
+}
+rectangle Issuing__F_CA__F___N_MCS__O_ as "Issuing CA (MCS)" <<$certificate_authority>> {
+}
+rectangle Root__F_CA__F___N_MCR__O_ as "Root CA (MCR)" <<$certificate_authority>> {
+}
+rectangle Jump__F_Host__F___N_JMP__O_ as "Jump Host (JMP)" <<$central_management_service>> {
+}
+rectangle Active__F_Directory__F_Management__F___N_ADM__O_ as "Active Directory Management (ADM)" <<$active_directory>> {
+}
+rectangle Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ as "Endpoint Protection Orchestrator (EPO)" <<$lock_with_key_security>> {
+}
+rectangle Proxy__F___N_PRX__O_ as "Proxy (PRX)" <<$reverse_proxy>> {
+}
+rectangle Distributed__F_File__F_System__F___N_DFS__O_ as "Distributed File System (DFS)" <<$file_server>> {
+}
+rectangle PRTG__F___N_PRT__O_ as "PRTG (PRT)" <<$monitoring_store>> {
+}
+rectangle PRTG__F_Probe__F___N_PRP__O_ as "PRTG Probe (PRP)" <<$monitoring_store>> {
+}
+rectangle Veeam__F_Backup__F_Management__F___N_VBM__O_ as "Veeam Backup Management (VBM)" <<$backup_local>> {
+}
+rectangle Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ as "Windows Server Update Services (WUS)" <<$install>> {
+}
+rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
+}
+rectangle Slave__F_Active__F_Directory__F___N_RDC__O_ as "Slave Active Directory (RDC)" <<$domain_controller>> {
+}
+rectangle Master__F_Active__F_Directory__F___N_MDC__O_ as "Master Active Directory (MDC)" <<$domain_controller>> {
+}
+Windows__F___N_WIN__O_ -down-> Kontron__F_Server__F___N_KON__O_ : verwendet 
+Windows__F___N_WIN__O_ -down-> Virtual__F_Machine__F___N_VM__O_ : verwendet 
+Network__F_Policy__F_Service__F___N_NPS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Application__F_Server__F___N_APP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Issuing__F_CA__F___N_MCS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Root__F_CA__F___N_MCR__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Jump__F_Host__F___N_JMP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Active__F_Directory__F_Management__F___N_ADM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Endpoint__F_Protection__F_Orchestrator__F___N_EPO__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Proxy__F___N_PRX__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Distributed__F_File__F_System__F___N_DFS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F___N_PRT__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+PRTG__F_Probe__F___N_PRP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Management__F___N_VBM__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Windows__F_Server__F_Update__F_Services__F___N_WUS__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Slave__F_Active__F_Directory__F___N_RDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+Master__F_Active__F_Directory__F___N_MDC__O_ -up-> Windows__F___N_WIN__O_ : verwendet
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,f425a675-0e19-11e9-8b4c-f9aec93d8b56,Hash]

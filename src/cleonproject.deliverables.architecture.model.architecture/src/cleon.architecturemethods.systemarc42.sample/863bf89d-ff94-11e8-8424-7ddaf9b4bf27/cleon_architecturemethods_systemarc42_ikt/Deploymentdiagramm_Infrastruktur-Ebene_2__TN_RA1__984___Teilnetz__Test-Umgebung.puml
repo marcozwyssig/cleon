@@ -1,0 +1,60 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+!include <office/servers/server_generic_green>
+!include <office/servers/virtual_application_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/file_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/domain_controller>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/Servers/virtual_server>
+!include <office/Servers/windows_server>
+!include <office/services/central_management_service>
+
+show stereotype
+
+rectangle TN__F_RA1__F___N_984__O_ as "TN RA1 (984)" <<Teilnetz>> {
+	rectangle VMH__S_984__S_POOL__S_00__F___N_KON__O_ as "VMH-984-POOL-00 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_984__S_POOL__S_00__F__aA_Vevey_aC_ as "VMH-984-POOL-00 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+	rectangle VMH__S_984__S_POOL__S_10__F___N_KON__O_ as "VMH-984-POOL-10 (KON)" <<$server_generic_green>> {
+		rectangle VMH__S_984__S_POOL__S_10__F__aA_Vevey_aC_ as "VMH-984-POOL-10 [Vevey]" <<$virtual_application_server>> {
+		
+		}
+	}
+}
+
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,eb9cc27e-0eb1-11e9-9f19-6d15636f4ecc,Hash]

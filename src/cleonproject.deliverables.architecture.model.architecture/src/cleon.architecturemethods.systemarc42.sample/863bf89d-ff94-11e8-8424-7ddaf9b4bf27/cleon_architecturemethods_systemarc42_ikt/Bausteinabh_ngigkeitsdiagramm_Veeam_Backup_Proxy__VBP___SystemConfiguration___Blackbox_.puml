@@ -1,0 +1,20 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+show stereotype
+
+rectangle Veeam__F_Backup__F_Proxy__F___N_VBP__O_ as "Veeam Backup Proxy (VBP)" <<$backup_local>> {
+}
+
+rectangle Windows__F___N_WIN__O_ as "Windows (WIN)" <<$windows_server>> {
+}
+Veeam__F_Backup__F_Proxy__F___N_VBP__O_ -down-> Windows__F___N_WIN__O_ : verwendet 
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,147410c2-0e1a-11e9-8b4c-f9aec93d8b56,Hash]

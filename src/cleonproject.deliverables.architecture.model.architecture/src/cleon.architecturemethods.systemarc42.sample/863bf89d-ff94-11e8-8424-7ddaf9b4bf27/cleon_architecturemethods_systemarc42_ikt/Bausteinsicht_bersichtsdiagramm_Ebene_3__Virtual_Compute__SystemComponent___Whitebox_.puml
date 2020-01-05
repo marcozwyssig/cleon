@@ -1,0 +1,23 @@
+@startuml
+
+skinparam monochrome true
+skinparam componentStyle uml2
+
+
+
+
+show stereotype
+
+rectangle Virtual__F_Compute as "Virtual Compute" <<SystemComponent>> {
+	rectangle Virtual__F_Machine__F___N_VM__O_ as "Virtual Machine (VM)" <<$virtual_server>> {
+	}		
+	rectangle ESXi__F___N_VMH__O_ as "ESXi (VMH)" <<$virtual_application_server>> {
+	}		
+
+}
+
+' Begin Protected Region [[layouting]]
+
+' End Protected Region   [[layouting]]
+@enduml
+' Actifsource ID=[dc5bfacd-eaac-11e8-88d3-bfc6b992bdec,2f1184e0-0a96-11e9-9f72-e5610a9d4cd3,Hash]

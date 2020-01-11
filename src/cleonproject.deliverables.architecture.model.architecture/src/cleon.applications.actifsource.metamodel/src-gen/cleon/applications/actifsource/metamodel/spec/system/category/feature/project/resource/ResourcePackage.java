@@ -9,6 +9,7 @@ public class ResourcePackage {
   public static final Resource LinkedResource_locationURI = new Resource("bae1e78d-5201-11e5-89ac-35d4069568da");
   public static final Resource Directory = new Resource("c8b68e26-5201-11e5-89ac-35d4069568da");
   public static final Resource NamedResource = new Resource("ef449908-2fce-11ea-9afe-a5d974200782");
+  public static final Resource RootDirectory = new Resource("b012f106-3484-11ea-8a90-f5372e2e0d45");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class ResourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource,5KJX7bUohsz1lxlz7EGZ/xJUTPY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.resource,pBaS9hhu8SBxixWC/gkCmAT4Zm8=] */

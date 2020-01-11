@@ -403,6 +403,81 @@ public class FunctionSpace_Eclipse {
 
   }
 
+  public static interface IResourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("909b8f92-3485-11ea-8a90-f5372e2e0d45")
+    public java.lang.String Path();
+
+  }
+  
+  public static interface IResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResourceFunctionsImpl implements IResourceFunctionsImpl {
+
+    public static final IResourceFunctionsImpl INSTANCE = new ResourceFunctionsImpl();
+
+    private ResourceFunctionsImpl() {}
+
+  }
+  
+  public static class ResourceFunctions {
+
+    private ResourceFunctions() {}
+
+  }
+
+  public static interface INamedResourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9f012b42-3485-11ea-8a90-f5372e2e0d45")
+    public java.lang.String Path();
+
+  }
+  
+  public static interface INamedResourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedResourceFunctionsImpl implements INamedResourceFunctionsImpl {
+
+    public static final INamedResourceFunctionsImpl INSTANCE = new NamedResourceFunctionsImpl();
+
+    private NamedResourceFunctionsImpl() {}
+
+  }
+  
+  public static class NamedResourceFunctions {
+
+    private NamedResourceFunctions() {}
+
+  }
+
+  public static interface IRootDirectoryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c3df3055-3485-11ea-8a90-f5372e2e0d45")
+    public java.lang.String Path();
+
+  }
+  
+  public static interface IRootDirectoryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RootDirectoryFunctionsImpl implements IRootDirectoryFunctionsImpl {
+
+    public static final IRootDirectoryFunctionsImpl INSTANCE = new RootDirectoryFunctionsImpl();
+
+    private RootDirectoryFunctionsImpl() {}
+
+  }
+  
+  public static class RootDirectoryFunctions {
+
+    private RootDirectoryFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,vv5u323dC0vE2K9vqp2EclJzsV0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,/E1K4nmkAJMEBTJAgL/Xy8TodB0=] */

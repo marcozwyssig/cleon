@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2fad7962-7232-11e9-8705-4f693d402426,imports]] */
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.*;
+import java.util.Optional;
 /* End Protected Region   [[2fad7962-7232-11e9-8705-4f693d402426,imports]] */
 
 public class FunctionSpace_IP {
@@ -210,6 +211,15 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("678a3870-73e4-11e9-9cd4-8d88045ca5f3")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IAbstractIPv4 Parent();
 
+    @IDynamicResourceExtension.MethodId("8d9e3651-36e8-11ea-bb06-17b9485a5d0a")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_C IPv4_C();
+
+    @IDynamicResourceExtension.MethodId("ad96dfec-36e8-11ea-bb06-17b9485a5d0a")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_B IPv4_B();
+
+    @IDynamicResourceExtension.MethodId("bb126981-36e8-11ea-bb06-17b9485a5d0a")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A IPv4_A();
+
   }
   
   public static interface IIPv4_DFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -360,14 +370,14 @@ public class FunctionSpace_IP {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_A FindIP(final java.lang.String ip, final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange iPRange) {
       /* Begin Protected Region [[7b3e443d-786c-11e9-97e0-b7c808aefc46]] */
-	for( IIPv4_A ipv4 : iPRange.selectIPv4_A())
-	{
-		if( ipv4.selectIp().equals(Integer.parseInt(ip)))
+		for( IIPv4_A ipv4 : iPRange.selectIPv4_A())
 		{
-			return ipv4;
+			if( ipv4.selectIp().equals(Integer.parseInt(ip)))
+			{
+				return ipv4;
+			}
 		}
-	}
-	return null;   
+		return null;   
       /* End Protected Region   [[7b3e443d-786c-11e9-97e0-b7c808aefc46]] */
     }
 
@@ -389,4 +399,7 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,IlZZB0k7c1hpXYxzUtHdJolLHrI=] */
+      /* Begin Protected Region [[e43a099c-36e9-11ea-bb06-17b9485a5d0a]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[e43a099c-36e9-11ea-bb06-17b9485a5d0a]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,JYduy2c7rFbHiFpedJ1Dxjf6hcw=] */

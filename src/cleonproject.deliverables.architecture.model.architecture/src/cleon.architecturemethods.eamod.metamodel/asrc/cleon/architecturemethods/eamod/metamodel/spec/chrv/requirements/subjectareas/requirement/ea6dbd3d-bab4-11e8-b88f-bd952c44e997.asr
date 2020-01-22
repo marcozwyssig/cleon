@@ -23,6 +23,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="d3c2ad89-3d20-11ea-ba6f-8b664cf7f01a" type="resource" guid="d3c25f65-3d20-11ea-ba6f-8b664cf7f01a" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ea6de44f-bab4-11e8-b88f-bd952c44e997" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -108,6 +109,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="d3c2ad89-3d20-11ea-ba6f-8b664cf7f01a">
+      <resource guid="d3c25f65-3d20-11ea-ba6f-8b664cf7f01a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d3c28677-3d20-11ea-ba6f-8b664cf7f01a" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d4e7302c-3d20-11ea-ba6f-8b664cf7f01a" type="literal">cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.AbstractRequirementIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="d3c2ad88-3d20-11ea-ba6f-8b664cf7f01a" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

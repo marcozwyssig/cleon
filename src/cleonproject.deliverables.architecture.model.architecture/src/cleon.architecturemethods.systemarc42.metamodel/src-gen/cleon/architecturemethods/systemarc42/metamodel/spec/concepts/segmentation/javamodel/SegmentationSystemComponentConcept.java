@@ -81,11 +81,11 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecurityZone> selectSecurityZones() {
-    return _getList(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone> selectSecurityZones() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones);
   }
 
-  public SegmentationSystemComponentConcept setSecurityZones(java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecurityZone> securityZones) {
+  public SegmentationSystemComponentConcept setSecurityZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone> securityZones) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, securityZones);
     return this;
   }
@@ -128,16 +128,16 @@ public class SegmentationSystemComponentConcept extends DynamicResource implemen
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemComponent.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemComponentConcept_systemComponent, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectToMeSecurityZones(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecurityZone object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectToMeSecurityZones(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemComponentConcept_securityZones, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,SHZkeQRKzi22tB++OnF7TSRyO4c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f5852a-4b23-11e9-8338-41c203971ecb,yhVI58Haq8zA7vb8H/ucRHN1HiE=] */

@@ -8,8 +8,8 @@ public interface ISegmentationSystemConfigurationComponentConcept extends cleon.
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone> selectSecuritySubZones();
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectSecuritySubZones();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,be4cba9f-0c2a-11e9-83ba-4d57b06560a2,EAnLwCn009Nr+p6unw7RUvVSeO4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,be4cba9f-0c2a-11e9-83ba-4d57b06560a2,O5KzkcAdt+uFhmHPRVuzLJtRR1Q=] */

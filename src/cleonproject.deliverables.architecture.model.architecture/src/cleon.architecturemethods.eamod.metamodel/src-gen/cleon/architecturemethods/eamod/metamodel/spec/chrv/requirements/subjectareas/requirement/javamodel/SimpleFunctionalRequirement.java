@@ -145,12 +145,12 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
+  public cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember selectAuthors() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public SimpleFunctionalRequirement setAuthors(java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
+  public SimpleFunctionalRequirement setAuthors(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember authors) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -310,7 +310,7 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_achieves, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_aspectAffectedRequirements, visitor);
     _acceptMap(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirementAspect.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_aspects, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.complexity.javamodel.IComplexity.class, cleon.common.resources.metamodel.spec.complexity.ComplexityPackage.ComplexityAware_complexity, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_concretizes, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_conflicts, visitor);
@@ -326,4 +326,4 @@ public class SimpleFunctionalRequirement extends DynamicResource implements ISim
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,8auom9hESfTVXg5ZXcVYdrBCCts=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,87710c27-a962-11e5-bda2-a7fc3bd7c783,rK4tmgVo0814jzKkUNLzA+x+NSI=] */

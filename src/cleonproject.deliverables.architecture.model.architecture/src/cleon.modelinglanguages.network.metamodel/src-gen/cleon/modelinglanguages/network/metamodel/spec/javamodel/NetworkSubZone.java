@@ -101,12 +101,12 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> selectNode() {
-    return _getMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_node);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> selectNodes() {
+    return _getMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_nodes);
   }
 
-  public NetworkSubZone setNode(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> node) {
-    _setMap(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_node, node);
+  public NetworkSubZone setNodes(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> nodes) {
+    _setMap(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_nodes, nodes);
     return this;
   }
     
@@ -121,11 +121,11 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   }
     
   @Override
-  public cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone selectSecuritySubZone() {
-    return _getSingle(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone);
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectSecuritySubZone() {
+    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone);
   }
 
-  public NetworkSubZone setSecuritySubZone(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
+  public NetworkSubZone setSecuritySubZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone) {
     _setSingle(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone, securitySubZone);
     return this;
   }
@@ -158,17 +158,17 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IGroup.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GroupAware_groups, visitor);
-    _acceptMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_node, visitor);
+    _acceptMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_nodes, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone, visitor);
+    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectToMeSecuritySubZone(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone object) {
+  public static java.util.List<cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectToMeSecuritySubZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
     return _getToMeList(object.getRepository(), cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_securitySubZone, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,PSE5Smbd58T3XA/16WJHG50nctQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,F/BkNgHmdy1+9HZvQbngUwWgPIs=] */

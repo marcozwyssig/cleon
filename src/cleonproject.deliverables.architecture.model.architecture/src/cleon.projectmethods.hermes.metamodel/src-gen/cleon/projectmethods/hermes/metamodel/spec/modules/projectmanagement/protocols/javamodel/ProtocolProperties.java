@@ -42,12 +42,12 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
+  public cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember selectAuthors() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public ProtocolProperties setAuthors(java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
+  public ProtocolProperties setAuthors(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember authors) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -176,4 +176,4 @@ public class ProtocolProperties extends DynamicResource implements IProtocolProp
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,wxSohS2Kn2Hmi7slUkRC8OzW7rE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,fR5M0qZrqtWAJWop2wqzp6H3XfE=] */

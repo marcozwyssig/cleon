@@ -8,8 +8,8 @@ public interface INetworkSubZone extends cleon.modelinglanguages.network.metamod
   
   // relations
   
-  public cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone selectSecuritySubZone();
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone selectSecuritySubZone();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,HavZ9ENUeIKSMTxQPfe8Ut+KGjg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,yqd3/4NeXuFJzuOC++fMpG3PVto=] */

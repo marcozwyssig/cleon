@@ -7,6 +7,9 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="471179b3-36a6-11ea-9738-7bab3b4eb911" type="resource" guid="47112b8f-36a6-11ea-9738-7bab3b4eb911" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="679da3a8-7ac9-11e9-a70f-4dc03941a024" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -18,10 +21,10 @@
     <object statement-guid="6fc88cd1-7ac9-11e9-a70f-4dc03941a024">
       <resource guid="e18daff1-0930-11e9-8c40-11db3668c0c9">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e18daff3-0930-11e9-8c40-11db3668c0c9" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+          <object statement-guid="e18daff3-0930-11e9-8c40-11db3668c0c9" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e18daff4-0930-11e9-8c40-11db3668c0c9" type="literal">node</object>
+          <object statement-guid="e18daff4-0930-11e9-8c40-11db3668c0c9" type="literal">nodes</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="d3c544c7-7ac4-11e9-bed6-9b9c84f51549">
@@ -47,14 +50,26 @@
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="e18ee878-0930-11e9-8c40-11db3668c0c9" type="resource" guid="d8caf2bc-0930-11e9-8c40-11db3668c0c9" />
         </predicate>
-        <predicate guid="c8b2d87d-ef89-11e5-981e-cb66c689a33f">
-          <object statement-guid="e83cf04b-7ace-11e9-a70f-4dc03941a024" type="resource" guid="3a442d9c-ef8a-11e5-981e-cb66c689a33f" />
-        </predicate>
       </resource>
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="679dcab9-7ac9-11e9-a70f-4dc03941a024" type="literal">AbstractPhysicalNetwork</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="471179b3-36a6-11ea-9738-7bab3b4eb911">
+      <resource guid="47112b8f-36a6-11ea-9738-7bab3b4eb911">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="47112b91-36a6-11ea-9738-7bab3b4eb911" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cb40bdaf-36a6-11ea-9738-7bab3b4eb911" type="literal">cleon.modelinglanguages.network.metamodel.spec.javamodel.AbstractPhysicalNetworkValidatorAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="471152a2-36a6-11ea-9738-7bab3b4eb911" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="6b41cc11-7ac9-11e9-a70f-4dc03941a024" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

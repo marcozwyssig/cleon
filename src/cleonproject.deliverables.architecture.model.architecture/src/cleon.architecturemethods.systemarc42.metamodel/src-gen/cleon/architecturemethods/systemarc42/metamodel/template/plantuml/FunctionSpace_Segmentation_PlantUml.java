@@ -21,7 +21,7 @@ public class FunctionSpace_Segmentation_PlantUml {
   public static interface ISegmentationDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("690e74d7-0e23-11e9-8b4c-f9aec93d8b56")
-    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IZone> SelectZone();
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> SelectZone();
 
     @IDynamicResourceExtension.MethodId("a15643d8-0e23-11e9-8b4c-f9aec93d8b56")
     public java.lang.String RenderUmlElement();
@@ -98,4 +98,4 @@ public class FunctionSpace_Segmentation_PlantUml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30168fe9-0e23-11e9-8b4c-f9aec93d8b56,R5LfAVi1zVv0wqzQgTen/QSvncg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30168fe9-0e23-11e9-8b4c-f9aec93d8b56,DVmxdS3CuLUAEwQlGVWo2EyJJC8=] */

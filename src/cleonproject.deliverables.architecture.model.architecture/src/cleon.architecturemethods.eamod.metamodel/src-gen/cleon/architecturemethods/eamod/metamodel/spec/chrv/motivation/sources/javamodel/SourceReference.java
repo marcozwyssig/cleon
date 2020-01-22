@@ -51,12 +51,12 @@ public class SourceReference extends DynamicResource implements ISourceReference
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
+  public cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember selectAuthors() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public SourceReference setAuthors(java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
+  public SourceReference setAuthors(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember authors) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -97,7 +97,7 @@ public class SourceReference extends DynamicResource implements ISourceReference
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -108,4 +108,4 @@ public class SourceReference extends DynamicResource implements ISourceReference
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,uvOtsWOVfa4zH3sbGg9XTXmT6Pk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c70c4b2-06f6-11e6-8d3e-13e5be4bd43b,CKke5TiXiP/6pDyIWbZVYdmQVCo=] */

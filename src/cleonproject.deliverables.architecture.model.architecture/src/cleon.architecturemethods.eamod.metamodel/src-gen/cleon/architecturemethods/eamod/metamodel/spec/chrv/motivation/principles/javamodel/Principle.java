@@ -98,12 +98,12 @@ public class Principle extends DynamicResource implements IPrinciple {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
+  public cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember selectAuthors() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public Principle setAuthors(java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
+  public Principle setAuthors(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember authors) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -168,7 +168,7 @@ public class Principle extends DynamicResource implements IPrinciple {
     // relations
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.GoalsPackage.GoalAware_achieves, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.principles.javamodel.IPrinciple.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.principles.PrinciplesPackage.Principle_aggregation, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISource.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.SourcesPackage.SourceAware_originatesFromSource, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -181,4 +181,4 @@ public class Principle extends DynamicResource implements IPrinciple {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f06a6ec-a951-11e5-bda2-a7fc3bd7c783,k8Bdtt5gmeXChpPa4lfRNO+u+04=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f06a6ec-a951-11e5-bda2-a7fc3bd7c783,FxIuCdpidPmdS/+dzc9ch3+z7/U=] */

@@ -12,8 +12,8 @@ public interface INetworkNetdomain extends cleon.modelinglanguages.network.metam
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone();
   
-  public cleon.modelinglanguages.network.metamodel.spec.javamodel.IZone selectZone();
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone selectZone();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,S/JyaNZoMwyzEG6VHeN/aN9NKyM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bdcd2f91-7ade-11e9-a70f-4dc03941a024,ZAJRcr+vvFPGAzJ+eraiJbQj574=] */

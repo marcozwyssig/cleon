@@ -8,7 +8,7 @@ public interface ISegmentationConcept extends cleon.architecturemethods.systemar
   
   // relations
   
-  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISegmentationZone> selectSegmentationZone();
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone> selectSegmentationZone();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectSegmentationSystemComponentConcepts();
   
@@ -16,4 +16,4 @@ public interface ISegmentationConcept extends cleon.architecturemethods.systemar
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,5mDRcgyHjAoPB2MSJbP6cJOpoqE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,RFBsSW38LavdO7xf6nx/HMH8HyQ=] */

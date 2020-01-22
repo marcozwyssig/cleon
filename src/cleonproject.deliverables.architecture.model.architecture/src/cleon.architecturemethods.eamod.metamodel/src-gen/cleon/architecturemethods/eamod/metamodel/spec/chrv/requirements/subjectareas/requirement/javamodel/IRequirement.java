@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subject
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRequirement extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IAuthors, cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.INotes, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement, cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssueAware, ch.actifsource.core.javamodel.ICommentable, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISourceAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoalAware, cleon.common.resources.metamodel.spec.priority.javamodel.IPriorityAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholderAware {
+public interface IRequirement extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractNamedChapter, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IAbstractRequirement, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IAuthors, cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.INotes, cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssueAware, ch.actifsource.core.javamodel.ICommentable, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISourceAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoalAware, cleon.common.resources.metamodel.spec.priority.javamodel.IPriorityAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholderAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("54365cab-ff9b-11e4-ac0a-959b440f987f");
   
@@ -34,4 +34,4 @@ public interface IRequirement extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,x1i79Co7HfU729tdyamj+jJ1Pjg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,R2hxq5pf9RCVuvSA4rexx5jY+HU=] */

@@ -81,11 +81,11 @@ public class SegmentationSystemConfigurationComponentConcept extends DynamicReso
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone> selectSecuritySubZones() {
-    return _getList(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectSecuritySubZones() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones);
   }
 
-  public SegmentationSystemConfigurationComponentConcept setSecuritySubZones(java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone> securitySubZones) {
+  public SegmentationSystemConfigurationComponentConcept setSecuritySubZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZones) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones, securitySubZones);
     return this;
   }
@@ -128,16 +128,16 @@ public class SegmentationSystemConfigurationComponentConcept extends DynamicReso
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConfigurationComponentConcept_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept> selectToMeSecuritySubZones(cleon.modelinglanguages.network.metamodel.spec.javamodel.ISecuritySubZone object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept> selectToMeSecuritySubZones(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationSystemConfigurationComponentConcept_securitySubZones, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be4cba9f-0c2a-11e9-83ba-4d57b06560a2,hwR59wQ3xgwR1oLpfA/jm8YboZE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,be4cba9f-0c2a-11e9-83ba-4d57b06560a2,u5c02z9MRBGXB6JXelbJ7T6edvM=] */

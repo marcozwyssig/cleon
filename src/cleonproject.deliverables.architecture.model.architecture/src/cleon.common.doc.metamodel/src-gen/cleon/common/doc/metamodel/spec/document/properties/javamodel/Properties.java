@@ -42,12 +42,12 @@ public class Properties extends DynamicResource implements IProperties {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> selectAuthors() {
-    return _getList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
+  public cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember selectAuthors() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors);
   }
 
-  public Properties setAuthors(java.util.List<? extends cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember> authors) {
-    _setList(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
+  public Properties setAuthors(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember authors) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, authors);
     return this;
   }
     
@@ -147,7 +147,7 @@ public class Properties extends DynamicResource implements IProperties {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.properties.PropertiesPackage.Properties_documentType, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification.class, cleon.common.resources.metamodel.spec.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.ICustomer.class, cleon.common.doc.metamodel.spec.document.properties.PropertiesPackage.Properties_customer, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Distributers_distributers, visitor);
@@ -168,4 +168,4 @@ public class Properties extends DynamicResource implements IProperties {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a052f72d-47f5-11e6-b388-8539f6ff7310,/RrtA7GHsARHhnJHmeIDytaNVVY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a052f72d-47f5-11e6-b388-8539f6ff7310,pOummld1NY1S+/MwmKc3+2ljlkQ=] */

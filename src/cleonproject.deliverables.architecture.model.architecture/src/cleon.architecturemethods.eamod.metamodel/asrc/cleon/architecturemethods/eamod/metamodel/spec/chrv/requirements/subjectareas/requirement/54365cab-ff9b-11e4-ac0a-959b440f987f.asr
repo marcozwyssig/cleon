@@ -210,6 +210,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="7edd3def-3da8-11ea-a0fa-151b2ebf906e" type="resource" guid="7edc538b-3da8-11ea-a0fa-151b2ebf906e" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="54365cad-ff9b-11e4-ac0a-959b440f987f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -241,6 +242,9 @@
         </predicate>
         <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="75647e32-e5f0-11e5-950a-cb0c4b71716c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="fa6d87ca-3dad-11ea-a0fa-151b2ebf906e" type="resource" guid="515248f3-e5d5-11e5-8760-af4ac9220eef" />
         </predicate>
         <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
           <object statement-guid="7e1bf0d6-e5f0-11e5-950a-cb0c4b71716c" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
@@ -1073,6 +1077,19 @@ deren Nichtrealisierung gegeben sind</object>
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7edd3def-3da8-11ea-a0fa-151b2ebf906e">
+      <resource guid="7edc538b-3da8-11ea-a0fa-151b2ebf906e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7edca1ad-3da8-11ea-a0fa-151b2ebf906e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="802f3a34-3da8-11ea-a0fa-151b2ebf906e" type="literal">cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.RequirementStateValidation</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7edcefce-3da8-11ea-a0fa-151b2ebf906e" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

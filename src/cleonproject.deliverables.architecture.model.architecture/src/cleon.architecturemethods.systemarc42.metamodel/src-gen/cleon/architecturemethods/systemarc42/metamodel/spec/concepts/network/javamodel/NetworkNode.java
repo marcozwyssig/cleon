@@ -48,6 +48,15 @@ public class NetworkNode extends DynamicResource implements INetworkNode {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectExportDNSRecord() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord);
+  }
+    
+  public void setExportDNSRecord(java.lang.Boolean exportDNSRecord) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, exportDNSRecord);
+  }
+
   // relations
   
   @Override
@@ -95,6 +104,7 @@ public class NetworkNode extends DynamicResource implements INetworkNode {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkNode_node, visitor);
@@ -108,4 +118,4 @@ public class NetworkNode extends DynamicResource implements INetworkNode {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb84db3b-7ae6-11e9-a70f-4dc03941a024,xe2u1ghfJNwp7K2ln4iR5Xkl6YE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb84db3b-7ae6-11e9-a70f-4dc03941a024,tMvXVG8eEYDtT2okIglVEuVIE+I=] */

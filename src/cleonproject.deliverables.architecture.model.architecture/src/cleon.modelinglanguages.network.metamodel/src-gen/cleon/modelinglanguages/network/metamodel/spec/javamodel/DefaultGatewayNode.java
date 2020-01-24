@@ -48,6 +48,15 @@ public class DefaultGatewayNode extends DynamicResource implements IDefaultGatew
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectExportDNSRecord() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord);
+  }
+    
+  public void setExportDNSRecord(java.lang.Boolean exportDNSRecord) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, exportDNSRecord);
+  }
+
   // relations
   
   @Override
@@ -85,10 +94,11 @@ public class DefaultGatewayNode extends DynamicResource implements IDefaultGatew
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2da8f90-7b84-11e9-94aa-f1ea7ea33f46,QFj74jNLO1/Y0oWgsRvputpKanE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2da8f90-7b84-11e9-94aa-f1ea7ea33f46,Jy83TD7WYCiMBX1zTNDYC/VPs5c=] */

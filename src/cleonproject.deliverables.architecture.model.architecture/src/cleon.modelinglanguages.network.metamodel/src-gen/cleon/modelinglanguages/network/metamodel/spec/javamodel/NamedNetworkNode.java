@@ -49,6 +49,15 @@ public class NamedNetworkNode extends DynamicResource implements INamedNetworkNo
   }
 
   @Override
+  public java.lang.Boolean selectExportDNSRecord() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord);
+  }
+    
+  public void setExportDNSRecord(java.lang.Boolean exportDNSRecord) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, exportDNSRecord);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -94,6 +103,7 @@ public class NamedNetworkNode extends DynamicResource implements INamedNetworkNo
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
@@ -101,4 +111,4 @@ public class NamedNetworkNode extends DynamicResource implements INamedNetworkNo
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4e6496f-7403-11e9-8765-0925552fc2b7,QsSh9PScIPE/mFdq7qoRrhIht2c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4e6496f-7403-11e9-8765-0925552fc2b7,jbsk/a04lGR12MF1wwwnT036laI=] */

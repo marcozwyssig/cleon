@@ -3,12 +3,9 @@ package cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subject
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
 /**
- * Anforderungen an die
- * Benutzeroberfläche. Die können
- * beispielsweise Anforderungen an die
- * visuelle, akustische oder auch haptische
- * Erscheinung und die Bedienung des
- * Systems / Produkts sein.
+ * Anforderungen an die Benutzeroberfläche. Die können beispielsweise Anforderungen
+ * an die visuelle, akustische oder auch haptische Erscheinung und die Bedienung
+ * des Systems / Produkts sein.
  */
 public interface IUserInterface extends cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubSubjectArea {
 
@@ -16,4 +13,4 @@ public interface IUserInterface extends cleon.architecturemethods.eamod.metamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49d92dc4-0c77-11e6-86c5-87a8b520dd59,dJf1lmVvv0KQGq2ja9Qt/6rfbg4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49d92dc4-0c77-11e6-86c5-87a8b520dd59,rrf0v12joSlnWLh7sFh0/o+a0Bk=] */

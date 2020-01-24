@@ -49,6 +49,15 @@ public class GatewayNode extends DynamicResource implements IGatewayNode {
   }
 
   @Override
+  public java.lang.Boolean selectExportDNSRecord() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord);
+  }
+    
+  public void setExportDNSRecord(java.lang.Boolean exportDNSRecord) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, exportDNSRecord);
+  }
+
+  @Override
   public java.lang.Integer selectNodeNo() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GatewayNode_nodeNo);
   }
@@ -94,6 +103,7 @@ public class GatewayNode extends DynamicResource implements IGatewayNode {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GatewayNode_nodeNo, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
@@ -101,4 +111,4 @@ public class GatewayNode extends DynamicResource implements IGatewayNode {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46,EheZ0UkkEfSbL5MwWU4/AA3ZryE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46,3rhUDF68pr+bW9r3kkVpDUp1i4U=] */

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="d8caf2bc-0930-11e9-8c40-11db3668c0c9">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e3105b61-3ea4-11ea-8cb4-0b006790b142" type="resource" guid="75d652ad-3ea4-11ea-8cb4-0b006790b142" />
     <resource statement-guid="09a92454-740c-11e9-8765-0925552fc2b7" type="resource" guid="09a79db2-740c-11e9-8765-0925552fc2b7" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -11,6 +12,28 @@
     <object statement-guid="09a70171-740c-11e9-8765-0925552fc2b7" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e3105b61-3ea4-11ea-8cb4-0b006790b142">
+      <resource guid="75d652ad-3ea4-11ea-8cb4-0b006790b142">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="75d6c7df-3ea4-11ea-8cb4-0b006790b142" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="79ff14ba-3ea4-11ea-8cb4-0b006790b142" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="76436c3e-3ea4-11ea-8cb4-0b006790b142" type="literal">exportDNSRecord</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="7b5751bb-3ea4-11ea-8cb4-0b006790b142" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="75d84e81-3ea4-11ea-8cb4-0b006790b142" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="7ea0d706-3ea4-11ea-8cb4-0b006790b142" type="literal">Exports the entry as A-record for DNS</object>
+        </predicate>
+      </resource>
+    </object>
     <object statement-guid="09a92454-740c-11e9-8765-0925552fc2b7">
       <resource guid="09a79db2-740c-11e9-8765-0925552fc2b7">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

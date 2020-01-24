@@ -67,6 +67,15 @@ public class EnvironmentTemplate extends DynamicResource implements IEnvironment
   }
 
   @Override
+  public java.lang.String selectSubjectMatterMandatory() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.environment.EnvironmentPackage.EnvironmentTemplate_subjectMatterMandatory);
+  }
+    
+  public void setSubjectMatterMandatory(java.lang.String subjectMatterMandatory) {
+     _setSingleAttribute(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.environment.EnvironmentPackage.EnvironmentTemplate_subjectMatterMandatory, subjectMatterMandatory);
+  }
+
+  @Override
   public java.lang.String selectValue() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value);
   }
@@ -104,7 +113,7 @@ public class EnvironmentTemplate extends DynamicResource implements IEnvironment
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.environment.EnvironmentPackage.ComponentOfSubjectMatterAware_componentOfSubjectMatter, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.expression.ExpressionPackage.ExpressionAware_expression, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.property.PropertyPackage.PropertyAware_property, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.subjectmatter.SubjectmatterPackage.SubjectMatterAware_subjectMatter, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.environment.EnvironmentPackage.EnvironmentTemplate_subjectMatterMandatory, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.value.ValuePackage.ValueAware_value, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.condition.javamodel.ICondition.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.condition.ConditionPackage.ConditionAware_condition, visitor);
@@ -112,4 +121,4 @@ public class EnvironmentTemplate extends DynamicResource implements IEnvironment
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ac55000-d64f-11e5-beff-c5494779b7d9,8dSm2gWEaSXX7s2dsGOGcKIL+Wc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ac55000-d64f-11e5-beff-c5494779b7d9,W8xAbQLa68DXqe12mbl0paA8zfc=] */

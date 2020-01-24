@@ -6,6 +6,10 @@ public interface IEnvironmentTemplate extends cleon.architecturemethods.eamod.me
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7ac55000-d64f-11e5-beff-c5494779b7d9");
   
+  // attributes
+  
+  public java.lang.String selectSubjectMatterMandatory();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ac55000-d64f-11e5-beff-c5494779b7d9,wmx5wTb3MS3D4xg2MOK9XM0fRfw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ac55000-d64f-11e5-beff-c5494779b7d9,UlMycHvlfKw/qN5S/cS03yBxFmQ=] */

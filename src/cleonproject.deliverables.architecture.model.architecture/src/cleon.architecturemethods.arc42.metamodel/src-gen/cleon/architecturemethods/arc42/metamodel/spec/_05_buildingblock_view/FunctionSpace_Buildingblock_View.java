@@ -21,7 +21,7 @@ public class FunctionSpace_Buildingblock_View {
   public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fc6a39f7-437a-11e6-a9d7-97cf4f7c398b")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ISystem GetSystem();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem GetSystem();
 
   }
   
@@ -46,7 +46,10 @@ public class FunctionSpace_Buildingblock_View {
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("604b9cc2-2b56-11e8-859c-c3075307fbcf")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ISystem GetSystem();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem RootSystem();
+
+    @IDynamicResourceExtension.MethodId("d366c3ba-3ec8-11ea-9af7-ad5bf30c585a")
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document();
 
   }
   
@@ -128,6 +131,31 @@ public class FunctionSpace_Buildingblock_View {
 
   }
 
+  public static interface IAbstractRootSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b1271087-3ec8-11ea-9af7-ad5bf30c585a")
+    public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware arc42Document();
+
+  }
+  
+  public static interface IAbstractRootSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractRootSystemFunctionsImpl implements IAbstractRootSystemFunctionsImpl {
+
+    public static final IAbstractRootSystemFunctionsImpl INSTANCE = new AbstractRootSystemFunctionsImpl();
+
+    private AbstractRootSystemFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractRootSystemFunctions {
+
+    private AbstractRootSystemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,0xy/sVzrjeiArYBiNTyLYB8rSlw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,u/StBgaThOXn/Hegoc0K6bvVEBw=] */

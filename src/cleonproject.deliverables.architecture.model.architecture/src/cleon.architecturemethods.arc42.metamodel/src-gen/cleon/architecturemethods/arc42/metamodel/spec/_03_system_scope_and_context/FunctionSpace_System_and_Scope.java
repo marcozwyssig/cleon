@@ -21,7 +21,7 @@ public class FunctionSpace_System_and_Scope {
   public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c21cdca8-4a71-11e6-b2ea-f94c9b140b76")
-    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ISystem GetSystem();
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractRootSystem GetSystem();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_System_and_Scope {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,251bbe8a-27f3-11e6-b263-9db62e053e59,adMV6btIBEYI4UWwSP+1tllLcXc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,251bbe8a-27f3-11e6-b263-9db62e053e59,XxBXLOLqsBzUz886ET61yks+5Cc=] */

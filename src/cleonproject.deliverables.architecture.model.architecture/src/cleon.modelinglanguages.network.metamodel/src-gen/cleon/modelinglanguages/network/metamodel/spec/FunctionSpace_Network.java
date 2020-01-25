@@ -220,6 +220,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("1a5ba639-7b98-11e9-94aa-f1ea7ea33f46")
     public java.lang.String DefaultGateway();
 
+    @IDynamicResourceExtension.MethodId("a37c1622-ca55-11e9-83b0-559396620907")
+    public java.lang.String Name();
+
   }
   
   public static interface IAbstractNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -240,6 +243,81 @@ public class FunctionSpace_Network {
 
   }
 
+  public static interface IDefaultGatewayNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("530b4792-3ecc-11ea-9af7-ad5bf30c585a")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IDefaultGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DefaultGatewayNodeFunctionsImpl implements IDefaultGatewayNodeFunctionsImpl {
+
+    public static final IDefaultGatewayNodeFunctionsImpl INSTANCE = new DefaultGatewayNodeFunctionsImpl();
+
+    private DefaultGatewayNodeFunctionsImpl() {}
+
+  }
+  
+  public static class DefaultGatewayNodeFunctions {
+
+    private DefaultGatewayNodeFunctions() {}
+
+  }
+
+  public static interface IGatewayNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5d8b6c2f-3ecc-11ea-9af7-ad5bf30c585a")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface IGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class GatewayNodeFunctionsImpl implements IGatewayNodeFunctionsImpl {
+
+    public static final IGatewayNodeFunctionsImpl INSTANCE = new GatewayNodeFunctionsImpl();
+
+    private GatewayNodeFunctionsImpl() {}
+
+  }
+  
+  public static class GatewayNodeFunctions {
+
+    private GatewayNodeFunctions() {}
+
+  }
+
+  public static interface INamedNetworkNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("63c226ce-3ecc-11ea-9af7-ad5bf30c585a")
+    public java.lang.String Name();
+
+  }
+  
+  public static interface INamedNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedNetworkNodeFunctionsImpl implements INamedNetworkNodeFunctionsImpl {
+
+    public static final INamedNetworkNodeFunctionsImpl INSTANCE = new NamedNetworkNodeFunctionsImpl();
+
+    private NamedNetworkNodeFunctionsImpl() {}
+
+  }
+  
+  public static class NamedNetworkNodeFunctions {
+
+    private NamedNetworkNodeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,u2LICCt7vej3tI259gGMpjN7kp8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,b5kvaLQ3lhSHAZdDbvj9Y73TuQY=] */

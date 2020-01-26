@@ -399,7 +399,4 @@ public class FunctionSpace_IP {
 
 }
 
-      /* Begin Protected Region [[e43a099c-36e9-11ea-bb06-17b9485a5d0a]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[e43a099c-36e9-11ea-bb06-17b9485a5d0a]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,JYduy2c7rFbHiFpedJ1Dxjf6hcw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,XBhXY3nU/LNsooZkEGocF/PYP+A=] */

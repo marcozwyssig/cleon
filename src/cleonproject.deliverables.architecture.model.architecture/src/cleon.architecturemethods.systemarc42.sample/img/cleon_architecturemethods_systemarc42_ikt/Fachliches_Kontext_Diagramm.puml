@@ -8,7 +8,7 @@ actor System__S_Integrator as "System-Integrator"
 actor Service__F_Desk as "Service Desk"
 actor Sicherheitsverantwortlicher as "Sicherheitsverantwortlicher"
 actor Betriebsmanagement as "Betriebsmanagement"
-component IKT as "IKT" <<System>>
+component IKT as "IKT" <<SystemWithLayers>>
 IKT__F_Zentrale -down-> IKT : operates
 IKT__F_Zentrale -down-> IKT : monitors
 IKT__F_Zentrale -down-> IKT : makeChanges

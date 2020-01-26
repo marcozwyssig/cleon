@@ -24,7 +24,7 @@ echo now rendering
 -D=EAMod_DocType:"Systemarchitektur" ^
 -D=EAMod_Status:"In Progress" ^
 -D=EAMod_Project:"" ^
--D=EAMod_Authors:"" ^
+-D=EAMod_Authors:"Pascal Meier" ^
 -D=EAMod_Reviewers:""
 echo rendering maybe done
 
@@ -57,4 +57,4 @@ pause
 
 :exit
 
-REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,35faf7e1-d10d-11e8-91a3-55b260d274ec,ghXTdH6q6t/W6Ya9aO+eAy7g+s0=]
+REM Actifsource ID=[0498e2c9-3f84-11e6-85d8-3328a679e82b,35faf7e1-d10d-11e8-91a3-55b260d274ec,J8XdLYRu8PU8ZljgPulBNaFfF1g=]

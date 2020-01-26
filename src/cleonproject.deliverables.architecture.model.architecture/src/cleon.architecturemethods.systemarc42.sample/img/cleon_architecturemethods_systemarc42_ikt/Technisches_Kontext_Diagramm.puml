@@ -8,7 +8,7 @@ component PIC as "PIC" <<ExternalSystem>>
 component MGW as "MGW" <<ExternalSystem>>
 component Bundesschrank__F___N_BS__O_ as "Bundesschrank (BS)" <<ExternalSystem>>
 component Nationalschrank__F___N_NS__O_ as "Nationalschrank (NS)" <<ExternalSystem>>
-component IKT as "IKT" <<System>>
+component IKT as "IKT" <<SystemWithLayers>>
 Tactilon --> IKT : "csr"
 IP2__T_0 --> IKT : "csr"
 IP2__T_0 --> IKT : "auth"

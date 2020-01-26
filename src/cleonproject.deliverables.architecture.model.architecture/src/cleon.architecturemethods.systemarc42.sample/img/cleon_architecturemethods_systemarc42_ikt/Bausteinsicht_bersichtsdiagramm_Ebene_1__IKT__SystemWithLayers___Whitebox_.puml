@@ -54,7 +54,7 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle IKT as "IKT" <<System>> {
+rectangle IKT as "IKT" <<SystemWithLayers>> {
 	rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
 	}		
 	rectangle Plattform as "Plattform" <<SystemLayer>> {

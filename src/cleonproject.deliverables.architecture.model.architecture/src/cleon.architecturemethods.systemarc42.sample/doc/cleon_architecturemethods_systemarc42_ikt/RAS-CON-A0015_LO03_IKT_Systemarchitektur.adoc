@@ -82,7 +82,7 @@ actor System__S_Integrator as "System-Integrator"
 actor Service__F_Desk as "Service Desk"
 actor Sicherheitsverantwortlicher as "Sicherheitsverantwortlicher"
 actor Betriebsmanagement as "Betriebsmanagement"
-component IKT as "IKT" <<System>>
+component IKT as "IKT" <<SystemWithLayers>>
 IKT__F_Zentrale -down-> IKT : operates
 IKT__F_Zentrale -down-> IKT : monitors
 IKT__F_Zentrale -down-> IKT : makeChanges
@@ -171,7 +171,7 @@ component PIC as "PIC" <<ExternalSystem>>
 component MGW as "MGW" <<ExternalSystem>>
 component Bundesschrank__F___N_BS__O_ as "Bundesschrank (BS)" <<ExternalSystem>>
 component Nationalschrank__F___N_NS__O_ as "Nationalschrank (NS)" <<ExternalSystem>>
-component IKT as "IKT" <<System>>
+component IKT as "IKT" <<SystemWithLayers>>
 Tactilon --> IKT : "csr"
 IP2__T_0 --> IKT : "csr"
 IP2__T_0 --> IKT : "auth"
@@ -327,7 +327,7 @@ rectangle IKT as "IKT (Ebene 1)" <<System>> {
 Die Beschreibung der einzelnen Bausteine folgt in den nachfolgenden Kapiteln.
 
 
-=== Ebene 1: IKT <System> (Whitebox)
+=== Ebene 1: IKT <SystemWithLayers> (Whitebox)
 
 Der Baustein IKT beinhaltet die Whitebox-Beschreibung des Gesamtsystems mit den Blackbox- Beschreibungen der Ebene "SystemLayer".
 [plantuml, png]
@@ -386,7 +386,7 @@ skinparam componentStyle uml2
 
 show stereotype
 
-rectangle IKT as "IKT" <<System>> {
+rectangle IKT as "IKT" <<SystemWithLayers>> {
 	rectangle Infrastruktur as "Infrastruktur" <<SystemLayer>> {
 	}		
 	rectangle Plattform as "Plattform" <<SystemLayer>> {

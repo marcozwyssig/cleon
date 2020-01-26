@@ -49,6 +49,9 @@
             </resource>
           </object>
         </predicate>
+        <predicate guid="ac4f0797-c589-11e5-aeea-1db9268c0ee9">
+          <object statement-guid="f4a0d945-4073-11ea-ab62-b513cd6f4ecf" type="resource" guid="8ff91c83-c10a-11e6-8f58-ad3c6ee7602f" />
+        </predicate>
       </resource>
     </object>
   </predicate>
@@ -64,8 +67,14 @@
         <predicate guid="a3e89849-b53d-11e5-bc0c-f35b68c3609a">
           <object statement-guid="2c6d820b-ea69-11e8-8092-1f65b9544bbd" type="literal">14</object>
         </predicate>
+        <predicate guid="ac4f0797-c589-11e5-aeea-1db9268c0ee9">
+          <object statement-guid="e86967f0-4073-11ea-ab62-b513cd6f4ecf" type="resource" guid="8ff91c83-c10a-11e6-8f58-ad3c6ee7602f" />
+        </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="ac4f0797-c589-11e5-aeea-1db9268c0ee9">
+    <object statement-guid="f3e44003-4073-11ea-ab62-b513cd6f4ecf" type="resource" guid="8ff91c83-c10a-11e6-8f58-ad3c6ee7602f" />
   </predicate>
   <predicate guid="44097cfc-011a-11e8-a04c-8580a18663fd">
     <object statement-guid="97ce7f28-011a-11e8-a04c-8580a18663fd" type="literal">http://test.com/link.pdf</object>

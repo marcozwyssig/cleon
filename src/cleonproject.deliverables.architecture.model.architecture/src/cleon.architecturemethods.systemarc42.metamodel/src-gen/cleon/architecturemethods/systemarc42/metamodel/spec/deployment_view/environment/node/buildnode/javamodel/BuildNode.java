@@ -13,8 +13,8 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
   
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> selectToMeSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> selectToMeInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_instanceOf, object.getResource());
   }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode selectToMeBuildNodes(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode object) {
@@ -38,4 +38,4 @@ public abstract class BuildNode extends DynamicResource implements IBuildNode {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,T+T/s8QvBkvHdOBQ/vNKCPG+bdU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,853a8e37-ef41-11e8-be8a-b748ff8f0a75,oSyUu0/HL/YJ1hANo9TkbWen+Ns=] */

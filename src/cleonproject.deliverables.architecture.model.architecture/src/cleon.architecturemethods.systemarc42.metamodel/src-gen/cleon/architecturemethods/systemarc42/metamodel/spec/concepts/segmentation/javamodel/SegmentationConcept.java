@@ -81,52 +81,12 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> selectSegmentationSystemComponentConcepts() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemComponentConcepts);
-  }
-
-  public SegmentationConcept setSegmentationSystemComponentConcepts(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept> segmentationSystemComponentConcepts) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemComponentConcepts, segmentationSystemComponentConcepts);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept> selectSegmentationSystemConfigurationConcepts() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemConfigurationConcepts);
-  }
-
-  public SegmentationConcept setSegmentationSystemConfigurationConcepts(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept> segmentationSystemConfigurationConcepts) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemConfigurationConcepts, segmentationSystemConfigurationConcepts);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone> selectSegmentationZone() {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone);
   }
 
   public SegmentationConcept setSegmentationZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone> segmentationZone) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, segmentationZone);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemComponentConcept> selectSystemComponentConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.ConceptForSystemComponent_systemComponentConcept);
-  }
-
-  public SegmentationConcept setSystemComponentConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemComponentConcept> systemComponentConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.ConceptForSystemComponent_systemComponentConcept, systemComponentConcept);
-    return this;
-  }
-    
-  @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConfigurationComponentConcept> selectSystemConfigurationConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.ConceptForSystemConfigurationComponent_systemConfigurationConcept);
-  }
-
-  public SegmentationConcept setSystemConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConfigurationComponentConcept> systemConfigurationConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.ConceptForSystemConfigurationComponent_systemConfigurationConcept, systemConfigurationConcept);
     return this;
   }
     
@@ -147,8 +107,6 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemComponentConcepts, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemConfigurationConcepts, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -159,13 +117,5 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept selectToMeSegmentationSystemComponentConcepts(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemComponentConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemComponentConcepts, object.getResource());
-  }
-  
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept selectToMeSegmentationSystemConfigurationConcepts(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationSystemConfigurationComponentConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationSystemConfigurationConcepts, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,DgLLzrUiQ3HIlJpPLY3mJCKf/EQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,gAO1c6Rz2M0wsvf+JSjH99ys1mw=] */

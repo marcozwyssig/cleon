@@ -24,12 +24,14 @@ public class Buildingblock_viewPackage {
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemComponent = new Resource("31cf5855-035b-11e9-a251-e3767b78f69f");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemConfiguration = new Resource("72248a97-035d-11e9-a251-e3767b78f69f");
   public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
+  public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemWithLayers = new Resource("69e12c79-9c97-11e9-9b32-35cf2fd07621");
   public static final Resource SystemOfSystem = new Resource("025f7a4c-3eac-11ea-8cb4-0b006790b142");
   public static final Resource SystemOfSystem_systems = new Resource("394f59bc-3eac-11ea-8cb4-0b006790b142");
   public static final Resource AbstractSystemComponent = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
   public static final Resource System = new Resource("74ac16c6-3eb1-11ea-9af7-ad5bf30c585a");
   public static final Resource AbstractSystem = new Resource("5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a");
+  public static final Resource NamedSystem = new Resource("f6f283bb-45e4-11ea-a150-53212f58490b");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +52,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,GaZ0cvldTHYGTdkwtG8m1AVpsIM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,85yHAlwKru9edKJOFcggBE3v5jI=] */

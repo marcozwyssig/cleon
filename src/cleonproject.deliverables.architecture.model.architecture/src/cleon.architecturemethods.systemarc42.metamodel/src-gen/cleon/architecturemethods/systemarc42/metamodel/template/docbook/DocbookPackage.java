@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class DocbookPackage {
   
   public static final Resource FunctionSpace_aE_Docbook_aE_ItArc42_SystemArc42Document = new Resource("fb58b13d-d181-11e8-b18f-df1540bb7a5c");
-  public static final Resource FunctionSpace_aE_Segmentation_aE_Docbook_SegmentationSystemConfigurationComponentConcept = new Resource("fe44bf57-0d00-11e9-be4f-03130cc057ef");
   public static final Resource FunctionSpace_aE_Segmentation_aE_Docbook_SegmentationZone = new Resource("382c7b60-0d1e-11e9-be4f-03130cc057ef");
   public static final Resource FunctionSpace_aE_Segmentation_aE_Docbook_SegmentationConcept = new Resource("e6de5277-0e21-11e9-8b4c-f9aec93d8b56");
   public static final Resource FunctionSpace_aE_Deployment_aE_Docbook_DeploymentLevel = new Resource("03ff7822-0e2a-11e9-8b4c-f9aec93d8b56");
@@ -39,4 +38,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,qbkWIZ+KeBLHHUSERPveAJa6aII=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,kFmhdTlowTaNn4TaP4lnTkfjU5g=] */

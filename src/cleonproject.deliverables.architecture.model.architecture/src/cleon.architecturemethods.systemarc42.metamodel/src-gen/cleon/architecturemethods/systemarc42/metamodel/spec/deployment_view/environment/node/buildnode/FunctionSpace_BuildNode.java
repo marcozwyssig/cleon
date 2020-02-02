@@ -125,12 +125,12 @@ public class FunctionSpace_BuildNode {
 
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyOs(final List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
-      return buildNodeList.stream().filter(x -> x.selectSystemConfiguration() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
+      return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH(final List<cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodeList) {
-      return buildNodeList.stream().filter(x -> x.selectSystemConfiguration() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IVirtualMachineHostSystemConfiguration).collect(java.util.stream.Collectors.toList());
+      return buildNodeList.stream().filter(x -> x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IVirtualMachineHostSystemConfiguration).collect(java.util.stream.Collectors.toList());
     }
 
   }
@@ -155,4 +155,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,vTbnZlS6yzqDtj2/qCvWu6B+9jQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,0eA2K3Xo27vIwEEowEArR+ZX1Bs=] */

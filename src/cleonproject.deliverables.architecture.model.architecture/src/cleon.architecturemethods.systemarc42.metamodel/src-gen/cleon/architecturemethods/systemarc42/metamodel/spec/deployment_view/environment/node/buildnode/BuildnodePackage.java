@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class BuildnodePackage {
   
   public static final Resource BuildNode = new Resource("853a8e37-ef41-11e8-be8a-b748ff8f0a75");
-  public static final Resource BuildNode_systemConfiguration = new Resource("b39942a1-02c1-11e9-9e58-33d596257b14");
+  public static final Resource BuildNode_instanceOf = new Resource("b39942a1-02c1-11e9-9e58-33d596257b14");
   public static final Resource BuildNode_buildNodes = new Resource("5740bf19-02c3-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_BuildNode_ServiceBuildNode = new Resource("bd6ad220-02d3-11e9-9e58-33d596257b14");
   public static final Resource ServiceBuildNode = new Resource("1c72395a-02d8-11e9-9e58-33d596257b14");
@@ -42,4 +42,4 @@ public class BuildnodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode,kwaMcDfhial27LKogjevhdqvFGc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode,Yi55RZc1wRIph1EmLdM39RmHC88=] */

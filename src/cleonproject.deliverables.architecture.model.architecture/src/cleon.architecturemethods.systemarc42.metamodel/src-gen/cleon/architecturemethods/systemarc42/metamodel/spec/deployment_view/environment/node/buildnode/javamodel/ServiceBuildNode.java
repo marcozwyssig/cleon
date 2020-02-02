@@ -90,6 +90,16 @@ public class ServiceBuildNode extends DynamicResource implements IServiceBuildNo
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectInstanceOf() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_instanceOf);
+  }
+
+  public ServiceBuildNode setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration instanceOf) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_instanceOf, instanceOf);
+    return this;
+  }
+    
+  @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration> selectMemory() {
     return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_memory);
   }
@@ -130,16 +140,6 @@ public class ServiceBuildNode extends DynamicResource implements IServiceBuildNo
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration);
-  }
-
-  public ServiceBuildNode setSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration, systemConfiguration);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -169,12 +169,12 @@ public class ServiceBuildNode extends DynamicResource implements IServiceBuildNo
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_buildNodes, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.ICPU_Configuration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_cpu, visitor);
     _acceptMultiMap(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IDisk_Configuration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_disk, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_instanceOf, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.machineconfiguration.javamodel.IMemory_Configuration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_memory, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariant.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_productVariants, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.buildnode.BuildnodePackage.BuildNode_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,jnDVGXxU729XxXAbstKStGIn4lA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,MBGX+DK+bcI6zJbQ5jXsZDP5qM4=] */

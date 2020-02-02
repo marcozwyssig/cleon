@@ -18,31 +18,6 @@ public class FunctionSpace_Segmentation_Docbook {
   /* End Protected Region   [[f1b62d92-0d00-11e9-be4f-03130cc057ef]] */
 
 
-  public static interface ISegmentationSystemConfigurationComponentConceptFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("088a246e-0d01-11e9-be4f-03130cc057ef")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface ISegmentationSystemConfigurationComponentConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SegmentationSystemConfigurationComponentConceptFunctionsImpl implements ISegmentationSystemConfigurationComponentConceptFunctionsImpl {
-
-    public static final ISegmentationSystemConfigurationComponentConceptFunctionsImpl INSTANCE = new SegmentationSystemConfigurationComponentConceptFunctionsImpl();
-
-    private SegmentationSystemConfigurationComponentConceptFunctionsImpl() {}
-
-  }
-  
-  public static class SegmentationSystemConfigurationComponentConceptFunctions {
-
-    private SegmentationSystemConfigurationComponentConceptFunctions() {}
-
-  }
-
   public static interface ISegmentationZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4047d49d-0d1e-11e9-be4f-03130cc057ef")
@@ -95,4 +70,4 @@ public class FunctionSpace_Segmentation_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1b62d92-0d00-11e9-be4f-03130cc057ef,d59T1oi4ZmVUHoMpV0rvxR2nDlo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1b62d92-0d00-11e9-be4f-03130cc057ef,Ks1HYu9QvFSqFm0kQ1ErDgvunIo=] */

@@ -76,6 +76,14 @@ public class SystemconfigurationPackage {
   public static final Resource PhysicalMachineSystemConfiguration = new Resource("79488947-2afd-11e9-9692-65766bc2daa5");
   public static final Resource FunctionSpace_aE_SystemConfiguration_NamedSystemConfiguration = new Resource("95ff2d7f-6cf0-11e9-a6d3-775c09e81e2d");
   public static final Resource VirtualAppliance = new Resource("c0dc14c1-77b7-11e9-8094-13b915a38efa");
+  public static final Resource InterfaceType = new Resource("9aa83a3b-878f-11e9-a61b-279ebde48b48");
+  public static final Resource InterfaceType_INT = new Resource("a08bf345-878f-11e9-a61b-279ebde48b48");
+  public static final Resource InterfaceType_MGMT = new Resource("a18ac5aa-878f-11e9-a61b-279ebde48b48");
+  public static final Resource InterfaceType_EXT = new Resource("a531ada4-878f-11e9-a61b-279ebde48b48");
+  public static final Resource Interface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
+  public static final Resource Interface_interfaceInSecuritySubZone = new Resource("0ab04b4e-b372-11e9-91da-d1f3b9a7fba4");
+  public static final Resource Interface_providesService = new Resource("1c01bc62-b372-11e9-91da-d1f3b9a7fba4");
+  public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   
   /* Begin Protected Region [[user]] */
   
@@ -96,4 +104,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,5nRyyePHMJfLxBfiNszrko2FQEs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,cHj90fgHdCWv7h9eGW4eKnD2B7s=] */

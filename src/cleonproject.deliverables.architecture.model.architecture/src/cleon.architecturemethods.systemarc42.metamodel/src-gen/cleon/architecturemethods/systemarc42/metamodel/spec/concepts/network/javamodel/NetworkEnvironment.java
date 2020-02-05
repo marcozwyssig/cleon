@@ -71,11 +71,11 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironment() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironment() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment);
   }
 
-  public NetworkEnvironment setEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment environment) {
+  public NetworkEnvironment setEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment environment) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment, environment);
     return this;
   }
@@ -156,7 +156,7 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment, visitor);
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IGroup.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GroupAware_groups, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkNetdomain.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_networkNetdomain, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -166,7 +166,7 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment> selectToMeEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment> selectToMeEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkEnvironment_environment, object.getResource());
   }
   
@@ -175,4 +175,4 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,s5TWEXyYLL1KuthjHeTJIuyJuzs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,ZJXwropA6vWz3ttwXP9QtIbSfDE=] */

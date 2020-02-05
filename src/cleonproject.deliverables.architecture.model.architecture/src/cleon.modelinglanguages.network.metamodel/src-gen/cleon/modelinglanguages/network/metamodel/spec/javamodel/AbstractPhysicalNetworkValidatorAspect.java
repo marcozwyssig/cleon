@@ -48,7 +48,7 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 
 		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
 		ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<IAbstractNetworkNode>();
-		for (IAbstractNetworkNode node : nodes) {
+		for (IAbstractNetworkNode node : nodes) {			
 			boolean isInRange = subnet.getInfo().isInRange(
 					Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource()));
 			if (!isInRange) {

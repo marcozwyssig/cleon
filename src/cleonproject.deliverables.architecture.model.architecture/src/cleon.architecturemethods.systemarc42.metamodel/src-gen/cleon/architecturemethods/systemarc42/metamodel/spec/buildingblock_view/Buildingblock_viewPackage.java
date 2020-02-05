@@ -24,8 +24,12 @@ public class Buildingblock_viewPackage {
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemComponent = new Resource("31cf5855-035b-11e9-a251-e3767b78f69f");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemConfiguration = new Resource("72248a97-035d-11e9-a251-e3767b78f69f");
   public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
+  public static final Resource SystemConfiguration_inheritServices = new Resource("8d65e85b-879a-11e9-bb4b-c57da735262b");
   public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
   public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemWithLayers = new Resource("69e12c79-9c97-11e9-9b32-35cf2fd07621");
+  public static final Resource SystemConfiguration_provides = new Resource("95567bd3-b371-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfiguration_interface = new Resource("f474273d-b371-11e9-91da-d1f3b9a7fba4");
+  public static final Resource SystemConfiguration_skipGenerate = new Resource("73d5a1ae-06bc-11ea-8f17-2da21adc8e34");
   public static final Resource SystemOfSystem = new Resource("025f7a4c-3eac-11ea-8cb4-0b006790b142");
   public static final Resource SystemOfSystem_systems = new Resource("394f59bc-3eac-11ea-8cb4-0b006790b142");
   public static final Resource AbstractSystemComponent = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
@@ -52,4 +56,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,85yHAlwKru9edKJOFcggBE3v5jI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,GuP7q06FHkMCJQAx5f+rNEw//4Q=] */

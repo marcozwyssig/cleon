@@ -81,6 +81,16 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks selectNetworks() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networks);
+  }
+
+  public NetworkConcept setNetworks(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks networks) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networks, networks);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -107,6 +117,7 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networks, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -117,5 +128,9 @@ public class NetworkConcept extends DynamicResource implements INetworkConcept {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networkNetdomain, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept selectToMeNetworks(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkConcept_networks, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,81OKrVa7mNlmos8dSMsYYAhpX2A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,+z5J1gmj3YG3/m+AQjIJxH/7i6s=] */

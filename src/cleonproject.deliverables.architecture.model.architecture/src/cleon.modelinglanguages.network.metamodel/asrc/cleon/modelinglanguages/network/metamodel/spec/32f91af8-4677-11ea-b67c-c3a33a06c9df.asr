@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="32f91af8-4677-11ea-b67c-c3a33a06c9df">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="3ab38f08-4677-11ea-b67c-c3a33a06c9df" type="resource" guid="3ab319d3-4677-11ea-b67c-c3a33a06c9df" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="32f9420a-4677-11ea-b67c-c3a33a06c9df" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="32fac8ab-4677-11ea-b67c-c3a33a06c9df" type="literal">Refactoring_Network</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ab38f08-4677-11ea-b67c-c3a33a06c9df">
+      <resource guid="3ab319d3-4677-11ea-b67c-c3a33a06c9df">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3ab340e5-4677-11ea-b67c-c3a33a06c9df" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4d145848-4678-11ea-b67c-c3a33a06c9df" type="literal">cleon.modelinglanguages.network.metamodel.spec.javamodel.MoveIpAndHostRefactorAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3ab367f6-4677-11ea-b67c-c3a33a06c9df" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

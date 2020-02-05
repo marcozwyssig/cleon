@@ -12,8 +12,8 @@ public interface IRBAC extends cleon.architecturemethods.systemarc42.metamodel.s
   
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityRootGroups selectActivities();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironment();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironment();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,Qf4RMHJ90lvQIBIwd2o1FRZs5NU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,0elfyWbTTcqHdkdM13W6cr9CCMo=] */

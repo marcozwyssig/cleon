@@ -81,11 +81,11 @@ public class RBAC extends DynamicResource implements IRBAC {
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironment() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironment() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment);
   }
 
-  public RBAC setEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment environment) {
+  public RBAC setEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment environment) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment, environment);
     return this;
   }
@@ -137,7 +137,7 @@ public class RBAC extends DynamicResource implements IRBAC {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityRootGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_activities, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_roles, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -153,9 +153,9 @@ public class RBAC extends DynamicResource implements IRBAC {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_activities, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.javamodel.IRBAC> selectToMeEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.javamodel.IRBAC> selectToMeEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.RbacPackage.RBAC_environment, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,BMlaqRTYQSAF7/mtQy4a3Kusi98=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,HEXUMU6yZSusX+O+kJfogSISz6g=] */

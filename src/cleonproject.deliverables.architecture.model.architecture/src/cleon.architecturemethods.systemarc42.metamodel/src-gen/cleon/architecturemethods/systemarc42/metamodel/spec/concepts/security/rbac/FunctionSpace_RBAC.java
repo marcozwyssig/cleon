@@ -200,7 +200,7 @@ public class FunctionSpace_RBAC {
   public static interface IAbstractRootGroupsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("488c86a7-0172-11ea-83fa-05ea5175f4aa")
-    public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment GetEnvironment();
+    public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment GetEnvironment();
 
   }
   
@@ -224,4 +224,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,U93LIsgNnU+JHvAPqyphRoLEvx0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,0PJMaTMFghUakRXlGZ8IwP6Bp4A=] */

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="e7b78922-dfaa-11e9-9827-a1514ee8d06a">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="fe022af6-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="fe011983-dfaa-11e9-9827-a1514ee8d06a" />
+    <resource statement-guid="ffc7815b-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="ffc75a48-dfaa-11e9-9827-a1514ee8d06a" />
+    <resource statement-guid="013d0ad0-dfab-11e9-9827-a1514ee8d06a" type="resource" guid="013ce3bd-dfab-11e9-9827-a1514ee8d06a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e7b7b034-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e7b9ac06-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e7b984f5-dfaa-11e9-9827-a1514ee8d06a" type="literal">Action</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="fe022af6-dfaa-11e9-9827-a1514ee8d06a">
+      <resource guid="fe011983-dfaa-11e9-9827-a1514ee8d06a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fe011985-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="e7b78922-dfaa-11e9-9827-a1514ee8d06a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fe6ecf96-dfaa-11e9-9827-a1514ee8d06a" type="literal">Accept</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="ffc7815b-dfaa-11e9-9827-a1514ee8d06a">
+      <resource guid="ffc75a48-dfaa-11e9-9827-a1514ee8d06a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ffc7815a-dfaa-11e9-9827-a1514ee8d06a" type="resource" guid="e7b78922-dfaa-11e9-9827-a1514ee8d06a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0001560c-dfab-11e9-9827-a1514ee8d06a" type="literal">Drop</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="013d0ad0-dfab-11e9-9827-a1514ee8d06a">
+      <resource guid="013ce3bd-dfab-11e9-9827-a1514ee8d06a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="013d0acf-dfab-11e9-9827-a1514ee8d06a" type="resource" guid="e7b78922-dfaa-11e9-9827-a1514ee8d06a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="09496fe7-dfab-11e9-9827-a1514ee8d06a" type="literal">Reject</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="bdd74804-b844-11e9-8760-2d4a9d15ec14">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="1941d666-b845-11e9-8760-2d4a9d15ec14" type="resource" guid="0b77b738-b845-11e9-8760-2d4a9d15ec14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bdd74806-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bdd74808-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="80913edf-b844-11e9-8760-2d4a9d15ec14" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1941d666-b845-11e9-8760-2d4a9d15ec14">
+      <resource guid="0b77b738-b845-11e9-8760-2d4a9d15ec14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0b77de4a-b845-11e9-8760-2d4a9d15ec14" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0b77de4b-b845-11e9-8760-2d4a9d15ec14" type="literal">restriction</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0b782c6d-b845-11e9-8760-2d4a9d15ec14" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="0b782c6e-b845-11e9-8760-2d4a9d15ec14" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="e9a82def-b848-11e9-8760-2d4a9d15ec14" type="resource" guid="f519179a-b844-11e9-8760-2d4a9d15ec14" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="0b782c6f-b845-11e9-8760-2d4a9d15ec14" type="resource" guid="f310eb7a-b844-11e9-8760-2d4a9d15ec14" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bdd74807-b844-11e9-8760-2d4a9d15ec14" type="literal">IntraSubZoneAccessPolicy</object>
+  </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="24c7e739-b847-11e9-8760-2d4a9d15ec14" type="literal">false</object>
+  </predicate>
+</resource>
+

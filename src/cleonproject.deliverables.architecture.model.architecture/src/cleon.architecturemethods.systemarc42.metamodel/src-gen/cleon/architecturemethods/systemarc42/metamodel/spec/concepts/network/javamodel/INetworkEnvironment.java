@@ -8,10 +8,10 @@ public interface INetworkEnvironment extends cleon.modelinglanguages.network.met
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IEnvironment selectEnvironment();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironment();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkNetdomain> selectNetworkNetdomain();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,sfaOiTrNPqnpLZLRhMsS67Fgdu0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ad5fb03-7adf-11e9-a70f-4dc03941a024,px27PhA4JHVn9B24KhqMdu0RRmg=] */

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f310eb7a-b844-11e9-8760-2d4a9d15ec14">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="f519179d-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="f519179a-b844-11e9-8760-2d4a9d15ec14" />
+    <resource statement-guid="f810faaa-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="f810faa7-b844-11e9-8760-2d4a9d15ec14" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f310eb7c-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f310eb7e-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f310eb7d-b844-11e9-8760-2d4a9d15ec14" type="literal">Restriction</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="f519179d-b844-11e9-8760-2d4a9d15ec14">
+      <resource guid="f519179a-b844-11e9-8760-2d4a9d15ec14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f519179c-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="f310eb7a-b844-11e9-8760-2d4a9d15ec14" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f5c9a2f5-b844-11e9-8760-2d4a9d15ec14" type="literal">Restricted</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f810faaa-b844-11e9-8760-2d4a9d15ec14">
+      <resource guid="f810faa7-b844-11e9-8760-2d4a9d15ec14">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f810faa9-b844-11e9-8760-2d4a9d15ec14" type="resource" guid="f310eb7a-b844-11e9-8760-2d4a9d15ec14" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f8884e00-b844-11e9-8760-2d4a9d15ec14" type="literal">Allowed</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

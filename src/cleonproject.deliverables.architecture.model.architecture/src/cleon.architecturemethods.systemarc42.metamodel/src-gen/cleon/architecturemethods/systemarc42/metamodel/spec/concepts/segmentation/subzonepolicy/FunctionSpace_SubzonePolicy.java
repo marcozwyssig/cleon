@@ -13,7 +13,6 @@ import java.util.stream.Collectors;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.SystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.FunctionSpace_System.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration;
-
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.to_move.segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts;

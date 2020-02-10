@@ -9,7 +9,7 @@ public class SpecPackage {
   public static final Resource NetDomainZone_segments = new Resource("ed08c4db-0b73-11e9-a136-69d076e48ed1");
   public static final Resource Zone = new Resource("fb4a0fa3-0b73-11e9-a136-69d076e48ed1");
   public static final Resource Zone_zones = new Resource("6a57a031-0b74-11e9-a136-69d076e48ed1");
-  public static final Resource SegmentationZone_zone = new Resource("86ac6ecc-0b74-11e9-a136-69d076e48ed1");
+  public static final Resource Segmentation_zones = new Resource("86ac6ecc-0b74-11e9-a136-69d076e48ed1");
   public static final Resource SecurityZone = new Resource("32beba1e-0b75-11e9-a136-69d076e48ed1");
   public static final Resource SecurityServerZone = new Resource("3af87037-0b75-11e9-a136-69d076e48ed1");
   public static final Resource SecurityManagementZone = new Resource("44286d9e-0b75-11e9-a136-69d076e48ed1");
@@ -30,7 +30,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Segmentation_SecurityServerZone = new Resource("3beeeb6b-0b7a-11e9-a136-69d076e48ed1");
   public static final Resource FunctionSpace_aE_Segmentation_SecurityServicesZone = new Resource("45e3bfda-0b7a-11e9-a136-69d076e48ed1");
   public static final Resource SecuritySubZoneAware = new Resource("02abe8e7-0b84-11e9-a136-69d076e48ed1");
-  public static final Resource SegmentationZone = new Resource("ccaeef49-0d1d-11e9-be4f-03130cc057ef");
+  public static final Resource Segmentation = new Resource("ccaeef49-0d1d-11e9-be4f-03130cc057ef");
   public static final Resource SecuritySubZone_VLAN_aE_No = new Resource("cd3bbd8b-7ae3-11e9-a70f-4dc03941a024");
   public static final Resource Zone_allowed = new Resource("bbfbf3d7-a92b-11e9-b094-b12ff339b432");
   public static final Resource NetDomainZone_allowed = new Resource("4d3fe8f1-a937-11e9-b094-b12ff339b432");
@@ -60,4 +60,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,7S3FJw8uQyHqGldxPQIWCygoSac=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,APEfXuesjWZ9D2IrMgqEubbvTyM=] */

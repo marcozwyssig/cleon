@@ -22,7 +22,7 @@
           <object statement-guid="24223e70-71a4-11e9-98e0-2719d32d2629" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="249c5077-71a4-11e9-98e0-2719d32d2629" type="literal">segmentation</object>
+          <object statement-guid="249c5077-71a4-11e9-98e0-2719d32d2629" type="literal">segmentationConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="24239e02-71a4-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -44,7 +44,7 @@
           <object statement-guid="3f83fb4c-71a4-11e9-98e0-2719d32d2629" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="3f83fb4f-71a4-11e9-98e0-2719d32d2629" type="literal">qos</object>
+          <object statement-guid="3f83fb4f-71a4-11e9-98e0-2719d32d2629" type="literal">qosConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="3f83fb4d-71a4-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -66,7 +66,7 @@
           <object statement-guid="4d14935e-71a4-11e9-98e0-2719d32d2629" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="4d149361-71a4-11e9-98e0-2719d32d2629" type="literal">network</object>
+          <object statement-guid="4d149361-71a4-11e9-98e0-2719d32d2629" type="literal">networkConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="4d14935f-71a4-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -88,7 +88,7 @@
           <object statement-guid="5500c687-71a4-11e9-98e0-2719d32d2629" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="5500c68a-71a4-11e9-98e0-2719d32d2629" type="literal">security</object>
+          <object statement-guid="5500c68a-71a4-11e9-98e0-2719d32d2629" type="literal">securityConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="5500c688-71a4-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -110,7 +110,7 @@
           <object statement-guid="5c37162f-71a4-11e9-98e0-2719d32d2629" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="5c371632-71a4-11e9-98e0-2719d32d2629" type="literal">businessContinuity</object>
+          <object statement-guid="5c371632-71a4-11e9-98e0-2719d32d2629" type="literal">businessContinuityConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="5c371630-71a4-11e9-98e0-2719d32d2629" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -132,7 +132,7 @@
           <object statement-guid="2184195a-878b-11e9-a61b-279ebde48b48" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="2184406b-878b-11e9-a61b-279ebde48b48" type="literal">topology</object>
+          <object statement-guid="2184406b-878b-11e9-a61b-279ebde48b48" type="literal">topologyConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="218503bd-878b-11e9-a61b-279ebde48b48" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
@@ -151,7 +151,7 @@
           <object statement-guid="f255b235-6da3-11e9-8af5-2346ca56c2e2" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="f255d946-6da3-11e9-8af5-2346ca56c2e2" type="literal">services</object>
+          <object statement-guid="f255d946-6da3-11e9-8af5-2346ca56c2e2" type="literal">serviceConcept</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="f2560058-6da3-11e9-8af5-2346ca56c2e2" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />

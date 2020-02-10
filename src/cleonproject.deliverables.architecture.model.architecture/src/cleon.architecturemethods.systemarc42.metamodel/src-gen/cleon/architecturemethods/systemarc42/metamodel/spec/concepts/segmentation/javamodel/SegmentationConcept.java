@@ -81,12 +81,12 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
   }
     
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone> selectSegmentationZone() {
-    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone);
+  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation selectSegmentation() {
+    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentation);
   }
 
-  public SegmentationConcept setSegmentationZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone> segmentationZone) {
-    _setList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, segmentationZone);
+  public SegmentationConcept setSegmentation(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation segmentation) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentation, segmentation);
     return this;
   }
     
@@ -117,15 +117,15 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, visitor);
+    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentation, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_subzonePolicies, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept selectToMeSegmentationZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentationZone, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept selectToMeSegmentation(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentation, object.getResource());
   }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept selectToMeSubzonePolicies(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies object) {
@@ -133,4 +133,4 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,JzqW46CxPLbWCfZ9SHTGWhp5Dn4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,uiD0nrJsBZ3FEu2JMyaRO+y1w7o=] */

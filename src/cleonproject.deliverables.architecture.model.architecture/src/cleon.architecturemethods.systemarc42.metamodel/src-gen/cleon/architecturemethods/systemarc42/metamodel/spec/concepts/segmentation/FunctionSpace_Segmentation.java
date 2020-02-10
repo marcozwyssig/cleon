@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.to_move.segmentation;
+package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -7,19 +7,44 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
-/* Begin Protected Region [[a63e9595-a95e-11e9-bf83-7bacdb6991f7,imports]] */
+/* Begin Protected Region [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
 
-/* End Protected Region   [[a63e9595-a95e-11e9-bf83-7bacdb6991f7,imports]] */
+/* End Protected Region   [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
 
 public class FunctionSpace_Segmentation {
 
-  /* Begin Protected Region [[a63e9595-a95e-11e9-bf83-7bacdb6991f7]] */
+  /* Begin Protected Region [[d422151a-4607-11ea-857e-99d5aa1ed1cd]] */
   
-  /* End Protected Region   [[a63e9595-a95e-11e9-bf83-7bacdb6991f7]] */
+  /* End Protected Region   [[d422151a-4607-11ea-857e-99d5aa1ed1cd]] */
 
+
+  public static interface ISegmentationConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("dac350e2-4607-11ea-857e-99d5aa1ed1cd")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> GetAllZones();
+
+  }
+  
+  public static interface ISegmentationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SegmentationConceptFunctionsImpl implements ISegmentationConceptFunctionsImpl {
+
+    public static final ISegmentationConceptFunctionsImpl INSTANCE = new SegmentationConceptFunctionsImpl();
+
+    private SegmentationConceptFunctionsImpl() {}
+
+  }
+  
+  public static class SegmentationConceptFunctions {
+
+    private SegmentationConceptFunctions() {}
+
+  }
 
   public static interface ISecuritySubZoneFunctions extends IDynamicResourceExtension {
 
@@ -119,7 +144,7 @@ public class FunctionSpace_Segmentation {
     			lists.add(securitySubZone);
     		}
     	}
-    	return lists;     
+    	return lists;       
       /* End Protected Region   [[f4d72be1-e9e7-11e9-92e5-e15beb25e0f4]] */
     }
 
@@ -137,11 +162,7 @@ public class FunctionSpace_Segmentation {
     		return "R";
     	}
     	ISubZoneAccessPolicyFunctions accessPolicy = accesspolicy.extension(ISubZoneAccessPolicyFunctions.class);
-    	return accessPolicy.EvaluatePolicy(source);
-
-
-
-   
+    	return accessPolicy.EvaluatePolicy(source);   
       /* End Protected Region   [[e99aad2f-a965-11e9-bf83-7bacdb6991f7]] */
     }
 
@@ -163,4 +184,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,a63e9595-a95e-11e9-bf83-7bacdb6991f7,8xyDqDzJeEqKFsznpAlPpM+C1vY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,ElpxOMDSBaiJ6tjd2DPkZoeSWtw=] */

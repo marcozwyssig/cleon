@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SegmentationZone extends DynamicResource implements ISegmentationZone {
+public class Segmentation extends DynamicResource implements ISegmentation {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISegmentationZone> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISegmentationZone>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISegmentation> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISegmentation>() {
     
     @Override
-    public ISegmentationZone create() {
-      return new SegmentationZone();
+    public ISegmentation create() {
+      return new Segmentation();
     }
     
     @Override
-    public ISegmentationZone create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SegmentationZone(resourceRepository, resource);
+    public ISegmentation create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Segmentation(resourceRepository, resource);
     }
   
   };
 
-  public SegmentationZone() {
-    super(ISegmentationZone.TYPE_ID);
+  public Segmentation() {
+    super(ISegmentation.TYPE_ID);
   }
   
-  public SegmentationZone(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISegmentationZone.TYPE_ID);
+  public Segmentation(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISegmentation.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public SegmentationZone setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public Segmentation setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public SegmentationZone setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public Segmentation setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public SegmentationZone setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public Segmentation setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -85,7 +85,7 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public SegmentationZone setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public Segmentation setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -95,18 +95,18 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SegmentationZone setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Segmentation setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
     
   @Override
-  public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone selectZone() {
-    return _getSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SegmentationZone_zone);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectZones() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Segmentation_zones);
   }
 
-  public SegmentationZone setZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone zone) {
-    _setSingle(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SegmentationZone_zone, zone);
+  public Segmentation setZones(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> zones) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Segmentation_zones, zones);
     return this;
   }
     
@@ -118,14 +118,14 @@ public class SegmentationZone extends DynamicResource implements ISegmentationZo
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SegmentationZone_zone, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Segmentation_zones, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone selectToMeZone(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentationZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SegmentationZone_zone, object.getResource());
+  public static cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation selectToMeZones(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone object) {
+    return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Segmentation_zones, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ccaeef49-0d1d-11e9-be4f-03130cc057ef,zKY5zkfqjWZMaFe0PZsDYZ87MVU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ccaeef49-0d1d-11e9-be4f-03130cc057ef,jGq7MBof//Su063ktUcZ2osU/yU=] */

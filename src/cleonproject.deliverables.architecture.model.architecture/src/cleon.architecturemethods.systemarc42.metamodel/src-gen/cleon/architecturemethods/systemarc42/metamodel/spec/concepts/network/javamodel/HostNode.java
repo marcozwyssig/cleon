@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -61,11 +61,11 @@ public class HostNode extends DynamicResource implements IHostNode {
   
   @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost selectHost() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.HostNode_host);
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.HostNode_host);
   }
 
   public HostNode setHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost host) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.HostNode_host, host);
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.HostNode_host, host);
     return this;
   }
     
@@ -106,16 +106,16 @@ public class HostNode extends DynamicResource implements IHostNode {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_exportDNSRecord, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.HostNode_host, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.HostNode_host, visitor);
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.IHostNode> selectToMeHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.IHostNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.HostNode_host, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> selectToMeHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.HostNode_host, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,HDYB5SxJ6j4MQaqT5KbgMJLxztU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,98rVY9ja5PKQoDoh1jb8zQP34SQ=] */

@@ -61,6 +61,16 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
     
   @Override
+  public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask selectCidr() {
+    return _getSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr);
+  }
+
+  public NetworkEnvironment setCidr(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask cidr) {
+    _setSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, cidr);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -71,12 +81,12 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment selectEnvironment() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environment);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironmentForNetwork() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environmentForNetwork);
   }
 
-  public NetworkEnvironment setEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment environment) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environment, environment);
+  public NetworkEnvironment setEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment environmentForNetwork) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environmentForNetwork, environmentForNetwork);
     return this;
   }
     
@@ -91,11 +101,11 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain> selectNetworkSite() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite> selectNetworkSite() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite);
   }
 
-  public NetworkEnvironment setNetworkSite(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain> networkSite) {
+  public NetworkEnvironment setNetworkSite(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite> networkSite) {
     _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite, networkSite);
     return this;
   }
@@ -156,9 +166,10 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environment, visitor);
+    _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environmentForNetwork, visitor);
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IGroup.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GroupAware_groups, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworks_range, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -166,13 +177,13 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment> selectToMeEnvironment(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environment, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment> selectToMeEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_environmentForNetwork, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment selectToMeNetworkSite(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment selectToMeNetworkSite(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkEnvironment_networkSite, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,Ap9nsXwAiKHB5hPiT65Sc80L4NI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,uOtC/8kBLx5oe0ZNTUlQoUwV1co=] */

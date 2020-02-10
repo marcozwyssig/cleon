@@ -37,12 +37,16 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="99fa4c82-4c25-11ea-9e56-2744d9052e0e" type="resource" guid="99f9b13e-4c25-11ea-9e56-2744d9052e0e" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="8df31d0c-053f-11ea-b1c2-9163c84d2612" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f8ba9ff5-053f-11ea-b1c2-9163c84d2612" type="resource" guid="66edbc85-092f-11e9-8c40-11db3668c0c9" />
     <object statement-guid="a493cec0-053f-11ea-b1c2-9163c84d2612" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+    <object statement-guid="39b3f5cc-4c24-11ea-9e56-2744d9052e0e" type="resource" guid="8d46e8a9-0932-11e9-8c40-11db3668c0c9" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="a493f5d3-053f-11ea-b1c2-9163c84d2612">
@@ -51,7 +55,7 @@
           <object statement-guid="a493f5d2-053f-11ea-b1c2-9163c84d2612" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a494e036-053f-11ea-b1c2-9163c84d2612" type="literal">environment</object>
+          <object statement-guid="a494e036-053f-11ea-b1c2-9163c84d2612" type="literal">environmentForNetwork</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="a494e037-053f-11ea-b1c2-9163c84d2612" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
@@ -60,7 +64,7 @@
           <object statement-guid="a4950748-053f-11ea-b1c2-9163c84d2612" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="a494e035-053f-11ea-b1c2-9163c84d2612" type="resource" guid="5b7cad68-053e-11ea-b1c2-9163c84d2612" />
+          <object statement-guid="a494e035-053f-11ea-b1c2-9163c84d2612" type="resource" guid="7372f8ef-ef40-11e8-be8a-b748ff8f0a75" />
         </predicate>
         <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
           <object statement-guid="a4941ce4-053f-11ea-b1c2-9163c84d2612" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
@@ -199,6 +203,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="8df4f1cd-053f-11ea-b1c2-9163c84d2612" type="literal">NetworkEnvironment</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="99fa4c82-4c25-11ea-9e56-2744d9052e0e">
+      <resource guid="99f9b13e-4c25-11ea-9e56-2744d9052e0e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99f9d750-4c25-11ea-9e56-2744d9052e0e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b07bb662-4c25-11ea-9e56-2744d9052e0e" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.NetworkEnvironmentValidatorAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="99fa2571-4c25-11ea-9e56-2744d9052e0e" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="64ae9843-4724-11ea-9661-cd136094c1fc" type="literal">false</object>

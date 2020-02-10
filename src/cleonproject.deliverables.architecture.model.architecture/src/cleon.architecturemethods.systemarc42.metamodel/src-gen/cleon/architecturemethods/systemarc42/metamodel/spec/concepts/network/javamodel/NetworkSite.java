@@ -1,31 +1,31 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NetworkNetdomain extends DynamicResource implements INetworkNetdomain {
+public class NetworkSite extends DynamicResource implements INetworkSite {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkNetdomain> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkNetdomain>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkSite> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkSite>() {
     
     @Override
-    public INetworkNetdomain create() {
-      return new NetworkNetdomain();
+    public INetworkSite create() {
+      return new NetworkSite();
     }
     
     @Override
-    public INetworkNetdomain create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NetworkNetdomain(resourceRepository, resource);
+    public INetworkSite create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NetworkSite(resourceRepository, resource);
     }
   
   };
 
-  public NetworkNetdomain() {
-    super(INetworkNetdomain.TYPE_ID);
+  public NetworkSite() {
+    super(INetworkSite.TYPE_ID);
   }
   
-  public NetworkNetdomain(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INetworkNetdomain.TYPE_ID);
+  public NetworkSite(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INetworkSite.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public NetworkNetdomain setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public NetworkSite setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr);
   }
 
-  public NetworkNetdomain setCidr(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask cidr) {
+  public NetworkSite setCidr(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask cidr) {
     _setSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, cidr);
     return this;
   }
@@ -75,28 +75,28 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public NetworkNetdomain setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NetworkSite setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
   @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite selectNetdomain() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_netdomain);
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_netdomain);
   }
 
-  public NetworkNetdomain setNetdomain(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite netdomain) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_netdomain, netdomain);
+  public NetworkSite setNetdomain(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite netdomain) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_netdomain, netdomain);
     return this;
   }
     
   @Override
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone() {
-    return _getMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_networkSubZone);
+    return _getMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_networkSubZone);
   }
 
-  public NetworkNetdomain setNetworkSubZone(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> networkSubZone) {
-    _setMultiMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_networkSubZone, networkSubZone);
+  public NetworkSite setNetworkSubZone(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> networkSubZone) {
+    _setMultiMap(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_networkSubZone, networkSubZone);
     return this;
   }
     
@@ -105,7 +105,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkAware_networks);
   }
 
-  public NetworkNetdomain setNetworks(java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> networks) {
+  public NetworkSite setNetworks(java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> networks) {
     _setList(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkAware_networks, networks);
     return this;
   }
@@ -115,7 +115,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public NetworkNetdomain setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public NetworkSite setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -125,7 +125,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public NetworkNetdomain setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NetworkSite setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -135,7 +135,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public NetworkNetdomain setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public NetworkSite setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -145,7 +145,7 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NetworkNetdomain setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NetworkSite setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -157,21 +157,21 @@ public class NetworkNetdomain extends DynamicResource implements INetworkNetdoma
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_netdomain, visitor);
-    _acceptMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_networkSubZone, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_netdomain, visitor);
+    _acceptMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_networkSubZone, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain> selectToMeNetdomain(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_netdomain, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite> selectToMeNetdomain(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_netdomain, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain selectToMeNetworkSubZone(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworkNetdomain.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.NetworksPackage.NetworkNetdomain_networkSubZone, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite selectToMeNetworkSubZone(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkSite.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.NetworkPackage.NetworkSite_networkSubZone, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,3+M0UxPHx+ARiiONf564/Kvm4AM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,4Ut52S+EvLkNPmTewKFLVFlTy/c=] */

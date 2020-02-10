@@ -8,10 +8,10 @@ public interface ITopologyEnvironment extends ch.actifsource.core.javamodel.IRes
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironment selectEnvironment();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment selectEnvironmentForTopology();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite> selectSites();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,uBHpfwYDGJapHD/5pKFPfbiZQDg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ecf82cf6-053e-11ea-b1c2-9163c84d2612,pEnhQ1GbF45BHDrnVfh3qp2p2WE=] */

@@ -6,6 +6,8 @@ public interface ISystemEnvironment extends cleon.architecturemethods.arc42.meta
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("7372f8ef-ef40-11e8-be8a-b748ff8f0a75");
   
+  public java.lang.String selectHostGroupPrefix();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.naming.javamodel.IDisplayNameStrategy selectDisplayStrategy();
@@ -26,8 +28,6 @@ public interface ISystemEnvironment extends cleon.architecturemethods.arc42.meta
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.IDeploymentLevel> selectLevel_8();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.to_move.environments.javamodel.IEnvironments selectEnvironments();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,7UrSC0pEY38A4uglJLO1mqnCWvE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,vAAf+XDtnxrSBWE/x+7l6J0mhMs=] */

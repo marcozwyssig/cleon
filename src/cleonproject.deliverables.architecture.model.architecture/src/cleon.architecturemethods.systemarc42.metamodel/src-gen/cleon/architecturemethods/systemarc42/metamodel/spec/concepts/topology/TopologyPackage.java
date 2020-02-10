@@ -39,7 +39,7 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_Cluster = new Resource("879fcaed-fb12-11e9-890e-576c93cea08c");
   public static final Resource TopologyEnvironment = new Resource("ecf82cf6-053e-11ea-b1c2-9163c84d2612");
   public static final Resource Topology_topologyEnvironment = new Resource("f95af3de-053e-11ea-b1c2-9163c84d2612");
-  public static final Resource TopologyEnvironment_environment = new Resource("085ecb6f-053f-11ea-b1c2-9163c84d2612");
+  public static final Resource TopologyEnvironment_environmentForTopology = new Resource("085ecb6f-053f-11ea-b1c2-9163c84d2612");
   public static final Resource AbstractHost_overrideRN = new Resource("72442c50-0780-11ea-8638-e775d7e940cc");
   public static final Resource AbstractSiteWithFunctionID_functionID = new Resource("6f9c72f8-3632-11ea-b5c2-e3e297a45d39");
   public static final Resource AbstractSiteComposition_subsite = new Resource("b14dec3a-3632-11ea-b5c2-e3e297a45d39");
@@ -66,4 +66,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology,WXi/papuWSbwHN1+XQ6ZVM/MkUc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology,xWsOtAsgRu2gKj4DemExNZhTq5s=] */

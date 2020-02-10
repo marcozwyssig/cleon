@@ -8,10 +8,8 @@ public interface INetworkConcept extends cleon.architecturemethods.systemarc42.m
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment> selectNetworkNetdomain();
-  
-  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.to_move.networks.javamodel.INetworks selectNetworks();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkEnvironment> selectNetworkEnvironment();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,WdmbYABwQg3ANOWRC+hfuiqX5u8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4d4ca85-4b28-11e9-8338-41c203971ecb,b1JXZiIDcwlZLKDtmHt3DqYrwlA=] */

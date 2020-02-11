@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.StringTokenizer;
 
 import ch.actifsource.core.Resource;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
@@ -17,37 +18,66 @@ import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency
 import ch.actifsource.core.validation.quickfix.IInconsistencyEnablement;
 import ch.actifsource.template.model.spec.SpecPackage;
 import ch.actifsource.util.log.Logger;
+import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.FunctionSpace_Network.INetworkSiteFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.FunctionSpace_Network.IAbstractNetworkFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package;
+import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPv4_DFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.FixMissingIPQuickfix;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IPv4_Mask_Aware;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.SubnetUtils;
+import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 
-public class NetworkEnvironmentValidatorAspect implements IResourceValidationAspect {
+public class NetworkSiteValidatorAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
-//		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
-//		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-//		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
-//				.getResource(IAbstractPhysicalNetwork.class, validationContext.getResource());
-//		IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-//		if (cidr == null)
-//			return;
-//
-//		SubnetUtils subnet = new SubnetUtils(
-//				Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-//
-//		java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
-//		if (nodeMap == null) {
-//			return;
-//		}
+		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		INetworkSite networkSite = resourceRepository.getResource(INetworkSite.class, validationContext.getResource());
+		INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);
+		int functionId = networkSiteFunctions.FunctionId();
+		if( functionId == 0) {
+			return;
+		}
+		
+		IIPv4_Mask cidr = networkSite.selectCidr();
+		if (cidr == null)
+			return;
+		
+		INetworkEnvironment networkEnvironment = NetworkEnvironment.selectToMeNetworkSite(networkSite);
+		IIPv4_Mask cidrEnvironment = networkEnvironment.selectCidr();
+		
+		int calcFunctionId = functionId / 32;
+		
+		StringTokenizer tok = new StringTokenizer(cidrEnvironment.selectIPv4(), ".");
+
+		if (tok.countTokens() != 4) {
+			throw new IllegalArgumentException("IP address must be in the format 'xxx.xxx.xxx.xxx'");
+		}
+		
+		tok.nextToken(); // skip first ip
+		int startsubnet = Integer.parseInt(tok.nextToken()); 
+		int calcsubnet = startsubnet + calcFunctionId;
+		
+
+		ArrayList<INetworkSubZone> toFixedList = new ArrayList<INetworkSubZone>();
+		
+		for( Resource subzone : networkSite.selectNetworkSubZone().keyIterable() ) {
+			for(INetworkSubZone networkSubzone : networkSite.selectNetworkSubZone().get(subzone)) {
+				int vlan = networkSubzone.selectSecuritySubZone().selectVLAN_No();
+				int calcVlan = vlan - 2000;
+				
+				
+			}
+			
+		}
+		
 //
 //		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
-//		ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<IAbstractNetworkNode>();
+
 //		for (IAbstractNetworkNode node : nodes) {			
 //			boolean isInRange = subnet.getInfo().isInRange(
 //					Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource()));

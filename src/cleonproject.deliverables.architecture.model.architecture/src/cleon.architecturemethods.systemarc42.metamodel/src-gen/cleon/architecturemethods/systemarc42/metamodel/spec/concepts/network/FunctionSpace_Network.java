@@ -258,6 +258,31 @@ public class FunctionSpace_Network {
 
   }
 
+  public static interface INetworkSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e0940269-4cb1-11ea-9133-491af9338ef7")
+    public java.lang.Integer FunctionId();
+
+  }
+  
+  public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NetworkSiteFunctionsImpl implements INetworkSiteFunctionsImpl {
+
+    public static final INetworkSiteFunctionsImpl INSTANCE = new NetworkSiteFunctionsImpl();
+
+    private NetworkSiteFunctionsImpl() {}
+
+  }
+  
+  public static class NetworkSiteFunctions {
+
+    private NetworkSiteFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,qAq0gIlwOSpWqiLdxW7Gc7UeQrM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,ksKApUiDJ2JRxC36I60n4tj2cRs=] */

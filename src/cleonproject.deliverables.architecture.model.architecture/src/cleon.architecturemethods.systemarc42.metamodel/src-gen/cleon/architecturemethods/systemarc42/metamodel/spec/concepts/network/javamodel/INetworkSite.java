@@ -8,10 +8,10 @@ public interface INetworkSite extends cleon.modelinglanguages.network.metamodel.
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite selectNetdomain();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite selectSite();
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,VWW9T3G4RyF/egWN8Ncn5e40XpQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,x9I5+KvCok213fEbydv6QecEiqE=] */

@@ -10,7 +10,7 @@ public class NetworkPackage {
   public static final Resource FunctionSpace_aE_Network_NetworkNode = new Resource("2c5028d7-7b0e-11e9-a70f-4dc03941a024");
   public static final Resource NetworkSite = new Resource("398f37f2-928a-11e9-959e-8115c2f9e41e");
   public static final Resource NetworkEnvironment_networkSite = new Resource("3fc8637d-928a-11e9-959e-8115c2f9e41e");
-  public static final Resource NetworkSite_netdomain = new Resource("aa3d0a8a-928a-11e9-959e-8115c2f9e41e");
+  public static final Resource NetworkSite_site = new Resource("aa3d0a8a-928a-11e9-959e-8115c2f9e41e");
   public static final Resource NetworkSite_networkSubZone = new Resource("9badc25e-929c-11e9-9fe7-2b3a6b2e918b");
   public static final Resource HostNode = new Resource("1580b55d-92a0-11e9-b2b4-f340ae70802c");
   public static final Resource HostNode_host = new Resource("535cbd56-92a0-11e9-b2b4-f340ae70802c");
@@ -25,6 +25,7 @@ public class NetworkPackage {
   public static final Resource NetworkEnvironment = new Resource("8df2f5fa-053f-11ea-b1c2-9163c84d2612");
   public static final Resource NetworkConcept_networkEnvironment = new Resource("92c258bf-053f-11ea-b1c2-9163c84d2612");
   public static final Resource NetworkEnvironment_environmentForNetwork = new Resource("a493cec1-053f-11ea-b1c2-9163c84d2612");
+  public static final Resource FunctionSpace_aE_Network_NetworkSite = new Resource("d99081cf-4cb1-11ea-9133-491af9338ef7");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network,0Qs++nMVJTGQVrEj+ZLroEieGmk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network,X8EVJgaVAc0yH+XdLOwiLQkTJMY=] */

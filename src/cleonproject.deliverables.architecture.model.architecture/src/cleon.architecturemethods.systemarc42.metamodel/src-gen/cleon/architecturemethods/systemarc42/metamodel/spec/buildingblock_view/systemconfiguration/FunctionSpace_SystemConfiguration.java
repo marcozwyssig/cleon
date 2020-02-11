@@ -228,7 +228,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IAppSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IWebServerConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ac6a40b2-02c8-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -244,25 +244,25 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IAppSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWebServerConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AppSystemConfigurationFunctionsImpl implements IAppSystemConfigurationFunctionsImpl {
+  public static class WebServerConfigurationFunctionsImpl implements IWebServerConfigurationFunctionsImpl {
 
-    public static final IAppSystemConfigurationFunctionsImpl INSTANCE = new AppSystemConfigurationFunctionsImpl();
+    public static final IWebServerConfigurationFunctionsImpl INSTANCE = new WebServerConfigurationFunctionsImpl();
 
-    private AppSystemConfigurationFunctionsImpl() {}
+    private WebServerConfigurationFunctionsImpl() {}
 
   }
   
-  public static class AppSystemConfigurationFunctions {
+  public static class WebServerConfigurationFunctions {
 
-    private AppSystemConfigurationFunctions() {}
+    private WebServerConfigurationFunctions() {}
 
   }
 
-  public static interface IIssuingCASystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IPublicKeyInfrastructureSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d56b0d06-02cb-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -278,21 +278,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IIssuingCASystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPublicKeyInfrastructureSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class IssuingCASystemConfigurationFunctionsImpl implements IIssuingCASystemConfigurationFunctionsImpl {
+  public static class PublicKeyInfrastructureSystemConfigurationFunctionsImpl implements IPublicKeyInfrastructureSystemConfigurationFunctionsImpl {
 
-    public static final IIssuingCASystemConfigurationFunctionsImpl INSTANCE = new IssuingCASystemConfigurationFunctionsImpl();
+    public static final IPublicKeyInfrastructureSystemConfigurationFunctionsImpl INSTANCE = new PublicKeyInfrastructureSystemConfigurationFunctionsImpl();
 
-    private IssuingCASystemConfigurationFunctionsImpl() {}
+    private PublicKeyInfrastructureSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class IssuingCASystemConfigurationFunctions {
+  public static class PublicKeyInfrastructureSystemConfigurationFunctions {
 
-    private IssuingCASystemConfigurationFunctions() {}
+    private PublicKeyInfrastructureSystemConfigurationFunctions() {}
 
   }
 
@@ -364,7 +364,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IJumpHostSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface ITerminalServerSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("abdbca05-02cd-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -380,21 +380,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IJumpHostSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITerminalServerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class JumpHostSystemConfigurationFunctionsImpl implements IJumpHostSystemConfigurationFunctionsImpl {
+  public static class TerminalServerSystemConfigurationFunctionsImpl implements ITerminalServerSystemConfigurationFunctionsImpl {
 
-    public static final IJumpHostSystemConfigurationFunctionsImpl INSTANCE = new JumpHostSystemConfigurationFunctionsImpl();
+    public static final ITerminalServerSystemConfigurationFunctionsImpl INSTANCE = new TerminalServerSystemConfigurationFunctionsImpl();
 
-    private JumpHostSystemConfigurationFunctionsImpl() {}
+    private TerminalServerSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class JumpHostSystemConfigurationFunctions {
+  public static class TerminalServerSystemConfigurationFunctions {
 
-    private JumpHostSystemConfigurationFunctions() {}
+    private TerminalServerSystemConfigurationFunctions() {}
 
   }
 
@@ -806,7 +806,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IBlockStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0e1f8f25-0a88-11e9-a59d-d7a0c53e291c")
     public java.lang.String GetType();
@@ -822,21 +822,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IBlockStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class BlockStorageSystemConfigurationFunctionsImpl implements IBlockStorageSystemConfigurationFunctionsImpl {
+  public static class StorageSystemConfigurationFunctionsImpl implements IStorageSystemConfigurationFunctionsImpl {
 
-    public static final IBlockStorageSystemConfigurationFunctionsImpl INSTANCE = new BlockStorageSystemConfigurationFunctionsImpl();
+    public static final IStorageSystemConfigurationFunctionsImpl INSTANCE = new StorageSystemConfigurationFunctionsImpl();
 
-    private BlockStorageSystemConfigurationFunctionsImpl() {}
+    private StorageSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class BlockStorageSystemConfigurationFunctions {
+  public static class StorageSystemConfigurationFunctions {
 
-    private BlockStorageSystemConfigurationFunctions() {}
+    private StorageSystemConfigurationFunctions() {}
 
   }
 
@@ -1010,40 +1010,6 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface ISpacewalkSatelliteSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("2b19a533-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("2b19a536-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("2b19a539-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("2b19a53c-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface ISpacewalkSatelliteSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SpacewalkSatelliteSystemConfigurationFunctionsImpl implements ISpacewalkSatelliteSystemConfigurationFunctionsImpl {
-
-    public static final ISpacewalkSatelliteSystemConfigurationFunctionsImpl INSTANCE = new SpacewalkSatelliteSystemConfigurationFunctionsImpl();
-
-    private SpacewalkSatelliteSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class SpacewalkSatelliteSystemConfigurationFunctions {
-
-    private SpacewalkSatelliteSystemConfigurationFunctions() {}
-
-  }
-
   public static interface IWsusSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("bb8c67d8-0c3d-11e9-83ba-4d57b06560a2")
@@ -1112,7 +1078,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IVirtualMachineHostSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IHypervisorSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0184c8b4-02bb-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -1128,21 +1094,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IVirtualMachineHostSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IHypervisorSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class VirtualMachineHostSystemConfigurationFunctionsImpl implements IVirtualMachineHostSystemConfigurationFunctionsImpl {
+  public static class HypervisorSystemConfigurationFunctionsImpl implements IHypervisorSystemConfigurationFunctionsImpl {
 
-    public static final IVirtualMachineHostSystemConfigurationFunctionsImpl INSTANCE = new VirtualMachineHostSystemConfigurationFunctionsImpl();
+    public static final IHypervisorSystemConfigurationFunctionsImpl INSTANCE = new HypervisorSystemConfigurationFunctionsImpl();
 
-    private VirtualMachineHostSystemConfigurationFunctionsImpl() {}
+    private HypervisorSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class VirtualMachineHostSystemConfigurationFunctions {
+  public static class HypervisorSystemConfigurationFunctions {
 
-    private VirtualMachineHostSystemConfigurationFunctions() {}
+    private HypervisorSystemConfigurationFunctions() {}
 
   }
 
@@ -1207,4 +1173,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,1ayKpGeKyYxqxRwNlZqOSakMSZk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,F/97ZjGqZrXXD+ZQ2fk7lI9tmpE=] */

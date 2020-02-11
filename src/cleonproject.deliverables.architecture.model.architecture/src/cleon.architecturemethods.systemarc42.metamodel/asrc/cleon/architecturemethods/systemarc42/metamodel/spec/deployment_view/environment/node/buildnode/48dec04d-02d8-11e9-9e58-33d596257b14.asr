@@ -891,7 +891,7 @@
                 <object statement-guid="c2eb3aa7-6cef-11e9-a6d3-775c09e81e2d" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
+                <object statement-guid="cf1b5887-6cef-11e9-a6d3-775c09e81e2d" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.operatingsystem.javamodel.IOperatingSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
               </predicate>
             </resource>
           </object>
@@ -919,7 +919,7 @@
                 <object statement-guid="4de742e5-7bb1-11e9-94aa-f1ea7ea33f46" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="4de742e6-7bb1-11e9-94aa-f1ea7ea33f46" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IVirtualMachineHostSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
+                <object statement-guid="4de742e6-7bb1-11e9-94aa-f1ea7ea33f46" type="literal">return buildNodeList.stream().filter(x -&gt; x.selectInstanceOf() instanceof cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.operatingsystem.javamodel.IHypervisorSystemConfiguration).collect(java.util.stream.Collectors.toList());</object>
               </predicate>
             </resource>
           </object>

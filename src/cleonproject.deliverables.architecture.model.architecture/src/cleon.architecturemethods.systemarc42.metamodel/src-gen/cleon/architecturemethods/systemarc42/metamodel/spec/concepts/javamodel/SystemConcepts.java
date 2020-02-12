@@ -179,6 +179,10 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
 
   // toMeRelations
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeTopologyConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopology object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_topologyConcept, object.getResource());
+  }
+  
   public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeSegmentationConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.javamodel.ISegmentationConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_segmentationConcept, object.getResource());
   }
@@ -199,13 +203,9 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_businessContinuityConcept, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeTopologyConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopology object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_topologyConcept, object.getResource());
-  }
-  
   public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeServiceConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IServices object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_serviceConcept, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,QLGT0M9mzf8c27gUtO2eXWncARE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,DqwCBA3P3c/1b6ZAQazCcuNRa6I=] */

@@ -49,12 +49,12 @@ public class SupplyNetDomainNode extends DynamicResource implements ISupplyNetDo
   }
 
   @Override
-  public java.lang.Integer selectGroupId() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_groupId);
+  public java.lang.Integer selectFunctionId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_functionId);
   }
     
-  public void setGroupId(java.lang.Integer groupId) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_groupId, groupId);
+  public void setFunctionId(java.lang.Integer functionId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_functionId, functionId);
   }
 
   @Override
@@ -151,7 +151,7 @@ public class SupplyNetDomainNode extends DynamicResource implements ISupplyNetDo
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_groupId, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.supplynode.SupplynodePackage.SupplyNetDomainNode_functionId, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.id.IdPackage.StringBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.ShortName_shortName, visitor);
@@ -168,4 +168,4 @@ public class SupplyNetDomainNode extends DynamicResource implements ISupplyNetDo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,oZMVlmDe6ZRlcOeqXg7/KcxsBmM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,rRIdOhc3TluCFrsFPHSsOYHKdm0=] */

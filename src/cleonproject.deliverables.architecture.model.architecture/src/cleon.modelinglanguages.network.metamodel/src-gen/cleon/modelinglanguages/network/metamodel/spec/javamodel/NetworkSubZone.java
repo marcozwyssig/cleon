@@ -48,6 +48,15 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Integer selectOverrideVLAN() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_overrideVLAN);
+  }
+    
+  public void setOverrideVLAN(java.lang.Integer overrideVLAN) {
+     _setSingleAttribute(cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_overrideVLAN, overrideVLAN);
+  }
+
   // relations
   
   @Override
@@ -155,6 +164,7 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.NetworkSubZone_overrideVLAN, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IGroup.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GroupAware_groups, visitor);
@@ -171,4 +181,4 @@ public class NetworkSubZone extends DynamicResource implements INetworkSubZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,F/BkNgHmdy1+9HZvQbngUwWgPIs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1f0c1a61-4b29-11e9-8338-41c203971ecb,dYJUpj7VifjDpCAxs+lkropzmCE=] */

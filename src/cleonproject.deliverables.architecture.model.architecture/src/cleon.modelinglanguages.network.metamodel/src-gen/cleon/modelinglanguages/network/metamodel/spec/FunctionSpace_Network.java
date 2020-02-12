@@ -318,6 +318,31 @@ public class FunctionSpace_Network {
 
   }
 
+  public static interface INetworkSubZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f0059be4-4cf1-11ea-b2c1-57c8b0ec51b7")
+    public java.lang.String Vlan();
+
+  }
+  
+  public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NetworkSubZoneFunctionsImpl implements INetworkSubZoneFunctionsImpl {
+
+    public static final INetworkSubZoneFunctionsImpl INSTANCE = new NetworkSubZoneFunctionsImpl();
+
+    private NetworkSubZoneFunctionsImpl() {}
+
+  }
+  
+  public static class NetworkSubZoneFunctions {
+
+    private NetworkSubZoneFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,b5kvaLQ3lhSHAZdDbvj9Y73TuQY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,TqJOLqIuQLipfO5KH0Whr2gpK6g=] */

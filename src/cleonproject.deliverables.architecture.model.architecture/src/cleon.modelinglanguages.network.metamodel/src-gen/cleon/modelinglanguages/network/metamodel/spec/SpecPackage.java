@@ -42,6 +42,8 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Network_DefaultGatewayNode = new Resource("4d8ce118-3ecc-11ea-9af7-ad5bf30c585a");
   public static final Resource FunctionSpace_aE_Network_GatewayNode = new Resource("5d8b6c2c-3ecc-11ea-9af7-ad5bf30c585a");
   public static final Resource FunctionSpace_aE_Network_NamedNetworkNode = new Resource("63c226cb-3ecc-11ea-9af7-ad5bf30c585a");
+  public static final Resource NetworkSubZone_overrideVLAN = new Resource("a97bbeb9-4cf1-11ea-b2c1-57c8b0ec51b7");
+  public static final Resource FunctionSpace_aE_Network_NetworkSubZone = new Resource("e8eff278-4cf1-11ea-b2c1-57c8b0ec51b7");
   
   /* Begin Protected Region [[user]] */
   
@@ -62,4 +64,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,nDBamf/jdfefR/WOFKvOJXYozn0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,Mr6MPAudbR8B++kPN2GN7F5tvv4=] */

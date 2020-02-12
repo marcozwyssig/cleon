@@ -88,7 +88,7 @@ public class FunctionSpace_RBAC {
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
       /* Begin Protected Region [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
-    	return (abstractNetdomainGroup.selectNetdomain().selectGroupId() * MaxRounded(abstractNetdomainGroup)) + 2000;    		  
+    	return (abstractNetdomainGroup.selectNetdomain().selectFunctionId() * MaxRounded(abstractNetdomainGroup)) + 2000;    		  
       /* End Protected Region   [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
     }
 

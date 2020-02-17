@@ -121,7 +121,7 @@ public class FunctionSpace_SubzonePolicy {
 		for (ISystemConfiguration sysCfg : sysCfgs) {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : sourceSubZoneFunctions						
-						.AllNetdomainWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {
+						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {
 						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
 								sourceSubZone.selectVLAN_No());
 						result.append("\n");
@@ -158,7 +158,7 @@ public class FunctionSpace_SubzonePolicy {
 		for (ISystemConfiguration sysCfg : sysCfgs) {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : destinationSubZoneFunctions
-						.AllNetdomainWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {				
+						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {				
 						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
 								destinationSubZone.selectVLAN_No());
 						result.append(System.lineSeparator());

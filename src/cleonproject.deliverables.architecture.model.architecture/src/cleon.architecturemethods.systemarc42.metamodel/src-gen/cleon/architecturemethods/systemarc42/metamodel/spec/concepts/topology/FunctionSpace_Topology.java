@@ -259,10 +259,10 @@ public class FunctionSpace_Topology {
     public java.lang.String ShortName();
 
     @IDynamicResourceExtension.MethodId("9d2e0ada-0780-11ea-8638-e775d7e940cc")
-    public java.lang.String NetdomainName();
+    public java.lang.String SiteName();
 
     @IDynamicResourceExtension.MethodId("738023f9-09f0-11ea-baed-218c3e076b56")
-    public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts NetDomain();
+    public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts Site();
 
   }
   
@@ -361,4 +361,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,v/1byd9m8BXElf1MohS7IAJWZ5w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,w6YYwzU2rqTITbG+2kRxXMTJhXs=] */

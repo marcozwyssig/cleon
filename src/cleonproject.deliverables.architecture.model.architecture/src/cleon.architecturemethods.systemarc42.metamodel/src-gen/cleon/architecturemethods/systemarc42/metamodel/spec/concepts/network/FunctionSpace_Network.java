@@ -79,6 +79,15 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("2f52abac-ca42-11e9-83b0-559396620907")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode> GetNodes();
 
+    @IDynamicResourceExtension.MethodId("e7ef1f46-5176-11ea-b9cb-85bbdfd861be")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodes();
+
+    @IDynamicResourceExtension.MethodId("fd85db1d-5176-11ea-b9cb-85bbdfd861be")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost> AllAbstractHosts();
+
+    @IDynamicResourceExtension.MethodId("2e929d64-5177-11ea-b9cb-85bbdfd861be")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurations();
+
   }
   
   public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -285,4 +294,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,ksKApUiDJ2JRxC36I60n4tj2cRs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,TGQV4qIS8GvtarElq40GVGpgSn0=] */

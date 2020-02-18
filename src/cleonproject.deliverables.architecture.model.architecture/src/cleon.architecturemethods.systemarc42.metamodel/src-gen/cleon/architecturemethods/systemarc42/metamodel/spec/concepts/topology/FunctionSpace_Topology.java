@@ -134,9 +134,6 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("a3a3f9cd-9375-11e9-8139-e76b19cfb4bf")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllAbstractNetdomainHosts();
 
-    @IDynamicResourceExtension.MethodId("6b666867-deae-11e9-b714-478bec98e62d")
-    public java.lang.String GroupNameOld(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration systemConfiguration);
-
     @IDynamicResourceExtension.MethodId("8ada83c1-0aa1-11ea-97f4-9d91b2097bad")
     public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
 
@@ -359,6 +356,59 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IvIPFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b99ab33b-523c-11ea-b38c-2b48248ef5b9")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface IvIPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class vIPFunctionsImpl implements IvIPFunctionsImpl {
+
+    public static final IvIPFunctionsImpl INSTANCE = new vIPFunctionsImpl();
+
+    private vIPFunctionsImpl() {}
+
+  }
+  
+  public static class vIPFunctions {
+
+    private vIPFunctions() {}
+
+  }
+
+  public static interface ITopologyEnvironmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b973cf54-51b0-11ea-a946-13c393300b57")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("d3212487-51b0-11ea-a946-13c393300b57")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationDistinct();
+
+  }
+  
+  public static interface ITopologyEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TopologyEnvironmentFunctionsImpl implements ITopologyEnvironmentFunctionsImpl {
+
+    public static final ITopologyEnvironmentFunctionsImpl INSTANCE = new TopologyEnvironmentFunctionsImpl();
+
+    private TopologyEnvironmentFunctionsImpl() {}
+
+  }
+  
+  public static class TopologyEnvironmentFunctions {
+
+    private TopologyEnvironmentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,w6YYwzU2rqTITbG+2kRxXMTJhXs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,zbiUbW9visanHtKtrmEEeFaEwd8=] */

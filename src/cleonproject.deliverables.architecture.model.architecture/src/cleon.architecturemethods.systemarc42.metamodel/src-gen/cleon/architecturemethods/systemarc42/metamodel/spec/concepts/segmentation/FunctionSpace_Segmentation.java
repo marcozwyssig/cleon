@@ -55,7 +55,7 @@ public class FunctionSpace_Segmentation {
     public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone SourcePolicy();
 
     @IDynamicResourceExtension.MethodId("c0a412fe-deac-11e9-b714-478bec98e62d")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndNetDomain(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts nd);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts site);
 
     @IDynamicResourceExtension.MethodId("08dbad82-df9b-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
@@ -64,13 +64,13 @@ public class FunctionSpace_Segmentation {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env);
 
     @IDynamicResourceExtension.MethodId("a449369e-517b-11ea-b9cb-85bbdfd861be")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironmentAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironmentAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
 
     @IDynamicResourceExtension.MethodId("9bf9949c-09ef-11ea-baed-218c3e076b56")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost> AllHostsWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
 
     @IDynamicResourceExtension.MethodId("99990cc8-0a05-11ea-baed-218c3e076b56")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost> AllHostsWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractHost> AllHostsWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env);
 
     @IDynamicResourceExtension.MethodId("a3a7f3f8-09f2-11ea-baed-218c3e076b56")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
@@ -79,10 +79,10 @@ public class FunctionSpace_Segmentation {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfigurationDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg);
 
     @IDynamicResourceExtension.MethodId("24927129-0aa5-11ea-97f4-9d91b2097bad")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env);
 
     @IDynamicResourceExtension.MethodId("39e2d53a-0aa5-11ea-97f4-9d91b2097bad")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env);
 
     @IDynamicResourceExtension.MethodId("e02913cf-09f4-11ea-baed-218c3e076b56")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
@@ -91,22 +91,19 @@ public class FunctionSpace_Segmentation {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfigurationDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("7be9152a-09fd-11ea-baed-218c3e076b56")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfigurationEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfigurationEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("7bad0d79-517a-11ea-b9cb-85bbdfd861be")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfigurationAndEnvironmentAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllNetdomainWhereSystemConfigurationAndEnvironmentAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("5cb568b4-09fd-11ea-baed-218c3e076b56")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllSiteWhereSystemConfigurationAndEnvironmentDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllSiteWhereSystemConfigurationAndEnvironmentDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("4cd3f372-517a-11ea-b9cb-85bbdfd861be")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllSiteWhereSystemConfigurationAndEnvironmentAndSiteDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllSiteWhereSystemConfigurationAndEnvironmentAndSiteDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
-    @IDynamicResourceExtension.MethodId("c7688c97-dec2-11e9-b714-478bec98e62d")
-    public java.lang.String GroupNameOld(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts nd);
-
-    @IDynamicResourceExtension.MethodId("f44b9356-0aa0-11ea-97f4-9d91b2097bad")
-    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.javamodel.ISystemEnvironment env);
+    @IDynamicResourceExtension.MethodId("ce929a6f-51a1-11ea-a946-13c393300b57")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllSiteWhereSystemConfigurationAndAbstractHostWithSite(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ISite site, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("5db9e341-df72-11e9-9827-a1514ee8d06a")
     public java.lang.String Guid(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts nd);
@@ -122,6 +119,12 @@ public class FunctionSpace_Segmentation {
 
     @IDynamicResourceExtension.MethodId("e99aad2f-a965-11e9-bf83-7bacdb6991f7")
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source);
+
+    @IDynamicResourceExtension.MethodId("e641276b-51a3-11ea-a946-13c393300b57")
+    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration systemConfiguration);
+
+    @IDynamicResourceExtension.MethodId("f44b9356-0aa0-11ea-97f4-9d91b2097bad")
+    public java.lang.String GroupNameAll(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ITopologyEnvironment env);
 
   }
   
@@ -148,7 +151,7 @@ public class FunctionSpace_Segmentation {
     	for( cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone : securitySubZoneList )
     	{
     		ISecuritySubZoneFunctions functions = securitySubZone.extension(ISecuritySubZoneFunctions.class);
-    		if( functions.AllHostNodesWhereSystemConfigurationAndNetDomain(syscfg, nd).isEmpty() == false)
+    		if( functions.AllHostNodesWhereSystemConfigurationAndSite(syscfg, nd).isEmpty() == false)
     		{
     			lists.add(securitySubZone);
     		}
@@ -193,4 +196,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,7mUy4dCkXXTG+9N3GkwBtjgVSSk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,gD+suxCA8MfinF6xj/EI/RfkDFo=] */

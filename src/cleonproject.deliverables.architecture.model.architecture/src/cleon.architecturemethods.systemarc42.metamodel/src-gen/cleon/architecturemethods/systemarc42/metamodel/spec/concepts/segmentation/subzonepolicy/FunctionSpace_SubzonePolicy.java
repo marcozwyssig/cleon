@@ -10,12 +10,14 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[0ea7300c-b846-11e9-8760-2d4a9d15ec14,imports]] */
 import java.util.stream.Collectors;
 
+import cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.SystemEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.SystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.FunctionSpace_System.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts;
+import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.TopologyEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.FunctionSpace_Communication.ISourceFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.DestinationSubSecurityZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination;
@@ -121,14 +123,14 @@ public class FunctionSpace_SubzonePolicy {
 		for (ISystemConfiguration sysCfg : sysCfgs) {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : sourceSubZoneFunctions						
-						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {
+						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
 						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
 								sourceSubZone.selectVLAN_No());
 						result.append("\n");
 				}
 			}
 			else {
-				List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, env);
+				List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
 				for( ISystemConfiguration concreteSysCfg : hosts ) {
 					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectName() + "-" + sourceSubZone.selectVLAN_No());
 					result.append("\n");					
@@ -158,14 +160,14 @@ public class FunctionSpace_SubzonePolicy {
 		for (ISystemConfiguration sysCfg : sysCfgs) {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : destinationSubZoneFunctions
-						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(env, sysCfg)) {				
+						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {				
 						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
 								destinationSubZone.selectVLAN_No());
 						result.append(System.lineSeparator());
 				}
 			}
 			else {
-				List<ISystemConfiguration> hosts = destinationSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, env);
+				List<ISystemConfiguration> hosts = destinationSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
 				for( ISystemConfiguration concreteSysCfg : hosts ) {
 					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectName() + "-" + destinationSubZone.selectVLAN_No());					
 					result.append(System.lineSeparator());					

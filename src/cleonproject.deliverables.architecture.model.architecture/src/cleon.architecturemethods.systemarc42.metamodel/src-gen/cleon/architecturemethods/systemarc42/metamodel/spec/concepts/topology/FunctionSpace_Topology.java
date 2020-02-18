@@ -356,28 +356,28 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface IvIPFunctions extends IDynamicResourceExtension {
+  public static interface IVirtualIPFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b99ab33b-523c-11ea-b38c-2b48248ef5b9")
     public java.lang.String ShortName();
 
   }
   
-  public static interface IvIPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IVirtualIPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class vIPFunctionsImpl implements IvIPFunctionsImpl {
+  public static class VirtualIPFunctionsImpl implements IVirtualIPFunctionsImpl {
 
-    public static final IvIPFunctionsImpl INSTANCE = new vIPFunctionsImpl();
+    public static final IVirtualIPFunctionsImpl INSTANCE = new VirtualIPFunctionsImpl();
 
-    private vIPFunctionsImpl() {}
+    private VirtualIPFunctionsImpl() {}
 
   }
   
-  public static class vIPFunctions {
+  public static class VirtualIPFunctions {
 
-    private vIPFunctions() {}
+    private VirtualIPFunctions() {}
 
   }
 
@@ -411,4 +411,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,zbiUbW9visanHtKtrmEEeFaEwd8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,Ma6xbwrX2QdUL+3way3vjP3ivaE=] */

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class VIP extends DynamicResource implements IVIP {
+public class VirtualIP extends DynamicResource implements IVirtualIP {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IVIP> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IVIP>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IVirtualIP> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IVirtualIP>() {
     
     @Override
-    public IVIP create() {
-      return new VIP();
+    public IVirtualIP create() {
+      return new VirtualIP();
     }
     
     @Override
-    public IVIP create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new VIP(resourceRepository, resource);
+    public IVirtualIP create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new VirtualIP(resourceRepository, resource);
     }
   
   };
 
-  public VIP() {
-    super(IVIP.TYPE_ID);
+  public VirtualIP() {
+    super(IVirtualIP.TYPE_ID);
   }
   
-  public VIP(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IVIP.TYPE_ID);
+  public VirtualIP(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IVirtualIP.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class VIP extends DynamicResource implements IVIP {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public VIP setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
+  public VirtualIP setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -65,7 +65,7 @@ public class VIP extends DynamicResource implements IVIP {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public VIP setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public VirtualIP setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -75,7 +75,7 @@ public class VIP extends DynamicResource implements IVIP {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public VIP setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public VirtualIP setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -92,4 +92,4 @@ public class VIP extends DynamicResource implements IVIP {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,VEko23Pbur/Rk74E+m//M/4Q7nY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,uiqmGVgmMVPRGJOYbA/qZVqAChc=] */

@@ -6,11 +6,17 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="628a0adb-bb80-11e5-b2f7-f515c847fa35" type="literal">Sample Requirements</object>
   </predicate>
+  <predicate guid="f5226dc8-a950-11e5-bda2-a7fc3bd7c783">
+    <object statement-guid="fa423091-52ed-11ea-939d-7ff813a040ec" type="aggregate" guid="67f0089d-bb80-11e5-b2f7-f515c847fa35" />
+  </predicate>
   <predicate guid="05efb9fa-a951-11e5-bda2-a7fc3bd7c783">
     <object statement-guid="68139a81-e7fc-11e8-9611-5d19c79c0781" type="aggregate" guid="67452263-bb80-11e5-b2f7-f515c847fa35" />
   </predicate>
-  <predicate guid="51c167c8-a952-11e5-bda2-a7fc3bd7c783">
-    <object statement-guid="31822b01-f106-11e5-a8d1-6110c6d5d313" type="aggregate" guid="656146bd-bb80-11e5-b2f7-f515c847fa35" />
+  <predicate guid="20e2127a-a951-11e5-bda2-a7fc3bd7c783">
+    <object statement-guid="fc622aad-52ed-11ea-939d-7ff813a040ec" type="aggregate" guid="688d5947-bb80-11e5-b2f7-f515c847fa35" />
+  </predicate>
+  <predicate guid="66f93082-a951-11e5-bda2-a7fc3bd7c783">
+    <object statement-guid="fe31e16c-52ed-11ea-939d-7ff813a040ec" type="aggregate" guid="668b20f9-bb80-11e5-b2f7-f515c847fa35" />
   </predicate>
   <predicate guid="03e0dda7-a959-11e5-bda2-a7fc3bd7c783">
     <object statement-guid="0543df73-f106-11e5-a8d1-6110c6d5d313" type="aggregate" guid="504a73fd-bb81-11e5-b2f7-f515c847fa35" />
@@ -20,6 +26,9 @@
   </predicate>
   <predicate guid="da7988f1-c1d9-11e5-bbf3-bdd12a9e2b3d">
     <object statement-guid="e99db9ba-c1d9-11e5-bbf3-bdd12a9e2b3d" type="literal">true</object>
+  </predicate>
+  <predicate guid="2db598fa-06d7-11e6-8d3e-13e5be4bd43b">
+    <object statement-guid="0016a6f7-52ee-11ea-939d-7ff813a040ec" type="aggregate" guid="802b5e95-06d7-11e6-8d3e-13e5be4bd43b" />
   </predicate>
   <predicate guid="8b9ae9b3-0e1b-11e6-ae01-ef640c578b9b">
     <object statement-guid="98420c3f-0e1b-11e6-ae01-ef640c578b9b" type="aggregate" guid="98416ffc-0e1b-11e6-ae01-ef640c578b9b" />

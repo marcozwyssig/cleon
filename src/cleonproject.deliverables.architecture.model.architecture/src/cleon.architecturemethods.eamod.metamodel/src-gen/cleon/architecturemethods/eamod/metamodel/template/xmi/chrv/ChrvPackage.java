@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class ChrvPackage {
   
   public static final Resource CHRV_aE_FunctionSpace_Principles = new Resource("7f0eecb5-2991-11e6-bcff-d1d3ee74e69a");
-  public static final Resource CHRV_aE_FunctionSpace_Motivation = new Resource("bc78f82b-2991-11e6-bcff-d1d3ee74e69a");
   public static final Resource CHRV_aE_FunctionSpace_RequirementsDocument = new Resource("ccc4e075-2991-11e6-bcff-d1d3ee74e69a");
   public static final Resource CHRV_aE_FunctionSpace_ProjectSubjectArea = new Resource("bb3187ab-2995-11e6-bcff-d1d3ee74e69a");
   public static final Resource CHRV_aE_FunctionSpace_Requirement = new Resource("0fa27103-2c92-11e6-8dd6-23b9a87b3ebd");
@@ -37,4 +36,4 @@ public class ChrvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.xmi.chrv,2wklT2tShTZpSz2OBQr3rzgidLo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.xmi.chrv,fsrYguMSymcvZ79a/42J0QdeiNo=] */

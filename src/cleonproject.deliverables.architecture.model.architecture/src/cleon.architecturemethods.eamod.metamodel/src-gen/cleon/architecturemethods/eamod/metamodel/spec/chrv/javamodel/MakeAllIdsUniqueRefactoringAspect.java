@@ -13,10 +13,10 @@ import ch.actifsource.core.util.LiteralUtil;
 import cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 import cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.IssuesPackage;
-import cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.SourcesPackage;
-import cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.GoalsPackage;
-import cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.principles.PrinciplesPackage;
-import cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.drivers.DriversPackage;
+import cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.SourcesPackage;
+import cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.GoalsPackage;
+import cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.PrinciplesPackage;
+import cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.DriversPackage;
 
 public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 

@@ -18,7 +18,6 @@ public class ChrvPackage {
   public static final Resource FunctionSpace_aE_CHRV_Goal = new Resource("f8460a8a-15f1-11e6-be5f-0b820f273d17");
   public static final Resource FunctionSpace_aE_CHRV_Principle = new Resource("ab295403-15f2-11e6-be5f-0b820f273d17");
   public static final Resource FunctionSpace_aE_CHRV_Driver = new Resource("9d4a0996-a528-11e8-a2c4-7500fc0b7ba9");
-  public static final Resource FunctionSpace_aE_CHRV_Motivation = new Resource("1906fae8-a529-11e8-a2c4-7500fc0b7ba9");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +38,4 @@ public class ChrvPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.asciidoc.chrv,Xykx2DS5LnSRDzf/58hTcUQsUic=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.asciidoc.chrv,VD8KZCX5DmLac0tMb2kALYUpqIc=] */

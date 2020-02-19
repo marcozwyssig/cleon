@@ -41,19 +41,19 @@ public class FunctionSpace_Requirements {
     public cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement GetParent();
 
     @IDynamicResourceExtension.MethodId("e0f79703-0e00-11e6-ae01-ef640c578b9b")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal> GetGoals();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> GetGoals();
 
     @IDynamicResourceExtension.MethodId("52c50b22-0e01-11e6-ae01-ef640c578b9b")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal> GetAllGoals();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> GetAllGoals();
 
     @IDynamicResourceExtension.MethodId("30e9c967-2cb1-11e6-8dd6-23b9a87b3ebd")
     public cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea GetSubjectArea();
 
     @IDynamicResourceExtension.MethodId("2ae79964-c82b-11e8-add3-695b26858127")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder> GetAllStakeholders();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder> GetAllStakeholders();
 
     @IDynamicResourceExtension.MethodId("416d48c7-c82b-11e8-add3-695b26858127")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder> GetStakeholders();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder> GetStakeholders();
 
     @IDynamicResourceExtension.MethodId("3d85c9e2-d243-11e8-98f7-fd7700abae04")
     public java.lang.String GetAbstractionLevel();
@@ -577,4 +577,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,+jYVGiRMbP43lOfkKcofHvC9+38=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,3gdhZyNPDStdrwga9SsbIBrdbO0=] */

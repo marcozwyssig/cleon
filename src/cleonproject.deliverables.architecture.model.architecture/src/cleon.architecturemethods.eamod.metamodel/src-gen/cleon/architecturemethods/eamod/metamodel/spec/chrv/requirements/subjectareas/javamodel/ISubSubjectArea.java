@@ -2,7 +2,7 @@ package cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subject
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISubSubjectArea extends cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoalAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholderAware {
+public interface ISubSubjectArea extends cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea, cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoalAware, cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholderAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("15ded48f-3d33-11e6-ae46-774fb9bfeae7");
   
@@ -12,4 +12,4 @@ public interface ISubSubjectArea extends cleon.architecturemethods.eamod.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,15ded48f-3d33-11e6-ae46-774fb9bfeae7,u10rMX6nzuCepa6qTZ4lXeoFj7o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,15ded48f-3d33-11e6-ae46-774fb9bfeae7,GZv5T9Ygfr6m5SUpv5JZAVE3Ljk=] */

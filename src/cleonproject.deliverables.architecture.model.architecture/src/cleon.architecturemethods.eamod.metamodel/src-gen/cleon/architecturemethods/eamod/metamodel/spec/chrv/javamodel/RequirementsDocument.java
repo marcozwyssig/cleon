@@ -138,12 +138,32 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
   }
     
   @Override
+  public cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDrivers selectDrivers() {
+    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDrivers.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_drivers);
+  }
+
+  public RequirementsDocument setDrivers(cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDrivers drivers) {
+    _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_drivers, drivers);
+    return this;
+  }
+    
+  @Override
   public cleon.common.glossary.metamodel.spec.javamodel.IGlossary selectGlossary() {
     return _getSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary);
   }
 
   public RequirementsDocument setGlossary(cleon.common.glossary.metamodel.spec.javamodel.IGlossary glossary) {
     _setSingle(cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, glossary);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoals selectGoals() {
+    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoals.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_goals);
+  }
+
+  public RequirementsDocument setGoals(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoals goals) {
+    _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_goals, goals);
     return this;
   }
     
@@ -168,16 +188,6 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
   }
     
   @Override
-  public cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.javamodel.IMotivation selectMotivation() {
-    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_motivation);
-  }
-
-  public RequirementsDocument setMotivation(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.javamodel.IMotivation motivation) {
-    _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_motivation, motivation);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -194,6 +204,16 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
 
   public RequirementsDocument setPlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument planning) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, planning);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciples selectPrinciples() {
+    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciples.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_principles);
+  }
+
+  public RequirementsDocument setPrinciples(cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciples principles) {
+    _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_principles, principles);
     return this;
   }
     
@@ -218,12 +238,22 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
   }
     
   @Override
-  public cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISources selectSources() {
-    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources);
+  public cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISources selectSources() {
+    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources);
   }
 
-  public RequirementsDocument setSources(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISources sources) {
+  public RequirementsDocument setSources(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISources sources) {
     _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources, sources);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholders selectStakeholders() {
+    return _getSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholders.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_stakeholders);
+  }
+
+  public RequirementsDocument setStakeholders(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholders stakeholders) {
+    _setSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_stakeholders, stakeholders);
     return this;
   }
     
@@ -260,15 +290,18 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_deliverable, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.javamodel.IDistinctions.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_destinctions, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDrivers.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_drivers, visitor);
     _acceptSingle(cleon.common.glossary.metamodel.spec.javamodel.IGlossary.class, cleon.common.glossary.metamodel.spec.SpecPackage.GlossaryAware_glossary, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoals.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_goals, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.introduction.javamodel.IIntroduction.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_introduction, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.issues.javamodel.IIssues.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_issues, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.javamodel.IMotivation.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_motivation, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.DeliverablePackage.DeliverableAware_planning, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciples.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_principles, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.javamodel.IProjectSubjectArea.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_requirements, visitor);
-    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISources.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources, visitor);
+    _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholders.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_stakeholders, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -283,8 +316,20 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_introduction, object.getResource());
   }
   
-  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeMotivation(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.javamodel.IMotivation object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_motivation, object.getResource());
+  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeDrivers(cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDrivers object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_drivers, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeGoals(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoals object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_goals, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMePrinciples(cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciples object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_principles, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeStakeholders(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholders object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_stakeholders, object.getResource());
   }
   
   public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeRequirements(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.javamodel.IProjectSubjectArea object) {
@@ -295,7 +340,7 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_destinctions, object.getResource());
   }
   
-  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeSources(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.sources.javamodel.ISources object) {
+  public static cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument selectToMeSources(cleon.architecturemethods.eamod.metamodel.spec.chrv.sources.javamodel.ISources object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.RequirementsDocument_sources, object.getResource());
   }
   
@@ -304,4 +349,4 @@ public class RequirementsDocument extends DynamicResource implements IRequiremen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,86whtTsBBDIit4mTqgtPWwoALV8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4bcb71bd-a950-11e5-bda2-a7fc3bd7c783,HLLqsQ+qWopTnxldbY4WruQKHRs=] */

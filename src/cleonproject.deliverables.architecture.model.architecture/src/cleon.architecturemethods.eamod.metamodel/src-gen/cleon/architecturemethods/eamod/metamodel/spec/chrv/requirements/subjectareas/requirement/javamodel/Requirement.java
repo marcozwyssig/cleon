@@ -33,11 +33,11 @@ public abstract class Requirement extends DynamicResource implements IRequiremen
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_supplement, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectToMeAchieves(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal object) {
+  public static java.util.List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectToMeAchieves(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_achieves, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectToMeOwners(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder object) {
+  public static java.util.List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> selectToMeOwners(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.Requirement_owners, object.getResource());
   }
   
@@ -50,4 +50,4 @@ public abstract class Requirement extends DynamicResource implements IRequiremen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,L1NEGnYFV/Lg594GF5HkcHOCBlo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54365cab-ff9b-11e4-ac0a-959b440f987f,B7fbjIiFd9rfXEPRbiRiNjTJN3A=] */

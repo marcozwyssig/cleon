@@ -43,34 +43,6 @@ public class CHRV_FunctionSpace {
 
   }
 
-  public static interface IMotivationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("bfc738d0-2991-11e6-bcff-d1d3ee74e69a")
-    public java.lang.String RenderXmi();
-
-    @IDynamicResourceExtension.MethodId("3f65c895-29a0-11e6-bcff-d1d3ee74e69a")
-    public java.lang.String RenderCHMM();
-
-  }
-  
-  public static interface IMotivationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class MotivationFunctionsImpl implements IMotivationFunctionsImpl {
-
-    public static final IMotivationFunctionsImpl INSTANCE = new MotivationFunctionsImpl();
-
-    private MotivationFunctionsImpl() {}
-
-  }
-  
-  public static class MotivationFunctions {
-
-    private MotivationFunctions() {}
-
-  }
-
   public static interface IRequirementsDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d837541a-2991-11e6-bcff-d1d3ee74e69a")
@@ -338,10 +310,10 @@ public class CHRV_FunctionSpace {
   public static interface IGoalFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2697c195-2cae-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderToAggregation(final cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal goal);
+    public java.lang.String RenderToAggregation(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal);
 
     @IDynamicResourceExtension.MethodId("2697c1ed-2cae-11e6-8dd6-23b9a87b3ebd")
-    public java.lang.String RenderFromAggregation(final cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal goal);
+    public java.lang.String RenderFromAggregation(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal);
 
     @IDynamicResourceExtension.MethodId("1e1186ca-2cb0-11e6-8dd6-23b9a87b3ebd")
     public java.lang.String RenderDriverDependency();
@@ -402,4 +374,4 @@ public class CHRV_FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,4L7dqmug62K+x9WRSDWed/1nOfw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7a85e1e6-2991-11e6-bcff-d1d3ee74e69a,NHHoehIshrN2UG99E5W+gYcrUhE=] */

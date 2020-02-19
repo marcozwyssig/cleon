@@ -69,12 +69,12 @@ public class Security extends DynamicResource implements ISecurity {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal> selectAchieves() {
-    return _getList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.GoalsPackage.GoalAware_achieves);
+  public java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> selectAchieves() {
+    return _getList(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.GoalsPackage.GoalAware_achieves);
   }
 
-  public Security setAchieves(java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal> achieves) {
-    _setList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.GoalsPackage.GoalAware_achieves, achieves);
+  public Security setAchieves(java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal> achieves) {
+    _setList(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.GoalsPackage.GoalAware_achieves, achieves);
     return this;
   }
     
@@ -109,12 +109,12 @@ public class Security extends DynamicResource implements ISecurity {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder> selectOwners() {
-    return _getList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners);
+  public java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder> selectOwners() {
+    return _getList(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.StakeholderPackage.StakeholderAware_owners);
   }
 
-  public Security setOwners(java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder> owners) {
-    _setList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, owners);
+  public Security setOwners(java.util.List<? extends cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder> owners) {
+    _setList(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.StakeholderPackage.StakeholderAware_owners, owners);
     return this;
   }
     
@@ -156,13 +156,13 @@ public class Security extends DynamicResource implements ISecurity {
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.goals.GoalsPackage.GoalAware_achieves, visitor);
+    _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.GoalsPackage.GoalAware_achieves, visitor);
     _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.member.javamodel.IMember.class, cleon.common.doc.metamodel.spec.document.properties.member.MemberPackage.Authors_authors, visitor);
-    _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.javamodel.IStakeholder.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.motivation.stakeholder.StakeholderPackage.StakeholderAware_owners, visitor);
+    _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.StakeholderPackage.StakeholderAware_owners, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.SubjectareasPackage.SubSubjectArea_requirements, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a2b8737c-0c76-11e6-86c5-87a8b520dd59,D1zmMAIC5elVRJjjFiJeJ1FTJ70=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a2b8737c-0c76-11e6-86c5-87a8b520dd59,2mqHYU/VGps96tHq/LnG2E6ldEE=] */

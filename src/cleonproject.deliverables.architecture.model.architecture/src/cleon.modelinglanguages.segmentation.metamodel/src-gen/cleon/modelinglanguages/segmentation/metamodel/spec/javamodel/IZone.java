@@ -10,8 +10,8 @@ public interface IZone extends cleon.common.resources.metamodel.spec.description
   
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectZones();
   
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectAllowed();
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectAllowedAccessTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb4a0fa3-0b73-11e9-a136-69d076e48ed1,qSLIbz1OKwPgLAm6ut/sy10SUO4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb4a0fa3-0b73-11e9-a136-69d076e48ed1,JWP45UhUu2ibVFyCqjZiZPQWlzo=] */

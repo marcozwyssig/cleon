@@ -78,12 +78,12 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
   // relations
   
   @Override
-  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowed() {
-    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowed);
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectAllowedAccessTo() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo);
   }
 
-  public SecuritySubZone setAllowed(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> allowed) {
-    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowed, allowed);
+  public SecuritySubZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> allowedAccessTo) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, allowedAccessTo);
     return this;
   }
     
@@ -136,7 +136,7 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     _acceptSingleAttribute(java.lang.Integer.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_mask, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowed, visitor);
+    _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification.class, cleon.common.resources.metamodel.spec.confidentiality.ConfidentialityPackage.ClassificationAware_classification, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -147,9 +147,9 @@ public class SecuritySubZone extends DynamicResource implements ISecuritySubZone
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_noZones, object.getResource());
   }
   
-  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectToMeAllowed(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowed, object.getResource());
+  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectToMeAllowedAccessTo(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecuritySubZone_allowedAccessTo, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,oyRNnCZpu1pw9jXKhWcFt6/ZpA8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f40c131-0b75-11e9-a136-69d076e48ed1,bsI/JM1AtgAMrrbdDGaQprVYBfE=] */

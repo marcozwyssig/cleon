@@ -70,6 +70,16 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
   }
     
   @Override
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectAllowedAccessTo() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo);
+  }
+
+  public NetDomainZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> allowedAccessTo) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo, allowedAccessTo);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone> selectSegments() {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.NetDomainZone_segments);
   }
@@ -122,4 +132,4 @@ public class NetDomainZone extends DynamicResource implements INetDomainZone {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,VM1bA5CxOBywsldl3aR+HaPITdU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,da24cca3-0b73-11e9-a136-69d076e48ed1,V7U0ngZHeR8gddF96kZG0WXhJSQ=] */

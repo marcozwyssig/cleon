@@ -70,6 +70,16 @@ public class SecurityExternalZone extends DynamicResource implements ISecurityEx
   }
     
   @Override
+  public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> selectAllowedAccessTo() {
+    return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo);
+  }
+
+  public SecurityExternalZone setAllowedAccessTo(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> allowedAccessTo) {
+    _setList(cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.Zone_allowedAccessTo, allowedAccessTo);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> selectSecuritySubZones() {
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecurityZone_securitySubZones);
   }
@@ -112,4 +122,4 @@ public class SecurityExternalZone extends DynamicResource implements ISecurityEx
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ae271ab1-0b78-11e9-a136-69d076e48ed1,RsGpQoJX38sT57h1B/tYM18gtuE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ae271ab1-0b78-11e9-a136-69d076e48ed1,y5oOa03B5SqqwW4zbYxYeeeLQc8=] */

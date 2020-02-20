@@ -43,7 +43,7 @@ public class FunctionSpace_Goals {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal goal) {
-      return String.format("Z%03d", goal.selectIdentifier());   
+      return String.format("ZI-%03d", goal.selectIdentifier());   
     }
 
   }
@@ -85,4 +85,4 @@ public class FunctionSpace_Goals {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,3xNi3sfHb1RKVaPDT2vKkL3sjt8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4877cebc-c58d-11e5-aeea-1db9268c0ee9,Tw65gHYUebecwZLt2UnB91VNhaE=] */

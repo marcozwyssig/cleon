@@ -46,7 +46,7 @@ public class FunctionSpace_SubjectArea {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea subjectArea) {
-      return String.format("SU%02d", subjectArea.selectIdentifier());
+      return String.format("SU-%02d", subjectArea.selectIdentifier());
     }
 
   }
@@ -566,4 +566,4 @@ public class FunctionSpace_SubjectArea {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4c9ff48f-c58d-11e5-aeea-1db9268c0ee9,YvTLr+j9GMD3vy8c2GcfEtkXed0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4c9ff48f-c58d-11e5-aeea-1db9268c0ee9,QZbH/sbanDSD45BdBYG/ysS6u68=] */

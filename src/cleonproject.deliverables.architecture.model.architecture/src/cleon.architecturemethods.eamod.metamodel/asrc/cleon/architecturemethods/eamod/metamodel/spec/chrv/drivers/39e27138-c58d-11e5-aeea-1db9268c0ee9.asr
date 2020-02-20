@@ -49,7 +49,7 @@
                 <object statement-guid="3ff7c058-c58d-11e5-aeea-1db9268c0ee9" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="40819bce-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("DR%03d", driver.selectIdentifier());</object>
+                <object statement-guid="40819bce-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("DR-%03d", driver.selectIdentifier());</object>
               </predicate>
             </resource>
           </object>

@@ -131,7 +131,7 @@
                 <object statement-guid="4a0d89eb-c58d-11e5-aeea-1db9268c0ee9" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="787e0954-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("P%03d", principle.selectIdentifier());   </object>
+                <object statement-guid="787e0954-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("PR-%03d", principle.selectIdentifier());   </object>
               </predicate>
             </resource>
           </object>

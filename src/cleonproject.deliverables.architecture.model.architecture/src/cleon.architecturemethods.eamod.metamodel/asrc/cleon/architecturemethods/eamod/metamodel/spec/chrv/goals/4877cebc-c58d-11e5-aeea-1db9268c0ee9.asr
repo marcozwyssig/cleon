@@ -131,7 +131,7 @@
                 <object statement-guid="4877cec5-c58d-11e5-aeea-1db9268c0ee9" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="5a52098d-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("Z%03d", goal.selectIdentifier());   </object>
+                <object statement-guid="5a52098d-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("ZI-%03d", goal.selectIdentifier());   </object>
               </predicate>
             </resource>
           </object>

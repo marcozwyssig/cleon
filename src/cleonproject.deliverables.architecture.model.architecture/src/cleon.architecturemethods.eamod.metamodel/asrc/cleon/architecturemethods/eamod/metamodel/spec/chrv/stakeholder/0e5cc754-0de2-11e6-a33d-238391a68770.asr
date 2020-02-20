@@ -48,7 +48,7 @@
                 <object statement-guid="18c78e04-0de2-11e6-a33d-238391a68770" type="literal">true</object>
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
-                <object statement-guid="a24783ad-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("S%02d", stakeholder.selectIdentifier());   </object>
+                <object statement-guid="a24783ad-1df8-11e7-a5d4-016f0b98725a" type="literal">return String.format("SH-%02d", stakeholder.selectIdentifier());   </object>
               </predicate>
             </resource>
           </object>

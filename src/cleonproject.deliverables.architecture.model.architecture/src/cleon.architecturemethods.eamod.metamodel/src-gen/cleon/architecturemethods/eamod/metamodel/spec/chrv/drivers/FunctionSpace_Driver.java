@@ -40,7 +40,7 @@ public class FunctionSpace_Driver {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.drivers.javamodel.IDriver driver) {
-      return String.format("DR%03d", driver.selectIdentifier());
+      return String.format("DR-%03d", driver.selectIdentifier());
     }
 
   }
@@ -79,4 +79,4 @@ public class FunctionSpace_Driver {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,bwNX6yKNqySV6IoODgMhfKjQyCU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,39e27138-c58d-11e5-aeea-1db9268c0ee9,ybgGLY0ECGUmn/wbenc9ke0buq4=] */

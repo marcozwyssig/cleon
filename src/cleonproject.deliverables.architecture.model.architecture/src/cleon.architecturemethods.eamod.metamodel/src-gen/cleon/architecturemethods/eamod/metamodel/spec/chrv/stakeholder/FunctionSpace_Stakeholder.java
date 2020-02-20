@@ -40,7 +40,7 @@ public class FunctionSpace_Stakeholder {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.stakeholder.javamodel.IStakeholder stakeholder) {
-      return String.format("S%02d", stakeholder.selectIdentifier());   
+      return String.format("SH-%02d", stakeholder.selectIdentifier());   
     }
 
   }
@@ -57,4 +57,4 @@ public class FunctionSpace_Stakeholder {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0e5cc754-0de2-11e6-a33d-238391a68770,3ivaAYeLS64/+RWguOB+eHbmims=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0e5cc754-0de2-11e6-a33d-238391a68770,gdRclr33KQ8G5aBsvoRDC1ALSjg=] */

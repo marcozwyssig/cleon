@@ -43,7 +43,7 @@ public class FunctionSpace_Principle {
 
     @Override
     public java.lang.String GetId(final cleon.architecturemethods.eamod.metamodel.spec.chrv.principles.javamodel.IPrinciple principle) {
-      return String.format("P%03d", principle.selectIdentifier());   
+      return String.format("PR-%03d", principle.selectIdentifier());   
     }
 
   }
@@ -85,4 +85,4 @@ public class FunctionSpace_Principle {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,QWhbJf/LJnxDFzi2Zg681ag5Moc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4a0d89e2-c58d-11e5-aeea-1db9268c0ee9,br80wQY+TizHfIfKUzZMHAw0GV8=] */

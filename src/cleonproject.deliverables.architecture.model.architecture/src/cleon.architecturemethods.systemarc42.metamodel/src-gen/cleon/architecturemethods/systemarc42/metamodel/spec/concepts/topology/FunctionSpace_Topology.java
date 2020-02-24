@@ -261,6 +261,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("738023f9-09f0-11ea-baed-218c3e076b56")
     public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts Site();
 
+    @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
+    public java.lang.String SimpleName();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -306,28 +309,28 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface IHostFunctions extends IDynamicResourceExtension {
+  public static interface INumberedHostFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("945f300c-fb12-11e9-890e-576c93cea08c")
     public java.lang.String ShortName();
 
   }
   
-  public static interface IHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INumberedHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class HostFunctionsImpl implements IHostFunctionsImpl {
+  public static class NumberedHostFunctionsImpl implements INumberedHostFunctionsImpl {
 
-    public static final IHostFunctionsImpl INSTANCE = new HostFunctionsImpl();
+    public static final INumberedHostFunctionsImpl INSTANCE = new NumberedHostFunctionsImpl();
 
-    private HostFunctionsImpl() {}
+    private NumberedHostFunctionsImpl() {}
 
   }
   
-  public static class HostFunctions {
+  public static class NumberedHostFunctions {
 
-    private HostFunctions() {}
+    private NumberedHostFunctions() {}
 
   }
 
@@ -409,6 +412,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface INamedHostFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("940f54af-570f-11ea-91a9-1992072893b1")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface INamedHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedHostFunctionsImpl implements INamedHostFunctionsImpl {
+
+    public static final INamedHostFunctionsImpl INSTANCE = new NamedHostFunctionsImpl();
+
+    private NamedHostFunctionsImpl() {}
+
+  }
+  
+  public static class NamedHostFunctions {
+
+    private NamedHostFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,Ma6xbwrX2QdUL+3way3vjP3ivaE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,exN8oXqrKzk18VE4l9uaAxiDQnM=] */

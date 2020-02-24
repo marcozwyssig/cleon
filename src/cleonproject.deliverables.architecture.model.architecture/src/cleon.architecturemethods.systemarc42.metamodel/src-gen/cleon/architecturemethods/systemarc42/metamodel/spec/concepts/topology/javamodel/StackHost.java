@@ -31,12 +31,30 @@ public class StackHost extends DynamicResource implements IStackHost {
   // attributes
   
   @Override
-  public java.lang.String selectNumber() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number);
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
     
-  public void setNumber(java.lang.String number) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number, number);
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
+  public java.lang.Integer selectNumber() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number);
+  }
+    
+  public void setNumber(java.lang.Integer number) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, number);
   }
 
   @Override
@@ -51,11 +69,11 @@ public class StackHost extends DynamicResource implements IStackHost {
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IHost selectHost() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.INumberedHost selectHost() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.INumberedHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host);
   }
 
-  public StackHost setHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IHost host) {
+  public StackHost setHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.INumberedHost host) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host, host);
     return this;
   }
@@ -94,19 +112,20 @@ public class StackHost extends DynamicResource implements IStackHost {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.INumberedHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IStackHost> selectToMeHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IHost object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IStackHost> selectToMeHost(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.INumberedHost object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IStackHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.StackHost_host, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79,D0Akbs0GSefuZZq2IY4Ykplgv5E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79,DT1ohibQAf4yHldloPRO7Y1bF/8=] */

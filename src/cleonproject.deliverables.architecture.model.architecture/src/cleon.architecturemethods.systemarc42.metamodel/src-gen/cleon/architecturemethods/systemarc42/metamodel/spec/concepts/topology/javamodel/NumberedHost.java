@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Host extends DynamicResource implements IHost {
+public class NumberedHost extends DynamicResource implements INumberedHost {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IHost>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INumberedHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INumberedHost>() {
     
     @Override
-    public IHost create() {
-      return new Host();
+    public INumberedHost create() {
+      return new NumberedHost();
     }
     
     @Override
-    public IHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Host(resourceRepository, resource);
+    public INumberedHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NumberedHost(resourceRepository, resource);
     }
   
   };
 
-  public Host() {
-    super(IHost.TYPE_ID);
+  public NumberedHost() {
+    super(INumberedHost.TYPE_ID);
   }
   
-  public Host(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IHost.TYPE_ID);
+  public NumberedHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INumberedHost.TYPE_ID);
   }
 
   // attributes
@@ -49,12 +49,12 @@ public class Host extends DynamicResource implements IHost {
   }
 
   @Override
-  public java.lang.String selectNumber() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number);
+  public java.lang.Integer selectNumber() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number);
   }
     
-  public void setNumber(java.lang.String number) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number, number);
+  public void setNumber(java.lang.Integer number) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, number);
   }
 
   @Override
@@ -73,7 +73,7 @@ public class Host extends DynamicResource implements IHost {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public Host setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
+  public NumberedHost setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -83,7 +83,7 @@ public class Host extends DynamicResource implements IHost {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public Host setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public NumberedHost setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -93,7 +93,7 @@ public class Host extends DynamicResource implements IHost {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Host setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NumberedHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -103,7 +103,7 @@ public class Host extends DynamicResource implements IHost {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_number, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
@@ -111,4 +111,4 @@ public class Host extends DynamicResource implements IHost {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,887c437e-ca6a-11e9-83b0-559396620907,Dp0if9QnX7xTyVmEbM1BU8CpoDs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,887c437e-ca6a-11e9-83b0-559396620907,0TJG8QAB5YE04evLWkJDbvCvSEc=] */

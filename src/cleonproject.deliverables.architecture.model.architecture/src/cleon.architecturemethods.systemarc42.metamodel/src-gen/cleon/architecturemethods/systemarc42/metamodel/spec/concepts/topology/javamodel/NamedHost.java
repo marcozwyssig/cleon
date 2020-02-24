@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Cluster extends DynamicResource implements ICluster {
+public class NamedHost extends DynamicResource implements INamedHost {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INamedHost>() {
     
     @Override
-    public ICluster create() {
-      return new Cluster();
+    public INamedHost create() {
+      return new NamedHost();
     }
     
     @Override
-    public ICluster create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Cluster(resourceRepository, resource);
+    public INamedHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NamedHost(resourceRepository, resource);
     }
   
   };
 
-  public Cluster() {
-    super(ICluster.TYPE_ID);
+  public NamedHost() {
+    super(INamedHost.TYPE_ID);
   }
   
-  public Cluster(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ICluster.TYPE_ID);
+  public NamedHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INamedHost.TYPE_ID);
   }
 
   // attributes
@@ -49,12 +49,12 @@ public class Cluster extends DynamicResource implements ICluster {
   }
 
   @Override
-  public java.lang.Integer selectNumber() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number);
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
     
-  public void setNumber(java.lang.Integer number) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, number);
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
   @Override
@@ -73,7 +73,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public Cluster setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
+  public NamedHost setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -83,7 +83,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public Cluster setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public NamedHost setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -93,7 +93,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Cluster setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NamedHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -103,7 +103,7 @@ public class Cluster extends DynamicResource implements ICluster {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractNumberedHost_number, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
@@ -111,4 +111,4 @@ public class Cluster extends DynamicResource implements ICluster {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,PRM2qeJM5yVMyHkf36SThBlFi9Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9004db0d-570d-11ea-9b24-23fcad029119,2G0It+CwqUBQd8HlruUtuORmtBQ=] */

@@ -52,6 +52,14 @@ public class TopologyPackage {
   public static final Resource NamedHost = new Resource("9004db0d-570d-11ea-9b24-23fcad029119");
   public static final Resource AbstractNumberedHost = new Resource("45ee3865-570e-11ea-9b24-23fcad029119");
   public static final Resource FunctionSpace_aE_Topology_NamedHost = new Resource("8d9e9e4e-570f-11ea-91a9-1992072893b1");
+  public static final Resource MBSHost = new Resource("7d5ed092-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource Location = new Resource("865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource Location_A = new Resource("b039003d-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource Location_B = new Resource("b19116bb-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource MBSHost_bbu = new Resource("bd611311-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource FunctionSpace_aE_Topology_MBSHost = new Resource("cc7d5481-57c9-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource AbstractHost_overrideOwner = new Resource("10b9a1b5-57cb-11ea-bd7a-4baf1bc87b3c");
+  public static final Resource FunctionSpace_aE_Topology_StringLiteral = new Resource("aa14669b-57cc-11ea-bd7a-4baf1bc87b3c");
   
   /* Begin Protected Region [[user]] */
   
@@ -72,4 +80,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology,xJ9xwB3/4XV7uMPQD75oWshcqsA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology,KAr0JdcMN8wDu6WaHPbFc0q8F9g=] */

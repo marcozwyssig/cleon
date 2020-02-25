@@ -264,6 +264,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("3e1c6fa9-57cb-11ea-bd7a-4baf1bc87b3c")
+    public java.lang.String Owner();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -437,6 +440,79 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IMBSHostFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d129ed0d-57c9-11ea-bd7a-4baf1bc87b3c")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface IMBSHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MBSHostFunctionsImpl implements IMBSHostFunctionsImpl {
+
+    public static final IMBSHostFunctionsImpl INSTANCE = new MBSHostFunctionsImpl();
+
+    private MBSHostFunctionsImpl() {}
+
+  }
+  
+  public static class MBSHostFunctions {
+
+    private MBSHostFunctions() {}
+
+  }
+
+  public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("aa16144f-57cc-11ea-bd7a-4baf1bc87b3c")
+    public java.lang.String AddDash();
+
+  }
+  
+  public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("aa16144f-57cc-11ea-bd7a-4baf1bc87b3c")
+    public java.lang.String AddDash(final java.lang.String stringLiteral);
+
+  }
+  
+  public static class StringLiteralFunctionsImpl implements IStringLiteralFunctionsImpl {
+
+    public static final IStringLiteralFunctionsImpl INSTANCE = new StringLiteralFunctionsImpl();
+
+    private StringLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String AddDash(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
+      try {
+    	  if(!stringLiteral.isEmpty()) {
+    		  return "-";
+    	  }
+    	  return "";
+      }
+       catch (final java.lang.NullPointerException e) {
+        return null;
+      }
+      
+      /* End Protected Region   [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
+    }
+
+  }
+  
+  public static class StringLiteralFunctions {
+
+    private StringLiteralFunctions() {}
+
+    public static java.lang.String AddDash(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).AddDash(stringLiteral);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,exN8oXqrKzk18VE4l9uaAxiDQnM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mzQgdgQJ+ZAtxK1csbj0DwGe5vA=] */

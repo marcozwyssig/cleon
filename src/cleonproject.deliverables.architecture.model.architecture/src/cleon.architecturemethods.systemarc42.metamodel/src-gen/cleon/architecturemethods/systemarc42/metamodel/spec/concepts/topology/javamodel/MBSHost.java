@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Cluster extends DynamicResource implements ICluster {
+public class MBSHost extends DynamicResource implements IMBSHost {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICluster>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMBSHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMBSHost>() {
     
     @Override
-    public ICluster create() {
-      return new Cluster();
+    public IMBSHost create() {
+      return new MBSHost();
     }
     
     @Override
-    public ICluster create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Cluster(resourceRepository, resource);
+    public IMBSHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new MBSHost(resourceRepository, resource);
     }
   
   };
 
-  public Cluster() {
-    super(ICluster.TYPE_ID);
+  public MBSHost() {
+    super(IMBSHost.TYPE_ID);
   }
   
-  public Cluster(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ICluster.TYPE_ID);
+  public MBSHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IMBSHost.TYPE_ID);
   }
 
   // attributes
@@ -78,11 +78,21 @@ public class Cluster extends DynamicResource implements ICluster {
   // relations
   
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ILocation selectBbu() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ILocation.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.MBSHost_bbu);
+  }
+
+  public MBSHost setBbu(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ILocation bbu) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.MBSHost_bbu, bbu);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration selectInstanceOf() {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf);
   }
 
-  public Cluster setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
+  public MBSHost setInstanceOf(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration instanceOf) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, instanceOf);
     return this;
   }
@@ -92,7 +102,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public Cluster setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public MBSHost setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -102,7 +112,7 @@ public class Cluster extends DynamicResource implements ICluster {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Cluster setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public MBSHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -116,9 +126,16 @@ public class Cluster extends DynamicResource implements ICluster {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ILocation.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.MBSHost_bbu, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IMBSHost> selectToMeBbu(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.ILocation object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IMBSHost.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.TopologyPackage.MBSHost_bbu, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,xoeIwn8pHQuuLmleoy8pqy4z3v4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d5ed092-57c9-11ea-bd7a-4baf1bc87b3c,msJwc83QVBuMw1PcmFh8tiLLY3k=] */

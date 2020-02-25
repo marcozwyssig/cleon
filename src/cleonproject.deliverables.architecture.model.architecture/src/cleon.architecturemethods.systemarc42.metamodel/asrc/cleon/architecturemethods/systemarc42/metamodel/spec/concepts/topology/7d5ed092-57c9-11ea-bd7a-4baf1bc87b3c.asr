@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="7d5ed092-57c9-11ea-bd7a-4baf1bc87b3c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="bd61fd75-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="bd611311-57c9-11ea-bd7a-4baf1bc87b3c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7d5ef7a4-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7d607e46-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="45ee3865-570e-11ea-9b24-23fcad029119" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="bd61fd75-57c9-11ea-bd7a-4baf1bc87b3c">
+      <resource guid="bd611311-57c9-11ea-bd7a-4baf1bc87b3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd613a23-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd618844-57c9-11ea-bd7a-4baf1bc87b3c" type="literal">bbu</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="bd6299b6-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="bd62c0c7-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="bd63ab28-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="7d605735-57c9-11ea-bd7a-4baf1bc87b3c" type="literal">MBSHost</object>
+  </predicate>
+</resource>
+

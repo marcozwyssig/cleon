@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="b0397570-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="b039003d-57c9-11ea-bd7a-4baf1bc87b3c" />
+    <resource statement-guid="b19164e0-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="b19116bb-57c9-11ea-bd7a-4baf1bc87b3c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="865b615f-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="865c99e4-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="865c72d2-57c9-11ea-bd7a-4baf1bc87b3c" type="literal">Location</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="b0397570-57c9-11ea-bd7a-4baf1bc87b3c">
+      <resource guid="b039003d-57c9-11ea-bd7a-4baf1bc87b3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b039274f-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b0bdc0a8-57c9-11ea-bd7a-4baf1bc87b3c" type="literal">A</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="b19164e0-57c9-11ea-bd7a-4baf1bc87b3c">
+      <resource guid="b19116bb-57c9-11ea-bd7a-4baf1bc87b3c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1913dce-57c9-11ea-bd7a-4baf1bc87b3c" type="resource" guid="865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b1c45b0c-57c9-11ea-bd7a-4baf1bc87b3c" type="literal">B</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

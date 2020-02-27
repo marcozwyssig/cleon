@@ -17,9 +17,9 @@ public abstract class SecurityZone extends DynamicResource implements ISecurityZ
     return _getToMeSingle(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecurityZone_securitySubZones, object.getResource());
   }
   
-  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone> selectToMeAllowed(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone object) {
-    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecurityZone_allowed, object.getResource());
+  public static java.util.List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone> selectToMeAllowedAccessTo(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone object) {
+    return _getToMeList(object.getRepository(), cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecurityZone_allowedAccessTo, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,gucx+eyOPPEdyjpzMXPjhCK8K8M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,32beba1e-0b75-11e9-a136-69d076e48ed1,L/i1jj7uvZrWrnQ3NaNR+L3z4do=] */

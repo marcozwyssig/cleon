@@ -155,7 +155,7 @@ public class FunctionSpace_Segmentation {
     @Override
     public java.lang.Boolean IsAllowed(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone source, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone securityZone) {
       /* Begin Protected Region [[3c79d5d9-a961-11e9-bf83-7bacdb6991f7]] */
-    	return source.selectAllowed().contains(securityZone);   
+    	return source.selectAllowedAccessTo().contains(securityZone);   
       /* End Protected Region   [[3c79d5d9-a961-11e9-bf83-7bacdb6991f7]] */
     }
 

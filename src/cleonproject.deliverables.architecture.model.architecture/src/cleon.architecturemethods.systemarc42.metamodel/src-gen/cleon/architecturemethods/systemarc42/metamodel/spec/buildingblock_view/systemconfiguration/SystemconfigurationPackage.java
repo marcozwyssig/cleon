@@ -9,8 +9,8 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_MasterActiveDirectorySystemConfiguration = new Resource("3562b171-0220-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_KontronServerSystemConfiguration = new Resource("8c5b636a-0296-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_HypervisorSystemConfiguration = new Resource("0184c8b1-02bb-11e9-9e58-33d596257b14");
-  public static final Resource NetworkPolicyServiceSystemConfiguration = new Resource("90d82cf6-02c5-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_NetworkPolicyServiceSystemConfiguration = new Resource("a1ad1b9d-02c5-11e9-9e58-33d596257b14");
+  public static final Resource RadiusSystemConfiguration = new Resource("90d82cf6-02c5-11e9-9e58-33d596257b14");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_RadiusSystemConfiguration = new Resource("a1ad1b9d-02c5-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_VirtualMachineSystemConfiguration = new Resource("39f8e140-02c7-11e9-9e58-33d596257b14");
   public static final Resource WebServerConfiguration = new Resource("86e72211-02c8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WebServerConfiguration = new Resource("ac6a40af-02c8-11e9-9e58-33d596257b14");
@@ -86,4 +86,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,P8LLnx9IUX5p7TqaYP6EWB7meNQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,xsj7Tth09h22IrWRPazKD1byjRA=] */

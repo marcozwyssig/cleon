@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class NetworkPolicyServiceSystemConfiguration extends DynamicResource implements INetworkPolicyServiceSystemConfiguration {
+public class RadiusSystemConfiguration extends DynamicResource implements IRadiusSystemConfiguration {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkPolicyServiceSystemConfiguration> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INetworkPolicyServiceSystemConfiguration>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRadiusSystemConfiguration> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IRadiusSystemConfiguration>() {
     
     @Override
-    public INetworkPolicyServiceSystemConfiguration create() {
-      return new NetworkPolicyServiceSystemConfiguration();
+    public IRadiusSystemConfiguration create() {
+      return new RadiusSystemConfiguration();
     }
     
     @Override
-    public INetworkPolicyServiceSystemConfiguration create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new NetworkPolicyServiceSystemConfiguration(resourceRepository, resource);
+    public IRadiusSystemConfiguration create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new RadiusSystemConfiguration(resourceRepository, resource);
     }
   
   };
 
-  public NetworkPolicyServiceSystemConfiguration() {
-    super(INetworkPolicyServiceSystemConfiguration.TYPE_ID);
+  public RadiusSystemConfiguration() {
+    super(IRadiusSystemConfiguration.TYPE_ID);
   }
   
-  public NetworkPolicyServiceSystemConfiguration(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, INetworkPolicyServiceSystemConfiguration.TYPE_ID);
+  public RadiusSystemConfiguration(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IRadiusSystemConfiguration.TYPE_ID);
   }
 
   // attributes
@@ -58,6 +58,24 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
   }
 
   @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
+  public java.lang.String selectShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName);
+  }
+    
+  public void setShortName(java.lang.String shortName) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, shortName);
+  }
+
+  @Override
   public java.lang.Boolean selectSkipGenerate() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_skipGenerate);
   }
@@ -73,7 +91,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
+  public RadiusSystemConfiguration setDecompose(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> decompose) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.DecompositionBuildingBlock_decompose, decompose);
     return this;
   }
@@ -83,7 +101,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> decomposePackages) {
+  public RadiusSystemConfiguration setDecomposePackages(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage> decomposePackages) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentWithPackage_decomposePackages, decomposePackages);
     return this;
   }
@@ -93,7 +111,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setHasDependency(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfigurationDependency> hasDependency) {
+  public RadiusSystemConfiguration setHasDependency(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfigurationDependency> hasDependency) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency, hasDependency);
     return this;
   }
@@ -103,7 +121,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_inSubZone);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setInSubZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> inSubZone) {
+  public RadiusSystemConfiguration setInSubZone(java.util.List<? extends cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> inSubZone) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_inSubZone, inSubZone);
     return this;
   }
@@ -113,7 +131,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_inheritServices);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setInheritServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> inheritServices) {
+  public RadiusSystemConfiguration setInheritServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> inheritServices) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_inheritServices, inheritServices);
     return this;
   }
@@ -123,7 +141,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.common.modularity.metamodel.spec.javamodel.IInteraction.class, cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
+  public RadiusSystemConfiguration setInteracts(java.util.List<? extends cleon.common.modularity.metamodel.spec.javamodel.IInteraction> interacts) {
     _setList(cleon.common.modularity.metamodel.spec.SpecPackage.InteractiveBuildingBlock_interacts, interacts);
     return this;
   }
@@ -133,7 +151,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_interface);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setInterface(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IInterface> interface_) {
+  public RadiusSystemConfiguration setInterface(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.javamodel.IInterface> interface_) {
     _setMap(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_interface, interface_);
     return this;
   }
@@ -143,7 +161,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.Component_noPackages);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setNoPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noPackages) {
+  public RadiusSystemConfiguration setNoPackages(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage noPackages) {
     _setSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.Component_noPackages, noPackages);
     return this;
   }
@@ -153,7 +171,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
+  public RadiusSystemConfiguration setPorts_In(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required> ports_In) {
     _setMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, ports_In);
     return this;
   }
@@ -163,7 +181,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
+  public RadiusSystemConfiguration setPorts_Out(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider> ports_Out) {
     _setList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, ports_Out);
     return this;
   }
@@ -173,7 +191,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_provides);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setProvides(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IAbstractService> provides) {
+  public RadiusSystemConfiguration setProvides(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IAbstractService> provides) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_provides, provides);
     return this;
   }
@@ -183,7 +201,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public RadiusSystemConfiguration setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -193,7 +211,7 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     return _getList(cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct.class, cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductAware_usingProducts);
   }
 
-  public NetworkPolicyServiceSystemConfiguration setUsingProducts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct> usingProducts) {
+  public RadiusSystemConfiguration setUsingProducts(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProduct> usingProducts) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._13_product_view._13_product_viewPackage.ProductAware_usingProducts, usingProducts);
     return this;
   }
@@ -204,6 +222,8 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_skipGenerate, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.Buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
@@ -218,4 +238,4 @@ public class NetworkPolicyServiceSystemConfiguration extends DynamicResource imp
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90d82cf6-02c5-11e9-9e58-33d596257b14,C7bp7Sr7G9+NcXCY8CTG3N/zeKI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90d82cf6-02c5-11e9-9e58-33d596257b14,Pkxyxsb2muZY/QtosLGW9oV+hjg=] */

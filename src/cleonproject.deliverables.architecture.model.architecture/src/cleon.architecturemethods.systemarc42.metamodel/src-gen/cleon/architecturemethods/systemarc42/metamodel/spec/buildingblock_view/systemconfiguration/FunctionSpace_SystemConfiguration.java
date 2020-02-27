@@ -160,7 +160,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface INetworkPolicyServiceSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IRadiusSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a1ad1ba0-02c5-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -176,21 +176,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface INetworkPolicyServiceSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRadiusSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NetworkPolicyServiceSystemConfigurationFunctionsImpl implements INetworkPolicyServiceSystemConfigurationFunctionsImpl {
+  public static class RadiusSystemConfigurationFunctionsImpl implements IRadiusSystemConfigurationFunctionsImpl {
 
-    public static final INetworkPolicyServiceSystemConfigurationFunctionsImpl INSTANCE = new NetworkPolicyServiceSystemConfigurationFunctionsImpl();
+    public static final IRadiusSystemConfigurationFunctionsImpl INSTANCE = new RadiusSystemConfigurationFunctionsImpl();
 
-    private NetworkPolicyServiceSystemConfigurationFunctionsImpl() {}
+    private RadiusSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class NetworkPolicyServiceSystemConfigurationFunctions {
+  public static class RadiusSystemConfigurationFunctions {
 
-    private NetworkPolicyServiceSystemConfigurationFunctions() {}
+    private RadiusSystemConfigurationFunctions() {}
 
   }
 
@@ -1173,4 +1173,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,F/97ZjGqZrXXD+ZQ2fk7lI9tmpE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,jOzLmb/JcrN6b6rpCU09MR7mHp0=] */

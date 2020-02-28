@@ -41,11 +41,11 @@ public class Destination extends DynamicResource implements IDestination {
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration selectDestinationSystemConfiguration() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectDestinationSystemConfiguration() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration);
   }
 
-  public Destination setDestinationSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration destinationSystemConfiguration) {
+  public Destination setDestinationSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration destinationSystemConfiguration) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, destinationSystemConfiguration);
     return this;
   }
@@ -75,13 +75,13 @@ public class Destination extends DynamicResource implements IDestination {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSubSecurityZone, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination selectToMeDestinationSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination selectToMeDestinationSystemConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class Destination extends DynamicResource implements IDestination {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,I/w+kuGxFDS24ESPMi87hVgv6+I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,ORdogUk0qs94cU2F3DiRaSLomIo=] */

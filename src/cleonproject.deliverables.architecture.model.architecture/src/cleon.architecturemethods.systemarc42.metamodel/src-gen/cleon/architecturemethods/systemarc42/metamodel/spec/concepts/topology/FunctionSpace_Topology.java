@@ -135,19 +135,19 @@ public class FunctionSpace_Topology {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts> AllAbstractNetdomainHosts();
 
     @IDynamicResourceExtension.MethodId("8ada83c1-0aa1-11ea-97f4-9d91b2097bad")
-    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
+    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
 
     @IDynamicResourceExtension.MethodId("5e11ab82-deaf-11e9-b714-478bec98e62d")
-    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> UsedZones(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration sysCfg);
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> UsedZones(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration sysCfg);
 
     @IDynamicResourceExtension.MethodId("1351e2e7-df72-11e9-9827-a1514ee8d06a")
-    public java.lang.String Guid(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration systemConfiguration);
+    public java.lang.String Guid(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
 
     @IDynamicResourceExtension.MethodId("205b7ce9-e051-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfiguration();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("30077b36-e051-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationDistinct();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationDistinct();
 
     @IDynamicResourceExtension.MethodId("74d772a9-e076-11e9-aa67-4505845acdbd")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ICommunication> AllCommunications();
@@ -390,10 +390,10 @@ public class FunctionSpace_Topology {
   public static interface ITopologyEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b973cf54-51b0-11ea-a946-13c393300b57")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfiguration();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("d3212487-51b0-11ea-a946-13c393300b57")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationDistinct();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationDistinct();
 
   }
   
@@ -515,4 +515,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mzQgdgQJ+ZAtxK1csbj0DwGe5vA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,3h7HYmM6QAt487mchE6uDpdinNE=] */

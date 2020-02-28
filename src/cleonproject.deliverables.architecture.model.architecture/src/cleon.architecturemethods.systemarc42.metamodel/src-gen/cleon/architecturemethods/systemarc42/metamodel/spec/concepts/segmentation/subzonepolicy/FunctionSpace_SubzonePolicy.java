@@ -11,9 +11,9 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import java.util.stream.Collectors;
 
 import cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.SystemEnvironment;
+import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.SystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.FunctionSpace_System.ISystemConfigurationFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts;
@@ -64,7 +64,7 @@ public class FunctionSpace_SubzonePolicy {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource src);
 
     @IDynamicResourceExtension.MethodId("299d0f3b-0dfc-11ea-adc0-d5efa00b40ac")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
   }
   
@@ -390,4 +390,4 @@ public class FunctionSpace_SubzonePolicy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,ai+Cerzs87k9jSrmkhxy5JrkU6Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,su3S2KvDu6YsXGEUaz1QG1rBqJU=] */

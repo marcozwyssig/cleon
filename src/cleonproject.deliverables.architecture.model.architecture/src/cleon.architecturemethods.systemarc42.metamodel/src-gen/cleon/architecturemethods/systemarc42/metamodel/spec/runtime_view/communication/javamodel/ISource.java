@@ -10,7 +10,7 @@ public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration selectSourceSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectSourceSystemConfiguration();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IAbstractService> selectCommunicatesWith();
   
@@ -22,4 +22,4 @@ public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,R8TbU252Ga/PO04kD/T3L9rxqeE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,8oHJx0Ji41+dIXSkNm6ATZzD970=] */

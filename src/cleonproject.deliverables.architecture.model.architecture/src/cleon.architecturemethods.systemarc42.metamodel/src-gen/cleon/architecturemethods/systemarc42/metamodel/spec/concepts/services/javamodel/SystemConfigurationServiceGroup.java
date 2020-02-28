@@ -60,11 +60,11 @@ public class SystemConfigurationServiceGroup extends DynamicResource implements 
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration selectServiceProvider() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectServiceProvider() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider);
   }
 
-  public SystemConfigurationServiceGroup setServiceProvider(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration serviceProvider) {
+  public SystemConfigurationServiceGroup setServiceProvider(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration serviceProvider) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider, serviceProvider);
     return this;
   }
@@ -96,16 +96,16 @@ public class SystemConfigurationServiceGroup extends DynamicResource implements 
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.ServiceGroup_services, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.ISystemConfigurationServiceGroup> selectToMeServiceProvider(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.ISystemConfigurationServiceGroup> selectToMeServiceProvider(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.ISystemConfigurationServiceGroup.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,aZMvqCPxuz0A9/M0pDoSLT3yYUQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,DJNMg9/rmRbHLDtL9V9imrVf1as=] */

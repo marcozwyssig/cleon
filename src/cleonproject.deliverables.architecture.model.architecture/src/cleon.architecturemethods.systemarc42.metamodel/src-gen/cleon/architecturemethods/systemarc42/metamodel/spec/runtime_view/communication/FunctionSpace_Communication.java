@@ -53,19 +53,19 @@ public class FunctionSpace_Communication {
     public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem System();
 
     @IDynamicResourceExtension.MethodId("c788343a-883f-11e9-80ce-fbaba21c141b")
-    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration SystemConfiguration();
+    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration SystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("795a998b-88f0-11e9-9b22-1b5fbbd90cc8")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource> AllSources();
 
     @IDynamicResourceExtension.MethodId("ed28063b-b203-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllAllowedSystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllAllowedSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("044ab964-b204-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationsFromDependsFrom();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsFromDependsFrom();
 
     @IDynamicResourceExtension.MethodId("24774474-b204-11e9-b89e-1728aee30149")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> AllSystemConfigurationsDependsOn();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsDependsOn();
 
     @IDynamicResourceExtension.MethodId("d19f4a17-e07a-11e9-aa67-4505845acdbd")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource> OnlyInterSourcesDistinct();
@@ -518,10 +518,10 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISourceSubSecurityZone> OnlyInter();
 
     @IDynamicResourceExtension.MethodId("3b514034-e065-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> UsedSystemConfigurationDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource source);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> UsedSystemConfigurationDistinct(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("2ed88ad2-e066-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration> UsedSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource source);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> UsedSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("16752bad-09f0-11ea-baed-218c3e076b56")
     public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SourceSubZone();
@@ -613,4 +613,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,fNKvjo0RtX0ExUily37/xYC5ebs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,tIE+/N04hRAHBAfJz0Hwbf9Z8cA=] */

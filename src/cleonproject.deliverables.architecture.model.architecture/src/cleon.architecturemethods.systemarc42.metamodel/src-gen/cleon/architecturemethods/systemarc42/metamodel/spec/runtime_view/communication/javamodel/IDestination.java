@@ -8,10 +8,10 @@ public interface IDestination extends ch.actifsource.core.javamodel.IDecorator {
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration.to_move.system.javamodel.ISystemConfiguration selectDestinationSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration selectDestinationSystemConfiguration();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestinationSubSecurityZone> selectDestinationSubSecurityZone();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,vdg6SkVdtxnLkGsuo9RojYOqg04=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,2z6gENciUFw2WQDsuua5FnyjwVs=] */

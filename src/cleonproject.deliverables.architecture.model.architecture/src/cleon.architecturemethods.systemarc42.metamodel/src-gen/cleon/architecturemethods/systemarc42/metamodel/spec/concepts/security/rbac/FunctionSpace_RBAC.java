@@ -222,6 +222,73 @@ public class FunctionSpace_RBAC {
 
   }
 
+  public static interface IRoleSystemComponentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("7f1af57d-bff0-11e9-80a1-d5ff22ac3c31")
+    public java.lang.String Description(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleNetDomainGroup roleNetdomainGroup);
+
+  }
+  
+  public static interface IRoleSystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RoleSystemComponentFunctionsImpl implements IRoleSystemComponentFunctionsImpl {
+
+    public static final IRoleSystemComponentFunctionsImpl INSTANCE = new RoleSystemComponentFunctionsImpl();
+
+    private RoleSystemComponentFunctionsImpl() {}
+
+  }
+  
+  public static class RoleSystemComponentFunctions {
+
+    private RoleSystemComponentFunctions() {}
+
+  }
+
+  public static interface IActivityPermissionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("05d1f501-bff1-11e9-80a1-d5ff22ac3c31")
+    public java.lang.String Description(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityNetdomainGroup netDomainGroup);
+
+    @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent role);
+
+  }
+  
+  public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission);
+
+  }
+  
+  public static class ActivityPermissionFunctionsImpl implements IActivityPermissionFunctionsImpl {
+
+    public static final IActivityPermissionFunctionsImpl INSTANCE = new ActivityPermissionFunctionsImpl();
+
+    private ActivityPermissionFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission) {
+      /* Begin Protected Region [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
+    	return role.selectHasActivities().contains(activityPermission);   
+      /* End Protected Region   [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
+    }
+
+  }
+  
+  public static class ActivityPermissionFunctions {
+
+    private ActivityPermissionFunctions() {}
+
+    public static java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.activity.javamodel.IActivityPermission activityPermission) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).HasAccess(role, activityPermission);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,0PJMaTMFghUakRXlGZ8IwP6Bp4A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,N03K6L184oSMwttalHkLgbDg1aI=] */

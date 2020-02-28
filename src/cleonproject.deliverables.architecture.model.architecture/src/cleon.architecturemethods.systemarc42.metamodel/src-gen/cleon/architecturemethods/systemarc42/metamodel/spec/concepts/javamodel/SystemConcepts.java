@@ -191,10 +191,6 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_qosConcept, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeNetworkConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_networkConcept, object.getResource());
-  }
-  
   public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeSecurityConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.javamodel.ISecurityConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_securityConcept, object.getResource());
   }
@@ -207,5 +203,9 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_serviceConcept, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts selectToMeNetworkConcept(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec.concepts.ConceptsPackage.SystemConcepts_networkConcept, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,DqwCBA3P3c/1b6ZAQazCcuNRa6I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,ej6q0r+jVW0Eq7GeyvCAglqM0GA=] */

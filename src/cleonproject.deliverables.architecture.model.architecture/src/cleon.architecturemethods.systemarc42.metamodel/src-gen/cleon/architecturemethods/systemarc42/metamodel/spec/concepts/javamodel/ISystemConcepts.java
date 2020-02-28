@@ -14,14 +14,14 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.qos.javamodel.IQoS_Concept selectQosConcept();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept selectNetworkConcept();
-  
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.javamodel.ISecurityConcept selectSecurityConcept();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.businesscontinuity.javamodel.IBusinessContinuityConcept selectBusinessContinuityConcept();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.services.javamodel.IServices selectServiceConcept();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.INetworkConcept selectNetworkConcept();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,5LMxWiLiCfCR3v3WLA+7XdpNMEw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,OHdGe0ex8b99229i/2XYDrnli1A=] */

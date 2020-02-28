@@ -31,11 +31,11 @@ public class Communication extends DynamicResource implements ICommunication {
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem selectCommunicationSystem() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem);
+  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.IAbstractSystem selectCommunicationSystem() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.IAbstractSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem);
   }
 
-  public Communication setCommunicationSystem(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem communicationSystem) {
+  public Communication setCommunicationSystem(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.IAbstractSystem communicationSystem) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem, communicationSystem);
     return this;
   }
@@ -74,14 +74,14 @@ public class Communication extends DynamicResource implements ICommunication {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.IAbstractSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_destination, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ICommunication> selectToMeCommunicationSystem(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ICommunication> selectToMeCommunicationSystem(cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.IAbstractSystem object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ICommunication.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.CommunicationPackage.Communication_communicationSystem, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class Communication extends DynamicResource implements ICommunication {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91bc9aa9-8779-11e9-a61b-279ebde48b48,lDQlH/e1gflZuNbWdci4Tgw8X3E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91bc9aa9-8779-11e9-a61b-279ebde48b48,VXnNNjdsdgUb11nlVS1ZKxyIYTg=] */

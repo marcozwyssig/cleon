@@ -22,8 +22,8 @@ public interface ITechnicalContext extends cleon.common.doc.metamodel.spec.chapt
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem> selectExternalSystems();
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> selectExternalSystems();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,ooZmZ7Bg4RHOuE15v5OKqEQyOq0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,b77neWsfhRdyOHdRCFJ2o2LG13g=] */

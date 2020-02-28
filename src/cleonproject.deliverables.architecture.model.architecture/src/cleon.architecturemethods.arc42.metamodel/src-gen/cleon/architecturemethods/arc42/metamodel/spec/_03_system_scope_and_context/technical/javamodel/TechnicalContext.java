@@ -71,11 +71,11 @@ public class TechnicalContext extends DynamicResource implements ITechnicalConte
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem> selectExternalSystems() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems);
+  public java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> selectExternalSystems() {
+    return _getList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems);
   }
 
-  public TechnicalContext setExternalSystems(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem> externalSystems) {
+  public TechnicalContext setExternalSystems(java.util.List<? extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> externalSystems) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems, externalSystems);
     return this;
   }
@@ -107,16 +107,16 @@ public class TechnicalContext extends DynamicResource implements ITechnicalConte
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems, visitor);
+    _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectToMeExternalSystems(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.IExternalSystem object) {
+  public static cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectToMeExternalSystems(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.ITechnicalContext.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.TechnicalPackage.TechnicalContext_externalSystems, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,KmEsvXLmXZ64ctCICoeetNuvX+E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2420a6f8-27cc-11e6-b263-9db62e053e59,fQGf8c6IHfzb3wRHJss88oSJBi8=] */

@@ -42,6 +42,12 @@ public class FunctionSpace_SystemConfiguration {
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("3d777d35-0ab5-11e9-a8f9-abf1763bbc53")
+    public java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
+
+    @IDynamicResourceExtension.MethodId("3d777d38-0ab5-11e9-a8f9-abf1763bbc53")
+    public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
+
   }
   
   public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
@@ -50,11 +56,29 @@ public class FunctionSpace_SystemConfiguration {
 
     private SystemConfigurationFunctionsImpl() {}
 
+    @Override
+    public java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      return null;
+    }
+
+    @Override
+    public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      return null;
+    }
+
   }
   
   public static class SystemConfigurationFunctions {
 
     private SystemConfigurationFunctions() {}
+
+    public static java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetStereotypeName(systemConfiguration);
+    }
+
+    public static java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetIncludePath(systemConfiguration);
+    }
 
   }
 
@@ -1137,40 +1161,6 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface INamedSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("abd5ff2b-6cf0-11e9-a6d3-775c09e81e2d")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("abd5ff2e-6cf0-11e9-a6d3-775c09e81e2d")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("abd5ff31-6cf0-11e9-a6d3-775c09e81e2d")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("abd5ff34-6cf0-11e9-a6d3-775c09e81e2d")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface INamedSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NamedSystemConfigurationFunctionsImpl implements INamedSystemConfigurationFunctionsImpl {
-
-    public static final INamedSystemConfigurationFunctionsImpl INSTANCE = new NamedSystemConfigurationFunctionsImpl();
-
-    private NamedSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class NamedSystemConfigurationFunctions {
-
-    private NamedSystemConfigurationFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,jOzLmb/JcrN6b6rpCU09MR7mHp0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,VTQgnI7TWFVzqnKWATP9LtZ/eyY=] */

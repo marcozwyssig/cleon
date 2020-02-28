@@ -11,7 +11,6 @@ public class Buildingblock_viewPackage {
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemLayer_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
   public static final Resource AbstractSystemComponent_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
-  public static final Resource NamedSystemConfiguration = new Resource("58022544-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayer_hasDependency = new Resource("c5658855-01d8-11e9-9c9d-8d52d6745026");
@@ -56,4 +55,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,GuP7q06FHkMCJQAx5f+rNEw//4Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,7XArk1cf5FGkJmjPwQmKjCQjzC0=] */

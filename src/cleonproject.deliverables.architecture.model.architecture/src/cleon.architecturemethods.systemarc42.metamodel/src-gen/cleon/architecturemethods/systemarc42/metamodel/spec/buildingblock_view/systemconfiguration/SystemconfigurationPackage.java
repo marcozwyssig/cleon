@@ -56,7 +56,6 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_WsusSystemConfiguration = new Resource("bb8c67d5-0c3d-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_LinuxSystemConfiguration = new Resource("82aabb1f-1d8a-11e9-b601-db75aa6f89a4");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DeviceSystemConfiguration = new Resource("dbb04b54-2abd-11e9-a3f8-336d9e792e17");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_NamedSystemConfiguration = new Resource("95ff2d7f-6cf0-11e9-a6d3-775c09e81e2d");
   public static final Resource VirtualAppliance = new Resource("c0dc14c1-77b7-11e9-8094-13b915a38efa");
   public static final Resource InterfaceType = new Resource("9aa83a3b-878f-11e9-a61b-279ebde48b48");
   public static final Resource InterfaceType_INT = new Resource("a08bf345-878f-11e9-a61b-279ebde48b48");
@@ -86,4 +85,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,xsj7Tth09h22IrWRPazKD1byjRA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.systemconfiguration,eR2Jy40KkRqSrGTdPYqPVwPEfVU=] */

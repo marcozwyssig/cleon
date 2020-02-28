@@ -27,7 +27,6 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Blackbox_blackbox_aE_dependencies = new Resource("32787dd2-0df0-11e9-a28e-8b950dcca323");
   public static final Resource Blackbox_aE_Requirements = new Resource("4a655e3e-0df0-11e9-a28e-8b950dcca323");
   public static final Resource Blackbox_blackbox_aE_requirements = new Resource("5eef16f5-0df0-11e9-a28e-8b950dcca323");
-  public static final Resource FunctionSpace_aE_Buildingblock_aE_View_AbstractRootSystem = new Resource("a371b206-3ec8-11ea-9af7-ad5bf30c585a");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +47,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,fB8NcorTseik109KA91QIY3IO38=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,DnO8+YtWIL6FNKAmHS7vLPnoCc8=] */

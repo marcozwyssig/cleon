@@ -68,7 +68,7 @@ public class FunctionSpace_ItArc42_BuildingBlock {
 
   }
 
-  public static interface ISystemWithLayersFunctions extends IDynamicResourceExtension {
+  public static interface ISystemWithLayerFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
@@ -78,24 +78,24 @@ public class FunctionSpace_ItArc42_BuildingBlock {
 
   }
   
-  public static interface ISystemWithLayersFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemWithLayerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SystemWithLayersFunctionsImpl implements ISystemWithLayersFunctionsImpl {
+  public static class SystemWithLayerFunctionsImpl implements ISystemWithLayerFunctionsImpl {
 
-    public static final ISystemWithLayersFunctionsImpl INSTANCE = new SystemWithLayersFunctionsImpl();
+    public static final ISystemWithLayerFunctionsImpl INSTANCE = new SystemWithLayerFunctionsImpl();
 
-    private SystemWithLayersFunctionsImpl() {}
+    private SystemWithLayerFunctionsImpl() {}
 
   }
   
-  public static class SystemWithLayersFunctions {
+  public static class SystemWithLayerFunctions {
 
-    private SystemWithLayersFunctions() {}
+    private SystemWithLayerFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,n1TdfVMA++ZAL0fwDxbkg032cNQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,JbiG+PsB6V1lRoXvEYaM4e6PMhg=] */

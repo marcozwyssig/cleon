@@ -18,7 +18,7 @@ public class FunctionSpace_System {
   /* End Protected Region   [[ef167aa3-8797-11e9-bb4b-c57da735262b]] */
 
 
-  public static interface INamedSystemFunctions extends IDynamicResourceExtension {
+  public static interface INamedSystemWithSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("fcec324a-8797-11e9-bb4b-c57da735262b")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> GetAllSystemConfigurations();
@@ -31,21 +31,21 @@ public class FunctionSpace_System {
 
   }
   
-  public static interface INamedSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedSystemWithSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class NamedSystemFunctionsImpl implements INamedSystemFunctionsImpl {
+  public static class NamedSystemWithSystemConfigurationFunctionsImpl implements INamedSystemWithSystemConfigurationFunctionsImpl {
 
-    public static final INamedSystemFunctionsImpl INSTANCE = new NamedSystemFunctionsImpl();
+    public static final INamedSystemWithSystemConfigurationFunctionsImpl INSTANCE = new NamedSystemWithSystemConfigurationFunctionsImpl();
 
-    private NamedSystemFunctionsImpl() {}
+    private NamedSystemWithSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class NamedSystemFunctions {
+  public static class NamedSystemWithSystemConfigurationFunctions {
 
-    private NamedSystemFunctions() {}
+    private NamedSystemWithSystemConfigurationFunctions() {}
 
   }
 
@@ -55,7 +55,7 @@ public class FunctionSpace_System {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> GetAllDependsOn();
 
     @IDynamicResourceExtension.MethodId("a30c72d2-883f-11e9-80ce-fbaba21c141b")
-    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem System();
+    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystemWithSystemConfiguration System();
 
     @IDynamicResourceExtension.MethodId("691c183c-92b7-11e9-b2b4-f340ae70802c")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration> GetAllRequires();
@@ -196,4 +196,4 @@ public class FunctionSpace_System {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ef167aa3-8797-11e9-bb4b-c57da735262b,Ke4yUFwKsKWJ6qdC6fGv2NzFAhc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ef167aa3-8797-11e9-bb4b-c57da735262b,iqZ+g4rOHRaBinoUqejuWRDsUKQ=] */

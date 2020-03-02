@@ -4,13 +4,13 @@ import ch.actifsource.core.Resource;
 
 public class Buildingblock_viewPackage {
   
-  public static final Resource SystemWithLayers = new Resource("d6859a6c-99aa-11e8-8f58-219af2c5d6d9");
-  public static final Resource SystemWithLayers_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
+  public static final Resource SystemWithLayer = new Resource("d6859a6c-99aa-11e8-8f58-219af2c5d6d9");
+  public static final Resource SystemWithLayer_layers = new Resource("a6381cc7-99ac-11e8-8f58-219af2c5d6d9");
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemComponent = new Resource("c0436bff-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemLayer_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
-  public static final Resource AbstractSystemComponent_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemComponentAware_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemConfigurationAware_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayer_hasDependency = new Resource("c5658855-01d8-11e9-9c9d-8d52d6745026");
@@ -25,16 +25,19 @@ public class Buildingblock_viewPackage {
   public static final Resource NamedSystemComponent = new Resource("91ada0b6-35f7-11e9-9d58-25409887bb2a");
   public static final Resource SystemConfiguration_inheritServices = new Resource("8d65e85b-879a-11e9-bb4b-c57da735262b");
   public static final Resource SystemConfiguration_inSubZone = new Resource("cf4d9976-92a1-11e9-b2b4-f340ae70802c");
-  public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemWithLayers = new Resource("69e12c79-9c97-11e9-9b32-35cf2fd07621");
+  public static final Resource FunctionSpace_aE_ItArc42_aE_BuildingBlock_SystemWithLayer = new Resource("69e12c79-9c97-11e9-9b32-35cf2fd07621");
   public static final Resource SystemConfiguration_provides = new Resource("95567bd3-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource SystemConfiguration_interface = new Resource("f474273d-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource SystemConfiguration_skipGenerate = new Resource("73d5a1ae-06bc-11ea-8f17-2da21adc8e34");
   public static final Resource SystemOfSystem = new Resource("025f7a4c-3eac-11ea-8cb4-0b006790b142");
   public static final Resource SystemOfSystem_systems = new Resource("394f59bc-3eac-11ea-8cb4-0b006790b142");
-  public static final Resource AbstractSystemComponent = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
-  public static final Resource System = new Resource("74ac16c6-3eb1-11ea-9af7-ad5bf30c585a");
+  public static final Resource SystemConfigurationAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
+  public static final Resource SystemWithSystemConfiguration = new Resource("74ac16c6-3eb1-11ea-9af7-ad5bf30c585a");
   public static final Resource AbstractSystem = new Resource("5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a");
-  public static final Resource NamedSystem = new Resource("f6f283bb-45e4-11ea-a150-53212f58490b");
+  public static final Resource NamedSystemWithSystemConfiguration = new Resource("f6f283bb-45e4-11ea-a150-53212f58490b");
+  public static final Resource SystemComponentAware = new Resource("0acee12f-5ca9-11ea-9014-eb1fa518f623");
+  public static final Resource SystemWithSystemComponent = new Resource("cb55af14-5ca9-11ea-9014-eb1fa518f623");
+  public static final Resource NamedSystemWithSystemComponent = new Resource("e8941a6b-5ca9-11ea-9014-eb1fa518f623");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +58,4 @@ public class Buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,7XArk1cf5FGkJmjPwQmKjCQjzC0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view,eC++1Dt4OEezD8TLR/f8Tc63bek=] */

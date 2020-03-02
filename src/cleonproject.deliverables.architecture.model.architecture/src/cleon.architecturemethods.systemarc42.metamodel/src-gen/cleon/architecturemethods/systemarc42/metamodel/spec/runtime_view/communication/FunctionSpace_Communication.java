@@ -50,7 +50,7 @@ public class FunctionSpace_Communication {
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("58d69bff-8833-11e9-80ce-fbaba21c141b")
-    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystem System();
+    public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.INamedSystemWithSystemConfiguration System();
 
     @IDynamicResourceExtension.MethodId("c788343a-883f-11e9-80ce-fbaba21c141b")
     public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration SystemConfiguration();
@@ -613,4 +613,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,tIE+/N04hRAHBAfJz0Hwbf9Z8cA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,p6oraKXHoRB76h5qhKxAWRm58eE=] */

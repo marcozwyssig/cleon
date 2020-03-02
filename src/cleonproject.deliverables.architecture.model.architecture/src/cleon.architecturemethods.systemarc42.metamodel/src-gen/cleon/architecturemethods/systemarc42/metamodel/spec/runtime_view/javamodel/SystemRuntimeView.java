@@ -106,7 +106,6 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.ICommunications.class, cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.Runtime_viewPackage.SystemRuntimeView_communication, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -119,4 +118,4 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,R2bjpkwuTR5Pyb25PI7wsdxYsGg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,kAYyB6xoIAnH5nzSHnzk4P1s7Qo=] */

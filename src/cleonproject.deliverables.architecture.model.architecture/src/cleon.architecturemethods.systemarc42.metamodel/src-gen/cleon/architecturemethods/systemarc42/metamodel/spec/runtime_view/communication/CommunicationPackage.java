@@ -6,7 +6,7 @@ public class CommunicationPackage {
   
   public static final Resource Communications = new Resource("6c796bef-8779-11e9-a61b-279ebde48b48");
   public static final Resource Communication = new Resource("91bc9aa9-8779-11e9-a61b-279ebde48b48");
-  public static final Resource Communications_systemCommunications = new Resource("9b62d9a7-8779-11e9-a61b-279ebde48b48");
+  public static final Resource Communications_destinationSystemCommunications = new Resource("9b62d9a7-8779-11e9-a61b-279ebde48b48");
   public static final Resource Communication_communicationSystem = new Resource("a4c9ed02-8779-11e9-a61b-279ebde48b48");
   public static final Resource Destination = new Resource("54bec968-877a-11e9-a61b-279ebde48b48");
   public static final Resource Communication_destination = new Resource("5d6a069d-877a-11e9-a61b-279ebde48b48");
@@ -62,4 +62,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication,286D/WiL+kUxig0S2QrVjfLh+Ro=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication,gNWHNtFo/NMe+wrlZ7KdsHYJULg=] */

@@ -8,8 +8,8 @@ public interface IBuildingBlockSystemOverviewDiagram extends cleon.modelinglangu
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemWithLayer selectSystem();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemWithLayer selectSystem();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,/H7FxSfIkfgOyp0zk5+q9B+9Co0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dec338dd-02db-11e9-9e58-33d596257b14,6X2UzPpMK5Evf8Eeu1vgkWOLabM=] */

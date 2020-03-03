@@ -78,11 +78,11 @@ public class TestUser extends DynamicResource implements ITestUser {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent> selectRole() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role);
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent> selectRole() {
+    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role);
   }
 
-  public TestUser setRole(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent> role) {
+  public TestUser setRole(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent> role) {
     _setList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, role);
     return this;
   }
@@ -106,15 +106,15 @@ public class TestUser extends DynamicResource implements ITestUser {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_password, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, visitor);
+    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectToMeRole(cleon.architecturemethods.systemarc42.metamodel.spec.concepts.security.rbac.role.javamodel.IRoleSystemComponent object) {
+  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectToMeRole(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUser_role, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,9gQwK0GeLeMtLtYF4J/WISGqPA8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,AodUAv8W0lgTdAqC2UJWnIE+Yho=] */

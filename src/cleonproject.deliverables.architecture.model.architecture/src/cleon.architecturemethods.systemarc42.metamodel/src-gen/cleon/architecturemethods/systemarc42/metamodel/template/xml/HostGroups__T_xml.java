@@ -21,7 +21,7 @@ public class HostGroups__T_xml {
   public static interface IHostNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8c3697a5-523a-11ea-b38c-2b48248ef5b9")
-    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts, final cleon.architecturemethods.systemarc42.metamodel.spec.buildingblock_view.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts abstractSiteWithHosts, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
   }
   
@@ -45,4 +45,4 @@ public class HostGroups__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3395ea55-51b3-11ea-a946-13c393300b57,VPf1AxLFJwV+0rSnQwirftgMMF0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3395ea55-51b3-11ea-a946-13c393300b57,oDi6m3iIu1UlgKFmPjCQh7M/m04=] */

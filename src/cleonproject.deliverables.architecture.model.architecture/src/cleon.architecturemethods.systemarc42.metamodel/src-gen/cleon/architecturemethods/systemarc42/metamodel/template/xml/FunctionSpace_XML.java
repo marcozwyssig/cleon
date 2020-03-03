@@ -264,9 +264,6 @@ public class FunctionSpace_XML {
   
   public static interface IHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("de1344bb-4836-11ea-a9d8-93d0ce680cba")
-    public java.lang.String Name(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode hostNode);
-
   }
   
   public static class HostNodeFunctionsImpl implements IHostNodeFunctionsImpl {
@@ -275,23 +272,14 @@ public class FunctionSpace_XML {
 
     private HostNodeFunctionsImpl() {}
 
-    @Override
-    public java.lang.String Name(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode hostNode) {
-      return null;
-    }
-
   }
   
   public static class HostNodeFunctions {
 
     private HostNodeFunctions() {}
 
-    public static java.lang.String Name(final cleon.architecturemethods.systemarc42.metamodel.spec.concepts.network.javamodel.IHostNode hostNode) {
-      return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNode).Name(hostNode);
-    }
-
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,xiI+KX9lFGIhdg77hT31Vig/vhg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,bXct7UbCniuqxlzEe9AXoOmENS0=] */

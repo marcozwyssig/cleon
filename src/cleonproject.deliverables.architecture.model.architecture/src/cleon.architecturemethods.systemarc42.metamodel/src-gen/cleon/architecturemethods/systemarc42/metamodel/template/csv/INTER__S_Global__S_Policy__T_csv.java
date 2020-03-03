@@ -21,10 +21,10 @@ public class INTER__S_Global__S_Policy__T_csv {
   public static interface ISourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("42b9ccb5-0b60-11ea-bef6-75a700135135")
-    public java.lang.String Tag(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination destination);
+    public java.lang.String Tag(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination destination);
 
     @IDynamicResourceExtension.MethodId("95f34c82-0b5f-11ea-bef6-75a700135135")
-    public java.lang.String RuleName(final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestination dst, final cleon.architecturemethods.systemarc42.metamodel.spec.runtime_view.communication.javamodel.IDestinationSubSecurityZone dstSz);
+    public java.lang.String RuleName(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dstSz);
 
     @IDynamicResourceExtension.MethodId("5516bcc2-0b64-11ea-bef6-75a700135135")
     public java.lang.String ServiceName();
@@ -51,4 +51,4 @@ public class INTER__S_Global__S_Policy__T_csv {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b0f9ed3-04be-11ea-b1ce-b1de8a8d414c,gUEiVA9jcdFaYUUFNvYrbUAJifM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b0f9ed3-04be-11ea-b1ce-b1de8a8d414c,GvetwUriYxPm9feFHaWn/pP/ULg=] */

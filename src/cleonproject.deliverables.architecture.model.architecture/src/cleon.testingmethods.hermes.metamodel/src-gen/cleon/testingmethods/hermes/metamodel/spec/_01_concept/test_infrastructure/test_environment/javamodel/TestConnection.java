@@ -31,11 +31,11 @@ public class TestConnection extends DynamicResource implements ITestConnection {
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode selectNode() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode selectNode() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node);
   }
 
-  public TestConnection setNode(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode node) {
+  public TestConnection setNode(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode node) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node, node);
     return this;
   }
@@ -64,15 +64,15 @@ public class TestConnection extends DynamicResource implements ITestConnection {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection> selectToMeNode(cleon.architecturemethods.systemarc42.metamodel.spec.deployment_view.environment.node.javamodel.INode object) {
+  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection> selectToMeNode(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.Test_environmentPackage.TestConnection_node, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,aEuLNeZAxApZe71ymQwCk5Q4YuA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,1N9RGyDqqsx5dZ78mRO9nqryFFE=] */

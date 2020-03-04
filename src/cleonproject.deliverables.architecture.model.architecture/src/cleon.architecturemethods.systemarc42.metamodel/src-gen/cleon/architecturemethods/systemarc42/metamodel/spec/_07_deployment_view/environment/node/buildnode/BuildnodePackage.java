@@ -22,6 +22,7 @@ public class BuildnodePackage {
   public static final Resource BuildNode_memory = new Resource("3f760a27-2b02-11e9-9692-65766bc2daa5");
   public static final Resource BuildNode_disk = new Resource("1b503c7b-2b03-11e9-9692-65766bc2daa5");
   public static final Resource OsExecutionEnvironmentBuildNode = new Resource("0a438c62-01ec-11ea-bd6c-dd6cdcfeff45");
+  public static final Resource BuildNode_host = new Resource("edf18afa-5e17-11ea-b835-fbb06fdf6352");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class BuildnodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode,cxCiU/Z+1tP3QaRis/4U4a+35m0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode,sY5FqOb6SfU5CA/2hTWSXaLn+1o=] */

@@ -84,12 +84,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IWindowsSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("bbce4596-021f-11e9-b327-17da2da63a8f")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("bbce4599-021f-11e9-b327-17da2da63a8f")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("862a2d8a-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -117,12 +111,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IMasterActiveDirectorySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3562b174-0220-11e9-b327-17da2da63a8f")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("3562b177-0220-11e9-b327-17da2da63a8f")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("d640244f-0aa5-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
@@ -185,12 +173,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IRadiusSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("a1ad1ba0-02c5-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("a1ad1ba3-02c5-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("4c3b9e8a-0ab3-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -1163,4 +1145,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,UPCo6Bs2aVZnUWipKnXo7+YmCuY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,1VuKeitAxP8YFZlWwkqE6wOEdco=] */

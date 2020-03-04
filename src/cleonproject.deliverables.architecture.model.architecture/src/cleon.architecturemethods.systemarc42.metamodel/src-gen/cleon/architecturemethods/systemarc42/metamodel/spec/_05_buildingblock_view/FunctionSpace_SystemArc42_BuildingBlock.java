@@ -214,14 +214,14 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       /* Begin Protected Region [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
-    	return systemConfigurationList.stream().filter(x -> (x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue()) && !DependsOnWindows(x)).collect(Collectors.toList());   
+    	return systemConfigurationList.stream().filter(x -> (x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue())).collect(Collectors.toList());   
       /* End Protected Region   [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
     }
 
     @Override
     public java.lang.Boolean DependsOnWindows(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
       /* Begin Protected Region [[492b3b22-14d9-11ea-a57d-f9a0d62ee07e]] */
-    	return systemConfiguration.extension(ISystemConfigurationFunctions.class).GetAllDependsOnWithSelf().stream().anyMatch(x -> x.selectName().equalsIgnoreCase("WIN"));   
+    	return systemConfiguration.extension(ISystemConfigurationFunctions.class).GetAllDependsOnWithSelf().stream().anyMatch(x -> x.selectShortName().equalsIgnoreCase("WIN"));   
       /* End Protected Region   [[492b3b22-14d9-11ea-a57d-f9a0d62ee07e]] */
     }
 

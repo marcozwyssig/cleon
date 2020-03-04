@@ -214,7 +214,7 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       /* Begin Protected Region [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
-    	return systemConfigurationList.stream().filter(x -> x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue()).collect(Collectors.toList());   
+    	return systemConfigurationList.stream().filter(x -> (x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue()) && !DependsOnWindows(x)).collect(Collectors.toList());   
       /* End Protected Region   [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
     }
 

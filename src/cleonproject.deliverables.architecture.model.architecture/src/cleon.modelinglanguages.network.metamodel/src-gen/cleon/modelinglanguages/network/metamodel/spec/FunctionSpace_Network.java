@@ -60,9 +60,6 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
-    @IDynamicResourceExtension.MethodId("02e6dbac-7b98-11e9-94aa-f1ea7ea33f46")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IDefaultGatewayNode DefaultGateway();
-
   }
   
   public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -217,9 +214,6 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
-    @IDynamicResourceExtension.MethodId("1a5ba639-7b98-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String DefaultGateway();
-
     @IDynamicResourceExtension.MethodId("a37c1622-ca55-11e9-83b0-559396620907")
     public java.lang.String Name();
 
@@ -240,31 +234,6 @@ public class FunctionSpace_Network {
   public static class AbstractNetworkNodeFunctions {
 
     private AbstractNetworkNodeFunctions() {}
-
-  }
-
-  public static interface IDefaultGatewayNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("530b4792-3ecc-11ea-9af7-ad5bf30c585a")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface IDefaultGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DefaultGatewayNodeFunctionsImpl implements IDefaultGatewayNodeFunctionsImpl {
-
-    public static final IDefaultGatewayNodeFunctionsImpl INSTANCE = new DefaultGatewayNodeFunctionsImpl();
-
-    private DefaultGatewayNodeFunctionsImpl() {}
-
-  }
-  
-  public static class DefaultGatewayNodeFunctions {
-
-    private DefaultGatewayNodeFunctions() {}
 
   }
 
@@ -345,4 +314,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,TqJOLqIuQLipfO5KH0Whr2gpK6g=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,QR5U0EC6P/0AInAB3xJnSWyG9F8=] */

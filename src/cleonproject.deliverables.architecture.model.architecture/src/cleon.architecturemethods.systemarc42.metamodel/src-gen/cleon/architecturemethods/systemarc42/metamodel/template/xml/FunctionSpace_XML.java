@@ -180,31 +180,6 @@ public class FunctionSpace_XML {
 
   }
 
-  public static interface IDefaultGatewayNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("e08a979a-90da-11e9-b29b-f1077960b1fa")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface IDefaultGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DefaultGatewayNodeFunctionsImpl implements IDefaultGatewayNodeFunctionsImpl {
-
-    public static final IDefaultGatewayNodeFunctionsImpl INSTANCE = new DefaultGatewayNodeFunctionsImpl();
-
-    private DefaultGatewayNodeFunctionsImpl() {}
-
-  }
-  
-  public static class DefaultGatewayNodeFunctions {
-
-    private DefaultGatewayNodeFunctions() {}
-
-  }
-
   public static interface INamedNetworkNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f53b3933-90da-11e9-b29b-f1077960b1fa")
@@ -282,4 +257,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,bXct7UbCniuqxlzEe9AXoOmENS0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,BHV/GiS1hbU0V2TMuwFBcfmpW+w=] */

@@ -34,12 +34,10 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Network_AbstractLogicalNetwork = new Resource("d164d02f-7acd-11e9-a70f-4dc03941a024");
   public static final Resource FunctionSpace_aE_Network_AbstractNetworks = new Resource("e84bd910-7acd-11e9-a70f-4dc03941a024");
   public static final Resource AbstractGatewayNode = new Resource("de1fdb49-7b84-11e9-94aa-f1ea7ea33f46");
-  public static final Resource DefaultGatewayNode = new Resource("f2da8f90-7b84-11e9-94aa-f1ea7ea33f46");
   public static final Resource GatewayNode = new Resource("7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46");
   public static final Resource GatewayNode_nodeNo = new Resource("7f70bac5-7b8d-11e9-94aa-f1ea7ea33f46");
   public static final Resource FunctionSpace_aE_Network_AbstractNetworkNode = new Resource("bdf5a09e-7b97-11e9-94aa-f1ea7ea33f46");
   public static final Resource AbstractNetworkNode_exportDNSRecord = new Resource("75d652ad-3ea4-11ea-8cb4-0b006790b142");
-  public static final Resource FunctionSpace_aE_Network_DefaultGatewayNode = new Resource("4d8ce118-3ecc-11ea-9af7-ad5bf30c585a");
   public static final Resource FunctionSpace_aE_Network_GatewayNode = new Resource("5d8b6c2c-3ecc-11ea-9af7-ad5bf30c585a");
   public static final Resource FunctionSpace_aE_Network_NamedNetworkNode = new Resource("63c226cb-3ecc-11ea-9af7-ad5bf30c585a");
   public static final Resource NetworkSubZone_overrideVLAN = new Resource("a97bbeb9-4cf1-11ea-b2c1-57c8b0ec51b7");
@@ -64,4 +62,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,Mr6MPAudbR8B++kPN2GN7F5tvv4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.network.metamodel.spec,IxdbjB0UlG7xNmzQn4omwGzWGks=] */

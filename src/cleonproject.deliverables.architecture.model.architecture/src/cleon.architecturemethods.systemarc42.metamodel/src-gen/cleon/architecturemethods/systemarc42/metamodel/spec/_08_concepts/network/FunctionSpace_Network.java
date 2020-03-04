@@ -183,31 +183,6 @@ public class FunctionSpace_Network {
 
   }
 
-  public static interface IDefaultGatewayNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("bb161c9a-ca55-11e9-83b0-559396620907")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface IDefaultGatewayNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DefaultGatewayNodeFunctionsImpl implements IDefaultGatewayNodeFunctionsImpl {
-
-    public static final IDefaultGatewayNodeFunctionsImpl INSTANCE = new DefaultGatewayNodeFunctionsImpl();
-
-    private DefaultGatewayNodeFunctionsImpl() {}
-
-  }
-  
-  public static class DefaultGatewayNodeFunctions {
-
-    private DefaultGatewayNodeFunctions() {}
-
-  }
-
   public static interface IGatewayNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d345aafb-ca55-11e9-83b0-559396620907")
@@ -294,4 +269,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,eTm0kwawaLWu/Peq4Vx1NZHEPks=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,SXlQAe0S9KYBvQ0rG0RI7Mgwdk4=] */

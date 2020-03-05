@@ -124,7 +124,7 @@ public class FunctionSpace_SubzonePolicy {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : sourceSubZoneFunctions						
 						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
-						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
+						result.append("GRP-HOS-" + sysCfg.selectShortName() + "-" + hosts.selectName() + "-" +
 								sourceSubZone.selectVLAN_No());
 						result.append("\n");
 				}
@@ -132,7 +132,7 @@ public class FunctionSpace_SubzonePolicy {
 			else {
 				List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
 				for( ISystemConfiguration concreteSysCfg : hosts ) {
-					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectName() + "-" + sourceSubZone.selectVLAN_No());
+					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectShortName() + "-" + sourceSubZone.selectVLAN_No());
 					result.append("\n");					
 				}
 			}				
@@ -161,7 +161,7 @@ public class FunctionSpace_SubzonePolicy {
 			if (zoneFunctions.IsLocalOnly()) {
 				for (IAbstractSiteWithHosts hosts : destinationSubZoneFunctions
 						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {				
-						result.append("GRP-HOS-" + sysCfg.selectName() + "-" + hosts.selectName() + "-" +
+						result.append("GRP-HOS-" + sysCfg.selectShortName() + "-" + hosts.selectName() + "-" +
 								destinationSubZone.selectVLAN_No());
 						result.append(System.lineSeparator());
 				}
@@ -169,7 +169,7 @@ public class FunctionSpace_SubzonePolicy {
 			else {
 				List<ISystemConfiguration> hosts = destinationSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
 				for( ISystemConfiguration concreteSysCfg : hosts ) {
-					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectName() + "-" + destinationSubZone.selectVLAN_No());					
+					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfg.selectShortName() + "-" + destinationSubZone.selectVLAN_No());					
 					result.append(System.lineSeparator());					
 				}
 			}				

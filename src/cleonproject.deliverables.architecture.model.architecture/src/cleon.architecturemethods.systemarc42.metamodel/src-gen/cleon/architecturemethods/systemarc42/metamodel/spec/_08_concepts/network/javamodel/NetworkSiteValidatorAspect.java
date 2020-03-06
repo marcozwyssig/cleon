@@ -34,46 +34,46 @@ public class NetworkSiteValidatorAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
-		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		INetworkSite networkSite = resourceRepository.getResource(INetworkSite.class, validationContext.getResource());
-		INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);
-		int functionId = networkSiteFunctions.FunctionId();
-		if( functionId == 0) {
-			return;
-		}
-		
-		IIPv4_Mask cidr = networkSite.selectCidr();
-		if (cidr == null)
-			return;
-		
-		INetworkEnvironment networkEnvironment = NetworkEnvironment.selectToMeNetworkSite(networkSite);
-		IIPv4_Mask cidrEnvironment = networkEnvironment.selectCidr();
-		
-		int calcFunctionId = functionId / 32;
-		
-		StringTokenizer tok = new StringTokenizer(cidrEnvironment.selectIPv4(), ".");
-
-		if (tok.countTokens() != 4) {
-			throw new IllegalArgumentException("IP address must be in the format 'xxx.xxx.xxx.xxx'");
-		}
-		
-		tok.nextToken(); // skip first ip
-		int startsubnet = Integer.parseInt(tok.nextToken()); 
-		int calcsubnet = startsubnet + calcFunctionId;
-		
-
-		ArrayList<INetworkSubZone> toFixedList = new ArrayList<INetworkSubZone>();
-		
-		for( Resource subzone : networkSite.selectNetworkSubZone().keyIterable() ) {
-			for(INetworkSubZone networkSubzone : networkSite.selectNetworkSubZone().get(subzone)) {
-				int vlan = networkSubzone.selectSecuritySubZone().selectVLAN_No();
-				int calcVlan = vlan - 2000;
-				
-				
-			}
-			
-		}
+//		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+//		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+//		INetworkSite networkSite = resourceRepository.getResource(INetworkSite.class, validationContext.getResource());
+//		INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);
+//		int functionId = networkSiteFunctions.FunctionId();
+//		if( functionId == 0) {
+//			return;
+//		}
+//		
+//		IIPv4_Mask cidr = networkSite.selectCidr();
+//		if (cidr == null)
+//			return;
+//		
+//		INetworkEnvironment networkEnvironment = NetworkEnvironment.selectToMeNetworkSite(networkSite);
+//		IIPv4_Mask cidrEnvironment = networkEnvironment.selectCidr();
+//		
+//		int calcFunctionId = functionId / 32;
+//		
+//		StringTokenizer tok = new StringTokenizer(cidrEnvironment.selectIPv4(), ".");
+//
+//		if (tok.countTokens() != 4) {
+//			throw new IllegalArgumentException("IP address must be in the format 'xxx.xxx.xxx.xxx'");
+//		}
+//		
+//		tok.nextToken(); // skip first ip
+//		int startsubnet = Integer.parseInt(tok.nextToken()); 
+//		int calcsubnet = startsubnet + calcFunctionId;
+//		
+//
+//		ArrayList<INetworkSubZone> toFixedList = new ArrayList<INetworkSubZone>();
+//		
+//		for( Resource subzone : networkSite.selectNetworkSubZone().keyIterable() ) {
+//			for(INetworkSubZone networkSubzone : networkSite.selectNetworkSubZone().get(subzone)) {
+//				int vlan = networkSubzone.selectSecuritySubZone().selectVLAN_No();
+//				int calcVlan = vlan - 2000;
+//				
+//				
+//			}
+//			
+//		}
 		
 //
 //		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();

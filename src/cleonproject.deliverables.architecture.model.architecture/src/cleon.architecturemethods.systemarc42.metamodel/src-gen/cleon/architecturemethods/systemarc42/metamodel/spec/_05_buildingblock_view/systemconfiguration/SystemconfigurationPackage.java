@@ -7,7 +7,6 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfiguration = new Resource("27b9d0bc-020d-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WindowsSystemConfiguration = new Resource("bbce4593-021f-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_MasterActiveDirectorySystemConfiguration = new Resource("3562b171-0220-11e9-b327-17da2da63a8f");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_KontronServerSystemConfiguration = new Resource("8c5b636a-0296-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_HypervisorSystemConfiguration = new Resource("0184c8b1-02bb-11e9-9e58-33d596257b14");
   public static final Resource RadiusSystemConfiguration = new Resource("90d82cf6-02c5-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RadiusSystemConfiguration = new Resource("a1ad1b9d-02c5-11e9-9e58-33d596257b14");
@@ -19,7 +18,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_VCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
   public static final Resource TerminalServerSystemConfiguration = new Resource("94069046-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_TerminalServerSystemConfiguration = new Resource("abdbca02-02cd-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_HPEServerSystemConfiguration = new Resource("4ce9691e-02d7-11e9-9e58-33d596257b14");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_ServerSystemConfiguration = new Resource("4ce9691e-02d7-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_SlaveActiveDirectorySystemConfiguration = new Resource("0e5e8263-09eb-11e9-abef-3d869859c931");
   public static final Resource DhcpSystemConfiguration = new Resource("bf347ac8-09ec-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DhcpSystemConfiguration = new Resource("dccf5d95-09ec-11e9-abef-3d869859c931");
@@ -85,4 +84,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,qpr2SY+rLTEGruRAqtumQsoc9P8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,q+hE4guq6p+iXrtYrj22V4vpzSA=] */

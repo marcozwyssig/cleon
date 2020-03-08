@@ -138,40 +138,6 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IKontronServerSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("8c5b636d-0296-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("8c5b6370-0296-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("fa420e26-0ab2-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("fa420e29-0ab2-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface IKontronServerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class KontronServerSystemConfigurationFunctionsImpl implements IKontronServerSystemConfigurationFunctionsImpl {
-
-    public static final IKontronServerSystemConfigurationFunctionsImpl INSTANCE = new KontronServerSystemConfigurationFunctionsImpl();
-
-    private KontronServerSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class KontronServerSystemConfigurationFunctions {
-
-    private KontronServerSystemConfigurationFunctions() {}
-
-  }
-
   public static interface IRadiusSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4c3b9e8a-0ab3-11e9-a8f9-abf1763bbc53")
@@ -404,7 +370,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IHPEServerSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IServerSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4ce96921-02d7-11e9-9e58-33d596257b14")
     public java.lang.String GetType();
@@ -420,21 +386,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IHPEServerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class HPEServerSystemConfigurationFunctionsImpl implements IHPEServerSystemConfigurationFunctionsImpl {
+  public static class ServerSystemConfigurationFunctionsImpl implements IServerSystemConfigurationFunctionsImpl {
 
-    public static final IHPEServerSystemConfigurationFunctionsImpl INSTANCE = new HPEServerSystemConfigurationFunctionsImpl();
+    public static final IServerSystemConfigurationFunctionsImpl INSTANCE = new ServerSystemConfigurationFunctionsImpl();
 
-    private HPEServerSystemConfigurationFunctionsImpl() {}
+    private ServerSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class HPEServerSystemConfigurationFunctions {
+  public static class ServerSystemConfigurationFunctions {
 
-    private HPEServerSystemConfigurationFunctions() {}
+    private ServerSystemConfigurationFunctions() {}
 
   }
 
@@ -1145,4 +1111,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,1VuKeitAxP8YFZlWwkqE6wOEdco=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,TQT/j5Uz+6FFrf0N4+BOCvuPYJ0=] */

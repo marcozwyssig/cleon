@@ -3,6 +3,9 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="4ff1acb6-01d9-11e9-9c9d-8d52d6745026" type="resource" guid="4ff1859f-01d9-11e9-9c9d-8d52d6745026" />
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="59bd010d-612e-11ea-8ad9-5d11e5a1783b" type="resource" guid="59bc16a9-612e-11ea-8ad9-5d11e5a1783b" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c0436c01-d0b2-11e8-b005-f7630e4c29c0" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -37,6 +40,21 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c0436c02-d0b2-11e8-b005-f7630e4c29c0" type="literal">SystemComponent</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="59bd010d-612e-11ea-8ad9-5d11e5a1783b">
+      <resource guid="59bc16a9-612e-11ea-8ad9-5d11e5a1783b">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59bc16aa-612e-11ea-8ad9-5d11e5a1783b" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59bc16ab-612e-11ea-8ad9-5d11e5a1783b" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemComponentIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="59bc16ac-612e-11ea-8ad9-5d11e5a1783b" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
     <object statement-guid="b3669914-2a7f-11ea-8727-89a169c94892" type="literal">false</object>

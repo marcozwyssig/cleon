@@ -48,6 +48,9 @@ public class FunctionSpace_PlantUml {
     @IDynamicResourceExtension.MethodId("728bf04e-eaaf-11e8-88d3-bfc6b992bdec")
     public java.lang.String RenderUmlElement();
 
+    @IDynamicResourceExtension.MethodId("6484f9d3-61c1-11ea-b250-8d3b1d076722")
+    public java.lang.String OLD_RenderUmlElement();
+
   }
   
   public static interface ITechnicalContextDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -70,4 +73,4 @@ public class FunctionSpace_PlantUml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,99b9ae90-eaab-11e8-88d3-bfc6b992bdec,ZjeHqUQHhu0xIa9SnNm59ZE9DmQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,99b9ae90-eaab-11e8-88d3-bfc6b992bdec,AgZJ8jfp4CSwM4pib05R4h31Cgk=] */

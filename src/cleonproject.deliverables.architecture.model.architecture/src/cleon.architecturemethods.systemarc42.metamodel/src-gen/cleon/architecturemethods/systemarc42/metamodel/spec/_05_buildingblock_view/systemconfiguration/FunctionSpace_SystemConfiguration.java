@@ -26,9 +26,6 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("3364ecb7-021d-11e9-b327-17da2da63a8f")
     public java.lang.String GetName();
 
-    @IDynamicResourceExtension.MethodId("3d777d35-0ab5-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetStereotypeName();
-
     @IDynamicResourceExtension.MethodId("3d777d38-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
 
@@ -42,9 +39,6 @@ public class FunctionSpace_SystemConfiguration {
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("3d777d35-0ab5-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
-
     @IDynamicResourceExtension.MethodId("3d777d38-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
 
@@ -57,11 +51,6 @@ public class FunctionSpace_SystemConfiguration {
     private SystemConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      return null;
-    }
-
-    @Override
     public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
       return null;
     }
@@ -71,10 +60,6 @@ public class FunctionSpace_SystemConfiguration {
   public static class SystemConfigurationFunctions {
 
     private SystemConfigurationFunctions() {}
-
-    public static java.lang.String GetStereotypeName(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetStereotypeName(systemConfiguration);
-    }
 
     public static java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
       return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetIncludePath(systemConfiguration);
@@ -1111,4 +1096,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,TQT/j5Uz+6FFrf0N4+BOCvuPYJ0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,KHq1JWmszgMj3u7JRUr7A0juF7s=] */

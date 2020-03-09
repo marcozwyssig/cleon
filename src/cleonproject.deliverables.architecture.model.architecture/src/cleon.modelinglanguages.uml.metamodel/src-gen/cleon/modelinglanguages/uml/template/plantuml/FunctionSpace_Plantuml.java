@@ -35,6 +35,9 @@ public class FunctionSpace_Plantuml {
     @IDynamicResourceExtension.MethodId("b0c7655c-ddd9-11e9-bb03-150413ca6880")
     public java.lang.String FullFileName();
 
+    @IDynamicResourceExtension.MethodId("cd425b7a-61be-11ea-a72c-c14dab81a029")
+    public java.lang.String FullFileNameWithExtension();
+
     @IDynamicResourceExtension.MethodId("ce9f2a3b-ddd9-11e9-bb03-150413ca6880")
     public java.lang.String FileName();
 
@@ -59,12 +62,6 @@ public class FunctionSpace_Plantuml {
   }
 
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("7227f211-0aa6-11e9-b5db-cdf0b8dad9e4")
-    public java.lang.String GetIncludePath();
-
-    @IDynamicResourceExtension.MethodId("b5703850-0aa6-11e9-b5db-cdf0b8dad9e4")
-    public java.lang.String RenderAllIncludes();
 
     @IDynamicResourceExtension.MethodId("b719eee1-247e-11e9-a054-db6d80fba790")
     public java.lang.String RenderBuildingBlockName();
@@ -94,4 +91,4 @@ public class FunctionSpace_Plantuml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,haXBBCULKKz08iQgtUcZLEV2Fq0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4b45a8b9-fa3f-11e8-af47-e5bdd8100025,j10vNS6uqg9dWkUCze/VmzA4Mrg=] */

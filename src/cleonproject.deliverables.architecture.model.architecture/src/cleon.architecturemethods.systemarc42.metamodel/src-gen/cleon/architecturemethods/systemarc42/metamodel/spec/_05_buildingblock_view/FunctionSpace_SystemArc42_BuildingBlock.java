@@ -245,6 +245,31 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
 
   }
 
+  public static interface IAbstractSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9d441428-616f-11ea-a72c-c14dab81a029")
+    public java.lang.String GetStereotypeName();
+
+  }
+  
+  public static interface IAbstractSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSystemFunctionsImpl implements IAbstractSystemFunctionsImpl {
+
+    public static final IAbstractSystemFunctionsImpl INSTANCE = new AbstractSystemFunctionsImpl();
+
+    private AbstractSystemFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSystemFunctions {
+
+    private AbstractSystemFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,JWICqn2poO5y/AIEnewcMVxS5YQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,uG2j7Ey7ugPgGTB9kospmo/0Dbc=] */

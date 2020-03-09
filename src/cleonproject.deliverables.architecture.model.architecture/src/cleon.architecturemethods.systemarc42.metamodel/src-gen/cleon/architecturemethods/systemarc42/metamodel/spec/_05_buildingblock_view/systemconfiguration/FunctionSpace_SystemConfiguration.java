@@ -491,81 +491,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IVeeamBackupManagementSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("37bcd34a-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("37bcd34d-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("616320ce-0ab7-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("616320d1-0ab7-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface IVeeamBackupManagementSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class VeeamBackupManagementSystemConfigurationFunctionsImpl implements IVeeamBackupManagementSystemConfigurationFunctionsImpl {
-
-    public static final IVeeamBackupManagementSystemConfigurationFunctionsImpl INSTANCE = new VeeamBackupManagementSystemConfigurationFunctionsImpl();
-
-    private VeeamBackupManagementSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class VeeamBackupManagementSystemConfigurationFunctions {
-
-    private VeeamBackupManagementSystemConfigurationFunctions() {}
-
-  }
-
-  public static interface IVeeamBackupProxySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("9f8b1347-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("9f8b134a-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("5fe3d3ac-0ab7-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("5fe3d3af-0ab7-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetIncludePath();
-
-  }
-  
-  public static interface IVeeamBackupProxySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class VeeamBackupProxySystemConfigurationFunctionsImpl implements IVeeamBackupProxySystemConfigurationFunctionsImpl {
-
-    public static final IVeeamBackupProxySystemConfigurationFunctionsImpl INSTANCE = new VeeamBackupProxySystemConfigurationFunctionsImpl();
-
-    private VeeamBackupProxySystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class VeeamBackupProxySystemConfigurationFunctions {
-
-    private VeeamBackupProxySystemConfigurationFunctions() {}
-
-  }
-
-  public static interface IVeeamBackupRepositorySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("caba11f9-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("caba11fc-09f5-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
+  public static interface IBackupSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("3412f010-0ab7-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -575,21 +501,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IVeeamBackupRepositorySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBackupSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class VeeamBackupRepositorySystemConfigurationFunctionsImpl implements IVeeamBackupRepositorySystemConfigurationFunctionsImpl {
+  public static class BackupSystemConfigurationFunctionsImpl implements IBackupSystemConfigurationFunctionsImpl {
 
-    public static final IVeeamBackupRepositorySystemConfigurationFunctionsImpl INSTANCE = new VeeamBackupRepositorySystemConfigurationFunctionsImpl();
+    public static final IBackupSystemConfigurationFunctionsImpl INSTANCE = new BackupSystemConfigurationFunctionsImpl();
 
-    private VeeamBackupRepositorySystemConfigurationFunctionsImpl() {}
+    private BackupSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class VeeamBackupRepositorySystemConfigurationFunctions {
+  public static class BackupSystemConfigurationFunctions {
 
-    private VeeamBackupRepositorySystemConfigurationFunctions() {}
+    private BackupSystemConfigurationFunctions() {}
 
   }
 
@@ -1096,4 +1022,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,KHq1JWmszgMj3u7JRUr7A0juF7s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,Be7CZKnYAlb4ui5AP/q+lA4mxlw=] */

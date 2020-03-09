@@ -21,7 +21,7 @@ public class FunctionSpace_Segmentation_Docbook {
   public static interface ISegmentationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4047d49d-0d1e-11e9-be4f-03130cc057ef")
-    public java.lang.String RenderContentElement();
+    public java.lang.String Old_RenderContentElement();
 
   }
   
@@ -70,4 +70,4 @@ public class FunctionSpace_Segmentation_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1b62d92-0d00-11e9-be4f-03130cc057ef,oMzDtlUXaYJY5mB57oKBYzqMQtI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f1b62d92-0d00-11e9-be4f-03130cc057ef,tq8zk22Dyno0CJX/NK9GKkKS6ao=] */

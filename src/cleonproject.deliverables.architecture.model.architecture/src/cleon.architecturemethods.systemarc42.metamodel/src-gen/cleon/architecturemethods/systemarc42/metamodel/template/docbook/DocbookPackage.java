@@ -18,6 +18,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Security_RoleRootGroups = new Resource("009394bc-1e1c-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_BusinessContinuity_Availability = new Resource("5c9780f7-1e3a-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_BusinessContinuity_Backup = new Resource("8b0b0947-1e3f-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Docbook_aE_ItArc42_NetworkConcept = new Resource("d43c9d50-61d2-11ea-b3a7-2dbb30740ced");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +39,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,YP447fphVqYnbnLhoESKvxhK5Is=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,phs/cBk6ZCRflA316Qi7z5aPGWw=] */

@@ -13,6 +13,7 @@ public class PlantumlPackage {
   public static final Resource FunctionSpace_aE_Deployment_aE_Plantuml_Node = new Resource("8153a1ad-0e8d-11e9-9f19-6d15636f4ecc");
   public static final Resource FunctionSpace_aE_Deployment_aE_Plantuml_ServiceBuildNode = new Resource("b14c71b8-0e8f-11e9-9f19-6d15636f4ecc");
   public static final Resource FunctionSpace_aE_Segmentation_aE_PlantUml_SecurityZone = new Resource("4fa610e3-0eba-11e9-ab93-7d5aca01d5cb");
+  public static final Resource FunctionSpace_aE_Buildingblock_aE_PlantUml_BuildingBlock = new Resource("8bfd3f42-61c6-11ea-b250-8d3b1d076722");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class PlantumlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.plantuml,5rfZdPs6ltzMQonz4mho5E7ug+g=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.plantuml,SCH8G4WykgO4VjdaCjj9q1gym4I=] */

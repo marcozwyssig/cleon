@@ -23,10 +23,16 @@ public class FunctionSpace_Security {
     @IDynamicResourceExtension.MethodId("ffcbe63a-1e15-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("8b15e7c2-61cd-11ea-b3a7-2dbb30740ced")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("8b15e7c2-61cd-11ea-b3a7-2dbb30740ced")
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration);
+
   }
   
   public static class ActivitySystemConfigurationFunctionsImpl implements IActivitySystemConfigurationFunctionsImpl {
@@ -35,11 +41,20 @@ public class FunctionSpace_Security {
 
     private ActivitySystemConfigurationFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+      return null;
+    }
+
   }
   
   public static class ActivitySystemConfigurationFunctions {
 
     private ActivitySystemConfigurationFunctions() {}
+
+    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+      return DynamicResourceUtil.invoke(IActivitySystemConfigurationFunctionsImpl.class, ActivitySystemConfigurationFunctionsImpl.INSTANCE, activitySystemConfiguration).RenderChapters(activitySystemConfiguration);
+    }
 
   }
 
@@ -73,10 +88,16 @@ public class FunctionSpace_Security {
     @IDynamicResourceExtension.MethodId("fa35cae7-1e1b-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("2f696a13-61d4-11ea-b3a7-2dbb30740ced")
+    public java.lang.String RenderChapters();
+
   }
   
   public static interface IRoleActorGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("2f696a13-61d4-11ea-b3a7-2dbb30740ced")
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup);
+
   }
   
   public static class RoleActorGroupFunctionsImpl implements IRoleActorGroupFunctionsImpl {
@@ -85,11 +106,20 @@ public class FunctionSpace_Security {
 
     private RoleActorGroupFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
+      return null;
+    }
+
   }
   
   public static class RoleActorGroupFunctions {
 
     private RoleActorGroupFunctions() {}
+
+    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
+      return DynamicResourceUtil.invoke(IRoleActorGroupFunctionsImpl.class, RoleActorGroupFunctionsImpl.INSTANCE, roleActorGroup).RenderChapters(roleActorGroup);
+    }
 
   }
 
@@ -120,4 +150,4 @@ public class FunctionSpace_Security {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8db33913-1e0a-11e9-834d-77c41fccc6bf,HTrUPhNC9z/YFxARB6chS6FkPkA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8db33913-1e0a-11e9-834d-77c41fccc6bf,ikP9hbq4g6Xj78mrwQEfFiVIN9Q=] */

@@ -99,6 +99,31 @@ public class FunctionSpace_Buildingblock_PlantUml {
 
   }
 
+  public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8c01ac28-61c6-11ea-b250-8d3b1d076722")
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectDependencies();
+
+  }
+  
+  public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
+
+    public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
+
+    private BuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockFunctions {
+
+    private BuildingBlockFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,ite0fkD11hoPAwFFbBWnMGrRkgQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,5AVDKPlwHiynrSSBdFxmOQcGfbQ=] */

@@ -25,11 +25,9 @@ public class SystemconfigurationPackage {
   public static final Resource ActiveDirectoryManagerSystemConfiguration = new Resource("15f0d90d-09ef-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ActiveDirectoryManagerSystemConfiguration = new Resource("26eb7687-09ef-11e9-abef-3d869859c931");
   public static final Resource VeeamBackupManagementSystemConfiguration = new Resource("2d3d2542-09f5-11e9-abef-3d869859c931");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_VeeamBackupManagementSystemConfiguration = new Resource("37bcd347-09f5-11e9-abef-3d869859c931");
   public static final Resource VeeamBackupProxySystemConfiguration = new Resource("91e4a96c-09f5-11e9-abef-3d869859c931");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_VeeamBackupProxySystemConfiguration = new Resource("9f8b1344-09f5-11e9-abef-3d869859c931");
-  public static final Resource VeeamBackupRepositorySystemConfiguration = new Resource("bae618be-09f5-11e9-abef-3d869859c931");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_VeeamBackupRepositorySystemConfiguration = new Resource("caba11f6-09f5-11e9-abef-3d869859c931");
+  public static final Resource BackupSystemConfiguration = new Resource("bae618be-09f5-11e9-abef-3d869859c931");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_BackupSystemConfiguration = new Resource("caba11f6-09f5-11e9-abef-3d869859c931");
   public static final Resource ProxySystemConfiguration = new Resource("33b921a2-09fc-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ProxySystemConfiguration = new Resource("43f32f38-09fc-11e9-abef-3d869859c931");
   public static final Resource PulseSecureApplianceSystemConfiguration = new Resource("67e55025-0a7a-11e9-a59d-d7a0c53e291c");
@@ -84,4 +82,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,q+hE4guq6p+iXrtYrj22V4vpzSA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,XJmrgK6urbesbg+eIGC2Dvq1+rI=] */

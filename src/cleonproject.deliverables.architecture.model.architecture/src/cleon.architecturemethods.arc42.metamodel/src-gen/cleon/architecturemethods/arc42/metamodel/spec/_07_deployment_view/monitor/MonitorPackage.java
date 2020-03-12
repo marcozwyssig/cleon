@@ -4,10 +4,11 @@ import ch.actifsource.core.Resource;
 
 public class MonitorPackage {
   
-  public static final Resource SituationAnalysis = new Resource("8412f1bf-8990-11e8-8250-d9b67f7d5f7f");
-  public static final Resource SituationAnalysis_deploymentView = new Resource("0b2f34e3-8fd1-11e8-85d9-314ddfdf57eb");
-  public static final Resource SituationAnalysis_componentView = new Resource("2c14afd8-8fd1-11e8-85d9-314ddfdf57eb");
-  public static final Resource SituationAnalysis_monitoringView = new Resource("5c9fe6b1-8fd1-11e8-85d9-314ddfdf57eb");
+  public static final Resource MonitoringView = new Resource("034484ce-8993-11e8-8250-d9b67f7d5f7f");
+  public static final Resource AlarmingView = new Resource("0bbf19ba-8f32-11e8-90f3-6f51c1a0b373");
+  public static final Resource Alarm = new Resource("9844cd4e-8f33-11e8-90f3-6f51c1a0b373");
+  public static final Resource AlarmingView_alarms = new Resource("9c9d0458-8f33-11e8-90f3-6f51c1a0b373");
+  public static final Resource Alarm_monitoringComponent = new Resource("2f5c40f3-b811-11e8-b27b-312e5be91ffb");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class MonitorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor,OL9Dejr3oYyrurqeU/f0Ixt9NuA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor,FjElueu+DCt5RNtDs2UWRJKmyTU=] */

@@ -37,6 +37,8 @@ public interface IDeploymentView extends cleon.common.doc.metamodel.spec.chapter
   
   // relations
   
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.code.javamodel.ICodeView> selectSourceView();
+  
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IBuildView selectBuildView();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IPackageView selectPackageView();
@@ -49,4 +51,4 @@ public interface IDeploymentView extends cleon.common.doc.metamodel.spec.chapter
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,YAxG4RkcmxBUIhGh+B74rYjUYDU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,WsmsqYu1kmWyB6YZZD9lobQWT2Y=] */

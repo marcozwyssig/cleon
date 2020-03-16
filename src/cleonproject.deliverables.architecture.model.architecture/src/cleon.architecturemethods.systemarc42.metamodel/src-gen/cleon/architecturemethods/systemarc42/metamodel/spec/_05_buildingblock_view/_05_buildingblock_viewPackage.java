@@ -41,6 +41,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemWithSystemComponent = new Resource("cb55af14-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource NamedSystemWithSystemComponent = new Resource("e8941a6b-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlock_AbstractSystem = new Resource("a271ea42-616f-11ea-a72c-c14dab81a029");
+  public static final Resource SystemConfiguration_overrideShortName = new Resource("8d4c184a-678f-11ea-b072-516c5e04c87a");
   
   /* Begin Protected Region [[user]] */
   
@@ -61,4 +62,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,DiQIfE2mHjC5wS5uFDzxXbSjuLQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,VUipXX4XL2ngd4FCk95k/X7pkhM=] */

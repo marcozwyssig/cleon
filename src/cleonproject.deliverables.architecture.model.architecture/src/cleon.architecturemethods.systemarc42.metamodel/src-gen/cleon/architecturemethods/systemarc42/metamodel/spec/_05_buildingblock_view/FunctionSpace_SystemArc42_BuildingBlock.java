@@ -183,6 +183,9 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
     @IDynamicResourceExtension.MethodId("492b3b22-14d9-11ea-a57d-f9a0d62ee07e")
     public java.lang.Boolean DependsOnWindows();
 
+    @IDynamicResourceExtension.MethodId("cc7b2d08-678f-11ea-b072-516c5e04c87a")
+    public java.lang.String TypeName();
+
   }
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -272,4 +275,4 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,uG2j7Ey7ugPgGTB9kospmo/0Dbc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,Af57d+qwsJCxa5slz89m7ti3LQ0=] */

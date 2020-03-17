@@ -61,11 +61,11 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunications selectCommunication() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunications.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView selectCommunication() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication);
   }
 
-  public SystemRuntimeView setCommunication(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunications communication) {
+  public SystemRuntimeView setCommunication(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView communication) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication, communication);
     return this;
   }
@@ -77,6 +77,16 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
 
   public SystemRuntimeView setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView selectInteraction() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_interaction);
+  }
+
+  public SystemRuntimeView setInteraction(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView interaction) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_interaction, interaction);
     return this;
   }
     
@@ -106,16 +116,21 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunications.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_interaction, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.javamodel.ISystemRuntimeView selectToMeCommunication(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunications object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.javamodel.ISystemRuntimeView selectToMeCommunication(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.javamodel.ISystemRuntimeView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.javamodel.ISystemRuntimeView selectToMeInteraction(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.javamodel.ISystemRuntimeView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_interaction, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,1etSrJztzziCgBLdjmp2yIiek1M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,yMwbRqmRjL2KXmNwdYoGQ3PXzoM=] */

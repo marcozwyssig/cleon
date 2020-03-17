@@ -6,6 +6,7 @@ public class _06_runtime_viewPackage {
   
   public static final Resource SystemRuntimeView_communication = new Resource("8069f1f7-8779-11e9-a61b-279ebde48b48");
   public static final Resource SystemRuntimeView = new Resource("a5c76a26-480f-11ea-8815-a3c0ce8e776e");
+  public static final Resource SystemRuntimeView_interaction = new Resource("336d0fde-6827-11ea-94e8-6d7d386ab4e1");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class _06_runtime_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view,BAl2b2sWrjJ6f3afyRO1a6NbnZ4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view,UmPege9qMhgwKMROu0h9srE085M=] */

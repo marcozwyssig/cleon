@@ -40,6 +40,7 @@ public class SpecPackage {
   public static final Resource FunctionSpace_aE_Segmentation_SecurityZone = new Resource("35a3f4a4-a961-11e9-bf83-7bacdb6991f7");
   public static final Resource FunctionSpace_aE_Segmentation_NetDomainZone = new Resource("e568768e-b9d2-11e9-828c-091526d036b6");
   public static final Resource SecuritySubZone_mask = new Resource("556d25a3-f625-11e9-882b-7b3dd7e5bc17");
+  public static final Resource SecuritySubZone_export = new Resource("deb1ca21-6913-11ea-bc2c-91c30a68f7c3");
   
   /* Begin Protected Region [[user]] */
   
@@ -60,4 +61,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,ipu3/aAiULw903TSUPwFrwzAKkQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.segmentation.metamodel.spec,iQ08Q04cJJsmhyjd62neolXXMxg=] */

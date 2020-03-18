@@ -9,8 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[49bf1abf-0b79-11e9-a136-69d076e48ed1,imports]] */
 import cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone;
-
-
 import java.util.stream.Collectors;
 
 /* End Protected Region   [[49bf1abf-0b79-11e9-a136-69d076e48ed1,imports]] */
@@ -35,6 +33,9 @@ public class FunctionSpace_Segmentation {
 
     @IDynamicResourceExtension.MethodId("a38fa265-0d1e-11e9-be4f-03130cc057ef")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.IZone> GetAllChildrenZone();
+
+    @IDynamicResourceExtension.MethodId("b186e30d-6918-11ea-bc2c-91c30a68f7c3")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> GetAllChildrenSubzone();
 
     @IDynamicResourceExtension.MethodId("efab4698-0d1e-11e9-be4f-03130cc057ef")
     public List<cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification> GetAllClassifications();
@@ -87,10 +88,16 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("0badd696-0d1f-11e9-be4f-03130cc057ef")
     public List<cleon.common.resources.metamodel.spec.confidentiality.javamodel.IClassification> GetAllClassifications();
 
+    @IDynamicResourceExtension.MethodId("d79ec6ec-6918-11ea-bc2c-91c30a68f7c3")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport();
+
   }
   
   public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("d79ec6ec-6918-11ea-bc2c-91c30a68f7c3")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList);
+
   }
   
   public static class SecuritySubZoneFunctionsImpl implements ISecuritySubZoneFunctionsImpl {
@@ -99,11 +106,22 @@ public class FunctionSpace_Segmentation {
 
     private SecuritySubZoneFunctionsImpl() {}
 
+    @Override
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList) {
+      /* Begin Protected Region [[d79ec6ec-6918-11ea-bc2c-91c30a68f7c3]] */
+    	return securitySubZoneList.stream().filter(x -> x.selectExport() == null || x.selectExport().booleanValue() ).collect(Collectors.toList());
+      /* End Protected Region   [[d79ec6ec-6918-11ea-bc2c-91c30a68f7c3]] */
+    }
+
   }
   
   public static class SecuritySubZoneFunctions {
 
     private SecuritySubZoneFunctions() {}
+
+    public static List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport(final List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> securitySubZoneList) {
+      return DynamicResourceUtil.invoke(ISecuritySubZoneFunctionsImpl.class, SecuritySubZoneFunctionsImpl.INSTANCE, securitySubZoneList).OnlyExport(securitySubZoneList);
+    }
 
   }
 
@@ -337,4 +355,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,NYYj9rMquT0EfK4MQ5xQ5FJTt3Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,CmhItdkiUg73SXXooByd+i9Uw+w=] */

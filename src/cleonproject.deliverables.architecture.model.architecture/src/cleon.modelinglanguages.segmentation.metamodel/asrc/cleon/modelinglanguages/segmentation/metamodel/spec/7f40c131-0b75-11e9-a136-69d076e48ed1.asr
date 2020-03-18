@@ -34,6 +34,7 @@
       </owns>
     </resource>
     <resource statement-guid="556efa66-f625-11e9-882b-7b3dd7e5bc17" type="resource" guid="556d25a3-f625-11e9-882b-7b3dd7e5bc17" />
+    <resource statement-guid="deb302a4-6913-11ea-bc2c-91c30a68f7c3" type="resource" guid="deb1ca21-6913-11ea-bc2c-91c30a68f7c3" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="37a0eac0-0b81-11e9-a136-69d076e48ed1" type="resource" guid="37a0eabc-0b81-11e9-a136-69d076e48ed1">
@@ -269,6 +270,28 @@
         </predicate>
         <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
           <object statement-guid="6d2717c8-3630-11ea-b5c2-e3e297a45d39" type="literal">Size of the network (32-1)</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="deb302a4-6913-11ea-bc2c-91c30a68f7c3">
+      <resource guid="deb1ca21-6913-11ea-bc2c-91c30a68f7c3">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="deb21843-6913-11ea-bc2c-91c30a68f7c3" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="e16c7d32-6913-11ea-bc2c-91c30a68f7c3" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="df633fb1-6913-11ea-bc2c-91c30a68f7c3" type="literal">export</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="25680d6c-6914-11ea-bc2c-91c30a68f7c3" type="literal">true</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="deb41415-6913-11ea-bc2c-91c30a68f7c3" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="e7241cb3-6913-11ea-bc2c-91c30a68f7c3" type="literal">Export the subzone information. Default that it will be exported.</object>
         </predicate>
       </resource>
     </object>

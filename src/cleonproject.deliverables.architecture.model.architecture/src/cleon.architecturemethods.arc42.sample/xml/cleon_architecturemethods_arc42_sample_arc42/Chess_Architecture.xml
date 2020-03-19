@@ -21,6 +21,7 @@
 			
 			
 			
+			<db:para>In der nachfolgenden Tabelle werden die geltenden Betrachtungsräume der Anforderungen aufgeführt:</db:para>  
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%" />
 				<db:col width="60%" />
@@ -33,7 +34,7 @@
 				<db:tbody>
 					<db:tr>
 						<db:td>
-							<db:para>SU01_Funktionalit&#228;t</db:para>
+							<db:para>SU-01_Funktionalit&#228;t</db:para>
 						</db:td>
 						<db:td>
 						</db:td>
@@ -193,7 +194,7 @@
 			
 			<db:mediaobject>
 				<db:imageobject>
-					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Fachliches_Kontext_Diagramm.puml.png" format="PNG"/>
+					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Fachliches_Kontext_Diagramm.png" format="PNG"/>
 				</db:imageobject>
 			 	<db:caption>
 			    		<db:para>Fachliches Kontext Diagramm</db:para>
@@ -316,7 +317,7 @@
 			
 			<db:mediaobject>
 				<db:imageobject>
-					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Technisches_Kontext_Diagramm.puml.png" format="PNG"/>
+					<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/Technisches_Kontext_Diagramm.png" format="PNG"/>
 				</db:imageobject>
 			 	<db:caption>
 			    		<db:para>Technisches Kontext Diagramm</db:para>
@@ -339,130 +340,10 @@
 						</db:td>
 						<db:td>
 							<db:para>dsfasdf</db:para>
-						</db:td>
+						</db:td>		
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>
-			<db:section>
-				<db:title>Schnittstellen</db:title>	
-				<db:para>Die nachfolgende Tabelle beschreibt die Schnittstellen des Systems und der Nachbarsysteme:</db:para>
-			<db:informaltable style="HERMES 5">
-					<db:col width="20%" />
-					<db:col width="20%" />
-					<db:col width="30%" />
-					<db:col width="15%" />		
-					<db:col width="15%" />
-					<db:thead>
-						<db:tr>
-							<db:th>System</db:th>
-							<db:th>Schnittstelle (Port-Provider)</db:th>
-							<db:th>Beschreibung</db:th>
-							<db:th>Format</db:th>
-							<db:th>Protokoll</db:th>				
-						</db:tr>
-					</db:thead>
-					<db:tbody>			
-						<db:tr>
-							<db:td>
-								<db:para>FTP</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP_1 Port</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>	
-						<db:tr>
-							<db:td>
-								<db:para>Chess</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Chess_1 Port</db:para>
-							</db:td>
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>
-							<db:td>
-							</db:td>
-						</db:tr>	
-					</db:tbody>
-				</db:informaltable>	
-			</db:section>
-			<db:section>
-				<db:title>Kommunikationsflüsse</db:title>	
-				<db:para>Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen den Systemen:</db:para>
-			<db:informaltable style="HERMES 5">
-					<db:col width="15%" />
-					<db:col width="15%" />
-					<db:col width="15%" />
-					<db:col width="15%" />		
-					<db:col width="40%" />			
-					<db:thead>
-						<db:tr>
-							<db:th>Von</db:th>
-							<db:th>Zu</db:th>
-							<db:th>Interaktion</db:th>
-							<db:th>Schnittstelle</db:th>				
-							<db:th>Beschreibung</db:th>									
-						</db:tr>
-					</db:thead>
-					<db:tbody>			
-						<db:tr>
-							<db:td>
-								<db:para>Chess</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP_1</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP_1 Port</db:para>
-							</db:td>				
-							<db:td>
-							</db:td>
-						</db:tr>	
-						<db:tr>
-							<db:td>
-								<db:para>Chess</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP_2</db:para>
-							</db:td>
-							<db:td>
-								<db:para>FTP_1 Port</db:para>
-							</db:td>				
-							<db:td>
-							</db:td>
-						</db:tr>	
-						<db:tr>
-							<db:td>
-								<db:para>FTP</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Chess</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Chess_1</db:para>
-							</db:td>
-							<db:td>
-								<db:para>Chess_1 Port</db:para>
-							</db:td>				
-							<db:td>
-							</db:td>
-						</db:tr>	
-					</db:tbody>
-				</db:informaltable>
-			</db:section>
 			
 		</db:section>
 	</db:chapter>
@@ -526,15 +407,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1 beschrieben.</db:para>
 					<db:section xml:id="ea.9241f9dd-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -576,15 +449,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2 beschrieben.</db:para>
 					<db:section xml:id="ea.68787e68-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -633,15 +498,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3 beschrieben.</db:para>
 					<db:section xml:id="ea.75df20cf-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -697,15 +554,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2 beschrieben.</db:para>
 					<db:section xml:id="ea.932ec9e2-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -760,15 +609,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2_2 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test2_2 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test2_2 beschrieben.</db:para>
 					<db:section xml:id="ea.a5226e60-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -818,15 +659,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test3_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test3_1 beschrieben.</db:para>
 					<db:section xml:id="ea.849d8b1c-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -888,15 +721,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1 beschrieben.</db:para>
 					<db:section xml:id="ea.815c69d1-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -984,15 +809,7 @@
 					
 					
 					
-					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1_1 beschrieben. Die Beschreibung umfasst folgende Eigenschaften:</db:para>
-					<db:itemizedlist>
-						<db:listitem>
-							<db:para>Horizontale/Vertikale Abhängigkeiten des Bausteins Test1_2_1_1 zu anderen Bausteinen (in beide Richtungen)</db:para>
-						</db:listitem>
-						<db:listitem>
-							<db:para>Erfüllte Anforderungen</db:para>
-						</db:listitem>
-					</db:itemizedlist>
+					<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1_2_1_1 beschrieben.</db:para>
 					<db:section xml:id="ea.a8b420b4-0df0-11e9-a28e-8b950dcca323">
 						<db:title>Abh&#228;ngigkeiten</db:title>
 						
@@ -1234,7 +1051,7 @@
 		
 		
 		<db:section xml:id="ea.886baa13-ee58-11e8-9756-27a593be2ffb">
-			<db:title>SU01_Funktionalit&#228;t</db:title>
+			<db:title>SU-01_Funktionalit&#228;t</db:title>
 			
 			
 			
@@ -1321,7 +1138,7 @@
 									<db:para>Formale Definition</db:para>
 									<db:itemizedlist>
 										<db:listitem>
-											<db:para>Das System muss f&#228;hig sein Rezepte drucken</db:para>													
+											<db:para>Das System muss f&#228;hig sein, Rezepte drucken</db:para>													
 										</db:listitem>
 									</db:itemizedlist>
 								</db:listitem>																			
@@ -1356,7 +1173,7 @@
 									<db:para>Formale Definition</db:para>
 									<db:itemizedlist>
 										<db:listitem>
-											<db:para>Das System muss f&#228;hig sein Rezepte auszudrucken</db:para>													
+											<db:para>Das System muss f&#228;hig sein, Rezepte auszudrucken</db:para>													
 										</db:listitem>
 									</db:itemizedlist>
 								</db:listitem>																			

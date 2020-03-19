@@ -101,9 +101,8 @@ skinparam monochrome true
 skinparam componentStyle uml2
 component FTP as "FTP" <<ExternalSystem>>
 component Chess as "Chess" <<SoftwareSystem>>
-FTP --> Chess : "Chess_1"
-Chess --> FTP : "FTP_1"
-Chess --> FTP : "FTP_2"
+FTP --> Chess : "verwendet"
+Chess --> FTP : "verwendet"
 ...
 
 In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 

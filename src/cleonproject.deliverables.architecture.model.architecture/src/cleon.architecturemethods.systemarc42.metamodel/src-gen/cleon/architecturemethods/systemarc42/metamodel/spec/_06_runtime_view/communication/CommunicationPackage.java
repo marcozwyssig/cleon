@@ -42,6 +42,7 @@ public class CommunicationPackage {
   public static final Resource ImplementedState = new Resource("979efb64-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource ImplementedState_refnNo = new Resource("9c1716bd-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource UndefinedImplementationState = new Resource("e19a0a43-0c5a-11ea-af20-c193d8bcdd26");
+  public static final Resource SourceSubSecurityZone_onlyCommunicatesWith = new Resource("6ab91243-69cc-11ea-89d6-375d99542010");
   
   /* Begin Protected Region [[user]] */
   
@@ -62,4 +63,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,c4kEJnADvvyfaaNDT8AthjTSd4k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,Dbm/dUtUqNpbXEAQGuhinZeC2+A=] */

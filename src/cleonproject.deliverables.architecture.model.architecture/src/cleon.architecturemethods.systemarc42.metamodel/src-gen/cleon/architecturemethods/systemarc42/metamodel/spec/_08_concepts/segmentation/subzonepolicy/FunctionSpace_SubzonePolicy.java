@@ -99,7 +99,7 @@ public class FunctionSpace_SubzonePolicy {
 				.selectToMeHasCommunicationFrom(source);
 		return subZoneAccessPolicyList.stream()
 				.filter(x -> x.selectPolicyForSecuritySubZone()
-						.equals(destinationSubSecurityZone.selectUsedInterface().selectInterfaceInSecuritySubZone())
+						.equals(destinationSubSecurityZone.selectInInterface().selectInterfaceInSecuritySubZone())
 						&& configurationFunctions.GetSubzonesAllDependsFromWithSelf().contains(
 								SourceSubZone.selectToMeTargetSubZonePolicy(x).selectSourceSecuritySubZone()))
 				.collect(Collectors.toList());

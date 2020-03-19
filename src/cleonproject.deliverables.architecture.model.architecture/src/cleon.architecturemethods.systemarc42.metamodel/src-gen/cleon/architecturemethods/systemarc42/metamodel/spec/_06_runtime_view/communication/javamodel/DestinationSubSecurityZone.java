@@ -41,6 +41,16 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface selectInInterface() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface);
+  }
+
+  public DestinationSubSecurityZone setInInterface(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface inInterface) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, inInterface);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IResource selectTarget() {
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
@@ -60,29 +70,19 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
     return this;
   }
     
-  @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface selectUsedInterface() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_usedInterface);
-  }
-
-  public DestinationSubSecurityZone setUsedInterface(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface usedInterface) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_usedInterface, usedInterface);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_hasCommunicationFrom, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_usedInterface, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone> selectToMeUsedInterface(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_usedInterface, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone> selectToMeInInterface(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.DestinationSubSecurityZone_inInterface, object.getResource());
   }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone selectToMeHasCommunicationFrom(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource object) {
@@ -90,4 +90,4 @@ public class DestinationSubSecurityZone extends DynamicResource implements IDest
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,V4dvw2I0VO1qf/0eJva+VRKeNik=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c509b70-b218-11e9-b89e-1728aee30149,EHuw8m0hVhcIUH1TlbBQOLq6bmo=] */

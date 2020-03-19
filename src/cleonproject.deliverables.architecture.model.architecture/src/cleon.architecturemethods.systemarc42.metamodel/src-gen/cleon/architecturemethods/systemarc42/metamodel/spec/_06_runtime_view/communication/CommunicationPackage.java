@@ -19,7 +19,7 @@ public class CommunicationPackage {
   public static final Resource FunctionSpace_aE_Communication_Source = new Resource("85af8931-88e6-11e9-9b22-1b5fbbd90cc8");
   public static final Resource FunctionSpace_aE_Communication_SystemConfiguration = new Resource("c955b123-88e7-11e9-9b22-1b5fbbd90cc8");
   public static final Resource DestinationSubSecurityZone = new Resource("2c509b70-b218-11e9-b89e-1728aee30149");
-  public static final Resource DestinationSubSecurityZone_usedInterface = new Resource("4763c211-b218-11e9-b89e-1728aee30149");
+  public static final Resource DestinationSubSecurityZone_inInterface = new Resource("4763c211-b218-11e9-b89e-1728aee30149");
   public static final Resource SourceSubSecurityZone = new Resource("70b3c6f7-b218-11e9-b89e-1728aee30149");
   public static final Resource Source_accessAllowed = new Resource("7cb0edcb-b218-11e9-b89e-1728aee30149");
   public static final Resource SourceSubSecurityZone_subZoneAccessPolicy = new Resource("8d2238b2-b218-11e9-b89e-1728aee30149");
@@ -63,4 +63,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,Dbm/dUtUqNpbXEAQGuhinZeC2+A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,AXh3V5vZ3zzzDQSWSv81JK55x9A=] */

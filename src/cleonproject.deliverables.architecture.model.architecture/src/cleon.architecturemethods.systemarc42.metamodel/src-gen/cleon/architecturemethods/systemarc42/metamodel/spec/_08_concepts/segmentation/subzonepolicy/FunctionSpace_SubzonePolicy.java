@@ -101,7 +101,7 @@ public class FunctionSpace_SubzonePolicy {
 				.filter(x -> x.selectPolicyForSecuritySubZone()
 						.equals(destinationSubSecurityZone.selectInInterface().selectInterfaceInSecuritySubZone())
 						&& configurationFunctions.GetSubzonesAllDependsFromWithSelf().contains(
-								SourceSubZone.selectToMeTargetSubZonePolicy(x).selectSourceSecuritySubZone()))
+								SourceSubZone.selectToMeDestinationSubZonePolicy(x).selectSourceSecuritySubZone()))
 				.collect(Collectors.toList());
    
       /* End Protected Region   [[672a5ec2-b9e5-11e9-828c-091526d036b6]] */
@@ -110,7 +110,7 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String RenderSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
       /* Begin Protected Region [[99918128-0a07-11ea-baed-218c3e076b56]] */
-		ISecuritySubZone sourceSubZone = SourceSubZone.selectToMeTargetSubZonePolicy(subZoneAccessPolicy)
+		ISecuritySubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy)
 				.selectSourceSecuritySubZone();
 		
 		ISecuritySubZoneFunctions sourceSubZoneFunctions = sourceSubZone.extension(ISecuritySubZoneFunctions.class);

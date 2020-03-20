@@ -19,7 +19,7 @@ public class SubZoneAccessPolicyValidationAspect  implements IResourceValidation
 		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		ISubZoneAccessPolicy subZoneAccessPolicy = resourceRepository.getResource(ISubZoneAccessPolicy.class, validationContext.getResource());
-		ISourceSubZone sourceSubZone = SourceSubZone.selectToMeTargetSubZonePolicy(subZoneAccessPolicy);
+		ISourceSubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy);
 
 		ISubZoneAccessPolicyFunctions functions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
 		if( sourceSubZone.selectSourceSecuritySubZone().equals(subZoneAccessPolicy.selectPolicyForSecuritySubZone())) {
@@ -28,7 +28,7 @@ public class SubZoneAccessPolicyValidationAspect  implements IResourceValidation
 		
 		if( !functions.HasSources() ) {
 			
-			Statement targetSubZone = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), SubzonepolicyPackage.SourceSubZone_targetSubZonePolicy, SourceSubZone.selectToMeTargetSubZonePolicy(subZoneAccessPolicy).getResource());
+			Statement targetSubZone = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy).getResource());
 			validationList.add(new SingleStatementInconsistency(targetSubZone, String.format("no communication to this subzone")));
 		}
 		

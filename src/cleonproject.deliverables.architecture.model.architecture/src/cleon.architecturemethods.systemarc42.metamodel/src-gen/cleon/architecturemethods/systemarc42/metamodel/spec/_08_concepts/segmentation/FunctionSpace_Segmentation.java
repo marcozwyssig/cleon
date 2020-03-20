@@ -169,7 +169,7 @@ public class FunctionSpace_Segmentation {
     		return "R";
     	}
     	
-    	ISubZoneAccessPolicy accesspolicy = sourceSubZone.selectTargetSubZonePolicy().get(securitySubZone.getResource());
+    	ISubZoneAccessPolicy accesspolicy = sourceSubZone.selectDestinationSubZonePolicy().get(securitySubZone.getResource());
     	if( accesspolicy == null) {
     		return "R";
     	}

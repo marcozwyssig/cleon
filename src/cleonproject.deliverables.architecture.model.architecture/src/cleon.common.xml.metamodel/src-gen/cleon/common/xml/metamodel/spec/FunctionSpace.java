@@ -14,7 +14,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 public class FunctionSpace {
 
   /* Begin Protected Region [[37550eeb-f2bd-11e5-8010-7b34e2b59618]] */
-  
+
   /* End Protected Region   [[37550eeb-f2bd-11e5-8010-7b34e2b59618]] */
 
 
@@ -41,23 +41,36 @@ public class FunctionSpace {
     @Override
     public java.lang.String escapeXml(final java.lang.String textLiteral) {
       /* Begin Protected Region [[891e4724-3767-11e5-95d9-2b04d7ab02d9]] */
-  	   StringBuilder sb = new StringBuilder();
-  	   for(int i = 0; i < textLiteral.length(); i++){
-  	      char c = textLiteral.charAt(i);
-  	      switch(c){
-  	      case '<': sb.append("&lt;"); break;
-  	      case '>': sb.append("&gt;"); break;
-  	      case '\"': sb.append("&quot;"); break;
-  	      case '&': sb.append("&amp;"); break;
-  	      case '\'': sb.append("&apos;"); break;
-  	      default:
-  	         if(c>0x7e) {
-  	            sb.append("&#"+((int)c)+";");
-  	         }else
-  	            sb.append(c);
-  	      }
-  	   }
-  	   return sb.toString();    
+      if (textLiteral == null) {
+      	return null;
+      }
+      StringBuilder sb = new StringBuilder();
+      for (int i = 0; i < textLiteral.length(); i++) {
+      	char c = textLiteral.charAt(i);
+      	switch (c) {
+      	case '<':
+      		sb.append("&lt;");
+      		break;
+      	case '>':
+      		sb.append("&gt;");
+      		break;
+      	case '\"':
+      		sb.append("&quot;");
+      		break;
+      	case '&':
+      		sb.append("&amp;");
+      		break;
+      	case '\'':
+      		sb.append("&apos;");
+      		break;
+      	default:
+      		if (c > 0x7e) {
+      			sb.append("&#" + ((int) c) + ";");
+      		} else
+      			sb.append(c);
+      	}
+      }
+      return sb.toString();
       /* End Protected Region   [[891e4724-3767-11e5-95d9-2b04d7ab02d9]] */
     }
 
@@ -102,20 +115,16 @@ public class FunctionSpace {
     @Override
     public java.lang.String sanitizeFileName(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
-    	return stringLiteral
-    			.chars()
-    			.mapToObj(i -> (char) i)
-    			.map(c -> Character.isWhitespace(c) ? '_' : c)
-    			.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_')
-    			.map(String::valueOf)
-    			.collect(java.util.stream.Collectors.joining());
+      return stringLiteral.chars().mapToObj(i -> (char) i).map(c -> Character.isWhitespace(c) ? '_' : c)
+      		.filter(c -> Character.isLetterOrDigit(c) || c == '-' || c == '_').map(String::valueOf)
+      		.collect(java.util.stream.Collectors.joining());
       /* End Protected Region   [[cfe377c2-39ab-11e5-ae84-4f300f079f41]] */
     }
 
     @Override
     public java.lang.String escapeXml(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[28b063d0-2c90-11e6-8dd6-23b9a87b3ebd]] */
-      return TextLiteralFunctionsImpl.INSTANCE.escapeXml(stringLiteral); 
+      return TextLiteralFunctionsImpl.INSTANCE.escapeXml(stringLiteral);
       /* End Protected Region   [[28b063d0-2c90-11e6-8dd6-23b9a87b3ebd]] */
     }
 

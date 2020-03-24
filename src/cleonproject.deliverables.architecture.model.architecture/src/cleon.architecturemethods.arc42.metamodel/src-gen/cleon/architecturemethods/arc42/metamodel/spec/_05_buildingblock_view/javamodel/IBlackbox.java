@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.ja
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.resources.metamodel.spec.descriptions.javamodel.INoDescription, cleon.common.doc.metamodel.spec.chapter.javamodel.INoParagraph {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("d58842b6-2858-11e8-9af4-b7d7a3bbddc1");
   
@@ -18,4 +18,4 @@ public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,W75eH831dwMCZ8nSvjnM979DQkQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,LdqSNmSHl43NPzE4XIv/WojYX4E=] */

@@ -12,7 +12,7 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.javamodel.ISegmentationConcept selectSegmentationConcept();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept selectQosConcept();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept selectQosConcept();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectSecurityConcept();
   
@@ -24,4 +24,4 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,a5NAyNiZVsrZ17zrFI+QTwRD51U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,ffhgCxIAwkHTQepaYVmkqa2Tl68=] */

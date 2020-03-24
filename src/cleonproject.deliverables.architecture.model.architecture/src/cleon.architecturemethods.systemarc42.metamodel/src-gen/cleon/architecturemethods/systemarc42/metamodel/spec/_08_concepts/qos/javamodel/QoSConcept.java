@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class QoS_Concept extends DynamicResource implements IQoS_Concept {
+public class QoSConcept extends DynamicResource implements IQoSConcept {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQoS_Concept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQoS_Concept>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQoSConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQoSConcept>() {
     
     @Override
-    public IQoS_Concept create() {
-      return new QoS_Concept();
+    public IQoSConcept create() {
+      return new QoSConcept();
     }
     
     @Override
-    public IQoS_Concept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new QoS_Concept(resourceRepository, resource);
+    public IQoSConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new QoSConcept(resourceRepository, resource);
     }
   
   };
 
-  public QoS_Concept() {
-    super(IQoS_Concept.TYPE_ID);
+  public QoSConcept() {
+    super(IQoSConcept.TYPE_ID);
   }
   
-  public QoS_Concept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IQoS_Concept.TYPE_ID);
+  public QoSConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IQoSConcept.TYPE_ID);
   }
 
   // attributes
@@ -64,7 +64,7 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public QoS_Concept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public QoSConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -74,7 +74,7 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public QoS_Concept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public QoSConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -84,18 +84,18 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public QoS_Concept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public QoSConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
   @Override
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept> selectQosConfigurationConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoS_aE_Concept_qosConfigurationConcept);
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSConcept_qosConfigurationConcept);
   }
 
-  public QoS_Concept setQosConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept> qosConfigurationConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoS_aE_Concept_qosConfigurationConcept, qosConfigurationConcept);
+  public QoSConcept setQosConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept> qosConfigurationConcept) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSConcept_qosConfigurationConcept, qosConfigurationConcept);
     return this;
   }
     
@@ -104,7 +104,7 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemConfigurationComponent_systemConfigurationConcept);
   }
 
-  public QoS_Concept setSystemConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConfigurationComponentConcept> systemConfigurationConcept) {
+  public QoSConcept setSystemConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConfigurationComponentConcept> systemConfigurationConcept) {
     _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemConfigurationComponent_systemConfigurationConcept, systemConfigurationConcept);
     return this;
   }
@@ -114,7 +114,7 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public QoS_Concept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public QoSConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -127,15 +127,15 @@ public class QoS_Concept extends DynamicResource implements IQoS_Concept {
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoS_aE_Concept_qosConfigurationConcept, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSConcept_qosConfigurationConcept, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept selectToMeQosConfigurationConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoS_aE_Concept_qosConfigurationConcept, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept selectToMeQosConfigurationConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSConcept_qosConfigurationConcept, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,xvyMsj7d3dv1Nq9EqLkqeoJV/zI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,hxVAAPHEP+HArG7sTp68OSqxRR8=] */

@@ -101,11 +101,11 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept selectQosConcept() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept selectQosConcept() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept);
   }
 
-  public SystemConcepts setQosConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept qosConcept) {
+  public SystemConcepts setQosConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qosConcept) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept, qosConcept);
     return this;
   }
@@ -169,7 +169,7 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.javamodel.IBusinessContinuityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_businessContinuityConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_networkConcept, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_securityConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_segmentationConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IServices.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_serviceConcept, visitor);
@@ -187,7 +187,7 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_segmentationConcept, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcepts selectToMeQosConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoS_Concept object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcepts selectToMeQosConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemConcepts.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcepts_qosConcept, object.getResource());
   }
   
@@ -208,4 +208,4 @@ public class SystemConcepts extends DynamicResource implements ISystemConcepts {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,Ob2u3Xs3p/Qw1R43TE0rdc4imHI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,xv3H3+/NmO6EjiY/CKFykKu3L8g=] */

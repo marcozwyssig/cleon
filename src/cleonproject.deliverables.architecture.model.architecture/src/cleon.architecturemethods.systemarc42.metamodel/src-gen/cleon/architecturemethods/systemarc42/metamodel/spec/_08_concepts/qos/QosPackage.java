@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class QosPackage {
   
-  public static final Resource QoS_aE_Concept = new Resource("a4426fd0-f2e5-11e8-b860-9fc163e21388");
+  public static final Resource QoSConcept = new Resource("a4426fd0-f2e5-11e8-b860-9fc163e21388");
   public static final Resource QoSConfigurationComponentConcept = new Resource("39818d2e-1d88-11e9-b601-db75aa6f89a4");
-  public static final Resource QoS_aE_Concept_qosConfigurationConcept = new Resource("40dbb91f-1d88-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSConcept_qosConfigurationConcept = new Resource("40dbb91f-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource QoSConfigurationComponentConcept_estimate_aE_KBits = new Resource("613e47f8-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource QoSConfigurationComponentConcept_estimateMean_aE_KBits = new Resource("74eae68a-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass = new Resource("af43badb-1d88-11e9-b601-db75aa6f89a4");
@@ -45,4 +45,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,N5Tj8Kd9WJzWwaEiow9vtId/FOo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,wdqIrgvjc1cifWgQsMCmB98gNcM=] */

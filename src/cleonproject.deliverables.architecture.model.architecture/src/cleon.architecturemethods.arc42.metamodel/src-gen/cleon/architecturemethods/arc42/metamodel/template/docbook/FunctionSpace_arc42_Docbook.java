@@ -357,9 +357,6 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IBlackboxFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("78f21b45-0207-11e9-9c9d-8d52d6745026")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependency> HasDependencies();
-
     @IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da")
     public java.lang.String RenderContentElement();
 
@@ -510,4 +507,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,PILYQIKXkB91FeqWezBpbuXk6l4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Zdtqqoy1h+QaYzcOfpsYbReqvRI=] */

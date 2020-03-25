@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
-
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorResponsibility;
 /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
 
 public class FunctionSpace_SystemArc42_Docbook {
@@ -322,12 +322,18 @@ public class FunctionSpace_SystemArc42_Docbook {
     @IDynamicResourceExtension.MethodId("2f696a13-61d4-11ea-b3a7-2dbb30740ced")
     public java.lang.String RenderChapters();
 
+    @IDynamicResourceExtension.MethodId("0a09741d-6e97-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.Integer Count();
+
   }
   
   public static interface IRoleActorGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2f696a13-61d4-11ea-b3a7-2dbb30740ced")
     public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup);
+
+    @IDynamicResourceExtension.MethodId("0a09741d-6e97-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup);
 
   }
   
@@ -342,6 +348,17 @@ public class FunctionSpace_SystemArc42_Docbook {
       return null;
     }
 
+    @Override
+    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
+      /* Begin Protected Region [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
+    	int count = 0;
+    	for(IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
+    		count += actorResponsibility.selectRolesForSystemComponents().values().size();
+    	}
+    	return count;  
+      /* End Protected Region   [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
+    }
+
   }
   
   public static class RoleActorGroupFunctions {
@@ -350,6 +367,10 @@ public class FunctionSpace_SystemArc42_Docbook {
 
     public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
       return DynamicResourceUtil.invoke(IRoleActorGroupFunctionsImpl.class, RoleActorGroupFunctionsImpl.INSTANCE, roleActorGroup).RenderChapters(roleActorGroup);
+    }
+
+    public static java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
+      return DynamicResourceUtil.invoke(IRoleActorGroupFunctionsImpl.class, RoleActorGroupFunctionsImpl.INSTANCE, roleActorGroup).Count(roleActorGroup);
     }
 
   }
@@ -507,6 +528,56 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
+  public static interface IRBACFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("acf274f1-6e93-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface IRBACFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RBACFunctionsImpl implements IRBACFunctionsImpl {
+
+    public static final IRBACFunctionsImpl INSTANCE = new RBACFunctionsImpl();
+
+    private RBACFunctionsImpl() {}
+
+  }
+  
+  public static class RBACFunctions {
+
+    private RBACFunctions() {}
+
+  }
+
+  public static interface IAbstractNetdomainGroupFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4ebcf47f-6e95-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAbstractNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractNetdomainGroupFunctionsImpl implements IAbstractNetdomainGroupFunctionsImpl {
+
+    public static final IAbstractNetdomainGroupFunctionsImpl INSTANCE = new AbstractNetdomainGroupFunctionsImpl();
+
+    private AbstractNetdomainGroupFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractNetdomainGroupFunctions {
+
+    private AbstractNetdomainGroupFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,QDAB/7+dHIFD2obws1tfpCSNX7c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,sG4ON2f/NMI9wy6fjOve3HTxypY=] */

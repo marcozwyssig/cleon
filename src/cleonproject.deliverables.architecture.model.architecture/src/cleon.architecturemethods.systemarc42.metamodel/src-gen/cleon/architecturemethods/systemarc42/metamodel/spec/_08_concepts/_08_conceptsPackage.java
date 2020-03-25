@@ -22,6 +22,7 @@ public class _08_conceptsPackage {
   public static final Resource SystemConcepts_securityConcept = new Resource("5500c686-71a4-11e9-98e0-2719d32d2629");
   public static final Resource SystemConcepts_businessContinuityConcept = new Resource("5c37162e-71a4-11e9-98e0-2719d32d2629");
   public static final Resource SystemConcepts_topologyConcept = new Resource("21841958-878b-11e9-a61b-279ebde48b48");
+  public static final Resource SystemConcepts_deploymentConcept = new Resource("1f1a260c-6eb3-11ea-b8e8-f1a46e0c42f7");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class _08_conceptsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,Bq0mkejOZRlJa/Jtyri0i5xoRN8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,laTBf5ZId9hkz4nLiy0nP+hbG7o=] */

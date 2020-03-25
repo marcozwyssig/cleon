@@ -21,6 +21,8 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_SystemArc42_aE_Docbook_Zone = new Resource("559ece0f-6e6e-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_Docbook_AbstractPhysicalNetwork = new Resource("69e428fc-6e84-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_Docbook_AbstractLogicalNetwork = new Resource("901d9717-6e87-11ea-b8e8-f1a46e0c42f7");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_Docbook_RBAC = new Resource("a74e36a7-6e93-11ea-b8e8-f1a46e0c42f7");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_Docbook_AbstractNetdomainGroup = new Resource("445b2d81-6e95-11ea-b8e8-f1a46e0c42f7");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +43,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,WJOOkJMXEi6I7hmoGh/Z89W7jG4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,p2wDhwQLTsIkTLWoHX8+P2ApcuA=] */

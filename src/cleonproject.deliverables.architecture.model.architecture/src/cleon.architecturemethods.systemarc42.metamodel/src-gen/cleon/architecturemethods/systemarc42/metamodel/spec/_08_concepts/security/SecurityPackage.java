@@ -6,8 +6,9 @@ public class SecurityPackage {
   
   public static final Resource SecurityConcept = new Resource("9515e875-0eae-11e9-9f19-6d15636f4ecc");
   public static final Resource AbstractSecurityConcept = new Resource("ea49ca18-1d59-11e9-bba4-1d5db4cb1d61");
-  public static final Resource SecurityConcept_rbac = new Resource("1fe0a9c6-1d5a-11e9-bba4-1d5db4cb1d61");
   public static final Resource SecurityConcept_realm = new Resource("26749fa5-1d5a-11e9-bba4-1d5db4cb1d61");
+  public static final Resource SecurityConcept_chapters = new Resource("4d6d20ae-6e8e-11ea-b8e8-f1a46e0c42f7");
+  public static final Resource SecurityConcept_rbac = new Resource("f716f6d2-6e8e-11ea-b8e8-f1a46e0c42f7");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class SecurityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security,tiL7Jv+3if9HF8J0cYIWI+zOyoY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security,Qe4eepzVroPRYcJvab7590Ux/KI=] */

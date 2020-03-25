@@ -9,6 +9,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2ef7e101-7aca-11e9-a70f-4dc03941a024,imports]] */
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.*;
+import cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork;
+import java.util.ArrayList;
 /* End Protected Region   [[2ef7e101-7aca-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
@@ -26,10 +28,19 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("8c46e672-7aca-11e9-a70f-4dc03941a024")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange GetIPRange();
 
+    @IDynamicResourceExtension.MethodId("e8f74219-6e87-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> OnlyWithNodes();
+
+    @IDynamicResourceExtension.MethodId("ae237bf5-6e88-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork> GetAllPhysicalNetworks();
+
   }
   
   public static interface IAbstractNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("e8f74219-6e87-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> OnlyWithNodes(final List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> abstractNetworkList);
+
   }
   
   public static class AbstractNetworkFunctionsImpl implements IAbstractNetworkFunctionsImpl {
@@ -38,11 +49,29 @@ public class FunctionSpace_Network {
 
     private AbstractNetworkFunctionsImpl() {}
 
+    @Override
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> OnlyWithNodes(final List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> abstractNetworkList) {
+      /* Begin Protected Region [[e8f74219-6e87-11ea-b8e8-f1a46e0c42f7]] */
+    	ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> list = new ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork>();
+    	for( IAbstractNetwork network : abstractNetworkList ) {
+    		boolean anyMatch = network.extension(IAbstractNetworkFunctions.class).GetAllPhysicalNetworks().stream().anyMatch(x-> (!x.selectNodes().values().isEmpty()));
+    		if( anyMatch ) {
+    			list.add(network);
+    		}    		
+    	}
+    	return list;   
+      /* End Protected Region   [[e8f74219-6e87-11ea-b8e8-f1a46e0c42f7]] */
+    }
+
   }
   
   public static class AbstractNetworkFunctions {
 
     private AbstractNetworkFunctions() {}
+
+    public static List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> OnlyWithNodes(final List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> abstractNetworkList) {
+      return DynamicResourceUtil.invoke(IAbstractNetworkFunctionsImpl.class, AbstractNetworkFunctionsImpl.INSTANCE, abstractNetworkList).OnlyWithNodes(abstractNetworkList);
+    }
 
   }
 
@@ -59,6 +88,9 @@ public class FunctionSpace_Network {
 
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
+
+    @IDynamicResourceExtension.MethodId("e7d5af53-6e88-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork> GetAllPhysicalNetworks();
 
   }
   
@@ -133,6 +165,9 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("fdfe289e-7acc-11e9-a70f-4dc03941a024")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkAware> GetParents();
 
+    @IDynamicResourceExtension.MethodId("00bbe456-6e89-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork> GetAllPhysicalNetworks();
+
   }
   
   public static interface IAbstractNetworkAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -157,6 +192,9 @@ public class FunctionSpace_Network {
 
     @IDynamicResourceExtension.MethodId("d5cce544-7acd-11e9-a70f-4dc03941a024")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkAware> GetParents();
+
+    @IDynamicResourceExtension.MethodId("0463e90b-6e8a-11ea-b8e8-f1a46e0c42f7")
+    public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork> GetAllPhysicalNetworks();
 
   }
   
@@ -314,4 +352,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,QR5U0EC6P/0AInAB3xJnSWyG9F8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,1joHtcUnwO8a1QZ8P4Jf4EX4q0s=] */

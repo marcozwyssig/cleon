@@ -18,28 +18,28 @@ public class FunctionSpace_RBAC {
   /* End Protected Region   [[189e1c41-1e07-11e9-834d-77c41fccc6bf]] */
 
 
-  public static interface IRBACFunctions extends IDynamicResourceExtension {
+  public static interface IEnvironmentRBACFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2f538e63-1e07-11e9-834d-77c41fccc6bf")
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetArc42_Document();
 
   }
   
-  public static interface IRBACFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IEnvironmentRBACFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RBACFunctionsImpl implements IRBACFunctionsImpl {
+  public static class EnvironmentRBACFunctionsImpl implements IEnvironmentRBACFunctionsImpl {
 
-    public static final IRBACFunctionsImpl INSTANCE = new RBACFunctionsImpl();
+    public static final IEnvironmentRBACFunctionsImpl INSTANCE = new EnvironmentRBACFunctionsImpl();
 
-    private RBACFunctionsImpl() {}
+    private EnvironmentRBACFunctionsImpl() {}
 
   }
   
-  public static class RBACFunctions {
+  public static class EnvironmentRBACFunctions {
 
-    private RBACFunctions() {}
+    private EnvironmentRBACFunctions() {}
 
   }
 
@@ -132,7 +132,7 @@ public class FunctionSpace_RBAC {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractGroup> GetParents();
 
     @IDynamicResourceExtension.MethodId("9755ee05-1e0d-11e9-865e-41ef48a95f70")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC GetRBAC();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC GetRBAC();
 
     @IDynamicResourceExtension.MethodId("0d13ebb7-7f19-11e9-9a52-07d4b074defc")
     public java.lang.Integer GetNetdomainId();
@@ -291,4 +291,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,3jMiWVshkUD26d/4GdHFbZ6gFok=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,JhQo6WD1LS2Id50KDsP+rLrVcks=] */

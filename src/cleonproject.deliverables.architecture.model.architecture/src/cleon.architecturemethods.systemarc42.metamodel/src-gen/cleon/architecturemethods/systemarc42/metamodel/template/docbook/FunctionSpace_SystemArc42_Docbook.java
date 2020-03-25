@@ -40,43 +40,6 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
-  public static interface INetworkConceptFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("d97e499e-61d2-11ea-b3a7-2dbb30740ced")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface INetworkConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("d97e499e-61d2-11ea-b3a7-2dbb30740ced")
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept networkConcept);
-
-  }
-  
-  public static class NetworkConceptFunctionsImpl implements INetworkConceptFunctionsImpl {
-
-    public static final INetworkConceptFunctionsImpl INSTANCE = new NetworkConceptFunctionsImpl();
-
-    private NetworkConceptFunctionsImpl() {}
-
-    @Override
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept networkConcept) {
-      return null;
-    }
-
-  }
-  
-  public static class NetworkConceptFunctions {
-
-    private NetworkConceptFunctions() {}
-
-    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept networkConcept) {
-      return DynamicResourceUtil.invoke(INetworkConceptFunctionsImpl.class, NetworkConceptFunctionsImpl.INSTANCE, networkConcept).RenderChapters(networkConcept);
-    }
-
-  }
-
   public static interface IAvailabilityFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6005307c-1e3a-11e9-865e-41ef48a95f70")
@@ -416,31 +379,6 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
-  public static interface ISegmentationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4047d49d-0d1e-11e9-be4f-03130cc057ef")
-    public java.lang.String Old_RenderContentElement();
-
-  }
-  
-  public static interface ISegmentationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SegmentationFunctionsImpl implements ISegmentationFunctionsImpl {
-
-    public static final ISegmentationFunctionsImpl INSTANCE = new SegmentationFunctionsImpl();
-
-    private SegmentationFunctionsImpl() {}
-
-  }
-  
-  public static class SegmentationFunctions {
-
-    private SegmentationFunctions() {}
-
-  }
-
   public static interface ISegmentationConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("eb430c4c-0e21-11e9-8b4c-f9aec93d8b56")
@@ -466,6 +404,109 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
+  public static interface IDestinationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5de412e9-6df3-11ea-ab3c-05911d3796c8")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDestinationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DestinationFunctionsImpl implements IDestinationFunctionsImpl {
+
+    public static final IDestinationFunctionsImpl INSTANCE = new DestinationFunctionsImpl();
+
+    private DestinationFunctionsImpl() {}
+
+  }
+  
+  public static class DestinationFunctions {
+
+    private DestinationFunctions() {}
+
+  }
+
+  public static interface IZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("99621024-6e6e-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.String RenderChapters();
+
+    @IDynamicResourceExtension.MethodId("4047d49d-0d1e-11e9-be4f-03130cc057ef")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ZoneFunctionsImpl implements IZoneFunctionsImpl {
+
+    public static final IZoneFunctionsImpl INSTANCE = new ZoneFunctionsImpl();
+
+    private ZoneFunctionsImpl() {}
+
+  }
+  
+  public static class ZoneFunctions {
+
+    private ZoneFunctions() {}
+
+  }
+
+  public static interface IAbstractPhysicalNetworkFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("765c9a86-6e84-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractPhysicalNetworkFunctionsImpl implements IAbstractPhysicalNetworkFunctionsImpl {
+
+    public static final IAbstractPhysicalNetworkFunctionsImpl INSTANCE = new AbstractPhysicalNetworkFunctionsImpl();
+
+    private AbstractPhysicalNetworkFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractPhysicalNetworkFunctions {
+
+    private AbstractPhysicalNetworkFunctions() {}
+
+  }
+
+  public static interface IAbstractLogicalNetworkFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9e732d10-6e87-11ea-b8e8-f1a46e0c42f7")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IAbstractLogicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractLogicalNetworkFunctionsImpl implements IAbstractLogicalNetworkFunctionsImpl {
+
+    public static final IAbstractLogicalNetworkFunctionsImpl INSTANCE = new AbstractLogicalNetworkFunctionsImpl();
+
+    private AbstractLogicalNetworkFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractLogicalNetworkFunctions {
+
+    private AbstractLogicalNetworkFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,JuYLXuJBiJixpjrHGvchOUT6qJ4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,QDAB/7+dHIFD2obws1tfpCSNX7c=] */

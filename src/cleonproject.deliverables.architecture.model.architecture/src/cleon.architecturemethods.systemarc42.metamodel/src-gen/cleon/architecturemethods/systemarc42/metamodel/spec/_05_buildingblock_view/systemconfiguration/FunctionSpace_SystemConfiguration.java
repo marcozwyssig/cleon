@@ -153,12 +153,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IVirtualMachineSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("39f8e143-02c7-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("39f8e146-02c7-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("c76fde5e-0ab0-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
 
@@ -186,12 +180,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IWebServerConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("ac6a40b2-02c8-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("ac6a40b5-02c8-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("1f2e4d83-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
@@ -221,12 +209,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IPublicKeyInfrastructureSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("d56b0d06-02cb-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("d56b0d09-02cb-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("3769eb0c-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
 
@@ -254,12 +236,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IRootCASystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("e4bf4ec0-02cb-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("e4bf4ec3-02cb-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("48364d16-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
@@ -289,12 +265,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IVCenterSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("abd4ba7e-02cc-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("abd4ba81-02cc-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("589b9409-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -322,12 +292,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface ITerminalServerSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("abdbca05-02cd-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("abdbca08-02cd-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("15257583-0ab7-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -357,12 +321,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IServerSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("4ce96921-02d7-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("4ce96924-02d7-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("df5a2044-0ab3-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -390,12 +348,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface ISlaveActiveDirectorySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("0e5e8266-09eb-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("0e5e8269-09eb-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("7d9b94f0-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -425,12 +377,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IDhcpSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("dccf5d98-09ec-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("dccf5d9b-09ec-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("de7c629f-0ab6-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -458,12 +404,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IActiveDirectoryManagerSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("26eb768a-09ef-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("26eb768d-09ef-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("b3bdcfa3-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -521,12 +461,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IProxySystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("43f32f3b-09fc-11e9-abef-3d869859c931")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("43f32f3e-09fc-11e9-abef-3d869859c931")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("68b117ae-0ab7-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -554,12 +488,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IPulseSecureApplianceSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("78a8fff2-0a7a-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("78a8fff5-0a7a-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("fb5abe9a-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -589,12 +517,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IRSASystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("27b5a1d8-0a7f-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("27b5a1db-0a7f-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("4263c138-0ab6-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -622,12 +544,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IEndpointProtectionOrchestrationSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3dd00cc9-0a7f-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("3dd00ccc-0a7f-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("ef39c673-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -657,12 +573,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IDfsSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("402db23d-0a87-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("402db240-0a87-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("dd61e744-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -690,12 +600,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("0e1f8f25-0a88-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("0e1f8f28-0a88-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("9ec6e000-0ab6-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -725,12 +629,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IPrtgSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("606be97d-0a8a-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("606be980-0a8a-11e9-a59d-d7a0c53e291c")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("99f06ed7-0ab5-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
@@ -758,12 +656,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IPrtgProbeSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("1d7e3f72-0c2f-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("1d7e3f75-0c2f-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("1d7e3f78-0c2f-11e9-83ba-4d57b06560a2")
     public java.lang.String GetStereotypeName();
@@ -793,12 +685,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IConfigurationManagementSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("ae187c3d-0c39-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("ae187c40-0c39-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("ae187c43-0c39-11e9-83ba-4d57b06560a2")
     public java.lang.String GetStereotypeName();
 
@@ -826,12 +712,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IRepositorySystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("2f23ea84-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("2f23ea87-0c3a-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("2f23ea8a-0c3a-11e9-83ba-4d57b06560a2")
     public java.lang.String GetStereotypeName();
@@ -861,12 +741,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface IRedhatSatelliteSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("f5bc9b12-0c3c-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("f5bc9b15-0c3c-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("f5bc9b18-0c3c-11e9-83ba-4d57b06560a2")
     public java.lang.String GetStereotypeName();
 
@@ -894,12 +768,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IWsusSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("bb8c67d8-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("bb8c67db-0c3d-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("bb8c67de-0c3d-11e9-83ba-4d57b06560a2")
     public java.lang.String GetStereotypeName();
@@ -929,12 +797,6 @@ public class FunctionSpace_SystemConfiguration {
 
   public static interface ILinuxSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("82aabb22-1d8a-11e9-b601-db75aa6f89a4")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("82aabb25-1d8a-11e9-b601-db75aa6f89a4")
-    public java.lang.String GetName();
-
     @IDynamicResourceExtension.MethodId("82aabb28-1d8a-11e9-b601-db75aa6f89a4")
     public java.lang.String GetStereotypeName();
 
@@ -962,12 +824,6 @@ public class FunctionSpace_SystemConfiguration {
   }
 
   public static interface IHypervisorSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("0184c8b4-02bb-11e9-9e58-33d596257b14")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("0184c8b7-02bb-11e9-9e58-33d596257b14")
-    public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("10d2b9cc-0ab3-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -1022,4 +878,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,Be7CZKnYAlb4ui5AP/q+lA4mxlw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,NdZeYHa/wEZe3t9D8w24RVTfrmw=] */

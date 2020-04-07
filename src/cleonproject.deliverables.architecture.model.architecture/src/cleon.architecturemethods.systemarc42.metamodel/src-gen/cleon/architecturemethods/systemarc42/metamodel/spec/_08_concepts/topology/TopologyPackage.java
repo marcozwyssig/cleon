@@ -13,7 +13,7 @@ public class TopologyPackage {
   public static final Resource AbstractHost_instanceOf = new Resource("7c6b2ebe-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractNumberedHost_number = new Resource("bccd44a8-9287-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractSiteWithZone_owner = new Resource("dbfb2465-9287-11e9-959e-8115c2f9e41e");
-  public static final Resource AbstractSiteWithZone_zone = new Resource("eb2fa145-928a-11e9-959e-8115c2f9e41e");
+  public static final Resource AbstractSiteWithZone_zones = new Resource("eb2fa145-928a-11e9-959e-8115c2f9e41e");
   public static final Resource TDM = new Resource("d18bebe1-92b3-11e9-b2b4-f340ae70802c");
   public static final Resource RN = new Resource("3615fdfa-936d-11e9-8139-e76b19cfb4bf");
   public static final Resource TN_hss = new Resource("3ecfe174-936d-11e9-8139-e76b19cfb4bf");
@@ -80,4 +80,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,WD1gY+WwGiaYBTqkJtyBD7Ix7JE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,7IEMOZWdnKCqBILCStxluXpFSfY=] */

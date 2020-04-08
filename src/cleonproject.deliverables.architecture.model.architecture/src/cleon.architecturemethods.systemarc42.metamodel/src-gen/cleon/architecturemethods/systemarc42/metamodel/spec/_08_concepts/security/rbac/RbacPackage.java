@@ -30,6 +30,7 @@ public class RbacPackage {
   public static final Resource FunctionSpace_aE_RBAC_AbstractRootGroups = new Resource("d730cab5-0172-11ea-83fa-05ea5175f4aa");
   public static final Resource RBAC = new Resource("9db33409-6e8e-11ea-b8e8-f1a46e0c42f7");
   public static final Resource RBAC_chapters = new Resource("a3a0780b-6e90-11ea-b8e8-f1a46e0c42f7");
+  public static final Resource EnvironmentRBAC_master = new Resource("22e8782a-78dc-11ea-a009-ab381ce86597");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +51,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,FnTw/r6sFJG0soMfKombdt4eLdc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,HFskTYkS6AtFTDTbtnHTM7ihKFQ=] */

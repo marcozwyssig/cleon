@@ -8,6 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[189e1c41-1e07-11e9-834d-77c41fccc6bf,imports]] */
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorResponsibility;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleNetDomainGroup;
 
 /* End Protected Region   [[189e1c41-1e07-11e9-834d-77c41fccc6bf,imports]] */
 
@@ -23,10 +26,16 @@ public class FunctionSpace_RBAC {
     @IDynamicResourceExtension.MethodId("2f538e63-1e07-11e9-834d-77c41fccc6bf")
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverableAware GetArc42_Document();
 
+    @IDynamicResourceExtension.MethodId("f29d2896-78de-11ea-a009-ab381ce86597")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent);
+
   }
   
   public static interface IEnvironmentRBACFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("f29d2896-78de-11ea-a009-ab381ce86597")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC);
+
   }
   
   public static class EnvironmentRBACFunctionsImpl implements IEnvironmentRBACFunctionsImpl {
@@ -35,11 +44,36 @@ public class FunctionSpace_RBAC {
 
     private EnvironmentRBACFunctionsImpl() {}
 
+    @Override
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC) {
+      /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
+    	IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().get(site.getResource());
+    	if(roleNetDomainGroup == null) {
+    		return null;
+    	}
+    	
+    	IRoleActorGroup roleActorGroup = roleNetDomainGroup.selectRoleforActors().get(actor.getResource());
+    	if( roleActorGroup == null ) {
+    		return null;
+    	}
+    	
+    	IRoleActorResponsibility roleActorResponsiblity = roleActorGroup.selectRoleActorResponsibilities().get(responsibilty.getResource());
+    	if( roleActorResponsiblity == null ) {
+    		return null;
+    	}
+		return roleActorResponsiblity.selectRolesForSystemComponents().get(systemComponent.getResource());   
+      /* End Protected Region   [[f29d2896-78de-11ea-a009-ab381ce86597]] */
+    }
+
   }
   
   public static class EnvironmentRBACFunctions {
 
     private EnvironmentRBACFunctions() {}
+
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC) {
+      return DynamicResourceUtil.invoke(IEnvironmentRBACFunctionsImpl.class, EnvironmentRBACFunctionsImpl.INSTANCE, environmentRBAC).GetRoleSystemComponent(site, actor, responsibilty, systemComponent, environmentRBAC);
+    }
 
   }
 
@@ -291,4 +325,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,JhQo6WD1LS2Id50KDsP+rLrVcks=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,l+ZabEvtc2CLG0tSV8SNVrz+AKg=] */

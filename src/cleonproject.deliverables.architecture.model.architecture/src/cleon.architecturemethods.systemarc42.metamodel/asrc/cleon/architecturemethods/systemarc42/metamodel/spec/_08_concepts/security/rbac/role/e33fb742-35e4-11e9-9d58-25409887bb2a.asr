@@ -90,6 +90,7 @@
     <resource statement-guid="df6c51af-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="df6bdc7b-c5ae-11e9-9daa-cf9f9f7341e8" />
     <resource statement-guid="eef97ddb-c5ae-11e9-9daa-cf9f9f7341e8" type="resource" guid="eef97dd7-c5ae-11e9-9daa-cf9f9f7341e8" />
     <resource statement-guid="3f6f3b15-d853-11e9-8923-0d6897579abc" type="resource" guid="3f6e77c1-d853-11e9-8923-0d6897579abc" />
+    <resource statement-guid="5be0c00e-78de-11ea-a009-ab381ce86597" type="resource" guid="5be04ada-78de-11ea-a009-ab381ce86597" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="e33fb744-35e4-11e9-9d58-25409887bb2a" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -433,6 +434,19 @@
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="3f6e9ed4-d853-11e9-8923-0d6897579abc" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5be0c00e-78de-11ea-a009-ab381ce86597">
+      <resource guid="5be04ada-78de-11ea-a009-ab381ce86597">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5be04adc-78de-11ea-a009-ab381ce86597" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5f853715-78de-11ea-a009-ab381ce86597" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.RoleSystemComponentIdenticalIdLikeMasterValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5be098fd-78de-11ea-a009-ab381ce86597" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

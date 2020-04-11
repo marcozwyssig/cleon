@@ -384,6 +384,7 @@
 								<db:para>Test1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d4d497dd-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -391,6 +392,7 @@
 								<db:para>Test2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.d81b37a9-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 						<db:tr>
@@ -398,6 +400,7 @@
 								<db:para>Test3 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.da8d9684-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -426,17 +429,18 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Test2 -> Test1</db:para>
+										<db:para>Von Test2 zu Test1</db:para>
 									</db:td>
 									<db:td>
+										<db:para>Der Test2 Baustein verwendet den Test1 Baustein.</db:para>
 									</db:td>
 								</db:tr>
 							</db:tbody>
-						</db:informaltable>	
+						</db:informaltable>
 						
 					</db:section>
 					<db:section xml:id="ea.9d89b2c1-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -468,24 +472,26 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Test2 -> Test1_2_1</db:para>
+										<db:para>Von Test2 zu Test1_2_1</db:para>
 									</db:td>
 									<db:td>
+										<db:para>Der Test2 Baustein verwendet den Test1_2_1 Baustein.</db:para>
 									</db:td>
 								</db:tr>
 								<db:tr>
 									<db:td>
-										<db:para>Test2 -> Test1</db:para>
+										<db:para>Von Test2 zu Test1</db:para>
 									</db:td>
 									<db:td>
+										<db:para>Der Test2 Baustein verwendet den Test1 Baustein.</db:para>
 									</db:td>
 								</db:tr>
 							</db:tbody>
-						</db:informaltable>	
+						</db:informaltable>
 						
 					</db:section>
 					<db:section xml:id="ea.6a82cd52-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -508,7 +514,7 @@
 						
 					</db:section>
 					<db:section xml:id="ea.7516799a-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -544,6 +550,7 @@
 								<db:para>Test1_2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f6d7de63-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -564,11 +571,11 @@
 						
 					</db:section>
 					<db:section xml:id="ea.7f903547-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
-						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2 aufgelistet:</db:para>
+						<db:para>Nachfolgend wird der Funktionsumfang auf der Grundlage von Anforderungen aufgeführt, welcher der Bausteins Test1_2 erfüllt:</db:para>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF-006_Requirements_1 (FEA)</db:para>
@@ -599,6 +606,7 @@
 								<db:para>Test2_2 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.f94905b4-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -619,7 +627,7 @@
 						
 					</db:section>
 					<db:section xml:id="ea.79a7737e-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -649,6 +657,7 @@
 								<db:para>Test3_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.fb3ebb7f-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -669,7 +678,7 @@
 						
 					</db:section>
 					<db:section xml:id="ea.8ddcf1f4-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -703,6 +712,7 @@
 								<db:para>Test1_2_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.3d9526f9-285b-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -740,17 +750,18 @@
 							<db:tbody>			
 								<db:tr>
 									<db:td>
-										<db:para>Test2 -> Test1_2_1</db:para>
+										<db:para>Von Test2 zu Test1_2_1</db:para>
 									</db:td>
 									<db:td>
+										<db:para>Der Test2 Baustein verwendet den Test1_2_1 Baustein.</db:para>
 									</db:td>
 								</db:tr>
 							</db:tbody>
-						</db:informaltable>	
+						</db:informaltable>
 						
 					</db:section>
 					<db:section xml:id="ea.805c37dc-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
@@ -799,6 +810,7 @@
 								<db:para>Test1_2_1_1 &lt;SampleBuildingBlock&gt; (Blackbox) [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.52fa4b14-285b-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
 							</db:td>
 							<db:td>
+								<db:para>purpose...</db:para>
 							</db:td>
 						</db:tr>
 					</db:tbody>
@@ -819,11 +831,11 @@
 						
 					</db:section>
 					<db:section xml:id="ea.a5f7e6d5-0df0-11e9-a28e-8b950dcca323">
-						<db:title>Erf&#252;llte Anforderungen</db:title>
+						<db:title>Funktionsumfang</db:title>
 						
 						
 						
-						<db:para>Nachfolgend werden die erfüllten Anforderungen des Bausteins Test1_2_1_1 aufgelistet:</db:para>
+						<db:para>Nachfolgend wird der Funktionsumfang auf der Grundlage von Anforderungen aufgeführt, welcher der Bausteins Test1_2_1_1 erfüllt:</db:para>
 						<db:itemizedlist>
 							<db:listitem>
 								<db:para>AF-006_Requirements_1 (FEA)</db:para>

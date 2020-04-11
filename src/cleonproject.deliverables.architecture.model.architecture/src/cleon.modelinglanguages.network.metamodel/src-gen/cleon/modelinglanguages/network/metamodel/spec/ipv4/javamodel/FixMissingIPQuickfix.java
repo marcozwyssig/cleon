@@ -1,11 +1,7 @@
 package cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel;
 
-import java.awt.image.PackedColorModel;
-
 import ch.actifsource.core.Package;
-import ch.actifsource.core.PackagedResource;
 import ch.actifsource.core.Resource;
-import ch.actifsource.core.Statement;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.IWriteJobExecutor;
 import ch.actifsource.core.job.Update;
@@ -13,8 +9,6 @@ import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.undo.GlobalEditContext;
 import ch.actifsource.core.undo.IEditContext;
-import ch.actifsource.core.undo.RootResourceEditContext;
-import ch.actifsource.core.update.FixOwnership;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.core.validation.quickfix.AbstractQuickFix;

@@ -5,8 +5,6 @@ import java.util.List;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.validation.ValidationContext;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.FunctionSpace_Role.IRoleSystemComponentFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdUniqueValidationAspect;
 
 public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUniqueValidationAspect<IActivityPermission> 

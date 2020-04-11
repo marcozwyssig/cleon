@@ -1,12 +1,9 @@
 package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel;
 
 import java.util.List;
-import java.util.OptionalInt;
 
-import ch.actifsource.core.INode;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.FunctionSpace_Role.IRoleSystemComponentFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdInitializerAspect;
 

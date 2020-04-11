@@ -3,7 +3,6 @@ package cleon.modelinglanguages.network.metamodel.spec.javamodel;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-import java.util.Map;
 
 import ch.actifsource.core.Resource;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
@@ -15,15 +14,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
 import ch.actifsource.core.validation.quickfix.IInconsistencyEnablement;
-import ch.actifsource.template.model.spec.SpecPackage;
-import ch.actifsource.util.log.Logger;
-import cleon.modelinglanguages.network.metamodel.spec.FunctionSpace_Network.IAbstractNetworkFunctions;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.FixMissingIPQuickfix;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IPv4_Mask_Aware;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.SubnetUtils;
 
 public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidationAspect {

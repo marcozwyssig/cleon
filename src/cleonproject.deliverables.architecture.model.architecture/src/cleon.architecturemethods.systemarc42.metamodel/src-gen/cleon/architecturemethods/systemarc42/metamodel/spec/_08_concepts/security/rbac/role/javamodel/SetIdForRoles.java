@@ -1,11 +1,8 @@
 package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel;
 
-import java.util.List;
-
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Package;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
-import ch.actifsource.core.javamodel.IResource;
 import ch.actifsource.core.job.Select;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.model.aspects.impl.AbstractAllInstancesRefactorerAspect;
@@ -14,15 +11,12 @@ import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
-import ch.actifsource.util.collection.ICollection;
-import ch.actifsource.util.collection.IList;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.FunctionSpace_Role.IRoleNetDomainGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.FunctionSpace_Role.IRoleRootGroupsFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 import cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId;
-import cleon.common.resources.metamodel.spec.id.javamodel.IntegerBusinessObjectId;
 
 public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 

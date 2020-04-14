@@ -18,28 +18,6 @@ public class FunctionSpace_SystemArc42_Docbook {
   /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
 
 
-  public static interface ISystemArc42DocumentFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface ISystemArc42DocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemArc42DocumentFunctionsImpl implements ISystemArc42DocumentFunctionsImpl {
-
-    public static final ISystemArc42DocumentFunctionsImpl INSTANCE = new SystemArc42DocumentFunctionsImpl();
-
-    private SystemArc42DocumentFunctionsImpl() {}
-
-  }
-  
-  public static class SystemArc42DocumentFunctions {
-
-    private SystemArc42DocumentFunctions() {}
-
-  }
-
   public static interface IAvailabilityFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6005307c-1e3a-11e9-865e-41ef48a95f70")
@@ -580,4 +558,4 @@ public class FunctionSpace_SystemArc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,sG4ON2f/NMI9wy6fjOve3HTxypY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,1yjVjQep7L/UcfatrEuGZMcwZ8E=] */

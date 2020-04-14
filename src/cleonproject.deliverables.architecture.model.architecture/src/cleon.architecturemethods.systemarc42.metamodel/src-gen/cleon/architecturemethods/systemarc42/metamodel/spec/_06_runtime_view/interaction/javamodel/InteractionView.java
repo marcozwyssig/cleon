@@ -71,11 +71,11 @@ public class InteractionView extends DynamicResource implements IInteractionView
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystem> selectInteractionSystem() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystemComponent> selectInteractionSystem() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystemComponent.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem);
   }
 
-  public InteractionView setInteractionSystem(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystem> interactionSystem) {
+  public InteractionView setInteractionSystem(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystemComponent> interactionSystem) {
     _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem, interactionSystem);
     return this;
   }
@@ -106,16 +106,16 @@ public class InteractionView extends DynamicResource implements IInteractionView
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystemComponent.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView selectToMeInteractionSystem(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystem object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView selectToMeInteractionSystem(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionSystemComponent object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.InteractionPackage.InteractionView_interactionSystem, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,/OdavzHtJOuq+RFeCmiD9cmO+m0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,jbUsLi46N+7A1GdnWxE9CS5czAw=] */

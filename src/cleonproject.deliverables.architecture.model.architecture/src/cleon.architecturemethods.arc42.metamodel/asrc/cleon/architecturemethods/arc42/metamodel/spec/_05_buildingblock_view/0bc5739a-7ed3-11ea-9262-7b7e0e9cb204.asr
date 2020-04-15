@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="0bc5739a-7ed3-11ea-9262-7b7e0e9cb204">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0bc573a8-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="0bc5739d-7ed3-11ea-9262-7b7e0e9cb204">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="0bc573a7-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="0bc5739c-7ed3-11ea-9262-7b7e0e9cb204">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="1f22b9de-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="1f221d99-7ed3-11ea-9262-7b7e0e9cb204" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bc5739e-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bc573a0-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bc5739f-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Backup_and_Recovery</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0bc573a8-7ed3-11ea-9262-7b7e0e9cb204">
+      <resource guid="0bc5739d-7ed3-11ea-9262-7b7e0e9cb204">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0bc573a1-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="0bc573a2-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="0bc573a7-7ed3-11ea-9262-7b7e0e9cb204">
+            <resource guid="0bc5739c-7ed3-11ea-9262-7b7e0e9cb204">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0bc573a3-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="1f22b9de-7ed3-11ea-9262-7b7e0e9cb204">
+                  <resource guid="1f221d99-7ed3-11ea-9262-7b7e0e9cb204">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="1f226bbc-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="1f2292cd-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Sicherung und Wiederherstellung</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -332,8 +332,8 @@ public class FunctionSpace_arc42_Docbook {
     @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
     public java.lang.String RenderContentElement();
 
-    @IDynamicResourceExtension.MethodId("77831d69-0a9f-11e9-9915-0d353533f3da")
-    public java.lang.String RenderChapters();
+    @IDynamicResourceExtension.MethodId("47549860-7edd-11ea-9262-7b7e0e9cb204")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
   }
   
@@ -507,4 +507,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,Zdtqqoy1h+QaYzcOfpsYbReqvRI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,MKWkX/uTdDQvd9qACUrK+zdHt40=] */

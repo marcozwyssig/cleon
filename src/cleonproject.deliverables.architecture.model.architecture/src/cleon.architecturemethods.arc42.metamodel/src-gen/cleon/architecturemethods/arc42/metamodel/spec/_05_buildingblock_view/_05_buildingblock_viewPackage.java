@@ -28,6 +28,26 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Blackbox_aE_Requirements = new Resource("4a655e3e-0df0-11e9-a28e-8b950dcca323");
   public static final Resource Blackbox_blackbox_aE_requirements = new Resource("5eef16f5-0df0-11e9-a28e-8b950dcca323");
   public static final Resource FunctionSpace_aE_Buildingblock_aE_View_Blackbox = new Resource("db3c90fd-6dbc-11ea-98d4-4d756e6b7091");
+  public static final Resource Functionality = new Resource("8999b3d6-7e70-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_functionality = new Resource("94971eeb-7e70-11ea-9262-7b7e0e9cb204");
+  public static final Resource Deployment = new Resource("ec1f72cf-7ed1-11ea-9262-7b7e0e9cb204");
+  public static final Resource Authentication = new Resource("00a7cb94-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Autorization = new Resource("3c94ae22-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Confidentiality = new Resource("918907d3-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Integrity = new Resource("afdbf036-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Auditing = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
+  public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Management = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_deployment = new Resource("483e67cc-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_authn = new Resource("569bedb8-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_authz = new Resource("63f76bcb-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_confidentialy = new Resource("702b0cee-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_integrity = new Resource("808fd3d8-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_auditing = new Resource("8cada1db-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_management = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +68,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,YI36T9wadkXEHZJM6fue+lvcYA4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,1snZQyVEMQa5zZVYVXgot2uzCiM=] */

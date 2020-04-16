@@ -47,7 +47,7 @@ public class FunctionSpace_RBAC {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
-    	IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().get(site.getResource());
+    	IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().values().stream().filter(x -> x.selectNetdomain().selectIdentifier().equals(site.selectIdentifier())).findFirst().orElse(null);
     	if(roleNetDomainGroup == null) {
     		return null;
     	}

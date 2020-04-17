@@ -120,16 +120,6 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
     return this;
   }
     
-  @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibilities selectUses() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibilities.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_uses);
-  }
-
-  public RoleRootGroups setUses(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibilities uses) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_uses, uses);
-    return this;
-  }
-    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
@@ -139,7 +129,6 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleNetDomainGroup.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_roleForNetdomains, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibilities.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_uses, visitor);
   }
 
   // toMeRelations
@@ -148,9 +137,5 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_roleForNetdomains, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleRootGroups> selectToMeUses(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibilities object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleRootGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.RolePackage.RoleRootGroups_uses, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,fpDUfCbgbhN/wjF9zSnzry2agcg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,795GgbpjF8iQqV0IomufDQcc/us=] */

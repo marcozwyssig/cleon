@@ -14,6 +14,8 @@ import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessObjectId> implements IResourceValidationAspect {
 
+	private static IDynamicResourceRepository resourceRepository;
+		
 	private Class<T> _classInstance;
 
 	protected BusinessObjectIdUniqueValidationAspect(Class<T> classInstance) {
@@ -33,9 +35,11 @@ public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessOb
 
 	@Override
 	public void validate(ValidationContext context, List<IResourceInconsistency> inconsistencyList) {
-		ITypeSystem typeSystem = context.getTypeSystem();
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-
+		if( resourceRepository == null ) {
+			ITypeSystem typeSystem = context.getTypeSystem();
+			resourceRepository = typeSystem.getResourceRepository();			
+		}
+		
 		List<T> resources = getResources(resourceRepository, context);
 		T businessObjectId = getObject(resourceRepository, context);
 

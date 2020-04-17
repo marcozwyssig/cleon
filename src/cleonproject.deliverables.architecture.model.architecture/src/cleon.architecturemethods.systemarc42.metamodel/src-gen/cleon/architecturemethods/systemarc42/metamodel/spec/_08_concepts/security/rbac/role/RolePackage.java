@@ -20,7 +20,6 @@ public class RolePackage {
   public static final Resource Responsibilities = new Resource("081f405d-809c-11e9-8e65-f3f639e40a34");
   public static final Resource Responsibility = new Resource("0a88c5ee-809c-11e9-8e65-f3f639e40a34");
   public static final Resource Responsibilities_responsibilities = new Resource("11a99307-809c-11e9-8e65-f3f639e40a34");
-  public static final Resource RoleRootGroups_uses = new Resource("27a7ea58-809c-11e9-8e65-f3f639e40a34");
   public static final Resource RoleActorGroup_roleActorResponsibilities = new Resource("76da1d81-809c-11e9-8e65-f3f639e40a34");
   public static final Resource FunctionSpace_aE_Role_Responsibilities = new Resource("b4b672f6-809c-11e9-8e65-f3f639e40a34");
   public static final Resource Responsibilities_basedOn = new Resource("c8dcaf0f-809c-11e9-8e65-f3f639e40a34");
@@ -49,4 +48,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,i6T3TpPB6p1b4MLkIRikLsL/M+A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,c/Gm3nVQtSsfuYvQs9XBDohFQ1U=] */

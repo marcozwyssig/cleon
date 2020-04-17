@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[3aea3d68-44bf-11e5-93ef-c50f9659357a,imports]] */
 import cleon.common.modularity.metamodel.spec.javamodel.*;
+import java.util.stream.Collectors;
 /* End Protected Region   [[3aea3d68-44bf-11e5-93ef-c50f9659357a,imports]] */
 
 public class FunctionSpace_Buildingblock {
@@ -95,12 +96,18 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("11f2fb1f-6dbb-11ea-98d4-4d756e6b7091")
     public java.lang.String GetSimpleName();
 
+    @IDynamicResourceExtension.MethodId("e9b270bf-8017-11ea-b039-9728191a5cdc")
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo();
+
   }
   
   public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("eefb42b7-6dba-11ea-98d4-4d756e6b7091")
     public java.lang.String GetName(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock);
+
+    @IDynamicResourceExtension.MethodId("e9b270bf-8017-11ea-b039-9728191a5cdc")
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList);
 
   }
   
@@ -115,6 +122,18 @@ public class FunctionSpace_Buildingblock {
       return null;
     }
 
+    @Override
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+      /* Begin Protected Region [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
+    	return buildingBlockList.stream().filter(x -> {
+    		if( x instanceof IDependentBuildingBlock ) {
+    			return ((IDependentBuildingBlock)x).selectHasDependency().isEmpty();
+    		}
+    		return false;
+    	}).collect(Collectors.toList());
+      /* End Protected Region   [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
+    }
+
   }
   
   public static class BuildingBlockFunctions {
@@ -123,6 +142,10 @@ public class FunctionSpace_Buildingblock {
 
     public static java.lang.String GetName(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock) {
       return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlock).GetName(buildingBlock);
+    }
+
+    public static List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).OnlyNotDependingTo(buildingBlockList);
     }
 
   }
@@ -266,4 +289,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,YLk++q4iKZYIVukxIYWyUpTbQp8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,Iqe5JtFHBQ6vHHYr/40VafEXJKE=] */

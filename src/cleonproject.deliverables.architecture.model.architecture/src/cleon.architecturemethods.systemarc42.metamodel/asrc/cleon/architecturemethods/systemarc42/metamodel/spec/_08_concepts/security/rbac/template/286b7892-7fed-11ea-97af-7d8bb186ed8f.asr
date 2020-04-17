@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="286b7892-7fed-11ea-97af-7d8bb186ed8f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ebc9902b-7ff2-11ea-95c2-1d8b5d8f56b1" type="resource" guid="ebc91af7-7ff2-11ea-95c2-1d8b5d8f56b1" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286b9fa4-7fed-11ea-97af-7d8bb186ed8f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286f9746-7fed-11ea-97af-7d8bb186ed8f" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ebc9902b-7ff2-11ea-95c2-1d8b5d8f56b1">
+      <resource guid="ebc91af7-7ff2-11ea-95c2-1d8b5d8f56b1">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ebc94209-7ff2-11ea-95c2-1d8b5d8f56b1" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ebc9420a-7ff2-11ea-95c2-1d8b5d8f56b1" type="literal">systemcomponents</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ebc9de4c-7ff2-11ea-95c2-1d8b5d8f56b1" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ebca055d-7ff2-11ea-95c2-1d8b5d8f56b1" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="ebca2c6f-7ff2-11ea-95c2-1d8b5d8f56b1" type="resource" guid="cc07877e-7ff2-11ea-95c2-1d8b5d8f56b1" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="286f9745-7fed-11ea-97af-7d8bb186ed8f" type="literal">RBAC_Role_Responsibility_Template</object>
+  </predicate>
+</resource>
+

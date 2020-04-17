@@ -23,6 +23,7 @@ public class RbacPackage {
   public static final Resource Group = new Resource("d2272f28-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource AbstractGroups_groups = new Resource("df943a6b-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource FunctionSpace_aE_RBAC_AbstractGroup = new Resource("b9b92765-7f24-11e9-9a52-07d4b074defc");
+  public static final Resource RBAC_responsibilities = new Resource("27a7ea58-809c-11e9-8e65-f3f639e40a34");
   public static final Resource FunctionSpace_aE_RBAC_RoleSystemComponent = new Resource("6c7c43ac-bff0-11e9-80a1-d5ff22ac3c31");
   public static final Resource FunctionSpace_aE_RBAC_ActivityPermission = new Resource("fcbc5d3e-bff0-11e9-80a1-d5ff22ac3c31");
   public static final Resource FunctionSpace_aE_RBAC_AbstractGroups = new Resource("68ae8473-c56f-11e9-9daa-cf9f9f7341e8");
@@ -31,6 +32,7 @@ public class RbacPackage {
   public static final Resource RBAC = new Resource("9db33409-6e8e-11ea-b8e8-f1a46e0c42f7");
   public static final Resource RBAC_chapters = new Resource("a3a0780b-6e90-11ea-b8e8-f1a46e0c42f7");
   public static final Resource EnvironmentRBAC_master = new Resource("22e8782a-78dc-11ea-a009-ab381ce86597");
+  public static final Resource RBAC_templates = new Resource("576d3fa1-7fef-11ea-8dd1-adb42766bae3");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +53,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,HFskTYkS6AtFTDTbtnHTM7ihKFQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,m0EHSRu9KZsh6f/c2uniEU5Sdvk=] */

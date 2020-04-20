@@ -106,7 +106,6 @@ public class Supplies extends DynamicResource implements ISupplies {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply.javamodel.ISupply.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply.SupplyPackage.Supplies_supply, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -119,4 +118,4 @@ public class Supplies extends DynamicResource implements ISupplies {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13d24c1c-0e15-11e6-ae01-ef640c578b9b,NPI0KWy0cXuZiFfTA2JrLFDMdE4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13d24c1c-0e15-11e6-ae01-ef640c578b9b,6qBWMwKKg55ZwcjLZhrzWKfYzk8=] */

@@ -88,6 +88,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("66ad1d73-0b72-11ea-891d-81e208cfce61")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> OnlyIntra();
 
+    @IDynamicResourceExtension.MethodId("32c46ff9-80bd-11ea-b18a-9db09f26536a")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AccessAsSource();
+
   }
   
   public static interface IDestinationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -481,7 +484,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServicesDistinct();
 
     @IDynamicResourceExtension.MethodId("10be3e5b-e041-11e9-aa67-4505845acdbd")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination Provider();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination Destination();
 
     @IDynamicResourceExtension.MethodId("7af335a7-e077-11e9-aa67-4505845acdbd")
     public java.lang.String SubLayerName(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunication communication);
@@ -616,4 +619,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,jN1sDAubNEPL66YYCqUacj88IBA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,0OlYe32tWwIKCuY1Vl0ZPVvFMLM=] */

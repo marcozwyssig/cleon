@@ -14,6 +14,8 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IDeployment selectDeployment();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAvailability selectAvailability();
+  
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuthentication selectAuthn();
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAutorization selectAuthz();
@@ -30,10 +32,12 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IManagement selectManagement();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicencing();
+  
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox> selectBlackboxes();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,BT0RZGIAK9aOhioFdYJvXFAfrzQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,rLRwf9HgIZuhe6NBmXd18I0Uavk=] */

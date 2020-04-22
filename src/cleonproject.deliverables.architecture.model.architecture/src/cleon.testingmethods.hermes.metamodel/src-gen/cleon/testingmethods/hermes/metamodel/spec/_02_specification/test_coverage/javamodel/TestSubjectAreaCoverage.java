@@ -71,6 +71,16 @@ public class TestSubjectAreaCoverage extends DynamicResource implements ITestSub
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public TestSubjectAreaCoverage setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -126,7 +136,6 @@ public class TestSubjectAreaCoverage extends DynamicResource implements ITestSub
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_coverage.javamodel.ITestRequirementCoverage.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_coverage.Test_coveragePackage.TestSubjectAreaCoverage_requirementCoverage, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.ISubjectArea.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.coverage.CoveragePackage.SubjectAreaCoverage_subjectArea, visitor);
@@ -140,4 +149,4 @@ public class TestSubjectAreaCoverage extends DynamicResource implements ITestSub
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2498cbe6-5169-11e9-bb61-971a423d31e9,cXw0+dzdvy49q3pEOQcHYNhBUro=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2498cbe6-5169-11e9-bb61-971a423d31e9,JbQbBLyHlRp1ackQBWrtEaZFJU8=] */

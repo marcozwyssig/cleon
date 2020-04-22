@@ -9,10 +9,13 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[48dec04d-02d8-11e9-9e58-33d596257b14,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite;
 import ch.actifsource.util.collection.IList;
+import ch.actifsource.util.log.Logger;
 import ch.actifsource.core.job.Select;
 import java.util.Iterator;
 /* End Protected Region   [[48dec04d-02d8-11e9-9e58-33d596257b14,imports]] */
@@ -20,7 +23,29 @@ import java.util.Iterator;
 public class FunctionSpace_BuildNode {
 
   /* Begin Protected Region [[48dec04d-02d8-11e9-9e58-33d596257b14]] */
-  
+	public static class HelperFunctionClass {
+		public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(
+				String site, IAbstractSiteWithHosts siteObject, ISystemConfiguration cmp, String owner, String id) {
+			Logger.instance().logInfo("Found site for " + site);
+			IAbstractSiteWithHosts siteComposition = (IAbstractSiteWithHosts) siteObject;
+			IList<? extends IAbstractHost> abstractHosts = siteComposition.selectHosts().get(cmp.getResource());
+			Iterator<? extends IAbstractHost> iterator = abstractHosts.iterator();
+			while (iterator.hasNext()) {
+				IAbstractHost abstractHost = iterator.next();
+				String simpleName = Select.simpleName(abstractHost.getReadJobExecutor(), abstractHost.getResource());
+				String[] strings = simpleName.split("-");
+				Logger.instance().logInfo("Check owner " + owner + " / " + strings[2]);
+				if (owner.equals(strings[2])) {
+					Logger.instance().logInfo("Check id " + id + " / " + strings[3]);
+					if (id.startsWith(strings[3])) {
+						return abstractHost;
+					}
+				}
+			}
+			return null;
+		}
+
+	}
   /* End Protected Region   [[48dec04d-02d8-11e9-9e58-33d596257b14]] */
 
 
@@ -58,20 +83,30 @@ public class FunctionSpace_BuildNode {
       /* Begin Protected Region [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
     	IServiceBuildNodeFunctions serviceBuildNodeFunctions = serviceBuildNode.extension(IServiceBuildNodeFunctions.class);
     	ITopologyEnvironment topologyEnvironment = serviceBuildNodeFunctions.GetTopologyEnvironment();
-    	ISite siteObject = topologyEnvironment.selectSites().stream().filter(x -> x.selectName().equals(site)).findFirst().orElse(null);
-    	if(siteObject != null && siteObject instanceof IAbstractSiteWithHosts ) {
-    		IAbstractSiteWithHosts siteComposition = (IAbstractSiteWithHosts)siteObject;
-    		IList<? extends IAbstractHost> abstractHosts = siteComposition.selectHosts().get(cmp.getResource());
-    		Iterator<? extends IAbstractHost> iterator = abstractHosts.iterator();
-    		while( iterator.hasNext() ) {
-    			IAbstractHost abstractHost = iterator.next();
-    			String simpleName = Select.simpleName(abstractHost.getReadJobExecutor(), abstractHost.getResource());
-    			String[] strings = simpleName.split("-");
-    			if( owner.equals(strings[2]) && id.equals(strings[3])) {
-    				return abstractHost;
-    			}    			
-    		}
+    	ITopologyEnvironmentFunctions environmentFunctions = topologyEnvironment.extension(ITopologyEnvironmentFunctions.class);
+    	IAbstractSiteWithHosts siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site)).findFirst().orElse(null);
+    	if( siteObject != null ) {
+    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		if( abstractHost != null ) {
+    			return abstractHost;
+    		}    		
     	}
+		siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '6'))).findFirst().orElse(null);
+		if( siteObject != null ) {
+    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		if( abstractHost != null ) {
+    			return abstractHost;
+    		}    					
+		}
+		
+		siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '1'))).findFirst().orElse(null);
+		if( siteObject != null ) {
+    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		if( abstractHost != null ) {
+    			return abstractHost;
+    		}    					
+		}
+		
     	return null;
       /* End Protected Region   [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
     }
@@ -195,6 +230,58 @@ public class FunctionSpace_BuildNode {
 
   }
 
+  public static interface IApplicationBuildNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("104621ba-84da-11ea-ade9-0f308d716192")
+    public java.lang.String GetSimpleName();
+
+    @IDynamicResourceExtension.MethodId("1bedfd33-84da-11ea-ade9-0f308d716192")
+    public java.lang.String OnlyName();
+
+  }
+  
+  public static interface IApplicationBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("104621ba-84da-11ea-ade9-0f308d716192")
+    public java.lang.String GetSimpleName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode);
+
+    @IDynamicResourceExtension.MethodId("1bedfd33-84da-11ea-ade9-0f308d716192")
+    public java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode);
+
+  }
+  
+  public static class ApplicationBuildNodeFunctionsImpl implements IApplicationBuildNodeFunctionsImpl {
+
+    public static final IApplicationBuildNodeFunctionsImpl INSTANCE = new ApplicationBuildNodeFunctionsImpl();
+
+    private ApplicationBuildNodeFunctionsImpl() {}
+
+    @Override
+    public java.lang.String GetSimpleName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+      return null;
+    }
+
+    @Override
+    public java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+      return null;
+    }
+
+  }
+  
+  public static class ApplicationBuildNodeFunctions {
+
+    private ApplicationBuildNodeFunctions() {}
+
+    public static java.lang.String GetSimpleName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+      return DynamicResourceUtil.invoke(IApplicationBuildNodeFunctionsImpl.class, ApplicationBuildNodeFunctionsImpl.INSTANCE, applicationBuildNode).GetSimpleName(applicationBuildNode);
+    }
+
+    public static java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IApplicationBuildNode applicationBuildNode) {
+      return DynamicResourceUtil.invoke(IApplicationBuildNodeFunctionsImpl.class, ApplicationBuildNodeFunctionsImpl.INSTANCE, applicationBuildNode).OnlyName(applicationBuildNode);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,ZZIUZ/4YRu9sR70uppPpLr01EX0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,U0kuEvmgFtetpEDvzfCNGbTXjf0=] */

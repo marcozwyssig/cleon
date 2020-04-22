@@ -6,6 +6,10 @@ public interface IServiceBuildNode extends ch.actifsource.core.javamodel.INamedR
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("1c72395a-02d8-11e9-9e58-33d596257b14");
   
+  // relations
+  
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost selectHost();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,YiSiPQTDwhUc6eXxz0Z38QwJ3Tw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1c72395a-02d8-11e9-9e58-33d596257b14,+tfAaD/puTRcUH6UegdCcjTfl1k=] */

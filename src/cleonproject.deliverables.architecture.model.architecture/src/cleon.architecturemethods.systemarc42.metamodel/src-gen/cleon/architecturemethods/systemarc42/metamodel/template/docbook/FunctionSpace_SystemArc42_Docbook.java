@@ -148,6 +148,9 @@ public class FunctionSpace_SystemArc42_Docbook {
     @IDynamicResourceExtension.MethodId("52e6d461-199d-11e9-9d43-9ddad24f774b")
     public java.lang.String GetStandardDescription();
 
+    @IDynamicResourceExtension.MethodId("b42c03d5-8551-11ea-a579-31bf00957a06")
+    public java.lang.String RenderContent();
+
   }
   
   public static interface IDeploymentDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -558,4 +561,4 @@ public class FunctionSpace_SystemArc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,1yjVjQep7L/UcfatrEuGZMcwZ8E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,RjsrVi2+0wQo6a8rVoPSvtsfIlY=] */

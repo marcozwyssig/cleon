@@ -12,6 +12,7 @@ public class DiagramPackage {
   public static final Resource SegmentationDiagram = new Resource("46777a52-0e23-11e9-8b4c-f9aec93d8b56");
   public static final Resource DeploymentDiagram_onlyOneLayer = new Resource("abdc5fe0-0eb0-11e9-9f19-6d15636f4ecc");
   public static final Resource DeploymentDiagram_renderHidden = new Resource("3bf1527b-1980-11e9-88a0-1f786f12e4c1");
+  public static final Resource FunctionSpace_aE_Diagram_DeploymentDiagram = new Resource("c82e1cf1-854e-11ea-9f0c-755186b47bc2");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class DiagramPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.diagram,ngyjbVdDrAD+cA9LrzALudjmWgo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.diagram,nw3EUNL8fcnY8gw/EwOt7Fxncj0=] */

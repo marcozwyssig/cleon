@@ -4,6 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class GraphvizPackage {
   
+  public static final Resource DeploymentDiagram__T_dot_Node = new Resource("cc21754e-853f-11ea-9f0c-755186b47bc2");
+  public static final Resource DeploymentDiagram__T_dot_Class = new Resource("f4d9ca27-8546-11ea-9f0c-755186b47bc2");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +26,4 @@ public class GraphvizPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.graphviz,nxLLqDle+ShtLE94C5YcqWRHl5c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.graphviz,aQrKwU1fF+es6km0v1SOhJ+m2aE=] */

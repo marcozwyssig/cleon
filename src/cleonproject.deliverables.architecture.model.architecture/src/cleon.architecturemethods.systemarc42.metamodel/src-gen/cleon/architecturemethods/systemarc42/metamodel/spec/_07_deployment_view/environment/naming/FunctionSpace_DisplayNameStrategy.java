@@ -70,6 +70,9 @@ public class FunctionSpace_DisplayNameStrategy {
   
   public static interface IBABSDisplayNameStrategyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("60312adf-2ed4-11e9-9ca2-d7354798e154")
+    public java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildingNode, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IBABSDisplayNameStrategy bABSDisplayNameStrategy);
+
   }
   
   public static class BABSDisplayNameStrategyFunctionsImpl implements IBABSDisplayNameStrategyFunctionsImpl {
@@ -78,14 +81,23 @@ public class FunctionSpace_DisplayNameStrategy {
 
     private BABSDisplayNameStrategyFunctionsImpl() {}
 
+    @Override
+    public java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildingNode, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IBABSDisplayNameStrategy bABSDisplayNameStrategy) {
+      return null;
+    }
+
   }
   
   public static class BABSDisplayNameStrategyFunctions {
 
     private BABSDisplayNameStrategyFunctions() {}
 
+    public static java.lang.String OnlyName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildingNode, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IBABSDisplayNameStrategy bABSDisplayNameStrategy) {
+      return DynamicResourceUtil.invoke(IBABSDisplayNameStrategyFunctionsImpl.class, BABSDisplayNameStrategyFunctionsImpl.INSTANCE, bABSDisplayNameStrategy).OnlyName(serviceBuildingNode, bABSDisplayNameStrategy);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,185c5ae6-11b1-11e9-9a7b-590a6369b499,y4zLgwgPxjXJAt2uJrMGsZYkPiI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,185c5ae6-11b1-11e9-9a7b-590a6369b499,9pfUg+6y3r8CMRh5AN5j1Nh7ZuA=] */

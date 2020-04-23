@@ -174,6 +174,9 @@ public class FunctionSpace_BuildNode {
     @IDynamicResourceExtension.MethodId("4de742de-7bb1-11e9-94aa-f1ea7ea33f46")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMH();
 
+    @IDynamicResourceExtension.MethodId("73a99824-8555-11ea-a579-31bf00957a06")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> Dependencies();
+
   }
   
   public static interface IBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -284,4 +287,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,U0kuEvmgFtetpEDvzfCNGbTXjf0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,JHdBEYxmh6UM8jHgJ8HSP7662LE=] */

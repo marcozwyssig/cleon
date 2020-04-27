@@ -80,15 +80,6 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("ba66d8e3-7acc-11e9-a70f-4dc03941a024")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkAware> GetParents();
 
-    @IDynamicResourceExtension.MethodId("c459d826-7b90-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String SubnetMask();
-
-    @IDynamicResourceExtension.MethodId("ffbb2544-7b91-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String Broadcast();
-
-    @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String NetworkAddress();
-
     @IDynamicResourceExtension.MethodId("e7d5af53-6e88-11ea-b8e8-f1a46e0c42f7")
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork> GetAllPhysicalNetworks();
 
@@ -96,15 +87,6 @@ public class FunctionSpace_Network {
   
   public static interface IAbstractPhysicalNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("c459d826-7b90-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork);
-
-    @IDynamicResourceExtension.MethodId("ffbb2544-7b91-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork);
-
-    @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork);
-
   }
   
   public static class AbstractPhysicalNetworkFunctionsImpl implements IAbstractPhysicalNetworkFunctionsImpl {
@@ -113,50 +95,11 @@ public class FunctionSpace_Network {
 
     private AbstractPhysicalNetworkFunctionsImpl() {}
 
-    @Override
-    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      /* Begin Protected Region [[c459d826-7b90-11e9-94aa-f1ea7ea33f46]] */
-    	IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-    	SubnetUtils subnet = new SubnetUtils(cidr.selectIPv4() + "/" + cidr.selectMask());
-    	return subnet.getInfo().getNetmask();  
-      /* End Protected Region   [[c459d826-7b90-11e9-94aa-f1ea7ea33f46]] */
-    }
-
-    @Override
-    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      /* Begin Protected Region [[ffbb2544-7b91-11e9-94aa-f1ea7ea33f46]] */
-    	IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-    	SubnetUtils subnet = new SubnetUtils(cidr.selectIPv4() + "/" + cidr.selectMask());
-    	return subnet.getInfo().getBroadcastAddress();
-      /* End Protected Region   [[ffbb2544-7b91-11e9-94aa-f1ea7ea33f46]] */
-    }
-
-    @Override
-    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      /* Begin Protected Region [[04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46]] */
-    	IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-    	SubnetUtils subnet = new SubnetUtils(cidr.selectIPv4() + "/" + cidr.selectMask());
-    	return subnet.getInfo().getNetworkAddress();    
-      /* End Protected Region   [[04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46]] */
-    }
-
   }
   
   public static class AbstractPhysicalNetworkFunctions {
 
     private AbstractPhysicalNetworkFunctions() {}
-
-    public static java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      return DynamicResourceUtil.invoke(IAbstractPhysicalNetworkFunctionsImpl.class, AbstractPhysicalNetworkFunctionsImpl.INSTANCE, abstractPhysicalNetwork).SubnetMask(abstractPhysicalNetwork);
-    }
-
-    public static java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      return DynamicResourceUtil.invoke(IAbstractPhysicalNetworkFunctionsImpl.class, AbstractPhysicalNetworkFunctionsImpl.INSTANCE, abstractPhysicalNetwork).Broadcast(abstractPhysicalNetwork);
-    }
-
-    public static java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-      return DynamicResourceUtil.invoke(IAbstractPhysicalNetworkFunctionsImpl.class, AbstractPhysicalNetworkFunctionsImpl.INSTANCE, abstractPhysicalNetwork).NetworkAddress(abstractPhysicalNetwork);
-    }
 
   }
 
@@ -243,6 +186,9 @@ public class FunctionSpace_Network {
 
   public static interface IAbstractNetworkNodeFunctions extends IDynamicResourceExtension {
 
+    @IDynamicResourceExtension.MethodId("a37c1622-ca55-11e9-83b0-559396620907")
+    public java.lang.String Name();
+
     @IDynamicResourceExtension.MethodId("c9e02962-7b97-11e9-94aa-f1ea7ea33f46")
     public java.lang.String SubnetMask();
 
@@ -252,13 +198,19 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
-    @IDynamicResourceExtension.MethodId("a37c1622-ca55-11e9-83b0-559396620907")
-    public java.lang.String Name();
-
   }
   
   public static interface IAbstractNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("c9e02962-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
+
+    @IDynamicResourceExtension.MethodId("c9e05074-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
+
+    @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
+
   }
   
   public static class AbstractNetworkNodeFunctionsImpl implements IAbstractNetworkNodeFunctionsImpl {
@@ -267,11 +219,38 @@ public class FunctionSpace_Network {
 
     private AbstractNetworkNodeFunctionsImpl() {}
 
+    @Override
+    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return "mask";
+    }
+
+    @Override
+    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return "broadcast";
+    }
+
+    @Override
+    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return "address";
+    }
+
   }
   
   public static class AbstractNetworkNodeFunctions {
 
     private AbstractNetworkNodeFunctions() {}
+
+    public static java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).SubnetMask(abstractNetworkNode);
+    }
+
+    public static java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).Broadcast(abstractNetworkNode);
+    }
+
+    public static java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).NetworkAddress(abstractNetworkNode);
+    }
 
   }
 
@@ -352,4 +331,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,1joHtcUnwO8a1QZ8P4Jf4EX4q0s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,+SAw2p2r4ndlSMomTHi7tUct20Q=] */

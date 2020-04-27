@@ -1,5 +1,7 @@
 package cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel;
 
+import java.util.List;
+
 import ch.actifsource.core.INode;
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.job.IReadJobExecutor;
@@ -21,16 +23,20 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
 		IAbstractPhysicalNetwork network = resourceRepository.getResource(IAbstractPhysicalNetwork.class, subject); 
-		IIPv4_Mask cidr = network.selectCidr();		
+		NodeSet ipNodeSet = new NodeSet();
+		List<? extends IIPv4_Mask> cidrs = network.selectCidr();
+		cidrs.stream().forEach(x -> addNetworks(executor, x, ipNodeSet));
+		return ipNodeSet;
+	}
+	
+	private static void addNetworks(IReadJobExecutor executor, IIPv4_Mask cidr, NodeSet ipNodeSet) {
 		IIPRange range = cidr.extension(IIPv4_MaskFunctions.class).SelectIPRange();
 		if( range == null) {			
-			return null;
+			return;
 		}
 		
 		try {
 			SubnetUtils subnet = new SubnetUtils(Select.simpleName(executor, cidr.getResource()));
-			
-			NodeSet ipNodeSet = new NodeSet();
 			for( String ip : subnet.getInfo().getAllAddresses())
 			{
 				IIPv4_D ipv4 = range.extension(IIPRangeFunctions.class).toIPv4(ip);
@@ -38,11 +44,8 @@ public class CidrAspectDecorator extends AspectImplementationDecorator {
 					ipNodeSet.add(ipv4.getResource());
 				}
 			}
-
-			return ipNodeSet;
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
-		}
-		return null;
+		}		
 	}
 }

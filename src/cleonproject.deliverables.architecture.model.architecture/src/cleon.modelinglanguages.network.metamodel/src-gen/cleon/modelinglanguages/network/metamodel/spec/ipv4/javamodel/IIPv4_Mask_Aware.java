@@ -8,8 +8,8 @@ public interface IIPv4_Mask_Aware extends ch.actifsource.core.javamodel.IResourc
   
   // relations
   
-  public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask selectCidr();
+  public java.util.List<? extends cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask> selectCidr();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d46e8a9-0932-11e9-8c40-11db3668c0c9,XoLfzh5M0OrJGQ3Ur+x/zpbkWL8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d46e8a9-0932-11e9-8c40-11db3668c0c9,HaLIAS2HwKIrFAggvQkuJIJAeDk=] */

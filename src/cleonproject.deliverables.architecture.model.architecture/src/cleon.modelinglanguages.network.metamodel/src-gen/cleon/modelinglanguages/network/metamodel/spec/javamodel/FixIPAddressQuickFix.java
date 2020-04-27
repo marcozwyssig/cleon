@@ -41,18 +41,21 @@ public class FixIPAddressQuickFix extends AbstractQuickFix {
 		IIPRange range = _abstractPhysicalNetwork.extension(IAbstractNetworkFunctions.class).GetIPRange();
 		IIPRangeFunctions functions = range.extension(IIPRangeFunctions.class);
 						
-		String cidrRange = _abstractPhysicalNetwork.selectCidr().selectIPv4();
-		String[] parts = cidrRange.trim().split("\\.");
-		
-		for( IAbstractNetworkNode node : nodes) {
-			String newIP = String.format("%1$d.%2$d.%3$d.%4$d", Integer.parseInt(parts[0]), Integer.parseInt(parts[1]), Integer.parseInt(parts[2]), node.selectIPv4_D().selectIp());
-			IIPv4_D newIPObj = functions.toIPv4(newIP);
-			if(newIPObj == null) {
-				throw new RuntimeException("IP " + newIP + " has not been found");
-			}
+		_abstractPhysicalNetwork.selectCidr().stream().forEach(x -> {
+			String cidrRange = x.selectIPv4();
+			String[] parts = cidrRange.trim().split("\\.");
 			
-			Update.createOrModifyStatement(modifiable, _abstractPhysicalNetwork.getPackage(), node.getResource(), SpecPackage.AbstractNetworkNode_iPv4_aE_D, newIPObj.getResource());			
-		}
+			for( IAbstractNetworkNode node : nodes) {
+				String newIP = String.format("%1$d.%2$d.%3$d.%4$d", Integer.parseInt(parts[0]), Integer.parseInt(parts[1]), Integer.parseInt(parts[2]), node.selectIPv4_D().selectIp());
+				IIPv4_D newIPObj = functions.toIPv4(newIP);
+				if(newIPObj == null) {
+					throw new RuntimeException("IP " + newIP + " has not been found");
+				}
+				
+				Update.createOrModifyStatement(modifiable, _abstractPhysicalNetwork.getPackage(), node.getResource(), SpecPackage.AbstractNetworkNode_iPv4_aE_D, newIPObj.getResource());			
+			}			
+		});
+
 	}
 
 	@Override

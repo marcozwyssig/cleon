@@ -1,6 +1,7 @@
 package cleon.modelinglanguages.network.metamodel.spec.javamodel;
 
 import java.util.Collection;
+import java.util.List;
 
 import ch.actifsource.core.INode;
 import ch.actifsource.core.Resource;
@@ -29,11 +30,14 @@ public class MoveIpAndHostRefactorAspect extends AbstractAllInstancesRefactorerA
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, node);
-		IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-
-		if (cidr == null)
+		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
+		if (cidrs.isEmpty()) {
 			return;
+		}
+		refactor(modifiable, abstractPhysicalNetwork);		
+	}
 
+	private void refactor(IModifiable modifiable, IAbstractPhysicalNetwork abstractPhysicalNetwork) {
 		java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
 		if (nodeMap == null) {
 			return;

@@ -25,10 +25,13 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, validationContext.getResource());
-		IIPv4_Mask cidr = abstractPhysicalNetwork.selectCidr();
-		if (cidr == null)
-			return;
+		
+		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
+		cidrs.stream().forEach(x -> validate(validationContext, validationList, abstractPhysicalNetwork, x));
 
+	}
+	
+	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList, IAbstractPhysicalNetwork abstractPhysicalNetwork, IIPv4_Mask cidr ) {
 		SubnetUtils subnet = new SubnetUtils(
 				Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
 
@@ -67,11 +70,8 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 						abstractPhysicalNetwork.getResource());
 
 				String message = String.format("IP address %s is valid and can maybe be moved", ip);
-
 				validationList.add(new SingleStatementInconsistency(nodeNetwork, message, fixMissingIP));
-
 			}
-
-		}
+		}		
 	}
 }

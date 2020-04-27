@@ -295,10 +295,28 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("a9ca8c66-749a-11e9-8765-0925552fc2b7")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPRange SelectIPRange();
 
+    @IDynamicResourceExtension.MethodId("c459d826-7b90-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String SubnetMask();
+
+    @IDynamicResourceExtension.MethodId("ffbb2544-7b91-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String Broadcast();
+
+    @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String NetworkAddress();
+
   }
   
   public static interface IIPv4_MaskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("c459d826-7b90-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask);
+
+    @IDynamicResourceExtension.MethodId("ffbb2544-7b91-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask);
+
+    @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
+    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask);
+
   }
   
   public static class IPv4_MaskFunctionsImpl implements IIPv4_MaskFunctionsImpl {
@@ -307,11 +325,47 @@ public class FunctionSpace_IP {
 
     private IPv4_MaskFunctionsImpl() {}
 
+    @Override
+    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      /* Begin Protected Region [[c459d826-7b90-11e9-94aa-f1ea7ea33f46]] */
+    	SubnetUtils subnet = new SubnetUtils(iPv4_Mask.selectIPv4() + "/" + iPv4_Mask.selectMask());
+    	return subnet.getInfo().getNetmask();  
+      /* End Protected Region   [[c459d826-7b90-11e9-94aa-f1ea7ea33f46]] */
+    }
+
+    @Override
+    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      /* Begin Protected Region [[ffbb2544-7b91-11e9-94aa-f1ea7ea33f46]] */
+    	SubnetUtils subnet = new SubnetUtils(iPv4_Mask.selectIPv4() + "/" + iPv4_Mask.selectMask());
+    	return subnet.getInfo().getBroadcastAddress();
+      /* End Protected Region   [[ffbb2544-7b91-11e9-94aa-f1ea7ea33f46]] */
+    }
+
+    @Override
+    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      /* Begin Protected Region [[04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46]] */
+    	SubnetUtils subnet = new SubnetUtils(iPv4_Mask.selectIPv4() + "/" + iPv4_Mask.selectMask());
+    	return subnet.getInfo().getNetworkAddress();   
+      /* End Protected Region   [[04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46]] */
+    }
+
   }
   
   public static class IPv4_MaskFunctions {
 
     private IPv4_MaskFunctions() {}
+
+    public static java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      return DynamicResourceUtil.invoke(IIPv4_MaskFunctionsImpl.class, IPv4_MaskFunctionsImpl.INSTANCE, iPv4_Mask).SubnetMask(iPv4_Mask);
+    }
+
+    public static java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      return DynamicResourceUtil.invoke(IIPv4_MaskFunctionsImpl.class, IPv4_MaskFunctionsImpl.INSTANCE, iPv4_Mask).Broadcast(iPv4_Mask);
+    }
+
+    public static java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask iPv4_Mask) {
+      return DynamicResourceUtil.invoke(IIPv4_MaskFunctionsImpl.class, IPv4_MaskFunctionsImpl.INSTANCE, iPv4_Mask).NetworkAddress(iPv4_Mask);
+    }
 
   }
 
@@ -399,4 +453,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,XBhXY3nU/LNsooZkEGocF/PYP+A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,8Jbp0uMP/TjZhDrJd7pkSUuy+yY=] */

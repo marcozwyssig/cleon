@@ -56,9 +56,6 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("563016fc-2ed3-11e9-9ca2-d7354798e154")
     public java.lang.String OnlyName();
 
-    @IDynamicResourceExtension.MethodId("a0a503db-6b52-11e9-bd30-87fcf852dea7")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ICustomer GetCustomer();
-
     @IDynamicResourceExtension.MethodId("9e96171b-6d92-11e9-b84d-d319514e887f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> GetAllNestedBuildNodes();
 
@@ -96,4 +93,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,CaCVjpQZipsPl4Pc23WLYXGeTTc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,Hn83a2ZCnHT9IClXeUV1RkbSPP8=] */

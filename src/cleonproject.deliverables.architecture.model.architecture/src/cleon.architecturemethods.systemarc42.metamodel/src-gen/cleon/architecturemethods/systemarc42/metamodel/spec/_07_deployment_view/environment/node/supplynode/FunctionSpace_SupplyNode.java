@@ -77,34 +77,6 @@ public class FunctionSpace_SupplyNode {
 
   }
 
-  public static interface ISupplySoftwareNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5f2e2b04-0c32-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetSimpleName();
-
-    @IDynamicResourceExtension.MethodId("30479135-0c34-11e9-83ba-4d57b06560a2")
-    public java.lang.String GetStereotypeName();
-
-  }
-  
-  public static interface ISupplySoftwareNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SupplySoftwareNodeFunctionsImpl implements ISupplySoftwareNodeFunctionsImpl {
-
-    public static final ISupplySoftwareNodeFunctionsImpl INSTANCE = new SupplySoftwareNodeFunctionsImpl();
-
-    private SupplySoftwareNodeFunctionsImpl() {}
-
-  }
-  
-  public static class SupplySoftwareNodeFunctions {
-
-    private SupplySoftwareNodeFunctions() {}
-
-  }
-
   public static interface ISupplyNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("74e81056-2aba-11e9-a3f8-336d9e792e17")
@@ -150,4 +122,4 @@ public class FunctionSpace_SupplyNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,UWzRLZJGBvNDxbGun2JdP5Adaw8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,culyGq3ImD9c6qhuDrxycB6URmg=] */

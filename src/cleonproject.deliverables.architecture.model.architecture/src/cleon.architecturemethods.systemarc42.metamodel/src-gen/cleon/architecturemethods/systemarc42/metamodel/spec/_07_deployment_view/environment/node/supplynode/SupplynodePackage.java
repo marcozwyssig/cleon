@@ -9,7 +9,6 @@ public class SupplynodePackage {
   public static final Resource FunctionSpace_aE_SupplyNode_SupplyLocationNode = new Resource("34593e51-0aab-11e9-8a91-633e556ac68f");
   public static final Resource SupplyNetDomainNode = new Resource("0674e77a-0aaf-11e9-a8f9-abf1763bbc53");
   public static final Resource FunctionSpace_aE_SupplyNode_SupplyNetDomainNode = new Resource("0fbb5398-0aaf-11e9-a8f9-abf1763bbc53");
-  public static final Resource SupplyNetDomainNode_functionId = new Resource("6333145f-1e11-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_SupplyNode_SupplyNode = new Resource("719fc352-2aba-11e9-a3f8-336d9e792e17");
   public static final Resource SupplyNetDomainNode_allowedToManage = new Resource("6dd570f7-19b9-11ea-bc72-af84f3c76c84");
   public static final Resource SupplyNetDomainNode_site = new Resource("62caf8b4-8941-11ea-b3b4-8399156700e6");
@@ -33,4 +32,4 @@ public class SupplynodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,ymiRMWHCbr4Ss05mu3Tkt1q9luY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode,vIgd1y1+HIsZbTIhAAqZlwqaIXU=] */

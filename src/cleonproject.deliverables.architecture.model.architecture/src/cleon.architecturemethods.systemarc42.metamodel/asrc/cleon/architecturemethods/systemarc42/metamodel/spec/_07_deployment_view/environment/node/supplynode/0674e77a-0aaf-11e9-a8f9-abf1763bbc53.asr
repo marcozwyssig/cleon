@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="0674e77a-0aaf-11e9-a8f9-abf1763bbc53">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="63331462-1e11-11e9-865e-41ef48a95f70" type="resource" guid="6333145f-1e11-11e9-865e-41ef48a95f70" />
     <resource statement-guid="6dd60d3a-19b9-11ea-bc72-af84f3c76c84" type="resource" guid="6dd570f7-19b9-11ea-bc72-af84f3c76c84" />
     <resource statement-guid="62cb46d7-8941-11ea-b3b4-8399156700e6" type="resource" guid="62caf8b4-8941-11ea-b3b4-8399156700e6">
       <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
@@ -104,22 +103,6 @@
     <object statement-guid="e9af38e8-0aaf-11e9-a8f9-abf1763bbc53" type="resource" guid="33a5556f-31cd-11e8-8a84-6f139e67278b" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="63331462-1e11-11e9-865e-41ef48a95f70">
-      <resource guid="6333145f-1e11-11e9-865e-41ef48a95f70">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="63331461-1e11-11e9-865e-41ef48a95f70" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6dd1480e-1e11-11e9-865e-41ef48a95f70" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="65814a33-1e11-11e9-865e-41ef48a95f70" type="literal">functionId</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="63331463-1e11-11e9-865e-41ef48a95f70" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="6dd60d3a-19b9-11ea-bc72-af84f3c76c84">
       <resource guid="6dd570f7-19b9-11ea-bc72-af84f3c76c84">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

@@ -26,28 +26,34 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, validationContext.getResource());
 		
-		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
-		cidrs.stream().forEach(x -> validate(validationContext, validationList, abstractPhysicalNetwork, x));
-
+		
+		validate(validationContext, validationList, abstractPhysicalNetwork);
 	}
 	
-	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList, IAbstractPhysicalNetwork abstractPhysicalNetwork, IIPv4_Mask cidr ) {
-		SubnetUtils subnet = new SubnetUtils(
-				Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-
+	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList, IAbstractPhysicalNetwork abstractPhysicalNetwork) {
 		java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
 		if (nodeMap == null) {
 			return;
 		}
 
+		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
 		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
 		ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<IAbstractNetworkNode>();
-		for (IAbstractNetworkNode node : nodes) {			
-			boolean isInRange = subnet.getInfo().isInRange(
-					Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource()));
+		for (IAbstractNetworkNode node : nodes) {
+			boolean isInRange = false;
+			for( IIPv4_Mask cidr : cidrs) {
+				SubnetUtils subnet = new SubnetUtils(
+						Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
+				
+				isInRange = subnet.getInfo().isInRange(
+						Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource()));
+				if(isInRange) {
+					break;
+				}
+			}
 			if (!isInRange) {
 				toFixedList.add(node);
-			}
+			}			
 		}
 
 		if (!toFixedList.isEmpty()) {

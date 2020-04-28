@@ -50,12 +50,6 @@ public class FunctionSpace_BuildNode {
 
   public static interface IServiceBuildNodeFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("c2f54725-02d3-11e9-9e58-33d596257b14")
-    public java.lang.String GetSimpleName();
-
-    @IDynamicResourceExtension.MethodId("b2bba661-2ed3-11e9-9ca2-d7354798e154")
-    public java.lang.String OnlyName();
-
     @IDynamicResourceExtension.MethodId("8567abfa-84cc-11ea-aadc-ada99ddb5122")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id);
 
@@ -127,9 +121,6 @@ public class FunctionSpace_BuildNode {
     @IDynamicResourceExtension.MethodId("04890c41-02d9-11e9-9e58-33d596257b14")
     public java.lang.String GetSimpleName();
 
-    @IDynamicResourceExtension.MethodId("24d3699c-2ed4-11e9-9ca2-d7354798e154")
-    public java.lang.String OnlyName();
-
   }
   
   public static interface IExecutionEnvironmentBuildNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -151,9 +142,6 @@ public class FunctionSpace_BuildNode {
   }
 
   public static interface IBuildNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("0adf3643-02d9-11e9-9e58-33d596257b14")
-    public java.lang.String GetSimpleName();
 
     @IDynamicResourceExtension.MethodId("bd89444b-0aa2-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
@@ -286,4 +274,4 @@ public class FunctionSpace_BuildNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,JHdBEYxmh6UM8jHgJ8HSP7662LE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,48dec04d-02d8-11e9-9e58-33d596257b14,Ozu6HtOgLl7dOkAa/O/QDL0qWBM=] */

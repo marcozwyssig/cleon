@@ -89,16 +89,6 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy selectDisplayStrategy() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_displayStrategy);
-  }
-
-  public SystemEnvironment setDisplayStrategy(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy displayStrategy) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_displayStrategy, displayStrategy);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -237,7 +227,6 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.RootNode_buildNodes, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_displayStrategy, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_level_aE_1, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_level_aE_2, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_level_aE_3, visitor);
@@ -252,10 +241,6 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
   }
 
   // toMeRelations
-  
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment> selectToMeDisplayStrategy(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_displayStrategy, object.getResource());
-  }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment selectToMeLevel_1(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.EnvironmentPackage.SystemEnvironment_level_aE_1, object.getResource());
@@ -290,4 +275,4 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,dN4UH/UNz3/+xhTV51BywHrFFIA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,uw+QV/+Q1iVVcW/NRX83iUtti0c=] */

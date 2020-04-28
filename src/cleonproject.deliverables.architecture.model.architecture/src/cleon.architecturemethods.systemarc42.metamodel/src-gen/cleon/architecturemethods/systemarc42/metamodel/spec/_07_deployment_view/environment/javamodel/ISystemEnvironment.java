@@ -10,8 +10,6 @@ public interface ISystemEnvironment extends cleon.architecturemethods.arc42.meta
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy selectDisplayStrategy();
-  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel> selectLevel_1();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel> selectLevel_2();
@@ -30,4 +28,4 @@ public interface ISystemEnvironment extends cleon.architecturemethods.arc42.meta
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,3zm2FI8cYQvfl8MEhAp7a3p9HX4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,X8vtpRo7tdC64AvBIFOKfhsC9FE=] */

@@ -29,9 +29,6 @@ public class FunctionSpace_Environmnent {
     @IDynamicResourceExtension.MethodId("c927eb2b-2abe-11e9-a3f8-336d9e792e17")
     public java.lang.String GetMaterialTypeName();
 
-    @IDynamicResourceExtension.MethodId("d43dcbfc-2ace-11e9-a3f8-336d9e792e17")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.naming.javamodel.IDisplayNameStrategy GetDisplayNameStrategy();
-
     @IDynamicResourceExtension.MethodId("94fce6cd-2ed3-11e9-9ca2-d7354798e154")
     public java.lang.String OnlyName();
 
@@ -144,4 +141,4 @@ public class FunctionSpace_Environmnent {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,gEYY6O802JvqyaoXkP/7PPATMqI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,c45NWylFBF5JDsH3D3bGr/7CDDE=] */

@@ -13,7 +13,6 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_vi
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite;
 import ch.actifsource.util.collection.IList;
 import ch.actifsource.util.log.Logger;
 import ch.actifsource.core.job.Select;

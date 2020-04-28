@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topolo
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractSiteWithZone extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite {
+public interface IAbstractSiteWithZone extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("fd112c3e-ec15-11e9-8e1e-d59e76bdbf06");
   
@@ -14,4 +14,4 @@ public interface IAbstractSiteWithZone extends cleon.architecturemethods.systema
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,h15dYbjj+NZ0hhjeazEQbphi51c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fd112c3e-ec15-11e9-8e1e-d59e76bdbf06,qTJzzcU/sKcQRvODBho72ld6M9o=] */

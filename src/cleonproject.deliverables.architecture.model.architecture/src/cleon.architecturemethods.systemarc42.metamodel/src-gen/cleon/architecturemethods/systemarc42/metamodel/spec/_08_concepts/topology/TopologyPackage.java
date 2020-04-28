@@ -6,7 +6,7 @@ public class TopologyPackage {
   
   public static final Resource AbstractHost = new Resource("c6ffaf13-6da4-11e9-8af5-2346ca56c2e2");
   public static final Resource Topology = new Resource("fca3a39b-878a-11e9-a61b-279ebde48b48");
-  public static final Resource Site = new Resource("119b879d-878b-11e9-a61b-279ebde48b48");
+  public static final Resource AbstractSite = new Resource("119b879d-878b-11e9-a61b-279ebde48b48");
   public static final Resource TopologyEnvironment_sites = new Resource("15a6d700-878b-11e9-a61b-279ebde48b48");
   public static final Resource TN = new Resource("c0a851b6-9286-11e9-959e-8115c2f9e41e");
   public static final Resource AbstractSiteWithHosts_hosts = new Resource("f6adaa1c-9286-11e9-959e-8115c2f9e41e");
@@ -20,7 +20,7 @@ public class TopologyPackage {
   public static final Resource TN_mss = new Resource("44f02df6-936d-11e9-8139-e76b19cfb4bf");
   public static final Resource AbstractSiteWithHosts = new Resource("aa0c9e25-936e-11e9-8139-e76b19cfb4bf");
   public static final Resource CentralSite = new Resource("d27c071d-936e-11e9-8139-e76b19cfb4bf");
-  public static final Resource FunctionSpace_aE_Topology_Site = new Resource("7cc4725c-9370-11e9-8139-e76b19cfb4bf");
+  public static final Resource FunctionSpace_aE_Topology_AbstractSite = new Resource("7cc4725c-9370-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_RN = new Resource("9b95b273-9370-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_TN = new Resource("818fc3fe-9375-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithHosts = new Resource("939c6e17-9375-11e9-8139-e76b19cfb4bf");
@@ -80,4 +80,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,7IEMOZWdnKCqBILCStxluXpFSfY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,ksfyiuDjg8VlGgSIF9/UFrSZE1M=] */

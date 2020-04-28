@@ -19,7 +19,7 @@ public class FunctionSpace_Topology {
   /* End Protected Region   [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf]] */
 
 
-  public static interface ISiteFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSiteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("8accd30d-9370-11e9-8139-e76b19cfb4bf")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology Topology();
@@ -35,34 +35,34 @@ public class FunctionSpace_Topology {
 
   }
   
-  public static interface ISiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> siteList);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList);
 
   }
   
-  public static class SiteFunctionsImpl implements ISiteFunctionsImpl {
+  public static class AbstractSiteFunctionsImpl implements IAbstractSiteFunctionsImpl {
 
-    public static final ISiteFunctionsImpl INSTANCE = new SiteFunctionsImpl();
+    public static final IAbstractSiteFunctionsImpl INSTANCE = new AbstractSiteFunctionsImpl();
 
-    private SiteFunctionsImpl() {}
+    private AbstractSiteFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> siteList) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList) {
       /* Begin Protected Region [[ad33683d-3775-11ea-bb06-17b9485a5d0a]] */
-    	return siteList.stream().filter(x -> x instanceof IAbstractSiteWithFunctionID).map(x -> (IAbstractSiteWithFunctionID)x).sorted(java.util.Comparator.comparing(IAbstractSiteWithFunctionID::selectFunctionID)).collect(Collectors.toList());   
+    	return abstractSiteList.stream().filter(x -> x instanceof IAbstractSiteWithFunctionID).map(x -> (IAbstractSiteWithFunctionID)x).sorted(java.util.Comparator.comparing(IAbstractSiteWithFunctionID::selectFunctionID)).collect(Collectors.toList());   
       /* End Protected Region   [[ad33683d-3775-11ea-bb06-17b9485a5d0a]] */
     }
 
   }
   
-  public static class SiteFunctions {
+  public static class AbstractSiteFunctions {
 
-    private SiteFunctions() {}
+    private AbstractSiteFunctions() {}
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> siteList) {
-      return DynamicResourceUtil.invoke(ISiteFunctionsImpl.class, SiteFunctionsImpl.INSTANCE, siteList).sortByFunctionId(siteList);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList) {
+      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSiteList).sortByFunctionId(abstractSiteList);
     }
 
   }
@@ -521,4 +521,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,YCEYDy5sfbw9KViAZclwJdNBKdg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,MMWAXNhd+4vax2p+74eiNqEtrOM=] */

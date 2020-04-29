@@ -252,144 +252,129 @@ public class FunctionSpace_Sprints {
     @Override
     public java.lang.Double CalculateVelocity(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
       /* Begin Protected Region [[079398d0-33b1-11e6-94cd-fbf6c8ccd08d]] */
-        int sprintCount = 0;
-        double sprintDoneWork = 0;
-        for( ISprint sprint : sprints.selectSprints())
-        {
-        	if(!sprint.selectState().isDone())
-        	{
-        		continue;
-        	}
-        	
-        	sprintCount++;
-        	ISprintBacklog sprintBacklog = sprint.selectSprintBacklog();
-        	if( sprintBacklog != null)
-        	{
-        		double sum = sprintBacklog.selectWorkItems().stream().mapToDouble(x -> {
-        			if( x.selectEstimate() == null)
-        				return 0;
-        			return Double.parseDouble(x.selectEstimate().selectName());
-        		}).sum();
-        		sprintDoneWork += sum;
-        	}
-        }
-        if( sprintCount == 0)
-        {
-        	return 0.0;
-        }
- 
-        
-        return sprintDoneWork / sprintCount;
+		int sprintCount = 0;
+		double sprintDoneWork = 0;
+		for (ISprint sprint : sprints.selectSprints()) {
+			if (!sprint.selectState().isDone()) {
+				continue;
+			}
+
+			sprintCount++;
+			ISprintBacklog sprintBacklog = sprint.selectSprintBacklog();
+			if (sprintBacklog != null) {
+				double sum = sprintBacklog.selectWorkItems().stream().mapToDouble(x -> {
+					if (x.selectEstimate() == null)
+						return 0;
+					return Double.parseDouble(x.selectEstimate().selectName());
+				}).sum();
+				sprintDoneWork += sum;
+			}
+		}
+		if (sprintCount == 0) {
+			return 0.0;
+		}
+
+		return sprintDoneWork / sprintCount;
       /* End Protected Region   [[079398d0-33b1-11e6-94cd-fbf6c8ccd08d]] */
     }
 
     @Override
     public java.lang.Double CalculateVelocityForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
       /* Begin Protected Region [[d139e02f-33bf-11e6-94cd-fbf6c8ccd08d]] */
-        int sprintCount = 0;
-        double sprintDoneWork = 0;
-                
-        ISprint actualSprint = ActualSprintForModule(outcome, sprints);
-        if( actualSprint == null)
-        	return new Integer(0).doubleValue();
-        
-        IReleases releasePlanning = outcome.extension(IOutcomeFunctions.class).GetReleasePlanning();
-        IReleasesFunctions planningFunctions = releasePlanning.extension(IReleasesFunctions.class);
-        ISprint currentSprint = planningFunctions.CurrentSprint();
-        if( currentSprint == null)
-        	return new Integer(0).doubleValue();
-       
-        
-        for(int sprintId = actualSprint.selectIdentifier(); sprintId <= currentSprint.selectIdentifier(); ++sprintId )
-        {
-        	ISprint sprint = planningFunctions.GetSprint(sprintId);
-        	if( sprint != null && sprint.selectState().isDone())
-        	{
-        		ISprint planedSprint = sprints.selectSprints().stream().filter(x -> x.selectIdentifier() == sprint.selectIdentifier()).findFirst().get();
-      
-        		if( planedSprint == null)
-        			continue;
-        		
-            	ISprintBacklog sprintBacklog = planedSprint.selectSprintBacklog();
-            	if( sprintBacklog == null)
-            		continue;
-            	
-        		++sprintCount;
-        		double sum = sprintBacklog.selectWorkItems().stream().mapToDouble(x -> {
-        			if( x.selectEstimate() == null)
-        				return 0;
-        			
-        			IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
-        			IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
-        			if( workItemModule.equals(outcome))
-        			{
-            			return Double.parseDouble(x.selectEstimate().selectName());        				
-        			}
-        			return 0;
-        		}).sum();
-        		sprintDoneWork += sum;
-        	}
-        }
-        
-        return sprintDoneWork / sprintCount;
+		int sprintCount = 0;
+		double sprintDoneWork = 0;
+
+		ISprint actualSprint = ActualSprintForModule(outcome, sprints);
+		if (actualSprint == null)
+			return Integer.valueOf(0).doubleValue();
+
+		IReleases releasePlanning = outcome.extension(IOutcomeFunctions.class).GetReleasePlanning();
+		IReleasesFunctions planningFunctions = releasePlanning.extension(IReleasesFunctions.class);
+		ISprint currentSprint = planningFunctions.CurrentSprint();
+		if (currentSprint == null)
+			return Integer.valueOf(0).doubleValue();
+
+		for (int sprintId = actualSprint.selectIdentifier(); sprintId <= currentSprint.selectIdentifier(); ++sprintId) {
+			ISprint sprint = planningFunctions.GetSprint(sprintId);
+			if (sprint != null && sprint.selectState().isDone()) {
+				ISprint planedSprint = sprints.selectSprints().stream()
+						.filter(x -> x.selectIdentifier() == sprint.selectIdentifier()).findFirst().get();
+
+				if (planedSprint == null)
+					continue;
+
+				ISprintBacklog sprintBacklog = planedSprint.selectSprintBacklog();
+				if (sprintBacklog == null)
+					continue;
+
+				++sprintCount;
+				double sum = sprintBacklog.selectWorkItems().stream().mapToDouble(x -> {
+					if (x.selectEstimate() == null)
+						return 0;
+
+					IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
+					IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
+					if (workItemModule.equals(outcome)) {
+						return Double.parseDouble(x.selectEstimate().selectName());
+					}
+					return 0;
+				}).sum();
+				sprintDoneWork += sum;
+			}
+		}
+
+		return sprintDoneWork / sprintCount;
       /* End Protected Region   [[d139e02f-33bf-11e6-94cd-fbf6c8ccd08d]] */
     }
 
     @Override
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprint ActualSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
       /* Begin Protected Region [[80511a71-349c-11e6-8839-1f6631cc77ac]] */
-        ISprint lastSprint = null;
-        for( ISprint planedSprint : sprints.selectSprints())
-        {
-        	ISprintBacklog sprintBacklog = planedSprint.selectSprintBacklog();
-        	if( sprintBacklog != null)
-        	{
-        		boolean hasWorkItem = sprintBacklog.selectWorkItems().stream().anyMatch(x -> {
-         			IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
-        			IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
-        			return workItemModule.equals(outcome);
-        		});
-        		
-        		if( !hasWorkItem)
-        		{
-        			continue;
-        		}
-        			
-        		if( lastSprint == null)
-        		{
-        			lastSprint = planedSprint;
-        		}
-        		else
-        		{
-        			ISprint sprint = planedSprint;
-        			if( lastSprint.selectIdentifier() > sprint.selectIdentifier())
-        			{
-            			lastSprint = sprint;        				
-        			}
-        		}
-        	}
-        }
-        
-        return lastSprint;
+		ISprint lastSprint = null;
+		for (ISprint planedSprint : sprints.selectSprints()) {
+			ISprintBacklog sprintBacklog = planedSprint.selectSprintBacklog();
+			if (sprintBacklog != null) {
+				boolean hasWorkItem = sprintBacklog.selectWorkItems().stream().anyMatch(x -> {
+					IBacklog backlog = x.extension(IWorkItemFunctions.class).GetBacklog();
+					IOutcome workItemModule = backlog.extension(IBacklogFunctions.class).GetOutcome();
+					return workItemModule.equals(outcome);
+				});
+
+				if (!hasWorkItem) {
+					continue;
+				}
+
+				if (lastSprint == null) {
+					lastSprint = planedSprint;
+				} else {
+					ISprint sprint = planedSprint;
+					if (lastSprint.selectIdentifier() > sprint.selectIdentifier()) {
+						lastSprint = sprint;
+					}
+				}
+			}
+		}
+
+		return lastSprint;
       /* End Protected Region   [[80511a71-349c-11e6-8839-1f6631cc77ac]] */
     }
 
     @Override
     public java.lang.Integer LastSprintForModule(final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.outcomes.javamodel.IOutcome outcome, final cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.javamodel.ISprints sprints) {
       /* Begin Protected Region [[aeb46814-349c-11e6-8839-1f6631cc77ac]] */
-        double velocity = CalculateVelocityForModule(outcome, sprints);
-        IBacklog backlog = outcome.extension(IOutcomeFunctions.class).GetBacklog();
-        if( backlog == null)
-        	return null;
+		double velocity = CalculateVelocityForModule(outcome, sprints);
+		IBacklog backlog = outcome.extension(IOutcomeFunctions.class).GetBacklog();
+		if (backlog == null)
+			return null;
 
-        double sumEstimate = backlog.extension(IBacklogFunctions.class).SumOpenEstimates();
-        IReleases releasePlanning = sprints.extension(ISprintsFunctions.class).GetReleasePlanning();
-        ISprint currentSprint = releasePlanning.extension(IReleasesFunctions.class).CurrentSprint();
-        if( currentSprint == null)
-        	return null;
-        
-        int requiredSprints = new Double(sumEstimate / velocity).intValue();
-        return currentSprint.selectIdentifier() + requiredSprints;
+		double sumEstimate = backlog.extension(IBacklogFunctions.class).SumOpenEstimates();
+		IReleases releasePlanning = sprints.extension(ISprintsFunctions.class).GetReleasePlanning();
+		ISprint currentSprint = releasePlanning.extension(IReleasesFunctions.class).CurrentSprint();
+		if (currentSprint == null)
+			return null;
+
+		int requiredSprints = Double.valueOf(sumEstimate / velocity).intValue();
+		return currentSprint.selectIdentifier() + requiredSprints;
       /* End Protected Region   [[aeb46814-349c-11e6-8839-1f6631cc77ac]] */
     }
 
@@ -549,7 +534,7 @@ public class FunctionSpace_Sprints {
 				return iterSprint;
 			}
 		}
-		
+
 		return null;
       /* End Protected Region   [[4f0e534b-8a0f-11e6-8085-d9bdba2de943]] */
     }

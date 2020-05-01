@@ -56,6 +56,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="fdc215fc-8b93-11ea-9fe4-c3164a3bb06e" type="resource" guid="fdc08f58-8b93-11ea-9fe4-c3164a3bb06e" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fd7635f0-3c49-11e5-871f-6beac6a7c24b" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -277,6 +278,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="fdc215fc-8b93-11ea-9fe4-c3164a3bb06e">
+      <resource guid="fdc08f58-8b93-11ea-9fe4-c3164a3bb06e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fdc08f5a-8b93-11ea-9fe4-c3164a3bb06e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ff1941a6-8b93-11ea-9fe4-c3164a3bb06e" type="literal">cleon.common.doc.metamodel.spec.paragraph.table.javamodel.TableValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fdc1c7db-8b93-11ea-9fe4-c3164a3bb06e" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

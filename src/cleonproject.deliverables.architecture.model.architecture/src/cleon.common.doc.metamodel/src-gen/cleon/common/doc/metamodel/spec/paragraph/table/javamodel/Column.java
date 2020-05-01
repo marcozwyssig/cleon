@@ -40,11 +40,11 @@ public class Column extends DynamicResource implements IColumn {
   }
 
   @Override
-  public java.lang.String selectWidth() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Column_width);
+  public java.lang.Integer selectWidth() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Column_width);
   }
     
-  public void setWidth(java.lang.String width) {
+  public void setWidth(java.lang.Integer width) {
      _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Column_width, width);
   }
 
@@ -65,10 +65,10 @@ public class Column extends DynamicResource implements IColumn {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Column_width, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Column_width, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06fe17d8-3c4a-11e5-871f-6beac6a7c24b,FtRWEKPh1FuZTRIZqbC87sFwXSU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06fe17d8-3c4a-11e5-871f-6beac6a7c24b,GCpm2V386NN6RRutrPggTaMfG1w=] */

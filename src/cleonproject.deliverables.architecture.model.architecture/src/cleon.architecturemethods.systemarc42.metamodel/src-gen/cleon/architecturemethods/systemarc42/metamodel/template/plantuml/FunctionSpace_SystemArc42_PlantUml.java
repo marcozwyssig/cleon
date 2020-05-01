@@ -14,7 +14,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.
 public class FunctionSpace_SystemArc42_PlantUml {
 
   /* Begin Protected Region [[f247dcd9-02db-11e9-9e58-33d596257b14]] */
-  
+
   /* End Protected Region   [[f247dcd9-02db-11e9-9e58-33d596257b14]] */
 
 
@@ -153,22 +153,20 @@ public class FunctionSpace_SystemArc42_PlantUml {
     @Override
     public java.lang.String RenderHidden(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList) {
       /* Begin Protected Region [[5254da7b-18e9-11e9-84df-097eeec74d2d]] */
-    	StringBuilder builder = new StringBuilder();
-    	INode last = null;
-    	for( INode next : nodeList)
-    	{
-    		if( last != null)
-    		{
-    			INodeFunctions lastFunction = last.extension(INodeFunctions.class);
-    			INodeFunctions nextFunction = next.extension(INodeFunctions.class);
-    			builder.append(lastFunction.javaName());
-    			builder.append(" -[hidden]- ");
-    			builder.append(nextFunction.javaName());
-    			builder.append("\n");
-    		}
-			last = next;    		
-    	}   	
-    	return builder.toString();  
+      final StringBuilder builder = new StringBuilder();
+      INode last = null;
+      for (final INode next : nodeList) {
+      	if (last != null) {
+      		final INodeFunctions lastFunction = last.extension(INodeFunctions.class);
+      		final INodeFunctions nextFunction = next.extension(INodeFunctions.class);
+      		builder.append(lastFunction.javaName());
+      		builder.append(" -[hidden]- ");
+      		builder.append(nextFunction.javaName());
+      		builder.append("\n");
+      	}
+      	last = next;
+      }
+      return builder.toString();
       /* End Protected Region   [[5254da7b-18e9-11e9-84df-097eeec74d2d]] */
     }
 
@@ -289,13 +287,4 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
 }
 
-      /* Begin Protected Region [[d316009e-0eb3-11e9-9f19-6d15636f4ecc]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[d316009e-0eb3-11e9-9f19-6d15636f4ecc]] */
-      /* Begin Protected Region [[c044124c-1977-11e9-b3a0-d155f11f9df1]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[c044124c-1977-11e9-b3a0-d155f11f9df1]] */
-      /* Begin Protected Region [[5104adea-1980-11e9-88a0-1f786f12e4c1]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[5104adea-1980-11e9-88a0-1f786f12e4c1]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,NR2cGEfknoEW+XPTncmIIaNLgVc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,+4R+AXT8JjXU10qGHhVe2H6E52E=] */

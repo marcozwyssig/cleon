@@ -18,7 +18,8 @@ import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.SubnetUtils;
 
 public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidationAspect {
-
+	private final int LOW = 32;
+	
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
 		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
@@ -42,14 +43,18 @@ public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidati
 		for (IAbstractNetworkNode node : nodes) {
 			boolean isInRange = false;
 			for( IIPv4_Mask cidr : cidrs) {
-				SubnetUtils subnet = new SubnetUtils(
-						Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
-				
-				isInRange = subnet.getInfo().isInRange(
-						Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource()));
+				String ip = Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource());
+				if( cidr.selectMask() == LOW ) {
+					isInRange = cidr.selectIPv4().equals(ip);
+						
+				} else {
+					SubnetUtils subnet = new SubnetUtils(
+							Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));					
+					isInRange = subnet.getInfo().isInRange(ip);					
+				}
 				if(isInRange) {
 					break;
-				}
+				}				
 			}
 			if (!isInRange) {
 				toFixedList.add(node);

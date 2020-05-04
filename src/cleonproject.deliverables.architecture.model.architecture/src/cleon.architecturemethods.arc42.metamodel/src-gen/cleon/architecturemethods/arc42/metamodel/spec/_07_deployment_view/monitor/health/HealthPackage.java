@@ -4,10 +4,10 @@ import ch.actifsource.core.Resource;
 
 public class HealthPackage {
   
-  public static final Resource Health = new Resource("0bb30754-8993-11e8-8250-d9b67f7d5f7f");
-  public static final Resource Health_scripts = new Resource("32be532f-b75f-11e8-b27b-312e5be91ffb");
-  public static final Resource Health_operators = new Resource("87eeca15-b7e4-11e8-b27b-312e5be91ffb");
-  public static final Resource Health_deviceBehaviours = new Resource("cf090a75-b7e5-11e8-b27b-312e5be91ffb");
+  public static final Resource Rules = new Resource("0bb30754-8993-11e8-8250-d9b67f7d5f7f");
+  public static final Resource Rules_scripts = new Resource("32be532f-b75f-11e8-b27b-312e5be91ffb");
+  public static final Resource Rules_operators = new Resource("87eeca15-b7e4-11e8-b27b-312e5be91ffb");
+  public static final Resource Rules_deviceBehaviours = new Resource("cf090a75-b7e5-11e8-b27b-312e5be91ffb");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +28,4 @@ public class HealthPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health,YL5FlqMmD8yzd7oYqD/f6dNtUk4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health,NtejOCsuyRlHE0QrTJJcuUSAokY=] */

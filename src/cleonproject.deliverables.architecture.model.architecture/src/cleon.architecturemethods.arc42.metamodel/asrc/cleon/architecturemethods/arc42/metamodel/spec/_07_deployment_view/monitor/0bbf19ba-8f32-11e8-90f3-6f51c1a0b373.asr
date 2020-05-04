@@ -37,7 +37,7 @@
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
         <resource statement-guid="863cb76d-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="863b09ba-8f33-11e8-90f3-6f51c1a0b373">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-            <resource statement-guid="8641bf87-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="86417163-8f33-11e8-90f3-6f51c1a0b373" />
+            <resource statement-guid="7c8698b2-8dee-11ea-b01b-6bc31a0e971d" type="resource" guid="7c864b8d-8dee-11ea-b01b-6bc31a0e971d" />
           </owns>
         </resource>
       </owns>
@@ -56,7 +56,7 @@
           <object statement-guid="9c9e15ca-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="9c9e15cb-8f33-11e8-90f3-6f51c1a0b373" type="literal">alarms</object>
+          <object statement-guid="9c9e15cb-8f33-11e8-90f3-6f51c1a0b373" type="literal">event</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="274e5548-b811-11e8-b27b-312e5be91ffb">
@@ -163,7 +163,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="0bc0523d-8f32-11e8-90f3-6f51c1a0b373" type="literal">AlarmingView</object>
+    <object statement-guid="0bc0523d-8f32-11e8-90f3-6f51c1a0b373" type="literal">Events</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="84f54349-8f33-11e8-90f3-6f51c1a0b373">
@@ -181,13 +181,13 @@
                 <object statement-guid="863c423c-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                <object statement-guid="8641bf87-8f33-11e8-90f3-6f51c1a0b373">
-                  <resource guid="86417163-8f33-11e8-90f3-6f51c1a0b373">
+                <object statement-guid="7c8698b2-8dee-11ea-b01b-6bc31a0e971d">
+                  <resource guid="7c864b8d-8dee-11ea-b01b-6bc31a0e971d">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="86419875-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                      <object statement-guid="7c8672a0-8dee-11ea-b01b-6bc31a0e971d" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="86419876-8f33-11e8-90f3-6f51c1a0b373" type="literal">Alarming</object>
+                      <object statement-guid="7c8698b1-8dee-11ea-b01b-6bc31a0e971d" type="literal">Ereignissteuerung</object>
                     </predicate>
                   </resource>
                 </object>

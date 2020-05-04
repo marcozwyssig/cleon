@@ -41,11 +41,11 @@ public class Operator extends DynamicResource implements IOperator {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> selectMonitoringTool() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> selectMonitoringTool() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool);
   }
 
-  public Operator setMonitoringTool(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> monitoringTool) {
+  public Operator setMonitoringTool(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> monitoringTool) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool, monitoringTool);
     return this;
   }
@@ -75,13 +75,13 @@ public class Operator extends DynamicResource implements IOperator {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_actor, visitor);
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.javamodel.IOperator> selectToMeMonitoringTool(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.javamodel.IOperator> selectToMeMonitoringTool(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.javamodel.IOperator.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.operators.OperatorsPackage.Operator_monitoringTool, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class Operator extends DynamicResource implements IOperator {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8726473-8fe1-11e8-85d9-314ddfdf57eb,o5xlJvhEowDM+hW4CfXqAM2/FVE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8726473-8fe1-11e8-85d9-314ddfdf57eb,jUAAMNS8xhlLPfklG6W4cgzN7V4=] */

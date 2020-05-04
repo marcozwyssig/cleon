@@ -8,12 +8,12 @@ public interface IMonitorView extends cleon.common.doc.metamodel.spec.chapter.ja
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlocks selectMonitoringscomponents();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensors selectSensors();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IAlarmingView selectAlarmingView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.javamodel.IRules selectRules();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.javamodel.IHealth selectHealth();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IEvents selectEventing();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,2DqBvXfe/ZzubSXc6g136Gmuvd0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,0tF6lTXbQuWvmT6dnOknOxWW9xY=] */

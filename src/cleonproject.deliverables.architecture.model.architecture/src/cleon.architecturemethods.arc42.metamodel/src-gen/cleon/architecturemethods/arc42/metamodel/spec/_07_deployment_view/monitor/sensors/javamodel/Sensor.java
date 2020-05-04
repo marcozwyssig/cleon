@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class MonitoringBuildingBlocks extends DynamicResource implements IMonitoringBuildingBlocks {
+public class Sensor extends DynamicResource implements ISensor {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMonitoringBuildingBlocks> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMonitoringBuildingBlocks>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISensor> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISensor>() {
     
     @Override
-    public IMonitoringBuildingBlocks create() {
-      return new MonitoringBuildingBlocks();
+    public ISensor create() {
+      return new Sensor();
     }
     
     @Override
-    public IMonitoringBuildingBlocks create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new MonitoringBuildingBlocks(resourceRepository, resource);
+    public ISensor create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Sensor(resourceRepository, resource);
     }
   
   };
 
-  public MonitoringBuildingBlocks() {
-    super(IMonitoringBuildingBlocks.TYPE_ID);
+  public Sensor() {
+    super(ISensor.TYPE_ID);
   }
   
-  public MonitoringBuildingBlocks(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IMonitoringBuildingBlocks.TYPE_ID);
+  public Sensor(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISensor.TYPE_ID);
   }
 
   // attributes
@@ -51,12 +51,12 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> selectBuildingBlocks() {
-    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.MonitoringBuildingBlocks_buildingBlocks);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuildingblock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.Sensor_buildingblock);
   }
 
-  public MonitoringBuildingBlocks setBuildingBlocks(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> buildingBlocks) {
-    _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.MonitoringBuildingBlocks_buildingBlocks, buildingBlocks);
+  public Sensor setBuildingblock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingblock) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.Sensor_buildingblock, buildingblock);
     return this;
   }
     
@@ -65,7 +65,7 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public MonitoringBuildingBlocks setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public Sensor setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -75,7 +75,7 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public MonitoringBuildingBlocks setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public Sensor setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -85,8 +85,18 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public MonitoringBuildingBlocks setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public Sensor setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public Sensor setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
     
@@ -95,7 +105,7 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public MonitoringBuildingBlocks setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Sensor setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -106,16 +116,17 @@ public class MonitoringBuildingBlocks extends DynamicResource implements IMonito
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.MonitoringBuildingBlocks_buildingBlocks, visitor);
+    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.Sensor_buildingblock, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlocks selectToMeBuildingBlocks(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.MonitoringBuildingBlocks_buildingBlocks, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> selectToMeBuildingblock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.SensorsPackage.Sensor_buildingblock, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e8b550a-8993-11e8-8250-d9b67f7d5f7f,jh3bgiGl081zVpF0XKD9N3x9FeA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,rszLXdEZAdC+ekUREItz2i26ej4=] */

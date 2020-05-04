@@ -10,8 +10,8 @@ public interface IAlarmBehaviour extends ch.actifsource.core.javamodel.IResource
   
   public java.lang.Integer selectVerificationTime();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> selectAlarmHandler();
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> selectAlarmHandler();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,08732ce2-9a5a-11e8-ab8b-639e9e9b044b,2PEoRin1ZQ5UVWobMlPJhpfDxB8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,08732ce2-9a5a-11e8-ab8b-639e9e9b044b,Zy9177SLo69TQ2h6IP3NCM1l6w4=] */

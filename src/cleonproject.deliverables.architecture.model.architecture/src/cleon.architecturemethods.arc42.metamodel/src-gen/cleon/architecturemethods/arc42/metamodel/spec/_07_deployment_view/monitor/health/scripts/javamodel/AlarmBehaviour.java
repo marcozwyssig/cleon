@@ -42,11 +42,11 @@ public class AlarmBehaviour extends DynamicResource implements IAlarmBehaviour {
   // relations
   
   @Override
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> selectAlarmHandler() {
-    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler);
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> selectAlarmHandler() {
+    return _getList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler);
   }
 
-  public AlarmBehaviour setAlarmHandler(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock> alarmHandler) {
+  public AlarmBehaviour setAlarmHandler(java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor> alarmHandler) {
     _setList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler, alarmHandler);
     return this;
   }
@@ -67,13 +67,13 @@ public class AlarmBehaviour extends DynamicResource implements IAlarmBehaviour {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_verificationTime, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler, visitor);
+    _acceptList(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.javamodel.IAlarmBehaviour> selectToMeAlarmHandler(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.IMonitoringBuildingBlock object) {
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.javamodel.IAlarmBehaviour> selectToMeAlarmHandler(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensors.javamodel.ISensor object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.javamodel.IAlarmBehaviour.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.health.scripts.ScriptsPackage.AlarmBehaviour_alarmHandler, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08732ce2-9a5a-11e8-ab8b-639e9e9b044b,/BiygqgvvOrbAJxdHpWaNYQeAUY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08732ce2-9a5a-11e8-ab8b-639e9e9b044b,dGhEqmbgTJvLzrT2ozcffDMiBBg=] */

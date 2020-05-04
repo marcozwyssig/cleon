@@ -47,17 +47,17 @@ public class FunctionSpace_RBAC {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
-    	IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().values().stream().filter(x -> x.selectNetdomain().selectIdentifier().equals(site.selectIdentifier())).findFirst().orElse(null);
+    	final IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().values().stream().filter(x -> x.selectNetdomain().selectSite().selectName().equals(site.selectSite().selectName())).findFirst().orElse(null);
     	if(roleNetDomainGroup == null) {
     		return null;
     	}
     	
-    	IRoleActorGroup roleActorGroup = roleNetDomainGroup.selectRoleforActors().get(actor.getResource());
+    	final IRoleActorGroup roleActorGroup = roleNetDomainGroup.selectRoleforActors().get(actor.getResource());
     	if( roleActorGroup == null ) {
     		return null;
     	}
     	
-    	IRoleActorResponsibility roleActorResponsiblity = roleActorGroup.selectRoleActorResponsibilities().get(responsibilty.getResource());
+    	final IRoleActorResponsibility roleActorResponsiblity = roleActorGroup.selectRoleActorResponsibilities().get(responsibilty.getResource());
     	if( roleActorResponsiblity == null ) {
     		return null;
     	}
@@ -129,7 +129,7 @@ public class FunctionSpace_RBAC {
     @Override
     public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
       /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
-    	IAbstractNetdomainGroupFunctions functions = abstractNetdomainGroup.extension(IAbstractNetdomainGroupFunctions.class);
+    	final IAbstractNetdomainGroupFunctions functions = abstractNetdomainGroup.extension(IAbstractNetdomainGroupFunctions.class);
     	return ((functions.Max() + 99) / 100 ) * 100;
       /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }

@@ -73,7 +73,7 @@
           <object statement-guid="dfc0b5a6-9a5b-11e8-ab8b-639e9e9b044b" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="e0d3d35b-9a5b-11e8-ab8b-639e9e9b044b" type="literal">buildingBlocks</object>
+          <object statement-guid="e0d3d35b-9a5b-11e8-ab8b-639e9e9b044b" type="literal">sensor</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="e5915b70-9a5b-11e8-ab8b-639e9e9b044b">
@@ -223,7 +223,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="0e8b7c1d-8993-11e8-8250-d9b67f7d5f7f" type="literal">MonitoringBuildingBlocks</object>
+    <object statement-guid="0e8b7c1d-8993-11e8-8250-d9b67f7d5f7f" type="literal">Sensors</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c1eb3022-8f33-11e8-90f3-6f51c1a0b373">
@@ -247,7 +247,7 @@
                       <object statement-guid="c3ec304e-8f33-11e8-90f3-6f51c1a0b373" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="c3ec575f-8f33-11e8-90f3-6f51c1a0b373" type="literal">Überwachungskomponenten</object>
+                      <object statement-guid="c3ec575f-8f33-11e8-90f3-6f51c1a0b373" type="literal">Sensoren</object>
                     </predicate>
                   </resource>
                 </object>

@@ -519,6 +519,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface ISiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("66d2a1b5-8e02-11ea-b01b-6bc31a0e971d")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface ISiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SiteFunctionsImpl implements ISiteFunctionsImpl {
+
+    public static final ISiteFunctionsImpl INSTANCE = new SiteFunctionsImpl();
+
+    private SiteFunctionsImpl() {}
+
+  }
+  
+  public static class SiteFunctions {
+
+    private SiteFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,MMWAXNhd+4vax2p+74eiNqEtrOM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,1wxhxjC7upJP8CF4E7PU9KoxlQ0=] */

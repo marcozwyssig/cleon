@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISupplyNetDomainNode extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode, cleon.common.resources.metamodel.spec.id.javamodel.IStringBusinessObjectId {
+public interface ISupplyNetDomainNode extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0674e77a-0aaf-11e9-a8f9-abf1763bbc53");
   
@@ -14,4 +14,4 @@ public interface ISupplyNetDomainNode extends cleon.architecturemethods.systemar
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,Ek7EMdfVOPtDbb6Prp09sszW3uw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0674e77a-0aaf-11e9-a8f9-abf1763bbc53,XGLyzLtXSYnqt6Rvr934Yr8AAyI=] */

@@ -353,6 +353,31 @@ public class FunctionSpace_Segmentation {
 
   }
 
+  public static interface ISecurityInternetZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("10fd1249-8e06-11ea-b01b-6bc31a0e971d")
+    public java.lang.String GetTypeName();
+
+  }
+  
+  public static interface ISecurityInternetZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SecurityInternetZoneFunctionsImpl implements ISecurityInternetZoneFunctionsImpl {
+
+    public static final ISecurityInternetZoneFunctionsImpl INSTANCE = new SecurityInternetZoneFunctionsImpl();
+
+    private SecurityInternetZoneFunctionsImpl() {}
+
+  }
+  
+  public static class SecurityInternetZoneFunctions {
+
+    private SecurityInternetZoneFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,CmhItdkiUg73SXXooByd+i9Uw+w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,61WueA22CXvBMoc+TYeKIWpl7OM=] */

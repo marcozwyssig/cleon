@@ -261,6 +261,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("f974edc3-07bb-11ea-980e-578ab3bc55dc")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorResponsibility> AllRoleActorResponsibilityInDomain();
 
+    @IDynamicResourceExtension.MethodId("4633316d-9043-11ea-8028-45f28a9dbef3")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllRoleSystemComponents();
+
   }
   
   public static interface IRoleActorResponsibilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -283,4 +286,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,8jXjqYO+8gA8TGcFsj4RdQmiojo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,YfSUlvY221oRS7tcNlaLrujCNQQ=] */

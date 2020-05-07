@@ -1,7 +1,10 @@
 package cleon.common.resources.metamodel.spec.id.javamodel;
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.Comparator;
 import java.util.List;
-import java.util.OptionalInt;
+import java.util.stream.Collectors;
 
 import ch.actifsource.core.CorePackage;
 import ch.actifsource.core.INode;
@@ -13,14 +16,15 @@ import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
+import ch.actifsource.util.log.Logger;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusinessObjectId>
 		extends AbstractInitializationAspect {
 
-	private Class<T> _classInstance;
+	private final Class<T> _classInstance;
 
-	protected BusinessObjectIdInitializerAspect(Class<T> classInstance) {
+	protected BusinessObjectIdInitializerAspect(final Class<T> classInstance) {
 		_classInstance = classInstance;
 	}
 
@@ -28,38 +32,55 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 		return _classInstance;
 	}
 
-	public void initialize(IModifiable modifiable, INode clazz, Package pkg, INode newInstance) {
-
-		ITypeSystem typeSystem = TypeSystem.create(modifiable);
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+	@Override
+	public void initialize(final IModifiable modifiable, final INode clazz, final Package pkg, final INode newInstance) {
+		final ITypeSystem typeSystem = TypeSystem.create(modifiable);
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
 		try {
-			Integer nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
+			final Integer nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
 			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(nextId));
-		} catch (Exception e) {
+		} catch (final Exception e) {
+		   final StringWriter sw = new StringWriter();
+		    e.printStackTrace(new PrintWriter(sw));
+		    final String exceptionAsString = sw.toString();
+		
 			Update.createStatement(modifiable, pkg, newInstance, CorePackage.NamedResource_name,
-					LiteralUtil.create(e.toString()));
+					LiteralUtil.create(exceptionAsString));
 		}
 	}
 
-	protected List<T> selectRessources(IDynamicResourceRepository resourceRepository, T newInstance) {
+	protected List<T> selectRessources(final IDynamicResourceRepository resourceRepository, final T newInstance) {
 		return resourceRepository.getAllResources(Clazz());
 	}
 
-	protected Integer getNextId(IDynamicResourceRepository resourceRepository, T newInstance) {
-		OptionalInt maxOptional = findNextId(selectRessources(resourceRepository, newInstance));
-		if (maxOptional.isPresent()) {
-			return maxOptional.getAsInt() + 1;
-		} else {
-			return getStartId(newInstance);
+	protected Integer getNextId(final IDynamicResourceRepository resourceRepository, final T newInstance) {
+		final List<T> resources = selectRessources(resourceRepository, newInstance);
+		if( resources.isEmpty()) {
+			return getStartId(newInstance);			
 		}
+		
+		return findNextId(newInstance, resources);
 	}
 
-	protected Integer getStartId(T newInstance) {
+	protected Integer getStartId(final T newInstance) {
 		return 0;
 	}
 
-	protected OptionalInt findNextId(List<T> resources) {
-		return resources.stream().filter(y -> y.selectIdentifier() != null).mapToInt(x -> x.selectIdentifier()).max();
-	}
+	protected Integer findNextId(final T newInstance, final List<T> resources) {
+		final List<T> sortedList = resources.stream().filter( x -> x.selectIdentifier() != null).sorted((Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier))).collect(Collectors.toList());
+		Logger.instance().logInfo("Size: " + sortedList.size());
+	    for(int i = 0; i < sortedList.size(); i++) {
+	    	final int boId = getStartId(newInstance) + i;
+	        if(boId < sortedList.get(i).selectIdentifier()) {
+	    		Logger.instance().logInfo("next: " + boId);
+	            // at this point we know this is the next id.
+	            // we can leave the method and return the next ID.
+	        	return boId;
+	        }
+	    }
+	    // we did not leave the loop (and method), because all id's are assigned.
+		Logger.instance().logInfo("total size: " + sortedList.size());
+	    return sortedList.size();
+	}	
 }

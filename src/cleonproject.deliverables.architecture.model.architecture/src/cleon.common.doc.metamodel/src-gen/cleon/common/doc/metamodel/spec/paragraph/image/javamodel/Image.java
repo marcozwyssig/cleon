@@ -32,11 +32,11 @@ public class Image extends DynamicResource implements IImage {
   
   @Override
   public java.lang.String selectImg() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.Image_img);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.ImgAware_img);
   }
     
   public void setImg(java.lang.String img) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.Image_img, img);
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.ImgAware_img, img);
   }
 
   @Override
@@ -74,11 +74,11 @@ public class Image extends DynamicResource implements IImage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.Image_img, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.image.ImagePackage.ImgAware_img, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,4nzPQvrK/+uemp49UkEzmxlYIh4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,FSWjA3Up8X/k/QMvgpCXiXwWMts=] */

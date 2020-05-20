@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.ja
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IQoSConcept extends ch.actifsource.core.javamodel.INamedResource, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.IConceptForSystemConfigurationComponent {
+public interface IQoSConcept extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.IConceptForSystemConfigurationComponent {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a4426fd0-f2e5-11e8-b860-9fc163e21388");
   
@@ -12,4 +12,4 @@ public interface IQoSConcept extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,lrD188PhHZcmElhyRtNLnfWoXJ0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,zP32NPY4Pnwu960r6wACNi4ikKE=] */

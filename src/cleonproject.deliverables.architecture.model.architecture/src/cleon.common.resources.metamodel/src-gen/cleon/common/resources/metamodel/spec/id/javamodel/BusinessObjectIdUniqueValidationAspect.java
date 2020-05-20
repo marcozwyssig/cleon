@@ -14,41 +14,39 @@ import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessObjectId> implements IResourceValidationAspect {
 
-	private static IDynamicResourceRepository resourceRepository;
+	private IDynamicResourceRepository resourceRepository;
 		
-	private Class<T> _classInstance;
+	private final Class<T> _classInstance;
 
-	protected BusinessObjectIdUniqueValidationAspect(Class<T> classInstance) {
+	protected BusinessObjectIdUniqueValidationAspect(final Class<T> classInstance) {
 		_classInstance = classInstance;
 	}
 	
-	protected List<T> getResources(IDynamicResourceRepository resourceRepository, ValidationContext context) 
+	protected List<T> getResources(final IDynamicResourceRepository resourceRepository, final ValidationContext context) 
 	{
 		return resourceRepository.getAllResources(_classInstance);
 	}
 	
 	
-	protected T getObject( IDynamicResourceRepository resourceRepository, ValidationContext context)
+	protected T getObject( final IDynamicResourceRepository resourceRepository, final ValidationContext context)
 	{
 		return resourceRepository.getResource(_classInstance, context.getResource());
 	}
 
 	@Override
-	public void validate(ValidationContext context, List<IResourceInconsistency> inconsistencyList) {
-		if( resourceRepository == null ) {
-			ITypeSystem typeSystem = context.getTypeSystem();
-			resourceRepository = typeSystem.getResourceRepository();			
-		}
+	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
+		final ITypeSystem typeSystem = context.getTypeSystem();
+		resourceRepository = typeSystem.getResourceRepository();			
 		
-		List<T> resources = getResources(resourceRepository, context);
-		T businessObjectId = getObject(resourceRepository, context);
+		final List<T> resources = getResources(resourceRepository, context);
+		final T businessObjectId = getObject(resourceRepository, context);
 
-		List<T> duplicateItems = resources.stream()
+		final List<T> duplicateItems = resources.stream()
 				.filter(x -> x.selectIdentifier().equals(businessObjectId.selectIdentifier()))
 				.collect(Collectors.toList());
 		if (!duplicateItems.isEmpty() && duplicateItems.size() != 1) {
-			String name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());
-			String errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
+			final String name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());
+			final String errormessage = String.format("Resource %1$s with id %2$d is not unique", name,
 					businessObjectId.selectIdentifier());
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					IdPackage.IntegerBusinessObjectId_identifier, errormessage));

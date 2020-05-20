@@ -9,7 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.FunctionSpace_RBAC.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleRootGroups;
 import java.util.stream.Collectors;
 /* End Protected Region   [[20a523c3-7f08-11e9-98a3-b1bd805f0a31,imports]] */
@@ -234,9 +233,9 @@ public class FunctionSpace_Role {
     @Override
     public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleNetDomainGroup roleNetDomainGroup) {
       /* Begin Protected Region [[79ca7b0b-9c8f-11e9-9b32-35cf2fd07621]] */
-    	IAbstractGroupFunctions groupFunctions = roleNetDomainGroup.extension(IAbstractGroupFunctions.class);
-    	IRoleRootGroups roleRootGroups = groupFunctions.GetRootRoleGroup();   	
-    	IRoleRootGroupsFunctions roleRootGroupsFunctions = roleRootGroups.extension(IRoleRootGroupsFunctions.class);
+    	final IAbstractGroupFunctions groupFunctions = roleNetDomainGroup.extension(IAbstractGroupFunctions.class);
+    	final IRoleRootGroups roleRootGroups = groupFunctions.GetRootRoleGroup();   	
+    	final IRoleRootGroupsFunctions roleRootGroupsFunctions = roleRootGroups.extension(IRoleRootGroupsFunctions.class);
     	return roleRootGroupsFunctions.ActorCount() * roleRootGroupsFunctions.ResponsibilityCount() + roleRootGroupsFunctions.SystemComponentCount();
       /* End Protected Region   [[79ca7b0b-9c8f-11e9-9b32-35cf2fd07621]] */
     }

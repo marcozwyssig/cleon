@@ -48,15 +48,6 @@ public class QoSConcept extends DynamicResource implements IQoSConcept {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
-  @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
-  }
-    
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
-  }
-
   // relations
   
   @Override
@@ -124,7 +115,6 @@ public class QoSConcept extends DynamicResource implements IQoSConcept {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSConcept_qosConfigurationConcept, visitor);
@@ -138,4 +128,4 @@ public class QoSConcept extends DynamicResource implements IQoSConcept {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,hxVAAPHEP+HArG7sTp68OSqxRR8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,s6BvOi4wNy9Xe4aA/2XKl3X+tMk=] */

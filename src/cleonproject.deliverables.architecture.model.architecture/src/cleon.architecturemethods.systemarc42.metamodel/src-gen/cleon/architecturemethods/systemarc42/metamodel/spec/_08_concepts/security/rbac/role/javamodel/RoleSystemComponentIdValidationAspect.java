@@ -13,11 +13,11 @@ public class RoleSystemComponentIdValidationAspect extends BusinessObjectIdUniqu
 		super(IRoleSystemComponent.class);
 	}
 	
-	protected List<IRoleSystemComponent> getResources(IDynamicResourceRepository resourceRepository, ValidationContext context) 
+	@Override
+	protected List<IRoleSystemComponent> getResources(final IDynamicResourceRepository resourceRepository, final ValidationContext context) 
 	{
-		IRoleSystemComponent component = resourceRepository.getResource(IRoleSystemComponent.class, context.getResource());
-		IRoleSystemComponentFunctions functions = component.extension(IRoleSystemComponentFunctions.class);
+		final IRoleSystemComponent component = resourceRepository.getResource(IRoleSystemComponent.class, context.getResource());
+		final IRoleSystemComponentFunctions functions = component.extension(IRoleSystemComponentFunctions.class);
 		return functions.AllRoleSystemComponentInDomain();
-	}
-		
+	}		
 }

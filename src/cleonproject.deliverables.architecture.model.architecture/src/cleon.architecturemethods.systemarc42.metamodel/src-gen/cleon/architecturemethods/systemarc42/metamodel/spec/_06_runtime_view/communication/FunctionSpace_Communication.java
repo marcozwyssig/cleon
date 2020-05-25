@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.stream.Collectors;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -30,7 +31,7 @@ public class FunctionSpace_Communication {
   public static class ListUtil
   {
 	@SafeVarargs
-	private static <T> Predicate<T> distinctByKeys(Function<? super T, ?>... keyExtractors) 
+	private static <T> Predicate<T> distinctByKeys(final Function<? super T, ?>... keyExtractors) 
 	  {
 	    final Map<List<?>, Boolean> seen = new ConcurrentHashMap<>();
 	     
@@ -243,9 +244,9 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyInter(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[85bc9b26-df87-11e9-9827-a1514ee8d06a]] */
-    	List<ISource> result = new ArrayList<ISource>();
-    	for( ISource source : sourceList ) {
-    		ISourceFunctions functions = source.extension(ISourceFunctions.class);
+    	final List<ISource> result = new ArrayList<>();
+    	for( final ISource source : sourceList ) {
+    		final ISourceFunctions functions = source.extension(ISourceFunctions.class);
     		if(!functions.GetInterConnection().isEmpty()) {
     			result.add(source);
     		}
@@ -258,9 +259,9 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyIntra(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[820fd60a-e042-11e9-aa67-4505845acdbd]] */
-    	List<ISource> result = new ArrayList<ISource>();
-    	for( ISource source : sourceList ) {
-    		ISourceFunctions functions = source.extension(ISourceFunctions.class);    		
+    	final List<ISource> result = new ArrayList<>();
+    	for( final ISource source : sourceList ) {
+    		final ISourceFunctions functions = source.extension(ISourceFunctions.class);    		
     		if(!functions.GetIntraConnection().isEmpty()) {
     			result.add(source);
     		}
@@ -273,7 +274,7 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[983f4fe1-e042-11e9-aa67-4505845acdbd]] */
-    	ISourceFunctions sourceFunctions = source.extension(ISourceFunctions.class);
+    	final ISourceFunctions sourceFunctions = source.extension(ISourceFunctions.class);
     	if( !sourceFunctions.GetInterConnection().isEmpty())
     		return null;
 
@@ -284,7 +285,7 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctBySouceAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[11651668-04c4-11ea-8fff-bb311a3ad127]] */
-        Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(ISource::selectSourceSystemConfiguration, ISource::selectCommunicatesWith);
+        final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(ISource::selectSourceSystemConfiguration, ISource::selectCommunicatesWith);
 		return sourceList.stream()
                 .filter(distinctByKeys)
                 .collect(Collectors.toList());    	
@@ -294,7 +295,7 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53]] */
-        Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(ISource::selectCommunicatesWith);
+        final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(ISource::selectCommunicatesWith);
 		return sourceList.stream()
                 .filter(distinctByKeys)
                 .collect(Collectors.toList());     
@@ -304,14 +305,14 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderInterSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[3489ae51-0ae8-11ea-bf24-ff0f7ff0bb53]] */
-    	HashSet<String> results = new HashSet<String>();
-    	IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
-    	for( ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
+    	final HashSet<String> results = new HashSet<>();
+    	final IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
+    	for( final ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
     		if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith()) ) {
-            	for( ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-            		ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
-            		String grpResults = functions.RenderSourceHostGroups(src, env);
-            		for( String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
+            	for( final ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
+            		final ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
+            		final String grpResults = functions.RenderSourceHostGroups(src, env);
+            		for( final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
             			if( result.length() != 0) {
             				results.add(result);
             			}
@@ -320,8 +321,8 @@ public class FunctionSpace_Communication {
     		}    	
     	}
     	
-    	StringBuilder builder = new StringBuilder();
-    	for( String result : results ) {
+    	final StringBuilder builder = new StringBuilder();
+    	for( final String result : results ) {
     		builder.append(result + ",");
     	}
     	return builder.toString();
@@ -331,14 +332,14 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderInterDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[81c86001-0b16-11ea-b483-3fffd745ba7d]] */
-    	HashSet<String> results = new HashSet<String>();
-    	IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
-    	for( ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
+    	final HashSet<String> results = new HashSet<>();
+    	final IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
+    	for( final ISource src : destinationfunctions.AllInterSourceDistinctByService()) {
     		if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith()) ) {
-            	for( ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-            		ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
-            		String grpResults = functions.RenderDestinationHostGroups(src, env);
-            		for( String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
+            	for( final ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
+            		final ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
+            		final String grpResults = functions.RenderDestinationHostGroups(src, env);
+            		for( final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
             			if( result.length() != 0) {
             				results.add(result);           				
             			}
@@ -347,8 +348,8 @@ public class FunctionSpace_Communication {
             	}    		    			
     		}    	
     	}    	
-    	StringBuilder builder = new StringBuilder();
-    	for( String result : results ) {
+    	final StringBuilder builder = new StringBuilder();
+    	for( final String result : results ) {
     		builder.append(result + ",");
     	}
     	return builder.toString();   
@@ -358,14 +359,14 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderIntraSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[5e8db34c-0b82-11ea-ab86-a9f1f5c47ebb]] */
-    	HashSet<String> results = new HashSet<String>();
-    	IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
-    	for( ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
+    	final HashSet<String> results = new HashSet<>();
+    	final IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
+    	for( final ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
     		if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith()) ) {
-            	for( ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-            		ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
-            		String grpResults = functions.RenderSourceHostGroups(src, env);
-            		for( String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
+            	for( final ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
+            		final ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
+            		final String grpResults = functions.RenderSourceHostGroups(src, env);
+            		for( final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
             			if( result.length() != 0) {
             				results.add(result);
             			}
@@ -374,8 +375,8 @@ public class FunctionSpace_Communication {
     		}    	
     	}
     	
-    	StringBuilder builder = new StringBuilder();
-    	for( String result : results ) {
+    	final StringBuilder builder = new StringBuilder();
+    	for( final String result : results ) {
     		builder.append(result + ",");
     	}
     	return builder.toString();   
@@ -385,14 +386,14 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[66f3d07d-0b82-11ea-ab86-a9f1f5c47ebb]] */
-    	HashSet<String> results = new HashSet<String>();
-    	IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
-    	for( ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
+    	final HashSet<String> results = new HashSet<>();
+    	final IDestinationSubSecurityZoneFunctions destinationfunctions = dst.extension(IDestinationSubSecurityZoneFunctions.class);
+    	for( final ISource src : destinationfunctions.AllIntraSourceDistinctByService()) {
     		if (src.selectCommunicatesWith().equals(source.selectCommunicatesWith()) ) {
-            	for( ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
-            		ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
-            		String grpResults = functions.RenderDestinationHostGroups(src, env);
-            		for( String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
+            	for( final ISourceSubSecurityZone sourceSubsecurity : src.selectAccessAllowed().values()) {
+            		final ISourceSubSecurityZoneFunctions functions = sourceSubsecurity.extension(ISourceSubSecurityZoneFunctions.class);
+            		final String grpResults = functions.RenderDestinationHostGroups(src, env);
+            		for( final String result : Arrays.asList(StringUtil.getNewLinePattern().split(grpResults))) {            			
             			if( result.length() != 0) {
             				results.add(result);           				
             			}
@@ -401,8 +402,8 @@ public class FunctionSpace_Communication {
             	}    		    			
     		}    	
     	}    	
-    	StringBuilder builder = new StringBuilder();
-    	for( String result : results ) {
+    	final StringBuilder builder = new StringBuilder();
+    	for( final String result : results ) {
     		builder.append(result + ",");
     	}
     	return builder.toString();      
@@ -595,12 +596,15 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
       /* Begin Protected Region [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
-    	int maxSize = 38;
+    	final int maxSize = 58;
     	if( textLiteral.length() == 0) {
     		return StringUtil.repeat(",", maxSize);
-    	}
+    	}    
     	
-    	int size = textLiteral.split(",").length;
+    	final int size = textLiteral.split(",").length;
+    	if( maxSize - size < 0 ) {
+    		throw new RuntimeException(String.format("Size %d for missingCommas to high", size));
+    	}
     	return textLiteral + StringUtil.repeat(",", maxSize - size);
       /* End Protected Region   [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
     }

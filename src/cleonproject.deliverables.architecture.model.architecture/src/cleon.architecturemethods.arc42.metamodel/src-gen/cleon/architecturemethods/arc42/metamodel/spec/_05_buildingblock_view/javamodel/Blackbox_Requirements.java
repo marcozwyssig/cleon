@@ -71,6 +71,16 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public Blackbox_Requirements setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -106,7 +116,6 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.eamod.metamodel.spec.chrv.coverage.javamodel.IRequirementCoverageDescription.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Blackbox_aE_Requirements_requirementCoverageDescription, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -119,4 +128,4 @@ public class Blackbox_Requirements extends DynamicResource implements IBlackbox_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,iHGJUovMD8soQhD4v1vdDMhX6iE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4a655e3e-0df0-11e9-a28e-8b950dcca323,UtHB9Qbe/4q+/sYmxn0u8n60APE=] */

@@ -5,10 +5,10 @@ import ch.actifsource.core.Resource;
 public class QosPackage {
   
   public static final Resource QoSConcept = new Resource("a4426fd0-f2e5-11e8-b860-9fc163e21388");
-  public static final Resource QoSConfigurationComponentConcept = new Resource("39818d2e-1d88-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSSystemConfigurationConcept = new Resource("39818d2e-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource QoSConcept_qosConfigurationConcept = new Resource("40dbb91f-1d88-11e9-b601-db75aa6f89a4");
-  public static final Resource QoSConfigurationComponentConcept_estimate_aE_KBits = new Resource("613e47f8-1d88-11e9-b601-db75aa6f89a4");
-  public static final Resource QoSConfigurationComponentConcept_estimateMean_aE_KBits = new Resource("74eae68a-1d88-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSSystemConfigurationSource_estimate_aE_KBits = new Resource("613e47f8-1d88-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSSystemConfigurationSource_estimateMean_aE_KBits = new Resource("74eae68a-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass = new Resource("af43badb-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass_EF__F___S___F_Telephony = new Resource("b270dee3-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass_CS5__F___S___F_Signalling = new Resource("b448ac28-1d88-11e9-b601-db75aa6f89a4");
@@ -24,7 +24,12 @@ public class QosPackage {
   public static final Resource ServiceClass_DSCP = new Resource("f7c066ef-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass_CS6__F___S___F_Network__F_Control__F___N_Access__O_ = new Resource("3fcac901-1d89-11e9-b601-db75aa6f89a4");
   public static final Resource ServiceClass_CS7__F___S___F_Network__F_Control__F___N_Backbone__O___F_ = new Resource("48898e07-1d89-11e9-b601-db75aa6f89a4");
-  public static final Resource QoSConfigurationComponentConcept_serviceClass = new Resource("7019937d-1d89-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSSystemConfigurationSource_serviceClass = new Resource("7019937d-1d89-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSSystemConfigurationSource = new Resource("fcc35d62-a0c3-11ea-8daa-afb4679c3497");
+  public static final Resource QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations = new Resource("115c30f0-a0c4-11ea-8daa-afb4679c3497");
+  public static final Resource QoSSystemConfigurationSource_source = new Resource("9cb345ae-a0c4-11ea-8daa-afb4679c3497");
+  public static final Resource FunctionSpace_aE_QoS_QoSConcept = new Resource("06c0a3bb-a0c9-11ea-8daa-afb4679c3497");
+  public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationConcept = new Resource("14c7cb65-a0c9-11ea-8daa-afb4679c3497");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +50,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,wdqIrgvjc1cifWgQsMCmB98gNcM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,+38slInAMMfc+yWL6TFLH+fuh7o=] */

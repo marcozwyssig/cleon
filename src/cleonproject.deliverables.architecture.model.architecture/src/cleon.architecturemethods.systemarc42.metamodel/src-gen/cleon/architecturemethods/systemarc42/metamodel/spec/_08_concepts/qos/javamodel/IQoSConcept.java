@@ -8,8 +8,8 @@ public interface IQoSConcept extends cleon.architecturemethods.systemarc42.metam
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConfigurationComponentConcept> selectQosConfigurationConcept();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept> selectQosConfigurationConcept();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,zP32NPY4Pnwu960r6wACNi4ikKE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,2gcMLhShCrOC52eCWGdvy1iAzDw=] */

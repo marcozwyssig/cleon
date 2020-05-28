@@ -176,22 +176,10 @@ public class FunctionSpace_SystemArc42_Docbook {
     @IDynamicResourceExtension.MethodId("a62fb841-1d8d-11e9-b601-db75aa6f89a4")
     public java.lang.String RenderContentElement();
 
-    @IDynamicResourceExtension.MethodId("7494a4f9-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS();
-
-    @IDynamicResourceExtension.MethodId("9cb503c2-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS_Mean();
-
   }
   
   public static interface IQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("7494a4f9-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept);
-
-    @IDynamicResourceExtension.MethodId("9cb503c2-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept);
-
   }
   
   public static class QoSConceptFunctionsImpl implements IQoSConceptFunctionsImpl {
@@ -200,33 +188,11 @@ public class FunctionSpace_SystemArc42_Docbook {
 
     private QoSConceptFunctionsImpl() {}
 
-    @Override
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      /* Begin Protected Region [[7494a4f9-1d92-11e9-b601-db75aa6f89a4]] */
-    	return qoSConcept.selectQosConfigurationConcept().values().stream().mapToInt(x -> x.selectEstimate_KBits()).sum();   
-      /* End Protected Region   [[7494a4f9-1d92-11e9-b601-db75aa6f89a4]] */
-    }
-
-    @Override
-    public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      /* Begin Protected Region [[9cb503c2-1d92-11e9-b601-db75aa6f89a4]] */
-    	return qoSConcept.selectQosConfigurationConcept().values().stream().mapToInt(x -> x.selectEstimateMean_KBits()).sum();   
-      /* End Protected Region   [[9cb503c2-1d92-11e9-b601-db75aa6f89a4]] */
-    }
-
   }
   
   public static class QoSConceptFunctions {
 
     private QoSConceptFunctions() {}
-
-    public static java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      return DynamicResourceUtil.invoke(IQoSConceptFunctionsImpl.class, QoSConceptFunctionsImpl.INSTANCE, qoSConcept).SumQoS(qoSConcept);
-    }
-
-    public static java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      return DynamicResourceUtil.invoke(IQoSConceptFunctionsImpl.class, QoSConceptFunctionsImpl.INSTANCE, qoSConcept).SumQoS_Mean(qoSConcept);
-    }
 
   }
 
@@ -333,8 +299,8 @@ public class FunctionSpace_SystemArc42_Docbook {
     public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
       /* Begin Protected Region [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
     	int count = 0;
-    	for(IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
-    		count += actorResponsibility.selectRolesForSystemComponents().values().size();
+    	for(final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
+    		count += actorResponsibility.selectRolesForSystemComponents().size();
     	}
     	return count;  
       /* End Protected Region   [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
@@ -561,4 +527,4 @@ public class FunctionSpace_SystemArc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,RjsrVi2+0wQo6a8rVoPSvtsfIlY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,kr/oBWjylSQjwt8s0Hp/nkDMDPY=] */

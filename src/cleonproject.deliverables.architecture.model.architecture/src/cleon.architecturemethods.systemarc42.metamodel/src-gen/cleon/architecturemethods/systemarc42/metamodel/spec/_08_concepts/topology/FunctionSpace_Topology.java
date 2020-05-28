@@ -494,16 +494,15 @@ public class FunctionSpace_Topology {
     @Override
     public java.lang.String AddDash(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
-      try {
-    	  if(!stringLiteral.isEmpty()) {
-    		  return "-";
-    	  }
-    	  return "";
-      }
-       catch (final java.lang.NullPointerException e) {
-        return null;
-      }
-      
+        try {
+      	  if(!stringLiteral.isEmpty()) {
+      		  return "-";
+      	  }
+      	  return "";
+        }
+         catch (final java.lang.NullPointerException e) {
+          return null;
+        }   
       /* End Protected Region   [[aa16144f-57cc-11ea-bd7a-4baf1bc87b3c]] */
     }
 
@@ -546,4 +545,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,1wxhxjC7upJP8CF4E7PU9KoxlQ0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,YhSPutunKMMsHh2Mkql9LBtQxOs=] */

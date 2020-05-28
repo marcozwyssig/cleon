@@ -155,6 +155,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="697d5fcd-a0f4-11ea-9ce3-334b0943657e" type="resource" guid="697aeec9-a0f4-11ea-9ce3-334b0943657e" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="1580dc6f-92a0-11e9-b2b4-f340ae70802c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -652,6 +653,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="697d5fcd-a0f4-11ea-9ce3-334b0943657e">
+      <resource guid="697aeec9-a0f4-11ea-9ce3-334b0943657e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="697aeecb-a0f4-11ea-9ce3-334b0943657e" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6a7a3666-a0f4-11ea-9ce3-334b0943657e" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.HostNodeValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="697d5fcc-a0f4-11ea-9ce3-334b0943657e" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

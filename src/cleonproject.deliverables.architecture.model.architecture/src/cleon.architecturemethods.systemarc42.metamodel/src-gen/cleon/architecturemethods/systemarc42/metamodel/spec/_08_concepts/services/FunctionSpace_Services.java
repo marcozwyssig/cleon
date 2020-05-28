@@ -29,6 +29,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("3b777729-cfeb-11e9-83dd-7d113aa47006")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> All();
 
+    @IDynamicResourceExtension.MethodId("3fb01a9e-a0e2-11ea-8daa-afb4679c3497")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService> AllServices();
+
   }
   
   public static interface IAbstractServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -81,6 +84,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("89eb159a-cfeb-11e9-83dd-7d113aa47006")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> All();
 
+    @IDynamicResourceExtension.MethodId("dad9ab85-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.Integer Port();
+
   }
   
   public static interface IPortServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -101,56 +107,159 @@ public class FunctionSpace_Services {
 
   }
 
-  public static interface IServiceGroupFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractServiceGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9baed0f0-cfeb-11e9-83dd-7d113aa47006")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> All();
 
   }
   
-  public static interface IServiceGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractServiceGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ServiceGroupFunctionsImpl implements IServiceGroupFunctionsImpl {
+  public static class AbstractServiceGroupFunctionsImpl implements IAbstractServiceGroupFunctionsImpl {
 
-    public static final IServiceGroupFunctionsImpl INSTANCE = new ServiceGroupFunctionsImpl();
+    public static final IAbstractServiceGroupFunctionsImpl INSTANCE = new AbstractServiceGroupFunctionsImpl();
 
-    private ServiceGroupFunctionsImpl() {}
-
-  }
-  
-  public static class ServiceGroupFunctions {
-
-    private ServiceGroupFunctions() {}
-
-  }
-
-  public static interface IFWStandardServiceFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b5124b9f-cfeb-11e9-83dd-7d113aa47006")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> All();
+    private AbstractServiceGroupFunctionsImpl() {}
 
   }
   
-  public static interface IFWStandardServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static class AbstractServiceGroupFunctions {
+
+    private AbstractServiceGroupFunctions() {}
+
+  }
+
+  public static interface IFWStandardTCPServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("43e012f6-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.String Protocol();
+
+  }
+  
+  public static interface IFWStandardTCPServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class FWStandardServiceFunctionsImpl implements IFWStandardServiceFunctionsImpl {
+  public static class FWStandardTCPServiceFunctionsImpl implements IFWStandardTCPServiceFunctionsImpl {
 
-    public static final IFWStandardServiceFunctionsImpl INSTANCE = new FWStandardServiceFunctionsImpl();
+    public static final IFWStandardTCPServiceFunctionsImpl INSTANCE = new FWStandardTCPServiceFunctionsImpl();
 
-    private FWStandardServiceFunctionsImpl() {}
+    private FWStandardTCPServiceFunctionsImpl() {}
 
   }
   
-  public static class FWStandardServiceFunctions {
+  public static class FWStandardTCPServiceFunctions {
 
-    private FWStandardServiceFunctions() {}
+    private FWStandardTCPServiceFunctions() {}
+
+  }
+
+  public static interface IFWStandardUDPServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f585364e-a0ee-11ea-8daa-afb4679c3497")
+    public java.lang.String Protocol();
+
+  }
+  
+  public static interface IFWStandardUDPServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FWStandardUDPServiceFunctionsImpl implements IFWStandardUDPServiceFunctionsImpl {
+
+    public static final IFWStandardUDPServiceFunctionsImpl INSTANCE = new FWStandardUDPServiceFunctionsImpl();
+
+    private FWStandardUDPServiceFunctionsImpl() {}
+
+  }
+  
+  public static class FWStandardUDPServiceFunctions {
+
+    private FWStandardUDPServiceFunctions() {}
+
+  }
+
+  public static interface IServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("30c468f1-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.String Protocol();
+
+    @IDynamicResourceExtension.MethodId("cab8a431-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.Integer Port();
+
+  }
+  
+  public static interface IServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceFunctionsImpl implements IServiceFunctionsImpl {
+
+    public static final IServiceFunctionsImpl INSTANCE = new ServiceFunctionsImpl();
+
+    private ServiceFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceFunctions {
+
+    private ServiceFunctions() {}
+
+  }
+
+  public static interface IServiceTCPFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("55f43771-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.String Protocol();
+
+  }
+  
+  public static interface IServiceTCPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceTCPFunctionsImpl implements IServiceTCPFunctionsImpl {
+
+    public static final IServiceTCPFunctionsImpl INSTANCE = new ServiceTCPFunctionsImpl();
+
+    private ServiceTCPFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceTCPFunctions {
+
+    private ServiceTCPFunctions() {}
+
+  }
+
+  public static interface IServiceUDPFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5a8669b0-a0e3-11ea-8daa-afb4679c3497")
+    public java.lang.String Protocol();
+
+  }
+  
+  public static interface IServiceUDPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceUDPFunctionsImpl implements IServiceUDPFunctionsImpl {
+
+    public static final IServiceUDPFunctionsImpl INSTANCE = new ServiceUDPFunctionsImpl();
+
+    private ServiceUDPFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceUDPFunctions {
+
+    private ServiceUDPFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,ZPO3KdPn/EyuAaWY0sSmB2eH+ew=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,eppE6StZAw7dhqWusyvznvu/V1E=] */

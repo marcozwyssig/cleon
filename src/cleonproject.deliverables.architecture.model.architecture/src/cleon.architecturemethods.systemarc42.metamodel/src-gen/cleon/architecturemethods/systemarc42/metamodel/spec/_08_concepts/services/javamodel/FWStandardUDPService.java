@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class ServiceGroup extends DynamicResource implements IServiceGroup {
+public class FWStandardUDPService extends DynamicResource implements IFWStandardUDPService {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IServiceGroup> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IServiceGroup>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IFWStandardUDPService> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IFWStandardUDPService>() {
     
     @Override
-    public IServiceGroup create() {
-      return new ServiceGroup();
+    public IFWStandardUDPService create() {
+      return new FWStandardUDPService();
     }
     
     @Override
-    public IServiceGroup create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new ServiceGroup(resourceRepository, resource);
+    public IFWStandardUDPService create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new FWStandardUDPService(resourceRepository, resource);
     }
   
   };
 
-  public ServiceGroup() {
-    super(IServiceGroup.TYPE_ID);
+  public FWStandardUDPService() {
+    super(IFWStandardUDPService.TYPE_ID);
   }
   
-  public ServiceGroup(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IServiceGroup.TYPE_ID);
+  public FWStandardUDPService(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IFWStandardUDPService.TYPE_ID);
   }
 
   // attributes
@@ -57,24 +57,23 @@ public class ServiceGroup extends DynamicResource implements IServiceGroup {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
-  // relations
-  
   @Override
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectServices() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services);
-  }
-
-  public ServiceGroup setServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> services) {
-    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services, services);
-    return this;
+  public java.lang.String selectPort() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_port);
   }
     
+  public void setPort(java.lang.String port) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_port, port);
+  }
+
+  // relations
+  
   @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public ServiceGroup setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public FWStandardUDPService setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -85,10 +84,10 @@ public class ServiceGroup extends DynamicResource implements IServiceGroup {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_port, visitor);
     // relations
-    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,95970bd2-8925-11e9-b2ca-f184d092ab9a,ny17qRYrViLBImnv94agB196ImA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d64a8a3c-a0e7-11ea-8daa-afb4679c3497,TWR3rYTQR//CIATTUZTEpCjZkCw=] */

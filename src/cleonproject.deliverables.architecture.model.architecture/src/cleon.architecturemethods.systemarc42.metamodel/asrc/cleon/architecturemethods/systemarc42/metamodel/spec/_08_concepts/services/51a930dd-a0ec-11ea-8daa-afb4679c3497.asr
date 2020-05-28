@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="51a930dd-a0ec-11ea-8daa-afb4679c3497">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5c93aff6-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="5c92eca0-a0ec-11ea-8daa-afb4679c3497" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="51a930df-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="51aab781-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="15738651-a0ec-11ea-8daa-afb4679c3497" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5c93aff6-a0ec-11ea-8daa-afb4679c3497">
+      <resource guid="5c92eca0-a0ec-11ea-8daa-afb4679c3497">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5c92eca1-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5c92eca2-a0ec-11ea-8daa-afb4679c3497" type="literal">fwservices</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5c92eca3-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="5c92eca4-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="5c92eca5-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="2c9a35dc-8930-11e9-b2ca-f184d092ab9a" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="f2636e46-a0ec-11ea-8daa-afb4679c3497" type="resource" guid="d90d129a-6da3-11e9-8af5-2346ca56c2e2" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="51aab780-a0ec-11ea-8daa-afb4679c3497" type="literal">FWStandardServiceGroup</object>
+  </predicate>
+</resource>
+

@@ -71,11 +71,11 @@ public class SystemConfigurationServiceGroup extends DynamicResource implements 
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectServices() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.ServiceGroup_services);
+    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services);
   }
 
   public SystemConfigurationServiceGroup setServices(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> services) {
-    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.ServiceGroup_services, services);
+    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services, services);
     return this;
   }
     
@@ -97,7 +97,7 @@ public class SystemConfigurationServiceGroup extends DynamicResource implements 
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.SystemConfigurationServiceGroup_serviceProvider, visitor);
-    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.ServiceGroup_services, visitor);
+    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.AbstractServiceGroup_services, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -108,4 +108,4 @@ public class SystemConfigurationServiceGroup extends DynamicResource implements 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,IfvVJ5BNI/IGopW2T9Evtks3as8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cb9950c8-6da3-11e9-8af5-2346ca56c2e2,3nnwZCu1NYIlRKpWKGRo0Jf99wM=] */

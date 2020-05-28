@@ -39,15 +39,6 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits, estimateMean_KBits);
   }
 
-  @Override
-  public java.lang.Integer selectEstimate_KBits() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimate_aE_KBits);
-  }
-    
-  public void setEstimate_KBits(java.lang.Integer estimate_KBits) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimate_aE_KBits, estimate_KBits);
-  }
-
   // relations
   
   @Override
@@ -95,7 +86,6 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimate_aE_KBits, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_source, visitor);
@@ -113,4 +103,4 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,8Y6qNoGyaLyfWnxJIGRw62f+HBU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,XzKwUFyxhcKOSz1swBOUUWM88VA=] */

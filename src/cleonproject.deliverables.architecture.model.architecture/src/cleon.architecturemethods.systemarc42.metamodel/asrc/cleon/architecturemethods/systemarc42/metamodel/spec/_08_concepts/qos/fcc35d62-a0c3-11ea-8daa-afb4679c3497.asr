@@ -2,7 +2,6 @@
 <resource format="5.6.0" guid="fcc35d62-a0c3-11ea-8daa-afb4679c3497">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="9cb345b0-a0c4-11ea-8daa-afb4679c3497" type="resource" guid="9cb345ae-a0c4-11ea-8daa-afb4679c3497" />
-    <resource statement-guid="e7ab5bf9-a0c5-11ea-8daa-afb4679c3497" type="resource" guid="613e47f8-1d88-11e9-b601-db75aa6f89a4" />
     <resource statement-guid="e7abaa1a-a0c5-11ea-8daa-afb4679c3497" type="resource" guid="74eae68a-1d88-11e9-b601-db75aa6f89a4" />
     <resource statement-guid="e7abd12b-a0c5-11ea-8daa-afb4679c3497" type="resource" guid="7019937d-1d89-11e9-b601-db75aa6f89a4" />
   </owns>
@@ -36,22 +35,6 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="e7ab5bf9-a0c5-11ea-8daa-afb4679c3497">
-      <resource guid="613e47f8-1d88-11e9-b601-db75aa6f89a4">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="613e47fa-1d88-11e9-b601-db75aa6f89a4" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="716e69f9-1d88-11e9-b601-db75aa6f89a4" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="666f79c9-1d88-11e9-b601-db75aa6f89a4" type="literal">estimate_KBits</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="613fa78c-1d88-11e9-b601-db75aa6f89a4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="e7abaa1a-a0c5-11ea-8daa-afb4679c3497">
       <resource guid="74eae68a-1d88-11e9-b601-db75aa6f89a4">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -62,6 +45,9 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="74eae68d-1d88-11e9-b601-db75aa6f89a4" type="literal">estimateMean_KBits</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="7327bdfd-a0cf-11ea-8daa-afb4679c3497" type="literal">100</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="74eae68c-1d88-11e9-b601-db75aa6f89a4" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />

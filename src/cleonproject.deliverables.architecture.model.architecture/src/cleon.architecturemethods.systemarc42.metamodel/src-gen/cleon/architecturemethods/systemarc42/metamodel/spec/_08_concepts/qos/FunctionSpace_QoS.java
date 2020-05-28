@@ -21,9 +21,6 @@ public class FunctionSpace_QoS {
 
   public static interface IQoSConceptFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("7494a4f9-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS();
-
     @IDynamicResourceExtension.MethodId("9cb503c2-1d92-11e9-b601-db75aa6f89a4")
     public java.lang.Integer SumQoS_Mean();
 
@@ -31,9 +28,6 @@ public class FunctionSpace_QoS {
   
   public static interface IQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("7494a4f9-1d92-11e9-b601-db75aa6f89a4")
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept);
-
     @IDynamicResourceExtension.MethodId("9cb503c2-1d92-11e9-b601-db75aa6f89a4")
     public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept);
 
@@ -44,16 +38,6 @@ public class FunctionSpace_QoS {
     public static final IQoSConceptFunctionsImpl INSTANCE = new QoSConceptFunctionsImpl();
 
     private QoSConceptFunctionsImpl() {}
-
-    @Override
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      /* Begin Protected Region [[7494a4f9-1d92-11e9-b601-db75aa6f89a4]] */
-    	return qoSConcept.selectQosConfigurationConcept().values().stream().mapToInt(x -> {
-    		final IQoSSystemConfigurationConceptFunctions functions = x.extension(IQoSSystemConfigurationConceptFunctions.class);
-    		return functions.SumQoS();
-    	}).sum();     
-      /* End Protected Region   [[7494a4f9-1d92-11e9-b601-db75aa6f89a4]] */
-    }
 
     @Override
     public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
@@ -71,10 +55,6 @@ public class FunctionSpace_QoS {
 
     private QoSConceptFunctions() {}
 
-    public static java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
-      return DynamicResourceUtil.invoke(IQoSConceptFunctionsImpl.class, QoSConceptFunctionsImpl.INSTANCE, qoSConcept).SumQoS(qoSConcept);
-    }
-
     public static java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
       return DynamicResourceUtil.invoke(IQoSConceptFunctionsImpl.class, QoSConceptFunctionsImpl.INSTANCE, qoSConcept).SumQoS_Mean(qoSConcept);
     }
@@ -83,9 +63,6 @@ public class FunctionSpace_QoS {
 
   public static interface IQoSSystemConfigurationConceptFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("1d205484-a0c9-11ea-8daa-afb4679c3497")
-    public java.lang.Integer SumQoS();
-
     @IDynamicResourceExtension.MethodId("1d205486-a0c9-11ea-8daa-afb4679c3497")
     public java.lang.Integer SumQoS_Mean();
 
@@ -93,9 +70,6 @@ public class FunctionSpace_QoS {
   
   public static interface IQoSSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("1d205484-a0c9-11ea-8daa-afb4679c3497")
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
-
     @IDynamicResourceExtension.MethodId("1d205486-a0c9-11ea-8daa-afb4679c3497")
     public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept);
 
@@ -106,13 +80,6 @@ public class FunctionSpace_QoS {
     public static final IQoSSystemConfigurationConceptFunctionsImpl INSTANCE = new QoSSystemConfigurationConceptFunctionsImpl();
 
     private QoSSystemConfigurationConceptFunctionsImpl() {}
-
-    @Override
-    public java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
-      /* Begin Protected Region [[1d205484-a0c9-11ea-8daa-afb4679c3497]] */
-    	return qoSSystemConfigurationConcept.selectQoSSystemConfigurationDestinations().values().stream().mapToInt( IQoSSystemConfigurationSource::selectEstimateMean_KBits ).sum();  
-      /* End Protected Region   [[1d205484-a0c9-11ea-8daa-afb4679c3497]] */
-    }
 
     @Override
     public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
@@ -127,10 +94,6 @@ public class FunctionSpace_QoS {
 
     private QoSSystemConfigurationConceptFunctions() {}
 
-    public static java.lang.Integer SumQoS(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
-      return DynamicResourceUtil.invoke(IQoSSystemConfigurationConceptFunctionsImpl.class, QoSSystemConfigurationConceptFunctionsImpl.INSTANCE, qoSSystemConfigurationConcept).SumQoS(qoSSystemConfigurationConcept);
-    }
-
     public static java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       return DynamicResourceUtil.invoke(IQoSSystemConfigurationConceptFunctionsImpl.class, QoSSystemConfigurationConceptFunctionsImpl.INSTANCE, qoSSystemConfigurationConcept).SumQoS_Mean(qoSSystemConfigurationConcept);
     }
@@ -139,4 +102,4 @@ public class FunctionSpace_QoS {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,Usru9H7Ohc+A4YiuP7Dvhawqlds=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,sGZ8DGb+oz5yVv004XbeSDmrnTU=] */

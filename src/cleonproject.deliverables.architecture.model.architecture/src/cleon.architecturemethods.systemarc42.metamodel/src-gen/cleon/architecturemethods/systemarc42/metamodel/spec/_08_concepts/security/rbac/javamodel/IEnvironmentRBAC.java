@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IEnvironmentRBAC extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.IAbstractSecurityConcept, ch.actifsource.core.javamodel.IDecorator {
+public interface IEnvironmentRBAC extends ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("6c337cfe-0eaf-11e9-9f19-6d15636f4ecc");
   
@@ -18,4 +18,4 @@ public interface IEnvironmentRBAC extends cleon.architecturemethods.systemarc42.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,fEZjusUs1OSJHSFmQc+hM8iPLNY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c337cfe-0eaf-11e9-9f19-6d15636f4ecc,n2rRMFQiBc82Pt4TuYCzteMAyKc=] */

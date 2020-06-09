@@ -8,8 +8,8 @@ public interface IAbstractRootGroups extends cleon.architecturemethods.systemarc
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup> selectNetDomainGroups();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup> selectSiteGroups();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e8cc1b1-1d99-11e9-b601-db75aa6f89a4,OMgtUSue8cwPiMf8rlVman3HlDM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e8cc1b1-1d99-11e9-b601-db75aa6f89a4,2It+0c0uh+vPBB27XRdRAOTEyHI=] */

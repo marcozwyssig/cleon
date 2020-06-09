@@ -500,31 +500,31 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
-  public static interface IAbstractNetdomainGroupFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSiteGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4ebcf47f-6e95-11ea-b8e8-f1a46e0c42f7")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IAbstractNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AbstractNetdomainGroupFunctionsImpl implements IAbstractNetdomainGroupFunctionsImpl {
+  public static class AbstractSiteGroupFunctionsImpl implements IAbstractSiteGroupFunctionsImpl {
 
-    public static final IAbstractNetdomainGroupFunctionsImpl INSTANCE = new AbstractNetdomainGroupFunctionsImpl();
+    public static final IAbstractSiteGroupFunctionsImpl INSTANCE = new AbstractSiteGroupFunctionsImpl();
 
-    private AbstractNetdomainGroupFunctionsImpl() {}
+    private AbstractSiteGroupFunctionsImpl() {}
 
   }
   
-  public static class AbstractNetdomainGroupFunctions {
+  public static class AbstractSiteGroupFunctions {
 
-    private AbstractNetdomainGroupFunctions() {}
+    private AbstractSiteGroupFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,kr/oBWjylSQjwt8s0Hp/nkDMDPY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,zJogYo7hqPidn+In7YLRO03xFAs=] */

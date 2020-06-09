@@ -6,7 +6,7 @@ public class RolePackage {
   
   public static final Resource RoleRootGroups = new Resource("3e5a557a-1d99-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorGroup = new Resource("88193678-1d9f-11e9-b601-db75aa6f89a4");
-  public static final Resource RoleRootGroups_roleForNetdomains = new Resource("9025263c-1d9f-11e9-b601-db75aa6f89a4");
+  public static final Resource RoleRootGroups_roleForSite = new Resource("9025263c-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorGroup_actor = new Resource("b7b0e66e-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent_hasActivities = new Resource("ac4ce013-1da1-11e9-b601-db75aa6f89a4");
   public static final Resource RoleNetDomainGroup = new Resource("94d1c1e5-1da3-11e9-b601-db75aa6f89a4");
@@ -48,4 +48,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,c/Gm3nVQtSsfuYvQs9XBDohFQ1U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,Dmyajv3uAfjaeVo0MDSdpvI5+k0=] */

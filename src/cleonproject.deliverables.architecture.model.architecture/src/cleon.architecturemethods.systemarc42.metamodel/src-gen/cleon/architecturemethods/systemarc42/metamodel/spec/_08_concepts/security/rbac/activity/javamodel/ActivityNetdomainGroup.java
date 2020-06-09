@@ -91,16 +91,6 @@ public class ActivityNetdomainGroup extends DynamicResource implements IActivity
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectNetdomain() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractNetdomainGroup_netdomain);
-  }
-
-  public ActivityNetdomainGroup setNetdomain(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode netdomain) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractNetdomainGroup_netdomain, netdomain);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -112,11 +102,21 @@ public class ActivityNetdomainGroup extends DynamicResource implements IActivity
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSecurityGroups> selectSecurityGroups() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSecurityGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractNetdomainGroup_securityGroups);
+    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSecurityGroups.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractSiteGroup_securityGroups);
   }
 
   public ActivityNetdomainGroup setSecurityGroups(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSecurityGroups> securityGroups) {
-    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractNetdomainGroup_securityGroups, securityGroups);
+    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractSiteGroup_securityGroups, securityGroups);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode selectSite() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractSiteGroup_site);
+  }
+
+  public ActivityNetdomainGroup setSite(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractSiteGroup_site, site);
     return this;
   }
     
@@ -147,8 +147,8 @@ public class ActivityNetdomainGroup extends DynamicResource implements IActivity
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.javamodel.IActivitySystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.activity.ActivityPackage.ActivityNetdomainGroup_activitiesForSystemConfiguration, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractNetdomainGroup_netdomain, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.RbacPackage.AbstractSiteGroup_site, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -159,4 +159,4 @@ public class ActivityNetdomainGroup extends DynamicResource implements IActivity
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,esDrYiro9g8EzuW/YOD/bORDyBg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,jwxP2Ebmv7Ah9HMwTVL9/hZqPJ8=] */

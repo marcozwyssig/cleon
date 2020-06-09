@@ -47,7 +47,7 @@ public class FunctionSpace_RBAC {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IEnvironmentRBAC environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
-    	final IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForNetdomains().values().stream().filter(x -> x.selectNetdomain().selectSite().selectName().equals(site.selectSite().selectName())).findFirst().orElse(null);
+    	final IRoleNetDomainGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForSite().values().stream().filter(x -> x.selectSite().selectSite().selectName().equals(site.selectSite().selectName())).findFirst().orElse(null);
     	if(roleNetDomainGroup == null) {
     		return null;
     	}
@@ -77,7 +77,7 @@ public class FunctionSpace_RBAC {
 
   }
 
-  public static interface IAbstractNetdomainGroupFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSiteGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("a904cb96-1e19-11e9-865e-41ef48a95f70")
     public java.lang.Integer GetRange();
@@ -93,63 +93,63 @@ public class FunctionSpace_RBAC {
 
   }
   
-  public static interface IAbstractNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAbstractSiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("a904cb96-1e19-11e9-865e-41ef48a95f70")
-    public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup);
+    public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup);
 
     @IDynamicResourceExtension.MethodId("893ebfeb-7f21-11e9-9a52-07d4b074defc")
-    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup);
+    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup);
 
     @IDynamicResourceExtension.MethodId("8f1d7786-9c8f-11e9-9b32-35cf2fd07621")
-    public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup);
+    public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup);
 
   }
   
-  public static class AbstractNetdomainGroupFunctionsImpl implements IAbstractNetdomainGroupFunctionsImpl {
+  public static class AbstractSiteGroupFunctionsImpl implements IAbstractSiteGroupFunctionsImpl {
 
-    public static final IAbstractNetdomainGroupFunctionsImpl INSTANCE = new AbstractNetdomainGroupFunctionsImpl();
+    public static final IAbstractSiteGroupFunctionsImpl INSTANCE = new AbstractSiteGroupFunctionsImpl();
 
-    private AbstractNetdomainGroupFunctionsImpl() {}
+    private AbstractSiteGroupFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
+    public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
-        return GetId(abstractNetdomainGroup) + MaxRounded(abstractNetdomainGroup) - 1;   
+        return GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup) - 1;   
       /* End Protected Region   [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
     }
 
     @Override
-    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
+    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
-    	return (abstractNetdomainGroup.selectNetdomain().selectSite().selectFunctionID() * MaxRounded(abstractNetdomainGroup)) + 2000;    		  
+    	return (abstractSiteGroup.selectSite().selectSite().selectFunctionID() * MaxRounded(abstractSiteGroup)) + 2000;    		  
       /* End Protected Region   [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
     }
 
     @Override
-    public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
+    public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
-    	final IAbstractNetdomainGroupFunctions functions = abstractNetdomainGroup.extension(IAbstractNetdomainGroupFunctions.class);
+    	final IAbstractSiteGroupFunctions functions = abstractSiteGroup.extension(IAbstractSiteGroupFunctions.class);
     	return ((functions.Max() + 99) / 100 ) * 100;
       /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }
 
   }
   
-  public static class AbstractNetdomainGroupFunctions {
+  public static class AbstractSiteGroupFunctions {
 
-    private AbstractNetdomainGroupFunctions() {}
+    private AbstractSiteGroupFunctions() {}
 
-    public static java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
-      return DynamicResourceUtil.invoke(IAbstractNetdomainGroupFunctionsImpl.class, AbstractNetdomainGroupFunctionsImpl.INSTANCE, abstractNetdomainGroup).GetRange(abstractNetdomainGroup);
+    public static java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
+      return DynamicResourceUtil.invoke(IAbstractSiteGroupFunctionsImpl.class, AbstractSiteGroupFunctionsImpl.INSTANCE, abstractSiteGroup).GetRange(abstractSiteGroup);
     }
 
-    public static java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
-      return DynamicResourceUtil.invoke(IAbstractNetdomainGroupFunctionsImpl.class, AbstractNetdomainGroupFunctionsImpl.INSTANCE, abstractNetdomainGroup).GetId(abstractNetdomainGroup);
+    public static java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
+      return DynamicResourceUtil.invoke(IAbstractSiteGroupFunctionsImpl.class, AbstractSiteGroupFunctionsImpl.INSTANCE, abstractSiteGroup).GetId(abstractSiteGroup);
     }
 
-    public static java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup abstractNetdomainGroup) {
-      return DynamicResourceUtil.invoke(IAbstractNetdomainGroupFunctionsImpl.class, AbstractNetdomainGroupFunctionsImpl.INSTANCE, abstractNetdomainGroup).MaxRounded(abstractNetdomainGroup);
+    public static java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup abstractSiteGroup) {
+      return DynamicResourceUtil.invoke(IAbstractSiteGroupFunctionsImpl.class, AbstractSiteGroupFunctionsImpl.INSTANCE, abstractSiteGroup).MaxRounded(abstractSiteGroup);
     }
 
   }
@@ -160,7 +160,7 @@ public class FunctionSpace_RBAC {
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetNetdomain();
 
     @IDynamicResourceExtension.MethodId("ac99f866-7f25-11e9-9a52-07d4b074defc")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup GetNetdomainGroup();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup GetNetdomainGroup();
 
     @IDynamicResourceExtension.MethodId("cbe6c726-7f24-11e9-9a52-07d4b074defc")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractGroup> GetParents();
@@ -325,4 +325,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,l+ZabEvtc2CLG0tSV8SNVrz+AKg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,KkC9quCuyXWz4Mg4TFZWw9a0Fdc=] */

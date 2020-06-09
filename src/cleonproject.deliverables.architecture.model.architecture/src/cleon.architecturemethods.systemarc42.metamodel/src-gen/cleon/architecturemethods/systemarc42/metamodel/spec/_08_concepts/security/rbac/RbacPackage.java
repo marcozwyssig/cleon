@@ -12,12 +12,12 @@ public class RbacPackage {
   public static final Resource EnvironmentRBAC_roles = new Resource("9604d995-1d9a-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups_responsible = new Resource("a53bab2f-1d9e-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups_approval = new Resource("1ee8598d-1d9f-11e9-b601-db75aa6f89a4");
-  public static final Resource AbstractNetdomainGroup_securityGroups = new Resource("9818f4c0-1e06-11e9-834d-77c41fccc6bf");
-  public static final Resource AbstractNetdomainGroup = new Resource("b1b09ea6-1e06-11e9-834d-77c41fccc6bf");
-  public static final Resource AbstractRootGroups_netDomainGroups = new Resource("b8b187cf-1e06-11e9-834d-77c41fccc6bf");
+  public static final Resource AbstractSiteGroup_securityGroups = new Resource("9818f4c0-1e06-11e9-834d-77c41fccc6bf");
+  public static final Resource AbstractSiteGroup = new Resource("b1b09ea6-1e06-11e9-834d-77c41fccc6bf");
+  public static final Resource AbstractRootGroups_siteGroups = new Resource("b8b187cf-1e06-11e9-834d-77c41fccc6bf");
   public static final Resource FunctionSpace_aE_RBAC_EnvironmentRBAC = new Resource("2cd8f13c-1e07-11e9-834d-77c41fccc6bf");
-  public static final Resource AbstractNetdomainGroup_netdomain = new Resource("6033ea08-1e07-11e9-834d-77c41fccc6bf");
-  public static final Resource FunctionSpace_aE_RBAC_AbstractNetdomainGroup = new Resource("8fe81300-1e0d-11e9-865e-41ef48a95f70");
+  public static final Resource AbstractSiteGroup_site = new Resource("6033ea08-1e07-11e9-834d-77c41fccc6bf");
+  public static final Resource FunctionSpace_aE_RBAC_AbstractSiteGroup = new Resource("8fe81300-1e0d-11e9-865e-41ef48a95f70");
   public static final Resource AbstractGroup = new Resource("bf5ba1ee-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource AbstractGroups = new Resource("cc875e00-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource Group = new Resource("d2272f28-7f08-11e9-98a3-b1bd805f0a31");
@@ -53,4 +53,4 @@ public class RbacPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,+sA5WgfyZz/f0YmQJEyhfxKML1w=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac,XokQr9vPCaU6644qyv//xA9NXko=] */

@@ -16,28 +16,28 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 
 public class RoleSystemComponentIdenticalIdLikeMasterValidationAspect implements IResourceValidationAspect {
 	@Override
-	public void validate(ValidationContext context, List<IResourceInconsistency> inconsistencyList) {
-		ITypeSystem typeSystem = context.getTypeSystem();
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IRoleSystemComponent roleSystemComponent = resourceRepository.getResource(IRoleSystemComponent.class,
+	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
+		final ITypeSystem typeSystem = context.getTypeSystem();
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final IRoleSystemComponent roleSystemComponent = resourceRepository.getResource(IRoleSystemComponent.class,
 				context.getResource());
-		IAbstractGroupFunctions abstractGroupFunctions = roleSystemComponent.extension(IAbstractGroupFunctions.class);
-		IRoleSystemComponentFunctions roleSystemComponentFunctions = roleSystemComponent
+		final IAbstractGroupFunctions abstractGroupFunctions = roleSystemComponent.extension(IAbstractGroupFunctions.class);
+		final IRoleSystemComponentFunctions roleSystemComponentFunctions = roleSystemComponent
 				.extension(IRoleSystemComponentFunctions.class);
-		IEnvironmentRBAC master = abstractGroupFunctions.GetRBAC().selectMaster();
+		final IEnvironmentRBAC master = abstractGroupFunctions.GetRBAC().selectMaster();
 		if (master == null) {
 			return;
 		}
 		
-		IEnvironmentRBACFunctions environmentRBACFunctions = master.extension(IEnvironmentRBACFunctions.class);
+		final IEnvironmentRBACFunctions environmentRBACFunctions = master.extension(IEnvironmentRBACFunctions.class);
 
-		IRoleSystemComponent masterRoleSystemComponent = environmentRBACFunctions.GetRoleSystemComponent(
-				roleSystemComponentFunctions.Site().selectNetdomain(),
+		final IRoleSystemComponent masterRoleSystemComponent = environmentRBACFunctions.GetRoleSystemComponent(
+				roleSystemComponentFunctions.Site().selectSite(),
 				roleSystemComponentFunctions.Actor().selectActor(),
 				roleSystemComponentFunctions.Responsibility().selectResponsibility(),
 				roleSystemComponent.selectSystemComponent());
 		if (!(roleSystemComponent.selectIdentifier().equals(masterRoleSystemComponent.selectIdentifier()))) {
-			String errormessage = String.format(
+			final String errormessage = String.format(
 					"Id of role system component is different than the master (%1$d != %2$d)",
 					roleSystemComponent.selectIdentifier(), masterRoleSystemComponent.selectIdentifier());
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),

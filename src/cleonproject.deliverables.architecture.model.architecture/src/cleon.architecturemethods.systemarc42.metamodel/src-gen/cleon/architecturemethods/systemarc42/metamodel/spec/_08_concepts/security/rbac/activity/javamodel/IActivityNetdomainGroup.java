@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IActivityNetdomainGroup extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractNetdomainGroup {
+public interface IActivityNetdomainGroup extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("e3611bf2-1e06-11e9-834d-77c41fccc6bf");
   
@@ -12,4 +12,4 @@ public interface IActivityNetdomainGroup extends cleon.architecturemethods.syste
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,u5/sbu5iRwRqwNgJ5gvHTUESMdA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e3611bf2-1e06-11e9-834d-77c41fccc6bf,ZLw1InVTmNBuuxKVDoYMkbYHsTM=] */

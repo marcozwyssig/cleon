@@ -10,7 +10,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[0ea7300c-b846-11e9-8760-2d4a9d15ec14,imports]] */
 import java.util.stream.Collectors;
 
-import cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.javamodel.SystemEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlock.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.SystemConfiguration;
@@ -66,6 +65,9 @@ public class FunctionSpace_SubzonePolicy {
     @IDynamicResourceExtension.MethodId("299d0f3b-0dfc-11ea-adc0-d5efa00b40ac")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
+    @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
+    public java.lang.Boolean AllowAny();
+
   }
   
   public static interface ISubZoneAccessPolicyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -82,6 +84,9 @@ public class FunctionSpace_SubzonePolicy {
     @IDynamicResourceExtension.MethodId("e5fdbace-0df9-11ea-adc0-d5efa00b40ac")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
 
+    @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
+    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy);
+
   }
   
   public static class SubZoneAccessPolicyFunctionsImpl implements ISubZoneAccessPolicyFunctionsImpl {
@@ -93,10 +98,11 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       /* Begin Protected Region [[672a5ec2-b9e5-11e9-828c-091526d036b6]] */
-		ISystemConfiguration sourceCfg = source.selectSourceSystemConfiguration();
-		ISystemConfigurationFunctions configurationFunctions = sourceCfg.extension(ISystemConfigurationFunctions.class);
-		IDestinationSubSecurityZone destinationSubSecurityZone = DestinationSubSecurityZone
+		final ISystemConfiguration sourceCfg = source.selectSourceSystemConfiguration();
+		final ISystemConfigurationFunctions configurationFunctions = sourceCfg.extension(ISystemConfigurationFunctions.class);
+		final IDestinationSubSecurityZone destinationSubSecurityZone = DestinationSubSecurityZone
 				.selectToMeHasCommunicationFrom(source);
+		
 		return subZoneAccessPolicyList.stream()
 				.filter(x -> x.selectPolicyForSecuritySubZone()
 						.equals(destinationSubSecurityZone.selectInInterface().selectInterfaceInSecuritySubZone())
@@ -110,20 +116,20 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String RenderSourceHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
       /* Begin Protected Region [[99918128-0a07-11ea-baed-218c3e076b56]] */
-		ISecuritySubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy)
+		final ISecuritySubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy)
 				.selectSourceSecuritySubZone();
 		
-		ISecuritySubZoneFunctions sourceSubZoneFunctions = sourceSubZone.extension(ISecuritySubZoneFunctions.class);
-		IZoneFunctions zoneFunctions = sourceSubZone.extension(IZoneFunctions.class);
-		ISystemConfigurationFunctions sysCfgFunction = src.selectSourceSystemConfiguration()
+		final ISecuritySubZoneFunctions sourceSubZoneFunctions = sourceSubZone.extension(ISecuritySubZoneFunctions.class);
+		final IZoneFunctions zoneFunctions = sourceSubZone.extension(IZoneFunctions.class);
+		final ISystemConfigurationFunctions sysCfgFunction = src.selectSourceSystemConfiguration()
 				.extension(ISystemConfigurationFunctions.class);
-		List<ISystemConfiguration> sysCfgs = sysCfgFunction.GetAllDependsFromWithSelf().stream().filter(x -> SystemConfiguration.selectToMeInheritServices(x).isEmpty()).collect(Collectors.toList());
-		StringBuilder result = new StringBuilder();
+		final List<ISystemConfiguration> sysCfgs = sysCfgFunction.GetAllDependsFromWithSelf().stream().filter(x -> SystemConfiguration.selectToMeInheritServices(x).isEmpty()).collect(Collectors.toList());
+		final StringBuilder result = new StringBuilder();
 	
-		for (ISystemConfiguration sysCfg : sysCfgs) {
-			ISystemConfigurationFunctions configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);			
+		for (final ISystemConfiguration sysCfg : sysCfgs) {
+			final ISystemConfigurationFunctions configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);			
 			if (zoneFunctions.IsLocalOnly()) {
-				for (IAbstractSiteWithHosts hosts : sourceSubZoneFunctions						
+				for (final IAbstractSiteWithHosts hosts : sourceSubZoneFunctions						
 						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {
 						result.append("GRP-HOS-" + configurationFunctions.TypeName() + "-" + hosts.selectName() + "-" +
 								sourceSubZone.selectVLAN_No());
@@ -131,9 +137,9 @@ public class FunctionSpace_SubzonePolicy {
 				}
 			}
 			else {
-				List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
-				for( ISystemConfiguration concreteSysCfg : hosts ) {
-					ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);					
+				final List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
+				for( final ISystemConfiguration concreteSysCfg : hosts ) {
+					final ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);					
 					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfgFunctions.TypeName() + "-" + sourceSubZone.selectVLAN_No());
 					result.append("\n");					
 				}
@@ -148,21 +154,29 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String RenderDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
       /* Begin Protected Region [[ee9b53cb-0a36-11ea-baed-218c3e076b56]] */
-		ISecuritySubZone destinationSubZone = subZoneAccessPolicy.selectPolicyForSecuritySubZone();		
-		ISecuritySubZoneFunctions destinationSubZoneFunctions = destinationSubZone.extension(ISecuritySubZoneFunctions.class);
-		IZoneFunctions zoneFunctions = destinationSubZone.extension(IZoneFunctions.class);
-		ISourceFunctions sourceFunctions = src.extension(ISourceFunctions.class);
-		IDestination destination = sourceFunctions.Destination();
-		ISystemConfigurationFunctions sysCfgFunction = destination.selectDestinationSystemConfiguration()
+    	final ISubZoneAccessPolicyFunctions accessPolicyFunctions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
+    	if( accessPolicyFunctions != null ) {
+        	if( accessPolicyFunctions.AllowAny() ) {
+        		return "Any";    		
+        	}
+    		
+    	}
+    	
+		final ISecuritySubZone destinationSubZone = subZoneAccessPolicy.selectPolicyForSecuritySubZone();		
+		final ISecuritySubZoneFunctions destinationSubZoneFunctions = destinationSubZone.extension(ISecuritySubZoneFunctions.class);
+		final IZoneFunctions zoneFunctions = destinationSubZone.extension(IZoneFunctions.class);
+		final ISourceFunctions sourceFunctions = src.extension(ISourceFunctions.class);
+		final IDestination destination = sourceFunctions.Destination();
+		final ISystemConfigurationFunctions sysCfgFunction = destination.selectDestinationSystemConfiguration()
 				.extension(ISystemConfigurationFunctions.class);
 		
-		List<ISystemConfiguration> sysCfgs = sysCfgFunction.GetAllDependsFromWithSelf().stream().filter(x -> SystemConfiguration.selectToMeInheritServices(x).isEmpty()).collect(Collectors.toList());
-		StringBuilder result = new StringBuilder();
+		final List<ISystemConfiguration> sysCfgs = sysCfgFunction.GetAllDependsFromWithSelf().stream().filter(x -> SystemConfiguration.selectToMeInheritServices(x).isEmpty()).collect(Collectors.toList());
+		final StringBuilder result = new StringBuilder();
 
-		for (ISystemConfiguration sysCfg : sysCfgs) {
-			ISystemConfigurationFunctions configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);			
+		for (final ISystemConfiguration sysCfg : sysCfgs) {
+			final ISystemConfigurationFunctions configurationFunctions = sysCfg.extension(ISystemConfigurationFunctions.class);			
 			if (zoneFunctions.IsLocalOnly()) {
-				for (IAbstractSiteWithHosts hosts : destinationSubZoneFunctions
+				for (final IAbstractSiteWithHosts hosts : destinationSubZoneFunctions
 						.AllSiteWhereSystemConfigurationAndEnvironmentDistinct(TopologyEnvironment.selectToMeEnvironmentForTopology(env), sysCfg)) {				
 						result.append("GRP-HOS-" + configurationFunctions.TypeName() + "-" + hosts.selectName() + "-" +
 								destinationSubZone.selectVLAN_No());
@@ -170,9 +184,9 @@ public class FunctionSpace_SubzonePolicy {
 				}
 			}
 			else {
-				List<ISystemConfiguration> hosts = destinationSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
-				for( ISystemConfiguration concreteSysCfg : hosts ) {
-					ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);					
+				final List<ISystemConfiguration> hosts = destinationSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
+				for( final ISystemConfiguration concreteSysCfg : hosts ) {
+					final ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg.extension(ISystemConfigurationFunctions.class);					
 					result.append("GRP-HOS-" + env.selectHostGroupPrefix() + "-ALL_" + concreteSysCfgFunctions.TypeName() + "-" + destinationSubZone.selectVLAN_No());					
 					result.append(System.lineSeparator());					
 				}
@@ -187,6 +201,11 @@ public class FunctionSpace_SubzonePolicy {
       /* Begin Protected Region [[e5fdbace-0df9-11ea-adc0-d5efa00b40ac]] */
     	return subZoneAccessPolicyList.stream().filter(x -> x.extension(ISubZoneAccessPolicyFunctions.class).AllSystemConfigurations().contains(src.selectSourceSystemConfiguration())).collect(Collectors.toList());   
       /* End Protected Region   [[e5fdbace-0df9-11ea-adc0-d5efa00b40ac]] */
+    }
+
+    @Override
+    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
+      return false;
     }
 
   }
@@ -209,6 +228,10 @@ public class FunctionSpace_SubzonePolicy {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList) {
       return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicyList).OnlyWhereSystemConfiguration(src, subZoneAccessPolicyList);
+    }
+
+    public static java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
+      return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicy).AllowAny(subZoneAccessPolicy);
     }
 
   }
@@ -245,7 +268,7 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
       /* Begin Protected Region [[074d6763-b9d0-11e9-828c-091526d036b6]] */
-    	IZoneFunctions zoneFunctions = intraSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
+    	final IZoneFunctions zoneFunctions = intraSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
     	if( zoneFunctions.IsLocalOnly()) {
     		if(intraSubZoneAccessPolicy.selectRestriction().isAllowed()) {
     			return "G";
@@ -301,6 +324,9 @@ public class FunctionSpace_SubzonePolicy {
     @IDynamicResourceExtension.MethodId("bfada2ac-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources();
 
+    @IDynamicResourceExtension.MethodId("7944f9b1-afbb-11ea-9bc4-516448cfb46a")
+    public java.lang.Boolean AllowAny();
+
   }
   
   public static interface IInterSubZoneAccessPolicyFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -310,6 +336,9 @@ public class FunctionSpace_SubzonePolicy {
 
     @IDynamicResourceExtension.MethodId("bfada2ac-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
+
+    @IDynamicResourceExtension.MethodId("7944f9b1-afbb-11ea-9bc4-516448cfb46a")
+    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
 
   }
   
@@ -322,7 +351,7 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[16a32f0e-b9d0-11e9-828c-091526d036b6]] */
-    	IZoneFunctions zoneFunctions = interSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
+    	final IZoneFunctions zoneFunctions = interSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
     	if( zoneFunctions.IsLocalOnly()) {
         	return "O";
     	} else {
@@ -339,13 +368,20 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.Boolean HasSources(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[bfada2ac-0951-11ea-a9aa-d95ecdaa88c4]] */
-    	if (interSubZoneAccessPolicy.selectAllowProxySpecificCommunications() != null && interSubZoneAccessPolicy.selectAllowProxySpecificCommunications().booleanValue()) {
+    	if (AllowAny(interSubZoneAccessPolicy)) {
     		return true;
     	}
     	
     	return interSubZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class).AllSourcesDistinct().isEmpty() == false;
    
       /* End Protected Region   [[bfada2ac-0951-11ea-a9aa-d95ecdaa88c4]] */
+    }
+
+    @Override
+    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+      /* Begin Protected Region [[7944f9b1-afbb-11ea-9bc4-516448cfb46a]] */
+    	return interSubZoneAccessPolicy.selectAllowAny() != null && interSubZoneAccessPolicy.selectAllowAny().booleanValue();
+      /* End Protected Region   [[7944f9b1-afbb-11ea-9bc4-516448cfb46a]] */
     }
 
   }
@@ -360,6 +396,10 @@ public class FunctionSpace_SubzonePolicy {
 
     public static java.lang.Boolean HasSources(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).HasSources(interSubZoneAccessPolicy);
+    }
+
+    public static java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+      return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).AllowAny(interSubZoneAccessPolicy);
     }
 
   }
@@ -394,4 +434,4 @@ public class FunctionSpace_SubzonePolicy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,rwp+T5Bo/fiIJfVpkG1CFGUN0Eg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,U5f02l9diGSHQ2PsDEEAHw49Nnk=] */

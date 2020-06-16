@@ -45,6 +45,8 @@ public class FunctionSpace_Communication {
 	    };
 	  }	  
   }
+  
+  public static final int MAX_COLUMNS = 90; 
   /* End Protected Region   [[536f3fea-8833-11e9-80ce-fbaba21c141b]] */
 
 
@@ -599,7 +601,7 @@ public class FunctionSpace_Communication {
     @Override
     public java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
       /* Begin Protected Region [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
-    	final int maxSize = 58;
+    	final int maxSize = MAX_COLUMNS - 2;
     	if( textLiteral.length() == 0) {
     		return StringUtil.repeat(",", maxSize);
     	}    

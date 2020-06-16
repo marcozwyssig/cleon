@@ -8,8 +8,8 @@ public interface IInterSubZoneAccessPolicy extends cleon.architecturemethods.sys
   
   // attributes
   
-  public java.lang.Boolean selectAllowProxySpecificCommunications();
+  public java.lang.Boolean selectAllowAny();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1cbec76-b844-11e9-8760-2d4a9d15ec14,HJPUFn1SGniCd/YHYdmuQOXx4qA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1cbec76-b844-11e9-8760-2d4a9d15ec14,0VXYRbFZaZ4wqwxhO5GFwGFKIt8=] */

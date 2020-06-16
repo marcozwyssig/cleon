@@ -50,11 +50,11 @@ public class FunctionSpace_Services {
     @Override
     public java.lang.Integer Position(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService abstractService) {
       /* Begin Protected Region [[119cb311-9341-11e9-a1f7-0765a2e4170d]] */
-    	IAbstractServiceFunctions functions = abstractService.extension(IAbstractServiceFunctions.class);
-    	cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IServiceGroup parent = functions.Parent();
+    	final IAbstractServiceFunctions functions = abstractService.extension(IAbstractServiceFunctions.class);
+    	final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IServiceGroup parent = functions.Parent();
     	
     	int i = 0;
-    	for( cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService child : parent.selectServices())
+    	for( final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService child : parent.selectServices())
     	{
     		++i;
     		if( child.equals(abstractService))
@@ -190,10 +190,16 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("cab8a431-a0e3-11ea-8daa-afb4679c3497")
     public java.lang.Integer Port();
 
+    @IDynamicResourceExtension.MethodId("3ade8da6-afb0-11ea-9bc4-516448cfb46a")
+    public java.lang.String Id();
+
   }
   
   public static interface IServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("3ade8da6-afb0-11ea-9bc4-516448cfb46a")
+    public java.lang.String Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService service);
+
   }
   
   public static class ServiceFunctionsImpl implements IServiceFunctionsImpl {
@@ -202,11 +208,20 @@ public class FunctionSpace_Services {
 
     private ServiceFunctionsImpl() {}
 
+    @Override
+    public java.lang.String Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService service) {
+      return String.format("%03d", service.selectIdentifier());
+    }
+
   }
   
   public static class ServiceFunctions {
 
     private ServiceFunctions() {}
+
+    public static java.lang.String Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService service) {
+      return DynamicResourceUtil.invoke(IServiceFunctionsImpl.class, ServiceFunctionsImpl.INSTANCE, service).Id(service);
+    }
 
   }
 
@@ -262,4 +277,4 @@ public class FunctionSpace_Services {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,eppE6StZAw7dhqWusyvznvu/V1E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,0XIi712lH9bqmgbP/P+4Agmrm7M=] */

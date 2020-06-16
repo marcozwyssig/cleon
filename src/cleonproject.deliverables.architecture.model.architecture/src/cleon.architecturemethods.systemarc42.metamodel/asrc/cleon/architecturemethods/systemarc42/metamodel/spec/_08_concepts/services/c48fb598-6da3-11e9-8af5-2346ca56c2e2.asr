@@ -26,6 +26,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="0ce5bdcb-afac-11ea-9bc4-516448cfb46a" type="resource" guid="0ce4fa77-afac-11ea-9bc4-516448cfb46a" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c48fdcaa-6da3-11e9-8af5-2346ca56c2e2" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -114,6 +115,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0ce5bdcb-afac-11ea-9bc4-516448cfb46a">
+      <resource guid="0ce4fa77-afac-11ea-9bc4-516448cfb46a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ce54899-afac-11ea-9bc4-516448cfb46a" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1a21f4b6-afac-11ea-9bc4-516448cfb46a" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.ServiceIdInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ce596ba-afac-11ea-9bc4-516448cfb46a" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
         </predicate>
       </resource>
     </object>

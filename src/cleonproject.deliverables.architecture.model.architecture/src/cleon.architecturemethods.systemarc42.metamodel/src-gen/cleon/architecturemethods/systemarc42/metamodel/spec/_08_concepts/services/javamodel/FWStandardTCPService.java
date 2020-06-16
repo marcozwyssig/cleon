@@ -49,6 +49,15 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -83,6 +92,7 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_port, visitor);
     // relations
@@ -90,4 +100,4 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,Gb66DO+v18xuTt2LKPAUKak+c64=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,TJ1YKBsMVlCXlL57XpwdVU4z+3s=] */

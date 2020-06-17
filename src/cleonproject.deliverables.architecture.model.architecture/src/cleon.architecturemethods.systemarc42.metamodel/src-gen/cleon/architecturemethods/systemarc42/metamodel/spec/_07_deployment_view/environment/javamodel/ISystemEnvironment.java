@@ -26,6 +26,8 @@ public interface ISystemEnvironment extends cleon.architecturemethods.arc42.meta
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel> selectLevel_8();
   
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment> selectIncludeEnvironment();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,X8vtpRo7tdC64AvBIFOKfhsC9FE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7372f8ef-ef40-11e8-be8a-b748ff8f0a75,YAY2VMeVlxL+ZEibs+E7KcJtrOM=] */

@@ -159,6 +159,9 @@ public class FunctionSpace_RBAC {
     @IDynamicResourceExtension.MethodId("4ea436ac-1e12-11e9-865e-41ef48a95f70")
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetNetdomain();
 
+    @IDynamicResourceExtension.MethodId("f50d9215-b079-11ea-b791-9b401fd02359")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetSite();
+
     @IDynamicResourceExtension.MethodId("ac99f866-7f25-11e9-9a52-07d4b074defc")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IAbstractSiteGroup GetNetdomainGroup();
 
@@ -325,4 +328,4 @@ public class FunctionSpace_RBAC {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,KkC9quCuyXWz4Mg4TFZWw9a0Fdc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,WBRD0Xcw2fqAa6U0vmYpCW0L3uo=] */

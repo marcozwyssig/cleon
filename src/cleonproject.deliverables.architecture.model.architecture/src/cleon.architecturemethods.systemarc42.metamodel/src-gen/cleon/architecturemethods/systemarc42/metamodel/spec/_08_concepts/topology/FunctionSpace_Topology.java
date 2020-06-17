@@ -35,6 +35,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId();
 
+    @IDynamicResourceExtension.MethodId("394205d2-b07d-11ea-b791-9b401fd02359")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite ParentSite();
+
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -262,6 +265,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("738023f9-09f0-11ea-baed-218c3e076b56")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts Site();
+
+    @IDynamicResourceExtension.MethodId("e6e98c18-b07c-11ea-b791-9b401fd02359")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite TopSite();
 
     @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
     public java.lang.String SimpleName();
@@ -564,4 +570,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,J7iXEIvswMBBZsWggy0hRi2uhkk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,UTjA0kppBsWgE+1lG6Dnc7ona1w=] */

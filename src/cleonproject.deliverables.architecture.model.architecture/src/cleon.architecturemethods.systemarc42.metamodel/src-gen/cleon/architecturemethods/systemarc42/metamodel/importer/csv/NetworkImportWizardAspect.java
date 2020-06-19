@@ -20,9 +20,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document;
-import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
@@ -56,38 +54,46 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 				final String subzoneName = values.get(0);
 				final String rnName = values.get(1);
 				final String cidrName = values.get(2);
-				final String ipName = cidrName.split("/")[0];
-				final String mask = cidrName.split("/")[1];
+				final String[] splitCidrName = cidrName.split("/");
+				if (splitCidrName.length != 2) {
+					context.putError("Cidr " + cidrName + " has a length of " + splitCidrName.length);
+					continue;
+				}
+				final String ipName = splitCidrName[0];
+				final String mask = splitCidrName[1];
 
-				context.putInfo("Create/Update " + subzoneName + " in " + rnName);
+				context.putInfo("Create/Update " + subzoneName + " in " + rnName + " with cidr " + cidrName);
 				final INetworkSite networkSite = functions.GetRN(rnName);
-				if (networkSite != null) {
-					final INetworkSiteFunctions networkSiteFunctions = networkSite
-							.extension(INetworkSiteFunctions.class);
-					final INetworkSubZone subZone = networkSiteFunctions.GetNetworkSubZone(subzoneName);
-					if (subZone != null) {
-						final INetworkSubZoneFunctions subZoneFunctions = subZone
-								.extension(INetworkSubZoneFunctions.class);
-						final IIPv4_Mask cidr = subZoneFunctions.GetCidr(ipName);
-						if (cidr == null) {
-							final ch.actifsource.core.Resource cidrObject = Update.createAndInitializeResource(
-									context.getWriteJobExecutor(), context.getPackage(), Ipv4Package.IPv4_aE_Mask,
-									subZone.getResource(),
-									Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr,
-									IStatementPosition.AT_END);
-
-							Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
-									TopologyPackage.AbstractNumberedHost_number,
-									LiteralUtil.create(ipName));
-
-							Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
-									TopologyPackage.AbstractNumberedHost_number,
-									LiteralUtil.create(Integer.valueOf(mask)));
-
-							context.incrementCreateCount();
-						}
+				if (networkSite == null) {
+					context.putError("Site " + cidrName + " not found");
+					continue;
+				}
+				final INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);
+				final INetworkSubZone subZone = networkSiteFunctions.GetNetworkSubZone(subzoneName);
+				if (subZone == null) {
+					context.putError("Subzone " + subzoneName + " not found");
+					continue;
+				}
+				IIPv4_Mask cidr = null;
+				for (final IIPv4_Mask maskObj : subZone.selectCidr()) {
+					final String ip = maskObj.selectIPv4();
+					if (ipName.equals(ip)) {
+						cidr = maskObj;
 					}
+				}
 
+				if (cidr == null) {
+					final ch.actifsource.core.Resource cidrObject = Update.createAndInitializeResource(
+							context.getWriteJobExecutor(), context.getPackage(), Ipv4Package.IPv4_aE_Mask,
+							subZone.getResource(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IStatementPosition.AT_END);
+
+					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
+							Ipv4Package.IPv4_aE_Address_aE_Aware_iPv4, LiteralUtil.create(ipName));
+
+					Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
+							Ipv4Package.IPv4_aE_Mask_mask, LiteralUtil.create(Integer.valueOf(mask)));
+
+					context.incrementCreateCount();
 				}
 			}
 		} catch (final IOException e) {

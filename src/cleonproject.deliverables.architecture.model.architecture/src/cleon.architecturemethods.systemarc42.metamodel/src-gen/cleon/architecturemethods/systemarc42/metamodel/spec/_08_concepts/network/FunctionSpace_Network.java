@@ -9,6 +9,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
+import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
+import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 /* End Protected Region   [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
@@ -274,12 +276,14 @@ public class FunctionSpace_Network {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
+    	for( final INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().values() ) {
+    		final INetworkSubZoneFunctions subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
+    		final String subzoneName = subZoneFunctions.Name();
+    		if( subzoneName.equalsIgnoreCase(name)) {
+    			return networkSubZone;
+    		}
+    	}
     	return null;
-//    	for( final Resource key : networkSite.selectNetworkSubZone().keyIterable()) {
-//    		Select.sim
-//    	}
-//
-//    	for( INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().)
       /* End Protected Region   [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
     }
 

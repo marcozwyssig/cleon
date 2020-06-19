@@ -113,6 +113,9 @@ public class FunctionSpace_XML {
     @IDynamicResourceExtension.MethodId("388e8b74-b213-11ea-a3a2-e9d3344bee73")
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr);
 
+    @IDynamicResourceExtension.MethodId("ab85a4c0-b233-11ea-8bbe-3b4c7e1fd549")
+    public java.lang.String Name();
+
   }
   
   public static interface INetworkSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -132,7 +135,8 @@ public class FunctionSpace_XML {
     public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask GetCidr(final java.lang.String cidr, final cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone networkSubZone) {
       /* Begin Protected Region [[388e8b74-b213-11ea-a3a2-e9d3344bee73]] */
     	for( final IIPv4_Mask mask : networkSubZone.selectCidr() ) {
-    		if( mask.selectIPv4().equalsIgnoreCase(cidr)) {
+    		final String ip = mask.selectIPv4();
+			if (ip.equals(cidr)) {
     			return mask;
     		}
     	}
@@ -279,4 +283,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,K8ML0iGDxsU6Fj4esnRxXykKdRk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,ppb75lijsON6A0MUc2EWRzUVCbQ=] */

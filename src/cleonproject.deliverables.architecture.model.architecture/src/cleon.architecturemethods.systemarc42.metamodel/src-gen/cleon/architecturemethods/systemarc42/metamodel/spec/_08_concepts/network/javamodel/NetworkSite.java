@@ -81,12 +81,12 @@ public class NetworkSite extends DynamicResource implements INetworkSite {
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone() {
-    return _getMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> selectNetworkSubZone() {
+    return _getMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone);
   }
 
-  public NetworkSite setNetworkSubZone(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> networkSubZone) {
-    _setMultiMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone, networkSubZone);
+  public NetworkSite setNetworkSubZone(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone> networkSubZone) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone, networkSubZone);
     return this;
   }
     
@@ -167,7 +167,7 @@ public class NetworkSite extends DynamicResource implements INetworkSite {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
-    _acceptMultiMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone, visitor);
+    _acceptMap(cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_networkSubZone, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkSite_site, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -183,4 +183,4 @@ public class NetworkSite extends DynamicResource implements INetworkSite {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,nIHOz0qtOzgyRewcCXin6EkYd+8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,HzNVxzc69weTFIGAQR548F+ajZg=] */

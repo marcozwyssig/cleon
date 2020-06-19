@@ -25,6 +25,7 @@ public class NetworkPackage {
   public static final Resource NetworkConcept_networkEnvironment = new Resource("92c258bf-053f-11ea-b1c2-9163c84d2612");
   public static final Resource NetworkEnvironment_environmentForNetwork = new Resource("a493cec1-053f-11ea-b1c2-9163c84d2612");
   public static final Resource FunctionSpace_aE_Network_NetworkSite = new Resource("d99081cf-4cb1-11ea-9133-491af9338ef7");
+  public static final Resource FunctionSpace_aE_Network_NetworkEnvironment = new Resource("01d2aa3c-b212-11ea-a3a2-e9d3344bee73");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,q+IMZQMNPbHm2WLecbGK9tEfyyg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,y/I8Vv2LOWNPAHhNse9FyHZpSjM=] */

@@ -51,6 +51,9 @@ public class FunctionSpace_SystemArc42 {
     @IDynamicResourceExtension.MethodId("4ad206a2-b1fa-11ea-a3a2-e9d3344bee73")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology Topology();
 
+    @IDynamicResourceExtension.MethodId("47e109fb-b211-11ea-a3a2-e9d3344bee73")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept Network();
+
     @IDynamicResourceExtension.MethodId("5d3590b9-b20a-11ea-a3a2-e9d3344bee73")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetSystemConfiguration(final java.lang.String name);
 
@@ -97,4 +100,4 @@ public class FunctionSpace_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,E6FHGWJh7jOoAPY+a/xY1QRFvvE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,1270d567-5d76-11ea-a17e-876aff2eba30,h8AqWRi7nZgW1MZAMJA44mbj/38=] */

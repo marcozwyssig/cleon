@@ -26,7 +26,6 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithHosts = new Resource("939c6e17-9375-11e9-8139-e76b19cfb4bf");
   public static final Resource TN_tdm = new Resource("496549a8-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_TDM = new Resource("8289bc7e-93e1-11e9-8139-e76b19cfb4bf");
-  public static final Resource FunctionSpace_aE_Topology_CentralSite = new Resource("ba8d6875-941e-11e9-bbdf-9b4dacbbf865");
   public static final Resource NumberedHost = new Resource("887c437e-ca6a-11e9-83b0-559396620907");
   public static final Resource Cluster = new Resource("a3888cf7-ca6a-11e9-83b0-559396620907");
   public static final Resource StackHost = new Resource("28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79");
@@ -82,4 +81,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,JrRKTJUzen+/eOH6dZXuH403G/o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,q78WT8d8Z7Y6Nepy5mlJ6jgpG4Q=] */

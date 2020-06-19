@@ -22,29 +22,29 @@ import java.util.Iterator;
 public class FunctionSpace_BuildNode {
 
   /* Begin Protected Region [[48dec04d-02d8-11e9-9e58-33d596257b14]] */
-	public static class HelperFunctionClass {
-		public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(
-				String site, IAbstractSiteWithHosts siteObject, ISystemConfiguration cmp, String owner, String id) {
-			Logger.instance().logInfo("Found site for " + site);
-			IAbstractSiteWithHosts siteComposition = (IAbstractSiteWithHosts) siteObject;
-			IList<? extends IAbstractHost> abstractHosts = siteComposition.selectHosts().get(cmp.getResource());
-			Iterator<? extends IAbstractHost> iterator = abstractHosts.iterator();
-			while (iterator.hasNext()) {
-				IAbstractHost abstractHost = iterator.next();
-				String simpleName = Select.simpleName(abstractHost.getReadJobExecutor(), abstractHost.getResource());
-				String[] strings = simpleName.split("-");
-				Logger.instance().logInfo("Check owner " + owner + " / " + strings[2]);
-				if (owner.equals(strings[2])) {
-					Logger.instance().logInfo("Check id " + id + " / " + strings[3]);
-					if (id.startsWith(strings[3])) {
-						return abstractHost;
-					}
+public static class HelperFunctionClass {
+	public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(
+			final String site, final IAbstractSiteWithHosts siteObject, final ISystemConfiguration cmp, final String owner, final String id) {
+		Logger.instance().logInfo("Found site for " + site);
+		final IAbstractSiteWithHosts siteComposition = siteObject;
+		final IList<? extends IAbstractHost> abstractHosts = siteComposition.selectHosts().get(cmp.getResource());
+		final Iterator<? extends IAbstractHost> iterator = abstractHosts.iterator();
+		while (iterator.hasNext()) {
+			final IAbstractHost abstractHost = iterator.next();
+			final String simpleName = Select.simpleName(abstractHost.getReadJobExecutor(), abstractHost.getResource());
+			final String[] strings = simpleName.split("-");
+			Logger.instance().logInfo("Check owner " + owner + " / " + strings[2]);
+			if (owner.equals(strings[2])) {
+				Logger.instance().logInfo("Check id " + id + " / " + strings[3]);
+				if (id.startsWith(strings[3])) {
+					return abstractHost;
 				}
 			}
-			return null;
 		}
-
+		return null;
 	}
+
+}
   /* End Protected Region   [[48dec04d-02d8-11e9-9e58-33d596257b14]] */
 
 
@@ -74,32 +74,35 @@ public class FunctionSpace_BuildNode {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost GetHost(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration cmp, final java.lang.String site, final java.lang.String owner, final java.lang.String id, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode serviceBuildNode) {
       /* Begin Protected Region [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
-    	IServiceBuildNodeFunctions serviceBuildNodeFunctions = serviceBuildNode.extension(IServiceBuildNodeFunctions.class);
-    	ITopologyEnvironment topologyEnvironment = serviceBuildNodeFunctions.GetTopologyEnvironment();
-    	ITopologyEnvironmentFunctions environmentFunctions = topologyEnvironment.extension(ITopologyEnvironmentFunctions.class);
-    	IAbstractSiteWithHosts siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site)).findFirst().orElse(null);
+    	final IServiceBuildNodeFunctions serviceBuildNodeFunctions = serviceBuildNode.extension(IServiceBuildNodeFunctions.class);
+    	final ITopologyEnvironment topologyEnvironment = serviceBuildNodeFunctions.GetTopologyEnvironment();
+    	final ITopologyEnvironmentFunctions environmentFunctions = topologyEnvironment.extension(ITopologyEnvironmentFunctions.class);
+		IAbstractSiteWithHosts siteObject = environmentFunctions.AllAbstractSiteHosts().stream()
+				.filter(x -> x.selectName().equalsIgnoreCase(site)).findFirst().orElse(null);
     	if( siteObject != null ) {
-    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		final IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
     		if( abstractHost != null ) {
     			return abstractHost;
-    		}    		
+    		}
     	}
-		siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '6'))).findFirst().orElse(null);
+		siteObject = environmentFunctions.AllAbstractSiteHosts().stream()
+				.filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '6'))).findFirst().orElse(null);
 		if( siteObject != null ) {
-    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		final IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
     		if( abstractHost != null ) {
     			return abstractHost;
-    		}    					
+    		}
 		}
-		
-		siteObject = environmentFunctions.AllAbstractNetdomainHosts().stream().filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '1'))).findFirst().orElse(null);
+
+		siteObject = environmentFunctions.AllAbstractSiteHosts().stream()
+				.filter(x -> x.selectName().equalsIgnoreCase(site.replace('x', '1'))).findFirst().orElse(null);
 		if( siteObject != null ) {
-    		IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
+    		final IAbstractHost abstractHost = HelperFunctionClass.GetHost(site, siteObject, cmp, owner, id);
     		if( abstractHost != null ) {
     			return abstractHost;
-    		}    					
+    		}
 		}
-		
+
     	return null;
       /* End Protected Region   [[8567abfa-84cc-11ea-aadc-ada99ddb5122]] */
     }

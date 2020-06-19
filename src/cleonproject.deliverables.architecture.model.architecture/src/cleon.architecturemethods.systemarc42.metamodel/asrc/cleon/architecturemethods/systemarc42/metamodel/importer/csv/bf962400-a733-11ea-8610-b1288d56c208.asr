@@ -10,7 +10,7 @@
     <object statement-guid="bf962402-a733-11ea-8610-b1288d56c208" type="resource" guid="bb1a1087-0e41-11e7-bc08-e928dcbbca14" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="bf989503-a733-11ea-8610-b1288d56c208" type="literal">CsvImportWizard</object>
+    <object statement-guid="bf989503-a733-11ea-8610-b1288d56c208" type="literal">HostImportWizard</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d28d55f6-a733-11ea-8610-b1288d56c208">
@@ -19,7 +19,7 @@
           <object statement-guid="d28d55f4-a733-11ea-8610-b1288d56c208" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="2963418d-a734-11ea-8610-b1288d56c208" type="literal">cleon.architecturemethods.systemarc42.metamodel.importer.csv.CsvIImportWizardAspect</object>
+          <object statement-guid="2963418d-a734-11ea-8610-b1288d56c208" type="literal">cleon.architecturemethods.systemarc42.metamodel.importer.csv.HostImportWizardAspect</object>
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="d28d55f5-a733-11ea-8610-b1288d56c208" type="resource" guid="521f1dd5-0e46-11e7-bc08-e928dcbbca14" />
@@ -43,7 +43,7 @@
     <object statement-guid="d1761991-a733-11ea-8610-b1288d56c208">
       <resource guid="d176198e-a733-11ea-8610-b1288d56c208">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="d1761990-a733-11ea-8610-b1288d56c208" type="resource" guid="00595fb9-0f10-11e7-9a20-dfec81ac21a9" />
+          <object statement-guid="d2a616ce-b1f7-11ea-a3a2-e9d3344bee73" type="resource" guid="06e1bd57-0f10-11e7-9a20-dfec81ac21a9" />
         </predicate>
       </resource>
     </object>

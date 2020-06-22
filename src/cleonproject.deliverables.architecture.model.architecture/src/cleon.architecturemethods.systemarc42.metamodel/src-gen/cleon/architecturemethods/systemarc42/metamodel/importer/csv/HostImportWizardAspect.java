@@ -25,14 +25,43 @@ import cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc
 import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 
 public class HostImportWizardAspect implements IGenericImportWizardAspect {
+	private final String MBS_HOST = "MBSHost";
+	private final String VIRTUAL_IP = "VirtualIP";
+
+	private ch.actifsource.core.Resource createMBSHost(final IImportContext context, final String bbu,
+			final IRN rnObject) {
+
+		final ch.actifsource.core.Resource hostObject = Update.createAndInitializeResource(
+				context.getWriteJobExecutor(), context.getPackage(), TopologyPackage.MBSHost, rnObject.getResource(),
+				TopologyPackage.AbstractSiteWithHosts_hosts, IStatementPosition.AT_END);
+
+		if (bbu.equals("A")) {
+			Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+					TopologyPackage.MBSHost_bbu, TopologyPackage.Location_A);
+		}
+
+		if (bbu.equals("B")) {
+			Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+					TopologyPackage.MBSHost_bbu, TopologyPackage.Location_B);
+		}
+		return hostObject;
+	}
+
+	private ch.actifsource.core.Resource createVirtualIP(final IImportContext context, final IRN rnObject) {
+		return Update.createAndInitializeResource(context.getWriteJobExecutor(), context.getPackage(),
+				TopologyPackage.VirtualIP, rnObject.getResource(), TopologyPackage.AbstractSiteWithHosts_hosts,
+				IStatementPosition.AT_END);
+	}
 
 	@Override
 	public void importFile(final IImportContext context, final InputStream inputStream) {
 
 		final ITypeSystem typeSystem = TypeSystem.create(context.getWriteJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class, context.getResouce());
-		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document.extension(ISystemArc42DocumentFunctions.class);
+		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class,
+				context.getResouce());
+		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document
+				.extension(ISystemArc42DocumentFunctions.class);
 		final ITopology topology = arc42DocumentFunctions.Topology();
 		final ITopologyEnvironment topologyEnvironment = topology.selectTopologyEnvironment().values().stream()
 				.findFirst().get();
@@ -68,36 +97,28 @@ public class HostImportWizardAspect implements IGenericImportWizardAspect {
 				context.putInfo("Create/Update " + hostType + " in " + rnName);
 				final IRN rnObject = functions.GetRN(rnName);
 				if (rnObject != null) {
-					final ch.actifsource.core.Resource hostObject = Update.createAndInitializeResource(
-							context.getWriteJobExecutor(), context.getPackage(), TopologyPackage.MBSHost,
-							rnObject.getResource(), TopologyPackage.AbstractSiteWithHosts_hosts,
-							IStatementPosition.AT_END);
-
-					if (bbu.equals("A")) {
-						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-								TopologyPackage.MBSHost_bbu, TopologyPackage.Location_A);
+					ch.actifsource.core.Resource hostObject = null;
+					if (hostType.equalsIgnoreCase(MBS_HOST)) {
+						hostObject = createMBSHost(context, bbu, rnObject);
+					} else if (hostType.equalsIgnoreCase(VIRTUAL_IP)) {
+						hostObject = createVirtualIP(context, rnObject);
 					}
 
-					if (bbu.equals("B")) {
+					if (hostObject != null) {
 						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-								TopologyPackage.MBSHost_bbu, TopologyPackage.Location_B);
+								TopologyPackage.AbstractHost_instanceOf, systemConfiguration.getResource());
+						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+								TopologyPackage.AbstractNumberedHost_number,
+								LiteralUtil.create(Integer.valueOf(number)));
+						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+								DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(description));
+
+						context.incrementCreateCount();
 					}
-
-					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-							TopologyPackage.AbstractHost_instanceOf, systemConfiguration.getResource());
-
-					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-							TopologyPackage.AbstractNumberedHost_number, LiteralUtil.create(Integer.valueOf(number)));
-					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-							DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(description));
-
-					context.incrementCreateCount();
 				}
 			}
 		} catch (final IOException e) {
 			context.putError(e.toString());
 		}
-
 	}
-
 }

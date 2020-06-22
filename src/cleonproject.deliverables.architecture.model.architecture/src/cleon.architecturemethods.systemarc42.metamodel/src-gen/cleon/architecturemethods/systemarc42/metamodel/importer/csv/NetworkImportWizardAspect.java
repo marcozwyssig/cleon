@@ -32,8 +32,10 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 
 		final ITypeSystem typeSystem = TypeSystem.create(context.getWriteJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class, context.getResouce());
-		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document.extension(ISystemArc42DocumentFunctions.class);
+		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class,
+				context.getResouce());
+		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document
+				.extension(ISystemArc42DocumentFunctions.class);
 		final INetworkConcept networkConcept = arc42DocumentFunctions.Network();
 		final INetworkEnvironment networkEnvironment = networkConcept.selectNetworkEnvironment().values().stream()
 				.findFirst().get();
@@ -52,7 +54,7 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 
 				final List<String> values = row.getValues();
 				final String subzoneName = values.get(0);
-				final String rnName = values.get(1);
+				final String siteName = values.get(1);
 				final String cidrName = values.get(2);
 				final String[] splitCidrName = cidrName.split("/");
 				if (splitCidrName.length != 2) {
@@ -62,10 +64,10 @@ public class NetworkImportWizardAspect implements IGenericImportWizardAspect {
 				final String ipName = splitCidrName[0];
 				final String mask = splitCidrName[1];
 
-				context.putInfo("Create/Update " + subzoneName + " in " + rnName + " with cidr " + cidrName);
-				final INetworkSite networkSite = functions.GetRN(rnName);
+				context.putInfo("Create/Update " + subzoneName + " in " + siteName + " with cidr " + cidrName);
+				final INetworkSite networkSite = functions.GetSite(siteName);
 				if (networkSite == null) {
-					context.putError("Site " + cidrName + " not found");
+					context.putError("Site " + siteName + " not found");
 					continue;
 				}
 				final INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);

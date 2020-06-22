@@ -302,14 +302,17 @@ public class FunctionSpace_Network {
   public static interface INetworkEnvironmentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2a3f2c0c-b212-11ea-a3a2-e9d3344bee73")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetRN(final java.lang.String name);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name);
+
+    @IDynamicResourceExtension.MethodId("c2dc3cb7-b478-11ea-b938-599963fc0a84")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D GetIP(final java.lang.String ip);
 
   }
   
   public static interface INetworkEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2a3f2c0c-b212-11ea-a3a2-e9d3344bee73")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetRN(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment);
 
   }
   
@@ -320,7 +323,7 @@ public class FunctionSpace_Network {
     private NetworkEnvironmentFunctionsImpl() {}
 
     @Override
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetRN(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
       /* Begin Protected Region [[2a3f2c0c-b212-11ea-a3a2-e9d3344bee73]] */
     	for( final INetworkSite networkSite : networkEnvironment.selectNetworkSite().values()) {
     		if( networkSite.selectSite().selectName().equalsIgnoreCase(name)) {
@@ -337,12 +340,12 @@ public class FunctionSpace_Network {
 
     private NetworkEnvironmentFunctions() {}
 
-    public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetRN(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
-      return DynamicResourceUtil.invoke(INetworkEnvironmentFunctionsImpl.class, NetworkEnvironmentFunctionsImpl.INSTANCE, networkEnvironment).GetRN(name, networkEnvironment);
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
+      return DynamicResourceUtil.invoke(INetworkEnvironmentFunctionsImpl.class, NetworkEnvironmentFunctionsImpl.INSTANCE, networkEnvironment).GetSite(name, networkEnvironment);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,yDzTQE4TWBDbdgvOQD2h9PCdHq4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,J1xAJGqC7Lu7We22kFFh/fNnEtY=] */

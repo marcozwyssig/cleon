@@ -1,7 +1,8 @@
 package cleon.architecturemethods.systemarc42.metamodel.importer.csv;
 
-import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.List;
 
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
@@ -17,15 +18,17 @@ import ch.actifsource.ui.wizard.importer.aspect.IGenericImportWizardAspect;
 import cleon.architecturemethods.systemarc42.metamodel.spec.FunctionSpace_SystemArc42.ISystemArc42DocumentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkEnvironmentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.INetworkSiteFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopology;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment;
 import cleon.architecturemethods.systemarc42.metamodel.spec.javamodel.ISystemArc42Document;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package;
-import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
+import cleon.modelinglanguages.network.metamodel.spec.SpecPackage;
+import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 
 public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
@@ -35,18 +38,21 @@ public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
 
 		final ITypeSystem typeSystem = TypeSystem.create(context.getWriteJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class, context.getResouce());
-		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document.extension(ISystemArc42DocumentFunctions.class);
+		final ISystemArc42Document arc42Document = resourceRepository.getResource(ISystemArc42Document.class,
+				context.getResouce());
+		final ISystemArc42DocumentFunctions arc42DocumentFunctions = arc42Document
+				.extension(ISystemArc42DocumentFunctions.class);
 		final INetworkConcept networkConcept = arc42DocumentFunctions.Network();
 		final ITopology topology = arc42DocumentFunctions.Topology();
 		final INetworkEnvironment networkEnvironment = networkConcept.selectNetworkEnvironment().values().stream()
 				.findFirst().get();
 
+		final INetworkEnvironmentFunctions networkEnvironmentFunctions = networkEnvironment
+				.extension(INetworkEnvironmentFunctions.class);
+
 		final ITopologyEnvironment topologyEnvironment = topology.selectTopologyEnvironment().values().stream()
 				.findFirst().get();
 
-		final INetworkEnvironmentFunctions networkEnvironmentFunctions = networkEnvironment
-				.extension(INetworkEnvironmentFunctions.class);
 		final ITopologyEnvironmentFunctions topologyEnvironmentFunctions = topologyEnvironment
 				.extension(ITopologyEnvironmentFunctions.class);
 
@@ -62,53 +68,61 @@ public class HostNodeImportWizardAspect implements IGenericImportWizardAspect {
 				}
 
 				final List<String> values = row.getValues();
-				final String subzoneName = values.get(0);
-				final String rnName = values.get(1);
-				final String cidrName = values.get(2);
-				final String[] splitCidrName = cidrName.split("/");
-				if (splitCidrName.length != 2) {
-					context.putError("Cidr " + cidrName + " has a length of " + splitCidrName.length);
-					continue;
-				}
-				final String ipName = splitCidrName[0];
-				final String mask = splitCidrName[1];
+				final String ipv4 = values.get(0);
+				final String exportDNS = values.get(1);
+				final String hostName = values.get(2);
+				final String subzoneName = values.get(3);
+				final String siteName = values.get(4);
 
-				context.putInfo("Create/Update " + subzoneName + " in " + rnName + " with cidr " + cidrName);
-				final INetworkSite networkSite = networkEnvironmentFunctions.GetRN(rnName);
+				context.putInfo("Create/Update " + ipv4 + " in " + siteName + " with hostName " + hostName);
+				final INetworkSite networkSite = networkEnvironmentFunctions.GetSite(siteName);
 				if (networkSite == null) {
-					context.putError("Site " + cidrName + " not found");
+					context.putError("Site " + siteName + " not found");
 					continue;
 				}
+
 				final INetworkSiteFunctions networkSiteFunctions = networkSite.extension(INetworkSiteFunctions.class);
 				final INetworkSubZone subZone = networkSiteFunctions.GetNetworkSubZone(subzoneName);
 				if (subZone == null) {
 					context.putError("Subzone " + subzoneName + " not found");
 					continue;
 				}
-				IIPv4_Mask cidr = null;
-				for (final IIPv4_Mask maskObj : subZone.selectCidr()) {
-					final String ip = maskObj.selectIPv4();
-					if (ipName.equals(ip)) {
-						cidr = maskObj;
-					}
+
+				final IAbstractHost abstractHost = topologyEnvironmentFunctions.GetAbstractHost(siteName, hostName);
+				if (abstractHost == null) {
+					context.putError("AbtractHost " + hostName + " not found");
+					continue;
 				}
 
-				if (cidr == null) {
-					final ch.actifsource.core.Resource cidrObject = Update.createAndInitializeResource(
-							context.getWriteJobExecutor(), context.getPackage(), Ipv4Package.IPv4_aE_Mask,
-							subZone.getResource(), Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, IStatementPosition.AT_END);
-
-					Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
-							Ipv4Package.IPv4_aE_Address_aE_Aware_iPv4, LiteralUtil.create(ipName));
-
-					Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), cidrObject,
-							Ipv4Package.IPv4_aE_Mask_mask, LiteralUtil.create(Integer.valueOf(mask)));
-
-					context.incrementCreateCount();
+				final IIPv4_D ip4 = networkEnvironmentFunctions.GetIP(ipv4);
+				if (ip4 == null) {
+					context.putError("IP " + ip4 + " not found");
+					continue;
 				}
+
+				final ch.actifsource.core.Resource hostNodeObject = Update.createAndInitializeResource(
+						context.getWriteJobExecutor(), context.getPackage(), NetworkPackage.HostNode,
+						subZone.getResource(), SpecPackage.AbstractPhysicalNetwork_nodes, IStatementPosition.AT_END);
+
+				Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), hostNodeObject,
+						NetworkPackage.HostNode_host, abstractHost.getResource());
+
+				Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), hostNodeObject,
+						SpecPackage.AbstractNetworkNode_iPv4_aE_D, ip4.getResource());
+
+				Update.createOrModifyStatement(context.getWriteJobExecutor(), context.getPackage(), hostNodeObject,
+						SpecPackage.AbstractNetworkNode_exportDNSRecord,
+						LiteralUtil.create(Boolean.parseBoolean(exportDNS)));
+
+				context.incrementCreateCount();
 			}
-		} catch (final IOException e) {
+		} catch (final Exception e) {
+			final StringWriter sw = new StringWriter();
+			final PrintWriter pw = new PrintWriter(sw);
+			e.printStackTrace(pw);
+
 			context.putError(e.toString());
+			context.putError(sw.toString());
 		}
 
 	}

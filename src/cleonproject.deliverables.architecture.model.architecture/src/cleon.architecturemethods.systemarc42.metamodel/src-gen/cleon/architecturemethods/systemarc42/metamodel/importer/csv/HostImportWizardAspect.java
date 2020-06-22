@@ -94,6 +94,8 @@ public class HostImportWizardAspect implements IGenericImportWizardAspect {
 				final String bbu = values.get(4);
 				final String description = values.get(5);
 				final String rnName = values.get(6);
+				final String overrideOwner = values.get(7);
+
 				context.putInfo("Create/Update " + hostType + " in " + rnName);
 				final IRN rnObject = functions.GetRN(rnName);
 				if (rnObject != null) {
@@ -112,6 +114,14 @@ public class HostImportWizardAspect implements IGenericImportWizardAspect {
 								LiteralUtil.create(Integer.valueOf(number)));
 						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
 								DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(description));
+
+						if (overrideOwner.equalsIgnoreCase("null")) {
+							Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+									TopologyPackage.AbstractHost_overrideOwner, LiteralUtil.create(""));
+						} else {
+							Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
+									TopologyPackage.AbstractHost_overrideOwner, LiteralUtil.create(overrideOwner));
+						}
 
 						context.incrementCreateCount();
 					}

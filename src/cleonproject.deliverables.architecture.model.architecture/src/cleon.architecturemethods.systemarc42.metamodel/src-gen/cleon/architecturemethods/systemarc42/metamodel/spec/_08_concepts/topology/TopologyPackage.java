@@ -22,7 +22,6 @@ public class TopologyPackage {
   public static final Resource CentralSite = new Resource("d27c071d-936e-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_AbstractSite = new Resource("7cc4725c-9370-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_RN = new Resource("9b95b273-9370-11e9-8139-e76b19cfb4bf");
-  public static final Resource FunctionSpace_aE_Topology_TN = new Resource("818fc3fe-9375-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithHosts = new Resource("939c6e17-9375-11e9-8139-e76b19cfb4bf");
   public static final Resource TN_tdm = new Resource("496549a8-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_TDM = new Resource("8289bc7e-93e1-11e9-8139-e76b19cfb4bf");
@@ -31,7 +30,6 @@ public class TopologyPackage {
   public static final Resource StackHost = new Resource("28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79");
   public static final Resource StackHost_host = new Resource("773fce65-ec06-11e9-8e1e-d59e76bdbf06");
   public static final Resource AbstractSiteWithZone = new Resource("fd112c3e-ec15-11e9-8e1e-d59e76bdbf06");
-  public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithZone = new Resource("4a963208-ec1b-11e9-8e1e-d59e76bdbf06");
   public static final Resource FunctionSpace_aE_Topology_AbstractHost = new Resource("5baa9659-fb12-11e9-890e-576c93cea08c");
   public static final Resource FunctionSpace_aE_Topology_StackHost = new Resource("80d311cd-fb12-11e9-890e-576c93cea08c");
   public static final Resource FunctionSpace_aE_Topology_NumberedHost = new Resource("84ff2f5a-fb12-11e9-890e-576c93cea08c");
@@ -61,6 +59,7 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_StringLiteral = new Resource("aa14669b-57cc-11ea-bd7a-4baf1bc87b3c");
   public static final Resource Site = new Resource("617548ea-8940-11ea-b3b4-8399156700e6");
   public static final Resource FunctionSpace_aE_Topology_Site = new Resource("63d20b76-8e02-11ea-b01b-6bc31a0e971d");
+  public static final Resource FunctionSpace_aE_Topology_AbstractSiteComposition = new Resource("8a0694cd-b4a2-11ea-b938-599963fc0a84");
   
   /* Begin Protected Region [[user]] */
   
@@ -81,4 +80,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,q78WT8d8Z7Y6Nepy5mlJ6jgpG4Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,QpxyoqYTw8vA70f222Xv7RVRgjE=] */

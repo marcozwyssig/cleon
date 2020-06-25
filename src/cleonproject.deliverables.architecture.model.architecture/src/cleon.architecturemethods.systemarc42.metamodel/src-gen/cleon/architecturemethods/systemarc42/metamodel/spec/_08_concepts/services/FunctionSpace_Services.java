@@ -275,6 +275,31 @@ public class FunctionSpace_Services {
 
   }
 
+  public static interface IAnyServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d1029f14-b6bf-11ea-83ac-afd79efb5e4a")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> All();
+
+  }
+  
+  public static interface IAnyServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AnyServiceFunctionsImpl implements IAnyServiceFunctionsImpl {
+
+    public static final IAnyServiceFunctionsImpl INSTANCE = new AnyServiceFunctionsImpl();
+
+    private AnyServiceFunctionsImpl() {}
+
+  }
+  
+  public static class AnyServiceFunctions {
+
+    private AnyServiceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,0XIi712lH9bqmgbP/P+4Agmrm7M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,dWm4/mLzB1ORkiil4EUS9F7frCI=] */

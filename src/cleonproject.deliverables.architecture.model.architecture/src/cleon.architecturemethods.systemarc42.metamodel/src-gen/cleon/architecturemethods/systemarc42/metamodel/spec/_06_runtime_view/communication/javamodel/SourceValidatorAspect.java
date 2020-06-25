@@ -15,14 +15,13 @@ public class SourceValidatorAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
-		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		ISource source = resourceRepository.getResource(ISource.class, validationContext.getResource());
+		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final ISource source = resourceRepository.getResource(ISource.class, validationContext.getResource());
 
 		if (source.selectAccessAllowed().values().isEmpty()) {
 			validationList.add(new PredicateInconsistency(validationContext.getPackage(), source.getResource(),
-					CommunicationPackage.Source_accessAllowed, "at least one allowed connection is required"));
-			
+					CommunicationPackage.Source_accessAllowed, "at least one allowed connection is required"));			
 		}
 	}
 }

@@ -81,7 +81,7 @@ public class HostImportWizardAspect implements IGenericImportWizardAspect {
 
 				final List<String> values = row.getValues();
 				final String hostType = values.get(0);
-				final String environment = values.get(1);
+				// final String environment = values.get(1);
 				final String systemConfigurationName = values.get(2);
 				final ISystemConfiguration systemConfiguration = arc42DocumentFunctions
 						.GetSystemConfiguration(systemConfigurationName);

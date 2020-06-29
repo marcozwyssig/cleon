@@ -10,19 +10,22 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage;
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceSubSecurityZoneFunctions;
 
-public class SourceValidatorAspect implements IResourceValidationAspect {
+public class SourceSubSecurityZoneValidatorAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
 		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		final ISource source = resourceRepository.getResource(ISource.class, validationContext.getResource());
+		final ISourceSubSecurityZone sourceSubSecurityZone = resourceRepository.getResource(ISourceSubSecurityZone.class, validationContext.getResource());
+		final ISourceSubSecurityZoneFunctions sourceSubSecurityZoneFunctions = sourceSubSecurityZone.extension(ISourceSubSecurityZoneFunctions.class);
 
-		if (source.selectAccessAllowed().values().isEmpty()) {
-			validationList.add(new PredicateInconsistency(validationContext.getPackage(), source.getResource(),
-					CommunicationPackage.Source_accessAllowed, "at least one allowed connection is required"));			
-		}
-
+		if (sourceSubSecurityZoneFunctions.IsAny()) {
+			if( sourceSubSecurityZone.selectThreatMitigations().isEmpty()) {
+				validationList.add(new PredicateInconsistency(validationContext.getPackage(), sourceSubSecurityZone.getResource(),
+						CommunicationPackage.SourceSubSecurityZone_threatMitigations, "on any connection there is at least one threat mitigation required"));
+			}
+		}		
 	}
 }

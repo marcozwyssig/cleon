@@ -36,6 +36,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="2c3922d3-b9e6-11ea-b29c-1fc1209c2c7a" type="resource" guid="8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="77f6b905-b389-11e9-99ca-e7d80a545df8" type="resource" guid="77f691f1-b389-11e9-99ca-e7d80a545df8">
@@ -68,6 +69,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="0ca1d712-b9ea-11ea-b29c-1fc1209c2c7a" type="resource" guid="0ca188ee-b9ea-11ea-b29c-1fc1209c2c7a" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="70b3ee09-b218-11e9-b89e-1728aee30149" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -230,6 +232,28 @@
         </predicate>
       </resource>
     </object>
+    <object statement-guid="2c3922d3-b9e6-11ea-b29c-1fc1209c2c7a">
+      <resource guid="8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8dde0b50-b9e5-11ea-b29c-1fc1209c2c7a" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8dde0b51-b9e5-11ea-b29c-1fc1209c2c7a" type="literal">threatMitigations</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8dde0b53-b9e5-11ea-b29c-1fc1209c2c7a" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8dde0b54-b9e5-11ea-b29c-1fc1209c2c7a" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="8977ce2a-b254-11dd-b53d-d92e97ebbd9f">
+          <object statement-guid="0471e120-b9e6-11ea-b29c-1fc1209c2c7a" type="resource" guid="1d21edbc-d1a4-11e1-abac-9970ef1297f0" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="8dde0b55-b9e5-11ea-b29c-1fc1209c2c7a" type="resource" guid="c01eb033-b9e4-11ea-b29c-1fc1209c2c7a" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="70b5268a-b218-11e9-b89e-1728aee30149" type="literal">SourceSubSecurityZone</object>
@@ -334,6 +358,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="0ca1d712-b9ea-11ea-b29c-1fc1209c2c7a">
+      <resource guid="0ca188ee-b9ea-11ea-b29c-1fc1209c2c7a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ca1b000-b9ea-11ea-b29c-1fc1209c2c7a" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="16e54005-b9ea-11ea-b29c-1fc1209c2c7a" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.SourceSubSecurityZoneValidatorAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ca1d711-b9ea-11ea-b29c-1fc1209c2c7a" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

@@ -544,6 +544,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("b1f1ebfa-69cf-11ea-a748-452677f0eb7c")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> CommunicatesWith();
 
+    @IDynamicResourceExtension.MethodId("29249a94-b9e7-11ea-b29c-1fc1209c2c7a")
+    public java.lang.Boolean IsAny();
+
   }
   
   public static interface ISourceSubSecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -628,4 +631,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,LegyEXVsgrYqLc0aLUMnVArJzqg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,DXmPjXLaMKEUukqrWqKxWs0kz1Y=] */

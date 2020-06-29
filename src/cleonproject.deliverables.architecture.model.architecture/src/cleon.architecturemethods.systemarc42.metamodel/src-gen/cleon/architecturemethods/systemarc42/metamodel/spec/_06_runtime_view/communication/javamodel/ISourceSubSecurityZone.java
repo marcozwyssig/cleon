@@ -14,6 +14,8 @@ public interface ISourceSubSecurityZone extends ch.actifsource.core.javamodel.ID
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectOnlyCommunicatesWith();
   
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.threatmitigation.javamodel.IThreatMitigation> selectThreatMitigations();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,70b3c6f7-b218-11e9-b89e-1728aee30149,CPxqx8K16daLEYi9Pe60VS4lDOc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,70b3c6f7-b218-11e9-b89e-1728aee30149,csCRO36bfHWXEejDyY7UVNNn5Sc=] */

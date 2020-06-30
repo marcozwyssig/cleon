@@ -68,11 +68,11 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
 
   @Override
   public java.lang.String selectOverrideShortName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_overrideShortName);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName);
   }
     
   public void setOverrideShortName(java.lang.String overrideShortName) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_overrideShortName, overrideShortName);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, overrideShortName);
   }
 
   @Override
@@ -232,7 +232,7 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_overrideShortName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipGenerate, visitor);
     // relations
@@ -248,4 +248,4 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bae618be-09f5-11e9-abef-3d869859c931,bfoxomrlMmmN1Hf+SgFmvmtxtV0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bae618be-09f5-11e9-abef-3d869859c931,GfZ2knKRtKqp/acY9zz8WW9nepw=] */

@@ -66,6 +66,15 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.String selectOverrideShortName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName);
+  }
+    
+  public void setOverrideShortName(java.lang.String overrideShortName) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, overrideShortName);
+  }
+
   // relations
   
   @Override
@@ -155,6 +164,7 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponentDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemComponent_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
@@ -164,4 +174,4 @@ public class NamedSystemComponent extends DynamicResource implements INamedSyste
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91ada0b6-35f7-11e9-9d58-25409887bb2a,BGT73gG6BQc9Ev5CUPbdJHV44aI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,91ada0b6-35f7-11e9-9d58-25409887bb2a,m3hqR9w+oIB7Lz+qqbJwjJWwCE0=] */

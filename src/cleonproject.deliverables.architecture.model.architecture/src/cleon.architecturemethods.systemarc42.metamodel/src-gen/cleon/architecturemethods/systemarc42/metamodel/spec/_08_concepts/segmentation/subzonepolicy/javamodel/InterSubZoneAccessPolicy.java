@@ -31,12 +31,12 @@ public class InterSubZoneAccessPolicy extends DynamicResource implements IInterS
   // attributes
   
   @Override
-  public java.lang.Boolean selectAllowAny() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowAny);
+  public java.lang.Boolean selectAllowRestrictedAccess() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowRestrictedAccess);
   }
     
-  public void setAllowAny(java.lang.Boolean allowAny) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowAny, allowAny);
+  public void setAllowRestrictedAccess(java.lang.Boolean allowRestrictedAccess) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowRestrictedAccess, allowRestrictedAccess);
   }
 
   // relations
@@ -75,11 +75,11 @@ public class InterSubZoneAccessPolicy extends DynamicResource implements IInterS
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowAny, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.InterSubZoneAccessPolicy_allowRestrictedAccess, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.SubZoneAccessPolicy_policyForSecuritySubZone, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1cbec76-b844-11e9-8760-2d4a9d15ec14,KB2XCtJkNzsClkLkeUz0nyeGm6Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1cbec76-b844-11e9-8760-2d4a9d15ec14,+I8kEiTy2zPwd4CPPysYzPfWgVA=] */

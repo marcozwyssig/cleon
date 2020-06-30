@@ -66,7 +66,7 @@ public class FunctionSpace_SubzonePolicy {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
-    public java.lang.Boolean AllowAny();
+    public java.lang.Boolean AllowRestrictedAccess();
 
   }
   
@@ -85,7 +85,7 @@ public class FunctionSpace_SubzonePolicy {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> subZoneAccessPolicyList);
 
     @IDynamicResourceExtension.MethodId("6951b97c-afbb-11ea-9bc4-516448cfb46a")
-    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy);
+    public java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy);
 
   }
   
@@ -156,8 +156,8 @@ public class FunctionSpace_SubzonePolicy {
       /* Begin Protected Region [[ee9b53cb-0a36-11ea-baed-218c3e076b56]] */
       final ISubZoneAccessPolicyFunctions accessPolicyFunctions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
       if( accessPolicyFunctions != null ) {
-      	if( accessPolicyFunctions.AllowAny() ) {
-      		return "Any (Restricted)";
+      	if( accessPolicyFunctions.AllowRestrictedAccess() ) {
+      		return "Restricted";
       	}    		
       }
 
@@ -203,7 +203,7 @@ public class FunctionSpace_SubzonePolicy {
     }
 
     @Override
-    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
+    public java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
       return false;
     }
 
@@ -229,8 +229,8 @@ public class FunctionSpace_SubzonePolicy {
       return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicyList).OnlyWhereSystemConfiguration(src, subZoneAccessPolicyList);
     }
 
-    public static java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
-      return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicy).AllowAny(subZoneAccessPolicy);
+    public static java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
+      return DynamicResourceUtil.invoke(ISubZoneAccessPolicyFunctionsImpl.class, SubZoneAccessPolicyFunctionsImpl.INSTANCE, subZoneAccessPolicy).AllowRestrictedAccess(subZoneAccessPolicy);
     }
 
   }
@@ -324,7 +324,7 @@ public class FunctionSpace_SubzonePolicy {
     public java.lang.Boolean HasSources();
 
     @IDynamicResourceExtension.MethodId("7944f9b1-afbb-11ea-9bc4-516448cfb46a")
-    public java.lang.Boolean AllowAny();
+    public java.lang.Boolean AllowRestrictedAccess();
 
   }
   
@@ -337,7 +337,7 @@ public class FunctionSpace_SubzonePolicy {
     public java.lang.Boolean HasSources(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
 
     @IDynamicResourceExtension.MethodId("7944f9b1-afbb-11ea-9bc4-516448cfb46a")
-    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
+    public java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy);
 
   }
   
@@ -367,7 +367,7 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.Boolean HasSources(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[bfada2ac-0951-11ea-a9aa-d95ecdaa88c4]] */
-      if (AllowAny(interSubZoneAccessPolicy)) {
+      if (AllowRestrictedAccess(interSubZoneAccessPolicy)) {
       	return true;
       }
 
@@ -377,9 +377,9 @@ public class FunctionSpace_SubzonePolicy {
     }
 
     @Override
-    public java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+    public java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[7944f9b1-afbb-11ea-9bc4-516448cfb46a]] */
-      return interSubZoneAccessPolicy.selectAllowAny() != null && interSubZoneAccessPolicy.selectAllowAny().booleanValue();
+      return interSubZoneAccessPolicy.selectAllowRestrictedAccess() != null && interSubZoneAccessPolicy.selectAllowRestrictedAccess().booleanValue();
       /* End Protected Region   [[7944f9b1-afbb-11ea-9bc4-516448cfb46a]] */
     }
 
@@ -397,8 +397,8 @@ public class FunctionSpace_SubzonePolicy {
       return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).HasSources(interSubZoneAccessPolicy);
     }
 
-    public static java.lang.Boolean AllowAny(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
-      return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).AllowAny(interSubZoneAccessPolicy);
+    public static java.lang.Boolean AllowRestrictedAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
+      return DynamicResourceUtil.invoke(IInterSubZoneAccessPolicyFunctionsImpl.class, InterSubZoneAccessPolicyFunctionsImpl.INSTANCE, interSubZoneAccessPolicy).AllowRestrictedAccess(interSubZoneAccessPolicy);
     }
 
   }
@@ -433,4 +433,4 @@ public class FunctionSpace_SubzonePolicy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,U5f02l9diGSHQ2PsDEEAHw49Nnk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,2VKJF5w20ceOz5y4f5Vk92LWyzA=] */

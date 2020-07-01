@@ -283,6 +283,31 @@ public class FunctionSpace_Role {
 
   }
 
+  public static interface ISystemComponentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cad233ef-bba6-11ea-83bb-3d6d7d2cf439")
+    public java.lang.String GetNameForRole();
+
+  }
+  
+  public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemComponentFunctionsImpl implements ISystemComponentFunctionsImpl {
+
+    public static final ISystemComponentFunctionsImpl INSTANCE = new SystemComponentFunctionsImpl();
+
+    private SystemComponentFunctionsImpl() {}
+
+  }
+  
+  public static class SystemComponentFunctions {
+
+    private SystemComponentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,YfSUlvY221oRS7tcNlaLrujCNQQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,izZyimH7g5TrEPm5eSNJPIBHC8s=] */

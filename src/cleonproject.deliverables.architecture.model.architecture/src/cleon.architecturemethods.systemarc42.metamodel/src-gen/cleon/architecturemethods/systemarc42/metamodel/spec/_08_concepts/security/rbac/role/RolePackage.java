@@ -28,6 +28,7 @@ public class RolePackage {
   public static final Resource FunctionSpace_aE_Role_RoleNetDomainGroup = new Resource("be3d9b6d-9c17-11e9-9470-2178b598e9a4");
   public static final Resource FunctionSpace_aE_Role_RoleActorResponsibility = new Resource("870a3004-07b8-11ea-980e-578ab3bc55dc");
   public static final Resource RoleSystemComponent_basedOn = new Resource("35fb8118-0de8-11ea-91d3-b3e983305cb0");
+  public static final Resource FunctionSpace_aE_Role_SystemComponent = new Resource("c3859c5c-bba6-11ea-83bb-3d6d7d2cf439");
   
   /* Begin Protected Region [[user]] */
   
@@ -48,4 +49,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,Dmyajv3uAfjaeVo0MDSdpvI5+k0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role,UhsnaEKsRoy78/uOem1sXRyuKWI=] */

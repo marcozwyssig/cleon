@@ -26,22 +26,22 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("3364ecb7-021d-11e9-b327-17da2da63a8f")
     public java.lang.String GetName();
 
-    @IDynamicResourceExtension.MethodId("3d777d38-0ab5-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetIncludePath();
-
     @IDynamicResourceExtension.MethodId("0ea917ac-0e91-11e9-9f19-6d15636f4ecc")
-    public java.lang.String GetSimpleName();
+    public java.lang.String GetShortname();
 
     @IDynamicResourceExtension.MethodId("16d2f46d-2abd-11e9-a3f8-336d9e792e17")
     public java.lang.String GetMaterialTypeName();
+
+    @IDynamicResourceExtension.MethodId("d5b40877-bb98-11ea-aec8-5d01276af4ef")
+    public java.lang.String GetIncludePath();
+
+    @IDynamicResourceExtension.MethodId("d5b4087a-bb98-11ea-aec8-5d01276af4ef")
+    public java.lang.String GetStereotypeName();
 
   }
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("3d777d38-0ab5-11e9-a8f9-abf1763bbc53")
-    public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration);
-
   }
   
   public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
@@ -50,20 +50,11 @@ public class FunctionSpace_SystemConfiguration {
 
     private SystemConfigurationFunctionsImpl() {}
 
-    @Override
-    public java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      return null;
-    }
-
   }
   
   public static class SystemConfigurationFunctions {
 
     private SystemConfigurationFunctions() {}
-
-    public static java.lang.String GetIncludePath(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationFunctionsImpl.class, SystemConfigurationFunctionsImpl.INSTANCE, systemConfiguration).GetIncludePath(systemConfiguration);
-    }
 
   }
 
@@ -878,4 +869,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,NdZeYHa/wEZe3t9D8w24RVTfrmw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,VLVksO3pevbNzG5GkHdxD6FKKHs=] */

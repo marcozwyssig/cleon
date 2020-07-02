@@ -765,16 +765,16 @@
                 <resource statement-guid="21669c0f-1e45-11e9-865e-41ef48a95f70" type="resource" guid="216674f9-1e45-11e9-865e-41ef48a95f70" />
               </owns>
             </resource>
-            <resource statement-guid="a1f845e6-1e45-11e9-865e-41ef48a95f70" type="resource" guid="a1f81ece-1e45-11e9-865e-41ef48a95f70">
+            <resource statement-guid="43479a89-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="43477371-bc6b-11ea-90c7-5f7951296a64">
               <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                <resource statement-guid="a1f9304d-1e45-11e9-865e-41ef48a95f70" type="resource" guid="a1f73466-1e45-11e9-865e-41ef48a95f70">
+                <resource statement-guid="43480fc0-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="4346d729-bc6b-11ea-90c7-5f7951296a64">
                   <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-                    <resource statement-guid="a1f9304c-1e45-11e9-865e-41ef48a95f70" type="resource" guid="a1f69820-1e45-11e9-865e-41ef48a95f70" />
+                    <resource statement-guid="43480fbf-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="434661f3-bc6b-11ea-90c7-5f7951296a64" />
                   </owns>
                 </resource>
               </owns>
               <owns predicate="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
-                <resource statement-guid="a1f845e5-1e45-11e9-865e-41ef48a95f70" type="resource" guid="a1f81ecf-1e45-11e9-865e-41ef48a95f70" />
+                <resource statement-guid="43477378-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="43477372-bc6b-11ea-90c7-5f7951296a64" />
               </owns>
             </resource>
             <resource statement-guid="90698e02-1e3f-11e9-865e-41ef48a95f70" type="resource" guid="90698ce6-1e3f-11e9-865e-41ef48a95f70">
@@ -9544,7 +9544,7 @@
                                   <object statement-guid="21675f64-1e45-11e9-865e-41ef48a95f70" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="21678675-1e45-11e9-865e-41ef48a95f70" type="literal">&lt;db:para&gt;Die System-Konfigurationen, welche keine explizite Backupkonfiguration aufweist, verwenden die Backup-Konfiguration der unterliegenden System-Konfiguration. Nachfolgend die Konfiguration</object>
+                                  <object statement-guid="21678675-1e45-11e9-865e-41ef48a95f70" type="literal">&lt;db:para&gt;DDie System-Konfigurationen, welche keine explizite Sicherungskonfiguration aufweist, verwenden die Sicherungskonfiguration der unterliegenden System-Konfiguration. </object>
                                 </predicate>
                               </resource>
                             </object>
@@ -9563,25 +9563,25 @@
                     </predicate>
                   </resource>
                 </object>
-                <object statement-guid="a1f845e6-1e45-11e9-865e-41ef48a95f70">
-                  <resource guid="a1f81ece-1e45-11e9-865e-41ef48a95f70">
+                <object statement-guid="43479a89-bc6b-11ea-90c7-5f7951296a64">
+                  <resource guid="43477371-bc6b-11ea-90c7-5f7951296a64">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="a1f81ed2-1e45-11e9-865e-41ef48a95f70" type="resource" guid="cfc4cfd3-c91d-11de-a722-07fb435e032d" />
+                      <object statement-guid="43477375-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="cfc4cfd3-c91d-11de-a722-07fb435e032d" />
                     </predicate>
                     <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                      <object statement-guid="a1f9304d-1e45-11e9-865e-41ef48a95f70">
-                        <resource guid="a1f73466-1e45-11e9-865e-41ef48a95f70">
+                      <object statement-guid="43480fc0-bc6b-11ea-90c7-5f7951296a64">
+                        <resource guid="4346d729-bc6b-11ea-90c7-5f7951296a64">
                           <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                            <object statement-guid="a1f90938-1e45-11e9-865e-41ef48a95f70" type="resource" guid="807c58c6-c946-11de-95d0-4912b8dc029a" />
+                            <object statement-guid="4347e8ab-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="807c58c6-c946-11de-95d0-4912b8dc029a" />
                           </predicate>
                           <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                            <object statement-guid="a1f9304c-1e45-11e9-865e-41ef48a95f70">
-                              <resource guid="a1f69820-1e45-11e9-865e-41ef48a95f70">
+                            <object statement-guid="43480fbf-bc6b-11ea-90c7-5f7951296a64">
+                              <resource guid="434661f3-bc6b-11ea-90c7-5f7951296a64">
                                 <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                                  <object statement-guid="a1f9093a-1e45-11e9-865e-41ef48a95f70" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                                  <object statement-guid="43480fbd-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="a1f9093b-1e45-11e9-865e-41ef48a95f70" type="literal">der entsprechenden Backup-Konfiguration für die jeweilige System-Konfiguration:&lt;/db:para&gt;</object>
+                                  <object statement-guid="43480fbe-bc6b-11ea-90c7-5f7951296a64" type="literal">Nachfolgend die Konfiguration der entsprechenden Sicherungskonfiguration für die jeweilige System-Konfiguration:&lt;/db:para&gt;</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -9590,10 +9590,10 @@
                       </object>
                     </predicate>
                     <predicate guid="9f44fa8e-d347-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="a1f845e5-1e45-11e9-865e-41ef48a95f70">
-                        <resource guid="a1f81ecf-1e45-11e9-865e-41ef48a95f70">
+                      <object statement-guid="43477378-bc6b-11ea-90c7-5f7951296a64">
+                        <resource guid="43477372-bc6b-11ea-90c7-5f7951296a64">
                           <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                            <object statement-guid="a1f845e4-1e45-11e9-865e-41ef48a95f70" type="resource" guid="4f50d6ca-d347-11de-87dc-a9aeefa4174b" />
+                            <object statement-guid="43477377-bc6b-11ea-90c7-5f7951296a64" type="resource" guid="4f50d6ca-d347-11de-87dc-a9aeefa4174b" />
                           </predicate>
                         </resource>
                       </object>
@@ -9914,7 +9914,7 @@
                                   <object statement-guid="9069b454-1e3f-11e9-865e-41ef48a95f70" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="9069b455-1e3f-11e9-865e-41ef48a95f70" type="literal">			&lt;db:th&gt;Backupkonfiguration&lt;/db:th&gt;</object>
+                                  <object statement-guid="9069b455-1e3f-11e9-865e-41ef48a95f70" type="literal">			&lt;db:th&gt;Sicherungskonfiguration&lt;/db:th&gt;</object>
                                 </predicate>
                               </resource>
                             </object>
@@ -13638,7 +13638,7 @@
                                   <object statement-guid="cccd303a-1983-11e9-88a0-1f786f12e4c1" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                 </predicate>
                                 <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                  <object statement-guid="cccd574b-1983-11e9-88a0-1f786f12e4c1" type="literal">&lt;db:para&gt;Die Verteilung unterscheidet sich in die nachfolgenden unterschiedlichen Umgebungen:&lt;/db:para&gt;</object>
+                                  <object statement-guid="cccd574b-1983-11e9-88a0-1f786f12e4c1" type="literal">&lt;db:para&gt;Die Verteilung unterteilt sich in die nachfolgenden unterschiedlichen Umgebungen:&lt;/db:para&gt;</object>
                                 </predicate>
                               </resource>
                             </object>

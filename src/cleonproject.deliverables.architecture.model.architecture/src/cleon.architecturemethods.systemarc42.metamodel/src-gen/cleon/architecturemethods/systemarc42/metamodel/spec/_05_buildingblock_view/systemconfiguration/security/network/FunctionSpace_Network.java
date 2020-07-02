@@ -20,12 +20,6 @@ public class FunctionSpace_Network {
 
   public static interface IFirewallSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("10f5bf38-0465-11ea-9e5a-73755cac0c6e")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("10f5bf3b-0465-11ea-9e5a-73755cac0c6e")
-    public java.lang.String GetIncludePath();
-
   }
   
   public static interface IFirewallSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -47,12 +41,6 @@ public class FunctionSpace_Network {
   }
 
   public static interface IRouterSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("10f5bf45-0465-11ea-9e5a-73755cac0c6e")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("10f5bf48-0465-11ea-9e5a-73755cac0c6e")
-    public java.lang.String GetIncludePath();
 
   }
   
@@ -132,4 +120,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,10f570ce-0465-11ea-9e5a-73755cac0c6e,N2YSKk6JMTpp1vczwOvZ+4dNoDY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,10f570ce-0465-11ea-9e5a-73755cac0c6e,hYa3aoL3cFAIA6BSDvNtL/4SvTQ=] */

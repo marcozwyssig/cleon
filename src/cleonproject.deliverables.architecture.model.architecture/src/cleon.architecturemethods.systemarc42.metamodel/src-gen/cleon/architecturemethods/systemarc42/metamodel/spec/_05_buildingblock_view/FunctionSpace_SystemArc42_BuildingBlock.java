@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class FunctionSpace_SystemArc42_BuildingBlock {
 
   /* Begin Protected Region [[8bc3420c-035a-11e9-a251-e3767b78f69f]] */
-  
+
   /* End Protected Region   [[8bc3420c-035a-11e9-a251-e3767b78f69f]] */
 
 
@@ -213,21 +213,21 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
       /* Begin Protected Region [[2a51e529-df6d-11e9-9827-a1514ee8d06a]] */
-    	return systemConfiguration.selectInterface().values().stream().filter(x -> x.selectInterfaceInSecuritySubZone().equals(subzone)).findFirst().orElse(null);   
+      return systemConfiguration.selectInterface().values().stream().filter(x -> x.selectInterfaceInSecuritySubZone().equals(subzone)).findFirst().orElse(null);   
       /* End Protected Region   [[2a51e529-df6d-11e9-9827-a1514ee8d06a]] */
     }
 
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> systemConfigurationList) {
       /* Begin Protected Region [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
-    	return systemConfigurationList.stream().filter(x -> (x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue())).collect(Collectors.toList());   
+      return systemConfigurationList.stream().filter(x -> (x.selectSkipGenerate() == null || !x.selectSkipGenerate().booleanValue())).collect(Collectors.toList());   
       /* End Protected Region   [[1e2f66c0-06bd-11ea-8f17-2da21adc8e34]] */
     }
 
     @Override
     public java.lang.Boolean DependsOnWindows(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration systemConfiguration) {
       /* Begin Protected Region [[492b3b22-14d9-11ea-a57d-f9a0d62ee07e]] */
-    	return systemConfiguration.extension(ISystemConfigurationFunctions.class).GetAllDependsOnWithSelf().stream().anyMatch(x -> x.selectShortName().equalsIgnoreCase("WIN"));   
+      return systemConfiguration.extension(ISystemConfigurationFunctions.class).GetAllDependsOnWithSelf().stream().anyMatch(x -> x.selectShortName().equalsIgnoreCase("WIN"));   
       /* End Protected Region   [[492b3b22-14d9-11ea-a57d-f9a0d62ee07e]] */
     }
 
@@ -278,7 +278,4 @@ public class FunctionSpace_SystemArc42_BuildingBlock {
 
 }
 
-      /* Begin Protected Region [[4308e706-ba9d-11ea-b29c-1fc1209c2c7a]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[4308e706-ba9d-11ea-b29c-1fc1209c2c7a]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,JyPlQXWBAFdy7zY8sGcFXeUA/pY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,t+LrEvc0aKays4Dd3sXMmVFyHz8=] */

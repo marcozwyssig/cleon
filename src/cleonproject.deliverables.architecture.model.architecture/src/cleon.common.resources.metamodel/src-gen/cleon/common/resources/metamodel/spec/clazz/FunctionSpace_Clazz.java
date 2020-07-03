@@ -13,60 +13,62 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 public class FunctionSpace_Clazz {
 
-	/* Begin Protected Region [[17d11fe8-bacb-11ea-ad63-c39dbaa0ce43]] */
+  /* Begin Protected Region [[17d11fe8-bacb-11ea-ad63-c39dbaa0ce43]] */
 
-	/* End Protected Region   [[17d11fe8-bacb-11ea-ad63-c39dbaa0ce43]] */
+  /* End Protected Region   [[17d11fe8-bacb-11ea-ad63-c39dbaa0ce43]] */
 
 
-	public static class ClassFunctions {
+  public static interface IClassFunctions extends IDynamicResourceExtension {
 
-		public static ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_) {
-			return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).FillColor(class_);
-		}
+    @IDynamicResourceExtension.MethodId("f4d9ca2b-8546-11ea-9f0c-755186b47bc2")
+    public ch.actifsource.core.javamodel.IColor FillColor();
 
-		private ClassFunctions() {}
+  }
+  
+  public static interface IClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("f4d9ca2b-8546-11ea-9f0c-755186b47bc2")
+    public ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_);
 
-	}
+  }
+  
+  public static class ClassFunctionsImpl implements IClassFunctionsImpl {
 
-	public static class ClassFunctionsImpl implements IClassFunctionsImpl {
+    public static final IClassFunctionsImpl INSTANCE = new ClassFunctionsImpl();
 
-		public static final IClassFunctionsImpl INSTANCE = new ClassFunctionsImpl();
+    private ClassFunctionsImpl() {}
 
-		private ClassFunctionsImpl() {}
+    @Override
+    public ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_) {
+      /* Begin Protected Region [[f4d9ca2b-8546-11ea-9f0c-755186b47bc2]] */
+      if( class_.selectFillColor() != null ) {
+      	return class_.selectFillColor();
+      }
+      for( final ch.actifsource.core.javamodel.IClass iterClass : class_.selectExtends()) {
+      	if( iterClass.selectExtends().contains(iterClass)) {
+      		continue;
+      	}
+      	final IClassFunctions functions = iterClass.extension(IClassFunctions.class);
+      	final ch.actifsource.core.javamodel.IColor color = functions.FillColor();
+      	if (color != null ) {
+      		return color;
+      	}
+      }
+      return null;    
+      /* End Protected Region   [[f4d9ca2b-8546-11ea-9f0c-755186b47bc2]] */
+    }
 
-		@Override
-		public ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_) {
-			/* Begin Protected Region [[f4d9ca2b-8546-11ea-9f0c-755186b47bc2]] */
-			if( class_.selectFillColor() != null ) {
-				return class_.selectFillColor();
-			}
-			for( final ch.actifsource.core.javamodel.IClass iterClass : class_.selectExtends()) {
-				if( iterClass.selectExtends().contains(iterClass)) {
-					continue;
-				}
-				final IClassFunctions functions = iterClass.extension(IClassFunctions.class);
-				final ch.actifsource.core.javamodel.IColor color = functions.FillColor();
-				if (color != null ) {
-					return color;
-				}
-			}
-			return null;    
-			/* End Protected Region   [[f4d9ca2b-8546-11ea-9f0c-755186b47bc2]] */
-		}
+  }
+  
+  public static class ClassFunctions {
 
-	}
+    private ClassFunctions() {}
 
-	public interface IClassFunctions extends IDynamicResourceExtension {
+    public static ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_) {
+      return DynamicResourceUtil.invoke(IClassFunctionsImpl.class, ClassFunctionsImpl.INSTANCE, class_).FillColor(class_);
+    }
 
-		@IDynamicResourceExtension.MethodId("f4d9ca2b-8546-11ea-9f0c-755186b47bc2") ch.actifsource.core.javamodel.IColor FillColor();
-
-	}
-
-	public interface IClassFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-		@IDynamicResourceExtension.MethodId("f4d9ca2b-8546-11ea-9f0c-755186b47bc2") ch.actifsource.core.javamodel.IColor FillColor(final ch.actifsource.core.javamodel.IClass class_);
-
-	}
+  }
 
 }
 

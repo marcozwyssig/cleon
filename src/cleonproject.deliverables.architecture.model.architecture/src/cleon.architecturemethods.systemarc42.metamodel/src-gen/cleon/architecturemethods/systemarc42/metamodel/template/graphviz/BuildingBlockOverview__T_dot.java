@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[e32b4999-baa0-11ea-b29c-1fc1209c2c7a,imports]] */
 
-public class Overview__T_dot {
+public class BuildingBlockOverview__T_dot {
 
   /* Begin Protected Region [[e32b4999-baa0-11ea-b29c-1fc1209c2c7a]] */
   
@@ -45,4 +45,4 @@ public class Overview__T_dot {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e32b4999-baa0-11ea-b29c-1fc1209c2c7a,gc/7cBB0cM3fCl+b2GkpTBanXmc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e32b4999-baa0-11ea-b29c-1fc1209c2c7a,z7gywvI8nSz15StPlosDUiuf+nw=] */

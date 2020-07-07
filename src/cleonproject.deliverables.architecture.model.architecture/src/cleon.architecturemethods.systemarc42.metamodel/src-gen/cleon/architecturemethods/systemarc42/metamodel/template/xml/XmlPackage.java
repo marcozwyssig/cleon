@@ -13,6 +13,7 @@ public class XmlPackage {
   public static final Resource FunctionSpace_aE_XML_NamedNetworkNode = new Resource("f089bf0e-90da-11e9-b29b-f1077960b1fa");
   public static final Resource FunctionSpace_aE_XML_NetworkNode = new Resource("fd21c5e1-90da-11e9-b29b-f1077960b1fa");
   public static final Resource FunctionSpace_aE_XML_HostNode = new Resource("de1344b9-4836-11ea-a9d8-93d0ce680cba");
+  public static final Resource Architecture__T_xml_BuildingBlock = new Resource("f84a8b66-bfa7-11ea-b8b1-7728028c2e32");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,4z59kTWvsa+nF1IbFD9+h5Cl9F4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,U0kIMguxdISE7X1ux0oqvnjhqew=] */

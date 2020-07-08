@@ -11,38 +11,38 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[e32b4999-baa0-11ea-b29c-1fc1209c2c7a,imports]] */
 
-public class BuildingBlockOverview__T_dot {
+public class System_aE_Architecture_aE_Overview__T_dot {
 
   /* Begin Protected Region [[e32b4999-baa0-11ea-b29c-1fc1209c2c7a]] */
   
   /* End Protected Region   [[e32b4999-baa0-11ea-b29c-1fc1209c2c7a]] */
 
 
-  public static interface IComponentCompositionFunctions extends IDynamicResourceExtension {
+  public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("69f9da78-baaa-11ea-b29c-1fc1209c2c7a")
     public java.lang.String GenerateComponents();
 
   }
   
-  public static interface IComponentCompositionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ComponentCompositionFunctionsImpl implements IComponentCompositionFunctionsImpl {
+  public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
 
-    public static final IComponentCompositionFunctionsImpl INSTANCE = new ComponentCompositionFunctionsImpl();
+    public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
 
-    private ComponentCompositionFunctionsImpl() {}
+    private BuildingBlockFunctionsImpl() {}
 
   }
   
-  public static class ComponentCompositionFunctions {
+  public static class BuildingBlockFunctions {
 
-    private ComponentCompositionFunctions() {}
+    private BuildingBlockFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e32b4999-baa0-11ea-b29c-1fc1209c2c7a,z7gywvI8nSz15StPlosDUiuf+nw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e32b4999-baa0-11ea-b29c-1fc1209c2c7a,6HJpcCTc3RUMYMwTUqgCquvbLtU=] */

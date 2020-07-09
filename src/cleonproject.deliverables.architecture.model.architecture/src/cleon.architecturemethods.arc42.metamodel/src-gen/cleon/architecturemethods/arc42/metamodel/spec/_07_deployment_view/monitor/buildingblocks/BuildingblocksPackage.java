@@ -16,6 +16,7 @@ public class BuildingblocksPackage {
   public static final Resource SensorParameter_check = new Resource("a9009223-c1f0-11ea-820f-9931558a898c");
   public static final Resource MonitoringBuildingBlock_basedOn = new Resource("3c03a6b2-c1f2-11ea-820f-9931558a898c");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_MonitoringBuildingBlocks = new Resource("37cfcc37-c1f3-11ea-820f-9931558a898c");
+  public static final Resource SensorCheck = new Resource("7f613e91-c1fc-11ea-820f-9931558a898c");
   
   /* Begin Protected Region [[user]] */
   
@@ -36,4 +37,4 @@ public class BuildingblocksPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,4GI+a3lXgU7I/n0YzDq1lISLipQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,g531LBS27tL9QZ11fzvNa/mCcTU=] */

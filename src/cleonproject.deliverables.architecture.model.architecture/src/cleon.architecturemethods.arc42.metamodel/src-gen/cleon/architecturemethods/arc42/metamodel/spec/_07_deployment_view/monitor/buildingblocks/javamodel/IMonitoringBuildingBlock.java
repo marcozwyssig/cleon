@@ -10,10 +10,10 @@ public interface IMonitoringBuildingBlock extends cleon.common.doc.metamodel.spe
   
   public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectMonitoringBuildingblock();
   
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.ISensor> selectSensor();
-  
   public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> selectBasedOn();
+  
+  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.ISensor> selectSensor();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,IsX+lT5QWCkXlY/wLZmsNSjqOAI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,aJWL9G0BK0utk/rWDsVtU1yF6wA=] */

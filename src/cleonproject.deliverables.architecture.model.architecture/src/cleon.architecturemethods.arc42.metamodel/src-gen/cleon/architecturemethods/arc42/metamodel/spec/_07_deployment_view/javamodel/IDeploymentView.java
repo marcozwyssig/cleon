@@ -47,8 +47,8 @@ public interface IDeploymentView extends cleon.common.doc.metamodel.spec.chapter
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.ITestView selectTestView();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.javamodel.IMonitorView selectMonitorView();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView selectMonitorView();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,WsmsqYu1kmWyB6YZZD9lobQWT2Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b47acb73-314c-11e5-bd99-eda9ce254b0b,UgDTx15FjtNPZscDPRyCUygsjdY=] */

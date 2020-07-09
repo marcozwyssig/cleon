@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="db4a0d74-c1eb-11ea-820f-9931558a898c">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db4a0d76-c1eb-11ea-820f-9931558a898c" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db4a0d77-c1eb-11ea-820f-9931558a898c" type="literal">SMTP&amp;POP3 Round Trip</object>
+  </predicate>
+  <predicate guid="e421a703-c1ea-11ea-820f-9931558a898c">
+    <object statement-guid="db4a0d78-c1eb-11ea-820f-9931558a898c" type="literal">pop3roundtrip</object>
+  </predicate>
+  <predicate guid="7324fae1-c1eb-11ea-820f-9931558a898c">
+    <object statement-guid="db4a0d79-c1eb-11ea-820f-9931558a898c" type="literal">Monitors the time it takes for an email to reach a POP3 mailbox after being sent using SMTP</object>
+  </predicate>
+</resource>
+

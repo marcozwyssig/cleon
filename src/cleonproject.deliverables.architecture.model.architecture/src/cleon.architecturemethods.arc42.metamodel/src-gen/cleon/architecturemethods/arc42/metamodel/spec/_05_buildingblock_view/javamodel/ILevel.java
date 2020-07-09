@@ -32,7 +32,7 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IManagement selectManagement();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicencing();
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicensing();
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
   
@@ -40,4 +40,4 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,rLRwf9HgIZuhe6NBmXd18I0Uavk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,smsDW2TeMNua+RWdwLTsq9GXd0E=] */

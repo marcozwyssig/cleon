@@ -61,16 +61,6 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule selectSchedule() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule);
-  }
-
-  public BackupSystemConfiguration setSchedule(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule schedule) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule, schedule);
-    return this;
-  }
-    
-  @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration() {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration);
   }
@@ -107,7 +97,6 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_backupConfiguration, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_systemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -122,9 +111,5 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_backupConfiguration, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration> selectToMeSchedule(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupSystemConfiguration_schedule, object.getResource());
-  }
-  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,Nhw7FCixoee/4bzA9dw+e5+4i6E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,bUZPKPCYtK6F/p4PO+3Xlah13KY=] */

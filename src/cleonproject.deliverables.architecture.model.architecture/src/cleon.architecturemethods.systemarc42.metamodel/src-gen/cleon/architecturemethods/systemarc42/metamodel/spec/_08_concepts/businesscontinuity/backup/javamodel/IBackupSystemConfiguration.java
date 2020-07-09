@@ -12,8 +12,6 @@ public interface IBackupSystemConfiguration extends ch.actifsource.core.javamode
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupConfiguration selectBackupConfiguration();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule selectSchedule();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,eibfLcHgJcD9hNGMI1VKTUpy24s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f2bd0e83-1e3f-11e9-865e-41ef48a95f70,6e0xurImFEVW7jxmlsQT7yI9eT8=] */

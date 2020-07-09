@@ -42,6 +42,16 @@ public class BackupConfiguration extends DynamicResource implements IBackupConfi
   // relations
   
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule selectSchedule() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule);
+  }
+
+  public BackupConfiguration setSchedule(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule schedule) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule, schedule);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -57,92 +67,15 @@ public class BackupConfiguration extends DynamicResource implements IBackupConfi
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
-  // accept enum value visitors
-
-  @Override
-  public <R> R accept(IValueVisitor<R> visitor) {
-    if (isNone()) return visitor.visitNone();
-    if (isVM()) return visitor.visitVM();
-    if (isWindows()) return visitor.visitWindows();
-    if (isSQL__F_Server()) return visitor.visitSQL__F_Server();
-    if (isActive__F_Directory()) return visitor.visitActive__F_Directory();
-    if (isExchange()) return visitor.visitExchange();
-    if (isDatenablage()) return visitor.visitDatenablage();
-    throw new IllegalStateException("unknown enumvalue: " + fResource);
-  }
+  // toMeRelations
   
-  @Override
-  public void accept(IValueVoidVisitor visitor) {
-    if (isNone()) {
-      visitor.visitNone();
-      return;
-    }
-    if (isVM()) {
-      visitor.visitVM();
-      return;
-    }
-    if (isWindows()) {
-      visitor.visitWindows();
-      return;
-    }
-    if (isSQL__F_Server()) {
-      visitor.visitSQL__F_Server();
-      return;
-    }
-    if (isActive__F_Directory()) {
-      visitor.visitActive__F_Directory();
-      return;
-    }
-    if (isExchange()) {
-      visitor.visitExchange();
-      return;
-    }
-    if (isDatenablage()) {
-      visitor.visitDatenablage();
-      return;
-    }
-    throw new IllegalStateException("unknown enumvalue: " + fResource);
-  }
-  
-  // isValue-Methods
-    
-  @Override
-  public boolean isNone() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_None);
-  }
-  
-  @Override
-  public boolean isVM() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_VM);
-  }
-  
-  @Override
-  public boolean isWindows() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_Windows);
-  }
-  
-  @Override
-  public boolean isSQL__F_Server() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_SQL__F_Server);
-  }
-  
-  @Override
-  public boolean isActive__F_Directory() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_Active__F_Directory);
-  }
-  
-  @Override
-  public boolean isExchange() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_Exchange);
-  }
-  
-  @Override
-  public boolean isDatenablage() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_Datenablage);
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupConfiguration> selectToMeSchedule(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.ISchedule object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.javamodel.IBackupConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity.backup.BackupPackage.BackupConfiguration_schedule, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,xVmLtISCcfIgW2e9Ep72cLBUeDs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0713be48-1e42-11e9-865e-41ef48a95f70,C4w8+Bd6n1t1Lhkd0LpYKIUIAVo=] */

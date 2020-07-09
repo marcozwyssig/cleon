@@ -171,12 +171,12 @@ public class Level extends DynamicResource implements ILevel {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicencing() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licencing);
+  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicensing() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licensing);
   }
 
-  public Level setLicencing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing licencing) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licencing, licencing);
+  public Level setLicensing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing licensing) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licensing, licensing);
     return this;
   }
     
@@ -257,7 +257,7 @@ public class Level extends DynamicResource implements ILevel {
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IDeployment.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_deployment, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IFunctionality.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_functionality, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IIntegrity.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_integrity, visitor);
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licencing, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licensing, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IManagement.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_management, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_monitoring, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -315,8 +315,8 @@ public class Level extends DynamicResource implements ILevel {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_management, object.getResource());
   }
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel selectToMeLicencing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licencing, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel selectToMeLicensing(cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Level_licensing, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel selectToMeChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter object) {
@@ -328,4 +328,4 @@ public class Level extends DynamicResource implements ILevel {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,aM+xFNx2Njme5d3BgAL/r7/vWJo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,QASlKSX9SjLb/fMQYUuqLGAW7Gc=] */

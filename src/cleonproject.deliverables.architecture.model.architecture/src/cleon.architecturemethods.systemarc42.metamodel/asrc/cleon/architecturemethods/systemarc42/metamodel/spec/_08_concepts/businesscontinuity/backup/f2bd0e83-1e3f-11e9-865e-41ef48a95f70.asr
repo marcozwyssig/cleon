@@ -3,7 +3,6 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="d67ffbf6-1e41-11e9-865e-41ef48a95f70" type="resource" guid="d67fd4e4-1e41-11e9-865e-41ef48a95f70" />
     <resource statement-guid="18b9264f-1e43-11e9-865e-41ef48a95f70" type="resource" guid="18b8d82c-1e43-11e9-865e-41ef48a95f70" />
-    <resource statement-guid="7f94d40c-1e44-11e9-865e-41ef48a95f70" type="resource" guid="7f912a88-1e44-11e9-865e-41ef48a95f70" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f2bd0e85-1e3f-11e9-865e-41ef48a95f70" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -51,25 +50,6 @@
         </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="1effe663-1e43-11e9-865e-41ef48a95f70" type="resource" guid="0713be48-1e42-11e9-865e-41ef48a95f70" />
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="7f94d40c-1e44-11e9-865e-41ef48a95f70">
-      <resource guid="7f912a88-1e44-11e9-865e-41ef48a95f70">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="7f91c6ca-1e44-11e9-865e-41ef48a95f70" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="7f91c6cb-1e44-11e9-865e-41ef48a95f70" type="literal">schedule</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="7f95704d-1e44-11e9-865e-41ef48a95f70" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="7f95704e-1e44-11e9-865e-41ef48a95f70" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="7f95975f-1e44-11e9-865e-41ef48a95f70" type="resource" guid="68bd338d-1e44-11e9-865e-41ef48a95f70" />
         </predicate>
       </resource>
     </object>

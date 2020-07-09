@@ -19,26 +19,26 @@ public class MakeAllIdsUniqueRefactoringAspect extends AbstractAllInstancesRefac
 		super("1.0", 2019, 4, 26, "Make all ids in itarc42 buildingblock unique", IdPackage.IntegerBusinessObjectId);
 	}
 
-	@Override
-	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
-		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlock_SystemConfiguration);
-		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlock_SystemComponent);
-		makeUnique(executor, paramPackage, DomainPackage.Actor);
-	}
-
 	private void makeUnique(IModifiable executor, Package paramPackage, Resource resource) {
-		INodeSet nodeSet = Select.instances(executor, resource);
+		final INodeSet nodeSet = Select.instances(executor, resource);
 		int i = 0;
-		for (INode node : nodeSet) {
+		for (final INode node : nodeSet) {
 			++i;
 			try {
 				Update.createOrModifyStatement(executor, paramPackage, node,
 						IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(i));
-			} catch (Throwable e) {
+			} catch (final Throwable e) {
 				ch.actifsource.util.log.Logger.instance()
 				.logInfo("Exception on change off " + Select.simpleName(executor, node));
 				ch.actifsource.util.log.Logger.instance().logWarning(e);
 			}
 		}
+	}
+
+	@Override
+	protected void refactor(IModifiable executor, Package paramPackage, INode paramINode) {
+		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemConfiguration);
+		makeUnique(executor, paramPackage, _05_buildingblock_viewPackage.FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_SystemComponent);
+		makeUnique(executor, paramPackage, DomainPackage.Actor);
 	}
 }

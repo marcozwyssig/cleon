@@ -8,8 +8,8 @@ public interface IMonitoringBuildingBlocks extends cleon.common.doc.metamodel.sp
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> selectMonitoringComponent();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> selectMonitoringBuildingBlocks();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e8b550a-8993-11e8-8250-d9b67f7d5f7f,3XLGJbzT1Ha00uob8eVUDsyos1c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e8b550a-8993-11e8-8250-d9b67f7d5f7f,F/lX3X82eiLvUxVkVRVB3a/T9FM=] */

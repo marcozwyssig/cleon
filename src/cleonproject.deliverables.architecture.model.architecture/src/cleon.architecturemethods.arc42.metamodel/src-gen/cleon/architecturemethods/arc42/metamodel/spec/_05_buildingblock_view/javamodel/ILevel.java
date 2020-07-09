@@ -26,7 +26,7 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAuditing selectAuditing();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring selectMonitoring();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring> selectMonitoring();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBackup_and_Recovery> selectBackup();
   
@@ -40,4 +40,4 @@ public interface ILevel extends ch.actifsource.core.javamodel.IDecorator, cleon.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,R4mxCk+uVkE6ac3QGoeO9k8U5Qw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,BCd8r97Zl1e4+1oL4zWm8pfEJ2A=] */

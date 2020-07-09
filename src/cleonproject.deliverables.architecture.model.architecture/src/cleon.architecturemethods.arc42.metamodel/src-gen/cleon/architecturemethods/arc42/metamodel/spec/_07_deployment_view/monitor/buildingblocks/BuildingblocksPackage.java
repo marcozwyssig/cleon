@@ -6,8 +6,8 @@ public class BuildingblocksPackage {
   
   public static final Resource MonitoringBuildingBlocks = new Resource("0e8b550a-8993-11e8-8250-d9b67f7d5f7f");
   public static final Resource MonitoringBuildingBlock = new Resource("9fb78914-8fdd-11e8-85d9-314ddfdf57eb");
-  public static final Resource MonitoringBuildingBlocks_monitoringComponent = new Resource("dfc08e94-9a5b-11e8-ab8b-639e9e9b044b");
-  public static final Resource MonitoringBuildingBlock_monitoringBuildingblock = new Resource("6fd18257-9a5c-11e8-ab8b-639e9e9b044b");
+  public static final Resource MonitoringBuildingBlocks_monitoringBuildingBlocks = new Resource("dfc08e94-9a5b-11e8-ab8b-639e9e9b044b");
+  public static final Resource MonitoringBuildingBlock_buildingblockToMonitor = new Resource("6fd18257-9a5c-11e8-ab8b-639e9e9b044b");
   public static final Resource Sensor = new Resource("128669db-c1ed-11ea-820f-9931558a898c");
   public static final Resource MonitoringBuildingBlock_sensor = new Resource("1afc17f8-c1ed-11ea-820f-9931558a898c");
   public static final Resource SensorParameter = new Resource("2858f5b3-c1ed-11ea-820f-9931558a898c");
@@ -37,4 +37,4 @@ public class BuildingblocksPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,g531LBS27tL9QZ11fzvNa/mCcTU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,eXeQx3Xzz3PMsPX2ghstneMMGNA=] */

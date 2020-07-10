@@ -38,7 +38,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Auditing = new Resource("d1610616-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Monitoring = new Resource("f967e9cc-7ed2-11ea-9262-7b7e0e9cb204");
   public static final Resource Backup_aE_and_aE_Recovery = new Resource("0bc5739a-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Management = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Access = new Resource("38422724-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Level_deployment = new Resource("483e67cc-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Level_authn = new Resource("569bedb8-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Level_authz = new Resource("63f76bcb-7ed3-11ea-9262-7b7e0e9cb204");
@@ -47,7 +47,7 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Level_auditing = new Resource("8cada1db-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Level_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Level_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Level_management = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
+  public static final Resource Level_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Licencing = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Level_licensing = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
@@ -74,4 +74,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,tikW9PHSip0QgVkK8P9JvnzMQjQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,gZXCmj+VK11Udl93dPKBct200u0=] */

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class Management extends DynamicResource implements IManagement {
+public class Access extends DynamicResource implements IAccess {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IManagement> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IManagement>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAccess> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAccess>() {
     
     @Override
-    public IManagement create() {
-      return new Management();
+    public IAccess create() {
+      return new Access();
     }
     
     @Override
-    public IManagement create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new Management(resourceRepository, resource);
+    public IAccess create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Access(resourceRepository, resource);
     }
   
   };
 
-  public Management() {
-    super(IManagement.TYPE_ID);
+  public Access() {
+    super(IAccess.TYPE_ID);
   }
   
-  public Management(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IManagement.TYPE_ID);
+  public Access(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IAccess.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class Management extends DynamicResource implements IManagement {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public Management setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public Access setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class Management extends DynamicResource implements IManagement {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public Management setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public Access setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,7 +75,7 @@ public class Management extends DynamicResource implements IManagement {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Management setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public Access setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -85,7 +85,7 @@ public class Management extends DynamicResource implements IManagement {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public Management setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Access setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -102,4 +102,4 @@ public class Management extends DynamicResource implements IManagement {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,38422724-7ed3-11ea-9262-7b7e0e9cb204,22nNigm/MUYx2Kcj3gRD4AvQ32E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,38422724-7ed3-11ea-9262-7b7e0e9cb204,XFH0Zzix/lDwvGtLhe84ndLijyw=] */

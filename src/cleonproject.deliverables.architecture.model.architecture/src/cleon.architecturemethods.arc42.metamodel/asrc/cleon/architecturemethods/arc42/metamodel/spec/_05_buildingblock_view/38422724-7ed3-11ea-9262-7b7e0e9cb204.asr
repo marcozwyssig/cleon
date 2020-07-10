@@ -18,7 +18,7 @@
     <object statement-guid="3842272a-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="44b08026-d86d-11e4-aa2f-c11242a92b60" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="38422729-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Management</object>
+    <object statement-guid="38422729-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Access</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="38424e42-7ed3-11ea-9262-7b7e0e9cb204">
@@ -42,7 +42,7 @@
                       <object statement-guid="38424e3e-7ed3-11ea-9262-7b7e0e9cb204" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="38424e3f-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Management</object>
+                      <object statement-guid="38424e3f-7ed3-11ea-9262-7b7e0e9cb204" type="literal">Zugang</object>
                     </predicate>
                   </resource>
                 </object>
@@ -52,6 +52,9 @@
         </predicate>
       </resource>
     </object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="30ca25a0-c283-11ea-b879-e9e2b2ad65df" type="literal">Beschreibung wie auf das System zugegriffen werden kann</object>
   </predicate>
 </resource>
 

@@ -10,7 +10,7 @@ import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage;
-import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceSubSecurityZoneFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceInSubSecurityZoneFunctions;
 
 public class SourceSubSecurityZoneValidatorAspect implements IResourceValidationAspect {
 
@@ -18,13 +18,13 @@ public class SourceSubSecurityZoneValidatorAspect implements IResourceValidation
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
 		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		final ISourceSubSecurityZone sourceSubSecurityZone = resourceRepository.getResource(ISourceSubSecurityZone.class, validationContext.getResource());
-		final ISourceSubSecurityZoneFunctions sourceSubSecurityZoneFunctions = sourceSubSecurityZone.extension(ISourceSubSecurityZoneFunctions.class);
+		final ISourceInSubSecurityZone sourceSubSecurityZone = resourceRepository.getResource(ISourceInSubSecurityZone.class, validationContext.getResource());
+		final ISourceInSubSecurityZoneFunctions sourceSubSecurityZoneFunctions = sourceSubSecurityZone.extension(ISourceInSubSecurityZoneFunctions.class);
 
 		if (sourceSubSecurityZoneFunctions.IsAny()) {
 			if( sourceSubSecurityZone.selectThreatMitigations().isEmpty()) {
 				validationList.add(new PredicateInconsistency(validationContext.getPackage(), sourceSubSecurityZone.getResource(),
-						CommunicationPackage.SourceSubSecurityZone_threatMitigations, "on any connection there is at least one threat mitigation required"));
+						CommunicationPackage.SourceInSubSecurityZone_threatMitigations, "on any connection there is at least one threat mitigation required"));
 			}
 		}		
 	}

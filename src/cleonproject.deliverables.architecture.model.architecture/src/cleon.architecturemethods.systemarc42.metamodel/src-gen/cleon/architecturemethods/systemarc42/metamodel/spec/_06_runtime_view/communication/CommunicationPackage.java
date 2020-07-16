@@ -20,9 +20,9 @@ public class CommunicationPackage {
   public static final Resource FunctionSpace_aE_Communication_SystemConfiguration = new Resource("c955b123-88e7-11e9-9b22-1b5fbbd90cc8");
   public static final Resource DestinationSubSecurityZone = new Resource("2c509b70-b218-11e9-b89e-1728aee30149");
   public static final Resource DestinationSubSecurityZone_inInterface = new Resource("4763c211-b218-11e9-b89e-1728aee30149");
-  public static final Resource SourceSubSecurityZoneByHost = new Resource("70b3c6f7-b218-11e9-b89e-1728aee30149");
+  public static final Resource SourceInSubSecurityZoneByHost = new Resource("70b3c6f7-b218-11e9-b89e-1728aee30149");
   public static final Resource Source_accessAllowed = new Resource("7cb0edcb-b218-11e9-b89e-1728aee30149");
-  public static final Resource SourceSubSecurityZone_subZoneAccessPolicy = new Resource("8d2238b2-b218-11e9-b89e-1728aee30149");
+  public static final Resource SourceInSubSecurityZone_subZoneAccessPolicy = new Resource("8d2238b2-b218-11e9-b89e-1728aee30149");
   public static final Resource Destination_destinationSubSecurityZone = new Resource("ca7e9f7d-b2a3-11e9-be5b-6d79cf5670d6");
   public static final Resource FunctionSpace_aE_Communication_DestinationSubSecurityZone = new Resource("2076a365-dfa3-11e9-9827-a1514ee8d06a");
   public static final Resource Source_track = new Resource("d1f30695-dfaa-11e9-9827-a1514ee8d06a");
@@ -34,18 +34,19 @@ public class CommunicationPackage {
   public static final Resource Action_Drop = new Resource("ffc75a48-dfaa-11e9-9827-a1514ee8d06a");
   public static final Resource Action_Reject = new Resource("013ce3bd-dfab-11e9-9827-a1514ee8d06a");
   public static final Resource Source_action = new Resource("237c224b-dfab-11e9-9827-a1514ee8d06a");
-  public static final Resource FunctionSpace_aE_Communication_SourceSubSecurityZone = new Resource("6e21b7d8-e05b-11e9-aa67-4505845acdbd");
+  public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZone = new Resource("6e21b7d8-e05b-11e9-aa67-4505845acdbd");
   public static final Resource Source_isTemporary = new Resource("1fbb2e20-07bf-11ea-9430-53184a2ae5ea");
   public static final Resource FunctionSpace_aE_Communication_TextLiteral = new Resource("8855ea7b-0ae2-11ea-bf24-ff0f7ff0bb53");
   public static final Resource ImplementationState = new Resource("698b7b5e-0c5a-11ea-af20-c193d8bcdd26");
-  public static final Resource SourceSubSecurityZone_state = new Resource("739ab4da-0c5a-11ea-af20-c193d8bcdd26");
+  public static final Resource SourceInSubSecurityZone_state = new Resource("739ab4da-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource ImplementedState = new Resource("979efb64-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource ImplementedState_refnNo = new Resource("9c1716bd-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource UndefinedImplementationState = new Resource("e19a0a43-0c5a-11ea-af20-c193d8bcdd26");
-  public static final Resource SourceSubSecurityZone_onlyCommunicatesWith = new Resource("6ab91243-69cc-11ea-89d6-375d99542010");
-  public static final Resource SourceSubSecurityZone_threatMitigations = new Resource("8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a");
-  public static final Resource SourceSubSecurityZone = new Resource("df9fa746-c773-11ea-b0b6-e5df79e86bc2");
-  public static final Resource SourceSubSecurityZoneByNetwork = new Resource("3b9e263c-c776-11ea-b0b6-e5df79e86bc2");
+  public static final Resource SourceInSubSecurityZone_onlyCommunicatesWith = new Resource("6ab91243-69cc-11ea-89d6-375d99542010");
+  public static final Resource SourceInSubSecurityZone_threatMitigations = new Resource("8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a");
+  public static final Resource SourceInSubSecurityZone = new Resource("df9fa746-c773-11ea-b0b6-e5df79e86bc2");
+  public static final Resource SourceInSubSecurityZoneByNetwork = new Resource("3b9e263c-c776-11ea-b0b6-e5df79e86bc2");
+  public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneByHost = new Resource("7420f04a-c778-11ea-b0b6-e5df79e86bc2");
   
   /* Begin Protected Region [[user]] */
   
@@ -66,4 +67,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,rnV8GOB5vF1RqgqnSQX+nyQmXMc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,mkBsTPvCRmAp+0fbHT5vvZ7UpY4=] */

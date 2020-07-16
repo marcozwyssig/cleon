@@ -14,7 +14,7 @@ public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectCommunicatesWith();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceSubSecurityZone> selectAccessAllowed();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> selectAccessAllowed();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ITrack selectTrack();
   
@@ -22,4 +22,4 @@ public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,7N5jn8qSACo2n7Ocd/L/gJFur+g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,y0M8KzWhah8MxfTLESfPShzOXxA=] */

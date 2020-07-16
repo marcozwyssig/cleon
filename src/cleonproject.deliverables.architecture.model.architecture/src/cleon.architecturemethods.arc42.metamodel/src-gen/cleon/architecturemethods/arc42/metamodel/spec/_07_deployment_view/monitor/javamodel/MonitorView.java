@@ -61,16 +61,6 @@ public class MonitorView extends DynamicResource implements IMonitorView {
   }
     
   @Override
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks selectComponents() {
-    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_components);
-  }
-
-  public MonitorView setComponents(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks components) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_components, components);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -87,6 +77,16 @@ public class MonitorView extends DynamicResource implements IMonitorView {
 
   public MonitorView setEventing(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvents eventing) {
     _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_eventing, eventing);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks selectMonitoringbuildingblocks() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_monitoringbuildingblocks);
+  }
+
+  public MonitorView setMonitoringbuildingblocks(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks monitoringbuildingblocks) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_monitoringbuildingblocks, monitoringbuildingblocks);
     return this;
   }
     
@@ -120,23 +120,38 @@ public class MonitorView extends DynamicResource implements IMonitorView {
     return this;
   }
     
+  @Override
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectUsedBuildingBlockForMonitoring() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_usedBuildingBlockForMonitoring);
+  }
+
+  public MonitorView setUsedBuildingBlockForMonitoring(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock usedBuildingBlockForMonitoring) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_usedBuildingBlockForMonitoring, usedBuildingBlockForMonitoring);
+    return this;
+  }
+    
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_components, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvents.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_eventing, visitor);
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_monitoringbuildingblocks, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.rules.javamodel.IRules.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_rules, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
+    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_usedBuildingBlockForMonitoring, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView selectToMeComponents(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_components, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView> selectToMeUsedBuildingBlockForMonitoring(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_usedBuildingBlockForMonitoring, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView selectToMeMonitoringbuildingblocks(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.MonitorPackage.MonitorView_monitoringbuildingblocks, object.getResource());
   }
   
   public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.javamodel.IMonitorView selectToMeRules(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.rules.javamodel.IRules object) {
@@ -148,4 +163,4 @@ public class MonitorView extends DynamicResource implements IMonitorView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,4nBoNnWRAas+Z9gpBpn0lKd8zbY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,w9qH5273NMX3PjQ7M+97ONoyTMs=] */

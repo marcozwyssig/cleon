@@ -133,9 +133,9 @@ public class Monitoring extends DynamicResource implements IMonitoring {
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring> selectToMeMonitoringBuildingBlock(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Monitoring_monitoringBuildingBlock, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring selectToMeMonitoringBuildingBlock(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring.class, cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.Monitoring_monitoringBuildingBlock, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f967e9cc-7ed2-11ea-9262-7b7e0e9cb204,vLUAkI7xXZce10LZxeUZCRJEB7s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f967e9cc-7ed2-11ea-9262-7b7e0e9cb204,3YkJ1/6DsGQv6kqbcZLXAGNwd8c=] */

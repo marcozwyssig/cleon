@@ -8,7 +8,9 @@ public interface IMonitorView extends cleon.common.doc.metamodel.spec.chapter.ja
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks selectComponents();
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectUsedBuildingBlockForMonitoring();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlocks selectMonitoringbuildingblocks();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.rules.javamodel.IRules selectRules();
   
@@ -16,4 +18,4 @@ public interface IMonitorView extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,sqbI1qy9GqnCUTDq7IeAu5fszbE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e2fd28c-9992-11e8-b347-dd2314b02086,SjGGNTZKWZWT1jaXPoe4btiEuzM=] */

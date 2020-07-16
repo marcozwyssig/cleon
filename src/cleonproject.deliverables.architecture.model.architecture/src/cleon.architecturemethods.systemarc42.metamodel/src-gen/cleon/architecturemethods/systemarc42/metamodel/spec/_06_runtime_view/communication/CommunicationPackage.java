@@ -20,7 +20,7 @@ public class CommunicationPackage {
   public static final Resource FunctionSpace_aE_Communication_SystemConfiguration = new Resource("c955b123-88e7-11e9-9b22-1b5fbbd90cc8");
   public static final Resource DestinationSubSecurityZone = new Resource("2c509b70-b218-11e9-b89e-1728aee30149");
   public static final Resource DestinationSubSecurityZone_inInterface = new Resource("4763c211-b218-11e9-b89e-1728aee30149");
-  public static final Resource SourceSubSecurityZone = new Resource("70b3c6f7-b218-11e9-b89e-1728aee30149");
+  public static final Resource SourceSubSecurityZoneByHost = new Resource("70b3c6f7-b218-11e9-b89e-1728aee30149");
   public static final Resource Source_accessAllowed = new Resource("7cb0edcb-b218-11e9-b89e-1728aee30149");
   public static final Resource SourceSubSecurityZone_subZoneAccessPolicy = new Resource("8d2238b2-b218-11e9-b89e-1728aee30149");
   public static final Resource Destination_destinationSubSecurityZone = new Resource("ca7e9f7d-b2a3-11e9-be5b-6d79cf5670d6");
@@ -44,6 +44,8 @@ public class CommunicationPackage {
   public static final Resource UndefinedImplementationState = new Resource("e19a0a43-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource SourceSubSecurityZone_onlyCommunicatesWith = new Resource("6ab91243-69cc-11ea-89d6-375d99542010");
   public static final Resource SourceSubSecurityZone_threatMitigations = new Resource("8dde0b4e-b9e5-11ea-b29c-1fc1209c2c7a");
+  public static final Resource SourceSubSecurityZone = new Resource("df9fa746-c773-11ea-b0b6-e5df79e86bc2");
+  public static final Resource SourceSubSecurityZoneByNetwork = new Resource("3b9e263c-c776-11ea-b0b6-e5df79e86bc2");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +66,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,ZMDp5sxsf7Sc8/L1RmWAuF88uLU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,rnV8GOB5vF1RqgqnSQX+nyQmXMc=] */

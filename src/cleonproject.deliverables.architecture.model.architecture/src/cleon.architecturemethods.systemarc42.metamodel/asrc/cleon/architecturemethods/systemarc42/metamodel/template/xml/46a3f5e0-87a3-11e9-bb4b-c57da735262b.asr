@@ -1869,7 +1869,7 @@
                                                                                         <object statement-guid="df44a1b9-0a36-11ea-baed-218c3e076b56" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                                                                       </predicate>
                                                                                       <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                                                                        <object statement-guid="df44c8ca-0a36-11ea-baed-218c3e076b56" type="literal">		&lt;destination_hostgroups&gt;</object>
+                                                                                        <object statement-guid="df44c8ca-0a36-11ea-baed-218c3e076b56" type="literal">		&lt;destination_groups&gt;</object>
                                                                                       </predicate>
                                                                                     </resource>
                                                                                   </object>
@@ -2019,7 +2019,7 @@
                                                                                         <object statement-guid="df47d63d-0a36-11ea-baed-218c3e076b56" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                                                                       </predicate>
                                                                                       <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                                                                        <object statement-guid="df47d63e-0a36-11ea-baed-218c3e076b56" type="literal">&lt;/destination_hostgroups&gt;		</object>
+                                                                                        <object statement-guid="df47d63e-0a36-11ea-baed-218c3e076b56" type="literal">&lt;/destination_groups&gt;		</object>
                                                                                       </predicate>
                                                                                     </resource>
                                                                                   </object>
@@ -2438,7 +2438,7 @@
                                                                                         <object statement-guid="6a9052e7-0a0c-11ea-baed-218c3e076b56" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                                                                       </predicate>
                                                                                       <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                                                                        <object statement-guid="6a9079f8-0a0c-11ea-baed-218c3e076b56" type="literal">		&lt;source_hostgroups&gt;</object>
+                                                                                        <object statement-guid="6a9079f8-0a0c-11ea-baed-218c3e076b56" type="literal">		&lt;source_groups&gt;</object>
                                                                                       </predicate>
                                                                                     </resource>
                                                                                   </object>
@@ -2588,7 +2588,7 @@
                                                                                         <object statement-guid="6a92eb27-0a0c-11ea-baed-218c3e076b56" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                                                                                       </predicate>
                                                                                       <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                                                                                        <object statement-guid="6a931238-0a0c-11ea-baed-218c3e076b56" type="literal">&lt;/source_hostgroups&gt;</object>
+                                                                                        <object statement-guid="6a931238-0a0c-11ea-baed-218c3e076b56" type="literal">&lt;/source_groups&gt;</object>
                                                                                       </predicate>
                                                                                     </resource>
                                                                                   </object>
@@ -4401,3 +4401,4 @@
     <object statement-guid="46a41d5b-87a3-11e9-bb4b-c57da735262b" type="resource" guid="367cf853-f004-11e0-863f-21a4ef4e7e70" />
   </predicate>
 </resource>
+

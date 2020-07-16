@@ -710,9 +710,6 @@ public class FunctionSpace_Communication {
   
   public static interface ISourceInSubSecurityZoneByNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("166205cf-c782-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByNetwork sourceInSubSecurityZoneByNetwork);
-
   }
   
   public static class SourceInSubSecurityZoneByNetworkFunctionsImpl implements ISourceInSubSecurityZoneByNetworkFunctionsImpl {
@@ -721,23 +718,14 @@ public class FunctionSpace_Communication {
 
     private SourceInSubSecurityZoneByNetworkFunctionsImpl() {}
 
-    @Override
-    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByNetwork sourceInSubSecurityZoneByNetwork) {
-      return null;
-    }
-
   }
   
   public static class SourceInSubSecurityZoneByNetworkFunctions {
 
     private SourceInSubSecurityZoneByNetworkFunctions() {}
 
-    public static java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZoneByNetwork sourceInSubSecurityZoneByNetwork) {
-      return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneByNetworkFunctionsImpl.class, SourceInSubSecurityZoneByNetworkFunctionsImpl.INSTANCE, sourceInSubSecurityZoneByNetwork).RenderSourceGroups(src, env, sourceInSubSecurityZoneByNetwork);
-    }
-
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,YWfwYtb8puHdH/sMpX5oKD6rD9U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,QM/SUrUzPD+yzSHgpP9H1iO3BSw=] */

@@ -91,6 +91,9 @@ public class FunctionSpace_Segmentation {
     @IDynamicResourceExtension.MethodId("d79ec6ec-6918-11ea-bc2c-91c30a68f7c3")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> OnlyExport();
 
+    @IDynamicResourceExtension.MethodId("9e849f53-c789-11ea-b0b6-e5df79e86bc2")
+    public java.lang.String NameWithSecurityZoneName();
+
   }
   
   public static interface ISecuritySubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -380,4 +383,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,61WueA22CXvBMoc+TYeKIWpl7OM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,49bf1abf-0b79-11e9-a136-69d076e48ed1,4AW8IvnzIUt+kpeCso/Pvu3OPE4=] */

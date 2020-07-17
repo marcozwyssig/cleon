@@ -15,23 +15,24 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segment
 import java.util.List;
 
 public class SubZoneAccessPolicyValidationAspect  implements IResourceValidationAspect {
+	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
-		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		ISubZoneAccessPolicy subZoneAccessPolicy = resourceRepository.getResource(ISubZoneAccessPolicy.class, validationContext.getResource());
-		ISourceSubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy);
+		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final ISubZoneAccessPolicy subZoneAccessPolicy = resourceRepository.getResource(ISubZoneAccessPolicy.class, validationContext.getResource());
+		final ISourceSubZone sourceSubZone = SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy);
 
-		ISubZoneAccessPolicyFunctions functions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
-		if( sourceSubZone.selectSourceSecuritySubZone().equals(subZoneAccessPolicy.selectPolicyForSecuritySubZone())) {
+		final ISubZoneAccessPolicyFunctions functions = subZoneAccessPolicy.extension(ISubZoneAccessPolicyFunctions.class);
+		if( sourceSubZone.selectSourceSecuritySubZone().equals(subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone())) {
 			return;
 		}
-		
+
 		if( !functions.HasSources() ) {
-			
-			Statement targetSubZone = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy).getResource());
+
+			final Statement targetSubZone = Select.relationStatementOrNull(validationContext.getReadJobExecutor(), SubzonepolicyPackage.SourceSubZone_destinationSubZonePolicy, SourceSubZone.selectToMeDestinationSubZonePolicy(subZoneAccessPolicy).getResource());
 			validationList.add(new SingleStatementInconsistency(targetSubZone, String.format("no communication to this subzone")));
 		}
-		
+
 	}	
 
 }

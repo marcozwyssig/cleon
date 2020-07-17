@@ -10,7 +10,7 @@ public class SubzonepolicyPackage {
   public static final Resource SourceSubZone_sourceSecuritySubZone = new Resource("5865bd1b-b844-11e9-8760-2d4a9d15ec14");
   public static final Resource SubZoneAccessPolicy = new Resource("80913edf-b844-11e9-8760-2d4a9d15ec14");
   public static final Resource SourceSubZone_destinationSubZonePolicy = new Resource("8c6e81e9-b844-11e9-8760-2d4a9d15ec14");
-  public static final Resource SubZoneAccessPolicy_policyForSecuritySubZone = new Resource("96bf319b-b844-11e9-8760-2d4a9d15ec14");
+  public static final Resource SubZoneAccessPolicy_policyForDestinationSecuritySubZone = new Resource("96bf319b-b844-11e9-8760-2d4a9d15ec14");
   public static final Resource IntraSubZoneAccessPolicy = new Resource("bdd74804-b844-11e9-8760-2d4a9d15ec14");
   public static final Resource InterSubZoneAccessPolicy = new Resource("d1cbec76-b844-11e9-8760-2d4a9d15ec14");
   public static final Resource Restriction = new Resource("f310eb7a-b844-11e9-8760-2d4a9d15ec14");
@@ -42,4 +42,4 @@ public class SubzonepolicyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy,ysJPrJNOIdV0//+HqQVotHSu7iI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy,ApwMwUHS2ba7zmlwjyw1zT8yi/8=] */

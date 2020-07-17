@@ -98,7 +98,7 @@ public class FunctionSpace_SubzonePolicy {
       		.selectToMeHasCommunicationFrom(source);
 
       return subZoneAccessPolicyList.stream()
-      		.filter(x -> x.selectPolicyForSecuritySubZone()
+      		.filter(x -> x.selectPolicyForDestinationSecuritySubZone()
       				.equals(destinationSubSecurityZone.selectInInterface().selectInterfaceInSecuritySubZone())
       				&& configurationFunctions.GetSubzonesAllDependsFromWithSelf().contains(
       						SourceSubZone.selectToMeDestinationSubZonePolicy(x).selectSourceSecuritySubZone()))
@@ -117,7 +117,7 @@ public class FunctionSpace_SubzonePolicy {
       	}    		
       }
 
-      final ISecuritySubZone destinationSubZone = subZoneAccessPolicy.selectPolicyForSecuritySubZone();		
+      final ISecuritySubZone destinationSubZone = subZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone();		
       final ISecuritySubZoneFunctions destinationSubZoneFunctions = destinationSubZone.extension(ISecuritySubZoneFunctions.class);
       final IZoneFunctions zoneFunctions = destinationSubZone.extension(IZoneFunctions.class);
       final ISourceFunctions sourceFunctions = src.extension(ISourceFunctions.class);
@@ -219,7 +219,7 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy intraSubZoneAccessPolicy) {
       /* Begin Protected Region [[074d6763-b9d0-11e9-828c-091526d036b6]] */
-      final IZoneFunctions zoneFunctions = intraSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
+      final IZoneFunctions zoneFunctions = intraSubZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone().extension(IZoneFunctions.class);
       if( zoneFunctions.IsLocalOnly()) {
       	if(intraSubZoneAccessPolicy.selectRestriction().isAllowed()) {
       		return "G";
@@ -302,11 +302,11 @@ public class FunctionSpace_SubzonePolicy {
     @Override
     public java.lang.String EvaluatePolicy(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone source, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy interSubZoneAccessPolicy) {
       /* Begin Protected Region [[16a32f0e-b9d0-11e9-828c-091526d036b6]] */
-      final IZoneFunctions zoneFunctions = interSubZoneAccessPolicy.selectPolicyForSecuritySubZone().extension(IZoneFunctions.class);
+      final IZoneFunctions zoneFunctions = interSubZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone().extension(IZoneFunctions.class);
       if( zoneFunctions.IsLocalOnly()) {
       	return "O";
       } else {
-      	if( source.equals(interSubZoneAccessPolicy.selectPolicyForSecuritySubZone())) {
+      	if( source.equals(interSubZoneAccessPolicy.selectPolicyForDestinationSecuritySubZone())) {
       		return "G/O";
       	} else {
       		return "O";    			

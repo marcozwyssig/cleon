@@ -505,7 +505,10 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AllIntraSourceDistinctByService();
 
     @IDynamicResourceExtension.MethodId("46eb2383-9f4b-11ea-bb18-b13480f8c543")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SelectAllowedSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("3e382b18-c862-11ea-b1f9-8da009c98a7a")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SelectAllowedSystemConfigurationsOnlyConcrete();
 
   }
   
@@ -731,4 +734,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,ItseeRAk5X+zhfv9Ppy9kixjfgs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,zlI/mC6G9eoOMwTYQV0B+Hr76Kc=] */

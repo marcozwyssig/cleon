@@ -525,31 +525,6 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
-  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("6055e404-c73f-11ea-9c12-5371f8bad411")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
-
-    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
-
-    private MonitoringFunctionsImpl() {}
-
-  }
-  
-  public static class MonitoringFunctions {
-
-    private MonitoringFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,dRp8XDUvMYnNno9ig6CNQT0l2xg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,zJogYo7hqPidn+In7YLRO03xFAs=] */

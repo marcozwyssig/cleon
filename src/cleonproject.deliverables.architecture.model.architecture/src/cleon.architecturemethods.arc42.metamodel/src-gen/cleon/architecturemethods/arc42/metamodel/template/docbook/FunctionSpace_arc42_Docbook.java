@@ -505,6 +505,81 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IMonitorViewFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3048a09a-cce3-11ea-8b73-6b1c6b53a7a6")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+
+  }
+  
+  public static interface IMonitorViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitorViewFunctionsImpl implements IMonitorViewFunctionsImpl {
+
+    public static final IMonitorViewFunctionsImpl INSTANCE = new MonitorViewFunctionsImpl();
+
+    private MonitorViewFunctionsImpl() {}
+
+  }
+  
+  public static class MonitorViewFunctions {
+
+    private MonitorViewFunctions() {}
+
+  }
+
+  public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5e7faeaa-cce3-11ea-8b73-6b1c6b53a7a6")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IMonitoringBuildingBlockFunctionsImpl INSTANCE = new MonitoringBuildingBlockFunctionsImpl();
+
+    private MonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class MonitoringBuildingBlockFunctions {
+
+    private MonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6055e404-c73f-11ea-9c12-5371f8bad411")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
+
+    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
+
+    private MonitoringFunctionsImpl() {}
+
+  }
+  
+  public static class MonitoringFunctions {
+
+    private MonitoringFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,MKWkX/uTdDQvd9qACUrK+zdHt40=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,DrXW7SwDhS/P5hTJit+etPrmQPE=] */

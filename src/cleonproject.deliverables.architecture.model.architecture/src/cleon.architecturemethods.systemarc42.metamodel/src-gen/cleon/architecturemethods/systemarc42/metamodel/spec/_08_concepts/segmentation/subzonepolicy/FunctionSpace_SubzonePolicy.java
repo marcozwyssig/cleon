@@ -45,10 +45,10 @@ public class FunctionSpace_SubzonePolicy {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy> OnlyFromSource(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("ba6db6f6-094f-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSources();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AllSources();
 
     @IDynamicResourceExtension.MethodId("df365e20-094f-11ea-a9aa-d95ecdaa88c4")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSourcesDistinct();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AllSourcesDistinct();
 
     @IDynamicResourceExtension.MethodId("adfed001-0951-11ea-a9aa-d95ecdaa88c4")
     public java.lang.Boolean HasSources();
@@ -385,4 +385,4 @@ public class FunctionSpace_SubzonePolicy {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,+i2eOHv3NoWgwwxuqIlJOkiTDQU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,0ea7300c-b846-11e9-8760-2d4a9d15ec14,hHhLGWnEx0fLnRjPfO3wnElLFsM=] */

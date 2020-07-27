@@ -46,7 +46,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("49ebdce4-c740-11ea-9c12-5371f8bad411")
-    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.ISensor> SelectAllSensors();
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> SelectAllSensors();
 
     @IDynamicResourceExtension.MethodId("14d5469b-c764-11ea-9c12-5371f8bad411")
     public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock SelectUsedBuildingBlockForMonitoring();
@@ -74,7 +74,7 @@ public class FunctionSpace_Monitoring_Building_Blocks {
   public static interface ISensorFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ef2cd084-c764-11ea-9c12-5371f8bad411")
-    public java.lang.String SelectParameters();
+    public java.lang.String Parameters();
 
   }
   
@@ -96,56 +96,31 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
-  public static interface ISensorParameterFunctions extends IDynamicResourceExtension {
+  public static interface IwmiserviceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f79c8af5-c764-11ea-9c12-5371f8bad411")
-    public java.lang.String SelectParameters();
+    public java.lang.String Parameters();
 
   }
   
-  public static interface ISensorParameterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IwmiserviceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SensorParameterFunctionsImpl implements ISensorParameterFunctionsImpl {
+  public static class wmiserviceFunctionsImpl implements IwmiserviceFunctionsImpl {
 
-    public static final ISensorParameterFunctionsImpl INSTANCE = new SensorParameterFunctionsImpl();
+    public static final IwmiserviceFunctionsImpl INSTANCE = new wmiserviceFunctionsImpl();
 
-    private SensorParameterFunctionsImpl() {}
-
-  }
-  
-  public static class SensorParameterFunctions {
-
-    private SensorParameterFunctions() {}
-
-  }
-
-  public static interface ISensorCheckFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("135ba978-c765-11ea-9c12-5371f8bad411")
-    public java.lang.String SelectParameters();
+    private wmiserviceFunctionsImpl() {}
 
   }
   
-  public static interface ISensorCheckFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SensorCheckFunctionsImpl implements ISensorCheckFunctionsImpl {
+  public static class wmiserviceFunctions {
 
-    public static final ISensorCheckFunctionsImpl INSTANCE = new SensorCheckFunctionsImpl();
-
-    private SensorCheckFunctionsImpl() {}
-
-  }
-  
-  public static class SensorCheckFunctions {
-
-    private SensorCheckFunctions() {}
+    private wmiserviceFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,LFFF613cwEYVFix0CZLmnmudS2I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,WLB+DPJwE7lTm6DFJKeBYtkOwyo=] */

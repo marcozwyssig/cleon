@@ -43,31 +43,31 @@ public class profiles__T_yaml {
 
   }
 
-  public static interface ISensorParameterFunctions extends IDynamicResourceExtension {
+  public static interface IwmiserviceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4c21efbd-cce9-11ea-8b73-6b1c6b53a7a6")
     public java.lang.String RenderParameter();
 
   }
   
-  public static interface ISensorParameterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IwmiserviceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SensorParameterFunctionsImpl implements ISensorParameterFunctionsImpl {
+  public static class wmiserviceFunctionsImpl implements IwmiserviceFunctionsImpl {
 
-    public static final ISensorParameterFunctionsImpl INSTANCE = new SensorParameterFunctionsImpl();
+    public static final IwmiserviceFunctionsImpl INSTANCE = new wmiserviceFunctionsImpl();
 
-    private SensorParameterFunctionsImpl() {}
+    private wmiserviceFunctionsImpl() {}
 
   }
   
-  public static class SensorParameterFunctions {
+  public static class wmiserviceFunctions {
 
-    private SensorParameterFunctions() {}
+    private wmiserviceFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Y+MgX+1Zqeu9zs0DUaI1GTrH1pM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,QQLJ50JEiFYX/pszweD/yh216U0=] */

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="db51ae52-c1eb-11ea-820f-9931558a898c">
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db51ae54-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c238ae56-cfeb-11ea-99e7-03141914df18" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="db51ae55-c1eb-11ea-820f-9931558a898c" type="literal">wmisqlserver2005</object>
+  </predicate>
+  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+    <object statement-guid="c238ae58-cfeb-11ea-99e7-03141914df18" type="literal">Monitors the performance of an instance of Microsoft SQL Server 2005. Might not work with the latest version of SQL Server 2005</object>
+  </predicate>
+  <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
+    <object statement-guid="c238ae57-cfeb-11ea-99e7-03141914df18" type="literal">WMI Microsoft SQL Server 2005</object>
+  </predicate>
+</resource>
+

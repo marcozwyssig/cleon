@@ -8,23 +8,12 @@ public class BuildingblocksPackage {
   public static final Resource MonitoringBuildingBlock = new Resource("9fb78914-8fdd-11e8-85d9-314ddfdf57eb");
   public static final Resource MonitoringBuildingBlocks_monitoringBuildingBlocks = new Resource("dfc08e94-9a5b-11e8-ab8b-639e9e9b044b");
   public static final Resource MonitoringBuildingBlock_buildingblockToMonitor = new Resource("6fd18257-9a5c-11e8-ab8b-639e9e9b044b");
-  public static final Resource Sensor = new Resource("128669db-c1ed-11ea-820f-9931558a898c");
   public static final Resource MonitoringBuildingBlock_sensors = new Resource("1afc17f8-c1ed-11ea-820f-9931558a898c");
-  public static final Resource SensorParameter = new Resource("2858f5b3-c1ed-11ea-820f-9931558a898c");
-  public static final Resource SensorParameter_parameter = new Resource("879f8674-c1ed-11ea-820f-9931558a898c");
-  public static final Resource Sensor_sensorType = new Resource("cdaae479-c1ed-11ea-820f-9931558a898c");
-  public static final Resource SensorParameter_check = new Resource("a9009223-c1f0-11ea-820f-9931558a898c");
   public static final Resource MonitoringBuildingBlock_basedOn = new Resource("3c03a6b2-c1f2-11ea-820f-9931558a898c");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_MonitoringBuildingBlocks = new Resource("37cfcc37-c1f3-11ea-820f-9931558a898c");
-  public static final Resource SensorCheck = new Resource("7f613e91-c1fc-11ea-820f-9931558a898c");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_MonitoringBuildingBlock = new Resource("44d649bf-c740-11ea-9c12-5371f8bad411");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_Sensor = new Resource("eab5ee5f-c764-11ea-9c12-5371f8bad411");
-  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_SensorParameter = new Resource("f79c8af2-c764-11ea-9c12-5371f8bad411");
-  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_SensorCheck = new Resource("135ba96a-c765-11ea-9c12-5371f8bad411");
-  public static final Resource SensorExeXml = new Resource("c5d4ec6b-cdbd-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource SensorExeXml_exeFile = new Resource("cdc0f808-cdbd-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource SensorExeXml_exeParams = new Resource("ef197fbc-cdbd-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource SensorExeXml_useWindowsAuthentication = new Resource("fcefd3d2-cdbd-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_wmiservice = new Resource("f79c8af2-c764-11ea-9c12-5371f8bad411");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +34,4 @@ public class BuildingblocksPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,UeNLuOGRRZrT2U9G5FbuVvNqEd4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,Hh/L0qMkXKFSdblUbQxOg3LADV8=] */

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.template.puppet;
+package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -7,21 +7,21 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
-/* Begin Protected Region [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
+/* Begin Protected Region [[ceab5078-d00c-11ea-b5a9-731249efa1a3,imports]] */
 
-/* End Protected Region   [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
+/* End Protected Region   [[ceab5078-d00c-11ea-b5a9-731249efa1a3,imports]] */
 
-public class profiles__T_yaml {
+public class FunctionSpace_Sensor {
 
-  /* Begin Protected Region [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6]] */
+  /* Begin Protected Region [[ceab5078-d00c-11ea-b5a9-731249efa1a3]] */
   
-  /* End Protected Region   [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6]] */
+  /* End Protected Region   [[ceab5078-d00c-11ea-b5a9-731249efa1a3]] */
 
 
   public static interface ISensorFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("0a33e205-cce9-11ea-8b73-6b1c6b53a7a6")
-    public java.lang.String RenderSensor();
+    @IDynamicResourceExtension.MethodId("d6496308-d00c-11ea-b5a9-731249efa1a3")
+    public java.lang.String SimpleName();
 
   }
   
@@ -45,8 +45,8 @@ public class profiles__T_yaml {
 
   public static interface IwmiserviceFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("4c21efbd-cce9-11ea-8b73-6b1c6b53a7a6")
-    public java.lang.String RenderSensor();
+    @IDynamicResourceExtension.MethodId("0f2d98d2-d00d-11ea-b5a9-731249efa1a3")
+    public java.lang.String SimpleName();
 
   }
   
@@ -70,4 +70,4 @@ public class profiles__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,TFprZfHn/rE53fPus+oSiCwaWiA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,uYH9D/IwMNIdTvcbEfVlwku6tTY=] */

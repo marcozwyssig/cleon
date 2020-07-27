@@ -268,6 +268,8 @@ public class SensorPackage {
   public static final Resource SensorClass = new Resource("33be3a6e-cfe0-11ea-99e7-03141914df18");
   public static final Resource SensorClass_displayName = new Resource("50c0d4cd-cfe0-11ea-99e7-03141914df18");
   public static final Resource wmiservice_serviceDisplayName = new Resource("b0cc9388-cfec-11ea-99e7-03141914df18");
+  public static final Resource FunctionSpace_aE_Sensor_Sensor = new Resource("d0eb2eac-d00c-11ea-b5a9-731249efa1a3");
+  public static final Resource FunctionSpace_aE_Sensor_wmiservice = new Resource("08e1337d-d00d-11ea-b5a9-731249efa1a3");
   
   /* Begin Protected Region [[user]] */
   
@@ -288,4 +290,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,6X14p7cKw3nQr3XhradKyC5fjAI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,ffnYOMt1wH47uaekUTuBKxiLx7Y=] */

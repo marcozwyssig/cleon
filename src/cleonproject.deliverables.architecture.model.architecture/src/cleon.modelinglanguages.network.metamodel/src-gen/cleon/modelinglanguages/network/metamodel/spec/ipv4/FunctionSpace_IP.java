@@ -304,6 +304,9 @@ public class FunctionSpace_IP {
     @IDynamicResourceExtension.MethodId("04ae8aa0-7b92-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
+    @IDynamicResourceExtension.MethodId("395edf32-cff4-11ea-9eba-a3ed39c8fa1a")
+    public java.lang.String DisplayName();
+
   }
   
   public static interface IIPv4_MaskFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -453,4 +456,4 @@ public class FunctionSpace_IP {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,8Jbp0uMP/TjZhDrJd7pkSUuy+yY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2fad7962-7232-11e9-8705-4f693d402426,wj55NjteAEj9+Y3rM9+S+IjPjEI=] */

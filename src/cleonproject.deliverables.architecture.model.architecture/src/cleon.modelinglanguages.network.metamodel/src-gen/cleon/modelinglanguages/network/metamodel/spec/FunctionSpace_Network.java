@@ -9,14 +9,17 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[2ef7e101-7aca-11e9-a70f-4dc03941a024,imports]] */
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.*;
+import cleon.modelinglanguages.network.metamodel.spec.javamodel.AbstractPhysicalNetwork;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork;
 import java.util.ArrayList;
+import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IAbstractIPv4Functions;
+import cleon.modelinglanguages.network.metamodel.spec.ipv4.FunctionSpace_IP.IIPv4_MaskFunctions;
 /* End Protected Region   [[2ef7e101-7aca-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
 
   /* Begin Protected Region [[2ef7e101-7aca-11e9-a70f-4dc03941a024]] */
-  
+
   /* End Protected Region   [[2ef7e101-7aca-11e9-a70f-4dc03941a024]] */
 
 
@@ -52,14 +55,14 @@ public class FunctionSpace_Network {
     @Override
     public List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> OnlyWithNodes(final List<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> abstractNetworkList) {
       /* Begin Protected Region [[e8f74219-6e87-11ea-b8e8-f1a46e0c42f7]] */
-    	ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> list = new ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork>();
-    	for( IAbstractNetwork network : abstractNetworkList ) {
-    		boolean anyMatch = network.extension(IAbstractNetworkFunctions.class).GetAllPhysicalNetworks().stream().anyMatch(x-> (!x.selectNodes().values().isEmpty()));
-    		if( anyMatch ) {
-    			list.add(network);
-    		}    		
-    	}
-    	return list;   
+      final ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork> list = new ArrayList<cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetwork>();
+      for( final IAbstractNetwork network : abstractNetworkList ) {
+      	final boolean anyMatch = network.extension(IAbstractNetworkFunctions.class).GetAllPhysicalNetworks().stream().anyMatch(x-> !x.selectNodes().values().isEmpty());
+      	if( anyMatch ) {
+      		list.add(network);
+      	}    		
+      }
+      return list;   
       /* End Protected Region   [[e8f74219-6e87-11ea-b8e8-f1a46e0c42f7]] */
     }
 
@@ -198,18 +201,15 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
     public java.lang.String NetworkAddress();
 
+    @IDynamicResourceExtension.MethodId("17b56361-cff2-11ea-99e7-03141914df18")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr();
+
   }
   
   public static interface IAbstractNetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("c9e02962-7b97-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
-
-    @IDynamicResourceExtension.MethodId("c9e05074-7b97-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
-
-    @IDynamicResourceExtension.MethodId("c9e09e96-7b97-11e9-94aa-f1ea7ea33f46")
-    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
+    @IDynamicResourceExtension.MethodId("17b56361-cff2-11ea-99e7-03141914df18")
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode);
 
   }
   
@@ -220,18 +220,23 @@ public class FunctionSpace_Network {
     private AbstractNetworkNodeFunctionsImpl() {}
 
     @Override
-    public java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return "mask";
-    }
-
-    @Override
-    public java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return "broadcast";
-    }
-
-    @Override
-    public java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return "address";
+    public cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      /* Begin Protected Region [[17b56361-cff2-11ea-99e7-03141914df18]] */
+      final List<? extends IIPv4_Mask> cidrs =  AbstractPhysicalNetwork.selectToMeNodes(abstractNetworkNode).selectCidr();
+      final IAbstractIPv4Functions abstractIPv4Functions = abstractNetworkNode.selectIPv4_D().extension(IAbstractIPv4Functions.class);
+      final String  ipv4 = abstractIPv4Functions.SimpleName();
+      return cidrs.stream().filter(x -> {
+      	if( x.selectMask() == 32 ) {
+      		//Logger.instance().logInfo("Compare " + ipv4 + " with " + x.selectIPv4());
+      		return x.selectIPv4().equals(ipv4);
+      	} else {
+      		final IIPv4_MaskFunctions functions = x.extension(IIPv4_MaskFunctions.class);
+      		final String displayName = functions.DisplayName();
+      		final SubnetUtils subnetUtils = new SubnetUtils(displayName);      	
+      		return subnetUtils.getInfo().isInRange(ipv4);    		  
+      	}
+      }).findFirst().orElseThrow();
+      /* End Protected Region   [[17b56361-cff2-11ea-99e7-03141914df18]] */
     }
 
   }
@@ -240,16 +245,8 @@ public class FunctionSpace_Network {
 
     private AbstractNetworkNodeFunctions() {}
 
-    public static java.lang.String SubnetMask(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).SubnetMask(abstractNetworkNode);
-    }
-
-    public static java.lang.String Broadcast(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).Broadcast(abstractNetworkNode);
-    }
-
-    public static java.lang.String NetworkAddress(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
-      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).NetworkAddress(abstractNetworkNode);
+    public static cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask Cidr(final cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode abstractNetworkNode) {
+      return DynamicResourceUtil.invoke(IAbstractNetworkNodeFunctionsImpl.class, AbstractNetworkNodeFunctionsImpl.INSTANCE, abstractNetworkNode).Cidr(abstractNetworkNode);
     }
 
   }
@@ -331,4 +328,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,+SAw2p2r4ndlSMomTHi7tUct20Q=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2ef7e101-7aca-11e9-a70f-4dc03941a024,foeTUKbCJu600mdEVFhvHvAxz0A=] */

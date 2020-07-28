@@ -31,6 +31,15 @@ public class Domain extends DynamicResource implements IDomain {
   // attributes
   
   @Override
+  public java.lang.Boolean selectAllowedForIntra() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.DomainPackage.Domain_allowedForIntra);
+  }
+    
+  public void setAllowedForIntra(java.lang.Boolean allowedForIntra) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.DomainPackage.Domain_allowedForIntra, allowedForIntra);
+  }
+
+  @Override
   public java.lang.String selectComment() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
@@ -73,6 +82,7 @@ public class Domain extends DynamicResource implements IDomain {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.DomainPackage.Domain_allowedForIntra, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -80,4 +90,4 @@ public class Domain extends DynamicResource implements IDomain {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,4AV557AzgU8wlGHCtrHZJp8R+B8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,6jl5QU3tAS9hRUchG0tGJA9EUGc=] */

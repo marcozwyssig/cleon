@@ -550,6 +550,31 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
+  public static interface IAccountEnvironmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cf0e7bcd-d1b5-11ea-aaa2-e3554b4f77be")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAccountEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AccountEnvironmentFunctionsImpl implements IAccountEnvironmentFunctionsImpl {
+
+    public static final IAccountEnvironmentFunctionsImpl INSTANCE = new AccountEnvironmentFunctionsImpl();
+
+    private AccountEnvironmentFunctionsImpl() {}
+
+  }
+  
+  public static class AccountEnvironmentFunctions {
+
+    private AccountEnvironmentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,gXmiNViXqeqUNVeTKHRFVabmTc8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,OSO02tWwDGNZfyexX2Guys211Ig=] */

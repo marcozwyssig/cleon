@@ -347,31 +347,6 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
-  public static interface ISegmentationConceptFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("eb430c4c-0e21-11e9-8b4c-f9aec93d8b56")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface ISegmentationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SegmentationConceptFunctionsImpl implements ISegmentationConceptFunctionsImpl {
-
-    public static final ISegmentationConceptFunctionsImpl INSTANCE = new SegmentationConceptFunctionsImpl();
-
-    private SegmentationConceptFunctionsImpl() {}
-
-  }
-  
-  public static class SegmentationConceptFunctions {
-
-    private SegmentationConceptFunctions() {}
-
-  }
-
   public static interface IDestinationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5de412e9-6df3-11ea-ab3c-05911d3796c8")
@@ -525,6 +500,56 @@ public class FunctionSpace_SystemArc42_Docbook {
 
   }
 
+  public static interface ISourceSubZoneFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e8e78fbc-d1a5-11ea-aaa2-e3554b4f77be")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ISourceSubZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SourceSubZoneFunctionsImpl implements ISourceSubZoneFunctionsImpl {
+
+    public static final ISourceSubZoneFunctionsImpl INSTANCE = new SourceSubZoneFunctionsImpl();
+
+    private SourceSubZoneFunctionsImpl() {}
+
+  }
+  
+  public static class SourceSubZoneFunctions {
+
+    private SourceSubZoneFunctions() {}
+
+  }
+
+  public static interface IQoSSystemConfigurationConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("70ffa98d-d1aa-11ea-aaa2-e3554b4f77be")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IQoSSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QoSSystemConfigurationConceptFunctionsImpl implements IQoSSystemConfigurationConceptFunctionsImpl {
+
+    public static final IQoSSystemConfigurationConceptFunctionsImpl INSTANCE = new QoSSystemConfigurationConceptFunctionsImpl();
+
+    private QoSSystemConfigurationConceptFunctionsImpl() {}
+
+  }
+  
+  public static class QoSSystemConfigurationConceptFunctions {
+
+    private QoSSystemConfigurationConceptFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,zJogYo7hqPidn+In7YLRO03xFAs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,gXmiNViXqeqUNVeTKHRFVabmTc8=] */

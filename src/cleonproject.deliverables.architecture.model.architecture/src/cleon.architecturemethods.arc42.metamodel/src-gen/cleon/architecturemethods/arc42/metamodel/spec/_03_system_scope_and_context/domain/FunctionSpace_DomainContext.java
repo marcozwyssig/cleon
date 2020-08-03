@@ -26,6 +26,9 @@ public class FunctionSpace_DomainContext {
     @IDynamicResourceExtension.MethodId("d148c2de-052b-11e9-95f7-3b0c47908608")
     public List<cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IAbstractComponent> SelectAllComponentsDistinct();
 
+    @IDynamicResourceExtension.MethodId("0b0d2cb2-01e2-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderStandardDescription();
+
   }
   
   public static interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -98,4 +101,4 @@ public class FunctionSpace_DomainContext {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,+CiD5lUqvub8/D//Ev7Y6skGOCs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2788307c-052b-11e9-95f7-3b0c47908608,vQIB8TvoCblfEa3Hs49zHvuc5VI=] */

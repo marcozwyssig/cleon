@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class DocbookPackage {
   
-  public static final Resource FunctionSpace_aE_Docbook_UmlDiagram = new Resource("fcdb9fca-fa41-11e8-af47-e5bdd8100025");
+  public static final Resource FunctionSpace_aE_Docbook_aE_Uml_UmlDiagram = new Resource("fcdb9fca-fa41-11e8-af47-e5bdd8100025");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.docbook,7niZIGv2Gcg+SnjMSjGpPuF1SJE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.docbook,IrmNHrcYqo79QOW9/o3JH1oiBas=] */

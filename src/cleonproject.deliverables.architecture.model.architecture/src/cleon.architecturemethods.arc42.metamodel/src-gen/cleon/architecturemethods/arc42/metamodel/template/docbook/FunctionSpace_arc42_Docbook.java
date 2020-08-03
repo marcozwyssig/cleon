@@ -45,9 +45,6 @@ public class FunctionSpace_arc42_Docbook {
 
   public static interface IDomainContextFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("0b0d2cb2-01e2-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderStandardDescription();
-
     @IDynamicResourceExtension.MethodId("3665f130-043c-11e9-bb22-3f676e869eaa")
     public java.lang.String RenderContentElement();
 
@@ -72,9 +69,6 @@ public class FunctionSpace_arc42_Docbook {
   }
 
   public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("de7cc416-d17f-11e8-b18f-df1540bb7a5c")
-    public java.lang.String RenderStandardDescription();
 
     @IDynamicResourceExtension.MethodId("519056bd-0441-11e9-bb22-3f676e869eaa")
     public java.lang.String RenderContentElement();
@@ -580,6 +574,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6529eb1f-d574-11ea-9bae-37ef2cb951a8")
+    public java.lang.String RenderReference();
+
+  }
+  
+  public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
+
+    public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
+
+    private BuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class BuildingBlockFunctions {
+
+    private BuildingBlockFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,/4JGHr0KlJZYUY9J0OcRJ/3cvOY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,/p8yu7U0e3P5aQxfJss/wfrac7w=] */

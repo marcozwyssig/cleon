@@ -137,9 +137,6 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("7a904f0e-3e12-11e6-9bf8-29c5fda07fa3")
     public java.lang.String RenderElementName();
 
-    @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
-    public java.lang.String RenderStandardDescription();
-
     @IDynamicResourceExtension.MethodId("7e5ddd3f-0a9b-11e9-9915-0d353533f3da")
     public java.lang.String RenderChapterName();
 
@@ -846,4 +843,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,X6Mif/7r65/HKrhYv7HGwulDoyg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,ZoySk2NMQ9aEMl8FlMLWH9hkIm8=] */

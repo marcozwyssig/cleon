@@ -133,6 +133,37 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface IAbstractChapterFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2e076f33-53fa-11ea-93a1-15e540ad9e0c")
+    public java.lang.String Descriptions();
+
+    @IDynamicResourceExtension.MethodId("877562ec-7bdc-11ea-9c6c-c5ad5514988f")
+    public java.lang.String Comment();
+
+    @IDynamicResourceExtension.MethodId("8645eea6-01e1-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderStandardDescription();
+
+  }
+  
+  public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractChapterFunctionsImpl implements IAbstractChapterFunctionsImpl {
+
+    public static final IAbstractChapterFunctionsImpl INSTANCE = new AbstractChapterFunctionsImpl();
+
+    private AbstractChapterFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractChapterFunctions {
+
+    private AbstractChapterFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,e3tSrPbxLyi7zo5v0taNNUOSZCM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,TRwOYeRxwx3r3IZIP/MC/npDD00=] */

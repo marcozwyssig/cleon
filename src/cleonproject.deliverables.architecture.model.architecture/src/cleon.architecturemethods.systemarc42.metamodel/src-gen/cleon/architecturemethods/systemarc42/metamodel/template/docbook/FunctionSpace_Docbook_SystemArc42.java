@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorResponsibility;
 /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
 
-public class FunctionSpace_SystemArc42_Docbook {
+public class FunctionSpace_Docbook_SystemArc42 {
 
   /* Begin Protected Region [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
   
@@ -577,4 +577,4 @@ public class FunctionSpace_SystemArc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,OSO02tWwDGNZfyexX2Guys211Ig=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,hfwnwA9SGui8owOOb6CPNm7pAqg=] */

@@ -4,7 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class AsciidocPackage {
   
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_ItArc42_SystemArc42Document = new Resource("7cc50440-d182-11e8-b18f-df1540bb7a5c");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_SystemArc42_DeploymentDiagram = new Resource("ffb34feb-d576-11ea-9bae-37ef2cb951a8");
   
   /* Begin Protected Region [[user]] */
   
@@ -25,4 +25,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.asciidoc,Du1Rrm3195LoMYxvjXRG/hJp8WM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.asciidoc,WyxiHvjPHymumTCkXag8qJkSKRw=] */

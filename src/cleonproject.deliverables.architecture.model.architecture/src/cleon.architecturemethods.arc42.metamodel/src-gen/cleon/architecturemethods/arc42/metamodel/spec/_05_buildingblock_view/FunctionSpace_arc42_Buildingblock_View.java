@@ -8,6 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
+import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox;
 /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
 
 public class FunctionSpace_arc42_Buildingblock_View {
@@ -79,7 +80,7 @@ public class FunctionSpace_arc42_Buildingblock_View {
   public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e945b5c3-d187-11e8-b18f-df1540bb7a5c")
-    public java.lang.String GetLevelNr();
+    public java.lang.Integer GetLevelNr();
 
     @IDynamicResourceExtension.MethodId("043e0c3c-ee36-11e8-9756-27a593be2ffb")
     public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBuildingBlockView GetBuildingBlockView();
@@ -87,12 +88,15 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @IDynamicResourceExtension.MethodId("71cf2aa5-6dbd-11ea-98d4-4d756e6b7091")
     public java.lang.String Name();
 
+    @IDynamicResourceExtension.MethodId("198fb09a-d56d-11ea-9bae-37ef2cb951a8")
+    public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox ParentWhiteBox();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e945b5c3-d187-11e8-b18f-df1540bb7a5c")
-    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
+    public java.lang.Integer GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
 
   }
   
@@ -103,13 +107,21 @@ public class FunctionSpace_arc42_Buildingblock_View {
     private WhiteboxFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+    public java.lang.Integer GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
       /* Begin Protected Region [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
       if( whitebox == null) {
-      	return "";
+      	return null;
       }
 
-      return "";
+      final IWhiteboxFunctions whiteboxFunctions = whitebox.extension(IWhiteboxFunctions.class);
+      final IWhitebox parent = whiteboxFunctions.ParentWhiteBox();
+      if( parent == null) {
+      	return 1;
+      }
+      else {
+      	final IWhiteboxFunctions parentWhiteboxFunctions = parent.extension(IWhiteboxFunctions.class);
+      	return parentWhiteboxFunctions.GetLevelNr() + 1;
+      }
       /* End Protected Region   [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
     }
 
@@ -119,7 +131,7 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
     private WhiteboxFunctions() {}
 
-    public static java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+    public static java.lang.Integer GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
       return DynamicResourceUtil.invoke(IWhiteboxFunctionsImpl.class, WhiteboxFunctionsImpl.INSTANCE, whitebox).GetLevelNr(whitebox);
     }
 
@@ -155,4 +167,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,o3wdv2sCtjCPsU+f3ZZw6HKnKQ0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,lxjZKSibfflFON/0sUIcUFmMNqQ=] */

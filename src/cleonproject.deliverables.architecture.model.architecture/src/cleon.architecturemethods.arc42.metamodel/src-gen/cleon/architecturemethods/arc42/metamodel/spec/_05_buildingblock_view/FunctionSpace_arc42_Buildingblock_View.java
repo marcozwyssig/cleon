@@ -14,7 +14,7 @@ import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.jav
 public class FunctionSpace_arc42_Buildingblock_View {
 
   /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b]] */
-  
+
   /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b]] */
 
 
@@ -83,7 +83,7 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
   }
 
-  public static interface ILevelFunctions extends IDynamicResourceExtension {
+  public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e945b5c3-d187-11e8-b18f-df1540bb7a5c")
     public java.lang.String GetLevelNr();
@@ -96,52 +96,58 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
   }
   
-  public static interface ILevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e945b5c3-d187-11e8-b18f-df1540bb7a5c")
-    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel level);
+    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox);
 
   }
   
-  public static class LevelFunctionsImpl implements ILevelFunctionsImpl {
+  public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
 
-    public static final ILevelFunctionsImpl INSTANCE = new LevelFunctionsImpl();
+    public static final IWhiteboxFunctionsImpl INSTANCE = new WhiteboxFunctionsImpl();
 
-    private LevelFunctionsImpl() {}
+    private WhiteboxFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel level) {
+    public java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
       /* Begin Protected Region [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
-    	if( level == null)
-    		return "";
-    	
-    	if( BuildingBlockView.selectToMeLevel_1(level) != null)
-    		return "1";
+      if( whitebox == null) {
+      	return "";
+      }
 
-    	if( BuildingBlockView.selectToMeLevel_2(level) != null)
-    		return "2";
+      if( BuildingBlockView.selectToMeLevel_1(whitebox) != null) {
+      	return "1";
+      }
 
-    	if( BuildingBlockView.selectToMeLevel_3(level) != null)
-    		return "3";
+      if( BuildingBlockView.selectToMeLevel_2(whitebox) != null) {
+      	return "2";
+      }
 
-    	if( BuildingBlockView.selectToMeLevel_4(level) != null)
-    		return "4";
+      if( BuildingBlockView.selectToMeLevel_3(whitebox) != null) {
+      	return "3";
+      }
 
-    	if( BuildingBlockView.selectToMeLevel_5(level) != null)
-    		return "5";
-    	
-    	return "";
+      if( BuildingBlockView.selectToMeLevel_4(whitebox) != null) {
+      	return "4";
+      }
+
+      if( BuildingBlockView.selectToMeLevel_5(whitebox) != null) {
+      	return "5";
+      }
+
+      return "";
       /* End Protected Region   [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
     }
 
   }
   
-  public static class LevelFunctions {
+  public static class WhiteboxFunctions {
 
-    private LevelFunctions() {}
+    private WhiteboxFunctions() {}
 
-    public static java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILevel level) {
-      return DynamicResourceUtil.invoke(ILevelFunctionsImpl.class, LevelFunctionsImpl.INSTANCE, level).GetLevelNr(level);
+    public static java.lang.String GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
+      return DynamicResourceUtil.invoke(IWhiteboxFunctionsImpl.class, WhiteboxFunctionsImpl.INSTANCE, whitebox).GetLevelNr(whitebox);
     }
 
   }
@@ -176,4 +182,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,lyH9INMeWe3v0cVbv2AVr7USWnE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,hwxMafonbKyXlg+eZJFjrBHQduI=] */

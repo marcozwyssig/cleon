@@ -50,19 +50,22 @@ public class FunctionSpace_Asciidoc {
     @IDynamicResourceExtension.MethodId("7eb10829-d872-11e4-aa2f-c11242a92b60")
     public java.lang.String RenderContent();
 
-    @IDynamicResourceExtension.MethodId("5e5a2fe4-a7eb-11e5-82dd-3b995d9c840c")
-    public java.lang.String RenderContentElement();
-
     @IDynamicResourceExtension.MethodId("62951c04-bdfe-11e5-bc2e-0b46afe7c3c9")
     public java.lang.String RenderChapter();
 
     @IDynamicResourceExtension.MethodId("9fad75ec-c1d8-11e5-bbf3-bdd12a9e2b3d")
     public java.lang.String RenderDescriptions();
 
+    @IDynamicResourceExtension.MethodId("1bb83b01-d580-11ea-9bae-37ef2cb951a8")
+    public java.lang.String RenderContentElement();
+
   }
   
   public static interface IAbstractChapterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("1bb83b01-d580-11ea-9bae-37ef2cb951a8")
+    public java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter);
+
   }
   
   public static class AbstractChapterFunctionsImpl implements IAbstractChapterFunctionsImpl {
@@ -71,11 +74,20 @@ public class FunctionSpace_Asciidoc {
 
     private AbstractChapterFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return null;
+    }
+
   }
   
   public static class AbstractChapterFunctions {
 
     private AbstractChapterFunctions() {}
+
+    public static java.lang.String RenderContentElement(final cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter abstractChapter) {
+      return DynamicResourceUtil.invoke(IAbstractChapterFunctionsImpl.class, AbstractChapterFunctionsImpl.INSTANCE, abstractChapter).RenderContentElement(abstractChapter);
+    }
 
   }
 
@@ -711,4 +723,7 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,UbWhqbAgiDd6Gi1sSmYOyYxTXLs=] */
+      /* Begin Protected Region [[1bb83b01-d580-11ea-9bae-37ef2cb951a8]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[1bb83b01-d580-11ea-9bae-37ef2cb951a8]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,KOOvRmQyLOHGjRkVwoaW1IobD3Y=] */

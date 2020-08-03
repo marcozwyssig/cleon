@@ -8,7 +8,6 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
-import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.BuildingBlockView;;
 /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
 
 public class FunctionSpace_arc42_Buildingblock_View {
@@ -25,12 +24,6 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
     @IDynamicResourceExtension.MethodId("0726680c-83dd-11ea-bd03-8dee7901cd7f")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> Level1();
-
-    @IDynamicResourceExtension.MethodId("27cc41ab-83dd-11ea-bd03-8dee7901cd7f")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> Level2();
-
-    @IDynamicResourceExtension.MethodId("69fcaed6-83dd-11ea-bd03-8dee7901cd7f")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> Level3();
 
   }
   
@@ -116,26 +109,6 @@ public class FunctionSpace_arc42_Buildingblock_View {
       	return "";
       }
 
-      if( BuildingBlockView.selectToMeLevel_1(whitebox) != null) {
-      	return "1";
-      }
-
-      if( BuildingBlockView.selectToMeLevel_2(whitebox) != null) {
-      	return "2";
-      }
-
-      if( BuildingBlockView.selectToMeLevel_3(whitebox) != null) {
-      	return "3";
-      }
-
-      if( BuildingBlockView.selectToMeLevel_4(whitebox) != null) {
-      	return "4";
-      }
-
-      if( BuildingBlockView.selectToMeLevel_5(whitebox) != null) {
-      	return "5";
-      }
-
       return "";
       /* End Protected Region   [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
     }
@@ -182,4 +155,4 @@ public class FunctionSpace_arc42_Buildingblock_View {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,hwxMafonbKyXlg+eZJFjrBHQduI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f8000224-437a-11e6-a9d7-97cf4f7c398b,o3wdv2sCtjCPsU+f3ZZw6HKnKQ0=] */

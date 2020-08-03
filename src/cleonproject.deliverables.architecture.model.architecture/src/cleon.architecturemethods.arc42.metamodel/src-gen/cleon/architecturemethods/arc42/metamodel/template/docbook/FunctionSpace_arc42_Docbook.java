@@ -302,31 +302,6 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
-  public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4074b6cf-ee38-11e8-9756-27a593be2ffb")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class BuildingBlockViewFunctionsImpl implements IBuildingBlockViewFunctionsImpl {
-
-    public static final IBuildingBlockViewFunctionsImpl INSTANCE = new BuildingBlockViewFunctionsImpl();
-
-    private BuildingBlockViewFunctionsImpl() {}
-
-  }
-  
-  public static class BuildingBlockViewFunctions {
-
-    private BuildingBlockViewFunctions() {}
-
-  }
-
   public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
@@ -607,4 +582,4 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,hTa+SIvLk0dutNnMrTH1451dXck=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,/4JGHr0KlJZYUY9J0OcRJ/3cvOY=] */

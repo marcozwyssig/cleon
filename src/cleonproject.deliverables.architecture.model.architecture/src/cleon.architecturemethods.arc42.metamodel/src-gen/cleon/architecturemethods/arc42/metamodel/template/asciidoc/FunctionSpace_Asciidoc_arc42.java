@@ -143,31 +143,6 @@ public class FunctionSpace_Asciidoc_arc42 {
 
   }
 
-  public static interface IBuildingBlockViewFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("839b799d-d185-11e8-b18f-df1540bb7a5c")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface IBuildingBlockViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class BuildingBlockViewFunctionsImpl implements IBuildingBlockViewFunctionsImpl {
-
-    public static final IBuildingBlockViewFunctionsImpl INSTANCE = new BuildingBlockViewFunctionsImpl();
-
-    private BuildingBlockViewFunctionsImpl() {}
-
-  }
-  
-  public static class BuildingBlockViewFunctions {
-
-    private BuildingBlockViewFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,EZsfiSfZ7hPYBsF347vWDtw5Dfo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,pEKSJwiJk5vtdOCiNRK/ZmNoJxc=] */

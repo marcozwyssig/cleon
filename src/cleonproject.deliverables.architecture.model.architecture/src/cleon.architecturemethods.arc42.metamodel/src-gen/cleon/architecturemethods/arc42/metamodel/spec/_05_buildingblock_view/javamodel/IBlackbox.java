@@ -16,6 +16,8 @@ public interface IBlackbox extends ch.actifsource.core.javamodel.IDecorator, cle
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBlackbox_Requirements selectBlackbox_requirements();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox> selectWhitebox();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,LdqSNmSHl43NPzE4XIv/WojYX4E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d58842b6-2858-11e8-9af4-b7d7a3bbddc1,Yf+exa4R+pnkValGwwiOW9ltGaw=] */

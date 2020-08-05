@@ -61,12 +61,12 @@ public class AvailabilityBuildingBlock extends DynamicResource implements IAvail
   }
     
   @Override
-  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectSystemConfiguration() {
-    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_systemConfiguration);
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectAvailabilityBuildingBlock() {
+    return _getSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_availabilityBuildingBlock);
   }
 
-  public AvailabilityBuildingBlock setSystemConfiguration(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock systemConfiguration) {
-    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_systemConfiguration, systemConfiguration);
+  public AvailabilityBuildingBlock setAvailabilityBuildingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock availabilityBuildingBlock) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_availabilityBuildingBlock, availabilityBuildingBlock);
     return this;
   }
     
@@ -97,14 +97,14 @@ public class AvailabilityBuildingBlock extends DynamicResource implements IAvail
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityConfiguration.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_availability, visitor);
-    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_systemConfiguration, visitor);
+    _acceptSingle(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_availabilityBuildingBlock, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock> selectToMeSystemConfiguration(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_systemConfiguration, object.getResource());
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock> selectToMeAvailabilityBuildingBlock(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityBuildingBlock_availabilityBuildingBlock, object.getResource());
   }
   
   public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock> selectToMeAvailability(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityConfiguration object) {
@@ -112,4 +112,4 @@ public class AvailabilityBuildingBlock extends DynamicResource implements IAvail
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,Zi9AaI65L/5x26DfiDqJd5RZs5M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68803d0a-1e37-11e9-865e-41ef48a95f70,RNDcEp2kXs5DGwWMgSHk8Ue6e0o=] */

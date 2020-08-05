@@ -51,6 +51,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Backup_aE_and_aE_Recovery_backupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
   public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
   public static final Resource Blackbox_whitebox = new Resource("1f2736f1-d568-11ea-80a3-dbf7eb525c3c");
+  public static final Resource NetworkSegmentation = new Resource("034828ce-d71f-11ea-ae00-5518e944c256");
+  public static final Resource Whitebox_networkSegmentation = new Resource("25e2cd52-d71f-11ea-ae00-5518e944c256");
   
   /* Begin Protected Region [[user]] */
   
@@ -71,4 +73,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,Ipslgi+M7E3xI4pg7aPj1DoVzz0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,UbhRbpFYSs9yz0ur5o56xk6BujQ=] */

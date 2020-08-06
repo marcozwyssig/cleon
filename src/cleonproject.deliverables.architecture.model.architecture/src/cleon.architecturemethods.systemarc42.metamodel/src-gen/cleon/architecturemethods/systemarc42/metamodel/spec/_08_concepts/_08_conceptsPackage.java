@@ -23,8 +23,7 @@ public class _08_conceptsPackage {
   public static final Resource SystemConcepts_businessContinuityConcept = new Resource("5c37162e-71a4-11e9-98e0-2719d32d2629");
   public static final Resource SystemConcepts_topologyConcept = new Resource("21841958-878b-11e9-a61b-279ebde48b48");
   public static final Resource SystemConcepts_deploymentConcept = new Resource("1f1a260c-6eb3-11ea-b8e8-f1a46e0c42f7");
-  public static final Resource FunctionSpace_aE_SystemArc42_aE_BusinessContinuity_Backup = new Resource("b038646b-c1d2-11ea-b956-0ffede25a02d");
-  public static final Resource FunctionSpace_aE_SystemArc42_aE_Monitoring_aE_Building_aE_Blocks_MonitoringBuildingBlocks = new Resource("294ec343-c1f4-11ea-820f-9931558a898c");
+  public static final Resource FunctionSpace_aE_SystemArc42_aE_Concepts_Backup = new Resource("b038646b-c1d2-11ea-b956-0ffede25a02d");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +44,4 @@ public class _08_conceptsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,SB5eHnRcoVjpMtkvFxpQYH8EhGE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,w8s3TyCYQ8Rn5LPbp2l7JeY6dSQ=] */

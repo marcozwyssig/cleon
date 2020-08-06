@@ -575,6 +575,34 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("17d0424a-d7dd-11ea-ae00-5518e944c256")
+    public java.lang.String RenderAdditionalChapters();
+
+    @IDynamicResourceExtension.MethodId("457549ba-d7dd-11ea-ae00-5518e944c256")
+    public java.lang.String RenderNetworkSegmentation();
+
+  }
+  
+  public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
+
+    public static final IWhiteboxFunctionsImpl INSTANCE = new WhiteboxFunctionsImpl();
+
+    private WhiteboxFunctionsImpl() {}
+
+  }
+  
+  public static class WhiteboxFunctions {
+
+    private WhiteboxFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,hfwnwA9SGui8owOOb6CPNm7pAqg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,ws5SpoLxtvoFsc7DJICS3yp7x8s=] */

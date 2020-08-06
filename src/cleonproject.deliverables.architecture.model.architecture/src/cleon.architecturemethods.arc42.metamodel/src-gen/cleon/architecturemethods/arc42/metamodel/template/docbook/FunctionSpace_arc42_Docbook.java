@@ -307,6 +307,15 @@ public class FunctionSpace_arc42_Docbook {
     @IDynamicResourceExtension.MethodId("f0930eda-d5a9-11ea-96bb-39ddde1b696a")
     public java.lang.String RenderDescriptions();
 
+    @IDynamicResourceExtension.MethodId("20b43820-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderChapters();
+
+    @IDynamicResourceExtension.MethodId("4e59db8a-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderAdditionalChapters();
+
+    @IDynamicResourceExtension.MethodId("cffa0fb1-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderProduct();
+
   }
   
   public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -604,4 +613,7 @@ public class FunctionSpace_arc42_Docbook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,ZvAAmUS2+v8P2EBzdnY6PL2CZS4=] */
+      /* Begin Protected Region [[4e59db8a-d7dc-11ea-ae00-5518e944c256]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[4e59db8a-d7dc-11ea-ae00-5518e944c256]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,sWmK6o0A5RCJKoOL4C2v6eBKzgQ=] */

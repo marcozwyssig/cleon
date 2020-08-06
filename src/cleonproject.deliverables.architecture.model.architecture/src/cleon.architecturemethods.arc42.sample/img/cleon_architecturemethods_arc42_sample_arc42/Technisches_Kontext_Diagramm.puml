@@ -1,12 +1,10 @@
 @startuml
-
 skinparam monochrome true
 skinparam componentStyle uml2
 component FTP as "FTP" <<ExternalSystem>>
 component Chess as "Chess" <<SoftwareSystem>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
-
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]

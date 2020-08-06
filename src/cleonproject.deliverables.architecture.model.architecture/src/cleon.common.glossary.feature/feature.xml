@@ -464,10 +464,10 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.common.doc"/>
       <import feature="cleon.common.building"/>
-      <import feature="cleon.common.xml"/>
+      <import feature="cleon.common.doc"/>
       <import feature="cleon.common.resources"/>
+      <import feature="cleon.common.xml"/>
    </requires>
    <plugin id="cleon.common.glossary.metamodel.builtin" download-size="0" install-size="0" version="0.4.149" unpack="false"/>   
 </feature>

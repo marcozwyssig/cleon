@@ -1,65 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
 	<db:title>arc42</db:title>
-	
 	<db:chapter xml:id="ea.e9eba81e-084d-11e9-9ee8-c54fda7ab431">
 		<db:title>Einleitung</db:title>
-		
-		
-		
-		
 		<db:section xml:id="ea.cd3bea12-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Aufgabenstellung</db:title>
-			
 			<db:para>sadfasdfsdf</db:para>
 			<db:para>asdfasdfasdfsadf</db:para>
-			
-			
-			
 		</db:section>
 		<db:section xml:id="ea.d1d855f3-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Zweck</db:title>
-			
 			<db:para>adfasdfasdf</db:para>
 			<db:para>adsfasdfasdf</db:para>
-			
-			
-			
 		</db:section>
 		<db:section xml:id="ea.d5571bd5-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Abgrenzung</db:title>
-			
 			<db:para>asdfasdfas</db:para>
 			<db:para>dfasdfasdfsadf</db:para>
 			<db:para>asdfasdfsadf</db:para>
-			
-			
-			
 		</db:section>
 		<db:section xml:id="ea.d85e1aa9-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Abh&#228;ngigkeiten</db:title>
-			
 			<db:para>asdfasdfasd</db:para>
 			<db:para>fasdfasdfasdfdf</db:para>
-			
-			
-			
 		</db:section>
 		<db:section xml:id="ea.dc2d999d-08fb-11e9-9ee8-c54fda7ab431">
 			<db:title>Leserkreis</db:title>
-			
 			<db:para>adsfasdfasdfasdf</db:para>
 			<db:para>asdfasdfasdfa</db:para>
 			<db:para>sdfasdf</db:para>
-			
-			
-			
 		</db:section>
 		<db:section xml:id="ea.085d8b0f-084e-11e9-9ee8-c54fda7ab431">
 			<db:title>Dokumentaufbau</db:title>
-			
-			
-			
 			<db:para>Dieses vorliegende Dokument hat folgenden Aufbau:</db:para>
 			<db:informaltable style="HERMES 5">
 				<db:col width="40%"/>
@@ -97,13 +69,9 @@
 					</db:tr>
 				</db:tbody>
 			</db:informaltable>
-			
 		</db:section>
 		<db:section xml:id="ea.26c09ee9-0770-11e9-9ce3-b59baf185ea8">
 			<db:title>Referenzen</db:title>
-			
-			
-			
 			<db:informaltable style="HERMES 5">
 				<db:col width="10%" />
 				<db:col width="20%" />
@@ -158,40 +126,27 @@
 					</db:tr>
 				</db:tbody>	
 			</db:informaltable>
-			
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.6f09b217-3088-11e5-8cdc-d5b441c8c3df">
 		<db:title>Introduction and Goals</db:title>
-		
-		
 		<db:para>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.
 		         This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</db:para>
-		
 		<db:section xml:id="ea.5bdeec4e-15ec-11e6-b588-912e2ce0f2b0">
 			<db:title>Test</db:title>
-			
-			
-			
-			
 			
 		</db:section>
 		<db:section xml:id="ea.edd2f87d-3088-11e5-8cdc-d5b441c8c3df">
 			<db:title>Requirements Overview</db:title>
 			
-			
-			
-			
-			
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.af0d064b-3088-11e5-8cdc-d5b441c8c3df">
 		<db:title>Architecture Constraints</db:title>
-		
 		<db:para>asdfasdfasdfasdfsdf</db:para>
 		<db:informaltable style="HERMES 5">
-			<db:col width="2" />
-			<db:col width="4" />
+			<db:col width="30" />
+			<db:col width="70" />
 			<db:thead>
 				<db:tr>
 					<db:th>Name</db:th>
@@ -243,8 +198,6 @@
 			</db:listitem>
 		</db:orderedlist>
 		<db:para></db:para>
-		
-		
 	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,7c53b432-d86e-11e4-aa2f-c11242a92b60,Hash] -->

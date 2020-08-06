@@ -74,6 +74,12 @@ public class FunctionSpace_Project {
     @IDynamicResourceExtension.MethodId("ff154cad-2a69-11ea-825d-f7ca5e5684e4")
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetAllPackages();
 
+    @IDynamicResourceExtension.MethodId("231ce01b-d7c7-11ea-ae00-5518e944c256")
+    public java.lang.String GetName();
+
+    @IDynamicResourceExtension.MethodId("ee7e9c00-d7c7-11ea-ae00-5518e944c256")
+    public java.lang.String GetBuiltinFullBuildingBlockName();
+
   }
   
   public static interface IAbstractProjectFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -270,4 +276,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,N3DsAWf7cWCZ61W2lNjdmhEDq/w=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,mdkUwne3DnXW6VoNj6mG/domkmw=] */

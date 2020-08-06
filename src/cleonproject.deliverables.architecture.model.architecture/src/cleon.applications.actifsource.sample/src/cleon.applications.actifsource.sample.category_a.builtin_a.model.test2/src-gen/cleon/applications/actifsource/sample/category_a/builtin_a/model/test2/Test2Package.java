@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class Test2Package {
   
   /* Begin Protected Region [[user]] */
-  
+
   /* End Protected Region   [[user]] */
   
   private Test2Package() {}

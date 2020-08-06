@@ -11,12 +11,7 @@
 == Einführung und Ziele
 
 
-
-
 === Qualitätsziele
-
-
-
 
 
 
@@ -24,19 +19,10 @@
 
 
 
-
-
-
-
 == Randbedingungen
 
 
-
-
 === Technische Randbedingungen
-
-
-
 
 
 
@@ -44,17 +30,12 @@
 
 
 
-
-
-
-
 == Kontextabgrenzung
-
 
 
 In diesem Kapitel wird der Kontext betrachteten Systems (Chess) aufgeführt.
 === Fachlicher Kontext
-
+<db:para>In diesem Kapitel werden die Aktoren (Actor) des betrachteten Systems (Chess) aufgeführt.</db:para>
 
 [plantuml, png]
 ....
@@ -69,7 +50,6 @@ Player__F_A -down-> Chess : interaces
 Player__F_B -down-> Chess : interacts
 Player__F_B -down-> Chess : interaces
 ...
-
 In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
 
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
@@ -91,9 +71,7 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 |Von | Zu | Interaktion | Richtung | Beschreibung
 |====
 
-
 === Technischer Kontext
-
 
 [plantuml, png]
 ....
@@ -104,7 +82,6 @@ component Chess as "Chess" <<SoftwareSystem>>
 FTP --> Chess : "verwendet"
 Chess --> FTP : "verwendet"
 ...
-
 In diesem Kapitel werden die Schnittstellen an die Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
 
 Die nachfolgende Tabelle beschreibt die Schnittstellen an das betrachtete System.
@@ -124,250 +101,49 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 |Von | Zu | Interaktion | Richtung | Beschreibung
 |====
 
-
-
 == Bausteinsicht
-
-
 
 
 === Ebene 1: Chess <SoftwareSystem> (Whitebox)
 
 
-
-
 ==== Test1 <SampleBuildingBlock> (Blackbox)
-
-
 
 
 ===== Abhängigkeiten
 
 
 
-
-
-
-===== Funktionsumfang
-
-
-
-
+===== Anforderungsabdeckung
 
 
 
 ==== Test2 <SampleBuildingBlock> (Blackbox)
 
 
-
-
 ===== Abhängigkeiten
 
 
 
-
-
-
-===== Funktionsumfang
-
-
-
-
+===== Anforderungsabdeckung
 
 
 
 ==== Test3 <SampleBuildingBlock> (Blackbox)
 
 
-
-
 ===== Abhängigkeiten
 
 
 
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
- 
-=== Ebene 2: Test1 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-==== Test1_2 <SampleBuildingBlock> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
-
-=== Ebene 2: Test2 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-==== Test2_2 <SampleBuildingBlock> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
-
-=== Ebene 2: Test3 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-==== Test3_1 <SampleBuildingBlock> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
-
-=== Ebene 3: Test1_2 <SampleBuildingBlock> (Whitebox)
-
-
-Test
-
-asdfasdfsadf
-
-
-==== Test1_2_1 <SampleBuildingBlock> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
-==== MyChapter
-
-
-
-
-
-
-
-=== Ebene 3: Test2_2 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-
-
-=== Ebene 3: Test3_1 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-
-
-=== Ebene 4: Test1_2_1 <SampleBuildingBlock> (Whitebox)
-
-
-
-
-==== Test1_2_1_1 <SampleBuildingBlock> (Blackbox)
-
-
-
-
-===== Abhängigkeiten
-
-
-
-
-
-
-===== Funktionsumfang
-
-
-
-
-
-
-
-
-=== Ebene 5: Test1_2_1_1 <SampleBuildingBlock> (Whitebox)
-
-
-
-
+===== Anforderungsabdeckung
 
 
 
 == Verteilsicht
 
 
-
-
 === Bauen
-
-
-
 
 
 
@@ -375,13 +151,7 @@ asdfasdfsadf
 
 
 
-
-
-
 === Verteilung
-
-
-
 
 
 
@@ -389,26 +159,14 @@ asdfasdfsadf
 
 
 
-
-
-
 === Überwachung
-
-
-
-
 
 
 
 == Entwurfsentscheidungen
 
 
-
-
 === Entwurfsentscheidung Einsatz von PAM in AD 
-
-
-
 
 
 
@@ -416,14 +174,7 @@ asdfasdfsadf
 
 
 
-
-
-
-
 == Qualitätsszenarios
-
-
-
 
 
 
@@ -431,11 +182,7 @@ asdfasdfsadf
 
 
 
-
-
-
 = Glossar
-
 
 
 ikt_1:: 
@@ -444,7 +191,6 @@ ikt_1::
 	ASDASD
 
 ikt_2:: 
-
 
 
 

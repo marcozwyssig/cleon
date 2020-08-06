@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <db:book version="5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:db="http://docbook.org/ns/docbook">
 	<db:title>ReferenceDocumentWithäöü</db:title>
-	
 	<db:chapter xml:id="ea.97c38ae5-1d07-11e6-8877-41038a5cf75e">
 		<db:title>SubDocumentB</db:title>
-		
-		
-		
-		
 		<db:section xml:id="ea.badab222-1d07-11e6-8877-41038a5cf75e">
 			<db:title>SubDocumentB_2</db:title>
-			
-			
-			
-			
 			
 		</db:section>
 		<db:section xml:id="ea.b4c95a77-1d07-11e6-8877-41038a5cf75e">
 			<db:title>SubDocumentB_1</db:title>
 			
-			
-			
-			
-			
 		</db:section>
 	</db:chapter>
 	<db:chapter xml:id="ea.c3103f6d-1d06-11e6-8877-41038a5cf75e">
 		<db:title>SubDocumentA</db:title>
-		
-		
 		<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 		         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 		         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
@@ -81,52 +66,38 @@
 		</db:sidebar>
 		
 		
-		
-		
 	</db:chapter>
 	<db:chapter xml:id="ea.d6dd8443-4669-11e5-ba74-cb2e95044e1c">
 		<db:title>Level 1</db:title>
-		
-		<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-		         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-		         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-		         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
+		<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </db:para>
+		<db:para>nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </db:para>
+		<db:para>sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </db:para>
+		<db:para>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
 		<db:para>Teste</db:para>
-		
 		<db:section xml:id="ea.02b21154-466a-11e5-ba74-cb2e95044e1c">
 			<db:title>Level 2</db:title>
-			
+			<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam </db:para>
+			<db:para>nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </db:para>
+			<db:para>sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </db:para>
+			<db:para>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
 			<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 			         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 			         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 			         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
-			<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-			         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-			         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-			         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
-			
 			<db:section xml:id="ea.1265148e-466a-11e5-ba74-cb2e95044e1c">
 				<db:title>Level 3</db:title>
-				
-				
 				<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 				         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 				         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 				         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
-				
 				<db:section xml:id="ea.1ea62287-466a-11e5-ba74-cb2e95044e1c">
 					<db:title>Level 4</db:title>
-					
-					
 					<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 					         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 					         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
 					         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</db:para>
-					
 					<db:section xml:id="ea.28c27bc7-466a-11e5-ba74-cb2e95044e1c">
 						<db:title>Level 5</db:title>
-						
-						
 						<db:para>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
 						         nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
 						         sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
@@ -157,7 +128,7 @@
 							This is a warning.
 						</db:warning>
 						<db:caution>
-							This is caution.
+							<db:para>This is caution.</db:para>
 						</db:caution>
 						<db:para>A regular listing block without highlighting:</db:para>
 						<db:programmlisting>
@@ -189,8 +160,6 @@
 							   }
 							}
 						</db:programmlisting>
-						
-						
 					</db:section>
 				</db:section>
 			</db:section>

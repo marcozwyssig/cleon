@@ -466,20 +466,20 @@ of their respective owners.
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
       <import feature="cleon.architecturestylesandpatterns.eda"/>
       <import feature="cleon.architecturestylesandpatterns.soa"/>
+      <import feature="cleon.common.actifsource"/>
+      <import feature="cleon.common.building"/>
+      <import feature="cleon.common.calendar"/>
+      <import feature="cleon.common.doc"/>
       <import feature="cleon.architecturemethods.eamod"/>
+      <import feature="cleon.common.glossary"/>
+      <import feature="cleon.projectmethods.hermes"/>
+      <import feature="cleon.common.modularity"/>
       <import feature="cleon.modelinglanguages.network"/>
       <import feature="cleon.modelinglanguages.rack"/>
-      <import feature="cleon.modelinglanguages.uml"/>
-      <import feature="cleon.common.modularity"/>
-      <import feature="cleon.common.actifsource"/>
-      <import feature="cleon.common.doc"/>
-      <import feature="cleon.common.building"/>
-      <import feature="cleon.common.xml"/>
       <import feature="cleon.common.resources"/>
-      <import feature="cleon.projectmethods.hermes"/>
-      <import feature="cleon.common.glossary"/>
-      <import feature="cleon.common.calendar"/>
       <import feature="cleon.modelinglanguages.segmentation"/>
+      <import feature="cleon.modelinglanguages.uml"/>
+      <import feature="cleon.common.xml"/>
    </requires>
    <plugin id="cleon.architecturemethods.arc42.metamodel.builtin" download-size="0" install-size="0" version="0.4.149" unpack="false"/>   
 </feature>

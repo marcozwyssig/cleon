@@ -7,7 +7,7 @@ public class MetamodelPackage {
   public static final Resource ClassA = new Resource("9ea029c2-3486-11ea-8a90-f5372e2e0d45");
   
   /* Begin Protected Region [[user]] */
-  
+
   /* End Protected Region   [[user]] */
   
   private MetamodelPackage() {}

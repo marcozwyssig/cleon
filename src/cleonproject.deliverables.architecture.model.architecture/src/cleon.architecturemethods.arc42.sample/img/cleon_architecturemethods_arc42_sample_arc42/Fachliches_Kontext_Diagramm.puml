@@ -1,5 +1,4 @@
 @startuml
-
 skinparam monochrome true
 skinparam componentStyle uml2
 actor Player__F_A as "Player A"
@@ -10,7 +9,6 @@ Player__F_A -down-> Chess : interacts
 Player__F_A -down-> Chess : interaces
 Player__F_B -down-> Chess : interacts
 Player__F_B -down-> Chess : interaces
-
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]

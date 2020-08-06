@@ -8,15 +8,14 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
-import cleon.common.doc.metamodel.spec.chapter.javamodel.*;
-import cleon.common.doc.metamodel.spec.document.javamodel.*;
-import cleon.common.doc.metamodel.spec.javamodel.*;
+import cleon.common.doc.metamodel.spec.javamodel.DocumentElementComposite;
+import cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite;
 /* End Protected Region   [[4ba84dc4-d872-11e4-aa2f-c11242a92b60,imports]] */
 
 public class FunctionSpace_Asciidoc {
 
   /* Begin Protected Region [[4ba84dc4-d872-11e4-aa2f-c11242a92b60]] */
-  
+
   /* End Protected Region   [[4ba84dc4-d872-11e4-aa2f-c11242a92b60]] */
 
 
@@ -164,15 +163,15 @@ public class FunctionSpace_Asciidoc {
     @Override
     public java.lang.String GetIndent(final cleon.common.doc.metamodel.spec.javamodel.IDocumentElementComposite documentElementComposite) {
       /* Begin Protected Region [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
-    	IDocumentElementComposite parent = DocumentElementComposite.selectToMeDocumentElements(documentElementComposite);
-    	   	
-    	if( parent == null )
-    	{
-    		return "=";
-    	}
-      	
-      	IDocumentElementComposite parentCollection = (IDocumentElementComposite)parent; 	
-      	return "=" + GetIndent(parentCollection);
+      final IDocumentElementComposite parent = DocumentElementComposite.selectToMeDocumentElements(documentElementComposite);
+
+      if( parent == null )
+      {
+      	return "=";
+      }
+
+      final IDocumentElementComposite parentCollection = parent; 	
+      return "=" + GetIndent(parentCollection);
       /* End Protected Region   [[4f21c7c9-307c-11e5-8cdc-d5b441c8c3df]] */
     }
 
@@ -723,7 +722,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-      /* Begin Protected Region [[1bb83b01-d580-11ea-9bae-37ef2cb951a8]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[1bb83b01-d580-11ea-9bae-37ef2cb951a8]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,KOOvRmQyLOHGjRkVwoaW1IobD3Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,qOeZkvcSSWPTMA4inwsPfboLVcQ=] */

@@ -28,8 +28,6 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IMonitoring> selectMonitoring();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.INetworkSegmentation selectNetworkSegmentation();
-  
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IBackup_and_Recovery> selectBackup();
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAccess selectAccess();
@@ -42,4 +40,4 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,dWBve1ylUO6+Akr3XsVxtNn8nN8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,RmkKbHOjNgEzavjP6gknSyJlOAg=] */

@@ -79,12 +79,18 @@ public class FunctionSpace_String {
     @IDynamicResourceExtension.MethodId("50997b52-0aa8-11e9-b5db-cdf0b8dad9e4")
     public List<java.lang.String> distinct();
 
+    @IDynamicResourceExtension.MethodId("097160d4-d7bc-11ea-ae00-5518e944c256")
+    public java.lang.String toString();
+
   }
   
   public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("50997b52-0aa8-11e9-b5db-cdf0b8dad9e4")
     public List<java.lang.String> distinct(final List<java.lang.String> textLiteralList);
+
+    @IDynamicResourceExtension.MethodId("097160d4-d7bc-11ea-ae00-5518e944c256")
+    public java.lang.String toString(final java.lang.String textLiteral);
 
   }
   
@@ -99,6 +105,11 @@ public class FunctionSpace_String {
       return textLiteralList.stream().distinct().collect(java.util.stream.Collectors.toList());
     }
 
+    @Override
+    public java.lang.String toString(final java.lang.String textLiteral) {
+      return textLiteral;
+    }
+
   }
   
   public static class TextLiteralFunctions {
@@ -109,8 +120,12 @@ public class FunctionSpace_String {
       return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteralList).distinct(textLiteralList);
     }
 
+    public static java.lang.String toString(final java.lang.String textLiteral) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).toString(textLiteral);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,krPZ8VnNn0tSan6eZTG1GPusOaM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,1dZY6Nrg8L9ic9uZ5Pjf3QPKuTU=] */

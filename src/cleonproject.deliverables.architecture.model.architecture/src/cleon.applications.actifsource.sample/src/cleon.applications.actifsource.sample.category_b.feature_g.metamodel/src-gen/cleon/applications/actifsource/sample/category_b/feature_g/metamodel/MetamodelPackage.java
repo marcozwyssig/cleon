@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class MetamodelPackage {
   
   /* Begin Protected Region [[user]] */
-  
+
   /* End Protected Region   [[user]] */
   
   private MetamodelPackage() {}

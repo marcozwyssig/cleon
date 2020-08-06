@@ -8,8 +8,8 @@ public interface IDirectoryServiceForSystemConfiguration extends ch.actifsource.
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDirectoryServiceForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,8vqUIfdck3stjjj7fkMyfImcdm4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,mAwO+YeF21C+5Ii4VCAyTLs+QVo=] */

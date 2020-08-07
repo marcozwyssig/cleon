@@ -323,43 +323,55 @@
 		<db:title>Bausteinsicht</db:title>
 		<db:section xml:id="ea.ad4be5f2-285a-11e8-9af4-b7d7a3bbddc1">
 			<db:title>Ebene 1: Chess &lt;SoftwareSystem&gt; (Whitebox)</db:title>
-			<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Chess tabellarisch aufgelistet:</db:para>
-			<db:informaltable style="HERMES 5">
-				<db:col width="40%" />
-				<db:col width="70%" />
-				<db:thead>
-					<db:tr>
-						<db:th>Baustein</db:th>
-						<db:th>Zweck/Verantwortung</db:th>
-					</db:tr>
-				</db:thead>
-				<db:tbody>
-					<db:tr>
-						<db:td>
-							<db:para>Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
-						</db:td>
-						<db:td>
-							<db:para>purpose...</db:para>
-						</db:td>
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
-						</db:td>
-						<db:td>
-							<db:para>purpose...</db:para>
-						</db:td>
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>Test3 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af9f7205-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
-						</db:td>
-						<db:td>
-							<db:para>purpose...</db:para>
-						</db:td>
-					</db:tr>
-				</db:tbody>
-			</db:informaltable>
+			<db:section>
+				<db:title>Aggregation</db:title>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Chess in einer Abbildung dargestellt:</db:para>
+				<db:mediaobject>
+					<db:imageobject>
+						<db:imagedata fileref="..\..\img\cleon_architecturemethods_arc42_sample_arc42/BuildingBlockOverviewDiagram_Ebene_1__Chess__SoftwareSystem___Whitebox_.png" format="PNG"/>
+					</db:imageobject>
+				 	<db:caption>
+				    		<db:para>Ebene 1: Chess &lt;SoftwareSystem&gt; (Whitebox)</db:para>
+				  	</db:caption>
+				</db:mediaobject>
+				<db:para>Nachfolgend werden die enthaltenen Bausteine des Bausteins Chess tabellarisch aufgelistet:</db:para>
+				<db:informaltable style="HERMES 5">
+					<db:col width="40%" />
+					<db:col width="70%" />
+					<db:thead>
+						<db:tr>
+							<db:th>Baustein</db:th>
+							<db:th>Zweck/Verantwortung</db:th>
+						</db:tr>
+					</db:thead>
+					<db:tbody>
+						<db:tr>
+							<db:td>
+								<db:para>Test1 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+								<db:para>purpose...</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test2 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af2a41f8-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+								<db:para>purpose...</db:para>
+							</db:td>
+						</db:tr>
+						<db:tr>
+							<db:td>
+								<db:para>Test3 [<db:xref xrefstyle="custom-format:%n" xlink:href="#ea.af9f7205-285a-11e8-9af4-b7d7a3bbddc1"/>]</db:para>
+							</db:td>
+							<db:td>
+								<db:para>purpose...</db:para>
+							</db:td>
+						</db:tr>
+					</db:tbody>
+				</db:informaltable>
+			</db:section>
 			<db:section xml:id="ea.ae6bfbfb-285a-11e8-9af4-b7d7a3bbddc1">
 				<db:title>Test1 &lt;SampleBuildingBlock&gt; (Blackbox)</db:title>
 				<db:para>In diesem Kapitel werden die Blackbox Eigenschaften des Bausteins Test1 beschrieben.</db:para>

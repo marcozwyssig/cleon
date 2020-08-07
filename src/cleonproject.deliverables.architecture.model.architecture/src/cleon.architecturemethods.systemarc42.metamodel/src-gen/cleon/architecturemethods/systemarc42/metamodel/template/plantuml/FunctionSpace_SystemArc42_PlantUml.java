@@ -43,34 +43,6 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
   }
 
-  public static interface IBuildingBlockOverviewDiagramFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("65308749-0a93-11e9-9f72-e5610a9d4cd3")
-    public java.lang.String RenderUmlElement();
-
-    @IDynamicResourceExtension.MethodId("cdffa9f4-0a95-11e9-9f72-e5610a9d4cd3")
-    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock SelectWhitebox();
-
-  }
-  
-  public static interface IBuildingBlockOverviewDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class BuildingBlockOverviewDiagramFunctionsImpl implements IBuildingBlockOverviewDiagramFunctionsImpl {
-
-    public static final IBuildingBlockOverviewDiagramFunctionsImpl INSTANCE = new BuildingBlockOverviewDiagramFunctionsImpl();
-
-    private BuildingBlockOverviewDiagramFunctionsImpl() {}
-
-  }
-  
-  public static class BuildingBlockOverviewDiagramFunctions {
-
-    private BuildingBlockOverviewDiagramFunctions() {}
-
-  }
-
   public static interface IBuildingBlockDependenciesDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2507b706-0e17-11e9-8b4c-f9aec93d8b56")
@@ -287,4 +259,4 @@ public class FunctionSpace_SystemArc42_PlantUml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,+4R+AXT8JjXU10qGHhVe2H6E52E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f247dcd9-02db-11e9-9e58-33d596257b14,Yh3qy3juzZ6lbBWVzs4p7IBfuJk=] */

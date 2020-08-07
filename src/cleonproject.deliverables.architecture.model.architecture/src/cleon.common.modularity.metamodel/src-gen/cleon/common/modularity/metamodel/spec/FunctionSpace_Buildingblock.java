@@ -84,12 +84,6 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("f9141268-1b4b-11e9-9171-31a0f985a0be")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetInvertDependencies();
 
-    @IDynamicResourceExtension.MethodId("54d20256-035a-11e9-a251-e3767b78f69f")
-    public java.lang.String GetTypeName();
-
-    @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
-    public java.lang.String GetStereotypeName();
-
     @IDynamicResourceExtension.MethodId("eefb42b7-6dba-11ea-98d4-4d756e6b7091")
     public java.lang.String GetName();
 
@@ -102,6 +96,15 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("83992df6-bbb5-11ea-83bb-3d6d7d2cf439")
     public java.lang.String GetNameInParentheses();
 
+    @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
+    public java.lang.String GetStereotypeName();
+
+    @IDynamicResourceExtension.MethodId("54d20256-035a-11e9-a251-e3767b78f69f")
+    public java.lang.String GetTypeName();
+
+    @IDynamicResourceExtension.MethodId("4be2cbb2-d8a1-11ea-ae00-5518e944c256")
+    public java.lang.String GetIncludePath();
+
   }
   
   public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -111,6 +114,9 @@ public class FunctionSpace_Buildingblock {
 
     @IDynamicResourceExtension.MethodId("e9b270bf-8017-11ea-b039-9728191a5cdc")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList);
+
+    @IDynamicResourceExtension.MethodId("4be2cbb2-d8a1-11ea-ae00-5518e944c256")
+    public java.lang.String GetIncludePath(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock);
 
   }
   
@@ -137,6 +143,11 @@ public class FunctionSpace_Buildingblock {
       /* End Protected Region   [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
     }
 
+    @Override
+    public java.lang.String GetIncludePath(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock) {
+      return null;
+    }
+
   }
   
   public static class BuildingBlockFunctions {
@@ -149,6 +160,10 @@ public class FunctionSpace_Buildingblock {
 
     public static List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
       return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).OnlyNotDependingTo(buildingBlockList);
+    }
+
+    public static java.lang.String GetIncludePath(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock) {
+      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlock).GetIncludePath(buildingBlock);
     }
 
   }
@@ -292,4 +307,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,RfHjL498HSus4auDic+XuYPYTt4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,uWVlHujNsu2cOrMqg4mfdcrhP1Y=] */

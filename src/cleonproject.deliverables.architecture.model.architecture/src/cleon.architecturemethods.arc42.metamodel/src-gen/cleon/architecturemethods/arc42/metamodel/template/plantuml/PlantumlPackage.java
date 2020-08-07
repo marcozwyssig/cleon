@@ -6,6 +6,7 @@ public class PlantumlPackage {
   
   public static final Resource FunctionSpace_aE_PlantUml_DomainContextDiagram = new Resource("9bca65a6-eaab-11e8-88d3-bfc6b992bdec");
   public static final Resource FunctionSpace_aE_PlantUml_TechnicalContextDiagram = new Resource("6c4dbba7-eaaf-11e8-88d3-bfc6b992bdec");
+  public static final Resource BuildingBlockOverviewDiagram__T_puml_Whitebox = new Resource("a302b881-d8a1-11ea-ae00-5518e944c256");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class PlantumlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.plantuml,D+R5oOIX+8qRHjilqwiWd7XidlI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.plantuml,Tp7jq5rrLPcrb5pRcJy/W9ZZNxE=] */

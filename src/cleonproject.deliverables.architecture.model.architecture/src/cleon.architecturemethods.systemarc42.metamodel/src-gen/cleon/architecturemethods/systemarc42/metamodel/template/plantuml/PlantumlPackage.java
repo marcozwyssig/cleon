@@ -5,7 +5,6 @@ import ch.actifsource.core.Resource;
 public class PlantumlPackage {
   
   public static final Resource FunctionSpace_aE_SystemArc42_aE_PlantUml_BuildingBlockSystemOverviewDiagram = new Resource("f74bbd83-02db-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemArc42_aE_PlantUml_BuildingBlockOverviewDiagram = new Resource("652f9c41-0a93-11e9-9f72-e5610a9d4cd3");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_PlantUml_BuildingBlockDependenciesDiagram = new Resource("1bc235c7-0e17-11e9-8b4c-f9aec93d8b56");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_PlantUml_SegmentationDiagram = new Resource("61ca68ca-0e23-11e9-8b4c-f9aec93d8b56");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_PlantUml_Zone = new Resource("207fd27f-0e24-11e9-8b4c-f9aec93d8b56");
@@ -33,4 +32,4 @@ public class PlantumlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.plantuml,whPwTPeWl2fKzmx5febkIjvaAEs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.plantuml,Y4P+dR4ebV7sIztBVgSu9pIe4RY=] */

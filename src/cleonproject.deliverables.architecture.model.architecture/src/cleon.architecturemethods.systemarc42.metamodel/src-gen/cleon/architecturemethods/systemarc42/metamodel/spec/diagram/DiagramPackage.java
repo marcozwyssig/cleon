@@ -6,7 +6,6 @@ public class DiagramPackage {
   
   public static final Resource BuildingBlockSystemOverviewDiagram = new Resource("dec338dd-02db-11e9-9e58-33d596257b14");
   public static final Resource BuildingBlockSystemOverviewDiagram_system = new Resource("9dbe8f44-02dd-11e9-9e58-33d596257b14");
-  public static final Resource BuildingBlockOverviewDiagram = new Resource("5cf9b709-0a93-11e9-9f72-e5610a9d4cd3");
   public static final Resource DeploymentDiagram = new Resource("1cf628c3-0aa0-11e9-8a91-633e556ac68f");
   public static final Resource BuildingBlockDependenciesDiagram = new Resource("0091c2c7-0e17-11e9-8b4c-f9aec93d8b56");
   public static final Resource SegmentationDiagram = new Resource("46777a52-0e23-11e9-8b4c-f9aec93d8b56");
@@ -33,4 +32,4 @@ public class DiagramPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.diagram,nw3EUNL8fcnY8gw/EwOt7Fxncj0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec.diagram,X56Pz1rVcPI9nLvKtnQXAVJJNX8=] */

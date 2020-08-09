@@ -155,8 +155,8 @@ public class MonitoringBuildingBlock extends DynamicResource implements IMonitor
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> selectToMeBuildingblockToMonitor(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlock_buildingblockToMonitor, object.getResource());
+  public static cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock selectToMeBuildingblockToMonitor(cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.BuildingblocksPackage.MonitoringBuildingBlock_buildingblockToMonitor, object.getResource());
   }
   
   public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> selectToMeBasedOn(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock object) {
@@ -168,4 +168,4 @@ public class MonitoringBuildingBlock extends DynamicResource implements IMonitor
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,0reH0QGIXRsj+va3dHIGY0v5zBg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,ykRoNuNR1GecSX49ERlV/xKW66Y=] */

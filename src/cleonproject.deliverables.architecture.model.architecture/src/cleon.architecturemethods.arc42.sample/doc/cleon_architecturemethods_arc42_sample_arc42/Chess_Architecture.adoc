@@ -50,25 +50,36 @@ Player__F_A -down-> Chess : interaces
 Player__F_B -down-> Chess : interacts
 Player__F_B -down-> Chess : interaces
 ...
-In diesem Kapitel werden die Aktoren (Actor) und Nachbarsysteme (Neighboring) des betrachteten Systems (Chess) aufgeführt. 
-
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
-
-[cols="5,10a" options="header"]
+[cols="40,60a" options="header"]
 |====
-|Name | Beschreibung
+|Aktor | Beschreibung
 |Player A
-|
-|====
 |Player B
-|
 |====
-
-Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern.
-
-[cols="5,5,5,5,10a" options="header"]
+Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen allen Teilnehmern und dem System.
+[cols="15,15,20,50a" options="header"]
 |====
-|Von | Zu | Interaktion | Richtung | Beschreibung
+|Von | Zu | Interaktion | Beschreibung
+|Chess
+|Player A
+|gets
+|Player A
+|Chess
+|interacts
+
+|Player A
+|Chess
+|interaces
+
+|Player B
+|Chess
+|interacts
+
+|Player B
+|Chess
+|interaces
+
 |====
 
 === Technischer Kontext

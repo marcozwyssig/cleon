@@ -110,7 +110,7 @@ public class HostImportWizardAspect implements IGenericImportWizardAspect {
 						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
 								TopologyPackage.AbstractHost_instanceOf, systemConfiguration.getResource());
 						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
-								TopologyPackage.AbstractNumberedHost_number,
+								TopologyPackage.AbstractNumberAware_number,
 								LiteralUtil.create(Integer.valueOf(number)));
 						Update.createStatement(context.getWriteJobExecutor(), context.getPackage(), hostObject,
 								DescriptionsPackage.SimpleDescription_descriptions, LiteralUtil.create(description));

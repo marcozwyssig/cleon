@@ -71,10 +71,10 @@ public class sites__T_yaml {
       }
 
       final String hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), abstractHost.getResource()); 
-      final String firstLetter = hostName.substring(hostName.length() - 2);
+      final char firstLetter = hostName.charAt(hostName.length() - 2);
       final String siteName = site.selectName().toUpperCase().replace('X', '6');
 
-      if(firstLetter.equals("0") ) {
+      if(firstLetter == '0') {
       	return "PRP-" + siteName + "-BABS-00";
       } else {
       	return "PRP-" + siteName + "-BABS-10";

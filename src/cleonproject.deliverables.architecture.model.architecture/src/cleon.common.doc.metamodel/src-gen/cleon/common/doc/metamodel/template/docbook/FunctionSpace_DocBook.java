@@ -222,6 +222,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("221b5218-dbc4-11ea-b71c-ade06d3dafe4")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IChapterReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ChapterReferenceFunctionsImpl implements IChapterReferenceFunctionsImpl {
+
+    public static final IChapterReferenceFunctionsImpl INSTANCE = new ChapterReferenceFunctionsImpl();
+
+    private ChapterReferenceFunctionsImpl() {}
+
+  }
+  
+  public static class ChapterReferenceFunctions {
+
+    private ChapterReferenceFunctions() {}
+
+  }
+
   public static interface INumberedListFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("619f53cf-3df2-11e6-9bf8-29c5fda07fa3")
@@ -867,4 +892,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,Oc0KyhLALokJve45lL6DQpMVS0E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,185v+mOrOGOFBmhb5uzQBbwXkCg=] */

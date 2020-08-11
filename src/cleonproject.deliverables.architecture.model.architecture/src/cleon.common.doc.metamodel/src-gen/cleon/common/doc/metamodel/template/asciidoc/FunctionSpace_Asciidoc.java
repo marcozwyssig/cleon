@@ -115,6 +115,31 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IChapterReferenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b627b635-dbc4-11ea-b71c-ade06d3dafe4")
+    public java.lang.String RenderContent();
+
+  }
+  
+  public static interface IChapterReferenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ChapterReferenceFunctionsImpl implements IChapterReferenceFunctionsImpl {
+
+    public static final IChapterReferenceFunctionsImpl INSTANCE = new ChapterReferenceFunctionsImpl();
+
+    private ChapterReferenceFunctionsImpl() {}
+
+  }
+  
+  public static class ChapterReferenceFunctions {
+
+    private ChapterReferenceFunctions() {}
+
+  }
+
   public static interface INumberedListFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("889d84ac-d882-11e4-a5d6-b92b0ce88839")
@@ -722,4 +747,4 @@ public class FunctionSpace_Asciidoc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,qOeZkvcSSWPTMA4inwsPfboLVcQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,BiMRUl9fo2Y0XNmM4ddoWwAMPQE=] */

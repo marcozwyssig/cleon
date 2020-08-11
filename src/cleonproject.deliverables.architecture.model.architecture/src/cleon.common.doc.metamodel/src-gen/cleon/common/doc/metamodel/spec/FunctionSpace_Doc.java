@@ -29,6 +29,9 @@ public class FunctionSpace_Doc {
     @IDynamicResourceExtension.MethodId("1dc27d5b-084d-11e9-9ee8-c54fda7ab431")
     public cleon.common.doc.metamodel.spec.document.javamodel.IDocument GetDocument();
 
+    @IDynamicResourceExtension.MethodId("add97812-dbc2-11ea-b71c-ade06d3dafe4")
+    public List<cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> AllChildren();
+
   }
   
   public static interface IDocumentElementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -178,4 +181,4 @@ public class FunctionSpace_Doc {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,9+oX15AOj++qMhuuwwgUT16BBSA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,bL6tjCvIo8+sBlXhHMOqxgSqOjM=] */

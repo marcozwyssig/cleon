@@ -1,8 +1,11 @@
 package cleon.architecturemethods.arc42.metamodel.template.docbook;
 
+import ch.actifsource.util.Assert;
 import java.util.List;
+import ch.actifsource.core.dynamic.DynamicResourceUtil;
 import ch.actifsource.core.dynamic.IDynamicResourceExtension;
 import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
+import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,imports]] */
 
@@ -10,575 +13,604 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 
 public class FunctionSpace_arc42_Docbook {
 
-	/* Begin Protected Region [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
+  /* Begin Protected Region [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
 
-	/* End Protected Region   [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
+  /* End Protected Region   [[de7c9bb2-d17f-11e8-b18f-df1540bb7a5c]] */
 
 
-	public interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
+  public static interface ISystem_Scope_and_ContextFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("de7c9bfc-d17f-11e8-b18f-df1540bb7a5c") java.lang.String RenderContentElement();
+    @IDynamicResourceExtension.MethodId("de7c9bfc-d17f-11e8-b18f-df1540bb7a5c")
+    public java.lang.String RenderContentElement();
 
-	}
+  }
+  
+  public static interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
 
-	public interface ISystem_Scope_and_ContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
 
-	}
+    private System_Scope_and_ContextFunctionsImpl() {}
 
-	public static class System_Scope_and_ContextFunctionsImpl implements ISystem_Scope_and_ContextFunctionsImpl {
+  }
+  
+  public static class System_Scope_and_ContextFunctions {
 
-		public static final ISystem_Scope_and_ContextFunctionsImpl INSTANCE = new System_Scope_and_ContextFunctionsImpl();
+    private System_Scope_and_ContextFunctions() {}
 
-		private System_Scope_and_ContextFunctionsImpl() {}
+  }
 
-	}
+  public static interface IDomainContextFunctions extends IDynamicResourceExtension {
 
-	public static class System_Scope_and_ContextFunctions {
+    @IDynamicResourceExtension.MethodId("3665f130-043c-11e9-bb22-3f676e869eaa")
+    public java.lang.String RenderContentElement();
 
-		private System_Scope_and_ContextFunctions() {}
+  }
+  
+  public static interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DomainContextFunctionsImpl implements IDomainContextFunctionsImpl {
 
-	}
+    public static final IDomainContextFunctionsImpl INSTANCE = new DomainContextFunctionsImpl();
 
-	public interface IDomainContextFunctions extends IDynamicResourceExtension {
+    private DomainContextFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("3665f130-043c-11e9-bb22-3f676e869eaa") java.lang.String RenderContentElement();
+  }
+  
+  public static class DomainContextFunctions {
 
-	}
+    private DomainContextFunctions() {}
 
-	public interface IDomainContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface ITechnicalContextFunctions extends IDynamicResourceExtension {
 
-	public static class DomainContextFunctionsImpl implements IDomainContextFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("519056bd-0441-11e9-bb22-3f676e869eaa")
+    public java.lang.String RenderContentElement();
 
-		public static final IDomainContextFunctionsImpl INSTANCE = new DomainContextFunctionsImpl();
+    @IDynamicResourceExtension.MethodId("3461413d-61c2-11ea-b250-8d3b1d076722")
+    public java.lang.String Old_RenderContentElement();
 
-		private DomainContextFunctionsImpl() {}
+  }
+  
+  public static interface ITechnicalContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TechnicalContextFunctionsImpl implements ITechnicalContextFunctionsImpl {
 
-	}
+    public static final ITechnicalContextFunctionsImpl INSTANCE = new TechnicalContextFunctionsImpl();
 
-	public static class DomainContextFunctions {
+    private TechnicalContextFunctionsImpl() {}
 
-		private DomainContextFunctions() {}
+  }
+  
+  public static class TechnicalContextFunctions {
 
-	}
+    private TechnicalContextFunctions() {}
 
-	public interface ITechnicalContextFunctions extends IDynamicResourceExtension {
+  }
 
-		@IDynamicResourceExtension.MethodId("519056bd-0441-11e9-bb22-3f676e869eaa") java.lang.String RenderContentElement();
+  public static interface IDecompositionBuildingBlockFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("3461413d-61c2-11ea-b250-8d3b1d076722") java.lang.String Old_RenderContentElement();
+    @IDynamicResourceExtension.MethodId("de7cc46d-d17f-11e8-b18f-df1540bb7a5c")
+    public java.lang.String RenderTitle();
 
-	}
+  }
+  
+  public static interface IDecompositionBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DecompositionBuildingBlockFunctionsImpl implements IDecompositionBuildingBlockFunctionsImpl {
 
-	public interface ITechnicalContextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final IDecompositionBuildingBlockFunctionsImpl INSTANCE = new DecompositionBuildingBlockFunctionsImpl();
 
-	}
+    private DecompositionBuildingBlockFunctionsImpl() {}
 
-	public static class TechnicalContextFunctionsImpl implements ITechnicalContextFunctionsImpl {
+  }
+  
+  public static class DecompositionBuildingBlockFunctions {
 
-		public static final ITechnicalContextFunctionsImpl INSTANCE = new TechnicalContextFunctionsImpl();
+    private DecompositionBuildingBlockFunctions() {}
 
-		private TechnicalContextFunctionsImpl() {}
+  }
 
-	}
+  public static interface IDeploymentViewFunctions extends IDynamicResourceExtension {
 
-	public static class TechnicalContextFunctions {
+    @IDynamicResourceExtension.MethodId("4da38b16-d181-11e8-b18f-df1540bb7a5c")
+    public java.lang.String RenderChapters();
 
-		private TechnicalContextFunctions() {}
+  }
+  
+  public static interface IDeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentViewFunctionsImpl implements IDeploymentViewFunctionsImpl {
 
-	}
+    public static final IDeploymentViewFunctionsImpl INSTANCE = new DeploymentViewFunctionsImpl();
 
-	public interface IDecompositionBuildingBlockFunctions extends IDynamicResourceExtension {
+    private DeploymentViewFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("de7cc46d-d17f-11e8-b18f-df1540bb7a5c") java.lang.String RenderTitle();
+  }
+  
+  public static class DeploymentViewFunctions {
 
-	}
+    private DeploymentViewFunctions() {}
 
-	public interface IDecompositionBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface IIntroductionAndGoalsFunctions extends IDynamicResourceExtension {
 
-	public static class DecompositionBuildingBlockFunctionsImpl implements IDecompositionBuildingBlockFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("b31330c7-eaa6-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderChapters();
 
-		public static final IDecompositionBuildingBlockFunctionsImpl INSTANCE = new DecompositionBuildingBlockFunctionsImpl();
+  }
+  
+  public static interface IIntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class IntroductionAndGoalsFunctionsImpl implements IIntroductionAndGoalsFunctionsImpl {
 
-		private DecompositionBuildingBlockFunctionsImpl() {}
+    public static final IIntroductionAndGoalsFunctionsImpl INSTANCE = new IntroductionAndGoalsFunctionsImpl();
 
-	}
+    private IntroductionAndGoalsFunctionsImpl() {}
 
-	public static class DecompositionBuildingBlockFunctions {
+  }
+  
+  public static class IntroductionAndGoalsFunctions {
 
-		private DecompositionBuildingBlockFunctions() {}
+    private IntroductionAndGoalsFunctions() {}
 
-	}
+  }
 
-	public interface IDeploymentViewFunctions extends IDynamicResourceExtension {
+  public static interface IQualityGoalsFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("4da38b16-d181-11e8-b18f-df1540bb7a5c") java.lang.String RenderChapters();
+    @IDynamicResourceExtension.MethodId("004722f8-eaa7-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
 
-	}
+  }
+  
+  public static interface IQualityGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QualityGoalsFunctionsImpl implements IQualityGoalsFunctionsImpl {
 
-	public interface IDeploymentViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final IQualityGoalsFunctionsImpl INSTANCE = new QualityGoalsFunctionsImpl();
 
-	}
+    private QualityGoalsFunctionsImpl() {}
 
-	public static class DeploymentViewFunctionsImpl implements IDeploymentViewFunctionsImpl {
+  }
+  
+  public static class QualityGoalsFunctions {
 
-		public static final IDeploymentViewFunctionsImpl INSTANCE = new DeploymentViewFunctionsImpl();
+    private QualityGoalsFunctions() {}
 
-		private DeploymentViewFunctionsImpl() {}
+  }
 
-	}
+  public static interface IRequirementsFunctions extends IDynamicResourceExtension {
 
-	public static class DeploymentViewFunctions {
+    @IDynamicResourceExtension.MethodId("20923ca8-eaa8-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
 
-		private DeploymentViewFunctions() {}
+  }
+  
+  public static interface IRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RequirementsFunctionsImpl implements IRequirementsFunctionsImpl {
 
-	}
+    public static final IRequirementsFunctionsImpl INSTANCE = new RequirementsFunctionsImpl();
 
-	public interface IIntroductionAndGoalsFunctions extends IDynamicResourceExtension {
+    private RequirementsFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("b31330c7-eaa6-11e8-88d3-bfc6b992bdec") java.lang.String RenderChapters();
+  }
+  
+  public static class RequirementsFunctions {
 
-	}
+    private RequirementsFunctions() {}
 
-	public interface IIntroductionAndGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface ITechnicalConstraintsFunctions extends IDynamicResourceExtension {
 
-	public static class IntroductionAndGoalsFunctionsImpl implements IIntroductionAndGoalsFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("0d8199df-eaa9-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
 
-		public static final IIntroductionAndGoalsFunctionsImpl INSTANCE = new IntroductionAndGoalsFunctionsImpl();
+  }
+  
+  public static interface ITechnicalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TechnicalConstraintsFunctionsImpl implements ITechnicalConstraintsFunctionsImpl {
 
-		private IntroductionAndGoalsFunctionsImpl() {}
+    public static final ITechnicalConstraintsFunctionsImpl INSTANCE = new TechnicalConstraintsFunctionsImpl();
 
-	}
+    private TechnicalConstraintsFunctionsImpl() {}
 
-	public static class IntroductionAndGoalsFunctions {
+  }
+  
+  public static class TechnicalConstraintsFunctions {
 
-		private IntroductionAndGoalsFunctions() {}
+    private TechnicalConstraintsFunctions() {}
 
-	}
+  }
 
-	public interface IQualityGoalsFunctions extends IDynamicResourceExtension {
+  public static interface IOrganizationalConstraintsFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("004722f8-eaa7-11e8-88d3-bfc6b992bdec") java.lang.String RenderContentElement();
+    @IDynamicResourceExtension.MethodId("13aff001-eaa9-11e8-88d3-bfc6b992bdec")
+    public java.lang.String RenderContentElement();
 
-	}
+  }
+  
+  public static interface IOrganizationalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class OrganizationalConstraintsFunctionsImpl implements IOrganizationalConstraintsFunctionsImpl {
 
-	public interface IQualityGoalsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final IOrganizationalConstraintsFunctionsImpl INSTANCE = new OrganizationalConstraintsFunctionsImpl();
 
-	}
+    private OrganizationalConstraintsFunctionsImpl() {}
 
-	public static class QualityGoalsFunctionsImpl implements IQualityGoalsFunctionsImpl {
+  }
+  
+  public static class OrganizationalConstraintsFunctions {
 
-		public static final IQualityGoalsFunctionsImpl INSTANCE = new QualityGoalsFunctionsImpl();
+    private OrganizationalConstraintsFunctions() {}
 
-		private QualityGoalsFunctionsImpl() {}
+  }
 
-	}
+  public static interface IDecisionTopicFunctions extends IDynamicResourceExtension {
 
-	public static class QualityGoalsFunctions {
+    @IDynamicResourceExtension.MethodId("0cc8ae11-ed68-11e8-8628-792e8e0b10f3")
+    public java.lang.String RenderContentElement();
 
-		private QualityGoalsFunctions() {}
+  }
+  
+  public static interface IDecisionTopicFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DecisionTopicFunctionsImpl implements IDecisionTopicFunctionsImpl {
 
-	}
+    public static final IDecisionTopicFunctionsImpl INSTANCE = new DecisionTopicFunctionsImpl();
 
-	public interface IRequirementsFunctions extends IDynamicResourceExtension {
+    private DecisionTopicFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("20923ca8-eaa8-11e8-88d3-bfc6b992bdec") java.lang.String RenderContentElement();
+  }
+  
+  public static class DecisionTopicFunctions {
 
-	}
+    private DecisionTopicFunctions() {}
 
-	public interface IRequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface IWhiteboxFunctions extends IDynamicResourceExtension {
 
-	public static class RequirementsFunctionsImpl implements IRequirementsFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb")
+    public java.lang.String RenderContentElement();
 
-		public static final IRequirementsFunctionsImpl INSTANCE = new RequirementsFunctionsImpl();
+    @IDynamicResourceExtension.MethodId("47549860-7edd-11ea-9262-7b7e0e9cb204")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
-		private RequirementsFunctionsImpl() {}
+    @IDynamicResourceExtension.MethodId("f0930eda-d5a9-11ea-96bb-39ddde1b696a")
+    public java.lang.String RenderDescriptions();
 
-	}
+    @IDynamicResourceExtension.MethodId("20b43820-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderChapters();
 
-	public static class RequirementsFunctions {
+    @IDynamicResourceExtension.MethodId("4e59db8a-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderAdditionalChapters();
 
-		private RequirementsFunctions() {}
+    @IDynamicResourceExtension.MethodId("cffa0fb1-d7dc-11ea-ae00-5518e944c256")
+    public java.lang.String RenderProduct();
 
-	}
+  }
+  
+  public static interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
 
-	public interface ITechnicalConstraintsFunctions extends IDynamicResourceExtension {
+    public static final IWhiteboxFunctionsImpl INSTANCE = new WhiteboxFunctionsImpl();
 
-		@IDynamicResourceExtension.MethodId("0d8199df-eaa9-11e8-88d3-bfc6b992bdec") java.lang.String RenderContentElement();
+    private WhiteboxFunctionsImpl() {}
 
-	}
+  }
+  
+  public static class WhiteboxFunctions {
 
-	public interface ITechnicalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    private WhiteboxFunctions() {}
 
-	}
+  }
 
-	public static class TechnicalConstraintsFunctionsImpl implements ITechnicalConstraintsFunctionsImpl {
+  public static interface IBlackboxFunctions extends IDynamicResourceExtension {
 
-		public static final ITechnicalConstraintsFunctionsImpl INSTANCE = new TechnicalConstraintsFunctionsImpl();
+    @IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da")
+    public java.lang.String RenderContentElement();
 
-		private TechnicalConstraintsFunctionsImpl() {}
+  }
+  
+  public static interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BlackboxFunctionsImpl implements IBlackboxFunctionsImpl {
 
-	}
+    public static final IBlackboxFunctionsImpl INSTANCE = new BlackboxFunctionsImpl();
 
-	public static class TechnicalConstraintsFunctions {
+    private BlackboxFunctionsImpl() {}
 
-		private TechnicalConstraintsFunctions() {}
+  }
+  
+  public static class BlackboxFunctions {
 
-	}
+    private BlackboxFunctions() {}
 
-	public interface IOrganizationalConstraintsFunctions extends IDynamicResourceExtension {
+  }
 
-		@IDynamicResourceExtension.MethodId("13aff001-eaa9-11e8-88d3-bfc6b992bdec") java.lang.String RenderContentElement();
+  public static interface IProductViewFunctions extends IDynamicResourceExtension {
 
-	}
+    @IDynamicResourceExtension.MethodId("3e5368c9-092e-11e9-8c40-11db3668c0c9")
+    public java.lang.String RenderContentElement();
 
-	public interface IOrganizationalConstraintsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
+  
+  public static interface IProductViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProductViewFunctionsImpl implements IProductViewFunctionsImpl {
 
-	}
+    public static final IProductViewFunctionsImpl INSTANCE = new ProductViewFunctionsImpl();
 
-	public static class OrganizationalConstraintsFunctionsImpl implements IOrganizationalConstraintsFunctionsImpl {
+    private ProductViewFunctionsImpl() {}
 
-		public static final IOrganizationalConstraintsFunctionsImpl INSTANCE = new OrganizationalConstraintsFunctionsImpl();
+  }
+  
+  public static class ProductViewFunctions {
 
-		private OrganizationalConstraintsFunctionsImpl() {}
+    private ProductViewFunctions() {}
 
-	}
+  }
 
-	public static class OrganizationalConstraintsFunctions {
+  public static interface IProductAwareFunctions extends IDynamicResourceExtension {
 
-		private OrganizationalConstraintsFunctions() {}
+    @IDynamicResourceExtension.MethodId("68ac1faa-0a76-11e9-9915-0d353533f3da")
+    public java.lang.String RenderProduct();
 
-	}
+  }
+  
+  public static interface IProductAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProductAwareFunctionsImpl implements IProductAwareFunctionsImpl {
 
-	public interface IDecisionTopicFunctions extends IDynamicResourceExtension {
+    public static final IProductAwareFunctionsImpl INSTANCE = new ProductAwareFunctionsImpl();
 
-		@IDynamicResourceExtension.MethodId("0cc8ae11-ed68-11e8-8628-792e8e0b10f3") java.lang.String RenderContentElement();
+    private ProductAwareFunctionsImpl() {}
 
-	}
+  }
+  
+  public static class ProductAwareFunctions {
 
-	public interface IDecisionTopicFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    private ProductAwareFunctions() {}
 
-	}
+  }
 
-	public static class DecisionTopicFunctionsImpl implements IDecisionTopicFunctionsImpl {
+  public static interface IBlackbox_DependenciesFunctions extends IDynamicResourceExtension {
 
-		public static final IDecisionTopicFunctionsImpl INSTANCE = new DecisionTopicFunctionsImpl();
+    @IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderContentElement();
 
-		private DecisionTopicFunctionsImpl() {}
+  }
+  
+  public static interface IBlackbox_DependenciesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Blackbox_DependenciesFunctionsImpl implements IBlackbox_DependenciesFunctionsImpl {
 
-	}
+    public static final IBlackbox_DependenciesFunctionsImpl INSTANCE = new Blackbox_DependenciesFunctionsImpl();
 
-	public static class DecisionTopicFunctions {
+    private Blackbox_DependenciesFunctionsImpl() {}
 
-		private DecisionTopicFunctions() {}
+  }
+  
+  public static class Blackbox_DependenciesFunctions {
 
-	}
+    private Blackbox_DependenciesFunctions() {}
 
-	public interface IWhiteboxFunctions extends IDynamicResourceExtension {
+  }
 
-		@IDynamicResourceExtension.MethodId("534df0ee-ee3e-11e8-9756-27a593be2ffb") java.lang.String RenderContentElement();
+  public static interface IBlackbox_RequirementsFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("47549860-7edd-11ea-9262-7b7e0e9cb204") List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    @IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026")
+    public java.lang.String RenderContentElement();
 
-		@IDynamicResourceExtension.MethodId("f0930eda-d5a9-11ea-96bb-39ddde1b696a") java.lang.String RenderDescriptions();
+  }
+  
+  public static interface IBlackbox_RequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Blackbox_RequirementsFunctionsImpl implements IBlackbox_RequirementsFunctionsImpl {
 
-		@IDynamicResourceExtension.MethodId("20b43820-d7dc-11ea-ae00-5518e944c256") java.lang.String RenderChapters();
+    public static final IBlackbox_RequirementsFunctionsImpl INSTANCE = new Blackbox_RequirementsFunctionsImpl();
 
-		@IDynamicResourceExtension.MethodId("4e59db8a-d7dc-11ea-ae00-5518e944c256") java.lang.String RenderAdditionalChapters();
+    private Blackbox_RequirementsFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("cffa0fb1-d7dc-11ea-ae00-5518e944c256") java.lang.String RenderProduct();
+  }
+  
+  public static class Blackbox_RequirementsFunctions {
 
-	}
+    private Blackbox_RequirementsFunctions() {}
 
-	public interface IWhiteboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface IBuildingBlockRequirementCoverageFunctions extends IDynamicResourceExtension {
 
-	public static class WhiteboxFunctionsImpl implements IWhiteboxFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("1be1942b-1bf0-11e9-a649-37e63f24427a")
+    public java.lang.String RenderCoverageName();
 
-		public static final IWhiteboxFunctionsImpl INSTANCE = new WhiteboxFunctionsImpl();
+  }
+  
+  public static interface IBuildingBlockRequirementCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockRequirementCoverageFunctionsImpl implements IBuildingBlockRequirementCoverageFunctionsImpl {
 
-		private WhiteboxFunctionsImpl() {}
+    public static final IBuildingBlockRequirementCoverageFunctionsImpl INSTANCE = new BuildingBlockRequirementCoverageFunctionsImpl();
 
-	}
+    private BuildingBlockRequirementCoverageFunctionsImpl() {}
 
-	public static class WhiteboxFunctions {
+  }
+  
+  public static class BuildingBlockRequirementCoverageFunctions {
 
-		private WhiteboxFunctions() {}
+    private BuildingBlockRequirementCoverageFunctions() {}
 
-	}
+  }
 
-	public interface IBlackboxFunctions extends IDynamicResourceExtension {
+  public static interface IMonitorViewFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("c4ea78ec-0a9b-11e9-9915-0d353533f3da") java.lang.String RenderContentElement();
+    @IDynamicResourceExtension.MethodId("3048a09a-cce3-11ea-8b73-6b1c6b53a7a6")
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
 
-	}
+  }
+  
+  public static interface IMonitorViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitorViewFunctionsImpl implements IMonitorViewFunctionsImpl {
 
-	public interface IBlackboxFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final IMonitorViewFunctionsImpl INSTANCE = new MonitorViewFunctionsImpl();
 
-	}
+    private MonitorViewFunctionsImpl() {}
 
-	public static class BlackboxFunctionsImpl implements IBlackboxFunctionsImpl {
+  }
+  
+  public static class MonitorViewFunctions {
 
-		public static final IBlackboxFunctionsImpl INSTANCE = new BlackboxFunctionsImpl();
+    private MonitorViewFunctions() {}
 
-		private BlackboxFunctionsImpl() {}
+  }
 
-	}
+  public static interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
-	public static class BlackboxFunctions {
+    @IDynamicResourceExtension.MethodId("5e7faeaa-cce3-11ea-8b73-6b1c6b53a7a6")
+    public java.lang.String RenderContentElement();
 
-		private BlackboxFunctions() {}
+  }
+  
+  public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
 
-	}
+    public static final IMonitoringBuildingBlockFunctionsImpl INSTANCE = new MonitoringBuildingBlockFunctionsImpl();
 
-	public interface IProductViewFunctions extends IDynamicResourceExtension {
+    private MonitoringBuildingBlockFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("3e5368c9-092e-11e9-8c40-11db3668c0c9") java.lang.String RenderContentElement();
+  }
+  
+  public static class MonitoringBuildingBlockFunctions {
 
-	}
+    private MonitoringBuildingBlockFunctions() {}
 
-	public interface IProductViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  }
 
-	}
+  public static interface IMonitoringFunctions extends IDynamicResourceExtension {
 
-	public static class ProductViewFunctionsImpl implements IProductViewFunctionsImpl {
+    @IDynamicResourceExtension.MethodId("6055e404-c73f-11ea-9c12-5371f8bad411")
+    public java.lang.String RenderContentElement();
 
-		public static final IProductViewFunctionsImpl INSTANCE = new ProductViewFunctionsImpl();
+  }
+  
+  public static interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
 
-		private ProductViewFunctionsImpl() {}
+    public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
 
-	}
+    private MonitoringFunctionsImpl() {}
 
-	public static class ProductViewFunctions {
+  }
+  
+  public static class MonitoringFunctions {
 
-		private ProductViewFunctions() {}
+    private MonitoringFunctions() {}
 
-	}
+  }
 
-	public interface IProductAwareFunctions extends IDynamicResourceExtension {
+  public static interface IComponentCompositionFunctions extends IDynamicResourceExtension {
 
-		@IDynamicResourceExtension.MethodId("68ac1faa-0a76-11e9-9915-0d353533f3da") java.lang.String RenderProduct();
+    @IDynamicResourceExtension.MethodId("8e268623-ccf3-11ea-8b73-6b1c6b53a7a6")
+    public java.lang.String RenderComponents();
 
-	}
+  }
+  
+  public static interface IComponentCompositionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ComponentCompositionFunctionsImpl implements IComponentCompositionFunctionsImpl {
 
-	public interface IProductAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    public static final IComponentCompositionFunctionsImpl INSTANCE = new ComponentCompositionFunctionsImpl();
 
-	}
+    private ComponentCompositionFunctionsImpl() {}
 
-	public static class ProductAwareFunctionsImpl implements IProductAwareFunctionsImpl {
+  }
+  
+  public static class ComponentCompositionFunctions {
 
-		public static final IProductAwareFunctionsImpl INSTANCE = new ProductAwareFunctionsImpl();
+    private ComponentCompositionFunctions() {}
 
-		private ProductAwareFunctionsImpl() {}
+  }
 
-	}
+  public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
-	public static class ProductAwareFunctions {
+    @IDynamicResourceExtension.MethodId("6529eb1f-d574-11ea-9bae-37ef2cb951a8")
+    public java.lang.String RenderBlackboxReference();
 
-		private ProductAwareFunctions() {}
+  }
+  
+  public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
 
-	}
+    public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
 
-	public interface IBlackbox_DependenciesFunctions extends IDynamicResourceExtension {
+    private BuildingBlockFunctionsImpl() {}
 
-		@IDynamicResourceExtension.MethodId("e7072d5e-0205-11e9-9c9d-8d52d6745026") java.lang.String RenderContentElement();
+  }
+  
+  public static class BuildingBlockFunctions {
 
-	}
+    private BuildingBlockFunctions() {}
 
-	public interface IBlackbox_DependenciesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class Blackbox_DependenciesFunctionsImpl implements IBlackbox_DependenciesFunctionsImpl {
-
-		public static final IBlackbox_DependenciesFunctionsImpl INSTANCE = new Blackbox_DependenciesFunctionsImpl();
-
-		private Blackbox_DependenciesFunctionsImpl() {}
-
-	}
-
-	public static class Blackbox_DependenciesFunctions {
-
-		private Blackbox_DependenciesFunctions() {}
-
-	}
-
-	public interface IBlackbox_RequirementsFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("778aae8d-0205-11e9-9c9d-8d52d6745026") java.lang.String RenderContentElement();
-
-	}
-
-	public interface IBlackbox_RequirementsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class Blackbox_RequirementsFunctionsImpl implements IBlackbox_RequirementsFunctionsImpl {
-
-		public static final IBlackbox_RequirementsFunctionsImpl INSTANCE = new Blackbox_RequirementsFunctionsImpl();
-
-		private Blackbox_RequirementsFunctionsImpl() {}
-
-	}
-
-	public static class Blackbox_RequirementsFunctions {
-
-		private Blackbox_RequirementsFunctions() {}
-
-	}
-
-	public interface IBuildingBlockRequirementCoverageFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("1be1942b-1bf0-11e9-a649-37e63f24427a") java.lang.String RenderCoverageName();
-
-	}
-
-	public interface IBuildingBlockRequirementCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class BuildingBlockRequirementCoverageFunctionsImpl implements IBuildingBlockRequirementCoverageFunctionsImpl {
-
-		public static final IBuildingBlockRequirementCoverageFunctionsImpl INSTANCE = new BuildingBlockRequirementCoverageFunctionsImpl();
-
-		private BuildingBlockRequirementCoverageFunctionsImpl() {}
-
-	}
-
-	public static class BuildingBlockRequirementCoverageFunctions {
-
-		private BuildingBlockRequirementCoverageFunctions() {}
-
-	}
-
-	public interface IMonitorViewFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("3048a09a-cce3-11ea-8b73-6b1c6b53a7a6") List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
-
-	}
-
-	public interface IMonitorViewFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class MonitorViewFunctionsImpl implements IMonitorViewFunctionsImpl {
-
-		public static final IMonitorViewFunctionsImpl INSTANCE = new MonitorViewFunctionsImpl();
-
-		private MonitorViewFunctionsImpl() {}
-
-	}
-
-	public static class MonitorViewFunctions {
-
-		private MonitorViewFunctions() {}
-
-	}
-
-	public interface IMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("5e7faeaa-cce3-11ea-8b73-6b1c6b53a7a6") java.lang.String RenderContentElement();
-
-	}
-
-	public interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class MonitoringBuildingBlockFunctionsImpl implements IMonitoringBuildingBlockFunctionsImpl {
-
-		public static final IMonitoringBuildingBlockFunctionsImpl INSTANCE = new MonitoringBuildingBlockFunctionsImpl();
-
-		private MonitoringBuildingBlockFunctionsImpl() {}
-
-	}
-
-	public static class MonitoringBuildingBlockFunctions {
-
-		private MonitoringBuildingBlockFunctions() {}
-
-	}
-
-	public interface IMonitoringFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("6055e404-c73f-11ea-9c12-5371f8bad411") java.lang.String RenderContentElement();
-
-	}
-
-	public interface IMonitoringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class MonitoringFunctionsImpl implements IMonitoringFunctionsImpl {
-
-		public static final IMonitoringFunctionsImpl INSTANCE = new MonitoringFunctionsImpl();
-
-		private MonitoringFunctionsImpl() {}
-
-	}
-
-	public static class MonitoringFunctions {
-
-		private MonitoringFunctions() {}
-
-	}
-
-	public interface IComponentCompositionFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("8e268623-ccf3-11ea-8b73-6b1c6b53a7a6") java.lang.String RenderComponents();
-
-	}
-
-	public interface IComponentCompositionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class ComponentCompositionFunctionsImpl implements IComponentCompositionFunctionsImpl {
-
-		public static final IComponentCompositionFunctionsImpl INSTANCE = new ComponentCompositionFunctionsImpl();
-
-		private ComponentCompositionFunctionsImpl() {}
-
-	}
-
-	public static class ComponentCompositionFunctions {
-
-		private ComponentCompositionFunctions() {}
-
-	}
-
-	public interface IBuildingBlockFunctions extends IDynamicResourceExtension {
-
-		@IDynamicResourceExtension.MethodId("6529eb1f-d574-11ea-9bae-37ef2cb951a8") java.lang.String RenderBlackboxReference();
-
-	}
-
-	public interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-
-	}
-
-	public static class BuildingBlockFunctionsImpl implements IBuildingBlockFunctionsImpl {
-
-		public static final IBuildingBlockFunctionsImpl INSTANCE = new BuildingBlockFunctionsImpl();
-
-		private BuildingBlockFunctionsImpl() {}
-
-	}
-
-	public static class BuildingBlockFunctions {
-
-		private BuildingBlockFunctions() {}
-
-	}
+  }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,sWmK6o0A5RCJKoOL4C2v6eBKzgQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,0iRK2Ogwk7oucDyOjUr4DBEVWoU=] */

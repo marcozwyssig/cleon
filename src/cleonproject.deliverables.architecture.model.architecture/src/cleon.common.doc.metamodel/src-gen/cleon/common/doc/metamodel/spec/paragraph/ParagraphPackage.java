@@ -15,6 +15,12 @@ public class ParagraphPackage {
   public static final Resource ChapterReference = new Resource("56be6ccf-dbc2-11ea-b71c-ade06d3dafe4");
   public static final Resource ChapterReference_text = new Resource("56be6cd0-dbc2-11ea-b71c-ade06d3dafe4");
   public static final Resource ChapterReference_chapter = new Resource("672297e9-dbc2-11ea-b71c-ade06d3dafe4");
+  public static final Resource Text_style = new Resource("6629a33a-dcb4-11ea-b5f8-77c3980a1d0a");
+  public static final Resource Style = new Resource("6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a");
+  public static final Resource Style_Bold = new Resource("70edad4c-dcb4-11ea-b5f8-77c3980a1d0a");
+  public static final Resource Style_Italic = new Resource("74091e8a-dcb4-11ea-b5f8-77c3980a1d0a");
+  public static final Resource Style_Underline = new Resource("7cffe35f-dcb4-11ea-b5f8-77c3980a1d0a");
+  public static final Resource Style_Striketrough = new Resource("81b9c22c-dcb4-11ea-b5f8-77c3980a1d0a");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +41,4 @@ public class ParagraphPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,SaQR0EHyaf7UDJGSut3vLWaFmGs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph,Khau2cdpycN3HddKJ7PjOE+77zY=] */

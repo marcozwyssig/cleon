@@ -179,6 +179,31 @@ public class FunctionSpace_Doc {
 
   }
 
+  public static interface ITextFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("559a7b1d-dcb5-11ea-b5f8-77c3980a1d0a")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface ITextFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TextFunctionsImpl implements ITextFunctionsImpl {
+
+    public static final ITextFunctionsImpl INSTANCE = new TextFunctionsImpl();
+
+    private TextFunctionsImpl() {}
+
+  }
+  
+  public static class TextFunctions {
+
+    private TextFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,bL6tjCvIo8+sBlXhHMOqxgSqOjM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cc8dc39e-084c-11e9-9ee8-c54fda7ab431,jbzzSgGW8b8d3DwfL8GNP+sh1Kc=] */

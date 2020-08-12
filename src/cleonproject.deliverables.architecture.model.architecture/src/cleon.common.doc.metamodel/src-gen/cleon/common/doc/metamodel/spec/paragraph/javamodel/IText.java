@@ -10,6 +10,8 @@ public interface IText extends cleon.common.doc.metamodel.spec.paragraph.javamod
   
   public java.lang.String selectText();
   
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle selectStyle();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,iA/8VfK96ePfZCEhXWfqorpwBi8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,J7RtkrbG1PtX9+H0p8OT/dRRtx0=] */

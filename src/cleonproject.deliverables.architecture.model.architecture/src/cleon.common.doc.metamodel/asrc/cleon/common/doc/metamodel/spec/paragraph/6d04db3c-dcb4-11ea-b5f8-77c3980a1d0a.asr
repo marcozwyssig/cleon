@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="70edfb71-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="70edad4c-dcb4-11ea-b5f8-77c3980a1d0a" />
+    <resource statement-guid="7409459d-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="74091e8a-dcb4-11ea-b5f8-77c3980a1d0a" />
+    <resource statement-guid="7d003192-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="7cffe35f-dcb4-11ea-b5f8-77c3980a1d0a" />
+    <resource statement-guid="81b9e951-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="81b9c22c-dcb4-11ea-b5f8-77c3980a1d0a" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6d04db3e-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6d0db4df-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6e158747-dcb4-11ea-b5f8-77c3980a1d0a" type="literal">Style</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="70edfb71-dcb4-11ea-b5f8-77c3980a1d0a">
+      <resource guid="70edad4c-dcb4-11ea-b5f8-77c3980a1d0a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="70edd45f-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71fea81b-dcb4-11ea-b5f8-77c3980a1d0a" type="literal">Bold</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7409459d-dcb4-11ea-b5f8-77c3980a1d0a">
+      <resource guid="74091e8a-dcb4-11ea-b5f8-77c3980a1d0a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="74091e8c-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7931eb53-dcb4-11ea-b5f8-77c3980a1d0a" type="literal">Italic</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="7d003192-dcb4-11ea-b5f8-77c3980a1d0a">
+      <resource guid="7cffe35f-dcb4-11ea-b5f8-77c3980a1d0a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7d000a79-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="7d690507-dcb4-11ea-b5f8-77c3980a1d0a" type="literal">Underline</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="81b9e951-dcb4-11ea-b5f8-77c3980a1d0a">
+      <resource guid="81b9c22c-dcb4-11ea-b5f8-77c3980a1d0a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="81b9e93f-dcb4-11ea-b5f8-77c3980a1d0a" type="resource" guid="6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="821799c1-dcb4-11ea-b5f8-77c3980a1d0a" type="literal">Striketrough</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

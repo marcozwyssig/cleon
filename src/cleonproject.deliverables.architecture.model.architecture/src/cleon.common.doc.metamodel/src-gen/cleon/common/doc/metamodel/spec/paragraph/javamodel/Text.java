@@ -52,6 +52,16 @@ public class Text extends DynamicResource implements IText {
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style);
+  }
+
+  public Text setStyle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, style);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -67,8 +77,13 @@ public class Text extends DynamicResource implements IText {
     // attributes
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, visitor);
     // relations
+    _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  public static java.util.List<cleon.common.doc.metamodel.spec.paragraph.javamodel.IText> selectToMeStyle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle object) {
+    return _getToMeList(object.getRepository(), cleon.common.doc.metamodel.spec.paragraph.javamodel.IText.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,V3ldUCVD5IeugZdKKrh6TtBBlfE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0e3ff7cb-d86f-11e4-aa2f-c11242a92b60,aMw2K7x6ty/cURasihu+5D9dLfg=] */

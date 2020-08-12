@@ -20,7 +20,7 @@ import ch.actifsource.util.log.Logger;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusinessObjectId>
-		extends AbstractInitializationAspect {
+extends AbstractInitializationAspect {
 
 	private final Class<T> _classInstance;
 
@@ -41,10 +41,10 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 			final Integer nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
 			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(nextId));
 		} catch (final Exception e) {
-		   final StringWriter sw = new StringWriter();
-		    e.printStackTrace(new PrintWriter(sw));
-		    final String exceptionAsString = sw.toString();
-		
+			final StringWriter sw = new StringWriter();
+			e.printStackTrace(new PrintWriter(sw));
+			final String exceptionAsString = sw.toString();
+
 			Update.createStatement(modifiable, pkg, newInstance, CorePackage.NamedResource_name,
 					LiteralUtil.create(exceptionAsString));
 		}
@@ -59,28 +59,29 @@ public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusine
 		if( resources.isEmpty()) {
 			return getStartId(newInstance);			
 		}
-		
+
 		return findNextId(newInstance, resources);
 	}
 
 	protected Integer getStartId(final T newInstance) {
-		return 0;
+		return 1;
 	}
 
 	protected Integer findNextId(final T newInstance, final List<T> resources) {
-		final List<T> sortedList = resources.stream().filter( x -> x.selectIdentifier() != null).sorted((Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier))).collect(Collectors.toList());
+		final List<T> sortedList = resources.stream().filter( x -> x.selectIdentifier() != null).sorted(Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier)).collect(Collectors.toList());
 		Logger.instance().logInfo("Size: " + sortedList.size());
-	    for(int i = 0; i < sortedList.size(); i++) {
-	    	final int boId = getStartId(newInstance) + i;
-	        if(boId < sortedList.get(i).selectIdentifier()) {
-	    		Logger.instance().logInfo("next: " + boId);
-	            // at this point we know this is the next id.
-	            // we can leave the method and return the next ID.
-	        	return boId;
-	        }
-	    }
-	    // we did not leave the loop (and method), because all id's are assigned.
+		for(int i = 0; i < sortedList.size(); i++) {
+			final int boId = getStartId(newInstance) + i;
+			final int indexId = sortedList.get(i).selectIdentifier();
+			if(boId < indexId) {
+				Logger.instance().logInfo("next: " + boId + " / indexId: " + indexId);
+				// at this point we know this is the next id.
+				// we can leave the method and return the next ID.
+				return boId;
+			}
+		}
+		// we did not leave the loop (and method), because all id's are assigned.
 		Logger.instance().logInfo("total size: " + sortedList.size());
-	    return sortedList.size();
+		return sortedList.size();
 	}	
 }

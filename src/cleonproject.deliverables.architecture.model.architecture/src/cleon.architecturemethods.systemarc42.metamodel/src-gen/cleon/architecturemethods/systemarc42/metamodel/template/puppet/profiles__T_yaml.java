@@ -202,6 +202,31 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IhttpFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5092f817-dc98-11ea-b5f8-77c3980a1d0a")
+    public java.lang.String RenderSensor();
+
+  }
+  
+  public static interface IhttpFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class httpFunctionsImpl implements IhttpFunctionsImpl {
+
+    public static final IhttpFunctionsImpl INSTANCE = new httpFunctionsImpl();
+
+    private httpFunctionsImpl() {}
+
+  }
+  
+  public static class httpFunctions {
+
+    private httpFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,RLFCanWeJ9ncuEZr8m81GaWocUE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Lhb7un+ReMUjwfImXEXvzEnCQtg=] */

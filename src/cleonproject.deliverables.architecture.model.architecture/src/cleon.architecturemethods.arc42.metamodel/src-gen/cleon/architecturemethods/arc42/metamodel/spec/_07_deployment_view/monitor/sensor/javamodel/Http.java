@@ -48,6 +48,15 @@ public class Http extends DynamicResource implements IHttp {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.String selectUrl() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.http_url);
+  }
+    
+  public void setUrl(java.lang.String url) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.http_url, url);
+  }
+
   // relations
   
   @Override
@@ -65,9 +74,10 @@ public class Http extends DynamicResource implements IHttp {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.http_url, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f332-c1eb-11ea-820f-9931558a898c,8q//6R2C9po+Mn22byE/C0f5dn8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f332-c1eb-11ea-820f-9931558a898c,Bs0QWpL5O/cRKRgeq8MSonERTcg=] */

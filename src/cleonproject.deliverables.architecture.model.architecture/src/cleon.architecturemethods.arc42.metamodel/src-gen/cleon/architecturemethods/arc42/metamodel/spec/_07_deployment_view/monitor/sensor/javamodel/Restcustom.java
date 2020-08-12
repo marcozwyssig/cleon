@@ -49,12 +49,12 @@ public class Restcustom extends DynamicResource implements IRestcustom {
   }
 
   @Override
-  public java.lang.String selectJsonFile() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonFile);
+  public java.lang.String selectJsonfile() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonfile);
   }
     
-  public void setJsonFile(java.lang.String jsonFile) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonFile, jsonFile);
+  public void setJsonfile(java.lang.String jsonfile) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonfile, jsonfile);
   }
 
   @Override
@@ -112,7 +112,7 @@ public class Restcustom extends DynamicResource implements IRestcustom {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonFile, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_jsonfile, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.restcustom_query, visitor);
     // relations
@@ -132,4 +132,4 @@ public class Restcustom extends DynamicResource implements IRestcustom {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db488780-c1eb-11ea-820f-9931558a898c,R4Xw2CIXjLVWDmtje8WuPeOGMN8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db488780-c1eb-11ea-820f-9931558a898c,E0i6nFhDxvYQbcFHaAPNvrH77nY=] */

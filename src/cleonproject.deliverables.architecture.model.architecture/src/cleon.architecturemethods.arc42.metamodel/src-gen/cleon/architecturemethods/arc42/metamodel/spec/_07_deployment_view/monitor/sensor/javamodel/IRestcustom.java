@@ -11,7 +11,7 @@ public interface IRestcustom extends ch.actifsource.core.javamodel.INamedResourc
   
   public java.lang.String selectQuery();
   
-  public java.lang.String selectJsonFile();
+  public java.lang.String selectJsonfile();
   
   // relations
   
@@ -21,4 +21,4 @@ public interface IRestcustom extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db488780-c1eb-11ea-820f-9931558a898c,ao3180AWR3owl7XFa+6OsoakoCc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db488780-c1eb-11ea-820f-9931558a898c,QRh2A0qDCIqpdE7M0GqRu4Dtyr0=] */

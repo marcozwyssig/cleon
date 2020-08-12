@@ -279,7 +279,7 @@ public class SensorPackage {
   public static final Resource RequestProtocol_http = new Resource("9bfe9e3a-dc79-11ea-a169-cb4c6ff66798");
   public static final Resource RequestProtocol_https = new Resource("a0df1794-dc79-11ea-a169-cb4c6ff66798");
   public static final Resource restcustom_query = new Resource("d625daf1-dc79-11ea-a169-cb4c6ff66798");
-  public static final Resource restcustom_jsonFile = new Resource("39c05cc5-dc7a-11ea-a169-cb4c6ff66798");
+  public static final Resource restcustom_jsonfile = new Resource("39c05cc5-dc7a-11ea-a169-cb4c6ff66798");
   
   /* Begin Protected Region [[user]] */
   
@@ -300,4 +300,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,ZVrg7Va2Cv6cmoahC9VIiN4cXqQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,iksTsJ0J25pmIR986SOX/JIAjs8=] */

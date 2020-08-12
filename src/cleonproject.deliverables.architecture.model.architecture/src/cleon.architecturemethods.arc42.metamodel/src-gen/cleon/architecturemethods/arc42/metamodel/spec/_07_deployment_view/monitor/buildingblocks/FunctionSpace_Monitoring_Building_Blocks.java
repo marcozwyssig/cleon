@@ -121,6 +121,56 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
+  public static interface IexexmlFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9240eff2-dc8d-11ea-a169-cb4c6ff66798")
+    public java.lang.String Parameters();
+
+  }
+  
+  public static interface IexexmlFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class exexmlFunctionsImpl implements IexexmlFunctionsImpl {
+
+    public static final IexexmlFunctionsImpl INSTANCE = new exexmlFunctionsImpl();
+
+    private exexmlFunctionsImpl() {}
+
+  }
+  
+  public static class exexmlFunctions {
+
+    private exexmlFunctions() {}
+
+  }
+
+  public static interface IrestcustomFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9240f032-dc8d-11ea-a169-cb4c6ff66798")
+    public java.lang.String Parameters();
+
+  }
+  
+  public static interface IrestcustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class restcustomFunctionsImpl implements IrestcustomFunctionsImpl {
+
+    public static final IrestcustomFunctionsImpl INSTANCE = new restcustomFunctionsImpl();
+
+    private restcustomFunctionsImpl() {}
+
+  }
+  
+  public static class restcustomFunctions {
+
+    private restcustomFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,WLB+DPJwE7lTm6DFJKeBYtkOwyo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,pS7rsvcaon72IlcMN0/aBkqb6ms=] */

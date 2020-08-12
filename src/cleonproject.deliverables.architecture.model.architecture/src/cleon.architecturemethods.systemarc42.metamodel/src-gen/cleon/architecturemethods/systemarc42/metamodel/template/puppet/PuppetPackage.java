@@ -12,6 +12,9 @@ public class PuppetPackage {
   public static final Resource profiles__T_yaml_exexml = new Resource("88287c17-d625-11ea-96bb-39ddde1b696a");
   public static final Resource sites__T_yaml_AbstractHost = new Resource("1b0e67d0-da27-11ea-ae00-5518e944c256");
   public static final Resource sites__T_yaml_AbstractComponent = new Resource("7e28670f-da2a-11ea-ae00-5518e944c256");
+  public static final Resource profiles__T_yaml_restcustom = new Resource("c6552397-dc89-11ea-a169-cb4c6ff66798");
+  public static final Resource profiles__T_yaml_RequestMethod = new Resource("0ee6b69f-dc8a-11ea-a169-cb4c6ff66798");
+  public static final Resource profiles__T_yaml_RequestProtocol = new Resource("712ca432-dc8a-11ea-a169-cb4c6ff66798");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +35,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,S8nJSbBQQ9Z2UDV2EmnI+dCzV18=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,15C6aZcxsDGlnLegSpxJ2ijUTy8=] */

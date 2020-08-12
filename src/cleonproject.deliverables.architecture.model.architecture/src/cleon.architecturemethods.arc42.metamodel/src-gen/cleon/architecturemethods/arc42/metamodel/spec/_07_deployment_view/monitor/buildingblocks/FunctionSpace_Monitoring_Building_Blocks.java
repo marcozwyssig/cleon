@@ -171,6 +171,31 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
+  public static interface IhttpFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8abb56c8-dca1-11ea-b5f8-77c3980a1d0a")
+    public java.lang.String Parameters();
+
+  }
+  
+  public static interface IhttpFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class httpFunctionsImpl implements IhttpFunctionsImpl {
+
+    public static final IhttpFunctionsImpl INSTANCE = new httpFunctionsImpl();
+
+    private httpFunctionsImpl() {}
+
+  }
+  
+  public static class httpFunctions {
+
+    private httpFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,pS7rsvcaon72IlcMN0/aBkqb6ms=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,LIF7Yu25C87Na3PXVGwILsDkOj8=] */

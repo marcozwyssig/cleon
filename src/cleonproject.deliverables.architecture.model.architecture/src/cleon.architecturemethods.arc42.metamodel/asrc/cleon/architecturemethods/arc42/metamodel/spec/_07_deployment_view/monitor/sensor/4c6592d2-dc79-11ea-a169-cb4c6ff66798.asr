@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4c6592d2-dc79-11ea-a169-cb4c6ff66798">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="51afca29-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="51af54f5-dc79-11ea-a169-cb4c6ff66798" />
+    <resource statement-guid="52aa0971-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="52a9e25e-dc79-11ea-a169-cb4c6ff66798" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4c65b9e4-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4c8c0695-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4df00366-dc79-11ea-a169-cb4c6ff66798" type="literal">RequestMethod</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="51afca29-dc79-11ea-a169-cb4c6ff66798">
+      <resource guid="51af54f5-dc79-11ea-a169-cb4c6ff66798">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="51afa317-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="4c6592d2-dc79-11ea-a169-cb4c6ff66798" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="52076004-dc79-11ea-a169-cb4c6ff66798" type="literal">GET</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="52aa0971-dc79-11ea-a169-cb4c6ff66798">
+      <resource guid="52a9e25e-dc79-11ea-a169-cb4c6ff66798">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="52a9e260-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="4c6592d2-dc79-11ea-a169-cb4c6ff66798" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5334e437-dc79-11ea-a169-cb4c6ff66798" type="literal">POST</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

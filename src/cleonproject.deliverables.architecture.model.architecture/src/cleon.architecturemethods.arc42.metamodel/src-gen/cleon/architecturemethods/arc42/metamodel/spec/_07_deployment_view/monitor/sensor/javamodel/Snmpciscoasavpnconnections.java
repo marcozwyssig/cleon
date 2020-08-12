@@ -28,6 +28,26 @@ public class Snmpciscoasavpnconnections extends DynamicResource implements ISnmp
     super(resourceRepository, resource, ISnmpciscoasavpnconnections.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
+  }
+    
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
+  @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
   // relations
   
   @Override
@@ -43,9 +63,11 @@ public class Snmpciscoasavpnconnections extends DynamicResource implements ISnmp
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4a0d8c-c1eb-11ea-820f-9931558a898c,OYUhzBOvxGZ6FuzhhLCxlOW59Hc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4a0d8c-c1eb-11ea-820f-9931558a898c,kgB7m6hgP5IvUlJwtxVwQUMqmlo=] */

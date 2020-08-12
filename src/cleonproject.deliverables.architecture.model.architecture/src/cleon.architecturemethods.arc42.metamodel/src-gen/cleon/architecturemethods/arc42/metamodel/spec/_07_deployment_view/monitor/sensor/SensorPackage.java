@@ -270,6 +270,16 @@ public class SensorPackage {
   public static final Resource wmiservice_serviceDisplayName = new Resource("b0cc9388-cfec-11ea-99e7-03141914df18");
   public static final Resource FunctionSpace_aE_Sensor_Sensor = new Resource("d0eb2eac-d00c-11ea-b5a9-731249efa1a3");
   public static final Resource FunctionSpace_aE_Sensor_wmiservice = new Resource("08e1337d-d00d-11ea-b5a9-731249efa1a3");
+  public static final Resource restcustom_requesttype = new Resource("414f7049-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestMethod = new Resource("4c6592d2-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestMethod_GET = new Resource("51af54f5-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestMethod_POST = new Resource("52a9e25e-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource restcustom_protocol = new Resource("88825e2b-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestProtocol = new Resource("98d01b1c-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestProtocol_http = new Resource("9bfe9e3a-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource RequestProtocol_https = new Resource("a0df1794-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource restcustom_query = new Resource("d625daf1-dc79-11ea-a169-cb4c6ff66798");
+  public static final Resource restcustom_jsonFile = new Resource("39c05cc5-dc7a-11ea-a169-cb4c6ff66798");
   
   /* Begin Protected Region [[user]] */
   
@@ -290,4 +300,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,ffnYOMt1wH47uaekUTuBKxiLx7Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,ZVrg7Va2Cv6cmoahC9VIiN4cXqQ=] */

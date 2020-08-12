@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="98d01b1c-dc79-11ea-a169-cb4c6ff66798">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="9bff136d-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="9bfe9e3a-dc79-11ea-a169-cb4c6ff66798" />
+    <resource statement-guid="a0df65b7-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="a0df1794-dc79-11ea-a169-cb4c6ff66798" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="98d0693e-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="98d37680-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="98d3285f-dc79-11ea-a169-cb4c6ff66798" type="literal">RequestProtocol</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="9bff136d-dc79-11ea-a169-cb4c6ff66798">
+      <resource guid="9bfe9e3a-dc79-11ea-a169-cb4c6ff66798">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9bfeec5c-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="98d01b1c-dc79-11ea-a169-cb4c6ff66798" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9cb89fc7-dc79-11ea-a169-cb4c6ff66798" type="literal">http</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a0df65b7-dc79-11ea-a169-cb4c6ff66798">
+      <resource guid="a0df1794-dc79-11ea-a169-cb4c6ff66798">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a0df3ea6-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="98d01b1c-dc79-11ea-a169-cb4c6ff66798" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a1d33c2c-dc79-11ea-a169-cb4c6ff66798" type="literal">https</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

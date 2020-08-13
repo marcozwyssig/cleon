@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="094d86bd-a0e2-11ea-8daa-afb4679c3497">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="4f1fd452-dd66-11ea-9383-71e9cf1c59dd" type="resource" guid="0ce4fa77-afac-11ea-9bc4-516448cfb46a" />
+    <resource statement-guid="53f26ab3-dd66-11ea-9383-71e9cf1c59dd" type="resource" guid="38b8f6c0-dd66-11ea-9383-71e9cf1c59dd" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="094d86bf-a0e2-11ea-8daa-afb4679c3497" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -9,6 +13,34 @@
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="094f0d60-a0e2-11ea-8daa-afb4679c3497" type="literal">Service</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4f1fd452-dd66-11ea-9383-71e9cf1c59dd">
+      <resource guid="0ce4fa77-afac-11ea-9bc4-516448cfb46a">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ce54899-afac-11ea-9bc4-516448cfb46a" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1a21f4b6-afac-11ea-9bc4-516448cfb46a" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.ServiceIdInitializerAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0ce596ba-afac-11ea-9bc4-516448cfb46a" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="53f26ab3-dd66-11ea-9383-71e9cf1c59dd">
+      <resource guid="38b8f6c0-dd66-11ea-9383-71e9cf1c59dd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="38b91dd2-dd66-11ea-9383-71e9cf1c59dd" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="39c3fe3e-dd66-11ea-9383-71e9cf1c59dd" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.ServiceIdValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="38b91dd3-dd66-11ea-9383-71e9cf1c59dd" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="094f0d62-a0e2-11ea-8daa-afb4679c3497" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

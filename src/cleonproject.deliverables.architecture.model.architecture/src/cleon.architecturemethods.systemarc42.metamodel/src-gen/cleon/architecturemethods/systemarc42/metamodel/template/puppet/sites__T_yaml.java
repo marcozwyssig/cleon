@@ -13,7 +13,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_vi
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import ch.actifsource.core.job.Select;
 import java.util.stream.Collectors;
-import java.util.ArrayList;
+import java.util.SortedSet;
+import java.util.TreeSet;
 import java.util.HashMap;
 import ch.actifsource.environment.EnvironmentPlugin;
 /* End Protected Region   [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
@@ -97,7 +98,7 @@ public class sites__T_yaml {
     @Override
     public java.lang.String RenderToText(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite site, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[c0109767-dcb7-11ea-b5f8-77c3980a1d0a]] */
-      final HashMap<String, HashMap<String, List<String>>> hashtable = new HashMap<>();
+      final HashMap<String, HashMap<String, SortedSet<String>>> hashtable = new HashMap<>();
       for( final IAbstractHost abstractHost : abstractHostList) { 
       	final IAbstractHostFunctions abstractHostFunctions = abstractHost.extension(IAbstractHostFunctions.class);
       	final String probeName =  abstractHostFunctions.GetProbeName(site);
@@ -106,15 +107,16 @@ public class sites__T_yaml {
       	}
       	final String pathName = abstractHostFunctions.GetPath();
       	if(!hashtable.get(probeName).containsKey(pathName)) {
-      		hashtable.get(probeName).put(pathName, new ArrayList<>());
+      		hashtable.get(probeName).put(pathName, new TreeSet<>());
       	}
       	hashtable.get(probeName).get(pathName).add(abstractHostFunctions.Entry());
       }
+
       final String siteName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), site.getResource()); 
 
       final StringBuffer stringBuffer = new StringBuffer();
       for( final String probe : hashtable.keySet() ) {
-      	final HashMap<String, List<String>> pathTable = hashtable.get(probe);
+      	final HashMap<String, SortedSet<String>> pathTable = hashtable.get(probe);
       	for( final String path : pathTable.keySet()) {
       		stringBuffer.append(String.format("  %s|%s|%s:\n", probe, siteName, path));
       		stringBuffer.append("    Profile: pf_grp_ikt\n");

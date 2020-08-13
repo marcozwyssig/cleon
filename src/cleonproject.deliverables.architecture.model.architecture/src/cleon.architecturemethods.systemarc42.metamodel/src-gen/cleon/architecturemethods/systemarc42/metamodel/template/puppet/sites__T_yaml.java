@@ -9,8 +9,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.MonitoringBuildingBlock;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IPrtgProbeSystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost;
 import ch.actifsource.core.job.Select;
 import java.util.stream.Collectors;
 import java.util.SortedSet;
@@ -67,12 +67,7 @@ public class sites__T_yaml {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
-      return abstractHostList.stream().filter(x -> {
-      	if( x.selectInstanceOf() instanceof IPrtgProbeSystemConfiguration ) {
-      		return false;
-      	}
-      	return MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf())!= null;
-      }).collect(Collectors.toList());
+      return abstractHostList.stream().filter(x -> MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf())!= null && x instanceof IAbstractSingleHost).collect(Collectors.toList());
       /* End Protected Region   [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
     }
 
@@ -106,13 +101,17 @@ public class sites__T_yaml {
       		hashtable.put(probeName, new HashMap<>());
       	}
       	final String pathName = abstractHostFunctions.GetPath();
+      	if( pathName.contains("IP2.0")) {
+      		continue;
+      	}
       	if(!hashtable.get(probeName).containsKey(pathName)) {
       		hashtable.get(probeName).put(pathName, new TreeSet<>());
       	}
       	hashtable.get(probeName).get(pathName).add(abstractHostFunctions.Entry());
       }
 
-      final String siteName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), site.getResource()); 
+      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions abstractSiteFunctions = site.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);
+      final String siteName = abstractSiteFunctions.MonitoringSiteName();
 
       final StringBuffer stringBuffer = new StringBuffer();
       for( final String probe : hashtable.keySet() ) {
@@ -179,6 +178,45 @@ public class sites__T_yaml {
 
   }
 
+  public static interface IAbstractSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4bb9aa40-dd81-11ea-9383-71e9cf1c59dd")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> OnlyToGenerate();
+
+  }
+  
+  public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("4bb9aa40-dd81-11ea-9383-71e9cf1c59dd")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList);
+
+  }
+  
+  public static class AbstractSiteFunctionsImpl implements IAbstractSiteFunctionsImpl {
+
+    public static final IAbstractSiteFunctionsImpl INSTANCE = new AbstractSiteFunctionsImpl();
+
+    private AbstractSiteFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList) {
+      /* Begin Protected Region [[4bb9aa40-dd81-11ea-9383-71e9cf1c59dd]] */
+      return abstractSiteList.stream().filter(x -> x.selectSkipMonitoringGeneration() == null || !x.selectSkipMonitoringGeneration().booleanValue()).collect(Collectors.toList());
+      /* End Protected Region   [[4bb9aa40-dd81-11ea-9383-71e9cf1c59dd]] */
+    }
+
+  }
+  
+  public static class AbstractSiteFunctions {
+
+    private AbstractSiteFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> OnlyToGenerate(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList) {
+      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSiteList).OnlyToGenerate(abstractSiteList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,ZA8TX7PJ2dgNSIH9Krc8QYpxUWk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,/k8adIWy4bydai6mbX+w+tCHfzk=] */

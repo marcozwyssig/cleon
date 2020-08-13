@@ -47,6 +47,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("7442d538-b4a2-11ea-b938-599963fc0a84")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> AllSites();
 
+    @IDynamicResourceExtension.MethodId("69ca3de9-dd82-11ea-9383-71e9cf1c59dd")
+    public java.lang.String MonitoringSiteName();
+
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -605,6 +608,31 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface ITNFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("915eafea-dd82-11ea-9383-71e9cf1c59dd")
+    public java.lang.String MonitoringSiteName();
+
+  }
+  
+  public static interface ITNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TNFunctionsImpl implements ITNFunctionsImpl {
+
+    public static final ITNFunctionsImpl INSTANCE = new TNFunctionsImpl();
+
+    private TNFunctionsImpl() {}
+
+  }
+  
+  public static class TNFunctions {
+
+    private TNFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,J3wahD6M963Yd4NP5zRn4q5NgZY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mQyMMx1yzJG/BlzbWDcLq/TEnZg=] */

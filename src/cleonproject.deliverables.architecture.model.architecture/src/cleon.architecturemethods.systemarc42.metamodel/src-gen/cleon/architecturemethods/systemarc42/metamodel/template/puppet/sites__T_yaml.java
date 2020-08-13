@@ -116,7 +116,7 @@ public class sites__T_yaml {
       for( final String probe : hashtable.keySet() ) {
       	final HashMap<String, List<String>> pathTable = hashtable.get(probe);
       	for( final String path : pathTable.keySet()) {
-      		stringBuffer.append(String.format("  %s|%s|%s\n", probe, siteName, path));
+      		stringBuffer.append(String.format("  %s|%s|%s:\n", probe, siteName, path));
       		stringBuffer.append("    Profile: pf_grp_ikt\n");
       		stringBuffer.append("    Devices:\n");
       		for( final String entry : pathTable.get(path)) {

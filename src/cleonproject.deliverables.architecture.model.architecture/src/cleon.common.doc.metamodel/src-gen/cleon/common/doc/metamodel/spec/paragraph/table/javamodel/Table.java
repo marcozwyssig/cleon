@@ -42,11 +42,11 @@ public class Table extends DynamicResource implements ITable {
     
   @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
-    return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
+    return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements);
   }
 
   public Table setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
-    _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+    _setList(cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
     return this;
   }
     
@@ -75,7 +75,6 @@ public class Table extends DynamicResource implements ITable {
   public void accept(IPropertyValueVisitor visitor) {
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.table.javamodel.IColumn.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Table_columns, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.table.javamodel.IRow.class, cleon.common.doc.metamodel.spec.paragraph.table.TablePackage.Table_rows, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -91,4 +90,4 @@ public class Table extends DynamicResource implements ITable {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd7635ee-3c49-11e5-871f-6beac6a7c24b,o9LgiaqGjMGsa2DXL9a0di8/cCo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fd7635ee-3c49-11e5-871f-6beac6a7c24b,DBTVJQk3z2wc/v+Jhw4tfolH3Gc=] */

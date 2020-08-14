@@ -611,6 +611,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface IBackup_and_RecoveryFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1b41621d-de24-11ea-9e94-c51d7f8d96d1")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IBackup_and_RecoveryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Backup_and_RecoveryFunctionsImpl implements IBackup_and_RecoveryFunctionsImpl {
+
+    public static final IBackup_and_RecoveryFunctionsImpl INSTANCE = new Backup_and_RecoveryFunctionsImpl();
+
+    private Backup_and_RecoveryFunctionsImpl() {}
+
+  }
+  
+  public static class Backup_and_RecoveryFunctions {
+
+    private Backup_and_RecoveryFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,0iRK2Ogwk7oucDyOjUr4DBEVWoU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,6zr7hEUzVajQXZdLzRXl2IgXpvA=] */

@@ -49,6 +49,15 @@ public class StackHost extends DynamicResource implements IStackHost {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.Integer selectNumber() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractNumberAware_number);
   }
@@ -138,4 +147,4 @@ public class StackHost extends DynamicResource implements IStackHost {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79,W1Hd/3DJ62r4W/T3GYiF9rLzW9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,28ff7b0d-ebf4-11e9-8ba8-8b1ead537e79,Zns/p58lJeQ+MS4f/PC6422nT+I=] */

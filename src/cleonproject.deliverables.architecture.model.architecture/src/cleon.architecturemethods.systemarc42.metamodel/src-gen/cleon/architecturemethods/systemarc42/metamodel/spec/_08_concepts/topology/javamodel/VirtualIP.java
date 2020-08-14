@@ -49,6 +49,15 @@ public class VirtualIP extends DynamicResource implements IVirtualIP {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.Integer selectNumber() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractNumberAware_number);
   }
@@ -121,4 +130,4 @@ public class VirtualIP extends DynamicResource implements IVirtualIP {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,MLqIxr3KJn+rTZM46kBQLBWtRj0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,pQOohvCpaz8VA4/O6zbxaQ1cf7Q=] */

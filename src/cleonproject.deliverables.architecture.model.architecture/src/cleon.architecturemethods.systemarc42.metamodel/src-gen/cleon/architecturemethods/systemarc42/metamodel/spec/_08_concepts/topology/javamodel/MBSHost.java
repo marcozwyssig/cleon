@@ -49,6 +49,15 @@ public class MBSHost extends DynamicResource implements IMBSHost {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.Boolean selectIsTemporary() {
     return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSingleHost_isTemporary);
   }
@@ -148,4 +157,4 @@ public class MBSHost extends DynamicResource implements IMBSHost {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d5ed092-57c9-11ea-bd7a-4baf1bc87b3c,OXMnEkOcyXQnqBwn3hhk3Fjc+0U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d5ed092-57c9-11ea-bd7a-4baf1bc87b3c,lYJ6Klm5UnKxsDiHLVZ1DRs1nG0=] */

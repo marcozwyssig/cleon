@@ -49,6 +49,15 @@ public class Cluster extends DynamicResource implements ICluster {
   }
 
   @Override
+  public java.lang.Integer selectIdentifier() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier);
+  }
+    
+  public void setIdentifier(java.lang.Integer identifier) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
+  }
+
+  @Override
   public java.lang.Integer selectNumber() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractNumberAware_number);
   }
@@ -121,4 +130,4 @@ public class Cluster extends DynamicResource implements ICluster {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,y8lSzT0Y/Vi2XdzMduWdPjq3Bhw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3888cf7-ca6a-11e9-83b0-559396620907,+AndSNS05gJ0ev8/WH1827pw0iI=] */

@@ -16,14 +16,14 @@ public class TopologyPackage {
   public static final Resource AbstractSiteWithZone_zones = new Resource("eb2fa145-928a-11e9-959e-8115c2f9e41e");
   public static final Resource TDM = new Resource("d18bebe1-92b3-11e9-b2b4-f340ae70802c");
   public static final Resource RN = new Resource("3615fdfa-936d-11e9-8139-e76b19cfb4bf");
-  public static final Resource TN_hss = new Resource("3ecfe174-936d-11e9-8139-e76b19cfb4bf");
+  public static final Resource Multi_aE_TN_hss = new Resource("3ecfe174-936d-11e9-8139-e76b19cfb4bf");
   public static final Resource TN_mss = new Resource("44f02df6-936d-11e9-8139-e76b19cfb4bf");
   public static final Resource AbstractSiteWithHosts = new Resource("aa0c9e25-936e-11e9-8139-e76b19cfb4bf");
   public static final Resource CentralSite = new Resource("d27c071d-936e-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_AbstractSite = new Resource("7cc4725c-9370-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_RN = new Resource("9b95b273-9370-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteWithHosts = new Resource("939c6e17-9375-11e9-8139-e76b19cfb4bf");
-  public static final Resource TN_tdm = new Resource("496549a8-93e1-11e9-8139-e76b19cfb4bf");
+  public static final Resource Multi_aE_TN_tdm = new Resource("496549a8-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource FunctionSpace_aE_Topology_TDM = new Resource("8289bc7e-93e1-11e9-8139-e76b19cfb4bf");
   public static final Resource NumberedHost = new Resource("887c437e-ca6a-11e9-83b0-559396620907");
   public static final Resource Cluster = new Resource("a3888cf7-ca6a-11e9-83b0-559396620907");
@@ -63,8 +63,11 @@ public class TopologyPackage {
   public static final Resource AbstractClusterHost = new Resource("2e1dbcf7-da24-11ea-ae00-5518e944c256");
   public static final Resource AbstractNumberAware = new Resource("57d5abe9-da24-11ea-ae00-5518e944c256");
   public static final Resource AbstractSingleHost_isTemporary = new Resource("fbc56402-dd79-11ea-9383-71e9cf1c59dd");
-  public static final Resource AbstractSite_skipMonitoringGeneration = new Resource("dea8d429-dd80-11ea-9383-71e9cf1c59dd");
-  public static final Resource FunctionSpace_aE_Topology_TN = new Resource("8d69a78e-dd82-11ea-9383-71e9cf1c59dd");
+  public static final Resource SkipMonitoringAware_skipMonitoringGeneration = new Resource("dea8d429-dd80-11ea-9383-71e9cf1c59dd");
+  public static final Resource FunctionSpace_aE_Topology_Multi_aE_TN = new Resource("8d69a78e-dd82-11ea-9383-71e9cf1c59dd");
+  public static final Resource SkipMonitoringAware = new Resource("f9aaa3ca-e095-11ea-bb83-59933a3fa779");
+  public static final Resource Multi_aE_TN = new Resource("e76727dd-e0ae-11ea-8946-bf83c1249a1c");
+  public static final Resource Multi_aE_TN_mss = new Resource("e76727de-e0ae-11ea-8946-bf83c1249a1c");
   
   /* Begin Protected Region [[user]] */
   
@@ -85,4 +88,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,BNI5+edYL9bMAIn5Qjx3vj56+9A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,y2jFM06gZmAsHBDBeem/yhy944o=] */

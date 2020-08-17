@@ -85,12 +85,12 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   }
 
   @Override
-  public java.lang.Boolean selectSkipGenerate() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipGenerate);
+  public java.lang.Boolean selectSkipHostGenerate() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate);
   }
     
-  public void setSkipGenerate(java.lang.Boolean skipGenerate) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipGenerate, skipGenerate);
+  public void setSkipHostGenerate(java.lang.Boolean skipHostGenerate) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, skipHostGenerate);
   }
 
   // relations
@@ -234,7 +234,7 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipGenerate, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_skipHostGenerate, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_hasDependency, visitor);
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone, visitor);
@@ -248,4 +248,4 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,8/xtpMoTy3ieUxuHzdgyOAeeiJ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,43GWdy0JYwWOHJjkymPywED0xTI=] */

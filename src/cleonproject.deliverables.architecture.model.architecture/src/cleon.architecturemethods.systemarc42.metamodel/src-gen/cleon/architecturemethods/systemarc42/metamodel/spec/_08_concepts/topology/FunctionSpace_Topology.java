@@ -608,31 +608,31 @@ public class FunctionSpace_Topology {
 
   }
 
-  public static interface ITNFunctions extends IDynamicResourceExtension {
+  public static interface IMulti_TNFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("915eafea-dd82-11ea-9383-71e9cf1c59dd")
     public java.lang.String MonitoringSiteName();
 
   }
   
-  public static interface ITNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMulti_TNFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class TNFunctionsImpl implements ITNFunctionsImpl {
+  public static class Multi_TNFunctionsImpl implements IMulti_TNFunctionsImpl {
 
-    public static final ITNFunctionsImpl INSTANCE = new TNFunctionsImpl();
+    public static final IMulti_TNFunctionsImpl INSTANCE = new Multi_TNFunctionsImpl();
 
-    private TNFunctionsImpl() {}
+    private Multi_TNFunctionsImpl() {}
 
   }
   
-  public static class TNFunctions {
+  public static class Multi_TNFunctions {
 
-    private TNFunctions() {}
+    private Multi_TNFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,mQyMMx1yzJG/BlzbWDcLq/TEnZg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,P5hIAdPP1OQZ1uyzgrj2FXMDWa4=] */

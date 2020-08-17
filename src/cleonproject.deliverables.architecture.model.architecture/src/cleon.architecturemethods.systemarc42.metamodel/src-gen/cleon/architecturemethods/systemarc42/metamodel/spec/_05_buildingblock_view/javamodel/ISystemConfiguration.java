@@ -6,7 +6,7 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
   
-  public java.lang.Boolean selectSkipGenerate();
+  public java.lang.Boolean selectSkipHostGenerate();
   
   // relations
   
@@ -22,4 +22,4 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,z9Sdaotlb/RiZ7HrqkYlVRoT5tY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,TdSHVzwGP0OoTU2bxospYjwccpc=] */

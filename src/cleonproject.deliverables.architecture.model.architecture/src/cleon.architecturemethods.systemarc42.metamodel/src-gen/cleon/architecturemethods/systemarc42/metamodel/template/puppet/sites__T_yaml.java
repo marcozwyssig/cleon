@@ -70,6 +70,10 @@ public class sites__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
       return abstractHostList.stream().filter(x -> {
+      	if( x.selectSkipMonitoringGeneration() != null && x.selectSkipMonitoringGeneration().booleanValue()) {
+      		return false;
+      	}
+
       	final IMonitoringBuildingBlock buildingBlock = MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
       	if( buildingBlock == null ) {
       		return false;

@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class TN extends DynamicResource implements ITN {
+public class Multi_TN extends DynamicResource implements IMulti_TN {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITN> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITN>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMulti_TN> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IMulti_TN>() {
     
     @Override
-    public ITN create() {
-      return new TN();
+    public IMulti_TN create() {
+      return new Multi_TN();
     }
     
     @Override
-    public ITN create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new TN(resourceRepository, resource);
+    public IMulti_TN create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new Multi_TN(resourceRepository, resource);
     }
   
   };
 
-  public TN() {
-    super(ITN.TYPE_ID);
+  public Multi_TN() {
+    super(IMulti_TN.TYPE_ID);
   }
   
-  public TN(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITN.TYPE_ID);
+  public Multi_TN(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IMulti_TN.TYPE_ID);
   }
 
   // attributes
@@ -91,18 +91,18 @@ public class TN extends DynamicResource implements ITN {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_hss);
   }
 
-  public TN setHss(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> hss) {
+  public Multi_TN setHss(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> hss) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_hss, hss);
     return this;
   }
     
   @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> selectMss() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.TN_mss);
+    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_mss);
   }
 
-  public TN setMss(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> mss) {
-    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.TN_mss, mss);
+  public Multi_TN setMss(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> mss) {
+    _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_mss, mss);
     return this;
   }
     
@@ -111,7 +111,7 @@ public class TN extends DynamicResource implements ITN {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSiteComposition_subsite);
   }
 
-  public TN setSubsite(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> subsite) {
+  public Multi_TN setSubsite(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> subsite) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSiteComposition_subsite, subsite);
     return this;
   }
@@ -121,7 +121,7 @@ public class TN extends DynamicResource implements ITN {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_tdm);
   }
 
-  public TN setTdm(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM> tdm) {
+  public Multi_TN setTdm(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM> tdm) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_tdm, tdm);
     return this;
   }
@@ -131,7 +131,7 @@ public class TN extends DynamicResource implements ITN {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public TN setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public Multi_TN setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -147,16 +147,24 @@ public class TN extends DynamicResource implements ITN {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_hss, visitor);
-    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.TN_mss, visitor);
+    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_mss, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_tdm, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITN selectToMeMss(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.TN_mss, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN selectToMeMss(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_mss, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN selectToMeHss(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_hss, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN selectToMeTdm(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IMulti_TN.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.Multi_aE_TN_tdm, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c0a851b6-9286-11e9-959e-8115c2f9e41e,i40Q2DL3CNzAyzbos/pEu4S7QhM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e76727dd-e0ae-11ea-8946-bf83c1249a1c,USjtN/XD8agbheCEPfDQHy8Bhyk=] */

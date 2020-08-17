@@ -9,8 +9,10 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.MonitoringBuildingBlock;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ICluster;
 import ch.actifsource.core.job.Select;
 import java.util.stream.Collectors;
 import java.util.SortedSet;
@@ -67,7 +69,20 @@ public class sites__T_yaml {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyMonitored(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
-      return abstractHostList.stream().filter(x -> MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf())!= null && x instanceof IAbstractSingleHost).collect(Collectors.toList());
+      return abstractHostList.stream().filter(x -> {
+      	final IMonitoringBuildingBlock buildingBlock = MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
+      	if( buildingBlock == null ) {
+      		return false;
+      	}
+
+      	if( x instanceof IAbstractSingleHost) {
+      		return true;
+      	}
+      	if (x instanceof ICluster) {
+      		return buildingBlock.selectCluster() != null;
+      	}
+      	return false;
+      }).collect(Collectors.toList());
       /* End Protected Region   [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */
     }
 
@@ -217,6 +232,93 @@ public class sites__T_yaml {
 
   }
 
+  public static interface IAbstractSingleHostFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("be045e1b-e089-11ea-bb83-59933a3fa779")
+    public java.lang.String Entry();
+
+  }
+  
+  public static interface IAbstractSingleHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSingleHostFunctionsImpl implements IAbstractSingleHostFunctionsImpl {
+
+    public static final IAbstractSingleHostFunctionsImpl INSTANCE = new AbstractSingleHostFunctionsImpl();
+
+    private AbstractSingleHostFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSingleHostFunctions {
+
+    private AbstractSingleHostFunctions() {}
+
+  }
+
+  public static interface IClusterFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2bbd5be6-e08a-11ea-bb83-59933a3fa779")
+    public java.lang.String Entry();
+
+  }
+  
+  public static interface IClusterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ClusterFunctionsImpl implements IClusterFunctionsImpl {
+
+    public static final IClusterFunctionsImpl INSTANCE = new ClusterFunctionsImpl();
+
+    private ClusterFunctionsImpl() {}
+
+  }
+  
+  public static class ClusterFunctions {
+
+    private ClusterFunctions() {}
+
+  }
+
+  public static interface IAbstractClusterHostFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6e8b5641-e08c-11ea-bb83-59933a3fa779")
+    public java.lang.String Entry();
+
+  }
+  
+  public static interface IAbstractClusterHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("6e8b5641-e08c-11ea-bb83-59933a3fa779")
+    public java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractClusterHost abstractClusterHost);
+
+  }
+  
+  public static class AbstractClusterHostFunctionsImpl implements IAbstractClusterHostFunctionsImpl {
+
+    public static final IAbstractClusterHostFunctionsImpl INSTANCE = new AbstractClusterHostFunctionsImpl();
+
+    private AbstractClusterHostFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractClusterHost abstractClusterHost) {
+      return null;
+    }
+
+  }
+  
+  public static class AbstractClusterHostFunctions {
+
+    private AbstractClusterHostFunctions() {}
+
+    public static java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractClusterHost abstractClusterHost) {
+      return DynamicResourceUtil.invoke(IAbstractClusterHostFunctionsImpl.class, AbstractClusterHostFunctionsImpl.INSTANCE, abstractClusterHost).Entry(abstractClusterHost);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,/k8adIWy4bydai6mbX+w+tCHfzk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,jNLqWE2Mz+r6qNwJ6tlhTukDHBY=] */

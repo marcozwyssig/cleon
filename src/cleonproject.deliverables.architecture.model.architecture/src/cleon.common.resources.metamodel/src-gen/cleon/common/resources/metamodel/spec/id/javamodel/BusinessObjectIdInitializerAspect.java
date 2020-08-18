@@ -70,7 +70,7 @@ extends AbstractInitializationAspect {
 	protected Integer findNextId(final T newInstance, final List<T> resources) {
 		final List<T> sortedList = resources.stream().filter( x -> x.selectIdentifier() != null).sorted(Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier)).collect(Collectors.toList());
 		Logger.instance().logInfo("Size: " + sortedList.size());
-		for(int i = 0; i < sortedList.size(); i++) {
+		for(int i = 0; i < sortedList.size(); ++i) {
 			final int boId = getStartId(newInstance) + i;
 			final int indexId = sortedList.get(i).selectIdentifier();
 			if(boId < indexId) {
@@ -81,7 +81,8 @@ extends AbstractInitializationAspect {
 			}
 		}
 		// we did not leave the loop (and method), because all id's are assigned.
-		Logger.instance().logInfo("total size: " + sortedList.size());
-		return sortedList.size();
+		final int nextId = sortedList.size() + 1;
+		Logger.instance().logInfo("next id: " + nextId);
+		return nextId;
 	}	
 }

@@ -74,6 +74,10 @@ public class sites__T_yaml {
       		return false;
       	}
 
+      	if (x.selectIsTemporary() != null && x.selectIsTemporary().booleanValue()) {
+      		return false;
+      	}
+
       	final IMonitoringBuildingBlock buildingBlock = MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
       	if( buildingBlock == null ) {
       		return false;

@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="45ee3865-570e-11ea-9b24-23fcad029119">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="fbc5b225-dd79-11ea-9383-71e9cf1c59dd" type="resource" guid="fbc56402-dd79-11ea-9383-71e9cf1c59dd" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="45ee5f77-570e-11ea-9b24-23fcad029119" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="45efbf09-570e-11ea-9b24-23fcad029119" type="resource" guid="c6ffaf13-6da4-11e9-8af5-2346ca56c2e2" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="fbc5b225-dd79-11ea-9383-71e9cf1c59dd">
-      <resource guid="fbc56402-dd79-11ea-9383-71e9cf1c59dd">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="fbc58b14-dd79-11ea-9383-71e9cf1c59dd" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="020063c2-dd7a-11ea-9383-71e9cf1c59dd" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="fcb2f86a-dd79-11ea-9383-71e9cf1c59dd" type="literal">isTemporary</object>
-        </predicate>
-        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
-          <object statement-guid="04156115-dd7a-11ea-9383-71e9cf1c59dd" type="literal">false</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="fbc6c396-dd79-11ea-9383-71e9cf1c59dd" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="45ef97f8-570e-11ea-9b24-23fcad029119" type="literal">AbstractSingleHost</object>

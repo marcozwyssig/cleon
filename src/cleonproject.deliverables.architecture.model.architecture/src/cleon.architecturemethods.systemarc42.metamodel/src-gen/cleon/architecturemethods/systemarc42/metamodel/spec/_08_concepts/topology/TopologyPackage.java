@@ -62,7 +62,7 @@ public class TopologyPackage {
   public static final Resource FunctionSpace_aE_Topology_AbstractSiteComposition = new Resource("8a0694cd-b4a2-11ea-b938-599963fc0a84");
   public static final Resource AbstractClusterHost = new Resource("2e1dbcf7-da24-11ea-ae00-5518e944c256");
   public static final Resource AbstractNumberAware = new Resource("57d5abe9-da24-11ea-ae00-5518e944c256");
-  public static final Resource AbstractSingleHost_isTemporary = new Resource("fbc56402-dd79-11ea-9383-71e9cf1c59dd");
+  public static final Resource AbstractHost_isTemporary = new Resource("fbc56402-dd79-11ea-9383-71e9cf1c59dd");
   public static final Resource SkipMonitoringAware_skipMonitoringGeneration = new Resource("dea8d429-dd80-11ea-9383-71e9cf1c59dd");
   public static final Resource FunctionSpace_aE_Topology_Multi_aE_TN = new Resource("8d69a78e-dd82-11ea-9383-71e9cf1c59dd");
   public static final Resource SkipMonitoringAware = new Resource("f9aaa3ca-e095-11ea-bb83-59933a3fa779");
@@ -93,4 +93,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,mQAN349ADrHTeoDAfgjlmqNeGgE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,MAZA3T9kWf88o5NtD78XJFWNlQI=] */

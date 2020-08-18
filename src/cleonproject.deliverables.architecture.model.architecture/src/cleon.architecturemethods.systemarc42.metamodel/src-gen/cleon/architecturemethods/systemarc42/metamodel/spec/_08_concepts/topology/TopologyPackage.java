@@ -70,10 +70,9 @@ public class TopologyPackage {
   public static final Resource Multi_aE_TN_mss = new Resource("e76727de-e0ae-11ea-8946-bf83c1249a1c");
   public static final Resource Multi_aE_TN_managedBy = new Resource("d4b33246-e0b4-11ea-8443-8f528e21caa3");
   public static final Resource ManagedRN = new Resource("e1de521f-e0b4-11ea-8443-8f528e21caa3");
-  public static final Resource ManagedRN_mss = new Resource("f340162d-e0b4-11ea-8443-8f528e21caa3");
+  public static final Resource ManagedRN_hssortdm = new Resource("f340162d-e0b4-11ea-8443-8f528e21caa3");
   public static final Resource TN_noManagedBy = new Resource("299e8b46-e0b5-11ea-8443-8f528e21caa3");
-  public static final Resource ManagedRN_managedHss = new Resource("5a8290d0-e0b5-11ea-8443-8f528e21caa3");
-  public static final Resource ManagedRN_managedTDM = new Resource("7634b7bf-e0b5-11ea-8443-8f528e21caa3");
+  public static final Resource ManagedRN_managedMss = new Resource("5a8290d0-e0b5-11ea-8443-8f528e21caa3");
   
   /* Begin Protected Region [[user]] */
   
@@ -94,4 +93,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,vgQxObk/y7f9u9c+eYAjDwGgyHw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,mQAN349ADrHTeoDAfgjlmqNeGgE=] */

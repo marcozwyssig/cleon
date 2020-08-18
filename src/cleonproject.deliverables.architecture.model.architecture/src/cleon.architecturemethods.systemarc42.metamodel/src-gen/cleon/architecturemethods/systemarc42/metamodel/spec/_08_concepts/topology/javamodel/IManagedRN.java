@@ -8,12 +8,10 @@ public interface IManagedRN extends ch.actifsource.core.javamodel.IDecorator {
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN selectMss();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts selectHssortdm();
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN> selectManagedHss();
-  
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITDM> selectManagedTDM();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN selectManagedMss();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1de521f-e0b4-11ea-8443-8f528e21caa3,LyE+3C4TLtnaTp4rTN/SPREERhA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1de521f-e0b4-11ea-8443-8f528e21caa3,TZVkyteW45yFJ8EPMx1DRCx4O1o=] */

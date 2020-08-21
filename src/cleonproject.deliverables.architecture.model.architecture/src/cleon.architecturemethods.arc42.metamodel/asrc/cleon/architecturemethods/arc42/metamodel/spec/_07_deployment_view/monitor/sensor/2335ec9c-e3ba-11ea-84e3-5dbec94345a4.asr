@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="2335ec9c-e3ba-11ea-84e3-5dbec94345a4">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="6002a700-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="6002a6fd-e3ba-11ea-84e3-5dbec94345a4" />
+    <resource statement-guid="6505c335-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="6505c332-e3ba-11ea-84e3-5dbec94345a4" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2335ec9e-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="23385d9f-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4d9761a3-e3ba-11ea-84e3-5dbec94345a4" type="literal">IgnoreUnknoenWarnings</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="6002a700-e3ba-11ea-84e3-5dbec94345a4">
+      <resource guid="6002a6fd-e3ba-11ea-84e3-5dbec94345a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6002a6ff-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="2335ec9c-e3ba-11ea-84e3-5dbec94345a4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6077fe11-e3ba-11ea-84e3-5dbec94345a4" type="literal">warn</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="6505c335-e3ba-11ea-84e3-5dbec94345a4">
+      <resource guid="6505c332-e3ba-11ea-84e3-5dbec94345a4">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6505c334-e3ba-11ea-84e3-5dbec94345a4" type="resource" guid="2335ec9c-e3ba-11ea-84e3-5dbec94345a4" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="658c7f80-e3ba-11ea-84e3-5dbec94345a4" type="literal">ignore</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

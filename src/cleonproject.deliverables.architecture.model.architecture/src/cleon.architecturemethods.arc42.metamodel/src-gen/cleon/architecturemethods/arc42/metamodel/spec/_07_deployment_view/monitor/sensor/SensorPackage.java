@@ -282,6 +282,10 @@ public class SensorPackage {
   public static final Resource restcustom_jsonfile = new Resource("39c05cc5-dc7a-11ea-a169-cb4c6ff66798");
   public static final Resource http_url = new Resource("6fcadeb2-dc97-11ea-b5f8-77c3980a1d0a");
   public static final Resource FunctionSpace_aE_Sensor_http = new Resource("cc633f5c-dc97-11ea-b5f8-77c3980a1d0a");
+  public static final Resource esxserverhealthsensorextern_ignoreunknownwarnings = new Resource("f0973e65-e3b9-11ea-84e3-5dbec94345a4");
+  public static final Resource IgnoreUnknoenWarnings = new Resource("2335ec9c-e3ba-11ea-84e3-5dbec94345a4");
+  public static final Resource IgnoreUnknoenWarnings_warn = new Resource("6002a6fd-e3ba-11ea-84e3-5dbec94345a4");
+  public static final Resource IgnoreUnknoenWarnings_ignore = new Resource("6505c332-e3ba-11ea-84e3-5dbec94345a4");
   
   /* Begin Protected Region [[user]] */
   
@@ -302,4 +306,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,5lb0QRSujzMAZy/XKXs75B0ei/A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,jFT+Rbrt+4BVPgBWhTZ+W5yYSQ0=] */

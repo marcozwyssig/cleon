@@ -227,6 +227,31 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IesxserverhealthsensorexternFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("26a3f4fa-e3bb-11ea-84e3-5dbec94345a4")
+    public java.lang.String RenderSensor();
+
+  }
+  
+  public static interface IesxserverhealthsensorexternFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class esxserverhealthsensorexternFunctionsImpl implements IesxserverhealthsensorexternFunctionsImpl {
+
+    public static final IesxserverhealthsensorexternFunctionsImpl INSTANCE = new esxserverhealthsensorexternFunctionsImpl();
+
+    private esxserverhealthsensorexternFunctionsImpl() {}
+
+  }
+  
+  public static class esxserverhealthsensorexternFunctions {
+
+    private esxserverhealthsensorexternFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Lhb7un+ReMUjwfImXEXvzEnCQtg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Tu80x57aUi0okGJZInsiqeFULbs=] */

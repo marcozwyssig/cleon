@@ -51,6 +51,16 @@ public class Esxserverhealthsensorextern extends DynamicResource implements IEsx
   // relations
   
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings selectIgnoreunknownwarnings() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.esxserverhealthsensorextern_ignoreunknownwarnings);
+  }
+
+  public Esxserverhealthsensorextern setIgnoreunknownwarnings(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings ignoreunknownwarnings) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.esxserverhealthsensorextern_ignoreunknownwarnings, ignoreunknownwarnings);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -66,8 +76,15 @@ public class Esxserverhealthsensorextern extends DynamicResource implements IEsx
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.esxserverhealthsensorextern_ignoreunknownwarnings, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IEsxserverhealthsensorextern> selectToMeIgnoreunknownwarnings(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IEsxserverhealthsensorextern.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.esxserverhealthsensorextern_ignoreunknownwarnings, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50281c-c1eb-11ea-820f-9931558a898c,lWEko8zlr1COQ42ZazBQNkKCB1E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50281c-c1eb-11ea-820f-9931558a898c,6K84Tw4mOyDy+F0uL5fWg84hEcc=] */

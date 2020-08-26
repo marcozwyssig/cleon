@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="67bf2569-e6c4-11ea-92fa-2db17cc89b0c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="a5811ff8-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="a580d1d6-e6c5-11ea-92fa-2db17cc89b0c" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="67bf256b-e6c4-11ea-92fa-2db17cc89b0c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="67c0ac0c-e6c4-11ea-92fa-2db17cc89b0c" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a5811ff8-e6c5-11ea-92fa-2db17cc89b0c">
+      <resource guid="a580d1d6-e6c5-11ea-92fa-2db17cc89b0c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a580f8e7-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a582587b-e6c5-11ea-92fa-2db17cc89b0c" type="literal">directoryService</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a5827f8c-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a5827f8d-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="a582587a-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="d0f6ae54-e6c3-11ea-92fa-2db17cc89b0c" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="a5811ff9-e6c5-11ea-92fa-2db17cc89b0c" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="68efb630-e6c4-11ea-92fa-2db17cc89b0c" type="literal">DirectoryServiceUsage</object>
+  </predicate>
+</resource>
+

@@ -8,10 +8,10 @@ public interface IActor extends cleon.common.resources.metamodel.spec.id.javamod
   
   // relations
   
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IDomainFlow_Out> selectDomainFlow_Out();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IDomainFlow_Out> selectDomainFlow_Out();
   
   public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IDomainFlow_In> selectDomainFlow_In();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a037dbde-2660-11e6-ae54-e50d44645ae7,LpSm+XCAh3x+bBpIXYOb4Xd7Zc4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a037dbde-2660-11e6-ae54-e50d44645ae7,Zba+LqS3w5wMRwxyTk4jWMK78H4=] */

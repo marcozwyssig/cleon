@@ -71,6 +71,16 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains selectDomains() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_domains);
+  }
+
+  public SegmentationConcept setDomains(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains domains) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_domains, domains);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -116,6 +126,7 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_domains, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISegmentation.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_segmentation, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_subzonePolicies, visitor);
@@ -132,5 +143,9 @@ public class SegmentationConcept extends DynamicResource implements ISegmentatio
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_subzonePolicies, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.javamodel.ISegmentationConcept selectToMeDomains(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.javamodel.ISegmentationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.SegmentationPackage.SegmentationConcept_domains, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,AHBLDhzsZr28NKrBuPmAiWKPAZ0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,V0RQQ50F1aeQgwJiJd0a6ZRiFgk=] */

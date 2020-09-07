@@ -3,6 +3,7 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="dcb4a71b-0d1d-11e9-be4f-03130cc057ef" type="resource" guid="dcb48007-0d1d-11e9-be4f-03130cc057ef" />
     <resource statement-guid="5f8ea868-46ae-11ea-a3ec-0b6257fa3f35" type="resource" guid="2873b7b0-b844-11e9-8760-2d4a9d15ec14" />
+    <resource statement-guid="8c63331c-f0f0-11ea-a3e3-77cc0d784bc8" type="resource" guid="66820d69-d00e-11ea-b5a9-731249efa1a3" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="d56c10ca-04ed-11e9-8ff2-6313785a338c" type="resource" guid="d56c10bf-04ed-11e9-8ff2-6313785a338c">
@@ -63,6 +64,25 @@
         </predicate>
         <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
           <object statement-guid="5e9d1d4e-d1a7-11ea-aaa2-e3554b4f77be" type="resource" guid="6b3c6f05-ff96-11e8-9d0c-c96c1e9b7b46" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8c63331c-f0f0-11ea-a3e3-77cc0d784bc8">
+      <resource guid="66820d69-d00e-11ea-b5a9-731249efa1a3">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6682347b-d00e-11ea-b5a9-731249efa1a3" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6682347c-d00e-11ea-b5a9-731249efa1a3" type="literal">domains</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6682f7ce-d00e-11ea-b5a9-731249efa1a3" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="66831edf-d00e-11ea-b5a9-731249efa1a3" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="668345f0-d00e-11ea-b5a9-731249efa1a3" type="resource" guid="4d3ffd5b-d00e-11ea-b5a9-731249efa1a3" />
         </predicate>
       </resource>
     </object>

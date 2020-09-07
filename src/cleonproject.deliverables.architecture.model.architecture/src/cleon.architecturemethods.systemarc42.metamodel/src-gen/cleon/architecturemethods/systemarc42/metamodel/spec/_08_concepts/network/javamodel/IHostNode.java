@@ -10,6 +10,8 @@ public interface IHostNode extends cleon.modelinglanguages.network.metamodel.spe
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost selectHost();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain selectRestrictToDomain();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,dRdL5EHZqBP3YlxNXMzskUHT4MM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,5EL+mpCy+ZDk1SuGZNYqbACaU9I=] */

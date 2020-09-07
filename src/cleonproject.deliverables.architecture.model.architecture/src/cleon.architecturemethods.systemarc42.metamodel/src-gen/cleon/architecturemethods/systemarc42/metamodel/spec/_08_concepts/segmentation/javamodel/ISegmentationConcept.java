@@ -12,6 +12,8 @@ public interface ISegmentationConcept extends cleon.architecturemethods.systemar
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies selectSubzonePolicies();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomains selectDomains();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,0QommGCQUeSwsD3XCHVKmcFAmTU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d56c10bc-04ed-11e9-8ff2-6313785a338c,kC5b6bJdN0Q8OzONF3tg+QNTArE=] */

@@ -11,6 +11,7 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceInSubSecurityZoneFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IGlobalDomain;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy;
 
 public class SourceSubSecurityZoneValidatorAspect implements IResourceValidationAspect {
@@ -31,7 +32,7 @@ public class SourceSubSecurityZoneValidatorAspect implements IResourceValidation
 
 		final boolean isIntra = sourceSubSecurityZone.selectSubZoneAccessPolicy() instanceof IIntraSubZoneAccessPolicy;
 		if( isIntra ) {
-			if( sourceSubSecurityZone.selectUsedInDomains().stream().anyMatch(x -> x.selectAllowedForIntra() == false) ) {
+			if( sourceSubSecurityZone.selectUsedInDomains().stream().anyMatch(x -> x instanceof IGlobalDomain ) ) {
 				validationList.add(new PredicateInconsistency(validationContext.getPackage(), sourceSubSecurityZone.getResource(),
 						CommunicationPackage.SourceInSubSecurityZone_usedInDomains, "some of the domain(s) are not allowed on a intra connection"));				
 			}

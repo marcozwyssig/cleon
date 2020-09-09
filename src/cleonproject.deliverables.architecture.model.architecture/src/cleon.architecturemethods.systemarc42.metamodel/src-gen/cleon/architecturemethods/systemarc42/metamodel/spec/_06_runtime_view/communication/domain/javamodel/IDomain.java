@@ -6,10 +6,6 @@ public interface IDomain extends ch.actifsource.core.javamodel.INamedResource, c
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("4f9dc299-d00e-11ea-b5a9-731249efa1a3");
   
-  // attributes
-  
-  public java.lang.Boolean selectAllowedForIntra();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,dBsZfw3fsbFeRPFrZ8ias4phBFU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,k4rZKT51UOZaxKd5Bkm3eBPgZys=] */

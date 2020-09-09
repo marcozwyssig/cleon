@@ -287,6 +287,7 @@ public class SensorPackage {
   public static final Resource IgnoreUnknoenWarnings_warn = new Resource("6002a6fd-e3ba-11ea-84e3-5dbec94345a4");
   public static final Resource IgnoreUnknoenWarnings_ignore = new Resource("6505c332-e3ba-11ea-84e3-5dbec94345a4");
   public static final Resource httpdataadvanced_httpurl = new Resource("1eae6cbb-e6c3-11ea-92fa-2db17cc89b0c");
+  public static final Resource ping_address = new Resource("310da901-f29c-11ea-b011-6106590acfe5");
   
   /* Begin Protected Region [[user]] */
   
@@ -307,4 +308,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,6kXs0gh6V0lEUMd7mapx5ik8qRQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,qboSmSHGUB7g63IFWpiGS6ueqEU=] */

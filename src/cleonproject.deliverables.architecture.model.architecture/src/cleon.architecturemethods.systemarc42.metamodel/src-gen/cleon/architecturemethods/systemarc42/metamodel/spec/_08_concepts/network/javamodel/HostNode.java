@@ -80,11 +80,11 @@ public class HostNode extends DynamicResource implements IHostNode {
   }
     
   @Override
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDedicatedDomain> selectRestrictToDomains() {
-    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDedicatedDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains);
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain> selectRestrictToDomains() {
+    return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains);
   }
 
-  public HostNode setRestrictToDomains(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDedicatedDomain> restrictToDomains) {
+  public HostNode setRestrictToDomains(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain> restrictToDomains) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains, restrictToDomains);
     return this;
   }
@@ -118,7 +118,7 @@ public class HostNode extends DynamicResource implements IHostNode {
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_host, visitor);
     _acceptSingle(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_D.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractNetworkNode_iPv4_aE_D, visitor);
-    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDedicatedDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains, visitor);
+    _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -128,9 +128,9 @@ public class HostNode extends DynamicResource implements IHostNode {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_host, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> selectToMeRestrictToDomains(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDedicatedDomain object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> selectToMeRestrictToDomains(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.HostNode_restrictToDomains, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,ou6lIO5ZsOenF7+WUoNbY59zlUY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1580b55d-92a0-11e9-b2b4-f340ae70802c,7mG8h8zZi+FmOBFgQtYmoTRLALo=] */

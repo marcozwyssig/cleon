@@ -28,28 +28,28 @@ public class MultilingualDescription extends DynamicResource implements IMultili
     super(resourceRepository, resource, IMultilingualDescription.TYPE_ID);
   }
 
-  // relations
+  // attributes
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> selectDefaultDescription() {
-    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_defaultDescription);
-  }
-
-  public MultilingualDescription setDefaultDescription(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> defaultDescription) {
-    _setMap(cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_defaultDescription, defaultDescription);
-    return this;
+  public java.lang.String selectComment() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
   }
     
+  public void setComment(java.lang.String comment) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
+  }
+
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> selectDescription() {
-    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_description);
-  }
-
-  public MultilingualDescription setDescription(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> description) {
-    _setMap(cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_description, description);
-    return this;
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
     
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  // relations
+  
   @Override
   public cleon.common.language.metamodel.spec.javamodel.ILanguageSettings selectLanguageSettings() {
     return _getSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractMultilingual_languageSettings);
@@ -57,6 +57,16 @@ public class MultilingualDescription extends DynamicResource implements IMultili
 
   public MultilingualDescription setLanguageSettings(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings languageSettings) {
     _setSingle(cleon.common.language.metamodel.spec.SpecPackage.AbstractMultilingual_languageSettings, languageSettings);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> selectTranslation() {
+    return _getMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation);
+  }
+
+  public MultilingualDescription setTranslation(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.common.language.metamodel.spec.javamodel.ILanguageDescription> translation) {
+    _setMap(cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, translation);
     return this;
   }
     
@@ -73,22 +83,19 @@ public class MultilingualDescription extends DynamicResource implements IMultili
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_defaultDescription, visitor);
-    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_description, visitor);
     _acceptSingle(cleon.common.language.metamodel.spec.javamodel.ILanguageSettings.class, cleon.common.language.metamodel.spec.SpecPackage.AbstractMultilingual_languageSettings, visitor);
+    _acceptMap(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription selectToMeDefaultDescription(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_defaultDescription, object.getResource());
-  }
-  
-  public static cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription selectToMeDescription(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription object) {
-    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_description, object.getResource());
+  public static cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription selectToMeTranslation(cleon.common.language.metamodel.spec.javamodel.ILanguageDescription object) {
+    return _getToMeSingle(object.getRepository(), cleon.common.language.metamodel.spec.javamodel.IMultilingualDescription.class, cleon.common.language.metamodel.spec.SpecPackage.MultilingualDescription_translation, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a9e3052c-335e-11e8-a9fe-87ba35d8f5c4,PxeUQLizIE7NMgEFeXuatW1iKko=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a9e3052c-335e-11e8-a9fe-87ba35d8f5c4,W9LujqXi3LOazdiHWXpuVnUGi4I=] */

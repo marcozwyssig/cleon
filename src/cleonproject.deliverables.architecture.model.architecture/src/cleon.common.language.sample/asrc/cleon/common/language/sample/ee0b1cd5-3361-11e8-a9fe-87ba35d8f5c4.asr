@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="ee0b1cd5-3361-11e8-a9fe-87ba35d8f5c4">
-  <owns predicate="8a014a0e-335f-11e8-a9fe-87ba35d8f5c4">
-    <resource statement-guid="f09f35a7-3361-11e8-a9fe-87ba35d8f5c4" type="resource" guid="f09f0e93-3361-11e8-a9fe-87ba35d8f5c4" />
-  </owns>
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="04da04dc-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="04d9ddc8-365f-11e8-a8f4-eb71f249f68a" />
     <resource statement-guid="0956da77-365f-11e8-a8f4-eb71f249f68a" type="resource" guid="0956b363-365f-11e8-a8f4-eb71f249f68a" />
@@ -14,22 +11,10 @@
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ee0b43e7-3361-11e8-a9fe-87ba35d8f5c4" type="resource" guid="a9e3052c-335e-11e8-a9fe-87ba35d8f5c4" />
   </predicate>
-  <predicate guid="8a014a0e-335f-11e8-a9fe-87ba35d8f5c4">
-    <object statement-guid="f09f35a7-3361-11e8-a9fe-87ba35d8f5c4">
-      <resource guid="f09f0e93-3361-11e8-a9fe-87ba35d8f5c4">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="f09f0e95-3361-11e8-a9fe-87ba35d8f5c4" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
-        </predicate>
-        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
-          <object statement-guid="f11b6a8e-3361-11e8-a9fe-87ba35d8f5c4" type="literal">Der Wald steht über den Berg.</object>
-          <object statement-guid="9c235006-336a-11e8-a9c3-6dbf8eca786d" type="literal">Es gibt nur wenige Wunder.</object>
-          <object statement-guid="a5e2025c-3661-11e8-a8f4-eb71f249f68a" type="literal">Wichtige Personen sind in den Medien präsent</object>
-        </predicate>
-        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
-          <object statement-guid="f09f35a6-3361-11e8-a9fe-87ba35d8f5c4" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
-        </predicate>
-      </resource>
-    </object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="84bfb186-f380-11ea-9268-b5c52a12d7f9" type="literal">Der Wald steht über den Berg.</object>
+    <object statement-guid="84bfd897-f380-11ea-9268-b5c52a12d7f9" type="literal">Es gibt nur wenige Wunder.</object>
+    <object statement-guid="84bfffa8-f380-11ea-9268-b5c52a12d7f9" type="literal">Wichtige Personen sind in den Medien präsent</object>
   </predicate>
   <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <object statement-guid="04da04dc-365f-11e8-a8f4-eb71f249f68a">

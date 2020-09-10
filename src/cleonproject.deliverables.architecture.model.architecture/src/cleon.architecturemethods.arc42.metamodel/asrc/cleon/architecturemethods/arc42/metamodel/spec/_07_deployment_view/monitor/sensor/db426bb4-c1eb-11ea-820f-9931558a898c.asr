@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db426bb4-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="bd3e2474-f379-11ea-9268-b5c52a12d7f9" type="resource" guid="bd3dfd60-f379-11ea-9268-b5c52a12d7f9" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db426bb6-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
@@ -9,8 +12,26 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db426bb7-c1eb-11ea-820f-9931558a898c" type="literal">businessprocess</object>
   </predicate>
-  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-    <object statement-guid="c25ed393-cfeb-11ea-99e7-03141914df18" type="literal">Monitors several business process components and shows a summary status of the whole business process</object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="ac9e9e6c-f379-11ea-9268-b5c52a12d7f9" type="literal">Monitors several business process components and shows a summary status of the whole business process</object>
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="bd3e2474-f379-11ea-9268-b5c52a12d7f9">
+      <resource guid="bd3dfd60-f379-11ea-9268-b5c52a12d7f9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd3dfd62-f379-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="be040bb6-f379-11ea-9268-b5c52a12d7f9" type="literal">Überwacht mehrere Geschäftsprozesskomponenten und zeigt einen zusammenfassenden Status des gesamten Geschäftsprozesses an</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="bd3e2473-f379-11ea-9268-b5c52a12d7f9" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="ad520ff0-f379-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c25ed392-cfeb-11ea-99e7-03141914df18" type="literal">Business Process</object>

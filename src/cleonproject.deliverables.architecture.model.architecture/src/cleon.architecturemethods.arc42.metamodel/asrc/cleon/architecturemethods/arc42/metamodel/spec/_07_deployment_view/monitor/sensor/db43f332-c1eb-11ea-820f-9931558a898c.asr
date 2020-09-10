@@ -3,6 +3,9 @@
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="6fcb53e5-dc97-11ea-b5f8-77c3980a1d0a" type="resource" guid="6fcadeb2-dc97-11ea-b5f8-77c3980a1d0a" />
   </owns>
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="c5620c43-f37d-11ea-9268-b5c52a12d7f9" type="resource" guid="c561970f-f37d-11ea-9268-b5c52a12d7f9" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db43f334-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
@@ -30,8 +33,26 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db43f335-c1eb-11ea-820f-9931558a898c" type="literal">http</object>
   </predicate>
-  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-    <object statement-guid="c238ae55-cfeb-11ea-99e7-03141914df18" type="literal">Monitors a web server using HTTP (Hypertext Transfer Protocol) or HTTPS</object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="34b4588b-f37c-11ea-9268-b5c52a12d7f9" type="literal">Monitors a web server using HTTP (Hypertext Transfer Protocol) or HTTPS</object>
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="c5620c43-f37d-11ea-9268-b5c52a12d7f9">
+      <resource guid="c561970f-f37d-11ea-9268-b5c52a12d7f9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c561be21-f37d-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="c5f01b74-f37d-11ea-9268-b5c52a12d7f9" type="literal">Überwacht einen Webserver mithilfe von HTTP (Hypertext Transfer Protocol) oder HTTPS</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="c561e532-f37d-11ea-9268-b5c52a12d7f9" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="8e2820b8-f37c-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c238ae54-cfeb-11ea-99e7-03141914df18" type="literal">HTTP</object>

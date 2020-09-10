@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db4b94d4-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="921e2fb1-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="921d936d-f37b-11ea-9268-b5c52a12d7f9" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db4b94d6-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
@@ -9,8 +12,26 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db4b94d7-c1eb-11ea-820f-9931558a898c" type="literal">snmphpmemorycontroller</object>
   </predicate>
-  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-    <object statement-guid="c2424aae-cfeb-11ea-99e7-03141914df18" type="literal">Monitors a memory controller in an HPE server</object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="85a00e19-f37a-11ea-9268-b5c52a12d7f9" type="literal">Monitors a memory controller in an HPE server</object>
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="921e2fb1-f37b-11ea-9268-b5c52a12d7f9">
+      <resource guid="921d936d-f37b-11ea-9268-b5c52a12d7f9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="921dba7f-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="92a0a622-f37b-11ea-9268-b5c52a12d7f9" type="literal">Überwacht einen Speichercontroller in einem HPE-Server</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="921e08a0-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="3cd720da-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c2424aad-cfeb-11ea-99e7-03141914df18" type="literal">SNMP HPE ProLiant Memory Controller</object>

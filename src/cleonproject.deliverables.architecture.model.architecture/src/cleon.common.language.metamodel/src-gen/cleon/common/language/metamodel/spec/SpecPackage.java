@@ -13,10 +13,9 @@ public class SpecPackage {
   public static final Resource LanguageSettings_defaultLanguage = new Resource("7a3eac29-335e-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageSettings_languages = new Resource("7f8decf1-335e-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualDescription = new Resource("a9e3052c-335e-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource MultilingualDescription_defaultDescription = new Resource("8a014a0e-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageDescription = new Resource("d03edb49-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource LanguageDescription_language = new Resource("e27afaae-335f-11e8-a9fe-87ba35d8f5c4");
-  public static final Resource MultilingualDescription_description = new Resource("ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4");
+  public static final Resource MultilingualDescription_translation = new Resource("ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName = new Resource("1564455b-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource AbstractMultilingual_languageSettings = new Resource("1564455c-3360-11e8-a9fe-87ba35d8f5c4");
   public static final Resource MultilingualName_defaultName = new Resource("15644565-3360-11e8-a9fe-87ba35d8f5c4");
@@ -45,4 +44,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,acq9QghBFC4ks3Xm2qq9kzRoZOU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.language.metamodel.spec,0dDIhNhcfDegpJaRfGio3BBPCqU=] */

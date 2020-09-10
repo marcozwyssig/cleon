@@ -23,14 +23,14 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 	private static final String UTF_8 = "UTF-8";
 
 	private static String translate(String langFrom, String langTo, String text) throws IOException {
-		String urlStr = "https://script.google.com/macros/s/AKfycby_k95UjogH_lhEjy6CGYUW6wZg2ELAKQIp3uB5Iw2PExxRx1RV/exec" + "?q=" + URLEncoder.encode(text, UTF_8) + "&target="
+		final String urlStr = "https://script.google.com/macros/s/AKfycby_k95UjogH_lhEjy6CGYUW6wZg2ELAKQIp3uB5Iw2PExxRx1RV/exec" + "?q=" + URLEncoder.encode(text, UTF_8) + "&target="
 				+ langTo + "&source=" + langFrom;
-		URL url = new URL(urlStr);
-		URLConnection con = url.openConnection();
+		final URL url = new URL(urlStr);
+		final URLConnection con = url.openConnection();
 		con.setRequestProperty("User-Agent", "Mozilla/5.0");
 		try (BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream(), UTF_8)))
 		{
-			StringBuilder response = new StringBuilder();			
+			final StringBuilder response = new StringBuilder();			
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				response.append(inputLine);
@@ -38,40 +38,37 @@ public abstract class AbstractMultiLanguageInitializationAspect extends Abstract
 			return response.toString();		
 		}
 	}
-	
-	protected abstract boolean isDefault(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
+
 	protected abstract String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract Iterable<String> getSourceText(IDynamicResourceRepository dynamicResourceRepository, INode newInstance);
 	protected abstract void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal);
 
+	@Override
 	public void initialize(IModifiable modifiable, INode clazz, Package pkg, INode newInstance) {
 
 		try {
-			ITypeSystem typeSystem = TypeSystem.create(modifiable);
-			IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+			final ITypeSystem typeSystem = TypeSystem.create(modifiable); 
+			final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
-			if( isDefault(resourceRepository, newInstance))
-				return;
-			
-			String targetLanguage = getTargetLanguage(resourceRepository, newInstance);
-			String sourceLanguage = getSourceLanguage(resourceRepository, newInstance);
-			
+			final String targetLanguage = getTargetLanguage(resourceRepository, newInstance);
+			final String sourceLanguage = getSourceLanguage(resourceRepository, newInstance);
+
 			getSourceText(resourceRepository, newInstance).forEach(sourceText -> {
 				String targetText;
 				try {
 					targetText = translate(sourceLanguage, targetLanguage, sourceText);
 					ch.actifsource.util.log.Logger.instance().logInfo(String.format("Source Language: %s; Target Language: %s; Source Text: %s; Target Text: %s;", sourceLanguage, targetLanguage, sourceText, targetText));
 					setTargetText(modifiable, pkg, newInstance, LiteralUtil.create(targetText));				
-				} catch (IOException e) {
+				} catch (final IOException e) {
 					throw new RuntimeException(e);
 				}
 			});
-		} catch (Exception e) {
+		} catch (final Exception e) {
 			if( e != null)
 			{
-				StringWriter sw = new StringWriter();
-				PrintWriter pw = new PrintWriter(sw);
+				final StringWriter sw = new StringWriter();
+				final PrintWriter pw = new PrintWriter(sw);
 				e.printStackTrace(pw);			
 				ch.actifsource.util.log.Logger.instance().logError("Exception: " + e.getMessage() + " StackTrace: " + sw);				
 			}

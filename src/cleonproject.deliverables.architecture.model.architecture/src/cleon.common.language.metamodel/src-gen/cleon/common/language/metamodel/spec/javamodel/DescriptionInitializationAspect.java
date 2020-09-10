@@ -11,39 +11,29 @@ import cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage;
 public class DescriptionInitializationAspect extends AbstractMultiLanguageInitializationAspect {
 	@Override
 	protected String getTargetLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		final ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
 		return description.selectLanguage().selectCode();		
 	}
 
 	@Override
 	protected String getSourceLanguage(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		ILanguageDescription defaultDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
-		return defaultDescription.selectLanguage().selectCode();
+		return getDefaultDescription(dynamicResourceRepository, newInstance).selectLanguageSettings().selectDefaultLanguage().selectCode();
 	}
 
-	private ILanguageDescription getDefaultDescription(IDynamicResourceRepository dynamicResourceRepository,
+	private IMultilingualDescription getDefaultDescription(IDynamicResourceRepository dynamicResourceRepository,
 			INode newInstance) {
-		ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
-		IMultilingualDescription multilingualDescription = MultilingualDescription.selectToMeDescription(description);
-		ILanguageDescription defaultDescription = multilingualDescription.selectDefaultDescription().values().stream().findFirst().get();
-		return defaultDescription;
+		final ILanguageDescription description = dynamicResourceRepository.getResource(ILanguageDescription.class, newInstance);
+		return MultilingualDescription.selectToMeTranslation(description);
 	}
 
 	@Override
 	protected Iterable<String> getSourceText(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		ILanguageDescription defaultDescription = getDefaultDescription(dynamicResourceRepository, newInstance);
-		return defaultDescription.selectDescriptions();
+		return getDefaultDescription(dynamicResourceRepository, newInstance).selectDescriptions();
 	}
 
 	@Override
 	protected void setTargetText(IModifiable modifiable, Package pkg, INode newInstance, Literal literal) {
 		Update.createStatement(modifiable, pkg, newInstance, DescriptionsPackage.SimpleDescription_descriptions, literal);									
 	}
-	
-	@Override
-	protected boolean isDefault(IDynamicResourceRepository dynamicResourceRepository, INode newInstance) {
-		ILanguageDescription description = getDefaultDescription(dynamicResourceRepository, newInstance);
-		return MultilingualDescription.selectToMeDefaultDescription(description) == null;
-	}
-	
+
 }

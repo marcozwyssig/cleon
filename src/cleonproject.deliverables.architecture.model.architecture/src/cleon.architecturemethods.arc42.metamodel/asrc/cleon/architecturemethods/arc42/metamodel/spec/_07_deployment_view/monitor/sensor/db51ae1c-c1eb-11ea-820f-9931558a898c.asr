@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db51ae1c-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <resource statement-guid="5b3ba3d4-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="5b3b55b0-f380-11ea-9268-b5c52a12d7f9" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db51ae1e-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
@@ -9,8 +12,26 @@
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db51ae1f-c1eb-11ea-820f-9931558a898c" type="literal">wmicustomstring</object>
   </predicate>
-  <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
-    <object statement-guid="c233f323-cfeb-11ea-99e7-03141914df18" type="literal">Performs a custom WMI query and shows the returned string</object>
+  <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+    <object statement-guid="f013c427-f37d-11ea-9268-b5c52a12d7f9" type="literal">Performs a custom WMI query and shows the returned string</object>
+  </predicate>
+  <predicate guid="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="5b3ba3d4-f380-11ea-9268-b5c52a12d7f9">
+      <resource guid="5b3b55b0-f380-11ea-9268-b5c52a12d7f9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5b3b55b2-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="5bd7bcc5-f380-11ea-9268-b5c52a12d7f9" type="literal">Führt eine benutzerdefinierte WMI-Abfrage durch und zeigt die zurückgegebene Zeichenfolge an</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="5b3ba3d3-f380-11ea-9268-b5c52a12d7f9" type="resource" guid="dd7ae0a5-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
+    <object statement-guid="3dc215c8-f37e-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c233f322-cfeb-11ea-99e7-03141914df18" type="literal">WMI Custom String</object>

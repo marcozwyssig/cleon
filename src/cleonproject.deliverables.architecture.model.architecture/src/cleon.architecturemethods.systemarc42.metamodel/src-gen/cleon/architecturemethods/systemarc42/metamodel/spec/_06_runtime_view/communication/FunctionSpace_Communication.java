@@ -180,6 +180,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctBySourceAndService();
 
+    @IDynamicResourceExtension.MethodId("130d994a-f346-11ea-9268-b5c52a12d7f9")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestinationAndService();
+
     @IDynamicResourceExtension.MethodId("a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByService();
 
@@ -225,6 +228,9 @@ public class FunctionSpace_Communication {
 
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctBySourceAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
+
+    @IDynamicResourceExtension.MethodId("130d994a-f346-11ea-9268-b5c52a12d7f9")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("a74e1baf-0adf-11ea-bf24-ff0f7ff0bb53")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
@@ -299,6 +305,20 @@ public class FunctionSpace_Communication {
       		.filter(distinctByKeys)
       		.collect(Collectors.toList());    	
       /* End Protected Region   [[11651668-04c4-11ea-8fff-bb311a3ad127]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
+      /* Begin Protected Region [[130d994a-f346-11ea-9268-b5c52a12d7f9]] */
+      final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
+      	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
+      	return functions.Destination();
+      }, ISource::selectCommunicatesWith);
+      return sourceList.stream()
+      		.filter(distinctByKeys)
+      		.collect(Collectors.toList());    	
+      /* End Protected Region   [[11651668-04c4-11ea-
+      /* End Protected Region   [[130d994a-f346-11ea-9268-b5c52a12d7f9]] */
     }
 
     @Override
@@ -440,6 +460,10 @@ public class FunctionSpace_Communication {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctBySourceAndService(sourceList);
     }
 
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestinationAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
+      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctByDestinationAndService(sourceList);
+    }
+
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).distinctByService(sourceList);
     }
@@ -496,7 +520,7 @@ public class FunctionSpace_Communication {
     public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination Destination();
 
     @IDynamicResourceExtension.MethodId("7af335a7-e077-11e9-aa67-4505845acdbd")
-    public java.lang.String SubLayerName(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunication communication);
+    public java.lang.String SubLayerName(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationSystem communication);
 
     @IDynamicResourceExtension.MethodId("fb35f7dd-0b62-11ea-bef6-75a700135135")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AllInterSourceDistinctByService();
@@ -734,4 +758,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,zlI/mC6G9eoOMwTYQV0B+Hr76Kc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,uHMWgtOyt2Yc8f+QZwvxHafXlFs=] */

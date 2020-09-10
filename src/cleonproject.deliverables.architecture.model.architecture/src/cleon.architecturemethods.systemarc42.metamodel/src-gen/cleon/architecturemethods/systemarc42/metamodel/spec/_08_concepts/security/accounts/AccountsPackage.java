@@ -15,6 +15,7 @@ public class AccountsPackage {
   public static final Resource Account_builtinRole = new Resource("9fce9a63-a1ae-11ea-886d-354b9ee6fb2d");
   public static final Resource Account_activitiesForAccount = new Resource("e5a6d986-a1ae-11ea-886d-354b9ee6fb2d");
   public static final Resource Account_systemConfigurationForActivity = new Resource("0284727a-d8c6-11ea-ae00-5518e944c256");
+  public static final Resource gMSA_aE_Account = new Resource("06ea6eda-f333-11ea-9268-b5c52a12d7f9");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +36,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,KPKX8ZN0UMf2WaP5n4BrYLEa83s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,cC6Qy+B5hKq+wN96wh3wFmkXN54=] */

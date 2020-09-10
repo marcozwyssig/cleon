@@ -5,11 +5,11 @@ import ch.actifsource.core.Resource;
 public class CommunicationPackage {
   
   public static final Resource CommunicationView = new Resource("6c796bef-8779-11e9-a61b-279ebde48b48");
-  public static final Resource Communication = new Resource("91bc9aa9-8779-11e9-a61b-279ebde48b48");
+  public static final Resource CommunicationSystem = new Resource("91bc9aa9-8779-11e9-a61b-279ebde48b48");
   public static final Resource CommunicationView_destinationSystemCommunications = new Resource("9b62d9a7-8779-11e9-a61b-279ebde48b48");
-  public static final Resource Communication_communicationSystem = new Resource("a4c9ed02-8779-11e9-a61b-279ebde48b48");
+  public static final Resource CommunicationSystem_communicationSystem = new Resource("a4c9ed02-8779-11e9-a61b-279ebde48b48");
   public static final Resource Destination = new Resource("54bec968-877a-11e9-a61b-279ebde48b48");
-  public static final Resource Communication_destination = new Resource("5d6a069d-877a-11e9-a61b-279ebde48b48");
+  public static final Resource CommunicationSystem_destination = new Resource("5d6a069d-877a-11e9-a61b-279ebde48b48");
   public static final Resource Destination_destinationSystemConfiguration = new Resource("69b266d0-877a-11e9-a61b-279ebde48b48");
   public static final Resource Source = new Resource("bf998613-877a-11e9-a61b-279ebde48b48");
   public static final Resource DestinationSubSecurityZone_hasCommunicationFrom = new Resource("c7893a7b-877a-11e9-a61b-279ebde48b48");
@@ -69,4 +69,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,wm7KiTRQRJMXwnYnhHxpdmQg8vk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,NQU/dgSQrYaWV+/CLpKfk8w1MHk=] */

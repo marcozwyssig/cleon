@@ -71,7 +71,7 @@ public class profiles__T_yaml {
   public static interface IexexmlFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("88287c35-d625-11ea-96bb-39ddde1b696a")
-    public java.lang.String RenderSensor();
+    public java.lang.String RenderSpecificSensor();
 
   }
   
@@ -96,7 +96,7 @@ public class profiles__T_yaml {
   public static interface IrestcustomFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c6554aeb-dc89-11ea-a169-cb4c6ff66798")
-    public java.lang.String RenderSensor();
+    public java.lang.String RenderSpecificSensor();
 
   }
   
@@ -255,7 +255,7 @@ public class profiles__T_yaml {
   public static interface IhttpdataadvancedFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("30693b8b-e6c5-11ea-92fa-2db17cc89b0c")
-    public java.lang.String RenderSensor();
+    public java.lang.String RenderSpecificSensor();
 
   }
   
@@ -277,6 +277,46 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface INamedSensorFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e2183739-f3fb-11ea-ade2-eb32c9704a85")
+    public java.lang.String RenderSensor();
+
+    @IDynamicResourceExtension.MethodId("0656ee55-f3fc-11ea-ade2-eb32c9704a85")
+    public java.lang.String RenderSpecificSensor();
+
+  }
+  
+  public static interface INamedSensorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("0656ee55-f3fc-11ea-ade2-eb32c9704a85")
+    public java.lang.String RenderSpecificSensor(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.INamedSensor namedSensor);
+
+  }
+  
+  public static class NamedSensorFunctionsImpl implements INamedSensorFunctionsImpl {
+
+    public static final INamedSensorFunctionsImpl INSTANCE = new NamedSensorFunctionsImpl();
+
+    private NamedSensorFunctionsImpl() {}
+
+    @Override
+    public java.lang.String RenderSpecificSensor(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.INamedSensor namedSensor) {
+      return null;
+    }
+
+  }
+  
+  public static class NamedSensorFunctions {
+
+    private NamedSensorFunctions() {}
+
+    public static java.lang.String RenderSpecificSensor(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.INamedSensor namedSensor) {
+      return DynamicResourceUtil.invoke(INamedSensorFunctionsImpl.class, NamedSensorFunctionsImpl.INSTANCE, namedSensor).RenderSpecificSensor(namedSensor);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,iMf0dUVRWbi5DQT5wLUX9m+Y2sQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,cubrctgeBG5BUEsQM6F1k5xndl8=] */

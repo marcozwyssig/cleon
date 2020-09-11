@@ -43,28 +43,28 @@ public class FunctionSpace_Sensor {
 
   }
 
-  public static interface IwmiserviceFunctions extends IDynamicResourceExtension {
+  public static interface INamedSensorFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("0f2d98d2-d00d-11ea-b5a9-731249efa1a3")
+    @IDynamicResourceExtension.MethodId("52490832-f3fb-11ea-ade2-eb32c9704a85")
     public java.lang.String SimpleName();
 
   }
   
-  public static interface IwmiserviceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INamedSensorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class wmiserviceFunctionsImpl implements IwmiserviceFunctionsImpl {
+  public static class NamedSensorFunctionsImpl implements INamedSensorFunctionsImpl {
 
-    public static final IwmiserviceFunctionsImpl INSTANCE = new wmiserviceFunctionsImpl();
+    public static final INamedSensorFunctionsImpl INSTANCE = new NamedSensorFunctionsImpl();
 
-    private wmiserviceFunctionsImpl() {}
+    private NamedSensorFunctionsImpl() {}
 
   }
   
-  public static class wmiserviceFunctions {
+  public static class NamedSensorFunctions {
 
-    private wmiserviceFunctions() {}
+    private NamedSensorFunctions() {}
 
   }
 
@@ -95,4 +95,4 @@ public class FunctionSpace_Sensor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,GLqGm46WjuBn/ep/0Lpvn49O0x4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,5V4p2m1LWGDIMy7OZY4JQ7s1UJQ=] */

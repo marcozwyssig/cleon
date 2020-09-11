@@ -269,7 +269,6 @@ public class SensorPackage {
   public static final Resource SensorClass_displayName = new Resource("50c0d4cd-cfe0-11ea-99e7-03141914df18");
   public static final Resource wmiservice_serviceDisplayName = new Resource("b0cc9388-cfec-11ea-99e7-03141914df18");
   public static final Resource FunctionSpace_aE_Sensor_Sensor = new Resource("d0eb2eac-d00c-11ea-b5a9-731249efa1a3");
-  public static final Resource FunctionSpace_aE_Sensor_wmiservice = new Resource("08e1337d-d00d-11ea-b5a9-731249efa1a3");
   public static final Resource restcustom_requesttype = new Resource("414f7049-dc79-11ea-a169-cb4c6ff66798");
   public static final Resource RequestMethod = new Resource("4c6592d2-dc79-11ea-a169-cb4c6ff66798");
   public static final Resource RequestMethod_GET = new Resource("51af54f5-dc79-11ea-a169-cb4c6ff66798");
@@ -288,6 +287,8 @@ public class SensorPackage {
   public static final Resource IgnoreUnknoenWarnings_ignore = new Resource("6505c332-e3ba-11ea-84e3-5dbec94345a4");
   public static final Resource httpdataadvanced_httpurl = new Resource("1eae6cbb-e6c3-11ea-92fa-2db17cc89b0c");
   public static final Resource ping_address = new Resource("310da901-f29c-11ea-b011-6106590acfe5");
+  public static final Resource NamedSensor = new Resource("23f80945-f3fb-11ea-ade2-eb32c9704a85");
+  public static final Resource FunctionSpace_aE_Sensor_NamedSensor = new Resource("52490824-f3fb-11ea-ade2-eb32c9704a85");
   
   /* Begin Protected Region [[user]] */
   
@@ -308,4 +309,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,qboSmSHGUB7g63IFWpiGS6ueqEU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,N4LaR8rpmjcf/GVh1hNmEDtBj+A=] */

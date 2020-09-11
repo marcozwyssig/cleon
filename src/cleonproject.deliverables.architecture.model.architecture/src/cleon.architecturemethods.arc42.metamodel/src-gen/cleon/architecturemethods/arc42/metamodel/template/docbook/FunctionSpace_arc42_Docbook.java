@@ -636,6 +636,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface ISensorFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b02d76fa-f3f8-11ea-ade2-eb32c9704a85")
+    public java.lang.String SensorNote();
+
+  }
+  
+  public static interface ISensorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SensorFunctionsImpl implements ISensorFunctionsImpl {
+
+    public static final ISensorFunctionsImpl INSTANCE = new SensorFunctionsImpl();
+
+    private SensorFunctionsImpl() {}
+
+  }
+  
+  public static class SensorFunctions {
+
+    private SensorFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,6zr7hEUzVajQXZdLzRXl2IgXpvA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,1BEeIuWG2Sgj3XeCfDDYGU3ZCy4=] */

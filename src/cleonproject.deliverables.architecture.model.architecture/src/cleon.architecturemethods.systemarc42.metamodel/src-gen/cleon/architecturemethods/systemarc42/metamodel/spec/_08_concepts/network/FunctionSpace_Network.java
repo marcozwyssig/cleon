@@ -11,6 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite;
 import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
+import java.util.stream.Collectors;
 /* End Protected Region   [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
@@ -230,10 +231,22 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("fd907b14-a0f4-11ea-9ce3-334b0943657e")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodes();
 
+    @IDynamicResourceExtension.MethodId("80fe48ff-f40a-11ea-ade2-eb32c9704a85")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkConcept NetworkConcept();
+
+    @IDynamicResourceExtension.MethodId("aacd4176-f40a-11ea-ade2-eb32c9704a85")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain DefaultDomain();
+
+    @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
+
   }
   
   public static interface IHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList);
+
   }
   
   public static class HostNodeFunctionsImpl implements IHostNodeFunctionsImpl {
@@ -242,11 +255,25 @@ public class FunctionSpace_Network {
 
     private HostNodeFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
+      /* Begin Protected Region [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
+      return hostNodeList.stream().filter(x -> {
+      	final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions.class);
+      	return x.selectRestrictToDomains().contains(domain) || functions.DefaultDomain().equals(domain);
+      }).collect(Collectors.toList());
+      /* End Protected Region   [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
+    }
+
   }
   
   public static class HostNodeFunctions {
 
     private HostNodeFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
+      return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNodeList).InDomain(domain, hostNodeList);
+    }
 
   }
 
@@ -276,14 +303,14 @@ public class FunctionSpace_Network {
     @Override
     public cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone GetNetworkSubZone(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite networkSite) {
       /* Begin Protected Region [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
-    	for( final INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().values() ) {
-    		final INetworkSubZoneFunctions subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
-    		final String subzoneName = subZoneFunctions.Name();
-    		if( subzoneName.equalsIgnoreCase(name)) {
-    			return networkSubZone;
-    		}
-    	}
-    	return null;
+      for( final INetworkSubZone networkSubZone : networkSite.selectNetworkSubZone().values() ) {
+      	final INetworkSubZoneFunctions subZoneFunctions = networkSubZone.extension(INetworkSubZoneFunctions.class);
+      	final String subzoneName = subZoneFunctions.Name();
+      	if( subzoneName.equalsIgnoreCase(name)) {
+      		return networkSubZone;
+      	}
+      }
+      return null;
       /* End Protected Region   [[c47a831a-b212-11ea-a3a2-e9d3344bee73]] */
     }
 
@@ -325,12 +352,12 @@ public class FunctionSpace_Network {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite GetSite(final java.lang.String name, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment networkEnvironment) {
       /* Begin Protected Region [[2a3f2c0c-b212-11ea-a3a2-e9d3344bee73]] */
-    	for( final INetworkSite networkSite : networkEnvironment.selectNetworkSite().values()) {
-    		if( networkSite.selectSite().selectName().equalsIgnoreCase(name)) {
-    			return networkSite;
-    		}
-		}
-    	return null;
+      for( final INetworkSite networkSite : networkEnvironment.selectNetworkSite().values()) {
+      	if( networkSite.selectSite().selectName().equalsIgnoreCase(name)) {
+      		return networkSite;
+      	}
+      }
+      return null;
       /* End Protected Region   [[2a3f2c0c-b212-11ea-a3a2-e9d3344bee73]] */
     }
 
@@ -348,4 +375,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,J1xAJGqC7Lu7We22kFFh/fNnEtY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,64kugatpm/dejokIhAQWdlY+PiE=] */

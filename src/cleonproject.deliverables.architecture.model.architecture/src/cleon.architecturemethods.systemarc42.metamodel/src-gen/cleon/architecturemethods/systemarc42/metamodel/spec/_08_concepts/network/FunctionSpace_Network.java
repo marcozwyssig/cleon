@@ -260,7 +260,11 @@ public class FunctionSpace_Network {
       /* Begin Protected Region [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
       return hostNodeList.stream().filter(x -> {
       	final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions functions = x.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.FunctionSpace_Network.IHostNodeFunctions.class);
-      	return x.selectRestrictToDomains().contains(domain) || functions.DefaultDomain().equals(domain);
+      	if( x.selectRestrictToDomains().isEmpty() ) {
+      		return functions.DefaultDomain().equals(domain);
+      	}
+
+      	return x.selectRestrictToDomains().contains(domain);
       }).collect(Collectors.toList());
       /* End Protected Region   [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
     }

@@ -46,6 +46,9 @@ public class FunctionSpace_SystemConfiguration {
     @IDynamicResourceExtension.MethodId("d5b4087a-bb98-11ea-aec8-5d01276af4ef")
     public java.lang.String GetStereotypeName();
 
+    @IDynamicResourceExtension.MethodId("c98353c7-f441-11ea-9b47-d76de0587caf")
+    public java.lang.String ShortnameOrOverride();
+
   }
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -936,4 +939,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,emCjdX0Ei9CabeyAAt1CqJRdf14=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,gtdKSV2G/D4CVJFTwF68FZrT1vs=] */

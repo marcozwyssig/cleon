@@ -486,28 +486,6 @@ public class FunctionSpace_Communication {
 
   }
 
-  public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
-
-    public static final ISystemConfigurationFunctionsImpl INSTANCE = new SystemConfigurationFunctionsImpl();
-
-    private SystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class SystemConfigurationFunctions {
-
-    private SystemConfigurationFunctions() {}
-
-  }
-
   public static interface IDestinationSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("36af6bc0-dfa3-11e9-9827-a1514ee8d06a")
@@ -758,4 +736,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,uHMWgtOyt2Yc8f+QZwvxHafXlFs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,746B6arEGt69yR8P6CPXBuFMatA=] */

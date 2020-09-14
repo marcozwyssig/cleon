@@ -2,6 +2,7 @@
 <resource format="5.6.0" guid="db426bcc-c1eb-11ea-820f-9931558a898c">
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="5bbf5015-f37c-11ea-9268-b5c52a12d7f9" type="resource" guid="5bbe3ea1-f37c-11ea-9268-b5c52a12d7f9" />
+    <resource statement-guid="12768573-f6a7-11ea-8403-77a3f8b014f0" type="resource" guid="1276103f-f6a7-11ea-8403-77a3f8b014f0" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db426bce-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
@@ -29,9 +30,22 @@
         </predicate>
       </resource>
     </object>
+    <object statement-guid="12768573-f6a7-11ea-8403-77a3f8b014f0">
+      <resource guid="1276103f-f6a7-11ea-8403-77a3f8b014f0">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="12761041-f6a7-11ea-8403-77a3f8b014f0" type="resource" guid="d03edb49-335f-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="13456e34-f6a7-11ea-8403-77a3f8b014f0" type="literal">Surveille un serveur Web à l'aide de HTTP et affiche le temps de chargement à partir de différents endroits sur cinq continents à travers le monde</object>
+        </predicate>
+        <predicate guid="e27afaae-335f-11e8-a9fe-87ba35d8f5c4">
+          <object statement-guid="12765e62-f6a7-11ea-8403-77a3f8b014f0" type="resource" guid="dd7a9269-3339-11e8-a9fe-87ba35d8f5c4" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="1564455c-3360-11e8-a9fe-87ba35d8f5c4">
-    <object statement-guid="61d35c52-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="d641fa32-f376-11ea-9268-b5c52a12d7f9" />
+    <object statement-guid="61d35c52-f37b-11ea-9268-b5c52a12d7f9" type="resource" guid="e9e91386-f379-11ea-9268-b5c52a12d7f9" />
   </predicate>
   <predicate guid="50c0d4cd-cfe0-11ea-99e7-03141914df18">
     <object statement-guid="c26b5763-cfeb-11ea-99e7-03141914df18" type="literal">Cloud HTTP</object>

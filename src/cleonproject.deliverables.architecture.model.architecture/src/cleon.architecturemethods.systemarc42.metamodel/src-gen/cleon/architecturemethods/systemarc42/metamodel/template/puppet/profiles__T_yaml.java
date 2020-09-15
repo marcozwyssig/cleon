@@ -68,28 +68,28 @@ public class profiles__T_yaml {
 
   }
 
-  public static interface IexexmlFunctions extends IDynamicResourceExtension {
+  public static interface IexeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("88287c35-d625-11ea-96bb-39ddde1b696a")
     public java.lang.String RenderSpecificSensor();
 
   }
   
-  public static interface IexexmlFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IexeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class exexmlFunctionsImpl implements IexexmlFunctionsImpl {
+  public static class exeFunctionsImpl implements IexeFunctionsImpl {
 
-    public static final IexexmlFunctionsImpl INSTANCE = new exexmlFunctionsImpl();
+    public static final IexeFunctionsImpl INSTANCE = new exeFunctionsImpl();
 
-    private exexmlFunctionsImpl() {}
+    private exeFunctionsImpl() {}
 
   }
   
-  public static class exexmlFunctions {
+  public static class exeFunctions {
 
-    private exexmlFunctions() {}
+    private exeFunctions() {}
 
   }
 
@@ -319,4 +319,4 @@ public class profiles__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,cubrctgeBG5BUEsQM6F1k5xndl8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,/RAaOg+XdPQCGSznn4z/ofqxT2k=] */

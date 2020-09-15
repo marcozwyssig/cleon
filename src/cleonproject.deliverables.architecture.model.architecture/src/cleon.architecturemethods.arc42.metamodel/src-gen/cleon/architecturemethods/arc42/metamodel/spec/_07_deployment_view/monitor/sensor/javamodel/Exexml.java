@@ -50,20 +50,20 @@ public class Exexml extends DynamicResource implements IExexml {
 
   @Override
   public java.lang.String selectExeFile() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeFile);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeFile);
   }
     
   public void setExeFile(java.lang.String exeFile) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeFile, exeFile);
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeFile, exeFile);
   }
 
   @Override
   public java.lang.String selectExeParams() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeParams);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeParams);
   }
     
   public void setExeParams(java.lang.String exeParams) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeParams, exeParams);
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeParams, exeParams);
   }
 
   @Override
@@ -77,11 +77,11 @@ public class Exexml extends DynamicResource implements IExexml {
 
   @Override
   public java.lang.Boolean selectUseWindowsAuthentication() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_useWindowsAuthentication);
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_useWindowsAuthentication);
   }
     
   public void setUseWindowsAuthentication(java.lang.Boolean useWindowsAuthentication) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_useWindowsAuthentication, useWindowsAuthentication);
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_useWindowsAuthentication, useWindowsAuthentication);
   }
 
   // relations
@@ -101,13 +101,13 @@ public class Exexml extends DynamicResource implements IExexml {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeFile, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_exeParams, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeFile, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeParams, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exexml_useWindowsAuthentication, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_useWindowsAuthentication, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f2f0-c1eb-11ea-820f-9931558a898c,TZFoXXuNTmaKP+eWxUjn37PKBUU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f2f0-c1eb-11ea-820f-9931558a898c,40QRrgikmZBaOqgTNBRwfxlX3Bg=] */

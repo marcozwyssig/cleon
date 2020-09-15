@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db43f2ea-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="5b367078-f72b-11ea-b8c1-41c5952fbbbb" type="resource" guid="cdc0f808-cdbd-11ea-8b73-6b1c6b53a7a6" />
+    <resource statement-guid="5b367079-f72b-11ea-b8c1-41c5952fbbbb" type="resource" guid="ef197fbc-cdbd-11ea-8b73-6b1c6b53a7a6" />
+    <resource statement-guid="5b37a8fa-f72b-11ea-b8c1-41c5952fbbbb" type="resource" guid="fcefd3d2-cdbd-11ea-8b73-6b1c6b53a7a6" />
+  </owns>
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="cd5c9616-f37d-11ea-9268-b5c52a12d7f9" type="resource" guid="cd5babb2-f37d-11ea-9268-b5c52a12d7f9" />
   </owns>
@@ -7,7 +12,57 @@
     <object statement-guid="db43f2ec-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="c23b1f83-cfeb-11ea-99e7-03141914df18" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+    <object statement-guid="c23b1f83-cfeb-11ea-99e7-03141914df18" type="resource" guid="23f80945-f3fb-11ea-ade2-eb32c9704a85" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="5b367078-f72b-11ea-b8c1-41c5952fbbbb">
+      <resource guid="cdc0f808-cdbd-11ea-8b73-6b1c6b53a7a6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="cdc0f80a-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ea93d08b-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="dcf5554b-cdbd-11ea-8b73-6b1c6b53a7a6" type="literal">exeFile</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="cdc2308c-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5b367079-f72b-11ea-b8c1-41c5952fbbbb">
+      <resource guid="ef197fbc-cdbd-11ea-8b73-6b1c6b53a7a6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef197fbd-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef197fc0-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef197fbf-cdbd-11ea-8b73-6b1c6b53a7a6" type="literal">exeParams</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="ef197fbe-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5b37a8fa-f72b-11ea-b8c1-41c5952fbbbb">
+      <resource guid="fcefd3d2-cdbd-11ea-8b73-6b1c6b53a7a6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fcefd3d3-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fcefd3d6-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fcefd3d5-cdbd-11ea-8b73-6b1c6b53a7a6" type="literal">useWindowsAuthentication</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="fcefd3d4-cdbd-11ea-8b73-6b1c6b53a7a6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db43f2ed-c1eb-11ea-820f-9931558a898c" type="literal">exe</object>

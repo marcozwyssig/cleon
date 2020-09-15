@@ -262,9 +262,9 @@ public class SensorPackage {
   public static final Resource wmivolume = new Resource("db53354c-c1eb-11ea-820f-9931558a898c");
   public static final Resource ptfwsusstatistics = new Resource("db533552-c1eb-11ea-820f-9931558a898c");
   public static final Resource zen = new Resource("db533558-c1eb-11ea-820f-9931558a898c");
-  public static final Resource exexml_exeFile = new Resource("cdc0f808-cdbd-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource exexml_exeParams = new Resource("ef197fbc-cdbd-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource exexml_useWindowsAuthentication = new Resource("fcefd3d2-cdbd-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource exe_exeFile = new Resource("cdc0f808-cdbd-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource exe_exeParams = new Resource("ef197fbc-cdbd-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource exe_useWindowsAuthentication = new Resource("fcefd3d2-cdbd-11ea-8b73-6b1c6b53a7a6");
   public static final Resource SensorClass = new Resource("33be3a6e-cfe0-11ea-99e7-03141914df18");
   public static final Resource SensorClass_displayName = new Resource("50c0d4cd-cfe0-11ea-99e7-03141914df18");
   public static final Resource wmiservice_serviceDisplayName = new Resource("b0cc9388-cfec-11ea-99e7-03141914df18");
@@ -309,4 +309,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,N4LaR8rpmjcf/GVh1hNmEDtBj+A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,jgBsFnI7qzkIyjlt2zA0qHcnVoQ=] */

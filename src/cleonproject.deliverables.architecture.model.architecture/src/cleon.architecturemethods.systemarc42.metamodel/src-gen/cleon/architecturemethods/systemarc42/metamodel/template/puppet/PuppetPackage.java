@@ -9,7 +9,7 @@ public class PuppetPackage {
   public static final Resource ad_aE_Management__T_yaml_AbstractHost = new Resource("82ca2781-b075-11ea-b791-9b401fd02359");
   public static final Resource profiles__T_yaml_Sensor = new Resource("0a33baf1-cce9-11ea-8b73-6b1c6b53a7a6");
   public static final Resource profiles__T_yaml_wmiservice = new Resource("42229440-cce9-11ea-8b73-6b1c6b53a7a6");
-  public static final Resource profiles__T_yaml_exexml = new Resource("88287c17-d625-11ea-96bb-39ddde1b696a");
+  public static final Resource profiles__T_yaml_exe = new Resource("88287c17-d625-11ea-96bb-39ddde1b696a");
   public static final Resource sites__T_yaml_AbstractHost = new Resource("1b0e67d0-da27-11ea-ae00-5518e944c256");
   public static final Resource sites__T_yaml_AbstractComponent = new Resource("7e28670f-da2a-11ea-ae00-5518e944c256");
   public static final Resource profiles__T_yaml_restcustom = new Resource("c6552397-dc89-11ea-a169-cb4c6ff66798");
@@ -46,4 +46,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,ZaG77fHbp3M8PeCT1/NCHGhtL/A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,gyDILrjChjS19Uko1hsFyALCsz8=] */

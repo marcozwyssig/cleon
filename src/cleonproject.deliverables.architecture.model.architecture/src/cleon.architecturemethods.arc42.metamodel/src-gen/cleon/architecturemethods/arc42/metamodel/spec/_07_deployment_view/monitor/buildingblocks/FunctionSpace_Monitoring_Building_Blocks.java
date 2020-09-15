@@ -124,28 +124,28 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
-  public static interface IexexmlFunctions extends IDynamicResourceExtension {
+  public static interface IexeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9240eff2-dc8d-11ea-a169-cb4c6ff66798")
     public java.lang.String Parameters();
 
   }
   
-  public static interface IexexmlFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IexeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class exexmlFunctionsImpl implements IexexmlFunctionsImpl {
+  public static class exeFunctionsImpl implements IexeFunctionsImpl {
 
-    public static final IexexmlFunctionsImpl INSTANCE = new exexmlFunctionsImpl();
+    public static final IexeFunctionsImpl INSTANCE = new exeFunctionsImpl();
 
-    private exexmlFunctionsImpl() {}
+    private exeFunctionsImpl() {}
 
   }
   
-  public static class exexmlFunctions {
+  public static class exeFunctions {
 
-    private exexmlFunctions() {}
+    private exeFunctions() {}
 
   }
 
@@ -279,4 +279,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,qqW0kDHsjdooz5RLeQPoPWnbKY8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,9eQvh/qEuWaUUJg7rAth8u1DRvI=] */

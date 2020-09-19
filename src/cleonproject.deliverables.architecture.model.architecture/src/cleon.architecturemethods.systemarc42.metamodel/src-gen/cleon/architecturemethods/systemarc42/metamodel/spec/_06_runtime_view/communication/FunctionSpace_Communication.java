@@ -693,7 +693,7 @@ public class FunctionSpace_Communication {
       		final List<ISystemConfiguration> hosts = sourceSubZoneFunctions.AllSystemConfigurationWhereSystemConfigurationAndEnvironmentDistinct(sysCfg, TopologyEnvironment.selectToMeEnvironmentForTopology(env));
       		for( final ISystemConfiguration concreteSysCfg : hosts ) {
       			final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions concreteSysCfgFunctions = concreteSysCfg.extension(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions.class);					
-      			result.append(configurationFunctions.AllHostGroupName(env, sourceSubZone));
+      			result.append(concreteSysCfgFunctions.AllHostGroupName(env, sourceSubZone));
       			result.append("\n");					
       		}
       	}				

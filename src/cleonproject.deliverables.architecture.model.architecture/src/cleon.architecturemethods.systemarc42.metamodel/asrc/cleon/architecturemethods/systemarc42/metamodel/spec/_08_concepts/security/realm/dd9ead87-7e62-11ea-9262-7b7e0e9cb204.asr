@@ -32,6 +32,9 @@
       </owns>
     </resource>
   </owns>
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0f639dc8-fcb8-11ea-b2c1-5bf708b8dd35" type="resource" guid="0f639dc4-fcb8-11ea-b2c1-5bf708b8dd35" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="dd9ed499-7e62-11ea-9262-7b7e0e9cb204" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
@@ -45,7 +48,7 @@
           <object statement-guid="ffab8a4f-7e65-11ea-9262-7b7e0e9cb204" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="ffac4ca3-7e65-11ea-9262-7b7e0e9cb204" type="literal">directoryServiceForSystemConfiguration</object>
+          <object statement-guid="ffac4ca3-7e65-11ea-9262-7b7e0e9cb204" type="literal">realmForSystemConfiguration</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="ffac73b4-7e65-11ea-9262-7b7e0e9cb204" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
@@ -167,7 +170,22 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="dd9efbaa-7e62-11ea-9262-7b7e0e9cb204" type="literal">DirectoryServiceForSystemConfiguration</object>
+    <object statement-guid="dd9efbaa-7e62-11ea-9262-7b7e0e9cb204" type="literal">RealmForSystemConfiguration</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0f639dc8-fcb8-11ea-b2c1-5bf708b8dd35">
+      <resource guid="0f639dc4-fcb8-11ea-b2c1-5bf708b8dd35">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0f639dc6-fcb8-11ea-b2c1-5bf708b8dd35" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f7a99786-fcb8-11ea-b2c1-5bf708b8dd35" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.RealmForSystemConfigurationValidation</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0f639dc7-fcb8-11ea-b2c1-5bf708b8dd35" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
 </resource>
 

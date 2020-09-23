@@ -49403,7 +49403,7 @@
                             <object statement-guid="b0621b90-f3f8-11ea-ade2-eb32c9704a85" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                           </predicate>
                           <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                            <object statement-guid="b0621b91-f3f8-11ea-ade2-eb32c9704a85" type="literal">&lt;db:para&gt;Die Sensoren werden in der Reihenfolge, wie in der Tabelle oberhalb, konfiguriert. Die Tabelle führt nur die expliziten verwendeten Sensoren auf. Die Standardwerte für die Sensoren werden nicht aufgeführt und werden in einer dedizierten YAML Datei (sensor-default.yamL) festgehalten und anwgewendet.&lt;/db:para&gt;</object>
+                            <object statement-guid="b0621b91-f3f8-11ea-ade2-eb32c9704a85" type="literal">&lt;db:para&gt;Die Sensoren werden in der Reihenfolge, wie in der Tabelle oberhalb, konfiguriert. Die Tabelle führt nur die expliziten verwendeten Sensoren auf. Die Standardwerte für die Sensoren werden nicht aufgeführt und sind in einer dedizierten YAML Datei (sensor-default.yaml) festgehalten. In der Tabelle werden die abweichenden Parameter zu den Standardwerten beschrieben. Falls keine Parameter angegeben werden, gelten die Standardwerte.&lt;/db:para&gt;</object>
                           </predicate>
                         </resource>
                       </object>

@@ -16,10 +16,10 @@ public class RealmForDependentSysCfgValidation implements IResourceValidationAsp
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> inconsistencyList) {
 		final ITypeSystem typeSystem = validationContext.getTypeSystem();
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();	
-		final IRealmForDependentSystemConfiguration directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmForDependentSystemConfiguration.class, validationContext.getResource());
+		final IRealmUsageForDependentSystemConfiguration directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmUsageForDependentSystemConfiguration.class, validationContext.getResource());
 		if( directoryServiceForSystemConfiguration.selectUsage().isEmpty()) {
 			inconsistencyList.add(new PredicateInconsistency(validationContext.getPackage(), validationContext.getResource(),
-					RealmPackage.RealmForDependentSystemConfiguration_usage, "at least one usage needs to be specfied"));
+					RealmPackage.RealmUsageForDependentSystemConfiguration_usage, "at least one usage needs to be specfied"));
 		}
 	}
 }

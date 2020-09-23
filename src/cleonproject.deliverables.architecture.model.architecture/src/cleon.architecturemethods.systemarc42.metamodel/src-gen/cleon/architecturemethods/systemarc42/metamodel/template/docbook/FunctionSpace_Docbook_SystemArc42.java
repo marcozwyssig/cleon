@@ -603,6 +603,115 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IRealmForSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b01db1fa-fd92-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IRealmForSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RealmForSystemConfigurationFunctionsImpl implements IRealmForSystemConfigurationFunctionsImpl {
+
+    public static final IRealmForSystemConfigurationFunctionsImpl INSTANCE = new RealmForSystemConfigurationFunctionsImpl();
+
+    private RealmForSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class RealmForSystemConfigurationFunctions {
+
+    private RealmForSystemConfigurationFunctions() {}
+
+  }
+
+  public static interface IAbstractRealmForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2fd41813-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentUsage();
+
+    @IDynamicResourceExtension.MethodId("872462f8-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentDescription();
+
+  }
+  
+  public static interface IAbstractRealmForDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractRealmForDependentSystemConfigurationFunctionsImpl implements IAbstractRealmForDependentSystemConfigurationFunctionsImpl {
+
+    public static final IAbstractRealmForDependentSystemConfigurationFunctionsImpl INSTANCE = new AbstractRealmForDependentSystemConfigurationFunctionsImpl();
+
+    private AbstractRealmForDependentSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractRealmForDependentSystemConfigurationFunctions {
+
+    private AbstractRealmForDependentSystemConfigurationFunctions() {}
+
+  }
+
+  public static interface IRealmBasedOnDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b040fc5f-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentUsage();
+
+    @IDynamicResourceExtension.MethodId("b040fc61-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentDescription();
+
+  }
+  
+  public static interface IRealmBasedOnDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RealmBasedOnDependentSystemConfigurationFunctionsImpl implements IRealmBasedOnDependentSystemConfigurationFunctionsImpl {
+
+    public static final IRealmBasedOnDependentSystemConfigurationFunctionsImpl INSTANCE = new RealmBasedOnDependentSystemConfigurationFunctionsImpl();
+
+    private RealmBasedOnDependentSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class RealmBasedOnDependentSystemConfigurationFunctions {
+
+    private RealmBasedOnDependentSystemConfigurationFunctions() {}
+
+  }
+
+  public static interface IRealmUsageForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("bec8ed20-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentUsage();
+
+    @IDynamicResourceExtension.MethodId("bec8ed21-fd93-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentDescription();
+
+  }
+  
+  public static interface IRealmUsageForDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RealmUsageForDependentSystemConfigurationFunctionsImpl implements IRealmUsageForDependentSystemConfigurationFunctionsImpl {
+
+    public static final IRealmUsageForDependentSystemConfigurationFunctionsImpl INSTANCE = new RealmUsageForDependentSystemConfigurationFunctionsImpl();
+
+    private RealmUsageForDependentSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class RealmUsageForDependentSystemConfigurationFunctions {
+
+    private RealmUsageForDependentSystemConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,wulduQJT5Ac8pzNPopDw+Rf5vJI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,7Sv/0BMe2+a44nK2rhAOIPDneF4=] */

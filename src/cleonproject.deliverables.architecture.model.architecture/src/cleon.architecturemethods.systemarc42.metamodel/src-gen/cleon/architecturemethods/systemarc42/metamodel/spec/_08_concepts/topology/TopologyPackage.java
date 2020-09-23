@@ -37,7 +37,7 @@ public class TopologyPackage {
   public static final Resource TopologyEnvironment = new Resource("ecf82cf6-053e-11ea-b1c2-9163c84d2612");
   public static final Resource Topology_topologyEnvironment = new Resource("f95af3de-053e-11ea-b1c2-9163c84d2612");
   public static final Resource TopologyEnvironment_environmentForTopology = new Resource("085ecb6f-053f-11ea-b1c2-9163c84d2612");
-  public static final Resource AbstractHost_overrideRN = new Resource("72442c50-0780-11ea-8638-e775d7e940cc");
+  public static final Resource OverrideRNAware_overrideRN = new Resource("72442c50-0780-11ea-8638-e775d7e940cc");
   public static final Resource AbstractSiteWithFunctionID_functionID = new Resource("6f9c72f8-3632-11ea-b5c2-e3e297a45d39");
   public static final Resource AbstractSiteComposition_subsite = new Resource("b14dec3a-3632-11ea-b5c2-e3e297a45d39");
   public static final Resource AbstractSiteComposition = new Resource("f40a942e-3632-11ea-b5c2-e3e297a45d39");
@@ -73,6 +73,7 @@ public class TopologyPackage {
   public static final Resource ManagedRN_hssortdm = new Resource("f340162d-e0b4-11ea-8443-8f528e21caa3");
   public static final Resource TN_noManagedBy = new Resource("299e8b46-e0b5-11ea-8443-8f528e21caa3");
   public static final Resource ManagedRN_managedMss = new Resource("5a8290d0-e0b5-11ea-8443-8f528e21caa3");
+  public static final Resource OverrideRNAware = new Resource("b2d68f10-fd78-11ea-ab46-e355b3ca0d5e");
   
   /* Begin Protected Region [[user]] */
   
@@ -93,4 +94,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,MAZA3T9kWf88o5NtD78XJFWNlQI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,ikUKZhMMwRhEFgEtpOFMvSR41VI=] */

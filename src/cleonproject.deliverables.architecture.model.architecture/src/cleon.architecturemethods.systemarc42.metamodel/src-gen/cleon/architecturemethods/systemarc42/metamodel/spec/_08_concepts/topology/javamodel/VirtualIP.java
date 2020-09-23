@@ -86,11 +86,11 @@ public class VirtualIP extends DynamicResource implements IVirtualIP {
 
   @Override
   public java.lang.String selectOverrideRN() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN);
   }
     
   public void setOverrideRN(java.lang.String overrideRN) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN, overrideRN);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, overrideRN);
   }
 
   @Override
@@ -142,7 +142,7 @@ public class VirtualIP extends DynamicResource implements IVirtualIP {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isTemporary, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractNumberAware_number, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
@@ -150,4 +150,4 @@ public class VirtualIP extends DynamicResource implements IVirtualIP {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,5gqwTwW62Fnwj6WI9KXGNPkZ/Yc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,aa31b116-523c-11ea-b38c-2b48248ef5b9,A0XYy10h7VeHPjspOMkw53R72Ws=] */

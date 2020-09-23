@@ -10,8 +10,8 @@ public interface IRealmForSystemConfiguration extends ch.actifsource.core.javamo
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectRealmForSystemConfiguration();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfigurationUsage> selectUsage();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmForDependentSystemConfiguration> selectUsageForComponents();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,9rpTVC1p1391f7xtebHXWwZAheo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd9ead87-7e62-11ea-9262-7b7e0e9cb204,lxI00sXqy0GiBxHTX/Iz7L89NyE=] */

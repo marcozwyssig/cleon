@@ -269,6 +269,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("8e5181ea-fb12-11e9-890e-576c93cea08c")
     public java.lang.String ShortName();
 
+    @IDynamicResourceExtension.MethodId("be4d04b7-fd79-11ea-ab46-e355b3ca0d5e")
+    public java.lang.String SiteName();
+
   }
   
   public static interface IStackHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -635,4 +638,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,3C0tXKYgNXNnsKmjrYZrb8eDJcE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,n+JOgwDVrz5aVMWQswXHfZ3wvxo=] */

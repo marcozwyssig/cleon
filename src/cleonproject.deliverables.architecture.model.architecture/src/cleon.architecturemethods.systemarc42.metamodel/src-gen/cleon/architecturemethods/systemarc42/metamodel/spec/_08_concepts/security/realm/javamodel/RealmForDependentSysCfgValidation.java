@@ -10,16 +10,16 @@ import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage;
 
-public class RealmForSystemConfigurationValidation implements IResourceValidationAspect {
+public class RealmForDependentSysCfgValidation implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> inconsistencyList) {
 		final ITypeSystem typeSystem = validationContext.getTypeSystem();
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();	
-		final IRealmForSystemConfiguration directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmForSystemConfiguration.class, validationContext.getResource());
+		final IRealmForDependentSystemConfiguration directoryServiceForSystemConfiguration = resourceRepository.getResource(IRealmForDependentSystemConfiguration.class, validationContext.getResource());
 		if( directoryServiceForSystemConfiguration.selectUsage().isEmpty()) {
 			inconsistencyList.add(new PredicateInconsistency(validationContext.getPackage(), validationContext.getResource(),
-					RealmPackage.RealmForSystemConfiguration_usage, "at least one usage needs to be specfied"));
+					RealmPackage.RealmForDependentSystemConfiguration_usage, "at least one usage needs to be specfied"));
 		}
 	}
 }

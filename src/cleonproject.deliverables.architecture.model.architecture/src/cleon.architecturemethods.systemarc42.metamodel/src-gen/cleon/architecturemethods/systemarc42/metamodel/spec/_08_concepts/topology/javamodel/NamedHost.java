@@ -77,11 +77,11 @@ public class NamedHost extends DynamicResource implements INamedHost {
 
   @Override
   public java.lang.String selectOverrideRN() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN);
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN);
   }
     
   public void setOverrideRN(java.lang.String overrideRN) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN, overrideRN);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, overrideRN);
   }
 
   @Override
@@ -133,7 +133,7 @@ public class NamedHost extends DynamicResource implements INamedHost {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isTemporary, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideRN, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.OverrideRNAware_overrideRN, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_instanceOf, visitor);
@@ -141,4 +141,4 @@ public class NamedHost extends DynamicResource implements INamedHost {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9004db0d-570d-11ea-9b24-23fcad029119,0bD1jEkozO97/3+MMKmQSdEbBHY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9004db0d-570d-11ea-9b24-23fcad029119,iuLv8tZXvz/Ku/Pe/A2mdE82HGw=] */

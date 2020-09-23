@@ -8,7 +8,7 @@ public class RealmPackage {
   public static final Resource RealmForSystemConfiguration = new Resource("dd9ead87-7e62-11ea-9262-7b7e0e9cb204");
   public static final Resource RealmForSystem_realmForSystemConfigurations = new Resource("e634187e-7e62-11ea-9262-7b7e0e9cb204");
   public static final Resource RealmForSystemConfiguration_realmForSystemConfiguration = new Resource("ffab8a4e-7e65-11ea-9262-7b7e0e9cb204");
-  public static final Resource RealmConcept_realmConfiguration = new Resource("b6019763-e6c3-11ea-92fa-2db17cc89b0c");
+  public static final Resource RealmConcept_realmConfigurations = new Resource("b6019763-e6c3-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfiguration = new Resource("d0f6ae54-e6c3-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmUsageForDependentSystemConfiguration_usage = new Resource("4eddab52-e6c4-11ea-92fa-2db17cc89b0c");
   public static final Resource RealmConfigurationUsage = new Resource("67bf2569-e6c4-11ea-92fa-2db17cc89b0c");
@@ -25,6 +25,7 @@ public class RealmPackage {
   public static final Resource AbstractRealmForDependentSystemConfiguration_realmForDependentSystemConfiguration = new Resource("eb0c2941-fd82-11ea-b638-e1cc8a02b192");
   public static final Resource AbstractRealmForDependentSystemConfiguration = new Resource("55667c1c-fd8c-11ea-8a95-19b98046e6db");
   public static final Resource RealmBasedOnDependentSystemConfiguration = new Resource("de1dc42e-fd8d-11ea-8a95-19b98046e6db");
+  public static final Resource RealmBasedOnDependentSystemConfiguration_basedOn = new Resource("f27c2947-fd9c-11ea-aa08-3550db97e5ec");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +46,4 @@ public class RealmPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm,QkSkMeOEevEfsHBvx2JJ26dEFDs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm,vFELHXi33FzZey+Q2gT6xxwpx4g=] */

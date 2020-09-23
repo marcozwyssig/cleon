@@ -8,10 +8,10 @@ public interface IRealmConcept extends cleon.architecturemethods.systemarc42.met
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfiguration> selectRealmConfiguration();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfiguration> selectRealmConfigurations();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmForSystem> selectRealmForSystems();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ebac8bd2-0eaf-11e9-9f19-6d15636f4ecc,u1OUDkpJS/C5tEbnmJ7tdzz1UdE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ebac8bd2-0eaf-11e9-9f19-6d15636f4ecc,JjEkrGwhoslRAnM/rxLtbQal2zU=] */

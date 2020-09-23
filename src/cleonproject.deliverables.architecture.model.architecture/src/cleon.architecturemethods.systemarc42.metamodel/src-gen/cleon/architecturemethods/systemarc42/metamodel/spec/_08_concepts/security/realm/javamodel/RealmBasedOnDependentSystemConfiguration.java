@@ -31,6 +31,16 @@ public class RealmBasedOnDependentSystemConfiguration extends DynamicResource im
   // relations
   
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmUsageForDependentSystemConfiguration selectBasedOn() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmUsageForDependentSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.RealmBasedOnDependentSystemConfiguration_basedOn);
+  }
+
+  public RealmBasedOnDependentSystemConfiguration setBasedOn(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmUsageForDependentSystemConfiguration basedOn) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.RealmBasedOnDependentSystemConfiguration_basedOn, basedOn);
+    return this;
+  }
+    
+  @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectRealmForDependentSystemConfiguration() {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.AbstractRealmForDependentSystemConfiguration_realmForDependentSystemConfiguration);
   }
@@ -64,9 +74,16 @@ public class RealmBasedOnDependentSystemConfiguration extends DynamicResource im
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmUsageForDependentSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.RealmBasedOnDependentSystemConfiguration_basedOn, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.AbstractRealmForDependentSystemConfiguration_realmForDependentSystemConfiguration, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmBasedOnDependentSystemConfiguration> selectToMeBasedOn(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmUsageForDependentSystemConfiguration object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmBasedOnDependentSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.RealmPackage.RealmBasedOnDependentSystemConfiguration_basedOn, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,de1dc42e-fd8d-11ea-8a95-19b98046e6db,rZnRIonJgA5yhHGqlj2+g8BJsuM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,de1dc42e-fd8d-11ea-8a95-19b98046e6db,OwK5M0vKEHSNEc2z7HwDVv7Wgsg=] */

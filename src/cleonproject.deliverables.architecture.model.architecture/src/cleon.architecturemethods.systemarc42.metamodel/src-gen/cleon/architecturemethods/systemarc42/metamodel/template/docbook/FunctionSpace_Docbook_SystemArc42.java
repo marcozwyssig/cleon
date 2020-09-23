@@ -14,7 +14,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 public class FunctionSpace_Docbook_SystemArc42 {
 
   /* Begin Protected Region [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
-  
+
   /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
 
 
@@ -298,11 +298,11 @@ public class FunctionSpace_Docbook_SystemArc42 {
     @Override
     public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.role.javamodel.IRoleActorGroup roleActorGroup) {
       /* Begin Protected Region [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
-    	int count = 0;
-    	for(final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
-    		count += actorResponsibility.selectRolesForSystemComponents().size();
-    	}
-    	return count;  
+      int count = 0;
+      for(final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
+      	count += actorResponsibility.selectRolesForSystemComponents().size();
+      }
+      return count;  
       /* End Protected Region   [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
     }
 
@@ -630,11 +630,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   public static interface IAbstractRealmForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("2fd41813-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentUsage();
-
-    @IDynamicResourceExtension.MethodId("872462f8-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentDescription();
+    @IDynamicResourceExtension.MethodId("c93a7167-fd9b-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -658,11 +655,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   public static interface IRealmBasedOnDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("b040fc5f-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentUsage();
-
-    @IDynamicResourceExtension.MethodId("b040fc61-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentDescription();
+    @IDynamicResourceExtension.MethodId("e1c2a7c8-fd9b-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -686,11 +680,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   public static interface IRealmUsageForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("bec8ed20-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentUsage();
-
-    @IDynamicResourceExtension.MethodId("bec8ed21-fd93-11ea-aa08-3550db97e5ec")
-    public java.lang.String RenderContentDescription();
+    @IDynamicResourceExtension.MethodId("27b99338-fd9c-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentElement();
 
   }
   
@@ -712,6 +703,73 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IRealmConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("6a53ed4a-fd99-11ea-aa08-3550db97e5ec")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IRealmConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class RealmConceptFunctionsImpl implements IRealmConceptFunctionsImpl {
+
+    public static final IRealmConceptFunctionsImpl INSTANCE = new RealmConceptFunctionsImpl();
+
+    private RealmConceptFunctionsImpl() {}
+
+  }
+  
+  public static class RealmConceptFunctions {
+
+    private RealmConceptFunctions() {}
+
+  }
+
+  public static interface IRealmConfigurationUsageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4f425a8b-fd9e-11ea-aa08-3550db97e5ec")
+    public java.lang.String Text();
+
+  }
+  
+  public static interface IRealmConfigurationUsageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("4f425a8b-fd9e-11ea-aa08-3550db97e5ec")
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfigurationUsage realmConfigurationUsage);
+
+  }
+  
+  public static class RealmConfigurationUsageFunctionsImpl implements IRealmConfigurationUsageFunctionsImpl {
+
+    public static final IRealmConfigurationUsageFunctionsImpl INSTANCE = new RealmConfigurationUsageFunctionsImpl();
+
+    private RealmConfigurationUsageFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
+      /* Begin Protected Region [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
+      if( realmConfigurationUsage.selectDescriptions().isEmpty()) {
+      	return String.join("\n", realmConfigurationUsage.selectDirectoryService().selectMandatoryDescriptions());
+      }
+      return  String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());
+      /* End Protected Region   [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
+    }
+
+  }
+  
+  public static class RealmConfigurationUsageFunctions {
+
+    private RealmConfigurationUsageFunctions() {}
+
+    public static java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
+      return DynamicResourceUtil.invoke(IRealmConfigurationUsageFunctionsImpl.class, RealmConfigurationUsageFunctionsImpl.INSTANCE, realmConfigurationUsage).Text(realmConfigurationUsage);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,7Sv/0BMe2+a44nK2rhAOIPDneF4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,2tkInVerwcFrZ3TCssL9ri8atcM=] */

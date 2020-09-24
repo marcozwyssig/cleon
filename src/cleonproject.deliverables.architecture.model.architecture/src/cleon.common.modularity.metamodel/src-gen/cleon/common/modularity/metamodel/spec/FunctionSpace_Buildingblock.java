@@ -105,6 +105,9 @@ public class FunctionSpace_Buildingblock {
     @IDynamicResourceExtension.MethodId("4be2cbb2-d8a1-11ea-ae00-5518e944c256")
     public java.lang.String GetIncludePath();
 
+    @IDynamicResourceExtension.MethodId("f58993e5-fe34-11ea-892b-df291bae18c5")
+    public java.lang.String GetShortAndNameInParentheses();
+
   }
   
   public static interface IBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -307,4 +310,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,uWVlHujNsu2cOrMqg4mfdcrhP1Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,NKK/bOspQJoLbmt+VcpoAQipY1A=] */

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8f187258-fe3f-11ea-892b-df291bae18c5">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8f18732e-fe3f-11ea-892b-df291bae18c5" type="resource" guid="8f187259-fe3f-11ea-892b-df291bae18c5" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f187327-fe3f-11ea-892b-df291bae18c5" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f187328-fe3f-11ea-892b-df291bae18c5" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+    <object statement-guid="8f187329-fe3f-11ea-892b-df291bae18c5" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f18732e-fe3f-11ea-892b-df291bae18c5">
+      <resource guid="8f187259-fe3f-11ea-892b-df291bae18c5">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8f18732a-fe3f-11ea-892b-df291bae18c5" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8f18732b-fe3f-11ea-892b-df291bae18c5" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8f18732c-fe3f-11ea-892b-df291bae18c5" type="literal">standardDescription</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8f18732d-fe3f-11ea-892b-df291bae18c5" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f18732f-fe3f-11ea-892b-df291bae18c5" type="literal">DeploymentConfiguration</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="8f187330-fe3f-11ea-892b-df291bae18c5" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

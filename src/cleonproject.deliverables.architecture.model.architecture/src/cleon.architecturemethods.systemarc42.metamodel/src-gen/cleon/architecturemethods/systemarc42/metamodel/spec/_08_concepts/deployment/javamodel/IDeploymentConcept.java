@@ -8,8 +8,10 @@ public interface IDeploymentConcept extends cleon.architecturemethods.systemarc4
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeployment_Templates> selectTemplates();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentConfiguration> selectDeploymentConfigurations();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentForSystem> selectDeploymentForSystems();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,+FmXjMy47cLzKMgT0m/hlGwezu0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1ea3d77-6eb2-11ea-b8e8-f1a46e0c42f7,125CD5EZdahgckiW3R5B3YY7Cbs=] */

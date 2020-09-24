@@ -752,9 +752,9 @@ public class FunctionSpace_Docbook_SystemArc42 {
     public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
       /* Begin Protected Region [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
       if( realmConfigurationUsage.selectDescriptions().isEmpty()) {
-      	return String.join("\n", realmConfigurationUsage.selectDirectoryService().selectMandatoryDescriptions());
+      	return  String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());    	  
       }
-      return  String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());
+      return String.join("\n", realmConfigurationUsage.selectDescriptions());
       /* End Protected Region   [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
     }
 

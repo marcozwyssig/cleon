@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SemiAutomatedDeploymentConfiguration extends DynamicResource implements ISemiAutomatedDeploymentConfiguration {
+public class AutomatedDeploymentMethodConfiguration extends DynamicResource implements IAutomatedDeploymentMethodConfiguration {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISemiAutomatedDeploymentConfiguration> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISemiAutomatedDeploymentConfiguration>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAutomatedDeploymentMethodConfiguration> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IAutomatedDeploymentMethodConfiguration>() {
     
     @Override
-    public ISemiAutomatedDeploymentConfiguration create() {
-      return new SemiAutomatedDeploymentConfiguration();
+    public IAutomatedDeploymentMethodConfiguration create() {
+      return new AutomatedDeploymentMethodConfiguration();
     }
     
     @Override
-    public ISemiAutomatedDeploymentConfiguration create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SemiAutomatedDeploymentConfiguration(resourceRepository, resource);
+    public IAutomatedDeploymentMethodConfiguration create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new AutomatedDeploymentMethodConfiguration(resourceRepository, resource);
     }
   
   };
 
-  public SemiAutomatedDeploymentConfiguration() {
-    super(ISemiAutomatedDeploymentConfiguration.TYPE_ID);
+  public AutomatedDeploymentMethodConfiguration() {
+    super(IAutomatedDeploymentMethodConfiguration.TYPE_ID);
   }
   
-  public SemiAutomatedDeploymentConfiguration(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISemiAutomatedDeploymentConfiguration.TYPE_ID);
+  public AutomatedDeploymentMethodConfiguration(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IAutomatedDeploymentMethodConfiguration.TYPE_ID);
   }
 
   // attributes
@@ -68,11 +68,11 @@ public class SemiAutomatedDeploymentConfiguration extends DynamicResource implem
 
   @Override
   public java.util.List<java.lang.String> selectStandardDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentConfiguration_standardDescription);
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription);
   }
     
   public void setStandardDescription(java.util.List<java.lang.String> standardDescription) {
-     _setListAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentConfiguration_standardDescription, standardDescription);
+     _setListAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription, standardDescription);
   }
 
   // relations
@@ -82,7 +82,7 @@ public class SemiAutomatedDeploymentConfiguration extends DynamicResource implem
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SemiAutomatedDeploymentConfiguration setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public AutomatedDeploymentMethodConfiguration setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -93,10 +93,10 @@ public class SemiAutomatedDeploymentConfiguration extends DynamicResource implem
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentConfiguration_standardDescription, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f18724a-fe3f-11ea-892b-df291bae18c5,CODfhNC2D6a0zLre3FEkjf8n+yA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f187232-fe3f-11ea-892b-df291bae18c5,kWNrL64XnwKh/guQub+34DiTgJc=] */

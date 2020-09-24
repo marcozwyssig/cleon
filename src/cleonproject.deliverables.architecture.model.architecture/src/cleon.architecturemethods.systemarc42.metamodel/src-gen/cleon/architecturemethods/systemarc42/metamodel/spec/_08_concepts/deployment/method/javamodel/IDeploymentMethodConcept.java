@@ -8,10 +8,10 @@ public interface IDeploymentMethodConcept extends cleon.common.doc.metamodel.spe
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodConfiguration> selectDeploymentConfigurations();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethod> selectDeploymentMethods();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodForSystem> selectDeploymentForSystems();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,64eef162-fe49-11ea-892b-df291bae18c5,jAQR8ArgFxXL80ADzHfO6ypstTU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,64eef162-fe49-11ea-892b-df291bae18c5,DbR7ajoz4otVbTyGFmude/aa8oU=] */

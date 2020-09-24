@@ -68,11 +68,11 @@ public class SemiAutomatedDeploymentMethodConfiguration extends DynamicResource 
 
   @Override
   public java.util.List<java.lang.String> selectStandardDescription() {
-    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription);
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethod_standardDescription);
   }
     
   public void setStandardDescription(java.util.List<java.lang.String> standardDescription) {
-     _setListAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription, standardDescription);
+     _setListAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethod_standardDescription, standardDescription);
   }
 
   // relations
@@ -93,10 +93,10 @@ public class SemiAutomatedDeploymentMethodConfiguration extends DynamicResource 
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethodConfiguration_standardDescription, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.MethodPackage.DeploymentMethod_standardDescription, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f18724a-fe3f-11ea-892b-df291bae18c5,fblt7jhiSgJPxc9759ww1EUglug=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f18724a-fe3f-11ea-892b-df291bae18c5,3TIwZrfdwHZ6s9aTkfHmleGSBl8=] */

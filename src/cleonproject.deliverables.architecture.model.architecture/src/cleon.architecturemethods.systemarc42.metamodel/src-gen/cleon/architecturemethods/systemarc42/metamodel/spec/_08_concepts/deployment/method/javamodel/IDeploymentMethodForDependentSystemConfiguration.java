@@ -10,8 +10,8 @@ public interface IDeploymentMethodForDependentSystemConfiguration extends ch.act
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectDeploymentForDependentSystemConfiguration();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodConfiguration selectUsedDeploymentConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethod selectUsedDeploymentMethod();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187230-fe3f-11ea-892b-df291bae18c5,H0c2/SleU/T9RuZAvd2PzEqPNvE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187230-fe3f-11ea-892b-df291bae18c5,eQuk3JgSlBnxSY/fu5Tqs91nEPA=] */

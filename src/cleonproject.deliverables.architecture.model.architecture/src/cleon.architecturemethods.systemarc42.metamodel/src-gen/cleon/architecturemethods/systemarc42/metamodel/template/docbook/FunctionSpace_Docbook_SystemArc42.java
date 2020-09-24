@@ -770,6 +770,98 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IDeploymentMethodConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c8cdea46-fe53-11ea-abcb-bfad67a56d79")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDeploymentMethodConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentMethodConceptFunctionsImpl implements IDeploymentMethodConceptFunctionsImpl {
+
+    public static final IDeploymentMethodConceptFunctionsImpl INSTANCE = new DeploymentMethodConceptFunctionsImpl();
+
+    private DeploymentMethodConceptFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentMethodConceptFunctions {
+
+    private DeploymentMethodConceptFunctions() {}
+
+  }
+
+  public static interface IDeploymentMethodForSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("68164823-fe54-11ea-abcb-bfad67a56d79")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDeploymentMethodForSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentMethodForSystemConfigurationFunctionsImpl implements IDeploymentMethodForSystemConfigurationFunctionsImpl {
+
+    public static final IDeploymentMethodForSystemConfigurationFunctionsImpl INSTANCE = new DeploymentMethodForSystemConfigurationFunctionsImpl();
+
+    private DeploymentMethodForSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentMethodForSystemConfigurationFunctions {
+
+    private DeploymentMethodForSystemConfigurationFunctions() {}
+
+  }
+
+  public static interface IDeploymentMethodForDependentSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("15864ee0-fe55-11ea-abcb-bfad67a56d79")
+    public java.lang.String Text();
+
+  }
+  
+  public static interface IDeploymentMethodForDependentSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("15864ee0-fe55-11ea-abcb-bfad67a56d79")
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodForDependentSystemConfiguration deploymentMethodForDependentSystemConfiguration);
+
+  }
+  
+  public static class DeploymentMethodForDependentSystemConfigurationFunctionsImpl implements IDeploymentMethodForDependentSystemConfigurationFunctionsImpl {
+
+    public static final IDeploymentMethodForDependentSystemConfigurationFunctionsImpl INSTANCE = new DeploymentMethodForDependentSystemConfigurationFunctionsImpl();
+
+    private DeploymentMethodForDependentSystemConfigurationFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodForDependentSystemConfiguration deploymentMethodForDependentSystemConfiguration) {
+      /* Begin Protected Region [[15864ee0-fe55-11ea-abcb-bfad67a56d79]] */
+      if( deploymentMethodForDependentSystemConfiguration.selectDescriptions().isEmpty()) {
+      	return  String.join("\n", deploymentMethodForDependentSystemConfiguration.selectUsedDeploymentMethod().selectStandardDescription());    	  
+      }
+      return String.join("\n", deploymentMethodForDependentSystemConfiguration.selectDescriptions());
+      /* End Protected Region   [[15864ee0-fe55-11ea-abcb-bfad67a56d79]] */
+    }
+
+  }
+  
+  public static class DeploymentMethodForDependentSystemConfigurationFunctions {
+
+    private DeploymentMethodForDependentSystemConfigurationFunctions() {}
+
+    public static java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodForDependentSystemConfiguration deploymentMethodForDependentSystemConfiguration) {
+      return DynamicResourceUtil.invoke(IDeploymentMethodForDependentSystemConfigurationFunctionsImpl.class, DeploymentMethodForDependentSystemConfigurationFunctionsImpl.INSTANCE, deploymentMethodForDependentSystemConfiguration).Text(deploymentMethodForDependentSystemConfiguration);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,2tkInVerwcFrZ3TCssL9ri8atcM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,tQIXSsvPaDCS9dFIZGv6/KeN7xk=] */

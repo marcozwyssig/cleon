@@ -44,6 +44,10 @@ public class _05_buildingblock_viewPackage {
   public static final Resource OverrideShortNameAware_overrideShortName = new Resource("8d4c184a-678f-11ea-b072-516c5e04c87a");
   public static final Resource OverrideShortNameAware = new Resource("729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_BuildingBlock = new Resource("53b1bef9-c1cf-11ea-b956-0ffede25a02d");
+  public static final Resource WhiteBoxSystemArc42 = new Resource("a296733a-fe57-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemArc42_deployment = new Resource("abb1fe65-fe57-11ea-abcb-bfad67a56d79");
+  public static final Resource DeploymentSystemArc42 = new Resource("33c30f60-fe58-11ea-abcb-bfad67a56d79");
+  public static final Resource DeploymentSystemArc42_deploymentMethodForSystemConfiguration = new Resource("97c8aeae-fe58-11ea-abcb-bfad67a56d79");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +68,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,it9eqiov3E6J0IZqb3Ricn33r8k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,SWAT4uPNDIQRugjI9qhzg+ETdHI=] */

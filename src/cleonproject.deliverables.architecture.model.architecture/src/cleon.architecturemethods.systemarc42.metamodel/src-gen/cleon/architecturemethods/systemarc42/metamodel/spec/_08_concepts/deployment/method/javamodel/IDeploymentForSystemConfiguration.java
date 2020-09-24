@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -10,8 +10,8 @@ public interface IDeploymentForSystemConfiguration extends cleon.common.doc.meta
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectRealmForSystemConfiguration();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel.IDeploymentForDependentSystemConfiguration> selectUsageForComponents();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentForDependentSystemConfiguration> selectUsageForComponents();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187268-fe3f-11ea-892b-df291bae18c5,MD6JhZgX7PMH042M1c1xyoxGFeg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187268-fe3f-11ea-892b-df291bae18c5,cEdy4kSsuVEbKx4EAJpKgX7pIxY=] */

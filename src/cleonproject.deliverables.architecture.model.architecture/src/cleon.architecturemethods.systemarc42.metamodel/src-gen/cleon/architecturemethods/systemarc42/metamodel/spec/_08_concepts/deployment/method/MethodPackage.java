@@ -15,7 +15,7 @@ public class MethodPackage {
   public static final Resource DeploymentMethodForSystem_deploymentForSystem = new Resource("8f18725d-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodForSystem_deploymentForSystemConfigurations = new Resource("8f187267-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodForSystemConfiguration = new Resource("8f187268-fe3f-11ea-892b-df291bae18c5");
-  public static final Resource DeploymentMethodForSystemConfiguration_realmForSystemConfiguration = new Resource("8f187269-fe3f-11ea-892b-df291bae18c5");
+  public static final Resource DeploymentMethodForSystemConfiguration_deploymentMethodForSystemConfiguration = new Resource("8f187269-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodForSystemConfiguration_usageForComponents = new Resource("8f187272-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodForDependentSystemConfiguration_usedDeploymentConfiguration = new Resource("8f18728e-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodConcept_deploymentConfigurations = new Resource("b0f59302-fe3f-11ea-892b-df291bae18c5");
@@ -41,4 +41,4 @@ public class MethodPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method,1GABT7U8kXPyAN4ut/W999015+8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method,1RrVjBskzn6O9GoOCk9rQNWHkMQ=] */

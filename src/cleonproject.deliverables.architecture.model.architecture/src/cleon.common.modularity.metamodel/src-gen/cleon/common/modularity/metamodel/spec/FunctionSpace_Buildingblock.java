@@ -15,74 +15,74 @@ import java.util.stream.Collectors;
 public class FunctionSpace_Buildingblock {
 
   /* Begin Protected Region [[3aea3d68-44bf-11e5-93ef-c50f9659357a]] */
-  
+
   /* End Protected Region   [[3aea3d68-44bf-11e5-93ef-c50f9659357a]] */
 
 
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4713cc2d-44bf-11e5-93ef-c50f9659357a")
-    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock GetParent();
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock Parent();
 
     @IDynamicResourceExtension.MethodId("ba47ee81-f989-11e5-af79-a55292c8fa9f")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllParents();
 
     @IDynamicResourceExtension.MethodId("f37babca-3a03-11e6-a354-253097f89a49")
-    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock GetTopBuildingBlock();
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock TopBuildingBlock();
 
     @IDynamicResourceExtension.MethodId("d3ef14f8-3c75-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetFullBuildingBlockName();
+    public java.lang.String FullBuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("65d029d5-5b58-11e7-9702-abdab196c2a1")
     public java.lang.String CreateFullBuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("281c80c3-3c77-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("feec2b18-0aa6-11e9-b5db-cdf0b8dad9e4")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllDecomposingBuildingBlocksWithSelf();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllDecomposingBuildingBlocksWithSelf();
 
     @IDynamicResourceExtension.MethodId("b34d757f-24c0-11ea-9904-7d41f80113d4")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDecomposingBuildingBlocks();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DecomposingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("5f8b2abd-4823-11e6-82f6-0f210765495b")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDecomposingBuildingBlocksExceptSelf();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DecomposingBuildingBlocksExceptSelf();
 
     @IDynamicResourceExtension.MethodId("2d309b24-4355-11e6-a9d7-97cf4f7c398b")
-    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock GetDecomposingBuildingBlocksFromParent();
+    public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock DecomposingBuildingBlocksFromParent();
 
     @IDynamicResourceExtension.MethodId("3b3cfddc-4356-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDecomposeBuildingBlockOfAllDependenciesFromParent();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DecomposeBuildingBlockOfAllDependenciesFromParent();
 
     @IDynamicResourceExtension.MethodId("2d309b3b-4355-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllAllowedBuildingBlockFromParent();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllAllowedBuildingBlockFromParent();
 
     @IDynamicResourceExtension.MethodId("2d3073fe-4355-11e6-a9d7-97cf4f7c398b")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllDependenciesFromParent();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllDependenciesFromParent();
 
     @IDynamicResourceExtension.MethodId("a032d549-4823-11e6-82f6-0f210765495b")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DependsOn();
 
     @IDynamicResourceExtension.MethodId("aadf82b1-51a1-11e9-80a8-e19504dc2bb6")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependency> GetOnlyDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IDependency> OnlyDependencies();
 
     @IDynamicResourceExtension.MethodId("68a66aec-4910-11e6-be22-874cc08f42ce")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent();
 
     @IDynamicResourceExtension.MethodId("15cae2bf-4914-11e6-be22-874cc08f42ce")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetDependingBuildingBlocksOutsideParent();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> DependingBuildingBlocksOutsideParent();
 
     @IDynamicResourceExtension.MethodId("b07d4c71-894c-11e6-ad04-d1961316644a")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllDependsOn();
 
     @IDynamicResourceExtension.MethodId("caa2cbf5-8959-11e6-ad04-d1961316644a")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetAllDuplicatedDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> AllDuplicatedDependsOn();
 
     @IDynamicResourceExtension.MethodId("24cf8570-2ce6-11e8-a902-afb10318295e")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetIndirectDependingBuildingBlocks();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> IndirectDependingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("f9141268-1b4b-11e9-9171-31a0f985a0be")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> GetInvertDependencies();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> InvertDependencies();
 
     @IDynamicResourceExtension.MethodId("eefb42b7-6dba-11ea-98d4-4d756e6b7091")
     public java.lang.String GetName();
@@ -106,7 +106,7 @@ public class FunctionSpace_Buildingblock {
     public java.lang.String GetIncludePath();
 
     @IDynamicResourceExtension.MethodId("f58993e5-fe34-11ea-892b-df291bae18c5")
-    public java.lang.String GetShortAndNameInParentheses();
+    public java.lang.String ShortAndNameInParentheses();
 
   }
   
@@ -137,12 +137,12 @@ public class FunctionSpace_Buildingblock {
     @Override
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
       /* Begin Protected Region [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
-    	return buildingBlockList.stream().filter(x -> {
-    		if( x instanceof IDependentBuildingBlock ) {
-    			return ((IDependentBuildingBlock)x).selectHasDependency().isEmpty();
-    		}
-    		return false;
-    	}).collect(Collectors.toList());
+      return buildingBlockList.stream().filter(x -> {
+      	if( x instanceof IDependentBuildingBlock ) {
+      		return ((IDependentBuildingBlock)x).selectHasDependency().isEmpty();
+      	}
+      	return false;
+      }).collect(Collectors.toList());
       /* End Protected Region   [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
     }
 
@@ -258,37 +258,37 @@ public class FunctionSpace_Buildingblock {
     @Override
     public java.lang.Integer GetLevelNr(final cleon.common.modularity.metamodel.spec.javamodel.IDecompositionBuildingBlock decompositionBuildingBlock) {
       /* Begin Protected Region [[d1d1146d-4394-11e6-a883-1f8f2b17c061]] */
-    	IBuildingBlockFunctions functions = decompositionBuildingBlock.extension(IBuildingBlockFunctions.class);
-    	IBuildingBlock topBuildingBlock = functions.GetTopBuildingBlock();
-    	return GetLevelNr(1, topBuildingBlock, decompositionBuildingBlock);     
+      final IBuildingBlockFunctions functions = decompositionBuildingBlock.extension(IBuildingBlockFunctions.class);
+      final IBuildingBlock topBuildingBlock = functions.TopBuildingBlock();
+      return GetLevelNr(1, topBuildingBlock, decompositionBuildingBlock);     
       /* End Protected Region   [[d1d1146d-4394-11e6-a883-1f8f2b17c061]] */
     }
 
     @Override
     public java.lang.Integer GetLevelNr(final java.lang.Integer level, final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock parent, final cleon.common.modularity.metamodel.spec.javamodel.IDecompositionBuildingBlock decompositionBuildingBlock) {
       /* Begin Protected Region [[83431bc4-4395-11e6-a883-1f8f2b17c061]] */
-    	if(parent.equals(decompositionBuildingBlock))
-		{
-			return level;
-		}
-		
-    	if( !(parent instanceof IDecompositionBuildingBlock))
-    	{
-    		return 0;
-    	}		
+      if(parent.equals(decompositionBuildingBlock))
+      {
+      	return level;
+      }
+
+      if( !(parent instanceof IDecompositionBuildingBlock))
+      {
+      	return 0;
+      }		
 
 
-    	IDecompositionBuildingBlock decomposeParentBlock = (IDecompositionBuildingBlock) parent;
-    	for(IBuildingBlock nestedBlock : decomposeParentBlock.selectDecompose())
-    	{   		
-    		int childLevel = GetLevelNr(level+1, nestedBlock, decompositionBuildingBlock);
-    		if( childLevel != 0)
-    		{
-    			return childLevel;
-    		}
-    	}
-    	
-    	return 0;   
+      final IDecompositionBuildingBlock decomposeParentBlock = (IDecompositionBuildingBlock) parent;
+      for(final IBuildingBlock nestedBlock : decomposeParentBlock.selectDecompose())
+      {   		
+      	final int childLevel = GetLevelNr(level+1, nestedBlock, decompositionBuildingBlock);
+      	if( childLevel != 0)
+      	{
+      		return childLevel;
+      	}
+      }
+
+      return 0;   
       /* End Protected Region   [[83431bc4-4395-11e6-a883-1f8f2b17c061]] */
     }
 
@@ -310,4 +310,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,NKK/bOspQJoLbmt+VcpoAQipY1A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,zP/Th3RrVrIjmQbdUg0PT6xeltk=] */

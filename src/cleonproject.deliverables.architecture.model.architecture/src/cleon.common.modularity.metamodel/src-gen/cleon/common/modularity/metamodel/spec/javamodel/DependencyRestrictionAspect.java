@@ -24,52 +24,53 @@ import cleon.common.modularity.metamodel.spec.FunctionSpace_Buildingblock.*;
 
 public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl implements IUseRangeRestrictionAspect {
 
+	@Override
 	public IFilter<INode> allowedObjectsFilter(final ISelectable selectable, INode subject, INode predicate) {
-  	  	ITypeSystem typeSystem = TypeSystem.create(selectable);
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		
-		IDependency dependency = resourceRepository.getResource(IDependency.class, subject);
-		IDependencyFunctions dependencyFunctions = dependency.extension(IDependencyFunctions.class);
-		
-		List<IBuildingBlock> getAllNotAllowedDependencies = dependencyFunctions.GetAllNotAllowedDependencies();
+		final ITypeSystem typeSystem = TypeSystem.create(selectable);
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
-		return new IFilter<INode>() {
-			public boolean include(INode element) {
-				IBuildingBlock buildingBlock = resourceRepository.getResource(IBuildingBlock.class, element);
-				return (!getAllNotAllowedDependencies.contains(buildingBlock));
-			}
+		final IDependency dependency = resourceRepository.getResource(IDependency.class, subject);
+		final IDependencyFunctions dependencyFunctions = dependency.extension(IDependencyFunctions.class);
+
+		final List<IBuildingBlock> getAllNotAllowedDependencies = dependencyFunctions.GetAllNotAllowedDependencies();
+
+		return element -> {
+			final IBuildingBlock buildingBlock = resourceRepository.getResource(IBuildingBlock.class, element);
+			return !getAllNotAllowedDependencies.contains(buildingBlock);
 		};
 	}
 
+	@Override
 	public IFilter<INode> allowedTypeFilter(IReadJobExecutor readExecutor, INode subject, INode predicate) {
 		return Filter.excludeAll();
 	}
-	
+
+	@Override
 	public void validate(ValidationContext context, Statement statement, List<IResourceInconsistency> inconsistencyList) {
-  	  	ITypeSystem typeSystem = TypeSystem.create(context.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IDependency dependency = resourceRepository.getResource(IDependency.class, context.getResource());
-		IBuildingBlock startBuildingBlock = DependentBuildingBlock.selectToMeHasDependency(dependency);
-	    //ch.actifsource.util.log.Logger.instance().logInfo("BuildingBlock: " + Select.simpleName(context.getReadJobExecutor(), startBuildingBlock.getResource()));
+		final ITypeSystem typeSystem = TypeSystem.create(context.getReadJobExecutor());
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final IDependency dependency = resourceRepository.getResource(IDependency.class, context.getResource());
+		final IBuildingBlock startBuildingBlock = DependentBuildingBlock.selectToMeHasDependency(dependency);
+		//ch.actifsource.util.log.Logger.instance().logInfo("BuildingBlock: " + Select.simpleName(context.getReadJobExecutor(), startBuildingBlock.getResource()));
 		validate(context.getReadJobExecutor(), startBuildingBlock, startBuildingBlock, new ArrayList<IBuildingBlock>(), statement, inconsistencyList );
 	}
-	
+
 	private void validate( IReadJobExecutor executor, IBuildingBlock currentBuildingBlock, IBuildingBlock toValidate, List<IBuildingBlock> checkBuildingBlocks, Statement statement, List<IResourceInconsistency> inconsistencyList)
 	{		
 		if(!inconsistencyList.isEmpty())
 		{
 			return;
 		}
-		
-		IBuildingBlockFunctions currentBuildingBlockFunctions = currentBuildingBlock.extension(IBuildingBlockFunctions.class);
-		List<IDependency> dependingBuildings = currentBuildingBlockFunctions.GetOnlyDependencies();	
-		
-		for( IDependency dependency : dependingBuildings)
+
+		final IBuildingBlockFunctions currentBuildingBlockFunctions = currentBuildingBlock.extension(IBuildingBlockFunctions.class);
+		final List<IDependency> dependingBuildings = currentBuildingBlockFunctions.OnlyDependencies();	
+
+		for( final IDependency dependency : dependingBuildings)
 		{
-			if((!IsRecursiveDependencyAllowed(dependency)))
+			if(!IsRecursiveDependencyAllowed(dependency))
 			{
 				//ch.actifsource.util.log.Logger.instance().logInfo("Checking dependency " + Select.simpleName(executor, dependency.getResource()) + " for " + Select.simpleName(executor, toValidate.getResource()));
-				IBuildingBlock nextBuildingBlock = dependency.selectTo();
+				final IBuildingBlock nextBuildingBlock = dependency.selectTo();
 				if( nextBuildingBlock.equals(toValidate))
 				{
 					inconsistencyList.add(new SingleStatementInconsistency(statement, "Object is not allowed because of recursive dependency"));
@@ -99,12 +100,13 @@ public class DependencyRestrictionAspect extends AbstractStatelessAspectImpl imp
 		}
 		else
 		{
-			return dependency.selectAllowRecursiveDependency().booleanValue();
+			return dependency.selectAllowRecursiveDependency();
 		}
 	}
 
 
 
+	@Override
 	@CheckForNull
 	@NullAllowed
 	public IOrderedSet<IResourcePlacement> getPossibleNewObjectPlacements(IReadJobExecutor executor, INode subject,

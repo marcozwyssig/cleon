@@ -27,22 +27,22 @@ public class DependenyOwnRestrictionAspect implements IOwnRangeRestrictionAspect
 	@Override
 	public void validate(ValidationContext validationcontext, Statement statement,
 			List<IResourceInconsistency> inconsistencyList) {
-		ITypeSystem typeSystem = TypeSystem.create(validationcontext.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IDependentBuildingBlock dependentBuildingBlock = resourceRepository.getResource(IDependentBuildingBlock.class,
+		final ITypeSystem typeSystem = TypeSystem.create(validationcontext.getReadJobExecutor());
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final IDependentBuildingBlock dependentBuildingBlock = resourceRepository.getResource(IDependentBuildingBlock.class,
 				validationcontext.getResource());
 
-		IDependency dependency = resourceRepository.getResource(IDependency.class, statement.object());
-		IBuildingBlock dependencyBuildingBlock = dependency.selectTo();
+		final IDependency dependency = resourceRepository.getResource(IDependency.class, statement.object());
+		final IBuildingBlock dependencyBuildingBlock = dependency.selectTo();
 
-		IBuildingBlockFunctions blockFunctions = dependentBuildingBlock.extension(IBuildingBlockFunctions.class);
-		List<IBuildingBlock> indirectBuildingBlocks = blockFunctions.GetIndirectDependingBuildingBlocks();
+		final IBuildingBlockFunctions blockFunctions = dependentBuildingBlock.extension(IBuildingBlockFunctions.class);
+		final List<IBuildingBlock> indirectBuildingBlocks = blockFunctions.IndirectDependingBuildingBlocks();
 
 		if (indirectBuildingBlocks.contains(dependencyBuildingBlock)) {
 			inconsistencyList.add(new SingleStatementInconsistency(statement, "Dependency is inherited redundant."));
 		}
 
-		List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.GetDependencies());
+		final List<IBuildingBlock> directBuildingBlocks = new ArrayList<>(blockFunctions.DependsOn());
 
 		directBuildingBlocks.remove(dependencyBuildingBlock);
 

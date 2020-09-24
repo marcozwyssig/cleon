@@ -1438,7 +1438,7 @@
                 <object statement-guid="4713cc2f-44bf-11e5-93ef-c50f9659357a" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="47861595-44bf-11e5-93ef-c50f9659357a" type="literal">GetParent</object>
+                <object statement-guid="47861595-44bf-11e5-93ef-c50f9659357a" type="literal">Parent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="5687f0a6-44bf-11e5-93ef-c50f9659357a">
@@ -1673,7 +1673,7 @@
                 <object statement-guid="f37bd2dc-3a03-11e6-a354-253097f89a49" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="f3c510de-3a03-11e6-a354-253097f89a49" type="literal">GetTopBuildingBlock</object>
+                <object statement-guid="f3c510de-3a03-11e6-a354-253097f89a49" type="literal">TopBuildingBlock</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="915a7643-439d-11e6-a883-1f8f2b17c061">
@@ -1817,7 +1817,7 @@
                 <object statement-guid="d3ef3c0a-3c75-11e6-aafa-bd565efc0ead" type="resource" guid="b97c7b77-6879-11e1-9ee5-63ac6c762890" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="d5bb49d7-3c75-11e6-aafa-bd565efc0ead" type="literal">GetFullBuildingBlockName</object>
+                <object statement-guid="d5bb49d7-3c75-11e6-aafa-bd565efc0ead" type="literal">FullBuildingBlockName</object>
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
                 <object statement-guid="d3f381e1-3c75-11e6-aafa-bd565efc0ead">
@@ -2094,7 +2094,7 @@
                 <object statement-guid="281c80c5-3c77-11e6-aafa-bd565efc0ead" type="resource" guid="b97c7b77-6879-11e1-9ee5-63ac6c762890" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="287e7706-3c77-11e6-aafa-bd565efc0ead" type="literal">GetBuildingBlockName</object>
+                <object statement-guid="287e7706-3c77-11e6-aafa-bd565efc0ead" type="literal">BuildingBlockName</object>
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
                 <object statement-guid="281e2e8c-3c77-11e6-aafa-bd565efc0ead">
@@ -2173,7 +2173,7 @@
                 <object statement-guid="feec2b27-0aa6-11e9-b5db-cdf0b8dad9e4" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="feec2b28-0aa6-11e9-b5db-cdf0b8dad9e4" type="literal">GetAllDecomposingBuildingBlocksWithSelf</object>
+                <object statement-guid="feec2b28-0aa6-11e9-b5db-cdf0b8dad9e4" type="literal">AllDecomposingBuildingBlocksWithSelf</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="feec2b48-0aa6-11e9-b5db-cdf0b8dad9e4">
@@ -2326,7 +2326,7 @@
                 <object statement-guid="b34d758e-24c0-11ea-9904-7d41f80113d4" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="b34d758f-24c0-11ea-9904-7d41f80113d4" type="literal">GetDecomposingBuildingBlocks</object>
+                <object statement-guid="b34d758f-24c0-11ea-9904-7d41f80113d4" type="literal">DecomposingBuildingBlocks</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="b34d9cbf-24c0-11ea-9904-7d41f80113d4">
@@ -2420,7 +2420,7 @@
                 <object statement-guid="5f8b2ad3-4823-11e6-82f6-0f210765495b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="5f8b2ad2-4823-11e6-82f6-0f210765495b" type="literal">GetDecomposingBuildingBlocksExceptSelf</object>
+                <object statement-guid="5f8b2ad2-4823-11e6-82f6-0f210765495b" type="literal">DecomposingBuildingBlocksExceptSelf</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="5f8b2b02-4823-11e6-82f6-0f210765495b">
@@ -2552,7 +2552,7 @@
                 <object statement-guid="2d309b7f-4355-11e6-a9d7-97cf4f7c398b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="2d309b7e-4355-11e6-a9d7-97cf4f7c398b" type="literal">GetDecomposingBuildingBlocksFromParent</object>
+                <object statement-guid="2d309b7e-4355-11e6-a9d7-97cf4f7c398b" type="literal">DecomposingBuildingBlocksFromParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="2d309bb3-4355-11e6-a9d7-97cf4f7c398b">
@@ -2696,7 +2696,7 @@
                 <object statement-guid="3b3cfdf1-4356-11e6-a9d7-97cf4f7c398b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="3b3cfdf0-4356-11e6-a9d7-97cf4f7c398b" type="literal">GetDecomposeBuildingBlockOfAllDependenciesFromParent</object>
+                <object statement-guid="3b3cfdf0-4356-11e6-a9d7-97cf4f7c398b" type="literal">DecomposeBuildingBlockOfAllDependenciesFromParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="3b3cfe1e-4356-11e6-a9d7-97cf4f7c398b">
@@ -2802,7 +2802,7 @@
                 <object statement-guid="2d309bb8-4355-11e6-a9d7-97cf4f7c398b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="2d309bb7-4355-11e6-a9d7-97cf4f7c398b" type="literal">GetAllAllowedBuildingBlockFromParent</object>
+                <object statement-guid="2d309bb7-4355-11e6-a9d7-97cf4f7c398b" type="literal">AllAllowedBuildingBlockFromParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="a11fb6ff-4355-11e6-a9d7-97cf4f7c398b">
@@ -2925,7 +2925,7 @@
                 <object statement-guid="2d309b48-4355-11e6-a9d7-97cf4f7c398b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="2d309b47-4355-11e6-a9d7-97cf4f7c398b" type="literal">GetAllDependenciesFromParent</object>
+                <object statement-guid="2d309b47-4355-11e6-a9d7-97cf4f7c398b" type="literal">AllDependenciesFromParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="2d309b7a-4355-11e6-a9d7-97cf4f7c398b">
@@ -3043,7 +3043,7 @@
                 <object statement-guid="a032d55e-4823-11e6-82f6-0f210765495b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="a032d55d-4823-11e6-82f6-0f210765495b" type="literal">GetDependencies</object>
+                <object statement-guid="a032d55d-4823-11e6-82f6-0f210765495b" type="literal">DependsOn</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="b5d720ff-51a1-11e9-80a8-e19504dc2bb6">
@@ -3137,7 +3137,7 @@
                 <object statement-guid="aadf82bc-51a1-11e9-80a8-e19504dc2bb6" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="aadf82bd-51a1-11e9-80a8-e19504dc2bb6" type="literal">GetOnlyDependencies</object>
+                <object statement-guid="aadf82bd-51a1-11e9-80a8-e19504dc2bb6" type="literal">OnlyDependencies</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="aadfa9e3-51a1-11e9-80a8-e19504dc2bb6">
@@ -3240,7 +3240,7 @@
                 <object statement-guid="68a66af8-4910-11e6-be22-874cc08f42ce" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="68a66af7-4910-11e6-be22-874cc08f42ce" type="literal">GetDirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent</object>
+                <object statement-guid="68a66af7-4910-11e6-be22-874cc08f42ce" type="literal">DirectDependingBuildingBlocksWhereInteresectWithDecompsingBuildingBlockOfParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="68a66b0e-4910-11e6-be22-874cc08f42ce">
@@ -3363,7 +3363,7 @@
                 <object statement-guid="15cae2cc-4914-11e6-be22-874cc08f42ce" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="15cae2cb-4914-11e6-be22-874cc08f42ce" type="literal">GetDependingBuildingBlocksOutsideParent</object>
+                <object statement-guid="15cae2cb-4914-11e6-be22-874cc08f42ce" type="literal">DependingBuildingBlocksOutsideParent</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="15cae2e5-4914-11e6-be22-874cc08f42ce">
@@ -3486,7 +3486,7 @@
                 <object statement-guid="b07d7383-894c-11e6-ad04-d1961316644a" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="b123c4d2-894c-11e6-ad04-d1961316644a" type="literal">GetAllDependencies</object>
+                <object statement-guid="b123c4d2-894c-11e6-ad04-d1961316644a" type="literal">AllDependsOn</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="db625cb9-8959-11e6-ad04-d1961316644a">
@@ -3571,7 +3571,7 @@
                 <object statement-guid="caa2cc04-8959-11e6-ad04-d1961316644a" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="caa2cc05-8959-11e6-ad04-d1961316644a" type="literal">GetAllDuplicatedDependencies</object>
+                <object statement-guid="caa2cc05-8959-11e6-ad04-d1961316644a" type="literal">AllDuplicatedDependsOn</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="caa2cc27-8959-11e6-ad04-d1961316644a">
@@ -3706,7 +3706,7 @@
                 <object statement-guid="24cf8572-2ce6-11e8-a902-afb10318295e" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="25da8cdf-2ce6-11e8-a902-afb10318295e" type="literal">GetIndirectDependingBuildingBlocks</object>
+                <object statement-guid="25da8cdf-2ce6-11e8-a902-afb10318295e" type="literal">IndirectDependingBuildingBlocks</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="305d9657-2ce6-11e8-a902-afb10318295e">
@@ -3794,7 +3794,7 @@
                 <object statement-guid="f914397a-1b4b-11e9-9171-31a0f985a0be" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="f98daec3-1b4b-11e9-9171-31a0f985a0be" type="literal">GetInvertDependencies</object>
+                <object statement-guid="f98daec3-1b4b-11e9-9171-31a0f985a0be" type="literal">InvertDependencies</object>
               </predicate>
               <predicate guid="952a518e-7746-11e1-ad5d-97109d23eafb">
                 <object statement-guid="090a873e-1b4c-11e9-9171-31a0f985a0be">
@@ -4333,7 +4333,7 @@
                 <object statement-guid="f58993e7-fe34-11ea-892b-df291bae18c5" type="resource" guid="c31f1aef-77ef-11e1-a134-5793980f7ff3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="f77ed494-fe34-11ea-892b-df291bae18c5" type="literal">GetShortAndNameInParentheses</object>
+                <object statement-guid="f77ed494-fe34-11ea-892b-df291bae18c5" type="literal">ShortAndNameInParentheses</object>
               </predicate>
               <predicate guid="c31f1af0-77ef-11e1-a134-5793980f7ff3">
                 <object statement-guid="ff36b081-fe34-11ea-892b-df291bae18c5">

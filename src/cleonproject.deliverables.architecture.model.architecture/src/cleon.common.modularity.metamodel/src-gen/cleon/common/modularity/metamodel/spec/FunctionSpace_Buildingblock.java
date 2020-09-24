@@ -91,7 +91,10 @@ public class FunctionSpace_Buildingblock {
     public java.lang.String GetShortname();
 
     @IDynamicResourceExtension.MethodId("e9b270bf-8017-11ea-b039-9728191a5cdc")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo();
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsFrom();
+
+    @IDynamicResourceExtension.MethodId("e612da8f-fe52-11ea-abcb-bfad67a56d79")
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsOn();
 
     @IDynamicResourceExtension.MethodId("83992df6-bbb5-11ea-83bb-3d6d7d2cf439")
     public java.lang.String GetNameInParentheses();
@@ -116,7 +119,10 @@ public class FunctionSpace_Buildingblock {
     public java.lang.String GetName(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock);
 
     @IDynamicResourceExtension.MethodId("e9b270bf-8017-11ea-b039-9728191a5cdc")
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList);
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsFrom(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList);
+
+    @IDynamicResourceExtension.MethodId("e612da8f-fe52-11ea-abcb-bfad67a56d79")
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsOn(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList);
 
     @IDynamicResourceExtension.MethodId("4be2cbb2-d8a1-11ea-ae00-5518e944c256")
     public java.lang.String GetIncludePath(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock);
@@ -135,7 +141,7 @@ public class FunctionSpace_Buildingblock {
     }
 
     @Override
-    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsFrom(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
       /* Begin Protected Region [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
       return buildingBlockList.stream().filter(x -> {
       	if( x instanceof IDependentBuildingBlock ) {
@@ -144,6 +150,13 @@ public class FunctionSpace_Buildingblock {
       	return false;
       }).collect(Collectors.toList());
       /* End Protected Region   [[e9b270bf-8017-11ea-b039-9728191a5cdc]] */
+    }
+
+    @Override
+    public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsOn(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+      /* Begin Protected Region [[e612da8f-fe52-11ea-abcb-bfad67a56d79]] */
+      return buildingBlockList.stream().filter(x -> (Dependency.selectToMeTo(x) == null)).collect(Collectors.toList()); 
+      /* End Protected Region   [[e612da8f-fe52-11ea-abcb-bfad67a56d79]] */
     }
 
     @Override
@@ -161,8 +174,12 @@ public class FunctionSpace_Buildingblock {
       return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlock).GetName(buildingBlock);
     }
 
-    public static List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyNotDependingTo(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
-      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).OnlyNotDependingTo(buildingBlockList);
+    public static List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsFrom(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).OnlyDependsFrom(buildingBlockList);
+    }
+
+    public static List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsOn(final List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> buildingBlockList) {
+      return DynamicResourceUtil.invoke(IBuildingBlockFunctionsImpl.class, BuildingBlockFunctionsImpl.INSTANCE, buildingBlockList).OnlyDependsOn(buildingBlockList);
     }
 
     public static java.lang.String GetIncludePath(final cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock buildingBlock) {
@@ -310,4 +327,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,zP/Th3RrVrIjmQbdUg0PT6xeltk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,JNNdU4wdoC6x0oB3sMzUxMqiQA8=] */

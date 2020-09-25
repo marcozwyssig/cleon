@@ -862,6 +862,81 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IDeploymentSystemArc42Functions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1eca449a-fe5c-11ea-abcb-bfad67a56d79")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IDeploymentSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentSystemArc42FunctionsImpl implements IDeploymentSystemArc42FunctionsImpl {
+
+    public static final IDeploymentSystemArc42FunctionsImpl INSTANCE = new DeploymentSystemArc42FunctionsImpl();
+
+    private DeploymentSystemArc42FunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentSystemArc42Functions {
+
+    private DeploymentSystemArc42Functions() {}
+
+  }
+
+  public static interface IAvailabilitySystemArc42Functions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5450483f-fe69-11ea-abcb-bfad67a56d79")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAvailabilitySystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AvailabilitySystemArc42FunctionsImpl implements IAvailabilitySystemArc42FunctionsImpl {
+
+    public static final IAvailabilitySystemArc42FunctionsImpl INSTANCE = new AvailabilitySystemArc42FunctionsImpl();
+
+    private AvailabilitySystemArc42FunctionsImpl() {}
+
+  }
+  
+  public static class AvailabilitySystemArc42Functions {
+
+    private AvailabilitySystemArc42Functions() {}
+
+  }
+
+  public static interface IAuthenticationSystemArc42Functions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("e9bd53f7-fe71-11ea-a3a8-c10b28569251")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAuthenticationSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AuthenticationSystemArc42FunctionsImpl implements IAuthenticationSystemArc42FunctionsImpl {
+
+    public static final IAuthenticationSystemArc42FunctionsImpl INSTANCE = new AuthenticationSystemArc42FunctionsImpl();
+
+    private AuthenticationSystemArc42FunctionsImpl() {}
+
+  }
+  
+  public static class AuthenticationSystemArc42Functions {
+
+    private AuthenticationSystemArc42Functions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,tQIXSsvPaDCS9dFIZGv6/KeN7xk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,igncsbKtHTwYX7zYWFAoM/cJO3I=] */

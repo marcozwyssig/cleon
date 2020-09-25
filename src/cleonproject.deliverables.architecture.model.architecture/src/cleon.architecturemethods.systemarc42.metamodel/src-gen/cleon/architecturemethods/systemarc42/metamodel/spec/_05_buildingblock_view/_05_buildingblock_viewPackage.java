@@ -48,6 +48,12 @@ public class _05_buildingblock_viewPackage {
   public static final Resource WhiteBoxSystemArc42_deployment = new Resource("abb1fe65-fe57-11ea-abcb-bfad67a56d79");
   public static final Resource DeploymentSystemArc42 = new Resource("33c30f60-fe58-11ea-abcb-bfad67a56d79");
   public static final Resource DeploymentSystemArc42_usedDeploymentMethod = new Resource("97c8aeae-fe58-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemArc42_availability = new Resource("a2cb1978-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource AvailabilitySystemArc42 = new Resource("abd0d2ce-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource AvailabilitySystemArc42_usedAvailability = new Resource("abd0d2cf-fe66-11ea-abcb-bfad67a56d79");
+  public static final Resource WhiteBoxSystemArc42_authn = new Resource("f442cb91-fe6d-11ea-abcb-bfad67a56d79");
+  public static final Resource AuthenticationSystemArc42 = new Resource("0d8ec749-fe6e-11ea-abcb-bfad67a56d79");
+  public static final Resource AuthenticationSystemArc42_realmForSystemConfiguration = new Resource("a67d798d-fe6e-11ea-abcb-bfad67a56d79");
   
   /* Begin Protected Region [[user]] */
   
@@ -68,4 +74,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,PicH5ZUiVS+Var2xogFAerfbazw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,VvaRP5qaKPIPK8/nmSUwNRju/Ro=] */

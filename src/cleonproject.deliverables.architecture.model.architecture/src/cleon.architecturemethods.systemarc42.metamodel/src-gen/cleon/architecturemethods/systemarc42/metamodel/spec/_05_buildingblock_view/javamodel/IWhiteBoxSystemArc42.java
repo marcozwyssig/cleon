@@ -10,6 +10,10 @@ public interface IWhiteBoxSystemArc42 extends cleon.architecturemethods.arc42.me
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IDeploymentSystemArc42 selectDeployment();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAvailabilitySystemArc42 selectAvailability();
+  
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAuthenticationSystemArc42 selectAuthn();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,IZocRd5OalPlOUX8PtwOR+MZKCY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a296733a-fe57-11ea-abcb-bfad67a56d79,U1/zeDzXi8WdE5UhtzajUPrX2Iw=] */

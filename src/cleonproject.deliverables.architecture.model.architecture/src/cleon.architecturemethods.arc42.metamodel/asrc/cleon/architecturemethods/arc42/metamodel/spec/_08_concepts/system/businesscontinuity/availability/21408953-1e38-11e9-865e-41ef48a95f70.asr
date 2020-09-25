@@ -8,6 +8,7 @@
     <resource statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70" type="resource" guid="a2ee790e-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70" type="resource" guid="6cd3005b-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa" type="resource" guid="c2ced2f5-77b9-11e9-8094-13b915a38efa" />
+    <resource statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="21408955-1e38-11e9-865e-41ef48a95f70" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -108,6 +109,19 @@
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="c5cc347a-77b9-11e9-8094-13b915a38efa" type="literal">Wenn der Knoten ausfällt, wird aus dem Backup der Knoten wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72">
+      <resource guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="709ec8b5-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="709ec8b6-ff1d-11ea-afaf-693ca36c7b72" type="literal">VM Replikation</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="709ec8b7-ff1d-11ea-afaf-693ca36c7b72" type="literal">Die VM wird regelmässig (täglich) repliziert.</object>
         </predicate>
       </resource>
     </object>

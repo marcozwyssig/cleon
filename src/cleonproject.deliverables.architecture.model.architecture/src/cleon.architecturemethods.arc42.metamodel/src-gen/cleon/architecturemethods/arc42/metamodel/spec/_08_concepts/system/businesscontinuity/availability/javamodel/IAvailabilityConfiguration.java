@@ -22,6 +22,8 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitFallback();
     
+    public void visitVM__F_Replikation();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -39,6 +41,8 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     public R visitN__S_to__S_1();
     
     public R visitFallback();
+    
+    public R visitVM__F_Replikation();
     
   }
   
@@ -64,7 +68,9 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isFallback();
   
+  public boolean isVM__F_Replikation();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,zR+t0rWuLHJJSrC4eOoxFY0AB3c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,Zg1VwzhqC+sj2tX0xroQJbswpBM=] */

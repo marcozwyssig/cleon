@@ -99,6 +99,7 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isN__Q_M()) return visitor.visitN__Q_M();
     if (isN__S_to__S_1()) return visitor.visitN__S_to__S_1();
     if (isFallback()) return visitor.visitFallback();
+    if (isVM__F_Replikation()) return visitor.visitVM__F_Replikation();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -130,6 +131,10 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     }
     if (isFallback()) {
       visitor.visitFallback();
+      return;
+    }
+    if (isVM__F_Replikation()) {
+      visitor.visitVM__F_Replikation();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -172,5 +177,10 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Fallback);
   }
   
+  @Override
+  public boolean isVM__F_Replikation() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Replikation);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,6V27eCMkhGL0HCKYfMQhZ/tAgzs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,uHab8q1V5NqBudqjMleHj+Mu4kk=] */

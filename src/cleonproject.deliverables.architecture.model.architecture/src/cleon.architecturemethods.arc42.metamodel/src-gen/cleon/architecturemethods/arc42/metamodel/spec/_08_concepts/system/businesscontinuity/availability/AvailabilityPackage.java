@@ -17,6 +17,7 @@ public class AvailabilityPackage {
   public static final Resource AvailabilityConfiguration_N__Q_1 = new Resource("916492f5-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_N__Q_M = new Resource("a2ee790e-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration_Fallback = new Resource("c2ced2f5-77b9-11e9-8094-13b915a38efa");
+  public static final Resource AvailabilityConfiguration_VM__F_Replikation = new Resource("709ec8b4-ff1d-11ea-afaf-693ca36c7b72");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +38,4 @@ public class AvailabilityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,O+GbNBo6v4MQAxRwi1o7XGEQwBU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,Cr/sX0qAdNMHQzV/xW6Tw4fvgR4=] */

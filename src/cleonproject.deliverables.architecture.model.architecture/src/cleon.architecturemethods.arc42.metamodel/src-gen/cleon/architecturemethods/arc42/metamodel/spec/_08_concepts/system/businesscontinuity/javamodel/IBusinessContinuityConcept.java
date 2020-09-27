@@ -8,10 +8,12 @@ public interface IBusinessContinuityConcept extends cleon.common.doc.metamodel.s
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailability selectAvailability();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityConcept selectAvailability();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.backup.javamodel.IBackup selectBackup();
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.backup.javamodel.IBackupConcept selectBackup();
+  
+  public cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.autonomy.javamodel.IAutonomyConcept selectAutonomy();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2395fff-0eae-11e9-9f19-6d15636f4ecc,UCEAg4gX2bdujdhgTYoGaIgCkp8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2395fff-0eae-11e9-9f19-6d15636f4ecc,F3adRPzqmIytPijfSzk4FeQuN1I=] */

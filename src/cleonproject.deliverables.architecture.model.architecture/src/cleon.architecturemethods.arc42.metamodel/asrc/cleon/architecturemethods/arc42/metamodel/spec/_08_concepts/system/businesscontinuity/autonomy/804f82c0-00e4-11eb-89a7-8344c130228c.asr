@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="804f82c0-00e4-11eb-89a7-8344c130228c">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="aacfa336-00e4-11eb-89a7-8344c130228c" type="resource" guid="aace91c2-00e4-11eb-89a7-8344c130228c">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="aeabcbed-00e4-11eb-89a7-8344c130228c" type="resource" guid="aeab7dca-00e4-11eb-89a7-8344c130228c">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="aeae3cf8-00e4-11eb-89a7-8344c130228c" type="resource" guid="aeadc7c4-00e4-11eb-89a7-8344c130228c" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="804f82c2-00e4-11eb-89a7-8344c130228c" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="83835d8a-00e4-11eb-89a7-8344c130228c" type="resource" guid="40e8c0a9-1d52-11e9-8222-13cd25917917" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="804ff7f3-00e4-11eb-89a7-8344c130228c" type="literal">AutonomyConcept</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="aacfa336-00e4-11eb-89a7-8344c130228c">
+      <resource guid="aace91c2-00e4-11eb-89a7-8344c130228c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="aacedfe4-00e4-11eb-89a7-8344c130228c" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="aacf2e05-00e4-11eb-89a7-8344c130228c" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="aeabcbed-00e4-11eb-89a7-8344c130228c">
+            <resource guid="aeab7dca-00e4-11eb-89a7-8344c130228c">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="aeaba4dc-00e4-11eb-89a7-8344c130228c" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="aeae3cf8-00e4-11eb-89a7-8344c130228c">
+                  <resource guid="aeadc7c4-00e4-11eb-89a7-8344c130228c">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="aeadeed6-00e4-11eb-89a7-8344c130228c" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="aeae15e7-00e4-11eb-89a7-8344c130228c" type="literal">Autonomie</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

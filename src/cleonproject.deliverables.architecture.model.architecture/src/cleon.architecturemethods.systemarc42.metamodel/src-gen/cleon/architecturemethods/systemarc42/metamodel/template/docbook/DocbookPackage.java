@@ -13,8 +13,8 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_ActivityRootGroups = new Resource("8fcdfa50-1e18-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RoleActorGroup = new Resource("fa35c9ef-1e1b-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_RoleRootGroups = new Resource("009394bc-1e1c-11e9-865e-41ef48a95f70");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Availability = new Resource("5c9780f7-1e3a-11e9-865e-41ef48a95f70");
-  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Backup = new Resource("8b0b0947-1e3f-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AvailabilityConcept = new Resource("5c9780f7-1e3a-11e9-865e-41ef48a95f70");
+  public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_BackupConcept = new Resource("8b0b0947-1e3f-11e9-865e-41ef48a95f70");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Destination = new Resource("48e307e3-6df3-11ea-ab3c-05911d3796c8");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_Zone = new Resource("559ece0f-6e6e-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_Docbook_aE_SystemArc42_AbstractPhysicalNetwork = new Resource("69e428fc-6e84-11ea-b8e8-f1a46e0c42f7");
@@ -58,4 +58,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,6MnphYnYC/1NfSclcuV3sa4YWeM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.docbook,aPX+JLGkmtVaISOk6TvgdM/USXQ=] */

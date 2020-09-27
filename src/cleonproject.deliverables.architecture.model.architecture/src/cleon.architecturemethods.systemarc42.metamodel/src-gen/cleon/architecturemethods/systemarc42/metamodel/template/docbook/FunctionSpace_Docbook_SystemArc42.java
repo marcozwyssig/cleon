@@ -18,53 +18,53 @@ public class FunctionSpace_Docbook_SystemArc42 {
   /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c]] */
 
 
-  public static interface IAvailabilityFunctions extends IDynamicResourceExtension {
+  public static interface IAvailabilityConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6005307c-1e3a-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IAvailabilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAvailabilityConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AvailabilityFunctionsImpl implements IAvailabilityFunctionsImpl {
+  public static class AvailabilityConceptFunctionsImpl implements IAvailabilityConceptFunctionsImpl {
 
-    public static final IAvailabilityFunctionsImpl INSTANCE = new AvailabilityFunctionsImpl();
+    public static final IAvailabilityConceptFunctionsImpl INSTANCE = new AvailabilityConceptFunctionsImpl();
 
-    private AvailabilityFunctionsImpl() {}
+    private AvailabilityConceptFunctionsImpl() {}
 
   }
   
-  public static class AvailabilityFunctions {
+  public static class AvailabilityConceptFunctions {
 
-    private AvailabilityFunctions() {}
+    private AvailabilityConceptFunctions() {}
 
   }
 
-  public static interface IBackupFunctions extends IDynamicResourceExtension {
+  public static interface IBackupConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("90698ca7-1e3f-11e9-865e-41ef48a95f70")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IBackupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBackupConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class BackupFunctionsImpl implements IBackupFunctionsImpl {
+  public static class BackupConceptFunctionsImpl implements IBackupConceptFunctionsImpl {
 
-    public static final IBackupFunctionsImpl INSTANCE = new BackupFunctionsImpl();
+    public static final IBackupConceptFunctionsImpl INSTANCE = new BackupConceptFunctionsImpl();
 
-    private BackupFunctionsImpl() {}
+    private BackupConceptFunctionsImpl() {}
 
   }
   
-  public static class BackupFunctions {
+  public static class BackupConceptFunctions {
 
-    private BackupFunctions() {}
+    private BackupConceptFunctions() {}
 
   }
 
@@ -981,4 +981,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,L002+AoHvcYy9UWKGNBfs460+i4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,hycBQAS4v0Db4d10P4L6KQG0las=] */

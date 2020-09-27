@@ -4,9 +4,9 @@ import ch.actifsource.core.Resource;
 
 public class AvailabilityPackage {
   
-  public static final Resource Availability = new Resource("ccb76508-0eae-11e9-9f19-6d15636f4ecc");
+  public static final Resource AvailabilityConcept = new Resource("ccb76508-0eae-11e9-9f19-6d15636f4ecc");
   public static final Resource AvailabilityBuildingBlock = new Resource("68803d0a-1e37-11e9-865e-41ef48a95f70");
-  public static final Resource Availability_availabilityBuildingBlocks = new Resource("74a007d4-1e37-11e9-865e-41ef48a95f70");
+  public static final Resource AvailabilityConcept_availabilityBuildingBlocks = new Resource("74a007d4-1e37-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityBuildingBlock_availabilityBuildingBlock = new Resource("a4c8858f-1e37-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityConfiguration = new Resource("21408953-1e38-11e9-865e-41ef48a95f70");
   public static final Resource AvailabilityBuildingBlock_availability = new Resource("2e65408c-1e38-11e9-865e-41ef48a95f70");
@@ -37,4 +37,4 @@ public class AvailabilityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,cLvbCzfaKWqGPRzQmARz0wOuG5c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,gyRT3m4ZPjuYv85R/vS23rHYHY4=] */

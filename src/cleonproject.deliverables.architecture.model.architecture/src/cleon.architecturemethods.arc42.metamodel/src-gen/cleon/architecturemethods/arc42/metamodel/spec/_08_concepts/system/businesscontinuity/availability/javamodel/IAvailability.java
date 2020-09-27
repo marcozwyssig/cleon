@@ -2,7 +2,7 @@ package cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.busin
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAvailability extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IAbstractBusinessContinuityConcept {
+public interface IAvailability extends cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.javamodel.IAbstractBusinessContinuityConcept, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ccb76508-0eae-11e9-9f19-6d15636f4ecc");
   
@@ -12,4 +12,4 @@ public interface IAvailability extends cleon.architecturemethods.arc42.metamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ccb76508-0eae-11e9-9f19-6d15636f4ecc,z4BNonKHaaBVlud3gs05Qv1tgpA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ccb76508-0eae-11e9-9f19-6d15636f4ecc,pFP3GzkyJhaLqGJGi48VfCO69PE=] */

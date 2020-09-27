@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="21408953-1e38-11e9-865e-41ef48a95f70">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="b84015a4-00da-11eb-85a8-c1eaace008cf" type="resource" guid="b83fc781-00da-11eb-85a8-c1eaace008cf" />
+  </owns>
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
     <resource statement-guid="6922a273-1e38-11e9-865e-41ef48a95f70" type="resource" guid="691caf00-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70" type="resource" guid="315c388e-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70" type="resource" guid="63f98721-1e38-11e9-865e-41ef48a95f70" />
-    <resource statement-guid="916492f8-1e38-11e9-865e-41ef48a95f70" type="resource" guid="916492f5-1e38-11e9-865e-41ef48a95f70" />
-    <resource statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70" type="resource" guid="a2ee790e-1e38-11e9-865e-41ef48a95f70" />
-    <resource statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70" type="resource" guid="6cd3005b-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa" type="resource" guid="c2ced2f5-77b9-11e9-8094-13b915a38efa" />
     <resource statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72" />
+    <resource statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c" type="resource" guid="bc7b8255-00df-11eb-89a7-8344c130228c" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="21408955-1e38-11e9-865e-41ef48a95f70" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -16,6 +17,24 @@
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2140d777-1e38-11e9-865e-41ef48a95f70" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
     <object statement-guid="a5b8789a-1e39-11e9-865e-41ef48a95f70" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="b84015a4-00da-11eb-85a8-c1eaace008cf">
+      <resource guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b83fee93-00da-11eb-85a8-c1eaace008cf" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c164053e-00da-11eb-85a8-c1eaace008cf" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="b99ff3c9-00da-11eb-85a8-c1eaace008cf" type="literal">standardDescription</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="b840b1e5-00da-11eb-85a8-c1eaace008cf" type="resource" guid="ec497725-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="2140b066-1e38-11e9-865e-41ef48a95f70" type="literal">AvailabilityConfiguration</object>
@@ -32,6 +51,9 @@
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="aa5be901-1e39-11e9-865e-41ef48a95f70" type="literal">Keine Verfügbarkeitskonfiguration vorhanden</object>
         </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="eb87d4eb-00da-11eb-85a8-c1eaace008cf" type="literal">Die Komponente ist nicht hochverfügbar aufgebaut und bei einem Ausfall übernimmt keine weitere Komponente deren Funktion.</object>
+        </predicate>
       </resource>
     </object>
     <object statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70">
@@ -44,6 +66,9 @@
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="bf448a4a-1e39-11e9-865e-41ef48a95f70" type="literal">Der für den ausgefallenen Knoten vorgesehene Verkehr wird entweder an einen vorhandenen Knoten weitergeleitet oder über die verbleibenden Knoten verteilt.</object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="b4a9b278-00db-11eb-89a7-8344c130228c" type="literal">Die Daten und der Dienst der Komponente sind in einem Verbund, d.h. dass die Daten laufend repliziert werden und alle Dienste angesteuert werden können. Falls ein Dienst einer Komponente nicht mehr verfügbar ist, übernehmen die restlichen Komponente den Dienst. Sobald der Dienst der ausgefallenen Komponente wieder verfügbar ist, integriert sich der Dienst in den Verbund.</object>
         </predicate>
       </resource>
     </object>
@@ -58,44 +83,8 @@
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="d126c98b-1e39-11e9-865e-41ef48a95f70" type="literal">Stellt eine vollständig redundante Instanz jedes Knotens bereit, die nur dann online geschaltet wird, wenn der zugehörige Primärknoten ausfällt. </object>
         </predicate>
-      </resource>
-    </object>
-    <object statement-guid="916492f8-1e38-11e9-865e-41ef48a95f70">
-      <resource guid="916492f5-1e38-11e9-865e-41ef48a95f70">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="916492f7-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="922b8c79-1e38-11e9-865e-41ef48a95f70" type="literal">N+1</object>
-        </predicate>
-        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="e19d6adc-1e39-11e9-865e-41ef48a95f70" type="literal">Stellt einen einzelnen zusätzlichen Knoten bereit, der online geschaltet wird, um die Rolle des ausgefallenen Knotens zu übernehmen.</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="a2eea021-1e38-11e9-865e-41ef48a95f70">
-      <resource guid="a2ee790e-1e38-11e9-865e-41ef48a95f70">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a2ee790f-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a2ee7910-1e38-11e9-865e-41ef48a95f70" type="literal">N+M</object>
-        </predicate>
-        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="fff24f5e-1e39-11e9-865e-41ef48a95f70" type="literal">In Fällen, in denen ein einzelner Cluster viele Dienste verwaltet, bietet ein dedizierter Failover-Knoten möglicherweise keine ausreichende Redundanz. In solchen Fällen sind mehr als ein (M) Standby-Server enthalten und verfügbar.</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="6cd3005e-1e38-11e9-865e-41ef48a95f70">
-      <resource guid="6cd3005b-1e38-11e9-865e-41ef48a95f70">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="6cd3005d-1e38-11e9-865e-41ef48a95f70" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="85f1aa74-1e38-11e9-865e-41ef48a95f70" type="literal">N-to-1</object>
-        </predicate>
-        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="3ca6edd0-1e3a-11e9-865e-41ef48a95f70" type="literal">Der Failover-Standby-Knoten kann vorübergehend zum aktiven Knoten werden, bis der ursprüngliche Knoten wiederhergestellt oder wieder online geschaltet werden kann. </object>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="adf1da16-00de-11eb-89a7-8344c130228c" type="literal">Die Daten und Dienst werden von ein aktiven und von einer passiven Komponente angeboten. Die passive Komponente nimmt keine Anfragen entgegen, sondern nur die aktive Komponente stellt den Dienst zur Verfügung. Falls die aktive Komponente ausfällt, übernimmt die passive Komponente automatisch den Dienst. </object>
         </predicate>
       </resource>
     </object>
@@ -105,10 +94,13 @@
           <object statement-guid="c2cefa07-77b9-11e9-8094-13b915a38efa" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c3540889-77b9-11e9-8094-13b915a38efa" type="literal">Fallback</object>
+          <object statement-guid="c3540889-77b9-11e9-8094-13b915a38efa" type="literal">VM Sicherung und Wiederherstellung</object>
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="c5cc347a-77b9-11e9-8094-13b915a38efa" type="literal">Wenn der Knoten ausfällt, wird aus dem Backup der Knoten wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</object>
+          <object statement-guid="c5cc347a-77b9-11e9-8094-13b915a38efa" type="literal">Wenn der Knoten ausfällt, wird sie aus der Sicherung wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="21a4d707-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente wird mit dem Backup gesichert. Falls die Komponente ausfällt, wird die Komponenten aus der Sicherung wiederherstellt. Dabei werden die gleichen Konfigurationen (wie z.B. IP-Adresse, usw.) verwendet.</object>
         </predicate>
       </resource>
     </object>
@@ -122,6 +114,25 @@
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="709ec8b7-ff1d-11ea-afaf-693ca36c7b72" type="literal">Die VM wird regelmässig (täglich) repliziert.</object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="cf2bb2a4-00da-11eb-85a8-c1eaace008cf" type="literal">Beim Ausfall in einem Standort wird das Replikat auf dem verfügbaren Standort angewendet (gleicher Hostname und gleiche IP-Adresse).</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c">
+      <resource guid="bc7b8255-00df-11eb-89a7-8344c130228c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bc7b8257-00df-11eb-89a7-8344c130228c" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">VM Redundanz</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Replikation oder Kommunikation zwischen den Komponenten. </object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="db652cc5-00df-11eb-89a7-8344c130228c" type="literal">Falls eine Komponente nicht mehr verfügbar ist, kann auf die verfügbare Komponente zugegriffen werden.</object>
         </predicate>
       </resource>
     </object>

@@ -14,15 +14,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitActive__S_Passive__F___N_Failover__O_();
     
-    public void visitN__Q_1();
-    
-    public void visitN__Q_M();
-    
-    public void visitN__S_to__S_1();
-    
-    public void visitFallback();
+    public void visitVM__F_Sicherung__F_und__F_Wiederherstellung();
     
     public void visitVM__F_Replikation();
+    
+    public void visitVM__F_Redundanz();
     
   }
   
@@ -34,17 +30,17 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitActive__S_Passive__F___N_Failover__O_();
     
-    public R visitN__Q_1();
-    
-    public R visitN__Q_M();
-    
-    public R visitN__S_to__S_1();
-    
-    public R visitFallback();
+    public R visitVM__F_Sicherung__F_und__F_Wiederherstellung();
     
     public R visitVM__F_Replikation();
     
+    public R visitVM__F_Redundanz();
+    
   }
+  
+  // attributes
+  
+  public java.util.List<java.lang.String> selectStandardDescription();
   
   // accept visitors
   
@@ -60,17 +56,13 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isActive__S_Passive__F___N_Failover__O_();
   
-  public boolean isN__Q_1();
-  
-  public boolean isN__Q_M();
-  
-  public boolean isN__S_to__S_1();
-  
-  public boolean isFallback();
+  public boolean isVM__F_Sicherung__F_und__F_Wiederherstellung();
   
   public boolean isVM__F_Replikation();
+  
+  public boolean isVM__F_Redundanz();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,Zg1VwzhqC+sj2tX0xroQJbswpBM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,KjOV3LSjRHgrU13YZJpdHHbNxAw=] */

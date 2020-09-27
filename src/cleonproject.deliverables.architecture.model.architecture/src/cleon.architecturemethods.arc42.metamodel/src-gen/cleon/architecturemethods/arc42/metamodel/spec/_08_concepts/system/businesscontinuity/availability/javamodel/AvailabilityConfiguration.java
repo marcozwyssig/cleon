@@ -66,6 +66,15 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.util.List<java.lang.String> selectStandardDescription() {
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_standardDescription);
+  }
+    
+  public void setStandardDescription(java.util.List<java.lang.String> standardDescription) {
+     _setListAttribute(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_standardDescription, standardDescription);
+  }
+
   // relations
   
   @Override
@@ -84,6 +93,7 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_standardDescription, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -95,11 +105,9 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isNone()) return visitor.visitNone();
     if (isActive__S_Active()) return visitor.visitActive__S_Active();
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
-    if (isN__Q_1()) return visitor.visitN__Q_1();
-    if (isN__Q_M()) return visitor.visitN__Q_M();
-    if (isN__S_to__S_1()) return visitor.visitN__S_to__S_1();
-    if (isFallback()) return visitor.visitFallback();
+    if (isVM__F_Sicherung__F_und__F_Wiederherstellung()) return visitor.visitVM__F_Sicherung__F_und__F_Wiederherstellung();
     if (isVM__F_Replikation()) return visitor.visitVM__F_Replikation();
+    if (isVM__F_Redundanz()) return visitor.visitVM__F_Redundanz();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -117,24 +125,16 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitActive__S_Passive__F___N_Failover__O_();
       return;
     }
-    if (isN__Q_1()) {
-      visitor.visitN__Q_1();
-      return;
-    }
-    if (isN__Q_M()) {
-      visitor.visitN__Q_M();
-      return;
-    }
-    if (isN__S_to__S_1()) {
-      visitor.visitN__S_to__S_1();
-      return;
-    }
-    if (isFallback()) {
-      visitor.visitFallback();
+    if (isVM__F_Sicherung__F_und__F_Wiederherstellung()) {
+      visitor.visitVM__F_Sicherung__F_und__F_Wiederherstellung();
       return;
     }
     if (isVM__F_Replikation()) {
       visitor.visitVM__F_Replikation();
+      return;
+    }
+    if (isVM__F_Redundanz()) {
+      visitor.visitVM__F_Redundanz();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -158,23 +158,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isN__Q_1() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_N__Q_1);
-  }
-  
-  @Override
-  public boolean isN__Q_M() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_N__Q_M);
-  }
-  
-  @Override
-  public boolean isN__S_to__S_1() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_N__S_to__S_1);
-  }
-  
-  @Override
-  public boolean isFallback() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Fallback);
+  public boolean isVM__F_Sicherung__F_und__F_Wiederherstellung() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Sicherung__F_und__F_Wiederherstellung);
   }
   
   @Override
@@ -182,5 +167,10 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Replikation);
   }
   
+  @Override
+  public boolean isVM__F_Redundanz() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Redundanz);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,uHab8q1V5NqBudqjMleHj+Mu4kk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,FHmknAc4VFsm94lL8Nrr2CoOWcc=] */

@@ -8,8 +8,8 @@ public interface IAuthenticationSystemArc42 extends cleon.architecturemethods.ar
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmForSystemConfiguration selectRealmForSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmForSystemConfiguration selectRealmForSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d8ec749-fe6e-11ea-abcb-bfad67a56d79,zSCb6HZ3PpfQcCkVEz4yxczDH7A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0d8ec749-fe6e-11ea-abcb-bfad67a56d79,IXnkv+NOt/IAPizfRuVeCTFP9Hk=] */

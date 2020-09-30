@@ -61,6 +61,26 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept selectAuthn() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authn);
+  }
+
+  public SecurityConcept setAuthn(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept authn) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authn, authn);
+    return this;
+  }
+    
+  @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept selectAuthz() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authz);
+  }
+
+  public SecurityConcept setAuthz(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept authz) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authz, authz);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
@@ -91,26 +111,6 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC selectRbac() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_rbac);
-  }
-
-  public SecurityConcept setRbac(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC rbac) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_rbac, rbac);
-    return this;
-  }
-    
-  @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept selectRealm() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_realm);
-  }
-
-  public SecurityConcept setRealm(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept realm) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_realm, realm);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -127,20 +127,20 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccounts.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_accounts, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authn, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authz, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_rbac, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_realm, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectToMeRealm(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_realm, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectToMeAuthn(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authn, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectToMeRbac(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_rbac, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectToMeAuthz(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.SecurityPackage.SecurityConcept_authz, object.getResource());
   }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.javamodel.ISecurityConcept selectToMeAccounts(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccounts object) {
@@ -148,4 +148,4 @@ public class SecurityConcept extends DynamicResource implements ISecurityConcept
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,IiGHxX5j5/q2xlGwbcs+hAeP9W4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,xv0FRODznINfdnGXL7907FCpLY8=] */

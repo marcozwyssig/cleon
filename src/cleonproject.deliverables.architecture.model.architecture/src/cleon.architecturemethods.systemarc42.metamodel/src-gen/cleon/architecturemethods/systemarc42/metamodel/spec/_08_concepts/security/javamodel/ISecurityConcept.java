@@ -8,12 +8,12 @@ public interface ISecurityConcept extends cleon.architecturemethods.systemarc42.
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.realm.javamodel.IRealmConcept selectRealm();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConcept selectAuthn();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.rbac.javamodel.IRBAC selectRbac();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept selectAuthz();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccounts selectAccounts();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,5skHjjgE9BVLx4jd5VKLtTngqBE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9515e875-0eae-11e9-9f19-6d15636f4ecc,NSP/vGPDrvkU817oULw8h2qcrrg=] */

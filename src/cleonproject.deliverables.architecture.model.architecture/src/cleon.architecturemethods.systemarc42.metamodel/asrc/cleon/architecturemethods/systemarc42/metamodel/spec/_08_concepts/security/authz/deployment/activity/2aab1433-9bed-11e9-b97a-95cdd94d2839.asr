@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="2aab1433-9bed-11e9-b97a-95cdd94d2839">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="0acbc863-9bf9-11e9-b97a-95cdd94d2839" type="resource" guid="0ac9304b-9bf9-11e9-b97a-95cdd94d2839" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2aab3b45-9bed-11e9-b97a-95cdd94d2839" type="resource" guid="72c004d3-e4d4-11de-b765-afe1ffbc4f47" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2aac4cb6-9bed-11e9-b97a-95cdd94d2839" type="literal">SetIdForActivities</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="0acbc863-9bf9-11e9-b97a-95cdd94d2839">
+      <resource guid="0ac9304b-9bf9-11e9-b97a-95cdd94d2839">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0acab6ee-9bf9-11e9-b97a-95cdd94d2839" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0beec537-9bf9-11e9-b97a-95cdd94d2839" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.SetIdForActivities</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="0acb5331-9bf9-11e9-b97a-95cdd94d2839" type="resource" guid="771729f8-e4d4-11de-b765-afe1ffbc4f47" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

@@ -48,6 +48,15 @@ public class Sshscript extends DynamicResource implements ISshscript {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.String selectName() {
+    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  }
+    
+  public void setName(java.lang.String name) {
+     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
   // relations
   
   @Override
@@ -65,9 +74,10 @@ public class Sshscript extends DynamicResource implements ISshscript {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4ea140-c1eb-11ea-820f-9931558a898c,GMyrXZ756biLFWEG3DwJr3zejpw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4ea140-c1eb-11ea-820f-9931558a898c,ZNkd6QwQoA8orwsbM6+CX0jUP7A=] */

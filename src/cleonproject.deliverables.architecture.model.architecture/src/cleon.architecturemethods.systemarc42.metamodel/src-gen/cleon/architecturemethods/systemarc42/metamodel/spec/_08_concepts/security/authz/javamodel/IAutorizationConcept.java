@@ -10,7 +10,7 @@ public interface IAutorizationConcept extends cleon.common.doc.metamodel.spec.ch
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectChapters();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept selectAuthZForBuildingBlock();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectAuthZForBuildingBlock();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAuthZDeploymentConcept selectAuthZForDeployment();
   
@@ -18,4 +18,4 @@ public interface IAutorizationConcept extends cleon.common.doc.metamodel.spec.ch
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,k6CDfiDLGo0GQ9NjJVPM3GzaK6I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,YKMrLiU8c6ONc7VNVppT68mkGr4=] */

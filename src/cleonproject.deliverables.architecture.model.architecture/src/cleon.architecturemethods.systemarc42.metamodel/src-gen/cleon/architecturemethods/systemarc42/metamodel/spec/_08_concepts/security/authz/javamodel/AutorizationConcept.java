@@ -51,11 +51,11 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept selectAuthZForBuildingBlock() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectAuthZForBuildingBlock() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock);
   }
 
-  public AutorizationConcept setAuthZForBuildingBlock(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept authZForBuildingBlock) {
+  public AutorizationConcept setAuthZForBuildingBlock(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept authZForBuildingBlock) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock, authZForBuildingBlock);
     return this;
   }
@@ -126,7 +126,7 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAuthZDeploymentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForDeployment, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -140,7 +140,7 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_chapters, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept selectToMeAuthZForBuildingBlock(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockConcept object) {
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept selectToMeAuthZForBuildingBlock(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.javamodel.IAutorizationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock, object.getResource());
   }
   
@@ -153,4 +153,4 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,GQUV2H3fEZw1mnDXTd547DEILUU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,VhR72ReXaww9P8pMrC7A6n9L8C4=] */

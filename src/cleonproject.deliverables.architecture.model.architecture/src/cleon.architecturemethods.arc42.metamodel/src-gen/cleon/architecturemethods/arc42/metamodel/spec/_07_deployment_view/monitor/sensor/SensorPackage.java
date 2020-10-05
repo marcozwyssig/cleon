@@ -289,6 +289,7 @@ public class SensorPackage {
   public static final Resource ping_address = new Resource("310da901-f29c-11ea-b011-6106590acfe5");
   public static final Resource NamedSensor = new Resource("23f80945-f3fb-11ea-ade2-eb32c9704a85");
   public static final Resource FunctionSpace_aE_Sensor_NamedSensor = new Resource("52490824-f3fb-11ea-ade2-eb32c9704a85");
+  public static final Resource syslog = new Resource("597315ea-0729-11eb-a680-fff2ba300774");
   
   /* Begin Protected Region [[user]] */
   
@@ -309,4 +310,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,jgBsFnI7qzkIyjlt2zA0qHcnVoQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,vKn1GnUZccjFarI8NiajaJu15Lo=] */

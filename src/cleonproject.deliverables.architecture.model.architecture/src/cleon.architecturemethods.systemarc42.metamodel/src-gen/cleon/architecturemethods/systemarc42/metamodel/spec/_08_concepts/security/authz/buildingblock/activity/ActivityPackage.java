@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class ActivityPackage {
   
+  public static final Resource AuthZBuildingBlockActivity_uses = new Resource("4de346f2-809a-11e9-8e65-f3f639e40a34");
   public static final Resource AuthZBuildingBlockForSystem = new Resource("6649e36f-032a-11eb-af88-136a9a3b3817");
   public static final Resource AuthZBuildingBlockForSystem_authZForSystem = new Resource("6649e370-032a-11eb-af88-136a9a3b3817");
   public static final Resource AuthZBuildingBlockForSystem_authZForSystemConfigurations = new Resource("6649e37a-032a-11eb-af88-136a9a3b3817");
@@ -31,4 +32,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,VM7Ez6A+ylgGsMATfMUank/ONic=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,QfLapSeDDM0wjznhMAq70F9DJKE=] */

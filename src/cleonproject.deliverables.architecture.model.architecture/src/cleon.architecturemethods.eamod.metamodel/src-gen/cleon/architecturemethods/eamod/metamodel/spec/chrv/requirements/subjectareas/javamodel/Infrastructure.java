@@ -31,15 +31,6 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -165,4 +156,4 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea6313-0c76-11e6-86c5-87a8b520dd59,Qm3jWSlaS2+C1hG/tl1FM7ShxBQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a3ea6313-0c76-11e6-86c5-87a8b520dd59,QPZyqD+uJnQmesfYVx/E5/D9wEs=] */

@@ -31,15 +31,6 @@ public class AvailabilitySystemArc42 extends DynamicResource implements IAvailab
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -129,4 +120,4 @@ public class AvailabilitySystemArc42 extends DynamicResource implements IAvailab
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,abd0d2ce-fe66-11ea-abcb-bfad67a56d79,MsA5YoZcV3LlgA48HQ756UgE3Mc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,abd0d2ce-fe66-11ea-abcb-bfad67a56d79,IIs/RuZyk29y8JDaVBaaDz4WcAY=] */

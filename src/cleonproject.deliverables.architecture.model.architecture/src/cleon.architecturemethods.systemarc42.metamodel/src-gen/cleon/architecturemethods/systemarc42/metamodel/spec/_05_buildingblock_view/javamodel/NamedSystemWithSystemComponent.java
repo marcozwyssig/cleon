@@ -31,15 +31,6 @@ public class NamedSystemWithSystemComponent extends DynamicResource implements I
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -154,4 +145,4 @@ public class NamedSystemWithSystemComponent extends DynamicResource implements I
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8941a6b-5ca9-11ea-9014-eb1fa518f623,4a3Rs5XLehEMq3KYHPqAprK6Vfk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8941a6b-5ca9-11ea-9014-eb1fa518f623,7QYKVX/1cX5NdY/+u6gHrniq9iQ=] */

@@ -31,15 +31,6 @@ public class Http extends DynamicResource implements IHttp {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class Http extends DynamicResource implements IHttp {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f332-c1eb-11ea-820f-9931558a898c,Bs0QWpL5O/cRKRgeq8MSonERTcg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f332-c1eb-11ea-820f-9931558a898c,923sRytnZiPaXHf0C8QYRAMpObs=] */

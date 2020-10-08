@@ -31,15 +31,6 @@ public class GettingStarted extends DynamicResource implements IGettingStarted {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class GettingStarted extends DynamicResource implements IGettingStarted {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,WDPnZayhae2wlDE8Wf+1aiPzL98=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,sGJA117hGPBn5wqBxNaMikO7I3c=] */

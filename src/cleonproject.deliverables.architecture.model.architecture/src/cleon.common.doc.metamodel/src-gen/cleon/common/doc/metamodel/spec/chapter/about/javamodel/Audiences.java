@@ -31,15 +31,6 @@ public class Audiences extends DynamicResource implements IAudiences {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Audiences extends DynamicResource implements IAudiences {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,166170e0-0785-11e9-99e7-97cc29f85ed6,MxEvopQP2JFYoJwroHV4cB1rPzg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,166170e0-0785-11e9-99e7-97cc29f85ed6,AGNkqIk9U/6Z4fkUsglMxo+O8mE=] */

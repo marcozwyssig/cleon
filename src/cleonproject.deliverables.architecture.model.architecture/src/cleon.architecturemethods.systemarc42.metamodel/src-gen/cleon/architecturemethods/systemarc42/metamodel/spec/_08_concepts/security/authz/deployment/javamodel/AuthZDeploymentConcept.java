@@ -31,15 +31,6 @@ public class AuthZDeploymentConcept extends DynamicResource implements IAuthZDep
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class AuthZDeploymentConcept extends DynamicResource implements IAuthZDep
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3984f0ce-032c-11eb-af88-136a9a3b3817,fn19shQDUqM0X/mQTmwz0QQMVbg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3984f0ce-032c-11eb-af88-136a9a3b3817,lvA9i5by57jjD5HDSJWvrNxLcR4=] */

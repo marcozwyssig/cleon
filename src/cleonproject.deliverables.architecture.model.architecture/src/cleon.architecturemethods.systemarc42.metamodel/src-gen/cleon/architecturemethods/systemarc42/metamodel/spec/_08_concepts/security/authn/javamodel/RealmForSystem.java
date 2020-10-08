@@ -31,15 +31,6 @@ public class RealmForSystem extends DynamicResource implements IRealmForSystem {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -143,4 +134,4 @@ public class RealmForSystem extends DynamicResource implements IRealmForSystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f66c720-fd7e-11ea-8062-0d8dc98d6158,m1LIIgKZuOm2jAiQ9vqDHhejuB4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7f66c720-fd7e-11ea-8062-0d8dc98d6158,I3T4J698b9F4QJyc/s4xUNRSQtQ=] */

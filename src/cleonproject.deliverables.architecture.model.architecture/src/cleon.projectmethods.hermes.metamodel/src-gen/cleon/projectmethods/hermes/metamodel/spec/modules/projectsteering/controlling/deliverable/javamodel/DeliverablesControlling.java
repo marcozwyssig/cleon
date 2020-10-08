@@ -31,15 +31,6 @@ public class DeliverablesControlling extends DynamicResource implements IDeliver
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class DeliverablesControlling extends DynamicResource implements IDeliver
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,daab8237-bdfc-11e6-a3f0-c7681ee45a3f,GYDpoiZ0NBT2AKM0jSbGbNahqSE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,daab8237-bdfc-11e6-a3f0-c7681ee45a3f,1RaKmbC1YhZQVM4OW2dm1w6aCZw=] */

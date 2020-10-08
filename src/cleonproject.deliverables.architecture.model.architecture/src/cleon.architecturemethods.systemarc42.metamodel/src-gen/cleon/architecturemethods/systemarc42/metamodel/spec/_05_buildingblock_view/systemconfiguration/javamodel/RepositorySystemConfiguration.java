@@ -31,15 +31,6 @@ public class RepositorySystemConfiguration extends DynamicResource implements IR
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class RepositorySystemConfiguration extends DynamicResource implements IR
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,233a9919-0c3a-11e9-83ba-4d57b06560a2,i+CuM5CNg2txeoF9cM9Gi/wqXOU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,233a9919-0c3a-11e9-83ba-4d57b06560a2,FFw+WFDpGrIUlRpUkUMIxP8yANQ=] */

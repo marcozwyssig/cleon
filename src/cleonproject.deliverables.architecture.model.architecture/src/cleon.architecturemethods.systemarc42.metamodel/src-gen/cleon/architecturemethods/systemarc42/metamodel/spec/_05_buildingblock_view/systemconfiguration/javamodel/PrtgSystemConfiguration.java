@@ -31,15 +31,6 @@ public class PrtgSystemConfiguration extends DynamicResource implements IPrtgSys
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class PrtgSystemConfiguration extends DynamicResource implements IPrtgSys
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54ca4f73-0a8a-11e9-a59d-d7a0c53e291c,9AUqyYSirGcj2iLb2KUDqjPsBz4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54ca4f73-0a8a-11e9-a59d-d7a0c53e291c,xkpWaM6Q98MnBww9jREOl+lpTCc=] */

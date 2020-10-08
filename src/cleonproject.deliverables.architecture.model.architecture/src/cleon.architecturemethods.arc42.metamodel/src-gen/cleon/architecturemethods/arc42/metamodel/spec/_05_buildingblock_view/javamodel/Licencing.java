@@ -31,15 +31,6 @@ public class Licencing extends DynamicResource implements ILicencing {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Licencing extends DynamicResource implements ILicencing {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,r6VXAF8OgR18lRRB/vYSBpWIvPU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9,K46G819w/ZlT2JH7j65EziUNd+U=] */

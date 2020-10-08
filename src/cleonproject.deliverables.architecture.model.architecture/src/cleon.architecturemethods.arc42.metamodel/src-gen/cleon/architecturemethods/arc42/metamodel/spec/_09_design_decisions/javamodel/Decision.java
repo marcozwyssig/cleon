@@ -31,15 +31,6 @@ public class Decision extends DynamicResource implements IDecision {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Decision extends DynamicResource implements IDecision {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,63eda1df-ecdf-11e8-8149-8542373915bf,02po8+btbJ/KLmDU+M5tqJoXC9U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,63eda1df-ecdf-11e8-8149-8542373915bf,yO8jIxwv0R7RWx2aFIT59rnoFBc=] */

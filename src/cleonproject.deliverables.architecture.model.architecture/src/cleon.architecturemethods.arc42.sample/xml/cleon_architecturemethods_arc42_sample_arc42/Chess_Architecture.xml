@@ -237,19 +237,6 @@
 					</db:tr>
 					<db:tr>
 						<db:td>
-							<db:para>Player A</db:para>
-						</db:td>
-						<db:td>
-							<db:para>Chess</db:para>
-						</db:td>
-						<db:td>
-							<db:para>interaces</db:para>
-						</db:td>
-						<db:td>
-						</db:td>
-					</db:tr>
-					<db:tr>
-						<db:td>
 							<db:para>Player B</db:para>
 						</db:td>
 						<db:td>
@@ -257,19 +244,6 @@
 						</db:td>
 						<db:td>
 							<db:para>interacts</db:para>
-						</db:td>
-						<db:td>
-						</db:td>
-					</db:tr>
-					<db:tr>
-						<db:td>
-							<db:para>Player B</db:para>
-						</db:td>
-						<db:td>
-							<db:para>Chess</db:para>
-						</db:td>
-						<db:td>
-							<db:para>interaces</db:para>
 						</db:td>
 						<db:td>
 						</db:td>
@@ -585,14 +559,14 @@
 		<db:informaltable style="HERMES 5">
 			<db:col width="20%" />
 			<db:col width="20%" />
-			<db:col width="25%" />	
-			<db:col width="35%" />			
+			<db:col width="15%" />	
+			<db:col width="45%" />			
 			<db:thead>
 				<db:tr>
 					<db:th>Hersteller</db:th>
 					<db:th>Produkt</db:th>
-					<db:th>Verwendung bei Baustein(e)</db:th>						
-					<db:th>Beschreibung</db:th>
+					<db:th>Baustein</db:th>						
+					<db:th>Varianten</db:th>
 				</db:tr>
 			</db:thead>
 			<db:tbody>
@@ -606,7 +580,10 @@
 					<db:td>
 					</db:td>			
 					<db:td>
-					</db:td>			
+						<db:para>Microsoft Windows 2016 Standard 1.0</db:para>
+						<db:para><db:emphasis role="Italic">dfgdfgfdg</db:emphasis></db:para>
+						<db:para></db:para>
+					</db:td>
 				</db:tr>
 			</db:tbody>
 		</db:informaltable>

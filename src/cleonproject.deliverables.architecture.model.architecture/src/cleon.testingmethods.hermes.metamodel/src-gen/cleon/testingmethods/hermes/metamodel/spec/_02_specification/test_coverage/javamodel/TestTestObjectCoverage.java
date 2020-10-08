@@ -31,15 +31,6 @@ public class TestTestObjectCoverage extends DynamicResource implements ITestTest
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class TestTestObjectCoverage extends DynamicResource implements ITestTest
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f6e3e2fb-5164-11e9-bb61-971a423d31e9,zK2TuS8vAwb8r2lNN0PvLpPr/o0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f6e3e2fb-5164-11e9-bb61-971a423d31e9,UEoTbZfFZQjbdp9vxFRRK+q79x0=] */

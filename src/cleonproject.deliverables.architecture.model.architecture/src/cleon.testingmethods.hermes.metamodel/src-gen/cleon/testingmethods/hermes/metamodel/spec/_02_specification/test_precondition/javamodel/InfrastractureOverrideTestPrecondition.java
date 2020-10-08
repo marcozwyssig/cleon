@@ -31,15 +31,6 @@ public class InfrastractureOverrideTestPrecondition extends DynamicResource impl
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class InfrastractureOverrideTestPrecondition extends DynamicResource impl
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,689dfed3-6d8a-11e9-b84d-d319514e887f,0ms2BMPAzL02ARJbMIDhHAIwVuM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,689dfed3-6d8a-11e9-b84d-d319514e887f,rcQzCgjg0S6eEQOYE+8LphPNYg0=] */

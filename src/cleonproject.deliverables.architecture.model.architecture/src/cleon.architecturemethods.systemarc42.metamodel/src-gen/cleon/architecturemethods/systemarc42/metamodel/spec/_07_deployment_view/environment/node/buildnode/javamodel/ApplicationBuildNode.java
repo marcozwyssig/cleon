@@ -31,15 +31,6 @@ public class ApplicationBuildNode extends DynamicResource implements IApplicatio
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -167,4 +158,4 @@ public class ApplicationBuildNode extends DynamicResource implements IApplicatio
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aa00b70-84d9-11ea-ade9-0f308d716192,R82qzM/yicZa2FCzHwVsVaZ4jmM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7aa00b70-84d9-11ea-ade9-0f308d716192,ONXJRkAoYsknJKSnMEYkfbGeIIQ=] */

@@ -31,15 +31,6 @@ public class RouterSystemConfiguration extends DynamicResource implements IRoute
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class RouterSystemConfiguration extends DynamicResource implements IRoute
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,984c525c-cb0e-11e9-9767-b30840f4f194,dv+Xo/7ueab8ySgHUk0X8nLdIYE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,984c525c-cb0e-11e9-9767-b30840f4f194,UvNMi1975fs30Hd7GLBMBWjjvsw=] */

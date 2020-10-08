@@ -31,15 +31,6 @@ public class GatewayNode extends DynamicResource implements IGatewayNode {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -111,4 +102,4 @@ public class GatewayNode extends DynamicResource implements IGatewayNode {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46,3rhUDF68pr+bW9r3kkVpDUp1i4U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7c1f6c45-7b8d-11e9-94aa-f1ea7ea33f46,rH/YCn8YSHhxAv9reSbeVjdi5f0=] */

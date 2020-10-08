@@ -31,15 +31,6 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -100,4 +91,4 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,TJ1YKBsMVlCXlL57XpwdVU4z+3s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,/kgLFTO0R1GepHwb54YOk8hGcQ8=] */

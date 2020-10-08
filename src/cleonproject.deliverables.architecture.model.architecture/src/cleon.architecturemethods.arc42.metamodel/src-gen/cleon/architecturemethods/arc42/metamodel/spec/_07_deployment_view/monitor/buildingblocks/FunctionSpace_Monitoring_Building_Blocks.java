@@ -54,6 +54,9 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     @IDynamicResourceExtension.MethodId("14d5469b-c764-11ea-9c12-5371f8bad411")
     public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock SelectUsedBuildingBlockForMonitoring();
 
+    @IDynamicResourceExtension.MethodId("be24ca31-08a5-11eb-a18e-c7dfa3f96804")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
+
   }
   
   public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -199,13 +202,88 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
-  public static interface IAbstractMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+  public static interface IAbstractSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be0747a6-e068-11ea-bb83-59933a3fa779")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
 
     @IDynamicResourceExtension.MethodId("ec15906e-e06b-11ea-bb83-59933a3fa779")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> SelectAllSensors();
+
+  }
+  
+  public static interface IAbstractSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AbstractSensorMonitoringBuildingBlockFunctionsImpl implements IAbstractSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IAbstractSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new AbstractSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private AbstractSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class AbstractSensorMonitoringBuildingBlockFunctions {
+
+    private AbstractSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface ISingleSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("54b81738-e069-11ea-bb83-59933a3fa779")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+
+  }
+  
+  public static interface ISingleSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SingleSensorMonitoringBuildingBlockFunctionsImpl implements ISingleSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final ISingleSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new SingleSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private SingleSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class SingleSensorMonitoringBuildingBlockFunctions {
+
+    private SingleSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface IClusterSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5cbbf0e4-e069-11ea-bb83-59933a3fa779")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+
+  }
+  
+  public static interface IClusterSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ClusterSensorMonitoringBuildingBlockFunctionsImpl implements IClusterSensorMonitoringBuildingBlockFunctionsImpl {
+
+    public static final IClusterSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new ClusterSensorMonitoringBuildingBlockFunctionsImpl();
+
+    private ClusterSensorMonitoringBuildingBlockFunctionsImpl() {}
+
+  }
+  
+  public static class ClusterSensorMonitoringBuildingBlockFunctions {
+
+    private ClusterSensorMonitoringBuildingBlockFunctions() {}
+
+  }
+
+  public static interface IAbstractMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("98533d11-08a5-11eb-a18e-c7dfa3f96804")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
 
   }
   
@@ -227,56 +305,31 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
-  public static interface ISingleMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+  public static interface IMonitoringCompositeBuildingBlockFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("54b81738-e069-11ea-bb83-59933a3fa779")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    @IDynamicResourceExtension.MethodId("d774e3c8-08a5-11eb-a18e-c7dfa3f96804")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
 
   }
   
-  public static interface ISingleMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IMonitoringCompositeBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SingleMonitoringBuildingBlockFunctionsImpl implements ISingleMonitoringBuildingBlockFunctionsImpl {
+  public static class MonitoringCompositeBuildingBlockFunctionsImpl implements IMonitoringCompositeBuildingBlockFunctionsImpl {
 
-    public static final ISingleMonitoringBuildingBlockFunctionsImpl INSTANCE = new SingleMonitoringBuildingBlockFunctionsImpl();
+    public static final IMonitoringCompositeBuildingBlockFunctionsImpl INSTANCE = new MonitoringCompositeBuildingBlockFunctionsImpl();
 
-    private SingleMonitoringBuildingBlockFunctionsImpl() {}
-
-  }
-  
-  public static class SingleMonitoringBuildingBlockFunctions {
-
-    private SingleMonitoringBuildingBlockFunctions() {}
-
-  }
-
-  public static interface IClusterMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("5cbbf0e4-e069-11ea-bb83-59933a3fa779")
-    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
+    private MonitoringCompositeBuildingBlockFunctionsImpl() {}
 
   }
   
-  public static interface IClusterMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class ClusterMonitoringBuildingBlockFunctionsImpl implements IClusterMonitoringBuildingBlockFunctionsImpl {
+  public static class MonitoringCompositeBuildingBlockFunctions {
 
-    public static final IClusterMonitoringBuildingBlockFunctionsImpl INSTANCE = new ClusterMonitoringBuildingBlockFunctionsImpl();
-
-    private ClusterMonitoringBuildingBlockFunctionsImpl() {}
-
-  }
-  
-  public static class ClusterMonitoringBuildingBlockFunctions {
-
-    private ClusterMonitoringBuildingBlockFunctions() {}
+    private MonitoringCompositeBuildingBlockFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,9eQvh/qEuWaUUJg7rAth8u1DRvI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,voA4aHQNex3l1MwH2QVQkbZd92o=] */

@@ -31,15 +31,6 @@ public class Script extends DynamicResource implements IScript {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -209,4 +200,4 @@ public class Script extends DynamicResource implements IScript {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ab16a4b-8fdf-11e8-85d9-314ddfdf57eb,ERNkvQNWhfOxVFJIe+Zh/f7jAUY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ab16a4b-8fdf-11e8-85d9-314ddfdf57eb,7TvCnRPRiHze5pKJvsS+kv+WyZE=] */

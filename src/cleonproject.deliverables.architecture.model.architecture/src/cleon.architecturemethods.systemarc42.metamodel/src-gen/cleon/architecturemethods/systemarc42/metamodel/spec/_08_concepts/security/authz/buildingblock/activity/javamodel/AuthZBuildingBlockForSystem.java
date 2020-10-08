@@ -31,15 +31,6 @@ public class AuthZBuildingBlockForSystem extends DynamicResource implements IAut
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -143,4 +134,4 @@ public class AuthZBuildingBlockForSystem extends DynamicResource implements IAut
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6649e36f-032a-11eb-af88-136a9a3b3817,yy7bZPv06UI1wcuKs6ONLnob3QI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6649e36f-032a-11eb-af88-136a9a3b3817,lNTyYKyqVXu/ig7cimigFriUc7Q=] */

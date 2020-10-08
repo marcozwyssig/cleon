@@ -31,15 +31,6 @@ public class ManualDeploymentMethodConfiguration extends DynamicResource impleme
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -89,4 +80,4 @@ public class ManualDeploymentMethodConfiguration extends DynamicResource impleme
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f18724b-fe3f-11ea-892b-df291bae18c5,XT72Vxi5i2UNpuS3t1dCIDxzcVI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8f18724b-fe3f-11ea-892b-df291bae18c5,oc+KyQRydhK53JGTkikqOSeVt88=] */

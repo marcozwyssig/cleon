@@ -31,15 +31,6 @@ public class Persons extends DynamicResource implements IPersons {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class Persons extends DynamicResource implements IPersons {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68e1ab2e-a7e4-11e5-82dd-3b995d9c840c,eL1Sq5AWAHCyX389iv70teRNmjY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,68e1ab2e-a7e4-11e5-82dd-3b995d9c840c,z7lcqPq0oWAZSR2MGoRNflpr9lo=] */

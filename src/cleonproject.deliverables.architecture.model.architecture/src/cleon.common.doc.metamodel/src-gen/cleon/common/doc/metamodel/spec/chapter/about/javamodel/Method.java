@@ -31,15 +31,6 @@ public class Method extends DynamicResource implements IMethod {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Method extends DynamicResource implements IMethod {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce23e1d1-09b1-11e9-8c40-11db3668c0c9,5zTqFPUsf6naDzVM2LbhXcKW2zY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce23e1d1-09b1-11e9-8c40-11db3668c0c9,pMX7opa+zRaHhn8rtcWi+KacMMg=] */

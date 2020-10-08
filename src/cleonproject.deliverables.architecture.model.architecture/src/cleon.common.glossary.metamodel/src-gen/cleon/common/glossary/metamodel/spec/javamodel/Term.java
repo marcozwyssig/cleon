@@ -31,15 +31,6 @@ public class Term extends DynamicResource implements ITerm {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class Term extends DynamicResource implements ITerm {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8781d59d-0c87-11e6-86c5-87a8b520dd59,HQXNWK4IJlNzoadDd9pK8gFK4Sc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8781d59d-0c87-11e6-86c5-87a8b520dd59,vAWIeN0CmtW1Nv2zwiE21TEQaZw=] */

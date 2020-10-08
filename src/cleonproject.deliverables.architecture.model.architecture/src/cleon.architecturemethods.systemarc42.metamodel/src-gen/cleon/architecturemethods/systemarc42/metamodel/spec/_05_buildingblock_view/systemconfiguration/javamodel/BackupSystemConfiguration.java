@@ -31,15 +31,6 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class BackupSystemConfiguration extends DynamicResource implements IBacku
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bae618be-09f5-11e9-abef-3d869859c931,9tNeQTKRrVjfQuFPgXMzYxzSY2Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bae618be-09f5-11e9-abef-3d869859c931,EZkH1pej21Of9uvBWjY3VH8nI28=] */

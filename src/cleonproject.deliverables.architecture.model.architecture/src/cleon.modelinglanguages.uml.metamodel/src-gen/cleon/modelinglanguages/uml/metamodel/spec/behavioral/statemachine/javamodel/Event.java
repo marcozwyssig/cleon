@@ -103,6 +103,7 @@ public class Event extends DynamicResource implements IEvent {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
@@ -112,4 +113,4 @@ public class Event extends DynamicResource implements IEvent {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,sL0jmr99hFxmj2Q1KUG+5FfAP6I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7d62879f-b07c-11e4-bca8-71d5b3e72cd6,FiswpjwKE2TFGK1KMs0mZ/CTBic=] */

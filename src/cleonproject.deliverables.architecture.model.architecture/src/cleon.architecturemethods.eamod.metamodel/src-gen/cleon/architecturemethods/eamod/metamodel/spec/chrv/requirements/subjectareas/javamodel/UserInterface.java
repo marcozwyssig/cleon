@@ -31,15 +31,6 @@ public class UserInterface extends DynamicResource implements IUserInterface {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -165,4 +156,4 @@ public class UserInterface extends DynamicResource implements IUserInterface {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,49d92dc4-0c77-11e6-86c5-87a8b520dd59,zT+c/6F6UEZUbiUwpijnlil9ty8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,49d92dc4-0c77-11e6-86c5-87a8b520dd59,0telzehbTsp0h3neTtAxzAleDbY=] */

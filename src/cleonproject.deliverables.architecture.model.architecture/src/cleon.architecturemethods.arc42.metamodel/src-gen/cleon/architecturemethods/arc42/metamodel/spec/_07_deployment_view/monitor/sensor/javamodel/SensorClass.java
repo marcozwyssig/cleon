@@ -202,6 +202,7 @@ public class SensorClass extends DynamicResource implements ISensorClass {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, ch.actifsource.core.CorePackage.Class_allowRoot, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Class_classIcon, visitor);
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.SensorClass_displayName, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -220,4 +221,4 @@ public class SensorClass extends DynamicResource implements ISensorClass {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,mlPvbzRtlZkjwnQWArf6lA2/Ve0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,1NKglxDIR0pzsc+RZBlMyjcLbZI=] */

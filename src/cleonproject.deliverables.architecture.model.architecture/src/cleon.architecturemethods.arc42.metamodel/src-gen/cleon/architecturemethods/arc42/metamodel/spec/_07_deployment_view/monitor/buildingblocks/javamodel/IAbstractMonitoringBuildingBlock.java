@@ -2,16 +2,14 @@ package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monit
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractMonitoringBuildingBlock extends ch.actifsource.core.javamodel.IResource {
+public interface IAbstractMonitoringBuildingBlock extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, ch.actifsource.core.javamodel.IDecorator {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("8ef70288-e066-11ea-bb83-59933a3fa779");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("857f546b-088c-11eb-a7cb-ffd76bc14ff3");
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock selectBasedOn();
-  
-  public java.util.List<? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> selectSensors();
+  public cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock selectBuildingblockToMonitor();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ef70288-e066-11ea-bb83-59933a3fa779,GNIKhnOVkap+FMWV54ro2+/JF8g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,857f546b-088c-11eb-a7cb-ffd76bc14ff3,hlrkGNw/JTnQjuuM0b3vU/BAs9M=] */

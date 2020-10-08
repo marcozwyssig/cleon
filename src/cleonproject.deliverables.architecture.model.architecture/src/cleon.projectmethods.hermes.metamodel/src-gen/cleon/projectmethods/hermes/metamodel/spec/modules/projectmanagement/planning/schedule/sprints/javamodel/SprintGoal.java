@@ -31,15 +31,6 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -89,4 +80,4 @@ public class SprintGoal extends DynamicResource implements ISprintGoal {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,mRnjAhDoHu4mkaNStBZ5RV6yXkQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,3Sbo8y/FjWt5AINtRbF0B6mbV2M=] */

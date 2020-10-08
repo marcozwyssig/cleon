@@ -31,15 +31,6 @@ public class RSASystemConfiguration extends DynamicResource implements IRSASyste
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class RSASystemConfiguration extends DynamicResource implements IRSASyste
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8a71fc3-0a7e-11e9-a59d-d7a0c53e291c,0Mc2+vRekMV42RBn7G57/hVOQtI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8a71fc3-0a7e-11e9-a59d-d7a0c53e291c,aEfTJrrgUBG+kf4BQNrU+5WJD6c=] */

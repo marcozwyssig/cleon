@@ -8,7 +8,8 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5a5e3d83-da22-11ea-ae00-5518e944c256,imports]] */
-import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.MonitoringBuildingBlock;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.AbstractMonitoringBuildingBlock;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IAbstractMonitoringBuildingBlock;
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.AbstractSiteWithHosts;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
@@ -78,17 +79,18 @@ public class sites__T_yaml {
       		return false;
       	}
 
-      	final IMonitoringBuildingBlock buildingBlock = MonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
-      	if( buildingBlock == null ) {
-      		return false;
+      	final IAbstractMonitoringBuildingBlock abstractMonitoringBuildingBlock = AbstractMonitoringBuildingBlock.selectToMeBuildingblockToMonitor(x.selectInstanceOf());
+      	if( abstractMonitoringBuildingBlock instanceof IMonitoringBuildingBlock) {
+      		final IMonitoringBuildingBlock buildingBlock = (IMonitoringBuildingBlock)abstractMonitoringBuildingBlock;
+
+      		if( x instanceof IAbstractSingleHost) {
+      			return true; 
+      		}
+      		if (x instanceof ICluster) {
+      			return buildingBlock.selectCluster() != null;
+      		}      		
       	}
 
-      	if( x instanceof IAbstractSingleHost) {
-      		return true; 
-      	}
-      	if (x instanceof ICluster) {
-      		return buildingBlock.selectCluster() != null;
-      	}
       	return false;
       }).collect(Collectors.toList());
       /* End Protected Region   [[1b0e67d4-da27-11ea-ae00-5518e944c256]] */

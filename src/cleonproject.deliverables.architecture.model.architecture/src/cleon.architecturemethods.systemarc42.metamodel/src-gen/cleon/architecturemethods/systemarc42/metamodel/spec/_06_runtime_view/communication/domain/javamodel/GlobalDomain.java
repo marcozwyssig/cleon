@@ -31,15 +31,6 @@ public class GlobalDomain extends DynamicResource implements IGlobalDomain {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class GlobalDomain extends DynamicResource implements IGlobalDomain {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,80f033c1-f28c-11ea-b011-6106590acfe5,EXSnRza0wfpwFSNAqSkoXMbjpuI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,80f033c1-f28c-11ea-b011-6106590acfe5,5+nX2PzyAzWegOd5YtAYr1COC7g=] */

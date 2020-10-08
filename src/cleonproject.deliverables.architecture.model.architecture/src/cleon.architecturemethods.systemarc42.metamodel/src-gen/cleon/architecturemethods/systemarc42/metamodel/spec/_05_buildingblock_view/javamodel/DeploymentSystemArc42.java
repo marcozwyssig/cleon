@@ -31,15 +31,6 @@ public class DeploymentSystemArc42 extends DynamicResource implements IDeploymen
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -129,4 +120,4 @@ public class DeploymentSystemArc42 extends DynamicResource implements IDeploymen
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33c30f60-fe58-11ea-abcb-bfad67a56d79,yYp/+fUxJuQ4xNiF6+zgXk2hgYs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33c30f60-fe58-11ea-abcb-bfad67a56d79,UBsLZag9p9N5D+TGCMCUm04Fcz4=] */

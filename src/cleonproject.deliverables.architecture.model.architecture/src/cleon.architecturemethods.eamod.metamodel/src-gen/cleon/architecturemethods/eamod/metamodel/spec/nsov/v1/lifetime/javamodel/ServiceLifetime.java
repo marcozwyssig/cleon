@@ -31,15 +31,6 @@ public class ServiceLifetime extends DynamicResource implements IServiceLifetime
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -144,4 +135,4 @@ public class ServiceLifetime extends DynamicResource implements IServiceLifetime
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8710140c-c149-11e6-8f58-ad3c6ee7602f,c+x0Q+Ovhy2UYY9yw3EfPjA6s9E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8710140c-c149-11e6-8f58-ad3c6ee7602f,u4TaE1yncwkmya1hTLFrvQoByak=] */

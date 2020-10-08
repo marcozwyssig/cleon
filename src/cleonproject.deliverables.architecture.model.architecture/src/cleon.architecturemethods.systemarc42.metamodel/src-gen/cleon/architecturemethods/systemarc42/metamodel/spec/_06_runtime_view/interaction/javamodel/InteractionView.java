@@ -31,15 +31,6 @@ public class InteractionView extends DynamicResource implements IInteractionView
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class InteractionView extends DynamicResource implements IInteractionView
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,jbUsLi46N+7A1GdnWxE9CS5czAw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,ltzk8ZAiFiPC33XBIY5v7v7Ehxw=] */

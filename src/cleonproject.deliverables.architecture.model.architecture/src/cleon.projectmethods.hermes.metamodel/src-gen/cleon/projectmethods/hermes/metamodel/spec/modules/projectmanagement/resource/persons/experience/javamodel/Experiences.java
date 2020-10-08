@@ -31,15 +31,6 @@ public class Experiences extends DynamicResource implements IExperiences {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class Experiences extends DynamicResource implements IExperiences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,EWVXDDFUnIbDqcDciYtl4gKpMtA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,qLaPTKjZEHP1c+pZJ74FUk2B0YM=] */

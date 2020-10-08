@@ -31,15 +31,6 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class ProxySystemConfiguration extends DynamicResource implements IProxyS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,qDNpzpkmoFzgF4D2GBsUFKNY++4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,33b921a2-09fc-11e9-abef-3d869859c931,ADL6lG6g5nnAXGeO1zLDAeJLixw=] */

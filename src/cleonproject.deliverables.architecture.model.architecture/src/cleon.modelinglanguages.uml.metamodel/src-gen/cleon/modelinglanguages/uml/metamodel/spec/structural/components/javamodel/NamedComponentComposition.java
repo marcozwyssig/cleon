@@ -31,15 +31,6 @@ public class NamedComponentComposition extends DynamicResource implements INamed
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -144,4 +135,4 @@ public class NamedComponentComposition extends DynamicResource implements INamed
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17c05c68-41b0-11e5-86f2-816f5628b22b,ZVp61H/l+V9UHWA8jwZk1+/PMGo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,17c05c68-41b0-11e5-86f2-816f5628b22b,k5EVGpC4WwbqMtYBC1SN0wpYdcg=] */

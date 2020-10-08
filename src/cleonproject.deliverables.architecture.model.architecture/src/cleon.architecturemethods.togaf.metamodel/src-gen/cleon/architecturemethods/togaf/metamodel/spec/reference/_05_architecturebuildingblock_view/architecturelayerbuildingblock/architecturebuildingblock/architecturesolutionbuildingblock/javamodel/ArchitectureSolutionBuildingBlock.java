@@ -31,15 +31,6 @@ public class ArchitectureSolutionBuildingBlock extends DynamicResource implement
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -163,4 +154,4 @@ public class ArchitectureSolutionBuildingBlock extends DynamicResource implement
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960871-3a07-11e6-a354-253097f89a49,KHu8jbVDpSsetzggPcl6/M3rSpw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5b960871-3a07-11e6-a354-253097f89a49,FUptZoAGgPkh/txtiAmC67qKCco=] */

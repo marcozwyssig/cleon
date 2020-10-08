@@ -40,15 +40,6 @@ public class ManyToManyAssociation extends DynamicResource implements IManyToMan
   }
 
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.lang.String selectDescription() {
     return _getSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.association.AssociationPackage.Association_description);
   }
@@ -193,4 +184,4 @@ public class ManyToManyAssociation extends DynamicResource implements IManyToMan
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f0515d32-2783-11e3-a466-eda9d7258bca,+z7PPQhrfRQgMvNgkCz11lun9kI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f0515d32-2783-11e3-a466-eda9d7258bca,BgD01kmmIZvmjwNuh4aHY6Bq0Xk=] */

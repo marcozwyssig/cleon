@@ -31,15 +31,6 @@ public class Assessments extends DynamicResource implements IAssessments {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -134,4 +125,4 @@ public class Assessments extends DynamicResource implements IAssessments {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,uNQbgHfQFyejFRU8She7n5mukTY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24a6f9b1-324a-11e6-ab4d-73a9260c8088,bVs7pJjWsbV3J4LrWqglO77M7oU=] */

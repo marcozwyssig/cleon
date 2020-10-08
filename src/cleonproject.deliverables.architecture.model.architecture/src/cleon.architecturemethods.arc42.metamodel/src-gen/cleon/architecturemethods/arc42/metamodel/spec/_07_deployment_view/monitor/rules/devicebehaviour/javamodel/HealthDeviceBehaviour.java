@@ -31,15 +31,6 @@ public class HealthDeviceBehaviour extends DynamicResource implements IHealthDev
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -144,4 +135,4 @@ public class HealthDeviceBehaviour extends DynamicResource implements IHealthDev
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8d68bcb5-8f5a-11e8-9cc3-93ddcbb0b144,0dcQ9F59bvatAbzg1vr02/IHfPE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8d68bcb5-8f5a-11e8-9cc3-93ddcbb0b144,hsY2F5rhvBwNlNE1p03aEFFfnK4=] */

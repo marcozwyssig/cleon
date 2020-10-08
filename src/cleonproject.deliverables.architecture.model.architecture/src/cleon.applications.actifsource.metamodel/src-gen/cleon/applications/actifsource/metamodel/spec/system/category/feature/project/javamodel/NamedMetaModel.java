@@ -31,15 +31,6 @@ public class NamedMetaModel extends DynamicResource implements INamedMetaModel {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -229,4 +220,4 @@ public class NamedMetaModel extends DynamicResource implements INamedMetaModel {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e7fabc7-2703-11ea-8c59-871562e3b5c4,kl8PDBKmCXITls1OunptscWAFRQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1e7fabc7-2703-11ea-8c59-871562e3b5c4,lNn+C5gdURBGsgtrm0ULlg9haIw=] */

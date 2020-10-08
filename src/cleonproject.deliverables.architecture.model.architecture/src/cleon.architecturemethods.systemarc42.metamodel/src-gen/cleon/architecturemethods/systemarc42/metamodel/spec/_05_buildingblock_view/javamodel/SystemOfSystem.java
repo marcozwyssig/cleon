@@ -31,15 +31,6 @@ public class SystemOfSystem extends DynamicResource implements ISystemOfSystem {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -160,4 +151,4 @@ public class SystemOfSystem extends DynamicResource implements ISystemOfSystem {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,025f7a4c-3eac-11ea-8cb4-0b006790b142,E2Hp8Vihy1jHUkL/qrFMq1ilp28=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,025f7a4c-3eac-11ea-8cb4-0b006790b142,wOtM8tmNVcaGL5MieFBQEzcGflw=] */

@@ -31,15 +31,6 @@ public class AvailabilityClassification extends DynamicResource implements IAvai
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -134,4 +125,4 @@ public class AvailabilityClassification extends DynamicResource implements IAvai
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,Z4m/VtjseTfImEbmDXFmE7PK4xM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,vrcTYHHMPLBCTTVZEjrQdnhujio=] */

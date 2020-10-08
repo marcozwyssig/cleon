@@ -31,15 +31,6 @@ public class FirewallManagementSystemConfiguration extends DynamicResource imple
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class FirewallManagementSystemConfiguration extends DynamicResource imple
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9724e52-0524-11ea-9f40-b9fb30a62a90,NRRwio8MIQWUkbnJn78HQPLS0fU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d9724e52-0524-11ea-9f40-b9fb30a62a90,qzLCPY85PVAYVgvUK4fFSfj1oEE=] */

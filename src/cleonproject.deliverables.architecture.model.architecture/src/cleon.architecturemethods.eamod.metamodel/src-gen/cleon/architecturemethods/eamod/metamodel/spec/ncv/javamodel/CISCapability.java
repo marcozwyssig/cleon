@@ -31,15 +31,6 @@ public class CISCapability extends DynamicResource implements ICISCapability {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -154,4 +145,4 @@ public class CISCapability extends DynamicResource implements ICISCapability {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70fc7e57-bc80-11e6-beb6-85da12323ce9,nBg+rca3BR3H4+GiTawTogUzNLw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70fc7e57-bc80-11e6-beb6-85da12323ce9,9yH8y/LqPReCk8U6gNB9XAFtlMk=] */

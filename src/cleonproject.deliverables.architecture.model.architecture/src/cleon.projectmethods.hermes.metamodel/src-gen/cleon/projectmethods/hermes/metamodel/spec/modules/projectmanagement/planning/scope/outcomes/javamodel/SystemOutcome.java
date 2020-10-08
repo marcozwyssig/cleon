@@ -31,15 +31,6 @@ public class SystemOutcome extends DynamicResource implements ISystemOutcome {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -209,4 +200,4 @@ public class SystemOutcome extends DynamicResource implements ISystemOutcome {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ac8b4c03-bfeb-11e8-a3d0-5394fd9291a1,HK6k/FdYy9roPkuIU4OsUiqjd2I=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ac8b4c03-bfeb-11e8-a3d0-5394fd9291a1,mArEiqO3P+HaNI1syHo3w5vUB9g=] */

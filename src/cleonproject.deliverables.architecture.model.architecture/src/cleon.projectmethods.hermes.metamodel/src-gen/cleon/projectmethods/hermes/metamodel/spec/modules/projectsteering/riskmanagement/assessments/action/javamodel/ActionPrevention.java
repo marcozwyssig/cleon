@@ -31,15 +31,6 @@ public class ActionPrevention extends DynamicResource implements IActionPreventi
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -79,4 +70,4 @@ public class ActionPrevention extends DynamicResource implements IActionPreventi
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,270b1b8d-2f05-11e6-8bd9-a77b8d2a3a0e,nOxernxi9Stu3DYEFUuRXd9E+7w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,270b1b8d-2f05-11e6-8bd9-a77b8d2a3a0e,DtF+GWfJwcByTQd9n7UiCHWYEs4=] */

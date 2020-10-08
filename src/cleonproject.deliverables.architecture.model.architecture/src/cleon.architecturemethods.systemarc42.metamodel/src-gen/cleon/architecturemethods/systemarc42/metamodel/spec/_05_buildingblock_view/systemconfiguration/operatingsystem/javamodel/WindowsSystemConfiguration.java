@@ -31,15 +31,6 @@ public class WindowsSystemConfiguration extends DynamicResource implements IWind
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class WindowsSystemConfiguration extends DynamicResource implements IWind
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0a9a475-021f-11e9-b327-17da2da63a8f,usV04cNsyRYn2L92cHCdDZmUl5M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b0a9a475-021f-11e9-b327-17da2da63a8f,SMP9hDjP9JAZ6e+DUpzvCoP2ISA=] */

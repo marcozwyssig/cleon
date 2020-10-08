@@ -31,15 +31,6 @@ public class Guideline extends DynamicResource implements IGuideline {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -154,4 +145,4 @@ public class Guideline extends DynamicResource implements IGuideline {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,S+gw04JpzDw/wBWynPGZx/uiImY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,50b8143d-a95a-11e5-bda2-a7fc3bd7c783,BQCi08XQ7csiQ2jW36XIF5Fsu2s=] */

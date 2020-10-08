@@ -31,15 +31,6 @@ public class TestScheduling extends DynamicResource implements ITestScheduling {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class TestScheduling extends DynamicResource implements ITestScheduling {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8438e1ea-918c-11e9-85e6-a377d9035ee3,CAcQ9Pv2jukqEUd2DgTdO9hv47k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8438e1ea-918c-11e9-85e6-a377d9035ee3,yc2939dmliOivNoS8EHWrvC5VPs=] */

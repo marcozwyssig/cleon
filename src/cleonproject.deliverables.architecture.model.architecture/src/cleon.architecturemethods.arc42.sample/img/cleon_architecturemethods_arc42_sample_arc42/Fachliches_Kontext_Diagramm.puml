@@ -6,9 +6,7 @@ actor Player__F_B as "Player B"
 component Chess as "Chess" <<SoftwareSystem>>
 Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
-Player__F_A -down-> Chess : interaces
 Player__F_B -down-> Chess : interacts
-Player__F_B -down-> Chess : interaces
 ' Begin Protected Region [[layouting]]
 
 ' End Protected Region   [[layouting]]

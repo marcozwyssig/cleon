@@ -40,15 +40,6 @@ public class ServiceClass extends DynamicResource implements IServiceClass {
   }
 
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -243,4 +234,4 @@ public class ServiceClass extends DynamicResource implements IServiceClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af43badb-1d88-11e9-b601-db75aa6f89a4,3tuWO0Nhx/ZTeiz26xxKW/9ot6Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af43badb-1d88-11e9-b601-db75aa6f89a4,lDj3qVVMtpJENPIRExdYLeMq53g=] */

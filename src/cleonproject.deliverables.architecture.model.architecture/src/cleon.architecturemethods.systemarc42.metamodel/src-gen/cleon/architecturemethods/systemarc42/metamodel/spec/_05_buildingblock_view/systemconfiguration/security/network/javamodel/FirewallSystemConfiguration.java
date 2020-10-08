@@ -31,15 +31,6 @@ public class FirewallSystemConfiguration extends DynamicResource implements IFir
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class FirewallSystemConfiguration extends DynamicResource implements IFir
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d70c9f6b-cb0e-11e9-9767-b30840f4f194,QyMeS+rifIzuQvcU1lF3hAJ+hJQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d70c9f6b-cb0e-11e9-9767-b30840f4f194,8dsJlqTYfqwZrqeUI0/VE3o6cqw=] */

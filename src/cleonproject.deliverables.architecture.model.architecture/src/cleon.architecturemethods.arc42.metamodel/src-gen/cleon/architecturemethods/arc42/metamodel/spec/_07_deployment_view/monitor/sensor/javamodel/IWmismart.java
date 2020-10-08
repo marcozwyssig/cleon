@@ -2,13 +2,10 @@ package cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monit
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-/**
- * Monitors the health of IDE disk drives using S.M.A.R.T
- */
 public interface IWmismart extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("db51ae40-c1eb-11ea-820f-9931558a898c");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae40-c1eb-11ea-820f-9931558a898c,237nDV8jjV6J2ckOFTATlibPDmo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae40-c1eb-11ea-820f-9931558a898c,+qS1xt/pCzpcBU8+qxsClVYVyZc=] */

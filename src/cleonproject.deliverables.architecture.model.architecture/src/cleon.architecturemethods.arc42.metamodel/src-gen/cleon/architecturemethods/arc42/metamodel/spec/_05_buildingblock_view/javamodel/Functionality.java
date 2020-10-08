@@ -31,15 +31,6 @@ public class Functionality extends DynamicResource implements IFunctionality {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Functionality extends DynamicResource implements IFunctionality {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8999b3d6-7e70-11ea-9262-7b7e0e9cb204,jhoWWRYPgo+cVJvEou5n2p32L30=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8999b3d6-7e70-11ea-9262-7b7e0e9cb204,NEqyZf1ZKSF6fGg4Ew6z4UdWnH8=] */

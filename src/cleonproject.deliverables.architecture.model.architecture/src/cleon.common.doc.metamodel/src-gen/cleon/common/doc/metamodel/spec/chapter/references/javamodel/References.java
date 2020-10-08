@@ -31,15 +31,6 @@ public class References extends DynamicResource implements IReferences {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -128,4 +119,4 @@ public class References extends DynamicResource implements IReferences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f490007b-0765-11e9-9896-ef29067b4914,Q07fb9Ab71eznWyDxxCH8rjs0uI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f490007b-0765-11e9-9896-ef29067b4914,gu09uwvO/7LNqqfmYvihoSjvvyo=] */

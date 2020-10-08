@@ -40,15 +40,6 @@ public class InfrastractureProductVariety extends DynamicResource implements IIn
   }
 
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectConfidentiality() {
     return _getListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.variety.VarietyPackage.InfrastractureProductVariety_confidentiality);
   }
@@ -182,4 +173,4 @@ public class InfrastractureProductVariety extends DynamicResource implements IIn
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,J0mfAGjVHRaQNIJlh3mOPPwXV1M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,ANJ8p2J+cxPiZ5b3klEQqUschBY=] */

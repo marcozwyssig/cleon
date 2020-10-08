@@ -31,15 +31,6 @@ public class Source extends DynamicResource implements ISource {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -167,4 +158,4 @@ public class Source extends DynamicResource implements ISource {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,K0GjEMP6XStQuLZrPbB5Y4phUY0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,v1xAhNP/CzK1KZmo6nzWAblRpBo=] */

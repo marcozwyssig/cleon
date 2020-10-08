@@ -31,15 +31,6 @@ public class Absences extends DynamicResource implements IAbsences {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class Absences extends DynamicResource implements IAbsences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8e22ec09-c4c6-11e5-8558-4b8affb7767c,E5cCAAyoO4u9l+AJIAMApAaQf3k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8e22ec09-c4c6-11e5-8558-4b8affb7767c,6m841835WiO1xTzNcRUcNkOF+CU=] */

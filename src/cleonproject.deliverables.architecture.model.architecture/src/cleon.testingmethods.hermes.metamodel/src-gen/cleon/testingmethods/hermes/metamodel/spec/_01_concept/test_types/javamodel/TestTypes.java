@@ -31,15 +31,6 @@ public class TestTypes extends DynamicResource implements ITestTypes {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class TestTypes extends DynamicResource implements ITestTypes {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd3df8f8-4fbd-11e9-bb71-93c81cf66db8,CDUSyxq+5jXmXEmsFEUSzmhjI+4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dd3df8f8-4fbd-11e9-bb71-93c81cf66db8,3/5wH/EH4SdxlvqTBWrsn81EDAc=] */

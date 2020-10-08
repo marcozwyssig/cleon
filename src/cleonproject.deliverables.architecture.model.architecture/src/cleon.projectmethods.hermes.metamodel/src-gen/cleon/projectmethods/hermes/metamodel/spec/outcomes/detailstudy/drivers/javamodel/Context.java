@@ -31,15 +31,6 @@ public class Context extends DynamicResource implements IContext {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Context extends DynamicResource implements IContext {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fd3c854-3c14-11e5-9962-cf3035adb922,CSEciKZjcwhshCJJ3VpFsdWBemc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4fd3c854-3c14-11e5-9962-cf3035adb922,Dm5UmB7Lr7c0nGpNJJZeCuE2+O8=] */

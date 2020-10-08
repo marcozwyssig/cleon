@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6037c44c-08a7-11eb-a18e-c7dfa3f96804">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6b00f020-08ad-11eb-a18e-c7dfa3f96804" type="resource" guid="21fe0f09-08ab-11eb-a18e-c7dfa3f96804" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6037eb5e-08a7-11eb-a18e-c7dfa3f96804" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8f395b80-08ac-11eb-a18e-c7dfa3f96804" type="resource" guid="0e8b550a-8993-11e8-8250-d9b67f7d5f7f" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6b00f020-08ad-11eb-a18e-c7dfa3f96804">
+      <resource guid="21fe0f09-08ab-11eb-a18e-c7dfa3f96804">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="21fe0f0b-08ab-11eb-a18e-c7dfa3f96804" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="21fe361c-08ab-11eb-a18e-c7dfa3f96804" type="literal">forSystems</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="21fe843e-08ab-11eb-a18e-c7dfa3f96804" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="21fe843f-08ab-11eb-a18e-c7dfa3f96804" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="21feab50-08ab-11eb-a18e-c7dfa3f96804" type="resource" guid="9bdd8ad4-08a7-11eb-a18e-c7dfa3f96804" />
+        </predicate>
+        <predicate guid="028dfb55-488b-11e3-8c01-59588b4658e3">
+          <object statement-guid="24b12121-08ab-11eb-a18e-c7dfa3f96804" type="resource" guid="dfc08e94-9a5b-11e8-ab8b-639e9e9b044b" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6038397f-08a7-11eb-a18e-c7dfa3f96804" type="literal">SystemMonitoringBuildingBlocks</object>
+  </predicate>
+</resource>
+

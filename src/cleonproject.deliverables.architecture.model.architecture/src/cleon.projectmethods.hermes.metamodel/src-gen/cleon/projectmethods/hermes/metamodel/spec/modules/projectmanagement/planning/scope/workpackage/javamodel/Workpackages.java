@@ -31,15 +31,6 @@ public class Workpackages extends DynamicResource implements IWorkpackages {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class Workpackages extends DynamicResource implements IWorkpackages {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdbd85be-1e1b-11e8-8938-5f8feacc30f1,7yO+Ok2xAaUAq5/1lJuV/qNo2YM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cdbd85be-1e1b-11e8-8938-5f8feacc30f1,tHUK0r7SRSLpTcswIsjC1ySxb+w=] */

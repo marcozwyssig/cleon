@@ -31,15 +31,6 @@ public class RadiusSystemConfiguration extends DynamicResource implements IRadiu
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class RadiusSystemConfiguration extends DynamicResource implements IRadiu
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90d82cf6-02c5-11e9-9e58-33d596257b14,cQHwuz5a+bq0kJeDN5mT5QUPfqc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,90d82cf6-02c5-11e9-9e58-33d596257b14,0WZGdj69+aHli0+J4r+7037w7b4=] */

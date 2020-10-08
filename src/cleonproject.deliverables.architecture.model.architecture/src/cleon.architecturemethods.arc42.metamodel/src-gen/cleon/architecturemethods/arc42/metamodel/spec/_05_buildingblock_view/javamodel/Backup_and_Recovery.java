@@ -31,15 +31,6 @@ public class Backup_and_Recovery extends DynamicResource implements IBackup_and_
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -129,4 +120,4 @@ public class Backup_and_Recovery extends DynamicResource implements IBackup_and_
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bc5739a-7ed3-11ea-9262-7b7e0e9cb204,vvwVrCOvzvoUR7yxyvyUeQLbpaM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bc5739a-7ed3-11ea-9262-7b7e0e9cb204,RJjdOdDXPGEYgz7y2FBgxTUwlIw=] */

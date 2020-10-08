@@ -31,15 +31,6 @@ public class Lack extends DynamicResource implements ILack {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -154,4 +145,4 @@ public class Lack extends DynamicResource implements ILack {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,340631a2-a95a-11e5-bda2-a7fc3bd7c783,iNsOxNuXEvzELFztQihh9scUYng=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,340631a2-a95a-11e5-bda2-a7fc3bd7c783,3fEEg46l6ISl6E7iH7ySAzkH7+c=] */

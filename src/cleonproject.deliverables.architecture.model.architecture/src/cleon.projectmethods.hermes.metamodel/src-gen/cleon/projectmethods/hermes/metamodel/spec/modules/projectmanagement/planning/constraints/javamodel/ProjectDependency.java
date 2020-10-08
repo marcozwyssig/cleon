@@ -31,15 +31,6 @@ public class ProjectDependency extends DynamicResource implements IProjectDepend
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -123,4 +114,4 @@ public class ProjectDependency extends DynamicResource implements IProjectDepend
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cdcc38b-d42e-11e6-8a1d-7fdd5d29730e,2h9/H6avIQUTkN2J0Wui3ZnjNi4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cdcc38b-d42e-11e6-8a1d-7fdd5d29730e,g2uepCbMy3NaVY3b3CL4YTQ/H3A=] */

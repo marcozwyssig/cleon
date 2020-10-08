@@ -31,15 +31,6 @@ public class TemplateControlView extends DynamicResource implements ITemplateCon
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -187,4 +178,4 @@ public class TemplateControlView extends DynamicResource implements ITemplateCon
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,594575f1-634e-11e3-9288-bdf1907ca1e3,REBpGssh+K0d81C7cOMqks9393s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,594575f1-634e-11e3-9288-bdf1907ca1e3,xN5hIU7i/KWZ1EDATQJAgNuOgpQ=] */

@@ -31,15 +31,6 @@ public class ExecutionEnvironmentBuildNode extends DynamicResource implements IE
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -167,4 +158,4 @@ public class ExecutionEnvironmentBuildNode extends DynamicResource implements IE
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62e7ca85-02d8-11e9-9e58-33d596257b14,hiPgQu/jrTOKuV+xmLxqby43gLI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,62e7ca85-02d8-11e9-9e58-33d596257b14,+mF7WIx+sOX4YBDZSgDC4oxS6bM=] */

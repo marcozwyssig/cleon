@@ -31,15 +31,6 @@ public class DhcpSystemConfiguration extends DynamicResource implements IDhcpSys
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class DhcpSystemConfiguration extends DynamicResource implements IDhcpSys
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,Di+e7He17cb+Fp8oS6WlLDa9lv8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bf347ac8-09ec-11e9-abef-3d869859c931,1d6Z7rTz8z3cdnES5/YRfNUCrTg=] */

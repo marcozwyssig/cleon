@@ -31,15 +31,6 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -144,4 +135,4 @@ public class AbstractSystem extends DynamicResource implements IAbstractSystem {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a,HKPa9I2tx0FoY2JQt9nTSm4l79g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a,mxouw4MogTk1OhB4VrmNejaTmnA=] */

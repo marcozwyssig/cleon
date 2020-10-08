@@ -31,15 +31,6 @@ public class TestGlobalPreconditions extends DynamicResource implements ITestGlo
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class TestGlobalPreconditions extends DynamicResource implements ITestGlo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,894f4f5a-669f-11e9-9ec9-5fbc84faaeb1,1Od0ouDVI381vFr9fpb3DRR1gF8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,894f4f5a-669f-11e9-9ec9-5fbc84faaeb1,NY0oW6af3/ROojMdK2PBq5ze3Dw=] */

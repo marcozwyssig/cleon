@@ -31,15 +31,6 @@ public class Availability extends DynamicResource implements IAvailability {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Availability extends DynamicResource implements IAvailability {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,86b45378-82f3-11ea-9ba4-35fe2a5b2ff9,a5Xuo3mnVYuyul63KkcUJ2/fnoI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,86b45378-82f3-11ea-9ba4-35fe2a5b2ff9,h5GpHo5LbvCY/WZDVfyH96/o/as=] */

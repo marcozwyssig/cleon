@@ -31,15 +31,6 @@ public class Snmpapcups extends DynamicResource implements ISnmpapcups {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Snmpapcups extends DynamicResource implements ISnmpapcups {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4a0d7a-c1eb-11ea-820f-9931558a898c,Kf1z32rxyOV8uPXJsX5gqIdih5Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4a0d7a-c1eb-11ea-820f-9931558a898c,GW/GxH79/zwZ8b2bIg1MSFrMZzQ=] */

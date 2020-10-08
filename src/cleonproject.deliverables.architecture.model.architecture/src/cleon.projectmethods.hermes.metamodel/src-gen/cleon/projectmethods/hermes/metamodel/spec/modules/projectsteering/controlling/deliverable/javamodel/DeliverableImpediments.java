@@ -31,15 +31,6 @@ public class DeliverableImpediments extends DynamicResource implements IDelivera
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class DeliverableImpediments extends DynamicResource implements IDelivera
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d942ec5f-3384-11e6-b251-57783f5929b3,c7JEDCJ9sj0jMgEqFGeqr+VmYLM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d942ec5f-3384-11e6-b251-57783f5929b3,u+vzM0NwrURkX+Vmx5f11Yj4aUM=] */

@@ -31,15 +31,6 @@ public class WorkspaceGoals extends DynamicResource implements IWorkspaceGoals {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class WorkspaceGoals extends DynamicResource implements IWorkspaceGoals {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1843ce27-bc93-11e6-904c-8bf6f8927ff0,Z3YgXc3xiTYgIDQ0TUCT3UqJQs4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1843ce27-bc93-11e6-904c-8bf6f8927ff0,XxybzXS+ZkbRUX2hFfbnAc8hd2E=] */

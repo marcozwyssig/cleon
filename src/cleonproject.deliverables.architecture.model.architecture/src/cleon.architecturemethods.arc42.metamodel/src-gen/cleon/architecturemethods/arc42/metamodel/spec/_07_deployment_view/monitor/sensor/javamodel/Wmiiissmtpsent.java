@@ -31,15 +31,6 @@ public class Wmiiissmtpsent extends DynamicResource implements IWmiiissmtpsent {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Wmiiissmtpsent extends DynamicResource implements IWmiiissmtpsent {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50283a-c1eb-11ea-820f-9931558a898c,PSTfqRH346pHwLRjlbIX9YCSvOs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50283a-c1eb-11ea-820f-9931558a898c,nWgFdDP9BbyaZJQzO6GtTjZLs0w=] */

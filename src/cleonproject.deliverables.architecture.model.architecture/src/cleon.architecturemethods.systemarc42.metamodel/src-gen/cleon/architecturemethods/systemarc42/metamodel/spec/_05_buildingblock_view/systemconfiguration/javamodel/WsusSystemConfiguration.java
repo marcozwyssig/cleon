@@ -31,15 +31,6 @@ public class WsusSystemConfiguration extends DynamicResource implements IWsusSys
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class WsusSystemConfiguration extends DynamicResource implements IWsusSys
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b239a026-0c3d-11e9-83ba-4d57b06560a2,2pl9/IVg2nGN/9ljCZJpdbkl+BU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b239a026-0c3d-11e9-83ba-4d57b06560a2,7krHucAWYyc3lUKAnRG4hnPnxNc=] */

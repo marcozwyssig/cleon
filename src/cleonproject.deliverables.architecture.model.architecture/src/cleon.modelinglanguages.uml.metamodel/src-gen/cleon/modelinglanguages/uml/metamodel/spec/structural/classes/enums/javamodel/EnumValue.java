@@ -73,6 +73,7 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums.EnumsPackage.EnumValue_value, visitor);
     // relations
@@ -80,4 +81,4 @@ public class EnumValue extends DynamicResource implements IEnumValue {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,6McC9AjKQzJjH5dhUf5AgA/GzfE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,CkhHpZAQdn4oxHrVr9TidRE0n3g=] */

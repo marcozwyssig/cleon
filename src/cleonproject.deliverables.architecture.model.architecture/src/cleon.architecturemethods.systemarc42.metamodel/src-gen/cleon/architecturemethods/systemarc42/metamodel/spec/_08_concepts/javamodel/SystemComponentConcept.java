@@ -31,15 +31,6 @@ public class SystemComponentConcept extends DynamicResource implements ISystemCo
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -129,4 +120,4 @@ public class SystemComponentConcept extends DynamicResource implements ISystemCo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,NtmTselCvW6zJceDzq6XXAGBNNk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05,7t8iZEaS7MDf31aQ1D27GBtw2b8=] */

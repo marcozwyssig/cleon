@@ -31,15 +31,6 @@ public class PositionView extends DynamicResource implements IPositionView {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -112,4 +103,4 @@ public class PositionView extends DynamicResource implements IPositionView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b4c584-c1c9-11e6-bd27-4740c1c9b441,Sk9a5V5Hd2TKSXLt2HDisK09bYY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e7b4c584-c1c9-11e6-bd27-4740c1c9b441,I4ZXhOFpj6P2XcWetL62pgFrY7U=] */

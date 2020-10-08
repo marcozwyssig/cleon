@@ -31,15 +31,6 @@ public class Purpose extends DynamicResource implements IPurpose {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Purpose extends DynamicResource implements IPurpose {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b94c4bb-0784-11e9-99e7-97cc29f85ed6,hB/HJU9dEar3e69TYFq5T/Lwg6Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6b94c4bb-0784-11e9-99e7-97cc29f85ed6,eHNB8XUiv9j5snzth6QBx6L1TTQ=] */

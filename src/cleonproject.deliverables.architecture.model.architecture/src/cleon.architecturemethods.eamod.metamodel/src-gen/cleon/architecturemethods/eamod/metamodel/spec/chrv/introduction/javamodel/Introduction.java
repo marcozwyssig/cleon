@@ -31,15 +31,6 @@ public class Introduction extends DynamicResource implements IIntroduction {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Introduction extends DynamicResource implements IIntroduction {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1c92948-1ccc-11e6-a935-d7e02aa7a126,7NPTK+Oj9FWVJXbHy7i7dLyHU9g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1c92948-1ccc-11e6-a935-d7e02aa7a126,dhlprwa7D29605EWqi/3pmA3b3Y=] */

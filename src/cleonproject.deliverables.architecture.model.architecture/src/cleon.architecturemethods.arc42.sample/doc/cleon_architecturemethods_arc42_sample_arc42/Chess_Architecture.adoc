@@ -46,9 +46,7 @@ actor Player__F_B as "Player B"
 component Chess as "Chess" <<SoftwareSystem>>
 Chess -up-> Player__F_A : gets
 Player__F_A -down-> Chess : interacts
-Player__F_A -down-> Chess : interaces
 Player__F_B -down-> Chess : interacts
-Player__F_B -down-> Chess : interaces
 ...
 Die nachfolgende Tabelle beschreibt die Aktoren an das betrachtete System.
 [cols="40,60a" options="header"]
@@ -68,17 +66,9 @@ Die nachfolgende Tabelle beschreibt die Kommunikationsflüsse (Flows) zwischen a
 |Chess
 |interacts
 
-|Player A
-|Chess
-|interaces
-
 |Player B
 |Chess
 |interacts
-
-|Player B
-|Chess
-|interaces
 
 |====
 

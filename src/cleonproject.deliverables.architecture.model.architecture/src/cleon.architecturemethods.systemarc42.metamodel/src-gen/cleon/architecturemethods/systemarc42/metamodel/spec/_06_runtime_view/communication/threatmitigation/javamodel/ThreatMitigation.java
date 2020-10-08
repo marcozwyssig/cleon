@@ -31,15 +31,6 @@ public class ThreatMitigation extends DynamicResource implements IThreatMitigati
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class ThreatMitigation extends DynamicResource implements IThreatMitigati
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c01eb033-b9e4-11ea-b29c-1fc1209c2c7a,y3fXrq7D7NXHaWel3BSNi5Ap9mA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c01eb033-b9e4-11ea-b29c-1fc1209c2c7a,mJ+SkeBC1XhGE0LCTQLTzDECv0o=] */

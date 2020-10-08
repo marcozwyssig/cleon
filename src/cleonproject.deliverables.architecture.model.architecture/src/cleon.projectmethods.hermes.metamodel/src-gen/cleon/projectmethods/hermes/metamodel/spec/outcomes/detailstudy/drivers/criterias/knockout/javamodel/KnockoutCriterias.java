@@ -31,15 +31,6 @@ public class KnockoutCriterias extends DynamicResource implements IKnockoutCrite
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -123,4 +114,4 @@ public class KnockoutCriterias extends DynamicResource implements IKnockoutCrite
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b3181496-1ffc-11e9-9447-238f4a8f5bec,33XF0XXehaiRoUzZT47N6xARr3U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b3181496-1ffc-11e9-9447-238f4a8f5bec,gWBAKxMuzZ/+NkQhwOFABCJ1tJg=] */

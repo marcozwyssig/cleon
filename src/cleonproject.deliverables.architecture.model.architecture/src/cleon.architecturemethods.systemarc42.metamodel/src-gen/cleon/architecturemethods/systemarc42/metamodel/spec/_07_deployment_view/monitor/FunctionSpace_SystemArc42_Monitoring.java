@@ -20,7 +20,7 @@ public class FunctionSpace_SystemArc42_Monitoring {
 
   public static interface IMonitoringBuildingBlocksFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("294ec342-c1f4-11ea-820f-9931558a898c")
+    @IDynamicResourceExtension.MethodId("aa9b45c1-08b4-11eb-a18e-c7dfa3f96804")
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> SelectMonitorBuildingBlocks();
 
   }
@@ -45,4 +45,4 @@ public class FunctionSpace_SystemArc42_Monitoring {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,I8Uz+or6UTfidTHlwQrIoemDp84=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3728d03d-d7b7-11ea-ae00-5518e944c256,983HA2TvEy77tNfLTWCtNd9tnuU=] */

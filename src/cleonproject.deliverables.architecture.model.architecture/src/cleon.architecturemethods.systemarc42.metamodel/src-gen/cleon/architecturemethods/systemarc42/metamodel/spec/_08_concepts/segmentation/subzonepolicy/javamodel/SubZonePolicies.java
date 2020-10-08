@@ -31,15 +31,6 @@ public class SubZonePolicies extends DynamicResource implements ISubZonePolicies
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class SubZonePolicies extends DynamicResource implements ISubZonePolicies
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0670992e-b844-11e9-8760-2d4a9d15ec14,TldqZ79c1t9k506PvMrRaKU0izM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0670992e-b844-11e9-8760-2d4a9d15ec14,cvYd3JL9T+9IVDTzyKRDMY5yuEw=] */

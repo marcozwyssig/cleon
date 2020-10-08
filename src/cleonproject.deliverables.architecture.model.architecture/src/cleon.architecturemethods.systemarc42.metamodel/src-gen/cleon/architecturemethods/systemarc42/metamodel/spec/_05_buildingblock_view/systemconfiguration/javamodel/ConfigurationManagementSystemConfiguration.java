@@ -31,15 +31,6 @@ public class ConfigurationManagementSystemConfiguration extends DynamicResource 
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class ConfigurationManagementSystemConfiguration extends DynamicResource 
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a0ea27b6-0c39-11e9-83ba-4d57b06560a2,C69RKR5x7hhAZgtSZXixJMq5OWY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a0ea27b6-0c39-11e9-83ba-4d57b06560a2,G0LbKDxs3VfC5VNqVXC/T4zkpss=] */

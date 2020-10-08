@@ -31,15 +31,6 @@ public class ProjectGoal extends DynamicResource implements IProjectGoal {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -101,4 +92,4 @@ public class ProjectGoal extends DynamicResource implements IProjectGoal {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f93e21-210d-11e8-9bf6-d910b575bad9,dVbtX6TbUdmDtsx52dGsT6NCQwk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e8f93e21-210d-11e8-9bf6-d910b575bad9,brKMufNas4F2Eq9dEj8fJ1WLyiE=] */

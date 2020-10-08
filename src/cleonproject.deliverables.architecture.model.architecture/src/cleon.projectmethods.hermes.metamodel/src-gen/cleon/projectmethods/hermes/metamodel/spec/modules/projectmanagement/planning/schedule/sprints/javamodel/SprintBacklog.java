@@ -31,15 +31,6 @@ public class SprintBacklog extends DynamicResource implements ISprintBacklog {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class SprintBacklog extends DynamicResource implements ISprintBacklog {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d13f5581-c00b-11e5-a165-d34765931e10,k1DVYq/eXiRJJ3Smn2p3WJ0qTGc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d13f5581-c00b-11e5-a165-d34765931e10,INuksl0iOAAWTJowtkNsJTE4290=] */

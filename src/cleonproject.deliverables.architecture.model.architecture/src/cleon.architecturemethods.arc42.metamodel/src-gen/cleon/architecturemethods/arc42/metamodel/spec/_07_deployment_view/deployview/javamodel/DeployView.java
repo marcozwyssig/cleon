@@ -31,15 +31,6 @@ public class DeployView extends DynamicResource implements IDeployView {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class DeployView extends DynamicResource implements IDeployView {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,cZBa7LGm/9mFuN5lhrrdPL+zP1s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f642a2f1-9991-11e8-b347-dd2314b02086,49kpezRgArnD+7PMlRzyVfjCeGA=] */

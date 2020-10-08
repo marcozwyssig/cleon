@@ -31,15 +31,6 @@ public class SoftwareQualityCharacteristic__F_ extends DynamicResource implement
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -97,4 +88,4 @@ public class SoftwareQualityCharacteristic__F_ extends DynamicResource implement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5147d97b-0e04-11e6-ae01-ef640c578b9b,KrGucd6YRZNUV9qzXDNqqCHCVEE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5147d97b-0e04-11e6-ae01-ef640c578b9b,22SAKTihLRF0T0D87U94Qn6TWTA=] */

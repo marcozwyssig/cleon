@@ -31,15 +31,6 @@ public class NamedKnockoutCriteria extends DynamicResource implements INamedKnoc
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class NamedKnockoutCriteria extends DynamicResource implements INamedKnoc
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eafd7342-2028-11e9-83b3-a16e26b4cc59,39uDK9j+92mIQgMSNMIqvKDx3ro=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eafd7342-2028-11e9-83b3-a16e26b4cc59,7a9JBhQ5F9QgkWjU48i/MCb5zkE=] */

@@ -31,15 +31,6 @@ public class TestLevelForDynamicObject extends DynamicResource implements ITestL
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -138,4 +129,4 @@ public class TestLevelForDynamicObject extends DynamicResource implements ITestL
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9c8b82-5156-11e9-bb61-971a423d31e9,h9VUMDkCKGVWYFnBiTGJk7QEU+8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af9c8b82-5156-11e9-bb61-971a423d31e9,L7oei3qpOc4V/5QVq7THMzmP14s=] */

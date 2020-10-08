@@ -31,15 +31,6 @@ public class AbstractBusinessContinuityConcept extends DynamicResource implement
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class AbstractBusinessContinuityConcept extends DynamicResource implement
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,40e8c0a9-1d52-11e9-8222-13cd25917917,90800eqYvndB4hDULYmBRy17M6s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,40e8c0a9-1d52-11e9-8222-13cd25917917,BxelV2Yp79u0kEiTnFGcPvEU3kk=] */

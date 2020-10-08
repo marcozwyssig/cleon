@@ -31,15 +31,6 @@ public class Postgresql extends DynamicResource implements IPostgresql {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Postgresql extends DynamicResource implements IPostgresql {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db488756-c1eb-11ea-820f-9931558a898c,+Ad5pDhAL/2pD9xG3Aw6Sg+UhZI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db488756-c1eb-11ea-820f-9931558a898c,GrxTJ92VoOIenMmQr1U00V1F4vQ=] */

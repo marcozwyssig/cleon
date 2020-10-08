@@ -31,15 +31,6 @@ public class ProjectDistinction extends DynamicResource implements IProjectDisti
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -123,4 +114,4 @@ public class ProjectDistinction extends DynamicResource implements IProjectDisti
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ad64111-d42e-11e6-8a1d-7fdd5d29730e,wfajR3uzgnVEYrHMnQgyELCpJ4Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ad64111-d42e-11e6-8a1d-7fdd5d29730e,RivP4W8hImIfYSJW9uv014lp7e8=] */

@@ -31,15 +31,6 @@ public class Initialposition extends DynamicResource implements IInitialposition
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class Initialposition extends DynamicResource implements IInitialposition
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df42256a-c1c9-11e6-bd27-4740c1c9b441,oKZ6xCJtv8QF9AyKaCLjV6lJA84=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df42256a-c1c9-11e6-bd27-4740c1c9b441,wUwPppBv4lmWOIPz3/SnD9VyXtE=] */

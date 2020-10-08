@@ -31,15 +31,6 @@ public class OrganizationalConstraints extends DynamicResource implements IOrgan
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -119,4 +110,4 @@ public class OrganizationalConstraints extends DynamicResource implements IOrgan
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f7b7d6ee-e100-11e8-8499-a3b0fb3cad90,33RALlcI7xD1nQH4XCNo1Ryu3zA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f7b7d6ee-e100-11e8-8499-a3b0fb3cad90,eYwK2DNqZI50VVnZlkEG9a392Og=] */

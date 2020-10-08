@@ -31,15 +31,6 @@ public class EAModMethod extends DynamicResource implements IEAModMethod {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class EAModMethod extends DynamicResource implements IEAModMethod {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9ab246-1405-11e9-a836-9d144e5bc2a5,E/1Qj8UvxZ9Uiz2JgKA4paw0cpI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9ab246-1405-11e9-a836-9d144e5bc2a5,9Km06J0QBPQG6NoP2sAsK4h+tqw=] */

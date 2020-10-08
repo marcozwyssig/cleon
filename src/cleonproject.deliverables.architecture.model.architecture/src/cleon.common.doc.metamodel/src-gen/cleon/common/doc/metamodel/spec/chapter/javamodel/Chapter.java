@@ -31,15 +31,6 @@ public class Chapter extends DynamicResource implements IChapter {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class Chapter extends DynamicResource implements IChapter {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e04abf20-076f-11e9-9ce3-b59baf185ea8,4qxYrvv2p6N+73/MAzW+jzyHOxw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e04abf20-076f-11e9-9ce3-b59baf185ea8,66OR+Znk9T1j2zM2PJMmpDfsC74=] */

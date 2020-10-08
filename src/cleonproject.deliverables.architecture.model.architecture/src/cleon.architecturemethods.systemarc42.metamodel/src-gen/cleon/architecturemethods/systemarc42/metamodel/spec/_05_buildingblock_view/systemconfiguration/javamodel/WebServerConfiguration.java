@@ -31,15 +31,6 @@ public class WebServerConfiguration extends DynamicResource implements IWebServe
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -258,4 +249,4 @@ public class WebServerConfiguration extends DynamicResource implements IWebServe
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,86e72211-02c8-11e9-9e58-33d596257b14,tbOb6gF9wjvvekUVs1NRS26FY30=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,86e72211-02c8-11e9-9e58-33d596257b14,3ZheG/ziI/yIB1JhgZMFSbQlfoE=] */

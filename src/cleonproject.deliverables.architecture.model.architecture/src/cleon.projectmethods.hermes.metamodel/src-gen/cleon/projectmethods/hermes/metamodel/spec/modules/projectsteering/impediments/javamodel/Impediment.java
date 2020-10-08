@@ -31,15 +31,6 @@ public class Impediment extends DynamicResource implements IImpediment {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -148,4 +139,4 @@ public class Impediment extends DynamicResource implements IImpediment {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,8tzw/20aRN0O5O18hIlnU7diNkE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b33bed18-3383-11e6-b251-57783f5929b3,8NlBpNLSHNYBtGTxGht/ILpDZeE=] */

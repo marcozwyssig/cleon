@@ -31,15 +31,6 @@ public class Principles extends DynamicResource implements IPrinciples {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class Principles extends DynamicResource implements IPrinciples {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5d54c5db-a951-11e5-bda2-a7fc3bd7c783,2hgU9OHkb4lJNHesTV89WRk72z8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5d54c5db-a951-11e5-bda2-a7fc3bd7c783,sMmefR3CzEIjc4Vqqe85LRH3O3w=] */

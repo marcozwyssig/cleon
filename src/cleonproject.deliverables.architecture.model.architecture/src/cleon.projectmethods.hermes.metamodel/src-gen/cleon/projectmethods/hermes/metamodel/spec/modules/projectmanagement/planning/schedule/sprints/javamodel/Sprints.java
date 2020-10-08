@@ -31,15 +31,6 @@ public class Sprints extends DynamicResource implements ISprints {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.lang.Integer selectDaysPerSprint() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.schedule.sprints.SprintsPackage.Sprints_daysPerSprint);
   }
@@ -126,4 +117,4 @@ public class Sprints extends DynamicResource implements ISprints {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fe47fd8-d122-11e8-882b-c9297140cb78,Hvf0PHZtJQ2hQ2hAArM6sFCG0i4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8fe47fd8-d122-11e8-882b-c9297140cb78,kiuJlKbcvJUvr90qvKhUIAv7h2o=] */

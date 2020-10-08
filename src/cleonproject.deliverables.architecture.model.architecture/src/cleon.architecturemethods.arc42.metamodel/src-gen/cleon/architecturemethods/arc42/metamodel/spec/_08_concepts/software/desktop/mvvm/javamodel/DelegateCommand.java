@@ -31,15 +31,6 @@ public class DelegateCommand extends DynamicResource implements IDelegateCommand
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -80,4 +71,4 @@ public class DelegateCommand extends DynamicResource implements IDelegateCommand
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,rrJ1hW2Y+Bd/4++nRPy2mNyOT0U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,wEU1myXq+mx/NV4i/Ku02/JDrQU=] */

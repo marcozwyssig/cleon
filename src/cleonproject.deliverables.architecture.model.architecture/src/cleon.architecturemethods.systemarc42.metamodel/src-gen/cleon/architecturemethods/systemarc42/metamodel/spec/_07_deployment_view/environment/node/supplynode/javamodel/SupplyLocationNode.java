@@ -31,15 +31,6 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -112,4 +103,4 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,hmaLx4gPj9amsgL/4BIQpY3WMXA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,s57NWcYnpWxwnH86BdQDPW9kwWU=] */

@@ -31,15 +31,6 @@ public class DeploymentMethodConcept extends DynamicResource implements IDeploym
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -133,4 +124,4 @@ public class DeploymentMethodConcept extends DynamicResource implements IDeploym
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,64eef162-fe49-11ea-892b-df291bae18c5,k49bZas69hhOANTGrj8f0lcN3Wo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,64eef162-fe49-11ea-892b-df291bae18c5,KvIGOqqTluUquGm05Nuuiks8tnQ=] */

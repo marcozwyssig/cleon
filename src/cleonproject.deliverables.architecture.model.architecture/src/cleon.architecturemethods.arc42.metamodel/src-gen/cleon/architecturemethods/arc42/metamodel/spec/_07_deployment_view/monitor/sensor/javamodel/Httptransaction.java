@@ -31,15 +31,6 @@ public class Httptransaction extends DynamicResource implements IHttptransaction
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Httptransaction extends DynamicResource implements IHttptransaction
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db457914-c1eb-11ea-820f-9931558a898c,6gHcKefeST+kxeLV51qQ8DvMN8U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db457914-c1eb-11ea-820f-9931558a898c,SybMP5jNoiDGudBq0xI2OyM+waA=] */

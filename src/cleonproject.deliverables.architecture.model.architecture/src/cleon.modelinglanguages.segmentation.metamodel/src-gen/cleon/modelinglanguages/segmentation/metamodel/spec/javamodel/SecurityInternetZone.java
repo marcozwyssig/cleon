@@ -31,15 +31,6 @@ public class SecurityInternetZone extends DynamicResource implements ISecurityIn
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -152,4 +143,4 @@ public class SecurityInternetZone extends DynamicResource implements ISecurityIn
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c8b3612-8e04-11ea-b01b-6bc31a0e971d,1t4NB1QUokssx7p9ejYBtL93e1A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1c8b3612-8e04-11ea-b01b-6bc31a0e971d,ZAuFLYppxWyOP/GTGpl8eza3FW4=] */

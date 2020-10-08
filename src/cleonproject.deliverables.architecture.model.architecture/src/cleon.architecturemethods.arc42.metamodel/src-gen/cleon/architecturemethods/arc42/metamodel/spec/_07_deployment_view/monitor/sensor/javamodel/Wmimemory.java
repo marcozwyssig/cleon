@@ -31,15 +31,6 @@ public class Wmimemory extends DynamicResource implements IWmimemory {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Wmimemory extends DynamicResource implements IWmimemory {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae4c-c1eb-11ea-820f-9931558a898c,QDVcjkKpFkob84Q4sVorQ2ima8M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae4c-c1eb-11ea-820f-9931558a898c,yfJAh0eI4W73BdrVvmvtq2rPJbw=] */

@@ -31,15 +31,6 @@ public class TestScope extends DynamicResource implements ITestScope {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -118,4 +109,4 @@ public class TestScope extends DynamicResource implements ITestScope {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ca652f8-9184-11e9-97b2-b9ddd2a0520b,rVrj6e2yWSWJLlqIOwgThMGG2pc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ca652f8-9184-11e9-97b2-b9ddd2a0520b,uvrCFB6aUlZ0YG21BVjnylQu1wc=] */

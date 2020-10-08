@@ -31,15 +31,6 @@ public class DomainFlow_Out extends DynamicResource implements IDomainFlow_Out {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -107,4 +98,4 @@ public class DomainFlow_Out extends DynamicResource implements IDomainFlow_Out {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ac0190f-0523-11e9-95f7-3b0c47908608,i8ItExuUQmtxJ89nKbEngB5ZLjM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8ac0190f-0523-11e9-95f7-3b0c47908608,e0/8FZyenLBKNte3kaZ99/nWckc=] */

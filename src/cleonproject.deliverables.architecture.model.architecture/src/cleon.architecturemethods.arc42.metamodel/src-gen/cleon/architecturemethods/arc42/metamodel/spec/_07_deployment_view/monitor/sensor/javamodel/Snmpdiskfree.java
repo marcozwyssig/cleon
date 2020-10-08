@@ -31,15 +31,6 @@ public class Snmpdiskfree extends DynamicResource implements ISnmpdiskfree {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Snmpdiskfree extends DynamicResource implements ISnmpdiskfree {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4b94aa-c1eb-11ea-820f-9931558a898c,9QsFOT9FLKx7lJ3NcmejeVw2D70=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4b94aa-c1eb-11ea-820f-9931558a898c,gyIdAn77s7IfZrZVW1XGUQ7tVUk=] */

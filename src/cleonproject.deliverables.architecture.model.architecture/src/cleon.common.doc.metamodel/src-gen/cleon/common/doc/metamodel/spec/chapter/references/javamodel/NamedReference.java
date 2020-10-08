@@ -31,15 +31,6 @@ public class NamedReference extends DynamicResource implements INamedReference {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -110,4 +101,4 @@ public class NamedReference extends DynamicResource implements INamedReference {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13280843-0766-11e9-9896-ef29067b4914,TmRtaTXcmXIJHosMLH/15xMOZSE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,13280843-0766-11e9-9896-ef29067b4914,g48kNE0ZbFFV8r+DpZmwH1uIvaA=] */

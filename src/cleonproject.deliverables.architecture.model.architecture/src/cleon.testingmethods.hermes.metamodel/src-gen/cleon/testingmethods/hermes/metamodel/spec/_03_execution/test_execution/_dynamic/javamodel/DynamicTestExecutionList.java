@@ -31,15 +31,6 @@ public class DynamicTestExecutionList extends DynamicResource implements IDynami
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -153,4 +144,4 @@ public class DynamicTestExecutionList extends DynamicResource implements IDynami
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25396337-90e1-11e9-b8c5-7968e3120b73,pF4k+/tw8Z6Htlzky5D5Ty3RX7g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,25396337-90e1-11e9-b8c5-7968e3120b73,LyKHuraVlhlJWy5p76alhoAn1IQ=] */

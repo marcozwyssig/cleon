@@ -31,15 +31,6 @@ public class DynamicTestDependencyPrecondition extends DynamicResource implement
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -87,4 +78,4 @@ public class DynamicTestDependencyPrecondition extends DynamicResource implement
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c622a80-7168-11e9-98e0-2719d32d2629,tIeYiR5Y8xNsZ/ci8xXQVc+bfzk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4c622a80-7168-11e9-98e0-2719d32d2629,WL4a9e91ZJ1kp5pOVo8/2xcv6jI=] */

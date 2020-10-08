@@ -31,15 +31,6 @@ public class Wmiantivirus extends DynamicResource implements IWmiantivirus {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -70,4 +61,4 @@ public class Wmiantivirus extends DynamicResource implements IWmiantivirus {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae7c-c1eb-11ea-820f-9931558a898c,U5PL6GbBLGmv9fnlYGP2LGc8D2Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae7c-c1eb-11ea-820f-9931558a898c,E4lmajVmqBS5NFJapNaFnwUzbNs=] */

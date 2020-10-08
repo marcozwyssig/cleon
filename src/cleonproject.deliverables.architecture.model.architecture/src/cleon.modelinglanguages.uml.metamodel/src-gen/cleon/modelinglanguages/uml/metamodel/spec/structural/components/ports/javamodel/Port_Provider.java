@@ -31,15 +31,6 @@ public class Port_Provider extends DynamicResource implements IPort_Provider {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -117,4 +108,4 @@ public class Port_Provider extends DynamicResource implements IPort_Provider {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a03165a1-0513-11e9-87b8-094c52ae4c98,xq0kyVnpvf+WSgwbfUVADWUrvtY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a03165a1-0513-11e9-87b8-094c52ae4c98,WLv9ynYPx8LGDizy7riGsjjp1Z0=] */

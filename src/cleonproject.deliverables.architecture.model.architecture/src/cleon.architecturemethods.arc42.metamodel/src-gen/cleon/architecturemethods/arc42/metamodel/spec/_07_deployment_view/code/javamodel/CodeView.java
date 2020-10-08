@@ -31,15 +31,6 @@ public class CodeView extends DynamicResource implements ICodeView {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class CodeView extends DynamicResource implements ICodeView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b23faaf2-64b0-11ea-a27b-5da0f5aec1d8,4IB92G17AiuVUPH+WGvLcC4QzhI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b23faaf2-64b0-11ea-a27b-5da0f5aec1d8,mAIExBfn5Dwg9fqvxQAfNnJfQAE=] */

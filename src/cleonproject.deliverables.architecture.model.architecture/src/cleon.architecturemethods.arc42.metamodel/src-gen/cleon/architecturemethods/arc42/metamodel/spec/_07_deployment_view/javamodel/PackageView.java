@@ -31,15 +31,6 @@ public class PackageView extends DynamicResource implements IPackageView {
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -102,4 +93,4 @@ public class PackageView extends DynamicResource implements IPackageView {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,G2TddaUDpQL/Y6cDh4HzsAFOTf8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d47f734f-9991-11e8-b347-dd2314b02086,S82AlIK6tMlpXZsqJiFYvIRlMVA=] */

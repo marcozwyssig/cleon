@@ -31,15 +31,6 @@ public class SystemDeliverable extends DynamicResource implements ISystemDeliver
   // attributes
   
   @Override
-  public java.lang.String selectComment() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.Commentable_comment);
-  }
-    
-  public void setComment(java.lang.String comment) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.Commentable_comment, comment);
-  }
-
-  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -122,4 +113,4 @@ public class SystemDeliverable extends DynamicResource implements ISystemDeliver
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,471bb7a7-b467-11e8-bb21-172cc8e5f7cd,3w4VS+Ia7j8yyjlFMUgIMNfOeIs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,471bb7a7-b467-11e8-bb21-172cc8e5f7cd,FyW2GtUIk2cL9KMUsA4hxkkwUsM=] */

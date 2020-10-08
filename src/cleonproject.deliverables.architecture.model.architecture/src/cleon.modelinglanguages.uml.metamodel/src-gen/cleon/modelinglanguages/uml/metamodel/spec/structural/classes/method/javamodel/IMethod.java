@@ -2,7 +2,7 @@ package cleon.modelinglanguages.uml.metamodel.spec.structural.classes.method.jav
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IMethod extends cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IObsolete, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IVirtual, ch.actifsource.core.javamodel.ICommentable, ch.actifsource.core.javamodel.INamedResource {
+public interface IMethod extends ch.actifsource.core.javamodel.INamedResource, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IReturnType, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IObsolete, cleon.modelinglanguages.uml.metamodel.spec.structural.classes.javamodel.IVirtual {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("af648f48-e46c-11e2-b1e0-8de0cec58ee7");
   
@@ -18,4 +18,4 @@ public interface IMethod extends cleon.modelinglanguages.uml.metamodel.spec.stru
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,Ai1vX6+rzDOspTTrzHxhMZXh5lc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,af648f48-e46c-11e2-b1e0-8de0cec58ee7,47tpImNDcPJaoJAqKNKzBpKRVlk=] */

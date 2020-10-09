@@ -12,6 +12,7 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForSystemConfiguration_authZForSystemConfiguration = new Resource("6649e37c-032a-11eb-af88-136a9a3b3817");
   public static final Resource AuthZBuildingBlockActivity_authZForSystems = new Resource("8f9f8d55-032a-11eb-af88-136a9a3b3817");
   public static final Resource AuthZBuildingBlockActivity = new Resource("6dd2381d-03d6-11eb-9c97-71aa0c3a8a81");
+  public static final Resource AuthZBuildingBlockForSystemConfiguration_authZBuildingBlockForPermission = new Resource("eb1f0ad2-0a00-11eb-a857-d17d567fc174");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,QfLapSeDDM0wjznhMAq70F9DJKE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,2/StYR5XekEODtmaZap0Zq0E4f8=] */

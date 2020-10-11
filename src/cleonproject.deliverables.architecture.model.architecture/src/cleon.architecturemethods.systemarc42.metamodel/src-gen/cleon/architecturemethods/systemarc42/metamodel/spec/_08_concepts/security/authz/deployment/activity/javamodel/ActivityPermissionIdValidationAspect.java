@@ -4,7 +4,7 @@ import java.util.List;
 
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import ch.actifsource.core.validation.ValidationContext;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityPermissionFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdUniqueValidationAspect;
 
 public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUniqueValidationAspect<IActivityPermission> 
@@ -21,4 +21,9 @@ public class ActivityPermissionIdValidationAspect extends BusinessObjectIdUnique
 		final IActivityPermissionFunctions functions = component.extension(IActivityPermissionFunctions.class);
 		return functions.AllActivityPermissionInDomain();
 	}	
+
+	@Override 
+	protected Integer GetIdentifier( IActivityPermission activityPermission ) {
+		return activityPermission.extension(IActivityPermissionFunctions.class).GetId();
+	}
 }

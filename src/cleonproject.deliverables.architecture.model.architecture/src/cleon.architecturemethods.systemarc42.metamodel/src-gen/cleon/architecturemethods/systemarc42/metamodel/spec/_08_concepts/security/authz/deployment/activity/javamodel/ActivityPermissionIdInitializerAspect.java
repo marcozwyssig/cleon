@@ -4,7 +4,7 @@ import java.util.List;
 
 import ch.actifsource.core.dynamic.IDynamicResourceRepository;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity.IActivityPermissionFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityPermissionFunctions;
 import cleon.common.resources.metamodel.spec.id.javamodel.BusinessObjectIdInitializerAspect;
 
 public class ActivityPermissionIdInitializerAspect extends BusinessObjectIdInitializerAspect<IActivityPermission> 

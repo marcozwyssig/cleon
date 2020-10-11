@@ -12,7 +12,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityRootGroups;
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
-public class FunctionSpace_Activity {
+public class FunctionSpace_Activity_Deployment {
 
   /* Begin Protected Region [[512e5470-7f07-11e9-98a3-b1bd805f0a31]] */
 
@@ -34,17 +34,26 @@ public class FunctionSpace_Activity {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> AllActivityPermissionInDomain();
 
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
-    public java.lang.String GetId();
+    public java.lang.String FormatId();
 
     @IDynamicResourceExtension.MethodId("a4552697-0def-11ea-91d3-b3e983305cb0")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponent();
+
+    @IDynamicResourceExtension.MethodId("e76ea796-0a1d-11eb-a857-d17d567fc174")
+    public java.lang.String GetIdAsString();
+
+    @IDynamicResourceExtension.MethodId("601de2c0-0a1e-11eb-a857-d17d567fc174")
+    public java.lang.Integer GetId();
 
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("f97abbec-016b-11ea-8b45-335c84231cb6")
-    public java.lang.String GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
+    public java.lang.String FormatId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
+
+    @IDynamicResourceExtension.MethodId("601de2c0-0a1e-11eb-a857-d17d567fc174")
+    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
   }
   
@@ -55,8 +64,15 @@ public class FunctionSpace_Activity {
     private ActivityPermissionFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
-      return String.format("A%04d", activityPermission.selectIdentifier());
+    public java.lang.String FormatId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      return String.format("A%04d", activityPermission.extension(IActivityPermissionFunctions.class).GetId());
+    }
+
+    @Override
+    public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      /* Begin Protected Region [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
+      return Integer.valueOf(activityPermission.extension(IActivityPermissionFunctions.class).GetIdAsString());
+      /* End Protected Region   [[601de2c0-0a1e-11eb-a857-d17d567fc174]] */
     }
 
   }
@@ -65,7 +81,11 @@ public class FunctionSpace_Activity {
 
     private ActivityPermissionFunctions() {}
 
-    public static java.lang.String GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+    public static java.lang.String FormatId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).FormatId(activityPermission);
+    }
+
+    public static java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).GetId(activityPermission);
     }
 
@@ -217,4 +237,4 @@ public class FunctionSpace_Activity {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,yIz/AsGHVedwn/IzzPIAmLZkO3Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,Z99xsBOnDI5RRwLoYCFmJ5Y3cIY=] */

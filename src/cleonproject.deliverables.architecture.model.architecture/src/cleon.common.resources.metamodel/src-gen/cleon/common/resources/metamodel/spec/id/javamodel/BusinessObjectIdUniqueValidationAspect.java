@@ -15,34 +15,38 @@ import cleon.common.resources.metamodel.spec.id.IdPackage;
 public class BusinessObjectIdUniqueValidationAspect<T extends IIntegerBusinessObjectId> implements IResourceValidationAspect {
 
 	private IDynamicResourceRepository resourceRepository;
-		
+
 	private final Class<T> _classInstance;
 
 	protected BusinessObjectIdUniqueValidationAspect(final Class<T> classInstance) {
 		_classInstance = classInstance;
 	}
-	
+
 	protected List<T> getResources(final IDynamicResourceRepository resourceRepository, final ValidationContext context) 
 	{
 		return resourceRepository.getAllResources(_classInstance);
 	}
-	
-	
+
+
 	protected T getObject( final IDynamicResourceRepository resourceRepository, final ValidationContext context)
 	{
 		return resourceRepository.getResource(_classInstance, context.getResource());
+	}
+
+	protected Integer GetIdentifier( T businessObjectId ) {
+		return businessObjectId.selectIdentifier();
 	}
 
 	@Override
 	public void validate(final ValidationContext context, final List<IResourceInconsistency> inconsistencyList) {
 		final ITypeSystem typeSystem = context.getTypeSystem();
 		resourceRepository = typeSystem.getResourceRepository();			
-		
+
 		final List<T> resources = getResources(resourceRepository, context);
 		final T businessObjectId = getObject(resourceRepository, context);
 
 		final List<T> duplicateItems = resources.stream()
-				.filter(x -> x.selectIdentifier().equals(businessObjectId.selectIdentifier()))
+				.filter(x -> x.selectIdentifier().equals(GetIdentifier(businessObjectId)))
 				.collect(Collectors.toList());
 		if (!duplicateItems.isEmpty() && duplicateItems.size() != 1) {
 			final String name = Select.simpleName(context.getReadJobExecutor(), businessObjectId.getResource());

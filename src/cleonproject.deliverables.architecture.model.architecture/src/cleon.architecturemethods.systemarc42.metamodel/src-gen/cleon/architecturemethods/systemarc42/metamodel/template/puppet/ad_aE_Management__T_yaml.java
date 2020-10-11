@@ -51,7 +51,7 @@ public class ad_aE_Management__T_yaml {
       	final IAbstractGroupFunctions abstractGroupFunctions = activitySystemConfiguration.extension(IAbstractGroupFunctions.class);
       	final IAbstractSite site = abstractGroupFunctions.GetSite();
       	if( site.equals(abstractHostFunctions.TopSite())) {
-      		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream().filter(x -> x.selectPermission().selectName().equals("write")).findFirst().orElse(null);
+      		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream().filter(x -> x.selectPermission().selectPermission().selectName().equals("write")).findFirst().orElse(null);
       	}
       }
       return null;

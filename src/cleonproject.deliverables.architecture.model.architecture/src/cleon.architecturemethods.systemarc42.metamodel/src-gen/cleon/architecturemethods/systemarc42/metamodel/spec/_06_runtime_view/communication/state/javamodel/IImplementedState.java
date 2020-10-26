@@ -10,6 +10,8 @@ public interface IImplementedState extends cleon.architecturemethods.systemarc42
   
   public java.util.List<java.lang.String> selectRefnNo();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplentationStateForEnvironment> selectEnvironment();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,EWSVvB93GB2RKounmBFp7HFqirA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,j1TzWGnNnYZgK+F+OGqr9pakOXg=] */

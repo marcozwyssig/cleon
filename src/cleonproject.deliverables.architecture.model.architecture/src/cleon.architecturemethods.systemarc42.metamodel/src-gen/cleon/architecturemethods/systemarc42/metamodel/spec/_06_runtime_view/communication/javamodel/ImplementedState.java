@@ -31,12 +31,12 @@ public class ImplementedState extends DynamicResource implements IImplementedSta
   // attributes
   
   @Override
-  public java.lang.String selectRefnNo() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo);
+  public java.util.List<java.lang.String> selectRefnNo() {
+    return _getListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo);
   }
     
-  public void setRefnNo(java.lang.String refnNo) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo, refnNo);
+  public void setRefnNo(java.util.List<java.lang.String> refnNo) {
+     _setListAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo, refnNo);
   }
 
   // relations
@@ -55,10 +55,10 @@ public class ImplementedState extends DynamicResource implements IImplementedSta
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.ImplementedState_refnNo, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,OkYnD8l2bpAAKGiQ6rTqb2vefQE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,FEqZD2GnJXUUaJLPZN8qPFEi1nk=] */

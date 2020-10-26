@@ -8,8 +8,8 @@ public interface IImplementedState extends cleon.architecturemethods.systemarc42
   
   // attributes
   
-  public java.lang.String selectRefnNo();
+  public java.util.List<java.lang.String> selectRefnNo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,D3Tthq73/p0ocG7Ts0AzZckIqf8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,979efb64-0c5a-11ea-af20-c193d8bcdd26,Z4pJY8HKBeqY/LXNATDXa6T3mkA=] */

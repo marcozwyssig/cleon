@@ -11,12 +11,10 @@ public class SystemconfigurationPackage {
   public static final Resource RadiusSystemConfiguration = new Resource("90d82cf6-02c5-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RadiusSystemConfiguration = new Resource("a1ad1b9d-02c5-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_VirtualMachineSystemConfiguration = new Resource("39f8e140-02c7-11e9-9e58-33d596257b14");
-  public static final Resource WebServerConfiguration = new Resource("86e72211-02c8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WebServerConfiguration = new Resource("ac6a40af-02c8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PublicKeyInfrastructureSystemConfiguration = new Resource("d56b0d03-02cb-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RootCASystemConfiguration = new Resource("e4bf4ebd-02cb-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_VCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
-  public static final Resource TerminalServerSystemConfiguration = new Resource("94069046-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_TerminalServerSystemConfiguration = new Resource("abdbca02-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ServerSystemConfiguration = new Resource("4ce9691e-02d7-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_SlaveActiveDirectorySystemConfiguration = new Resource("0e5e8263-09eb-11e9-abef-3d869859c931");
@@ -30,7 +28,6 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_BackupSystemConfiguration = new Resource("caba11f6-09f5-11e9-abef-3d869859c931");
   public static final Resource ProxySystemConfiguration = new Resource("33b921a2-09fc-11e9-abef-3d869859c931");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ProxySystemConfiguration = new Resource("43f32f38-09fc-11e9-abef-3d869859c931");
-  public static final Resource PulseSecureApplianceSystemConfiguration = new Resource("67e55025-0a7a-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PulseSecureApplianceSystemConfiguration = new Resource("78a8ffef-0a7a-11e9-a59d-d7a0c53e291c");
   public static final Resource EndpointProtectionOrchestrationSystemConfiguration = new Resource("ec3a6e2a-0a7e-11e9-a59d-d7a0c53e291c");
   public static final Resource RSASystemConfiguration = new Resource("f8a71fc3-0a7e-11e9-a59d-d7a0c53e291c");
@@ -39,9 +36,7 @@ public class SystemconfigurationPackage {
   public static final Resource DfsSystemConfiguration = new Resource("2ed42aff-0a87-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DfsSystemConfiguration = new Resource("402db23a-0a87-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_StorageSystemConfiguration = new Resource("0e1f8f22-0a88-11e9-a59d-d7a0c53e291c");
-  public static final Resource PrtgSystemConfiguration = new Resource("54ca4f73-0a8a-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PrtgSystemConfiguration = new Resource("606be97a-0a8a-11e9-a59d-d7a0c53e291c");
-  public static final Resource PrtgProbeSystemConfiguration = new Resource("021afd02-0c2f-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PrtgProbeSystemConfiguration = new Resource("1d7e185f-0c2f-11e9-83ba-4d57b06560a2");
   public static final Resource ConfigurationManagementSystemConfiguration = new Resource("a0ea27b6-0c39-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ConfigurationManagementSystemConfiguration = new Resource("ae187c3a-0c39-11e9-83ba-4d57b06560a2");
@@ -83,4 +78,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,kQjFs72YehiyvXSuRd9S4odkHU8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,KkHO00Du7HBPLFrTIOG7CA+JwWk=] */

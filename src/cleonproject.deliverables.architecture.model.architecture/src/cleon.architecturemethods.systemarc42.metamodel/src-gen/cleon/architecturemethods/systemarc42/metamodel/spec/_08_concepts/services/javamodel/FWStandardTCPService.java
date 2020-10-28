@@ -49,6 +49,15 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   }
 
   @Override
+  public java.lang.Boolean selectManagementSupport() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_managementSupport);
+  }
+    
+  public void setManagementSupport(java.lang.Boolean managementSupport) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_managementSupport, managementSupport);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -84,6 +93,7 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_managementSupport, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.ServicesPackage.PortService_port, visitor);
     // relations
@@ -91,4 +101,4 @@ public class FWStandardTCPService extends DynamicResource implements IFWStandard
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,/kgLFTO0R1GepHwb54YOk8hGcQ8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bc91e9b4-a0e7-11ea-8daa-afb4679c3497,MXKhOZkOTomUa76CW8yHTVJWBOU=] */

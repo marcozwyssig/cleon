@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.plattform.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -8,4 +8,4 @@ public interface IPrtgProbeSystemConfiguration extends cleon.architecturemethods
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,021afd02-0c2f-11e9-83ba-4d57b06560a2,H+rLdyI8NhkDtQ00JUzY41sg5zE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,021afd02-0c2f-11e9-83ba-4d57b06560a2,qlguXyHqHjKiDewOku/8joAJ45A=] */

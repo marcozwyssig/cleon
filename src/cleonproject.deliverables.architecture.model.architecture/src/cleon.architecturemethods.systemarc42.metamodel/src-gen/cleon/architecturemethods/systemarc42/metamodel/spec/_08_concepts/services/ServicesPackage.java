@@ -32,6 +32,7 @@ public class ServicesPackage {
   public static final Resource FunctionSpace_aE_Services_FWStandardUDPService = new Resource("f585364b-a0ee-11ea-8daa-afb4679c3497");
   public static final Resource AnyService = new Resource("f5c214a2-b6be-11ea-83ac-afd79efb5e4a");
   public static final Resource FunctionSpace_aE_Services_AnyService = new Resource("cde691ff-b6bf-11ea-83ac-afd79efb5e4a");
+  public static final Resource PortService_managementSupport = new Resource("5d029936-193e-11eb-8585-65084a06c07f");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +53,4 @@ public class ServicesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,gH2Cvq3hxeccle4ftPrqm5J5MF4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,jPSf4Do7ZuElMtHGZkbxO3DnKIo=] */

@@ -10,6 +10,8 @@ public interface IPortService extends cleon.architecturemethods.systemarc42.meta
   
   public java.lang.String selectPort();
   
+  public java.lang.Boolean selectManagementSupport();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a273b70a-6da3-11e9-8af5-2346ca56c2e2,p8vjt++bNwcZhdkH8VCsyQJP17g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a273b70a-6da3-11e9-8af5-2346ca56c2e2,9urgOrP1jFlzeEFPuq/8MSjbIe0=] */

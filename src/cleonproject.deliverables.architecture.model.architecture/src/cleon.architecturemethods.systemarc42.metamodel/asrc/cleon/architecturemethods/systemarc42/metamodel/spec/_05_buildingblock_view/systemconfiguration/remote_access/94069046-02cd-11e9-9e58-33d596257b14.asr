@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="94069046-02cd-11e9-9e58-33d596257b14">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="54fcd5cf-193c-11eb-8585-65084a06c07f" type="resource" guid="54fc609b-193c-11eb-8585-65084a06c07f" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="94069048-02cd-11e9-9e58-33d596257b14" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="d3963c38-6cf0-11e9-a6d3-775c09e81e2d" type="resource" guid="4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="54fcd5cf-193c-11eb-8585-65084a06c07f">
-      <resource guid="54fc609b-193c-11eb-8585-65084a06c07f">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="54fc87ad-193c-11eb-8585-65084a06c07f" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="54fc87ae-193c-11eb-8585-65084a06c07f" type="literal">systemAccess</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="54fd23f0-193c-11eb-8585-65084a06c07f" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="54fd23f1-193c-11eb-8585-65084a06c07f" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="54fd7212-193c-11eb-8585-65084a06c07f" type="resource" guid="4c110ca7-193c-11eb-8585-65084a06c07f" />
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="9406b759-02cd-11e9-9e58-33d596257b14" type="literal">TerminalServerSystemConfiguration</object>

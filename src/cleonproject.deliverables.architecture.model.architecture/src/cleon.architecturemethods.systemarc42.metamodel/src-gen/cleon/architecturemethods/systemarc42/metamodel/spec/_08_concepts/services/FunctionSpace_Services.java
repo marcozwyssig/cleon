@@ -8,13 +8,15 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[d1f3b31c-9340-11e9-a1f7-0765a2e4170d,imports]] */
-
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService;
+import java.util.stream.Collectors;
 /* End Protected Region   [[d1f3b31c-9340-11e9-a1f7-0765a2e4170d,imports]] */
 
 public class FunctionSpace_Services {
 
   /* Begin Protected Region [[d1f3b31c-9340-11e9-a1f7-0765a2e4170d]] */
-  
+
   /* End Protected Region   [[d1f3b31c-9340-11e9-a1f7-0765a2e4170d]] */
 
 
@@ -35,12 +37,18 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("7c5bf95b-bc71-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("80247504-1a84-11eb-97e9-413a49c2a05f")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> OnlyMgmt();
+
   }
   
   public static interface IAbstractServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("119cb311-9341-11e9-a1f7-0765a2e4170d")
     public java.lang.Integer Position(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService abstractService);
+
+    @IDynamicResourceExtension.MethodId("80247504-1a84-11eb-97e9-413a49c2a05f")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> OnlyMgmt(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> abstractServiceList);
 
   }
   
@@ -53,21 +61,38 @@ public class FunctionSpace_Services {
     @Override
     public java.lang.Integer Position(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService abstractService) {
       /* Begin Protected Region [[119cb311-9341-11e9-a1f7-0765a2e4170d]] */
-    	final IAbstractServiceFunctions functions = abstractService.extension(IAbstractServiceFunctions.class);
-    	final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IServiceGroup parent = functions.Parent();
-    	
-    	int i = 0;
-    	for( final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService child : parent.selectServices())
-    	{
-    		++i;
-    		if( child.equals(abstractService))
-    		{
-    			return i;
-    		}
-    	}
-    	
-    	return i;      
+      final IAbstractServiceFunctions functions = abstractService.extension(IAbstractServiceFunctions.class);
+      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IServiceGroup parent = functions.Parent();
+
+      int i = 0;
+      for( final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService child : parent.selectServices())
+      {
+      	++i;
+      	if( child.equals(abstractService))
+      	{
+      		return i;
+      	}
+      }
+
+      return i;      
       /* End Protected Region   [[119cb311-9341-11e9-a1f7-0765a2e4170d]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> OnlyMgmt(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> abstractServiceList) {
+      /* Begin Protected Region [[80247504-1a84-11eb-97e9-413a49c2a05f]] */
+      return abstractServiceList.stream()
+      		.filter(IPortService.class::isInstance)        
+      		.map(IPortService.class::cast)      					
+      		.filter(y -> {
+      			if( y.selectManagementSupport() == null) {
+      				return false;
+      			}
+      			return y.selectManagementSupport();
+      		})
+      		.map(IAbstractService.class::cast)
+      		.collect(Collectors.toList());
+      /* End Protected Region   [[80247504-1a84-11eb-97e9-413a49c2a05f]] */
     }
 
   }
@@ -78,6 +103,10 @@ public class FunctionSpace_Services {
 
     public static java.lang.Integer Position(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService abstractService) {
       return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractService).Position(abstractService);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> OnlyMgmt(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> abstractServiceList) {
+      return DynamicResourceUtil.invoke(IAbstractServiceFunctionsImpl.class, AbstractServiceFunctionsImpl.INSTANCE, abstractServiceList).OnlyMgmt(abstractServiceList);
     }
 
   }
@@ -323,4 +352,4 @@ public class FunctionSpace_Services {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,IMVIIjYwnGT7WKcBHaRg3YJ6VDs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,Lj20WPLm1rmXUHga1GnLLEmULbI=] */

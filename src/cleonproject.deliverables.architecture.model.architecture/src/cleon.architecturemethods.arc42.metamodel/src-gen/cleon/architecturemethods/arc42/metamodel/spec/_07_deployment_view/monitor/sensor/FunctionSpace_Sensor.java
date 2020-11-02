@@ -93,6 +93,31 @@ public class FunctionSpace_Sensor {
 
   }
 
+  public static interface IwmishareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f60cdd2b-1cf7-11eb-acd1-95299b344117")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IwmishareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmishareFunctionsImpl implements IwmishareFunctionsImpl {
+
+    public static final IwmishareFunctionsImpl INSTANCE = new wmishareFunctionsImpl();
+
+    private wmishareFunctionsImpl() {}
+
+  }
+  
+  public static class wmishareFunctions {
+
+    private wmishareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,5V4p2m1LWGDIMy7OZY4JQ7s1UJQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,XIzLC9VK63+RNmtP4SjzNIACLrE=] */

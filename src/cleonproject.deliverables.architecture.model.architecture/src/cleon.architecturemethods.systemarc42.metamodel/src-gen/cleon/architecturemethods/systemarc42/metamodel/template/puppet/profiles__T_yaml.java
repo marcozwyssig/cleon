@@ -305,6 +305,34 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IwmishareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("10dc285d-1cf9-11eb-acd1-95299b344117")
+    public java.lang.String RenderSensor();
+
+    @IDynamicResourceExtension.MethodId("6dddd1c9-1cf9-11eb-acd1-95299b344117")
+    public java.lang.String ShareName();
+
+  }
+  
+  public static interface IwmishareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmishareFunctionsImpl implements IwmishareFunctionsImpl {
+
+    public static final IwmishareFunctionsImpl INSTANCE = new wmishareFunctionsImpl();
+
+    private wmishareFunctionsImpl() {}
+
+  }
+  
+  public static class wmishareFunctions {
+
+    private wmishareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,XQO2cRHDhzFCKEwbAaFt5l5/Gyo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,aVkRX38x4ziLNK7FIxCL1fNjhXY=] */

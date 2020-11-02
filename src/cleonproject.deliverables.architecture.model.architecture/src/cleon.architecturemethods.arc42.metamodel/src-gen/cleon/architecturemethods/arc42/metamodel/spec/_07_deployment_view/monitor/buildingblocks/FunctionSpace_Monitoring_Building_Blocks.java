@@ -202,6 +202,34 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
+  public static interface IwmishareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f41986c0-1cf9-11eb-acd1-95299b344117")
+    public java.lang.String Parameters();
+
+    @IDynamicResourceExtension.MethodId("20eac2e0-1cfa-11eb-acd1-95299b344117")
+    public java.lang.String ShareName();
+
+  }
+  
+  public static interface IwmishareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmishareFunctionsImpl implements IwmishareFunctionsImpl {
+
+    public static final IwmishareFunctionsImpl INSTANCE = new wmishareFunctionsImpl();
+
+    private wmishareFunctionsImpl() {}
+
+  }
+  
+  public static class wmishareFunctions {
+
+    private wmishareFunctions() {}
+
+  }
+
   public static interface IAbstractSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("be0747a6-e068-11ea-bb83-59933a3fa779")
@@ -332,4 +360,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,voA4aHQNex3l1MwH2QVQkbZd92o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,YumdlxhfBwpqCNG90xc9z3mtLcc=] */

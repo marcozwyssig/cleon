@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db51ae88-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="6ad892d3-1cf7-11eb-acd1-95299b344117" type="resource" guid="6ad892d0-1cf7-11eb-acd1-95299b344117" />
+  </owns>
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="c880ed4b-f37f-11ea-9268-b5c52a12d7f9" type="resource" guid="c880c637-f37f-11ea-9268-b5c52a12d7f9" />
   </owns>
@@ -8,6 +11,24 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c268e64d-cfeb-11ea-99e7-03141914df18" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6ad892d3-1cf7-11eb-acd1-95299b344117">
+      <resource guid="6ad892d0-1cf7-11eb-acd1-95299b344117">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6ad892d2-1cf7-11eb-acd1-95299b344117" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6d8dc7cd-1cf7-11eb-acd1-95299b344117" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="6b50f72c-1cf7-11eb-acd1-95299b344117" type="literal">share</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="6ad892d4-1cf7-11eb-acd1-95299b344117" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db51ae8b-c1eb-11ea-820f-9931558a898c" type="literal">wmishare</object>

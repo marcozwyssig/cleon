@@ -39,6 +39,15 @@ public class Wmishare extends DynamicResource implements IWmishare {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.String selectShare() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmishare_share);
+  }
+    
+  public void setShare(java.lang.String share) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmishare_share, share);
+  }
+
   // relations
   
   @Override
@@ -56,9 +65,10 @@ public class Wmishare extends DynamicResource implements IWmishare {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmishare_share, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae88-c1eb-11ea-820f-9931558a898c,4AcPBamdku3Tp9IAOEjCu4FzILs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae88-c1eb-11ea-820f-9931558a898c,gXRZvaIAkPvq2jnYn7HGK323GiY=] */

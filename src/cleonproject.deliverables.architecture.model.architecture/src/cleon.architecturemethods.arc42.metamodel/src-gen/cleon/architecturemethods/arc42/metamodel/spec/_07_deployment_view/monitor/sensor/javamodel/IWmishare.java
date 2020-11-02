@@ -6,6 +6,10 @@ public interface IWmishare extends cleon.architecturemethods.arc42.metamodel.spe
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("db51ae88-c1eb-11ea-820f-9931558a898c");
   
+  // attributes
+  
+  public java.lang.String selectShare();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae88-c1eb-11ea-820f-9931558a898c,ZKShWvUTZbPqV+DqrL4Nou0rEA0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db51ae88-c1eb-11ea-820f-9931558a898c,kS93MKT4LvPF38O+8Irzjuyujgo=] */

@@ -491,6 +491,43 @@ public class sites__T_yaml {
 
   }
 
+  public static interface IApplicationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("865cfac6-1df7-11eb-9bc6-673ab35ba343")
+    public java.lang.String Entry();
+
+  }
+  
+  public static interface IApplicationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("865cfac6-1df7-11eb-9bc6-673ab35ba343")
+    public java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application);
+
+  }
+  
+  public static class ApplicationFunctionsImpl implements IApplicationFunctionsImpl {
+
+    public static final IApplicationFunctionsImpl INSTANCE = new ApplicationFunctionsImpl();
+
+    private ApplicationFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application) {
+      return null;
+    }
+
+  }
+  
+  public static class ApplicationFunctions {
+
+    private ApplicationFunctions() {}
+
+    public static java.lang.String Entry(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application) {
+      return DynamicResourceUtil.invoke(IApplicationFunctionsImpl.class, ApplicationFunctionsImpl.INSTANCE, application).Entry(application);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,bQMETd6+gaFszhfbKQOwwss21ig=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5a5e3d83-da22-11ea-ae00-5518e944c256,dodvw0SG8I1KzeHUnCGkN7Kp578=] */

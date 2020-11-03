@@ -75,6 +75,8 @@ public class TopologyPackage {
   public static final Resource TN_noManagedBy = new Resource("299e8b46-e0b5-11ea-8443-8f528e21caa3");
   public static final Resource ManagedRN_managedMss = new Resource("5a8290d0-e0b5-11ea-8443-8f528e21caa3");
   public static final Resource OverrideRNAware = new Resource("b2d68f10-fd78-11ea-ab46-e355b3ca0d5e");
+  public static final Resource Application = new Resource("3dabaeab-1df0-11eb-9bc6-673ab35ba343");
+  public static final Resource FunctionSpace_aE_Topology_Application = new Resource("27f0c499-1df7-11eb-9bc6-673ab35ba343");
   
   /* Begin Protected Region [[user]] */
   
@@ -95,4 +97,4 @@ public class TopologyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,rX8S2fDDI4/QwmmpUbwJCXqZXk4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology,Cudaq48dXk1224EtZOjS2tMCXjY=] */

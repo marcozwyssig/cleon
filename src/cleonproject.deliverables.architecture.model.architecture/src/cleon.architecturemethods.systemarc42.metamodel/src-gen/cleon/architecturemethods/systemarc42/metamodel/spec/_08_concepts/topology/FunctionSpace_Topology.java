@@ -53,6 +53,12 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("29579ce0-1dac-11eb-9d1c-a7ed1ac99c53")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
+    @IDynamicResourceExtension.MethodId("c47824db-1deb-11eb-9bc6-673ab35ba343")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDepends();
+
+    @IDynamicResourceExtension.MethodId("ea6c7b70-1deb-11eb-9bc6-673ab35ba343")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsWithDependsDistinct();
+
     @IDynamicResourceExtension.MethodId("4d5553d5-1dac-11eb-9d1c-a7ed1ac99c53")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurationsDistinct();
 
@@ -651,6 +657,43 @@ public class FunctionSpace_Topology {
 
   }
 
+  public static interface IApplicationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("35be17e0-1df7-11eb-9bc6-673ab35ba343")
+    public java.lang.String ShortName();
+
+  }
+  
+  public static interface IApplicationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("35be17e0-1df7-11eb-9bc6-673ab35ba343")
+    public java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application);
+
+  }
+  
+  public static class ApplicationFunctionsImpl implements IApplicationFunctionsImpl {
+
+    public static final IApplicationFunctionsImpl INSTANCE = new ApplicationFunctionsImpl();
+
+    private ApplicationFunctionsImpl() {}
+
+    @Override
+    public java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application) {
+      return null;
+    }
+
+  }
+  
+  public static class ApplicationFunctions {
+
+    private ApplicationFunctions() {}
+
+    public static java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IApplication application) {
+      return DynamicResourceUtil.invoke(IApplicationFunctionsImpl.class, ApplicationFunctionsImpl.INSTANCE, application).ShortName(application);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,394b1Nvqnb8fJGA3oMrrcPLhn5M=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,en6H967B9aIKgErvVK5K4I/eFxY=] */

@@ -163,9 +163,6 @@ public class FunctionSpace_AuthZ_Deployment {
 
   public static interface IAbstractGroupFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("4ea436ac-1e12-11e9-865e-41ef48a95f70")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetNetdomain();
-
     @IDynamicResourceExtension.MethodId("f50d9215-b079-11ea-b791-9b401fd02359")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetSite();
 
@@ -194,7 +191,7 @@ public class FunctionSpace_AuthZ_Deployment {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> GetAllRoleSystemComponents();
 
     @IDynamicResourceExtension.MethodId("d55df488-19b9-11ea-bc72-af84f3c76c84")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetSiteWithAllowedToManage();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSiteWithAllowedToManage();
 
   }
   
@@ -335,4 +332,4 @@ public class FunctionSpace_AuthZ_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,enyXXhlyXuYPso+46R2KrCXHafQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,7zbkcDHY3AvIPo5SwSDnL4CYtGM=] */

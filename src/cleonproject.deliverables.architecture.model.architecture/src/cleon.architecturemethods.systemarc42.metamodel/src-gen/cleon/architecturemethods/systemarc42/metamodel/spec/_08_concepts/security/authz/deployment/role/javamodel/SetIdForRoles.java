@@ -12,8 +12,8 @@ import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.FunctionSpace_Role.IRoleNetDomainGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.FunctionSpace_Role.IRoleRootGroupsFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.FunctionSpace_Role.IRoleSiteGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 import cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId;
@@ -36,8 +36,8 @@ public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 				final IRoleRootGroups groups = resourceRepository.getResource(IRoleRootGroups.class, node);
 				final IRoleRootGroupsFunctions groupsFunctions = groups.extension(IRoleRootGroupsFunctions.class);
 
-				for(final IRoleNetDomainGroup domainGroup : groupsFunctions.AllRoleNetDomaingroups()) {
-					final IRoleNetDomainGroupFunctions netDomainGroupFunctions = domainGroup.extension(IRoleNetDomainGroupFunctions.class);
+				for(final IRoleSiteGroup domainGroup : groupsFunctions.AllRoleNetDomaingroups()) {
+					final IRoleSiteGroupFunctions netDomainGroupFunctions = domainGroup.extension(IRoleSiteGroupFunctions.class);
 					final IAbstractGroupFunctions abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
 
 					verifyAndSetId(executor, netDomainGroupFunctions.AllRoleSystemComponents(), abstractGroupFunctions);

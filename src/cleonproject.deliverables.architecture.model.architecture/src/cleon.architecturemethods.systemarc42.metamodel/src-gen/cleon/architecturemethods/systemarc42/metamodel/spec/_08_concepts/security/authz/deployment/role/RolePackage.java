@@ -9,10 +9,10 @@ public class RolePackage {
   public static final Resource RoleRootGroups_roleForSite = new Resource("9025263c-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorGroup_actor = new Resource("b7b0e66e-1d9f-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent_hasActivities = new Resource("ac4ce013-1da1-11e9-b601-db75aa6f89a4");
-  public static final Resource RoleNetDomainGroup = new Resource("94d1c1e5-1da3-11e9-b601-db75aa6f89a4");
+  public static final Resource RoleSiteGroup = new Resource("94d1c1e5-1da3-11e9-b601-db75aa6f89a4");
   public static final Resource RoleActorResponsibility_rolesForSystemComponents = new Resource("ea84d7ed-1da3-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent = new Resource("e33fb742-35e4-11e9-9d58-25409887bb2a");
-  public static final Resource RoleNetDomainGroup_roleforActors = new Resource("47bd0260-35e6-11e9-9d58-25409887bb2a");
+  public static final Resource RoleSiteGroup_roleforActors = new Resource("47bd0260-35e6-11e9-9d58-25409887bb2a");
   public static final Resource RoleSystemComponent_systemComponent = new Resource("5d8925dc-35e6-11e9-9d58-25409887bb2a");
   public static final Resource FunctionSpace_aE_Role_RoleSystemComponent = new Resource("f1878623-35ee-11e9-9d58-25409887bb2a");
   public static final Resource RoleActorGroup_roleDescription = new Resource("98409691-35f5-11e9-9d58-25409887bb2a");
@@ -25,7 +25,7 @@ public class RolePackage {
   public static final Resource Responsibilities_basedOn = new Resource("c8dcaf0f-809c-11e9-8e65-f3f639e40a34");
   public static final Resource RoleActorResponsibility_responsibility = new Resource("15721725-809d-11e9-8e65-f3f639e40a34");
   public static final Resource FunctionSpace_aE_Role_RoleRootGroups = new Resource("2b014e5e-9c16-11e9-9470-2178b598e9a4");
-  public static final Resource FunctionSpace_aE_Role_RoleNetDomainGroup = new Resource("be3d9b6d-9c17-11e9-9470-2178b598e9a4");
+  public static final Resource FunctionSpace_aE_Role_RoleSiteGroup = new Resource("be3d9b6d-9c17-11e9-9470-2178b598e9a4");
   public static final Resource FunctionSpace_aE_Role_RoleActorResponsibility = new Resource("870a3004-07b8-11ea-980e-578ab3bc55dc");
   public static final Resource RoleSystemComponent_basedOn = new Resource("35fb8118-0de8-11ea-91d3-b3e983305cb0");
   public static final Resource FunctionSpace_aE_Role_SystemComponent = new Resource("c3859c5c-bba6-11ea-83bb-3d6d7d2cf439");
@@ -49,4 +49,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role,tTXB76N7WR7JK8jmCp6wnUOVDy4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role,q2eGxEoVzUynm83qcjMfEx+VXvg=] */

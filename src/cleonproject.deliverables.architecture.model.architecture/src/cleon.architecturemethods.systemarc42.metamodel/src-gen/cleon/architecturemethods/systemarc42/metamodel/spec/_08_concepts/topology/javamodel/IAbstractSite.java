@@ -6,6 +6,10 @@ public interface IAbstractSite extends ch.actifsource.core.javamodel.INamedResou
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("119b879d-878b-11e9-a61b-279ebde48b48");
   
+  // relations
+  
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> selectAllowedToManage();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,HFfJ2LpknsOxVzDe7pSmgsJU8n0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,ZVDfh9mr5TYmFNjTW/Yvbaa4cwc=] */

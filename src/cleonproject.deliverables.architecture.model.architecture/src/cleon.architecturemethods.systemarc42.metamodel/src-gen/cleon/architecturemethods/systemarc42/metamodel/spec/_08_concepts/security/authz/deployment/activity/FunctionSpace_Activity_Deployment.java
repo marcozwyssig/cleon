@@ -147,7 +147,7 @@ public class FunctionSpace_Activity_Deployment {
 
   }
 
-  public static interface IActivityNetdomainGroupFunctions extends IDynamicResourceExtension {
+  public static interface IActivitySiteGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aaa0cf46-9c90-11e9-9b32-35cf2fd07621")
     public java.lang.Integer Max();
@@ -160,23 +160,23 @@ public class FunctionSpace_Activity_Deployment {
 
   }
   
-  public static interface IActivityNetdomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IActivitySiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("aaa0cf46-9c90-11e9-9b32-35cf2fd07621")
-    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityNetdomainGroup activityNetdomainGroup);
+    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
   }
   
-  public static class ActivityNetdomainGroupFunctionsImpl implements IActivityNetdomainGroupFunctionsImpl {
+  public static class ActivitySiteGroupFunctionsImpl implements IActivitySiteGroupFunctionsImpl {
 
-    public static final IActivityNetdomainGroupFunctionsImpl INSTANCE = new ActivityNetdomainGroupFunctionsImpl();
+    public static final IActivitySiteGroupFunctionsImpl INSTANCE = new ActivitySiteGroupFunctionsImpl();
 
-    private ActivityNetdomainGroupFunctionsImpl() {}
+    private ActivitySiteGroupFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityNetdomainGroup activityNetdomainGroup) {
+    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup) {
       /* Begin Protected Region [[aaa0cf46-9c90-11e9-9b32-35cf2fd07621]] */
-      final IAbstractGroupFunctions groupFunctions = activityNetdomainGroup.extension(IAbstractGroupFunctions.class);
+      final IAbstractGroupFunctions groupFunctions = activitySiteGroup.extension(IAbstractGroupFunctions.class);
       final IActivityRootGroups activityRootGroups = groupFunctions.GetRootActivityGroup();    	
       final IActivityRootGroupsFunctions activityRootGroupsFunctions = activityRootGroups.extension(IActivityRootGroupsFunctions.class);
       int permissionsCount = 1;
@@ -194,12 +194,12 @@ public class FunctionSpace_Activity_Deployment {
 
   }
   
-  public static class ActivityNetdomainGroupFunctions {
+  public static class ActivitySiteGroupFunctions {
 
-    private ActivityNetdomainGroupFunctions() {}
+    private ActivitySiteGroupFunctions() {}
 
-    public static java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityNetdomainGroup activityNetdomainGroup) {
-      return DynamicResourceUtil.invoke(IActivityNetdomainGroupFunctionsImpl.class, ActivityNetdomainGroupFunctionsImpl.INSTANCE, activityNetdomainGroup).Max(activityNetdomainGroup);
+    public static java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup) {
+      return DynamicResourceUtil.invoke(IActivitySiteGroupFunctionsImpl.class, ActivitySiteGroupFunctionsImpl.INSTANCE, activitySiteGroup).Max(activitySiteGroup);
     }
 
   }
@@ -213,7 +213,7 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Integer PermissionCount();
 
     @IDynamicResourceExtension.MethodId("6024626b-9c98-11e9-9b32-35cf2fd07621")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityNetdomainGroup> AllActivityNetDomaingroups();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup> AllActivityNetDomaingroups();
 
   }
   
@@ -237,4 +237,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,Z99xsBOnDI5RRwLoYCFmJ5Y3cIY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,wfdxExC1vC5lSaOu+2zFXjq3+rQ=] */

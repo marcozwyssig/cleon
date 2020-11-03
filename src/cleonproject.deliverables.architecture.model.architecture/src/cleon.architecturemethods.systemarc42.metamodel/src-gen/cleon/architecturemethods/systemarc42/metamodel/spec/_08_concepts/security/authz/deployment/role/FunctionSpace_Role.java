@@ -68,7 +68,7 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission src);
 
     @IDynamicResourceExtension.MethodId("6baf5299-78e4-11ea-a009-ab381ce86597")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleNetDomainGroup Site();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup Site();
 
     @IDynamicResourceExtension.MethodId("729a6900-78e4-11ea-a009-ab381ce86597")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup Actor();
@@ -179,7 +179,7 @@ public class FunctionSpace_Role {
     public java.lang.Integer ResponsibilityCount();
 
     @IDynamicResourceExtension.MethodId("1f943bf7-9c17-11e9-9470-2178b598e9a4")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleNetDomainGroup> AllRoleNetDomaingroups();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup> AllRoleNetDomaingroups();
 
   }
   
@@ -201,7 +201,7 @@ public class FunctionSpace_Role {
 
   }
 
-  public static interface IRoleNetDomainGroupFunctions extends IDynamicResourceExtension {
+  public static interface IRoleSiteGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cb248677-9c17-11e9-9470-2178b598e9a4")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> AllRoleSystemComponents();
@@ -217,23 +217,23 @@ public class FunctionSpace_Role {
 
   }
   
-  public static interface IRoleNetDomainGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IRoleSiteGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("79ca7b0b-9c8f-11e9-9b32-35cf2fd07621")
-    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleNetDomainGroup roleNetDomainGroup);
+    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup roleSiteGroup);
 
   }
   
-  public static class RoleNetDomainGroupFunctionsImpl implements IRoleNetDomainGroupFunctionsImpl {
+  public static class RoleSiteGroupFunctionsImpl implements IRoleSiteGroupFunctionsImpl {
 
-    public static final IRoleNetDomainGroupFunctionsImpl INSTANCE = new RoleNetDomainGroupFunctionsImpl();
+    public static final IRoleSiteGroupFunctionsImpl INSTANCE = new RoleSiteGroupFunctionsImpl();
 
-    private RoleNetDomainGroupFunctionsImpl() {}
+    private RoleSiteGroupFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleNetDomainGroup roleNetDomainGroup) {
+    public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup roleSiteGroup) {
       /* Begin Protected Region [[79ca7b0b-9c8f-11e9-9b32-35cf2fd07621]] */
-      final IAbstractGroupFunctions groupFunctions = roleNetDomainGroup.extension(IAbstractGroupFunctions.class);
+      final IAbstractGroupFunctions groupFunctions = roleSiteGroup.extension(IAbstractGroupFunctions.class);
       final IRoleRootGroups roleRootGroups = groupFunctions.GetRootRoleGroup();   	
       final IRoleRootGroupsFunctions roleRootGroupsFunctions = roleRootGroups.extension(IRoleRootGroupsFunctions.class);
       return roleRootGroupsFunctions.ActorCount() * roleRootGroupsFunctions.ResponsibilityCount() + roleRootGroupsFunctions.SystemComponentCount();
@@ -242,12 +242,12 @@ public class FunctionSpace_Role {
 
   }
   
-  public static class RoleNetDomainGroupFunctions {
+  public static class RoleSiteGroupFunctions {
 
-    private RoleNetDomainGroupFunctions() {}
+    private RoleSiteGroupFunctions() {}
 
-    public static java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleNetDomainGroup roleNetDomainGroup) {
-      return DynamicResourceUtil.invoke(IRoleNetDomainGroupFunctionsImpl.class, RoleNetDomainGroupFunctionsImpl.INSTANCE, roleNetDomainGroup).Max(roleNetDomainGroup);
+    public static java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup roleSiteGroup) {
+      return DynamicResourceUtil.invoke(IRoleSiteGroupFunctionsImpl.class, RoleSiteGroupFunctionsImpl.INSTANCE, roleSiteGroup).Max(roleSiteGroup);
     }
 
   }
@@ -310,4 +310,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,Dhq3c/x7xaQc5IWhCQYLAbGbtWE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,b1sFbpy2Fk4gv67elPOJSXWw2LI=] */

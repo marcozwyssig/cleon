@@ -13,8 +13,8 @@ import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.ActivityPackage;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityNetdomainGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityRootGroupsFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivitySiteGroupFunctions;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public class SetIdForActivities extends AbstractAllInstancesRefactorerAspect {
@@ -35,8 +35,8 @@ public class SetIdForActivities extends AbstractAllInstancesRefactorerAspect {
 				final IActivityRootGroups groups = resourceRepository.getResource(IActivityRootGroups.class, node);
 				final IActivityRootGroupsFunctions groupsFunctions = groups.extension(IActivityRootGroupsFunctions.class);
 
-				for(final IActivityNetdomainGroup domainGroup : groupsFunctions.AllActivityNetDomaingroups()) {
-					final IActivityNetdomainGroupFunctions netDomainGroupFunctions = domainGroup.extension(IActivityNetdomainGroupFunctions.class);
+				for(final IActivitySiteGroup domainGroup : groupsFunctions.AllActivityNetDomaingroups()) {
+					final IActivitySiteGroupFunctions netDomainGroupFunctions = domainGroup.extension(IActivitySiteGroupFunctions.class);
 					final IAbstractGroupFunctions abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
 
 					int i = 0;

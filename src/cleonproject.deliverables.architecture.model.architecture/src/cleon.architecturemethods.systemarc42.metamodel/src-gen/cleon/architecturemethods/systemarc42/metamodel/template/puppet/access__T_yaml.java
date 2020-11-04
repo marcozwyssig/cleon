@@ -65,26 +65,26 @@ public class access__T_yaml {
   public static interface ISystemConfigurationAccessFromFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("706413be-1e91-11eb-b08c-d72de2e3f55f")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src);
 
     @IDynamicResourceExtension.MethodId("4a62bac3-1eaa-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src);
 
     @IDynamicResourceExtension.MethodId("19e2d8f7-1eab-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src);
 
   }
   
   public static interface ISystemConfigurationAccessFromFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("706413be-1e91-11eb-b08c-d72de2e3f55f")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
 
     @IDynamicResourceExtension.MethodId("4a62bac3-1eaa-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
 
     @IDynamicResourceExtension.MethodId("19e2d8f7-1eab-11eb-9eef-0dadb2b460da")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom);
 
   }
   
@@ -95,16 +95,20 @@ public class access__T_yaml {
     private SystemConfigurationAccessFromFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[706413be-1e91-11eb-b08c-d72de2e3f55f]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
-      		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
+      		.filter(dst -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
       				.anyMatch(y -> {
       					final ISourceFunctions sourceFunctions = y.selectSource().extension(ISourceFunctions.class);
-      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(x.selectInstanceOf()) ) {
+      					if( sourceFunctions.CanCommunicate(src, dst) == false) {
+      						return false;
+      					}
+
+      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(dst.selectInstanceOf()) ) {
       						return y.selectAccessConfigurationRDP().isEmpty() == false;
       					}
       					return false;
@@ -114,16 +118,20 @@ public class access__T_yaml {
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[4a62bac3-1eaa-11eb-9eef-0dadb2b460da]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
-      		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
+      		.filter(dst -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
       				.anyMatch(y -> {
       					final ISourceFunctions sourceFunctions = y.selectSource().extension(ISourceFunctions.class);
-      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(x.selectInstanceOf()) ) {
+      					if( sourceFunctions.CanCommunicate(src, dst) == false) {
+      						return false;
+      					}
+
+      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(dst.selectInstanceOf()) ) {
       						return y.selectAccessConfigurationSSH().isEmpty() == false;
       					}
       					return false;
@@ -133,16 +141,20 @@ public class access__T_yaml {
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[19e2d8f7-1eab-11eb-9eef-0dadb2b460da]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
-      		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
+      		.filter(dst -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
       				.anyMatch(y -> {
       					final ISourceFunctions sourceFunctions = y.selectSource().extension(ISourceFunctions.class);
-      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(x.selectInstanceOf()) ) {
+      					if( sourceFunctions.CanCommunicate(src, dst) == false) {
+      						return false;
+      					}      					
+
+      					if( sourceFunctions.Destination().selectDestinationSystemConfiguration().equals(dst.selectInstanceOf()) ) {
       						return y.selectAccessConfigurationWeb().isEmpty() == false;
       					}
       					return false;
@@ -157,20 +169,20 @@ public class access__T_yaml {
 
     private SystemConfigurationAccessFromFunctions() {}
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessRDP(abstractSite, systemConfigurationAccessFrom);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessRDP(abstractSite, src, systemConfigurationAccessFrom);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessSSH(abstractSite, systemConfigurationAccessFrom);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessSSH(abstractSite, src, systemConfigurationAccessFrom);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
-      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessWeb(abstractSite, systemConfigurationAccessFrom);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+      return DynamicResourceUtil.invoke(ISystemConfigurationAccessFromFunctionsImpl.class, SystemConfigurationAccessFromFunctionsImpl.INSTANCE, systemConfigurationAccessFrom).OnlyWithAccessWeb(abstractSite, src, systemConfigurationAccessFrom);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,IPwy/c4di8OPHGNZUeGFx5RY46k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,KXVWaxqDfcrOqactDuEcg00FzRg=] */

@@ -252,6 +252,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("0112faa4-b073-11ea-b791-9b401fd02359")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController();
 
+    @IDynamicResourceExtension.MethodId("0f06e336-1eb7-11eb-9eef-0dadb2b460da")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> Subzones();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -699,4 +702,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,3A/qVkGtGB440vk36a+ObkMR1BE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,/RlEPCP+SyZ+ENeZcrd85nM6KtI=] */

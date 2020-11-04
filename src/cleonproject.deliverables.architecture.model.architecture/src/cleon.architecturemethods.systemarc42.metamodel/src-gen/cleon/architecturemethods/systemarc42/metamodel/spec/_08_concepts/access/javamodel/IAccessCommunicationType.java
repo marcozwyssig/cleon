@@ -8,8 +8,8 @@ public interface IAccessCommunicationType extends ch.actifsource.core.javamodel.
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService> selectService();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService> selectServicesForAccess();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a028c2b5-1e98-11eb-9eef-0dadb2b460da,tdPYByY63mwPgiXuN+zRmeZ1nFg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a028c2b5-1e98-11eb-9eef-0dadb2b460da,gQS9EMAuUWxKn1x8kiOtFClE8pE=] */

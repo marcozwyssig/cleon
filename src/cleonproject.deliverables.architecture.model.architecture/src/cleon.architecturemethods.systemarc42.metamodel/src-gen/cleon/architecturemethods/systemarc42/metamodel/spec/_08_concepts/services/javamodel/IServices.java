@@ -8,8 +8,8 @@ public interface IServices extends ch.actifsource.core.javamodel.IResource {
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectTopServices();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> selectServices();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2936d62-6da3-11e9-8af5-2346ca56c2e2,brvAVGA8PDQHgMac0nT0QinTgFw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2936d62-6da3-11e9-8af5-2346ca56c2e2,Z74CKRU6bUQtqmsUZmfWQkzwDKs=] */

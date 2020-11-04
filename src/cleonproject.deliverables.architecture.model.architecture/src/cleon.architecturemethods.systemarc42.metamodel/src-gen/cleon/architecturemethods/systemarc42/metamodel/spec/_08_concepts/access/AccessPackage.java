@@ -15,6 +15,9 @@ public class AccessPackage {
   public static final Resource AccessConfiguration = new Resource("ce85a718-1a0b-11eb-818d-6dbd3a659d3c");
   public static final Resource SystemConfigurationAccessTo_accessConfiguration = new Resource("e5db7860-1a0b-11eb-818d-6dbd3a659d3c");
   public static final Resource AccessConfiguration_portService = new Resource("79e6f1d5-1a0c-11eb-818d-6dbd3a659d3c");
+  public static final Resource AccessCommunicationType = new Resource("a028c2b5-1e98-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessConcept_accessCommunicationType = new Resource("a6ed1740-1e98-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessCommunicationType_service = new Resource("ca9c5fab-1e98-11eb-9eef-0dadb2b460da");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +38,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,/93g7GiojashhjOEllVLDzxePb4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,qpDW7P/ew1GM3UkFjBQ35H4WVaY=] */

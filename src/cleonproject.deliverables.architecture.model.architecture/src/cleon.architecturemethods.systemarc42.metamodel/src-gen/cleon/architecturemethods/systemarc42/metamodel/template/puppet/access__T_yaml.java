@@ -98,7 +98,7 @@ public class access__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessRDP(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[706413be-1e91-11eb-b08c-d72de2e3f55f]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
-      return abstractSiteFunctions.AllHosts().stream()
+      return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
       		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
@@ -117,7 +117,7 @@ public class access__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessSSH(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[4a62bac3-1eaa-11eb-9eef-0dadb2b460da]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
-      return abstractSiteFunctions.AllHosts().stream()
+      return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
       		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()
@@ -136,7 +136,7 @@ public class access__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyWithAccessWeb(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[19e2d8f7-1eab-11eb-9eef-0dadb2b460da]] */
       final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
-      return abstractSiteFunctions.AllHosts().stream()
+      return abstractSiteFunctions.AllHostsWithAllowedManaged().stream()
       		.filter(IAbstractSingleHost.class::isInstance)        
       		.map(IAbstractSingleHost.class::cast)         		  
       		.filter(x -> systemConfigurationAccessFrom.selectAccessTo().values().stream()

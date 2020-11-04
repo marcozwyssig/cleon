@@ -135,8 +135,8 @@ public class SystemConfigurationAccessFrom extends DynamicResource implements IS
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom> selectToMeSourceAccess(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access.javamodel.ITerminalServerSystemConfiguration object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom selectToMeSourceAccess(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access.javamodel.ITerminalServerSystemConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessFrom_sourceAccess, object.getResource());
   }
   
   public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom selectToMeAccessTo(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo object) {
@@ -144,4 +144,4 @@ public class SystemConfigurationAccessFrom extends DynamicResource implements IS
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,ePz56WS2XcyX14872XeBpl+K9aE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,3OD29Mpr5VyYSuoNrXhqdSeB4F4=] */

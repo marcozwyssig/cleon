@@ -10,8 +10,14 @@ public interface ISystemConfigurationAccessTo extends ch.actifsource.core.javamo
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource selectSource();
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfiguration();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationRDP();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationVNC();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationWeb();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationSSH();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,euvPg12mhx7OxJqC6+8VTyUefSk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,eqVcn8SFCMzoTe69pqXGIkgJ208=] */

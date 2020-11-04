@@ -31,12 +31,42 @@ public class SystemConfigurationAccessTo extends DynamicResource implements ISys
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfiguration() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfiguration);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationRDP() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationRDP);
   }
 
-  public SystemConfigurationAccessTo setAccessConfiguration(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> accessConfiguration) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfiguration, accessConfiguration);
+  public SystemConfigurationAccessTo setAccessConfigurationRDP(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> accessConfigurationRDP) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationRDP, accessConfigurationRDP);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationSSH() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationSSH);
+  }
+
+  public SystemConfigurationAccessTo setAccessConfigurationSSH(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> accessConfigurationSSH) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationSSH, accessConfigurationSSH);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationVNC() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationVNC);
+  }
+
+  public SystemConfigurationAccessTo setAccessConfigurationVNC(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> accessConfigurationVNC) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationVNC, accessConfigurationVNC);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectAccessConfigurationWeb() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationWeb);
+  }
+
+  public SystemConfigurationAccessTo setAccessConfigurationWeb(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> accessConfigurationWeb) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationWeb, accessConfigurationWeb);
     return this;
   }
     
@@ -74,7 +104,10 @@ public class SystemConfigurationAccessTo extends DynamicResource implements ISys
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfiguration, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationRDP, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationSSH, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationVNC, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationWeb, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_source, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -85,9 +118,21 @@ public class SystemConfigurationAccessTo extends DynamicResource implements ISys
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_source, object.getResource());
   }
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo selectToMeAccessConfiguration(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfiguration, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo selectToMeAccessConfigurationRDP(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationRDP, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo selectToMeAccessConfigurationVNC(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationVNC, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo selectToMeAccessConfigurationWeb(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationWeb, object.getResource());
+  }
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo selectToMeAccessConfigurationSSH(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.SystemConfigurationAccessTo_accessConfigurationSSH, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,tWAGFGIdeQF09Y+SKxPmUSBR9Fs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,MF76zdJmul4fgZRKd1tEcfOIcS4=] */

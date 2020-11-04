@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="084f9d76-1ea3-11eb-9eef-0dadb2b460da">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="8356fac1-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="8356fabd-1ea3-11eb-9eef-0dadb2b460da">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="861de31e-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="861d94fb-1ea3-11eb-9eef-0dadb2b460da">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="86202c18-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="861f1ba4-1ea3-11eb-9eef-0dadb2b460da" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="084f9d78-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="085087da-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="a028c2b5-1e98-11eb-9eef-0dadb2b460da" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="085060c9-1ea3-11eb-9eef-0dadb2b460da" type="literal">AccessCommunicationTypeSsh</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8356fac1-1ea3-11eb-9eef-0dadb2b460da">
+      <resource guid="8356fabd-1ea3-11eb-9eef-0dadb2b460da">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8356fabf-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="8356fac0-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="861de31e-1ea3-11eb-9eef-0dadb2b460da">
+            <resource guid="861d94fb-1ea3-11eb-9eef-0dadb2b460da">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="861dbc0d-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="86202c18-1ea3-11eb-9eef-0dadb2b460da">
+                  <resource guid="861f1ba4-1ea3-11eb-9eef-0dadb2b460da">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="861f1ba6-1ea3-11eb-9eef-0dadb2b460da" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="861f1ba7-1ea3-11eb-9eef-0dadb2b460da" type="literal">ssh</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

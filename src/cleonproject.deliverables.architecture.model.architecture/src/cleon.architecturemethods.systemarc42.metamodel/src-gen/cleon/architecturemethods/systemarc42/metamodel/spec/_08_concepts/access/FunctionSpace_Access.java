@@ -8,13 +8,15 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[cffe4329-19c9-11eb-8585-65084a06c07f,imports]] */
-
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService;
+import java.util.stream.Collectors;
 /* End Protected Region   [[cffe4329-19c9-11eb-8585-65084a06c07f,imports]] */
 
 public class FunctionSpace_Access {
 
   /* Begin Protected Region [[cffe4329-19c9-11eb-8585-65084a06c07f]] */
-  
+
   /* End Protected Region   [[cffe4329-19c9-11eb-8585-65084a06c07f]] */
 
 
@@ -93,6 +95,49 @@ public class FunctionSpace_Access {
 
   }
 
+  public static interface IAccessCommunicationTypeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("eb8338db-1ea3-11eb-9eef-0dadb2b460da")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo to);
+
+  }
+  
+  public static interface IAccessCommunicationTypeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("eb8338db-1ea3-11eb-9eef-0dadb2b460da")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo to, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList);
+
+  }
+  
+  public static class AccessCommunicationTypeFunctionsImpl implements IAccessCommunicationTypeFunctionsImpl {
+
+    public static final IAccessCommunicationTypeFunctionsImpl INSTANCE = new AccessCommunicationTypeFunctionsImpl();
+
+    private AccessCommunicationTypeFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo to, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
+      /* Begin Protected Region [[eb8338db-1ea3-11eb-9eef-0dadb2b460da]] */
+      final ISourceFunctions sourceFunctions = to.selectSource().extension(ISourceFunctions.class);
+      final List<IAbstractService> portServices = sourceFunctions.AllServices();
+      return accessCommunicationTypeList.stream()
+      		.filter(x -> x.selectServicesForAccess().stream().anyMatch(y -> portServices.contains(y)))
+      		.collect(Collectors.toList());
+      /* End Protected Region   [[eb8338db-1ea3-11eb-9eef-0dadb2b460da]] */
+    }
+
+  }
+  
+  public static class AccessCommunicationTypeFunctions {
+
+    private AccessCommunicationTypeFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> OnlyIfHasServices(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo to, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> accessCommunicationTypeList) {
+      return DynamicResourceUtil.invoke(IAccessCommunicationTypeFunctionsImpl.class, AccessCommunicationTypeFunctionsImpl.INSTANCE, accessCommunicationTypeList).OnlyIfHasServices(to, accessCommunicationTypeList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,E36l4xTyuRv+GM1ig6xndViAA1Y=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,jVcTP0ZfK5/aenb1EGol+mxfJvE=] */

@@ -2,14 +2,14 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAccessConfiguration extends ch.actifsource.core.javamodel.IResource, ch.actifsource.core.javamodel.IDecorator {
+public interface IAccessConfiguration extends ch.actifsource.core.javamodel.IDecorator {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("ce85a718-1a0b-11eb-818d-6dbd3a659d3c");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("db632dc0-1ea1-11eb-9eef-0dadb2b460da");
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService selectPortService();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType selectAccessCommunicationType();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ce85a718-1a0b-11eb-818d-6dbd3a659d3c,OzhdDUYcxQ6nNBR/xKmibV1osR8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,8Mwbdn//cukxGTjnzycl72x/3Fw=] */

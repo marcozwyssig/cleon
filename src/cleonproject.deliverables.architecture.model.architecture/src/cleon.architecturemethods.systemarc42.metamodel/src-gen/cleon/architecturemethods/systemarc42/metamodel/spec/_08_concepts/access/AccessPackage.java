@@ -12,14 +12,22 @@ public class AccessPackage {
   public static final Resource SystemConfigurationAccessFrom_accessTo = new Resource("d635b34a-19c4-11eb-8585-65084a06c07f");
   public static final Resource SystemConfigurationAccessTo_source = new Resource("d803eeb6-19c5-11eb-8585-65084a06c07f");
   public static final Resource FunctionSpace_aE_Access_SystemConfigurationAccessFrom = new Resource("e724788d-19c9-11eb-8585-65084a06c07f");
-  public static final Resource AccessConfiguration = new Resource("ce85a718-1a0b-11eb-818d-6dbd3a659d3c");
-  public static final Resource SystemConfigurationAccessTo_accessConfiguration = new Resource("e5db7860-1a0b-11eb-818d-6dbd3a659d3c");
-  public static final Resource AccessConfiguration_portService = new Resource("79e6f1d5-1a0c-11eb-818d-6dbd3a659d3c");
   public static final Resource AccessCommunicationType = new Resource("a028c2b5-1e98-11eb-9eef-0dadb2b460da");
   public static final Resource AccessConcept_accessCommunicationType = new Resource("a6ed1740-1e98-11eb-9eef-0dadb2b460da");
   public static final Resource AccessCommunicationType_servicesForAccess = new Resource("ca9c5fab-1e98-11eb-9eef-0dadb2b460da");
   public static final Resource FunctionSpace_aE_Access_AccessConcept = new Resource("ef48d79e-1e99-11eb-9eef-0dadb2b460da");
   public static final Resource FunctionSpace_aE_Access_SystemConfigurationAccessTo = new Resource("0c2804ee-1e9d-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessConfiguration = new Resource("db632dc0-1ea1-11eb-9eef-0dadb2b460da");
+  public static final Resource SystemConfigurationAccessTo_accessConfigurationRDP = new Resource("edb40d88-1ea1-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessConfiguration_accessCommunicationType = new Resource("6c758c15-1ea2-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessCommunicationTypeRdp = new Resource("f967b2ac-1ea2-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessCommunicationTypeSsh = new Resource("084f9d76-1ea3-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessCommunicationTypeWeb = new Resource("16486d9f-1ea3-11eb-9eef-0dadb2b460da");
+  public static final Resource AccessCommunicationTypeVNC = new Resource("3077ebb4-1ea3-11eb-9eef-0dadb2b460da");
+  public static final Resource FunctionSpace_aE_Access_AccessCommunicationType = new Resource("17b01e74-1ea4-11eb-9eef-0dadb2b460da");
+  public static final Resource SystemConfigurationAccessTo_accessConfigurationVNC = new Resource("5c2556db-1ea5-11eb-9eef-0dadb2b460da");
+  public static final Resource SystemConfigurationAccessTo_accessConfigurationWeb = new Resource("a992f6e1-1ea5-11eb-9eef-0dadb2b460da");
+  public static final Resource SystemConfigurationAccessTo_accessConfigurationSSH = new Resource("b547c9b2-1ea5-11eb-9eef-0dadb2b460da");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +48,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,Me+cfKNzQcCAIMKTY/xoWzoOIp4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,UQ3d9+fKmKswACOtAbV+yNGR+f8=] */

@@ -31,12 +31,12 @@ public class AccessConfiguration extends DynamicResource implements IAccessConfi
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService selectPortService() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_portService);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType selectAccessCommunicationType() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_accessCommunicationType);
   }
 
-  public AccessConfiguration setPortService(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService portService) {
-    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_portService, portService);
+  public AccessConfiguration setAccessCommunicationType(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType accessCommunicationType) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_accessCommunicationType, accessCommunicationType);
     return this;
   }
     
@@ -64,15 +64,15 @@ public class AccessConfiguration extends DynamicResource implements IAccessConfi
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_portService, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_accessCommunicationType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectToMePortService(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService object) {
-    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_portService, object.getResource());
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration> selectToMeAccessCommunicationType(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_accessCommunicationType, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ce85a718-1a0b-11eb-818d-6dbd3a659d3c,keEVQDBdk9SF54z4diWSR037KMs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,wuVsBRo6NkUfike6TGTPSH3TPLE=] */

@@ -74,12 +74,18 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("a4339819-1db6-11eb-9d1c-a7ed1ac99c53")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponentsDistinct();
 
+    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IAbstractSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ad33683d-3775-11ea-bb06-17b9485a5d0a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList);
+
+    @IDynamicResourceExtension.MethodId("db67f519-1f75-11eb-9ecc-5f700a9abe9c")
+    public java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite);
 
   }
   
@@ -99,6 +105,11 @@ public class FunctionSpace_Topology {
       /* End Protected Region   [[ad33683d-3775-11ea-bb06-17b9485a5d0a]] */
     }
 
+    @Override
+    public java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite) {
+      return null;
+    }
+
   }
   
   public static class AbstractSiteFunctions {
@@ -107,6 +118,10 @@ public class FunctionSpace_Topology {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID> sortByFunctionId(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> abstractSiteList) {
       return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSiteList).sortByFunctionId(abstractSiteList);
+    }
+
+    public static java.lang.String ShortName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite) {
+      return DynamicResourceUtil.invoke(IAbstractSiteFunctionsImpl.class, AbstractSiteFunctionsImpl.INSTANCE, abstractSite).ShortName(abstractSite);
     }
 
   }
@@ -702,4 +717,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,/RlEPCP+SyZ+ENeZcrd85nM6KtI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,I0iprMD4psTt35i+YS8Q02fLku4=] */

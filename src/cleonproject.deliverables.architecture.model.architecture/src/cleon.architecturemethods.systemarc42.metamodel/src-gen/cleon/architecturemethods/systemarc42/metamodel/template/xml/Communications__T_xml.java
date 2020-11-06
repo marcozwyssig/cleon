@@ -243,7 +243,7 @@ public class Communications__T_xml {
 
     @Override
     public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IUndefinedImplementationState undefinedImplementationState) {
-      return false;
+      return true;
     }
 
   }
@@ -260,4 +260,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,Z4IWGHz2XgOdphazQfYp7PMG2no=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,GsJ33UzuMzIufydajZfGCXsNPfQ=] */

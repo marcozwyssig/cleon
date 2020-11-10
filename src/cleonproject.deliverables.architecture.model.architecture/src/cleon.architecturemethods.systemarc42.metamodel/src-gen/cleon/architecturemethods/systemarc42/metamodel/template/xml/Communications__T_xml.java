@@ -221,43 +221,43 @@ public class Communications__T_xml {
 
   }
 
-  public static interface IUndefinedImplementationStateFunctions extends IDynamicResourceExtension {
+  public static interface IPlannedmplementationStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
     public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
 
   }
   
-  public static interface IUndefinedImplementationStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPlannedmplementationStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IUndefinedImplementationState undefinedImplementationState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState);
 
   }
   
-  public static class UndefinedImplementationStateFunctionsImpl implements IUndefinedImplementationStateFunctionsImpl {
+  public static class PlannedmplementationStateFunctionsImpl implements IPlannedmplementationStateFunctionsImpl {
 
-    public static final IUndefinedImplementationStateFunctionsImpl INSTANCE = new UndefinedImplementationStateFunctionsImpl();
+    public static final IPlannedmplementationStateFunctionsImpl INSTANCE = new PlannedmplementationStateFunctionsImpl();
 
-    private UndefinedImplementationStateFunctionsImpl() {}
+    private PlannedmplementationStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IUndefinedImplementationState undefinedImplementationState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
       return true;
     }
 
   }
   
-  public static class UndefinedImplementationStateFunctions {
+  public static class PlannedmplementationStateFunctions {
 
-    private UndefinedImplementationStateFunctions() {}
+    private PlannedmplementationStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IUndefinedImplementationState undefinedImplementationState) {
-      return DynamicResourceUtil.invoke(IUndefinedImplementationStateFunctionsImpl.class, UndefinedImplementationStateFunctionsImpl.INSTANCE, undefinedImplementationState).IsImplemented(env, undefinedImplementationState);
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
+      return DynamicResourceUtil.invoke(IPlannedmplementationStateFunctionsImpl.class, PlannedmplementationStateFunctionsImpl.INSTANCE, plannedmplementationState).IsImplemented(env, plannedmplementationState);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,GsJ33UzuMzIufydajZfGCXsNPfQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,O2wEGRE4rb65+o2EHDwszkrjoPk=] */

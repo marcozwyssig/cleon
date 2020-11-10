@@ -22,7 +22,7 @@ public class XmlPackage {
   public static final Resource Communications__T_xml_NotImplementedForEnvironmentState = new Resource("104e686b-2048-11eb-88ac-6db033a610cb");
   public static final Resource Communications__T_xml_ImplementationState = new Resource("a5b9fbbd-204a-11eb-88ac-6db033a610cb");
   public static final Resource Communications__T_xml_ImplementedButNotRequiredOnFirewallState = new Resource("c9e181d0-204a-11eb-88ac-6db033a610cb");
-  public static final Resource Communications__T_xml_UndefinedImplementationState = new Resource("da45fb18-204a-11eb-88ac-6db033a610cb");
+  public static final Resource Communications__T_xml_PlannedmplementationState = new Resource("da45fb18-204a-11eb-88ac-6db033a610cb");
   
   /* Begin Protected Region [[user]] */
   
@@ -43,4 +43,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,8mekDuutepqffc7Mt9AgCQ8x1zQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.xml,FzPnH6Ct+0Sx8Fr7e2qhRdsQGT8=] */

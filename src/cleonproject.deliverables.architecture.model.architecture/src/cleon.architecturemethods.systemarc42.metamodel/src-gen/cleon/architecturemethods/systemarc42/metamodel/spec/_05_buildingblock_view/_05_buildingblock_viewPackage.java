@@ -56,6 +56,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource AuthenticationSystemArc42_realmForSystemConfiguration = new Resource("a67d798d-fe6e-11ea-abcb-bfad67a56d79");
   public static final Resource WhiteBoxSystemArc42_functionality = new Resource("c2508dcb-0245-11eb-9410-a9adaf556564");
   public static final Resource WhiteBoxSystemArc42_authz = new Resource("07023a7a-0322-11eb-a5fc-d7dbe77075ea");
+  public static final Resource AutorizationSystemArc42 = new Resource("c727191a-23f5-11eb-83b1-3d2a97975978");
+  public static final Resource AutorizationSystemArc42_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
   
   /* Begin Protected Region [[user]] */
   
@@ -76,4 +78,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,3IeBPgAC2s8gbwQUk6sEf0uHi/A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,4RUK+G1wA7c67EMRtYaYPDECLfU=] */

@@ -4,6 +4,7 @@
     <resource statement-guid="7c6b2ec0-9287-11e9-959e-8115c2f9e41e" type="resource" guid="7c6b2ebe-9287-11e9-959e-8115c2f9e41e" />
     <resource statement-guid="10b9efd8-57cb-11ea-bd7a-4baf1bc87b3c" type="resource" guid="10b9a1b5-57cb-11ea-bd7a-4baf1bc87b3c" />
     <resource statement-guid="7f92b806-e14b-11ea-97b2-8bbe72826720" type="resource" guid="fbc56402-dd79-11ea-9383-71e9cf1c59dd" />
+    <resource statement-guid="c7180d13-2439-11eb-83b1-3d2a97975978" type="resource" guid="c717bef0-2439-11eb-83b1-3d2a97975978" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="42192ad5-fb28-11e9-890e-576c93cea08c" type="resource" guid="4218dcb1-fb28-11e9-890e-576c93cea08c">
@@ -91,6 +92,22 @@
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="fbc6c396-dd79-11ea-9383-71e9cf1c59dd" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="c7180d13-2439-11eb-83b1-3d2a97975978">
+      <resource guid="c717bef0-2439-11eb-83b1-3d2a97975978">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c717e602-2439-11eb-83b1-3d2a97975978" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ca5c89b6-2439-11eb-83b1-3d2a97975978" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c7c58b25-2439-11eb-83b1-3d2a97975978" type="literal">alias</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="c7194594-2439-11eb-83b1-3d2a97975978" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
         </predicate>
       </resource>
     </object>

@@ -75,6 +75,9 @@ public class FunctionSpace_Access {
     @IDynamicResourceExtension.MethodId("1fa9ea98-1e9d-11eb-9eef-0dadb2b460da")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService> AllCommunicationServices();
 
+    @IDynamicResourceExtension.MethodId("2f177739-242c-11eb-83b1-3d2a97975978")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllCommunicationServicesFlatten();
+
   }
   
   public static interface ISystemConfigurationAccessToFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -138,6 +141,68 @@ public class FunctionSpace_Access {
 
   }
 
+  public static interface IAccessConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("31aa5c47-243f-11eb-83b1-3d2a97975978")
+    public java.lang.String Decorate(final java.lang.String hostName);
+
+  }
+  
+  public static interface IAccessConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("31aa5c47-243f-11eb-83b1-3d2a97975978")
+    public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration);
+
+  }
+  
+  public static class AccessConfigurationFunctionsImpl implements IAccessConfigurationFunctionsImpl {
+
+    public static final IAccessConfigurationFunctionsImpl INSTANCE = new AccessConfigurationFunctionsImpl();
+
+    private AccessConfigurationFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration) {
+      return hostName;
+    }
+
+  }
+  
+  public static class AccessConfigurationFunctions {
+
+    private AccessConfigurationFunctions() {}
+
+    public static java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration) {
+      return DynamicResourceUtil.invoke(IAccessConfigurationFunctionsImpl.class, AccessConfigurationFunctionsImpl.INSTANCE, accessConfiguration).Decorate(hostName, accessConfiguration);
+    }
+
+  }
+
+  public static interface IAccessConfigurationWebFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("63a996bd-243f-11eb-83b1-3d2a97975978")
+    public java.lang.String Decorate(final java.lang.String hostName);
+
+  }
+  
+  public static interface IAccessConfigurationWebFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AccessConfigurationWebFunctionsImpl implements IAccessConfigurationWebFunctionsImpl {
+
+    public static final IAccessConfigurationWebFunctionsImpl INSTANCE = new AccessConfigurationWebFunctionsImpl();
+
+    private AccessConfigurationWebFunctionsImpl() {}
+
+  }
+  
+  public static class AccessConfigurationWebFunctions {
+
+    private AccessConfigurationWebFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,jVcTP0ZfK5/aenb1EGol+mxfJvE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,b0gfp26uQR08MQaErve3xnXazIs=] */

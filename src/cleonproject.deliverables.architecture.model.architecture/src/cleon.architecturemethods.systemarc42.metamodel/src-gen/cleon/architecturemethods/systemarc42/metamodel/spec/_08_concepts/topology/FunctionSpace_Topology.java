@@ -258,6 +258,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("e6e98c18-b07c-11ea-b791-9b401fd02359")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite TopSite();
 
+    @IDynamicResourceExtension.MethodId("1883c8f0-2408-11eb-83b1-3d2a97975978")
+    public java.lang.String TopSiteName();
+
     @IDynamicResourceExtension.MethodId("54955539-570f-11ea-91a9-1992072893b1")
     public java.lang.String SimpleName();
 
@@ -269,6 +272,9 @@ public class FunctionSpace_Topology {
 
     @IDynamicResourceExtension.MethodId("0f06e336-1eb7-11eb-9eef-0dadb2b460da")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> Subzones();
+
+    @IDynamicResourceExtension.MethodId("7782b59b-243a-11eb-83b1-3d2a97975978")
+    public java.lang.String AliasOrSimpleName();
 
   }
   
@@ -717,4 +723,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,I0iprMD4psTt35i+YS8Q02fLku4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,i2Z+dP6I+wph9g4KoZIT2Q1VWiU=] */

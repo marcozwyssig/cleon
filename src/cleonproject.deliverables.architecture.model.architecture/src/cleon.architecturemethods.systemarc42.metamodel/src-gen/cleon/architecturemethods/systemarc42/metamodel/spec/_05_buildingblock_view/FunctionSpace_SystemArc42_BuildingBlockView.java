@@ -140,6 +140,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("a30c72d2-883f-11e9-80ce-fbaba21c141b")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem System();
 
+    @IDynamicResourceExtension.MethodId("b2b63790-2403-11eb-83b1-3d2a97975978")
+    public java.lang.String SystemName();
+
     @IDynamicResourceExtension.MethodId("544e68a6-1db6-11eb-9d1c-a7ed1ac99c53")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent SystemComponent();
 
@@ -334,4 +337,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,xnJq4DcRs1aYp+oVMg2wjo9HLvE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,RGny4G+js8JYPyomhRLGxLvGoTg=] */

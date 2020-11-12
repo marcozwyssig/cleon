@@ -65,7 +65,6 @@ public class access__T_yaml {
   				for (final String entry : pathTable.get(systemName)) {
   					stringBuffer.append(String.format("    %s\n", entry));
   				}
-  				stringBuffer.append("\n");
   			}
   		}
   		if (stringBuffer.length() == 0) {
@@ -87,7 +86,6 @@ public class access__T_yaml {
   				for (final String entry : pathTable.get(systemName)) {
   					stringBuffer.append(accessFromFunctions.RenderFirefoxEntry(entry, folder) + "\n");
   				}
-  				stringBuffer.append("\n");
   			}
   		}
   		if (stringBuffer.length() == 0) {

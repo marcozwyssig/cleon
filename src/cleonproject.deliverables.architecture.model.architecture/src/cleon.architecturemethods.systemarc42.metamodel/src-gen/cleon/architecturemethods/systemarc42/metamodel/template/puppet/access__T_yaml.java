@@ -33,7 +33,7 @@ public class access__T_yaml {
 
   	public static void checkAndAddText(Map<Resource, ? extends IAccessConfiguration> accessConfigurationMap,
   			IAbstractHost src, IAbstractHost dst, ISourceFunctions sourceFunctions,
-  			HashMap<String, HashMap<String, List<String>>> siteTable, String protcol) {
+  			HashMap<String, HashMap<String, List<String>>> siteTable, String protcol, boolean useProtocol) {
 
   		if (accessConfigurationMap.isEmpty() == false) {
   			final IAccessConfiguration accessConfiguration = accessConfigurationMap.values().stream().findFirst()
@@ -50,7 +50,7 @@ public class access__T_yaml {
   			}
 
   			if (sourceFunctions.CanCommunicate(src, dst, accessConfiguration)) {
-  				TextHelper.addText(siteTable, dst, dst, protcol, accessConfiguration);
+  				TextHelper.addAccessEntry(siteTable, dst, dst, protcol, accessConfiguration, useProtocol);
   			}
   		}
   	}
@@ -96,9 +96,9 @@ public class access__T_yaml {
   		return stringBuffer.toString();
   	}
 
-  	private static void addText(final HashMap<String, HashMap<String, List<String>>> siteTable,
+  	private static void addAccessEntry(final HashMap<String, HashMap<String, List<String>>> siteTable,
   			final IAbstractHost abstractHost, IAbstractHost dst, String protocol,
-  			IAccessConfiguration accessConfiguration) {
+  			IAccessConfiguration accessConfiguration, boolean useProtocol) {
 
   		final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions dstHostFunctions = dst
   				.extension(
@@ -124,11 +124,22 @@ public class access__T_yaml {
   				.extension(IAccessConfigurationFunctions.class);
   		String entry;
   		if (protocol.equals(WwW)) {
-  			entry = String.format("https://%s: %s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  			if (useProtocol) {
+  				entry = String.format("https://%s: %s",
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  			} else {
+  				entry = String.format("https://%s",
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()));
+  			}
+
   		} else {
-  			entry = String.format("%s: %s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  			if (useProtocol) {
+  				entry = String.format("%s: %s",
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  			} else {
+  				entry = String.format("%s",
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()));
+  			}
   		}
 
   		siteTable.get(siteName).get(systemName).add(entry);
@@ -226,11 +237,11 @@ public class access__T_yaml {
       				.equals(dst.selectInstanceOf())) {
 
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationRDP(), src, dst, sourceFunctions,
-      					siteTable, "rdp");
+      					siteTable, "rdp", true);
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationSSH(), src, dst, sourceFunctions,
-      					siteTable, "ssh");
+      					siteTable, "ssh", true);
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationWeb(), src, dst, sourceFunctions,
-      					siteTable, TextHelper.WwW);
+      					siteTable, TextHelper.WwW, true);
       		}
       	}
       }
@@ -258,7 +269,7 @@ public class access__T_yaml {
       				.equals(dst.selectInstanceOf())) {
 
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationWeb(), src, dst, sourceFunctions,
-      					siteTable, TextHelper.WwW);
+      					siteTable, TextHelper.WwW, false);
       		}
       	}
       }

@@ -979,6 +979,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IAutorizationSystemArc42Functions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c7bc48b5-25ac-11eb-b9ae-4df44b18aa9b")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IAutorizationSystemArc42FunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AutorizationSystemArc42FunctionsImpl implements IAutorizationSystemArc42FunctionsImpl {
+
+    public static final IAutorizationSystemArc42FunctionsImpl INSTANCE = new AutorizationSystemArc42FunctionsImpl();
+
+    private AutorizationSystemArc42FunctionsImpl() {}
+
+  }
+  
+  public static class AutorizationSystemArc42Functions {
+
+    private AutorizationSystemArc42Functions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,BHrN2rsE+5Dxf/nF+UU6y+WzIPc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,Bz5kjpuknVL2LLtwZ3eM9tiaMUM=] */

@@ -13,6 +13,7 @@ public class TablePackage {
   public static final Resource Row_cell = new Resource("3dce88bf-3c4a-11e5-871f-6beac6a7c24b");
   public static final Resource Cell_column = new Resource("4a60c3ac-3c4a-11e5-871f-6beac6a7c24b");
   public static final Resource Column_width = new Resource("a9ee4ad3-3cc8-11e5-871f-6beac6a7c24b");
+  public static final Resource FunctionSpace_aE_Table_Row = new Resource("3670bdfd-25a2-11eb-b9ae-4df44b18aa9b");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +34,4 @@ public class TablePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph.table,qGRldgwVXWFXB1kEGxId/O0XfDI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.paragraph.table,6mKS6SeEHrMXZqAdwh4+55qEHXI=] */

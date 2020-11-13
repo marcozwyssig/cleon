@@ -40,6 +40,15 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
   }
 
   @Override
+  public java.lang.Boolean selectIsActive() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive);
+  }
+    
+  public void setIsActive(java.lang.Boolean isActive) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, isActive);
+  }
+
+  @Override
   public java.lang.String selectRoleDescription() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleActorGroup_roleDescription);
   }
@@ -165,6 +174,7 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleActorGroup_roleDescription, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleActorGroup_actor, visitor);
@@ -185,4 +195,4 @@ public class RoleActorGroup extends DynamicResource implements IRoleActorGroup {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88193678-1d9f-11e9-b601-db75aa6f89a4,/K2BsG9mxlobkCBVVOENrOVIOA4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,88193678-1d9f-11e9-b601-db75aa6f89a4,UoKpyDbKEy/DOpsihjOZEQJkNKY=] */

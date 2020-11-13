@@ -48,6 +48,15 @@ public class AuthZBuildingBlockForPermission extends DynamicResource implements 
      _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
   }
 
+  @Override
+  public java.lang.Boolean selectIsActive() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive);
+  }
+    
+  public void setIsActive(java.lang.Boolean isActive) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, isActive);
+  }
+
   // relations
   
   @Override
@@ -86,6 +95,7 @@ public class AuthZBuildingBlockForPermission extends DynamicResource implements 
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.ActivityPackage.AuthZBuildingBlockForPermission_permission, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -98,4 +108,4 @@ public class AuthZBuildingBlockForPermission extends DynamicResource implements 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,fhrRu257FBbkLxK3Z7IMIYijU0A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,SRtwW/96bJGx/ui4VJTn2DxGio0=] */

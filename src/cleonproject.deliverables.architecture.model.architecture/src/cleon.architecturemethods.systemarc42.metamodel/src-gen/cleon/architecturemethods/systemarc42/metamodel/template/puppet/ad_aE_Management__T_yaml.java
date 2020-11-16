@@ -45,13 +45,19 @@ public class ad_aE_Management__T_yaml {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission WriteActivity(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost abstractHost) {
       /* Begin Protected Region [[82ca75a5-b075-11ea-b791-9b401fd02359]] */
-      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions abstractHostFunctions = abstractHost.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions.class);
-      final List<IActivitySystemConfiguration> activitySystemConfigurations = ActivitySystemConfiguration.selectToMeActivityForSystemConfiguration(abstractHost.selectInstanceOf());
-      for( final IActivitySystemConfiguration activitySystemConfiguration : activitySystemConfigurations ) {
-      	final IAbstractGroupFunctions abstractGroupFunctions = activitySystemConfiguration.extension(IAbstractGroupFunctions.class);
+      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions abstractHostFunctions = abstractHost
+      		.extension(
+      				cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions.class);
+      final List<IActivitySystemConfiguration> activitySystemConfigurations = ActivitySystemConfiguration
+      		.selectToMeActivityForSystemConfiguration(abstractHost.selectInstanceOf());
+      for (final IActivitySystemConfiguration activitySystemConfiguration : activitySystemConfigurations) {
+      	final IAbstractGroupFunctions abstractGroupFunctions = activitySystemConfiguration
+      			.extension(IAbstractGroupFunctions.class);
       	final IAbstractSite site = abstractGroupFunctions.GetSite();
-      	if( site.equals(abstractHostFunctions.TopSite())) {
-      		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream().filter(x -> x.selectPermission().selectPermission().selectName().equals("write")).findFirst().orElse(null);
+      	if (site.equals(abstractHostFunctions.TopSite())) {
+      		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream()
+      				.filter(x -> x.selectPermissionTemplate().selectPermission().selectName().equals("write"))
+      				.findFirst().orElse(null);
       	}
       }
       return null;

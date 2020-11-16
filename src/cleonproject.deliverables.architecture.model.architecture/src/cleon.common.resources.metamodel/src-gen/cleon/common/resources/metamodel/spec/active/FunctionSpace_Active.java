@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5731c4e3-259b-11eb-b9ae-4df44b18aa9b,imports]] */
-
+import java.util.stream.Collectors;
 /* End Protected Region   [[5731c4e3-259b-11eb-b9ae-4df44b18aa9b,imports]] */
 
 public class FunctionSpace_Active {
@@ -23,12 +23,18 @@ public class FunctionSpace_Active {
     @IDynamicResourceExtension.MethodId("8922ce02-259b-11eb-b9ae-4df44b18aa9b")
     public java.lang.Boolean IsActiveOrDefaultTrue();
 
+    @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
+    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue();
+
   }
   
   public static interface IActiveWithDefaultTrueAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8922ce02-259b-11eb-b9ae-4df44b18aa9b")
     public java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware activeWithDefaultTrueAware);
+
+    @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
+    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> activeWithDefaultTrueAwareList);
 
   }
   
@@ -48,6 +54,14 @@ public class FunctionSpace_Active {
       /* End Protected Region   [[8922ce02-259b-11eb-b9ae-4df44b18aa9b]] */
     }
 
+    @Override
+    public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> activeWithDefaultTrueAwareList) {
+      /* Begin Protected Region [[7cc60bb8-27e5-11eb-b239-011c2d3c4f88]] */
+      return activeWithDefaultTrueAwareList.stream().filter(this::IsActiveOrDefaultTrue)
+      		.collect(Collectors.toList());
+      /* End Protected Region   [[7cc60bb8-27e5-11eb-b239-011c2d3c4f88]] */
+    }
+
   }
   
   public static class ActiveWithDefaultTrueAwareFunctions {
@@ -56,6 +70,10 @@ public class FunctionSpace_Active {
 
     public static java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware activeWithDefaultTrueAware) {
       return DynamicResourceUtil.invoke(IActiveWithDefaultTrueAwareFunctionsImpl.class, ActiveWithDefaultTrueAwareFunctionsImpl.INSTANCE, activeWithDefaultTrueAware).IsActiveOrDefaultTrue(activeWithDefaultTrueAware);
+    }
+
+    public static <T extends cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> activeWithDefaultTrueAwareList) {
+      return DynamicResourceUtil.invoke(IActiveWithDefaultTrueAwareFunctionsImpl.class, ActiveWithDefaultTrueAwareFunctionsImpl.INSTANCE, activeWithDefaultTrueAwareList).OnlyActiveOrDefaultTrue(activeWithDefaultTrueAwareList);
     }
 
   }
@@ -104,4 +122,4 @@ public class FunctionSpace_Active {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,T8dq0UKsoWu0P9sD60/oR6fDCD0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,1qtnfDeHLWFwFdb5i6j65ONJI8g=] */

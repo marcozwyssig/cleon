@@ -60,6 +60,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource AutorizationSystemArc42_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
   public static final Resource SystemConfigurationAware = new Resource("a56c2a54-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
   
   /* Begin Protected Region [[user]] */
   
@@ -80,4 +82,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,wadPNXijwD/8jie5LjwK0YCVAwE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,PPkc0IaRBuhnsERgYGIA8tjFHEA=] */

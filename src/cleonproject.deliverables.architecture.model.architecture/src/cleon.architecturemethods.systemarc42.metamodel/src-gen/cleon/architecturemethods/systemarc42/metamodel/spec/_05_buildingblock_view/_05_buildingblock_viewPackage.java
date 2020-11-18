@@ -9,8 +9,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemLayer = new Resource("b894901a-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemComponent = new Resource("c0436bff-d0b2-11e8-b005-f7630e4c29c0");
   public static final Resource SystemConfiguration = new Resource("4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemComponentAware_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
-  public static final Resource SystemConfigurationAware_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemComponentCompositionAware_systemComponents = new Resource("e4d17571-e0fd-11e8-8499-a3b0fb3cad90");
+  public static final Resource SystemConfigurationCompositionAware_systemConfigurations = new Resource("2a480ce4-e0fe-11e8-8499-a3b0fb3cad90");
   public static final Resource SystemLayerDependency = new Resource("a670e1bd-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayerDependency_to = new Resource("b2a5e144-01d8-11e9-9c9d-8d52d6745026");
   public static final Resource SystemLayer_hasDependency = new Resource("c5658855-01d8-11e9-9c9d-8d52d6745026");
@@ -33,11 +33,11 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemConfiguration_skipHostGenerate = new Resource("73d5a1ae-06bc-11ea-8f17-2da21adc8e34");
   public static final Resource SystemOfSystem = new Resource("025f7a4c-3eac-11ea-8cb4-0b006790b142");
   public static final Resource SystemOfSystem_systems = new Resource("394f59bc-3eac-11ea-8cb4-0b006790b142");
-  public static final Resource SystemConfigurationAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
+  public static final Resource SystemConfigurationCompositionAware = new Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
   public static final Resource SystemWithSystemConfiguration = new Resource("74ac16c6-3eb1-11ea-9af7-ad5bf30c585a");
   public static final Resource AbstractSystem = new Resource("5c3cd0c9-3eba-11ea-9af7-ad5bf30c585a");
   public static final Resource NamedSystemWithSystemConfiguration = new Resource("f6f283bb-45e4-11ea-a150-53212f58490b");
-  public static final Resource SystemComponentAware = new Resource("0acee12f-5ca9-11ea-9014-eb1fa518f623");
+  public static final Resource SystemComponentCompositionAware = new Resource("0acee12f-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource SystemWithSystemComponent = new Resource("cb55af14-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource NamedSystemWithSystemComponent = new Resource("e8941a6b-5ca9-11ea-9014-eb1fa518f623");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_BuildingBlockView_AbstractSystem = new Resource("a271ea42-616f-11ea-a72c-c14dab81a029");
@@ -58,6 +58,8 @@ public class _05_buildingblock_viewPackage {
   public static final Resource WhiteBoxSystemArc42_authz = new Resource("07023a7a-0322-11eb-a5fc-d7dbe77075ea");
   public static final Resource AutorizationSystemArc42 = new Resource("c727191a-23f5-11eb-83b1-3d2a97975978");
   public static final Resource AutorizationSystemArc42_activityBlock = new Resource("63f5813e-23f7-11eb-83b1-3d2a97975978");
+  public static final Resource SystemConfigurationAware = new Resource("a56c2a54-2994-11eb-9648-7bdf8dc8eaf2");
+  public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
   
   /* Begin Protected Region [[user]] */
   
@@ -78,4 +80,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,4RUK+G1wA7c67EMRtYaYPDECLfU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,wadPNXijwD/8jie5LjwK0YCVAwE=] */

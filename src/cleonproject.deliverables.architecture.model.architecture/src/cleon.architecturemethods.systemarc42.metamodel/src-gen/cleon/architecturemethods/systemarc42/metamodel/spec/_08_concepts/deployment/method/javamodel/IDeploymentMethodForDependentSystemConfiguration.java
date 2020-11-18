@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deploy
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDeploymentMethodForDependentSystemConfiguration extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
+public interface IDeploymentMethodForDependentSystemConfiguration extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("8f187230-fe3f-11ea-892b-df291bae18c5");
   
@@ -14,4 +14,4 @@ public interface IDeploymentMethodForDependentSystemConfiguration extends ch.act
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187230-fe3f-11ea-892b-df291bae18c5,eQuk3JgSlBnxSY/fu5Tqs91nEPA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187230-fe3f-11ea-892b-df291bae18c5,kSPnXkCCO59bVulc+RBUO2xknMw=] */

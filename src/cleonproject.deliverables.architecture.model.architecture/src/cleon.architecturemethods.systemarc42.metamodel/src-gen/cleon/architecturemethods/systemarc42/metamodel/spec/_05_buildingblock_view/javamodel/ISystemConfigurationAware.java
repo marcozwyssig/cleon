@@ -2,14 +2,14 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_v
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISystemConfigurationAware extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponentComposition {
+public interface ISystemConfigurationAware extends ch.actifsource.core.javamodel.IResource {
 
-  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0383a7a0-3eaf-11ea-8cb4-0b006790b142");
+  public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("a56c2a54-2994-11eb-9648-7bdf8dc8eaf2");
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> selectSystemConfigurations();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0383a7a0-3eaf-11ea-8cb4-0b006790b142,V+8nJ0stI+9ynROXuC20oHCNtdY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a56c2a54-2994-11eb-9648-7bdf8dc8eaf2,3t/gL8sOECo6cTLGQUg+87zvzgM=] */

@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_v
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISystemComponentAware extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.INamedComponentComposition {
+public interface ISystemComponentCompositionAware extends cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.INamedComponentComposition {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("0acee12f-5ca9-11ea-9014-eb1fa518f623");
   
@@ -12,4 +12,4 @@ public interface ISystemComponentAware extends cleon.modelinglanguages.uml.metam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0acee12f-5ca9-11ea-9014-eb1fa518f623,PIseTPofLFMGHeCRsGKTFiS01Kg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0acee12f-5ca9-11ea-9014-eb1fa518f623,OR+AvgRmQVoZjgCYjwuutbTvfAs=] */

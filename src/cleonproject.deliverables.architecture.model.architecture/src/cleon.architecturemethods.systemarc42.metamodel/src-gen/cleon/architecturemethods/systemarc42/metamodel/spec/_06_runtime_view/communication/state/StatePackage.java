@@ -15,6 +15,7 @@ public class StatePackage {
   public static final Resource ImplentationStateForEnvironment_environment = new Resource("03d0a238-1771-11eb-aff5-dd5c3dd3a631");
   public static final Resource ImplementedForEnvironmentState = new Resource("562a111a-1772-11eb-aff5-dd5c3dd3a631");
   public static final Resource NotImplementedForEnvironmentState = new Resource("78a45c59-1772-11eb-aff5-dd5c3dd3a631");
+  public static final Resource RequiredChangeImplementedState = new Resource("c1b74490-2983-11eb-9648-7bdf8dc8eaf2");
   
   /* Begin Protected Region [[user]] */
   
@@ -35,4 +36,4 @@ public class StatePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state,VvwdqouKKB7DqKPYJRnFMUZ7Ecg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state,ft9NGyrzu317gnxSHkRw+7vaw2Q=] */

@@ -44,13 +44,14 @@ public class _05_buildingblock_viewPackage {
   public static final Resource Whitebox_monitoring = new Resource("971c3a16-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_backup = new Resource("a2fc14a0-7ed3-11ea-9262-7b7e0e9cb204");
   public static final Resource Whitebox_access = new Resource("ab3492e7-7ed3-11ea-9262-7b7e0e9cb204");
-  public static final Resource Licencing = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
+  public static final Resource UsedProduct = new Resource("65f06b79-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Availability = new Resource("86b45378-82f3-11ea-9ba4-35fe2a5b2ff9");
-  public static final Resource Whitebox_licensing = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
+  public static final Resource Whitebox_usedProducts = new Resource("9e32e2cd-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Whitebox_availability = new Resource("b85567f0-82f3-11ea-9ba4-35fe2a5b2ff9");
   public static final Resource Backup_aE_and_aE_Recovery_usedBackupBuildingBlock = new Resource("7e128561-c1d1-11ea-b956-0ffede25a02d");
   public static final Resource Monitoring_monitoringBuildingBlock = new Resource("bb23f104-c1fe-11ea-820f-9931558a898c");
   public static final Resource Blackbox_whitebox = new Resource("1f2736f1-d568-11ea-80a3-dbf7eb525c3c");
+  public static final Resource UsedProduct_product = new Resource("4be44043-29a3-11eb-8baa-95d9107006e8");
   
   /* Begin Protected Region [[user]] */
   
@@ -71,4 +72,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,O2KOyrtPUsEzIsWqzun0DHdUG+g=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view,36WKgFix1JmUVG7AeFxDCeP+dbw=] */

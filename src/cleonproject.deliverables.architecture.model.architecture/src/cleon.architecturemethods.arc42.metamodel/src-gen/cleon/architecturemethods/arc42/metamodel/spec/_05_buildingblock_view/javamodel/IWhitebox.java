@@ -32,7 +32,7 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
   public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IAccess selectAccess();
   
-  public cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.ILicencing selectLicensing();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IUsedProduct> selectUsedProducts();
   
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IChapter> selectChapters();
   
@@ -40,4 +40,4 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,JW5A3l8tcbD3aGfJ2WzAsRJTY50=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,8WNlT8DNKf28olNNVs1+d5bqLN4=] */

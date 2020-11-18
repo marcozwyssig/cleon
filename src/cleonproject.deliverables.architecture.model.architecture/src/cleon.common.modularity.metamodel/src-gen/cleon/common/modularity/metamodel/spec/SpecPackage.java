@@ -22,6 +22,8 @@ public class SpecPackage {
   public static final Resource Interaction = new Resource("8f0ac037-0511-11e9-87b8-094c52ae4c98");
   public static final Resource InteractiveBuildingBlock_interacts = new Resource("972c0c35-0511-11e9-87b8-094c52ae4c98");
   public static final Resource Dependency_allowRecursiveDependency = new Resource("ba17a990-0531-11e9-95f7-3b0c47908608");
+  public static final Resource BuildingBlockAware = new Resource("671019b3-299b-11eb-8baa-95d9107006e8");
+  public static final Resource BuildingBlockAware_buildingBlock = new Resource("6a79aa5f-299b-11eb-8baa-95d9107006e8");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +44,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,oz3tFcBvsVwOOqJQlVt+ICAjGww=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,yNbXrtLvDlYG9I0fcuUcHI5kGVM=] */

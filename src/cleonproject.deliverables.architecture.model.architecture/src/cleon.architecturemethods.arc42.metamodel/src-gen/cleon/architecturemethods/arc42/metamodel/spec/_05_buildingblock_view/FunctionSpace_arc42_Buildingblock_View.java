@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox;
+
 /* End Protected Region   [[f8000224-437a-11e6-a9d7-97cf4f7c398b,imports]] */
 
 public class FunctionSpace_arc42_Buildingblock_View {
@@ -109,16 +110,15 @@ public class FunctionSpace_arc42_Buildingblock_View {
     @Override
     public java.lang.Integer GetLevelNr(final cleon.architecturemethods.arc42.metamodel.spec._05_buildingblock_view.javamodel.IWhitebox whitebox) {
       /* Begin Protected Region [[e945b5c3-d187-11e8-b18f-df1540bb7a5c]] */
-      if( whitebox == null) {
+      if (whitebox == null) {
       	return null;
       }
 
       final IWhiteboxFunctions whiteboxFunctions = whitebox.extension(IWhiteboxFunctions.class);
       final IWhitebox parent = whiteboxFunctions.ParentWhiteBox();
-      if( parent == null) {
+      if (parent == null) {
       	return 1;
-      }
-      else {
+      } else {
       	final IWhiteboxFunctions parentWhiteboxFunctions = parent.extension(IWhiteboxFunctions.class);
       	return parentWhiteboxFunctions.GetLevelNr() + 1;
       }

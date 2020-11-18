@@ -20,6 +20,16 @@ public class _13_product_viewPackage {
   public static final Resource ProductVariantOptions_amount = new Resource("5dcf0979-2ad9-11e9-b83f-8be423c00623");
   public static final Resource ProductVariantOptions_productOptions = new Resource("75bcae0c-2ad9-11e9-b83f-8be423c00623");
   public static final Resource Product_usedIn = new Resource("7e0b94e4-299b-11eb-8baa-95d9107006e8");
+  public static final Resource License = new Resource("2e78c313-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType = new Resource("3ed0e011-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Free__F_Software__F_and__F_Open__F_Source = new Resource("47cb26fe-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Core__S_Based = new Resource("4e38d066-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Socket__S_based = new Resource("54c8ceeb-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Concurrent__S_User = new Resource("5c54dfb2-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Named__S_User = new Resource("82886225-29a9-11eb-8baa-95d9107006e8");
+  public static final Resource LicenseType_Machine__S_based = new Resource("9a60b3f7-29aa-11eb-8baa-95d9107006e8");
+  public static final Resource ProductVariant_license = new Resource("de0b1781-29aa-11eb-8baa-95d9107006e8");
+  public static final Resource License_licenseType = new Resource("e4301f1a-29aa-11eb-8baa-95d9107006e8");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +50,4 @@ public class _13_product_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,zWBs689Iq1rRydBrx2tJ8PgXRec=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,PpTpAmznW6NP18MQd4kCpwo4UR8=] */

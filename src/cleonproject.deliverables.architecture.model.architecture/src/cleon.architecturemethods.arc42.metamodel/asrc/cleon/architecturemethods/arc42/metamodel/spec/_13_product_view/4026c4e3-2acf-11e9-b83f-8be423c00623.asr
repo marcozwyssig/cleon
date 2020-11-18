@@ -31,6 +31,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="4ea3e6de-29ac-11eb-8baa-95d9107006e8" type="resource" guid="de0b1781-29aa-11eb-8baa-95d9107006e8" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="f4af26ee-2ad9-11e9-b83f-8be423c00623" type="resource" guid="f4aed8ca-2ad9-11e9-b83f-8be423c00623">
@@ -222,6 +223,25 @@
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="446c03c3-2ad9-11e9-b83f-8be423c00623" type="resource" guid="400c0491-2ad9-11e9-b83f-8be423c00623" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4ea3e6de-29ac-11eb-8baa-95d9107006e8">
+      <resource guid="de0b1781-29aa-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de0b3e93-29aa-11eb-8baa-95d9107006e8" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="de0b65a4-29aa-11eb-8baa-95d9107006e8" type="literal">license</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="de0c01e6-29aa-11eb-8baa-95d9107006e8" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="de0c01e7-29aa-11eb-8baa-95d9107006e8" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="de0c01e8-29aa-11eb-8baa-95d9107006e8" type="resource" guid="2e78c313-29a9-11eb-8baa-95d9107006e8" />
         </predicate>
       </resource>
     </object>

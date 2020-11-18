@@ -12,6 +12,8 @@ public interface IProductVariant extends ch.actifsource.core.javamodel.INamedRes
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.IProductVariantOptions> selectProductVariantOptions();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._13_product_view.javamodel.ILicense selectLicense();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,nF5mS8gzrMzT8Hsynt6aocX7Gno=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,fUHyHABZe7Y8+yjBl0s3i2pEGOQ=] */

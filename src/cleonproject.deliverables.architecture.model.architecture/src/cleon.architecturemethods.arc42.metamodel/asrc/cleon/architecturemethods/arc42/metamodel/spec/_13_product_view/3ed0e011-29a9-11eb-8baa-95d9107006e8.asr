@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="47cb2701-29a9-11eb-8baa-95d9107006e8" type="resource" guid="47cb26fe-29a9-11eb-8baa-95d9107006e8" />
+    <resource statement-guid="4e38d069-29a9-11eb-8baa-95d9107006e8" type="resource" guid="4e38d066-29a9-11eb-8baa-95d9107006e8" />
+    <resource statement-guid="54c8ceee-29a9-11eb-8baa-95d9107006e8" type="resource" guid="54c8ceeb-29a9-11eb-8baa-95d9107006e8" />
+    <resource statement-guid="9a60b3fa-29aa-11eb-8baa-95d9107006e8" type="resource" guid="9a60b3f7-29aa-11eb-8baa-95d9107006e8" />
+    <resource statement-guid="5c54dfb5-29a9-11eb-8baa-95d9107006e8" type="resource" guid="5c54dfb2-29a9-11eb-8baa-95d9107006e8" />
+    <resource statement-guid="82892578-29a9-11eb-8baa-95d9107006e8" type="resource" guid="82886225-29a9-11eb-8baa-95d9107006e8" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ed0e013-29a9-11eb-8baa-95d9107006e8" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ed0e01c-29a9-11eb-8baa-95d9107006e8" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+    <object statement-guid="b00c9b3a-29a9-11eb-8baa-95d9107006e8" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3ed0e01b-29a9-11eb-8baa-95d9107006e8" type="literal">LicenseType</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="47cb2701-29a9-11eb-8baa-95d9107006e8">
+      <resource guid="47cb26fe-29a9-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="47cb2700-29a9-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="49a8c0f5-29a9-11eb-8baa-95d9107006e8" type="literal">Free Software and Open Source</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="edefce37-29a9-11eb-8baa-95d9107006e8" type="literal">Bei freier und Open-Source-Software werden einfache Nutzungsrechte pauschal an jedermann eingeräumt. Die Zustimmung des Lizenznehmers wird üblicherweise dadurch signalisiert, dass er die durch die freie Lizenz gewährten Rechte wahrnimmt, die über allgemein gewährte Rechte, wie das Recht auf Zitat, hinausgehen. Insofern der Rechteinhaber keine Gegenleistungen fordert, kann die Lizenz kurz und simpel ausfallen. Ein bekanntes Beispiel lautet: „Do what the fuck you want to.“ – ein wenig formlos, doch juristisch gültig. Nach Ansicht des GNU-Projektes ist jedoch bei solchen Lizenzen problematisch, dass veränderte Versionen der Computerprogramme nach geltendem Recht nicht automatisch ebenso freigiebig an jedermann lizenziert sind.
+
+Die GNU General Public License versucht daher, die Freiheiten für den Nutzer zu bewahren und verlangt eine „Gegenleistung“ für die eingeräumten Rechte:
+
+Dass das Programm nicht allein in seiner in Maschinensprache übersetzten Form, auch Binary genannt, sondern nur zusammen mit einer für Menschen verständlichen Version, dem Quellcode weitergegeben wird.
+Dass veränderte Versionen nur dann verbreitet werden dürfen, wenn sie ebenfalls unter die GPL gestellt werden. Wer sich nicht daran hält, verliert seine Rechte wieder.
+Diese Verfahrensweise wird Copyleft genannt.
+
+Problematisch beim Copyleft in dieser Form ist, dass zwei verschiedene Copyleft-Lizenzen möglicherweise miteinander inkompatibel sein können. Das heißt, es können zwei Werke unter verschiedenen Copyleft-Lizenzen nicht zu einem einzigen kombiniert werden. Insbesondere die GPL ist inkompatibel zu vielen anderen Software-Lizenzen, da sie ein starkes Copyleft besitzt. Auch für andere freie Inhalte, wie zum Beispiel Literatur (GFDL) und freie Musik (GPL-SFA) lauert hier die Gefahr der Inkompatibilität. Die Creative-Commons-Lizenzen versuchen, diesem Problem entgegenzuwirken.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4e38d069-29a9-11eb-8baa-95d9107006e8">
+      <resource guid="4e38d066-29a9-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4e38d068-29a9-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5027f66f-29a9-11eb-8baa-95d9107006e8" type="literal">Core-Based</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="54c8ceee-29a9-11eb-8baa-95d9107006e8">
+      <resource guid="54c8ceeb-29a9-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="54c8ceed-29a9-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="554aa821-29a9-11eb-8baa-95d9107006e8" type="literal">Socket-based</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9a60b3fa-29aa-11eb-8baa-95d9107006e8">
+      <resource guid="9a60b3f7-29aa-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9a60b3f9-29aa-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9ad2618b-29aa-11eb-8baa-95d9107006e8" type="literal">Machine-based</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="5c54dfb5-29a9-11eb-8baa-95d9107006e8">
+      <resource guid="5c54dfb2-29a9-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5c54dfb4-29a9-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5d6b5928-29a9-11eb-8baa-95d9107006e8" type="literal">Concurrent-User</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="b693bf77-29a9-11eb-8baa-95d9107006e8" type="literal">Das Concurrent-User-Lizenzmodell beschreibt in der Informationstechnologie eine Lizenzierungsform, bei der die maximale Anzahl der Nutzer festgelegt wird, die gleichzeitig auf eine Ressource zugreifen dürfen. Eine Ressource ist zum Beispiel eine Softwareanwendung, ein Batchprozessor, eine Datei oder ein Arbeitsplatz. Die Concurrent-User-Lizenzierung unterscheidet sich damit von dem Named-User-Lizenzmodell, bei dem die Anzahl der Nutzer ohne Zeitbezug festgelegt wird. Die Software selbst kann beim Concurrent-User-Lizenzmodell auf beliebig vielen Rechnern installiert sein. Ein zentraler Server verwaltet dabei die Lizenzen, die auch Floating-Lizenzen oder Netzwerklizenzen genannt werden. Der Server registriert die Anzahl der aktuell vergebenen Lizenzen und gewährt jedem prinzipiell berechtigten Benutzer das Recht zur Benutzung. Sind alle Lizenzen vergeben, muss ein zusätzlicher konkurrierender Benutzer warten, bis ein anderer Benutzer seine Session beendet und somit wieder eine Lizenz zur Verfügung steht.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="82892578-29a9-11eb-8baa-95d9107006e8">
+      <resource guid="82886225-29a9-11eb-8baa-95d9107006e8">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="82892577-29a9-11eb-8baa-95d9107006e8" type="resource" guid="3ed0e011-29a9-11eb-8baa-95d9107006e8" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="830a8a79-29a9-11eb-8baa-95d9107006e8" type="literal">Named-User</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="d1846b1b-29a9-11eb-8baa-95d9107006e8" type="literal">Das Named-User-Lizenzmodell beschreibt in der Informationstechnologie eine Lizenzierungsform, bei der die maximale Anzahl der Nutzer festgelegt wird, die mit einem registrierten, namentlich eingetragenen Zugang auf eine Ressource zugreifen dürfen. Eine Ressource ist zum Beispiel eine Softwareanwendung, ein Batchprozessor, eine Datei oder ein Arbeitsplatz. Die Named-User-Lizenzierung unterscheidet sich damit von dem Concurrent-User-Lizenzmodell, bei dem die Anzahl der zeitgleich zugreifenden Nutzer festgelegt wird.
+
+Während also beispielsweise eine Software mit einer Lizenz für fünf Concurrent-User auch von mehr als fünf Nutzern genutzt werden darf, können dabei zu jedem Zeitpunkt aber nur maximal fünf Nutzer darauf zugreifen. Eine Software mit einer Lizenz für fünf Named-User hingegen kann ausschließlich von maximal fünf registrierten, namentlich eingetragenen Nutzern verwendet werden.</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

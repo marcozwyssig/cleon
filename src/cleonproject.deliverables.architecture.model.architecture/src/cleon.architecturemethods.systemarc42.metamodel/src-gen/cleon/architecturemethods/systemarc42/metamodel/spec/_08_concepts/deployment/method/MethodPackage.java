@@ -21,6 +21,11 @@ public class MethodPackage {
   public static final Resource DeploymentMethodConcept_deploymentMethods = new Resource("b0f59302-fe3f-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodConcept_deploymentForSystems = new Resource("23787ea3-fe41-11ea-892b-df291bae18c5");
   public static final Resource DeploymentMethodConcept = new Resource("64eef162-fe49-11ea-892b-df291bae18c5");
+  public static final Resource DeploymentMethodOption = new Resource("511be6c7-2a82-11eb-8270-7374516c67b8");
+  public static final Resource DeploymentMethod_deploymentMethodOptions = new Resource("5a6055eb-2a82-11eb-8270-7374516c67b8");
+  public static final Resource DeploymentMethodForDependentSystemConfigurationOption = new Resource("be69779b-2a82-11eb-8270-7374516c67b8");
+  public static final Resource DeploymentMethodForDependentSystemConfiguration_deploymentMethodForDependentSystemConfigurationOption = new Resource("cc4d119c-2a82-11eb-8270-7374516c67b8");
+  public static final Resource DeploymentMethodForDependentSystemConfigurationOption_deploymentMethodOption = new Resource("ebdf3111-2a82-11eb-8270-7374516c67b8");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +46,4 @@ public class MethodPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method,hBEFQb4lw9LrbhMfNrZ8NHkKtqo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method,KODxcaEglRz7usnqOqIkS/ybQzU=] */

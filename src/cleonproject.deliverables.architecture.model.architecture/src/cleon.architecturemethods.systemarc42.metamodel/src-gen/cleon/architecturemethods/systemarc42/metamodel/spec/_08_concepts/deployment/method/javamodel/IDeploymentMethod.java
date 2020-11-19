@@ -10,6 +10,8 @@ public interface IDeploymentMethod extends ch.actifsource.core.javamodel.IResour
   
   public java.util.List<java.lang.String> selectStandardDescription();
   
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodOption> selectDeploymentMethodOptions();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187258-fe3f-11ea-892b-df291bae18c5,n27fu6CVp7klZaB+y/JIMFAkEhM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f187258-fe3f-11ea-892b-df291bae18c5,L4BgioTgfrHCZIk9y051l09Gt/w=] */

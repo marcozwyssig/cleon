@@ -124,19 +124,19 @@ public class access__T_yaml {
   		if (protocol.equals(WwW)) {
   			if (useProtocol) {
   				entry = String.format("https://%s: %s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
   			} else {
   				entry = String.format("https://%s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()));
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
   			}
 
   		} else {
   			if (useProtocol) {
   				entry = String.format("%s: %s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()), protocol);
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
   			} else {
   				entry = String.format("%s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.AliasOrSimpleName()));
+  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
   			}
   		}
 

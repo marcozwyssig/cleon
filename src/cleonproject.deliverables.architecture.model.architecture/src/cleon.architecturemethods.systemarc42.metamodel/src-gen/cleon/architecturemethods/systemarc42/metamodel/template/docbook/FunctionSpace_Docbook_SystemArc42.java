@@ -299,10 +299,11 @@ public class FunctionSpace_Docbook_SystemArc42 {
     public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
       /* Begin Protected Region [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
       int count = 0;
-      for(final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities().values()) {
+      for (final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities()
+      		.values()) {
       	count += actorResponsibility.selectRolesForSystemComponents().size();
       }
-      return count;  
+      return count;
       /* End Protected Region   [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
     }
 
@@ -751,8 +752,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
     @Override
     public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
       /* Begin Protected Region [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
-      if( realmConfigurationUsage.selectDescriptions().isEmpty()) {
-      	return  String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());    	  
+      if (realmConfigurationUsage.selectDescriptions().isEmpty()) {
+      	return String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());
       }
       return String.join("\n", realmConfigurationUsage.selectDescriptions());
       /* End Protected Region   [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
@@ -843,10 +844,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
     @Override
     public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel.IDeploymentMethodForDependentSystemConfiguration deploymentMethodForDependentSystemConfiguration) {
       /* Begin Protected Region [[15864ee0-fe55-11ea-abcb-bfad67a56d79]] */
-      if( deploymentMethodForDependentSystemConfiguration.selectDescriptions().isEmpty()) {
-      	return  String.join("\n", deploymentMethodForDependentSystemConfiguration.selectUsedDeploymentMethod().selectStandardDescription());    	  
-      }
-      return String.join("\n", deploymentMethodForDependentSystemConfiguration.selectDescriptions());
+      return String.join("\n", deploymentMethodForDependentSystemConfiguration.selectUsedDeploymentMethod()
+      		.selectStandardDescription());
       /* End Protected Region   [[15864ee0-fe55-11ea-abcb-bfad67a56d79]] */
     }
 
@@ -960,8 +959,8 @@ public class FunctionSpace_Docbook_SystemArc42 {
     @Override
     public java.lang.String Text(final cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.javamodel.IAvailabilityBuildingBlock availabilityBuildingBlock) {
       /* Begin Protected Region [[ee33f9b5-00e0-11eb-89a7-8344c130228c]] */
-      if( availabilityBuildingBlock.selectDescriptions().isEmpty()) {
-      	return  String.join("\n", availabilityBuildingBlock.selectAvailability().selectStandardDescription());    	  
+      if (availabilityBuildingBlock.selectDescriptions().isEmpty()) {
+      	return String.join("\n", availabilityBuildingBlock.selectAvailability().selectStandardDescription());
       }
       return String.join("\n", availabilityBuildingBlock.selectDescriptions());
       /* End Protected Region   [[ee33f9b5-00e0-11eb-89a7-8344c130228c]] */

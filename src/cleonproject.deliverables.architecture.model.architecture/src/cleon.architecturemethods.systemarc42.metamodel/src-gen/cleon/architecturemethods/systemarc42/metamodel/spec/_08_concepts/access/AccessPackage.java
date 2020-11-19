@@ -37,6 +37,7 @@ public class AccessPackage {
   public static final Resource HostAccessMode_NoCluster = new Resource("4dc47b3f-2439-11eb-83b1-3d2a97975978");
   public static final Resource FunctionSpace_aE_Access_AccessConfiguration = new Resource("292bd4f8-243f-11eb-83b1-3d2a97975978");
   public static final Resource FunctionSpace_aE_Access_AccessConfigurationWeb = new Resource("542bacc1-243f-11eb-83b1-3d2a97975978");
+  public static final Resource AccessConcept_chapters = new Resource("d440276f-2a4b-11eb-a7cf-63f6a343e85f");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +58,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,RA8oyyrFNqMvudOrnGPSHm+/890=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,89uLCJbgAb2TbyB1w6r/FDzLreM=] */

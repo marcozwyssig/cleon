@@ -72,6 +72,16 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
   }
     
   @Override
+  public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement selectRiskManagement() {
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement);
+  }
+
+  public Technical_Risks setRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement riskManagement) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement, riskManagement);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -89,8 +99,15 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static java.util.List<cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks> selectToMeRiskManagement(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement object) {
+    return _getToMeList(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks.javamodel.ITechnical_Risks.class, cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,ZRSsiOcRdI4L16+MwX2Ff2Stlyw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,ofL5EU1uDuHjZIOu8NRxxDwS8aQ=] */

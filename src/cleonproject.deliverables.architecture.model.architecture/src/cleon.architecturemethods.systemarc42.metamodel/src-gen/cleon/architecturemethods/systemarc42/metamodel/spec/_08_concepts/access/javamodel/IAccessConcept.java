@@ -8,7 +8,7 @@ public interface IAccessConcept extends cleon.common.doc.metamodel.spec.chapter.
   
   // relations
   
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectChapters();
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectCustomChapters();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType> selectAccessCommunicationType();
   
@@ -16,4 +16,4 @@ public interface IAccessConcept extends cleon.common.doc.metamodel.spec.chapter.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d821c95b-19c0-11eb-8585-65084a06c07f,1f+jSp7JokzIJEtDsHWSw4kZFjE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d821c95b-19c0-11eb-8585-65084a06c07f,EzzVzS4kzi7pl3XrP3hbn2gXryY=] */

@@ -81,11 +81,11 @@ public class access__T_yaml {
   		final StringBuffer stringBuffer = new StringBuffer();
   		for (final String siteName : siteTable.keySet().stream().sorted().collect(Collectors.toList())) {
   			stringBuffer.append(String.format("- name: %s\n", siteName));
-  			stringBuffer.append(String.format("- children:\n"));
+  			stringBuffer.append(String.format("  children:\n"));
   			final HashMap<String, List<String>> pathTable = siteTable.get(siteName);
   			for (final String systemName : pathTable.keySet().stream().sorted().collect(Collectors.toList())) {
   				stringBuffer.append(String.format("  - name: %s\n", systemName));
-  				stringBuffer.append(String.format("  - children:\n"));
+  				stringBuffer.append(String.format("    children:\n"));
   				for (final String entry : pathTable.get(systemName)) {
   					stringBuffer.append(String.format("%s\n", accessFromFunctions.RenderFirefoxEntry(entry)));
   				}

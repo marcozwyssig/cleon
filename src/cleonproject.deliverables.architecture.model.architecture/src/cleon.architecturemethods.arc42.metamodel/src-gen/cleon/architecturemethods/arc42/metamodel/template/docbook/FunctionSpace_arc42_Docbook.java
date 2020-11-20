@@ -636,6 +636,31 @@ public class FunctionSpace_arc42_Docbook {
 
   }
 
+  public static interface ITechnical_RisksFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("326312b7-2b4a-11eb-863c-b9f41a0a3f06")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ITechnical_RisksFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class Technical_RisksFunctionsImpl implements ITechnical_RisksFunctionsImpl {
+
+    public static final ITechnical_RisksFunctionsImpl INSTANCE = new Technical_RisksFunctionsImpl();
+
+    private Technical_RisksFunctionsImpl() {}
+
+  }
+  
+  public static class Technical_RisksFunctions {
+
+    private Technical_RisksFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,+NYx93GRDTGVSCWSOo8Dx5SqBgw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,de7c9bb2-d17f-11e8-b18f-df1540bb7a5c,i2L7zgQGn3TiU1qJNlOrHZ9maUU=] */

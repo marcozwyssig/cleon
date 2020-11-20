@@ -31,21 +31,12 @@ public class Impediments extends DynamicResource implements IImpediments {
   // attributes
   
   @Override
-  public java.util.List<java.lang.String> selectImgDir() {
-    return _getListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir);
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
     
-  public void setImgDir(java.util.List<java.lang.String> imgDir) {
-     _setListAttribute(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, imgDir);
-  }
-
-  @Override
-  public java.lang.Boolean selectWithToC() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC);
-  }
-    
-  public void setWithToC(java.lang.Boolean withToC) {
-     _setSingleAttribute(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, withToC);
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
   // relations
@@ -71,16 +62,6 @@ public class Impediments extends DynamicResource implements IImpediments {
   }
     
   @Override
-  public java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
-    return _getList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage);
-  }
-
-  public Impediments setDocumentLanguage(java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
-    _setList(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment> selectImpediments() {
     return _getList(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.ImpedimentsPackage.Impediments_impediments);
   }
@@ -91,22 +72,22 @@ public class Impediments extends DynamicResource implements IImpediments {
   }
     
   @Override
-  public cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties selectProperties() {
-    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties);
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public Impediments setProperties(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties properties) {
-    _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, properties);
+  public Impediments setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
     
   @Override
-  public cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle selectStyle() {
-    return _getSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style);
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
+    return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public Impediments setStyle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle style) {
-    _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, style);
+  public Impediments setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+    _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
@@ -124,14 +105,10 @@ public class Impediments extends DynamicResource implements IImpediments {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptList(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediment.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.ImpedimentsPackage.Impediments_impediments, visitor);
-    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
-    _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -142,4 +119,4 @@ public class Impediments extends DynamicResource implements IImpediments {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af7dac0a-3383-11e6-b251-57783f5929b3,tH8AA5Pc34NAjyadpmkNkakENSA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,af7dac0a-3383-11e6-b251-57783f5929b3,0ayzzpocgR7mLCBbv1+Yl85irc8=] */

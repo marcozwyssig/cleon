@@ -2,7 +2,7 @@ package cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskm
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IRisks extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IRisks extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("85df72cc-a7de-11e5-82dd-3b995d9c840c");
   
@@ -12,4 +12,4 @@ public interface IRisks extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,85df72cc-a7de-11e5-82dd-3b995d9c840c,uR7/ePb9hPfBibVVI0UkD+JELF8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,85df72cc-a7de-11e5-82dd-3b995d9c840c,s5Z7s6LeFmiQhIUWLbbA0IySoqg=] */

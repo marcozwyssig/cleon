@@ -31,6 +31,15 @@ public class Steering extends DynamicResource implements ISteering {
   // attributes
   
   @Override
+  public java.util.List<java.lang.String> selectImgDir() {
+    return _getListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir);
+  }
+    
+  public void setImgDir(java.util.List<java.lang.String> imgDir) {
+     _setListAttribute(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, imgDir);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -39,8 +48,27 @@ public class Steering extends DynamicResource implements ISteering {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
   }
 
+  @Override
+  public java.lang.Boolean selectWithToC() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC);
+  }
+    
+  public void setWithToC(java.lang.Boolean withToC) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, withToC);
+  }
+
   // relations
   
+  @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
+    return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
+  }
+
+  public Steering setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+    _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
+    return this;
+  }
+    
   @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.javamodel.IControlling selectControlling() {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.javamodel.IControlling.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_controlling);
@@ -48,6 +76,26 @@ public class Steering extends DynamicResource implements ISteering {
 
   public Steering setControlling(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.javamodel.IControlling controlling) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_controlling, controlling);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
+    return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
+  }
+
+  public Steering setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+    _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> selectDocumentLanguage() {
+    return _getList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage);
+  }
+
+  public Steering setDocumentLanguage(java.util.List<? extends cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage> documentLanguage) {
+    _setList(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, documentLanguage);
     return this;
   }
     
@@ -72,12 +120,32 @@ public class Steering extends DynamicResource implements ISteering {
   }
     
   @Override
-  public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRisknanagement selectRisks() {
-    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRisknanagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks);
+  public cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties selectProperties() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties);
   }
 
-  public Steering setRisks(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRisknanagement risks) {
+  public Steering setProperties(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties properties) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, properties);
+    return this;
+  }
+    
+  @Override
+  public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement selectRisks() {
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks);
+  }
+
+  public Steering setRisks(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement risks) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks, risks);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style);
+  }
+
+  public Steering setStyle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, style);
     return this;
   }
     
@@ -95,18 +163,23 @@ public class Steering extends DynamicResource implements ISteering {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_imgDir, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_withToC, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.controlling.javamodel.IControlling.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_controlling, visitor);
+    _acceptList(cleon.common.doc.metamodel.spec.documentlanguage.javamodel.IDocumentLanguage.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_documentLanguage, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.impediments.javamodel.IImpediments.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_impediments, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_planning, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRisknanagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.properties.javamodel.IProperties.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_properties, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks, visitor);
+    _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.javamodel.ISteering selectToMeRisks(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRisknanagement object) {
+  public static cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.javamodel.ISteering selectToMeRisks(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement object) {
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.javamodel.ISteering.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.ProjectsteeringPackage.Steering_risks, object.getResource());
   }
   
@@ -123,4 +196,4 @@ public class Steering extends DynamicResource implements ISteering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,IoI/Xk8rZDfi6qwv2/cpPqbOjYw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,08ac260a-bdf7-11e6-a3f0-c7681ee45a3f,v7lCgA2J6HiH+2bOWJ2isc1YUnE=] */

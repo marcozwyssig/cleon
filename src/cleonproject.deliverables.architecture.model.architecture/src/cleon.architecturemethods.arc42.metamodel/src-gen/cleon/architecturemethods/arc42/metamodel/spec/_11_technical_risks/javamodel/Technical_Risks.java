@@ -62,6 +62,16 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter selectNoChapters() {
+    return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
+  }
+
+  public Technical_Risks setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -97,7 +107,6 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -110,4 +119,4 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,ofL5EU1uDuHjZIOu8NRxxDwS8aQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,NX6sMKNHJJ6WFc292aMsEXJTYPM=] */

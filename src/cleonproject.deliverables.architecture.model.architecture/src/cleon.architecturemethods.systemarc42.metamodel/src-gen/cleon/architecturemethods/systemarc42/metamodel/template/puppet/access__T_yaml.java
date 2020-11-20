@@ -80,11 +80,14 @@ public class access__T_yaml {
 
   		final StringBuffer stringBuffer = new StringBuffer();
   		for (final String siteName : siteTable.keySet().stream().sorted().collect(Collectors.toList())) {
+  			stringBuffer.append(String.format("- name: %s\n", siteName));
+  			stringBuffer.append(String.format("- children:\n"));
   			final HashMap<String, List<String>> pathTable = siteTable.get(siteName);
   			for (final String systemName : pathTable.keySet().stream().sorted().collect(Collectors.toList())) {
-  				final String folder = String.format("%s/%s", siteName, systemName);
+  				stringBuffer.append(String.format("  - name: %s\n", systemName));
+  				stringBuffer.append(String.format("  - children:\n"));
   				for (final String entry : pathTable.get(systemName)) {
-  					stringBuffer.append(accessFromFunctions.RenderFirefoxEntry(entry, folder) + "\n");
+  					stringBuffer.append(String.format("%s\n", accessFromFunctions.RenderFirefoxEntry(entry)));
   				}
   			}
   		}
@@ -196,7 +199,7 @@ public class access__T_yaml {
     public java.lang.String RenderTextFirefox(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src);
 
     @IDynamicResourceExtension.MethodId("26973923-2445-11eb-989b-5523e93a6c25")
-    public java.lang.String RenderFirefoxEntry(final java.lang.String entryName, final java.lang.String folderName);
+    public java.lang.String RenderFirefoxEntry(final java.lang.String entryName);
 
   }
   
@@ -294,4 +297,4 @@ public class access__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,UhEk/C9XcSgJjFE5+Leg8DJBgYU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,UGwjehv13cPVZFocdCUmLeLeBjY=] */

@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[416d5506-3252-11e6-ab4d-73a9260c8088,imports]] */
 
-public class FunctionSpace {
+public class FunctionSpace_Analysis {
 
   /* Begin Protected Region [[416d5506-3252-11e6-ab4d-73a9260c8088]] */
   
@@ -131,6 +131,156 @@ public class FunctionSpace {
 
   }
 
+  public static interface IActionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b9ea503c-2d95-11eb-9bd8-07f8fe211915")
+    public java.lang.String TypeName();
+
+  }
+  
+  public static interface IActionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActionFunctionsImpl implements IActionFunctionsImpl {
+
+    public static final IActionFunctionsImpl INSTANCE = new ActionFunctionsImpl();
+
+    private ActionFunctionsImpl() {}
+
+  }
+  
+  public static class ActionFunctions {
+
+    private ActionFunctions() {}
+
+  }
+
+  public static interface IActionAcceptanceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c97f1dc9-2d95-11eb-9bd8-07f8fe211915")
+    public java.lang.String TypeName();
+
+  }
+  
+  public static interface IActionAcceptanceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActionAcceptanceFunctionsImpl implements IActionAcceptanceFunctionsImpl {
+
+    public static final IActionAcceptanceFunctionsImpl INSTANCE = new ActionAcceptanceFunctionsImpl();
+
+    private ActionAcceptanceFunctionsImpl() {}
+
+  }
+  
+  public static class ActionAcceptanceFunctions {
+
+    private ActionAcceptanceFunctions() {}
+
+  }
+
+  public static interface IActionPreventionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("eaadd587-2d95-11eb-9bd8-07f8fe211915")
+    public java.lang.String TypeName();
+
+  }
+  
+  public static interface IActionPreventionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActionPreventionFunctionsImpl implements IActionPreventionFunctionsImpl {
+
+    public static final IActionPreventionFunctionsImpl INSTANCE = new ActionPreventionFunctionsImpl();
+
+    private ActionPreventionFunctionsImpl() {}
+
+  }
+  
+  public static class ActionPreventionFunctions {
+
+    private ActionPreventionFunctions() {}
+
+  }
+
+  public static interface IActionReductionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0759c545-2d96-11eb-9bd8-07f8fe211915")
+    public java.lang.String TypeName();
+
+  }
+  
+  public static interface IActionReductionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActionReductionFunctionsImpl implements IActionReductionFunctionsImpl {
+
+    public static final IActionReductionFunctionsImpl INSTANCE = new ActionReductionFunctionsImpl();
+
+    private ActionReductionFunctionsImpl() {}
+
+  }
+  
+  public static class ActionReductionFunctions {
+
+    private ActionReductionFunctions() {}
+
+  }
+
+  public static interface IImpactRateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("b5ea2f64-2d96-11eb-9bd8-07f8fe211915")
+    public java.lang.String PrettyId();
+
+  }
+  
+  public static interface IImpactRateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ImpactRateFunctionsImpl implements IImpactRateFunctionsImpl {
+
+    public static final IImpactRateFunctionsImpl INSTANCE = new ImpactRateFunctionsImpl();
+
+    private ImpactRateFunctionsImpl() {}
+
+  }
+  
+  public static class ImpactRateFunctions {
+
+    private ImpactRateFunctions() {}
+
+  }
+
+  public static interface IProbabilityOfOccurrenceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("bfd984f6-2d96-11eb-9bd8-07f8fe211915")
+    public java.lang.String PrettyId();
+
+  }
+  
+  public static interface IProbabilityOfOccurrenceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ProbabilityOfOccurrenceFunctionsImpl implements IProbabilityOfOccurrenceFunctionsImpl {
+
+    public static final IProbabilityOfOccurrenceFunctionsImpl INSTANCE = new ProbabilityOfOccurrenceFunctionsImpl();
+
+    private ProbabilityOfOccurrenceFunctionsImpl() {}
+
+  }
+  
+  public static class ProbabilityOfOccurrenceFunctions {
+
+    private ProbabilityOfOccurrenceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,416d5506-3252-11e6-ab4d-73a9260c8088,XfmhswYGtZmRz7OVlISGdB+SRBU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,416d5506-3252-11e6-ab4d-73a9260c8088,LEj2tattm2LVC5oqNF2jjKbLmU8=] */

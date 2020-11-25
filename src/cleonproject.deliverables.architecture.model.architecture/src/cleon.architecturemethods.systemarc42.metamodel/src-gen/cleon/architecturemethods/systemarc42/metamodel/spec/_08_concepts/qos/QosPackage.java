@@ -25,7 +25,7 @@ public class QosPackage {
   public static final Resource ServiceClass_CS7__F___S___F_Network__F_Control__F___N_Backbone__O___F_ = new Resource("48898e07-1d89-11e9-b601-db75aa6f89a4");
   public static final Resource QoSSystemConfigurationSource_serviceClass = new Resource("7019937d-1d89-11e9-b601-db75aa6f89a4");
   public static final Resource QoSSystemConfigurationSource = new Resource("fcc35d62-a0c3-11ea-8daa-afb4679c3497");
-  public static final Resource QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations = new Resource("115c30f0-a0c4-11ea-8daa-afb4679c3497");
+  public static final Resource QoSSystemConfigurationConcept_qoSSystemConfigurationDestination = new Resource("115c30f0-a0c4-11ea-8daa-afb4679c3497");
   public static final Resource QoSSystemConfigurationSource_source = new Resource("9cb345ae-a0c4-11ea-8daa-afb4679c3497");
   public static final Resource FunctionSpace_aE_QoS_QoSConcept = new Resource("06c0a3bb-a0c9-11ea-8daa-afb4679c3497");
   public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationConcept = new Resource("14c7cb65-a0c9-11ea-8daa-afb4679c3497");
@@ -49,4 +49,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,aKvMoHhH2LouaSRBYjH0VQIUpg0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,xZz82f2M+9299CrPRbWzd2JuCwk=] */

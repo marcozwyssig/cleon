@@ -92,12 +92,12 @@ public class QoSSystemConfigurationConcept extends DynamicResource implements IQ
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> selectQoSSystemConfigurationDestinations() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> selectQoSSystemConfigurationDestination() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestination);
   }
 
-  public QoSSystemConfigurationConcept setQoSSystemConfigurationDestinations(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> qoSSystemConfigurationDestinations) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations, qoSSystemConfigurationDestinations);
+  public QoSSystemConfigurationConcept setQoSSystemConfigurationDestination(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> qoSSystemConfigurationDestination) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestination, qoSSystemConfigurationDestination);
     return this;
   }
     
@@ -129,15 +129,15 @@ public class QoSSystemConfigurationConcept extends DynamicResource implements IQ
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConfigurationComponentConcept_conceptForSystemConfiguration, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestination, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept selectToMeQoSSystemConfigurationDestinations(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestinations, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept selectToMeQoSSystemConfigurationDestination(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationConcept_qoSSystemConfigurationDestination, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,39818d2e-1d88-11e9-b601-db75aa6f89a4,2RaKLvwkqbOo9idXPbxCYop/9B0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,39818d2e-1d88-11e9-b601-db75aa6f89a4,9UsO+fTZROkMXNrk5RdSCiOS6wk=] */

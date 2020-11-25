@@ -87,7 +87,7 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Integer SumQoS_Mean(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       /* Begin Protected Region [[1d205486-a0c9-11ea-8daa-afb4679c3497]] */
-    	return qoSSystemConfigurationConcept.selectQoSSystemConfigurationDestinations().values().stream().mapToInt( IQoSSystemConfigurationSource::selectEstimateMean_KBits ).sum();   
+    	return qoSSystemConfigurationConcept.selectQoSSystemConfigurationDestination().values().stream().mapToInt( IQoSSystemConfigurationSource::selectEstimateMean_KBits ).sum();   
       /* End Protected Region   [[1d205486-a0c9-11ea-8daa-afb4679c3497]] */
     }
 

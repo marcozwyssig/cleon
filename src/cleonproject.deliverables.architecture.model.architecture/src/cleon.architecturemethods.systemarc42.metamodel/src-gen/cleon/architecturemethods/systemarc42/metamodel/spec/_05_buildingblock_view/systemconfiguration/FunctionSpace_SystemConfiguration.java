@@ -853,6 +853,34 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
+  public static interface IMailRelaySystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("802807b0-c81b-11e9-ba65-a5b6bc4916e7")
+    public java.lang.String GetIncludePath();
+
+    @IDynamicResourceExtension.MethodId("802807b3-c81b-11e9-ba65-a5b6bc4916e7")
+    public java.lang.String GetStereotypeName();
+
+  }
+  
+  public static interface IMailRelaySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class MailRelaySystemConfigurationFunctionsImpl implements IMailRelaySystemConfigurationFunctionsImpl {
+
+    public static final IMailRelaySystemConfigurationFunctionsImpl INSTANCE = new MailRelaySystemConfigurationFunctionsImpl();
+
+    private MailRelaySystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class MailRelaySystemConfigurationFunctions {
+
+    private MailRelaySystemConfigurationFunctions() {}
+
+  }
+
   public static interface IDeviceSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("e61322cf-2abd-11e9-a3f8-336d9e792e17")
@@ -939,4 +967,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,gtdKSV2G/D4CVJFTwF68FZrT1vs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,IU6SVJ9fJzOwE9D93DBWJ3Dhk94=] */

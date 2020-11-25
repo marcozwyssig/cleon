@@ -56,6 +56,7 @@ public class SystemconfigurationPackage {
   public static final Resource Interface = new Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface_interfaceInSecuritySubZone = new Resource("0ab04b4e-b372-11e9-91da-d1f3b9a7fba4");
   public static final Resource Interface_providesService = new Resource("1c01bc62-b372-11e9-91da-d1f3b9a7fba4");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_MailRelaySystemConfiguration = new Resource("80279277-c81b-11e9-ba65-a5b6bc4916e7");
   public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   public static final Resource FunctionSpace_aE_SystemConfiguration_Interface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
   
@@ -78,4 +79,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,KkHO00Du7HBPLFrTIOG7CA+JwWk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,GI60ABboUBaLHMGFumIlXcX1mD4=] */

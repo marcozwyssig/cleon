@@ -461,7 +461,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IProxySystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IWebProxySystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("68b117ae-0ab7-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -471,21 +471,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IProxySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWebProxySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ProxySystemConfigurationFunctionsImpl implements IProxySystemConfigurationFunctionsImpl {
+  public static class WebProxySystemConfigurationFunctionsImpl implements IWebProxySystemConfigurationFunctionsImpl {
 
-    public static final IProxySystemConfigurationFunctionsImpl INSTANCE = new ProxySystemConfigurationFunctionsImpl();
+    public static final IWebProxySystemConfigurationFunctionsImpl INSTANCE = new WebProxySystemConfigurationFunctionsImpl();
 
-    private ProxySystemConfigurationFunctionsImpl() {}
+    private WebProxySystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class ProxySystemConfigurationFunctions {
+  public static class WebProxySystemConfigurationFunctions {
 
-    private ProxySystemConfigurationFunctions() {}
+    private WebProxySystemConfigurationFunctions() {}
 
   }
 
@@ -967,4 +967,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,IU6SVJ9fJzOwE9D93DBWJ3Dhk94=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,x7Ak0jUepfSp02+fXT9/fMRrtPk=] */

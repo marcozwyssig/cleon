@@ -8,10 +8,10 @@ public interface ISystemConfigurationAccessFrom extends cleon.common.doc.metamod
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access.javamodel.ITerminalServerSystemConfiguration selectSourceAccess();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access.javamodel.IAbstractRemoteAccessSystemConfiguraiton selectSourceAccess();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo> selectAccessTo();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,5rEVUAmNgTC/zUy99LPdTnrI8hg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,216f5973-19c1-11eb-8585-65084a06c07f,XUhnKeRltrQoZGixVBW0v5Yx7wE=] */

@@ -4,6 +4,7 @@ import ch.actifsource.core.Resource;
 
 public class ProxyPackage {
   
+  public static final Resource WebProxySystemConfiguration = new Resource("33b921a2-09fc-11e9-abef-3d869859c931");
   public static final Resource MailRelaySystemConfiguration = new Resource("08441628-c7f7-11e9-ba65-a5b6bc4916e7");
   
   /* Begin Protected Region [[user]] */
@@ -25,4 +26,4 @@ public class ProxyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.proxy,952QMx0UtHP8pn23k6qiREeg4/o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.proxy,Iw4SUUmsX8ZT7LQ2ocEe96nTa5Y=] */

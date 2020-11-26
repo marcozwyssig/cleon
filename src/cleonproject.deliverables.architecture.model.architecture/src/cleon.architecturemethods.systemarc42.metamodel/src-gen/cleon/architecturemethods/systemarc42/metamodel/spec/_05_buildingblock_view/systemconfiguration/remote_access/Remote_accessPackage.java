@@ -6,6 +6,7 @@ public class Remote_accessPackage {
   
   public static final Resource TerminalServerSystemConfiguration = new Resource("94069046-02cd-11e9-9e58-33d596257b14");
   public static final Resource PulseSecureApplianceSystemConfiguration = new Resource("67e55025-0a7a-11e9-a59d-d7a0c53e291c");
+  public static final Resource AbstractRemoteAccessSystemConfiguraiton = new Resource("cee7f458-2ff6-11eb-b17d-af74b7cf0bc4");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class Remote_accessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access,pLOXyXl08pTzyzc8UVV6nN221Gs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access,z9jWBu0WQDATHD6iEl5Xs6i7kqk=] */

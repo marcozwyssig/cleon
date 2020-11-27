@@ -31,6 +31,15 @@ public class Destination extends DynamicResource implements IDestination {
   // attributes
   
   @Override
+  public java.lang.String selectNoDescriptions() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.NoDescription_NoDescriptions);
+  }
+    
+  public void setNoDescriptions(java.lang.String noDescriptions) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.NoDescription_NoDescriptions, noDescriptions);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -92,6 +101,16 @@ public class Destination extends DynamicResource implements IDestination {
   }
     
   @Override
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph selectNoParagraphs() {
+    return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
+  }
+
+  public Destination setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+    _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> selectParagraphs() {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
@@ -125,11 +144,9 @@ public class Destination extends DynamicResource implements IDestination {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_destinationSubSecurityZone, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.Destination_destinationSystemConfiguration, visitor);
-    _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -144,4 +161,4 @@ public class Destination extends DynamicResource implements IDestination {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,yAxzw0iCWpy0WxfzMBoULHg70/A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,V8isr8MToluC1Za38mf75C8wTjw=] */

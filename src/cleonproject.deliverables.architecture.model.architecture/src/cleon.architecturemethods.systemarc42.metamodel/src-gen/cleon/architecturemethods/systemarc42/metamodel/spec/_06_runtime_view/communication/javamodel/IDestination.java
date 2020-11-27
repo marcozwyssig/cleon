@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.co
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDestination extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters {
+public interface IDestination extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, ch.actifsource.core.javamodel.IDecorator, cleon.common.doc.metamodel.spec.chapter.javamodel.INoChapters, cleon.common.doc.metamodel.spec.chapter.javamodel.INoParagraph, cleon.common.resources.metamodel.spec.descriptions.javamodel.INoDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("54bec968-877a-11e9-a61b-279ebde48b48");
   
@@ -14,4 +14,4 @@ public interface IDestination extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,AzeUedrUA0dBgLwlrU6YN54hQ24=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,54bec968-877a-11e9-a61b-279ebde48b48,X7eKpzQRqSwruyDAoHhUNGY7ZjM=] */

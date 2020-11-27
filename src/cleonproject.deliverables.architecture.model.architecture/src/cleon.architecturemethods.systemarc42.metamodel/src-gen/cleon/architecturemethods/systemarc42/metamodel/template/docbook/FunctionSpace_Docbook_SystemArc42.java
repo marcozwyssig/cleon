@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorResponsibility;
+import java.util.stream.Collectors;
 /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
 
 public class FunctionSpace_Docbook_SystemArc42 {
@@ -1028,6 +1029,45 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface ISourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9eb54937-30a5-11eb-9149-f1e36a7322e5")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyWithDescription();
+
+  }
+  
+  public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("9eb54937-30a5-11eb-9149-f1e36a7322e5")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyWithDescription(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
+
+  }
+  
+  public static class SourceFunctionsImpl implements ISourceFunctionsImpl {
+
+    public static final ISourceFunctionsImpl INSTANCE = new SourceFunctionsImpl();
+
+    private SourceFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyWithDescription(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
+      /* Begin Protected Region [[9eb54937-30a5-11eb-9149-f1e36a7322e5]] */
+    	return sourceList.stream().filter( x -> x.selectDescriptions().isEmpty() == false).collect(Collectors.toList());
+      /* End Protected Region   [[9eb54937-30a5-11eb-9149-f1e36a7322e5]] */
+    }
+
+  }
+  
+  public static class SourceFunctions {
+
+    private SourceFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyWithDescription(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
+      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).OnlyWithDescription(sourceList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,28TyC8Hw9rX27zntjTWkxB1FX2c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,D7youcacl7iiztI/0m4GSLwXWlY=] */

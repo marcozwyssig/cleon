@@ -103,6 +103,34 @@ public class FunctionSpace_QoS {
 
   }
 
+  public static interface IQoSSystemConfigurationSourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0824a30c-308e-11eb-9149-f1e36a7322e5")
+    public java.lang.Integer DestinationVLAN();
+
+    @IDynamicResourceExtension.MethodId("f825adb4-308e-11eb-9149-f1e36a7322e5")
+    public java.lang.String SourceVLAN();
+
+  }
+  
+  public static interface IQoSSystemConfigurationSourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QoSSystemConfigurationSourceFunctionsImpl implements IQoSSystemConfigurationSourceFunctionsImpl {
+
+    public static final IQoSSystemConfigurationSourceFunctionsImpl INSTANCE = new QoSSystemConfigurationSourceFunctionsImpl();
+
+    private QoSSystemConfigurationSourceFunctionsImpl() {}
+
+  }
+  
+  public static class QoSSystemConfigurationSourceFunctions {
+
+    private QoSSystemConfigurationSourceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,BO7W0I4yQYdC4cJBdAyOb0Fkp88=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,jmqw/6hisFvXzTTh6cYR8Am0sC4=] */

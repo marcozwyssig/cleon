@@ -29,6 +29,7 @@ public class QosPackage {
   public static final Resource QoSSystemConfigurationSource_source = new Resource("9cb345ae-a0c4-11ea-8daa-afb4679c3497");
   public static final Resource FunctionSpace_aE_QoS_QoSConcept = new Resource("06c0a3bb-a0c9-11ea-8daa-afb4679c3497");
   public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationConcept = new Resource("14c7cb65-a0c9-11ea-8daa-afb4679c3497");
+  public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationSource = new Resource("1a46aad0-308e-11eb-9149-f1e36a7322e5");
   
   /* Begin Protected Region [[user]] */
   
@@ -49,4 +50,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,xZz82f2M+9299CrPRbWzd2JuCwk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,cB5qNNN7RLIxMWArdsxU//iq6aM=] */

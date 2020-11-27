@@ -232,6 +232,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("21fa0b77-1eb9-11eb-9eef-0dadb2b460da")
     public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration);
 
+    @IDynamicResourceExtension.MethodId("a67840f7-308e-11eb-9149-f1e36a7322e5")
+    public java.lang.String SourceVLAN();
+
   }
   
   public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -830,4 +833,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,4X8u/FcMjCu4LiX800NxSn4A9e8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,TdVunefIc5BllRIwSGAo0GL57XU=] */

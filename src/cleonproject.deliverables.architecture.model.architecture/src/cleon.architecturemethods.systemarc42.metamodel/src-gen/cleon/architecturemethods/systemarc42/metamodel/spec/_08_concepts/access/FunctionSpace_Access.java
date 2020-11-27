@@ -78,6 +78,12 @@ public class FunctionSpace_Access {
     @IDynamicResourceExtension.MethodId("2f177739-242c-11eb-83b1-3d2a97975978")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllCommunicationServicesFlatten();
 
+    @IDynamicResourceExtension.MethodId("c39590a2-3009-11eb-b17d-af74b7cf0bc4")
+    public java.lang.Integer DestinationVLAN();
+
+    @IDynamicResourceExtension.MethodId("dded61bf-300a-11eb-b17d-af74b7cf0bc4")
+    public java.lang.String SourceVLAN();
+
   }
   
   public static interface ISystemConfigurationAccessToFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -205,4 +211,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,b0gfp26uQR08MQaErve3xnXazIs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,ulopoMPtS82sakzCqcF7rMdddTs=] */

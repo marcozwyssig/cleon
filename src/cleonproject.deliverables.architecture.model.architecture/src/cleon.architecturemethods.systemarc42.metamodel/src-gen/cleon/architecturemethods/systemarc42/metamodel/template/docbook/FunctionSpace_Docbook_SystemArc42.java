@@ -1003,6 +1003,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface ISystemConfigurationAccessFromFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("04e4b0b0-3008-11eb-b17d-af74b7cf0bc4")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ISystemConfigurationAccessFromFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemConfigurationAccessFromFunctionsImpl implements ISystemConfigurationAccessFromFunctionsImpl {
+
+    public static final ISystemConfigurationAccessFromFunctionsImpl INSTANCE = new SystemConfigurationAccessFromFunctionsImpl();
+
+    private SystemConfigurationAccessFromFunctionsImpl() {}
+
+  }
+  
+  public static class SystemConfigurationAccessFromFunctions {
+
+    private SystemConfigurationAccessFromFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,Bz5kjpuknVL2LLtwZ3eM9tiaMUM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,28TyC8Hw9rX27zntjTWkxB1FX2c=] */

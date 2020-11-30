@@ -209,6 +209,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("4c54396f-c784-11ea-b0b6-e5df79e86bc2")
     public java.lang.String AllHostGroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
+    @IDynamicResourceExtension.MethodId("a01bd4a6-332f-11eb-bba8-618171a64c64")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration DependsToSystemConfiguration();
+
   }
   
   public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -337,4 +340,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,RGny4G+js8JYPyomhRLGxLvGoTg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,8c/86Z6qF5IweMz/9DEoBjMPFhc=] */

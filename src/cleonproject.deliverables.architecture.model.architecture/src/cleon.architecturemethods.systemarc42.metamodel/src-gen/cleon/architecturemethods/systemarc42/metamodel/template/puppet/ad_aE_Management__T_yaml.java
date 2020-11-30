@@ -10,6 +10,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[cfa40d24-5180-11ea-a946-13c393300b57,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.ActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 
@@ -48,8 +50,15 @@ public class ad_aE_Management__T_yaml {
       final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions abstractHostFunctions = abstractHost
       		.extension(
       				cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions.class);
+      
+      ISystemConfigurationFunctions configurationFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);
+      ISystemConfiguration parentSystemConfiguration = configurationFunctions.DependsToSystemConfiguration();
+      if( parentSystemConfiguration == null ) {
+    	  return null;
+      }
+      
       final List<IActivitySystemConfiguration> activitySystemConfigurations = ActivitySystemConfiguration
-      		.selectToMeActivityForSystemConfiguration(abstractHost.selectInstanceOf());
+      		.selectToMeActivityForSystemConfiguration(parentSystemConfiguration);
       for (final IActivitySystemConfiguration activitySystemConfiguration : activitySystemConfigurations) {
       	final IAbstractGroupFunctions abstractGroupFunctions = activitySystemConfiguration
       			.extension(IAbstractGroupFunctions.class);

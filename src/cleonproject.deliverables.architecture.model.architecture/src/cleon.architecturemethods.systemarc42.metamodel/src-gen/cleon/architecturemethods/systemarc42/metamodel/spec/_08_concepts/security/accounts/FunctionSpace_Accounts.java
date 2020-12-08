@@ -18,81 +18,81 @@ public class FunctionSpace_Accounts {
   /* End Protected Region   [[96deff1f-2830-11eb-a351-0f02534982d8]] */
 
 
-  public static interface IAccountFunctions extends IDynamicResourceExtension {
+  public static interface IServiceAccountFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f29a613-2830-11eb-a351-0f02534982d8")
     public java.lang.String AccountName();
 
   }
   
-  public static interface IAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class AccountFunctionsImpl implements IAccountFunctionsImpl {
+  public static class ServiceAccountFunctionsImpl implements IServiceAccountFunctionsImpl {
 
-    public static final IAccountFunctionsImpl INSTANCE = new AccountFunctionsImpl();
+    public static final IServiceAccountFunctionsImpl INSTANCE = new ServiceAccountFunctionsImpl();
 
-    private AccountFunctionsImpl() {}
+    private ServiceAccountFunctionsImpl() {}
 
   }
   
-  public static class AccountFunctions {
+  public static class ServiceAccountFunctions {
 
-    private AccountFunctions() {}
+    private ServiceAccountFunctions() {}
 
   }
 
-  public static interface IgMSA_AccountFunctions extends IDynamicResourceExtension {
+  public static interface IgMSA_ServiceAccountFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d4e3c4df-2830-11eb-a351-0f02534982d8")
     public java.lang.String AccountName();
 
   }
   
-  public static interface IgMSA_AccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IgMSA_ServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class gMSA_AccountFunctionsImpl implements IgMSA_AccountFunctionsImpl {
+  public static class gMSA_ServiceAccountFunctionsImpl implements IgMSA_ServiceAccountFunctionsImpl {
 
-    public static final IgMSA_AccountFunctionsImpl INSTANCE = new gMSA_AccountFunctionsImpl();
+    public static final IgMSA_ServiceAccountFunctionsImpl INSTANCE = new gMSA_ServiceAccountFunctionsImpl();
 
-    private gMSA_AccountFunctionsImpl() {}
+    private gMSA_ServiceAccountFunctionsImpl() {}
 
   }
   
-  public static class gMSA_AccountFunctions {
+  public static class gMSA_ServiceAccountFunctions {
 
-    private gMSA_AccountFunctions() {}
+    private gMSA_ServiceAccountFunctions() {}
 
   }
 
-  public static interface IServiceAccountSystemFunctions extends IDynamicResourceExtension {
+  public static interface IServiceAccountEnvironmentSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("061362f5-3951-11eb-93f1-c3f5ad8bb73f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SystemConfigurations();
 
   }
   
-  public static interface IServiceAccountSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IServiceAccountEnvironmentSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ServiceAccountSystemFunctionsImpl implements IServiceAccountSystemFunctionsImpl {
+  public static class ServiceAccountEnvironmentSystemFunctionsImpl implements IServiceAccountEnvironmentSystemFunctionsImpl {
 
-    public static final IServiceAccountSystemFunctionsImpl INSTANCE = new ServiceAccountSystemFunctionsImpl();
+    public static final IServiceAccountEnvironmentSystemFunctionsImpl INSTANCE = new ServiceAccountEnvironmentSystemFunctionsImpl();
 
-    private ServiceAccountSystemFunctionsImpl() {}
+    private ServiceAccountEnvironmentSystemFunctionsImpl() {}
 
   }
   
-  public static class ServiceAccountSystemFunctions {
+  public static class ServiceAccountEnvironmentSystemFunctions {
 
-    private ServiceAccountSystemFunctions() {}
+    private ServiceAccountEnvironmentSystemFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,fxDzylmOQTcKFPujyxKd3t97Fwg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,bQX1NaUiB2bWxuUwQ5yF/QWT8/s=] */

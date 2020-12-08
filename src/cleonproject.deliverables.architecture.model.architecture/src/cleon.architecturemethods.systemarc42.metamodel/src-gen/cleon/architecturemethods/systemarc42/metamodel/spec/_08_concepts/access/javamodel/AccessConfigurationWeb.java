@@ -31,12 +31,12 @@ public class AccessConfigurationWeb extends DynamicResource implements IAccessCo
   // attributes
   
   @Override
-  public java.lang.String selectUrl() {
-    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_url);
+  public java.lang.String selectPostFixToUrl() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_postFixToUrl);
   }
     
-  public void setUrl(java.lang.String url) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_url, url);
+  public void setPostFixToUrl(java.lang.String postFixToUrl) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_postFixToUrl, postFixToUrl);
   }
 
   // relations
@@ -85,7 +85,7 @@ public class AccessConfigurationWeb extends DynamicResource implements IAccessCo
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_url, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationWeb_postFixToUrl, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_accessCommunicationType, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IHostAccessMode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfiguration_hostAccessMode, visitor);
@@ -93,4 +93,4 @@ public class AccessConfigurationWeb extends DynamicResource implements IAccessCo
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f2144a1-2438-11eb-83b1-3d2a97975978,Mv8RQOw4Ri4iMoGc9PX2OXazQm0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f2144a1-2438-11eb-83b1-3d2a97975978,sEhmJwb8JfljNkxTAZfbrLOQd/w=] */

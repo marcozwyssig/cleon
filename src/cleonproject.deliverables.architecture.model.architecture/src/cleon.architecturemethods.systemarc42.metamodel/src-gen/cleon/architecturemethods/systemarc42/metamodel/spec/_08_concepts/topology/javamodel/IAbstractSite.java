@@ -10,6 +10,8 @@ public interface IAbstractSite extends ch.actifsource.core.javamodel.INamedResou
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite> selectAllowedToManage();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ISite selectAllowedToCentralAccess();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,ZVDfh9mr5TYmFNjTW/Yvbaa4cwc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,MKKauk1L6T2M+5HsJ6l5xF7H58w=] */

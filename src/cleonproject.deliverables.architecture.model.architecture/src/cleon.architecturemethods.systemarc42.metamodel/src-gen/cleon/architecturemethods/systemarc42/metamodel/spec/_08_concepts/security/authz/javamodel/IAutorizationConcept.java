@@ -12,10 +12,10 @@ public interface IAutorizationConcept extends cleon.common.doc.metamodel.spec.ch
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectAuthZForBuildingBlock();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAuthZDeploymentConcept selectAuthZForDeployment();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAuthZEnvironmentConcept selectAuthZForEnvironment();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IResponsibilities selectResponsibilities();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,YKMrLiU8c6ONc7VNVppT68mkGr4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,DVB2Zwywe4lag3UKoGmY4uILRTI=] */

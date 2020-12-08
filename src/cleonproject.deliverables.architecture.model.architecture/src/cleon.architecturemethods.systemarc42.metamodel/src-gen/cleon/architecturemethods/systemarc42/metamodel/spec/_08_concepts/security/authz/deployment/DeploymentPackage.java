@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class DeploymentPackage {
   
   public static final Resource EnvironmentRBAC = new Resource("6c337cfe-0eaf-11e9-9f19-6d15636f4ecc");
-  public static final Resource AuthZDeploymentConcept_environmentRBAC = new Resource("1fe0a9c6-1d5a-11e9-bba4-1d5db4cb1d61");
+  public static final Resource AuthZEnvironmentConcept_environmentRBAC = new Resource("1fe0a9c6-1d5a-11e9-bba4-1d5db4cb1d61");
   public static final Resource AbstractRootGroups = new Resource("4e8cc1b1-1d99-11e9-b601-db75aa6f89a4");
   public static final Resource AbstractSecurityGroups = new Resource("ff9a619e-1d99-11e9-b601-db75aa6f89a4");
   public static final Resource EnvironmentRBAC_activities = new Resource("8bdc2489-1d9a-11e9-b601-db75aa6f89a4");
@@ -29,7 +29,7 @@ public class DeploymentPackage {
   public static final Resource EnvironmentRBAC_environmentRBAC = new Resource("cacdfde5-016a-11ea-8b45-335c84231cb6");
   public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_AbstractRootGroups = new Resource("d730cab5-0172-11ea-83fa-05ea5175f4aa");
   public static final Resource EnvironmentRBAC_master = new Resource("22e8782a-78dc-11ea-a009-ab381ce86597");
-  public static final Resource AuthZDeploymentConcept = new Resource("3984f0ce-032c-11eb-af88-136a9a3b3817");
+  public static final Resource AuthZEnvironmentConcept = new Resource("3984f0ce-032c-11eb-af88-136a9a3b3817");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +50,4 @@ public class DeploymentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment,fYW1Vs01eUWR23HQuRnnQf72rv8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment,CfQBp6r3bVDPXw2oF06Mm94jQq0=] */

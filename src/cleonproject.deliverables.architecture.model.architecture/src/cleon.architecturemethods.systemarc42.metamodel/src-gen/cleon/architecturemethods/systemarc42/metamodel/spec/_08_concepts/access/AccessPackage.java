@@ -29,7 +29,7 @@ public class AccessPackage {
   public static final Resource SystemConfigurationAccessTo_accessConfigurationWeb = new Resource("a992f6e1-1ea5-11eb-9eef-0dadb2b460da");
   public static final Resource SystemConfigurationAccessTo_accessConfigurationSSH = new Resource("b547c9b2-1ea5-11eb-9eef-0dadb2b460da");
   public static final Resource AccessConfigurationWeb = new Resource("2f2144a1-2438-11eb-83b1-3d2a97975978");
-  public static final Resource AccessConfigurationWeb_url = new Resource("571b56fe-2438-11eb-83b1-3d2a97975978");
+  public static final Resource AccessConfigurationWeb_postFixToUrl = new Resource("571b56fe-2438-11eb-83b1-3d2a97975978");
   public static final Resource HostAccessMode = new Resource("3b5f0242-2439-11eb-83b1-3d2a97975978");
   public static final Resource AccessConfiguration_hostAccessMode = new Resource("442da5e6-2439-11eb-83b1-3d2a97975978");
   public static final Resource HostAccessMode_All = new Resource("481abe65-2439-11eb-83b1-3d2a97975978");
@@ -57,4 +57,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,RA8oyyrFNqMvudOrnGPSHm+/890=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,E2rU42WseSFGoT4M7WbBt0nt4qY=] */

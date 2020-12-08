@@ -6,7 +6,7 @@ public class AccountsPackage {
   
   public static final Resource ServiceAccounts = new Resource("f976f9b6-a19e-11ea-886d-354b9ee6fb2d");
   public static final Resource Account = new Resource("6f9d993b-a1a0-11ea-886d-354b9ee6fb2d");
-  public static final Resource ServiceAccountSite_accounts = new Resource("77b59726-a1a0-11ea-886d-354b9ee6fb2d");
+  public static final Resource ServiceAccountSystem_accounts = new Resource("77b59726-a1a0-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccountEnvironment = new Resource("e0be5246-a1a0-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccounts_accountEnvironment = new Resource("f6a8acea-a1a0-11ea-886d-354b9ee6fb2d");
   public static final Resource ServiceAccountEnvironment_systemEnvironmentForAccounts = new Resource("f456ff1a-a1a1-11ea-886d-354b9ee6fb2d");
@@ -21,6 +21,10 @@ public class AccountsPackage {
   public static final Resource ServiceAccountSite = new Resource("bde1151a-394a-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironment_serviceAccountSite = new Resource("c7094a10-394a-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountSite_abstractSite = new Resource("d1055562-394b-11eb-93f1-c3f5ad8bb73f");
+  public static final Resource ServiceAccountSystem = new Resource("b2c26a28-394e-11eb-93f1-c3f5ad8bb73f");
+  public static final Resource ServiceAccountSite_serviceAccountSystem = new Resource("bce15b74-394e-11eb-93f1-c3f5ad8bb73f");
+  public static final Resource ServiceAccountSystem_abstractSystem = new Resource("fb18fbc2-394f-11eb-93f1-c3f5ad8bb73f");
+  public static final Resource FunctionSpace_aE_Accounts_ServiceAccountSystem = new Resource("0167b530-3951-11eb-93f1-c3f5ad8bb73f");
   
   /* Begin Protected Region [[user]] */
   
@@ -41,4 +45,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,+C5HN1jHWIgE/bFgPfCkziPXl9A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,AG/X8EbIWqSSkS/WIyG+nmzg3BE=] */

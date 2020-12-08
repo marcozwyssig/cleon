@@ -28,6 +28,9 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     @IDynamicResourceExtension.MethodId("e8adea82-b5f8-11ea-a2c5-5b1c7f861dd4")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllDecomposingSystemConfiguration();
 
+    @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem System();
+
   }
   
   public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -294,7 +297,7 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("8364e39b-c78b-11ea-b0b6-e5df79e86bc2")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SelectAllSystemConfigurations();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
   }
   
@@ -340,4 +343,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,8c/86Z6qF5IweMz/9DEoBjMPFhc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,Z39V+LViH7/xdlVU13C7W70ybAI=] */

@@ -23,10 +23,19 @@ public class FunctionSpace_Accounts {
     @IDynamicResourceExtension.MethodId("9f29a613-2830-11eb-a351-0f02534982d8")
     public java.lang.String AccountName();
 
+    @IDynamicResourceExtension.MethodId("b4b25887-3a00-11eb-9823-adf6a3e0c300")
+    public java.lang.Integer Id();
+
+    @IDynamicResourceExtension.MethodId("50dab1e9-3a01-11eb-9823-adf6a3e0c300")
+    public java.lang.Integer RangeId();
+
   }
   
   public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("b4b25887-3a00-11eb-9823-adf6a3e0c300")
+    public java.lang.Integer Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
+
   }
   
   public static class ServiceAccountFunctionsImpl implements IServiceAccountFunctionsImpl {
@@ -35,11 +44,24 @@ public class FunctionSpace_Accounts {
 
     private ServiceAccountFunctionsImpl() {}
 
+    @Override
+    public java.lang.Integer Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+      /* Begin Protected Region [[b4b25887-3a00-11eb-9823-adf6a3e0c300]] */
+    	IServiceAccountFunctions serviceAccountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
+    	Integer id = serviceAccountFunctions.RangeId();
+    	return id + serviceAccount.selectServiceAccountTemplate().selectIdentifier();
+      /* End Protected Region   [[b4b25887-3a00-11eb-9823-adf6a3e0c300]] */
+    }
+
   }
   
   public static class ServiceAccountFunctions {
 
     private ServiceAccountFunctions() {}
+
+    public static java.lang.Integer Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+      return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).Id(serviceAccount);
+    }
 
   }
 
@@ -95,4 +117,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,bQX1NaUiB2bWxuUwQ5yF/QWT8/s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,0dCrNKgJN6QKuwQH9xmFIcOojNE=] */

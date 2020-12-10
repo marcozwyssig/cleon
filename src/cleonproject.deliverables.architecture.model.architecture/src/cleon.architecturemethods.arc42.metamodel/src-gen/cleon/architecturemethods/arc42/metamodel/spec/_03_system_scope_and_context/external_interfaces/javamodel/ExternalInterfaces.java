@@ -39,6 +39,15 @@ public class ExternalInterfaces extends DynamicResource implements IExternalInte
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class ExternalInterfaces extends DynamicResource implements IExternalInte
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.external_interfaces.javamodel.IExternalInterface.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.external_interfaces.External_interfacesPackage.ExternalInterfaces_externalInterfaces, visitor);
@@ -110,4 +120,4 @@ public class ExternalInterfaces extends DynamicResource implements IExternalInte
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65e40b4b-27d5-11e6-b263-9db62e053e59,hhem0Ksdc8VcLFCbt+AycyBqcS8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,65e40b4b-27d5-11e6-b263-9db62e053e59,XEXDE6M20imD9UFJA33rjQEhOhg=] */

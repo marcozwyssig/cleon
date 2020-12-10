@@ -49,6 +49,15 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
   }
 
   @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectNotes() {
     return _getListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes);
   }
@@ -145,6 +154,7 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     // relations
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.javamodel.IGoal.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.goals.GoalsPackage.GoalAware_achieves, visitor);
@@ -156,4 +166,4 @@ public class SystemEnvironment extends DynamicResource implements ISystemEnviron
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eba22e74-0c75-11e6-86c5-87a8b520dd59,Wd1pWaShp6TIda1RBjz/siXK9fQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eba22e74-0c75-11e6-86c5-87a8b520dd59,FO3Wwle0e5DFjkyHczi6eM/o4JQ=] */

@@ -49,12 +49,12 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
   }
 
   @Override
-  public java.lang.Boolean selectIsActive() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive);
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
     
-  public void setIsActive(java.lang.Boolean isActive) {
-     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, isActive);
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
   // relations
@@ -155,7 +155,7 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleSystemComponent_basedOn, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleSystemComponent_hasActivities, visitor);
@@ -179,4 +179,4 @@ public class RoleSystemComponent extends DynamicResource implements IRoleSystemC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,wY5FPbaE7rQSzZw60fm3LGcJ5Ec=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,TSL0J5x6Ymdv/Ogd+hLvh/x7pK0=] */

@@ -31,6 +31,15 @@ public class Important extends DynamicResource implements IImportant {
   // attributes
   
   @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
+  @Override
   public java.lang.String selectRemark() {
     return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.remarks.RemarksPackage.Remark_remark);
   }
@@ -65,10 +74,11 @@ public class Important extends DynamicResource implements IImportant {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.remarks.RemarksPackage.Remark_remark, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a88de814-466d-11e5-ba74-cb2e95044e1c,v5RyWy1UUGevBSPVL2/EWmop08c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a88de814-466d-11e5-ba74-cb2e95044e1c,FIL9nBJgu4Nf1OB/kZrBaiXiOus=] */

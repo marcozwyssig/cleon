@@ -39,6 +39,15 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -106,6 +115,7 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.riskmanagement.javamodel.IRiskManagement.class, cleon.architecturemethods.arc42.metamodel.spec._11_technical_risks._11_technical_risksPackage.Technical_aE_Risks_riskManagement, visitor);
@@ -119,4 +129,4 @@ public class Technical_Risks extends DynamicResource implements ITechnical_Risks
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,NX6sMKNHJJ6WFc292aMsEXJTYPM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b9457e9-d0b4-11e8-b005-f7630e4c29c0,pLFyjNyhJGWDZdofDallLay09xg=] */

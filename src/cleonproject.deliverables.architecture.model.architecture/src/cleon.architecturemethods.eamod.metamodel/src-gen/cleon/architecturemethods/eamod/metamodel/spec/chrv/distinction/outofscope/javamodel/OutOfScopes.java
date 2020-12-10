@@ -39,6 +39,15 @@ public class OutOfScopes extends DynamicResource implements IOutOfScopes {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class OutOfScopes extends DynamicResource implements IOutOfScopes {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.outofscope.javamodel.IOutOfScope.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.outofscope.OutofscopePackage.OutOfScopes_outofscope, visitor);
@@ -110,4 +120,4 @@ public class OutOfScopes extends DynamicResource implements IOutOfScopes {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bed31c81-0e14-11e6-ae01-ef640c578b9b,uXFrEkeCEm90bwtqVGM7ZG7ji7A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bed31c81-0e14-11e6-ae01-ef640c578b9b,aBT4UGhHXbAUfb354+0edO6BoPE=] */

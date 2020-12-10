@@ -42,11 +42,11 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
   // relations
   
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass selectServiceClass() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP selectServiceClass() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass);
   }
 
-  public QoSSystemConfigurationSource setServiceClass(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass serviceClass) {
+  public QoSSystemConfigurationSource setServiceClass(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP serviceClass) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, serviceClass);
     return this;
   }
@@ -87,7 +87,7 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     // attributes
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits, visitor);
     // relations
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_source, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -98,9 +98,9 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_source, object.getResource());
   }
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> selectToMeServiceClass(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IServiceClass object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource> selectToMeServiceClass(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,XzKwUFyxhcKOSz1swBOUUWM88VA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,jlKDImLVWsYVLfxLhVG9QZmZAPY=] */

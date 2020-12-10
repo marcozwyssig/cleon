@@ -40,6 +40,15 @@ public class SecurityPolicyEnforcementZone extends DynamicResource implements IS
   }
 
   @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -135,6 +144,7 @@ public class SecurityPolicyEnforcementZone extends DynamicResource implements IS
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecurityZone.class, cleon.modelinglanguages.segmentation.metamodel.spec.SpecPackage.SecurityZone_allowedAccessTo, visitor);
@@ -143,4 +153,4 @@ public class SecurityPolicyEnforcementZone extends DynamicResource implements IS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5112e54f-0b76-11e9-a136-69d076e48ed1,cnsp4o7Xby3NKt5XPWNX8trREbo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5112e54f-0b76-11e9-a136-69d076e48ed1,y0RX5kJo6cWyhRYYg4YK5JU7tHE=] */

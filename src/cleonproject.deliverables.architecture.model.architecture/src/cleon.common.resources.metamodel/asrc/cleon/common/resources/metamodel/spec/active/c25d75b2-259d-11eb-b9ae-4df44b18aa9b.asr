@@ -19,7 +19,7 @@
           <object statement-guid="c25d75d3-259d-11eb-b9ae-4df44b18aa9b" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c25d75d2-259d-11eb-b9ae-4df44b18aa9b" type="literal">isActive</object>
+          <object statement-guid="c25d75d2-259d-11eb-b9ae-4df44b18aa9b" type="literal">isEnabled</object>
         </predicate>
         <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
           <object statement-guid="c25d75d4-259d-11eb-b9ae-4df44b18aa9b" type="literal">false</object>
@@ -31,7 +31,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="c25d75bc-259d-11eb-b9ae-4df44b18aa9b" type="literal">ActiveWithDefaultFalseAware</object>
+    <object statement-guid="c25d75bc-259d-11eb-b9ae-4df44b18aa9b" type="literal">EnabledWithDefaultFalseAware</object>
   </predicate>
   <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
     <object statement-guid="c25d75be-259d-11eb-b9ae-4df44b18aa9b" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />

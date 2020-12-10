@@ -39,6 +39,15 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.infrastructure.javamodel.IAsset.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.infrastructure.InfrastructurePackage.HasAssets_assets, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
@@ -104,4 +114,4 @@ public class Infrastructure extends DynamicResource implements IInfrastructure {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5dd75f3f-c768-11e5-b3f9-43c5a0896ea1,hiSIfwpSx7BqWmxqOZoMa2NOmZ4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5dd75f3f-c768-11e5-b3f9-43c5a0896ea1,AlmpuK9065u5uUz9Z9qL46GLcWk=] */

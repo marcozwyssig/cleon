@@ -10,7 +10,9 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 /* Begin Protected Region [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.*;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityRootGroups;
-import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IActiveWithDefaultTrueAwareFunctions;
+import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
+import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
+
 import java.util.stream.Collectors;
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
@@ -87,10 +89,10 @@ public class FunctionSpace_Activity_Deployment {
     public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue(final List<T> activityPermissionList) {
       /* Begin Protected Region [[d7ca023b-27eb-11eb-b239-011c2d3c4f88]] */
       return activityPermissionList.stream().filter(x -> {
-      	if (!x.selectPermissionTemplate().extension(IActiveWithDefaultTrueAwareFunctions.class)
+      	if (!x.selectPermissionTemplate().extension(IEnabledWithDefaultTrueAwareFunctions.class)
       			.IsActiveOrDefaultTrue())
       		return false;
-      	return x.extension(IActiveWithDefaultTrueAwareFunctions.class).IsActiveOrDefaultTrue();
+      	return x.extension(IEnabledWithDefaultTrueAwareFunctions.class).IsActiveOrDefaultTrue();
       }).collect(Collectors.toList());
       /* End Protected Region   [[d7ca023b-27eb-11eb-b239-011c2d3c4f88]] */
     }

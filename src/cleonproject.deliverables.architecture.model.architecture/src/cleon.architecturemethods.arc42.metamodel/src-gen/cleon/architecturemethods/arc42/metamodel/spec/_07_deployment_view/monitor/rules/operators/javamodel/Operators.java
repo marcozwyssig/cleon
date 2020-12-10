@@ -39,6 +39,15 @@ public class Operators extends DynamicResource implements IOperators {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class Operators extends DynamicResource implements IOperators {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.rules.operators.javamodel.IOperator.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.rules.operators.OperatorsPackage.Operators_operators, visitor);
@@ -110,4 +120,4 @@ public class Operators extends DynamicResource implements IOperators {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,78a1dc49-b7e4-11e8-b27b-312e5be91ffb,64L5fZwHHnCDqpsKtpTfXjZVeW0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,78a1dc49-b7e4-11e8-b27b-312e5be91ffb,tTImp8bQYl3ounPqRBr830/8eEc=] */

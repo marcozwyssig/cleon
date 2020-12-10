@@ -40,12 +40,12 @@ public class ActivityRootGroups extends DynamicResource implements IActivityRoot
   }
 
   @Override
-  public java.lang.Boolean selectIsActive() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive);
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
     
-  public void setIsActive(java.lang.Boolean isActive) {
-     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, isActive);
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
   // relations
@@ -125,7 +125,7 @@ public class ActivityRootGroups extends DynamicResource implements IActivityRoot
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.ActivityPackage.ActivityRootGroups_activitiesForSite, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -139,4 +139,4 @@ public class ActivityRootGroups extends DynamicResource implements IActivityRoot
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c451877-1d99-11e9-b601-db75aa6f89a4,b96FKMWOikV14crMR8qd5vTZWzc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6c451877-1d99-11e9-b601-db75aa6f89a4,2sB2kF++AOoPyand+iyaejzT63M=] */

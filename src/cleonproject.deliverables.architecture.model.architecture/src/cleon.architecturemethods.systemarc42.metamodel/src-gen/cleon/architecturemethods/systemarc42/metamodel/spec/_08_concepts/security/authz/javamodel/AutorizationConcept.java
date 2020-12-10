@@ -39,6 +39,15 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -116,6 +125,7 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForBuildingBlock, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAuthZEnvironmentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.AuthzPackage.AutorizationConcept_authZForEnvironment, visitor);
@@ -144,4 +154,4 @@ public class AutorizationConcept extends DynamicResource implements IAutorizatio
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,YRdjlr4T6Yf6xf9csUdb2G1Jat8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9db33409-6e8e-11ea-b8e8-f1a46e0c42f7,nATBbXrhP8EYSrMasyCWv9Jo6z4=] */

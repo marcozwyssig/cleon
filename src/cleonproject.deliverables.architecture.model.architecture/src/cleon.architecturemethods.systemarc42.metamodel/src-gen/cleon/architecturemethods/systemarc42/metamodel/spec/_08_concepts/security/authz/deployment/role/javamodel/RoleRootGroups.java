@@ -40,12 +40,12 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
   }
 
   @Override
-  public java.lang.Boolean selectIsActive() {
-    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive);
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
   }
     
-  public void setIsActive(java.lang.Boolean isActive) {
-     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, isActive);
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
   // relations
@@ -125,7 +125,7 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.ActiveWithDefaultTrueAware_isActive, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.RolePackage.RoleRootGroups_roleForSite, visitor);
@@ -139,4 +139,4 @@ public class RoleRootGroups extends DynamicResource implements IRoleRootGroups {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,a8tmsYimjFsdLOkZo7cRu9rujIM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3e5a557a-1d99-11e9-b601-db75aa6f89a4,XtO4TXhyRgBMdxU07wn661BI4YU=] */

@@ -2,10 +2,10 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IAbstractGroup extends cleon.common.resources.metamodel.spec.active.javamodel.IActiveWithDefaultTrueAware, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
+public interface IAbstractGroup extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware, cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("bf5ba1ee-7f08-11e9-98a3-b1bd805f0a31");
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf5ba1ee-7f08-11e9-98a3-b1bd805f0a31,H3k4QoTMOI+SJm/iXtRSC7trJfY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf5ba1ee-7f08-11e9-98a3-b1bd805f0a31,oLruO6zTyJRe+b/PXEDRwP0oVmg=] */

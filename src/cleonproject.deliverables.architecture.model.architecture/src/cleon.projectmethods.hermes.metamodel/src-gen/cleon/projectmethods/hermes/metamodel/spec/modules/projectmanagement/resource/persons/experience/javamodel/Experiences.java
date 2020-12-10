@@ -39,6 +39,15 @@ public class Experiences extends DynamicResource implements IExperiences {
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -96,6 +105,7 @@ public class Experiences extends DynamicResource implements IExperiences {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptMap(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.experience.javamodel.IExperience.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons.experience.ExperiencePackage.Experiences_experience, visitor);
@@ -110,4 +120,4 @@ public class Experiences extends DynamicResource implements IExperiences {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,qLaPTKjZEHP1c+pZJ74FUk2B0YM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,813eb429-07d4-11e6-a579-8304ec3aa032,1Ip4KcVjB22+7h3E5Am4q4ozsW4=] */

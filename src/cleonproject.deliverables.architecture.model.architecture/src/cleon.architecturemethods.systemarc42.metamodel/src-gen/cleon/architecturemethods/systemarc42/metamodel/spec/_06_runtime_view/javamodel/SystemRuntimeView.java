@@ -39,6 +39,15 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -106,6 +115,7 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ICommunicationView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_communication, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.interaction.javamodel.IInteractionView.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view._06_runtime_viewPackage.SystemRuntimeView_interaction, visitor);
@@ -124,4 +134,4 @@ public class SystemRuntimeView extends DynamicResource implements ISystemRuntime
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,oEB2r6jjHL3EiUIQo1vYFAurH6E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a5c76a26-480f-11ea-8815-a3c0ce8e776e,vvsCCXn3GF9/fB2J3dsOWSw3iIM=] */

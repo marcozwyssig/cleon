@@ -32,6 +32,11 @@ public class ServicesPackage {
   public static final Resource FunctionSpace_aE_Services_FWStandardUDPService = new Resource("f585364b-a0ee-11ea-8daa-afb4679c3497");
   public static final Resource AnyService = new Resource("f5c214a2-b6be-11ea-83ac-afd79efb5e4a");
   public static final Resource FunctionSpace_aE_Services_AnyService = new Resource("cde691ff-b6bf-11ea-83ac-afd79efb5e4a");
+  public static final Resource FWStandardIPProtocol = new Resource("343d6d05-3bcc-11eb-b8e1-3fcf5510f7e6");
+  public static final Resource FWICMPService = new Resource("4f65f13c-3bcc-11eb-b8e1-3fcf5510f7e6");
+  public static final Resource FunctionSpace_aE_Services_FWStandardIPProtocol = new Resource("7ec5521b-3bcc-11eb-b8e1-3fcf5510f7e6");
+  public static final Resource FunctionSpace_aE_Services_FWICMPService = new Resource("aafdaa00-3bcc-11eb-b8e1-3fcf5510f7e6");
+  public static final Resource FWICMPService_messageName = new Resource("ee71e26c-3bcc-11eb-b8e1-3fcf5510f7e6");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +57,4 @@ public class ServicesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,haKoKKVjcBOxyEHK03d6Di6sMpI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,DjRtE8wFmx9pBP12gskD0HpDdxM=] */

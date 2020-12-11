@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="4f65f13c-3bcc-11eb-b8e1-3fcf5510f7e6">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="ee72308f-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="ee71e26c-3bcc-11eb-b8e1-3fcf5510f7e6" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4f65f13e-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4f6729c0-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="2c9a35dc-8930-11e9-b2ca-f184d092ab9a" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="ee72308f-3bcc-11eb-b8e1-3fcf5510f7e6">
+      <resource guid="ee71e26c-3bcc-11eb-b8e1-3fcf5510f7e6">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ee71e26e-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f921540b-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="ef4733d2-3bcc-11eb-b8e1-3fcf5510f7e6" type="literal">messageName</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f8816a80-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="9c65b11d-52ac-11e4-bb97-2f08c10a4f27">
+          <object statement-guid="f03f4f74-3bcc-11eb-b8e1-3fcf5510f7e6" type="resource" guid="b3e3101a-6da3-11e9-8af5-2346ca56c2e2" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="4f6729bf-3bcc-11eb-b8e1-3fcf5510f7e6" type="literal">FWICMPService</object>
+  </predicate>
+</resource>
+

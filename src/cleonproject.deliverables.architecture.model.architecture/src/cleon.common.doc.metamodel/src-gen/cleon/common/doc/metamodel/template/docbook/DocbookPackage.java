@@ -8,7 +8,6 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_DocBook_AbstractChapter = new Resource("619f52ce-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Text = new Resource("619f53ad-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_NumberedList = new Resource("619f53b7-3df2-11e6-9bf8-29c5fda07fa3");
-  public static final Resource FunctionSpace_aE_DocBook_DocumentElementComposite = new Resource("619f53d9-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Note = new Resource("619f53de-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Sidebar = new Resource("619f53f5-3df2-11e6-9bf8-29c5fda07fa3");
   public static final Resource FunctionSpace_aE_DocBook_Admonition = new Resource("619f5416-3df2-11e6-9bf8-29c5fda07fa3");
@@ -54,4 +53,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.docbook,/SD4+6yidy7Z5mtzhUOIMqCBv8I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.template.docbook,bB6MRDFh7k+P0r4gJhun9Eosklo=] */

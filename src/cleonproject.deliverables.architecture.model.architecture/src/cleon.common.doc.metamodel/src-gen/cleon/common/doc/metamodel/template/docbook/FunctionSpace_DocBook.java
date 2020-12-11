@@ -272,28 +272,6 @@ public class FunctionSpace_DocBook {
 
   }
 
-  public static interface IDocumentElementCompositeFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface IDocumentElementCompositeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DocumentElementCompositeFunctionsImpl implements IDocumentElementCompositeFunctionsImpl {
-
-    public static final IDocumentElementCompositeFunctionsImpl INSTANCE = new DocumentElementCompositeFunctionsImpl();
-
-    private DocumentElementCompositeFunctionsImpl() {}
-
-  }
-  
-  public static class DocumentElementCompositeFunctions {
-
-    private DocumentElementCompositeFunctions() {}
-
-  }
-
   public static interface INoteFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("619f53f4-3df2-11e6-9bf8-29c5fda07fa3")
@@ -892,4 +870,4 @@ public class FunctionSpace_DocBook {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,185v+mOrOGOFBmhb5uzQBbwXkCg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,uhNynmCxKXkKO2JvUY2F1BkzXg8=] */

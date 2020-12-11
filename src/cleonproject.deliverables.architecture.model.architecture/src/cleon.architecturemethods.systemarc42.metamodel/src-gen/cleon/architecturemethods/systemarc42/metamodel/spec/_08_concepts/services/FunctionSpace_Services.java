@@ -348,6 +348,62 @@ public class FunctionSpace_Services {
 
   }
 
+  public static interface IFWStandardIPProtocolFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8dc3846b-3bcc-11eb-b8e1-3fcf5510f7e6")
+    public java.lang.String Protocol();
+
+    @IDynamicResourceExtension.MethodId("93f1dad3-3bcc-11eb-b8e1-3fcf5510f7e6")
+    public java.lang.String DisplayName();
+
+  }
+  
+  public static interface IFWStandardIPProtocolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FWStandardIPProtocolFunctionsImpl implements IFWStandardIPProtocolFunctionsImpl {
+
+    public static final IFWStandardIPProtocolFunctionsImpl INSTANCE = new FWStandardIPProtocolFunctionsImpl();
+
+    private FWStandardIPProtocolFunctionsImpl() {}
+
+  }
+  
+  public static class FWStandardIPProtocolFunctions {
+
+    private FWStandardIPProtocolFunctions() {}
+
+  }
+
+  public static interface IFWICMPServiceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("aafdaa03-3bcc-11eb-b8e1-3fcf5510f7e6")
+    public java.lang.String Protocol();
+
+    @IDynamicResourceExtension.MethodId("aafdd121-3bcc-11eb-b8e1-3fcf5510f7e6")
+    public java.lang.String DisplayName();
+
+  }
+  
+  public static interface IFWICMPServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FWICMPServiceFunctionsImpl implements IFWICMPServiceFunctionsImpl {
+
+    public static final IFWICMPServiceFunctionsImpl INSTANCE = new FWICMPServiceFunctionsImpl();
+
+    private FWICMPServiceFunctionsImpl() {}
+
+  }
+  
+  public static class FWICMPServiceFunctions {
+
+    private FWICMPServiceFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,ehtlVJkKp4bcffTUEEtvsGKzfkg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,+PhJza6bJ+hZQN7b54Q6ZGeh5gU=] */

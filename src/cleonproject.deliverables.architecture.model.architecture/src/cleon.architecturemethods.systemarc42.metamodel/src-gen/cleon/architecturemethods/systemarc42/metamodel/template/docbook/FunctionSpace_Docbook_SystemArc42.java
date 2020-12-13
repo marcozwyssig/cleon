@@ -172,31 +172,6 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IQoSConceptFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("a62fb841-1d8d-11e9-b601-db75aa6f89a4")
-    public java.lang.String RenderContentElement();
-
-  }
-  
-  public static interface IQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class QoSConceptFunctionsImpl implements IQoSConceptFunctionsImpl {
-
-    public static final IQoSConceptFunctionsImpl INSTANCE = new QoSConceptFunctionsImpl();
-
-    private QoSConceptFunctionsImpl() {}
-
-  }
-  
-  public static class QoSConceptFunctions {
-
-    private QoSConceptFunctions() {}
-
-  }
-
   public static interface IActivitySystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("ffcbe63a-1e15-11e9-865e-41ef48a95f70")
@@ -1070,4 +1045,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,D7youcacl7iiztI/0m4GSLwXWlY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,E566e6+qcI+ZA5cUXn5uL+6HaoU=] */

@@ -695,10 +695,16 @@ public class FunctionSpace_DocBook {
     @IDynamicResourceExtension.MethodId("0000c7ff-e8f6-11e8-b810-cdb2b421fd42")
     public java.lang.String RenderContent();
 
+    @IDynamicResourceExtension.MethodId("501eae2b-3d39-11eb-986d-0d884ba5cf53")
+    public java.lang.Integer Count();
+
   }
   
   public static interface IItemizedListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("501eae2b-3d39-11eb-986d-0d884ba5cf53")
+    public java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList);
+
   }
   
   public static class ItemizedListFunctionsImpl implements IItemizedListFunctionsImpl {
@@ -707,11 +713,30 @@ public class FunctionSpace_DocBook {
 
     private ItemizedListFunctionsImpl() {}
 
+    @Override
+    public java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList) {
+      /* Begin Protected Region [[501eae2b-3d39-11eb-986d-0d884ba5cf53]] */
+    	int count = 0;
+    	if( itemizedList.selectDescriptions() != null) {
+    		count = itemizedList.selectDescriptions().size();
+    	}
+    	
+    	if( itemizedList.selectParagraphs() != null ) {
+    		count += itemizedList.selectParagraphs().size();
+    	}
+    	return count;
+      /* End Protected Region   [[501eae2b-3d39-11eb-986d-0d884ba5cf53]] */
+    }
+
   }
   
   public static class ItemizedListFunctions {
 
     private ItemizedListFunctions() {}
+
+    public static java.lang.Integer Count(final cleon.common.doc.metamodel.spec.paragraph.javamodel.IItemizedList itemizedList) {
+      return DynamicResourceUtil.invoke(IItemizedListFunctionsImpl.class, ItemizedListFunctionsImpl.INSTANCE, itemizedList).Count(itemizedList);
+    }
 
   }
 
@@ -868,6 +893,31 @@ public class FunctionSpace_DocBook {
 
   }
 
+  public static interface ISimpleDescriptionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ef28bff7-3d38-11eb-986d-0d884ba5cf53")
+    public java.lang.String ConvertToPara();
+
+  }
+  
+  public static interface ISimpleDescriptionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SimpleDescriptionFunctionsImpl implements ISimpleDescriptionFunctionsImpl {
+
+    public static final ISimpleDescriptionFunctionsImpl INSTANCE = new SimpleDescriptionFunctionsImpl();
+
+    private SimpleDescriptionFunctionsImpl() {}
+
+  }
+  
+  public static class SimpleDescriptionFunctions {
+
+    private SimpleDescriptionFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,uhNynmCxKXkKO2JvUY2F1BkzXg8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536edc4e-3de8-11e6-9bf8-29c5fda07fa3,fIWws8ApeuZUiBxSBoSRNIpb6no=] */

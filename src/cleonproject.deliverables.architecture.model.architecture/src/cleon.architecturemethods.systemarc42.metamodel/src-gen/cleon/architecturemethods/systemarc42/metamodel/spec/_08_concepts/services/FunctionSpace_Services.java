@@ -41,6 +41,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("80247504-1a84-11eb-97e9-413a49c2a05f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> OnlyMgmt(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo to);
 
+    @IDynamicResourceExtension.MethodId("1514d39c-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IAbstractServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -145,6 +148,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("a6a55203-bc71-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("29670194-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IAbstractServiceGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -173,6 +179,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("7565142d-bc77-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("3bc30474-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IFWStandardTCPServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -200,6 +209,9 @@ public class FunctionSpace_Services {
 
     @IDynamicResourceExtension.MethodId("98100c80-bc77-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
+
+    @IDynamicResourceExtension.MethodId("5dba3d66-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
 
   }
   
@@ -272,6 +284,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("d601a691-bc71-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("708814c9-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IServiceTCPFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -299,6 +314,9 @@ public class FunctionSpace_Services {
 
     @IDynamicResourceExtension.MethodId("c1ef67c6-bc71-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
+
+    @IDynamicResourceExtension.MethodId("7e106fbd-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
 
   }
   
@@ -328,6 +346,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("b880daeb-bc71-11ea-88d5-a50b07f2e9c3")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("8b429518-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IAnyServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -355,6 +376,9 @@ public class FunctionSpace_Services {
 
     @IDynamicResourceExtension.MethodId("93f1dad3-3bcc-11eb-b8e1-3fcf5510f7e6")
     public java.lang.String DisplayName();
+
+    @IDynamicResourceExtension.MethodId("97f417c9-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
 
   }
   
@@ -384,6 +408,9 @@ public class FunctionSpace_Services {
     @IDynamicResourceExtension.MethodId("aafdd121-3bcc-11eb-b8e1-3fcf5510f7e6")
     public java.lang.String DisplayName();
 
+    @IDynamicResourceExtension.MethodId("a65fa717-3d4b-11eb-986d-0d884ba5cf53")
+    public java.lang.String ShortName();
+
   }
   
   public static interface IFWICMPServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -406,4 +433,4 @@ public class FunctionSpace_Services {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,+PhJza6bJ+hZQN7b54Q6ZGeh5gU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d1f3b31c-9340-11e9-a1f7-0765a2e4170d,iDo4ZG4h/H8/lbK+NfoO1lsl7nU=] */

@@ -81,11 +81,11 @@ public class ProjectDependency extends DynamicResource implements IProjectDepend
   }
     
   @Override
-  public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument selectProject() {
-    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project);
+  public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning selectProject() {
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project);
   }
 
-  public ProjectDependency setProject(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument project) {
+  public ProjectDependency setProject(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning project) {
     _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project, project);
     return this;
   }
@@ -119,9 +119,9 @@ public class ProjectDependency extends DynamicResource implements IProjectDepend
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cdcc38b-d42e-11e6-8a1d-7fdd5d29730e,RhXcrN0b3kvHBfccMQ1i3Y7RoJ4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6cdcc38b-d42e-11e6-8a1d-7fdd5d29730e,b6kTEs0PGn2cbohdkoc0CghqOYc=] */

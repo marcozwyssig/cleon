@@ -12,7 +12,7 @@ public class ProjectmanagementPackage {
   public static final Resource FunctionSpace_aE_ProjectManagement_SprintGoals = new Resource("9f8ddd0f-ca32-11e8-82ac-e1eb952f770a");
   public static final Resource FunctionSpace_aE_ProjectManagement_Month = new Resource("9f8ddde9-ca32-11e8-82ac-e1eb952f770a");
   public static final Resource FunctionSpace_aE_ProjectManagement_Releases = new Resource("9f8dde23-ca32-11e8-82ac-e1eb952f770a");
-  public static final Resource FunctionSpace_aE_ProjectManagement_PlanningDocument = new Resource("9f8e037b-ca32-11e8-82ac-e1eb952f770a");
+  public static final Resource FunctionSpace_aE_ProjectManagement_Planning = new Resource("9f8e037b-ca32-11e8-82ac-e1eb952f770a");
   public static final Resource FunctionSpace_aE_ProjectManagement_Outcome = new Resource("9f8e03d7-ca32-11e8-82ac-e1eb952f770a");
   public static final Resource FunctionSpace_aE_ProjectManagement_Backlog = new Resource("9f8e2bc0-ca32-11e8-82ac-e1eb952f770a");
   public static final Resource FunctionSpace_aE_ProjectManagement_ResourceUtilization = new Resource("9f8e2c15-ca32-11e8-82ac-e1eb952f770a");
@@ -54,4 +54,4 @@ public class ProjectmanagementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.template.asciidoc.projectmanagement,8vAtLtdQNriB/BJfw+pEjqn5/VE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.template.asciidoc.projectmanagement,w+wBZYoRV9Nj0qL8tBaciB81HtQ=] */

@@ -18,28 +18,28 @@ public class FunctionSpace_DocBook_Planning {
   /* End Protected Region   [[2cf3f1a9-c1d8-11e6-8517-1bc2821627a9]] */
 
 
-  public static interface IPlanningDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IPlanningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2cf46810-c1d8-11e6-8517-1bc2821627a9")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface IPlanningDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPlanningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class PlanningDocumentFunctionsImpl implements IPlanningDocumentFunctionsImpl {
+  public static class PlanningFunctionsImpl implements IPlanningFunctionsImpl {
 
-    public static final IPlanningDocumentFunctionsImpl INSTANCE = new PlanningDocumentFunctionsImpl();
+    public static final IPlanningFunctionsImpl INSTANCE = new PlanningFunctionsImpl();
 
-    private PlanningDocumentFunctionsImpl() {}
+    private PlanningFunctionsImpl() {}
 
   }
   
-  public static class PlanningDocumentFunctions {
+  public static class PlanningFunctions {
 
-    private PlanningDocumentFunctions() {}
+    private PlanningFunctions() {}
 
   }
 
@@ -379,4 +379,4 @@ public class FunctionSpace_DocBook_Planning {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,BXXj8hYlZgHQTQb0lh5p+rVVMJI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2cf3f1a9-c1d8-11e6-8517-1bc2821627a9,Cu/xm3r0ZO4kSP37l5PcgAFHyuU=] */

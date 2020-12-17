@@ -508,28 +508,28 @@ public class FunctionSpace_ProjectManagement {
 
   }
 
-  public static interface IPlanningDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IPlanningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9f8e037a-ca32-11e8-82ac-e1eb952f770a")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface IPlanningDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPlanningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class PlanningDocumentFunctionsImpl implements IPlanningDocumentFunctionsImpl {
+  public static class PlanningFunctionsImpl implements IPlanningFunctionsImpl {
 
-    public static final IPlanningDocumentFunctionsImpl INSTANCE = new PlanningDocumentFunctionsImpl();
+    public static final IPlanningFunctionsImpl INSTANCE = new PlanningFunctionsImpl();
 
-    private PlanningDocumentFunctionsImpl() {}
+    private PlanningFunctionsImpl() {}
 
   }
   
-  public static class PlanningDocumentFunctions {
+  public static class PlanningFunctions {
 
-    private PlanningDocumentFunctions() {}
+    private PlanningFunctions() {}
 
   }
 
@@ -835,4 +835,4 @@ public class FunctionSpace_ProjectManagement {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,TazGEW0TgzET3UUppRqNfqDa+HI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9f8f1638-ca32-11e8-82ac-e1eb952f770a,jnn76PDrxMVo8lTv6ACX4mkbCis=] */

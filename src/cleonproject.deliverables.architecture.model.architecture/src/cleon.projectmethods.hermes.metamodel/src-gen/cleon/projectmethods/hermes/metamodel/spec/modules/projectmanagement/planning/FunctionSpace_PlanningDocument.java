@@ -18,31 +18,31 @@ public class FunctionSpace_PlanningDocument {
   /* End Protected Region   [[747b9b47-6746-11e9-9ec9-5fbc84faaeb1]] */
 
 
-  public static interface IPlanningDocumentFunctions extends IDynamicResourceExtension {
+  public static interface IPlanningFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7a837db6-6746-11e9-9ec9-5fbc84faaeb1")
     public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.scope.deliverable.javamodel.IDeliverable GetDeliverables();
 
   }
   
-  public static interface IPlanningDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPlanningFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class PlanningDocumentFunctionsImpl implements IPlanningDocumentFunctionsImpl {
+  public static class PlanningFunctionsImpl implements IPlanningFunctionsImpl {
 
-    public static final IPlanningDocumentFunctionsImpl INSTANCE = new PlanningDocumentFunctionsImpl();
+    public static final IPlanningFunctionsImpl INSTANCE = new PlanningFunctionsImpl();
 
-    private PlanningDocumentFunctionsImpl() {}
+    private PlanningFunctionsImpl() {}
 
   }
   
-  public static class PlanningDocumentFunctions {
+  public static class PlanningFunctions {
 
-    private PlanningDocumentFunctions() {}
+    private PlanningFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,747b9b47-6746-11e9-9ec9-5fbc84faaeb1,b8m9mITd/hFqxzv4JJ5T69Bd18s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,747b9b47-6746-11e9-9ec9-5fbc84faaeb1,9g3UT0ahIWJ69EqN52q9JN51njk=] */

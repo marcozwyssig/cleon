@@ -13,9 +13,9 @@ public abstract class Constraint extends DynamicResource implements IConstraint 
   
   // toMeRelations
   
-  public static java.util.List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IConstraint> selectToMeProject(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument object) {
+  public static java.util.List<cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IConstraint> selectToMeProject(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning object) {
     return _getToMeList(object.getRepository(), cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.javamodel.IConstraint.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.constraints.ConstraintsPackage.Constraint_project, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,531b7044-d42e-11e6-8a1d-7fdd5d29730e,n3XxnsfhWDL8R8rmTbB+KmtDfS4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,531b7044-d42e-11e6-8a1d-7fdd5d29730e,o3/urb2lj5P3iiMubaWjF8Tfwss=] */

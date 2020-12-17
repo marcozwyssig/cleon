@@ -9,6 +9,7 @@ public class ProcurementPackage {
   public static final Resource MainContract = new Resource("8614ece3-4058-11eb-aaa9-61838d129c8c");
   public static final Resource Procurement = new Resource("b4733279-4058-11eb-aaa9-61838d129c8c");
   public static final Resource Procurement_contracts = new Resource("8542dadc-4059-11eb-aaa9-61838d129c8c");
+  public static final Resource ChangeRequest_mainContract = new Resource("1cfa2e52-4093-11eb-aaa9-61838d129c8c");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +30,4 @@ public class ProcurementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.procurement,gUiJ2FfLv3MqUNAIxMcB4WXCPI8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.procurement,KYwMl4UKK4noyseQMma+llSU4q4=] */

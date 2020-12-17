@@ -52,6 +52,16 @@ public class ProjectManagement extends DynamicResource implements IProjectManage
   }
     
   @Override
+  public cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement selectProcurement() {
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_procurement);
+  }
+
+  public ProjectManagement setProcurement(cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement procurement) {
+    _setSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_procurement, procurement);
+    return this;
+  }
+    
+  @Override
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocols selectProtocols() {
     return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocols.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_protocols);
   }
@@ -88,6 +98,7 @@ public class ProjectManagement extends DynamicResource implements IProjectManage
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_planning, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_procurement, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.protocols.javamodel.IProtocols.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_protocols, visitor);
     _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.javamodel.ISteering.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_steering, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -107,5 +118,9 @@ public class ProjectManagement extends DynamicResource implements IProjectManage
     return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.javamodel.IProjectManagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_steering, object.getResource());
   }
   
+  public static cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.javamodel.IProjectManagement selectToMeProcurement(cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement object) {
+    return _getToMeSingle(object.getRepository(), cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.javamodel.IProjectManagement.class, cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.ProjectmanagementPackage.ProjectManagement_procurement, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,w7gqhHqisEHSGyMQNiLJiV2ALNY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,NzsP6m+kXMgzYxybeaEM/ftdgUI=] */

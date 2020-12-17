@@ -17,6 +17,8 @@ public interface IProjectManagement extends ch.actifsource.core.javamodel.INamed
   
   public cleon.projectmethods.hermes.metamodel.spec.modules.projectsteering.javamodel.ISteering selectSteering();
   
+  public cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel.IProcurement selectProcurement();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,IueCcale5poUU40TXOYpcd8HWrc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,tyNmxCa/4ZXI1EaNo6JjUVMT3cs=] */

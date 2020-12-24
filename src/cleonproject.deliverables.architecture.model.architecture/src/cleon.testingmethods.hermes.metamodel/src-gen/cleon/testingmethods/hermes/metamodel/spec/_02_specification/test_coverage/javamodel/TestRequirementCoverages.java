@@ -39,6 +39,15 @@ public class TestRequirementCoverages extends DynamicResource implements ITestRe
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -106,6 +115,7 @@ public class TestRequirementCoverages extends DynamicResource implements ITestRe
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptMap(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_coverage.javamodel.ITestSubjectAreaCoverage.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_coverage.Test_coveragePackage.TestRequirementCoverages_testSubjectAreaCoverage, visitor);
@@ -119,4 +129,4 @@ public class TestRequirementCoverages extends DynamicResource implements ITestRe
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,adf3787f-5162-11e9-bb61-971a423d31e9,66l2f2ByulBz2NDLLT9y9oL5Qrc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,adf3787f-5162-11e9-bb61-971a423d31e9,RrGZtwQNYQjHbtB3t/GfZnhO8C0=] */

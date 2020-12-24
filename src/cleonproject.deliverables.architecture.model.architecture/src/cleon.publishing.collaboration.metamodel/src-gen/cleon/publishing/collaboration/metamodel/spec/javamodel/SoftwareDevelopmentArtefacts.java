@@ -42,11 +42,11 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   // relations
   
   @Override
-  public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument selectPlanning() {
-    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning);
+  public cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning selectPlanning() {
+    return _getSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning);
   }
 
-  public SoftwareDevelopmentArtefacts setPlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument planning) {
+  public SoftwareDevelopmentArtefacts setPlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning planning) {
     _setSingle(cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning, planning);
     return this;
   }
@@ -107,7 +107,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     // attributes
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning, visitor);
+    _acceptSingle(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning, visitor);
     _acceptSingle(cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel.IReadme.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_readme, visitor);
     _acceptSingle(cleon.architecturemethods.eamod.metamodel.spec.chrv.javamodel.IRequirementsDocument.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, visitor);
     _acceptList(cleon.projectmethods.hermes.metamodel.spec.outcomes.detailstudy.javamodel.IDetailstudy.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_solutionAnalysis, visitor);
@@ -121,7 +121,7 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
     return _getToMeSingle(object.getRepository(), cleon.publishing.collaboration.metamodel.spec.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_requirementManagement, object.getResource());
   }
   
-  public static cleon.publishing.collaboration.metamodel.spec.javamodel.ISoftwareDevelopmentArtefacts selectToMePlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanningDocument object) {
+  public static cleon.publishing.collaboration.metamodel.spec.javamodel.ISoftwareDevelopmentArtefacts selectToMePlanning(cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.planning.javamodel.IPlanning object) {
     return _getToMeSingle(object.getRepository(), cleon.publishing.collaboration.metamodel.spec.javamodel.ISoftwareDevelopmentArtefacts.class, cleon.publishing.collaboration.metamodel.spec.SpecPackage.SoftwareDevelopmentArtefacts_planning, object.getResource());
   }
   
@@ -138,4 +138,4 @@ public class SoftwareDevelopmentArtefacts extends DynamicResource implements ISo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,LrgAnThdV+bH2r9zB7Huvtg1LR4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ea1700ac-ff9a-11e4-ac0a-959b440f987f,g9MkNDELqDNeGGffmFjldvrU9Hc=] */

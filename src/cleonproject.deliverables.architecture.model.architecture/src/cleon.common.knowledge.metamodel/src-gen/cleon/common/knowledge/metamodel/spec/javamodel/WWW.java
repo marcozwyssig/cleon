@@ -31,6 +31,15 @@ public class WWW extends DynamicResource implements IWWW {
   // attributes
   
   @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -64,6 +73,7 @@ public class WWW extends DynamicResource implements IWWW {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.net.URL.class, cleon.common.knowledge.metamodel.spec.SpecPackage.WWW_url, visitor);
     // relations
@@ -71,4 +81,4 @@ public class WWW extends DynamicResource implements IWWW {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,caf61b68-b797-11e6-85e2-39e149963066,t5bPCOvwXvEdqKtIich4HcUd9y4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,caf61b68-b797-11e6-85e2-39e149963066,FbGWz41pzxD3JHU2nOVNnie2DU4=] */

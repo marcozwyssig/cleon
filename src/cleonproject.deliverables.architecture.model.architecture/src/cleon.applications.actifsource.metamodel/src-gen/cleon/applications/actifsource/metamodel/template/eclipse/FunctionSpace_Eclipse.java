@@ -199,10 +199,10 @@ public class FunctionSpace_Eclipse {
   public static interface INatureFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52c5bcfd-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName();
+    public java.lang.String RenderNatureNames();
 
     @IDynamicResourceExtension.MethodId("def557c4-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand();
+    public java.lang.String RenderBuildCommands();
 
     @IDynamicResourceExtension.MethodId("973787c9-41a8-11e8-81d0-774e4d9334dd")
     public java.lang.String RenderClassPathEntry();
@@ -230,10 +230,10 @@ public class FunctionSpace_Eclipse {
   public static interface IJavaFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("89d7a384-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName();
+    public java.lang.String RenderNatureNames();
 
     @IDynamicResourceExtension.MethodId("e668fec4-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand();
+    public java.lang.String RenderBuildCommands();
 
     @IDynamicResourceExtension.MethodId("a78b862e-41a8-11e8-81d0-774e4d9334dd")
     public java.lang.String RenderClassPathEntry();
@@ -261,10 +261,10 @@ public class FunctionSpace_Eclipse {
   public static interface IGradleFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b1f8ecf8-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName();
+    public java.lang.String RenderNatureNames();
 
     @IDynamicResourceExtension.MethodId("e8776c70-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand();
+    public java.lang.String RenderBuildCommands();
 
     @IDynamicResourceExtension.MethodId("aaabb1fa-41a8-11e8-81d0-774e4d9334dd")
     public java.lang.String RenderClassPathEntry();
@@ -292,10 +292,10 @@ public class FunctionSpace_Eclipse {
   public static interface IActifsourceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b8a6ab6f-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName();
+    public java.lang.String RenderNatureNames();
 
     @IDynamicResourceExtension.MethodId("ea0a688c-41a5-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand();
+    public java.lang.String RenderBuildCommands();
 
     @IDynamicResourceExtension.MethodId("acaa4126-41a8-11e8-81d0-774e4d9334dd")
     public java.lang.String RenderClassPathEntry();
@@ -323,10 +323,10 @@ public class FunctionSpace_Eclipse {
   public static interface IPluginFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0121d453-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName();
+    public java.lang.String RenderNatureNames();
 
     @IDynamicResourceExtension.MethodId("45bf98ac-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand();
+    public java.lang.String RenderBuildCommands();
 
     @IDynamicResourceExtension.MethodId("51bbd476-41aa-11e8-81d0-774e4d9334dd")
     public java.lang.String RenderClassPathEntry();
@@ -335,12 +335,6 @@ public class FunctionSpace_Eclipse {
   
   public static interface IPluginFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("0121d453-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderNatureName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin);
-
-    @IDynamicResourceExtension.MethodId("45bf98ac-41aa-11e8-81d0-774e4d9334dd")
-    public java.lang.String RenderBuildCommand(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin);
-
   }
   
   public static class PluginFunctionsImpl implements IPluginFunctionsImpl {
@@ -349,29 +343,11 @@ public class FunctionSpace_Eclipse {
 
     private PluginFunctionsImpl() {}
 
-    @Override
-    public java.lang.String RenderNatureName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin) {
-      return null;
-    }
-
-    @Override
-    public java.lang.String RenderBuildCommand(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin) {
-      return null;
-    }
-
   }
   
   public static class PluginFunctions {
 
     private PluginFunctions() {}
-
-    public static java.lang.String RenderNatureName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin) {
-      return DynamicResourceUtil.invoke(IPluginFunctionsImpl.class, PluginFunctionsImpl.INSTANCE, plugin).RenderNatureName(plugin);
-    }
-
-    public static java.lang.String RenderBuildCommand(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin plugin) {
-      return DynamicResourceUtil.invoke(IPluginFunctionsImpl.class, PluginFunctionsImpl.INSTANCE, plugin).RenderBuildCommand(plugin);
-    }
 
   }
 
@@ -480,4 +456,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,/E1K4nmkAJMEBTJAgL/Xy8TodB0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,Pq6212eG25OW0GxznPWdhORtuT8=] */

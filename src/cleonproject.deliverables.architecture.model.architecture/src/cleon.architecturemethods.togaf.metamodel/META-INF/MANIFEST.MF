@@ -1,6 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Automatic-Module-Name: cleon.architecturemethods.togaf.metamodel.singleton.true
 Bundle-Name: cleon.architecturemethods.togaf.metamodel
 Bundle-SymbolicName: cleon.architecturemethods.togaf.metamodel.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier
@@ -30,24 +32,26 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.architecturemethods.togaf.metamodel,
+Export-Package: 
  cleon.architecturemethods.togaf.metamodel.spec,
- cleon.architecturemethods.togaf.metamodel.spec.javamodel,
- cleon.architecturemethods.togaf.metamodel.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock,
- cleon.architecturemethods.togaf.metamodel.spec._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent,
- cleon.architecturemethods.togaf.metamodel.spec._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock,
+ cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view.architecturelayerbuildingblock.architecturebuildingblock.architecturesolutionbuildingblock.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.reference,
+ cleon.architecturemethods.togaf.metamodel.spec.reference.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.solution,
+ cleon.architecturemethods.togaf.metamodel.spec.solution.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent,
+ cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.solutionbuildingblockcomponent.javamodel
 

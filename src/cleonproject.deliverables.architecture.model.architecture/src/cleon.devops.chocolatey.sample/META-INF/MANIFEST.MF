@@ -1,6 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Automatic-Module-Name: cleon.devops.chocolatey.sample.singleton.true
 Bundle-Name: cleon.devops.chocolatey.sample
 Bundle-SymbolicName: cleon.devops.chocolatey.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier

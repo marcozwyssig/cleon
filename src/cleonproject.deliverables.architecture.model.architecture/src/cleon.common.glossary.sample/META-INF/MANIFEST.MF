@@ -1,6 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Automatic-Module-Name: cleon.common.glossary.sample.singleton.true
 Bundle-Name: cleon.common.glossary.sample
 Bundle-SymbolicName: cleon.common.glossary.sample.builtin;singleton:=true
 Bundle-Version: 0.4.149.qualifier

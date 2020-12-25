@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class EclipsePackage {
   
   public static final Resource FunctionSpace_aE_Eclipse_AbstractProject = new Resource("32de7fdf-11ea-11e5-b568-55f5f05bd6f6");
-  public static final Resource FunctionSpace_aE_Eclipse_Package = new Resource("03ce21f9-b885-11e5-a463-ff45aa361315");
+  public static final Resource FunctionSpace_aE_Eclipse_ExportPackage = new Resource("03ce21f9-b885-11e5-a463-ff45aa361315");
   public static final Resource FunctionSpace_aE_Eclipse_Feature = new Resource("c56bf163-088f-11e6-a630-c5f34c31623f");
   public static final Resource FunctionSpace_aE_Eclipse_Zoo = new Resource("a6bcc080-342d-11e7-9486-85e29952984a");
   public static final Resource FunctionSpace_aE_Eclipse_Nature = new Resource("4277b248-41a5-11e8-81d0-774e4d9334dd");
@@ -37,4 +37,4 @@ public class EclipsePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse,NSa/nk9tyLCi65ubzypZxMZrYwQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse,9UeBjScqkDbQbQKk264eSTVB7sA=] */

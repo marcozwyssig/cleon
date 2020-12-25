@@ -13,8 +13,8 @@ public class ProjectPackage {
   public static final Resource PluginDependency = new Resource("d8688469-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource PluginDependency_to = new Resource("de9ea266-4260-11e5-8a2d-599443ec8ff4");
   public static final Resource AbstractProject_resources = new Resource("e0532bab-5201-11e5-89ac-35d4069568da");
-  public static final Resource Package = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
-  public static final Resource Package_subPackage = new Resource("c1a1d31a-b884-11e5-a463-ff45aa361315");
+  public static final Resource ExportPackage = new Resource("437b1d5a-b87e-11e5-a463-ff45aa361315");
+  public static final Resource ExportPackage_subPackage = new Resource("c1a1d31a-b884-11e5-a463-ff45aa361315");
   public static final Resource PluginBuiltinDependency = new Resource("dc98b25c-0c6a-11e6-86c5-87a8b520dd59");
   public static final Resource PluginProjectDependency = new Resource("eb57b8c2-0c6a-11e6-86c5-87a8b520dd59");
   public static final Resource FunctionSpace_aE_Project_Model = new Resource("7865062e-3c77-11e6-aafa-bd565efc0ead");
@@ -53,4 +53,4 @@ public class ProjectPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,iPiFlJ5x2F6yjrunN/eFkOpNS6k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project,FK+hQyqCUy8X6iQGh4XptcOY9k8=] */

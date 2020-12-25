@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[30ec7375-11ea-11e5-b568-55f5f05bd6f6,imports]] */
-import cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage;
+import cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage;
 import cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin;
 
 /* End Protected Region   [[30ec7375-11ea-11e5-b568-55f5f05bd6f6,imports]] */
@@ -51,10 +51,10 @@ public class FunctionSpace_Eclipse {
 
   }
 
-  public static interface IPackageFunctions extends IDynamicResourceExtension {
+  public static interface IExportPackageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0b35945e-b885-11e5-a463-ff45aa361315")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> GetPackages();
 
     @IDynamicResourceExtension.MethodId("3bee1cdd-b885-11e5-a463-ff45aa361315")
     public java.lang.String GetPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project);
@@ -69,31 +69,31 @@ public class FunctionSpace_Eclipse {
     public java.lang.String GetCustomPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project);
 
     @IDynamicResourceExtension.MethodId("9cc66988-2a6a-11ea-825d-f7ca5e5684e4")
-    public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage GetTopPackage();
+    public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage GetTopPackage();
 
     @IDynamicResourceExtension.MethodId("e9141a8e-2a6a-11ea-825d-f7ca5e5684e4")
     public java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project);
 
   }
   
-  public static interface IPackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IExportPackageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("e9141a8e-2a6a-11ea-825d-f7ca5e5684e4")
-    public java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage package_);
+    public java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage);
 
   }
   
-  public static class PackageFunctionsImpl implements IPackageFunctionsImpl {
+  public static class ExportPackageFunctionsImpl implements IExportPackageFunctionsImpl {
 
-    public static final IPackageFunctionsImpl INSTANCE = new PackageFunctionsImpl();
+    public static final IExportPackageFunctionsImpl INSTANCE = new ExportPackageFunctionsImpl();
 
-    private PackageFunctionsImpl() {}
+    private ExportPackageFunctionsImpl() {}
 
     @Override
-    public java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage package_) {
+    public java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage) {
       /* Begin Protected Region [[e9141a8e-2a6a-11ea-825d-f7ca5e5684e4]] */
-      IPackageFunctions functions = package_.extension(IPackageFunctions.class);
-      IPackage top = functions.GetTopPackage();
+      IExportPackageFunctions functions = exportPackage.extension(IExportPackageFunctions.class);
+      IExportPackage top = functions.GetTopPackage();
       IPlugin plugin = project.selectPlugin();
       if( plugin != null ) {
     	  if( plugin.selectExportSpecPackage().contains(top)) {
@@ -112,12 +112,12 @@ public class FunctionSpace_Eclipse {
 
   }
   
-  public static class PackageFunctions {
+  public static class ExportPackageFunctions {
 
-    private PackageFunctions() {}
+    private ExportPackageFunctions() {}
 
-    public static java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage package_) {
-      return DynamicResourceUtil.invoke(IPackageFunctionsImpl.class, PackageFunctionsImpl.INSTANCE, package_).GetGenericPackageName(project, package_);
+    public static java.lang.String GetGenericPackageName(final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject project, final cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage exportPackage) {
+      return DynamicResourceUtil.invoke(IExportPackageFunctionsImpl.class, ExportPackageFunctionsImpl.INSTANCE, exportPackage).GetGenericPackageName(project, exportPackage);
     }
 
   }
@@ -456,4 +456,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,Pq6212eG25OW0GxznPWdhORtuT8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,KRXsJVTg5TP7fzJJ98cWU2gpKXw=] */

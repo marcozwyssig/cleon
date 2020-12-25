@@ -57,13 +57,13 @@ public class FunctionSpace_Project {
     public java.lang.String Path();
 
     @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetSpecPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> GetSpecPackages();
 
     @IDynamicResourceExtension.MethodId("02281f8a-2a52-11ea-86bd-67705d589838")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetTemplatePackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> GetTemplatePackages();
 
     @IDynamicResourceExtension.MethodId("9e4443b8-2a52-11ea-86bd-67705d589838")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetCustomPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> GetCustomPackages();
 
     @IDynamicResourceExtension.MethodId("1cd5a723-434f-11e6-a9d7-97cf4f7c398b")
     public java.lang.String GetVersion();
@@ -72,7 +72,7 @@ public class FunctionSpace_Project {
     public java.lang.String GetAcitfSourceVersion();
 
     @IDynamicResourceExtension.MethodId("ff154cad-2a69-11ea-825d-f7ca5e5684e4")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> AllPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> AllPackages();
 
     @IDynamicResourceExtension.MethodId("231ce01b-d7c7-11ea-ae00-5518e944c256")
     public java.lang.String GetName();
@@ -276,4 +276,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,G/A+V2S33po392Ce8ACWNDF8FL0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,6iYT4qVZvkub4Psu96t7c/Hs8/I=] */

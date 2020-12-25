@@ -11,6 +11,7 @@ public class NaturePackage {
   public static final Resource Plugin_accessrules = new Resource("9581630c-95af-11e8-8990-bba75387a1ab");
   public static final Resource Plugin_exportTemplatePackage = new Resource("2519167b-2a51-11ea-86bd-67705d589838");
   public static final Resource Plugin_exportCustomPackage = new Resource("755d129b-2a52-11ea-86bd-67705d589838");
+  public static final Resource Plugin_exportPackages = new Resource("b6f1f70b-46ce-11eb-b318-ab9601344039");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +32,4 @@ public class NaturePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature,eeV6/YFwJKsANhkLESyH5Douirc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature,F2KrISPUbRwskUwcIF04mizfZo4=] */

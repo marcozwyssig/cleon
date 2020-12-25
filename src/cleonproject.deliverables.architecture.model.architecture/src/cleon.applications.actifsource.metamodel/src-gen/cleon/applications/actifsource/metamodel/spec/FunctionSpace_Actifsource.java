@@ -21,7 +21,7 @@ public class FunctionSpace_Actifsource {
   public static interface IBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7e9f968c-d7bd-11ea-ae00-5518e944c256")
-    public java.lang.String GetFullActifsourceBuildingBlockName();
+    public java.lang.String FullActifsourceBuildingBlockName();
 
   }
   
@@ -45,4 +45,4 @@ public class FunctionSpace_Actifsource {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5066b3da-d7bd-11ea-ae00-5518e944c256,F0t4eFSHiHCOaQ3YyjG/RHtjQIc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5066b3da-d7bd-11ea-ae00-5518e944c256,HIChje0zb1TJH4KWFTk7sxbWinI=] */

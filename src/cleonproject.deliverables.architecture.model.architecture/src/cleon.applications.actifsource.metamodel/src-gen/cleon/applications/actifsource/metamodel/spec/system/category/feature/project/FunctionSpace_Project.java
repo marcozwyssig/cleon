@@ -21,10 +21,10 @@ public class FunctionSpace_Project {
   public static interface IAbstractProjectFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5fac0a17-8983-11e6-9315-e9960ca482c6")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetDirectDependingProjectBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingProjectBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("40333452-c10a-11e6-8f58-ad3c6ee7602f")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetDirectDependingBuiltinBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingBuiltinBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("bd765b2f-c10b-11e6-8f58-ad3c6ee7602f")
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllDuplicatedBuiltinDependencies();
@@ -39,7 +39,7 @@ public class FunctionSpace_Project {
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetAllProjectDependencies();
 
     @IDynamicResourceExtension.MethodId("3e2a64a5-5b56-11e7-9702-abdab196c2a1")
-    public java.lang.String GetFullBuildingBlockName();
+    public java.lang.String FullBuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("22956d62-5b57-11e7-9702-abdab196c2a1")
     public java.lang.Boolean UseSimpleName();
@@ -48,13 +48,13 @@ public class FunctionSpace_Project {
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.INature> ListNatures();
 
     @IDynamicResourceExtension.MethodId("6062fd26-d093-11e8-b005-f7630e4c29c0")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> GetDirectDependingBuildingBlocks();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject> DirectDependingBuildingBlocks();
 
     @IDynamicResourceExtension.MethodId("1f04e30a-6f63-11e9-ad7a-a97bad6ad10a")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
     @IDynamicResourceExtension.MethodId("3c4f08b4-11ea-11e5-b568-55f5f05bd6f6")
-    public java.lang.String GetPath();
+    public java.lang.String Path();
 
     @IDynamicResourceExtension.MethodId("20cd3b09-b885-11e5-a463-ff45aa361315")
     public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetSpecPackages();
@@ -72,13 +72,13 @@ public class FunctionSpace_Project {
     public java.lang.String GetAcitfSourceVersion();
 
     @IDynamicResourceExtension.MethodId("ff154cad-2a69-11ea-825d-f7ca5e5684e4")
-    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> GetAllPackages();
+    public List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IPackage> AllPackages();
 
     @IDynamicResourceExtension.MethodId("231ce01b-d7c7-11ea-ae00-5518e944c256")
     public java.lang.String GetName();
 
     @IDynamicResourceExtension.MethodId("ee7e9c00-d7c7-11ea-ae00-5518e944c256")
-    public java.lang.String GetBuiltinFullBuildingBlockName();
+    public java.lang.String BuiltinFullBuildingBlockName();
 
   }
   
@@ -127,7 +127,7 @@ public class FunctionSpace_Project {
   public static interface IModelFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7d9d3c83-3c77-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -152,7 +152,7 @@ public class FunctionSpace_Project {
   public static interface ITemplateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("96d10a22-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -177,7 +177,7 @@ public class FunctionSpace_Project {
   public static interface IMetaModelFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d0ee34b5-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -202,7 +202,7 @@ public class FunctionSpace_Project {
   public static interface INamedMetaModelFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("56140881-2703-11ea-8c59-871562e3b5c4")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -227,7 +227,7 @@ public class FunctionSpace_Project {
   public static interface IDiagramFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f6381a3f-3c79-11e6-aafa-bd565efc0ead")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -252,7 +252,7 @@ public class FunctionSpace_Project {
   public static interface ISampleFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7bd8212a-2637-11ea-8c59-871562e3b5c4")
-    public java.lang.String GetBuildingBlockName();
+    public java.lang.String BuildingBlockName();
 
   }
   
@@ -276,4 +276,4 @@ public class FunctionSpace_Project {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,mdkUwne3DnXW6VoNj6mG/domkmw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7106baaa-3c77-11e6-aafa-bd565efc0ead,G/A+V2S33po392Ce8ACWNDF8FL0=] */

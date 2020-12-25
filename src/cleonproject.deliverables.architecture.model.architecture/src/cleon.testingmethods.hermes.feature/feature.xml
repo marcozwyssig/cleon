@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature id="cleon.testingmethods.hermes" label="cleon.testingmethods.hermes" version="0.4.149">
+<feature id="cleon.testingmethods.hermes" label="cleon.testingmethods.hermes" version="0.4.149.qualifier">
    <description url="http://www.zwyssig.info/description">
     No description available
    </description>
@@ -464,26 +464,26 @@ of their respective owners.
       <import plugin="ch.actifsource.ui.wizard.generic" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.ui.wizard" version="9.0.0" match="greaterOrEqual"/>
       <import plugin="ch.actifsource.xml" version="9.0.0" match="greaterOrEqual"/>
-      <import feature="cleon.architecturestylesandpatterns.eda"/>
-      <import feature="cleon.architecturestylesandpatterns.soa"/>
-      <import feature="cleon.common.actifsource"/>
-      <import feature="cleon.architecturemethods.arc42"/>
-      <import feature="cleon.common.building"/>
-      <import feature="cleon.common.calendar"/>
-      <import feature="cleon.common.doc"/>
-      <import feature="cleon.architecturemethods.eamod"/>
-      <import feature="cleon.common.glossary"/>
-      <import feature="cleon.projectmethods.hermes"/>
-      <import feature="cleon.common.language"/>
-      <import feature="cleon.common.modularity"/>
-      <import feature="cleon.modelinglanguages.network"/>
-      <import feature="cleon.modelinglanguages.rack"/>
-      <import feature="cleon.common.resources"/>
-      <import feature="cleon.modelinglanguages.segmentation"/>
-      <import feature="cleon.architecturemethods.systemarc42"/>
-      <import feature="cleon.modelinglanguages.uml"/>
-      <import feature="cleon.common.xml"/>
+      <import feature="cleon.architecturestylesandpatterns.eda" version="0.4.149.qualifier"/>
+      <import feature="cleon.architecturestylesandpatterns.soa" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.actifsource" version="0.4.149.qualifier"/>
+      <import feature="cleon.architecturemethods.arc42" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.building" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.calendar" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.doc" version="0.4.149.qualifier"/>
+      <import feature="cleon.architecturemethods.eamod" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.glossary" version="0.4.149.qualifier"/>
+      <import feature="cleon.projectmethods.hermes" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.language" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.modularity" version="0.4.149.qualifier"/>
+      <import feature="cleon.modelinglanguages.network" version="0.4.149.qualifier"/>
+      <import feature="cleon.modelinglanguages.rack" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.resources" version="0.4.149.qualifier"/>
+      <import feature="cleon.modelinglanguages.segmentation" version="0.4.149.qualifier"/>
+      <import feature="cleon.architecturemethods.systemarc42" version="0.4.149.qualifier"/>
+      <import feature="cleon.modelinglanguages.uml" version="0.4.149.qualifier"/>
+      <import feature="cleon.common.xml" version="0.4.149.qualifier"/>
    </requires>
-   <plugin id="cleon.testingmethods.hermes.metamodel.builtin" download-size="0" install-size="0" version="0.4.149" unpack="false"/>   
+   <plugin id="cleon.testingmethods.hermes.metamodel.builtin" download-size="0" install-size="0" version="0.0.0" unpack="false"/>   
 </feature>
 <!-- Actifsource ID=[a22a2831-2f0d-11e5-bcae-7ba429294158,124f120e-4f84-11e9-bb70-f5c712ea0a4b,Hash] -->

@@ -97,7 +97,7 @@ public class FunctionSpace_Buildingblock {
     public List<cleon.common.modularity.metamodel.spec.javamodel.IBuildingBlock> OnlyDependsOn();
 
     @IDynamicResourceExtension.MethodId("83992df6-bbb5-11ea-83bb-3d6d7d2cf439")
-    public java.lang.String GetNameInParentheses();
+    public java.lang.String NameInParentheses();
 
     @IDynamicResourceExtension.MethodId("631a0430-035a-11e9-a251-e3767b78f69f")
     public java.lang.String GetStereotypeName();
@@ -327,4 +327,4 @@ public class FunctionSpace_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,JNNdU4wdoC6x0oB3sMzUxMqiQA8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,3aea3d68-44bf-11e5-93ef-c50f9659357a,S+f+vNH6EB0tYVGCeywIyC7ZLKM=] */

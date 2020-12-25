@@ -12,7 +12,7 @@ import ch.actifsource.core.util.LiteralUtil;
 import cleon.common.resources.metamodel.spec.versions.VersionsPackage;
 import cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion;
 import cleon.applications.actifsource.metamodel.spec.system.category.feature.FeaturePackage;
-import cleon.applications.actifsource.metamodel.spec.system.javamodel.IZoo;
+import cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem;
 
 public class IncreaseAllPatchVersionsRefactoringAspect extends AbstractAllInstancesRefactorerAspect {
 
@@ -25,7 +25,7 @@ public class IncreaseAllPatchVersionsRefactoringAspect extends AbstractAllInstan
 		
 		ITypeSystem typeSystem = TypeSystem.create(modifiable);
 		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IZoo zoo  = resourceRepository.getResource(IZoo.class, paramINode);
+		IEclipseEcosystem zoo  = resourceRepository.getResource(IEclipseEcosystem.class, paramINode);
 		ISemanticVersion version = zoo.selectVersion();
 		int patch = version.selectPatch() + 1;
 		try

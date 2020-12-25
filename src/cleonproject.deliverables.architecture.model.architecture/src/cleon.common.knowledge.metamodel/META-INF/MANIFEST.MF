@@ -19,12 +19,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.common.knowledge.metamodel,
- cleon.common.knowledge.metamodel.spec,
+Export-Package: cleon.common.knowledge.metamodel.spec,
  cleon.common.knowledge.metamodel.spec.javamodel,
- cleon.common.knowledge.metamodel.javamodel,
- cleon.common.knowledge.metamodel.template.asciidoc,
- cleon.common.knowledge.metamodel.template.asciidoc.javamodel,
- cleon.common.knowledge.metamodel.template.docbook,
- cleon.common.knowledge.metamodel.template.docbook.javamodel
+ cleon.common.knowledge.metamodel.template.asciidoc
 

@@ -121,6 +121,16 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
   }
     
   @Override
+  public cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages selectRootPackages() {
+    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_rootPackages);
+  }
+
+  public EclipseEcosystem setRootPackages(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages rootPackages) {
+    _setSingle(cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_rootPackages, rootPackages);
+    return this;
+  }
+    
+  @Override
   public cleon.common.resources.metamodel.spec.versions.javamodel.ISystemStage selectSystemStage() {
     return _getSingle(cleon.common.resources.metamodel.spec.versions.javamodel.ISystemStage.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.SemanticVersionAware_systemStage);
   }
@@ -161,6 +171,7 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.javamodel.IComponentCompositionDependency.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.ComponentComposition_hasDependency, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
+    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_rootPackages, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.versions.javamodel.ISystemStage.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.SemanticVersionAware_systemStage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.SemanticVersionAware_version, visitor);
@@ -172,5 +183,9 @@ public class EclipseEcosystem extends DynamicResource implements IEclipseEcosyst
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_categories, object.getResource());
   }
   
+  public static cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem selectToMeRootPackages(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackages object) {
+    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem.class, cleon.applications.actifsource.metamodel.spec.system.SystemPackage.EclipseEcosystem_rootPackages, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,bbkHHYsr0gE5TL2kfif6ZYcElV0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7b6b4712-f986-11e5-a7fd-010f93305101,Fi57zv3/RLlqlVS3Shwf/aWuusg=] */

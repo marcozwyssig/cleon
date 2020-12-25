@@ -20,7 +20,7 @@ import ch.actifsource.util.log.Logger;
 import cleon.common.resources.metamodel.spec.id.IdPackage;
 
 public abstract class BusinessObjectIdInitializerAspect<T extends IIntegerBusinessObjectId>
-extends AbstractInitializationAspect {
+		extends AbstractInitializationAspect {
 
 	private final Class<T> _classInstance;
 
@@ -33,13 +33,15 @@ extends AbstractInitializationAspect {
 	}
 
 	@Override
-	public void initialize(final IModifiable modifiable, final INode clazz, final Package pkg, final INode newInstance) {
+	public void initialize(final IModifiable modifiable, final INode clazz, final Package pkg,
+			final INode newInstance) {
 		final ITypeSystem typeSystem = TypeSystem.create(modifiable);
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 
 		try {
 			final Integer nextId = getNextId(resourceRepository, resourceRepository.getResource(Clazz(), newInstance));
-			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(nextId));
+			Update.createOrModifyStatement(modifiable, pkg, newInstance, IdPackage.IntegerBusinessObjectId_identifier,
+					LiteralUtil.create(nextId));
 		} catch (final Exception e) {
 			final StringWriter sw = new StringWriter();
 			e.printStackTrace(new PrintWriter(sw));
@@ -56,8 +58,8 @@ extends AbstractInitializationAspect {
 
 	protected Integer getNextId(final IDynamicResourceRepository resourceRepository, final T newInstance) {
 		final List<T> resources = selectRessources(resourceRepository, newInstance);
-		if( resources.isEmpty()) {
-			return getStartId(newInstance);			
+		if (resources.isEmpty()) {
+			return getStartId(newInstance);
 		}
 
 		return findNextId(newInstance, resources);
@@ -68,12 +70,14 @@ extends AbstractInitializationAspect {
 	}
 
 	protected Integer findNextId(final T newInstance, final List<T> resources) {
-		final List<T> sortedList = resources.stream().filter( x -> x.selectIdentifier() != null).sorted(Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier)).collect(Collectors.toList());
+		final List<T> sortedList = resources.stream().filter(x -> x.selectIdentifier() != null)
+				.sorted(Comparator.comparingInt(IIntegerBusinessObjectId::selectIdentifier))
+				.collect(Collectors.toList());
 		Logger.instance().logInfo("Size: " + sortedList.size());
-		for(int i = 0; i < sortedList.size(); ++i) {
+		for (int i = 0; i < sortedList.size(); ++i) {
 			final int boId = getStartId(newInstance) + i;
 			final int indexId = sortedList.get(i).selectIdentifier();
-			if(boId < indexId) {
+			if (boId < indexId) {
 				Logger.instance().logInfo("next: " + boId + " / indexId: " + indexId);
 				// at this point we know this is the next id.
 				// we can leave the method and return the next ID.
@@ -84,5 +88,5 @@ extends AbstractInitializationAspect {
 		final int nextId = sortedList.size() + 1;
 		Logger.instance().logInfo("next id: " + nextId);
 		return nextId;
-	}	
+	}
 }

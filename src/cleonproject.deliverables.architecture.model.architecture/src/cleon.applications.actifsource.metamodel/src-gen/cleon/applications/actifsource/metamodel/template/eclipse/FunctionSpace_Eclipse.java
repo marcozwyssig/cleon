@@ -140,7 +140,7 @@ public class FunctionSpace_Eclipse {
     public cleon.common.resources.metamodel.spec.versions.javamodel.ISemanticVersion GetVersion();
 
     @IDynamicResourceExtension.MethodId("b1d8ac24-be78-11e8-a165-65b4bbad9291")
-    public cleon.applications.actifsource.metamodel.spec.system.javamodel.IZoo GetZoo();
+    public cleon.applications.actifsource.metamodel.spec.system.javamodel.IEclipseEcosystem GetZoo();
 
     @IDynamicResourceExtension.MethodId("5cc7d343-be79-11e8-a165-65b4bbad9291")
     public java.lang.String RenderFeatureDependencies();
@@ -165,7 +165,7 @@ public class FunctionSpace_Eclipse {
 
   }
 
-  public static interface IZooFunctions extends IDynamicResourceExtension {
+  public static interface IEclipseEcosystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("aa3daa49-342d-11e7-9486-85e29952984a")
     public java.lang.String GetSiteName();
@@ -178,21 +178,21 @@ public class FunctionSpace_Eclipse {
 
   }
   
-  public static interface IZooFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IEclipseEcosystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class ZooFunctionsImpl implements IZooFunctionsImpl {
+  public static class EclipseEcosystemFunctionsImpl implements IEclipseEcosystemFunctionsImpl {
 
-    public static final IZooFunctionsImpl INSTANCE = new ZooFunctionsImpl();
+    public static final IEclipseEcosystemFunctionsImpl INSTANCE = new EclipseEcosystemFunctionsImpl();
 
-    private ZooFunctionsImpl() {}
+    private EclipseEcosystemFunctionsImpl() {}
 
   }
   
-  public static class ZooFunctions {
+  public static class EclipseEcosystemFunctions {
 
-    private ZooFunctions() {}
+    private EclipseEcosystemFunctions() {}
 
   }
 
@@ -456,4 +456,4 @@ public class FunctionSpace_Eclipse {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,KRXsJVTg5TP7fzJJ98cWU2gpKXw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,30ec7375-11ea-11e5-b568-55f5f05bd6f6,gCdwSNIwDdnvgtk+U2R8wV+1408=] */

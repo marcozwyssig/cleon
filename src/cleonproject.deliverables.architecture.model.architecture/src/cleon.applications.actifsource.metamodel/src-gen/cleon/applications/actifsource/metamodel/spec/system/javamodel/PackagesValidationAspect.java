@@ -70,7 +70,8 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 		packagesNodes.selectPackages().stream().forEach(packageNode -> {
 			final var match = packages.contains(LiteralUtil.create(packageNode.selectName()));
 			if (!match) {
-				final var message = String.format("Packages %s doesnt exist. Remove the package from the packages.",
+				final var message = String.format(
+						"Packages %s doesnt exist in packages. Remove the package from the packages.",
 						packageNode.selectName());
 				final var packageRelation = Select.statementOrNull(validationContext.getReadJobExecutor(),
 						validationContext.getResource(), SystemPackage.Packages_packages, packageNode.getResource());

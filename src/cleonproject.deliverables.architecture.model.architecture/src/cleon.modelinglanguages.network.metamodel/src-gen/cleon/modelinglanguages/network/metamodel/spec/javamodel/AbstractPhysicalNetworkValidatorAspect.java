@@ -13,76 +13,72 @@ import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
-import ch.actifsource.core.validation.quickfix.IInconsistencyEnablement;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask;
 import cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.SubnetUtils;
 
 public class AbstractPhysicalNetworkValidatorAspect implements IResourceValidationAspect {
 	private final int LOW = 32;
-	
+
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList) {
-		ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
-		IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
-		IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
+		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
+		final IAbstractPhysicalNetwork abstractPhysicalNetwork = resourceRepository
 				.getResource(IAbstractPhysicalNetwork.class, validationContext.getResource());
-		
-		
+
 		validate(validationContext, validationList, abstractPhysicalNetwork);
 	}
-	
-	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList, IAbstractPhysicalNetwork abstractPhysicalNetwork) {
-		java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
+
+	private void validate(ValidationContext validationContext, List<IResourceInconsistency> validationList,
+			IAbstractPhysicalNetwork abstractPhysicalNetwork) {
+		final java.util.Map<Resource, ? extends IAbstractNetworkNode> nodeMap = abstractPhysicalNetwork.selectNodes();
 		if (nodeMap == null) {
 			return;
 		}
 
-		List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
-		Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
-		ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<IAbstractNetworkNode>();
-		for (IAbstractNetworkNode node : nodes) {
+		final List<? extends IIPv4_Mask> cidrs = abstractPhysicalNetwork.selectCidr();
+		final Collection<? extends IAbstractNetworkNode> nodes = nodeMap.values();
+		final ArrayList<IAbstractNetworkNode> toFixedList = new ArrayList<>();
+		for (final IAbstractNetworkNode node : nodes) {
 			boolean isInRange = false;
-			for( IIPv4_Mask cidr : cidrs) {
-				String ip = Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource());
-				if( cidr.selectMask() == LOW ) {
+			for (final IIPv4_Mask cidr : cidrs) {
+				final String ip = Select.simpleName(validationContext.getReadJobExecutor(),
+						node.selectIPv4_D().getResource());
+				if (cidr.selectMask() == LOW) {
 					isInRange = cidr.selectIPv4().equals(ip);
-						
+
 				} else {
-					SubnetUtils subnet = new SubnetUtils(
-							Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));					
-					isInRange = subnet.getInfo().isInRange(ip);					
+					final SubnetUtils subnet = new SubnetUtils(
+							Select.simpleName(validationContext.getReadJobExecutor(), cidr.getResource()));
+					isInRange = subnet.getInfo().isInRange(ip);
 				}
-				if(isInRange) {
+				if (isInRange) {
 					break;
-				}				
+				}
 			}
 			if (!isInRange) {
 				toFixedList.add(node);
-			}			
+			}
 		}
 
 		if (!toFixedList.isEmpty()) {
-			
-			// Add quick fix
-			FixIPAddressQuickFix fixMissingIP = new FixIPAddressQuickFix(abstractPhysicalNetwork, toFixedList,
-					new IInconsistencyEnablement() {
-						@Override
-						public boolean isEnabled() {
-							return true;
-						}
-					});
 
-			for (IAbstractNetworkNode node : toFixedList) {
-				String ip = Select.simpleName(validationContext.getReadJobExecutor(), node.selectIPv4_D().getResource());
-				
-				ch.actifsource.core.Statement nodeNetwork = Select.relationStatementOrNull(
+			// Add quick fix
+			final FixIPAddressQuickFix fixMissingIP = new FixIPAddressQuickFix(abstractPhysicalNetwork, toFixedList,
+					() -> true);
+
+			for (final IAbstractNetworkNode node : toFixedList) {
+				final String ip = Select.simpleName(validationContext.getReadJobExecutor(),
+						node.selectIPv4_D().getResource());
+
+				final ch.actifsource.core.Statement nodeNetwork = Select.relationStatementOrNull(
 						validationContext.getReadJobExecutor(),
 						cleon.modelinglanguages.network.metamodel.spec.SpecPackage.AbstractPhysicalNetwork_nodes,
 						abstractPhysicalNetwork.getResource());
 
-				String message = String.format("IP address %s is valid and can maybe be moved", ip);
+				final String message = String.format("IP address %s is valid and can maybe be moved", ip);
 				validationList.add(new SingleStatementInconsistency(nodeNetwork, message, fixMissingIP));
 			}
-		}		
+		}
 	}
 }

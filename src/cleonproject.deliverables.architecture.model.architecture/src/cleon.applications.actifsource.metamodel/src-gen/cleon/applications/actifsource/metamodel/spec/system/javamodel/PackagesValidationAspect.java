@@ -3,15 +3,20 @@ package cleon.applications.actifsource.metamodel.spec.system.javamodel;
 import java.util.List;
 import java.util.Objects;
 
+import ch.actifsource.core.CorePackage;
 import ch.actifsource.core.INode;
 import ch.actifsource.core.job.Select;
+import ch.actifsource.core.job.Update;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
+import ch.actifsource.core.patch.IStatementPosition;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.set.INodeSet;
+import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
 import ch.actifsource.core.validation.ValidationContext;
 import ch.actifsource.core.validation.inconsistency.IResourceInconsistency;
 import ch.actifsource.core.validation.inconsistency.SingleStatementInconsistency;
+import ch.actifsource.core.validation.quickfix.AbstractQuickFix;
 import ch.actifsource.template.typesystem.impl.AllPackagesFunction;
 import cleon.applications.actifsource.metamodel.spec.system.SystemPackage;
 
@@ -37,12 +42,24 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 			final var match = packagesNodes.selectPackages().stream().map(IPackage::selectName)
 					.anyMatch(x -> x.equals(packageName));
 			if (!match) {
-				final var message = String.format("Packages %s doesnt exist. Add the package to the packages.",
-						packageName);
+				final var message = String.format("Package %s doesnt exist in packages", packageName);
 				final var packageRelation = Select.relationStatementOrNull(validationContext.getReadJobExecutor(),
 						SystemPackage.Packages_packages, validationContext.getResource());
-				Objects.requireNonNull(packageRelation);
-				inconsistencies.add(new SingleStatementInconsistency(packageRelation, message));
+				Objects.requireNonNull(packageRelation, "packageRelation can't be null");
+
+				final AbstractQuickFix quickfix = new AbstractQuickFix("Add package", "", () -> true) {
+
+					@Override
+					protected void doApply(IModifiable modifiable) {
+						final var packageNode = Update.createAndInitializeResource(modifiable,
+								validationContext.getPackage(), SystemPackage.Package, validationContext.getResource(),
+								SystemPackage.Packages_packages, IStatementPosition.AT_END);
+						Update.createStatement(modifiable, validationContext.getPackage(), packageNode,
+								CorePackage.NamedResource_name, _package);
+					}
+
+				};
+				inconsistencies.add(new SingleStatementInconsistency(packageRelation, message, quickfix));
 			}
 		}
 	}

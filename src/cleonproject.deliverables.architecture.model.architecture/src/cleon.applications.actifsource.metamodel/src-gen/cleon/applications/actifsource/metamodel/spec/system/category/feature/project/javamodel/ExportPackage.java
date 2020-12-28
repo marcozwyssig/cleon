@@ -31,23 +31,42 @@ public class ExportPackage extends DynamicResource implements IExportPackage {
   // attributes
   
   @Override
-  public java.lang.String selectName() {
-    return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
+  public java.lang.Boolean selectIsExport() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_isExport);
   }
     
-  public void setName(java.lang.String name) {
-     _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  public void setIsExport(java.lang.Boolean isExport) {
+     _setSingleAttribute(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_isExport, isExport);
+  }
+
+  @Override
+  public java.lang.Boolean selectWithJavaModel() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_withJavaModel);
+  }
+    
+  public void setWithJavaModel(java.lang.Boolean withJavaModel) {
+     _setSingleAttribute(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_withJavaModel, withJavaModel);
   }
 
   // relations
   
   @Override
-  public java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> selectSubPackage() {
-    return _getList(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_subPackage);
+  public cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage selectPackage() {
+    return _getSingle(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package);
   }
 
-  public ExportPackage setSubPackage(java.util.List<? extends cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> subPackage) {
-    _setList(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_subPackage, subPackage);
+  public ExportPackage setPackage(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage package_) {
+    _setSingle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package, package_);
+    return this;
+  }
+    
+  @Override
+  public ch.actifsource.core.javamodel.IResource selectTarget() {
+    return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
+  }
+
+  public ExportPackage setTarget(ch.actifsource.core.javamodel.IResource target) {
+    _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
     
@@ -65,17 +84,18 @@ public class ExportPackage extends DynamicResource implements IExportPackage {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_isExport, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_withJavaModel, visitor);
     // relations
-    _acceptList(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_subPackage, visitor);
+    _acceptSingle(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage selectToMeSubPackage(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage object) {
-    return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_subPackage, object.getResource());
+  public static java.util.List<cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage> selectToMePackage(cleon.applications.actifsource.metamodel.spec.system.javamodel.IPackage object) {
+    return _getToMeList(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IExportPackage.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.ExportPackage_package, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,qvnxEgzcYV3GqOr5QOk1pqIjyjM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,437b1d5a-b87e-11e5-a463-ff45aa361315,Q/0lV0oB0lq4TV2ZOkLl2fPX7YY=] */

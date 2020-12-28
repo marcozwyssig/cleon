@@ -18,10 +18,10 @@ public interface IAbstractProject extends cleon.modelinglanguages.uml.metamodel.
   
   public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IJava selectJava();
   
-  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.gradle.javamodel.IGradle selectGradle();
+  public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IGradle selectGradle();
   
   public cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IPlugin selectPlugin();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,bUD6kADhNVjGAdwxRVHOw5tw9fo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,sFHlc5DamLwLldnt2epnIVCR9LA=] */

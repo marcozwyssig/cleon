@@ -33,7 +33,7 @@ public abstract class AbstractProject extends DynamicResource implements IAbstra
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.AbstractProject_java, object.getResource());
   }
   
-  public static cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject selectToMeGradle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.gradle.javamodel.IGradle object) {
+  public static cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject selectToMeGradle(cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel.IGradle object) {
     return _getToMeSingle(object.getRepository(), cleon.applications.actifsource.metamodel.spec.system.category.feature.project.javamodel.IAbstractProject.class, cleon.applications.actifsource.metamodel.spec.system.category.feature.project.ProjectPackage.AbstractProject_gradle, object.getResource());
   }
   
@@ -42,4 +42,4 @@ public abstract class AbstractProject extends DynamicResource implements IAbstra
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,Sf0WIlQiI58dc6hwvdHsFp7djGI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04a544de-11e9-11e5-b568-55f5f05bd6f6,jdjwuOANOUws78TWn7Q0DpQ2YWA=] */

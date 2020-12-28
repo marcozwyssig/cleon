@@ -45,6 +45,7 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 				final var message = String.format("Package %s doesnt exist in packages", packageName);
 				final var packageRelation = Select.relationStatementOrNull(validationContext.getReadJobExecutor(),
 						SystemPackage.Packages_packages, validationContext.getResource());
+
 				Objects.requireNonNull(packageRelation, "packageRelation can't be null");
 
 				final AbstractQuickFix quickfix = new AbstractQuickFix("Add package", "", () -> true) {

@@ -1,4 +1,4 @@
-package cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.gradle.javamodel;
+package cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -59,4 +59,4 @@ public class Gradle extends DynamicResource implements IGradle {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f150252c-3fd7-11e8-bd50-b94594551673,V4f+ja2LY9j7BQSpylClZnAl6i0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f150252c-3fd7-11e8-bd50-b94594551673,rvxJ48VjKL8ypnLubr5SqTeX2BQ=] */

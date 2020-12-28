@@ -33,6 +33,7 @@
       </owns>
     </resource>
     <resource statement-guid="befac74f-46d0-11eb-b318-ab9601344039" type="resource" guid="befaa03b-46d0-11eb-b318-ab9601344039" />
+    <resource statement-guid="71c2b8a3-4867-11eb-9145-15500bdbc7d7" type="resource" guid="71c26a7f-4867-11eb-9145-15500bdbc7d7" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="48859dcb-46d0-11eb-b318-ab9601344039" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -57,6 +58,9 @@
         </predicate>
         <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="6bd7d1fb-46d0-11eb-b318-ab9601344039" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+        </predicate>
+        <predicate guid="b699611a-4c4b-11e3-8265-b93c47ae10f9">
+          <object statement-guid="d8ebd2ae-48eb-11eb-9145-15500bdbc7d7" type="resource" guid="da661c47-4c4b-11e3-8265-b93c47ae10f9" />
         </predicate>
       </resource>
     </object>
@@ -157,6 +161,19 @@
         </predicate>
         <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="befac74e-46d0-11eb-b318-ab9601344039" type="resource" guid="455ad4f1-1214-11de-9421-11aa81780007" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="71c2b8a3-4867-11eb-9145-15500bdbc7d7">
+      <resource guid="71c26a7f-4867-11eb-9145-15500bdbc7d7">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71c29191-4867-11eb-9145-15500bdbc7d7" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="26a03a1c-486a-11eb-9145-15500bdbc7d7" type="literal">cleon.applications.actifsource.metamodel.spec.system.javamodel.PackagesValidationAspect</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="71c29192-4867-11eb-9145-15500bdbc7d7" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

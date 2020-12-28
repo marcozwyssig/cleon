@@ -1,3 +1,4 @@
+
 package cleon.applications.actifsource.metamodel.spec.system.javamodel;
 
 import ch.actifsource.core.CorePackage;

@@ -4,6 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class PluginPackage {
   
+  public static final Resource MANIFEST__T_MF_ExportPackage = new Resource("9715bc38-49ee-11eb-a257-57f1ec3994e6");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +25,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.plugin,drzlnCn0r3I5yZsSphm7OLDErvc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.plugin,afYobTHBfhzWUqs7ZQUwpuYC7ds=] */

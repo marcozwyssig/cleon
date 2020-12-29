@@ -33,7 +33,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.testingmethods.hermes.metamodel.spec._01_concept,
+Export-Package: 
+ cleon.testingmethods.hermes.metamodel.spec._01_concept,
  cleon.testingmethods.hermes.metamodel.spec._01_concept.javamodel,
  cleon.testingmethods.hermes.metamodel.spec._01_concept.test_constraints.failureclass,
  cleon.testingmethods.hermes.metamodel.spec._01_concept.test_constraints.failureclass.javamodel,
@@ -89,4 +90,3 @@ Export-Package: cleon.testingmethods.hermes.metamodel.spec._01_concept,
  cleon.testingmethods.hermes.metamodel.spec.javamodel,
  cleon.testingmethods.hermes.metamodel.template.asciidoc,
  cleon.testingmethods.hermes.metamodel.template.docbook
-

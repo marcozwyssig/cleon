@@ -32,7 +32,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.architecturemethods.systemarc42.metamodel.importer.csv,
+Export-Package: 
+ cleon.architecturemethods.systemarc42.metamodel.importer.csv,
  cleon.architecturemethods.systemarc42.metamodel.spec,
  cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,
  cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel,
@@ -149,4 +150,3 @@ Export-Package: cleon.architecturemethods.systemarc42.metamodel.importer.csv,
  cleon.architecturemethods.systemarc42.metamodel.template.txt,
  cleon.architecturemethods.systemarc42.metamodel.template.xml,
  cleon.architecturemethods.systemarc42.metamodel.template.yed
-

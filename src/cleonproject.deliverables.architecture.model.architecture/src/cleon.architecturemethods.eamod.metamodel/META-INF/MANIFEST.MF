@@ -25,7 +25,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.architecturemethods.eamod.metamodel.spec.chan.knockout,
+Export-Package: 
+ cleon.architecturemethods.eamod.metamodel.spec.chan.knockout,
  cleon.architecturemethods.eamod.metamodel.spec.chan.knockout.javamodel,
  cleon.architecturemethods.eamod.metamodel.spec.chan.weighting,
  cleon.architecturemethods.eamod.metamodel.spec.chan.weighting.javamodel,
@@ -127,4 +128,3 @@ Export-Package: cleon.architecturemethods.eamod.metamodel.spec.chan.knockout,
  cleon.architecturemethods.eamod.metamodel.template.xmi.chrv,
  cleon.architecturemethods.eamod.metamodel.template.xmi.nsov.v2.productcatalog,
  cleon.architecturemethods.eamod.metamodel.template.xml.chrv
-

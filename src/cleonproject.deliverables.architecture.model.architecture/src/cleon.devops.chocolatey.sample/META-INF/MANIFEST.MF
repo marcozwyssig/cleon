@@ -25,8 +25,4 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.devops.chocolatey.sample,
- cleon.devops.chocolatey.sample.spec,
- cleon.devops.chocolatey.sample.spec.javamodel,
- cleon.devops.chocolatey.sample.javamodel
-
+Export-Package: 

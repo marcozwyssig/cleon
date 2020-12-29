@@ -476,6 +476,7 @@
         <resource statement-guid="7a91e659-49f1-11eb-a257-57f1ec3994e6" type="resource" guid="7a91e656-49f1-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="7a920d6e-49f1-11eb-a257-57f1ec3994e6" type="resource" guid="7a91e65b-49f1-11eb-a257-57f1ec3994e6" />
         <resource statement-guid="7a96535a-49f1-11eb-a257-57f1ec3994e6" type="resource" guid="7a965357-49f1-11eb-a257-57f1ec3994e6" />
+        <resource statement-guid="0d379f60-49fb-11eb-82ab-0d86130a47ce" type="resource" guid="0d363fcd-49fb-11eb-82ab-0d86130a47ce" />
       </owns>
     </resource>
   </owns>
@@ -5214,6 +5215,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="7a96535b-49f1-11eb-a257-57f1ec3994e6" type="literal">cleonproject.deliverables.architecture.model.architecture</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="0d379f60-49fb-11eb-82ab-0d86130a47ce">
+            <resource guid="0d363fcd-49fb-11eb-82ab-0d86130a47ce">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0d368def-49fb-11eb-82ab-0d86130a47ce" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0d3862b1-49fb-11eb-82ab-0d86130a47ce" type="literal">cleon.applications.actifsource.sample.category_b.feature_g.metamodel</object>
               </predicate>
             </resource>
           </object>

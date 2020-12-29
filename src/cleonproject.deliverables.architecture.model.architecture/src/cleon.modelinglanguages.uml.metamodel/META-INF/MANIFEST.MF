@@ -21,7 +21,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.modelinglanguages.uml.metamodel.spec,
+Export-Package: 
+ cleon.modelinglanguages.uml.metamodel.spec,
  cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine,
  cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine.javamodel,
  cleon.modelinglanguages.uml.metamodel.spec.javamodel,
@@ -69,4 +70,3 @@ Export-Package: cleon.modelinglanguages.uml.metamodel.spec,
  cleon.modelinglanguages.uml.template.xmi,
  cleon.modelinglanguages.uml.template.xmi.importer,
  cleon.modelinglanguages.uml.template.xmi.javamodel
-

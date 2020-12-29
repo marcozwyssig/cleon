@@ -15,7 +15,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.ui.wizard;bundle-version="9.0.0",
  org.eclipse.core.runtime;bundle-version="3.13.0",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.common.resources.metamodel.spec.active,
+Export-Package: 
+ cleon.common.resources.metamodel.spec.active,
  cleon.common.resources.metamodel.spec.active.javamodel,
  cleon.common.resources.metamodel.spec.availability,
  cleon.common.resources.metamodel.spec.availability.javamodel,
@@ -46,4 +47,3 @@ Export-Package: cleon.common.resources.metamodel.spec.active,
  cleon.common.resources.metamodel.spec.versions.javamodel,
  cleon.common.resources.metamodel.spec.workstate,
  cleon.common.resources.metamodel.spec.workstate.javamodel
-

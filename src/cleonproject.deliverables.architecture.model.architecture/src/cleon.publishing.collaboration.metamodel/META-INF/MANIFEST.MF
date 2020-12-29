@@ -34,12 +34,12 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.publishing.collaboration.metamodel.spec,
+Export-Package: 
+ cleon.publishing.collaboration.metamodel.spec,
  cleon.publishing.collaboration.metamodel.spec.javamodel,
  cleon.publishing.collaboration.metamodel.spec.manuals,
- cleon.publishing.collaboration.metamodel.spec.manuals.installationmanual,
  cleon.publishing.collaboration.metamodel.spec.manuals.javamodel,
+ cleon.publishing.collaboration.metamodel.spec.manuals.installationmanual,
  cleon.publishing.collaboration.metamodel.spec.manuals.readme,
  cleon.publishing.collaboration.metamodel.spec.manuals.readme.javamodel,
  cleon.publishing.collaboration.metamodel.spec.manuals.usermanual
-

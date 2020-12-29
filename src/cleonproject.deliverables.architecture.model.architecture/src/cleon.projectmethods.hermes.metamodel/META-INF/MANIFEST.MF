@@ -21,7 +21,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.projectmethods.hermes.metamodel.spec,
+Export-Package: 
+ cleon.projectmethods.hermes.metamodel.spec,
  cleon.projectmethods.hermes.metamodel.spec.javamodel,
  cleon.projectmethods.hermes.metamodel.spec.modules.procurement,
  cleon.projectmethods.hermes.metamodel.spec.modules.procurement.javamodel,
@@ -136,4 +137,3 @@ Export-Package: cleon.projectmethods.hermes.metamodel.spec,
  cleon.projectmethods.hermes.metamodel.template.docbook.steering,
  cleon.projectmethods.hermes.metamodel.template.tj3,
  cleon.projectmethods.hermes.metamodel.template.versionone
-

@@ -31,7 +31,8 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleon.architecturemethods.arc42.metamodel.spec,
+Export-Package: 
+ cleon.architecturemethods.arc42.metamodel.spec,
  cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals,
  cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals.javamodel,
  cleon.architecturemethods.arc42.metamodel.spec._02_architecture_constraints,
@@ -124,4 +125,3 @@ Export-Package: cleon.architecturemethods.arc42.metamodel.spec,
  cleon.architecturemethods.arc42.metamodel.template.asciidoc,
  cleon.architecturemethods.arc42.metamodel.template.docbook,
  cleon.architecturemethods.arc42.metamodel.template.plantuml
-

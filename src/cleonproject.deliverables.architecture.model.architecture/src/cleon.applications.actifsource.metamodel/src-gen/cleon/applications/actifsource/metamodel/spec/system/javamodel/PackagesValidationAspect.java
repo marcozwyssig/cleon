@@ -9,7 +9,6 @@ import ch.actifsource.core.job.Select;
 import ch.actifsource.core.job.Update;
 import ch.actifsource.core.model.aspects.IResourceValidationAspect;
 import ch.actifsource.core.patch.IStatementPosition;
-import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.set.INodeSet;
 import ch.actifsource.core.update.IModifiable;
 import ch.actifsource.core.util.LiteralUtil;
@@ -24,7 +23,7 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 
 	@Override
 	public void validate(ValidationContext validationContext, List<IResourceInconsistency> inconsistencies) {
-		final var typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
+		final var typeSystem = validationContext.getTypeSystem();
 		final var dynamicResourceRepository = typeSystem.getResourceRepository();
 		final var packages = AllPackagesFunction.getPackages(typeSystem);
 		final var packagesNodes = dynamicResourceRepository.getResource(IPackages.class,
@@ -43,10 +42,10 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 					.anyMatch(x -> x.equals(packageName));
 			if (!match) {
 				final var message = String.format("Package %s doesnt exist in packages", packageName);
-				final var packageRelation = Select.relationStatementOrNull(validationContext.getReadJobExecutor(),
-						SystemPackage.Packages_packages, validationContext.getResource());
 
-				Objects.requireNonNull(packageRelation, "packageRelation can't be null");
+				final var packageRelation = Select.statementForRelationOrNull(validationContext.getReadJobExecutor(),
+						SystemPackage.EclipseEcosystem_rootPackages,
+						EclipseEcosystem.selectToMeRootPackages(packagesNodes).getResource());
 
 				final AbstractQuickFix quickfix = new AbstractQuickFix("Add package", "", () -> true) {
 
@@ -60,6 +59,7 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 					}
 
 				};
+
 				inconsistencies.add(new SingleStatementInconsistency(packageRelation, message, quickfix));
 			}
 		}
@@ -72,7 +72,7 @@ public class PackagesValidationAspect implements IResourceValidationAspect {
 			final var match = packages.contains(LiteralUtil.create(packageNode.selectName()));
 			if (!match) {
 				final var message = String.format(
-						"Packages %s doesnt exist in packages. Remove the package from the packages.",
+						"Packages %s doesnt exist in packages. Remove package %s from the packages.",
 						packageNode.selectName());
 				final var packageRelation = Select.statementOrNull(validationContext.getReadJobExecutor(),
 						validationContext.getResource(), SystemPackage.Packages_packages, packageNode.getResource());

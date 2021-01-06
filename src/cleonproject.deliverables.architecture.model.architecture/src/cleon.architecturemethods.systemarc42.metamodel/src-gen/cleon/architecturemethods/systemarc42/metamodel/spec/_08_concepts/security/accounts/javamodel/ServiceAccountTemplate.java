@@ -48,6 +48,15 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
      _setSingleAttribute(cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, identifier);
   }
 
+  @Override
+  public java.lang.Integer selectOverrideId() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_overrideId);
+  }
+    
+  public void setOverrideId(java.lang.Integer overrideId) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_overrideId, overrideId);
+  }
+
   // relations
   
   @Override
@@ -86,6 +95,7 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_overrideId, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_serviceConfigurationForServiceAccount, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -98,4 +108,4 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,5nq20jlFwNo8tY2id3/hYIDRKbg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,QSnm5a9Tb0xxX8EizkBMl3hEyAo=] */

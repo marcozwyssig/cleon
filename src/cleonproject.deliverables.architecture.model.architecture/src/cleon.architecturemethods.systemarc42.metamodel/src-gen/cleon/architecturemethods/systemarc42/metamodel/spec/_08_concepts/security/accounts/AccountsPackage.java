@@ -35,6 +35,9 @@ public class AccountsPackage {
   public static final Resource ServiceAccountBuildingBlockSystem_serviceAccountTemplate = new Resource("3e558b3d-395c-11eb-978d-47c0228773ba");
   public static final Resource ServiceAccountBuildingBlockSystem_serviceAccountTemplatesForSystem = new Resource("9083a5d4-396c-11eb-978d-47c0228773ba");
   public static final Resource ServiceAccountTemplate_serviceConfigurationForServiceAccount = new Resource("9959f4d3-396d-11eb-978d-47c0228773ba");
+  public static final Resource ServiceAccount_export = new Resource("d40bd777-5000-11eb-8df9-adb928521f3a");
+  public static final Resource ServiceAccountTemplate_overrideId = new Resource("4339c4c8-5005-11eb-8df9-adb928521f3a");
+  public static final Resource FunctionSpace_aE_Accounts_ServiceAccountTemplate = new Resource("c912e7b8-5005-11eb-8df9-adb928521f3a");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +58,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,kiq57KjXOsaDhApaGYMwefNLLd8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,Lmi72PQ+QypEaT0EcY4VNYIcwhk=] */

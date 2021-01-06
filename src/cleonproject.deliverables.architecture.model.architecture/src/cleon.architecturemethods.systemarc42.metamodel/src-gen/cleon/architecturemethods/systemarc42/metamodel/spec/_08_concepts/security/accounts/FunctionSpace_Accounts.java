@@ -30,7 +30,7 @@ public class FunctionSpace_Accounts {
     public java.lang.Integer RangeId();
 
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSitesByName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite);
 
   }
   
@@ -40,7 +40,7 @@ public class FunctionSpace_Accounts {
     public java.lang.Integer Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
 
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSitesByName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
 
   }
   
@@ -53,6 +53,10 @@ public class FunctionSpace_Accounts {
     @Override
     public java.lang.Integer Id(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
       /* Begin Protected Region [[b4b25887-3a00-11eb-9823-adf6a3e0c300]] */
+      if (serviceAccount.selectServiceAccountTemplate().selectOverrideId() != null) {
+      	return serviceAccount.selectServiceAccountTemplate().selectOverrideId();
+      }
+
       final var serviceAccountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
       final var id = serviceAccountFunctions.RangeId();
       return id + serviceAccount.selectServiceAccountTemplate().selectIdentifier();
@@ -60,11 +64,11 @@ public class FunctionSpace_Accounts {
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSitesByName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
       /* Begin Protected Region [[edd9abe4-4ff1-11eb-8df9-adb928521f3a]] */
       final var site = serviceAccountEnvironmentSite.selectServiceAccountForSite();
       final var abstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
-      return abstractSiteFunctions.GetSitesBySystemConfiguration(
+      return abstractSiteFunctions.GetAbstractHostsBySystemConfiguration(
       		serviceAccount.selectServiceAccountTemplate().selectServiceConfigurationForServiceAccount());
       /* End Protected Region   [[edd9abe4-4ff1-11eb-8df9-adb928521f3a]] */
     }
@@ -79,8 +83,8 @@ public class FunctionSpace_Accounts {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).Id(serviceAccount);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSitesByName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
-      return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).GetSitesByName(serviceAccountEnvironmentSite, serviceAccount);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+      return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).GetAbstractHostsBySite(serviceAccountEnvironmentSite, serviceAccount);
     }
 
   }
@@ -135,6 +139,31 @@ public class FunctionSpace_Accounts {
 
   }
 
+  public static interface IServiceAccountTemplateFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d42e8939-5005-11eb-8df9-adb928521f3a")
+    public java.lang.Integer Id();
+
+  }
+  
+  public static interface IServiceAccountTemplateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceAccountTemplateFunctionsImpl implements IServiceAccountTemplateFunctionsImpl {
+
+    public static final IServiceAccountTemplateFunctionsImpl INSTANCE = new ServiceAccountTemplateFunctionsImpl();
+
+    private ServiceAccountTemplateFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceAccountTemplateFunctions {
+
+    private ServiceAccountTemplateFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,USyniKVdLa8ST+Tq8AW9USkYEKY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,RqnlWDUWk2FocgxccYBQIMHQ2yQ=] */

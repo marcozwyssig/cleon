@@ -28,6 +28,26 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
     super(resourceRepository, resource, IServiceAccount.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectExport() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccount_export);
+  }
+    
+  public void setExport(java.lang.Boolean export) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccount_export, export);
+  }
+
+  @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
   // relations
   
   @Override
@@ -83,6 +103,8 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccount_export, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccount_activitiesForAccount, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IBuiltinRole.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccount_builtinRoles, visitor);
@@ -105,4 +127,4 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,TqUvvcg+prDNDYXyuy9rvDYoNWg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,WhqOwypS/zSrsE3izWURSHMd3kk=] */

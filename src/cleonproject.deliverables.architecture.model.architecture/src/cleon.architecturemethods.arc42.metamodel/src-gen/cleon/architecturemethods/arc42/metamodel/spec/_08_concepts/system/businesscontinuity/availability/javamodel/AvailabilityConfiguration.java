@@ -98,7 +98,7 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
     if (isVM__F_Sicherung__F_und__F_Wiederherstellung()) return visitor.visitVM__F_Sicherung__F_und__F_Wiederherstellung();
     if (isVM__F_Replikation()) return visitor.visitVM__F_Replikation();
-    if (isVM__F_Redundanz()) return visitor.visitVM__F_Redundanz();
+    if (isRedundanz()) return visitor.visitRedundanz();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -124,8 +124,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitVM__F_Replikation();
       return;
     }
-    if (isVM__F_Redundanz()) {
-      visitor.visitVM__F_Redundanz();
+    if (isRedundanz()) {
+      visitor.visitRedundanz();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -159,9 +159,9 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isVM__F_Redundanz() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Redundanz);
+  public boolean isRedundanz() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Redundanz);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,dUZIPPcUyZdVXslBRogj/gW4ibQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,4j+PWhVFNe77Bk0TKkH4fXkLxY8=] */

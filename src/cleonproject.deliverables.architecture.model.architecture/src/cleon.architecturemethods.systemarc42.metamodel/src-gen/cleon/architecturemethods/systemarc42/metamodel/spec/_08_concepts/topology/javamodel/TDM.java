@@ -40,6 +40,15 @@ public class TDM extends DynamicResource implements ITDM {
   }
 
   @Override
+  public java.lang.Boolean selectIsEnabled() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled);
+  }
+    
+  public void setIsEnabled(java.lang.Boolean isEnabled) {
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -123,6 +132,7 @@ public class TDM extends DynamicResource implements ITDM {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractSiteWithZone_owner, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
@@ -135,4 +145,4 @@ public class TDM extends DynamicResource implements ITDM {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d18bebe1-92b3-11e9-b2b4-f340ae70802c,iz4Oa0umBp0T/ERtunO0Lxxr3Hk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d18bebe1-92b3-11e9-b2b4-f340ae70802c,M+KzGFeOX000iGX/eYeLbs1FTEQ=] */

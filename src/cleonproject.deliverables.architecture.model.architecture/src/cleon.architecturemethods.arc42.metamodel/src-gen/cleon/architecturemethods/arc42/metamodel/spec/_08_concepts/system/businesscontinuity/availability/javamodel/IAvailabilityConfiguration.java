@@ -18,7 +18,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitVM__F_Replikation();
     
-    public void visitVM__F_Redundanz();
+    public void visitRedundanz();
     
   }
   
@@ -34,7 +34,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitVM__F_Replikation();
     
-    public R visitVM__F_Redundanz();
+    public R visitRedundanz();
     
   }
   
@@ -60,9 +60,9 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isVM__F_Replikation();
   
-  public boolean isVM__F_Redundanz();
+  public boolean isRedundanz();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,KjOV3LSjRHgrU13YZJpdHHbNxAw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,iehXnJoIaQB5/mAZV2GinVaW61I=] */

@@ -26,6 +26,9 @@ public class FunctionSpace_Active {
     @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
     public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue();
 
+    @IDynamicResourceExtension.MethodId("3e55001e-54af-11eb-8ec7-9b1f37a1ee7d")
+    public java.lang.Boolean Value();
+
   }
   
   public static interface IEnabledWithDefaultTrueAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -35,6 +38,9 @@ public class FunctionSpace_Active {
 
     @IDynamicResourceExtension.MethodId("7cc60bb8-27e5-11eb-b239-011c2d3c4f88")
     public <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList);
+
+    @IDynamicResourceExtension.MethodId("3e55001e-54af-11eb-8ec7-9b1f37a1ee7d")
+    public java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware);
 
   }
   
@@ -47,10 +53,10 @@ public class FunctionSpace_Active {
     @Override
     public java.lang.Boolean IsActiveOrDefaultTrue(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
       /* Begin Protected Region [[8922ce02-259b-11eb-b9ae-4df44b18aa9b]] */
-      if (enabledWithDefaultTrueAware.selectIsEnabled() == null) {
+      if (Value(enabledWithDefaultTrueAware) == null) {
       	return true;
       }
-      return enabledWithDefaultTrueAware.selectIsEnabled().booleanValue();
+      return Value(enabledWithDefaultTrueAware);
       /* End Protected Region   [[8922ce02-259b-11eb-b9ae-4df44b18aa9b]] */
     }
 
@@ -60,6 +66,13 @@ public class FunctionSpace_Active {
       return enabledWithDefaultTrueAwareList.stream().filter(this::IsActiveOrDefaultTrue)
       		.collect(Collectors.toList());
       /* End Protected Region   [[7cc60bb8-27e5-11eb-b239-011c2d3c4f88]] */
+    }
+
+    @Override
+    public java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+      /* Begin Protected Region [[3e55001e-54af-11eb-8ec7-9b1f37a1ee7d]] */
+      return enabledWithDefaultTrueAware.selectIsEnabled();
+      /* End Protected Region   [[3e55001e-54af-11eb-8ec7-9b1f37a1ee7d]] */
     }
 
   }
@@ -74,6 +87,10 @@ public class FunctionSpace_Active {
 
     public static <T extends cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware> List<T> OnlyActiveOrDefaultTrue(final List<T> enabledWithDefaultTrueAwareList) {
       return DynamicResourceUtil.invoke(IEnabledWithDefaultTrueAwareFunctionsImpl.class, EnabledWithDefaultTrueAwareFunctionsImpl.INSTANCE, enabledWithDefaultTrueAwareList).OnlyActiveOrDefaultTrue(enabledWithDefaultTrueAwareList);
+    }
+
+    public static java.lang.Boolean Value(final cleon.common.resources.metamodel.spec.active.javamodel.IEnabledWithDefaultTrueAware enabledWithDefaultTrueAware) {
+      return DynamicResourceUtil.invoke(IEnabledWithDefaultTrueAwareFunctionsImpl.class, EnabledWithDefaultTrueAwareFunctionsImpl.INSTANCE, enabledWithDefaultTrueAware).Value(enabledWithDefaultTrueAware);
     }
 
   }
@@ -104,7 +121,7 @@ public class FunctionSpace_Active {
       if (enabledWithDefaultFalseAware.selectIsEnabled() == null) {
       	return false;
       }
-      return enabledWithDefaultFalseAware.selectIsEnabled().booleanValue();
+      return enabledWithDefaultFalseAware.selectIsEnabled();
       /* End Protected Region   [[dd3a23bc-259d-11eb-b9ae-4df44b18aa9b]] */
     }
 
@@ -122,4 +139,4 @@ public class FunctionSpace_Active {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,01rcWLFhSipgTLa6dt/8Y9QOUEk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5731c4e3-259b-11eb-b9ae-4df44b18aa9b,g+EzHCAL/cP4kADsP/9AgD0QPDw=] */

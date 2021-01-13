@@ -31,6 +31,15 @@ public class SourceInSubSecurityZoneByNetwork extends DynamicResource implements
   // attributes
   
   @Override
+  public java.util.List<java.lang.String> selectDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
+  }
+    
+  public void setDescriptions(java.util.List<java.lang.String> descriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
+  }
+
+  @Override
   public java.lang.String selectOverrideHostGroupName() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_overrideHostGroupName);
   }
@@ -115,6 +124,7 @@ public class SourceInSubSecurityZoneByNetwork extends DynamicResource implements
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_overrideHostGroupName, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, visitor);
@@ -126,4 +136,4 @@ public class SourceInSubSecurityZoneByNetwork extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9e263c-c776-11ea-b0b6-e5df79e86bc2,Gc5Vyyuqajdl1dAcmTTUhlWLqRw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3b9e263c-c776-11ea-b0b6-e5df79e86bc2,J98UXlabcRzKQ9763D7CeYvEcj8=] */

@@ -11,9 +11,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorResponsibility;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID;
-
+import java.util.stream.Collectors;
 /* End Protected Region   [[189e1c41-1e07-11e9-834d-77c41fccc6bf,imports]] */
 
 public class FunctionSpace_AuthZ_Deployment {
@@ -49,21 +48,24 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent GetRoleSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite site, final cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IActor actor, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IResponsibility responsibilty, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent systemComponent, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IEnvironmentRBAC environmentRBAC) {
       /* Begin Protected Region [[f29d2896-78de-11ea-a009-ab381ce86597]] */
-      final IRoleSiteGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForSite().values().stream().filter(x -> x.selectSite().selectName().equals(site.selectName())).findFirst().orElse(null);
-      if(roleNetDomainGroup == null) {
+      final IRoleSiteGroup roleNetDomainGroup = environmentRBAC.selectRoles().selectRoleForSite().values()
+      		.stream().filter(x -> x.selectSite().selectName().equals(site.selectName())).findFirst()
+      		.orElse(null);
+      if (roleNetDomainGroup == null) {
       	return null;
       }
 
       final IRoleActorGroup roleActorGroup = roleNetDomainGroup.selectRoleforActors().get(actor.getResource());
-      if( roleActorGroup == null ) {
+      if (roleActorGroup == null) {
       	return null;
       }
 
-      final IRoleActorResponsibility roleActorResponsiblity = roleActorGroup.selectRoleActorResponsibilities().get(responsibilty.getResource());
-      if( roleActorResponsiblity == null ) {
+      final IRoleActorResponsibility roleActorResponsiblity = roleActorGroup.selectRoleActorResponsibilities()
+      		.get(responsibilty.getResource());
+      if (roleActorResponsiblity == null) {
       	return null;
       }
-      return roleActorResponsiblity.selectRolesForSystemComponents().get(systemComponent.getResource());   
+      return roleActorResponsiblity.selectRolesForSystemComponents().get(systemComponent.getResource());
       /* End Protected Region   [[f29d2896-78de-11ea-a009-ab381ce86597]] */
     }
 
@@ -117,16 +119,16 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public java.lang.Integer GetRange(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
-      return GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup) - 1;   
+      return GetId(abstractSiteGroup) + MaxRounded(abstractSiteGroup) - 1;
       /* End Protected Region   [[a904cb96-1e19-11e9-865e-41ef48a95f70]] */
     }
 
     @Override
     public java.lang.Integer GetId(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[893ebfeb-7f21-11e9-9a52-07d4b074defc]] */
-      final IAbstractSite abstractSite = abstractSiteGroup.selectSite();
-      if( abstractSite instanceof IAbstractSiteWithFunctionID ) {
-      	final IAbstractSiteWithFunctionID functionID = (IAbstractSiteWithFunctionID)abstractSite;
+      final var abstractSite = abstractSiteGroup.selectSite();
+      if (abstractSite instanceof IAbstractSiteWithFunctionID) {
+      	final var functionID = (IAbstractSiteWithFunctionID) abstractSite;
       	return functionID.selectFunctionID();
       }
       return 0;
@@ -136,7 +138,7 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public java.lang.Integer MaxRounded(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractSiteGroup abstractSiteGroup) {
       /* Begin Protected Region [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
-      final IAbstractSiteGroupFunctions functions = abstractSiteGroup.extension(IAbstractSiteGroupFunctions.class);
+      final var functions = abstractSiteGroup.extension(IAbstractSiteGroupFunctions.class);
       return (functions.Max() + 99) / 100 * 100;
       /* End Protected Region   [[8f1d7786-9c8f-11e9-9b32-35cf2fd07621]] */
     }
@@ -193,10 +195,19 @@ public class FunctionSpace_AuthZ_Deployment {
     @IDynamicResourceExtension.MethodId("d55df488-19b9-11ea-bc72-af84f3c76c84")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetSiteWithAllowedToManage();
 
+    @IDynamicResourceExtension.MethodId("9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d")
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive();
+
+    @IDynamicResourceExtension.MethodId("ff9ba31b-54ac-11eb-8ec7-9b1f37a1ee7d")
+    public java.lang.Boolean IsActiveOrDefaultTrueRecursive();
+
   }
   
   public static interface IAbstractGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d")
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive(final List<T> abstractGroupList);
+
   }
   
   public static class AbstractGroupFunctionsImpl implements IAbstractGroupFunctionsImpl {
@@ -205,11 +216,25 @@ public class FunctionSpace_AuthZ_Deployment {
 
     private AbstractGroupFunctionsImpl() {}
 
+    @Override
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive(final List<T> abstractGroupList) {
+      /* Begin Protected Region [[9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d]] */
+      return abstractGroupList.stream().filter(x -> {
+      	final var abstractGroupFunctions = x.extension(IAbstractGroupFunctions.class);
+      	return abstractGroupFunctions.IsActiveOrDefaultTrueRecursive();
+      }).collect(Collectors.toList());
+      /* End Protected Region   [[9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d]] */
+    }
+
   }
   
   public static class AbstractGroupFunctions {
 
     private AbstractGroupFunctions() {}
+
+    public static <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive(final List<T> abstractGroupList) {
+      return DynamicResourceUtil.invoke(IAbstractGroupFunctionsImpl.class, AbstractGroupFunctionsImpl.INSTANCE, abstractGroupList).OnlyActiveOrDefaultTrueRecursive(abstractGroupList);
+    }
 
   }
 
@@ -314,7 +339,7 @@ public class FunctionSpace_AuthZ_Deployment {
     @Override
     public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
-      return role.selectHasActivities().contains(activityPermission);   
+      return role.selectHasActivities().contains(activityPermission);
       /* End Protected Region   [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
     }
 
@@ -332,4 +357,4 @@ public class FunctionSpace_AuthZ_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,7zbkcDHY3AvIPo5SwSDnL4CYtGM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,xlrCJOZdw9hK2N3ptCPxBBx55Hc=] */

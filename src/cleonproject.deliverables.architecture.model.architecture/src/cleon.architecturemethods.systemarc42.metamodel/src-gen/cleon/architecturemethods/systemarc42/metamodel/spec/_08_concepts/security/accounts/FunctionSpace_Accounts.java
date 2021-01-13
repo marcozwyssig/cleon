@@ -8,7 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[96deff1f-2830-11eb-a351-0f02534982d8,imports]] */
+import java.util.stream.Collectors;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions;
+import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
 /* End Protected Region   [[96deff1f-2830-11eb-a351-0f02534982d8,imports]] */
 
 public class FunctionSpace_Accounts {
@@ -32,6 +34,15 @@ public class FunctionSpace_Accounts {
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite);
 
+    @IDynamicResourceExtension.MethodId("0e5d40d5-54b8-11eb-8ec7-9b1f37a1ee7d")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetAbstractSite();
+
+    @IDynamicResourceExtension.MethodId("0574c273-54af-11eb-8ec7-9b1f37a1ee7d")
+    public java.lang.Boolean Value();
+
+    @IDynamicResourceExtension.MethodId("2dd63939-54e5-11eb-a33f-e91880debedc")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts();
+
   }
   
   public static interface IServiceAccountFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -41,6 +52,12 @@ public class FunctionSpace_Accounts {
 
     @IDynamicResourceExtension.MethodId("edd9abe4-4ff1-11eb-8df9-adb928521f3a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
+
+    @IDynamicResourceExtension.MethodId("0574c273-54af-11eb-8ec7-9b1f37a1ee7d")
+    public java.lang.Boolean Value(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount);
+
+    @IDynamicResourceExtension.MethodId("2dd63939-54e5-11eb-a33f-e91880debedc")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> serviceAccountList);
 
   }
   
@@ -73,6 +90,27 @@ public class FunctionSpace_Accounts {
       /* End Protected Region   [[edd9abe4-4ff1-11eb-8df9-adb928521f3a]] */
     }
 
+    @Override
+    public java.lang.Boolean Value(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+      /* Begin Protected Region [[0574c273-54af-11eb-8ec7-9b1f37a1ee7d]] */
+      final var accountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
+      final var defaultTrueAwareFunctions = accountFunctions.GetAbstractSite()
+      		.extension(IEnabledWithDefaultTrueAwareFunctions.class);
+
+      if (defaultTrueAwareFunctions.IsActiveOrDefaultTrue() == false) {
+      	return false;
+      }
+      return serviceAccount.extension(IEnabledWithDefaultTrueAwareFunctions.class).IsActiveOrDefaultTrue();
+      /* End Protected Region   [[0574c273-54af-11eb-8ec7-9b1f37a1ee7d]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> serviceAccountList) {
+      /* Begin Protected Region [[2dd63939-54e5-11eb-a33f-e91880debedc]] */
+      return serviceAccountList.stream().filter(this::Value).collect(Collectors.toList());
+      /* End Protected Region   [[2dd63939-54e5-11eb-a33f-e91880debedc]] */
+    }
+
   }
   
   public static class ServiceAccountFunctions {
@@ -85,6 +123,14 @@ public class FunctionSpace_Accounts {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
       return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).GetAbstractHostsBySite(serviceAccountEnvironmentSite, serviceAccount);
+    }
+
+    public static java.lang.Boolean Value(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
+      return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccount).Value(serviceAccount);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> serviceAccountList) {
+      return DynamicResourceUtil.invoke(IServiceAccountFunctionsImpl.class, ServiceAccountFunctionsImpl.INSTANCE, serviceAccountList).OnlyEnabledServiceAccounts(serviceAccountList);
     }
 
   }
@@ -166,4 +212,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,RqnlWDUWk2FocgxccYBQIMHQ2yQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,moPZiYJ8NVRnWQmztJg51Z1QPxM=] */

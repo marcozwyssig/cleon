@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securi
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IServiceAccountTemplate extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
+public interface IServiceAccountTemplate extends cleon.common.resources.metamodel.spec.id.javamodel.IIntegerBusinessObjectId, ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.IMandatoryDescription {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("9eec10e6-395b-11eb-978d-47c0228773ba");
   
@@ -14,4 +14,4 @@ public interface IServiceAccountTemplate extends cleon.common.resources.metamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,ZE6UmHGVxICCKI4icufX2lxp3lk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,ji3UC6EAawY7+1R6x9plvXZg8ww=] */

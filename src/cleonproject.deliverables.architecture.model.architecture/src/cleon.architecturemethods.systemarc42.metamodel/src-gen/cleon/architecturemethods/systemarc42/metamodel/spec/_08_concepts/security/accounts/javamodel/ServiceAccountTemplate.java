@@ -49,6 +49,15 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
   }
 
   @Override
+  public java.util.List<java.lang.String> selectMandatoryDescriptions() {
+    return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions);
+  }
+    
+  public void setMandatoryDescriptions(java.util.List<java.lang.String> mandatoryDescriptions) {
+     _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, mandatoryDescriptions);
+  }
+
+  @Override
   public java.lang.Integer selectOverrideId() {
     return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_overrideId);
   }
@@ -93,8 +102,8 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_overrideId, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.AccountsPackage.ServiceAccountTemplate_serviceConfigurationForServiceAccount, visitor);
@@ -108,4 +117,4 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,QSnm5a9Tb0xxX8EizkBMl3hEyAo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,zy7JWGQjx9ht5hxsMdjBMoBred4=] */

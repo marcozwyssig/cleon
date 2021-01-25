@@ -8,8 +8,8 @@
     <resource statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70" type="resource" guid="315c388e-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70" type="resource" guid="63f98721-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa" type="resource" guid="c2ced2f5-77b9-11e9-8094-13b915a38efa" />
-    <resource statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72" />
     <resource statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c" type="resource" guid="bc7b8255-00df-11eb-89a7-8344c130228c" />
+    <resource statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="21408955-1e38-11e9-865e-41ef48a95f70" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -94,7 +94,7 @@
           <object statement-guid="c2cefa07-77b9-11e9-8094-13b915a38efa" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c3540889-77b9-11e9-8094-13b915a38efa" type="literal">VM Sicherung und Wiederherstellung</object>
+          <object statement-guid="c3540889-77b9-11e9-8094-13b915a38efa" type="literal">Sicherung und Wiederherstellung</object>
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="c5cc347a-77b9-11e9-8094-13b915a38efa" type="literal">Wenn der Knoten ausfällt, wird sie aus der Sicherung wiederhergestellt. Die Wiederherstellung kann am gleichen oder anderen Standort erfolgen.</object>
@@ -104,35 +104,35 @@
         </predicate>
       </resource>
     </object>
-    <object statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72">
-      <resource guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="709ec8b5-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="709ec8b6-ff1d-11ea-afaf-693ca36c7b72" type="literal">VM Replikation</object>
-        </predicate>
-        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="709ec8b7-ff1d-11ea-afaf-693ca36c7b72" type="literal">Die VM wird regelmässig (täglich) repliziert.</object>
-        </predicate>
-        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
-          <object statement-guid="cf2bb2a4-00da-11eb-85a8-c1eaace008cf" type="literal">Beim Ausfall in einem Standort wird das Replikat auf dem verfügbaren Standort angewendet (gleicher Hostname und gleiche IP-Adresse).</object>
-        </predicate>
-      </resource>
-    </object>
     <object statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c">
       <resource guid="bc7b8255-00df-11eb-89a7-8344c130228c">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="bc7b8257-00df-11eb-89a7-8344c130228c" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Redundanz</object>
+          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Redundante Sicherung und Wiederherstellung</object>
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
           <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Replikation oder Kommunikation zwischen den Komponenten. </object>
         </predicate>
         <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
           <object statement-guid="db652cc5-00df-11eb-89a7-8344c130228c" type="literal">Falls eine Komponente nicht mehr verfügbar ist, kann auf die verfügbare Komponente zugegriffen werden.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72">
+      <resource guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="709ec8b5-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="709ec8b6-ff1d-11ea-afaf-693ca36c7b72" type="literal">Replikation</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="709ec8b7-ff1d-11ea-afaf-693ca36c7b72" type="literal">Die VM wird regelmässig (täglich) repliziert.</object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="cf2bb2a4-00da-11eb-85a8-c1eaace008cf" type="literal">Beim Ausfall in einem Standort wird das Replikat auf dem verfügbaren Standort angewendet (gleicher Hostname und gleiche IP-Adresse).</object>
         </predicate>
       </resource>
     </object>

@@ -14,11 +14,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitActive__S_Passive__F___N_Failover__O_();
     
-    public void visitVM__F_Sicherung__F_und__F_Wiederherstellung();
+    public void visitSicherung__F_und__F_Wiederherstellung();
     
-    public void visitVM__F_Replikation();
+    public void visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
     
-    public void visitRedundanz();
+    public void visitReplikation();
     
   }
   
@@ -30,11 +30,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitActive__S_Passive__F___N_Failover__O_();
     
-    public R visitVM__F_Sicherung__F_und__F_Wiederherstellung();
+    public R visitSicherung__F_und__F_Wiederherstellung();
     
-    public R visitVM__F_Replikation();
+    public R visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
     
-    public R visitRedundanz();
+    public R visitReplikation();
     
   }
   
@@ -56,13 +56,13 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isActive__S_Passive__F___N_Failover__O_();
   
-  public boolean isVM__F_Sicherung__F_und__F_Wiederherstellung();
+  public boolean isSicherung__F_und__F_Wiederherstellung();
   
-  public boolean isVM__F_Replikation();
+  public boolean isRedundante__F_Sicherung__F_und__F_Wiederherstellung();
   
-  public boolean isRedundanz();
+  public boolean isReplikation();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,iehXnJoIaQB5/mAZV2GinVaW61I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,ebN9fDG/aaDML0TX0gxFwEThB34=] */

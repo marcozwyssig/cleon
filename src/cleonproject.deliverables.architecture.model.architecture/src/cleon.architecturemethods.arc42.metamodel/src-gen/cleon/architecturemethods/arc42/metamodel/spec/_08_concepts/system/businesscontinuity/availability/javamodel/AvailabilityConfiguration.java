@@ -96,9 +96,9 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isNone()) return visitor.visitNone();
     if (isActive__S_Active()) return visitor.visitActive__S_Active();
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
-    if (isVM__F_Sicherung__F_und__F_Wiederherstellung()) return visitor.visitVM__F_Sicherung__F_und__F_Wiederherstellung();
-    if (isVM__F_Replikation()) return visitor.visitVM__F_Replikation();
-    if (isRedundanz()) return visitor.visitRedundanz();
+    if (isSicherung__F_und__F_Wiederherstellung()) return visitor.visitSicherung__F_und__F_Wiederherstellung();
+    if (isRedundante__F_Sicherung__F_und__F_Wiederherstellung()) return visitor.visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
+    if (isReplikation()) return visitor.visitReplikation();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -116,16 +116,16 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitActive__S_Passive__F___N_Failover__O_();
       return;
     }
-    if (isVM__F_Sicherung__F_und__F_Wiederherstellung()) {
-      visitor.visitVM__F_Sicherung__F_und__F_Wiederherstellung();
+    if (isSicherung__F_und__F_Wiederherstellung()) {
+      visitor.visitSicherung__F_und__F_Wiederherstellung();
       return;
     }
-    if (isVM__F_Replikation()) {
-      visitor.visitVM__F_Replikation();
+    if (isRedundante__F_Sicherung__F_und__F_Wiederherstellung()) {
+      visitor.visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
       return;
     }
-    if (isRedundanz()) {
-      visitor.visitRedundanz();
+    if (isReplikation()) {
+      visitor.visitReplikation();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -149,19 +149,19 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isVM__F_Sicherung__F_und__F_Wiederherstellung() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Sicherung__F_und__F_Wiederherstellung);
+  public boolean isSicherung__F_und__F_Wiederherstellung() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Sicherung__F_und__F_Wiederherstellung);
   }
   
   @Override
-  public boolean isVM__F_Replikation() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_VM__F_Replikation);
+  public boolean isRedundante__F_Sicherung__F_und__F_Wiederherstellung() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Redundante__F_Sicherung__F_und__F_Wiederherstellung);
   }
   
   @Override
-  public boolean isRedundanz() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Redundanz);
+  public boolean isReplikation() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Replikation);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,4j+PWhVFNe77Bk0TKkH4fXkLxY8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,umM64/unp5fkb3bbgu+kX2bJoUo=] */

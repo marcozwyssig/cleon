@@ -258,6 +258,48 @@ public class Communications__T_xml {
 
   }
 
+  public static interface ISourceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
+    public java.lang.Boolean IsTemporary();
+
+  }
+  
+  public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
+
+  }
+  
+  public static class SourceFunctionsImpl implements ISourceFunctionsImpl {
+
+    public static final ISourceFunctionsImpl INSTANCE = new SourceFunctionsImpl();
+
+    private SourceFunctionsImpl() {}
+
+    @Override
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+      /* Begin Protected Region [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
+    	if( source.selectIsTemporary() == null ) {
+    		return false;
+    	}
+    	return source.selectIsTemporary().booleanValue();   
+      /* End Protected Region   [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
+    }
+
+  }
+  
+  public static class SourceFunctions {
+
+    private SourceFunctions() {}
+
+    public static java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).IsTemporary(source);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,O2wEGRE4rb65+o2EHDwszkrjoPk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,F+VIZHwXRTIl9eNvTSdHAQOt29s=] */

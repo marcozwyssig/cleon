@@ -12,6 +12,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorResponsibility;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSiteGroup;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithFunctionID;
+import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup;
 import java.util.stream.Collectors;
 /* End Protected Region   [[189e1c41-1e07-11e9-834d-77c41fccc6bf,imports]] */
 
@@ -201,12 +203,27 @@ public class FunctionSpace_AuthZ_Deployment {
     @IDynamicResourceExtension.MethodId("ff9ba31b-54ac-11eb-8ec7-9b1f37a1ee7d")
     public java.lang.Boolean IsActiveOrDefaultTrueRecursive();
 
+    @IDynamicResourceExtension.MethodId("ef96cb9e-621e-11eb-b695-271c721aa03b")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup GetParent();
+
+    @IDynamicResourceExtension.MethodId("9e1f46dd-621f-11eb-b695-271c721aa03b")
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList();
+
+    @IDynamicResourceExtension.MethodId("9dc7296d-6221-11eb-b695-271c721aa03b")
+    public java.lang.Boolean IsEnabled();
+
   }
   
   public static interface IAbstractGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d")
     public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive(final List<T> abstractGroupList);
+
+    @IDynamicResourceExtension.MethodId("9e1f46dd-621f-11eb-b695-271c721aa03b")
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList(final List<T> abstractGroupList);
+
+    @IDynamicResourceExtension.MethodId("9dc7296d-6221-11eb-b695-271c721aa03b")
+    public java.lang.Boolean IsEnabled(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup abstractGroup);
 
   }
   
@@ -226,6 +243,30 @@ public class FunctionSpace_AuthZ_Deployment {
       /* End Protected Region   [[9a7fb20e-54ac-11eb-8ec7-9b1f37a1ee7d]] */
     }
 
+    @Override
+    public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList(final List<T> abstractGroupList) {
+      /* Begin Protected Region [[9e1f46dd-621f-11eb-b695-271c721aa03b]] */
+    	return abstractGroupList.stream().filter( x -> {
+    		return IsEnabled(x);
+    	}).collect(Collectors.toList());   
+      /* End Protected Region   [[9e1f46dd-621f-11eb-b695-271c721aa03b]] */
+    }
+
+    @Override
+    public java.lang.Boolean IsEnabled(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup abstractGroup) {
+      /* Begin Protected Region [[9dc7296d-6221-11eb-b695-271c721aa03b]] */
+		IAbstractGroupFunctions functions = abstractGroup.extension(IAbstractGroupFunctions.class);
+		IAbstractGroup parent = functions.GetParent();
+		if( parent != null ) {					
+			if (IsEnabled(parent) == false) {
+				return false;
+			}
+		}
+		IEnabledWithDefaultTrueAwareFunctions defaultTrueAwareFunctions = abstractGroup.extension(IEnabledWithDefaultTrueAwareFunctions.class);
+		return defaultTrueAwareFunctions.IsActiveOrDefaultTrue();		
+      /* End Protected Region   [[9dc7296d-6221-11eb-b695-271c721aa03b]] */
+    }
+
   }
   
   public static class AbstractGroupFunctions {
@@ -234,6 +275,14 @@ public class FunctionSpace_AuthZ_Deployment {
 
     public static <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> OnlyActiveOrDefaultTrueRecursive(final List<T> abstractGroupList) {
       return DynamicResourceUtil.invoke(IAbstractGroupFunctionsImpl.class, AbstractGroupFunctionsImpl.INSTANCE, abstractGroupList).OnlyActiveOrDefaultTrueRecursive(abstractGroupList);
+    }
+
+    public static <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup> List<T> IsEnabledList(final List<T> abstractGroupList) {
+      return DynamicResourceUtil.invoke(IAbstractGroupFunctionsImpl.class, AbstractGroupFunctionsImpl.INSTANCE, abstractGroupList).IsEnabledList(abstractGroupList);
+    }
+
+    public static java.lang.Boolean IsEnabled(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.javamodel.IAbstractGroup abstractGroup) {
+      return DynamicResourceUtil.invoke(IAbstractGroupFunctionsImpl.class, AbstractGroupFunctionsImpl.INSTANCE, abstractGroup).IsEnabled(abstractGroup);
     }
 
   }
@@ -357,4 +406,4 @@ public class FunctionSpace_AuthZ_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,xlrCJOZdw9hK2N3ptCPxBBx55Hc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,189e1c41-1e07-11e9-834d-77c41fccc6bf,sQs6BnYUZqb9sYwSjVfhd/JB0mU=] */

@@ -39,6 +39,15 @@ public class Esxserverhealthsensorextern extends DynamicResource implements IEsx
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.Integer selectInterval_aE__aA_s_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_);
+  }
+    
+  public void setInterval_aE__aA_s_aC_(java.lang.Integer interval_aE__aA_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
+  }
+
   // relations
   
   @Override
@@ -66,6 +75,7 @@ public class Esxserverhealthsensorextern extends DynamicResource implements IEsx
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.IIgnoreUnknoenWarnings.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.esxserverhealthsensorextern_ignoreunknownwarnings, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -78,4 +88,4 @@ public class Esxserverhealthsensorextern extends DynamicResource implements IEsx
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50281c-c1eb-11ea-820f-9931558a898c,7jBeLSqZyr1bq1ezWfUkN2by2qc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db50281c-c1eb-11ea-820f-9931558a898c,QMPCnmU2BblUNv6BrHw0v47FvgE=] */

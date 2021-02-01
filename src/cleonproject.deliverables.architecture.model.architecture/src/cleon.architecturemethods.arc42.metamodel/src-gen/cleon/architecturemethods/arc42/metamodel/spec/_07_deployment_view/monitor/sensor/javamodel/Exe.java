@@ -58,6 +58,15 @@ public class Exe extends DynamicResource implements IExe {
   }
 
   @Override
+  public java.lang.Integer selectInterval_aE__aA_s_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_);
+  }
+    
+  public void setInterval_aE__aA_s_aC_(java.lang.Integer interval_aE__aA_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -94,6 +103,7 @@ public class Exe extends DynamicResource implements IExe {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeFile, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_exeParams, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.exe_useWindowsAuthentication, visitor);
     // relations
@@ -101,4 +111,4 @@ public class Exe extends DynamicResource implements IExe {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f2ea-c1eb-11ea-820f-9931558a898c,YO95+dyES7uvnxoQ8LBnO/xTrNs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db43f2ea-c1eb-11ea-820f-9931558a898c,3EUAr3L34KEWBURlzD5nd4ljD7Q=] */

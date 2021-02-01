@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="fc69eb52-c1e6-11ea-820f-9931558a898c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="becb40ab-6498-11eb-bcb1-d5dcf010d136" type="resource" guid="becb1998-6498-11eb-bcb1-d5dcf010d136" />
+  </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="515ecc7c-cfec-11ea-99e7-03141914df18" type="resource" guid="515ea568-cfec-11ea-99e7-03141914df18">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
@@ -28,6 +31,24 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="e8d09a37-dc79-11ea-a169-cb4c6ff66798" type="resource" guid="8c0ea786-a7e8-11e5-82dd-3b995d9c840c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="becb40ab-6498-11eb-bcb1-d5dcf010d136">
+      <resource guid="becb1998-6498-11eb-bcb1-d5dcf010d136">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="becb199a-6498-11eb-bcb1-d5dcf010d136" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c2bdfeaf-6498-11eb-bcb1-d5dcf010d136" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bfcb4b8e-6498-11eb-bcb1-d5dcf010d136" type="literal">interval_[s]</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="becc03fc-6498-11eb-bcb1-d5dcf010d136" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fc6a1265-c1e6-11ea-820f-9931558a898c" type="literal">Sensor</object>

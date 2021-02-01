@@ -49,6 +49,15 @@ public class Httpdataadvanced extends DynamicResource implements IHttpdataadvanc
   }
 
   @Override
+  public java.lang.Integer selectInterval_aE__aA_s_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_);
+  }
+    
+  public void setInterval_aE__aA_s_aC_(java.lang.Integer interval_aE__aA_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -75,10 +84,11 @@ public class Httpdataadvanced extends DynamicResource implements IHttpdataadvanc
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.net.URL.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.httpdataadvanced_httpurl, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4578f0-c1eb-11ea-820f-9931558a898c,Xz8hmKz0ojF8JtlTa2Vj/hvSf5Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db4578f0-c1eb-11ea-820f-9931558a898c,pD4I1ehJaBxEfz9bVulQ1v1wpzU=] */

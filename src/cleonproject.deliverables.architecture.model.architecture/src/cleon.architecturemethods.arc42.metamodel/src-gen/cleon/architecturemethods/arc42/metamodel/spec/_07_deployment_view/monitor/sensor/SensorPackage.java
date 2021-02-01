@@ -292,6 +292,7 @@ public class SensorPackage {
   public static final Resource syslog = new Resource("597315ea-0729-11eb-a680-fff2ba300774");
   public static final Resource wmishare_share = new Resource("6ad892d0-1cf7-11eb-acd1-95299b344117");
   public static final Resource FunctionSpace_aE_Sensor_wmishare = new Resource("f1079db3-1cf7-11eb-acd1-95299b344117");
+  public static final Resource Sensor_interval_aE__aA_s_aC_ = new Resource("becb1998-6498-11eb-bcb1-d5dcf010d136");
   
   /* Begin Protected Region [[user]] */
   
@@ -312,4 +313,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,Xg7Ks7j2qjF0E+Yf02OxR6ZEgys=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,y+aPA78GOPQlX0u9Y5alvhWOTeM=] */

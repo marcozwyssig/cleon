@@ -40,6 +40,15 @@ public class Wmiservice extends DynamicResource implements IWmiservice {
   }
 
   @Override
+  public java.lang.Integer selectInterval_aE__aA_s_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_);
+  }
+    
+  public void setInterval_aE__aA_s_aC_(java.lang.Integer interval_aE__aA_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -74,6 +83,7 @@ public class Wmiservice extends DynamicResource implements IWmiservice {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.wmiservice_serviceDisplayName, visitor);
     // relations
@@ -81,4 +91,4 @@ public class Wmiservice extends DynamicResource implements IWmiservice {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae82-c1eb-11ea-820f-9931558a898c,G+WivKMNmFcoaoDMDUcTd97AyY4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db51ae82-c1eb-11ea-820f-9931558a898c,y0kegu4meKSSbbDgXU3sAItGnHc=] */

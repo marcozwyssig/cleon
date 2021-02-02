@@ -30,6 +30,7 @@ public class PuppetPackage {
   public static final Resource sites__T_yaml_Application = new Resource("797880c3-1df7-11eb-9bc6-673ab35ba343");
   public static final Resource access__T_yaml_AbstractHost = new Resource("76869e28-1e76-11eb-b08c-d72de2e3f55f");
   public static final Resource access__T_yaml_SystemConfigurationAccessFrom = new Resource("f0e67bc5-1e91-11eb-b08c-d72de2e3f55f");
+  public static final Resource profiles__T_yaml_wmidiskspace = new Resource("ba313450-6539-11eb-bf13-ade897aac2eb");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +51,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,LP7pvMA9lkUM/oAN6nrWJNpVlgQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,04uuYZg4l8eLGPn+zjB7wi8O+MI=] */

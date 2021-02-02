@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db51ae3a-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="639c4988-6539-11eb-bf13-ade897aac2eb" type="resource" guid="639b5f25-6539-11eb-bf13-ade897aac2eb" />
+  </owns>
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="813ab02e-f37d-11ea-9268-b5c52a12d7f9" type="resource" guid="813a13ea-f37d-11ea-9268-b5c52a12d7f9" />
   </owns>
@@ -8,6 +11,24 @@
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="c263dcdd-cfeb-11ea-99e7-03141914df18" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="639c4988-6539-11eb-bf13-ade897aac2eb">
+      <resource guid="639b5f25-6539-11eb-bf13-ade897aac2eb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="639b8637-6539-11eb-bf13-ade897aac2eb" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="68f2681e-6539-11eb-bf13-ade897aac2eb" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="64f326fd-6539-11eb-bf13-ade897aac2eb" type="literal">drive</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="639dd029-6539-11eb-bf13-ade897aac2eb" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db51ae3d-c1eb-11ea-820f-9931558a898c" type="literal">wmidiskspace</object>

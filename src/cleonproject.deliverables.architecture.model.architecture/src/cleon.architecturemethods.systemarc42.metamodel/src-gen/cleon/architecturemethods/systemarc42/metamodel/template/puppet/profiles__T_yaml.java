@@ -96,6 +96,31 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IwmidiskspaceFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("ba313464-6539-11eb-bf13-ade897aac2eb")
+    public java.lang.String RenderSensor();
+
+  }
+  
+  public static interface IwmidiskspaceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class wmidiskspaceFunctionsImpl implements IwmidiskspaceFunctionsImpl {
+
+    public static final IwmidiskspaceFunctionsImpl INSTANCE = new wmidiskspaceFunctionsImpl();
+
+    private wmidiskspaceFunctionsImpl() {}
+
+  }
+  
+  public static class wmidiskspaceFunctions {
+
+    private wmidiskspaceFunctions() {}
+
+  }
+
   public static interface IexeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("88287c35-d625-11ea-96bb-39ddde1b696a")
@@ -335,4 +360,4 @@ public class profiles__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,aVkRX38x4ziLNK7FIxCL1fNjhXY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,RTNo8u0Wqr0IsOUjO/aHd1Uldnk=] */

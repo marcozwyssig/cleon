@@ -20,7 +20,7 @@ public class AccountsPackage {
   public static final Resource FunctionSpace_aE_Accounts_gMSA_aE_ServiceAccount = new Resource("cf47c3aa-2830-11eb-a351-0f02534982d8");
   public static final Resource ServiceAccountEnvironmentSite = new Resource("bde1151a-394a-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironment_serviceAccountSite = new Resource("c7094a10-394a-11eb-93f1-c3f5ad8bb73f");
-  public static final Resource ServiceAccountEnvironmentSite_serviceAccountForSite = new Resource("d1055562-394b-11eb-93f1-c3f5ad8bb73f");
+  public static final Resource ServiceAccountEnvironmentSite_site = new Resource("d1055562-394b-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironmentSystem = new Resource("b2c26a28-394e-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironmentSite_serviceAccountSystem = new Resource("bce15b74-394e-11eb-93f1-c3f5ad8bb73f");
   public static final Resource ServiceAccountEnvironmentSystem_serviceAccountsForSystem = new Resource("fb18fbc2-394f-11eb-93f1-c3f5ad8bb73f");
@@ -39,7 +39,10 @@ public class AccountsPackage {
   public static final Resource ServiceAccountTemplate_overrideId = new Resource("4339c4c8-5005-11eb-8df9-adb928521f3a");
   public static final Resource FunctionSpace_aE_Accounts_ServiceAccountTemplate = new Resource("c912e7b8-5005-11eb-8df9-adb928521f3a");
   public static final Resource ServiceAccountTemplate_activityTemplates = new Resource("a73f40da-6d4a-11eb-bd4b-f974d73611ae");
-  public static final Resource ServiceAccountEnvironmentSite_useServiceAccountsFromSite = new Resource("07227589-6fb3-11eb-a1e4-f1bdb2897690");
+  public static final Resource ServiceAccountEnvironmentSite_allocateActivitiesFromSite = new Resource("07227589-6fb3-11eb-a1e4-f1bdb2897690");
+  public static final Resource ActivityAllocationFromSiteAware = new Resource("ce986cf3-7081-11eb-b91b-ab805dd3de7b");
+  public static final Resource ActivityAllocationFromSiteAware_allocateActivitiesFromSite = new Resource("e6ee96cf-7081-11eb-b91b-ab805dd3de7b");
+  public static final Resource ServiceAccount_allocateActivitiesFromSite = new Resource("2fc7bb13-7082-11eb-b91b-ab805dd3de7b");
   
   /* Begin Protected Region [[user]] */
   
@@ -60,4 +63,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,AigwIQxq2L7aP8pjXeKBMy3R3K8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,osSoV7L1D8y0mfylWzIlMPk/n0E=] */

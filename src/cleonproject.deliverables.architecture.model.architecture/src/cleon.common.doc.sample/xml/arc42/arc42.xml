@@ -74,17 +74,13 @@
 			<db:title>Referenzen</db:title>
 			<db:informaltable style="HERMES 5">
 				<db:col width="10%" />
-				<db:col width="20%" />
-				<db:col width="30%" />
-				<db:col width="20%" />
-				<db:col width="20%" />		
+				<db:col width="45%" />
+				<db:col width="45%" />
 				<db:thead>
 					<db:tr>
 						<db:th>Nr.</db:th>
 						<db:th>Name</db:th>
 						<db:th>Beschreibung</db:th>
-						<db:th>Version</db:th>
-						<db:th>Quelle</db:th>										
 					</db:tr>
 				</db:thead>
 				<db:tbody>
@@ -101,12 +97,6 @@
 							<db:para>asdfasdfasdf</db:para>
 							<db:para>asdfasdf</db:para>
 						</db:td>			
-						<db:td>
-							<db:para>11</db:para>
-						</db:td>			
-						<db:td>
-							<db:para>http://www.google.ch</db:para>
-						</db:td>
 					</db:tr>
 					<db:tr>
 						<db:td>
@@ -118,11 +108,6 @@
 						<db:td>			
 							<db:para></db:para>
 						</db:td>			
-						<db:td>
-							<db:para>0.1.1</db:para>
-						</db:td>			
-						<db:td>
-						</db:td>
 					</db:tr>
 				</db:tbody>	
 			</db:informaltable>
@@ -197,7 +182,6 @@
 				<db:para>Text 2</db:para>
 			</db:listitem>
 		</db:orderedlist>
-		<db:para></db:para>
 	</db:chapter>
 </db:book>
 <!-- Actifsource ID=[17b682a2-3de9-11e6-9bf8-29c5fda07fa3,7c53b432-d86e-11e4-aa2f-c11242a92b60,Hash] -->

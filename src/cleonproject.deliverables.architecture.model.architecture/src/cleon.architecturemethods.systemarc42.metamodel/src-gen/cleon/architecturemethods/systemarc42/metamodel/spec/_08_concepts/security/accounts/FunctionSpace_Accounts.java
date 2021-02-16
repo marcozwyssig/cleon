@@ -9,12 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[96deff1f-2830-11eb-a351-0f02534982d8,imports]] */
 import java.util.stream.Collectors;
-import java.util.ArrayList;
-import java.util.HashSet;
-
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.FunctionSpace_Activity_Deployment.IActivityPermissionFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.ActivityPermission;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions;
 import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
 /* End Protected Region   [[96deff1f-2830-11eb-a351-0f02534982d8,imports]] */
@@ -95,7 +89,7 @@ public class FunctionSpace_Accounts {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> GetAbstractHostsBySite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountEnvironmentSite serviceAccountEnvironmentSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount serviceAccount) {
       /* Begin Protected Region [[edd9abe4-4ff1-11eb-8df9-adb928521f3a]] */
-      final var site = serviceAccountEnvironmentSite.selectServiceAccountForSite();
+      final var site = serviceAccountEnvironmentSite.selectSite();
       final var abstractSiteFunctions = site.extension(IAbstractSiteFunctions.class);
       return abstractSiteFunctions.GetAbstractHostsBySystemConfiguration(
       		serviceAccount.selectServiceAccountTemplate().selectServiceConfigurationForServiceAccount());

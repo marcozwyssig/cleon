@@ -23,8 +23,6 @@ public class DeploymentPackage {
   public static final Resource AbstractSingleGroup = new Resource("d2272f28-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource AbstractGroups_groups = new Resource("df943a6b-7f08-11e9-98a3-b1bd805f0a31");
   public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_AbstractGroup = new Resource("b9b92765-7f24-11e9-9a52-07d4b074defc");
-  public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_RoleSystemComponent = new Resource("6c7c43ac-bff0-11e9-80a1-d5ff22ac3c31");
-  public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_ActivityPermission = new Resource("fcbc5d3e-bff0-11e9-80a1-d5ff22ac3c31");
   public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_AbstractGroups = new Resource("68ae8473-c56f-11e9-9daa-cf9f9f7341e8");
   public static final Resource EnvironmentRBAC_environmentRBAC = new Resource("cacdfde5-016a-11ea-8b45-335c84231cb6");
   public static final Resource FunctionSpace_aE_AuthZ_aE_Deployment_AbstractRootGroups = new Resource("d730cab5-0172-11ea-83fa-05ea5175f4aa");
@@ -50,4 +48,4 @@ public class DeploymentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment,/WDH+ko5WyQS4u9I7QnwlxfEgX0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment,qamX9AM2IooU1PJ85mEXeTQDxQs=] */

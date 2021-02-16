@@ -23,6 +23,6 @@ public class ActivityPermissionIdInitializerAspect extends BusinessObjectIdIniti
 	@Override
 	protected Integer getStartId(IActivityPermission activityPermission) {
 		final IAbstractGroupFunctions abstractGroupFunctions = activityPermission.extension(IAbstractGroupFunctions.class);
-		return abstractGroupFunctions.GetNetdomainId();
+		return abstractGroupFunctions.GetSiteId();
 	}		
 }

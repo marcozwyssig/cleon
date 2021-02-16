@@ -16,7 +16,7 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
     
     public void visitSystemintegrationstest();
     
-    public void visitAcceptance__F_Tests();
+    public void visitAcceptancetests();
     
   }
   
@@ -30,7 +30,7 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
     
     public R visitSystemintegrationstest();
     
-    public R visitAcceptance__F_Tests();
+    public R visitAcceptancetests();
     
   }
   
@@ -50,9 +50,9 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
   
   public boolean isSystemintegrationstest();
   
-  public boolean isAcceptance__F_Tests();
+  public boolean isAcceptancetests();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,f0hYGdN1M2+Wxap2uxRE0fE7Ww8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,Q7RS+/EQ+R1/rGKkVZxw5WN7SDw=] */

@@ -54,7 +54,7 @@ public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 		int i = 0;
 		for( final IIntegerBusinessObjectId identifier : objects) {
 			if( identifier.selectIdentifier() == null || identifier.selectIdentifier().intValue() == 0) {
-				final Integer id = abstractGroupFunctions.GetNetdomainId() + i;
+				final Integer id = abstractGroupFunctions.GetSiteId() + i;
 				Update.createOrModifyStatement(executor, identifier.getPackage(), identifier.getResource(),
 						IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));
 				++i;

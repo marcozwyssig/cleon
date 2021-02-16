@@ -22,6 +22,6 @@ public class RoleActorResponsibilityIdInitializerAspect extends BusinessObjectId
 
 	protected Integer getStartId(IRoleSystemComponent activityPermission) {
 		final IAbstractGroupFunctions abstractGroupFunctions = activityPermission.extension(IAbstractGroupFunctions.class);
-		return abstractGroupFunctions.GetNetdomainId();
+		return abstractGroupFunctions.GetSiteId();
 	}		
 }

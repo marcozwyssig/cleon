@@ -42,7 +42,7 @@ public class SetIdForActivities extends AbstractAllInstancesRefactorerAspect {
 					int i = 0;
 					for( final IActivityPermission activityPermission : netDomainGroupFunctions.AllActivityPermissions() ) {
 						if( activityPermission.selectIdentifier() == null || activityPermission.selectIdentifier().intValue() == 0) {
-							final Integer id = abstractGroupFunctions.GetNetdomainId() + i;
+							final Integer id = abstractGroupFunctions.GetSiteId() + i;
 
 							Update.createOrModifyStatement(executor, activityPermission.getPackage(), activityPermission.getResource(),
 									IdPackage.IntegerBusinessObjectId_identifier, LiteralUtil.create(id));

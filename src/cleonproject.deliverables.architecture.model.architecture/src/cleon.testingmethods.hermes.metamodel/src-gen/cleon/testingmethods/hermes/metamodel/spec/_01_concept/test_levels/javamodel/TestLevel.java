@@ -78,7 +78,7 @@ public class TestLevel extends DynamicResource implements ITestLevel {
     if (isUnitintegrationtest()) return visitor.visitUnitintegrationtest();
     if (isSystemtest()) return visitor.visitSystemtest();
     if (isSystemintegrationstest()) return visitor.visitSystemintegrationstest();
-    if (isAcceptance__F_Tests()) return visitor.visitAcceptance__F_Tests();
+    if (isAcceptancetests()) return visitor.visitAcceptancetests();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -100,8 +100,8 @@ public class TestLevel extends DynamicResource implements ITestLevel {
       visitor.visitSystemintegrationstest();
       return;
     }
-    if (isAcceptance__F_Tests()) {
-      visitor.visitAcceptance__F_Tests();
+    if (isAcceptancetests()) {
+      visitor.visitAcceptancetests();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -130,9 +130,9 @@ public class TestLevel extends DynamicResource implements ITestLevel {
   }
   
   @Override
-  public boolean isAcceptance__F_Tests() {
-    return getResource().equals(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_levels.Test_levelsPackage.TestLevel_Acceptance__F_Tests);
+  public boolean isAcceptancetests() {
+    return getResource().equals(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_levels.Test_levelsPackage.TestLevel_Acceptancetests);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,gpQZ2V9UolPxn75MZ8qJ3iSrZFA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,qz7qS2q/ohUu4UT4pIxpGvOXgjg=] */

@@ -9,10 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.*;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityRootGroups;
 import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
-import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
-
 import java.util.stream.Collectors;
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
@@ -61,6 +58,9 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("4982d3d9-6fb0-11eb-a1e4-f1bdb2897690")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetAbstractSite();
 
+    @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -76,6 +76,9 @@ public class FunctionSpace_Activity_Deployment {
 
     @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
     public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
+
+    @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList);
 
   }
   
@@ -102,8 +105,9 @@ public class FunctionSpace_Activity_Deployment {
       /* Begin Protected Region [[d7ca023b-27eb-11eb-b239-011c2d3c4f88]] */
       return activityPermissionList.stream().filter(x -> {
       	if (!x.selectActivityTemplate().extension(IEnabledWithDefaultTrueAwareFunctions.class)
-      			.IsActiveOrDefaultTrue())
+      			.IsActiveOrDefaultTrue()) {
       		return false;
+      	}
       	return x.extension(IEnabledWithDefaultTrueAwareFunctions.class).IsActiveOrDefaultTrue();
       }).collect(Collectors.toList());
       /* End Protected Region   [[d7ca023b-27eb-11eb-b239-011c2d3c4f88]] */
@@ -112,8 +116,21 @@ public class FunctionSpace_Activity_Deployment {
     @Override
     public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
-        return role.selectHasActivities().contains(activityPermission);   
+      return role.selectHasActivities().contains(activityPermission);
       /* End Protected Region   [[295e7d8e-bff2-11e9-80a1-d5ff22ac3c31]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList) {
+      /* Begin Protected Region [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
+      for( final var activityPermission : activityPermissionList) {
+      	activityPermission.extension(IActivityPermissionFunctions.class);
+
+      	//var serviceAccountz = ServiceAccount.selectToMeServiceAccountTemplate(activityPermission.selectActivityTemplate());
+
+      }
+      return null;
+      /* End Protected Region   [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
     }
 
   }
@@ -136,6 +153,10 @@ public class FunctionSpace_Activity_Deployment {
 
     public static java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).HasAccess(role, activityPermission);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermissionList).ToServiceAccount(activityPermissionList);
     }
 
   }
@@ -225,15 +246,15 @@ public class FunctionSpace_Activity_Deployment {
     @Override
     public java.lang.Integer Max(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup) {
       /* Begin Protected Region [[aaa0cf46-9c90-11e9-9b32-35cf2fd07621]] */
-      final IAbstractGroupFunctions groupFunctions = activitySiteGroup.extension(IAbstractGroupFunctions.class);
-      final IActivityRootGroups activityRootGroups = groupFunctions.GetRootActivityGroup();
-      final IActivityRootGroupsFunctions activityRootGroupsFunctions = activityRootGroups
+      final var groupFunctions = activitySiteGroup.extension(IAbstractGroupFunctions.class);
+      final var activityRootGroups = groupFunctions.GetRootActivityGroup();
+      final var activityRootGroupsFunctions = activityRootGroups
       		.extension(IActivityRootGroupsFunctions.class);
-      int permissionsCount = 1;
+      var permissionsCount = 1;
       if (activityRootGroupsFunctions.PermissionCount() != 0) {
       	permissionsCount = activityRootGroupsFunctions.PermissionCount();
       }
-      int systemConfigurationCount = 1;
+      var systemConfigurationCount = 1;
       if (activityRootGroupsFunctions.SystemConfigurationCount() != 0) {
       	systemConfigurationCount = activityRootGroupsFunctions.SystemConfigurationCount();
       }
@@ -287,4 +308,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,TcugRQNSqbr1k8FNHSXJ6t/KDzA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,I1WrBAxADhzL4X8eqL87fMjsXOQ=] */

@@ -19,7 +19,7 @@ import cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjecta
 public class FunctionSpace_Requirements {
 
   /* Begin Protected Region [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45]] */
-  
+
   /* End Protected Region   [[6f7a099f-c90b-11e5-a64e-a5d84d8f1b45]] */
 
 
@@ -74,26 +74,32 @@ public class FunctionSpace_Requirements {
     public List<ch.actifsource.core.javamodel.IResource> GetNamespaces();
 
     @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyKO();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyKO();
 
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> NotKO();
 
     @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApprovedAndOnlySpecific();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyApprovedAndOnlySpecific();
+
+    @IDynamicResourceExtension.MethodId("bb5e2826-72b1-11eb-860a-33696a010e76")
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted();
 
   }
   
   public static interface IRequirementFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("9ac05816-1f1d-11e9-9b49-9d767b485444")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
     @IDynamicResourceExtension.MethodId("1a77e308-1fa5-11e9-ac4e-716424f48a26")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
     @IDynamicResourceExtension.MethodId("197d42aa-7e00-11e9-94cc-311930c9ea85")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+
+    @IDynamicResourceExtension.MethodId("bb5e2826-72b1-11eb-860a-33696a010e76")
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
   }
   
@@ -104,47 +110,57 @@ public class FunctionSpace_Requirements {
     private RequirementFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
       /* Begin Protected Region [[9ac05816-1f1d-11e9-9b49-9d767b485444]] */
       return requirementList.stream().filter(x -> {
-    	  IRequirementFunctions func = x.extension(IRequirementFunctions.class);
-    	  IPriority prio = func.GetPriority();
-    	  if( prio != null)
-    	  {
-    		  cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions prioFunc =
-    				  prio.extension(cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions.class);
-    		  return prioFunc.IsKO();
-    	  }
-    	  return true;
-      }).collect(Collectors.toList());   
+      	final var func = x.extension(IRequirementFunctions.class);
+      	final var prio = func.GetPriority();
+      	if( prio != null)
+      	{
+      		final var prioFunc =
+      				prio.extension(cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions.class);
+      		return prioFunc.IsKO();
+      	}
+      	return true;
+      }).collect(Collectors.toList());
       /* End Protected Region   [[9ac05816-1f1d-11e9-9b49-9d767b485444]] */
     }
 
     @Override
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
       /* Begin Protected Region [[1a77e308-1fa5-11e9-ac4e-716424f48a26]] */
-        return requirementList.stream().filter(x -> {
-      	  IRequirementFunctions func = x.extension(IRequirementFunctions.class);
-      	  IPriority prio = func.GetPriority();
-      	  if( prio != null)
-      	  {
-      		  cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions prioFunc =
-      				  prio.extension(cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions.class);
-      		  return !prioFunc.IsKO();
-      	  }
-      	  return true;
-        }).collect(Collectors.toList());
+      return requirementList.stream().filter(x -> {
+      	final var func = x.extension(IRequirementFunctions.class);
+      	final var prio = func.GetPriority();
+      	if( prio != null)
+      	{
+      		final var prioFunc =
+      				prio.extension(cleon.common.resources.metamodel.spec.priority.FunctionSpace_Priority.IPriorityFunctions.class);
+      		return !prioFunc.IsKO();
+      	}
+      	return true;
+      }).collect(Collectors.toList());
       /* End Protected Region   [[1a77e308-1fa5-11e9-ac4e-716424f48a26]] */
     }
 
     @Override
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
       /* Begin Protected Region [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
-        return requirementList.stream().filter(x -> {
-        	IRequirementState state = x.selectState();
-        	return (state.isApproved() || state.isApproved__F___N_By__F_Supplier__O_() || state.isFulfilled() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
-          }).collect(Collectors.toList());   
+      return requirementList.stream().filter(x -> {
+      	final var state = x.selectState();
+      	return (state.isApproved() || state.isApproved__F___N_By__F_Supplier__O_() || state.isFulfilled() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
+      }).collect(Collectors.toList());
       /* End Protected Region   [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      /* Begin Protected Region [[bb5e2826-72b1-11eb-860a-33696a010e76]] */
+      return requirementList.stream().filter(x -> {
+      	final var state = x.selectState();
+      	return (state.isRejected() || state.isRejected__F___N_QS__O_());
+      }).collect(Collectors.toList());
+      /* End Protected Region   [[bb5e2826-72b1-11eb-860a-33696a010e76]] */
     }
 
   }
@@ -153,16 +169,20 @@ public class FunctionSpace_Requirements {
 
     private RequirementFunctions() {}
 
-    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
-      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).onlyKO(requirementList);
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyKO(requirementList);
     }
 
-    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> notKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
-      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).notKO(requirementList);
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> NotKO(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).NotKO(requirementList);
     }
 
-    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> onlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
-      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).onlyApprovedAndOnlySpecific(requirementList);
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyApprovedAndOnlySpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyApprovedAndOnlySpecific(requirementList);
+    }
+
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyRestricted(requirementList);
     }
 
   }
@@ -580,4 +600,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,b346V7M4mlcePrl7WgMsu8sLspA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,vuNyI30gzP1NFKGeSoSuKgm2bGY=] */

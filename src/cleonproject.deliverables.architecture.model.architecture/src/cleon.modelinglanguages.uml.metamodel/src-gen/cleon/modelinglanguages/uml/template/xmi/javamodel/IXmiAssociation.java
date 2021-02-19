@@ -12,4 +12,4 @@ public interface IXmiAssociation extends ch.actifsource.core.javamodel.INamedRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f868af21-6c90-11e7-8bc1-2fb13127901b,kHm6hz/45NEQrYJnMJGFaQyRjWs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f868af21-6c90-11e7-8bc1-2fb13127901b,GhQHI3FmzZzq6yLX5x/p1zp69yQ=] */

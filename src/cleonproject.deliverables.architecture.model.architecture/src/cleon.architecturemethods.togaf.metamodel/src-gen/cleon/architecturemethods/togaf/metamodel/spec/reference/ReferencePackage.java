@@ -27,4 +27,4 @@ public class ReferencePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference,f9yeshEJ7Rj7tjGq4FEeOJ3HFfg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference,PPLtrnvlCugYDZkAQpyjy9irnOY=] */

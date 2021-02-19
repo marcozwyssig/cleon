@@ -12,4 +12,4 @@ public abstract class ProductVariantAware extends DynamicResource implements IPr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3cbcc8fd-2ad0-11e9-b83f-8be423c00623,c+J17gzMW1//M/oIh8crT2cJ6CE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3cbcc8fd-2ad0-11e9-b83f-8be423c00623,ZiwoMkFl60jXz4gDOzdfQM+F4Dc=] */

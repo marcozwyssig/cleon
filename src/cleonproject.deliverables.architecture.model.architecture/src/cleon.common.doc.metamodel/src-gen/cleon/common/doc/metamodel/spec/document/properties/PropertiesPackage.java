@@ -31,4 +31,4 @@ public class PropertiesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.document.properties,Y/xLEdIVeQ5L4K7QXZ/GUZgggy4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.document.properties,Om/w+bHGpGEAn3U1RISwSCK9aQk=] */

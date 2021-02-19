@@ -18,4 +18,4 @@ public interface IStateMachineDiagram extends cleon.modelinglanguages.uml.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,+rCdyjn9yjTwC3f3snK83lXBOrk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6b3731f0-b07c-11e4-bca8-71d5b3e72cd6,eN+d7ylR85xRZu8plJ+f2NcY3oQ=] */

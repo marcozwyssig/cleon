@@ -18,4 +18,4 @@ public abstract class Inheritance extends DynamicResource implements IInheritanc
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d715af8c-ffba-11e4-ac0a-959b440f987f,4FfhpPCJCrsbiurCsFvfSkl+Gys=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d715af8c-ffba-11e4-ac0a-959b440f987f,moqYNdj4Zg7LJ6e3fpEer4t8Ud4=] */

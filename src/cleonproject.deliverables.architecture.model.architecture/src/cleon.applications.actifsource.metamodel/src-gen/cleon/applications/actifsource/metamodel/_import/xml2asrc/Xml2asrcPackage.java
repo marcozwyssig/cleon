@@ -52,4 +52,4 @@ public class Xml2asrcPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel._import.xml2asrc,COrPgKCyCzTlkIsnhGO4wBrqJ3o=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel._import.xml2asrc,F56dGSn9JrEo4k92UimZKkAt+0Y=] */

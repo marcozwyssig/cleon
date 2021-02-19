@@ -12,4 +12,4 @@ public interface IProductView extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,FFBpRF+0B3hrWTH+nBhPGPoXJVc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a7023af1-d0b1-11e8-b005-f7630e4c29c0,FuPWH/pdJQcujXrmpdyi2XLtkDY=] */

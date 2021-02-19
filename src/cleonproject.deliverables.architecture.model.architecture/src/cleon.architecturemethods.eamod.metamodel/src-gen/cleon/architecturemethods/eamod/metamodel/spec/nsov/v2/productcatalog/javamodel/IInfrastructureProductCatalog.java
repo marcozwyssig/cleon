@@ -12,4 +12,4 @@ public interface IInfrastructureProductCatalog extends cleon.architecturemethods
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,T4bIeyaTa7jt4qlhR4MnpuY7Kuk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7a7e912c-67c6-11e7-afcc-6df3a81a4d17,H8ZfWUVsoG+u/YofbjYkGNAp2QA=] */

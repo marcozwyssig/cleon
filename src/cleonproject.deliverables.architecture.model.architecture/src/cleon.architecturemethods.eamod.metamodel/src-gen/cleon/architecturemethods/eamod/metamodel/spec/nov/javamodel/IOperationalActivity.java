@@ -18,4 +18,4 @@ public interface IOperationalActivity extends ch.actifsource.core.javamodel.INam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93ef0a2d-bc84-11e6-b169-a12bde5a1c7c,eQk7NDQAf70k1Qqj2hQnQ45gEck=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93ef0a2d-bc84-11e6-b169-a12bde5a1c7c,VrSx5g/mqeKaOJ1izgNyhv+Qv4M=] */

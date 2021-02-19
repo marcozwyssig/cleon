@@ -12,4 +12,4 @@ public interface IThreshold extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,894657d9-8f34-11e8-90f3-6f51c1a0b373,Uk14fGhPG81lQZTGKJtt2awVg/c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,894657d9-8f34-11e8-90f3-6f51c1a0b373,Xd0OiD1kpiWkzMmBprzsx4jZFV0=] */

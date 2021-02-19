@@ -14,4 +14,4 @@ public interface IAbstractSensorMonitoringBuildingBlock extends ch.actifsource.c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ef70288-e066-11ea-bb83-59933a3fa779,lgLnfK03izRllmqjO/vC85WNFfM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ef70288-e066-11ea-bb83-59933a3fa779,9lunfVdq3SpsZJ1lE/58f8kOEbo=] */

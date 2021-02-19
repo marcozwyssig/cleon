@@ -8,4 +8,4 @@ public interface IBuiltinRole extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93efa9df-a1ae-11ea-886d-354b9ee6fb2d,1BSjKlb/JjmpaGV0mmadN585+sY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,93efa9df-a1ae-11ea-886d-354b9ee6fb2d,3U7cD+w59wXOV7nl8VMgjmSqWtI=] */

@@ -8,4 +8,4 @@ public interface IAbstractTestingChapter extends cleon.common.doc.metamodel.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ccfbf9df-1519-11e6-a185-8f02bf3f95ba,4WXpj0eWtev6cPT3IF/iYWE6syM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ccfbf9df-1519-11e6-a185-8f02bf3f95ba,kFvZL3puvZJ5aZmaGb5xFts4k2M=] */

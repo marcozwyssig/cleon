@@ -8,4 +8,4 @@ public interface IGreen extends cleon.architecturemethods.arc42.metamodel.spec._
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db43f326-c1eb-11ea-820f-9931558a898c,CjJxbJW+6hiGpDnKuFtnQTh9KQs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db43f326-c1eb-11ea-820f-9931558a898c,6PBgQoKOxiss7JNAWZM2bAngijI=] */

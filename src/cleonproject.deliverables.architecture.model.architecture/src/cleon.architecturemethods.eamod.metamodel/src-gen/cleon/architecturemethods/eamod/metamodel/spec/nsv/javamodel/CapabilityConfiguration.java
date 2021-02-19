@@ -61,4 +61,4 @@ public class CapabilityConfiguration extends DynamicResource implements ICapabil
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f720d6-818c-11e7-9507-01b75489c44b,pdnbWfEfFXi+ms1FFXe0IsZXU2M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,19f720d6-818c-11e7-9507-01b75489c44b,4J+EQXUikt404PcwAGJWAXajOy8=] */

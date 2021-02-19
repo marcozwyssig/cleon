@@ -8,4 +8,4 @@ public interface IBuildingPlugin extends ch.actifsource.core.javamodel.IResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4dcd2f9b-2fb5-11ea-a393-0bc3b1f5682f,Q9GWB5I+1Xh5Osv2zwCcQpVDsGA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4dcd2f9b-2fb5-11ea-a393-0bc3b1f5682f,rD+H22/KD3CahHOkq4d71QPYpdg=] */

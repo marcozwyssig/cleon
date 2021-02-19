@@ -67,4 +67,4 @@ public interface IWorkItemState extends ch.actifsource.core.javamodel.IEnumValue
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,+7vupnCGXVySCq7Adj6fwrRrj4I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b27abc8f-cb92-11e5-b911-69bd21f5af67,JgC1uHhoKskPXbS94+BdNy5k1Lk=] */

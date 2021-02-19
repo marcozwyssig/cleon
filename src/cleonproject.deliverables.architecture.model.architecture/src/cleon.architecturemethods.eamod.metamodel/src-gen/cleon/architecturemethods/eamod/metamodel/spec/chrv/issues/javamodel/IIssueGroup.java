@@ -12,4 +12,4 @@ public interface IIssueGroup extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33649ff-ce66-11e5-8041-092cb74c72f2,w9QZjKW91Myy0M8hPPSlUZWur0Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33649ff-ce66-11e5-8041-092cb74c72f2,4ADOxpVcOfVTXeuhzwPD2aE0vaE=] */

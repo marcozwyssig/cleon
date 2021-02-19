@@ -26,4 +26,4 @@ public class StringPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.string,P7MiMAkPymXVE2wqjm5JOy9Gp6Y=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.string,fRPpkZI5cVkXDtEUvej4WQxdb/A=] */

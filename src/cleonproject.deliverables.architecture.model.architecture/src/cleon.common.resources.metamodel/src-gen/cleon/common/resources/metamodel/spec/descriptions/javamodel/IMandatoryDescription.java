@@ -12,4 +12,4 @@ public interface IMandatoryDescription extends cleon.common.resources.metamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0397d401-0e16-11e6-ae01-ef640c578b9b,5ODKnSsusd9nr+5WGaBb+McEmaw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0397d401-0e16-11e6-ae01-ef640c578b9b,z6RVJlRuLrrhBieikOR5JgNhPyA=] */

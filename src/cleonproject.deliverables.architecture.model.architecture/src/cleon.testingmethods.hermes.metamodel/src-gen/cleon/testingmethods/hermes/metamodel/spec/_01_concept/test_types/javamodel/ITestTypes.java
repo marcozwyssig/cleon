@@ -12,4 +12,4 @@ public interface ITestTypes extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd3df8f8-4fbd-11e9-bb71-93c81cf66db8,g5fvx7EfHjgX492S0Om8/9+mdgw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd3df8f8-4fbd-11e9-bb71-93c81cf66db8,I0ORNft1MV3KJM4jU/oBsq+t3XM=] */

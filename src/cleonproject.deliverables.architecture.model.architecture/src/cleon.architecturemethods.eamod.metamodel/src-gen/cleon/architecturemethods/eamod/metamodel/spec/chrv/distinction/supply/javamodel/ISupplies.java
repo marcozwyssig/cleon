@@ -12,4 +12,4 @@ public interface ISupplies extends cleon.common.doc.metamodel.spec.chapter.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,13d24c1c-0e15-11e6-ae01-ef640c578b9b,U3Jg4dQPXA0QX33BGV3x5H20ego=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,13d24c1c-0e15-11e6-ae01-ef640c578b9b,1TOCD1TNDrbhnhE/0gq+mHKCytQ=] */

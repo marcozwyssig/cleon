@@ -8,4 +8,4 @@ public interface ITestInput extends ch.actifsource.core.javamodel.INamedResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68e85e06-516b-11e9-bb61-971a423d31e9,1mIt7k3Y0jAl4/MgQoFDonqt8nk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68e85e06-516b-11e9-bb61-971a423d31e9,bOo8DzRp2iOote1IUUS886FdLFg=] */

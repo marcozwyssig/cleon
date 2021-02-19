@@ -12,4 +12,4 @@ public interface IActorAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e48d6701-c824-11e8-add3-695b26858127,pY1XKYLpfIofkzcXm+6t5XS5tNY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e48d6701-c824-11e8-add3-695b26858127,zEPYcSn7lwOYjg8Y8wCjjCc6iL0=] */

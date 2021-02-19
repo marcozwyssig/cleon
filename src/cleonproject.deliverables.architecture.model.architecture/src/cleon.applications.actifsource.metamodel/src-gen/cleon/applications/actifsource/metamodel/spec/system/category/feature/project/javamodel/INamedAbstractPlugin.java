@@ -8,4 +8,4 @@ public interface INamedAbstractPlugin extends ch.actifsource.core.javamodel.INam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576,IKWSSP3t7RpaznHNwAloa7ry0Qw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b3b2cfb4-1d2f-11ea-8d56-0bb865e0c576,fTiCQpa9ljy66rGJ5+1nAMXn5Vc=] */

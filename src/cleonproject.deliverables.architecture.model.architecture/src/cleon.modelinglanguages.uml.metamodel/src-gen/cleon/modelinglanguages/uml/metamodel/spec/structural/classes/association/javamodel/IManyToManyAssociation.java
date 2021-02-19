@@ -8,4 +8,4 @@ public interface IManyToManyAssociation extends cleon.modelinglanguages.uml.meta
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f0515d32-2783-11e3-a466-eda9d7258bca,uetGInjWZjNUPa+VAQ1uDRtwndE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f0515d32-2783-11e3-a466-eda9d7258bca,A+yC9/kp6PR2IKRTmAq3Q8RMWqo=] */

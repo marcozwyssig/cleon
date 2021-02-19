@@ -31,4 +31,4 @@ public class FieldsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields,kYMPdEwEK2vzb+uwGuU+sk7PCmk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.fields,8C12wXtNgMxCH0TjON5hRudqnLk=] */

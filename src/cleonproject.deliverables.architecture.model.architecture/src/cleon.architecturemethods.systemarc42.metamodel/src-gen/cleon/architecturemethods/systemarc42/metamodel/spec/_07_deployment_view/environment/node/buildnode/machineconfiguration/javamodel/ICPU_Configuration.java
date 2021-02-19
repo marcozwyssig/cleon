@@ -16,4 +16,4 @@ public interface ICPU_Configuration extends ch.actifsource.core.javamodel.IResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,ti/rgrAj5HB+sX5r2kFgjHUa+G8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8afbac91-2afe-11e9-9692-65766bc2daa5,fxjC5lINCNGVBpHQT+6R2rd2MPg=] */

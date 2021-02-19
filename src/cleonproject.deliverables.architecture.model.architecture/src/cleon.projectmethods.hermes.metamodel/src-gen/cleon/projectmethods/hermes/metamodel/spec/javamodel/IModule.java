@@ -8,4 +8,4 @@ public interface IModule extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8a7442a-31ca-11e8-8a84-6f139e67278b,d3x0N1b4kogku6O/VwvgmlLljsc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8a7442a-31ca-11e8-8a84-6f139e67278b,h/rhXLWl9s9fbFkKJ7b39dJllBI=] */

@@ -12,4 +12,4 @@ public interface ICapabilityDocument extends cleon.common.doc.metamodel.spec.doc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,40249800-ea1d-11e6-9264-5588938e0d2c,MOrD/mQx6qV1sgGuG1z1+N2S2OU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,40249800-ea1d-11e6-9264-5588938e0d2c,jSR2Wj2uabSascTSv1J4IuJxWjU=] */

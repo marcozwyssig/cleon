@@ -40,4 +40,4 @@ public interface IWhitebox extends ch.actifsource.core.javamodel.IDecorator, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,8WNlT8DNKf28olNNVs1+d5bqLN4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1551fb66-2857-11e8-9af4-b7d7a3bbddc1,2C3VByu4L6DTtXRpk5tizgxA7Qc=] */

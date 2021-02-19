@@ -12,4 +12,4 @@ public interface ITestQualityCriterias extends ch.actifsource.core.javamodel.IRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c117ff0b-1cf1-11e6-aaba-9db7fdc64d7e,wLDi7wvXvjD97CHRg8TZ0+5R8OA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c117ff0b-1cf1-11e6-aaba-9db7fdc64d7e,azJRJlazwnbXxBDwPJCewXjTu5A=] */

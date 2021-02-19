@@ -23,4 +23,4 @@ public class SitePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.site,rptRSrHuJl+QOEBFrSF5EGMVObI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.site,WSUwokh5N6P32nN1F1Hu9w+iGSc=] */

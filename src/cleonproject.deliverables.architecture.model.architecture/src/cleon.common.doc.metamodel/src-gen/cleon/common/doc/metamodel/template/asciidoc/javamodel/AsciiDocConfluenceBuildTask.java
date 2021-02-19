@@ -71,4 +71,4 @@ public class AsciiDocConfluenceBuildTask extends DynamicResource implements IAsc
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,de19b8fe-65f5-11e7-a25d-b350312fe5de,/NQbiGkUts2Gox0vILLm3E7pKSU=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,de19b8fe-65f5-11e7-a25d-b350312fe5de,W/ivOTA8x5jAg8G5Ra9xtwD3C14=] */

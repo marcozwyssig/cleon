@@ -12,4 +12,4 @@ public interface IEnum extends cleon.modelinglanguages.uml.metamodel.spec.struct
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73469c3e-b1bd-11e4-a1b5-85bab1cb6ada,X5J0egdkj3CZvO90L1t4cH206AY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73469c3e-b1bd-11e4-a1b5-85bab1cb6ada,vmvqslyf+3ZB8nE5hO40iwrZ/18=] */

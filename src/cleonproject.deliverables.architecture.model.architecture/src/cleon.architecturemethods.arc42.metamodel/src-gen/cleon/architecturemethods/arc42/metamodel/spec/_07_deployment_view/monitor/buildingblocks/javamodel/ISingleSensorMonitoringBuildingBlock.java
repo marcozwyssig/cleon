@@ -8,4 +8,4 @@ public interface ISingleSensorMonitoringBuildingBlock extends cleon.architecture
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,OmWG1sVZhBv2DkAjckk41/AzQRA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,+Lyhq4/BmZ62vH+EXl5+QymSey4=] */

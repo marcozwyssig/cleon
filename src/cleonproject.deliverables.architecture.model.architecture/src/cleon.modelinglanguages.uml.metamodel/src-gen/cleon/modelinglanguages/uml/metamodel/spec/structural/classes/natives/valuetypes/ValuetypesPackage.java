@@ -25,4 +25,4 @@ public class ValuetypesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.natives.valuetypes,4r6pd9qZRlVXUiGvNMGpjwW+PIc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.natives.valuetypes,vXsS5CAZzHC9pAwOCxLJ2mis3M8=] */

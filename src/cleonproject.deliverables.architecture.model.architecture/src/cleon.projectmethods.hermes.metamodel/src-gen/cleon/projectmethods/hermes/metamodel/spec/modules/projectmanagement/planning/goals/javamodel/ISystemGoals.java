@@ -12,4 +12,4 @@ public interface ISystemGoals extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1fabee5e-210e-11e8-9bf6-d910b575bad9,0IKlWqbw+/xy4bXn+7GClRsUZqM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1fabee5e-210e-11e8-9bf6-d910b575bad9,CMdWXuZLrMRe9T1GO70ClPBZKyo=] */

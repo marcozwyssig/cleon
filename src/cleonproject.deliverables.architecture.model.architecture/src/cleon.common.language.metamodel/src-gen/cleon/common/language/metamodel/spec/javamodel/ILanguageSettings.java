@@ -14,4 +14,4 @@ public interface ILanguageSettings extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,rr2rrybpiRtLPoNlEx7livy0i3I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,73f7c4f5-335e-11e8-a9fe-87ba35d8f5c4,LBZOOaN4D+epqXGD1mYaa8aZqos=] */

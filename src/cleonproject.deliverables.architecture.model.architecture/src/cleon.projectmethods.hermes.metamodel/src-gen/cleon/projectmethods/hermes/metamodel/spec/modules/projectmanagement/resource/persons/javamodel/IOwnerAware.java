@@ -12,4 +12,4 @@ public interface IOwnerAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd829c7f-3385-11e6-b251-57783f5929b3,XcF1moOZTFwCLmvWvUIgPuOVAcg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd829c7f-3385-11e6-b251-57783f5929b3,0u+RODbdPlQtTN62r/6XMzQTWHY=] */

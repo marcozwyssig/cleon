@@ -12,4 +12,4 @@ public interface ICustomEvent extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8ba6fcd-d30b-11e4-8b90-c7d981a5f2fd,SUkF2Z+TOD8C4h1wrPPrpTcsei8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8ba6fcd-d30b-11e4-8b90-c7d981a5f2fd,Xf7mCEyM45BHh14fbGf5UjYBXpU=] */

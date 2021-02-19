@@ -32,4 +32,4 @@ public class ActifsourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource,zKZ3uIsEJLReuz2HKG1pG4kaInY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.spec.system.category.feature.project.nature.actifsource,yiZW1P+e6BfnpVqx8C5Byf7hoC4=] */

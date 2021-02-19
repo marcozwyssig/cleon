@@ -23,4 +23,4 @@ public class CriteriasPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.criterias,DODC+LnLBkaASTyl6zxIbu/qzKM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.criterias,bLIgN7cjsLcA/Mrn6H066W/h5Mg=] */

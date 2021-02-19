@@ -12,4 +12,4 @@ public interface ISimpleDescription extends ch.actifsource.core.javamodel.IResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c0ea786-a7e8-11e5-82dd-3b995d9c840c,WPuvlz/fq4i2Jlp0tx6brth7sCU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c0ea786-a7e8-11e5-82dd-3b995d9c840c,miUDRp/EF1BsOPbS7mF/PmK6hEE=] */

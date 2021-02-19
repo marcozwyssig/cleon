@@ -38,4 +38,4 @@ public class PersonsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons,7eorUV3g3qLJ+Uu8AlamX4O8jfc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons,J4qHZjIUi4N0fB5dkWtdfcOxg6A=] */

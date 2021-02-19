@@ -14,4 +14,4 @@ public interface ITestUser extends ch.actifsource.core.javamodel.INamedResource,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,mLH113JmhZ+gYAlND9vU/78UhVA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bb1bba72-6728-11e9-9ec9-5fbc84faaeb1,KqWWiK/j0WkzCOk9gcuolkQ5z7w=] */

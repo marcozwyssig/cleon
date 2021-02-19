@@ -14,4 +14,4 @@ public interface IAsciiDocConfluenceBuildTask extends ch.actifsource.generator.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,de19b8fe-65f5-11e7-a25d-b350312fe5de,EKNkkPSohfFK+Ak0pHVmtQHMiNM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,de19b8fe-65f5-11e7-a25d-b350312fe5de,xyXbjWOxV66+l5SEqqnkSmCoZP0=] */

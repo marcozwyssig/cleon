@@ -16,4 +16,4 @@ public interface IScope extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,jYSLcRw5dkFDHcKHQSlcS7/Afkk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8c485ce0-3eb3-11e7-a89c-83d57940f0e3,4NFVTCVgCdw+VQSsgk8UL218g0U=] */

@@ -14,4 +14,4 @@ public interface IImportClass extends cleon.applications.actifsource.metamodel._
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,rH+BHCTXQbA+tUDVDl4lA2bnPYc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9f4f0c3f-2217-11e8-8247-038452bbec5f,Nt6kNHyDsN7z0/EsS+nTxiDxdzQ=] */

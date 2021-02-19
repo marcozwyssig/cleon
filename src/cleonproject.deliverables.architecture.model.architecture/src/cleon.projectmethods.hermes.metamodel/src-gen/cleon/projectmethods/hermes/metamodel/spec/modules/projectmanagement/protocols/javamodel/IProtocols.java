@@ -12,4 +12,4 @@ public interface IProtocols extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,mwxoyvgJs/PVSkiIP1jMawF5z40=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d9251a72-a7d8-11e5-82dd-3b995d9c840c,cirWJ8myQykrdk9X+yuTHghKzAU=] */

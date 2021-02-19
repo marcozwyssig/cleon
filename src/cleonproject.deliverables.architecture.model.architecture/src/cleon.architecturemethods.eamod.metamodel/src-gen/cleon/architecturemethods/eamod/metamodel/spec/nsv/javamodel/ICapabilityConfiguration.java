@@ -21,4 +21,4 @@ public interface ICapabilityConfiguration extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19f720d6-818c-11e7-9507-01b75489c44b,JueMX72E2QKqMP2dbl+7DlG0J84=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,19f720d6-818c-11e7-9507-01b75489c44b,ak2oyqTnoo7TlgXR2kt3T/2pAI0=] */

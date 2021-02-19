@@ -12,4 +12,4 @@ public interface IAccessCommunicationType extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a028c2b5-1e98-11eb-9eef-0dadb2b460da,nW/dYhgA5sVhUUSxOOzQ5NYb0/U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a028c2b5-1e98-11eb-9eef-0dadb2b460da,sRwlxWnlKUdd55P5UZSwT/ky/wM=] */

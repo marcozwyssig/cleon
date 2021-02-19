@@ -12,4 +12,4 @@ public interface ISprintGoals extends cleon.common.doc.metamodel.spec.chapter.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,99200ab1-c126-11e5-bfd0-47571a06cb62,JPG/hJ7fc9mjrtWNnFXS9+jwd4M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,99200ab1-c126-11e5-bfd0-47571a06cb62,rvxIrnRcmRA22iINcRS+l/yGbbo=] */

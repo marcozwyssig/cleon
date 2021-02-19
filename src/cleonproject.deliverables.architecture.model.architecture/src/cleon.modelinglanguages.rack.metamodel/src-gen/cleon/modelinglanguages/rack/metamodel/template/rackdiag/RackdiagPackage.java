@@ -25,4 +25,4 @@ public class RackdiagPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.rack.metamodel.template.rackdiag,2HwdDms+gVI4NyIRHB9qp22S5QA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.rack.metamodel.template.rackdiag,TBxuNEDOpDSo7CexBE86a7HROh4=] */

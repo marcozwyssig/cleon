@@ -8,4 +8,4 @@ public interface IState extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9294aba1-352f-11e5-909a-4bcced25d7ee,0W6Cn9vu8GMCg+DIJtD5XSsDYHc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9294aba1-352f-11e5-909a-4bcced25d7ee,q4zriHYAsbyMr3iwn77Z15XBFfo=] */

@@ -18,4 +18,4 @@ public abstract class XmiAssociation extends DynamicResource implements IXmiAsso
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f868af21-6c90-11e7-8bc1-2fb13127901b,kbCNcTMbrYokAWx/28HYr8LpbVQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f868af21-6c90-11e7-8bc1-2fb13127901b,0jfxv2ZcHCJDKqQeh9gNbHNWbLM=] */

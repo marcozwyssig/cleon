@@ -30,4 +30,4 @@ public class EventaggregatorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator,wTqcBvHoaklUwGcYC1eCSpLDEso=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturestylesandpatterns.eda.metamodel.spec.eventaggregator,URPRa7L14OVLXm/ao/EJeUqtZXY=] */

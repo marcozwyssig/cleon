@@ -8,4 +8,4 @@ public interface IThreatMitigation extends ch.actifsource.core.javamodel.INamedR
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c01eb033-b9e4-11ea-b29c-1fc1209c2c7a,Z8ZzvZ67J45CNZUT/1WVw3/HQY0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c01eb033-b9e4-11ea-b29c-1fc1209c2c7a,HFPk0TSva+s9YPyGrxaZu4z+Vgk=] */

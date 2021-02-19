@@ -23,4 +23,4 @@ public class RefactoringPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.actifsource.metamodel.refactoring,tQRmJS7apt6jF3ehwOd74iEuS2Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.actifsource.metamodel.refactoring,8vhu6acMEXyoh6oYTkmLxpJUUOY=] */

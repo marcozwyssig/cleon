@@ -12,4 +12,4 @@ public interface IEnterpriseBusinessProcess extends cleon.modelinglanguages.bpmn
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,mCwtS6FoXpvwILa/z6PsRUqGoQw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,037d0836-bb6a-11e3-bf59-6b10d9dd6d36,N6w5coARMs/UtuARritOw5DJ2Vc=] */

@@ -12,4 +12,4 @@ public interface IProcessAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d47439c4-debd-11e5-bf7d-117d548070bb,cgRNdB19k4X4LpDH0AqLFXHIJxY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d47439c4-debd-11e5-bf7d-117d548070bb,hoS+R9C/b4jTettLO0L4w+fm2ak=] */

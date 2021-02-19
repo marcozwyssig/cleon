@@ -8,4 +8,4 @@ public interface ITemplatePart extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f8785eb-d55d-11e5-89ea-2d8d86e9ef89,P9Pz3QMpSFB7+G69zmaf+v30zCM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f8785eb-d55d-11e5-89ea-2d8d86e9ef89,j+xY/3BmaxvzTe/DgeiS04cXvYs=] */

@@ -12,4 +12,4 @@ public interface IComponent extends cleon.modelinglanguages.uml.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3e0c163-3b7b-11e5-bcdd-1b181eee11b0,gVWtIQGOu7hlhEUqncQ1D7eRQMk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a3e0c163-3b7b-11e5-bcdd-1b181eee11b0,5U1PvVrxE4gCuBM5dEwVSC/nVa0=] */

@@ -31,4 +31,4 @@ public class OrganigramPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.bpmn.metamodel.spec.organigram,tAzfEOZfXl78Cnlo0wusts4Cw7s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.bpmn.metamodel.spec.organigram,JUygLTVRX7HprCy9EnDYE0P4wcA=] */

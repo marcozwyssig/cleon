@@ -12,4 +12,4 @@ public interface IInheritance extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d715af8c-ffba-11e4-ac0a-959b440f987f,PtSugsI6zzfUu8wQWdwbpvT1uVo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d715af8c-ffba-11e4-ac0a-959b440f987f,Lz4tguR2C0qQjHOTpOYU77OJneA=] */

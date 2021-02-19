@@ -31,4 +31,4 @@ public class XmiPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.xmi,wZiRX4/hmOOrx/3gwzgBn2ukH4U=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.xmi,A3HtPl1k3uX/P5Fk4XQkHcnqv9U=] */

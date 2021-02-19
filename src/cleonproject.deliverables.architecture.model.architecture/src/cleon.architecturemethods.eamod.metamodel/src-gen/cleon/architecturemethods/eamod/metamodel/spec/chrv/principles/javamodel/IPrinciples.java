@@ -16,4 +16,4 @@ public interface IPrinciples extends cleon.common.doc.metamodel.spec.chapter.jav
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5d54c5db-a951-11e5-bda2-a7fc3bd7c783,SK5MKgptnRsck0tpqrtFyKLdcOI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5d54c5db-a951-11e5-bda2-a7fc3bd7c783,Xb0T2F3jyQzXtjfm/sqQOaObV3A=] */

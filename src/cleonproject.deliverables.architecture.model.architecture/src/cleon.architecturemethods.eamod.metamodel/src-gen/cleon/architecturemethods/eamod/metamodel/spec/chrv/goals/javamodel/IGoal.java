@@ -12,4 +12,4 @@ public interface IGoal extends ch.actifsource.core.javamodel.INamedResource, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31468bb8-a951-11e5-bda2-a7fc3bd7c783,37JnxTxbHJVPn6Onsx8JgAsljO4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,31468bb8-a951-11e5-bda2-a7fc3bd7c783,mMvnuz5gz44WuUDcUUDujL1jTxM=] */

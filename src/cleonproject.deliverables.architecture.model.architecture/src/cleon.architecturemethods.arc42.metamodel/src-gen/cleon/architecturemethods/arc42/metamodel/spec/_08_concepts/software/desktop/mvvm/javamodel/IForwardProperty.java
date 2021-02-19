@@ -14,4 +14,4 @@ public interface IForwardProperty extends ch.actifsource.core.javamodel.IDecorat
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,h5EIJP7j9Ckj68V8J9IIueo6cko=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,623e0e7c-c0c2-11e4-b2f2-bbf951b71ec4,B/tO7hunwYobithYlCTIhjr5Wqw=] */

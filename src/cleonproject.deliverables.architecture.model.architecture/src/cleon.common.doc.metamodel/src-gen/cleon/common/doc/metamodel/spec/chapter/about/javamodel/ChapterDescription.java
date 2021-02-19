@@ -88,4 +88,4 @@ public class ChapterDescription extends DynamicResource implements IChapterDescr
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,e55dt4ir/yBnCuDJYMqK+IvJPiQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,yvZeS4nftd6MrYd2VSFCv1abuSc=] */

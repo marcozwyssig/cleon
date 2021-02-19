@@ -16,4 +16,4 @@ public interface IProduct extends ch.actifsource.core.javamodel.INamedResource, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,sTFmO0ICrnqLJG2iDaB+67H1Sas=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,352e36c6-d0b1-11e8-b005-f7630e4c29c0,0CfQB2Yuf6g3EDi321v7RWC8Fvg=] */

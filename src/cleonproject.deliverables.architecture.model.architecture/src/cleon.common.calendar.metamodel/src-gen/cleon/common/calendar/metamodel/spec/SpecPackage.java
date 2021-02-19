@@ -38,4 +38,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.calendar.metamodel.spec,tO1sYbkJ2echXEd5OTrfj/nXLoU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.calendar.metamodel.spec,o0M7TUQ72os8QxfLw8WJSaEV5Ow=] */

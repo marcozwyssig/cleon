@@ -8,4 +8,4 @@ public interface ITestQualityCriteria extends ch.actifsource.core.javamodel.INam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db6082a4-1cf1-11e6-aaba-9db7fdc64d7e,KnlDNSwzKwr9t8UgzhCAI/kZ2ro=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db6082a4-1cf1-11e6-aaba-9db7fdc64d7e,Ae7sIj8i3rGuM69vdI7/QwEjK4s=] */

@@ -12,4 +12,4 @@ public abstract class Manual extends DynamicResource implements IManual {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24f1c6b0-4e6b-11e5-b08e-673a0d02fb08,9yYnVCWbOKTZyNX7Q8GiEB6Z48E=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,24f1c6b0-4e6b-11e5-b08e-673a0d02fb08,tbd5iKYlx1DGFQf3N+jb1c/iIys=] */

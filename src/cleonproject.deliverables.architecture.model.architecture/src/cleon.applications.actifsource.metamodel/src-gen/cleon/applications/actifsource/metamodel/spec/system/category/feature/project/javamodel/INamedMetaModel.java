@@ -8,4 +8,4 @@ public interface INamedMetaModel extends cleon.applications.actifsource.metamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1e7fabc7-2703-11ea-8c59-871562e3b5c4,Pvw6iOpRGqgTCoSyRGBpvqaRQ7A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1e7fabc7-2703-11ea-8c59-871562e3b5c4,jKCB5iWYdgkb+qbgTEGDZADzckA=] */

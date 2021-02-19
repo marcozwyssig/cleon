@@ -55,4 +55,4 @@ public interface IImageType extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,FhucAdLYDZsVcLOK5B5jQAev4c0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,afb720af-afdf-11e5-a548-13e054f2d74f,mkYbm7CiID9U8eUSvMfo2WdxCCM=] */

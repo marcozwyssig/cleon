@@ -14,4 +14,4 @@ public interface IAbstractSiteGroup extends ch.actifsource.core.javamodel.IDecor
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1b09ea6-1e06-11e9-834d-77c41fccc6bf,Pvd3NP2gMb67iXCIOHterTVdsIQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1b09ea6-1e06-11e9-834d-77c41fccc6bf,FGniRZt1vCBk/ubznJsh9prpRmA=] */

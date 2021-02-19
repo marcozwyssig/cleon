@@ -23,4 +23,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.docbook,4BAoQ0kOXP5VQ+roJa6kjPaH1gI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.docbook,47H5ARHgkPAHjAOzob+rYwUXgIk=] */

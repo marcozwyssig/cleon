@@ -12,4 +12,4 @@ public interface IXmlAttribute extends cleon.common.xml.metamodel.spec.javamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ac013f5d-2a25-11e9-b49d-072e4afacfc7,4P9PnHaMoWNuelDdqFtdK/R56vg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ac013f5d-2a25-11e9-b49d-072e4afacfc7,AfFGG+ttxYI/g7/DfkStWe1AMqw=] */

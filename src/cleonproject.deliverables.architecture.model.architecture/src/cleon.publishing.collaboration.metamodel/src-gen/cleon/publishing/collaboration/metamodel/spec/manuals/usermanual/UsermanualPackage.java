@@ -23,4 +23,4 @@ public class UsermanualPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.usermanual,kqeTz4VaiuUnkzFkuXqNB4iuOSs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.usermanual,ggPHZEIAxcgTzGam+rBrhAzro5o=] */

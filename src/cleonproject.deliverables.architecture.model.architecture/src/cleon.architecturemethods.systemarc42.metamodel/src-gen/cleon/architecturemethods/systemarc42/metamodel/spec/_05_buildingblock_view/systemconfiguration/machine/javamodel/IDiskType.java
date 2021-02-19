@@ -43,4 +43,4 @@ public interface IDiskType extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,Hd10x2at/Y4+vTtLdC7nTUpd40s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,cXfZSqWvWDwO0eRHlp//7YG/IAE=] */

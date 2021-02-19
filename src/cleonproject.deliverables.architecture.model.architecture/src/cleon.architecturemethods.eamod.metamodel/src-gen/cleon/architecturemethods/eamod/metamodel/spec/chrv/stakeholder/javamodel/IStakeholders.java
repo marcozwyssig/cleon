@@ -16,4 +16,4 @@ public interface IStakeholders extends cleon.common.doc.metamodel.spec.chapter.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,256574f0-06d7-11e6-8d3e-13e5be4bd43b,yZ/bajXxQogkN3dzGDXWY5i7f4M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,256574f0-06d7-11e6-8d3e-13e5be4bd43b,Pasgj3IQIYe9cfwCVeOfWSC8/+U=] */

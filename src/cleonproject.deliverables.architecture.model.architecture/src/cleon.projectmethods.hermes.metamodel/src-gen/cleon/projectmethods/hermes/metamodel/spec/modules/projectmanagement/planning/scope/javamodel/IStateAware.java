@@ -12,4 +12,4 @@ public interface IStateAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33806909-bb63-11e8-921b-c1cf01226512,nXKtZBTO3UmgQYFpIUWA+K8aWok=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33806909-bb63-11e8-921b-c1cf01226512,ng7O84OOmC5csGEeNuuue7gfN7s=] */

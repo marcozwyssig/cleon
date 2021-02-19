@@ -8,4 +8,4 @@ public interface IAdmonition extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e2a6478-308a-11e5-8cdc-d5b441c8c3df,BHfEm/x0TZlBcGsSvc7LyyJZXu8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e2a6478-308a-11e5-8cdc-d5b441c8c3df,8Wwx0gEAAiv2CIQdzPHQkiCv1TM=] */

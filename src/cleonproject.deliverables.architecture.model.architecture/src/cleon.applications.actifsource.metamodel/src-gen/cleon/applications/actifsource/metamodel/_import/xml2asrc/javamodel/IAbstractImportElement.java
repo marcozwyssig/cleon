@@ -8,4 +8,4 @@ public interface IAbstractImportElement extends ch.actifsource.core.javamodel.ID
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3a665ba8-221e-11e8-8749-cb7f4d6924d3,Xlv446Qt78GErI/greocog/CZmc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3a665ba8-221e-11e8-8749-cb7f4d6924d3,G2Fc7MBYPdEwiDVeB7nYaRyvsv4=] */

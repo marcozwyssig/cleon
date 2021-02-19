@@ -18,4 +18,4 @@ public abstract class XmiComposite extends DynamicResource implements IXmiCompos
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e77f7342-6c8c-11e7-8bc1-2fb13127901b,RKt3I2imvNx8il2dIEFxBj+iCDg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e77f7342-6c8c-11e7-8bc1-2fb13127901b,PUumxWVWZmhYZxZilC1joXMzylw=] */

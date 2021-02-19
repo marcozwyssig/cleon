@@ -8,4 +8,4 @@ public interface ICopyright extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,494f17e7-4e6d-11e5-a091-3f804edda9db,9SAF29NGLPrtop7Pa1Pa6dGT3S8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,494f17e7-4e6d-11e5-a091-3f804edda9db,3X/cm5sEzqjMXhQoU0ZwWSBhFws=] */

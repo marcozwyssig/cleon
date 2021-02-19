@@ -27,4 +27,4 @@ public class PlattformPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.plattform,Y4KPZJ4I5FBmBPNh91/VYFFs29A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.plattform,y7Ga4IzpnnA2uomd+/lFnbdO7fE=] */

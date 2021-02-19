@@ -42,4 +42,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.components,dUFydcnn3hZ0T7q83mfoLRQf/m4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.components,5jFH5Hs8WfBR0Wjq2PyOkGgEKWo=] */

@@ -12,4 +12,4 @@ public interface ILicense extends ch.actifsource.core.javamodel.IResource, cleon
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2e78c313-29a9-11eb-8baa-95d9107006e8,MFTO42W8lk+BoRDpf6KCYVV1S5k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2e78c313-29a9-11eb-8baa-95d9107006e8,OM0I1xWRGZIu3zPG84YLt2h+rK8=] */

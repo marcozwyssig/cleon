@@ -8,4 +8,4 @@ public interface IManual extends cleon.common.doc.metamodel.spec.document.javamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24f1c6b0-4e6b-11e5-b08e-673a0d02fb08,IX5HekifbvNeP5jcXn+PAsT9irs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24f1c6b0-4e6b-11e5-b08e-673a0d02fb08,iYqrtmfRnztqOi9IbM01IteypW8=] */

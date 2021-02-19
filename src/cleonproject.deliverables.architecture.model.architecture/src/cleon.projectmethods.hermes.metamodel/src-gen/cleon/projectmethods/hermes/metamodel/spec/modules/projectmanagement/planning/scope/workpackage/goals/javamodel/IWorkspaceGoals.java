@@ -12,4 +12,4 @@ public interface IWorkspaceGoals extends cleon.common.doc.metamodel.spec.chapter
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1843ce27-bc93-11e6-904c-8bf6f8927ff0,sRJ1zuyDmWSHNuLaQi/3Ib1WvlQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1843ce27-bc93-11e6-904c-8bf6f8927ff0,bBzcOw2sxBVfnQ+UMj+EzRFAQpg=] */

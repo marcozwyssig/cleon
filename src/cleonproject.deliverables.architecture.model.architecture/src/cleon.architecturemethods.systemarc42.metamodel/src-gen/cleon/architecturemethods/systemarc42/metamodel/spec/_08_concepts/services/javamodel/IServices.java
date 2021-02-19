@@ -12,4 +12,4 @@ public interface IServices extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2936d62-6da3-11e9-8af5-2346ca56c2e2,Z74CKRU6bUQtqmsUZmfWQkzwDKs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2936d62-6da3-11e9-8af5-2346ca56c2e2,U/8j3d1F+c30o1hPtjjVq3T/oYo=] */

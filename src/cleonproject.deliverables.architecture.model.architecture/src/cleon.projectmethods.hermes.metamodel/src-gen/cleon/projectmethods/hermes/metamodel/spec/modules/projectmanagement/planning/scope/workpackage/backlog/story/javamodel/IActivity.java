@@ -8,4 +8,4 @@ public interface IActivity extends cleon.projectmethods.hermes.metamodel.spec.mo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,oRXCKWUceyT1WhAbRw3lJRD/1uc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e19c230e-3777-11e5-95d9-2b04d7ab02d9,UtMGyAhOnk6MW6C6bvvRJm4iIrc=] */

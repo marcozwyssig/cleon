@@ -12,4 +12,4 @@ public interface IIntegerBusinessObjectId extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,133424cf-be0b-11e5-ad6f-979cbb78853e,IyCLWlUItJ0E63ZE9JcVA6UhaMs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,133424cf-be0b-11e5-ad6f-979cbb78853e,7lfGI0g8cbom+o7Nr/I6EXEGBls=] */

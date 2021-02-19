@@ -12,4 +12,4 @@ public interface IEffortAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a2ffdac0-e6d4-11e5-a502-93f18d5742dc,N252JDD5iWUoLaMiCy4EhWOob60=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a2ffdac0-e6d4-11e5-a502-93f18d5742dc,OprjXKi4xL/1WseQ3mbwijdgC7U=] */

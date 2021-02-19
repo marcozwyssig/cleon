@@ -8,4 +8,4 @@ public interface ISoftwareQuality extends ch.actifsource.core.javamodel.INamedRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5d0697e0-0e04-11e6-ae01-ef640c578b9b,fvxZ7EYlx0+XNC4HECJS5g9hg40=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5d0697e0-0e04-11e6-ae01-ef640c578b9b,UJXp1LsnolCXOxplkoV2Cwhg/UU=] */

@@ -12,4 +12,4 @@ public interface IAuthZBuildingBlockForPermission extends ch.actifsource.core.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,B49/53VvKxrWntcbc4EzySjnDRU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,tv8WfFacQ8mMcPOA3qBj2LXBHUs=] */

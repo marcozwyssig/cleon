@@ -14,4 +14,4 @@ public interface IPermissions extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1b6bd66-8099-11e9-8e65-f3f639e40a34,pVLx77FT1V8m9wBMo+BZ0a/mKIE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1b6bd66-8099-11e9-8e65-f3f639e40a34,5+YJqQiLsJfOVK1c6Z/mQhyBmyo=] */

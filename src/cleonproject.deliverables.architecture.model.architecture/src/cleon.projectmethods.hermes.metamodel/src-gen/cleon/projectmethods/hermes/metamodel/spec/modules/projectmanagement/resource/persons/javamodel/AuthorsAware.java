@@ -18,4 +18,4 @@ public abstract class AuthorsAware extends DynamicResource implements IAuthorsAw
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bce16132-bff1-11e7-9dcc-23cb45d05890,1Ia0c75uvsg2L3yMTNVubUS8YMI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,bce16132-bff1-11e7-9dcc-23cb45d05890,Uw7aRz8fcHOTCwWl0apbUnAjtsM=] */

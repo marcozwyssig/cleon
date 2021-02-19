@@ -25,4 +25,4 @@ public class ManualsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals,kuuOJ2GWDtSW7rZ2duJrhqJ6t6A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals,8tZQAvcWoMPvAvd25fA8xHFtWzs=] */

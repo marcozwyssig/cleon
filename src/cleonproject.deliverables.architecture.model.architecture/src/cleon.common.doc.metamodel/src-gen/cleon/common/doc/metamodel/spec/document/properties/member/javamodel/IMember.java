@@ -8,4 +8,4 @@ public interface IMember extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7869d054-c589-11e5-aeea-1db9268c0ee9,hIHG7MJkI1cMgRxqf96BHl5RTIg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7869d054-c589-11e5-aeea-1db9268c0ee9,2GGLI688WWWAsbBXM90h3aPcVkI=] */

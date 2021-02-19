@@ -16,4 +16,4 @@ public interface IRole extends ch.actifsource.core.javamodel.INamedResource, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,92f47870-31ca-11e8-8a84-6f139e67278b,pm3e8TCzM6vyfWd4cNsPzHYVW2g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,92f47870-31ca-11e8-8a84-6f139e67278b,R9CrqQ39ZqLq46T+0t3WrVEykD4=] */

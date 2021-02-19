@@ -16,4 +16,4 @@ public interface IAbstractImportClass extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5ba53fa2-327c-11e8-925e-0378e2266aa0,u2tGAGAlSif/U27tgAr5jiFQ2YE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5ba53fa2-327c-11e8-925e-0378e2266aa0,4+VBk3NsmZBXbR+OoOE+r1R/kEA=] */

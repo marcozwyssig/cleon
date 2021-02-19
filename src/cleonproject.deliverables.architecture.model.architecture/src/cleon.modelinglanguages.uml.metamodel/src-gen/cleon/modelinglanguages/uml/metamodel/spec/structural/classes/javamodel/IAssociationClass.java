@@ -12,4 +12,4 @@ public interface IAssociationClass extends cleon.modelinglanguages.uml.metamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,deb55644-13d3-11e3-9736-a3484832b481,Bbbp9EWPGyGfwwQikWy0okuLazQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,deb55644-13d3-11e3-9736-a3484832b481,GW9ENWRxHW8uUVvGwMgoZSKOKOw=] */

@@ -16,4 +16,4 @@ public interface ICapability extends cleon.common.resources.metamodel.spec.id.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c58e62c-bc80-11e6-beb6-85da12323ce9,eAUrkwuK5EfTTAkBxyi14YHLA5E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6c58e62c-bc80-11e6-beb6-85da12323ce9,abBVJK9VTHy16X5SGPmLi9xkpqw=] */

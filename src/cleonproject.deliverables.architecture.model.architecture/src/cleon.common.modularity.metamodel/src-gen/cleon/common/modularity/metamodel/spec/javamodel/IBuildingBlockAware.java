@@ -12,4 +12,4 @@ public interface IBuildingBlockAware extends ch.actifsource.core.javamodel.IReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,671019b3-299b-11eb-8baa-95d9107006e8,2H0L392eocXeSnQt1tInLxjHZao=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,671019b3-299b-11eb-8baa-95d9107006e8,ywb4ZdSygTEAQdEnX5/IfWMSCAc=] */

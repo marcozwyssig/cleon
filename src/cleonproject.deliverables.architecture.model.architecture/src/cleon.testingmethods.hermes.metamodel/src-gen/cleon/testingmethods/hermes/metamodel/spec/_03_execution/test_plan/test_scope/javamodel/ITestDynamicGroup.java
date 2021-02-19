@@ -14,4 +14,4 @@ public interface ITestDynamicGroup extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2529ae0a-918f-11e9-85e6-a377d9035ee3,1CFKaa4F8ay7HW7erzNnc3dnwI4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2529ae0a-918f-11e9-85e6-a377d9035ee3,yrDwINXiTaYoPFati4bCT86xI/w=] */

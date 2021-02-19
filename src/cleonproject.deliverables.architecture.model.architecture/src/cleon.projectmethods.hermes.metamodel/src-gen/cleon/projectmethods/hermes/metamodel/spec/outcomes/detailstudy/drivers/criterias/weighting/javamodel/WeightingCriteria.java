@@ -12,4 +12,4 @@ public abstract class WeightingCriteria extends DynamicResource implements IWeig
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1191ded4-a6f9-11e8-9c81-8bd68c62e435,GhUxz7Dz+Ew0I0xhZ6ibtvqqMQs=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,1191ded4-a6f9-11e8-9c81-8bd68c62e435,LV+ThALoGaoTQ/nJsYTRtohisFY=] */

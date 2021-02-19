@@ -55,4 +55,4 @@ public interface IRiskState extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f854e5b5-324e-11e6-ab4d-73a9260c8088,YEs+HIWO3OzQVMrRYSIpRua2k/8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f854e5b5-324e-11e6-ab4d-73a9260c8088,Vh7N4EBY6SX+outGcEO4ruRwHq0=] */

@@ -12,4 +12,4 @@ public interface IWeightingPriority extends ch.actifsource.core.javamodel.IDecor
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,OV2p6bGfE4JZJbhNcYL8r7GQu94=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,02e39a6b-a6fc-11e8-9c81-8bd68c62e435,M4c7LQyWXDeYfGj4CPBYGi4bpmM=] */

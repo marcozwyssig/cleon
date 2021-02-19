@@ -12,4 +12,4 @@ public interface IEnumValue extends ch.actifsource.core.javamodel.IResource, cle
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,dkRtIHjEf31q0R4TB/lvBDlV6yc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,151f6892-b1be-11e4-a1b5-85bab1cb6ada,jZLIV5R5RPOSJP9qujh9q0VJJ3I=] */

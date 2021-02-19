@@ -14,4 +14,4 @@ public interface IMonitoringBuildingBlock extends cleon.common.doc.metamodel.spe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,n5jcOgfEtxnu2EtEpbwbTMao+1U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,K4rv2qFjL/RO1LNT0fyuWi3Q92I=] */

@@ -49,4 +49,4 @@ public interface IAvailabilityClassification extends ch.actifsource.core.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,xsoowSn/kB4sbqXzj63VyTWmyLg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9534ff15-c10e-11e6-8f58-ad3c6ee7602f,dOJ5AwYGcbMikRbFKf6OwReQ0dw=] */

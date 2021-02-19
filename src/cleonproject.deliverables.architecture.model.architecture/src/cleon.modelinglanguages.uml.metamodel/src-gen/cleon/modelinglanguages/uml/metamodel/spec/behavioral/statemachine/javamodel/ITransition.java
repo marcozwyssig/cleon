@@ -16,4 +16,4 @@ public interface ITransition extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,Xmz0PTdatuIzK+EidH9nNM6b8xc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,813e6228-b07c-11e4-bca8-71d5b3e72cd6,3shpJu/pLMkdaFBlhcNG2Rotx+c=] */

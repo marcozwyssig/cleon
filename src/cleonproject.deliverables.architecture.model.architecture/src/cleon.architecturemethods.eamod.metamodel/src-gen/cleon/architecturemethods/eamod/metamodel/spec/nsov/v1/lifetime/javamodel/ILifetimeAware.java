@@ -12,4 +12,4 @@ public interface ILifetimeAware extends ch.actifsource.core.javamodel.IResource 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f6df515c-c6cb-11e6-8242-2f0ed6756d77,ezmMM2EaTm1gsXFOXIscwHgR6t0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f6df515c-c6cb-11e6-8242-2f0ed6756d77,PkQAaDIqcIZeC5owj79GmpWNvLo=] */

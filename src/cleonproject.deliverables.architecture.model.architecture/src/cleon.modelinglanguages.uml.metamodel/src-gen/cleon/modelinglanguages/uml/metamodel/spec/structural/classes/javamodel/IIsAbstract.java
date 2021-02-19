@@ -12,4 +12,4 @@ public interface IIsAbstract extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eba86911-9a3a-11e3-8bcf-e973a9ae2871,ycuzine0fOYj/5MwsoTtMlY85kQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eba86911-9a3a-11e3-8bcf-e973a9ae2871,FCtHHqNkw8Rfv2m4YJGpzRAqfg8=] */

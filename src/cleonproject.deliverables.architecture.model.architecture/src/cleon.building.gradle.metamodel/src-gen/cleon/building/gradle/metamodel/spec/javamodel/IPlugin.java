@@ -14,4 +14,4 @@ public interface IPlugin extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,X6YnKUXXZyimd9JrQ/180svwkVI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8ae372cf-c0a8-11e7-a130-7198de5ddf3f,UZAtq1bJW/oz7YEpIqF1jFqgy0A=] */

@@ -12,4 +12,4 @@ public interface IKnowledgeComposition extends ch.actifsource.core.javamodel.IRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,012cc4cb-b7df-11e6-ab27-f74a954bc0f4,zK28K1NwhXbUXazRSAa06EaNTU8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,012cc4cb-b7df-11e6-ab27-f74a954bc0f4,8dpS5c35bCf27kZEaN7oFuONrxE=] */

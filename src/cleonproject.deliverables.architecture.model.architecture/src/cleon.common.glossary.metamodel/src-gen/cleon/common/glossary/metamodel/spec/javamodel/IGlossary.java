@@ -12,4 +12,4 @@ public interface IGlossary extends cleon.common.doc.metamodel.spec.chapter.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cdaa198-0c87-11e6-86c5-87a8b520dd59,Ku7JEg7LG04bOFOX7A3ohB+K+1s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cdaa198-0c87-11e6-86c5-87a8b520dd59,dBBb9qU9hypEeN30y+vkWeOv6GU=] */

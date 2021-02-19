@@ -12,4 +12,4 @@ public interface IViewModelDependency extends cleon.modelinglanguages.uml.metamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,h2DGUzgW+U1koGG4PbtN837XWgo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e5f87cbd-3b5e-11e5-86bc-73aedc28563d,vWTNNLPD4beNZ0IuGoTWd56N1nI=] */

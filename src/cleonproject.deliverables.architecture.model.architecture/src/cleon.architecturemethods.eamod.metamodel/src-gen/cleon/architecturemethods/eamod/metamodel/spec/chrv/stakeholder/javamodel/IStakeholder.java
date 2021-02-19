@@ -8,4 +8,4 @@ public interface IStakeholder extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27a09805-06d7-11e6-8d3e-13e5be4bd43b,UF5jx2RxAt3lVKpG4lWglrOaUeg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27a09805-06d7-11e6-8d3e-13e5be4bd43b,XCSpJKNPkKgHKdAjPd4dnhtReO8=] */

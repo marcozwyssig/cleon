@@ -8,4 +8,4 @@ public interface IClassification extends ch.actifsource.core.javamodel.IResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34dfca0b-41b7-11e5-a2b3-edc7f3343844,bJrOEJhKFiAT/okE4haQM93gzdk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,34dfca0b-41b7-11e5-a2b3-edc7f3343844,saID7bCJQWzEIfZLzS1XvZSeuNU=] */

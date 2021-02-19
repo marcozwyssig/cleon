@@ -8,4 +8,4 @@ public interface IAbstractNamedChapter extends ch.actifsource.core.javamodel.INa
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cdb18e6a-1003-11e5-865e-55f33dbc76dc,Mlzl1my6Q6HgWha9X42EfoIyI8w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cdb18e6a-1003-11e5-865e-55f33dbc76dc,paJc24F/5sx//U+LwEc5sY2TKJ8=] */

@@ -8,4 +8,4 @@ public interface IAbstractService extends ch.actifsource.core.javamodel.INamedRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ccbced2-6da3-11e9-8af5-2346ca56c2e2,2sjF+NB+IItALNdJT3h2SSyRr/o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ccbced2-6da3-11e9-8af5-2346ca56c2e2,R6dGE2kSDfyhSieZEVwFb/g084A=] */

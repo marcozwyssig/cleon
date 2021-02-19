@@ -12,4 +12,4 @@ public interface IRoles extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5db2666a-bb5f-11e8-921b-c1cf01226512,hr2XmT1s9IPBtZVRPR7CvPk8XM8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5db2666a-bb5f-11e8-921b-c1cf01226512,W2Zo1mIwzL19Nu+jwbwzgoOgqlY=] */

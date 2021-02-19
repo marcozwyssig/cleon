@@ -8,4 +8,4 @@ public interface IValueObject extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,kAXKk2cJRF8gy2w7zGJFMV9gtHI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d43814bf-26c3-11e3-a71a-b71d2dda9f8e,juVponQJI4F88xnScHLF6DZ6OC0=] */

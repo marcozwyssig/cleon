@@ -8,4 +8,4 @@ public interface IDelegateCommand extends ch.actifsource.core.javamodel.INamedRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,+fih7XwXXwwC32cGm2rPunY3Kew=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,05cba20d-5db2-11e3-9f22-a7541f3c209d,VAz3KgNgmkKpFmSYtIzBoEgZmgI=] */

@@ -14,4 +14,4 @@ public interface IHealthDeviceBehaviour extends ch.actifsource.core.javamodel.ID
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d68bcb5-8f5a-11e8-9cc3-93ddcbb0b144,eXIYawByAdYQMQI1NX29oLAUEsc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d68bcb5-8f5a-11e8-9cc3-93ddcbb0b144,QMqBlK49rMfvAqb3PvCE3ypwNAE=] */

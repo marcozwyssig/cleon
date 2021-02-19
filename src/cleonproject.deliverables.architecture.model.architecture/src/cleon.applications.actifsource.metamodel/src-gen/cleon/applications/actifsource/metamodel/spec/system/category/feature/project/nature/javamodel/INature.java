@@ -8,4 +8,4 @@ public interface INature extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ee893a-3fd7-11e8-bd50-b94594551673,KQwAQUv4SNG0yo+VSD8qX0/SkFs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ee893a-3fd7-11e8-bd50-b94594551673,oJF67O1JBbApbiJskxw1EaQrvsk=] */

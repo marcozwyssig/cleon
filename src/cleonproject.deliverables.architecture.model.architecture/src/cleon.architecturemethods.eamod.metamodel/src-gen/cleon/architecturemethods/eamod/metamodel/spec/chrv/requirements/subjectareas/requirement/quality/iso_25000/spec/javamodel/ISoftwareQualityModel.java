@@ -12,4 +12,4 @@ public interface ISoftwareQualityModel extends ch.actifsource.core.javamodel.INa
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a54b1cd8-0e04-11e6-ae01-ef640c578b9b,4so2bIsanjvelz4eXaT2NZcDhQg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a54b1cd8-0e04-11e6-ae01-ef640c578b9b,IoGvnu93bV6kCjvonLLkJeI+DhU=] */

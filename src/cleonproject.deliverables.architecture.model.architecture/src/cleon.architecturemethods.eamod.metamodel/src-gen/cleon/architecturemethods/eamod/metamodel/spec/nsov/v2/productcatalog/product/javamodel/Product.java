@@ -12,4 +12,4 @@ public abstract class Product extends DynamicResource implements IProduct {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab67a402-67bf-11e7-afcc-6df3a81a4d17,x1yPXThAnwCGF/Ziu0fvoNS0kz0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ab67a402-67bf-11e7-afcc-6df3a81a4d17,f8mW5wBNavQ+Pfl4R1eVacOdGXM=] */

@@ -12,4 +12,4 @@ public interface IOrganigram extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,45b76892-daaa-11e3-ae07-89aa80d5ec3d,IyJCC19MbS+fPsBTiuuSZp1G0CA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,45b76892-daaa-11e3-ae07-89aa80d5ec3d,KytYj0rvcxX5MY9yjPWNACECGHc=] */

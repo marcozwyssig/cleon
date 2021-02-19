@@ -8,4 +8,4 @@ public interface IMainContract extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8614ece3-4058-11eb-aaa9-61838d129c8c,JQJ65XY+PUlkiC6VQ4fsxMNA7OU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8614ece3-4058-11eb-aaa9-61838d129c8c,B/FxLg6Gq6ztxLfW68+qTcqw0GU=] */

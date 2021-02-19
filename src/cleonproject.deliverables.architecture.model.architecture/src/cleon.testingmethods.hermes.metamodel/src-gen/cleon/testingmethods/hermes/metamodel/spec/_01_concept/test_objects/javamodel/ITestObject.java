@@ -12,4 +12,4 @@ public interface ITestObject extends ch.actifsource.core.javamodel.IDecorator {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24f8dba0-eabf-11e5-838a-6dbe7118dd11,3UJWdfR3wbzylhDajuZQVW2nmH8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,24f8dba0-eabf-11e5-838a-6dbe7118dd11,66RBq+mFhwlOylVInLf+jfINeJc=] */

@@ -12,4 +12,4 @@ public interface IShortName extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9283705a-e5ca-11e5-a77a-1b28b6f2c660,DEzqmj5zn1zPAAAEf2Dhfucpho4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9283705a-e5ca-11e5-a77a-1b28b6f2c660,22XEmxMA1N+DU/z+BaZ91mZn5d4=] */

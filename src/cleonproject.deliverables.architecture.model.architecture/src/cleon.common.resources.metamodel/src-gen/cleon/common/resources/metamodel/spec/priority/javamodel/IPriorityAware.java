@@ -12,4 +12,4 @@ public interface IPriorityAware extends ch.actifsource.core.javamodel.IResource 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db7fa68a-06d7-11e6-8d3e-13e5be4bd43b,I+MxN5EIEjLmNpkXxAhJpEbIqqQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db7fa68a-06d7-11e6-8d3e-13e5be4bd43b,jJXHGzGL2rgXPvAo7uQ4Nbgsfpc=] */

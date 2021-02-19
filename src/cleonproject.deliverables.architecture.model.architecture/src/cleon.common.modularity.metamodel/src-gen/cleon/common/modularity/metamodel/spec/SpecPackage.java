@@ -44,4 +44,4 @@ public class SpecPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,yNbXrtLvDlYG9I0fcuUcHI5kGVM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.modularity.metamodel.spec,v5t4CIYRb+atetc07kf6/m8H1P8=] */

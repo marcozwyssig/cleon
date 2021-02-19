@@ -16,4 +16,4 @@ public interface IWorkItem extends ch.actifsource.core.javamodel.INamedResource,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,6apZksPFfYJz2jbyX+cYyQ8zpvw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4330cc63-ff9c-11e4-ac0a-959b440f987f,odqKoBVxr1YGWLXbOloT5kxoMPs=] */

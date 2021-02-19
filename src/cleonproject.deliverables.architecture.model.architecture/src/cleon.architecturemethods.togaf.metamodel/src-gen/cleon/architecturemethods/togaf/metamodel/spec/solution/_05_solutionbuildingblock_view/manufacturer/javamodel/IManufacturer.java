@@ -14,4 +14,4 @@ public interface IManufacturer extends cleon.modelinglanguages.uml.metamodel.spe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01fe9fef-2d70-11e6-959f-d1cef44ff5fd,18jqb9s6cjM0yMgPyaXzKumd/UM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,01fe9fef-2d70-11e6-959f-d1cef44ff5fd,FopI5nWzDKpVirBlLdAPNBxi6FA=] */

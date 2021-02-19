@@ -23,4 +23,4 @@ public class LangPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.lang,ANBT0vFmv1pDq940uqKVWxcsrXc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.lang,2K2HwRMlLLrjQlneKfPfZPK7lQs=] */

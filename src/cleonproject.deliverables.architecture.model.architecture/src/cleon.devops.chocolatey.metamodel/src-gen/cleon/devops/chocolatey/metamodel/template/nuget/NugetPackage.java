@@ -23,4 +23,4 @@ public class NugetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.chocolatey.metamodel.template.nuget,DseXDOLSvp6NG0BVWRXfTqcaqqU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.devops.chocolatey.metamodel.template.nuget,PDS89V40x6mNwjQ2pTfIP5ncOq4=] */

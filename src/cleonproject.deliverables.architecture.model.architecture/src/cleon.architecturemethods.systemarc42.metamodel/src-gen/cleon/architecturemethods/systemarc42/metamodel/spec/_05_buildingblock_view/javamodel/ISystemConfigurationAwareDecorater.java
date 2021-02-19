@@ -12,4 +12,4 @@ public interface ISystemConfigurationAwareDecorater extends ch.actifsource.core.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f6167763-2997-11eb-9648-7bdf8dc8eaf2,UKGum1kQ16p7Tn1aWjj+BbOCHSw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f6167763-2997-11eb-9648-7bdf8dc8eaf2,qUySDMXg3Lm4wGX2y1onEAs7S9k=] */

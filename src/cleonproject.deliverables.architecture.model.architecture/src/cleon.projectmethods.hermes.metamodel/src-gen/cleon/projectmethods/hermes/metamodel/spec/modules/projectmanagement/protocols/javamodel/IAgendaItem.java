@@ -12,4 +12,4 @@ public interface IAgendaItem extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cf7dbe8a-b461-11e5-a3f4-497fd75158dc,Z34Qa3BYdlJmyCbq2+R91ofnung=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cf7dbe8a-b461-11e5-a3f4-497fd75158dc,bzgNgBqwrxdO4qR4VPOjWrWKMPk=] */

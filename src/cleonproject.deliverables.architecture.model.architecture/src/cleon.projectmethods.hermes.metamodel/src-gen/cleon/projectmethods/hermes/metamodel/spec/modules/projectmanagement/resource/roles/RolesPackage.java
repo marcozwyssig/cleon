@@ -32,4 +32,4 @@ public class RolesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.roles,jxIMJnbhhLXm88X4LcfTtVbQnK0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.roles,DSdTaIflSaYefR+2Sp4eUyUzWBU=] */

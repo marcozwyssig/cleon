@@ -23,4 +23,4 @@ public class NativesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.natives,pFCn9mZFS3sdWORprAh2d9LLIk8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.natives,6uLPTVHTmuj51x4YW0Htdzn66u8=] */

@@ -28,4 +28,4 @@ public interface IAssociation extends ch.actifsource.core.javamodel.IResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,nRhvEXKIFNuNshXb4U/pXncoo0U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,10b7d991-2783-11e3-a466-eda9d7258bca,ezEyNinWHhezRGEJGpsrJFRUx4g=] */

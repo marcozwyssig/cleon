@@ -12,4 +12,4 @@ public interface IAboutAware extends ch.actifsource.core.javamodel.IResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,29a8b5ed-0c20-11e9-8a28-597a9a8945ea,V+aEyxHwm970gzz+sCdRLDIpku8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,29a8b5ed-0c20-11e9-8a28-597a9a8945ea,zOaSqLRLDmgBo/T1cmC4EsbRgzI=] */

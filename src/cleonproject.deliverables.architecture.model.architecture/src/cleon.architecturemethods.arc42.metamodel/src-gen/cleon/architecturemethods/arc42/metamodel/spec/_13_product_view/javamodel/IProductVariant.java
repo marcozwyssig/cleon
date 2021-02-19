@@ -16,4 +16,4 @@ public interface IProductVariant extends ch.actifsource.core.javamodel.INamedRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,fUHyHABZe7Y8+yjBl0s3i2pEGOQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4026c4e3-2acf-11e9-b83f-8be423c00623,l6sGQPBmVJuj1ZTkxvoIPTDlHmY=] */

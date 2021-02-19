@@ -23,4 +23,4 @@ public class JavaPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.java,CyZJbFt8pbuUvgBJ05MKwtStXkc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.java,o2502HGOD7J4ytSyiaTOTlIVGus=] */

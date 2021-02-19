@@ -12,4 +12,4 @@ public interface ISensorClass extends ch.actifsource.core.javamodel.IClass, cleo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,jZG0BROeDg7Ctv8AcgchqjFDdco=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33be3a6e-cfe0-11ea-99e7-03141914df18,vX9OhiY27BapChIRqIQX2GKEZDk=] */

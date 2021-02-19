@@ -14,4 +14,4 @@ public interface ICalendarItem extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7440e8c6-c37c-11e5-9455-d97b1b986284,mbrAt2BrAlZRAqkBQOu1J5onbWc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7440e8c6-c37c-11e5-9455-d97b1b986284,IOn4r83Y8csMBRd0lvN2w65bG7k=] */

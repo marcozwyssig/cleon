@@ -31,4 +31,4 @@ public class ProductgroupPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.productgroup,eeypUviyQ2qgLovKvNxV9Bv1ThM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.nsov.v2.productcatalog.productgroup,rU4Yw/tz9D3rGALDJKJ0X4HVjbo=] */

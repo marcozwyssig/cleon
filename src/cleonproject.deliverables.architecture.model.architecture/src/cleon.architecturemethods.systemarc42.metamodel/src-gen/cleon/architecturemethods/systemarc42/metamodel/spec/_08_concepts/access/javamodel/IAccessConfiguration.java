@@ -14,4 +14,4 @@ public interface IAccessConfiguration extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,Dm4CBLHZVaXL2vRzURRtO8PEjGk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,ZBpiPxVBS4ad+9qTT6AidcTtaTw=] */

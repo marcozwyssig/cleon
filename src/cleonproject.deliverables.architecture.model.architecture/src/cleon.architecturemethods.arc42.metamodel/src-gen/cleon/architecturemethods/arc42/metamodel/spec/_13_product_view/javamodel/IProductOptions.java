@@ -8,4 +8,4 @@ public interface IProductOptions extends ch.actifsource.core.javamodel.INamedRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,blOdu+kC8m8/vHRFHw5TNtfGW+Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4c37c1df-2acf-11e9-b83f-8be423c00623,6W4PV8lSOFzK2hYWehLbXlnjZaE=] */

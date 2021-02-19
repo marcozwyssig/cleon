@@ -26,4 +26,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.asciidoc,ZjllzEOhLEhfB1e7BK6X/24SdtQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.asciidoc,CCgIrBRugWHZtdh2R2p1PceHaBE=] */

@@ -8,4 +8,4 @@ public interface IProductVariantAware extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3cbcc8fd-2ad0-11e9-b83f-8be423c00623,GjYyx1zmOUnf1ipQSux5Zz8vr98=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3cbcc8fd-2ad0-11e9-b83f-8be423c00623,iJwMb8x6BSxgJm8Mt7Y/RR9NSRM=] */

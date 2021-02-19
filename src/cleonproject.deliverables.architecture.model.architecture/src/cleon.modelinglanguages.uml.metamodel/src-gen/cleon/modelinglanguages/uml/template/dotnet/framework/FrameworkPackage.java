@@ -23,4 +23,4 @@ public class FrameworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.dotnet.framework,+VMTNh8WSLueX+P0bFNfhB1i1kc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.dotnet.framework,7RDdHYCvWjUlXCuQZjvAVclrktA=] */

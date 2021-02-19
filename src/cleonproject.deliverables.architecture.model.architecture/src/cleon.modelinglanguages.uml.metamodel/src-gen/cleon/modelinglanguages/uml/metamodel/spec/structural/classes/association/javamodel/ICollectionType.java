@@ -73,4 +73,4 @@ public interface ICollectionType extends ch.actifsource.core.javamodel.IEnumValu
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,261182b1-13ca-11e3-bec7-f1e135382475,N9TRMnmXoT/R2T5vS8qyR3T0YP0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,261182b1-13ca-11e3-bec7-f1e135382475,QZYkzjLITKDVJqIuA64xEVTg1Kg=] */

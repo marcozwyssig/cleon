@@ -12,4 +12,4 @@ public interface IArchitectureBuildingBlock extends cleon.modelinglanguages.uml.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1a0f6f94-3a07-11e6-a354-253097f89a49,XAW88gBPQI8n+BModrjpCy094O0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1a0f6f94-3a07-11e6-a354-253097f89a49,yHzK2NeaBhsX/u0SlVeadZTaZNo=] */

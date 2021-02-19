@@ -12,4 +12,4 @@ public interface IProductGroup extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9c23f77-67c8-11e7-afcc-6df3a81a4d17,ZtMJfcRnoRXUCs3rgSVH7NB/0hE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9c23f77-67c8-11e7-afcc-6df3a81a4d17,KuM5kyfbkJ5e7s/PC4n2FvD5J+I=] */

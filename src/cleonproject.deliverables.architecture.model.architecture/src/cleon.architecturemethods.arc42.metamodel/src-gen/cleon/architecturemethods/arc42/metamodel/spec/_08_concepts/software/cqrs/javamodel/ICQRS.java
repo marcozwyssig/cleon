@@ -8,4 +8,4 @@ public interface ICQRS extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ebb6e640-11f5-11e5-848b-017a3a98ae34,X21g4Z65gc/vVS+kOX4syKnNYMQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ebb6e640-11f5-11e5-848b-017a3a98ae34,5ANAJGVCXJ1RFnwIb9Si7KfKwHE=] */

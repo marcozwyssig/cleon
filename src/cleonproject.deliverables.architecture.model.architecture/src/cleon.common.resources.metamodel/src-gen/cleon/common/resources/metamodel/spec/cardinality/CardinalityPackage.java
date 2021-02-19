@@ -25,4 +25,4 @@ public class CardinalityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.cardinality,ah1mIAyEKe84W3vPlGVv2ULPPso=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.cardinality,GDdxXMHKJg9ULQhqPtMm8V52ulc=] */

@@ -29,4 +29,4 @@ public class DomainPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain,efBufrzwdMGzbtVCGHKwf75YAgw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain,8h4wG4uyEAHysRlBd2H9d3w+W8w=] */

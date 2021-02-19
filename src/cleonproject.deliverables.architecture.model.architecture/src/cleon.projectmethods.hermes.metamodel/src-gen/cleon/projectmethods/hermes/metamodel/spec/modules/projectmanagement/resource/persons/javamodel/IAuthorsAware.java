@@ -12,4 +12,4 @@ public interface IAuthorsAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bce16132-bff1-11e7-9dcc-23cb45d05890,1m6a+5MOorrrZfuxaPYpaSN166U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bce16132-bff1-11e7-9dcc-23cb45d05890,IWgl/nkuG0rYxYknY27cdQhVgu8=] */

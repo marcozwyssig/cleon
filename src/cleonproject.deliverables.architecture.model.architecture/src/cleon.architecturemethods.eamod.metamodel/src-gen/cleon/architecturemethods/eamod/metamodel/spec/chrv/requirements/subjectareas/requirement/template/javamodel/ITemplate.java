@@ -12,4 +12,4 @@ public interface ITemplate extends ch.actifsource.core.javamodel.IResource, cleo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b9992b4-d574-11e5-89ea-2d8d86e9ef89,G3rEEdJ/brOXQ+BD2lnpVJcKBOQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1b9992b4-d574-11e5-89ea-2d8d86e9ef89,MOlGmS6pRqeCL36gROJh6LG6qFY=] */

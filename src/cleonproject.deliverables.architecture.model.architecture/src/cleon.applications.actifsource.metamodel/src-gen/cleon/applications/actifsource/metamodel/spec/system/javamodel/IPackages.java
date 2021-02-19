@@ -12,4 +12,4 @@ public interface IPackages extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,48859dc9-46d0-11eb-b318-ab9601344039,/XlXd2nH/0Sb5IXOOay7JajinZs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,48859dc9-46d0-11eb-b318-ab9601344039,lrFKnZhy8fjWe4Pu5/K6Nxb2AOg=] */

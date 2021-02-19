@@ -8,4 +8,4 @@ public interface IClassifier extends cleon.common.modularity.metamodel.spec.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2141695f-1144-11e3-b60e-ab478a3e1eca,TG5WzLHEqNWl8d9hXusLRXvlrrc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2141695f-1144-11e3-b60e-ab478a3e1eca,Rvx7gVhblEL/ZYJf43EGRqnNPEU=] */

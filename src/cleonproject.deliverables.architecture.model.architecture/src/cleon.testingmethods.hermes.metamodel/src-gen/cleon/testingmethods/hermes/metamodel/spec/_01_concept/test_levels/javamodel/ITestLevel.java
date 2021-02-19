@@ -55,4 +55,4 @@ public interface ITestLevel extends ch.actifsource.core.javamodel.IEnumValue, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,Q7RS+/EQ+R1/rGKkVZxw5WN7SDw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4731eb51-5153-11e9-bb61-971a423d31e9,6m8lW0tq0z07RFJo2s0KraW8nl8=] */

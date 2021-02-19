@@ -28,4 +28,4 @@ public class GeneratorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.actifsource.metamodel.template.generator,zJCUfRIxUrItTgHcQzEap0GBxdw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.actifsource.metamodel.template.generator,r41HV6wfljm/Er+aM66dtQfqX6U=] */

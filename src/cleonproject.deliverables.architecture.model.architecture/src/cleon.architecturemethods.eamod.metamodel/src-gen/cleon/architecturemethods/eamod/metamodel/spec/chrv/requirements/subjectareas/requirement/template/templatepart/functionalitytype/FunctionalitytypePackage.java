@@ -30,4 +30,4 @@ public class FunctionalitytypePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype,C0xRxJsQe1adBGVVQxx+47JUPMw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.template.templatepart.functionalitytype,XgnIBanEkwHR8EH8gjyfQQ4jKOU=] */

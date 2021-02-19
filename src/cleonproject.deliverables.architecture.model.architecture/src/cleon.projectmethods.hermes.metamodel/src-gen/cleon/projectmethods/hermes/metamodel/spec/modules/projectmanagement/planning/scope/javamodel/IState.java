@@ -49,4 +49,4 @@ public interface IState extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5b3641a5-c767-11e6-9515-3d3c9e104ed6,OVQ4rOCt5BS+iDf08A4CZD3i9yE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5b3641a5-c767-11e6-9515-3d3c9e104ed6,gxfu87/Ooju5FvRKfCkNoGLI4sQ=] */

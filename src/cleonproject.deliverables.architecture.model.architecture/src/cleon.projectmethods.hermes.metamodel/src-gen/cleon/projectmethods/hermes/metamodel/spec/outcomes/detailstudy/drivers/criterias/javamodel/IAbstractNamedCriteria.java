@@ -8,4 +8,4 @@ public interface IAbstractNamedCriteria extends ch.actifsource.core.javamodel.IN
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,29073758-2028-11e9-83b3-a16e26b4cc59,8xBemMSOFEc1SZMR9y7IpqzC9Zg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,29073758-2028-11e9-83b3-a16e26b4cc59,fOxmAcFLAh39LFrY4jrd81XTWhM=] */

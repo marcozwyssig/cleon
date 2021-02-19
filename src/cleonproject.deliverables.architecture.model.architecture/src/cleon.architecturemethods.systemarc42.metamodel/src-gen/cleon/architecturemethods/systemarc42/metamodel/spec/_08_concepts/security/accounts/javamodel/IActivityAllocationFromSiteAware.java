@@ -12,4 +12,4 @@ public interface IActivityAllocationFromSiteAware extends ch.actifsource.core.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ce986cf3-7081-11eb-b91b-ab805dd3de7b,Uiu39kErWtXW5ROo1Q5MFUwjE6c=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ce986cf3-7081-11eb-b91b-ab805dd3de7b,s/s7nxNJivyBrQfrcrJLqe5xBfU=] */

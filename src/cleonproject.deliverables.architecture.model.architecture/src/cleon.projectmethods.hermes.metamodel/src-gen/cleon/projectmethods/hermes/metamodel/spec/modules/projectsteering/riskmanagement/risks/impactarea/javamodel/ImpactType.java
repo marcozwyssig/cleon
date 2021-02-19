@@ -80,4 +80,4 @@ public class ImpactType extends DynamicResource implements IImpactType {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e,Fwl9JDxoqrdGQpm8EFW2/eNXPXE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,7ef60ecd-2f07-11e6-8bd9-a77b8d2a3a0e,8Xcra1f3Xjp+P9Z+lbWnB5j79bI=] */

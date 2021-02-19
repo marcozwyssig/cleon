@@ -20,4 +20,4 @@ public interface IHermes extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,u5OjFkmfAg86ymSNdOwlFRYrLqM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fceba8cc-31c9-11e8-8a84-6f139e67278b,UO2r7c4TjqM1S4CtO/1SxWiKKok=] */

@@ -25,4 +25,4 @@ public interface IBuildingBlockView extends cleon.common.doc.metamodel.spec.chap
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,Vi1ZwtVDpWCaKW92vTZu+5x4FhA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,37b55799-ffcc-11e4-ac0a-959b440f987f,9BsHcOuU+GzhYSV2kGB3HWMc090=] */

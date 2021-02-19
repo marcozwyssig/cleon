@@ -12,4 +12,4 @@ public interface ITestSpecification extends ch.actifsource.core.javamodel.IDecor
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ade37916-eabe-11e5-838a-6dbe7118dd11,KomvSqBhGmzFUN9+/aHh5Qv/5bA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ade37916-eabe-11e5-838a-6dbe7118dd11,E4EKBx1wxpadGz1yjFodJzpomWY=] */

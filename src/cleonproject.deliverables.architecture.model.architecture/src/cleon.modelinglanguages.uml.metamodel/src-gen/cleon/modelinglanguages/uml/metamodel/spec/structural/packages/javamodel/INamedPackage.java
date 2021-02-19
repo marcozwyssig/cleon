@@ -8,4 +8,4 @@ public interface INamedPackage extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,25dd5ea1-7aed-11e4-a6e2-23d949480f96,2KwmKlhyKTxbAiaCddC2EOYz3so=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,25dd5ea1-7aed-11e4-a6e2-23d949480f96,DeXpjUCIIGBU2J+AQ2zXO6/Ntes=] */

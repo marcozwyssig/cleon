@@ -8,4 +8,4 @@ public interface IInterface extends cleon.modelinglanguages.uml.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7163044f-2507-11e3-9870-1d4b8a45fe52,gkcSNPU3MSsvklISo5OsCPouUjg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7163044f-2507-11e3-9870-1d4b8a45fe52,nb6/OmTggLiIiwNEmc7GpYJ2J4Y=] */

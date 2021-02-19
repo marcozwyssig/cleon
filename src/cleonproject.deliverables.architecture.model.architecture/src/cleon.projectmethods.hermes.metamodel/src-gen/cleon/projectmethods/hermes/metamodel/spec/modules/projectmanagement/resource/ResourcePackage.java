@@ -36,4 +36,4 @@ public class ResourcePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource,ly93jYr6c9xgwmTC1qMZhCCs8hg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource,gAx7ygFL0B+Zq82ndJv5E0eoSr8=] */

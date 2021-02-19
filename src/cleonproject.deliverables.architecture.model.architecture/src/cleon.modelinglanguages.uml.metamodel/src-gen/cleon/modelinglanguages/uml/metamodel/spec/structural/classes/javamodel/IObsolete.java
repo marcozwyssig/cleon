@@ -12,4 +12,4 @@ public interface IObsolete extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,30ee3914-356e-11e3-974d-d19f8c167114,kRjZM0lrlZlAhtQT25HoopIrcvM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,30ee3914-356e-11e3-974d-d19f8c167114,+SshQHIezhbx+4iwqOPEmgcQu6Y=] */

@@ -12,4 +12,4 @@ public interface IWeightingRequirementCriteria extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,lswReaPZKv7GRoAbHLimTrVFURI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5f0c4609-a6f8-11e8-9c81-8bd68c62e435,7HuxWDKSmJENzM3VkfUGAAW4Hys=] */

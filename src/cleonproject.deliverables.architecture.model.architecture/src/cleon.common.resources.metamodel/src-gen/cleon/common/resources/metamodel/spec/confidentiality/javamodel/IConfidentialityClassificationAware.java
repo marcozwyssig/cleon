@@ -12,4 +12,4 @@ public interface IConfidentialityClassificationAware extends ch.actifsource.core
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8368597-0b7b-11e9-8a28-597a9a8945ea,h3o3DIVPNvKqxs9fyRW9wQvaOHU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8368597-0b7b-11e9-8a28-597a9a8945ea,4sn98Rp3Pp0E3FGMzq7M/oYIBGU=] */

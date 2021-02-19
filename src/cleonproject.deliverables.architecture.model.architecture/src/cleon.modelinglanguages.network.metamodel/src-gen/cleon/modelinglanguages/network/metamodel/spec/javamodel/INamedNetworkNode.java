@@ -8,4 +8,4 @@ public interface INamedNetworkNode extends ch.actifsource.core.javamodel.INamedR
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4e6496f-7403-11e9-8765-0925552fc2b7,XaZOkSfoRNaD+vnaMyK/zloTDv0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4e6496f-7403-11e9-8765-0925552fc2b7,6XN0SVMXV1MYTvQkI4+e65BtAfM=] */

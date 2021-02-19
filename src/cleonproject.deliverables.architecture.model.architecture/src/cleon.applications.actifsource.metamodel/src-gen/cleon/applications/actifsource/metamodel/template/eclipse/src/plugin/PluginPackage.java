@@ -25,4 +25,4 @@ public class PluginPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.plugin,afYobTHBfhzWUqs7ZQUwpuYC7ds=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.plugin,dcP1BNq/YG6d+ksz7oJ46tdZvi4=] */

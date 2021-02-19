@@ -12,4 +12,4 @@ public interface ITestResult extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1378204-66a6-11e9-9ec9-5fbc84faaeb1,GVOep4XagcwZDCN9sr0exVJFbcU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b1378204-66a6-11e9-9ec9-5fbc84faaeb1,m15ev7AgosUAVqwTb2rS9xwlj+4=] */

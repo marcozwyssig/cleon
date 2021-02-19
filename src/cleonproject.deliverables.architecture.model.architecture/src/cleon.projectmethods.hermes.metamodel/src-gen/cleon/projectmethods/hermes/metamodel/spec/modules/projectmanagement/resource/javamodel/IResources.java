@@ -8,4 +8,4 @@ public interface IResources extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,81e4d2c5-ff9e-11e4-ac0a-959b440f987f,wFwLKcER1y1CSWrcNSlEXm4wjJ8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,81e4d2c5-ff9e-11e4-ac0a-959b440f987f,bxdkXy1taa/7DO/sxvlpMnOlt2w=] */

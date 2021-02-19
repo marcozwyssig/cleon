@@ -14,4 +14,4 @@ public interface ISingleState extends cleon.modelinglanguages.uml.metamodel.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,Uz+9ygRTTXcUDJuaLyq8+CgRecA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7f13ba82-b07c-11e4-bca8-71d5b3e72cd6,Y5EmH4U8nNlaA7VddzqegGio6Pw=] */

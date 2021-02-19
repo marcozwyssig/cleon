@@ -18,4 +18,4 @@ public interface ILanguage extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ac6b9d2-3334-11e8-a9fe-87ba35d8f5c4,g0YuHhv8lK60+vvWGmSTDRizqiI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7ac6b9d2-3334-11e8-a9fe-87ba35d8f5c4,96yIwBIpCQCtA7xuqg8Q+luxM90=] */

@@ -36,4 +36,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,nn5OBA7/tzCRRAmWSWWVzA1BCHs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,XjNCoWCQD0f78gG2Ie0lV7KkE/g=] */

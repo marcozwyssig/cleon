@@ -8,4 +8,4 @@ public interface IStaticContent extends ch.actifsource.core.javamodel.INamedReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c3477a3b-afde-11e5-a548-13e054f2d74f,w5hD+HhMTW86ELhnrySbejrjyRQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c3477a3b-afde-11e5-a548-13e054f2d74f,xWhZftzBOOYqcf+yYnELmZ3WPSY=] */

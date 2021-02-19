@@ -23,4 +23,4 @@ public class InstallationmanualPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.installationmanual,0AVdKtmNf7xH6vCcNPFuHboDQUE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.installationmanual,L7jWkx/ykLhL7zv+X/mYPVo4IWY=] */

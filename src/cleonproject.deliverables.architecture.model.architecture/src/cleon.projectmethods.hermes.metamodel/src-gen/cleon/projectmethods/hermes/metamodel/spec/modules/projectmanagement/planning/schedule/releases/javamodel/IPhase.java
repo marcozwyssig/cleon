@@ -12,4 +12,4 @@ public interface IPhase extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bcd1f820-d719-11e6-a422-8b5491da3f30,0uGBZsn6WZyVYQdkbmV+saJxyAU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bcd1f820-d719-11e6-a422-8b5491da3f30,jbj/fiPqYEdNw3jiMSfWQkpWUwk=] */

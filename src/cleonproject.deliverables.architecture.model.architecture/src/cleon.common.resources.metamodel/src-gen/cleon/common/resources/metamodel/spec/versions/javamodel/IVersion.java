@@ -12,4 +12,4 @@ public interface IVersion extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6a0f54e6-2d72-11e6-959f-d1cef44ff5fd,l/LF+cYtiYOuVXAELOxSUuR0Pl8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6a0f54e6-2d72-11e6-959f-d1cef44ff5fd,dRqpiMNY1dV31dAH1JjFMqrIKDY=] */

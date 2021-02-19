@@ -12,4 +12,4 @@ public interface IStyle extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4fd40595-47f6-11e5-a18e-994cfeeeb1be,EvWScksy5jQhVWRIVdn2h6uNKTc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4fd40595-47f6-11e5-a18e-994cfeeeb1be,GgH0gGxiYgRKTwVEz0658ntIBrY=] */

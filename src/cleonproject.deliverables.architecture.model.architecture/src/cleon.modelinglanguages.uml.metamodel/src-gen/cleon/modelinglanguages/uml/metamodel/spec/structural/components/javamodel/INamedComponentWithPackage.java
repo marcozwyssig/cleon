@@ -8,4 +8,4 @@ public interface INamedComponentWithPackage extends ch.actifsource.core.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,46835629-41b0-11e5-86f2-816f5628b22b,jIugKMhY4GgEwxzDFfM4ETE4pXc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,46835629-41b0-11e5-86f2-816f5628b22b,tO8LUX66k0kg8H1+D3iT1W7sjmA=] */

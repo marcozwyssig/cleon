@@ -8,4 +8,4 @@ public interface ISimpleType extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,74f7edbd-52aa-11e3-9bab-1d73174e62c2,s9Dksa1oYfFWUzIArwdypIBegmE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,74f7edbd-52aa-11e3-9bab-1d73174e62c2,lFbIFuw8EM7qRB/sV8jX0Qgs6vc=] */

@@ -12,4 +12,4 @@ public interface ILocation extends ch.actifsource.core.javamodel.INamedResource,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,16fa59aa-c768-11e5-b3f9-43c5a0896ea1,mbBcFq1v97EF/3ImFT/pS2EI8C8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,16fa59aa-c768-11e5-b3f9-43c5a0896ea1,MOfBkLmhL6ez6dj1HkE1f18PxRk=] */

@@ -12,4 +12,4 @@ public interface IPerson extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e4ce5b3-daac-11e3-ae07-89aa80d5ec3d,s/zK/dCJ7XnoaIySdRQLKmTPXLU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e4ce5b3-daac-11e3-ae07-89aa80d5ec3d,OG60jmp6NOlhA/QrY7FtqUwY/S4=] */

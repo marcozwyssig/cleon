@@ -27,4 +27,4 @@ public class _05_solutionbuildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view,+HPtsboyvEaOD4TsnohEI/z4/oc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view,NjBh+Ve0VllmIC1oFLWlpjZu+hU=] */

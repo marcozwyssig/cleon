@@ -14,4 +14,4 @@ public interface IGroup extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,UQSXGK6v0o3x+erZbR6wapk0fE4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b8a9dce5-09ae-11e9-8c40-11db3668c0c9,vGFaaTCYzPqTeUQxlhNsX0ttCgk=] */

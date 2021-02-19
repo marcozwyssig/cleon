@@ -27,4 +27,4 @@ public class _05_architecturebuildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view,LHt8fWO9Jr25FIq6Qox4572rEEg=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.togaf.metamodel.spec.reference._05_architecturebuildingblock_view,EQhU7+qGpBWrEl60TX+cz1B7uQQ=] */

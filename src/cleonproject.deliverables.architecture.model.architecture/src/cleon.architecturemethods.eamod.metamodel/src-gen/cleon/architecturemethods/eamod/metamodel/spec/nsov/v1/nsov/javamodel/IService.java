@@ -47,4 +47,4 @@ public interface IService extends ch.actifsource.core.javamodel.INamedResource, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,RaX8D4xsPNd4tM9cWU65jYXb6Gc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df40cec4-bc84-11e6-b169-a12bde5a1c7c,HTTVjJY0vsI4qj3fLYN6DCyawGE=] */

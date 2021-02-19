@@ -12,4 +12,4 @@ public interface IImage extends cleon.publishing.staticwebsite.metamodel.spec.st
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,JGJGXDby9VXhVU/dCpYvCr8KXeY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c844cab0-afde-11e5-a548-13e054f2d74f,ErktHV9rZFVuBV4RgbBF6hNOH8Y=] */

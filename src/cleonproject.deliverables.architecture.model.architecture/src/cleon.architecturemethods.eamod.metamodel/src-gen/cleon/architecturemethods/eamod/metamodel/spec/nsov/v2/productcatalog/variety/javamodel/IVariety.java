@@ -12,4 +12,4 @@ public interface IVariety extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80ca4581-67c4-11e7-afcc-6df3a81a4d17,PJb/qn+d6Dtf3Lpx0s0qNE1x1t0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80ca4581-67c4-11e7-afcc-6df3a81a4d17,sprzwtZTMFpxrdxZ/dtAIaPArUY=] */

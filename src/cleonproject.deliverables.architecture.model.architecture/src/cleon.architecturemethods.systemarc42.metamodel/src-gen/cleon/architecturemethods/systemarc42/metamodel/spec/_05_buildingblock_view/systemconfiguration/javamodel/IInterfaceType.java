@@ -43,4 +43,4 @@ public interface IInterfaceType extends ch.actifsource.core.javamodel.IEnumValue
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9aa83a3b-878f-11e9-a61b-279ebde48b48,J1K7TmL3AiftAB56t/NhEVoQiZ8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9aa83a3b-878f-11e9-a61b-279ebde48b48,JBeeEeROmzeLuZwXrD+tPhA5wV0=] */

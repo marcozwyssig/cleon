@@ -14,4 +14,4 @@ public interface IStaticTest extends ch.actifsource.core.javamodel.IDecorator, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,VHbHuQzeIfEanZAleZFMBYxVqWI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7cffe5db-1cf1-11e6-aaba-9db7fdc64d7e,FidKN0k67ZC/FfJ8h1i7v3Ifsrg=] */

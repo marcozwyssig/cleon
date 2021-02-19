@@ -8,4 +8,4 @@ public interface IBudget extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0aa32df9-a7df-11e5-82dd-3b995d9c840c,60emUKlW/Ff4cAZclLCqJaCyrA0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0aa32df9-a7df-11e5-82dd-3b995d9c840c,G7FBWr2SjQ/uE6HaqEZU/MTrgzw=] */

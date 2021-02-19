@@ -12,4 +12,4 @@ public interface IHasAssets extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c80d50de-bbd6-11e6-997f-d73ea5a3671c,cEB7znSMRXiH5WF+SbcQj094Bkg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c80d50de-bbd6-11e6-997f-d73ea5a3671c,lYiqW8KbtQqekJD55BXzadhL1X0=] */

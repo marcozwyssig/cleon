@@ -14,4 +14,4 @@ public interface IProductVariantOptions extends ch.actifsource.core.javamodel.IR
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,400c0491-2ad9-11e9-b83f-8be423c00623,o3GTEyWxDs2nfY0ufIyAcFsPAL0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,400c0491-2ad9-11e9-b83f-8be423c00623,b73LMdVkmhDt2rTbOH2lytQK/S8=] */

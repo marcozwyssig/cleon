@@ -25,4 +25,4 @@ public class ProductcatalogPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.asciidoc.nsov.v2.productcatalog,SRwDJvbE7dTU564jcxElCgPVlKU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.template.asciidoc.nsov.v2.productcatalog,e/7vlqAfCN0YJeWbRBrz1crweZc=] */

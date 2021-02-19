@@ -12,4 +12,4 @@ public interface IStringBusinessObjectId extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33a5556f-31cd-11e8-8a84-6f139e67278b,Ays9K2xhkkyD0Fd4B814xJ89qnw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33a5556f-31cd-11e8-8a84-6f139e67278b,QIqiqFX1Zxd0p+w+ms3fLzH/RSM=] */

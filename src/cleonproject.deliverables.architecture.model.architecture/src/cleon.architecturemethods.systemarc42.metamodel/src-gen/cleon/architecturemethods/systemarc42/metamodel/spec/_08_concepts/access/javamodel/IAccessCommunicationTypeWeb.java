@@ -8,4 +8,4 @@ public interface IAccessCommunicationTypeWeb extends cleon.architecturemethods.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,16486d9f-1ea3-11eb-9eef-0dadb2b460da,L2CbYB/9S5GpPvRPe4LIqVLOczU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,16486d9f-1ea3-11eb-9eef-0dadb2b460da,fuEieYXIHkJp3ZFf0nUakZ/j7Hw=] */

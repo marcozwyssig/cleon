@@ -23,4 +23,4 @@ public class ImporterPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.xmi.importer,WhexNuUhT3yhSE9MSh8jyHjMP7s=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.xmi.importer,t0GWakwb9b8KIxrsEPss266++cU=] */

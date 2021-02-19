@@ -8,4 +8,4 @@ public interface IFunctionalResource extends ch.actifsource.core.javamodel.IName
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4f5b02e-81a0-11e7-953b-0d27a7d546ad,90snlvPoBtxo5VEhwQX1myUfgf8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4f5b02e-81a0-11e7-953b-0d27a7d546ad,//C4i1BdXll6JRFaL6lazbsn/bs=] */

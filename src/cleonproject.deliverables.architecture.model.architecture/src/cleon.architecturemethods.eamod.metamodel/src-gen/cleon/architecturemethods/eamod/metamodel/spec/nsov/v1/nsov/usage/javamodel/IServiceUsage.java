@@ -16,4 +16,4 @@ public interface IServiceUsage extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,ImqKIgvQVM7GNKVDfIZ0AShgjCE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,665c3da7-c690-11e6-8242-2f0ed6756d77,VnG0wJb8GqEhd0/kB0tjWlUolAw=] */

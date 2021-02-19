@@ -14,4 +14,4 @@ public interface IView extends cleon.modelinglanguages.uml.metamodel.spec.struct
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,497ab35f-5286-11e3-999a-25b1389b65ab,hA+0+yg1yH8g4mNDOWlDfHYc1r0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,497ab35f-5286-11e3-999a-25b1389b65ab,+JYlrp015eIVyDUwFwAX/nCFFSE=] */

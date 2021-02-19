@@ -20,4 +20,4 @@ public interface IResource extends cleon.modelinglanguages.bpmn.metamodel.spec.o
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ebfbca0-bb6a-11e3-bf59-6b10d9dd6d36,nU4Vqavxm0jeGyDSKV3B+H2K1DQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ebfbca0-bb6a-11e3-bf59-6b10d9dd6d36,ya4rOLTpBDNGtWXVPWGU8lnrRig=] */

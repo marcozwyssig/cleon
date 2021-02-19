@@ -12,4 +12,4 @@ public interface IPrinciple extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f06a6ec-a951-11e5-bda2-a7fc3bd7c783,SE0smAeDlnCESyxNjSzIZ01Pp40=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f06a6ec-a951-11e5-bda2-a7fc3bd7c783,jWv/E3NkNA2xfYnAR3OobAc+1ao=] */

@@ -34,4 +34,4 @@ public class KnockoutPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chan.knockout,vIrFAbjWW1PwGm7kD0YP0QoyyAM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chan.knockout,3l2pELhaiKo+JUUkwtX2I9aNSds=] */

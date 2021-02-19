@@ -14,4 +14,4 @@ public interface IResponsibilities extends ch.actifsource.core.javamodel.INamedR
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,081f405d-809c-11e9-8e65-f3f639e40a34,clhdLzJ3KkW6UvuPzpze30+NY/Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,081f405d-809c-11e9-8e65-f3f639e40a34,X27b8fBi+N9p6SMQ1Hh7JjwWHE4=] */

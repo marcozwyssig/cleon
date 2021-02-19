@@ -8,4 +8,4 @@ public interface IDiagram extends cleon.applications.actifsource.metamodel.spec.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1d5fec5-3f8d-11e5-9616-473ab9b9a1f3,RCCoDG4rDr6qbhI0Qn5Lq+ovIN4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f1d5fec5-3f8d-11e5-9616-473ab9b9a1f3,gYfyTZ2NHiVXTTCuooGTMOKEhKk=] */

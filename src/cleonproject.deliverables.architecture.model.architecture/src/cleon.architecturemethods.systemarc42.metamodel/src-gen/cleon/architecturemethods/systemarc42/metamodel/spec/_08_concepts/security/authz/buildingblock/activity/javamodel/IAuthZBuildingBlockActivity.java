@@ -14,4 +14,4 @@ public interface IAuthZBuildingBlockActivity extends cleon.common.doc.metamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6dd2381d-03d6-11eb-9c97-71aa0c3a8a81,Hlv+ahBW/Ryiy4iA94w9OWNQJJ4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6dd2381d-03d6-11eb-9c97-71aa0c3a8a81,xQGWVFo73i7j5tLRXru7I3WCwuQ=] */

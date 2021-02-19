@@ -14,4 +14,4 @@ public interface INetworkSite extends ch.actifsource.core.javamodel.IDecorator, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,TGQX8ArjlzhgHZeNFW17njfVDdA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,398f37f2-928a-11e9-959e-8115c2f9e41e,iBE8zsQaIZ5EP3VSgQcOJB7l96U=] */

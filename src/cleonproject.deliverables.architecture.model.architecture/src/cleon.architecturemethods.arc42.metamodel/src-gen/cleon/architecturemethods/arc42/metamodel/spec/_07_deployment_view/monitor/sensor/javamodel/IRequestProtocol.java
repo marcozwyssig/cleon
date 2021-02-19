@@ -37,4 +37,4 @@ public interface IRequestProtocol extends ch.actifsource.core.javamodel.IEnumVal
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98d01b1c-dc79-11ea-a169-cb4c6ff66798,v6ITQxDocndp+nby03YTP4nsov4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98d01b1c-dc79-11ea-a169-cb4c6ff66798,7fWCFz9Gw3Fdj/9+QxHDEgpjl6I=] */

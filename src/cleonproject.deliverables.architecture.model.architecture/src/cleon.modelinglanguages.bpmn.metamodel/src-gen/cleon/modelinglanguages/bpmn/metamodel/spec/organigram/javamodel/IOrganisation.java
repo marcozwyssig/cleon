@@ -14,4 +14,4 @@ public interface IOrganisation extends ch.actifsource.core.javamodel.IDecorator 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8700f148-daad-11e3-ae07-89aa80d5ec3d,3pCiXLtsDJ9tq/zcciL6p9znuWo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8700f148-daad-11e3-ae07-89aa80d5ec3d,hHGEsCqJbb+Oi3WA5hmxJXWZmsc=] */

@@ -8,4 +8,4 @@ public interface INonFunctionalTemplate extends ch.actifsource.core.javamodel.IR
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fa69c989-d651-11e5-beff-c5494779b7d9,cvPnY8u3LeqGc4iXHK/pCLh7eyg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fa69c989-d651-11e5-beff-c5494779b7d9,DeJBpoZjX0RyB4v4ir5hFiA7kIc=] */

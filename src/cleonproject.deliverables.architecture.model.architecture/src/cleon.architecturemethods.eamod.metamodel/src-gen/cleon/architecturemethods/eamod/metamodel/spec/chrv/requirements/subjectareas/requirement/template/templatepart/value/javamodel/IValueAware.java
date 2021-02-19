@@ -12,4 +12,4 @@ public interface IValueAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e869654-d657-11e5-beff-c5494779b7d9,XyU1DOOfBRPxcvEMAmbgSUaMKtU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e869654-d657-11e5-beff-c5494779b7d9,cMyPU6Oze2Di1fBTQCbJalmIxEk=] */

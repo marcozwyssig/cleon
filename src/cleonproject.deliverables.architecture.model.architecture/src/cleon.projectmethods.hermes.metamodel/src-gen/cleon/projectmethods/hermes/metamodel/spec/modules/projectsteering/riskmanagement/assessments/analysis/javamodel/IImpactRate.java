@@ -49,4 +49,4 @@ public interface IImpactRate extends ch.actifsource.core.javamodel.IEnumValue, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68e06d85-2f01-11e6-8bd9-a77b8d2a3a0e,W7NKL4nA35L+RGNfTavelhWboNw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,68e06d85-2f01-11e6-8bd9-a77b8d2a3a0e,naEN8cgzi10YCUhHFSX52NN9KFA=] */

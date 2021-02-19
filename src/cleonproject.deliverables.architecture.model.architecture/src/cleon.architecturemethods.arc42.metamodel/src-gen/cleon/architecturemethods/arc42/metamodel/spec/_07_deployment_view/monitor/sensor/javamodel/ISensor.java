@@ -12,4 +12,4 @@ public interface ISensor extends cleon.common.resources.metamodel.spec.descripti
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fc69eb52-c1e6-11ea-820f-9931558a898c,pDIXOhEiWHHoW8pVykirorpacZg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fc69eb52-c1e6-11ea-820f-9931558a898c,i2iXgaviCPeyjGzpk/eCGnew3Cc=] */

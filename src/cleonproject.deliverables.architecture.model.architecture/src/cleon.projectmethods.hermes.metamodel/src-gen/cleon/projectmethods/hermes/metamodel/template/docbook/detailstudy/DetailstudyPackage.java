@@ -31,4 +31,4 @@ public class DetailstudyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.template.docbook.detailstudy,2NCFBjJye6/CCXgvL7E/kHQFxgo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.template.docbook.detailstudy,kQ0/6JK6KULDYaoL/yivzED6GKw=] */

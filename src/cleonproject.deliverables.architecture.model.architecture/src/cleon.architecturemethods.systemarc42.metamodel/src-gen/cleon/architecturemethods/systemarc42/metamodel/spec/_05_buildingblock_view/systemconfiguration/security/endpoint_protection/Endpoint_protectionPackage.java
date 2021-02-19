@@ -25,4 +25,4 @@ public class Endpoint_protectionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.endpoint_protection,hP/hG+DUfl02+evdgQg7Jye3U/Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.endpoint_protection,Kt2x8wUJtVgx+BlLZ1R+86A19KM=] */

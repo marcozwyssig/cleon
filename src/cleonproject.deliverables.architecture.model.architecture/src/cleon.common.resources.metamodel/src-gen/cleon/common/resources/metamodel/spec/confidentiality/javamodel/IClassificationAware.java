@@ -12,4 +12,4 @@ public interface IClassificationAware extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3506d11a-0b7c-11e9-8a28-597a9a8945ea,H4/pPDst/NlLDP0xWkUIPKSE9/8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3506d11a-0b7c-11e9-8a28-597a9a8945ea,Qki+wVeTtGfP9X2wvfX/TxHMQck=] */

@@ -49,4 +49,4 @@ public interface IConfidentialityClassification extends ch.actifsource.core.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,58a88265-c10e-11e6-8f58-ad3c6ee7602f,MYqi1cBFM0s88uBIM+J4NNVLtR8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,58a88265-c10e-11e6-8f58-ad3c6ee7602f,QFAnt5gsT9K7FLRP9LpZoFomB6E=] */

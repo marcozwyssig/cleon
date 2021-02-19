@@ -18,4 +18,4 @@ public interface IGoals extends cleon.common.doc.metamodel.spec.chapter.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,18cfe197-a951-11e5-bda2-a7fc3bd7c783,hmZGdPfkxmNk6zYdfrPyKBri3BY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,18cfe197-a951-11e5-bda2-a7fc3bd7c783,WlBI/YIFqBNT5Fc60is19VztQ5A=] */

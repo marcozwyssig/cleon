@@ -8,4 +8,4 @@ public interface IOneWay extends cleon.modelinglanguages.uml.metamodel.spec.stru
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0c6fb202-a437-11e3-a07f-f96d34c3de8f,3FcnOiDPNAmvaQFG+QOQWCZk6QA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0c6fb202-a437-11e3-a07f-f96d34c3de8f,OiVtW1DbIAqg2UZ5CZokK063CHU=] */

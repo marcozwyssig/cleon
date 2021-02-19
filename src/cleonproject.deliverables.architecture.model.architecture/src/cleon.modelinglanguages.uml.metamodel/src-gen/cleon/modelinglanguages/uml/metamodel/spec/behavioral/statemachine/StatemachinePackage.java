@@ -42,4 +42,4 @@ public class StatemachinePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine,+n6M07MFlFupZpAlrszIkW9c9IU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.behavioral.statemachine,oMOq5+ZLIhmHylzl9h7E1w99dnQ=] */

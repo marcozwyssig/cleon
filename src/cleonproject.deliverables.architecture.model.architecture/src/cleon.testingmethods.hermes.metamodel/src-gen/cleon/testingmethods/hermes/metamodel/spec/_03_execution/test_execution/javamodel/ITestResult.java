@@ -8,4 +8,4 @@ public interface ITestResult extends ch.actifsource.core.javamodel.IResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,62ca893d-1cf3-11e6-aaba-9db7fdc64d7e,U5i6awf87hSePcJuITwk/J77Ung=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,62ca893d-1cf3-11e6-aaba-9db7fdc64d7e,PgZA0UI8qLApeFyrHj0qAw7QFQM=] */

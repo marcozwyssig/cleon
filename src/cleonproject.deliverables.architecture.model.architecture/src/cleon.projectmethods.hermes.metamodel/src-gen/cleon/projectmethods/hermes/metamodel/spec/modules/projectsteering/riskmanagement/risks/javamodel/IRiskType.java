@@ -37,4 +37,4 @@ public interface IRiskType extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8f9d029-3394-11e6-94cd-fbf6c8ccd08d,Ini2SVkYbTqTeqaF3HBNm+MA21o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c8f9d029-3394-11e6-94cd-fbf6c8ccd08d,jYSuP/YXJB/YAzBkT4WKzWE4/6c=] */

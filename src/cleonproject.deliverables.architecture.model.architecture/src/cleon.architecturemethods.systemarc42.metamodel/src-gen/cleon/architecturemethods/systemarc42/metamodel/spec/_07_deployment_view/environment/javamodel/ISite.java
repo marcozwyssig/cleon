@@ -8,4 +8,4 @@ public interface ISite extends cleon.common.doc.metamodel.spec.chapter.javamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98c67baa-ef40-11e8-be8a-b748ff8f0a75,W92tzxCCnvm6Nk8zZEVJ1rLAstc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,98c67baa-ef40-11e8-be8a-b748ff8f0a75,L+g6vse9WZc2qc8YFVFoxK4KQs8=] */

@@ -8,4 +8,4 @@ public interface ILayout extends cleon.publishing.staticwebsite.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,22c31230-afe1-11e5-a548-13e054f2d74f,5bvju34TrK5j1PyynL/xqtSx4lc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,22c31230-afe1-11e5-a548-13e054f2d74f,uqhtLryLB0NPjXLd8brQrRncUKQ=] */

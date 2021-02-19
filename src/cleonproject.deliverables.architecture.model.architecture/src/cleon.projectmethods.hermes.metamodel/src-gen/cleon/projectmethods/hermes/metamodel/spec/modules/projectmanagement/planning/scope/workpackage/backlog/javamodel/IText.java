@@ -16,4 +16,4 @@ public interface IText extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,+RbX+ZkN8B75g4M5UVUmc4w5s4w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d6f6f942-36ad-11e5-95d9-2b04d7ab02d9,Cf24wrgZcOZIOrJuL9zcLW1tQPw=] */

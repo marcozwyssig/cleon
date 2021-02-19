@@ -43,4 +43,4 @@ public interface IWorkState extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f138d00-c58a-11e5-aeea-1db9268c0ee9,f8WxhcJd9bkt93Ma5ayzbxd9L5k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f138d00-c58a-11e5-aeea-1db9268c0ee9,3nB2w2WDss9eoHChf5F0GhHeA9w=] */

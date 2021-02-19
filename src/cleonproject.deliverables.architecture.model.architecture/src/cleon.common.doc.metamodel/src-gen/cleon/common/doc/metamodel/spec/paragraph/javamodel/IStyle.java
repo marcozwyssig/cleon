@@ -49,4 +49,4 @@ public interface IStyle extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a,n97AyZtL0j9b+4OhgKngfrO0MwE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6d04db3c-dcb4-11ea-b5f8-77c3980a1d0a,/nyhkihJJYa4GSW3AEPtZkg1HXI=] */

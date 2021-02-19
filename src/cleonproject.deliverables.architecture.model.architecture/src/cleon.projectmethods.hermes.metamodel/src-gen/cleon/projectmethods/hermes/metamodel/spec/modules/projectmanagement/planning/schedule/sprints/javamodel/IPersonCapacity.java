@@ -16,4 +16,4 @@ public interface IPersonCapacity extends ch.actifsource.core.javamodel.IDecorato
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,GlK+W3W9I8i1AjGDfUAl5rLJOK8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1d4b698d-c00c-11e5-a165-d34765931e10,mRU1Mbgy+i5SYaecOqbLnl2h250=] */

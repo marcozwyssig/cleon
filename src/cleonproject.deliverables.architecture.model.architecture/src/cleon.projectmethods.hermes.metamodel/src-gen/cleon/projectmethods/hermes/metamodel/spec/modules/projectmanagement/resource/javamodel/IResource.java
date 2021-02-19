@@ -8,4 +8,4 @@ public interface IResource extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,99812219-ff9e-11e4-ac0a-959b440f987f,XUVpxij5QND1WqpuGGInLHJMvYM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,99812219-ff9e-11e4-ac0a-959b440f987f,NCTpgEtLYucvsRt7K6uPKToB4L4=] */

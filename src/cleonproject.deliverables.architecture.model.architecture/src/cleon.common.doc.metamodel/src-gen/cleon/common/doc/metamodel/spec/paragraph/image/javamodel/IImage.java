@@ -8,4 +8,4 @@ public interface IImage extends ch.actifsource.core.javamodel.INamedResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,2SbbMatrK+F11VaW3esORpqRUGg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b70b7970-15e7-11e6-b588-912e2ce0f2b0,Yqp0LzfhofhW0kb6JmGhso0l8K4=] */

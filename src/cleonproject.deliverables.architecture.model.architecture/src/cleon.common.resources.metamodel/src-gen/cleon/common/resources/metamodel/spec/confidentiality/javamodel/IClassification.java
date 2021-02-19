@@ -49,4 +49,4 @@ public interface IClassification extends ch.actifsource.core.javamodel.IEnumValu
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d92db665-47f5-11e6-b388-8539f6ff7310,EALJVcrXVz9aPnDM34sdre+DY7U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d92db665-47f5-11e6-b388-8539f6ff7310,PUHH+jnQ3ElHaKyAHJBYjrgfcXc=] */

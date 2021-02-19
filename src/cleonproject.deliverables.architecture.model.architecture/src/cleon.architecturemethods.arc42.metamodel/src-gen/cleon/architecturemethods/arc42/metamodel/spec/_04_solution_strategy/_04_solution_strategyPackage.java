@@ -25,4 +25,4 @@ public class _04_solution_strategyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy,U4Uzl18tnb8Es0JE2YKVDLWIMVQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._04_solution_strategy,6vdE9Zhl4x3j8SC0/POdACCfkeo=] */

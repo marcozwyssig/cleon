@@ -78,4 +78,4 @@ public class Manufactor extends DynamicResource implements IManufactor {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2371f6a6-d0b1-11e8-b005-f7630e4c29c0,hO6B7ORZwopEB7UMlOIVHzm1+SI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2371f6a6-d0b1-11e8-b005-f7630e4c29c0,m8yMQYf+d/tYDPbZyxinqyZREns=] */

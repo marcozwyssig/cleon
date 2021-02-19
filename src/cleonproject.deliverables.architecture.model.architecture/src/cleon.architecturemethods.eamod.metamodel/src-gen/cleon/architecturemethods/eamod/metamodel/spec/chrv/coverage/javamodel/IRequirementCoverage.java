@@ -14,4 +14,4 @@ public interface IRequirementCoverage extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,T8lwxHSDGeB2RfDhiVblpDDVuSQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c9479b53-ece1-11e8-8149-8542373915bf,5SZsruL1NjzELZ8ENk8ZSZgZJsM=] */

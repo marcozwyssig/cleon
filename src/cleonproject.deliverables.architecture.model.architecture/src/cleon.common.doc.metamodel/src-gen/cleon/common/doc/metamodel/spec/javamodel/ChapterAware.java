@@ -18,4 +18,4 @@ public abstract class ChapterAware extends DynamicResource implements IChapterAw
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a97ec1a8-2169-11e9-a054-db6d80fba790,hIvzKkZ5Livx2Rmkxj1+9mujMag=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a97ec1a8-2169-11e9-a054-db6d80fba790,/S8UGfisa1AIYGdvJwhRKtdy8Qg=] */

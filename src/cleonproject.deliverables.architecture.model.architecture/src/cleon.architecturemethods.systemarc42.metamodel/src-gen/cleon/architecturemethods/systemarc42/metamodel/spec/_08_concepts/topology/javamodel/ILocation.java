@@ -37,4 +37,4 @@ public interface ILocation extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c,5HUtUcDcQxjf5zstuTPe/OSeSnY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,865b3a4b-57c9-11ea-bd7a-4baf1bc87b3c,7xI2AL9ywFOYWi7UIxFxfS86YQs=] */

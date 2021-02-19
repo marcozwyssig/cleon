@@ -16,4 +16,4 @@ public interface IInterface extends ch.actifsource.core.javamodel.IResource, ch.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,iqC/jB29wMu0akFSGqGftfzsTAs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,k8iSFKfFm7ZfwPvezhCLEluY4co=] */

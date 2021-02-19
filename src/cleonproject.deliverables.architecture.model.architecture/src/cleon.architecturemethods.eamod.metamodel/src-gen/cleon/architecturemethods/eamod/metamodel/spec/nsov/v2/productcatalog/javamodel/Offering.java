@@ -133,4 +133,4 @@ public class Offering extends DynamicResource implements IOffering {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,9qpFrc1DjbIpc0eEpk5rktXLRZY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,GxSAo5kz40+PhjaxmqgSILnAdsI=] */

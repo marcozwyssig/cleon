@@ -12,4 +12,4 @@ public interface IRolePerson extends ch.actifsource.core.javamodel.IResource, ch
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,464eda4e-bb5f-11e8-921b-c1cf01226512,hh0oXldc9SN9ZeEJ0vWmGe1Rg2I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,464eda4e-bb5f-11e8-921b-c1cf01226512,gQSKiHJ6GX0PJJB74aa1o040fpU=] */

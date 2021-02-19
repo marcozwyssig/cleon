@@ -27,4 +27,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.asciidoc,oEzjeiac5un5j3HSU+k8LGePgVE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.asciidoc,t5d28WFcpSy1H90PM7rLKN3wdOI=] */

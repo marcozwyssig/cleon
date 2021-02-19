@@ -59,4 +59,4 @@ public class AccessCommunicationTypeVNC extends DynamicResource implements IAcce
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3077ebb4-1ea3-11eb-9eef-0dadb2b460da,aWJYET1Cm3yRnsrm2ujqj0JqNtQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3077ebb4-1ea3-11eb-9eef-0dadb2b460da,kpVCNaMZ9KS/VIUMccDL/XoiTWM=] */

@@ -8,4 +8,4 @@ public interface IMessageExchange extends ch.actifsource.core.javamodel.IResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c88f98d7-a436-11e3-a07f-f96d34c3de8f,4NIP8QkmiTa0RtkiWOPmgbziMD4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c88f98d7-a436-11e3-a07f-f96d34c3de8f,68bB0ZR4UzX47zxCeU4EOy0MQcs=] */

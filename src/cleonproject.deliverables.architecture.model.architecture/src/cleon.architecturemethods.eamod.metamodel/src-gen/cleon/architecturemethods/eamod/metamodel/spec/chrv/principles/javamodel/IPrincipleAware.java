@@ -12,4 +12,4 @@ public interface IPrincipleAware extends ch.actifsource.core.javamodel.IResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,38a641ef-0abf-11e6-85a2-61e22bb4d1e3,2paKtbV0C9kEdzjkzFnAqM375Es=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,38a641ef-0abf-11e6-85a2-61e22bb4d1e3,JMVTj1KPdOkJkOb/2nYpeXO0oq0=] */

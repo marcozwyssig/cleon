@@ -25,4 +25,4 @@ public class GradlePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.gradle,OISIBp9g7BRUffTBrgTifmWztuQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.metamodel.template.eclipse.src.gradle,DQdzROLeKPGBarLL1BbKpPr+fd4=] */

@@ -8,4 +8,4 @@ public interface IBuildView extends cleon.common.doc.metamodel.spec.chapter.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cf81fb93-9991-11e8-b347-dd2314b02086,H6pvQ+ozipqoU/e7pkWINU0UCvY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cf81fb93-9991-11e8-b347-dd2314b02086,nJiFJEfSLCcIIxLIO5RBqBtcHgk=] */

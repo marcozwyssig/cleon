@@ -26,4 +26,4 @@ public interface IInfrastractureProductVariety extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,WIDw8r5Zow8Pe7ERH8aSMwictnY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2b07341a-67c5-11e7-afcc-6df3a81a4d17,+gNItx/jOLuBJX63cI3odSkasaw=] */

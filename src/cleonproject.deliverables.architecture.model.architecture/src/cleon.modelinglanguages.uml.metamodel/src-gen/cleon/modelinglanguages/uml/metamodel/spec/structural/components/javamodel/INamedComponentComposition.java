@@ -8,4 +8,4 @@ public interface INamedComponentComposition extends ch.actifsource.core.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17c05c68-41b0-11e5-86f2-816f5628b22b,6DRXTMzvwoQw11MKNS2H6VufWX0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,17c05c68-41b0-11e5-86f2-816f5628b22b,qpi/hD4+J2myFqLaqAyVwSUM9oo=] */

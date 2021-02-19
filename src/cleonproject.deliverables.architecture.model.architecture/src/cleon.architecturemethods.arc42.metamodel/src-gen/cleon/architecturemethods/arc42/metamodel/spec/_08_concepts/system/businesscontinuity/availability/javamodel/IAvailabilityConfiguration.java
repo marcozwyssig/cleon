@@ -65,4 +65,4 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,ebN9fDG/aaDML0TX0gxFwEThB34=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,c63dMzIkv1E6OmLaLahSigHL1pY=] */

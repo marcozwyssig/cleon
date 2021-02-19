@@ -8,4 +8,4 @@ public interface ISample extends cleon.applications.actifsource.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e8e7952a-1005-11e5-865e-55f33dbc76dc,qcUkZPhb05/Uke5GoRIDBhy9R+s=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e8e7952a-1005-11e5-865e-55f33dbc76dc,Aaf0L1xcUsfpjwFFdwtwXutT5b0=] */

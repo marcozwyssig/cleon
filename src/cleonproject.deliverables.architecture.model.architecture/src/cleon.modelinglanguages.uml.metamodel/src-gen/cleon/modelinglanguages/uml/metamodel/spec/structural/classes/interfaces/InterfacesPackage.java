@@ -28,4 +28,4 @@ public class InterfacesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces,Rx7rmJDsk9kyAYQgjl3rmeelefo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.interfaces,JZOcs+NKvPj2lFfU8Xt+vT6bdyw=] */

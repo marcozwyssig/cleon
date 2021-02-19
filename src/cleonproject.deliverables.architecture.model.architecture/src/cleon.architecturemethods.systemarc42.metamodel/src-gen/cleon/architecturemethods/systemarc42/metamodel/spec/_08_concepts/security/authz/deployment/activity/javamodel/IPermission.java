@@ -8,4 +8,4 @@ public interface IPermission extends cleon.common.resources.metamodel.spec.id.ja
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,QB63T2jxAZfD8rUJGudJVfTITvA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ffd8187a-7f1a-11e9-9a52-07d4b074defc,gP6/XkFEkEH8S7o+Emh4zCEp22c=] */

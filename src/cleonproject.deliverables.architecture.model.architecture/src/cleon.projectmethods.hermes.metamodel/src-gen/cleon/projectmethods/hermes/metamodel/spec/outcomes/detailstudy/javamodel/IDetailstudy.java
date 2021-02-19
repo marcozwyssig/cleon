@@ -16,4 +16,4 @@ public interface IDetailstudy extends cleon.common.doc.metamodel.spec.document.j
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,3tOiqZn/lpZp7Af6ZLViAa3YqqE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c647eff4-3c0e-11e5-9962-cf3035adb922,kK1aLSmkR1MhA0soBJTaoedGRyk=] */

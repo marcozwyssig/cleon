@@ -61,4 +61,4 @@ public interface IProbabilityOfOccurrence extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9957e084-2eff-11e6-8bd9-a77b8d2a3a0e,4bsOs01m9f3c3qelEp8KMp/wi+Q=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9957e084-2eff-11e6-8bd9-a77b8d2a3a0e,LzWjY5ZQ/jEDihCQmfuA0C4Sb18=] */

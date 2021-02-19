@@ -43,4 +43,4 @@ public interface IObservation extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6933d32-3765-11e5-95d9-2b04d7ab02d9,yfKE/rKoM5pI9kPaNygt/CrsR3U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a6933d32-3765-11e5-95d9-2b04d7ab02d9,XhzFzD5NmsqdBxSdUix85BdBKhg=] */

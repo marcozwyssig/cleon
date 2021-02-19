@@ -8,4 +8,4 @@ public interface IPackage extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5ebf28c6-46d0-11eb-b318-ab9601344039,+DYS9qzClBNoxyjRnQeQ/xr1OOw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5ebf28c6-46d0-11eb-b318-ab9601344039,xBdDmJBR+cCF0SuEWydQ6GzEqcc=] */

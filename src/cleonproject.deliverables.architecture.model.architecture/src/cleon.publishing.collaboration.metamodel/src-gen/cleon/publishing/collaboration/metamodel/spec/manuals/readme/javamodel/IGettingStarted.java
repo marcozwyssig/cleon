@@ -8,4 +8,4 @@ public interface IGettingStarted extends cleon.common.doc.metamodel.spec.chapter
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,GEhL0eXV7y5+gYI58zZ5qNtW13g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b755b4f3-4e6c-11e5-a091-3f804edda9db,nEYVtE7yyXzH+L3HXZW//ESDe+0=] */

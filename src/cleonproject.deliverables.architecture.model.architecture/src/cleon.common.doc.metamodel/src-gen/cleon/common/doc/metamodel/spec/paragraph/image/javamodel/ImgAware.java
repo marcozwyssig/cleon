@@ -12,4 +12,4 @@ public abstract class ImgAware extends DynamicResource implements IImgAware {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eeaa3cb6-95b3-11ea-9744-7dd962dc1878,gYcbuFO18oVoMPRu2Nx/OOXOWQQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eeaa3cb6-95b3-11ea-9744-7dd962dc1878,zyDjFktoYu/nhHWMe2fN7K12JIc=] */

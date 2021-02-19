@@ -26,4 +26,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.docbook,9wa5B+X/5d1rhe9qe0gZBSAYYGY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.docbook,i8heHMB1lEqdi0KzcFQJMHcDGC8=] */

@@ -8,4 +8,4 @@ public interface IDomain extends ch.actifsource.core.javamodel.INamedResource, c
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,k4rZKT51UOZaxKd5Bkm3eBPgZys=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4f9dc299-d00e-11ea-b5a9-731249efa1a3,MwhCZCPUbyMzBIQSsMmminxVpAA=] */

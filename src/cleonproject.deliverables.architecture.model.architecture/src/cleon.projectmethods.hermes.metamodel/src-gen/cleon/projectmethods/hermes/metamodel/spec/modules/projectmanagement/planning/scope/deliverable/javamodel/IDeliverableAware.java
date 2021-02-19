@@ -14,4 +14,4 @@ public interface IDeliverableAware extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a3b3adc-4f0c-11e9-ba59-f1daaff821cc,ZReQv5BQdlarMrdE0XTiCoT5df4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8a3b3adc-4f0c-11e9-ba59-f1daaff821cc,HWpLRQfAeC+eNH8Oqbs/FFqZy3Q=] */

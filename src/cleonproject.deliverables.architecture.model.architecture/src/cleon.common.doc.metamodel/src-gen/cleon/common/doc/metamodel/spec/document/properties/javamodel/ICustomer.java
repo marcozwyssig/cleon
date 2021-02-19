@@ -8,4 +8,4 @@ public interface ICustomer extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2283443b-47fb-11e6-b388-8539f6ff7310,HTbLKkZoszz0elDWyAb9FJuHZd8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2283443b-47fb-11e6-b388-8539f6ff7310,zftmJdyuNmvgkZulcNJzcFZZLUs=] */

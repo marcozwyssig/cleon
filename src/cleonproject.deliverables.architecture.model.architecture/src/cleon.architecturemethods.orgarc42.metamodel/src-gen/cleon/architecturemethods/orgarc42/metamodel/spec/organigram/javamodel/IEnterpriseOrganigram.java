@@ -14,4 +14,4 @@ public interface IEnterpriseOrganigram extends ch.actifsource.core.javamodel.IDe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,4T0kqhMgACJ3c1GEpfAXjspjPTo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4302c8a6-daad-11e3-ae07-89aa80d5ec3d,gGfXDCIOGlFMNsU+B9QO+7IRHrQ=] */

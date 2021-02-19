@@ -12,4 +12,4 @@ public interface ISubjectMatterAware extends ch.actifsource.core.javamodel.IReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed1a8e0c-d656-11e5-beff-c5494779b7d9,Pcxx2iyA1OZpozlSa566VPmX1gQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed1a8e0c-d656-11e5-beff-c5494779b7d9,MKOxJ4VOp1jbl68oHcjicn90Ias=] */

@@ -8,4 +8,4 @@ public interface IAsset extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6ef368b1-bbd6-11e6-997f-d73ea5a3671c,NUjE/x2SS1CyexIVHycPr4+tSvw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6ef368b1-bbd6-11e6-997f-d73ea5a3671c,h58IywHhfM2+MITv913REnJ5L5E=] */

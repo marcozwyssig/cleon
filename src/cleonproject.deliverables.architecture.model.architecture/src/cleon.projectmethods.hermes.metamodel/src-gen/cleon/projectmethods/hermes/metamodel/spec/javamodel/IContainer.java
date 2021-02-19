@@ -8,4 +8,4 @@ public interface IContainer extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd805553-31ca-11e8-8a84-6f139e67278b,37gWBejjDO+mhNtfCyXzXRP3750=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd805553-31ca-11e8-8a84-6f139e67278b,FjNiTErE+xo6CbS8GxneaWEoTck=] */

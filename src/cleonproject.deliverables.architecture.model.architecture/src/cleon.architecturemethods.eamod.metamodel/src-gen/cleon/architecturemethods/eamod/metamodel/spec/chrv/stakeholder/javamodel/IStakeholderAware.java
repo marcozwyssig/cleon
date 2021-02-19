@@ -12,4 +12,4 @@ public interface IStakeholderAware extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33ff7368-0d07-11e6-be97-7d1235599779,NTjnSukib7OZ5wBLQTl+m2Qjkek=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,33ff7368-0d07-11e6-be97-7d1235599779,X0xU5pVI26Tx3lQmDFvuO9QoppM=] */

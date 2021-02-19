@@ -14,4 +14,4 @@ public interface IAbstractSite extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,YIOHO8lKX5xEu1dYVMwaXellifU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,119b879d-878b-11e9-a61b-279ebde48b48,RKbwmBVL6P64hcCC0GSdsQxtGIo=] */

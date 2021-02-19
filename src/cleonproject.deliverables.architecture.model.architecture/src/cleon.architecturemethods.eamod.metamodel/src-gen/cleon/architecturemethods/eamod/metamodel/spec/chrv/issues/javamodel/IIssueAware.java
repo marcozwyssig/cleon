@@ -12,4 +12,4 @@ public interface IIssueAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,92cfec9f-decd-11e5-bcfc-4385ab45a525,CiuxSlGDxWNaeTcNXgnoSRG/tkY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,92cfec9f-decd-11e5-bcfc-4385ab45a525,O4w/XNnlVMdExzT/PfJ5Ngsi8Bo=] */

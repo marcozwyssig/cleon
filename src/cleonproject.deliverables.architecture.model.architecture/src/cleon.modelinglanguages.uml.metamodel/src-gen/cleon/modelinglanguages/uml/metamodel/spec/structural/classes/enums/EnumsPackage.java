@@ -28,4 +28,4 @@ public class EnumsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums,n0XZGQyJAbIY+pSe5GpQwVS4N/0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.metamodel.spec.structural.classes.enums,cz+h8e6qQs+aawyrrPXKOEn0a40=] */

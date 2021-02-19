@@ -28,4 +28,4 @@ public interface IProtocol extends cleon.common.doc.metamodel.spec.document.java
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,M+wFkqnQZQp9nIQ3KQAtadH9nCs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2140b619-b45f-11e5-b1fb-4fb16b224b5b,1rHG8XkSIw6RSqYIFuWGfnLpjoU=] */

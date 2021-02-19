@@ -8,4 +8,4 @@ public interface IAbstractChapter extends cleon.common.resources.metamodel.spec.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,44b08026-d86d-11e4-aa2f-c11242a92b60,PdbDiR3DCkbRwsr67z5lFVG0KMk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,44b08026-d86d-11e4-aa2f-c11242a92b60,IlxVUTU99rrQwCXYglE+fXAYaW4=] */

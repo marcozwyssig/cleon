@@ -28,4 +28,4 @@ public class SupplyPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply,rUgv0EutuLjj+CnQ/ssWWCa481Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.distinction.supply,YSq2+c+wM0Dqxv/HmVKBTmWkoGg=] */

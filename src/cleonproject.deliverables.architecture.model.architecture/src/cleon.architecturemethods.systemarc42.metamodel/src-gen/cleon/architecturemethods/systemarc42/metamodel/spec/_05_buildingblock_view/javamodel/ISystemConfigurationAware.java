@@ -12,4 +12,4 @@ public interface ISystemConfigurationAware extends ch.actifsource.core.javamodel
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a56c2a54-2994-11eb-9648-7bdf8dc8eaf2,3t/gL8sOECo6cTLGQUg+87zvzgM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a56c2a54-2994-11eb-9648-7bdf8dc8eaf2,jYpwmAZv3rUBg5ZBOvCOyt5hcNE=] */

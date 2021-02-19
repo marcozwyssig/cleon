@@ -8,4 +8,4 @@ public interface IInteraction extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f0ac037-0511-11e9-87b8-094c52ae4c98,L9aBCoj7nQOSPfcm/lkowetSSsc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8f0ac037-0511-11e9-87b8-094c52ae4c98,CsNsIK3wf6DU4epnkoYbq2888Y4=] */

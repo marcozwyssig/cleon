@@ -49,4 +49,4 @@ public interface IDocumentStage extends ch.actifsource.core.javamodel.IEnumValue
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,784a1bc2-bff7-11e8-a3d0-5394fd9291a1,0YJCnEoweHTde4cbSYSBFFbnsUQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,784a1bc2-bff7-11e8-a3d0-5394fd9291a1,KEPAqf89SxNZYqvaN8S/RTc/XNE=] */

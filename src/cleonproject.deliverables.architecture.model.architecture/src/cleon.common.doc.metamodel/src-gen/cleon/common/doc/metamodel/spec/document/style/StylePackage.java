@@ -26,4 +26,4 @@ public class StylePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.document.style,14B3dqQK9ksfECkGu/SRQS3fR4k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.doc.metamodel.spec.document.style,za4oO8PKNjbXRzCpWa8gTnt7yt0=] */

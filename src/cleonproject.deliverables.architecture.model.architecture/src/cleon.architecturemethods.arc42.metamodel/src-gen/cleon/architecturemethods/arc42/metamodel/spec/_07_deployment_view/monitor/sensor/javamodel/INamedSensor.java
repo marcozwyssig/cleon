@@ -8,4 +8,4 @@ public interface INamedSensor extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,23f80945-f3fb-11ea-ade2-eb32c9704a85,MZGzi5HNkDYsduYEc1FBxJ/C47U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,23f80945-f3fb-11ea-ade2-eb32c9704a85,97NptDXQMa8Qgpat5n9Z0zy8HOo=] */

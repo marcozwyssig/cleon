@@ -14,4 +14,4 @@ public interface IBpmn extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b0d96e05-7e49-11e5-85ce-e7c8e0b30f03,INOuCGPXFs5nvD0UO1ZvuBY9wjw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b0d96e05-7e49-11e5-85ce-e7c8e0b30f03,IEMpzKC8x8xR7gGm317WQDZSooI=] */

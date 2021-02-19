@@ -27,4 +27,4 @@ public class External_interfacesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.external_interfaces,BXdaX8HoDGe/QDSB+G4wukrkMgE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.external_interfaces,XAbTBauf7AV5WhJRt0GliVrbV08=] */

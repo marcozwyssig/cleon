@@ -25,4 +25,4 @@ public class ClazzPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.clazz,mP3qawOeDahuRYePt/YExiRJQSk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.clazz,9S/4EcxOG7iZo8g80+GKrV1TfpQ=] */

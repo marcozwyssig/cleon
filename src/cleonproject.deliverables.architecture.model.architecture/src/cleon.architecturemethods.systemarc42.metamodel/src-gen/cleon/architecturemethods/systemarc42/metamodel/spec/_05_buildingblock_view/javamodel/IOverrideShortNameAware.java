@@ -12,4 +12,4 @@ public interface IOverrideShortNameAware extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a,lucydCrLJyQIk/J/mxoqfqeGGPI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,729e8fcc-ba9c-11ea-b29c-1fc1209c2c7a,UkyFyRRzm7WQfV/zUcSUeMefNcU=] */

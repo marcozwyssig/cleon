@@ -38,4 +38,4 @@ public class WeightingPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chan.weighting,GqDfGq4+grve9wNdD/NZhbkZvmM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chan.weighting,eGyXLf7WIajk0XWAwtbfnCHfWqI=] */

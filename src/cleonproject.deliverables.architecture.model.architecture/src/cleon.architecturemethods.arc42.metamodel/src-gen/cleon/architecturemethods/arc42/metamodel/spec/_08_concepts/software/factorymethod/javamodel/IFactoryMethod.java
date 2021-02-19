@@ -14,4 +14,4 @@ public interface IFactoryMethod extends ch.actifsource.core.javamodel.IDecorator
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,dcPp2OLYD0g3+mMjzTrX9FWyfGU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8838d098-ddd3-11e4-b0b5-6911fa4e24e5,3LfeQuKeMPmALxi3qptZiJBXbk4=] */

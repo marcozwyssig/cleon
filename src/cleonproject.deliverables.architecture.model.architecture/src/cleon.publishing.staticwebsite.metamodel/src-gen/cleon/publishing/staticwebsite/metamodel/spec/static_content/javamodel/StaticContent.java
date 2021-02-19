@@ -12,4 +12,4 @@ public abstract class StaticContent extends DynamicResource implements IStaticCo
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c3477a3b-afde-11e5-a548-13e054f2d74f,fboD9EJ2x81VXuVZtnRbRb4WvBQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c3477a3b-afde-11e5-a548-13e054f2d74f,kvEpCfASokQEsv8mk8U9PrR0lTE=] */

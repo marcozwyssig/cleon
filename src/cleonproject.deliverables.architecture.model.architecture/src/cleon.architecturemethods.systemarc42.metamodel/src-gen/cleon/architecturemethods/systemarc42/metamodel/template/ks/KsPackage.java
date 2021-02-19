@@ -23,4 +23,4 @@ public class KsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.ks,bK1+3GMeI8N8mG7oc97kYttq0y8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.ks,HqN9YDxjWFfoOfferWQbJh8HQUk=] */

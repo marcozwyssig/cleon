@@ -12,4 +12,4 @@ public interface IEvent extends ch.actifsource.core.javamodel.IDecorator {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9844cd4e-8f33-11e8-90f3-6f51c1a0b373,5cwdDCQYEYTn2g68tdXRkkQqGDY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9844cd4e-8f33-11e8-90f3-6f51c1a0b373,NXIxEXK4/iNZcvkz9mVxNtkeVW4=] */

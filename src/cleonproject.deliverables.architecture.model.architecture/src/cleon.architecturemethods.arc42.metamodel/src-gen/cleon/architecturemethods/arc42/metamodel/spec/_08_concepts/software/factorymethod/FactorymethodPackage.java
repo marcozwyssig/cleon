@@ -31,4 +31,4 @@ public class FactorymethodPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod,xEZYV3uy2NU8ZmxQIbZAeWH+UyU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.software.factorymethod,2plVsJqlAWPM1j46NHONuIMcYa4=] */

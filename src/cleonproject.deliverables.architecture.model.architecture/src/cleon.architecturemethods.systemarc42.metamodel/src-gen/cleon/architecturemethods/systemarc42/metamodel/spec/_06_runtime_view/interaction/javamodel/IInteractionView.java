@@ -12,4 +12,4 @@ public interface IInteractionView extends cleon.common.doc.metamodel.spec.chapte
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,hFK5ZSrmdXCMmT787cQPEf/+5e0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2a31047b-6827-11ea-94e8-6d7d386ab4e1,CQMZ5QQnL9K4PLxR7cDotbrnPic=] */

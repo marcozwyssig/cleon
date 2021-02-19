@@ -14,4 +14,4 @@ public interface IManagedRN extends ch.actifsource.core.javamodel.IDecorator {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1de521f-e0b4-11ea-8443-8f528e21caa3,TZVkyteW45yFJ8EPMx1DRCx4O1o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e1de521f-e0b4-11ea-8443-8f528e21caa3,VjFUeT1h5CXfAFk4O1usFLP7hq8=] */

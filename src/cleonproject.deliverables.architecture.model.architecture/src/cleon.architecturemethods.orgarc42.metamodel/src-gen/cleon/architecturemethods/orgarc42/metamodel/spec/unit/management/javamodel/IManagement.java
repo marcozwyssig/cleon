@@ -18,4 +18,4 @@ public interface IManagement extends cleon.modelinglanguages.bpmn.metamodel.spec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,YxXqxDujn7wobDJBa9Pb0fyGoyg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0fb27ece-ba76-11e3-9206-f19b78f4aff0,b7zHkY27/iH01QFLms/jUSwAS/k=] */

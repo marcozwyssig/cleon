@@ -14,4 +14,4 @@ public interface ICapacityPerDay extends ch.actifsource.core.javamodel.IResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cd28fab0-c0d5-11e5-8f91-3dfd9b379121,0ilWzmEUNSgHiycKUdVrkWqmrZk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cd28fab0-c0d5-11e5-8f91-3dfd9b379121,p4SmFxfWq/tO8y9I0izzkosBI2U=] */

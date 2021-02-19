@@ -8,4 +8,4 @@ public interface ICategory extends ch.actifsource.core.javamodel.INamedResource 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b72d6e8b-e609-11e5-950a-cb0c4b71716c,tKwmuPD/AoxGsM6OiqOhxibaG+g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b72d6e8b-e609-11e5-950a-cb0c4b71716c,GaPHTGoB1tpzFCg3tgkA3M2ROd0=] */

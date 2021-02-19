@@ -8,4 +8,4 @@ public interface ITemplateClassParameter extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,50dae04c-a3bb-11e3-8095-f11af53ab806,mr72dDYrDlmelzQURRSBtlOW/OM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,50dae04c-a3bb-11e3-8095-f11af53ab806,Shxj+Jmq1/JGzCVV8/SUtDKBEmk=] */

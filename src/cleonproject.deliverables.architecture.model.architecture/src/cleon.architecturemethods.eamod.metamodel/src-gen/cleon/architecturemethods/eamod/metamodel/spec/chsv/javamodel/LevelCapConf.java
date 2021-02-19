@@ -20,4 +20,4 @@ public abstract class LevelCapConf extends DynamicResource implements ILevelCapC
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ddc2c098-a7fa-11e7-9807-4f1f5d43f7c9,nMhwPtaZqobI+PM/uRj/yN/6FE0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ddc2c098-a7fa-11e7-9807-4f1f5d43f7c9,tbaoF0Xnjh1YQYTuswd1XS+I4qY=] */

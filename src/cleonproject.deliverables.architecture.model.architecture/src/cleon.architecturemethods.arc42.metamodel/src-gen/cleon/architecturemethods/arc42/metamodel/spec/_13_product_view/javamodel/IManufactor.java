@@ -12,4 +12,4 @@ public interface IManufactor extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2371f6a6-d0b1-11e8-b005-f7630e4c29c0,dEJDhQ/cq93ekHHOGOXenzhE3aA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2371f6a6-d0b1-11e8-b005-f7630e4c29c0,m/CUnXQYrjSmz4guicBtZd2ftLc=] */

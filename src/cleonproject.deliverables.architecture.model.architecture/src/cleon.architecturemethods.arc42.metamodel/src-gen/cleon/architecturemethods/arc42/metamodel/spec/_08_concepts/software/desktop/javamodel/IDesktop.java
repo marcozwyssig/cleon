@@ -8,4 +8,4 @@ public interface IDesktop extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,05bff060-11f6-11e5-848b-017a3a98ae34,ospqPM+wUBwp3XM13PCh1bgoym0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,05bff060-11f6-11e5-848b-017a3a98ae34,OHPVTWvrSEUU3rq0xTKQLsnkXQ0=] */

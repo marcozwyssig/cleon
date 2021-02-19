@@ -70,4 +70,4 @@ public class SingleSensorMonitoringBuildingBlock extends DynamicResource impleme
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,YQbPJODuf9Wr6OxnopMqRz+LGuE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,df9a2045-e065-11ea-bb83-59933a3fa779,iZ/izIIOX0Kpo+hvensDalQiXqk=] */

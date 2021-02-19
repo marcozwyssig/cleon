@@ -12,4 +12,4 @@ public interface ITestConnection extends ch.actifsource.core.javamodel.IResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,vZqbTDrijsp8XWMrgSYpghMcNNA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a36e4d8e-6ceb-11e9-a6d3-775c09e81e2d,RrJRUusF1Lk+1y9wNjKZ7b10qFY=] */

@@ -16,4 +16,4 @@ public interface IClass extends ch.actifsource.core.javamodel.INamedResource, cl
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,accc5089-2f5a-11e3-b966-57aab741cf17,z6LudI9UDTQmQQBJY0e6x41Y0+M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,accc5089-2f5a-11e3-b966-57aab741cf17,KRM7NStX90KfkCfv60+RrDkAkbM=] */

@@ -12,4 +12,4 @@ public interface ILanguageName extends ch.actifsource.core.javamodel.INamedResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,OabFq65WyHz0R3IY8m0V2oT3/l4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,27d0007a-3360-11e8-a9fe-87ba35d8f5c4,+6Tst9xFVta60RlgEI6/0bFWlZk=] */

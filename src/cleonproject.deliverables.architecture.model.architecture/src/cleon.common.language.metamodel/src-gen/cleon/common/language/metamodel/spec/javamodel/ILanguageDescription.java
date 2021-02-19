@@ -12,4 +12,4 @@ public interface ILanguageDescription extends ch.actifsource.core.javamodel.IDec
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d03edb49-335f-11e8-a9fe-87ba35d8f5c4,rzmP8/paVoJTWjs4yutU0MF45u0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d03edb49-335f-11e8-a9fe-87ba35d8f5c4,YGJiqcvl5CDcamLXp50VZbdlGD4=] */

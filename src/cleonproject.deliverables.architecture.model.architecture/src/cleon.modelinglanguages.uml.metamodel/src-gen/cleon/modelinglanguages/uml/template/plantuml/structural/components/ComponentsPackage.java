@@ -26,4 +26,4 @@ public class ComponentsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.plantuml.structural.components,5kFPkjcMP8t/0O0UKI5rrnpP3GQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.modelinglanguages.uml.template.plantuml.structural.components,yteWtCazVRn7VeEYc4eb26Dc+KY=] */

@@ -12,4 +12,4 @@ public interface IRequiredShortName extends ch.actifsource.core.javamodel.IResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e261adef-2d73-11e6-959f-d1cef44ff5fd,h5eEJOoKd7k0qiLRF/wZGMXzjC4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e261adef-2d73-11e6-959f-d1cef44ff5fd,ADO+czAkUhg4CwNBDKDLA1NpmJ0=] */

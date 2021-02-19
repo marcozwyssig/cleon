@@ -12,4 +12,4 @@ public interface IGroupAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b20f56ff-09ae-11e9-8c40-11db3668c0c9,0hEArpM5if+C7RasTnjNv0s1OzU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b20f56ff-09ae-11e9-8c40-11db3668c0c9,Q1cEs848/flQtey+wMXYwsoSRY8=] */

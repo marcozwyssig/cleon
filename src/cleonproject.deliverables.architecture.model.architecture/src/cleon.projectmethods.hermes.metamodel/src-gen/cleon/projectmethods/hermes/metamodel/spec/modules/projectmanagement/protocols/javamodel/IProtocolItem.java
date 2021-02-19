@@ -14,4 +14,4 @@ public interface IProtocolItem extends ch.actifsource.core.javamodel.IResource, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,71fe646f-b462-11e5-a3f4-497fd75158dc,knXpl5O79TwhqmnNRA/Bm27az1g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,71fe646f-b462-11e5-a3f4-497fd75158dc,Uke57hODqyO6zLVPogjlkwZMmPM=] */

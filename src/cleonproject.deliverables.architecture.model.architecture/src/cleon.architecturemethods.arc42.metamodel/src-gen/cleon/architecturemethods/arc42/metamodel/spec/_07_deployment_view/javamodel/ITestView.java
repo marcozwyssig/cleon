@@ -8,4 +8,4 @@ public interface ITestView extends cleon.common.doc.metamodel.spec.chapter.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dbcd90d8-9991-11e8-b347-dd2314b02086,HtpW8A3GwUFBBHP+r2cvgaZxo5o=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dbcd90d8-9991-11e8-b347-dd2314b02086,2i3KpQUmfYkVZE6AfeFn/EhPGEA=] */

@@ -21,4 +21,4 @@ public interface IProjectManagement extends ch.actifsource.core.javamodel.INamed
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,tyNmxCa/4ZXI1EaNo6JjUVMT3cs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1ee9b306-bdf8-11e6-a3f0-c7681ee45a3f,ydU7sifHJO6aPzWQZlrcN+FRaWo=] */

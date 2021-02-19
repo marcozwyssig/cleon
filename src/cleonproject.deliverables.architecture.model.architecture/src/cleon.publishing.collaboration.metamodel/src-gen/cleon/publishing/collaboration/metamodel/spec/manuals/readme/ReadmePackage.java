@@ -33,4 +33,4 @@ public class ReadmePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.readme,qUNlUtQFiOJ7w6mSO2LGf2ziNEs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.publishing.collaboration.metamodel.spec.manuals.readme,o99YwNxl9NYTyvmI1q/9EJUoWws=] */

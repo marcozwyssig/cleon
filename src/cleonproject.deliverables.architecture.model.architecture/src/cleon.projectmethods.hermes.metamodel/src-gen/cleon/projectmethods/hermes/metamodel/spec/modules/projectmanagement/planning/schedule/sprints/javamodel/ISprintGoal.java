@@ -12,4 +12,4 @@ public interface ISprintGoal extends ch.actifsource.core.javamodel.INamedResourc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,VvvJ+qQJMDmaI6QvMG7QT9lVSJ0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a13c005f-c126-11e5-bfd0-47571a06cb62,6P6gUoMGO4S70ir/miSTKyU/yH4=] */

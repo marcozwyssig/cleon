@@ -43,4 +43,4 @@ public interface ICpuArchitecture extends ch.actifsource.core.javamodel.IEnumVal
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0bba3407-2d73-11e6-959f-d1cef44ff5fd,DG0kIGq6lCYoeJdj2TIJyKDvBh0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0bba3407-2d73-11e6-959f-d1cef44ff5fd,i4YazleVJl2ysoZFABKw5MD6crU=] */

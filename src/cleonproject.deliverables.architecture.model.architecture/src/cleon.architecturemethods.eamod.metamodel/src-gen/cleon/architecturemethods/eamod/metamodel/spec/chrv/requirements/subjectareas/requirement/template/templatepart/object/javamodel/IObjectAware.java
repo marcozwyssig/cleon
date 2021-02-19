@@ -12,4 +12,4 @@ public interface IObjectAware extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7fb40f58-debd-11e5-bf7d-117d548070bb,b8qDTCt7ac3HBcR9rLFbWvGWP2Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,7fb40f58-debd-11e5-bf7d-117d548070bb,FlmBH+xJLQzRvW48i9q7tR0tl7A=] */

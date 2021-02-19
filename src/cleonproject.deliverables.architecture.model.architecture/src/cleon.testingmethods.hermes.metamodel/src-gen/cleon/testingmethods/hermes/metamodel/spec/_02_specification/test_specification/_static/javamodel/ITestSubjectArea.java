@@ -14,4 +14,4 @@ public interface ITestSubjectArea extends ch.actifsource.core.javamodel.IDecorat
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,ajd8peI4cci3ugreO5VAK7oMpSA=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cfa22ec4-1cf0-11e6-aaba-9db7fdc64d7e,C3b2mYQQ3ogymtjzP0tqBFor9e0=] */

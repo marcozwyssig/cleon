@@ -8,4 +8,4 @@ public interface IDocumentLanguage extends ch.actifsource.core.javamodel.IResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,NnpwgSpOhRHlVCEjrYCUooNu8us=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e106709e-2234-11e9-a054-db6d80fba790,xdVm9UKZ5KssTSoFT/0B52KqXQk=] */

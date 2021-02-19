@@ -8,4 +8,4 @@ public interface INamedZone extends ch.actifsource.core.javamodel.INamedResource
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0325c007-0b77-11e9-a136-69d076e48ed1,zwFpSlTGYQdLda2eXAwAJkha+uw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0325c007-0b77-11e9-a136-69d076e48ed1,Vrl54IAn9iVdhVHiYFifPUGeZ4Y=] */

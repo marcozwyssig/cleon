@@ -20,4 +20,4 @@ public interface IViewModel extends cleon.modelinglanguages.uml.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,JLPljVhYWboI4sbLfVmv6XMO6As=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,349382f4-5284-11e3-999a-25b1389b65ab,04/oovdK+6EbSFJ5alYwaHHT1PY=] */

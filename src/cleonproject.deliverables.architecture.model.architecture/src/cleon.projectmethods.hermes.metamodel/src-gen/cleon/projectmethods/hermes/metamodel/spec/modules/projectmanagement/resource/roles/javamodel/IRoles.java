@@ -12,4 +12,4 @@ public interface IRoles extends cleon.projectmethods.hermes.metamodel.spec.modul
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed388f5b-bc93-11e6-904c-8bf6f8927ff0,rk9XJKkXSSE0qXuTmHgVTaS+2I8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ed388f5b-bc93-11e6-904c-8bf6f8927ff0,jFN0vjzevf/DGrfe2sVuQ0hnVX0=] */

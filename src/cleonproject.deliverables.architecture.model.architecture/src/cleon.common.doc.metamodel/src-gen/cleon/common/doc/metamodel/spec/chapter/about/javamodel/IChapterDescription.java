@@ -12,4 +12,4 @@ public interface IChapterDescription extends ch.actifsource.core.javamodel.IReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,8wQAHvHRmVS8HOl9Z4BK4QuAJCE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f8fde99d-0787-11e9-96ce-190a492a5193,jRTrACVdfMaGZl0dXxIUoXG0n1s=] */

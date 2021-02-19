@@ -14,4 +14,4 @@ public interface IAvailabilityLifetime extends ch.actifsource.core.javamodel.IDe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fffa277-c6cb-11e6-8242-2f0ed6756d77,FKT1lKFcSwh5oCaupYvN/JNCskE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fffa277-c6cb-11e6-8242-2f0ed6756d77,TECIxEO01kEZuaReaEJgD/o/JBA=] */

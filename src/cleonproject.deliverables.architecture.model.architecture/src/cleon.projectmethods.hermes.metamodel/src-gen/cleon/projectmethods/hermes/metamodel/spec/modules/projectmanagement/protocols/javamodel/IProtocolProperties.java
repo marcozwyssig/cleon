@@ -12,4 +12,4 @@ public interface IProtocolProperties extends cleon.common.doc.metamodel.spec.doc
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,OuvW8TOQiUojD+Du1GA/cOiGsPc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9d8d5f17-47fb-11e6-b388-8539f6ff7310,goG1msucKQNUwcDBmILKSRXFI5g=] */

@@ -33,4 +33,4 @@ public class _01_introduction_and_goalsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals,FdtmHFO4pzaLUnmyYv1qNdKAjLY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._01_introduction_and_goals,a9+2Omzxv4CwM+D/2rj8N14MNd8=] */

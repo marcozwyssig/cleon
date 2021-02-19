@@ -8,4 +8,4 @@ public interface IContract extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,78a4d49e-4058-11eb-aaa9-61838d129c8c,t/HLuzp6xDox2HveUuxoDv0YX4Y=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,78a4d49e-4058-11eb-aaa9-61838d129c8c,P2CYseREIbJ8LJboFSTIgJhxCNg=] */

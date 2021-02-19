@@ -12,4 +12,4 @@ public interface IAbstractGoals extends cleon.common.doc.metamodel.spec.chapter.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d4d4ef7-210f-11e8-9bf6-d910b575bad9,fFhk9pcI7B8JjLf0mhhfsw5xYnI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,8d4d4ef7-210f-11e8-9bf6-d910b575bad9,tKSw41Gl9g1T6ZSeaCRon6oaHeo=] */

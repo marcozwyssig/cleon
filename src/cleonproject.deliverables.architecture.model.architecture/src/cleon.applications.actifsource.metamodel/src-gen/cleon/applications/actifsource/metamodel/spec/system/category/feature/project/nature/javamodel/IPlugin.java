@@ -14,4 +14,4 @@ public interface IPlugin extends cleon.applications.actifsource.metamodel.spec.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,foyQjptdZ39/n7Vmi1Wj753Uqvo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d5d42a4f-41a9-11e8-81d0-774e4d9334dd,tCFUtLsSnKjxswI2KmHPoR8Ty3s=] */

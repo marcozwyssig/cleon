@@ -12,4 +12,4 @@ public interface IBaseProductCatalog extends cleon.architecturemethods.eamod.met
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,84ac0122-67c6-11e7-afcc-6df3a81a4d17,f/YRTmVR5viWwciI53f6DvhSQKE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,84ac0122-67c6-11e7-afcc-6df3a81a4d17,8Qjg/Aih7xNaX6FLlhjDhon+ljQ=] */

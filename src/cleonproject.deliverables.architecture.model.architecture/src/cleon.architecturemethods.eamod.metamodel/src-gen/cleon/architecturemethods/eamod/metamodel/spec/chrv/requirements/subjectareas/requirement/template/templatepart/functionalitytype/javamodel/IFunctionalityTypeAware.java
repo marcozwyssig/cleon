@@ -12,4 +12,4 @@ public interface IFunctionalityTypeAware extends ch.actifsource.core.javamodel.I
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ace08a98-debd-11e5-bf7d-117d548070bb,isyvYTJEZB7eFtOhu1i9DyCsJy0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,ace08a98-debd-11e5-bf7d-117d548070bb,WZoTOXLCdgXTTnblyva1A2hnF+M=] */

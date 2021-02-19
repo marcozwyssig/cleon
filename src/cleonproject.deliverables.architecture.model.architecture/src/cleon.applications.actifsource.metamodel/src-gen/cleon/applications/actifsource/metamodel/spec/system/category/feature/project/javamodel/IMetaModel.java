@@ -8,4 +8,4 @@ public interface IMetaModel extends cleon.applications.actifsource.metamodel.spe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,zgPS1hIiEoLEultD03QbMdZP1Vk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2cdf0732-e9ba-11e4-848b-0509e3792151,yq+4BM6hqZMhhahjETZnJbDfE9s=] */

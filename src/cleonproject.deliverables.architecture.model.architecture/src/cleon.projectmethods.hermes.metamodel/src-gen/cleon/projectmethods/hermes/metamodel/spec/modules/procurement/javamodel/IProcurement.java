@@ -12,4 +12,4 @@ public interface IProcurement extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4733279-4058-11eb-aaa9-61838d129c8c,5GAIln1uIrzEmNZH57LUzHVaHDk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b4733279-4058-11eb-aaa9-61838d129c8c,MUyuG8U8ES7AHJyxTzAjBVntJJc=] */

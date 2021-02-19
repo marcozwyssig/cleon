@@ -18,4 +18,4 @@ public interface IOffering extends ch.actifsource.core.javamodel.INamedResource,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,qODCVkmqunqcREfT1UX09XgRXfM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a1a10c17-67bf-11e7-afcc-6df3a81a4d17,slpTjiPKsd4KAUQ1fO5lbH9CEL8=] */

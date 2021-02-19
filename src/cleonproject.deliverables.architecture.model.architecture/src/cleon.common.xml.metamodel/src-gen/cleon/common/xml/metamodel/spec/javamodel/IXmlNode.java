@@ -12,4 +12,4 @@ public interface IXmlNode extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6db97d0d-2a25-11e9-b49d-072e4afacfc7,cqV4BK9f551nSIb/oXJWNYHS2+4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6db97d0d-2a25-11e9-b49d-072e4afacfc7,AeQQJK77lqHeFZF0H6Eny77xRK4=] */

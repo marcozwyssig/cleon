@@ -8,4 +8,4 @@ public interface INamedXmlElement extends ch.actifsource.core.javamodel.INamedRe
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9e9ff389-2a25-11e9-b49d-072e4afacfc7,sLOtlOGTSG3GNvVzEyKKfkYOV2M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9e9ff389-2a25-11e9-b49d-072e4afacfc7,JbGWxYjMq1VxQblL1YEiHBLhhtg=] */

@@ -8,4 +8,4 @@ public interface IPrimitiveType extends ch.actifsource.core.javamodel.INamedReso
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c320e5ee-e3f2-11e2-845f-2b181f80a373,nlosOcuKqERdYR8xy60zve54LBU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c320e5ee-e3f2-11e2-845f-2b181f80a373,lT8T0PqdlogzeRyU7nIYZFItWGY=] */

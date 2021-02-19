@@ -12,4 +12,4 @@ public interface IAbstractInterface extends ch.actifsource.core.javamodel.IResou
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b626174f-26c1-11e3-a71a-b71d2dda9f8e,ZWwS5lPm7DIzaursxWvQYy76iTU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b626174f-26c1-11e3-a71a-b71d2dda9f8e,HWTkjOUf1q5Q/ddd/QTIpnW8JgA=] */

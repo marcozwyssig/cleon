@@ -8,4 +8,4 @@ public interface IResponsibility extends cleon.common.resources.metamodel.spec.i
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0a88c5ee-809c-11e9-8e65-f3f639e40a34,9+gll0b0CWFwA3iMH6rvv78yKDs=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,0a88c5ee-809c-11e9-8e65-f3f639e40a34,QHgUr9+zOKOrmsPUjJORWcGFr50=] */

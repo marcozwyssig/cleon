@@ -8,4 +8,4 @@ public interface IQualityGoal extends ch.actifsource.core.javamodel.INamedResour
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1689d4f9-481a-11e6-82f6-0f210765495b,E14WAUi8Fg9RW3bGDXjk43KP/6A=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,1689d4f9-481a-11e6-82f6-0f210765495b,zo71GQqTFDnt588qR22CKB+bfnM=] */

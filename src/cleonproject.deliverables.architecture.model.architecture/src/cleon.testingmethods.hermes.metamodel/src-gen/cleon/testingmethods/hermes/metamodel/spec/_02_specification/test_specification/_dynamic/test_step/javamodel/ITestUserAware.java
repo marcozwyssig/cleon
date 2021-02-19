@@ -12,4 +12,4 @@ public interface ITestUserAware extends ch.actifsource.core.javamodel.IResource 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5da2706c-715b-11e9-98e0-2719d32d2629,BXS0jzsvNSSpi3Xg4tLQkmzBzHI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5da2706c-715b-11e9-98e0-2719d32d2629,Tt9jM5kyo83YDaS2kM/WhpNRqBs=] */

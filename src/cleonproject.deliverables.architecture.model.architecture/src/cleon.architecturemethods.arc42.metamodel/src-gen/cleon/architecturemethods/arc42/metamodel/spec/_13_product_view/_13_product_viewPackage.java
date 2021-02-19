@@ -50,4 +50,4 @@ public class _13_product_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,PpTpAmznW6NP18MQd4kCpwo4UR8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._13_product_view,9WMRMcAgUDbNjgr1c2XHappGVJI=] */

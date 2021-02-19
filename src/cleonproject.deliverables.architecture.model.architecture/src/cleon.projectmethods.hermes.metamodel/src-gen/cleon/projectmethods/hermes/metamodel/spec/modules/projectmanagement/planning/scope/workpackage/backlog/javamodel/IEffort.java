@@ -91,4 +91,4 @@ public interface IEffort extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,604db26f-c4d9-11e5-b41d-5d67443850a2,BFk+cVXy8MYTbJhPSeorLd6tb5U=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,604db26f-c4d9-11e5-b41d-5d67443850a2,OSTf7vqT9UHKgcgqFU6AjbBql3E=] */

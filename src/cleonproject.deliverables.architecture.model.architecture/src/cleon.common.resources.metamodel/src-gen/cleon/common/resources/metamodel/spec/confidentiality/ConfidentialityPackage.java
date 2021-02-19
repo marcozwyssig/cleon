@@ -38,4 +38,4 @@ public class ConfidentialityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.confidentiality,Th1fver/79bCNAE2xqyWun/5c6k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.resources.metamodel.spec.confidentiality,sJQesxHWKWLbOJlMJuKB7gzjtCE=] */

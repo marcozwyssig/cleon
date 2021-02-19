@@ -61,4 +61,4 @@ public interface ILicenseType extends ch.actifsource.core.javamodel.IEnumValue, 
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ed0e011-29a9-11eb-8baa-95d9107006e8,gURNvy4DGaXMJSfOUS0/qiL9+gw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,3ed0e011-29a9-11eb-8baa-95d9107006e8,2bxe5azh/fKXmDiva7XFt7oAhJs=] */

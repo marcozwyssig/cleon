@@ -12,4 +12,4 @@ public interface IAgenda extends cleon.common.doc.metamodel.spec.chapter.javamod
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f5a3bc3-b461-11e5-a3f4-497fd75158dc,uKpq5pOlbdDUMunLzBjqK6+HLAw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f5a3bc3-b461-11e5-a3f4-497fd75158dc,4QrDIrNYZ8XS0CET2JEUSkc/B0g=] */

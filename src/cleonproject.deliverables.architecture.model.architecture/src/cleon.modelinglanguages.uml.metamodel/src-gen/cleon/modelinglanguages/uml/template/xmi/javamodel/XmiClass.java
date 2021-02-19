@@ -12,4 +12,4 @@ public abstract class XmiClass extends DynamicResource implements IXmiClass {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,305770aa-6c80-11e7-acfe-cd993eb63ee2,qVC1pD5WRysE2bLkwz+/VLDp2co=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,305770aa-6c80-11e7-acfe-cd993eb63ee2,uuUoG5DVrYrikHllhqk7Z5dMXeM=] */

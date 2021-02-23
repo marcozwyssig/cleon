@@ -11,6 +11,9 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.*;
 import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccount;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccountTemplate;
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
 public class FunctionSpace_Activity_Deployment {
@@ -123,13 +126,20 @@ public class FunctionSpace_Activity_Deployment {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList) {
       /* Begin Protected Region [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
+      final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount>();
       for( final var activityPermission : activityPermissionList) {
-      	activityPermission.extension(IActivityPermissionFunctions.class);
-
-      	//var serviceAccountz = ServiceAccount.selectToMeServiceAccountTemplate(activityPermission.selectActivityTemplate());
+      	final var serviceAccountTemplates =  ServiceAccountTemplate.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
+      	for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
+      		final var serviceAccounts = ServiceAccount.selectToMeServiceAccountTemplate(serviceAccountTemplate);
+      		for( final var serviceAccount : serviceAccounts ) {
+      			if( !serviceAccountsResult.contains(serviceAccount)) {
+      				serviceAccountsResult.add(serviceAccount);
+      			}
+      		}
+      	}
 
       }
-      return null;
+      return serviceAccountsResult;
       /* End Protected Region   [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
     }
 

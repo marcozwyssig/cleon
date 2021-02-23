@@ -12,6 +12,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.common.resources.metamodel.spec.active.FunctionSpace_Active.IEnabledWithDefaultTrueAwareFunctions;
 import java.util.stream.Collectors;
 import java.util.ArrayList;
+
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.FunctionSpace_Accounts.IServiceAccountFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccount;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccountTemplate;
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
@@ -62,7 +64,7 @@ public class FunctionSpace_Activity_Deployment {
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetAbstractSite();
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccounts();
 
   }
   
@@ -81,7 +83,7 @@ public class FunctionSpace_Activity_Deployment {
     public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission);
 
   }
   
@@ -124,20 +126,22 @@ public class FunctionSpace_Activity_Deployment {
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
       /* Begin Protected Region [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
       final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount>();
-      for( final var activityPermission : activityPermissionList) {
-      	final var serviceAccountTemplates =  ServiceAccountTemplate.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
-      	for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
-      		final var serviceAccounts = ServiceAccount.selectToMeServiceAccountTemplate(serviceAccountTemplate);
-      		for( final var serviceAccount : serviceAccounts ) {
-      			if( !serviceAccountsResult.contains(serviceAccount)) {
-      				serviceAccountsResult.add(serviceAccount);
-      			}
+      final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
+      final var abstractSite = activityPermissionFunctions.GetAbstractSite();
+
+      final var serviceAccountTemplates =  ServiceAccountTemplate.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
+      for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
+      	final var serviceAccounts = ServiceAccount.selectToMeServiceAccountTemplate(serviceAccountTemplate);
+      	for( final var serviceAccount : serviceAccounts ) {
+      		final var serviceAccountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
+      		final var abstractSites = serviceAccountFunctions.GetAllowedSiteForServiceAccount();
+      		if( abstractSites.contains(abstractSite) && !serviceAccountsResult.contains(serviceAccount)) {
+      			serviceAccountsResult.add(serviceAccount);
       		}
       	}
-
       }
       return serviceAccountsResult;
       /* End Protected Region   [[28c748b0-7116-11eb-8b0e-e301c2085b42]] */
@@ -165,8 +169,8 @@ public class FunctionSpace_Activity_Deployment {
       return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).HasAccess(role, activityPermission);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccount(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> activityPermissionList) {
-      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermissionList).ToServiceAccount(activityPermissionList);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccounts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission activityPermission) {
+      return DynamicResourceUtil.invoke(IActivityPermissionFunctionsImpl.class, ActivityPermissionFunctionsImpl.INSTANCE, activityPermission).ToServiceAccounts(activityPermission);
     }
 
   }
@@ -318,4 +322,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,vbmK609cCb7hZQBFJlUpt2TGl38=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,dK24StiXwdnzveptOBXVr5eEY/0=] */

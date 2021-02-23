@@ -5,6 +5,7 @@
     <resource statement-guid="e290348e-294d-11e5-b035-b579d7e91534" type="resource" guid="e28fe66b-294d-11e5-b035-b579d7e91534" />
     <resource statement-guid="9741d4fa-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="9741d4f7-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="de4cc445-e10f-11e5-a737-47ae39ff8e38" type="resource" guid="de4c4f11-e10f-11e5-a737-47ae39ff8e38" />
+    <resource statement-guid="3bc88b56-75ae-11eb-99f7-05e0e09fe318" type="resource" guid="3bc86442-75ae-11eb-99f7-05e0e09fe318" />
     <resource statement-guid="8c08c0b1-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="8c08c0ae-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="8e6c7a46-a95b-11e5-bda2-a7fc3bd7c783" type="resource" guid="8e6c7a43-a95b-11e5-bda2-a7fc3bd7c783" />
     <resource statement-guid="14a12850-dba9-11e5-9d7b-75e8191f8054" type="resource" guid="14a08c0d-dba9-11e5-9d7b-75e8191f8054" />
@@ -72,6 +73,19 @@ verknüpft.</object>
         <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
           <object statement-guid="de4c4f12-e10f-11e5-a737-47ae39ff8e38" type="literal">Die Anforderung wurde mit dem Lieferanten vereinbart, d.h. der Lieferant hat bestätigt,
 dass die Anforderung verständlich formuliert und umsetzbar ist.</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="3bc88b56-75ae-11eb-99f7-05e0e09fe318">
+      <resource guid="3bc86442-75ae-11eb-99f7-05e0e09fe318">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3bc86443-75ae-11eb-99f7-05e0e09fe318" type="resource" guid="db79c858-294d-11e5-b035-b579d7e91534" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3bc86444-75ae-11eb-99f7-05e0e09fe318" type="literal">Designed</object>
+        </predicate>
+        <predicate guid="d63ca21b-a7e7-11e5-82dd-3b995d9c840c">
+          <object statement-guid="3bc86445-75ae-11eb-99f7-05e0e09fe318" type="literal">Die Umsetzung der Anforderung wurde entworfen.</object>
         </predicate>
       </resource>
     </object>

@@ -38,6 +38,7 @@ public class RequirementPackage {
   public static final Resource RequirementAspect_requirement = new Resource("ff1fa18f-bab5-11e8-b88f-bd952c44e997");
   public static final Resource Requirement_owners = new Resource("1a10446e-c82c-11e8-add3-695b26858127");
   public static final Resource Requirement_supplement = new Resource("091ee709-fc85-11e8-af47-e5bdd8100025");
+  public static final Resource RequirementState_Designed = new Resource("3bc86442-75ae-11eb-99f7-05e0e09fe318");
   
   /* Begin Protected Region [[user]] */
   
@@ -58,4 +59,4 @@ public class RequirementPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement,3rMqmuG0/EWFPIhVHfxzj+c7OAc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement,nJFBTH8wpwqwysJur2i/dRlLo8w=] */

@@ -84,7 +84,7 @@ public class FunctionSpace_Requirements {
     public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted();
 
     @IDynamicResourceExtension.MethodId("deff6a54-75a0-11eb-99f7-05e0e09fe318")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyImplementedAndFullfilledAndSpecific();
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyDesignedOrImplementedOrFullfilledAndSpecific();
 
   }
   
@@ -103,7 +103,7 @@ public class FunctionSpace_Requirements {
     public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyRestricted(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
     @IDynamicResourceExtension.MethodId("deff6a54-75a0-11eb-99f7-05e0e09fe318")
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyImplementedAndFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList);
 
   }
   
@@ -152,7 +152,7 @@ public class FunctionSpace_Requirements {
       /* Begin Protected Region [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
-      	return (state.isApproved() || state.isApproved__F___N_By__F_Supplier__O_() || state.isFulfilled() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
+      	return (state.isApproved() || state.isDesigned() || state.isFulfilled() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
       }).collect(Collectors.toList());
       /* End Protected Region   [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
     }
@@ -168,11 +168,11 @@ public class FunctionSpace_Requirements {
     }
 
     @Override
-    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyImplementedAndFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+    public List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
       /* Begin Protected Region [[deff6a54-75a0-11eb-99f7-05e0e09fe318]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
-      	return (state.isImplemented() || state.isFulfilled()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
+      	return (state.isImplemented() || state.isDesigned() || state.isFulfilled()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
       }).collect(Collectors.toList());
 
       /* End Protected Region   [[deff6a54-75a0-11eb-99f7-05e0e09fe318]] */
@@ -200,8 +200,8 @@ public class FunctionSpace_Requirements {
       return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyRestricted(requirementList);
     }
 
-    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyImplementedAndFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
-      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyImplementedAndFullfilledAndSpecific(requirementList);
+    public static List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> OnlyDesignedOrImplementedOrFullfilledAndSpecific(final List<cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.javamodel.IRequirement> requirementList) {
+      return DynamicResourceUtil.invoke(IRequirementFunctionsImpl.class, RequirementFunctionsImpl.INSTANCE, requirementList).OnlyDesignedOrImplementedOrFullfilledAndSpecific(requirementList);
     }
 
   }
@@ -619,4 +619,4 @@ public class FunctionSpace_Requirements {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,K3EJc9fwL/VgjOMbv0nD3McbBEE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6f7a099f-c90b-11e5-a64e-a5d84d8f1b45,UYGjRlywZ0XSYz8GVG0GnLW5ueo=] */

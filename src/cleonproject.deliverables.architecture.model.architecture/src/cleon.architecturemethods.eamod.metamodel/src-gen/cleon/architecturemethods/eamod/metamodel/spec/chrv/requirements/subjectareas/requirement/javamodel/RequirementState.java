@@ -78,6 +78,7 @@ public class RequirementState extends DynamicResource implements IRequirementSta
     if (isAligned()) return visitor.visitAligned();
     if (isApproved__F___N_By__F_Supplier__O_()) return visitor.visitApproved__F___N_By__F_Supplier__O_();
     if (isApproved()) return visitor.visitApproved();
+    if (isDesigned()) return visitor.visitDesigned();
     if (isImplemented()) return visitor.visitImplemented();
     if (isFulfilled()) return visitor.visitFulfilled();
     if (isRejected__F___N_QS__O_()) return visitor.visitRejected__F___N_QS__O_();
@@ -101,6 +102,10 @@ public class RequirementState extends DynamicResource implements IRequirementSta
     }
     if (isApproved()) {
       visitor.visitApproved();
+      return;
+    }
+    if (isDesigned()) {
+      visitor.visitDesigned();
       return;
     }
     if (isImplemented()) {
@@ -145,6 +150,11 @@ public class RequirementState extends DynamicResource implements IRequirementSta
   }
   
   @Override
+  public boolean isDesigned() {
+    return getResource().equals(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.RequirementState_Designed);
+  }
+  
+  @Override
   public boolean isImplemented() {
     return getResource().equals(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.RequirementState_Implemented);
   }
@@ -165,4 +175,4 @@ public class RequirementState extends DynamicResource implements IRequirementSta
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,paELfoACB7KAVlIxulAgg9Vp/a4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,ugBB1E1aXIFT5dk7ho82wYB4v7g=] */

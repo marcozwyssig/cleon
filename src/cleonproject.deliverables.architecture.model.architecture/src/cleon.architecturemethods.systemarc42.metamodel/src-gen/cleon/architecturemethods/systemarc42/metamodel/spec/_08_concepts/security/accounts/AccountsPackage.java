@@ -42,6 +42,8 @@ public class AccountsPackage {
   public static final Resource ActivityAllocationFromSiteAware = new Resource("ce986cf3-7081-11eb-b91b-ab805dd3de7b");
   public static final Resource ActivityAllocationFromSiteAware_allocateActivitiesFromSite = new Resource("e6ee96cf-7081-11eb-b91b-ab805dd3de7b");
   public static final Resource ServiceAccount_allocateActivitiesFromSite = new Resource("2fc7bb13-7082-11eb-b91b-ab805dd3de7b");
+  public static final Resource ServiceAccountEnvironment_allowAccessToEnvironments = new Resource("da602860-7825-11eb-b1ee-19aff392296d");
+  public static final Resource FunctionSpace_aE_Accounts_ServiceAccountEnvironmentSite = new Resource("702930fd-7826-11eb-b1ee-19aff392296d");
   
   /* Begin Protected Region [[user]] */
   
@@ -62,4 +64,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,acfHu49hS40gkeNj5rsawgM/BQk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts,Ml77L9CED0fb4vUswSE7y1EJsBs=] */

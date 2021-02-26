@@ -216,6 +216,31 @@ public class FunctionSpace_Accounts {
 
   }
 
+  public static interface IServiceAccountEnvironmentSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("768c04a2-7826-11eb-b1ee-19aff392296d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> AllSites();
+
+  }
+  
+  public static interface IServiceAccountEnvironmentSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ServiceAccountEnvironmentSiteFunctionsImpl implements IServiceAccountEnvironmentSiteFunctionsImpl {
+
+    public static final IServiceAccountEnvironmentSiteFunctionsImpl INSTANCE = new ServiceAccountEnvironmentSiteFunctionsImpl();
+
+    private ServiceAccountEnvironmentSiteFunctionsImpl() {}
+
+  }
+  
+  public static class ServiceAccountEnvironmentSiteFunctions {
+
+    private ServiceAccountEnvironmentSiteFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,NNZXXNDmhis62p3XotIMki6Rgl8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,riXO56FcDXAwnlmJTWdkvr5QNfM=] */

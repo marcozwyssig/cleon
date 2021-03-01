@@ -27,7 +27,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     public java.lang.String RenderDescriptions();
 
     @IDynamicResourceExtension.MethodId("29f96ed5-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestHeader();
+    public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("36afaccc-758a-11e9-83b7-6bd7eee0c537")
     public java.lang.String RenderTestBody();
@@ -55,7 +55,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52bdfcfb-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestHeader();
+    public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("5e0b82c6-758a-11e9-83b7-6bd7eee0c537")
     public java.lang.String RenderTestBody();
@@ -83,7 +83,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static interface IDynamicTestReferenceFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("c77e5542-758b-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestHeader();
+    public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("c77e5547-758b-11e9-83b7-6bd7eee0c537")
     public java.lang.String RenderTestBody();
@@ -404,6 +404,31 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestGlobalPreconditionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4792698d-7a97-11eb-87e9-09aeef13879c")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface ITestGlobalPreconditionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestGlobalPreconditionFunctionsImpl implements ITestGlobalPreconditionFunctionsImpl {
+
+    public static final ITestGlobalPreconditionFunctionsImpl INSTANCE = new TestGlobalPreconditionFunctionsImpl();
+
+    private TestGlobalPreconditionFunctionsImpl() {}
+
+  }
+  
+  public static class TestGlobalPreconditionFunctions {
+
+    private TestGlobalPreconditionFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,+SPAYmc4/0JkDyzaenBTM7XMIt0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,QmbirvQhpozip2Meee6w8frqpgo=] */

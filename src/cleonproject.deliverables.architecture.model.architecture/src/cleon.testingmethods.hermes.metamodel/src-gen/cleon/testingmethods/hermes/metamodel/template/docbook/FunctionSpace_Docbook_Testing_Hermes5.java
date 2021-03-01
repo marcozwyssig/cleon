@@ -30,7 +30,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("36afaccc-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestBody();
+    public java.lang.String RenderTestSteps();
 
   }
   
@@ -58,7 +58,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("5e0b82c6-758a-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestBody();
+    public java.lang.String RenderTestSteps();
 
   }
   
@@ -86,7 +86,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     public java.lang.String RenderTestDescription();
 
     @IDynamicResourceExtension.MethodId("c77e5547-758b-11e9-83b7-6bd7eee0c537")
-    public java.lang.String RenderTestBody();
+    public java.lang.String RenderTestSteps();
 
   }
   
@@ -188,9 +188,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   public static interface ITestStepFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("1026a7d8-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
-
     @IDynamicResourceExtension.MethodId("39717caf-8e99-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
@@ -216,10 +213,16 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   public static interface ITestInputFunctions extends IDynamicResourceExtension {
 
+    @IDynamicResourceExtension.MethodId("1e4de3d1-7a9c-11eb-87e9-09aeef13879c")
+    public java.lang.String Render();
+
   }
   
   public static interface ITestInputFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("1e4de3d1-7a9c-11eb-87e9-09aeef13879c")
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput);
+
   }
   
   public static class TestInputFunctionsImpl implements ITestInputFunctionsImpl {
@@ -228,18 +231,24 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestInputFunctionsImpl() {}
 
+    @Override
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput) {
+      return null;
+    }
+
   }
   
   public static class TestInputFunctions {
 
     private TestInputFunctions() {}
 
+    public static java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestInput testInput) {
+      return DynamicResourceUtil.invoke(ITestInputFunctionsImpl.class, TestInputFunctionsImpl.INSTANCE, testInput).Render(testInput);
+    }
+
   }
 
   public static interface ITestInputStringFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("c6ef09a1-8e9b-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
 
     @IDynamicResourceExtension.MethodId("c6ef09a3-8e9b-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
@@ -266,9 +275,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   public static interface ITestResultFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("f1606ee9-8e99-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
-
     @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
@@ -276,6 +282,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult);
+
   }
   
   public static class TestResultFunctionsImpl implements ITestResultFunctionsImpl {
@@ -284,18 +293,24 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestResultFunctionsImpl() {}
 
+    @Override
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult) {
+      return null;
+    }
+
   }
   
   public static class TestResultFunctions {
 
     private TestResultFunctions() {}
 
+    public static java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult) {
+      return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).Render(testResult);
+    }
+
   }
 
   public static interface ITestInputDataFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3b8413f7-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
 
     @IDynamicResourceExtension.MethodId("3b8413f9-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
@@ -322,9 +337,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   public static interface ITestInputToolFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("5ff9925a-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
-
     @IDynamicResourceExtension.MethodId("5ff9925c-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
@@ -350,9 +362,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   public static interface ITestInputUserFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("a0b6e833-8e9a-11e9-83a2-35c1705de7ac")
-    public java.lang.String RowSpan();
-
     @IDynamicResourceExtension.MethodId("a0b6e835-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
@@ -377,9 +386,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   }
 
   public static interface ITestInputConnectionFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("b3d94a34-8eb4-11e9-9c53-5f1b39fe78bd")
-    public java.lang.String RowSpan();
 
     @IDynamicResourceExtension.MethodId("b707a64a-8eb4-11e9-9c53-5f1b39fe78bd")
     public java.lang.String Render();
@@ -429,6 +435,31 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestRequirementCoverageFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("04b36f0d-7aa6-11eb-87e9-09aeef13879c")
+    public java.lang.String RenderCoverageName();
+
+  }
+  
+  public static interface ITestRequirementCoverageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestRequirementCoverageFunctionsImpl implements ITestRequirementCoverageFunctionsImpl {
+
+    public static final ITestRequirementCoverageFunctionsImpl INSTANCE = new TestRequirementCoverageFunctionsImpl();
+
+    private TestRequirementCoverageFunctionsImpl() {}
+
+  }
+  
+  public static class TestRequirementCoverageFunctions {
+
+    private TestRequirementCoverageFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,QmbirvQhpozip2Meee6w8frqpgo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,wmNyuOzI5+KMj+j9V9qzDpjeAl8=] */

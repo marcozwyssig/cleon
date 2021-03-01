@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class InfrastractureTestPrecondition extends DynamicResource implements IInfrastractureTestPrecondition {
+public class InfrastractureTestPreconditionStep extends DynamicResource implements IInfrastractureTestPreconditionStep {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInfrastractureTestPrecondition> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInfrastractureTestPrecondition>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInfrastractureTestPreconditionStep> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IInfrastractureTestPreconditionStep>() {
     
     @Override
-    public IInfrastractureTestPrecondition create() {
-      return new InfrastractureTestPrecondition();
+    public IInfrastractureTestPreconditionStep create() {
+      return new InfrastractureTestPreconditionStep();
     }
     
     @Override
-    public IInfrastractureTestPrecondition create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new InfrastractureTestPrecondition(resourceRepository, resource);
+    public IInfrastractureTestPreconditionStep create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new InfrastractureTestPreconditionStep(resourceRepository, resource);
     }
   
   };
 
-  public InfrastractureTestPrecondition() {
-    super(IInfrastractureTestPrecondition.TYPE_ID);
+  public InfrastractureTestPreconditionStep() {
+    super(IInfrastractureTestPreconditionStep.TYPE_ID);
   }
   
-  public InfrastractureTestPrecondition(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IInfrastractureTestPrecondition.TYPE_ID);
+  public InfrastractureTestPreconditionStep(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IInfrastractureTestPreconditionStep.TYPE_ID);
   }
 
   // attributes
@@ -46,7 +46,7 @@ public class InfrastractureTestPrecondition extends DynamicResource implements I
     return _getSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestInfrastractureAware_testInfrastructure);
   }
 
-  public InfrastractureTestPrecondition setTestInfrastructure(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture testInfrastructure) {
+  public InfrastractureTestPreconditionStep setTestInfrastructure(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.javamodel.IAbstractTestInfrastracture testInfrastructure) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestInfrastractureAware_testInfrastructure, testInfrastructure);
     return this;
   }
@@ -56,7 +56,7 @@ public class InfrastractureTestPrecondition extends DynamicResource implements I
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public InfrastractureTestPrecondition setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public InfrastractureTestPreconditionStep setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -72,4 +72,4 @@ public class InfrastractureTestPrecondition extends DynamicResource implements I
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,261a417f-6d8a-11e9-b84d-d319514e887f,qPonhNPVqHLdA2GwEdM4H9CEZ4w=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,261a417f-6d8a-11e9-b84d-d319514e887f,+FdA4KGKSt6Mb4LtMZ0X8VyI7rU=] */

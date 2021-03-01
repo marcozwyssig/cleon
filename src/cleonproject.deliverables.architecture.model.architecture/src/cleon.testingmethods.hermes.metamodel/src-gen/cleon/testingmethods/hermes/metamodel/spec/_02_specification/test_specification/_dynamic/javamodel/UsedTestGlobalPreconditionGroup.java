@@ -41,11 +41,11 @@ public class UsedTestGlobalPreconditionGroup extends DynamicResource implements 
   }
     
   @Override
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup selectTestGlobalPrecondition() {
-    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition);
+  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition selectTestGlobalPrecondition() {
+    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition);
   }
 
-  public UsedTestGlobalPreconditionGroup setTestGlobalPrecondition(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup testGlobalPrecondition) {
+  public UsedTestGlobalPreconditionGroup setTestGlobalPrecondition(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition testGlobalPrecondition) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition, testGlobalPrecondition);
     return this;
   }
@@ -74,14 +74,14 @@ public class UsedTestGlobalPreconditionGroup extends DynamicResource implements 
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition, visitor);
     _acceptMap(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IOverrideTestPrecondition.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testOverridePrecondition, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> selectToMeTestGlobalPrecondition(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup object) {
+  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> selectToMeTestGlobalPrecondition(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.UsedTestGlobalPreconditionGroup_testGlobalPrecondition, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class UsedTestGlobalPreconditionGroup extends DynamicResource implements 
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b32136ac-67e9-11e9-9ec9-5fbc84faaeb1,RDIoAPcPL7tbA/DKPOjv2en+b7k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b32136ac-67e9-11e9-9ec9-5fbc84faaeb1,OFK9Pa5HuL7eQ2LbJIrTea1KzZU=] */

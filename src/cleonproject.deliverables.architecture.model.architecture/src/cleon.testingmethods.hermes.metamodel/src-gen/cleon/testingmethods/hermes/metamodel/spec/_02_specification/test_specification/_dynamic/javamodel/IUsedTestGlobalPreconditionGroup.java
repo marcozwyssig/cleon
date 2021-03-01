@@ -8,10 +8,10 @@ public interface IUsedTestGlobalPreconditionGroup extends ch.actifsource.core.ja
   
   // relations
   
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup selectTestGlobalPrecondition();
+  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition selectTestGlobalPrecondition();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IOverrideTestPrecondition> selectTestOverridePrecondition();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b32136ac-67e9-11e9-9ec9-5fbc84faaeb1,lQ2WJmnFnnPJfDg3PfRIbCO+D18=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,b32136ac-67e9-11e9-9ec9-5fbc84faaeb1,hQICwnXgyxjPKuAECScc4VavC7o=] */

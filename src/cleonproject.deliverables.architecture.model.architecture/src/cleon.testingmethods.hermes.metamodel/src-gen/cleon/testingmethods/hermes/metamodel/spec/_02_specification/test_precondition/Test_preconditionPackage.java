@@ -9,12 +9,12 @@ public class Test_preconditionPackage {
   public static final Resource TestGlobalPreconditions = new Resource("894f4f5a-669f-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestGlobalPreconditions_testPreconditionGroups = new Resource("038048d2-66a0-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestInfrastractureAware_testInfrastructure = new Resource("ab4d814c-6762-11e9-9ec9-5fbc84faaeb1");
-  public static final Resource TestGlobalPreconditionGroup = new Resource("a4ea307b-67ea-11e9-9ec9-5fbc84faaeb1");
+  public static final Resource TestGlobalPrecondition = new Resource("a4ea307b-67ea-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestPreconditionAwareList = new Resource("5e8c0206-67eb-11e9-9ec9-5fbc84faaeb1");
-  public static final Resource AbstractTestPrecondition = new Resource("491bb959-6b2b-11e9-bd30-87fcf852dea7");
-  public static final Resource TestPrecondition = new Resource("b9a05435-6d89-11e9-b84d-d319514e887f");
+  public static final Resource AbstractTestPreconditionStep = new Resource("491bb959-6b2b-11e9-bd30-87fcf852dea7");
+  public static final Resource TestPreconditionStep = new Resource("b9a05435-6d89-11e9-b84d-d319514e887f");
   public static final Resource NamedOverrideTestPrecondition = new Resource("ebe08da8-6d89-11e9-b84d-d319514e887f");
-  public static final Resource InfrastractureTestPrecondition = new Resource("261a417f-6d8a-11e9-b84d-d319514e887f");
+  public static final Resource InfrastractureTestPreconditionStep = new Resource("261a417f-6d8a-11e9-b84d-d319514e887f");
   public static final Resource TestInfrastractureAware = new Resource("413fdf28-6d8a-11e9-b84d-d319514e887f");
   public static final Resource InfrastractureOverrideTestPrecondition = new Resource("689dfed3-6d8a-11e9-b84d-d319514e887f");
   public static final Resource DynamicTestDependencyPrecondition = new Resource("4c622a80-7168-11e9-98e0-2719d32d2629");
@@ -39,4 +39,4 @@ public class Test_preconditionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition,3gXiokn6V1oCc1KvwbRRnNeOUYE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition,r2cH7/WROkyMSVxbGfjvA9/O6uQ=] */

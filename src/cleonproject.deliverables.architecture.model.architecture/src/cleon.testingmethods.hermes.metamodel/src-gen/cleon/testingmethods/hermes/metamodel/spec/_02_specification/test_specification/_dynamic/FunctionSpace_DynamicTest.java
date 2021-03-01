@@ -9,20 +9,15 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition;
-import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPrecondition;
-import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup;
-import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IOverrideTestPrecondition;
+import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep;
+import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep;
 
 /* End Protected Region   [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
 
 public class FunctionSpace_DynamicTest {
 
   /* Begin Protected Region [[5353461a-4f8d-11e9-ad5d-977b17aab907]] */
-  
+
   /* End Protected Region   [[5353461a-4f8d-11e9-ad5d-977b17aab907]] */
 
 
@@ -79,10 +74,10 @@ public class FunctionSpace_DynamicTest {
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d8bc7687-6b31-11e9-bd30-87fcf852dea7")
-    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetAllPrecondition();
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep> GetAllPrecondition();
 
     @IDynamicResourceExtension.MethodId("2f38f888-7191-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup GetGlobalPreconditionGroup();
+    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition GetGlobalPreconditionGroup();
 
   }
   
@@ -107,14 +102,14 @@ public class FunctionSpace_DynamicTest {
   public static interface IUsedTestGlobalPreconditionGroupFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d8cc38d1-6b32-11e9-bd30-87fcf852dea7")
-    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions();
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep> GetPreconditions();
 
   }
   
   public static interface IUsedTestGlobalPreconditionGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("d8cc38d1-6b32-11e9-bd30-87fcf852dea7")
-    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup);
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup);
 
   }
   
@@ -125,23 +120,23 @@ public class FunctionSpace_DynamicTest {
     private UsedTestGlobalPreconditionGroupFunctionsImpl() {}
 
     @Override
-    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
+    public List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
       /* Begin Protected Region [[d8cc38d1-6b32-11e9-bd30-87fcf852dea7]] */
-    	List<IAbstractTestPrecondition> resultPreconditions = new ArrayList<>();
-    	
-		for( ITestPrecondition iterPrecondition : usedTestGlobalPreconditionGroup.selectTestGlobalPrecondition().selectTestPreconditions()) 
-    	{	
-    		if(usedTestGlobalPreconditionGroup.selectTestOverridePrecondition().containsKey(iterPrecondition.getResource()))
-    		{
-    			resultPreconditions.add(usedTestGlobalPreconditionGroup.selectTestOverridePrecondition().get(iterPrecondition.getResource()));
-    		}
-    		else
-    		{
-    			resultPreconditions.add(iterPrecondition);
-    		}    			
-    	}
-    	return resultPreconditions;
-   
+      final List<IAbstractTestPreconditionStep> resultPreconditions = new ArrayList<>();
+
+      for( final ITestPreconditionStep iterPrecondition : usedTestGlobalPreconditionGroup.selectTestGlobalPrecondition().selectTestPreconditions())
+      {
+      	if(usedTestGlobalPreconditionGroup.selectTestOverridePrecondition().containsKey(iterPrecondition.getResource()))
+      	{
+      		resultPreconditions.add(usedTestGlobalPreconditionGroup.selectTestOverridePrecondition().get(iterPrecondition.getResource()));
+      	}
+      	else
+      	{
+      		resultPreconditions.add(iterPrecondition);
+      	}
+      }
+      return resultPreconditions;
+
       /* End Protected Region   [[d8cc38d1-6b32-11e9-bd30-87fcf852dea7]] */
     }
 
@@ -151,7 +146,7 @@ public class FunctionSpace_DynamicTest {
 
     private UsedTestGlobalPreconditionGroupFunctions() {}
 
-    public static List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPrecondition> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
+    public static List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep> GetPreconditions(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup usedTestGlobalPreconditionGroup) {
       return DynamicResourceUtil.invoke(IUsedTestGlobalPreconditionGroupFunctionsImpl.class, UsedTestGlobalPreconditionGroupFunctionsImpl.INSTANCE, usedTestGlobalPreconditionGroup).GetPreconditions(usedTestGlobalPreconditionGroup);
     }
 
@@ -160,7 +155,7 @@ public class FunctionSpace_DynamicTest {
   public static interface IGlobalPreconditionsAwareFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("02863fe6-7191-11e9-98e0-2719d32d2629")
-    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditionGroup GetGlobalPreconditionGroup();
+    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition GetGlobalPreconditionGroup();
 
   }
   
@@ -258,7 +253,7 @@ public class FunctionSpace_DynamicTest {
     @Override
     public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels dynamicTestLevels) {
       /* Begin Protected Region [[076da764-7618-11e9-bd98-2b827cfec50e]] */
-    	return dynamicTestLevels.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
+      return dynamicTestLevels.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
       /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
     }
 
@@ -301,4 +296,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,ovaD7FmivCxIG4gCcPXK3YyR50s=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,+cnaINdU9sUVfDdNyptcr/hiVQE=] */

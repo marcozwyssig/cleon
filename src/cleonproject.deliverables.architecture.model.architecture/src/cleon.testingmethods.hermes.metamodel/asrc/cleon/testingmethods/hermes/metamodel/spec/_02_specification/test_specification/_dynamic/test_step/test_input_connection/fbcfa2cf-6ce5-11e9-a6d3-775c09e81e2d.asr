@@ -3,6 +3,7 @@
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
     <resource statement-guid="fed58fe4-6ce5-11e9-a6d3-775c09e81e2d" type="resource" guid="fed541bf-6ce5-11e9-a6d3-775c09e81e2d" />
     <resource statement-guid="0045c137-6ce6-11e9-a6d3-775c09e81e2d" type="resource" guid="00454c04-6ce6-11e9-a6d3-775c09e81e2d" />
+    <resource statement-guid="f11aa3b4-7b7f-11eb-bff3-87d7bd9a22f9" type="resource" guid="f11a7ca1-7b7f-11eb-bff3-87d7bd9a22f9" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fbcff0f1-6ce5-11e9-a6d3-775c09e81e2d" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -31,6 +32,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="00e423ad-6ce6-11e9-a6d3-775c09e81e2d" type="literal">SSH</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="f11aa3b4-7b7f-11eb-bff3-87d7bd9a22f9">
+      <resource guid="f11a7ca1-7b7f-11eb-bff3-87d7bd9a22f9">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f11a7ca3-7b7f-11eb-bff3-87d7bd9a22f9" type="resource" guid="fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f1f6abd5-7b7f-11eb-bff3-87d7bd9a22f9" type="literal">Web</object>
         </predicate>
       </resource>
     </object>

@@ -66,6 +66,7 @@ public class ConnectionType extends DynamicResource implements IConnectionType {
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isRDP()) return visitor.visitRDP();
     if (isSSH()) return visitor.visitSSH();
+    if (isWeb()) return visitor.visitWeb();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -77,6 +78,10 @@ public class ConnectionType extends DynamicResource implements IConnectionType {
     }
     if (isSSH()) {
       visitor.visitSSH();
+      return;
+    }
+    if (isWeb()) {
+      visitor.visitWeb();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -94,5 +99,10 @@ public class ConnectionType extends DynamicResource implements IConnectionType {
     return getResource().equals(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.ConnectionType_SSH);
   }
   
+  @Override
+  public boolean isWeb() {
+    return getResource().equals(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.ConnectionType_Web);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d,U9Qa9ur2MVYZslFRjmeaLoBBm3Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d,NiWzH9VoH+nanCSaUUzUQ8vMKwg=] */

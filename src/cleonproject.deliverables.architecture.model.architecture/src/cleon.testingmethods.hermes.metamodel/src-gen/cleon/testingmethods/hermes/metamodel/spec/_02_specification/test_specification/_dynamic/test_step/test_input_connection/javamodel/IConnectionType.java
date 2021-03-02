@@ -12,6 +12,8 @@ public interface IConnectionType extends ch.actifsource.core.javamodel.IEnumValu
     
     public void visitSSH();
     
+    public void visitWeb();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -19,6 +21,8 @@ public interface IConnectionType extends ch.actifsource.core.javamodel.IEnumValu
     public R visitRDP();
     
     public R visitSSH();
+    
+    public R visitWeb();
     
   }
   
@@ -34,7 +38,9 @@ public interface IConnectionType extends ch.actifsource.core.javamodel.IEnumValu
   
   public boolean isSSH();
   
+  public boolean isWeb();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d,wS4mAs+es+OAFaAn8jycThNsZUI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fbcfa2cf-6ce5-11e9-a6d3-775c09e81e2d,kdZN2qXWjsPUQNNFhOMOaVZQ/jI=] */

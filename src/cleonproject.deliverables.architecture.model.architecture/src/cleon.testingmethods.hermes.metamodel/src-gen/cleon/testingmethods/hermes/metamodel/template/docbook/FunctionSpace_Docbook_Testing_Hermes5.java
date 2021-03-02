@@ -134,28 +134,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
-  public static interface ITestPreconditionAwareListFunctions extends IDynamicResourceExtension {
-
-  }
-  
-  public static interface ITestPreconditionAwareListFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestPreconditionAwareListFunctionsImpl implements ITestPreconditionAwareListFunctionsImpl {
-
-    public static final ITestPreconditionAwareListFunctionsImpl INSTANCE = new TestPreconditionAwareListFunctionsImpl();
-
-    private TestPreconditionAwareListFunctionsImpl() {}
-
-  }
-  
-  public static class TestPreconditionAwareListFunctions {
-
-    private TestPreconditionAwareListFunctions() {}
-
-  }
-
   public static interface IDynamicTestLevelsFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
@@ -192,10 +170,16 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     @IDynamicResourceExtension.MethodId("39717caf-8e99-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
+    @IDynamicResourceExtension.MethodId("30515472-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String RenderResult();
+
   }
   
   public static interface ITestStepFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("30515472-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep);
+
   }
   
   public static class TestStepFunctionsImpl implements ITestStepFunctionsImpl {
@@ -204,11 +188,20 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestStepFunctionsImpl() {}
 
+    @Override
+    public java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
+      return null;
+    }
+
   }
   
   public static class TestStepFunctions {
 
     private TestStepFunctions() {}
+
+    public static java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
+      return DynamicResourceUtil.invoke(ITestStepFunctionsImpl.class, TestStepFunctionsImpl.INSTANCE, testStep).RenderResult(testStep);
+    }
 
   }
 
@@ -279,6 +272,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     @IDynamicResourceExtension.MethodId("f6b55503-8e99-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
+    @IDynamicResourceExtension.MethodId("4136bc86-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String RenderResult();
+
   }
   
   public static interface ITestResultFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -307,6 +303,46 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     public static java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResult testResult) {
       return DynamicResourceUtil.invoke(ITestResultFunctionsImpl.class, TestResultFunctionsImpl.INSTANCE, testResult).Render(testResult);
+    }
+
+  }
+
+  public static interface ITestResultEnvironmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("154f4420-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String Render();
+
+    @IDynamicResourceExtension.MethodId("5c618a86-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String RenderResult();
+
+  }
+  
+  public static interface ITestResultEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("154f4420-7b6d-11eb-b8e5-2d821e359a02")
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment);
+
+  }
+  
+  public static class TestResultEnvironmentFunctionsImpl implements ITestResultEnvironmentFunctionsImpl {
+
+    public static final ITestResultEnvironmentFunctionsImpl INSTANCE = new TestResultEnvironmentFunctionsImpl();
+
+    private TestResultEnvironmentFunctionsImpl() {}
+
+    @Override
+    public java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment) {
+      return null;
+    }
+
+  }
+  
+  public static class TestResultEnvironmentFunctions {
+
+    private TestResultEnvironmentFunctions() {}
+
+    public static java.lang.String Render(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestResultEnvironment testResultEnvironment) {
+      return DynamicResourceUtil.invoke(ITestResultEnvironmentFunctionsImpl.class, TestResultEnvironmentFunctionsImpl.INSTANCE, testResultEnvironment).Render(testResultEnvironment);
     }
 
   }
@@ -515,4 +551,7 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,M0Zw9AUQiw27S9YJ7zESzSW6iog=] */
+      /* Begin Protected Region [[30515472-7b6d-11eb-b8e5-2d821e359a02]] */
+      // XXX implement template function here   
+      /* End Protected Region   [[30515472-7b6d-11eb-b8e5-2d821e359a02]] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,uVOHOB1rbDrvQ71/mCUjEFOOMKc=] */

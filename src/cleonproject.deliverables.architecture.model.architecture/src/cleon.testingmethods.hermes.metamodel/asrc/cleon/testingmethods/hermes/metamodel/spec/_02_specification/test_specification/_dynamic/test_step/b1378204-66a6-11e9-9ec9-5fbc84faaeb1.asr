@@ -1,32 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="b1378204-66a6-11e9-9ec9-5fbc84faaeb1">
-  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <resource statement-guid="dd0a8903-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="dd0a88fe-66a6-11e9-9ec9-5fbc84faaeb1" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b1378206-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="ff7e56f7-6b31-11e9-bd30-87fcf852dea7" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
     <object statement-guid="b1378207-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="8009f040-66a6-11e9-9ec9-5fbc84faaeb1" />
-  </predicate>
-  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="dd0a8903-66a6-11e9-9ec9-5fbc84faaeb1">
-      <resource guid="dd0a88fe-66a6-11e9-9ec9-5fbc84faaeb1">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dd0a8902-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
-        </predicate>
-        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dd0a8901-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="cf068f50-0785-11db-af79-437b1ec5a51d" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="dd0a8900-66a6-11e9-9ec9-5fbc84faaeb1" type="literal">expectedResult</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="dd0a88ff-66a6-11e9-9ec9-5fbc84faaeb1" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-      </resource>
-    </object>
+    <object statement-guid="2d7a5c32-7b6c-11eb-b8e5-2d821e359a02" type="resource" guid="180b732c-7b6c-11eb-b8e5-2d821e359a02" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="b1378205-66a6-11e9-9ec9-5fbc84faaeb1" type="literal">TestResult</object>

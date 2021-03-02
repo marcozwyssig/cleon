@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>cleon.testingmethods.hermes.metamodel</name>
-	<comment/>
+	<comment></comment>
 	<projects>
-		<!-- Begin Protected Region [[customProjects]] -->
-		
-		<!-- End Protected Region   [[customProjects]] -->
 	</projects>
 	<buildSpec>
 		<buildCommand>
-			<name>ch.actifsource.environment.builder</name>
+			<name>org.eclipse.jdt.core.javabuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.jdt.core.javabuilder</name>
+			<name>ch.actifsource.environment.builder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
@@ -34,10 +31,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.pde.PluginNature</nature>
 	</natures>
-	<linkedResources>
-	</linkedResources>
-	<!-- Begin Protected Region [[custom]] -->
-	
-	<!-- End Protected Region   [[custom]] -->
 </projectDescription>
-<!-- Actifsource ID=[0d0399d9-2f8a-11e5-b032-2f3fdc0d39bf,3610aa9e-4f84-11e9-bb70-f5c712ea0a4b,Hash] -->

@@ -8,13 +8,14 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[983d95c3-4f88-11e9-ad5d-977b17aab907,imports]] */
+import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.TestPreconditionAwareList;
 
 /* End Protected Region   [[983d95c3-4f88-11e9-ad5d-977b17aab907,imports]] */
 
 public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   /* Begin Protected Region [[983d95c3-4f88-11e9-ad5d-977b17aab907]] */
-  
+
   /* End Protected Region   [[983d95c3-4f88-11e9-ad5d-977b17aab907]] */
 
 
@@ -460,6 +461,55 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestPreconditionStepFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1559bb44-7b34-11eb-ae9b-d7162fb23e98")
+    public java.lang.Integer Position();
+
+  }
+  
+  public static interface ITestPreconditionStepFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("1559bb44-7b34-11eb-ae9b-d7162fb23e98")
+    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep);
+
+  }
+  
+  public static class TestPreconditionStepFunctionsImpl implements ITestPreconditionStepFunctionsImpl {
+
+    public static final ITestPreconditionStepFunctionsImpl INSTANCE = new TestPreconditionStepFunctionsImpl();
+
+    private TestPreconditionStepFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep) {
+      /* Begin Protected Region [[1559bb44-7b34-11eb-ae9b-d7162fb23e98]] */
+      Integer position = 1;
+      final var testGlobalPreconditions = TestPreconditionAwareList.selectToMeTestPreconditions(testPreconditionStep);
+      for( final var iterStep : testGlobalPreconditions.selectTestPreconditions())
+      {
+      	if( iterStep.equals(testPreconditionStep))
+      	{
+      		return position;
+      	}
+      	++position;
+      }
+      return -1;
+      /* End Protected Region   [[1559bb44-7b34-11eb-ae9b-d7162fb23e98]] */
+    }
+
+  }
+  
+  public static class TestPreconditionStepFunctions {
+
+    private TestPreconditionStepFunctions() {}
+
+    public static java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep) {
+      return DynamicResourceUtil.invoke(ITestPreconditionStepFunctionsImpl.class, TestPreconditionStepFunctionsImpl.INSTANCE, testPreconditionStep).Position(testPreconditionStep);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,I5cdYVK8HVOJtXzetg4zjZowxjw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,zUtjl263aCXVu9DWq+I9ySLU9XQ=] */

@@ -9,7 +9,6 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,imports]] */
 import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.DynamicTest;
-import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest;
 import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep;
 
 /* End Protected Region   [[ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,imports]] */
@@ -17,7 +16,7 @@ import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specifi
 public class FunctionSpace_TestStep {
 
   /* Begin Protected Region [[ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1]] */
-  
+
   /* End Protected Region   [[ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1]] */
 
 
@@ -44,17 +43,17 @@ public class FunctionSpace_TestStep {
     @Override
     public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
       /* Begin Protected Region [[985c0961-6725-11e9-9ec9-5fbc84faaeb1]] */
-    	Integer position = 1;
-    	IDynamicTest dynamicTest = DynamicTest.selectToMeTestSteps(testStep);
-    	for( ITestStep iterStep : dynamicTest.selectTestSteps())
-    	{
-    		if( iterStep.equals(testStep))
-    		{
-    			return position;
-    		}
-    		++position;
-    	}
-    	return -1;
+      Integer position = 1;
+      final var dynamicTest = DynamicTest.selectToMeTestSteps(testStep);
+      for( final ITestStep iterStep : dynamicTest.selectTestSteps())
+      {
+      	if( iterStep.equals(testStep))
+      	{
+      		return position;
+      	}
+      	++position;
+      }
+      return -1;
       /* End Protected Region   [[985c0961-6725-11e9-9ec9-5fbc84faaeb1]] */
     }
 

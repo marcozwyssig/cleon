@@ -416,6 +416,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     @IDynamicResourceExtension.MethodId("4792698d-7a97-11eb-87e9-09aeef13879c")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("6a0026df-7b35-11eb-ae9b-d7162fb23e98")
+    public java.lang.String RenderDescriptions();
+
   }
   
   public static interface ITestGlobalPreconditionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -512,4 +515,4 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,zUtjl263aCXVu9DWq+I9ySLU9XQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,M0Zw9AUQiw27S9YJ7zESzSW6iog=] */

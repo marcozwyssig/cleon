@@ -8,8 +8,8 @@ public interface ITestPreconditionAwareList extends ch.actifsource.core.javamode
   
   // relations
   
-  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> selectTestPreconditions();
+  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> selectTestLocalPreconditions();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5e8c0206-67eb-11e9-9ec9-5fbc84faaeb1,lzO5uXhWLTBA1NAfK3J3dv12EfQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,5e8c0206-67eb-11e9-9ec9-5fbc84faaeb1,b3TpduKvHXClLByAgT9CMzxjF7M=] */

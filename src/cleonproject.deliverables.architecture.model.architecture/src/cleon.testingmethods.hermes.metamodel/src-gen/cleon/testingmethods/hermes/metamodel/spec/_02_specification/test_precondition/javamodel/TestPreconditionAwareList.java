@@ -13,9 +13,9 @@ public abstract class TestPreconditionAwareList extends DynamicResource implemen
   
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionAwareList selectToMeTestPreconditions(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionAwareList.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testPreconditions, object.getResource());
+  public static cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionAwareList selectToMeTestLocalPreconditions(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionAwareList.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e8c0206-67eb-11e9-9ec9-5fbc84faaeb1,zVSLWk9ZtBsoHJaPnrldovvJcKE=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5e8c0206-67eb-11e9-9ec9-5fbc84faaeb1,M/qf00DfkEXkj9W2i+u64i531/M=] */

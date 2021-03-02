@@ -119,12 +119,12 @@ public class TestGlobalPrecondition extends DynamicResource implements ITestGlob
   }
     
   @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> selectTestPreconditions() {
-    return _getList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testPreconditions);
+  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> selectTestLocalPreconditions() {
+    return _getList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions);
   }
 
-  public TestGlobalPrecondition setTestPreconditions(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> testPreconditions) {
-    _setList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testPreconditions, testPreconditions);
+  public TestGlobalPrecondition setTestLocalPreconditions(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> testLocalPreconditions) {
+    _setList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions, testLocalPreconditions);
     return this;
   }
     
@@ -147,9 +147,9 @@ public class TestGlobalPrecondition extends DynamicResource implements ITestGlob
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
-    _acceptList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testPreconditions, visitor);
+    _acceptList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4ea307b-67ea-11e9-9ec9-5fbc84faaeb1,E4h4F+gLbCwG08qwQt+3/TfbXAQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,a4ea307b-67ea-11e9-9ec9-5fbc84faaeb1,4kXK1boh+xLVq4czpEM/gSpE44Q=] */

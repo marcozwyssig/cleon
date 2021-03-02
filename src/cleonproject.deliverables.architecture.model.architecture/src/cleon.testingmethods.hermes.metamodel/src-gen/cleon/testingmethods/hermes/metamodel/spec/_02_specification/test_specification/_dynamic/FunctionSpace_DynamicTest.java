@@ -124,7 +124,7 @@ public class FunctionSpace_DynamicTest {
       /* Begin Protected Region [[d8cc38d1-6b32-11e9-bd30-87fcf852dea7]] */
       final List<IAbstractTestPreconditionStep> resultPreconditions = new ArrayList<>();
 
-      for( final ITestPreconditionStep iterPrecondition : usedTestGlobalPreconditionGroup.selectTestGlobalPrecondition().selectTestPreconditions())
+      for( final ITestPreconditionStep iterPrecondition : usedTestGlobalPreconditionGroup.selectTestGlobalPrecondition().selectTestLocalPreconditions())
       {
       	if(usedTestGlobalPreconditionGroup.selectTestOverridePrecondition().containsKey(iterPrecondition.getResource()))
       	{

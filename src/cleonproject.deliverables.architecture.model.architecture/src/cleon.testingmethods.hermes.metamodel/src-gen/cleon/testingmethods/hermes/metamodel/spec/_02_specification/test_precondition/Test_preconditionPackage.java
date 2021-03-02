@@ -5,7 +5,7 @@ import ch.actifsource.core.Resource;
 public class Test_preconditionPackage {
   
   public static final Resource NamedTestPrecondition = new Resource("8e928c1d-516b-11e9-bb61-971a423d31e9");
-  public static final Resource TestPreconditionAwareList_testPreconditions = new Resource("9b47df59-516b-11e9-bb61-971a423d31e9");
+  public static final Resource TestPreconditionAwareList_testLocalPreconditions = new Resource("9b47df59-516b-11e9-bb61-971a423d31e9");
   public static final Resource TestGlobalPreconditions = new Resource("894f4f5a-669f-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestGlobalPreconditions_testPreconditionGroups = new Resource("038048d2-66a0-11e9-9ec9-5fbc84faaeb1");
   public static final Resource TestInfrastractureAware_testInfrastructure = new Resource("ab4d814c-6762-11e9-9ec9-5fbc84faaeb1");
@@ -39,4 +39,4 @@ public class Test_preconditionPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition,r2cH7/WROkyMSVxbGfjvA9/O6uQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition,6jyw/0hrI4CZxz0ngEUxdV/4BrA=] */

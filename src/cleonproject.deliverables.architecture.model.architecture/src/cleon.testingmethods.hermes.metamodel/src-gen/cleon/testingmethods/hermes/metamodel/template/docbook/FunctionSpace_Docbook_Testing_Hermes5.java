@@ -488,8 +488,8 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     public java.lang.Integer Position(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep testPreconditionStep) {
       /* Begin Protected Region [[1559bb44-7b34-11eb-ae9b-d7162fb23e98]] */
       Integer position = 1;
-      final var testGlobalPreconditions = TestPreconditionAwareList.selectToMeTestPreconditions(testPreconditionStep);
-      for( final var iterStep : testGlobalPreconditions.selectTestPreconditions())
+      final var testGlobalPreconditions = TestPreconditionAwareList.selectToMeTestLocalPreconditions(testPreconditionStep);
+      for( final var iterStep : testGlobalPreconditions.selectTestLocalPreconditions())
       {
       	if( iterStep.equals(testPreconditionStep))
       	{

@@ -23,6 +23,15 @@ public class FunctionSpace_Test_Input_Connection {
     @IDynamicResourceExtension.MethodId("0ee214a0-718f-11e9-98e0-2719d32d2629")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("83d78af3-7b60-11eb-9b7e-aff5566de9d0")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration GetComponent();
+
+    @IDynamicResourceExtension.MethodId("75e6c9d8-7b63-11eb-b8e5-2d821e359a02")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetComponents();
+
+    @IDynamicResourceExtension.MethodId("8e96ac86-7b63-11eb-b8e5-2d821e359a02")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetComponentDistinct();
+
   }
   
   public static interface ITestInputConnectionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -45,4 +54,4 @@ public class FunctionSpace_Test_Input_Connection {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,/E+NfmU6wpMTE0sULtFwlcOALls=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,012ce424-6d6e-11e9-b84d-d319514e887f,A4ZPnrG6YKqSzuNglbHwX8yS9jQ=] */

@@ -467,6 +467,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("b3f3530a-84d5-11ea-ade9-0f308d716192")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllAbstractSiteHosts();
 
+    @IDynamicResourceExtension.MethodId("7b9663a7-7c0b-11eb-838e-5dc8f4bc1072")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllHosts();
+
     @IDynamicResourceExtension.MethodId("7e2abbba-b4a3-11ea-b938-599963fc0a84")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> AllAbstractSites();
 
@@ -764,4 +767,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,riwl6s6WJw+YDVfjIin4VddKrlw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,CD/isMndEiHG7PHZ3bMvhNlnwdE=] */

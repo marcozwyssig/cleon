@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="3079b7ba-7cda-11eb-8da4-61a512a179fd">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="3a228f2e-7cda-11eb-8da4-61a512a179fd" type="resource" guid="3a2219fb-7cda-11eb-8da4-61a512a179fd" />
+    <resource statement-guid="47ce0228-7cda-11eb-8da4-61a512a179fd" type="resource" guid="47cddb15-7cda-11eb-8da4-61a512a179fd" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3079decc-7cda-11eb-8da4-61a512a179fd" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="307ac92e-7cda-11eb-8da4-61a512a179fd" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="3a228f2e-7cda-11eb-8da4-61a512a179fd">
+      <resource guid="3a2219fb-7cda-11eb-8da4-61a512a179fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3a22410d-7cda-11eb-8da4-61a512a179fd" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3ff7a189-7cda-11eb-8da4-61a512a179fd" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3b2fb943-7cda-11eb-8da4-61a512a179fd" type="literal">oid</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="3a23c6b0-7cda-11eb-8da4-61a512a179fd" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="47ce0228-7cda-11eb-8da4-61a512a179fd">
+      <resource guid="47cddb15-7cda-11eb-8da4-61a512a179fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="47ce0227-7cda-11eb-8da4-61a512a179fd" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4a32cd3c-7cda-11eb-8da4-61a512a179fd" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="484f672b-7cda-11eb-8da4-61a512a179fd" type="literal">usechannel</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="47cec579-7cda-11eb-8da4-61a512a179fd" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="307ac92d-7cda-11eb-8da4-61a512a179fd" type="literal">SnmpCustomAdvancedChannel</object>
+  </predicate>
+</resource>
+

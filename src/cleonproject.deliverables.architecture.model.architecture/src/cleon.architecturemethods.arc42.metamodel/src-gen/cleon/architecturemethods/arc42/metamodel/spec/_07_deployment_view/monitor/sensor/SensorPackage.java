@@ -142,7 +142,6 @@ public class SensorPackage {
   public static final Resource snmpciscoucssystemhealth = new Resource("db4a0dbc-c1eb-11ea-820f-9931558a898c");
   public static final Resource snmpcpu = new Resource("db4b9462-c1eb-11ea-820f-9931558a898c");
   public static final Resource snmpcustom = new Resource("db4b9468-c1eb-11ea-820f-9931558a898c");
-  public static final Resource snmpcustomadvanced = new Resource("db4b946e-c1eb-11ea-820f-9931558a898c");
   public static final Resource snmpcustomstring = new Resource("db4b9474-c1eb-11ea-820f-9931558a898c");
   public static final Resource snmpcustomlookup = new Resource("db4b947a-c1eb-11ea-820f-9931558a898c");
   public static final Resource snmpcustomtable = new Resource("db4b9480-c1eb-11ea-820f-9931558a898c");
@@ -314,4 +313,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,vyBVvUV43WDhTCrhHMF7OJ1aPx4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,R/P8oR5gELO/zFpBi9hqmJ4sHuM=] */

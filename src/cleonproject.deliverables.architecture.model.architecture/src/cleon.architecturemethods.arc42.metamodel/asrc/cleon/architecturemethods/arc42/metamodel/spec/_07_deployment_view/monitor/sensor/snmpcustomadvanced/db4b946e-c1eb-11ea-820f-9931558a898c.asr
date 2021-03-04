@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="db4b946e-c1eb-11ea-820f-9931558a898c">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="546c9959-7cda-11eb-8da4-61a512a179fd" type="resource" guid="546c2425-7cda-11eb-8da4-61a512a179fd" />
+  </owns>
   <owns predicate="ec1d8fd1-335f-11e8-a9fe-87ba35d8f5c4">
     <resource statement-guid="f74d0fad-f37f-11ea-9268-b5c52a12d7f9" type="resource" guid="f74c9a79-f37f-11ea-9268-b5c52a12d7f9" />
   </owns>
@@ -7,7 +10,28 @@
     <object statement-guid="db4b9470-c1eb-11ea-820f-9931558a898c" type="resource" guid="33be3a6e-cfe0-11ea-99e7-03141914df18" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="c2366448-cfeb-11ea-99e7-03141914df18" type="resource" guid="fc69eb52-c1e6-11ea-820f-9931558a898c" />
+    <object statement-guid="c2366448-cfeb-11ea-99e7-03141914df18" type="resource" guid="23f80945-f3fb-11ea-ade2-eb32c9704a85" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="546c9959-7cda-11eb-8da4-61a512a179fd">
+      <resource guid="546c2425-7cda-11eb-8da4-61a512a179fd">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="546c4b37-7cda-11eb-8da4-61a512a179fd" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="546c7248-7cda-11eb-8da4-61a512a179fd" type="literal">snmpCustomAdvancedChannels</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="546cc06a-7cda-11eb-8da4-61a512a179fd" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="546ce77b-7cda-11eb-8da4-61a512a179fd" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="546d359c-7cda-11eb-8da4-61a512a179fd" type="resource" guid="3079b7ba-7cda-11eb-8da4-61a512a179fd" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="db4b9471-c1eb-11ea-820f-9931558a898c" type="literal">snmpcustomadvanced</object>

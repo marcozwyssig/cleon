@@ -58,6 +58,15 @@ public class Application extends DynamicResource implements IApplication {
   }
 
   @Override
+  public java.lang.Boolean selectIsVirtual() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isVirtual);
+  }
+    
+  public void setIsVirtual(java.lang.Boolean isVirtual) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isVirtual, isVirtual);
+  }
+
+  @Override
   public java.lang.String selectOverrideOwner() {
     return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner);
   }
@@ -114,6 +123,7 @@ public class Application extends DynamicResource implements IApplication {
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_alias, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isTemporary, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_isVirtual, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.AbstractHost_overrideOwner, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.TopologyPackage.SkipMonitoringAware_skipMonitoringGeneration, visitor);
     // relations
@@ -122,4 +132,4 @@ public class Application extends DynamicResource implements IApplication {
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3dabaeab-1df0-11eb-9bc6-673ab35ba343,pJQYIbcW9H4rb5Y0Vo4WaOFLT5c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,3dabaeab-1df0-11eb-9bc6-673ab35ba343,qdmo//DcPB3NypQdfvSoWA6e8Iw=] */

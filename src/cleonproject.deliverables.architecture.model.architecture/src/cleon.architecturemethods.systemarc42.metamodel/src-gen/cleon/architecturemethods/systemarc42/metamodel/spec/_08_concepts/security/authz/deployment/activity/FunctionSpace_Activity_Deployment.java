@@ -55,7 +55,7 @@ public class FunctionSpace_Activity_Deployment {
     public <T extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission> List<T> OnlyActiveOrDefaultTrue();
 
     @IDynamicResourceExtension.MethodId("05d1f501-bff1-11e9-80a1-d5ff22ac3c31")
-    public java.lang.String Description(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup netDomainGroup);
+    public java.lang.String Description(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySiteGroup activitySiteGroup);
 
     @IDynamicResourceExtension.MethodId("295e7d8e-bff2-11e9-80a1-d5ff22ac3c31")
     public java.lang.Boolean HasAccess(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent role);
@@ -320,6 +320,40 @@ public class FunctionSpace_Activity_Deployment {
 
   }
 
+  public static interface IActivitySystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f98f93cf-864a-11eb-9869-4317e18e6c88")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForPermission> AllAuthZBuildingBlockForPermission();
+
+    @IDynamicResourceExtension.MethodId("2df608bd-864b-11eb-9869-4317e18e6c88")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSharePermission> AllAuthZBuildingBlockShareForPermission();
+
+    @IDynamicResourceExtension.MethodId("4bc40a7a-864b-11eb-9869-4317e18e6c88")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllAbstractAuthZBuildingBlockForPermission();
+
+    @IDynamicResourceExtension.MethodId("5f23c1fe-864b-11eb-9869-4317e18e6c88")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllAbstractAuthZBuildingBlockForPermissionSort();
+
+  }
+  
+  public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ActivitySystemConfigurationFunctionsImpl implements IActivitySystemConfigurationFunctionsImpl {
+
+    public static final IActivitySystemConfigurationFunctionsImpl INSTANCE = new ActivitySystemConfigurationFunctionsImpl();
+
+    private ActivitySystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class ActivitySystemConfigurationFunctions {
+
+    private ActivitySystemConfigurationFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,dK24StiXwdnzveptOBXVr5eEY/0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,atlbSiYq56RcCQFU8dcUKB13ykY=] */

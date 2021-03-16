@@ -12,6 +12,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.securit
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.FunctionSpace_Activity_Buildingblock.IAbstractAuthZBuildingBlockPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 
@@ -47,25 +48,28 @@ public class ad_aE_Management__T_yaml {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivityPermission WriteActivity(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost abstractHost) {
       /* Begin Protected Region [[82ca75a5-b075-11ea-b791-9b401fd02359]] */
-      final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions abstractHostFunctions = abstractHost
+      final var abstractHostFunctions = abstractHost
       		.extension(
       				cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions.class);
-      
-      ISystemConfigurationFunctions configurationFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);
-      ISystemConfiguration parentSystemConfiguration = configurationFunctions.DependsToSystemConfiguration();
+
+      final var configurationFunctions = abstractHost.selectInstanceOf().extension(ISystemConfigurationFunctions.class);
+      final var parentSystemConfiguration = configurationFunctions.DependsToSystemConfiguration();
       if( parentSystemConfiguration == null ) {
-    	  return null;
+      	return null;
       }
-      
-      final List<IActivitySystemConfiguration> activitySystemConfigurations = ActivitySystemConfiguration
+
+      final var activitySystemConfigurations = ActivitySystemConfiguration
       		.selectToMeActivityForSystemConfiguration(parentSystemConfiguration);
       for (final IActivitySystemConfiguration activitySystemConfiguration : activitySystemConfigurations) {
-      	final IAbstractGroupFunctions abstractGroupFunctions = activitySystemConfiguration
+      	final var abstractGroupFunctions = activitySystemConfiguration
       			.extension(IAbstractGroupFunctions.class);
-      	final IAbstractSite site = abstractGroupFunctions.GetSite();
+      	final var site = abstractGroupFunctions.GetSite();
       	if (site.equals(abstractHostFunctions.TopSite())) {
       		return activitySystemConfiguration.selectActivitiesForPermissions().values().stream()
-      				.filter(x -> x.selectActivityTemplate().selectPermission().selectName().equals("write"))
+      				.filter(x -> {
+      					final var activityPermissionFunctions = x.selectActivityTemplate().extension(IAbstractAuthZBuildingBlockPermissionFunctions.class);
+      					return activityPermissionFunctions.Permission().selectName().equals("write");
+      				})
       				.findFirst().orElse(null);
       	}
       }

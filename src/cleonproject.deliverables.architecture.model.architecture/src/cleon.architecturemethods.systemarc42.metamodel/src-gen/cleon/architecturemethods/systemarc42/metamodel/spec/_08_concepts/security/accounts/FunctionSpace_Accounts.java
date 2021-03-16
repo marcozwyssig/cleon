@@ -44,7 +44,7 @@ public class FunctionSpace_Accounts {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> OnlyEnabledServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("e69cc8c3-6faa-11eb-a1e4-f1bdb2897690")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForPermission> AllAuthZBuildingBlockForPermissions();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission> AllAuthZBuildingBlockForPermissions();
 
     @IDynamicResourceExtension.MethodId("6e5cb357-6fb3-11eb-a1e4-f1bdb2897690")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetAllowedSiteForServiceAccount();
@@ -243,4 +243,4 @@ public class FunctionSpace_Accounts {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,riXO56FcDXAwnlmJTWdkvr5QNfM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,96deff1f-2830-11eb-a351-0f02534982d8,LKPQ9NcvpiWkuo3oel41cuhNSM4=] */

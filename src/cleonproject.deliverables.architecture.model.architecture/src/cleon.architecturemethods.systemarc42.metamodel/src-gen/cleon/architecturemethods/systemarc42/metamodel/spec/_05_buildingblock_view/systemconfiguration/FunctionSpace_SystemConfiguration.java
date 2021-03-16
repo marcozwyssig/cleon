@@ -601,7 +601,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IBackupStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9ec6e000-0ab6-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -611,21 +611,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IBackupStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class StorageSystemConfigurationFunctionsImpl implements IStorageSystemConfigurationFunctionsImpl {
+  public static class BackupStorageSystemConfigurationFunctionsImpl implements IBackupStorageSystemConfigurationFunctionsImpl {
 
-    public static final IStorageSystemConfigurationFunctionsImpl INSTANCE = new StorageSystemConfigurationFunctionsImpl();
+    public static final IBackupStorageSystemConfigurationFunctionsImpl INSTANCE = new BackupStorageSystemConfigurationFunctionsImpl();
 
-    private StorageSystemConfigurationFunctionsImpl() {}
+    private BackupStorageSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class StorageSystemConfigurationFunctions {
+  public static class BackupStorageSystemConfigurationFunctions {
 
-    private StorageSystemConfigurationFunctions() {}
+    private BackupStorageSystemConfigurationFunctions() {}
 
   }
 
@@ -967,4 +967,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,gvuTtNDzuWEbuq8U4aDx7Rhgb4c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,fYAsmAyMs2VKJhCVf5eZnDfedO4=] */

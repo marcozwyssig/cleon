@@ -25,9 +25,8 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_PulseSecureApplianceSystemConfiguration = new Resource("78a8ffef-0a7a-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_RSASystemConfiguration = new Resource("216237e7-0a7f-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_EndpointProtectionOrchestrationSystemConfiguration = new Resource("3dd00cc6-0a7f-11e9-a59d-d7a0c53e291c");
-  public static final Resource DfsSystemConfiguration = new Resource("2ed42aff-0a87-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_DfsSystemConfiguration = new Resource("402db23a-0a87-11e9-a59d-d7a0c53e291c");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_StorageSystemConfiguration = new Resource("0e1f8f22-0a88-11e9-a59d-d7a0c53e291c");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_BackupStorageSystemConfiguration = new Resource("0e1f8f22-0a88-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PrtgSystemConfiguration = new Resource("606be97a-0a8a-11e9-a59d-d7a0c53e291c");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PrtgProbeSystemConfiguration = new Resource("1d7e185f-0c2f-11e9-83ba-4d57b06560a2");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ConfigurationManagementSystemConfiguration = new Resource("ae187c3a-0c39-11e9-83ba-4d57b06560a2");
@@ -66,4 +65,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,mO0xYjM+lC1t9kDp39DQSi5dZCo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,6kMLNrgtIc1tuP474iblHrlyslM=] */

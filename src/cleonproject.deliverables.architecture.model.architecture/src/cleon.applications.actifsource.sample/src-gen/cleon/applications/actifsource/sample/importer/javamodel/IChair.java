@@ -8,4 +8,4 @@ public interface IChair extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb9da58f-26bc-11e8-a805-991f3ff583b7,+6vtVRAR/s+bi5I1aWInJx+OqB0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fb9da58f-26bc-11e8-a805-991f3ff583b7,Yd3zSryM8PoyTuPpvx8BJwlDSoE=] */

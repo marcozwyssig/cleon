@@ -14,4 +14,4 @@ public interface IPerson extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd7a7214-221f-11e8-8749-cb7f4d6924d3,wnz5tsCzSOZSCgUosEtdT8ZuRzI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,dd7a7214-221f-11e8-8749-cb7f4d6924d3,V7WGyDiMQf7d3v9Nj6HcBQBizVw=] */

@@ -8,6 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.javamodel.Snmpcustomadvanced;
 
 /* End Protected Region   [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
 
@@ -358,6 +359,78 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IsnmpcustomadvancedFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f4fb4a2c-8af2-11eb-82c2-f3f196623a8b")
+    public java.lang.String RenderSpecificSensor();
+
+  }
+  
+  public static interface IsnmpcustomadvancedFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class snmpcustomadvancedFunctionsImpl implements IsnmpcustomadvancedFunctionsImpl {
+
+    public static final IsnmpcustomadvancedFunctionsImpl INSTANCE = new snmpcustomadvancedFunctionsImpl();
+
+    private snmpcustomadvancedFunctionsImpl() {}
+
+  }
+  
+  public static class snmpcustomadvancedFunctions {
+
+    private snmpcustomadvancedFunctions() {}
+
+  }
+
+  public static interface ISnmpCustomAdvancedChannelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("44bd1e5b-8af4-11eb-82c2-f3f196623a8b")
+    public java.lang.Integer Position();
+
+  }
+  
+  public static interface ISnmpCustomAdvancedChannelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("44bd1e5b-8af4-11eb-82c2-f3f196623a8b")
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel);
+
+  }
+  
+  public static class SnmpCustomAdvancedChannelFunctionsImpl implements ISnmpCustomAdvancedChannelFunctionsImpl {
+
+    public static final ISnmpCustomAdvancedChannelFunctionsImpl INSTANCE = new SnmpCustomAdvancedChannelFunctionsImpl();
+
+    private SnmpCustomAdvancedChannelFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel) {
+      /* Begin Protected Region [[44bd1e5b-8af4-11eb-82c2-f3f196623a8b]] */
+    	var functions = snmpCustomAdvancedChannel.extension(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.FunctionSpace_SnmpCustomAdvanced.ISnmpCustomAdvancedChannelFunctions.class); 
+    	int i = 0;
+    	for( var channelIter : functions.AllChannels()) {
+    		++i;
+    		if( channelIter.equals(snmpCustomAdvancedChannel)) {
+    			return i;
+    		}
+    	}
+    	return -1;
+      /* End Protected Region   [[44bd1e5b-8af4-11eb-82c2-f3f196623a8b]] */
+    }
+
+  }
+  
+  public static class SnmpCustomAdvancedChannelFunctions {
+
+    private SnmpCustomAdvancedChannelFunctions() {}
+
+    public static java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.javamodel.ISnmpCustomAdvancedChannel snmpCustomAdvancedChannel) {
+      return DynamicResourceUtil.invoke(ISnmpCustomAdvancedChannelFunctionsImpl.class, SnmpCustomAdvancedChannelFunctionsImpl.INSTANCE, snmpCustomAdvancedChannel).Position(snmpCustomAdvancedChannel);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,gwVp8zgN3NX+Yz+6JrG+rQFGyVo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,xkbuY9dPURY3EDrZ6+hIxmwqYKA=] */

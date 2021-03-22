@@ -551,7 +551,4 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-      /* Begin Protected Region [[30515472-7b6d-11eb-b8e5-2d821e359a02]] */
-      // XXX implement template function here   
-      /* End Protected Region   [[30515472-7b6d-11eb-b8e5-2d821e359a02]] */
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,uVOHOB1rbDrvQ71/mCUjEFOOMKc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,6FvZCKIjabSulHrdvm3Hn1pMLWY=] */

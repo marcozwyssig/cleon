@@ -101,10 +101,16 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> AccessAsSource();
 
     @IDynamicResourceExtension.MethodId("3b4a84ba-f738-11ea-b8c1-41c5952fbbbb")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServices();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllAbstractServices();
 
     @IDynamicResourceExtension.MethodId("93726bb6-f738-11ea-b8c1-41c5952fbbbb")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServicesDistinct();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllAbstractServicesDistinct();
+
+    @IDynamicResourceExtension.MethodId("5d6a255f-8bde-11eb-a832-91f5636963f2")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService> AllServices();
+
+    @IDynamicResourceExtension.MethodId("72386078-8bde-11eb-a832-91f5636963f2")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IService> AllServicesDistinct();
 
   }
   
@@ -854,4 +860,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,OIT/M3mpcYespJqi1OV6DHGYq10=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,jhmQWR/f8Y9LFg/loNh8ZAUeaUM=] */

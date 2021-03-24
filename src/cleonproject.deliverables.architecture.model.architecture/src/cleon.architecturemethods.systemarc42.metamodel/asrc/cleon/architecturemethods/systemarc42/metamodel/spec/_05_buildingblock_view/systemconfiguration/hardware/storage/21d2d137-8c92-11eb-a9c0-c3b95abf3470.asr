@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="21d2d137-8c92-11eb-a9c0-c3b95abf3470">
+  <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <resource statement-guid="25c5b63a-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="25c58f27-8c92-11eb-a9c0-c3b95abf3470" />
+    <resource statement-guid="274eeda6-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="274ec693-8c92-11eb-a9c0-c3b95abf3470" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="21d2f849-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="21d51b2a-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="5aefee5c-bcfe-11db-8f71-f36774f9949e" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="2387857d-8c92-11eb-a9c0-c3b95abf3470" type="literal">Protocol</object>
+  </predicate>
+  <predicate guid="049ec97d-bce1-11db-8f71-f36774f9949e">
+    <object statement-guid="25c5b63a-8c92-11eb-a9c0-c3b95abf3470">
+      <resource guid="25c58f27-8c92-11eb-a9c0-c3b95abf3470">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="25c58f29-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="21d2d137-8c92-11eb-a9c0-c3b95abf3470" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="2678649a-8c92-11eb-a9c0-c3b95abf3470" type="literal">Cifs</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="274eeda6-8c92-11eb-a9c0-c3b95abf3470">
+      <resource guid="274ec693-8c92-11eb-a9c0-c3b95abf3470">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="274ec695-8c92-11eb-a9c0-c3b95abf3470" type="resource" guid="21d2d137-8c92-11eb-a9c0-c3b95abf3470" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="27fedd6c-8c92-11eb-a9c0-c3b95abf3470" type="literal">Nfs</object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+</resource>
+

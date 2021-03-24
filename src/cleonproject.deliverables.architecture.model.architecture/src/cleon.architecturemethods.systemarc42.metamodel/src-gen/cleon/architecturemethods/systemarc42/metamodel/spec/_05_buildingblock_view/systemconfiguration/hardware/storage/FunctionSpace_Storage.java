@@ -57,6 +57,65 @@ public class FunctionSpace_Storage {
 
   }
 
+  public static interface IStorageSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("efb8c058-8c8a-11eb-a9c0-c3b95abf3470")
+    public java.lang.Double Brutto_GB();
+
+    @IDynamicResourceExtension.MethodId("fb9edce6-8c8a-11eb-a9c0-c3b95abf3470")
+    public java.lang.Double Netto_GB();
+
+  }
+  
+  public static interface IStorageSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("efb8c058-8c8a-11eb-a9c0-c3b95abf3470")
+    public java.lang.Double Brutto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration);
+
+    @IDynamicResourceExtension.MethodId("fb9edce6-8c8a-11eb-a9c0-c3b95abf3470")
+    public java.lang.Double Netto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration);
+
+  }
+  
+  public static class StorageSystemConfigurationFunctionsImpl implements IStorageSystemConfigurationFunctionsImpl {
+
+    public static final IStorageSystemConfigurationFunctionsImpl INSTANCE = new StorageSystemConfigurationFunctionsImpl();
+
+    private StorageSystemConfigurationFunctionsImpl() {}
+
+    @Override
+    public java.lang.Double Brutto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
+      /* Begin Protected Region [[efb8c058-8c8a-11eb-a9c0-c3b95abf3470]] */
+    	return storageSystemConfiguration.selectShares().stream().mapToDouble( x -> x.selectCapacity().selectBrutto_aE__aA_GB_aC_()).sum();  
+      /* End Protected Region   [[efb8c058-8c8a-11eb-a9c0-c3b95abf3470]] */
+    }
+
+    @Override
+    public java.lang.Double Netto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
+      /* Begin Protected Region [[fb9edce6-8c8a-11eb-a9c0-c3b95abf3470]] */
+    	return storageSystemConfiguration.selectShares().stream().mapToDouble( x -> {
+    			var capacity = x.selectCapacity().extension(ICapacityFunctions.class);
+    			return capacity.Netto();
+    		}).sum();
+      /* End Protected Region   [[fb9edce6-8c8a-11eb-a9c0-c3b95abf3470]] */
+    }
+
+  }
+  
+  public static class StorageSystemConfigurationFunctions {
+
+    private StorageSystemConfigurationFunctions() {}
+
+    public static java.lang.Double Brutto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
+      return DynamicResourceUtil.invoke(IStorageSystemConfigurationFunctionsImpl.class, StorageSystemConfigurationFunctionsImpl.INSTANCE, storageSystemConfiguration).Brutto_GB(storageSystemConfiguration);
+    }
+
+    public static java.lang.Double Netto_GB(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IStorageSystemConfiguration storageSystemConfiguration) {
+      return DynamicResourceUtil.invoke(IStorageSystemConfigurationFunctionsImpl.class, StorageSystemConfigurationFunctionsImpl.INSTANCE, storageSystemConfiguration).Netto_GB(storageSystemConfiguration);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,0e3SWdyHwq9vMJtFGPWCwumeB0A=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,af925f8e-8c80-11eb-a9c0-c3b95abf3470,c6mGUEmWvp08G37hAoTgHTiDuYE=] */

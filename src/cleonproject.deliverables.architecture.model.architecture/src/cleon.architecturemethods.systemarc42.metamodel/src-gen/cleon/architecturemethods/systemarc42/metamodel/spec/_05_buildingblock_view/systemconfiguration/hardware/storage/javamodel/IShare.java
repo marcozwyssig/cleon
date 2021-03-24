@@ -10,6 +10,8 @@ public interface IShare extends ch.actifsource.core.javamodel.INamedResource, cl
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.ICapacity selectCapacity();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IProtocol selectProtocol();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cd115808-8630-11eb-9869-4317e18e6c88,MwKGs7v54GWA15/QstVzMcxTQt0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,cd115808-8630-11eb-9869-4317e18e6c88,ePfuDXicuiON/T3R6tgAn/+G3cI=] */

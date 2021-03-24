@@ -14,6 +14,11 @@ public class StoragePackage {
   public static final Resource Capacity_deduplication_aE_rate = new Resource("966e65e6-8c7d-11eb-a9c0-c3b95abf3470");
   public static final Resource Share_capacity = new Resource("c3e61b7a-8c7d-11eb-a9c0-c3b95abf3470");
   public static final Resource FunctionSpace_aE_Storage_Capacity = new Resource("b149acdc-8c80-11eb-a9c0-c3b95abf3470");
+  public static final Resource FunctionSpace_aE_Storage_StorageSystemConfiguration = new Resource("e78412c9-8c8a-11eb-a9c0-c3b95abf3470");
+  public static final Resource Share_protocol = new Resource("11792d91-8c92-11eb-a9c0-c3b95abf3470");
+  public static final Resource Protocol = new Resource("21d2d137-8c92-11eb-a9c0-c3b95abf3470");
+  public static final Resource Protocol_Cifs = new Resource("25c58f27-8c92-11eb-a9c0-c3b95abf3470");
+  public static final Resource Protocol_Nfs = new Resource("274ec693-8c92-11eb-a9c0-c3b95abf3470");
   
   /* Begin Protected Region [[user]] */
   
@@ -34,4 +39,4 @@ public class StoragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,RHDI7xsGXtaQ6c+RxMjln9aM2lU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,U/uwgMJ3QIarDOrXMWddeJVng3k=] */

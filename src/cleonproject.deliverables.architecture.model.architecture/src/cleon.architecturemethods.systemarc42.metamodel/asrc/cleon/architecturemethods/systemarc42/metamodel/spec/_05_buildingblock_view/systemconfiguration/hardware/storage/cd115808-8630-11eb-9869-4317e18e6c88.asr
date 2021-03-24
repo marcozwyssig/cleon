@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="cd115808-8630-11eb-9869-4317e18e6c88">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="c3e690ae-8c7d-11eb-a9c0-c3b95abf3470" type="resource" guid="c3e61b7a-8c7d-11eb-a9c0-c3b95abf3470" />
+  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cd11580a-8630-11eb-9869-4317e18e6c88" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
   </predicate>
   <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cd11f44c-8630-11eb-9869-4317e18e6c88" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
     <object statement-guid="df2c0c44-8630-11eb-9869-4317e18e6c88" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c3e690ae-8c7d-11eb-a9c0-c3b95abf3470">
+      <resource guid="c3e61b7a-8c7d-11eb-a9c0-c3b95abf3470">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3e6428c-8c7d-11eb-a9c0-c3b95abf3470" type="resource" guid="bdde7d1f-c9d5-11e5-9831-156e07955359" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="c3e6428d-8c7d-11eb-a9c0-c3b95abf3470" type="literal">capacity</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="c3e7c933-8c7d-11eb-a9c0-c3b95abf3470" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="c3e7c935-8c7d-11eb-a9c0-c3b95abf3470" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="c3e81756-8c7d-11eb-a9c0-c3b95abf3470" type="resource" guid="7e4b59e1-8c7d-11eb-a9c0-c3b95abf3470" />
+        </predicate>
+      </resource>
+    </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="cd11cd3b-8630-11eb-9869-4317e18e6c88" type="literal">Share</object>

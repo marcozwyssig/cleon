@@ -577,6 +577,31 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestSpecificationsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("59c09e37-8d8e-11eb-b45a-ad6318208ab5")
+    public java.lang.String RenderContentTestSpecification(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel testLevel);
+
+  }
+  
+  public static interface ITestSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestSpecificationsFunctionsImpl implements ITestSpecificationsFunctionsImpl {
+
+    public static final ITestSpecificationsFunctionsImpl INSTANCE = new TestSpecificationsFunctionsImpl();
+
+    private TestSpecificationsFunctionsImpl() {}
+
+  }
+  
+  public static class TestSpecificationsFunctions {
+
+    private TestSpecificationsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,cF6uWSfJS04IctI/9+2rJfGQUsw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,aZnlyUUN/AwxOpNa1Ia9oTZpJ9U=] */

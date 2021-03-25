@@ -8,8 +8,8 @@ public interface IDynamicTestSpecification extends cleon.testingmethods.hermes.m
   
   // relations
   
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels> selectDynamicTestLevels();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel> selectDynamicTestLevel();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04d3d8a4-1cf0-11e6-aaba-9db7fdc64d7e,fIMCPjODzgHOODVVi02Ndqb1lcg=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04d3d8a4-1cf0-11e6-aaba-9db7fdc64d7e,+PhlKhEQ+835ftxx/UP4Cj4BiFU=] */

@@ -59,11 +59,11 @@ public class SolutionBuildingBlock extends DynamicResource implements ISolutionB
 
   @Override
   public java.lang.String selectShortName() {
-    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName);
+    return _getSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName);
   }
     
   public void setShortName(java.lang.String shortName) {
-     _setSingleAttribute(cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, shortName);
+     _setSingleAttribute(cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, shortName);
   }
 
   @Override
@@ -174,7 +174,7 @@ public class SolutionBuildingBlock extends DynamicResource implements ISolutionB
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.RequiredShortName_shortName, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.versions.VersionsPackage.Version_version, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.javamodel.ICpuArchitecture.class, cleon.architecturemethods.togaf.metamodel.spec.solution._05_solutionbuildingblock_view.manufacturer.solutionbuildingblock.SolutionbuildingblockPackage.SolutionBuildingBlock_cpu, visitor);
@@ -204,4 +204,4 @@ public class SolutionBuildingBlock extends DynamicResource implements ISolutionB
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,2pRZZez+35FMwv+obW8UX8jfBf8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,280ce792-2d70-11e6-959f-d1cef44ff5fd,ipax9QCBrRYbIpVd/fhiy1DOhyI=] */

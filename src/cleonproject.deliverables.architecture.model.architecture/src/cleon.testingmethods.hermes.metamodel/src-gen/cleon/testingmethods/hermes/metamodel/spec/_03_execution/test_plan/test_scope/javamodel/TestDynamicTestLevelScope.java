@@ -31,11 +31,11 @@ public class TestDynamicTestLevelScope extends DynamicResource implements ITestD
   // relations
   
   @Override
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels selectDynamicTestLevels() {
-    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels);
+  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel selectDynamicTestLevels() {
+    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels);
   }
 
-  public TestDynamicTestLevelScope setDynamicTestLevels(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels dynamicTestLevels) {
+  public TestDynamicTestLevelScope setDynamicTestLevels(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel dynamicTestLevels) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels, dynamicTestLevels);
     return this;
   }
@@ -74,14 +74,14 @@ public class TestDynamicTestLevelScope extends DynamicResource implements ITestD
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels, visitor);
     _acceptMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicGroup.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_testDynamicGroup, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicTestLevelScope> selectToMeDynamicTestLevels(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevels object) {
+  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicTestLevelScope> selectToMeDynamicTestLevels(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicTestLevelScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestDynamicTestLevelScope_dynamicTestLevels, object.getResource());
   }
   
@@ -90,4 +90,4 @@ public class TestDynamicTestLevelScope extends DynamicResource implements ITestD
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b35d2498-918e-11e9-85e6-a377d9035ee3,aJHri6akDH6fesY8kHvCre/Bek0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b35d2498-918e-11e9-85e6-a377d9035ee3,GsET/nsbpQQxL+Qvfk3RWgXa5jM=] */

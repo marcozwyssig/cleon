@@ -2,7 +2,7 @@ package cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specif
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface IDynamicTestLevels extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, ch.actifsource.core.javamodel.IDecorator {
+public interface IDynamicTestLevel extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter, ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("6d73f012-5157-11e9-bb61-971a423d31e9");
   
@@ -14,4 +14,4 @@ public interface IDynamicTestLevels extends cleon.common.doc.metamodel.spec.chap
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,gShmy9EYpqQ8hLfks+SfQyrdwpQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,byxqVRXFV2U0QdVJr9QYIb99bR4=] */

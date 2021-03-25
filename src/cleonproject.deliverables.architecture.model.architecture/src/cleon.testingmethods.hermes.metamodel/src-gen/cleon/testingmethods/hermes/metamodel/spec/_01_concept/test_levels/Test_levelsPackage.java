@@ -8,11 +8,11 @@ public class Test_levelsPackage {
   public static final Resource TestLevelUsage = new Resource("a0ed7d6a-264b-11e6-ae54-e50d44645ae7");
   public static final Resource TestLevels_testLevels = new Resource("d3b1b44b-264b-11e6-ae54-e50d44645ae7");
   public static final Resource TestLevel = new Resource("4731eb51-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Unittest = new Resource("4deaf58d-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Unitintegrationtest = new Resource("52f20968-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Systemtest = new Resource("683686a6-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Systemintegrationstest = new Resource("6e5e74cd-5153-11e9-bb61-971a423d31e9");
-  public static final Resource TestLevel_Akzeptanztest = new Resource("752c65e2-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Unittest__F___N_UT__O_ = new Resource("4deaf58d-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Unitintegrationtest__F___N_UIT__O_ = new Resource("52f20968-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Systemtest__F___N_ST__O_ = new Resource("683686a6-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Systemintegrationstest__F___N_SIT__O_ = new Resource("6e5e74cd-5153-11e9-bb61-971a423d31e9");
+  public static final Resource TestLevel_Akzeptanztest__F___N_AT__O_ = new Resource("752c65e2-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevelUsage_testLevel = new Resource("d5f4b41f-5153-11e9-bb61-971a423d31e9");
   public static final Resource TestLevelGoals = new Resource("ece42cc0-5154-11e9-bb61-971a423d31e9");
   public static final Resource TestLevelUsage_testLevelGoals = new Resource("034a1fad-5155-11e9-bb61-971a423d31e9");
@@ -46,4 +46,4 @@ public class Test_levelsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._01_concept.test_levels,V3WvitH6nwkJrckW+2uJq8Xjg4A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._01_concept.test_levels,iMRR/3eFpKoPV3dbu1lLdLf8nRs=] */

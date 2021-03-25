@@ -8,4 +8,4 @@ public interface IClassA extends ch.actifsource.core.javamodel.INamedResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ea029c2-3486-11ea-8a90-f5372e2e0d45,+PeRqkthgcTBSsjUTuqwgUHxTFo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9ea029c2-3486-11ea-8a90-f5372e2e0d45,3/xErvtDBb9ow2FZT1Mq3E0UiT0=] */

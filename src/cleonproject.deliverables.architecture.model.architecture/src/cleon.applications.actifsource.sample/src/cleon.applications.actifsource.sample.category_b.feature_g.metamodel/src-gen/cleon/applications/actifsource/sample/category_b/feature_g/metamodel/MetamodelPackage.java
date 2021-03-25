@@ -23,4 +23,4 @@ public class MetamodelPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.sample.category_b.feature_g.metamodel,fyrkWgBLI+UZ1CU+h3YJPA/lbYY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.applications.actifsource.sample.category_b.feature_g.metamodel,yb+YxH6rFPCLMpwYUaLUoq7h1jM=] */

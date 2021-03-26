@@ -40,12 +40,12 @@ public class TestResult extends DynamicResource implements ITestResult {
   }
 
   @Override
-  public java.lang.String selectExpectedResult() {
-    return _getSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult);
+  public java.util.List<java.lang.String> selectExpectedResult() {
+    return _getListAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult);
   }
     
-  public void setExpectedResult(java.lang.String expectedResult) {
-     _setSingleAttribute(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, expectedResult);
+  public void setExpectedResult(java.util.List<java.lang.String> expectedResult) {
+     _setListAttribute(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, expectedResult);
   }
 
   @Override
@@ -74,11 +74,11 @@ public class TestResult extends DynamicResource implements ITestResult {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1378204-66a6-11e9-9ec9-5fbc84faaeb1,mwjM/LuW9e+guio7VbvAckAiSdk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,b1378204-66a6-11e9-9ec9-5fbc84faaeb1,9CE3K3f4L6yA43Oy7UcATUtp/iE=] */

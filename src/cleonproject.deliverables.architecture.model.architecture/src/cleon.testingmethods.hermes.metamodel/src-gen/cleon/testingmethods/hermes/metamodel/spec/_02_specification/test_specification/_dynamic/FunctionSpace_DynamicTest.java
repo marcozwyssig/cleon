@@ -46,28 +46,28 @@ public class FunctionSpace_DynamicTest {
 
   }
 
-  public static interface IQualityDynamicTestFunctions extends IDynamicResourceExtension {
+  public static interface INonFunctionalDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b7a66937-4f8d-11e9-ad5d-977b17aab907")
     public java.lang.String GetName();
 
   }
   
-  public static interface IQualityDynamicTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INonFunctionalDynamicTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class QualityDynamicTestFunctionsImpl implements IQualityDynamicTestFunctionsImpl {
+  public static class NonFunctionalDynamicTestFunctionsImpl implements INonFunctionalDynamicTestFunctionsImpl {
 
-    public static final IQualityDynamicTestFunctionsImpl INSTANCE = new QualityDynamicTestFunctionsImpl();
+    public static final INonFunctionalDynamicTestFunctionsImpl INSTANCE = new NonFunctionalDynamicTestFunctionsImpl();
 
-    private QualityDynamicTestFunctionsImpl() {}
+    private NonFunctionalDynamicTestFunctionsImpl() {}
 
   }
   
-  public static class QualityDynamicTestFunctions {
+  public static class NonFunctionalDynamicTestFunctions {
 
-    private QualityDynamicTestFunctions() {}
+    private NonFunctionalDynamicTestFunctions() {}
 
   }
 
@@ -296,4 +296,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,5KpIz2QoMMgCwfjaDV6Lnk3QuT4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,ybxkPGCKmj4hwXYyjfi9U/2dOsA=] */

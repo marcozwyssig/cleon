@@ -8,8 +8,8 @@ public interface IExpectedResultAware extends ch.actifsource.core.javamodel.IRes
   
   // attributes
   
-  public java.lang.String selectExpectedResult();
+  public java.util.List<java.lang.String> selectExpectedResult();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,180b732c-7b6c-11eb-b8e5-2d821e359a02,aaRPfAxTJcElkj28y9U3D5dcgKk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,180b732c-7b6c-11eb-b8e5-2d821e359a02,UjBw9zBhIaR3l3/o8YFtxPxefTc=] */

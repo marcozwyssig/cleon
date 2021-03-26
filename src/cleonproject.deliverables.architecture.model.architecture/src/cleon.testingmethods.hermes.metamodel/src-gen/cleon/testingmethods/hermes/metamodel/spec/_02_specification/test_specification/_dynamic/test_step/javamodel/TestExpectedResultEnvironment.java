@@ -31,12 +31,12 @@ public class TestExpectedResultEnvironment extends DynamicResource implements IT
   // attributes
   
   @Override
-  public java.lang.String selectExpectedResult() {
-    return _getSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult);
+  public java.util.List<java.lang.String> selectExpectedResult() {
+    return _getListAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult);
   }
     
-  public void setExpectedResult(java.lang.String expectedResult) {
-     _setSingleAttribute(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, expectedResult);
+  public void setExpectedResult(java.util.List<java.lang.String> expectedResult) {
+     _setListAttribute(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, expectedResult);
   }
 
   // relations
@@ -75,7 +75,7 @@ public class TestExpectedResultEnvironment extends DynamicResource implements IT
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, visitor);
+    _acceptListAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.ExpectedResultAware_expectedResult, visitor);
     // relations
     _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.Test_stepPackage.TestExpectedResultEnvironment_testEnvironment, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -88,4 +88,4 @@ public class TestExpectedResultEnvironment extends DynamicResource implements IT
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46efffd5-7b6c-11eb-b8e5-2d821e359a02,oAQiD8y/nbQrrUrGeiZEHWTYqho=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46efffd5-7b6c-11eb-b8e5-2d821e359a02,ZLB+rQoK2Uljz0QxFgdPkAaud2A=] */

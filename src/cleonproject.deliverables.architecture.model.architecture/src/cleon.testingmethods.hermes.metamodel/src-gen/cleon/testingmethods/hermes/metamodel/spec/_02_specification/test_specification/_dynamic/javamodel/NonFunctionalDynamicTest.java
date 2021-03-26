@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class QualityDynamicTest extends DynamicResource implements IQualityDynamicTest {
+public class NonFunctionalDynamicTest extends DynamicResource implements INonFunctionalDynamicTest {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQualityDynamicTest> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IQualityDynamicTest>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<INonFunctionalDynamicTest> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<INonFunctionalDynamicTest>() {
     
     @Override
-    public IQualityDynamicTest create() {
-      return new QualityDynamicTest();
+    public INonFunctionalDynamicTest create() {
+      return new NonFunctionalDynamicTest();
     }
     
     @Override
-    public IQualityDynamicTest create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new QualityDynamicTest(resourceRepository, resource);
+    public INonFunctionalDynamicTest create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new NonFunctionalDynamicTest(resourceRepository, resource);
     }
   
   };
 
-  public QualityDynamicTest() {
-    super(IQualityDynamicTest.TYPE_ID);
+  public NonFunctionalDynamicTest() {
+    super(INonFunctionalDynamicTest.TYPE_ID);
   }
   
-  public QualityDynamicTest(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, IQualityDynamicTest.TYPE_ID);
+  public NonFunctionalDynamicTest(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, INonFunctionalDynamicTest.TYPE_ID);
   }
 
   // attributes
@@ -91,7 +91,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public QualityDynamicTest setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public NonFunctionalDynamicTest setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -101,7 +101,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public QualityDynamicTest setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public NonFunctionalDynamicTest setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -111,7 +111,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters);
   }
 
-  public QualityDynamicTest setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
+  public NonFunctionalDynamicTest setNoChapters(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter noChapters) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoChapters_noChapters, noChapters);
     return this;
   }
@@ -121,7 +121,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs);
   }
 
-  public QualityDynamicTest setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
+  public NonFunctionalDynamicTest setNoParagraphs(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph noParagraphs) {
     _setSingle(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.NoParagraph_noParagraphs, noParagraphs);
     return this;
   }
@@ -131,7 +131,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public QualityDynamicTest setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public NonFunctionalDynamicTest setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
@@ -141,7 +141,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getSingle(cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference);
   }
 
-  public QualityDynamicTest setReference(cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference reference) {
+  public NonFunctionalDynamicTest setReference(cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference reference) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_reference, reference);
     return this;
   }
@@ -151,7 +151,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getMap(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.GlobalPreconditionsAware_testGlobalPrecondition);
   }
 
-  public QualityDynamicTest setTestGlobalPrecondition(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> testGlobalPrecondition) {
+  public NonFunctionalDynamicTest setTestGlobalPrecondition(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IUsedTestGlobalPreconditionGroup> testGlobalPrecondition) {
     _setMap(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.GlobalPreconditionsAware_testGlobalPrecondition, testGlobalPrecondition);
     return this;
   }
@@ -161,7 +161,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions);
   }
 
-  public QualityDynamicTest setTestLocalPreconditions(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> testLocalPreconditions) {
+  public NonFunctionalDynamicTest setTestLocalPreconditions(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep> testLocalPreconditions) {
     _setList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.Test_preconditionPackage.TestPreconditionAwareList_testLocalPreconditions, testLocalPreconditions);
     return this;
   }
@@ -171,7 +171,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_testSteps);
   }
 
-  public QualityDynamicTest setTestSteps(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep> testSteps) {
+  public NonFunctionalDynamicTest setTestSteps(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep> testSteps) {
     _setList(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_testSteps, testSteps);
     return this;
   }
@@ -181,7 +181,7 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public QualityDynamicTest setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public NonFunctionalDynamicTest setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -205,4 +205,4 @@ public class QualityDynamicTest extends DynamicResource implements IQualityDynam
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e68767f9-4f8c-11e9-ad5d-977b17aab907,oNqgC8Ir1pRlJK+hsmcP2bPEZdY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e68767f9-4f8c-11e9-ad5d-977b17aab907,q0VdmbG0OIN6KHX+aSyh/kEMfwE=] */

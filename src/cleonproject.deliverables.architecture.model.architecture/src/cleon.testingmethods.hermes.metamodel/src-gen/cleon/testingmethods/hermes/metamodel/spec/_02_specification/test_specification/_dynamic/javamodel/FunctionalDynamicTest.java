@@ -67,6 +67,15 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
   }
 
   @Override
+  public java.lang.Boolean selectIsNegativTest() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_isNegativTest);
+  }
+    
+  public void setIsNegativTest(java.lang.Boolean isNegativTest) {
+     _setSingleAttribute(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_isNegativTest, isNegativTest);
+  }
+
+  @Override
   public java.lang.String selectName() {
     return _getSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name);
   }
@@ -194,6 +203,7 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
     _acceptSingleAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_externalReferenceId, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.DynamicTest_isNegativTest, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.AbstractDynamicTest_testGoals, visitor);
     // relations
@@ -205,4 +215,4 @@ public class FunctionalDynamicTest extends DynamicResource implements IFunctiona
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dae35cb5-4f8c-11e9-ad5d-977b17aab907,i3LMoT6h7BcgRA7nSowpC8ZLtfc=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,dae35cb5-4f8c-11e9-ad5d-977b17aab907,12R5YyNdoZt/4qm2GSiBA04LiG0=] */

@@ -79,6 +79,9 @@ public class FunctionSpace_DynamicTest {
     @IDynamicResourceExtension.MethodId("2f38f888-7191-11e9-98e0-2719d32d2629")
     public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPrecondition GetGlobalPreconditionGroup();
 
+    @IDynamicResourceExtension.MethodId("faa918d6-8edb-11eb-856f-95cb91a58e04")
+    public java.lang.String NegativeTestName();
+
   }
   
   public static interface IDynamicTestFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -296,4 +299,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,ybxkPGCKmj4hwXYyjfi9U/2dOsA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,VDeBmC0/DSB0QOJLFVBssq06cbs=] */

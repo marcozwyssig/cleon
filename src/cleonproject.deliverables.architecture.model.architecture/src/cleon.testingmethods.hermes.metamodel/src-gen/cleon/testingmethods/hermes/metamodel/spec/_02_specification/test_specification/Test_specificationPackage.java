@@ -5,12 +5,11 @@ import ch.actifsource.core.Resource;
 public class Test_specificationPackage {
   
   public static final Resource TestSpecification = new Resource("ade37916-eabe-11e5-838a-6dbe7118dd11");
-  public static final Resource TestSpecifications_staticTestSpecifications = new Resource("882f471f-1cef-11e6-aaba-9db7fdc64d7e");
   public static final Resource TestSpecification_testObject = new Resource("9674d785-1cef-11e6-aaba-9db7fdc64d7e");
   public static final Resource TestSpecifications = new Resource("1c345fe2-1db1-11e6-974b-630b7f5d3b95");
   public static final Resource Test = new Resource("a13160f5-1db6-11e6-974b-630b7f5d3b95");
   public static final Resource FunctionSpace_aE_Test_Test = new Resource("bb824d5a-1dba-11e6-974b-630b7f5d3b95");
-  public static final Resource TestSpecifications_dynamicTestSpecifications = new Resource("7bcce892-4f82-11e9-ad5d-977b17aab907");
+  public static final Resource TestSpecifications_groups = new Resource("94c4773a-4f8c-11e9-ad5d-977b17aab907");
   
   /* Begin Protected Region [[user]] */
   
@@ -31,4 +30,4 @@ public class Test_specificationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification,z+5IISomK68SmW14TfnA0A5bqOQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification,sFdHHJi7ChvZozOPfZkwEaqz6LU=] */

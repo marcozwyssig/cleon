@@ -53,6 +53,37 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestDynamicTestLevelSpecificationDocumentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
+    public java.lang.String RenderDescriptions();
+
+    @IDynamicResourceExtension.MethodId("4c2f807c-7630-11e9-84bc-453c5bb8bcda")
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferences();
+
+    @IDynamicResourceExtension.MethodId("4d4b0d2e-7631-11e9-84bc-453c5bb8bcda")
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferencesDistinct();
+
+  }
+  
+  public static interface ITestDynamicTestLevelSpecificationDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestDynamicTestLevelSpecificationDocumentFunctionsImpl implements ITestDynamicTestLevelSpecificationDocumentFunctionsImpl {
+
+    public static final ITestDynamicTestLevelSpecificationDocumentFunctionsImpl INSTANCE = new TestDynamicTestLevelSpecificationDocumentFunctionsImpl();
+
+    private TestDynamicTestLevelSpecificationDocumentFunctionsImpl() {}
+
+  }
+  
+  public static class TestDynamicTestLevelSpecificationDocumentFunctions {
+
+    private TestDynamicTestLevelSpecificationDocumentFunctions() {}
+
+  }
+
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52bdfcfb-758a-11e9-83b7-6bd7eee0c537")
@@ -106,65 +137,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   public static class DynamicTestReferenceFunctions {
 
     private DynamicTestReferenceFunctions() {}
-
-  }
-
-  public static interface ITestSpecificationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("7ba72109-7612-11e9-bd83-bda31a2da4a6")
-    public java.lang.String RenderDescriptions();
-
-  }
-  
-  public static interface ITestSpecificationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestSpecificationFunctionsImpl implements ITestSpecificationFunctionsImpl {
-
-    public static final ITestSpecificationFunctionsImpl INSTANCE = new TestSpecificationFunctionsImpl();
-
-    private TestSpecificationFunctionsImpl() {}
-
-  }
-  
-  public static class TestSpecificationFunctions {
-
-    private TestSpecificationFunctions() {}
-
-  }
-
-  public static interface IDynamicTestLevelFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
-    public java.lang.String RenderDescriptions();
-
-    @IDynamicResourceExtension.MethodId("4c2f807c-7630-11e9-84bc-453c5bb8bcda")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferences();
-
-    @IDynamicResourceExtension.MethodId("4d4b0d2e-7631-11e9-84bc-453c5bb8bcda")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferencesDistinct();
-
-    @IDynamicResourceExtension.MethodId("1028ded4-8d61-11eb-9f7d-b323dec096f1")
-    public java.lang.String RenderDocument(final cleon.testingmethods.hermes.metamodel.spec._02_specification.javamodel.ITestSpecificationDocument testSpecificationDocument);
-
-  }
-  
-  public static interface IDynamicTestLevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class DynamicTestLevelFunctionsImpl implements IDynamicTestLevelFunctionsImpl {
-
-    public static final IDynamicTestLevelFunctionsImpl INSTANCE = new DynamicTestLevelFunctionsImpl();
-
-    private DynamicTestLevelFunctionsImpl() {}
-
-  }
-  
-  public static class DynamicTestLevelFunctions {
-
-    private DynamicTestLevelFunctions() {}
 
   }
 
@@ -558,56 +530,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
-  public static interface ITestSpecificationDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3500b427-8d5f-11eb-af35-a3122fdb531d")
-    public java.lang.String RenderChapters();
-
-  }
-  
-  public static interface ITestSpecificationDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestSpecificationDocumentFunctionsImpl implements ITestSpecificationDocumentFunctionsImpl {
-
-    public static final ITestSpecificationDocumentFunctionsImpl INSTANCE = new TestSpecificationDocumentFunctionsImpl();
-
-    private TestSpecificationDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class TestSpecificationDocumentFunctions {
-
-    private TestSpecificationDocumentFunctions() {}
-
-  }
-
-  public static interface ITestSpecificationsFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("59c09e37-8d8e-11eb-b45a-ad6318208ab5")
-    public java.lang.String RenderContentTestSpecification(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel testLevel);
-
-  }
-  
-  public static interface ITestSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestSpecificationsFunctionsImpl implements ITestSpecificationsFunctionsImpl {
-
-    public static final ITestSpecificationsFunctionsImpl INSTANCE = new TestSpecificationsFunctionsImpl();
-
-    private TestSpecificationsFunctionsImpl() {}
-
-  }
-  
-  public static class TestSpecificationsFunctions {
-
-    private TestSpecificationsFunctions() {}
-
-  }
-
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,3JxHM8Mdq/NI7xKqb35OlcA2gNA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,pBrh6Rwc2Daarsr/+c03Ysr5Ybg=] */

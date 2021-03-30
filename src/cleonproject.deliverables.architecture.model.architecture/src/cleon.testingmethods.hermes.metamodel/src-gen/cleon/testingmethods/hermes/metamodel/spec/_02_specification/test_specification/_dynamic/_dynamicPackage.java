@@ -6,16 +6,16 @@ public class _dynamicPackage {
   
   public static final Resource DynamicTestSpecification = new Resource("04d3d8a4-1cf0-11e6-aaba-9db7fdc64d7e");
   public static final Resource DynamicTestGroup = new Resource("810c4022-4f8c-11e9-ad5d-977b17aab907");
-  public static final Resource DynamicTestLevel_groups = new Resource("94c4773a-4f8c-11e9-ad5d-977b17aab907");
   public static final Resource DynamicTest = new Resource("bded44f4-4f8c-11e9-ad5d-977b17aab907");
   public static final Resource FunctionalDynamicTest = new Resource("dae35cb5-4f8c-11e9-ad5d-977b17aab907");
   public static final Resource NonFunctionalDynamicTest = new Resource("e68767f9-4f8c-11e9-ad5d-977b17aab907");
   public static final Resource DynamicTestGroup_dynamicTest = new Resource("f0e8dffb-4f8c-11e9-ad5d-977b17aab907");
   public static final Resource FunctionSpace_aE_DynamicTest_FunctionalDynamicTest = new Resource("704f50b6-4f8d-11e9-ad5d-977b17aab907");
   public static final Resource FunctionSpace_aE_DynamicTest_NonFunctionalDynamicTest = new Resource("b7a6692a-4f8d-11e9-ad5d-977b17aab907");
-  public static final Resource DynamicTestLevel = new Resource("6d73f012-5157-11e9-bb61-971a423d31e9");
+  public static final Resource TestDynamicTestLevelSpecificationDocument = new Resource("6d73f012-5157-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTestSpecification_dynamicTestLevel = new Resource("77dc472b-5157-11e9-bb61-971a423d31e9");
-  public static final Resource DynamicTestLevel_testLevelForDynamicObject = new Resource("d3ca35de-5157-11e9-bb61-971a423d31e9");
+  public static final Resource TestDynamicTestLevelSpecificationDocument_testLevelForDynamicObject = new Resource("d3ca35de-5157-11e9-bb61-971a423d31e9");
+  public static final Resource DynamicTestSpecification_requirements_aE_coverage = new Resource("ef5f6879-5163-11e9-bb61-971a423d31e9");
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTest = new Resource("7f2250d9-5166-11e9-bb61-971a423d31e9");
   public static final Resource AbstractDynamicTest_testGoals = new Resource("6fb9ee45-516a-11e9-bb61-971a423d31e9");
   public static final Resource DynamicTest_testSteps = new Resource("6e65dae1-516b-11e9-bb61-971a423d31e9");
@@ -34,7 +34,7 @@ public class _dynamicPackage {
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTestReference = new Resource("2242b10f-7545-11e9-8ca5-a73df0698911");
   public static final Resource AbstractDynamicTest_reference = new Resource("9cedf168-754a-11e9-8ca5-a73df0698911");
   public static final Resource AbstractDynamicTest_externalReferenceId = new Resource("573f915e-7583-11e9-9317-fb47967c68b1");
-  public static final Resource FunctionSpace_aE_DynamicTest_DynamicTestLevel = new Resource("faa0ad1a-7617-11e9-bd98-2b827cfec50e");
+  public static final Resource FunctionSpace_aE_DynamicTest_TestDynamicTestLevelSpecificationDocument = new Resource("faa0ad1a-7617-11e9-bd98-2b827cfec50e");
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTestGroup = new Resource("3ab4c56d-761f-11e9-bd98-2b827cfec50e");
   public static final Resource DynamicTest_isNegativTest = new Resource("b5044555-8edb-11eb-856f-95cb91a58e04");
   
@@ -57,4 +57,4 @@ public class _dynamicPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic,krNLKbgKtmH3VHa2Hq0NUh3LaIY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic,P2F7BrZI+0JFXal3rkiTm2tFOtE=] */

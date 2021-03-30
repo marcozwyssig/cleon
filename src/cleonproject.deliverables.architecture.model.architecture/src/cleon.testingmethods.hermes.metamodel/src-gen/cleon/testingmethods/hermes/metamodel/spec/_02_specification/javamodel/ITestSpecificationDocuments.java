@@ -8,8 +8,10 @@ public interface ITestSpecificationDocuments extends ch.actifsource.core.javamod
   
   // relations
   
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.javamodel.ITestSpecificationDocument selectTestSpecificationDocuments();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestSpecification> selectDynamicTestSpecifications();
+  
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._static.javamodel.IStaticTestSpecification> selectStaticTestSpecifications();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6ca21176-914a-11eb-8aaa-87cf673e0c96,QrJT4o7ZPZbkgK3U+LpVCmmeBEU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6ca21176-914a-11eb-8aaa-87cf673e0c96,+sJZ7Zxiex7XcZM5jMMWglqOD2Y=] */

@@ -230,7 +230,7 @@ public class FunctionSpace_DynamicTest {
 
   }
 
-  public static interface IDynamicTestLevelFunctions extends IDynamicResourceExtension {
+  public static interface ITestDynamicTestLevelSpecificationDocumentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
     public java.lang.Integer Count();
@@ -240,34 +240,34 @@ public class FunctionSpace_DynamicTest {
 
   }
   
-  public static interface IDynamicTestLevelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ITestDynamicTestLevelSpecificationDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
-    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel dynamicTestLevel);
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument);
 
   }
   
-  public static class DynamicTestLevelFunctionsImpl implements IDynamicTestLevelFunctionsImpl {
+  public static class TestDynamicTestLevelSpecificationDocumentFunctionsImpl implements ITestDynamicTestLevelSpecificationDocumentFunctionsImpl {
 
-    public static final IDynamicTestLevelFunctionsImpl INSTANCE = new DynamicTestLevelFunctionsImpl();
+    public static final ITestDynamicTestLevelSpecificationDocumentFunctionsImpl INSTANCE = new TestDynamicTestLevelSpecificationDocumentFunctionsImpl();
 
-    private DynamicTestLevelFunctionsImpl() {}
+    private TestDynamicTestLevelSpecificationDocumentFunctionsImpl() {}
 
     @Override
-    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel dynamicTestLevel) {
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument) {
       /* Begin Protected Region [[076da764-7618-11e9-bd98-2b827cfec50e]] */
-      return dynamicTestLevel.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
+      return testDynamicTestLevelSpecificationDocument.selectTestSpecifications().selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
       /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
     }
 
   }
   
-  public static class DynamicTestLevelFunctions {
+  public static class TestDynamicTestLevelSpecificationDocumentFunctions {
 
-    private DynamicTestLevelFunctions() {}
+    private TestDynamicTestLevelSpecificationDocumentFunctions() {}
 
-    public static java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestLevel dynamicTestLevel) {
-      return DynamicResourceUtil.invoke(IDynamicTestLevelFunctionsImpl.class, DynamicTestLevelFunctionsImpl.INSTANCE, dynamicTestLevel).Count(dynamicTestLevel);
+    public static java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument) {
+      return DynamicResourceUtil.invoke(ITestDynamicTestLevelSpecificationDocumentFunctionsImpl.class, TestDynamicTestLevelSpecificationDocumentFunctionsImpl.INSTANCE, testDynamicTestLevelSpecificationDocument).Count(testDynamicTestLevelSpecificationDocument);
     }
 
   }
@@ -299,4 +299,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,VDeBmC0/DSB0QOJLFVBssq06cbs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,DQeS1CpO6h9WsfqzBGc6Uit5IRQ=] */

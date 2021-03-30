@@ -180,9 +180,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
   
   public static interface ITestStepFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("30515472-7b6d-11eb-b8e5-2d821e359a02")
-    public java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep);
-
   }
   
   public static class TestStepFunctionsImpl implements ITestStepFunctionsImpl {
@@ -191,20 +188,11 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     private TestStepFunctionsImpl() {}
 
-    @Override
-    public java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
-      return null;
-    }
-
   }
   
   public static class TestStepFunctions {
 
     private TestStepFunctions() {}
-
-    public static java.lang.String RenderResult(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.javamodel.ITestStep testStep) {
-      return DynamicResourceUtil.invoke(ITestStepFunctionsImpl.class, TestStepFunctionsImpl.INSTANCE, testStep).RenderResult(testStep);
-    }
 
   }
 
@@ -212,6 +200,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     @IDynamicResourceExtension.MethodId("1e4de3d1-7a9c-11eb-87e9-09aeef13879c")
     public java.lang.String Render();
+
+    @IDynamicResourceExtension.MethodId("6e98bd39-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
 
   }
   
@@ -249,6 +240,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     @IDynamicResourceExtension.MethodId("c6ef09a3-8e9b-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
+
+    @IDynamicResourceExtension.MethodId("a95a167c-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
 
   }
   
@@ -355,6 +349,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     @IDynamicResourceExtension.MethodId("3b8413f9-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
+    @IDynamicResourceExtension.MethodId("c8f6bd58-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
+
   }
   
   public static interface ITestInputDataFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -379,6 +376,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     @IDynamicResourceExtension.MethodId("5ff9925c-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
+
+    @IDynamicResourceExtension.MethodId("d614494f-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
 
   }
   
@@ -405,6 +405,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
     @IDynamicResourceExtension.MethodId("a0b6e835-8e9a-11e9-83a2-35c1705de7ac")
     public java.lang.String Render();
 
+    @IDynamicResourceExtension.MethodId("e4e4daf8-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
+
   }
   
   public static interface ITestInputUserFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -429,6 +432,9 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
     @IDynamicResourceExtension.MethodId("b707a64a-8eb4-11e9-9c53-5f1b39fe78bd")
     public java.lang.String Render();
+
+    @IDynamicResourceExtension.MethodId("f52f6362-9165-11eb-bd45-ed9cc25142e8")
+    public java.lang.String RenderResult();
 
   }
   
@@ -604,4 +610,4 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,aZnlyUUN/AwxOpNa1Ia9oTZpJ9U=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,3JxHM8Mdq/NI7xKqb35OlcA2gNA=] */

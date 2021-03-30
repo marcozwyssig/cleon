@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="6ca21176-914a-11eb-8aaa-87cf673e0c96">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="86d0f2fc-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="86d0a4d8-914a-11eb-8aaa-87cf673e0c96" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6ca21178-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6cb01b3a-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="270595db-f91f-11d9-bb45-5fabdff7c7da" />
+    <object statement-guid="c9dad0b2-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="8a3b3adc-4f0c-11e9-ba59-f1daaff821cc" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="86d0f2fc-914a-11eb-8aaa-87cf673e0c96">
+      <resource guid="86d0a4d8-914a-11eb-8aaa-87cf673e0c96">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="86d0a4da-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="86d0cbeb-914a-11eb-8aaa-87cf673e0c96" type="literal">testSpecificationDocuments</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="86d1411d-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="86d1411e-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="5ba8fb1b-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="86d1682f-914a-11eb-8aaa-87cf673e0c96" type="resource" guid="88d35210-4f02-11e9-ba59-f1daaff821cc" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="6caff429-914a-11eb-8aaa-87cf673e0c96" type="literal">TestSpecificationDocuments</object>
+  </predicate>
+</resource>
+

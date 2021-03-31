@@ -38,6 +38,7 @@ public class _dynamicPackage {
   public static final Resource FunctionSpace_aE_DynamicTest_DynamicTestGroup = new Resource("3ab4c56d-761f-11e9-bd98-2b827cfec50e");
   public static final Resource DynamicTest_isNegativTest = new Resource("b5044555-8edb-11eb-856f-95cb91a58e04");
   public static final Resource FunctionSpace_aE_DynamicTest_TestCaseSpecifications = new Resource("ac5f07aa-918c-11eb-b864-f3024880845e");
+  public static final Resource AbstractDynamicTest_executionTime_aE__aA_m_aC_ = new Resource("4c152e89-91fa-11eb-a126-6710d92c881e");
   
   /* Begin Protected Region [[user]] */
   
@@ -58,4 +59,4 @@ public class _dynamicPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic,IiF4Lc626MaoNUocdnrBcjFaZYI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic,EPBGGJW48yP5Kndl02FORhXo0ho=] */

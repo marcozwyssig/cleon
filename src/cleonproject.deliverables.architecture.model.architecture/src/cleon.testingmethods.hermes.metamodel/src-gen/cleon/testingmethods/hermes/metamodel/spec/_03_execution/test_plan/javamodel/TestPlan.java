@@ -91,11 +91,11 @@ public class TestPlan extends DynamicResource implements ITestPlan {
   }
     
   @Override
-  public cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope selectTestScope() {
-    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope);
+  public cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope selectTestScope() {
+    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope);
   }
 
-  public TestPlan setTestScope(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope testScope) {
+  public TestPlan setTestScope(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope testScope) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope, testScope);
     return this;
   }
@@ -119,13 +119,13 @@ public class TestPlan extends DynamicResource implements ITestPlan {
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scheduling.javamodel.ITestScheduling.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScheduling, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.javamodel.ITestPlan selectToMeTestScope(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope object) {
+  public static cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.javamodel.ITestPlan selectToMeTestScope(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope object) {
     return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.javamodel.ITestPlan.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.Test_planPackage.TestPlan_testScope, object.getResource());
   }
   
@@ -134,4 +134,4 @@ public class TestPlan extends DynamicResource implements ITestPlan {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bf93951-eabe-11e5-838a-6dbe7118dd11,Akc6M2WReLhpVhNtPKIzOJ4cJfM=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8bf93951-eabe-11e5-838a-6dbe7118dd11,Uf4SrIp7P54VIm7SV/w7gdpopLM=] */

@@ -12,8 +12,10 @@ public interface IAbstractDynamicTest extends ch.actifsource.core.javamodel.INam
   
   public java.lang.String selectExternalReferenceId();
   
+  public java.lang.Integer selectExecutionTime_aE__aA_m_aC_();
+  
   public cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference selectReference();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,CrDm/ruuDPmSD8F2XsbAXheVc1k=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,49894707-7544-11e9-8ca5-a73df0698911,h/u6dtBr8xyTtQPZflgWB3Fqy1I=] */

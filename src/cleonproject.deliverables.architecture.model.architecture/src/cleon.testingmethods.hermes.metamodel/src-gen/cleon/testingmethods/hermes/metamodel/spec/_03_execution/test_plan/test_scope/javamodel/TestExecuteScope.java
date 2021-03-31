@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class TestScope extends DynamicResource implements ITestScope {
+public class TestExecuteScope extends DynamicResource implements ITestExecuteScope {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestScope> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestScope>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestExecuteScope> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ITestExecuteScope>() {
     
     @Override
-    public ITestScope create() {
-      return new TestScope();
+    public ITestExecuteScope create() {
+      return new TestExecuteScope();
     }
     
     @Override
-    public ITestScope create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new TestScope(resourceRepository, resource);
+    public ITestExecuteScope create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new TestExecuteScope(resourceRepository, resource);
     }
   
   };
 
-  public TestScope() {
-    super(ITestScope.TYPE_ID);
+  public TestExecuteScope() {
+    super(ITestExecuteScope.TYPE_ID);
   }
   
-  public TestScope(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ITestScope.TYPE_ID);
+  public TestExecuteScope(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ITestExecuteScope.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class TestScope extends DynamicResource implements ITestScope {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public TestScope setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public TestExecuteScope setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -65,7 +65,7 @@ public class TestScope extends DynamicResource implements ITestScope {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public TestScope setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public TestExecuteScope setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -75,18 +75,18 @@ public class TestScope extends DynamicResource implements ITestScope {
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public TestScope setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public TestExecuteScope setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
     return this;
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicSpecificationScope> selectTestScopeTestObjects() {
-    return _getMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicSpecificationScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestScope_testScopeTestObjects);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteDynamicSpecificationScope> selectTestScopeTestObjects() {
+    return _getMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteDynamicSpecificationScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestExecuteScope_testScopeTestObjects);
   }
 
-  public TestScope setTestScopeTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicSpecificationScope> testScopeTestObjects) {
-    _setMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestScope_testScopeTestObjects, testScopeTestObjects);
+  public TestExecuteScope setTestScopeTestObjects(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteDynamicSpecificationScope> testScopeTestObjects) {
+    _setMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestExecuteScope_testScopeTestObjects, testScopeTestObjects);
     return this;
   }
     
@@ -95,7 +95,7 @@ public class TestScope extends DynamicResource implements ITestScope {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public TestScope setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public TestExecuteScope setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -108,15 +108,15 @@ public class TestScope extends DynamicResource implements ITestScope {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicSpecificationScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestScope_testScopeTestObjects, visitor);
+    _acceptMap(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteDynamicSpecificationScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestExecuteScope_testScopeTestObjects, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope selectToMeTestScopeTestObjects(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestDynamicSpecificationScope object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestScope_testScopeTestObjects, object.getResource());
+  public static cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope selectToMeTestScopeTestObjects(cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteDynamicSpecificationScope object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.javamodel.ITestExecuteScope.class, cleon.testingmethods.hermes.metamodel.spec._03_execution.test_plan.test_scope.Test_scopePackage.TestExecuteScope_testScopeTestObjects, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ca652f8-9184-11e9-97b2-b9ddd2a0520b,JKByahhBMjs7Wk3qiLd3NZR/g/M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4ca652f8-9184-11e9-97b2-b9ddd2a0520b,RSOY5Vd5tlyrbuWEJ1yBjpMiVis=] */

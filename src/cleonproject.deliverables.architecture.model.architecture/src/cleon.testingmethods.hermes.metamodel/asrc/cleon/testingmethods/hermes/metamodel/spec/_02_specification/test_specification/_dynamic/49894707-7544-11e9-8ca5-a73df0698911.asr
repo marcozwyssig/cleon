@@ -54,6 +54,7 @@
         </resource>
       </owns>
     </resource>
+    <resource statement-guid="4c157cac-91fa-11eb-a126-6710d92c881e" type="resource" guid="4c152e89-91fa-11eb-a126-6710d92c881e" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="bc23cfba-7544-11e9-8ca5-a73df0698911" type="resource" guid="bc235a86-7544-11e9-8ca5-a73df0698911">
@@ -285,6 +286,28 @@
         </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="9cef29ef-754a-11e9-8ca5-a73df0698911" type="resource" guid="6288bf23-1b3b-11e9-8cd4-efe75fb4587a" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="4c157cac-91fa-11eb-a126-6710d92c881e">
+      <resource guid="4c152e89-91fa-11eb-a126-6710d92c881e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4c15559b-91fa-11eb-a126-6710d92c881e" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5b87cd45-91fa-11eb-a126-6710d92c881e" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="4e711ff2-91fa-11eb-a126-6710d92c881e" type="literal">executionTime_[m]</object>
+        </predicate>
+        <predicate guid="2553974c-7eb0-11da-b548-f553f26f0408">
+          <object statement-guid="5d16d1d2-91fa-11eb-a126-6710d92c881e" type="literal">20</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="4c163ffd-91fa-11eb-a126-6710d92c881e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="80ff75d8-e648-11da-90a0-f358fdc0051b">
+          <object statement-guid="5492f311-91fa-11eb-a126-6710d92c881e" type="literal">Execution Time in minutes</object>
         </predicate>
       </resource>
     </object>

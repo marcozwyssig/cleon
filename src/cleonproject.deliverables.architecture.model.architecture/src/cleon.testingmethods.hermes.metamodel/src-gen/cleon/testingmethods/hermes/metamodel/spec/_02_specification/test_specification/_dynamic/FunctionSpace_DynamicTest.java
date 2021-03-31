@@ -260,6 +260,9 @@ public class FunctionSpace_DynamicTest {
     @IDynamicResourceExtension.MethodId("41634817-761f-11e9-bd98-2b827cfec50e")
     public java.lang.Integer Count();
 
+    @IDynamicResourceExtension.MethodId("3e7c6f9f-920b-11eb-a126-6710d92c881e")
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_();
+
   }
   
   public static interface IDynamicTestGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -284,6 +287,9 @@ public class FunctionSpace_DynamicTest {
 
     @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
     public java.lang.Integer Count();
+
+    @IDynamicResourceExtension.MethodId("21ce0f9d-920b-11eb-a126-6710d92c881e")
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_();
 
   }
   
@@ -321,4 +327,4 @@ public class FunctionSpace_DynamicTest {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,jvd576fIvQNbIdM+MPBWJjyZoec=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,oic2SGAm2YXsxFkUAYT1LS1DQPk=] */

@@ -169,11 +169,11 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   }
     
   @Override
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestSpecifications selectTestSpecifications() {
-    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestSpecifications.class, cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications);
+  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications selectTestSpecifications() {
+    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications.class, cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications);
   }
 
-  public TestDynamicTestLevelSpecificationDocument setTestSpecifications(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestSpecifications testSpecifications) {
+  public TestDynamicTestLevelSpecificationDocument setTestSpecifications(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testSpecifications) {
     _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications, testSpecifications);
     return this;
   }
@@ -204,7 +204,7 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
     _acceptSingle(cleon.common.doc.metamodel.spec.document.style.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.document.DocumentPackage.Document_style, visitor);
     _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_types.javamodel.ITestLevelForDynamicObject.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic._dynamicPackage.TestDynamicTestLevelSpecificationDocument_testLevelForDynamicObject, visitor);
     _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditions.class, cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testPreconditions, visitor);
-    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestSpecifications.class, cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications.class, cleon.testingmethods.hermes.metamodel.spec._02_specification._02_specificationPackage.TestSpecificationDocument_testSpecifications, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -215,4 +215,4 @@ public class TestDynamicTestLevelSpecificationDocument extends DynamicResource i
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,IIPZdLE17xkm0QTI/IcoEqqGQ9Q=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6d73f012-5157-11e9-bb61-971a423d31e9,CVDi3mi8xp1ksPJ9LGKBkZilNCo=] */

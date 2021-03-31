@@ -10,8 +10,8 @@ public interface ITestSpecificationDocument extends cleon.common.doc.metamodel.s
   
   public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestGlobalPreconditions selectTestPreconditions();
   
-  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestSpecifications selectTestSpecifications();
+  public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications selectTestSpecifications();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,1Tok4JycL+1JkFiQyk84QU4A4Ak=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,88d35210-4f02-11e9-ba59-f1daaff821cc,hsCmo1Pi6i+hLdYLcJZvtozihrQ=] */

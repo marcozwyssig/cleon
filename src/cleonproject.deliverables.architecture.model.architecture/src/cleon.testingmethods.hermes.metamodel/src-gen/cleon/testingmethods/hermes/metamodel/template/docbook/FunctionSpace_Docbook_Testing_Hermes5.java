@@ -53,37 +53,6 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
-  public static interface ITestDynamicTestLevelSpecificationDocumentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
-    public java.lang.String RenderDescriptions();
-
-    @IDynamicResourceExtension.MethodId("4c2f807c-7630-11e9-84bc-453c5bb8bcda")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferences();
-
-    @IDynamicResourceExtension.MethodId("4d4b0d2e-7631-11e9-84bc-453c5bb8bcda")
-    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferencesDistinct();
-
-  }
-  
-  public static interface ITestDynamicTestLevelSpecificationDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class TestDynamicTestLevelSpecificationDocumentFunctionsImpl implements ITestDynamicTestLevelSpecificationDocumentFunctionsImpl {
-
-    public static final ITestDynamicTestLevelSpecificationDocumentFunctionsImpl INSTANCE = new TestDynamicTestLevelSpecificationDocumentFunctionsImpl();
-
-    private TestDynamicTestLevelSpecificationDocumentFunctionsImpl() {}
-
-  }
-  
-  public static class TestDynamicTestLevelSpecificationDocumentFunctions {
-
-    private TestDynamicTestLevelSpecificationDocumentFunctions() {}
-
-  }
-
   public static interface IDynamicTestFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("52bdfcfb-758a-11e9-83b7-6bd7eee0c537")
@@ -530,6 +499,37 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestCaseSpecificationsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4ac3305c-7614-11e9-bd83-bda31a2da4a6")
+    public java.lang.String RenderDescriptions();
+
+    @IDynamicResourceExtension.MethodId("4c2f807c-7630-11e9-84bc-453c5bb8bcda")
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferences();
+
+    @IDynamicResourceExtension.MethodId("4d4b0d2e-7631-11e9-84bc-453c5bb8bcda")
+    public List<cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference> SelectAllReferencesDistinct();
+
+  }
+  
+  public static interface ITestCaseSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestCaseSpecificationsFunctionsImpl implements ITestCaseSpecificationsFunctionsImpl {
+
+    public static final ITestCaseSpecificationsFunctionsImpl INSTANCE = new TestCaseSpecificationsFunctionsImpl();
+
+    private TestCaseSpecificationsFunctionsImpl() {}
+
+  }
+  
+  public static class TestCaseSpecificationsFunctions {
+
+    private TestCaseSpecificationsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,pBrh6Rwc2Daarsr/+c03Ysr5Ybg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,NmSzA1l0G2rWtiIboHuuZSNdVFc=] */

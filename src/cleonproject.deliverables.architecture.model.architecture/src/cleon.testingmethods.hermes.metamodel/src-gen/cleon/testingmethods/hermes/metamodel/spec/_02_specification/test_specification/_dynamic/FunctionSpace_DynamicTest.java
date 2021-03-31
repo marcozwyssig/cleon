@@ -232,9 +232,6 @@ public class FunctionSpace_DynamicTest {
 
   public static interface ITestDynamicTestLevelSpecificationDocumentFunctions extends IDynamicResourceExtension {
 
-    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
-    public java.lang.Integer Count();
-
     @IDynamicResourceExtension.MethodId("5c131579-7626-11e9-bd98-2b827cfec50e")
     public cleon.common.doc.metamodel.spec.chapter.references.javamodel.IReference SelectAllReferences();
 
@@ -242,9 +239,6 @@ public class FunctionSpace_DynamicTest {
   
   public static interface ITestDynamicTestLevelSpecificationDocumentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
-    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
-    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument);
-
   }
   
   public static class TestDynamicTestLevelSpecificationDocumentFunctionsImpl implements ITestDynamicTestLevelSpecificationDocumentFunctionsImpl {
@@ -253,22 +247,11 @@ public class FunctionSpace_DynamicTest {
 
     private TestDynamicTestLevelSpecificationDocumentFunctionsImpl() {}
 
-    @Override
-    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument) {
-      /* Begin Protected Region [[076da764-7618-11e9-bd98-2b827cfec50e]] */
-      return testDynamicTestLevelSpecificationDocument.selectTestSpecifications().selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
-      /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
-    }
-
   }
   
   public static class TestDynamicTestLevelSpecificationDocumentFunctions {
 
     private TestDynamicTestLevelSpecificationDocumentFunctions() {}
-
-    public static java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.ITestDynamicTestLevelSpecificationDocument testDynamicTestLevelSpecificationDocument) {
-      return DynamicResourceUtil.invoke(ITestDynamicTestLevelSpecificationDocumentFunctionsImpl.class, TestDynamicTestLevelSpecificationDocumentFunctionsImpl.INSTANCE, testDynamicTestLevelSpecificationDocument).Count(testDynamicTestLevelSpecificationDocument);
-    }
 
   }
 
@@ -297,6 +280,45 @@ public class FunctionSpace_DynamicTest {
 
   }
 
+  public static interface ITestCaseSpecificationsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
+    public java.lang.Integer Count();
+
+  }
+  
+  public static interface ITestCaseSpecificationsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications);
+
+  }
+  
+  public static class TestCaseSpecificationsFunctionsImpl implements ITestCaseSpecificationsFunctionsImpl {
+
+    public static final ITestCaseSpecificationsFunctionsImpl INSTANCE = new TestCaseSpecificationsFunctionsImpl();
+
+    private TestCaseSpecificationsFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications) {
+      /* Begin Protected Region [[076da764-7618-11e9-bd98-2b827cfec50e]] */
+      return testCaseSpecifications.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).Count()).sum();
+      /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
+    }
+
+  }
+  
+  public static class TestCaseSpecificationsFunctions {
+
+    private TestCaseSpecificationsFunctions() {}
+
+    public static java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications) {
+      return DynamicResourceUtil.invoke(ITestCaseSpecificationsFunctionsImpl.class, TestCaseSpecificationsFunctionsImpl.INSTANCE, testCaseSpecifications).Count(testCaseSpecifications);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,DQeS1CpO6h9WsfqzBGc6Uit5IRQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,jvd576fIvQNbIdM+MPBWJjyZoec=] */

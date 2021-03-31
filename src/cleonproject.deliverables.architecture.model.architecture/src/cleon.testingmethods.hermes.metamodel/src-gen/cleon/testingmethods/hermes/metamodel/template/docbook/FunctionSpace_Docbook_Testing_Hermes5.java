@@ -9,6 +9,8 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[983d95c3-4f88-11e9-ad5d-977b17aab907,imports]] */
 import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.TestPreconditionAwareList;
+import java.time.Duration;
+import java.time.LocalTime;
 
 /* End Protected Region   [[983d95c3-4f88-11e9-ad5d-977b17aab907,imports]] */
 
@@ -530,6 +532,45 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface IIntegerLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("5f5f4b24-920e-11eb-a126-6710d92c881e")
+    public java.lang.String InHours();
+
+  }
+  
+  public static interface IIntegerLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("5f5f4b24-920e-11eb-a126-6710d92c881e")
+    public java.lang.String InHours(final java.lang.Integer integerLiteral);
+
+  }
+  
+  public static class IntegerLiteralFunctionsImpl implements IIntegerLiteralFunctionsImpl {
+
+    public static final IIntegerLiteralFunctionsImpl INSTANCE = new IntegerLiteralFunctionsImpl();
+
+    private IntegerLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String InHours(final java.lang.Integer integerLiteral) {
+      /* Begin Protected Region [[5f5f4b24-920e-11eb-a126-6710d92c881e]] */
+      return LocalTime.MIN.plus(Duration.ofMinutes( integerLiteral )).toString();
+      /* End Protected Region   [[5f5f4b24-920e-11eb-a126-6710d92c881e]] */
+    }
+
+  }
+  
+  public static class IntegerLiteralFunctions {
+
+    private IntegerLiteralFunctions() {}
+
+    public static java.lang.String InHours(final java.lang.Integer integerLiteral) {
+      return DynamicResourceUtil.invoke(IIntegerLiteralFunctionsImpl.class, IntegerLiteralFunctionsImpl.INSTANCE, integerLiteral).InHours(integerLiteral);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,NmSzA1l0G2rWtiIboHuuZSNdVFc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,1tIY/O8aO+/gMLJuYLHG7BsEaYw=] */

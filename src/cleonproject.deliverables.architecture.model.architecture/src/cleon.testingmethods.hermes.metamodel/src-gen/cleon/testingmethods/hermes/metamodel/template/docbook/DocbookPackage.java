@@ -20,6 +20,7 @@ public class DocbookPackage {
   public static final Resource FunctionSpace_aE_Docbook_aE_Testing_aE_Hermes5_TestPreconditionStep = new Resource("15599430-7b34-11eb-ae9b-d7162fb23e98");
   public static final Resource FunctionSpace_aE_Docbook_aE_Testing_aE_Hermes5_TestResultEnvironment = new Resource("154f441e-7b6d-11eb-b8e5-2d821e359a02");
   public static final Resource FunctionSpace_aE_Docbook_aE_Testing_aE_Hermes5_TestCaseSpecifications = new Resource("6d09cdaf-918c-11eb-b864-f3024880845e");
+  public static final Resource FunctionSpace_aE_Docbook_aE_Testing_aE_Hermes5_IntegerLiteral = new Resource("5f5f2410-920e-11eb-a126-6710d92c881e");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +41,4 @@ public class DocbookPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.docbook,lsdLiiUzqWX78uuymSe+E9hAHz8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.docbook,AAeF9M5rzKckvb346su9BYV9eVA=] */

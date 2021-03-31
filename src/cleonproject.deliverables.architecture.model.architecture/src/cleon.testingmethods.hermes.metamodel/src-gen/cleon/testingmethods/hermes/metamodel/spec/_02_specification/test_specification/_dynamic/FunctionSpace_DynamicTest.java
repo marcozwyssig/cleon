@@ -11,6 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import java.util.ArrayList;
 import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.IAbstractTestPreconditionStep;
 import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_precondition.javamodel.ITestPreconditionStep;
+import cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IAbstractDynamicTest;
 
 /* End Protected Region   [[5353461a-4f8d-11e9-ad5d-977b17aab907,imports]] */
 
@@ -267,6 +268,9 @@ public class FunctionSpace_DynamicTest {
   
   public static interface IDynamicTestGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("3e7c6f9f-920b-11eb-a126-6710d92c881e")
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup dynamicTestGroup);
+
   }
   
   public static class DynamicTestGroupFunctionsImpl implements IDynamicTestGroupFunctionsImpl {
@@ -275,11 +279,22 @@ public class FunctionSpace_DynamicTest {
 
     private DynamicTestGroupFunctionsImpl() {}
 
+    @Override
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup dynamicTestGroup) {
+      /* Begin Protected Region [[3e7c6f9f-920b-11eb-a126-6710d92c881e]] */
+      return dynamicTestGroup.selectDynamicTest().stream().mapToInt(IAbstractDynamicTest::selectExecutionTime_aE__aA_m_aC_).sum();
+      /* End Protected Region   [[3e7c6f9f-920b-11eb-a126-6710d92c881e]] */
+    }
+
   }
   
   public static class DynamicTestGroupFunctions {
 
     private DynamicTestGroupFunctions() {}
+
+    public static java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTestGroup dynamicTestGroup) {
+      return DynamicResourceUtil.invoke(IDynamicTestGroupFunctionsImpl.class, DynamicTestGroupFunctionsImpl.INSTANCE, dynamicTestGroup).SumTotalEstimate_aE__aA_m_aC_(dynamicTestGroup);
+    }
 
   }
 
@@ -298,6 +313,9 @@ public class FunctionSpace_DynamicTest {
     @IDynamicResourceExtension.MethodId("076da764-7618-11e9-bd98-2b827cfec50e")
     public java.lang.Integer Count(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications);
 
+    @IDynamicResourceExtension.MethodId("21ce0f9d-920b-11eb-a126-6710d92c881e")
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications);
+
   }
   
   public static class TestCaseSpecificationsFunctionsImpl implements ITestCaseSpecificationsFunctionsImpl {
@@ -313,6 +331,13 @@ public class FunctionSpace_DynamicTest {
       /* End Protected Region   [[076da764-7618-11e9-bd98-2b827cfec50e]] */
     }
 
+    @Override
+    public java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications) {
+      /* Begin Protected Region [[21ce0f9d-920b-11eb-a126-6710d92c881e]] */
+      return testCaseSpecifications.selectGroups().stream().mapToInt(x -> x.extension(IDynamicTestGroupFunctions.class).SumTotalEstimate_aE__aA_m_aC_()).sum();
+      /* End Protected Region   [[21ce0f9d-920b-11eb-a126-6710d92c881e]] */
+    }
+
   }
   
   public static class TestCaseSpecificationsFunctions {
@@ -323,8 +348,12 @@ public class FunctionSpace_DynamicTest {
       return DynamicResourceUtil.invoke(ITestCaseSpecificationsFunctionsImpl.class, TestCaseSpecificationsFunctionsImpl.INSTANCE, testCaseSpecifications).Count(testCaseSpecifications);
     }
 
+    public static java.lang.Integer SumTotalEstimate_aE__aA_m_aC_(final cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification.javamodel.ITestCaseSpecifications testCaseSpecifications) {
+      return DynamicResourceUtil.invoke(ITestCaseSpecificationsFunctionsImpl.class, TestCaseSpecificationsFunctionsImpl.INSTANCE, testCaseSpecifications).SumTotalEstimate_aE__aA_m_aC_(testCaseSpecifications);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,oic2SGAm2YXsxFkUAYT1LS1DQPk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,5353461a-4f8d-11e9-ad5d-977b17aab907,wSFy/S96PWL06lgWaNJyN1YzhOY=] */

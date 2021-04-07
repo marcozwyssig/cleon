@@ -71,12 +71,12 @@ public class Events extends DynamicResource implements IEvents {
   }
     
   @Override
-  public IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent> selectEvent() {
-    return _getMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent> selectEvent() {
+    return _getMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event);
   }
 
-  public Events setEvent(IMultiMapOrdered<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent> event) {
-    _setMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event, event);
+  public Events setEvent(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent> event) {
+    _setMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event, event);
     return this;
   }
     
@@ -107,8 +107,7 @@ public class Events extends DynamicResource implements IEvents {
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, visitor);
-    _acceptMultiMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event, visitor);
+    _acceptMap(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.javamodel.IEvent.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.events.EventsPackage.Events_event, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
@@ -120,4 +119,4 @@ public class Events extends DynamicResource implements IEvents {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bbf19ba-8f32-11e8-90f3-6f51c1a0b373,FlVY7L5GGxYB08ADiKXbVB0abA8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0bbf19ba-8f32-11e8-90f3-6f51c1a0b373,YwkIOLpqMRxg2A/uBc02PBJHrJw=] */

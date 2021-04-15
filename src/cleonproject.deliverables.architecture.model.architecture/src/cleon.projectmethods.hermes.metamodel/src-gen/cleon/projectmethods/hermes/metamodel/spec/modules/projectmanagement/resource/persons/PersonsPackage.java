@@ -18,6 +18,7 @@ public class PersonsPackage {
   public static final Resource AuthorsAware = new Resource("bce16132-bff1-11e7-9dcc-23cb45d05890");
   public static final Resource AuthorsAware_authors = new Resource("bce16133-bff1-11e7-9dcc-23cb45d05890");
   public static final Resource Person_roles = new Resource("6bf7cfe0-bb5f-11e8-921b-c1cf01226512");
+  public static final Resource Person_id = new Resource("ca909c47-9db8-11eb-ac11-8525f5400242");
   
   /* Begin Protected Region [[user]] */
   
@@ -38,4 +39,4 @@ public class PersonsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons,J4qHZjIUi4N0fB5dkWtdfcOxg6A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.projectmethods.hermes.metamodel.spec.modules.projectmanagement.resource.persons,+aK/MBxs29i1aqSxtoIpw6ouvGc=] */

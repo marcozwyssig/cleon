@@ -4,6 +4,16 @@ import ch.actifsource.core.Resource;
 
 public class XmlPackage {
   
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestStep = new Resource("e450de5a-9dd2-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInput = new Resource("b6efcbe4-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInputString = new Resource("b6efcbea-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestResult = new Resource("b6efcc01-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestResultEnvironment = new Resource("b6efcc1a-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInputData = new Resource("b6efcc46-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInputTool = new Resource("b6efcc57-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInputUser = new Resource("b6efcc70-9dd7-11eb-ac11-8525f5400242");
+  public static final Resource Testcase_aE_for_aE_ALM__T_xml_TestInputConnection = new Resource("e6b149eb-9dd7-11eb-ac11-8525f5400242");
+  
   /* Begin Protected Region [[user]] */
   
   /* End Protected Region   [[user]] */
@@ -23,4 +33,4 @@ public class XmlPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.xml,TwGMxKroLmtxMVx2F693Kltb92I=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.template.xml,hZPUraTLbgXL1gGjbOR3T9+DORE=] */

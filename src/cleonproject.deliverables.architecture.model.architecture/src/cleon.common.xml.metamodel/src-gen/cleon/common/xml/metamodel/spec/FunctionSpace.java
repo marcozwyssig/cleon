@@ -44,9 +44,9 @@ public class FunctionSpace {
       if (textLiteral == null) {
       	return null;
       }
-      StringBuilder sb = new StringBuilder();
+      final StringBuilder sb = new StringBuilder();
       for (int i = 0; i < textLiteral.length(); i++) {
-      	char c = textLiteral.charAt(i);
+      	final char c = textLiteral.charAt(i);
       	switch (c) {
       	case '<':
       		sb.append("&lt;");
@@ -65,9 +65,10 @@ public class FunctionSpace {
       		break;
       	default:
       		if (c > 0x7e) {
-      			sb.append("&#" + ((int) c) + ";");
-      		} else
+      			sb.append("&#" + (int) c + ";");
+      		} else {
       			sb.append(c);
+      		}
       	}
       }
       return sb.toString();
@@ -124,6 +125,9 @@ public class FunctionSpace {
     @Override
     public java.lang.String escapeXml(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[28b063d0-2c90-11e6-8dd6-23b9a87b3ebd]] */
+      if( stringLiteral == null) {
+      	return null;
+      }
       return TextLiteralFunctionsImpl.INSTANCE.escapeXml(stringLiteral);
       /* End Protected Region   [[28b063d0-2c90-11e6-8dd6-23b9a87b3ebd]] */
     }
@@ -146,4 +150,4 @@ public class FunctionSpace {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,Ek0SDJ6/TiR6O/iWqFZxwyWM5GQ=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,37550eeb-f2bd-11e5-8010-7b34e2b59618,aFjsHdoOpyCJBjMtWr0TN0wC39E=] */

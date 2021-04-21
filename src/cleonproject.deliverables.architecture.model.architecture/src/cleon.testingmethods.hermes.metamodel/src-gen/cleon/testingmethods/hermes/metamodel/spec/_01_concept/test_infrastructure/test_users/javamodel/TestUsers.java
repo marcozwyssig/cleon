@@ -91,12 +91,12 @@ public class TestUsers extends DynamicResource implements ITestUsers {
   }
     
   @Override
-  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectTestUser() {
-    return _getList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUser);
+  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectTestUsers() {
+    return _getList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUsers);
   }
 
-  public TestUsers setTestUser(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> testUser) {
-    _setList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUser, testUser);
+  public TestUsers setTestUsers(java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> testUsers) {
+    _setList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUsers, testUsers);
     return this;
   }
     
@@ -118,15 +118,15 @@ public class TestUsers extends DynamicResource implements ITestUsers {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUser, visitor);
+    _acceptList(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUsers, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUsers selectToMeTestUser(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser object) {
-    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUsers.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUser, object.getResource());
+  public static cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUsers selectToMeTestUsers(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser object) {
+    return _getToMeSingle(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUsers.class, cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.Test_usersPackage.TestUsers_testUsers, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90a6dfe-20d7-11e6-9368-9172b77c2cff,jdIXduITwNyo3n6iF7mg5cruKuA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,c90a6dfe-20d7-11e6-9368-9172b77c2cff,dQoDgyorADLlSZsYcG2HxWUpiCE=] */

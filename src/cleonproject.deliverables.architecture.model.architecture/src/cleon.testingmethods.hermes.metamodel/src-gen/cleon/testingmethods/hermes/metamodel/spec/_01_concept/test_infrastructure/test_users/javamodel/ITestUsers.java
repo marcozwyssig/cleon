@@ -8,8 +8,8 @@ public interface ITestUsers extends cleon.testingmethods.hermes.metamodel.spec._
   
   // relations
   
-  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectTestUser();
+  public java.util.List<? extends cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_users.javamodel.ITestUser> selectTestUsers();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90a6dfe-20d7-11e6-9368-9172b77c2cff,KnoIPw5TM0da24ekG6tyutMs7VE=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c90a6dfe-20d7-11e6-9368-9172b77c2cff,jCCVfOxFvK3PvNH9s96/WBWKXxE=] */

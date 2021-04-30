@@ -6,7 +6,6 @@ public class MachineconfigurationPackage {
   
   public static final Resource CPU_aE_Configuration = new Resource("8afbac91-2afe-11e9-9692-65766bc2daa5");
   public static final Resource CPU_aE_Configuration_machineConfiguration = new Resource("bc9e9502-2afe-11e9-9692-65766bc2daa5");
-  public static final Resource CPU_aE_Configuration_cpu = new Resource("8b253864-2aff-11e9-9692-65766bc2daa5");
   public static final Resource CPU_aE_Configuration_core = new Resource("fac05156-2b01-11e9-9692-65766bc2daa5");
   public static final Resource Memory_aE_Configuration = new Resource("7b0d2a12-2b02-11e9-9692-65766bc2daa5");
   public static final Resource Memory_aE_Configuration_machineConfiguration = new Resource("7b0d2a13-2b02-11e9-9692-65766bc2daa5");
@@ -34,4 +33,4 @@ public class MachineconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.machineconfiguration,eBz+weNY4K1cuqk9ooWRyHID94M=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.machineconfiguration,/mRbPvWaeEUgrM6axoonHFrbyVA=] */

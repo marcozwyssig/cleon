@@ -20,118 +20,6 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
   /* End Protected Region   [[8bc3420c-035a-11e9-a251-e3767b78f69f]] */
 
 
-  public static interface ISystemComponentFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3b7918e0-035b-11e9-a251-e3767b78f69f")
-    public java.lang.String GetTypeName();
-
-    @IDynamicResourceExtension.MethodId("e8adea82-b5f8-11ea-a2c5-5b1c7f861dd4")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllDecomposingSystemConfiguration();
-
-    @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem System();
-
-  }
-  
-  public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemComponentFunctionsImpl implements ISystemComponentFunctionsImpl {
-
-    public static final ISystemComponentFunctionsImpl INSTANCE = new SystemComponentFunctionsImpl();
-
-    private SystemComponentFunctionsImpl() {}
-
-  }
-  
-  public static class SystemComponentFunctions {
-
-    private SystemComponentFunctions() {}
-
-  }
-
-  public static interface ISystemWithLayerFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
-
-  }
-  
-  public static interface ISystemWithLayerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemWithLayerFunctionsImpl implements ISystemWithLayerFunctionsImpl {
-
-    public static final ISystemWithLayerFunctionsImpl INSTANCE = new SystemWithLayerFunctionsImpl();
-
-    private SystemWithLayerFunctionsImpl() {}
-
-  }
-  
-  public static class SystemWithLayerFunctions {
-
-    private SystemWithLayerFunctions() {}
-
-  }
-
-  public static interface INamedSystemWithSystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("fcec324a-8797-11e9-bb4b-c57da735262b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("0c70d2c9-8798-11e9-bb4b-c57da735262b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SortedAllSystemConfigurations();
-
-    @IDynamicResourceExtension.MethodId("61eaf769-009f-11ea-9b43-0b5ecf12c553")
-    public java.lang.String GroupName();
-
-  }
-  
-  public static interface INamedSystemWithSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NamedSystemWithSystemConfigurationFunctionsImpl implements INamedSystemWithSystemConfigurationFunctionsImpl {
-
-    public static final INamedSystemWithSystemConfigurationFunctionsImpl INSTANCE = new NamedSystemWithSystemConfigurationFunctionsImpl();
-
-    private NamedSystemWithSystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class NamedSystemWithSystemConfigurationFunctions {
-
-    private NamedSystemWithSystemConfigurationFunctions() {}
-
-  }
-
-  public static interface ISystemOfSystemFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("faa19cf3-deab-11e9-b714-478bec98e62d")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllSystemConfigurations();
-
-  }
-  
-  public static interface ISystemOfSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemOfSystemFunctionsImpl implements ISystemOfSystemFunctionsImpl {
-
-    public static final ISystemOfSystemFunctionsImpl INSTANCE = new SystemOfSystemFunctionsImpl();
-
-    private SystemOfSystemFunctionsImpl() {}
-
-  }
-  
-  public static class SystemOfSystemFunctions {
-
-    private SystemOfSystemFunctions() {}
-
-  }
-
   public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("661c4575-879b-11e9-bb4b-c57da735262b")
@@ -312,6 +200,118 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
   }
 
+  public static interface ISystemComponentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3b7918e0-035b-11e9-a251-e3767b78f69f")
+    public java.lang.String GetTypeName();
+
+    @IDynamicResourceExtension.MethodId("e8adea82-b5f8-11ea-a2c5-5b1c7f861dd4")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllDecomposingSystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("fb06c7e3-394e-11eb-93f1-c3f5ad8bb73f")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem System();
+
+  }
+  
+  public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemComponentFunctionsImpl implements ISystemComponentFunctionsImpl {
+
+    public static final ISystemComponentFunctionsImpl INSTANCE = new SystemComponentFunctionsImpl();
+
+    private SystemComponentFunctionsImpl() {}
+
+  }
+  
+  public static class SystemComponentFunctions {
+
+    private SystemComponentFunctions() {}
+
+  }
+
+  public static interface ISystemWithLayerFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("70bfbfae-9c97-11e9-9b32-35cf2fd07621")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllSystemComponents();
+
+  }
+  
+  public static interface ISystemWithLayerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemWithLayerFunctionsImpl implements ISystemWithLayerFunctionsImpl {
+
+    public static final ISystemWithLayerFunctionsImpl INSTANCE = new SystemWithLayerFunctionsImpl();
+
+    private SystemWithLayerFunctionsImpl() {}
+
+  }
+  
+  public static class SystemWithLayerFunctions {
+
+    private SystemWithLayerFunctions() {}
+
+  }
+
+  public static interface INamedSystemWithSystemConfigurationFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fcec324a-8797-11e9-bb4b-c57da735262b")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("0c70d2c9-8798-11e9-bb4b-c57da735262b")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> SortedAllSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("61eaf769-009f-11ea-9b43-0b5ecf12c553")
+    public java.lang.String GroupName();
+
+  }
+  
+  public static interface INamedSystemWithSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class NamedSystemWithSystemConfigurationFunctionsImpl implements INamedSystemWithSystemConfigurationFunctionsImpl {
+
+    public static final INamedSystemWithSystemConfigurationFunctionsImpl INSTANCE = new NamedSystemWithSystemConfigurationFunctionsImpl();
+
+    private NamedSystemWithSystemConfigurationFunctionsImpl() {}
+
+  }
+  
+  public static class NamedSystemWithSystemConfigurationFunctions {
+
+    private NamedSystemWithSystemConfigurationFunctions() {}
+
+  }
+
+  public static interface ISystemOfSystemFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("faa19cf3-deab-11e9-b714-478bec98e62d")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> GetAllSystemConfigurations();
+
+  }
+  
+  public static interface ISystemOfSystemFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemOfSystemFunctionsImpl implements ISystemOfSystemFunctionsImpl {
+
+    public static final ISystemOfSystemFunctionsImpl INSTANCE = new SystemOfSystemFunctionsImpl();
+
+    private SystemOfSystemFunctionsImpl() {}
+
+  }
+  
+  public static class SystemOfSystemFunctions {
+
+    private SystemOfSystemFunctions() {}
+
+  }
+
   public static interface IAbstractSystemFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9d441428-616f-11ea-a72c-c14dab81a029")
@@ -364,4 +364,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,GGMgw9274tBOc2fS6CbUzxsHmJM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,acFRcf84XrRy2iF88Hoxn8C4vGo=] */

@@ -6,8 +6,8 @@ public class IamPackage {
   
   public static final Resource ActiveDirectorySystemConfiguration = new Resource("162a98ba-0220-11e9-b327-17da2da63a8f");
   public static final Resource RadiusSystemConfiguration = new Resource("90d82cf6-02c5-11e9-9e58-33d596257b14");
-  public static final Resource MasterActiveDirectorySystemConfiguration = new Resource("df6869b2-09ea-11e9-abef-3d869859c931");
-  public static final Resource SlaveActiveDirectorySystemConfiguration = new Resource("07c583f3-09eb-11e9-abef-3d869859c931");
+  public static final Resource WriteableDomainControllerSystemConfiguration = new Resource("df6869b2-09ea-11e9-abef-3d869859c931");
+  public static final Resource ReadOnlyDomainController = new Resource("07c583f3-09eb-11e9-abef-3d869859c931");
   public static final Resource ActiveDirectoryManagerSystemConfiguration = new Resource("15f0d90d-09ef-11e9-abef-3d869859c931");
   public static final Resource RSASystemConfiguration = new Resource("f8a71fc3-0a7e-11e9-a59d-d7a0c53e291c");
   
@@ -30,4 +30,4 @@ public class IamPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,icV9EeoE0GX7Z+AvyOaA4YUGJB4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,fwArtKxaIjZCz59BCXRuG955PD8=] */

@@ -97,7 +97,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IMasterActiveDirectorySystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IWriteableDomainControllerSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d640244f-0aa5-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
@@ -107,21 +107,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IMasterActiveDirectorySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IWriteableDomainControllerSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class MasterActiveDirectorySystemConfigurationFunctionsImpl implements IMasterActiveDirectorySystemConfigurationFunctionsImpl {
+  public static class WriteableDomainControllerSystemConfigurationFunctionsImpl implements IWriteableDomainControllerSystemConfigurationFunctionsImpl {
 
-    public static final IMasterActiveDirectorySystemConfigurationFunctionsImpl INSTANCE = new MasterActiveDirectorySystemConfigurationFunctionsImpl();
+    public static final IWriteableDomainControllerSystemConfigurationFunctionsImpl INSTANCE = new WriteableDomainControllerSystemConfigurationFunctionsImpl();
 
-    private MasterActiveDirectorySystemConfigurationFunctionsImpl() {}
+    private WriteableDomainControllerSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class MasterActiveDirectorySystemConfigurationFunctions {
+  public static class WriteableDomainControllerSystemConfigurationFunctions {
 
-    private MasterActiveDirectorySystemConfigurationFunctions() {}
+    private WriteableDomainControllerSystemConfigurationFunctions() {}
 
   }
 
@@ -349,7 +349,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface ISlaveActiveDirectorySystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IReadOnlyDomainControllerFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7d9b94f0-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
@@ -359,21 +359,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface ISlaveActiveDirectorySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IReadOnlyDomainControllerFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SlaveActiveDirectorySystemConfigurationFunctionsImpl implements ISlaveActiveDirectorySystemConfigurationFunctionsImpl {
+  public static class ReadOnlyDomainControllerFunctionsImpl implements IReadOnlyDomainControllerFunctionsImpl {
 
-    public static final ISlaveActiveDirectorySystemConfigurationFunctionsImpl INSTANCE = new SlaveActiveDirectorySystemConfigurationFunctionsImpl();
+    public static final IReadOnlyDomainControllerFunctionsImpl INSTANCE = new ReadOnlyDomainControllerFunctionsImpl();
 
-    private SlaveActiveDirectorySystemConfigurationFunctionsImpl() {}
+    private ReadOnlyDomainControllerFunctionsImpl() {}
 
   }
   
-  public static class SlaveActiveDirectorySystemConfigurationFunctions {
+  public static class ReadOnlyDomainControllerFunctions {
 
-    private SlaveActiveDirectorySystemConfigurationFunctions() {}
+    private ReadOnlyDomainControllerFunctions() {}
 
   }
 
@@ -967,4 +967,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,fYAsmAyMs2VKJhCVf5eZnDfedO4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,J7sQDldAoGMLO2+R8Qly8X4I3q0=] */

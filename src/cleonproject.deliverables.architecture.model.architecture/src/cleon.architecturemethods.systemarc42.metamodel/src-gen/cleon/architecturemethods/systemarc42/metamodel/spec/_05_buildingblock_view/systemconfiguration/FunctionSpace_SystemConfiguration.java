@@ -26,49 +26,6 @@ public class FunctionSpace_SystemConfiguration {
   /* End Protected Region   [[25454e48-020d-11e9-b327-17da2da63a8f]] */
 
 
-  public static interface ISystemConfigurationFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("30b54ff7-020d-11e9-b327-17da2da63a8f")
-    public java.lang.String GetType();
-
-    @IDynamicResourceExtension.MethodId("3364ecb7-021d-11e9-b327-17da2da63a8f")
-    public java.lang.String GetName();
-
-    @IDynamicResourceExtension.MethodId("0ea917ac-0e91-11e9-9f19-6d15636f4ecc")
-    public java.lang.String GetShortname();
-
-    @IDynamicResourceExtension.MethodId("16d2f46d-2abd-11e9-a3f8-336d9e792e17")
-    public java.lang.String GetMaterialTypeName();
-
-    @IDynamicResourceExtension.MethodId("d5b40877-bb98-11ea-aec8-5d01276af4ef")
-    public java.lang.String GetIncludePath();
-
-    @IDynamicResourceExtension.MethodId("d5b4087a-bb98-11ea-aec8-5d01276af4ef")
-    public java.lang.String GetStereotypeName();
-
-    @IDynamicResourceExtension.MethodId("c98353c7-f441-11ea-9b47-d76de0587caf")
-    public java.lang.String ShortnameOrOverride();
-
-  }
-  
-  public static interface ISystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class SystemConfigurationFunctionsImpl implements ISystemConfigurationFunctionsImpl {
-
-    public static final ISystemConfigurationFunctionsImpl INSTANCE = new SystemConfigurationFunctionsImpl();
-
-    private SystemConfigurationFunctionsImpl() {}
-
-  }
-  
-  public static class SystemConfigurationFunctions {
-
-    private SystemConfigurationFunctions() {}
-
-  }
-
   public static interface IWindowsSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("862a2d8a-0ab5-11e9-a8f9-abf1763bbc53")
@@ -967,4 +924,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,J7sQDldAoGMLO2+R8Qly8X4I3q0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,sz4h/TPjfheRnwi8ATi9rIq54HM=] */

@@ -169,6 +169,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("645ee604-b886-11e9-8760-2d4a9d15ec14")
     public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> GetAllSecuritySubzones();
 
+    @IDynamicResourceExtension.MethodId("71ac43f8-a998-11eb-8f9b-01c801f6a12b")
+    public List<cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone> SourceSecuritySubzones();
+
     @IDynamicResourceExtension.MethodId("85bc9b26-df87-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyInter();
 
@@ -860,4 +863,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,jhmQWR/f8Y9LFg/loNh8ZAUeaUM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,x0SW+aaPhRBiVLLhkbU+v5IF6qA=] */

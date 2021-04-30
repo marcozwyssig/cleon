@@ -13,7 +13,8 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topolog
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IRN;
 import ch.actifsource.util.log.Logger;
 import java.util.stream.Collectors;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.ISlaveActiveDirectorySystemConfiguration;
+
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IReadOnlyDomainController;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
 /* End Protected Region   [[7b6d94a1-9370-11e9-8139-e76b19cfb4bf,imports]] */
@@ -317,6 +318,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("bec338eb-2a4f-11eb-903e-7d97d99d39d5")
     public java.lang.String DomainPrefix();
 
+    @IDynamicResourceExtension.MethodId("eb3facce-a992-11eb-8f9b-01c801f6a12b")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment Environment();
+
   }
   
   public static interface IAbstractHostFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -336,7 +340,7 @@ public class FunctionSpace_Topology {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyReadonlyDomainController(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> abstractHostList) {
       /* Begin Protected Region [[0112faa4-b073-11ea-b791-9b401fd02359]] */
       return abstractHostList.stream()
-      		.filter(x -> x.selectInstanceOf() instanceof ISlaveActiveDirectorySystemConfiguration)
+      		.filter(x -> x.selectInstanceOf() instanceof IReadOnlyDomainController)
       		.collect(Collectors.toList());
       /* End Protected Region   [[0112faa4-b073-11ea-b791-9b401fd02359]] */
     }
@@ -767,4 +771,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,CD/isMndEiHG7PHZ3bMvhNlnwdE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,GP3kxVH7McgF/IPyuTzpgFF0Ba0=] */

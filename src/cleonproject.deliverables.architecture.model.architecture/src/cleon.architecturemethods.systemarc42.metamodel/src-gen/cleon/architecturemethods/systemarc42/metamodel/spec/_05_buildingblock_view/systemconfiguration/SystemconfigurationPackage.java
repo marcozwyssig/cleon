@@ -4,7 +4,6 @@ import ch.actifsource.core.Resource;
 
 public class SystemconfigurationPackage {
   
-  public static final Resource FunctionSpace_aE_SystemConfiguration_SystemConfiguration = new Resource("27b9d0bc-020d-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WindowsSystemConfiguration = new Resource("bbce4593-021f-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WriteableDomainControllerSystemConfiguration = new Resource("3562b171-0220-11e9-b327-17da2da63a8f");
   public static final Resource FunctionSpace_aE_SystemConfiguration_HypervisorSystemConfiguration = new Resource("0184c8b1-02bb-11e9-9e58-33d596257b14");
@@ -65,4 +64,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,9+Mg9d1H5M7xjO5eNvbM/ZiJiW4=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,EEeN+5G1HyD0oo/r+rzwL2ZFhqs=] */

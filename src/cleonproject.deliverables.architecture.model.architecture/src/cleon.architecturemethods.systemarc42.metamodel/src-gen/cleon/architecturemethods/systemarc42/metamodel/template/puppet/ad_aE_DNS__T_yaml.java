@@ -98,7 +98,7 @@ public class ad_aE_DNS__T_yaml {
     @Override
     public java.lang.String ReplacePointToUnderscore(final java.lang.String stringLiteral) {
       /* Begin Protected Region [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
-      return stringLiteral.replace('.', '_');
+      return stringLiteral.replace('.', '-');
       /* End Protected Region   [[7ae3dc62-ac1b-11eb-8ce4-4df2726518e8]] */
     }
 

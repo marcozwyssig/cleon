@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SourceInSubSecurityZoneByHost extends DynamicResource implements ISourceInSubSecurityZoneByHost {
+public class SourceInSubSecurityZoneCustom extends DynamicResource implements ISourceInSubSecurityZoneCustom {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISourceInSubSecurityZoneByHost> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISourceInSubSecurityZoneByHost>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISourceInSubSecurityZoneCustom> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISourceInSubSecurityZoneCustom>() {
     
     @Override
-    public ISourceInSubSecurityZoneByHost create() {
-      return new SourceInSubSecurityZoneByHost();
+    public ISourceInSubSecurityZoneCustom create() {
+      return new SourceInSubSecurityZoneCustom();
     }
     
     @Override
-    public ISourceInSubSecurityZoneByHost create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SourceInSubSecurityZoneByHost(resourceRepository, resource);
+    public ISourceInSubSecurityZoneCustom create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new SourceInSubSecurityZoneCustom(resourceRepository, resource);
     }
   
   };
 
-  public SourceInSubSecurityZoneByHost() {
-    super(ISourceInSubSecurityZoneByHost.TYPE_ID);
+  public SourceInSubSecurityZoneCustom() {
+    super(ISourceInSubSecurityZoneCustom.TYPE_ID);
   }
   
-  public SourceInSubSecurityZoneByHost(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISourceInSubSecurityZoneByHost.TYPE_ID);
+  public SourceInSubSecurityZoneCustom(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISourceInSubSecurityZoneCustom.TYPE_ID);
   }
 
   // attributes
@@ -39,6 +39,15 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
      _setListAttribute(cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, descriptions);
   }
 
+  @Override
+  public java.lang.String selectHostGroupName() {
+    return _getSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneCustom_hostGroupName);
+  }
+    
+  public void setHostGroupName(java.lang.String hostGroupName) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneCustom_hostGroupName, hostGroupName);
+  }
+
   // relations
   
   @Override
@@ -46,7 +55,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith);
   }
 
-  public SourceInSubSecurityZoneByHost setOnlyCommunicatesWith(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> onlyCommunicatesWith) {
+  public SourceInSubSecurityZoneCustom setOnlyCommunicatesWith(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> onlyCommunicatesWith) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, onlyCommunicatesWith);
     return this;
   }
@@ -56,7 +65,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_state);
   }
 
-  public SourceInSubSecurityZoneByHost setState(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState state) {
+  public SourceInSubSecurityZoneCustom setState(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState state) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_state, state);
     return this;
   }
@@ -66,7 +75,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_subZoneAccessPolicy);
   }
 
-  public SourceInSubSecurityZoneByHost setSubZoneAccessPolicy(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
+  public SourceInSubSecurityZoneCustom setSubZoneAccessPolicy(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy subZoneAccessPolicy) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_subZoneAccessPolicy, subZoneAccessPolicy);
     return this;
   }
@@ -76,7 +85,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public SourceInSubSecurityZoneByHost setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public SourceInSubSecurityZoneCustom setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -86,7 +95,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.threatmitigation.javamodel.IThreatMitigation.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_threatMitigations);
   }
 
-  public SourceInSubSecurityZoneByHost setThreatMitigations(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.threatmitigation.javamodel.IThreatMitigation> threatMitigations) {
+  public SourceInSubSecurityZoneCustom setThreatMitigations(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.threatmitigation.javamodel.IThreatMitigation> threatMitigations) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_threatMitigations, threatMitigations);
     return this;
   }
@@ -96,7 +105,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SourceInSubSecurityZoneByHost setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public SourceInSubSecurityZoneCustom setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -106,7 +115,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_usedInDomains);
   }
 
-  public SourceInSubSecurityZoneByHost setUsedInDomains(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain> usedInDomains) {
+  public SourceInSubSecurityZoneCustom setUsedInDomains(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain> usedInDomains) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_usedInDomains, usedInDomains);
     return this;
   }
@@ -116,6 +125,7 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
+    _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneCustom_hostGroupName, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_state, visitor);
@@ -126,4 +136,4 @@ public class SourceInSubSecurityZoneByHost extends DynamicResource implements IS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,70b3c6f7-b218-11e9-b89e-1728aee30149,3YcIZ5mO/GP6zUR7mB+bq2Iklpg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54,rNL/f19SdWaqPU/XY0NJEJp2bRI=] */

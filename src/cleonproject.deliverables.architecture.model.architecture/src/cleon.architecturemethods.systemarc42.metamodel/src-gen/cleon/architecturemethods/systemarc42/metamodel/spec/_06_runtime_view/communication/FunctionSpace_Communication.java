@@ -645,6 +645,54 @@ public class FunctionSpace_Communication {
 
   }
 
+  public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("885686bf-0ae2-11ea-bf24-ff0f7ff0bb53")
+    public java.lang.String includeMissingCommas();
+
+  }
+  
+  public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("885686bf-0ae2-11ea-bf24-ff0f7ff0bb53")
+    public java.lang.String includeMissingCommas(final java.lang.String textLiteral);
+
+  }
+  
+  public static class TextLiteralFunctionsImpl implements ITextLiteralFunctionsImpl {
+
+    public static final ITextLiteralFunctionsImpl INSTANCE = new TextLiteralFunctionsImpl();
+
+    private TextLiteralFunctionsImpl() {}
+
+    @Override
+    public java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
+      /* Begin Protected Region [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
+      final int maxSize = MAX_COLUMNS - 2;
+      if (textLiteral.length() == 0) {
+      	return StringUtil.repeat(",", maxSize);
+      }
+
+      final int size = textLiteral.split(",").length;
+      if (maxSize - size < 0) {
+      	throw new RuntimeException(String.format("Size %d for missingCommas to high", size));
+      }
+      return textLiteral + StringUtil.repeat(",", maxSize - size);
+      /* End Protected Region   [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
+    }
+
+  }
+  
+  public static class TextLiteralFunctions {
+
+    private TextLiteralFunctions() {}
+
+    public static java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
+      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).includeMissingCommas(textLiteral);
+    }
+
+  }
+
   public static interface ISourceInSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("73e2a655-e05b-11e9-aa67-4505845acdbd")
@@ -706,54 +754,6 @@ public class FunctionSpace_Communication {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> OnlyInter(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone> sourceInSubSecurityZoneList) {
       return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZoneList).OnlyInter(sourceInSubSecurityZoneList);
-    }
-
-  }
-
-  public static interface ITextLiteralFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("885686bf-0ae2-11ea-bf24-ff0f7ff0bb53")
-    public java.lang.String includeMissingCommas();
-
-  }
-  
-  public static interface ITextLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("885686bf-0ae2-11ea-bf24-ff0f7ff0bb53")
-    public java.lang.String includeMissingCommas(final java.lang.String textLiteral);
-
-  }
-  
-  public static class TextLiteralFunctionsImpl implements ITextLiteralFunctionsImpl {
-
-    public static final ITextLiteralFunctionsImpl INSTANCE = new TextLiteralFunctionsImpl();
-
-    private TextLiteralFunctionsImpl() {}
-
-    @Override
-    public java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
-      /* Begin Protected Region [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
-      final int maxSize = MAX_COLUMNS - 2;
-      if (textLiteral.length() == 0) {
-      	return StringUtil.repeat(",", maxSize);
-      }
-
-      final int size = textLiteral.split(",").length;
-      if (maxSize - size < 0) {
-      	throw new RuntimeException(String.format("Size %d for missingCommas to high", size));
-      }
-      return textLiteral + StringUtil.repeat(",", maxSize - size);
-      /* End Protected Region   [[885686bf-0ae2-11ea-bf24-ff0f7ff0bb53]] */
-    }
-
-  }
-  
-  public static class TextLiteralFunctions {
-
-    private TextLiteralFunctions() {}
-
-    public static java.lang.String includeMissingCommas(final java.lang.String textLiteral) {
-      return DynamicResourceUtil.invoke(ITextLiteralFunctionsImpl.class, TextLiteralFunctionsImpl.INSTANCE, textLiteral).includeMissingCommas(textLiteral);
     }
 
   }
@@ -861,6 +861,31 @@ public class FunctionSpace_Communication {
 
   }
 
+  public static interface ISourceInSubSecurityZoneCustomFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("245514fa-ad95-11eb-a3eb-5dbdee6f3a54")
+    public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+
+  }
+  
+  public static interface ISourceInSubSecurityZoneCustomFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SourceInSubSecurityZoneCustomFunctionsImpl implements ISourceInSubSecurityZoneCustomFunctionsImpl {
+
+    public static final ISourceInSubSecurityZoneCustomFunctionsImpl INSTANCE = new SourceInSubSecurityZoneCustomFunctionsImpl();
+
+    private SourceInSubSecurityZoneCustomFunctionsImpl() {}
+
+  }
+  
+  public static class SourceInSubSecurityZoneCustomFunctions {
+
+    private SourceInSubSecurityZoneCustomFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,x0SW+aaPhRBiVLLhkbU+v5IF6qA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,PkHCFJr6cDGL1hZCWTCsYLwjaVE=] */

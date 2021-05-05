@@ -44,7 +44,9 @@ public class CommunicationPackage {
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneByHost = new Resource("7420f04a-c778-11ea-b0b6-e5df79e86bc2");
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneByNetwork = new Resource("0c8acc4a-c782-11ea-b0b6-e5df79e86bc2");
   public static final Resource SourceInSubSecurityZone_usedInDomains = new Resource("24731510-d00f-11ea-b5a9-731249efa1a3");
-  public static final Resource SourceInSubSecurityZone_overrideHostGroupName = new Resource("83fbe6ae-2ffc-11eb-b17d-af74b7cf0bc4");
+  public static final Resource SourceInSubSecurityZoneCustom_hostGroupName = new Resource("83fbe6ae-2ffc-11eb-b17d-af74b7cf0bc4");
+  public static final Resource SourceInSubSecurityZoneCustom = new Resource("cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54");
+  public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneCustom = new Resource("1f4156fb-ad95-11eb-a3eb-5dbdee6f3a54");
   
   /* Begin Protected Region [[user]] */
   
@@ -65,4 +67,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,JQYYxl2BSLZBg3HLB8REG8EknJY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,f5PL5fR3sv+Fjl7ISA2DDKhYzfI=] */

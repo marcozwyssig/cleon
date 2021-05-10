@@ -66,6 +66,12 @@ public class FunctionSpace_Activity_Deployment {
     @IDynamicResourceExtension.MethodId("28c748b0-7116-11eb-8b0e-e301c2085b42")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount> ToServiceAccounts();
 
+    @IDynamicResourceExtension.MethodId("7b900ced-ae40-11eb-9680-77b158711103")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponentOnlyEnabled();
+
+    @IDynamicResourceExtension.MethodId("947f9071-ae40-11eb-9680-77b158711103")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> AllUsedRoleSystemComponentOnlyEnabledDistinct();
+
   }
   
   public static interface IActivityPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -356,4 +362,4 @@ public class FunctionSpace_Activity_Deployment {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,atlbSiYq56RcCQFU8dcUKB13ykY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,512e5470-7f07-11e9-98a3-b1bd805f0a31,QvHFk+kVls21ujM0ks3SRVnfwZw=] */

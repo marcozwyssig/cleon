@@ -23,7 +23,7 @@ public class FunctionSpace_Role {
   public static interface IRoleSystemComponentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da41297a-35ef-11e9-9d58-25409887bb2a")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetNetdomainNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode GetNetdomainNode();
 
     @IDynamicResourceExtension.MethodId("2e224bf8-35f5-11e9-9d58-25409887bb2a")
     public java.lang.String GetDescription();
@@ -313,4 +313,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,fIWGgOeg4okT3I9UQz4bKvQplw4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,Fp8MqGDzBVgDoYfS2n5bFB+qa+4=] */

@@ -231,31 +231,6 @@ public class FunctionSpace_XML {
 
   }
 
-  public static interface INetworkNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("fd21c5e8-90da-11e9-b29b-f1077960b1fa")
-    public java.lang.String Name();
-
-  }
-  
-  public static interface INetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NetworkNodeFunctionsImpl implements INetworkNodeFunctionsImpl {
-
-    public static final INetworkNodeFunctionsImpl INSTANCE = new NetworkNodeFunctionsImpl();
-
-    private NetworkNodeFunctionsImpl() {}
-
-  }
-  
-  public static class NetworkNodeFunctions {
-
-    private NetworkNodeFunctions() {}
-
-  }
-
   public static interface IHostNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("de1344bb-4836-11ea-a9d8-93d0ce680cba")
@@ -283,4 +258,4 @@ public class FunctionSpace_XML {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,3mBHZvsXtGgc5yakTWE5qsPXYnc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,160415c0-90d9-11e9-b29b-f1077960b1fa,Is8dNngSoB2ogeNSmiRNJEIOYt8=] */

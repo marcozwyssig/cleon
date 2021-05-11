@@ -21,37 +21,6 @@ public class FunctionSpace_Network {
   /* End Protected Region   [[2acb3661-7b0e-11e9-a70f-4dc03941a024]] */
 
 
-  public static interface INetworkNodeFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("3436b570-7b0e-11e9-a70f-4dc03941a024")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> GetNetworkNodes();
-
-    @IDynamicResourceExtension.MethodId("1d92d94f-7b1a-11e9-a70f-4dc03941a024")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> GetNetworkNodesFromNetdomain();
-
-    @IDynamicResourceExtension.MethodId("dd95c0b7-7b11-11e9-a70f-4dc03941a024")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> GetNodesFromSecurityZone();
-
-  }
-  
-  public static interface INetworkNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-  }
-  
-  public static class NetworkNodeFunctionsImpl implements INetworkNodeFunctionsImpl {
-
-    public static final INetworkNodeFunctionsImpl INSTANCE = new NetworkNodeFunctionsImpl();
-
-    private NetworkNodeFunctionsImpl() {}
-
-  }
-  
-  public static class NetworkNodeFunctions {
-
-    private NetworkNodeFunctions() {}
-
-  }
-
   public static interface IAbstractNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b8d3f6b9-ca3f-11e9-b209-f7d5bd0d6e0f")
@@ -379,4 +348,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,LPPYQxrR9W0BO9CFzSvlNV0+EkY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,o8L0hHfA1wtL2jmlU1tv6YEe3dY=] */

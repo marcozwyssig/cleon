@@ -27,7 +27,7 @@ public class FunctionSpace_Node {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.ISupplyAndBuildNodeDecomposite> GetParents();
 
     @IDynamicResourceExtension.MethodId("8dd02a63-02d5-11e9-9e58-33d596257b14")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetSubnetNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode GetSubnetNode();
 
     @IDynamicResourceExtension.MethodId("bef20cb3-0e2a-11e9-8b4c-f9aec93d8b56")
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyLocationNode GetLocationNode();
@@ -42,7 +42,7 @@ public class FunctionSpace_Node {
     public java.lang.String GetTypeName();
 
     @IDynamicResourceExtension.MethodId("29a7694e-1da4-11e9-b601-db75aa6f89a4")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllNestedNetdomainNodes();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode> GetAllNestedSiteNodes();
 
     @IDynamicResourceExtension.MethodId("58f6e61c-2aba-11e9-a3f8-336d9e792e17")
     public java.lang.Boolean IsSupplied();
@@ -53,11 +53,11 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("9e96171b-6d92-11e9-b84d-d319514e887f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> GetAllNestedBuildNodes();
 
-    @IDynamicResourceExtension.MethodId("b402dc7d-7ae0-11e9-a70f-4dc03941a024")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode> GetAllNestedNetDomain();
+    @IDynamicResourceExtension.MethodId("73b6c2b1-b25a-11eb-84da-a358b37bb644")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IServiceBuildNode> GetAllNestedServiceBuildNodes();
 
     @IDynamicResourceExtension.MethodId("d9a8e4f8-7ba7-11e9-94aa-f1ea7ea33f46")
-    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode GetNetworkNode();
+    public cleon.modelinglanguages.network.metamodel.spec.javamodel.IAbstractNetworkNode NetworkNode();
 
     @IDynamicResourceExtension.MethodId("b5680fde-7f14-11e9-9a52-07d4b074defc")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> GetAllUsedSystemComponent();
@@ -87,4 +87,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,BMaKO4WsiqZ7nlj0z3cveSbx3qg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,RB6SOcURnpOxk3oe1r56Ef4frhw=] */

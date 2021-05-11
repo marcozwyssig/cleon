@@ -5,9 +5,6 @@ import ch.actifsource.core.Resource;
 public class NetworkPackage {
   
   public static final Resource NetworkConcept = new Resource("b4d4ca85-4b28-11e9-8338-41c203971ecb");
-  public static final Resource NetworkNode = new Resource("eb84db3b-7ae6-11e9-a70f-4dc03941a024");
-  public static final Resource NetworkNode_node = new Resource("092b303e-7ae7-11e9-a70f-4dc03941a024");
-  public static final Resource FunctionSpace_aE_Network_NetworkNode = new Resource("2c5028d7-7b0e-11e9-a70f-4dc03941a024");
   public static final Resource NetworkSite = new Resource("398f37f2-928a-11e9-959e-8115c2f9e41e");
   public static final Resource NetworkEnvironment_networkSite = new Resource("3fc8637d-928a-11e9-959e-8115c2f9e41e");
   public static final Resource NetworkSite_site = new Resource("aa3d0a8a-928a-11e9-959e-8115c2f9e41e");
@@ -48,4 +45,4 @@ public class NetworkPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,RkX4Hmuuhk38nT0RDwLG1LJYuTU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,lIWZOfLv8ApoYJxZLsXeSO90wfY=] */

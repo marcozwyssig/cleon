@@ -46,31 +46,31 @@ public class FunctionSpace_SupplyNode {
 
   }
 
-  public static interface ISupplyNetDomainNodeFunctions extends IDynamicResourceExtension {
+  public static interface ISupplySiteNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0fbb539b-0aaf-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("56fd4b1c-2ab8-11e9-a3f8-336d9e792e17")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNetDomainNode GetSubnetNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode GetSubnetNode();
 
   }
   
-  public static interface ISupplyNetDomainNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISupplySiteNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SupplyNetDomainNodeFunctionsImpl implements ISupplyNetDomainNodeFunctionsImpl {
+  public static class SupplySiteNodeFunctionsImpl implements ISupplySiteNodeFunctionsImpl {
 
-    public static final ISupplyNetDomainNodeFunctionsImpl INSTANCE = new SupplyNetDomainNodeFunctionsImpl();
+    public static final ISupplySiteNodeFunctionsImpl INSTANCE = new SupplySiteNodeFunctionsImpl();
 
-    private SupplyNetDomainNodeFunctionsImpl() {}
+    private SupplySiteNodeFunctionsImpl() {}
 
   }
   
-  public static class SupplyNetDomainNodeFunctions {
+  public static class SupplySiteNodeFunctions {
 
-    private SupplyNetDomainNodeFunctions() {}
+    private SupplySiteNodeFunctions() {}
 
   }
 
@@ -119,4 +119,4 @@ public class FunctionSpace_SupplyNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,5c6fQBXwVzXvWVX/pURt5VCBxps=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,G8zc9hirisd/0RMJoZxIFeoDJa4=] */

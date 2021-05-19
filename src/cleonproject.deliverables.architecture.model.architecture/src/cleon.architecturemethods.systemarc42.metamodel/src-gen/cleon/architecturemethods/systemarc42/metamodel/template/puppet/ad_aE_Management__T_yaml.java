@@ -11,11 +11,9 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.ActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.FunctionSpace_Activity_Buildingblock.IAbstractAuthZBuildingBlockPermissionFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.FunctionSpace_AuthZ_Deployment.IAbstractGroupFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite;
-
+import java.util.stream.Collectors;
 /* End Protected Region   [[cfa40d24-5180-11ea-a946-13c393300b57,imports]] */
 
 public class ad_aE_Management__T_yaml {
@@ -90,6 +88,45 @@ public class ad_aE_Management__T_yaml {
 
   }
 
+  public static interface INetworkSiteFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("8247b809-b873-11eb-8e8b-1d4fd4efa35e")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue();
+
+  }
+  
+  public static interface INetworkSiteFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("8247b809-b873-11eb-8e8b-1d4fd4efa35e")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList);
+
+  }
+  
+  public static class NetworkSiteFunctionsImpl implements INetworkSiteFunctionsImpl {
+
+    public static final INetworkSiteFunctionsImpl INSTANCE = new NetworkSiteFunctionsImpl();
+
+    private NetworkSiteFunctionsImpl() {}
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      /* Begin Protected Region [[8247b809-b873-11eb-8e8b-1d4fd4efa35e]] */
+      return networkSiteList.stream().filter(x -> x.selectExportOU() == null || x.selectExportOU().booleanValue()).collect(Collectors.toList());
+      /* End Protected Region   [[8247b809-b873-11eb-8e8b-1d4fd4efa35e]] */
+    }
+
+  }
+  
+  public static class NetworkSiteFunctions {
+
+    private NetworkSiteFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> WhereOUExportIsTrue(final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite> networkSiteList) {
+      return DynamicResourceUtil.invoke(INetworkSiteFunctionsImpl.class, NetworkSiteFunctionsImpl.INSTANCE, networkSiteList).WhereOUExportIsTrue(networkSiteList);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,Ke44ZeRPH1D3kb8dDn9X/oguW2k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cfa40d24-5180-11ea-a946-13c393300b57,cPNi93Wyh25680xb6w7yewpCuF4=] */

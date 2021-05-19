@@ -35,6 +35,7 @@ public class PuppetPackage {
   public static final Resource profiles__T_yaml_SnmpCustomAdvancedChannel = new Resource("44bcf747-8af4-11eb-82c2-f3f196623a8b");
   public static final Resource firewall__T_yaml_Service = new Resource("f7e57218-8bdb-11eb-a832-91f5636963f2");
   public static final Resource ad_aE_DNS__T_yaml_StringLiteral = new Resource("7ae3682e-ac1b-11eb-8ce4-4df2726518e8");
+  public static final Resource ad_aE_Management__T_yaml_NetworkSite = new Resource("824769e5-b873-11eb-8e8b-1d4fd4efa35e");
   
   /* Begin Protected Region [[user]] */
   
@@ -55,4 +56,4 @@ public class PuppetPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,Wp8qJV2ICcHsq8lZGygZ4KjZCGM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.puppet,32JnM5Ns8EbLfwSJtEqrHAnkYH0=] */

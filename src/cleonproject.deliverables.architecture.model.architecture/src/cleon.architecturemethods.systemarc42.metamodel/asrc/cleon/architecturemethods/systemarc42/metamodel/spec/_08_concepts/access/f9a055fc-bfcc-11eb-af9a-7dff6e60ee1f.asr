@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="f9a055fc-bfcc-11eb-af9a-7dff6e60ee1f">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="12a18506-bfd0-11eb-af9a-7dff6e60ee1f" type="resource" guid="571b56fe-2438-11eb-83b1-3d2a97975978" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f9a07d0e-bfcc-11eb-af9a-7dff6e60ee1f" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="9b5333e6-c1d8-11eb-8c09-03c14294ecfb" type="resource" guid="962adc32-c1d8-11eb-8c09-03c14294ecfb" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="12a18506-bfd0-11eb-af9a-7dff6e60ee1f">
+      <resource guid="571b56fe-2438-11eb-83b1-3d2a97975978">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="571b5700-2438-11eb-83b1-3d2a97975978" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5f7dcb9b-2438-11eb-83b1-3d2a97975978" type="resource" guid="2d5c5b96-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="5945d826-2438-11eb-83b1-3d2a97975978" type="literal">urlpath</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="571c1a52-2438-11eb-83b1-3d2a97975978" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="f9a44d9f-bfcc-11eb-af9a-7dff6e60ee1f" type="literal">AccessConfigurationWebService</object>
+  </predicate>
+</resource>
+

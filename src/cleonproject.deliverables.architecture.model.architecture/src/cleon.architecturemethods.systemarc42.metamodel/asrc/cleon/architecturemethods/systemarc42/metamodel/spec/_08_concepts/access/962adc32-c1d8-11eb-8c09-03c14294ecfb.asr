@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="962adc32-c1d8-11eb-8c09-03c14294ecfb">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="a490846a-c1e8-11eb-8c09-03c14294ecfb" type="resource" guid="442da5e6-2439-11eb-83b1-3d2a97975978" />
+    <resource statement-guid="a7ccb769-c1d8-11eb-8c09-03c14294ecfb" type="resource" guid="f9112fab-c1d5-11eb-8c09-03c14294ecfb" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="962b0344-c1d8-11eb-8c09-03c14294ecfb" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="962beda6-c1d8-11eb-8c09-03c14294ecfb" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="a490846a-c1e8-11eb-8c09-03c14294ecfb">
+      <resource guid="442da5e6-2439-11eb-83b1-3d2a97975978">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="442da5e8-2439-11eb-83b1-3d2a97975978" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="442dccf9-2439-11eb-83b1-3d2a97975978" type="literal">hostAccessMode</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="442fc8cb-2439-11eb-83b1-3d2a97975978" type="resource" guid="ec497722-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="442fefdc-2439-11eb-83b1-3d2a97975978" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="488bfb1d-172a-11db-b8a3-b1ac497af945">
+          <object statement-guid="2f0baf14-243a-11eb-83b1-3d2a97975978" type="resource" guid="4dc47b3f-2439-11eb-83b1-3d2a97975978" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="443016ed-2439-11eb-83b1-3d2a97975978" type="resource" guid="3b5f0242-2439-11eb-83b1-3d2a97975978" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="a7ccb769-c1d8-11eb-8c09-03c14294ecfb">
+      <resource guid="f9112fab-c1d5-11eb-8c09-03c14294ecfb">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="f91156bd-c1d5-11eb-8c09-03c14294ecfb" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="fa9d272d-c1d5-11eb-8c09-03c14294ecfb" type="literal">service</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f912dd5f-c1d5-11eb-8c09-03c14294ecfb" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="f9130470-c1d5-11eb-8c09-03c14294ecfb" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="2fdebaef-c1d6-11eb-8c09-03c14294ecfb" type="resource" guid="a273b70a-6da3-11e9-8af5-2346ca56c2e2" />
+        </predicate>
+        <predicate guid="e389275d-488a-11e3-8c01-59588b4658e3">
+          <object statement-guid="2c830c5e-c1d6-11eb-8c09-03c14294ecfb" type="resource" guid="118e9dc5-1b6c-11dd-af33-07ccc9113053" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="962bc695-c1d8-11eb-8c09-03c14294ecfb" type="literal">AccessConfigurationService</object>
+  </predicate>
+</resource>
+

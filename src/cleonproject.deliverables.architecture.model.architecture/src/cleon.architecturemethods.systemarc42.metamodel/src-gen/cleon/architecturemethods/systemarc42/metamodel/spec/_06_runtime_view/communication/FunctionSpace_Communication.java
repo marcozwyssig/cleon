@@ -187,6 +187,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("28012e2a-dfa3-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServices();
 
+    @IDynamicResourceExtension.MethodId("9593f53a-bfcb-11eb-af9a-7dff6e60ee1f")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServicesFlatten();
+
     @IDynamicResourceExtension.MethodId("c71161b1-e03e-11e9-aa67-4505845acdbd")
     public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination Destination();
 
@@ -242,7 +245,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> SelectAllowedServices();
 
     @IDynamicResourceExtension.MethodId("21fa0b77-1eb9-11eb-9eef-0dadb2b460da")
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration);
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("a67840f7-308e-11eb-9149-f1e36a7322e5")
     public java.lang.String SourceVLAN();
@@ -288,7 +291,7 @@ public class FunctionSpace_Communication {
     public java.lang.String RenderIntraDestinationHostGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestinationSubSecurityZone dst, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("21fa0b77-1eb9-11eb-9eef-0dadb2b460da")
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
 
   }
   
@@ -363,11 +366,11 @@ public class FunctionSpace_Communication {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctByDestination(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[9d900304-3d2f-11eb-986d-0d884ba5cf53]] */
-        final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
-          	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
-          	return functions.Destination();
-          });
-          return sourceList.stream().filter(distinctByKeys).collect(Collectors.toList());
+      final Predicate<ISource> distinctByKeys = ListUtil.distinctByKeys(x -> {
+      	final ISourceFunctions functions = x.extension(ISourceFunctions.class);
+      	return functions.Destination();
+      });
+      return sourceList.stream().filter(distinctByKeys).collect(Collectors.toList());
       /* End Protected Region   [[9d900304-3d2f-11eb-986d-0d884ba5cf53]] */
     }
 
@@ -511,18 +514,17 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+    public java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[21fa0b77-1eb9-11eb-9eef-0dadb2b460da]] */
       final List<ISecuritySubZone> srcSubzones = src.extension(IAbstractHostFunctions.class).Subzones();
       final List<ISecuritySubZone> dstSubzones = dst.extension(IAbstractHostFunctions.class).Subzones();
 
-      final List<? extends IPortService> dstServices = accessConfiguration.selectAccessCommunicationType()
-      		.selectServicesForAccess();
+      final var dstService = accessConfigurationService.selectService();
 
       return source.selectAccessAllowed().values().stream().anyMatch(x -> {
       	final List<IAbstractService> abstractServices = x.extension(ISourceInSubSecurityZoneFunctions.class)
       			.CommunicatesWithFlatten();
-      	if (abstractServices.stream().anyMatch(dstServices::contains) == false) {
+      	if (abstractServices.stream().anyMatch(svc -> svc.equals(dstService)) == false) {
       		return false;
       	}
 
@@ -593,8 +595,8 @@ public class FunctionSpace_Communication {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).RenderIntraDestinationHostGroups(env, dst, source);
     }
 
-    public static java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration accessConfiguration, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
-      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).CanCommunicate(src, dst, accessConfiguration, source);
+    public static java.lang.Boolean CanCommunicate(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost dst, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).CanCommunicate(src, dst, accessConfigurationService, source);
     }
 
   }
@@ -888,4 +890,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,PkHCFJr6cDGL1hZCWTCsYLwjaVE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,MTP6m2tglrTsGAsIkeZzsMUoj/M=] */

@@ -10,8 +10,8 @@ public interface IAccessConfiguration extends ch.actifsource.core.javamodel.IDec
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessCommunicationType selectAccessCommunicationType();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IHostAccessMode selectHostAccessMode();
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService> selectAccessByService();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,ZBpiPxVBS4ad+9qTT6AidcTtaTw=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,QgIIcXYwfAYK2Ir5GAwLbQB7+04=] */

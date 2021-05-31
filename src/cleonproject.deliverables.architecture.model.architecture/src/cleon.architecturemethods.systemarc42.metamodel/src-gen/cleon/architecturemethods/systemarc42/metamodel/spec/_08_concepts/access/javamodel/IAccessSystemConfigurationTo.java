@@ -2,7 +2,7 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISystemConfigurationAccessTo extends ch.actifsource.core.javamodel.IDecorator {
+public interface IAccessSystemConfigurationTo extends ch.actifsource.core.javamodel.IDecorator {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("885b4821-19c4-11eb-8585-65084a06c07f");
   
@@ -20,4 +20,4 @@ public interface ISystemConfigurationAccessTo extends ch.actifsource.core.javamo
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,w+iLf2o6dwGrNObFxuSXjF6xAiY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,885b4821-19c4-11eb-8585-65084a06c07f,daAUj6FiKBIAP4QRpQtms82yh6c=] */

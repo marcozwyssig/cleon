@@ -12,10 +12,12 @@ import ch.actifsource.core.Resource;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.remote_access.javamodel.ITerminalServerSystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.FunctionSpace_Access.IAccessConfigurationFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.FunctionSpace_Access.IAccessCommunicationTypeFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.FunctionSpace_Access.IAccessConfigurationServiceFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessSystemConfigurationTo;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessTo;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ICluster;
@@ -29,29 +31,30 @@ public class access__T_yaml {
 
   /* Begin Protected Region [[b13f88ca-1e75-11eb-b08c-d72de2e3f55f]] */
   public static class TextHelper {
-  	private static String WwW = "www";
+  	private static String HTTPS = "https";
+  	private static String HTTP = "http";
 
-  	public static void checkAndAddText(Map<Resource, ? extends IAccessConfiguration> accessConfigurationMap,
-  			IAbstractHost src, IAbstractHost dst, ISourceFunctions sourceFunctions,
-  			HashMap<String, HashMap<String, List<String>>> siteTable, String protcol, boolean useProtocol) {
+  	public static void checkAndAddText(final Map<Resource, ? extends IAccessConfiguration> accessConfigurationMap,
+  			final IAbstractHost src, final IAbstractHost dst, final ISourceFunctions sourceFunctions,
+  			final HashMap<String, HashMap<String, List<String>>> siteTable, final boolean useProtocol) {
 
   		if (accessConfigurationMap.isEmpty() == false) {
-  			final IAccessConfiguration accessConfiguration = accessConfigurationMap.values().stream().findFirst()
-  					.get();
-  			if (accessConfiguration.selectHostAccessMode() == null
-  					|| accessConfiguration.selectHostAccessMode().isNoCluster()) {
-  				if (dst instanceof ICluster) {
-  					return;
-  				}
-  			} else if (accessConfiguration.selectHostAccessMode().isOnlyCluster()) {
-  				if (!(dst instanceof ICluster)) {
-  					return;
-  				}
-  			}
+  			accessConfigurationMap.values().stream().forEach(accessConfiguration -> {
+  				accessConfiguration.selectAccessByService().values().stream().forEach(accessConfigurationService -> {
+  					if (accessConfigurationService.selectHostAccessMode() == null || accessConfigurationService.selectHostAccessMode().isNoCluster()) {
+  						if (dst instanceof ICluster) {
+  							return;
+  						}
+  					} else if (accessConfigurationService.selectHostAccessMode().isOnlyCluster() && !(dst instanceof ICluster)) {
+  						return;
+  					}
 
-  			if (sourceFunctions.CanCommunicate(src, dst, accessConfiguration)) {
-  				TextHelper.addAccessEntry(siteTable, dst, dst, protcol, accessConfiguration, useProtocol);
-  			}
+  					if (sourceFunctions.CanCommunicate(src, dst, accessConfigurationService)) {
+  						final var typeFunctions = accessConfiguration.selectAccessCommunicationType().extension(IAccessCommunicationTypeFunctions.class);
+  						TextHelper.addAccessEntry(siteTable, dst, dst, typeFunctions.Protocol(), accessConfigurationService, useProtocol);
+  					}
+  				});
+  			});
   		}
   	}
 
@@ -74,7 +77,7 @@ public class access__T_yaml {
   	}
 
   	public static java.lang.String printFirefoxText(final HashMap<String, HashMap<String, List<String>>> siteTable,
-  			ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
+  			final ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
   		final ISystemConfigurationAccessFromFunctions accessFromFunctions = systemConfigurationAccessFrom
   				.extension(ISystemConfigurationAccessFromFunctions.class);
 
@@ -98,8 +101,8 @@ public class access__T_yaml {
   	}
 
   	private static void addAccessEntry(final HashMap<String, HashMap<String, List<String>>> siteTable,
-  			final IAbstractHost abstractHost, IAbstractHost dst, String protocol,
-  			IAccessConfiguration accessConfiguration, boolean useProtocol) {
+  			final IAbstractHost abstractHost, final IAbstractHost dst, final String protocol,
+  			final IAccessConfigurationService accessConfigurationService, final boolean useProtocol) {
 
   		final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions dstHostFunctions = dst
   				.extension(
@@ -121,26 +124,22 @@ public class access__T_yaml {
   			siteTable.get(siteName).put(systemName, new ArrayList<>());
   		}
 
-  		final IAccessConfigurationFunctions accessConfigurationFunctions = accessConfiguration
-  				.extension(IAccessConfigurationFunctions.class);
+  		final var accessConfigurationFunctions = accessConfigurationService
+  				.extension(IAccessConfigurationServiceFunctions.class);
   		String entry;
-  		if (protocol.equals(WwW)) {
+  		if (protocol.equals(HTTP) || protocol.equals(HTTPS)) {
   			if (useProtocol) {
-  				entry = String.format("https://%s: %s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
+  				entry = String.format("%s://%s: www", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
   			} else {
-  				entry = String.format("https://%s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
+  				entry = String.format("%s://%s", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
   			}
 
+  		} else if (useProtocol) {
+  			entry = String.format("%s: %s",
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()), protocol);
   		} else {
-  			if (useProtocol) {
-  				entry = String.format("%s: %s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
-  			} else {
-  				entry = String.format("%s",
-  						accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
-  			}
+  			entry = String.format("%s",
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
   		}
 
   		siteTable.get(siteName).get(systemName).add(entry);
@@ -226,7 +225,7 @@ public class access__T_yaml {
       final HashMap<String, HashMap<String, List<String>>> siteTable = new HashMap<>();
 
       for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
-      	for (final ISystemConfigurationAccessTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
+      	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
       		final ISourceFunctions sourceFunctions = accessTo.selectSource().extension(ISourceFunctions.class);
       		if (sourceFunctions.Destination().selectDestinationSystemConfiguration()
@@ -238,11 +237,11 @@ public class access__T_yaml {
       				.equals(dst.selectInstanceOf())) {
 
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationRDP(), src, dst, sourceFunctions,
-      					siteTable, "rdp", true);
+      					siteTable, true);
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationSSH(), src, dst, sourceFunctions,
-      					siteTable, "ssh", true);
+      					siteTable, true);
       			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationWeb(), src, dst, sourceFunctions,
-      					siteTable, TextHelper.WwW, true);
+      					siteTable, true);
       		}
       	}
       }
@@ -254,11 +253,11 @@ public class access__T_yaml {
     @Override
     public java.lang.String RenderTextFirefox(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite abstractSite, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost src, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.ISystemConfigurationAccessFrom systemConfigurationAccessFrom) {
       /* Begin Protected Region [[fba8bb9b-2443-11eb-989b-5523e93a6c25]] */
-      final IAbstractSiteFunctions abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
+      final var abstractSiteFunctions = abstractSite.extension(IAbstractSiteFunctions.class);
       final HashMap<String, HashMap<String, List<String>>> siteTable = new HashMap<>();
 
       for (final IAbstractHost dst : abstractSiteFunctions.AllHostsWithAllowedManaged()) {
-      	for (final ISystemConfigurationAccessTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
+      	for (final IAccessSystemConfigurationTo accessTo : systemConfigurationAccessFrom.selectAccessTo()
       			.values()) {
       		final ISourceFunctions sourceFunctions = accessTo.selectSource().extension(ISourceFunctions.class);
       		if (sourceFunctions.Destination().selectDestinationSystemConfiguration()
@@ -268,9 +267,7 @@ public class access__T_yaml {
 
       		if (sourceFunctions.Destination().selectDestinationSystemConfiguration()
       				.equals(dst.selectInstanceOf())) {
-
-      			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationWeb(), src, dst, sourceFunctions,
-      					siteTable, TextHelper.WwW, false);
+      			TextHelper.checkAndAddText(accessTo.selectAccessConfigurationWeb(), src, dst, sourceFunctions, siteTable, false);
       		}
       	}
       }

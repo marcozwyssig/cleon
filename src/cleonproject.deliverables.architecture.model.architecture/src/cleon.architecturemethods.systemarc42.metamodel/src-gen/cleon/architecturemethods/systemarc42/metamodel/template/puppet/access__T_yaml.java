@@ -129,17 +129,16 @@ public class access__T_yaml {
   		String entry;
   		if (protocol.equals(HTTP) || protocol.equals(HTTPS)) {
   			if (useProtocol) {
-  				entry = String.format("%s://%s: www", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
+  				entry = String.format("%s://%s: www", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService.selectService())));
   			} else {
-  				entry = String.format("%s://%s", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
+  				entry = String.format("%s://%s", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService.selectService())));
   			}
-
   		} else if (useProtocol) {
   			entry = String.format("%s: %s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()), protocol);
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
   		} else {
   			entry = String.format("%s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(), accessConfigurationService.selectService()));
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
   		}
 
   		siteTable.get(siteName).get(systemName).add(entry);

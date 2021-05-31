@@ -315,6 +315,9 @@ public class FunctionSpace_Topology {
     @IDynamicResourceExtension.MethodId("700c9e69-2a4f-11eb-903e-7d97d99d39d5")
     public java.lang.String FQDNAliasOrHostname();
 
+    @IDynamicResourceExtension.MethodId("9a1c5624-c207-11eb-8c09-03c14294ecfb")
+    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService service);
+
     @IDynamicResourceExtension.MethodId("bec338eb-2a4f-11eb-903e-7d97d99d39d5")
     public java.lang.String DomainPrefix();
 
@@ -774,4 +777,4 @@ public class FunctionSpace_Topology {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,2wv1uhgXzsEaf3Ixi2qIph1EFo4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7b6d94a1-9370-11e9-8139-e76b19cfb4bf,EuPHG/FYB8XWSNcn0/XaPdS6cHA=] */

@@ -104,9 +104,9 @@ public class access__T_yaml {
   			final IAbstractHost abstractHost, final IAbstractHost dst, final String protocol,
   			final IAccessConfigurationService accessConfigurationService, final boolean useProtocol) {
 
-  		final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions dstHostFunctions = dst
-  				.extension(
-  						cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions.class);
+  		final IAbstractHostFunctions dstHostFunctions = dst.extension(
+  				IAbstractHostFunctions.class);
+
   		final String siteName = dstHostFunctions.TopSiteName();
 
   		if (!siteTable.containsKey(siteName)) {
@@ -151,6 +151,15 @@ public class access__T_yaml {
 
     @IDynamicResourceExtension.MethodId("7687af9c-1e76-11eb-b08c-d72de2e3f55f")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyTerminals();
+
+    @IDynamicResourceExtension.MethodId("0a7ac816-c221-11eb-abce-359bcb502761")
+    public java.lang.String FQDNAliasOrHostname();
+
+    @IDynamicResourceExtension.MethodId("0a7ac820-c221-11eb-abce-359bcb502761")
+    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService service);
+
+    @IDynamicResourceExtension.MethodId("7f2d3372-c221-11eb-abce-359bcb502761")
+    public java.lang.String TopSiteName();
 
   }
   
@@ -293,4 +302,4 @@ public class access__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,UVV80QUnSkBLwKIP6rPWMrQvc78=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,kE9/CjFmTWOLJ4NQzhDfhP6O5+E=] */

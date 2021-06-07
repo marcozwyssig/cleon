@@ -22,6 +22,7 @@ public class MachinePackage {
   public static final Resource DiskType_HDD = new Resource("04489048-2b6b-11e9-90eb-451204ee9d3c");
   public static final Resource Disk_diskType = new Resource("0a7845fd-2b6b-11e9-90eb-451204ee9d3c");
   public static final Resource DiskType_VMDK__F___S___F_Thin__F_Provisioning = new Resource("0ee87167-2b6b-11e9-90eb-451204ee9d3c");
+  public static final Resource DiskType_VMDK__F___S___F_Thick__F_Provisioning = new Resource("cd0dcc46-c795-11eb-af38-5d2abbc1ee8d");
   
   /* Begin Protected Region [[user]] */
   
@@ -42,4 +43,4 @@ public class MachinePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.machine,h0I5VqmgsNe0niUDTx+jUYsL2Ok=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.machine,HiHxQYDQn9JNcmTk1osgKF2+fXo=] */

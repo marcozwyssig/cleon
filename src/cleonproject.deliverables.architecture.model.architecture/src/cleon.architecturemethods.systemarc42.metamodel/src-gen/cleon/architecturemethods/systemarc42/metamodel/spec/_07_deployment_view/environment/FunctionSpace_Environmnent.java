@@ -8,17 +8,17 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[bb871dfc-02d3-11e9-9e58-33d596257b14,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.SystemEnvironment;
+import cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.SystemEnvironmentNode;
 /* End Protected Region   [[bb871dfc-02d3-11e9-9e58-33d596257b14,imports]] */
 
 public class FunctionSpace_Environmnent {
 
   /* Begin Protected Region [[bb871dfc-02d3-11e9-9e58-33d596257b14]] */
-  
+
   /* End Protected Region   [[bb871dfc-02d3-11e9-9e58-33d596257b14]] */
 
 
-  public static interface ISystemEnvironmentFunctions extends IDynamicResourceExtension {
+  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("d26206d3-0aa2-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
@@ -33,36 +33,36 @@ public class FunctionSpace_Environmnent {
     public java.lang.String OnlyName();
 
     @IDynamicResourceExtension.MethodId("7cd01e99-b08e-11ea-b791-9b401fd02359")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment> Related();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode> Related();
 
   }
   
-  public static interface ISystemEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("ebae8f76-2aba-11e9-a3f8-336d9e792e17")
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode);
 
   }
   
-  public static class SystemEnvironmentFunctionsImpl implements ISystemEnvironmentFunctionsImpl {
+  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
 
-    public static final ISystemEnvironmentFunctionsImpl INSTANCE = new SystemEnvironmentFunctionsImpl();
+    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
 
-    private SystemEnvironmentFunctionsImpl() {}
+    private SystemEnvironmentNodeFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+    public java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       return true;
     }
 
   }
   
-  public static class SystemEnvironmentFunctions {
+  public static class SystemEnvironmentNodeFunctions {
 
-    private SystemEnvironmentFunctions() {}
+    private SystemEnvironmentNodeFunctions() {}
 
-    public static java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
-      return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).IsSupplied(systemEnvironment);
+    public static java.lang.Boolean IsSupplied(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
+      return DynamicResourceUtil.invoke(ISystemEnvironmentNodeFunctionsImpl.class, SystemEnvironmentNodeFunctionsImpl.INSTANCE, systemEnvironmentNode).IsSupplied(systemEnvironmentNode);
     }
 
   }
@@ -90,43 +90,44 @@ public class FunctionSpace_Environmnent {
     @Override
     public java.lang.String GetLevelNr(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel deploymentLevel) {
       /* Begin Protected Region [[c21927d9-0b6d-11e9-a136-69d076e48ed1]] */
-    	if( deploymentLevel == null)
-    		return "";
-    	
-    	if( SystemEnvironment.selectToMeLevel_1(deploymentLevel) != null) {
-    		return "1";
-    	}
+      if( deploymentLevel == null) {
+      	return "";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_2(deploymentLevel) != null) {
-    		return "2";
-    	}
+      if( SystemEnvironmentNode.selectToMeLevel_1(deploymentLevel) != null) {
+      	return "1";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_3(deploymentLevel) != null) {
-    		return "3";
-    	}
+      if( SystemEnvironmentNode.selectToMeLevel_2(deploymentLevel) != null) {
+      	return "2";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_4(deploymentLevel) != null) {
-    		return "4";
-    	}
+      if( SystemEnvironmentNode.selectToMeLevel_3(deploymentLevel) != null) {
+      	return "3";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_5(deploymentLevel) != null) {
-    		return "5";
-    	}
+      if( SystemEnvironmentNode.selectToMeLevel_4(deploymentLevel) != null) {
+      	return "4";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_6(deploymentLevel) != null) {
-    		return "6";
-    	}
+      if( SystemEnvironmentNode.selectToMeLevel_5(deploymentLevel) != null) {
+      	return "5";
+      }
 
-    	if( SystemEnvironment.selectToMeLevel_7(deploymentLevel) != null) {
-    		return "7";
-    	}
-    	
-    	if( SystemEnvironment.selectToMeLevel_8(deploymentLevel) != null) {
-    		return "8";
-    	}
-    	
-    	return "";
-    	
+      if( SystemEnvironmentNode.selectToMeLevel_6(deploymentLevel) != null) {
+      	return "6";
+      }
+
+      if( SystemEnvironmentNode.selectToMeLevel_7(deploymentLevel) != null) {
+      	return "7";
+      }
+
+      if( SystemEnvironmentNode.selectToMeLevel_8(deploymentLevel) != null) {
+      	return "8";
+      }
+
+      return "";
+
       /* End Protected Region   [[c21927d9-0b6d-11e9-a136-69d076e48ed1]] */
     }
 
@@ -144,4 +145,4 @@ public class FunctionSpace_Environmnent {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,g6qMIymWyjDpFYe+o9FCSDwwPyo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,bb871dfc-02d3-11e9-9e58-33d596257b14,m6kkNVVslzMuiSVt1RtBu0QNL3k=] */

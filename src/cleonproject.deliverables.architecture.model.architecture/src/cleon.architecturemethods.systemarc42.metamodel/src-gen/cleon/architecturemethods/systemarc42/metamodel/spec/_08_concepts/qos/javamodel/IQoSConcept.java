@@ -8,10 +8,10 @@ public interface IQoSConcept extends cleon.architecturemethods.systemarc42.metam
   
   // relations
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment> selectCalculationFor();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode> selectCalculationFor();
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept> selectQosConfigurationConcept();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,K78v2qHpUH+Jb6FmJd9IMPIr3yQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,a4426fd0-f2e5-11e8-b860-9fc163e21388,WCmALmgFCHvgxhwr0/uU9KoYYg4=] */

@@ -478,6 +478,8 @@
         <resource statement-guid="40e0a7df-7a96-11eb-87e9-09aeef13879c" type="resource" guid="40e059bc-7a96-11eb-87e9-09aeef13879c" />
         <resource statement-guid="be0c8c49-7cda-11eb-8da4-61a512a179fd" type="resource" guid="be0c6536-7cda-11eb-8da4-61a512a179fd" />
         <resource statement-guid="2a1bbe8c-8632-11eb-9869-4317e18e6c88" type="resource" guid="2a1b4959-8632-11eb-9869-4317e18e6c88" />
+        <resource statement-guid="0f3ba589-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="0f3ba586-c93c-11eb-adc4-d18d1353eb6e" />
+        <resource statement-guid="630f4df2-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="630f26df-c93c-11eb-adc4-d18d1353eb6e" />
       </owns>
     </resource>
   </owns>
@@ -5244,6 +5246,26 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="2a1c33bd-8632-11eb-9869-4317e18e6c88" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="0f3ba589-c93c-11eb-adc4-d18d1353eb6e">
+            <resource guid="0f3ba586-c93c-11eb-adc4-d18d1353eb6e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0f3ba588-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0f3bcc9a-c93c-11eb-adc4-d18d1353eb6e" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="630f4df2-c93c-11eb-adc4-d18d1353eb6e">
+            <resource guid="630f26df-c93c-11eb-adc4-d18d1353eb6e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="630f26e1-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="630f9c13-c93c-11eb-adc4-d18d1353eb6e" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity</object>
               </predicate>
             </resource>
           </object>

@@ -10,6 +10,7 @@ public class BusinesscontinuityPackage {
   public static final Resource BusinessContinuityConcept_backup = new Resource("e4e076a2-1d52-11e9-8222-13cd25917917");
   public static final Resource FunctionSpace_aE_BusinessContinuity_BackupConcept = new Resource("4f96d85f-c1d2-11ea-b956-0ffede25a02d");
   public static final Resource BusinessContinuityConcept_autonomy = new Resource("9c785fb2-00e4-11eb-89a7-8344c130228c");
+  public static final Resource FunctionSpace_aE_BusinessContinuity_AvailabilityConcept = new Resource("4f8e6f44-c93b-11eb-adc4-d18d1353eb6e");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +31,4 @@ public class BusinesscontinuityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity,YczwvvTiaHlnUhrqeeYIyhYWZ3c=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity,uiOgmigj4BggR/yeJTPwFhZN2nY=] */

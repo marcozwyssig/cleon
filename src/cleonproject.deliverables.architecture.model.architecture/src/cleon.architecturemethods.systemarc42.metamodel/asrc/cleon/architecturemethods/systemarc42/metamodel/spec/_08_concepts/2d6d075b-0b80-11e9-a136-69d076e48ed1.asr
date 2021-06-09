@@ -62,7 +62,7 @@
           <object statement-guid="c489a5e2-f190-11e8-b3e7-15e2dd8d9b05" type="resource" guid="1e7e918f-c5bd-11e5-b495-ff3ce8f2d062" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="c489ccf3-f190-11e8-b3e7-15e2dd8d9b05" type="literal">systemComponentConcept</object>
+          <object statement-guid="c489ccf3-f190-11e8-b3e7-15e2dd8d9b05" type="literal">systemConcept</object>
         </predicate>
         <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="c8a65a1c-f190-11e8-b3e7-15e2dd8d9b05">
@@ -189,6 +189,9 @@
                     </predicate>
                   </resource>
                 </object>
+              </predicate>
+              <predicate guid="1e606e37-fc96-11e8-9779-c187972692db">
+                <object statement-guid="a2b793f4-c93d-11eb-adc4-d18d1353eb6e" type="literal">false</object>
               </predicate>
             </resource>
           </object>

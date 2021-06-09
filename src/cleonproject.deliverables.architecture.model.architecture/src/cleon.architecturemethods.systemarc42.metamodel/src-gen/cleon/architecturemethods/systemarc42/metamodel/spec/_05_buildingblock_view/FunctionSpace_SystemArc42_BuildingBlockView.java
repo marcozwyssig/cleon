@@ -53,16 +53,16 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinct();
 
     @IDynamicResourceExtension.MethodId("eb2a2ff7-05ed-11ea-9b1e-558d1275d95e")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinctWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment environment);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsDistinctWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
 
     @IDynamicResourceExtension.MethodId("014a8f50-deae-11e9-b714-478bec98e62d")
-    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public java.lang.String GroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
     @IDynamicResourceExtension.MethodId("ae3f2508-dec8-11e9-b714-478bec98e62d")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNs();
 
     @IDynamicResourceExtension.MethodId("10e575cf-05ee-11ea-9b1e-558d1275d95e")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment environment);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts> AllUsedTNsWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
 
     @IDynamicResourceExtension.MethodId("2a51e529-df6d-11e9-9827-a1514ee8d06a")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface InterfaceType(final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone subzone);
@@ -95,13 +95,13 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
     public java.lang.String HostGroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts hosts, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
     @IDynamicResourceExtension.MethodId("4c54396f-c784-11ea-b0b6-e5df79e86bc2")
-    public java.lang.String AllHostGroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
+    public java.lang.String AllHostGroupName(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone securitySubZone);
 
     @IDynamicResourceExtension.MethodId("a01bd4a6-332f-11eb-bba8-618171a64c64")
     public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration DependsToSystemConfiguration();
 
     @IDynamicResourceExtension.MethodId("b1e03eb1-a990-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllHostsWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> AllHostsWithEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironment);
 
     @IDynamicResourceExtension.MethodId("30b54ff7-020d-11e9-b327-17da2da63a8f")
     public java.lang.String GetType();
@@ -367,4 +367,4 @@ public class FunctionSpace_SystemArc42_BuildingBlockView {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,7zQ6tiXdpBGcnKg36UQk2cLr3T0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,8bc3420c-035a-11e9-a251-e3767b78f69f,xiJlVtYQt15fhcE69EjpFwDbGMg=] */

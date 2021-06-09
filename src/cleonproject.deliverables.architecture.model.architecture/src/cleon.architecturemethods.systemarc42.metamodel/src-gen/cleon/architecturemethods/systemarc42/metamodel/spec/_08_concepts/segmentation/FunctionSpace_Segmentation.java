@@ -61,7 +61,7 @@ public class FunctionSpace_Segmentation {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfiguration(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration syscfg);
 
     @IDynamicResourceExtension.MethodId("77400f34-0ab0-11ea-b1a6-0524b035bd98")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironment(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
     @IDynamicResourceExtension.MethodId("a449369e-517b-11ea-b9cb-85bbdfd861be")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndEnvironmentAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.ITopologyEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite site, final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration syscfg);
@@ -196,4 +196,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,lYDDMbrzrmTncRfcG5a1LFttEAA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,I/n8LCfZ6R0fwYsPaaZWAgEPBiA=] */

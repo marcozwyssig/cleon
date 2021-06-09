@@ -8,7 +8,7 @@ public class _08_conceptsPackage {
   public static final Resource Concept = new Resource("8819d927-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource Deployment = new Resource("971f5e82-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource SystemComponentConcept = new Resource("ba5e31d6-f190-11e8-b3e7-15e2dd8d9b05");
-  public static final Resource ConceptForSystemComponent_systemComponentConcept = new Resource("c489a5e0-f190-11e8-b3e7-15e2dd8d9b05");
+  public static final Resource ConceptForSystemComponent_systemConcept = new Resource("c489a5e0-f190-11e8-b3e7-15e2dd8d9b05");
   public static final Resource SystemConfigurationComponentConcept_conceptForSystemConfiguration = new Resource("515a8a5f-f191-11e8-b3e7-15e2dd8d9b05");
   public static final Resource ConceptForSystemComponent = new Resource("2d6d075b-0b80-11e9-a136-69d076e48ed1");
   public static final Resource ConceptForSystemConfigurationComponent = new Resource("1ab874a8-0b86-11e9-a136-69d076e48ed1");
@@ -25,6 +25,11 @@ public class _08_conceptsPackage {
   public static final Resource SystemConcepts_deploymentConcept = new Resource("1f1a260c-6eb3-11ea-b8e8-f1a46e0c42f7");
   public static final Resource FunctionSpace_aE_SystemArc42_aE_Concepts_BackupConcept = new Resource("b038646b-c1d2-11ea-b956-0ffede25a02d");
   public static final Resource SystemConcepts_accessConcept = new Resource("6d5e219c-19c1-11eb-8585-65084a06c07f");
+  public static final Resource SystemConcepts_capacityPlanningConcept = new Resource("8dcadb49-c93a-11eb-adc4-d18d1353eb6e");
+  public static final Resource ConceptForSystem = new Resource("26771b9a-c93d-11eb-adc4-d18d1353eb6e");
+  public static final Resource ConceptForSystem_systemConcept = new Resource("26771ba7-c93d-11eb-adc4-d18d1353eb6e");
+  public static final Resource SystemConcept = new Resource("600f5efb-c93d-11eb-adc4-d18d1353eb6e");
+  public static final Resource SystemConcept_system = new Resource("600f5efc-c93d-11eb-adc4-d18d1353eb6e");
   
   /* Begin Protected Region [[user]] */
   
@@ -45,4 +50,4 @@ public class _08_conceptsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,z6YJXbeitZb+f+Z3/R9dzsQ34OM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts,u1X3xYAZc7uFrsNVRVrCmRtma2c=] */

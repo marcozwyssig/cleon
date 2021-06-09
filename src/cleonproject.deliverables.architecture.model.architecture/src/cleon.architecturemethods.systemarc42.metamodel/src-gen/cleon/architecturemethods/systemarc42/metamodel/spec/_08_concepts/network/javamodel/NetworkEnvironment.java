@@ -81,11 +81,11 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
     
   @Override
-  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment selectEnvironmentForNetwork() {
-    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork);
+  public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode selectEnvironmentForNetwork() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork);
   }
 
-  public NetworkEnvironment setEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment environmentForNetwork) {
+  public NetworkEnvironment setEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environmentForNetwork) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, environmentForNetwork);
     return this;
   }
@@ -168,7 +168,7 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.ipv4.javamodel.IIPv4_Mask.class, cleon.modelinglanguages.network.metamodel.spec.ipv4.Ipv4Package.IPv4_aE_Mask_aE_Aware_cidr, visitor);
-    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, visitor);
     _acceptList(cleon.modelinglanguages.network.metamodel.spec.javamodel.IGroup.class, cleon.modelinglanguages.network.metamodel.spec.SpecPackage.GroupAware_groups, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_networkSite, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
@@ -178,7 +178,7 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
 
   // toMeRelations
   
-  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment> selectToMeEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment object) {
+  public static java.util.List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment> selectToMeEnvironmentForNetwork(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode object) {
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.INetworkEnvironment.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.NetworkPackage.NetworkEnvironment_environmentForNetwork, object.getResource());
   }
   
@@ -187,4 +187,4 @@ public class NetworkEnvironment extends DynamicResource implements INetworkEnvir
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,al1dh2OUo7zKzZyDuYv89tJdPhA=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,8df2f5fa-053f-11ea-b1c2-9163c84d2612,0x3QPnU+xJt4XX91ONeUP9iRS0Y=] */

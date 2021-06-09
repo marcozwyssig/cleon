@@ -94,28 +94,28 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface ISystemEnvironmentFunctions extends IDynamicResourceExtension {
+  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("9b4d3279-0e9e-11e9-9f19-6d15636f4ecc")
     public java.lang.String RenderChapters();
 
   }
   
-  public static interface ISystemEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SystemEnvironmentFunctionsImpl implements ISystemEnvironmentFunctionsImpl {
+  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
 
-    public static final ISystemEnvironmentFunctionsImpl INSTANCE = new SystemEnvironmentFunctionsImpl();
+    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
 
-    private SystemEnvironmentFunctionsImpl() {}
+    private SystemEnvironmentNodeFunctionsImpl() {}
 
   }
   
-  public static class SystemEnvironmentFunctions {
+  public static class SystemEnvironmentNodeFunctions {
 
-    private SystemEnvironmentFunctions() {}
+    private SystemEnvironmentNodeFunctions() {}
 
   }
 
@@ -1045,4 +1045,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,FM+PBL2o+HSQVzmjERUe2Y/fylw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,bxNKMJDV4vheESI0GiW9TYSeW+4=] */

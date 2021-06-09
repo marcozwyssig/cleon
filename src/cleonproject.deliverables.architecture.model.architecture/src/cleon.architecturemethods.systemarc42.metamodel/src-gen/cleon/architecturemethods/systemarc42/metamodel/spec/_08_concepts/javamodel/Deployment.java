@@ -81,12 +81,12 @@ public class Deployment extends DynamicResource implements IDeployment {
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept> selectSystemComponentConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemComponentConcept);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept> selectSystemConcept() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemConcept);
   }
 
-  public Deployment setSystemComponentConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept> systemComponentConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemComponentConcept, systemComponentConcept);
+  public Deployment setSystemConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept> systemConcept) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemConcept, systemConcept);
     return this;
   }
     
@@ -108,9 +108,9 @@ public class Deployment extends DynamicResource implements IDeployment {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemComponentConcept, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel.ISystemComponentConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.ConceptForSystemComponent_systemConcept, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,971f5e82-f190-11e8-b3e7-15e2dd8d9b05,VM1pMt7XoEJu7OEOr9OYqn9OgA4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,971f5e82-f190-11e8-b3e7-15e2dd8d9b05,zO0naKmmiIE0MRHo8AD6sMLZWoE=] */

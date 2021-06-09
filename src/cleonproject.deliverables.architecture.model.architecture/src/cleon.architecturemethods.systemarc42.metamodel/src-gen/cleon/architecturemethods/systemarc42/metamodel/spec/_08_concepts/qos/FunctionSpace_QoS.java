@@ -135,7 +135,7 @@ public class FunctionSpace_QoS {
 
   }
 
-  public static interface ISystemEnvironmentFunctions extends IDynamicResourceExtension {
+  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("82f449c6-a98e-11eb-8f9b-01c801f6a12b")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
@@ -150,85 +150,85 @@ public class FunctionSpace_QoS {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> DestinationSingleHost(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("42a84883-c930-11eb-a152-570abd1640d5")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
   }
   
-  public static interface ISystemEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("82f449c6-a98e-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode);
 
     @IDynamicResourceExtension.MethodId("9791b23c-a98e-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode);
 
     @IDynamicResourceExtension.MethodId("42a84883-c930-11eb-a152-570abd1640d5")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode);
 
   }
   
-  public static class SystemEnvironmentFunctionsImpl implements ISystemEnvironmentFunctionsImpl {
+  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
 
-    public static final ISystemEnvironmentFunctionsImpl INSTANCE = new SystemEnvironmentFunctionsImpl();
+    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
 
-    private SystemEnvironmentFunctionsImpl() {}
+    private SystemEnvironmentNodeFunctionsImpl() {}
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       /* Begin Protected Region [[82f449c6-a98e-11eb-8f9b-01c801f6a12b]] */
       final var source = qoSSystemConfigurationSource.selectSource();
       final var sourceFunctions = source.extension(ISourceFunctions.class);
-      final var hosts = source.selectSourceSystemConfiguration().extension(ISystemConfigurationFunctions.class).AllHostsWithEnvironment(systemEnvironment);
+      final var hosts = source.selectSourceSystemConfiguration().extension(ISystemConfigurationFunctions.class).AllHostsWithEnvironment(systemEnvironmentNode);
       return hosts.stream().filter(x -> x.extension(IAbstractHostFunctions.class).Subzones().stream().anyMatch(sz -> sourceFunctions.SourceSecuritySubzones().contains(sz))).collect(Collectors.toList());
       /* End Protected Region   [[82f449c6-a98e-11eb-8f9b-01c801f6a12b]] */
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       /* Begin Protected Region [[9791b23c-a98e-11eb-8f9b-01c801f6a12b]] */
       final var source = qoSSystemConfigurationSource.selectSource();
       final var sourceFunctions = source.extension(ISourceFunctions.class);
       final var destination = sourceFunctions.Destination();
-      final var hosts = destination.selectDestinationSystemConfiguration().extension(ISystemConfigurationFunctions.class).AllHostsWithEnvironment(systemEnvironment);
+      final var hosts = destination.selectDestinationSystemConfiguration().extension(ISystemConfigurationFunctions.class).AllHostsWithEnvironment(systemEnvironmentNode);
       return hosts.stream().filter(x -> x.extension(IAbstractHostFunctions.class).Subzones().stream().anyMatch(sz -> sourceFunctions.DestinationSubSecurityZone().selectInInterface().selectInterfaceInSecuritySubZone().equals(sz))).collect(Collectors.toList());
       /* End Protected Region   [[9791b23c-a98e-11eb-8f9b-01c801f6a12b]] */
     }
 
     @Override
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       /* Begin Protected Region [[42a84883-c930-11eb-a152-570abd1640d5]] */
-      if( SourceHosts(qoSSystemConfigurationSource, systemEnvironment).isEmpty()) {
+      if( SourceHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty()) {
       	return null;
       }
 
-      if( DestinationHosts(qoSSystemConfigurationSource, systemEnvironment).isEmpty()) {
+      if( DestinationHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty()) {
       	return null;
       }
 
-      return systemEnvironment;
+      return systemEnvironmentNode;
       /* End Protected Region   [[42a84883-c930-11eb-a152-570abd1640d5]] */
     }
 
   }
   
-  public static class SystemEnvironmentFunctions {
+  public static class SystemEnvironmentNodeFunctions {
 
-    private SystemEnvironmentFunctions() {}
+    private SystemEnvironmentNodeFunctions() {}
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
-      return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).SourceHosts(qoSSystemConfigurationSource, systemEnvironment);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
+      return DynamicResourceUtil.invoke(ISystemEnvironmentNodeFunctionsImpl.class, SystemEnvironmentNodeFunctionsImpl.INSTANCE, systemEnvironmentNode).SourceHosts(qoSSystemConfigurationSource, systemEnvironmentNode);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
-      return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).DestinationHosts(qoSSystemConfigurationSource, systemEnvironment);
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
+      return DynamicResourceUtil.invoke(ISystemEnvironmentNodeFunctionsImpl.class, SystemEnvironmentNodeFunctionsImpl.INSTANCE, systemEnvironmentNode).DestinationHosts(qoSSystemConfigurationSource, systemEnvironmentNode);
     }
 
-    public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
-      return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).OnlyWithValidHosts(qoSSystemConfigurationSource, systemEnvironment);
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
+      return DynamicResourceUtil.invoke(ISystemEnvironmentNodeFunctionsImpl.class, SystemEnvironmentNodeFunctionsImpl.INSTANCE, systemEnvironmentNode).OnlyWithValidHosts(qoSSystemConfigurationSource, systemEnvironmentNode);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,4fV5WA6P2wIk4q1+1UfLgQLBpPw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,9AACZDlNWO0dTauW24d6L59wFLU=] */

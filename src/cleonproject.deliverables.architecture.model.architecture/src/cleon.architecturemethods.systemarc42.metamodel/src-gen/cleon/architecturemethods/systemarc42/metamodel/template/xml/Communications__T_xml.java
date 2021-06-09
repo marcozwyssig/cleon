@@ -21,7 +21,7 @@ public class Communications__T_xml {
   public static interface IImplementationStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("b0f35d6f-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
   }
   
@@ -46,14 +46,14 @@ public class Communications__T_xml {
   public static interface IImplementedStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("98d07593-2046-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
   }
   
   public static interface IImplementedStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("98d07593-2046-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState);
 
   }
   
@@ -64,7 +64,7 @@ public class Communications__T_xml {
     private ImplementedStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState) {
       /* Begin Protected Region [[98d07593-2046-11eb-88ac-6db033a610cb]] */
       if (implementedState.selectImplementationStateIn() == null || !implementedState.selectImplementationStateIn().containsKey(env.getResource())) {
       	return false;
@@ -79,7 +79,7 @@ public class Communications__T_xml {
 
     private ImplementedStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedState implementedState) {
       return DynamicResourceUtil.invoke(IImplementedStateFunctionsImpl.class, ImplementedStateFunctionsImpl.INSTANCE, implementedState).IsImplemented(env, implementedState);
     }
 
@@ -187,14 +187,14 @@ public class Communications__T_xml {
   public static interface IImplementedButNotRequiredOnFirewallStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("cfd89ba6-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
   }
   
   public static interface IImplementedButNotRequiredOnFirewallStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("cfd89ba6-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState);
 
   }
   
@@ -205,7 +205,7 @@ public class Communications__T_xml {
     private ImplementedButNotRequiredOnFirewallStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
       return true;
     }
 
@@ -215,7 +215,7 @@ public class Communications__T_xml {
 
     private ImplementedButNotRequiredOnFirewallStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementedButNotRequiredOnFirewallState implementedButNotRequiredOnFirewallState) {
       return DynamicResourceUtil.invoke(IImplementedButNotRequiredOnFirewallStateFunctionsImpl.class, ImplementedButNotRequiredOnFirewallStateFunctionsImpl.INSTANCE, implementedButNotRequiredOnFirewallState).IsImplemented(env, implementedButNotRequiredOnFirewallState);
     }
 
@@ -224,14 +224,14 @@ public class Communications__T_xml {
   public static interface IPlannedmplementationStateFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
   }
   
   public static interface IPlannedmplementationStateFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("da45fb1c-204a-11eb-88ac-6db033a610cb")
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState);
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState);
 
   }
   
@@ -242,7 +242,7 @@ public class Communications__T_xml {
     private PlannedmplementationStateFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
+    public java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
       return true;
     }
 
@@ -252,7 +252,7 @@ public class Communications__T_xml {
 
     private PlannedmplementationStateFunctions() {}
 
-    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
+    public static java.lang.Boolean IsImplemented(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env, final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IPlannedmplementationState plannedmplementationState) {
       return DynamicResourceUtil.invoke(IPlannedmplementationStateFunctionsImpl.class, PlannedmplementationStateFunctionsImpl.INSTANCE, plannedmplementationState).IsImplemented(env, plannedmplementationState);
     }
 
@@ -302,4 +302,4 @@ public class Communications__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,Jo+MdIqeiOOAbZBn4jmJoH/K5Yw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,ZlgFHH5EctRX0+qWjT/pesJUcOM=] */

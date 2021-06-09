@@ -1027,7 +1027,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyWithDescription(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList) {
       /* Begin Protected Region [[9eb54937-30a5-11eb-9149-f1e36a7322e5]] */
-    	return sourceList.stream().filter( x -> x.selectDescriptions().isEmpty() == false).collect(Collectors.toList());
+      return sourceList.stream().filter( x -> x.selectDescriptions().isEmpty() == false).collect(Collectors.toList());
       /* End Protected Region   [[9eb54937-30a5-11eb-9149-f1e36a7322e5]] */
     }
 

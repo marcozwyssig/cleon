@@ -149,6 +149,9 @@ public class FunctionSpace_QoS {
     @IDynamicResourceExtension.MethodId("49c24c0b-a99a-11eb-8f9b-01c801f6a12b")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> DestinationSingleHost(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
+    @IDynamicResourceExtension.MethodId("42a84883-c930-11eb-a152-570abd1640d5")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
+
   }
   
   public static interface ISystemEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -158,6 +161,9 @@ public class FunctionSpace_QoS {
 
     @IDynamicResourceExtension.MethodId("9791b23c-a98e-11eb-8f9b-01c801f6a12b")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
+
+    @IDynamicResourceExtension.MethodId("42a84883-c930-11eb-a152-570abd1640d5")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment);
 
   }
   
@@ -188,6 +194,21 @@ public class FunctionSpace_QoS {
       /* End Protected Region   [[9791b23c-a98e-11eb-8f9b-01c801f6a12b]] */
     }
 
+    @Override
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+      /* Begin Protected Region [[42a84883-c930-11eb-a152-570abd1640d5]] */
+      if( SourceHosts(qoSSystemConfigurationSource, systemEnvironment).isEmpty()) {
+      	return null;
+      }
+
+      if( DestinationHosts(qoSSystemConfigurationSource, systemEnvironment).isEmpty()) {
+      	return null;
+      }
+
+      return systemEnvironment;
+      /* End Protected Region   [[42a84883-c930-11eb-a152-570abd1640d5]] */
+    }
+
   }
   
   public static class SystemEnvironmentFunctions {
@@ -202,8 +223,12 @@ public class FunctionSpace_QoS {
       return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).DestinationHosts(qoSSystemConfigurationSource, systemEnvironment);
     }
 
+    public static cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironment systemEnvironment) {
+      return DynamicResourceUtil.invoke(ISystemEnvironmentFunctionsImpl.class, SystemEnvironmentFunctionsImpl.INSTANCE, systemEnvironment).OnlyWithValidHosts(qoSSystemConfigurationSource, systemEnvironment);
+    }
+
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,1Khe3A+n2vvKy10ppK40BhYkW7o=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,4fV5WA6P2wIk4q1+1UfLgQLBpPw=] */

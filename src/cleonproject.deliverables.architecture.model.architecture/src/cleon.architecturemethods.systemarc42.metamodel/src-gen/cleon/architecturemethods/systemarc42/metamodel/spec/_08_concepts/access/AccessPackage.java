@@ -51,6 +51,7 @@ public class AccessPackage {
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeVNC = new Resource("488bdfae-c1f0-11eb-8c09-03c14294ecfb");
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeWebSecure = new Resource("50b3467d-c1f0-11eb-8c09-03c14294ecfb");
   public static final Resource FunctionSpace_aE_Access_AccessCommunicationTypeWebUnsecure = new Resource("58b4fc9f-c1f0-11eb-8c09-03c14294ecfb");
+  public static final Resource AccessConfigurationService_skipDomainPrefix = new Resource("d39c08d9-c905-11eb-afd9-772a261eb5f0");
   
   /* Begin Protected Region [[user]] */
   
@@ -71,4 +72,4 @@ public class AccessPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,7MXFppc0se1Vod6Gk5pd4HLJZoU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access,ZKQHxlUPfAdfdb2bE/CeoLcTehA=] */

@@ -227,12 +227,18 @@ public class FunctionSpace_Access {
     @IDynamicResourceExtension.MethodId("31aa5c47-243f-11eb-83b1-3d2a97975978")
     public java.lang.String Decorate(final java.lang.String hostName);
 
+    @IDynamicResourceExtension.MethodId("eed5880a-c906-11eb-afd9-772a261eb5f0")
+    public java.lang.Boolean SkipDomainPrefix();
+
   }
   
   public static interface IAccessConfigurationServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("31aa5c47-243f-11eb-83b1-3d2a97975978")
     public java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
+
+    @IDynamicResourceExtension.MethodId("eed5880a-c906-11eb-afd9-772a261eb5f0")
+    public java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
   }
   
@@ -247,6 +253,11 @@ public class FunctionSpace_Access {
       return hostName;
     }
 
+    @Override
+    public java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+      return accessConfigurationService.selectSkipDomainPrefix() == null || accessConfigurationService.selectSkipDomainPrefix().booleanValue() == false;
+    }
+
   }
   
   public static class AccessConfigurationServiceFunctions {
@@ -255,6 +266,10 @@ public class FunctionSpace_Access {
 
     public static java.lang.String Decorate(final java.lang.String hostName, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
       return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).Decorate(hostName, accessConfigurationService);
+    }
+
+    public static java.lang.Boolean SkipDomainPrefix(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService) {
+      return DynamicResourceUtil.invoke(IAccessConfigurationServiceFunctionsImpl.class, AccessConfigurationServiceFunctionsImpl.INSTANCE, accessConfigurationService).SkipDomainPrefix(accessConfigurationService);
     }
 
   }
@@ -411,4 +426,4 @@ public class FunctionSpace_Access {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,T714l42dPlYtpMwuPl+DARl2ymk=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,cffe4329-19c9-11eb-8585-65084a06c07f,YD9vl3kax3e3qWCVce8536SpGkE=] */

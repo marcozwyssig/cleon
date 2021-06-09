@@ -28,6 +28,17 @@ public class AccessConfigurationService extends DynamicResource implements IAcce
     super(resourceRepository, resource, IAccessConfigurationService.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Boolean selectSkipDomainPrefix() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix);
+  }
+    
+  public void setSkipDomainPrefix(java.lang.Boolean skipDomainPrefix) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix, skipDomainPrefix);
+  }
+
   // relations
   
   @Override
@@ -73,6 +84,8 @@ public class AccessConfigurationService extends DynamicResource implements IAcce
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_skipDomainPrefix, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IHostAccessMode.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_hostAccessMode, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.AccessPackage.AccessConfigurationService_service, visitor);
@@ -90,4 +103,4 @@ public class AccessConfigurationService extends DynamicResource implements IAcce
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,962adc32-c1d8-11eb-8c09-03c14294ecfb,0Wv+V+YVl755At6edTrj002hn5A=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,962adc32-c1d8-11eb-8c09-03c14294ecfb,V8ZX/6wardo4qSY7E0mXcFbpZkk=] */

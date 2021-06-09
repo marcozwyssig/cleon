@@ -129,16 +129,16 @@ public class access__T_yaml {
   		String entry;
   		if (protocol.equals(HTTP) || protocol.equals(HTTPS)) {
   			if (useProtocol) {
-  				entry = String.format("%s://%s: www", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService.selectService())));
+  				entry = String.format("%s://%s: www", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService, accessConfigurationService.selectService())));
   			} else {
-  				entry = String.format("%s://%s", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService.selectService())));
+  				entry = String.format("%s://%s", protocol, accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostnameWithService(accessConfigurationService, accessConfigurationService.selectService())));
   			}
   		} else if (useProtocol) {
   			entry = String.format("%s: %s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()), protocol);
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(accessConfigurationService)), protocol);
   		} else {
   			entry = String.format("%s",
-  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname()));
+  					accessConfigurationFunctions.Decorate(dstHostFunctions.FQDNAliasOrHostname(accessConfigurationService)));
   		}
 
   		siteTable.get(siteName).get(systemName).add(entry);
@@ -153,10 +153,10 @@ public class access__T_yaml {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> OnlyTerminals();
 
     @IDynamicResourceExtension.MethodId("0a7ac816-c221-11eb-abce-359bcb502761")
-    public java.lang.String FQDNAliasOrHostname();
+    public java.lang.String FQDNAliasOrHostname(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService);
 
     @IDynamicResourceExtension.MethodId("0a7ac820-c221-11eb-abce-359bcb502761")
-    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService service);
+    public java.lang.String FQDNAliasOrHostnameWithService(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService accessConfigurationService, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService service);
 
     @IDynamicResourceExtension.MethodId("7f2d3372-c221-11eb-abce-359bcb502761")
     public java.lang.String TopSiteName();
@@ -302,4 +302,4 @@ public class access__T_yaml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,kE9/CjFmTWOLJ4NQzhDfhP6O5+E=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,b13f88ca-1e75-11eb-b08c-d72de2e3f55f,eB6pcggx76xCS9Ue9rKNhFNMomM=] */

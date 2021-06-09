@@ -340,6 +340,11 @@
             <resource statement-guid="4a8ff4e8-243f-11eb-83b1-3d2a97975978" type="resource" guid="4a8fcdd5-243f-11eb-83b1-3d2a97975978" />
           </owns>
         </resource>
+        <resource statement-guid="eed5d62e-c906-11eb-afd9-772a261eb5f0" type="resource" guid="eed5880a-c906-11eb-afd9-772a261eb5f0">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="f9eae6ef-c906-11eb-afd9-772a261eb5f0" type="resource" guid="f9d0a82c-c906-11eb-afd9-772a261eb5f0" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="67c13709-c1e1-11eb-8c09-03c14294ecfb" type="resource" guid="67c13706-c1e1-11eb-8c09-03c14294ecfb">
@@ -1636,6 +1641,34 @@
               </predicate>
               <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
                 <object statement-guid="4c6f152a-243f-11eb-83b1-3d2a97975978" type="literal">return hostName;</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="eed5d62e-c906-11eb-afd9-772a261eb5f0">
+            <resource guid="eed5880a-c906-11eb-afd9-772a261eb5f0">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="eed5af1c-c906-11eb-afd9-772a261eb5f0" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="efea79f1-c906-11eb-afd9-772a261eb5f0" type="literal">SkipDomainPrefix</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="f9eae6ef-c906-11eb-afd9-772a261eb5f0">
+                  <resource guid="f9d0a82c-c906-11eb-afd9-772a261eb5f0">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f9d0a82e-c906-11eb-afd9-772a261eb5f0" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="faa00620-c906-11eb-afd9-772a261eb5f0" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="eed5d62d-c906-11eb-afd9-772a261eb5f0" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="fcbea063-c906-11eb-afd9-772a261eb5f0" type="literal">return accessConfigurationService.selectSkipDomainPrefix() == null || accessConfigurationService.selectSkipDomainPrefix().booleanValue() == false;</object>
               </predicate>
             </resource>
           </object>

@@ -8,7 +8,7 @@ public interface ICapacitySystemConfigurationConcept extends cleon.common.doc.me
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectSystemConfiguration();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectCapacityForSystemConfiguration();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICore> selectCoreUsage();
   
@@ -18,4 +18,4 @@ public interface ICapacitySystemConfigurationConcept extends cleon.common.doc.me
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,RbPH8j3jBkmhE8c/ypi1t9aP7a0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,467d3cb7-c93e-11eb-adc4-d18d1353eb6e,Xa/YUgT2j84llwVgmdpB7n1aO/M=] */

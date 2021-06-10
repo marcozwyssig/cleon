@@ -30,7 +30,7 @@ public class CapacityplanningPackage {
   public static final Resource CapacityPlanningConcept_capacityPlanningConcept = new Resource("985415aa-c93c-11eb-adc4-d18d1353eb6e");
   public static final Resource CapacitySystemConfigurationConcept = new Resource("467d3cb7-c93e-11eb-adc4-d18d1353eb6e");
   public static final Resource CapacityPlanningSystemConcept_capacitySystemConfigurationConcept = new Resource("54c27ef4-c93e-11eb-adc4-d18d1353eb6e");
-  public static final Resource CapacitySystemConfigurationConcept_systemConfiguration = new Resource("8ce7aa43-c93e-11eb-adc4-d18d1353eb6e");
+  public static final Resource CapacitySystemConfigurationConcept_capacityForSystemConfiguration = new Resource("8ce7aa43-c93e-11eb-adc4-d18d1353eb6e");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +51,4 @@ public class CapacityplanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning,nPUMs/l/jh9fMtG35FqR+RQ0A3E=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning,LoklDmG0AFYQogIF1laZ7GXYGQI=] */

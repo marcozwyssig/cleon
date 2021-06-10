@@ -62,12 +62,6 @@ public class _05_buildingblock_viewPackage {
   public static final Resource SystemConfigurationAware_systemConfiguration = new Resource("af1835d8-2994-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater = new Resource("f6167763-2997-11eb-9648-7bdf8dc8eaf2");
   public static final Resource SystemConfigurationAwareDecorater_targetToSystemConfiguration = new Resource("f6167764-2997-11eb-9648-7bdf8dc8eaf2");
-  public static final Resource SystemConfiguration_resourceUsage = new Resource("c470d257-a9a8-11eb-80cf-abd0e6d5d574");
-  public static final Resource MaschineResourceUsage = new Resource("df643bd9-a9a8-11eb-80cf-abd0e6d5d574");
-  public static final Resource MaschineResourceUsage_machineSystemConfiguration = new Resource("00340b8e-a9a9-11eb-80cf-abd0e6d5d574");
-  public static final Resource MaschineResourceUsage_coreUsage = new Resource("be6648c4-a9ae-11eb-80cf-abd0e6d5d574");
-  public static final Resource MaschineResourceUsage_memoryUsage = new Resource("e0b90f1a-a9ae-11eb-80cf-abd0e6d5d574");
-  public static final Resource MaschineResourceUsage_diskUsage = new Resource("039aa7ce-a9af-11eb-80cf-abd0e6d5d574");
   
   /* Begin Protected Region [[user]] */
   
@@ -88,4 +82,4 @@ public class _05_buildingblock_viewPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,9fmuO779IHwG6W/Xl5lmOR18B+Q=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,RASricyCdYUZMFJyf66K9lhXDGI=] */

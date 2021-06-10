@@ -206,16 +206,6 @@ public class RepositorySystemConfiguration extends DynamicResource implements IR
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage> selectResourceUsage() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage);
-  }
-
-  public RepositorySystemConfiguration setResourceUsage(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage> resourceUsage) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage, resourceUsage);
-    return this;
-  }
-    
-  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -244,9 +234,8 @@ public class RepositorySystemConfiguration extends DynamicResource implements IR
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_provides, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,233a9919-0c3a-11e9-83ba-4d57b06560a2,AHLInh6cOw3fMPwD2rj5KXRxnQg=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,233a9919-0c3a-11e9-83ba-4d57b06560a2,Q6Is7lOb/4pKA7krBY04z+QaRRo=] */

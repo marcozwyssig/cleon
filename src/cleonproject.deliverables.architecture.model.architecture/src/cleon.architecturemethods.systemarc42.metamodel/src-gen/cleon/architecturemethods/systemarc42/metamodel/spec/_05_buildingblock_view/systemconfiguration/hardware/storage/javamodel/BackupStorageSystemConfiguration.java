@@ -206,16 +206,6 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage> selectResourceUsage() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage);
-  }
-
-  public BackupStorageSystemConfiguration setResourceUsage(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage> resourceUsage) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage, resourceUsage);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare> selectShares() {
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_shares);
   }
@@ -254,10 +244,9 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_provides, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IMaschineResourceUsage.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_resourceUsage, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.javamodel.IShare.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_shares, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efdc856d-0a87-11e9-a59d-d7a0c53e291c,hOdZzc30cdD5YraSUxM6LwGtC0s=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efdc856d-0a87-11e9-a59d-d7a0c53e291c,J6DCzwdjjE9GzZ6631vSdHPFSO0=] */

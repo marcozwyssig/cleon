@@ -21,6 +21,9 @@ public class CapacityplanningPackage {
   public static final Resource DiskType_HDD = new Resource("04489048-2b6b-11e9-90eb-451204ee9d3c");
   public static final Resource Disk_diskType = new Resource("0a7845fd-2b6b-11e9-90eb-451204ee9d3c");
   public static final Resource DiskType_VMDK__F___S___F_Thin__F_Provisioning = new Resource("0ee87167-2b6b-11e9-90eb-451204ee9d3c");
+  public static final Resource CapacitySystemConfigurationConcept_coreUsage = new Resource("be6648c4-a9ae-11eb-80cf-abd0e6d5d574");
+  public static final Resource CapacitySystemConfigurationConcept_memoryUsage = new Resource("e0b90f1a-a9ae-11eb-80cf-abd0e6d5d574");
+  public static final Resource CapacitySystemConfigurationConcept_diskUsage = new Resource("039aa7ce-a9af-11eb-80cf-abd0e6d5d574");
   public static final Resource DiskType_VMDK__F___S___F_Thick__F_Provisioning = new Resource("cd0dcc46-c795-11eb-af38-5d2abbc1ee8d");
   public static final Resource CapacityPlanningConcept = new Resource("0a49b292-c93a-11eb-adc4-d18d1353eb6e");
   public static final Resource CapacityPlanningSystemConcept = new Resource("83876064-c93c-11eb-adc4-d18d1353eb6e");
@@ -48,4 +51,4 @@ public class CapacityplanningPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning,21nuaYWApSeWSyDTr+cjd1ZYOPw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning,nPUMs/l/jh9fMtG35FqR+RQ0A3E=] */

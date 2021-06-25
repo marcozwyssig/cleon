@@ -34,7 +34,6 @@
         </resource>
       </owns>
     </resource>
-    <resource statement-guid="a73fdd1d-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="a73f40da-6d4a-11eb-bd4b-f974d73611ae" />
   </owns>
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="9b2acae6-3972-11eb-978d-47c0228773ba" type="resource" guid="9b2a7cc2-3972-11eb-978d-47c0228773ba">
@@ -206,6 +205,7 @@
     <object statement-guid="88396677-3972-11eb-978d-47c0228773ba" type="resource" guid="133424cf-be0b-11e5-ad6f-979cbb78853e" />
     <object statement-guid="9eeea8fa-395b-11eb-978d-47c0228773ba" type="resource" guid="118e9dc4-1b6c-11dd-af33-07ccc9113053" />
     <object statement-guid="bdbe39e0-5b25-11eb-888c-017da74182d7" type="resource" guid="0397d401-0e16-11e6-ae01-ef640c578b9b" />
+    <object statement-guid="d61973d3-d426-11eb-9862-7f597b9587dd" type="resource" guid="c8872d57-d426-11eb-9862-7f597b9587dd" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="995a1be5-396d-11eb-978d-47c0228773ba">
@@ -367,25 +367,6 @@
         </predicate>
         <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
           <object statement-guid="9fd10b6a-a1ae-11ea-886d-354b9ee6fb2d" type="resource" guid="93efa9df-a1ae-11ea-886d-354b9ee6fb2d" />
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="a73fdd1d-6d4a-11eb-bd4b-f974d73611ae">
-      <resource guid="a73f40da-6d4a-11eb-bd4b-f974d73611ae">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a73f67ec-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="a7b89065-6d4a-11eb-bd4b-f974d73611ae" type="literal">activityTemplates</object>
-        </predicate>
-        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a740a06e-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
-          <object statement-guid="a740c77f-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
-        </predicate>
-        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
-          <object statement-guid="cb377a2d-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="912699fe-864a-11eb-9869-4317e18e6c88" />
         </predicate>
       </resource>
     </object>

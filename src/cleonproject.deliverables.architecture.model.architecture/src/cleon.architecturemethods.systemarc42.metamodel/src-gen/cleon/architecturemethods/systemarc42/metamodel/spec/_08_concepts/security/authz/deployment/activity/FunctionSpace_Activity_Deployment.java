@@ -14,8 +14,11 @@ import java.util.stream.Collectors;
 import java.util.ArrayList;
 
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.FunctionSpace_Accounts.IServiceAccountFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccountTemplate;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccount;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.ServiceAccountTemplate;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.ActivityTemplateAware;
+
 /* End Protected Region   [[512e5470-7f07-11e9-98a3-b1bd805f0a31,imports]] */
 
 public class FunctionSpace_Activity_Deployment {
@@ -137,10 +140,11 @@ public class FunctionSpace_Activity_Deployment {
       final var serviceAccountsResult = new ArrayList<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.accounts.javamodel.IServiceAccount>();
       final var activityPermissionFunctions = activityPermission.extension(IActivityPermissionFunctions.class);
       final var abstractSite = activityPermissionFunctions.GetAbstractSite();
-
-      final var serviceAccountTemplates =  ServiceAccountTemplate.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
+      
+      final var serviceAccountTemplates = ActivityTemplateAware.selectToMeActivityTemplates(activityPermission.selectActivityTemplate());
       for(final var serviceAccountTemplate  : serviceAccountTemplates ) {
-      	final var serviceAccounts = ServiceAccount.selectToMeServiceAccountTemplate(serviceAccountTemplate);
+    	  
+      	final var serviceAccounts = ServiceAccount.selectToMeServiceAccountTemplate((IServiceAccountTemplate)serviceAccountTemplate);
       	for( final var serviceAccount : serviceAccounts ) {
       		final var serviceAccountFunctions = serviceAccount.extension(IServiceAccountFunctions.class);
       		final var abstractSites = serviceAccountFunctions.GetAllowedSiteForServiceAccount();

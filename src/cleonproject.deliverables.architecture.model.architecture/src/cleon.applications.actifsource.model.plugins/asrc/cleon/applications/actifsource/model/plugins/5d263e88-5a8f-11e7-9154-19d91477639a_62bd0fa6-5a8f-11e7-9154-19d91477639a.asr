@@ -334,6 +334,9 @@
         <resource statement-guid="d21565d2-72ca-11eb-b19b-bddd9ec597ca" type="resource" guid="d2153ebf-72ca-11eb-b19b-bddd9ec597ca" />
         <resource statement-guid="ba7faece-7508-11eb-8e2c-a9291923dbed" type="resource" guid="ba7e282b-7508-11eb-8e2c-a9291923dbed" />
         <resource statement-guid="bde63f94-7cda-11eb-8da4-61a512a179fd" type="resource" guid="bde5a351-7cda-11eb-8da4-61a512a179fd" />
+        <resource statement-guid="97bd56d7-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="97bb33f4-d03e-11eb-8d9e-af0fe4aa6257" />
+        <resource statement-guid="9db0a000-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="9db078ed-d03e-11eb-8d9e-af0fe4aa6257" />
+        <resource statement-guid="a53adcd9-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="a53adcd6-d03e-11eb-8d9e-af0fe4aa6257" />
       </owns>
     </resource>
   </owns>
@@ -3651,6 +3654,36 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="bde702e5-7cda-11eb-8da4-61a512a179fd" type="literal">cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="97bd56d7-d03e-11eb-8d9e-af0fe4aa6257">
+            <resource guid="97bb33f4-d03e-11eb-8d9e-af0fe4aa6257">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="97bb5b06-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="97beb668-d03e-11eb-8d9e-af0fe4aa6257" type="literal">ch.actifsource.ui.wizard.generic</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="9db0a000-d03e-11eb-8d9e-af0fe4aa6257">
+            <resource guid="9db078ed-d03e-11eb-8d9e-af0fe4aa6257">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9db078ef-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="9db0ee21-d03e-11eb-8d9e-af0fe4aa6257" type="literal">ch.actifsource.ui.wizard.newresource</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="a53adcd9-d03e-11eb-8d9e-af0fe4aa6257">
+            <resource guid="a53adcd6-d03e-11eb-8d9e-af0fe4aa6257">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a53adcd8-d03e-11eb-8d9e-af0fe4aa6257" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="a53b2afa-d03e-11eb-8d9e-af0fe4aa6257" type="literal">ch.actifsource.ui.wizard.generic.fieldeditor</object>
               </predicate>
             </resource>
           </object>

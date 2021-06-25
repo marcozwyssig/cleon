@@ -13,7 +13,7 @@ public class RolePackage {
   public static final Resource RoleActorResponsibility_rolesForSystemComponents = new Resource("ea84d7ed-1da3-11e9-b601-db75aa6f89a4");
   public static final Resource RoleSystemComponent = new Resource("e33fb742-35e4-11e9-9d58-25409887bb2a");
   public static final Resource RoleSiteGroup_roleforActors = new Resource("47bd0260-35e6-11e9-9d58-25409887bb2a");
-  public static final Resource RoleSystemComponent_systemComponent = new Resource("5d8925dc-35e6-11e9-9d58-25409887bb2a");
+  public static final Resource RoleSystemComponent_systemComponentRoleTemplate = new Resource("5d8925dc-35e6-11e9-9d58-25409887bb2a");
   public static final Resource FunctionSpace_aE_Role_RoleSystemComponent = new Resource("f1878623-35ee-11e9-9d58-25409887bb2a");
   public static final Resource RoleActorGroup_roleDescription = new Resource("98409691-35f5-11e9-9d58-25409887bb2a");
   public static final Resource RoleActorResponsibility = new Resource("fb08ba17-809b-11e9-8e65-f3f639e40a34");
@@ -49,4 +49,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role,c+08GQAIwPdzVkdnrq84Oh8jOkY=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role,bYYr5kksUF0oSm8sVU9u/IzUSc4=] */

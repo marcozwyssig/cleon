@@ -8,7 +8,7 @@ public interface IRoleSystemComponent extends cleon.common.resources.metamodel.s
   
   // relations
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent selectSystemComponent();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockForSystemComponent selectSystemComponentRoleTemplate();
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> selectBasedOn();
   
@@ -16,4 +16,4 @@ public interface IRoleSystemComponent extends cleon.common.resources.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,yNw4i9cKLSf/yOo16Ws/O/pseQk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e33fb742-35e4-11e9-9d58-25409887bb2a,10/q4FSfa/XosgBgympgZYZsBrM=] */

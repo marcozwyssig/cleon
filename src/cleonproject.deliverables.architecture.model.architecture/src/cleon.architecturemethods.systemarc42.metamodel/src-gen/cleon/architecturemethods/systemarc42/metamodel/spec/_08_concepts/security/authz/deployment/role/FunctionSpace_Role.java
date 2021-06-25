@@ -108,7 +108,7 @@ public class FunctionSpace_Role {
     @Override
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> OnlySameSystemComponent(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent rolSysCmp, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleSystemComponent> roleSystemComponentList) {
       /* Begin Protected Region [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
-      return roleSystemComponentList.stream().filter(x -> x.selectSystemComponent().equals(rolSysCmp.selectSystemComponent())).collect(Collectors.toList());
+      return roleSystemComponentList.stream().filter(x -> x.selectSystemComponentRoleTemplate().selectSystemComponent().equals(rolSysCmp.selectSystemComponentRoleTemplate().selectSystemComponent())).collect(Collectors.toList());
       /* End Protected Region   [[e6a1f2c3-0deb-11ea-91d3-b3e983305cb0]] */
     }
 
@@ -266,6 +266,9 @@ public class FunctionSpace_Role {
     @IDynamicResourceExtension.MethodId("4633316d-9043-11ea-8028-45f28a9dbef3")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemComponent> AllRoleSystemComponents();
 
+    @IDynamicResourceExtension.MethodId("d2a1ec2d-d4b8-11eb-9bf5-6901ef778b9c")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockForSystemComponent> AllRelatedAuthZBuildingBlockForSystemComponent();
+
   }
   
   public static interface IRoleActorResponsibilityFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -313,4 +316,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,Fp8MqGDzBVgDoYfS2n5bFB+qa+4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,1BZhzDOtBZfrVdofjxXFdKK8AJg=] */

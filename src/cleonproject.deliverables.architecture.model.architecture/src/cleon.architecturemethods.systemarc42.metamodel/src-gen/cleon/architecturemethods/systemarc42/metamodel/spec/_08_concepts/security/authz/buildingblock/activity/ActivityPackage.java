@@ -16,6 +16,7 @@ public class ActivityPackage {
   public static final Resource AuthZBuildingBlockForSystemConfiguration_authZBuildingBlockForPermission = new Resource("eb1f0ad2-0a00-11eb-a857-d17d567fc174");
   public static final Resource AuthZBuildingBlockForPermission_permission = new Resource("19527039-0a01-11eb-a857-d17d567fc174");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AbstractAuthZBuildingBlockPermission = new Resource("a29f1a46-0a1c-11eb-a857-d17d567fc174");
+  public static final Resource ActivityTemplateAware_activityTemplates = new Resource("a73f40da-6d4a-11eb-bd4b-f974d73611ae");
   public static final Resource AuthZBuildingBlockForSharePermission = new Resource("7424ddb6-862f-11eb-9869-4317e18e6c88");
   public static final Resource AuthZBuildingBlockForPermission_authZBuildingBlockForSharePermissions = new Resource("b4f9d9bc-862f-11eb-9869-4317e18e6c88");
   public static final Resource AuthZBuildingBlockForSharePermission_share = new Resource("68fbbbd1-8647-11eb-9869-4317e18e6c88");
@@ -23,6 +24,7 @@ public class ActivityPackage {
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_StringLiteral = new Resource("6d7280c1-8648-11eb-9869-4317e18e6c88");
   public static final Resource AbstractAuthZBuildingBlockPermission = new Resource("912699fe-864a-11eb-9869-4317e18e6c88");
   public static final Resource FunctionSpace_aE_Activity_aE_Buildingblock_AuthZBuildingBlockForPermission = new Resource("d21d0b45-864b-11eb-9869-4317e18e6c88");
+  public static final Resource ActivityTemplateAware = new Resource("c8872d57-d426-11eb-9862-7f597b9587dd");
   
   /* Begin Protected Region [[user]] */
   
@@ -43,4 +45,4 @@ public class ActivityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,ZwAvXiFStIGJNosY0Ox4ePhK0mw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity,YtOeFPMVzTHvha0CpKF29BAbdLI=] */

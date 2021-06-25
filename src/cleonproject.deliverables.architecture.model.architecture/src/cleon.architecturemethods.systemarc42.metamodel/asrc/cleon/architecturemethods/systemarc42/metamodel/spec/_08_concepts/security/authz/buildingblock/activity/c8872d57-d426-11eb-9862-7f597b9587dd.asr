@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="c8872d57-d426-11eb-9862-7f597b9587dd">
+  <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="e0d3e21f-d426-11eb-9862-7f597b9587dd" type="resource" guid="a73f40da-6d4a-11eb-bd4b-f974d73611ae" />
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8872d59-d426-11eb-9862-7f597b9587dd" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c8899e5b-d426-11eb-9862-7f597b9587dd" type="resource" guid="220da015-34a4-11da-bd6c-87efd979775d" />
+  </predicate>
+  <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="e0d3e21f-d426-11eb-9862-7f597b9587dd">
+      <resource guid="a73f40da-6d4a-11eb-bd4b-f974d73611ae">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a73f67ec-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="a7b89065-6d4a-11eb-bd4b-f974d73611ae" type="literal">activityTemplates</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a740a06e-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="ec497727-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="a740c77f-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="ec497723-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+        <predicate guid="0a52fda9-c0c7-11df-bc15-5b8c4150127a">
+          <object statement-guid="cb377a2d-6d4a-11eb-bd4b-f974d73611ae" type="resource" guid="912699fe-864a-11eb-9869-4317e18e6c88" />
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="c889774a-d426-11eb-9862-7f597b9587dd" type="literal">ActivityTemplateAware</object>
+  </predicate>
+  <predicate guid="789d756a-7c6f-11da-8e26-0dc50b1b5a91">
+    <object statement-guid="c889c56c-d426-11eb-9862-7f597b9587dd" type="resource" guid="789d7568-7c6f-11da-8e26-0dc50b1b5a91" />
+  </predicate>
+</resource>
+

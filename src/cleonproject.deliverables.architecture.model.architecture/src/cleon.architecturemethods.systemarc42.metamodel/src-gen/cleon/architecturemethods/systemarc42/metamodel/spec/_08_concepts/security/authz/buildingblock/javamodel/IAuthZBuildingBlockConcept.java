@@ -10,6 +10,8 @@ public interface IAuthZBuildingBlockConcept extends cleon.common.doc.metamodel.s
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockActivity selectAuthZBuildingBlockActivity();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockActor selectAuthZBuildingBlockActor();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,fk4neL6jyVR9PlsD3R4tQlbX1AQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,L2rNqX6/kOQisVrLM0tZuz8pHrc=] */

@@ -43,6 +43,31 @@ public class FunctoinSpace_AuthZBuildingBlockForSystemComponent_Actor {
 
   }
 
+  public static interface ISystemComponentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("4461f4ba-d8e6-11eb-9729-c33fe444cc71")
+    public java.lang.String OverrideOrName();
+
+  }
+  
+  public static interface ISystemComponentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemComponentFunctionsImpl implements ISystemComponentFunctionsImpl {
+
+    public static final ISystemComponentFunctionsImpl INSTANCE = new SystemComponentFunctionsImpl();
+
+    private SystemComponentFunctionsImpl() {}
+
+  }
+  
+  public static class SystemComponentFunctions {
+
+    private SystemComponentFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,27I9eBqtrBQdMTDFayYVTH9PJwo=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7fae76bb-d5e1-11eb-b02a-03222c04a898,N0eAEAv97dMG49L04H0YZFD5TGg=] */

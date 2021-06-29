@@ -40,7 +40,6 @@ public class SetIdForRoles extends AbstractAllInstancesRefactorerAspect {
 					final IRoleSiteGroupFunctions netDomainGroupFunctions = domainGroup.extension(IRoleSiteGroupFunctions.class);
 					final IAbstractGroupFunctions abstractGroupFunctions = domainGroup.extension(IAbstractGroupFunctions.class);
 
-					verifyAndSetId(executor, netDomainGroupFunctions.AllRoleSystemComponents(), abstractGroupFunctions);
 					verifyAndSetId(executor, netDomainGroupFunctions.AllRoleActorResponsiblities(), abstractGroupFunctions);					
 				}
 			}

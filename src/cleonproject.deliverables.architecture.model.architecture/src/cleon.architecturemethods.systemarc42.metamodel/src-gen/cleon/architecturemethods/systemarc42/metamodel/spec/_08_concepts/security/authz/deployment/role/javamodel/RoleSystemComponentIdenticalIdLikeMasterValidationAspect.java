@@ -35,10 +35,11 @@ public class RoleSystemComponentIdenticalIdLikeMasterValidationAspect implements
 				roleSystemComponentFunctions.Actor().selectActor(),
 				roleSystemComponentFunctions.Responsibility().selectResponsibility(),
 				roleSystemComponent.selectSystemComponentRoleTemplate().selectSystemComponent());
-		if (!roleSystemComponent.selectIdentifier().equals(masterRoleSystemComponent.selectIdentifier())) {
+		
+		if (!roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId().equals(masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId())) {
 			final String errormessage = String.format(
 					"Id of role system component is different than the master (%1$d != %2$d)",
-					roleSystemComponent.selectIdentifier(), masterRoleSystemComponent.selectIdentifier());
+					roleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId(), masterRoleSystemComponent.extension(IRoleSystemComponentFunctions.class).GetId());
 			inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 					RolePackage.RoleSystemComponent, errormessage));
 		}

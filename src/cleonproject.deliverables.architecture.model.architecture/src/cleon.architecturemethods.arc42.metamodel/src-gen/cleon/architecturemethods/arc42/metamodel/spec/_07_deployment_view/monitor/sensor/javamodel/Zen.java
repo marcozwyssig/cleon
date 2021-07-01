@@ -41,11 +41,11 @@ public class Zen extends DynamicResource implements IZen {
 
   @Override
   public java.lang.Integer selectInterval_aE__aA_s_aC_() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_);
   }
     
   public void setInterval_aE__aA_s_aC_(java.lang.Integer interval_aE__aA_s_aC_) {
-     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
+     _setSingleAttribute(cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, interval_aE__aA_s_aC_);
   }
 
   // relations
@@ -65,10 +65,10 @@ public class Zen extends DynamicResource implements IZen {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.Sensor_interval_aE__aA_s_aC_, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.SensorPackage.IntervalAware_interval_aE__aA_s_aC_, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db533558-c1eb-11ea-820f-9931558a898c,RdbuZcSpFcGY1pp2AW7EKrkd2Sk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db533558-c1eb-11ea-820f-9931558a898c,e3WxqpASjY1XOGeqTr66M18p3Qk=] */

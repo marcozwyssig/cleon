@@ -23,6 +23,12 @@ public class FunctionSpace_Sensor {
     @IDynamicResourceExtension.MethodId("d6496308-d00c-11ea-b5a9-731249efa1a3")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("95b58b77-d8f2-11eb-b083-d9bf2ecd74ec")
+    public java.lang.Integer Interval_aE__aA_s_aC_();
+
+    @IDynamicResourceExtension.MethodId("32ba9ca3-da3e-11eb-8ffa-d7727a940bcf")
+    public java.util.UUID ImplGuid();
+
   }
   
   public static interface ISensorFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -120,4 +126,4 @@ public class FunctionSpace_Sensor {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,IA4QHDuSikroSKLuynCCzayixlY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ceab5078-d00c-11ea-b5a9-731249efa1a3,/x4xslnOJHSm/tTPgcENcx7mUj0=] */

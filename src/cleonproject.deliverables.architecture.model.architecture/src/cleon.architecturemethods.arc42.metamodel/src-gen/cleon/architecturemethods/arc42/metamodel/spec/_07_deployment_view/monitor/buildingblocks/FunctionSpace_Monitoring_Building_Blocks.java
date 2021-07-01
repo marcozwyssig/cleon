@@ -60,6 +60,9 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     @IDynamicResourceExtension.MethodId("be24ca31-08a5-11eb-a18e-c7dfa3f96804")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock> SelectMonitoringBuildingBlock();
 
+    @IDynamicResourceExtension.MethodId("2ec1c20e-d8f1-11eb-b083-d9bf2ecd74ec")
+    public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> SelectAllSensors();
+
   }
   
   public static interface IMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -241,6 +244,9 @@ public class FunctionSpace_Monitoring_Building_Blocks {
     @IDynamicResourceExtension.MethodId("ec15906e-e06b-11ea-bb83-59933a3fa779")
     public List<cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.javamodel.ISensor> SelectAllSensors();
 
+    @IDynamicResourceExtension.MethodId("7996825a-da39-11eb-8ffa-d7727a940bcf")
+    public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Top();
+
   }
   
   public static interface IAbstractSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -363,4 +369,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,r3yykT+QFmxcj6n1aKfgbvcMdrs=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,JT4oKXNcVEr/re7SbOtH0pQK4IE=] */

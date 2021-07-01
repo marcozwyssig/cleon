@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorResponsibility;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorResponsibility;
 import java.util.stream.Collectors;
 /* End Protected Region   [[fb58b09d-d181-11e8-b18f-df1540bb7a5c,imports]] */
 
@@ -185,7 +185,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
   public static interface IActivitySystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("8b15e7c2-61cd-11ea-b3a7-2dbb30740ced")
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration);
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration);
 
   }
   
@@ -196,7 +196,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private ActivitySystemConfigurationFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
       return null;
     }
 
@@ -206,7 +206,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private ActivitySystemConfigurationFunctions() {}
 
-    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
+    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivitySystemConfiguration activitySystemConfiguration) {
       return DynamicResourceUtil.invoke(IActivitySystemConfigurationFunctionsImpl.class, ActivitySystemConfigurationFunctionsImpl.INSTANCE, activitySystemConfiguration).RenderChapters(activitySystemConfiguration);
     }
 
@@ -253,10 +253,10 @@ public class FunctionSpace_Docbook_SystemArc42 {
   public static interface IRoleActorGroupFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("2f696a13-61d4-11ea-b3a7-2dbb30740ced")
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup);
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup);
 
     @IDynamicResourceExtension.MethodId("0a09741d-6e97-11ea-b8e8-f1a46e0c42f7")
-    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup);
+    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup);
 
   }
   
@@ -267,12 +267,12 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private RoleActorGroupFunctionsImpl() {}
 
     @Override
-    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
+    public java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
       return null;
     }
 
     @Override
-    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
+    public java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
       /* Begin Protected Region [[0a09741d-6e97-11ea-b8e8-f1a46e0c42f7]] */
       int count = 0;
       for (final IRoleActorResponsibility actorResponsibility : roleActorGroup.selectRoleActorResponsibilities()
@@ -289,11 +289,11 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private RoleActorGroupFunctions() {}
 
-    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
+    public static java.lang.String RenderChapters(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
       return DynamicResourceUtil.invoke(IRoleActorGroupFunctionsImpl.class, RoleActorGroupFunctionsImpl.INSTANCE, roleActorGroup).RenderChapters(roleActorGroup);
     }
 
-    public static java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
+    public static java.lang.Integer Count(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup roleActorGroup) {
       return DynamicResourceUtil.invoke(IRoleActorGroupFunctionsImpl.class, RoleActorGroupFunctionsImpl.INSTANCE, roleActorGroup).Count(roleActorGroup);
     }
 
@@ -715,7 +715,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
   public static interface IRealmConfigurationUsageFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4f425a8b-fd9e-11ea-aa08-3550db97e5ec")
-    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage);
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage);
 
   }
   
@@ -726,7 +726,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
     private RealmConfigurationUsageFunctionsImpl() {}
 
     @Override
-    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
+    public java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
       /* Begin Protected Region [[4f425a8b-fd9e-11ea-aa08-3550db97e5ec]] */
       if (realmConfigurationUsage.selectDescriptions().isEmpty()) {
       	return String.join("\n", realmConfigurationUsage.selectDirectoryService().selectStandardDescription());
@@ -741,7 +741,7 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
     private RealmConfigurationUsageFunctions() {}
 
-    public static java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
+    public static java.lang.String Text(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn.javamodel.IRealmConfigurationUsage realmConfigurationUsage) {
       return DynamicResourceUtil.invoke(IRealmConfigurationUsageFunctionsImpl.class, RealmConfigurationUsageFunctionsImpl.INSTANCE, realmConfigurationUsage).Text(realmConfigurationUsage);
     }
 
@@ -1070,4 +1070,4 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,6zVOfhg8YCneaz3vlYgzKrJc7hE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,6sTGA/2wErLHV1EmCSO452Sxetc=] */

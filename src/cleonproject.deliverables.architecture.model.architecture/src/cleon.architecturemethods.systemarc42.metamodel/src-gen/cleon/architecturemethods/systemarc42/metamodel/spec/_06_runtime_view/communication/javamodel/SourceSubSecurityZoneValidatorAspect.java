@@ -12,7 +12,7 @@ import ch.actifsource.core.validation.inconsistency.PredicateInconsistency;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.FunctionSpace_Communication.ISourceInSubSecurityZoneFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IGlobalDomain;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy;
 
 public class SourceSubSecurityZoneValidatorAspect implements IResourceValidationAspect {
 

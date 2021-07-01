@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation;
 
 import ch.actifsource.util.Assert;
 import java.util.List;
@@ -8,9 +8,9 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.FunctionSpace_SubzonePolicy.ISubZoneAccessPolicyFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy;
 
 /* End Protected Region   [[d422151a-4607-11ea-857e-99d5aa1ed1cd,imports]] */
 
@@ -52,7 +52,7 @@ public class FunctionSpace_Segmentation {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllSystemConfigurations();
 
     @IDynamicResourceExtension.MethodId("df2d7303-b9ce-11e9-828c-091526d036b6")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone SourcePolicy();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone SourcePolicy();
 
     @IDynamicResourceExtension.MethodId("c0a412fe-deac-11e9-b714-478bec98e62d")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> AllHostNodesWhereSystemConfigurationAndSite(final cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration syscfg, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSiteWithHosts site);
@@ -196,4 +196,4 @@ public class FunctionSpace_Segmentation {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,I/n8LCfZ6R0fwYsPaaZWAgEPBiA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,d422151a-4607-11ea-857e-99d5aa1ed1cd,caT23CiCv+NuJ/jGSDkYY+6f7Wk=] */

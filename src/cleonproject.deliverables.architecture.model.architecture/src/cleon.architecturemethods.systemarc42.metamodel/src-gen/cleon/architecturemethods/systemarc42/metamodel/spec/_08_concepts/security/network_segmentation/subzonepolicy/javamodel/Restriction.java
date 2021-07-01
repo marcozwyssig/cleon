@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -86,13 +86,13 @@ public class Restriction extends DynamicResource implements IRestriction {
     
   @Override
   public boolean isRestricted() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.Restriction_Restricted);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.Restriction_Restricted);
   }
   
   @Override
   public boolean isAllowed() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.Restriction_Allowed);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.Restriction_Allowed);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f310eb7a-b844-11e9-8760-2d4a9d15ec14,JDjxSdxAT4j0GCbjE86S3SkcB7c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,f310eb7a-b844-11e9-8760-2d4a9d15ec14,HuOZFnDAFo+GPlwnpYAaFj5HYcE=] */

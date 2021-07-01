@@ -12,10 +12,10 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.com
 import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.FunctionSpace_Access.IAccessConceptFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.AccessConcept;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone;
-import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.SourceSubZone;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.FunctionSpace_Segmentation.ISecuritySubZoneFunctions;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone;
+import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.SourceSubZone;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IPortService;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractHostFunctions;
@@ -179,10 +179,10 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyIntra();
 
     @IDynamicResourceExtension.MethodId("ff2ddc87-df89-11e9-9827-a1514ee8d06a")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy> GetInterConnection();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IInterSubZoneAccessPolicy> GetInterConnection();
 
     @IDynamicResourceExtension.MethodId("983f4fe1-e042-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection();
 
     @IDynamicResourceExtension.MethodId("28012e2a-dfa3-11e9-9827-a1514ee8d06a")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService> AllServices();
@@ -200,7 +200,7 @@ public class FunctionSpace_Communication {
     public java.lang.String SubLayerName();
 
     @IDynamicResourceExtension.MethodId("859b1670-051f-11ea-83f8-cdeda7a40e11")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetAllIntraConnection();
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetAllIntraConnection();
 
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctBySourceAndService();
@@ -261,7 +261,7 @@ public class FunctionSpace_Communication {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> OnlyIntra(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
 
     @IDynamicResourceExtension.MethodId("983f4fe1-e042-11e9-aa67-4505845acdbd")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
 
     @IDynamicResourceExtension.MethodId("11651668-04c4-11ea-8fff-bb311a3ad127")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> distinctBySourceAndService(final List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource> sourceList);
@@ -332,7 +332,7 @@ public class FunctionSpace_Communication {
     }
 
     @Override
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       /* Begin Protected Region [[983f4fe1-e042-11e9-aa67-4505845acdbd]] */
       final ISourceFunctions sourceFunctions = source.extension(ISourceFunctions.class);
       if (!sourceFunctions.GetInterConnection().isEmpty()) {
@@ -555,7 +555,7 @@ public class FunctionSpace_Communication {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, sourceList).OnlyIntra(sourceList);
     }
 
-    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.IIntraSubZoneAccessPolicy> GetIntraConnection(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
       return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).GetIntraConnection(source);
     }
 
@@ -890,4 +890,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,W9qaauX57OjCtzw9jKErWGj7gAY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,tCf8yqjW2U7yXz8vLjzC4e8bEl4=] */

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy;
 
 import ch.actifsource.core.Resource;
 
@@ -38,8 +38,8 @@ public class SubzonepolicyPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy";
+    return "cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy,Tl8Q1OsQw9HDa4pZBoRmGQ3vkcM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy,qpBI43yFGgDJejtI1o+Adoc1rHs=] */

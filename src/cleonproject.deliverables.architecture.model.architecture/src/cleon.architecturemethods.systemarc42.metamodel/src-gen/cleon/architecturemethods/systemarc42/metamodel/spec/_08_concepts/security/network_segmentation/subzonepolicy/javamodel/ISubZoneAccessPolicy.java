@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface ISubZoneAccessPolicy extends ch.actifsource.core.javamodel.IRes
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80913edf-b844-11e9-8760-2d4a9d15ec14,c2x3EJ5Q+1PkIeZk/kfpl0VImWk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,80913edf-b844-11e9-8760-2d4a9d15ec14,4nx57hy9TVGeUZ6O4KVgONVXZBc=] */

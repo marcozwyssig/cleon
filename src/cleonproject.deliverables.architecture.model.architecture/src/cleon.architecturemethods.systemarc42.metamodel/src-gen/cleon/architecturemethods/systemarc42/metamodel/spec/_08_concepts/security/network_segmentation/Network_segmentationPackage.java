@@ -1,8 +1,8 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation;
 
 import ch.actifsource.core.Resource;
 
-public class SegmentationPackage {
+public class Network_segmentationPackage {
   
   public static final Resource SegmentationConcept = new Resource("d56c10bc-04ed-11e9-8ff2-6313785a338c");
   public static final Resource SegmentationConcept_segmentation = new Resource("dcb48007-0d1d-11e9-be4f-03130cc057ef");
@@ -15,7 +15,7 @@ public class SegmentationPackage {
   
   /* End Protected Region   [[user]] */
   
-  private SegmentationPackage() {}
+  private Network_segmentationPackage() {}
   
   public static final String getScopeName() {
     return "cleon.architecturemethods.systemarc42.metamodel";
@@ -26,8 +26,8 @@ public class SegmentationPackage {
   }
   
   public static final String getPackageName() {
-    return "cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation";
+    return "cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation";
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation,3gwmMv+2pyD4Gfupmk4S4ufjcvE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation,Xjd1CeY4HU8YPxg7F2lTpcuYUnY=] */

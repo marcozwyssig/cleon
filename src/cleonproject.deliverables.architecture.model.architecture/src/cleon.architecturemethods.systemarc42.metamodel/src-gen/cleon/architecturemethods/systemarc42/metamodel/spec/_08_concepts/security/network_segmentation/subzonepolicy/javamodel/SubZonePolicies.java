@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -81,12 +81,12 @@ public class SubZonePolicies extends DynamicResource implements ISubZonePolicies
   }
     
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone> selectSubzonePolicies() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies);
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone> selectSubzonePolicies() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies);
   }
 
-  public SubZonePolicies setSubzonePolicies(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone> subzonePolicies) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, subzonePolicies);
+  public SubZonePolicies setSubzonePolicies(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone> subzonePolicies) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, subzonePolicies);
     return this;
   }
     
@@ -108,15 +108,15 @@ public class SubZonePolicies extends DynamicResource implements ISubZonePolicies
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies selectToMeSubzonePolicies(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISourceSubZone object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZonePolicies.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISubZonePolicies selectToMeSubzonePolicies(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISourceSubZone object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISubZonePolicies.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.SubzonepolicyPackage.SubZonePolicies_subzonePolicies, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0670992e-b844-11e9-8760-2d4a9d15ec14,FzMHT8p7O+JC8+W7aG4Q5uOAoiI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,0670992e-b844-11e9-8760-2d4a9d15ec14,pdV/ceHBzGhvFvxw7jPVxD3OFP4=] */

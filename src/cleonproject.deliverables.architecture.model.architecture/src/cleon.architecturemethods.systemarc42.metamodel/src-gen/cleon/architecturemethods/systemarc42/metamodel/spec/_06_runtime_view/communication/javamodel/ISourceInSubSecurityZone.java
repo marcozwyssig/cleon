@@ -10,7 +10,7 @@ public interface ISourceInSubSecurityZone extends ch.actifsource.core.javamodel.
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.threatmitigation.javamodel.IThreatMitigation> selectThreatMitigations();
   
-  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy selectSubZoneAccessPolicy();
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel.ISubZoneAccessPolicy selectSubZoneAccessPolicy();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState selectState();
   
@@ -20,4 +20,4 @@ public interface ISourceInSubSecurityZone extends ch.actifsource.core.javamodel.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9fa746-c773-11ea-b0b6-e5df79e86bc2,XzMZPHpJ1m5d47uCOOfkTaoQTq8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,df9fa746-c773-11ea-b0b6-e5df79e86bc2,Pa0shv6dStoyHyLVSN1HALKnkJE=] */

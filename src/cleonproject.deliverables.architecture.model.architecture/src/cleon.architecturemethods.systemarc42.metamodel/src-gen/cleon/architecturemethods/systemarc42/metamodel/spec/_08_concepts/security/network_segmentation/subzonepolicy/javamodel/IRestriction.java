@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.segmentation.subzonepolicy.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -37,4 +37,4 @@ public interface IRestriction extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f310eb7a-b844-11e9-8760-2d4a9d15ec14,Qxc0E5Q0OnTKbUVtqGAid9NpG7g=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,f310eb7a-b844-11e9-8760-2d4a9d15ec14,kaX+pzYMCtHbufyNdL29kUjMPUM=] */

@@ -480,6 +480,21 @@
         <resource statement-guid="2a1bbe8c-8632-11eb-9869-4317e18e6c88" type="resource" guid="2a1b4959-8632-11eb-9869-4317e18e6c88" />
         <resource statement-guid="0f3ba589-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="0f3ba586-c93c-11eb-adc4-d18d1353eb6e" />
         <resource statement-guid="630f4df2-c93c-11eb-adc4-d18d1353eb6e" type="resource" guid="630f26df-c93c-11eb-adc4-d18d1353eb6e" />
+        <resource statement-guid="ab5ab2f3-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="ab586900-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="cb7032ab-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="cb700b98-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="cbe1e026-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="cbe1b913-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="cd0ec7c6-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="ccc7d3b3-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d04eb03a-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d04e8925-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d0b2a21a-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d0b27b07-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d136c689-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d1369f76-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d22433ab-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d2240c98-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d68606e2-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d685b8bf-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="d8f33688-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="d8f2e865-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="dd876500-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="dd8716dd-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="e35ac97b-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="e35a7b58-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="e4040177-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="e403da63-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="e9493089-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="e948e266-de80-11eb-82ea-ad63e40c57ab" />
+        <resource statement-guid="eafc110c-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="eafbc2e9-de80-11eb-82ea-ad63e40c57ab" />
       </owns>
     </resource>
   </owns>
@@ -5266,6 +5281,156 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="630f9c13-c93c-11eb-adc4-d18d1353eb6e" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.businesscontinuity</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="ab5ab2f3-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="ab586900-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ab589012-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ab5e3564-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="cb7032ab-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="cb700b98-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cb7032aa-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cb716b2e-de80-11eb-82ea-ad63e40c57ab" type="literal">ch.actifsource.ui.wizard.generic</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="cbe1e026-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="cbe1b913-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cbe1b915-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cbe27c67-de80-11eb-82ea-ad63e40c57ab" type="literal">ch.actifsource.ui.wizard.generic.fieldeditor</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="cd0ec7c6-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="ccc7d3b3-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ccc7fac5-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="cd135ba7-de80-11eb-82ea-ad63e40c57ab" type="literal">ch.actifsource.ui.wizard.newresource</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d04eb03a-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d04e8925-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d04e8928-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d04f256c-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d0b2a21a-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d0b27b07-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d0b27b09-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d0b3656c-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.actor</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d136c689-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d1369f76-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d136c688-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d13789da-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d22433ab-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d2240c98-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d22433aa-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d224f6fc-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d68606e2-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d685b8bf-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d685dfd1-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d6876673-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="d8f33688-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="d8f2e865-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d8f30f77-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="d8f46f09-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="dd876500-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="dd8716dd-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="dd873def-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="dd889d81-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="e35ac97b-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="e35a7b58-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e35aa26a-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e35bdaec-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="e4040177-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="e403da63-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e4040175-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e4049db9-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="e9493089-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="e948e266-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e9490978-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="e94a41fa-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authn</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="eafc110c-de80-11eb-82ea-ad63e40c57ab">
+            <resource guid="eafbc2e9-de80-11eb-82ea-ad63e40c57ab">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="eafbe9fb-de80-11eb-82ea-ad63e40c57ab" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="eafdbebd-de80-11eb-82ea-ad63e40c57ab" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.network_segmentation.subzonepolicy</object>
               </predicate>
             </resource>
           </object>

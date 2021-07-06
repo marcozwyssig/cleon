@@ -23,7 +23,7 @@ public class FunctionSpace_Role {
   public static interface IRoleSystemComponentFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("da41297a-35ef-11e9-9d58-25409887bb2a")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode GetNetdomainNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite GetAbstractSite();
 
     @IDynamicResourceExtension.MethodId("2e224bf8-35f5-11e9-9d58-25409887bb2a")
     public java.lang.String GetDescription();
@@ -68,10 +68,13 @@ public class FunctionSpace_Role {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSystemComponent> OnlyWithActivityPermission(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IActivityPermission src);
 
     @IDynamicResourceExtension.MethodId("6baf5299-78e4-11ea-a009-ab381ce86597")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSiteGroup Site();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleSiteGroup SiteGroup();
 
     @IDynamicResourceExtension.MethodId("729a6900-78e4-11ea-a009-ab381ce86597")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorGroup Actor();
+
+    @IDynamicResourceExtension.MethodId("54ec73fb-de34-11eb-b028-df36f0dc7b24")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode Environment();
 
     @IDynamicResourceExtension.MethodId("765ffc6d-78e4-11ea-a009-ab381ce86597")
     public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.IRoleActorResponsibility Responsibility();
@@ -84,6 +87,9 @@ public class FunctionSpace_Role {
 
     @IDynamicResourceExtension.MethodId("e046f7d0-d5e0-11eb-b02a-03222c04a898")
     public java.lang.Integer GetRoleSiteGroupId();
+
+    @IDynamicResourceExtension.MethodId("bae35675-de46-11eb-b028-df36f0dc7b24")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite> GetAllowedSiteForRoleSystemComponent();
 
   }
   
@@ -336,4 +342,4 @@ public class FunctionSpace_Role {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,8rZeSNAFAKdT6GGAWVHyIavGzHA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,20a523c3-7f08-11e9-98a3-b1bd805f0a31,6oq4bR5+RmlbZN+FR/1VrC39H3k=] */

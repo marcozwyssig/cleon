@@ -31,7 +31,7 @@ public class RoleSystemComponentIdenticalIdLikeMasterValidationAspect implements
 
 		final IEnvironmentRBACFunctions environmentRBACFunctions = master.extension(IEnvironmentRBACFunctions.class);
 		final IRoleSystemComponent masterRoleSystemComponent = environmentRBACFunctions.GetRoleSystemComponent(
-				roleSystemComponentFunctions.Site().selectSite(),
+				roleSystemComponentFunctions.SiteGroup().selectSite(),
 				roleSystemComponentFunctions.Actor().selectActor(),
 				roleSystemComponentFunctions.Responsibility().selectResponsibility(),
 				roleSystemComponent.selectSystemComponentRoleTemplate().selectSystemComponent());

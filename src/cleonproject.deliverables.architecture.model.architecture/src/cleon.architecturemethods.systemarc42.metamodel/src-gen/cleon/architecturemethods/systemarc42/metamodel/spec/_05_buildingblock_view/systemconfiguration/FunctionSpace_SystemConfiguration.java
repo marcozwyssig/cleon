@@ -194,7 +194,7 @@ public class FunctionSpace_SystemConfiguration {
 
   }
 
-  public static interface IRootCASystemConfigurationFunctions extends IDynamicResourceExtension {
+  public static interface IPublicKeyInfrastructureRootSystemConfigurationFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("48364d16-0ab4-11e9-a8f9-abf1763bbc53")
     public java.lang.String GetIncludePath();
@@ -204,21 +204,21 @@ public class FunctionSpace_SystemConfiguration {
 
   }
   
-  public static interface IRootCASystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IPublicKeyInfrastructureRootSystemConfigurationFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class RootCASystemConfigurationFunctionsImpl implements IRootCASystemConfigurationFunctionsImpl {
+  public static class PublicKeyInfrastructureRootSystemConfigurationFunctionsImpl implements IPublicKeyInfrastructureRootSystemConfigurationFunctionsImpl {
 
-    public static final IRootCASystemConfigurationFunctionsImpl INSTANCE = new RootCASystemConfigurationFunctionsImpl();
+    public static final IPublicKeyInfrastructureRootSystemConfigurationFunctionsImpl INSTANCE = new PublicKeyInfrastructureRootSystemConfigurationFunctionsImpl();
 
-    private RootCASystemConfigurationFunctionsImpl() {}
+    private PublicKeyInfrastructureRootSystemConfigurationFunctionsImpl() {}
 
   }
   
-  public static class RootCASystemConfigurationFunctions {
+  public static class PublicKeyInfrastructureRootSystemConfigurationFunctions {
 
-    private RootCASystemConfigurationFunctions() {}
+    private PublicKeyInfrastructureRootSystemConfigurationFunctions() {}
 
   }
 
@@ -924,4 +924,4 @@ public class FunctionSpace_SystemConfiguration {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,sz4h/TPjfheRnwi8ATi9rIq54HM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,25454e48-020d-11e9-b327-17da2da63a8f,yw6Q09h3UzJVEn8iXNTvFr9LVOg=] */

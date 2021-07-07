@@ -10,6 +10,9 @@ public class IamPackage {
   public static final Resource ReadOnlyDomainController = new Resource("07c583f3-09eb-11e9-abef-3d869859c931");
   public static final Resource ActiveDirectoryManagerSystemConfiguration = new Resource("15f0d90d-09ef-11e9-abef-3d869859c931");
   public static final Resource RSASystemConfiguration = new Resource("f8a71fc3-0a7e-11e9-a59d-d7a0c53e291c");
+  public static final Resource ActiveDirectoryManagerSystemConfiguration_managingActor = new Resource("d151343f-df5b-11eb-95f9-6d420979d010");
+  public static final Resource ActiveDirectoryManagingActor = new Resource("e0d363b0-df5b-11eb-95f9-6d420979d010");
+  public static final Resource ActiveDirectoryManagingActor_actor = new Resource("bbe75fd5-df5c-11eb-95f9-6d420979d010");
   
   /* Begin Protected Region [[user]] */
   
@@ -30,4 +33,4 @@ public class IamPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,fwArtKxaIjZCz59BCXRuG955PD8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam,wH9NCMdP7l9aHJnqDCwaB9Z3Jg8=] */

@@ -12,6 +12,8 @@ public interface IAuthZBuildingBlockForPermission extends cleon.architecturemeth
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForSharePermission> selectAuthZBuildingBlockForSharePermissions();
   
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockForActiveDirectoryManagingActorPermission> selectAuthZBuildingBlockForActiveDirectoryManagingActorPermission();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,2V6UWdKrLVKByOjKoeARtknHIRM=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e2629021-0a00-11eb-a857-d17d567fc174,r0+FGBHdvw4rkWiaiISZjZn67OY=] */

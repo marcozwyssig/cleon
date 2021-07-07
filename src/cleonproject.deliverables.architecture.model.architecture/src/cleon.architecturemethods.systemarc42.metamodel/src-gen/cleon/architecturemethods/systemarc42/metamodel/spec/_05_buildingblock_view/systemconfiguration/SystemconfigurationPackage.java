@@ -11,7 +11,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_VirtualMachineSystemConfiguration = new Resource("39f8e140-02c7-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_WebServerConfiguration = new Resource("ac6a40af-02c8-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_PublicKeyInfrastructureSystemConfiguration = new Resource("d56b0d03-02cb-11e9-9e58-33d596257b14");
-  public static final Resource FunctionSpace_aE_SystemConfiguration_RootCASystemConfiguration = new Resource("e4bf4ebd-02cb-11e9-9e58-33d596257b14");
+  public static final Resource FunctionSpace_aE_SystemConfiguration_PublicKeyInfrastructureRootSystemConfiguration = new Resource("e4bf4ebd-02cb-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_VCenterSystemConfiguration = new Resource("abd4ba7b-02cc-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_TerminalServerSystemConfiguration = new Resource("abdbca02-02cd-11e9-9e58-33d596257b14");
   public static final Resource FunctionSpace_aE_SystemConfiguration_ServerSystemConfiguration = new Resource("4ce9691e-02d7-11e9-9e58-33d596257b14");
@@ -64,4 +64,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,EEeN+5G1HyD0oo/r+rzwL2ZFhqs=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,X6iq03FIABmpc8xZ497C1xvbCrw=] */

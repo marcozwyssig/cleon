@@ -158,6 +158,40 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
+  public static interface IAuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("56917d8a-df5d-11eb-95f9-6d420979d010")
+    public java.lang.String SimpleName();
+
+    @IDynamicResourceExtension.MethodId("56917d93-df5d-11eb-95f9-6d420979d010")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration SystemConfiguration();
+
+    @IDynamicResourceExtension.MethodId("56917d9c-df5d-11eb-95f9-6d420979d010")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.activity.javamodel.IPermission Permission();
+
+    @IDynamicResourceExtension.MethodId("56917db0-df5d-11eb-95f9-6d420979d010")
+    public java.lang.String CommonNameSpecific();
+
+  }
+  
+  public static interface IAuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl implements IAuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl {
+
+    public static final IAuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl INSTANCE = new AuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl();
+
+    private AuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctionsImpl() {}
+
+  }
+  
+  public static class AuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctions {
+
+    private AuthZBuildingBlockForActiveDirectoryManagingActorPermissionFunctions() {}
+
+  }
+
   public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
@@ -233,4 +267,4 @@ public class FunctionSpace_Activity_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,T3YhtXWD10QCG75wYp8ko6t99/I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,pjXl2eKuU1VpxgW0aSUb/aRxInc=] */

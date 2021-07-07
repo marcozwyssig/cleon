@@ -166,6 +166,16 @@ public class ActiveDirectoryManagerSystemConfiguration extends DynamicResource i
   }
     
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagingActor> selectManagingActor() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagingActor.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.IamPackage.ActiveDirectoryManagerSystemConfiguration_managingActor);
+  }
+
+  public ActiveDirectoryManagerSystemConfiguration setManagingActor(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagingActor> managingActor) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.IamPackage.ActiveDirectoryManagerSystemConfiguration_managingActor, managingActor);
+    return this;
+  }
+    
+  @Override
   public cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage selectNoPackages() {
     return _getSingle(cleon.modelinglanguages.uml.metamodel.spec.structural.packages.javamodel.IPackage.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.Component_noPackages);
   }
@@ -231,11 +241,18 @@ public class ActiveDirectoryManagerSystemConfiguration extends DynamicResource i
     _acceptList(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inSubZone, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_inheritServices, visitor);
     _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterface.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_interface, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagingActor.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.IamPackage.ActiveDirectoryManagerSystemConfiguration_managingActor, visitor);
     _acceptMultiMap(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Required.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_In, visitor);
     _acceptList(cleon.modelinglanguages.uml.metamodel.spec.structural.components.ports.javamodel.IPort_Provider.class, cleon.modelinglanguages.uml.metamodel.spec.structural.components.ComponentsPackage.AbstractComponent_ports_aE_Out, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_provides, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagerSystemConfiguration selectToMeManagingActor(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagingActor object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.javamodel.IActiveDirectoryManagerSystemConfiguration.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.security.iam.IamPackage.ActiveDirectoryManagerSystemConfiguration_managingActor, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15f0d90d-09ef-11e9-abef-3d869859c931,FLkIEztsjFxcruIjVAwmMBImg6Y=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15f0d90d-09ef-11e9-abef-3d869859c931,fxPQ4f3gqlv2vQiRoN620AKwsYg=] */

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -12,4 +12,4 @@ public interface IProcessor extends ch.actifsource.core.javamodel.IResource {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e21ab957-2aff-11e9-9692-65766bc2daa5,0gEyl8EySF6Cjl/TfmDyAeXX9Ag=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e21ab957-2aff-11e9-9692-65766bc2daa5,1X9oEHZE6+5KOB5dbwNDKjcyCi4=] */

@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -96,23 +96,23 @@ public class DiskType extends DynamicResource implements IDiskType {
     
   @Override
   public boolean isSDD() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.DiskType_SDD);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_SDD);
   }
   
   @Override
   public boolean isHDD() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.DiskType_HDD);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_HDD);
   }
   
   @Override
   public boolean isVMDK__F___S___F_Thin__F_Provisioning() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.DiskType_VMDK__F___S___F_Thin__F_Provisioning);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_VMDK__F___S___F_Thin__F_Provisioning);
   }
   
   @Override
   public boolean isVMDK__F___S___F_Thick__F_Provisioning() {
-    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.DiskType_VMDK__F___S___F_Thick__F_Provisioning);
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_VMDK__F___S___F_Thick__F_Provisioning);
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,v+/9jB4CTilO7zsNgONZgT86Mlw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,OmumOMvFYXS8aKqjZ2APsXmrd1k=] */

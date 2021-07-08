@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -32,11 +32,11 @@ public class Core extends DynamicResource implements ICore {
   
   @Override
   public java.lang.Integer selectAmount() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.Processor_amount);
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Processor_amount);
   }
     
   public void setAmount(java.lang.Integer amount) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.Processor_amount, amount);
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Processor_amount, amount);
   }
 
   // relations
@@ -55,10 +55,10 @@ public class Core extends DynamicResource implements ICore {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.Processor_amount, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Processor_amount, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,139f456b-2b00-11e9-9692-65766bc2daa5,XTkoBfIxXnobbMbHvlIhgCVTghw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,139f456b-2b00-11e9-9692-65766bc2daa5,DaYouVisP+P9vXubtOxuV5GhUj4=] */

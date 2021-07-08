@@ -1043,31 +1043,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface ICapacitySystemConfigurationConceptFunctions extends IDynamicResourceExtension {
+  public static interface IResourceBuildingBlockSystemConfigurationConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("2053c61d-c9fa-11eb-b6ae-b54ac45d32ca")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface ICapacitySystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class CapacitySystemConfigurationConceptFunctionsImpl implements ICapacitySystemConfigurationConceptFunctionsImpl {
+  public static class ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl implements IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl {
 
-    public static final ICapacitySystemConfigurationConceptFunctionsImpl INSTANCE = new CapacitySystemConfigurationConceptFunctionsImpl();
+    public static final IResourceBuildingBlockSystemConfigurationConceptFunctionsImpl INSTANCE = new ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl();
 
-    private CapacitySystemConfigurationConceptFunctionsImpl() {}
+    private ResourceBuildingBlockSystemConfigurationConceptFunctionsImpl() {}
 
   }
   
-  public static class CapacitySystemConfigurationConceptFunctions {
+  public static class ResourceBuildingBlockSystemConfigurationConceptFunctions {
 
-    private CapacitySystemConfigurationConceptFunctions() {}
+    private ResourceBuildingBlockSystemConfigurationConceptFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,6sTGA/2wErLHV1EmCSO452Sxetc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,+Zii0uiQ2GmEeYjmkwa4XbbqTJ8=] */

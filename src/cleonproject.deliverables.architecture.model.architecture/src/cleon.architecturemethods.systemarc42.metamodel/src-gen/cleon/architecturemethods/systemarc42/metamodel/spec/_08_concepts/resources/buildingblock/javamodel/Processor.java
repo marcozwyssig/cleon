@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
@@ -12,4 +12,4 @@ public abstract class Processor extends DynamicResource implements IProcessor {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e21ab957-2aff-11e9-9692-65766bc2daa5,wE6YqL6yx9rfdLnG3OOaByf4Omk=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e21ab957-2aff-11e9-9692-65766bc2daa5,XFpYLqawd04pd/FM/IRWN0dASEc=] */

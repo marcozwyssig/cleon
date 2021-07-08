@@ -1,31 +1,31 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class CapacityPlanningSystemConcept extends DynamicResource implements ICapacityPlanningSystemConcept {
+public class ResourceBuildingBlockSystemConcept extends DynamicResource implements IResourceBuildingBlockSystemConcept {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICapacityPlanningSystemConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ICapacityPlanningSystemConcept>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<IResourceBuildingBlockSystemConcept> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<IResourceBuildingBlockSystemConcept>() {
     
     @Override
-    public ICapacityPlanningSystemConcept create() {
-      return new CapacityPlanningSystemConcept();
+    public IResourceBuildingBlockSystemConcept create() {
+      return new ResourceBuildingBlockSystemConcept();
     }
     
     @Override
-    public ICapacityPlanningSystemConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new CapacityPlanningSystemConcept(resourceRepository, resource);
+    public IResourceBuildingBlockSystemConcept create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new ResourceBuildingBlockSystemConcept(resourceRepository, resource);
     }
   
   };
 
-  public CapacityPlanningSystemConcept() {
-    super(ICapacityPlanningSystemConcept.TYPE_ID);
+  public ResourceBuildingBlockSystemConcept() {
+    super(IResourceBuildingBlockSystemConcept.TYPE_ID);
   }
   
-  public CapacityPlanningSystemConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ICapacityPlanningSystemConcept.TYPE_ID);
+  public ResourceBuildingBlockSystemConcept(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, IResourceBuildingBlockSystemConcept.TYPE_ID);
   }
 
   // attributes
@@ -51,21 +51,11 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
   // relations
   
   @Override
-  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacitySystemConfigurationConcept> selectCapacitySystemConfigurationConcept() {
-    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacitySystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.CapacityPlanningSystemConcept_capacitySystemConfigurationConcept);
-  }
-
-  public CapacityPlanningSystemConcept setCapacitySystemConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacitySystemConfigurationConcept> capacitySystemConfigurationConcept) {
-    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.CapacityPlanningSystemConcept_capacitySystemConfigurationConcept, capacitySystemConfigurationConcept);
-    return this;
-  }
-    
-  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> selectChapters() {
     return _getList(cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter.class, cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters);
   }
 
-  public CapacityPlanningSystemConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
+  public ResourceBuildingBlockSystemConcept setChapters(java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> chapters) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.ChapterAware_chapters, chapters);
     return this;
   }
@@ -75,7 +65,7 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
 
-  public CapacityPlanningSystemConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
+  public ResourceBuildingBlockSystemConcept setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements, documentElements);
     return this;
   }
@@ -85,8 +75,18 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     return _getList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs);
   }
 
-  public CapacityPlanningSystemConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
+  public ResourceBuildingBlockSystemConcept setParagraphs(java.util.List<? extends cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph> paragraphs) {
     _setList(cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, paragraphs);
+    return this;
+  }
+    
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept> selectResourceBuildingSystemConfigurationConcept() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConcept_resourceBuildingSystemConfigurationConcept);
+  }
+
+  public ResourceBuildingBlockSystemConcept setResourceBuildingSystemConfigurationConcept(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept> resourceBuildingSystemConfigurationConcept) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConcept_resourceBuildingSystemConfigurationConcept, resourceBuildingSystemConfigurationConcept);
     return this;
   }
     
@@ -95,7 +95,7 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcept_system);
   }
 
-  public CapacityPlanningSystemConcept setSystem(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem system) {
+  public ResourceBuildingBlockSystemConcept setSystem(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem system) {
     _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcept_system, system);
     return this;
   }
@@ -105,7 +105,7 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     return _getSingle(ch.actifsource.core.javamodel.IResource.class, ch.actifsource.core.CorePackage.Decorator_target);
   }
 
-  public CapacityPlanningSystemConcept setTarget(ch.actifsource.core.javamodel.IResource target) {
+  public ResourceBuildingBlockSystemConcept setTarget(ch.actifsource.core.javamodel.IResource target) {
     _setSingle(ch.actifsource.core.CorePackage.Decorator_target, target);
     return this;
   }
@@ -115,7 +115,7 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public CapacityPlanningSystemConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public ResourceBuildingBlockSystemConcept setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -127,17 +127,17 @@ public class CapacityPlanningSystemConcept extends DynamicResource implements IC
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
-    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacitySystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.CapacityPlanningSystemConcept_capacitySystemConfigurationConcept, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConcept_resourceBuildingSystemConfigurationConcept, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.IAbstractSystem.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts._08_conceptsPackage.SystemConcept_system, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacityPlanningSystemConcept selectToMeCapacitySystemConfigurationConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacitySystemConfigurationConcept object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel.ICapacityPlanningSystemConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.CapacityplanningPackage.CapacityPlanningSystemConcept_capacitySystemConfigurationConcept, object.getResource());
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConcept selectToMeResourceBuildingSystemConfigurationConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConfigurationConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockSystemConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.ResourceBuildingBlockSystemConcept_resourceBuildingSystemConfigurationConcept, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83876064-c93c-11eb-adc4-d18d1353eb6e,LDa2HfoN1Noj57yiV2WLG6cze8U=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,83876064-c93c-11eb-adc4-d18d1353eb6e,QQPk1vTvGFlMdBf9aDJ/9/G29ko=] */

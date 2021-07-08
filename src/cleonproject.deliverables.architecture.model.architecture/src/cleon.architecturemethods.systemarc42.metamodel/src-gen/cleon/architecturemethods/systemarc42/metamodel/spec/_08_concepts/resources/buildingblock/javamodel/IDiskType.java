@@ -1,4 +1,4 @@
-package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.capacityplanning.javamodel;
+package cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel;
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
@@ -49,4 +49,4 @@ public interface IDiskType extends ch.actifsource.core.javamodel.IEnumValue {
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,DlFDj7lm9sxV3fyDIA5FF12TxG8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,XqevrWOTE62+PlbYKwNfbWAqZ0w=] */

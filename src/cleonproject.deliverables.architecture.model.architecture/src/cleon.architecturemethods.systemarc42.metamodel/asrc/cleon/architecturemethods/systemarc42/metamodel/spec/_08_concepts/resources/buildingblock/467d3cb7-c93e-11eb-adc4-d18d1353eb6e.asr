@@ -119,7 +119,7 @@
           <object statement-guid="8ce7d154-c93e-11eb-adc4-d18d1353eb6e" type="resource" guid="ec497706-82e5-11da-bec9-79935dcc853f" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="8ce8bbb8-c93e-11eb-adc4-d18d1353eb6e" type="literal">capacityForSystemConfiguration</object>
+          <object statement-guid="8ce8bbb8-c93e-11eb-adc4-d18d1353eb6e" type="literal">resourceBuildingBlockForSystemConfiguration</object>
         </predicate>
         <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
           <object statement-guid="8ce8bbb9-c93e-11eb-adc4-d18d1353eb6e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
@@ -421,7 +421,7 @@
     </object>
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="467e000a-c93e-11eb-adc4-d18d1353eb6e" type="literal">CapacitySystemConfigurationConcept</object>
+    <object statement-guid="467e000a-c93e-11eb-adc4-d18d1353eb6e" type="literal">ResourceBuildingBlockSystemConfigurationConcept</object>
   </predicate>
   <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="59cd0e08-c9bb-11eb-8db3-91445e112fc9">
@@ -445,7 +445,7 @@
                       <object statement-guid="5aebc47f-c9bb-11eb-8db3-91445e112fc9" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="5aebc480-c9bb-11eb-8db3-91445e112fc9" type="literal">Kapazitätsplanung </object>
+                      <object statement-guid="5aebc480-c9bb-11eb-8db3-91445e112fc9" type="literal">Ressourcen-Bausteine: </object>
                     </predicate>
                   </resource>
                 </object>

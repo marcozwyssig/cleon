@@ -91,6 +91,16 @@ public class ResourceConcept extends DynamicResource implements IResourceConcept
   }
     
   @Override
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningConcept selectResourcePlanningConcept() {
+    return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourcePlanningConcept);
+  }
+
+  public ResourceConcept setResourcePlanningConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningConcept resourcePlanningConcept) {
+    _setSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourcePlanningConcept, resourcePlanningConcept);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -109,6 +119,7 @@ public class ResourceConcept extends DynamicResource implements IResourceConcept
     // relations
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IResourceBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourceBuildingBlockConcept, visitor);
+    _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourcePlanningConcept, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
@@ -118,5 +129,9 @@ public class ResourceConcept extends DynamicResource implements IResourceConcept
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.javamodel.IResourceConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourceBuildingBlockConcept, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.javamodel.IResourceConcept selectToMeResourcePlanningConcept(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.planning.javamodel.IResourcePlanningConcept object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.javamodel.IResourceConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.ResourcesPackage.ResourceConcept_resourcePlanningConcept, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,76b15515-dfe5-11eb-9a61-ab419054c47d,IbOyecTdTA5Ue4u7C1imR9+agWQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,76b15515-dfe5-11eb-9a61-ab419054c47d,028svvSLgHK7WMcUFDQDDrGInIU=] */

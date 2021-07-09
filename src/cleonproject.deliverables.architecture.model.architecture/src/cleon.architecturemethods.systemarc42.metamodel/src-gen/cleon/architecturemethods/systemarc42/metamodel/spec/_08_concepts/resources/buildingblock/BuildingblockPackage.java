@@ -31,6 +31,9 @@ public class BuildingblockPackage {
   public static final Resource ResourceBuildingBlockSystemConfigurationConcept = new Resource("467d3cb7-c93e-11eb-adc4-d18d1353eb6e");
   public static final Resource ResourceBuildingBlockSystemConcept_resourceBuildingSystemConfigurationConcept = new Resource("54c27ef4-c93e-11eb-adc4-d18d1353eb6e");
   public static final Resource ResourceBuildingBlockSystemConfigurationConcept_resourceBuildingBlockForSystemConfiguration = new Resource("8ce7aa43-c93e-11eb-adc4-d18d1353eb6e");
+  public static final Resource FunctionSpace_aE_BuildingBlock_Core = new Resource("0b53d9d6-dff8-11eb-93d3-9f230e4bb32b");
+  public static final Resource FunctionSpace_aE_BuildingBlock_Memory = new Resource("34953eb9-e07a-11eb-85ea-9f2d155d4de3");
+  public static final Resource FunctionSpace_aE_BuildingBlock_Disk = new Resource("2983080c-e084-11eb-85ea-9f2d155d4de3");
   
   /* Begin Protected Region [[user]] */
   
@@ -51,4 +54,4 @@ public class BuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock,DosY9MSwQTLaxZtKFzCg+rwoOKI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock,v1XtVzZoi9NlmftKHXzgGGbdo80=] */

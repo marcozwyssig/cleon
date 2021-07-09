@@ -1068,6 +1068,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IResourcePlanningNodeConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("cb1654ef-dff2-11eb-93d3-9f230e4bb32b")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IResourcePlanningNodeConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ResourcePlanningNodeConceptFunctionsImpl implements IResourcePlanningNodeConceptFunctionsImpl {
+
+    public static final IResourcePlanningNodeConceptFunctionsImpl INSTANCE = new ResourcePlanningNodeConceptFunctionsImpl();
+
+    private ResourcePlanningNodeConceptFunctionsImpl() {}
+
+  }
+  
+  public static class ResourcePlanningNodeConceptFunctions {
+
+    private ResourcePlanningNodeConceptFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,+Zii0uiQ2GmEeYjmkwa4XbbqTJ8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,3BirsHdqALOs87F6cQGRK4bUscY=] */

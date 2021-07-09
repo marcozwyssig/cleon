@@ -1093,6 +1093,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
+  public static interface IQoSConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("0b96a4cd-e08b-11eb-9584-9144fca99be9")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QoSConceptFunctionsImpl implements IQoSConceptFunctionsImpl {
+
+    public static final IQoSConceptFunctionsImpl INSTANCE = new QoSConceptFunctionsImpl();
+
+    private QoSConceptFunctionsImpl() {}
+
+  }
+  
+  public static class QoSConceptFunctions {
+
+    private QoSConceptFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,3BirsHdqALOs87F6cQGRK4bUscY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,/xKuR7K/feUWl+hRlBG/ukZOBug=] */

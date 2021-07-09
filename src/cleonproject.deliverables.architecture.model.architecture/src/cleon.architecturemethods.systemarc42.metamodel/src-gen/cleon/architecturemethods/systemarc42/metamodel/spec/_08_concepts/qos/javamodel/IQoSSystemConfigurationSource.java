@@ -8,6 +8,8 @@ public interface IQoSSystemConfigurationSource extends ch.actifsource.core.javam
   
   public java.lang.Integer selectEstimateMean_KBits();
   
+  public java.lang.Integer selectLoadpercent();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource selectSource();
@@ -16,4 +18,4 @@ public interface IQoSSystemConfigurationSource extends ch.actifsource.core.javam
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,hNffOFhP+/7e4NZ38ngEs67uwSU=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,tPM6MvJ0n3iJypPcApJFygpDqME=] */

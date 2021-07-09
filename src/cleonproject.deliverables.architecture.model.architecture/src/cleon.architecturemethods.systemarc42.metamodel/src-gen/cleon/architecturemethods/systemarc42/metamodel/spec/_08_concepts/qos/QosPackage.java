@@ -6,7 +6,7 @@ public class QosPackage {
   
   public static final Resource QoSConcept = new Resource("a4426fd0-f2e5-11e8-b860-9fc163e21388");
   public static final Resource QoSSystemConfigurationConcept = new Resource("39818d2e-1d88-11e9-b601-db75aa6f89a4");
-  public static final Resource QoSConcept_qosConfigurationConcept = new Resource("40dbb91f-1d88-11e9-b601-db75aa6f89a4");
+  public static final Resource QoSConcept_qosConfigurationConcepts = new Resource("40dbb91f-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource QoSSystemConfigurationSource_estimateMean_aE_KBits = new Resource("74eae68a-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource DSCP = new Resource("af43badb-1d88-11e9-b601-db75aa6f89a4");
   public static final Resource DSCP_EF__F___S___F_Telephony = new Resource("b270dee3-1d88-11e9-b601-db75aa6f89a4");
@@ -32,6 +32,7 @@ public class QosPackage {
   public static final Resource FunctionSpace_aE_QoS_QoSSystemConfigurationSource = new Resource("1a46aad0-308e-11eb-9149-f1e36a7322e5");
   public static final Resource QoSConcept_calculationFor = new Resource("ace7148a-a98d-11eb-8f9b-01c801f6a12b");
   public static final Resource FunctionSpace_aE_QoS_SystemEnvironmentNode = new Resource("a120f056-a98f-11eb-8f9b-01c801f6a12b");
+  public static final Resource QoSSystemConfigurationSource_loadpercent = new Resource("277afaa7-e092-11eb-9584-9144fca99be9");
   
   /* Begin Protected Region [[user]] */
   
@@ -52,4 +53,4 @@ public class QosPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,HpyLTwUo4TMTONKUubHr9MwnR3A=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos,nVSi4+d4KvhNMGqi3CcO5A1gnE4=] */

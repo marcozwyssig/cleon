@@ -34,7 +34,7 @@ public class CommunicationPackage {
   public static final Resource Action_Reject = new Resource("013ce3bd-dfab-11e9-9827-a1514ee8d06a");
   public static final Resource Source_action = new Resource("237c224b-dfab-11e9-9827-a1514ee8d06a");
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZone = new Resource("6e21b7d8-e05b-11e9-aa67-4505845acdbd");
-  public static final Resource Source_isTemporary = new Resource("1fbb2e20-07bf-11ea-9430-53184a2ae5ea");
+  public static final Resource IsTemporaryAware_isTemporary = new Resource("1fbb2e20-07bf-11ea-9430-53184a2ae5ea");
   public static final Resource FunctionSpace_aE_Communication_TextLiteral = new Resource("8855ea7b-0ae2-11ea-bf24-ff0f7ff0bb53");
   public static final Resource SourceInSubSecurityZone_state = new Resource("739ab4da-0c5a-11ea-af20-c193d8bcdd26");
   public static final Resource SourceInSubSecurityZone_onlyCommunicatesWith = new Resource("6ab91243-69cc-11ea-89d6-375d99542010");
@@ -47,6 +47,7 @@ public class CommunicationPackage {
   public static final Resource SourceInSubSecurityZoneCustom_hostGroupName = new Resource("83fbe6ae-2ffc-11eb-b17d-af74b7cf0bc4");
   public static final Resource SourceInSubSecurityZoneCustom = new Resource("cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54");
   public static final Resource FunctionSpace_aE_Communication_SourceInSubSecurityZoneCustom = new Resource("1f4156fb-ad95-11eb-a3eb-5dbdee6f3a54");
+  public static final Resource IsTemporaryAware = new Resource("78dece5e-e564-11eb-ad65-91bb8c730454");
   
   /* Begin Protected Region [[user]] */
   
@@ -67,4 +68,4 @@ public class CommunicationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,f5PL5fR3sv+Fjl7ISA2DDKhYzfI=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication,pT4VAvdK2GFwobdRqbnel5daJU4=] */

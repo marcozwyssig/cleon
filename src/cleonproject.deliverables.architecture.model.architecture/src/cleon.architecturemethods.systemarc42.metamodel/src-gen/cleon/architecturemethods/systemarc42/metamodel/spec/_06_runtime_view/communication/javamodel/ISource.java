@@ -2,11 +2,9 @@ package cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.co
 
 import ch.actifsource.util.collection.IMultiMapOrdered;
 
-public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription {
+public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon.common.resources.metamodel.spec.descriptions.javamodel.ISimpleDescription, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IIsTemporaryAware {
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("bf998613-877a-11e9-a61b-279ebde48b48");
-  
-  public java.lang.Boolean selectIsTemporary();
   
   // relations
   
@@ -22,4 +20,4 @@ public interface ISource extends ch.actifsource.core.javamodel.IDecorator, cleon
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,O9FmdYVUCpYLMCRr3PsHAna7o5M=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,bf998613-877a-11e9-a61b-279ebde48b48,CMXVQQBPRc2PmlEBiQMbPCUUzHU=] */

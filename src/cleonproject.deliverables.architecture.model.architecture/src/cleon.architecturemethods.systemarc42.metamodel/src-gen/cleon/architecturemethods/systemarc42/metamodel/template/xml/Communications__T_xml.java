@@ -8,7 +8,7 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[46a3f5e0-87a3-11e9-bb4b-c57da735262b,imports]] */
-
+import cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.Source;
 /* End Protected Region   [[46a3f5e0-87a3-11e9-bb4b-c57da735262b,imports]] */
 
 public class Communications__T_xml {
@@ -258,48 +258,53 @@ public class Communications__T_xml {
 
   }
 
-  public static interface ISourceFunctions extends IDynamicResourceExtension {
+  public static interface ISourceInSubSecurityZoneFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
     public java.lang.Boolean IsTemporary();
 
   }
   
-  public static interface ISourceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISourceInSubSecurityZoneFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("91af9411-5fe3-11eb-a5e0-e3983817e1e1")
-    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source);
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone);
 
   }
   
-  public static class SourceFunctionsImpl implements ISourceFunctionsImpl {
+  public static class SourceInSubSecurityZoneFunctionsImpl implements ISourceInSubSecurityZoneFunctionsImpl {
 
-    public static final ISourceFunctionsImpl INSTANCE = new SourceFunctionsImpl();
+    public static final ISourceInSubSecurityZoneFunctionsImpl INSTANCE = new SourceInSubSecurityZoneFunctionsImpl();
 
-    private SourceFunctionsImpl() {}
+    private SourceInSubSecurityZoneFunctionsImpl() {}
 
     @Override
-    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
+    public java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
       /* Begin Protected Region [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
-    	if( source.selectIsTemporary() == null ) {
-    		return false;
-    	}
-    	return source.selectIsTemporary().booleanValue();   
+		if( sourceInSubSecurityZone.selectIsTemporary() != null) {
+			return sourceInSubSecurityZone.selectIsTemporary().booleanValue();
+		} else {
+			var source = Source.selectToMeAccessAllowed(sourceInSubSecurityZone);    	
+	    	if( source.selectIsTemporary() == null ) {
+	    		return false;
+	    	}
+	    	return source.selectIsTemporary().booleanValue();
+		}    	
       /* End Protected Region   [[91af9411-5fe3-11eb-a5e0-e3983817e1e1]] */
     }
 
   }
   
-  public static class SourceFunctions {
+  public static class SourceInSubSecurityZoneFunctions {
 
-    private SourceFunctions() {}
+    private SourceInSubSecurityZoneFunctions() {}
 
-    public static java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource source) {
-      return DynamicResourceUtil.invoke(ISourceFunctionsImpl.class, SourceFunctionsImpl.INSTANCE, source).IsTemporary(source);
+    public static java.lang.Boolean IsTemporary(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISourceInSubSecurityZone sourceInSubSecurityZone) {
+      return DynamicResourceUtil.invoke(ISourceInSubSecurityZoneFunctionsImpl.class, SourceInSubSecurityZoneFunctionsImpl.INSTANCE, sourceInSubSecurityZone).IsTemporary(sourceInSubSecurityZone);
     }
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,ZlgFHH5EctRX0+qWjT/pesJUcOM=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,46a3f5e0-87a3-11e9-bb4b-c57da735262b,S31AejRpzYBIB2orgmMA690/8gQ=] */

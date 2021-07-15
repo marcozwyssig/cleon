@@ -48,6 +48,15 @@ public class SourceInSubSecurityZoneCustom extends DynamicResource implements IS
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneCustom_hostGroupName, hostGroupName);
   }
 
+  @Override
+  public java.lang.Boolean selectIsTemporary() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.IsTemporaryAware_isTemporary);
+  }
+    
+  public void setIsTemporary(java.lang.Boolean isTemporary) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.IsTemporaryAware_isTemporary, isTemporary);
+  }
+
   // relations
   
   @Override
@@ -126,6 +135,7 @@ public class SourceInSubSecurityZoneCustom extends DynamicResource implements IS
     // attributes
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZoneCustom_hostGroupName, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.IsTemporaryAware_isTemporary, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services.javamodel.IAbstractService.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_onlyCommunicatesWith, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.state.javamodel.IImplementationState.class, cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.CommunicationPackage.SourceInSubSecurityZone_state, visitor);
@@ -136,4 +146,4 @@ public class SourceInSubSecurityZoneCustom extends DynamicResource implements IS
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54,at0QqWtBttvesM0l/D1knnXx5+M=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,cef80e5a-ad94-11eb-a3eb-5dbdee6f3a54,4SJcMVfids037bkdgIq4lEY49Uw=] */

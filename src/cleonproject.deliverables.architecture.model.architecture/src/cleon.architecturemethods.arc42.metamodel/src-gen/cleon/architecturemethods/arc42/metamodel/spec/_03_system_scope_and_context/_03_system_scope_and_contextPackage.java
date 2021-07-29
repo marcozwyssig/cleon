@@ -8,6 +8,7 @@ public class _03_system_scope_and_contextPackage {
   public static final Resource System_aE_Scope_aE_and_aE_Context_domainContext = new Resource("77f75613-2661-11e6-ae54-e50d44645ae7");
   public static final Resource System_aE_Scope_aE_and_aE_Context_technicalContext = new Resource("95b756b4-27f5-11e6-b263-9db62e053e59");
   public static final Resource FunctionSpace_aE_System_aE_and_aE_Scope_System_aE_Scope_aE_and_aE_Context = new Resource("bdee0003-4a71-11e6-b2ea-f94c9b140b76");
+  public static final Resource System_aE_Scope_aE_and_aE_Context_deploymentContext = new Resource("c9771036-f082-11eb-ac5d-f985c18ba79b");
   
   /* Begin Protected Region [[user]] */
   
@@ -28,4 +29,4 @@ public class _03_system_scope_and_contextPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context,y0j6LQ3/9NdtAtTJ9f/kVAJQ1wo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context,MbmOBIS5mLnxs4JFH/d6rqVRrjU=] */

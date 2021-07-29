@@ -61,6 +61,16 @@ public class System_Scope_and_Context extends DynamicResource implements ISystem
   }
     
   @Override
+  public cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext selectDeploymentContext() {
+    return _getSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_deploymentContext);
+  }
+
+  public System_Scope_and_Context setDeploymentContext(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext deploymentContext) {
+    _setSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_deploymentContext, deploymentContext);
+    return this;
+  }
+    
+  @Override
   public java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> selectDocumentElements() {
     return _getList(cleon.common.doc.metamodel.spec.javamodel.IDocumentElement.class, cleon.common.doc.metamodel.spec.SpecPackage.DocumentElementComposite_documentElements);
   }
@@ -117,6 +127,7 @@ public class System_Scope_and_Context extends DynamicResource implements ISystem
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     // relations
+    _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_deploymentContext, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.domain.javamodel.IDomainContext.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_domainContext, visitor);
     _acceptList(cleon.common.doc.metamodel.spec.paragraph.javamodel.IParagraph.class, cleon.common.doc.metamodel.spec.chapter.ChapterPackage.ParagraphAware_paragraphs, visitor);
     _acceptSingle(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.ITechnicalContext.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_technicalContext, visitor);
@@ -133,5 +144,9 @@ public class System_Scope_and_Context extends DynamicResource implements ISystem
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_technicalContext, object.getResource());
   }
   
+  public static cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context selectToMeDeploymentContext(cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.javamodel.ISystem_Scope_and_Context.class, cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context._03_system_scope_and_contextPackage.System_aE_Scope_aE_and_aE_Context_deploymentContext, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,CB0y+3zNK8miWZY7v14IxoJNwl8=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,uFMWFswXxbU6WwDt6DdEJanZg0M=] */

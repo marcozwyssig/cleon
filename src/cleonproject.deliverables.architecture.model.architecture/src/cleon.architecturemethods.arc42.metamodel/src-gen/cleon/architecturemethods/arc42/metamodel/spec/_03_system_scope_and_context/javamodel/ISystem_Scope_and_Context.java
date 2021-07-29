@@ -31,6 +31,8 @@ public interface ISystem_Scope_and_Context extends cleon.common.doc.metamodel.sp
   
   public cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.technical.javamodel.ITechnicalContext selectTechnicalContext();
   
+  public cleon.architecturemethods.arc42.metamodel.spec._03_system_scope_and_context.deployment.javamodel.IDeploymentContext selectDeploymentContext();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,LZQ4ckYDX1AO+RzlDTnTqV+Pyjo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,04cf294a-ffca-11e5-bd7b-8b0acf27d441,pk+ok7dTnRpgG2du2yReh9ZQyJg=] */

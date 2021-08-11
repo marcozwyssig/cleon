@@ -43,6 +43,31 @@ public class FunctionSpace_TestSpecificationDocument {
 
   }
 
+  public static interface ITestSpecificationDocumentsFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f1d60576-fa98-11eb-be75-2537968f2820")
+    public cleon.testingmethods.hermes.metamodel.spec._01_concept.javamodel.ITestConceptDocument TestConcept();
+
+  }
+  
+  public static interface ITestSpecificationDocumentsFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestSpecificationDocumentsFunctionsImpl implements ITestSpecificationDocumentsFunctionsImpl {
+
+    public static final ITestSpecificationDocumentsFunctionsImpl INSTANCE = new TestSpecificationDocumentsFunctionsImpl();
+
+    private TestSpecificationDocumentsFunctionsImpl() {}
+
+  }
+  
+  public static class TestSpecificationDocumentsFunctions {
+
+    private TestSpecificationDocumentsFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,dksBEbZf64AuLWaCh3+Ynns08dw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,71c344e3-51af-11e9-9ffb-eb7c70212990,P5YnfMeEN//UgV7th1PsYYsb3fQ=] */

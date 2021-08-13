@@ -16,7 +16,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitSicherung__F_und__F_Wiederherstellung();
     
-    public void visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
+    public void visitDoppelter__F_Aufbau();
     
     public void visitReplikation();
     
@@ -32,7 +32,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitSicherung__F_und__F_Wiederherstellung();
     
-    public R visitRedundante__F_Sicherung__F_und__F_Wiederherstellung();
+    public R visitDoppelter__F_Aufbau();
     
     public R visitReplikation();
     
@@ -58,11 +58,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isSicherung__F_und__F_Wiederherstellung();
   
-  public boolean isRedundante__F_Sicherung__F_und__F_Wiederherstellung();
+  public boolean isDoppelter__F_Aufbau();
   
   public boolean isReplikation();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,c63dMzIkv1E6OmLaLahSigHL1pY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,uydmzQvfjcUClWden1g5YBhHZ8E=] */

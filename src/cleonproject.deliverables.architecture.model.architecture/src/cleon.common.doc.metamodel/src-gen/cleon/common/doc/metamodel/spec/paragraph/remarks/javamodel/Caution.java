@@ -48,6 +48,15 @@ public class Caution extends DynamicResource implements ICaution {
      _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.remarks.RemarksPackage.Remark_remark, remark);
   }
 
+  @Override
+  public java.lang.String selectText() {
+    return _getSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text);
+  }
+    
+  public void setText(java.lang.String text) {
+     _setSingleAttribute(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_text, text);
+  }
+
   // relations
   
   @Override
@@ -57,6 +66,16 @@ public class Caution extends DynamicResource implements ICaution {
 
   public Caution setDocumentElements(java.util.List<? extends cleon.common.doc.metamodel.spec.javamodel.IDocumentElement> documentElements) {
     _setList(cleon.common.doc.metamodel.spec.SpecPackage.NoDocumentElementComposite_documentElements, documentElements);
+    return this;
+  }
+    
+  @Override
+  public cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle selectStyle() {
+    return _getSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style);
+  }
+
+  public Caution setStyle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle style) {
+    _setSingle(cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, style);
     return this;
   }
     
@@ -77,8 +96,9 @@ public class Caution extends DynamicResource implements ICaution {
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.doc.metamodel.spec.paragraph.remarks.RemarksPackage.Remark_remark, visitor);
     // relations
+    _acceptSingle(cleon.common.doc.metamodel.spec.paragraph.javamodel.IStyle.class, cleon.common.doc.metamodel.spec.paragraph.ParagraphPackage.Text_style, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,7qMnSuNk2tMxh2AAoJ3GMed0RxI=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,ad29dedd-466d-11e5-ba74-cb2e95044e1c,msaRLzBqmuDme790GMC+JrL2GCY=] */

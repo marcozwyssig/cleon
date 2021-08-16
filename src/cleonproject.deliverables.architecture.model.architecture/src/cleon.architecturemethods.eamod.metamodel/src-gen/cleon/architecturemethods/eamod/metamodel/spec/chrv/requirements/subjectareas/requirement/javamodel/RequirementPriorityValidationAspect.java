@@ -22,7 +22,7 @@ public class RequirementPriorityValidationAspect implements IResourceValidationA
 		IRequirement requirement = resourceRepository.getResource(
 				IRequirement.class, context.getResource());
 
-		IsParentPriorityValid(requirement, Requirement.selectToMeConcretizes(requirement), context, inconsistencyList);
+		IsParentPriorityValid(requirement, Requirement.selectToMeAggregates(requirement), context, inconsistencyList);
 
 	}
 

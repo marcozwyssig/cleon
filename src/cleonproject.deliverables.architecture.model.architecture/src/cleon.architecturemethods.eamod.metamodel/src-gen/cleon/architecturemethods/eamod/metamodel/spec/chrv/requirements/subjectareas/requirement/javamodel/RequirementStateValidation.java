@@ -30,7 +30,7 @@ public class RequirementStateValidation implements IResourceValidationAspect {
 	}
 
 	private boolean validateFulfillState(IRequirement requirement) {
-		List<? extends IRequirement> concretizes = requirement.selectConcretizes();
+		List<? extends IRequirement> concretizes = requirement.selectAggregates();
 		if( concretizes.isEmpty() ) {
 			return true;
 		}

@@ -8,8 +8,10 @@ public interface ITransportNetwork extends ch.actifsource.core.javamodel.INamedR
   
   // attributes
   
-  public java.lang.Integer selectCapacity_aE__aA_KBit_aE_s_aC_();
+  public java.lang.Long selectCapacity_aE__aA_MBit_aE_s_aC_();
+  
+  public java.lang.Integer selectInstances();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1cad952-fe9b-11eb-bbec-6b945b7259b1,gst2p4317XqQXPyv/63zY25Fw+8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,d1cad952-fe9b-11eb-bbec-6b945b7259b1,lMPEhQirPE1vABxVEP4FEbO2bjI=] */

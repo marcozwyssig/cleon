@@ -31,12 +31,21 @@ public class TransportNetwork extends DynamicResource implements ITransportNetwo
   // attributes
   
   @Override
-  public java.lang.Integer selectCapacity_aE__aA_KBit_aE_s_aC_() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_KBit_aE_s_aC_);
+  public java.lang.Long selectCapacity_aE__aA_MBit_aE_s_aC_() {
+    return _getSingleAttribute(java.lang.Long.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_MBit_aE_s_aC_);
   }
     
-  public void setCapacity_aE__aA_KBit_aE_s_aC_(java.lang.Integer capacity_aE__aA_KBit_aE_s_aC_) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_KBit_aE_s_aC_, capacity_aE__aA_KBit_aE_s_aC_);
+  public void setCapacity_aE__aA_MBit_aE_s_aC_(java.lang.Long capacity_aE__aA_MBit_aE_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_MBit_aE_s_aC_, capacity_aE__aA_MBit_aE_s_aC_);
+  }
+
+  @Override
+  public java.lang.Integer selectInstances() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_instances);
+  }
+    
+  public void setInstances(java.lang.Integer instances) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_instances, instances);
   }
 
   @Override
@@ -64,11 +73,12 @@ public class TransportNetwork extends DynamicResource implements ITransportNetwo
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_KBit_aE_s_aC_, visitor);
+    _acceptSingleAttribute(java.lang.Long.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_capacity_aE__aA_MBit_aE_s_aC_, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.TransportNetwork_instances, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1cad952-fe9b-11eb-bbec-6b945b7259b1,sPR8iboYVW4YJe9SbAzamJTm658=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,d1cad952-fe9b-11eb-bbec-6b945b7259b1,eYqfZOEc5Dfh8CJViLTh4xbQKos=] */

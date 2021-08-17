@@ -709,6 +709,9 @@ public class FunctionSpace_Communication {
     @IDynamicResourceExtension.MethodId("16752bad-09f0-11ea-baed-218c3e076b56")
     public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone SourceSubZone();
 
+    @IDynamicResourceExtension.MethodId("f69afda7-ff49-11eb-982b-5da7cd501019")
+    public cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone DestinationSubZone();
+
     @IDynamicResourceExtension.MethodId("b3fe9d43-0a0a-11ea-baed-218c3e076b56")
     public java.lang.String RenderSourceGroups(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource src, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode env);
 
@@ -890,4 +893,4 @@ public class FunctionSpace_Communication {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,tCf8yqjW2U7yXz8vLjzC4e8bEl4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,536f3fea-8833-11e9-80ce-fbaba21c141b,5Pp+pG1o65CSks9p0MTUgXbhz48=] */

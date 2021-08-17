@@ -173,7 +173,7 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Double SumMean(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource) {
       /* Begin Protected Region [[1c84eac4-e08f-11eb-9584-9144fca99be9]] */
-    	int total = AllSources(environment, qoSSystemConfigurationSource) * AllDestinations(environment, qoSSystemConfigurationSource) * qoSSystemConfigurationSource.selectEstimateMean_KBits(); 
+    	int total = AllSources(environment, qoSSystemConfigurationSource) * AllDestinations(environment, qoSSystemConfigurationSource) * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KBit_aE_s_aC_(); 
 
     	return total * 0.1;
       /* End Protected Region   [[1c84eac4-e08f-11eb-9584-9144fca99be9]] */
@@ -293,6 +293,31 @@ public class FunctionSpace_QoS {
 
   }
 
+  public static interface IQoSCommunicationOnNetworkFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("01e85386-fe9f-11eb-bbec-6b945b7259b1")
+    public java.lang.String SimpleName();
+
+  }
+  
+  public static interface IQoSCommunicationOnNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class QoSCommunicationOnNetworkFunctionsImpl implements IQoSCommunicationOnNetworkFunctionsImpl {
+
+    public static final IQoSCommunicationOnNetworkFunctionsImpl INSTANCE = new QoSCommunicationOnNetworkFunctionsImpl();
+
+    private QoSCommunicationOnNetworkFunctionsImpl() {}
+
+  }
+  
+  public static class QoSCommunicationOnNetworkFunctions {
+
+    private QoSCommunicationOnNetworkFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,QLFufjGugNK2VHCgpmQrA7thIFI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,+fuE4QWljqMKvkorHCPBrJIVR0E=] */

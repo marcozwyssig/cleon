@@ -31,25 +31,35 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
   // attributes
   
   @Override
-  public java.lang.Integer selectEstimateMean_KBits() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits);
+  public java.lang.Integer selectEstimateMean_aE__aA_KBit_aE_s_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE__aA_KBit_aE_s_aC_);
   }
     
-  public void setEstimateMean_KBits(java.lang.Integer estimateMean_KBits) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits, estimateMean_KBits);
+  public void setEstimateMean_aE__aA_KBit_aE_s_aC_(java.lang.Integer estimateMean_aE__aA_KBit_aE_s_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE__aA_KBit_aE_s_aC_, estimateMean_aE__aA_KBit_aE_s_aC_);
   }
 
   @Override
-  public java.lang.Integer selectLoadpercent() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loadpercent);
+  public java.lang.Integer selectLoaddistribution_aE__aA___K__aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loaddistribution_aE__aA___K__aC_);
   }
     
-  public void setLoadpercent(java.lang.Integer loadpercent) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loadpercent, loadpercent);
+  public void setLoaddistribution_aE__aA___K__aC_(java.lang.Integer loaddistribution_aE__aA___K__aC_) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loaddistribution_aE__aA___K__aC_, loaddistribution_aE__aA___K__aC_);
   }
 
   // relations
   
+  @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork> selectCommunicationOnNetwork() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork);
+  }
+
+  public QoSSystemConfigurationSource setCommunicationOnNetwork(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork> communicationOnNetwork) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork, communicationOnNetwork);
+    return this;
+  }
+    
   @Override
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP selectServiceClass() {
     return _getSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass);
@@ -94,9 +104,10 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE_KBits, visitor);
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loadpercent, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_estimateMean_aE__aA_KBit_aE_s_aC_, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_loaddistribution_aE__aA___K__aC_, visitor);
     // relations
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IDSCP.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.ISource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_source, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -112,5 +123,9 @@ public class QoSSystemConfigurationSource extends DynamicResource implements IQo
     return _getToMeList(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_serviceClass, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource selectToMeCommunicationOnNetwork(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.QosPackage.QoSSystemConfigurationSource_communicationOnNetwork, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,G2vQ6PddKzgMjPf+CSgCHqvsJjY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,fcc35d62-a0c3-11ea-8daa-afb4679c3497,6Xrc4Z2CPO5OX01nURYI2Ojn0J0=] */

@@ -20,7 +20,7 @@ public interface IRequirementState extends ch.actifsource.core.javamodel.IEnumVa
     
     public void visitImplemented();
     
-    public void visitFulfilled();
+    public void visitAccepted();
     
     public void visitRejected__F___N_QS__O_();
     
@@ -42,7 +42,7 @@ public interface IRequirementState extends ch.actifsource.core.javamodel.IEnumVa
     
     public R visitImplemented();
     
-    public R visitFulfilled();
+    public R visitAccepted();
     
     public R visitRejected__F___N_QS__O_();
     
@@ -70,7 +70,7 @@ public interface IRequirementState extends ch.actifsource.core.javamodel.IEnumVa
   
   public boolean isImplemented();
   
-  public boolean isFulfilled();
+  public boolean isAccepted();
   
   public boolean isRejected__F___N_QS__O_();
   
@@ -79,4 +79,4 @@ public interface IRequirementState extends ch.actifsource.core.javamodel.IEnumVa
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,8yDEM6/0IXg+BzpL06XcUw5s6dQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,OB/VjKLIj2BWc9nVJImj43YHNt8=] */

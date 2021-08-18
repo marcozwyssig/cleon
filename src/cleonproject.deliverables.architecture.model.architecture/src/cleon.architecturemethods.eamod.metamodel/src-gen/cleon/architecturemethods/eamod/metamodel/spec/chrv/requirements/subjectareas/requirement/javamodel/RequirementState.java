@@ -80,7 +80,7 @@ public class RequirementState extends DynamicResource implements IRequirementSta
     if (isApproved()) return visitor.visitApproved();
     if (isDesigned()) return visitor.visitDesigned();
     if (isImplemented()) return visitor.visitImplemented();
-    if (isFulfilled()) return visitor.visitFulfilled();
+    if (isAccepted()) return visitor.visitAccepted();
     if (isRejected__F___N_QS__O_()) return visitor.visitRejected__F___N_QS__O_();
     if (isRejected()) return visitor.visitRejected();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -112,8 +112,8 @@ public class RequirementState extends DynamicResource implements IRequirementSta
       visitor.visitImplemented();
       return;
     }
-    if (isFulfilled()) {
-      visitor.visitFulfilled();
+    if (isAccepted()) {
+      visitor.visitAccepted();
       return;
     }
     if (isRejected__F___N_QS__O_()) {
@@ -160,8 +160,8 @@ public class RequirementState extends DynamicResource implements IRequirementSta
   }
   
   @Override
-  public boolean isFulfilled() {
-    return getResource().equals(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.RequirementState_Fulfilled);
+  public boolean isAccepted() {
+    return getResource().equals(cleon.architecturemethods.eamod.metamodel.spec.chrv.requirements.subjectareas.requirement.RequirementPackage.RequirementState_Accepted);
   }
   
   @Override
@@ -175,4 +175,4 @@ public class RequirementState extends DynamicResource implements IRequirementSta
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,ugBB1E1aXIFT5dk7ho82wYB4v7g=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,db79c858-294d-11e5-b035-b579d7e91534,R1ziam5Q5LkuMHrTdL6x+oXorT0=] */

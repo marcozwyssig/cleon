@@ -152,7 +152,7 @@ public class FunctionSpace_Requirements {
       /* Begin Protected Region [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
-      	return (state.isApproved() || state.isDesigned() || state.isFulfilled() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
+      	return (state.isApproved() || state.isDesigned() || state.isAccepted() || state.isImplemented()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
       }).collect(Collectors.toList());
       /* End Protected Region   [[197d42aa-7e00-11e9-94cc-311930c9ea85]] */
     }
@@ -172,7 +172,7 @@ public class FunctionSpace_Requirements {
       /* Begin Protected Region [[deff6a54-75a0-11eb-99f7-05e0e09fe318]] */
       return requirementList.stream().filter(x -> {
       	final var state = x.selectState();
-      	return (state.isImplemented() || state.isDesigned() || state.isFulfilled()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
+      	return (state.isImplemented() || state.isDesigned() || state.isAccepted()) && (x.selectAbstractionLevel() instanceof IFeatureLevelGroup || x.selectAbstractionLevel() instanceof IFunctionLevelGroup );
       }).collect(Collectors.toList());
 
       /* End Protected Region   [[deff6a54-75a0-11eb-99f7-05e0e09fe318]] */

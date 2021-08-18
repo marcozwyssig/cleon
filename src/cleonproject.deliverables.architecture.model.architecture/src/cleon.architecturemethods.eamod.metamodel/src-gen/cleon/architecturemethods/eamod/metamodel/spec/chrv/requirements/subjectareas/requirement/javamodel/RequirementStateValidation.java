@@ -20,7 +20,7 @@ public class RequirementStateValidation implements IResourceValidationAspect {
 
 		IRequirement requirement = resourceRepository.getResource(IRequirement.class, context.getResource());
 
-		if (requirement.selectState().isFulfilled()) {
+		if (requirement.selectState().isAccepted()) {
 			if (!(validateFulfillState(requirement))) {
 				inconsistencyList.add(new PredicateInconsistency(context.getPackage(), context.getResource(),
 						RequirementPackage.Requirement_state,
@@ -34,6 +34,6 @@ public class RequirementStateValidation implements IResourceValidationAspect {
 		if( concretizes.isEmpty() ) {
 			return true;
 		}
-		return concretizes.stream().allMatch(x -> x.selectState().isFulfilled() || x.selectState().isRejected() || x.selectState().isRejected__F___N_QS__O_());
+		return concretizes.stream().allMatch(x -> x.selectState().isAccepted() || x.selectState().isRejected() || x.selectState().isRejected__F___N_QS__O_());
 	}
 }

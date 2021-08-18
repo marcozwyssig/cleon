@@ -49,6 +49,6 @@ public class RequirementAlignedValidationAspect implements
 	private boolean IsAlignedAndAbove(IRequirementState state) {
 		return state.isAligned() || state.isApproved()
 				|| state.isApproved__F___N_By__F_Supplier__O_()
-				|| state.isFulfilled() || state.isImplemented();
+				|| state.isAccepted() || state.isImplemented();
 	}
 }

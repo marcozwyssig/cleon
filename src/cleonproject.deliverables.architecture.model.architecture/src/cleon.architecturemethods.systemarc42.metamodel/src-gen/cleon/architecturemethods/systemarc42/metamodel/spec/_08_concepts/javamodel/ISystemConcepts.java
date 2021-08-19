@@ -26,6 +26,8 @@ public interface ISystemConcepts extends cleon.architecturemethods.arc42.metamod
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConcept selectAccessConcept();
   
+  public java.util.List<? extends cleon.common.doc.metamodel.spec.chapter.javamodel.INamedChapter> selectChapters();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,8PcQgebzh7mppLnvbshOhkcmvy8=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6e1a6c6b-f190-11e8-b3e7-15e2dd8d9b05,Lp52pWH7iHmL7r8PFI7PkRPE2FA=] */

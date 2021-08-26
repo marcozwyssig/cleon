@@ -97,7 +97,7 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
     if (isActive__S_Active()) return visitor.visitActive__S_Active();
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
     if (isSicherung__F_und__F_Wiederherstellung()) return visitor.visitSicherung__F_und__F_Wiederherstellung();
-    if (isDoppelter__F_Aufbau()) return visitor.visitDoppelter__F_Aufbau();
+    if (isDoppelter__F_Aufbau__F___N_Client__S_based__O_()) return visitor.visitDoppelter__F_Aufbau__F___N_Client__S_based__O_();
     if (isReplikation()) return visitor.visitReplikation();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
@@ -120,8 +120,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitSicherung__F_und__F_Wiederherstellung();
       return;
     }
-    if (isDoppelter__F_Aufbau()) {
-      visitor.visitDoppelter__F_Aufbau();
+    if (isDoppelter__F_Aufbau__F___N_Client__S_based__O_()) {
+      visitor.visitDoppelter__F_Aufbau__F___N_Client__S_based__O_();
       return;
     }
     if (isReplikation()) {
@@ -154,8 +154,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isDoppelter__F_Aufbau() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Doppelter__F_Aufbau);
+  public boolean isDoppelter__F_Aufbau__F___N_Client__S_based__O_() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Doppelter__F_Aufbau__F___N_Client__S_based__O_);
   }
   
   @Override
@@ -164,4 +164,4 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,KZYR4GEK0P9g9luJxG1mYncVW10=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,V0Fw3AccBSVPa3TTZ2ApXazzhlo=] */

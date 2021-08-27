@@ -5,7 +5,8 @@ import ch.actifsource.core.Resource;
 public class YedPackage {
   
   public static final Resource System_aE_Architecture_aE_Overview__T_gml_ComponentComposition = new Resource("210650bc-cc3b-11ea-9aba-81170876b0e5");
-  public static final Resource System_aE_Architecture_aE_Overview__T_gml_Guid = new Resource("ced03bbc-cc4e-11ea-8b73-6b1c6b53a7a6");
+  public static final Resource Network_aE_Segmentation_aE_Overview__T_gml_Zone = new Resource("e260823c-070c-11ec-a1d2-b10f798ffb28");
+  public static final Resource Network_aE_Segmentation_aE_Overview__T_gml_SecuritySubZone = new Resource("a1114f9d-0710-11ec-a1d2-b10f798ffb28");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +27,4 @@ public class YedPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.yed,H4wY/ksbIIJ7O+fviykSgNB3FjU=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.template.yed,OZAFdvxtGNlMcOodjAl9fUHP3u4=] */

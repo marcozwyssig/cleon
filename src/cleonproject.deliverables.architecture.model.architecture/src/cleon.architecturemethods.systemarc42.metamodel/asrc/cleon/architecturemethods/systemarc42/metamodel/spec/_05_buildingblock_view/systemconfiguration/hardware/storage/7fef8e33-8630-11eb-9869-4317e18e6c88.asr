@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="7fef8e33-8630-11eb-9869-4317e18e6c88">
   <owns predicate="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="1428bc7b-098f-11ec-b426-8bacb7070b3e" type="resource" guid="14286e58-098f-11ec-b426-8bacb7070b3e" />
+    <resource statement-guid="8b65f1e8-098f-11ec-b426-8bacb7070b3e" type="resource" guid="8b65a3c3-098f-11ec-b426-8bacb7070b3e" />
     <resource statement-guid="d3ec1a74-8630-11eb-9869-4317e18e6c88" type="resource" guid="d3ebcc50-8630-11eb-9869-4317e18e6c88" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -10,6 +12,38 @@
     <object statement-guid="7fef8e35-8630-11eb-9869-4317e18e6c88" type="resource" guid="4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90" />
   </predicate>
   <predicate guid="339930af-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="1428bc7b-098f-11ec-b426-8bacb7070b3e">
+      <resource guid="14286e58-098f-11ec-b426-8bacb7070b3e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1428956a-098f-11ec-b426-8bacb7070b3e" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="1db1fd3b-098f-11ec-b426-8bacb7070b3e" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="14907f7e-098f-11ec-b426-8bacb7070b3e" type="literal">brutto_capacity_[GB]</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="1429a6dc-098f-11ec-b426-8bacb7070b3e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="8b65f1e8-098f-11ec-b426-8bacb7070b3e">
+      <resource guid="8b65a3c3-098f-11ec-b426-8bacb7070b3e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8b65a3c4-098f-11ec-b426-8bacb7070b3e" type="resource" guid="2936588e-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3262fa9c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8b65a3c7-098f-11ec-b426-8bacb7070b3e" type="resource" guid="2dbfb147-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="8b65a3c6-098f-11ec-b426-8bacb7070b3e" type="literal">netto_capacity_[GB]</object>
+        </predicate>
+        <predicate guid="ec497726-82e5-11da-bec9-79935dcc853f">
+          <object statement-guid="8b65a3c5-098f-11ec-b426-8bacb7070b3e" type="resource" guid="ec497724-82e5-11da-bec9-79935dcc853f" />
+        </predicate>
+      </resource>
+    </object>
     <object statement-guid="d3ec1a74-8630-11eb-9869-4317e18e6c88">
       <resource guid="d3ebcc50-8630-11eb-9869-4317e18e6c88">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">

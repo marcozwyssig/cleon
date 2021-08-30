@@ -1,28 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource format="5.6.0" guid="f9423205-2c0a-11e8-ae64-e3540bdf64a6">
-  <owns predicate="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <resource statement-guid="0596b213-3488-11ea-8a90-f5372e2e0d45" type="resource" guid="05968aff-3488-11ea-8a90-f5372e2e0d45" />
-  </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="f9423207-2c0a-11e8-ae64-e3540bdf64a6" type="resource" guid="98431561-d40b-11e5-8556-8f55ceb91287" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="fa62e466-2c0a-11e8-ae64-e3540bdf64a6" type="literal">Builtin_A</object>
-  </predicate>
-  <predicate guid="027e4bdd-d40e-11e5-8556-8f55ceb91287">
-    <object statement-guid="0596b213-3488-11ea-8a90-f5372e2e0d45">
-      <resource guid="05968aff-3488-11ea-8a90-f5372e2e0d45">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="05968b01-3488-11ea-8a90-f5372e2e0d45" type="resource" guid="c76b9cee-d40d-11e5-8556-8f55ceb91287" />
-        </predicate>
-        <predicate guid="eaac1ead-d40d-11e5-8556-8f55ceb91287">
-          <object statement-guid="064c6e0f-3488-11ea-8a90-f5372e2e0d45" type="resource" guid="d2caf4fc-3b8a-11e5-b8db-7513250f5f90" />
-        </predicate>
-        <predicate guid="ba17a990-0531-11e9-95f7-3b0c47908608">
-          <object statement-guid="05968b02-3488-11ea-8a90-f5372e2e0d45" type="literal">false</object>
-        </predicate>
-      </resource>
-    </object>
   </predicate>
   <predicate guid="d45b013c-2634-11ea-8c59-871562e3b5c4">
     <object statement-guid="ef7812d5-2634-11ea-8c59-871562e3b5c4" type="aggregate" guid="ef779da2-2634-11ea-8c59-871562e3b5c4" />

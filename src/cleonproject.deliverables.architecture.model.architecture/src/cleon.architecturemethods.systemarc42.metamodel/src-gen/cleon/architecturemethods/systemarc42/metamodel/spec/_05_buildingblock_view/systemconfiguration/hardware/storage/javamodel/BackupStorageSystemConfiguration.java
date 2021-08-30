@@ -31,6 +31,15 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
   // attributes
   
   @Override
+  public java.lang.Integer selectBrutto_aE_capacity_aE__aA_GB_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_brutto_aE_capacity_aE__aA_GB_aC_);
+  }
+    
+  public void setBrutto_aE_capacity_aE__aA_GB_aC_(java.lang.Integer brutto_aE_capacity_aE__aA_GB_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_brutto_aE_capacity_aE__aA_GB_aC_, brutto_aE_capacity_aE__aA_GB_aC_);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -55,6 +64,15 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
     
   public void setName(java.lang.String name) {
      _setSingleAttribute(ch.actifsource.core.CorePackage.NamedResource_name, name);
+  }
+
+  @Override
+  public java.lang.Integer selectNetto_aE_capacity_aE__aA_GB_aC_() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_netto_aE_capacity_aE__aA_GB_aC_);
+  }
+    
+  public void setNetto_aE_capacity_aE__aA_GB_aC_(java.lang.Integer netto_aE_capacity_aE__aA_GB_aC_) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_netto_aE_capacity_aE__aA_GB_aC_, netto_aE_capacity_aE__aA_GB_aC_);
   }
 
   @Override
@@ -229,9 +247,11 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_brutto_aE_capacity_aE__aA_GB_aC_, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage.StoragePackage.StorageSystemConfiguration_netto_aE_capacity_aE__aA_GB_aC_, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.architecturemethods.eamod.metamodel.spec.chrv.ChrvPackage.Notes_notes, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.OverrideShortNameAware_overrideShortName, visitor);
     _acceptSingleAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.naming.NamingPackage.MandatoryShortName_shortName, visitor);
@@ -249,4 +269,4 @@ public class BackupStorageSystemConfiguration extends DynamicResource implements
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efdc856d-0a87-11e9-a59d-d7a0c53e291c,J6DCzwdjjE9GzZ6631vSdHPFSO0=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,efdc856d-0a87-11e9-a59d-d7a0c53e291c,D9nBPtNNp7npImrxp2WpwWDThFc=] */

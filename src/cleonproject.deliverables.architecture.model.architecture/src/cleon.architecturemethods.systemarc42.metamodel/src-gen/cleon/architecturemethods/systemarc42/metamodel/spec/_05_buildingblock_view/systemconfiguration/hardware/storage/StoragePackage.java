@@ -19,6 +19,8 @@ public class StoragePackage {
   public static final Resource Protocol = new Resource("21d2d137-8c92-11eb-a9c0-c3b95abf3470");
   public static final Resource Protocol_Cifs = new Resource("25c58f27-8c92-11eb-a9c0-c3b95abf3470");
   public static final Resource Protocol_Nfs = new Resource("274ec693-8c92-11eb-a9c0-c3b95abf3470");
+  public static final Resource StorageSystemConfiguration_brutto_aE_capacity_aE__aA_GB_aC_ = new Resource("14286e58-098f-11ec-b426-8bacb7070b3e");
+  public static final Resource StorageSystemConfiguration_netto_aE_capacity_aE__aA_GB_aC_ = new Resource("8b65a3c3-098f-11ec-b426-8bacb7070b3e");
   
   /* Begin Protected Region [[user]] */
   
@@ -39,4 +41,4 @@ public class StoragePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,U/uwgMJ3QIarDOrXMWddeJVng3k=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.hardware.storage,a5zOJBvx0+tMGWXebR9GUcuakAM=] */

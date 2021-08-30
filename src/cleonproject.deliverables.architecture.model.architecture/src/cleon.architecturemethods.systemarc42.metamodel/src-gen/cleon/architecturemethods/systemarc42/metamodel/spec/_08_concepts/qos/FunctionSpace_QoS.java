@@ -55,7 +55,7 @@ public class FunctionSpace_QoS {
     public java.lang.Long SumQoS_aE_Mean_aE__aA_kbit_aE_s_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSConcept qoSConcept) {
       /* Begin Protected Region [[9cb503c2-1d92-11e9-b601-db75aa6f89a4]] */
       return qoSConcept.selectQosConfigurationConcepts().values().stream().mapToLong(x -> {
-      	final IQoSSystemConfigurationConceptFunctions functions = x.extension(IQoSSystemConfigurationConceptFunctions.class);
+      	final var functions = x.extension(IQoSSystemConfigurationConceptFunctions.class);
       	return functions.SumQoS_aE_Mean_aE__aA_kbit_aE_s_aC_(environment);
       }).sum();
       /* End Protected Region   [[9cb503c2-1d92-11e9-b601-db75aa6f89a4]] */
@@ -99,9 +99,7 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Long SumQoS_aE_Mean_aE__aA_kbit_aE_s_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationConcept qoSSystemConfigurationConcept) {
       /* Begin Protected Region [[1d205486-a0c9-11ea-8daa-afb4679c3497]] */
-      return qoSSystemConfigurationConcept.selectQoSSystemConfigurationDestination().values().stream().mapToLong( x -> {
-    	  return x.extension(IQoSSystemConfigurationSourceFunctions.class).SumMean_aE__aA_Kbit_aE_s_aC_(environment);
-      }).sum();
+      return qoSSystemConfigurationConcept.selectQoSSystemConfigurationDestination().values().stream().mapToLong( x -> x.extension(IQoSSystemConfigurationSourceFunctions.class).SumMean_aE__aA_Kbit_aE_s_aC_(environment)).sum();
       /* End Protected Region   [[1d205486-a0c9-11ea-8daa-afb4679c3497]] */
     }
 
@@ -158,9 +156,10 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Integer AllSources(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource) {
       /* Begin Protected Region [[ea01182f-e08e-11eb-9584-9144fca99be9]] */
-    	var node = environment.extension(ISystemEnvironmentNodeFunctions.class).OnlyWithValidHosts(qoSSystemConfigurationSource);
+    	final var node = environment.extension(ISystemEnvironmentNodeFunctions.class).OnlyWithValidHosts(qoSSystemConfigurationSource);
     	if( node != null) {
-    		return node.extension(ISystemEnvironmentNodeFunctions.class).SourceSingleHost(qoSSystemConfigurationSource).size();
+			return node.extension(ISystemEnvironmentNodeFunctions.class).SourceSingleHosts(qoSSystemConfigurationSource)
+					.size();
     	}
     	return 0;
       /* End Protected Region   [[ea01182f-e08e-11eb-9584-9144fca99be9]] */
@@ -169,9 +168,10 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Integer AllDestinations(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource) {
       /* Begin Protected Region [[826b6209-e090-11eb-9584-9144fca99be9]] */
-    	var node = environment.extension(ISystemEnvironmentNodeFunctions.class).OnlyWithValidHosts(qoSSystemConfigurationSource);
+    	final var node = environment.extension(ISystemEnvironmentNodeFunctions.class).OnlyWithValidHosts(qoSSystemConfigurationSource);
     	if( node != null) {
-    		return node.extension(ISystemEnvironmentNodeFunctions.class).DestinationSingleHost(qoSSystemConfigurationSource).size();
+			return node.extension(ISystemEnvironmentNodeFunctions.class)
+					.DestinationSingleHosts(qoSSystemConfigurationSource).size();
     	}
     	return 0;
       /* End Protected Region   [[826b6209-e090-11eb-9584-9144fca99be9]] */
@@ -181,7 +181,7 @@ public class FunctionSpace_QoS {
     public java.lang.Long SumMean_aE__aA_Kbit_aE_s_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource) {
       /* Begin Protected Region [[1c84eac4-e08f-11eb-9584-9144fca99be9]] */
     	//long total = AllSources(environment, qoSSystemConfigurationSource) * AllDestinations(environment, qoSSystemConfigurationSource) * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KBit_aE_s_aC_();
-    	long total = AllSources(environment, qoSSystemConfigurationSource) * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_();    	
+    	final long total = AllSources(environment, qoSSystemConfigurationSource) * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_();    	
     	return ((total * qoSSystemConfigurationSource.selectLoaddistribution_aE__aA___K__aC_()) / 100);
       /* End Protected Region   [[1c84eac4-e08f-11eb-9584-9144fca99be9]] */
     }
@@ -218,10 +218,10 @@ public class FunctionSpace_QoS {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> DestinationHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("27b0fc13-a99a-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> SourceSingleHost(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> SourceSingleHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("49c24c0b-a99a-11eb-8f9b-01c801f6a12b")
-    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> DestinationSingleHost(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSingleHost> DestinationSingleHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
     @IDynamicResourceExtension.MethodId("42a84883-c930-11eb-a152-570abd1640d5")
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
@@ -264,7 +264,7 @@ public class FunctionSpace_QoS {
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractHost> SourceHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork qoSCommunicationOnNetwork, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       /* Begin Protected Region [[e18bb66e-ff48-11eb-982b-5da7cd501019]] */
         final var source = Source.selectToMeAccessAllowed(qoSCommunicationOnNetwork.selectSourceInSubSecurityZone());
-        var sourceInSubSecurityZoneFunctions = qoSCommunicationOnNetwork.selectSourceInSubSecurityZone().extension(ISourceInSubSecurityZoneFunctions.class);        
+        final var sourceInSubSecurityZoneFunctions = qoSCommunicationOnNetwork.selectSourceInSubSecurityZone().extension(ISourceInSubSecurityZoneFunctions.class);        
         final var hosts = source.selectSourceSystemConfiguration().extension(ISystemConfigurationFunctions.class).AllHostsWithEnvironment(systemEnvironmentNode);
         return hosts.stream().filter(x -> x.extension(IAbstractHostFunctions.class).Subzones().stream().anyMatch(sz -> sz.equals(sourceInSubSecurityZoneFunctions.SourceSubZone()))).collect(Collectors.toList());
       /* End Protected Region   [[e18bb66e-ff48-11eb-982b-5da7cd501019]] */
@@ -284,11 +284,7 @@ public class FunctionSpace_QoS {
     @Override
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode OnlyWithValidHosts(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource, final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode systemEnvironmentNode) {
       /* Begin Protected Region [[42a84883-c930-11eb-a152-570abd1640d5]] */
-      if( SourceHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty()) {
-      	return null;
-      }
-
-      if( DestinationHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty()) {
+      if( SourceHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty() || DestinationHosts(qoSSystemConfigurationSource, systemEnvironmentNode).isEmpty()) {
       	return null;
       }
 
@@ -346,10 +342,10 @@ public class FunctionSpace_QoS {
     @Override
     public java.lang.Long SumBandwithRequirements_aE__aA_bit_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSCommunicationOnNetwork qoSCommunicationOnNetwork) {
       /* Begin Protected Region [[3dba9bee-ff48-11eb-982b-5da7cd501019]] */
-		var qoSSystemConfigurationSource = QoSSystemConfigurationSource.selectToMeCommunicationOnNetwork(qoSCommunicationOnNetwork);
-		var systemEnvironmentNodeFunctions = environment.extension(ISystemEnvironmentNodeFunctions.class);		
+		final var qoSSystemConfigurationSource = QoSSystemConfigurationSource.selectToMeCommunicationOnNetwork(qoSCommunicationOnNetwork);
+		final var systemEnvironmentNodeFunctions = environment.extension(ISystemEnvironmentNodeFunctions.class);		
 		
-    	long total = systemEnvironmentNodeFunctions.SourceHosts(qoSCommunicationOnNetwork).size() * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_();    	
+    	final long total = systemEnvironmentNodeFunctions.SourceHosts(qoSCommunicationOnNetwork).size() * qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_();    	
     	return ((total * qoSSystemConfigurationSource.selectLoaddistribution_aE__aA___K__aC_()) / 100);
       /* End Protected Region   [[3dba9bee-ff48-11eb-982b-5da7cd501019]] */
     }
@@ -369,10 +365,10 @@ public class FunctionSpace_QoS {
   public static interface ITransportNetworkFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("6605672f-ff3d-11eb-bfe7-29eb44ce217c")
-    public java.lang.Long SumBandwithRequirements_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
+    public java.lang.Long SumBandwithRequirements_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
 
     @IDynamicResourceExtension.MethodId("ad60e2f5-ff4b-11eb-982b-5da7cd501019")
-    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
+    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment);
 
     @IDynamicResourceExtension.MethodId("b8b3e792-ff4b-11eb-982b-5da7cd501019")
     public java.lang.Long Capacity_aE__aA_bytes_aC_();
@@ -382,10 +378,10 @@ public class FunctionSpace_QoS {
   public static interface ITransportNetworkFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("6605672f-ff3d-11eb-bfe7-29eb44ce217c")
-    public java.lang.Long SumBandwithRequirements_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork);
+    public java.lang.Long SumBandwithRequirements_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork);
 
     @IDynamicResourceExtension.MethodId("ad60e2f5-ff4b-11eb-982b-5da7cd501019")
-    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork);
+    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork);
 
     @IDynamicResourceExtension.MethodId("b8b3e792-ff4b-11eb-982b-5da7cd501019")
     public java.lang.Long Capacity_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork);
@@ -399,22 +395,22 @@ public class FunctionSpace_QoS {
     private TransportNetworkFunctionsImpl() {}
 
     @Override
-    public java.lang.Long SumBandwithRequirements_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
+    public java.lang.Long SumBandwithRequirements_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
       /* Begin Protected Region [[6605672f-ff3d-11eb-bfe7-29eb44ce217c]] */
-    	var listOfCommuncationNetwork =  QoSCommunicationOnNetwork.selectToMeTransportNetwork(transportNetwork);
-    	long result = 0;
-    	for( var communcationNetwork : listOfCommuncationNetwork ) {
-    		var qosCommunictionNetworkFunctions = communcationNetwork.extension(IQoSCommunicationOnNetworkFunctions.class);
-    		var sum = qosCommunictionNetworkFunctions.SumBandwithRequirements_aE__aA_bit_aC_(environment);
+    	final var listOfCommuncationNetwork =  QoSCommunicationOnNetwork.selectToMeTransportNetwork(transportNetwork);
+    	var result = 0L;
+    	for( final var communcationNetwork : listOfCommuncationNetwork ) {
+    		final var qosCommunictionNetworkFunctions = communcationNetwork.extension(IQoSCommunicationOnNetworkFunctions.class);
+    		final var sum = qosCommunictionNetworkFunctions.SumBandwithRequirements_aE__aA_bit_aC_(environment);
     		result += sum;
     	}   	
-    	var total = result * 1000; // convert to bytes
+    	final var total = result * 1000; // convert to bytes
     	return total / transportNetwork.selectInstances();
       /* End Protected Region   [[6605672f-ff3d-11eb-bfe7-29eb44ce217c]] */
     }
 
     @Override
-    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
+    public java.lang.Long SumBandwithRequirementsReserve_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
       /* Begin Protected Region [[ad60e2f5-ff4b-11eb-982b-5da7cd501019]] */
     	return Capacity_aE__aA_bytes_aC_(transportNetwork) - SumBandwithRequirements_aE__aA_bytes_aC_(environment, transportNetwork);
       /* End Protected Region   [[ad60e2f5-ff4b-11eb-982b-5da7cd501019]] */
@@ -433,12 +429,12 @@ public class FunctionSpace_QoS {
 
     private TransportNetworkFunctions() {}
 
-    public static java.lang.Long SumBandwithRequirements_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
-      return DynamicResourceUtil.invoke(ITransportNetworkFunctionsImpl.class, TransportNetworkFunctionsImpl.INSTANCE, transportNetwork).SumBandwithRequirements_aE__aA_bytes_aC_(environment, transportNetwork);
+    public static java.lang.Long SumBandwithRequirements_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
+      return DynamicResourceUtil.invoke(ITransportNetworkFunctionsImpl.class, TransportNetworkFunctionsImpl.INSTANCE, transportNetwork).SumBandwithRequirements_aE__aA_byte_aC_(environment, transportNetwork);
     }
 
-    public static java.lang.Long SumBandwithRequirementsReserve_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
-      return DynamicResourceUtil.invoke(ITransportNetworkFunctionsImpl.class, TransportNetworkFunctionsImpl.INSTANCE, transportNetwork).SumBandwithRequirementsReserve_aE__aA_bytes_aC_(environment, transportNetwork);
+    public static java.lang.Long SumBandwithRequirementsReserve_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
+      return DynamicResourceUtil.invoke(ITransportNetworkFunctionsImpl.class, TransportNetworkFunctionsImpl.INSTANCE, transportNetwork).SumBandwithRequirementsReserve_aE__aA_byte_aC_(environment, transportNetwork);
     }
 
     public static java.lang.Long Capacity_aE__aA_bytes_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
@@ -449,4 +445,4 @@ public class FunctionSpace_QoS {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,t4D9ojwSyrUwwvIIWC2dGxxgQvU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,010c10e4-a0c9-11ea-8daa-afb4679c3497,k/I35bayOZ5jBgTnnzBCg7FArM0=] */

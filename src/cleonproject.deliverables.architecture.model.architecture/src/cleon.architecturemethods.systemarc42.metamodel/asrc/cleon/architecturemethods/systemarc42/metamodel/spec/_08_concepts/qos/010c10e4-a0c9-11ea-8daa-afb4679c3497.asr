@@ -1251,7 +1251,7 @@
                 <object statement-guid="27b0fc15-a99a-11eb-8f9b-01c801f6a12b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="28cbbaf1-a99a-11eb-8f9b-01c801f6a12b" type="literal">SourceSingleHost</object>
+                <object statement-guid="28cbbaf1-a99a-11eb-8f9b-01c801f6a12b" type="literal">SourceSingleHosts</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="4719c149-a99a-11eb-8f9b-01c801f6a12b">
@@ -1372,7 +1372,7 @@
                 <object statement-guid="49c24c16-a99a-11eb-8f9b-01c801f6a12b" type="resource" guid="85bfa202-7746-11e1-ad5d-97109d23eafb" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="49c24c18-a99a-11eb-8f9b-01c801f6a12b" type="literal">DestinationSingleHost</object>
+                <object statement-guid="49c24c18-a99a-11eb-8f9b-01c801f6a12b" type="literal">DestinationSingleHosts</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="49c24c32-a99a-11eb-8f9b-01c801f6a12b">
@@ -1970,7 +1970,7 @@
                 <object statement-guid="66056730-ff3d-11eb-bfe7-29eb44ce217c" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="66056731-ff3d-11eb-bfe7-29eb44ce217c" type="literal">SumBandwithRequirements_[bytes]</object>
+                <object statement-guid="66056731-ff3d-11eb-bfe7-29eb44ce217c" type="literal">SumBandwithRequirements_[byte]</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="4db1dfdb-ff3e-11eb-bfe7-29eb44ce217c">
@@ -2016,7 +2016,7 @@
                 <object statement-guid="ad60e2f9-ff4b-11eb-982b-5da7cd501019" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="ad60e2fa-ff4b-11eb-982b-5da7cd501019" type="literal">SumBandwithRequirementsReserve_[bytes]</object>
+                <object statement-guid="ad60e2fa-ff4b-11eb-982b-5da7cd501019" type="literal">SumBandwithRequirementsReserve_[byte]</object>
               </predicate>
               <predicate guid="1c152c45-db57-11dd-b397-2dd4c5d32cb3">
                 <object statement-guid="ad60e300-ff4b-11eb-982b-5da7cd501019">

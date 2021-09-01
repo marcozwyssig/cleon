@@ -299,7 +299,7 @@ public class FunctionSpace_QoS {
 		final var systemEnvironmentNodeFunctions = environment.extension(ISystemEnvironmentNodeFunctions.class);		
 		
 		final long total = systemEnvironmentNodeFunctions.SourceSingleHosts(qoSCommunicationOnNetwork).size()
-				* qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_();
+				* (qoSSystemConfigurationSource.selectEstimateMean_aE__aA_KB_aE_s_aC_() * 1000);
     	return ((total * qoSSystemConfigurationSource.selectLoaddistribution_aE__aA___K__aC_()) / 100);
       /* End Protected Region   [[3dba9bee-ff48-11eb-982b-5da7cd501019]] */
     }
@@ -369,13 +369,12 @@ public class FunctionSpace_QoS {
     public java.lang.Long SumBandwithRequirements_aE__aA_byte_aC_(final cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode environment, final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.ITransportNetwork transportNetwork) {
       /* Begin Protected Region [[6605672f-ff3d-11eb-bfe7-29eb44ce217c]] */
     	final var listOfCommuncationNetwork =  QoSCommunicationOnNetwork.selectToMeTransportNetwork(transportNetwork);
-    	var result = 0L;
+    	var total = 0L;
     	for( final var communcationNetwork : listOfCommuncationNetwork ) {
     		final var qosCommunictionNetworkFunctions = communcationNetwork.extension(IQoSCommunicationOnNetworkFunctions.class);
 			final var sum = qosCommunictionNetworkFunctions.SumBandwithRequirements_aE__aA_byte_aC_(environment);
-    		result += sum;
+			total += sum;
     	}   	
-    	final var total = result * 1000; // convert to bytes
     	return total / transportNetwork.selectInstances();
       /* End Protected Region   [[6605672f-ff3d-11eb-bfe7-29eb44ce217c]] */
     }

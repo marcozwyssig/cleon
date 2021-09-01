@@ -25,6 +25,9 @@ public class firewall__T_yaml {
     @IDynamicResourceExtension.MethodId("f7e57217-8bdb-11eb-a832-91f5636963f2")
     public java.lang.String PolicyName(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.qos.javamodel.IQoSSystemConfigurationSource qoSSystemConfigurationSource);
 
+    @IDynamicResourceExtension.MethodId("dfdcfbdc-0b30-11ec-a87c-0f7243e6a37e")
+    public java.lang.String ServiceAttributes();
+
   }
   
   public static interface IServiceFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -49,6 +52,9 @@ public class firewall__T_yaml {
 
     @IDynamicResourceExtension.MethodId("4a15ac8e-0674-11ec-b623-f16d27d7978c")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.javamodel.IDestination> onlyLinux();
+
+    @IDynamicResourceExtension.MethodId("159a95fb-0b34-11ec-a87c-0f7243e6a37e")
+    public java.lang.String CmpName();
 
   }
   
@@ -88,6 +94,31 @@ public class firewall__T_yaml {
 
   }
 
+  public static interface IFWStandardIPProtocolFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("fe9361ab-0b30-11ec-a87c-0f7243e6a37e")
+    public java.lang.String ServiceAttributes();
+
+  }
+  
+  public static interface IFWStandardIPProtocolFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class FWStandardIPProtocolFunctionsImpl implements IFWStandardIPProtocolFunctionsImpl {
+
+    public static final IFWStandardIPProtocolFunctionsImpl INSTANCE = new FWStandardIPProtocolFunctionsImpl();
+
+    private FWStandardIPProtocolFunctionsImpl() {}
+
+  }
+  
+  public static class FWStandardIPProtocolFunctions {
+
+    private FWStandardIPProtocolFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,FyqpMdPV2QChjlIR89k0O6K6SWg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,f7e5720e-8bdb-11eb-a832-91f5636963f2,fDHSvffPiUUdaenZvY69kQc3xsg=] */

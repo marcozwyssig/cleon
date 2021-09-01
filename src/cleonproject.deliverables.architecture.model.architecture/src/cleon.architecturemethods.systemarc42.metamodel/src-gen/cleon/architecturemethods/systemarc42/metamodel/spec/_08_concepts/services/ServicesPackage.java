@@ -37,6 +37,7 @@ public class ServicesPackage {
   public static final Resource FunctionSpace_aE_Services_FWStandardIPProtocol = new Resource("7ec5521b-3bcc-11eb-b8e1-3fcf5510f7e6");
   public static final Resource FunctionSpace_aE_Services_FWICMPService = new Resource("aafdaa00-3bcc-11eb-b8e1-3fcf5510f7e6");
   public static final Resource FWICMPService_messageName = new Resource("ee71e26c-3bcc-11eb-b8e1-3fcf5510f7e6");
+  public static final Resource FWStandardTCPIPProtocol = new Resource("ac6c5f8d-0b2d-11ec-a87c-0f7243e6a37e");
   
   /* Begin Protected Region [[user]] */
   
@@ -57,4 +58,4 @@ public class ServicesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,aCMAE0B54QUzpa6UdElwbPuIfrM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,l4MwXoP4uiVs4/ACJkpKicFAIGE=] */

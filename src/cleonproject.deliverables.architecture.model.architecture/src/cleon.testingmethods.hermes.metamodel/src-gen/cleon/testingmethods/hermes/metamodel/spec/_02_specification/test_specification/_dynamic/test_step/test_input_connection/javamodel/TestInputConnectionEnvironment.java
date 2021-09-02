@@ -32,11 +32,11 @@ public class TestInputConnectionEnvironment extends DynamicResource implements I
   
   @Override
   public cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment selectEnvironment() {
-    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_environment);
+    return _getSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestAbstractInputConnection_environment);
   }
 
   public TestInputConnectionEnvironment setEnvironment(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment environment) {
-    _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_environment, environment);
+    _setSingle(cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestAbstractInputConnection_environment, environment);
     return this;
   }
     
@@ -74,20 +74,16 @@ public class TestInputConnectionEnvironment extends DynamicResource implements I
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // relations
-    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_environment, visitor);
+    _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestAbstractInputConnection_environment, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
     _acceptSingle(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_useConnection, visitor);
   }
 
   // toMeRelations
   
-  public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnectionEnvironment> selectToMeEnvironment(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestEnvironment object) {
-    return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnectionEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_environment, object.getResource());
-  }
-  
   public static java.util.List<cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnectionEnvironment> selectToMeUseConnection(cleon.testingmethods.hermes.metamodel.spec._01_concept.test_infrastructure.test_environment.javamodel.ITestConnection object) {
     return _getToMeList(object.getRepository(), cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.javamodel.ITestInputConnectionEnvironment.class, cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step.test_input_connection.Test_input_connectionPackage.TestInputConnectionEnvironment_useConnection, object.getResource());
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f47fb47-6d6d-11e9-b84d-d319514e887f,vCE3+hVuBf7/yLNeXib1CLAnIRY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2f47fb47-6d6d-11e9-b84d-d319514e887f,cPBOXUtu5XafInn49ywbndA6Mn8=] */

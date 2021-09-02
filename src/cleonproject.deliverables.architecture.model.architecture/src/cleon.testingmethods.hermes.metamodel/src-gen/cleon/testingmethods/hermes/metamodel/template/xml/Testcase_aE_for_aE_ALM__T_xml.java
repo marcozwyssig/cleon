@@ -306,6 +306,81 @@ public class Testcase_aE_for_aE_ALM__T_xml {
 
   }
 
+  public static interface ITestAbstractInputConnectionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("c67c305d-0c05-11ec-958d-1bedd06d8336")
+    public java.lang.String Description();
+
+  }
+  
+  public static interface ITestAbstractInputConnectionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestAbstractInputConnectionFunctionsImpl implements ITestAbstractInputConnectionFunctionsImpl {
+
+    public static final ITestAbstractInputConnectionFunctionsImpl INSTANCE = new TestAbstractInputConnectionFunctionsImpl();
+
+    private TestAbstractInputConnectionFunctionsImpl() {}
+
+  }
+  
+  public static class TestAbstractInputConnectionFunctions {
+
+    private TestAbstractInputConnectionFunctions() {}
+
+  }
+
+  public static interface ITestInputConnectionEnvironmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("13592904-0c06-11ec-958d-1bedd06d8336")
+    public java.lang.String Description();
+
+  }
+  
+  public static interface ITestInputConnectionEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputConnectionEnvironmentFunctionsImpl implements ITestInputConnectionEnvironmentFunctionsImpl {
+
+    public static final ITestInputConnectionEnvironmentFunctionsImpl INSTANCE = new TestInputConnectionEnvironmentFunctionsImpl();
+
+    private TestInputConnectionEnvironmentFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputConnectionEnvironmentFunctions {
+
+    private TestInputConnectionEnvironmentFunctions() {}
+
+  }
+
+  public static interface ITestInputConnectionEnvironmentNotPossibleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1f66f225-0c06-11ec-958d-1bedd06d8336")
+    public java.lang.String Description();
+
+  }
+  
+  public static interface ITestInputConnectionEnvironmentNotPossibleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputConnectionEnvironmentNotPossibleFunctionsImpl implements ITestInputConnectionEnvironmentNotPossibleFunctionsImpl {
+
+    public static final ITestInputConnectionEnvironmentNotPossibleFunctionsImpl INSTANCE = new TestInputConnectionEnvironmentNotPossibleFunctionsImpl();
+
+    private TestInputConnectionEnvironmentNotPossibleFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputConnectionEnvironmentNotPossibleFunctions {
+
+    private TestInputConnectionEnvironmentNotPossibleFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,63a490f7-9db6-11eb-ac11-8525f5400242,0DApuJtf44VeufVwpqn2dWQugbE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,63a490f7-9db6-11eb-ac11-8525f5400242,IVk0vmovp5LfcDPWluwfp9TC0+s=] */

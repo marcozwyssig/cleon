@@ -17,7 +17,7 @@ public class Test_stepPackage {
   public static final Resource TestInputTool = new Resource("c024bfff-6a81-11e9-bd30-87fcf852dea7");
   public static final Resource AbstractTestInput = new Resource("809ec897-6b31-11e9-bd30-87fcf852dea7");
   public static final Resource TestInputData_testData = new Resource("51acf79f-6d72-11e9-b84d-d319514e887f");
-  public static final Resource TestInputTool_testTool = new Resource("50261e19-6d74-11e9-b84d-d319514e887f");
+  public static final Resource TestToolAware_testTool = new Resource("50261e19-6d74-11e9-b84d-d319514e887f");
   public static final Resource TestUserAware = new Resource("5da2706c-715b-11e9-98e0-2719d32d2629");
   public static final Resource TestInputUser_testUser = new Resource("01b021ff-7160-11e9-98e0-2719d32d2629");
   public static final Resource FunctionSpace_aE_TestStep_TestUserAware = new Resource("97efe7d7-7182-11e9-98e0-2719d32d2629");
@@ -30,6 +30,8 @@ public class Test_stepPackage {
   public static final Resource ExpectedResultAware = new Resource("180b732c-7b6c-11eb-b8e5-2d821e359a02");
   public static final Resource TestExpectedResultEnvironment = new Resource("46efffd5-7b6c-11eb-b8e5-2d821e359a02");
   public static final Resource TestExpectedResultEnvironment_testEnvironment = new Resource("bdcaf041-7b6c-11eb-b8e5-2d821e359a02");
+  public static final Resource TestToolAware = new Resource("fbf7c466-0bce-11ec-a9b2-833cb3ed3ab5");
+  public static final Resource FunctionSpace_aE_TestStep_TestToolAware = new Resource("9e05bca3-0bf2-11ec-958d-1bedd06d8336");
   
   /* Begin Protected Region [[user]] */
   
@@ -50,4 +52,4 @@ public class Test_stepPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step,1hYilIhFY8M2uUMpwNw/+/zOOD0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.test_step,XmMgsvamHjfcNsoY12qlzjan7NY=] */

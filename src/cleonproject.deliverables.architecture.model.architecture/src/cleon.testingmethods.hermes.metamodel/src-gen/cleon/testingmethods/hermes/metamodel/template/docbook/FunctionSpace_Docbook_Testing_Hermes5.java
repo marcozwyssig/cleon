@@ -571,6 +571,81 @@ public class FunctionSpace_Docbook_Testing_Hermes5 {
 
   }
 
+  public static interface ITestInputConnectionEnvironmentFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("22d8d234-0c04-11ec-958d-1bedd06d8336")
+    public java.lang.String RenderLine();
+
+  }
+  
+  public static interface ITestInputConnectionEnvironmentFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputConnectionEnvironmentFunctionsImpl implements ITestInputConnectionEnvironmentFunctionsImpl {
+
+    public static final ITestInputConnectionEnvironmentFunctionsImpl INSTANCE = new TestInputConnectionEnvironmentFunctionsImpl();
+
+    private TestInputConnectionEnvironmentFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputConnectionEnvironmentFunctions {
+
+    private TestInputConnectionEnvironmentFunctions() {}
+
+  }
+
+  public static interface ITestInputConnectionEnvironmentNotPossibleFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("9cbaf2b4-0c05-11ec-958d-1bedd06d8336")
+    public java.lang.String RenderLine();
+
+  }
+  
+  public static interface ITestInputConnectionEnvironmentNotPossibleFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestInputConnectionEnvironmentNotPossibleFunctionsImpl implements ITestInputConnectionEnvironmentNotPossibleFunctionsImpl {
+
+    public static final ITestInputConnectionEnvironmentNotPossibleFunctionsImpl INSTANCE = new TestInputConnectionEnvironmentNotPossibleFunctionsImpl();
+
+    private TestInputConnectionEnvironmentNotPossibleFunctionsImpl() {}
+
+  }
+  
+  public static class TestInputConnectionEnvironmentNotPossibleFunctions {
+
+    private TestInputConnectionEnvironmentNotPossibleFunctions() {}
+
+  }
+
+  public static interface ITestAbstractInputConnectionFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("878e6b21-0c05-11ec-958d-1bedd06d8336")
+    public java.lang.String RenderLine();
+
+  }
+  
+  public static interface ITestAbstractInputConnectionFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestAbstractInputConnectionFunctionsImpl implements ITestAbstractInputConnectionFunctionsImpl {
+
+    public static final ITestAbstractInputConnectionFunctionsImpl INSTANCE = new TestAbstractInputConnectionFunctionsImpl();
+
+    private TestAbstractInputConnectionFunctionsImpl() {}
+
+  }
+  
+  public static class TestAbstractInputConnectionFunctions {
+
+    private TestAbstractInputConnectionFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,1tIY/O8aO+/gMLJuYLHG7BsEaYw=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,983d95c3-4f88-11e9-ad5d-977b17aab907,gxkfEVHuARgxkIEPetUi+RgcexM=] */

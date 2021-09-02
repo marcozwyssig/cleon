@@ -175,6 +175,31 @@ public class FunctionSpace_TestStep {
 
   }
 
+  public static interface ITestToolAwareFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a3bd5cc3-0bf2-11ec-958d-1bedd06d8336")
+    public cleon.testingmethods.hermes.metamodel.spec._02_specification.test_specification._dynamic.javamodel.IDynamicTest SelectTestSteps();
+
+  }
+  
+  public static interface ITestToolAwareFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class TestToolAwareFunctionsImpl implements ITestToolAwareFunctionsImpl {
+
+    public static final ITestToolAwareFunctionsImpl INSTANCE = new TestToolAwareFunctionsImpl();
+
+    private TestToolAwareFunctionsImpl() {}
+
+  }
+  
+  public static class TestToolAwareFunctions {
+
+    private TestToolAwareFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,+r+NMlZ88HRUDQwI0Qp/H2nT2yU=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,ac63ef02-66a8-11e9-9ec9-5fbc84faaeb1,EBI2K4b/NSxG6VxdOoX5P9k09gU=] */

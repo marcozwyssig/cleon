@@ -294,6 +294,9 @@ public class SensorPackage {
   public static final Resource IntervalAware_interval_aE__aA_s_aC_ = new Resource("becb1998-6498-11eb-bcb1-d5dcf010d136");
   public static final Resource wmidiskspace_drive = new Resource("639b5f25-6539-11eb-bf13-ade897aac2eb");
   public static final Resource IntervalAware = new Resource("51440d8d-da38-11eb-8ffa-d7727a940bcf");
+  public static final Resource snmpcustomstring_oid = new Resource("f351badd-0c96-11ec-a707-cfc3a993d4d5");
+  public static final Resource snmpcustomstring_includeMust = new Resource("f9bcf2f8-0c96-11ec-a707-cfc3a993d4d5");
+  public static final Resource snmpcustomstring_includeMustType = new Resource("0b13bb23-0c97-11ec-a707-cfc3a993d4d5");
   
   /* Begin Protected Region [[user]] */
   
@@ -314,4 +317,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,zOdvsmRV94Gi+Bm8Ent94dPFHlc=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,2dycTcsJgNParVplPAGx0ZZL0so=] */

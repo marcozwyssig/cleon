@@ -431,6 +431,31 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface IsnmpcustomstringFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("64cd6fc0-0c98-11ec-a707-cfc3a993d4d5")
+    public java.lang.String RenderSpecificSensor();
+
+  }
+  
+  public static interface IsnmpcustomstringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class snmpcustomstringFunctionsImpl implements IsnmpcustomstringFunctionsImpl {
+
+    public static final IsnmpcustomstringFunctionsImpl INSTANCE = new snmpcustomstringFunctionsImpl();
+
+    private snmpcustomstringFunctionsImpl() {}
+
+  }
+  
+  public static class snmpcustomstringFunctions {
+
+    private snmpcustomstringFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,xkbuY9dPURY3EDrZ6+hIxmwqYKA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Vd4MirycPtDGTenFvl8+lvdio3c=] */

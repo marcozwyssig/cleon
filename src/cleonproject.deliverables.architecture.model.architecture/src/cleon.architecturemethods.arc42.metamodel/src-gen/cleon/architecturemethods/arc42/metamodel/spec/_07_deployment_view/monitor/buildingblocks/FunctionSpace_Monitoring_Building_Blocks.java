@@ -367,6 +367,31 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
+  public static interface IsnmpcustomstringFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("3516d0cb-0c99-11ec-a707-cfc3a993d4d5")
+    public java.lang.String Parameters();
+
+  }
+  
+  public static interface IsnmpcustomstringFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class snmpcustomstringFunctionsImpl implements IsnmpcustomstringFunctionsImpl {
+
+    public static final IsnmpcustomstringFunctionsImpl INSTANCE = new snmpcustomstringFunctionsImpl();
+
+    private snmpcustomstringFunctionsImpl() {}
+
+  }
+  
+  public static class snmpcustomstringFunctions {
+
+    private snmpcustomstringFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,JT4oKXNcVEr/re7SbOtH0pQK4IE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,M5Jufl809LvzzSCbK4F0QPB7aLI=] */

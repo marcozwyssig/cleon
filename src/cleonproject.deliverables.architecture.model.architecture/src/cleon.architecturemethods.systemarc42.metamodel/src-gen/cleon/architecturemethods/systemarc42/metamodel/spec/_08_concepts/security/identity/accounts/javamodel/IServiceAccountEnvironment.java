@@ -12,8 +12,6 @@ public interface IServiceAccountEnvironment extends cleon.common.doc.metamodel.s
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountEnvironmentSite> selectServiceAccountSite();
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountEnvironment> selectAllowAccessToEnvironments();
-  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e0be5246-a1a0-11ea-886d-354b9ee6fb2d,563Z7879NIiNQdOuAxmeXIr9u1E=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,e0be5246-a1a0-11ea-886d-354b9ee6fb2d,sEZXmx/D2q2Le+AEzAdaZ2wnQcU=] */

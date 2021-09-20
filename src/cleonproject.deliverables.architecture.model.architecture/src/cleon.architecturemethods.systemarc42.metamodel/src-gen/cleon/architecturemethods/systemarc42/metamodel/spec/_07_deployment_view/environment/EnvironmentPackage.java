@@ -19,7 +19,6 @@ public class EnvironmentPackage {
   public static final Resource SystemEnvironmentNode_level_aE_7 = new Resource("e5f0a74c-0b6f-11e9-a136-69d076e48ed1");
   public static final Resource SystemEnvironmentNode_level_aE_8 = new Resource("f3770639-0b6f-11e9-a136-69d076e48ed1");
   public static final Resource SystemEnvironmentNode_hostGroupPrefix = new Resource("d9e6b1b3-3b6d-11ea-8cc1-49e25cde5066");
-  public static final Resource SystemEnvironmentNode_includeEnvironment = new Resource("398344b9-b08e-11ea-b791-9b401fd02359");
   
   /* Begin Protected Region [[user]] */
   
@@ -40,4 +39,4 @@ public class EnvironmentPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment,1o3LLnD0iC4F+Is586jQN3ap0OQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment,cpCqE37PRWEHncBIq52yXxagYkY=] */

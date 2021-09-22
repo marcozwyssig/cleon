@@ -221,11 +221,12 @@ public class sites__T_yaml {
       final String hostName = Select.simpleName(EnvironmentPlugin.getGlobalReadJobExecutor(), host.getResource()); 
       final char firstLetter = hostName.charAt(hostName.length() - 2);
       final String siteName = abstractSite.selectName().toUpperCase().replace('X', '6');
+      var abstractSiteFunction = abstractSite.extension(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.IAbstractSiteFunctions.class);      
 
       if(firstLetter == '0') {
-      	return "PRP-" + siteName + "-BABS-00";
+      	return "PRP-" + siteName + "-" + abstractSiteFunction.Owner() + "-00";
       } else {
-      	return "PRP-" + siteName + "-BABS-10";
+    	return "PRP-" + siteName + "-" + abstractSiteFunction.Owner() + "-10";
       }
       /* End Protected Region   [[b36df94a-e0b6-11ea-8443-8f528e21caa3]] */
     }

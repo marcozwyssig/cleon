@@ -9,6 +9,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
 import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomadvanced.javamodel.Snmpcustomadvanced;
+import cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomtable.javamodel.Snmpcustomtable;
 
 /* End Protected Region   [[e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,imports]] */
 
@@ -456,6 +457,78 @@ public class profiles__T_yaml {
 
   }
 
+  public static interface ISnmpcustomtableFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("f5785ac3-1ba2-11ec-b0bc-a9ea4d75c042")
+    public java.lang.String RenderSpecificSensor();
+
+  }
+  
+  public static interface ISnmpcustomtableFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SnmpcustomtableFunctionsImpl implements ISnmpcustomtableFunctionsImpl {
+
+    public static final ISnmpcustomtableFunctionsImpl INSTANCE = new SnmpcustomtableFunctionsImpl();
+
+    private SnmpcustomtableFunctionsImpl() {}
+
+  }
+  
+  public static class SnmpcustomtableFunctions {
+
+    private SnmpcustomtableFunctions() {}
+
+  }
+
+  public static interface ISnmpCustomTableChannelFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042")
+    public java.lang.Integer Position();
+
+  }
+  
+  public static interface ISnmpCustomTableChannelFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+    @IDynamicResourceExtension.MethodId("14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042")
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel);
+
+  }
+  
+  public static class SnmpCustomTableChannelFunctionsImpl implements ISnmpCustomTableChannelFunctionsImpl {
+
+    public static final ISnmpCustomTableChannelFunctionsImpl INSTANCE = new SnmpCustomTableChannelFunctionsImpl();
+
+    private SnmpCustomTableChannelFunctionsImpl() {}
+
+    @Override
+    public java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel) {
+      /* Begin Protected Region [[14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042]] */
+    	var parent = Snmpcustomtable.selectToMeSnmpCustomTableChannels(snmpCustomTableChannel);
+    	int i = 1;
+    	for( var channel : parent.selectSnmpCustomTableChannels()) {
+    		if( channel.equals(snmpCustomTableChannel)) {
+    			 return i;
+    		}
+    		++i;
+    	}
+    	return -1;
+      /* End Protected Region   [[14c0ee78-1ba3-11ec-b0bc-a9ea4d75c042]] */
+    }
+
+  }
+  
+  public static class SnmpCustomTableChannelFunctions {
+
+    private SnmpCustomTableChannelFunctions() {}
+
+    public static java.lang.Integer Position(final cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomtable.javamodel.ISnmpCustomTableChannel snmpCustomTableChannel) {
+      return DynamicResourceUtil.invoke(ISnmpCustomTableChannelFunctionsImpl.class, SnmpCustomTableChannelFunctionsImpl.INSTANCE, snmpCustomTableChannel).Position(snmpCustomTableChannel);
+    }
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,Vd4MirycPtDGTenFvl8+lvdio3c=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,e4b3c6b7-cce7-11ea-8b73-6b1c6b53a7a6,+dEDE0QHZeaWvJOpmeGeu5nS3x8=] */

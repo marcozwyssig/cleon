@@ -1114,31 +1114,31 @@ public class FunctionSpace_Docbook_SystemArc42 {
 
   }
 
-  public static interface IQoSConceptFunctions extends IDynamicResourceExtension {
+  public static interface IAverageBandwithAndQoSConceptFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("0b96a4cd-e08b-11eb-9584-9144fca99be9")
     public java.lang.String RenderContentElement();
 
   }
   
-  public static interface IQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IAverageBandwithAndQoSConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class QoSConceptFunctionsImpl implements IQoSConceptFunctionsImpl {
+  public static class AverageBandwithAndQoSConceptFunctionsImpl implements IAverageBandwithAndQoSConceptFunctionsImpl {
 
-    public static final IQoSConceptFunctionsImpl INSTANCE = new QoSConceptFunctionsImpl();
+    public static final IAverageBandwithAndQoSConceptFunctionsImpl INSTANCE = new AverageBandwithAndQoSConceptFunctionsImpl();
 
-    private QoSConceptFunctionsImpl() {}
+    private AverageBandwithAndQoSConceptFunctionsImpl() {}
 
   }
   
-  public static class QoSConceptFunctions {
+  public static class AverageBandwithAndQoSConceptFunctions {
 
-    private QoSConceptFunctions() {}
+    private AverageBandwithAndQoSConceptFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,teLkoDnE6mMm65BByIJR7v67m5k=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,fb58b09d-d181-11e8-b18f-df1540bb7a5c,TsZHOt97NGOzvwg0ATriL7rN4Gs=] */

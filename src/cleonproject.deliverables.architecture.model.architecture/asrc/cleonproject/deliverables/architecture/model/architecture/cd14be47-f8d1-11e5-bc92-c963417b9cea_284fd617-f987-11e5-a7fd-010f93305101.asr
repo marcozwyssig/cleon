@@ -500,6 +500,7 @@
         <resource statement-guid="ea925b1d-eb90-11eb-ba93-e1cf4b86434e" type="resource" guid="ea91beda-eb90-11eb-ba93-e1cf4b86434e" />
         <resource statement-guid="6ab7e314-f083-11eb-ac5d-f985c18ba79b" type="resource" guid="6ab6f8b1-f083-11eb-ac5d-f985c18ba79b" />
         <resource statement-guid="ecc17036-1ba0-11ec-b0bc-a9ea4d75c042" type="resource" guid="ecc12213-1ba0-11ec-b0bc-a9ea4d75c042" />
+        <resource statement-guid="903eee78-203d-11ec-8288-d50c101f2ec5" type="resource" guid="903e5235-203d-11ec-8288-d50c101f2ec5" />
       </owns>
     </resource>
   </owns>
@@ -5486,6 +5487,16 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="ecc25a97-1ba0-11ec-b0bc-a9ea4d75c042" type="literal">cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor.snmpcustomtable</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="903eee78-203d-11ec-8288-d50c101f2ec5">
+            <resource guid="903e5235-203d-11ec-8288-d50c101f2ec5">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="903e5237-203d-11ec-8288-d50c101f2ec5" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="903fd8d9-203d-11ec-8288-d50c101f2ec5" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.schedule</object>
               </predicate>
             </resource>
           </object>

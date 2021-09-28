@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource format="5.6.0" guid="8090f57d-2057-11ec-8288-d50c101f2ec5">
+  <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <resource statement-guid="80911cb1-2057-11ec-8288-d50c101f2ec5" type="resource" guid="8090f583-2057-11ec-8288-d50c101f2ec5">
+      <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
+        <resource statement-guid="80911cb0-2057-11ec-8288-d50c101f2ec5" type="resource" guid="8090f582-2057-11ec-8288-d50c101f2ec5">
+          <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+            <resource statement-guid="f4ecdd20-2057-11ec-8288-d50c101f2ec5" type="resource" guid="f4ec8efb-2057-11ec-8288-d50c101f2ec5" />
+          </owns>
+        </resource>
+      </owns>
+    </resource>
+  </owns>
+  <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="8090f584-2057-11ec-8288-d50c101f2ec5" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
+  </predicate>
+  <predicate guid="32d2854d-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="de398e2b-2057-11ec-8288-d50c101f2ec5" type="resource" guid="8819d927-f190-11e8-b3e7-15e2dd8d9b05" />
+  </predicate>
+  <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="80911ca9-2057-11ec-8288-d50c101f2ec5" type="literal">PeakBandwithConcept</object>
+  </predicate>
+  <predicate guid="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
+    <object statement-guid="80911cb1-2057-11ec-8288-d50c101f2ec5">
+      <resource guid="8090f583-2057-11ec-8288-d50c101f2ec5">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="80911caa-2057-11ec-8288-d50c101f2ec5" type="resource" guid="30d7e410-b46f-11e1-8107-93c930a749c9" />
+        </predicate>
+        <predicate guid="30d7e411-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="80911cab-2057-11ec-8288-d50c101f2ec5" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
+        </predicate>
+        <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
+          <object statement-guid="80911cb0-2057-11ec-8288-d50c101f2ec5">
+            <resource guid="8090f582-2057-11ec-8288-d50c101f2ec5">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="80911cac-2057-11ec-8288-d50c101f2ec5" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+              </predicate>
+              <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                <object statement-guid="f4ecdd20-2057-11ec-8288-d50c101f2ec5">
+                  <resource guid="f4ec8efb-2057-11ec-8288-d50c101f2ec5">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="f4ecb60e-2057-11ec-8288-d50c101f2ec5" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                    </predicate>
+                    <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                      <object statement-guid="f4ecdd1f-2057-11ec-8288-d50c101f2ec5" type="literal">Spitzendurchsatzbandbreitenbedarf</object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+            </resource>
+          </object>
+        </predicate>
+      </resource>
+    </object>
+  </predicate>
+  <predicate guid="e069e5d8-6a95-11dc-b005-61743b7fa30d">
+    <object statement-guid="80911cb2-2057-11ec-8288-d50c101f2ec5" type="literal">false</object>
+  </predicate>
+</resource>
+

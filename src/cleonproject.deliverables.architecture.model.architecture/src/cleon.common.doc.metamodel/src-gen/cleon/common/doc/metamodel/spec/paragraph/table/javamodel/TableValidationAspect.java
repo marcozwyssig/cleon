@@ -21,7 +21,7 @@ public class TableValidationAspect implements IResourceValidationAspect {
 		final ITypeSystem typeSystem = TypeSystem.create(validationContext.getReadJobExecutor());
 		final IDynamicResourceRepository resourceRepository = typeSystem.getResourceRepository();
 		final ITable table = resourceRepository.getResource(ITable.class, validationContext.getResource());
-		final int sumColumn = table.selectColumns().stream().mapToInt(IColumn::selectWidth).sum();
+		final var sumColumn = table.selectColumns().stream().mapToDouble(IColumn::selectWidth).sum();
 		if (sumColumn != 100) {
 			final String message = String.format("Sum of colums (%d) width is not 100", sumColumn);
 			inconsistencies.add(new PredicateInconsistency(validationContext.getPackage(),

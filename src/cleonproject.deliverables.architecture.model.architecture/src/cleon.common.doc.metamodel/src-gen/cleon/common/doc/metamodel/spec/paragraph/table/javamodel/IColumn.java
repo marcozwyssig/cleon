@@ -8,8 +8,8 @@ public interface IColumn extends ch.actifsource.core.javamodel.INamedResource {
   
   // attributes
   
-  public java.lang.Integer selectWidth();
+  public java.lang.Double selectWidth();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06fe17d8-3c4a-11e5-871f-6beac6a7c24b,3zinzn4t+mtWuHAg01T+mY7jGe0=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,06fe17d8-3c4a-11e5-871f-6beac6a7c24b,5TRcZpx5OR2+5EYjarGG2zkizmI=] */

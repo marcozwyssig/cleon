@@ -4,11 +4,31 @@ import ch.actifsource.core.Resource;
 
 public class AsciidocPackage {
   
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DomainContext = new Resource("ca988695-2663-11e6-ae54-e50d44645ae7");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalContext = new Resource("80def9c8-2806-11e6-b263-9db62e053e59");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_System_aE_Scope_aE_and_aE_Context = new Resource("865e4ad0-2806-11e6-b263-9db62e053e59");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_arc42Document = new Resource("3b5845e2-2889-11e6-abf5-2f26b72f34c5");
-  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentView = new Resource("a2119eba-d181-11e8-b18f-df1540bb7a5c");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_System_aE_Scope_aE_and_aE_Context = new Resource("5cd8e8d9-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DomainContext = new Resource("5cd8e8e5-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalContext = new Resource("5cd95d92-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DecompositionBuildingBlock = new Resource("5cd9d375-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DeploymentView = new Resource("5cd9d384-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_IntroductionAndGoals = new Resource("5cd9f9dc-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_QualityGoals = new Resource("5cd9f9fa-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Requirements = new Resource("5cd9fa66-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_TechnicalConstraints = new Resource("5cda20e5-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_OrganizationalConstraints = new Resource("5cda2151-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_DecisionTopic = new Resource("5cda21c1-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Whitebox = new Resource("5cda4973-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox = new Resource("5cda96a5-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ProductView = new Resource("5cda96b3-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox_aE_Dependencies = new Resource("5cdabd86-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Blackbox_aE_Requirements = new Resource("5cdae4d0-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BuildingBlockRequirementCoverage = new Resource("5cdb0b2f-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_MonitorView = new Resource("5cdb0b4e-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_MonitoringBuildingBlock = new Resource("5cdb0b63-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Monitoring = new Resource("5cdb32ca-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_ComponentComposition = new Resource("5cdb332f-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_BuildingBlock = new Resource("5cdb5a05-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Backup_aE_and_aE_Recovery = new Resource("5cdb5a17-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Sensor = new Resource("5cdb5a55-2516-11ec-beea-a9d94a6f89e0");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_arc42_Technical_aE_Risks = new Resource("5cdb5a59-2516-11ec-beea-a9d94a6f89e0");
   
   /* Begin Protected Region [[user]] */
   
@@ -29,4 +49,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,fPDQwwKVRztyB3qqpGxxS0pCPRQ=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.template.asciidoc,PJ2XtkMI3qVF+NQQYZB8Z6Bhcjg=] */

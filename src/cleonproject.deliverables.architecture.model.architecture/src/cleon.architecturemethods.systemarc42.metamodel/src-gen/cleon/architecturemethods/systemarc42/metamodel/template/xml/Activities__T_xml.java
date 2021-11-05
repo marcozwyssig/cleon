@@ -27,7 +27,7 @@ public class Activities__T_xml {
     public List<ch.actifsource.core.javamodel.IResource> MembersWithServiceAccounts();
 
     @IDynamicResourceExtension.MethodId("c28cf44b-0025-11ec-96f4-af32234079d7")
-    public List<ch.actifsource.core.javamodel.IResource> MembersSorted();
+    public List<ch.actifsource.core.javamodel.IResource> MembersWithoutServiceAccountsSorted();
 
   }
   
@@ -51,4 +51,4 @@ public class Activities__T_xml {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6aeea562-be70-11e9-bf11-8d3e86ade1f1,nSHwlEid6LV7OFKnEPMoudpaZ/I=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,6aeea562-be70-11e9-bf11-8d3e86ade1f1,U2bSWBcQb+2Y5lk0bQpvgWr2qow=] */

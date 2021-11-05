@@ -130,6 +130,9 @@ public class FunctionSpace_Activity_Deployment {
                 	for( var roleSystemComponent : RoleSystemComponent.selectToMeSystemComponentRoleTemplate(all)) {
                 		final var roleSystemComponentFunctions = roleSystemComponent.extension(IRoleSystemComponentFunctions.class);            		
                 		final var abstractSites = roleSystemComponentFunctions.GetAllowedSiteForRoleSystemComponent();
+                		if( roleSystemComponent.selectExcludeActivities().contains(activityPermission)) {
+                			continue;
+                		}
                 		if( abstractSites.contains(abstractSite) && !roleSystemComponentResult.contains(roleSystemComponent)) {
                 			roleSystemComponentResult.add(roleSystemComponent);
                 		}

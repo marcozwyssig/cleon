@@ -29,6 +29,7 @@ public class RolePackage {
   public static final Resource FunctionSpace_aE_Role_SystemComponent = new Resource("c3859c5c-bba6-11ea-83bb-3d6d7d2cf439");
   public static final Resource RoleSystemComponent_allocateActivitiesOfSite = new Resource("8fc8a686-de55-11eb-b028-df36f0dc7b24");
   public static final Resource RoleSiteGroup_allocateActivitiesFromSite = new Resource("1b76b500-de56-11eb-b028-df36f0dc7b24");
+  public static final Resource RoleSystemComponent_excludeActivities = new Resource("a0790aa3-3e22-11ec-8500-19d44560f2b7");
   
   /* Begin Protected Region [[user]] */
   
@@ -49,4 +50,4 @@ public class RolePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role,c367G5FWP980qB+liwegSYPMWV8=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role,/sdq24b6DbY2Vks28q1sfSZgWlE=] */

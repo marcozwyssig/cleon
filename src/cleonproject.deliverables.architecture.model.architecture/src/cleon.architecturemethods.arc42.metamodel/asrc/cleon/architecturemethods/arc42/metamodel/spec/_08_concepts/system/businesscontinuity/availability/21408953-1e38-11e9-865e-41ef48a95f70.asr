@@ -6,9 +6,9 @@
   <owns predicate="049ec97d-bce1-11db-8f71-f36774f9949e">
     <resource statement-guid="6922a273-1e38-11e9-865e-41ef48a95f70" type="resource" guid="691caf00-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="315c86b1-1e38-11e9-865e-41ef48a95f70" type="resource" guid="315c388e-1e38-11e9-865e-41ef48a95f70" />
+    <resource statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c" type="resource" guid="bc7b8255-00df-11eb-89a7-8344c130228c" />
     <resource statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70" type="resource" guid="63f98721-1e38-11e9-865e-41ef48a95f70" />
     <resource statement-guid="c2cf2118-77b9-11e9-8094-13b915a38efa" type="resource" guid="c2ced2f5-77b9-11e9-8094-13b915a38efa" />
-    <resource statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c" type="resource" guid="bc7b8255-00df-11eb-89a7-8344c130228c" />
     <resource statement-guid="709f8c08-ff1d-11ea-afaf-693ca36c7b72" type="resource" guid="709ec8b4-ff1d-11ea-afaf-693ca36c7b72" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -72,6 +72,22 @@
         </predicate>
       </resource>
     </object>
+    <object statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c">
+      <resource guid="bc7b8255-00df-11eb-89a7-8344c130228c">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bc7b8257-00df-11eb-89a7-8344c130228c" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Active / Active ohne Synchronisation (Client-Based)</object>
+        </predicate>
+        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
+          <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Replikation oder Kommunikation zwischen den Komponenten. </object>
+        </predicate>
+        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
+          <object statement-guid="db652cc5-00df-11eb-89a7-8344c130228c" type="literal">Falls eine Komponente nicht mehr verfügbar ist, kann auf die verfügbare Komponente zugegriffen werden.</object>
+        </predicate>
+      </resource>
+    </object>
     <object statement-guid="63f9ae34-1e38-11e9-865e-41ef48a95f70">
       <resource guid="63f98721-1e38-11e9-865e-41ef48a95f70">
         <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
@@ -101,22 +117,6 @@
         </predicate>
         <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
           <object statement-guid="21a4d707-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente wird mit dem Backup gesichert. Falls die Komponente ausfällt, wird die Komponenten aus der Sicherung wiederherstellt. Dabei werden die gleichen Konfigurationen (wie z.B. IP-Adresse, usw.) verwendet.</object>
-        </predicate>
-      </resource>
-    </object>
-    <object statement-guid="bc7b8258-00df-11eb-89a7-8344c130228c">
-      <resource guid="bc7b8255-00df-11eb-89a7-8344c130228c">
-        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="bc7b8257-00df-11eb-89a7-8344c130228c" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
-        </predicate>
-        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Doppelter Aufbau (Client-based)</object>
-        </predicate>
-        <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Replikation oder Kommunikation zwischen den Komponenten. </object>
-        </predicate>
-        <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
-          <object statement-guid="db652cc5-00df-11eb-89a7-8344c130228c" type="literal">Falls eine Komponente nicht mehr verfügbar ist, kann auf die verfügbare Komponente zugegriffen werden.</object>
         </predicate>
       </resource>
     </object>

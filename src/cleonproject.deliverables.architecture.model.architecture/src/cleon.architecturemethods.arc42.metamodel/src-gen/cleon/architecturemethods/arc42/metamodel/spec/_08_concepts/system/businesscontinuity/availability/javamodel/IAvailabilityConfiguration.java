@@ -12,11 +12,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitActive__S_Active();
     
+    public void visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    
     public void visitActive__S_Passive__F___N_Failover__O_();
     
     public void visitSicherung__F_und__F_Wiederherstellung();
-    
-    public void visitDoppelter__F_Aufbau__F___N_Client__S_based__O_();
     
     public void visitReplikation();
     
@@ -28,11 +28,11 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitActive__S_Active();
     
+    public R visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    
     public R visitActive__S_Passive__F___N_Failover__O_();
     
     public R visitSicherung__F_und__F_Wiederherstellung();
-    
-    public R visitDoppelter__F_Aufbau__F___N_Client__S_based__O_();
     
     public R visitReplikation();
     
@@ -54,15 +54,15 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isActive__S_Active();
   
+  public boolean isActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+  
   public boolean isActive__S_Passive__F___N_Failover__O_();
   
   public boolean isSicherung__F_und__F_Wiederherstellung();
-  
-  public boolean isDoppelter__F_Aufbau__F___N_Client__S_based__O_();
   
   public boolean isReplikation();
   
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,wHYgZwZpMG+N+AqQ4ei7vKk2XwI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,LCJ8DZBhZlYmUrlZI7tIxQ3CNz4=] */

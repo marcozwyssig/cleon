@@ -192,45 +192,6 @@ public class FunctionSpace_Activity_Buildingblock {
 
   }
 
-  public static interface IStringLiteralFunctions extends IDynamicResourceExtension {
-
-    @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
-    public java.lang.String ReplaceDashToUnderscore();
-
-  }
-  
-  public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
-    
-    @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
-    public java.lang.String ReplaceDashToUnderscore(final java.lang.String stringLiteral);
-
-  }
-  
-  public static class StringLiteralFunctionsImpl implements IStringLiteralFunctionsImpl {
-
-    public static final IStringLiteralFunctionsImpl INSTANCE = new StringLiteralFunctionsImpl();
-
-    private StringLiteralFunctionsImpl() {}
-
-    @Override
-    public java.lang.String ReplaceDashToUnderscore(final java.lang.String stringLiteral) {
-      /* Begin Protected Region [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
-      return stringLiteral.replaceAll("-", "_");
-      /* End Protected Region   [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
-    }
-
-  }
-  
-  public static class StringLiteralFunctions {
-
-    private StringLiteralFunctions() {}
-
-    public static java.lang.String ReplaceDashToUnderscore(final java.lang.String stringLiteral) {
-      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).ReplaceDashToUnderscore(stringLiteral);
-    }
-
-  }
-
   public static interface IAuthZBuildingBlockForPermissionFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("f5ec10ef-864b-11eb-9869-4317e18e6c88")
@@ -267,4 +228,4 @@ public class FunctionSpace_Activity_Buildingblock {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,pjXl2eKuU1VpxgW0aSUb/aRxInc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,9fbae63a-0a1c-11eb-a857-d17d567fc174,EaSZSfAOQoTC7ieqfSgHs8V4KQU=] */

@@ -26,6 +26,15 @@ public class FunctionSpace_String {
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
     public java.lang.String convertDotToSlash();
 
+    @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
+    public java.lang.String replaceDashToUnderscore();
+
+    @IDynamicResourceExtension.MethodId("16eee400-4879-11ec-b3cc-9dd8204a254a")
+    public java.lang.String replaceSlashToUnderscore();
+
+    @IDynamicResourceExtension.MethodId("59ce2e08-4884-11ec-b3cc-9dd8204a254a")
+    public java.lang.String replaceParenthesesToUnderscore();
+
   }
   
   public static interface IStringLiteralFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -35,6 +44,15 @@ public class FunctionSpace_String {
 
     @IDynamicResourceExtension.MethodId("7380fb89-c0ac-11e7-a130-7198de5ddf3f")
     public java.lang.String convertDotToSlash(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("6d742e75-8648-11eb-9869-4317e18e6c88")
+    public java.lang.String replaceDashToUnderscore(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("16eee400-4879-11ec-b3cc-9dd8204a254a")
+    public java.lang.String replaceSlashToUnderscore(final java.lang.String stringLiteral);
+
+    @IDynamicResourceExtension.MethodId("59ce2e08-4884-11ec-b3cc-9dd8204a254a")
+    public java.lang.String replaceParenthesesToUnderscore(final java.lang.String stringLiteral);
 
   }
   
@@ -58,6 +76,27 @@ public class FunctionSpace_String {
       /* End Protected Region   [[7380fb89-c0ac-11e7-a130-7198de5ddf3f]] */
     }
 
+    @Override
+    public java.lang.String replaceDashToUnderscore(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
+        return stringLiteral.replaceAll("-", "_");   
+      /* End Protected Region   [[6d742e75-8648-11eb-9869-4317e18e6c88]] */
+    }
+
+    @Override
+    public java.lang.String replaceSlashToUnderscore(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[16eee400-4879-11ec-b3cc-9dd8204a254a]] */
+    	return stringLiteral.replaceAll("/", "_");   
+      /* End Protected Region   [[16eee400-4879-11ec-b3cc-9dd8204a254a]] */
+    }
+
+    @Override
+    public java.lang.String replaceParenthesesToUnderscore(final java.lang.String stringLiteral) {
+      /* Begin Protected Region [[59ce2e08-4884-11ec-b3cc-9dd8204a254a]] */
+        return stringLiteral.replaceAll("(", "_").replaceAll(")", "_");
+      /* End Protected Region   [[59ce2e08-4884-11ec-b3cc-9dd8204a254a]] */
+    }
+
   }
   
   public static class StringLiteralFunctions {
@@ -70,6 +109,18 @@ public class FunctionSpace_String {
 
     public static java.lang.String convertDotToSlash(final java.lang.String stringLiteral) {
       return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).convertDotToSlash(stringLiteral);
+    }
+
+    public static java.lang.String replaceDashToUnderscore(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replaceDashToUnderscore(stringLiteral);
+    }
+
+    public static java.lang.String replaceSlashToUnderscore(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replaceSlashToUnderscore(stringLiteral);
+    }
+
+    public static java.lang.String replaceParenthesesToUnderscore(final java.lang.String stringLiteral) {
+      return DynamicResourceUtil.invoke(IStringLiteralFunctionsImpl.class, StringLiteralFunctionsImpl.INSTANCE, stringLiteral).replaceParenthesesToUnderscore(stringLiteral);
     }
 
   }
@@ -128,4 +179,4 @@ public class FunctionSpace_String {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,kCLIg8oRvY0AAB+/ZDKoMpPc4Co=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7548ad35-0d5f-11e6-9f44-9d0000bae4df,sTBcYPyVzIIku0WewyIMAPbZsL0=] */

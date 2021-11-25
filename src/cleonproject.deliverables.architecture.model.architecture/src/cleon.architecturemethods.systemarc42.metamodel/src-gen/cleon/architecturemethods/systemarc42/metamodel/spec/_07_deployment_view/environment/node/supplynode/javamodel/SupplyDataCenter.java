@@ -4,28 +4,28 @@ import ch.actifsource.util.collection.IMultiMapOrdered;
 import ch.actifsource.core.dynamic.*;
 
 @edu.umd.cs.findbugs.annotations.SuppressWarnings("EQ_DOESNT_OVERRIDE_EQUALS")
-public class SupplyLocationNode extends DynamicResource implements ISupplyLocationNode {
+public class SupplyDataCenter extends DynamicResource implements ISupplyDataCenter {
 
-  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISupplyLocationNode> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISupplyLocationNode>() {
+  public static final ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISupplyDataCenter> FACTORY = new ch.actifsource.core.dynamic.IDynamicResource.IFactory<ISupplyDataCenter>() {
     
     @Override
-    public ISupplyLocationNode create() {
-      return new SupplyLocationNode();
+    public ISupplyDataCenter create() {
+      return new SupplyDataCenter();
     }
     
     @Override
-    public ISupplyLocationNode create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-      return new SupplyLocationNode(resourceRepository, resource);
+    public ISupplyDataCenter create(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+      return new SupplyDataCenter(resourceRepository, resource);
     }
   
   };
 
-  public SupplyLocationNode() {
-    super(ISupplyLocationNode.TYPE_ID);
+  public SupplyDataCenter() {
+    super(ISupplyDataCenter.TYPE_ID);
   }
   
-  public SupplyLocationNode(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
-    super(resourceRepository, resource, ISupplyLocationNode.TYPE_ID);
+  public SupplyDataCenter(IDynamicResourceRepository resourceRepository, ch.actifsource.core.Resource resource) {
+    super(resourceRepository, resource, ISupplyDataCenter.TYPE_ID);
   }
 
   // attributes
@@ -55,7 +55,7 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.RootNode_buildNodes);
   }
 
-  public SupplyLocationNode setBuildNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodes) {
+  public SupplyDataCenter setBuildNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> buildNodes) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.RootNode_buildNodes, buildNodes);
     return this;
   }
@@ -65,7 +65,7 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.Node_nodes);
   }
 
-  public SupplyLocationNode setNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodes) {
+  public SupplyDataCenter setNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodes) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.Node_nodes, nodes);
     return this;
   }
@@ -75,7 +75,7 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
     return _getList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode.class, cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes);
   }
 
-  public SupplyLocationNode setSuppliedNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode> suppliedNodes) {
+  public SupplyDataCenter setSuppliedNodes(java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyNode> suppliedNodes) {
     _setList(cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.NodePackage.SupplyAndBuildNodeDecomposite_suppliedNodes, suppliedNodes);
     return this;
   }
@@ -85,7 +85,7 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
 
-  public SupplyLocationNode setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
+  public SupplyDataCenter setTypeOf(ch.actifsource.core.javamodel.IClass typeOf) {
     _setSingle(ch.actifsource.core.CorePackage.Resource_typeOf, typeOf);
     return this;
   }
@@ -103,4 +103,4 @@ public class SupplyLocationNode extends DynamicResource implements ISupplyLocati
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,ZcHqzLY27lpE6CftPDEqXUZwTTw=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,e265052b-0aaa-11e9-8a91-633e556ac68f,gtEaXtZpzX3zvch3t1Hblp0IQbg=] */

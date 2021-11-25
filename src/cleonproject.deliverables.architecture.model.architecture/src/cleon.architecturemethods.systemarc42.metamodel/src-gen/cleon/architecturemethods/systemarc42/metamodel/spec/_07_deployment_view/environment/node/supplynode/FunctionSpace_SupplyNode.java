@@ -18,31 +18,31 @@ public class FunctionSpace_SupplyNode {
   /* End Protected Region   [[7d0236d1-0b7f-11e9-a136-69d076e48ed1]] */
 
 
-  public static interface ISupplyLocationNodeFunctions extends IDynamicResourceExtension {
+  public static interface ISupplyDataCenterFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("34593e54-0aab-11e9-8a91-633e556ac68f")
     public java.lang.String GetStereotypeName();
 
     @IDynamicResourceExtension.MethodId("1f972920-2ab8-11e9-a3f8-336d9e792e17")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyLocationNode GetLocationNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyDataCenter GetLocationNode();
 
   }
   
-  public static interface ISupplyLocationNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface ISupplyDataCenterFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SupplyLocationNodeFunctionsImpl implements ISupplyLocationNodeFunctionsImpl {
+  public static class SupplyDataCenterFunctionsImpl implements ISupplyDataCenterFunctionsImpl {
 
-    public static final ISupplyLocationNodeFunctionsImpl INSTANCE = new SupplyLocationNodeFunctionsImpl();
+    public static final ISupplyDataCenterFunctionsImpl INSTANCE = new SupplyDataCenterFunctionsImpl();
 
-    private SupplyLocationNodeFunctionsImpl() {}
+    private SupplyDataCenterFunctionsImpl() {}
 
   }
   
-  public static class SupplyLocationNodeFunctions {
+  public static class SupplyDataCenterFunctions {
 
-    private SupplyLocationNodeFunctions() {}
+    private SupplyDataCenterFunctions() {}
 
   }
 
@@ -119,4 +119,4 @@ public class FunctionSpace_SupplyNode {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,G8zc9hirisd/0RMJoZxIFeoDJa4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,7d0236d1-0b7f-11e9-a136-69d076e48ed1,B+bJw+dhObwe/uQS5tVbpBOzVdY=] */

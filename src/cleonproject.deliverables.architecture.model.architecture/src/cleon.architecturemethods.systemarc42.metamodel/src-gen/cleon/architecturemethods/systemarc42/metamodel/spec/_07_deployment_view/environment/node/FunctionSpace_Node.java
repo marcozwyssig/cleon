@@ -30,7 +30,7 @@ public class FunctionSpace_Node {
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplySiteNode GetSubnetNode();
 
     @IDynamicResourceExtension.MethodId("bef20cb3-0e2a-11e9-8b4c-f9aec93d8b56")
-    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyLocationNode GetLocationNode();
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.supplynode.javamodel.ISupplyDataCenter GetLocationNode();
 
     @IDynamicResourceExtension.MethodId("985b3d0d-c943-11eb-adc4-d18d1353eb6e")
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode GetEnvironment();
@@ -99,4 +99,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,bBgiG85ScgO2byybtqe2Drg8pQg=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,+LVuT68LGm5dS30A8srjidbKpCA=] */

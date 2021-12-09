@@ -436,7 +436,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IBuildingBlockRequirementCoverageFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b4d-2516-11ec-beea-a9d94a6f89e0")
-    public java.lang.String RenderCoverageName();
+    public java.lang.String _RenderCoverageName();
 
   }
   
@@ -461,7 +461,7 @@ public class FunctionSpace_Asciidoc_arc42 {
   public static interface IMonitorViewFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("5cdb0b62-2516-11ec-beea-a9d94a6f89e0")
-    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> ChapterOrder();
+    public List<cleon.common.doc.metamodel.spec.chapter.javamodel.IAbstractChapter> _ChapterOrder();
 
   }
   
@@ -660,4 +660,4 @@ public class FunctionSpace_Asciidoc_arc42 {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,bXt+Ip7jl4tfk6m70VTl9hBQiHE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,65a357a1-2663-11e6-ae54-e50d44645ae7,u1H3wOaCgvqEgiR6W2xlA64KrNk=] */

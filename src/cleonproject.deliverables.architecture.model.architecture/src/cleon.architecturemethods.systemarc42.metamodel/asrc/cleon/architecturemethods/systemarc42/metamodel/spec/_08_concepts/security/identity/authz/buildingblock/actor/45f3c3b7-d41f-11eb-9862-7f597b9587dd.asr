@@ -45,9 +45,9 @@
   <owns predicate="3d47d3fe-f91f-11d9-bb45-5fabdff7c7da">
     <resource statement-guid="45f3c3f5-d41f-11eb-9862-7f597b9587dd" type="resource" guid="45f3c3c5-d41f-11eb-9862-7f597b9587dd">
       <owns predicate="30d7e413-b46f-11e1-8107-93c930a749c9">
-        <resource statement-guid="45f3c3f4-d41f-11eb-9862-7f597b9587dd" type="resource" guid="45f3c3c4-d41f-11eb-9862-7f597b9587dd">
+        <resource statement-guid="b2b46b55-598a-11ec-91c7-e7f8ed6b3d5a" type="resource" guid="b2b30bc2-598a-11ec-91c7-e7f8ed6b3d5a">
           <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
-            <resource statement-guid="45f3c3f3-d41f-11eb-9862-7f597b9587dd" type="resource" guid="45f3c3c3-d41f-11eb-9862-7f597b9587dd" />
+            <resource statement-guid="b2ba37bf-598a-11ec-91c7-e7f8ed6b3d5a" type="resource" guid="b2b9e99b-598a-11ec-91c7-e7f8ed6b3d5a" />
           </owns>
         </resource>
       </owns>
@@ -207,19 +207,19 @@
           <object statement-guid="45f3c3ef-d41f-11eb-9862-7f597b9587dd" type="resource" guid="f5afad00-b194-11dd-8a37-9b18e60a31e1" />
         </predicate>
         <predicate guid="30d7e413-b46f-11e1-8107-93c930a749c9">
-          <object statement-guid="45f3c3f4-d41f-11eb-9862-7f597b9587dd">
-            <resource guid="45f3c3c4-d41f-11eb-9862-7f597b9587dd">
+          <object statement-guid="b2b46b55-598a-11ec-91c7-e7f8ed6b3d5a">
+            <resource guid="b2b30bc2-598a-11ec-91c7-e7f8ed6b3d5a">
               <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                <object statement-guid="45f3c3f0-d41f-11eb-9862-7f597b9587dd" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+                <object statement-guid="b2b380f4-598a-11ec-91c7-e7f8ed6b3d5a" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
               </predicate>
               <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
-                <object statement-guid="45f3c3f3-d41f-11eb-9862-7f597b9587dd">
-                  <resource guid="45f3c3c3-d41f-11eb-9862-7f597b9587dd">
+                <object statement-guid="b2ba37bf-598a-11ec-91c7-e7f8ed6b3d5a">
+                  <resource guid="b2b9e99b-598a-11ec-91c7-e7f8ed6b3d5a">
                     <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
-                      <object statement-guid="45f3c3f1-d41f-11eb-9862-7f597b9587dd" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                      <object statement-guid="b2b9e99d-598a-11ec-91c7-e7f8ed6b3d5a" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
                     </predicate>
                     <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
-                      <object statement-guid="45f3c3f2-d41f-11eb-9862-7f597b9587dd" type="literal">Aktoren</object>
+                      <object statement-guid="b2ba10ae-598a-11ec-91c7-e7f8ed6b3d5a" type="literal">Rollenvorlagen</object>
                     </predicate>
                   </resource>
                 </object>

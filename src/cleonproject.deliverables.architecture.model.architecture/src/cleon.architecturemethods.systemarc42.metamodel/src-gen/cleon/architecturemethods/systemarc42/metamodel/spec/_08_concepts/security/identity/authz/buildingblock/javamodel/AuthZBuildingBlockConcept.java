@@ -125,13 +125,13 @@ public class AuthZBuildingBlockConcept extends DynamicResource implements IAuthZ
 
   // toMeRelations
   
-  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectToMeAuthZBuildingBlockActivity(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockActivity object) {
-    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.BuildingblockPackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, object.getResource());
-  }
-  
   public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectToMeAuthZBuildingBlockActor(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.actor.javamodel.IAuthZBuildingBlockActor object) {
     return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.BuildingblockPackage.AuthZBuildingBlockConcept_authZBuildingBlockActor, object.getResource());
   }
   
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept selectToMeAuthZBuildingBlockActivity(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAuthZBuildingBlockActivity object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.javamodel.IAuthZBuildingBlockConcept.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.BuildingblockPackage.AuthZBuildingBlockConcept_authZBuildingBlockActivity, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,/0morWBbWVSudGYp45mmTpFGDpQ=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,4b83a3b8-032a-11eb-af88-136a9a3b3817,Tb+0/412VBrB1Sv01gVMHkOJUvA=] */

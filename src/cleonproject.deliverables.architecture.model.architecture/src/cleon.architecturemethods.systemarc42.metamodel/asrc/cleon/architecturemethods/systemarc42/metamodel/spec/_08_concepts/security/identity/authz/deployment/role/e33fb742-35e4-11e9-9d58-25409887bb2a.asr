@@ -147,6 +147,7 @@
         <resource statement-guid="42de6c70-de68-11eb-b028-df36f0dc7b24" type="resource" guid="42de1e4c-de68-11eb-b028-df36f0dc7b24" />
       </owns>
     </resource>
+    <resource statement-guid="9d95e812-5c32-11ec-b9b7-7151a7913332" type="resource" guid="9d9599ee-5c32-11ec-b9b7-7151a7913332" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="e33fb744-35e4-11e9-9d58-25409887bb2a" type="resource" guid="2576b879-f91f-11d9-bb45-5fabdff7c7da" />
@@ -678,6 +679,19 @@
               </predicate>
             </resource>
           </object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="9d95e812-5c32-11ec-b9b7-7151a7913332">
+      <resource guid="9d9599ee-5c32-11ec-b9b7-7151a7913332">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9d95c100-5c32-11ec-b9b7-7151a7913332" type="resource" guid="360ec494-f91f-11d9-bb45-5fabdff7c7da" />
+        </predicate>
+        <predicate guid="3c0568eb-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="af689677-5c32-11ec-b9b7-7151a7913332" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.deployment.role.javamodel.RoleSystemComponentConsistentExcludeActivities</object>
+        </predicate>
+        <predicate guid="3c91f17c-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="9d95e811-5c32-11ec-b9b7-7151a7913332" type="resource" guid="96b3624d-22f2-11db-b87d-39b85b0bccf3" />
         </predicate>
       </resource>
     </object>

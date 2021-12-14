@@ -267,28 +267,28 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
   }
 
-  public static interface ISingleSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
+  public static interface INodeSensorMonitoringBuildingBlockFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("54b81738-e069-11ea-bb83-59933a3fa779")
     public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IMonitoringBuildingBlock Parent();
 
   }
   
-  public static interface ISingleSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface INodeSensorMonitoringBuildingBlockFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class SingleSensorMonitoringBuildingBlockFunctionsImpl implements ISingleSensorMonitoringBuildingBlockFunctionsImpl {
+  public static class NodeSensorMonitoringBuildingBlockFunctionsImpl implements INodeSensorMonitoringBuildingBlockFunctionsImpl {
 
-    public static final ISingleSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new SingleSensorMonitoringBuildingBlockFunctionsImpl();
+    public static final INodeSensorMonitoringBuildingBlockFunctionsImpl INSTANCE = new NodeSensorMonitoringBuildingBlockFunctionsImpl();
 
-    private SingleSensorMonitoringBuildingBlockFunctionsImpl() {}
+    private NodeSensorMonitoringBuildingBlockFunctionsImpl() {}
 
   }
   
-  public static class SingleSensorMonitoringBuildingBlockFunctions {
+  public static class NodeSensorMonitoringBuildingBlockFunctions {
 
-    private SingleSensorMonitoringBuildingBlockFunctions() {}
+    private NodeSensorMonitoringBuildingBlockFunctions() {}
 
   }
 
@@ -394,4 +394,4 @@ public class FunctionSpace_Monitoring_Building_Blocks {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,M5Jufl809LvzzSCbK4F0QPB7aLI=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2825a27d-c1f3-11ea-820f-9931558a898c,AHPVoAadgRoEggHufSUhMVFdjhw=] */

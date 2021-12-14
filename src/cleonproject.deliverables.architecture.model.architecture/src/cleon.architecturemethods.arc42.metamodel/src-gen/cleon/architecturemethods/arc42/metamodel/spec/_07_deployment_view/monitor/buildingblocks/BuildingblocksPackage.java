@@ -17,13 +17,13 @@ public class BuildingblocksPackage {
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_exe = new Resource("9240efae-dc8d-11ea-a169-cb4c6ff66798");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_restcustom = new Resource("9240eff3-dc8d-11ea-a169-cb4c6ff66798");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_http = new Resource("8abb2f85-dca1-11ea-b5f8-77c3980a1d0a");
-  public static final Resource SingleSensorMonitoringBuildingBlock = new Resource("df9a2045-e065-11ea-bb83-59933a3fa779");
+  public static final Resource NodeSensorMonitoringBuildingBlock = new Resource("df9a2045-e065-11ea-bb83-59933a3fa779");
   public static final Resource AbstractSensorMonitoringBuildingBlock = new Resource("8ef70288-e066-11ea-bb83-59933a3fa779");
   public static final Resource ClusterSensorMonitoringBuildingBlock = new Resource("c03312b6-e066-11ea-bb83-59933a3fa779");
   public static final Resource MonitoringBuildingBlock_cluster = new Resource("dc9a582d-e066-11ea-bb83-59933a3fa779");
-  public static final Resource MonitoringBuildingBlock_single = new Resource("23c68f00-e067-11ea-bb83-59933a3fa779");
+  public static final Resource MonitoringBuildingBlock_node = new Resource("23c68f00-e067-11ea-bb83-59933a3fa779");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_AbstractSensorMonitoringBuildingBlock = new Resource("b52c4811-e068-11ea-bb83-59933a3fa779");
-  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_SingleSensorMonitoringBuildingBlock = new Resource("500bcd33-e069-11ea-bb83-59933a3fa779");
+  public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_NodeSensorMonitoringBuildingBlock = new Resource("500bcd33-e069-11ea-bb83-59933a3fa779");
   public static final Resource FunctionSpace_aE_Monitoring_aE_Building_aE_Blocks_ClusterSensorMonitoringBuildingBlock = new Resource("5cbbf0dc-e069-11ea-bb83-59933a3fa779");
   public static final Resource AbstractMonitoringBuildingBlock = new Resource("857f546b-088c-11eb-a7cb-ffd76bc14ff3");
   public static final Resource MonitoringCompositeBuildingBlock = new Resource("ccef247f-088c-11eb-a7cb-ffd76bc14ff3");
@@ -52,4 +52,4 @@ public class BuildingblocksPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,jsYbSz/ue5aAnnD02TGZS9/rNbM=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks,oSx9plylvv+fG7uGgkHvNmSBEzQ=] */

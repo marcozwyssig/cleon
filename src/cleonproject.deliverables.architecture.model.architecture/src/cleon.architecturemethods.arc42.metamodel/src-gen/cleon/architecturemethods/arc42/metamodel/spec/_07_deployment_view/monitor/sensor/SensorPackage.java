@@ -296,6 +296,7 @@ public class SensorPackage {
   public static final Resource snmpcustomstring_oid = new Resource("f351badd-0c96-11ec-a707-cfc3a993d4d5");
   public static final Resource snmpcustomstring_includeMust = new Resource("f9bcf2f8-0c96-11ec-a707-cfc3a993d4d5");
   public static final Resource snmpcustomstring_includeMustType = new Resource("0b13bb23-0c97-11ec-a707-cfc3a993d4d5");
+  public static final Resource snmpdiskfree_disks = new Resource("a14ba12c-5cca-11ec-b9b7-7151a7913332");
   
   /* Begin Protected Region [[user]] */
   
@@ -316,4 +317,4 @@ public class SensorPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,i6YcSR0xM2yTjuivHEepHat8LLo=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.sensor,Lvx35g6TOLSR6h1exQTJMlMWOh8=] */

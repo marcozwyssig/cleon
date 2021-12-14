@@ -8,10 +8,10 @@ public interface IMonitoringBuildingBlock extends cleon.common.doc.metamodel.spe
   
   // relations
   
-  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.ISingleSensorMonitoringBuildingBlock selectSingle();
+  public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.INodeSensorMonitoringBuildingBlock selectNode();
   
   public cleon.architecturemethods.arc42.metamodel.spec._07_deployment_view.monitor.buildingblocks.javamodel.IClusterSensorMonitoringBuildingBlock selectCluster();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,K4rv2qFjL/RO1LNT0fyuWi3Q92I=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9fb78914-8fdd-11e8-85d9-314ddfdf57eb,yGqcK53kWg5ibxqnzNQeVaJ4lPc=] */

@@ -45,8 +45,5 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.publishing.collaboration.metamodel.builtin;bundle-version="0.4.149",
  cleon.publishing.staticwebsite.metamodel.builtin;bundle-version="0.4.149",
  cleon.testingmethods.hermes.metamodel.builtin;bundle-version="0.4.149"
-Export-Package: cleonproject.deliverables.architecture.model.architecture,
- cleonproject.deliverables.architecture.model.architecture.spec,
- cleonproject.deliverables.architecture.model.architecture.spec.javamodel,
- cleonproject.deliverables.architecture.model.architecture.javamodel
+Export-Package: cleonproject.deliverables.architecture.model.architecture
 

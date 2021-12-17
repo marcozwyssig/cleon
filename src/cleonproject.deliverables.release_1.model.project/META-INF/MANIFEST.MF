@@ -20,8 +20,5 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.common.resources.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
-Export-Package: cleonproject.deliverables.release_1.model.project,
- cleonproject.deliverables.release_1.model.project.spec,
- cleonproject.deliverables.release_1.model.project.spec.javamodel,
- cleonproject.deliverables.release_1.model.project.javamodel
-
+Export-Package: cleonproject.deliverables.release_1.model.project
+Automatic-Module-Name: cleonproject.deliverables.release.1.model.project.builtin

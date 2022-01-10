@@ -12,7 +12,7 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
   public java.lang.String selectAlias();
   
-  public java.lang.Boolean selectIsVirtual();
+  public java.lang.Boolean selectIsVirtualized();
   
   // relations
   
@@ -20,4 +20,4 @@ public interface IAbstractHost extends ch.actifsource.core.javamodel.IDecorator,
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,3IToi8/SjcJdYq2YyP2+cTy9BnY=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,c6ffaf13-6da4-11e9-8af5-2346ca56c2e2,D6W6mjV2ZfukbT2GNfQSsKRv+E8=] */

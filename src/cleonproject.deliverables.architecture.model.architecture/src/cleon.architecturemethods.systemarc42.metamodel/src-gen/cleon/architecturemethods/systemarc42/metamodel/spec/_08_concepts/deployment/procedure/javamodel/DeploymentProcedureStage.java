@@ -60,6 +60,16 @@ public class DeploymentProcedureStage extends DynamicResource implements IDeploy
   // relations
   
   @Override
+  public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedurePhaseUsageCount> selectPhaseUsageCountExceptions() {
+    return _getMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedurePhaseUsageCount.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.ProcedurePackage.DeploymentProcedureStage_phaseUsageCountExceptions);
+  }
+
+  public DeploymentProcedureStage setPhaseUsageCountExceptions(java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedurePhaseUsageCount> phaseUsageCountExceptions) {
+    _setMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.ProcedurePackage.DeploymentProcedureStage_phaseUsageCountExceptions, phaseUsageCountExceptions);
+    return this;
+  }
+    
+  @Override
   public ch.actifsource.core.javamodel.IClass selectTypeOf() {
     return _getSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf);
   }
@@ -76,8 +86,15 @@ public class DeploymentProcedureStage extends DynamicResource implements IDeploy
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
     // relations
+    _acceptMap(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedurePhaseUsageCount.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.ProcedurePackage.DeploymentProcedureStage_phaseUsageCountExceptions, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
+  // toMeRelations
+  
+  public static cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureStage selectToMePhaseUsageCountExceptions(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedurePhaseUsageCount object) {
+    return _getToMeSingle(object.getRepository(), cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureStage.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.ProcedurePackage.DeploymentProcedureStage_phaseUsageCountExceptions, object.getResource());
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5886b9d2-7e84-11ec-b55c-f5ca121c82b7,GiGB4ley9X/BjvuvfV5hhq2xlNY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,5886b9d2-7e84-11ec-b55c-f5ca121c82b7,fc09IOQFxcF4X7N61O1gU0uXmpw=] */

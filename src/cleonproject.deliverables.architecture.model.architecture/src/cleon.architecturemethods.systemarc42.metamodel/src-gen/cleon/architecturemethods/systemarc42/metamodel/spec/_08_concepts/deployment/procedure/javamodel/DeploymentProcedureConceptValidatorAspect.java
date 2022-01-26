@@ -43,7 +43,7 @@ public class DeploymentProcedureConceptValidatorAspect implements IResourceValid
 				}
 
 				int valueToCheck = 1;
-				final var usageValue = deploymentProcedureConcept.selectPhaseUsageCountExceptions().getOrDefault(sysCfg.getResource(), null);
+				final var usageValue = stage.selectPhaseUsageCountExceptions().getOrDefault(sysCfg.getResource(), null);
 				if( usageValue != null ) {
 					valueToCheck = usageValue.selectCount();
 				}

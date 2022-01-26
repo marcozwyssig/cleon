@@ -12,6 +12,7 @@ public class NodePackage {
   public static final Resource Node = new Resource("4a67ced9-02d4-11e9-9e58-33d596257b14");
   public static final Resource Node_nodes = new Resource("5598a470-02d4-11e9-9e58-33d596257b14");
   public static final Resource RootNode = new Resource("a632f40c-02d4-11e9-9e58-33d596257b14");
+  public static final Resource FunctionSpace_aE_Node_SystemEnvironmentNode = new Resource("d30654b2-7ddb-11ec-be69-ab0911f63a77");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +33,4 @@ public class NodePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node,ztHmWVWQEhcTuN1nONbXnBKnxV0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node,PSsrfoGjEjoWh9XqJQgY7O760eE=] */

@@ -97,6 +97,31 @@ public class FunctionSpace_Node {
 
   }
 
+  public static interface ISystemEnvironmentNodeFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("d8ba71df-7ddb-11ec-be69-ab0911f63a77")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode GetEnvironment();
+
+  }
+  
+  public static interface ISystemEnvironmentNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class SystemEnvironmentNodeFunctionsImpl implements ISystemEnvironmentNodeFunctionsImpl {
+
+    public static final ISystemEnvironmentNodeFunctionsImpl INSTANCE = new SystemEnvironmentNodeFunctionsImpl();
+
+    private SystemEnvironmentNodeFunctionsImpl() {}
+
+  }
+  
+  public static class SystemEnvironmentNodeFunctions {
+
+    private SystemEnvironmentNodeFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,+LVuT68LGm5dS30A8srjidbKpCA=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,ydbbiJxDojcDrumVv6UnJRGBtb8=] */

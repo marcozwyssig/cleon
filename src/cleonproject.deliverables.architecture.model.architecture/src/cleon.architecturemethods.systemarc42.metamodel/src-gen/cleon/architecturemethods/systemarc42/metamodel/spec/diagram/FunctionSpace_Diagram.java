@@ -23,6 +23,9 @@ public class FunctionSpace_Diagram {
     @IDynamicResourceExtension.MethodId("df45ac56-854e-11ea-9f0c-755186b47bc2")
     public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.IDeploymentLevel Level();
 
+    @IDynamicResourceExtension.MethodId("5bee3445-7ddb-11ec-be69-ab0911f63a77")
+    public cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.javamodel.ISystemEnvironmentNode Environment();
+
   }
   
   public static interface IDeploymentDiagramFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -45,4 +48,4 @@ public class FunctionSpace_Diagram {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c6475c2d-854e-11ea-9f0c-755186b47bc2,OcKPIsMUlWUZ27n2hKxuKlcX1Vc=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,c6475c2d-854e-11ea-9f0c-755186b47bc2,KN0Gjju4He+xNOrrsKuA3ap+MUk=] */

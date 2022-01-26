@@ -18,31 +18,62 @@ public class FunctionSpace_Procedure {
   /* End Protected Region   [[74519eba-7e8c-11ec-b55c-f5ca121c82b7]] */
 
 
-  public static interface IDeploymentOrderFunctions extends IDynamicResourceExtension {
+  public static interface IDeploymentProcedureOrderFunctions extends IDynamicResourceExtension {
 
     @IDynamicResourceExtension.MethodId("7fc857d3-7e8c-11ec-b55c-f5ca121c82b7")
     public java.lang.String SimpleName();
 
+    @IDynamicResourceExtension.MethodId("719748ac-7eab-11ec-b55c-f5ca121c82b7")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyBuildSystemConfigurationsForInstallation();
+
   }
   
-  public static interface IDeploymentOrderFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+  public static interface IDeploymentProcedureOrderFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
   }
   
-  public static class DeploymentOrderFunctionsImpl implements IDeploymentOrderFunctionsImpl {
+  public static class DeploymentProcedureOrderFunctionsImpl implements IDeploymentProcedureOrderFunctionsImpl {
 
-    public static final IDeploymentOrderFunctionsImpl INSTANCE = new DeploymentOrderFunctionsImpl();
+    public static final IDeploymentProcedureOrderFunctionsImpl INSTANCE = new DeploymentProcedureOrderFunctionsImpl();
 
-    private DeploymentOrderFunctionsImpl() {}
+    private DeploymentProcedureOrderFunctionsImpl() {}
 
   }
   
-  public static class DeploymentOrderFunctions {
+  public static class DeploymentProcedureOrderFunctions {
 
-    private DeploymentOrderFunctions() {}
+    private DeploymentProcedureOrderFunctions() {}
+
+  }
+
+  public static interface IDeploymentProcedureConceptFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("a6ea8f7e-7eab-11ec-b55c-f5ca121c82b7")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> AllBuildSystemConfigurations();
+
+    @IDynamicResourceExtension.MethodId("fd2ea921-7eb0-11ec-b55c-f5ca121c82b7")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> OnlyBuildSystemConfigurationsForInstallation();
+
+  }
+  
+  public static interface IDeploymentProcedureConceptFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class DeploymentProcedureConceptFunctionsImpl implements IDeploymentProcedureConceptFunctionsImpl {
+
+    public static final IDeploymentProcedureConceptFunctionsImpl INSTANCE = new DeploymentProcedureConceptFunctionsImpl();
+
+    private DeploymentProcedureConceptFunctionsImpl() {}
+
+  }
+  
+  public static class DeploymentProcedureConceptFunctions {
+
+    private DeploymentProcedureConceptFunctions() {}
 
   }
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,74519eba-7e8c-11ec-b55c-f5ca121c82b7,5OdJ5f9m2tfZcjDYh8aXdAhlMz4=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,74519eba-7e8c-11ec-b55c-f5ca121c82b7,YBEIUz6ExpAVTo9lYgbaJ59f1M8=] */

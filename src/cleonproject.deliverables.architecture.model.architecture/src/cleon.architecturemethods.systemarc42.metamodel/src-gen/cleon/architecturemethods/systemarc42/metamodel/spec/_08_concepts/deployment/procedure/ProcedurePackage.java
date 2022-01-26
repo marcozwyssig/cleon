@@ -8,10 +8,16 @@ public class ProcedurePackage {
   public static final Resource DeploymentProcedureConcept_deploymentStages = new Resource("160aafe6-7e82-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureConcept_deploymentOrder = new Resource("160aaff0-7e82-11ec-b55c-f5ca121c82b7");
   public static final Resource DeploymentProcedureStage = new Resource("5886b9d2-7e84-11ec-b55c-f5ca121c82b7");
-  public static final Resource DeploymentOrder = new Resource("4ed2390c-7e86-11ec-b55c-f5ca121c82b7");
-  public static final Resource DeploymentOrder_stage = new Resource("4ed2390d-7e86-11ec-b55c-f5ca121c82b7");
-  public static final Resource DeploymentOrder_afftectedCmp = new Resource("f20fc8ac-7e8a-11ec-b55c-f5ca121c82b7");
-  public static final Resource FunctionSpace_aE_Procedure_DeploymentOrder = new Resource("7b1fb74e-7e8c-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureOrder = new Resource("4ed2390c-7e86-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureOrder_stages = new Resource("4ed2390d-7e86-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureOrder_afftectedCmp = new Resource("f20fc8ac-7e8a-11ec-b55c-f5ca121c82b7");
+  public static final Resource FunctionSpace_aE_Procedure_DeploymentProcedureOrder = new Resource("7b1fb74e-7e8c-11ec-b55c-f5ca121c82b7");
+  public static final Resource FunctionSpace_aE_Procedure_DeploymentProcedureConcept = new Resource("99a138f1-7eab-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureConcept_excludeInInstallationOrder = new Resource("ce6aeb07-7eb0-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedureConcept_phaseUsageCountExceptions = new Resource("8e97d7b8-7ebc-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedurePhaseUsageCount = new Resource("b6c9ea70-7ebc-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedurePhaseUsageCount_count = new Resource("cb56af94-7ebc-11ec-b55c-f5ca121c82b7");
+  public static final Resource DeploymentProcedurePhaseUsageCount_usageCountFor = new Resource("f9f5327b-7ebc-11ec-b55c-f5ca121c82b7");
   
   /* Begin Protected Region [[user]] */
   
@@ -32,4 +38,4 @@ public class ProcedurePackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,j1vJYX//XSTeIJ1CHN3wxNdEbS0=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,nqjULIMOot+slDGT1K5Yu8gV1uA=] */

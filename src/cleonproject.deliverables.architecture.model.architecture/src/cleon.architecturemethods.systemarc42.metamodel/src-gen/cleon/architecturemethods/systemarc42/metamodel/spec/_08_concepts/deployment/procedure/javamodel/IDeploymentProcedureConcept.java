@@ -12,8 +12,8 @@ public interface IDeploymentProcedureConcept extends cleon.common.doc.metamodel.
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureOrder> selectDeploymentOrder();
   
-  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration> selectExcludeInInstallationOrder();
+  public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel.IDeploymentProcedureExclude> selectExcludeInInstallationOrder();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,160aafe5-7e82-11ec-b55c-f5ca121c82b7,pAmFIgPfV0wrc9DJ2/ccKxaXKGI=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,160aafe5-7e82-11ec-b55c-f5ca121c82b7,aE+SLblTIaULJCqlyOBbmxLt1Ds=] */

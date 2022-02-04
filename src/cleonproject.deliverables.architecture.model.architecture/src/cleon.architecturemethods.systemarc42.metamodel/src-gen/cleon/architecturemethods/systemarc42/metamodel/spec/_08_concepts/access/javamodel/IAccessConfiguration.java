@@ -12,6 +12,8 @@ public interface IAccessConfiguration extends ch.actifsource.core.javamodel.IDec
   
   public java.util.Map<ch.actifsource.core.Resource, ? extends cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IAccessConfigurationService> selectAccessByService();
   
+  public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.access.javamodel.IPurpose selectPurpose();
+  
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,QgIIcXYwfAYK2Ir5GAwLbQB7+04=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,db632dc0-1ea1-11eb-9eef-0dadb2b460da,iAF8di/ODgigZDmujKQhrLJjhUM=] */

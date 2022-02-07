@@ -31,12 +31,12 @@ public class Disk extends DynamicResource implements IDisk {
   // attributes
   
   @Override
-  public java.lang.Double selectSize() {
-    return _getSingleAttribute(java.lang.Double.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_size);
+  public java.lang.Double selectCapacityGB() {
+    return _getSingleAttribute(java.lang.Double.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_capacityGB);
   }
     
-  public void setSize(java.lang.Double size) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_size, size);
+  public void setCapacityGB(java.lang.Double capacityGB) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_capacityGB, capacityGB);
   }
 
   // relations
@@ -65,7 +65,7 @@ public class Disk extends DynamicResource implements IDisk {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Double.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_size, visitor);
+    _acceptSingleAttribute(java.lang.Double.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_capacityGB, visitor);
     // relations
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IDiskType.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Disk_diskType, visitor);
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
@@ -76,4 +76,4 @@ public class Disk extends DynamicResource implements IDisk {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c32029e-2b00-11e9-9692-65766bc2daa5,IbYQ0YfK8qUjqbsHb5QaPVpjt+c=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,2c32029e-2b00-11e9-9692-65766bc2daa5,NASa/vygkO/DnSj4slRVyBKFpBg=] */

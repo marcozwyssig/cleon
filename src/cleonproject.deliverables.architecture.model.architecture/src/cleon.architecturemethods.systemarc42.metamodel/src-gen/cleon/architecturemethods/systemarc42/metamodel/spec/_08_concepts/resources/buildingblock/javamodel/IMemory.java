@@ -8,8 +8,8 @@ public interface IMemory extends ch.actifsource.core.javamodel.IResource {
   
   // attributes
   
-  public java.lang.Integer selectSize();
+  public java.lang.Integer selectSizeGB();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,46fa8bd7-2b00-11e9-9692-65766bc2daa5,IsvONdjnHqIJb1/V4dGRc31UxW4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,46fa8bd7-2b00-11e9-9692-65766bc2daa5,SR/DhflWDNZSXfNjEKtZhA8OS3g=] */

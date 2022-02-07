@@ -13,6 +13,9 @@ public class MachineconfigurationPackage {
   public static final Resource Disk_aE_Configuration = new Resource("2399830e-2b03-11e9-9692-65766bc2daa5");
   public static final Resource Disk_aE_Configuration_machineConfiguration = new Resource("2399aa1f-2b03-11e9-9692-65766bc2daa5");
   public static final Resource Disk_aE_Configuration_disk = new Resource("2399aa28-2b03-11e9-9692-65766bc2daa5");
+  public static final Resource FunctionSpace_aE_MachineConfiguration_CPU_aE_Configuration = new Resource("0a636d12-87f8-11ec-894d-7968efa38b99");
+  public static final Resource FunctionSpace_aE_MachineConfiguration_Memory_aE_Configuration = new Resource("4e926972-87f8-11ec-894d-7968efa38b99");
+  public static final Resource FunctionSpace_aE_MachineConfiguration_Disk_aE_Configuration = new Resource("e07a18d2-87f8-11ec-894d-7968efa38b99");
   
   /* Begin Protected Region [[user]] */
   
@@ -33,4 +36,4 @@ public class MachineconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.machineconfiguration,/mRbPvWaeEUgrM6axoonHFrbyVA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.machineconfiguration,8puR6anuZOzxinytgmolpctXcXc=] */

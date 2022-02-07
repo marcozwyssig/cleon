@@ -31,12 +31,12 @@ public class Memory extends DynamicResource implements IMemory {
   // attributes
   
   @Override
-  public java.lang.Integer selectSize() {
-    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_size);
+  public java.lang.Integer selectSizeGB() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_sizeGB);
   }
     
-  public void setSize(java.lang.Integer size) {
-     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_size, size);
+  public void setSizeGB(java.lang.Integer sizeGB) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_sizeGB, sizeGB);
   }
 
   // relations
@@ -55,10 +55,10 @@ public class Memory extends DynamicResource implements IMemory {
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
-    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_size, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.Memory_sizeGB, visitor);
     // relations
     _acceptSingle(ch.actifsource.core.javamodel.IClass.class, ch.actifsource.core.CorePackage.Resource_typeOf, visitor);
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46fa8bd7-2b00-11e9-9692-65766bc2daa5,rFeaDupQ2aA0bdsQ3pYFdXhIxjo=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,46fa8bd7-2b00-11e9-9692-65766bc2daa5,WGLcqy/M9ZC1bF+jDC8ZywDIiNA=] */

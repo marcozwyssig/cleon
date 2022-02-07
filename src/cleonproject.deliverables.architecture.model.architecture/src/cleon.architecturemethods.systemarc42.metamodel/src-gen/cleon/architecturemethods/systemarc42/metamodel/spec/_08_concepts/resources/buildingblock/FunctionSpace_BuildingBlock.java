@@ -100,7 +100,7 @@ public class FunctionSpace_BuildingBlock {
     @Override
     public java.lang.Integer NettoTotalGB(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IMemory memory) {
       /* Begin Protected Region [[3b73f8a6-e07a-11eb-85ea-9f2d155d4de3]] */
-    	Double memorSize = memory.selectSize() * 0.7;
+    	Double memorSize = memory.selectSizeGB() * 0.7;
     	return memorSize.intValue();
       /* End Protected Region   [[3b73f8a6-e07a-11eb-85ea-9f2d155d4de3]] */
     }
@@ -140,7 +140,7 @@ public class FunctionSpace_BuildingBlock {
     @Override
     public java.lang.Integer NettoTotalGB_60(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IDisk disk) {
       /* Begin Protected Region [[2d3a91d9-e084-11eb-85ea-9f2d155d4de3]] */
-    	Double diskSize = disk.selectSize() * 0.6;
+    	Double diskSize = disk.selectCapacityGB() * 0.6;
     	return diskSize.intValue();
       /* End Protected Region   [[2d3a91d9-e084-11eb-85ea-9f2d155d4de3]] */
     }

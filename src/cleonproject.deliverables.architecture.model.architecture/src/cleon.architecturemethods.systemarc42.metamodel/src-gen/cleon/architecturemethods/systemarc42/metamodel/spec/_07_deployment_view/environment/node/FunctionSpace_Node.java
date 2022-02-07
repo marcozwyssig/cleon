@@ -8,7 +8,11 @@ import ch.actifsource.core.dynamic.IDynamicResourceExtensionJavaImpl;
 import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* Begin Protected Region [[41a52ff4-0b73-11e9-a136-69d076e48ed1,imports]] */
+import cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.operatingsystem.javamodel.IHypervisorSystemConfiguration;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.virtualization.javamodel.IVirtualMachineSystemConfiguration;
 
+import java.util.stream.Collectors;
 /* End Protected Region   [[41a52ff4-0b73-11e9-a136-69d076e48ed1,imports]] */
 
 public class FunctionSpace_Node {
@@ -77,10 +81,22 @@ public class FunctionSpace_Node {
     @IDynamicResourceExtension.MethodId("c674c46c-cdc3-11eb-9255-4575b555e23e")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> GetNestedBuildNodes();
 
+    @IDynamicResourceExtension.MethodId("68da6b3e-87f3-11ec-894d-7968efa38b99")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents();
+
+    @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents();
+
   }
   
   public static interface INodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
+    @IDynamicResourceExtension.MethodId("68da6b3e-87f3-11ec-894d-7968efa38b99")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList);
+
+    @IDynamicResourceExtension.MethodId("fadb5261-87f4-11ec-894d-7968efa38b99")
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList);
+
   }
   
   public static class NodeFunctionsImpl implements INodeFunctionsImpl {
@@ -89,11 +105,41 @@ public class FunctionSpace_Node {
 
     private NodeFunctionsImpl() {}
 
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+      /* Begin Protected Region [[68da6b3e-87f3-11ec-894d-7968efa38b99]] */
+        return nodeList.stream()
+          		.filter(s -> s instanceof IBuildNode )
+          		.map(IBuildNode.class::cast)
+          		.filter(build -> build.selectInstanceOf() instanceof IHypervisorSystemConfiguration)
+          		.collect(Collectors.toList());   
+      /* End Protected Region   [[68da6b3e-87f3-11ec-894d-7968efa38b99]] */
+    }
+
+    @Override
+    public List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+      /* Begin Protected Region [[fadb5261-87f4-11ec-894d-7968efa38b99]] */
+        return nodeList.stream()
+          		.filter(s -> s instanceof IBuildNode )
+          		.map(IBuildNode.class::cast)
+          		.filter(build -> build.selectInstanceOf() instanceof IVirtualMachineSystemConfiguration)
+          		.collect(Collectors.toList());      
+      /* End Protected Region   [[fadb5261-87f4-11ec-894d-7968efa38b99]] */
+    }
+
   }
   
   public static class NodeFunctions {
 
     private NodeFunctions() {}
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyHyperVisorComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+      return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyHyperVisorComponents(nodeList);
+    }
+
+    public static List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.buildnode.javamodel.IBuildNode> OnlyVMComponents(final List<cleon.architecturemethods.systemarc42.metamodel.spec._07_deployment_view.environment.node.javamodel.INode> nodeList) {
+      return DynamicResourceUtil.invoke(INodeFunctionsImpl.class, NodeFunctionsImpl.INSTANCE, nodeList).OnlyVMComponents(nodeList);
+    }
 
   }
 
@@ -124,4 +170,4 @@ public class FunctionSpace_Node {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,ydbbiJxDojcDrumVv6UnJRGBtb8=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,41a52ff4-0b73-11e9-a136-69d076e48ed1,rREiWPrzx78sKRhIrsg09JKSd84=] */

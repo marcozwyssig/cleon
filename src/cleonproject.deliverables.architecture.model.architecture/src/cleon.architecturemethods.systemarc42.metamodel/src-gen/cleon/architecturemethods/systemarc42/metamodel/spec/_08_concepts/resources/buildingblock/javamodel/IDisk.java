@@ -8,10 +8,10 @@ public interface IDisk extends ch.actifsource.core.javamodel.IResource {
   
   // attributes
   
-  public java.lang.Double selectSize();
+  public java.lang.Double selectCapacityGB();
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.javamodel.IDiskType selectDiskType();
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2c32029e-2b00-11e9-9692-65766bc2daa5,oCC2UrywYfRGoEqPJ5OBSXFMFqc=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,2c32029e-2b00-11e9-9692-65766bc2daa5,IuGdObb0onV7VrWV1a5hG4/33Uo=] */

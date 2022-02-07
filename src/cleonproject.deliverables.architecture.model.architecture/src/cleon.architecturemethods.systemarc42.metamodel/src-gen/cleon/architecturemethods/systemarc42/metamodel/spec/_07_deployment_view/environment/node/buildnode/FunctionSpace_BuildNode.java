@@ -364,7 +364,7 @@ public static class HelperFunctionClass {
 		for( var diskConfigKey : disks.keyIterable()) {
 			for( var diskConfig : disks.get(diskConfigKey) ) {
     			var disk = diskConfig.selectDisk();
-    			total += disk.selectSize();     			
+    			total += disk.selectCapacityGB();     			
 			}    			
 		}
 
@@ -383,7 +383,7 @@ public static class HelperFunctionClass {
     		for( var diskConfigKey : disks.keyIterable()) {
     			for( var diskConfig : disks.get(diskConfigKey) ) {
         			var disk = diskConfig.selectDisk();
-        			total += disk.selectSize();     			
+        			total += disk.selectCapacityGB();     			
     			}    			
     		}
 		}

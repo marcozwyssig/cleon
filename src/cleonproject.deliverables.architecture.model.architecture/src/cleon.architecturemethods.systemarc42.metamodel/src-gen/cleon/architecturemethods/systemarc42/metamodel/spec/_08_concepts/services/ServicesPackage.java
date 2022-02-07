@@ -11,8 +11,8 @@ public class ServicesPackage {
   public static final Resource ServiceTCP = new Resource("c48fb598-6da3-11e9-8af5-2346ca56c2e2");
   public static final Resource SystemConfigurationServiceGroup = new Resource("cb9950c8-6da3-11e9-8af5-2346ca56c2e2");
   public static final Resource AbstractServiceGroup_services = new Resource("d90d129a-6da3-11e9-8af5-2346ca56c2e2");
-  public static final Resource Services = new Resource("e2936d62-6da3-11e9-8af5-2346ca56c2e2");
-  public static final Resource Services_services = new Resource("e7bab311-6da3-11e9-8af5-2346ca56c2e2");
+  public static final Resource PortServices = new Resource("e2936d62-6da3-11e9-8af5-2346ca56c2e2");
+  public static final Resource PortServices_portServices = new Resource("e7bab311-6da3-11e9-8af5-2346ca56c2e2");
   public static final Resource SystemConfigurationServiceGroup_serviceProvider = new Resource("d5987817-87aa-11e9-bb4b-c57da735262b");
   public static final Resource ServiceGroup = new Resource("95970bd2-8925-11e9-b2ca-f184d092ab9a");
   public static final Resource FWStandardService = new Resource("2c9a35dc-8930-11e9-b2ca-f184d092ab9a");
@@ -58,4 +58,4 @@ public class ServicesPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,l4MwXoP4uiVs4/ACJkpKicFAIGE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.services,92lDunnt4PSK6CS8SMagoGv7kKw=] */

@@ -10,10 +10,11 @@ import ch.actifsource.core.patch.IStatementPosition;
 import ch.actifsource.core.selector.typesystem.ITypeSystem;
 import ch.actifsource.core.selector.typesystem.impl.TypeSystem;
 import ch.actifsource.core.util.LiteralUtil;
-import ch.actifsource.ui.wizard.importcsv.CSVParser;
-import ch.actifsource.ui.wizard.importcsv.CSVParser.Row;
+
 import ch.actifsource.ui.wizard.importer.IImportContext;
 import ch.actifsource.ui.wizard.importer.aspect.IGenericImportWizardAspect;
+import ch.actifsource.util.csv.CSVParser;
+import ch.actifsource.util.csv.CSVParser.Row;
 import cleon.architecturemethods.systemarc42.metamodel.spec.FunctionSpace_SystemArc42.ISystemArc42DocumentFunctions;
 import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration;
 import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.FunctionSpace_Topology.ITopologyEnvironmentFunctions;

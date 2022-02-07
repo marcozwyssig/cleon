@@ -502,6 +502,10 @@
         <resource statement-guid="ecc17036-1ba0-11ec-b0bc-a9ea4d75c042" type="resource" guid="ecc12213-1ba0-11ec-b0bc-a9ea4d75c042" />
         <resource statement-guid="903eee78-203d-11ec-8288-d50c101f2ec5" type="resource" guid="903e5235-203d-11ec-8288-d50c101f2ec5" />
         <resource statement-guid="8bde9ee1-7e87-11ec-b55c-f5ca121c82b7" type="resource" guid="8bde77ce-7e87-11ec-b55c-f5ca121c82b7" />
+        <resource statement-guid="798eacec-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="798c3be9-882a-11ec-9c31-bf70c9f1a926" />
+        <resource statement-guid="7f0ff9e3-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="7f0fd2d0-882a-11ec-9c31-bf70c9f1a926" />
+        <resource statement-guid="82210a74-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="8220e361-882a-11ec-9c31-bf70c9f1a926" />
+        <resource statement-guid="8226afc9-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="822688b6-882a-11ec-9c31-bf70c9f1a926" />
       </owns>
     </resource>
   </owns>
@@ -5508,6 +5512,46 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="8bdec5f2-7e87-11ec-b55c-f5ca121c82b7" type="literal">cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="798eacec-882a-11ec-9c31-bf70c9f1a926">
+            <resource guid="798c3be9-882a-11ec-9c31-bf70c9f1a926">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="798cb11b-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="79911ded-882a-11ec-9c31-bf70c9f1a926" type="literal">ch.actifsource.ui.component.util</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="7f0ff9e3-882a-11ec-9c31-bf70c9f1a926">
+            <resource guid="7f0fd2d0-882a-11ec-9c31-bf70c9f1a926">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7f0ff9e2-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="7f109624-882a-11ec-9c31-bf70c9f1a926" type="literal">ch.actifsource.core.selector.text.parser</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="82210a74-882a-11ec-9c31-bf70c9f1a926">
+            <resource guid="8220e361-882a-11ec-9c31-bf70c9f1a926">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="8220e363-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="82215895-882a-11ec-9c31-bf70c9f1a926" type="literal">ch.actifsource.ui.component.impl.editor.textstyleparser</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="8226afc9-882a-11ec-9c31-bf70c9f1a926">
+            <resource guid="822688b6-882a-11ec-9c31-bf70c9f1a926">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="8226afc8-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="822724fa-882a-11ec-9c31-bf70c9f1a926" type="literal">ch.actifsource.ui.component.impl.editor.textstyleparser.model</object>
               </predicate>
             </resource>
           </object>

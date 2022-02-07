@@ -6,6 +6,8 @@ public interface IInterface extends ch.actifsource.core.javamodel.IResource, ch.
 
   public static final ch.actifsource.core.INode TYPE_ID = new ch.actifsource.core.Resource("eb46c268-b371-11e9-91da-d1f3b9a7fba4");
   
+  public java.lang.Integer selectVlan();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterfaceType selectInterfaceType();
@@ -16,4 +18,4 @@ public interface IInterface extends ch.actifsource.core.javamodel.IResource, ch.
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,k8iSFKfFm7ZfwPvezhCLEluY4co=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,1LyyHfUs/d9irRv2mumlt+zuDkQ=] */

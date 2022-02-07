@@ -44,6 +44,7 @@ public class SystemconfigurationPackage {
   public static final Resource FunctionSpace_aE_SystemConfiguration_MailRelaySystemConfiguration = new Resource("80279277-c81b-11e9-ba65-a5b6bc4916e7");
   public static final Resource Interface_interfaceType = new Resource("73537adc-dedd-11e9-b714-478bec98e62d");
   public static final Resource FunctionSpace_aE_SystemConfiguration_Interface = new Resource("efae3788-c837-11ea-a92a-436f8b822db6");
+  public static final Resource Interface_vlan = new Resource("2eea6e8c-8841-11ec-9c31-bf70c9f1a926");
   
   /* Begin Protected Region [[user]] */
   
@@ -64,4 +65,4 @@ public class SystemconfigurationPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,X6iq03FIABmpc8xZ497C1xvbCrw=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration,ZffAlYev5mRrNBS+6WIaUuorCls=] */

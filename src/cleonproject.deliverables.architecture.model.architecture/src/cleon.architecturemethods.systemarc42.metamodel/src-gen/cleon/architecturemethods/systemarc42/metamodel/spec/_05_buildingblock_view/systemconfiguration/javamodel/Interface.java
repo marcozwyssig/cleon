@@ -28,6 +28,17 @@ public class Interface extends DynamicResource implements IInterface {
     super(resourceRepository, resource, IInterface.TYPE_ID);
   }
 
+  // attributes
+  
+  @Override
+  public java.lang.Integer selectVlan() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage.Interface_vlan);
+  }
+    
+  public void setVlan(java.lang.Integer vlan) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage.Interface_vlan, vlan);
+  }
+
   // relations
   
   @Override
@@ -83,6 +94,8 @@ public class Interface extends DynamicResource implements IInterface {
   // accept property value visitor
   @Override
   public void accept(IPropertyValueVisitor visitor) {
+    // attributes
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage.Interface_vlan, visitor);
     // relations
     _acceptSingle(cleon.modelinglanguages.segmentation.metamodel.spec.javamodel.ISecuritySubZone.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage.Interface_interfaceInSecuritySubZone, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.javamodel.IInterfaceType.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.systemconfiguration.SystemconfigurationPackage.Interface_interfaceType, visitor);
@@ -105,4 +118,4 @@ public class Interface extends DynamicResource implements IInterface {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,3Vp47amb0l0pbGyzRshdXyofRf4=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,eb46c268-b371-11e9-91da-d1f3b9a7fba4,eLeSa2IWRv8saH15E72v0Ku4yuM=] */

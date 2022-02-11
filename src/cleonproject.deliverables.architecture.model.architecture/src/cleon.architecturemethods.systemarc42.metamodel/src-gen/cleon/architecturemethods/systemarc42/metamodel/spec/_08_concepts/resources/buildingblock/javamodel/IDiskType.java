@@ -16,6 +16,8 @@ public interface IDiskType extends ch.actifsource.core.javamodel.IEnumValue {
     
     public void visitVMDK__F___S___F_Thick__F_Provisioning();
     
+    public void visitVMDK__F___S___F_EagerZeroThick__F_Provisioning();
+    
   }
   
   public static interface IValueVisitor<R> {
@@ -27,6 +29,8 @@ public interface IDiskType extends ch.actifsource.core.javamodel.IEnumValue {
     public R visitVMDK__F___S___F_Thin__F_Provisioning();
     
     public R visitVMDK__F___S___F_Thick__F_Provisioning();
+    
+    public R visitVMDK__F___S___F_EagerZeroThick__F_Provisioning();
     
   }
   
@@ -46,7 +50,9 @@ public interface IDiskType extends ch.actifsource.core.javamodel.IEnumValue {
   
   public boolean isVMDK__F___S___F_Thick__F_Provisioning();
   
+  public boolean isVMDK__F___S___F_EagerZeroThick__F_Provisioning();
+  
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,XqevrWOTE62+PlbYKwNfbWAqZ0w=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,cVFJHvl+glmOr97o5YVM5gv4Xaw=] */

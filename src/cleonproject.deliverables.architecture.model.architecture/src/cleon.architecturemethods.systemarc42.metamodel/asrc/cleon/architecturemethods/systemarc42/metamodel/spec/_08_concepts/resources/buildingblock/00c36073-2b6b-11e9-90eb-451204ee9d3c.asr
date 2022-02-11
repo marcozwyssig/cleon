@@ -5,6 +5,7 @@
     <resource statement-guid="0448b75b-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="04489048-2b6b-11e9-90eb-451204ee9d3c" />
     <resource statement-guid="0ee8987a-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="0ee87167-2b6b-11e9-90eb-451204ee9d3c" />
     <resource statement-guid="cd0e4179-c795-11eb-af38-5d2abbc1ee8d" type="resource" guid="cd0dcc46-c795-11eb-af38-5d2abbc1ee8d" />
+    <resource statement-guid="34910729-8b5a-11ec-bef2-3f0dd3f1434e" type="resource" guid="3490e016-8b5a-11ec-bef2-3f0dd3f1434e" />
   </owns>
   <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
     <object statement-guid="00c38785-2b6b-11e9-90eb-451204ee9d3c" type="resource" guid="7238c27b-bce0-11db-8f71-f36774f9949e" />
@@ -53,6 +54,16 @@
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
           <object statement-guid="cd0dcc48-c795-11eb-af38-5d2abbc1ee8d" type="literal">VMDK - Thick Provisioning</object>
+        </predicate>
+      </resource>
+    </object>
+    <object statement-guid="34910729-8b5a-11ec-bef2-3f0dd3f1434e">
+      <resource guid="3490e016-8b5a-11ec-bef2-3f0dd3f1434e">
+        <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3490e017-8b5a-11ec-bef2-3f0dd3f1434e" type="resource" guid="00c36073-2b6b-11e9-90eb-451204ee9d3c" />
+        </predicate>
+        <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+          <object statement-guid="3490e018-8b5a-11ec-bef2-3f0dd3f1434e" type="literal">VMDK - EagerZeroThick Provisioning</object>
         </predicate>
       </resource>
     </object>

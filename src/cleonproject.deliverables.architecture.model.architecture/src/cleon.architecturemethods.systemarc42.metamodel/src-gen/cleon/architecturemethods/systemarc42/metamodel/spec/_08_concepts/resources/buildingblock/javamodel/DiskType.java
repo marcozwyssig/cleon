@@ -68,6 +68,7 @@ public class DiskType extends DynamicResource implements IDiskType {
     if (isHDD()) return visitor.visitHDD();
     if (isVMDK__F___S___F_Thin__F_Provisioning()) return visitor.visitVMDK__F___S___F_Thin__F_Provisioning();
     if (isVMDK__F___S___F_Thick__F_Provisioning()) return visitor.visitVMDK__F___S___F_Thick__F_Provisioning();
+    if (isVMDK__F___S___F_EagerZeroThick__F_Provisioning()) return visitor.visitVMDK__F___S___F_EagerZeroThick__F_Provisioning();
     throw new IllegalStateException("unknown enumvalue: " + fResource);
   }
   
@@ -87,6 +88,10 @@ public class DiskType extends DynamicResource implements IDiskType {
     }
     if (isVMDK__F___S___F_Thick__F_Provisioning()) {
       visitor.visitVMDK__F___S___F_Thick__F_Provisioning();
+      return;
+    }
+    if (isVMDK__F___S___F_EagerZeroThick__F_Provisioning()) {
+      visitor.visitVMDK__F___S___F_EagerZeroThick__F_Provisioning();
       return;
     }
     throw new IllegalStateException("unknown enumvalue: " + fResource);
@@ -114,5 +119,10 @@ public class DiskType extends DynamicResource implements IDiskType {
     return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_VMDK__F___S___F_Thick__F_Provisioning);
   }
   
+  @Override
+  public boolean isVMDK__F___S___F_EagerZeroThick__F_Provisioning() {
+    return getResource().equals(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock.BuildingblockPackage.DiskType_VMDK__F___S___F_EagerZeroThick__F_Provisioning);
+  }
+  
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,OmumOMvFYXS8aKqjZ2APsXmrd1k=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,00c36073-2b6b-11e9-90eb-451204ee9d3c,4slPRtxtULgkvq47at04ZxwsXeE=] */

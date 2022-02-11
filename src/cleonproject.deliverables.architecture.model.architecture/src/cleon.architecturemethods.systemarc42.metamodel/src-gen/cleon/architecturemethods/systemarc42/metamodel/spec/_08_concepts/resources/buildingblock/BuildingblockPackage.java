@@ -34,6 +34,7 @@ public class BuildingblockPackage {
   public static final Resource FunctionSpace_aE_BuildingBlock_Core = new Resource("0b53d9d6-dff8-11eb-93d3-9f230e4bb32b");
   public static final Resource FunctionSpace_aE_BuildingBlock_Memory = new Resource("34953eb9-e07a-11eb-85ea-9f2d155d4de3");
   public static final Resource FunctionSpace_aE_BuildingBlock_Disk = new Resource("2983080c-e084-11eb-85ea-9f2d155d4de3");
+  public static final Resource DiskType_VMDK__F___S___F_EagerZeroThick__F_Provisioning = new Resource("3490e016-8b5a-11ec-bef2-3f0dd3f1434e");
   
   /* Begin Protected Region [[user]] */
   
@@ -54,4 +55,4 @@ public class BuildingblockPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock,bkaZOUbnPRkaRkojrrXtUuQiTFk=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.resources.buildingblock,mwGeQeaVtgVeMN111Ra3K3cBlsM=] */

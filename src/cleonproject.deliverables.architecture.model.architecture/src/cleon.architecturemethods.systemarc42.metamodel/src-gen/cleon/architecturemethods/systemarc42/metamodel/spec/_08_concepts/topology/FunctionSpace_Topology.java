@@ -567,14 +567,12 @@ public class FunctionSpace_Topology {
       		.AllAbstractSites();
 
       for (final IAbstractSite abstractSite : abstractSites) {
-
       	Logger.instance().logInfo("Searching in site " + abstractSite.selectName());
       	if (siteName.equalsIgnoreCase(abstractSite.selectName())) {
       		return abstractSite;
       	}
       }
       return null;
-
       /* End Protected Region   [[6f2ed2cf-b47e-11ea-b938-599963fc0a84]] */
     }
 

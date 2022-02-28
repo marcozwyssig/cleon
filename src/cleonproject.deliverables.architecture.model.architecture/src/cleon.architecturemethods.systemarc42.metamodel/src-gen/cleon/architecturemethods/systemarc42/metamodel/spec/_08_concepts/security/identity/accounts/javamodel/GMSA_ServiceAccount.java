@@ -48,6 +48,15 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.Integer selectOverrideNumber() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber);
+  }
+    
+  public void setOverrideNumber(java.lang.Integer overrideNumber) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, overrideNumber);
+  }
+
   // relations
   
   @Override
@@ -95,6 +104,7 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_export, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_allocateActivitiesFromSite, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountTemplate.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_serviceAccountTemplate, visitor);
@@ -102,4 +112,4 @@ public class GMSA_ServiceAccount extends DynamicResource implements IGMSA_Servic
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,Bz3wTZvhDiMJTB2PIybDYEJihDY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,06ea6eda-f333-11ea-9268-b5c52a12d7f9,bV2d+C3mvgjWKnTRSQV1IkGfAlw=] */

@@ -48,6 +48,15 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
      _setSingleAttribute(cleon.common.resources.metamodel.spec.active.ActivePackage.EnabledWithDefaultTrueAware_isEnabled, isEnabled);
   }
 
+  @Override
+  public java.lang.Integer selectOverrideNumber() {
+    return _getSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber);
+  }
+    
+  public void setOverrideNumber(java.lang.Integer overrideNumber) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, overrideNumber);
+  }
+
   // relations
   
   @Override
@@ -95,6 +104,7 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
     _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_export, visitor);
+    _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_overrideNumber, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.topology.javamodel.IAbstractSite.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_allocateActivitiesFromSite, visitor);
     _acceptSingle(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountTemplate.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccount_serviceAccountTemplate, visitor);
@@ -112,4 +122,4 @@ public class ServiceAccount extends DynamicResource implements IServiceAccount {
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,hGBpEGyRb8YJvORabpmZxkXib9o=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,6a+apAACeGvyvERTh5dab+NwNYs=] */

@@ -8,6 +8,8 @@ public interface IServiceAccount extends cleon.common.resources.metamodel.spec.a
   
   public java.lang.Boolean selectExport();
   
+  public java.lang.Integer selectOverrideNumber();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IServiceAccountTemplate selectServiceAccountTemplate();
@@ -16,4 +18,4 @@ public interface IServiceAccount extends cleon.common.resources.metamodel.spec.a
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,eNaTkIF6Dz2236ZYEEKXuAkmZOQ=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,6f9d993b-a1a0-11ea-886d-354b9ee6fb2d,vsPL5cfJDY9QYNb0UeItRn65zJM=] */

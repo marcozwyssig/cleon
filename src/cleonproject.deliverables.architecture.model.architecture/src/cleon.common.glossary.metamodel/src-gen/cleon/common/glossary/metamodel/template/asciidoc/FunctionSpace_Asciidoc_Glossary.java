@@ -11,7 +11,7 @@ import ch.actifsource.core.selector.typesystem.JavaFunctionUtil;
 
 /* End Protected Region   [[97c78ae7-4f0b-11e6-9af7-359fc86da633,imports]] */
 
-public class FunctionSpace_Glossary {
+public class FunctionSpace_Asciidoc_Glossary {
 
   /* Begin Protected Region [[97c78ae7-4f0b-11e6-9af7-359fc86da633]] */
   
@@ -48,6 +48,9 @@ public class FunctionSpace_Glossary {
     @IDynamicResourceExtension.MethodId("42df1433-0de0-11e6-a33d-238391a68770")
     public java.lang.String RenderContentElement();
 
+    @IDynamicResourceExtension.MethodId("02cdf937-98ad-11ec-aefb-ab0e6078b7ea")
+    public java.lang.String GetIndent();
+
   }
   
   public static interface IGlossaryFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
@@ -70,4 +73,4 @@ public class FunctionSpace_Glossary {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,RjNYQGPyb8uzBqi5oxC6sv7RxoE=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,97c78ae7-4f0b-11e6-9af7-359fc86da633,q3QrBHgDnmTsjFPzOOEsZgwqDIU=] */

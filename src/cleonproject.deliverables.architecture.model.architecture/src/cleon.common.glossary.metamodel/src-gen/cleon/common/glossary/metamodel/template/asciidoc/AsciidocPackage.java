@@ -4,8 +4,8 @@ import ch.actifsource.core.Resource;
 
 public class AsciidocPackage {
   
-  public static final Resource FunctionSpace_aE_Glossary_Glossary = new Resource("3bd6b1be-0de0-11e6-a33d-238391a68770");
-  public static final Resource FunctionSpace_aE_Glossary_GlossaryAware = new Resource("97c78af7-4f0b-11e6-9af7-359fc86da633");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_Glossary_Glossary = new Resource("3bd6b1be-0de0-11e6-a33d-238391a68770");
+  public static final Resource FunctionSpace_aE_Asciidoc_aE_Glossary_GlossaryAware = new Resource("97c78af7-4f0b-11e6-9af7-359fc86da633");
   
   /* Begin Protected Region [[user]] */
   
@@ -26,4 +26,4 @@ public class AsciidocPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.asciidoc,CCgIrBRugWHZtdh2R2p1PceHaBE=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.common.glossary.metamodel.template.asciidoc,A5AINSuZ4uJFrsJilGQanuEr4u0=] */

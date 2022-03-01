@@ -190,6 +190,15 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="02cebc8b-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="02cdf937-98ad-11ec-aefb-ab0e6078b7ea">
+          <owns predicate="c31f1af0-77ef-11e1-a134-5793980f7ff3">
+            <resource statement-guid="8cadb0a7-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="8cad8994-98ad-11ec-aefb-ab0e6078b7ea">
+              <owns predicate="1db32a77-c919-11de-a722-07fb435e032d">
+                <resource statement-guid="92303611-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="92300efc-98ad-11ec-aefb-ab0e6078b7ea" />
+              </owns>
+            </resource>
+          </owns>
+        </resource>
       </owns>
     </resource>
   </owns>
@@ -197,7 +206,7 @@
     <object statement-guid="97c7d87f-4f0b-11e6-9af7-359fc86da633" type="resource" guid="7af34972-b4b8-11de-9ed6-bb77a9768f55" />
   </predicate>
   <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-    <object statement-guid="97c7d880-4f0b-11e6-9af7-359fc86da633" type="literal">FunctionSpace_Glossary</object>
+    <object statement-guid="97c7d880-4f0b-11e6-9af7-359fc86da633" type="literal">FunctionSpace_Asciidoc_Glossary</object>
   </predicate>
   <predicate guid="cfc7e59d-db55-11dd-b397-2dd4c5d32cb3">
     <object statement-guid="97c7d8a8-4f0b-11e6-9af7-359fc86da633">
@@ -759,6 +768,40 @@
                     </predicate>
                   </resource>
                 </object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="02cebc8b-98ad-11ec-aefb-ab0e6078b7ea">
+            <resource guid="02cdf937-98ad-11ec-aefb-ab0e6078b7ea">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="02ce2049-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="c31f1aef-77ef-11e1-a134-5793980f7ff3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="0346849c-98ad-11ec-aefb-ab0e6078b7ea" type="literal">GetIndent</object>
+              </predicate>
+              <predicate guid="c31f1af0-77ef-11e1-a134-5793980f7ff3">
+                <object statement-guid="8cadb0a7-98ad-11ec-aefb-ab0e6078b7ea">
+                  <resource guid="8cad8994-98ad-11ec-aefb-ab0e6078b7ea">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="8cad8996-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="4154f3c8-0059-11df-9cc1-374b98a09993" />
+                    </predicate>
+                    <predicate guid="1db32a77-c919-11de-a722-07fb435e032d">
+                      <object statement-guid="92303611-98ad-11ec-aefb-ab0e6078b7ea">
+                        <resource guid="92300efc-98ad-11ec-aefb-ab0e6078b7ea">
+                          <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                            <object statement-guid="9230360f-98ad-11ec-aefb-ab0e6078b7ea" type="resource" guid="9f25a99e-c947-11de-95d0-4912b8dc029a" />
+                          </predicate>
+                          <predicate guid="527cc4e8-d2ac-11de-87dc-a9aeefa4174b">
+                            <object statement-guid="92303610-98ad-11ec-aefb-ab0e6078b7ea" type="literal">==</object>
+                          </predicate>
+                        </resource>
+                      </object>
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="02ce6e6a-98ad-11ec-aefb-ab0e6078b7ea" type="literal">true</object>
               </predicate>
             </resource>
           </object>

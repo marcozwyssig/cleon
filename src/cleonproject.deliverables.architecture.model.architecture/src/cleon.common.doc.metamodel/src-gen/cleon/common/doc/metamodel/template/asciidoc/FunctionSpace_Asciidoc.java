@@ -748,6 +748,56 @@ public class FunctionSpace_Asciidoc {
 
   }
 
+  public static interface IAboutFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("1a9fdfd6-9949-11ec-8ab2-a107e9aafcc3")
+    public java.lang.String RenderChapters();
+
+  }
+  
+  public static interface IAboutFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class AboutFunctionsImpl implements IAboutFunctionsImpl {
+
+    public static final IAboutFunctionsImpl INSTANCE = new AboutFunctionsImpl();
+
+    private AboutFunctionsImpl() {}
+
+  }
+  
+  public static class AboutFunctions {
+
+    private AboutFunctions() {}
+
+  }
+
+  public static interface IReferencesFunctions extends IDynamicResourceExtension {
+
+    @IDynamicResourceExtension.MethodId("2be32003-9949-11ec-8ab2-a107e9aafcc3")
+    public java.lang.String RenderContentElement();
+
+  }
+  
+  public static interface IReferencesFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
+    
+  }
+  
+  public static class ReferencesFunctionsImpl implements IReferencesFunctionsImpl {
+
+    public static final IReferencesFunctionsImpl INSTANCE = new ReferencesFunctionsImpl();
+
+    private ReferencesFunctionsImpl() {}
+
+  }
+  
+  public static class ReferencesFunctions {
+
+    private ReferencesFunctions() {}
+
+  }
+
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,dKsrazQlrAlKjhFAHwLW9EOQqY0=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,4ba84dc4-d872-11e4-aa2f-c11242a92b60,Iq51VEXUE2GmsBWiHokqp3MO02s=] */

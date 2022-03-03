@@ -8,6 +8,8 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
   public java.lang.Boolean selectSkipHostGenerate();
   
+  public java.lang.Boolean selectAllowDNSRecords();
+  
   // relations
   
   public java.util.List<? extends cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfigurationDependency> selectHasDependency();
@@ -22,4 +24,4 @@ public interface ISystemConfiguration extends cleon.common.resources.metamodel.s
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,keqNC5cD44IhlbX2uIMSiGKdbxo=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,4e0a6f85-e0fb-11e8-8499-a3b0fb3cad90,ABmEN9L6HvI/yf2i10LVO6rLPMI=] */

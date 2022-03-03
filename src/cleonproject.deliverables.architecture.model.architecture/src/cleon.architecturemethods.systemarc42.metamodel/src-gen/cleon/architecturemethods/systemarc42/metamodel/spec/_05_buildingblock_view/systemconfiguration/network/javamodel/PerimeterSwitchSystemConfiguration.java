@@ -31,6 +31,15 @@ public class PerimeterSwitchSystemConfiguration extends DynamicResource implemen
   // attributes
   
   @Override
+  public java.lang.Boolean selectAllowDNSRecords() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords);
+  }
+    
+  public void setAllowDNSRecords(java.lang.Boolean allowDNSRecords) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords, allowDNSRecords);
+  }
+
+  @Override
   public java.util.List<java.lang.String> selectDescriptions() {
     return _getListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions);
   }
@@ -219,6 +228,7 @@ public class PerimeterSwitchSystemConfiguration extends DynamicResource implemen
   @Override
   public void accept(IPropertyValueVisitor visitor) {
     // attributes
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view._05_buildingblock_viewPackage.SystemConfiguration_allowDNSRecords, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.SimpleDescription_descriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptSingleAttribute(java.lang.String.class, ch.actifsource.core.CorePackage.NamedResource_name, visitor);
@@ -238,4 +248,4 @@ public class PerimeterSwitchSystemConfiguration extends DynamicResource implemen
   }
 
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15a3efed-ca3a-11e9-ab4d-95a547edc6e9,WXBTuu3MijclnRqYCptI5Uo6/94=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,15a3efed-ca3a-11e9-ab4d-95a547edc6e9,6ykRA7gLhrv6uZ7/rQ/b3V34mgA=] */

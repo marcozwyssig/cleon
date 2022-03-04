@@ -12,6 +12,7 @@ import cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network
 import cleon.architecturemethods.systemarc42.metamodel.template.xml.FunctionSpace_XML.INetworkSubZoneFunctions;
 import cleon.modelinglanguages.network.metamodel.spec.javamodel.INetworkSubZone;
 import java.util.stream.Collectors;
+import cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.FunctionSpace_SystemArc42_BuildingBlockView.ISystemConfigurationFunctions;
 /* End Protected Region   [[2acb3661-7b0e-11e9-a70f-4dc03941a024,imports]] */
 
 public class FunctionSpace_Network {
@@ -209,12 +210,18 @@ public class FunctionSpace_Network {
     @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain);
 
+    @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
+    public java.lang.Boolean DNSRecordSet();
+
   }
   
   public static interface IHostNodeFunctionsImpl extends IDynamicResourceExtensionJavaImpl {
     
     @IDynamicResourceExtension.MethodId("4273ea53-f408-11ea-ade2-eb32c9704a85")
     public List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList);
+
+    @IDynamicResourceExtension.MethodId("a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6")
+    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode);
 
   }
   
@@ -238,6 +245,23 @@ public class FunctionSpace_Network {
       /* End Protected Region   [[4273ea53-f408-11ea-ade2-eb32c9704a85]] */
     }
 
+    @Override
+    public java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode) {
+      /* Begin Protected Region [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
+    	var functionSpace = hostNode.selectHost().selectInstanceOf().extension(ISystemConfigurationFunctions.class);
+    	boolean allowedDNSRecord = functionSpace.AllowDNSRecordExport();
+    	if( allowedDNSRecord ) {
+    		return true;
+    	} else {
+    		if (hostNode.selectExportDNSRecord() == null) {
+    			return false;
+    		} else {
+        		return hostNode.selectExportDNSRecord().booleanValue();    			
+    		}
+    	}
+      /* End Protected Region   [[a9fbd2d9-9b98-11ec-8985-9dc243cc3ec6]] */
+    }
+
   }
   
   public static class HostNodeFunctions {
@@ -246,6 +270,10 @@ public class FunctionSpace_Network {
 
     public static List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> InDomain(final cleon.architecturemethods.systemarc42.metamodel.spec._06_runtime_view.communication.domain.javamodel.IDomain domain, final List<cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode> hostNodeList) {
       return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNodeList).InDomain(domain, hostNodeList);
+    }
+
+    public static java.lang.Boolean DNSRecordSet(final cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel.IHostNode hostNode) {
+      return DynamicResourceUtil.invoke(IHostNodeFunctionsImpl.class, HostNodeFunctionsImpl.INSTANCE, hostNode).DNSRecordSet(hostNode);
     }
 
   }
@@ -348,4 +376,4 @@ public class FunctionSpace_Network {
 
 }
 
-/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,o8L0hHfA1wtL2jmlU1tv6YEe3dY=] */
+/* Actifsource ID=[5349246f-db37-11de-82b8-17be2e034a3b,2acb3661-7b0e-11e9-a70f-4dc03941a024,SNC9ertsHJ9q/aHZSEt1KIeBskM=] */

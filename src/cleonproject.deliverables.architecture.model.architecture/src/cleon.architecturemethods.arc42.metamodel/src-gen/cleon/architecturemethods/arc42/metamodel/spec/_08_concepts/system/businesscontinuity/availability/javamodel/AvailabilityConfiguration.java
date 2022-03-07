@@ -95,7 +95,7 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   public <R> R accept(IValueVisitor<R> visitor) {
     if (isNone()) return visitor.visitNone();
     if (isActive__S_Active()) return visitor.visitActive__S_Active();
-    if (isActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_()) return visitor.visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    if (isActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation()) return visitor.visitActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation();
     if (isActive__S_Passive__F___N_Failover__O_()) return visitor.visitActive__S_Passive__F___N_Failover__O_();
     if (isSicherung__F_und__F_Wiederherstellung()) return visitor.visitSicherung__F_und__F_Wiederherstellung();
     if (isReplikation()) return visitor.visitReplikation();
@@ -112,8 +112,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
       visitor.visitActive__S_Active();
       return;
     }
-    if (isActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_()) {
-      visitor.visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    if (isActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation()) {
+      visitor.visitActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation();
       return;
     }
     if (isActive__S_Passive__F___N_Failover__O_()) {
@@ -144,8 +144,8 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
   @Override
-  public boolean isActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_() {
-    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Active__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_);
+  public boolean isActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation() {
+    return getResource().equals(cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability.AvailabilityPackage.AvailabilityConfiguration_Active__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation);
   }
   
   @Override
@@ -164,4 +164,4 @@ public class AvailabilityConfiguration extends DynamicResource implements IAvail
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,5Bdg4tNr1KJ4D0BzPH0I5tfDVME=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,Grwe+Aino1iEk0ZDCPNs2M6YQQ4=] */

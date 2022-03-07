@@ -78,10 +78,10 @@
           <object statement-guid="bc7b8257-00df-11eb-89a7-8344c130228c" type="resource" guid="21408953-1e38-11e9-865e-41ef48a95f70" />
         </predicate>
         <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
-          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Active / Active ohne Synchronisation (Client-Based)</object>
+          <object statement-guid="bd30a189-00df-11eb-89a7-8344c130228c" type="literal">Active / Active ohne Daten-Synchronisation</object>
         </predicate>
         <predicate guid="a1273723-deca-11e5-bcfc-4385ab45a525">
-          <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Replikation oder Kommunikation zwischen den Komponenten. </object>
+          <object statement-guid="c1a49d74-00df-11eb-89a7-8344c130228c" type="literal">Die Komponente ist an beiden Standorten aufgebaut, aber es gibt keine aktive Synchronisation (z.B. Replikation) der Daten zwischen den Komponenten.</object>
         </predicate>
         <predicate guid="b83fc781-00da-11eb-85a8-c1eaace008cf">
           <object statement-guid="db652cc5-00df-11eb-89a7-8344c130228c" type="literal">Falls eine Komponente nicht mehr verfügbar ist, kann auf die verfügbare Komponente zugegriffen werden.</object>

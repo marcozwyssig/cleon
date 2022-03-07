@@ -12,7 +12,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public void visitActive__S_Active();
     
-    public void visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    public void visitActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation();
     
     public void visitActive__S_Passive__F___N_Failover__O_();
     
@@ -28,7 +28,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
     
     public R visitActive__S_Active();
     
-    public R visitActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+    public R visitActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation();
     
     public R visitActive__S_Passive__F___N_Failover__O_();
     
@@ -54,7 +54,7 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
   public boolean isActive__S_Active();
   
-  public boolean isActive__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_();
+  public boolean isActive__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation();
   
   public boolean isActive__S_Passive__F___N_Failover__O_();
   
@@ -65,4 +65,4 @@ public interface IAvailabilityConfiguration extends ch.actifsource.core.javamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,LCJ8DZBhZlYmUrlZI7tIxQ3CNz4=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,21408953-1e38-11e9-865e-41ef48a95f70,EKoHJHYRo3gaeSgt22OrqZE3qmk=] */

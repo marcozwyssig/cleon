@@ -16,7 +16,7 @@ public class AvailabilityPackage {
   public static final Resource AvailabilityConfiguration_Sicherung__F_und__F_Wiederherstellung = new Resource("c2ced2f5-77b9-11e9-8094-13b915a38efa");
   public static final Resource AvailabilityConfiguration_Replikation = new Resource("709ec8b4-ff1d-11ea-afaf-693ca36c7b72");
   public static final Resource AvailabilityConfiguration_standardDescription = new Resource("b83fc781-00da-11eb-85a8-c1eaace008cf");
-  public static final Resource AvailabilityConfiguration_Active__F___U___F_Active__F_ohne__F_Synchronisation__F___N_Client__S_Based__O_ = new Resource("bc7b8255-00df-11eb-89a7-8344c130228c");
+  public static final Resource AvailabilityConfiguration_Active__F___U___F_Active__F_ohne__F_Daten__S_Synchronisation = new Resource("bc7b8255-00df-11eb-89a7-8344c130228c");
   
   /* Begin Protected Region [[user]] */
   
@@ -37,4 +37,4 @@ public class AvailabilityPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,pHmsjbKMbE/W9BfarUvfWLCK7HA=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.arc42.metamodel.spec._08_concepts.system.businesscontinuity.availability,fBPQ8Boca8symclF5Gzi0JxDjps=] */

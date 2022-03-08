@@ -66,6 +66,15 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
      _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_overrideId, overrideId);
   }
 
+  @Override
+  public java.lang.Boolean selectPasswordNeverExpires() {
+    return _getSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_passwordNeverExpires);
+  }
+    
+  public void setPasswordNeverExpires(java.lang.Boolean passwordNeverExpires) {
+     _setSingleAttribute(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_passwordNeverExpires, passwordNeverExpires);
+  }
+
   // relations
   
   @Override
@@ -125,6 +134,7 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
     _acceptSingleAttribute(java.lang.Integer.class, cleon.common.resources.metamodel.spec.id.IdPackage.IntegerBusinessObjectId_identifier, visitor);
     _acceptListAttribute(java.lang.String.class, cleon.common.resources.metamodel.spec.descriptions.DescriptionsPackage.MandatoryDescription_mandatoryDescriptions, visitor);
     _acceptSingleAttribute(java.lang.Integer.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_overrideId, visitor);
+    _acceptSingleAttribute(java.lang.Boolean.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_passwordNeverExpires, visitor);
     // relations
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.javamodel.IAbstractAuthZBuildingBlockPermission.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.authz.buildingblock.activity.ActivityPackage.ActivityTemplateAware_activityTemplates, visitor);
     _acceptList(cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.javamodel.IBuiltinRole.class, cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts.AccountsPackage.ServiceAccountTemplate_builtinRoles, visitor);
@@ -143,4 +153,4 @@ public class ServiceAccountTemplate extends DynamicResource implements IServiceA
   }
   
 }
-/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,fCc0p2qzW+mHoN/2xyUdJ3detqY=] */
+/* Actifsource ID=[4d723cb5-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,X+rXJQrF/PsQ8FFo8uCLFc5g+KY=] */

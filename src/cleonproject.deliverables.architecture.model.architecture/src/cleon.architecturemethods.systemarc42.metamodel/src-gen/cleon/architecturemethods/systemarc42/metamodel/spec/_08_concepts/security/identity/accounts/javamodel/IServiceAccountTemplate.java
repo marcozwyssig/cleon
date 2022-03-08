@@ -8,6 +8,8 @@ public interface IServiceAccountTemplate extends cleon.common.resources.metamode
   
   public java.lang.Integer selectOverrideId();
   
+  public java.lang.Boolean selectPasswordNeverExpires();
+  
   // relations
   
   public cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel.ISystemConfiguration selectServiceConfigurationForServiceAccount();
@@ -16,4 +18,4 @@ public interface IServiceAccountTemplate extends cleon.common.resources.metamode
   
 }
 
-/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,4CBs+StDpnfqDLOnpc2+9I+anrk=] */
+/* Actifsource ID=[3ca9f967-db37-11de-82b8-17be2e034a3b,9eec10e6-395b-11eb-978d-47c0228773ba,L60aGA48w8VylImf8gZ8EFvxujo=] */

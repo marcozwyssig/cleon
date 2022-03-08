@@ -276,6 +276,11 @@
             </resource>
           </owns>
         </resource>
+        <resource statement-guid="98af4156-9eee-11ec-8d98-a946e0e0308e" type="resource" guid="98aef332-9eee-11ec-8d98-a946e0e0308e">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="a14484e3-9eee-11ec-8d98-a946e0e0308e" type="resource" guid="a1445dd0-9eee-11ec-8d98-a946e0e0308e" />
+          </owns>
+        </resource>
       </owns>
     </resource>
     <resource statement-guid="cf47eabd-2830-11eb-a351-0f02534982d8" type="resource" guid="cf47c3aa-2830-11eb-a351-0f02534982d8">
@@ -300,6 +305,11 @@
                 <resource statement-guid="3b8ee139-2831-11eb-a351-0f02534982d8" type="resource" guid="3b8e9314-2831-11eb-a351-0f02534982d8" />
               </owns>
             </resource>
+          </owns>
+        </resource>
+        <resource statement-guid="763f612e-9eef-11ec-8d98-a946e0e0308e" type="resource" guid="763e9dd6-9eef-11ec-8d98-a946e0e0308e">
+          <owns predicate="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+            <resource statement-guid="763ec4ed-9eef-11ec-8d98-a946e0e0308e" type="resource" guid="763e9dd7-9eef-11ec-8d98-a946e0e0308e" />
           </owns>
         </resource>
       </owns>
@@ -1432,6 +1442,31 @@
               </predicate>
             </resource>
           </object>
+          <object statement-guid="98af4156-9eee-11ec-8d98-a946e0e0308e">
+            <resource guid="98aef332-9eee-11ec-8d98-a946e0e0308e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="98aef334-9eee-11ec-8d98-a946e0e0308e" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="99b65151-9eee-11ec-8d98-a946e0e0308e" type="literal">PasswordNeverExpires</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="a14484e3-9eee-11ec-8d98-a946e0e0308e">
+                  <resource guid="a1445dd0-9eee-11ec-8d98-a946e0e0308e">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="a14484e2-9eee-11ec-8d98-a946e0e0308e" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="a1d1d0c8-9eee-11ec-8d98-a946e0e0308e" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="98af1a45-9eee-11ec-8d98-a946e0e0308e" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
         </predicate>
         <predicate guid="8e749558-e6ef-11dd-8974-33372e119769">
           <object statement-guid="9a407a22-2830-11eb-a351-0f02534982d8" type="resource" guid="6f9d993b-a1a0-11ea-886d-354b9ee6fb2d" />
@@ -1515,6 +1550,34 @@
               </predicate>
               <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
                 <object statement-guid="d4e3c4e6-2830-11eb-a351-0f02534982d8" type="literal">true</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="763f612e-9eef-11ec-8d98-a946e0e0308e">
+            <resource guid="763e9dd6-9eef-11ec-8d98-a946e0e0308e">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="763e9dd8-9eef-11ec-8d98-a946e0e0308e" type="resource" guid="6c3db80a-db55-11dd-b397-2dd4c5d32cb3" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="763e9dda-9eef-11ec-8d98-a946e0e0308e" type="literal">PasswordNeverExpires</object>
+              </predicate>
+              <predicate guid="4c8f0094-dbd5-11dd-a1f1-6dea6bac942f">
+                <object statement-guid="763ec4ed-9eef-11ec-8d98-a946e0e0308e">
+                  <resource guid="763e9dd7-9eef-11ec-8d98-a946e0e0308e">
+                    <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                      <object statement-guid="763ec4eb-9eef-11ec-8d98-a946e0e0308e" type="resource" guid="736795a2-dbd8-11dd-a1f1-6dea6bac942f" />
+                    </predicate>
+                    <predicate guid="a7479d38-dbd8-11dd-a1f1-6dea6bac942f">
+                      <object statement-guid="763ec4ec-9eef-11ec-8d98-a946e0e0308e" type="resource" guid="2e10b778-f91f-11d9-bb45-5fabdff7c7da" />
+                    </predicate>
+                  </resource>
+                </object>
+              </predicate>
+              <predicate guid="900668ad-8efb-11e1-a177-7df477aab47c">
+                <object statement-guid="763e9dd9-9eef-11ec-8d98-a946e0e0308e" type="literal">true</object>
+              </predicate>
+              <predicate guid="f6911a4e-ea4e-11e3-9231-3d168724f830">
+                <object statement-guid="78cbb0d7-9eef-11ec-8d98-a946e0e0308e" type="literal">return true;</object>
               </predicate>
             </resource>
           </object>

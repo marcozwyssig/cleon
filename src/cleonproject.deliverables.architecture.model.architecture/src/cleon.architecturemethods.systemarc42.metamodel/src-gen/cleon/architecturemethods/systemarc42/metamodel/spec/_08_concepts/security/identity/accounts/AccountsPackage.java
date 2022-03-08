@@ -43,6 +43,7 @@ public class AccountsPackage {
   public static final Resource ServiceAccount_allocateActivitiesFromSite = new Resource("2fc7bb13-7082-11eb-b91b-ab805dd3de7b");
   public static final Resource FunctionSpace_aE_Accounts_ServiceAccountEnvironmentSite = new Resource("702930fd-7826-11eb-b1ee-19aff392296d");
   public static final Resource ServiceAccount_overrideNumber = new Resource("d8f96ab1-9876-11ec-9d28-89a40da1c4b6");
+  public static final Resource ServiceAccountTemplate_passwordNeverExpires = new Resource("5df07481-9eed-11ec-8d98-a946e0e0308e");
   
   /* Begin Protected Region [[user]] */
   
@@ -63,4 +64,4 @@ public class AccountsPackage {
   }
   
 }
-/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts,hfUweqvHRlL4IPrE+qTJ6IAAV40=] */
+/* Actifsource ID=[c1a07b92-fc09-11e0-b756-0dc1d96a76cb,cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.security.identity.accounts,cvBAICLPlljb5j/AVxsnmOVzd10=] */

@@ -34,6 +34,7 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  ch.actifsource.generator;bundle-version="9.0.0"
 Export-Package: 
  cleon.architecturemethods.systemarc42.metamodel.importer.csv,
+ cleon.architecturemethods.systemarc42.metamodel.importer.xml,
  cleon.architecturemethods.systemarc42.metamodel.spec,
  cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view,
  cleon.architecturemethods.systemarc42.metamodel.spec._05_buildingblock_view.javamodel,
@@ -108,6 +109,8 @@ Export-Package:
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.javamodel,
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method,
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.method.javamodel,
+ cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure,
+ cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.deployment.procedure.javamodel,
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.javamodel,
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network,
  cleon.architecturemethods.systemarc42.metamodel.spec._08_concepts.network.javamodel,

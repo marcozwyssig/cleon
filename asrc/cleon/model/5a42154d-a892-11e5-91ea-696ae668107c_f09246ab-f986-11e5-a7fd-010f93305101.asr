@@ -536,6 +536,9 @@
         <resource statement-guid="822c7c2e-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="822c7c2b-882a-11ec-9c31-bf70c9f1a926" />
         <resource statement-guid="82349283-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="82346b70-882a-11ec-9c31-bf70c9f1a926" />
         <resource statement-guid="823dba48-882a-11ec-9c31-bf70c9f1a926" type="resource" guid="823d9335-882a-11ec-9c31-bf70c9f1a926" />
+        <resource statement-guid="ff4873f1-9fc3-11ec-a0ca-03d8d5268a60" type="resource" guid="ff47febe-9fc3-11ec-a0ca-03d8d5268a60" />
+        <resource statement-guid="ff4eb586-9fc3-11ec-a0ca-03d8d5268a60" type="resource" guid="ff4e8e73-9fc3-11ec-a0ca-03d8d5268a60" />
+        <resource statement-guid="4efa754a-9fd5-11ec-a0ca-03d8d5268a60" type="resource" guid="4efa0017-9fd5-11ec-a0ca-03d8d5268a60" />
       </owns>
     </resource>
   </owns>
@@ -5876,6 +5879,36 @@
               </predicate>
               <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
                 <object statement-guid="823e7d99-882a-11ec-9c31-bf70c9f1a926" type="literal">ch.actifsource.ui.component.util</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="ff4873f1-9fc3-11ec-a0ca-03d8d5268a60">
+            <resource guid="ff47febe-9fc3-11ec-a0ca-03d8d5268a60">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ff47fec0-9fc3-11ec-a0ca-03d8d5268a60" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ff4873f2-9fc3-11ec-a0ca-03d8d5268a60" type="literal">cleon.modelinglanguages.uml.template.python.diagrams</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="ff4eb586-9fc3-11ec-a0ca-03d8d5268a60">
+            <resource guid="ff4e8e73-9fc3-11ec-a0ca-03d8d5268a60">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ff4e8e75-9fc3-11ec-a0ca-03d8d5268a60" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="ff4edc97-9fc3-11ec-a0ca-03d8d5268a60" type="literal">cleon.architecturemethods.systemarc42.metamodel.importer.xml</object>
+              </predicate>
+            </resource>
+          </object>
+          <object statement-guid="4efa754a-9fd5-11ec-a0ca-03d8d5268a60">
+            <resource guid="4efa0017-9fd5-11ec-a0ca-03d8d5268a60">
+              <predicate guid="3169f49a-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="4efa0019-9fd5-11ec-a0ca-03d8d5268a60" type="resource" guid="5ebf28c6-46d0-11eb-b318-ab9601344039" />
+              </predicate>
+              <predicate guid="33fc8660-f91f-11d9-bb45-5fabdff7c7da">
+                <object statement-guid="4efb389b-9fd5-11ec-a0ca-03d8d5268a60" type="literal">cleon.architecturemethods.arc42.metamodel.template.python.diagram</object>
               </predicate>
             </resource>
           </object>

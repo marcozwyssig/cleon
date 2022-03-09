@@ -28,3 +28,9 @@ Require-Bundle: ch.actifsource.core;bundle-version="9.0.0",
  cleon.modelinglanguages.uml.metamodel.builtin;bundle-version="0.4.149",
  cleon.common.xml.metamodel.builtin;bundle-version="0.4.149",
  ch.actifsource.generator;bundle-version="9.0.0"
+Export-Package: cleon.architecturemethods.eamod.sample.analysis,
+ cleon.architecturemethods.eamod.sample.chrv,
+ cleon.architecturemethods.eamod.sample.chrv.template,
+ cleon.architecturemethods.eamod.sample.ncv,
+ cleon.architecturemethods.eamod.sample.nsov.v1,
+ cleon.architecturemethods.eamod.sample.nsov.v2
